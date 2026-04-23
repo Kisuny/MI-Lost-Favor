@@ -83,7 +83,7 @@ ServerEvents.generateData("after_mods", e => {
     ],
     "minecraft:bat": [
       feeding('milf:larva'),
-      ambient('minecraft:entity.bat.ambientt')
+      ambient('minecraft:entity.bat.ambient')
     ],
   };
 

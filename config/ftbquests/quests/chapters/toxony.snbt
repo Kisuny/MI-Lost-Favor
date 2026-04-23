@@ -3455,7 +3455,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7162B15B452A8B2E"]
@@ -5333,6 +5333,18 @@
 			}]
 			x: -9.5d
 			y: -22.0d
+		}
+		{
+			dependencies: ["3784CF017C0CB226"]
+			id: "15054A95EDCBE33D"
+			shape: "heart"
+			tasks: [{
+				id: "7BB22F2E930F6F88"
+				item: { components: { "gag:grains_of_time": 0 }, count: 1, id: "gag:time_sand_pouch" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
 		}
 	]
 }

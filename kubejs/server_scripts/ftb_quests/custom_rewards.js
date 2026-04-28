@@ -81,7 +81,7 @@ FTBQuestsEvents.customReward('16B46238FC936637', event => {
 
 // reward for Iron Bloom
 FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
-    const stages = ["minecraft_mobs", "variants_and_ventures_mobs", "player_mobs_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs"]
+    const stages = ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
 });

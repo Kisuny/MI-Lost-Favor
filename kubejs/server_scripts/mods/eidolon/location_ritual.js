@@ -96,20 +96,20 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "graveyard", pedestal_items: [
+            id: "myths_and_legends_graveyard", pedestal_items: [
                 { "item": "minecraft:skeleton_skull" },
                 { "item": "minecraft:skeleton_skull" },
             ]
         },
         {
-            id: "amethyst_nest", pedestal_items: [
+            id: "cataclysm_amethyst_nest", pedestal_items: [
                 { "item": "minecraft:amethyst_block" },
                 { "item": "minecraft:amethyst_block" },
                 { "item": "minecraft:amethyst_block" },
             ]
         },
         {
-            id: "infernal_pumpkin", pedestal_items: [
+            id: "born_in_chaos_v1_infernal_pumpkin", pedestal_items: [
                 { "item": "minecraft:jack_o_lantern" },
                 { "item": "enchanted:foul_fume" },
             ]

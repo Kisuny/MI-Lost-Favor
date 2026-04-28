@@ -118,7 +118,7 @@ function getTeamAdvancements(/**@type {import("net.minecraft.server.level.Server
             if (progress.isDone()) {
                 let name = advancementHolder.value().name()
                 let id = advancementHolder.id()
-                if (name.isPresent() && MODS_TO_SYNC_ADVANCEMENTS.includes(id.getNamespace()) ) {
+                if (MODS_TO_SYNC_ADVANCEMENTS.includes(id.getNamespace()) ) {
                     teamAdvancementsSet.add(id.toString())
 
                 }

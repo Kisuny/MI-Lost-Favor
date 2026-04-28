@@ -46,7 +46,7 @@
 	}]
 	quests: [
 		{
-			dependencies: ["2F034200CEED692C"]
+			dependencies: ["620B6774449C91F2"]
 			id: "75DE98178AF407BD"
 			rewards: [{
 				id: "065C1C17F1FECB26"
@@ -2373,8 +2373,8 @@
 				item: { count: 1, id: "enchanted:hint_of_rebirth" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.0d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2435,8 +2435,8 @@
 				item: { count: 1, id: "enchanted:foul_fume" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -6.0d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -4404,10 +4404,10 @@
 			dependencies: ["15F7B94CA5BFCF1D"]
 			id: "22128FA939CC5229"
 			tasks: [{
-				id: "359D1F8936404465"
-				item: { components: { "minecraft:block_entity_data": { id: "eidolon_repraised:goblet", type: "minecraft:cow" } }, count: 1, id: "eidolon_repraised:goblet" }
-				match_components: "fuzzy"
-				type: "item"
+				advancement: "eidolon_repraised:sacrifice"
+				criterion: ""
+				id: "3ECB55CA155D3DB7"
+				type: "advancement"
 			}]
 			x: 5.5d
 			y: -27.5d

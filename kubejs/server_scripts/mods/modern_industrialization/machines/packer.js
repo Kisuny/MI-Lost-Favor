@@ -118,13 +118,22 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:4, time:100, machine:"modern_industrialization:packer",
-        outputItems:[
-            [{item:"milf:unfired_fire_clay_brick"}]
-        ],
+    miMachineCraft(event, {
+        energy:4, time:100, machine:"modern_industrialization:packer",
         inputItems:[
-            [{item:"milf:fire_clay_ball"}, 1]
-        ]
+            [{item: "milf:fire_clay_ball"}, 2],
+            [{item: "ytech:brick_mold" }, 1, 0]
+        ],
+        outputItems:[[{item:"milf:unfired_fire_clay_brick"}, 2]]
+    })
+
+    miMachineCraft(event, {
+        energy:4, time:100, machine:"modern_industrialization:packer",
+        inputItems:[
+            [{item: "minecraft:clay_ball"}, 2],
+            [{item: "ytech:brick_mold" }, 1, 0]
+        ],
+        outputItems:[[{item:"ytech:unfired_brick"}, 2]]
     })
 
     miMachineCraft(event, {

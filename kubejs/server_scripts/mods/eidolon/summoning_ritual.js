@@ -4,7 +4,7 @@ const toIngredient = (entry) =>
 const brazierSummon = (event, args) => {
     event.custom({
         "type": "eidolon_repraised:ritual_brazier_summoning",
-        "focus_items": [toIngredient(args.focus)] || [],
+        "focus_items": args.focus != null ? toIngredient(args.focus) : [],
         "output": args.output,
         "pedestal_items": args.pedestals.map(toIngredient),
         "reagent": toIngredient(args.reagent)

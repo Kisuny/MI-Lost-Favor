@@ -1,0 +1,75 @@
+{
+    "content": {
+        "decree": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "bountiful:decree",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 800
+        },
+        "gold_coin": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "devices:gold_coin",
+            "amount": {
+                "min": 1,
+                "max": 10
+            },
+            "unitWorth": 2000
+        },
+        "orichalcum_coin": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "devices:orichalcum_coin",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 5000
+        },
+        "mithril_coin": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "devices:mithril_coin",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 10000
+        },
+        "totem_undying": {
+            "type": "item",
+            "content": "minecraft:totem_of_undying",
+            "rarity": "LEGENDARY",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 8000
+        },
+        "rare_key": {
+            "type": "minecraft:item",
+            "rarity": "EPIC",
+            "content": "minecraft:trial_key",
+            "unitWorth": 8000,
+            "amount": {
+                "min": 1,
+                "max": 1
+            }
+        },
+        "legend_key": {
+            "type": "minecraft:item",
+            "rarity": "LEGENDARY",
+            "content": "minecraft:ominous_trial_key",
+            "unitWorth": 12000,
+            "amount": {
+                "min": 1,
+                "max": 1
+            }
+        }
+
+    }
+}

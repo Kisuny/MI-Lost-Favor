@@ -287,8 +287,8 @@
 				item: { count: 1, id: "hostilenetworks:sim_chamber" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.5d
+			x: 3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -403,25 +403,30 @@
 			y: 1.5d
 		}
 		{
-			id: "07ED244BED2A7802"
-			rewards: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "hostilenetworks:item/deep_learner"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "70FAD5B8BC6CD8CC"
-				team_reward: false
-				type: "custom"
-			}]
+			id: "4B3C2C61B4A1072A"
 			tasks: [{
-				id: "194FFC9F44216F2A"
-				item: { count: 1, id: "hostilenetworks:deep_learner" }
+				icon: {
+					id: "bountiful:bountyboard"
+				}
+				id: "58816600F3FC78DE"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bountiful:bountyboard"
+				type: "observation"
+			}]
+			x: -8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4B3C2C61B4A1072A"]
+			id: "535790242FE24454"
+			tasks: [{
+				id: "3894C8DB587788E6"
+				item: { count: 1, id: "bountiful:decree" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.5d
+			x: -8.0d
+			y: -7.5d
 		}
 	]
 }

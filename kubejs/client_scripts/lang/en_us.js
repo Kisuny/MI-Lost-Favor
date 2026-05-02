@@ -25,7 +25,13 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.minecraft_mobs', `You started hearing ${textAnimatorString("strange noises", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} at night...`)
     event.add('milf.stage.early_items', `This world no longer ${textAnimatorString("rejects", "glitch")} you...`)
 
-    event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Kill Nether Gauntlet')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_black_charro', 'Kill Black Charro')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_sacred_pontiff', 'Kill Sacred Pontiff')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_ferrous_wroughtnaut', 'Kill Ferrous Wroughtnaut')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_amethyst_crab', 'Kill Amethyst Crab')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_lord_pumpkinhead_head', 'Kill Lord Pumpking')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_umvuthi', 'Kill Umvuthi')
+    event.add('advancements.apotheosis.progression.frontier.criteria.kill_frostmaw', 'Kill Frostmaw')
 
     event.add('milf.cannot.mine.block', 'You cannot mine this block for now')
     event.add('milf.press_button', 'Hold ')

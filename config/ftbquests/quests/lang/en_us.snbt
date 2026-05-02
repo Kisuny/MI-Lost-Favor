@@ -209,12 +209,14 @@
 		"Наконец, после смешивания ядовитых веществ мне остается только взять лупу и поработать с веществом. При достаточном количестве поисков я могу обнаружить совершенно новую аффинность, связанную с этим ингредиентом. Из-за природы материала этот неэффективный метод — лучшее, что я могу сделать, если хочу создать совершенно новую аффинность."
 	]
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
+	quest.07D52B22D8158404.quest_desc: ["&lMob Predictions&r will need to be processed in a Loot Fabricator, a device which uses power to convert predictions to mob drops. The drops which are available are based on a list of pre-defined items, and a target can be selected for each type of model. The loot fabricator will remember your choices for each type, so you can feed multiple types of predictions into a single fabricator."]
 	quest.07E78D29C898CE55.quest_desc: [
 		"Wild sheep"
 		""
 		""
 		"{image:milf:textures/quest_pic/mouflon.png width:200 height:200 align:center}"
 	]
+	quest.07ED244BED2A7802.quest_desc: ["Training a Data Model can be done in one of two ways, with a &lDeep Learner&r or with a &lSimulation Chamber&r. The deep learner allows you to store a few data models within, and kills you receive will begin to train the model. All models start out in the &lFaulty&r state, and must be trained up to &lBasic&r in the deep learner."]
 	quest.08136C156A331A52.quest_desc: [
 		"A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food. To put food in the box, RMB on the box with food."
 		"{@pagebreak}"
@@ -475,6 +477,11 @@
 		"With toxic paste in my arsenal, I can improve on the techniques of the ancients. I can create a more powerful blend using it. But I must be incredibly careful. My system may not be able to handle it if I haven't already grown accustomed."
 		"{@pagebreak}"
 		"Имея в своем арсенале токсичную пасту, я могу усовершенствовать технику древних. С ее помощью я могу создать более мощную смесь. Но я должен быть невероятно осторожен. Мой организм может не выдержать, если я еще не привык."
+	]
+	quest.140CCC62298F33D3.quest_desc: [
+		"Hostile Neural Networks allows you to train data models and run simulations, producing mob predictions, which can be used to generate mob loot."
+		""
+		"The fundamental unit of this mod is the Data Model - an item which holds information about an entity that you can utilize to generate their drops. To get a Data Model, you must first craft a Data Model Framework, and use it on the target entity to build the model. Once you have your model, you will have to train it."
 	]
 	quest.146496E17DF6BE97.quest_desc: [
 		"The &#9BB8EDEnder Dropper&r is an opposite of the &#9BB8EDEnder Hopper&r. With each &#d33b2bredstone pulse&r, it ejects an item from your personal &#9BB8EDEnder Chest&r. "
@@ -1475,6 +1482,7 @@
 		"{@pagebreak}"
 		"Отключает спавн мобов в области"
 	]
+	quest.4234498523BE845B.quest_desc: ["Once your model is &lBasic&r or higher, you can use the simulation chamber to run simulations of your model. Simulations will always produce a generalized prediction, and may also produce a &lMob Prediction&r, based on the accuracy of the model. The higher tier of the model, the higher the accuracy, up to &l99.5% at Self Aware&r. Running simulations requires energy (based on the model type) and a catalyst item, which is usually a &lPrediction Matrix&r."]
 	quest.4287B0D38E0C2A7A.quest_subtitle: "Entangled block"
 	quest.428850B1426EB3D4.quest_desc: [
 		"Wild cow"
@@ -1700,6 +1708,21 @@
 		"{@pagebreak}"
 		"Чаша работает как бездонное ведро с молоком, исцеляя вас, когда вы этого потребуете. Ритуал Лазурита даст вам это чудо."
 	]
+	quest.4B3C2C61B4A1072A.quest_desc: [
+		"Bounty boards can be found throughout the world in villages, and they'll generate bounties inside of them. These bounties often ask for you to bring back an item, or kill some mobs in return for whatever rewards they're offering. If you can complete the bounty, you just have to bring it back to the bounty board and right click the board to redeem your rewards!"
+		""
+		"Just like items, bounties can have different tiers of rarity. Some bounty rewards are more rare than others, and bounties with higher rarity have a better chance of having these more rare rewards! Rarity follows the same pattern as in vanilla: Common, Uncommon, Rare and Epic."
+		""
+		""
+		"&l&cIn Bounty, you can find useful items such as backpacks, waystones, or lockpicks - this isn’t the full list of possible items.&r&r"
+		"{@pagebreak}"
+		"Доски объявлений о заданиях можно найти по всему миру в деревнях, и на них появляются задания. В этих заданиях часто требуется принести какой-либо предмет или убить нескольких мобов в обмен на предлагаемое вознаграждение. Если вам удалось выполнить задание, просто вернитесь к доске объявлений и щелкните по ней правой кнопкой мыши, чтобы получить вознаграждение!"
+		""
+		"Так же, как и предметы, задания могут иметь разные уровни редкости. Некоторые награды за задания встречаются реже, чем другие, и в заданиях с более высокой редкостью шанс получить такие редкие награды выше! Уровни редкости соответствуют стандартной классификации: «Обычный», «Необычный», «Редкий» и «Эпический»."
+		""
+		""
+		"&l&cВ Bounty можно найти полезные предметы, например рюкзаки, waystones или отмычки, это не весь список возможных предметов.&r&r"
+	]
 	quest.4B62E3D7B166D33F.quest_desc: ["The Elementarium Enhancer combines the power of the four elements and allows the creation of elemental items in the Hephaestus Forge. For example, it is required to create elemental prisms. With a chance of 18% this enhancer can be found in the following structures: Jungle Temples, Desert Pyramids, and Underwater Ruins."]
 	quest.4B801253049DAC2F.quest_desc: [
 		"&#FEECD6Catch&r the right phase of the moon and create your first &#4040a1onyx&r!"
@@ -1818,6 +1841,15 @@
 		"Вам необходима целая наковальня, чтобы воспользоваться этим блоком."
 	]
 	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
+	quest.535790242FE24454.quest_desc: [
+		"There exists another item as well, called a Decree. A Decree determines what kind of bounties show up on a bounty board. For example, an Armorsmithing Decree makes it so that objectives and rewards related to armor show up on the board (leather, iron, chestplates, boots, etc). You can have up to three decrees on a bounty board at once, and it will mix and match objectives and rewards from all three when new bounties appear!"
+		""
+		"You can find new Decrees as rewards for certain bounties, or they can be traded with villagers at higher villager levels."
+		"{@pagebreak}"
+		"Существует ещё один предмет, называемый «Указом». Указ определяет, какие баунти будут отображаться на доске заданий. Например, Указ «Бронедело» обеспечивает появление на доске заданий и наград, связанных с броней (кожа, железо, нагрудники, сапоги и т. д.). На доске заданий может быть одновременно до трех указов, и при появлении новых заданий система будет комбинировать цели и награды из всех трех!"
+		""
+		"Новые указы можно получить в качестве награды за выполнение определенных заданий или обменять у жителей деревни, достигших более высоких уровней."
+	]
 	quest.5386ADA67BEB546A.quest_desc: ["встаёшь даёт опыт из привязанного обелиска с опытом"]
 	quest.538E3976DDFD9FBF.quest_desc: ["Отображает суммарное количество бафов в кузне"]
 	quest.53CBB401AAEFD083.quest_desc: ["Подавая сурс и банку с мобами, можно делать жертоприношение для мода окультизм, если поставить под алтарём"]
@@ -2652,6 +2684,7 @@
 		"Tired of building all those complex multiblock structures? Want to have an ability to easily move them around if you feel weak Feng Shui from it? We're presenting to you: Multiblock Packer 3000 (Safety regulations edition)."
 		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With advanced compacting technology, we accomplished the ability to pack ANY multiblock into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at PLACERS™ (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new PUSH® (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
 		"Craft one for yourself today, and you'll get an unlimited supply of boxes, a Multiblock Packer 3000 (Safety regulations edition) PLACER, AND a little plushie of our demure, ditzy CEO for free!"
+		""
 		"<fade>ⓘ (We are not responsible for any injuries inflicted on the user by the machine. May contain traces of radioactive waste, horsehairs, and insulin. Not recommended for use for infants, piglins, and fairies) </fade>"
 	]
 	quest.7A1E51EF37A6ADFE.quest_desc: [
@@ -2721,7 +2754,6 @@
 	reward.094072146D87AD84.title: "Pouch slot"
 	reward.0A58BA17068FCA2C.title: "New Radial Menu Button"
 	reward.0A8447D787E641E3.title: "Void Access"
-	reward.0C6E1695C7D921E2.title: "Radial Menu Button"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E39813C84812910.title: "Face Trinket Slot"
 	reward.116FEA5302E15B7D.title: "Hands Trinket Slot"

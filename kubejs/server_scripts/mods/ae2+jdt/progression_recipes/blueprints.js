@@ -217,9 +217,9 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
-            [{ "tag": "c:plates/blastproof_alloy" }, 4],
+            [{ "item": "modern_industrialization:celestigem_curved_plate" }, 16],
             [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
-            [{ "item": "minecraft:piston" }, 32],
+            [{ "item": "modern_industrialization:piston" }, 32],
             [{ "item": "ae2:fluix_dust" }, 4]
         ],
         { "item": "ae2:condenser" },
@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
-            [{ "tag": "c:plates/blastproof_alloy" }, 4],
+            [{ "item": "modern_industrialization:celestigem_large_plate" }, 8],
             [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
             [{ "item": "spectrum:bedrock_dust" }, 16],
             [{ "item": "modern_industrialization:chemical_reactor" }, 1]

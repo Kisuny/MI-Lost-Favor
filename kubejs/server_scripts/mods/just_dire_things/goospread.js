@@ -14,10 +14,11 @@ function justdirethingsGoospread(event, args){
 
 ServerEvents.recipes(event => {
 
-/*     justdirethingsGoospread(event,{
-        inputItems:[[{item: "minecraft:water"}]],
-        outputItems:[[{item:"justdirethings:polymorphic_fluid_block"}]],
-        craftingDuration:300
-    }) */
+    justdirethingsGoospread(event,{
+        inputItems: [[{ item: "extendedae:machine_frame"}]],
+        outputItems: [[{ item:"ae2:controller"}]],
+        craftingDuration:10000,
+        tierRequirement:4
+    }) 
 
 })

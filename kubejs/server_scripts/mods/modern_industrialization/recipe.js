@@ -486,8 +486,12 @@ KubeJSTweaks.beforeRecipes(event => {
 
         "extended_industrialization:vanilla_recipes/macerator/netherite_ingot_to_dust",
         
-        "modern_industrialization:machines/machine_chainer/assembler",
-        "modern_industrialization:materials/macerator/redstone_ore_to_crushed"
+        "modern_industrialization:materials/macerator/redstone_ore_to_crushed",
+
+        "extended_industrialization:machines/processing_array/assembler",
+        "extended_industrialization:machines/processing_array/craft",
+        "industrialization_overdrive:machines/multi_processing_array/craft",
+        "industrialization_overdrive:machines/multi_processing_array/assembler"
     ]
 
     disableByRecipeID.forEach(id => {

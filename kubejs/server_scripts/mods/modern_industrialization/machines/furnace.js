@@ -59,6 +59,12 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"minecraft:stone"}, 1]]
     })
 
+    miMachineCraft(event, {
+        energy: 2, time: 200, machine: "modern_industrialization:mi_furnace",
+        inputItems: [[{ item: "ytech:unfired_flower_pot" }, 1]],
+        outputItems: [[{ item: "minecraft:flower_pot" }, 1]]
+    })
+
     const minecraft_metals_for_furnace = ['copper', 'gold', 'iron'];
     const MI_metals_for_furnace = ['antimony', 'lead', 'tin', 'nickel'];
 

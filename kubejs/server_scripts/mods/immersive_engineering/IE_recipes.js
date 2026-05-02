@@ -487,7 +487,7 @@ ServerEvents.recipes(event => {
             L: { item: "immersiveengineering:light_bulb" },
             W: { item: "modern_industrialization:copper_wire" }
         },
-        outputItems: [[{ id: "immersiveengineering:electric_lantern" }, 1]],
+        outputItems: [[{ id: "immersiveengineering:electric_lantern" }, 3]],
         removeRecipe:true,
     })
     

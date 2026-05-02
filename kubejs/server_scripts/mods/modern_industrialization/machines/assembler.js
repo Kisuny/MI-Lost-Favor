@@ -48,11 +48,11 @@ ServerEvents.recipes(event => {
     miMachineCraft(event, {
         energy: 8, time: 200, machine: "modern_industrialization:assembler",
         inputItems: [
-            [{ item: "modern_industrialization:electrum_cable" }, 4],
-            [{ item: "modern_industrialization:invar_large_plate" }, 12],
-            [{ item: "modern_industrialization:portable_storage_unit" }],
+            [{ item: "modern_industrialization:electrum_cable" }, 8],
+            [{ item: "modern_industrialization:invar_large_plate" }, 4],
+            [{ item: "modern_industrialization:electric_mi_furnace" }],
             [{ item: "modern_industrialization:electronic_circuit" }],
-            [{ item: "modern_industrialization:cupronickel_wire_magnetic" }, 32],
+            [{ item: "modern_industrialization:cupronickel_wire_magnetic" }, 16],
 
         ],
         outputItems: [

@@ -25,6 +25,20 @@ ServerEvents.recipes(event => {
         custom_condition:"milf:microbial_fabricator_bioactive_coating"
     })
 
+    miMachineCraft(event, {
+        energy: 16, time: 2000, machine: "modern_industrialization:microbial_fabricator",
+        inputItems: [
+            [{ item: "spectrum:bottle_of_decay_away" }, 1],
+            [{ item: "justdirethings:gooblock_tier2" }, 1],
+            [{ item: "spectrum:bottle_of_decay_away" }, 1],
+        ],
+        outputItems: [
+            [{ item: "justdirethings:gooblock_tier1" }, 2]
+        ],
+        removeRecipe: true,
+        custom_condition: "milf:microbial_fabricator_bioactive_coating"
+    })
+
     miMachineCraft(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:bottle_of_ruin"}, 1],
@@ -36,6 +50,20 @@ ServerEvents.recipes(event => {
         ],
         removeRecipe:true,
         custom_condition:"milf:microbial_fabricator_thermophilic_dermis"
+    })
+
+    miMachineCraft(event, {
+        energy: 16, time: 4000, machine: "modern_industrialization:microbial_fabricator",
+        inputItems: [
+            [{ item: "spectrum:bottle_of_decay_away" }, 1],
+            [{ item: "justdirethings:gooblock_tier3" }, 1],
+            [{ item: "spectrum:bottle_of_decay_away" }, 1],
+        ],
+        outputItems: [
+            [{ item: "justdirethings:gooblock_tier2" }, 2]
+        ],
+        removeRecipe: true,
+        custom_condition: "milf:microbial_fabricator_thermophilic_dermis"
     })
 
     miMachineCraft(event, {
@@ -52,12 +80,26 @@ ServerEvents.recipes(event => {
         custom_condition: "milf:microbial_fabricator_symbiote_membrane"
     })
 
+    miMachineCraft(event, {
+        energy: 16, time: 10000, machine: "modern_industrialization:microbial_fabricator",
+        inputItems: [
+            [{ item: "spectrum:bottle_of_decay_away" }, 1],
+            [{ item: "justdirethings:gooblock_tier4" }, 1],
+            [{ item: "spectrum:bottle_of_decay_away" }, 1],
+        ],
+        outputItems: [
+            [{ item: "justdirethings:gooblock_tier3" }, 2]
+        ],
+        removeRecipe: true,
+        custom_condition: "milf:microbial_fabricator_symbiote_membrane"
+    })
+
 
     miMachineCraft(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:vegetal"}, 64],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
-            [{item:"milf:storage_blueprint"}, 1],
+            [{ item:"justdirethings:coal_t1"}, 16],
         ],
         outputItems:[
             [{item:"milf:bioactive_coating"}, 1]
@@ -69,7 +111,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"spectrum:stratine_gem"}, 1],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
-            [{item:"milf:automation_blueprint"}, 1],
+            [{ item:"ae2:annihilation_core"}, 1],
         ],
         outputItems:[
             [{item:"milf:thermophilic_dermis"}, 1]
@@ -81,7 +123,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"spectrum:aether_vestiges"}, 1],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
-            [{item:"milf:divine_blueprint"}, 1],
+            [{ item:"extendedae:entro_shard"}, 1],
         ],
         outputItems:[
             [{item:"milf:symbiote_membrane"}, 1]

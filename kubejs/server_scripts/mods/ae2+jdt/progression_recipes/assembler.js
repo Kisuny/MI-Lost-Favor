@@ -1545,7 +1545,8 @@ ServerEvents.recipes(event => {
         machine: "modern_industrialization:assembler",
         inputItems: [
             [{item: "ae2:wireless_receiver"}, 1],
-            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{ item: "modern_industrialization:ferricore_curved_plate"}, 4],
+            [{ item: "modern_industrialization:ferricore_rod" }, 8],
             [{item: "ae2:fluix_glass_cable"}, 4]
         ],
         outputItems: [
@@ -1560,8 +1561,9 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{tag: "c:plates/stainless_steel"}, 2],
-            [{item: "ae2:quartz_fiber"}, 1],
+            [{tag: "c:plates/stainless_steel"}, 4],
+            [{ item: "extended_industrialization:silver_tesla_top_load" }, 1],
+            [{ item: "modern_industrialization:ferricore_rod"}, 1],
             [{item: "ae2:fluix_pearl"}, 1]
         ],
         outputItems: [
@@ -1623,21 +1625,6 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "extendedae:ex_pattern_provider"}, 1],
-            [{item: "extendedae:concurrent_processor"}, 4]
-        ],
-        outputItems: [
-            [{item: "advanced_ae:adv_pattern_provider"}, 1]
-        ],
-        token: T4_TOKEN,
-        removeRecipe: true
-    });
-
-    miMachineCraft(event, {
-        energy: T4_ENERGY,
-        time: T4_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
             [{item: "advanced_ae:small_adv_pattern_provider"}, 1],
             [{item: "megacells:accumulation_processor"}, 4]
         ],
@@ -1654,7 +1641,7 @@ ServerEvents.recipes(event => {
         machine: "modern_industrialization:assembler",
         inputItems: [
             [{item: "megacells:mega_pattern_provider"}, 1],
-            [{item: "advanced_ae:quantum_storage_component"}, 1]
+            [{ item: "advanced_ae:quantum_processor"}, 1]
         ],
         outputItems: [
             [{item: "extendedae:ex_pattern_provider"}, 1]

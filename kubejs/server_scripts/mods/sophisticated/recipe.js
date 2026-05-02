@@ -21,6 +21,103 @@ ServerEvents.recipes(event => {
     //WIP
     event.remove({id:/sophisticatedstorage:generic*/})
 
+
+    milfShaped(event, {
+        pattern: [
+            'WPW',
+            'PPP',
+            'WPW'
+        ],
+        key: {
+            P: { item: "modern_industrialization:copper_plate" },
+            W: { item: "modern_industrialization:copper_wire" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:basic_to_copper_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            ' P ',
+            'PUP',
+            ' P '
+        ],
+        key: {
+            P: { item: "modern_industrialization:iron_plate" },
+            U: { item: "sophisticatedstorage:basic_to_copper_tier_upgrade" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:basic_to_iron_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            ' P ',
+            'PUP',
+            ' P '
+        ],
+        key: {
+            P: { item: "modern_industrialization:iron_plate" },
+            U: { item: "modern_industrialization:iron_large_plate" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:basic_to_iron_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            ' P ',
+            'PUP',
+            ' P '
+        ],
+        key: {
+            P: { item: "modern_industrialization:iron_plate" },
+            U: { item: "modern_industrialization:iron_ring" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:copper_to_iron_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            'PPP',
+            'PUP',
+            'PPP'
+        ],
+        key: {
+            P: { item: "modern_industrialization:gold_plate" },
+            U: { item: "modern_industrialization:iron_ring" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:iron_to_gold_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            'PPP',
+            'PUP',
+            'PPP'
+        ],
+        key: {
+            P: { item: "modern_industrialization:diamond_plate" },
+            U: { item: "modern_industrialization:gold_ring" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:gold_to_diamond_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            ' PU',
+        ],
+        key: {
+            P: { item: "modern_industrialization:diamond_plate" },
+            U: { item: "minecraft:netherite_ingot" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:diamond_to_netherite_tier_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
 })
 
 ServerEvents.tags("item", event => {

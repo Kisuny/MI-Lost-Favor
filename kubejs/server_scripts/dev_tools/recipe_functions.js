@@ -70,3 +70,22 @@ function milfSmelting(/**@type {$RecipesKubeEvent_}*/ event, args){
     if(args.removeRecipeType){event.remove({output: args.outputItems[0][0].id, type: args.removeRecipeType})}
     event.custom(recipe)
 }
+
+function milfCampfire(event, args){
+    let recipe = {
+        type: "minecraft:campfire_cooking",
+        cookingtime: args.cookingtime || 100,
+        experience: args.experience || 0.5,
+        ingredient: Object.assign({}, args.inputItems[0][0], { count: args.inputItems[0][1] || 1 }),
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+    }
+    if (!args.compatOff) {
+        miMachineCraft(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:mi_furnace",
+            inputItems: args.inputItems,
+            outputItems: args.outputItems
+        })
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}

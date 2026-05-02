@@ -89,8 +89,6 @@ ItemEvents.modifyTooltips(event => {
         /angelring:.*/,
         /tempad:.*/,
         /chunkloaders:.*/,
-        /hostilenetworks:.*/,
-        /hostile_neural_industrialization:.*/,
         /fluxnetworks:.*/,
         /buildinggadgets2:.*/,
         /replication:.*/,

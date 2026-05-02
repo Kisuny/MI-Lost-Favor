@@ -1,10 +1,19 @@
+//priority: 1000
 let $TooltipRenderUtil = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil") : null
 let $ClientTooltipComponent = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent") : null
 let $DefaultTooltipPositioner = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE : null
 
+let $Quaternionf = Platform.isClientEnvironment() ? Java.loadClass("org.joml.Quaternionf") : null
+
+
 let $ResourceLocation = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.resources.ResourceLocation") : null
 let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent")
 let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type")
+
+let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
+let $DeferredRegister  = Java.loadClass("net.neoforged.neoforge.registries.DeferredRegister")
+
+const maxInt = 2 ** 32
 
 
 /**

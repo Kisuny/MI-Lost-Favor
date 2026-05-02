@@ -49,7 +49,6 @@ global.renderPlacerTooltips = (guiGraphics, deltaTracker) => {
 
 	const TOOLTIP_HEIGHT = 43
 	const ICON_ANIMATION_SCALING_FACTOR = 2
-	const maxInt = 2 ** 32
 
 	let structureItemScale = 2.5
 	structureItemScale = structureItemScale * (animationTV * ICON_ANIMATION_SCALING_FACTOR + 1)

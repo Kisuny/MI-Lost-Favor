@@ -65,6 +65,14 @@ global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
     ]
 
     let gameRenderer = Client.gameRenderer
+    const guiScale = Client.window.guiScale
+
+    let blockCenter = new $Vector3f(
+        (aabb.minX + aabb.maxX) / 2,
+        (aabb.minY + aabb.maxY) / 2,
+        (aabb.minZ + aabb.maxZ) / 2
+    )
+
 
     let maxX = -Infinity
     let minY = Infinity
@@ -80,6 +88,10 @@ global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
         }
     }
 
+    let screenBlockCenter = projectPosToScreen(blockCenter, gameRenderer, deltaTracker, guiScale)
+
+    if(!screenBlockCenter) return
+
     if (!anyValid){ 
         Client.player.tell(Component.ofString("WHAT"))
         return
@@ -89,15 +101,6 @@ global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
         //Client.player.tell(Component.ofString("HOW"))
     }
 
-    let blockCenter = new $Vector3f(
-        (aabb.minX + aabb.maxX) / 2,
-        (aabb.minY + aabb.maxY) / 2,
-        (aabb.minZ + aabb.maxZ) / 2
-    )
-
-    const guiScale = Client.window.guiScale
-
-    let screenBlockCenter = projectPosToScreen(blockCenter, gameRenderer, deltaTracker, guiScale)
     
     const TOOLTIP_HEIGHT = 43
     //const tooltipWidth = 150
@@ -117,7 +120,6 @@ global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
     const pose = guiGraphics.pose()
     pose.pushPose()
     pose.translate(baseX, baseY, 0)
-    const maxInt = 2 ** 32
 
     pose.pushPose()
     pose.translate(0, TOOLTIP_HEIGHT, 0)

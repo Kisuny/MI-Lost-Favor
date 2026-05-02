@@ -3,6 +3,7 @@
     "id": "key_19c9c2d2109",
     "title": "Open Quests",
     "icon": "ftbquests:book",
+    "locked": true,
     "action": {
       "type": "KEY",
       "name": "key.ftbquests.quests",
@@ -14,6 +15,7 @@
     "id": "key_19c9c2e3e3c",
     "title": "FTB Team",
     "icon": "ftblibrary:icon_item",
+    "locked": true,
     "action": {
       "type": "KEY",
       "name": "key.ftbteams.open_gui",
@@ -24,6 +26,7 @@
   {
     "id": "key_19c9c36d757",
     "title": "Toggled Reacharound Placement",
+    "locked": true,
     "icon": "minecraft:scaffolding",
     "action": {
       "type": "KEY",
@@ -36,6 +39,7 @@
     "id": "advancements",
     "title": "Advancements",
     "icon": "chipped:alchemy_book",
+    "locked": true,
     "action": {
       "type": "KEY",
       "name": "key.advancements",
@@ -47,9 +51,22 @@
     "id": "key_19c9c29f028",
     "title": "Boss Checklist",
     "icon": "milf:holy_book_of_color",
+    "locked": true,
     "action": {
       "type": "KEY",
       "name": "key.boss_checklist.open_checklist",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "act_19d815875a3_fa3e",
+    "title": "Open Backpack",
+    "icon": "sophisticatedbackpacks:backpack",
+    "locked": true,
+    "action": {
+      "type": "KEY",
+      "name": "key.sophisticatedbackpacks.open_backpack",
       "toggle": false,
       "mode": "AUTO"
     }

@@ -19,7 +19,6 @@ FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
 const radial_menu_buttons = [
     { quest_id: '7108991BE6DD4A51', stage: 'radial_money_pouch',   action_name: 'Open Money Pouch',   key_name: 'key.devices.open_pouch',                   icon: "devices:devices_pouch" },
     { quest_id: '472BCEE94E93C2FF', stage: 'radial_trinket_pouch', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch',              icon: "ars_elemental:curio_bag" },
-    { quest_id: '0C6E1695C7D921E2', stage: 'radial_backpack',      action_name: 'Open Backpack',      key_name: 'key.sophisticatedbackpacks.open_backpack',  icon: "sophisticatedbackpacks:backpack" },
     { quest_id: '0A58BA17068FCA2C', stage: 'radial_sail',          action_name: 'Toggle Sail',        key_name: 'key.smallships.ship_sail',                 icon: "smallships:sail" },
     { quest_id: '631ABDA3AFF1EE5B', stage: 'radial_world_tier',    action_name: 'World Tier Select',  key_name: 'key.apotheosis.open_world_tier_select',    icon: "apotheosis:boss_summoner" },
 ]

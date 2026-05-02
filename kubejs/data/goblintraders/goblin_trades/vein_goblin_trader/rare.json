@@ -42,8 +42,8 @@
       },
       "payment_item": {
         "count": {
-          "max": 30,
-          "min": 10
+          "max": 1,
+          "min": 16
         },
         "id": "devices:silver_coin"
       }
@@ -60,22 +60,6 @@
         "count": {
           "max": 64,
           "min": 48
-        },
-        "id": "devices:silver_coin"
-      }
-    },
-    {
-      "type": "goblintraders:basic",
-      "experience": 50,
-      "max_trades": 40,
-      "offer_item": {
-        "count": 2,
-        "id": "clavis:lock_pick"
-      },
-      "payment_item": {
-        "count": {
-          "max": 56,
-          "min": 32
         },
         "id": "devices:silver_coin"
       }

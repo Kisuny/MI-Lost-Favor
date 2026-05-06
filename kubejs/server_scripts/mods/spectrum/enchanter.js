@@ -44,6 +44,16 @@ ServerEvents.recipes(event => {
             item_2: "spectrum:pure_redstone",
             advancement: "spectrum:midgame/build_enchanting_structure"
         },
+        {
+            name: "apothic_enchanting:knowledge_of_the_ages",
+            level_cap: 3,
+            xp_scaling: [400, 800],
+            item_scaling: [8, 16],
+            pigment_color: "spectrum:white_pigment",
+            item_1: "forbidden_arcanus:xpetrified_orb",
+            item_2: "spectrum:pure_malachite",
+            advancement: "spectrum:unlocks/colored_saplings/white_sapling"
+        },
     ]
 
     const seen = new Set();

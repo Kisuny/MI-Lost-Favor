@@ -1,0 +1,55 @@
+{
+    "type": "apotheosis:mob_effect",
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "mob_effect": "minecraft:glowing",
+    "target": "attack_target",
+    "types": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+    ],
+    "values": {
+        "apotheosis:uncommon": {
+            "duration": {
+                "min": 100.0,
+                "max": 340.0,
+                "step": 20.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 300
+        },
+        "apotheosis:rare": {
+            "duration": {
+                "min": 120.0,
+                "max": 360.0,
+                "step": 20.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 300
+        },
+        "apotheosis:epic": {
+            "duration": {
+                "min": 140.0,
+                "max": 380.0,
+                "step": 20.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 300
+        },
+        "apotheosis:mythic": {
+            "duration": {
+                "min": 160.0,
+                "max": 400.0,
+                "step": 20.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 300
+        }
+    }
+}

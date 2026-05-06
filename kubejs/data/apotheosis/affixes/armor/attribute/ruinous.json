@@ -1,0 +1,35 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "minecraft:generic.attack_damage",
+    "categories": [
+        "apotheosis:chestplate"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "apotheosis:armor/attribute/nimblehanded"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_multiplied_base",
+    "values": {
+        "apotheosis:rare": {
+            "min": 0.01,
+            "max": 0.5,
+            "step": 0.01
+        },
+        "apotheosis:epic": {
+            "min": 0.08,
+            "max": 0.15,
+            "step": 0.01
+        },
+        "apotheosis:mythic": {
+            "min": 0.12,
+            "max": 0.2,
+            "step": 0.01
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "apothic_attributes:healing_received",
+    "categories": [
+        "apotheosis:helmet",
+        "apotheosis:chestplate",
+        "apotheosis:leggings",
+        "apotheosis:boots"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "apotheosis:armor/attribute/blessed",
+            "apotheosis:armor/attribute/blessed_light"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "apotheosis:rare": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "apotheosis:epic": {
+            "min": 0.08,
+            "max": 0.15
+        },
+        "apotheosis:mythic": {
+            "min": 0.1,
+            "max": 0.2
+        }
+    }
+}

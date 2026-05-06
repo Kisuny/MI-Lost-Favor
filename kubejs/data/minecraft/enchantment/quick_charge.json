@@ -1,0 +1,49 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.minecraft.quick_charge"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "attribute": "apothic_attributes:draw_speed",
+        "id": "enchantment.minecraft.quick_charge",
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:crossbow_charging_sounds": [
+      {
+        "end": "minecraft:item.crossbow.loading_end",
+        "start": "minecraft:item.crossbow.quick_charge_1"
+      },
+      {
+        "end": "minecraft:item.crossbow.loading_end",
+        "start": "minecraft:item.crossbow.quick_charge_2"
+      },
+      {
+        "end": "minecraft:item.crossbow.loading_end",
+        "start": "minecraft:item.crossbow.quick_charge_3"
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/crossbow",
+  "exclusive_set": "minecraft:power",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 3,
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 12,
+    "per_level_above_first": 20
+  },
+  "weight": 5
+}

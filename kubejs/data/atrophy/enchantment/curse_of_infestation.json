@@ -1,0 +1,53 @@
+{
+  "anvil_cost": 15,
+  "description": {
+    "translate": "enchantment.atrophy.curse_of_infestation"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": 0.0,
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 45.0,
+            "per_level_above_first": 0.0
+          },
+          "min_amplifier": 0.0,
+          "min_duration": 30.0,
+          "to_apply": "minecraft:infested"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 1,
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 8
+  },
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "weight": 1
+}

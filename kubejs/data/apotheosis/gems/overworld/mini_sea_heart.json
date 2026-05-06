@@ -1,0 +1,149 @@
+{
+    "type": "apotheosis:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:overworld"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "frontier": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "ascent": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "summit": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 50
+        }
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:mob_effect",
+            "gem_class": "apotheosis:melee_weapon",
+            "mob_effect": "minecraft:mining_fatigue",
+            "stack_on_reapply": true,
+            "stacking_limit": 4,
+            "target": "attack_target",
+            "values": {
+                "flawed": {
+                    "duration": 120,
+                    "amplifier": 0,
+                    "cooldown": 40
+                },
+                "normal": {
+                    "duration": 160,
+                    "amplifier": 0,
+                    "cooldown": 40
+                },
+                "flawless": {
+                    "duration": 200,
+                    "amplifier": 0,
+                    "cooldown": 40
+                },
+                "perfect": {
+                    "duration": 240,
+                    "amplifier": 1,
+                    "cooldown": 40
+                }
+            }
+        },
+        {
+            "type": "apotheosis:enchantment",
+            "enchantment": "minecraft:impaling",
+            "gem_class": "trident",
+            "mode": "existing",
+            "values": {
+                "flawed": 1,
+                "normal": 2,
+                "flawless": 3,
+                "perfect": 5
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:helmet",
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.oxygen_bonus",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "flawed": 0.2,
+                        "normal": 0.25,
+                        "flawless": 0.3,
+                        "perfect": 0.4
+                    }
+                },
+                {
+                    "attribute": "minecraft:player.submerged_mining_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "flawed": 0.075,
+                        "normal": 0.1,
+                        "flawless": 0.125,
+                        "perfect": 0.15
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:mob_effect",
+            "gem_class": "apotheosis:chestplate",
+            "mob_effect": "minecraft:conduit_power",
+            "target": "hurt_self",
+            "values": {
+                "normal": {
+                    "duration": 1200,
+                    "amplifier": 0,
+                    "cooldown": 400
+                },
+                "flawless": {
+                    "duration": 1800,
+                    "amplifier": 0,
+                    "cooldown": 400
+                },
+                "perfect": {
+                    "duration": 2400,
+                    "amplifier": 0,
+                    "cooldown": 400
+                }
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:boots",
+            "modifiers": [
+                {
+                    "attribute": "neoforge:swim_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "flawed": 0.1,
+                        "normal": 0.2,
+                        "flawless": 0.3,
+                        "perfect": 0.4
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.water_movement_efficiency",
+                    "operation": "add_value",
+                    "values": {
+                        "flawed": 0.125,
+                        "normal": 0.25,
+                        "flawless": 0.375,
+                        "perfect": 0.5
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "cataclysm:cursed_bow"
+        },
+        {
+            "item": "cataclysm:soul_render"
+        },
+        {
+            "item": "cataclysm:the_annihilator"
+        },
+        {
+            "item": "cataclysm:cursium_helmet"
+        },
+        {
+            "item": "cataclysm:cursium_chestplate"
+        },
+        {
+            "item": "cataclysm:cursium_leggings"
+        },
+        {
+            "item": "cataclysm:cursium_boots"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 1,
+            "min_count": 1,
+            "stack": {
+                "count": 1,
+                "id": "cataclysm:cursium_ingot"
+            }
+        }
+    ]
+}

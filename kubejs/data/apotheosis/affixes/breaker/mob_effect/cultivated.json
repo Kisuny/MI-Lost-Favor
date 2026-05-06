@@ -1,0 +1,54 @@
+{
+    "type": "apotheosis:mob_effect",
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 5
+        }
+    },
+    "mob_effect": "farmersdelight:nourishment",
+    "target": "break_self",
+    "types": [
+        "apotheosis:breaker"
+    ],
+    "values": {
+        "apotheosis:uncommon": {
+            "duration": {
+                "min": 20.0,
+                "max": 40.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 20
+        },
+        "apotheosis:rare": {
+            "duration": {
+                "min": 20.0,
+                "max": 40.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 40
+        },
+        "apotheosis:epic": {
+            "duration": {
+                "min": 60.0,
+                "max": 120.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 60
+        },
+        "apotheosis:mythic": {
+            "duration": {
+                "min": 100.0,
+                "max": 200.0,
+                "step": 20.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 100
+        }
+    }
+}

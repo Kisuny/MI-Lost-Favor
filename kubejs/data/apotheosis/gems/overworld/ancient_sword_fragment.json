@@ -1,0 +1,122 @@
+{
+    "type": "apotheosis:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:overworld"
+        ]
+    },
+    "min_purity": "cracked",
+    "unique": true,
+    "weights": {
+        "ascent": {
+            "frontier": 8.0,
+            "weight": 15
+        },
+        "ascent": {
+            "quality": 6.0,
+            "weight": 15
+        },
+        "summit": {
+            "quality": 4.0,
+            "weight": 15
+        },
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 15
+        }
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and_but",
+            "gem_class": {
+                "key": "weapons",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:trident"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.2,
+                        "chipped": 0.225,
+                        "flawed": 0.25,
+                        "normal": 0.275,
+                        "flawless": 0.3,
+                        "perfect": 0.35
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 2.0,
+                        "chipped": 3.5,
+                        "flawed": 4.0,
+                        "normal": 5.0,
+                        "flawless": 6.0,
+                        "perfect": 8.0
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "cracked": -0.2,
+                        "chipped": -0.225,
+                        "flawed": -0.25,
+                        "normal": -0.275,
+                        "flawless": -0.3,
+                        "perfect": -0.35
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and_but",
+            "gem_class": "apotheosis:bow",
+            "modifiers": [
+                {
+                    "attribute": "apothic_attributes:arrow_damage",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "cracked": 0.2,
+                        "chipped": 0.225,
+                        "flawed": 0.25,
+                        "normal": 0.275,
+                        "flawless": 0.3,
+                        "perfect": 0.35
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 2.0,
+                        "chipped": 3.5,
+                        "flawed": 4.0,
+                        "normal": 5.0,
+                        "flawless": 6.0,
+                        "perfect": 8.0
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:draw_speed",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "cracked": -0.2,
+                        "chipped": -0.225,
+                        "flawed": -0.25,
+                        "normal": -0.275,
+                        "flawless": -0.3,
+                        "perfect": -0.35
+                    }
+                }
+            ]
+        }
+    ]
+}

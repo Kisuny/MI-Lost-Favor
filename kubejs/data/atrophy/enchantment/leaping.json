@@ -1,0 +1,45 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.atrophy.leaping"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "attribute": "minecraft:generic.jump_strength",
+        "id": "enchantment.atrophy.leaping",
+        "operation": "add_multiplied_base"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.5
+        },
+        "attribute": "minecraft:generic.safe_fall_distance",
+        "id": "enchantment.atrophy.leaping",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "exclusive_set": "#minecraft:exclusive_set/movement",
+  "slots": [
+    "legs"
+  ],
+  "max_level": 4,
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "weight": 1
+}

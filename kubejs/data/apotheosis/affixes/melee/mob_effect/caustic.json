@@ -1,0 +1,47 @@
+{
+    "type": "apotheosis:mob_effect",
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "mob_effect": "apothic_attributes:sundering",
+    "stack_on_reapply": false,
+    "target": "attack_target",
+    "types": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+    ],
+    "values": {
+        "apotheosis:rare": {
+            "duration": {
+                "min": 60.0,
+                "max": 100.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 900
+        },
+        "apotheosis:epic": {
+            "duration": {
+                "min": 100.0,
+                "max": 150.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 800
+        },
+        "apotheosis:mythic": {
+            "duration": {
+                "min": 140.0,
+                "max": 200.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 700
+        }
+    }
+}

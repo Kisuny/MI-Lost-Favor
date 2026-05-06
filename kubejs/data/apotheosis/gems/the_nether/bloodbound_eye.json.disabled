@@ -1,0 +1,67 @@
+{
+    "type": "apotheosis:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:the_nether"
+        ]
+    },
+    "min_purity": "perfect",
+    "unique": true,
+    "weights": {
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 1
+        }
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:plus_atk_but_negative_def.desc",
+            "gem_class": {
+                "key": "light_weapon",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:trident"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attributes": [
+                        "minecraft:generic.attack_damage",
+                        "apothic_attributes:armor_pierce",
+                        "apothic_attributes:armor_shred",
+                        "apothic_attributes:arrow_damage",
+                        "apothic_attributes:cold_damage",
+                        "apothic_attributes:crit_chance",
+                        "apothic_attributes:crit_damage",
+                        "apothic_attributes:current_hp_damage",
+                        "apothic_attributes:fire_damage",
+                        "apothic_attributes:prot_pierce",
+                        "apothic_attributes:prot_shred"
+                    ],
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "perfect": 0.75
+                    }
+                },
+                {
+                    "attributes": [
+                        "minecraft:generic.max_health",
+                        "minecraft:generic.knockback_resistance",
+                        "minecraft:generic.armor",
+                        "minecraft:generic.armor_toughness",
+                        "apothic_attributes:dodge_chance",
+                        "apothic_attributes:ghost_health",
+                        "apothic_attributes:healing_received",
+                        "apothic_attributes:life_steal",
+                        "apothic_attributes:overheal"
+                    ],
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "perfect": -0.9
+                    }
+                }
+            ]
+        }
+    ]
+}

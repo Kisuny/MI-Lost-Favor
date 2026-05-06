@@ -1,0 +1,88 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "min_purity": "flawed",
+    "weights": {
+        "quality": 0.1,
+        "weight": 80
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.but",
+            "gem_class": {
+                "key": "weapons",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:bow"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "apothic_attributes:crit_damage",
+                    "operation": "add_value",
+                    "values": {
+                        "flawed": 0.3,
+                        "normal": 0.6,
+                        "flawless": 0.85,
+                        "perfect": 1.2
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:armor_shred",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.15,
+                        "normal": -0.25,
+                        "flawless": -0.35,
+                        "perfect": -0.45
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:mob_effect",
+            "gem_class": "apotheosis:trident",
+            "mob_effect": "minecraft:strength",
+            "stack_on_reapply": true,
+            "stacking_limit": 5,
+            "target": "arrow_self",
+            "values": {
+                "flawless": {
+                    "duration": 200,
+                    "amplifier": 0,
+                    "cooldown": 40
+                },
+                "perfect": {
+                    "duration": 200,
+                    "amplifier": 1,
+                    "cooldown": 40
+                }
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "minecraft:generic.attack_damage",
+            "gem_class": "apotheosis:helmet",
+            "operation": "add_multiplied_base",
+            "values": {
+                "flawed": 0.15,
+                "normal": 0.175,
+                "flawless": 0.225,
+                "perfect": 0.3
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "minecraft:generic.max_health",
+            "gem_class": "apotheosis:chestplate",
+            "operation": "add_multiplied_base",
+            "values": {
+                "flawed": 0.15,
+                "normal": 0.2,
+                "flawless": 0.25,
+                "perfect": 0.35
+            }
+        }
+    ]
+}

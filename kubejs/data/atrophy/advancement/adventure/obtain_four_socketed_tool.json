@@ -1,0 +1,76 @@
+{
+  "display": {
+    "icon": {
+      "id": "apotheosis:sigil_of_socketing",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": {
+      "translate": "advancements.adventure.obtain_four_socketed_tool.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.obtain_four_socketed_tool.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "atrophy:adventure/obtain_common_wooden_tool",
+  "criteria": {
+    "four_socket_tool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "apotheosis": "sockets=4"
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common",
+                  "apotheosis:uncommon",
+                  "apotheosis:rare",
+                  "apotheosis:epic",
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "five_socket_tool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "apotheosis": "sockets=5"
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common",
+                  "apotheosis:uncommon",
+                  "apotheosis:rare",
+                  "apotheosis:epic",
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "four_socket_tool",
+      "five_socket_tool"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

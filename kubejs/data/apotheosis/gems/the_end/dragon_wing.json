@@ -1,0 +1,57 @@
+{
+    "type": "apotheosis:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:end"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "pinnacle": {
+            "quality": 16.0,
+            "weight": 1
+        }
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:elytra_flight",
+            "gem_class": "apotheosis:chestplate",
+            "operation": "add_value",
+            "values": {
+                "flawed": 1.0,
+                "normal": 1.0,
+                "flawless": 1.0,
+                "perfect": 1.0
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.but",
+            "gem_class": "apotheosis:boots",
+            "modifiers": [
+                {
+                    "attribute": "neoforge:creative_flight",
+                    "operation": "add_value",
+                    "values": {
+                        "flawed": 1.0,
+                        "normal": 1.0,
+                        "flawless": 1.0,
+                        "perfect": 1.0
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.98,
+                        "normal": -0.96,
+                        "flawless": -0.94,
+                        "perfect": -0.9
+                    }
+                }
+            ]
+        }
+    ]
+}

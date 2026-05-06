@@ -1,0 +1,26 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "minecraft:enchanting_table"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 2,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "minecraft:obsidian"
+            }
+        },
+        {
+            "max_count": 1,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "minecraft:diamond"
+            }
+        }
+    ]
+}

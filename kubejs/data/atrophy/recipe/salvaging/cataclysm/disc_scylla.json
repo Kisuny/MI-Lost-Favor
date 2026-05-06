@@ -1,0 +1,26 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "cataclysm:music_disc_scylla"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 4,
+            "min_count": 1,
+            "stack": {
+                "count": 1,
+                "id": "cataclysm:lacrima"
+            }
+        },
+        {
+            "max_count": 1,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "cataclysm:essence_of_the_storm"
+            }
+        }
+    ]
+}

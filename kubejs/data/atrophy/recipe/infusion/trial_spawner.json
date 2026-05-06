@@ -1,0 +1,20 @@
+{
+	"type": "apothic_enchanting:infusion",
+	"input": {
+		"item": "minecraft:spawner"
+	},
+	"requirements": {
+		"eterna": 100,
+		"quanta": 50,
+		"arcana": 75
+	},
+	"max_requirements": {
+		"eterna": -1,
+		"quanta": 60,
+		"arcana": 80
+	},
+	"result": {
+		"id": "minecraft:trial_spawner",
+		"count": 1
+	}
+}

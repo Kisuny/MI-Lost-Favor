@@ -1,0 +1,33 @@
+{
+    "type": "apotheosis:enchantment",
+    "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:breaker"
+    ],
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 1
+        }
+    },
+    "enchantment": "minecraft:knockback",
+    "values": {
+        "apotheosis:epic": {
+            "min": 1.0,
+            "max": 2.0,
+            "step": 0.5
+        },
+        "apotheosis:epic": {
+            "min": 1.0,
+            "max": 4.0,
+            "step": 0.5
+        },
+        "apotheosis:mythic": {
+            "min": 1.0,
+            "max": 6.0,
+            "step": 0.5
+        }
+    }
+}

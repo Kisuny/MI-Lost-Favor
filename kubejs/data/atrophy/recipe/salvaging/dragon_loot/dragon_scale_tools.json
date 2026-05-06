@@ -1,0 +1,39 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "dragonloot:dragon_sword"
+        },
+        {
+            "item": "dragonloot:dragon_pickaxe"
+        },
+        {
+            "item": "dragonloot:dragon_axe"
+        },
+        {
+            "item": "dragonloot:dragon_shovel"
+        },
+        {
+            "item": "dragonloot:dragon_hoe"
+        },
+        {
+            "item": "dragonloot:dragon_bow"
+        },
+        {
+            "item": "dragonloot:dragon_crossbow"
+        },
+        {
+            "item": "dragonloot:dragon_trident"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 1,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "dragonloot:dragon_scale"
+            }
+        }
+    ]
+}

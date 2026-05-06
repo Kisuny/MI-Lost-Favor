@@ -1,0 +1,23 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "apothic_attributes:healing_received",
+    "categories": [
+        "apotheosis:curio"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 15
+        }
+    },
+    "operation": "add_multiplied_base",
+    "values": {
+        "apotheosis:common": 0.0075,
+        "apotheosis:uncommon": 0.0125,
+        "apotheosis:rare": 0.025,
+        "apotheosis:epic": 0.0375,
+        "apotheosis:mythic": 0.05
+    }
+}

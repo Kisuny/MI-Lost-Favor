@@ -1,0 +1,46 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.atrophy.curse_of_misinformation"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.5,
+          "per_level_above_first": -0.5
+        },
+        "attribute": "apothic_attributes:experience_gained",
+        "id": "enchantment.atrophy.curse_of_misinformation",
+        "operation": "add_multiplied_total"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.25,
+          "per_level_above_first": -0.25
+        },
+        "attribute": "minecraft:generic.luck",
+        "id": "enchantment.atrophy.curse_of_misinformation",
+        "operation": "add_multiplied_total"
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "slots": [
+    "head"
+  ],
+  "max_level": 1,
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

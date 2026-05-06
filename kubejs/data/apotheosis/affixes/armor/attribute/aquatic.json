@@ -1,0 +1,38 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "neoforge:swim_speed",
+    "categories": [
+        "apotheosis:boots"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 10
+        }
+    },
+    "operation": "add_multiplied_total",
+    "values": {
+        "apotheosis:common": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "apotheosis:uncommon": {
+            "min": 0.06,
+            "max": 0.12
+        },
+        "apotheosis:rare": {
+            "min": 0.08,
+            "max": 0.15
+        },
+        "apotheosis:epic": {
+            "min": 0.1,
+            "max": 0.2
+        },
+        "apotheosis:mythic": {
+            "min": 0.15,
+            "max": 0.25
+        }
+    }
+}

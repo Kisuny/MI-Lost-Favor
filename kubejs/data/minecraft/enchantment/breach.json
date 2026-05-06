@@ -1,0 +1,45 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.minecraft.breach"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.075,
+          "per_level_above_first": 0.075
+        },
+        "attribute": "apothic_attributes:armor_shred",
+        "id": "enchantment.minecraft.breach",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.025,
+          "per_level_above_first": 0.025
+        },
+        "attribute": "apothic_attributes:prot_shred",
+        "id": "enchantment.minecraft.breach",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/mace",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 4,
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "weight": 2
+}

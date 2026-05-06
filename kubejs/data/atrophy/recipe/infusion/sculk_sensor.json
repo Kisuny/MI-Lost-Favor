@@ -1,0 +1,21 @@
+{
+	"type": "apothic_enchanting:infusion",
+	"input": {
+		"item": "minecraft:sculk"
+	},
+	"requirements": {
+		"eterna": 80,
+		"quanta": 25,
+		"arcana": 60
+	},
+	"max_requirements": {
+		"eterna": -1,
+		"quanta": 50,
+		"arcana": -1
+	},
+	"display_level": 1,
+	"result": {
+		"id": "minecraft:sculk_sensor",
+		"count": 1
+	}
+}

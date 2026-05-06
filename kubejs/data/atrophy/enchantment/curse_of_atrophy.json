@@ -1,0 +1,44 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.atrophy.curse_of_atrophy"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.15,
+          "per_level_above_first": -0.15
+        },
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "enchantment.atrophy.curse_of_atrophy",
+        "operation": "add_multiplied_total"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.1,
+          "per_level_above_first": -0.1
+        },
+        "attribute": "minecraft:generic.movement_speed",
+        "id": "enchantment.atrophy.curse_of_atrophy",
+        "operation": "add_multiplied_total"
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "slots": [
+    "armor"
+  ],
+  "max_level": 1,
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

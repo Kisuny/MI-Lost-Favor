@@ -1,0 +1,36 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.atrophy.merciless"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "attribute": "apothic_attributes:crit_damage",
+        "id": "enchantment.merciless",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "exclusive_set": "#minecraft:exclusive_set/crit_attacks",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 5,
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

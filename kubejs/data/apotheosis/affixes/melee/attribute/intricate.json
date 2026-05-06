@@ -1,0 +1,40 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "apothic_attributes:crit_chance",
+    "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident",
+        "apotheosis:bow"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 2
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "apotheosis:common": {
+            "min": 0.01,
+            "max": 0.05
+        },
+        "apotheosis:uncommon": {
+            "min": 0.01,
+            "max": 0.06
+        },
+        "apotheosis:rare": {
+            "min": 0.02,
+            "max": 0.07
+        },
+        "apotheosis:epic": {
+            "min": 0.02,
+            "max": 0.08
+        },
+        "apotheosis:mythic": {
+            "min": 0.03,
+            "max": 0.1
+        }
+    }
+}

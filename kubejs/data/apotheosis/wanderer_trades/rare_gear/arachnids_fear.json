@@ -1,0 +1,32 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 1,
+        "id": "minecraft:iron_sword"
+    },
+    "input_2": {
+        "count": 45,
+        "id": "minecraft:fermented_spider_eye"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#CEA1A1\",\"italic\":false,\"translate\":\"name.apotheosis.arachnids_fear\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.arachnids_fear\"}"
+                ],
+            "minecraft:enchantments": {
+                "levels": {
+                    "minecraft:bane_of_arthropods": 6,
+                    "minecraft:fire_aspect": 3,
+                    "minecraft:looting": 4,
+                    "minecraft:unbreaking": 4,
+                    "minecraft:mending": 1
+                }
+            }
+        },
+        "count": 1,
+        "id": "minecraft:iron_sword"
+    },
+    "rare": true,
+    "xp": 500
+}

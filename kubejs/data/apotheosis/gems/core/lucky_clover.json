@@ -1,0 +1,28 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "min_purity": "flawed",
+    "weights": {
+        "quality": 12.0,
+        "weight": 20
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "minecraft:generic.luck",
+            "gem_class": {
+                "key": "anything",
+                "types": {
+                    "type": "neoforge:any"
+                }
+            },
+            "operation": "add_value",
+            "values": {
+                "flawed": 1.0,
+                "normal": 2.0,
+                "flawless": 3.0,
+                "perfect": 4.0
+            }
+        }
+    ]
+}

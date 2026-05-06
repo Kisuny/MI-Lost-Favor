@@ -1,0 +1,23 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "apothic_attributes:arrow_damage",
+    "categories": [
+        "apotheosis:curio"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 15
+        }
+    },
+    "operation": "add_multiplied_base",
+    "values": {
+        "apotheosis:common": 0.005,
+        "apotheosis:uncommon": 0.01,
+        "apotheosis:rare": 0.02,
+        "apotheosis:epic": 0.03,
+        "apotheosis:mythic": 0.04
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "apothic_attributes:projectile_damage",
+        "operation": "add_multiplied_total",
+        "value": 0.2
+    },
+    "modifier_id": "apotheosis:pinnacle/ranged_damage",
+    "sort_index": 5,
+    "target": "monsters",
+    "tier": "pinnacle"
+}

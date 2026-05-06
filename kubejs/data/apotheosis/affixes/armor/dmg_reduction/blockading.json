@@ -1,0 +1,40 @@
+{
+    "type": "apotheosis:damage_reduction",
+    "categories": [
+        "apotheosis:helmet",
+        "apotheosis:chestplate",
+        "apotheosis:leggings",
+        "apotheosis:boots"
+    ],
+    "damage_type": "physical",
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "values": {
+        "apotheosis:common": {
+            "min": 0.01,
+            "max": 0.02
+        },
+        "apotheosis:uncommon": {
+            "min": 0.01,
+            "max": 0.04
+        },
+        "apotheosis:rare": {
+            "min": 0.02,
+            "max": 0.6
+        },
+        "apotheosis:epic": {
+            "min": 0.03,
+            "max": 0.8
+        },
+        "apotheosis:mythic": {
+            "min": 0.04,
+            "max": 0.1
+        }
+    }
+}

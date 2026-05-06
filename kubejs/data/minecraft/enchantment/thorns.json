@@ -1,0 +1,55 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.minecraft.thorns"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:thorns",
+              "max_damage": 10.0,
+              "min_damage": 5.0
+            },
+            {
+              "type": "minecraft:damage_item",
+              "amount": 3.0
+            }
+          ]
+        },
+        "enchanted": "victim",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.5,
+              "per_level_above_first": 0.25
+            }
+          },
+          "condition": "minecraft:random_chance"
+        }
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "exclusive_set": "#minecraft:exclusive_set/thorns",
+  "slots": [
+    "chest"
+  ],
+  "max_level": 3,
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "weight": 1
+}

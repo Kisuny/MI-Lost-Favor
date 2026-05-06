@@ -1,0 +1,36 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.minecraft.sharpness"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 0.75
+        },
+        "attribute": "minecraft:generic.attack_damage",
+        "id": "enchantment.sharpness",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "exclusive_set": "#minecraft:exclusive_set/generic_damage",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 5,
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

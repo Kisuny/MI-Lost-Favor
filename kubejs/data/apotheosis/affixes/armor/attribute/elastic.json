@@ -1,0 +1,35 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "minecraft:generic.step_height",
+    "categories": [
+        "apotheosis:boots"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 10
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "apotheosis:common": 0.5,
+        "apotheosis:uncommon": 0.5,
+        "apotheosis:rare": {
+            "min": 0.5,
+            "max": 1.5,
+            "step": 0.25
+        },
+        "apotheosis:epic": {
+            "min": 0.5,
+            "max": 1.5,
+            "step": 0.25
+        },
+        "apotheosis:mythic": {
+            "min": 1.0,
+            "max": 2.0,
+            "step": 0.25
+        }
+    }
+}

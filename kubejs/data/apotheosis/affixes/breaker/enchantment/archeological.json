@@ -1,0 +1,23 @@
+{
+    "type": "apotheosis:enchantment",
+    "categories": [
+        "apotheosis:breaker"
+    ],
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 5
+        }
+    },
+    "enchantment": "apothic_enchanting:boon_of_the_earth",
+    "mode": "existing",
+    "values": {
+        "apotheosis:mythic": {
+            "min": 1.0,
+            "max": 1.0,
+            "step": 0.0
+        }
+    }
+}

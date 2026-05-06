@@ -1,0 +1,96 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "minecraft:generic.attack_damage",
+            "gem_class": {
+                "key": "light_weapon",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:trident"
+                ]
+            },
+            "operation": "add_value",
+            "values": {
+                "cracked": 0.5,
+                "chipped": 1.0,
+                "flawed": 1.5,
+                "normal": 2.0,
+                "flawless": 3.5,
+                "perfect": 5.0
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+                "key": "core_armor",
+                "types": [
+                    "apotheosis:chestplate",
+                    "apotheosis:leggings"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 0.05,
+                        "chipped": 0.075,
+                        "flawed": 0.1,
+                        "normal": 0.125,
+                        "flawless": 0.15,
+                        "perfect": 0.2
+                    }
+                },                {
+                    "attribute": "minecraft:generic.explosion_knockback_resistance",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 0.1,
+                        "chipped": 0.15,
+                        "flawed": 0.2,
+                        "normal": 0.25,
+                        "flawless": 0.3,
+                        "perfect": 0.4
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:breaker",
+            "modifiers": [
+                {
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 2.0,
+                        "chipped": 3.0,
+                        "flawed": 4.0,
+                        "normal": 6.0,
+                        "flawless": 8.0,
+                        "perfect": 10.0
+                    }
+                },                {
+                    "attribute": "apothic_attributes:prot_pierce",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 1.0,
+                        "chipped": 2.0,
+                        "flawed": 3.0,
+                        "normal": 5.0,
+                        "flawless": 6.0,
+                        "perfect": 8.0
+                    }
+                }
+            ]
+        }
+    ]
+}

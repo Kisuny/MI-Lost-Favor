@@ -1,0 +1,32 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 1,
+        "id": "minecraft:diamond_boots"
+    },
+    "input_2": {
+        "count": 45,
+        "id": "devices:gold_coin"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#1ABBE0\",\"italic\":false,\"translate\":\"name.apotheosis.rune_forged_greaves\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.rune_forged_sabatons\"}"
+                ],
+            "minecraft:enchantments": {
+                "levels": {
+                    "minecraft:protection": 5,
+                    "minecraft:feather_falling": 5,
+                    "apothic_enchanting:stable_footing": 1,
+                    "minecraft:unbreaking": 4,
+                    "minecraft:mending": 1
+                }
+            }
+        },
+        "count": 1,
+        "id": "minecraft:diamond_boots"
+    },
+    "rare": true,
+    "xp": 500
+}

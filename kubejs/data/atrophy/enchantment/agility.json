@@ -1,0 +1,45 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.atrophy.agility"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.08,
+          "per_level_above_first": 0.08
+        },
+        "attribute": "minecraft:generic.movement_speed",
+        "id": "enchantment.atrophy.agility",
+        "operation": "add_multiplied_base"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.075
+        },
+        "attribute": "minecraft:generic.movement_efficiency",
+        "id": "enchantment.atrophy.agility",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "exclusive_set": "#minecraft:exclusive_set/movement",
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "slots": [
+    "legs"
+  ],
+  "max_level": 3,
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "weight": 1
+}

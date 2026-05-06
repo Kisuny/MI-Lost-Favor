@@ -1,0 +1,28 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "apothic_attributes:dodge_chance",
+    "categories": [
+        "apotheosis:boots"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "apotheosis:armor/attribute/blessed_light"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 5
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "apotheosis:epic": {
+            "min": 0.01,
+            "max": 0.04
+        },
+        "apotheosis:mythic": {
+            "min": 0.02,
+            "max": 0.06
+        }
+    }
+}

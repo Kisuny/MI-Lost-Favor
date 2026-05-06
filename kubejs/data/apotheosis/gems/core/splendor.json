@@ -1,0 +1,29 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "min_purity": "chipped",
+    "weights": {
+        "quality": 0.1,
+        "weight": 80
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:experience_gained",
+            "gem_class": {
+                "key": "anything",
+                "types": {
+                    "type": "neoforge:any"
+                }
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+                "chipped": 0.1,
+                "flawed": 0.2,
+                "normal": 0.3,
+                "flawless": 0.4,
+                "perfect": 0.5
+            }
+        }
+    ]
+}

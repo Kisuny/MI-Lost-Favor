@@ -1,0 +1,33 @@
+{
+    "type": "apotheosis:enchantment",
+    "categories": [
+        "apotheosis:bow"
+    ],
+    "definition": {
+        "affix_type": "ability",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "enchantment": "minecraft:looting",
+    "values": {
+        "apotheosis:uncommon": 1.0
+        "apotheosis:rare": {
+            "min": 1.0,
+            "max": 2.0,
+            "step": 0.25
+        },
+        "apotheosis:epic": {
+            "min": 1.0,
+            "max": 3.0,
+            "step": 0.25
+        },
+        "apotheosis:mythic": {
+            "min": 1.0,
+            "max": 4.0,
+            "step": 0.25
+        }
+    }
+}

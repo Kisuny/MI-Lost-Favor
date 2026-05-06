@@ -1,0 +1,130 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+                "key": "light_weapon",
+                "types": [
+                    "apotheosis:melee_weapon"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.attack_knockback",
+                    "operation": "add_value",
+                    "values": {
+                        "chipped": 2.0,
+                        "flawed": 2.5,
+                        "normal": 3.0,
+                        "flawless": 3.5,
+                        "perfect": 4.0
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "chipped": 0.02,
+                        "flawed": 0.04,
+                        "normal": 0.06,
+                        "flawless": 0.08,
+                        "perfect": 0.1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:enchantment",
+            "enchantment": "minecraft:riptide",
+            "gem_class": "trident",
+            "mode": "existing",
+            "values": {
+                "normal": 1,
+                "flawless": 1,
+                "perfect": 1
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:draw_speed",
+            "gem_class": "apotheosis:bow",
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": 0.1,
+                "chipped": 0.25,
+                "flawed": 0.35,
+                "normal": 0.45,
+                "flawless": 0.5,
+                "perfect": 0.6
+            }
+        },
+        {
+            "type": "apotheosis:enchantment",
+            "enchantment": "atrophy:agility",
+            "gem_class": "leggings",
+            "mode": "existing",
+            "values": {
+                "flawless": 1,
+                "perfect": 2
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:dodge_chance",
+            "gem_class": "apotheosis:boots",
+            "operation": "add_value",
+            "values": {
+                "cracked": 0.01,
+                "chipped": 0.25,
+                "flawed": 0.04,
+                "normal": 0.06,
+                "flawless": 0.08,
+                "perfect": 0.1
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+                "key": "tools",
+                "types": [
+                    "apotheosis:breaker",
+                    "apotheosis:shears"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.attack_knockback",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 0.5,
+                        "chipped": 1.0,
+                        "flawed": 1.5,
+                        "normal": 2.0,
+                        "flawless": 2.5,
+                        "perfect": 3.0
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:mining_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.1,
+                        "chipped": 0.15,
+                        "flawed": 0.225,
+                        "normal": 0.3,
+                        "flawless": 0.375,
+                        "perfect": 0.45
+                    }
+                }
+            ]
+        }
+    ]
+}

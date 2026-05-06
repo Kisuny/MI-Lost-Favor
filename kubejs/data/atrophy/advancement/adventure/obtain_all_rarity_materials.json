@@ -1,0 +1,93 @@
+{
+  "display": {
+    "icon": {
+      "id": "apotheosis:mythic_material"
+    },
+    "title": {
+      "translate": "advancements.adventure.obtain_all_rarity_materials.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.obtain_all_rarity_materials.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "atrophy:adventure/obtain_common_wooden_tool",
+  "criteria": {
+    "common_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "apotheosis:common_material",
+            "predicates": {}
+          }
+        ]
+      }
+    },
+    "uncommon_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "apotheosis:uncommon_material",
+            "predicates": {}
+          }
+        ]
+      }
+    },
+    "rare_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "apotheosis:rare_material",
+            "predicates": {}
+          }
+        ]
+      }
+    },
+    "epic_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "apotheosis:epic_material",
+            "predicates": {}
+          }
+        ]
+      }
+    },
+    "mythic_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "apotheosis:mythic_material",
+            "predicates": {}
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "common_material"
+    ],
+    [
+      "uncommon_material"
+    ],
+    [
+      "rare_material"
+    ],
+    [
+      "epic_material"
+    ],
+    [
+      "mythic_material"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

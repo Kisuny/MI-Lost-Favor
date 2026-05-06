@@ -1,0 +1,33 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 1,
+        "id": "minecraft:netherite_axe"
+    },
+    "input_2": {
+        "count": 64,
+        "id": "devices:gold_coin"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#9AB091\",\"italic\":false,\"translate\":\"name.apotheosis.bonesplitter\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.bonesplitter\"}"
+                ],
+            "minecraft:enchantments": {
+                "levels": {
+                    "minecraft:sharpness": 6,
+                    "minecraft:looting": 4,
+                    "apothic_enchanting:scavenger": 2,
+                    "apothic_spawners:capturing": 3,
+                    "minecraft:unbreaking": 4,
+                    "minecraft:mending": 1
+                }
+            }
+        },
+        "count": 1,
+        "id": "minecraft:netherite_axe"
+    },
+    "rare": true,
+    "xp": 500
+}

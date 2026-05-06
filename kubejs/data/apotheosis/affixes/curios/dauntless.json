@@ -1,0 +1,23 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "minecraft:generic.max_health",
+    "categories": [
+        "apotheosis:curio"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 15
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "apotheosis:common": 0.5,
+        "apotheosis:uncommon": 1.0,
+        "apotheosis:rare": 2.0,
+        "apotheosis:epic": 3.0,
+        "apotheosis:mythic": 4.0
+    }
+}

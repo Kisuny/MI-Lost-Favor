@@ -1,0 +1,68 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.atrophy.vitality"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 1.0
+        },
+        "attribute": "minecraft:generic.max_health",
+        "id": "enchantment.atrophy.vitality",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.01,
+          "per_level_above_first": 0.01
+        },
+        "attribute": "apothic_attributes:healing_received",
+        "id": "enchantment.atrophy.vitality",
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 0.5
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "exclusive_set": "#minecraft:exclusive_set/armor",
+  "slots": [
+    "armor"
+  ],
+  "max_level": 5,
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

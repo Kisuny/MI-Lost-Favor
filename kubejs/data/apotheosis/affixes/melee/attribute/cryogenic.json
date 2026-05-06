@@ -1,0 +1,33 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "apothic_attributes:cold_damage",
+    "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [
+            "apotheosis:melee/attribute/fueling"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_multiplied_base",
+    "values": {
+        "apotheosis:rare": {
+            "min": 0.05,
+            "max": 0.15
+        },
+        "apotheosis:epic": {
+            "min": 0.05,
+            "max": 0.2
+        },
+        "apotheosis:mythic": {
+            "min": 0.1,
+            "max": 0.25
+        }
+    }
+}

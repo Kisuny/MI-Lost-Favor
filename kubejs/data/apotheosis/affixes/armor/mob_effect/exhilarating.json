@@ -1,0 +1,59 @@
+{
+    "type": "apotheosis:mob_effect",
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [
+            "apotheosis:armor/mob_effect/bolstering",
+            "apotheosis:armor/mob_effect/necrotic"
+        ],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "mob_effect": "minecraft:strength",
+    "stack_on_reapply": true,
+    "stacking_limit": 3,
+    "target": "hurt_self",
+    "types": [
+        "apotheosis:chestplate"
+    ],
+    "values": {
+        "apotheosis:uncommon": {
+            "duration": {
+                "min": 510.0,
+                "max": 600.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 500
+        },
+        "apotheosis:rare": {
+            "duration": {
+                "min": 410.0,
+                "max": 600.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 400
+        },
+        "apotheosis:epic": {
+            "duration": {
+                "min": 310.0,
+                "max": 600.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 300
+        },
+        "apotheosis:mythic": {
+            "duration": {
+                "min": 210.0,
+                "max": 600.0,
+                "step": 10.0
+            },
+            "amplifier": 0.0,
+            "cooldown": 200
+        }
+    }
+}

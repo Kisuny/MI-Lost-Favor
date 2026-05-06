@@ -1,0 +1,40 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "min_purity": "chipped",
+    "weights": {
+        "quality": 15.0,
+        "weight": 5
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:helmet",
+            "modifiers": [
+                {
+                    "attribute": "neoforge:nametag_distance",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "chipped": -0.2,
+                        "flawed": -0.4,
+                        "normal": -0.6,
+                        "flawless": -0.8,
+                        "perfect": -1.0
+                    }
+                },
+                {
+                    "attribute": "minecraft:player.sneaking_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "chipped": 0.02,
+                        "flawed": 0.04,
+                        "normal": 0.06,
+                        "flawless": 0.08,
+                        "perfect": 0.1
+                    }
+                }
+            ]
+        }
+    ]
+}

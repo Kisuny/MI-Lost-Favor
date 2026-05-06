@@ -1,0 +1,35 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.atrophy.swift_strike"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.06,
+          "per_level_above_first": 0.06
+        },
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "enchantment.swift_strike",
+        "operation": "add_multiplied_base"
+      }
+    ]
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 5,
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

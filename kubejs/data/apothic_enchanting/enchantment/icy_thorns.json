@@ -1,0 +1,57 @@
+{
+    "anvil_cost": 5,
+    "description": {
+        "translate": "enchantment.apothic_enchanting.icy_thorns"
+    },
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:apply_mob_effect",
+                    "max_amplifier": {
+                        "type": "minecraft:clamped",
+                        "max": 4.0,
+                        "min": 1.0,
+                        "value": {
+                            "type": "minecraft:linear",
+                            "base": 2.0,
+                            "per_level_above_first": 2.0
+                        }
+                    },
+                    "max_duration": 20.0,
+                    "min_amplifier": 0.0,
+                    "min_duration": 10.0,
+                    "to_apply": "minecraft:slowness"
+                },
+                "enchanted": "victim",
+                "requirements": {
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.5,
+                            "per_level_above_first": 0.5
+                        }
+                    },
+                    "condition": "minecraft:random_chance"
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#minecraft:exclusive_set/thorns",
+    "max_cost": {
+        "base": 200,
+        "per_level_above_first": 0
+    },
+    "max_level": 3,
+    "min_cost": {
+        "base": 35,
+        "per_level_above_first": 20
+    },
+    "slots": [
+        "chest"
+    ],
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "weight": 2
+}

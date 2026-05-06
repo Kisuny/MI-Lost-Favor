@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "add_multiplied_total",
+        "value": 1.0
+    },
+    "modifier_id": "apotheosis:ascent/max_health",
+    "sort_index": 1,
+    "target": "monsters",
+    "tier": "ascent"
+}

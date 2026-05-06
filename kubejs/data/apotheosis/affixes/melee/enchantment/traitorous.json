@@ -1,0 +1,32 @@
+{
+    "type": "apotheosis:enchantment",
+    "categories": [
+        "apotheosis:melee_weapon"
+    ],
+    "definition": {
+        "affix_type": "basic_effect",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 10
+        }
+    },
+    "enchantment": "farmersdelight:backstabbing",
+    "values": {
+        "apotheosis:rare": {
+            "min": 1.0,
+            "max": 1.0,
+            "step": 0.0
+        },
+        "apotheosis:epic": {
+            "min": 1.0,
+            "max": 2.0,
+            "step": 0.5
+        },
+        "apotheosis:mythic": {
+            "min": 1.0,
+            "max": 3.0,
+            "step": 0.5
+        }
+    }
+}

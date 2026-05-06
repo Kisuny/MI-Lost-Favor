@@ -1,0 +1,38 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "minecraft:player.sneaking_speed",
+    "categories": [
+        "apotheosis:leggings"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 25
+        }
+    },
+    "operation": "add_multiplied_total",
+    "values": {
+        "apotheosis:common": {
+            "min": 0.05,
+            "max": 0.1
+        },
+        "apotheosis:uncommon": {
+            "min": 0.06,
+            "max": 0.15
+        },
+        "apotheosis:rare": {
+            "min": 0.08,
+            "max": 0.20
+        },
+        "apotheosis:epic": {
+            "min": 0.15,
+            "max": 0.20
+        },
+        "apotheosis:mythic": {
+            "min": 0.2,
+            "max": 0.3
+        }
+    }
+}

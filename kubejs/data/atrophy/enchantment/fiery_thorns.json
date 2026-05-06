@@ -1,0 +1,43 @@
+{
+    "anvil_cost": 5,
+    "description": {
+        "translate": "enchantment.atrophy.fiery_thorns"
+    },
+    "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": {
+            "type": "minecraft:linear",
+            "base": 9.0,
+            "per_level_above_first":6.0
+          }
+        },
+        "enchanted": "victim",
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": true
+          }
+        }
+      }
+    ]
+    },
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "exclusive_set": "#minecraft:exclusive_set/thorns",
+    "slots": [
+        "chest"
+    ],
+    "max_level": 3,
+    "max_cost": {
+        "base": 200,
+        "per_level_above_first": 0
+    },
+    "min_cost": {
+        "base": 35,
+        "per_level_above_first": 20
+    },
+    "weight": 2
+}

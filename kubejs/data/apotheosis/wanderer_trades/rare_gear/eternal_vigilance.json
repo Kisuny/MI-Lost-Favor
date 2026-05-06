@@ -1,0 +1,34 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 48,
+        "id": "devices:gold_coin"
+    },
+    "input_2": {
+        "count": 32,
+        "id": "minecraft:phantom_membrane"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#1ABBE0\",\"italic\":false,\"translate\":\"name.apotheosis.eternal_vigilance\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.eternal_vigilance\"}"
+                ],
+            "minecraft:enchantments": {
+                "levels": {
+                    "minecraft:sharpness": 6,
+                    "minecraft:smite": 2,
+                    "minecraft:bane_of_arthropods": 2,
+                    "minecraft:looting": 5,
+                    "apothic_enchanting:scavenger": 5,
+                    "minecraft:unbreaking": 5,
+                    "apothic_enchanting:life_mending": 5
+                }
+            }
+        },
+        "count": 1,
+        "id": "minecraft:diamond_sword"
+    },
+    "rare": true,
+    "xp": 1000
+}

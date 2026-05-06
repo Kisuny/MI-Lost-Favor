@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "apothic_attributes:projectile_damage",
+        "operation": "add_multiplied_total",
+        "value": 0.15
+    },
+    "modifier_id": "apotheosis:summit/ranged_damage",
+    "sort_index": 5,
+    "target": "monsters",
+    "tier": "summit"
+}

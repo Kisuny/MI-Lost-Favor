@@ -1,0 +1,112 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "aoa3"
+        }
+    ],
+    "type": "apotheosis:gem",
+    "constraints": {
+        "dimensions": [
+            "aoa3:precasia"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "ascent": {
+            "quality": 10.0,
+            "weight": 50
+        },
+        "summit": {
+            "quality": 9.0,
+            "weight": 50
+        },
+        "pinnacle": {
+            "quality": 7.0,
+            "weight": 50
+        }
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.but_and",
+            "gem_class": {
+                "key": "weapons",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:trident"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": 0.05,
+                        "normal": 0.05,
+                        "flawless": 0.05,
+                        "perfect": 0.1
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.25,
+                        "normal": -0.5,
+                        "flawless": -0.75,
+                        "perfect": -0.95
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.25,
+                        "normal": -0.5,
+                        "flawless": -0.75,
+                        "perfect": -0.95
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.but_and",
+            "gem_class": "apotheosis:chestplate",
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": 0.05,
+                        "normal": 0.05,
+                        "flawless": 0.05,
+                        "perfect": 0.1
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.25,
+                        "normal": -0.5,
+                        "flawless": -0.75,
+                        "perfect": -0.95
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:arrow_damage",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "flawed": -0.25,
+                        "normal": -0.5,
+                        "flawless": -0.75,
+                        "perfect": -0.95
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "cataclysm:music_disc_netherite_monstrosity"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 4,
+            "min_count": 1,
+            "stack": {
+                "count": 1,
+                "id": "cataclysm:lava_power_cell"
+            }
+        },
+        {
+            "max_count": 2,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "minecraft:netherite_scrap"
+            }
+        }
+    ]
+}

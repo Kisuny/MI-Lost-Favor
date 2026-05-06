@@ -1,0 +1,36 @@
+{
+  "anvil_cost": 5,
+  "description": {
+    "translate": "enchantment.atrophy.shattering"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.05,
+          "per_level_above_first": 0.005
+        },
+        "attribute": "apothic_attributes:current_hp_damage",
+        "id": "enchantment.shattering",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 1,
+  "max_cost": {
+    "base": 41,
+    "per_level_above_first": 11
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "weight": 10
+}

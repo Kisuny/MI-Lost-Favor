@@ -1,0 +1,115 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword"
+    },
+    "title": {
+      "translate": "advancements.adventure.obtain_common_wooden_tool.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.obtain_common_wooden_tool.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "wooden_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_sword",
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_pickaxe",
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_axe",
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_shovel",
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_hoe",
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wooden_sword",
+      "wooden_pickaxe",
+      "wooden_axe",
+      "wooden_shovel",
+      "wooden_hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

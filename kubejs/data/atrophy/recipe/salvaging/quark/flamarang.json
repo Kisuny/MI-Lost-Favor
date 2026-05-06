@@ -1,0 +1,26 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "quark:flamerang"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 1,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "quark:diamond_heart"
+            }
+        },
+        {
+            "max_count": 2,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "minecraft:netherite_scrap"
+            }
+        }
+    ]
+}

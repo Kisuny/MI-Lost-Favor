@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bedrock",
+      "components": {
+        "minecraft:unbreakable": {}
+      }
+    },
+    "title": {
+      "translate": "advancements.nether.eternal_gratitude.title"
+    },
+    "description": {
+      "translate": "advancements.nether.eternal_gratitude.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "atrophy:adventure/obtain_common_wooden_tool",
+  "criteria": {
+    "unbreable_affix_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:common",
+                  "apotheosis:uncommon",
+                  "apotheosis:rare",
+                  "apotheosis:epic",
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unbreable_affix_item"
+    ]
+  ]
+}

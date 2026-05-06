@@ -1,0 +1,123 @@
+{
+    "type": "placebo:gear_set",
+    "helmets": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.7,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:dragon_helmet"
+            },
+            "weight": 1
+        }
+    ],
+    "chestplates": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.7,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:dragon_chestplate"
+            },
+            "weight": 9
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.7,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:upgraded_dragon_chestplate"
+            },
+            "weight": 1
+        }
+    ],
+    "leggings": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.7,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:dragon_leggings"
+            },
+            "weight": 1
+        }
+    ],
+    "boots": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.7,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:protection": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:dragon_boots"
+            },
+            "weight": 1
+        }
+    ],
+    "mainhands": [
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:power": 6
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:dragon_bow"
+            },
+            "weight": 10
+        },
+        {
+            "stack": {
+                "components": {
+                    "apotheosis:durability_bonus": 0.8,
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "minecraft:power": 6
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "dragonloot:dragon_crossbow"
+            },
+            "weight": 10
+        }
+    ],
+    "quality": 5.0,
+    "tags": [
+        "pinnacle_ranged"
+    ],
+    "weight": 10
+}

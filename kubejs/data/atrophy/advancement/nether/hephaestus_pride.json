@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:nether/netherite_armor",
+  "criteria": {
+    "mythic_netherite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_helmet",
+            "predicates": {
+                 "apotheosis:item_with_rarity": {
+                      "rarities": [
+                            "apotheosis:mythic"
+                   ]
+                }
+             }
+          },
+          {
+            "items": "minecraft:netherite_chestplate",
+            "predicates": {
+                 "apotheosis:item_with_rarity": {
+                      "rarities": [
+                            "apotheosis:mythic"
+                   ]
+                }
+             }
+          },
+          {
+            "items": "minecraft:netherite_leggings",
+            "predicates": {
+                 "apotheosis:item_with_rarity": {
+                      "rarities": [
+                            "apotheosis:mythic"
+                   ]
+                }
+             }
+          },
+          {
+            "items": "minecraft:netherite_boots",
+            "predicates": {
+                 "apotheosis:item_with_rarity": {
+                      "rarities": [
+                            "apotheosis:mythic"
+                   ]
+                }
+             }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.nether.hephaestus_pride.description"
+    },
+    "title": {
+      "translate": "advancements.nether.hephaestus_pride.title"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:netherite_helmet"
+    }
+  },
+  "requirements": [
+    [
+      "mythic_netherite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

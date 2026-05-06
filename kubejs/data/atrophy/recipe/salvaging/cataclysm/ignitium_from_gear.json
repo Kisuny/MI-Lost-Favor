@@ -1,0 +1,39 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "cataclysm:the_incinerator"
+        },
+        {
+            "item": "cataclysm:the_immolator"
+        },
+        {
+            "item": "cataclysm:ignitium_helmet"
+        },
+        {
+            "item": "cataclysm:ignitium_chestplate"
+        },
+        {
+            "item": "cataclysm:ignitium_elytra_chestplate"
+        },
+        {
+            "item": "cataclysm:ignitium_leggings"
+        },
+        {
+            "item": "cataclysm:ignitium_boots"
+        },
+        {
+            "item": "cataclysm:bulwark_of_the_flame"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 1,
+            "min_count": 1,
+            "stack": {
+                "count": 1,
+                "id": "cataclysm:ignitium_ingot"
+            }
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:cold_damage",
+            "gem_class": {
+                "key": "light_weapon",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:trident"
+                ]
+            },
+            "operation": "add_value",
+            "values": {
+                "cracked": 0.5,
+                "chipped": 1.0,
+                "flawed": 1.5,
+                "normal": 2.0,
+                "flawless": 2.5,
+                "perfect": 4.0
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:arrow_velocity",
+            "gem_class": "apotheosis:bow",
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": 0.04,
+                "chipped": 0.06,
+                "flawed": 0.08,
+                "normal": 0.10,
+                "flawless": 0.125,
+                "perfect": 0.15
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "minecraft:generic.gravity",
+            "gem_class": {
+                "key": "core_armor",
+                "types": [
+                    "apotheosis:chestplate",
+                    "apotheosis:leggings"
+                ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": -0.1,
+                "chipped": -0.2,
+                "flawed": -0.3,
+                "normal": -0.4,
+                "flawless": -0.5,
+                "perfect": -0.6
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:boots",
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.safe_fall_distance",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 0.25,
+                        "chipped": 0.5,
+                        "flawed": 1.0,
+                        "normal": 1.5,
+                        "flawless": 2.0,
+                        "perfect": 3.0
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.jump_strength",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.1,
+                        "chipped": 0.15,
+                        "flawed": 0.2,
+                        "normal": 0.25,
+                        "flawless": 0.3,
+                        "perfect": 0.4
+                    }
+                }
+            ]
+        }
+    ]
+}

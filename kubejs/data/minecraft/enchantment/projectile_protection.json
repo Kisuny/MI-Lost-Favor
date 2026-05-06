@@ -1,0 +1,62 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.minecraft.projectile_protection"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.025,
+          "per_level_above_first": 0.025
+        },
+        "attribute": "minecraft:generic.knockback_resistance",
+        "id": "enchantment.minecraft.projectile_protection",
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2.0,
+            "per_level_above_first": 2.0
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              },
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "exclusive_set": "#minecraft:exclusive_set/armor",
+  "slots": [
+    "armor"
+  ],
+  "max_level": 4,
+  "max_cost": {
+    "base": 9,
+    "per_level_above_first": 6
+  },
+  "min_cost": {
+    "base": 3,
+    "per_level_above_first": 6
+  },
+  "weight": 5
+}

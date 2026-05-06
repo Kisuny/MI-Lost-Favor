@@ -1,0 +1,33 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "dragonloot:dragon_helmet"
+        },
+        {
+            "item": "dragonloot:dragon_chestplate"
+        },
+        {
+            "item": "dragonloot:upgraded_dragon_chestplate"
+        },
+        {
+            "item": "dragonloot:dragon_leggings"
+        },
+        {
+            "item": "dragonloot:dragon_boots"
+        },
+        {
+            "item": "dragonloot:dragon_horse_armor"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 1,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "dragonloot:dragon_scale"
+            }
+        }
+    ]
+}

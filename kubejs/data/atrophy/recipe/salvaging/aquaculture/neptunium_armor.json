@@ -1,0 +1,27 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "aquaculture:neptunium_helmet"
+        },
+        {
+            "item": "aquaculture:neptunium_chestplate"
+        },
+        {
+            "item": "aquaculture:neptunium_leggings"
+        },
+        {
+            "item": "aquaculture:neptunium_boots"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 3,
+            "min_count": 1,
+            "stack": {
+                "count": 1,
+                "id": "aquaculture:neptunium_ingot"
+            }
+        }
+    ]
+}

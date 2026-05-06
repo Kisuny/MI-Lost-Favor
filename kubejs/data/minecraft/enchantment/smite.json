@@ -1,0 +1,55 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.minecraft.smite"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 1.0
+        },
+        "attribute": "apothic_attributes:armor_pierce",
+        "id": "enchantment.minecraft.smite",
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1.5,
+            "per_level_above_first": 1.5
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:sensitive_to_smite"
+          }
+        }
+      }
+    ]
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "slots": [
+    "mainhand"
+  ],
+  "max_level": 5,
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "weight": 5
+}

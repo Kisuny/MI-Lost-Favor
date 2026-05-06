@@ -1,0 +1,233 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_helmet",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": {
+      "translate": "advancements.husbandry.mythic_leather_and_wood_gear.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.mythic_leather_and_wood_gear.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "leather_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_helmet",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "leather_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_chestplate",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "leather_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_leggings",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "leather_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_boots",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_sword",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_pickaxe",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_axe",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_shovel",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "wooden_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_hoe",
+            "components": {
+              "minecraft:unbreakable": {}
+            },
+            "predicates": {
+              "apotheosis:item_with_rarity": {
+                "rarities": [
+                  "apotheosis:mythic"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "leather_helmet"
+    ],
+    [
+      "leather_chestplate"
+    ],
+    [
+      "leather_leggings"
+    ],
+    [
+      "leather_boots"
+    ],
+    [
+      "wooden_sword"
+    ],
+    [
+      "wooden_pickaxe"
+    ],
+    [
+      "wooden_axe"
+    ],
+    [
+      "wooden_shovel"
+    ],
+    [
+      "wooden_hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

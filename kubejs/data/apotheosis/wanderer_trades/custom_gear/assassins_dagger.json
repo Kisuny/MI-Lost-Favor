@@ -1,0 +1,32 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 1,
+        "id": "farmersdelight:diamond_knife"
+    },
+    "input_2": {
+        "count": 64,
+        "id": "devices:gold_coin"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#B85ED9\",\"italic\":false,\"translate\":\"name.atrophy.assassin_dagger\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.assassin_dagger\"}"
+                ],
+            "minecraft:enchantments": {
+                "levels": {
+                    "minecraft:sharpness": 6,
+                    "atrophy:shattering": 1,
+                    "farmersdelight:backstabbing": 4,
+                    "minecraft:unbreaking": 4,
+                    "minecraft:mending": 1
+                }
+            }
+        },
+        "count": 1,
+        "id": "farmersdelight:diamond_knife"
+    },
+    "rare": true,
+    "xp": 500
+}

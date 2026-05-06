@@ -1,0 +1,30 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "minecraft:generic.armor",
+    "categories": [
+        "apotheosis:chestplate"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 15
+        }
+    },
+    "operation": "add_multiplied_base",
+    "values": {
+        "apotheosis:rare": {
+            "min": 0.04,
+            "max": 0.10
+        },
+        "apotheosis:epic": {
+            "min": 0.08,
+            "max": 0.15
+        },
+        "apotheosis:mythic": {
+            "min": 0.12,
+            "max": 0.2
+        }
+    }
+}

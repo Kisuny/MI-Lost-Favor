@@ -1,0 +1,25 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 1,
+        "id": "minecraft:wooden_pickaxe"
+    },
+    "input_2": {
+        "count": 64,
+        "id": "apotheosis:mythic_material"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#B9E45E\",\"italic\":false,\"translate\":\"name.atrophy.dryads_mattock\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.dryads_tool_lore\"}"
+                ],
+            "apotheosis:sockets": 5,
+            "apotheosis:durability_bonus": 0.9
+        },
+        "count": 1,
+        "id": "minecraft:wooden_pickaxe"
+    },
+    "rare": true,
+    "xp": 500
+}

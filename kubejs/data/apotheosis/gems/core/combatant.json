@@ -1,0 +1,80 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:melee_weapon",
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.03,
+                        "chipped": 0.06,
+                        "flawed": 0.09,
+                        "normal": 0.012,
+                        "flawless": 0.16,
+                        "perfect": 0.2
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:crit_chance",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 0.01,
+                        "chipped": 0.02,
+                        "flawed": 0.035,
+                        "normal": 0.5,
+                        "flawless": 0.07,
+                        "perfect": 0.1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:arrow_damage",
+            "gem_class": {
+                "key": "ranged_weapon",
+                "types": [
+                    "apotheosis:bow",
+                    "apotheosis:trident"
+                ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": 0.05,
+                "chipped": 0.075,
+                "flawed": 0.10,
+                "normal": 0.15,
+                "flawless": 0.175,
+                "perfect": 0.25
+            }
+        },
+        {
+            "type": "apotheosis:damage_reduction",
+            "damage_type": "physical",
+            "gem_class": {
+                "key": "core_armor",
+                "types": [
+                    "apotheosis:chestplate",
+                    "apotheosis:leggings"
+                ]
+            },
+            "values": {
+                "cracked": 0.01,
+                "chipped": 0.01,
+                "flawed": 0.02,
+                "normal": 0.03,
+                "flawless": 0.04,
+                "perfect": 0.05
+            }
+        }
+    ]
+}

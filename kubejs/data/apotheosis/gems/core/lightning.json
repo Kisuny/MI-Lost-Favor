@@ -1,0 +1,109 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:enchantment",
+            "enchantment": "minecraft:loyalty",
+            "gem_class": "trident",
+            "mode": "existing",
+            "values": {
+                "normal": 1,
+                "flawless": 1,
+                "perfect": 1
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.but",
+            "gem_class": "apotheosis:bow",
+            "modifiers": [
+                {
+                    "attribute": "apothic_attributes:arrow_velocity",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.15,
+                        "chipped": 0.30,
+                        "flawed": 0.45,
+                        "normal": 0.60,
+                        "flawless": 0.75,
+                        "perfect": 0.9
+                    }
+                },
+                {
+                    "attribute": "apothic_attributes:arrow_damage",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "cracked": -0.1,
+                        "chipped": -0.2,
+                        "flawed": -0.25,
+                        "normal": -0.3,
+                        "flawless": -0.35,
+                        "perfect": -0.4
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+                "key": "lower_armor",
+                "types": [
+                    "apotheosis:leggings",
+                    "apotheosis:boots"
+                ]
+            },
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.05,
+                        "chipped": 0.1,
+                        "flawed": 0.15,
+                        "normal": 0.20,
+                        "flawless": 0.25,
+                        "perfect": 0.30
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.movement_efficiency",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 0.1,
+                        "chipped": 0.125,
+                        "flawed": 0.15,
+                        "normal": 0.175,
+                        "flawless": 0.2,
+                        "perfect": 0.25
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "apothic_attributes:mining_speed",
+            "gem_class": {
+                "key": "tools",
+                "types": [
+                    "apotheosis:breaker",
+                    "apotheosis:shears"
+                ]
+            },
+            "operation": "add_value",
+            "values": {
+                "cracked": 0.05,
+                "chipped": 0.15,
+                "flawed": 0.25,
+                "normal": 0.35,
+                "flawless": 0.425,
+                "perfect": 0.5
+            }
+        }
+    ]
+}

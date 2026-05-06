@@ -1,0 +1,27 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "eidolon_repraised:silver_helmet"
+        },
+        {
+            "item": "eidolon_repraised:silver_chestplate"
+        },
+        {
+            "item": "eidolon_repraised:silver_leggings"
+        },
+        {
+            "item": "eidolon_repraised:silver_boots"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 3,
+            "min_count": 0,
+            "stack": {
+                "count": 1,
+                "id": "eidolon_repraised:silver_ingot"
+            }
+        }
+    ]
+}

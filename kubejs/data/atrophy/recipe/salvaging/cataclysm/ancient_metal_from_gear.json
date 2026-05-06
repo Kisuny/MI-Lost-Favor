@@ -1,0 +1,24 @@
+{
+    "type": "apotheosis:salvaging",
+    "input": [
+        {
+            "item": "cataclysm:ancient_spear"
+        },
+        {
+            "item": "cataclysm:bone_reptile_helmet"
+        },
+        {
+            "item": "cataclysm:bone_reptile_chestplate"
+        }
+    ],
+    "outputs": [
+        {
+            "max_count": 2,
+            "min_count": 1,
+            "stack": {
+                "count": 1,
+                "id": "cataclysm:ancient_metal_ingot"
+            }
+        }
+    ]
+}

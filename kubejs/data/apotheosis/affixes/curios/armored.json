@@ -1,0 +1,23 @@
+{
+    "type": "apotheosis:attribute",
+    "attribute": "minecraft:generic.armor",
+    "categories": [
+        "apotheosis:curio"
+    ],
+    "definition": {
+        "affix_type": "stat",
+        "exclusive_set": [],
+        "weights": {
+            "quality": 0.1,
+            "weight": 15
+        }
+    },
+    "operation": "add_value",
+    "values": {
+        "apotheosis:common": 0.25,
+        "apotheosis:uncommon": 0.5,
+        "apotheosis:rare": 1.0,
+        "apotheosis:epic": 1.5,
+        "apotheosis:mythic": 2.0
+    }
+}

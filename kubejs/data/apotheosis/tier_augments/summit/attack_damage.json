@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "add_multiplied_total",
+        "value": 0.15
+    },
+    "modifier_id": "apotheosis:summit/attack_damage",
+    "sort_index": 4,
+    "target": "monsters",
+    "tier": "summit"
+}

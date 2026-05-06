@@ -1,0 +1,36 @@
+{
+    "anvil_cost": 10,
+    "description": {
+        "color": "gold",
+        "translate": "enchantment.apothic_enchanting.knowledge_of_the_ages"
+    },
+    "effects": {
+        "apothic_enchanting:drops_to_xp": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 10.0,
+                        "per_level_above_first": 5.0
+                    }
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 200,
+        "per_level_above_first": 0
+    },
+    "max_level": 3,
+    "min_cost": {
+        "base": 55,
+        "per_level_above_first": 45
+    },
+    "primary_items": "#minecraft:enchantable/sword",
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/sharp_weapon",
+    "weight": 2
+}

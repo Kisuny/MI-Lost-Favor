@@ -1,0 +1,32 @@
+{
+    "type": "placebo:basic_trade",
+    "input_1": {
+        "count": 1,
+        "id": "minecraft:diamond_chestplate"
+    },
+    "input_2": {
+        "count": 55,
+        "id": "devices:gold_coin"
+    },
+    "output": {
+        "components": {
+            "minecraft:custom_name": "{\"color\":\"#1ABBE0\",\"italic\":false,\"translate\":\"name.apotheosis.greatplate_of_eternity\"}",
+            "minecraft:lore": [
+                    "{\"color\":\"rainbow\",\"italic\":false,\"translate\":\"lore.atrophy.greatplate_of_eternity\"}"
+                ],
+            "minecraft:enchantments": {
+                "levels": {
+                    "minecraft:protection": 5,
+                    "minecraft:projectile_protection": 5,
+                    "apothic_enchanting:berserkers_fury": 2,
+                    "minecraft:unbreaking": 5,
+                    "minecraft:mending": 1
+                }
+            }
+        },
+        "count": 1,
+        "id": "minecraft:diamond_chestplate"
+    },
+    "rare": true,
+    "xp": 500
+}

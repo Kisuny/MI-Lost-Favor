@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "apothic_attributes:crit_damage",
+        "operation": "add_value",
+        "value": 0.25
+    },
+    "modifier_id": "apotheosis:ascent/crit_damage",
+    "sort_index": 5,
+    "target": "players",
+    "tier": "ascent"
+}

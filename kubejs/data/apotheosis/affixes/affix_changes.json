@@ -1,0 +1,237 @@
+All stats are subject to future changes.
+
+
+Generic Attributes:
+- Lucky: (+Luck)
+  - Can longer be put on armor.
+
+
+Melee Attributes:
+- Violent: (+Attack Damage)
+  - Common: +2-3 -> +0.2-1
+  - Uncommon: +2-3 -> +0.5-2
+  - Rare: +3-5 -> +1-3
+  - Epic: +4-6 -> +2-4
+  - Mythic: +5-8 -> +2.5-5
+
+- Murderous: (+Attack Damage% Base)
+  - Rare: +15-43% -> +5-15%
+  - Epic: +18-48% -> +5-20%
+  - Mythic: +25-55% -> +10-25%
+
+- Graceful: (+Attack Speed%)
+  - Common: +15-25% -> Removed
+  - Uncommon: +20-30% -> +5-10%
+  - Rare: +20-35% -> +10-15%
+  - Epic: +25-50% -> +15-20%
+  - Mythic: +40-85% -> +20-30%
+
+- Lengthy: (+Entity Interaction Range)
+  - Common: +0.5-1.5 -> +0.1-0.5
+  - Uncommon: +0.5-1.5 -> +0.25-0.75
+  - Rare: +0.75-2.5 -> +0.5-1
+  - Epic: +1-2.5 -> +0.75-1.25
+  - Mythic: +1.5-3 -> +1-1.5
+
+- Intricate: (+Crit Chance% Base)
+  - Common: +10-20% -> +1-5%
+  - Uncommon: +10-20% -> +1-6%
+  - Rare: +10-25% -> +2-7%
+  - Epic: +15-35% -> +2-8%
+  - Mythic: +25-55% -> +3-10%
+
+- Lacerating: (+Crit Damage% Base)
+  - Common: +10-20% -> Unchanged
+  - Uncommon: +10-20% -> Unchanged
+  - Rare: +15-25% -> Unchanged
+  - Epic: +15-25% -> Unchanged
+  - Mythic: +25-40% -> +25-35%
+
+- Infernal: (+Fire Damage)
+  - Uncommon: +2-4 -> +1-2
+  - Rare: +2-5 -> +1-2.5
+  - Epic: +4-6 -> +1.5-3
+  - Mythic: +4-10 -> +2-5
+
+- Glacial: (+Cold Damage)
+  - Uncommon: +2-4 -> +1-2
+  - Rare: +2-5 -> +1-2.5
+  - Epic: +4-6 -> +1.5-3
+  - Mythic: +4-10 -> +2-5
+
+- Giant Slaying: (+Current HP Damage% Base)
+  - Epic: +10-20% -> +1-10%
+  - Mythic: 10-25% -> +5-15%
+
+- Vampiric: (+Life Steal% Base)
+  - Common: +5-8% -> Removed
+  - Uncommon: +5-8% -> Removed
+  - Rare: +5-10% -> +1-4%
+  - Epic: +8-13% -> +2-6%
+  - Mythic: +10-15% -> +3-8%
+
+- Berserking: (+Overheal% Base)
+  - Common: +5-10% -> Removed
+  - Uncommon: +5-10% -> Removed
+  - Rare: +10-20% -> +1-4%
+  - Epic: +10-20% -> +2-6%
+  - Mythic: +15-25% -> +3-8%
+
+
+Ranged Attributes: 
+- Agile: (+Draw Speed% Total)
+  - Common: +20-40% -> +5-20%
+  - Uncommon: +20-40% -> +7.5-25%
+  - Rare: +30-50% -> +10-30%
+  - Epic: +50-60% -> +12.5-35%
+  - Mythic: +50-65% -> +15-40%
+
+Ranged Enchantments:
+- Prosperous: (+Looting)
+  - Uncommon: No Stats -> +1
+  - Rare: No Stats -> +1-2
+  - Epic: +6-8 -> +1-3
+  - Mythic: +8-10 -> +1-4
+
+
+Armor Attributes:
+- Ironforged: (+Armor)
+  - Common: +0.5-1.5 -> +0.2-1.5 | +0.1-1
+  - Uncommon: +0.75-1.75 -> +1-2 | +0.5-1.5
+  - Rare: +1-2 -> +1.5-2.5 | +0.7-2
+  - Epic: +2-3 -> X | +1-2.5
+  - Mythic: +3-4 -> X | +1.5-3
+  - Split between Chestplates/Leggings (left |) and Helmet/Boots (| right).
+
+- Adamantine: (+Armor%)
+  - Rare: 15-30% -> 4-10% 
+  - Epic:  15-30% -> 8-15%
+  - Mythic:  25-40% -> 12-20%
+  - Can no longer be put on Leggings.
+
+- Steel Touched: (+Armor Toughness)
+  - Rare: +1 -> +0.25-1
+  - Epic: +1.5-3 -> +1-2
+  - Mythic: +2-6 -> +1.5-3
+
+- Stalwart: (+Knockback Resistance% Base)
+  - Uncommon: +5-10% -> +5%
+  - Rare: +5-10% -> +5-10%
+  - Epic: +15-20% -> +5-15%
+  - Mythic: +25-30% -> +10-20%
+
+- Blessed: (+Max Health)
+  - Common: +2-4 -> +0.5-2 | Not Added to this tier.
+  - Uncommon: +2-5 -> +1-3 | +0.5-1.5
+  - Rare: +3-6 -> +1.5-4 | +1-2
+  - Epic: +3-8 -> +2-5 | +1.5-3
+  - Mythic: +5-8 -> +2.5-6 | +2-4
+  - Split between Chestplates/Leggings (left |) and Helmet/Boots (| right).
+
+- Spiritual: (+Healing Recieved%)
+  - Rare: +10-25% -> +5-10%
+  - Epic: +15-30% -> +8-15%
+  - Mythic: +20-40% -> +10-20%
+  - Now exclusive with Blesssed. Can now be put on Helmets and Boots.Changed from "add_multiplied_base" to "add_value".
+
+- Oxygenated: (+Oxygen Bonus)
+  - Common: No Stats -> +0.1-0.25
+  - Uncommon: +0.2-0.3 -> +0.3-0.5
+  - Rare: +0.35-0.5 -> +0.4-0.75
+  - Epic: +0.55-0.7 -> +0.5-1
+  - Mythic: +0.85-1.25 -> +0.8-1.5
+
+- Aquatic: (+Swim Speed%)
+  - Common: +20-30% -> +5-10%
+  - Uncommon:  20-30% -> +6-12%
+  - Rare: +30-50% -> +7-14%
+  - Epic: +30-50% -> +10% -20%
+  - Mythic: +40-70% -> +15-25%
+
+- Winged: (+Elytra Flight Attribute)
+  - Epic: Enables Elytra Flight -> Removed
+  - Mythic: Enables Elytra Flight -> Removed
+  - Added "Dragon's Wing" Gem to take the affix's place.
+
+- Unbound: (+Creative Flight Attribute)
+  - Mythic: Enables Creative Flight -> Removed
+  - Added "Dragon's Wing" Gem to take the affix's place.
+
+Armor Damage Reduction:
+- Blockading: (Physical Damage Reduction)
+  - Common: 1-5% -> 1-2%
+  - Uncommon: 1-5% -> 1-4%
+  - Rare: 5-10% -> 2-6%
+  - Epic: 5-10% -> 3-8%
+  - Mythic: 5-15% -> 4-10%
+  - Can now be put on Helmets and Boots.
+
+- Blast Forged: (Explosion Damage Reduction)
+  - Common: 5-10% -> 1-5%
+  - Uncommon: 10-15% -> 2-10%
+  - Rare: 15-20% -> 3-10%
+  - Epic: 15-25% -> 4-12%
+  - Mythic: 15-35% -> 5-15%
+  - Can now be put on Helmets and Boots.
+
+- Deflective: (Projectile Damage Reduction)
+  - Common: 5-10% -> 1-5%
+  - Uncommon: 10-15% -> 2-8%
+  - Rare: 15-20% -> 3-10%
+  - Epic: 15-20% -> 4-10%
+  - Mythic: 15-30% -> 5-15%
+  - Can now be put on Leggings and Boots.
+
+- Grounded: (Lightning Damage Reduction)
+  - Common: 5-10% -> 1-5%
+  - Uncommon: 10-15% -> 1-5%
+  - Rare: 15-25% -> 5-10%
+  - Epic: 15-25% -> 5-10%
+  - Mythic: 15-40% -> 5-15%
+
+- Feathery: (Fall Damage Reduction)
+  - Common: 5-10% -> Removed
+  - Uncommon: 10-15% -> Removed
+  - Rare: 15-25% -> Removed
+  - Epic: 15-25% -> Removed
+  - Mythic: 15-40% -> Removed
+  - Added Attribute Affixes and modified Gems to replace this.
+
+
+Shield Attributes:
+- Ironforged: (+Armor% Base)
+  - Common: +10-15% -> + 0.5-3
+  - Uncommon: +10-15% -> +1-4
+  - Rare: +15-20% -> +1.5-5
+  - Epic: +15-25% -> +2-6
+  - Mythic: +20-30% -> +3-8
+  - Changed from "add_multiplied_base" to "add_value".
+
+- Steel-Touched: (+Armor Toughness% Base)
+  - Rare: +15-20% -> +0.25-1
+  - Epic: +15-20% -> +1-2
+  - Mythic: +20-25% -> +1.5-3
+  - Changed from "add_multiplied_base" to "add_value".
+
+
+Breaker Attributes:
+- Destructive: (+Mining Speed% Base)
+  - Common: +15-30% -> +5-15%
+  - Uncommon: +15-30% -> +10-20%
+  - Rare: +25-50% -> +10-25%
+  - Epic: +25-70% -> +15-30%
+  - Mythic: +55-85% -> +20-40%
+
+- Lengthy: (+Block Interaction Range)
+  - Common: +0.5-1.5 -> +0.1-0.5
+  - Uncommon: +0.5-1.5 -> +0.3-1
+  - Rare: +1-2.5 -> +0.5-1.5
+  - Epic: +1-2.5 -> +0.8-2
+  - Mythic: +1.5-4 -> +1.5-3
+
+Breaker Enchantments:
+- Prosperous: (+Fortune)
+  - Uncommon: +1 -> Removed
+  - Rare: +1-2 -> Removed
+  - Epic: +1-3 -> +1
+  - Mythic: +2-4 -> +1-2

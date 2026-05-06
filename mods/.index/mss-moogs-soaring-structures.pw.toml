@@ -1,7 +1,7 @@
-filename = 'MoogsSoaringStructures-1.21-2.0.2.jar'
-name = "MSS - Moog's Soaring Structures"
+filename = 'MoogsSoaringStructures-1.21-2.1.0.jar'
+name = 'MoogsSoaringStructures'
 side = ''
-x-prismlauncher-loaders = [ 'neoforge', 'fabric' ]
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
 x-prismlauncher-mc-versions = [
     '1.21',
     '1.21.1',
@@ -14,17 +14,20 @@ x-prismlauncher-mc-versions = [
     '1.21.6',
     '1.21.7',
     '1.21.8',
-    '1.21.9'
+    '1.21.9',
+    '26.1',
+    '26.1.1',
+    '26.1.2'
 ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'MSS 2.0.2-1.21 [UNIVERSAL]'
+x-prismlauncher-version-number = 'MSS 2.1.0-1.21 [UNIVERSAL]'
 
 [download]
-hash = '74b79d7913140321d070b0a9bd46c78b89d5a3d3'
+hash = '392e471a4cec7aa2cb2e0e5f2e51335b2d2cd30d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7540165
+file-id = 8043935
 project-id = 1040210

@@ -1,16 +1,17 @@
-filename = 'athena-neoforge-1.21-4.0.2.jar'
+filename = 'athena-neoforge-1.21.1-4.0.5.jar'
 name = 'Athena'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge] Athena 4.0.5'
 
 [download]
-hash = '069f397f1b3a30b3d5f5a98cac76304dfe345d76'
+hash = 'a5fc5bc11f27e6e44ac4c88a80a9e595f6d81060'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6669522
+file-id = 8033061
 project-id = 841890

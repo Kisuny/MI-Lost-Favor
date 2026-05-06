@@ -116,6 +116,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add("rite.milf.witch_hazel_broom", "Ритуал Формирования")
     event.add("rite.milf.mahogany_broom", "Ритуал Формирования")
 
+    event.add("text.apotheosis.world_tier_tutorial", "Этот предмет имеет неизвестную силу")
+    event.add("text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${textAnimatorString("World Tier: Haven", "wave", {a:0.2})}, чтобы разблокировать её`)
+
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "Вы чувствуете себя немного лучше после того, как съели что-то, кроме фруктов и овощей.")
     event.add("milf.food.poison_1", "Вы съели слишком много фруктов и овощей и теперь чувствуете себя плохо!")
@@ -246,4 +249,13 @@ ClientEvents.lang('ru_ru', event => {
         event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
         event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
     //#endregion
+
+    // ore_tooltips
+    event.add('milf.ore_tooltip.overworld', '☀ Оверворлд')
+    event.add('milf.ore_tooltip.nether', '⬛ Ад')
+    event.add('milf.ore_tooltip.eternal_starlight', '✦ Eternal Starlight')
+    event.add('milf.ore_tooltip.deeper_down', '▼ Deeper Down')
+    event.add('milf.ore_tooltip.the_end', '🌌 Энд')
+    event.add('milf.ore_tooltip.quarry_only', 'Добывается только в Electric Quarry')
+    event.add('milf.ore_tooltip.silver_byproduct', 'Можно получить как побочный продукт при переработке свинцовой руды')
 })

@@ -126,6 +126,7 @@ ClientEvents.lang('en_us', event => {
     event.add("rite.milf.willow_broom", "Ritual of Formation")
     event.add("rite.milf.witch_hazel_broom", "Ritual of Formation")
     event.add("rite.milf.mahogany_broom", "Ritual of Formation")
+    event.add("text.apotheosis.world_tier_tutorial.2", `Press radial menu button and activate ${textAnimatorString("World Tier: Haven", "wave", {a:0.2})} to unlock it`)
 
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "You feel a bit better after eating something other than fruits and vegetables.")
@@ -259,6 +260,15 @@ ClientEvents.lang('en_us', event => {
     event.add("custom.trivia.goblin_trader", "A mysterious trader who dwells in the depths of Overworld,\nseeking to trade in rare and valuable materials.");
 
     //#endregion
+
+    // ore_tooltips
+    event.add('milf.ore_tooltip.overworld', '☀ Overworld')
+    event.add('milf.ore_tooltip.nether', '⬛ Nether')
+    event.add('milf.ore_tooltip.eternal_starlight', '✦ Eternal Starlight')
+    event.add('milf.ore_tooltip.deeper_down', '▼ Deeper Down')
+    event.add('milf.ore_tooltip.the_end', '🌌 The End')
+    event.add('milf.ore_tooltip.quarry_only', 'Can only be mined in the Electric Quarry')
+    event.add('milf.ore_tooltip.silver_byproduct', 'Can be obtained as a byproduct from lead ore processing')
 })
 
 function textAnimatorString(text, type, params){

@@ -1,0 +1,71 @@
+{
+    "enhancers": "forbidden_arcanus:divine_pact",
+    "essences": {
+    "aureal": 5000,
+    "blood": 25000,
+    "experience": 5000,
+    "souls": 200
+  },
+    "forge_tier": 4,
+    "inputs": [
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "hexerei:broom_thruster_brush"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "tag": "hexerei:brooms"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "forbidden_arcanus:dark_nether_star"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "modern_industrialization:diesel_jetpack"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "enchanted:flying_ointment"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "spectrum:bismuth_crystal"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "spectrum:aether_vestiges"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "eidolon_repraised:gravity_belt"
+            }
+        }
+    ],
+    "magic_circle": "forbidden_arcanus:create_item",
+    "main_ingredient": {
+        "item": "angelring:diamond_ring"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "count": 1,
+            "id": "angelring:angel_ring"
+        }
+    }
+}

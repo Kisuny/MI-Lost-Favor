@@ -201,6 +201,7 @@ ServerEvents.recipes(event => {
         category: "equipment",
         removeRecipe: true
     })
+
     yTechShapeless(event, {
         outputItems: [[{ "id": "ytech:bronze_shovel" }, 1]],
         inputItems: [
@@ -273,6 +274,18 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:crafting_workspace" }, 2]],
         //removeRecipeType:"minecraft:crafting_shaped"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "FF",
+            "FF"
+        ],
+        key: {
+            F: { item: "supplementaries:flax" }
+        },
+        outputItems: [[{ id: "ytech:grass_twine" }, 2]],
+        compatOff:true
     })
 
 })

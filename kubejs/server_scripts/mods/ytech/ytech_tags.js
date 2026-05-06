@@ -171,6 +171,13 @@ ServerEvents.tags("item", event => {
         "milf:bronze_shovel_head_part",
     ])
 
+    event.add("ytech:sharp_flints", [
+        'farmersdelight:golden_knife',
+        'farmersdelight:diamond_knife',
+        'farmersdelight:netherite_knife',
+        'farmersdelight:iron_knife']
+    )
+
 
 
     event.add("milf:coals_for_bloom", [

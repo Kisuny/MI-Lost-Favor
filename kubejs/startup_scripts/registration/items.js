@@ -73,8 +73,8 @@ createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
 createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:25, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
 createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
-createNewItem('boss_bait', { stackSize: 1})
-
+createNewItem('divine_mint', { stackSize: 1})
+createNewItem('divine_coin', { stackSize: 1 })
 
 createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })
 createNewItem("cement", { lang: { "en_us": "Cement", "ru_ru": "Цемент" } })

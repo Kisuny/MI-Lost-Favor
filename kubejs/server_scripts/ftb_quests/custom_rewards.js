@@ -12,27 +12,25 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
 
 // reward for Bronze Plate (First steps)
 FTBQuestsEvents.customReward('7EF0A7794783232F', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stage = "tier_1_access_ore"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
 });
+// pigment pedestal malum ore access
+FTBQuestsEvents.customReward('0FCAF2E23A025C18', event => {
+    const stage = "malum_access_ore"
+    addStagesToTeamMembers(event, stage)
+    defaultMilestoneNotification(event, stage)
+});
+
 // reward for toxony:alchemical_forge_part (root whispering chapter)
 FTBQuestsEvents.customReward('4178A18CA2E5A74F', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stage = "monsterplus_mobs"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
 });
 // reward for Ars Ecclesia (root whispering chapter)
 FTBQuestsEvents.customReward('19304AD673874503', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stage = "eidolon_mobs"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
@@ -40,9 +38,6 @@ FTBQuestsEvents.customReward('19304AD673874503', event => {
 
 // reward for killing black charro (journeys chapter)
 FTBQuestsEvents.customReward('69335E0ACAA9C440', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stage = "mythsandlegends_mobs"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
@@ -50,9 +45,6 @@ FTBQuestsEvents.customReward('69335E0ACAA9C440', event => {
 
 // reward for killing umvuthi, the sunbird (journeys chapter)
 FTBQuestsEvents.customReward('50FF5C99CD671DD3', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stage = "mowziesmobs_mobs"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
@@ -60,9 +52,6 @@ FTBQuestsEvents.customReward('50FF5C99CD671DD3', event => {
 
 // reward for killing vanilla bosses (journeys chapter)
 FTBQuestsEvents.customReward('224D85127D80FED8', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stages = ["cataclysm_mobs", "netherskeletons_mobs", "rottencreatures_mobs", "enderzoology_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
@@ -70,8 +59,6 @@ FTBQuestsEvents.customReward('224D85127D80FED8', event => {
 
 // reward for killing bomd and fdbosses bosses (journeys chapter)
 FTBQuestsEvents.customReward('16B46238FC936637', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
 
     const stages = ["grimoireofgaia_mobs", "born_in_chaos_v1_mobs"]
     addStagesToTeamMembers(event, stages)

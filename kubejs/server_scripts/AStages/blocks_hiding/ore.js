@@ -40,7 +40,14 @@ const ores = [
     { stage: "tier_2_access_ore", id: "ore_raw_tungsten", origin: "modern_industrialization:raw_tungsten_block", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_uranium", origin: "modern_industrialization:uranium_ore", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_deepslate_uranium", origin: "modern_industrialization:deepslate_uranium_ore", replace: "minecraft:deepslate" },
-    { stage: "tier_2_access_ore", id: "ore_raw_uranium", origin: "modern_industrialization:raw_uranium_block", replace: "minecraft:stone" }
+    { stage: "tier_2_access_ore", id: "ore_raw_uranium", origin: "modern_industrialization:raw_uranium_block", replace: "minecraft:stone" },
+    { stage: "malum_access_ore", id: "ore_blazing_quartz", origin: "malum:blazing_quartz_ore", replace: "minecraft:netherrack" },
+    { stage: "malum_access_ore", id: "ore_soulstone", origin: "malum:soulstone_ore", replace: "minecraft:stone" },
+    { stage: "malum_access_ore", id: "ore_natural_quartz", origin: "malum:natural_quartz_ore", replace: "minecraft:stone" },
+    { stage: "malum_access_ore", id: "ore_brilliant_stone", origin: "malum:brilliant_stone", replace: "minecraft:stone" },
+    { stage: "malum_access_ore", id: "ore_deepslate_natural_quartz", origin: "malum:deepslate_quartz_ore", replace: "minecraft:deepslate" },
+    { stage: "malum_access_ore", id: "ore_deepslate_soulstone", origin: "malum:deepslate_soulstone_ore", replace: "minecraft:deepslate" },
+    { stage: "malum_access_ore", id: "ore_brilliant_deepslate", origin: "malum:brilliant_deepslate", replace: "minecraft:deepslate" },
 ]
 ores.forEach(element => {
     AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace).setStageAllBlockStates(true)

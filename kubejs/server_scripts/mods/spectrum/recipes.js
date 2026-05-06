@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             }
         ],
         main: {
-            "item": "enchanted:attuned_stone_charged"
+            "item": "immersiveengineering:component_steel"
         },
         result: "milf:onyx_table_core"
     })
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             }
         ],
         main: {
-            "item": "enchanted:attuned_stone_charged"
+            "item": "modern_industrialization:electronic_circuit"
         },
         result: "milf:moonstone_table_core"
     })

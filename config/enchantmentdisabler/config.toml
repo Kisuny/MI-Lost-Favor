@@ -3,7 +3,7 @@ version = 2
 
 [disabler]
 disabledEnchantmentsV2 = [
-    [ "apothic_enchanting:knowledge_of_the_ages", { table = false, loot = false, trade = false } ],
+    [ "apothic_enchanting:knowledge_of_the_ages", { table = true, loot = false, trade = false } ],
     [ "apothic_enchanting:chainsaw", { table = false, loot = false, trade = false } ],
     [ "devices:coin_magnet", { table = false, loot = false, trade = false } ],
     [ "enderzoology:soulbound", { table = false, loot = false, trade = false } ],

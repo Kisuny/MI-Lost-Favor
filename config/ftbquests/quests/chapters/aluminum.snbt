@@ -1673,5 +1673,33 @@
 			x: 4.0d
 			y: -18.5d
 		}
+		{
+			dependencies: ["1C00BD0399683CCA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "xaerominimap:textures/mob_effect/no_cave_maps.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "27E158F4EA9030A0"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "map_atlases:textures/gui/sprites/map_type_vanilla.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4D0EBC927D8AD01D"
+				team_reward: false
+				type: "custom"
+			}]
+			tasks: [{
+				id: "268D4F85B02495FD"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
 	]
 }

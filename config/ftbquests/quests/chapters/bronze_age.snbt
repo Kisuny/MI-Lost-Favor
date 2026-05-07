@@ -5736,37 +5736,6 @@
 			y: 9.5d
 		}
 		{
-			icon: {
-				id: "minecraft:command_block"
-			}
-			id: "27E158F4EA9030A0"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					components: {
-						"ftbquests:icon": "map_atlases:textures/gui/sprites/map_type_vanilla.png"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "4D0EBC927D8AD01D"
-				team_reward: false
-				type: "custom"
-			}]
-			tasks: [
-				{
-					id: "268D4F85B02495FD"
-					type: "checkmark"
-				}
-				{
-					id: "50686B9F322E0D77"
-					item: { count: 1, id: "minecraft:command_block" }
-					type: "item"
-				}
-			]
-			x: -22.5d
-			y: 7.5d
-		}
-		{
 			dependencies: ["2A770E2C788BFA02"]
 			id: "1CEAB423AA2813F7"
 			shape: "rsquare"

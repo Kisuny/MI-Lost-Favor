@@ -269,6 +269,15 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.ore_tooltip.the_end', '🌌 The End')
     event.add('milf.ore_tooltip.quarry_only', 'Can only be mined in the Electric Quarry')
     event.add('milf.ore_tooltip.silver_byproduct', 'Can be obtained as a byproduct from lead ore processing')
+
+    // key_prompts
+    event.add('milf.key_prompts.slow_down', 'Slow down')
+    event.add('milf.key_prompts.villager_refresh', 'To refresh trades')
+    event.add('milf.key_prompts.dismount', 'Dismount')
+    event.add('milf.key_prompts.go_up', 'Go up')
+    event.add('milf.key_prompts.go_down', 'Go down')
+    event.add('key.hexerei.broomActivate', 'Viewing angle (F5 for work)')
+    event.add('milf.key_prompts.horn', 'Enable the horn')
 })
 
 function textAnimatorString(text, type, params){

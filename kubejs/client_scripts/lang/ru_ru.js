@@ -258,4 +258,13 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.ore_tooltip.the_end', '🌌 Энд')
     event.add('milf.ore_tooltip.quarry_only', 'Добывается только в Electric Quarry')
     event.add('milf.ore_tooltip.silver_byproduct', 'Можно получить как побочный продукт при переработке свинцовой руды')
+
+    // key_prompts
+    event.add('milf.key_prompts.slow_down', 'Замедлить ход')
+    event.add('milf.key_prompts.villager_refresh', 'Обновить сделки')
+    event.add('milf.key_prompts.dismount', 'Слезть')
+    event.add('milf.key_prompts.go_up', 'Вверх')
+    event.add('milf.key_prompts.go_down', 'Вниз')
+    event.add('key.hexerei.broomActivate', 'Угол обзора (F5 для работы)')
+    event.add('milf.key_prompts.horn', 'Активировать сигнал')
 })

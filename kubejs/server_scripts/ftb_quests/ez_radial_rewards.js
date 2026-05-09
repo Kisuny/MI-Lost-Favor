@@ -1,9 +1,9 @@
 const xaero_bundle = { id: "Xaeromap", title: "Xaeromap", icon: "minecraft:map" }
 
 const xaero_actions = [
-    { parentId: "Xaeromap", key_name: "gui.xaero_new_waypoint",     action_name: "New Waypoint",         icon: "minecraft:map" },
-    { parentId: "Xaeromap", key_name: "gui.xaero_waypoints_key",    action_name: "Open Waypoint Screen", icon: "minecraft:map" },
-    { parentId: "Xaeromap", key_name: "gui.xaero_minimap_settings", action_name: "Minimap Settings",     icon: "minecraft:map" },
+    { parentId: "Xaeromap", key_name: "gui.xaero_new_waypoint", action_name: "New Waypoint", icon: "minecraft:map" },
+    { parentId: "Xaeromap", key_name: "gui.xaero_waypoints_key", action_name: "Open Waypoint Screen", icon: "minecraft:map" },
+    { parentId: "Xaeromap", key_name: "gui.xaero_minimap_settings", action_name: "Minimap Settings", icon: "minecraft:map" },
 ]
 
 function sendXaeroRadial(player) {
@@ -17,10 +17,11 @@ FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
 
 
 const radial_menu_buttons = [
-    { quest_id: '7108991BE6DD4A51', stage: 'radial_money_pouch',   action_name: 'Open Money Pouch',   key_name: 'key.devices.open_pouch',                   icon: "devices:devices_pouch" },
-    { quest_id: '472BCEE94E93C2FF', stage: 'radial_trinket_pouch', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch',              icon: "ars_elemental:curio_bag" },
-    { quest_id: '0A58BA17068FCA2C', stage: 'radial_sail',          action_name: 'Toggle Sail',        key_name: 'key.smallships.ship_sail',                 icon: "smallships:sail" },
-    { quest_id: '631ABDA3AFF1EE5B', stage: 'radial_world_tier',    action_name: 'World Tier Select',  key_name: 'key.apotheosis.open_world_tier_select',    icon: "apotheosis:boss_summoner" },
+    { quest_id: '7108991BE6DD4A51', stage: 'radial_money_pouch', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch', icon: "devices:devices_pouch" },
+    { quest_id: '472BCEE94E93C2FF', stage: 'radial_trinket_pouch', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch', icon: "ars_elemental:curio_bag" },
+    { quest_id: '0A58BA17068FCA2C', stage: 'radial_sail', action_name: 'Toggle Sail', key_name: 'key.smallships.ship_sail', icon: "smallships:sail" },
+    { quest_id: '631ABDA3AFF1EE5B', stage: 'radial_world_tier', action_name: 'World Tier Select', key_name: 'key.apotheosis.open_world_tier_select', icon: "apotheosis:boss_summoner" },
+    { quest_id: '386F1FCFA31E0945', stage: 'chunkloaders_open_screen', action_name: 'View Chunk Loaders', key_name: 'chunkloaders.keys.open_screen', icon: "chunkloaders:basic_chunk_loader" },
 ]
 
 radial_menu_buttons.forEach(element => {

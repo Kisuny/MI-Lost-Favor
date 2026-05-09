@@ -1347,18 +1347,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["1C00BD0399683CCA"]
-			id: "3B91D0EF4ECDE7F0"
-			shape: "heart"
-			tasks: [{
-				id: "11D690F09237B785"
-				item: { components: { "shrink:scale": -0.10000000000000014d }, count: 1, id: "shrink:shrinking_device" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 3.5d
-		}
-		{
 			dependencies: ["18173B817094E01A"]
 			id: "6D11265D66BD9E22"
 			tasks: [{
@@ -1694,12 +1682,13 @@
 				team_reward: false
 				type: "custom"
 			}]
+			shape: "heart"
 			tasks: [{
 				id: "268D4F85B02495FD"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: 3.5d
+			y: 3.5d
 		}
 	]
 }

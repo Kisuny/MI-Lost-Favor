@@ -16,4 +16,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "supplementaries:lunch_basket" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
+
+    event.shapeless('4x minecraft:ink_sac', ['supplementaries:antique_ink'])
+
 })

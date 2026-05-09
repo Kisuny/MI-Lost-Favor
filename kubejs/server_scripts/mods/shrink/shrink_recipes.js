@@ -1,3 +1,4 @@
+// requires: shrink
 ServerEvents.recipes(event => {
     event.remove({output: "shrink:shrinking_device"})
     event.recipes.modern_industrialization.assembler(8, 200)

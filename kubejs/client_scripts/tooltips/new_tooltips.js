@@ -98,4 +98,21 @@ ItemEvents.modifyTooltips(event => {
     });
     //#region
 
+    //#region You can interact with this in the claimed chunks
+    const claim_interact_tooltip = [
+         'hexerei:witch_hazel_broom',
+         'hexerei:willow_broom', 
+         'hexerei:mahogany_broom',
+         '#waystones:is_teleport_target',
+         '#minecraft:boats',
+         '#lootr:containers',
+         'yigd:grave',
+         '#smallships:ships',
+        ]
+    claim_interact_tooltip.forEach(element => {
+        event.add(element, Text.of(textAnimatorString("🛈 You can interact with this in the claimed chunks", "fade")).color("#4EC847"))
+    });
+    
+    //#region
+
 })

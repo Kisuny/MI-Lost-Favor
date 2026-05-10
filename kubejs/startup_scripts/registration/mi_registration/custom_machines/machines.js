@@ -234,45 +234,68 @@ function registerTieredMIMachine(name, args){
                 shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
             })
             shape = shape.build()
+            if (args.fromExisting) recipe = event.getRecipeType(args.fromExisting)
             tiersArray.push(event.createTier(
                 tier.id,
                 recipe,
                 shape,
                 (workstations) => workstations.add(tier.workstationID),
-                tier.maxBaseEU || 128
+                tier.maxBaseEU || 128,
+                tier.batchsize || 1,
+                tier.costMulti || 1
             ))
         })
-        const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
-        multiTypeFunction.apply(event, [
-            idToName(name), name,
-            (tiers) => {
-                tiersArray.forEach(tier =>{
-                    tiers.add(tier)
-                })
-            }, 
-            event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
-            itemInputs => {
-                if(!args.itemInputSlots) {return itemInputs}
-                args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
-                return itemInputs
-            },
-            itemOutputs => {
-                if(!args.itemOutputSlots) {return itemOutputs}
-                args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
-                return itemOutputs
-            },
-            fluidInputs => {
-                if(!args.fluidInputSlots) {return fluidInputs}
-                args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
-                return fluidInputs
-            },
-            fluidOutputs => {
-                if(!args.fluidOutputSlots) {return fluidOutputs}
-                args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
-                return fluidOutputs
-            },
-            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
-        ])
+        
+
+        if(args.fromExisting){
+            let multiTypeFunction = args.steam ? event.steam : event.electric
+            multiTypeFunction.apply(event, [
+                idToName(name), name,
+                (tiers) => {
+                    tiersArray.forEach(tier => {
+                        tiers.add(tier)
+                    })
+                },
+                args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+            ])
+
+            
+        } else {
+            let multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
+
+            multiTypeFunction.apply(event, [
+                idToName(name), name,
+                (tiers) => {
+                    tiersArray.forEach(tier => {
+                        tiers.add(tier)
+                    })
+                },
+                event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+                itemInputs => {
+                    if (!args.itemInputSlots) { return itemInputs }
+                    args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
+                    return itemInputs
+                },
+                itemOutputs => {
+                    if (!args.itemOutputSlots) { return itemOutputs }
+                    args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
+                    return itemOutputs
+                },
+                fluidInputs => {
+                    if (!args.fluidInputSlots) { return fluidInputs }
+                    args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
+                    return fluidInputs
+                },
+                fluidOutputs => {
+                    if (!args.fluidOutputSlots) { return fluidOutputs }
+                    args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
+                    return fluidOutputs
+                },
+                args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+            ])
+
+        }
+
     })
     jsonDataForMITweaksTieredMachine(name, args.mainCasing, args.mainOverlays, args.tiers)
 }
@@ -484,16 +507,52 @@ registerBatchMIMachineFromExisting('advanced_large_steam_furnace', {steam:true, 
     batchsize:8, costMulti:0.75
 })
 
-registerBatchMIMachineFromExisting('large_electric_furnace', {casing: 'modern_industrialization:heatproof_machine_casing', recipeType:"modern_industrialization:mi_furnace",
-    emiWorkstations:["modern_industrialization:bronze_mi_furnace"],
-    shape: [['AAA', 'aaa', 'aaa', 'AAA'], 
-            ['BAB', 'B B', 'B B', 'BAB'], 
+// registerBatchMIMachineFromExisting('large_electric_furnace', {casing: 'modern_industrialization:heatproof_machine_casing', recipeType:"modern_industrialization:mi_furnace",
+//     emiWorkstations:["modern_industrialization:bronze_mi_furnace"],
+//     shape: [['AAA', 'aaa', 'aaa', 'AAA'], 
+//             ['BAB', 'B B', 'B B', 'BAB'], 
+//             ['A#A', 'aaa', 'aaa', 'AAA']],
+//     shapeKeys: {"A":{id:"modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL},
+//                 "a":"modern_industrialization:cupronickel_coil",
+//                 "B":"modern_industrialization:invar_machine_casing_pipe"},
+//     mainCasing:'heatproof_machine_casing', mainOverlays: 'mi_furnace', frontOverlay: true,
+//     batchsize:8, costMulti:0.75
+// })
+
+registerTieredMIMachine('large_electric_furnace', {
+    fromExisting: "modern_industrialization:mi_furnace",
+    casing: 'modern_industrialization:heatproof_machine_casing',
+    tiers: [
+        {
+            id: "large_electric_furnace_cupronickel_tier", name: "Cupronickel", casing: "heatproof_machine_casing",
+            shape: [['AAA', 'aaa', 'aaa', 'AAA'],
+            ['BAB', 'B B', 'B B', 'BAB'],
             ['A#A', 'aaa', 'aaa', 'AAA']],
-    shapeKeys: {"A":{id:"modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL},
-                "a":"modern_industrialization:cupronickel_coil",
-                "B":"modern_industrialization:invar_machine_casing_pipe"},
-    mainCasing:'heatproof_machine_casing', mainOverlays: 'mi_furnace', frontOverlay: true,
-    batchsize:8, costMulti:0.75
+            shapeKeys: {
+                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL },
+                "a": "modern_industrialization:cupronickel_coil",
+                "B": "modern_industrialization:invar_machine_casing_pipe"
+            },
+            workstationID: "modern_industrialization:bronze_mi_furnace",
+            batchsize: 8, costMulti: 1
+        },
+
+        {
+            id: "large_electric_furnace_kanthal_tier", name: "Kanthal", casing: "heatproof_machine_casing",
+            shape: [['AAA', 'aaa', 'aaa', 'AAA'],
+            ['BAB', 'B B', 'B B', 'BAB'],
+            ['A#A', 'aaa', 'aaa', 'AAA']],
+            shapeKeys: {
+                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL },
+                "a": "modern_industrialization:kanthal_coil",
+                "B": "modern_industrialization:invar_machine_casing_pipe"
+            },
+            workstationID: "modern_industrialization:bronze_mi_furnace",
+            batchsize: 16, costMulti: 1.2
+        },
+
+    ],
+    mainCasing: 'heatproof_machine_casing', mainOverlays: 'mi_furnace', frontOverlay: true
 })
 
 registerBatchMIMachineFromExisting('advanced_steam_blast_furnace', {steam:true, casing: 'steel_plated_bricks', recipeType:"modern_industrialization:blast_furnace",

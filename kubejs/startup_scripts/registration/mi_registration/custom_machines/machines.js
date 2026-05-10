@@ -242,7 +242,7 @@ function registerTieredMIMachine(name, args){
                 tier.maxBaseEU || 128
             ))
         })
-        const multiTypeFunction = args.steam ? event.steam : event.electric
+        const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
         multiTypeFunction.apply(event, [
             idToName(name), name,
             (tiers) => {
@@ -271,9 +271,8 @@ function registerTieredMIMachine(name, args){
                 args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
                 return fluidOutputs
             },
-            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
-            args.maxBaseEU || 128
-        ]) 
+            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+        ])
     })
     jsonDataForMITweaksTieredMachine(name, args.mainCasing, args.mainOverlays, args.tiers)
 }

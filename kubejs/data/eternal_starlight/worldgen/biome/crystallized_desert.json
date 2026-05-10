@@ -39,16 +39,19 @@
       "eternal_starlight:stone_ore",
       "eternal_starlight:deepslate_ore",
       "eternal_starlight:nightfall_dirt_ore",
+      "eternal_starlight:dimslag_ore",
       "eternal_starlight:glowing_grimstone_ore",
       "eternal_starlight:glowing_voidstone_ore",
       "eternal_starlight:upper_starlit_diamond_ore",
       "eternal_starlight:lower_starlit_diamond_ore",
+      "eternal_starlight:upper_deepsilver_ore",
+      "eternal_starlight:lower_deepsilver_ore",
       "eternal_starlight:upper_redstone_ore",
       "eternal_starlight:lower_redstone_ore",
       "eternal_starlight:upper_saltpeter_ore",
       "eternal_starlight:lower_saltpeter_ore",
-      "eternal_starlight:upper_atalphaite_ore",
-      "eternal_starlight:lower_atalphaite_ore",
+      "eternal_starlight:upper_starcore_ore",
+      "eternal_starlight:lower_starcore_ore",
       "eternal_starlight:ore_brilliant",
       "eternal_starlight:cthonic_gold_ore",
       "eternal_starlight:ore_soulstone",
@@ -75,7 +78,9 @@
       "eternal_starlight:lunaris_cactus",
       "eternal_starlight:crystal_caves_vegetation",
       "eternal_starlight:red_crystal_moss_patch",
-      "eternal_starlight:blue_crystal_moss_patch"
+      "eternal_starlight:red_crystal_moss_patch_ceiling",
+      "eternal_starlight:blue_crystal_moss_patch",
+      "eternal_starlight:blue_crystal_moss_patch_ceiling"
     ],
     [
       "minecraft:freeze_top_layer",
@@ -86,19 +91,23 @@
   "spawn_costs": {
     "eternal_starlight:gleech": {
       "charge": 1.0,
-      "energy_budget": 0.15
+      "energy_budget": 0.75
     },
     "eternal_starlight:lonestar_skeleton": {
       "charge": 1.0,
-      "energy_budget": 0.15
+      "energy_budget": 0.5
     },
     "eternal_starlight:nightfall_spider": {
       "charge": 1.0,
-      "energy_budget": 0.15
+      "energy_budget": 0.5
+    },
+    "eternal_starlight:seeker": {
+      "charge": 1.0,
+      "energy_budget": 0.5
     },
     "eternal_starlight:thirst_walker": {
       "charge": 1.0,
-      "energy_budget": 0.15
+      "energy_budget": 0.75
     }
   },
   "spawners": {
@@ -124,13 +133,19 @@
         "type": "eternal_starlight:nightfall_spider",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 20
+        "weight": 15
       },
       {
         "type": "eternal_starlight:lonestar_skeleton",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 20
+        "weight": 10
+      },
+      {
+        "type": "eternal_starlight:seeker",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 15
       },
       {
         "type": "eternal_starlight:gleech",

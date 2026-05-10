@@ -1,32 +1,8 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#eternal_starlight:is_eternal_starlight",
+  "biomes": [],
   "step": "surface_structures",
-  "spawn_overrides": {
-    "monster": {
-      "bounding_box": "full",
-      "spawns": [
-        {
-          "type": "ars_nouveau:wilden_guardian",
-          "weight": 5,
-          "minCount": 5,
-          "maxCount": 10
-        },
-        {
-          "type": "ars_nouveau:wilden_stalker",
-          "weight": 5,
-          "minCount": 5,
-          "maxCount": 10
-        },
-        {
-          "type": "ars_nouveau:wilden_hunter",
-          "weight": 5,
-          "minCount": 5,
-          "maxCount": 10
-        }
-      ]
-    }
-  },
+  "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
   "start_pool": "ars_additions:arcane_library",
   "size": 1,

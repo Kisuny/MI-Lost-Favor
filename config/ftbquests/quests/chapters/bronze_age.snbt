@@ -440,15 +440,41 @@
 		{
 			dependencies: ["61380B958B86CBD5"]
 			id: "2B815502453269AF"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					id: "lootr:lootr_chest"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						id: "lootr:lootr_chest"
+					}
+					id: "670CBE4973B6F390"
+					team_reward: false
+					type: "custom"
 				}
-				id: "670CBE4973B6F390"
-				team_reward: false
-				type: "custom"
-			}]
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "spectrum:slot/feet"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "058FD5B700A2EB20"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_back_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "401FEBCB5849F6DE"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "diamond"
 			size: 1.0d
 			tasks: [{

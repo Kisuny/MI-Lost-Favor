@@ -7,6 +7,7 @@
 	chapter.231570DE6A7FCD52.title: "Journeys \\& Gear"
 	chapter.389198189DCA1A49.title: "Utilities"
 	chapter.3ED5DF3804C2BE8A.title: "Stages"
+	chapter.4058552B01F39ED4.title: "&lHow to automate?"
 	chapter.4D6A3C5941C9908A.title: "endgame"
 	chapter.4E4F6FF3EEEB1E51.title: "basic information"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
@@ -194,6 +195,11 @@
 	]
 	quest.0651B6B965560FDE.quest_subtitle: "Phantoms? Hate those guys"
 	quest.06793C23D00355A7.quest_desc: ["Magnet? And configurable??? I'll take 2 please"]
+	quest.06B403309D54D86E.quest_desc: [
+		"You may have already noticed this little icon next to pedestal output - you can place &dcrafting tablets&r with desired crafts here! When the pedestal has a &dcrafting tablet&r inside it, it changes behavior - now it only accepts items that could be used in a specified craft (that means that if your crafting table output is, for example, a piston, the pedestal will accept any type of planks, even if you used one specific type in the &dtablet&r) and nothing else (note: items could &o&lonly&r&r be inserted from the top of the pedestal). Then if the pedestal is powered by redstone, it will output the crafting result from the bottom and &o&lonly&r&r from the bottom"
+		"{@pagebreak}"
+		"Возможно, вы уже заметили эту маленькую иконку рядом с выходом пьедестала — здесь можно размещать планшеты с желаемыми изделиями! Когда в пьедестале находится планшет для крафта, он меняет свое поведение — теперь он принимает только предметы, которые могут быть использованы в указанном крафте (это означает, что если выход вашего крафт-стола — например, поршень, пьедестал будет принимать любой тип досок, даже если вы использовали один конкретный тип в планшете) и ничего больше (примечание: предметы можно вставлять только сверху пьедестала). Затем, если пьедестал питается от редстоуна, он будет выдавать результат крафта снизу и только снизу."
+	]
 	quest.078297FA7375ABD6.quest_desc: ["The Ender Source Jar allows you to store source in an ender-connected Source Jar. Each jar you place will link to the same pool of source, allowing you to use the Source Jar from anywhere."]
 	quest.078401AAC8FB6799.quest_desc: [
 		"Alternatively, if I am struggling to find a certain affinity within an ingredient, I can instead FUSE other ones for a variable outcome. I can make a substance that will allow me to gain another affinity from three other poisonous materials. To do this I first must create the mix."
@@ -290,6 +296,13 @@
 		"Я почти сделал это! Материал, который будет использоваться для раскрытия всего потенциала яда. Я приготовил это снадобье, чтобы подготовить окончательное создание высшего вещества! Но мне нужно еще раз войти в недра."
 	]
 	quest.0C7FBEEB6BB3499E.quest_desc: ["Adds items into system"]
+	quest.0CAE82787F54CCCF.quest_desc: [
+		"You can save resources and use iron/gold workbenches instead of assemblers in the beginning, they are perfectly automated, you just need to add a craft once and input resources into it, it will create the recipe you need, but the assembler is certainly faster. Although, maybe a Nethertite Auto Crafting Table is still better? Who knows."
+		"{image:quest_images:textures/item/example_of_auto_crafting_with_auto_crafting_table.png width:200 height:170 align:1}"
+		"{@pagebreak}"
+		"Можно экономить ресурсы и в начале использовать не сборщики, а железные/золотые верстаки, они &lпрекрасно&r автоматизируются, вам достаточно выложить один раз крафт и подавать ресурсы в него, он будет создавать необходимый вам рецепт, но ассемблер, конечно же, быстрее. Хотя, быть может незеритовый автоверстак всё же лучше? Кто знает."
+		"{image:quest_images:textures/item/example_of_auto_crafting_with_auto_crafting_table.png width:200 height:170 align:1}"
+	]
 	quest.0CC9329A82A7454A.quest_desc: [
 		"Find your first affix item!"
 		""
@@ -800,6 +813,25 @@
 		"{@pagebreak}"
 		"Отдай свою книгу(Ars Ecclesia) жителю-священнику!"
 	]
+	quest.21F9284797259BB1.quest_desc: [
+		"• Drawers can be connected to each other using Connectors so they will be on the same “network”"
+		""
+		"• Drawers have a default capacity of 1024 items, upgrades increase this value by 16, 64, 256, 512 times, according to the tier, i.e. tier 1 increases by 16 times."
+		""
+		"• Drowers have \"Voiding mode\" upgrades and \"item hiding\" if needed, use a bucket of lava on the drower for voiding and black dye for hide."
+		""
+		"• Access Points allow you to combine all \"Networks\" into one, this allows you to put items into the drower you want if it's on the same network, as well as pull an item out if you need to."
+		"{image:quest_images:textures/item/player_automate_example_3.png width:200 height:200 align:1}"
+		"{@pagebreak}"
+		"• Дроверы можно соединять друг с другом используя Коннекторы таким образом они будут в одной \"сети\""
+		""
+		"• Дроверы по умолчанию имеют вместимость в 1024 предмета, улучшения увеличивают это значение в 16, 64, 256, 512 раз, в соответствии с тиром, т.е. тир 1 увеличивает в 16 раз."
+		""
+		"• Дроверы имеют улучшения \"удаление излишек\" и скрытие предмета, если это нужно, для удаления излишек используйте ведро лавы на дровере, а для скрытия - чёрный краситель."
+		""
+		"• Точки доступа позволяют объединять все \"Сети\" В одну, это позволяет засовывать предметы в нужный вам дровер, если он в одной сети, так же и вытаскивать предмет, если нужно."
+		"{image:quest_images:textures/item/player_automate_example_3.png width:200 height:200 align:1}"
+	]
 	quest.22128FA939CC5229.quest_desc: [
 		"Kill the cow near the Goblet!"
 		"{@pagebreak}"
@@ -954,6 +986,24 @@
 		"Рунический заряд - это простой способ пополнить запасы рунных плит после того, как они истощились в ходе ритуала."
 		""
 		"Так же используется для создания ведьмовских машин"
+	]
+	quest.2B56BBEF58157952.quest_desc: [
+		"To avoid random items getting in, you can lock the input and output slots so that only the required item gets into the machine, that way up to a point you can not filter the pipes at all as you like, they can only get in where the required item is specified."
+		""
+		"Blocked items are marked with an orange outline."
+		""
+		"You can also from REI insert a recipe by pressing the «+» with Shift, all necessary items will be locked automatically."
+		""
+		"{image:quest_images:textures/item/locking.png width:200 height:170 align:1}"
+		"{@pagebreak}"
+		"Чтобы избежать попаданий лишних/случайных предметов, можно заблокировать слоты входа и выхода, чтобы в машину попадал только необходимый предмет, таким образом, до какого-то момента вы можете вообще не фильтровать трубы и смешивать предметы так как вам угодно, они смогут попасть только туда, где будет указан нужный предмет."
+		""
+		"Заблокированные предметы помечены оранжевой обводкой."
+		""
+		"Вы так же можете из REI вставлять рецепт нажимая на «+» вместе с Shift, все необходимые предметы заблокируются автоматически."
+		""
+		""
+		"{image:quest_images:textures/item/locking.png width:200 height:170 align:1}"
 	]
 	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain non-obvious mechanics. You can read them whenever, we won't judge."]
 	quest.2BAF1070D316E4A4.quest_desc: [
@@ -1138,6 +1188,11 @@
 		""
 		"Как альтренатива можно использовать кристалл на обсидиане."
 	]
+	quest.317E54D541DBEC9B.quest_desc: [
+		"Ewen if this structure looks &ounautomatable&r you still can &lautomate&r it! &l&#FEC6DF<wave>Forge</wave>&r accepts fuel from the &oleft&r side, valid items from the &oright&r side and outputs smelted items from the &obottom&r of the block below &l&#FEC6DF<wave>forge</wave>&r itself"
+		"{@pagebreak}"
+		"Даже если эта конструкция выглядит неавтоматизируемой, вы все равно можете ее автоматизировать! Кузня принимает топливо с левой стороны, подходящие предметы с правой стороны и выдает выплавленные предметы из нижней части блока под кузницей."
+	]
 	quest.31DB78BD5EE5AF9E.quest_desc: [
 		"Designed like a regular &8hopper&r in shape and function, the &#9BB8EDEnder Hopper&r has the special ability to place items directly into your &#9BB8EDEnder Chest&r."
 		""
@@ -1149,6 +1204,30 @@
 	]
 	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your cute little pet rock daily! It's quite playful when you let it roam freely, so don't let it loose without the leash. As the good rock that it is, it'll help you locate the precious little minerals around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the ores and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
+	quest.32A2AA91FA55AB4A.quest_desc: [
+		"The whole idea of automation is that you make a different creation machine for each item, for example, for plates of bronze, tin, steel, etc. you make your own compressor each, and feed that machine infinite amounts of the ingots you need."
+		""
+		"Why is this necessary?"
+		""
+		"• Earlier we wrote about the principle of overclocking, it allows you to quickly create a lot of items, thereby creating a “Buffer” of certain items, in our example it is plates, these plates can later be used in other chains of production taking them from this place."
+		"• We save tons of time by ridding ourselves of micromanagement, all we have to do is take care of the endless supply of ingots, more on that next!"
+		""
+		"Here we can also note that we don't need pipes to pull out the result, it will come out through the mechanism into the drawer, if you activate the right mode in the mechanism, of course."
+		""
+		"{image:quest_images:textures/item/plate.png width:200 height:200 align:1}"
+		"{@pagebreak}"
+		""
+		"Вся идея автоматизации заключается в том, что вы создаёте для каждого элемента свою машину создания, например, для пластин из бронзы, олова, стали и т.д. вы делаете по своему компрессору, и подаёте этому механизму бесконечно количества нужных слитков."
+		""
+		"Зачем это нужно? "
+		""
+		"• Ранее мы писали про принцип разгона, он позволяет быстро создавать множество предметов, тем самым создавая \"Буффер\" Определенных предметов, в нашем примере это пластины, эти пластины в дальнейшем можно использовать в других цепочках производства забирая их из этого места."
+		"• Мы экономим тонны времени избавляя себя от микроменеджмента, всё что нам нужно - позаботится о бесконечной подачи слитков, об этом дальше! "
+		""
+		"Тут так же можно обратить внимание, что нам не нужны трубы чтобы вытаскивать результат, он сам выйдет через механизм в драверс, если активировать нужный режим в механизме, конечно же."
+		""
+		"{image:quest_images:textures/item/plate.png width:200 height:200 align:1}"
+	]
 	quest.3311BAD6D1B590DE.quest_desc: [
 		"Better than nothing, and fancy furthermore, eh?"
 		"{@pagebreak}"
@@ -1995,6 +2074,30 @@
 		"{@pagebreak}"
 		"Используя Светящийся чернильный мешок(или &k&bLight Blue Ink&r&r), награждает носителя &#FEECD6ночным зрением&r! "
 	]
+	quest.5CC8256483CC8A63.quest_desc: [
+		"You can change the Capacity mechanism by scrolling the wheels at the bottom to decrease capacity, or up to increase capacity."
+		""
+		"Why is this necessary?"
+		""
+		"Sometimes we need to have a small number of items, for example, when we first start automating the creation of electrical circuits, we do not need to have too many of them, 1 to 10 pieces will be enough to start with, in order not to waste all our aluminum reserves, we limit their creation and keep a couple of them in the mechanism, take them as needed."
+		""
+		"The Configurable Chest works by the same logic, only it has many slots in it"
+		""
+		""
+		"{image:quest_images:textures/item/capacity.png width:200 height:60 align:1}"
+		"{@pagebreak}"
+		""
+		"Вы можете изменять Вместимость механизм прокручивая колесиков внизу, чтобы уменьшить вместимость, либо вверх, чтобы повысить вместимость. "
+		""
+		"Зачем это нужно? "
+		""
+		"Иногда нам необходимо, чтобы у нас было небольшое количество каких-то предметов, например, когда мы только начнём автоматизировать создание электрических микросхем, нам не нужно чтобы у нас было их слишком много, для начала нам хватит от 1 до 10 штук, чтобы не тратить все наши запасы алюминия мы ограничиваем их создание и держим парочку в механизме, берем по надобности. "
+		""
+		"По такой же логике работает Конфигурационный сундук, только в нём много слотов  "
+		""
+		""
+		"{image:quest_images:textures/item/capacity.png width:200 height:60 align:1}"
+	]
 	quest.5CD79C87448D8A51.quest_desc: ["Тут множество разных ритуалов можно делать, но это лучше прочитать в книге т.к. меняются только руны, самый важный ритуал из 5 арканы - даёт Soulwood sapling"]
 	quest.5D02CAC8B45A26C4.quest_desc: [
 		"The title speaks for itself. This machine places blocks upon recieving a &4redstone pulse&r."
@@ -2741,6 +2844,34 @@
 	]
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
 	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
+	quest.7EFCA744EC5BCFDB.quest_desc: [
+		"Many players are used to there being 2 ways to automate redstone and AE2 in Minecraft, but this is not the case."
+		""
+		"Modern Industrialization provides completely elementary principles of automation:"
+		""
+		"• Overclocking"
+		"• Recipe Locking"
+		"• Change the number of items that are created or incoming."
+		"• Item/fluid auto-extraction"
+		""
+		"In the next quests we'll talk more about all of these principles with pictures for the laziest of the lazy, as well as provide some tips to automate stuff from different mods!"
+		""
+		"{image:quest_images:textures/item/otter_2_.png width:200 height:200 align:1}"
+		""
+		"{@pagebreak}"
+		"Многие игроки привыкли, что в Minecraft существует 2 способа автоматизации редстоун и AE2, но это не так."
+		""
+		"Modern Industrialization предоставляет совершенно элементарные принципы автоматизации:"
+		""
+		"• Разгон"
+		"• Блокировка рецептов"
+		"• Изменение количество создаваемых или входящих предметов."
+		"• Автоматическое извлечение предметов/жидкостей "
+		""
+		"В следующих квестах мы поговорим более подробнее обо всех этих принципах, с картинками для самых ленивых!"
+		""
+		"{image:quest_images:textures/item/otter_2_.png width:200 height:200 align:1}"
+	]
 	quest.7F12E543084C6825.quest_desc: [
 		"Yellow Fertilizer can be applied to farmland to prevent trampling of crops"
 		"{@pagebreak}"
@@ -2752,6 +2883,7 @@
 		"1 Ethereal Source -> 2 liquid source "
 	]
 	reward.015382CFC13FFB7A.title: "Deeper Down Access"
+	reward.058FD5B700A2EB20.title: "Feet Trinket Slot"
 	reward.084C079A765DC32C.title: "Focus Trinket Slot"
 	reward.094072146D87AD84.title: "Pouch slot"
 	reward.0A58BA17068FCA2C.title: "New Radial Menu Button"
@@ -2762,6 +2894,8 @@
 	reward.116FEA5302E15B7D.title: "Hands Trinket Slot"
 	reward.12D16D8D384FB0D8.title: "Pin Trinket Slot"
 	reward.16B46238FC936637.title: "<glitch>New dangers"
+	reward.1700ECB1400F81BB.title: "Hands Trinket Slot"
+	reward.1816E9C04215E83A.title: "Belt Trinket Slot"
 	reward.184E78B18B597C06.title: "Pattern Encoder Trinket Slot"
 	reward.19304AD673874503.title: "New dangers"
 	reward.19B52AC9AC1571C5.title: "Сharm Trinket Slot"
@@ -2772,7 +2906,6 @@
 	reward.2BD4B3CA5BEDBA19.title: "The End Access"
 	reward.2C80D8BA9B69917E.title: "Ring Trinket Slot"
 	reward.2F509B489C343BD7.title: "Reforging Table Access"
-	reward.331CC21E0A6E3F3F.title: "Feet Trinket Slot"
 	reward.386F1FCFA31E0945.title: "Radial Menu Button"
 	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.3F447B6AF92AB2A6.title: "Belt Trinket Slot"
@@ -2810,9 +2943,11 @@
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.0201D3254268522D.title: "Kandar's Open Conjure"
 	task.020311F4DEE019DA.title: "Any #ytech:tanning_racks"
+	task.0231A968EC37120B.title: "Spectrum"
 	task.02CC9AB30304F2F4.title: "Any #milf:netherite_storage"
 	task.03D27D995554C1F6.title: "Ancient?"
 	task.03FD4CFDF4EBC8D0.title: "Crushing"
+	task.044297D7AB7DE0AA.title: "Forge"
 	task.04686380A3EF8E64.title: "Any #minecraft:vanilla_music_discs"
 	task.0485EF9BAD98F611.title: "Charms are a set of curios enchanted with strong protection magics. They range from allowing you to walk on Powdered Snow, to saving you from the Warden's powerful Sonic Boom. Each charm has a specific amount of charges available to protect you. Once the charges have been depleted, pop them into an Imbuement chamber to charge them back up."
 	task.0499279911FFA20D.title: "Any #animal_pen:aviaries"
@@ -2862,6 +2997,7 @@
 	task.223A6719946C7ABC.title: "Any #c:chests"
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
+	task.258E74CA68DE446A.title: "Item Locking"
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.2629C2F369B3D084.title: "&#A39FE1PINGS!!! THEY'RE EVERYWHERE"
 	task.268D4F85B02495FD.title: "Xaeromap [WIP]"
@@ -2873,6 +3009,7 @@
 	task.298799CECF737186.title: "Any #modern_industrialization:item_pipes"
 	task.29FC46F1CE4D25B3.title: "Cursed shit"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
+	task.2B915AAA46F6518E.title: "Capacity"
 	task.2BE6D4D9E1298E99.title: "Any #minecraft:decorated_pot_sherds"
 	task.2C236C4C499DB27A.title: "Any #hexerei:brooms"
 	task.2CD40379A7378211.title: "Any #milf:pillar_base_blocks"
@@ -2887,6 +3024,7 @@
 	task.33FFDC1566305E62.title: "item/fluid transfer"
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
+	task.34B3E49B9A4E4B61.title: "basic"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.3692A13E4C6958CC.title: "Any #connectiblechains:catenary_items"
 	task.37BF27F02B385E1D.title: "BUT HOW DO YOU MAKE BEER?!"
@@ -2898,6 +3036,7 @@
 	task.3C8D93CD09CDF958.title: "Any #hexerei:tallow_meltable"
 	task.3CF465D57CE596A9.title: "Boss Checklist"
 	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"
+	task.403F17B1F42C51C7.title: "Overclocking"
 	task.40ED385E3D23C00B.title: "Little Joys"
 	task.40EE6EFAE710D3F5.title: "Ophyx' Calling"
 	task.42075FB0D0CA93C3.title: "Zume"
@@ -2930,6 +3069,7 @@
 	task.4F6145E6EAF3C5A0.title: "Iesnium Ritual Bowl"
 	task.4FE41B7B9F6AAEE7.title: "!"
 	task.50145BF6C914A142.title: "Any #milf:gemstone_lamp"
+	task.511041EC78AB408E.title: "Drawers"
 	task.5180AC955AE4C748.title: "Why do some quests come in different forms?"
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
 	task.5681B6E38A2DC015.title: "Harvest with ease"
@@ -2948,6 +3088,7 @@
 	task.64E3E2FCC89E29E6.title: "Tier 1 Dimensional Storage Stabilizer"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
+	task.6560E3912A5833E6.title: "&lAss&rembler? No no.."
 	task.65741180CA3C4BD1.title: "Any #milf:gold_storage"
 	task.6719AA6DDAB0F823.title: "Any #minecraft:anvil"
 	task.68DA7E9C5CC5E0FB.title: "Uphyxes Inverted Tower"

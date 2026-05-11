@@ -131,11 +131,13 @@ simple_stage_rewards.forEach(element => {
 });
 
 
-//TODO: add back, belt, hands
 // ring, charm, feet, shoulders, bracelet, bundle, brooch, hands, back, head, pouch, face, 
 // necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
 const trinkets_slot_list_reward = [
     { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
+    { quest_id: '1700ECB1400F81BB', trinket_slot: 'hands' },
+    { quest_id: '1816E9C04215E83A', trinket_slot: 'belt' },
+    { quest_id: '401FEBCB5849F6DE', trinket_slot: 'back' },
     { quest_id: '094072146D87AD84', trinket_slot: 'pouch' },
     { quest_id: '3F447B6AF92AB2A6', trinket_slot: 'belt' },
     { quest_id: '0E39813C84812910', trinket_slot: 'face' },
@@ -148,7 +150,7 @@ const trinkets_slot_list_reward = [
     { quest_id: '70FAD5B8BC6CD8CC', trinket_slot: 'deep_learner' },
     { quest_id: '12D16D8D384FB0D8', trinket_slot: 'pin' },
     { quest_id: '7CEACC8595E86D03', trinket_slot: 'ring' },
-    { quest_id: '331CC21E0A6E3F3F', trinket_slot: 'feet' },
+    { quest_id: '058FD5B700A2EB20', trinket_slot: 'feet' },
     { quest_id: '1F1063A9E62215F0', trinket_slot: 'rune' },
     { quest_id: '66F76B515E0CC819', trinket_slot: 'shoulders' },
     { quest_id: '19B52AC9AC1571C5', trinket_slot: 'charm' },

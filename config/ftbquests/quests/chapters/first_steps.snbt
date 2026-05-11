@@ -756,6 +756,7 @@
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
+			hide_dependency_lines: true
 			icon: {
 				id: "modern_industrialization:bronze_ingot"
 			}
@@ -780,6 +781,30 @@
 						id: "grimoireofgaia:box_overworld"
 					}
 					type: "item"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_hands_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "1700ECB1400F81BB"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					auto: "disabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_belt_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "1816E9C04215E83A"
+					team_reward: false
+					type: "custom"
 				}
 			]
 			tasks: [

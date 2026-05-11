@@ -1,0 +1,48 @@
+#A blacklist for mobs that should not be captured by the pentacle on sacrifice
+pentacle_blacklisted = ["minecraft:wither", "minecraft:warden", "minecraft:ender_dragon", "goblintraders:goblin_trader", "goblintraders:vein_goblin_trader", "minecraft:wandering_trader", "bosses_of_mass_destruction:gauntlet", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:obsidilith", "bosses_of_mass_destruction:void_blossom", "fdbosses:chesed", "fdbosses:geburah", "fdbosses:malkuth", "mythsandlegends:black_charro", "born_in_chaos_v1:lord_pumpkinhead_head", "companions:sacred_pontiff", "mowziesmobs:frostmaw", "mowziesmobs:umvuthi", "mowziesmobs:ferrous_wroughtnaut", "eternal_starlight:lunar_monstrosity", "cataclysm:netherite_monstrosity", "cataclysm:ignis", "cataclysm:ancient_remnant", "cataclysm:the_harbinger", "cataclysm:maledictus", "cataclysm:ender_guardian", "cataclysm:the_leviathan", "cataclysm:scylla"]
+#The range that the wican ward will prevent mob spawning in. This area is cubic
+# Default: 10
+# Range: 0 ~ 128
+wican_ward_range = 10
+#The time rituals take to complete in ticks. 20 ticks are one second
+# Default: 120
+# Range: 0 ~ 20000
+ritual_time = 120
+#The time incenses burn in ticks. 20 ticks are one second
+# Default: 20000
+# Range: 0 ~ 200000
+incense_time = 20000
+#Range of the rue incense, responsible for growing crops
+# Default: 4
+# Range: 1 ~ 100
+rue_incense_range = 4
+#Range of the lavender incense, responsible for regenerating health
+# Default: 5
+# Range: 1 ~ 100
+lavender_incense_range = 5
+#The time hanging herbs take to dry. 20 ticks is one second
+# Default: 2000
+# Range: 0 ~ 20000
+drying_time = 2000
+#The chance in percent that a skeleton killed with a boline drops a skull
+# Default: 15
+# Range: 0 ~ 100
+skeleton_skull_from_boline_chance = 15
+#The amount of damage the wand's projectile deals
+# Default: 3
+# Range: 0 ~ 100
+wand_projectile_damage = 3
+#The minimum amount of time it takes for a mob to spawn from the pentacle in ticks (20 ticks = 1 second)
+# Default: 200
+# Range: 0 ~ 10000
+pentacle_minimum_delay = 200
+#The maximum amount of time it takes for a mob to spawn from the pentacle in ticks (20 ticks = 1 second)
+# Default: 800
+# Range: 0 ~ 10000
+pentacle_maximum_delay = 800
+#The amount of mobs that are spawned by the pentacle
+# Default: 4
+# Range: 0 ~ 64
+pentacle_spawn_amount = 4
+#Whether a pagan's guide book should be given to the player when they first join the world
+give_book_on_first_join = true

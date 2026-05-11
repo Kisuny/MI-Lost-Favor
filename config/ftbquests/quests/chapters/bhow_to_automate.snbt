@@ -1,0 +1,122 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bhow_to_automate"
+	group: ""
+	hide_quest_until_deps_visible: true
+	id: "4058552B01F39ED4"
+	images: [
+		{
+			height: 8.0d
+			image: "milf:textures/quest_pic/player_automate_example_1.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			height: 8.0d
+			image: "milf:textures/quest_pic/drowers_example_1.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			height: 5.0d
+			image: "milf:textures/quest_pic/ferret.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			height: 7.0d
+			image: "milf:textures/quest_pic/leaf_insect.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -13.5d
+			y: 2.5d
+		}
+	]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["590167B593FE267A"]
+			id: "7EFCA744EC5BCFDB"
+			shape: "heart"
+			size: 2.0d
+			tasks: [{
+				id: "34B3E49B9A4E4B61"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EFCA744EC5BCFDB"]
+			id: "32A2AA91FA55AB4A"
+			tasks: [{
+				id: "403F17B1F42C51C7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["32A2AA91FA55AB4A"]
+			id: "2B56BBEF58157952"
+			tasks: [{
+				id: "258E74CA68DE446A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B56BBEF58157952"]
+			id: "5CC8256483CC8A63"
+			rewards: [{
+				id: "07DD2116626BB72E"
+				item: {
+					count: 1
+					id: "chipped:spooky_jack_o_lantern"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2B915AAA46F6518E"
+					type: "checkmark"
+				}
+				{
+					id: "54D84E8C4E3FB3B9"
+					item: { count: 1, id: "modern_industrialization:configurable_chest" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7EFCA744EC5BCFDB"]
+			hide_until_deps_visible: true
+			id: "06B403309D54D86E"
+			tasks: [
+				{
+					id: "0231A968EC37120B"
+					type: "checkmark"
+				}
+				{
+					id: "05EFCC240FC2967D"
+					item: { count: 1, id: "spectrum:crafting_tablet" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+	]
+}

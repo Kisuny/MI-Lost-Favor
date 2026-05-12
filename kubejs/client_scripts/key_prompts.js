@@ -104,9 +104,6 @@ ClientEvents.tick(event => {
         if (itemId === 'modern_industrialization:steam_mining_drill') {
             $PromptUtils.show('modern_industrialization', 'key.modern_industrialization.toggle_3x3');
         }
-        if (itemId === 'minecraft:lantern') {
-            $PromptUtils.custom('beltborne_lanterns', 'key.keyboard.ctrl+key.keyboard.b', 'key.beltborne_lanterns.toggle_lantern');
-        }
         if (CONSTRUCTION_WANDS.has(itemId)) {
             $PromptUtils.custom('constructionwand', 'key.keyboard.ctrl+key.mouse.right', 'key.constructionwand.wand_option');
         }

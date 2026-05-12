@@ -88,18 +88,6 @@
 			y: 9.0d
 		}
 		{
-			id: "0E4C3004EA3DA787"
-			linked_quest: "437AFCB618DB0351"
-			x: 0.0d
-			y: -6.5d
-		}
-		{
-			id: "69D177F3073E2160"
-			linked_quest: "669A264E5501BA93"
-			x: -1.0d
-			y: -6.5d
-		}
-		{
 			id: "20700D95591E7C99"
 			linked_quest: "35B625450DD3545F"
 			x: -20.0d
@@ -164,6 +152,12 @@
 			linked_quest: "3CED97E478F793D3"
 			x: -5.5d
 			y: 4.0d
+		}
+		{
+			id: "68C8CB0AE44EC30C"
+			linked_quest: "4234498523BE845B"
+			x: -18.5d
+			y: -2.5d
 		}
 	]
 	quests: [
@@ -275,17 +269,6 @@
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
-			id: "3705F495C81B64E5"
-			tasks: [{
-				id: "241DE71BCE55FA45"
-				item: { count: 1, id: "hostilenetworks:sim_chamber" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
 			id: "3E6BADA7B5D3F004"
 			tasks: [{
 				id: "5BB32F838E2E2877"
@@ -312,8 +295,8 @@
 				item: { count: 1, id: "farmingforblockheads:market" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: -6.5d
+			x: -21.5d
+			y: -2.5d
 		}
 		{
 			id: "4A1CF718DA71EAC5"
@@ -322,8 +305,8 @@
 				item: { count: 1, id: "farmingforblockheads:feeding_trough" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.5d
+			x: -20.5d
+			y: -2.5d
 		}
 		{
 			id: "500B0AF8A393CC5D"
@@ -332,8 +315,8 @@
 				item: { count: 1, id: "farmingforblockheads:chicken_nest" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -6.5d
+			x: -19.5d
+			y: -2.5d
 		}
 		{
 			id: "5F99F4F474FA0648"
@@ -408,8 +391,8 @@
 				to_observe: "bountiful:bountyboard"
 				type: "observation"
 			}]
-			x: -8.0d
-			y: -6.5d
+			x: -22.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4B3C2C61B4A1072A"]
@@ -419,8 +402,23 @@
 				item: { count: 1, id: "bountiful:decree" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: -7.5d
+			x: -22.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1376283846993363"
+				"5B8FDB56139B5289"
+			]
+			id: "267E5C8247C37860"
+			min_width: 300
+			tasks: [{
+				id: "5372ED71616EB62E"
+				item: { count: 1, id: "rarcompat:mimi_dust" }
+				type: "item"
+			}]
+			x: -29.5d
+			y: 1.5d
 		}
 	]
 }

@@ -76,6 +76,10 @@ createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": 
 createNewItem('divine_mint', { stackSize: 1})
 createNewItem('divine_coin', { stackSize: 1 })
 
+// createNewItem('divine_coin', {stackSize: 1, dynamicName: (/** @type {import("net.minecraft.world.item.ItemStack").$ItemStack} */ itemStack) => {
+    
+// }})
+
 createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })
 createNewItem("cement", { lang: { "en_us": "Cement", "ru_ru": "Цемент" } })
 

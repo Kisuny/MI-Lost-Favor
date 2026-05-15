@@ -6,14 +6,18 @@ let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation
 let $HashMap = Java.loadClass("java.util.HashMap")
 let $Button = Java.loadClass("net.minecraft.client.gui.components.Button")
 let $AbstractWidget = Java.loadClass("net.minecraft.client.gui.components.AbstractWidget")
+let $DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents")
+let $Component$Serializer = Java.loadClass("net.minecraft.network.chat.Component$Serializer")
 
 
 let DIVINE_MINT_SCREEN_TITLE = Component.translatable("milf.divine_mint.gui.title")
 
-let DIVINE_MINT_GUI = $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui.png")
+let DIVINE_MINT_GUI_1 = $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_1.png")
+let DIVINE_MINT_GUI_2 = $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_2.png")
 
-const MILF_BOSSES = global.milfBosses
-const MILF_BOSSES_SIZE = Object.keys(MILF_BOSSES).length
+let MILF_BOSSES = global.milfBosses
+// MILF_BOSSES["born_in_chaos_v1:fallen_chaos_knight"] = {}
+// MILF_BOSSES["mythsandlegends:black_charro"] = {}
 
 const maxInt = 2 ** 32
 const TWO_PI = Math.PI * 2
@@ -33,26 +37,48 @@ let LEVER_BG_HEIGHT = 62
 let COIN_ACCEPTOR_WIDTH= 33
 let COIN_ACCEPTOR_HEIGHT = 86
 
+let Y_OFFSET_FROM_CENTER = -26
+
+let isFirstOpen = true
+
 
 ItemEvents.firstRightClicked("milf:divine_mint", event => {
+    if(isFirstOpen) {
+        isFirstOpen = false
+        Client.player.sendData("milf_divine_mint_sync_loot", { bosses: MILF_BOSSES })
+    }
+
     Client.setScreen(new JavaAdapter($Screen, {
 
         guiScale: Client.window.guiScale,
 
         spawnButton: null,
+
+        
+        effectSelector: null,
         bossSelector: null,
+        difficultySelector: null,
+        infoBoxWidget: null,
         lever: null,
+        tierSelector:null,
+        coinAcceptor:null,
+
+        areReelsSpinning:false,
+        isCoinSequence: false,
+
+        bossTier: "tier1",
+
+        getInfoBox(){ return this.infoBoxWidget },
 
         init(){
 
             let entitiesToRender = {}
 
-            Object.entries(MILF_BOSSES).forEach(([bossId, bossData], index) => {
+            Object.entries(MILF_BOSSES[this.bossTier]).forEach(([bossId, bossData], index) => {
 
                 let entityType = $BuiltInRegistries.ENTITY_TYPE.get(new $ResourceLocation.parse(bossId))
                 let entity = entityType.create(Client.level)
-
-                entitiesToRender[bossId] = entity
+                entitiesToRender[bossId] = Object.assign({}, bossData, { entity: entity }) 
 
             })
 
@@ -61,39 +87,136 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
             const buttonWidth = 26 * guiScale
             const buttonHeight = 6 * guiScale
 
-            let buttonX = (this.width / 2 - buttonWidth / 2)
-            let buttonY = (this.height / 2 - buttonHeight / 2) - 16 * guiScale
+            let centerX = ((this.width / 2) | 0)
+            let centerY = ((this.height / 2) | 0)
 
 
             this.spawnButton = this.addRenderableWidget(
                 $Button.builder(Component.literal("TEST"), button => {
-                    console.log("WHAT")
-                    Client.player.sendData("milf_boss_bait", { id: this.bossSelector.currentlySelectedId })
+                    //console.log("WHAT")
+                    Client.player.sendData("milf_divine_mint_boss", { id: this.bossSelector.getCurrentlySelectedID() })
+                    Client.player.sendData("milf_divine_mint_sync_loot", { bosses: MILF_BOSSES })
+                    //console.log(this.bossSelector.getCurrentlySelectedID());
+                    
                     //button.setFocused(false)
                 }
             )
-            .bounds(buttonX, buttonY, buttonWidth, buttonHeight)
+                    .bounds(centerX - buttonWidth / 2, centerY - buttonHeight / 2 - REELS_HEIGHT - 40, buttonWidth, buttonHeight)
             .build())
-            
 
+            //BOSS_SELECTOR
             this.bossSelector = this.addRenderableWidget(
-                createReelWidget(
-                    ((this.width / 2) | 0) - ONE_REEL_WIDTH / 2, ((this.height / 2) | 0) - ONE_REEL_HEIGHT / 2, ONE_REEL_WIDTH, ONE_REEL_HEIGHT, Component.literal("TEST")
+                createBossReelWidget(
+                    ((this.width / 2) | 0) - ONE_REEL_WIDTH / 2, 
+                    ((this.height / 2) | 0) - ONE_REEL_HEIGHT / 2 + Y_OFFSET_FROM_CENTER, 
+                    ONE_REEL_WIDTH, ONE_REEL_HEIGHT, 
+                    Component.literal("TEST")
                 )
             )
 
+            this.bossSelector.setItemsToRender(entitiesToRender)
+            this.bossSelector.setParentScreen(this)
+            this.bossSelector.setCurrentlySelectedID(Object.keys(entitiesToRender)[0])
+
+            //EFFECT_SELECTOR
+            this.effectSelector = this.addRenderableWidget(
+                createEffectReelWidget(
+                    ((this.width / 2) | 0) - ONE_REEL_WIDTH / 2 - ONE_REEL_WIDTH - 5, 
+                    ((this.height / 2) | 0) - ONE_REEL_HEIGHT / 2 + Y_OFFSET_FROM_CENTER, 
+                    ONE_REEL_WIDTH, ONE_REEL_HEIGHT, 
+                    Component.literal("TEST")
+                )
+            )
+
+            this.effectSelector.setItemsToRender({
+                "minecraft:speed": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/speed.png"), modifier: 1.4 },
+                "minecraft:regeneration": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/regeneration.png"), modifier: 2 },
+                "minecraft:resistance": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/resistance.png"), modifier: 1.7 },
+                "minecraft:strength": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/strength.png"), modifier: 1.6 },
+                "minecraft:health_boost": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/health_boost.png"), modifier: 1.2 },
+                "minecraft:invisibility": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/invisibility.png"), modifier: 1.3 },
+                "none": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_none.png"), modifier: 1 }
+            })
+
+            this.effectSelector.setCurrentlySelectedID("minecraft:speed")
+            this.effectSelector.setParentScreen(this)
+
+            //DIFFICULTY_SELECTOR
+            this.difficultySelector = this.addRenderableWidget(
+                createDifficultyReelWidget(
+                    ((this.width / 2) | 0) - ONE_REEL_WIDTH / 2 + ONE_REEL_WIDTH + 5,
+                    ((this.height / 2) | 0) - ONE_REEL_HEIGHT / 2 + Y_OFFSET_FROM_CENTER,
+                    ONE_REEL_WIDTH, ONE_REEL_HEIGHT,
+                    Component.literal("TEST")
+                )
+            )
+
+            this.difficultySelector.setItemsToRender({
+                "normal": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/normal.png"), modifier: 1, name: Component.translatable("milf.divine_mint.gui.difficulty.normal")},
+                "hard": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/hard.png"), modifier: 1.5, name: Component.translatable("milf.divine_mint.gui.difficulty.hard") },
+                //"coin": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_coin_gui.png"), modifier: 1.5, name: Component.translatable("milf.divine_mint.gui.difficulty.hard") },
+
+            })
+
+            this.difficultySelector.setCurrentlySelectedID("normal")
+            this.difficultySelector.setParentScreen(this)
+
+
+            //LEVER
             this.lever = this.addRenderableWidget(
                 createLeverWidget(
-                    ((this.width / 2) | 0) + REELS_WIDTH / 2 + 16 - (LEVER_TOP_SIZE - LEVER_BG_WIDTH) / 2, 
-                    ((this.height / 2) | 0) - REELS_HEIGHT / 2 + (REELS_HEIGHT / 2 - LEVER_BG_HEIGHT / 2) 
-                        - (LEVER_ROD_LENGTH + LEVER_TOP_SIZE + LEVER_OFFSET) , 
+                    ((this.width / 2) | 0) + REELS_WIDTH / 2 + 8 - (LEVER_TOP_SIZE - LEVER_BG_WIDTH) / 2, 
+                    ((this.height / 2) | 0) - REELS_HEIGHT / 2 + (REELS_HEIGHT - LEVER_BG_HEIGHT ) 
+                        - (LEVER_ROD_LENGTH + LEVER_TOP_SIZE + LEVER_OFFSET) + Y_OFFSET_FROM_CENTER, 
                     LEVER_TOP_SIZE, 
                     (LEVER_ROD_LENGTH + LEVER_TOP_SIZE + LEVER_BG_HEIGHT), 
                     Component.literal("TEST")
                 )
             )
 
-            this.bossSelector.setEntitiesToRender(entitiesToRender)
+            this.lever.setParentScreen(this)
+
+            //INFO_BOX
+            this.infoBoxWidget = this.addRenderableWidget(
+                createInfoBoxWidget(
+                    centerX - REELS_WIDTH / 2 + COIN_ACCEPTOR_WIDTH,
+                    centerY - REELS_HEIGHT / 2 + Y_OFFSET_FROM_CENTER + REELS_HEIGHT + 9,
+                    REELS_WIDTH - COIN_ACCEPTOR_WIDTH,
+                    COIN_ACCEPTOR_HEIGHT,
+                    Component.literal("TEST")
+                )
+            )
+
+            this.infoBoxWidget.updateBossTier(this.bossTier)
+            this.infoBoxWidget.updateBossNameAndID(entitiesToRender[this.bossSelector.getCurrentlySelectedID()].entity.getDisplayName(), this.bossSelector.getCurrentlySelectedID())
+            this.infoBoxWidget.updateBossEffect({ resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/speed.png"), modifier: 1.4, effectID: "minecraft:speed" })
+            this.infoBoxWidget.updateBossDifficulty({ resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/normal.png"), modifier: 1, name: Component.translatable("milf.divine_mint.gui.difficulty.normal") })
+
+            //TIER_SELECTOR
+            this.tierSelector = this.addRenderableWidget(
+                createTierSelectorWidget(
+                    centerX - REELS_WIDTH / 2,
+                    centerY - REELS_HEIGHT / 2 + Y_OFFSET_FROM_CENTER + REELS_HEIGHT - 1,
+                    REELS_WIDTH,
+                    11,
+                    Component.literal("TEST")
+                )
+            )
+
+            this.tierSelector.setParentScreen(this)
+
+            //COIN_ACCEPTOR
+            this.coinAcceptor = this.addRenderableWidget(
+                createCoinAcceptorWidget(
+                    centerX - REELS_WIDTH / 2,
+                    centerY - REELS_HEIGHT / 2 + Y_OFFSET_FROM_CENTER + REELS_HEIGHT + 9,
+                    COIN_ACCEPTOR_WIDTH,
+                    COIN_ACCEPTOR_HEIGHT,
+                    Component.literal("TEST")
+                )
+            )
+
+            this.coinAcceptor.setParentScreen(this)
 
         },
 
@@ -101,7 +224,17 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
 
         tick() {
             this.lever.tick()
+
             this.bossSelector.tick()
+            this.effectSelector.tick()
+            this.difficultySelector.tick()
+
+            this.tierSelector.tick()
+
+            this.infoBoxWidget.tick()
+
+            this.coinAcceptor.tick()
+
             this.super$tick()
             
         },
@@ -124,7 +257,7 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
         renderReels(guiGraphics, mouseX, mouseY, partialTick){
 
             let baseX = ((this.width / 2) | 0) - REELS_WIDTH / 2
-            let baseY = ((this.height / 2) | 0 ) - REELS_HEIGHT / 2
+            let baseY = ((this.height / 2) | 0) - REELS_HEIGHT / 2 + Y_OFFSET_FROM_CENTER
 
             try {
 
@@ -134,10 +267,14 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
 
                 pose.translate(baseX, baseY, 0)
                 //REELS
-                guiGraphics.blit(DIVINE_MINT_GUI, 0, 0, 0, 0, REELS_WIDTH, REELS_HEIGHT)
-
-                guiGraphics.blit(DIVINE_MINT_GUI, -COIN_ACCEPTOR_WIDTH - 16, (REELS_HEIGHT - COIN_ACCEPTOR_HEIGHT) / 2, LEVER_TOP_SIZE + LEVER_BG_WIDTH, REELS_HEIGHT, COIN_ACCEPTOR_WIDTH, COIN_ACCEPTOR_HEIGHT)
-
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 0, 0, REELS_WIDTH, REELS_HEIGHT)
+                //SPIN_TO_MINT
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, -34 - 4, 0, REELS_HEIGHT + COIN_ACCEPTOR_HEIGHT, REELS_WIDTH, 34)
+                //COIN_ACCEPTOR
+                //guiGraphics.blit(DIVINE_MINT_GUI_1, 0, REELS_HEIGHT + 9, 0, REELS_HEIGHT, COIN_ACCEPTOR_WIDTH, COIN_ACCEPTOR_HEIGHT)
+                //INFO_BOX
+                //guiGraphics.blit(DIVINE_MINT_GUI_1, COIN_ACCEPTOR_WIDTH, REELS_HEIGHT + 4, COIN_ACCEPTOR_WIDTH, REELS_HEIGHT, REELS_WIDTH - COIN_ACCEPTOR_WIDTH, COIN_ACCEPTOR_HEIGHT)
+                
                 pose.popPose()
 
                 
@@ -179,51 +316,402 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
 
         mouseReleased(mouseX, mouseY, button) {
             if (button == 0) {
-                //divineMintSelectorRot = currentlySelectedIndex * (Math.PI * 2) / MILF_BOSSES_SIZE
                 this.spawnButton.visible = true
             }
             return this.super$mouseReleased(mouseX, mouseY, button)
         },
 
+        onLeverPull(){
+            //console.log("WAHT");
+
+            this.bossSelector.initiateSpin(60, true)
+            this.effectSelector.initiateSpin(60, true)
+            this.difficultySelector.initiateSpin(60, true)
+
+            this.onReelsSpinStart()
+            this.isCoinSequence = true
+
+            milfPlayGUISound("milf:lever")
+        },
+
+        onReelsSpinStart(){
+            this.lever.onReelsSpinStart()
+            this.tierSelector.onReelsSpinStart()
+            this.coinAcceptor.onReelsSpinStart()
+            this.areReelsSpinning = true
+        },
+
+        onReelsSpinEnd(){
+            if(this.areReelsSpinning){
+                this.areReelsSpinning = false
+                this.lever.onReelsSpinEnd()
+                this.tierSelector.onReelsSpinEnd()
+                this.coinAcceptor.onReelsSpinEnd()
+                
+                if(this.isCoinSequence){
+                    this.isCoinSequence = false
+                    this.coinAcceptor.dropCoin()
+                }
+            }
+        },
+
+        onTierSelect(tier){
+            //console.log(tier);
+
+            this.bossTier = "tier" + tier
+
+            let entitiesToRender = {}
+
+            Object.entries(MILF_BOSSES[this.bossTier]).forEach(([bossId, bossData], index) => {
+
+                let entityType = $BuiltInRegistries.ENTITY_TYPE.get(new $ResourceLocation.parse(bossId))
+                let entity = entityType.create(Client.level)
+                entitiesToRender[bossId] = Object.assign({}, bossData, { entity: entity }) 
+
+            })
+
+            this.bossSelector.setItemsToRender(entitiesToRender)
+            this.bossSelector.setCurrentlySelectedID(Object.keys(entitiesToRender)[0])
+
+            this.bossSelector.mouseReleased(0, 0, 0)
+            this.bossSelector.initiateSpin(5, false)
+            this.onReelsSpinStart()
+
+            this.infoBoxWidget.updateBossTier(this.bossTier)
+            this.infoBoxWidget.updateBossNameAndID(entitiesToRender[this.bossSelector.getCurrentlySelectedID()].entity.getDisplayName(), this.bossSelector.getCurrentlySelectedID())
+        }
+
     }, DIVINE_MINT_SCREEN_TITLE))
 })
 
-function createReelWidget(x, y, width, height, component){
-    return new JavaAdapter($AbstractWidget, {
+NetworkEvents.dataReceived('milf_divine_mint_server_loot_data', (event) => {
 
-        toRender: {},
+    let player = event.getPlayer()
+
+    let data = event.data
+
+    for (let tierID of data.getAllKeys()) {
+
+        let tierBosses = data.get(tierID)
+
+        //console.log(tierBosses);
+        
+
+        for (let bossID of tierBosses.getAllKeys()) {
+
+            let itemArray = tierBosses.get(bossID)
+            let jsItemArray = []
+
+            itemArray.forEach(compoundTag => {
+
+                for (let itemID of compoundTag.getAllKeys()) {
+                    let itemDataTag = compoundTag.get(itemID)
+
+                    let chance = itemDataTag.getFloat("chance")
+                    let count = itemDataTag.getString("count")
+
+                    //console.log(bossID + " " + itemID + " " + chance + " " + count);
+
+                    let jsObject = {}
+
+                    jsObject[itemID] = { chance: chance, count: count }
+
+                    jsItemArray.push(jsObject)
+
+                }
+
+            })
+
+            MILF_BOSSES[tierID][bossID] = Object.assign({}, MILF_BOSSES[tierID][bossID], { loot: jsItemArray })
+
+        }
+
+    }
+
+
+
+    //console.log(MILF_BOSSES);
+    
+
+    //console.log(data)
+
+})
+
+function createBossReelWidget(x, y, width, height, component){
+    
+    let overrides = {
+        ENTITY_SCALE: 7,
+
+        getRenderContext(guiGraphics) {
+            return {
+                clientDispatcher: Client.getEntityRenderDispatcher(),
+                clientBuffer: guiGraphics.bufferSource(),
+                guiGraphics: guiGraphics
+            }
+        },
+
+        poseIndexTransformations(pose, index, selectorRot) {
+            pose.mulPose($Axis.XN.rotation(selectorRot))
+            pose.mulPose($Axis.XP.rotation(TWO_PI / this.TO_RENDER_SIZE * index))
+            pose.translate(0, 0, this.SELECTOR_RADIUS)
+
+            pose.mulPose($Axis.XP.rotation(Math.PI))
+            pose.mulPose($Axis.YP.rotation(Math.PI))
+        },
+
+        renderSelected(pose, renderContext, entityData, bossId) {
+
+            //console.log(entityData);
+            
+            let angle = Math.sin(this.guiTicks)
+
+            if (entityData.fakeItemToRender){
+                let { guiGraphics } = renderContext
+
+                let item = Item.of(entityData.fakeItemToRender)
+
+                pose.mulPose($Axis.XP.rotation(Math.PI))
+                pose.mulPose($Axis.YP.rotation(Math.PI))
+
+                pose.translate(0,0,-40)
+
+                pose.scale(2, 2, 1)
+
+                //pose.translate(-8, -8, 0)
+
+                //pose.mulPose($Axis.YP.rotation(angle / (2 * 1.5)))
+                pose.mulPose($Axis.ZN.rotation(angle / (5 * 1.5)))
+
+
+
+                guiGraphics.renderFakeItem(item, -8, -8)
+
+                return
+                
+            }
+
+            let { clientDispatcher, clientBuffer } = renderContext
+
+            let entity = entityData.entity
+
+            pose.translate(0, -8, 0)
+
+            pose.scale(this.ENTITY_SCALE, this.ENTITY_SCALE, 1)
+
+            pose.mulPose($Axis.YP.rotation(angle / (2 * 1.5)))
+            pose.mulPose($Axis.ZN.rotation(angle / (7 * 1.5)))
+
+            let brightness = 0xF000F0
+
+            clientDispatcher.render(entity, 0, 0, 0, 0, 0,
+                pose, clientBuffer, brightness)
+
+            clientBuffer.endBatch()
+        },
+
+        renderOther(pose, renderContext, entityData, index) {
+            let difference = index - (this.currentlySelectedDec)
+            const TO_RENDER_SIZE = this.TO_RENDER_SIZE
+            difference = ((difference + TO_RENDER_SIZE / 2) % TO_RENDER_SIZE + TO_RENDER_SIZE) % TO_RENDER_SIZE - TO_RENDER_SIZE / 2
+            let distanceToSelected = Math.abs(difference)
+
+            let scaleFactor = easeInOutCubic(0.8 / Math.pow(Math.max(distanceToSelected * 1.3, 0.9), 1.5))
+
+            if (scaleFactor > 0.1) {
+
+                if (entityData.fakeItemToRender) {
+                    let { guiGraphics } = renderContext
+
+                    let item = Item.of(entityData.fakeItemToRender)
+
+                    pose.mulPose($Axis.XP.rotation(Math.PI))
+                    pose.mulPose($Axis.YP.rotation(Math.PI))
+
+                    pose.translate(0, 0, -40)
+
+                    pose.scale(2, 2, 1)
+                    pose.scale(scaleFactor, scaleFactor, scaleFactor)
+
+                    guiGraphics.renderFakeItem(item, -8, -8)
+
+                    return
+
+                }
+
+                let entity = entityData.entity
+                let { clientDispatcher, clientBuffer } = renderContext
+                pose.translate(0, -8, 0)
+
+                pose.scale(this.ENTITY_SCALE, this.ENTITY_SCALE, 1)
+                pose.scale(scaleFactor, scaleFactor, scaleFactor)
+
+                let brightness = 0x300030
+
+                clientDispatcher.render(entity, 0, 0, 0, 0, 0,
+                    pose, clientBuffer, brightness)
+
+
+                clientBuffer.endBatch()
+            }
+        },
+
+        onNewItemSelected(bossID) {
+            this.reelParentScreen.getInfoBox().updateBossNameAndID(this.itemsToRenderEntries[bossID].entity.getDisplayName(), bossID)
+        },
+
+        onMouseReleaseAdditional() {
+            //this.reelParentScreen.getInfoBox().updateBossName(this.itemsToRenderEntries[this.currentlySelectedId].entity.getDisplayName())
+        },
+
+    }
+
+    return createReelWidget(x, y, width, height, component, overrides)
+
+}
+
+function createEffectReelWidget(x, y, width, height, component) {
+
+    let overrides = {
+        onNewItemSelected(effectID) {
+            let effectData = this.itemsToRenderEntries[effectID]
+            this.reelParentScreen.getInfoBox().updateBossEffect(Object.assign({}, effectData, { effectID: effectID }) )
+        }
+    }
+
+    return createBasicRLReelWidget(x, y, width, height, component, overrides)
+
+}
+
+function createDifficultyReelWidget(x, y, width, height, component) {
+
+    let overrides = {
+        onNewItemSelected(difficulty) {
+            let difficultyData = this.itemsToRenderEntries[difficulty]
+            this.reelParentScreen.getInfoBox().updateBossDifficulty(difficultyData)
+        }
+    }
+
+    return createBasicRLReelWidget(x, y, width, height, component, overrides)
+
+}
+
+function createBasicRLReelWidget(x, y, width, height, component, overrides) {
+
+    const BasicRLReelWidget = {
+        ICON_SCALE: 2,
+
+        getRenderContext(guiGraphics) {
+            return {
+                guiGraphics: guiGraphics
+            }
+        },
+
+        poseIndexTransformations(pose, index, selectorRot) {
+            pose.mulPose($Axis.XN.rotation(selectorRot))
+            pose.mulPose($Axis.XP.rotation(TWO_PI / this.TO_RENDER_SIZE * index))
+            pose.translate(0, 0, this.SELECTOR_RADIUS)
+
+            // pose.mulPose($Axis.XP.rotation(Math.PI))
+            // pose.mulPose($Axis.YP.rotation(Math.PI))
+        },
+
+        renderSelected(pose, renderContext, effectData, effectID) {
+
+            let { guiGraphics } = renderContext
+
+            let resourceLocation = effectData.resourceLocation
+
+            pose.scale(this.ICON_SCALE, this.ICON_SCALE, 1)
+
+            //pose.translate(-8, -8, 0)
+
+            let angle = Math.sin(this.guiTicks)
+            pose.mulPose($Axis.YP.rotation(angle / (2 * 1.5)))
+            pose.mulPose($Axis.ZN.rotation(angle / (7 * 1.5)))
+
+            guiGraphics.blit(resourceLocation, -9, -9, 0, 0, 18, 18, 18, 18)
+        },
+
+        renderOther(pose, renderContext, effectData, index) {
+            let difference = index - (this.currentlySelectedDec)
+            const TO_RENDER_SIZE = this.TO_RENDER_SIZE
+            difference = ((difference + TO_RENDER_SIZE / 2) % TO_RENDER_SIZE + TO_RENDER_SIZE) % TO_RENDER_SIZE - TO_RENDER_SIZE / 2
+            let distanceToSelected = Math.abs(difference)
+
+            let scaleFactor = easeInOutCubic(0.8 / Math.pow(Math.max(distanceToSelected * 1.3, 0.9), 1.5))
+
+            if (scaleFactor > 0.01) {
+                let resourceLocation = effectData.resourceLocation
+                let { guiGraphics } = renderContext
+
+                pose.scale(this.ICON_SCALE, this.ICON_SCALE, 1)
+                pose.scale(scaleFactor, scaleFactor, scaleFactor)
+
+                //pose.translate(-8, -8, 0)
+
+
+                guiGraphics.blit(resourceLocation, -9, -9, 0, 0, 18, 18, 18, 18)
+            }
+        }
+    }
+
+    overrides = Object.assign({}, BasicRLReelWidget, overrides)
+
+    return createReelWidget(x, y, width, height, component, overrides)
+
+}
+
+function createReelWidget(x, y, width, height, component, overrides) {
+
+    const AbstractReelWidget = {
+
+        itemsToRenderEntries: {},
 
         selectorRot: 0,
         guiTicks: 0,
+        reelParentScreen:null,
 
         currentlySelectedId: null,
         currentlySelectedDec: 0,
         currentlySelectedIndex: 0,
-        lastSelectedIndex:0,
-        targetRotation:0,
-        prevSelectorRot:0,
-        isDragging:false,
+        lastSelectedIndex: 0,
+        targetRotation: 0,
+        prevSelectorRot: 0,
 
+        isDragging: false,
 
-        setEntitiesToRender(entities) {
-            this.toRender = entities
+        TO_RENDER_SIZE: 0,
+        SELECTOR_RADIUS: 60,
+
+        isSpinningWithEasing: false,
+        isSpinning: false,
+        spinTicks:0,
+
+        setItemsToRender(items) {
+            this.itemsToRenderEntries = items
+            this.TO_RENDER_SIZE = Object.keys(items).length
+        },
+
+        setParentScreen(screen) {
+            this.reelParentScreen = screen
+        },
+
+        setCurrentlySelectedID(ID) {
+            this.currentlySelectedId = ID
+        },
+
+        getCurrentlySelectedID(){
+            return this.currentlySelectedId
         },
 
         renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
 
-            let level = Client.level
-            let gameRenderer = Client.gameRenderer
-            const clientBuffer = Client.renderBuffers().bufferSource()
-            const clientDispatcher = Client.getEntityRenderDispatcher()
-            const guiScale = Client.window.guiScale
-            const ENTITY_SCALE = 7
+            const ENTITY_SCALE = this.ENTITY_SCALE
+            const TO_RENDER_SIZE = this.TO_RENDER_SIZE
 
-            let font = Client.font
-
-            const BOSS_BAIT_SELECTOR_OFFSET = Math.PI / MILF_BOSSES_SIZE
-            const SELECTOR_RADIUS = 60
-
-            let [baseX, baseY] = [this.getX(), this.getY()]
+            const BOSS_BAIT_SELECTOR_OFFSET = Math.PI / TO_RENDER_SIZE
+            const SELECTOR_RADIUS = this.SELECTOR_RADIUS
+            const [baseX, baseY] = [this.getX(), this.getY()]
 
             const pose = guiGraphics.pose()
 
@@ -231,24 +719,18 @@ function createReelWidget(x, y, width, height, component){
             diff = ((diff % TWO_PI) + TWO_PI) % TWO_PI
             if (diff > Math.PI) diff -= TWO_PI
 
-            let selectorRot = this.prevSelectorRot + diff * Client.getTimer().getGameTimeDeltaPartialTick(false)
-
+            let selectorRot = this.isDragging ? this.selectorRot : this.prevSelectorRot + diff * Client.getTimer().getGameTimeDeltaPartialTick(false)
             let rotAngle = selectorRot + BOSS_BAIT_SELECTOR_OFFSET
-
-            rotAngle = ((rotAngle % (2 * Math.PI)) + (2 * Math.PI)) % (2 * Math.PI)
-
-            //console.log(rotAngle / Math.PI * 180);
+            rotAngle = ((rotAngle % TWO_PI) + TWO_PI) % TWO_PI
 
 
-            this.currentlySelectedDec = ((rotAngle - BOSS_BAIT_SELECTOR_OFFSET) / (2 * Math.PI)) * MILF_BOSSES_SIZE
-
-            //console.log(this.currentlySelectedDec);
-
-            this.currentlySelectedIndex = Math.round(this.currentlySelectedDec) % MILF_BOSSES_SIZE
+            this.currentlySelectedDec = ((rotAngle - BOSS_BAIT_SELECTOR_OFFSET) / TWO_PI) * TO_RENDER_SIZE
+            this.currentlySelectedIndex = Math.round(this.currentlySelectedDec) % TO_RENDER_SIZE
 
             if (this.lastSelectedIndex != this.currentlySelectedIndex) {
                 this.guiTicks = 0
                 this.lastSelectedIndex = this.currentlySelectedIndex
+                milfPlayGUISound("milf:reels_tick", { pitch: Math.random() * (1.3 - 0.9) + 0.9 })
             }
 
             try {
@@ -268,73 +750,23 @@ function createReelWidget(x, y, width, height, component){
 
                 pose.translate(ONE_REEL_WIDTH / 2, ONE_REEL_HEIGHT / 2, 100)
 
-
                 this.guiTicks += partialTick * 0.03
-                let angle = Math.sin(this.guiTicks)
 
-                Object.entries(this.toRender).forEach(([bossId, entity], index) => {                                  
+                let renderContext = this.getRenderContext(guiGraphics)
+
+                Object.entries(this.itemsToRenderEntries).forEach(([itemID, itemData], index) => {
 
                     pose.pushPose()
-
-
-
-                    if (this.currentlySelectedIndex != index) pose.translate(0, 0, -0)
-
-                    pose.mulPose($Axis.XN.rotation(selectorRot))
-
-                    pose.mulPose($Axis.XP.rotation(2 * Math.PI / MILF_BOSSES_SIZE * index))
-
-                    pose.translate(0, 0, SELECTOR_RADIUS)
-
-                    pose.mulPose($Axis.XP.rotation(Math.PI))
-                    pose.mulPose($Axis.YP.rotation(Math.PI))
-
-
-                    let brightness = 0xF000F0
+                    this.poseIndexTransformations(pose, index, selectorRot)
 
                     if (this.currentlySelectedIndex == index) {
-
-                        if (this.currentlySelectedId != bossId) this.currentlySelectedId = bossId
-
-                        pose.translate(0, -8, 0)
-
-                        pose.scale(ENTITY_SCALE, ENTITY_SCALE, 1)
-
-
-                        pose.mulPose($Axis.YP.rotation(angle / (2 * 1.5)))
-                        pose.mulPose($Axis.ZN.rotation(angle / (7 * 1.5)))
-
-                        brightness = 0xF000F0
-
-                        clientDispatcher.render(entity, 0, 0, 0, 0, 0,
-                            pose, clientBuffer, brightness)
-
-                        clientBuffer.endBatch()
-                    } else {
-
-                        let difference = index - (this.currentlySelectedDec)
-                        difference = ((difference + MILF_BOSSES_SIZE / 2) % MILF_BOSSES_SIZE + MILF_BOSSES_SIZE) % MILF_BOSSES_SIZE - MILF_BOSSES_SIZE / 2
-                        let distanceToSelected = Math.abs(difference)
-
-                        let scaleFactor = easeInOutCubic(0.8 / Math.pow(Math.max(distanceToSelected * 1.3, 0.9), 1.5))                        
-
-                        if (scaleFactor > 0.01){
-                            pose.translate(0, -8, 0)
-
-                            pose.scale(ENTITY_SCALE, ENTITY_SCALE, 1)
-                            pose.scale(scaleFactor, scaleFactor, scaleFactor)
-
-                            brightness = 0x300030
-
-                            clientDispatcher.render(entity, 0, 0, 0, 0, 0,
-                                pose, clientBuffer, brightness)
-
-
-                            clientBuffer.endBatch()
+                        if (this.currentlySelectedId != itemID) {
+                            this.currentlySelectedId = itemID
+                            this.onNewItemSelected(itemID)
                         }
-
-
-
+                        this.renderSelected(pose, renderContext, itemData, itemID)
+                    } else {
+                        this.renderOther(pose, renderContext, itemData, index)
                     }
 
                     pose.popPose()
@@ -343,13 +775,13 @@ function createReelWidget(x, y, width, height, component){
 
 
                 pose.popPose()
-                
+
                 pose.pushPose()
 
-                pose.translate(0, ONE_REEL_HEIGHT * this.currentlySelectedDec / MILF_BOSSES_SIZE * 2, 0)
-                guiGraphics.blit(DIVINE_MINT_GUI, 0, 0, REELS_WIDTH, 0, ONE_REEL_WIDTH, 2 * ONE_REEL_HEIGHT)
-                pose.translate(0, -ONE_REEL_HEIGHT *2, 0)
-                guiGraphics.blit(DIVINE_MINT_GUI, 0, 0, REELS_WIDTH, 0, ONE_REEL_WIDTH, 2 * ONE_REEL_HEIGHT)
+                pose.translate(0, ONE_REEL_HEIGHT * this.currentlySelectedDec / TO_RENDER_SIZE * 2, 0)
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, REELS_WIDTH, 0, ONE_REEL_WIDTH, 2 * ONE_REEL_HEIGHT)
+                pose.translate(0, -ONE_REEL_HEIGHT * 2, 0)
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, REELS_WIDTH, 0, ONE_REEL_WIDTH, 2 * ONE_REEL_HEIGHT)
 
                 pose.popPose()
 
@@ -363,6 +795,31 @@ function createReelWidget(x, y, width, height, component){
             }
         },
 
+        getRenderContext(guiGraphics) {
+            //all the additional stuff that is required to render stuff
+            return { }
+        },
+
+        onNewItemSelected(itemID){
+            //runs whenever a new item is selected
+        },
+
+        poseIndexTransformations(pose, index, selectorRot) {
+            //how to apply current selector rotation to pose
+        },
+
+        renderSelected(pose, renderContext, itemData, itemId) {
+            //how to render the currently selected item
+        },
+
+        renderOther(pose, renderContext, itemData, index) {
+            //how to render the other items
+        },
+
+        onMouseReleaseAdditional() {
+            //to pass data or smt
+        },
+
         mouseClicked(mouseX, mouseY, button) {
             if (button == 0 && this.isMouseOver(mouseX, mouseY)) {
                 this.isDragging = true
@@ -374,16 +831,12 @@ function createReelWidget(x, y, width, height, component){
         mouseDragged(mouseX, mouseY, button, deltaX, deltaY) {
             if (button == 0) {
                 this.prevSelectorRot = this.selectorRot
-                //this.selectorRot += deltaY * 0.03
 
-                //const sensitivity = 0.055
-                const sensitivity = 0.085
+                const sensitivity = 0.11
                 let rawDelta = deltaY * sensitivity
-                let nextSelectionDelta = Math.min(Math.max(Math.abs(this.currentlySelectedIndex - this.currentlySelectedDec), 0.15), 1)                 
-                //console.log(nextSelectionDelta);
-                
-                const easePower = 1.5
+                let nextSelectionDelta = Math.min(Math.max(Math.abs(this.currentlySelectedIndex - this.currentlySelectedDec), 0.15), 1)
 
+                const easePower = 1.5
                 let adjustedDelta = rawDelta * Math.pow(nextSelectionDelta, easePower)
                 this.selectorRot += adjustedDelta
                 return true
@@ -392,11 +845,11 @@ function createReelWidget(x, y, width, height, component){
         },
 
         tick() {
-            if (!this.isDragging) {
+            if (!this.isDragging && this.spinTicks == 0) {
                 this.prevSelectorRot = this.selectorRot
 
                 let delta = this.targetRotation - this.selectorRot
-                
+
                 delta = ((delta % TWO_PI) + TWO_PI) % TWO_PI
                 if (delta > Math.PI) {
                     delta -= TWO_PI
@@ -404,28 +857,248 @@ function createReelWidget(x, y, width, height, component){
 
                 const snapThreshold = 0.04
                 if (Math.abs(delta) < snapThreshold) {
-                    console.log(this.selectorRot);
-                    //this.prevSelectorRot = this.targetRotation
                     this.selectorRot = this.targetRotation
                 } else {
                     this.selectorRot += Math.sign(delta) * Math.min(Math.pow(Math.abs(delta), 2), 0.35)
                 }
             }
+            if(this.spinTicks > 0){
+
+                this.prevSelectorRot = this.selectorRot
+
+                this.spinTicks--
+
+                let CEILING_TICKS = 30
+
+                let increment = Math.PI / 5
+
+                if (this.isSpinningWithEasing && this.spinTicks <= CEILING_TICKS){
+                    let t = this.spinTicks / CEILING_TICKS
+                    increment = increment * (1 - Math.pow(1 - t, 2))
+                }
+
+
+                this.selectorRot += increment
+                if (this.spinTicks == 0) {
+                    this.isSpinning = false
+                    this.isSpinningWithEasing = false
+                    this.reelParentScreen.onReelsSpinEnd()
+                }
+            }
         },
 
-
-
         mouseReleased(mouseX, mouseY, button) {
-            //console.log(mouseX);
             this.isDragging = false
             if (button == 0) {
-                //this.selectorRot = this.currentlySelectedIndex * (Math.PI * 2) / MILF_BOSSES_SIZE
-                this.targetRotation = this.currentlySelectedIndex * (Math.PI * 2) / MILF_BOSSES_SIZE
-                console.log(this.selectorRot);
-                
-                //this.spawnButton.visible = true
+                this.targetRotation = this.currentlySelectedIndex * (TWO_PI) / this.TO_RENDER_SIZE
+                this.onMouseReleaseAdditional()
             }
             return this.super$mouseReleased(mouseX, mouseY, button)
+        },
+
+        initiateSpin(ticks, withEasing){
+            if (withEasing) this.isSpinningWithEasing = true
+            this.isSpinning = true
+            this.spinTicks = ticks
+        },
+
+        updateWidgetNarration(narrationElementOutput) { }
+
+    }
+
+    let ReelWidgetImpl = Object.assign({}, AbstractReelWidget, overrides)
+
+    return new JavaAdapter($AbstractWidget, ReelWidgetImpl, x, y, width, height, component)
+    
+}
+
+function createInfoBoxWidget(x, y, width, height, component) {
+    return new JavaAdapter($AbstractWidget, {
+
+        bossName: null,
+        bossNameWrapped: [],
+        bossID:null,
+        bossData: {},
+        bossTier: "tier1",
+
+        lootRowToDisplay:1,
+        totalLootRows:1,
+        guiTicks:1,
+
+        effectRL: null,
+        effectModifier: 1,
+        effectName:null,
+
+        bossDifficultyRL: null,
+        bossDifficultyModifier: 1,
+        difficultyName:null,
+
+        lootModifier: 1,
+
+        infoBoxParentScreen: null,
+        textScale: 1,
+
+        setParentScreen(screen) {
+            this.infoBoxParentScreen = screen
+        },
+
+        getDataForCoin(){
+            return {
+                bossName: this.bossName,
+                effectName: this.effectName,
+                difficultyName: this.difficultyName
+            }
+        },
+
+        renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
+
+            try {
+
+                let pose = guiGraphics.pose()
+                pose.pushPose()
+                pose.translate(x, y, 0)
+
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, COIN_ACCEPTOR_WIDTH, REELS_HEIGHT, REELS_WIDTH - COIN_ACCEPTOR_WIDTH, COIN_ACCEPTOR_HEIGHT)
+
+                pose.pushPose()
+                pose.translate(6, 7, 0)
+                pose.pushPose()
+                pose.scale(this.textScale, this.textScale, 1)
+
+                let tempIndex = 0
+                this.bossNameWrapped.forEach(line => {
+                    guiGraphics["drawString(net.minecraft.client.gui.Font,net.minecraft.util.FormattedCharSequence,int,int,int,boolean)"](
+                        Client.font, line, 0, tempIndex * (Client.font.lineHeight + 2), 0xfffef7, true
+                    )
+                    tempIndex++
+                })
+
+                pose.translate(0, tempIndex * (Client.font.lineHeight + 2), 0)
+                pose.scale(0.8, 0.8, 1)
+
+                guiGraphics["drawString(net.minecraft.client.gui.Font,net.minecraft.network.chat.Component,int,int,int,boolean)"](
+                    Client.font, this.effectName, 0, 0, 0xfffef7, true
+                )
+
+                guiGraphics["drawString(net.minecraft.client.gui.Font,net.minecraft.network.chat.Component,int,int,int,boolean)"](
+                    Client.font, this.difficultyName, 0, (Client.font.lineHeight + 2), 0xfffef7, true
+                )
+
+                pose.popPose()
+
+                pose.translate(0, 56, 0)
+
+                guiGraphics["drawString(net.minecraft.client.gui.Font,net.minecraft.network.chat.Component,int,int,int,boolean)"](
+                    Client.font, Component.translatable("milf.divine_mint.gui.possible_loot"), -3, -(Client.font.lineHeight + 3), 0x6f2d1c, false
+                )
+
+                tempIndex = 0
+
+                if(this.bossData?.loot){
+                    //let lootSize = this.bossData.loot.length
+
+                    //console.log(lootSize);
+                    
+                    this.bossData.loot.forEach((itemData, index) =>{
+
+                        let right = (this.lootRowToDisplay) * 4 - 1
+                        let left = right - 3
+
+                        if(left <= index && index <= right){
+                            let itemID = Object.keys(itemData)[0]
+                            let item = Item.of(itemID)
+
+                            let { count, chance } = itemData[itemID]
+
+                            guiGraphics.renderFakeItem(item, 23 * tempIndex, 0)
+                            guiGraphics.renderItemDecorations(Client.font, item, 23 * tempIndex, 0, count)
+                            tempIndex++
+                            
+                        }
+
+                    })
+
+                    //if (this.totalLootRows > 1) guiGraphics.renderItemDecorations(Client.font, Item.of("minecraft:dirt"), 23 * tempIndex - 10, 0, "...")
+                }
+
+                
+
+                pose.popPose()
+
+                let modifiersOffsetX = REELS_WIDTH - COIN_ACCEPTOR_WIDTH - 24
+
+                guiGraphics.blit(this.effectRL, modifiersOffsetX, 6, 0, 0, 18, 18, 18, 18)
+
+                guiGraphics.blit(this.bossDifficultyRL, modifiersOffsetX, 6 + 20 + 3, 0, 0, 18, 18, 18, 18)
+
+                guiGraphics.drawCenteredString(Client.font, this.lootModifier.toFixed(1), modifiersOffsetX + 9, 6 + 20 + 3 + 38, 0xfffef7)
+
+                pose.popPose()
+
+            } catch (error) {
+                console.log(error);
+
+            }
+
+
+        },
+
+        tick() {
+            if(this.totalLootRows > 1){
+                this.guiTicks++
+
+                if (this.guiTicks >= 38){
+                    this.guiTicks = 0
+
+                    this.lootRowToDisplay = this.lootRowToDisplay == this.totalLootRows ? 1 : this.lootRowToDisplay + 1
+
+                }
+            }
+        },
+
+        updateBossNameAndID(name, id){
+            this.bossName = name
+            this.bossNameWrapped = Client.font.split(name, (REELS_WIDTH - COIN_ACCEPTOR_WIDTH - 36) / this.textScale)
+            this.bossID = id
+            this.bossData = MILF_BOSSES[this.bossTier][id]
+
+            let lootSize = this.bossData.loot?.length || 0
+            this.totalLootRows = Math.ceil(lootSize / 4)
+            this.lootRowToDisplay = 1
+
+            //console.log(this.totalLootRows);
+            
+            //console.log(this.bossData);
+            
+        },
+
+        updateBossTier(tier){
+            this.bossTier = tier
+        },
+
+        updateBossEffect(effectData) {
+            this.effectRL = effectData.resourceLocation
+            this.effectModifier = effectData.modifier
+            this.lootModifier = this.effectModifier * this.bossDifficultyModifier
+
+            let effect = $BuiltInRegistries.MOB_EFFECT.get($ResourceLocation.parse(effectData.effectID))
+            this.effectName = effect ? effect.getDisplayName() : Component.translatable("milf.divine_mint.gui.no_effect")
+            this.effectName = Component.of("◆ ").append(this.effectName)
+            //console.log(this.effectName);
+            
+        },
+
+        updateBossDifficulty(difficultyData) {
+            this.bossDifficultyRL = difficultyData.resourceLocation
+            this.bossDifficultyModifier = difficultyData.modifier
+            this.lootModifier = this.effectModifier * this.bossDifficultyModifier
+
+            this.difficultyName = difficultyData.name
+            this.difficultyName = Component.of("◆ ").append(this.difficultyName)
+        },
+
+        mouseClicked(mouseX, mouseY, button) {
+            return false
         },
 
         updateWidgetNarration(narrationElementOutput) { }
@@ -441,6 +1114,13 @@ function createLeverWidget(x, y, width, height, component) {
         pullingProgress: 0,
         prevPullingProgress: 0,
         isDragging:false,
+        leverParentScreen: null,
+
+        areReelsSpinning: false,
+
+        setParentScreen(screen){            
+            this.leverParentScreen = screen
+        },
 
         renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
 
@@ -455,7 +1135,7 @@ function createLeverWidget(x, y, width, height, component) {
                 pose.translate((LEVER_TOP_SIZE - LEVER_BG_WIDTH) / 2, 0, 0)
 
                 //LEVER_BG
-                guiGraphics.blit(DIVINE_MINT_GUI, 0, 0, LEVER_TOP_SIZE, REELS_HEIGHT, LEVER_BG_WIDTH, LEVER_BG_HEIGHT)
+                guiGraphics.blit(DIVINE_MINT_GUI_2, 0, 0, LEVER_TOP_SIZE, 0, LEVER_BG_WIDTH, LEVER_BG_HEIGHT)
                 pose.popPose()
                 let Y_OFFSET_FOR_LEVER = -(LEVER_ROD_LENGTH + LEVER_TOP_SIZE + LEVER_OFFSET)
                 let Y_OFFSET_FROM_PROGRESS = pullingProgress * LEVER_ROD_LENGTH * 2.5
@@ -466,7 +1146,7 @@ function createLeverWidget(x, y, width, height, component) {
 
                 //LEVER_ROD
                 pose.pushPose()
-                let leverRodAtlasY = REELS_HEIGHT + LEVER_TOP_SIZE
+                let leverRodAtlasY = LEVER_TOP_SIZE
                 pose.translate(0, Y_OFFSET_FOR_ROD, 0)
 
                 let scissorsY = y
@@ -489,7 +1169,7 @@ function createLeverWidget(x, y, width, height, component) {
                         x + LEVER_TOP_SIZE,
                         scissorsY + LEVER_ROD_LENGTH * (pullingProgress - 0.5) * 2
                     )
-                    guiGraphics.blit(DIVINE_MINT_GUI, 0, LEVER_TOP_SIZE - 2, 0, leverRodAtlasY, LEVER_TOP_SIZE, LEVER_ROD_LENGTH)
+                    guiGraphics.blit(DIVINE_MINT_GUI_2, 0, LEVER_TOP_SIZE - 2, 0, leverRodAtlasY, LEVER_TOP_SIZE, LEVER_ROD_LENGTH)
                 } else {
                     scissorsY = scissorsY + (pullingProgress) * LEVER_ROD_LENGTH * 2
 
@@ -499,14 +1179,14 @@ function createLeverWidget(x, y, width, height, component) {
                         x + LEVER_TOP_SIZE,
                         scissorsY + LEVER_ROD_LENGTH
                     )
-                    guiGraphics.blit(DIVINE_MINT_GUI, 0, LEVER_TOP_SIZE - 2, 0, leverRodAtlasY, LEVER_TOP_SIZE, LEVER_ROD_LENGTH)
+                    guiGraphics.blit(DIVINE_MINT_GUI_2, 0, LEVER_TOP_SIZE - 2, 0, leverRodAtlasY, LEVER_TOP_SIZE, LEVER_ROD_LENGTH)
                 }
 
                 guiGraphics.disableScissor()
 
                 pose.popPose()
                 //LEVER_TOP
-                guiGraphics.blit(DIVINE_MINT_GUI, 0, 0, 0, REELS_HEIGHT, LEVER_TOP_SIZE, LEVER_TOP_SIZE)
+                guiGraphics.blit(DIVINE_MINT_GUI_2, 0, 0, 0, 0, LEVER_TOP_SIZE, LEVER_TOP_SIZE)
 
 
                 pose.popPose()
@@ -519,8 +1199,8 @@ function createLeverWidget(x, y, width, height, component) {
         },
 
         tick() {
-            if (!this.isDragging) {
-                this.prevPullingProgress = this.pullingProgress
+            this.prevPullingProgress = this.pullingProgress
+            if (!this.isDragging && this.pullingProgress != 0) {
                 const baseSpeed = 0.05
                 const easePower = 6
 
@@ -528,11 +1208,13 @@ function createLeverWidget(x, y, width, height, component) {
                 let delta = baseSpeed * decayFactor
 
                 this.pullingProgress = Math.max(this.pullingProgress - delta, 0)
+                //milfPlayGUISound("milf:reels_tick", { pitch: Math.random() * (1.3 - 0.9) + 0.9 })
+
             }
         },
 
         mouseClicked(mouseX, mouseY, button) {
-            if (button == 0 && this.isMouseOver(mouseX, mouseY)) {
+            if (button == 0 && this.isMouseOver(mouseX, mouseY) && !this.areReelsSpinning) {
                 this.isDragging = true
                 return true
             }
@@ -540,8 +1222,8 @@ function createLeverWidget(x, y, width, height, component) {
         },
 
         mouseDragged(mouseX, mouseY, button, deltaX, deltaY) {
-            if (button == 0) {
-                const sensitivity = 0.045
+            if (button == 0 && !this.areReelsSpinning) {
+                const sensitivity = 0.065
                 let rawDelta = deltaY * sensitivity
                 let progress = this.pullingProgress
 
@@ -563,7 +1245,315 @@ function createLeverWidget(x, y, width, height, component) {
 
         mouseReleased(mouseX, mouseY, button) {
             this.isDragging = false
+            if (this.pullingProgress >= 0.96){
+                this.leverParentScreen.onLeverPull()
+            }
             return this.super$mouseReleased(mouseX, mouseY, button)
+        },
+
+        onReelsSpinStart(){
+            this.areReelsSpinning = true
+        },
+
+        onReelsSpinEnd() {
+            this.areReelsSpinning = false
+        },
+
+        updateWidgetNarration(narrationElementOutput) { }
+
+    },
+        x, y, width, height, component
+    )
+}
+
+function createTierSelectorWidget(x, y, width, height, component) {
+    return new JavaAdapter($AbstractWidget, {
+
+        distanceProgress: (6 - 4) * (1 / (REELS_WIDTH - 7)),
+        prevDistanceProgress: (6 - 4) * (1 / (REELS_WIDTH - 7)),
+        targetProgress: (6 - 4) * (1 / (REELS_WIDTH - 7)),
+
+        firstPointProgress: 6 * (1 / (REELS_WIDTH - 7)),
+        pointsOffsetProgress: 55 * (1 / (REELS_WIDTH - 7)),
+
+        isDragging: false,
+        tierSelectorParentScreen: null,
+        currentlySelectedTier: 1,
+
+        areReelsSpinning: false,
+        
+
+        setParentScreen(screen) {
+            this.tierSelectorParentScreen = screen
+        },
+
+        renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
+
+            let distanceProgress = this.isDragging ? this.distanceProgress : this.prevDistanceProgress + (this.distanceProgress - this.prevDistanceProgress) * Client.getTimer().getGameTimeDeltaPartialTick(false)
+            try {                
+
+                let pose = guiGraphics.pose()
+                pose.pushPose()
+                pose.translate(x, y, 0)
+                pose.pushPose()
+                pose.translate(0, 0, 0)
+
+                //BG
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 0, REELS_HEIGHT + COIN_ACCEPTOR_HEIGHT + 34, REELS_WIDTH, 11)
+                pose.popPose()
+
+                //SELECTOR
+                pose.translate((REELS_WIDTH - 7) * distanceProgress, 0, 0)
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 0, REELS_HEIGHT + COIN_ACCEPTOR_HEIGHT + 34 + 11, 7, 11)
+                pose.popPose()
+            } catch (error) {
+                console.log(error);
+
+            }
+
+
+        },
+
+        tick() {
+            if (!this.isDragging) {
+                this.prevDistanceProgress = this.distanceProgress
+
+                let delta = this.targetProgress - this.distanceProgress
+
+                const snapThreshold = 0.04
+
+                if (Math.abs(delta) < snapThreshold) {
+                    this.distanceProgress = this.targetProgress
+                } else {
+                    this.distanceProgress += Math.sign(delta) * Math.min(Math.pow(Math.abs(delta), 2), 0.1)
+                }
+            }
+        },
+
+        mouseClicked(mouseX, mouseY, button) {
+            if (button == 0 && this.isMouseOver(mouseX, mouseY) && !this.areReelsSpinning ) {
+                this.isDragging = true
+                return true
+            }
+            return false
+        },
+
+        mouseDragged(mouseX, mouseY, button, deltaX, deltaY) {
+            if (button == 0 && !this.areReelsSpinning) {
+                const sensitivity = 0.015
+                let rawDelta = deltaX * sensitivity
+                let progress = this.distanceProgress
+
+                let firstPoint = this.firstPointProgress
+                let pointsOffset = this.pointsOffsetProgress
+
+                let t = Math.abs(Math.sin((progress - firstPoint) * Math.PI / pointsOffset))
+                //t = Math.min(1, Math.max(0, t))
+
+                const easePower = 2
+                const minFactor = 0.01
+
+                let factor = minFactor + (1 - minFactor) * Math.pow(t, easePower)
+
+                let adjustedDelta = rawDelta * factor
+                this.prevDistanceProgress = this.distanceProgress
+                this.distanceProgress = Math.min(Math.max(this.distanceProgress + adjustedDelta, 0), 1)
+                return true
+            }
+            return this.super$mouseDragged(mouseX, mouseY, button, deltaX, deltaY);
+        },
+
+        mouseReleased(mouseX, mouseY, button) {
+
+            if (this.areReelsSpinning) return this.super$mouseReleased(mouseX, mouseY, button)
+            this.isDragging = false
+
+            let offset = this.pointsOffsetProgress
+            let first = this.firstPointProgress
+
+            let t = (this.distanceProgress - first) / offset
+            //console.log(t)
+            
+            let index = Math.round(t)
+            //console.log(index);
+            
+            index = Math.max(0, Math.min(3, index))
+            let nearestPoint = index
+            
+            this.targetProgress = first + nearestPoint * offset - 4 * (1 / (REELS_WIDTH - 7))
+            //this.prevDistanceProgress = this.distanceProgress
+
+            let selectedTier = index + 1
+
+            if (this.currentlySelectedTier != selectedTier){
+                this.tierSelectorParentScreen.onTierSelect(selectedTier)
+                this.currentlySelectedTier = selectedTier
+            }
+            
+            
+            return this.super$mouseReleased(mouseX, mouseY, button)
+        },
+
+        onReelsSpinStart() {
+            this.areReelsSpinning = true
+        },
+
+        onReelsSpinEnd() {
+            this.areReelsSpinning = false
+        },
+
+        updateWidgetNarration(narrationElementOutput) { }
+
+    },
+        x, y, width, height, component
+    )
+}
+
+function createCoinAcceptorWidget(x, y, width, height, component) {
+    return new JavaAdapter($AbstractWidget, {
+
+
+        coinAcceptorParentScreen: null,
+        areReelsSpinning: false,
+
+        isCoinDropped: false,
+        coinItemStack: null,
+        coinData: null,
+        coinTooltip: null,
+
+        coinProgress:0,
+        prevCoinProgress:0,
+
+
+        setParentScreen(screen) {
+            this.coinAcceptorParentScreen = screen
+        },
+
+        renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
+
+            try {
+
+                let pose = guiGraphics.pose()
+                pose.pushPose()
+                pose.translate(x, y, 0)
+                pose.pushPose()
+                pose.translate(0, 0, 0)
+
+                //BG
+                guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 0, REELS_HEIGHT, COIN_ACCEPTOR_WIDTH, COIN_ACCEPTOR_HEIGHT)
+                pose.popPose()
+
+                //COIN
+                if(this.isCoinDropped){
+
+                    let coinProgress = this.prevCoinProgress + (this.coinProgress - this.prevCoinProgress) * Client.getTimer().getGameTimeDeltaPartialTick(false)
+
+                    let yOffset = 58 * coinProgress
+                    pose.translate(14, yOffset, 0)
+
+                    guiGraphics.enableScissor(
+                        x,
+                        y + (COIN_ACCEPTOR_HEIGHT - 28),
+                        x + COIN_ACCEPTOR_WIDTH,
+                        y + COIN_ACCEPTOR_HEIGHT
+                    )
+
+                    if (this.isHovered()){
+                        //pose.translate(14, 58, 0)
+                        guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 10, REELS_HEIGHT + COIN_ACCEPTOR_HEIGHT + 34 + 11, 5, 19)
+                        guiGraphics.disableScissor()
+                        guiGraphics.renderTooltip(Client.font, this.coinTooltip, this.coinItemStack.getTooltipImage(), 0, 0)
+
+                    } else {
+                        pose.translate(1, 1, 0)
+                        guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 7, REELS_HEIGHT + COIN_ACCEPTOR_HEIGHT + 34 + 11, 3, 18)
+                        guiGraphics.disableScissor()
+                    }
+
+
+                    
+
+                }
+
+                pose.popPose()
+            } catch (error) {
+                console.log(error);
+
+            }
+
+
+        },
+
+        tick() {
+            if (this.isCoinDropped){
+                this.prevCoinProgress = this.coinProgress
+
+                this.coinProgress = Math.min(1, this.coinProgress + 0.1) 
+            }
+
+        },
+
+        mouseClicked(mouseX, mouseY, button) {
+            if (button == 0 && this.isMouseOver(mouseX, mouseY) && !this.areReelsSpinning && this.isCoinDropped) {
+                this.isCoinDropped = false
+                milfPlayGUISound("milf:coin_spin")
+
+                Client.player.sendData("milf_divine_mint_give_divine_coin", this.coinData)
+
+                return true
+            }
+            return false
+        },
+
+        mouseReleased(mouseX, mouseY, button) {
+
+            if (this.areReelsSpinning) return this.super$mouseReleased(mouseX, mouseY, button)
+
+            return this.super$mouseReleased(mouseX, mouseY, button)
+        },
+
+        dropCoin() {
+            let coinStack = Item.of("milf:divine_coin")
+
+            let data = new $CompoundTag()
+
+            let dataForCoin = this.coinAcceptorParentScreen.getInfoBox().getDataForCoin()
+
+            let bossNameComponent = dataForCoin.bossName
+            let effectNameComponent = dataForCoin.effectName
+            let difficultyNameComponent = dataForCoin.difficultyName
+
+            let registryAccess = Client.level.registryAccess()
+
+            let jsonBossName = $Component$Serializer.toJson(bossNameComponent, registryAccess)
+            let jsonEffectName = $Component$Serializer.toJson(effectNameComponent, registryAccess)
+            let jsonDifficultyName = $Component$Serializer.toJson(difficultyNameComponent, registryAccess)
+            
+            data.putString("bossNameJson", jsonBossName)
+            data.putString("effectNameJson", jsonEffectName)
+            data.putString("difficultyNameJson", jsonDifficultyName)
+
+            coinStack.set($DataComponents.CUSTOM_DATA, data)
+
+            this.coinData = data
+            this.coinItemStack = coinStack
+            this.coinTooltip = $Screen.getTooltipFromItem(Client, coinStack)
+
+
+            milfPlayGUISound("milf:coin_drop")
+
+            this.coinProgress = 0
+            this.prevCoinProgress = 0
+
+            this.isCoinDropped = true
+        },
+
+        onReelsSpinStart() {
+            this.areReelsSpinning = true
+        },
+
+        onReelsSpinEnd() {
+            this.areReelsSpinning = false
         },
 
         updateWidgetNarration(narrationElementOutput) { }
@@ -587,192 +1577,3 @@ NativeEvents.onEvent($RenderGuiLayerEvent$Pre, event => {
 
 })
 
-/*
-
-        renderBossEntities(guiGraphics, mouseX, mouseY, partialTick){
-
-            let level = Client.level
-            let gameRenderer = Client.gameRenderer
-            const clientBuffer = Client.renderBuffers().bufferSource()
-            const clientDispatcher = Client.getEntityRenderDispatcher()
-            const guiScale = Client.window.guiScale
-            const ENTITY_SCALE = 4
-            const ADDITIONAL_SCALE = 3
-
-            const TOOLTIP_HEIGHT = 64
-            const TOOLTIP_WIDTH = 64
-
-            const BOSS_NAME_OFFSET_X = 0
-
-            let font = Client.font
-
-            const Y_OFFSET = -14
-
-            const BOSS_BAIT_SELECTOR_OFFSET = Math.PI / 8
-            const SELECTOR_RADIUS = 6
-
-
-            // const tooltipPosition = $DefaultTooltipPositioner.positionTooltip(
-            //     guiGraphics.guiWidth(), guiGraphics.guiHeight(),
-            //     guiGraphics.guiWidth() / 2, guiGraphics.guiHeight() / 2,
-            //     0, TOOLTIP_HEIGHT
-            // )
-
-            //let [baseX, baseY] = [tooltipPosition.x(), tooltipPosition.y()]
-            let [baseX, baseY] = [guiGraphics.guiWidth() / 2, guiGraphics.guiHeight() / 2]
-
-            const pose = guiGraphics.pose()
-
-            let rotAngle = divineMintSelectorRot + BOSS_BAIT_SELECTOR_OFFSET
-
-            rotAngle = ((rotAngle % (2 * Math.PI)) + (2 * Math.PI)) % (2 * Math.PI)
-
-
-            currentlySelectedDec = (rotAngle / (2 * Math.PI)) * MILF_BOSSES_SIZE
-            currentlySelectedIndex = Math.floor(currentlySelectedDec) % MILF_BOSSES_SIZE
-
-            if(lastSelected != currentlySelectedIndex){                
-                divineMintGuiTicks = 0
-                lastSelected = currentlySelectedIndex
-            }
-            
-            // if (bossBaitSelectorRot + BOSS_BAIT_SELECTOR_OFFSET > 0) {
-            //     currentlySelectedDec = ((bossBaitSelectorRot + BOSS_BAIT_SELECTOR_OFFSET) % (Math.PI * 2) / (Math.PI * 2)) * MILF_BOSSES_SIZE
-            //     currentlySelected = Math.floor(currentlySelectedDec)
-            // } else {
-            //     currentlySelectedDec = ((bossBaitSelectorRot + BOSS_BAIT_SELECTOR_OFFSET) % (Math.PI * 2) / (Math.PI * 2)) * MILF_BOSSES_SIZE
-            //     currentlySelected = MILF_BOSSES_SIZE + Math.trunc(currentlySelectedDec)
-            // }
-            //console.log(currentlySelectedDec)
-
-            // if (currentlySelected == MILF_BOSSES_SIZE){
-            //     currentlySelected = 0
-            // }
-
-            try {
-
-                pose.pushPose()
-                pose.translate(baseX - (8 * ENTITY_SCALE), baseY + Y_OFFSET, 100)
-
-                // $TooltipRenderUtil.renderTooltipBackground(guiGraphics, -TOOLTIP_WIDTH / 2 + (8 * ENTITY_SCALE), 0, TOOLTIP_WIDTH, TOOLTIP_HEIGHT, -500,
-                //     0xaf202020 - maxInt, 0xaf202020 - maxInt, 0x6f8f8f8f, 0x5f575757)
-
-                divineMintGuiTicks += partialTick * 0.03
-                let angle = Math.sin(divineMintGuiTicks)
-
-                Object.entries(this.entitiesToRender).forEach(([bossId, entity], index) => {
-                    // let entityType = $BuiltInRegistries.ENTITY_TYPE.get(new $ResourceLocation.parse(bossId))
-                    // let entity = entityType.create(Client.level)
-
-                    pose.pushPose()
-
-                    
-
-                    if (currentlySelectedIndex != index) pose.translate(0, 0, -1000)
-
-                    pose.translate(0, 16 * ENTITY_SCALE / ADDITIONAL_SCALE, 0)
-
-                    pose.translate(0, -16, 0)
-
-
-                    pose.scale(ENTITY_SCALE * ADDITIONAL_SCALE, ENTITY_SCALE * ADDITIONAL_SCALE, 1)
-
-
-                    pose.mulPose($Axis.XN.rotation(Math.PI / 8))
-
-
-
-                    pose.translate(8 / ADDITIONAL_SCALE, 8 / ADDITIONAL_SCALE, 0)
-
-                    //pose.mulPose($Axis.YN.rotation(2 * Math.PI / MILF_BOSSES_SIZE * currentlySelected))
-
-                    pose.mulPose($Axis.YN.rotation(divineMintSelectorRot))
-
-                    pose.mulPose($Axis.YP.rotation(2 * Math.PI / MILF_BOSSES_SIZE * index))
-
-                    pose.translate(0, 0, SELECTOR_RADIUS)
-
-
-                    pose.mulPose($Axis.XP.rotation(Math.PI))
-                    pose.mulPose($Axis.YP.rotation(Math.PI))
-
-
-                    let brightness = 0xF000F0
-
-                    if (currentlySelectedIndex == index) {
-
-                        if (currentlySelectedId != bossId) currentlySelectedId = bossId
-
-                        pose.pushPose()
-
-                        pose.mulPose($Axis.XN.rotation(Math.PI))
-                        pose.mulPose($Axis.YN.rotation(Math.PI))
-
-                        pose.scale(0.5, 0.5, 1)
-
-                        let bossNameWrapped = font.split(entity.getDisplayName(), 60)
-
-                        let tempIndex = 0
-
-                        bossNameWrapped.forEach(line => {
-                            guiGraphics["drawString(net.minecraft.client.gui.Font,net.minecraft.util.FormattedCharSequence,int,int,int,boolean)"](
-                                font, line, BOSS_NAME_OFFSET_X, tempIndex * (font.lineHeight + 2), 0xFFFFFF, true
-                            )
-                            tempIndex++
-                        })
-
-
-
-                        pose.popPose()
-
-                        brightness = 0xF000F0
-                        pose.mulPose($Axis.YP.rotation(angle / 2))
-                        pose.mulPose($Axis.ZN.rotation(angle / 7))
-
-                        clientDispatcher.render(entity, 0, 0, 0, 0, 0,
-                            pose, clientBuffer, brightness)
-
-                        clientBuffer.endBatch()
-                    } else {
-
-                        let difference = index - (currentlySelectedDec - 0.5)
-                        difference = ((difference + MILF_BOSSES_SIZE / 2) % MILF_BOSSES_SIZE + MILF_BOSSES_SIZE) % MILF_BOSSES_SIZE - MILF_BOSSES_SIZE / 2
-                        let distanceToSelected = Math.abs(difference)
-
-                        let scaleFactor = easeInOutCubic(0.8 / Math.pow(Math.max(distanceToSelected * 1.3, 0.9), 1.7)) 
-
-                        // let abs = Math.abs(index - currentlySelected )
-                        // let distanceToSelected = Math.min(abs, MILF_BOSSES_SIZE - abs)
-
-                        // let scaleFactor = 0.8 / distanceToSelected
-
-                        brightness = 0x300030
-                        pose.scale(scaleFactor, scaleFactor, scaleFactor)
-                        $RenderSystem.enableBlend()
-                        $RenderSystem.defaultBlendFunc()
-                        $RenderSystem.setShaderColor(1, 1, 1, 0.3)
-
-                        clientDispatcher.render(entity, 0, 0, 0, 0, 0,
-                            pose, clientBuffer, brightness)
-
-                        $RenderSystem.disableBlend()
-
-                        clientBuffer.endBatch()
-
-                        $RenderSystem.setShaderColor(1, 1, 1, 1)
-                    }
-
-                    pose.popPose()
-
-                })
-
-
-                pose.popPose()
-
-            } catch (error) {
-                console.log(error);
-
-            }            
-        },
-
-*/

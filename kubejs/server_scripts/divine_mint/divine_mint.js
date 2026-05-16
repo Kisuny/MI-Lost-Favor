@@ -1,8 +1,6 @@
-let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
-let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
-let $MobSpawnType = Java.loadClass("net.minecraft.world.entity.MobSpawnType")
 
-NetworkEvents.dataReceived('milf_boss_bait', (event) => {
+
+NetworkEvents.dataReceived('milf_divine_mint_boss', (event) => {
 
    let level = event.getLevel()
    if(level.isClientSide()) return
@@ -47,14 +45,29 @@ NetworkEvents.dataReceived('milf_boss_bait', (event) => {
    let abstractionDimKey = $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.fromNamespaceAndPath("milf", "abstraction"))
    let abstractionDim = player.getServer()["getLevel(net.minecraft.resources.ResourceKey)"](abstractionDimKey)
 
-   player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](abstractionDim, x, 5, z, 0, 0)
+   player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](abstractionDim, x, 16, z, 0, 0)
 
+   
+   //TEST
 
    // let bossId = event.data.getString("id")
    // let entityType = $BuiltInRegistries.ENTITY_TYPE.get(new $ResourceLocation.parse(bossId))
 
-   // entityType.spawn(level, blockPos, $MobSpawnType.COMMAND)
+   // //entityType.spawn(level, blockPos, $MobSpawnType.COMMAND)
    // let entity = entityType.create(level)
+
+   // let lootTable = level.getServer().reloadableRegistries().getLootTable(entityType.getDefaultLootTable())
+
+   // console.log(lootTable);
+
+   // let aliNode = $NodeUtils.getLootTableNode($Collections.emptyList(), $PluginManager.getInstance().serverRegistry, lootTable, 1, $Collections.emptyList(), $Collections.emptyList())
+   
+   // let output = new $ArrayList()
+
+   // collectItemStacks(aliNode, output)
+
+   // console.log(output);
+   
 
    // entity.moveTo(pos.x, pos.y, pos.z, level.random.nextFloat(), 0)
    // level.addFreshEntity(entity)

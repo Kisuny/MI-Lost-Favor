@@ -50,6 +50,9 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
         let properties = item.createItemProperties()
         args.itemProperties.craftRemainder && properties.craftRemainder(args.itemProperties.craftRemainder)
     }
+    if(args.dynamicName){
+        item.name(args.dynamicName)
+    }
 }
 
 function createNewBlock(id, args) {

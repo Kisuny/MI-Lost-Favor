@@ -164,4 +164,39 @@ ServerEvents.recipes(event => {
         energy: 3200,
     })
 
+    iePressCraft(event, {
+        inputItems: [[{ "item": "knightlib:great_essence" }, 9]],
+        outputItems: [[{ id: "grimoireofgaia:experience_iron" }, 1]],
+        mold: { item: "immersiveengineering:mold_packing_9" },
+        energy: 3200,
+    })
+
+    iePressCraft(event, {
+        inputItems: [[{ "item": "knightlib:small_essence" }, 4]],
+        outputItems: [[{ id: "knightlib:great_essence" }, 1]],
+        mold: { item: "immersiveengineering:mold_packing_4" },
+        energy: 3200,
+    })
+
+    iePressCraft(event, {
+        inputItems: [[{ "item": "grimoireofgaia:experience_iron" }, 4]],
+        outputItems: [[{ id: "grimoireofgaia:experience_diamond" }, 1]],
+        mold: { item: "immersiveengineering:mold_packing_4" },
+        energy: 3200,
+    })
+
+    iePressCraft(event, {
+        inputItems: [[{ "item": "grimoireofgaia:experience_iron" }, 2]],
+        outputItems: [[{ id: "grimoireofgaia:experience_gold" }, 1]],
+        mold: { item: "modern_industrialization:packer_double_ingot_template" },
+        energy: 3200,
+    })
+
+    iePressCraft(event, {
+        inputItems: [[{ "item": "grimoireofgaia:experience_gold" }, 2]],
+        outputItems: [[{ id: "grimoireofgaia:experience_diamond" }, 1]],
+        mold: { item: "modern_industrialization:packer_double_ingot_template" },
+        energy: 3200,
+    })
+
 })

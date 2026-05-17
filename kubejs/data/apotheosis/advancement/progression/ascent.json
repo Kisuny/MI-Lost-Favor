@@ -1,6 +1,91 @@
 {
     "parent": "apotheosis:progression/frontier",
     "criteria": {
+        "rare_chest": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:rare",
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "chest"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "rare_feet": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:rare",
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "feet"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "rare_hand": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:rare",
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "hand"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "rare_helm": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:rare",
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "head"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "rare_legs": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:rare",
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "legs"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
         "kill_ender_dragon": {
             "conditions": {
                 "entity": [
@@ -56,22 +141,6 @@
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_apothic_invader": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type_specific": {
-                                "type": "apotheosis:is_invader"
-                            }
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
         }
     },
     "display": {
@@ -90,6 +159,21 @@
     },
     "requirements": [
         [
+            "rare_helm"
+        ],
+        [
+            "rare_chest"
+        ],
+        [
+            "rare_legs"
+        ],
+        [
+            "rare_feet"
+        ],
+        [
+            "rare_hand"
+        ],
+        [
             "kill_ender_dragon"
         ],
         [
@@ -100,9 +184,6 @@
         ],
         [
             "kill_warden"
-        ],
-        [
-            "kill_apothic_invader"
         ]
     ],
     "sends_telemetry_event": false

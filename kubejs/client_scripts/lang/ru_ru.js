@@ -21,13 +21,63 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
     event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${textAnimatorString("странные звуки", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} ночью...`)
     event.add('milf.stage.early_items', `Этот мир больше не ${textAnimatorString("отвергает", "glitch")} вас...`)
+
+    event.add('gateways.tiered/haven', 'Haven Gateway')
+    event.add('wave_entity.apotheosis.amethyst_crab', 'Усиленный Amethest Crab')
+    event.add('wave_entity.apotheosis.ferrous_wroughtnaut', 'Усиленный Ferrous Wroughtnaut')
+    event.add('wave_entity.apotheosis.black_charro', 'Усиленный Black Charro')
+    event.add('wave_entity.apotheosis.sacred_pontiff', 'Усиленный Sacred Pontiff')
+    event.add('wave_entity.apotheosis.mowziesmobs_umvuthi', 'Усиленный Umvuthi')
+    event.add('wave_entity.apotheosis.mowziesmobs_frostmaw', 'Усиленный Frostmaw')
+
+    const rarityRu = { uncommon: 'Необычн', rare: 'Редк', epic: 'Эпическ', mythic: 'Мифическ' }
+    const rarityRuEndings = { legs: 'ых Поножей', chest: 'ого Нагрудника', hand: 'ого Оружия', helm: 'ого Шлема', feet: 'их Ботинок' }
+    const worlds_tier = ['frontier', 'ascent', 'summit', 'pinnacle']
+    const rarity = ['uncommon', 'rare', 'epic', 'mythic']
+    worlds_tier.forEach(tier => {
+        rarity.forEach(rar => {
+            Object.entries(rarityRuEndings).forEach(([slot, ending]) => {
+                event.add(`advancements.apotheosis.progression.${tier}.criteria.${rar}_${slot}`, `Надеть ${rarityRu[rar]}${ending}`)
+            })
+        })
+    })
+
+    event.add('advancements.apotheosis.progression.frontier.criteria.complete_haven_gate', 'Завершить Врата Haven')
+
+    // ascent (редкий) — убийства
+    event.add('advancements.apotheosis.progression.ascent.criteria.kill_ender_dragon', 'Убить Эндер-Дракона')
+    event.add('advancements.apotheosis.progression.ascent.criteria.kill_wither', 'Убить Иссушителя')
+    event.add('advancements.apotheosis.progression.ascent.criteria.kill_elder_guardian', 'Убить Старшего Стража')
+    event.add('advancements.apotheosis.progression.ascent.criteria.kill_warden', 'Убить Хранителя')
+
+    // summit (эпический) — убийства
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_lich', 'Убить Ночного Лича')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_obsidilith', 'Убить Обсидилита')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_void_blossom', 'Убить Бездонный Цветок')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_gauntlet', 'Убить Незерскую Перчатку')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_geburah', 'Убить Гебуру')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Убить Малькут')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Убить Хесед')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Убить Лунное Чудовище')
+
+    // pinnacle (мифический) — убийства
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Убить Химеру Вилден')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_the_harbinger', 'Убить Предвестника')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ancient_remnant', 'Убить Древний Остаток')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ignis', 'Убить Игниса')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_netherite_monstrosity', 'Убить Незеритовое Чудовище')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_maledictus', 'Убить Малeдиктуса')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ender_guardian', 'Убить Стража Края')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Убить Сциллу')
+    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Убить Левиафана')
+
     event.add('milf.how_to_seed.tooltip', 'Можно найти в птичьем гнезде или купить на рынке')
     event.add('milf.how_to_get_blaze_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
 
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Странная магия мешает вам использовать этот блок')
 
-    event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Убить Перчатку Незера')
+    
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
     event.add('milf.press_button', 'Зажми ')

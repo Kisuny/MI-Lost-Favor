@@ -36,18 +36,11 @@ FTBQuestsEvents.customReward('19304AD673874503', event => {
     defaultMilestoneNotification(event, stage)
 });
 
-// reward for killing black charro (journeys chapter)
-FTBQuestsEvents.customReward('69335E0ACAA9C440', event => {
-    const stage = "mythsandlegends_mobs"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
-});
-
-// reward for killing umvuthi, the sunbird (journeys chapter)
-FTBQuestsEvents.customReward('50FF5C99CD671DD3', event => {
-    const stage = "mowziesmobs_mobs"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
+// reward for haven gate 
+FTBQuestsEvents.customReward('20165DF8F49E8177', event => {
+    const stages = ["mowziesmobs_mobs", "mythsandlegends_mobs"]
+    addStagesToTeamMembers(event, stages)
+    defaultMilestoneNotification(event, stages[0])
 });
 
 // reward for killing vanilla bosses (journeys chapter)
@@ -59,7 +52,6 @@ FTBQuestsEvents.customReward('224D85127D80FED8', event => {
 
 // reward for killing bomd and fdbosses bosses (journeys chapter)
 FTBQuestsEvents.customReward('16B46238FC936637', event => {
-
     const stages = ["grimoireofgaia_mobs", "born_in_chaos_v1_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
@@ -82,8 +74,8 @@ FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
 
 // reward for Iron Ingot
 FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
-    const stage = ["post_iron", "goblin_traders_mobs"]
-    addStagesToTeamMembers(event, stage)
+    const stages = ["post_iron", "goblin_traders_mobs"]
+    addStagesToTeamMembers(event, stages)
 });
 
 // reward for Enter in Eternal Starlight

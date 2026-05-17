@@ -120,7 +120,7 @@
 				}
 			]
 			x: -8.5d
-			y: 17.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3BB0FE129E37B19E"]
@@ -145,7 +145,7 @@
 				}
 			]
 			x: -7.5d
-			y: 17.5d
+			y: 14.0d
 		}
 		{
 			id: "6544003D913C8203"
@@ -1245,21 +1245,6 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["0CC9329A82A7454A"]
-			icon: {
-				id: "mowziesmobs:ice_crystal"
-			}
-			id: "1B0564824800EA02"
-			tasks: [{
-				entity: "mowziesmobs:frostmaw"
-				id: "46E183BCCBE01E7B"
-				type: "kill"
-				value: 1L
-			}]
-			x: -10.0d
-			y: 9.0d
-		}
-		{
 			dependencies: ["6A1DA8ABA8F13FC2"]
 			icon: {
 				components: {
@@ -1281,7 +1266,7 @@
 				value: 1L
 			}]
 			x: -12.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6A1DA8ABA8F13FC2"]
@@ -1305,7 +1290,7 @@
 				value: 1L
 			}]
 			x: -10.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -1320,7 +1305,7 @@
 				value: 1L
 			}]
 			x: -11.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
@@ -1332,7 +1317,7 @@
 				type: "advancement"
 			}]
 			x: -11.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
@@ -1341,22 +1326,14 @@
 				id: "mowziesmobs:sol_visage"
 			}
 			id: "78B154D7DC8F7464"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					id: "mowziesmobs:captured_grottol"
-				}
-				id: "50FF5C99CD671DD3"
-				type: "custom"
-			}]
 			tasks: [{
 				entity: "mowziesmobs:umvuthi"
 				id: "6B086A9EC79AC60B"
 				type: "kill"
 				value: 1L
 			}]
-			x: -8.0d
-			y: 9.0d
+			x: -9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["78B154D7DC8F7464"]
@@ -1366,23 +1343,8 @@
 				item: { count: 1, id: "mowziesmobs:sol_visage" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["0CC9329A82A7454A"]
-			icon: {
-				id: "mowziesmobs:wrought_axe"
-			}
-			id: "1609A7DF5329EA44"
-			tasks: [{
-				entity: "mowziesmobs:ferrous_wroughtnaut"
-				id: "3CB5DA7648415F1D"
-				type: "kill"
-				value: 1L
-			}]
-			x: -9.0d
-			y: 9.0d
+			x: -8.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -1394,7 +1356,7 @@
 				value: 1L
 			}]
 			x: -7.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3BB0FE129E37B19E"]
@@ -1412,18 +1374,11 @@
 				value: 1L
 			}]
 			x: -13.5d
-			y: 17.5d
+			y: 14.0d
 		}
 		{
-			dependencies: [
-				"4128C0ADAD05A131"
-				"35A57388AA3AB5F4"
-				"1B0564824800EA02"
-				"6D3B47471BD99C33"
-				"1609A7DF5329EA44"
-				"6150509913ECC9FE"
-				"78B154D7DC8F7464"
-			]
+			dependencies: ["30ED4F9B49BFC36C"]
+			hide_dependency_lines: true
 			icon: {
 				id: "minecraft:iron_sword"
 			}
@@ -1475,7 +1430,7 @@
 				type: "checkmark"
 			}]
 			x: -11.0d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -1533,7 +1488,7 @@
 				type: "checkmark"
 			}]
 			x: -11.0d
-			y: 15.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1617,7 +1572,7 @@
 				type: "checkmark"
 			}]
 			x: -11.0d
-			y: 19.5d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -1682,7 +1637,7 @@
 				type: "checkmark"
 			}]
 			x: -11.0d
-			y: 25.5d
+			y: 22.0d
 		}
 		{
 			id: "2028D7D5077F5471"
@@ -1931,7 +1886,7 @@
 				value: 1L
 			}]
 			x: -12.5d
-			y: 17.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3BB0FE129E37B19E"]
@@ -1949,7 +1904,7 @@
 				value: 1L
 			}]
 			x: -11.5d
-			y: 17.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3BB0FE129E37B19E"]
@@ -1967,7 +1922,7 @@
 				value: 1L
 			}]
 			x: -10.5d
-			y: 17.5d
+			y: 14.0d
 		}
 		{
 			id: "28A7409A60FE5193"
@@ -2506,20 +2461,10 @@
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
-			hide_dependent_lines: true
 			icon: {
 				id: "mythsandlegends:umbras_whisper"
 			}
 			id: "6D3B47471BD99C33"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					id: "mythsandlegends:cursed_core"
-				}
-				id: "69335E0ACAA9C440"
-				team_reward: false
-				type: "custom"
-			}]
 			tasks: [
 				{
 					entity: "mythsandlegends:black_charro"
@@ -2538,8 +2483,8 @@
 					type: "item"
 				}
 			]
-			x: -14.0d
-			y: 9.0d
+			x: -13.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6D3B47471BD99C33"]
@@ -2553,8 +2498,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -15.5d
-			y: 9.0d
+			x: -14.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["779A518117286DCF"]
@@ -2564,8 +2509,8 @@
 				item: { count: 1, id: "mythsandlegends:stone_sanctum_table" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 9.0d
+			x: -15.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["69876AF147198368"]
@@ -2602,8 +2547,8 @@
 					type: "item"
 				}
 			]
-			x: -16.0d
-			y: 8.5d
+			x: -14.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0148634AF45EAFC7"]
@@ -2613,8 +2558,8 @@
 				item: { count: 1, id: "mythsandlegends:gargoyle_effigy" }
 				type: "item"
 			}]
-			x: -16.0d
-			y: 9.5d
+			x: -14.5d
+			y: 6.0d
 		}
 		{
 			id: "7C4731645AB0DE12"
@@ -2756,37 +2701,7 @@
 				}
 			]
 			x: -9.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["0CC9329A82A7454A"]
-			id: "6150509913ECC9FE"
-			tasks: [{
-				entity: "companions:sacred_pontiff"
-				icon: {
-					id: "companions:holy_robe_mask"
-				}
-				id: "4CD8949B26F31FB9"
-				type: "kill"
-				value: 1L
-			}]
-			x: -12.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["0CC9329A82A7454A"]
-			icon: {
-				id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
-			}
-			id: "35A57388AA3AB5F4"
-			tasks: [{
-				advancement: "born_in_chaos_v1:pumpkin_sir"
-				criterion: ""
-				id: "1B9DD4D47E6B3A39"
-				type: "advancement"
-			}]
-			x: -13.0d
-			y: 9.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -2798,7 +2713,7 @@
 				value: 1L
 			}]
 			x: -9.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -2810,7 +2725,7 @@
 				value: 1L
 			}]
 			x: -15.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -2833,7 +2748,7 @@
 				}
 			]
 			x: -14.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -2856,7 +2771,7 @@
 				}
 			]
 			x: -12.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			id: "226CB78407422242"
@@ -2889,7 +2804,7 @@
 				}
 			]
 			x: -13.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -2911,7 +2826,7 @@
 				}
 			]
 			x: -10.0d
-			y: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -2933,25 +2848,7 @@
 				}
 			]
 			x: -8.0d
-			y: 22.5d
-		}
-		{
-			dependencies: ["0CC9329A82A7454A"]
-			icon: {
-				components: {
-					"ftbquests:icon": "cataclysm:item/amethyst_crab_shell"
-				}
-				id: "ftbquests:custom_icon"
-			}
-			id: "4128C0ADAD05A131"
-			tasks: [{
-				entity: "cataclysm:amethyst_crab"
-				id: "54030B4F0F34FBE0"
-				type: "kill"
-				value: 1L
-			}]
-			x: -11.0d
-			y: 9.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["6A1DA8ABA8F13FC2"]
@@ -2975,7 +2872,7 @@
 				value: 1L
 			}]
 			x: -11.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6A1DA8ABA8F13FC2"]
@@ -2993,9 +2890,10 @@
 				value: 1L
 			}]
 			x: -9.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
+			hide_dependency_lines: false
 			id: "0CC9329A82A7454A"
 			rewards: [{
 				auto: "enabled"
@@ -3015,7 +2913,7 @@
 				type: "advancement"
 			}]
 			x: -11.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["309D0179B980CF6A"]
@@ -3803,7 +3701,36 @@
 				value: 1L
 			}]
 			x: -14.5d
-			y: 17.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"0CC9329A82A7454A"
+				"7D9C31E5FE076F2C"
+				"620B6774449C91F2"
+			]
+			hide_dependency_lines: true
+			id: "30ED4F9B49BFC36C"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "betteradvancedtooltips:textures/font/icons/warn.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "20165DF8F49E8177"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "184359A96376C457"
+				item: { components: { "gateways:gateway": "gateways:tiered/haven" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.0d
 		}
 	]
 }

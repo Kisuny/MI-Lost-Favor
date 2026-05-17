@@ -1,111 +1,12 @@
 {
     "parent": "apotheosis:progression/haven",
     "criteria": {
-        "kill_ferrous_wroughtnaut": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "mowziesmobs:ferrous_wroughtnaut"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_umvuthi": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "mowziesmobs:umvuthi"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_frostmaw": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "mowziesmobs:frostmaw"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_amethyst_crab": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "cataclysm:amethyst_crab"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_black_charro": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "mythsandlegends:black_charro"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_lord_pumpkinhead_head": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "born_in_chaos_v1:lord_pumpkinhead_head"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_sacred_pontiff": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "companions:sacred_pontiff"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "common_chest": {
+        "uncommon_chest": {
             "conditions": {
                 "items": {
                     "predicates": {
                         "apotheosis:item_with_rarity": {
                             "rarities": [
-                                "apotheosis:common",
                                 "apotheosis:uncommon",
                                 "apotheosis:rare",
                                 "apotheosis:epic",
@@ -118,13 +19,12 @@
             },
             "trigger": "apotheosis:equipped_item"
         },
-        "common_feet": {
+        "uncommon_feet": {
             "conditions": {
                 "items": {
                     "predicates": {
                         "apotheosis:item_with_rarity": {
                             "rarities": [
-                                "apotheosis:common",
                                 "apotheosis:uncommon",
                                 "apotheosis:rare",
                                 "apotheosis:epic",
@@ -137,13 +37,12 @@
             },
             "trigger": "apotheosis:equipped_item"
         },
-        "common_hand": {
+        "uncommon_hand": {
             "conditions": {
                 "items": {
                     "predicates": {
                         "apotheosis:item_with_rarity": {
                             "rarities": [
-                                "apotheosis:common",
                                 "apotheosis:uncommon",
                                 "apotheosis:rare",
                                 "apotheosis:epic",
@@ -156,13 +55,12 @@
             },
             "trigger": "apotheosis:equipped_item"
         },
-        "common_helm": {
+        "uncommon_helm": {
             "conditions": {
                 "items": {
                     "predicates": {
                         "apotheosis:item_with_rarity": {
                             "rarities": [
-                                "apotheosis:common",
                                 "apotheosis:uncommon",
                                 "apotheosis:rare",
                                 "apotheosis:epic",
@@ -175,13 +73,12 @@
             },
             "trigger": "apotheosis:equipped_item"
         },
-        "common_legs": {
+        "uncommon_legs": {
             "conditions": {
                 "items": {
                     "predicates": {
                         "apotheosis:item_with_rarity": {
                             "rarities": [
-                                "apotheosis:common",
                                 "apotheosis:uncommon",
                                 "apotheosis:rare",
                                 "apotheosis:epic",
@@ -193,6 +90,12 @@
                 "slots": "legs"
             },
             "trigger": "apotheosis:equipped_item"
+        },
+        "complete_haven_gate": {
+            "conditions": {
+                "gateway": "gateways:tiered/haven"
+            },
+            "trigger": "gateways:finish_gateway"
         }
     },
     "display": {
@@ -210,40 +113,22 @@
     },
     "requirements": [
         [
-            "kill_ferrous_wroughtnaut"
+            "complete_haven_gate"
         ],
         [
-            "kill_umvuthi"
+            "uncommon_helm"
         ],
         [
-            "kill_frostmaw"
+            "uncommon_chest"
         ],
         [
-            "kill_amethyst_crab"
+            "uncommon_legs"
         ],
         [
-            "kill_black_charro"
+            "uncommon_feet"
         ],
         [
-            "kill_lord_pumpkinhead_head"
-        ],
-        [
-            "kill_sacred_pontiff"
-        ],
-        [
-            "common_helm"
-        ],
-        [
-            "common_chest"
-        ],
-        [
-            "common_legs"
-        ],
-        [
-            "common_feet"
-        ],
-        [
-            "common_hand"
+            "uncommon_hand"
         ]
     ],
     "sends_telemetry_event": true

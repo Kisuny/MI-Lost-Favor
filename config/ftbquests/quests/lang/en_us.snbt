@@ -49,6 +49,17 @@
 		""
 		"&#4EC847<fade>🛈 Сито должно находится под текущей водой"
 	]
+	quest.00FF5F61CB6D32B8.quest_desc: [
+		"Crafting on a stick let's you craft items without the need to place a crafting table on the ground"
+		""
+		"&lPut your favorite workbench on a stick in the designated curios slot and press the keybind to open it &c(default CTRL + C)&r&r"
+		""
+		"{@pagebreak}"
+		""
+		"С помощью крафта на палке можно создавать предметы, не устанавливая крафт-стол на земле"
+		""
+		"&lПоместите свой любимый верстак на палке в специальное слот для безделушек и нажмите клавишу быстрого доступа, чтобы открыть его &c(по умолчанию CTRL + C)&r&r"
+	]
 	quest.01DA1F605860E4CB.quest_desc: [
 		"A torch, candelabra or candle can be an effective means of increasing your altar's recharge rate."
 		""
@@ -1148,6 +1159,16 @@
 		"{@pagebreak}"
 		"Соберите все &#FEECD6доступные&r вам пигменты, к сожалению вы &#d33b2bне сможете&r достать коричневый пигмент просто так, вам &#FEECD6придется&r открыть &#FEECD6крафт&r &#CAE4C8саженца&r чтобы начать прогрессировать далее!"
 	]
+	quest.30ED4F9B49BFC36C.quest_desc: [
+		"Rules: "
+		"\"lives\": 3,"
+		"\"requires_nearby_player\": true"
+		""
+		"Много волн"
+		""
+		"1 - аметистовый краб"
+		"2 - umvuthi, ferrous_wroughtnaut, mowziesmobs:frostmaw"
+	]
 	quest.30F62715E5021688.quest_desc: [
 		"Those shrooms look grim, but their &lbark&r is so yummy"
 		"{@pagebreak}"
@@ -2219,12 +2240,7 @@
 		""
 		"&#4EC847<fade>🛈 Токсин используется в качестве топлива!"
 	]
-	quest.6150509913ECC9FE.quest_desc: [
-		"С него падает:"
-		""
-		"companions:relic_gold (3 - 8)"
-		"companions:old_cloth (8)"
-	]
+	quest.6150509913ECC9FE.quest_desc: [""]
 	quest.6161B74A88A73B46.quest_subtitle: "Low HP build, pog!"
 	quest.61E590BED7EE9DA4.quest_desc: ["sooo entity magnet?!"]
 	quest.624A33C4995164C4.quest_desc: ["Hot enough furnace to produce steel, as well as some other useful resources"]
@@ -2889,6 +2905,7 @@
 	reward.43989D93EEEBE7E7.title: "Bracelet Trinket Slot"
 	reward.4489C7C10E7A49EF.title: "Ring Trinket Slot"
 	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
+	reward.4847BCB4A0147A6D.title: "crafting on a stick trinket slot"
 	reward.4BA1212AF4BD3432.title: "Augmenting Table Access"
 	reward.4C184C19BA719B4F.title: "Feet Trinket Slot"
 	reward.4D0EBC927D8AD01D.title: "Xaeromap Access"

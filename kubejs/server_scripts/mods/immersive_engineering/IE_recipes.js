@@ -14,7 +14,7 @@ function ieShapedFluid(event, args) {
         Object.entries(args.key).forEach(m => {
             let regex = new RegExp(m[0], 'g')
             if (m[1].type) {
-                let tempObj = Object.assign({}, m[1]) 
+                let tempObj = Object.assign({}, m[1])
                 delete tempObj.type
                 delete tempObj.amount
                 fluidInputs.push([tempObj, m[1].amount])
@@ -53,11 +53,13 @@ ServerEvents.recipes(event => {
             'immersiveengineering:wire_electrum',
             'immersiveengineering:wire_aluminum',
             'immersiveengineering:wire_steel',
-            'immersiveengineering:wire_lead'
+            'immersiveengineering:wire_lead',
+            /immersiveposts:stick_.*/,
+
         ]
     })
 
-    event.remove({id: "immersiveengineering:crafting/nugget_copper_to_copper_ingot"})
+    event.remove({ id: "immersiveengineering:crafting/nugget_copper_to_copper_ingot" })
 
     const materials_for_wires = ["steel", "copper", "lead"]
     materials_for_wires.forEach(material => {
@@ -81,10 +83,10 @@ ServerEvents.recipes(event => {
     });
 
     event.replaceInput(
-            { output: "immersiveengineering:toolbox" },
-            "modern_industrialization:aluminum_plate",
-            "modern_industrialization:steel_plate"
-        )
+        { output: "immersiveengineering:toolbox" },
+        "modern_industrialization:aluminum_plate",
+        "modern_industrialization:steel_plate"
+    )
 
     milfShaped(event, {
         pattern: [
@@ -98,7 +100,7 @@ ServerEvents.recipes(event => {
             F: { item: "modern_industrialization:fire_clay_brick" },
         },
         outputItems: [[{ id: "immersiveengineering:blastbrick" }, 3]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -111,7 +113,7 @@ ServerEvents.recipes(event => {
             F: { item: "modern_industrialization:fire_clay_brick" }
         },
         outputItems: [[{ id: "immersiveengineering:alloybrick" }, 2]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -126,7 +128,7 @@ ServerEvents.recipes(event => {
             R: { item: "modern_industrialization:analog_circuit" },
         },
         outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -141,7 +143,7 @@ ServerEvents.recipes(event => {
             R: { item: "immersiveengineering:component_iron" },
         },
         outputItems: [[{ id: "immersiveengineering:generator" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -155,7 +157,7 @@ ServerEvents.recipes(event => {
             W: { item: "modern_industrialization:iron_large_plate" }
         },
         outputItems: [[{ id: "immersiveengineering:basic_engineering" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -171,7 +173,7 @@ ServerEvents.recipes(event => {
             R: { item: "immersiveengineering:component_steel" },
         },
         outputItems: [[{ id: "immersiveengineering:heavy_engineering" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -187,7 +189,7 @@ ServerEvents.recipes(event => {
             R: { item: "immersiveengineering:component_iron" },
         },
         outputItems: [[{ id: "immersiveengineering:light_engineering" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     ieShapedFluid(event, {
@@ -201,12 +203,14 @@ ServerEvents.recipes(event => {
             C: { item: "immersiveengineering:component_steel" },
             I: { item: "immersiveengineering:component_iron" },
             P: { item: "modern_industrialization:constantan_plate" },
-            W: { type: "immersiveengineering:fluid_stack",
-                 amount: 1000,
-                 tag: "minecraft:water"}
+            W: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                tag: "minecraft:water"
+            }
         },
         outputItems: [[{ id: "immersiveengineering:radiator" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -219,7 +223,7 @@ ServerEvents.recipes(event => {
             P: { item: "minecraft:paper" }
         },
         outputItems: [[{ id: "milf:blank_blueprint" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -233,7 +237,7 @@ ServerEvents.recipes(event => {
             B: { item: "ytech:beeswax" }
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_copper" }, 8]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -247,7 +251,7 @@ ServerEvents.recipes(event => {
             B: { item: "ytech:beeswax" }
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_electrum" }, 8]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -262,7 +266,7 @@ ServerEvents.recipes(event => {
             B: { item: "ytech:beeswax" }
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_steel" }, 4]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -277,7 +281,7 @@ ServerEvents.recipes(event => {
             r: { item: "modern_industrialization:rubber_sheet" }
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_redstone" }, 4]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -333,8 +337,8 @@ ServerEvents.recipes(event => {
             L: { item: "immersiveengineering:connector_lv" }
         },
         outputItems: [[{ id: "immersiveengineering:powerpack" }, 1]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -350,8 +354,8 @@ ServerEvents.recipes(event => {
             N: { item: "modern_industrialization:electrum_nugget" }
         },
         outputItems: [[{ id: "immersiveengineering:dynamo" }, 1]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -367,8 +371,8 @@ ServerEvents.recipes(event => {
             A: { item: "modern_industrialization:copper_nugget" }
         },
         outputItems: [[{ id: "immersiveengineering:thermoelectric_generator" }, 1]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -382,11 +386,11 @@ ServerEvents.recipes(event => {
             S: { item: "immersiveengineering:component_steel" },
             B: { item: "immersiveengineering:basic_engineering" },
             G: { item: "milf:steel_infused_glass" },
-            L: { item: "immersiveengineering:light_bulb"}
+            L: { item: "immersiveengineering:light_bulb" }
         },
         outputItems: [[{ id: "immersiveengineering:cloche" }, 1]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -402,8 +406,8 @@ ServerEvents.recipes(event => {
             C: { item: "minecraft:bucket" },
         },
         outputItems: [[{ id: "milf:concrete_popsicle" }, 1]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -416,7 +420,7 @@ ServerEvents.recipes(event => {
             R: { item: "modern_industrialization:steel_rod" },
         },
         outputItems: [[{ id: "xkdeco:hollow_steel_beam" }, 3]],
-        removeRecipe:true,
+        removeRecipe: true,
     })
 
     const sheetmetalMaterials = ["copper", "aluminum", "lead", "silver", "nickel", "uranium", "constantan", "electrum", "steel", "iron", "gold"]
@@ -432,7 +436,7 @@ ServerEvents.recipes(event => {
                 P: { item: `modern_industrialization:${material}_plate` },
             },
             outputItems: [[{ id: `immersiveengineering:sheetmetal_${material}` }, 6]],
-            removeRecipe:true,
+            removeRecipe: true,
         })
 
         milfShaped(event, {
@@ -472,7 +476,7 @@ ServerEvents.recipes(event => {
             C: { item: "modern_industrialization:aluminum_curved_plate" }
         },
         outputItems: [[{ id: "immersiveengineering:jerrycan" }, 1]],
-        removeRecipe:true,
+        removeRecipe: true,
     })
 
     milfShaped(event, {
@@ -488,9 +492,9 @@ ServerEvents.recipes(event => {
             W: { item: "modern_industrialization:copper_wire" }
         },
         outputItems: [[{ id: "immersiveengineering:electric_lantern" }, 3]],
-        removeRecipe:true,
+        removeRecipe: true,
     })
-    
+
 
     //TODO: добавить всё что дробится и плавиться из руды или похожее на руду
     const ore_for_arc_furnace = [
@@ -509,7 +513,7 @@ ServerEvents.recipes(event => {
 
 
 
-KubeJSTweaks.beforeRecipes(event =>{
+KubeJSTweaks.beforeRecipes(event => {
 
     const disableByRecipeID = [
         /immersiveengineering:crafting\/.*hammercrushing.*/,
@@ -555,9 +559,9 @@ KubeJSTweaks.beforeRecipes(event =>{
 
     ]
 
-    disableByRecipeID.forEach(id =>{
+    disableByRecipeID.forEach(id => {
         event.disable(id)
     })
-    
+
 
 })

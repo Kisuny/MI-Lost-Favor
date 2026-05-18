@@ -107,16 +107,16 @@
 			size: 1.0d
 			tasks: [
 				{
-					entity: "fdbosses:chesed"
-					id: "187063CD0EA71C11"
-					type: "kill"
-					value: 1L
-				}
-				{
 					id: "21E99BBC702CABBB"
 					optional_task: true
 					structure: "fdbosses:chesed_arena"
 					type: "structure"
+				}
+				{
+					advancement: "fdbosses:qliphoth_awakening/chesed"
+					criterion: ""
+					id: "5286F58DA5379AE2"
+					type: "advancement"
 				}
 			]
 			x: -8.5d
@@ -132,16 +132,16 @@
 			size: 1.0d
 			tasks: [
 				{
-					entity: "fdbosses:malkuth"
-					id: "6A344B3BF843FB36"
-					type: "kill"
-					value: 1L
-				}
-				{
 					id: "425EEAB96E6A06FC"
 					optional_task: true
 					structure: "fdbosses:malkuth_arena"
 					type: "structure"
+				}
+				{
+					advancement: "fdbosses:qliphoth_awakening/malkuth"
+					criterion: ""
+					id: "2950C60A55273CD0"
+					type: "advancement"
 				}
 			]
 			x: -7.5d
@@ -1350,10 +1350,10 @@
 			dependencies: ["3D5FB6D17EC9693F"]
 			id: "2A8C0D9B2C194AD2"
 			tasks: [{
-				entity: "cataclysm:scylla"
-				id: "47C65D490721F33F"
-				type: "kill"
-				value: 1L
+				advancement: "cataclysm:kill_scylla"
+				criterion: ""
+				id: "7F54A45654BAAE5E"
+				type: "advancement"
 			}]
 			x: -7.0d
 			y: 19.0d
@@ -1368,10 +1368,10 @@
 			}
 			id: "0621BAAC08B04895"
 			tasks: [{
-				entity: "bosses_of_mass_destruction:gauntlet"
-				id: "15C89A2D3845DA00"
-				type: "kill"
-				value: 1L
+				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
+				criterion: ""
+				id: "6303FFC5535427DB"
+				type: "advancement"
 			}]
 			x: -13.5d
 			y: 14.0d
@@ -1880,10 +1880,10 @@
 			}
 			id: "5676B98948194125"
 			tasks: [{
-				entity: "bosses_of_mass_destruction:lich"
-				id: "20FABFE324BA8C1D"
-				type: "kill"
-				value: 1L
+				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+				criterion: ""
+				id: "1FB112CE9EDA34BB"
+				type: "advancement"
 			}]
 			x: -12.5d
 			y: 14.0d
@@ -1898,10 +1898,10 @@
 			}
 			id: "33AA69A920D7135E"
 			tasks: [{
-				entity: "bosses_of_mass_destruction:obsidilith"
-				id: "5AEA14D7B81FE1B7"
-				type: "kill"
-				value: 1L
+				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
+				criterion: ""
+				id: "6DE5C0B61B5F7BD7"
+				type: "advancement"
 			}]
 			x: -11.5d
 			y: 14.0d
@@ -1916,10 +1916,10 @@
 			}
 			id: "0FF37E339976CAAB"
 			tasks: [{
-				entity: "bosses_of_mass_destruction:void_blossom"
-				id: "3495EADCC2954BD0"
-				type: "kill"
-				value: 1L
+				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+				criterion: ""
+				id: "623005CF53946C65"
+				type: "advancement"
 			}]
 			x: -10.5d
 			y: 14.0d
@@ -2688,16 +2688,16 @@
 			size: 1.0d
 			tasks: [
 				{
-					entity: "fdbosses:geburah"
-					id: "3C52CDB275D5B488"
-					type: "kill"
-					value: 1L
-				}
-				{
 					id: "722692C4B7F49E17"
 					optional_task: true
 					structure: "fdbosses:geburah_arena"
 					type: "structure"
+				}
+				{
+					advancement: "fdbosses:qliphoth_awakening/geburah"
+					criterion: ""
+					id: "75278B83D03D1236"
+					type: "advancement"
 				}
 			]
 			x: -9.5d
@@ -2707,10 +2707,10 @@
 			dependencies: ["3D5FB6D17EC9693F"]
 			id: "3F8BF0BE75DDA98D"
 			tasks: [{
-				entity: "cataclysm:ender_guardian"
-				id: "642305242FD5E809"
-				type: "kill"
-				value: 1L
+				advancement: "cataclysm:kill_ender_guardian"
+				criterion: ""
+				id: "685404EB36577C20"
+				type: "advancement"
 			}]
 			x: -9.0d
 			y: 19.0d
@@ -2719,10 +2719,10 @@
 			dependencies: ["3D5FB6D17EC9693F"]
 			id: "05E3FDBA060F1CA6"
 			tasks: [{
-				entity: "cataclysm:netherite_monstrosity"
-				id: "37F6F96E63E8E25F"
-				type: "kill"
-				value: 1L
+				advancement: "cataclysm:kill_monstrosity"
+				criterion: ""
+				id: "2DB6C3DB679C3FB2"
+				type: "advancement"
 			}]
 			x: -15.0d
 			y: 19.0d
@@ -2730,21 +2730,21 @@
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
 			icon: {
-				id: "cataclysm:ignis_spawn_egg"
+				id: "cataclysm:bulwark_of_the_flame"
 			}
 			id: "721E7D2A5FB776D7"
 			tasks: [
-				{
-					entity: "cataclysm:ignis"
-					id: "02FE44C7B3DC3195"
-					type: "kill"
-					value: 1L
-				}
 				{
 					id: "16126DE256F62107"
 					item: { count: 1, id: "cataclysm:burning_ashes" }
 					optional_task: true
 					type: "item"
+				}
+				{
+					advancement: "cataclysm:kill_ignis"
+					criterion: ""
+					id: "219613774C1E0DBE"
+					type: "advancement"
 				}
 			]
 			x: -14.0d
@@ -2753,21 +2753,21 @@
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
 			icon: {
-				id: "cataclysm:the_harbinger_spawn_egg"
+				id: "cataclysm:witherite_ingot"
 			}
 			id: "1BE616ADE422AD7F"
 			tasks: [
-				{
-					entity: "cataclysm:the_harbinger"
-					id: "43007CFEB48AB1DA"
-					type: "kill"
-					value: 1L
-				}
 				{
 					id: "75964BCD51A14471"
 					item: { count: 1, id: "minecraft:nether_star" }
 					optional_task: true
 					type: "item"
+				}
+				{
+					advancement: "cataclysm:kill_harbinger"
+					criterion: ""
+					id: "054F9E9424170CDC"
+					type: "advancement"
 				}
 			]
 			x: -12.0d
@@ -2786,21 +2786,21 @@
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
 			icon: {
-				id: "cataclysm:ancient_remnant_spawn_egg"
+				id: "cataclysm:remnant_skull"
 			}
 			id: "706043A4CD58FF1F"
 			tasks: [
-				{
-					entity: "cataclysm:ancient_remnant"
-					id: "18B81DFDFC4AB02E"
-					type: "kill"
-					value: 1L
-				}
 				{
 					id: "21D37A511ADF36B0"
 					item: { count: 1, id: "cataclysm:necklace_of_the_desert" }
 					optional_task: true
 					type: "item"
+				}
+				{
+					advancement: "cataclysm:kill_remnant"
+					criterion: ""
+					id: "7F0A9877AE2C4FEB"
+					type: "advancement"
 				}
 			]
 			x: -13.0d
@@ -2809,20 +2809,20 @@
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
 			icon: {
-				id: "cataclysm:maledictus_spawn_egg"
+				id: "cataclysm:strange_key"
 			}
 			id: "6FB19077F74D8653"
 			tasks: [
 				{
-					entity: "cataclysm:maledictus"
-					id: "226603B8D66BAD2E"
-					type: "kill"
-					value: 1L
-				}
-				{
 					id: "325A3FAB4059AB54"
 					item: { count: 1, id: "cataclysm:strange_key" }
 					type: "item"
+				}
+				{
+					advancement: "cataclysm:kill_maledictus"
+					criterion: ""
+					id: "4AE8DAE9892CBCA3"
+					type: "advancement"
 				}
 			]
 			x: -10.0d
@@ -2831,20 +2831,20 @@
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
 			icon: {
-				id: "cataclysm:the_leviathan_spawn_egg"
+				id: "cataclysm:tidal_claws"
 			}
 			id: "1648F458FA2F75D9"
 			tasks: [
 				{
-					entity: "cataclysm:the_leviathan"
-					id: "00FEBEAE852D3564"
-					type: "kill"
-					value: 1L
-				}
-				{
 					id: "2EEF7659B91F7C78"
 					item: { count: 1, id: "cataclysm:abyssal_sacrifice" }
 					type: "item"
+				}
+				{
+					advancement: "cataclysm:kill_leviathan"
+					criterion: ""
+					id: "6EF68CF4E550B4E4"
+					type: "advancement"
 				}
 			]
 			x: -8.0d
@@ -3695,10 +3695,10 @@
 			]
 			id: "0752D6DB75CA88BC"
 			tasks: [{
-				entity: "eternal_starlight:lunar_monstrosity"
-				id: "322DF900F1E3810C"
-				type: "kill"
-				value: 1L
+				advancement: "eternal_starlight:kill_lunar_monstrosity"
+				criterion: ""
+				id: "7F3CBD9C602CF99F"
+				type: "advancement"
 			}]
 			x: -14.5d
 			y: 14.0d

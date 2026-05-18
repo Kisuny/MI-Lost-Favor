@@ -165,6 +165,7 @@ ClientEvents.lang('en_us', event => {
 
     event.add("curios.identifier.tool_belt", "Tool Belt")
     event.add("curios.identifier.pocket_lamp", "Pocket lamp")
+    event.add("curios.identifier.time_sand_pouch", "Temporal Pouch")
     event.add("curios.identifier.backpack", "Backpack")
     event.add("curios.identifier.atlas", "Atlas")
 

@@ -33,6 +33,7 @@ const trinkets_slot_list_reward = [
     { quest_id: '116FEA5302E15B7D', trinket_slot: 'hands' },
     { quest_id: '6C1E7006967265FC', trinket_slot: 'charm' },
     { quest_id: '4847BCB4A0147A6D', trinket_slot: 'crafting_on_a_stick' },
+    { quest_id: '6D760C6378680C1F', trinket_slot: 'time_sand_pouch' },
 ]
 
 trinkets_slot_list_reward.forEach(reward => {

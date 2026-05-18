@@ -158,6 +158,7 @@ ClientEvents.lang('ru_ru', event => {
 
     event.add("curios.identifier.tool_belt", "Пояс")
     event.add("curios.identifier.pocket_lamp", "Карманный фонарь")
+    event.add("curios.identifier.time_sand_pouch", "Мешок с временем")
     event.add("curios.identifier.backpack", "Рюкзак")
     event.add("curios.identifier.atlas", "Атлас")
 

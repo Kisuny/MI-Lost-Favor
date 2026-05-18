@@ -3305,7 +3305,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: -39.0d
@@ -4773,9 +4773,14 @@
 			dependencies: ["6ABBD358C9BA9BB0"]
 			id: "581464B581E77F01"
 			tasks: [{
-				id: "409EC4E143829808"
-				item: { count: 1, id: "cognition:infected_bookshelf" }
-				type: "item"
+				icon: {
+					id: "cognition:infected_bookshelf"
+				}
+				id: "78FA5F211771140D"
+				observe_type: 0
+				timer: 0L
+				to_observe: "cognition:infected_bookshelf"
+				type: "observation"
 			}]
 			x: -39.0d
 			y: -0.5d
@@ -4784,9 +4789,14 @@
 			dependencies: ["2738ED6BB25EEC39"]
 			id: "7488A8F409A8559A"
 			tasks: [{
-				id: "7C252AA4CD0D43BD"
-				item: { count: 1, id: "cognition:infected_archivers_bookshelf" }
-				type: "item"
+				icon: {
+					id: "cognition:infected_archivers_bookshelf"
+				}
+				id: "7B55B57E485D019C"
+				observe_type: 0
+				timer: 0L
+				to_observe: "cognition:infected_archivers_bookshelf"
+				type: "observation"
 			}]
 			x: -39.5d
 			y: 0.5d
@@ -4806,9 +4816,14 @@
 			dependencies: ["69822986F33DEF98"]
 			id: "3EE56547A8410DBE"
 			tasks: [{
-				id: "0105C8B0A4B72CD9"
-				item: { count: 1, id: "cognition:infected_enchanted_bookshelf" }
-				type: "item"
+				icon: {
+					id: "cognition:infected_enchanted_bookshelf"
+				}
+				id: "6482E368A547E29D"
+				observe_type: 0
+				timer: 0L
+				to_observe: "cognition:infected_enchanted_bookshelf"
+				type: "observation"
 			}]
 			x: -39.5d
 			y: -1.5d

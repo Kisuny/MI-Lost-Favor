@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
     const removing_by_recipe_id = [
         "spectrum:smelting/blackslag_ores/iron",
+        "spectrum:enchanter/spectrum_books/indestructible",
     ]
 
     removing_by_recipe_id.forEach(id => {

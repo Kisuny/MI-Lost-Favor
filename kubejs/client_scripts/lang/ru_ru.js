@@ -103,6 +103,14 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.pet_rock.notification4.f', `...Но они разбежались`)
     event.add('milf.pet_rock.notification5.f', `...Просто так`)
 
+    event.add('milf.divine_mint.gui.possible_loot', `Возможная награда:`)
+    event.add('milf.divine_mint.gui.no_effect', `Нет эффекта`)
+    event.add('milf.divine_mint.gui.difficulty.hard', `Сложная сложность`)
+    event.add('milf.divine_mint.gui.difficulty.normal', `Нормальная сложность`)
+
+    event.add('milf.mi_upgrader.tooltip', `ПКМ на размещённый блок с этим предметом, чтобы ${textAnimatorString("улучшить", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} его. Сохраняет ${textAnimatorString("все", "wave", { a: 0.25, w: 0.25, f: 0.5 })} содержимое. Не расходуется при использовании, даже когда используется как ингредиент для крафта.`)
+    event.add('milf.recall_concoction.new_pos', `Новая позиция для возвращения сохранена!`)
+
     event.add('milf.placers.notification1', `Не хватает места, чтобы ${textAnimatorString("это", "bounce")} разместить`)
     event.add('milf.placers.notification2', `Сначала необходимо выбрать ${textAnimatorString("правильное направление", "glitch")}`)
     event.add('milf.placers.notification3', `Структура должна быть ${textAnimatorString("ТОЧНО", "shake")} такой же`)

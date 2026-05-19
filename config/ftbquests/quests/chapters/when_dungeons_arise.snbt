@@ -2016,55 +2016,24 @@
 			}
 			id: "6E11ECC7B831480C"
 			min_required_dependencies: 12
-			rewards: [
-				{
-					auto: "enabled"
-					icon: {
-						components: {
-							"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png"
-						}
-						id: "ftbquests:custom_icon"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png"
 					}
-					id: "2BD4B3CA5BEDBA19"
-					team_reward: false
-					type: "custom"
+					id: "ftbquests:custom_icon"
 				}
-				{
-					id: "75689A5F2838585E"
-					item: {
-						count: 1
-						id: "recall_potion:end_potion"
-					}
-					type: "item"
-				}
-			]
+				id: "2BD4B3CA5BEDBA19"
+				team_reward: false
+				type: "custom"
+			}]
 			tasks: [{
 				id: "608727F73B6EDF0F"
 				type: "checkmark"
 			}]
 			x: 11.5d
 			y: 10.0d
-		}
-		{
-			dependencies: ["6E11ECC7B831480C"]
-			id: "3D1D640461E3E94E"
-			rewards: [{
-				count: 2
-				id: "708E81D900DD5C20"
-				item: {
-					count: 1
-					id: "recall_potion:end_potion"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				count: 4L
-				id: "42D9E8E9A5017AF8"
-				item: { count: 1, id: "recall_potion:end_potion" }
-				type: "item"
-			}]
-			x: 11.5d
-			y: 11.5d
 		}
 		{
 			dependencies: ["2B815502453269AF"]

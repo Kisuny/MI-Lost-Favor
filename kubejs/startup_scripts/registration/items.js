@@ -25,6 +25,7 @@ let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation
 
 createNewItem('recall_concoction', { 
     stackSize: 17,
+    lang: { "en_us": "Recall Concotion", "ru_ru": "Зелье Возвращения" },
     use: {
         animation: "drink", 
         duration: 80, 

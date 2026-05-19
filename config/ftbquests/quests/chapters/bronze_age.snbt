@@ -3751,14 +3751,6 @@
 		{
 			dependencies: ["336C43BDBE0A0995"]
 			id: "4DD1404D1B9CA7F7"
-			rewards: [{
-				id: "1DA7C7FDA684F89C"
-				item: {
-					count: 1
-					id: "recall_potion:nether_potion"
-				}
-				type: "item"
-			}]
 			shape: "octagon"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -3771,7 +3763,7 @@
 				id: "5185610C55BE45D6"
 				type: "dimension"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: 0.0d
 		}
 		{
@@ -3807,7 +3799,7 @@
 				item: { count: 1, id: "immersiveengineering:blastbrick" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: 1.0d
 		}
 		{
@@ -3862,7 +3854,7 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
+			x: -8.5d
 			y: 1.0d
 		}
 		{
@@ -3879,7 +3871,7 @@
 				}
 				type: "item"
 			}]
-			shape: "octagon"
+			shape: "pentagon"
 			tasks: [
 				{
 					id: "094B884A20544321"
@@ -3913,27 +3905,6 @@
 			]
 			x: -9.0d
 			y: -2.0d
-		}
-		{
-			dependencies: ["4DD1404D1B9CA7F7"]
-			id: "3AADB215552DAA5B"
-			rewards: [{
-				count: 2
-				id: "72FBC5E4272E7CC1"
-				item: {
-					count: 1
-					id: "recall_potion:nether_potion"
-				}
-				type: "item"
-			}]
-			shape: "pentagon"
-			tasks: [{
-				id: "65578A74B692853E"
-				item: { count: 1, id: "recall_potion:nether_potion" }
-				type: "item"
-			}]
-			x: -8.0d
-			y: -1.0d
 		}
 		{
 			dependencies: ["002562156B0D8E9F"]

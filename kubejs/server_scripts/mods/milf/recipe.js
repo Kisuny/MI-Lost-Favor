@@ -34,4 +34,22 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:glass_bottle" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "item": "minecraft:poisonous_potato" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "item": "minecraft:poisonous_potato" },
+            { "tag": "hexerei:flower_biproduct" }
+        ],
+        output: "milf:recall_concoction",
+        amount: 2,
+        removeRecipe: true
+    })
+
 })

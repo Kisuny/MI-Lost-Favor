@@ -108,7 +108,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.divine_mint.gui.difficulty.normal', `Normal difficulty`)
 
     event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${textAnimatorString("upgrade", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} it. Preserves ${textAnimatorString("all", "wave", { a: 0.25, w: 0.25, f: 0.5 })} the content. Not consumed on use, even when used as a crafting ingredient.`)
-
+    event.add('milf.recall_concoction.new_pos', `New recall position saved!`)
 
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)
     event.add('milf.placers.notification2', `You have to choose a ${textAnimatorString("valid direction", "glitch")} first`)

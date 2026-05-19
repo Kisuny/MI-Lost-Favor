@@ -145,6 +145,15 @@ ServerEvents.recipes(event => {
     miMachineCraft(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [
+            [{ item: "modern_industrialization:coal_dust" }, 1],
+            [{ item: "modern_industrialization:bronze_machine_casing" }, 1]
+        ],
+        outputItems: [[{ item: "moderndynamics:machine_extender" }, 1]]
+    })
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
             [{ item: "modern_industrialization:steel_large_plate" }, 1], 
             [{ item: "immersiveengineering:mold_wire" }, 1, 0]
         ],

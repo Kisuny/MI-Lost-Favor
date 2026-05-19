@@ -1,3 +1,5 @@
+//priority: 2
+
 let $Screen = Java.loadClass("net.minecraft.client.gui.screens.Screen")
 let $RenderGuiLayerEvent$Pre = Java.loadClass("net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Pre")
 let $VanillaGuiLayers = Java.loadClass("net.neoforged.neoforge.client.gui.VanillaGuiLayers")
@@ -16,8 +18,6 @@ let DIVINE_MINT_GUI_1 = $ResourceLocation.fromNamespaceAndPath("milf", "textures
 let DIVINE_MINT_GUI_2 = $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_2.png")
 
 let MILF_BOSSES = global.milfBosses
-// MILF_BOSSES["born_in_chaos_v1:fallen_chaos_knight"] = {}
-// MILF_BOSSES["mythsandlegends:black_charro"] = {}
 
 const maxInt = 2 ** 32
 const TWO_PI = Math.PI * 2
@@ -366,75 +366,39 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
 
                 let entityType = $BuiltInRegistries.ENTITY_TYPE.get(new $ResourceLocation.parse(bossId))
                 let entity = entityType.create(Client.level)
+                // if (bossId == "mythsandlegends:black_charro") {
+                //     entity.getAnimatableInstanceCache()
+                //         .getManagerForId(entity.getId())
+                //         .getAnimationControllers()
+                //         .get("controller")
+                //         .tryTriggerAnimation("rage")
+                //     for (let index = 0; index < 60; index++) {
+                //         entity.tick()
+                //     }
+                    
+                    
+                // }
                 entitiesToRender[bossId] = Object.assign({}, bossData, { entity: entity }) 
 
             })
 
-            this.bossSelector.setItemsToRender(entitiesToRender)
-            this.bossSelector.setCurrentlySelectedID(Object.keys(entitiesToRender)[0])
+            this.bossSelector.changeItemsToRender(entitiesToRender, 20, { newTier: this.bossTier })
 
-            this.bossSelector.mouseReleased(0, 0, 0)
-            this.bossSelector.initiateSpin(5, false)
-            this.onReelsSpinStart()
+            // this.bossSelector.setItemsToRender(entitiesToRender)
+            // this.bossSelector.setCurrentlySelectedID(Object.keys(entitiesToRender)[0])
 
-            this.infoBoxWidget.updateBossTier(this.bossTier)
-            this.infoBoxWidget.updateBossNameAndID(entitiesToRender[this.bossSelector.getCurrentlySelectedID()].entity.getDisplayName(), this.bossSelector.getCurrentlySelectedID())
+            //this.bossSelector.mouseReleased(0, 0, 0)
+            //this.bossSelector.initiateSpin(15, true)
+            this.areReelsSpinning = true
+            this.lever.onReelsSpinStart()
+
+            // this.infoBoxWidget.updateBossTier(this.bossTier)
+            // this.infoBoxWidget.updateBossNameAndID(entitiesToRender[this.bossSelector.getCurrentlySelectedID()].entity.getDisplayName(), this.bossSelector.getCurrentlySelectedID())
+
+
         }
 
     }, DIVINE_MINT_SCREEN_TITLE))
-})
-
-NetworkEvents.dataReceived('milf_divine_mint_server_loot_data', (event) => {
-
-    let player = event.getPlayer()
-
-    let data = event.data
-
-    for (let tierID of data.getAllKeys()) {
-
-        let tierBosses = data.get(tierID)
-
-        //console.log(tierBosses);
-        
-
-        for (let bossID of tierBosses.getAllKeys()) {
-
-            let itemArray = tierBosses.get(bossID)
-            let jsItemArray = []
-
-            itemArray.forEach(compoundTag => {
-
-                for (let itemID of compoundTag.getAllKeys()) {
-                    let itemDataTag = compoundTag.get(itemID)
-
-                    let chance = itemDataTag.getFloat("chance")
-                    let count = itemDataTag.getString("count")
-
-                    //console.log(bossID + " " + itemID + " " + chance + " " + count);
-
-                    let jsObject = {}
-
-                    jsObject[itemID] = { chance: chance, count: count }
-
-                    jsItemArray.push(jsObject)
-
-                }
-
-            })
-
-            MILF_BOSSES[tierID][bossID] = Object.assign({}, MILF_BOSSES[tierID][bossID], { loot: jsItemArray })
-
-        }
-
-    }
-
-
-
-    //console.log(MILF_BOSSES);
-    
-
-    //console.log(data)
-
 })
 
 function createBossReelWidget(x, y, width, height, component){
@@ -555,6 +519,11 @@ function createBossReelWidget(x, y, width, height, component){
             }
         },
 
+        onItemsChange(onChangeContext){
+            this.reelParentScreen.getInfoBox().updateBossTier(onChangeContext.newTier)
+            this.reelParentScreen.getInfoBox().updateBossNameAndID(this.itemsToRenderEntries[this.getCurrentlySelectedID()].entity.getDisplayName(), this.getCurrentlySelectedID())
+        },
+
         onNewItemSelected(bossID) {
             this.reelParentScreen.getInfoBox().updateBossNameAndID(this.itemsToRenderEntries[bossID].entity.getDisplayName(), bossID)
         },
@@ -587,7 +556,7 @@ function createDifficultyReelWidget(x, y, width, height, component) {
     let overrides = {
         onNewItemSelected(difficulty) {
             let difficultyData = this.itemsToRenderEntries[difficulty]
-            this.reelParentScreen.getInfoBox().updateBossDifficulty(difficultyData)
+            this.reelParentScreen.getInfoBox().updateBossDifficulty(Object.assign({}, difficultyData, { difficultyID: difficulty }))
         }
     }
 
@@ -666,6 +635,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
     const AbstractReelWidget = {
 
         itemsToRenderEntries: {},
+        nextItemsToRenderEntries: {},
 
         selectorRot: 0,
         guiTicks: 0,
@@ -687,9 +657,14 @@ function createReelWidget(x, y, width, height, component, overrides) {
         isSpinning: false,
         spinTicks:0,
 
+        itemsChangeTicks: 0,
+        itemsChangeTotalTicks: 0,
+        onChangeContext: { },
+
         setItemsToRender(items) {
             this.itemsToRenderEntries = items
             this.TO_RENDER_SIZE = Object.keys(items).length
+            this.setCurrentlySelectedID(Object.keys(items)[0])
         },
 
         setParentScreen(screen) {
@@ -706,7 +681,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
 
         renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
 
-            const ENTITY_SCALE = this.ENTITY_SCALE
+            //const ENTITY_SCALE = this.ENTITY_SCALE
             const TO_RENDER_SIZE = this.TO_RENDER_SIZE
 
             const BOSS_BAIT_SELECTOR_OFFSET = Math.PI / TO_RENDER_SIZE
@@ -820,6 +795,19 @@ function createReelWidget(x, y, width, height, component, overrides) {
             //to pass data or smt
         },
 
+        onItemsChange(onChangeContext){
+
+        },
+
+        changeItemsToRender(items, ticks, onChangeContext){
+
+            this.nextItemsToRenderEntries = items
+            this.onChangeContext = onChangeContext
+
+            this.itemsChangeTicks = ticks
+            this.itemsChangeTotalTicks = ticks
+        },
+
         mouseClicked(mouseX, mouseY, button) {
             if (button == 0 && this.isMouseOver(mouseX, mouseY)) {
                 this.isDragging = true
@@ -845,7 +833,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
         },
 
         tick() {
-            if (!this.isDragging && this.spinTicks == 0) {
+            if (!this.isDragging && this.spinTicks == 0 && this.itemsChangeTicks == 0) {
                 this.prevSelectorRot = this.selectorRot
 
                 let delta = this.targetRotation - this.selectorRot
@@ -879,9 +867,37 @@ function createReelWidget(x, y, width, height, component, overrides) {
 
 
                 this.selectorRot += increment
+    
                 if (this.spinTicks == 0) {
                     this.isSpinning = false
                     this.isSpinningWithEasing = false
+                    this.targetRotation = this.currentlySelectedIndex * (TWO_PI) / this.TO_RENDER_SIZE
+                    this.reelParentScreen.onReelsSpinEnd()
+                }
+            }
+            if(this.itemsChangeTicks > 0){
+                this.prevSelectorRot = this.selectorRot
+
+                let t = this.itemsChangeTicks / this.itemsChangeTotalTicks
+
+                let increment = Math.PI / 2.3
+                
+                increment = increment * easeZeroOneZero(t, 2)
+                console.log(increment);
+                         
+
+                this.selectorRot += increment
+
+                this.itemsChangeTicks--
+
+                if (this.itemsChangeTicks == (this.itemsChangeTotalTicks / 2) | 0){
+                    this.setItemsToRender(this.nextItemsToRenderEntries)
+                    this.onItemsChange(this.onChangeContext)
+                }
+
+
+                if (this.itemsChangeTicks == 0){
+                    this.targetRotation = this.currentlySelectedIndex * (TWO_PI) / this.TO_RENDER_SIZE
                     this.reelParentScreen.onReelsSpinEnd()
                 }
             }
@@ -928,10 +944,12 @@ function createInfoBoxWidget(x, y, width, height, component) {
         effectRL: null,
         effectModifier: 1,
         effectName:null,
+        effectID: null,
 
         bossDifficultyRL: null,
         bossDifficultyModifier: 1,
         difficultyName:null,
+        difficultyID: null,
 
         lootModifier: 1,
 
@@ -945,8 +963,16 @@ function createInfoBoxWidget(x, y, width, height, component) {
         getDataForCoin(){
             return {
                 bossName: this.bossName,
+                bossID: this.bossID,
+                bossTier: this.bossTier,
+
                 effectName: this.effectName,
-                difficultyName: this.difficultyName
+                effectID: this.effectID,
+
+                difficultyName: this.difficultyName,
+                difficultyID: this.difficultyID,
+
+                lootModifier: this.lootModifier.toFixed(1)
             }
         },
 
@@ -1080,6 +1106,7 @@ function createInfoBoxWidget(x, y, width, height, component) {
             this.effectRL = effectData.resourceLocation
             this.effectModifier = effectData.modifier
             this.lootModifier = this.effectModifier * this.bossDifficultyModifier
+            this.effectID = effectData.effectID
 
             let effect = $BuiltInRegistries.MOB_EFFECT.get($ResourceLocation.parse(effectData.effectID))
             this.effectName = effect ? effect.getDisplayName() : Component.translatable("milf.divine_mint.gui.no_effect")
@@ -1092,6 +1119,8 @@ function createInfoBoxWidget(x, y, width, height, component) {
             this.bossDifficultyRL = difficultyData.resourceLocation
             this.bossDifficultyModifier = difficultyData.modifier
             this.lootModifier = this.effectModifier * this.bossDifficultyModifier
+
+            this.difficultyID = difficultyData.difficultyID
 
             this.difficultyName = difficultyData.name
             this.difficultyName = Component.of("◆ ").append(this.difficultyName)
@@ -1519,19 +1548,24 @@ function createCoinAcceptorWidget(x, y, width, height, component) {
 
             let dataForCoin = this.coinAcceptorParentScreen.getInfoBox().getDataForCoin()
 
-            let bossNameComponent = dataForCoin.bossName
-            let effectNameComponent = dataForCoin.effectName
-            let difficultyNameComponent = dataForCoin.difficultyName
+            let { bossName, effectName, difficultyName, bossID, effectID, bossTier, difficultyID, lootModifier } = dataForCoin
 
             let registryAccess = Client.level.registryAccess()
 
-            let jsonBossName = $Component$Serializer.toJson(bossNameComponent, registryAccess)
-            let jsonEffectName = $Component$Serializer.toJson(effectNameComponent, registryAccess)
-            let jsonDifficultyName = $Component$Serializer.toJson(difficultyNameComponent, registryAccess)
+            let jsonBossName = $Component$Serializer.toJson(bossName, registryAccess)
+            let jsonEffectName = $Component$Serializer.toJson(effectName, registryAccess)
+            let jsonDifficultyName = $Component$Serializer.toJson(difficultyName, registryAccess)
             
             data.putString("bossNameJson", jsonBossName)
             data.putString("effectNameJson", jsonEffectName)
             data.putString("difficultyNameJson", jsonDifficultyName)
+
+            data.putString("bossID", bossID)
+            data.putString("effectID", effectID)
+            data.putString("difficultyID", difficultyID)
+
+            data.putString("bossTier", bossTier)
+            data.putString("lootModifier", lootModifier)
 
             coinStack.set($DataComponents.CUSTOM_DATA, data)
 
@@ -1562,6 +1596,59 @@ function createCoinAcceptorWidget(x, y, width, height, component) {
         x, y, width, height, component
     )
 }
+
+NetworkEvents.dataReceived('milf_divine_mint_server_loot_data', (event) => {
+
+    let player = event.getPlayer()
+
+    let data = event.data
+
+    for (let tierID of data.getAllKeys()) {
+
+        let tierBosses = data.get(tierID)
+
+        //console.log(tierBosses);
+
+
+        for (let bossID of tierBosses.getAllKeys()) {
+
+            let itemArray = tierBosses.get(bossID)
+            let jsItemArray = []
+
+            itemArray.forEach(compoundTag => {
+
+                for (let itemID of compoundTag.getAllKeys()) {
+                    let itemDataTag = compoundTag.get(itemID)
+
+                    let chance = itemDataTag.getFloat("chance")
+                    let count = itemDataTag.getString("count")
+
+                    //console.log(bossID + " " + itemID + " " + chance + " " + count);
+
+                    let jsObject = {}
+
+                    jsObject[itemID] = { chance: chance, count: count }
+
+                    jsItemArray.push(jsObject)
+
+                }
+
+            })
+
+            MILF_BOSSES[tierID][bossID] = Object.assign({}, MILF_BOSSES[tierID][bossID], { loot: jsItemArray })
+
+        }
+
+    }
+
+
+
+    //console.log(MILF_BOSSES);
+
+
+    //console.log(data)
+
+})
 
 NativeEvents.onEvent($RenderGuiLayerEvent$Pre, event => {
 

@@ -19,4 +19,9 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('block', event => {
     event.removeAll('minecraft:enderman_holdable')
+
+    event.remove("minecraft:nylium", "minecraft:mycelium")
+    event.remove("minecraft:nylium", "minecraft:netherrack")
+    event.remove("minecraft:nylium", "minecraft:grass_block")
+    event.remove("minecraft:nylium", "minecraft:moss_block")
 })

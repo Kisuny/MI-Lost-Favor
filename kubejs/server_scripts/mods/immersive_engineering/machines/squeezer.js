@@ -1,41 +1,22 @@
-ServerEvents.recipes(event => {
-    /*
-    event.remove({ type: 'immersiveengineering:squeezer' })
-    function mi_squeezer(ingredients, result){
 
-
-        let input_type = "item"
-        let output_type = "fluid"
-        if (ingredients.get("tag") != null) {
-            input_type = "tag"
-        }
-
-        var inputs = {}
-        inputs[input_type] = ingredients.get(input_type)
-        var outputs = {}
-        outputs.id = result.get(output_type)
-        outputs.amount = result.get("amount")
-
-        var recipe = {}
-        recipe.type = "immersiveengineering:squeezer"
-        recipe.energy = 3200
-        recipe.input = inputs
-        recipe.fluid = outputs
-        event.custom(recipe)
-
+const ieSqueezerCraft = (event, args) => {
+    let recipe = {
+        type: "immersiveengineering:squeezer",
+        energy: args.energy || 6400,
+        input: Object.assign({}, { "basePredicate": args.inputItems[0][0] }, { count: args.inputItems[0][1] || 1 }),
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+        fluid: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000})
     }
-
-    event.forEachRecipe({ id: /modern_industrialization:.*to_plant_oil/}, r => {
-        try{
-            console.log(r);
-            let ingredients = r.json.get("item_inputs")
-            let outputs = r.json.get("fluid_outputs")
-            mi_squeezer(ingredients,outputs)
-        }
-        catch(error)
-        {
-        }
-
+    if (!args.compatOff) {
+       
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+ServerEvents.recipes(event => {
+    ieSqueezerCraft(event, {
+        inputItems: [[{ item: "minecraft:jungle_leaves" }, 1]],
+        outputItems: [[{ id: "milf:nutmeg" }, 1]],
+        outputFluids: [[{ id: "modern_industrialization:plant_oil" }, 30]],
     })
-    */
 })

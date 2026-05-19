@@ -88,7 +88,6 @@ ItemEvents.modifyTooltips(event => {
         /tempad:.*/,
         /chunkloaders:.*/,
         /fluxnetworks:.*/,
-        /buildinggadgets2:.*/,
         /replication:.*/,
     ]
     wip_tooltip.forEach(element => {

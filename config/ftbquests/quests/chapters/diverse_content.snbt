@@ -159,6 +159,12 @@
 			x: -18.5d
 			y: -2.5d
 		}
+		{
+			id: "69068F997359A590"
+			linked_quest: "349B96434E8FA41C"
+			x: -37.5d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -256,16 +262,6 @@
 			}]
 			x: 1.0d
 			y: -6.5d
-		}
-		{
-			id: "349B96434E8FA41C"
-			tasks: [{
-				id: "11FBDE1DCF44D41F"
-				item: { count: 1, id: "angelring:angel_ring" }
-				type: "item"
-			}]
-			x: -37.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]

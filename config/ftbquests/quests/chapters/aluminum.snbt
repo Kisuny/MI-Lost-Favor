@@ -1690,5 +1690,94 @@
 			x: 3.5d
 			y: 3.5d
 		}
+		{
+			dependencies: ["1C00BD0399683CCA"]
+			id: "4658277E6F19018B"
+			tasks: [{
+				id: "364F022F3C0ADA97"
+				item: { count: 1, id: "modern_industrialization:lv_storage_unit" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["14308FB8B934DAAC"]
+			id: "5CEDA5F61D74B3A8"
+			tasks: [{
+				id: "6C54727CD725981C"
+				item: { components: { "buildinggadgets2:gadget_uuid": [I; -1928899039, -22264153, -1691398364, -357535580 ] }, count: 1, id: "buildinggadgets2:gadget_building" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["14308FB8B934DAAC"]
+			id: "121B443B4996E62B"
+			tasks: [{
+				id: "411DA0883D0CD4E3"
+				item: { components: { "buildinggadgets2:gadget_uuid": [I; -970031559, 808995998, -1713245363, 2121791725 ] }, count: 1, id: "buildinggadgets2:gadget_exchanging" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["14308FB8B934DAAC"]
+			id: "278211E712E220D5"
+			tasks: [{
+				id: "5C8E51678C069CB6"
+				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["14308FB8B934DAAC"]
+			id: "10CE0A4F7811C485"
+			tasks: [{
+				id: "7C062656C7EA2282"
+				item: { components: { "buildinggadgets2:copy_start_pos": [I; 107, 88, 27 ], "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["14308FB8B934DAAC"]
+			id: "02836553495C2849"
+			tasks: [{
+				id: "247DAAFBBC57CD9B"
+				item: { count: 1, id: "buildinggadgets2:gadget_destruction" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4658277E6F19018B"]
+			id: "14308FB8B934DAAC"
+			min_width: 300
+			shape: "heart"
+			tasks: [{
+				id: "3CC7AB10CF42EE49"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["278211E712E220D5"]
+			id: "45C5E9EB1E15F9D1"
+			tasks: [{
+				id: "42D4FAE857A7BDAB"
+				item: { count: 1, id: "buildinggadgets2:template_manager" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
 	]
 }

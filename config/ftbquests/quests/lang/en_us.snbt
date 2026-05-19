@@ -102,6 +102,11 @@
 		""
 		"Смотрит в низ - даёт больше воды, вверх - меньше. "
 	]
+	quest.02836553495C2849.quest_desc: [
+		"Clear large areas very fast for digging, tunnels, or land cleanup. &7Shift-right-click&r to set the size and shape, then &aright-click&r to destroy the marked area. It gives no drops, so use it only when you do not need the blocks back"
+		"{@pagebreak}"
+		"Быстро очищает большие области для копки, тоннелей и уборки местности. &7Shift-правой кнопкой&r задай размер и форму, потом &aправой кнопкой&r удали выделенную область. Дроп не выпадает, поэтому используй его только если блоки не нужны обратно"
+	]
 	quest.02AE8C2723A731E7.quest_desc: [
 		"The acid was already potent. LETS MAKE IT MORE! Now with access to stronger ingredients, I can reformulate the acid oil using toxin. As such, the acid effect has been amplified, making it reduce armor strength even more, while gaining the ability to dissolve diamond level ores."
 		"{@pagebreak}"
@@ -422,6 +427,11 @@
 		"{@pagebreak}"
 		"Всех &#FEECD6заинтересовавшихся&r приглашаем в книжку &#9BB8EDSpectrum&r'a, расписывать тут такую механику не видим смысла!"
 	]
+	quest.10CE0A4F7811C485.quest_desc: [
+		"Move a build to a new place instead of copying it. Select the area, use &eCut&r to store it in the gadget, then &ePaste&r to place it later. It also keeps block entity data, including chest contents, but it has no undo"
+		"{@pagebreak}"
+		"Переносит постройку в новое место вместо обычного копирования. Выдели область, используй &eCut&r, чтобы сохранить ее в гаджете, потом &ePaste&r для установки. Он сохраняет данные block entities, включая содержимое сундуков, но отмены нет"
+	]
 	quest.10DF8F26503CA411.title: "World Tier: Pinnacle"
 	quest.10EDC166831C6721.quest_desc: [
 		"With even greater potential in material, I can enhance both the capacity and the duration of the flask even further. Now I can keep the effect for triple the normal length. This power is UNBELIEVABLE!"
@@ -449,6 +459,11 @@
 		"Процесс может быть долгим, но очень важно знать, каковы эти свойства. Мне нужно ввести раствор в достаточно сильного подопытного, и когда концентрация яда в нём достигнет минимума, мне откроется свойство этого ингредиента!"
 		""
 		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (яд должен подойти), и в этот момент воспользоваться иглой."
+	]
+	quest.121B443B4996E62B.quest_desc: [
+		"Replace one block type with another without breaking the build. &7Shift-right-click&r the block you want to match, choose exchange mode, then &aright-click&r the area. It can work on connected areas, use fuzzy replacement, and support block entities if enabled"
+		"{@pagebreak}"
+		"Меняет один тип блока на другой без разрушения постройки. &7Shift-правой кнопкой&r выбери нужный блок, потом включи режим замены и нажми &aправой кнопкой&r по области. Поддерживает связные области, fuzzy-замену и block entities, если это включено"
 	]
 	quest.126C6EE35C263E3A.quest_desc: [
 		"When lightning hits the ground, it leaves small shards behind."
@@ -513,6 +528,15 @@
 		"Hostile Neural Networks allows you to train data models and run simulations, producing mob predictions, which can be used to generate mob loot."
 		""
 		"The fundamental unit of this mod is the Data Model - an item which holds information about an entity that you can utilize to generate their drops. To get a Data Model, you must first craft a Data Model Framework, and use it on the target entity to build the model. Once you have your model, you will have to train it."
+	]
+	quest.14308FB8B934DAAC.quest_desc: [
+		"&oAll Building Gadgets items need &bForge Energy&r&o. Use the &esettings menu&r(&cX&r key with gadget in hand) to change &amodes&r, set &erange&r, &7anchor&r the preview, and &cundo&r the last action where the tool allows it.&r"
+		""
+		"You can also use the &cU&r key to &cundo&r your last action!"
+		"{@pagebreak}"
+		"&oВсе предметы Building Gadgets работают на &bForge Energy&r&o. Через &eменю настроек&r(кнопка &cX&r с гаджетом в руках) можно менять &aрежимы&r, ставить &eдиапазон&r, закреплять &7предпросмотр&r и &cотменять&r последнее действие там, где это поддерживается.&r"
+		""
+		"Вы так же можеет использовать кнопку&c U&r чтобы отменить последнее действией!"
 	]
 	quest.146496E17DF6BE97.quest_desc: [
 		"The &#9BB8EDEnder Dropper&r is an opposite of the &#9BB8EDEnder Hopper&r. With each &#d33b2bredstone pulse&r, it ejects an item from your personal &#9BB8EDEnder Chest&r. "
@@ -917,6 +941,11 @@
 		"Тебе придется поплавать чтобы добыть кусочек данной субстанции."
 		""
 		"Относись внимательно, к каждому ресурсу, который плавает себе спокойно в глубоких водах!"
+	]
+	quest.278211E712E220D5.quest_desc: [
+		"Copy a 3D build area and paste it elsewhere. Use &eCopy&r to select the area, then &ePaste&r to place it. You still need the blocks in your inventory, and you can &erotate&r, &cmirror&r, &7offset&r, or &7anchor&r the preview before placing"
+		"{@pagebreak}"
+		"Копирует 3D-область и вставляет ее в другое место. В режиме &eCopy&r выдели область, потом переключись на &ePaste&r и нажми &aправой кнопкой&r для вставки. Для работы все равно нужны блоки в инвентаре, а предпросмотр можно &eповорачивать&r, &cзеркалить&r, &7сдвигать&r и &7закреплять&r"
 	]
 	quest.27B5155AD94E6900.quest_desc: [
 		"Find a lost city in the Deeper Down"
@@ -1663,6 +1692,11 @@
 		"{@pagebreak}"
 		"Для достижения истинного совершенства по-прежнему потребуется немного удачи. В своих путешествиях вы можете встретить Сигил злобы — эзотерический артефакт, который случайным образом изменяет аффикс предмета. Что именно он делает, остается загадкой."
 	]
+	quest.45C5E9EB1E15F9D1.quest_desc: [
+		"Save a copied build as a &btemplate&r and load it later. Put a Copy-Paste Gadget with copied data in the &bleft slot&r, &epaper&r in the &bright slot&r, give the template a &bname&r, and save it. You can also share the &ctemplate code&r with other players."
+		"{@pagebreak}"
+		"Сохраняет скопированную постройку как &bшаблон&r и позволяет загрузить ее позже. В &bleft slot&r положи Copy-Paste Gadget с копией, в &bright slot&r - &eбумагу&r, задай &bназвание&r и сохрани. Код шаблона можно передать другим игрокам."
+	]
 	quest.464E6E68F80377D1.quest_desc: ["Можно зачаровать, добавить описания того на что "]
 	quest.4662695201019F94.quest_desc: [
 		"Adding fume funnels to the left and right of your witch's oven can drastically improve it's yield."
@@ -2112,6 +2146,11 @@
 		"{image:milf:textures/quest_pic/capacity.png width:200 height:60 align:center}"
 	]
 	quest.5CD79C87448D8A51.quest_desc: ["Тут множество разных ритуалов можно делать, но это лучше прочитать в книге т.к. меняются только руны, самый важный ритуал из 5 арканы - даёт Soulwood sapling"]
+	quest.5CEDA5F61D74B3A8.quest_desc: [
+		"Place blocks fast in &eline&r, &ewall&r, &efloor&r, &ecolumn&r, &estair&r, and &egrid&r shapes. &7Shift-right-click&r to choose the block, then use the settings menu and &aright-click&r to build. It uses blocks from your inventory or linked storage and shows a preview first"
+		"{@pagebreak}"
+		"Быстро ставит блоки в виде &eлиний&r, &eстен&r, &eполов&r, &eколонн&r, &eлестниц&r и &eсеток&r. &7Shift-правой кнопкой&r выбери блок, потом через меню настроек нажми &aправой кнопкой&r для постройки. Он берет блоки из инвентаря или привязанного хранилища и показывает предпросмотр"
+	]
 	quest.5D02CAC8B45A26C4.quest_desc: [
 		"The title speaks for itself. This machine places blocks upon recieving a &4redstone pulse&r."
 		"{@pagebreak}"
@@ -3117,6 +3156,7 @@
 	task.3AC7749433FF53D8.title: "Abras' Conjure"
 	task.3B4C4E1225398BD9.title: "Black Hole"
 	task.3C8D93CD09CDF958.title: "Any #hexerei:tallow_meltable"
+	task.3CC7AB10CF42EE49.title: "Inspector Gadget"
 	task.3CF465D57CE596A9.title: "Boss Checklist"
 	task.3E0B4318345FB5B7.title: "Limited Barrels"
 	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"

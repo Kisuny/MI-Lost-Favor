@@ -4,6 +4,7 @@ createNewItem("dirt_cake", { food: { nutrition: 1, saturation: 0, alwaysEdible: 
 createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle", "ru_ru": "Бетонное мороженое" }})
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
 createNewItem('larva', { food: { nutrition: 4, saturation: 0.5, alwaysEdible: true, effects: [['minecraft:hunger', 80, 0, 1]] }})
+createNewItem('eggnog', { stackSize: 16, useAnimation: "drink", food: { nutrition: 5, saturation: 2.5 } })
 
 global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
     if (ctx.player.level.clientSide) return
@@ -16,6 +17,67 @@ createNewItem("vial_of_liquid_confidence", {
     rarity: 'epic',
     food: { nutrition: 1, saturation: 0, alwaysEdible: true, eaten: "getConfidence" },
     lang: { "en_us": "Vial of liquid confidence", "ru_ru": "Флакон жидкой уверенности" }
+})
+
+let $Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+let $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
+let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+
+createNewItem('recall_concoction', { 
+    stackSize: 17,
+    use: {
+        animation: "drink", 
+        duration: 80, 
+        finishUsing(itemstack, level, entity){
+
+            if (level.isClientSide()) return itemstack
+            let player = entity
+
+            let retX, retY, retZ, retDimensionID, spawnPos
+
+            let yRot = player.yRot, xRot = player.xRot
+
+            if (player.persistentData.contains("milf_recall_concoction_return_data")) {
+                let retData = player.persistentData.get("milf_recall_concoction_return_data")
+
+                retX = retData.getDouble("x")
+                retY = retData.getDouble("y")
+                retZ = retData.getDouble("z")
+
+                // xRot = retData.getFloat("xRot")
+                // yRot = retData.getFloat("yRot")
+
+                retDimensionID = retData.getString("dimension")
+            } else if (player.getRespawnPosition()) {
+                spawnPos = player.getRespawnPosition()
+
+                retX = spawnPos.getX()
+                retY = spawnPos.getY()
+                retZ = spawnPos.getZ()
+
+                retDimensionID = player.getRespawnDimension().location().toString()
+            } else {
+                spawnPos = player.level.getSharedSpawnPos()
+
+                retX = spawnPos.getX()
+                retY = spawnPos.getY()
+                retZ = spawnPos.getZ()
+
+                retDimensionID = "minecraft:overworld"
+            }
+            let returnDimKey = $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.parse(retDimensionID))
+            let returnDim = player.getServer()["getLevel(net.minecraft.resources.ResourceKey)"](returnDimKey)
+
+            player.cooldowns.addCooldown(itemstack, 40)
+
+            player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](returnDim, retX, retY, retZ, yRot, xRot)
+
+            player.sendData("milf_recall_concoction_playsound")
+
+            itemstack.shrink(1)
+            return itemstack
+        } 
+    }
 })
 
 
@@ -76,9 +138,7 @@ createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": 
 createNewItem('divine_mint', { stackSize: 1})
 createNewItem('divine_coin', { stackSize: 1 })
 
-// createNewItem('divine_coin', {stackSize: 1, dynamicName: (/** @type {import("net.minecraft.world.item.ItemStack").$ItemStack} */ itemStack) => {
-    
-// }})
+createNewItem('nutmeg', { stackSize: 62 })
 
 createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })
 createNewItem("cement", { lang: { "en_us": "Cement", "ru_ru": "Цемент" } })

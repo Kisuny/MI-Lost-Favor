@@ -112,6 +112,19 @@ ServerEvents.recipes(event => {
         slag:true
     })
 
+    ieArcFurnaceCraft(event, {
+        inputItems: [
+            [{ "item": "minecraft:netherrack" }, 1],
+            [{ "item": "minecraft:basalt" }, 1]
+        ],
+        outputItems: [
+            [{ "item": "minecraft:nether_brick" }, 2]
+        ],
+        slag: [
+            [{ "item": "supplementaries:ash" }, 1]
+        ]
+    })
+
     //wth
     ieArcFurnaceCraft(event,{
         inputItems:[

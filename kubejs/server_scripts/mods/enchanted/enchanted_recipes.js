@@ -89,5 +89,24 @@ ServerEvents.recipes(event => {
         heat: "heated"
     })
 
+    ieShapedFluid(event, {
+        pattern: [
+            " W ",
+            " D ",
+            " L "
+        ],
+        key: {
+            W: { item: "enchanted:whiff_of_magic" },
+            D: { item: "minecraft:diamond" },
+            L: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                tag: "minecraft:lava"
+            }
+        },
+        outputItems: [[{ id: "enchanted:attuned_stone" }, 1]],
+        removeRecipe: true
+    })
+
 
 })

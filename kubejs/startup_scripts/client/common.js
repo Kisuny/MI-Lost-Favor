@@ -6,7 +6,7 @@ let $DefaultTooltipPositioner = Platform.isClientEnvironment() ? Java.loadClass(
 let $Quaternionf = Platform.isClientEnvironment() ? Java.loadClass("org.joml.Quaternionf") : null
 
 
-let $ResourceLocation = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.resources.ResourceLocation") : null
+let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
 let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent")
 let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type")
 

@@ -20,7 +20,7 @@ const aeInWorldRecipe = (event, args) => {
         miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mixer",
             inputItems:args.inputItems,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]],
-            inputFluids:args.inputFluids
+            inputFluids:[[args.inputFluids[0][0], 1000, 0]]
         })
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}

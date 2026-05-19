@@ -58,6 +58,21 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
+    ieBottlingMachineCraft(event, {
+        outputItems: [
+            [{ item: "modern_industrialization:basic_machine_hull" }, 1]
+        ],
+        inputFluids: [
+            [{ fluid: "milf:liquid_plastic" }, 1500]
+        ],
+        inputItems: [
+            [{ item: "modern_industrialization:tin_cable" }, 4],
+            [{ item: "modern_industrialization:portable_storage_unit" }],
+            [{ item: "milf:tempered_glass" }]
+        ],
+        compatOff: true
+    })
+
     function bottling_recipe(inputs, fluid, outputs) {
         ieBottlingMachineCraft(event, {
             inputItems:inputs,

@@ -24,7 +24,7 @@ let $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 
 createNewItem('recall_concoction', { 
-    stackSize: 16,
+    stackSize: 17,
     use: {
         animation: "drink", 
         duration: 80, 

@@ -33,8 +33,8 @@
 			image: "toxony:item/flail_spin_1"
 			rotation: 0.0d
 			width: 3.0d
-			x: 29.047619047619023d
-			y: -5.374999999999993d
+			x: 30.559523809523796d
+			y: -2.886904761904759d
 		}
 	]
 	order_index: 1
@@ -450,28 +450,26 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["5A26B593C3D70B56"]
 			id: "47ECA2AA01DBE0C5"
 			tasks: [{
 				id: "523F4F559B577D02"
 				item: { count: 1, id: "toxony:glass_vial" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: -9.5d
+			x: 24.0d
+			y: -7.0d
 		}
 		{
-			dependencies: [
-				"5A26B593C3D70B56"
-				"47ECA2AA01DBE0C5"
-			]
+			dependencies: ["47ECA2AA01DBE0C5"]
 			id: "046EAAF7665E1DB4"
 			tasks: [{
 				id: "691889B121EBA465"
 				item: { count: 1, id: "toxony:toxin_canister" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: -7.0d
+			x: 24.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["046EAAF7665E1DB4"]
@@ -492,8 +490,8 @@
 					type: "item"
 				}
 			]
-			x: 24.5d
-			y: -6.0d
+			x: 24.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["47ECA2AA01DBE0C5"]
@@ -510,8 +508,8 @@
 					type: "item"
 				}
 			]
-			x: 24.5d
-			y: -10.0d
+			x: 26.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["47ECA2AA01DBE0C5"]
@@ -521,8 +519,8 @@
 				item: { count: 1, id: "toxony:redstone_mixture" }
 				type: "item"
 			}]
-			x: 24.5d
-			y: -8.5d
+			x: 26.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["19E126BBEF648662"]
@@ -532,8 +530,8 @@
 				item: { count: 1, id: "toxony:redstone_solution" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -8.5d
+			x: 27.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["167EF79DA32CC317"]
@@ -543,8 +541,8 @@
 				item: { count: 1, id: "toxony:copper_needle" }
 				type: "item"
 			}]
-			x: 27.5d
-			y: -8.5d
+			x: 29.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["11AEAD046E2353E6"]
@@ -555,8 +553,8 @@
 				item: { count: 1, id: "toxony:magnifying_glass" }
 				type: "item"
 			}]
-			x: 28.5d
-			y: -8.5d
+			x: 30.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0C79F086A3EA30BA"]
@@ -565,8 +563,8 @@
 				id: "5EC8E0E987CF862A"
 				type: "checkmark"
 			}]
-			x: 24.5d
-			y: -11.5d
+			x: 26.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -582,8 +580,8 @@
 				item: { count: 1, id: "toxony:whirlsnap" }
 				type: "item"
 			}]
-			x: 28.0d
-			y: -6.5d
+			x: 29.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -598,8 +596,8 @@
 				item: { count: 1, id: "toxony:moonlight_hemlock" }
 				type: "item"
 			}]
-			x: 29.0d
-			y: -6.5d
+			x: 30.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -613,8 +611,8 @@
 				item: { count: 1, id: "toxony:snow_mint" }
 				type: "item"
 			}]
-			x: 29.0d
-			y: -5.5d
+			x: 30.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -628,8 +626,8 @@
 				item: { count: 1, id: "toxony:warproot" }
 				type: "item"
 			}]
-			x: 28.5d
-			y: -6.0d
+			x: 30.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -643,8 +641,8 @@
 				item: { count: 1, id: "toxony:sunspot" }
 				type: "item"
 			}]
-			x: 28.0d
-			y: -5.5d
+			x: 29.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["714992905CA44375"]
@@ -654,8 +652,8 @@
 				item: { count: 1, id: "toxony:empty_tox_pot" }
 				type: "item"
 			}]
-			x: 24.5d
-			y: -16.5d
+			x: 26.0d
+			y: -14.5d
 		}
 		{
 			dependencies: ["188484018F12E3B9"]
@@ -665,8 +663,8 @@
 				item: { count: 1, id: "toxony:toxin_tox_pot" }
 				type: "item"
 			}]
-			x: 24.5d
-			y: -18.5d
+			x: 26.0d
+			y: -16.5d
 		}
 		{
 			dependencies: ["188484018F12E3B9"]
@@ -676,8 +674,8 @@
 				item: { count: 1, id: "toxony:smoke_tox_pot" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -18.0d
+			x: 27.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["188484018F12E3B9"]
@@ -687,8 +685,8 @@
 				item: { count: 1, id: "toxony:regeneration_tox_pot" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: -18.0d
+			x: 25.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["188484018F12E3B9"]
@@ -698,8 +696,8 @@
 				item: { count: 1, id: "toxony:acid_tox_pot" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: -17.0d
+			x: 24.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["188484018F12E3B9"]
@@ -709,8 +707,8 @@
 				item: { count: 1, id: "toxony:witchfire_tox_pot" }
 				type: "item"
 			}]
-			x: 26.0d
-			y: -17.0d
+			x: 27.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["714992905CA44375"]
@@ -720,8 +718,8 @@
 				item: { count: 1, id: "toxony:oil_base" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: -12.5d
+			x: 25.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["714992905CA44375"]
@@ -731,8 +729,8 @@
 				item: { count: 1, id: "toxony:toxic_leather" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -12.5d
+			x: 27.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["40FBEE2028873C00"]
@@ -759,8 +757,8 @@
 					type: "item"
 				}
 			]
-			x: 25.5d
-			y: -13.5d
+			x: 27.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5FB8F11E1CE083EC"]
@@ -770,8 +768,8 @@
 				item: { count: 1, id: "toxony:oil_pot_bandolier" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -14.5d
+			x: 27.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["62D095FE0536F7B7"]
@@ -781,8 +779,8 @@
 				item: { count: 1, id: "toxony:toxin_flask" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -15.5d
+			x: 27.0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["0C79F086A3EA30BA"]
@@ -816,8 +814,8 @@
 					type: "item"
 				}
 			]
-			x: 26.239795918367392d
-			y: -9.971343537415002d
+			x: 27.739795918367392d
+			y: -7.971343537415002d
 		}
 		{
 			dependencies: ["714992905CA44375"]
@@ -834,8 +832,8 @@
 					type: "item"
 				}
 			]
-			x: 24.5d
-			y: -13.0d
+			x: 26.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0501BDB7ED850B47"]
@@ -3488,8 +3486,8 @@
 				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
 				type: "item"
 			}]
-			x: 28.0d
-			y: -10.0d
+			x: 29.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6CDCD0EBCB007E09"]
@@ -3507,8 +3505,8 @@
 				item: { count: 1, id: "ars_nouveau:scribes_table" }
 				type: "item"
 			}]
-			x: 31.0d
-			y: -10.0d
+			x: 32.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5C91DD619D5F382D"]
@@ -3518,8 +3516,8 @@
 				item: { count: 1, id: "milf:glyph_frame_t1" }
 				type: "item"
 			}]
-			x: 29.5d
-			y: -10.0d
+			x: 31.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3530,8 +3528,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_pantomime" }
 				type: "item"
 			}]
-			x: 42.5d
-			y: -9.5d
+			x: 44.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3542,8 +3540,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_underfoot" }
 				type: "item"
 			}]
-			x: 42.5d
-			y: -10.5d
+			x: 44.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3554,8 +3552,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_bounce" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -10.0d
+			x: 38.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3566,8 +3564,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_bubble" }
 				type: "item"
 			}]
-			x: 34.5d
-			y: -10.0d
+			x: 36.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3578,8 +3576,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_phantom_block" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -12.0d
+			x: 38.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3590,8 +3588,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_light" }
 				type: "item"
 			}]
-			x: 38.5d
-			y: -10.0d
+			x: 40.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3602,8 +3600,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_conjure_terrain" }
 				type: "item"
 			}]
-			x: 35.5d
-			y: -7.5d
+			x: 37.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3614,8 +3612,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_craft" }
 				type: "item"
 			}]
-			x: 33.0d
-			y: -10.0d
+			x: 34.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3626,8 +3624,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_cut" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -13.5d
+			x: 38.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3638,8 +3636,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_delay" }
 				type: "item"
 			}]
-			x: 35.5d
-			y: -9.0d
+			x: 37.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3650,8 +3648,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_gust" }
 				type: "item"
 			}]
-			x: 37.0d
-			y: -9.5d
+			x: 38.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3662,8 +3660,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_rune" }
 				type: "item"
 			}]
-			x: 37.0d
-			y: -10.5d
+			x: 38.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3674,8 +3672,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_dispel" }
 				type: "item"
 			}]
-			x: 35.0d
-			y: -11.5d
+			x: 36.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3686,8 +3684,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_evaporate" }
 				type: "item"
 			}]
-			x: 38.0d
-			y: -11.5d
+			x: 39.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3698,8 +3696,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_fell" }
 				type: "item"
 			}]
-			x: 38.0d
-			y: -8.5d
+			x: 39.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3710,8 +3708,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_freeze" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -8.0d
+			x: 38.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3722,8 +3720,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_harvest" }
 				type: "item"
 			}]
-			x: 34.0d
-			y: -11.0d
+			x: 35.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3734,8 +3732,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_ignite" }
 				type: "item"
 			}]
-			x: 35.5d
-			y: -12.5d
+			x: 37.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3746,8 +3744,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_interact" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -6.5d
+			x: 38.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3758,8 +3756,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_pickup" }
 				type: "item"
 			}]
-			x: 40.0d
-			y: -10.0d
+			x: 41.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3770,8 +3768,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_launch" }
 				type: "item"
 			}]
-			x: 37.5d
-			y: -11.0d
+			x: 39.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3782,8 +3780,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_snare" }
 				type: "item"
 			}]
-			x: 37.5d
-			y: -10.0d
+			x: 39.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3794,8 +3792,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_leap" }
 				type: "item"
 			}]
-			x: 37.5d
-			y: -9.0d
+			x: 39.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3806,8 +3804,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_spark" }
 				type: "item"
 			}]
-			x: 36.0d
-			y: -9.5d
+			x: 37.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3818,8 +3816,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_place_block" }
 				type: "item"
 			}]
-			x: 35.5d
-			y: -11.0d
+			x: 37.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3830,8 +3828,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_summon_steed" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -9.0d
+			x: 38.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3842,8 +3840,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_prestidigitation" }
 				type: "item"
 			}]
-			x: 37.5d
-			y: -7.5d
+			x: 39.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3854,8 +3852,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_pull" }
 				type: "item"
 			}]
-			x: 35.0d
-			y: -8.5d
+			x: 36.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3866,8 +3864,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_redstone_signal" }
 				type: "item"
 			}]
-			x: 37.5d
-			y: -12.5d
+			x: 39.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3878,8 +3876,8 @@
 				item: { count: 1, id: "ars_nouveau:reset" }
 				type: "item"
 			}]
-			x: 39.0d
-			y: -11.0d
+			x: 40.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3890,8 +3888,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_rotate" }
 				type: "item"
 			}]
-			x: 39.0d
-			y: -9.0d
+			x: 40.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3902,8 +3900,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_summon_wolves" }
 				type: "item"
 			}]
-			x: 36.0d
-			y: -10.5d
+			x: 37.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3914,8 +3912,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_toss" }
 				type: "item"
 			}]
-			x: 36.5d
-			y: -11.0d
+			x: 38.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3926,8 +3924,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_wind_burst" }
 				type: "item"
 			}]
-			x: 35.5d
-			y: -10.0d
+			x: 37.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3938,8 +3936,8 @@
 				item: { count: 1, id: "ars_nouveau:wololo" }
 				type: "item"
 			}]
-			x: 34.0d
-			y: -9.0d
+			x: 35.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3950,8 +3948,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_amplify" }
 				type: "item"
 			}]
-			x: 40.5d
-			y: -11.0d
+			x: 42.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3962,8 +3960,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_randomize" }
 				type: "item"
 			}]
-			x: 41.5d
-			y: -10.0d
+			x: 43.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3974,8 +3972,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_sensitive" }
 				type: "item"
 			}]
-			x: 40.5d
-			y: -9.0d
+			x: 42.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["34AF308DB5E001D9"]
@@ -3986,8 +3984,8 @@
 				item: { count: 1, id: "ars_nouveau:annotated_codex" }
 				type: "item"
 			}]
-			x: 31.0d
-			y: -8.5d
+			x: 32.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1376283846993363"]
@@ -5341,8 +5339,8 @@
 				item: { count: 1, id: "toxony:affinity_solution" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: -8.5d
+			x: 28.0d
+			y: -6.0d
 		}
 	]
 }

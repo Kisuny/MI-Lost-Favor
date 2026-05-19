@@ -85,13 +85,11 @@ ItemEvents.modifyTooltips(event => {
 
     //#region WIP items tooltip
     const wip_tooltip = [
-        /angelring:.*/,
         /tempad:.*/,
         /chunkloaders:.*/,
         /fluxnetworks:.*/,
         /buildinggadgets2:.*/,
         /replication:.*/,
-        /sfm:.*/,
     ]
     wip_tooltip.forEach(element => {
         event.add(element, Text.of(textAnimatorString("[Work in progress]", "glitch")).color("#CC4D4D"))

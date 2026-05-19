@@ -2074,9 +2074,13 @@
 	]
 	quest.5C6F64DF2FA17AA2.quest_desc: ["Can be used to summon a horse from any location in the world. "]
 	quest.5C95E8450BEAD473.quest_desc: [
-		"Using the Cinnabar Ritual you can obtain the incredibly powerful Pentacle. Whatever mob is sacrificed to obtain it will result in the Pentacle spawing that mob for eternity"
+		"Using the Cinnabar Ritual you can obtain the incredibly powerful Pentacle. Whatever mob is sacrificed to obtain it will result in the Pentacle spawing that mob for eternity."
+		""
+		"For the pentagram to work, you must meet the spawning conditions for the mob you want to summon; for example, to summon a bat, you need a stone block beneath the pentagram and dim lighting."
 		"{@pagebreak}"
 		"Какой бы моб ни был принесен в жертву для его получения, Пентакль будет вечно спавнить этого моба."
+		""
+		"Чтобы пентаграмма заработала, необходимо выполнить условия появления того моба, которого вы хотите вызвать; так, например, для летучей мыши требуется каменный блок под пентаграммой и слабое освещение"
 	]
 	quest.5CB6405F0B7F4D6A.quest_desc: [
 		"By using &3glow ink sacks&r (or &k&bLight Blue Ink&r&r), it grants the wearer &#FEECD6night vision&r! "
@@ -2372,6 +2376,25 @@
 		"{@pagebreak}"
 		"Используется для... формовки кирпичеподобных изделий"
 	]
+	quest.682A5ADBA0B7FF36.quest_desc: [
+		"The &cFactory Manager&r is the core component of SFM. We want you to ease into what the mod is capable of, so as a reward, you’ll receive some cables, a couple of storage blocks, and, most importantly, a program disk containing your first program—it will help you figure out what you can do with this mod."
+		""
+		"Place &lcable&r, &lstorage&r and &lFactory Manager&r as shown in the screenshot below."
+		""
+		"And put &lour program&r in the &lmanager&r."
+		""
+		""
+		"{image:milf:textures/quest_pic/sfm_example_01.png width:500 height:210 align:center fit:true}"
+		""
+		"{@pagebreak}"
+		"&cFactory Manager&r является основным блоком в SFM. Мы планируем чтобы вы плавно погрузилсь в то, на что способен мод, по этой причине в качестве награды вы получаете немного кабелей, пару хранилищ, и, что самое главное Program disk с вашей первой программой, она поможет вам разобраться то, что можно сделать с этим модом."
+		""
+		"Поставьте &lКабеля&r, &lМенеджер&r и &lХранилища&r так, как показано на скриншоте ниже."
+		""
+		"И поместите &lнашу программу&r в &lменеджер&r."
+		""
+		"{image:milf:textures/quest_pic/sfm_example_01.png width:500 height:210 align:center fit:true}"
+	]
 	quest.687476E0881C0199.quest_desc: [
 		"Copper suitable for smelter"
 		"{@pagebreak}"
@@ -2518,6 +2541,11 @@
 		"Это &#FEECD6лопата&r, &#9BB8EDкирка&r, &#C7E2E9топор&r, и &#CAE4C8мотыга&r &nв одном&r, буквально швейцарский нож!"
 	]
 	quest.6C85E4BCF27839E4.quest_subtitle: "Build warp portal"
+	quest.6C9D001FF1B265FB.quest_desc: [
+		"&lUse this to extract the meteorite and all its contents!&r"
+		"{@pagebreak}"
+		"&lИспользуется для того, чтобы добыть метеорит и всё его содержимое!&r"
+	]
 	quest.6CB0342958887169.quest_desc: [
 		"Furnace, but better!"
 		"{@pagebreak}"
@@ -2585,6 +2613,40 @@
 		"Increases the chance of dropping a mob's head when you kill it with this axe."
 		"{@pagebreak}"
 		"Повышает шанс получить голову моба если убить этим топором."
+	]
+	quest.6F16E9EA931A2F69.quest_desc: [
+		"Hover over the disk to see the warnings and errors for your program"
+		""
+		"Shift-right-click the manager with the label gun in your hand to load the labels from your program"
+		""
+		"You can now use the scroll wheel while holding shift to change the active label"
+		""
+		"Right click blocks in the world to apply or remove the label."
+		""
+		"There is also a right-click menu for entering a custom label that may not be in your program yet."
+		""
+		"Once you've assigned the labels, right click the manager while NOT holding shift to save the labels to the Program Disk"
+		""
+		"Your program should now be running without any issues"
+		""
+		"{image:milf:textures/quest_pic/sfm_example_02.png width:285 height:300 align:center fit:true}"
+		""
+		"{@pagebreak}"
+		"Наведите курсор на диск, чтобы увидеть предупреждения и ошибки вашей программы"
+		""
+		"Нажмите правую кнопку мыши, удерживая клавишу Shift, на менеджере с пистолетом в руке, чтобы загрузить метки из вашей программы"
+		""
+		"Теперь вы можете использовать колесико мышки, удерживая клавишу Shift, чтобы изменить активную метку."
+		""
+		"Щелкните правой кнопкой мыши по блокам в мире, чтобы добавить или удалить метку."
+		""
+		"Также доступно контекстное меню, позволяющее ввести собственное название, которого пока нет в вашей программе."
+		""
+		"После того как вы назначили метки, щелкните правой кнопкой мыши по диспетчеру, НЕ удерживая клавишу Shift, чтобы сохранить метки на программном диске"
+		""
+		"Теперь ваша программа должна работать без каких-либо проблем"
+		""
+		"{image:milf:textures/quest_pic/sfm_example_02.png width:285 height:300 align:center fit:true}"
 	]
 	quest.6F85911351916741.quest_desc: ["An Edelwood Bucket can hold multiple fluids at once (4 buckets for water and 3buckets for lava). Can also hold stews and some small entities. The Edelwood Bucket will require the Permafrost enchantment in order to hold lava safely."]
 	quest.6FBA4C72D386837A.quest_desc: [
@@ -2885,6 +2947,20 @@
 		""
 		"1 Ethereal Source -> 2 liquid source "
 	]
+	quest.7F7B0FF0BAC90638.quest_desc: [
+		"This is a simple example to help you understand how to assign labels and what the mod syntax is."
+		""
+		"This program will move items from the barrel to the chest every 20 ticks(1 second = 20 ticks) if you've done everything correctly!"
+		""
+		"We &l&2highly recommend&r&r that you check out this mod and start using it to automate tasks - it’s really convenient!"
+		""
+		"{@pagebreak}"
+		"Это простой пример, чтобы вы поняли, как назначать метки и каков синтаксис мода."
+		""
+		"Эта программа будет перемещать предметы из бочки в сундук каждые 20 тиков (1 секунда = 20 тикам), если вы все сделали правильно!"
+		""
+		"Мы &l&2настоятельно рекомендуем&r&r вам познакомится с этим модом и начинать автоматизировать вещи с его помощью, это правда очень удобно!"
+	]
 	reward.015382CFC13FFB7A.title: "Deeper Down Access"
 	reward.058FD5B700A2EB20.title: "Feet Trinket Slot"
 	reward.084C079A765DC32C.title: "Focus Trinket Slot"
@@ -3034,6 +3110,7 @@
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.3692A13E4C6958CC.title: "Any #connectiblechains:catenary_items"
 	task.37BF27F02B385E1D.title: "BUT HOW DO YOU MAKE BEER?!"
+	task.37E4333D9D7C89EF.title: "So what's the point of all this?"
 	task.37F1D31D1CFE5331.title: "Any #c:feathers"
 	task.3A29E8F35850BD56.title: "Elevator"
 	task.3A5AE59EDDEBE0BA.title: "Any #minecraft:boats"

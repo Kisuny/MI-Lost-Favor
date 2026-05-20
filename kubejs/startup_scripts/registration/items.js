@@ -19,69 +19,6 @@ createNewItem("vial_of_liquid_confidence", {
     lang: { "en_us": "Vial of liquid confidence", "ru_ru": "Флакон жидкой уверенности" }
 })
 
-let $Registries = Java.loadClass("net.minecraft.core.registries.Registries")
-let $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
-
-createNewItem('recall_concoction', { 
-    stackSize: 17,
-    lang: { "en_us": "Recall Concotion", "ru_ru": "Зелье Возвращения" },
-    use: {
-        animation: "drink", 
-        duration: 80, 
-        finishUsing(itemstack, level, entity){
-
-            if (level.isClientSide()) return itemstack
-            let player = entity
-
-            let retX, retY, retZ, retDimensionID, spawnPos
-
-            let yRot = player.yRot, xRot = player.xRot
-
-            if (player.persistentData.contains("milf_recall_concoction_return_data")) {
-                let retData = player.persistentData.get("milf_recall_concoction_return_data")
-
-                retX = retData.getDouble("x")
-                retY = retData.getDouble("y")
-                retZ = retData.getDouble("z")
-
-                // xRot = retData.getFloat("xRot")
-                // yRot = retData.getFloat("yRot")
-
-                retDimensionID = retData.getString("dimension")
-            } else if (player.getRespawnPosition()) {
-                spawnPos = player.getRespawnPosition()
-
-                retX = spawnPos.getX()
-                retY = spawnPos.getY()
-                retZ = spawnPos.getZ()
-
-                retDimensionID = player.getRespawnDimension().location().toString()
-            } else {
-                spawnPos = player.level.getSharedSpawnPos()
-
-                retX = spawnPos.getX()
-                retY = spawnPos.getY()
-                retZ = spawnPos.getZ()
-
-                retDimensionID = "minecraft:overworld"
-            }
-            let returnDimKey = $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.parse(retDimensionID))
-            let returnDim = player.getServer()["getLevel(net.minecraft.resources.ResourceKey)"](returnDimKey)
-
-            player.cooldowns.addCooldown(itemstack, 40)
-
-            player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](returnDim, retX, retY, retZ, yRot, xRot)
-
-            player.sendData("milf_recall_concoction_playsound")
-
-            itemstack.shrink(1)
-            return itemstack
-        } 
-    }
-})
-
-
 createNewItem('amber_visage', { stackSize: 16, rarity: 'epic', lang: { "en_us": "Amber visage", "ru_ru": "Янтарный облик" } })
 createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_ru": "Ядро Стола" } })
 createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксовое Ядро Стола" } })

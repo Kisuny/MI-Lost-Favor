@@ -52,4 +52,22 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    customMixingCauldron(event, {
+        fluid: "modern_industrialization:creosote",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:glass_bottle" },
+            { "item": "modern_industrialization:steel_dust" },
+            { "item": "milf:larva" },
+            { "item": "milf:recall_concoction" },
+            { "item": "modern_industrialization:steel_dust" },
+            { "item": "milf:recall_concoction" },
+            { "item": "milf:larva" },
+            { "item": "modern_industrialization:steel_dust" }
+        ],
+        output: "milf:grecall_concoction_t1",
+        amount: 1,
+        removeRecipe: true
+    })
+
 })

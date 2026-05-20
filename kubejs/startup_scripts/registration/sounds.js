@@ -8,4 +8,6 @@ StartupEvents.registry('sound_event', event => {
     event.create('milf:lever')
     event.create('milf:reels_tick')
     event.create('milf:coin_spin')
+
+    event.create("milf:whisper")
 })

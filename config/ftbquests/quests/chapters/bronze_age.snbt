@@ -2132,7 +2132,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -3126,7 +3126,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -4021,7 +4021,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -5654,7 +5654,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -5666,7 +5666,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -5912,6 +5912,18 @@
 			}]
 			x: 4.5d
 			y: 13.5d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			id: "15C276FD883F33F5"
+			shape: "heart"
+			tasks: [{
+				id: "1CCB9110A3E996DB"
+				item: { count: 1, id: "milf:grecall_concoction_t1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 }

@@ -110,60 +110,7 @@ function sendImmersiveMessage(text, /**@type {import("net.minecraft.server.level
         player.persistentData.putBoolean("immersiveMessageQueue", true);
        (server).scheduleInTicks(duration * 20, _ =>  player.persistentData.remove("immersiveMessageQueue"))
     }
-    // if(player.persistentData.immersiveMessageQueue) {
-    //     return
-    // }
-    // let $ImmersiveMessage = Java.loadClass("toni.immersivemessages.api.ImmersiveMessage")
-    // args = args || {}
-    // let duration = args.duration || 2.2
-    // //let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, TextIcons.warn().append(TextIcons.smallSpace()).append(text))
-    // args.applyWarn && (text = Component.of("⚠ ").append(text))
-    // let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, text)
-
-    // applyArgsToImmersiveMessage(message, args)
-
-    // message["sendServer(net.minecraft.server.level.ServerPlayer)"](player)
-    // if(args.queue){
-    //     player.persistentData.putBoolean("immersiveMessageQueue", true);
-    //    (server).scheduleInTicks(duration * 20, _ =>  player.persistentData.remove("immersiveMessageQueue"))
-    // }
 }
-
-// function applyArgsToImmersiveMessage(message, args){
-//     args.bold && message.bold()
-//     args.italic && message.italic()
-//     args.size && message.size(args.size)
-//     args.fadeIn && message.fadeIn(args.fadeIn)
-//     args.fadeOut && message.fadeOut(args.fadeOut)
-//     args.color && message["color(net.minecraft.ChatFormatting)"]($ChatFormatting.WHITE)
-//     //args.font && message["font(toni.immersivemessages.ImmersiveFont)"]('minecrafter') // incompatible with Text Animator :(
-//     args.x && message.x(args.x)
-//     args.y && message.y(args.y)
-//     args.anchor && message.anchor(args.anchor)
-//     if(args.slideIn){
-//         args.slideIn == "up" && message.slideUp(args.slideInDuration || 1)
-//         args.slideIn == "down" && message.slideDown(args.slideInDuration || 1)
-//         args.slideIn == "left" && message.slideLeft(args.slideInDuration || 1)
-//         args.slideIn == "right" && message.slideRight(args.slideInDuration || 1)
-//     }
-//     if(args.slideOut){
-//         args.slideOut == "up" && message.slideOutUp(args.slideOutDuration || 1)
-//         args.slideOut == "down" && message.slideOutDown(args.slideOutDuration || 1)
-//         args.slideOut == "left" && message.slideOutLeft(args.slideOutDuration || 1)
-//         args.slideOut == "right" && message.slideOutRight(args.slideOutDuration || 1)
-//     }
-//     if(args.typewriter){
-//         message.typewriter(args.typewriter.speed || 1, args.typewriter.centerAligned || false)
-//         args.typewriter.sound && message.sound($SoundEffect[args.typewriter.sound])
-//     }
-//     if(args.background){
-//         message.background()
-//         args.background.borderTopColor && message.borderTopColor(args.background.borderTopColor)
-//         args.background.borderBottomColor && message.borderBottomColor(args.background.borderBottomColor)
-//     }
-//     args.subtext && message.subtext(args.subtext.delay || 0, args.subtext.content, args.subtext.offset || 8, (subtext) => applyArgsToImmersiveMessage(subtext, args.subtext))
-//     args.animation && message.animation.transition(args.animation.bindingType, args.animation.inTime || 0, args.animation.outTime || args.duration || 2.2, args.animation.inValue || 0, args.animation.outValue || 5, args.animation.easingFunction || $ToniEasingType.EaseOutCubic)
-// }
 
 function sendImmersiveMessageWithSubtext(text, subtext, player, textArgs, subtextArgs, server){
     sendImmersiveMessage(text, player, Object.assign({}, textArgs, {subtext: Object.assign({}, subtextArgs, {content:subtext})}), server)

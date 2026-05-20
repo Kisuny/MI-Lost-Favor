@@ -110,14 +110,14 @@
 			id: "33597A4B9963C06D"
 			linked_quest: "67417FBD65B369C7"
 			shape: "diamond"
-			x: -29.0d
+			x: -25.5d
 			y: -6.0d
 		}
 		{
 			id: "603D90E2C4EC1F3E"
 			linked_quest: "24EA06D833F8A3D7"
 			shape: "diamond"
-			x: -28.0d
+			x: -24.5d
 			y: -6.0d
 		}
 		{
@@ -167,7 +167,7 @@
 		{
 			id: "68C8CB0AE44EC30C"
 			linked_quest: "4234498523BE845B"
-			x: -25.0d
+			x: -21.5d
 			y: -6.0d
 		}
 		{
@@ -204,103 +204,103 @@
 		{
 			id: "3B19CE7F830BC311"
 			linked_quest: "2CFF4A7767CD830E"
-			x: -35.0d
+			x: -31.5d
 			y: -6.0d
 		}
 		{
 			id: "7000AC0F9C5BD765"
 			linked_quest: "617E14880D9D75A0"
-			x: -34.0d
+			x: -30.5d
 			y: -6.0d
 		}
 		{
 			id: "28EEF5AB00BC74D4"
 			linked_quest: "080CC80D28F2DBED"
-			x: -33.0d
+			x: -29.5d
 			y: -6.0d
 		}
 		{
 			id: "0628120425A3D935"
 			linked_quest: "5C6F64DF2FA17AA2"
-			x: -32.0d
+			x: -28.5d
 			y: -6.0d
 		}
 		{
 			id: "1298CC257389D3A9"
 			linked_quest: "640DC65E9255BECE"
-			x: -31.0d
+			x: -27.5d
 			y: -6.0d
 		}
 		{
 			id: "3DF3B62C910C5E0F"
 			linked_quest: "590C55E7230D6C5E"
-			x: -30.0d
+			x: -26.5d
 			y: -6.0d
 		}
 		{
 			id: "0455148545048D5D"
 			linked_quest: "5C95E8450BEAD473"
-			x: -26.0d
+			x: -22.5d
 			y: -6.0d
 		}
 		{
 			id: "14DEF44151B59C0A"
 			linked_quest: "199BAB67264283C1"
-			x: -24.0d
+			x: -20.0d
 			y: -6.0d
 		}
 		{
 			id: "59FAD2F32453F78B"
 			linked_quest: "5CEDA5F61D74B3A8"
-			x: -16.0d
+			x: -18.5d
 			y: -6.0d
 		}
 		{
 			id: "7C79526DD0FCEEC1"
 			linked_quest: "121B443B4996E62B"
-			x: -15.0d
+			x: -17.5d
 			y: -6.0d
 		}
 		{
 			id: "15F1D2EF2151F5E7"
 			linked_quest: "278211E712E220D5"
-			x: -14.0d
+			x: -16.5d
 			y: -6.0d
 		}
 		{
 			id: "4A780B30101FD1F5"
 			linked_quest: "10CE0A4F7811C485"
-			x: -13.0d
+			x: -15.5d
 			y: -6.0d
 		}
 		{
 			id: "61F4DDBB4FBC6ABF"
 			linked_quest: "02836553495C2849"
-			x: -12.0d
+			x: -14.5d
 			y: -6.0d
 		}
 		{
 			id: "42E9810FE1C00CCC"
 			linked_quest: "4626C980F543AB3E"
-			x: -11.0d
+			x: -13.5d
 			y: -6.0d
 		}
 		{
 			id: "702345BC9AA2EA37"
 			linked_quest: "1CEAB423AA2813F7"
-			x: -10.0d
+			x: -12.5d
 			y: -6.0d
 		}
 		{
 			id: "16DDADA39FDCF708"
 			linked_quest: "34DC427BAEC84462"
-			x: -9.0d
+			x: -11.5d
 			y: -6.0d
 		}
 		{
 			id: "571917703293A303"
 			linked_quest: "34A5134B00D988B5"
-			x: -8.0d
+			x: -10.5d
 			y: -6.0d
 		}
 		{
@@ -312,14 +312,26 @@
 		{
 			id: "5B7EE3DB1916026B"
 			linked_quest: "0C1A0D4E0DF5CE9C"
-			x: -7.0d
+			x: -9.5d
 			y: -6.0d
 		}
 		{
 			id: "45CF2984AEED8719"
 			linked_quest: "2D26EA473D256B54"
-			x: -6.0d
+			x: -8.5d
 			y: -6.0d
+		}
+		{
+			id: "3EC3AD833AF758BC"
+			linked_quest: "15C276FD883F33F5"
+			x: -20.5d
+			y: -5.5d
+		}
+		{
+			id: "5A8581CEB62194A3"
+			linked_quest: "0619910E0E53B32F"
+			x: -19.5d
+			y: -5.5d
 		}
 	]
 	quests: [
@@ -330,7 +342,7 @@
 				type: "checkmark"
 			}]
 			x: -20.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -341,7 +353,7 @@
 				type: "item"
 			}]
 			x: -20.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -352,7 +364,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -27.0d
+			x: -23.5d
 			y: -6.0d
 		}
 		{
@@ -364,7 +376,7 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -375,7 +387,7 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -386,7 +398,7 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -397,7 +409,7 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -408,7 +420,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -420,7 +432,7 @@
 				type: "item"
 			}]
 			x: -20.0d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -432,7 +444,7 @@
 				type: "item"
 			}]
 			x: -21.0d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -444,7 +456,7 @@
 				type: "item"
 			}]
 			x: -19.0d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -456,7 +468,7 @@
 				type: "item"
 			}]
 			x: -20.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -468,7 +480,7 @@
 				type: "item"
 			}]
 			x: -20.0d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
@@ -480,7 +492,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -491,7 +503,7 @@
 				type: "item"
 			}]
 			x: -18.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			id: "70A0A078B94FF034"

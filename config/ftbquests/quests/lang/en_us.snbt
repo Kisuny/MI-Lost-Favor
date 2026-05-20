@@ -1,17 +1,30 @@
 {
+	chapter.0BA8A5647651177A.chapter_subtitle: ["Your first magical steps into the world of druidic magic"]
 	chapter.0BA8A5647651177A.title: "Root Whispering"
+	chapter.0E71C46ADE360F4F.chapter_subtitle: ["The Endgame of Magic"]
 	chapter.0E71C46ADE360F4F.title: "Underveil Harmonies"
+	chapter.126830F3CB1F8DDD.chapter_subtitle: ["Cutting-edge technology!"]
 	chapter.126830F3CB1F8DDD.title: "aluminum"
+	chapter.1DE9AF77B4D50480.chapter_subtitle: ["The very first basic stage of survival, introducing you to primitive technologies"]
 	chapter.1DE9AF77B4D50480.title: "First steps"
+	chapter.207581C2CDE908B1.chapter_subtitle: ["Midgame magic, color magic, and occult magic!"]
 	chapter.207581C2CDE908B1.title: "Dyes of the Occult"
+	chapter.231570DE6A7FCD52.chapter_subtitle: ["chapter contains all the travel information and, in a way, the entire RPG component of the modpack!"]
 	chapter.231570DE6A7FCD52.title: "Journeys \\& Gear"
+	chapter.389198189DCA1A49.chapter_subtitle: ["This chapter lists all the utility items for easy finding"]
 	chapter.389198189DCA1A49.title: "Utilities"
+	chapter.3ED5DF3804C2BE8A.chapter_subtitle: ["Easy-to-use navigation showing the different stages"]
 	chapter.3ED5DF3804C2BE8A.title: "Stages"
+	chapter.4058552B01F39ED4.chapter_subtitle: ["A chapter that helps you understand how to automate processes, complete with examples"]
 	chapter.4058552B01F39ED4.title: "&lHow to automate?"
+	chapter.4D6A3C5941C9908A.chapter_subtitle: ["[WIP Chapter]"]
 	chapter.4D6A3C5941C9908A.title: "endgame"
+	chapter.4E4F6FF3EEEB1E51.chapter_subtitle: ["Essential information that describes and explains the mechanics of the modpack"]
 	chapter.4E4F6FF3EEEB1E51.title: "basic information"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
+	chapter.561B8642F13079C1.chapter_subtitle: ["The Bronze Age: Dive into the world of technology!"]
 	chapter.561B8642F13079C1.title: "Bronze Age"
+	chapter.7A58E54E4B6B5025.chapter_subtitle: ["This chapter covers all possible ways to store items and fluid"]
 	chapter.7A58E54E4B6B5025.title: "Storage"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
@@ -401,6 +414,13 @@
 		""
 		""
 		"{image:milf:textures/quest_pic/wild_boar.png width:200 height:200 align:center}"
+	]
+	quest.0EC60F3FB9DFB29E.quest_desc: [
+		"Required to craft the Transmogrification Table. Also allows you to make your items invisible!"
+		""
+		"{@pagebreak}"
+		""
+		"Необходим для создания стола трансформации. Также позволяет сделать ваши предметы невидимыми!"
 	]
 	quest.0F3DBB0D6EEF427E.quest_subtitle: "elevator in water"
 	quest.0F4825A153097924.quest_desc: [
@@ -1427,12 +1447,18 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
+	quest.3AA18F4C134E7ACB.quest_desc: [
+		"Fuel for Transmogrification Table!"
+		"{@pagebreak}"
+		"Топлива для трансформации!"
+	]
 	quest.3AA1D61583B592AC.quest_desc: [
 		"Now, for those empty pots. They can be filled with replacement oil without recreating the composition in the pot. Just by making this base, we can refill all our oil containers and even sashes. BEAUTIFUL."
 		"{@pagebreak}"
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
 	]
 	quest.3AB217EEA136075C.title: "Djinni Crusher"
+	quest.3ACEAB25342B053C.title: "WIP Items"
 	quest.3B40DB8CA23BB5A0.quest_desc: ["When walls and fences hold you, fret not, now you can jump them!"]
 	quest.3B4BC79A5DE6EC7C.quest_desc: [
 		"The Machine Extender can be placed on top of a machine to \"extend\" it, giving more space for pipes to connect. Machine Extenders can be stacked."
@@ -1857,6 +1883,18 @@
 		""
 		"&l&cВ Bounty можно найти полезные предметы, например рюкзаки, waystones или отмычки, это не весь список возможных предметов.&r&r"
 	]
+	quest.4B4152C17573E98D.quest_desc: [
+		"Used to transmogrify items."
+		""
+		"Place the fuel, the item whose appearance you want to change, and the item you want to change it into on the table."
+		""
+		"{@pagebreak}"
+		""
+		"Используется для трансформации предметов."
+		""
+		"Добавьте в стол топливо, предмет, внешний вид которого вы хотите изменить, и предмет, в который вы хотите его превратить."
+	]
+	quest.4B4152C17573E98D.quest_subtitle: "Change the appearance of your items"
 	quest.4B62E3D7B166D33F.quest_desc: ["The Elementarium Enhancer combines the power of the four elements and allows the creation of elemental items in the Hephaestus Forge. For example, it is required to create elemental prisms. With a chance of 18% this enhancer can be found in the following structures: Jungle Temples, Desert Pyramids, and Underwater Ruins."]
 	quest.4B801253049DAC2F.quest_desc: [
 		"&#FEECD6Catch&r the right phase of the moon and create your first &#4040a1onyx&r!"
@@ -2115,7 +2153,15 @@
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/horseman\" } }, \".\" ]"
 	]
-	quest.5C6F64DF2FA17AA2.quest_desc: ["Can be used to summon a horse from any location in the world. "]
+	quest.5C6F64DF2FA17AA2.quest_desc: [
+		"Can be used to summon a horse from any location in the world. "
+		""
+		"It is crafted from 3 copper ingots and 1 Goat Horn."
+		"{@pagebreak}"
+		"Можно использовать для вызова лошади из любой точки мира. "
+		""
+		"Создаётся из 3х медных слитков и 1 рога."
+	]
 	quest.5C95E8450BEAD473.quest_desc: [
 		"Using the Cinnabar Ritual you can obtain the incredibly powerful Pentacle. Whatever mob is sacrificed to obtain it will result in the Pentacle spawing that mob for eternity."
 		""
@@ -2741,7 +2787,6 @@
 		"Often, a copy of the quest is included here; you can find the original quest by using the quest’s dependency buttons - it’s really handy!"
 		"{image:milf:textures/quest_pic/dependencies_tip.png width:496 height:292 align:center fit:true}"
 		"{@pagebreak}"
-		""
 		"Вкладка подразумевает легкий способ найти практически все необходимые утилитарные предметы, или прочитать зачем он нужен."
 		""
 		"Зачастую здесь копия квеста, оригинальный квест можно найти используя кнопки зависимостей этого квеста, это правда очень удобно!"
@@ -3215,7 +3260,7 @@
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.608727F73B6EDF0F.title: "The End?!"
-	task.62C0B2D1C395761B.title: "Why is this chapter here? [WIP]"
+	task.62C0B2D1C395761B.title: "Why is this chapter here?"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.6319A7E878B57B90.title: "Trade Cycling"
 	task.64E3E2FCC89E29E6.title: "Tier 1 Dimensional Storage Stabilizer"

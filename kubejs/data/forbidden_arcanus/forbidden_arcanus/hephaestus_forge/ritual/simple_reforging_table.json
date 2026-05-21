@@ -1,46 +1,46 @@
 {
-    "enhancers": "forbidden_arcanus:elementarium",
-    "essences": {
-        "aureal": 250,
-        "blood": 5000,
-        "souls": 10,
-        "experience": 666
-    },
-    "inputs": [
-        {
-            "amount": 1,
-            "ingredient": {
-                "item": "milf:blaze_core"
-            }
-        },
-        {
-            "amount": 3,
-            "ingredient": {
-                "item": "minecraft:smooth_stone"
-            }
-        },
-        {
-            "amount": 2,
-            "ingredient": {
-                "item": "forbidden_arcanus:obsidiansteel_ingot"
-            }
-        },
-        {
-            "amount": 2,
-            "ingredient": {
-                "item": "apotheosis:epic_material"
-            }
-        }
-    ],
-    "magic_circle": "forbidden_arcanus:create_item",
-    "main_ingredient": {
-        "item": "minecraft:smithing_table"
-    },
-    "result": {
-        "type": "forbidden_arcanus:create_item",
-        "result_item": {
-            "count": 1,
-            "id": "apotheosis:simple_reforging_table"
-        }
-    }
+	"enhancers": "forbidden_arcanus:elementarium",
+	"essences": {
+		"aureal": 250,
+		"blood": 5000,
+		"souls": 10,
+		"experience": 666
+	},
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "milf:blaze_core"
+			}
+		},
+		{
+			"amount": 3,
+			"ingredient": {
+				"item": "minecraft:smooth_stone"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "forbidden_arcanus:obsidiansteel_ingot"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "apotheosis:epic_material"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "minecraft:smithing_table"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "apotheosis:simple_reforging_table"
+		}
+	}
 }

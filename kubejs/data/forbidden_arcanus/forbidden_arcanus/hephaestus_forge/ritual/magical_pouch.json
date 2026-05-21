@@ -1,40 +1,40 @@
 {
-    "enhancers": "forbidden_arcanus:crimson_stone",
-    "essences": {
-        "aureal": 50,
-        "blood": 500,
-        "souls": 20,
-        "experience": 220
-    },
-    "inputs": [
-        {
-            "amount": 1,
-            "ingredient": {
-                "item": "minecraft:nether_star"
-            }
-        },
-        {
-            "amount": 2,
-            "ingredient": {
-                "item": "hexerei:infused_fabric"
-            }
-        },
-        {
-            "amount": 2,
-            "ingredient": {
-                "item": "modern_industrialization:aluminum_plate"
-            }
-        }
-    ],
-    "magic_circle": "forbidden_arcanus:create_item",
-    "main_ingredient": {
-        "item": "devices:devices_pouch"
-    },
-    "result": {
-        "type": "forbidden_arcanus:create_item",
-        "result_item": {
-            "count": 1,
-            "id": "devices:magical_pouch"
-        }
-    }
+	"enhancers": "forbidden_arcanus:crimson_stone",
+	"essences": {
+		"aureal": 50,
+		"blood": 500,
+		"souls": 20,
+		"experience": 220
+	},
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "minecraft:nether_star"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "hexerei:infused_fabric"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "modern_industrialization:aluminum_plate"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "devices:devices_pouch"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "devices:magical_pouch"
+		}
+	}
 }

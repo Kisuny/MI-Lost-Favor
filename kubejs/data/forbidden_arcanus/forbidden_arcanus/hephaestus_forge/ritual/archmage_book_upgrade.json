@@ -1,53 +1,53 @@
 {
-  "enhancers": "forbidden_arcanus:elementarium",
-  "essences": {
-    "aureal": 1000,
-    "blood": 30000,
-    "experience": 2500,
-    "souls": 150
-  },
-  "forge_tier": 4,
-  "inputs": [
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "ars_nouveau:wilden_tribute"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "minecraft:nether_star"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "minecraft:totem_of_undying"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "ars_nouveau:source_gem_block"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "spectrum:moonstruck_nectar"
-      }
-    }
-  ],
-  "magic_circle": "forbidden_arcanus:create_item",
-  "main_ingredient": {
-    "item": "ars_nouveau:apprentice_spell_book"
-  },
-  "result": {
-    "type": "forbidden_arcanus:create_item",
-    "result_item": {
-      "count": 1,
-      "id": "ars_nouveau:archmage_spell_book"
-    }
-  }
+	"enhancers": "forbidden_arcanus:elementarium",
+	"essences": {
+		"aureal": 1000,
+		"blood": 30000,
+		"souls": 150,
+		"experience": 2500
+	},
+	"forge_tier": 4,
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "ars_nouveau:wilden_tribute"
+			}
+		},
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "minecraft:nether_star"
+			}
+		},
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "minecraft:totem_of_undying"
+			}
+		},
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "ars_nouveau:source_gem_block"
+			}
+		},
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "spectrum:moonstruck_nectar"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "ars_nouveau:apprentice_spell_book"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "ars_nouveau:archmage_spell_book"
+		}
+	}
 }

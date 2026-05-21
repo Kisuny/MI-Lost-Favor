@@ -1,47 +1,47 @@
 {
-  "enhancers": "forbidden_arcanus:maledictus_pact",
-  "essences": {
-    "aureal": 5000,
-    "blood": 25000,
-    "experience": 5000,
-    "souls": 200
-  },
-  "forge_tier": 4,
-  "inputs": [
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "milf:electronic_ender_core"
-      }
-    },
-    {
-      "amount": 3,
-      "ingredient": {
-        "item": "spectrum:bismuth_crystal"
-      }
-    },
-    {
-      "amount": 2,
-      "ingredient": {
-        "item": "apotheosis:mythic_material"
-      }
-    },
-    {
-      "amount": 2,
-      "ingredient": {
-        "item": "forbidden_arcanus:dark_nether_star"
-      }
-    }
-  ],
-  "magic_circle": "forbidden_arcanus:create_item",
-  "main_ingredient": {
-    "item": "apotheosis:simple_reforging_table"
-  },
-  "result": {
-    "type": "forbidden_arcanus:create_item",
-    "result_item": {
-      "count": 1,
-      "id": "apotheosis:reforging_table"
-    }
-  }
+	"enhancers": "forbidden_arcanus:maledictus_pact",
+	"essences": {
+		"aureal": 5000,
+		"blood": 25000,
+		"souls": 200,
+		"experience": 5000
+	},
+	"forge_tier": 4,
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "milf:electronic_ender_core"
+			}
+		},
+		{
+			"amount": 3,
+			"ingredient": {
+				"item": "spectrum:bismuth_crystal"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "apotheosis:mythic_material"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "forbidden_arcanus:dark_nether_star"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "apotheosis:simple_reforging_table"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "apotheosis:reforging_table"
+		}
+	}
 }

@@ -1,41 +1,41 @@
 {
-  "enhancers": "forbidden_arcanus:maledictus_pact",
-  "essences": {
-        "aureal": 5000,
-        "blood": 2000,
-        "souls": 20,
-        "experience": 2000
-    },
-  "forge_tier": 4,
-  "inputs": [
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "simplyswords:runic_tablet"
-      }
-    },
-    {
-      "amount": 4,
-      "ingredient": {
-        "item": "advanced_ae:shattered_singularity"
-      }
-    },
-    {
-      "amount": 3,
-      "ingredient": {
-        "item": "modern_industrialization:titanium_large_plate"
-      }
-    }
-  ],
-  "magic_circle": "forbidden_arcanus:create_item",
-  "main_ingredient": {
-    "item": "modern_industrialization:singularity"
-  },
-  "result": {
-    "type": "forbidden_arcanus:create_item",
-    "result_item": {
-      "count": 2,
-      "id": "tesseract:tesseract"
-    }
-  }
+	"enhancers": "forbidden_arcanus:maledictus_pact",
+	"essences": {
+		"aureal": 5000,
+		"blood": 2000,
+		"souls": 20,
+		"experience": 2000
+	},
+	"forge_tier": 4,
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "simplyswords:runic_tablet"
+			}
+		},
+		{
+			"amount": 4,
+			"ingredient": {
+				"item": "advanced_ae:shattered_singularity"
+			}
+		},
+		{
+			"amount": 3,
+			"ingredient": {
+				"item": "modern_industrialization:titanium_large_plate"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "modern_industrialization:singularity"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 2,
+			"id": "tesseract:tesseract"
+		}
+	}
 }

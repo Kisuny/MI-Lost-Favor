@@ -1,47 +1,47 @@
 {
-  "enhancers": "forbidden_arcanus:maledictus_pact",
-  "essences": {
-    "aureal": 10000,
-    "blood": 100000,
-    "experience": 5000,
-    "souls": 500
-  },
-  "forge_tier": 5,
-  "inputs": [
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "spectrum:aether_vestiges"
-      }
-    },
-    {
-      "amount": 3,
-      "ingredient": {
-        "item": "malum:block_of_malignant_pewter"
-      }
-    },
-    {
-      "amount": 2,
-      "ingredient": {
-        "item": "apotheosis:mythic_material"
-      }
-    },
-    {
-      "amount": 2,
-      "ingredient": {
-        "item": "forbidden_arcanus:stellarite_block"
-      }
-    }
-  ],
-  "magic_circle": "forbidden_arcanus:create_item",
-  "main_ingredient": {
-    "item": "malum:umbral_spirit"
-  },
-  "result": {
-    "type": "forbidden_arcanus:create_item",
-    "result_item": {
-      "count": 1,
-      "id": "apotheosis:augmenting_table"
-    }
-  }
+	"enhancers": "forbidden_arcanus:maledictus_pact",
+	"essences": {
+		"aureal": 10000,
+		"blood": 100000,
+		"souls": 500,
+		"experience": 5000
+	},
+	"forge_tier": 5,
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "spectrum:aether_vestiges"
+			}
+		},
+		{
+			"amount": 3,
+			"ingredient": {
+				"item": "malum:block_of_malignant_pewter"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "apotheosis:mythic_material"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "forbidden_arcanus:stellarite_block"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "malum:umbral_spirit"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "apotheosis:augmenting_table"
+		}
+	}
 }

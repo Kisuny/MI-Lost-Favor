@@ -1,46 +1,46 @@
 {
-  "enhancers": "forbidden_arcanus:maledictus_pact",
-  "essences": {
-        "aureal": 20,
-        "blood": 500,
-        "souls": 2,
-        "experience": 100
-    },
-  "inputs": [
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "simplyswords:runic_tablet"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "dungeonsdelight:ancient_egg"
-      }
-    },
-    {
-      "amount": 2,
-      "ingredient": {
-        "item": "forbidden_arcanus:obsidiansteel_ingot"
-      }
-    },
-    {
-      "amount": 4,
-      "ingredient": {
-        "item": "modern_industrialization:gold_curved_plate"
-      }
-    }
-  ],
-  "magic_circle": "forbidden_arcanus:create_item",
-  "main_ingredient": {
-    "item": "ars_elemental:curio_bag"
-  },
-  "result": {
-    "type": "forbidden_arcanus:create_item",
-    "result_item": {
-      "count": 1,
-      "id": "enderstorage:ender_pouch"
-    }
-  }
+	"enhancers": "forbidden_arcanus:maledictus_pact",
+	"essences": {
+		"aureal": 20,
+		"blood": 500,
+		"souls": 2,
+		"experience": 100
+	},
+	"inputs": [
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "simplyswords:runic_tablet"
+			}
+		},
+		{
+			"amount": 1,
+			"ingredient": {
+				"item": "dungeonsdelight:ancient_egg"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "forbidden_arcanus:obsidiansteel_ingot"
+			}
+		},
+		{
+			"amount": 4,
+			"ingredient": {
+				"item": "modern_industrialization:gold_curved_plate"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "ars_elemental:curio_bag"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "enderstorage:ender_pouch"
+		}
+	}
 }

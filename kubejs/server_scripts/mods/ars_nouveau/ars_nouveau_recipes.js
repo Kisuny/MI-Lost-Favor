@@ -26,6 +26,31 @@ ServerEvents.recipes(event => {
         "ars_nouveau:vitalic_sourcelink",
         "ars_nouveau:alchemical_sourcelink",
     ]})
+    addHephaestusRitual("apprentice_spell_book", {
+        enhancers: "forbidden_arcanus:elementarium",
+        essences: { aureal: 500, blood: 5000, souls: 2, experience: 100 },
+        mainIngredient: "ars_nouveau:novice_spell_book",
+        inputs: [
+            { item: "occultism:dragonyst_dust", amount: 1 },
+            { item: "forbidden_arcanus:obsidiansteel_ingot", amount: 7 },
+        ],
+        result: "ars_nouveau:apprentice_spell_book",
+    })
+
+    addHephaestusRitual("archmage_book_upgrade", {
+        enhancers: "forbidden_arcanus:elementarium",
+        essences: { aureal: 1000, blood: 30000, souls: 150, experience: 2500 },
+        mainIngredient: "ars_nouveau:apprentice_spell_book",
+        inputs: [
+            { item: "ars_nouveau:wilden_tribute", amount: 1 },
+            { item: "minecraft:nether_star", amount: 1 },
+            { item: "minecraft:totem_of_undying", amount: 1 },
+            { item: "ars_nouveau:source_gem_block", amount: 1 },
+            { item: "spectrum:moonstruck_nectar", amount: 1 },
+        ],
+        forgeTier: 4,
+        result: "ars_nouveau:archmage_spell_book",
+    })
 
     event.remove({
         output: [

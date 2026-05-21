@@ -400,6 +400,11 @@
 		""
 		"Модернизации имеют &lтип&r, только лучшая модернизация в рамках типа будет засчитана."
 	]
+	quest.0E68687A10D2E318.quest_desc: [
+		"The simplest way to open &eTimedoors&r. Load a &bLocation Card&r into it, then right-click to open a portal by hand or power it with &cRedstone&r when placed as a block. It is the best early-game teleport tool and does not need Time Steel."
+		"{@pagebreak}"
+		"Самый простой способ открывать &eTimedoor&r. Загрузи в него &bLocation Card&r и нажми правой кнопкой, чтобы открыть портал вручную, или подай &cRedstone&r, если он стоит как блок. Это лучший ранний инструмент для телепорта и ему не нужен Time Steel."
+	]
 	quest.0EBE4702C54278F6.quest_desc: [
 		"It has far more storage space!"
 		""
@@ -441,6 +446,11 @@
 		"Give your Ars Ecclesia to the Witch!"
 		"{@pagebreak}"
 		"Отдай свою книгу(Ars Ecclesia) ведьме!"
+	]
+	quest.0FD47B07FF66BDC0.quest_desc: [
+		"A portable power source that slowly creates Chronons while it is in your inventory or Curios slot. It has no storage of its own, so it is mainly used to charge Cells and Batteries."
+		"{@pagebreak}"
+		"Переносной источник энергии, который медленно создает Chronon, пока лежит в инвентаре или слоте Curios. У него нет собственного запаса, поэтому он нужен в первую очередь для зарядки ячеек и батарей."
 	]
 	quest.106F4D5B5D4A02F7.quest_desc: [
 		"Anyone &#FEECD6interested&r is invited to read the &l&#e4affaSpectrum&r&r guidebook, no point in copying the information to here!"
@@ -513,6 +523,11 @@
 		"{@pagebreak}"
 		""
 		"[ \"Встречается в натуральной генерации, так же можно купить на \", { \"text\": \"маркете\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"257157A1AA94B5E4\" } }, \"!\" ]"
+	]
+	quest.12B718B57B898E3A.quest_desc: [
+		"Stores the coordinates of a &eTimedoor&r destination. Write it from a marker, then load it into a &eTimedoor Projector&r or &aTempad&r to open the matching portal."
+		"{@pagebreak}"
+		"Сохраняет координаты точки &eTimedoor&r. Запиши ее от метки, затем загрузи в &eTimedoor Projector&r или &aTempad&r, чтобы открыть нужный портал."
 	]
 	quest.12EA2728AD90FABD.quest_desc: [
 		"Can cook food. You can also light torches by Shift-clicking it"
@@ -769,6 +784,16 @@
 		"A more advanced station for creating potions. Can also create some other liquids."
 		"{@pagebreak}"
 		"Более продвинутая станция для создания зелий. Также может создавать некоторые другие жидкости."
+	]
+	quest.1D30FE465A879F20.quest_desc: [
+		"Holds several &bLocation Cards&r in one item. The Tempad reads the wallet automatically, which makes it useful for carrying shared locations and grouped travel points."
+		"{@pagebreak}"
+		"Хранит несколько &bLocation Card&r в одном предмете. Tempad читает его автоматически, поэтому в нем удобно носить общие точки и наборы мест для телепорта."
+	]
+	quest.1E0A4735FB02983C.quest_desc: [
+		"Stores &bChronon energy&r for your devices. Keep it in your inventory or a &6Curios slot&r, and it will feed power to carried Tempad items automatically."
+		"{@pagebreak}"
+		"Хранит &bэнергию Chronon&r для твоих устройств. Если держать ее в инвентаре или в &6слоте Curios&r, она будет автоматически питать все переносимые предметы Tempad."
 	]
 	quest.1E136FE5D9294481.quest_desc: [
 		"Every &dmagician&r should have a &dmagic furnace&r."
@@ -1113,6 +1138,7 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
+	quest.2BC8FC3AC76D89BA.quest_desc: ["Mod adds a complete fast travel system built around glowing portal doorways called Timedoors, powered by a unique Chronon energy system with generators, cells, and batteries"]
 	quest.2BE901E1F516A6AE.quest_subtitle: "Golems?!"
 	quest.2CBD884256778D81.quest_desc: [
 		"Mixing &#C6BCE9colors&r seemed like such a simple and fun activity, but brown has, &#ff6600as always&r, &#ff6600ruined&r everything."
@@ -1431,6 +1457,11 @@
 		"[ \"Предшественник сундука и ваше первое(\", { \"text\": \"или не совсем первое?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") надежное хранилище, может хранить до 9 стаков предметов.\" ]"
 	]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
+	quest.38FAA757FA36219C.quest_desc: [
+		"A stronger storage item for Chronon energy. It works like the Cell, but holds more power and keeps feeding carried devices while you travel."
+		"{@pagebreak}"
+		"Более вместительное хранилище энергии Chronon. Работает как ячейка, но хранит больше энергии и продолжает питать переносимые устройства."
+	]
 	quest.39553C7C57BEE887.quest_desc: [
 		"Hold down the right mouse button + Shift key on the \"warped fungus\" or \"crimson fungus\"!"
 		"{@pagebreak}"
@@ -1484,11 +1515,7 @@
 		"{@pagebreak}"
 		"Как только у меня будет достаточно данных об ингредиенте, я могу взять в руку лупу и посмотреть в своем инвентаре, с каким свойством ассоциируется этот ядовитый ингредиент. О, прекрасное искусство экспериментальной науки!"
 	]
-	quest.3BA2CB4907E139B5.quest_desc: [
-		"The Divine Pact Enhancer allows the creation of celestial items in the Hephaestus Forge. "
-		""
-		"This enhancer is currently not obtainable in survival."
-	]
+	quest.3BA2CB4907E139B5.quest_desc: ["The Divine Pact Enhancer allows the creation of celestial items in the Hephaestus Forge. "]
 	quest.3BB0FE129E37B19E.title: "World Tier: Ascent"
 	quest.3BB8C6DBB6FE9970.quest_desc: [
 		"To obtain the &l&0mid&5night &5shard&r, you need to suffocate a living creature in the &l&5mid&0night &l&5so&0lu&5ti&0on&r."
@@ -1540,6 +1567,7 @@
 		""
 		"This enhancer is currently not obtainable in survival."
 	]
+	quest.3DABDF05A0D06EF5.quest_desc: ["The Time Twister tracks the player’s personal timeline and allows backtracking to previous locations. It records dimension changes and death events, presenting them on a radial display. Selecting a point teleports the player back to that location and erases all timeline entries after the chosen point."]
 	quest.3DD74B48583DB8C0.quest_desc: [
 		"Many parts of a mob, including ourselves, react differently when toxins are introduced in their bodies. This makes unique ingredients when certain mobs are afflicted. As such, we should extract them. When a mob dies while being afflicted with poison, they can drop special ingredients. However, a sword is too crude to extract them. As such, they must die by a scalpel in order to carefully extract these valuable parts."
 		"{@pagebreak}"
@@ -1715,6 +1743,13 @@
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \", but be aware and don't believe a single word, because we know better.\" ]"
 	]
+	quest.44B39469DF2F9E65.quest_desc: [
+		"The Workstation is a two-part block that serves as a docking station for the Tempad and a stationary Timedoor terminal. Right-click the docking pad with a Tempad to dock it, which unlocks the cassette slot for upgrade tapes and enables the Portal Setup app on the terminal screen."
+		""
+		"Upgrade tapes are installed by right-clicking them into the cassette slot on the back of the Workstation while a Tempad is docked. Each upgrade permanently adds new functionality to that specific Tempad. "
+		""
+		"When a Tempad is docked and the terminal receives a Redstone signal, it opens a Timedoor to the selected destination. The Portal Setup app allows fine-tuning the Timedoor’s position and rotation up to 5 blocks in any direction, as well as toggling whether the portal is upright or flat on the ground. A constant Redstone signal keeps the Timedoor open indefinitely at a cost of 10 Chronons per second."
+	]
 	quest.454C3080B0A7A24A.quest_desc: [
 		"Quite &#FEECD6bad&r for bridges and diving!"
 		"{@pagebreak}"
@@ -1788,11 +1823,13 @@
 		"Чтобы зарядить болты в картридж, присядьте и используйте его. картридж будет захватывать различные болты в инвентаре, который определяется так же, как и стрелы при использовании лука. Он будет пытаться захватить болты из разных стаков. Если уникальных стаков недостаточно, он будет хватать одинаковые стаки. Затем мы можем загрузить Cyclebow, как и болты. Если я захочу вернуть болты из картриджа, мне нужно будет лишь присесть и использовать заполненный картридж."
 	]
 	quest.48BB521ECABF71BF.title: "Afrit Smelter"
+	quest.48D0478F8516F1C7.quest_desc: ["Teleport to other players"]
 	quest.48D6F64AD6B17D08.quest_desc: [
 		"Next, I must heat it in a crucible to remove any impurities."
 		"{@pagebreak}"
 		"Затем выпарить все примеси в котелке."
 	]
+	quest.4908E1F8C74C3C13.quest_desc: ["when toggled on and carried in the inventory, makes the holder visible in the Teleport app of any Tempad with the Player Teleport upgrade installed. Right-clicking it toggles between active (green screen) and inactive (red screen)."]
 	quest.490D92E237AFBA82.quest_desc: ["с смесью получается торч который ускоряет рост растений"]
 	quest.4932A126EA1016F2.quest_desc: [
 		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays &euseful information&r about my bodies chemical composition. The &atoxicity&r gauge examines 3 important parts of my body. The &atoxins&r, my &ctolerance&r, and the &9thresholds&r I can reach!"
@@ -1977,6 +2014,11 @@
 		"• Вы также можете использовать воронку, чтобы достать яйца из гнезда."
 	]
 	quest.50A70151E50EC5DC.quest_desc: ["Drops from bogged."]
+	quest.50F1D009FC192076.quest_desc: [
+		"Sets the target point for teleportation. Place it where you want the portal to lead, then write its coordinates onto a blank &bLocation Card&r by right-clicking it."
+		"{@pagebreak}"
+		"Задает точку назначения для телепортации. Поставь ее в месте, куда должен вести портал, а затем запиши координаты на пустую &bLocation Card&r через правую кнопку мыши."
+	]
 	quest.51355FDCB71F9048.quest_desc: [
 		"&#C6BCE9Quitoxic Reeds&r can be found in &#CAE4C8swamps&r!"
 		""
@@ -2053,6 +2095,7 @@
 		""
 		"{image:milf:textures/quest_pic/fowl.png width:100 height:100 align:center}"
 	]
+	quest.5613C04E72D2AC99.quest_desc: ["Unlike the Timedoor Projector, the Tempad automatically detects all Timedoor Markers and Chronomarks owned by the player, making Location Cards optional for personal travel."]
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
 	quest.56956E24B043B41A.quest_desc: [
 		"&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"
@@ -2381,6 +2424,11 @@
 		"{@pagebreak}"
 		"Подарок Посейдона"
 	]
+	quest.63955CA29790CD2A.quest_desc: [
+		"A faster portable generator than the basic Chronon Generator. It creates Chronons more quickly, but still stays in your inventory instead of being placed as a block."
+		"{@pagebreak}"
+		"Более быстрый переносной генератор, чем обычный Chronon Generator. Он производит Chronon быстрее, но по-прежнему работает как предмет в инвентаре, а не как блок."
+	]
 	quest.63F9D18BD9BB214C.quest_desc: [
 		"As with previous familiars and Possessed mobs, read about them in the book."
 		"{@pagebreak}"
@@ -2614,6 +2662,7 @@
 		""
 		"Can be used together with a Oil Pot Sash. Pots will dig ore in an area like grenades. The ores will have Fortune II applied to them."
 	]
+	quest.6A003706B95C1CB8.quest_desc: ["The Screening Device is an advanced version of the Location Broadcaster that adds team-based filtering. When compatible mods are installed (FTB Teams, Cadmus, or similar), it can restrict which players are allowed to teleport to the holder, cycling through modes like “Just you,” “Everyone,” “Guildmates,” “Party members,” and “Team.”"]
 	quest.6A1DA8ABA8F13FC2.title: "World Tier: Frontier"
 	quest.6AADBAB610C068F2.quest_desc: ["на метле можно уместить  2 игрока, можно красить имеет 9 слотов"]
 	quest.6B3078F8DB055448.quest_desc: [
@@ -2669,6 +2718,11 @@
 		"&lYou can press F3 + G to enable chunk highlighting.&r"
 	]
 	quest.6D68EF9352B93B19.title: "Chunk Claiming"
+	quest.6D7E39E29B325D19.quest_desc: [
+		"The strongest Chronon generator in the mod. Place it as a block and charge it once to start it, then it stores and produces Chronons on its own. Multiple Metronomes link together and work faster as a network."
+		"{@pagebreak}"
+		"Самый сильный генератор Chronon в моде. Его нужно поставить как блок и один раз зарядить для запуска, после чего он сам хранит и производит энергию. Несколько Метрономов связываются в сеть и работают быстрее вместе."
+	]
 	quest.6DD0AB27900F46E3.quest_desc: [""]
 	quest.6DF1AD7EA7689F68.quest_desc: [
 		"Note that &bpaltaeria fragments&r will float away once they're mined! Place something above to catch them, or come up with something more clever. "
@@ -2839,6 +2893,7 @@
 		"{@pagebreak}"
 		"О большинстве ритуалов можно прочитать в гайдбуке!"
 	]
+	quest.721EE6BCEA9B6F36.quest_desc: ["Access in-game encyclopedia"]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
 		"{@pagebreak}"
@@ -3035,6 +3090,7 @@
 		"{@pagebreak}"
 		"«Желтое удобрение» можно использовать на почве для предотвращения вытаптывания посевов"
 	]
+	quest.7F1B71419F175D24.quest_desc: ["The Chronomark is an upgraded version of the Timedoor Marker. It supports a portal offset of up to 5 blocks in any direction, allowing the marker to be hidden underground or mounted on a ceiling while the Timedoor appears at a different height. It also provides team-based access filtering with FTB Teams."]
 	quest.7F2A3447D994B25E.quest_desc: [
 		"&lThere's only one way to make liquid source!&r"
 		""
@@ -3146,6 +3202,7 @@
 	task.0F25C68A335172FD.title: "Ore generattion"
 	task.0F53207FFCB0E0C6.title: "Any #c:animal_foods"
 	task.0F74A9109F9CECEA.title: "Any #minecraft:wooden_slabs"
+	task.100D580CE861E070.title: "Tempad"
 	task.1066475D862E1E0F.title: "Tier 2 Dimensional Storage Stabilizer"
 	task.10D736208838EF5D.title: "Any #hexerei:candles"
 	task.12A25107AA4CA41F.title: "Stabilized Dimensional Storage Actuator"

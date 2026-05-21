@@ -1822,5 +1822,121 @@
 			x: -1.0d
 			y: -10.5d
 		}
+		{
+			dependencies: [
+				"2BC8FC3AC76D89BA"
+				"6BC434A6B44D825B"
+				"026821F02D50FE0D"
+			]
+			id: "376A11E4E916BA8A"
+			shape: "gear"
+			tasks: [{
+				id: "22DAA703C78404F4"
+				item: { count: 1, id: "tempad:time_steel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["44B39469DF2F9E65"]
+			id: "48D0478F8516F1C7"
+			tasks: [{
+				id: "6238D9D45088C892"
+				item: { count: 1, id: "tempad:player_teleport_upgrade" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["44B39469DF2F9E65"]
+			id: "721EE6BCEA9B6F36"
+			tasks: [{
+				id: "6836B050962F2F8E"
+				item: { count: 1, id: "tempad:knowledge_repository_upgrade" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["38FAA757FA36219C"]
+			id: "5613C04E72D2AC99"
+			shape: "heart"
+			tasks: [{
+				id: "15234BED18C888E4"
+				item: { count: 1, id: "tempad:tempad" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["376A11E4E916BA8A"]
+			id: "7F1B71419F175D24"
+			tasks: [{
+				id: "0A86E85123DC604D"
+				item: { count: 1, id: "tempad:chronomark" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["376A11E4E916BA8A"]
+			id: "38FAA757FA36219C"
+			tasks: [{
+				id: "19A6E5AF49D097C4"
+				item: { components: { "tempad:chronon_content": 0 }, count: 1, id: "tempad:chronon_battery" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["38FAA757FA36219C"]
+			id: "63955CA29790CD2A"
+			tasks: [{
+				id: "10ED10BAC87FD2E5"
+				item: { count: 1, id: "tempad:chronometer" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["376A11E4E916BA8A"]
+			id: "3DABDF05A0D06EF5"
+			tasks: [{
+				id: "2738A105DB6D5ABA"
+				item: { count: 1, id: "tempad:time_twister" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -21.0d
+		}
+		{
+			dependencies: ["5613C04E72D2AC99"]
+			id: "44B39469DF2F9E65"
+			tasks: [{
+				id: "2C7397A0C3399352"
+				item: { count: 1, id: "tempad:workstation" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["38FAA757FA36219C"]
+			id: "6D7E39E29B325D19"
+			tasks: [{
+				id: "4D553F7F1ECB1A95"
+				item: { count: 1, id: "tempad:metronome" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -22.0d
+		}
 	]
 }

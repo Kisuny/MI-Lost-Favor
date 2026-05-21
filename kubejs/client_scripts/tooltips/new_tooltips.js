@@ -88,7 +88,6 @@ ItemEvents.modifyTooltips(event => {
 
     //#region WIP items tooltip
     const wip_tooltip = [
-        /tempad:.*/,
         /chunkloaders:.*/,
         /fluxnetworks:.*/,
         /replication:.*/,

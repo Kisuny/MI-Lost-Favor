@@ -5831,5 +5831,117 @@
 			x: -10.0d
 			y: 39.0d
 		}
+		{
+			dependencies: ["2BC8FC3AC76D89BA"]
+			id: "12B718B57B898E3A"
+			tasks: [{
+				id: "4BC5CA0482425DAB"
+				item: { count: 1, id: "tempad:location_card" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 36.0d
+		}
+		{
+			dependencies: ["12B718B57B898E3A"]
+			id: "1D30FE465A879F20"
+			tasks: [{
+				id: "15C638F316FB6C97"
+				item: { count: 1, id: "tempad:card_wallet" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["50F1D009FC192076"]
+			id: "0E68687A10D2E318"
+			shape: "heart"
+			tasks: [{
+				id: "2F96E40A3AB41B16"
+				item: { components: { "tempad:chronon_content": 1 }, count: 1, id: "tempad:timedoor_projector" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 36.0d
+		}
+		{
+			dependencies: ["12B718B57B898E3A"]
+			id: "50F1D009FC192076"
+			shape: "heart"
+			tasks: [{
+				id: "1B065A5452465CE4"
+				item: { count: 1, id: "tempad:timedoor_marker" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 36.0d
+		}
+		{
+			dependencies: ["2BC8FC3AC76D89BA"]
+			id: "1E0A4735FB02983C"
+			shape: "heart"
+			tasks: [{
+				id: "1400E8929EAD6323"
+				item: { components: { "tempad:chronon_content": 0 }, count: 1, id: "tempad:chronon_cell" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 37.0d
+		}
+		{
+			dependencies: ["1E0A4735FB02983C"]
+			id: "0FD47B07FF66BDC0"
+			tasks: [{
+				id: "555DE9796A500451"
+				item: { count: 1, id: "tempad:chronon_generator" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 37.0d
+		}
+		{
+			dependencies: ["2BC8FC3AC76D89BA"]
+			id: "4908E1F8C74C3C13"
+			tasks: [{
+				id: "7B3615E7ACB8DB27"
+				item: { count: 1, id: "tempad:location_broadcaster" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 38.0d
+		}
+		{
+			dependencies: [
+				"4908E1F8C74C3C13"
+				"376A11E4E916BA8A"
+			]
+			id: "6A003706B95C1CB8"
+			tasks: [{
+				id: "2AD1E0F5B8BA1FD9"
+				item: { count: 1, id: "tempad:screening_device" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 38.0d
+		}
+		{
+			dependencies: ["1D9DE7EAC8B966F9"]
+			id: "2BC8FC3AC76D89BA"
+			rewards: [{
+				id: "3A538825C6B3579C"
+				item: {
+					count: 1
+					id: "tempad:knowledge_projector"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "100D580CE861E070"
+				type: "checkmark"
+			}]
+			x: -14.5d
+			y: 37.0d
+		}
 	]
 }

@@ -1,4 +1,5 @@
 // https://wiki.valhelsia.net/external-mods/forbidden-and-arcanus/wiki/datapack-guide/hephaestus-forge-rituals
+// This type of recipe requires a full restart!
 
 // NOTE: enhancers:"forbidden_arcanus:crimson_stone", "forbidden_arcanus:soul_crimson_stone" not obtainable in survival yet.
 // If necessary, you'll need to add a method for obtaining 

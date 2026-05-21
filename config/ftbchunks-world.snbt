@@ -138,7 +138,7 @@
 		# You can override this with FTB Ranks 'ftbchunks.max_force_loaded' permission
 		# Default: 25
 		# Range: -∞ ~ +∞
-		max_force_loaded_chunks: 25
+		max_force_loaded_chunks: 0
 		
 		# Maximum time (in real-world days) where if no player in a team logs in, any forceloaded chunks owned by the team are no longer forceloaded.
 		# Prevents chunks being forceloaded indefinitely by teams who no longer play.

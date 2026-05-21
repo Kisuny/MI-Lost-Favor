@@ -1,20 +1,29 @@
+// https://wiki.valhelsia.net/external-mods/forbidden-and-arcanus/wiki/datapack-guide/hephaestus-forge-rituals
+
 // NOTE: enhancers:"forbidden_arcanus:crimson_stone", "forbidden_arcanus:soul_crimson_stone" not obtainable in survival yet.
 // If necessary, you'll need to add a method for obtaining 
+// https://wiki.valhelsia.net/external-mods/forbidden-and-arcanus/wiki/datapack-guide/enhancers
 /**
  * @typedef {"forbidden_arcanus:artisan_relic" | "forbidden_arcanus:crimson_stone" | "forbidden_arcanus:soul_crimson_stone" | "forbidden_arcanus:elementarium" | "forbidden_arcanus:divine_pact" | "forbidden_arcanus:maledictus_pact" | "forbidden_arcanus:crescent_moon"} HephaestusEnhancer
+ */
+// NOTE: Magic Circles can be configured using JSON files within a data pack in the path:
+// `data/<namespace>/forbidden_arcanus/magic_circle.`
+// https://wiki.valhelsia.net/external-mods/forbidden-and-arcanus/wiki/datapack-guide/magic-circles
+/**
+ * @typedef {"forbidden_arcanus:create_item" | "forbidden_arcanus:upgrade_tier" | "forbidden_arcanus:upgrade_final_tier" } HephaestusMagicCircle
  */
 
 /**
  * @typedef {Object} HephaestusRitualArgs
- * @property {string | {tag: string}} mainIngredient
- * @property {{aureal?: number, blood?: number, souls?: number, experience?: number}} essences
- * @property {Array<{item?: string, tag?: string, amount?: number}>} inputs - max 8 items
- * @property {string | {tier: number}} result
- * @property {number} [resultCount]
- * @property {HephaestusEnhancer} [enhancers]
- * @property {number} [forgeTier]
- * @property {string} [magicCircle]
- * @property {boolean} [matchTierExact]
+ * @property {string | {tag: string}} mainIngredient - required
+ * @property {{aureal?: number, blood?: number, souls?: number, experience?: number}} essences - required
+ * @property {Array<{item?: string, tag?: string, amount?: number}>} inputs - max 8 items (required)
+ * @property {string | {tier: number}} result - required
+ * @property {number} [resultCount] - default is 1
+ * @property {HephaestusEnhancer} [enhancers] - enhancer item that can be used in the ritual (optional)
+ * @property {number} [forgeTier] - minimum forge tier required to perform the ritual, from 1 to 5 (default is 1)
+ * @property {HephaestusMagicCircle} [magicCircle] - required (default is "forbidden_arcanus:create_item")
+ * @property {boolean} [matchTierExact] - if true, the ritual will only match a forge of the exact tier specified in forgeTier (optional)
  */
 
 /**

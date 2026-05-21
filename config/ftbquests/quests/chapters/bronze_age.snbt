@@ -5928,5 +5928,20 @@
 			x: 0.0d
 			y: 4.5d
 		}
+		{
+			dependencies: [
+				"7D9C31E5FE076F2C"
+				"3784CF017C0CB226"
+			]
+			id: "0743F72CB6464DAF"
+			shape: "heart"
+			tasks: [{
+				id: "47212556DF1503EF"
+				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
 	]
 }

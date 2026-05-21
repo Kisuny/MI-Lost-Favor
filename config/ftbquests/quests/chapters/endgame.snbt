@@ -152,5 +152,39 @@
 			x: 0.5d
 			y: -5.5d
 		}
+		{
+			id: "19ED7B8D819EDD01"
+			tasks: [{
+				id: "443263ACAE1DEA93"
+				item: { count: 1, id: "modern_industrialization:quantum_circuit" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			id: "49DF1FBA5983B7EC"
+			tasks: [{
+				id: "5B50CDCB70C7062C"
+				item: { count: 1, id: "modern_industrialization:quantum_machine_hull" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"49DF1FBA5983B7EC"
+				"19ED7B8D819EDD01"
+			]
+			id: "55E87ADAC58369CB"
+			tasks: [{
+				id: "60707811BF8B9E47"
+				item: { count: 1, id: "chunkloaders:ultimate_chunk_loader" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
 	]
 }

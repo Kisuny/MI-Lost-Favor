@@ -1,9 +1,16 @@
 {
+  "enableDataFixer": false,
+  "blockUnknownAttachmentWarning": true,
   "enablePortalShader": true,
   "enableScreenShake": true,
+  "enableLootChest": true,
+  "enableBossRespawn": true,
+  "bossRespawnCooldown": 36000,
+  "spawnInEternalStarlight": false,
+  "respawnInEternalStarlight": false,
+  "startWithGuidebook": false,
   "aethersentMeteorDropRate": 5.0E-4,
   "aethersentMeteorReplaceBlocks": false,
-  "laserBeamBreakBlocks": true,
   "mobMaxTearyTicks": 200,
   "mobsConfig": {
     "boarwarf": {
@@ -39,6 +46,13 @@
       "followRange": 16.0,
       "canSpawn": true
     },
+    "seeker": {
+      "maxHealth": 15.0,
+      "armor": 0.0,
+      "attackDamage": 3.0,
+      "followRange": 16.0,
+      "canSpawn": true
+    },
     "thirstWalker": {
       "maxHealth": 40.0,
       "armor": 0.0,
@@ -62,12 +76,12 @@
       "canSpawn": true
     },
     "stranghoul": {
-      "maxHealth": 40.0,
+      "maxHealth": 30.0,
       "armor": 2.0,
       "attackDamage": 2.0,
       "followRange": 32.0,
       "canSpawn": true,
-      "hiringCooldown": 0
+      "hiringCooldown": 8000
     },
     "ent": {
       "maxHealth": 10.0,
@@ -152,15 +166,16 @@
       "canSpawn": true
     },
     "theGatekeeper": {
-      "maxHealth": 375.0,
-      "armor": 35.0,
+      "maxHealth": 275.0,
+      "armor": 25.0,
       "attackDamage": 15.0,
       "followRange": 200.0,
-      "canSpawn": true
+      "canSpawn": true,
+      "canAlwaysHurtWhenFighting": false
     },
     "starlightGolem": {
-      "maxHealth": 220.0,
-      "armor": 0.0,
+      "maxHealth": 200.0,
+      "armor": 10.0,
       "attackDamageScale": 1.0,
       "followRange": 200.0,
       "canSpawn": true
@@ -168,7 +183,7 @@
     "freeze": {
       "maxHealth": 15.0,
       "armor": 0.0,
-      "attackDamage": 5.0,
+      "attackDamage": 3.0,
       "followRange": 32.0,
       "canSpawn": true
     },
@@ -176,7 +191,7 @@
       "maxHealth": 120.0,
       "armor": 10.0,
       "attackDamageScale": 1.0,
-      "followRange": 200.0,
+      "followRange": 100.0,
       "canSpawn": true
     },
     "lunarMonstrosity": {
@@ -194,14 +209,22 @@
       "canSpawn": true
     },
     "tangledSkull": {
-      "maxHealth": 10.0,
+      "maxHealth": 1.0,
       "armor": 0.0,
       "attackDamage": 3.0,
       "followRange": 64.0,
       "canSpawn": true
+    },
+    "solarCreeper": {
+      "maxHealth": 250.0,
+      "armor": 10.0,
+      "attackDamageScale": 1.0,
+      "followRange": 200.0,
+      "canSpawn": true
     }
   },
   "itemsConfig": {
+    "playerAethersentMeteorDamageScale": 1.0,
     "chainOfSouls": {
       "maxRange": 64.0,
       "soulAbsorbDamage": 2.0,
@@ -210,6 +233,10 @@
     "crystalbornCatalyst": {
       "maxRange": 128,
       "energyPerShard": 50
+    },
+    "alloyFurnace": {
+      "totalOverheatTicks": 12000,
+      "explosionRadius": 3
     }
   }
 }

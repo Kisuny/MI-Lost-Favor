@@ -63,6 +63,8 @@ function createNewBlock(id, args) {
         args.soundType && block.soundType(args.soundType)
         args.requiresTool && block.requiresTool(true)
         args.hardness && block.hardness(args.hardness)
+        args.opaque && block.opaque(args.opaque)
+        args.lightLevel && block.lightLevel(args.lightLevel)
         args.renderType && block.renderType(args.renderType)
         args.defaultCutout && block.defaultCutout()
         args.box && block.box.apply(block, args.box)

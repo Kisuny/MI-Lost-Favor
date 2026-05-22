@@ -133,4 +133,5 @@ createNewItem('destruction_card', { lang: { "en_us": "Destruction Card", "ru_ru"
 createNewItem('exchanging_card', { lang: { "en_us": "Exchanging Card", "ru_ru": "Карта обмена" } })
 createNewItem('copying_card', { lang: { "en_us": "Copying Card", "ru_ru": "Карта копирования" } })
 createNewItem('cutting_card', { lang: { "en_us": "Cutting Card", "ru_ru": "Карта резки" } })
+createNewItem('blank_card', { lang: { "en_us": "Blank Card" } })
 

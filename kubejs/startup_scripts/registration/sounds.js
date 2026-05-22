@@ -10,4 +10,5 @@ StartupEvents.registry('sound_event', event => {
     event.create('milf:coin_spin')
 
     event.create("milf:whisper")
+    event.create("milf:static")
 })

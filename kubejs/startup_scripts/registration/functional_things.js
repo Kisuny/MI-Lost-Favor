@@ -570,8 +570,6 @@ global.oresWithSamples = ore_list
 global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime || {}
 global.AnotherDefinitelyUniqueNameForBoxes = global.AnotherDefinitelyUniqueNameForBoxes || {}
 
-createNewBlock("chunk_flag", { property: enabledProperty, box: [5, 0, 5, 11, 1, 11, true], defaultCutout: true, lang: { "en_us": "Chunk flag", "ru_ru": "Флаг чанка" }})
-
 ore_list.forEach(ore => {
     createNewBlock(`${ore.itemName}_ore_sample`, {
         blockType: "cardinal",
@@ -597,7 +595,7 @@ multiblocksForPlacers.forEach(template => {
         tagBlock: "milf:placers",
         property: (template.activeMachineShape == undefined ? [enabledProperty, previewOffsetProperty] : [enabledProperty, activeMachineShapeProperty, previewOffsetProperty]),
         defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
-        parentModel: "milf:block/box_closed",
+        parentModel: "milf:block/placer_closed",
         lang: template.langPlacers
     })
     global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`milf:${nameString}_placer`] = `${template.mod}:${itemName}`
@@ -609,7 +607,7 @@ multiblocksForPlacers.forEach(template => {
         tagBlock: "milf:empty_box",
         property: (template.activeMachineShape == undefined ? [enabledProperty, previewOffsetProperty] : [enabledProperty, activeMachineShapeProperty, previewOffsetProperty]),
         defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
-        parentModel: "milf:block/box_open",
+        parentModel: "milf:block/placer_open",
         noDrops: true,
         lang: template.langBoxes
     })

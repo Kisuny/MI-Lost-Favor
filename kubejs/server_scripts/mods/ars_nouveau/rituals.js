@@ -365,8 +365,8 @@ ServerEvents.recipes(event => {
             ]
         }
 
-        JsonIO.write(locateStructureJson, locateStructureRecipeJson);
-        JsonIO.write(locateStructureTagJson, tagStructureJson);
+        //JsonIO.write(locateStructureJson, locateStructureRecipeJson);
+        //JsonIO.write(locateStructureTagJson, tagStructureJson);
     });
 
 })

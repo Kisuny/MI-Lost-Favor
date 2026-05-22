@@ -29,30 +29,51 @@ NetworkEvents.dataReceived('milf_divine_coin_validate', (event) => {
 
     let {data, player, level} = event
 
-    let playerPos = player.blockPosition()
+    let playerPos = player.position()
 
     let structures = getCurrentStructures(player)
 
     //console.log(structures);
-    
 
     let bossData = DIVINE_MINT_BOSSES_DATA[data.getString("bossTier")][data.getString("bossID")]
 
     //console.log(bossData.structure);
-    
 
-    if (structures.contains(bossData.structure) || level.dimension == "milf:abstraction"){
+    let isInAbstraction = level.dimension == "milf:abstraction"
+
+    if (isInAbstraction && bossData.isStructureExclusive){
+        sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.structure_exclusive"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+        return
+    }
+
+    if (structures.contains(bossData.structure) || (isInAbstraction && !bossData.isStructureExclusive)){
 
         let playerPosData = new $CompoundTag()
-        playerPosData.putInt("x", playerPos.x)
-        playerPosData.putInt("y", playerPos.y)
-        playerPosData.putInt("z", playerPos.z)
+        playerPosData.putDouble("x", playerPos.x)
+        playerPosData.putDouble("y", playerPos.y)
+        playerPosData.putDouble("z", playerPos.z)
 
         data.put("spawnPos", playerPosData)
         event.player.sendData("milf_divine_coin_valid", data)
-
+        //event.getLevel().spawnParticles("spectrum:falling_liquid_crystal", false, playerPos.x, playerPos.y + 1, playerPos.z, 0, 1, 0, 1, 1)
+        //event.getLevel().spawnParticles("companions:teddy_transformation_cloud", false, playerPos.x, playerPos.y + 0.01, playerPos.z, 0, 0, 0, 1, 0)
+        return
     }
+
+    sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.spawn_conditions"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     
+})
+
+NetworkEvents.dataReceived('milf_divine_coin_boss_particles', (event) => {
+
+    let data = event.data
+    let spawnPos = data.get("spawnPos")
+
+    let posVector = new Vec3d(spawnPos.getDouble("x"), spawnPos.getDouble("y") + 0.01, spawnPos.getDouble("z"))
+
+    milfPlaySound(event, "fdbosses:geburah_sin_change", {pos: BlockPos.containing(posVector)})
+    event.getLevel().spawnParticles("companions:teddy_transformation_cloud", false, posVector.x(), posVector.y(), posVector.z(), 0, 0, 0, 1, 0)
+
 })
 
 let milfBossesToSpawn = {
@@ -71,7 +92,8 @@ ServerEvents.tick(event =>{
         //console.log(newTicks);
         //console.log(data.entity.getPersistentData());
 
-        let scale = easeOutBounce((30 - newTicks) / 30)
+        //let scale = easeOutBounce((30 - newTicks) / 30)
+        let scale = easeInOutCirc((30 - newTicks) / 30)
         
         data.entity.getAttribute($Attributes.SCALE).setBaseValue(scale)
 
@@ -97,6 +119,12 @@ function easeOutBounce(x) {
     } else {
         return n1 * (x -= 2.625 / d1) * x + 0.984375
     }
+}
+
+function easeInOutCirc(x) {
+    return x < 0.5
+        ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2))) / 2
+        : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2
 }
 
 
@@ -142,7 +170,7 @@ NetworkEvents.dataReceived('milf_divine_coin_spawn_boss', (event) => {
 
             entity.getAttribute($Attributes.SCALE).setBaseValue(0)
 
-            entity["moveTo(double,double,double)"](spawnPos.getInt("x"), spawnPos.getInt("y"), spawnPos.getInt("z"))
+            entity["moveTo(double,double,double)"](spawnPos.getDouble("x"), spawnPos.getDouble("y"), spawnPos.getDouble("z"))
         },
         new BlockPos(0,0,0),
         $MobSpawnType.COMMAND,
@@ -157,13 +185,41 @@ NetworkEvents.dataReceived('milf_divine_coin_spawn_boss', (event) => {
 
 })
 
-NativeEvents.onEvent("net.neoforged.neoforge.event.entity.living.LivingDropsEvent", event => {
+let $LivingDropsEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingDropsEvent")
+NativeEvents.onEvent($LivingDropsEvent, event => {
     let entity = event.getEntity()
     if (entity.getPersistentData().contains("milfLootModifier")){
 
         let lootModifier = entity.getPersistentData().getFloat("milfLootModifier")
 
         let extraDrops = []
+
+        let addStackCopy = (stackToAdd, itemEntity) => {
+
+            let itemEntityToAdd = new $ItemEntity(
+                itemEntity.level,
+                itemEntity.getX(),
+                itemEntity.getY(),
+                itemEntity.getZ(),
+                stackToAdd
+            )
+
+            itemEntityToAdd.setGlowing(true)
+
+            let spreadX = (Math.random() - 0.5) * 0.5
+            let spreadY = Math.random() * 0.5
+            let spreadZ = (Math.random() - 0.5) * 0.5
+
+            itemEntityToAdd.setDeltaMovement(new Vec3d(
+                itemEntity.getDeltaMovement().x + spreadX,
+                itemEntity.getDeltaMovement().y + spreadY,
+                itemEntity.getDeltaMovement().z + spreadZ
+            ))
+
+            itemEntityToAdd.setPickUpDelay(10)
+
+            extraDrops.push(itemEntityToAdd)
+        }
 
         for (let drop of event.getDrops()) {
             let originalStack = drop.getItem()
@@ -176,48 +232,34 @@ NativeEvents.onEvent("net.neoforged.neoforge.event.entity.living.LivingDropsEven
                 targetCount++
             }
 
-            let toAddCount = targetCount - originalCount
+            if (targetCount == originalCount) continue
 
-            for (let i = 0; i < toAddCount; i++) {
-                let stackToAdd = originalStack.copy()
+            let originalMaxSize = originalStack.getMaxStackSize()
+            if (targetCount > originalMaxSize){
 
-                let itemEntityToAdd = new $ItemEntity(
-                    drop.level,
-                    drop.getX(),
-                    drop.getY(),
-                    drop.getZ(),
-                    stackToAdd
-                )
+                let fullStacksSize = Math.ceil(targetCount / originalMaxSize) - 1
 
-                itemEntityToAdd.setGlowing(true)
+                for (let i = 0; i < fullStacksSize; i++) {
+                    addStackCopy(originalStack.copyWithCount(originalMaxSize), drop)
+                }
 
-                let spreadX = (Math.random() - 0.5) * 0.5
-                let spreadY = Math.random() * 0.5
-                let spreadZ = (Math.random() - 0.5) * 0.5
+                let extraToAddCount = targetCount - fullStacksSize * originalMaxSize - originalCount
+                if (extraToAddCount != 0){
+                    addStackCopy(originalStack.copyWithCount(extraToAddCount), drop)
+                }
+                
 
-                itemEntityToAdd.addDeltaMovement( new Vec3d(
-                    drop.getDeltaMovement().x + spreadX,
-                    drop.getDeltaMovement().y + spreadY,
-                    drop.getDeltaMovement().z + spreadZ
-                ))
-
-                itemEntityToAdd.setPickUpDelay(10)
-
-                extraDrops.push(itemEntityToAdd)
+            } else {
+                originalStack.setCount(targetCount)
+                originalStack.getEntityRepresentation().setGlowing(true)
             }
 
-
-            // let newCount = Math.min(originalStack.getCount() * lootModifier, originalStack.getMaxStackSize()) | 0
-            // originalStack.setCount(newCount)
         }
 
         event.getDrops().addAll(new $ArrayList(extraDrops))
-
         
     }
 })
-
-
 
 
 function getCurrentStructures(player){
@@ -234,13 +276,14 @@ function getCurrentStructures(player){
 
     structureStarts.forEach((structure, something) => {
 
-        let structureID = structureRegistry.getKey(structure).toString()
+        let structureStart = structureManager.getStructureAt(playerPos, structure)
 
-        structures.add(structureID)
-        
+        if (structureStart.isValid()){
+            let structureID = structureRegistry.getKey(structure).toString()
+            structures.add(structureID)
+        }
         
     })
-
     
     return structures
 

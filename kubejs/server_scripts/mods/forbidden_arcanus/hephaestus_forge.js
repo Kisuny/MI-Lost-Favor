@@ -72,7 +72,7 @@ function addHephaestusRitual(id, options) {
             }
         }
 
-        JsonIO.write(`kubejs/data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/${id}.json`, json)
+        // JsonIO.write(`kubejs/data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/${id}.json`, json)
     }
 
 

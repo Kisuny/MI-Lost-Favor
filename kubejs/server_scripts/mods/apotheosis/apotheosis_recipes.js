@@ -16,47 +16,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    addHephaestusRitual("simple_reforging_table", {
-        enhancers: "forbidden_arcanus:elementarium",
-        essences: { aureal: 250, blood: 5000, souls: 10, experience: 666 },
-        mainIngredient: "minecraft:smithing_table",
-        inputs: [
-            { item: "milf:blaze_core", amount: 1 },
-            { item: "minecraft:smooth_stone", amount: 3 },
-            { item: "forbidden_arcanus:obsidiansteel_ingot", amount: 2 },
-            { item: "apotheosis:epic_material", amount: 2 },
-        ],
-        result: "apotheosis:simple_reforging_table",
-    })
-
-    addHephaestusRitual("reforging_table", {
-        enhancers: "forbidden_arcanus:maledictus_pact",
-        essences: { aureal: 5000, blood: 25000, souls: 200, experience: 5000 },
-        mainIngredient: "apotheosis:simple_reforging_table",
-        inputs: [
-            { item: "milf:electronic_ender_core", amount: 1 },
-            { item: "spectrum:bismuth_crystal", amount: 3 },
-            { item: "apotheosis:mythic_material", amount: 2 },
-            { item: "forbidden_arcanus:dark_nether_star", amount: 2 },
-        ],
-        forgeTier: 4,
-        result: "apotheosis:reforging_table",
-    })
-
-    addHephaestusRitual("augmenting_table", {
-        enhancers: "forbidden_arcanus:maledictus_pact",
-        essences: { aureal: 10000, blood: 100000, souls: 500, experience: 5000 },
-        mainIngredient: "malum:umbral_spirit",
-        inputs: [
-            { item: "spectrum:aether_vestiges", amount: 1 },
-            { item: "malum:block_of_malignant_pewter", amount: 3 },
-            { item: "apotheosis:mythic_material", amount: 2 },
-            { item: "forbidden_arcanus:stellarite_block", amount: 2 },
-        ],
-        forgeTier: 5,
-        result: "apotheosis:augmenting_table",
-    })
-
     const runes = [
         'milf:rune_of_piercing',
         'milf:rune_of_armor',

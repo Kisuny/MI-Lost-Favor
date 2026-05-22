@@ -102,10 +102,23 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.pet_rock.notification4.f', `...For them to scatter`)
     event.add('milf.pet_rock.notification5.f', `...Just for fun`)
 
+    event.add('milf.divine_mint.tooltip', `Within the walls of one's domain,
+Or in a completely abstract plane,
+
+At third bell strike will foe arise,
+To wreak havoc till its demise,
+
+The foe will feed on rival's greed,
+To gain the strength beyond the need,
+
+But those who match this power will
+Receive reward far greater still.`)
+
     event.add('milf.divine_mint.gui.possible_loot', `Possible loot:`)
     event.add('milf.divine_mint.gui.no_effect', `No effect`)
     event.add('milf.divine_mint.gui.difficulty.hard', `Hard difficulty`)
     event.add('milf.divine_mint.gui.difficulty.normal', `Normal difficulty`)
+    event.add('milf.divine_coin.tooltip.loot_modifier', `Loot modifier: `)
 
     event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${textAnimatorString("upgrade", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} it. Preserves ${textAnimatorString("all", "wave", { a: 0.25, w: 0.25, f: 0.5 })} the content. Not consumed on use, even when used as a crafting ingredient.`)
     

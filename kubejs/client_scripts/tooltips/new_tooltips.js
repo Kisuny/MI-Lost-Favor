@@ -86,6 +86,9 @@ ItemEvents.modifyTooltips(event => {
     event.add("milf:grecall_concoction_t1", Text.translatable(`milf.grecall_concoction.t1.tooltip`))
     event.add("milf:grecall_concoction_t2", Text.translatable(`milf.grecall_concoction.t2.tooltip`))
 
+    event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
+
+
     //#region WIP items tooltip
     const wip_tooltip = [
         /fluxnetworks:.*/,

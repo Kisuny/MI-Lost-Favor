@@ -7,7 +7,7 @@ global.milfBosses = {
         "cataclysm:netherite_monstrosity": { structure: "cataclysm:soul_black_smith" },
         "cataclysm:maledictus": { structure: "cataclysm:frosted_prison" },
         "cataclysm:ender_guardian": { structure: "cataclysm:ruined_citadel" },
-        "cataclysm:the_leviathan": { structure: "cataclysm:sunken_city"},
+        "cataclysm:the_leviathan": { structure: "cataclysm:sunken_city", isStructureExclusive: true },
         "cataclysm:scylla": { structure: "cataclysm:acropolis" },
         "ars_nouveau:wilden_boss": { structure: "" }
 
@@ -15,13 +15,13 @@ global.milfBosses = {
 
     tier3:{
 
-        "fdbosses:malkuth": { structure: "fdbosses:malkuth_arena" },
-        "fdbosses:chesed": { structure: "fdbosses:chesed_arena" },
-        "fdbosses:geburah": { fakeItemToRender: "fdbosses:geburah_trophy", structure: "fdbosses:geburah_arena" },
+        "fdbosses:malkuth": { structure: "fdbosses:malkuth_arena", isStructureExclusive: true },
+        "fdbosses:chesed": { structure: "fdbosses:chesed_arena", isStructureExclusive: true },
+        "fdbosses:geburah": { fakeItemToRender: "fdbosses:geburah_trophy", structure: "fdbosses:geburah_arena", isStructureExclusive: true },
         "bosses_of_mass_destruction:void_blossom": { fakeItemToRender: "bosses_of_mass_destruction:void_blossom", structure: "bosses_of_mass_destruction:void_blossom" },
-        "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena" },
+        "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena", structureExclusive:true },
         "bosses_of_mass_destruction:lich": { structure: "bosses_of_mass_destruction:lich_tower" },
-        "bosses_of_mass_destruction:gauntlet": { structure: "bosses_of_mass_destruction:gauntlet_arena" },
+        "bosses_of_mass_destruction:gauntlet": { structure: "bosses_of_mass_destruction:gauntlet_arena", isStructureExclusive: true },
         "eternal_starlight:lunar_monstrosity": { structure: "" }
     },
 
@@ -46,4 +46,19 @@ global.milfBosses = {
 
     }
 
+}
+
+global.milfEffects = {
+    "minecraft:speed": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/speed.png"), modifier: 1.4 },
+    "minecraft:regeneration": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/regeneration.png"), modifier: 2 },
+    "minecraft:resistance": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/resistance.png"), modifier: 1.7 },
+    "minecraft:strength": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/strength.png"), modifier: 1.6 },
+    "minecraft:health_boost": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/health_boost.png"), modifier: 1.2 },
+    "none": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_none.png"), modifier: 1 }
+}
+
+global.milfDifficulties = {
+    "normal": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/normal.png"), modifier: 1, name: Component.translatable("milf.divine_mint.gui.difficulty.normal") },
+    "hard": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/hard.png"), modifier: 1.5, name: Component.translatable("milf.divine_mint.gui.difficulty.hard") },
+    //"coin": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_coin_gui.png"), modifier: 1.5, name: Component.translatable("milf.divine_mint.gui.difficulty.hard") },
 }

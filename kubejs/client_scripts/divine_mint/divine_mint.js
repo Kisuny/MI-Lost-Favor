@@ -18,6 +18,8 @@ let DIVINE_MINT_GUI_1 = $ResourceLocation.fromNamespaceAndPath("milf", "textures
 let DIVINE_MINT_GUI_2 = $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_2.png")
 
 let MILF_BOSSES = global.milfBosses
+let MILF_EFFECTS = global.milfEffects
+let MILF_DIFFICULTIES = global.milfDifficulties
 
 const maxInt = 2 ** 32
 const TWO_PI = Math.PI * 2
@@ -51,9 +53,6 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
     Client.setScreen(new JavaAdapter($Screen, {
 
         guiScale: Client.window.guiScale,
-
-        spawnButton: null,
-
         
         effectSelector: null,
         bossSelector: null,
@@ -84,25 +83,25 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
 
             const guiScale = this.guiScale
 
-            const buttonWidth = 26 * guiScale
-            const buttonHeight = 6 * guiScale
+            // const buttonWidth = 26 * guiScale
+            // const buttonHeight = 6 * guiScale
 
             let centerX = ((this.width / 2) | 0)
             let centerY = ((this.height / 2) | 0)
 
 
-            this.spawnButton = this.addRenderableWidget(
-                $Button.builder(Component.literal("TEST"), button => {
-                    //console.log("WHAT")
-                    Client.player.sendData("milf_divine_mint_boss", { id: this.bossSelector.getCurrentlySelectedID() })
-                    Client.player.sendData("milf_divine_mint_sync_loot", { bosses: MILF_BOSSES })
-                    //console.log(this.bossSelector.getCurrentlySelectedID());
+            // this.spawnButton = this.addRenderableWidget(
+            //     $Button.builder(Component.literal("TEST"), button => {
+            //         //console.log("WHAT")
+            //         Client.player.sendData("milf_divine_mint_boss", { id: this.bossSelector.getCurrentlySelectedID() })
+            //         Client.player.sendData("milf_divine_mint_sync_loot", { bosses: MILF_BOSSES })
+            //         //console.log(this.bossSelector.getCurrentlySelectedID());
                     
-                    //button.setFocused(false)
-                }
-            )
-                    .bounds(centerX - buttonWidth / 2, centerY - buttonHeight / 2 - REELS_HEIGHT - 40, buttonWidth, buttonHeight)
-            .build())
+            //         //button.setFocused(false)
+            //     }
+            // )
+            //         .bounds(centerX - buttonWidth / 2, centerY - buttonHeight / 2 - REELS_HEIGHT - 40, buttonWidth, buttonHeight)
+            // .build())
 
             //BOSS_SELECTOR
             this.bossSelector = this.addRenderableWidget(
@@ -128,15 +127,7 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
                 )
             )
 
-            this.effectSelector.setItemsToRender({
-                "minecraft:speed": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/speed.png"), modifier: 1.4 },
-                "minecraft:regeneration": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/regeneration.png"), modifier: 2 },
-                "minecraft:resistance": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/resistance.png"), modifier: 1.7 },
-                "minecraft:strength": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/strength.png"), modifier: 1.6 },
-                "minecraft:health_boost": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/health_boost.png"), modifier: 1.2 },
-                "minecraft:invisibility": { resourceLocation: $ResourceLocation.parse("minecraft:textures/mob_effect/invisibility.png"), modifier: 1.3 },
-                "none": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_mint_gui_none.png"), modifier: 1 }
-            })
+            this.effectSelector.setItemsToRender(MILF_EFFECTS)
 
             this.effectSelector.setCurrentlySelectedID("minecraft:speed")
             this.effectSelector.setParentScreen(this)
@@ -151,12 +142,7 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
                 )
             )
 
-            this.difficultySelector.setItemsToRender({
-                "normal": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/normal.png"), modifier: 1, name: Component.translatable("milf.divine_mint.gui.difficulty.normal")},
-                "hard": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/difficulty/hard.png"), modifier: 1.5, name: Component.translatable("milf.divine_mint.gui.difficulty.hard") },
-                //"coin": { resourceLocation: $ResourceLocation.fromNamespaceAndPath("milf", "textures/gui/divine_coin_gui.png"), modifier: 1.5, name: Component.translatable("milf.divine_mint.gui.difficulty.hard") },
-
-            })
+            this.difficultySelector.setItemsToRender(MILF_DIFFICULTIES)
 
             this.difficultySelector.setCurrentlySelectedID("normal")
             this.difficultySelector.setParentScreen(this)
@@ -314,12 +300,12 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
         //     return result
         // },
 
-        mouseReleased(mouseX, mouseY, button) {
-            if (button == 0) {
-                this.spawnButton.visible = true
-            }
-            return this.super$mouseReleased(mouseX, mouseY, button)
-        },
+        // mouseReleased(mouseX, mouseY, button) {
+        //     if (button == 0) {
+        //         this.spawnButton.visible = true
+        //     }
+        //     return this.super$mouseReleased(mouseX, mouseY, button)
+        // },
 
         onLeverPull(){
             //console.log("WAHT");
@@ -804,12 +790,13 @@ function createReelWidget(x, y, width, height, component, overrides) {
             this.nextItemsToRenderEntries = items
             this.onChangeContext = onChangeContext
 
+            this.isSpinning = true
             this.itemsChangeTicks = ticks
             this.itemsChangeTotalTicks = ticks
         },
 
         mouseClicked(mouseX, mouseY, button) {
-            if (button == 0 && this.isMouseOver(mouseX, mouseY)) {
+            if (button == 0 && this.isMouseOver(mouseX, mouseY) && !this.isSpinning) {
                 this.isDragging = true
                 return true
             }
@@ -817,7 +804,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
         },
 
         mouseDragged(mouseX, mouseY, button, deltaX, deltaY) {
-            if (button == 0) {
+            if (button == 0 && !this.isSpinning) {
                 this.prevSelectorRot = this.selectorRot
 
                 const sensitivity = 0.11
@@ -882,9 +869,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
 
                 let increment = Math.PI / 2.3
                 
-                increment = increment * easeZeroOneZero(t, 2)
-                console.log(increment);
-                         
+                increment = increment * easeZeroOneZero(t, 2)                         
 
                 this.selectorRot += increment
 
@@ -897,6 +882,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
 
 
                 if (this.itemsChangeTicks == 0){
+                    this.isSpinning = false
                     this.targetRotation = this.currentlySelectedIndex * (TWO_PI) / this.TO_RENDER_SIZE
                     this.reelParentScreen.onReelsSpinEnd()
                 }
@@ -905,7 +891,7 @@ function createReelWidget(x, y, width, height, component, overrides) {
 
         mouseReleased(mouseX, mouseY, button) {
             this.isDragging = false
-            if (button == 0) {
+            if (button == 0 && !this.isSpinning) {
                 this.targetRotation = this.currentlySelectedIndex * (TWO_PI) / this.TO_RENDER_SIZE
                 this.onMouseReleaseAdditional()
             }
@@ -1448,7 +1434,10 @@ function createCoinAcceptorWidget(x, y, width, height, component) {
         isCoinDropped: false,
         coinItemStack: null,
         coinData: null,
+
         coinTooltip: null,
+        coinTooltipHeight: 0,
+        coinTooltipWidth: 0,
 
         coinProgress:0,
         prevCoinProgress:0,
@@ -1458,7 +1447,7 @@ function createCoinAcceptorWidget(x, y, width, height, component) {
             this.coinAcceptorParentScreen = screen
         },
 
-        renderWidget(guiGraphics, mouseX, mouseY, partialTick) {
+        renderWidget( guiGraphics, mouseX, mouseY, partialTick) {
 
             try {
 
@@ -1491,6 +1480,7 @@ function createCoinAcceptorWidget(x, y, width, height, component) {
                         //pose.translate(14, 58, 0)
                         guiGraphics.blit(DIVINE_MINT_GUI_1, 0, 0, 10, REELS_HEIGHT + COIN_ACCEPTOR_HEIGHT + 34 + 11, 5, 19)
                         guiGraphics.disableScissor()
+                        pose.translate(-this.coinTooltipWidth - COIN_ACCEPTOR_WIDTH, -this.coinTooltipHeight + 28, 0)
                         guiGraphics.renderTooltip(Client.font, this.coinTooltip, this.coinItemStack.getTooltipImage(), 0, 0)
 
                     } else {
@@ -1571,8 +1561,21 @@ function createCoinAcceptorWidget(x, y, width, height, component) {
 
             this.coinData = data
             this.coinItemStack = coinStack
-            this.coinTooltip = $Screen.getTooltipFromItem(Client, coinStack)
 
+            let tooltipComponents = $Screen.getTooltipFromItem(Client, coinStack)
+            this.coinTooltip = tooltipComponents
+
+            let tooltipHeight = 0
+            let tooltipWidth = 0
+
+            for (let component of tooltipComponents){
+                let componentWidth = Client.font.width(component.getVisualOrderText())
+                if (componentWidth > tooltipWidth) tooltipWidth = componentWidth
+                tooltipHeight += Client.font.lineHeight + 2
+            }
+
+            this.coinTooltipHeight = tooltipHeight
+            this.coinTooltipWidth = tooltipWidth
 
             milfPlayGUISound("milf:coin_drop")
 

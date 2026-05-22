@@ -68,4 +68,14 @@ ItemEvents.modification(event => {
     event.modify("ytech:bronze_mesh", item => {item.maxDamage = 64})
     event.modify("ars_hex:magebloom_brush", item => {item.maxDamage = 3000})
 
-});
+
+    event.modify("cataclysm:ring_of_grudged", item =>{
+        item.attachCuriosCapability(
+            CuriosJSCapabilityBuilder.create().addAttribute(
+                "cataclysm:additional_critical_damage",
+                "milf:ring_of_grudged", 10, "add_value"
+            )
+        )
+    })
+
+})

@@ -1,0 +1,98 @@
+{
+  "values": {
+    "#starcatcher:common_fishes": {
+      "base_value": 25,
+      "processors": [
+        {
+          "type": "starcatcher:fishes_processor",
+          "golden_multiplier": 100.0,
+          "percentile_increase": 20.0
+        },
+        {
+          "type": "selling_bin:quality_foods_processor",
+          "quality_type": {
+            "quality_food:diamond": 2.0,
+            "quality_food:gold": 1.5,
+            "quality_food:iron": 1.25
+          }
+        }
+      ]
+    },
+    "#starcatcher:epic_fishes": {
+      "base_value": 150,
+      "processors": [
+        {
+          "type": "starcatcher:fishes_processor",
+          "golden_multiplier": 100.0,
+          "percentile_increase": 20.0
+        },
+        {
+          "type": "selling_bin:quality_foods_processor",
+          "quality_type": {
+            "quality_food:diamond": 2.0,
+            "quality_food:gold": 1.5,
+            "quality_food:iron": 1.25
+          }
+        }
+      ]
+    },
+    "#starcatcher:legendary_fishes": {
+      "base_value": 100,
+      "processors": [
+        {
+          "type": "starcatcher:fishes_processor",
+          "golden_multiplier": 100.0,
+          "percentile_increase": 20.0
+        },
+        {
+          "type": "selling_bin:quality_foods_processor",
+          "quality_type": {
+            "quality_food:diamond": 2.0,
+            "quality_food:gold": 1.5,
+            "quality_food:iron": 1.25
+          }
+        }
+      ]
+    },
+    "#starcatcher:rare_fishes": {
+      "base_value": 100,
+      "processors": [
+        {
+          "type": "starcatcher:fishes_processor",
+          "golden_multiplier": 100.0,
+          "percentile_increase": 20.0
+        },
+        {
+          "type": "selling_bin:quality_foods_processor",
+          "quality_type": {
+            "quality_food:diamond": 2.0,
+            "quality_food:gold": 1.5,
+            "quality_food:iron": 1.25
+          }
+        }
+      ]
+    },
+    "#starcatcher:uncommon_fishes": {
+      "base_value": 50,
+      "processors": [
+        {
+          "type": "starcatcher:fishes_processor",
+          "golden_multiplier": 100.0,
+          "percentile_increase": 20.0
+        },
+        {
+          "type": "selling_bin:quality_foods_processor",
+          "quality_type": {
+            "quality_food:diamond": 2.0,
+            "quality_food:gold": 1.5,
+            "quality_food:iron": 1.25
+          }
+        }
+      ]
+    },
+    "starcatcher:pearl": {
+      "base_value": 1000,
+      "processors": []
+    }
+  }
+}

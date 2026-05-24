@@ -2780,5 +2780,253 @@
 			x: 21.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["1714360882474479"]
+			id: "6F3B8F14CD52165D"
+			rewards: [{
+				id: "3C0021785F2ECDD3"
+				item: {
+					count: 1
+					id: "starcatcher:starcatcher_guide"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C21815550FB4FD9"
+				item: { count: 1, id: "starcatcher:starcatcher_rod" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "2CB775EC10EADEF7"
+			tasks: [{
+				id: "38DF68FAD82285EB"
+				item: { count: 1, id: "starcatcher:tackle_box_black" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CB775EC10EADEF7"]
+			id: "5C6B7F0A99372563"
+			tasks: [{
+				id: "5B0F59765FB17AE3"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:baits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2CB775EC10EADEF7"]
+			id: "65ACC9954B888913"
+			tasks: [{
+				id: "58F6FDCF58A4331D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:hooks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2CB775EC10EADEF7"]
+			id: "6AC5BBB361E90BF1"
+			tasks: [{
+				id: "606870688F9DD0CC"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:bobbers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "22C5E661BDA4DCC2"
+			tasks: [
+				{
+					id: "3710A855582A4B83"
+					item: { count: 1, id: "starcatcher:bottled_letter" }
+					type: "item"
+				}
+				{
+					id: "70C907D14C024DB1"
+					item: { count: 1, id: "starcatcher:letter" }
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "7F8041E0EFBB9BB6"
+			tasks: [{
+				id: "3C65240059BD9CDF"
+				item: { count: 1, id: "starcatcher:tournament_stand" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "606DEC68ADF83126"
+			shape: "heart"
+			tasks: [{
+				id: "0456CFA518B42D9C"
+				item: { count: 1, id: "selling_bin:selling_bin" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "0C7D28894362A59D"
+			shape: "heart"
+			tasks: [{
+				id: "7C8D2DF5892D0FA5"
+				item: { count: 1, id: "aquaculture:neptunium_ingot" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "2731F29706C97F6A"
+			shape: "diamond"
+			tasks: [{
+				id: "6C431CF3E0422A05"
+				item: { count: 1, id: "aquaculture:neptunium_axe" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "6A19ADA32124361B"
+			shape: "diamond"
+			tasks: [{
+				id: "01FB18D4FFB17A6F"
+				item: { components: { "aquaculture:in_water": 0b }, count: 1, id: "aquaculture:neptunium_pickaxe" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "7A9878808459CB7D"
+			shape: "diamond"
+			tasks: [{
+				id: "077512E14C021C25"
+				item: { components: { "aquaculture:in_water": 0b }, count: 1, id: "aquaculture:neptunium_shovel" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "498128F36F2C0C7E"
+			shape: "diamond"
+			tasks: [{
+				id: "0F68747CC7A491BA"
+				item: { count: 1, id: "aquaculture:neptunium_sword" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "62FA738ED9053B03"
+			shape: "diamond"
+			tasks: [{
+				id: "57030AA11F41FAFC"
+				item: { count: 1, id: "aquaculture:neptunium_bow" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "5349A7C271BD7BD1"
+			shape: "diamond"
+			tasks: [{
+				id: "46BD4C32CDA3B5B2"
+				item: { count: 1, id: "aquaculture:neptunium_helmet" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "755DA38B77A21498"
+			shape: "diamond"
+			tasks: [{
+				id: "55588125D4A3407F"
+				item: { count: 1, id: "aquaculture:neptunium_chestplate" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "62A007516EE3E946"
+			shape: "diamond"
+			tasks: [{
+				id: "7D525CA65C2B21F3"
+				item: { count: 1, id: "aquaculture:neptunium_leggings" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "4C3CA7CD97DF14B4"
+			shape: "diamond"
+			tasks: [{
+				id: "1B44E54E25550326"
+				item: { count: 1, id: "aquaculture:neptunium_boots" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "56AD960B912DD00A"
+			shape: "diamond"
+			tasks: [{
+				id: "581E231B30AA33D3"
+				item: { count: 1, id: "aquaculture:neptunium_fillet_knife" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "722F8A38993DE4CF"
+			shape: "diamond"
+			tasks: [{
+				id: "7EBA41D6BC9730A7"
+				item: { count: 1, id: "aquaculture:neptunium_hoe" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 11.5d
+		}
 	]
 }

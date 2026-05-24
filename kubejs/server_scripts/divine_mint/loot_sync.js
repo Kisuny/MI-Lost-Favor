@@ -149,7 +149,7 @@ function collectItemStacks(node, output){
         })
 
         node.getModifiedItem().ifRight(tag =>{
-            console.log(tag);
+            // console.log(tag);
             
         })
 

@@ -4,26 +4,26 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.entity.interact.part1', ' doesn\'t want to interact with you')
     event.add('milf.text.entity.interact.part2', 'Something magical prevents you from using ')
     event.add('milf.text.block.interact.part0', 'Strange magic prevents you from using this block')
-    event.add('milf.text.first_join', `Welcome to the ${textAnimatorString("MI:Lost Favor", "grad", { from: "#848dcb", to: "#45509d", f: 0.5 })}!`)
+    event.add('milf.text.first_join', `Welcome to the ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
 
-    event.add('milf.stage.congratulations', `${textAnimatorString("Congratulations!!!", "wave", { a: 0.25, w: 0.25, f: 0.5 })}`)
-    event.add('milf.stage.something_changed', `${textAnimatorString("You feel like something has changed...", "wiggle", { a: 0.25, f: 0.35 })}`)
-    event.add('milf.stage.bronze_age', `You have passed into the ${textAnimatorString("Bronze Age", "grad", { from: "#CD7F32", to: "#F6BA7D", f: 0.5 })}`)
-    event.add('milf.stage.monsterplus_mobs', `You began to hear the ${textAnimatorString("cries of the dead", "grad", { from: "#F00B0B", to: "#7A0F0B", f: 0.5 })} at night`)
-    event.add('milf.stage.eidolon_mobs', `You can feel a ${textAnimatorString("chill run down your spine", "grad", { from: "#353DCA", to: "#52B5C4", f: 0.5 })}`)
-    event.add('milf.stage.mythsandlegends_mobs', `Mythical creatures ${textAnimatorString("can hear you", "grad", { from: "#F00B0B", to: "#7A0F0B", f: 0.5 })} at night, be careful`)
-    event.add('milf.stage.mowziesmobs_mobs', `New ${textAnimatorString("dangers", "grad", { from: "#F00B0B", to: "#7A0F0B", f: 0.5 })} have appeared on your path`)
-    event.add('milf.stage.cataclysm_mobs', `Something ancient stirs in the ${textAnimatorString("darkened depths", "grad", { from: "#1A4FFF", to: "#0A1A7A", f: 0.5 })}...`)
-    event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${textAnimatorString("creatures beyond count", "grad", { from: "#9B59B6", to: "#E8D5FF", f: 0.5 })}`)
-    event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${textAnimatorString("new ores", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })}...`)
+    event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
+    event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)
+    event.add('milf.stage.bronze_age', `You have passed into the ${MilfEffects.GRAD.custom("Bronze Age", "#CD7F32", "#F6BA7D")}`)
+    event.add('milf.stage.monsterplus_mobs', `You began to hear the ${MilfEffects.GRAD.custom("cries of the dead", "#D12F0E","#841B4C")} at night`)
+    event.add('milf.stage.eidolon_mobs', `You can feel a ${MilfEffects.GRAD.custom("chill run down your spine", "#2E57BE", "#2EBFD8")}`)
+    event.add('milf.stage.mythsandlegends_mobs', `Mythical creatures ${MilfEffects.GRAD.custom("can hear you", "#F00B0B", "#DA502D")} at night, be careful`)
+    event.add('milf.stage.mowziesmobs_mobs', `New ${MilfEffects.GRAD.custom("dangers", "#F00B0B","#CF0F4C")} have appeared on your path`)
+    event.add('milf.stage.cataclysm_mobs', `Something ancient stirs in the ${MilfEffects.GRAD.custom("darkened depths", "#093BE0", "#3B13B3")}...`)
+    event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${MilfEffects.GRAD.custom("creatures beyond count", "#8A5CCF","#CEBCFF")}`)
+    event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${MilfEffects.GRAD.custom("new ores", "#55A2FA", "#8DDBFF")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')
     event.add('milf.how_to_get_blaze_core.tooltip', 'You have a 50% chance of obtaining if you kill with the any wrench: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'You have a 50% chance of obtaining if you kill with the wrench: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
-    event.add('milf.stage.minecraft_mobs', `You started hearing ${textAnimatorString("strange noises", "grad", { from: "#ED1A1A", to: "#B62651", f: 0.5 })} at night...`)
-    event.add('milf.stage.early_items', `This world no longer ${textAnimatorString("rejects", "glitch")} you...`)
+    event.add('milf.stage.minecraft_mobs', `You started hearing ${MilfEffects.GRAD.custom("strange noises", "#ED1A1A", "#B62651")} at night...`)
+    event.add('milf.stage.early_items', `This world no longer ${MilfEffects.GLITCH("rejects")} you...`)
 
 
     event.add('gateways.tiered/haven', 'Haven Gateway')
@@ -83,9 +83,9 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.for_details', 'for more information')
     event.add('milf.amber_visage.tooltip', 'Used as fuel in the transmogrification table to change the appearance of items without modifying their behavior at all')
     event.add('milf.orb_of_the_forest.tooltip', 'To apply this orb to an axe, hold the orb in your main hand and any axe in your off hand and click RMB')
-    event.add('milf.money_pouch.tooltip', `Can be opened with ${textAnimatorString("radial menu", "wave", { a: 0.2 })} while in the curio slot`)
-    event.add('milf.mi_pipe_recolor.tooltip', `You can change the type using ${textAnimatorString("Chisel", "wave", { a: 0.2 })}`)
-    event.add('milf.curio_bag.tooltip', `Can be opened with ${textAnimatorString("radial menu", "wave", { a: 0.2 })} while in the hotbar or in a curio slot`)
+    event.add('milf.money_pouch.tooltip', `Can be opened with ${MilfEffects.UP_DOWN("radial menu")} while in the curio slot`)
+    event.add('milf.mi_pipe_recolor.tooltip', `You can change the type using ${MilfEffects.UP_DOWN("Chisel")}`)
+    event.add('milf.curio_bag.tooltip', `Can be opened with ${MilfEffects.UP_DOWN("radial menu")} while in the hotbar or in a curio slot`)
 
     event.add('milf.mi_upgrade_notification_1', `Requires `)
     event.add('milf.mi_upgrade_notification_2', ` to upgrade!`)
@@ -118,56 +118,63 @@ Receive reward far greater still.`)
     event.add('milf.divine_mint.gui.no_effect', `No effect`)
     event.add('milf.divine_mint.gui.difficulty.hard', `Hard difficulty`)
     event.add('milf.divine_mint.gui.difficulty.normal', `Normal difficulty`)
-    event.add('milf.divine_coin.tooltip.loot_modifier', `Loot modifier: `)
 
-    event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${textAnimatorString("upgrade", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} it. Preserves ${textAnimatorString("all", "wave", { a: 0.25, w: 0.25, f: 0.5 })} the content. Not consumed on use, even when used as a crafting ingredient.`)
+    event.add('milf.divine_coin.tooltip.loot_modifier', `Loot modifier: `)
+    event.add('milf.divine_coin.tooltip.to_check_resurrection_toll', `to check ${MilfEffects.GLITCH("resurrection toll")}`)
+    event.add('milf.divine_coin.gui.resurrection_toll', `Resurrection toll`)
+    
+    event.add('milf.divine_coin.error.structure_exclusive', `This boss can only be resurrected within the corresponding structure`)
+    event.add('milf.divine_coin.error.spawn_conditions', `This boss can only be resurrected within the corresponding structure or in the Abstraction dimension`)
+
+
+    event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${MilfEffects.GRAD.UPGRADE("upgrade")} it. Preserves ${MilfEffects.WAVE_C("all")} the content. Not consumed on use, even when used as a crafting ingredient.`)
     
     event.add('milf.recall_concoction.new_pos', `New recall position saved!`)
 
     event.add('milf.grecall_concoction.t1.tooltip', `Retrieves the content of the last grave you "intentionally" leave in this world. Only works within the same dimension and within a radius of 1000 blocks around the grave.`)
     event.add('milf.grecall_concoction.t2.tooltip', `The gnomegraded version of the Grecall Concoction! Works the same, omitting all the conditions!`)
 
-    event.add('milf.grecall_concoction.no_grave', `No ${textAnimatorString("suitable", "glitch")} graves found!`)
-    event.add('milf.grecall_concoction.wrong_dimension', `The grave's ${textAnimatorString("dimension", "glitch")} does not match the ${textAnimatorString("dimension", "glitch")} you are currently in!`)
-    event.add('milf.grecall_concoction.grave_too_far', `You must be within ${textAnimatorString("1000 blocks", "glitch")} of the grave!`)
+    event.add('milf.grecall_concoction.no_grave', `No ${MilfEffects.GLITCH("suitable")} graves found!`)
+    event.add('milf.grecall_concoction.wrong_dimension', `The grave's ${MilfEffects.GLITCH("dimension")} does not match the ${MilfEffects.GLITCH("dimension")} you are currently in!`)
+    event.add('milf.grecall_concoction.grave_too_far', `You must be within ${MilfEffects.GLITCH("1000 blocks")} of the grave!`)
 
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)
-    event.add('milf.placers.notification2', `You have to choose a ${textAnimatorString("valid direction", "glitch")} first`)
+    event.add('milf.placers.notification2', `You have to choose a ${MilfEffects.GLITCH("valid direction")} first`)
     event.add('milf.placers.notification3', `Structure has to be ${textAnimatorString("EXACTLY", "shake")} the same`)
 
-    event.add('milf.placers.gui1', `Use any type of ${textAnimatorStringForEach("HAMMER", "bounce")} to build structure!`)
+    event.add('milf.placers.gui1', `Use any type of ${MilfEffects.BOUNCE_FULL("HAMMER")} to build structure!`)
     event.add('milf.placers.gui2', `Right click with an empty hand to preview`)
     event.add('milf.placers.gui3', ` + RMB with an empty hand to remove preview`)
     event.add('milf.empty_box.gui1', `You can still get your structure back!`)
     event.add('milf.empty_box.gui2_1', `Just `)
     event.add('milf.empty_box.gui2_2', ` + RMB with an empty hand to put it back`)
     event.add('milf.empty_box.gui3_1', `Attention, breaking this box will `)
-    event.add('milf.empty_box.gui3_2', `${textAnimatorString("DESTROY", "glitch")}`)
+    event.add('milf.empty_box.gui3_2', `${MilfEffects.GLITCH("DESTROY")}`)
     event.add('milf.empty_box.gui3_3', " it")
 
-    event.add('milf.orbcraft.changes', `${textAnimatorString("Item altered!", "wave", { a: 0.25, w: 0.25, f: 0.5 })}`)
+    event.add('milf.orbcraft.changes', `${MilfEffects.WAVE_C("Item altered!")}`)
     event.add('milf.orbcraft.added', `Orb energy infuses the item with `)
-    event.add('milf.orbcraft.removed', `${textAnimatorString(" REMOVED", "glitch")}`)
+    event.add('milf.orbcraft.removed', `${MilfEffects.GLITCH(" REMOVED")}`)
     event.add('milf.orbcraft.orb_removed', `Orb energy cleanses the item from `)
     event.add('milf.orbcraft.absorbed', ` ${textAnimatorString("absorbed", "shake")} the strength of all the other enchantments!`)
-    event.add('milf.orbcraft.destroyed', `The orb's energy overwhelms the item, ${textAnimatorString("destroying", "glitch")} it utterly!`)
-    event.add('milf.orbcraft.overenchantment', `You feel ${textAnimatorString("otherworldly", "glitch")} power stemming from the item!`)
-    event.add('milf.orbcraft.maxed', ` already ${textAnimatorStringForEach("maxed out", "wave", { a: 0.2 })}`)
+    event.add('milf.orbcraft.destroyed', `The orb's energy overwhelms the item, ${MilfEffects.GLITCH("destroying")} it utterly!`)
+    event.add('milf.orbcraft.overenchantment', `You feel ${MilfEffects.GLITCH("otherworldly")} power stemming from the item!`)
+    event.add('milf.orbcraft.maxed', ` already ${MilfEffects.UP_DOWN("maxed out")}`)
 
-    event.add('milf.orbcraft.error.type', `${textAnimatorString("Inappropriate", "glitch")} item for this type of orb!`)
-    event.add('milf.orbcraft.error.no_valid', `Item has no more ${textAnimatorString("valid", "glitch")} enchantments to alter!`)
-    event.add('milf.orbcraft.error.enchantments', `This item has no more ${textAnimatorString("applicable", "glitch")} enchantments!`)
-    event.add('milf.orbcraft.error.offhand', `The target item has to be in your ${textAnimatorString("offhand", "glitch")}!`)
+    event.add('milf.orbcraft.error.type', `${MilfEffects.GLITCH("Inappropriate")} item for this type of orb!`)
+    event.add('milf.orbcraft.error.no_valid', `Item has no more ${MilfEffects.GLITCH("valid")} enchantments to alter!`)
+    event.add('milf.orbcraft.error.enchantments', `This item has no more ${MilfEffects.GLITCH("applicable")} enchantments!`)
+    event.add('milf.orbcraft.error.offhand', `The target item has to be in your ${MilfEffects.GLITCH("offhand")}!`)
 
-    event.add('milf.orbcraft.tooltip.transmutation_orb', `Adds up to ${textAnimatorString("two", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} enchantments to an item.`)
-    event.add('milf.orbcraft.tooltip.regal_orb', `Adds up to ${textAnimatorString("four", "grad", { from: "#E4C549", to: "#FDE49A", f: 0.5 })} enchantments to an item that already has at least two.`)
-    event.add('milf.orbcraft.tooltip.divine_orb', `Randomly alters all enchantments, either ${textAnimatorString("upgrading", "grad", { from: "#55E408", to: "#D3FFAA", f: 0.5 })} or ${textAnimatorString("downgrading", "grad", { from: "#E40808", to: "#FFAAAA", f: 0.5 })} each one. Does not affect ${textAnimatorString("overenchanted", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} or ${textAnimatorString("curse-based", "glitch")} enchantments.`)
-    event.add('milf.orbcraft.tooltip.orb_of_regret', `Removes all but one random enchantment. That enchantment is ${textAnimatorStringForEach("maximized", "wave", { a: 0.2 })}. Can only be used on an item with 4 or more enchantments.`)
-    event.add('milf.orbcraft.tooltip.orb_of_chance', `Either ${textAnimatorString("destroys", "glitch")} an item or ${textAnimatorString("overenchants", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} one of the level 3+ enchantments. Requires 10+ total levels of enchantments on an item. The chance of success is reduced for each enchantment beyond the 4th one.`)
+    event.add('milf.orbcraft.tooltip.transmutation_orb', `Adds up to ${MilfEffects.GRAD.UPGRADE("two")} enchantments to an item.`)
+    event.add('milf.orbcraft.tooltip.regal_orb', `Adds up to ${MilfEffects.GRAD.UPUPGRADE("four")} enchantments to an item that already has at least two.`)
+    event.add('milf.orbcraft.tooltip.divine_orb', `Randomly alters all enchantments, either ${MilfEffects.GRAD.POSITIVE("upgrading")} or ${MilfEffects.GRAD.NEGATIVE("downgrading")} each one. Does not affect ${MilfEffects.GRAD.UPGRADE("overenchanted")} or ${MilfEffects.GLITCH("curse-based")} enchantments.`)
+    event.add('milf.orbcraft.tooltip.orb_of_regret', `Removes all but one random enchantment. That enchantment is ${MilfEffects.UP_DOWN("maximized")}. Can only be used on an item with 4 or more enchantments.`)
+    event.add('milf.orbcraft.tooltip.orb_of_chance', `Either ${MilfEffects.GLITCH("destroys")} an item or ${MilfEffects.GRAD.UPGRADE("overenchants")} one of the level 3+ enchantments. Requires 10+ total levels of enchantments on an item. The chance of success is reduced for each enchantment beyond the 4th one.`)
     event.add('milf.orbcraft.tooltip.orb_of_annulment', `Removes one ${textAnimatorString("random", "shake")} enchantment from an item.`)
-    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Adds one ${textAnimatorString("overenchanted", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} enchantment to an item, along with the ${textAnimatorString("Curse of Vanishing", "glitch")}. Can only be used on an item with 4 or more enchantments that doesn't already have the ${textAnimatorString("Curse of Vanishing", "glitch")}.`)
-    event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Absorbs up to 4 enchantments from an item, ${textAnimatorString("destroying", "glitch")} it in the process. Using the enchanted orb on another item ${textAnimatorString("replaces", "fade")} all of that item's enchantments with the absorbed ones.`)
-    event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Infuses the axe item with the ${textAnimatorString("Essence Of The Forest", "grad", { from: "#1DEB6C", to: "#6AFFC3", f: 0.5 })}, allowing it to chop the ${textAnimatorString("whole tree", "grad", { from: "#55E408", to: "#D3FFAA", f: 0.5 })} in one go in exchange for being only a ${textAnimatorString("tenth as effective", "grad", { from: "#E40808", to: "#FFAAAA", f: 0.5 })} as before. It can be applied only once, with no ability to revert downsides`)
+    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Adds one ${MilfEffects.GRAD.UPGRADE("overenchanted")} enchantment to an item, along with the ${MilfEffects.GLITCH("Curse of Vanishing")}. Can only be used on an item with 4 or more enchantments that doesn't already have the ${MilfEffects.GLITCH("Curse of Vanishing")}.`)
+    event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Absorbs up to 4 enchantments from an item, ${MilfEffects.GLITCH("destroying")} it in the process. Using the enchanted orb on another item ${textAnimatorString("replaces", "fade")} all of that item's enchantments with the absorbed ones.`)
+    event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Infuses the axe item with the ${MilfEffects.GRAD.custom("Essence Of The Forest", "#1DEB6C", "#6AFFC3")}, allowing it to chop the ${MilfEffects.GRAD.POSITIVE("whole tree")} in one go in exchange for being only a ${MilfEffects.GRAD.NEGATIVE("tenth as effective")} as before. It can be applied only once, with no ability to revert downsides`)
 
     event.add('desc.immersiveengineering.info.mineral.ametrine_geode', "Ametrine Geode")
     event.add('desc.immersiveengineering.info.mineral.zinkenite', "Zinkenite")
@@ -176,7 +183,7 @@ Receive reward far greater still.`)
     event.add('desc.immersiveengineering.info.mineral.hematite', "Hematite")
 
 
-    event.add('milf.text.dim.cant_visit', `${textAnimatorString("Some kind of magic is stopping you", "glitch")}`)
+    event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Some kind of magic is stopping you")}`)
 
     event.add('milf.flags.claimed', "Chunk claimed")
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
@@ -198,7 +205,7 @@ Receive reward far greater still.`)
     event.add("rite.milf.willow_broom", "Ritual of Formation")
     event.add("rite.milf.witch_hazel_broom", "Ritual of Formation")
     event.add("rite.milf.mahogany_broom", "Ritual of Formation")
-    event.add("text.apotheosis.world_tier_tutorial.2", `Press radial menu button and activate ${textAnimatorString("World Tier: Haven", "wave", { a: 0.2 })} to unlock it`)
+    event.add("text.apotheosis.world_tier_tutorial.2", `Press radial menu button and activate ${MilfEffects.UP_DOWN("World Tier: Haven")} to unlock it`)
 
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "You feel a bit better after eating something other than fruits and vegetables.")
@@ -351,6 +358,44 @@ Receive reward far greater still.`)
     event.add('key.hexerei.broomActivate', 'Viewing angle (F5 for work)')
     event.add('milf.key_prompts.horn', 'Enable the horn')
 })
+
+let MilfEffects = {
+    GRAD: {
+        custom(text, from, to) {
+            return textAnimatorString(text, "grad", { colors: `${from.slice(1)},${to.slice(1)}`, frequency: 0.5 })
+        },
+        UPGRADE(text) {
+            return this.custom(text, "#55A2FA", "#8DDBFF")
+        },
+        UPUPGRADE(text) {
+            return this.custom(text, "#E4C549", "#FDE49A")
+        },
+        POSITIVE(text) {
+            return this.custom(text, "#55E408", "#D3FFAA")
+        },
+        NEGATIVE(text) {
+            return this.custom(text, "#E40808", "#FFAAAA")
+        },
+        MILF(text){
+            return this.custom(text, "#9ea5d6", "#848dcb")
+        }
+    },
+    WAVE_C(text){
+        return textAnimatorString(text, "wave", { amplitude: 0.25, wavelength: 0.25, frequency: 0.2 })
+    },
+    GLITCH(text){
+        return textAnimatorString(text, "glitch")
+    },
+    BOUNCE_FULL(text){
+        return textAnimatorStringForEach(text, "bounce")
+    },
+    UP_DOWN(text){
+        return textAnimatorStringForEach(text, "wave", { amplitude: 0.5 })
+    },
+    WIGGLE(text){
+        return textAnimatorString(text, "wiggle", { amplitude: 0.5 , frequency: 0.35})
+    }
+}
 
 function textAnimatorString(text, type, params) {
     if (params) {

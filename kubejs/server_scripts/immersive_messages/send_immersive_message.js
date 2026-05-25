@@ -8,20 +8,22 @@
 // let $ToniEasingType = Java.loadClass("toni.lib.animation.easing.EasingType")
 
 const DEFAULT_WARN_NOTIFICATION_STYLE = {
-    anchor:"CENTER_RIGHT",
+    anchor:"MIDDLE_RIGHT",
     slideIn:"right",
-    //slideOut:"right",
+    slideInEasing:"ease_out_cubic",
+    duration: 3,
     fadeIn:1,
     fadeOut:0.3,
     background:true,
     y:140,
-    queue:true,
-    applyWarn:true
+    //queue:true,
+    applyWarn:true,
+    offsetGroup: "milfNotifications"
 }
 
 const DEFAULT_CENTER_MESSAGE_STYLE = (duration) => {
     let style = {
-        anchor:"CENTER_CENTER",
+        anchor:"MIDDLE",
         fadeIn:0.2,
         fadeOut:0.2,
         background:true,
@@ -34,13 +36,14 @@ const DEFAULT_CENTER_MESSAGE_STYLE = (duration) => {
 
 
 const DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE = {
-    anchor:"CENTER_CENTER",
-    slideIn:"down",
-    slideOut:"down",
+    anchor:"MIDDLE",
+    slideIn:"bottom",
+    slideOut:"bottom",
     slideInDuration:0.7,
     slideOutDuration:0.4,
     //slideOut:"right",
-    typewriter:{speed:1.5, sound:"LOWSHORT", centerAligned:true},
+    align:"CENTER",
+    typewriter: { speed: 15, sound:"milf:reels_tick" },
     fadeIn:1,
     fadeOut:0.3,
     background:true,
@@ -51,7 +54,7 @@ const DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE = {
 }
 
 const DEFAULT_NEW_AGE_NOTIFICATION_STYLE = {
-    anchor:"CENTER_CENTER",
+    anchor:"MIDDLE",
     slideIn:"left",
     y:-20,
     bold:true,
@@ -65,8 +68,8 @@ const DEFAULT_NEW_AGE_NOTIFICATION_STYLE = {
 const DEFAULT_NEW_AGE_SUBTEXT_STYLE = {
     delay:1.5,
     offset:28,
-    anchor:"CENTER_CENTER",
-    slideIn:"down",
+    anchor:"MIDDLE",
+    slideIn:"bottom",
     slideInDuration:2,
     fadeIn:1,
     fadeOut:0.3,
@@ -75,8 +78,8 @@ const DEFAULT_NEW_AGE_SUBTEXT_STYLE = {
 }
 
 const DEFAULT_MILESTONE_NOTIFICATION_STYLE = {
-    anchor:"CENTER_CENTER",
-    slideIn:"down",
+    anchor:"MIDDLE",
+    slideIn:"bottom",
     y:-20,
     bold:true,
     fadeIn:1,
@@ -89,8 +92,8 @@ const DEFAULT_MILESTONE_NOTIFICATION_STYLE = {
 const DEFAULT_MILESTONE_SUBTEXT_STYLE = {
     delay:2.5,
     offset:48,
-    anchor:"CENTER_CENTER",
-    slideIn:"up",
+    anchor:"MIDDLE",
+    slideIn:"top",
     fadeIn:1,
     fadeOut:0.3,
     size:3,

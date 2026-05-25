@@ -165,7 +165,7 @@ function retrieveGrave(grave, player, level) {
 }
 
 const NOTIFICATION_MESSAGE_ARGS = {
-    anchor: "CENTER_RIGHT",
+    anchor: "MIDDLE_RIGHT",
     slideIn: "right",
     fadeIn: 1,
     fadeOut: 0.3,

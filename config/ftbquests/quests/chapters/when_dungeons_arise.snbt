@@ -1241,8 +1241,8 @@
 				item: { components: { "relics:data": { abilities: { abilities: { push: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.33176d }, radius: { initialValue: 4.33761d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:whoopee_cushion" }
 				type: "item"
 			}]
-			x: -23.5d
-			y: 16.0d
+			x: -20.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6A1DA8ABA8F13FC2"]
@@ -3700,6 +3700,16 @@
 			}]
 			x: -11.0d
 			y: 7.0d
+		}
+		{
+			id: "752A68C79A982D82"
+			tasks: [{
+				id: "4D396BC0F0184EEE"
+				item: { components: { "relics:data": { abilities: { abilities: { catch: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.13942d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:anglers_hat" }
+				type: "item"
+			}]
+			x: -26.5d
+			y: 14.0d
 		}
 	]
 }

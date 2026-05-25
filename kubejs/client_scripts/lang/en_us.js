@@ -205,7 +205,10 @@ Receive reward far greater still.`)
     event.add("rite.milf.willow_broom", "Ritual of Formation")
     event.add("rite.milf.witch_hazel_broom", "Ritual of Formation")
     event.add("rite.milf.mahogany_broom", "Ritual of Formation")
+
     event.add("text.apotheosis.world_tier_tutorial.2", `Press radial menu button and activate ${MilfEffects.UP_DOWN("World Tier: Haven")} to unlock it`)
+    event.add("dimension.spectrum.deeper_down", `Deeper Down`)
+
 
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "You feel a bit better after eating something other than fruits and vegetables.")

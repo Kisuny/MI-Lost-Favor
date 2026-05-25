@@ -8,7 +8,13 @@
 	}
 	id: "1DE9AF77B4D50480"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [{
+		id: "7ADFF938429316AD"
+		linked_quest: "752A68C79A982D82"
+		shape: "gear"
+		x: 19.0d
+		y: 7.0d
+	}]
 	quests: [
 		{
 			id: "22F6F4D5CF2C2BE8"
@@ -2804,10 +2810,10 @@
 			id: "2CB775EC10EADEF7"
 			tasks: [{
 				id: "38DF68FAD82285EB"
-				item: { count: 1, id: "starcatcher:tackle_box_black" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:tackle_boxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 17.0d
 			y: 7.0d
 		}
 		{
@@ -2818,7 +2824,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:baits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 18.0d
 			y: 8.0d
 		}
 		{
@@ -2829,7 +2835,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:hooks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 18.0d
 			y: 6.0d
 		}
 		{
@@ -2840,12 +2846,13 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:bobbers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 18.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
 			id: "22C5E661BDA4DCC2"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "3710A855582A4B83"
@@ -2858,18 +2865,19 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: 8.0d
+			x: 12.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
 			id: "7F8041E0EFBB9BB6"
+			shape: "diamond"
 			tasks: [{
 				id: "3C65240059BD9CDF"
 				item: { count: 1, id: "starcatcher:tournament_stand" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 12.0d
 			y: 7.0d
 		}
 		{
@@ -2881,8 +2889,8 @@
 				item: { count: 1, id: "selling_bin:selling_bin" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 6.0d
+			x: 13.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -3027,6 +3035,91 @@
 			}]
 			x: 16.0d
 			y: 11.5d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "51B0A4ECA6E82976"
+			shape: "diamond"
+			tasks: [{
+				id: "3A5F112F7E2B21C8"
+				item: { count: 1, id: "starcatcher:trophy_copper" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["51B0A4ECA6E82976"]
+			id: "60FAB318CFFA2349"
+			shape: "pentagon"
+			tasks: [{
+				id: "683A5A96CD72B94B"
+				item: { count: 1, id: "starcatcher:trophy_iron" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["60FAB318CFFA2349"]
+			id: "2329DBD11CB7F435"
+			shape: "pentagon"
+			tasks: [{
+				id: "790DFE2254B6B040"
+				item: { count: 1, id: "starcatcher:trophy_gold" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2329DBD11CB7F435"]
+			id: "63733F3A8D5F526C"
+			shape: "hexagon"
+			tasks: [{
+				id: "2083ED784C27CC2A"
+				item: { count: 1, id: "starcatcher:trophy_emerald" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["63733F3A8D5F526C"]
+			id: "331B3D23D569B8BB"
+			shape: "octagon"
+			tasks: [{
+				id: "14FF38571E99D72F"
+				item: { count: 1, id: "starcatcher:trophy_diamond" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["331B3D23D569B8BB"]
+			id: "659DA7242F0EAF38"
+			shape: "heart"
+			size: 1.5d
+			tasks: [{
+				id: "27AB188B161FA45F"
+				item: { count: 1, id: "starcatcher:trophy_of_the_older_angler" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["6F3B8F14CD52165D"]
+			id: "281456E8387B7043"
+			shape: "diamond"
+			tasks: [{
+				id: "6721DBF2E8A9F7CE"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:hats)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.5d
 		}
 	]
 }

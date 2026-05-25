@@ -178,6 +178,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add("text.apotheosis.world_tier_tutorial", "Этот предмет имеет неизвестную силу")
     event.add("text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${textAnimatorString("World Tier: Haven", "wave", {a:0.2})}, чтобы разблокировать её`)
 
+    event.add("dimension.spectrum.deeper_down", `Глубокие Низины`)
+
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "Вы чувствуете себя немного лучше после того, как съели что-то, кроме фруктов и овощей.")
     event.add("milf.food.poison_1", "Вы съели слишком много фруктов и овощей и теперь чувствуете себя плохо!")

@@ -31,8 +31,8 @@
       },
       "secondary_payment_item": {
         "count": {
-          "max": 8,
-          "min": 12
+          "max": 12,
+          "min": 8
         },
         "id": "minecraft:paper"
       }
@@ -893,15 +893,15 @@
     {
       "type": "goblintraders:basic",
       "experience": 50,
-      "max_trades": 60,
+      "max_trades": 16,
       "offer_item": {
         "count": 2,
         "id": "clavis:lock_pick"
       },
       "payment_item": {
         "count": {
-          "max": 1,
-          "min": 16
+          "max": 16,
+          "min": 1
         },
         "id": "devices:silver_coin"
       }

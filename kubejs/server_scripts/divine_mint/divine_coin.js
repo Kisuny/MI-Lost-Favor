@@ -8,6 +8,8 @@ let $MobEffectInstance = Java.loadClass("net.minecraft.world.effect.MobEffectIns
 let $MobEffects = Java.loadClass("net.minecraft.world.effect.MobEffects")
 let $Float = Java.loadClass("java.lang.Float")
 let $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
+let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag")
+
 
 let DIVINE_MINT_BOSSES_DATA = global.milfBosses
 
@@ -42,11 +44,54 @@ NetworkEvents.dataReceived('milf_divine_coin_validate', (event) => {
     let isInAbstraction = level.dimension == "milf:abstraction"
 
     if (isInAbstraction && bossData.isStructureExclusive){
-        sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.structure_exclusive"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+        event.player.sendData("milf_divine_coin_structure_exclusive")
+        //sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.structure_exclusive"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         return
     }
 
     if (structures.contains(bossData.structure) || (isInAbstraction && !bossData.isStructureExclusive)){
+
+        let resurrectionItems = bossData.resurrectionItems
+
+        let enough = true
+        let itemsTag = new $ListTag()
+        for (let entry of resurrectionItems) {
+            let { id, count } = entry
+
+            let item = Item.of(id)
+
+            let playerCount = player.getInventory().count(item)
+
+            if(playerCount < count){
+                enough = false
+                itemsTag.add($StringTag.valueOf(id))
+                //sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.not_enough_items"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+                
+            }
+
+        }
+
+        if (!enough) {
+            let missingItemsData = new $CompoundTag()
+            missingItemsData.put("itemsToShake", itemsTag)
+            event.player.sendData("milf_divine_coin_not_enough_items", missingItemsData)
+            return
+        }
+
+        for (let entry of resurrectionItems) {
+            let { id, count } = entry
+
+            let item = Item.of(id)
+
+            let playerCount = player.getInventory().clearOrCountMatchingItems(
+                stack => stack.is(item),
+                count,
+                player.inventoryMenu.getCraftSlots()
+            )
+
+        }
+
+        player.containerMenu.broadcastChanges()
 
         let playerPosData = new $CompoundTag()
         playerPosData.putDouble("x", playerPos.x)
@@ -54,13 +99,20 @@ NetworkEvents.dataReceived('milf_divine_coin_validate', (event) => {
         playerPosData.putDouble("z", playerPos.z)
 
         data.put("spawnPos", playerPosData)
+
         event.player.sendData("milf_divine_coin_valid", data)
-        //event.getLevel().spawnParticles("spectrum:falling_liquid_crystal", false, playerPos.x, playerPos.y + 1, playerPos.z, 0, 1, 0, 1, 1)
-        //event.getLevel().spawnParticles("companions:teddy_transformation_cloud", false, playerPos.x, playerPos.y + 0.01, playerPos.z, 0, 0, 0, 1, 0)
+
         return
     }
 
-    sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.spawn_conditions"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+    if (bossData.isStructureExclusive){
+        event.player.sendData("milf_divine_coin_structure_exclusive")
+    } else {
+        event.player.sendData("milf_divine_coin_wrong_spawn_conditions")
+    }
+    
+
+    //sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.spawn_conditions"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     
 })
 
@@ -151,7 +203,7 @@ NetworkEvents.dataReceived('milf_divine_coin_spawn_boss', (event) => {
                 case "hard":
                     let maxHealth = entity.getMaxHealth()
 
-                    console.log(maxHealth);
+                    //console.log(maxHealth);
                     let newMaxHealth = maxHealth * 1.5
 
                     entity.getAttribute($Attributes.MAX_HEALTH).setBaseValue(newMaxHealth)

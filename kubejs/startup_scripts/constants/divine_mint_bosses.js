@@ -4,7 +4,9 @@ global.milfBosses = {
         "cataclysm:the_harbinger": { structure: "cataclysm:ancient_factory"},
         "cataclysm:ancient_remnant": { structure: "cataclysm:cursed_pyramid"},
         "cataclysm:ignis": { structure: "cataclysm:burning_arena"},
-        "cataclysm:netherite_monstrosity": { structure: "cataclysm:soul_black_smith" },
+        "cataclysm:netherite_monstrosity": {structure: "cataclysm:soul_black_smith", additionalTransformations: (pose) => {
+            pose.scale(0.8, 0.8, 1)
+        }},
         "cataclysm:maledictus": { structure: "cataclysm:frosted_prison" },
         "cataclysm:ender_guardian": { structure: "cataclysm:ruined_citadel" },
         "cataclysm:the_leviathan": { structure: "cataclysm:sunken_city", isStructureExclusive: true },
@@ -18,8 +20,14 @@ global.milfBosses = {
         "fdbosses:malkuth": { structure: "fdbosses:malkuth_arena", isStructureExclusive: true },
         "fdbosses:chesed": { structure: "fdbosses:chesed_arena", isStructureExclusive: true },
         "fdbosses:geburah": { fakeItemToRender: "fdbosses:geburah_trophy", structure: "fdbosses:geburah_arena", isStructureExclusive: true },
-        "bosses_of_mass_destruction:void_blossom": { fakeItemToRender: "bosses_of_mass_destruction:void_blossom", structure: "bosses_of_mass_destruction:void_blossom" },
-        "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena", structureExclusive:true },
+        "bosses_of_mass_destruction:void_blossom": { fakeItemToRender: "bosses_of_mass_destruction:void_blossom", structure: "bosses_of_mass_destruction:void_blossom", 
+            resurrectionItems: [
+            { id: "minecraft:vine", count: 6},
+            { id:"devices:gold_coin", count: 5},
+            { id: "knightlib:great_essence", count: 4 },
+            { id: "minecraft:spore_blossom", count: 1 }
+        ]},
+        "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena", isStructureExclusive:true },
         "bosses_of_mass_destruction:lich": { structure: "bosses_of_mass_destruction:lich_tower" },
         "bosses_of_mass_destruction:gauntlet": { structure: "bosses_of_mass_destruction:gauntlet_arena", isStructureExclusive: true },
         "eternal_starlight:lunar_monstrosity": { structure: "" }
@@ -30,18 +38,31 @@ global.milfBosses = {
         "minecraft:warden":{},
         "minecraft:wither": { fakeLoot: [{ "minecraft:nether_star": { count: "1", chance: 1.0 }}]},
         "minecraft:elder_guardian": {},
-        "minecraft:ender_dragon": {}
+        "minecraft:ender_dragon": {additionalTransformations: (pose) => {
+            pose.mulPose($Axis.YP.rotation(Math.PI))
+        }}
 
     },
 
     tier1:{
 
-        "mowziesmobs:umvuthi": { structure: "mowziesmobs:umvuthana_grove" },
+        "mowziesmobs:umvuthi": { structure: "mowziesmobs:umvuthana_grove",
+        resurrectionItems: [
+            { id: "minecraft:feather", count: 8 },
+            { id: "devices:gold_coin", count: 5 },
+            { id: "knightlib:great_essence", count: 2 },
+            { id: "minecraft:chicken", count: 1 }
+        ]},
         "mowziesmobs:ferrous_wroughtnaut": { structure: "mowziesmobs:wrought_chamber" },
-        "mowziesmobs:frostmaw": { structure: "mowziesmobs:frostmaw_spawn" },
+        "mowziesmobs:frostmaw": {structure: "mowziesmobs:frostmaw_spawn", additionalTransformations: (pose) => {
+            pose.scale(0.8, 0.8, 1)
+        }},
         "cataclysm:amethyst_crab": { structure: "cataclysm:amethyst_nest" },
         "companions:sacred_pontiff": { structure: "companions:companions_monkey_temple" },
-        "mythsandlegends:black_charro": { structure: "mythsandlegends:graveyard" },
+        "mythsandlegends:black_charro": { structure: "mythsandlegends:graveyard" , additionalTransformations: (pose) => {
+            pose.translate(0, 20, 0)
+            pose.scale(1.5, 1.5, 1)
+        }},
         "born_in_chaos_v1:sir_pumpkinhead": { fakeLootEntity: "born_in_chaos_v1:pumpkinhead", structure: "born_in_chaos_v1:infernal_pumpkin" } //I HATE MCREATOR MODS
 
     }

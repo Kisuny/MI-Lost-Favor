@@ -1,4 +1,4 @@
-//priority: 2
+//priority: 3
 
 let $Screen = Java.loadClass("net.minecraft.client.gui.screens.Screen")
 let $RenderGuiLayerEvent$Pre = Java.loadClass("net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Pre")
@@ -75,7 +75,7 @@ ItemEvents.firstRightClicked("milf:divine_mint", event => {
 
             Object.entries(MILF_BOSSES[this.bossTier]).forEach(([bossId, bossData], index) => {
 
-                let entityType = $BuiltInRegistries.ENTITY_TYPE.get(new $ResourceLocation.parse(bossId))
+                let entityType = $BuiltInRegistries.ENTITY_TYPE.get($ResourceLocation.parse(bossId))
                 let entity = entityType.create(Client.level)
                 entitiesToRender[bossId] = Object.assign({}, bossData, { entity: entity }) 
 
@@ -446,6 +446,8 @@ function createBossReelWidget(x, y, width, height, component){
 
             pose.translate(0, -8, 0)
 
+            if (entityData.additionalTransformations) entityData.additionalTransformations(pose)
+
             pose.scale(this.ENTITY_SCALE, this.ENTITY_SCALE, 1)
 
             pose.mulPose($Axis.YP.rotation(angle / (2 * 1.5)))
@@ -491,6 +493,8 @@ function createBossReelWidget(x, y, width, height, component){
                 let entity = entityData.entity
                 let { clientDispatcher, clientBuffer } = renderContext
                 pose.translate(0, -8, 0)
+
+                if (entityData.additionalTransformations) entityData.additionalTransformations(pose)
 
                 pose.scale(this.ENTITY_SCALE, this.ENTITY_SCALE, 1)
                 pose.scale(scaleFactor, scaleFactor, scaleFactor)

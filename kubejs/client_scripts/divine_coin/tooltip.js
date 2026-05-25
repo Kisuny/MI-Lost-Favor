@@ -1,3 +1,4 @@
+
 ItemEvents.modifyTooltips(event => {
 
     event.modify("milf:divine_coin", tooltip => {
@@ -5,6 +6,9 @@ ItemEvents.modifyTooltips(event => {
     })
 
 })
+
+let $InputConstants = Java.loadClass("com.mojang.blaze3d.platform.InputConstants")
+let $GLFW = Java.loadClass("org.lwjgl.glfw.GLFW")
 
 ItemEvents.dynamicTooltips("milf:divine_coin_tooltip", event => {
 
@@ -25,6 +29,34 @@ ItemEvents.dynamicTooltips("milf:divine_coin_tooltip", event => {
         event.add(effectName)
         event.add(difficultyName)
         event.add(lootModifier)
+
+        let screen = Client.screen
+
+        if (screen && screen.getTitle().getString() == DIVINE_MINT_SCREEN_TITLE.getString()) {
+            return
+        }
+
+        if ($InputConstants.isKeyDown(Client.getWindow().getWindow(), $GLFW.GLFW_KEY_LEFT_SHIFT)){
+            let entityData = dcBossesData[data.getString("bossTier")][data.getString("bossID")]
+
+            let resurrectionItems = entityData.resurrectionItems
+
+            if (resurrectionItems) {
+
+                for (let entry of resurrectionItems) {
+                    let { id, count } = entry
+
+                    let item = Item.of(id)
+
+                    event.add(Component.translatable(item.getDescriptionId()).append(Component.ofString(" x" + count)).color("#D4B1EB"))
+                }
+            }
+        } else {
+            event.add(Component.translatable("milf.press_button").color("#D4B1EB")
+                .append(Component.ofString("Shift ").bold().color("#D4B1EB"))
+                .append(Component.translatable("milf.divine_coin.tooltip.to_check_resurrection_toll").color("#D4B1EB")))
+        }
+
     }
 
 })

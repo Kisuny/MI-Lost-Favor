@@ -11,4 +11,5 @@ StartupEvents.registry('sound_event', event => {
 
     event.create("milf:whisper")
     event.create("milf:static")
+    event.create("milf:error")
 })

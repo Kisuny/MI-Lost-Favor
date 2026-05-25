@@ -10,58 +10,170 @@ ServerEvents.tags('block', event => {
 
 BlockEvents.rightClicked(Object.keys(MI_UPGRADES), event => {
     if(event.getHand()=="OFF_HAND") event.cancel()
-    if (event.player.mainHandItem.id == "milf:mi_upgrader") {
-        let block = event.block
-        let blockEntity = block.getEntity()
+    let {player, block} = event
+    if (player.mainHandItem.id != "milf:mi_upgrader") return
 
-        if(event.player.inventory.hasAnyOf(MI_UPGRADES[block.getId()].upgradeMaterial) || event.player.creative){
-            if(!event.player.creative){
-                let itemIndex = event.player.inventory.find(Item.of(MI_UPGRADES[block.getId()].upgradeMaterial))
-                let item = event.player.inventory.getItem(itemIndex)
-                item.count--
-                event.player.inventoryMenu.broadcastFullState()
+    let blockEntity = block.getEntity()
+    let requiredMaterials = MI_UPGRADES[block.getId()].upgradeMaterials
+
+    let enough = true
+    let missingItems = []
+    for (let entry of requiredMaterials) {
+        let { id, count } = entry
+
+        let item = Item.of(id)
+
+        let playerCount = player.getInventory().count(item)
+
+        if (playerCount < count) {
+            enough = false
+            missingItems.push(id)
+
+        }
+
+    }
+
+    // if (!enough) {
+    //     let missingItemsData = new $CompoundTag()
+    //     missingItemsData.put("itemsToShake", itemsTag)
+    //     event.player.sendData("milf_divine_coin_not_enough_items", missingItemsData)
+    //     return
+    // }
+
+    
+
+    if(enough || event.player.creative){
+        if(!event.player.creative){
+
+            for (let entry of requiredMaterials) {
+                let { id, count } = entry
+
+                let item = Item.of(id)
+
+                let playerCount = player.getInventory().clearOrCountMatchingItems(
+                    stack => stack.is(item),
+                    count,
+                    player.inventoryMenu.getCraftSlots()
+                )
+
             }
 
-            particleFrame(PARTICLES.dispersed, block.getPos(), {x:1, y:1, z:1}, event)
-            
-            let entityData = block.getEntityData()
-            let newBlock = Block.withProperties(MI_UPGRADES[block.getId()].upgradesTo, block.getProperties())
-            let level = event.getLevel()
-            let blockPos = block.getPos()
-            
-            level.removeBlockEntity(blockPos)
-            level.setBlockAndUpdate(blockPos, newBlock)
-            level.getBlock(blockPos).setEntityData(entityData) 
+            player.containerMenu.broadcastChanges()
 
-            event.server.runCommandSilent(`playsound immersive_machinery:hatch_open block @p ${blockPos.x} ${blockPos.y} ${blockPos.z}`)
-
-            blockEntity.setChanged();
-            blockEntity.sync();
-        } else {
-            sendImmersiveMessage(Component.translatable("milf.mi_upgrade_notification_1")
-            .append(Component.translatable(Item.getItem(MI_UPGRADES[block.getId()].upgradeMaterial).getDescriptionId()))
-            .append(Component.translatable("milf.mi_upgrade_notification_2")), 
-                    event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+            // let itemIndex = event.player.inventory.find(Item.of(MI_UPGRADES[block.getId()].upgradeMaterial))
+            // let item = event.player.inventory.getItem(itemIndex)
+            // item.count--
+            // event.player.inventoryMenu.broadcastFullState()
         }
-        event.cancel()
+
+        particleFrame(PARTICLES.dispersed, block.getPos(), {x:1, y:1, z:1}, event)
+        
+        let entityData = block.getEntityData()
+        let newBlock = Block.withProperties(MI_UPGRADES[block.getId()].upgradesTo, block.getProperties())
+        let level = event.getLevel()
+        let blockPos = block.getPos()
+        
+        level.removeBlockEntity(blockPos)
+        level.setBlockAndUpdate(blockPos, newBlock)
+        level.getBlock(blockPos).setEntityData(entityData) 
+
+        milfPlaySound(event, "immersive_machinery:hatch_open", { pos: blockPos })
+
+        blockEntity.setChanged();
+        blockEntity.sync();
+    } else {
+        
+        let ticksOffset = 0
+
+        missingItems.forEach(id => {
+            let missingItemsComponent = Component.translatable("milf.mi_upgrade_notification_1")
+            missingItemsComponent.append(Component.translatable(Item.getItem(id).getDescriptionId()))
+            missingItemsComponent.append(Component.translatable("milf.mi_upgrade_notification_2"))
+            event.server.scheduleInTicks(ticksOffset, callback => {
+                sendImmersiveMessage(missingItemsComponent, player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+            })
+            
+            ticksOffset+=5
+        })
+
+        
+        // sendImmersiveMessage(Component.translatable("milf.mi_upgrade_notification_1")
+        // .append(Component.translatable(Item.getItem(MI_UPGRADES[block.getId()].upgradeMaterials).getDescriptionId()))
+        // .append(Component.translatable("milf.mi_upgrade_notification_2")), 
+        //         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     }
+    event.cancel()
+    
 })
 
 ServerEvents.recipes(event => {
 
     for( const [ key, value] of Object.entries(MI_UPGRADES)){
 
-        event.shaped(value.upgradesTo, 
-            [
-                " K ",
-                " U ",
-                " M "
-            ], 
-            {
-                K: { item: key },
-                U: { item: "milf:mi_upgrader" },
-                M: { item: value.upgradeMaterial}
-        }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+        switch (value.upgradeMaterials.length) {
+            case 1:
+                event.shaped(value.upgradesTo,
+                    [
+                        " K ",
+                        " U ",
+                        " S "
+                    ],
+                    {
+                        K: { item: key },
+                        U: { item: "milf:mi_upgrader" },
+                        S: { item: value.upgradeMaterials[0].id }
+                    }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+                break;
+            // case 2:
+            //     event.shaped(value.upgradesTo,
+            //         [
+            //             " K ",
+            //             " U ",
+            //             "S E"
+            //         ],
+            //         {
+            //             K: { item: key },
+            //             U: { item: "milf:mi_upgrader" },
+            //             S: { item: value.upgradeMaterials[0].id },
+            //             E: { item: value.upgradeMaterials[1].id }
+            //         }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+            //     break;
+            // case 3:
+            //     event.shaped(value.upgradesTo,
+            //         [
+            //             " K ",
+            //             " U ",
+            //             "SEG"
+            //         ],
+            //         {
+            //             K: { item: key },
+            //             U: { item: "milf:mi_upgrader" },
+            //             S: { item: value.upgradeMaterials[0].id },
+            //             E: { item: value.upgradeMaterials[1].id },
+            //             G: { item: value.upgradeMaterials[2].id }
+            //         }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+            //     break;
+            // case 4:
+            //     event.shaped(value.upgradesTo,
+            //         [
+            //             " K ",
+            //             "SUE",
+            //             "G s"
+            //         ],
+            //         {
+            //             K: { item: key },
+            //             U: { item: "milf:mi_upgrader" },
+            //             S: { item: value.upgradeMaterials[0].id },
+            //             E: { item: value.upgradeMaterials[1].id },
+            //             G: { item: value.upgradeMaterials[2].id },
+            //             s: { item: value.upgradeMaterials[3].id }
+            //         }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+            //     break;
+            default:
+                break;
+        }
+
+
 
     }
 
@@ -100,4 +212,3 @@ ServerEvents.modifyRecipeResult("milf:mi_upgrader_recipe", event =>{
     
     event.success(outputItem)
 })
-

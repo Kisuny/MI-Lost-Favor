@@ -13,27 +13,59 @@ NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
 })
 
 global.MI_UPGRADES = {
-    'modern_industrialization:bronze_barrel' : {upgradeMaterial:"modern_industrialization:steel_machine_casing", upgradesTo:"modern_industrialization:steel_barrel"} ,
-    'modern_industrialization:steel_barrel' : {upgradeMaterial:"modern_industrialization:frostproof_machine_casing", upgradesTo:"modern_industrialization:aluminum_barrel"},
-    'modern_industrialization:aluminum_barrel' : {upgradeMaterial:"modern_industrialization:clean_stainless_steel_machine_casing", upgradesTo:"modern_industrialization:stainless_steel_barrel"},
-    'modern_industrialization:stainless_steel_barrel' : {upgradeMaterial:"modern_industrialization:solid_titanium_machine_casing", upgradesTo:"modern_industrialization:titanium_barrel"},
+    'modern_industrialization:bronze_barrel' : {upgradeMaterials:[{id:"modern_industrialization:steel_machine_casing", count:1}], upgradesTo:"modern_industrialization:steel_barrel"} ,
+    'modern_industrialization:steel_barrel': { upgradeMaterials: [{ id: "modern_industrialization:frostproof_machine_casing", count:1}], upgradesTo:"modern_industrialization:aluminum_barrel"},
+    'modern_industrialization:aluminum_barrel': { upgradeMaterials: [{ id: "modern_industrialization:clean_stainless_steel_machine_casing", count:1}], upgradesTo:"modern_industrialization:stainless_steel_barrel"},
+    'modern_industrialization:stainless_steel_barrel': { upgradeMaterials: [{ id: "modern_industrialization:solid_titanium_machine_casing", count: 1 }], upgradesTo:"modern_industrialization:titanium_barrel"},
 
-    'modern_industrialization:bronze_tank' : {upgradeMaterial:"modern_industrialization:steel_machine_casing", upgradesTo:"modern_industrialization:steel_tank"},
-    'modern_industrialization:steel_tank' : {upgradeMaterial:"modern_industrialization:frostproof_machine_casing", upgradesTo:"modern_industrialization:aluminum_tank"},
-    'modern_industrialization:aluminum_tank' : {upgradeMaterial:"modern_industrialization:clean_stainless_steel_machine_casing", upgradesTo:"modern_industrialization:stainless_steel_tank"},
-    'modern_industrialization:stainless_steel_tank' : {upgradeMaterial:"modern_industrialization:solid_titanium_machine_casing", upgradesTo:"modern_industrialization:titanium_tank"},
+    'modern_industrialization:bronze_tank': { upgradeMaterials: [{ id: "modern_industrialization:steel_machine_casing", count: 1 }], upgradesTo:"modern_industrialization:steel_tank"},
+    'modern_industrialization:steel_tank': { upgradeMaterials: [{ id: "modern_industrialization:frostproof_machine_casing", count: 1 }], upgradesTo:"modern_industrialization:aluminum_tank"},
+    'modern_industrialization:aluminum_tank': { upgradeMaterials: [{ id: "modern_industrialization:clean_stainless_steel_machine_casing", count: 1 }], upgradesTo:"modern_industrialization:stainless_steel_tank"},
+    'modern_industrialization:stainless_steel_tank': { upgradeMaterials: [{ id: "modern_industrialization:solid_titanium_machine_casing", count: 1 }], upgradesTo:"modern_industrialization:titanium_tank"},
 
-    'extended_industrialization:bronze_composter' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"extended_industrialization:steel_composter"},
-    'modern_industrialization:bronze_cutting_machine' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_cutting_machine"},
-    'modern_industrialization:bronze_compressor' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_compressor"},
-    'extended_industrialization:bronze_waste_collector' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"extended_industrialization:steel_waste_collector"},
-    'extended_industrialization:bronze_bending_machine' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"extended_industrialization:steel_bending_machine"},
-    'extended_industrialization:bronze_solar_boiler' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"extended_industrialization:steel_solar_boiler"},
-    'modern_industrialization:bronze_mixer' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_mixer"},
-    'modern_industrialization:bronze_boiler': {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_boiler"},
-    'modern_industrialization:bronze_water_pump' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_water_pump"},
-    'modern_industrialization:bronze_macerator' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_macerator"},
-    'modern_industrialization:bronze_mi_furnace' : {upgradeMaterial:"modern_industrialization:steel_upgrade", upgradesTo:"modern_industrialization:steel_mi_furnace"}
+    'extended_industrialization:bronze_composter': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"extended_industrialization:steel_composter"},
+    'modern_industrialization:bronze_cutting_machine': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_cutting_machine"},
+    'modern_industrialization:bronze_compressor': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_compressor"},
+    'extended_industrialization:bronze_waste_collector': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"extended_industrialization:steel_waste_collector"},
+    'extended_industrialization:bronze_bending_machine': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"extended_industrialization:steel_bending_machine"},
+    'extended_industrialization:bronze_solar_boiler': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"extended_industrialization:steel_solar_boiler"},
+    'modern_industrialization:bronze_mixer': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_mixer"},
+    'modern_industrialization:bronze_boiler': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_boiler"},
+    'modern_industrialization:bronze_water_pump': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_water_pump"},
+    'modern_industrialization:bronze_macerator': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_macerator"},
+    'modern_industrialization:bronze_mi_furnace': { upgradeMaterials: [{ id: "modern_industrialization:steel_upgrade", count: 1 }], upgradesTo:"modern_industrialization:steel_mi_furnace"},
+
+    'modern_industrialization:lv_diesel_generator': { upgradeMaterials: [
+        { id: "modern_industrialization:aluminum_gear", count: 2 }, 
+        { id: "modern_industrialization:large_pump", count: 1 },
+        { id: "modern_industrialization:advanced_machine_hull", count: 1 }, 
+        { id: "modern_industrialization:electronic_circuit", count: 1 },
+    ], upgradesTo: "modern_industrialization:mv_diesel_generator" },
+
+    'modern_industrialization:mv_diesel_generator': {
+        upgradeMaterials: [
+            { id: "modern_industrialization:stainless_steel_gear", count: 2 },
+            { id: "modern_industrialization:advanced_pump", count: 1 },
+            { id: "modern_industrialization:turbo_machine_hull", count: 1 },
+            { id: "modern_industrialization:digital_circuit", count: 1 },
+        ], upgradesTo: "modern_industrialization:hv_diesel_generator" },
+
+    'modern_industrialization:lv_steam_turbine': {
+        upgradeMaterials: [
+            { id: "modern_industrialization:aluminum_rotor", count: 2 },
+            { id: "modern_industrialization:large_motor", count: 1 },
+            { id: "modern_industrialization:advanced_machine_hull", count: 1 },
+            { id: "modern_industrialization:electronic_circuit", count: 1 },
+        ], upgradesTo: "modern_industrialization:mv_steam_turbine" },
+
+    'modern_industrialization:mv_steam_turbine': {
+        upgradeMaterials: [
+            { id: "modern_industrialization:stainless_steel_rotor", count: 2 },
+            { id: "modern_industrialization:advanced_motor", count: 1 },
+            { id: "modern_industrialization:turbo_machine_hull", count: 1 },
+            { id: "modern_industrialization:digital_circuit", count: 1 },
+        ], upgradesTo: "modern_industrialization:hv_steam_turbine" },
+
 }
 
 let miAngleTicks = Platform.isClientEnvironment() ? 0 : null
@@ -155,12 +187,25 @@ global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
     pose.translate(currentX, TOOLTIP_HEIGHT / 2 - (16 / 2) * UPGRADE_MATERIAL_SCALE, 0)
 
     //Client.player.tell(Component.ofString(String(totalAngle)))
-    //pose.pushPose()
-    pose.scale(UPGRADE_MATERIAL_SCALE, UPGRADE_MATERIAL_SCALE, 1)
-    const upgradeMaterial = Item.of(MI_UPGRADES[block.id].upgradeMaterial)
-    guiGraphics.renderFakeItem(upgradeMaterial, 0, 0)
-    guiGraphics.renderItemDecorations(Client.font, upgradeMaterial, 0, 0, "1")
-    //pose.popPose()
+    let upgradeMaterials = MI_UPGRADES[block.id].upgradeMaterials
+    let yOffset = upgradeMaterials.length > 2 ? -11 : 0
+    let xOffset = upgradeMaterials.length % 2 == 0 ? -12 : 0
+    upgradeMaterials.forEach((entry, index) => {
+        let {id, count} = entry
+        if (index % 2 == 0 && index != 0) {
+            yOffset += 22
+            xOffset = -12
+        }
+        pose.pushPose()
+        pose.translate(xOffset, yOffset, 0)
+        pose.scale(UPGRADE_MATERIAL_SCALE, UPGRADE_MATERIAL_SCALE, 1)
+        let upgradeMaterial = Item.of(id)
+        guiGraphics.renderFakeItem(upgradeMaterial, 0, 0)
+        guiGraphics.renderItemDecorations(Client.font, upgradeMaterial, 0, 0, String(count))
+        xOffset+= 24
+        pose.popPose()
+    })
+
 
 
     // pose.pushPose()

@@ -1,8 +1,7 @@
 {
   "base_chance": 5,
   "catch_info": {
-    "fish_bucket": "starcatcher:starcaught_bucket",
-    "item": "starcatcher:crystalback_minnow"
+    "item": "spectrum:crawfish"
   },
   "difficulty": {
     "decay": 1.0,
@@ -52,15 +51,6 @@
       "fluids": [
         "spectrum:liquid_crystal"
       ]
-    },
-    {
-      "type": "starcatcher:season",
-      "season_extra_chance": {
-        "early_winter": 0,
-        "late_winter": 0,
-        "mid_winter": 0
-      },
-      "translation_override": "gui.guide.seasons.winter"
     },
     {
       "type": "starcatcher:daytime_restriction",

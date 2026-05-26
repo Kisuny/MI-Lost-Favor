@@ -1,4 +1,4 @@
-LootJS.modifiers(event => {    
+LootJS.modifiers(event => {
 
 
     const structuresLootTable = {
@@ -106,62 +106,113 @@ LootJS.modifiers(event => {
     })
 
     structuresLootTable.common.forEach(table => {
-        event.addTableModifier(table).pool((pool) => {
-            pool.when(conditions => {
-                conditions.randomChance(0.1)
+        event
+            .addTableModifier(table)
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.1)
+                })
+                pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
+                pool.addEntry(LootEntry.of("milf:rune_of_armor"))
+                pool.addEntry(LootEntry.of("milf:rune_of_bloodshed"))
+                pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
+                pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
+                pool.addEntry(LootEntry.of("milf:rune_of_mining"))
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
             })
-            pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
-            pool.addEntry(LootEntry.of("milf:rune_of_armor"))
-            pool.addEntry(LootEntry.of("milf:rune_of_bloodshed"))
-            pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
-            pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
-            pool.addEntry(LootEntry.of("milf:rune_of_mining"))
-            pool.addEntry(LootEntry.empty())
-        }).pool((pool) => {
-            pool.when(conditions => {
-                conditions.randomChance(0.05)
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.05)
+                })
+                pool.addEntry(LootEntry.of("milf:amber_visage"))
+                pool.addEntry(LootEntry.empty())
             })
-            pool.addEntry(LootEntry.of("milf:amber_visage"))
-            pool.addEntry(LootEntry.empty())
-        })
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.2)
+                })
+                pool.addEntry(LootEntry.of("milf:transmutation_orb", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:regal_orb", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:divine_orb", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:orb_of_alchemy", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:orb_of_chance", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:orb_of_annulment", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:orb_of_regret", [1, 3]))
+                pool.addEntry(LootEntry.of("milf:orb_of_corruption", [1, 3]))
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+            })
     });
 
     structuresLootTable.rare.forEach(table => {
-        event.addTableModifier(table).pool((pool) => {
-            pool.when(conditions => {
-                conditions.randomChance(0.2)
+        event
+            .addTableModifier(table)
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.2)
+                })
+                pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
+                pool.addEntry(LootEntry.of("milf:rune_of_armor"))
+                pool.addEntry(LootEntry.of("milf:rune_of_bloodshed"))
+                pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
+                pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
+                pool.addEntry(LootEntry.of("milf:rune_of_mining"))
             })
-            pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
-            pool.addEntry(LootEntry.of("milf:rune_of_armor"))
-            pool.addEntry(LootEntry.of("milf:rune_of_bloodshed"))
-            pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
-            pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
-            pool.addEntry(LootEntry.of("milf:rune_of_mining"))
-        }).pool((pool) => {
-            pool.when(conditions => {
-                conditions.randomChance(0.1)
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.1)
+                })
+                pool.addEntry(LootEntry.of("milf:amber_visage"))
             })
-            pool.addEntry(LootEntry.of("milf:amber_visage"))
-        })
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.3)
+                })
+                pool.addEntry(LootEntry.of("milf:transmutation_orb", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:regal_orb", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:divine_orb", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_alchemy", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_chance", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_annulment", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_regret", [1, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_corruption", [1, 5]))
+            })
     });
 
     structuresLootTable.epic.forEach(table => {
-        event.addTableModifier(table).pool((pool) => {
-            pool.when(conditions => {
-                conditions.randomChance(0.5)
+        event
+            .addTableModifier(table)
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.5)
+                })
+                pool.addEntry(LootEntry.of("milf:rune_of_piercing", [1, 2]))
+                pool.addEntry(LootEntry.of("milf:rune_of_armor", [1, 2]))
+                pool.addEntry(LootEntry.of("milf:rune_of_bloodshed", [1, 2]))
+                pool.addEntry(LootEntry.of("milf:rune_of_diversity", [1, 2]))
+                pool.addEntry(LootEntry.of("milf:rune_of_fishing", [1, 2]))
+                pool.addEntry(LootEntry.of("milf:rune_of_mining", [1, 2]))
             })
-            pool.addEntry(LootEntry.of("milf:rune_of_piercing", [1, 2]))
-            pool.addEntry(LootEntry.of("milf:rune_of_armor", [1, 2]))
-            pool.addEntry(LootEntry.of("milf:rune_of_bloodshed", [1, 2]))
-            pool.addEntry(LootEntry.of("milf:rune_of_diversity", [1, 2]))
-            pool.addEntry(LootEntry.of("milf:rune_of_fishing", [1, 2]))
-            pool.addEntry(LootEntry.of("milf:rune_of_mining", [1, 2]))
-        }).pool((pool) => {
-            pool.when(conditions => {
-                conditions.randomChance(0.3)
+            .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.3)
+                })
+                pool.addEntry(LootEntry.of("milf:amber_visage"))
             })
-            pool.addEntry(LootEntry.of("milf:amber_visage"))
-        })
+            .pool((pool) => {
+                pool.when(conditions => { 
+                    conditions.randomChance(0.6)
+                })
+                pool.addEntry(LootEntry.of("milf:transmutation_orb", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:regal_orb", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:divine_orb", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_alchemy", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_chance", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_annulment", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_regret", [2, 5]))
+                pool.addEntry(LootEntry.of("milf:orb_of_corruption", [2, 5]))
+            })
     });
 
     // CreeperOverhaul creepers drop creeper_heart when killed with arthana (same as vanilla creeper)
@@ -223,8 +274,8 @@ LootJS.modifiers(event => {
         event.addEntityModifier(boss).addLoot("milf:electronic_ender_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
     });
 
-    event.addEntityModifier("hexerei:crow").addLoot("eidolon_repraised:raven_feather").applyEnchantmentBonus ("minecraft:looting", [0, 1])
-    
+    event.addEntityModifier("hexerei:crow").addLoot("eidolon_repraised:raven_feather").applyEnchantmentBonus("minecraft:looting", [0, 1])
+
 
 
 

@@ -20,6 +20,7 @@ ServerEvents.recipes(event => {
             'tide:obsidian_crate', 
             'tide:purpur_crate', 
             'tide:angling_table',
+            'tide:fishing_journal',
             /tide:.*_bait/,
         ]
     })

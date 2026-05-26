@@ -4,23 +4,23 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.entity.interact.part1', ' не хочет взаимодействовать с тобой')
     event.add('milf.text.entity.interact.part2', 'Что-то магическое запрещает вам использовать ')
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
-    event.add('milf.text.first_join', `Добро пожаловать в ${textAnimatorString("MI:Lost Favor", "grad", {from:"#848dcb", to:"#45509d", f:0.5})}!`)
-    
-    event.add('milf.stage.congratulations', `${textAnimatorString("Поздравляем!!!", "wave", {a:0.25, w:0.25, f:0.5})}`)
-    event.add('milf.stage.something_changed', `${textAnimatorString("Вы чувствуете, что что-то изменилось...", "wiggle", {a:0.25, f:0.35})}`)
+    event.add('milf.text.first_join', `Добро пожаловать в ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
 
-    event.add('milf.stage.bronze_age', `Вы перешли в ${textAnimatorString("Бронзовую Эпоху", "grad", {from:"#CD7F32", to:"#F6BA7D", f:0.5})}`)
-    event.add('milf.stage.monsterplus_mobs', `Вы начали слышать ${textAnimatorString("крики мертвых", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью`)
-    event.add('milf.stage.mowziesmobs_mobs', `новые ${textAnimatorString("опасности", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} появились на вашем пути`)
-    event.add('milf.stage.eidolon_mobs', `Вы чувствуете как по вашему телу пробежал ${textAnimatorString("холодок", "grad", {from:"#353DCA", to:"#52B5C4", f:0.5})}!`)
-    event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${textAnimatorString("могут вас услышать", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью, будьте осторожны!`)
-    event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${textAnimatorString("тёмных глубинах", "grad", {from:"#1A4FFF", to:"#0A1A7A", f:0.5})}...`)
-    event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${textAnimatorString("существами, которым нет числа", "grad", {from:"#9B59B6", to:"#E8D5FF", f:0.5})}`)
-    event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${textAnimatorString("новыми рудами", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
+    event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Поздравляем!!!")}`)
+    event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("Вы чувствуете, что что-то изменилось...")}`)
+
+    event.add('milf.stage.bronze_age', `Вы перешли в ${MilfEffects.GRAD.custom("Бронзовую Эпоху", "#CD7F32", "#F6BA7D")}`)
+    event.add('milf.stage.monsterplus_mobs', `Вы начали слышать ${MilfEffects.GRAD.custom("крики мертвых", "#F00B0B", "#7A0F0B")} ночью`)
+    event.add('milf.stage.mowziesmobs_mobs', `новые ${MilfEffects.GRAD.custom("опасности", "#F00B0B", "#7A0F0B")} появились на вашем пути`)
+    event.add('milf.stage.eidolon_mobs', `Вы чувствуете как по вашему телу пробежал ${MilfEffects.GRAD.custom("холодок", "#353DCA", "#52B5C4")}!`)
+    event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${MilfEffects.GRAD.custom("могут вас услышать", "#F00B0B", "#7A0F0B")} ночью, будьте осторожны!`)
+    event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${MilfEffects.GRAD.custom("тёмных глубинах", "#1A4FFF", "#0A1A7A")}...`)
+    event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${MilfEffects.GRAD.custom("существами, которым нет числа", "#9B59B6", "#E8D5FF")}`)
+    event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${MilfEffects.GRAD.UPGRADE("новыми рудами")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
-    event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${textAnimatorString("странные звуки", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} ночью...`)
-    event.add('milf.stage.early_items', `Этот мир больше не ${textAnimatorString("отвергает", "glitch")} вас...`)
+    event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${MilfEffects.GRAD.custom("странные звуки", "#ED1A1A", "#B62651")} ночью...`)
+    event.add('milf.stage.early_items', `Этот мир больше не ${MilfEffects.GLITCH("отвергает")} вас...`)
 
     event.add('gateways.tiered/haven', 'Haven Gateway')
     event.add('wave_entity.apotheosis.amethyst_crab', 'Усиленный Amethest Crab')
@@ -77,16 +77,16 @@ ClientEvents.lang('ru_ru', event => {
 
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Странная магия мешает вам использовать этот блок')
 
-    
+
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
     event.add('milf.press_button', 'Зажми ')
     event.add('milf.for_details', 'для подробной информации')
     event.add('milf.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
     event.add('milf.orb_of_the_forest.tooltip', 'Для применения сферы к топору держите сферу в основной руке, а любой топор — во второй и нажмите ПКМ')
-    event.add('milf.money_pouch.tooltip', `Можно открыть с помощью ${textAnimatorString("радиального меню", "wave", {a:0.2})}, находясь в слоте для безделушек.`)
-    event.add('milf.mi_pipe_recolor.tooltip', 'Можно поменять тип используя Chisel')
-    event.add('milf.curio_bag.tooltip', `Можно открыть с помощью ${textAnimatorString("радиального меню", "wave", {a:0.2})} если мешок на панели быстрого доступа или в слоте для безделушек`)
+    event.add('milf.money_pouch.tooltip', `Можно открыть с помощью ${MilfEffects.UP_DOWN("радиального меню")}, находясь в слоте для безделушек.`)
+    event.add('milf.mi_pipe_recolor.tooltip', `Можно поменять тип используя ${MilfEffects.UP_DOWN("Chisel")}`)
+    event.add('milf.curio_bag.tooltip', `Можно открыть с помощью ${MilfEffects.UP_DOWN("радиального меню")} если мешок на панели быстрого доступа или в слоте для безделушек`)
 
     event.add('milf.mi_upgrade_notification_1', `Требуется `)
     event.add('milf.mi_upgrade_notification_2', ` для улучшения!`)
@@ -103,53 +103,81 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.pet_rock.notification4.f', `...Но они разбежались`)
     event.add('milf.pet_rock.notification5.f', `...Просто так`)
 
+    event.add('milf.divine_mint.tooltip', `В пределах стен твоих владений
+Иль в плоскости совсем абстрактной,
+    
+С третьим боем, в миг явлений,
+Враг восстанет беспощадный.
+    
+Он алчность соперника в пищу возьмёт,
+И силу добудет — сверх всякой нужды,
+    
+Но тот, кто ту силу с ним вровень сведёт,
+Получит награду куда выше, чем ты.`)
+
     event.add('milf.divine_mint.gui.possible_loot', `Возможная награда:`)
     event.add('milf.divine_mint.gui.no_effect', `Нет эффекта`)
     event.add('milf.divine_mint.gui.difficulty.hard', `Сложная сложность`)
     event.add('milf.divine_mint.gui.difficulty.normal', `Нормальная сложность`)
 
-    event.add('milf.mi_upgrader.tooltip', `ПКМ на размещённый блок с этим предметом, чтобы ${textAnimatorString("улучшить", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} его. Сохраняет ${textAnimatorString("все", "wave", { a: 0.25, w: 0.25, f: 0.5 })} содержимое. Не расходуется при использовании, даже когда используется как ингредиент для крафта.`)
+    event.add('milf.divine_coin.tooltip.loot_modifier', `Модификатор лута: `)
+    event.add('milf.divine_coin.tooltip.to_check_resurrection_toll', `чтобы проверить ${MilfEffects.GLITCH("штраф воскрешения")}`)
+    event.add('milf.divine_coin.gui.resurrection_toll', `Штраф воскрешения`)
+
+    event.add('milf.divine_coin.error.structure_exclusive', `Этого босса можно воскресить только внутри соответствующей структуры`)
+    event.add('milf.divine_coin.error.spawn_conditions', `Этого босса можно воскресить только внутри соответствующей структуры или в измерении Абстракция`)
+
+    event.add('milf.mi_upgrader.tooltip', `ПКМ на размещённый блок с этим предметом, чтобы ${MilfEffects.GRAD.UPGRADE("улучшить")} его. Сохраняет ${MilfEffects.WAVE_C("все")} содержимое. Не расходуется при использовании, даже когда используется как ингредиент для крафта.`)
     event.add('milf.recall_concoction.new_pos', `Новая позиция для возвращения сохранена!`)
 
+    event.add('milf.grecall_concoction.t1.tooltip', `Извлекает содержимое последней могилы, которую вы "намеренно" оставили в этом мире. Работает только в том же измерении и в радиусе 1000 блоков от могилы.`)
+    event.add('milf.grecall_concoction.t2.tooltip', `Улучшенная версия Grecall Concoction! Работает так же, но без каких-либо условий!`)
+
+    event.add('milf.grecall_concoction.no_grave', `Подходящих ${MilfEffects.GLITCH("могил")} не найдено!`)
+    event.add('milf.grecall_concoction.wrong_dimension', `${MilfEffects.GLITCH("Измерение")} могилы не совпадает с ${MilfEffects.GLITCH("измерением")}, в котором вы находитесь!`)
+    event.add('milf.grecall_concoction.grave_too_far', `Вы должны находиться в ${MilfEffects.GLITCH("1000 блоках")} от могилы!`)
+
     event.add('milf.placers.notification1', `Не хватает места, чтобы ${textAnimatorString("это", "bounce")} разместить`)
-    event.add('milf.placers.notification2', `Сначала необходимо выбрать ${textAnimatorString("правильное направление", "glitch")}`)
+    event.add('milf.placers.notification2', `Сначала необходимо выбрать ${MilfEffects.GLITCH("правильное направление")}`)
     event.add('milf.placers.notification3', `Структура должна быть ${textAnimatorString("ТОЧНО", "shake")} такой же`)
 
-    event.add('milf.placers.gui1', `Используйте любой тип ${textAnimatorStringForEach("МОЛОТКА", "bounce")} для создания структуры!`)
+    event.add('milf.placers.gui1', `Используйте любой тип ${MilfEffects.BOUNCE_FULL("МОЛОТКА")} для создания структуры!`)
     event.add('milf.placers.gui2', `Щелкните правой кнопкой мыши пустой рукой, чтобы просмотреть предварительный вариант`)
     event.add('milf.placers.gui3', ` + ПКМ с пустой рукой, чтобы удалить предварительный просмотр`)
     event.add('milf.empty_box.gui1', `Вы все еще можете вернуть свою структуру!`)
     event.add('milf.empty_box.gui2_1', `Просто `)
     event.add('milf.empty_box.gui2_2', ` + ПКМ с пустой рукой, чтобы вернуть её обратно`)
     event.add('milf.empty_box.gui3_1', `Обратите внимание, что разбивание этой коробки приведет к `)
-    event.add('milf.empty_box.gui3_2', `${textAnimatorString("РАЗРУШЕНИЮ", "glitch")}`)
+    event.add('milf.empty_box.gui3_2', `${MilfEffects.GLITCH("РАЗРУШЕНИЮ")}`)
     event.add('milf.empty_box.gui3_3', " этой коробки")
-    
-    event.add('milf.orbcraft.changes', `${textAnimatorString("Предмет изменён!", "wave", {a:0.25, w:0.25, f:0.5})}`)
+
+    event.add('milf.orbcraft.changes', `${MilfEffects.WAVE_C("Предмет изменён!")}`)
     event.add('milf.orbcraft.added', `Энергия сферы наполняет предмет `)
-    event.add('milf.orbcraft.removed', `${textAnimatorString(" УДАЛЕНО", "glitch")}`)
+    event.add('milf.orbcraft.removed', `${MilfEffects.GLITCH(" УДАЛЕНО")}`)
     event.add('milf.orbcraft.orb_removed', `Энергия сферы очищает предмет от `)
     event.add('milf.orbcraft.absorbed', ` ${textAnimatorString("поглотила", "shake")} силу всех остальных зачарований!`)
-    event.add('milf.orbcraft.destroyed', `Энергия сферы переполняет предмет, ${textAnimatorString("полностью уничтожая", "glitch")} его!`)
-    event.add('milf.orbcraft.overenchantment', `Вы чувствуете ${textAnimatorString("потустороннюю", "glitch")} силу, исходящую от предмета!`)
-    event.add('milf.orbcraft.maxed', ` уже ${textAnimatorStringForEach("на максимуме", "wave", {a:0.2})}`)
+    event.add('milf.orbcraft.destroyed', `Энергия сферы переполняет предмет, ${MilfEffects.GLITCH("полностью уничтожая")} его!`)
+    event.add('milf.orbcraft.overenchantment', `Вы чувствуете ${MilfEffects.GLITCH("потустороннюю")} силу, исходящую от предмета!`)
+    event.add('milf.orbcraft.maxed', ` уже ${MilfEffects.UP_DOWN("на максимуме")}`)
 
-    event.add('milf.orbcraft.error.type', `${textAnimatorString("Неподходящий", "glitch")} предмет для этого типа сферы!`)
-    event.add('milf.orbcraft.error.no_valid', `У предмета больше нет ${textAnimatorString("подходящих", "glitch")} зачарований для изменения!`)
-    event.add('milf.orbcraft.error.enchantments', `На этот предмет больше нельзя наложить ${textAnimatorString("зачарования", "glitch")}!`)
-    event.add('milf.orbcraft.error.offhand', `Целевой предмет должен быть во ${textAnimatorString("второй руке", "glitch")}!`)
+    event.add('milf.orbcraft.error.type', `${MilfEffects.GLITCH("Неподходящий")} предмет для этого типа сферы!`)
+    event.add('milf.orbcraft.error.no_valid', `У предмета больше нет ${MilfEffects.GLITCH("подходящих")} зачарований для изменения!`)
+    event.add('milf.orbcraft.error.enchantments', `На этот предмет больше нельзя наложить ${MilfEffects.GLITCH("зачарования")}!`)
+    event.add('milf.orbcraft.error.offhand', `Целевой предмет должен быть во ${MilfEffects.GLITCH("второй руке")}!`)
 
-    event.add('milf.orbcraft.tooltip.transmutation_orb', `Добавляет до ${textAnimatorString("двух", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} зачарований к предмету.`)
-    event.add('milf.orbcraft.tooltip.regal_orb', `Добавляет до ${textAnimatorString("четырёх", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})} зачарований к предмету, у которого уже есть хотя бы два.`)
-    event.add('milf.orbcraft.tooltip.divine_orb', `Случайно изменяет все зачарования, либо ${textAnimatorString("улучшая", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})}, либо ${textAnimatorString("ухудшая", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})} каждое. Не влияет на ${textAnimatorString("сверхзачарованные", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} и ${textAnimatorString("основанные на проклятиях", "glitch")} зачарования.`)
-    event.add('milf.orbcraft.tooltip.orb_of_regret', `Удаляет все чары, кроме одного случайного. Это чар ${textAnimatorStringForEach("максимизируется", "wave", {a:0.2})}. Можно использовать только на предмете с 4 и более чарами.`)
-    event.add('milf.orbcraft.tooltip.orb_of_chance', `Либо ${textAnimatorString("уничтожает", "glitch")} предмет, либо ${textAnimatorString("сверхзачаровывает", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} одно из зачарований уровня 3+. Требует 10+ суммарных уровней зачарования на предмете. Шанс успеха снижается за каждое зачарование сверх четвёртого.`)
+    event.add('milf.orbcraft.tooltip.transmutation_orb', `Добавляет до ${MilfEffects.GRAD.UPGRADE("двух")} зачарований к предмету.`)
+    event.add('milf.orbcraft.tooltip.regal_orb', `Добавляет до ${MilfEffects.GRAD.UPUPGRADE("четырёх")} зачарований к предмету, у которого уже есть хотя бы два.`)
+    event.add('milf.orbcraft.tooltip.divine_orb', `Случайно изменяет все зачарования, либо ${MilfEffects.GRAD.POSITIVE("улучшая")}, либо ${MilfEffects.GRAD.NEGATIVE("ухудшая")} каждое. Не влияет на ${MilfEffects.GRAD.UPGRADE("сверхзачарованные")} и ${MilfEffects.GLITCH("основанные на проклятиях")} зачарования.`)
+    event.add('milf.orbcraft.tooltip.orb_of_regret', `Удаляет все чары, кроме одного случайного. Это чар ${MilfEffects.UP_DOWN("максимизируется")}. Можно использовать только на предмете с 4 и более чарами.`)
+    event.add('milf.orbcraft.tooltip.orb_of_chance', `Либо ${MilfEffects.GLITCH("уничтожает")} предмет, либо ${MilfEffects.GRAD.UPGRADE("сверхзачаровывает")} одно из зачарований уровня 3+. Требует 10+ суммарных уровней зачарования на предмете. Шанс успеха снижается за каждое зачарование сверх четвёртого.`)
     event.add('milf.orbcraft.tooltip.orb_of_annulment', `Удаляет одно ${textAnimatorString("случайное", "shake")} зачарование с предмета.`)
-    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Добавляет одно ${textAnimatorString("сверхзачарованное", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} зачарование к предмету вместе с ${textAnimatorString("Проклятьем утраты", "glitch")}. Можно использовать только на предмете с 4 и более зачарованиями, у которого ещё нет ${textAnimatorString("Проклятия утраты", "glitch")}`)
-    event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Поглощает до 4 зачарований с предмета, ${textAnimatorString("уничтожая", "glitch")} его в процессе. Использование зачарованной сферы на другом предмете ${textAnimatorString("заменяет", "fade")} все его зачарования поглощёнными.`)
-    event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Наполняет топор ${textAnimatorString("Сущностью Леса", "grad", {from:"#1DEB6C", to:"#6AFFC3", f:0.5})}, позволяя срубать ${textAnimatorString("целое дерево", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})} за один удар в обмен на снижение эффективности до ${textAnimatorString("одной десятой", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})}. Можно применить только один раз без возможности отмены.`)
+    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Добавляет одно ${MilfEffects.GRAD.UPGRADE("сверхзачарованное")} зачарование к предмету вместе с ${MilfEffects.GLITCH("Проклятьем утраты")}. Можно использовать только на предмете с 4 и более зачарованиями, у которого ещё нет ${MilfEffects.GLITCH("Проклятия утраты")}`)
+    event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Поглощает до 4 зачарований с предмета, ${MilfEffects.GLITCH("уничтожая")} его в процессе. Использование зачарованной сферы на другом предмете ${textAnimatorString("заменяет", "fade")} все его зачарования поглощёнными.`)
+    event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Наполняет топор ${MilfEffects.GRAD.custom("Сущностью Леса", "#1DEB6C", "#6AFFC3")}, позволяя срубать ${MilfEffects.GRAD.POSITIVE("целое дерево")} за один удар в обмен на снижение эффективности до ${MilfEffects.GRAD.NEGATIVE("одной десятой")}. Можно применить только один раз без возможности отмены.`)
 
-    event.add('milf.text.dim.cant_visit', `${textAnimatorString("Какая-то магия останавливает вас", "glitch")}`)
+    event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Какая-то магия останавливает вас")}`)
+
+    event.add("jade.theme.jade.dark_original", "Тёмный (оригинальный)")
 
     event.add('milf.flags.claimed', "Чанк запривачен")
     event.add('milf.flags.unclaimed', "Чанк распривачен")
@@ -176,7 +204,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add("rite.milf.mahogany_broom", "Ритуал Формирования")
 
     event.add("text.apotheosis.world_tier_tutorial", "Этот предмет имеет неизвестную силу")
-    event.add("text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${textAnimatorString("World Tier: Haven", "wave", {a:0.2})}, чтобы разблокировать её`)
+    event.add("text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${MilfEffects.UP_DOWN("World Tier: Haven")}, чтобы разблокировать её`)
 
     event.add("dimension.spectrum.deeper_down", `Глубокие Низины`)
 
@@ -304,7 +332,7 @@ ClientEvents.lang('ru_ru', event => {
         event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
         event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
         event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
-        
+
         event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
         event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
         event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")

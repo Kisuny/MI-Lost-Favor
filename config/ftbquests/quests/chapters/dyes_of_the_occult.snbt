@@ -3306,7 +3306,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: -39.0d
@@ -5728,6 +5728,7 @@
 				id: "ars_nouveau:bookwyrm_charm"
 			}
 			id: "4580B1AEAA36E6B4"
+			shape: "heart"
 			tasks: [
 				{
 					id: "308D3408F93D9441"
@@ -5751,6 +5752,7 @@
 			]
 			hide_dependency_lines: true
 			id: "051773C85A4FB2DF"
+			shape: "heart"
 			tasks: [{
 				id: "0F0FB6E6867E3F43"
 				item: { count: 1, id: "ars_nouveau:amethyst_golem_charm" }

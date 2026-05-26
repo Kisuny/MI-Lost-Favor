@@ -10,6 +10,9 @@
 	order_index: 4
 	quest_links: [
 		{
+			icon: {
+				id: "smallships:oak_cog"
+			}
 			id: "689B85F6CDCD4945"
 			linked_quest: "6443864802D04B07"
 			shape: "diamond"
@@ -32,14 +35,14 @@
 		{
 			id: "59713B4263DC488F"
 			linked_quest: "047487BFFB8421D5"
-			x: -9.0d
+			x: -32.0d
 			y: -10.0d
 		}
 		{
 			id: "33A296DF5D872E7A"
 			linked_quest: "2518CA7E57223D3A"
 			shape: "diamond"
-			x: -32.0d
+			x: -33.0d
 			y: -10.0d
 		}
 		{
@@ -71,21 +74,21 @@
 		{
 			id: "1E0D4420E982DF21"
 			linked_quest: "2EF484C39D617CD2"
-			x: -10.0d
+			x: -11.0d
 			y: -10.0d
 		}
 		{
 			id: "0D37CB6F4FDFBC3B"
 			linked_quest: "51C0876E925B1FF1"
 			shape: "diamond"
-			x: -29.0d
+			x: -30.0d
 			y: -10.0d
 		}
 		{
 			id: "2964F8CE510521AD"
 			linked_quest: "5116FA2F58C59929"
 			shape: "diamond"
-			x: -30.0d
+			x: -31.0d
 			y: -10.0d
 		}
 		{
@@ -97,14 +100,14 @@
 		{
 			id: "20700D95591E7C99"
 			linked_quest: "35B625450DD3545F"
-			x: -17.0d
+			x: -6.0d
 			y: -10.0d
 		}
 		{
 			id: "0960A1D1CE327DDC"
 			linked_quest: "51FBF0B7A92E3FD8"
-			x: -17.0d
-			y: -11.0d
+			x: -5.0d
+			y: -10.0d
 		}
 		{
 			id: "33597A4B9963C06D"
@@ -123,20 +126,20 @@
 		{
 			id: "08111955C5A4EA0B"
 			linked_quest: "7C082F9CC1474254"
-			x: -16.0d
+			x: -17.0d
 			y: -10.0d
 		}
 		{
 			id: "1E019AB9FA029CF6"
 			linked_quest: "6E57514B8D09F6D8"
 			shape: "diamond"
-			x: -27.0d
-			y: -10.0d
+			x: -26.5d
+			y: -6.0d
 		}
 		{
 			id: "1A8E7787393334D2"
 			linked_quest: "4B4152C17573E98D"
-			x: -11.0d
+			x: -12.0d
 			y: -10.0d
 		}
 		{
@@ -149,19 +152,19 @@
 		{
 			id: "170E6A8EAB6AA368"
 			linked_quest: "1D16519FE894BC16"
-			x: -6.0d
+			x: -7.0d
 			y: -10.0d
 		}
 		{
 			id: "11987EF579249CD9"
 			linked_quest: "4287B0D38E0C2A7A"
-			x: -8.0d
+			x: -9.0d
 			y: -10.0d
 		}
 		{
 			id: "1195DB3944EB6C70"
 			linked_quest: "3CED97E478F793D3"
-			x: -7.0d
+			x: -8.0d
 			y: -10.0d
 		}
 		{
@@ -174,31 +177,34 @@
 			id: "69068F997359A590"
 			linked_quest: "349B96434E8FA41C"
 			shape: "diamond"
-			x: -31.0d
+			x: -10.0d
 			y: -10.0d
 		}
 		{
 			id: "137603E582BB8B02"
 			linked_quest: "2A604659C308A486"
-			x: -12.0d
+			x: -13.0d
 			y: -10.0d
 		}
 		{
 			id: "4D1D5E01FA939F38"
 			linked_quest: "08136C156A331A52"
-			x: -35.0d
+			x: -36.0d
 			y: -10.0d
 		}
 		{
+			icon: {
+				id: "crafting_on_a_stick:crafting_table"
+			}
 			id: "706110C50D2812E5"
 			linked_quest: "00FF5F61CB6D32B8"
-			x: -34.0d
+			x: -35.0d
 			y: -10.0d
 		}
 		{
 			id: "36FDE976F82ED306"
 			linked_quest: "324569702E4DFDBD"
-			x: -33.0d
+			x: -34.0d
 			y: -10.0d
 		}
 		{
@@ -228,13 +234,13 @@
 		{
 			id: "1298CC257389D3A9"
 			linked_quest: "640DC65E9255BECE"
-			x: -27.5d
-			y: -6.0d
+			x: -27.0d
+			y: -10.0d
 		}
 		{
 			id: "3DF3B62C910C5E0F"
 			linked_quest: "590C55E7230D6C5E"
-			x: -26.5d
+			x: -27.5d
 			y: -6.0d
 		}
 		{
@@ -306,7 +312,7 @@
 		{
 			id: "44101C7893D071C4"
 			linked_quest: "27F5E8BA17C7EA2E"
-			x: -15.0d
+			x: -16.0d
 			y: -10.0d
 		}
 		{
@@ -358,6 +364,12 @@
 			x: -19.0d
 			y: -1.0d
 		}
+		{
+			id: "6A9D075A447EC1B1"
+			linked_quest: "054589529C185AE1"
+			x: -29.0d
+			y: -10.0d
+		}
 	]
 	quests: [
 		{
@@ -371,6 +383,9 @@
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]
+			icon: {
+				id: "elevatorid:elevator_white"
+			}
 			id: "092205B6B1CC863A"
 			shape: "diamond"
 			tasks: [{
@@ -495,7 +510,7 @@
 				item: { count: 1, id: "phantoms_utilities:spray_can" }
 				type: "item"
 			}]
-			x: -14.0d
+			x: -15.0d
 			y: -10.0d
 		}
 		{
@@ -539,7 +554,7 @@
 				item: { count: 1, id: "rarcompat:mimi_dust" }
 				type: "item"
 			}]
-			x: -13.0d
+			x: -14.0d
 			y: -10.0d
 		}
 	]

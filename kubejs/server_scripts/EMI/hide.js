@@ -353,6 +353,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'aquaculture:worm',
         'aquaculture:tackle_box',
         'aquaculture:worm_farm',
+        /tide:.*_bait/,,
     ]
 
     list.forEach(item => {

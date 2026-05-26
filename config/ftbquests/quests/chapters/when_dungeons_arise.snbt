@@ -74,25 +74,25 @@
 		{
 			id: "1E228499A8B2C2D0"
 			linked_quest: "7737F36A9E69FB4C"
-			x: 1.0d
+			x: 0.0d
 			y: 30.5d
 		}
 		{
 			id: "4BB6383E80A76659"
 			linked_quest: "37F8E4788207721E"
-			x: 2.0d
+			x: 1.0d
 			y: 30.5d
 		}
 		{
 			id: "23F79255316AB58E"
 			linked_quest: "1D2A38BF3DA1F6BD"
-			x: 0.0d
+			x: -1.0d
 			y: 30.5d
 		}
 		{
 			id: "1D621ED9C7F881C5"
 			linked_quest: "12AC008BBADAE6BD"
-			x: 0.0d
+			x: -1.0d
 			y: 31.5d
 		}
 	]
@@ -3094,7 +3094,7 @@
 				item: { count: 1, id: "minecraft:bow" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 30.5d
 		}
 		{
@@ -3104,7 +3104,7 @@
 				item: { count: 1, id: "minecraft:crossbow" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: 30.5d
 		}
 		{
@@ -3114,7 +3114,7 @@
 				item: { count: 1, id: "royalvariations:royal_bow" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 30.5d
 		}
 		{
@@ -3125,7 +3125,7 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:power": 6 } } }, count: 1, id: "spectrum:bedrock_bow" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 30.5d
 		}
 		{
@@ -3136,7 +3136,7 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:quick_charge": 4 } } }, count: 1, id: "spectrum:bedrock_crossbow" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 30.5d
 		}
 		{
@@ -3710,6 +3710,16 @@
 			}]
 			x: -26.5d
 			y: 14.0d
+		}
+		{
+			id: "7013BD87AC0FE4ED"
+			tasks: [{
+				id: "68348C0E9C9A1614"
+				item: { count: 1, id: "tide:starlight_bow" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 30.5d
 		}
 	]
 }

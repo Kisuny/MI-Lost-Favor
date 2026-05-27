@@ -90,13 +90,13 @@ ServerEvents.tags("item", event => {
 
     event.add("modern_industrialization:forge_hammer_tools", [
         "ytech:bronze_hammer",
-        "ytech:lead_hammer",
-        "ytech:copper_hammer",
-        "ytech:iron_hammer",
-        "ytech:iron_hammer",
+        // "ytech:lead_hammer",
+        // "ytech:copper_hammer",
+        // "ytech:iron_hammer",
+        // "ytech:iron_hammer",
         "ytech:stone_hammer",
-        "ytech:golden_hammer",
-        "ytech:tin_hammer"
+        // "ytech:golden_hammer",
+        // "ytech:tin_hammer"
     ])
 
     event.add("ytech:molds/hoe_head", [

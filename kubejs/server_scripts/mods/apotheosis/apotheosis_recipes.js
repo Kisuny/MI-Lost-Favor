@@ -279,6 +279,22 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "OSN",
+            "SCS",
+            "NSO"
+        ],
+        key: {
+            C: { item: "minecraft:cobweb" },
+            S: { item: "minecraft:prismarine_shard" },
+            N: { item: "spectrum:moonstruck_nectar" },
+            O: { item: "spectrum:onyx_powder" }
+        },
+        outputItems: [[{ id: "apothic_enchanting:prismatic_web" }, 1]],
+        removeRecipe: true
+    })
+
 })
 
 

@@ -209,7 +209,26 @@ Receive reward far greater still.`)
     event.add("text.apotheosis.world_tier_tutorial.2", `Press radial menu button and activate ${MilfEffects.UP_DOWN("World Tier: Haven")} to unlock it`)
     event.add("dimension.spectrum.deeper_down", `Deeper Down`)
 
-
+    //#region fix forbidden_arcanus langs
+    event.add("block.forbidden_arcanus.clibano_center", "Clibano")
+    event.add("block.forbidden_arcanus.clibano_corner", "Clibano")
+    event.add("block.forbidden_arcanus.clibano_side_horizontal", "Clibano")
+    event.add("block.forbidden_arcanus.clibano_side_vertical", "Clibano")
+    event.add("gui.forbidden_arcanus.clibano.residue_fullness", "Residue fullness")
+    event.add("jei.forbidden_arcanus.clibanoCombustion.residue", "Residue")
+    event.add("residue.forbidden_arcanus.coal", "Coal")
+    event.add("residue.forbidden_arcanus.iron", "Iron")
+    event.add("residue.forbidden_arcanus.arcane_crystal", "Arcane Crystal")
+    event.add("residue.forbidden_arcanus.rune", "Rune")
+    event.add("residue.forbidden_arcanus.gold", "Gold")
+    event.add("residue.forbidden_arcanus.copper", "Copper")
+    event.add("residue.forbidden_arcanus.diamond", "Diamond")
+    event.add("residue.forbidden_arcanus.lapis_lazuli", "Lapis Lazuli")
+    event.add("residue.forbidden_arcanus.emerald", "Emerald")
+    //#endregion
+    
+    event.add("residue.forbidden_arcanus.netherite", "Netherite Scrap")
+    event.add("jei.forbidden_arcanus.category.clibanoCombustion", "Clibano Combustion")
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "You feel a bit better after eating something other than fruits and vegetables.")
     event.add("milf.food.poison_1", "You have eaten too many fruits and vegetables and are now poisoned!")

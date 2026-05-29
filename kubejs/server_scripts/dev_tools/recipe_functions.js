@@ -58,12 +58,6 @@ function milfShapeless(event, args){
         ingredients: args.inputItems.map(i => Object.assign({}, i[0], i[1] > 1 ? {count: i[1]} : {})),
         result: Object.assign({}, args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
-    if(!args.compatOff){
-        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
-            inputItems:args.inputItems,
-            outputItems:[[{item:recipe.result.id}, recipe.result.count]]
-        })
-    }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
     if(args.removeRecipeType){event.remove({output: args.outputItems[0][0].id, type: args.removeRecipeType})}
     event.custom(recipe)

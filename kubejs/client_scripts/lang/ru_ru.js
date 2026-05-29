@@ -208,6 +208,25 @@ ClientEvents.lang('ru_ru', event => {
 
     event.add("dimension.spectrum.deeper_down", `Глубокие Низины`)
 
+
+    //#region fix forbidden_arcanus langs
+    event.add("block.forbidden_arcanus.clibano_center", "Клибан")
+    event.add("block.forbidden_arcanus.clibano_corner", "Клибан")
+    event.add("block.forbidden_arcanus.clibano_side_horizontal", "Клибан")
+    event.add("block.forbidden_arcanus.clibano_side_vertical", "Клибан")
+    event.add("gui.forbidden_arcanus.clibano.residue_fullness", "Заполненность остатками")
+    event.add("jei.forbidden_arcanus.clibanoCombustion.residue", "Остаток")
+    event.add("residue.forbidden_arcanus.coal", "Уголь")
+    event.add("residue.forbidden_arcanus.iron", "Железо")
+    event.add("residue.forbidden_arcanus.arcane_crystal", "Мистический кристалл")
+    event.add("residue.forbidden_arcanus.rune", "Rune")
+    event.add("residue.forbidden_arcanus.gold", "Золото")
+    event.add("residue.forbidden_arcanus.copper", "Медь")
+    event.add("residue.forbidden_arcanus.diamond", "Алмаз")
+    event.add("residue.forbidden_arcanus.lapis_lazuli", "Лазурит")
+    event.add("residue.forbidden_arcanus.emerald", "Изумруд")
+    //#endregion
+
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "Вы чувствуете себя немного лучше после того, как съели что-то, кроме фруктов и овощей.")
     event.add("milf.food.poison_1", "Вы съели слишком много фруктов и овощей и теперь чувствуете себя плохо!")

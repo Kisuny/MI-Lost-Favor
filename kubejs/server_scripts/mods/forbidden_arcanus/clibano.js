@@ -82,7 +82,7 @@ function addResidueType(id, options) {
         }
     }
 
-    JsonIO.write(`kubejs/data/forbidden_arcanus/forbidden_arcanus/residue_type/${id}.json`, json)
+    // JsonIO.write(`kubejs/data/forbidden_arcanus/forbidden_arcanus/residue_type/${id}.json`, json)
 }
 
 addResidueType("iesnium", { result: "occultism:iesnium_block" })

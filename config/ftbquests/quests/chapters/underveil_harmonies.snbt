@@ -3211,7 +3211,7 @@
 				type: "item"
 			}]
 			x: -25.0d
-			y: -46.0d
+			y: -46.5d
 		}
 		{
 			dependencies: [
@@ -3649,7 +3649,7 @@
 				type: "item"
 			}]
 			x: -23.0d
-			y: -46.0d
+			y: -46.5d
 		}
 		{
 			dependencies: ["173490A557431C56"]
@@ -3944,8 +3944,8 @@
 				item: { count: 1, id: "spectrum:germinated_jade_vine_bulb" }
 				type: "item"
 			}]
-			x: -26.0d
-			y: -49.0d
+			x: -25.0d
+			y: -48.0d
 		}
 		{
 			dependencies: ["5878E984A314D177"]
@@ -3967,8 +3967,8 @@
 					type: "item"
 				}
 			]
-			x: -26.0d
-			y: -50.5d
+			x: -24.0d
+			y: -48.5d
 		}
 		{
 			dependencies: ["37508D7F8B4E2CA1"]
@@ -3979,8 +3979,8 @@
 				item: { count: 1, id: "spectrum:moonstruck_nectar" }
 				type: "item"
 			}]
-			x: -26.0d
-			y: -52.0d
+			x: -23.0d
+			y: -48.0d
 		}
 		{
 			dependencies: [
@@ -9730,7 +9730,7 @@
 				type: "item"
 			}]
 			x: -24.0d
-			y: -46.0d
+			y: -47.0d
 		}
 		{
 			dependencies: ["3476E6DF114A1001"]
@@ -9803,6 +9803,18 @@
 			}]
 			x: -19.5d
 			y: -53.0d
+		}
+		{
+			dependencies: ["5FA4EE37B3CC549D"]
+			id: "0E00A150DB450FAC"
+			shape: "pentagon"
+			tasks: [{
+				id: "370860A6B9B367CD"
+				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: -47.5d
 		}
 	]
 }

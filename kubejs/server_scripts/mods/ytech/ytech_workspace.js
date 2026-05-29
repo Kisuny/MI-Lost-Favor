@@ -1400,6 +1400,22 @@ ServerEvents.recipes(event => {
 
     yTechWorkspaceRecipe(event, {
         pattern: [
+            ['   ', '   ', '   '].workspaceFull("D"),
+            ['   ', '   ', '   '].workspaceCorners("I").workspacePlus("P"),
+            ['   ', '   ', '   '].workspaceCorners("I").workspacePlus("P")
+        ],
+        key: {
+            D: { item: "modern_industrialization:iron_double_ingot" },
+            I: { item: "minecraft:iron_block" },
+            P: { tag: "minecraft:planks" }
+        },
+        outputItems: [[{ id: "minecraft:smithing_table" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipeType: "ytech:workspace_crafting"
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','   ','   '].workspaceFull("P").workspaceCenter(" "),
             ['   ','   ','   '].workspaceFull("P").workspaceCenter(" ").workspaceFront(" "),
             ['   ','   ','   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S")

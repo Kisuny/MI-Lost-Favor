@@ -12,8 +12,8 @@
 		id: "7ADFF938429316AD"
 		linked_quest: "752A68C79A982D82"
 		shape: "gear"
-		x: 19.0d
-		y: 8.0d
+		x: 15.5d
+		y: 20.0d
 	}]
 	quests: [
 		{
@@ -25,7 +25,7 @@
 				item: { count: 1, id: "minecraft:gravel" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -8.0d
 		}
 		{
@@ -37,7 +37,7 @@
 				item: { count: 1, id: "ytech:sharp_flint" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -7.0d
 		}
 		{
@@ -50,7 +50,7 @@
 				item: { count: 1, id: "ytech:grass_fibers" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: -8.0d
 		}
 		{
@@ -62,7 +62,7 @@
 				item: { count: 1, id: "ytech:grass_twine" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -8.0d
 		}
 		{
@@ -74,7 +74,7 @@
 				item: { count: 1, id: "minecraft:stick" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.5d
 			y: -8.5d
 		}
 		{
@@ -87,7 +87,7 @@
 				item: { count: 1, id: "ytech:pebble" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -8.5d
 		}
 		{
@@ -99,7 +99,7 @@
 				item: { count: 1, id: "ytech:flint_axe" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -7.0d
 		}
 		{
@@ -111,7 +111,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -7.0d
 		}
 		{
@@ -123,7 +123,7 @@
 				item: { count: 1, id: "ytech:crafting_workspace" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: -8.0d
 		}
 		{
@@ -148,7 +148,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.0d
+			x: 5.0d
 			y: -8.0d
 		}
 		{
@@ -160,7 +160,7 @@
 				item: { count: 1, id: "minecraft:leather" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 8.0d
 			y: -8.0d
 		}
 		{
@@ -200,7 +200,7 @@
 				item: { count: 1, id: "ytech:fire_pit" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -9.0d
 		}
 		{
@@ -211,7 +211,7 @@
 				item: { count: 1, id: "ytech:antler_pickaxe" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: -10.0d
 		}
 		{
@@ -226,7 +226,7 @@
 				item: { count: 1, id: "ytech:bone_needle" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: -9.0d
 		}
 		{
@@ -258,7 +258,7 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 6.5d
 			y: -10.0d
 		}
 		{
@@ -270,7 +270,7 @@
 				item: { count: 1, id: "ytech:basket" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: -10.5d
 		}
 		{
@@ -379,7 +379,7 @@
 				item: { count: 1, id: "ytech:flint_knife" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -9.0d
 		}
 		{
@@ -447,7 +447,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.5d
+			x: 5.5d
 			y: -9.0d
 		}
 		{
@@ -474,7 +474,7 @@
 					type: "observation"
 				}
 			]
-			x: 5.5d
+			x: 6.5d
 			y: -7.0d
 		}
 		{
@@ -489,7 +489,7 @@
 				item: { count: 1, id: "ytech:twine_mesh" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: -7.0d
 		}
 		{
@@ -513,8 +513,8 @@
 				item: { count: 1, id: "ytech:copper_mesh" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: -2.5d
+			x: 22.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["389A4181732368E0"]
@@ -538,7 +538,7 @@
 					type: "observation"
 				}
 			]
-			x: 5.0d
+			x: 6.0d
 			y: -6.0d
 		}
 		{
@@ -763,9 +763,8 @@
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
-			hide_dependency_lines: true
 			icon: {
-				id: "modern_industrialization:bronze_ingot"
+				id: "modern_industrialization:bronze_plate"
 			}
 			id: "51E3EA7E70ECE842"
 			rewards: [
@@ -904,7 +903,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["51E3EA7E70ECE842"]
@@ -916,7 +915,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["203B742A5DB473FA"]
@@ -927,7 +926,7 @@
 				item: { count: 1, id: "ytech:chlorite_bracelet" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -5.5d
 		}
 		{
@@ -939,7 +938,7 @@
 				item: { count: 1, id: "ytech:lion_man" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: -5.5d
 		}
 		{
@@ -951,7 +950,7 @@
 				item: { count: 1, id: "ytech:shell_beads" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -5.5d
 		}
 		{
@@ -963,7 +962,7 @@
 				item: { count: 1, id: "ytech:venus_of_hohle_fels" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.5d
 			y: -5.0d
 		}
 		{
@@ -975,7 +974,7 @@
 				item: { count: 1, id: "ytech:wild_horse" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -5.0d
 		}
 		{
@@ -1152,7 +1151,7 @@
 				item: { components: { "map_atlases:empty_maps": { vanilla: 9 }, "map_atlases:map_collection": { vanilla: [I; 8, 16, 23, 29, 34, 38, 41, 43, 44 ] } }, count: 1, id: "map_atlases:atlas" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -11.0d
 		}
 		{
@@ -1164,7 +1163,7 @@
 				item: { count: 1, id: "eccentrictome:tome" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: -11.0d
 		}
 		{
@@ -1199,7 +1198,7 @@
 				item: { count: 1, id: "supplementaries:lunch_basket" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: -11.5d
 		}
 		{
@@ -1250,7 +1249,7 @@
 				item: { count: 1, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.5d
 			y: -10.0d
 		}
 		{
@@ -1262,7 +1261,7 @@
 				item: { count: 1, id: "minecraft:flint" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -7.5d
 		}
 		{
@@ -1454,7 +1453,7 @@
 					type: "item"
 				}
 			]
-			x: 15.5d
+			x: 14.5d
 			y: 4.0d
 		}
 		{
@@ -1556,7 +1555,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.5d
+			x: 5.5d
 			y: -7.0d
 		}
 		{
@@ -1567,7 +1566,7 @@
 				item: { count: 1, id: "ytech:antler" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -9.0d
 		}
 		{
@@ -1579,7 +1578,7 @@
 				item: { count: 1, id: "ytech:raw_hide" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -8.0d
 		}
 		{
@@ -1590,7 +1589,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: -6.0d
 		}
 		{
@@ -1602,7 +1601,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:wooden_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.5d
 			y: -6.0d
 		}
 		{
@@ -1627,7 +1626,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.0d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -1708,7 +1707,7 @@
 				item: { count: 1, id: "ytech:terracotta_aqueduct" }
 				type: "item"
 			}]
-			x: 14.5d
+			x: 14.0d
 			y: -6.0d
 		}
 		{
@@ -1858,8 +1857,8 @@
 				item: { count: 1, id: "dummmmmmy:target_dummy" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 2.5d
+			x: 22.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1898,7 +1897,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(smallships:ships)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 22.0d
 			y: 2.5d
 		}
 		{
@@ -1910,8 +1909,8 @@
 				item: { count: 1, id: "mechtrowel:mech_trowel" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: 3.5d
+			x: 14.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1925,7 +1924,7 @@
 				item: { count: 1, id: "travelertoolbelt:belt" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: -10.0d
 		}
 		{
@@ -1961,7 +1960,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1714360882474479"]
@@ -1972,8 +1971,8 @@
 				item: { count: 1, id: "milf:needle" }
 				type: "item"
 			}]
-			x: 16.5d
-			y: 3.5d
+			x: 17.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4692844BA629A00B"]
@@ -2139,8 +2138,8 @@
 				item: { count: 1, id: "birdnest:birds_nest" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.4d
+			x: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
@@ -2328,7 +2327,7 @@
 				}
 			]
 			x: 17.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6B8190158D968891"]
@@ -2382,7 +2381,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -2441,7 +2440,7 @@
 				item: { count: 1, id: "apotheosis:gem_fused_slate" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 26.0d
 			y: 0.0d
 		}
 		{
@@ -2453,7 +2452,7 @@
 				item: { count: 1, id: "apotheosis:sigil_of_socketing" }
 				type: "item"
 			}]
-			x: 27.5d
+			x: 27.0d
 			y: 0.5d
 		}
 		{
@@ -2465,7 +2464,7 @@
 				item: { count: 1, id: "apotheosis:sigil_of_withdrawal" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 27.5d
 			y: 0.0d
 		}
 		{
@@ -2477,7 +2476,7 @@
 				item: { count: 1, id: "apotheosis:sigil_of_unnaming" }
 				type: "item"
 			}]
-			x: 27.5d
+			x: 27.0d
 			y: -0.5d
 		}
 		{
@@ -2488,7 +2487,7 @@
 				item: { count: 1, id: "apotheosis:gem_cutting_table" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 26.0d
 			y: -1.5d
 		}
 		{
@@ -2499,7 +2498,7 @@
 				item: { count: 1, id: "apotheosis:salvaging_table" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 26.0d
 			y: 1.5d
 		}
 		{
@@ -2526,8 +2525,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_malice" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -1.5d
+			x: 25.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]
@@ -2538,20 +2537,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_supremacy" }
 				type: "item"
 			}]
-			x: 24.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["703F575B0690DE26"]
-			id: "0E00A150DB450FAC"
-			shape: "pentagon"
-			tasks: [{
-				id: "370860A6B9B367CD"
-				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
-				type: "item"
-			}]
 			x: 25.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -2673,7 +2660,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["51E3EA7E70ECE842"]
+			dependencies: ["3F3D5022224AC90A"]
 			id: "351FE7156FB415A0"
 			shape: "heart"
 			tasks: [{
@@ -2681,11 +2668,11 @@
 				item: { count: 1, id: "animal_pen:bird_catcher" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: 3.5d
+			x: 21.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["51E3EA7E70ECE842"]
+			dependencies: ["3F3D5022224AC90A"]
 			id: "25790982D97FF33B"
 			shape: "heart"
 			tasks: [{
@@ -2693,11 +2680,11 @@
 				item: { count: 1, id: "animal_pen:animal_cage" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 3.5d
+			x: 21.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["51E3EA7E70ECE842"]
+			dependencies: ["3F3D5022224AC90A"]
 			id: "38077A8FBBA9C3A1"
 			shape: "heart"
 			tasks: [{
@@ -2705,8 +2692,8 @@
 				item: { count: 1, id: "animal_pen:water_animal_container" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: 3.5d
+			x: 21.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2720,8 +2707,8 @@
 				item: { count: 1, id: "animal_pen:aquarium_block" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: 4.5d
+			x: 22.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2735,8 +2722,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:animal_pens)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 4.5d
+			x: 22.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2750,13 +2737,13 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:aviaries)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: 4.5d
+			x: 22.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"6E680C846961BFE3"
 				"70A0A078B94FF034"
+				"7E2F472A2EA1FA26"
 			]
 			icon: {
 				id: "crafting_on_a_stick:crafting_table"
@@ -2777,8 +2764,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(curios:crafting_on_a_stick)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -11.5d
+			x: 21.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -2806,24 +2793,26 @@
 				}
 				type: "item"
 			}]
+			shape: "heart"
 			tasks: [{
 				id: "0C21815550FB4FD9"
 				item: { count: 1, id: "starcatcher:starcatcher_rod" }
 				type: "item"
 			}]
 			x: 15.5d
-			y: 7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
 			id: "2CB775EC10EADEF7"
+			shape: "heart"
 			tasks: [{
 				id: "38DF68FAD82285EB"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:tackle_boxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 8.0d
+			x: 15.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2CB775EC10EADEF7"]
@@ -2833,8 +2822,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:baits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 9.0d
+			x: 16.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2CB775EC10EADEF7"]
@@ -2844,7 +2833,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:hooks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 14.5d
 			y: 7.0d
 		}
 		{
@@ -2855,7 +2844,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:bobbers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 14.5d
 			y: 8.0d
 		}
 		{
@@ -2874,8 +2863,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 6.5d
+			x: 15.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2886,8 +2875,8 @@
 				item: { count: 1, id: "starcatcher:tournament_stand" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 7.0d
+			x: 14.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2898,8 +2887,8 @@
 				item: { count: 1, id: "selling_bin:selling_bin" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 7.0d
+			x: 13.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2911,10 +2900,10 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "2731F29706C97F6A"
 			shape: "diamond"
 			tasks: [{
@@ -2926,7 +2915,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "6A19ADA32124361B"
 			shape: "diamond"
 			tasks: [{
@@ -2938,7 +2927,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "7A9878808459CB7D"
 			shape: "diamond"
 			tasks: [{
@@ -2950,7 +2939,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "498128F36F2C0C7E"
 			shape: "diamond"
 			tasks: [{
@@ -2962,7 +2951,7 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "62FA738ED9053B03"
 			shape: "diamond"
 			tasks: [{
@@ -2974,7 +2963,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "5349A7C271BD7BD1"
 			shape: "diamond"
 			tasks: [{
@@ -2986,7 +2975,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "755DA38B77A21498"
 			shape: "diamond"
 			tasks: [{
@@ -2998,7 +2987,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "62A007516EE3E946"
 			shape: "diamond"
 			tasks: [{
@@ -3010,7 +2999,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "4C3CA7CD97DF14B4"
 			shape: "diamond"
 			tasks: [{
@@ -3022,7 +3011,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "56AD960B912DD00A"
 			shape: "diamond"
 			tasks: [{
@@ -3034,7 +3023,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["6F3B8F14CD52165D"]
+			dependencies: ["0C7D28894362A59D"]
 			id: "722F8A38993DE4CF"
 			shape: "diamond"
 			tasks: [{
@@ -3127,8 +3116,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:hats)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: 16.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -3139,8 +3128,31 @@
 				item: { count: 1, id: "tide:fish_satchel" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 6.0d
+			x: 17.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1714360882474479"]
+			id: "65B37370BC936739"
+			shape: "hexagon"
+			tasks: [{
+				id: "68C3B3042756AECC"
+				item: { count: 1, id: "modern_industrialization:iron_hammer" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2CB775EC10EADEF7"]
+			id: "1C9D16C2C7C47CDA"
+			tasks: [{
+				id: "6BD37E6531E3BAF0"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(starcatcher:tackle_skins)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 7.0d
 		}
 	]
 }

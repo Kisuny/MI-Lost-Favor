@@ -340,6 +340,48 @@ ServerEvents.recipes(event => {
         })
     })
 
+    yTechShaped(event, {
+        pattern: [
+            " I ",
+            " # ",
+            " I "
+        ],
+        key: {
+            I: { item: "minecraft:iron_ingot" },
+            "#": { tag: "c:hammers" },
+        },
+        outputItems: [[{ id: `modern_industrialization:iron_double_ingot` }, 1]],
+        compatOff: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "DDD",
+            "DDD",
+            " S "
+        ],
+        key: {
+            D: { item: "modern_industrialization:iron_double_ingot" },
+            S: { item: "minecraft:stick" },
+        },
+        outputItems: [[{ id: `modern_industrialization:iron_hammer` }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "DDD",
+            "DDD",
+            " S "
+        ],
+        key: {
+            D: { item: "modern_industrialization:steel_double_ingot" },
+            S: { item: "minecraft:stick" },
+        },
+        outputItems: [[{ id: `modern_industrialization:steel_hammer` }, 1]],
+        removeRecipe: true
+    })
+
 
 
     event.replaceOutput(

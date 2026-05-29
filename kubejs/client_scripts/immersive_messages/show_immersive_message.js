@@ -135,7 +135,7 @@ function sendImmersiveMessage(text, player, args){
     let duration = ((argsJS.duration || 2.2)) * 20 | 0
     
     argsJS.applyWarn && (textComponent = Component.of("⚠ ").append(textComponent))
-    console.log(duration);
+    //console.log(duration);
     
     let message = new $ImmersiveMessage["(net.minecraft.network.chat.Component,float)"](textComponent, duration)
     
@@ -193,7 +193,7 @@ function applyArgsToImmersiveMessage(message, args){
     }
     if (args.typewriter) {
         let paramsMap = new $HashMap({ 
-            "cursor": args.typewriter.speed || false,
+            "cursor": args.typewriter.cursor || false,
             "speed": args.typewriter.speed || 1000,
             "sound": args.typewriter.sound || null
         })

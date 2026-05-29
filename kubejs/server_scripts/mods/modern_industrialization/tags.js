@@ -2,9 +2,9 @@
 ServerEvents.tags('item', event => {
     event.removeAllTagsFrom([
         'modern_industrialization:netherite_hammer', 
-        'modern_industrialization:steel_hammer', 
+        //'modern_industrialization:steel_hammer', 
         'modern_industrialization:diamond_hammer', 
-        'modern_industrialization:iron_hammer',
+        //'modern_industrialization:iron_hammer',
         "extended_industrialization:netherite_dust"
     ])
 
@@ -25,6 +25,11 @@ ServerEvents.tags('item', event => {
         'modern_industrialization:coke', 
         'modern_industrialization:coke_block', 
         'modern_industrialization:coke_dust', 
+    ])
+
+    event.add('c:hammers', [
+        'modern_industrialization:iron_hammer',
+        'modern_industrialization:steel_hammer'
     ])
 
     event.add('c:storage_blocks/coal_coke', 'modern_industrialization:coke_block')

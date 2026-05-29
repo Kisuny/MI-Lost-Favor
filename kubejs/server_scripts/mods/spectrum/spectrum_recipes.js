@@ -77,22 +77,6 @@ ServerEvents.recipes(event => {
         result: "milf:moonstone_table_core"
     })
 
-    const pedestalBasicCraft = (output, gem) => {
-        event.shaped(output, [
-            'eee',
-            'wrw',
-            'wqw'
-        ], {
-            q: '#minecraft:planks',
-            w: 'minecraft:tuff',
-            e: gem,
-            r: "milf:table_core",
-        })
-    }
-    pedestalBasicCraft('spectrum:pedestal_basic_topaz', 'spectrum:topaz_shard')
-    pedestalBasicCraft('spectrum:pedestal_basic_amethyst', 'minecraft:amethyst_shard')
-    pedestalBasicCraft('spectrum:pedestal_basic_citrine', 'spectrum:citrine_shard')
-
 
     customPedestalCraft(event, {
         time: 200,
@@ -139,6 +123,52 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:lategame/collect_moonstone",
         yield_upgrades: true
     })
+
+
+
+    let dyesOfTheOccult = "Dyes of the Occult"
+    milfShaped(event, {
+        pattern: [
+            "wer",
+            "tqt",
+            "wer"
+        ],
+        key: {
+            q: { item: "milf:blank_blueprint" },
+            w: { item: "spectrum:citrine_shard" },
+            e: { item: "minecraft:amethyst_shard" },
+            r: { item: "spectrum:topaz_shard" },
+            t: { item: "enchanted:whiff_of_magic" },
+
+        },
+        outputItems: [[{ "components": { "immersiveengineering:blueprint": `${dyesOfTheOccult}` }, "id": "immersiveengineering:blueprint" }, 1]]
+    })
+
+    function blueprint_recipe(inputs, output, blueprint) {
+        ieBlueprintCraft(event, {
+            inputItems: inputs,
+            outputItems: [[output]],
+            category: blueprint
+        })
+    }
+
+    const pedestalBasicCraft = (output, gem) => {
+        blueprint_recipe(
+            [
+                [{ "tag": "immersiveengineering:treated_wood" }, 8],
+                [{ "item": "minecraft:polished_diorite" }, 4],
+                [{ "item": "milf:table_core" }, 1],
+                [{ "item": "eidolon_repraised:shadow_gem" }, 1],
+                [{ "item": gem }, 12]
+            ],
+            { "item": output }, dyesOfTheOccult
+        );
+    }
+    pedestalBasicCraft('spectrum:pedestal_basic_topaz', 'spectrum:topaz_shard')
+    pedestalBasicCraft('spectrum:pedestal_basic_amethyst', 'minecraft:amethyst_shard')
+    pedestalBasicCraft('spectrum:pedestal_basic_citrine', 'spectrum:citrine_shard')
+
+
 
 })
 

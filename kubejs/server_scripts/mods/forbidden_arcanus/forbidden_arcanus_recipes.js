@@ -61,4 +61,27 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:craft_cmy_pedestal"
     })
 
+    const addAdditionItemInShapelessPairs = [
+        ["forbidden_arcanus:corrupti_dust", "spectrum:onyx_powder"],
+    ]
+
+
+    addAdditionItemInShapelessPairs.forEach(([output, newItem]) => {
+        event.forEachRecipe({ output: output }, recipe => {
+
+            const rJSON = JSON.parse(recipe.json)
+            const ingredients = rJSON.ingredients
+            const result = rJSON.result
+
+            ingredients.push({ item: newItem })
+            const inputItems = ingredients.map(ingredient => [ingredient])
+
+            milfShapeless(event, {
+                inputItems: inputItems,
+                outputItems: [[{ id: result.id }]],
+                removeRecipe: true
+            })
+        })
+    })
+
 });

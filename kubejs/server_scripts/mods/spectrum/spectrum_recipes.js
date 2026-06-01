@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
             }
         ],
         main: {
-            "item": "immersiveengineering:component_steel"
+            "item": "modern_industrialization:electronic_circuit"
         },
         result: "milf:onyx_table_core"
     })
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
             }
         ],
         main: {
-            "item": "modern_industrialization:electronic_circuit"
+            "item": "modern_industrialization:processing_unit"
         },
         result: "milf:moonstone_table_core"
     })

@@ -13,6 +13,7 @@ const rottencreatures_mobs = [
     {id:"undead_miner", mob: "rottencreatures:undead_miner"},
     {id:"zap", mob: "rottencreatures:zap"},
     {id:"zombie_lackey", mob: "rottencreatures:zombie_lackey"},
+    {id:"hunter_wolf", mob: "rottencreatures:hunter_wolf"},
 ]
 
 mobRestriction("rottencreatures", rottencreatures_mobs)

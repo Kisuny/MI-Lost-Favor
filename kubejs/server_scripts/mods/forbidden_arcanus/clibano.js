@@ -85,8 +85,6 @@ function addResidueType(id, options) {
     // JsonIO.write(`kubejs/data/forbidden_arcanus/forbidden_arcanus/residue_type/${id}.json`, json)
 }
 
-addResidueType("iesnium", { result: "occultism:iesnium_block" })
-
 function clibanoCombustionOreCraft(event, oreName, outputItem, exp, chance) {
     addClibanoCombustion(event, `${oreName}_ingot_from_clibano_combustion`, {
         ingredient: { tag: `c:ores/${oreName}` },
@@ -108,7 +106,8 @@ function clibanoCombustionOreCraft(event, oreName, outputItem, exp, chance) {
 }
 
 ServerEvents.recipes(event => {
-
+    
+    addResidueType("iesnium", { result: "occultism:iesnium_block" })
     // Custom alloy exmaple
     addClibanoCombustion(event, "obsidiansteel_ingot_from_clibano_combustion", {
         first: { tag: "c:ingots/stainless_steel" },

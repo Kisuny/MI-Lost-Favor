@@ -1,0 +1,48 @@
+ServerEvents.tags('item', event => {
+    const materials = [
+        'andesite',
+        'black_concrete',
+        'blue_concrete',
+        'bricks',
+        'brown_concrete',
+        'coal_block',
+        'cobblestone',
+        'cyan_concrete',
+        'deepslate',
+        'diorite',
+        'dirt',
+        'emerald_block',
+        'end_stone',
+        'glass',
+        'glowstone',
+        'gold_block',
+        'granite',
+        'gray_concrete',
+        'green_concrete',
+        'ice',
+        'iron_block',
+        'lapis_block',
+        'light_blue_concrete',
+        'light_gray_concrete',
+        'lime_concrete',
+        'magenta_concrete',
+        'nether_brick',
+        'orange_concrete',
+        'pink_concrete',
+        'prismarine',
+        'purple_concrete',
+        'purpur',
+        'quartz',
+        'red_concrete',
+        'red_sandstone',
+        'redstone_block',
+        'sandstone',
+        'stone',
+        'white_concrete',
+        'yellow_concrete',
+    ]
+
+    materials.forEach(material => {
+        event.add(`chisel:${material}`, [new RegExp(`^chisel:[a-z_]+\\/${material}$`)])
+    })
+})

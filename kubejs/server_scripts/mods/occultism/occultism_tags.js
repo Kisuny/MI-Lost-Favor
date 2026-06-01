@@ -19,7 +19,8 @@ ServerEvents.tags('item', event => {
     removeItemTags.forEach(item => {
         event.removeAllTagsFrom(item)
     });
-    
+
+    event.add('occultism:ritual_dummies', [/^occultism:ritual_dummy\/[a-z0-9_]+$/])
 })
 
 ServerEvents.tags('block', event => {

@@ -4918,6 +4918,7 @@
 				"510E291736A91585"
 			]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "13F4D641AE5EF6E8"
 			shape: "diamond"
 			tasks: [{
@@ -5374,6 +5375,310 @@
 			}]
 			x: 28.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["4215E53DE9E8FA11"]
+			id: "13B7B5B21D7F7813"
+			shape: "gear"
+			tasks: [{
+				id: "045158CA516F1F04"
+				item: { count: 1, id: "neovitae:ara_vitae" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: -28.0d
+		}
+		{
+			dependencies: ["4215E53DE9E8FA11"]
+			id: "13EFDE0281B63BD5"
+			shape: "gear"
+			tasks: [{
+				id: "34E96ED730B5C485"
+				item: { count: 1, id: "neovitae:sacrificial_dagger" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: -26.0d
+		}
+		{
+			dependencies: [
+				"13B7B5B21D7F7813"
+				"13EFDE0281B63BD5"
+			]
+			id: "08B4E2BC94AFF589"
+			rewards: [{
+				id: "2A4341D103E2D806"
+				item: {
+					components: {
+						"modonomicon:book_id": "neovitae:guide"
+						"modonomicon:book_open": 0b
+					}
+					count: 1
+					id: "neovitae:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00FB190F90421F1C"
+				item: { count: 1, id: "neovitae:blood_orb_weak" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: -27.0d
+		}
+		{
+			dependencies: ["08B4E2BC94AFF589"]
+			id: "02135BFAEC730ED1"
+			tasks: [{
+				id: "50D02BD3E64258F3"
+				item: { count: 1, id: "neovitae:tabula_rasa" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -27.0d
+		}
+		{
+			dependencies: ["02135BFAEC730ED1"]
+			id: "35D3313D6C5D7C46"
+			tasks: [{
+				count: 8L
+				id: "4209A1180E3DC7D9"
+				item: { count: 1, id: "neovitae:rune_blank" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -32.0d
+		}
+		{
+			dependencies: ["02135BFAEC730ED1"]
+			id: "6EDA77BDB4847897"
+			shape: "gear"
+			tasks: [{
+				id: "286A6029E382AFAE"
+				item: { count: 1, id: "neovitae:tabula_vitae" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["02135BFAEC730ED1"]
+			id: "199895F75B4E8E9F"
+			shape: "gear"
+			tasks: [{
+				id: "7F190FDD8E76A782"
+				item: { count: 1, id: "neovitae:hellfire_forge" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["35D3313D6C5D7C46"]
+			id: "24E958166312A7FC"
+			tasks: [{
+				id: "42F695E23CF71ED3"
+				item: { count: 1, id: "neovitae:rune_sacrifice" }
+				type: "item"
+			}]
+			x: 27.5d
+			y: -35.5d
+		}
+		{
+			dependencies: ["35D3313D6C5D7C46"]
+			id: "0307C3B8186C5B00"
+			tasks: [{
+				id: "2CD80221AEAE6F1E"
+				item: { count: 1, id: "neovitae:rune_sacrifice_self" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: -35.5d
+		}
+		{
+			dependencies: ["35D3313D6C5D7C46"]
+			id: "2F3301506B13A109"
+			tasks: [{
+				id: "0116B39316500D48"
+				item: { count: 1, id: "neovitae:rune_capacity" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: -35.5d
+		}
+		{
+			dependencies: ["35D3313D6C5D7C46"]
+			id: "741C96DD24D9FCC8"
+			tasks: [{
+				id: "20CBC8579DBE34DD"
+				item: { count: 1, id: "neovitae:rune_dislocation" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: -35.5d
+		}
+		{
+			dependencies: ["35D3313D6C5D7C46"]
+			id: "28591D559EF26D12"
+			tasks: [{
+				id: "31CD7362573B8F09"
+				item: { count: 1, id: "neovitae:rune_speed" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -35.5d
+		}
+		{
+			dependencies: ["35D3313D6C5D7C46"]
+			id: "5C35FAB4A9DE13A3"
+			tasks: [{
+				id: "6EC4815841F6C786"
+				item: { count: 1, id: "neovitae:rune_orb" }
+				type: "item"
+			}]
+			x: 24.5d
+			y: -35.5d
+		}
+		{
+			dependencies: ["6EDA77BDB4847897"]
+			id: "4C173B618ACB8103"
+			shape: "gear"
+			tasks: [{
+				count: 16L
+				id: "7ECA97282CC18E0D"
+				item: { count: 1, id: "neovitae:throwing_dagger" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["4C173B618ACB8103"]
+			id: "53CDEAD317F1A678"
+			tasks: [{
+				id: "26F849F8A71230E4"
+				item: { count: 1, id: "neovitae:base_spiritus_soul_raw" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["6EDA77BDB4847897"]
+			id: "3294A5A907B740A5"
+			shape: "gear"
+			tasks: [{
+				id: "32BDF93E6A6DEB65"
+				item: { count: 1, id: "neovitae:arcane_scribe_tool" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: -29.0d
+		}
+		{
+			dependencies: ["3294A5A907B740A5"]
+			id: "3B8BA7564159CB38"
+			tasks: [{
+				id: "06BACB270E80EC2B"
+				item: { count: 1, id: "neovitae:sigil_divination" }
+				type: "item"
+			}]
+			x: 34.0d
+			y: -29.0d
+		}
+		{
+			dependencies: ["53CDEAD317F1A678"]
+			id: "715211783DA15D35"
+			tasks: [{
+				id: "42DFC094E1F24C92"
+				item: { count: 1, id: "neovitae:spiritus_gem_petty" }
+				type: "item"
+			}]
+			x: 36.5d
+			y: -27.5d
+		}
+		{
+			dependencies: ["715211783DA15D35"]
+			id: "01A01E2FABBCD0E6"
+			shape: "gear"
+			tasks: [{
+				id: "0C12A21EE06CB8EE"
+				item: { components: { "minecraft:attribute_modifiers": { modifiers: [ { amount: 5.0d, id: "neovitae:sentient_sword_damage", operation: "add_value", slot: "mainhand", type: "minecraft:generic.attack_damage" }, { amount: -2.4d, id: "neovitae:sentient_sword_speed", operation: "add_value", slot: "mainhand", type: "minecraft:generic.attack_speed" } ] }, "neovitae:sentient_sword_damage": 5.0d, "neovitae:sentient_sword_drain": 0.0d, "neovitae:sentient_sword_drop": 0.0d, "neovitae:sentient_sword_static_drop": 1.0d }, count: 1, id: "neovitae:sentient_sword" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: -27.5d
+		}
+		{
+			dependencies: [
+				"35D3313D6C5D7C46"
+				"3B8BA7564159CB38"
+			]
+			id: "2D4535557DE7EE68"
+			tasks: [
+				{
+					count: 28L
+					id: "14FD24A715111B88"
+					item: { count: 1, id: "neovitae:rune_blank" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0A2E3EA34F7A0E62"
+					item: { count: 1, id: "neovitae:blood_stained_glass" }
+					type: "item"
+				}
+			]
+			x: 34.0d
+			y: -32.0d
+		}
+		{
+			dependencies: [
+				"51F468219CD1AC52"
+				"3EA8B5DE633E228F"
+				"13F4D641AE5EF6E8"
+			]
+			id: "6DE071C3E3D8B3FF"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "309A60125EEAB5B2"
+				item: { count: 1, id: "milf:crimson_veil_elixir" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -27.0d
+		}
+		{
+			dependencies: ["6DE071C3E3D8B3FF"]
+			icon: {
+				id: "risus:beating_heart"
+			}
+			id: "7F4DD202F7059EF5"
+			shape: "gear"
+			tasks: [{
+				dimension: "milf:crimson_veil"
+				id: "1B497ADBD57ED0E6"
+				type: "dimension"
+			}]
+			x: 19.5d
+			y: -27.0d
+		}
+		{
+			dependencies: ["7F4DD202F7059EF5"]
+			id: "4215E53DE9E8FA11"
+			tasks: [{
+				icon: {
+					id: "risus:alteration_catalyst"
+				}
+				id: "20B696AAD20468FB"
+				observe_type: 0
+				timer: 0L
+				to_observe: "risus:alteration_catalyst"
+				type: "observation"
+			}]
+			x: 21.0d
+			y: -27.0d
 		}
 	]
 }

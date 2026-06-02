@@ -1,0 +1,42 @@
+{
+  "type": "milf:crimson_veil_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "milf:crimson_veil",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "milf:blood_wastes",
+          "parameters": {
+            "temperature": [
+              -0.5,
+              1
+            ],
+            "humidity": [
+              -1,
+              0.0
+            ],
+            "continentalness": [
+              -1,
+              0.5
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -2,
+              -0.8
+            ],
+            "offset": 0.1334
+          }
+        }
+      ]
+    }
+  }
+}

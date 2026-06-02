@@ -18,6 +18,17 @@ createNewItem("vial_of_liquid_confidence", {
     food: { nutrition: 1, saturation: 0, alwaysEdible: true, eaten: "getConfidence" },
     lang: { "en_us": "Vial of liquid confidence", "ru_ru": "Флакон жидкой уверенности" }
 })
+global.drinkCrimsonVeilElixir = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
+    if (ctx.player.level.clientSide) return
+    let player = ctx.entity;
+    player.getPersistentData().putBoolean("crimson_veil_potion_drinked", true)
+}
+createNewItem("crimson_veil_elixir", {
+    useAnimation: "drink",
+    rarity: 'epic',
+    food: { nutrition: 1, saturation: 0, alwaysEdible: true, eaten: "drinkCrimsonVeilElixir" },
+    lang: { "en_us": "Crimson Veil Elixir", "ru_ru": "Эликсир Багряной Завесы" }
+})
 
 createNewItem('amber_visage', { stackSize: 16, rarity: 'epic', lang: { "en_us": "Amber visage", "ru_ru": "Янтарный облик" } })
 createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_ru": "Ядро Стола" } })

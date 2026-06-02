@@ -2415,7 +2415,7 @@
 		{
 			dependencies: ["026821F02D50FE0D"]
 			id: "476DA0252473C6EE"
-			shape: "heart"
+			shape: "gear"
 			tasks: [{
 				id: "30EF11C70C08380B"
 				type: "checkmark"
@@ -3306,7 +3306,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: -39.0d
@@ -3398,7 +3398,7 @@
 		{
 			dependencies: ["4B801253049DAC2F"]
 			id: "0309870114418120"
-			shape: "heart"
+			shape: "gear"
 			tasks: [{
 				id: "7E6E68718164E7B5"
 				item: { count: 1, id: "spectrum:redstone_transceiver" }

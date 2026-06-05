@@ -1,4 +1,3 @@
-// TODO: refactor in future
 let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
 
 // reward for Forge Hammer
@@ -10,116 +9,45 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
     sendImmersiveMessageWithSubtext(Text.translate('milf.stage.congratulations'), Text.translate('milf.stage.bronze_age'), event.player, DEFAULT_NEW_AGE_NOTIFICATION_STYLE, DEFAULT_NEW_AGE_SUBTEXT_STYLE, event.server)
 });
 
-// reward for Bronze Plate (First steps)
-FTBQuestsEvents.customReward('7EF0A7794783232F', event => {
-    const stage = "tier_1_access_ore"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
-});
-// pigment pedestal malum ore access
-FTBQuestsEvents.customReward('0FCAF2E23A025C18', event => {
-    const stage = "malum_access_ore"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
-});
+// Milestone rewards - add stages + show notification
+const milestone_rewards = [
+    { quest_id: "7EF0A7794783232F", stages: "tier_1_access_ore" }, // Bronze Plate (First steps)
+    { quest_id: "0FCAF2E23A025C18", stages: "malum_access_ore" }, // pigment pedestal malum ore access
+    { quest_id: "4178A18CA2E5A74F", stages: "monsterplus_mobs" }, // toxony:alchemical_forge_part (root whispering)
+    { quest_id: "19304AD673874503", stages: "eidolon_mobs" }, // Ars Ecclesia (root whispering)
+    { quest_id: "20165DF8F49E8177", stages: ["mowziesmobs_mobs", "mythsandlegends_mobs"] }, // haven gate
+    { quest_id: "224D85127D80FED8", stages: ["cataclysm_mobs", "netherskeletons_mobs", "rottencreatures_mobs", "enderzoology_mobs"] }, // vanilla bosses
+    { quest_id: "16B46238FC936637", stages: ["grimoireofgaia_mobs", "born_in_chaos_v1_mobs"] }, // bomd and fdbosses bosses
+    { quest_id: "74E5C7C4B8A33E55", stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs"] }, // Iron Bloom
+    { quest_id: "670CBE4973B6F390", stages: ["early_items", "blast_furnace", "mythsandlegends_mobs", "royalvariations_mobs"] }, // Steel Ingot
+]
 
-// reward for toxony:alchemical_forge_part (root whispering chapter)
-FTBQuestsEvents.customReward('4178A18CA2E5A74F', event => {
-    const stage = "monsterplus_mobs"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
-});
-// reward for Ars Ecclesia (root whispering chapter)
-FTBQuestsEvents.customReward('19304AD673874503', event => {
-    const stage = "eidolon_mobs"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
-});
+milestone_rewards.forEach(({ quest_id, stages }) => {
+    FTBQuestsEvents.customReward(quest_id, event => {
+        addStagesToTeamMembers(event, stages)
+        defaultMilestoneNotification(event, Array.isArray(stages) ? stages[0] : stages)
+    })
+})
 
-// reward for haven gate 
-FTBQuestsEvents.customReward('20165DF8F49E8177', event => {
-    const stages = ["mowziesmobs_mobs", "mythsandlegends_mobs"]
-    addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages[0])
-});
-
-// reward for killing vanilla bosses (journeys chapter)
-FTBQuestsEvents.customReward('224D85127D80FED8', event => {
-    const stages = ["cataclysm_mobs", "netherskeletons_mobs", "rottencreatures_mobs", "enderzoology_mobs"]
-    addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages[0])
-});
-
-// reward for killing bomd and fdbosses bosses (journeys chapter)
-FTBQuestsEvents.customReward('16B46238FC936637', event => {
-    const stages = ["grimoireofgaia_mobs", "born_in_chaos_v1_mobs"]
-    addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages[0])
-});
-
-
-// reward for Iron Bloom
-FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
-    const stages = ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs"]
-    addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages[0])
-});
-
-// reward for Steel Ingot
-FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
-    const stages = ["early_items", "blast_furnace", "mythsandlegends_mobs", "royalvariations_mobs"]
-    addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages[0])
-});
-
-// reward for Iron Ingot
-FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
-    const stages = ["post_iron", "goblin_traders_mobs"]
-    addStagesToTeamMembers(event, stages)
-});
-
-// reward for Enter in Eternal Starlight
-FTBQuestsEvents.customReward('3922C9ACA47723BA', event => {
-    const stage = "forbidden_arcanus_mobs"
-    addStagesToTeamMembers(event, stage)
-});
-
-// reward for flint and steel
-FTBQuestsEvents.customReward('7650FE6CA0220DA3', event => {
-    const stage = "the_nether_access"
-    addStagesToTeamMembers(event, stage)
-});
-
-// reward for void portal craft
-FTBQuestsEvents.customReward('0A8447D787E641E3', event => {
-    const stage = "void_access"
-    addStagesToTeamMembers(event, stage)
-});
-
-// reward for deeper down portal opening
-FTBQuestsEvents.customReward('015382CFC13FFB7A', event => {
-    const stage = "deeper_down_access"
-    addStagesToTeamMembers(event, stage)
-});
-
-// reward for 12 eyes
-FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
-    const stage = "the_end_access"
-    addStagesToTeamMembers(event, stage)
-});
-
-// Simple stage reward
+// Simple stage rewards - add stages only, no notification
 const simple_stage_rewards = [
+    { quest_id: "4002784F5F537B2D", stage: ["post_iron", "goblin_traders_mobs"] }, // Iron Ingot
+    { quest_id: "3922C9ACA47723BA", stage: "forbidden_arcanus_mobs" }, // Enter in Eternal Starlight
+    { quest_id: "7650FE6CA0220DA3", stage: "the_nether_access" }, // flint and steel
+    { quest_id: "0A8447D787E641E3", stage: "void_access" }, // void portal craft
+    { quest_id: "015382CFC13FFB7A", stage: "deeper_down_access" }, // deeper down portal opening
+    { quest_id: "2BD4B3CA5BEDBA19", stage: "the_end_access" }, // 12 end eyes
+    { quest_id: "5EBDE634D224C573", stage: "crimson_veil_accses" }, // crimson veil elixir
     { quest_id: "4BA1212AF4BD3432", stage: "apotheosis_augmenting_table" },
     { quest_id: "2F509B489C343BD7", stage: "apotheosis_reforging_table" },
     { quest_id: "6E3C09D7543B99D1", stage: "apotheosis_simple_reforging_table" },
     { quest_id: "4D0EBC927D8AD01D", stage: "xaeromap" },
 ]
 
-simple_stage_rewards.forEach(element => {
-    FTBQuestsEvents.customReward(element.quest_id, event => {
-        addStagesToTeamMembers(event, element.stage)
-    });
+simple_stage_rewards.forEach(({ quest_id, stage }) => {
+    FTBQuestsEvents.customReward(quest_id, event => {
+        addStagesToTeamMembers(event, stage)
+    })
 })
 
 function defaultMilestoneNotification(event, stage) {

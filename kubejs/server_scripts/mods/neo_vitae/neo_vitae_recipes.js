@@ -4,11 +4,6 @@ ServerEvents.recipes(event => {
         result: 'neovitae:ara_vitae',
         removeRecipe: true
     });
-    alterationRecipe(event, {
-        input: 'paganbless:athame',
-        result: 'neovitae:sacrificial_dagger',
-        removeRecipe: true
-    });
 
     customWorktable(event, {
         pattern: [

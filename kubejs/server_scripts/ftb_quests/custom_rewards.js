@@ -22,7 +22,9 @@ const milestone_rewards = [
     { quest_id: "670CBE4973B6F390", stages: ["early_items", "blast_furnace", "mythsandlegends_mobs", "royalvariations_mobs"] }, // Steel Ingot
 ]
 
-milestone_rewards.forEach(({ quest_id, stages }) => {
+milestone_rewards.forEach(entry => {
+    const quest_id = entry.quest_id
+    const stages = entry.stages
     FTBQuestsEvents.customReward(quest_id, event => {
         addStagesToTeamMembers(event, stages)
         defaultMilestoneNotification(event, Array.isArray(stages) ? stages[0] : stages)
@@ -44,7 +46,9 @@ const simple_stage_rewards = [
     { quest_id: "4D0EBC927D8AD01D", stage: "xaeromap" },
 ]
 
-simple_stage_rewards.forEach(({ quest_id, stage }) => {
+simple_stage_rewards.forEach(entry => {
+    const quest_id = entry.quest_id
+    const stage = entry.stage
     FTBQuestsEvents.customReward(quest_id, event => {
         addStagesToTeamMembers(event, stage)
     })

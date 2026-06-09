@@ -87,6 +87,7 @@
 					id: "toxony:poison_farmland"
 				}
 				id: "14515087E96E628D"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "toxony:poison_farmland"
@@ -1642,6 +1643,7 @@
 					id: "ftbquests:custom_icon"
 				}
 				id: "7C44C15911DCE62E"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "hexerei:crow"
@@ -4863,6 +4865,7 @@
 						id: "minecraft:lily_pad"
 					}
 					id: "496EE27F29D1673C"
+					observation_type: "block"
 					observe_type: 0
 					optional_task: true
 					timer: 0L
@@ -4891,6 +4894,7 @@
 						id: "minecraft:crimson_fungus"
 					}
 					id: "3F4EACBA8351C895"
+					observation_type: "block"
 					observe_type: 0
 					optional_task: true
 					timer: 0L
@@ -4902,6 +4906,7 @@
 						id: "minecraft:warped_fungus"
 					}
 					id: "4E1DEE0896EF9798"
+					observation_type: "block"
 					observe_type: 0
 					optional_task: true
 					timer: 0L
@@ -5232,6 +5237,7 @@
 						id: "minecraft:large_fern"
 					}
 					id: "6CBDB1EBE5711BF8"
+					observation_type: "block"
 					observe_type: 0
 					optional_task: true
 					timer: 0L
@@ -5243,6 +5249,7 @@
 						id: "minecraft:fern"
 					}
 					id: "374A3F184B0933EB"
+					observation_type: "block"
 					observe_type: 0
 					optional_task: true
 					timer: 0L
@@ -5316,6 +5323,7 @@
 						id: "minecraft:jungle_leaves"
 					}
 					id: "0E1B8D0617CB93B8"
+					observation_type: "block"
 					observe_type: 0
 					optional_task: true
 					timer: 0L
@@ -5386,25 +5394,10 @@
 				type: "item"
 			}]
 			x: 23.0d
-			y: -28.0d
+			y: -27.0d
 		}
 		{
-			dependencies: ["4215E53DE9E8FA11"]
-			id: "13EFDE0281B63BD5"
-			shape: "gear"
-			tasks: [{
-				id: "34E96ED730B5C485"
-				item: { count: 1, id: "neovitae:sacrificial_dagger" }
-				type: "item"
-			}]
-			x: 23.0d
-			y: -26.0d
-		}
-		{
-			dependencies: [
-				"13B7B5B21D7F7813"
-				"13EFDE0281B63BD5"
-			]
+			dependencies: ["13B7B5B21D7F7813"]
 			id: "08B4E2BC94AFF589"
 			rewards: [{
 				id: "2A4341D103E2D806"
@@ -5639,6 +5632,18 @@
 				"13F4D641AE5EF6E8"
 			]
 			id: "6DE071C3E3D8B3FF"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "endermanoverhaul:item/crimson_pearl"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5EBDE634D224C573"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
@@ -5672,6 +5677,7 @@
 					id: "risus:alteration_catalyst"
 				}
 				id: "20B696AAD20468FB"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "risus:alteration_catalyst"
@@ -5679,6 +5685,76 @@
 			}]
 			x: 21.0d
 			y: -27.0d
+		}
+		{
+			id: "0E9FA290A23FF8CC"
+			tasks: [
+				{
+					id: "3CCEF8AD1E38200F"
+					item: { count: 1, id: "risus:heart_transplant" }
+					type: "item"
+				}
+				{
+					id: "7B6D5790215E7612"
+					item: { count: 1, id: "minecraft:villager_spawn_egg" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: -29.5d
+		}
+		{
+			id: "48FA96EF23D033A4"
+			tasks: [{
+				id: "64261942420B810E"
+				item: { count: 1, id: "risus:beating_heart" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["48FA96EF23D033A4"]
+			id: "7DFB8B70491442BF"
+			tasks: [{
+				id: "5B8C8607370FB24C"
+				item: { count: 1, id: "minecraft:enchanted_golden_apple" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -31.0d
+		}
+		{
+			dependencies: ["48FA96EF23D033A4"]
+			id: "6DE3B6BA332E82EC"
+			tasks: [{
+				id: "57BCFAE8291BD4E2"
+				item: { count: 1, id: "minecraft:ghast_tear" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -31.0d
+		}
+		{
+			dependencies: ["48FA96EF23D033A4"]
+			id: "2B292CBAAF2F193A"
+			tasks: [{
+				id: "5A145404B966B56D"
+				item: { count: 1, id: "minecraft:wither_skeleton_skull" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -31.0d
+		}
+		{
+			id: "747400D923ECFC6B"
+			tasks: [{
+				id: "1393D5262AE99C74"
+				item: { count: 1, id: "risus:tesseract" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -29.5d
 		}
 	]
 }

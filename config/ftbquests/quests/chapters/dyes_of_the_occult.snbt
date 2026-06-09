@@ -69,6 +69,7 @@
 					id: "occultism:spirit_fire"
 				}
 				id: "79F3048FDA60C89F"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "occultism:spirit_fire"
@@ -429,6 +430,7 @@
 						id: "occultism:spawn_egg/familiar_greedy"
 					}
 					id: "6B646AB1C3F6400F"
+					observation_type: "entity_type"
 					observe_type: 5
 					timer: 0L
 					to_observe: "occultism:greedy_familiar"
@@ -459,6 +461,7 @@
 						id: "occultism:spawn_egg/familiar_deer"
 					}
 					id: "188821176B2CA325"
+					observation_type: "entity_type"
 					observe_type: 5
 					timer: 0L
 					to_observe: "occultism:deer_familiar"
@@ -495,6 +498,7 @@
 				}
 				{
 					id: "787A0918A89DC382"
+					observation_type: "entity_type"
 					observe_type: 5
 					timer: 0L
 					to_observe: "occultism:blacksmith_familiar"
@@ -521,6 +525,7 @@
 				}
 				{
 					id: "12B3CDF3A96DCE01"
+					observation_type: "entity_type"
 					observe_type: 5
 					timer: 0L
 					to_observe: "occultism:beaver_familiar"
@@ -1021,6 +1026,7 @@
 				}
 				{
 					id: "17ED84B69232C9A3"
+					observation_type: "entity_type"
 					observe_type: 5
 					timer: 0L
 					to_observe: "occultism:shub_niggurath_familiar"
@@ -2037,6 +2043,7 @@
 					id: "forbidden_arcanus:runic_deepslate"
 				}
 				id: "4DA24F78A588884B"
+				observation_type: "block_tag"
 				observe_type: 1
 				timer: 0L
 				to_observe: "#forbidden_arcanus:runic_stones"
@@ -2054,6 +2061,7 @@
 					id: "forbidden_arcanus:stella_arcanum"
 				}
 				id: "616508DF1029F048"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "forbidden_arcanus:stella_arcanum"
@@ -2070,6 +2078,7 @@
 					id: "forbidden_arcanus:deepslate_arcane_crystal_ore"
 				}
 				id: "0E635515A6D25F14"
+				observation_type: "block_tag"
 				observe_type: 1
 				timer: 0L
 				to_observe: "#forbidden_arcanus:arcane_crystal_ores"
@@ -2169,6 +2178,7 @@
 						id: "forbidden_arcanus:hephaestus_forge_tier_1"
 					}
 					id: "7FDAB40939A257E3"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "forbidden_arcanus:hephaestus_forge_tier_1"
@@ -4781,6 +4791,7 @@
 					id: "cognition:infected_bookshelf"
 				}
 				id: "78FA5F211771140D"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "cognition:infected_bookshelf"
@@ -4797,6 +4808,7 @@
 					id: "cognition:infected_archivers_bookshelf"
 				}
 				id: "7B55B57E485D019C"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "cognition:infected_archivers_bookshelf"
@@ -4824,6 +4836,7 @@
 					id: "cognition:infected_enchanted_bookshelf"
 				}
 				id: "6482E368A547E29D"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "cognition:infected_enchanted_bookshelf"
@@ -5787,6 +5800,7 @@
 						id: "forbidden_arcanus:hephaestus_forge_tier_2"
 					}
 					id: "76B70979D87737A2"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "forbidden_arcanus:hephaestus_forge_tier_2"

@@ -13,7 +13,7 @@
 		linked_quest: "752A68C79A982D82"
 		shape: "gear"
 		x: 15.5d
-		y: 20.0d
+		y: 6.5d
 	}]
 	quests: [
 		{
@@ -142,6 +142,7 @@
 						id: "ytech:oak_tanning_rack"
 					}
 					id: "60CD83338D0F0A3E"
+					observation_type: "block_tag"
 					observe_type: 1
 					timer: 0L
 					to_observe: "ytech:tanning_racks"
@@ -179,6 +180,7 @@
 						id: "minecraft:crafting_table"
 					}
 					id: "2E98A75D544B6CDB"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "minecraft:crafting_table"
@@ -329,6 +331,7 @@
 						id: "minecraft:furnace"
 					}
 					id: "537ACBD90FBBAF2F"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "minecraft:furnace"
@@ -361,6 +364,7 @@
 						id: "ytech:primitive_smelter"
 					}
 					id: "159896A4BEC5A688"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:primitive_smelter"
@@ -441,6 +445,7 @@
 						id: "ytech:tree_stump"
 					}
 					id: "2B9CA877CE717558"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:tree_stump"
@@ -468,6 +473,7 @@
 						id: "ytech:strainer"
 					}
 					id: "2D912ADBBFF1493B"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:strainer"
@@ -532,6 +538,7 @@
 						id: "minecraft:chest"
 					}
 					id: "6393DC0B9B21B3B8"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "minecraft:chest"
@@ -571,6 +578,7 @@
 						id: "ytech:primitive_alloy_smelter"
 					}
 					id: "02343710256D4B41"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:primitive_alloy_smelter"
@@ -619,6 +627,7 @@
 						id: "ytech:bronze_anvil"
 					}
 					id: "427C47CA423D92C5"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:bronze_anvil"
@@ -727,6 +736,7 @@
 						id: "modern_industrialization:forge_hammer"
 					}
 					id: "6F72263637CD6A4C"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "modern_industrialization:forge_hammer"
@@ -763,6 +773,7 @@
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
+			hide_dependency_lines: true
 			icon: {
 				id: "modern_industrialization:bronze_plate"
 			}
@@ -1020,6 +1031,7 @@
 						id: "ytech:millstone"
 					}
 					id: "260001D50057E36D"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:millstone"
@@ -1035,6 +1047,7 @@
 			shape: "none"
 			tasks: [{
 				id: "50D6042A2E91482D"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "ytech:aurochs"
@@ -1049,6 +1062,7 @@
 			shape: "none"
 			tasks: [{
 				id: "63CA2D70315A4D8E"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "ytech:mouflon"
@@ -1063,6 +1077,7 @@
 			shape: "none"
 			tasks: [{
 				id: "0B6C1FBFE6F19766"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "ytech:fowl"
@@ -1077,6 +1092,7 @@
 			shape: "none"
 			tasks: [{
 				id: "6113DFBF32E28B0B"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "ytech:wild_boar"
@@ -1112,6 +1128,7 @@
 						id: "ytech:well_pulley"
 					}
 					id: "5EA6C098FCDDCCD8"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:well_pulley"
@@ -1178,6 +1195,7 @@
 					id: "spectrum:sheep_head"
 				}
 				id: "21696546970F8CA4"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:sheep"
@@ -1509,6 +1527,7 @@
 						id: "minecraft:anvil"
 					}
 					id: "38CBD5614651AC1C"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "minecraft:anvil"
@@ -1549,6 +1568,7 @@
 						id: "ytech:wooden_box"
 					}
 					id: "3B6F9FEF15D9A7A8"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:wooden_box"
@@ -1620,6 +1640,7 @@
 						id: "minecraft:barrel"
 					}
 					id: "7EEA725B0EDCC93F"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "minecraft:barrel"
@@ -1748,6 +1769,7 @@
 						id: "ytech:aqueduct_valve"
 					}
 					id: "1DA6E41744EB4EDB"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:aqueduct_valve"
@@ -1806,6 +1828,7 @@
 						id: "ytech:aqueduct_fertilizer"
 					}
 					id: "028214180BEFF603"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:aqueduct_fertilizer"
@@ -1831,6 +1854,7 @@
 						id: "ytech:aqueduct_hydrator"
 					}
 					id: "6AD67C76E3C921A7"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:aqueduct_hydrator"
@@ -1941,6 +1965,7 @@
 						id: "hexerei:pestle_and_mortar"
 					}
 					id: "4233DD6D52035B5C"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "hexerei:pestle_and_mortar"
@@ -2005,6 +2030,7 @@
 						id: "ytech:potters_wheel"
 					}
 					id: "2D70A31FB49C2483"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "ytech:potters_wheel"
@@ -2051,6 +2077,7 @@
 					id: "spectrum:chicken_head"
 				}
 				id: "6148EAAB6FECF6E5"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:chicken"
@@ -2068,6 +2095,7 @@
 					id: "spectrum:cow_head"
 				}
 				id: "4C1F13C254C005FE"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:cow"
@@ -2085,6 +2113,7 @@
 					id: "spectrum:pig_head"
 				}
 				id: "1EF921A1FACA14F5"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:pig"
@@ -2800,7 +2829,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2812,7 +2841,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 7.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["2CB775EC10EADEF7"]
@@ -2823,7 +2852,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2CB775EC10EADEF7"]
@@ -2834,7 +2863,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2CB775EC10EADEF7"]
@@ -2845,7 +2874,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2864,7 +2893,7 @@
 				}
 			]
 			x: 15.5d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2876,7 +2905,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2888,7 +2917,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -2900,7 +2929,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 9.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2912,7 +2941,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2924,7 +2953,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 12.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2936,7 +2965,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2948,7 +2977,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2960,7 +2989,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2972,7 +3001,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 10.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2984,7 +3013,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -2996,7 +3025,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -3008,7 +3037,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 10.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -3020,7 +3049,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0C7D28894362A59D"]
@@ -3032,7 +3061,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -3044,7 +3073,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 13.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["51B0A4ECA6E82976"]
@@ -3056,7 +3085,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 14.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["60FAB318CFFA2349"]
@@ -3068,7 +3097,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 15.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["2329DBD11CB7F435"]
@@ -3080,7 +3109,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 16.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["63733F3A8D5F526C"]
@@ -3092,7 +3121,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 17.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["331B3D23D569B8BB"]
@@ -3105,7 +3134,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -3117,7 +3146,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6F3B8F14CD52165D"]
@@ -3129,7 +3158,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1714360882474479"]
@@ -3152,7 +3181,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 7.0d
+			y: 9.0d
 		}
 	]
 }

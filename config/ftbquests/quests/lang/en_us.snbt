@@ -13,8 +13,6 @@
 	chapter.231570DE6A7FCD52.title: "Journeys \\& Gear"
 	chapter.389198189DCA1A49.chapter_subtitle: ["This chapter lists all the utility items for easy finding"]
 	chapter.389198189DCA1A49.title: "Utilities"
-	chapter.3E7A8B9C0D1E2F30.chapter_subtitle: ["Where blood is the currency of power - harvest it, refine it, and bend the world to your will."]
-	chapter.3E7A8B9C0D1E2F30.title: "Neo Vitae"
 	chapter.3ED5DF3804C2BE8A.chapter_subtitle: ["Easy-to-use navigation showing the different stages"]
 	chapter.3ED5DF3804C2BE8A.title: "Stages"
 	chapter.4058552B01F39ED4.chapter_subtitle: ["A chapter that helps you understand how to automate processes, complete with examples"]
@@ -242,6 +240,7 @@
 		""
 		"Если спустя &e7 дней&r вы не заходили на сервер - &l&eчанк лоудер&r &cперестанет работать&r."
 	]
+	quest.0757DF8CA56E666F.quest_desc: ["Ritual &lCrystallum Fractura&r - Harvests mature crystal clusters and weaves a 2x growth aura + 1.25x spiritus injection across the chunks in range"]
 	quest.078297FA7375ABD6.quest_desc: ["The &l&eEnder Source Jar&r allows you to store &bsource&r in an ender-connected &l&eSource Jar&r. Each jar you &aplace&r will link to the same &bpool of source&r, allowing you to use the &l&eSource Jar&r from &eanywhere&r."]
 	quest.078401AAC8FB6799.quest_desc: [
 		"Alternatively, if I am struggling to find a certain affinity within an ingredient, I can instead FUSE other ones for a variable outcome. I can make a substance that will allow me to gain another affinity from three other poisonous materials. To do this I first must create the mix."
@@ -277,7 +276,6 @@
 		"Удобный способ &aхранить еду&r. Многооо еды. &aЛКМ&r для смены режима, &aПКМ&r с &cзакрытым&r режимом для смены выбранной еды, &aПКМ&r с &aоткрытым&r режимом для &aупотребления&r указанной еды. Чтобы &aположить еду&r в бокс - &aПКМ&r едой на бокс."
 	]
 	quest.083BEEC631645C14.quest_desc: ["&aSummon&r &l&ePossessed Bee&r with &l&eIhagan's Enthrallment&r and &akill&r"]
-	quest.08B4E2BC94AFF589.quest_desc: ["Hold an Orb of Vitae in your off-hand while killing creatures to harvest EV directly into your Anima, sparing your own veins."]
 	quest.092205B6B1CC863A.quest_desc: [
 		"A block for vertical movement through blocks!"
 		"{@pagebreak}"
@@ -342,7 +340,7 @@
 		"Либо же &l&3/pingwheel config&r&r и написать в меню &3channel&r нужный вам канал, удаление канала из меню ввода канала позволит вернуться в &oобщий канал&r. Так же командой &l&3/pingwheel config&r&r можно настроить другие функции мода, в случае надобности."
 	]
 	quest.0BF78D040CA973B7.quest_desc: ["Each chimney provides &e+50°&r but the maximum number of &l&eChimneys&r that can be installed is &e4 Brick Chimneys&r and &e4 reinforced Brick Chimneys&r."]
-	quest.0C1938F058F0ECC8.quest_desc: ["Forged in the &eTier III altar&r for &e50,000 EV&r. Required to power &bSentient Extraction&r rituals and sustain the deeper blood workings of Tier III."]
+	quest.0C1938F058F0ECC8.quest_desc: ["Forged in the &eTier III altar&r for &e40,000 EV&r. Required to power &bSentient Extraction&r rituals and sustain the deeper blood workings of Tier III."]
 	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The &l&eQuantum Catcher&r can be used to &acapture and transport entities&r. To obtain it, you can &acombine&r &l&eSpawner Scrap&r and an &l&eArcane Crystal Block&r in a &l&eSmithing Table&r"]
 	quest.0C6231CE410086A5.title: "Affrit Crusher"
 	quest.0C6CEA409B38B70C.quest_desc: [
@@ -506,6 +504,19 @@
 	]
 	quest.1150D94139B83FBF.quest_desc: ["Now you can &ahot-swap armor&r by simply &aright-clicking&r it, or if you, fancy pants, want to have the whole hat-check room of armor, you can &asneak right-click&r an &l&earmor stand&r to hot-swap the whole set!"]
 	quest.1183EEDA65D3180C.quest_desc: ["To get it, you need to &aright click&r normal &l&eFarmland&r with &l&eArcane Bone Meal&r. &l&eMagical Farmland&r &edoubles the quantity&r of crop drops."]
+	quest.11A8A041EB1774AA.quest_desc: [
+		"Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
+		""
+		"Topologies: one-way, two-way, chained (A→B→C→A), vertical elevator. Mob spawners transfer with full NBT intact - spawn counts, cooldowns, and trial-spawner behavior preserved."
+		""
+		"Tips: test links with non-living blocks first, mark destinations clearly, carry spare Foci."
+		"{@pagebreak}"
+		"Три уровня фокусов определяют объём обмена: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
+		""
+		"Топологии: односторонняя, двусторонняя, цепочка (A→B→C→A), вертикальный лифт. Спаунеры переносятся с полным NBT - счётчики, кулдауны и поведение trial-спаунера сохраняются."
+		""
+		"Советы: сначала тестируй на неживых блоках, помечай точки назначения, держи запас фокусов."
+	]
 	quest.11AEAD046E2353E6.quest_desc: [
 		"I will need a tool to administer the solution into an unfortunate specimen. Luckily, with the help of another doctoral tool, I can make a simple copper needle. One especially capable of handling dangerous solutions."
 		""
@@ -601,6 +612,19 @@
 		"&oВсе предметы Building Gadgets работают на &bForge Energy&r&o. Через &eменю настроек&r(кнопка &cX&r с гаджетом в руках) можно менять &aрежимы&r, ставить &eдиапазон&r, закреплять &7предпросмотр&r и &cотменять&r последнее действие там, где это поддерживается.&r"
 		""
 		"Вы так же можеет использовать кнопку&c U&r чтобы отменить последнее действией!"
+	]
+	quest.14498C1ED2BC58BE.quest_desc: [
+		"Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
+		""
+		"Topologies: one-way, two-way, chained (A→B→C→A), vertical elevator. Mob spawners transfer with full NBT intact - spawn counts, cooldowns, and trial-spawner behavior preserved."
+		""
+		"Tips: test links with non-living blocks first, mark destinations clearly, carry spare Foci."
+		"{@pagebreak}"
+		"Три уровня фокусов определяют объём обмена: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
+		""
+		"Топологии: односторонняя, двусторонняя, цепочка (A→B→C→A), вертикальный лифт. Спаунеры переносятся с полным NBT - счётчики, кулдауны и поведение trial-спаунера сохраняются."
+		""
+		"Советы: сначала тестируй на неживых блоках, помечай точки назначения, держи запас фокусов."
 	]
 	quest.146496E17DF6BE97.quest_desc: [
 		"The &#9BB8EDEnder Dropper&r is an opposite of the &#9BB8EDEnder Hopper&r. With each &#d33b2bredstone pulse&r, it ejects an item from your personal &#9BB8EDEnder Chest&r. "
@@ -708,6 +732,7 @@
 		""
 		"Используя перегонный аппарат, мы можем изготавливать МИЛЫЕ ТОКСИЧНЫЕ ГОРШОЧКИ. Для самых мощных масел подходит только этот вариант. Простой глиняный горшочек трескался под воздействием токсина."
 	]
+	quest.189B4E6D9B694118.title: "Tier III Altar"
 	quest.19300837BD132C67.quest_desc: ["&aБустит по горизонтали&r когда встаёшь"]
 	quest.19545E28C84E87B2.quest_desc: [
 		"Если предметы взлетели над алтарём - рецепт верный. "
@@ -792,6 +817,7 @@
 		"• Чтобы &cвыключить&r, &aпоместите полный блок над ним&r."
 		"• Имеет &eфильтры&r, через которые всасываются предметы."
 	]
+	quest.1A16CF965AF2EEC5.quest_desc: ["To impose order on the armour's undirected growth, the Vitaemancer wears the Training Bracelet, a focus inscribed in an Alchemy Array. With a copy of the relevant Tome in hand, you can set a level cap for any upgrade; once the armour reaches that limit it ceases training the skill. Only one bracelet is active at a time (priority: off-hand, Curios, main inventory, then add-ons). To allow all upgrades except one, set the bracelet to 'allow others' mode and cap the unwanted skill at level 0."]
 	quest.1A2B3C4D5E6F7003.quest_desc: ["Place the &eAra Vitae&r - the sacred basin at the heart of vitaemancy. Right-click it to deposit items for altar crafting. EV drains steadily during workings; &ccrimson motes&r rising from the surface confirm it is underway."]
 	quest.1A2B3C4D5E6F7003.title: "Construct the Ara Vitae"
 	quest.1A2B3C4D5E6F7004.quest_desc: ["Forge a &eDiamond&r in the Tier 0 altar for &e2,000 EV&r. Then &aright-click&r while holding the orb to &bbind it&r - it now stores your &bAnima&r and passively harvests EV from creature kills (10 EV per max HP point)."]
@@ -800,19 +826,29 @@
 	quest.1A2B3C4D5E6F7006.quest_desc: ["Mark your prey. Throwing an &eIron Throwing Dagger&r at a creature marks it - when the marked creature dies, it releases &bRaw Spiritus&r. You will need this later."]
 	quest.1A2B3C4D5E6F7007.quest_desc: ["Runes are inscribed plates placed around the Ara Vitae basin to enhance it. Craft &e8 Rune Blanks&r as the foundation - these will be upgraded into specialized runes."]
 	quest.1A2B3C4D5E6F7007.title: "First Runes"
-	quest.1A2B3C4D5E6F7008.quest_desc: ["Surround the Ara Vitae with &e8 runes&r in a ring pattern to unlock &bTier I&r. Specialize them: &eSpeed&r (+20% throughput), &eCapacity&r (+20% reservoir), &eSacrifice&r (bonus EV from kills nearby)."]
-	quest.1A2B3C4D5E6F7008.title: "Tier I Altar"
 	quest.1A2B3C4D5E6F7009.quest_desc: ["Forged in the &eTier I altar&r for &e5,000 EV&r. Expands your Anima further and unlocks &boff-hand EV harvesting&r - hold the orb in your off hand to collect EV directly from kills."]
 	quest.1A2B3C4D5E6F7009.title: "Discipulus Orb of Vitae"
 	quest.1A2B3C4D5E6F700A.quest_desc: ["Tier I crafting substrate. Costs &e2,000 EV&r. Required for advanced vitaemantic recipes."]
 	quest.1A2B3C4D5E6F700B.quest_desc: ["Place the &eTabula Vitae&r - your alchemical workbench for brewing &bAlchemy Flasks&r, crafting &bAnointments&r, applying &bReagents&r to tools, and filling Sigils with their elemental base items."]
 	quest.1A2B3C4D5E6F700B.title: "Place the Tabula Vitae"
-	quest.1A2B3C4D5E6F700C.quest_desc: ["Brew your first &eAlchemy Flask&r in the Tabula Vitae. Flasks can be thrown or used as lingering clouds. Combine with &bPotions&r and &bCatalysts&r to upgrade their effects."]
-	quest.1A2B3C4D5E6F700D.quest_desc: ["Upgrade your altar to &bTier II&r by adding &eBlood Stained Glass pillars&r at the four corners. You need &e28 total runes&r placed - this unlocks ritual crafting and the Master Ritual Stone."]
+	quest.1A2B3C4D5E6F700C.quest_desc: [
+		"Potion-brewing is a pedestrian art. Any hedge-witch with a cauldron can boil nether wart into a serviceable tincture. By weaving Essentia Vitae into the brewing process, you transcend the crude limitations of conventional alchemy."
+		""
+		"Forged upon the Ara Vitae, the Alchemy Flask holds eight doses of whatever elixir you fill it with. Once drained to its dregs, rinse it with water to prepare a fresh vessel. Flasks may also be transmuted into projectile forms:"
+	]
+	quest.1A2B3C4D5E6F700D.quest_desc: [""]
 	quest.1A2B3C4D5E6F700D.title: "Tier II Altar"
 	quest.1A2B3C4D5E6F700E.quest_desc: ["Forged in the &eTier II altar&r for &e25,000 EV&r. The Veneficus Orb significantly expands your Anima pool and is required to conduct advanced rituals."]
 	quest.1A2B3C4D5E6F700E.title: "Veneficus Orb of Vitae"
-	quest.1A2B3C4D5E6F700F.quest_desc: ["Place the &eMaster Ritual Stone&r to begin conducting rituals. Use the &bRitual Diviner&r to see the stone placement pattern, then activate with an &eActivation Crystal&r."]
+	quest.1A2B3C4D5E6F700F.quest_desc: [
+		"Place the &eMaster Ritual Stone&r to begin conducting rituals. Use the &bRitual Diviner&r to see the stone placement pattern, then activate with an &eActivation Crystal&r."
+		""
+		"You can read about existing rituals in the guidebook!"
+		"{@pagebreak}"
+		"Разместите &eMaster Ritual Stone&r, чтобы начать проведение ритуалов. Воспользуйтесь &bRitual Diviner&r, чтобы увидеть схему расположения ритуальных камней, а затем активируйте их с помощью &eActivation Crystal&r."
+		""
+		"Прочитать о существующих ритуалах можно в гайд-книге!"
+	]
 	quest.1A2B3C4D5E6F700F.title: "Place the Master Ritual Stone"
 	quest.1A2B3C4D5E6F7010.quest_desc: [
 		"Right-click to select a ritual."
@@ -823,37 +859,26 @@
 	quest.1A2B3C4D5E6F7011.quest_desc: ["The forge of demons. The &eHellfire Forge&r crafts &bSentient Equipment&r, &bExplosive Charges&r, and &bSpiritus Gems&r using Raw Spiritus as fuel. It is the core machine of the mid-game."]
 	quest.1A2B3C4D5E6F7011.title: "Place the Hellfire Forge"
 	quest.1A2B3C4D5E6F7012.quest_desc: ["Tier II crafting substrate. Costs &e5,000 EV&r. Required for the &bSigil of Bound Treasures&r and other advanced vitaemantic items."]
-	quest.1A2B3C4D5E6F7013.quest_desc: ["Build to &bTier III&r by raising &eBloodstone Brick pillars&r from each Blood Stained Glass column. You need &e56 total runes&r. Unlocks Spiritus crystallization and Sentient Evolution rituals."]
-	quest.1A2B3C4D5E6F7013.title: "Tier III Altar"
-	quest.1A2B3C4D5E6F7018.quest_desc: ["Inscribe an &eAlchemy Array&r, apply &bBinding Reagent&r as the base, then place Iron armor pieces as catalysts. Each piece begins equivalent to iron with &e100 Upgrade Points&r - train them through use."]
+	quest.1A2B3C4D5E6F7018.quest_desc: [
+		"The armour worn by a Vitaemancer is no inert collection of plates."
+		""
+		"Sentient Armor breathes, learns, and grows alongside its wearer. Each piece begins equivalent to iron in its protection but carries 100 Upgrade Points that it spends as you teach it new skills."
+		""
+		"The armour is alive, and it watches everything you do. Be deliberate in what you teach it. Hold sneak while examining a piece to see what it has learned so far."
+	]
 	quest.1A2B3C4D5E6F7018.title: "Sentient Armour Set"
 	quest.1A2B3C4D5E6F7019.quest_desc: ["Tier III crafting substrate. Costs &e15,000 EV&r. Required for the &bRitual Diviner [Dusk]&r and high-tier vitaemantic instruments."]
 	quest.1A2B3C4D5E6F7019B.quest_desc: ["The Dusk Diviner enables Tier III rituals: &bSentient Evolution&r (expands armor to 300 Upgrade Points), &bSentient Extraction&r, and the &bHighway to Hell&r portal ritual for full Endless Realm access."]
 	quest.1A2B3C4D5E6F7019B.title: "Ritual Diviner [Dusk]"
-	quest.1A2B3C4D5E6F701A.quest_desc: ["Crown the altar corners with &eHellforged Block&r pedestals to reach &bTier IV&r. You need &e108 total runes&r. Demonite Ore processing and the most powerful ritual reagents become accessible."]
+	quest.1A2B3C4D5E6F701A.quest_desc: [""]
 	quest.1A2B3C4D5E6F701A.title: "Tier IV Altar"
 	quest.1A2B3C4D5E6F701B.quest_desc: ["The penultimate orb. Forged in the &eTier IV altar&r for &e80,000 EV&r. Grants vast Anima reserves sufficient to sustain even the most demanding Tier IV rituals continuously."]
 	quest.1A2B3C4D5E6F701B.title: "Dominus Orb of Vitae"
-	quest.1A2B3C4D5E6F701C.quest_desc: ["The &eAthanor&r is an advanced ore processor with &bdoubled yields&r. Feed it &bFuel Cells&r and &bCutting Fluid&r - three grades of fluid (Basic, Intermediate, Advanced) each improve efficiency."]
-	quest.1A2B3C4D5E6F701C.title: "Place the Athanor"
 	quest.1A2B3C4D5E6F701D.quest_desc: ["Tier IV crafting substrate. Costs &e30,000 EV&r. The highest crafting tablet, required for Tier V altar construction components."]
-	quest.1A2B3C4D5E6F701E.quest_desc: ["Refine &eSaturated Tau Fruit&r in the Athanor to produce &bWeak Blood Shards&r - potent alchemical components used in advanced ritual reagents and high-tier Hellfire Forge recipes."]
-	quest.1A2B3C4D5E6F701F.quest_desc: ["The pinnacle of the Ara Vitae. Crown each side with &eCrystal Cluster&r formations - &e184 total runes&r, &e19 per side&r. Your basin reaches its ultimate and final form."]
+	quest.1A2B3C4D5E6F701F.quest_desc: [""]
 	quest.1A2B3C4D5E6F701F.title: "Tier V Altar"
-	quest.1A2B3C4D5E6F7020.quest_desc: ["The ultimate Blood Orb. Forged in the &eTier V altar&r, it offers virtually limitless Anima reserves. You have mastered the ancient art of vitaemancy. The world itself bends to your will."]
+	quest.1A2B3C4D5E6F7020.quest_desc: [""]
 	quest.1A2B3C4D5E6F7020.title: "Transcendent Orb of Vitae"
-	quest.1A2B3C4D5E6F7021.quest_desc: [
-		"Build the &eEndless Dungeon Controller&r to access the procedurally-generated hellscape."
-		""
-		"&bFirst access&r: Perform the &eBreaching the Edge of Demon Realm&r ritual (Tier II) to enter the Antechamber."
-		""
-		"&bFull access&r: Perform the &eHighway to Hell&r ritual (Tier III + Awakened Crystal) to generate the infinite Endless Realm."
-		""
-		"Complete all dungeon seals to open a &bSpatial Rift&r and generate an entirely new floor — infinitely."
-	]
-	quest.1A2B3C4D5E6F7021.title: "The Endless Dungeon"
-	quest.1A2B3C4D5E6F7022.quest_desc: ["Store &bSpiritus&r in bulk. The &eSpirit Cache&r holds large reserves of raw and refined Spiritus - essential for automating Hellfire Forge production via the Routing Network."]
-	quest.1A2B3C4D5E6F7022.title: "Spirit Cache"
 	quest.1AA253AD184CAD2E.quest_desc: [
 		"Just some &#FEECD6beautiful lamps&r. Not all items have to have utility, right? "
 		"{@pagebreak}"
@@ -1018,7 +1043,11 @@
 		"{@pagebreak}"
 		"Было замечено что книга на этом столе потребляет достаточно много &cFPS&r, &cимейте ввиду!"
 	]
-	quest.228901DACDBF42E3.quest_desc: ["The &eTabula Vial&r is the alchemy variant of the crafting tablet, used for brewing more advanced flask recipes at higher altar tiers."]
+	quest.228901DACDBF42E3.quest_desc: [
+		"Where flasks empower the body, Anointments empower the hand. These are alchemical coatings for your tools, weapons, and Charges. Hold the anointment in one hand and press [Use] to apply it to the item in the other; not every coating suits every instrument, choose wisely. An anointment may also be applied via a smithing table where it takes the place of a smithing template, useful for two-handed weapons."
+		""
+		"Unlike elixirs, anointments are not governed by time. They diminish with each use of the coated tool, fading stroke by stroke until spent. They are held in the Tabula Vial; ordinary glass cannot withstand the reactive compounds within."
+	]
 	quest.22B7317BB018972A.quest_desc: [
 		"&4Separates&r resources into their components via fast motor go brrr."
 		"{@pagebreak}"
@@ -1081,6 +1110,8 @@
 	]
 	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.245E70DC7FBF7DB3.quest_desc: ["Radiates illumination from invisible sources above the array, lighting an area without cluttering it with torches."]
+	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is finite. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The Vitaemancer has devised Rituals to assist with focused training, and the Ritual of Sentient Evolution to imbue your armour with a greater capacity for growth. Stand upon the Master Ritual Stone while clad in Sentient Armor, and the circle pours its power into the symbiotic plates. The armour's potential expands beyond its former limits."]
+	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a &cpoisoned&r &l&eslime&r."]
 	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
 	quest.2518CA7E57223D3A.quest_desc: [
@@ -1166,10 +1197,20 @@
 		"{@pagebreak}"
 		"Некоторые из шляп изменяют поведение минигры!"
 	]
+	quest.2828CD751DD0C8EA.quest_desc: [
+		"Bestows true flight upon all within the circle."
+		"{@pagebreak}"
+		"даёт настоящий полёт всем в круге"
+	]
 	quest.286CADEC3AB44CCE.quest_desc: [
 		"Use your newly acquired &l&esharp flint&r to &aharvest&r some &l&egrass&r"
 		"{@pagebreak}"
 		"Используйте ваш новый &l&eострый кремневый камень&r, чтобы &aсобрать&r немного &l&eтравы&r."
+	]
+	quest.28A0B0DE7DA8451F.quest_desc: [
+		"Harvests Essentia Vitae from the suffering of nearby creatures."
+		"{@pagebreak}"
+		"собирает EV от страданий существ рядом"
 	]
 	quest.28A2FCBC095F291E.quest_desc: ["&aUse&r the &l&epoison paste&r on &l&efarmland&r. Can farm &l&eplants&r from this mod."]
 	quest.28DE945FA0D4BCB9.quest_desc: [
@@ -1285,6 +1326,16 @@
 	]
 	quest.2BC8FC3AC76D89BA.quest_desc: ["Mod adds a complete &bfast travel system&r built around glowing portal doorways called &l&eTimedoors&r, powered by a unique &l&eChronon energy system&r with &l&egenerators&r, &l&ecells&r, and &l&ebatteries&r"]
 	quest.2BE901E1F516A6AE.quest_subtitle: "Golems?!"
+	quest.2C3B7F7495AF3169.quest_desc: [
+		"Stand on the Master Ritual Stone wearing Sentient Armor. The ritual wipes every upgrade from every Sentient piece you have equipped and resets used points to zero, giving you back a clean slate at the cost of all accumulated training. No tomes are produced; if you want to preserve the upgrades for later, use Sentient Extraction instead."
+		"{@pagebreak}"
+		"Встаньте на Камень главного ритуала, надев Sentient Armor. Ритуал удаляет все улучшения со всех предметов Sentient Armor, которые вы надели, и сбрасывает использованные очки до нуля, давая вам возможность начать с чистого листа за счет потери всего накопленного опыта. tomes при этом не создаются; если вы хотите сохранить улучшения на будущее, воспользуйтесь вместо этого «Sentient Extraction»."
+	]
+	quest.2C98103199647244.quest_desc: [
+		"The Tome of Peritia is a vessel for captured experience, safe from the grasp of death. Sneak and Use to store a level, Use alone to retrieve it. Hold either action to transfer multiple levels rapidly."
+		"{@pagebreak}"
+		"Tome of Peritia - хранилище опыта, защищённое от потери при смерти. Зажми Shift + Use чтобы сохранить уровень, Use без шифта - забрать. Удерживай для быстрой передачи нескольких уровней сразу."
+	]
 	quest.2CBD884256778D81.quest_desc: [
 		"Mixing &#C6BCE9colors&r seemed like such a simple and fun activity, but brown has, &#ff6600as always&r, &#ff6600ruined&r everything."
 		""
@@ -1302,12 +1353,6 @@
 	]
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
 	quest.2D26EA473D256B54.quest_desc: ["An &eupgraded variant&r that allows &acatching boss entities&r"]
-	quest.2D4535557DE7EE68.quest_desc: [
-		"&#B8860BTier 2&r expands the structure outward: 5 runes along each edge, set one level down and two blocks out from the previous ring. Stone pillars rise at each corner, capped with &#8B0000Blood Stained Glass&r, light to guide the essence. Use a &#8B0000Divination Sigil&r to confirm the upgrade. Any solid block suffices for the pillar bodies."
-		"{@pagebreak}"
-		"На втором уровне структура расширяется наружу: по 5 рун вдоль каждой грани, расположенных на один уровень ниже и на два блока дальше от предыдущего кольца. В каждом углу возвышаются каменные колонны, увенчанные «Окровавленным стеклом», свет которых направляет эссенцию. Для подтверждения улучшения используйте «Печать гадания». В качестве основания для колонн подойдет любой твердый блок."
-	]
-	quest.2D4535557DE7EE68.title: "Tier 2 Ara Vitae"
 	quest.2D8C9DF5E216E09C.quest_desc: [
 		"Sometimes, you've started to notice &#C6BCE9stars&r falling from the sky. Try &#FEECD6breaking&r them and collecting their &#C6BCE9fragments&r and &#C6BCE9dust&r, they are very useful!"
 		"{@pagebreak}"
@@ -1380,6 +1425,19 @@
 		"Бесконечный дождь &l&eснежков&r"
 	]
 	quest.3047263251E42955.quest_desc: ["From &l&eBreeze&r with &l&escythe&r"]
+	quest.304A749D0C7B2F06.quest_desc: [
+		"Upgrade Tomes are crystallised records of a particular skill, each carrying the experience needed to inscribe one or more levels of its upgrade onto a chestplate. They come from three places:"
+		""
+		"• Dungeon loot. Tomes are scattered through the loot tables of The Mines (ore chambers, the Smithy) and the Foreman's hoard."
+		""
+		"• Sentient Extraction. Throw an already-trained piece of Sentient Armor onto the small zone above this ritual's Master Ritual Stone and it will extract every upgrade currently inscribed on the armor as a separate Tome, preserving the accumulated experience. The armor itself is left stripped but intact. "
+		""
+		"• Combining duplicates. Two tomes of the same upgrade can be merged at a vanilla crafting table to consolidate their experience."
+		""
+		"Press [Use] while holding a tome to inscribe one level of that skill onto your worn chestplate, assuming sufficient Upgrade Points remain. Hold sneak and [Use] to inscribe as much as possible at once. The tome is consumed in the process, transferring its stored experience to the chestplate. If insufficient points remain, the tome applies what it can and retains the rest; unless less than one level's worth remains, in which case the tome crumbles to nothing."
+		""
+		"Tomes are the key to deliberate specialisation; focus your training on the abilities that serve you best and discard the rest. Maintain separate chestplates for different purposes, each with its own set of tomes."
+	]
 	quest.3055F414B9F20508.quest_desc: [
 		"If I feel particularly HORRIBLE, then I may want to produce this regeneration oil pot. Fragrant and REVOLTING to the touch, it does the opposite of what most of my oils do, and as such would be quite appealing to doctors in the field."
 		"{@pagebreak}"
@@ -1537,12 +1595,6 @@
 		"«Базовый магнит» собирает предметы и опыт в радиусе 5 блоков от игрока!"
 	]
 	quest.35CD3646C82BCCBD.quest_desc: ["To move Spiritus across distances, place a Spira Infernalis: each tick it probes a position 16 blocks away in each of the four cardinal directions, and if the probed position holds more Spiritus than the pylon's own chunk, the pylon pulls a small fraction of the difference. The flow equilibrates rather than draining the source dry, so chain pylons from a saturated chunk toward your worksite to ferry Aura over long distances."]
-	quest.35D3313D6C5D7C46.quest_desc: [
-		"&#B8860BTier 1&r demands 8 &#8B0000Blood Runes&r arranged in a ring around the Ara Vitae. The four cardinal runes may be replaced with specialized variants; the corner runes remain inert until Tier 2 unlocks their potential."
-		"{@pagebreak}"
-		"&#B8860BДля 1-го&r уровня требуется 8 &#8B0000рун крови&r, расположенных кольцом вокруг «Ара Витае». Четыре основные руны можно заменить на специальные варианты; угловые руны остаются неактивными, пока их потенциал не раскроется на 2-м уровне."
-	]
-	quest.35D3313D6C5D7C46.quest_subtitle: "Tier 1 Ara Vitae"
 	quest.360B3C7F848E2965.quest_desc: [
 		"Grows in &dcrimson forests&r."
 		""
@@ -1643,6 +1695,11 @@
 		"Зажми правую кнопку мыши и шифт на warped fungus или Crimson fungus!"
 	]
 	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
+	quest.39DCC2821529301C.quest_desc: [
+		"passive sigil held in hand: +50 Spiritus Collection, +25 Bonus Sacrifice, +10 Blood Siphon (heals on kill, capped at 4 hearts)"
+		"{@pagebreak}"
+		"пассивный сигил в руке: +50 Spiritus Collection, +25 Bonus Sacrifice, +10 Blood Siphon (лечение от убийства, до 4 сердец)"
+	]
 	quest.3A47A5B107C19092.quest_desc: [
 		"Fancy, &equeen-sized&r patch of fiber"
 		"{@pagebreak}"
@@ -1709,69 +1766,56 @@
 	]
 	quest.3C4D5E6F7A8B0001.quest_desc: ["Your first sigil. Right-click to instantly reveal your &bAnima storage&r, altar &etier&r, &eEV volume&r, and &ecapacity&r - your blood magic compass. Craft it with &eRedstone Dust&r base and a &eTabula Rasa&r catalyst."]
 	quest.3C4D5E6F7A8B0001.title: "Sigil of Divination"
-	quest.3C4D5E6F7A8B0002.quest_desc: ["Conjures a &ewater source block&r for &e100 EV&r per use. In the &bTabula Vitae&r, automates water bucket production - an essential input for many alchemy recipes."]
-	quest.3C4D5E6F7A8B0002.title: "Water Sigil"
-	quest.3C4D5E6F7A8B0003.quest_desc: ["Conjures &elava&r for &e1,000 EV&r, or &e5 hearts of health&r if your Anima runs dry. In the Tabula Vitae, automates lava bucket production. Handle with care."]
-	quest.3C4D5E6F7A8B0003.title: "Lava Sigil"
-	quest.3C4D5E6F7A8B0004.quest_desc: ["Propels you through the air in your facing direction for &e50 EV&r per burst. An agile escape tool - hold sneak while activating for a gentler push."]
-	quest.3C4D5E6F7A8B0004.title: "Air Sigil"
 	quest.3C4D5E6F7A8B0005.quest_desc: ["Extends your item pickup radius to &e7 blocks&r. Drains &e50 EV every 5 seconds&r while active - remember to toggle it off between battles to conserve Anima."]
 	quest.3C4D5E6F7A8B0005.title: "Sigil of Magnetism"
-	quest.3C4D5E6F7A8B0006.quest_desc: ["Grants &eHaste&r while active, draining &e100 EV every 5 seconds&r. Pair with the &eSigil of Holding&r to stack Magnetism and Fast Miner simultaneously - a miner's dream."]
-	quest.3C4D5E6F7A8B0006.title: "Sigil of the Fast Miner"
-	quest.3C4D5E6F7A8B0007.quest_desc: ["Holds up to &e5 other sigils&r inside it, channeling all their passive effects simultaneously and letting you activate any stored sigil from a single item slot. The ultimate sigil container."]
-	quest.3C4D5E6F7A8B0007.title: "Sigil of Holding"
-	quest.3C4D5E6F7A8B0008.quest_desc: ["Summons random undead servants for &e2,000 EV&r each. Servants last &e5 minutes&r. Requires a &bTabula Animata&r to craft."]
-	quest.3C4D5E6F7A8B0008.title: "Sigil of Necromancy"
-	quest.3C4D5E6F7A8B0009.quest_desc: ["Links to any container for &eremote access&r from anywhere in the same dimension - costs &e200 EV&r per use. Shift-right-click a chest to bind, then right-click the sigil to open it from afar."]
-	quest.3C4D5E6F7A8B0009.title: "Sigil of Bound Treasures"
-	quest.3C4D5E6F7A8B000A.quest_desc: ["An enhanced divination tool. In addition to Anima stats, the &eSeer's Sigil&r shows altar crafting progress and reserved EV - invaluable when running expensive altar workings."]
-	quest.3C4D5E6F7A8B000A.title: "Seer's Sigil"
 	quest.3C4D5E6F7A8B0011.quest_desc: ["Draw magical circles on any solid surface. Hold the tool and press &aUse&r to inscribe. Each inscription consumes one charge (&e20 uses total&r). Place a &ebase item&r on the array, then a &ecatalyst item&r to activate it."]
 	quest.3C4D5E6F7A8B0011.title: "Arcane Scribe Tool"
-	quest.3C4D5E6F7A8B0014.quest_desc: ["Damages non-player creatures in range and releases &bSpiritus&r - automate spirit collection without manually throwing daggers. Place it in a mob farm or killing chamber."]
-	quest.3C4D5E6F7A8B0014.title: "Array of Spirit Siphon"
-	quest.3C4D5E6F7A8B0021.quest_desc: ["The &eActivation Crystal (Weak)&r starts any ritual. Right-click the Master Ritual Stone with it once all supporting stones are in place. Stronger crystals (&eAwakened&r) are required for Tier III rituals."]
+	quest.3C4D5E6F7A8B0021.quest_desc: ["The &eActivation Crystal (Weak)&r starts any ritual. Right-click the Master Ritual Stone with it once all supporting stones are in place. Stronger crystals (&eAwakened&r) are required for Tier II rituals."]
 	quest.3C4D5E6F7A8B0021.title: "Activation Crystal"
-	quest.3C4D5E6F7A8B0022.quest_desc: ["Right-click the Master Ritual Stone with the Ritual Reader to see the &bexact ritual requirements&r - EV cost, reagents, and stone placement - without needing to check the wiki."]
+	quest.3C4D5E6F7A8B0022.quest_desc: [
+		"The Ritual Tinkerer (also known as the Ritual Reader) is essential for mastery over your circles. Cycle between three modes with Sneak + Use:"
+		""
+		"• Information - reveals the purpose of the selected ritual."
+		""
+		"[ \"• Set Spiritus Consumed - attunes the ritual to consume specific aspects of \", { \"text\": \"Spiritus\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3EA1E7E490D39A84\" } }, \" from the Aura. Carry the desired Spiritus Crystals in your hotbar, one per aspect.\" ]"
+		""
+		"• Define Area - specifies the zone in which the ritual operates and displays the current boundaries. If multiple zones exist, Sneak + Use on the Master Ritual Stone cycles between them."
+		""
+		"Some rituals can be expanded far beyond their default range, but EV cost scales to match. Tread carefully with your reserves."
+	]
 	quest.3C4D5E6F7A8B0022.title: "Ritual Reader"
 	quest.3C4D5E6F7A8B0023.quest_desc: ["Many Tier II+ rituals require &belemental ritual stones&r - Air, Water, Fire, Earth, or Dusk variants. Place them at their designated positions around the Master Ritual Stone."]
 	quest.3C4D5E6F7A8B0023.title: "Elemental Ritual Stones"
-	quest.3C4D5E6F7A8B0024.quest_desc: ["Required for all &bTier III rituals&r, including &eBreaching the Edge of Demon Realm&r and &eHighway to Hell&r. Forged from a Weak Crystal in the Tier III altar. Keep several on hand."]
+	quest.3C4D5E6F7A8B0024.quest_desc: ["Required for all &bTier III rituals&r, including &eBreaching the Edge of Demon Realm&r."]
 	quest.3C4D5E6F7A8B0024.title: "Awakened Activation Crystal"
-	quest.3C4D5E6F7A8B0031.quest_desc: ["&eAnointments&r are reusable enchantment oils crafted in the Tabula Vitae. Apply one to a weapon or tool to grant its effect. Unlike enchanting, they can be swapped freely. &bMelee Anointment&r grants bonus attack damage."]
-	quest.3C4D5E6F7A8B0031.title: "Anointments"
-	quest.3C4D5E6F7A8B0032.quest_desc: ["&eSilk Touch Anointment&r - apply to a pickaxe to harvest blocks without breaking them. Tier I variant, craftable in the Tabula Vitae. Higher tiers (XL, III) boost the effect further."]
-	quest.3C4D5E6F7A8B0033.quest_desc: ["&eFortune Anointment&r - increases ore and crop drop rates. Three tiers available. Upgrade by crafting the higher variant in the Tabula Vitae."]
 	quest.3C4D5E6F7A8B0044.quest_desc: ["The highest grade of Spiritus Gem. &eGrand Spiritus Gems&r fuel the most powerful Hellfire Forge recipes and are required for Tier V altar components."]
 	quest.3C4D5E6F7A8B0044.title: "Grand Spiritus Gem"
-	quest.3C4D5E6F7A8B0051.quest_desc: ["The &eTraining Bracelet&r caps Sentient Armor upgrade levels when you hold the relevant &bUpgrade Tome&r. Use it to force the armor to train specific stats for a chosen role rather than spreading points."]
-	quest.3C4D5E6F7A8B0051.title: "Training Bracelet"
-	quest.3C4D5E6F7A8B0052.quest_desc: ["Directs which &eUpgrade Point tree&r your Sentient Armor invests in. Hold the tome while wearing the armor to lock progression toward one specialization - Mining Speed, Combat, or Exploration."]
-	quest.3C4D5E6F7A8B0052.title: "Upgrade Tome"
-	quest.3C4D5E6F7A8B0061.quest_desc: ["A spatial linking station. Place two &eTeleposers&r and link them with a &bFocus&r to teleport between them for &e1,000 EV&r. Works across any distance - even between dimensions with the enhanced focus."]
+	quest.3C4D5E6F7A8B0061.quest_desc: [
+		"The Teleposer doesn't teleport - it swaps everything above two linked blocks instantly: blocks, items, and entities together."
+		""
+		"Setup: place two Teleposers, bind a Focus to the target via right-click, place it in the source, apply strong redstone power."
+		""
+		"Cost: 1 EV per 2 blocks of distance, 1,000 EV cap per object, 10,000 EV cap per activation. Swaps involving blacklisted blocks (bedrock, portals, command blocks) abort without spending EV."
+		"{@pagebreak}"
+		"Телепозер не телепортирует - он обменивает местами всё над двумя связанными блоками мгновенно: блоки, предметы и сущности вместе."
+		""
+		"Настройка: размести два телепозера, привяжи Focus к цели правым кликом, помести его в источник, подай сильный редстоун-сигнал."
+		""
+		"Стоимость: 1 EV на 2 блока расстояния, 1,000 EV лимит на объект, 10,000 EV лимит на активацию. Если обмен блокирован (бедрок, порталы, командные блоки) - EV не тратится."
+	]
 	quest.3C4D5E6F7A8B0061.title: "Place the Teleposer"
-	quest.3C4D5E6F7A8B0062.quest_desc: ["Crafted at the altar, a &eTeleposer Focus&r is the key that binds two Teleposer stations together. Right-click one Teleposer with the focus, then right-click the destination Teleposer to link them."]
 	quest.3C4D5E6F7A8B0071.quest_desc: ["The &eRouting Network&r transports items, fluids, and energy between machines without hoppers or pipes. &bConduits&r are passive relays that extend the network reach between active nodes. Lay them between your Athanor, Hellfire Forge, and storage."]
 	quest.3C4D5E6F7A8B0071.title: "Routing Conduit"
 	quest.3C4D5E6F7A8B0072.quest_desc: ["&eInput Nodes&r extract from adjacent inventories; &eOutput Nodes&r deliver into them. Each of 6 faces carries independent filters - configure whitelist, blacklist, priority, and keep-amounts per face."]
 	quest.3C4D5E6F7A8B0072.title: "Input and Output Nodes"
 	quest.3C4D5E6F7A8B0073.quest_desc: ["The brain of the network - one per network. New nodes within 16 blocks auto-bind to the nearest master on placement. Use the &bNode Router&r tool to manually link nodes across longer chains."]
 	quest.3C4D5E6F7A8B0073.title: "Master Routing Node"
-	quest.3C4D5E6F7A8B0081.quest_desc: ["Use the &eResonator&r to crush &bore fragments&r into &eOre Gravel&r - the first step in the Athanor's doubled processing chain. Gravel is then refined into &bMetal Dust&r for smelting into two ingots per ore."]
-	quest.3C4D5E6F7A8B0081.title: "Resonator"
-	quest.3C4D5E6F7A8B0082.quest_desc: ["&eCutting Fluid&r fuels the Athanor during ore processing. &bBasic&r grade provides 128 operations. Upgrade to &bIntermediate&r and &bAdvanced&r grades for greater processing efficiency and yield."]
-	quest.3C4D5E6F7A8B0082.title: "Basic Cutting Fluid"
-	quest.3C4D5E6F7A8B0083.quest_desc: ["The highest grade of cutting fluid. &eAdvanced Cutting Fluid&r maximizes Athanor yield efficiency - essential once you are processing Demonite Ore and other rare Tier V materials."]
-	quest.3C4D5E6F7A8B0083.title: "Advanced Cutting Fluid"
-	quest.3C4D5E6F7A8B0091.quest_desc: ["Opens standard sealed doors within the &eEndless Dungeon&r. Craft them at the Hellfire Forge or find them in dungeon chests. Carry a stack - the dungeon is full of locked doors."]
-	quest.3C4D5E6F7A8B0091.title: "Iron Key"
-	quest.3C4D5E6F7A8B0092.quest_desc: ["Dropped only by &e&cThe Foreman&r - a 600 HP, 25-damage boss Daemonium guarding the mine entrance. Defeat it to unlock access to &bDemonite Ore&r veins deep within."]
-	quest.3C4D5E6F7A8B0092.title: "Mine Entrance Key"
-	quest.3C4D5E6F7A8B0093.quest_desc: ["Smelted from &bDemonite Ore&r found only in the Endless Dungeon mines. Required for Tier V altar construction components and &eIntricate Hellforged Parts&r - the rarest upgrade material in the mod."]
+	quest.3C4D5E6F7A8B0093.quest_desc: [
+		"deep blood-red decorative trim material. Apply at a smithing table like any other trim."
+		"{@pagebreak}"
+		"декоративный материал для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
+	]
 	quest.3C4D5E6F7A8B0093.title: "Demonite Ingot"
-	quest.3C4D5E6F7A8B0094.quest_desc: ["Completing all dungeon seals opens a &eSpatial Rift&r that generates an entirely new dungeon floor - an infinite escalating loop of challenge and reward. &7\"A monstrous roar echoes through the corridors...\""]
-	quest.3C4D5E6F7A8B0094.title: "Spatial Rift"
 	quest.3CD24DA505BC109F.quest_desc: [
 		"&aObtain&r &l&5Neolith&r&r from the failing-engulfed &l&eobsidian&r."
 		"{@pagebreak}"
@@ -1873,6 +1917,7 @@
 		"Пересмотрев свои старые исследования, мне удалось раздобыть несколько рецептов приготовления специальных смесей для употребления. Возможно, я буду пробовать понемногу каждый день. Но не больше листика. Это довольно опасная игра."
 	]
 	quest.3F7A0CB51203DAB6.quest_subtitle: "Experienced!"
+	quest.3F93E2966991C460.title: "Highway to Hell ritual"
 	quest.400E4777C506724C.quest_desc: [
 		"&oUnbelievably useful&r, but keep in mind, it's &#FEECD6&lvery&r fragile&r! "
 		"{@pagebreak}"
@@ -2153,6 +2198,31 @@
 		"Печь покруче - но ещё и побольше!"
 	]
 	quest.49F633AB8533C593.quest_desc: ["Mends the items at the cost of oil."]
+	quest.49FACA83D02FA842.quest_desc: [
+		"The Vitae Link is a bound relay that crafts on a linked altar's behalf, but only up to a tier you choose."
+		""
+		"Creation: place an Ara Vitae inside a larger altar holding at least 1,500 Essentia Vitae - the lesser altar folds inward to form the Link."
+		""
+		"Place the Link within 8 blocks of an altar. It draws Essentia Vitae straight from that altar's basin and borrows its rune bonuses. Sneak and use the Link to cycle its craft tier. Maximum is one tier below the altar it serves."
+		""
+		"Use the Link with an item to load it, empty-handed to take the result back. It crafts in place, climbing the chain only as far as your chosen tier."
+		""
+		"For automation: pipe into any side but the bottom to feed input, draw from the bottom to empty output. Only one Link crafts at a time."
+		""
+		"Orb Vitae Link variant: seat a Blood Orb inside it - it will pull Essentia Vitae from the bound altar straight into the orb owner's Anima."
+		"{@pagebreak}"
+		"Vitae Link - это реле, которое крафтит за тебя на связанном алтаре, но только до выбранного тобой тира."
+		""
+		"Создание: помести Ara Vitae внутрь более крупного алтаря с минимум 1,500 Essentia Vitae - малый алтарь схлопнется и превратится в Link."
+		""
+		"Размести Link в радиусе 8 блоков от алтаря. Он автоматически тянет Essentia Vitae из бассейна алтаря и использует его рунные бонусы. Зажми Shift и используй Link чтобы выбрать тир крафта. Максимум - один тир ниже алтаря, которому он служит."
+		""
+		"Используй Link с предметом в руке чтобы загрузить его, пустой рукой - чтобы забрать результат. Link крафтит на месте, поднимаясь по цепочке только до выбранного тира."
+		""
+		"Для автоматизации: подавай предметы в любую сторону кроме нижней, забирай результат снизу. Одновременно крафтит только один Link."
+		""
+		"Вариант Orb Vitae Link: вставь Blood Orb внутрь - он будет перекачивать Essentia Vitae из алтаря прямо в Anima владельца орба."
+	]
 	quest.4A1CF718DA71EAC5.quest_desc: [
 		"The feeding trough feeds nearby animals for breeding."
 		""
@@ -2184,6 +2254,12 @@
 		"Этот мод позволяет устанавливать очень высокие столбы, предлагая на выбор несколько различных типов, а не только варианты из обработанной древесины, алюминия и стали."
 	]
 	quest.4AF2F61FD389981F.quest_subtitle: "Decoration stuff"
+	quest.4AF78754EC20B0F6.quest_desc: [
+		"Perform the \"Breaching the Edge of the Demon Realm\" ritual to unlock your first starting dungeon!"
+		"{@pagebreak}"
+		"Проведите ритуал \"Breaching the Edge of Demon Realm\" Чтобы открыть свой первый стартовый данж!"
+	]
+	quest.4AF78754EC20B0F6.title: "Breaching the Edge of Demon Realm"
 	quest.4B1F758CB8DB73F5.quest_desc: [
 		"The &l&eChalice&r works like a &bbottomless milk bucket&r, &acuring you&r whenever you require. The &l&eLapis Lazuli Ritual&r will grant you this boon."
 		"{@pagebreak}"
@@ -2276,6 +2352,8 @@
 	]
 	quest.4F16E1AF399E74E4.quest_subtitle: "No more anvils ^o^"
 	quest.4F3E70AAD31A62A8.quest_desc: ["minecraft:swamp"]
+	quest.4F8E67CD8A60C47B.quest_desc: ["Every upgrade has a shadow. Downgrades are imposed by the Ritual of Sentient Downgrade and exchange unwanted upgrade levels for a curse, freeing Upgrade Points to reinvest elsewhere."]
+	quest.4F8E67CD8A60C47B.quest_subtitle: "Info for nerds"
 	quest.4F9AF422C4AA5B85.quest_desc: [
 		"lets you find any biome you want!"
 		"{@pagebreak}"
@@ -2715,6 +2793,8 @@
 		"Spires grow whenever the chunk holds at least a trace of the cluster's Aspect, with growth rate scaling against saturation, accelerating as the Aura fills. A chunk's natural cap is 100 per Aspect, though certain Rituals can raise it. Each new spire costs 45 Spiritus when the chunk's dominant Aspect matches the cluster, and yields 50 when burned in a Vas Maleficum (a net gain of 5 per spire). If the chunk's dominant Aspect does not match the cluster (for instance, a Raw-dominant chunk feeding a Ruina cluster), the cost rises to 90 Spiritus per spire and growth runs at 60% speed. Keep the chunk biased toward the Aspect you want to farm. A cluster may grow up to 7 spires tall."
 		""
 		"If you carry more than 512 total Spiritus in your inventory (across any gems, any type), you may harvest clusters by right-clicking with an empty hand. This strips all but the central spire, leaving the cluster to regrow. A pickaxe will shatter the entire cluster at once for the impatient. Manual harvest yields a modest 5 Spiritus per cluster."
+		""
+		"{image:milf:textures/quest_pic/raw_spiritus_crystal.png width:100 height:100 align:center fit:true}"
 	]
 	quest.6161B74A88A73B46.quest_subtitle: "Low HP build, pog!"
 	quest.617E14880D9D75A0.quest_desc: [
@@ -2724,6 +2804,18 @@
 	]
 	quest.617E14880D9D75A0.title: "A cage for our animal friends"
 	quest.61E590BED7EE9DA4.quest_desc: ["&l&eEntity magnet?!&r"]
+	quest.6245F17DF657C296.quest_desc: [
+		"Most upgrades are trained by performing the matching activity while wearing the chestplate; every time you do, the armour banks experience toward the next level. How much it banks depends on the upgrade:"
+		""
+		"• Proportional upgrades bank experience equal to the magnitude of the event: the damage taken or dealt, the health restored, the experience collected, or the distance moved. Bigger events teach the armour faster."
+		""
+		"• Per-event upgrades bank a flat point each time: one per block mined, or one per tick spent on fire or poisoned."
+		""
+		"A few upgrades (Brilliance, Curios Sockets, Elytra, Gilded) are not trained through activity at all and are simply applied from a tome. Each upgrade levels up at its own experience thresholds."
+		""
+		"You can read more about all the Upgrades in the guide book!"
+	]
+	quest.6245F17DF657C296.quest_subtitle: "Info for nerds"
 	quest.624A33C4995164C4.quest_desc: ["Hot enough furnace to produce &l&esteel&r, as well as some &eother useful resources&r"]
 	quest.625DBAE6C9492790.quest_desc: [
 		"Enchanter can enchant books with specific enchantments and improve them. "
@@ -2745,6 +2837,11 @@
 		"Теперь, когда у меня есть гораздо более прочная кожа, мне нужен столь же прочный металл. Самый прочный, что я смогу найти. Вскоре, бродя по незеру, я наткнулся на древние обломки. Я изучил металл и раскрыл весь его потенциал."
 		""
 		"Пришло время расширить свой арсенал. И начну я с патронажа."
+	]
+	quest.6308DD13E3339DBD.quest_desc: [
+		"Throw a piece of Sentient Armor onto the small 5×2×5 area above the Master Ritual Stone. The ritual extracts every upgrade currently inscribed on it as separate Upgrade Tomes (one per upgrade, preserving accumulated experience), then strips the armor clean. The tomes can later be inscribed back onto a fresh chestplate."
+		"{@pagebreak}"
+		"Поместите кусок Sentient Armor на небольшую площадку размером 5×2×5 над Главным ритуальным камнем. В ходе ритуала все улучшения, нанесенные на броню, будут извлечены в виде отдельных «Том улучшений» (по одному на каждое улучшение с сохранением накопленного опыта), после чего броня будет полностью очищена. Позже эти тома можно будет вновь нанести на новый нагрудник."
 	]
 	quest.636C2DC2295C1B6D.quest_desc: [
 		"The &l&6Poseidon's gift&r!"
@@ -2897,6 +2994,26 @@
 		""
 		"• Нажмите Shift и крутите колесико мыши чтобы выбрать цвет. Щелкните правой кнопкой мыши по блокам, чтобы перекрасить их в выбранный цвет."
 		"• Нажмите Shift, а затем щелкните правой кнопкой мыши, чтобы перекрасить целую пачку блоков соединенных между собой одним типом и цветом."
+	]
+	quest.68A54FCE72FFFCC1.quest_desc: [
+		"The Incense Altar multiplies Essentia Vitae gained from a single self-sacrifice. Instead of clicking dozens of times - one powerful offering with a significant multiplier."
+		""
+		"Usage: stand within 5 blocks of the altar to receive Blessed Sacrifice for 30 seconds. Right-clicking your Blood Orb drains nearly all your blood into the orb at once, after which Soul Fray sets in until the next blessing."
+		""
+		"Building: place the altar on a 3x3 platform, extend 3-block-wide paths in all 4 cardinal directions using Path blocks. Place varied blocks around for Tranquility: dirt, water, lava, leaves, logs, crops, fire. The more expensive the path material - the higher the bonus: Wooden +60%, Stone +120%, Worn Stone +200%, Obsidian +300%. Check your current bonus with a Divination Sigil."
+		""
+		"&lVERY&r quick example:"
+		"{image:milf:textures/quest_pic/incense_altar_example.png width:100 height:100 align:center fit:true}"
+		"{@pagebreak}"
+		"Incense Altar умножает количество Essentia Vitae с одного самопожертвования. Вместо многократных кликов - одна мощная жертва со значительным множителем."
+		""
+		"Использование: встань в 5 блоках от алтаря - получишь Blessed Sacrifice на 30 секунд. Правый клик Blood Orb сольёт почти всю кровь в орб за раз, после чего наступает Soul Fray до следующего благословения."
+		""
+		"Постройка: алтарь на платформе 3x3, от неё в 4 стороны тянутся дорожки шириной 3 блока из Path-блоков. Вокруг размещай разнообразные блоки для Tranquility: земля, вода, лава, листья, брёвна, грядки, огонь. Чем дороже материал дорожки - тем выше бонус: Wooden +60%, Stone +120%, Worn Stone +200%, Obsidian +300%. Текущий бонус можно проверить Divination Sigil."
+		""
+		"Вот небольшой пример:"
+		""
+		"{image:milf:textures/quest_pic/incense_altar_example.png width:100 height:100 align:center fit:true}"
 	]
 	quest.68B64BBF3CC18E1C.quest_subtitle: "[Right-click] on a block to summon a loyal Gargoyle guardian."
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a &cpoisoned&r &l&ewolf&r."]
@@ -3072,6 +3189,11 @@
 		"The strongest Chronon generator in the mod. Place it as a block and charge it once to start it, then it stores and produces Chronons on its own. Multiple Metronomes link together and work faster as a network."
 		"{@pagebreak}"
 		"Самый сильный генератор Chronon в моде. Его нужно поставить как блок и один раз зарядить для запуска, после чего он сам хранит и производит энергию. Несколько Метрономов связываются в сеть и работают быстрее вместе."
+	]
+	quest.6D99EAB635E2EF16.quest_desc: [
+		"Watches for a specific catalyst item dropped within the ritual area, consumes it, and crashes a corresponding meteor from above. The meteor's sphere comes to rest with its lowest block one block above the Master Ritual Stone, so the ritual circle is preserved. The exact landing altitude is calculated per-catalyst from the recipe's outermost sphere radius. Catalysts are defined by meteor recipes (consult JEI); each names the meteor that answers."
+		"{@pagebreak}"
+		"брось катализатор в зону ритуала, с неба упадёт соответствующий метеор"
 	]
 	quest.6DD0AB27900F46E3.quest_desc: [""]
 	quest.6DDD919AA913F5E3.quest_desc: ["A cruel ward: any living creature that steps onto it suffers a full heart of damage. Nearly invisible once inscribed, ideal for defending passages or feeding automated arrangements."]
@@ -3362,7 +3484,32 @@
 		"Это сложное устройство похоже на своего двоюродного брата - арбалет. Однако благодаря обширным исследованиям и инженерным разработкам мне удалось свести его к одноручному арбалету, который может сделать два дополнительных выстрела, прежде чем его нужно будет заряжать."
 	]
 	quest.7787ABAA319FB651.quest_desc: ["&aBreaks and pickups blocks&r, can be enchanted with any &bpickaxe enchantment&r"]
+	quest.7854CBAEADA18B57.quest_desc: [
+		"The Orb Vitae Link doesn't craft - it charges. Seat a Blood Orb inside (use with orb in hand, empty-handed to take it back), and it pulls Essentia Vitae from its bound altar straight into the orb owner's Anima, at the altar's full tier and runes, until the network is full."
+		""
+		"The Link sits lowest in the chain: it draws only while the altar is idle and no Vitae Link is crafting, sipping leftover essence so it never starves a working altar."
+		""
+		"Apply a redstone signal to pause it - while powered, charging stops. Its comparator output rises with how full the owner's Anima is, ideal for switching off your blood engines once you are topped off."
+		"{@pagebreak}"
+		""
+		"Orb Vitae Link не крафтит - он заряжает. Вставь Blood Orb (используй с орбом в руке, пустой рукой - забрать), и Link будет тянуть Essentia Vitae из связанного алтаря прямо в Anima владельца орба, на полном тире алтаря со всеми рунными бонусами, пока сеть не заполнится."
+		""
+		"Link сидит в самом низу цепочки приоритетов: тянет Essentia Vitae только пока алтарь простаивает и ни один Vitae Link не крафтит. Так он никогда не перехватывает ресурс у работающего алтаря."
+		""
+		"Подай редстоун-сигнал чтобы поставить Link на паузу - пока сигнал есть, зарядка остановлена. Компаратор на выходе показывает насколько заполнена Anima владельца - идеально для автоматического отключения кровяных двигателей когда бар полон."
+	]
 	quest.787735496233A905.quest_desc: ["When drunk it will grant &e35 Aureal&r to the player. It can also be used to input &l&eAureal&r into the &l&eHephaestus Forge&r."]
+	quest.789815CA55295F71.quest_desc: [
+		"Expands a worn Sentient Armor's upgrade capacity beyond its former limits."
+		"{@pagebreak}"
+		"Расширяет возможности модернизации Sentient Armor's за пределы прежних ограничений."
+	]
+	quest.78E0F36AAA8E6154.quest_desc: [
+		"Server-friendly endgame EV. Reads the configurations of nearby vanilla and Trial Spawners, simulates the kills they would produce, and feeds the resulting EV directly to your altar; no entities are spawned, no chunks load up with corpses."
+		"{@pagebreak}"
+		"эндгейм EV без спавна мобов: симулирует убийства ближайших спаунеров и отдаёт EV прямо в алтарь. Складывает вещи из убитых мобов в сундук над алтарём"
+	]
+	quest.78E0F36AAA8E6154.title: "The Torment Nexus"
 	quest.7930264A840C4BDB.quest_desc: [
 		"One of the most important blocks for further progression. Learn more about how to use it by reading the Spectrum book!"
 		"{@pagebreak}"
@@ -3401,6 +3548,19 @@
 		"An upgraded coin pouch that automatically picks up coins from the floor"
 		"{@pagebreak}"
 		"Улучшенный мешок для монет, автоматически поднимает монеты с пола"
+	]
+	quest.7AE805E97ED1D104.quest_desc: [
+		"The Blood Tank is a portable reservoir for Essentia Vitae and other fluids. Fill or drain it by right-clicking with a bucket. Retains its contents when broken, ideal for transporting large volumes. Glows faintly according to its contents."
+		""
+		"Each tier doubles capacity: from 16 buckets at tier 1 to 524,288 buckets at tier 16. Upgrade early and often."
+		""
+		"Upgrading: combine two Blood Tanks + Glass + Bloodstone in a crafting table. Result is one tier above the primary tank, fluids merge. Same fluids add together, different fluids - primary tank's contents take precedence."
+		"{@pagebreak}"
+		"Blood Tank - портативный резервуар для Essentia Vitae и других жидкостей. Заполняй и сливай правым кликом с ведром. При разрушении сохраняет содержимое. Слабо светится в зависимости от жидкости внутри."
+		""
+		"Каждый тир удваивает ёмкость: от 16 вёдер на 1 тире до 524,288 вёдер на 16-м. Улучшай как можно раньше."
+		""
+		"Улучшение: объедини два Blood Tank + Glass + Bloodstone на верстаке. Результат на один тир выше основного танка, жидкости сливаются. Одинаковые жидкости суммируются, разные - побеждает основной танк."
 	]
 	quest.7C082F9CC1474254.quest_desc: [
 		"Magnum Torch adds three kinds of very powerful torches that prevent mobs from spawning in a huge area. Only natural spawns will be prevented, so e.g. spawners and raids still work as they should."
@@ -3450,6 +3610,12 @@
 		"{@pagebreak}"
 		"Однако из-за его размеров мощность была &cснижена&r. Чтобы компенсировать это, я создал специальные &l&eбоеприпасы&r - &bкатализатор для масла&r. Если &aпоместить болты в горшок с маслом&r, они покроются маслом, применяя его эффект к поражённым целям. Имейте в виду: &cнекоторые масла не будут действовать на болты&r."
 	]
+	quest.7EC33CE042AD3676.quest_desc: [
+		"Watches a 21×21×21 area around the Master Ritual Stone for the moment of any non-player creature's death and drops a charged Raw Spiritus item at the death position. The richer the kill (Wither, Ender Dragon, Warden), the more Spiritus per drop. EV cost scales with the number of deaths processed each tick."
+		"{@pagebreak}"
+		"отслеживает смерти существ в радиусе 21×21×21, роняет Raw Spiritus на месте гибели. Чем сильнее моб - тем больше Spiritus"
+	]
+	quest.7EC33CE042AD3676.title: "The Ritual of Lost Souls"
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
 	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
 	quest.7EFCA744EC5BCFDB.quest_desc: [
@@ -3512,6 +3678,7 @@
 	]
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.01899FA102ABD33A.title: "Any #milf:metal_fences"
+	task.01C0F8B5DE9EEDCD.title: "Cry of the Forsaken Soul"
 	task.0201D3254268522D.title: "Kandar's Open Conjure"
 	task.020311F4DEE019DA.title: "Any #ytech:tanning_racks"
 	task.0231A968EC37120B.title: "Spectrum"
@@ -3529,6 +3696,7 @@
 	task.09936E3502457C61.title: "Any #milf:colored_glowblock"
 	task.09C8A19971E0C5CF.title: "FindMe"
 	task.09FBBC80BC28B007.title: "Any #c:glass_blocks"
+	task.0A8BF0365BCF8AB0.title: "Tabula Rasa"
 	task.0B1832E4208E1AA5.title: "Any #milf:iron_storage"
 	task.0E23718424EB6584.title: "Any #milf:polished_base_blocks"
 	task.0EB4593433321D21.title: "Any #c:saws"
@@ -3546,13 +3714,16 @@
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
 	task.17F51111E6673E64.title: "Any #animal_pen:animal_pens"
+	task.187C9713E05213E5.title: "Any #neovitae:altar/runes_t2"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1AE53C37C664CA3B.title: "Clavis"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
+	task.1E035F00A3923B5F.title: "Ritual of Meteo"
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"
 	task.207749237CB9FE16.title: "Defensive Arrays"
 	task.20D75746DF67A83F.title: "Movement and Transit Arrays"
 	task.223A6719946C7ABC.title: "Any #c:chests"
+	task.2354398433192DFF.title: "Any #neovitae:altar/runes_t4"
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.258E74CA68DE446A.title: "Item Locking"
@@ -3576,15 +3747,18 @@
 	task.2E75F41D80DEB4FE.title: "Any #minecraft:logs"
 	task.3010BA0C77BD53FA.title: "Strigeor's Higher Binding"
 	task.30EF11C70C08380B.title: "Enhancer Relics"
+	task.31969FC5A93B0C8B.title: "Any #neovitae:altar/runes_t1"
 	task.3198AD11970AE4C5.title: "Any #minecraft:planks"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
 	task.34B3E49B9A4E4B61.title: "basic"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
+	task.350A5A937753423B.title: "Sentient Extraction"
 	task.3692A13E4C6958CC.title: "Any #connectiblechains:catenary_items"
 	task.37BF27F02B385E1D.title: "BUT HOW DO YOU MAKE BEER?!"
 	task.37E4333D9D7C89EF.title: "So what's the point of all this?"
+	task.38B97B045CB58DBD.title: "The Torment Nexus"
 	task.38DF68FAD82285EB.title: "Any #starcatcher:tackle_boxes"
 	task.3A29E8F35850BD56.title: "Elevator"
 	task.3A5AE59EDDEBE0BA.title: "Any #minecraft:boats"
@@ -3593,6 +3767,7 @@
 	task.3C8D93CD09CDF958.title: "Any #hexerei:tallow_meltable"
 	task.3CC7AB10CF42EE49.title: "Inspector Gadget"
 	task.3CF465D57CE596A9.title: "Boss Checklist"
+	task.3CF6B07576AC93DD.title: "Downgrades"
 	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"
 	task.403F17B1F42C51C7.title: "Overclocking"
 	task.40ED385E3D23C00B.title: "Little Joys"
@@ -3625,11 +3800,15 @@
 	task.4F6145E6EAF3C5A0.title: "Iesnium Ritual Bowl"
 	task.4FC3D78F5ED8F928.title: "Redstone Arrays"
 	task.50145BF6C914A142.title: "Any #milf:gemstone_lamp"
+	task.50C270499A4A3120.title: "Soaring Skies"
 	task.5180AC955AE4C748.title: "Why do some quests come in different forms?"
 	task.5681B6E38A2DC015.title: "Harvest with ease"
+	task.56B98F00698B5FCE.title: "Crystallum Fractura"
 	task.56EE6B7B03B03D4D.title: "Tomes"
+	task.573221EE8F0A7F99.title: "Ritual of Sentient Evolution"
 	task.5733CBC7B63AE4B4.title: "source manipulation"
 	task.578EB8AADD098204.title: "Storage Actuator Base"
+	task.57EB27D28427564E.title: "Any #neovitae:altar/runes_t3"
 	task.583D11B3732CE886.title: "TrashSlot"
 	task.587A56D8D8AFA800.title: "Any #malum:runewood_logs"
 	task.58F6FDCF58A4331D.title: "Any #starcatcher:hooks"
@@ -3659,10 +3838,12 @@
 	task.6F0159439B990201.title: "Tier 4 Dimensional Storage Stabilizer"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
 	task.701E2CCC21092BDF.title: "Weapon/shield/armor [WIP]"
+	task.70666D7BC794CADC.title: "Well of Suffering"
 	task.715168A27BACCD77.title: "Hi wrld"
 	task.718761104CFF4A93.title: "Any #modern_industrialization:fluid_pipes"
 	task.7431F878DB34A30D.title: "Bridging"
 	task.745285CCE59E780F.title: "Any #milf:polished_gemstone_block"
+	task.746ABC8ABB3E1BA3.title: "Specialisation"
 	task.76CE25E2E78A0201.title: "Any #milf:pedestal_basic"
 	task.77B05217F3206FA8.title: "Crawl"
 	task.77C744B48E7A1B18.title: "Any #minecraft:beds"
@@ -3673,7 +3854,9 @@
 	task.7D883C5E2E946BC2.title: "Sacrificial Bowl"
 	task.7DAF10DA2032C3C2.title: "Golden Ritual Bowl"
 	task.7DFA2C0B9737E55D.title: "Spice of Life"
+	task.7EA81F98CCB0B5EE.title: "Upgrades"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"
 	task.7FAF7967D40C0369.title: "Malum"
+	task.7FCEEDA6DB984E36.title: "Focus Tiers and Topologies"
 }

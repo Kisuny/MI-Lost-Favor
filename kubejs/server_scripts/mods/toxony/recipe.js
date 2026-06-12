@@ -401,5 +401,66 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"toxony:mending_oil_pot"}]]
     })
 
-});
+    // Alts for copper crucible
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{item:"toxony:affinity_fusion_mix"}]],
+        outputItems:[[{item:"toxony:affinity_unknown_substance"}]]
+    })
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{item:"toxony:poison_paste"}]],
+        outputItems:[[{item:"toxony:toxic_paste"}]]
+    })
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{item:"toxony:redstone_mixture"}]],
+        outputItems:[[{item:"toxony:redstone_solution"}]]
+    })
+   
+    // Alts for alembic (EMI doesn't show this) 
+    miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+        inputItems:[
+            [{item:"toxony:toxin"}],
+            [{item:"minecraft:leather"}, 2]
+        ],
+        inputFluids:[[{fluid:"extended_industrialization:blazing_essence"}, 1]],
+        outputItems:[
+            [{item:"toxony:glass_vial"}],
+            [{item:"toxony:toxic_leather"}, 2],
+        ]
+    })
+    miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+        inputItems:[
+            [{item:"toxony:toxin"}],
+            [{item:"toxony:empty_oil_pot"}]
+        ],
+       inputFluids:[[{fluid:"extended_industrialization:blazing_essence"}, 1]],
+        outputItems:[
+            [{item:"toxony:glass_vial"}],
+            [{item:'toxony:empty_tox_pot'}],
+        ]
+    })
+    miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+        inputItems:[
+            [{item:"toxony:toxic_formula"}],
+            [{item:"toxony:glass_vial"}]
+        ],
+        inputFluids:[[{fluid:"extended_industrialization:blazing_essence"}, 1]],
+        outputItems:[
+            [{item:"toxony:glass_vial"}],
+            [{item:"toxony:toxin"}]
+        ]
+    })
 
+    // Shitcoding starts here
+    Ingredient.of("#toxony:possible_ingredients").itemIds.forEach(itemId => {
+        miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+            inputItems:[
+                [{item:"toxony:redstone_solution"}],
+                [{item: itemId}],
+            ],
+            inputFluids:[[{fluid:"extended_industrialization:blazing_essence"}, 1]],
+            outputItems:[
+                [{item:"toxony:affinity_solution", components: { "toxony:affinity_stored_item": itemId } }]
+            ],
+        })
+    })
+});

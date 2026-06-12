@@ -1,16 +1,17 @@
-filename = 'Terralith_1.21.x_v2.5.8.jar'
+filename = 'Terralith_1.21.x_v2.6.2.jar'
 name = 'Terralith'
-side = 'both'
-x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric', 'quilt' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4' ]
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'v2.6.2 ~ Neoforge Mod 1.21.1'
 
 [download]
-hash = 'bee0cfb1a8cd4bf3d96bccea224fb45d74de9085'
+hash = 'd4a9fe71b841f70edfb4b280f9bf5c58e4a28224'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6090387
+file-id = 8222737
 project-id = 513688

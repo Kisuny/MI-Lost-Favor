@@ -7,15 +7,14 @@ ServerEvents.recipes(event => {
 
     customWorktable(event, {
         pattern: [
-            " t ",
+            "   ",
             " w ",
             " e "
         ],
         reagents: ["u   "],
         key: {
-            "w": { "item": "eidolon_edoni:stimulating_incense" },
+            "w": { "item": "milf:miasma_orb" },
             "e": { "tag": "c:drinks/watery" },
-            "t": { "item": "eidolon_repraised:soul_harvest_incense" },
             "u": { "tag": "eidolon_repraised:patron_symbol" },
         },
         result: "milf:crimson_veil_elixir",

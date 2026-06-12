@@ -145,4 +145,5 @@ createNewItem('exchanging_card', { lang: { "en_us": "Exchanging Card", "ru_ru": 
 createNewItem('copying_card', { lang: { "en_us": "Copying Card", "ru_ru": "Карта копирования" } })
 createNewItem('cutting_card', { lang: { "en_us": "Cutting Card", "ru_ru": "Карта резки" } })
 createNewItem('blank_card', { lang: { "en_us": "Blank Card" } })
+createNewItem('miasma_orb', { lang: { "ru_ru": "Сфера скверны" }, stackSize: 1, rarity: 'epic'  })
 

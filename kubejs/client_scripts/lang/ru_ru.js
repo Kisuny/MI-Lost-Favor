@@ -207,7 +207,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add("text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${MilfEffects.UP_DOWN("World Tier: Haven")}, чтобы разблокировать её`)
 
     event.add("dimension.spectrum.deeper_down", `Глубокие Низины`)
-
+    event.add("milf.crimson_veil_elixir.tooltip", `Выпей это и ${MilfEffects.WIGGLE("усни")} - и лишь во сне откроется путь в ${MilfEffects.GRAD.custom("Кровавые Пустоши", "#8A0303", "#D12F0E")}, за ${MilfEffects.GLITCH("багровую завесу")}, где покоятся ${MilfEffects.GRAD.custom("ужасы мёртвых", "#D12F0E", "#841B4C")}`)
 
     //#region fix forbidden_arcanus langs
     event.add("block.forbidden_arcanus.clibano_center", "Клибан")
@@ -364,6 +364,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.ore_tooltip.eternal_starlight', '✦ Eternal Starlight')
     event.add('milf.ore_tooltip.deeper_down', '▼ Deeper Down')
     event.add('milf.ore_tooltip.the_end', '🌌 Энд')
+    event.add('milf.ore_tooltip.crimson_veil', '🥀 Кровавые Пустоши')
     event.add('milf.ore_tooltip.quarry_only', 'Добывается только в Electric Quarry')
     event.add('milf.ore_tooltip.silver_byproduct', 'Можно получить как побочный продукт при переработке свинцовой руды')
 

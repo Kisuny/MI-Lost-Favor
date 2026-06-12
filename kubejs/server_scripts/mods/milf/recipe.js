@@ -70,4 +70,24 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    customAlchemicalForgeCraft(event, {
+        affinities: [
+            "toxony:heat",
+            "toxony:nether",
+            "toxony:decay"
+        ],
+        auxiliary: [
+            {
+                "item": "eidolon_edoni:stimulating_incense"
+            },
+            {
+                "item": "eidolon_repraised:soul_harvest_incense"
+            }
+        ],
+        main: {
+            "item": "eidolon_repraised:shadow_gem"
+        },
+        result: "milf:miasma_orb"
+    })
+
 })

@@ -43,13 +43,13 @@ ServerEvents.recipes(event => {
         fluidAmount: 1000,
         ingredients: [
             { "item": "minecraft:book" },
+            { "item": "toxony:poison_paste" },
             { "item": "minecraft:rotten_flesh" },
             { "item": "minecraft:rotten_flesh" },
             { "item": "minecraft:rotten_flesh" },
             { "item": "minecraft:rotten_flesh" },
             { "item": "minecraft:rotten_flesh" },
-            { "item": "minecraft:rotten_flesh" },
-            { "item": "minecraft:rotten_flesh" },
+            { "item": "toxony:poison_paste" },
         ],
         output: "eidolon_repraised:codex",
         removeRecipe: true

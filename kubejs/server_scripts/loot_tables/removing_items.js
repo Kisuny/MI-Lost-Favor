@@ -69,6 +69,7 @@ LootJS.modifiers(event => {
         { item_name: 'yo_hooks:gold_hook_head' },
         { item_name: 'yo_hooks:diamond_hook_head' },
         { item_name: '#minecraft:saplings' },
+        { item_name: 'eidolon_repraised:lead_ingot' },
     ]
     const loot_types = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]
 

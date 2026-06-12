@@ -355,6 +355,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'aquaculture:worm_farm',
         'tide:fishing_journal',
         /tide:.*_bait/,
+        /smallships:wormwood_.*/,
     ]
 
     list.forEach(item => {

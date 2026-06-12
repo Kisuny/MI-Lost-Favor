@@ -11,13 +11,14 @@ ItemEvents.modifyTooltips(event => {
             locations.forEach(loc => {
                 let dimText;
                 switch (loc.dim) {
-                    case 'nether':           dimText = Text.translate("milf.ore_tooltip.nether").red(); break;
+                    case 'nether':            dimText = Text.translate("milf.ore_tooltip.nether").red(); break;
                     case 'eternal_starlight': dimText = Text.translate("milf.ore_tooltip.eternal_starlight").lightPurple(); break;
-                    case 'deeper_down':      dimText = Text.translate("milf.ore_tooltip.deeper_down").darkPurple(); break;
-                    case 'the_end':          dimText = Text.translate("milf.ore_tooltip.the_end").blue(); break;
-                    default:                 dimText = Text.translate("milf.ore_tooltip.overworld").green();
+                    case 'deeper_down':       dimText = Text.translate("milf.ore_tooltip.deeper_down").darkPurple(); break;
+                    case 'the_end':           dimText = Text.translate("milf.ore_tooltip.the_end").blue(); break;
+                    case 'crimson_veil':      dimText = Text.translate("milf.ore_tooltip.crimson_veil").darkRed(); break;
+                    default:                  dimText = Text.translate("milf.ore_tooltip.overworld").green();
                 }
-                event.add(item, { shift: true }, dimText.copy().append(Text.of(`  Y: ${loc.min} ~ ${loc.max}`).gold()));
+                event.add(item, { shift: true }, dimText.copy().append(Text.of(` Y: ${loc.min} ~ ${loc.max}`).gold()));
             });
         });
     };
@@ -35,6 +36,7 @@ ItemEvents.modifyTooltips(event => {
     const ES = (min, max) => ({ dim: 'eternal_starlight', min: min, max: max });
     const DD = (min, max) => ({ dim: 'deeper_down', min: min, max: max });
     const EN = (min, max) => ({ dim: 'the_end', min: min, max: max });
+    const CV = (min, max) => ({ dim: 'crimson_veil', min: min, max: max });
 
     // ── Vanilla ──────────────────────────────────────────────────────────────
     addOre(['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'], [OW(0, 80)]);
@@ -89,4 +91,7 @@ ItemEvents.modifyTooltips(event => {
     addOre(['malum:cthonic_gold_ore', 'minecraft:deepslate_gold_ore'], [ES(-64, 40)]);
     addOre('malum:blazing_quartz_ore', [NE(-16, 112)]);
 
+    // Removed
+    // ── Evilcraft ────────────────────────────────────────────────────
+    // addOre(['evilcraft:dark_ore_deepslate', 'evilcraft:dark_ore'], [CV(-64, 80)]);
 })

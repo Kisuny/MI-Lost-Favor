@@ -110,6 +110,13 @@ global.emixxGroups = [
             "spectrum:ink_flask"
         ],
     },
+    {
+        type: "group",
+        name: "upgrade_tome",
+        items: [
+            "neovitae:upgrade_tome"
+        ],
+    },
     { type: "tag", name: "item_shelves", tag: "suppsquared:item_shelves" },
     { type: "tag", name: "nubs", tag: "architects_palette:nubs" },
     { type: "tag", name: "candle_holders", tag: "supplementaries:candle_holders" },

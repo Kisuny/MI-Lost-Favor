@@ -1,7 +1,7 @@
 {
   "has_precipitation": false,
-  "temperature": 2.0,
-  "downfall": 0.0,
+  "temperature": 1.4,
+  "downfall": 0.9,
   "effects": {
     "fog_color": 9903132,
     "water_color": 10027008,
@@ -9,7 +9,7 @@
     "sky_color": 8530731,
     "grass_color": 7932940,
     "foliage_color": 7341317,
-    "grass_color_modifier": "dark_forest",
+    "grass_color_modifier": "swamp",
     "ambient_sound": "minecraft:ambient.crimson_forest.loop",
     "music": {
       "max_delay": 24000,
@@ -28,7 +28,9 @@
   "carvers": {},
   "features": [
     [],
-    [],
+    [
+        "milf:blood_lake"
+    ],
     [],
     [],
     [],
@@ -36,14 +38,10 @@
     [],
     [],
     [
-        "minecraft:patch_grass_forest",
-        "minecraft:patch_tall_grass",
-        "minecraft:patch_grass_jungle",
         "milf:crimson_roots_patch",
-        "minecraft:red_mushroom_nether",
         "milf:crimson_fungus_patch",
-        "milf:blood_tree",
-        "milf:big_blood_tree"
+        "milf:crimson_mangrove_tree",
+        "milf:crimson_mangrove_tree_tall"
     ],
     []
   ],

@@ -1696,6 +1696,21 @@
                           "if_true": {
                             "type": "minecraft:biome",
                             "biome_is": [
+                              "milf:crimson_mangrove_swamp"
+                            ]
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "eternal_starlight:nightfall_mud"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:biome",
+                            "biome_is": [
                               "minecraft:mushroom_fields"
                             ]
                           },
@@ -2349,6 +2364,21 @@
                             "type": "minecraft:block",
                             "result_state": {
                               "Name": "minecraft:mud"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:biome",
+                            "biome_is": [
+                              "milf:crimson_mangrove_swamp"
+                            ]
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "eternal_starlight:nightfall_mud"
                             }
                           }
                         },

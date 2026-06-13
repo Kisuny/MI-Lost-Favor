@@ -1,0 +1,147 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "can_grow_roots": true,
+    "decorators": [
+      {
+        "type": "minecraft:leave_vine",
+        "probability": 0.125
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:randomized_int_state_provider",
+          "property": "age",
+          "source": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:mangrove_propagule",
+              "Properties": {
+                "age": "0",
+                "hanging": "true",
+                "stage": "0",
+                "waterlogged": "false"
+              }
+            }
+          },
+          "values": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 4,
+            "min_inclusive": 0
+          }
+        },
+        "directions": ["down"],
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "force_dispatch": false,
+        "probability": 0.14,
+        "required_empty_blocks": 2
+      },
+      {
+        "type": "minecraft:beehive",
+        "probability": 0.0
+      }
+    ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "eternal_starlight:nightfall_mud"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:random_spread_foliage_placer",
+      "foliage_height": 3,
+      "height": 4,
+      "leaf_placement_attempts": 120,
+      "offset": 0,
+      "radius": 3
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:mangrove_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 3,
+      "lower_size": 0,
+      "upper_size": 3
+    },
+    "root_placer": {
+      "type": "minecraft:mangrove_root_placer",
+      "root_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "chipped:crimson_mangrove_roots"
+        }
+      },
+      "root_requires_clearance": false,
+      "above_root_placement": {
+        "above_root_placement_chance": 0.0,
+        "above_root_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:moss_carpet"
+          }
+        }
+      },
+      "below_root_placement": {
+        "below_root_placement_chance": 0.083333336,
+        "below_root_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:hanging_roots"
+          }
+        }
+      },
+      "mangrove_root_placement": {
+        "can_be_exposed": true,
+        "can_grow_through": [
+          "eternal_starlight:nightfall_mud",
+          "minecraft:muddy_mangrove_roots",
+          "minecraft:moss_block",
+          "minecraft:moss_carpet",
+          "minecraft:hanging_roots",
+          "minecraft:dirt",
+          "minecraft:clay",
+          "risus:blood_fluid_block"
+        ],
+        "max_root_length": 8,
+        "max_root_width": 6,
+        "random_skew_chance": 0.5,
+        "root_column_max_height": 8,
+        "root_placement_attempts": 3,
+        "muddy_roots_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "chipped:crimson_mangrove_roots"
+          }
+        },
+        "muddy_roots_in": [
+          "eternal_starlight:nightfall_mud"
+        ]
+      },
+      "trunk_offset_y": 0
+    },
+    "trunk_placer": {
+      "type": "minecraft:forking_trunk_placer",
+      "base_height": 7,
+      "height_rand_a": 2,
+      "height_rand_b": 2
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:crimson_stem"
+      }
+    }
+  }
+}

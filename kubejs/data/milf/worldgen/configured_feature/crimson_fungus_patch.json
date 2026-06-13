@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {"data": {"Name": "chipped:bulbed_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:button_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:clustered_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:double_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:franken_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:hooded_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:micro_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:mini_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:crimson_fungus_bulb"}, "weight": 1},
+              {"data": {"Name": "chipped:crimson_fungus_bushel"}, "weight": 1},
+              {"data": {"Name": "chipped:crimson_fungus_cluster"}, "weight": 1},
+              {"data": {"Name": "chipped:crimson_fungus_trio"}, "weight": 1},
+              {"data": {"Name": "chipped:umbrella_crimson_fungus"}, "weight": 1},
+              {"data": {"Name": "chipped:wicked_crimson_fungus"}, "weight": 1}
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [0, 0, 0],
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [0, -1, 0],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "eternal_starlight:nightfall_mud"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

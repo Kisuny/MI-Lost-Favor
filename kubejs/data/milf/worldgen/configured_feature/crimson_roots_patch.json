@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {"data": {"Name": "chipped:sprouting_crimson_roots"}, "weight": 4},
+              {"data": {"Name": "chipped:sprouting_crimson_roots_bulb"}, "weight": 2},
+              {"data": {"Name": "chipped:wilted_crimson_roots_bulb"}, "weight": 2},
+              {"data": {"Name": "chipped:wilted_crimson_roots_bud"}, "weight": 2},
+              {"data": {"Name": "chipped:small_crimson_roots_bud"}, "weight": 2}
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [0, 0, 0],
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [0, -1, 0],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "eternal_starlight:nightfall_mud"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

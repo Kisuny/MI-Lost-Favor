@@ -1,0 +1,40 @@
+{
+	"enhancers": "forbidden_arcanus:elementarium",
+	"essences": {
+		"aureal": 200,
+		"blood": 1000,
+		"souls": 5,
+		"experience": 500
+	},
+	"inputs": [
+		{
+			"amount": 4,
+			"ingredient": {
+				"item": "malum:refined_soulstone"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "neovitae:ingot_hellforged"
+			}
+		},
+		{
+			"amount": 2,
+			"ingredient": {
+				"item": "occultism:iesnium_ingot"
+			}
+		}
+	],
+	"magic_circle": "forbidden_arcanus:create_item",
+	"main_ingredient": {
+		"item": "neovitae:sentient_scythe"
+	},
+	"result": {
+		"type": "forbidden_arcanus:create_item",
+		"result_item": {
+			"count": 1,
+			"id": "malum:crude_scythe"
+		}
+	}
+}

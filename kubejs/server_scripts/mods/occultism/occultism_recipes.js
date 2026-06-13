@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
                 "item": "enchanted:spirit_of_otherwhere"
             },
             {
-                "item": "enchanted:attuned_stone_charged"
+                "item": "neovitae:animus_mote"
             }
         ],
         main: {

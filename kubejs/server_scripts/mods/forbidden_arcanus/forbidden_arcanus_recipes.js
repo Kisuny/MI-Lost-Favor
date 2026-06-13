@@ -14,15 +14,31 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    event.shapeless(Item.of("forbidden_arcanus:mundabitur_dust", 4), [
-        "minecraft:gunpowder",
-        "minecraft:phantom_membrane",
-        "minecraft:bone_meal",
-        "forbidden_arcanus:arcane_crystal_dust",
-        "minecraft:redstone",
-        "minecraft:blaze_powder",
-        "occultism:echo_dust",
-    ]);
+    // event.shapeless(Item.of("forbidden_arcanus:mundabitur_dust", 4), [
+    //     "minecraft:gunpowder",
+    //     "minecraft:phantom_membrane",
+    //     "minecraft:bone_meal",
+    //     "forbidden_arcanus:arcane_crystal_dust",
+    //     "minecraft:redstone",
+    //     "minecraft:blaze_powder",
+    //     "occultism:echo_dust",
+    // ]);
+
+    alchemyTableCraft(event, {
+        input: [
+            { tag: 'milf:basic_gemstone_powders' },
+            { item: 'minecraft:phantom_membrane' },
+            { item: 'forbidden_arcanus:arcane_crystal_dust' },
+            { item: 'occultism:echo_dust' },
+            { item: 'spectrum:onyx_powder' },
+        ],
+        output: 'forbidden_arcanus:mundabitur_dust',
+        count: 4,
+        syphon: 1500,
+        ticks: 200,
+        upgradeLevel: 5,
+        removeRecipe: true
+    });
 
     customPedestalCraft(event, {
         tier: "advanced", onyx: 8, citrine: 32, time: 600, experience: 8.0, yield_upgrades: true,

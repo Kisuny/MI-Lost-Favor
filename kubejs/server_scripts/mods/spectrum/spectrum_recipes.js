@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
             }
         ],
         main: {
-            "item": "enchanted:attuned_stone_charged"
+            "item": "neovitae:activation_crystal_weak"
         },
         result: "milf:table_core"
     })

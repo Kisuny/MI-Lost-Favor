@@ -1483,6 +1483,7 @@
 					type: "advancement"
 				}
 			]
+			shape: "gear"
 			tasks: [{
 				id: "1C1FCBB0D51B5346"
 				type: "checkmark"
@@ -1567,6 +1568,7 @@
 					type: "advancement"
 				}
 			]
+			shape: "gear"
 			tasks: [{
 				id: "0149479D8F498A42"
 				type: "checkmark"
@@ -1632,6 +1634,7 @@
 					type: "advancement"
 				}
 			]
+			shape: "gear"
 			tasks: [{
 				id: "15524DB7F6CFD185"
 				type: "checkmark"
@@ -2973,7 +2976,7 @@
 			]
 			id: "6D109319B6187844"
 			min_required_dependencies: 1
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "2351D51179825A9C"
 				item: { count: 1, id: "simplybows:upgrades/enchanted_bow_string" }
@@ -2994,7 +2997,7 @@
 			]
 			id: "525A6BE4954C35A2"
 			min_required_dependencies: 1
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "1CEDA00E282E601A"
 				item: { count: 1, id: "simplybows:upgrades/reinforced_bow_frame" }
@@ -3015,7 +3018,7 @@
 			]
 			id: "72B6854C6462FF49"
 			min_required_dependencies: 1
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "07F53918A099E59B"
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_pain" }
@@ -3036,7 +3039,7 @@
 			]
 			id: "42AE79A67E925EBC"
 			min_required_dependencies: 1
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "08C89885681DC674"
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_bounty" }
@@ -3057,7 +3060,7 @@
 			]
 			id: "72A5EBF8F388C559"
 			min_required_dependencies: 1
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "700C3C1FBA3E3560"
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_chaos" }
@@ -3078,7 +3081,7 @@
 			]
 			id: "17A58F609A5D4C97"
 			min_required_dependencies: 1
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "20C79C63425B3349"
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_grace" }
@@ -3371,7 +3374,7 @@
 		{
 			dependencies: ["002562156B0D8E9F"]
 			id: "2BAF1070D316E4A4"
-			shape: "gear"
+			shape: "circle"
 			tasks: [{
 				id: "7142828AFBDBF9A3"
 				item: { count: 1, id: "minecraft:enchanting_table" }
@@ -3383,7 +3386,7 @@
 		{
 			dependencies: ["2BAF1070D316E4A4"]
 			id: "5E639A3B6E268A89"
-			shape: "gear"
+			shape: "circle"
 			tasks: [{
 				count: 15L
 				id: "400B755DFDFB7E34"

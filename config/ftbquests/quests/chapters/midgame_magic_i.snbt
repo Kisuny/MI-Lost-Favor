@@ -13,7 +13,7 @@
 		{
 			dependencies: ["4D5DFD75A11BE595"]
 			id: "3682A94D1B71ED30"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				id: "25CB2D0B385D4533"
 				type: "checkmark"
@@ -34,7 +34,7 @@
 				table_id: 8640325169665508974L
 				type: "choice"
 			}]
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				count: 8L
 				id: "17EBE6D06902A269"
@@ -50,7 +50,7 @@
 				"3682A94D1B71ED30"
 			]
 			id: "226EC62BA172DB5D"
-			shape: "square"
+			shape: "gear"
 			tasks: [
 				{
 					id: "76CE25E2E78A0201"
@@ -69,7 +69,7 @@
 		{
 			dependencies: ["226EC62BA172DB5D"]
 			id: "73DAABF80C068AA2"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				count: 8L
 				id: "15D15E5200247C44"
@@ -168,7 +168,7 @@
 				"58111B4CAD89BCCE"
 			]
 			id: "4D4846179574789A"
-			shape: "square"
+			shape: "gear"
 			tasks: [
 				{
 					advancement: "spectrum:craft_cmy_pedestal"
@@ -333,7 +333,7 @@
 		{
 			dependencies: ["73DAABF80C068AA2"]
 			id: "591843445BE8DF11"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				id: "28A38676B19E5C72"
 				item: { count: 1, id: "spectrum:shimmerstone_gem" }
@@ -460,7 +460,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["591843445BE8DF11"]
+			dependencies: [
+				"591843445BE8DF11"
+				"50BA00AE327AF2D2"
+			]
 			id: "4C56E87E195A4339"
 			shape: "gear"
 			tasks: [{
@@ -474,7 +477,7 @@
 		{
 			dependencies: ["4C56E87E195A4339"]
 			id: "6071F775D9AB5DBA"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				advancement: "spectrum:collect_vegetal"
 				criterion: ""
@@ -487,7 +490,7 @@
 		{
 			dependencies: ["6071F775D9AB5DBA"]
 			id: "58111B4CAD89BCCE"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				id: "0690302B69EE721E"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:colored_saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -499,7 +502,7 @@
 		{
 			dependencies: ["4D4846179574789A"]
 			id: "44768370EB45538C"
-			shape: "square"
+			shape: "gear"
 			tasks: [
 				{
 					id: "47DD8773E96D807F"
@@ -654,7 +657,7 @@
 		{
 			dependencies: ["03FD9E737AD73A39"]
 			id: "6FC03E8F2A62B6AC"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "37BF27F02B385E1D"
 				type: "checkmark"
@@ -687,7 +690,7 @@
 		{
 			dependencies: ["44768370EB45538C"]
 			id: "2CBD884256778D81"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				advancement: "spectrum:collect_all_basic_pigments_besides_brown"
 				criterion: ""
@@ -770,7 +773,6 @@
 		{
 			dependencies: ["4B801253049DAC2F"]
 			id: "0309870114418120"
-			shape: "gear"
 			tasks: [{
 				id: "7E6E68718164E7B5"
 				item: { count: 1, id: "spectrum:redstone_transceiver" }
@@ -805,7 +807,7 @@
 		{
 			dependencies: ["6071F775D9AB5DBA"]
 			id: "4460268337879CAD"
-			shape: "square"
+			shape: "gear"
 			tasks: [
 				{
 					advancement: "spectrum:collect_all_basic_shards"
@@ -863,7 +865,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["60F83295651EE0CF"]
+			dependencies: [
+				"60F83295651EE0CF"
+				"3C4D5E6F7A8B0021"
+			]
 			id: "4D5DFD75A11BE595"
 			shape: "gear"
 			size: 2.0d
@@ -1086,7 +1091,6 @@
 			dependencies: ["4E984D0C4BB23055"]
 			hide_dependency_lines: false
 			id: "426F71334E75DDD0"
-			shape: "gear"
 			tasks: [{
 				id: "0FC4E5ADDF74B638"
 				item: { count: 1, id: "ars_additions:ritual_locate_structure" }

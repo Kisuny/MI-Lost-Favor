@@ -11,7 +11,7 @@
 	quest_links: [{
 		id: "7ADFF938429316AD"
 		linked_quest: "752A68C79A982D82"
-		shape: "gear"
+		shape: "none"
 		x: 15.5d
 		y: 6.5d
 	}]
@@ -858,7 +858,7 @@
 		{
 			dependencies: ["1A029535714421E5"]
 			id: "3E3ED1063839E3F3"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "15CFA1FEF0F230FF"
@@ -2536,7 +2536,7 @@
 				"0A02202153409596"
 			]
 			id: "6ACF4A657414E3D6"
-			shape: "gear"
+			shape: "heart"
 			tasks: [{
 				id: "1D0408509AFDB009"
 				item: { count: 1, id: "apotheosis:gem_case" }

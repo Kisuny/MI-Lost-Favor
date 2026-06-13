@@ -876,7 +876,7 @@
 				}
 			]
 			x: 7.5d
-			y: -12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["50F301D56A81D523"]
@@ -897,7 +897,7 @@
 				}
 			]
 			x: 21.5d
-			y: -11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["32841D742F4803B6"]
@@ -918,7 +918,7 @@
 				}
 			]
 			x: 25.5d
-			y: -12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["6FF1DC69F8A521F8"]
@@ -981,7 +981,7 @@
 				}
 			]
 			x: 26.5d
-			y: -12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["32841D742F4803B6"]
@@ -1044,7 +1044,7 @@
 				}
 			]
 			x: 22.5d
-			y: -11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["50F301D56A81D523"]
@@ -1107,7 +1107,7 @@
 				}
 			]
 			x: 8.5d
-			y: -12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["5F3D6F7D4DB4A97B"]
@@ -1149,7 +1149,7 @@
 				}
 			]
 			x: 11.5d
-			y: -11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5F3D6F7D4DB4A97B"]
@@ -1254,7 +1254,7 @@
 				}
 			]
 			x: 12.5d
-			y: -11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["43D7A206F79B9F48"]
@@ -1262,7 +1262,6 @@
 				id: "neovitae:array_spirit_siphon"
 			}
 			id: "6A7D9640907654A2"
-			shape: "gear"
 			tasks: [
 				{
 					id: "79B786A3105F0F69"
@@ -1990,7 +1989,6 @@
 		{
 			dependencies: ["1A2B3C4D5E6F7018"]
 			id: "304A749D0C7B2F06"
-			shape: "gear"
 			tasks: [{
 				id: "2466E18441236F6D"
 				item: { count: 1, id: "neovitae:upgrade_tome" }
@@ -2002,7 +2000,6 @@
 		{
 			dependencies: ["1A2B3C4D5E6F7018"]
 			id: "1A16CF965AF2EEC5"
-			shape: "gear"
 			tasks: [{
 				id: "571B54042AE56ED2"
 				item: { count: 1, id: "neovitae:training_bracelet" }
@@ -2099,7 +2096,7 @@
 				}
 				{
 					count: 36L
-					id: "29F6C823A877F280"
+					id: "35F43EEFEB0DD456"
 					item: { count: 1, id: "neovitae:ingot_hellforged" }
 					type: "item"
 				}
@@ -2944,6 +2941,40 @@
 			}]
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["05EFE56056E7F4E6"]
+			id: "05488D2D100A053D"
+			min_width: 300
+			shape: "heart"
+			tasks: [{
+				id: "52E98B1AEDFF7713"
+				item: { count: 1, id: "neovitae:spike_trap" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["43D7A206F79B9F48"]
+			icon: {
+				id: "neovitae:array_vortex"
+			}
+			id: "21E99400966C8A76"
+			shape: "heart"
+			tasks: [
+				{
+					id: "2B6F79C4E2670010"
+					item: { count: 1, id: "neovitae:array_vortex" }
+					type: "item"
+				}
+				{
+					id: "3D49BC235E8226E7"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -10.0d
 		}
 	]
 }

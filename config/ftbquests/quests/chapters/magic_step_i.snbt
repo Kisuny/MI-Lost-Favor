@@ -35,7 +35,7 @@
 				}
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "1BD432C9E725BF98"
 				item: { count: 1, id: "paganbless:black_thorn_log" }
@@ -431,7 +431,7 @@
 		{
 			dependencies: ["1714360882474479"]
 			id: "6A2FCA07586ED280"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "51173DA1477DA9F8"
 				item: { components: { "hexerei:book": { book: "hexerei:book_of_shadows", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 1974555292, -1205909360, -1100320342, -1275464202 ] } }, count: 1, id: "hexerei:book_of_shadows" }
@@ -902,7 +902,7 @@
 		{
 			dependencies: ["09D1CCA04959E0ED"]
 			id: "6A2D449813C8A87E"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "74CBE848ADE23FB1"
 				item: { count: 1, id: "hexerei:mushroom_witch_hat" }
@@ -1223,7 +1223,7 @@
 		{
 			dependencies: ["2B388DAC1919D26C"]
 			id: "5A4BB58AB11D4B81"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				id: "06BB24175C3B05AC"
 				item: { count: 1, id: "enchanted:witch_oven" }
@@ -1235,6 +1235,7 @@
 		{
 			dependencies: ["5A4BB58AB11D4B81"]
 			id: "5D4654627EEAA5B6"
+			shape: "gear"
 			tasks: [{
 				id: "33D9DF58E39566DA"
 				item: { count: 1, id: "enchanted:clay_jar" }
@@ -1335,7 +1336,7 @@
 				"0C3E53568C8342C1"
 			]
 			id: "0E4BFAA97BD15447"
-			shape: "hexagon"
+			shape: "gear"
 			tasks: [{
 				count: 6L
 				id: "2072CAEDD8B3408E"
@@ -1571,7 +1572,6 @@
 			dependencies: ["36ABE0F50C03A3AC"]
 			hide_dependency_lines: false
 			id: "3827371BD2D8A5BA"
-			shape: "gear"
 			tasks: [{
 				id: "1654AAB7BFA4BB6A"
 				item: { count: 1, id: "enchanted:mutandis" }

@@ -71,6 +71,7 @@
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
 			id: "4057F0E61DC737E0"
+			shape: "gear"
 			tasks: [{
 				icon: {
 					id: "forbidden_arcanus:deepslate_arcane_crystal_ore"
@@ -92,6 +93,7 @@
 			]
 			hide_dependency_lines: true
 			id: "6D62B6D792D203BA"
+			shape: "gear"
 			tasks: [{
 				id: "044B3D1EC2ADE7DC"
 				item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
@@ -126,6 +128,7 @@
 		{
 			dependencies: ["6D62B6D792D203BA"]
 			id: "3EA4DF00F5156F2E"
+			shape: "gear"
 			tasks: [
 				{
 					count: 48L
@@ -254,7 +257,9 @@
 				"787735496233A905"
 				"70A0A078B94FF034"
 			]
+			hide_until_deps_complete: false
 			id: "0C1A0D4E0DF5CE9C"
+			shape: "heart"
 			tasks: [{
 				id: "34738715144E753F"
 				item: { count: 1, id: "forbidden_arcanus:quantum_catcher" }
@@ -648,6 +653,7 @@
 		}
 		{
 			dependencies: ["09A4E941382DDCB7"]
+			hide_until_deps_complete: false
 			id: "5B37B11A0B0A84E6"
 			rewards: [{
 				auto: "enabled"
@@ -661,7 +667,7 @@
 				team_reward: false
 				type: "custom"
 			}]
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				dimension: "eternal_starlight:starlight"
 				icon: {
@@ -705,8 +711,8 @@
 				team_reward: false
 				type: "custom"
 			}]
-			shape: "gear"
-			size: 2.0d
+			shape: "heart"
+			size: 1.5d
 			tasks: [
 				{
 					id: "646AA3534E53BAD4"
@@ -1271,8 +1277,8 @@
 		{
 			dependencies: ["026821F02D50FE0D"]
 			id: "1E9F6AAB7EF2BE01"
-			shape: "gear"
-			size: 2.0d
+			shape: "heart"
+			size: 1.5d
 			tasks: [{
 				id: "0506AF75ED93D34B"
 				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
@@ -1421,6 +1427,18 @@
 			]
 			hide_dependency_lines: true
 			id: "42579E72777FEA41"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "malum:block/ores/soulstone_ore"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5F437D0400382507"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [

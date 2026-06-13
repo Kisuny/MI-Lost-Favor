@@ -186,6 +186,7 @@
 				id: "eidolon_repraised:pewter_blend"
 			}
 			id: "2CEE9E7C2C14CBB8"
+			shape: "gear"
 			tasks: [
 				{
 					id: "03B1DC9351DFC927"
@@ -207,6 +208,7 @@
 				id: "eidolon_repraised:crucible"
 			}
 			id: "66A1D185BC37064A"
+			shape: "gear"
 			tasks: [
 				{
 					id: "03DFABE92208809B"
@@ -244,6 +246,7 @@
 		{
 			dependencies: ["2CEE9E7C2C14CBB8"]
 			id: "585AA2148D889A08"
+			shape: "gear"
 			tasks: [{
 				id: "5E8F1071219B7838"
 				item: { count: 1, id: "eidolon_repraised:pewter_inlay" }
@@ -318,6 +321,7 @@
 				id: "eidolon_repraised:brazier"
 			}
 			id: "27D16535C7FE372B"
+			shape: "gear"
 			tasks: [
 				{
 					id: "07C1F97C7E561E41"
@@ -365,6 +369,7 @@
 				"66A1D185BC37064A"
 			]
 			id: "32B886F72115C42D"
+			shape: "gear"
 			tasks: [{
 				id: "64B693349134D66E"
 				item: { count: 1, id: "eidolon_repraised:arcane_gold_ingot" }
@@ -376,6 +381,7 @@
 		{
 			dependencies: ["1376283846993363"]
 			id: "510E291736A91585"
+			shape: "gear"
 			tasks: [{
 				id: "6C9B06CE677DDE2A"
 				item: { count: 1, id: "eidolon_repraised:lesser_soul_gem" }
@@ -415,6 +421,7 @@
 				"554FEA6FC797A818"
 			]
 			id: "2465508F803B7F13"
+			shape: "gear"
 			tasks: [{
 				id: "7B4793387EA64F68"
 				item: { count: 1, id: "eidolon_repraised:shadow_gem" }
@@ -427,6 +434,7 @@
 			dependencies: ["3E0B415C278B8E33"]
 			hide_dependency_lines: true
 			id: "072F0916C2364762"
+			shape: "gear"
 			tasks: [{
 				id: "3DCCFC44D962E1F6"
 				item: { count: 1, id: "eidolon_repraised:straw_effigy" }
@@ -443,6 +451,7 @@
 			]
 			id: "7133099568CE208E"
 			min_required_dependencies: 2
+			shape: "gear"
 			tasks: [{
 				id: "682D5C14CCA48C2C"
 				item: { count: 1, id: "eidolon_repraised:wooden_altar" }
@@ -477,6 +486,7 @@
 			dependencies: ["3E0B415C278B8E33"]
 			hide_dependency_lines: true
 			id: "21EC4B09DE3636B8"
+			shape: "gear"
 			tasks: [{
 				advancement: "eidolon_repraised:sacred_path"
 				criterion: ""
@@ -489,6 +499,7 @@
 		{
 			dependencies: ["4EF8D657143CD113"]
 			id: "5493384ADDD06097"
+			shape: "gear"
 			tasks: [{
 				id: "618D3BC17CBC34FD"
 				item: { count: 1, id: "eidolon_repraised:athame" }
@@ -501,6 +512,7 @@
 			dependencies: ["3E0B415C278B8E33"]
 			hide_dependency_lines: true
 			id: "0F9AA4AABC8BFBEB"
+			shape: "gear"
 			tasks: [{
 				advancement: "eidolon_repraised:wicked_path"
 				criterion: ""
@@ -513,6 +525,7 @@
 		{
 			dependencies: ["32B886F72115C42D"]
 			id: "15F7B94CA5BFCF1D"
+			shape: "gear"
 			tasks: [{
 				id: "34B8B8198C593BAA"
 				item: { count: 1, id: "eidolon_repraised:goblet" }
@@ -524,6 +537,7 @@
 		{
 			dependencies: ["15F7B94CA5BFCF1D"]
 			id: "22128FA939CC5229"
+			shape: "gear"
 			tasks: [{
 				advancement: "eidolon_repraised:sacrifice"
 				criterion: ""
@@ -557,6 +571,7 @@
 				id: "eidolon_repraised:unholy_symbol"
 			}
 			id: "3EA8B5DE633E228F"
+			shape: "gear"
 			tasks: [
 				{
 					id: "342D0E25B049F392"
@@ -622,6 +637,7 @@
 				id: "eidolon_repraised:holy_symbol"
 			}
 			id: "51F468219CD1AC52"
+			shape: "gear"
 			tasks: [
 				{
 					id: "64AA10BB7236BECC"
@@ -956,7 +972,6 @@
 				id: "eidolon_repraised:oanna_bloom"
 			}
 			id: "4FB0EC4D5EEA7EE6"
-			shape: "gear"
 			tasks: [
 				{
 					id: "670BEAA1DB182308"
@@ -985,7 +1000,6 @@
 				id: "eidolon_repraised:mirecap"
 			}
 			id: "39553C7C57BEE887"
-			shape: "gear"
 			tasks: [
 				{
 					id: "2532096B4E631685"
@@ -1328,7 +1342,6 @@
 				id: "eidolon_repraised:avennian_sprig"
 			}
 			id: "01641AD0DC69F2D0"
-			shape: "gear"
 			tasks: [
 				{
 					id: "212F4819F3724331"
@@ -1414,7 +1427,6 @@
 				id: "eidolon_repraised:sildrian_seed"
 			}
 			id: "14B74214E62D5D57"
-			shape: "gear"
 			tasks: [
 				{
 					id: "76A31CDF8CA857B8"
@@ -1620,6 +1632,7 @@
 		{
 			dependencies: ["75DE98178AF407BD"]
 			id: "3F70D40267927529"
+			shape: "gear"
 			tasks: [{
 				count: 8L
 				id: "504EA5D7BD1EA091"
@@ -1643,6 +1656,7 @@
 		{
 			dependencies: ["3F70D40267927529"]
 			id: "7F3F56C04BFCF7BD"
+			shape: "gear"
 			tasks: [{
 				id: "2DF6A5FCE0289591"
 				item: { count: 1, id: "toxony:copper_crucible" }
@@ -1728,6 +1742,7 @@
 		{
 			dependencies: ["5A26B593C3D70B56"]
 			id: "47ECA2AA01DBE0C5"
+			shape: "gear"
 			tasks: [{
 				id: "523F4F559B577D02"
 				item: { count: 1, id: "toxony:glass_vial" }
@@ -1772,6 +1787,7 @@
 		{
 			dependencies: ["47ECA2AA01DBE0C5"]
 			id: "0C79F086A3EA30BA"
+			shape: "gear"
 			tasks: [
 				{
 					id: "451146B1588CE341"
@@ -1790,6 +1806,7 @@
 		{
 			dependencies: ["47ECA2AA01DBE0C5"]
 			id: "19E126BBEF648662"
+			shape: "gear"
 			tasks: [{
 				id: "631FFFEBC815D755"
 				item: { count: 1, id: "toxony:redstone_mixture" }
@@ -1801,6 +1818,7 @@
 		{
 			dependencies: ["19E126BBEF648662"]
 			id: "48D6F64AD6B17D08"
+			shape: "gear"
 			tasks: [{
 				id: "1CA27A1A8827FD6C"
 				item: { count: 1, id: "toxony:redstone_solution" }
@@ -1812,6 +1830,7 @@
 		{
 			dependencies: ["167EF79DA32CC317"]
 			id: "11AEAD046E2353E6"
+			shape: "gear"
 			tasks: [{
 				id: "129B44759EEB3EDA"
 				item: { count: 1, id: "toxony:copper_needle" }
@@ -2624,6 +2643,7 @@
 		{
 			dependencies: ["48D6F64AD6B17D08"]
 			id: "167EF79DA32CC317"
+			shape: "gear"
 			tasks: [{
 				id: "2274FBFE8F2534E3"
 				item: { count: 1, id: "toxony:affinity_solution" }

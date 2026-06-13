@@ -1,21 +1,21 @@
 {
 	chapter.085BF45D104AB2F2.title: "Early Magic III"
-	chapter.0E71C46ADE360F4F.chapter_subtitle: ["The Endgame of Magic"]
-	chapter.0E71C46ADE360F4F.title: "Underveil Harmonies"
 	chapter.126830F3CB1F8DDD.chapter_subtitle: ["Cutting-edge technology!"]
 	chapter.126830F3CB1F8DDD.title: "aluminum"
 	chapter.1DE9AF77B4D50480.chapter_subtitle: ["The very first basic stage of survival, introducing you to primitive technologies"]
 	chapter.1DE9AF77B4D50480.title: "First steps"
 	chapter.231570DE6A7FCD52.chapter_subtitle: ["chapter contains all the travel information and, in a way, the entire RPG component of the modpack!"]
 	chapter.231570DE6A7FCD52.title: "Journeys \\& Gear"
-	chapter.2D655D4AC57B9E25.title: "Midgame magic II"
+	chapter.2D655D4AC57B9E25.title: "Midgame Magic II"
 	chapter.389198189DCA1A49.chapter_subtitle: ["This chapter lists all the utility items for easy finding"]
 	chapter.389198189DCA1A49.title: "Utilities"
-	chapter.3ED35234FA540A5A.title: "Midgame magic I"
+	chapter.3ED35234FA540A5A.title: "Midgame Magic I"
 	chapter.3ED5DF3804C2BE8A.chapter_subtitle: ["Easy-to-use navigation showing the different stages"]
 	chapter.3ED5DF3804C2BE8A.title: "Stages"
 	chapter.4058552B01F39ED4.chapter_subtitle: ["A chapter that helps you understand how to automate processes, complete with examples"]
 	chapter.4058552B01F39ED4.title: "&lHow to automate?"
+	chapter.432989F8344DA732.title: "Endgame Magic I"
+	chapter.490376B5036BB339.title: "Endgame Magic II"
 	chapter.4D6A3C5941C9908A.chapter_subtitle: ["[WIP Chapter]"]
 	chapter.4D6A3C5941C9908A.title: "endgame"
 	chapter.4E4F6FF3EEEB1E51.chapter_subtitle: ["Essential information that describes and explains the mechanics of the modpack"]
@@ -24,10 +24,11 @@
 	chapter.561B8642F13079C1.chapter_subtitle: ["The Bronze Age: Dive into the world of technology!"]
 	chapter.561B8642F13079C1.title: "Bronze Age"
 	chapter.65C3129D0852EC26.title: "Early Magic I"
+	chapter.6A330F872573CB26.title: "Endgame Magic III"
 	chapter.7A58E54E4B6B5025.chapter_subtitle: ["This chapter covers all possible ways to store items and fluid"]
 	chapter.7A58E54E4B6B5025.title: "Storage"
 	chapter.7CCFB657E26B4699.title: "Early Magic II"
-	chapter.7F17ADA3E2DBCAE3.title: "Midgame magic III"
+	chapter.7F17ADA3E2DBCAE3.title: "Midgame Magic III"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
 	chapter_group.786FFA1BEC14E223.title: "Midgame"
@@ -206,6 +207,15 @@
 		"in skilled hands, a &lvery&r fast way to move around"
 		"{@pagebreak}"
 		"в умелых руках - &lочень&r быстрый способ передвижения"
+	]
+	quest.05488D2D100A053D.quest_desc: [
+		"One of the first and easiest ways to automatically collect blood for your altar!"
+		""
+		"[ \"It pairs incredibly well with \", { \"text\": \"Vortex Sigil\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"21E99400966C8A76\" } }, \" - one pulls creatures toward, while the other kills them and grants blood for altar. \" ]"
+		"{@pagebreak}"
+		"Один из первых и простых способов получать кровь для вашего алтаря автоматически!"
+		""
+		"[ \"Невероятно хорошо сочетается с \", { \"text\": \"Vortex Sigil\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"21E99400966C8A76\" } }, \", один притягивает существ к себе, второй убивает и даёт кровь.\" ]"
 	]
 	quest.056505A2F0A197CB.quest_desc: [
 		"&aImprove&r your &l&efinal pedestal&r!"
@@ -2025,6 +2035,11 @@
 		"{@pagebreak}"
 		"[ \"Азурит можно найти только в измерение \", { \"text\": \"Eternal Starlight\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B37B11A0B0A84E6\" } }, \"!\" ]"
 	]
+	quest.40CC4CB2281C6FE1.quest_desc: [
+		"By using Vial, you gain access to communicate with the gatekeeper!"
+		"{@pagebreak}"
+		"Употребив Vial вы получаете доступ для общения с привратником!"
+	]
 	quest.40FBEE2028873C00.quest_desc: [
 		"My clothes are torn to bits. I feel my own academy attire does not reflect my truest desires. I must attain a new wardrobe. And I have the perfect material to make it out of."
 		""
@@ -3497,11 +3512,15 @@
 		""
 		"The &lheart icon&r indicates that this quest is &lvery useful&r, and we highly recommend completing it!"
 		""
+		"The &lgear&r icon usually means that the quest is a &cmain quest&r and you need to complete it! "
+		""
 		"{@pagebreak}"
 		""
 		"Квадрат, ромб, круг - ни на что не показывают, просто декорации."
 		""
 		"&lСердечко&r - показывает на то, что квест &lочень полезен&r и мы настоятельно рекомендуем выполнить его!"
+		""
+		"&lШестеренка&r - означает что квест является &cосновным&r и вам необходимо его пройти!"
 	]
 	quest.70798A5B74FDB203.quest_desc: [
 		"Grows in &dswamps&r."
@@ -3863,6 +3882,7 @@
 	]
 	reward.19304AD673874503.title: "Eidolon Mobs"
 	reward.5EBDE634D224C573.title: "Crimson Veil Access"
+	reward.5F437D0400382507.title: "Malum Ore Access "
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.01899FA102ABD33A.title: "Any #milf:metal_fences"
 	task.01C0F8B5DE9EEDCD.title: "Cry of the Forsaken Soul"

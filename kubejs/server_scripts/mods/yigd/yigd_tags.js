@@ -12,3 +12,9 @@ ServerEvents.tags('block', event => {
     event.add('cataclysm:netherite_monstrosity_immune', grave_block)
     event.add('cataclysm:maledictus_immune', grave_block)
 })
+
+// ServerEvents.tags('item', event => {
+
+//     event.add("yigd:natural_soulbound","enigmaticlegacyplus:cursed_ring" )
+
+// })

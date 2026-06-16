@@ -354,6 +354,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'aquaculture:tackle_box',
         'aquaculture:worm_farm',
         'tide:fishing_journal',
+        'enigmaticlegacyplus:recall_potion',
         /tide:.*_bait/,
         /smallships:wormwood_.*/,
     ]

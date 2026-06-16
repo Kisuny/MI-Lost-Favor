@@ -12,6 +12,7 @@
 	quests: [
 		{
 			dependencies: ["6DE071C3E3D8B3FF"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "risus:beating_heart"
 			}
@@ -36,9 +37,19 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "4215E53DE9E8FA11"
 			shape: "gear"
 			tasks: [{
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: {
 					id: "risus:alteration_catalyst"
 				}
@@ -54,6 +65,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "risus:heart_transplant"
 			}
@@ -68,6 +80,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "48FA96EF23D033A4"
 			min_width: 300
 			tasks: [{
@@ -80,6 +93,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "747400D923ECFC6B"
 			tasks: [{
 				id: "1393D5262AE99C74"
@@ -91,6 +105,7 @@
 		}
 		{
 			dependencies: ["4215E53DE9E8FA11"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7003"
 			shape: "gear"
 			tasks: [{
@@ -103,6 +118,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7003"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7004"
 			rewards: [{
 				id: "211BE6C2FFF8AEE4"
@@ -126,6 +142,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7004"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7005"
 			shape: "gear"
 			tasks: [{
@@ -138,6 +155,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700B"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7006"
 			shape: "gear"
 			tasks: [{
@@ -150,6 +168,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7006"]
+			entity_vis_size: 1.0f
 			id: "0FD2406DC9C47871"
 			shape: "gear"
 			tasks: [{
@@ -162,6 +181,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7005"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7007"
 			shape: "gear"
 			tasks: [{
@@ -175,6 +195,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7007"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7009"
 			shape: "gear"
 			tasks: [{
@@ -187,6 +208,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7009"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F700A"
 			shape: "gear"
 			tasks: [{
@@ -199,6 +221,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7009"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F700B"
 			shape: "gear"
 			tasks: [{
@@ -211,6 +234,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700B"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F700C"
 			shape: "heart"
 			tasks: [{
@@ -223,6 +247,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700B"]
+			entity_vis_size: 1.0f
 			id: "228901DACDBF42E3"
 			shape: "heart"
 			tasks: [{
@@ -235,6 +260,7 @@
 		}
 		{
 			dependencies: ["189B4E6D9B694118"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:teleposer"
 			}
@@ -257,6 +283,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700B"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0011"
 			shape: "pentagon"
 			tasks: [{
@@ -269,6 +296,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0001"
 			shape: "diamond"
 			tasks: [{
@@ -281,6 +309,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700E"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0005"
 			shape: "diamond"
 			tasks: [{
@@ -293,6 +322,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700A"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:blood_stained_glass"
 			}
@@ -317,6 +347,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700D"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F700E"
 			shape: "gear"
 			tasks: [{
@@ -329,6 +360,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700E"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F700F"
 			shape: "gear"
 			tasks: [{
@@ -341,6 +373,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0023"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7010"
 			shape: "gear"
 			tasks: [{
@@ -353,6 +386,7 @@
 		}
 		{
 			dependencies: ["0FD2406DC9C47871"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7011"
 			shape: "gear"
 			tasks: [{
@@ -365,6 +399,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700E"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7012"
 			shape: "gear"
 			tasks: [{
@@ -377,6 +412,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0023"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:activation_crystal_weak"
 			}
@@ -392,6 +428,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0022"
 			shape: "heart"
 			tasks: [{
@@ -404,6 +441,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700F"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:ritual_stone"
 			}
@@ -442,6 +480,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:sentient_helmet"
 			}
@@ -474,6 +513,7 @@
 		}
 		{
 			dependencies: ["189B4E6D9B694118"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7019"
 			shape: "pentagon"
 			tasks: [{
@@ -490,6 +530,7 @@
 				"3B46475350263240"
 				"002644105350F592"
 			]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0044"
 			shape: "pentagon"
 			tasks: [{
@@ -502,6 +543,7 @@
 		}
 		{
 			dependencies: ["05EFE56056E7F4E6"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0071"
 			shape: "diamond"
 			tasks: [{
@@ -515,6 +557,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0071"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0072"
 			shape: "diamond"
 			tasks: [
@@ -537,6 +580,7 @@
 				"3C4D5E6F7A8B0072"
 				"7BF0822DA2EA2407"
 			]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0073"
 			shape: "pentagon"
 			tasks: [{
@@ -549,6 +593,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F701A"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "3C4D5E6F7A8B0024"
 			shape: "octagon"
@@ -562,6 +607,7 @@
 		}
 		{
 			dependencies: ["199218FC8F74548B"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:hellforged_block"
 			}
@@ -586,6 +632,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F701A"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F701B"
 			shape: "gear"
 			tasks: [{
@@ -598,6 +645,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F701B"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F701D"
 			shape: "pentagon"
 			tasks: [{
@@ -610,6 +658,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F701B"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F701F"
 			shape: "gear"
 			tasks: [
@@ -631,6 +680,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F701F"]
+			entity_vis_size: 1.0f
 			id: "1A2B3C4D5E6F7020"
 			shape: "gear"
 			size: 2.0d
@@ -644,6 +694,7 @@
 		}
 		{
 			dependencies: ["002644105350F592"]
+			entity_vis_size: 1.0f
 			id: "3C4D5E6F7A8B0093"
 			shape: "hexagon"
 			tasks: [{
@@ -656,6 +707,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700A"]
+			entity_vis_size: 1.0f
 			id: "16C003070189BB22"
 			tasks: [{
 				id: "60A89317C66FE29A"
@@ -667,6 +719,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700A"]
+			entity_vis_size: 1.0f
 			id: "0EF2A7F9A4F7F0BB"
 			tasks: [{
 				id: "079C66F229443F60"
@@ -678,6 +731,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7012"]
+			entity_vis_size: 1.0f
 			id: "4E2461F46CB9B567"
 			tasks: [{
 				id: "6F8856720099364C"
@@ -689,6 +743,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "1077B8BEFF62EDBA"
 			shape: "diamond"
 			tasks: [{
@@ -701,6 +756,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "7B282FB98E3DCE6B"
 			shape: "diamond"
 			tasks: [{
@@ -713,6 +769,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7007"]
+			entity_vis_size: 1.0f
 			id: "5753EFFBC5A5E2E0"
 			tasks: [{
 				id: "7180CFE9AC35D09B"
@@ -724,6 +781,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "7B88AAD18F32CA7A"
 			shape: "diamond"
 			tasks: [{
@@ -736,6 +794,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7012"]
+			entity_vis_size: 1.0f
 			id: "59989B9FC239DD73"
 			tasks: [{
 				id: "559FEE3DEDC15819"
@@ -747,6 +806,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "18AA36778BA06AB1"
 			shape: "diamond"
 			tasks: [{
@@ -762,6 +822,7 @@
 				"1A2B3C4D5E6F701B"
 				"783B6EAFD58A2447"
 			]
+			entity_vis_size: 1.0f
 			id: "0847F62AA3C17CC9"
 			tasks: [{
 				id: "2AFE03F954FEC023"
@@ -773,6 +834,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7009"]
+			entity_vis_size: 1.0f
 			id: "3E4BE15CF575FEBF"
 			shape: "gear"
 			tasks: [{
@@ -785,6 +847,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7011"]
+			entity_vis_size: 1.0f
 			id: "7DB2152F92496396"
 			shape: "gear"
 			tasks: [{
@@ -797,6 +860,7 @@
 		}
 		{
 			dependencies: ["7DB2152F92496396"]
+			entity_vis_size: 1.0f
 			id: "05EFE56056E7F4E6"
 			tasks: [{
 				id: "1F1507EDD9B59406"
@@ -808,6 +872,7 @@
 		}
 		{
 			dependencies: ["05EFE56056E7F4E6"]
+			entity_vis_size: 1.0f
 			id: "7BF0822DA2EA2407"
 			tasks: [{
 				id: "4C197B425C1EDD5A"
@@ -819,6 +884,7 @@
 		}
 		{
 			dependencies: ["7DB2152F92496396"]
+			entity_vis_size: 1.0f
 			id: "2E7B1C7320DEBB8A"
 			shape: "heart"
 			tasks: [{
@@ -831,6 +897,7 @@
 		}
 		{
 			dependencies: ["7DB2152F92496396"]
+			entity_vis_size: 1.0f
 			id: "4B14B78D029B5A7A"
 			tasks: [
 				{
@@ -859,6 +926,7 @@
 		}
 		{
 			dependencies: ["43D7A206F79B9F48"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_deflection"
 			}
@@ -880,6 +948,7 @@
 		}
 		{
 			dependencies: ["50F301D56A81D523"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_endless_fountain"
 			}
@@ -901,6 +970,7 @@
 		}
 		{
 			dependencies: ["32841D742F4803B6"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_undertow"
 			}
@@ -922,6 +992,7 @@
 		}
 		{
 			dependencies: ["6FF1DC69F8A521F8"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_trigger"
 			}
@@ -943,6 +1014,7 @@
 		}
 		{
 			dependencies: ["6FF1DC69F8A521F8"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_signal"
 			}
@@ -964,6 +1036,7 @@
 		}
 		{
 			dependencies: ["32841D742F4803B6"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_freeze"
 			}
@@ -985,6 +1058,7 @@
 		}
 		{
 			dependencies: ["32841D742F4803B6"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_growth"
 			}
@@ -1006,6 +1080,7 @@
 		}
 		{
 			dependencies: ["32841D742F4803B6"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_rain"
 			}
@@ -1027,6 +1102,7 @@
 		}
 		{
 			dependencies: ["50F301D56A81D523"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_furnace"
 			}
@@ -1048,6 +1124,7 @@
 		}
 		{
 			dependencies: ["50F301D56A81D523"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_light"
 			}
@@ -1069,6 +1146,7 @@
 		}
 		{
 			dependencies: ["50F301D56A81D523"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_collection"
 			}
@@ -1090,6 +1168,7 @@
 		}
 		{
 			dependencies: ["43D7A206F79B9F48"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_repulsion"
 			}
@@ -1111,6 +1190,7 @@
 		}
 		{
 			dependencies: ["5F3D6F7D4DB4A97B"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_night"
 			}
@@ -1132,6 +1212,7 @@
 		}
 		{
 			dependencies: ["7F6A85E86AF72966"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_elevator"
 			}
@@ -1153,6 +1234,7 @@
 		}
 		{
 			dependencies: ["5F3D6F7D4DB4A97B"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_day"
 			}
@@ -1174,6 +1256,7 @@
 		}
 		{
 			dependencies: ["7F6A85E86AF72966"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_movement"
 			}
@@ -1195,6 +1278,7 @@
 		}
 		{
 			dependencies: ["7F6A85E86AF72966"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_updraft"
 			}
@@ -1216,6 +1300,7 @@
 		}
 		{
 			dependencies: ["43D7A206F79B9F48"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_spike"
 			}
@@ -1237,6 +1322,7 @@
 		}
 		{
 			dependencies: ["7F6A85E86AF72966"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_bounce"
 			}
@@ -1258,6 +1344,7 @@
 		}
 		{
 			dependencies: ["43D7A206F79B9F48"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_spirit_siphon"
 			}
@@ -1279,6 +1366,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "50F301D56A81D523"
 			tasks: [{
 				id: "1096F78FFF063784"
@@ -1289,6 +1377,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "43D7A206F79B9F48"
 			tasks: [{
 				id: "207749237CB9FE16"
@@ -1299,6 +1388,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "32841D742F4803B6"
 			tasks: [{
 				id: "093F4052EBECED46"
@@ -1309,6 +1399,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "6FF1DC69F8A521F8"
 			tasks: [{
 				id: "4FC3D78F5ED8F928"
@@ -1319,6 +1410,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "7F6A85E86AF72966"
 			tasks: [{
 				id: "20D75746DF67A83F"
@@ -1329,6 +1421,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0011"]
+			entity_vis_size: 1.0f
 			id: "5F3D6F7D4DB4A97B"
 			tasks: [{
 				id: "6D290A3A18CB158B"
@@ -1339,6 +1432,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7012"]
+			entity_vis_size: 1.0f
 			id: "5ED2449E8CC907E4"
 			shape: "gear"
 			tasks: [{
@@ -1354,6 +1448,7 @@
 				"3C4D5E6F7A8B0021"
 				"1A2B3C4D5E6F7010"
 			]
+			entity_vis_size: 1.0f
 			id: "4AF78754EC20B0F6"
 			shape: "gear"
 			tasks: [
@@ -1374,6 +1469,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			id: "48BB6A0C0D646328"
 			shape: "gear"
 			tasks: [{
@@ -1386,6 +1482,7 @@
 		}
 		{
 			dependencies: ["48BB6A0C0D646328"]
+			entity_vis_size: 1.0f
 			id: "4FD05BE1F25BA192"
 			tasks: [{
 				count: 5L
@@ -1401,6 +1498,7 @@
 				"48BB6A0C0D646328"
 				"4FD05BE1F25BA192"
 			]
+			entity_vis_size: 1.0f
 			id: "67BD80F96D184AA4"
 			min_required_dependencies: 1
 			shape: "gear"
@@ -1414,6 +1512,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			id: "1854F802BB700EFA"
 			shape: "diamond"
 			tasks: [{
@@ -1426,6 +1525,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			id: "6F519F6E5155BE48"
 			shape: "diamond"
 			tasks: [{
@@ -1438,6 +1538,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			id: "2E76CA9B426352CE"
 			shape: "diamond"
 			tasks: [{
@@ -1450,6 +1551,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "7EF2DEC78022EAF6"
 			shape: "diamond"
@@ -1463,6 +1565,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			id: "799C582D793F2629"
 			shape: "diamond"
 			tasks: [{
@@ -1475,6 +1578,7 @@
 		}
 		{
 			dependencies: ["4AF78754EC20B0F6"]
+			entity_vis_size: 1.0f
 			id: "736B64C79601A9EA"
 			shape: "diamond"
 			tasks: [{
@@ -1487,6 +1591,7 @@
 		}
 		{
 			dependencies: ["0BE502B779CCF188"]
+			entity_vis_size: 1.0f
 			id: "5E123CE1F71F8A9E"
 			tasks: [{
 				id: "63518BE87D746039"
@@ -1501,6 +1606,7 @@
 				"34F8265C2AA8CE6E"
 				"1DD61683298CC5E6"
 			]
+			entity_vis_size: 1.0f
 			id: "0BE502B779CCF188"
 			tasks: [{
 				id: "7617E40D81A9D468"
@@ -1512,6 +1618,7 @@
 		}
 		{
 			dependencies: ["7BF0822DA2EA2407"]
+			entity_vis_size: 1.0f
 			id: "3EA1E7E490D39A84"
 			tasks: [{
 				id: "4FB1DF44E7AFACF7"
@@ -1523,6 +1630,7 @@
 		}
 		{
 			dependencies: ["611070DB29152843"]
+			entity_vis_size: 1.0f
 			id: "5B1AE3ABD351EB63"
 			tasks: [{
 				id: "4C5905779D146C4C"
@@ -1534,6 +1642,7 @@
 		}
 		{
 			dependencies: ["3EA1E7E490D39A84"]
+			entity_vis_size: 1.0f
 			id: "35CD3646C82BCCBD"
 			tasks: [{
 				id: "3236A9C539F80B23"
@@ -1545,6 +1654,7 @@
 		}
 		{
 			dependencies: ["3EA1E7E490D39A84"]
+			entity_vis_size: 1.0f
 			id: "611070DB29152843"
 			shape: "gear"
 			size: 2.0d
@@ -1558,6 +1668,7 @@
 		}
 		{
 			dependencies: ["611070DB29152843"]
+			entity_vis_size: 1.0f
 			id: "1DD61683298CC5E6"
 			shape: "gear"
 			tasks: [{
@@ -1573,6 +1684,7 @@
 				"67BD80F96D184AA4"
 				"5ED2449E8CC907E4"
 			]
+			entity_vis_size: 1.0f
 			id: "09942877656C9A06"
 			shape: "gear"
 			tasks: [{
@@ -1585,6 +1697,7 @@
 		}
 		{
 			dependencies: ["09942877656C9A06"]
+			entity_vis_size: 1.0f
 			id: "34F8265C2AA8CE6E"
 			tasks: [{
 				id: "340B8061AC6D3BC9"
@@ -1596,6 +1709,7 @@
 		}
 		{
 			dependencies: ["5E123CE1F71F8A9E"]
+			entity_vis_size: 1.0f
 			id: "4D565B2A02E5EA9F"
 			tasks: [{
 				id: "61AD0B47A232B549"
@@ -1607,6 +1721,7 @@
 		}
 		{
 			dependencies: ["09942877656C9A06"]
+			entity_vis_size: 1.0f
 			id: "0C1938F058F0ECC8"
 			shape: "gear"
 			tasks: [{
@@ -1619,6 +1734,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F700E"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:bloodstone"
 			}
@@ -1642,6 +1758,7 @@
 		}
 		{
 			dependencies: ["14498C1ED2BC58BE"]
+			entity_vis_size: 1.0f
 			id: "11A8A041EB1774AA"
 			tasks: [{
 				id: "4C6643EA5C8A0A1A"
@@ -1653,6 +1770,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "6A546F40DB14EC47"
 			shape: "diamond"
 			tasks: [{
@@ -1665,6 +1783,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "12555BE72D90DBF5"
 			shape: "diamond"
 			tasks: [{
@@ -1677,6 +1796,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "64309BC5669F8817"
 			shape: "diamond"
 			tasks: [{
@@ -1689,6 +1809,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "69928CE06358D395"
 			shape: "diamond"
 			tasks: [{
@@ -1701,6 +1822,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "4664DD3C5407B614"
 			shape: "diamond"
 			tasks: [{
@@ -1713,6 +1835,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "4E7AE4969A1B3D29"
 			shape: "diamond"
 			tasks: [{
@@ -1725,6 +1848,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "55FBC2E8F5690AF9"
 			shape: "diamond"
 			tasks: [{
@@ -1737,6 +1861,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "10F984DCB16F3920"
 			shape: "diamond"
 			tasks: [{
@@ -1749,6 +1874,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "4616AD8BA31BB54B"
 			shape: "diamond"
 			tasks: [{
@@ -1761,6 +1887,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "71D002DF15496ADA"
 			shape: "diamond"
 			tasks: [{
@@ -1773,6 +1900,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "513031C1B79278B0"
 			shape: "diamond"
 			tasks: [{
@@ -1785,6 +1913,7 @@
 		}
 		{
 			dependencies: ["228901DACDBF42E3"]
+			entity_vis_size: 1.0f
 			id: "3E1FAEE6BCDD79BB"
 			shape: "diamond"
 			tasks: [{
@@ -1797,6 +1926,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "263E27B045BEECE4"
 			shape: "heart"
 			tasks: [{
@@ -1809,6 +1939,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "7974626CE9895475"
 			shape: "diamond"
 			tasks: [{
@@ -1821,6 +1952,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "43FF39F863DE377A"
 			shape: "diamond"
 			tasks: [{
@@ -1833,6 +1965,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "1A9DBF7600366DE2"
 			shape: "diamond"
 			tasks: [{
@@ -1845,6 +1978,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "2E75168720966242"
 			shape: "diamond"
 			tasks: [{
@@ -1857,6 +1991,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "1F54D7E5A24DE6BC"
 			shape: "diamond"
 			tasks: [{
@@ -1869,6 +2004,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "064DF65AD963C932"
 			shape: "diamond"
 			tasks: [{
@@ -1881,6 +2017,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "50F86C44AB26BEB2"
 			shape: "diamond"
 			tasks: [{
@@ -1893,6 +2030,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "25814A2E5E005F82"
 			shape: "diamond"
 			tasks: [{
@@ -1905,6 +2043,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "72474FB178234D8E"
 			shape: "diamond"
 			tasks: [{
@@ -1917,6 +2056,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "0287AC720FD11E9A"
 			shape: "heart"
 			tasks: [{
@@ -1929,6 +2069,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "3CDBEDF9493AE2B5"
 			shape: "diamond"
 			tasks: [{
@@ -1941,6 +2082,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "64A621522E1D2DD5"
 			shape: "diamond"
 			tasks: [{
@@ -1953,6 +2095,7 @@
 		}
 		{
 			dependencies: ["0BE502B779CCF188"]
+			entity_vis_size: 1.0f
 			id: "2EF63680C02C44E2"
 			tasks: [{
 				id: "4CFC580C5CEC73D1"
@@ -1964,6 +2107,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0001"]
+			entity_vis_size: 1.0f
 			id: "3378CF07A57A5ECD"
 			shape: "diamond"
 			tasks: [{
@@ -1976,6 +2120,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7018"]
+			entity_vis_size: 1.0f
 			id: "248D9183E09E5920"
 			optional: true
 			shape: "diamond"
@@ -1988,6 +2133,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7018"]
+			entity_vis_size: 1.0f
 			id: "304A749D0C7B2F06"
 			tasks: [{
 				id: "2466E18441236F6D"
@@ -1999,6 +2145,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7018"]
+			entity_vis_size: 1.0f
 			id: "1A16CF965AF2EEC5"
 			tasks: [{
 				id: "571B54042AE56ED2"
@@ -2010,6 +2157,7 @@
 		}
 		{
 			dependencies: ["248D9183E09E5920"]
+			entity_vis_size: 1.0f
 			id: "6245F17DF657C296"
 			optional: true
 			shape: "diamond"
@@ -2022,6 +2170,7 @@
 		}
 		{
 			dependencies: ["6245F17DF657C296"]
+			entity_vis_size: 1.0f
 			id: "4F8E67CD8A60C47B"
 			optional: true
 			shape: "diamond"
@@ -2034,6 +2183,7 @@
 		}
 		{
 			dependencies: ["0C1938F058F0ECC8"]
+			entity_vis_size: 1.0f
 			id: "6FB5F5D35F652069"
 			shape: "gear"
 			tasks: [{
@@ -2046,6 +2196,7 @@
 		}
 		{
 			dependencies: ["6FB5F5D35F652069"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:ritual_stone"
 			}
@@ -2069,6 +2220,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "002644105350F592"
 			shape: "diamond"
@@ -2082,6 +2234,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:ingot_hellforged"
 			}
@@ -2106,6 +2259,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "3B46475350263240"
 			shape: "diamond"
@@ -2119,6 +2273,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			id: "18E2081AC9BE2D11"
 			shape: "diamond"
 			tasks: [{
@@ -2131,6 +2286,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			id: "50BA00AE327AF2D2"
 			shape: "diamond"
 			tasks: [{
@@ -2143,6 +2299,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			id: "5312B4EB7E0D93A4"
 			tasks: [{
 				id: "6854B4F2CB010978"
@@ -2154,6 +2311,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "3F807A2F2A4B750C"
 			shape: "diamond"
@@ -2167,6 +2325,7 @@
 		}
 		{
 			dependencies: ["5312B4EB7E0D93A4"]
+			entity_vis_size: 1.0f
 			id: "66B79C63B27022E5"
 			tasks: [{
 				id: "1D4573DD9CB9EC6F"
@@ -2178,6 +2337,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "6AC77F4165B65CD7"
 			shape: "diamond"
@@ -2191,6 +2351,7 @@
 		}
 		{
 			dependencies: ["3F93E2966991C460"]
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "783B6EAFD58A2447"
 			shape: "gear"
@@ -2204,6 +2365,7 @@
 		}
 		{
 			dependencies: ["0847F62AA3C17CC9"]
+			entity_vis_size: 1.0f
 			id: "223D6FF35B3E135D"
 			tasks: [{
 				id: "48D3B016ACCAB6BD"
@@ -2215,6 +2377,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "069A2D9569AE3462"
 			shape: "diamond"
 			tasks: [{
@@ -2227,6 +2390,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "189CA4E1B7044270"
 			shape: "diamond"
 			tasks: [{
@@ -2239,6 +2403,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "3918280EAF6D8FB2"
 			shape: "diamond"
 			tasks: [{
@@ -2251,6 +2416,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "338F891C886D59CA"
 			shape: "diamond"
 			tasks: [{
@@ -2263,6 +2429,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "3274E25E5FDBC205"
 			shape: "diamond"
 			tasks: [{
@@ -2275,6 +2442,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "0A811CC842206B31"
 			shape: "diamond"
 			tasks: [{
@@ -2287,6 +2455,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "627FA5281B789469"
 			shape: "diamond"
 			tasks: [{
@@ -2299,6 +2468,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "55654D08A6573AD8"
 			shape: "diamond"
 			tasks: [{
@@ -2311,6 +2481,7 @@
 		}
 		{
 			dependencies: ["783B6EAFD58A2447"]
+			entity_vis_size: 1.0f
 			id: "00330369EAE5D8E0"
 			shape: "diamond"
 			tasks: [{
@@ -2323,6 +2494,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0071"]
+			entity_vis_size: 1.0f
 			id: "236224D4E3652422"
 			tasks: [{
 				id: "57A3F220742A062C"
@@ -2338,6 +2510,7 @@
 				"7EF2DEC78022EAF6"
 				"3B46475350263240"
 			]
+			entity_vis_size: 1.0f
 			id: "39DCC2821529301C"
 			tasks: [{
 				id: "692FE1EC8D8C9776"
@@ -2349,6 +2522,7 @@
 		}
 		{
 			dependencies: ["236224D4E3652422"]
+			entity_vis_size: 1.0f
 			id: "00B18696F528C198"
 			tasks: [{
 				id: "53AA9EA4B2A73F51"
@@ -2360,6 +2534,7 @@
 		}
 		{
 			dependencies: ["236224D4E3652422"]
+			entity_vis_size: 1.0f
 			id: "617EC5554D2747B4"
 			tasks: [{
 				id: "565860EEB0CE53C3"
@@ -2374,6 +2549,7 @@
 				"1A2B3C4D5E6F700E"
 				"70A0A078B94FF034"
 			]
+			entity_vis_size: 1.0f
 			id: "2C98103199647244"
 			shape: "heart"
 			tasks: [{
@@ -2386,6 +2562,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7004"]
+			entity_vis_size: 1.0f
 			id: "68A54FCE72FFFCC1"
 			tasks: [{
 				id: "0E0E5D7DEEC5EAB0"
@@ -2397,6 +2574,7 @@
 		}
 		{
 			dependencies: ["1A2B3C4D5E6F7007"]
+			entity_vis_size: 1.0f
 			id: "49FACA83D02FA842"
 			tasks: [{
 				id: "6702ACD771386906"
@@ -2408,6 +2586,7 @@
 		}
 		{
 			dependencies: ["49FACA83D02FA842"]
+			entity_vis_size: 1.0f
 			id: "7854CBAEADA18B57"
 			tasks: [{
 				id: "30DA071FBF2C543C"
@@ -2419,6 +2598,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0061"]
+			entity_vis_size: 1.0f
 			id: "14498C1ED2BC58BE"
 			tasks: [{
 				id: "7FCEEDA6DB984E36"
@@ -2429,6 +2609,7 @@
 		}
 		{
 			dependencies: ["14498C1ED2BC58BE"]
+			entity_vis_size: 1.0f
 			id: "66F7AD143442DE33"
 			tasks: [{
 				id: "42E1C9D44F0BE8D5"
@@ -2440,6 +2621,7 @@
 		}
 		{
 			dependencies: ["7DB2152F92496396"]
+			entity_vis_size: 1.0f
 			id: "7AE805E97ED1D104"
 			tasks: [{
 				id: "28728C0BD9AA7474"
@@ -2454,6 +2636,7 @@
 				"611070DB29152843"
 				"3C4D5E6F7A8B0024"
 			]
+			entity_vis_size: 1.0f
 			id: "0757DF8CA56E666F"
 			tasks: [{
 				id: "56B98F00698B5FCE"
@@ -2464,6 +2647,7 @@
 		}
 		{
 			dependencies: ["6FB5F5D35F652069"]
+			entity_vis_size: 1.0f
 			id: "28A0B0DE7DA8451F"
 			tasks: [{
 				id: "70666D7BC794CADC"
@@ -2474,6 +2658,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0024"]
+			entity_vis_size: 1.0f
 			id: "78E0F36AAA8E6154"
 			shape: "diamond"
 			tasks: [{
@@ -2485,6 +2670,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0024"]
+			entity_vis_size: 1.0f
 			id: "7EC33CE042AD3676"
 			shape: "diamond"
 			tasks: [{
@@ -2496,6 +2682,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0024"]
+			entity_vis_size: 1.0f
 			id: "6D99EAB635E2EF16"
 			shape: "diamond"
 			tasks: [{
@@ -2507,6 +2694,7 @@
 		}
 		{
 			dependencies: ["3C4D5E6F7A8B0024"]
+			entity_vis_size: 1.0f
 			id: "2828CD751DD0C8EA"
 			shape: "diamond"
 			tasks: [{
@@ -2521,6 +2709,7 @@
 				"1A2B3C4D5E6F7018"
 				"3C4D5E6F7A8B0024"
 			]
+			entity_vis_size: 1.0f
 			id: "789815CA55295F71"
 			shape: "diamond"
 			tasks: [{
@@ -2535,6 +2724,7 @@
 				"1A2B3C4D5E6F7018"
 				"3C4D5E6F7A8B0024"
 			]
+			entity_vis_size: 1.0f
 			id: "6308DD13E3339DBD"
 			shape: "diamond"
 			tasks: [{
@@ -2549,6 +2739,7 @@
 				"1A2B3C4D5E6F7018"
 				"3C4D5E6F7A8B0024"
 			]
+			entity_vis_size: 1.0f
 			id: "2C3B7F7495AF3169"
 			shape: "diamond"
 			tasks: [{
@@ -2560,6 +2751,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "2B3AB7FF2ED69E90"
 			tasks: [{
 				id: "39FBED1ACD1E40F6"
@@ -2571,6 +2763,7 @@
 		}
 		{
 			dependencies: ["2B3AB7FF2ED69E90"]
+			entity_vis_size: 1.0f
 			id: "5D4913C0CDAC00E6"
 			tasks: [{
 				id: "3AA7A753D8656DE1"
@@ -2582,6 +2775,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "18B86EAED5FBB821"
 			tasks: [{
 				id: "1F360A821A1080F1"
@@ -2593,6 +2787,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "32056AFBE0002A43"
 			tasks: [{
 				id: "077F0BE41B90322B"
@@ -2604,6 +2799,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "2E2DE27B7BE23B9F"
 			tasks: [{
 				id: "364EA41BE58003F8"
@@ -2615,6 +2811,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "418FC2631124604A"
 			shape: "rsquare"
 			tasks: [{
@@ -2627,6 +2824,7 @@
 		}
 		{
 			dependencies: ["4215E53DE9E8FA11"]
+			entity_vis_size: 1.0f
 			id: "6EF30F56F492C947"
 			tasks: [{
 				id: "7FF163C04212C425"
@@ -2638,6 +2836,7 @@
 		}
 		{
 			dependencies: ["6EF30F56F492C947"]
+			entity_vis_size: 1.0f
 			id: "4629E5EC0E279E81"
 			tasks: [{
 				id: "30EFB56DEEF7A210"
@@ -2649,6 +2848,7 @@
 		}
 		{
 			dependencies: ["6EF30F56F492C947"]
+			entity_vis_size: 1.0f
 			id: "4687860545560B06"
 			tasks: [{
 				id: "08902D64986BED8B"
@@ -2660,6 +2860,7 @@
 		}
 		{
 			dependencies: ["4215E53DE9E8FA11"]
+			entity_vis_size: 1.0f
 			id: "5EC0131511F7FDEF"
 			shape: "gear"
 			tasks: [{
@@ -2672,6 +2873,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "39DB1E37478B1FE7"
 			tasks: [{
 				id: "16E4D5C175A1D198"
@@ -2683,6 +2885,7 @@
 		}
 		{
 			dependencies: ["50DCCF46F6DBE063"]
+			entity_vis_size: 1.0f
 			id: "1F4B4B603AA0E3B9"
 			shape: "gear"
 			tasks: [{
@@ -2695,6 +2898,7 @@
 		}
 		{
 			dependencies: ["14F2D01EA423DA6D"]
+			entity_vis_size: 1.0f
 			id: "512D2132AD156E22"
 			tasks: [{
 				id: "5DB977EC3803A1CE"
@@ -2706,6 +2910,7 @@
 		}
 		{
 			dependencies: ["512D2132AD156E22"]
+			entity_vis_size: 1.0f
 			id: "10C700EB0CAA02CF"
 			tasks: [{
 				id: "28DD91D4E86F10E5"
@@ -2717,6 +2922,7 @@
 		}
 		{
 			dependencies: ["14F2D01EA423DA6D"]
+			entity_vis_size: 1.0f
 			id: "0CE20B65196A17EF"
 			tasks: [{
 				id: "0380EFB9B18F2E17"
@@ -2728,6 +2934,7 @@
 		}
 		{
 			dependencies: ["0CE20B65196A17EF"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "risus:joyflame_campfire"
 			}
@@ -2767,6 +2974,7 @@
 		}
 		{
 			dependencies: ["6DE88D96910CF3A5"]
+			entity_vis_size: 1.0f
 			id: "2DC384890996D9F7"
 			tasks: [{
 				id: "3536594082344E3C"
@@ -2778,6 +2986,7 @@
 		}
 		{
 			dependencies: ["6DE88D96910CF3A5"]
+			entity_vis_size: 1.0f
 			id: "18C81CA675805679"
 			tasks: [{
 				id: "7618E1EBCA413955"
@@ -2789,6 +2998,7 @@
 		}
 		{
 			dependencies: ["6DE88D96910CF3A5"]
+			entity_vis_size: 1.0f
 			id: "1F7DB003CE2F7141"
 			tasks: [{
 				id: "2A62B05C765292A2"
@@ -2800,6 +3010,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "146059B6FF1324D4"
 			tasks: [{
 				id: "547C115CAF44D54D"
@@ -2811,6 +3022,7 @@
 		}
 		{
 			dependencies: ["4215E53DE9E8FA11"]
+			entity_vis_size: 1.0f
 			id: "388BFE99FCF19231"
 			tasks: [{
 				id: "5F007C47B6AFE01D"
@@ -2822,6 +3034,7 @@
 		}
 		{
 			dependencies: ["388BFE99FCF19231"]
+			entity_vis_size: 1.0f
 			id: "5976E3C7AF7B9F36"
 			tasks: [{
 				id: "5D23832A192F0609"
@@ -2833,6 +3046,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "46E60171B59F733A"
 			tasks: [{
 				id: "47EF83A67D834F71"
@@ -2844,6 +3058,7 @@
 		}
 		{
 			dependencies: ["14F2D01EA423DA6D"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "risus:weaving_mechanism"
 			}
@@ -2851,6 +3066,15 @@
 			shape: "gear"
 			tasks: [
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						id: "risus:weaving_mechanism"
 					}
@@ -2862,6 +3086,15 @@
 					type: "observation"
 				}
 				{
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
 						id: "risus:weaver_nest"
 					}
@@ -2883,6 +3116,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "05043FC404B628BE"
 			tasks: [{
 				id: "6734032735EFF610"
@@ -2894,6 +3128,7 @@
 		}
 		{
 			dependencies: ["05043FC404B628BE"]
+			entity_vis_size: 1.0f
 			id: "14F2D01EA423DA6D"
 			tasks: [{
 				id: "6F11D9E279D28F2E"
@@ -2908,6 +3143,7 @@
 				"14F2D01EA423DA6D"
 				"48FA96EF23D033A4"
 			]
+			entity_vis_size: 1.0f
 			id: "50DCCF46F6DBE063"
 			tasks: [{
 				id: "22AD2DB2CBF6016C"
@@ -2919,6 +3155,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "460E0E1586EBB12E"
 			shape: "gear"
 			size: 2.0d
@@ -2932,6 +3169,7 @@
 		}
 		{
 			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
 			id: "553F282C59585B66"
 			shape: "heart"
 			tasks: [{
@@ -2944,6 +3182,7 @@
 		}
 		{
 			dependencies: ["05EFE56056E7F4E6"]
+			entity_vis_size: 1.0f
 			id: "05488D2D100A053D"
 			min_width: 300
 			shape: "heart"
@@ -2957,6 +3196,7 @@
 		}
 		{
 			dependencies: ["43D7A206F79B9F48"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "neovitae:array_vortex"
 			}

@@ -50,6 +50,7 @@
 	quests: [
 		{
 			dependencies: ["590167B593FE267A"]
+			entity_vis_size: 1.0f
 			id: "7EFCA744EC5BCFDB"
 			shape: "heart"
 			size: 2.0d
@@ -62,6 +63,7 @@
 		}
 		{
 			dependencies: ["7EFCA744EC5BCFDB"]
+			entity_vis_size: 1.0f
 			id: "32A2AA91FA55AB4A"
 			tasks: [{
 				id: "403F17B1F42C51C7"
@@ -72,6 +74,7 @@
 		}
 		{
 			dependencies: ["32A2AA91FA55AB4A"]
+			entity_vis_size: 1.0f
 			id: "2B56BBEF58157952"
 			tasks: [{
 				id: "258E74CA68DE446A"
@@ -82,6 +85,7 @@
 		}
 		{
 			dependencies: ["2B56BBEF58157952"]
+			entity_vis_size: 1.0f
 			id: "5CC8256483CC8A63"
 			rewards: [{
 				id: "07DD2116626BB72E"
@@ -108,6 +112,7 @@
 		}
 		{
 			dependencies: ["7EFCA744EC5BCFDB"]
+			entity_vis_size: 1.0f
 			hide_until_deps_visible: true
 			id: "06B403309D54D86E"
 			tasks: [

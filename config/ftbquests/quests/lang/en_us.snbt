@@ -85,7 +85,11 @@
 		"&l&eФакел&r, &l&eканделябр&r или &l&eсвеча&r могут стать &bэффективным средством&r для увеличения &bскорости перезарядки&r вашего &l&eалтаря&r."
 	]
 	quest.02196EDBFE8C5BA5.quest_desc: ["speed upgrade "]
-	quest.0237945A1F6F9132.quest_desc: ["&aУбивая&r &l&eжителей&r или &l&eигроков&r есть шанс выбить эту &l&bдушу&r"]
+	quest.0237945A1F6F9132.quest_desc: [
+		"&aKilling&r &l&evillagers&r or &l&eplayers&r there is a chance to drop this &l&bspirit&r"
+		"{@pagebreak}"
+		"&aУбивая&r &l&eжителей&r или &l&eигроков&r есть шанс выбить эту &l&bдушу&r"
+	]
 	quest.026821F02D50FE0D.quest_desc: [
 		"It might look a bit overwhelming at first, but it's very straightforward once you get used to it. Each ritual has one main ingredient that goes into the big slot in the middle. The four slots surrounding it can be used for &benhancers&r. Some enhancers are required to start certain rituals while many enhancers are optional and provide useful advantages such as &ereduced essence costs&r. "
 		""
@@ -310,7 +314,11 @@
 		"{@pagebreak}"
 		"&cТОКСИЧНОЕ МАСЛО!&r Ещё более летучий и опасный вариант! Оно уже может приводить к &cлетальному исходу&r. Я КАЖДОМУ дам попробовать моё невероятное творение!"
 	]
-	quest.0A8264D255BE5EF5.quest_desc: ["Душу &l&eв вторую руку&r &aпкм по земле&r - ставит &l&eсветящийся блок душ&r"]
+	quest.0A8264D255BE5EF5.quest_desc: [
+		"Spirit &l&ein the offhand&r &aRMB on ground&r - places &l&eglowing spirit block&r"
+		"{@pagebreak}"
+		"Душу &l&eв вторую руку&r &aпкм по земле&r - ставит &l&eсветящийся блок душ&r"
+	]
 	quest.0ACD0476CE4CAED1.quest_desc: [
 		"Allows water to be pumped from rivers into the aqueduct network!"
 		""
@@ -399,9 +407,13 @@
 	quest.0D2F0CADB899F43F.quest_desc: ["Hurls entities skyward with considerable force."]
 	quest.0D70E9CF33C567A7.quest_desc: ["Drops from a &cpoisoned&r &l&ellama&r."]
 	quest.0DBD3895EE949921.quest_desc: [
-		"Ах, вечный договор - это тяжелая ноша. Клятвы обладают большой силой и могут давать мощный эффект, но их недостатки - постоянные спутники. Эти договоры можно расторгнуть на жаровне, что позволяет вам решить, какую цену вы готовы заплатить."
+		"Ah, a pact that binds forever is a heavy thing. <curse>Geasa</curse> are potent, yes, and can achieve powerful effects, but their downsides are constant companions. These pacts can be <keyword>forsworn</keyword> on the <fire>Brazier</fire>, allowing you to decide what price you are willing to pay."
 		""
-		"Чтобы отказаться от клятвы, соберите ее на жаровне, как вы делали вначале, но вместо этого используйте паракаузальное пламя, чтобы разжечь жаровню. Это сожжет договор, а не запишет его. Остальная часть процесса работает так же, включая слабость."
+		"To forswear a geas, assemble it on the <fire>Brazier</fire> as you did initially, but use the <flame>Paracausal Flame</flame> to kindle the Brazier instead. This will burn the contract away instead of inscribe it. The rest of the process works the same, including <curse>Weakness</curse>."
+		"{@pagebreak}"
+		"Ах, вечный договор - это тяжелая ноша. <curse>Клятвы</curse> обладают большой силой и могут давать мощный эффект, но их недостатки - постоянные спутники. Эти договоры можно <keyword>расторгнуть</keyword> на <fire>жаровне</fire>, что позволяет вам решить, какую цену вы готовы заплатить."
+		""
+		"Чтобы отказаться от клятвы, соберите ее на <fire>жаровне</fire> как вы делали вначале, но вместо этого используйте <flame>паракаузальное пламя</flame>, чтобы разжечь жаровню. Это сожжет договор, а не запишет его. Остальная часть процесса работает так же, включая <curse>слабость</curse>."
 	]
 	quest.0DC8007E71D86A99.quest_desc: [
 		"&#FEECD6Compacting Chest&r will try to compact all the items you put inside it in a 3x3, 2x2 or 1x1 pattern - this can be customized in the GUI."
@@ -508,6 +520,11 @@
 		"A &l&eportable power source&r that slowly creates &l&eChronons&r while it is in your &einventory&r or &eCurios slot&r. It has no storage of its own, so it is mainly used to &acharge&r &l&eCells&r and &l&eBatteries&r."
 		"{@pagebreak}"
 		"Переносной &l&eисточник энергии&r, который медленно создает &l&eChronon&r, пока лежит в &eинвентаре&r или слоте &eCurios&r. У него нет собственного запаса, поэтому он нужен в первую очередь для &aзарядки&r &l&eячеек&r и &l&eбатарей&r."
+	]
+	quest.10400EC9FEFEC45F.quest_desc: [
+		"[ \"from the \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" mod or \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } }, \".\" ]"
+		"{@pagebreak}"
+		"[ \"Можно использовать ритуал поиска структур из мода \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" или \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } } ]"
 	]
 	quest.106F4D5B5D4A02F7.quest_desc: [
 		"Anyone &#FEECD6interested&r is invited to read the &l&#e4affaSpectrum&r&r guidebook, no point in copying the information to here!"
@@ -784,13 +801,21 @@
 	]
 	quest.19300837BD132C67.quest_desc: ["&aБустит по горизонтали&r когда встаёшь"]
 	quest.19545E28C84E87B2.quest_desc: [
-		"Если предметы взлетели над алтарём - рецепт верный. "
+		"If the items have risen above the altar - the recipe is correct."
 		""
-		"Добавь эзер чтобы запустить крафт, как только запустил - добавь свою кровь(можно добавить несколько игроков за один ритуал) в алтарь нажатием ПКМ, дальше жди."
+		"Add ether to start the craft. Once started - add your blood to the altar by pressing RMB (multiple players can contribute in a single ritual), then just wait."
 		""
-		"Так же можно добавить кровь любого другого существа, для этого нужно наложить на существо эффект слабости перед тем как зажечь жаровню."
+		"You can also add the blood of any other creature. To do so, apply a weakness effect to it before lighting the brazier."
 		""
-		"На игроке может быть максимум 2 проклятья. Так же его сложно снять."
+		"A player can have a maximum of 2 curses. They are also difficult to remove."
+		"{@pagebreak}"
+		"Если предметы поднялись над алтарём - рецепт верный."
+		""
+		"Добавь эфир, чтобы запустить крафт. После запуска - добавь свою кровь в алтарь нажатием RMB (можно добавить нескольких игроков за один ритуал), затем просто жди."
+		""
+		"Также можно добавить кровь любого другого существа. Для этого наложи на него эффект слабости до того, как зажечь жаровню."
+		""
+		"На игроке может быть максимум 2 проклятья. Снять их непросто."
 	]
 	quest.19720A27E00D46F5.quest_desc: [
 		"Bridging allows for placing blocks in gaps in front, above, or below blocks, even if the surface isn't visible! When it's available, a crosshair is shown to indicate where that block will be placed. When the F3 menu is visible, there's an extra outline showing the exact position it's placing in (but you can turn it on all the time in the config)"
@@ -1032,7 +1057,7 @@
 		"{@pagebreak}"
 		"Работает - и отлично, наверное."
 	]
-	quest.1FC26CA207964E0D.quest_desc: ["&e5&r арканы в тотем"]
+	quest.1FC26CA207964E0D.quest_desc: [""]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a &l&eBlock Hole&r by &athrowing&r &6Dark Matter&r together with &l&eCorrupti Dust&r on the ground. It will &battract items&r and small entities like &l&eArrows&r or &l&eExperience Orbs&r and &cdelete them&r. Once it absorbed enough experience points, it will throw out a &l&eXpetrified Orb&r."]
 	quest.1FE16BABD524C29B.quest_desc: ["&l&eTree Capitator&r that is... packed inside a &bsmall orb&r? Gimme two please ('-')"]
 	quest.203B742A5DB473FA.quest_desc: ["Simply &asmash&r a piece of &l&eflint&r against a &l&estone&r to sharpen it"]
@@ -2206,7 +2231,11 @@
 		"{@pagebreak}"
 		"Создаётся из Blood Feather, Echo Pearl и War Horn на кузнечном столе. Применяет загруженный эффект зелья на всех врагов рядом, а не на союзников. Поддерживает зачарование Flame, поджигающее жертв вместе с эффектом зелья."
 	]
-	quest.464E6E68F80377D1.quest_desc: ["Можно зачаровать, добавить описания того на что "]
+	quest.464E6E68F80377D1.quest_desc: [
+		"Scythe has unique enchantments - try enchanting it!"
+		"{@pagebreak}"
+		"Scythe имеет уникальные зачарования, попробуйте её зачаровать!"
+	]
 	quest.4662695201019F94.quest_desc: [
 		"Adding &l&efume funnels&r to the left and right of your &l&ewitch's oven&r can &adrastically improve&r it's &eyield&r."
 		""
@@ -2608,7 +2637,11 @@
 		"Новые указы можно получить в качестве награды за выполнение определенных заданий или обменять у жителей деревни, достигших более высоких уровней."
 	]
 	quest.5386ADA67BEB546A.quest_desc: ["&aВстаёшь&r - даёт &eопыт&r из привязанного &l&eобелиска с опытом&r"]
-	quest.538E3976DDFD9FBF.quest_desc: ["Отображает суммарное количество &eбафов&r в &l&eкузне&r"]
+	quest.538E3976DDFD9FBF.quest_desc: [
+		"Displays the total number of &e buffs&r in the &l&eCrucible&r"
+		"{@pagebreak}"
+		"Отображает суммарное количество &eбафов&r в &l&eкузне&r"
+	]
 	quest.53CBB401AAEFD083.quest_desc: [
 		"By feeding &bSource&r and a &l&eJar of Mobs&r, you can perform a &csacrifice&r for the &l&eOccultism&r mod if placed under the &l&ealtar&r"
 		"{@pagebreak}"
@@ -2722,7 +2755,11 @@
 		""
 		"В отличие от печи, эта печь &cне может перерабатывать руды&r. &aПоместите&r &l&eглиняный кувшин&r в центральный слот, чтобы собирать дым."
 	]
-	quest.5A518A86865E47EB.quest_desc: ["Показывает радиус работы тотемов"]
+	quest.5A518A86865E47EB.quest_desc: [
+		"Shows the working radius of totems."
+		"{@pagebreak}"
+		"Показывает радиус работы тотемов"
+	]
 	quest.5AB1A672225555B0.quest_desc: ["By pressing \"&aShift + X&r\" on an item in your inventory, you can &alink said item in chat&r"]
 	quest.5AEBD2E96FA53366.quest_desc: ["The &bfiery modifier&r can be applied to all tool items (&l&ePickaxes, Shovels, Axes, Hoes&r) and will &aautomatic&rsmelting of all mined blocks&r if they have a smelting recipe. "]
 	quest.5AEEF8055EA6AE88.quest_desc: ["&aUse&r a &l&eSplash Aureal Bottle&r on a normal soul for getting"]
@@ -2806,7 +2843,15 @@
 		""
 		"{image:milf:textures/quest_pic/capacity.png width:200 height:60 align:center}"
 	]
-	quest.5CD79C87448D8A51.quest_desc: ["Тут множество разных ритуалов можно делать, но это лучше прочитать в &l&eкниге&r т.к. меняются только руны, самый важный ритуал из &e5 арканы&r - даёт &l&eSoulwood sapling&r"]
+	quest.5CD79C87448D8A51.quest_desc: [
+		"There are many different rituals - check them out in the guidebook!"
+		""
+		"One of the important rituals is the 5 Arcana; it creates a Soulwood sapling. Be sure to read more about it in the guidebook!"
+		"{@pagebreak}"
+		"Существует много разнообразных ритуалов, ознакомьтесь с ними в гайдбуке!"
+		""
+		"Один из важных ритуалов это 5 арканы, он даёт создаёт Soulwood sapling, прочтите так же подробнее об этом в гайдбуке!"
+	]
 	quest.5CEDA5F61D74B3A8.quest_desc: [
 		"Place blocks fast in &eline&r, &ewall&r, &efloor&r, &ecolumn&r, &estair&r, and &egrid&r shapes. &7Shift-right-click&r to choose the block, then use the settings menu and &aright-click&r to build. It uses blocks from your inventory or linked storage and shows a preview first"
 		"{@pagebreak}"
@@ -3599,9 +3644,13 @@
 	quest.72F7318B36C13A89.quest_desc: ["From &l&eenderman&r with &l&escythe&r"]
 	quest.7334667E017F1A95.quest_desc: ["позволяет плавать и не спрыгивать с метлы под водой"]
 	quest.733E5E7E27403D28.quest_desc: [
-		"макс 4 "
+		"Maximum: 4"
 		""
-		"Увеличивает скорость крафта на алтаре на 25% за штуку."
+		"Each one increases the altar crafting speed by 25%."
+		"{@pagebreak}"
+		"Максимум: 4 штуки"
+		""
+		"Каждый экземпляр увеличивает скорость крафта на алтаре на 25%."
 	]
 	quest.73908D0BD7473933.quest_desc: [
 		"A &l&echalice&r may be placed on top of an &l&ealtar&r to &bincrease its power capacity&r. The chalice can be filled by &ausing Redstone Soup&r on it."
@@ -3880,9 +3929,24 @@
 		"{@pagebreak}"
 		"Можно создавать свои рыбные турниры и посоревноваться кто лучший рыбак!"
 	]
+	reward.015382CFC13FFB7A.title: "Deeper Down Access "
+	reward.058FD5B700A2EB20.title: "Feet Trinket Slot"
+	reward.094072146D87AD84.title: "Pouch slot"
+	reward.0A8447D787E641E3.title: "Void Access "
+	reward.1700ECB1400F81BB.title: "New Trinket slot \"hands\""
+	reward.1816E9C04215E83A.title: "New Trinket slot \"belt\""
 	reward.19304AD673874503.title: "Eidolon Mobs"
+	reward.2BD4B3CA5BEDBA19.title: "The End Access "
+	reward.401FEBCB5849F6DE.title: "New Trinket slot \"back\""
+	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
+	reward.4847BCB4A0147A6D.title: "New Trinket slot \"crafting on a stick\""
 	reward.5EBDE634D224C573.title: "Crimson Veil Access"
 	reward.5F437D0400382507.title: "Malum Ore Access "
+	reward.670CBE4973B6F390.title: "New interactions: villagers, spawners, wandering trader and new mobs"
+	reward.7108991BE6DD4A51.title: "Radial Menu Button"
+	reward.73D93A782AD2E4AE.title: "Trinket bundle slot"
+	reward.7650FE6CA0220DA3.title: "The Nether Access "
+	reward.7EF0A7794783232F.title: "New ore in world"
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.01899FA102ABD33A.title: "Any #milf:metal_fences"
 	task.01C0F8B5DE9EEDCD.title: "Cry of the Forsaken Soul"

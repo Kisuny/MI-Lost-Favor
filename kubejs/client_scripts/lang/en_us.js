@@ -10,12 +10,12 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)
     event.add('milf.stage.bronze_age', `You have passed into the ${MilfEffects.GRAD.custom("Bronze Age", "#CD7F32", "#F6BA7D")}`)
-    event.add('milf.stage.monsterplus_mobs', `You began to hear the ${MilfEffects.GRAD.custom("cries of the dead", "#D12F0E","#841B4C")} at night`)
+    event.add('milf.stage.monsterplus_mobs', `You began to hear the ${MilfEffects.GRAD.custom("cries of the dead", "#D12F0E", "#841B4C")} at night`)
     event.add('milf.stage.eidolon_mobs', `You can feel a ${MilfEffects.GRAD.custom("chill run down your spine", "#2E57BE", "#2EBFD8")}`)
     event.add('milf.stage.mythsandlegends_mobs', `Mythical creatures ${MilfEffects.GRAD.custom("can hear you", "#F00B0B", "#DA502D")} at night, be careful`)
-    event.add('milf.stage.mowziesmobs_mobs', `New ${MilfEffects.GRAD.custom("dangers", "#F00B0B","#CF0F4C")} have appeared on your path`)
+    event.add('milf.stage.mowziesmobs_mobs', `New ${MilfEffects.GRAD.custom("dangers", "#F00B0B", "#CF0F4C")} have appeared on your path`)
     event.add('milf.stage.cataclysm_mobs', `Something ancient stirs in the ${MilfEffects.GRAD.custom("darkened depths", "#093BE0", "#3B13B3")}...`)
-    event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${MilfEffects.GRAD.custom("creatures beyond count", "#8A5CCF","#CEBCFF")}`)
+    event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${MilfEffects.GRAD.custom("creatures beyond count", "#8A5CCF", "#CEBCFF")}`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${MilfEffects.GRAD.custom("new ores", "#55A2FA", "#8DDBFF")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
@@ -122,13 +122,13 @@ Receive reward far greater still.`)
     event.add('milf.divine_coin.tooltip.loot_modifier', `Loot modifier: `)
     event.add('milf.divine_coin.tooltip.to_check_resurrection_toll', `to check ${MilfEffects.GLITCH("resurrection toll")}`)
     event.add('milf.divine_coin.gui.resurrection_toll', `Resurrection toll`)
-    
+
     event.add('milf.divine_coin.error.structure_exclusive', `This boss can only be resurrected within the corresponding structure`)
     event.add('milf.divine_coin.error.spawn_conditions', `This boss can only be resurrected within the corresponding structure or in the Abstraction dimension`)
 
 
     event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${MilfEffects.GRAD.UPGRADE("upgrade")} it. Preserves ${MilfEffects.WAVE_C("all")} the content. Not consumed on use, even when used as a crafting ingredient.`)
-    
+
     event.add('milf.recall_concoction.new_pos', `New recall position saved!`)
 
     event.add('milf.grecall_concoction.t1.tooltip', `Retrieves the content of the last grave you "intentionally" leave in this world. Only works within the same dimension and within a radius of 1000 blocks around the grave.`)
@@ -227,7 +227,7 @@ Receive reward far greater still.`)
     event.add("residue.forbidden_arcanus.lapis_lazuli", "Lapis Lazuli")
     event.add("residue.forbidden_arcanus.emerald", "Emerald")
     //#endregion
-    
+
     event.add("residue.forbidden_arcanus.netherite", "Netherite Scrap")
     event.add("jei.forbidden_arcanus.category.clibanoCombustion", "Clibano Combustion")
     //#region Food tweak
@@ -363,6 +363,13 @@ Receive reward far greater still.`)
 
     //#endregion
 
+    // esoteric reaping tooltips
+    event.add('milf.esoteric_reaping.wind_nucleus', "Drops from <wind>Breeze</wind> when killed with a <keyword>Crude Scythe</keyword>")
+    event.add('milf.esoteric_reaping.grim_talc', "Drops from <bone>Skeletons</bone> when killed with a <keyword>Crude Scythe</keyword>")
+    event.add('milf.esoteric_reaping.astral_weave', "Drops from <soul>Phantoms</soul> when killed with a <keyword>Crude Scythe</keyword>")
+    event.add('milf.esoteric_reaping.rotting_essence', "Drops from <blood>Undead</blood> when killed with a <keyword>Crude Scythe</keyword>")
+    event.add('milf.esoteric_reaping.warp_flux', "Drops from <magic>Endermen</magic> when killed with a <keyword>Crude Scythe</keyword>")
+
     // ore_tooltips
     event.add('milf.ore_tooltip.overworld', '☀ Overworld')
     event.add('milf.ore_tooltip.nether', '⬛ Nether')
@@ -400,24 +407,24 @@ let MilfEffects = {
         NEGATIVE(text) {
             return this.custom(text, "#E40808", "#FFAAAA")
         },
-        MILF(text){
+        MILF(text) {
             return this.custom(text, "#9ea5d6", "#848dcb")
         }
     },
-    WAVE_C(text){
+    WAVE_C(text) {
         return textAnimatorString(text, "wave", { amplitude: 0.25, wavelength: 0.25, frequency: 0.2 })
     },
-    GLITCH(text){
+    GLITCH(text) {
         return textAnimatorString(text, "glitch")
     },
-    BOUNCE_FULL(text){
+    BOUNCE_FULL(text) {
         return textAnimatorStringForEach(text, "bounce")
     },
-    UP_DOWN(text){
+    UP_DOWN(text) {
         return textAnimatorStringForEach(text, "wave", { amplitude: 0.5 })
     },
-    WIGGLE(text){
-        return textAnimatorString(text, "wiggle", { amplitude: 0.5 , frequency: 0.35})
+    WIGGLE(text) {
+        return textAnimatorString(text, "wiggle", { amplitude: 0.5, frequency: 0.35 })
     }
 }
 

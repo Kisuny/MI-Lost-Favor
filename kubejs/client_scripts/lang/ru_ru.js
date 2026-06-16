@@ -347,16 +347,23 @@ ClientEvents.lang('ru_ru', event => {
     //#endregion
 
     //#region rituals
-        event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
-        event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
-        event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
-        event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
+    event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
+    event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
+    event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
+    event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
 
-        event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
-        event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
-        event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
-        event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
     //#endregion
+
+    // esoteric reaping tooltips
+    event.add('milf.esoteric_reaping.wind_nucleus', "Выпадает с <wind>Бриза</wind> при убийстве <keyword>Примитивной Косой</keyword>")
+    event.add('milf.esoteric_reaping.grim_talc', "Выпадает со <bone>Скелетов</bone> при убийстве <keyword>Примитивной Косой</keyword>")
+    event.add('milf.esoteric_reaping.astral_weave', "Выпадает с <soul>Фантомов</soul> при убийстве <keyword>Примитивной Косой</keyword>")
+    event.add('milf.esoteric_reaping.rotting_essence', "Выпадает с <blood>Нежити</blood> при убийстве <keyword>Примитивной Косой</keyword>")
+    event.add('milf.esoteric_reaping.warp_flux', "Выпадает с <magic>Эндерменов</magic> при убийстве <keyword>Примитивной Косой</keyword>")
 
     // ore_tooltips
     event.add('milf.ore_tooltip.overworld', '☀ Оверворлд')

@@ -26,21 +26,21 @@ ItemEvents.modifyTooltips(event => {
     simpleShiftText({ item: "milf:electronic_ender_core", text: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89" })
     simpleShiftText({ item: "milf:crimson_veil_elixir", text: "milf.crimson_veil_elixir.tooltip", color: "#A71237" })
     event.add("#magnumtorch:torches", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
-    
+
     //#region
 
     //#region various changes
 
     // very cursed item, when insert text in 2-line - text appears explaining how to use the item, without the tooltip, this text is not displayed 🤯 
-    event.modify("devices:magical_pouch", tooltip => { 
-        tooltip.insert(3, Text.translate("milf.money_pouch.tooltip").color("#f5c25b")) 
+    event.modify("devices:magical_pouch", tooltip => {
+        tooltip.insert(3, Text.translate("milf.money_pouch.tooltip").color("#f5c25b"))
     })
 
-    event.modify("devices:devices_pouch", tooltip => { 
+    event.modify("devices:devices_pouch", tooltip => {
         tooltip.removeLine(2)
-        tooltip.insert(2, Text.translate("milf.money_pouch.tooltip").color("#f5c25b")) 
+        tooltip.insert(2, Text.translate("milf.money_pouch.tooltip").color("#f5c25b"))
     })
-    
+
 
     //#region
 
@@ -100,21 +100,29 @@ ItemEvents.modifyTooltips(event => {
     });
     //#region
 
+    //#region Malum Esoteric Reaping
+    simpleShiftText({ item: 'malum:wind_nucleus', text: 'milf.esoteric_reaping.wind_nucleus', color: '#D4C9A8' })
+    simpleShiftText({ item: 'malum:grim_talc', text: 'milf.esoteric_reaping.grim_talc', color: '#D4C9A8' })
+    simpleShiftText({ item: 'malum:astral_weave', text: 'milf.esoteric_reaping.astral_weave', color: '#D4C9A8' })
+    simpleShiftText({ item: 'malum:rotting_essence', text: 'milf.esoteric_reaping.rotting_essence', color: '#D4C9A8' })
+    simpleShiftText({ item: 'malum:warp_flux', text: 'milf.esoteric_reaping.warp_flux', color: '#D4C9A8' })
+    //#region
+
     //#region You can interact with this in the claimed chunks
     const claim_interact_tooltip = [
-         'hexerei:witch_hazel_broom',
-         'hexerei:willow_broom', 
-         'hexerei:mahogany_broom',
-         '#waystones:is_teleport_target',
-         '#minecraft:boats',
-         '#lootr:containers',
-         'yigd:grave',
-         '#smallships:ships',
-        ]
+        'hexerei:witch_hazel_broom',
+        'hexerei:willow_broom',
+        'hexerei:mahogany_broom',
+        '#waystones:is_teleport_target',
+        '#minecraft:boats',
+        '#lootr:containers',
+        'yigd:grave',
+        '#smallships:ships',
+    ]
     claim_interact_tooltip.forEach(element => {
         event.add(element, Text.of(textAnimatorString("🛈 You can interact with this in the claimed chunks", "fade")).color("#4EC847"))
     });
-    
+
     //#region
 
 })

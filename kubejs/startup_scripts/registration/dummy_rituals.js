@@ -9,4 +9,29 @@ StartupEvents.registry('item', (event) => {
         .pentacleType("craft") //Determines the dummy texture, valid options are Valid options are: "misc", "craft", "summon", "possess", default is "misc".
         .displayName('Ritual: Craft Vial Of Liquid Confidence')
         .ritualTooltip('Vial allows you to show courage and start interacting with The Gatekeeper')
+    
+        event.create('milf:alakarkinos', 'occultism:ritual_dummy')
+        .pentacleType("summon") 
+        .displayName('Ritual: Summon Alakarkinos')
+        .ritualTooltip('Summon Ars Nouveau Alakarkinos')
+        
+        event.create('milf:starbuncle', 'occultism:ritual_dummy')
+        .pentacleType("summon") 
+        .displayName('Ritual: Summon Starbuncle')
+        .ritualTooltip('Summon Ars Nouveau Starbuncle')
+        
+        event.create('milf:whirlisprig', 'occultism:ritual_dummy')
+        .pentacleType("summon") 
+        .displayName('Ritual: Summon Whirlisprig')
+        .ritualTooltip('Summon Ars Nouveau Whirlisprig')
+        
+        event.create('milf:drygmy', 'occultism:ritual_dummy')
+        .pentacleType("summon") 
+        .displayName('Ritual: Summon Drygmy')
+        .ritualTooltip('Summon Ars Nouveau Drygmy')
+        
+        event.create('milf:siren', 'occultism:ritual_dummy')
+        .pentacleType("summon") 
+        .displayName('Ritual: Summon Siren')
+        .ritualTooltip('Summon Ars Elemental Siren')
 })

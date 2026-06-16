@@ -1,0 +1,27 @@
+{
+  "type": "malum:spirit_infusion",
+  "extraInputs": [
+    {
+      "count": 2,
+      "tag": "c:strings"
+    }
+  ],
+  "input": {
+    "count": 2,
+    "item": "hexerei:infused_fabric"
+  },
+  "result": {
+    "count": 4,
+    "id": "malum:soulwoven_silk"
+  },
+  "spirits": [
+    {
+      "type": "malum:aerial",
+      "count": 3
+    },
+    {
+      "type": "malum:earthen",
+      "count": 3
+    }
+  ]
+}

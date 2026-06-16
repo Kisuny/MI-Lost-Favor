@@ -1,16 +1,17 @@
-filename = 'endrem_additions-neoforge-1.1.0.jar'
+filename = 'endrem_additions-neoforge-1.1.2.jar'
 name = 'End Remastered Additions'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'endrem_additions-neoforge-1.1.2.jar'
 
 [download]
-hash = 'eb5a1d75af428ddb47dc78ed2f34b4dd480b66f2'
+hash = 'a1d157aa7a222ae7312f498d171ffff66651a126'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7147529
+file-id = 8241343
 project-id = 1365790

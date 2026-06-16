@@ -4,8 +4,6 @@ let $ClientMessageManager = Java.loadClass("net.tysontheember.emberstextapi.clie
 let $UUID = Java.loadClass("java.util.UUID")
 let $MarkupParser = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.api.MarkupParser")
 let $SlideMessageEffect = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.effects.message.SlideMessageEffect")
-let $TypewriterEffect = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.effects.animation.TypewriterEffect")
-let $TypedParams = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.effects.params.TypedParams")
 let $TextAlign = Java.loadClass("net.tysontheember.emberstextapi.immersivemessages.api.TextAlign")
 
 
@@ -137,7 +135,7 @@ function sendImmersiveMessage(text, player, args){
     argsJS.applyWarn && (textComponent = Component.of("⚠ ").append(textComponent))
     //console.log(duration);
     
-    let message = new $ImmersiveMessage["(net.minecraft.network.chat.Component,float)"](textComponent, duration)
+    let message = new $ImmersiveMessage["(net.minecraft.network.chat.Component,int)"](textComponent, duration)
     
     let messageId = $UUID.randomUUID()
 
@@ -192,24 +190,15 @@ function applyArgsToImmersiveMessage(message, args){
         }
     }
     if (args.typewriter) {
-        let paramsMap = new $HashMap({ 
-            "cursor": args.typewriter.cursor || false,
-            "speed": args.typewriter.speed || 1000,
-            "sound": args.typewriter.sound || null
-        })
-
-        let effect = new $TypewriterEffect( new $TypedParams( paramsMap ) )
-
-        message.typewriter(args.typewriter.speed / 20 || 1, args.typewriter.notCenterAligned || false) // this stuff is reversed in the source code for whatever reason
-
-
-        message.addEffect(effect)
-        //args.typewriter.sound && message.sound($SoundEffect[args.typewriter.sound])
+        let speed = args.typewriter.speed || 12
+        let center = args.typewriter.notCenterAligned ? "false" : "true"
+        let markupString = `<type s="${speed}" center="${center}">`
+        applyMarkup(message, markupString)
     }
     if (args.subtext){
         Client.scheduleInTicks(args.subtext.delay * 20 | 0, callback => {
             let subtextComponent = COMPOUND_TAGS_ME_ARSE(args.subtext.content)
-            let subtextMessage = new $ImmersiveMessage["(net.minecraft.network.chat.Component,float)"](args.subtext.content, (args.duration * 20 | 0 || 2.2) - (args.subtext.delay * 20 | 0 || 0))
+            let subtextMessage = new $ImmersiveMessage["(net.minecraft.network.chat.Component,int)"](args.subtext.content, (args.duration * 20 | 0 || 44) - (args.subtext.delay * 20 | 0 || 0))
             applyArgsToImmersiveMessage(subtextMessage, args.subtext)            
 
             $ClientMessageManager.open($UUID.randomUUID(), subtextMessage)

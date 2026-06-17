@@ -169,6 +169,14 @@ function applyArgsToImmersiveMessage(message, args){
     }
     args.anchor && message.anchor($TextAnchor[args.anchor])
 
+    if(args.vibrate){
+        let markupString = `[vibrate${args.vibrateAmp !== undefined ? ` amp=${args.vibrateAmp}` : ""}${args.vibrateFreq !== undefined ? ` freq=${args.vibrateFreq}` : ""}]`
+        applyMarkup(message, markupString)
+    }
+    if(args.drip){
+        let markupString = `[drip${args.freq !== undefined ? ` freq=${args.freq}` : ""}${args.len !== undefined ? ` len=${args.len}` : ""}${args.col ? ` col=${args.col}` : ""}${args.fade !== undefined ? ` fade=${args.fade}` : ""}${args.snd ? ` snd=${args.snd}` : ""}${args.vol !== undefined ? ` vol=${args.vol}` : ""}${args.pitch !== undefined ? ` pitch=${args.pitch}` : ""}]`
+        applyMarkup(message, markupString)
+    }
     if(args.slideIn){
         let markupString = `[slide mode=in from=${args.slideIn} dur=${args.slideInDuration || "1"} easing=${args.slideInEasing || "ease_in_out_cubic"}]`
         

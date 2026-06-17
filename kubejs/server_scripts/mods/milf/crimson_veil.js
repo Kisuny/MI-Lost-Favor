@@ -46,6 +46,15 @@ NativeEvents.onEvent("net.neoforged.neoforge.event.entity.player.PlayerWakeUpEve
     server.scheduleInTicks(20, _ => {
         player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](targetLevel, x + 0.5, safeY, z + 0.5, player.yRot, player.xRot)
         player.getPersistentData().remove("crimson_veil_potion_drinked")
+        player.potionEffects.add("minecraft:blindness", 200)
+        player.potionEffects.add("minecraft:darkness", 200)
+        sendImmersiveMessage(
+            Text.translatable("milf.crimson_veil.enter"),
+            player,
+            Object.assign({"vibrate":true,"vibrateAmp":0.2,"vibrateFreq":20}, DEFAULT_MILESTONE_NOTIFICATION_STYLE),
+            server
+        )
+        milfPlaySoundForPlayer(player, "minecraft:entity.breeze.idle_ground", { volume: 1.0, pitch: 0.50 })
     })
 })
 
@@ -67,5 +76,7 @@ ItemEvents.foodEaten("risus:guilty_apple", event => {
 
     player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](returnDim, retX, retY, retZ, player.yRot, player.xRot)
     player.getPersistentData().remove("crimson_veil_return_pos")
+    player.potionEffects.add("minecraft:blindness", 400)
+    player.potionEffects.add("minecraft:darkness", 400)
 })
 

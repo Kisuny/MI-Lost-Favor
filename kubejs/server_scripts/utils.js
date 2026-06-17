@@ -5,6 +5,21 @@ String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
+function milfPlaySoundForPlayer(/**@type {$ServerPlayer_} */ player, resourceLocation, args){
+    args = args || {}
+    let source = args.source ? $SoundSource[args.source] : $SoundSource.AMBIENT
+    let pos = args.pos ? args.pos : player.blockPosition()
+    let soundEvent = $BuiltInRegistries.SOUND_EVENT.get($ResourceLocation.parse(resourceLocation))
+    let playLocal = args.playLocal !== false
+
+    if (playLocal) {
+        player["playNotifySound(net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)"](soundEvent, source, args.volume || 1, args.pitch || 1)
+    } else {
+        player.level["playSound(net.minecraft.world.entity.player.Player,net.minecraft.core.BlockPos,net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)"]
+            (null, pos, soundEvent, source, args.volume || 1, args.pitch || 1)
+    }
+}
+
 function milfPlaySound(/**@type {$BlockRightClickedKubeEvent_} */ event, resourceLocation, args){
     args = args || {}
     let level = event.level

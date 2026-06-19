@@ -641,6 +641,23 @@
     },
     {
       "type": "goblintraders:basic",
+      "experience": 200,
+      "max_trades": 4,
+      "offer_item": {
+        "count": 1,
+        "id": "enigmaticlegacyplus:enchantment_transposer"
+      },
+      "payment_item": {
+        "count": 4,
+        "id": "devices:mithril_coin"
+      },
+      "secondary_payment_item": {
+        "count": 1,
+        "id": "minecraft:book"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
       "experience": 50,
       "max_trades": 4,
       "offer_item": {

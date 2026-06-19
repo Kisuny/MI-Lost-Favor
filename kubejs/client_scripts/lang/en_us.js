@@ -22,6 +22,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')
     event.add('milf.how_to_get_blaze_core.tooltip', 'You have a 50% chance of obtaining if you kill with the any wrench: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'You have a 50% chance of obtaining if you kill with the wrench: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
+    event.add('milf.buy_from_goblin_and_wanderer.tooltip', 'You can buy it from a <keyword>wandering trader</keyword> or a <keyword>goblin trader</keyword>')
     event.add('milf.stage.minecraft_mobs', `You started hearing ${MilfEffects.GRAD.custom("strange noises", "#ED1A1A", "#B62651")} at night...`)
     event.add('milf.stage.early_items', `This world no longer ${MilfEffects.GLITCH("rejects")} you...`)
 

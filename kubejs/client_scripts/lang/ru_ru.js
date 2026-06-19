@@ -74,6 +74,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.how_to_seed.tooltip', 'Можно найти в птичьем гнезде или купить на рынке')
     event.add('milf.how_to_get_blaze_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
+    event.add('milf.buy_from_goblin_and_wanderer.tooltip', 'Можно купить у <keyword>Странствующего торговца</keyword> или <keyword>Гоблина Трейдера</keyword>')
 
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Странная магия мешает вам использовать этот блок')
 

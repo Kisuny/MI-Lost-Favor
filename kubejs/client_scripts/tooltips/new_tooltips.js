@@ -11,7 +11,9 @@ ItemEvents.modifyTooltips(event => {
             .append(Text.of("Shift ").bold().color("#ffb319"))
             .append(Text.translate("milf.for_details").color("#f5c25b"));
 
-        const details = Text.translate(args.text).color(args.color);
+        const details = args.color
+            ? Text.translate(args.text).color(args.color)
+            : Text.translate(args.text);
 
         items.forEach(item => {
             event.add(item, { shift: false }, hint);
@@ -25,7 +27,8 @@ ItemEvents.modifyTooltips(event => {
     simpleShiftText({ item: "milf:blaze_core", text: "milf.how_to_get_blaze_core.tooltip", color: "#645D89" })
     simpleShiftText({ item: "milf:electronic_ender_core", text: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89" })
     simpleShiftText({ item: "milf:crimson_veil_elixir", text: "milf.crimson_veil_elixir.tooltip", color: "#A71237" })
-    event.add("#magnumtorch:torches", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
+    simpleShiftText({ item: "enigmaticlegacyplus:enchantment_transposer", text: "milf.buy_from_goblin_and_wanderer.tooltip", color: "#7C3B94" })
+    
 
     //#region
 
@@ -40,6 +43,14 @@ ItemEvents.modifyTooltips(event => {
         tooltip.removeLine(2)
         tooltip.insert(2, Text.translate("milf.money_pouch.tooltip").color("#f5c25b"))
     })
+
+    event.add("milf:mi_upgrader", Text.translatable(`milf.mi_upgrader.tooltip`))
+
+    event.add("milf:grecall_concoction_t1", Text.translatable(`milf.grecall_concoction.t1.tooltip`))
+    event.add("milf:grecall_concoction_t2", Text.translatable(`milf.grecall_concoction.t2.tooltip`))
+
+    event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
+    event.add("#magnumtorch:torches", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
 
 
     //#region
@@ -81,13 +92,6 @@ ItemEvents.modifyTooltips(event => {
     simpleShiftText({ item: "milf:orb_of_the_forest", text: "milf.orb_of_the_forest.tooltip", color: "#1CC433" })
 
     //#region
-
-    event.add("milf:mi_upgrader", Text.translatable(`milf.mi_upgrader.tooltip`))
-
-    event.add("milf:grecall_concoction_t1", Text.translatable(`milf.grecall_concoction.t1.tooltip`))
-    event.add("milf:grecall_concoction_t2", Text.translatable(`milf.grecall_concoction.t2.tooltip`))
-
-    event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
 
 
     //#region WIP items tooltip

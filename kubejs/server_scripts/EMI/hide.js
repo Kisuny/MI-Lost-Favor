@@ -356,7 +356,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'tide:fishing_journal',
         'enigmaticlegacyplus:recall_potion',
         /tide:.*_bait/,
-        /smallships:wormwood_.*/,
+        /smallships:malum_runewood_.*/,
     ]
 
     list.forEach(item => {

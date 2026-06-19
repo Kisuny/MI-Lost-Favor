@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"eidolon_repraised:soul_shard"}, 2],
             [{item:"occultism:echo_dust"}],
+            [{item:"milf:artifact_dust"}],
         ],
         outputItems:[
             [{item:"rarcompat:mimi_dust"}]

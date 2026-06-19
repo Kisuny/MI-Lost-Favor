@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
             s: { item: "minecraft:stick" },
         },
         outputItems: [[{ id: "milf:eggnog" }, 1]],
-        compatOff:true
+        compatOff: true
     })
 
     customMixingCauldron(event, {
@@ -88,6 +88,12 @@ ServerEvents.recipes(event => {
             "item": "eidolon_repraised:shadow_gem"
         },
         result: "milf:miasma_orb"
+    })
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [[{ tag: "milf:artifacts" }]],
+        outputItems: [[{ id: "milf:artifact_dust" }, 1, 0.3]],
     })
 
 })

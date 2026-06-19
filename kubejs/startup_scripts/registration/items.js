@@ -139,11 +139,12 @@ createNewItem('hoe_head_clay_mold', { maxDamage: 16, lang: { "en_us": "Hoe Head 
 createNewItem('hoe_head_pattern', { lang: { "en_us": "Hoe Head Pattern", "ru_ru": "Шаблон мотыги" } })
 createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
 
-createNewItem('building_card', { lang: { "en_us": "Building Card", "ru_ru": "Карта строительства" } })
-createNewItem('destruction_card', { lang: { "en_us": "Destruction Card", "ru_ru": "Карта разрушения" } })
-createNewItem('exchanging_card', { lang: { "en_us": "Exchanging Card", "ru_ru": "Карта обмена" } })
-createNewItem('copying_card', { lang: { "en_us": "Copying Card", "ru_ru": "Карта копирования" } })
-createNewItem('cutting_card', { lang: { "en_us": "Cutting Card", "ru_ru": "Карта резки" } })
+createNewItem('building_card', { lang: { "ru_ru": "Карта строительства" } })
+createNewItem('destruction_card', { lang: {  "ru_ru": "Карта разрушения" } })
+createNewItem('exchanging_card', { lang: {  "ru_ru": "Карта обмена" } })
+createNewItem('copying_card', { lang: {  "ru_ru": "Карта копирования" } })
+createNewItem('cutting_card', { lang: {  "ru_ru": "Карта резки" } })
 createNewItem('blank_card', { lang: { "en_us": "Blank Card" } })
 createNewItem('miasma_orb', { lang: { "ru_ru": "Сфера скверны" }, stackSize: 1, rarity: 'epic'  })
+createNewItem('artifact_dust', { lang: { "ru_ru": "Артефактная пыль" }, stackSize: 15, rarity: 'epic'  })
 

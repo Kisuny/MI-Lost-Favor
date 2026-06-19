@@ -691,6 +691,7 @@
 		""
 		"Эндер-Раздатчик работает только тогда, когда вы находитесь онлайн."
 	]
+	quest.14948686DB724C19.quest_desc: ["Можно объединить в наковальне с enigmaticlegacyplus:evil_essence"]
 	quest.14A425365D35DE37.quest_desc: ["Хранит &e~1000 уровней&r, &aподнимает опыт&r вокруг себя, можно менять &eрадиус подъёма опыта&r"]
 	quest.14BA9A5CAC394A27.quest_desc: ["Allows the plant on which it is used to &afully grow&r with only &eone&r use compared to &l&eBone Meal&r. You can also make &l&eMagical Farm Land&r with it."]
 	quest.14D2170A0424A902.quest_desc: [
@@ -959,6 +960,7 @@
 		"Просто &#FEECD6красивые лампы&r, не создавать же только утилит-предметы, верно? "
 	]
 	quest.1AE0400A3C0AF316.quest_desc: ["&l&eLooks OP&r for such an easy craft, so idk where to put it :p"]
+	quest.1B46FCF75F842E87.quest_desc: ["падает только с визера если ты проклят"]
 	quest.1B978110B709BF52.quest_subtitle: "Holds 512 items"
 	quest.1BBD0967E43849FF.quest_desc: [
 		"&l&eRare gemstones&r that can be obtained while &amining stratine ore&r."
@@ -1286,6 +1288,7 @@
 		"{@pagebreak}"
 		"Используйте ваш новый &l&eострый кремневый камень&r, чтобы &aсобрать&r немного &l&eтравы&r."
 	]
+	quest.2886FD1C5D11C454.quest_desc: ["Так же можно найти ломая minecraft:soul_soil в незере в биоме Soul Sand Valley"]
 	quest.28A0B0DE7DA8451F.quest_desc: [
 		"Harvests Essentia Vitae from the suffering of nearby creatures."
 		"{@pagebreak}"
@@ -1775,6 +1778,7 @@
 		"{@pagebreak}"
 		"&l&eМедная сетка&r может улавливать &l&eолово&r, &l&eсвинец&r и &l&eмедь&r."
 	]
+	quest.386CA4CE43523C9E.quest_desc: ["Может хранить любые книги с тегом BOOKSHELF_BOOKS"]
 	quest.388BFE99FCF19231.quest_desc: [
 		"A modified Ender Dragon Head from End Cities. Purely cosmetic on its own, no effects."
 		""
@@ -1795,6 +1799,7 @@
 		"{@pagebreak}"
 		"Более вместительное хранилище энергии Chronon. Работает как ячейка, но хранит больше энергии и продолжает питать переносимые устройства."
 	]
+	quest.3923CA397022E916.quest_desc: ["Даётся за убийство дракона с проклятьем"]
 	quest.39553C7C57BEE887.quest_desc: [
 		"Hold down the right mouse button + Shift key on the \"warped fungus\" or \"crimson fungus\"!"
 		"{@pagebreak}"
@@ -2304,6 +2309,11 @@
 		""
 		"Чтобы зарядить болты в картридж, присядьте и используйте его. картридж будет захватывать различные болты в инвентаре, который определяется так же, как и стрелы при использовании лука. Он будет пытаться захватить болты из разных стаков. Если уникальных стаков недостаточно, он будет хватать одинаковые стаки. Затем мы можем загрузить Cyclebow, как и болты. Если я захочу вернуть болты из картриджа, мне нужно будет лишь присесть и использовать заполненный картридж."
 	]
+	quest.488A7A739FF67BEB.quest_desc: [
+		"Находится 1 раз за игру"
+		""
+		"можно найти там же где и обычную банку ихора"
+	]
 	quest.48BB521ECABF71BF.title: "Afrit Smelter"
 	quest.48D0478F8516F1C7.quest_desc: ["Teleport to other players"]
 	quest.48D6F64AD6B17D08.quest_desc: [
@@ -2627,6 +2637,7 @@
 		"Так же для работы лебедки во второй руке не должно быть предметов!"
 	]
 	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
+	quest.5327E771FF6F0B4E.quest_desc: ["Находится 1 раз за игру"]
 	quest.535790242FE24454.quest_desc: [
 		"There exists another item as well, called a Decree. A Decree determines what kind of bounties show up on a bounty board. For example, an Armorsmithing Decree makes it so that objectives and rewards related to armor show up on the board (leather, iron, chestplates, boots, etc). You can have up to three decrees on a bounty board at once, and it will mix and match objectives and rewards from all three when new bounties appear!"
 		""
@@ -2745,6 +2756,11 @@
 	]
 	quest.5984DB66549B9040.quest_desc: ["&cPoison&r."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
+	quest.5A09DD956F629AC5.quest_desc: [
+		"Находится 1 раз за игру"
+		""
+		"Любой сундук в незере"
+	]
 	quest.5A23E325ABD115A1.quest_desc: ["The perfect companion for your digging sessions! Provides emotional support in the time of need and is passable as a chair when you need some structural support too! Don't forget to feed it with... something… It's not picky at all, and hydrate it at least once a day for it to grow into a strong and healthy boulder one day!"]
 	quest.5A4BB58AB11D4B81.quest_desc: [
 		"The &l&ewitch's oven&r is a modified furnace used to collect &l&ebyproducts&r and &l&efumes&r made from burning materials."
@@ -3039,6 +3055,7 @@
 		"[ \"Используя \", { \"text\": \"клетку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25790982D97FF33B\" } }, \" можно поймать таких мобов как овец или коров и разводить их, это очень лаг-френдли блок, используйте его вместо большого количества мобов на вашей территории, это плохо сказывается на производительности сервера!\" ]"
 	]
 	quest.617E14880D9D75A0.title: "A cage for our animal friends"
+	quest.61DD20DF56A3CEDD.quest_desc: ["Находится 1 раз за игру"]
 	quest.61E590BED7EE9DA4.quest_desc: ["&l&eEntity magnet?!&r"]
 	quest.6245F17DF657C296.quest_desc: [
 		"Most upgrades are trained by performing the matching activity while wearing the chestplate; every time you do, the armour banks experience toward the next level. How much it banks depends on the upgrade:"
@@ -3187,6 +3204,24 @@
 		"You can find a small amount of Strong Tau in the dungeon, but if you're unlucky and only find weak tau, you can turn it into strong tau if a living creature - such as a pig - is standing on the plant while it grows. In this case, the plant will turn into strong tau the very first time it grows. Additionally, for a strong tau to grow, a living creature must be standing on the plant and transferring its life energy to it."
 		"{@pagebreak}"
 		"В подземелье можно найти небольшое количество сильного тау, но если вам не повезло и вы нашли только слабое тау, вы можете превратить его в сильное, если на растении стоит живое существо во время роста — например, свинья. В этом случае растение превратится в сильное тау при первом же росте. Кроме того, для роста сильного тау необходимо, чтобы на растении стояло живое существо и передавало ему свою жизненную энергию."
+	]
+	quest.67F8922E4579FA8C.quest_desc: [
+		"<negative><b>If you put this ring on, you won't be able to take it off later!"
+		""
+		"Seven <negative>curses</negative> will befall whoever bears it - double damage from any source, aggressive neutral creatures, weakened armor, reduced damage to monsters, eternal burning, torn soul on death and incurable insomnia. BE SURE to familiarize yourself with them before putting on the ring!"
+		""
+		"Seven <positive>blessings</positive> will reward those who withstand - bonus Looting and Fortune levels, +300% experience, +10 Enchanting Power, unique creature drops, the functionality of the Ring of Ender, and the ability to craft and use <magic>unique relics</magic> unobtainable any other way!"
+		""
+		"To unlock new crafts, a player must spend <magic>99.5%</magic> of their <negative>TOTAL</negative> time in the world under a <blood>curse</blood>. Keep in mind that the longer you go without wearing the ring, the longer you’ll have to spend in the world with it."
+		""
+		"{@pagebreak}"
+		"<negative><b>Если вы наденете это кольцо то вы не сможете снять его в будущем!"
+		""
+		"Семь <negative>проклятий</negative> обрушатся на того, кто наденет его - двойной урон от любого источника, агрессия нейтральных существ, ослабленная броня, сниженный урон по монстрам, вечное горение в огне, разрыв души при смерти и неизлечимая бессонница. ОЗНАКОМЬТЕСЬ с ними до того, как НАДЕВАТЬ кольцо!"
+		""
+		"Семь <positive>благословений</positive> наградят выстоявшего - бонусные уровни Добычи и Удачи, +300% опыта, +10 силы зачарования, уникальный дроп с некоторых существ, функционал Кольца Эндера, а так же возможность создавать и использовать <magic>уникальные реликвии</magic>, недоступные никаким иным способом!"
+		""
+		"Чтобы открыть новые крафты игроку необходимо <magic>99.5%</magic> своего <negative>ОБЩЕГО</negative> времени в мире быть <blood>проклятым</blood>, имейте ввиду, чем дольше вы не надеваете кольцо, тем дольше вам придется существовать в мире с ним."
 	]
 	quest.6823D5F00B44B271.quest_desc: [
 		"Used to... mold brick-looking stuff"

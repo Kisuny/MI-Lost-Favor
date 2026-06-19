@@ -5,7 +5,7 @@ ServerEvents.tags('item', event => {
     event.add("milf:claws", ["friendsandfoes:crab_claw", "starcatcher:lava_crab_claw", "born_in_chaos_v1:nightmare_claw", "cataclysm:chitin_claw"])
 
 
-
+    event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic'])
     //#region tags for emi++ grouping in EMI
     event.add("milf:multiblock_items", [/^milf:[a-z0-9_]+(placer|empty_box)$/])
 

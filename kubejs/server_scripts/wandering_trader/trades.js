@@ -1,51 +1,40 @@
-// let $RandomSource = Java.loadClass("net.minecraft.util.RandomSource")
-// let $VillagerTrades = Java.loadClass("net.minecraft.world.entity.npc.VillagerTrades")
-
-// console.log($VillagerTrades.ItemListing);
-
-
-// NativeEvents.onEvent("net.neoforged.neoforge.event.village.WandererTradesEvent", event =>{
-
-
-//     let genericTrades =event.getGenericTrades()
-//     let rareTrades = event.getRareTrades()
-
-//     genericTrades.forEach(trade => {
-//         try {
-//             let offer = trade.getOffer(null, $RandomSource.create())
-//             console.log(offer)
-
-
-//         } catch (error) {
-//             console.log(error);
-            
-//         }
-        
-        
-//     })
-//     // if(event.getType() == $VillagerTrades.Type.WANDERING_TRADER){
-//     //     // for(let trades of event.getTrades().values()){
-//     //     //     for(let trade of trades){
-//     //     //         console.log(trade);
-                
-//     //     //     }
-//     //     // }
-
-//     //     console.log("WWWW");
-        
-
-//     // }
-// })
-
-
-MoreJS.updateOffer(event =>{
+MoreJS.updateOffer(event => {
 
     if (!event.isWanderer()) return
     event.offer.replaceEmeralds(Item.of("devices:gold_coin"))
 
 })
 
-// MoreJS.wandererTrades(event =>{
-//     event.removeModdedTypedTrades()
-// })
+MoreJS.wandererTrades(event => {
+    event.addTrade(
+        2,
+        [
+            TradeItem.of("devices:mithril_coin", 3, 10),
+            Item.of("minecraft:book", 1)],
+        "enigmaticlegacyplus:enchantment_transposer"
+    ).transform((offer) => {
+        offer.maxUses = 4
+    })
+
+    event.addTrade(
+        1,
+        [TradeItem.of("devices:gold_coin", 5, 22)],
+        TradeItem.of("clavis:lock_pick", 4, 12)
+    ).transform((offer) => {
+        offer.maxUses = 20
+    })
+
+    Ingredient.of("#milf:artifacts").itemIds.forEach(relicId => {
+        event.addTrade(
+            2,
+            [
+                TradeItem.of("devices:mithril_coin", 10, 50),
+                Item.of("milf:artifact_dust", 1)
+            ],
+            relicId
+        ).transform((offer) => {
+            offer.maxUses = 1
+        })
+    })
+})
 

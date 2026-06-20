@@ -1,4 +1,19 @@
-// Remove IE recipes
+const customCursedShaped = (event, args) => {
+    event.custom({
+        "type": "enigmaticlegacyplus:cursed_shaped",
+        "category": args.category || "equipment",
+        "pattern": args.pattern,
+        "key": args.key,
+        "result": {
+            "id": args.result,
+            "count": args.count || 1
+        }
+    });
+    if (args.removeRecipe === true) {
+        event.remove({ output: args.result });
+    }
+};
+
 ServerEvents.recipes(event => {
 
     // const remove_by_id = [
@@ -9,6 +24,7 @@ ServerEvents.recipes(event => {
 
     event.remove({output: [
         "enigmaticlegacyplus:enchantment_transposer",
+        "enigmaticlegacyplus:escape_scroll",
     ]})
 
     milfShaped(event, {
@@ -23,4 +39,21 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "enigmaticlegacyplus:cursed_ring" }, 1]]
     })
+
+    customCursedShaped(event, {
+        pattern: [
+            "IGI",
+            "PXP",
+            " I "
+        ],
+        key: {
+            G: { item: "minecraft:glass_pane" },
+            I: { item: "minecraft:iron_ingot" },
+            P: { item: "milf:recall_concoction" },
+            X: { item: "enigmaticlegacyplus:twisted_heart" }
+        },
+        result: "enigmaticlegacyplus:twisted_mirror",
+        removeRecipe: true
+    })
+
 })

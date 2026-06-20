@@ -27,13 +27,13 @@ const trinkets_slot_list_reward = [
     { quest_id: '797984527B88CB21', trinket_slot: 'charm' },
     { quest_id: '20BA335B5255AB60', trinket_slot: 'hands' },
     { quest_id: '4489C7C10E7A49EF', trinket_slot: 'ring' },
-    { quest_id: '20BD33A01D4A91E7', trinket_slot: 'ring' },
     { quest_id: '4C184C19BA719B4F', trinket_slot: 'feet' },
     { quest_id: '5BD3DB1BBF7C043E', trinket_slot: 'ring' },
     { quest_id: '116FEA5302E15B7D', trinket_slot: 'hands' },
     { quest_id: '6C1E7006967265FC', trinket_slot: 'charm' },
     { quest_id: '4847BCB4A0147A6D', trinket_slot: 'crafting_on_a_stick' },
     { quest_id: '6D760C6378680C1F', trinket_slot: 'time_sand_pouch' },
+    { quest_id: '610453008A85C538', trinket_slot: 'amulet' },
 ]
 
 trinkets_slot_list_reward.forEach(reward => {

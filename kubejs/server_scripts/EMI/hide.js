@@ -356,6 +356,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'tide:fishing_journal',
         'enigmaticlegacyplus:twisted_potion',
         'enigmaticlegacyplus:recall_potion',
+        'enigmaticlegacyplus:escape_scroll',
         /tide:.*_bait/,
         /smallships:malum_runewood_.*/,
     ]

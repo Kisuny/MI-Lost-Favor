@@ -29,10 +29,10 @@
 	chapter.7A58E54E4B6B5025.title: "Storage"
 	chapter.7CCFB657E26B4699.title: "Early Magic II"
 	chapter.7F17ADA3E2DBCAE3.title: "Midgame Magic III"
-	chapter_group.414DFD996A564669.title: "Early"
-	chapter_group.4602108FDD7051BD.title: "Primitive"
-	chapter_group.786FFA1BEC14E223.title: "Midgame"
-	chapter_group.7CCD8F01A3D08612.title: "Endgame"
+	chapter_group.414DFD996A564669.title: "<magic>Early"
+	chapter_group.4602108FDD7051BD.title: "<magic>Primitive"
+	chapter_group.786FFA1BEC14E223.title: "<magic>Midgame"
+	chapter_group.7CCD8F01A3D08612.title: "<magic>Endgame"
 	quest.002562156B0D8E9F.quest_desc: ["Tired of making <keyword>plates</keyword> and <keyword>rings</keyword> manually? This thing could <positive>lend a hand</positive>!"]
 	quest.00504BDD52B7AF73.quest_desc: [
 		"Sometimes, you may need to represent another person to perform magic. This can be achieved using a <keyword>taglock kit</keyword>"
@@ -767,7 +767,7 @@
 		"Ничего такого, да? Просто кусочек &l&6бедрока&r."
 	]
 	quest.179140A353AB44E8.quest_desc: [
-		"&lWelcome to &l&3MI&f:&6Lost Favor&r&r!"
+		"&lWelcome to <grad colors=#848dcb,#45509d freq=0.5>MI:Lost Favor!"
 		""
 		"As this modpack is <property>progress dependent</property>, we introduced quite a number of <warning>restrictions</warning>, as well as <positive>simplifications</positive> to the gameplay! "
 		""
@@ -1096,6 +1096,15 @@
 		"• Left-click on a barrel item with an item to insert it into the barrel."
 		""
 		"• Left-click the barrel item on an empty slot to extract some items from it."
+	]
+	quest.20CB438E06BA0730.quest_desc: [
+		"Starts off dormant - just an inert eye sitting in your inventory. Right-click it to wake it up (give it a moment, it needs to \"open\")."
+		""
+		"Once active, wear it in a Curios slot to gain <property>+1 charm slot</property>, letting you equip an extra trinket. Waking it up also unlocks the <magic>Narrator</magic> - a mysterious voice that starts commenting on your journey: entering the Nether or the End, fighting the Wither or the Ender Dragon, dying, respawning, and other key moments."
+		"{@pagebreak}"
+		"Изначально дремлет - просто неактивный глаз в инвентаре. ПКМ, чтобы пробудить его (дайте ему момент, ему нужно \"открыться\")."
+		""
+		"После активации наденьте его в слот Curios, чтобы получить <property>+1 слот для талисмана</property>, позволяющий надеть ещё одну безделушку. Пробуждение глаза также открывает <magic>Рассказчика</magic> - таинственный голос, который начинает комментировать ваш путь: вход в Нижний мир или Энд, бой с Иссушителем или Драконом Края, смерть, возрождение и другие ключевые моменты."
 	]
 	quest.2141539997D6480F.quest_desc: [
 		"Mobs - gone."
@@ -2680,11 +2689,11 @@
 	]
 	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
 	quest.5327E771FF6F0B4E.quest_desc: [
-		"Can be found once per game by one player"
+		"<warning>Can be found once per game by one player"
 		""
 		"<obfuscate mode=random interval=30>Can be found in chests in <keyword>End City"
 		"{@pagebreak}"
-		"Можно найти 1 раз за игру 1 игроком"
+		"<warning>Можно найти 1 раз за игру 1 игроком"
 		""
 		"<obfuscate mode=random interval=30>Можно найти в сундуках <keyword>End City"
 	]
@@ -3108,9 +3117,9 @@
 	]
 	quest.617E14880D9D75A0.title: "A cage for our animal friends"
 	quest.61DD20DF56A3CEDD.quest_desc: [
-		"Can be found once per game by one player"
+		"<warning>Can be found once per game by one player"
 		"{@pagebreak}"
-		"Можно найти 1 раз за игру 1 игроком"
+		"<warning>Можно найти 1 раз за игру 1 игроком"
 	]
 	quest.61E590BED7EE9DA4.quest_desc: ["<keyword>Entity magnet?!</keyword>"]
 	quest.6245F17DF657C296.quest_desc: [

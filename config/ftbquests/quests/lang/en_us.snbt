@@ -575,6 +575,19 @@
 		""
 		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (яд должен подойти), и в этот момент воспользоваться иглой."
 	]
+	quest.1208751263D1F495.quest_desc: [
+		"A cursed chalice that gives exactly what you deserve. Right-click to drink (slow sip, like honey) and see for yourself."
+		""
+		"<obfuscate mode=random interval=30>If you've embraced your fate as <curse>The Cursed One</curse> and carry the curse of the <keyword>Forbidden Fruit</keyword>, the Grail rewards you with <positive>Regeneration, Absorption, Resistance, Strength and Speed</positive>. If not, expect <warning>Wither, Poison, Nausea, Weakness, Hunger and Slowness</warning> instead.</obfuscate>"
+		""
+		"<warning>Drink at your own risk if you haven't embraced the curse.</warning>"
+		"{@pagebreak}"
+		"Проклятая чаша, которая даёт ровно то, что вы заслужили. ПКМ, чтобы выпить (медленный глоток, как мёд) - и проверить на себе."
+		""
+		"<obfuscate mode=random interval=30>Если вы приняли судьбу <curse>Проклятого</curse> и несёте проклятие <keyword>Запретного Плода</keyword>, Грааль наградит вас <positive>Регенерацией, Поглощением, Стойкостью, Силой и Скоростью</positive>. Если нет - получите <warning>Иссушение, Яд, Тошноту, Слабость, Голод и Замедление</warning></obfuscate>"
+		""
+		"<warning>Пейте на свой риск, если вы ещё не приняли проклятие.</warning>"
+	]
 	quest.121B443B4996E62B.quest_desc: [
 		"Replace one block type with another without breaking the build. &7Shift-right-click&r the block you want to match, choose exchange mode, then <positive>right-click</positive> the area. It can work on connected areas, use fuzzy replacement, and support block entities if enabled"
 		"{@pagebreak}"
@@ -688,7 +701,11 @@
 		""
 		"Эндер-Раздатчик работает только тогда, когда вы находитесь онлайн."
 	]
-	quest.14948686DB724C19.quest_desc: ["Можно объединить в наковальне с enigmaticlegacyplus:evil_essence"]
+	quest.14948686DB724C19.quest_desc: [
+		"If you combine it with the evil essence on the anvil, it will yield charges for the Totem of Undying"
+		"{@pagebreak}"
+		"Если объединить на наковальне вместе с Evil Essence это даст заряды Totem Of Undying"
+	]
 	quest.14A425365D35DE37.quest_desc: ["Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"]
 	quest.14BA9A5CAC394A27.quest_desc: ["Allows the plant on which it is used to <positive>fully grow</positive> with only <keyword>one</keyword> use compared to <keyword>Bone Meal</keyword>. You can also make <keyword>Magical Farm Land</keyword> with it."]
 	quest.14D2170A0424A902.quest_desc: [
@@ -714,6 +731,7 @@
 		"{@pagebreak}"
 		"Одна &#FEECD6баночка&r вмещает только &#9BB8ED1 тип&r краски, палитра вмещает больше типов, но в ней &#FEECD6не так много места&r как в баночках!"
 	]
+	quest.15257CFF2D9E8EE6.quest_subtitle: "WIP"
 	quest.15C276FD883F33F5.quest_desc: [""]
 	quest.16219C02EDE3F680.quest_desc: ["Получает сурс из сурс джаров и превращает его в жидкий сурс, далее с ним можно много приколов делать, например генератор сурс стоуна лава + ликвид сурс "]
 	quest.1664E9D5D87BDF33.quest_desc: [
@@ -1063,6 +1081,7 @@
 	quest.1FC26CA207964E0D.quest_desc: [""]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a <keyword>Block Hole</keyword> by <positive>throwing</positive> &6Dark Matter&r together with <keyword>Corrupti Dust</keyword> on the ground. It will <property>attract items</property> and small entities like <keyword>Arrows</keyword> or <keyword>Experience Orbs</keyword> and <warning>delete them</warning>. Once it absorbed enough experience points, it will throw out a <keyword>Xpetrified Orb</keyword>."]
 	quest.1FE16BABD524C29B.quest_desc: ["<keyword>Tree Capitator</keyword> that is... packed inside a <property>small orb</property>? Gimme two please ('-')"]
+	quest.2034C50745FB7217.quest_subtitle: "WIP"
 	quest.203B742A5DB473FA.quest_desc: ["Simply <positive>smash</positive> a piece of <keyword>flint</keyword> against a <keyword>stone</keyword> to sharpen it"]
 	quest.2050AE324A7E3ABC.quest_desc: ["Позволяет <positive>не дамажить</positive> <keyword>метлу</keyword> в <warning>лаве</warning> "]
 	quest.2071CE16FAA3FDEE.quest_desc: [
@@ -1773,6 +1792,7 @@
 		"Более подробно о росте можно прочитать в <keyword>книге</keyword>!"
 	]
 	quest.37E81A0F2015DFE9.quest_subtitle: "Way to AE2"
+	quest.37EC4A78711DC4E6.quest_subtitle: "trashcan"
 	quest.3844F342D000826A.quest_desc: [
 		"A <keyword>copper mesh</keyword> can catch <keyword>tin</keyword>, <keyword>lead</keyword> and <keyword>copper</keyword>."
 		"{@pagebreak}"
@@ -1813,6 +1833,7 @@
 		"{@pagebreak}"
 		"Зажми правую кнопку мыши и шифт на warped fungus или Crimson fungus!"
 	]
+	quest.39A6C12928525DCD.quest_subtitle: "WIP"
 	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
 	quest.39DB1E37478B1FE7.quest_desc: ["The Eternal Youth is a consumable item that - quite simply put - imbues the animal it's used on with a never ending state of immortality as a youngling. If the animal in question is not currently young, it will be reverted to its youth. The immortality given is near absolute; the few ways of killing such an animal is either to lose it to the void or to use a second Eternal Youth on them."]
 	quest.39DCC2821529301C.quest_desc: [
@@ -2073,6 +2094,7 @@
 		"{@pagebreak}"
 		"[ \"Азурит можно найти только в измерение \", { \"text\": \"Eternal Starlight\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B37B11A0B0A84E6\" } }, \"!\" ]"
 	]
+	quest.40C152C451D65950.quest_subtitle: "WIP"
 	quest.40CC4CB2281C6FE1.quest_desc: [
 		"By using Vial, you gain access to communicate with the gatekeeper!"
 		"{@pagebreak}"
@@ -2316,11 +2338,14 @@
 		"Чтобы зарядить болты в картридж, присядьте и используйте его. картридж будет захватывать различные болты в инвентаре, который определяется так же, как и стрелы при использовании лука. Он будет пытаться захватить болты из разных стаков. Если уникальных стаков недостаточно, он будет хватать одинаковые стаки. Затем мы можем загрузить Cyclebow, как и болты. Если я захочу вернуть болты из картриджа, мне нужно будет лишь присесть и использовать заполненный картридж."
 	]
 	quest.488A7A739FF67BEB.quest_desc: [
-		"Can be found once per game by one player"
-		"{@pagebreak}"
-		"Можно найти 1 раз за игру 1 игроком"
+		"<warning>Can be found only once per game by one player.</warning>"
 		""
-		"можно найти там же где и обычную банку ихора"
+		"<obfuscate mode=random interval=30>You can find it in the same place as a regular <keyword>Nectar of Ichora</keyword><obfuscate>"
+		""
+		"{@pagebreak}"
+		"<warning>Можно найти только один раз за игру одним игроком.</warning>"
+		""
+		"<obfuscate mode=random interval=30>Найти его можно там же, где и обычную <keyword>Банку Ихора</keyword> </obfuscate>"
 	]
 	quest.48BB521ECABF71BF.title: "Afrit Smelter"
 	quest.48D0478F8516F1C7.quest_desc: ["Teleport to other players"]
@@ -2583,6 +2608,15 @@
 		"• Вы также можете использовать <keyword>воронку</keyword>, чтобы достать яйца из гнезда."
 	]
 	quest.50A70151E50EC5DC.quest_desc: ["Drops from <keyword>bogged</keyword>."]
+	quest.50B6CF21E2CD0206.quest_desc: [
+		"A reinforced Respawn Anchor for those who don't trust glowstone. Right-click it to call this place home - just like the vanilla block."
+		""
+		"Feed it <keyword>Eyes of Ender</keyword> instead of Glowstone Dust to charge it up (<property>up to 4 charges</property>), or let a dispenser do the job with an Ender Pearl from afar"
+		"{@pagebreak}"
+		"Усиленный Якорь Возрождения для тех, кто не доверяет светящейся пыли. ПКМ по нему - и это место станет вашим домом, точно как с обычным блоком."
+		""
+		"Заряжайте его <keyword>Глазами Эндера</keyword> вместо светящейся пыли (<property>до 4 зарядов</property>), либо доверьте это раздатчику с Оком Края на расстоянии"
+	]
 	quest.50F1D009FC192076.quest_desc: [
 		"Sets the <keyword>target point</keyword> for teleportation. <positive>Place it</positive> where you want the <magic>portal to lead</magic>, then <positive>write its coordinates</positive> onto a blank <property>Location Card</property> by <positive>right-clicking it</positive>."
 		"{@pagebreak}"
@@ -2647,8 +2681,12 @@
 	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
 	quest.5327E771FF6F0B4E.quest_desc: [
 		"Can be found once per game by one player"
+		""
+		"<obfuscate mode=random interval=30>Can be found in chests in <keyword>End City"
 		"{@pagebreak}"
 		"Можно найти 1 раз за игру 1 игроком"
+		""
+		"<obfuscate mode=random interval=30>Можно найти в сундуках <keyword>End City"
 	]
 	quest.535790242FE24454.quest_desc: [
 		"There exists another item as well, called a <keyword>Decree</keyword>. A Decree determines what kind of bounties show up on a bounty board. For example, an <property>Armorsmithing Decree</property> makes it so that objectives and rewards related to armor show up on the board (leather, iron, chestplates, boots, etc). You can have up to three decrees on a bounty board at once, and it will mix and match objectives and rewards from all three when new bounties appear!"
@@ -3413,6 +3451,7 @@
 	]
 	quest.6A003706B95C1CB8.quest_desc: ["The Screening Device is an advanced version of the Location Broadcaster that adds team-based filtering. When compatible mods are installed (FTB Teams, Cadmus, or similar), it can restrict which players are allowed to teleport to the holder, cycling through modes like “Just you,” “Everyone,” “Guildmates,” “Party members,” and “Team.”"]
 	quest.6A1DA8ABA8F13FC2.title: "World Tier: Frontier"
+	quest.6A2EFED5C079A7AA.quest_subtitle: "WIP"
 	quest.6A7D9640907654A2.quest_desc: ["Combines Spike's cruelty with a deeper purpose: when a non-player creature steps onto it, the array deals a heart of damage and releases 0.5 units of raw Spiritus into the surrounding chunk. Has a brief cooldown; players are immune. Requires an Tabula Animata."]
 	quest.6AADBAB610C068F2.quest_desc: ["на метле можно уместить  2 игрока, можно красить имеет 9 слотов"]
 	quest.6AC5BBB361E90BF1.quest_desc: [
@@ -3984,21 +4023,54 @@
 	]
 	reward.015382CFC13FFB7A.title: "Deeper Down Access "
 	reward.058FD5B700A2EB20.title: "Feet Trinket Slot"
-	reward.094072146D87AD84.title: "Pouch slot"
+	reward.084C079A765DC32C.title: "Focus Trinket Slot"
+	reward.094072146D87AD84.title: "Pouch Trinket slot"
 	reward.0A8447D787E641E3.title: "Void Access "
-	reward.1700ECB1400F81BB.title: "New Trinket slot \"hands\""
-	reward.1816E9C04215E83A.title: "New Trinket slot \"belt\""
+	reward.0DC887212398806D.title: "Bronze Age"
+	reward.0E39813C84812910.title: "Face Trinket Slot"
+	reward.116FEA5302E15B7D.title: "Hands Trinket Slot"
+	reward.12D16D8D384FB0D8.title: "Pin Trinket Slot"
+	reward.16B46238FC936637.title: "New mobs"
+	reward.1700ECB1400F81BB.title: "Hands Trinket slot"
+	reward.1816E9C04215E83A.title: "Belt Trinket slot"
+	reward.184E78B18B597C06.title: "\"Adv Pattern Encoder\" Trinket Slot"
 	reward.19304AD673874503.title: "Eidolon Mobs"
+	reward.19B52AC9AC1571C5.title: "Charm Trinket slot"
+	reward.1F1063A9E62215F0.title: "Rune Trinket Slot"
+	reward.20165DF8F49E8177.title: "New mobs"
+	reward.20BA335B5255AB60.title: "Hands Trinket slot"
+	reward.224D85127D80FED8.title: "New mobs"
 	reward.2BD4B3CA5BEDBA19.title: "The End Access "
-	reward.401FEBCB5849F6DE.title: "New Trinket slot \"back\""
+	reward.2C80D8BA9B69917E.title: "Ring Trinket slot"
+	reward.3922C9ACA47723BA.title: "New mobs"
+	reward.3F447B6AF92AB2A6.title: "Belt Trinket Slot"
+	reward.4002784F5F537B2D.title: "New items"
+	reward.401FEBCB5849F6DE.title: "Back Trinket slot"
+	reward.40AC6BC01A9ED62B.title: "Palette Trinket Slot"
+	reward.4178A18CA2E5A74F.title: "New mobs"
+	reward.43989D93EEEBE7E7.title: "Bracelet Trinket slot"
+	reward.4489C7C10E7A49EF.title: "Ring Trinket slot"
 	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
-	reward.4847BCB4A0147A6D.title: "New Trinket slot \"crafting on a stick\""
+	reward.4847BCB4A0147A6D.title: "crafting on a stick Trinket slot"
+	reward.4C184C19BA719B4F.title: "Feet Trinket slot"
+	reward.4D0EBC927D8AD01D.title: "Xaeromap"
+	reward.5B2F20AA1D77D9D7.title: "Body Trinket slot"
+	reward.5BD3DB1BBF7C043E.title: "Ring Trinket Slot"
 	reward.5EBDE634D224C573.title: "Crimson Veil Access"
 	reward.5F437D0400382507.title: "Malum Ore Access "
+	reward.610453008A85C538.title: "Amulet Trinket Slot"
+	reward.66F76B515E0CC819.title: "Shoulders Trinket Slot"
 	reward.670CBE4973B6F390.title: "New interactions: villagers, spawners, wandering trader and new mobs"
+	reward.6C1E7006967265FC.title: "Charm Trinket Slot"
+	reward.70FAD5B8BC6CD8CC.title: "\"Deep Learner\" Trinket Slot"
 	reward.7108991BE6DD4A51.title: "Radial Menu Button"
 	reward.73D93A782AD2E4AE.title: "Trinket bundle slot"
+	reward.74E5C7C4B8A33E55.title: "New mobs"
+	reward.764351AE4ACC7FEA.title: "Brooch Trinket Slot"
 	reward.7650FE6CA0220DA3.title: "The Nether Access "
+	reward.797984527B88CB21.title: "Charm Trinket slot"
+	reward.79B3DCBD3C3D36DB.title: "Head Trinket Slot"
+	reward.7CEACC8595E86D03.title: "Ring Trinket Slot"
 	reward.7EF0A7794783232F.title: "New ore in world"
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.01899FA102ABD33A.title: "Any #milf:metal_fences"

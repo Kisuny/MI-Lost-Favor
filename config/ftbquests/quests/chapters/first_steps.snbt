@@ -3651,6 +3651,18 @@
 					team_reward: false
 					type: "item"
 				}
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "enigmaticlegacyplus:slot/empty_amulet_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "610453008A85C538"
+					team_reward: false
+					type: "custom"
+				}
 			]
 			shape: "heart"
 			size: 2.0d

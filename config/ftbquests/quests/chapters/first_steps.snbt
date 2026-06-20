@@ -3632,15 +3632,26 @@
 			icon_scale: 1.4d
 			id: "67F8922E4579FA8C"
 			min_width: 300
-			rewards: [{
-				id: "707B8C2E22244E1E"
-				item: {
-					count: 1
-					id: "enigmaticlegacyplus:unwitnessed_amulet"
+			rewards: [
+				{
+					id: "707B8C2E22244E1E"
+					item: {
+						count: 1
+						id: "enigmaticlegacyplus:unwitnessed_amulet"
+					}
+					team_reward: false
+					type: "item"
 				}
-				team_reward: false
-				type: "item"
-			}]
+				{
+					id: "103B4C8746019968"
+					item: {
+						count: 1
+						id: "enigmaticlegacyplus:the_acknowledgment"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "heart"
 			size: 2.0d
 			tasks: [{

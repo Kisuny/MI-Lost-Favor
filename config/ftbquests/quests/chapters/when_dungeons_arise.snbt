@@ -4256,17 +4256,6 @@
 		}
 		{
 			entity_vis_size: 1.0f
-			id: "169B931AE1EF42C2"
-			tasks: [{
-				id: "630553D751F57366"
-				item: { count: 1, id: "enigmaticlegacyplus:the_acknowledgment" }
-				type: "item"
-			}]
-			x: -46.0d
-			y: 15.0d
-		}
-		{
-			entity_vis_size: 1.0f
 			id: "3D0516B3F76B3CB5"
 			tasks: [{
 				id: "138ED58778902199"
@@ -4286,17 +4275,6 @@
 			}]
 			x: -52.5d
 			y: 18.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "6494695BA1E160D2"
-			tasks: [{
-				id: "3D3FA245322D9C40"
-				item: { count: 1, id: "enigmaticlegacyplus:lore_fragment" }
-				type: "item"
-			}]
-			x: -41.0d
-			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -4575,8 +4553,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:monster_charm" }
 				type: "item"
 			}]
-			x: -44.0d
-			y: 21.5d
+			x: -48.0d
+			y: 17.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -4586,8 +4564,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:extradimensional_eye" }
 				type: "item"
 			}]
-			x: -43.0d
-			y: 21.5d
+			x: -47.0d
+			y: 17.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -4597,8 +4575,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_eye" }
 				type: "item"
 			}]
-			x: -36.0d
-			y: 21.5d
+			x: -41.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["3D0516B3F76B3CB5"]
@@ -4656,8 +4634,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:unholy_grail" }
 				type: "item"
 			}]
-			x: -42.0d
-			y: 21.5d
+			x: -46.0d
+			y: 17.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -4667,8 +4645,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:void_stone" }
 				type: "item"
 			}]
-			x: -39.0d
-			y: 21.5d
+			x: -44.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["4BFB5C44066F5F49"]
@@ -4695,6 +4673,7 @@
 			y: 17.0d
 		}
 		{
+			dependencies: ["67F8922E4579FA8C"]
 			entity_vis_size: 1.0f
 			id: "6ED681BF8583BE40"
 			tasks: [{
@@ -4702,8 +4681,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:guardian_heart" }
 				type: "item"
 			}]
-			x: -40.0d
-			y: 21.5d
+			x: -45.0d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -4740,8 +4719,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:forbidden_fruit" }
 				type: "item"
 			}]
-			x: -38.0d
-			y: 21.5d
+			x: -43.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["39F1D2EB6198CFC8"]
@@ -4800,10 +4779,10 @@
 			y: 31.5d
 		}
 		{
+			dependencies: ["67F8922E4579FA8C"]
 			entity_vis_size: 1.0f
 			id: "1B46FCF75F842E87"
 			tasks: [{
-				count: 3L
 				id: "613B15F49CE86B9F"
 				item: { count: 1, id: "enigmaticlegacyplus:evil_essence" }
 				type: "item"
@@ -4831,8 +4810,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:antique_bag" }
 				type: "item"
 			}]
-			x: -37.0d
-			y: 21.5d
+			x: -42.0d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -4866,6 +4845,7 @@
 			y: 25.0d
 		}
 		{
+			dependencies: ["67F8922E4579FA8C"]
 			entity_vis_size: 1.0f
 			id: "3923CA397022E916"
 			tasks: [{

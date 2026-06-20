@@ -354,6 +354,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'aquaculture:tackle_box',
         'aquaculture:worm_farm',
         'tide:fishing_journal',
+        'enigmaticlegacyplus:twisted_potion',
         'enigmaticlegacyplus:recall_potion',
         /tide:.*_bait/,
         /smallships:malum_runewood_.*/,
@@ -370,4 +371,13 @@ RecipeViewerEvents.removeCategories(event => {
         'hexerei:woodcutter',
         'paganbless:cauldron_imbuing',
     ]);
+});
+
+// i hate potion recipes >.<
+RecipeViewerEvents.removeRecipes(event => {
+    event.remove('enigmaticlegacyplus:recall_potion.to.wormhole_potion');
+    event.remove('toomanyrecipeviewers:/enigmaticlegacyplus/recall_potion.to.wormhole_potion');
+    event.remove('enigmaticlegacyplus:recall_potion.to.twisted_potion');
+    event.remove('emi:/brewing/neoforge/enigmaticlegacyplus/recall_potion/enigmaticlegacyplus/twisted_heart/enigmaticlegacyplus/twisted_potion');
+    event.remove('toomanyrecipeviewers:/enigmaticlegacyplus/recall_potion.to.twisted_potion');
 });

@@ -1,15 +1,15 @@
 [*]
-background:          ftblibrary:textures/gui/background_squares.png; color=#CC222131; tile_size=64
+background:          ftbquests:textures/gui/background_milf.png; color=#CC222131; tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
 
 text_color:          #FFFFFF
-hover_text_color:    #FFFFA0
-disabled_text_color: #999999
+hover_text_color:    #C9CDF5
+disabled_text_color: #B5AC9E
 
-widget_border:     #1B1D1E
-widget_background: #44000000
-symbol_in:         #9BC600
-symbol_out:        #408300
+widget_border:     #2A2218
+widget_background: #44463B33
+symbol_in:         #9EA5D6
+symbol_out:        #6B6048
 
 button:                hollow_rectangle:{{widget_border}}
 panel:                 {{container_slot}}
@@ -28,21 +28,21 @@ alert_icon:           ftbquests:textures/gui/alert.png
 support_icon:         ftblibrary:textures/icons/support.png
 wiki_icon:            ftbquests:textures/gui/info.png
 wiki_url:             -
-pin_icon_on:          ftbquests:textures/gui/pin.png; color=#F8BD1C
-pin_icon_off:         ftbquests:textures/gui/pin.png; color=#DBDBDB
-editor_icon_on:       ftbquests:textures/gui/editor.png; color=#F8BD1C
-editor_icon_off:      ftbquests:textures/gui/editor.png; color=#DBDBDB
+pin_icon_on:          ftbquests:textures/gui/pin.png; color=#7B68EE
+pin_icon_off:         ftbquests:textures/gui/pin.png; color=#B5AC9E
+editor_icon_on:       ftbquests:textures/gui/editor.png; color=#7B68EE
+editor_icon_off:      ftbquests:textures/gui/editor.png; color=#B5AC9E
 hidden_icon:          ftbquests:textures/gui/hidden.png; color=#DBDBDB
 link_icon:            ftbquests:textures/gui/link.png; color=#DBDBDB
 save_icon:            ftbquests:textures/gui/save.png
 settings_icon:        ftbquests:textures/gui/settings.png
 close_icon:           ftbquests:textures/gui/close.png
 emergency_items_icon: ftbquests:textures/gui/emergency_items.png; color=#F3D9FF
-guide_icon:           ftbquests:textures/gui/guide.png; color=#EF9E1A
+guide_icon:           ftbquests:textures/gui/guide.png; color=#9EA5D6
 modpack_icon:         ftbquests:textures/item/book.png
 reward_table_icon:    ftblibrary:icons/money_bag
-shop_icon:            ftbquests:textures/gui/shop.png; color=#EF9E1A
-collect_rewards_icon: ftbquests:textures/gui/collect_rewards.png; color=#EF9E1A
+shop_icon:            ftbquests:textures/gui/shop.png; color=#9EA5D6
+collect_rewards_icon: ftbquests:textures/gui/collect_rewards.png; color=#7B68EE
 delete_icon:          ftblibrary:icons/remove
 reload_icon:          ftblibrary:icons/refresh
 download_icon:        ftblibrary:icons/down
@@ -53,24 +53,25 @@ left_arrow:           ftblibrary:icons/left
 right_arrow:          ftblibrary:icons/right
 
 full_screen_quest:                  0
-tasks_text_color:                   #5555FF
-rewards_text_color:                 #FFAA00
+tasks_text_color:                   #848DCB
+rewards_text_color:                 #9EA5D6
 quest_view_background:              {{context_menu}}
 quest_view_border:                  {{widget_border}}
-quest_view_title:                   #AAAAAA
-quest_completed_color:              #C856FF56
-quest_started_color:                #C800FFFF
-quest_not_started_color:            #96FFFFFF
-quest_locked_color:                 #FF999999
+quest_view_title:                   #9EA5D6
+quest_completed_color:              #C87B68EE
+quest_started_color:                #C89EA5D6
+quest_not_started_color:            #C89EA5D6
+quest_locked_color:                 #FF6A72A8
 dependency_line_texture:            ftbquests:textures/gui/dependency.png
-dependency_line_completed_color:    #64DC64
-dependency_line_requires_color:     #00C8C8
-dependency_line_required_for_color: #C8C800
+dependency_line_completed_color:    #848DCB
+dependency_line_uncompleted_color:  #B49EA5D6
+dependency_line_unavailable_color:  #649EA5D6
+dependency_line_requires_color:     #848DCB
+dependency_line_required_for_color: #9EA5D6
 dependency_line_selected_speed:     1.0
 dependency_line_unselected_speed:   0.0
 dependency_line_thickness:          0.17
 quest_spacing:                      1.0
-pinned_quest_size:                  0.75
 
 checkmark_task_active:   ftblibrary:icons/accept
 checkmark_task_inactive: ftblibrary:icons/accept_gray

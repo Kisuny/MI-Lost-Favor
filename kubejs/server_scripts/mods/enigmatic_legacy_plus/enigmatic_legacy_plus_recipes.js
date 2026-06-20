@@ -56,4 +56,21 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    //
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "milf:recall_concoction" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "item": "minecraft:fermented_spider_eye" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "item": "minecraft:fermented_spider_eye" },
+            { "tag": "hexerei:flower_biproduct" }
+        ],
+        output: "enigmaticlegacyplus:wormhole_potion",
+        amount: 2,
+    })
 })

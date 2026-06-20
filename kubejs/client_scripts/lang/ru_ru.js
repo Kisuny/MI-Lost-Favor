@@ -210,6 +210,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add("dimension.spectrum.deeper_down", `Глубокие Низины`)
     event.add("milf.crimson_veil_elixir.tooltip", `Выпей это и ${MilfEffects.WIGGLE("усни")} - и лишь во сне откроется путь в ${MilfEffects.GRAD.custom("Кровавые Пустоши", "#8A0303", "#D12F0E")}, за ${MilfEffects.GLITCH("багровую завесу")}, где покоятся ${MilfEffects.GRAD.custom("ужасы мёртвых", "#D12F0E", "#841B4C")}`)
     event.add('milf.crimson_veil.enter', "<blood>Багровая Завеса помнит каждую душу")
+    event.add('dimension.milf.crimson_veil', "Багровая Завеса")
+    event.add('biome.milf.blood_wastes', "Кровавые Пустоши")
+    event.add('biome.milf.crimson_mangrove_swamp', "Багровое Мангровое Болото")
 
     //#region fix forbidden_arcanus langs
     event.add("block.forbidden_arcanus.clibano_center", "Клибан")

@@ -211,6 +211,9 @@ Receive reward far greater still.`)
     event.add("dimension.spectrum.deeper_down", `Deeper Down`)
     event.add("milf.crimson_veil_elixir.tooltip", `Drink this and ${MilfEffects.WIGGLE("sleep")} - and only in your dreams will the path open to the ${MilfEffects.GRAD.custom("Blood Wastes", "#8A0303", "#D12F0E")}, beyond the ${MilfEffects.GLITCH("crimson veil")}, where the ${MilfEffects.GRAD.custom("horrors of the dead", "#D12F0E", "#841B4C")} rest`)
     event.add('milf.crimson_veil.enter', "<blood>The Crimson Veil remembers every soul")
+    event.add('dimension.milf.crimson_veil', "Crimson Veil")
+    event.add('biome.milf.blood_wastes', "Blood Wastes")
+    event.add('biome.milf.crimson_mangrove_swamp', "Crimson Mangrove Swamp")
 
     //#region fix forbidden_arcanus langs
     event.add("block.forbidden_arcanus.clibano_center", "Clibano")

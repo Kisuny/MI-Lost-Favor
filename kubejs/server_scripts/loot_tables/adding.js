@@ -158,6 +158,10 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
                 pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
                 pool.addEntry(LootEntry.of("milf:rune_of_mining"))
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
             })
             .pool((pool) => {
                 pool.when(conditions => {
@@ -193,6 +197,10 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:rune_of_diversity", [1, 2]))
                 pool.addEntry(LootEntry.of("milf:rune_of_fishing", [1, 2]))
                 pool.addEntry(LootEntry.of("milf:rune_of_mining", [1, 2]))
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
             })
             .pool((pool) => {
                 pool.when(conditions => {

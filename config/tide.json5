@@ -1,0 +1,68 @@
+{
+	"general": {
+		// When enabled, the vanilla fishing rod will use Tide's fishing loot system
+		"overrideVanillaRod": false,
+		// When enabled, you can hold right-click to cast the bobber farther
+		"holdToCast": true,
+		// A multiplier applied to the durability of fishing rods
+		"rodDurabilityMultiplier": 1.0,
+		// A list that defines the fishable void heights for each dimension
+		"fishableVoidHeights": [
+			{
+				"dimension": "minecraft:overworld",
+				"type": "RELATIVE_TO_BOTTOM",
+				"height": -6
+			},
+			{
+				"dimension": "minecraft:the_nether",
+				"type": "RELATIVE_TO_BOTTOM",
+				"height": -6
+			},
+			{
+				"dimension": "minecraft:the_end",
+				"type": "RELATIVE_TO_BOTTOM",
+				"height": 50
+			}
+		],
+		// Item IDs added to this list will never have their fish data auto-generated
+		"autoFishDataBlacklist": [],
+		// The chance of a crate being selected from the fishing loot table (Use "/fishing test loot" to see catch percentages.)
+		"crateWeight": 4.0,
+		// The amount that the crate chance is scaled with higher fishing luck
+		"crateQuality": 1.0,
+		// For datapackers: enable to show Tide data loading errors in the logs, they are suppressed otherwise
+		"logDataErrors": false
+	},
+	"items": {
+		/* Controls when/where fish should be assigned a length.
+		   NOTE: If Fish Item Sizes is set to "Always" or Bucketable Fish Items is set to "While Living",
+		   extra data will be added to fish item stacks that make them unstackable.
+		   To make fish stackable, simply change both settings to something other than their defaults.
+		*/
+		"fishItemSizes": "NEVER",
+		// Controls when fish items should be bucketable via menus. See above note for fish stacking!
+		"bucketableFishItems": "WHEN_LIVING",
+		// Enables the bedrock eating functionality of the Chasm Eel item
+		"enableBedrockBreakingItems": true,
+		// Entity IDs added to this list are unaffected by the Enchanted Pocket Watch
+		"pocketWatchBlacklist": []
+	},
+	"journal": {
+		// Give players a fishing journal upon joining a world for the first time
+		"giveJournal": false,
+		// Shows a notification (toast) that appears when a new fish is discovered
+		"showToasts": false
+	},
+	"minigame": {
+		// Enables the fishing minigame
+		"doMinigame": false,
+		// A multiplier that increases or decreases the speed of the minigame
+		"minigameDifficultyMultiplier": 1.0,
+		// If enabled, minigames from other mods like starcatcher or stardew fishing will be used
+		"useThirdPartyMinigames": true,
+		// Enables the sound played when you win the minigame
+		"doSuccessSound": false,
+		// Enables the sound played when you lose the minigame
+		"doFailSound": false
+	}
+}

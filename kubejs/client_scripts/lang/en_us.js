@@ -5,6 +5,14 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.entity.interact.part2', 'Something magical prevents you from using ')
     event.add('milf.text.block.interact.part0', 'Strange magic prevents you from using this block')
     event.add('milf.text.first_join', `Welcome to the ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
+
+    const foodCategoryNamesEn = { fruit: 'fruit', cooked_meats: 'cooked meats', bread: 'bread' }
+    Object.keys(foodCategoryNamesEn).forEach(priority => {
+        Object.keys(foodCategoryNamesEn).forEach(intolerance => {
+            if (priority === intolerance) return
+            event.add(`milf.food.traits_rolled.${priority}.${intolerance}`, `Your body handles <positive>${foodCategoryNamesEn[priority]}</positive> better, but tolerates <warning>${foodCategoryNamesEn[intolerance]}</warning> worse`)
+        })
+    })
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
 
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)

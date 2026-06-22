@@ -6,6 +6,14 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
     event.add('milf.text.first_join', `Добро пожаловать в ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
 
+    const foodCategoryNamesRu = { fruit: 'фрукты', cooked_meats: 'мясные блюда', bread: 'хлеб' }
+    Object.keys(foodCategoryNamesRu).forEach(priority => {
+        Object.keys(foodCategoryNamesRu).forEach(intolerance => {
+            if (priority === intolerance) return
+            event.add(`milf.food.traits_rolled.${priority}.${intolerance}`, `Твой организм лучше принимает <positive>${foodCategoryNamesRu[priority]}</positive>, но хуже переносит <warning>${foodCategoryNamesRu[intolerance]}</warning>`)
+        })
+    })
+
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Поздравляем!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("Вы чувствуете, что что-то изменилось...")}`)
 

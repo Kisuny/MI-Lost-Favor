@@ -21,17 +21,9 @@ item_interact_block.forEach(element => {
     let itemName = Item.of(element.item).hoverName
 
     AStages.addRestrictionForItem(`astages/${element.id}`, element.stage, element.item)
-        .setPickUpDelay(60)
-        .setCanAttack(false)
-        .setCanBeStoredInInventory(false)
-        .setCanBeEquipped(false)
-        .setCanPickedUp(false)
-        .setCanBePlaced(false)
-        .setCanItemBeLeftClicked(false)
-        .setCanItemBeRightClicked(false)
-        .setHideInJEI(true)
-        .setCanInteractWithBlock(false)
-        .setUsageMessage(() => Text.of(
+        .pickupDelay(60)
+        .disableBlockInteraction()
+        .useMessage(() => Text.of(
             [
                 [
                     Text.translate("milf.text.entity.interact.part2").gray(),
@@ -44,24 +36,24 @@ item_interact_block.forEach(element => {
 entity_interact_block.forEach(element => {
     if (element.customeText) {
         AStages.addRestrictionForMob(`astages/${element.id}`, element.stage, element.entity)
-            .setInteractionMessage(() => Text.of(
+            .interactionMessage(() => Text.of(
                 [
                     Text.translate(element.customeText).gray(),
                     Text.translate(element.langKey).darkGray(),
                 ]
             ))
-            .setCanBeRightClicked(false)
+            .disableRightClick()
     }
     else {
         AStages.addRestrictionForMob(`astages/${element.id}`, element.stage, element.entity)
-            .setInteractionMessage(() => Text.of(
+            .interactionMessage(() => Text.of(
                 [
                     Text.translate("milf.text.entity.interact.part0").gray(),
                     Text.translate(element.langKey).darkGray(),
                     Text.translate("milf.text.entity.interact.part1").gray()
                 ]
             ))
-            .setCanBeRightClicked(false)
+            .disableRightClick()
     }
 });
 

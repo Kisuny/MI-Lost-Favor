@@ -50,7 +50,7 @@ const ores = [
     { stage: "malum_access_ore", id: "ore_brilliant_deepslate", origin: "malum:brilliant_deepslate", replace: "minecraft:deepslate" },
 ]
 ores.forEach(element => {
-    AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace).setStageAllBlockStates(true)
+    AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace).matchAllBlockStates()
 });
 
 const facing = [
@@ -89,6 +89,6 @@ ore_samples.forEach(element => {
             element.stage,
             Block.getBlock(`milf:${element.sample_name}_ore_sample`).defaultBlockState().setValue(BlockProperties.HORIZONTAL_FACING, facing.direction),
             element.rock_type
-        ).setStageAllBlockStates(true)
+        ).matchAllBlockStates()
     })
 })

@@ -3110,6 +3110,18 @@
 			dependencies: ["3F3D5022224AC90A"]
 			entity_vis_size: 1.0f
 			id: "25790982D97FF33B"
+			rewards: [{
+				id: "1B14DBBE507B987F"
+				item: {
+					components: {
+						"patchouli:book": "animal_pen:guide_book"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				team_reward: false
+				type: "item"
+			}]
 			shape: "heart"
 			tasks: [{
 				id: "6B653CF5C310BDDE"

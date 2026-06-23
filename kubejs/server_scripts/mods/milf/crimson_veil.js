@@ -2,60 +2,67 @@ const $BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
 const $HeightmapTypes = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap$Types")
 const $BedBlock = Java.loadClass("net.minecraft.world.level.block.BedBlock")
 
-NativeEvents.onEvent("net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent", event => {
-    const player = event.getEntity()
-    if (!player) return
-    if (!(player.getServer())) return
+ServerEvents.tick(event => {
+    for (let player of event.server.getPlayerList().getPlayers()) {
+        let persistentData = player.getPersistentData()
 
-    const dayTime = player.level.getDayTime() % 24000
-    if (dayTime >= 12000) return
+        if (!player.isSleeping()) {
+            persistentData.remove("crimson_veil_sleep_ticks")
+            continue
+        }
 
-    const playerName = player.getName().getString()
-    // console.log(`${playerName} woke up`)
+        if (!persistentData.getBoolean("crimson_veil_potion_drinked")) continue
 
-    const data = player.getPersistentData()
-    const hasDrank = data.getBoolean("crimson_veil_potion_drinked")
-    // console.log(`crimson_veil_potion_drinked = ${hasDrank}`)
-    if (!hasDrank) return
+        let sleepTicks = persistentData.getInt("crimson_veil_sleep_ticks") + 1
+        persistentData.putInt("crimson_veil_sleep_ticks", sleepTicks)
+        if (sleepTicks < 100) continue
 
-    const server = player.getServer()
-    const dimKey = $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.parse("milf:crimson_veil"))
-    const targetLevel = server["getLevel(net.minecraft.resources.ResourceKey)"](dimKey)
-    // console.log(`targetLevel = ${targetLevel}`)
-    if (!targetLevel) return
+        persistentData.remove("crimson_veil_sleep_ticks")
 
-    const pos = player.blockPosition()
-    const x = pos.getX()
-    const z = pos.getZ()
+        let playerName = player.getName().getString()
+        // console.log(`${playerName} slept long enough`)
 
-    const returnData = new $CompoundTag()
-    returnData.putDouble("x", x + 0.5)
-    returnData.putDouble("y", pos.getY())
-    returnData.putDouble("z", z + 0.5)
-    returnData.putString("dimension", player.level.dimension.toString())
-    player.getPersistentData().put("crimson_veil_return_pos", returnData)
+        player.stopSleepInBed(true, true)
 
-    targetLevel.getChunk(x >> 4, z >> 4)
+        let server = player.getServer()
+        let dimKey = $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.parse("milf:crimson_veil"))
+        let targetLevel = server["getLevel(net.minecraft.resources.ResourceKey)"](dimKey)
+        // console.log(`targetLevel = ${targetLevel}`)
+        if (!targetLevel) continue
 
-    const surfacePos = targetLevel.getHeightmapPos($HeightmapTypes.WORLD_SURFACE, new $BlockPos(x, 0, z))
-    const safeY = surfacePos.getY()
-    // console.log(`teleporting ${playerName} to ${x} ${safeY} ${z} in milf:crimson_veil`)
+        let pos = player.blockPosition()
+        let x = pos.getX()
+        let z = pos.getZ()
 
-    // schedule because the bed is "occupied" after teleportation. 
-    // I haven't found an easier way to fix that
-    server.scheduleInTicks(20, _ => {
-        player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](targetLevel, x + 0.5, safeY, z + 0.5, player.yRot, player.xRot)
-        player.getPersistentData().remove("crimson_veil_potion_drinked")
-        player.potionEffects.add("minecraft:blindness", 200)
-        player.potionEffects.add("minecraft:darkness", 200)
-        sendImmersiveMessage(
-            Text.translatable("milf.crimson_veil.enter"),
-            player,
-            Object.assign({"vibrate":true,"vibrateAmp":0.2,"vibrateFreq":20}, DEFAULT_MILESTONE_NOTIFICATION_STYLE),
-            server
-        )
-        milfPlaySoundForPlayer(player, "minecraft:entity.breeze.idle_ground", { volume: 1.0, pitch: 0.50 })
-    })
+        let returnData = new $CompoundTag()
+        returnData.putDouble("x", x + 0.5)
+        returnData.putDouble("y", pos.getY())
+        returnData.putDouble("z", z + 0.5)
+        returnData.putString("dimension", player.level.dimension.toString())
+        player.getPersistentData().put("crimson_veil_return_pos", returnData)
+
+        targetLevel.getChunk(x >> 4, z >> 4)
+
+        let surfacePos = targetLevel.getHeightmapPos($HeightmapTypes.WORLD_SURFACE, new $BlockPos(x, 0, z))
+        let safeY = surfacePos.getY()
+        // console.log(`teleporting ${playerName} to ${x} ${safeY} ${z} in milf:crimson_veil`)
+
+        // schedule because the bed is "occupied" right after stopSleepInBed/teleportation.
+        // I haven't found an easier way to fix that
+        server.scheduleInTicks(20, _ => {
+            player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](targetLevel, x + 0.5, safeY, z + 0.5, player.yRot, player.xRot)
+            player.getPersistentData().remove("crimson_veil_potion_drinked")
+            player.potionEffects.add("minecraft:blindness", 200)
+            player.potionEffects.add("minecraft:darkness", 200)
+            sendImmersiveMessage(
+                Text.translatable("milf.crimson_veil.enter"),
+                player,
+                Object.assign({"vibrate":true,"vibrateAmp":0.2,"vibrateFreq":20}, DEFAULT_MILESTONE_NOTIFICATION_STYLE),
+                server
+            )
+            milfPlaySoundForPlayer(player, "minecraft:entity.breeze.idle_ground", { volume: 1.0, pitch: 0.50 })
+        })
+    }
 })
 
 ItemEvents.foodEaten("risus:guilty_apple", event => {

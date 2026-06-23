@@ -29,6 +29,7 @@ const trinkets_slot_list_reward = [
     { quest_id: '4489C7C10E7A49EF', trinket_slot: 'ring' },
     { quest_id: '4C184C19BA719B4F', trinket_slot: 'feet' },
     { quest_id: '5BD3DB1BBF7C043E', trinket_slot: 'ring' },
+    { quest_id: '04B7B3AE59A69B54', trinket_slot: 'ring' },
     { quest_id: '116FEA5302E15B7D', trinket_slot: 'hands' },
     { quest_id: '6C1E7006967265FC', trinket_slot: 'charm' },
     { quest_id: '4847BCB4A0147A6D', trinket_slot: 'crafting_on_a_stick' },

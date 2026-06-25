@@ -567,25 +567,6 @@
 				},
 				{
 					"type": "item",
-					"name": "minecraft:honeycomb",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.125
-						}
-					]
-				},
-				{
-					"type": "item",
 					"name": "minecraft:slime_ball",
 					"functions": [
 						{

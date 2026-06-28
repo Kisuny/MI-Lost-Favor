@@ -4,6 +4,10 @@ let $ClientTooltipComponent = Platform.isClientEnvironment() ? Java.loadClass("n
 let $DefaultTooltipPositioner = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE : null
 
 let $Quaternionf = Platform.isClientEnvironment() ? Java.loadClass("org.joml.Quaternionf") : null
+let $DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents")
+let $StringTag = Java.loadClass("net.minecraft.nbt.StringTag")
+let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag")
+let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 
 
 let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")

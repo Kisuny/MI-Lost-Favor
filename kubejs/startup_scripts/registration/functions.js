@@ -51,7 +51,7 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
         args.itemProperties.craftRemainder && properties.craftRemainder(args.itemProperties.craftRemainder)
     }
     if(args.dynamicName){
-        item.name(args.dynamicName)
+        item.name((itemStack) => args.dynamicName(itemStack))
     }
 }
 

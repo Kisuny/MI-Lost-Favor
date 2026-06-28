@@ -82,11 +82,70 @@ createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 
 createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
+
 createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:25, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
 createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
+createNewItem('stone_nose', {
+    stackSize: 1,
+    use: {
+        animation: "bow",
+        duration: 35,
+        conditions(level, player, hand) {
+            if (!level.isClientSide()) player.sendData("milf_stone_nose_start_sound")
+            return true
+        },
+        releaseUsing(itemStack, level, entity, tick) {
+            if (!level.isClientSide()) entity.sendData("milf_stone_nose_sound_interrupted")
+        },
+        finishUsing(itemStack, level, entity) {
+
+            let dataComponent = itemStack.get($DataComponents.CUSTOM_DATA)
+            if (!dataComponent) return itemStack
+
+            let player = entity
+            if (level.isClientSide()) return itemStack
+
+            let itemData = dataComponent.copyTag()
+            let oreId = itemData.getString("oreId")
+
+            let oresToScan = new $ListTag()
+            oresToScan.add($StringTag.valueOf(oreId))
+
+            let dataToSend = new $CompoundTag()
+            dataToSend.put("oresToScan", oresToScan)
+
+            player.sendData("milf_stone_nose_used", dataToSend)
+
+            player.cooldowns.addCooldown(itemStack, 100)
+            itemStack.shrink(1)
+            return itemStack
+
+        }
+    },
+    dynamicName(itemStack){
+        let noseNameComponent = Component.translatable("item.milf.stone_nose")
+        let dataComponent = itemStack.get($DataComponents.CUSTOM_DATA)
+        if (!dataComponent) return noseNameComponent
+
+        let itemData = dataComponent.copyTag()
+        let oreId = itemData.getString("oreId")
+
+        let oreItem = $BuiltInRegistries.ITEM.get(oreId)
+        let oreNameComponent = oreItem.getName(oreItem.getDefaultInstance())
+
+        
+
+        let noseNameWithOre = Component.ofString("")
+        noseNameWithOre.append(noseNameComponent).append(" ").append(Component.translatable("milf.stone_nose.ore_type", oreNameComponent))
+
+        return noseNameWithOre
+    }
+})
+
 createNewItem('divine_mint', { stackSize: 1})
 createNewItem('divine_coin', { stackSize: 1 })
 
+createNewItem('bound_spirit', { stackSize: 1, food: { nutrition: 4, saturation: 1, alwaysEdible: true } })
 createNewItem('nutmeg', { stackSize: 62 })
 
 createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })

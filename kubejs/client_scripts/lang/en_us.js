@@ -111,6 +111,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.pet_rock.notification4.f', `...For them to scatter`)
     event.add('milf.pet_rock.notification5.f', `...Just for fun`)
 
+    event.add('milf.stone_nose.ore_type', `of %s Sniffing`)
+
     event.add('milf.divine_mint.tooltip', `Within the walls of one's domain,
 Or in a completely abstract plane,
 

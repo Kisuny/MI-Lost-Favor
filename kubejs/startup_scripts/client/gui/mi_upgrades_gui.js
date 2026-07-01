@@ -68,6 +68,57 @@ global.MI_UPGRADES = {
 
 }
 
+const HATCH_MATERIALS = {
+    "bronze": { upgradeMaterials: [{ id: "milf:steel_machine_bit", count: 4 }], nextTierMaterial : "steel"},
+    "steel": { upgradeMaterials: [{ id: "modern_industrialization:advanced_machine_hull", count: 1 }], nextTierMaterial: "advanced" },
+    "advanced": { upgradeMaterials: [{ id: "modern_industrialization:turbo_machine_hull", count: 1 }], nextTierMaterial: "turbo" },
+    "turbo": { upgradeMaterials: [{ id: "modern_industrialization:highly_advanced_machine_hull", count: 1 }], nextTierMaterial: "highly_advanced" },
+}
+
+const ENERGY_HATCH_TIERS = {
+    "ie": { upgradeMaterials: [{ id: "modern_industrialization:basic_machine_hull", count: 1 }], nextTierMaterial: "lv" },
+    "lv": { upgradeMaterials: [{ id: "modern_industrialization:advanced_machine_hull", count: 1 }], nextTierMaterial: "mv" },
+    "mv": { upgradeMaterials: [{ id: "modern_industrialization:turbo_machine_hull", count: 1 }], nextTierMaterial: "hv" },
+    "hv": { upgradeMaterials: [{ id: "modern_industrialization:highly_advanced_machine_hull", count: 1 }], nextTierMaterial: "ev" },
+    "ev": { upgradeMaterials: [{ id: "modern_industrialization:quantum_machine_hull", count: 1 }], nextTierMaterial: "superconductor" },
+}
+
+const HATCHES = {
+    "item_input":{ modId: "modern_industrialization"},
+    "item_output": { modId: "modern_industrialization"},
+    "fluid_input": { modId: "modern_industrialization"},
+    "fluid_output": { modId: "modern_industrialization"},
+    "mixed_input": { modId: "yet_another_industrialization" },
+    "mixed_output": { modId: "yet_another_industrialization" },
+}
+
+const ENERGY_HATCHES = {
+    "energy_input": { modId: "modern_industrialization" },
+    "energy_output": { modId: "modern_industrialization" },
+}
+
+Object.entries(HATCH_MATERIALS).forEach(([material, materialData], index) => {
+    let {upgradeMaterials, nextTierMaterial} = materialData
+    Object.entries(HATCHES).forEach(([hatchType, hatchlData], index) => {
+        let { modId } = hatchlData
+        global.MI_UPGRADES[`${modId}:${material}_${hatchType}_hatch`] = {
+            upgradeMaterials: upgradeMaterials,
+            upgradesTo: `${modId}:${nextTierMaterial}_${hatchType}_hatch`
+        }
+    })
+})
+
+Object.entries(ENERGY_HATCH_TIERS).forEach(([material, materialData], index) => {
+    let { upgradeMaterials, nextTierMaterial } = materialData
+    Object.entries(ENERGY_HATCHES).forEach(([hatchType, hatchlData], index) => {
+        let { modId } = hatchlData
+        global.MI_UPGRADES[`${modId}:${material}_${hatchType}_hatch`] = {
+            upgradeMaterials: upgradeMaterials,
+            upgradesTo: `${modId}:${nextTierMaterial}_${hatchType}_hatch`
+        }
+    })
+})
+
 let miAngleTicks = Platform.isClientEnvironment() ? 0 : null
 
 const MI_UPGRADES = global.MI_UPGRADES

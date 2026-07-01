@@ -68,13 +68,30 @@ BlockEvents.rightClicked(Object.keys(MI_UPGRADES), event => {
 
         particleFrame(PARTICLES.dispersed, block.getPos(), {x:1, y:1, z:1}, event)
         
-        let entityData = block.getEntityData()
+        let entityData = block.getEntityData().copy()
         let newBlock = Block.withProperties(MI_UPGRADES[block.getId()].upgradesTo, block.getProperties())
         let level = event.getLevel()
         let blockPos = block.getPos()
         
         level.removeBlockEntity(blockPos)
         level.setBlockAndUpdate(blockPos, newBlock)
+        let newEntityData = level.getBlock(blockPos).getEntityData()
+        console.log(newEntityData);
+        
+        if (newEntityData.contains("fluids") && entityData.contains("fluids")){
+            let newFluidsList = newEntityData.get("fluids")
+            let oldFluidsList = entityData.get("fluids")
+
+            for (let i = 0; i < newFluidsList.size(); i++) {
+                let newFluidEntry = newFluidsList.getCompound(i)
+                let oldFluidEntry = oldFluidsList.getCompound(i)
+                // console.log(newFluidEntry, oldFluidEntry);
+
+                oldFluidEntry.putLong("capacity", newFluidEntry.getLong("capacity"))
+            }
+            
+            //entityData.putLong(newEntityData.getLong("capacity"))
+        }
         level.getBlock(blockPos).setEntityData(entityData) 
 
         milfPlaySound(event, "immersive_machinery:hatch_open", { pos: blockPos })
@@ -108,21 +125,36 @@ BlockEvents.rightClicked(Object.keys(MI_UPGRADES), event => {
 
 ServerEvents.recipes(event => {
 
-    for( const [ key, value] of Object.entries(MI_UPGRADES)){
+    for( const [ blockToUpgrade, upgradeData] of Object.entries(MI_UPGRADES)){
 
-        switch (value.upgradeMaterials.length) {
+        switch (upgradeData.upgradeMaterials.length) {
             case 1:
-                event.shaped(value.upgradesTo,
-                    [
-                        " K ",
-                        " U ",
-                        " S "
-                    ],
-                    {
-                        K: { item: key },
-                        U: { item: "milf:mi_upgrader" },
-                        S: { item: value.upgradeMaterials[0].id }
-                    }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+                if (upgradeData.upgradeMaterials[0].count == 1){
+                    event.shaped(upgradeData.upgradesTo,
+                        [
+                            " K ",
+                            " U ",
+                            " S "
+                        ],
+                        {
+                            K: { item: blockToUpgrade },
+                            U: { item: "milf:mi_upgrader" },
+                            S: { item: upgradeData.upgradeMaterials[0].id }
+                        }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+                } else if (upgradeData.upgradeMaterials[0].count == 4){
+                    event.shaped(upgradeData.upgradesTo,
+                        [
+                            " K ",
+                            "SUS",
+                            "S S"
+                        ],
+                        {
+                            K: { item: blockToUpgrade },
+                            U: { item: "milf:mi_upgrader" },
+                            S: { item: upgradeData.upgradeMaterials[0].id }
+                        }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
+                }
+
                 break;
             // case 2:
             //     event.shaped(value.upgradesTo,

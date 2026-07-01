@@ -34,6 +34,12 @@ ServerEvents.tags('item', event => {
     //event.get("mowziesmobs:wrought_axe").remove("minecraft:axes")
     //event.get("minecraft:axes").remove("mowziesmobs:wrought_axe")
 
+    event.add("arts_and_crafts:cork_logs", [
+        "arts_and_crafts:cork_log", 
+        "arts_and_crafts:cork_wood",
+        "arts_and_crafts:stripped_cork_log",
+        "arts_and_crafts:stripped_cork_wood"])
+
     const AXES = ["mowziesmobs:wrought_axe", "immersiveengineering:axe_steel"]
     event.remove("minecraft:axes", AXES)
     event.add("c:tools", AXES)

@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         let rJSON = JSON.parse(recipe.json)
 
         let ingredients = rJSON.ingredients
-        let result = rJSON.result
+        let result = rJSON.result        
 
         yTechShapeless(event, {
             outputItems: [[{id:result.id}, 1]],
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         })
 
         yTechShapeless(event, {
-            outputItems: [[{id:result.id}, 3]],
+            outputItems: [[{id:result.id}, 4]],
             inputItems:[ingredients, [{tag:"c:saws"}]],
             category:"building",
             removeRecipeType:"crafting_shapeless",
@@ -126,10 +126,16 @@ ServerEvents.recipes(event => {
             category:"building",
             removeRecipeType:"crafting_shaped",
             compatOff:true
+        })        
+
+        ytechChoppingCraft(event, {
+            inputItems: [[input, 1]],
+            outputItems: [[{ id: result.id }, 2]],
+            tool: { tag: "minecraft:axes" }
         })
 
         yTechShapeless(event, {
-            outputItems: [[{id:result.id}, 3]],
+            outputItems: [[{id:result.id}, 2]],
             inputItems:[[input, 1], [{tag:"c:saws"}]],
             category:"building",
             removeRecipeType:"crafting_shaped",
@@ -144,6 +150,88 @@ ServerEvents.recipes(event => {
         })
         
         plankToSlab[input.item] = result.id
+    })
+
+    let addedVanillaWoodTypes = new $HashSet()
+
+    event.forEachRecipe({ type: 'ytech:remaining_shapeless_crafting', input: '#minecraft:planks', output: '#minecraft:slabs' }, recipe => {
+        //console.log(recipe.getOriginalRecipe().getIngredients().getFirst().getTagKey());
+        let rJSON = JSON.parse(recipe.json)
+        let result = rJSON.result
+        let input = rJSON.ingredients.filter(entry => {
+            return !["minecraft:axes", "c:saws"].includes(Object.values(entry)[0])
+        })[0]
+        //if (Array.isArray(input)) input = input[0]
+
+        //console.log(input);
+
+        
+        if (!addedVanillaWoodTypes.contains(input.item)){
+            ytechChoppingCraft(event, {
+                inputItems: [[input, 1]],
+                outputItems: [[{ id: result.id }, 2]],
+                tool: { tag: "minecraft:axes" },
+                compatOff: true
+            })
+
+            yTechShapeless(event, {
+                outputItems: [[{ id: result.id }, 1]],
+                inputItems: [[input, 1], [{ tag: "minecraft:axes" }]],
+                category: "building",
+                removeRecipeType: "ytech:remaining_shapeless_crafting",
+                compatOff: true
+            })
+
+            yTechShapeless(event, {
+                outputItems: [[{ id: result.id }, 2]],
+                inputItems: [[input, 1], [{ tag: "c:saws" }]],
+                category: "building",
+                removeRecipeType: "ytech:remaining_shapeless_crafting",
+                compatOff: true
+            })
+
+            addedVanillaWoodTypes.add(input.item)
+        }
+
+    })
+
+    addedVanillaWoodTypes = new $HashSet()
+
+    event.forEachRecipe({ type: 'ytech:remaining_shapeless_crafting', input: '#minecraft:logs', output: '#minecraft:planks' }, recipe => {
+        //console.log(recipe.getOriginalRecipe().getIngredients().getFirst().getTagKey());
+        let rJSON = JSON.parse(recipe.json)
+        let result = rJSON.result
+        let input = rJSON.ingredients.filter(entry => {
+            return !["minecraft:axes", "c:saws"].includes(Object.values(entry)[0])
+        })[0]
+        //if (Array.isArray(input)) input = input[0]
+
+        //console.log(input);
+
+        //console.log(input);
+        input.tag = input.item + "s"
+        delete input.item
+
+        if (!addedVanillaWoodTypes.contains(input.item)) {
+
+            yTechShapeless(event, {
+                outputItems: [[{ id: result.id }, 4]],
+                inputItems: [[input, 1], [{ tag: "c:saws" }]],
+                category: "building",
+                removeRecipeType: "ytech:remaining_shapeless_crafting",
+                compatOff: true
+            })
+
+            yTechShapeless(event, {
+                outputItems: [[{ id: result.id }, 1]],
+                inputItems: [[input, 1], [{ tag: "minecraft:axes" }]],
+                category: "building",
+                compatOff: true
+            })
+
+            addedVanillaWoodTypes.add(input.tag)
+        }
+
     })
 
     event.forEachRecipe({type: 'minecraft:crafting_shaped', input: '#minecraft:planks', output: '#minecraft:stairs'}, recipe =>{

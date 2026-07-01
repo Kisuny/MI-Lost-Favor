@@ -55,4 +55,19 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            " d#",
+            " s ",
+            "   ",
+        ],
+        key: {
+            "#": { "tag": "c:hammers" },
+            "s": { "item": "minecraft:stick" },
+            "d": { "item": `modern_industrialization:silver_plate` },
+        },
+        outputItems: [[{ id: "eidolon_edoni:silver_knife" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
 })

@@ -62,6 +62,23 @@ ServerEvents.recipes(event => {
             })
         })
     })
+
+   
+    milfShaped(event, {
+        pattern: [
+            " FF",
+            "FS#",
+            "S  "
+        ],
+        key: {
+            S: { item: "minecraft:stick" },
+            F: { item: `modern_industrialization:iron_plate` },
+            "#": { tag: "c:hammers" },
+        },
+        outputItems: [[{ id: `occultism:butcher_knife` }, 1]],
+        removeRecipe: true
+    })
+    
 })
 
 

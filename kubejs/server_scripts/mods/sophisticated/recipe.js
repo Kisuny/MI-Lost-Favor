@@ -24,13 +24,13 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            'WPW',
-            'PPP',
-            'WPW'
+            ' P ',
+            'PSP',
+            ' P '
         ],
         key: {
             P: { item: "modern_industrialization:copper_plate" },
-            W: { item: "modern_industrialization:copper_wire" }
+            S: { item: "modern_industrialization:analog_circuit" }
         },
         outputItems: [[{ id: "sophisticatedstorage:basic_to_copper_tier_upgrade" }, 1]],
         removeRecipe: true
@@ -44,7 +44,8 @@ ServerEvents.recipes(event => {
         ],
         key: {
             P: { item: "modern_industrialization:iron_plate" },
-            U: { item: "sophisticatedstorage:basic_to_copper_tier_upgrade" }
+            
+            U: { item: "sophisticatedstorage:basic_to_copper_tier_upgrade" },
         },
         outputItems: [[{ id: "sophisticatedstorage:basic_to_iron_tier_upgrade" }, 1]],
         removeRecipe: true
@@ -53,12 +54,13 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             ' P ',
-            'PUP',
-            ' P '
+            'PSP',
+            'LPL'
         ],
         key: {
             P: { item: "modern_industrialization:iron_plate" },
-            U: { item: "modern_industrialization:iron_large_plate" }
+            L: { item: "modern_industrialization:iron_large_plate" },
+            S: { item: "modern_industrialization:analog_circuit" }
         },
         outputItems: [[{ id: "sophisticatedstorage:basic_to_iron_tier_upgrade" }, 1]],
         removeRecipe: true

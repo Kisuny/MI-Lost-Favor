@@ -412,36 +412,39 @@
 							abilities: {
 								abilities: {
 									push: {
-										extender: {
-											cooldown: 0
-											cooldownCap: 0
-											ticking: 0b
-										}
 										lock: {
 											breaks: 5
 										}
 										points: 0
-										research: {
-											links: { }
-											researched: 0b
-										}
 										stats: {
 											chance: {
-												initialValue: 0.30988d
+												initialQuality: 8
 											}
-											radius: {
-												initialValue: 3.20053d
+											cloud_spawn_chance: {
+												initialQuality: 5
+											}
+											cooldown: {
+												initialQuality: 9
+											}
+											distance: {
+												initialQuality: 8
+											}
+											paralysis_duration: {
+												initialQuality: 7
+											}
+											paralysis_radius: {
+												initialQuality: 8
+											}
+											retaliation_chance: {
+												initialQuality: 6
 											}
 										}
 									}
 								}
+								synergies: { }
 							}
-							leveling: {
-								experience: 0
-								level: 0
-								luck: 0
-								points: 0
-							}
+							leveling: { }
+							statistic: { }
 						}
 					}
 					count: 1

@@ -25,6 +25,7 @@ ServerEvents.recipes(event => {
     event.remove({output: [
         "enigmaticlegacyplus:enchantment_transposer",
         "enigmaticlegacyplus:escape_scroll",
+        "enigmaticlegacyplus:magnet_ring",
     ]})
 
     milfShaped(event, {

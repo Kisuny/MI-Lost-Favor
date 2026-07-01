@@ -8,17 +8,19 @@ PlayerEvents.loggedIn(event => {
 
 PlayerEvents.loggedOut(event =>{
     //console.log("LOGGED OUT");
-    syncTeamStages(event.getPlayer())
+    //syncTeamStages(event.getPlayer())
 })
 
 function syncTeamStages(player){
     let teamManager = $FTBTeamsAPI.getManager()
     let team = teamManager.getTeamForPlayer(player).get()
-
+    //if (team.isPlayerTeam()) return
     let teamStagesSet = getAllTeamStages(player)
 
     let playerStagesSet = new $HashSet()
     let playerStagesList = AStages.getStagesFromPlayer(player)
+
+    //console.log("STAGES", playerStagesList)
 
     for (const stage of playerStagesList) {
         playerStagesSet.add(stage)

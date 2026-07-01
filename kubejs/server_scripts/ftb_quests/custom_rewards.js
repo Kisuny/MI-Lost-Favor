@@ -81,4 +81,6 @@ function addStagesToTeamMembers(event, stages) {
             AStages.addStageToPlayer(stage, member)
         }
     })
+
+    syncTeamStages(event.getPlayer())
 }

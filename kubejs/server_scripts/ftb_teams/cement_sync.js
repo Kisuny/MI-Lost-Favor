@@ -70,7 +70,7 @@ NativeEvents.onEvent($AdvancementEarnEvent, event => {
 function syncTeamAdvancements(/**@type {import("net.minecraft.server.level.ServerPlayer").$ServerPlayer$$Original}*/  player) {
     let manager = player.getServer().getAdvancements()
     let { team } = getTeamData(player)
-
+    //if (team.isPlayerTeam()) return
     let teamAdvancementsSet = getTeamAdvancements(player)
     let playerAdvancements = player.getAdvancements()
 

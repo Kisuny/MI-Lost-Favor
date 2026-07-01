@@ -33,20 +33,20 @@ ServerEvents.recipes(event => {
     ytechChoppingCraft(event,{
         inputItems:[[{tag: "c:bones"}]],
         outputItems:[[{id:"ytech:bone_needle"}]],
-        tool: {item : "ytech:sharp_flint"},
+        tool: {tag : "milf:knives"},
     })
 
     ytechChoppingCraft(event,{
         inputItems:[[{item: "minecraft:iron_nugget"}]],
         outputItems:[[{id:"milf:needle"}]],
-        tool: {tag : "c:knives"},
+        tool: {tag : "milf:knives"},
     })
 
-    ytechChoppingCraft(event,{
-        inputItems:[[{tag: "minecraft:planks"}]],
-        outputItems:[[{id:"minecraft:stick"}, 3]],
-        tool: {tag : "minecraft:axes"},
-        removeRecipe:true
+    ytechChoppingCraft(event, {
+        inputItems: [[{ tag: "minecraft:wooden_slabs" }]],
+        outputItems: [[{ id: "minecraft:stick" }, 2]],
+        tool: { tag: "minecraft:axes" },
+        removeRecipe: true
     })
 
     ytechChoppingCraft(event,{

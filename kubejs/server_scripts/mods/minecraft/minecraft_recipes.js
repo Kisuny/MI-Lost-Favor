@@ -270,7 +270,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "id": "minecraft:short_grass" }, 1]],
         inputItems: [
             [{ "item": "minecraft:fern" }, 1],
-            [{ "tag": "c:knives" }, 1],
+            [{ "tag": "milf:knives" }, 1],
         ],
         category: "misc",
         removeRecipe: true
@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "id": "minecraft:tall_grass" }, 1]],
         inputItems: [
             [{ "item": "minecraft:large_fern" }, 1],
-            [{ "tag": "c:knives" }, 1],
+            [{ "tag": "milf:knives" }, 1],
         ],
         category: "misc",
         removeRecipe: true
@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "id": "minecraft:short_grass" }, 1]],
         inputItems: [
             [{ "item": "minecraft:seagrass" }, 1],
-            [{ "tag": "c:knives" }, 1],
+            [{ "tag": "milf:knives" }, 1],
         ],
         category: "misc",
         removeRecipe: true

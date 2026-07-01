@@ -507,6 +507,7 @@ KubeJSTweaks.beforeRecipes(event => {
         /modern_industrialization:materials\/.*\/craft\/ring/,
         "modern_industrialization:materials/fire_clay_dust",
         "modern_industrialization:materials/bronze_dust",
+        "modern_industrialization:materials/bronze_tiny_dust",
         "modern_industrialization:materials/blast_furnace/bauxite_to_aluminum_ingot",
         "modern_industrialization:vanilla_recipes/easy_chest",
         "modern_industrialization:vanilla_recipes/easy_chest",

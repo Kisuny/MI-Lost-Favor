@@ -171,21 +171,27 @@ ServerEvents.tags("item", event => {
         "milf:bronze_shovel_head_part",
     ])
 
-    event.add("ytech:sharp_flints", [
-        'farmersdelight:golden_knife',
-        'farmersdelight:diamond_knife',
-        'farmersdelight:netherite_knife',
-        'farmersdelight:iron_knife']
-    )
+    // event.add("ytech:sharp_flints", [
+    //     'farmersdelight:golden_knife',
+    //     'farmersdelight:diamond_knife',
+    //     'farmersdelight:netherite_knife',
+    //     'farmersdelight:iron_knife']
+    // )
+
+    event.add("ytech:sharp_flints", "#milf:knives")
 
 
 
     event.add("milf:coals_for_bloom", [
         "minecraft:coal",
         "minecraft:charcoal",
+        "modern_industrialization:coal_dust",
         "modern_industrialization:coal_crushed_dust",
         "modern_industrialization:lignite_coal_crushed_dust",
-        "malum:arcane_charcoal"
+        "modern_industrialization:lignite_coal",
+        "modern_industrialization:lignite_coal_dust",
+        "malum:arcane_charcoal",
+        "grimoireofgaia:stone_coal"
     ])
 
     event.add("ytech:sharp_flints", ["ytech:flint_knife", ""])
@@ -207,4 +213,6 @@ ServerEvents.tags("item", event => {
 
 ServerEvents.tags("block", event => {
     event.add("minecraft:mineable/pickaxe", "#ytech:aqueducts")
+
+    event.remove("ytech:require_valid_tool", "#minecraft:dirt")
 })

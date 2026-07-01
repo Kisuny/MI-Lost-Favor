@@ -162,6 +162,7 @@ Array.prototype.workspacePlus = function(letter) {
 ServerEvents.recipes(event => {
 
     const wrench = { item: "modern_industrialization:wrench" }
+    const anyTool = {tag: "c:tools"}
     const packer = "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition"
 
     //#region MI bronze machines
@@ -1324,7 +1325,7 @@ ServerEvents.recipes(event => {
             s: { item: "minecraft:cobblestone_slab" }
         },
         outputItems: [[{ id: "hexerei:pestle_and_mortar" }, 1]],
-        tool: { item: "ytech:sharp_flint" },
+        tool: anyTool,
         removeRecipe: true,
         compatOff: true
     })
@@ -1376,7 +1377,7 @@ ServerEvents.recipes(event => {
             T: { item: "ytech:grass_twine" }
         },
         outputItems: [[{ id: "ytech:tree_stump" }, 1]],
-        tool: { item: "ytech:sharp_flint" },
+        tool: anyTool,
         removeRecipe: true,
         compatOff: true
     })
@@ -1416,9 +1417,9 @@ ServerEvents.recipes(event => {
 
     yTechWorkspaceRecipe(event, {
         pattern: [
-            ['   ','   ','   '].workspaceFull("P").workspaceCenter(" "),
-            ['   ','   ','   '].workspaceFull("P").workspaceCenter(" ").workspaceFront(" "),
-            ['   ','   ','   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S")
+            ['   ','   ','   '].workspaceFull("P").workspaceCenter(" ").workspaceCorners(" "),
+            ['   ', '   ', '   '].workspaceFull("P").workspaceCenter(" ").workspaceFront("S").workspaceCorners(" "),
+            ['   ', '   ', '   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S").workspaceCorners("P")
         ],
         key: {
             P: { item: "minecraft:brick" },
@@ -1445,9 +1446,9 @@ ServerEvents.recipes(event => {
 
     yTechWorkspaceRecipe(event, {
         pattern: [
-            ['   ','   ','   '].workspaceFull("P").workspaceSides("C").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceSides("P"),
             ['   ','   ','   '].workspaceFull("P").workspaceSides("C").workspaceCenter(" ").workspaceFront("S"),
-            ['   ','   ','   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S")
+            ['   ','   ','   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S").workspaceCorners("P")
         ],
         key: {
             P: { item: "minecraft:brick" },
@@ -1495,12 +1496,11 @@ ServerEvents.recipes(event => {
     yTechWorkspaceRecipe(event, {
         pattern: [
             ['   ','   ','   '].workspacePlus("s").workspaceCorners("B").workspaceCenter(" "),
-            ['   ','   ','   '].workspaceFull("S").workspaceCenter("A"),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter(" "),
             ['   ','   ','   '].workspacePlus("s").workspaceCorners("B")
         ],
         key: {
             B: { item: "ytech:grass_twine" },
-            A: { item: "ytech:aqueduct_valve" },
             S: { item: "minecraft:stick" },
             s: { item: "ytech:terracotta_brick_slab" }
         },
@@ -1511,9 +1511,9 @@ ServerEvents.recipes(event => {
 
     yTechWorkspaceRecipe(event, {
         pattern: [
-            ['   ','   ','   '].workspaceFull("B").workspaceCenter(" "),
-            ['   ','   ','   '].workspaceFull("s").workspaceCenter("A"),
-            ['   ','   ','   '].workspaceFull("B").workspaceCenter("S")
+            ['   ','   ','   '],
+            ['   ','   ','   '].workspaceCenter("A"),
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("S").workspaceLeft("s").workspaceRight("s")
         ],
         key: {
             B: { item: "ytech:terracotta_bricks" },
@@ -1546,27 +1546,29 @@ ServerEvents.recipes(event => {
     yTechWorkspaceRecipe(event, {
         pattern: [
             ['   ','   ','   '],
-            ['   ','   ','   '].workspaceFull("S").workspaceCenter(" "),
-            ['   ','   ','   '].workspaceFull("S")
+            ['   ','   ','   '].workspaceFull(" ").workspaceCenter(" ").workspaceSides("L"),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("L").workspaceCorners(" ")
         ],
-        key: { S: { tag: "minecraft:planks" } },
+        key: { S: { tag: "minecraft:planks" } ,L: { tag: "minecraft:wooden_slabs" }},
         outputItems: [[{ id: "ytech:wooden_box" }, 1]],
-        tool: { item: "ytech:sharp_flint" },
+        tool: anyTool,
         removeRecipe: true,
     })
 
     yTechWorkspaceRecipe(event, {
         pattern: [
-            ['   ','   ','   '],
-            ['   ','   ','   '],
-            ['PPP','PSP','PPP']
+            ['   ',' L ','   '],
+            ['   ', ' S ', '   '].workspaceSides("s"),
+            ['   ',' P ','   '].workspaceSides("s")
         ],
         key: {
             P: { tag: "minecraft:planks" },
-            S: { item: "ytech:wooden_box" }
+            S: { item: "ytech:wooden_box" },
+            L: { tag: "minecraft:wooden_slabs" },
+            s: {item: "minecraft:stick"}
         },
         outputItems: [[{ id: "minecraft:chest" }, 1]],
-        tool: { tag: "c:knives" },
+        tool: { tag: "milf:knives" },
         removeRecipe: true,
         compatOff: true
     })
@@ -1574,15 +1576,16 @@ ServerEvents.recipes(event => {
     yTechWorkspaceRecipe(event, {
         pattern: [
             ['   ','   ','   '],
-            ['   ','   ','   '],
-            ['PPP',' S ','PPP']
+            ['   ',' L ','   '],
+            ['   ','   ','   '].workspaceFull("s").workspaceCenter("S")
         ],
         key: {
-            P: { tag: "minecraft:planks" },
-            S: { item: "ytech:wooden_box" }
+            S: { item: "ytech:wooden_box" },
+            L: { tag: "minecraft:wooden_slabs" },
+            s: { item: "minecraft:stick" }
         },
         outputItems: [[{ id: "minecraft:barrel" }, 1]],
-        tool: { tag: "c:knives" },
+        tool: { tag: "milf:knives" },
         removeRecipe: true,
         compatOff: true
     })

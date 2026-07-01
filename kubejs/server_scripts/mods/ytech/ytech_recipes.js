@@ -8,7 +8,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const yTechShaped = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
+const yTechShaped = (/**@type {$RecipesKubeEvent}*/ event, args) => {
     let recipe = {
         type: "ytech:remaining_shaped_crafting",
         category: "misc",
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
             '  H'
         ],
         key: {
-            E: { tag: "c:knives" },
+            E: { tag: "milf:knives" },
             H: { tag: "ytech:beeswaxes" }
         },
         outputItems: [[{ id: "milf:hoe_head_pattern" }, 1]],
@@ -184,11 +184,26 @@ ServerEvents.recipes(event => {
             ' H '
         ],
         key: {
-            E: { tag: "c:knives" },
+            E: { tag: "milf:knives" },
             H: { tag: "ytech:beeswaxes" }
         },
         outputItems: [[{ id: "milf:shovel_head_pattern" }, 1]],
         compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'BBB',
+            'B#B',
+            'BBB'
+        ],
+        key: {
+            B: { item: "minecraft:clay_ball" },
+            "#": { tag: "ytech:brick_molds" }
+        },
+        outputItems: [[{ id: "ytech:unfired_brick" }, 12]],
+        compatOff: true,
+        removeRecipe: true
     })
 
     yTechShapeless(event, {
@@ -200,6 +215,32 @@ ServerEvents.recipes(event => {
         ],
         category: "equipment",
         removeRecipe: true
+    })
+
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:leather_strips" }, 4]],
+        inputItems: [
+            [{ "tag": "c:leathers" }, 1],
+            [{ "tag": "milf:knives" }, 1],
+        ],
+        category: "equipment",
+        removeRecipeType: "ytech:remaining_shapeless_crafting",
+        compatOff:true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'W#W',
+            ' W ',
+            '   '
+        ],
+        key: {
+            W: { tag: "minecraft:planks" },
+            "#": { tag: "milf:knives" }
+        },
+        outputItems: [[{ id: "minecraft:bowl" }, 3]],
+        compatOff: true,
+        removeRecipeType: "ytech:remaining_shaped_crafting" 
     })
 
     yTechShapeless(event, {
@@ -248,8 +289,8 @@ ServerEvents.recipes(event => {
     event.replaceOutput({ output: 'ytech:tin_bolt' }, 'ytech:tin_bolt', 'modern_industrialization:tin_bolt')
     event.replaceOutput({ output: 'ytech:bronze_bolt' }, 'ytech:bronze_bolt', 'modern_industrialization:bronze_bolt')
 
-    event.replaceInput({ output: 'ytech:leather_strips' }, '#ytech:sharp_flints', '#c:knives')
-    event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#c:knives')
+    event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#milf:knives')
+    event.replaceInput({ input: '#c:knives' }, '#c:knives', '#milf:knives')
 
     event.custom({
         "type": "ytech:remaining_shapeless_crafting",

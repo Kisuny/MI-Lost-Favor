@@ -89,6 +89,8 @@ ServerEvents.recipes(event => {
     event.remove({type: 'minecraft:smelting', input: `modern_industrialization:iridium_ore`})
     event.remove({type: 'minecraft:smelting', input: `modern_industrialization:iridium_tiny_dust`})
 
+    event.remove({ type: 'minecraft:smelting', input: `modern_industrialization:bronze_dust` })
+
 })
 
 /* 

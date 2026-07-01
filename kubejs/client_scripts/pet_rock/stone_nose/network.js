@@ -1,7 +1,10 @@
+
 NetworkEvents.dataReceived('milf_stone_nose_used', (event) => {
 
     milfPlayGUISound("mowziesmobs:umvuthana.inhale")
     let data = event.data
+    const STONE_NOSE_SCAN_DURATION = 654
+    data.putInt("scan_duration", STONE_NOSE_SCAN_DURATION)
     Client.player.sendData("milf_pet_rock_deposits_to_scan", data)
 
 })

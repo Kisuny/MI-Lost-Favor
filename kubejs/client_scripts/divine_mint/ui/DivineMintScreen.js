@@ -1,5 +1,3 @@
-let DIVINE_MINT_SCREEN_TITLE = Component.translatable("milf.divine_mint.gui.title")
-
 function DivineMintScreen(){
     const screen = new JavaAdapter($Screen, {
 

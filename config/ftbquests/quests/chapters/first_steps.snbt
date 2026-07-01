@@ -344,6 +344,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "173695E379285022"
+			shape: "diamond"
 			tasks: [{
 				count: 8L
 				id: "258E2FB9E0FD9D4A"
@@ -1653,6 +1654,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "6FABBCC7CB80AF62"
+			shape: "diamond"
 			tasks: [
 				{
 					count: 16L
@@ -1926,6 +1928,7 @@
 			dependencies: ["17A44FD7738F4496"]
 			entity_vis_size: 1.0f
 			id: "11DEF9AD7861A0C9"
+			shape: "diamond"
 			tasks: [{
 				id: "18045083ABB0D776"
 				item: { count: 1, id: "modern_industrialization:brick_dust" }
@@ -2272,6 +2275,7 @@
 		{
 			entity_vis_size: 1.0f
 			id: "3A3202170DDE2113"
+			shape: "octagon"
 			tasks: [
 				{
 					id: "614D5F3434973A56"
@@ -3710,6 +3714,158 @@
 			}]
 			x: 11.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["173695E379285022"]
+			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			icon: {
+				id: "milf:stone_nose"
+			}
+			id: "0BF7B4B3DAAE234C"
+			shape: "heart"
+			tasks: [{
+				id: "7001AAAE3F1E4149"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0BF7B4B3DAAE234C"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						oreId: "minecraft:raw_iron"
+					}
+				}
+				id: "milf:stone_nose"
+			}
+			id: "00F875A3E242FB34"
+			rewards: [{
+				count: 2
+				id: "1E5B1858D13453C8"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							oreId: "minecraft:raw_iron"
+						}
+					}
+					count: 1
+					id: "milf:stone_nose"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "36DD5A8EF1AAC639"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0BF7B4B3DAAE234C"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						oreId: "minecraft:raw_copper"
+					}
+				}
+				id: "milf:stone_nose"
+			}
+			id: "6C59597B8D81F454"
+			rewards: [{
+				count: 2
+				id: "21BBF54E55505811"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							oreId: "minecraft:raw_copper"
+						}
+					}
+					count: 1
+					id: "milf:stone_nose"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7A9734ED78BCABE8"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0BF7B4B3DAAE234C"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						oreId: "modern_industrialization:raw_tin"
+					}
+				}
+				id: "milf:stone_nose"
+			}
+			id: "37160E9A836B7361"
+			rewards: [{
+				count: 2
+				id: "28E909B05DA20875"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							oreId: "modern_industrialization:raw_tin"
+						}
+					}
+					count: 1
+					id: "milf:stone_nose"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "46D78E9ACA8F897F"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0BF7B4B3DAAE234C"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"minecraft:custom_data": {
+						oreId: "minecraft:coal"
+					}
+				}
+				id: "milf:stone_nose"
+			}
+			id: "57671811B0F76299"
+			rewards: [{
+				count: 2
+				id: "0C61949FA094B130"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							oreId: "minecraft:coal"
+						}
+					}
+					count: 1
+					id: "milf:stone_nose"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1063BA27980C2670"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 2.0d
 		}
 	]
 }

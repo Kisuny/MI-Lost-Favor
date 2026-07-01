@@ -1,4 +1,6 @@
 let $WorldTargets = Java.loadClass("com.endertech.minecraft.mods.adlods.world.WorldTargets")
+let $AdLods = Java.loadClass("com.endertech.minecraft.mods.adlods.AdLods")
+
 let $Collectors = Java.loadClass("java.util.stream.Collectors")
 let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
 let $Tag = Java.loadClass("net.minecraft.nbt.Tag")
@@ -39,22 +41,23 @@ function collectDepositNames(oreId, collector){
 }
 
 NetworkEvents.dataReceived("milf_pet_rock_deposits_to_scan", event => {
-    //if (event.hand == "OFF_HAND") return false
     if (event.level.isClientSide()) return false
     let item = event.player.getMainHandItem()
     if (event.player.cooldowns.isOnCooldown(item)) return
 
-
     let { player, data } = event
 
+    const scanRadius = data.getInt("scan_radius") || 500
+    const scanDuration = data.getInt("scan_duration") || 600
+
     let oresToScan = data.getList("oresToScan", $Tag.TAG_STRING)
+
     let depositToOreMap = new $HashMap()
     let scanndedOresMap = new $HashMap()
-    //let oresArray = []
     let oresSet = new $HashSet()
     for (let i = 0; i < oresToScan.size(); i++){
+
         let oreId = oresToScan.getString(i)
-        //oresArray.push()
         collectDepositNames(oreId, oresSet)
 
         for (let depositName of ORE_ID_TO_DEPOSIT_NAMES[oreId]){
@@ -65,53 +68,30 @@ NetworkEvents.dataReceived("milf_pet_rock_deposits_to_scan", event => {
 
     }
 
-    //console.log(depositToOreMap);
-    
-
-    //console.log(oresSet);
-    
-
-    //console.log(oresArray);
-    
-
-    //sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate(`milf.stage.test`), player, DEFAULT_MILESTONE_NOTIFICATION_STYLE, DEFAULT_MILESTONE_SUBTEXT_STYLE, event.server)
-
-
     let worldTargets = $WorldTargets.get(event.level)
     let playerBlockPos = player.blockPosition()
     let genResultMap = worldTargets.generated()
     let blockPosTag = new $ListTag()
 
-    //console.log(genResultMap);
+    //let depositGenerator = $AdLods.getInstance().features.depositGenerator.get()
+    //console.log(depositGenerator);
     
 
     let filteredMap = genResultMap.entrySet().stream().filter(entry => {
-        return oresSet.contains(entry.getValue().name) && entry.getKey().closerThan(playerBlockPos, 500)
+        return oresSet.contains(entry.getValue().name) && entry.getKey().closerThan(playerBlockPos, scanRadius)
     }).forEach(entry => {
         scanndedOresMap.get(depositToOreMap.get(entry.getValue().name)).add($NbtUtils.writeBlockPos(entry.getKey()))
-        //blockPosTag.add($NbtUtils.writeBlockPos(entry.getKey()))
     })
-    //.collect($Collectors.toMap(entry => entry.getKey(), entry => entry.getValue()))
-
-    // genResultMap.forEach((pos, targetGenResult) => {
-    //     targetGenResult.name
-    // })
 
     let posData = new $CompoundTag()
-
     scanndedOresMap.forEach((oreId, listTag) => {
         posData.put(oreId, listTag)
     })
 
     let dataToSend = new $CompoundTag()
     dataToSend.put("depositPositions", posData)
-    
-    //posData.put("depositPositions", blockPosTag)
+    dataToSend.putInt("scan_duration", scanDuration)
+    dataToSend.putInt("scan_radius", scanRadius)
 
     event.player.sendData("milf_pet_rock_deposits_scan", dataToSend)
 })
-
-// ItemEvents.firstRightClicked("milf:pet_rock", event => {
-
-
-// })

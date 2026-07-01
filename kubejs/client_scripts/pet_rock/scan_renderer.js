@@ -1,21 +1,25 @@
 
 let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
 
-let rockScanTicks = 0
-let isScanned = false
+//let rockScanTicks = 0
 let depositsToRender = {}
 let petRockScanScale = 0.75
 let visitedDepositsSet = null
 let playerPosForDepositsScan = new BlockPos(0,0,0)
-let currentScanDistanceSqr = 0
+//let currentScanDistanceSqr = 0
+
+let isScanned = false
+let currentScanInfo = {remainingTicks:0, totalTicks:0, radius:0, radiusSqr:0, currentDistanceSqr:0}
 
 NetworkEvents.dataReceived('milf_pet_rock_deposits_scan', (event) => {
 
     let data = event.data
     let positions = data.getCompound("depositPositions")
 
-    let oreIds = positions.getAllKeys()
+    const scanRadius = data.getInt("scan_radius")
+    const scanDuration = data.getInt("scan_duration")
 
+    let oreIds = positions.getAllKeys()
     depositsToRender = {}
 
     oreIds.forEach(oreId => {
@@ -31,28 +35,31 @@ NetworkEvents.dataReceived('milf_pet_rock_deposits_scan', (event) => {
         })
 
         depositsToRender[oreId] = posArray
-
-        //depositsToRender = posArray
-
     })
 
     if (Object.keys(depositsToRender).length > 0){
         isScanned = true
-        rockScanTicks = 300
+        currentScanInfo.totalTicks = scanDuration
+        currentScanInfo.remainingTicks = scanDuration
+        currentScanInfo.radius = scanRadius
+        currentScanInfo.radiusSqr = scanRadius * scanRadius
+        currentScanInfo.currentDistanceSqr = 0
+
+        // rockScanTicks = 300
         visitedDepositsSet = new $HashSet()
         playerPosForDepositsScan = event.player.blockPosition()
-        currentScanDistanceSqr = 0
+        // currentScanDistanceSqr = 0
     }    
 
 })
 
 ClientEvents.tick(event => {
     if (isScanned){
-        let elapsedTicks = 300 - rockScanTicks
+        let elapsedTicks = currentScanInfo.totalTicks - currentScanInfo.remainingTicks
         let scanProgress = Math.min(1, elapsedTicks / 50)
-        currentScanDistanceSqr = Math.min(250000, Math.pow(500 * scanProgress, 2)) 
-        rockScanTicks--
-        if (rockScanTicks <= 0){
+        currentScanInfo.currentDistanceSqr = Math.min(currentScanInfo.radiusSqr, Math.pow(currentScanInfo.radius * scanProgress, 2)) 
+        currentScanInfo.remainingTicks--
+        if (currentScanInfo.remainingTicks <= 0){
             isScanned = false
         }
     }
@@ -75,21 +82,20 @@ function renderDepositMarkers(guiGraphics, deltaTracker){
 
         for(let [oreId, positions] of Object.entries(depositsToRender)){
             for (let blockPos of positions) {
-
-                if (visitedDepositsSet && !visitedDepositsSet.contains(blockPos) && playerPosForDepositsScan.distSqr(blockPos) <= currentScanDistanceSqr){
+                let distanceFromScanToDepositSqr = playerPosForDepositsScan.distSqr(blockPos)
+                if (visitedDepositsSet && !visitedDepositsSet.contains(blockPos) && distanceFromScanToDepositSqr <= currentScanInfo.currentDistanceSqr){
 
                     visitedDepositsSet.add(blockPos)
 
                     let soundPitch = Math.min(1.4, 0.8 + visitedDepositsSet.size() * 0.05)
-                    let soundRelativeToWorldVector = blockPos.getCenter().subtract(playerPosForDepositsScan.getCenter()).normalize().scale(3)
+                    let soundVolume = Math.max(0.3, (700 - Math.sqrt(distanceFromScanToDepositSqr)) / 500) 
 
-                    let cameraRotation = Client.gameRenderer.getMainCamera().rotation().conjugate()
-
-                    let soundRelativeToPlayerVector = soundRelativeToWorldVector.toVector3f().rotate(cameraRotation)
-                    //console.log(soundRelativeToPlayerVector);
+                    //SOUND PHYSICS SCREWS THIS UP, SADLY ￣へ￣
+                    //let soundRelativeToWorldVector = blockPos.getCenter().subtract(playerPosForDepositsScan.getCenter()).normalize()
+                    //let cameraRotation = Client.gameRenderer.getMainCamera().rotation().conjugate()
+                    //let soundRelativeToPlayerVector = soundRelativeToWorldVector.toVector3f().rotate(cameraRotation)
                     
-
-                    milfPlayGUISound("minecraft:entity.item.pickup", { pitch: soundPitch, pos: { pos: soundRelativeToPlayerVector , isRelative:true} })
+                    milfPlayGUISound("minecraft:entity.item.pickup", { pitch: soundPitch, volume:soundVolume, source:"BLOCKS"  })
                     
                 }
 

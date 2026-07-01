@@ -4,6 +4,7 @@ let milfEffects = global.milfEffects
 let milfDifficulties = global.milfDifficulties
 
 let isFirstOpen = true
+let DIVINE_MINT_SCREEN_TITLE = Component.translatable("milf.divine_mint.gui.title")
 
 ItemEvents.firstRightClicked("milf:divine_mint", event => {
     if(isFirstOpen) {

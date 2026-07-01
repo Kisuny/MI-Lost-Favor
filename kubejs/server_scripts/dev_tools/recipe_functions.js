@@ -101,3 +101,25 @@ function milfCampfire(event, args){
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
 }
+
+function transformShapedRecipe(event, recipe, transformPattern, transformKey){
+    let rJSON = JSON.parse(recipe.json)
+    //console.log(rJSON);
+    
+    rJSON.pattern = transformPattern(rJSON.pattern)
+    rJSON.key = transformKey(rJSON.key)
+
+    milfShaped(event, {
+        pattern: rJSON.pattern,
+        key: rJSON.key,
+        outputItems: [[rJSON.result]]
+    })
+
+    event.remove({ id: recipe.getId(), type: rJSON.type })
+}
+
+function transformShapedRecipesForAll(event, ids, transformPattern, transformKey ){
+    event.forEachRecipe({ or: ids.map(id => { return { output: id, type:"minecraft:crafting_shaped"}}) }, recipe => {
+        transformShapedRecipe(event, recipe, transformPattern, transformKey)
+    })
+}

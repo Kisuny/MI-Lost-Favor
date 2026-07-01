@@ -355,6 +355,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'enigmaticlegacyplus:twisted_potion',
         'enigmaticlegacyplus:recall_potion',
         'enigmaticlegacyplus:escape_scroll',
+        'enigmaticlegacyplus:magnet_ring',
+        'reliquified_artifacts:mimi_dust',
         /tide:.*_bait/,
         /smallships:malum_runewood_.*/,
     ]

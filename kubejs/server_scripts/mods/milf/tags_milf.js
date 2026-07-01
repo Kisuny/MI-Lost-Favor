@@ -4,6 +4,29 @@ ServerEvents.tags('item', event => {
     event.add("milf:sweet_berries", ["minecraft:sweet_berries", "toxony:false_berries"])
     event.add("milf:claws", ["friendsandfoes:crab_claw", "starcatcher:lava_crab_claw", "born_in_chaos_v1:nightmare_claw", "cataclysm:chitin_claw"])
 
+    event.add("milf:knives", [
+
+        "farmersdelight:iron_knife", "farmersdelight:golden_knife", 
+            "farmersdelight:diamond_knife", "farmersdelight:netherite_knife",
+
+        "eidolon_edoni:silver_knife", "eidolon_edoni:all_rounder", "eidolon_repraised:athame",
+
+        "malum:soul_stained_steel_knife", "malum:sundering_anchor",
+
+        // "aquaculture:iron_fillet_knife", "aquaculture:gold_fillet_knife", "aquaculture:diamond_fillet_knife",
+
+        // "refurbished_furniture:knife",
+
+        "occultism:butcher_knife", "occultism:iesnium_butcher_knife",
+
+        "dungeonsdelight:flint_cleaver", "dungeonsdelight:iron_cleaver",
+            "dungeonsdelight:diamond_cleaver", "dungeonsdelight:golden_cleaver", "dungeonsdelight:netherite_cleaver",
+
+        "ytech:flint_knife", "ytech:bronze_knife"
+
+    ])
+
+    event.add("more_sounds:equipment", "#milf:knives")
 
     event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic'])
     //#region tags for emi++ grouping in EMI
@@ -20,6 +43,8 @@ ServerEvents.tags('item', event => {
         'red_sandstone', 'redstone_block', 'sandstone', 'stone',
         'white_concrete', 'yellow_concrete',
     ]
+
+    
 
     const chippedExclusions = {
         'stone':         '(?!.*end_stone)',

@@ -85,7 +85,7 @@ ClientEvents.lang('en_us', event => {
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Slay Scylla')
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Slay the Leviathan')
 
-
+    event.add('tag.item.milf.knives', 'Knives')
 
     event.add('milf.cannot.mine.block', 'You cannot mine this block for now')
     event.add('milf.press_button', 'Hold ')

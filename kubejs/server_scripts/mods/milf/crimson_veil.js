@@ -3,19 +3,19 @@ const $HeightmapTypes = Java.loadClass("net.minecraft.world.level.levelgen.Heigh
 const $BedBlock = Java.loadClass("net.minecraft.world.level.block.BedBlock")
 
 ServerEvents.tick(event => {
-    for (let player of event.server.getPlayerList().getPlayers()) {
+    event.server.getPlayerList().getPlayers().forEach(player => {
         let persistentData = player.getPersistentData()
 
         if (!player.isSleeping()) {
             persistentData.remove("crimson_veil_sleep_ticks")
-            continue
+            return
         }
-
-        if (!persistentData.getBoolean("crimson_veil_potion_drinked")) continue
+        
+        if (!persistentData.getBoolean("crimson_veil_potion_drinked")) return // (¬_¬")
 
         let sleepTicks = persistentData.getInt("crimson_veil_sleep_ticks") + 1
         persistentData.putInt("crimson_veil_sleep_ticks", sleepTicks)
-        if (sleepTicks < 100) continue
+        if (sleepTicks < 100) return
 
         persistentData.remove("crimson_veil_sleep_ticks")
 
@@ -28,7 +28,7 @@ ServerEvents.tick(event => {
         let dimKey = $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.parse("milf:crimson_veil"))
         let targetLevel = server["getLevel(net.minecraft.resources.ResourceKey)"](dimKey)
         // console.log(`targetLevel = ${targetLevel}`)
-        if (!targetLevel) continue
+        if (!targetLevel) return
 
         let pos = player.blockPosition()
         let x = pos.getX()
@@ -40,29 +40,46 @@ ServerEvents.tick(event => {
         returnData.putDouble("z", z + 0.5)
         returnData.putString("dimension", player.level.dimension.toString())
         player.getPersistentData().put("crimson_veil_return_pos", returnData)
-
+        
         targetLevel.getChunk(x >> 4, z >> 4)
 
         let surfacePos = targetLevel.getHeightmapPos($HeightmapTypes.WORLD_SURFACE, new $BlockPos(x, 0, z))
         let safeY = surfacePos.getY()
         // console.log(`teleporting ${playerName} to ${x} ${safeY} ${z} in milf:crimson_veil`)
 
+        player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](targetLevel, x + 0.5, safeY, z + 0.5, player.yRot, player.xRot)
+        player.getPersistentData().remove("crimson_veil_potion_drinked")
+        player.potionEffects.add("minecraft:blindness", 200)
+        player.potionEffects.add("minecraft:darkness", 200)
+
+        sendImmersiveMessage(
+            Text.translatable("milf.crimson_veil.enter"),
+            player,
+            Object.assign({"vibrate":true,"vibrateAmp":0.2,"vibrateFreq":20}, DEFAULT_MILESTONE_NOTIFICATION_STYLE),
+            server
+        )
+
+        milfPlaySoundForPlayer(player, "minecraft:entity.breeze.idle_ground", { volume: 1.0, pitch: 0.50 })
+
         // schedule because the bed is "occupied" right after stopSleepInBed/teleportation.
         // I haven't found an easier way to fix that
-        server.scheduleInTicks(20, _ => {
-            player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](targetLevel, x + 0.5, safeY, z + 0.5, player.yRot, player.xRot)
-            player.getPersistentData().remove("crimson_veil_potion_drinked")
-            player.potionEffects.add("minecraft:blindness", 200)
-            player.potionEffects.add("minecraft:darkness", 200)
-            sendImmersiveMessage(
-                Text.translatable("milf.crimson_veil.enter"),
-                player,
-                Object.assign({"vibrate":true,"vibrateAmp":0.2,"vibrateFreq":20}, DEFAULT_MILESTONE_NOTIFICATION_STYLE),
-                server
-            )
-            milfPlaySoundForPlayer(player, "minecraft:entity.breeze.idle_ground", { volume: 1.0, pitch: 0.50 })
-        })
-    }
+
+        // already fixed by player.stopSleepInBed(true, true) so there's no need to schedule the teleportation (‾◡◝)
+
+        // server.scheduleInTicks(20, _ => {
+        //     player["teleportTo(net.minecraft.server.level.ServerLevel,double,double,double,float,float)"](targetLevel, x + 0.5, safeY, z + 0.5, player.yRot, player.xRot)
+        //     player.getPersistentData().remove("crimson_veil_potion_drinked")
+        //     player.potionEffects.add("minecraft:blindness", 200)
+        //     player.potionEffects.add("minecraft:darkness", 200)
+        //     sendImmersiveMessage(
+        //         Text.translatable("milf.crimson_veil.enter"),
+        //         player,
+        //         Object.assign({"vibrate":true,"vibrateAmp":0.2,"vibrateFreq":20}, DEFAULT_MILESTONE_NOTIFICATION_STYLE),
+        //         server
+        //     )
+        //     milfPlaySoundForPlayer(player, "minecraft:entity.breeze.idle_ground", { volume: 1.0, pitch: 0.50 })
+        // })
+    })
 })
 
 ItemEvents.foodEaten("risus:guilty_apple", event => {

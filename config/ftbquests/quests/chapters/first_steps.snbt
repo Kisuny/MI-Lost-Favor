@@ -321,7 +321,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6823D5F00B44B271"]
@@ -335,7 +335,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -387,7 +387,7 @@
 				}
 			]
 			x: 11.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["173695E379285022"]
@@ -1140,7 +1140,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1217,7 +1217,7 @@
 				type: "observation"
 			}]
 			x: 14.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -1242,7 +1242,7 @@
 				type: "observation"
 			}]
 			x: 15.0d
-			y: -11.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -1267,7 +1267,7 @@
 				type: "observation"
 			}]
 			x: 16.0d
-			y: -11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -1292,7 +1292,7 @@
 				type: "observation"
 			}]
 			x: 13.0d
-			y: -11.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["68A22BD457DE7363"]
@@ -1304,7 +1304,7 @@
 				type: "checkmark"
 			}]
 			x: 14.5d
-			y: -10.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["0ACD0476CE4CAED1"]
@@ -1418,7 +1418,7 @@
 				type: "observation"
 			}]
 			x: 15.0d
-			y: -13.0d
+			y: -13.5d
 		}
 		{
 			dependencies: [
@@ -1460,8 +1460,8 @@
 				item: { count: 1, id: "ytech:grass_bed" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -10.0d
+			x: 11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -2008,7 +2008,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7A4BF1F1B52D40F0"]
@@ -2068,7 +2068,7 @@
 				}
 			]
 			x: 17.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0D3A5D8E30D4F371"]
@@ -2405,7 +2405,7 @@
 				item: { count: 1, id: "minecraft:stone_hoe" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 12.0d
 			y: -8.0d
 		}
 		{
@@ -2437,7 +2437,7 @@
 				type: "observation"
 			}]
 			x: 16.0d
-			y: -12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["428850B1426EB3D4"]
@@ -2465,7 +2465,7 @@
 				type: "observation"
 			}]
 			x: 14.0d
-			y: -13.0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["0EC6045881A3898D"]
@@ -2493,7 +2493,7 @@
 				type: "observation"
 			}]
 			x: 13.0d
-			y: -12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -2529,8 +2529,8 @@
 				item: { count: 1, id: "minecraft:wooden_shovel" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: -9.0d
+			x: 9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["30B7522161DC8B1B"]
@@ -2601,7 +2601,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2EF484C39D617CD2"]
@@ -3697,6 +3697,19 @@
 			}]
 			x: 10.0d
 			y: -13.0d
+		}
+		{
+			dependencies: ["6E680C846961BFE3"]
+			entity_vis_size: 1.0f
+			id: "328BAA1EAAD30295"
+			shape: "diamond"
+			tasks: [{
+				id: "15B54B74CC4430A8"
+				item: { count: 1, id: "dungeonsdelight:flint_cleaver" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -7.0d
 		}
 	]
 }

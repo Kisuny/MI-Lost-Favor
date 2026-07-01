@@ -1,16 +1,17 @@
-filename = 'reliquified_ars_nouveau-1.21.1-0.6.1.jar'
+filename = 'reliquified_ars_nouveau-1.21.1-0.8.1.jar'
 name = 'Reliquified Ars Nouveau'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'reliquified_ars_nouveau-1.21.1-0.8.1.jar'
 
 [download]
-hash = '882aba237860441a7ad2943775ffa3cc4d6324a9'
+hash = '4be1f4b0fd7fbec6618596e2e7c3705db88a7579'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6882233
+file-id = 8104341
 project-id = 1196449

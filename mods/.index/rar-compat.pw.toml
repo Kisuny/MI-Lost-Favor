@@ -1,16 +1,17 @@
-filename = 'rarcompat-1.21-0.9.7.jar'
-name = 'Relics: Artifacts Compat'
-side = 'both'
+filename = 'reliquified_artifacts-1.21.1-1.0.7.jar'
+name = 'RAR-Compat'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'reliquified_artifacts-1.21.1-1.0.7.jar'
 
 [download]
-hash = '55c301ea622fc5a613531715c99b7d1d66f2e1d6'
+hash = 'b05a777e47d17c645aab551a3ccb759340530a51'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6879980
+file-id = 8215303
 project-id = 1100379

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.06
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/snowshoes",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/villager_hat"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/lucky_scarf"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/igloo_chest"
+}

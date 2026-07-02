@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.03
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/golden_hook",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/snorkel"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/flippers"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/scarf_of_invisibility"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/steadfast_spikes"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/universal_attractor"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/feral_claws"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/night_vision_goggles"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/obsidian_skull"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/running_shoes"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/charm_of_sinking"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/shipwreck_treasure"
+}

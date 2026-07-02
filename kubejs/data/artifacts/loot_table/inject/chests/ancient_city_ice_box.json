@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.04
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/snowshoes"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/ancient_city_ice_box"
+}

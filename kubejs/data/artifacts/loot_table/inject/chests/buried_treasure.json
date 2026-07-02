@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.05
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/snorkel",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/flippers",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/umbrella",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/golden_hook",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/feral_claws",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/digging_claws",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/kitty_slippers",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/bunny_hoppers",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/lucky_scarf",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/aqua_dashers",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/anglers_hat",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/drinking_hat",
+          "weight": 3
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/buried_treasure"
+}

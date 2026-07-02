@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "baseChance": 0.0195,
+                            "bonusChance": 0.011,
+                            "condition": "enigmaticlegacyplus:spellstone"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:void_pearl",
+                    "weight": 90
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "baseChance": 0.004875,
+                            "bonusChance": 0.0055,
+                            "condition": "enigmaticlegacyplus:spellstone"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:spellcore",
+                    "weight": 10
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.01525,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:spellstone_debris"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "enigmaticlegacyplus:chests/void_pearl_addon"
+}

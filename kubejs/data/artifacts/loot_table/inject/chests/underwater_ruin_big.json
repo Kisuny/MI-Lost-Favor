@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.09
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/snorkel",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/flippers",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/superstitious_hat"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/lucky_scarf"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/fire_gauntlet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cross_necklace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/power_glove"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cloud_in_a_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/anglers_hat"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/underwater_ruin_big"
+}

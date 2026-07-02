@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.06
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/onion_ring",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/night_vision_goggles"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/panic_necklace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/obsidian_skull"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/superstitious_hat"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/digging_claws"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cloud_in_a_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/vampiric_glove"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/aqua_dashers"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/pickaxe_heater"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/drinking_hat"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/abandoned_mineshaft"
+}

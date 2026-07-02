@@ -2232,5 +2232,20 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: [
+				"5137971E2E5F42B9"
+				"1DD61683298CC5E6"
+			]
+			entity_vis_size: 1.0f
+			id: "5B4F187D926B738F"
+			tasks: [{
+				id: "0FDBF2A5FE1B2499"
+				item: { count: 1, id: "occultism:spirit_attuned_gem" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
 	]
 }

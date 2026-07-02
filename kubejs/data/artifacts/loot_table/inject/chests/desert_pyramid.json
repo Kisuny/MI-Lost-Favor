@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.04
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/flame_pendant",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/thorn_pendant",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/whoopee_cushion",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/charm_of_sinking",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/shock_pendant"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/umbrella"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/scarf_of_invisibility"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/universal_attractor"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/vampiric_glove"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/onion_ring"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/desert_pyramid"
+}

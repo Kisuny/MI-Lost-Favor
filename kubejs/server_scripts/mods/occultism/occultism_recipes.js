@@ -38,7 +38,6 @@ ServerEvents.recipes(event => {
         ["occultism:chalk_orange_impure", "modern_industrialization:bronze_dust"],
         ["occultism:chalk_purple_impure", "modern_industrialization:battery_alloy_dust"],
         ["occultism:chalk_light_blue_impure", "modern_industrialization:aluminum_dust"],
-        ["occultism:chalk_red_impure", "modern_industrialization:ruby_dust"],
         ["occultism:chalk_black_impure", "modern_industrialization:steel_dust"],
         ["occultism:chalk_magenta_impure", "modern_industrialization:titanium_dust"],
         ["occultism:chalk_cyan_impure", "modern_industrialization:celestigem_dust"],

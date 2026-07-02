@@ -1846,12 +1846,29 @@
 			dependencies: ["56956E24B043B41A"]
 			entity_vis_size: 1.0f
 			id: "742D4F5A2D903B69"
-			shape: "rsquare"
-			tasks: [{
-				id: "6A2DE9994B248736"
-				item: { count: 1, id: "ytech:antler" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6A2DE9994B248736"
+					item: { count: 1, id: "ytech:antler" }
+					type: "item"
+				}
+				{
+					entity: "ytech:deer"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: true
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "5D765B88E2D1523B"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
 			x: 0.5d
 			y: -9.0d
 		}
@@ -3760,6 +3777,7 @@
 					count: 1
 					id: "milf:stone_nose"
 				}
+				team_reward: false
 				type: "item"
 			}]
 			shape: "diamond"
@@ -3794,6 +3812,7 @@
 					count: 1
 					id: "milf:stone_nose"
 				}
+				team_reward: false
 				type: "item"
 			}]
 			shape: "diamond"
@@ -3828,6 +3847,7 @@
 					count: 1
 					id: "milf:stone_nose"
 				}
+				team_reward: false
 				type: "item"
 			}]
 			shape: "diamond"
@@ -3862,6 +3882,7 @@
 					count: 1
 					id: "milf:stone_nose"
 				}
+				team_reward: false
 				type: "item"
 			}]
 			shape: "diamond"

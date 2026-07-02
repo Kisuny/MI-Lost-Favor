@@ -272,12 +272,7 @@
 	]
 	quest.07B3FFC9267C5861.quest_desc: ["The <keyword>Maledictus Pact Enhancer</keyword> allows the creation of <warning>cursed items</warning> in the <keyword>Hephaestus Forge</keyword>. It can be found as loot in <magic>Bastion Treasure Rooms</magic> with a chance of <keyword>18%</keyword> per chest. "]
 	quest.07D52B22D8158404.quest_desc: ["<keyword>Mob Predictions</keyword> will need to be processed in a <keyword>Loot Fabricator</keyword>, a device which uses <property>power</property> to convert predictions to <property>mob drops</property>. The drops which are available are based on a list of <keyword>pre-defined items</keyword>, and a <positive>target can be selected</positive> for each type of model. The <keyword>Loot Fabricator</keyword> will remember your choices for each type, so you can <positive>feed multiple types of predictions</positive> into a single fabricator."]
-	quest.07E78D29C898CE55.quest_desc: [
-		"Wild sheep"
-		""
-		""
-		"{image:milf:textures/quest_pic/mouflon.png width:200 height:200 align:center}"
-	]
+	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
 	quest.07ED244BED2A7802.quest_desc: ["Training a <keyword>Data Model</keyword> can be done in one of <keyword>two ways</keyword>: with a <keyword>Deep Learner</keyword> or with a <keyword>Simulation Chamber</keyword>. The <keyword>Deep Learner</keyword> allows you to store a few <keyword>Data Models</keyword> within, and <positive>kills</positive> you receive will begin to <property>train the model</property>. All models start out in the <warning>Faulty</warning> state, and must be trained up to &l<positive>Basic</positive> in the <keyword>Deep Learner</keyword>."]
 	quest.080CC80D28F2DBED.quest_desc: [
 		"[ \"You can use a \", { \"text\": \"water container\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38077A8FBBA9C3A1\" } }, \" to catch mobs like fish or axolotls and breed them. It’s a very lag-friendly block - use it instead of having a large number of mobs in your area, as that can negatively impact server performance!\" ]"
@@ -359,7 +354,11 @@
 		"Либо же &l&3/pingwheel config&r&r и написать в меню &3channel&r нужный вам канал, удаление канала из меню ввода канала позволит вернуться в &oобщий канал&r. Так же командой &l&3/pingwheel config&r&r можно настроить другие функции мода, в случае надобности."
 	]
 	quest.0BF78D040CA973B7.quest_desc: ["Each chimney provides <keyword>+50°</keyword> but the maximum number of <keyword>Chimneys</keyword> that can be installed is <keyword>4 Brick Chimneys</keyword> and <keyword>4 reinforced Brick Chimneys</keyword>."]
-	quest.0BF7B4B3DAAE234C.quest_desc: ["Since looking for ores is <keyword>hella frustrating</keyword> (especially when most of the ores are escaping your vision due to... reasons), the process of <keyword>sniffing</keyword> the ores out could use a little bit more of... <keyword>sniffing!</keyword> Those <keyword>stone nose</keyword> imitations imbued with ancient sinus inducing stuff should help you with that, <positive>marking all the deposits</positive> of some specific type in the vicinity of <positive>500 blocks around you</positive> for a short duration! You won't get more of those for quite some time, so prepare <keyword>something to mark</keyword> the location of the vein in advance."]
+	quest.0BF7B4B3DAAE234C.quest_desc: [
+		"Since looking for ores is <keyword>hella frustrating</keyword> (especially when most of the ores are escaping your vision due to... reasons), the process of <keyword>sniffing</keyword> the ores out could use a little bit more of... <keyword>sniffing!</keyword> Those <keyword>stone nose</keyword> imitations imbued with ancient sinus inducing stuff should help you with that, <positive>marking all the deposits</positive> of some specific type in the vicinity of <positive>500 blocks around you</positive> for a short duration! You won't get more of those for quite some time, so prepare <keyword>something to mark</keyword> the location of the vein in advance."
+		"{@pagebreak}"
+		"Поскольку поиск руды - дело <keyword>чертовски утомительное</keyword> (особенно когда большая часть руды ускользает из поля зрения по… определенным причинам), процессу <keyword>«вынюхивания»</keyword> руды не помешало бы чуть больше… <keyword>нюхания!</keyword> Эти имитации <keyword>каменных носов</keyword>, пропитанные древним веществом, вызывающим заложенность носа, должны вам в этом помочь, на короткое время <positive>отмечая все залежи</positive> определенного типа в радиусе <positive>500 блоков вокруг вас</positive>! В ближайшее время вы не сможете получить больше таких предметов, поэтому заранее подготовьте <keyword>что-нибудь, чтобы отметить</keyword> местонахождение жилы."
+	]
 	quest.0C1938F058F0ECC8.quest_desc: ["Forged in the <keyword>Tier III altar</keyword> for <keyword>40,000 EV</keyword>. Required to power <property>Sentient Extraction</property> rituals and sustain the deeper blood workings of Tier III."]
 	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The <keyword>Quantum Catcher</keyword> can be used to <positive>capture and transport entities</positive>. To obtain it, you can <positive>combine</positive> <keyword>Spawner Scrap</keyword> and an <keyword>Arcane Crystal Block</keyword> in a <keyword>Smithing Table</keyword>"]
 	quest.0C6231CE410086A5.title: "Affrit Crusher"
@@ -482,12 +481,7 @@
 		""
 		"&lПеред улучшением опустошите свой Trinkets Pouch&r"
 	]
-	quest.0EC6045881A3898D.quest_desc: [
-		"Wild pig"
-		""
-		""
-		"{image:milf:textures/quest_pic/wild_boar.png width:200 height:200 align:center}"
-	]
+	quest.0EC6045881A3898D.quest_desc: ["Wild pig"]
 	quest.0EC60F3FB9DFB29E.quest_desc: [
 		"Required to craft the <keyword>Transmogrification Table</keyword>. Also allows you to make your items <keyword>invisible</keyword>!"
 		""
@@ -910,7 +904,15 @@
 	quest.1A16CF965AF2EEC5.quest_desc: ["To impose order on the armour's undirected growth, the Vitaemancer wears the Training Bracelet, a focus inscribed in an Alchemy Array. With a copy of the relevant Tome in hand, you can set a level cap for any upgrade; once the armour reaches that limit it ceases training the skill. Only one bracelet is active at a time (priority: off-hand, Curios, main inventory, then add-ons). To allow all upgrades except one, set the bracelet to 'allow others' mode and cap the unwanted skill at level 0."]
 	quest.1A2B3C4D5E6F7003.quest_desc: ["Place the <keyword>Ara Vitae</keyword> - the sacred basin at the heart of vitaemancy. Right-click it to deposit items for altar crafting. EV drains steadily during workings; <warning>crimson motes</warning> rising from the surface confirm it is underway."]
 	quest.1A2B3C4D5E6F7003.title: "Construct the Ara Vitae"
-	quest.1A2B3C4D5E6F7004.quest_desc: ["Forge a <keyword>Diamond</keyword> in the Tier 0 altar for <keyword>2,000 EV</keyword>. Then <positive>right-click</positive> while holding the orb to <property>bind it</property> - it now stores your <property>Anima</property> and passively harvests EV from creature kills (10 EV per max HP point)."]
+	quest.1A2B3C4D5E6F7004.quest_desc: [
+		"Lay a <keyword>diamond</keyword> upon the bare altar. With no <positive>Essentia Vitae</positive> of its own, the altar draws <blood>blood</blood> from any nearby who carry no <keyword>Blood Orb</keyword>, refining it into <positive>Essentia Vitae (EV)</positive> until the working completes. "
+		""
+		"<positive>It never kills, taking only what it needs.</positive>"
+		"{@pagebreak}"
+		"Положите <keyword>алмаз</keyword> на пустой алтарь. Не обладая собственной <positive>Эссенцией жизни</positive>, алтарь извлекает <blood>кровь</blood> из любого находящегося поблизости, у кого нет <keyword>Кровавого шара</keyword>, и преобразует её в <positive>Эссенцию жизни (EV)</positive> до тех пор, пока ритуал не завершится."
+		""
+		"<positive>Он никогда не убивает, беря только то, что ему необходимо.</positive>"
+	]
 	quest.1A2B3C4D5E6F7004.title: "Novicius Orb of Vitae"
 	quest.1A2B3C4D5E6F7005.quest_desc: ["The fundamental crafting substrate for all vitaemantic creations. Costs <keyword>1,000 EV</keyword> at the Tier 0 altar. Nearly every recipe will ask for a Tabula - keep a stack on hand."]
 	quest.1A2B3C4D5E6F7006.quest_desc: ["Mark your prey. Throwing an <keyword>Iron Throwing Dagger</keyword> at a creature marks it - when the marked creature dies, it releases <property>Raw Spiritus</property>. You will need this later."]
@@ -2152,12 +2154,7 @@
 		"Проще говоря данный блок имитирует тот блок с которым его связали."
 	]
 	quest.4287B0D38E0C2A7A.quest_subtitle: "Entangled block"
-	quest.428850B1426EB3D4.quest_desc: [
-		"Wild cow"
-		""
-		""
-		"{image:milf:textures/quest_pic/aurochs.png width:100 height:100 align:center}"
-	]
+	quest.428850B1426EB3D4.quest_desc: ["Wild cow"]
 	quest.42B6798C0C2BD9E5.quest_desc: [
 		"All the bronze machines use steam to operate"
 		"Automatically outputs steam from the top"
@@ -2741,12 +2738,7 @@
 		""
 		"Стоимость: <keyword>2000 МЭ</keyword>"
 	]
-	quest.55B031B4D7E5DEE3.quest_desc: [
-		"Wild chicken"
-		""
-		""
-		"{image:milf:textures/quest_pic/fowl.png width:100 height:100 align:center}"
-	]
+	quest.55B031B4D7E5DEE3.quest_desc: ["Wild chicken"]
 	quest.5613C04E72D2AC99.quest_desc: ["Unlike the <keyword>Timedoor Projector</keyword>, the <keyword>Tempad</keyword> automatically detects all <keyword>Timedoor Markers</keyword> and <keyword>Chronomarks</keyword> owned by the player, making <keyword>Location Cards</keyword> optional for personal travel."]
 	quest.5643AEC296D95BE9.quest_desc: ["<warning>Slowness</warning> and <warning>weakness</warning>."]
 	quest.56890AC89A622C58.quest_desc: ["Coaxes nearby crops and plants to grow faster in a 2-block radius, applying a gentle acceleration each second."]
@@ -2847,6 +2839,11 @@
 		"В <keyword>Planter</keyword> можно выращивать специфические растения, такие как <keyword>Mirecap Mushroom</keyword> / <keyword>Flowering Oanna</keyword> / <keyword>Sildrian Seed</keyword> / <keyword>Sprig Of Avennian</keyword>"
 		""
 		"Для сбора растений используйте <keyword>Athame</keyword>"
+	]
+	quest.5B4F187D926B738F.quest_desc: [
+		"Take a look at the <keyword>dependency</keyword> for this quest; it explains in detail how to obtain the crystals."
+		"{@pagebreak}"
+		"Обратите внимание на <keyword>зависимости</keyword> данного квеста, там подробно рассказывают как получить кристаллы."
 	]
 	quest.5B66EF3877866949.quest_desc: [
 		"This mod adds <keyword>horse improvements</keyword> you haven't thought you needed."
@@ -3789,16 +3786,12 @@
 		""
 		"Deer have been spotted in the vicinity of <positive>taiga</positive>, <positive>savannahs</positive>, <positive>forests</positive>, <positive>plains</positive>, and <positive>badlands</positive>!"
 		""
-		""
-		"{image:milf:textures/quest_pic/deer.png width:100 height:100 align:center}"
 		"{@pagebreak}"
 		"Выпадает из <keyword>оленя</keyword>. Если посмотреть под определенным углом, он немного напоминает <keyword>половину кирки</keyword>..."
 		""
 		"Важно, необходимо чтобы на модели оленя были <keyword>рога</keyword>, бывают <warning>олени без рогов</warning>!"
 		""
 		"Оленей замечали в окрестностях <positive>тайги</positive>, <positive>саванн</positive>, <positive>лесов</positive>, <positive>равнин</positive> и <positive>бесплодных земель</positive>!"
-		""
-		"{image:milf:textures/quest_pic/deer.png width:100 height:100 align:center}"
 	]
 	quest.745BE9DA293006D1.quest_desc: [
 		"Bundle's lil bro, look at it, so cute ❤"

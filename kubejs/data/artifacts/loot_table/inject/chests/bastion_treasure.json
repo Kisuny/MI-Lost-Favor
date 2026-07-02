@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.13
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:artifact",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/golden_hook",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cross_necklace",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/fire_gauntlet",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/steadfast_spikes"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/panic_necklace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/crystal_heart"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/antidote_vessel"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/bastion_treasure"
+}

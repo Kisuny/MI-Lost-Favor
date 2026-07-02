@@ -1,0 +1,140 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "enigmaticlegacyplus:golden_ring",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 4.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:wither_rose",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:ghast_tear",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.25,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:infernal_cinder",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.25,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:ichor_droplet",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 40
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.4,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:ichor_curse_bottle",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.35,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:forbidden_fruit",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.25,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:void_stone",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 125
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "enigmaticlegacyplus:chests/nether_simple_addon"
+}

@@ -28,17 +28,11 @@ ServerEvents.recipes(event => {
         "enigmaticlegacyplus:magnet_ring",
     ]})
 
-    milfShaped(event, {
-        pattern: [
-            " q ",
-            "qwq",
-            " q "
-        ],
-        key: {
-            q: { item: "minecraft:bone" },
-            w: { item: "ytech:leather_strips" }
-        },
-        outputItems: [[{ id: "enigmaticlegacyplus:cursed_ring" }, 1]]
+    ytechBlockHitCraft(event,{
+        inputItems:[[{item:"rocks:cobblestone_splitter"}]],
+        outputItems:[[{id:"enigmaticlegacyplus:cursed_ring"}]],
+        block:{tag : "c:stones"},
+        compatOff:true
     })
 
     customCursedShaped(event, {

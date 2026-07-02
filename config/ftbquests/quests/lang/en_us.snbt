@@ -904,7 +904,15 @@
 	quest.1A16CF965AF2EEC5.quest_desc: ["To impose order on the armour's undirected growth, the Vitaemancer wears the Training Bracelet, a focus inscribed in an Alchemy Array. With a copy of the relevant Tome in hand, you can set a level cap for any upgrade; once the armour reaches that limit it ceases training the skill. Only one bracelet is active at a time (priority: off-hand, Curios, main inventory, then add-ons). To allow all upgrades except one, set the bracelet to 'allow others' mode and cap the unwanted skill at level 0."]
 	quest.1A2B3C4D5E6F7003.quest_desc: ["Place the <keyword>Ara Vitae</keyword> - the sacred basin at the heart of vitaemancy. Right-click it to deposit items for altar crafting. EV drains steadily during workings; <warning>crimson motes</warning> rising from the surface confirm it is underway."]
 	quest.1A2B3C4D5E6F7003.title: "Construct the Ara Vitae"
-	quest.1A2B3C4D5E6F7004.quest_desc: ["Forge a <keyword>Diamond</keyword> in the Tier 0 altar for <keyword>2,000 EV</keyword>. Then <positive>right-click</positive> while holding the orb to <property>bind it</property> - it now stores your <property>Anima</property> and passively harvests EV from creature kills (10 EV per max HP point)."]
+	quest.1A2B3C4D5E6F7004.quest_desc: [
+		"Lay a <keyword>diamond</keyword> upon the bare altar. With no <positive>Essentia Vitae</positive> of its own, the altar draws <blood>blood</blood> from any nearby who carry no <keyword>Blood Orb</keyword>, refining it into <positive>Essentia Vitae (EV)</positive> until the working completes. "
+		""
+		"<positive>It never kills, taking only what it needs.</positive>"
+		"{@pagebreak}"
+		"Положите <keyword>алмаз</keyword> на пустой алтарь. Не обладая собственной <positive>Эссенцией жизни</positive>, алтарь извлекает <blood>кровь</blood> из любого находящегося поблизости, у кого нет <keyword>Кровавого шара</keyword>, и преобразует её в <positive>Эссенцию жизни (EV)</positive> до тех пор, пока ритуал не завершится."
+		""
+		"<positive>Он никогда не убивает, беря только то, что ему необходимо.</positive>"
+	]
 	quest.1A2B3C4D5E6F7004.title: "Novicius Orb of Vitae"
 	quest.1A2B3C4D5E6F7005.quest_desc: ["The fundamental crafting substrate for all vitaemantic creations. Costs <keyword>1,000 EV</keyword> at the Tier 0 altar. Nearly every recipe will ask for a Tabula - keep a stack on hand."]
 	quest.1A2B3C4D5E6F7006.quest_desc: ["Mark your prey. Throwing an <keyword>Iron Throwing Dagger</keyword> at a creature marks it - when the marked creature dies, it releases <property>Raw Spiritus</property>. You will need this later."]

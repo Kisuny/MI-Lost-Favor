@@ -9,7 +9,7 @@ MoreJS.wandererTrades(event => {
     event.addTrade(
         2,
         [
-            TradeItem.of("devices:mithril_coin", 3, 10),
+            TradeItem.of("devices:orichalcum_coin", 2, 50),
             Item.of("minecraft:book", 1)],
         "enigmaticlegacyplus:enchantment_transposer"
     ).transform((offer) => {
@@ -28,7 +28,7 @@ MoreJS.wandererTrades(event => {
         event.addTrade(
             2,
             [
-                TradeItem.of("devices:mithril_coin", 10, 50),
+                TradeItem.of("devices:orichalcum_coin", 10, 50),
                 Item.of("milf:artifact_dust", 1)
             ],
             relicId

@@ -28,7 +28,7 @@ ServerEvents.tags('item', event => {
 
     event.add("more_sounds:equipment", "#milf:knives")
 
-    event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic'])
+    event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic', '#relics:relics'])
     //#region tags for emi++ grouping in EMI
     event.add("milf:multiblock_items", [/^milf:[a-z0-9_]+(placer|empty_box)$/])
 

@@ -92,10 +92,10 @@ createNewItem('grecall_concoction_t1', {
                 return itemstack
             }
 
-            retrieveGrave(grave, player, level)
             player.sendData("milf_grecall_concoction_playsound")
             player.cooldowns.addCooldown(itemstack, 1200)
             itemstack.shrink(1)
+            player.server.scheduleInTicks(5, callback => { retrieveGrave(grave, player, level) }) 
             return itemstack
         
         }
@@ -120,11 +120,11 @@ createNewItem('grecall_concoction_t2', {
                 return itemstack
             }
 
-            retrieveGrave(grave, player, level)
 
             player.sendData("milf_grecall_concoction_playsound")
             player.cooldowns.addCooldown(itemstack, 1200)
             itemstack.shrink(1)
+            player.server.scheduleInTicks(5, callback => { retrieveGrave(grave, player, level) }) 
             return itemstack
 
         }

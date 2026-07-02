@@ -113,6 +113,7 @@
 			dependencies: ["30B7522161DC8B1B"]
 			entity_vis_size: 1.0f
 			id: "3B77EDA3E715F8ED"
+			shape: "rsquare"
 			tasks: [{
 				count: 16L
 				id: "7EECE34CF3EE7B8C"
@@ -1066,69 +1067,72 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["203B742A5DB473FA"]
+			dependencies: ["56956E24B043B41A"]
 			entity_vis_size: 1.0f
 			id: "27F626308F9789EB"
-			shape: "none"
+			shape: "pentagon"
 			tasks: [{
 				id: "268C4EF769167871"
 				item: { count: 1, id: "ytech:chlorite_bracelet" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -5.5d
+			x: 0.5d
+			y: -12.0d
 		}
 		{
-			dependencies: ["203B742A5DB473FA"]
+			dependencies: ["0D520E7E3CF04F36"]
 			entity_vis_size: 1.0f
 			id: "631734759665B011"
-			shape: "none"
+			shape: "pentagon"
 			tasks: [{
 				id: "7960731AC5535857"
 				item: { count: 1, id: "ytech:lion_man" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.5d
+			x: 1.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["203B742A5DB473FA"]
+			dependencies: ["56956E24B043B41A"]
 			entity_vis_size: 1.0f
 			id: "48703AF710DE51F3"
-			shape: "none"
+			shape: "pentagon"
 			tasks: [{
 				id: "456E3F0030BC2437"
 				item: { count: 1, id: "ytech:shell_beads" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.5d
+			x: -1.5d
+			y: -12.0d
 		}
 		{
-			dependencies: ["203B742A5DB473FA"]
+			dependencies: ["48D9FB457EE5966E"]
 			entity_vis_size: 1.0f
 			id: "1B43C41CFF7D5190"
-			shape: "none"
+			shape: "pentagon"
 			tasks: [{
 				id: "2BB31D53729DC83B"
 				item: { count: 1, id: "ytech:venus_of_hohle_fels" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.0d
+			x: -2.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["203B742A5DB473FA"]
+			dependencies: [
+				"48D9FB457EE5966E"
+				"0D520E7E3CF04F36"
+			]
 			entity_vis_size: 1.0f
 			id: "6A56AC616822818E"
-			shape: "none"
+			shape: "pentagon"
 			tasks: [{
 				id: "6F3BDE1F340E46FE"
 				item: { count: 1, id: "ytech:wild_horse" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.0d
+			x: -0.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -1451,7 +1455,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6E680C846961BFE3"]
+			dependencies: ["286CADEC3AB44CCE"]
 			disable_toast: true
 			entity_vis_size: 1.0f
 			id: "3A47A5B107C19092"
@@ -1461,8 +1465,8 @@
 				item: { count: 1, id: "ytech:grass_bed" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: -9.0d
+			x: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -2551,8 +2555,8 @@
 				item: { count: 1, id: "minecraft:wooden_shovel" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -7.0d
+			x: 11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["30B7522161DC8B1B"]
@@ -3888,6 +3892,45 @@
 			}]
 			x: 11.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["6E680C846961BFE3"]
+			entity_vis_size: 1.0f
+			id: "49F26FB69D34C79F"
+			shape: "diamond"
+			tasks: [{
+				id: "2D4A93172940E130"
+				item: { count: 1, id: "milf:flint_pickaxe" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["56956E24B043B41A"]
+			entity_vis_size: 1.0f
+			id: "48D9FB457EE5966E"
+			shape: "rsquare"
+			tasks: [{
+				id: "7D5DF0A66899A2F6"
+				item: { count: 1, id: "ytech:mammoth_tusk" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["56956E24B043B41A"]
+			entity_vis_size: 1.0f
+			id: "0D520E7E3CF04F36"
+			shape: "rsquare"
+			tasks: [{
+				id: "1C93333FDD3227CD"
+				item: { count: 1, id: "ytech:rhino_horn" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
 		}
 	]
 }

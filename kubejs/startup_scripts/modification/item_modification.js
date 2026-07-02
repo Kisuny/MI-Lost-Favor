@@ -65,7 +65,9 @@ ItemEvents.modification(event => {
         })
     });
 
-    event.modify("ytech:bronze_mesh", item => {item.maxDamage = 64})
+    event.modify("ytech:stone_mortar_and_pestle", item => {item.maxDamage = 365})
+
+    event.modify("ytech:bronze_mesh", item => {item.maxDamage = 100})
     event.modify("ars_hex:magebloom_brush", item => {item.maxDamage = 3000})
 
 

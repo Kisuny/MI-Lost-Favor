@@ -1,5 +1,19 @@
 ServerEvents.recipes(event => {
 
+    milfShaped(event, {
+        pattern: [
+            " FT",
+            " SF",
+            "S  ",
+        ],
+        key: {
+            "T": { "item": "ytech:grass_twine" },
+            "S": { "item": "minecraft:stick" },
+            "F": { "item": "ytech:sharp_flint" },
+        },
+        outputItems: [[{ id: "milf:flint_pickaxe" }, 1]]
+    })
+
     yTechShaped(event, {
         pattern: [
             "Q#Q",

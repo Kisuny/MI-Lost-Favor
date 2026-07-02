@@ -1,4 +1,7 @@
 //priority: 1000
+
+//const { $DiggerItemBuilder$Pickaxe } = require("@package/dev/latvian/mods/kubejs/item/custom")
+
 /** @type {typeof import("net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent").$BlockEntityTypeAddBlocksEvent } */
 let $BlockEntityTypeAddBlocksEvent  = Java.loadClass("net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent")
 /** @type {typeof import("net.minecraft.world.level.block.state.properties.EnumProperty").$EnumProperty } */
@@ -25,7 +28,7 @@ function createNewItem(id, args) {
     global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
-function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
+function itemBuilder(/**@type {$DiggerItemBuilder$Pickaxe} */ item, args) {
     args.stackSize && item.maxStackSize(args.stackSize)
     args.rarity && item.rarity(args.rarity)
     args.material && item.material(args.material)
@@ -53,6 +56,15 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
     if(args.dynamicName){
         item.name((itemStack) => args.dynamicName(itemStack))
     }
+    if(args.tool){
+        args.tool.tier && item.tier(args.tool.tier)
+        args.tool.attackDamageBonus && item.attackDamageBonus(args.tool.attackDamageBonus)
+        args.tool.speed && item.speed(args.tool.speed)
+        args.tool.attackDamageBaseline && item.attackDamageBaseline(args.tool.attackDamageBaseline)
+        args.tool.speedBaseline && item.speedBaseline(args.tool.speedBaseline)
+        args.tool.modifyTier && item.modifyTier(args.tool.modifyTier())
+    }
+    
 }
 
 function createNewBlock(id, args) {

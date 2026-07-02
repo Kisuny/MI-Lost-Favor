@@ -1,4 +1,5 @@
 global.disabledItems = [
+    new DisabledItemBuilder("ytech:bronze_mortar_and_pestle").build(),
     new DisabledItemBuilder("refurbished_furniture:knife").build(),
     new DisabledItemBuilder("aquaculture:diamond_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:gold_fillet_knife").build(),

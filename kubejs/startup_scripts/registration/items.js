@@ -86,6 +86,10 @@ createNewItem('mi_replacer', { stackSize: 1, lang: { "en_us": "MI Replacer En Ma
 
 createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:25, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
 createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
+createNewItem('sniffer', { stackSize: 1, lang: { "en_us": "Sniffer" } })
+
+createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: {tier: "flint"} })
+
 createNewItem('stone_nose', {
     stackSize: 1,
     use: {

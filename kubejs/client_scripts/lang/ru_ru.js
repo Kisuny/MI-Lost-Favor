@@ -5,6 +5,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.entity.interact.part2', 'Что-то магическое запрещает вам использовать ')
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
     event.add('milf.text.first_join', `Добро пожаловать в ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
+    event.add('milf.text.curios.already_equipped', 'У вас уже надето: ')
 
     const foodCategoryNamesRu = { fruit: 'фрукты', cooked_meats: 'мясные блюда', bread: 'хлеб' }
     Object.keys(foodCategoryNamesRu).forEach(priority => {

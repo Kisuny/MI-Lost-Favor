@@ -5,6 +5,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.entity.interact.part2', 'Something magical prevents you from using ')
     event.add('milf.text.block.interact.part0', 'Strange magic prevents you from using this block')
     event.add('milf.text.first_join', `Welcome to the ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
+    event.add('milf.text.curios.already_equipped', 'You already have equipped: ')
 
     const foodCategoryNamesEn = { fruit: 'fruit', cooked_meats: 'cooked meats', bread: 'bread' }
     Object.keys(foodCategoryNamesEn).forEach(priority => {

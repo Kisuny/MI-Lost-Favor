@@ -357,6 +357,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'enigmaticlegacyplus:escape_scroll',
         'enigmaticlegacyplus:magnet_ring',
         'reliquified_artifacts:mimi_dust',
+        /smallships:malum_soulwood_.*/, 
+        /smallships:wormwood_.*/, 
         /tide:.*_bait/,
         /smallships:malum_runewood_.*/,
     ]

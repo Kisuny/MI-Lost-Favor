@@ -1,6 +1,4 @@
 LootJS.lootTables(event => {
-    event.getLootTable("starcatcher:waterlogged_satchel/extra_loot").firstPool().addEntry("devices:orichalcum_coin")
-
     event
         .create("milf:gameplay/fishing/treasure")
         .createPool(pool => {
@@ -10,7 +8,6 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("aquaculture:neptunium_ingot").withWeight(20))
             pool.addEntry(LootEntry.of("milf:recall_concoction").withWeight(30))
             pool.addEntry(LootEntry.of("bountiful:bountyboard").withWeight(50))
-            pool.addEntry(LootEntry.of("starcatcher:waterlogged_satchel").withWeight(50))
             pool.addEntry(LootEntry.of("bountiful:decree").withWeight(30))
             pool.addEntry(LootEntry.of("milf:transmutation_orb", [1, 6]).withWeight(50))
             pool.addEntry(LootEntry.of("milf:regal_orb", [1, 6]).withWeight(50))

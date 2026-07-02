@@ -1,43 +1,46 @@
 {
   "base_chance": 5,
   "catch_info": {
-    "item": "spectrum:koi"
+    "fish_bucket": {
+      "count": 1,
+      "id": "starcatcher:starcaught_bucket"
+    },
+    "item": {
+      "count": 1,
+      "id": "spectrum:koi"
+    }
   },
   "difficulty": {
-    "decay": 1.5,
-    "hp": 100,
-    "missPenalty": 10,
-    "modifiers": [],
-    "speed": 16,
+    "decay": 1.0,
+    "hp": 200,
+    "missPenalty": 20,
+    "modifiers": [
+      {
+        "type": "starcatcher:freeze_on_miss",
+        "length": 40,
+        "rampTime": 10
+      }
+    ],
+    "speed": 10,
     "sweetspots": [
       {
-        "color_as_int": 65280,
+        "color_as_int": -16711936,
         "hitbox_size_in_pixels": 22,
         "is_flip": false,
         "moving_rate": 0.0,
         "reward": 15,
-        "sweet_spot_type": "starcatcher:normal",
+        "sweetspot_type": "starcatcher:normal",
         "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
         "vanishing_rate": 0.1
       },
       {
-        "color_as_int": 65280,
-        "hitbox_size_in_pixels": 22,
+        "color_as_int": -5383962,
+        "hitbox_size_in_pixels": 33,
         "is_flip": false,
         "moving_rate": 0.0,
         "reward": 15,
-        "sweet_spot_type": "starcatcher:normal",
-        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
-        "vanishing_rate": 0.1
-      },
-      {
-        "color_as_int": 65280,
-        "hitbox_size_in_pixels": 22,
-        "is_flip": false,
-        "moving_rate": 0.0,
-        "reward": 15,
-        "sweet_spot_type": "starcatcher:normal",
-        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "sweetspot_type": "starcatcher:freeze",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/frozen.png",
         "vanishing_rate": 0.1
       }
     ]
@@ -47,10 +50,7 @@
   "restrictions": [
     {
       "type": "starcatcher:dimension",
-      "dimensions": [
-        "spectrum:deeper_down"
-      ],
-      "dimensions_blacklist": []
+      "dimension_entry": "deeper_down"
     },
     {
       "type": "starcatcher:fluid",
@@ -66,5 +66,6 @@
     "deviation_weight_grams": 700.0,
     "golden_chance": 0.02
   },
-  "skips_minigame": false
+  "skips_minigame": false,
+  "textures": "starcatcher:textures/gui/minigame/surface.png"
 }

@@ -329,4 +329,77 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "FF",
+            "SS"
+        ],
+        key: {
+            F: { item: "ytech:grass_fibers" },
+            S: { item: "ytech:thatch_slab" }
+        },
+        outputItems: [[{ id: "ytech:grass_bed" }, 1]],
+        removeRecipe:true
+    })
+
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:thatch_slab" }, 2]],
+        inputItems: [
+            [{ "item": "ytech:thatch" }, 1],
+            [{ "tag": "ytech:sharp_flints" }, 1],
+        ],
+        compatOff:true
+    })
+
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:shell_beads" }, 1]],
+        inputItems: [
+            [{ "item": "minecraft:nautilus_shell" }],
+            [{ "item": "minecraft:nautilus_shell" }],
+            [{ "item": "minecraft:string" }],
+            [{ tag: "milf:knives" }],
+        ],
+        compatOff:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "F ",
+            "S "
+        ],
+        key: {
+            F: { item: "ytech:mammoth_tusk" },
+            S: { tag: "milf:knives" }
+        },
+        outputItems: [[{ id: "ytech:venus_of_hohle_fels" }, 1]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "F ",
+            "S "
+        ],
+        key: {
+            F: { item: "ytech:rhino_horn" },
+            S: { tag: "milf:knives" }
+        },
+        outputItems: [[{ id: "ytech:lion_man" }, 1]],
+        removeRecipe:true
+    })
+
+        milfShaped(event, {
+        pattern: [
+            "F ",
+            "SR"
+        ],
+        key: {
+            F: { item: "ytech:mammoth_tusk" },
+            S: { tag: "milf:knives" },
+            R: { item: "ytech:rhino_horn" },
+        },
+        outputItems: [[{ id: "ytech:wild_horse" }, 1]],
+        removeRecipe:true
+    })
+
 })

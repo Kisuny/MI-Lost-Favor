@@ -29,7 +29,7 @@ MoreJS.wandererTrades(event => {
             2,
             [
                 TradeItem.of("devices:orichalcum_coin", 10, 50),
-                Item.of("milf:artifact_dust", 1)
+                TradeItem.of("milf:artifact_dust", 1, 8),
             ],
             relicId
         ).transform((offer) => {

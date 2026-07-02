@@ -38,7 +38,7 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("aquaculture:neptunium_bow").withWeight(1))
             pool.addEntry(LootEntry.of("enigmaticlegacyplus:mending_mixture").withWeight(5))
             pool.addEntry(LootEntry.of("enigmaticlegacyplus:earth_heart").withWeight(1))
-            pool.addEntry(LootEntry.tag("simplyswords:lootable_uniques", true).withWeight(1))
+            pool.addEntry(LootEntry.tag("simplybows:uniques", true).withWeight(1))
             pool.addEntry(LootEntry.tag("simplyswords:swords", true).withWeight(1))
         })
 

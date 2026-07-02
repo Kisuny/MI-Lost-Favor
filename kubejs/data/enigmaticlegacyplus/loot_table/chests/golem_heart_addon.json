@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "baseChance": 0.0335,
+                            "bonusChance": 0.014,
+                            "condition": "enigmaticlegacyplus:spellstone"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:golem_heart",
+                    "weight": 90
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "baseChance": 0.008375,
+                            "bonusChance": 0.007,
+                            "condition": "enigmaticlegacyplus:spellstone"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:spellcore",
+                    "weight": 10
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.02375,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:spellstone_debris"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "enigmaticlegacyplus:chests/golem_heart_addon"
+}

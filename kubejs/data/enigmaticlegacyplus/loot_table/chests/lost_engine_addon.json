@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "baseChance": 0.0285,
+                            "bonusChance": 0.0105,
+                            "condition": "enigmaticlegacyplus:spellstone"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:lost_engine",
+                    "weight": 90
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "baseChance": 0.007125,
+                            "bonusChance": 0.00525,
+                            "condition": "enigmaticlegacyplus:spellstone"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:spellcore",
+                    "weight": 10
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "chance": 0.0195,
+                            "condition": "minecraft:random_chance"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "enigmaticlegacyplus:spellstone_debris"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "enigmaticlegacyplus:chests/lost_engine_addon"
+}

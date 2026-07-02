@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.05
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/panic_necklace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/pocket_piston"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/steadfast_spikes"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/power_glove"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cross_necklace"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/scarf_of_invisibility"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/crystal_heart"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cloud_in_a_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/superstitious_hat"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/rooted_boots"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/pillager_outpost"
+}

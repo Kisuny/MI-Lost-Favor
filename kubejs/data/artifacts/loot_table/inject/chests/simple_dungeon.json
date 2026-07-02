@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.03
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/charm_of_shrinking"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/warp_drive"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/withered_bracelet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/strider_shoes"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/simple_dungeon"
+}

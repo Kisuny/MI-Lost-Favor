@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.06
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/chorus_totem",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/helium_flamingo",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/warp_drive",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/crystal_heart"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cloud_in_a_bottle"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/end_city_treasure"
+}

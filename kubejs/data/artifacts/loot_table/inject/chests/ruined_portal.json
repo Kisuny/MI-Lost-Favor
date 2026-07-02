@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "artifacts:artifact_rarity_adjusted_chance",
+          "default_probability": 0.03
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/night_vision_goggles"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/thorn_pendant"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/fire_gauntlet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/power_glove"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/universal_attractor"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/obsidian_skull"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/lucky_scarf"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/cowboy_hat"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/charm_of_shrinking"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "artifacts:items/strider_shoes"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "artifacts:inject/chests/ruined_portal"
+}

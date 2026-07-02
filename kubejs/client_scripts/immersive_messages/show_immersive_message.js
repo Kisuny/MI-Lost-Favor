@@ -64,7 +64,11 @@ function COMPOUND_TAGS_ME_ARSE(tagLikeText){
     }
     if (tagLikeText.extra){
         let extraArray = Array.isArray(tagLikeText.extra) ? tagLikeText.extra : [tagLikeText.extra]
-        tagLikeText.extra.forEach(compoundTag => {
+        extraArray.forEach(compoundTag => {
+            if (compoundTag.getAsString !== undefined && compoundTag.getType && compoundTag.getType().getName() === "STRING"){
+                text.append(Text.of(compoundTag.getAsString()))
+                return
+            }
             for(let [key,  value] of Object.entries(compoundTag)){
                 switch (key) {
                     case "translate":

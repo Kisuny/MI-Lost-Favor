@@ -480,5 +480,23 @@
 			x: 0.0d
 			y: 5.5d
 		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "relics:textures/gui/description/general/discord.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1AD6EA8FC5E52268"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "76C88F3B61F626A4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
 	]
 }

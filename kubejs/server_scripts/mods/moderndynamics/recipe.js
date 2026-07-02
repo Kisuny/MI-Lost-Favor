@@ -14,12 +14,12 @@ ServerEvents.recipes(event => {
 
 KubeJSTweaks.beforeRecipes(event => {    
 
-    const disableByRecipeID = [
-        /moderndynamics:cable.*/
-    ]
+    // const disableByRecipeID = [
+    //     /moderndynamics:cable.*/
+    // ]
 
-    disableByRecipeID.forEach(id => {
-        event.disable(id)
-    })
+    // disableByRecipeID.forEach(id => {
+    //     event.disable(id)
+    // })
 
 })

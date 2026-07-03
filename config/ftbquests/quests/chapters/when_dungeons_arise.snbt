@@ -738,13 +738,24 @@
 		{
 			dependencies: ["0CC9329A82A7454A"]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "mowziesmobs:earthrend_gauntlet"
+			}
 			id: "3F90529CDCC8957B"
-			tasks: [{
-				advancement: "mowziesmobs:sculptor_challenge"
-				criterion: ""
-				id: "2FC2F507A4D86037"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					advancement: "mowziesmobs:sculptor_challenge"
+					criterion: ""
+					id: "2FC2F507A4D86037"
+					type: "advancement"
+				}
+				{
+					id: "1A42B8D0A4C10ACA"
+					item: { count: 1, id: "mowzies_cataclysm:tongbi_eye" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -11.0d
 			y: 3.0d
 		}
@@ -753,21 +764,29 @@
 			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "78B154D7DC8F7464"
-			tasks: [{
-				entity: "mowziesmobs:umvuthi"
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "6B086A9EC79AC60B"
-				type: "kill"
-				value: 1L
-			}]
+			tasks: [
+				{
+					entity: "mowziesmobs:umvuthi"
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: true
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "6B086A9EC79AC60B"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "2A93C9A9158D04EE"
+					item: { count: 1, id: "mowzies_cataclysm:sun_eye" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -9.0d
 			y: 5.5d
 		}

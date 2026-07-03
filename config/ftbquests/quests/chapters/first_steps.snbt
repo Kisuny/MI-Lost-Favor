@@ -3738,9 +3738,9 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["173695E379285022"]
+			dependencies: ["32A68ACEFBF8D876"]
 			entity_vis_size: 1.0f
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			icon: {
 				id: "milf:stone_nose"
 			}
@@ -3750,8 +3750,8 @@
 				id: "7001AAAE3F1E4149"
 				type: "checkmark"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 2.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["0BF7B4B3DAAE234C"]
@@ -3766,7 +3766,7 @@
 			}
 			id: "00F875A3E242FB34"
 			rewards: [{
-				count: 2
+				count: 3
 				id: "1E5B1858D13453C8"
 				item: {
 					components: {
@@ -3785,8 +3785,8 @@
 				id: "36DD5A8EF1AAC639"
 				type: "checkmark"
 			}]
-			x: 9.0d
-			y: 2.0d
+			x: 1.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["0BF7B4B3DAAE234C"]
@@ -3801,7 +3801,7 @@
 			}
 			id: "6C59597B8D81F454"
 			rewards: [{
-				count: 2
+				count: 3
 				id: "21BBF54E55505811"
 				item: {
 					components: {
@@ -3820,8 +3820,8 @@
 				id: "7A9734ED78BCABE8"
 				type: "checkmark"
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 1.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["0BF7B4B3DAAE234C"]
@@ -3836,7 +3836,7 @@
 			}
 			id: "37160E9A836B7361"
 			rewards: [{
-				count: 2
+				count: 3
 				id: "28E909B05DA20875"
 				item: {
 					components: {
@@ -3855,8 +3855,8 @@
 				id: "46D78E9ACA8F897F"
 				type: "checkmark"
 			}]
-			x: 11.0d
-			y: 4.0d
+			x: 3.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["0BF7B4B3DAAE234C"]
@@ -3871,7 +3871,7 @@
 			}
 			id: "57671811B0F76299"
 			rewards: [{
-				count: 2
+				count: 3
 				id: "0C61949FA094B130"
 				item: {
 					components: {
@@ -3890,8 +3890,8 @@
 				id: "1063BA27980C2670"
 				type: "checkmark"
 			}]
-			x: 11.0d
-			y: 2.0d
+			x: 3.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -3931,6 +3931,18 @@
 			}]
 			x: 0.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["1F7DF0379C917C3B"]
+			entity_vis_size: 1.0f
+			id: "32A68ACEFBF8D876"
+			shape: "heart"
+			tasks: [{
+				id: "5AD635A29E44CC90"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -12.0d
 		}
 	]
 }

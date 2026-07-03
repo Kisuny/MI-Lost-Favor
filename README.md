@@ -28,7 +28,13 @@ Our main goal was to make the transition between different mods as imperceptible
 
 We added a bunch of content exclusive to this modpack: new progression-related items, QoL stuff, unofficial lore, placers, and much more for you to explore.
 
-![alt text](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/custom_chapter_1.png?raw=true) ![alt text](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/custom_chapter_2.png?raw=true) ![alt text](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/custom_chapter_3.png?raw=true)
+![](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/sniffer.webp?raw=true)
+
+![](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/custom_chapter_1.png?raw=true)
+
+![](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/custom_chapter_2.png?raw=true)
+
+![](https://github.com/Kisuny/MI-Lost-Favor/blob/main/assets/mi_upgrader.webp?raw=true)
 
 ***
 
@@ -76,6 +82,8 @@ We made this modpack the way we would want a perfect modpack to be: not random k
 
 *   [Unused textures](https://github.com/malcolmriley/unused-textures) repo - <span style="color: #ba372a;">big ty &lt;3</span>
 
-Used or modified data packs:
+Used or modified Data Packs / Resource Packs: 
 
 *   [Hostile Neural Networks: Extra Data Models](https://www.curseforge.com/minecraft/data-packs/extra-data-models)
+*   [Atrophy: Balancing Act](https://www.curseforge.com/minecraft/data-packs/atrophy-balancing-act)
+*   [A Better GUI Addon 2](https://www.curseforge.com/minecraft/texture-packs/a-better-gui-addon-2-ftb) (only ftb quests shapes)

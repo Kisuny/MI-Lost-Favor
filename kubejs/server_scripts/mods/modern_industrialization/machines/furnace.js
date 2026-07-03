@@ -14,7 +14,13 @@ ServerEvents.recipes(event => {
     ]})
 
     event.forEachRecipe({ type: 'minecraft:smelting' }, kubeRecipe => {
-        let { originalRecipeResult: result, originalRecipeIngredients: ingredients } = kubeRecipe; 
+        let { originalRecipeResult: result, originalRecipeIngredients: ingredients } = kubeRecipe;
+        const hasIngredients = Array.isArray(ingredients) ? ingredients.length > 0 : !!ingredients;
+        const hasResult = result && result.item && result.item !== 'minecraft:air' && (result.count === undefined || result.count > 0);
+        if (!hasIngredients || !hasResult) {
+            console.error(`[furnace.js] Skipping ${kubeRecipe.id} (original: ${kubeRecipe.originalId}): ingredients ${JSON.stringify(ingredients)}, result: ${JSON.stringify(result)}`);
+            return;
+        }
         event.recipes.modern_industrialization.mi_furnace(2, 200).itemIn(ingredients).itemOut(result);
 /*         const rjson = JSON.parse(kubeRecipe.json)
         if (Array.isArray(rjson.ingredient)) {

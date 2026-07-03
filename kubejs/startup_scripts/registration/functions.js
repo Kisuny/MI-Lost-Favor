@@ -28,14 +28,20 @@ function createNewItem(id, args) {
     global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
-function itemBuilder(/**@type {$DiggerItemBuilder$Pickaxe} */ item, args) {
-    args.stackSize && item.maxStackSize(args.stackSize)
-    args.rarity && item.rarity(args.rarity)
-    args.material && item.material(args.material)
-    args.tag && (!Array.isArray(args.tag) ? item.tag(args.tag) : args.tag.forEach(tag => { item.tag(tag) }))
-    args.maxDamage && item.maxDamage(args.maxDamage)
-    args.useAnimation && item.useAnimation(args.useAnimation)
-    args.food && item.food(food => {
+function addLang(builder, id, args){
+    args = args || {}
+    global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+}
+
+function itemBuilder(/**@type {$DiggerItemBuilder$Pickaxe} */ builder, args) {
+    args.modelGenerator && builder.modelGenerator(args.modelGenerator)
+    args.stackSize && builder.maxStackSize(args.stackSize)
+    args.rarity && builder.rarity(args.rarity)
+    args.material && builder.material(args.material)
+    args.tag && (!Array.isArray(args.tag) ? builder.tag(args.tag) : args.tag.forEach(tag => { builder.tag(tag) }))
+    args.maxDamage && builder.maxDamage(args.maxDamage)
+    args.useAnimation && builder.useAnimation(args.useAnimation)
+    args.food && builder.food(food => {
         args.food.nutrition && food.nutrition(args.food.nutrition)
         args.food.saturation && food.saturation(args.food.saturation)
         args.food.effects && args.food.effects.forEach(effect => food.effect.apply(food, effect))
@@ -43,26 +49,26 @@ function itemBuilder(/**@type {$DiggerItemBuilder$Pickaxe} */ item, args) {
         args.food.eaten && food.eaten(ctx => global.get(args.food.eaten).call(global.get(args.food.eaten), ctx))
     })
     if (args.use){
-        item.use((level, player, hand) => args.use.conditions ? args.use.conditions(level, player, hand)  : true)
-        item.useDuration(itemStack => args.use.duration || 64)
-        item.useAnimation(args.use.animation || "bow")
-        item.finishUsing((itemstack, level, entity) => args.use.finishUsing ? args.use.finishUsing(itemstack, level, entity) : itemstack)
-        args.use.releaseUsing && item.releaseUsing((itemstack, level, entity, tick) =>args.use.releaseUsing(itemstack, level, entity, tick))
+        builder.use((level, player, hand) => args.use.conditions ? args.use.conditions(level, player, hand)  : true)
+        builder.useDuration(itemStack => args.use.duration || 64)
+        builder.useAnimation(args.use.animation || "bow")
+        builder.finishUsing((itemstack, level, entity) => args.use.finishUsing ? args.use.finishUsing(itemstack, level, entity) : itemstack)
+        args.use.releaseUsing && builder.releaseUsing((itemstack, level, entity, tick) =>args.use.releaseUsing(itemstack, level, entity, tick))
     }
     if(args.itemProperties){
-        let properties = item.createItemProperties()
+        let properties = builder.createItemProperties()
         args.itemProperties.craftRemainder && properties.craftRemainder(args.itemProperties.craftRemainder)
     }
     if(args.dynamicName){
-        item.name((itemStack) => args.dynamicName(itemStack))
+        builder.name((itemStack) => args.dynamicName(itemStack))
     }
     if(args.tool){
-        args.tool.tier && item.tier(args.tool.tier)
-        args.tool.attackDamageBonus && item.attackDamageBonus(args.tool.attackDamageBonus)
-        args.tool.speed && item.speed(args.tool.speed)
-        args.tool.attackDamageBaseline && item.attackDamageBaseline(args.tool.attackDamageBaseline)
-        args.tool.speedBaseline && item.speedBaseline(args.tool.speedBaseline)
-        args.tool.modifyTier && item.modifyTier(args.tool.modifyTier())
+        args.tool.tier && builder.tier(args.tool.tier)
+        args.tool.attackDamageBonus && builder.attackDamageBonus(args.tool.attackDamageBonus)
+        args.tool.speed && builder.speed(args.tool.speed)
+        args.tool.attackDamageBaseline && builder.attackDamageBaseline(args.tool.attackDamageBaseline)
+        args.tool.speedBaseline && builder.speedBaseline(args.tool.speedBaseline)
+        args.tool.modifyTier && builder.modifyTier(args.tool.modifyTier())
     }
     
 }

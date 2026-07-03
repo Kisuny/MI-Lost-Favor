@@ -2,6 +2,23 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "RPH",
+            "LFP",
+            "PLR",
+        ],
+        key: {
+            "H": { "item": "modern_industrialization:bronze_drill_head" },
+            "F": { "item": "modern_industrialization:bronze_tank" },
+            "R": { "item": "modern_industrialization:invar_curved_plate" },
+            "L": { "item": "modern_industrialization:invar_large_plate" },
+            "P": { "item": "modern_industrialization:bronze_gear" },
+            
+        },
+        outputItems: [[{ id: "milf:clunky_drill" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
             " FT",
             " SF",
             "S  ",

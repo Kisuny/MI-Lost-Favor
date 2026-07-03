@@ -1,3 +1,5 @@
+//const { $BlockHitResult } = require("@package/net/minecraft/world/phys")
+
 let $Matrix4f = Java.loadClass("org.joml.Matrix4f")
 let $Vector3f = Java.loadClass("org.joml.Vector3f")
 let $Vector4f = Java.loadClass("org.joml.Vector4f")
@@ -130,7 +132,7 @@ const MI_UPGRADES = global.MI_UPGRADES
 global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
     if (!Client || Client.hitResult.type != $HitResult$Type.BLOCK) return
     if (Client.player.mainHandItem.id != "milf:mi_upgrader") return
-    if (!Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:upgradable")) return
+    if (!Client.level.getBlock(/**@type {$BlockHitResult} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:upgradable")) return
 
     let blockPos = (/** @type {$BlockHitResult_} */(Client.hitResult)).blockPos
     let level = Client.level

@@ -138,6 +138,9 @@ Receive reward far greater still.`)
     event.add('milf.divine_coin.error.structure_exclusive', `This boss can only be resurrected within the corresponding structure`)
     event.add('milf.divine_coin.error.spawn_conditions', `This boss can only be resurrected within the corresponding structure or in the Abstraction dimension`)
 
+    event.add('milf.clunky_drill.horizontal', `(horizontal)`)
+    event.add('milf.clunky_drill.vertical', `(vertical)`)
+    event.add('milf.clunky_drill.mode', `Drill mode changed!`)
 
     event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${MilfEffects.GRAD.UPGRADE("upgrade")} it. Preserves ${MilfEffects.WAVE_C("all")} the content. Not consumed on use, even when used as a crafting ingredient.`)
 

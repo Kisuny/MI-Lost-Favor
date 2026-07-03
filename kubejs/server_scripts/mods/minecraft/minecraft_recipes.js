@@ -23,6 +23,25 @@ ServerEvents.recipes(event => {
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
+    yTechShaped(event, {
+        pattern: [
+            "sRs",
+            "STS",
+            "@P#"
+        ],
+        key: {
+            "#": { "tag": "c:hammers" },
+            "@": { "tag": "milf:knives" },
+            "T": { "item": "minecraft:tripwire_hook" },
+            "S": { "tag": "ytech:leather_strips" },
+            "R": { "item": "modern_industrialization:iron_ring" },
+            "s": { "item": "minecraft:stick" },
+            "P": { "item": "ytech:wooden_plate" }
+        },
+        outputItems: [[{ id: "minecraft:crossbow" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
     event.shapeless(Item.of("minecraft:flint"), ["minecraft:gravel", "minecraft:gravel", "minecraft:gravel"]);
     event.shapeless("9x minecraft:redstone", ["minecraft:redstone_block"]);
 

@@ -209,21 +209,6 @@ ServerEvents.recipes(event => {
 
     }
 
-    milfShaped(event, {
-        pattern: [
-            "R  ",
-            "Rrr",
-            "CRR"
-        ],
-        key: {
-            R: { item: "modern_industrialization:steel_rod" },
-            r: { item: "modern_industrialization:steel_ring" },
-            C: { item: "immersiveengineering:component_iron" }
-        },
-        outputItems: [[{ id: "milf:mi_upgrader" }, 1]],
-    })
-
-
 })
 
 ServerEvents.modifyRecipeResult("milf:mi_upgrader_recipe", event =>{

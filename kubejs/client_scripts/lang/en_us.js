@@ -142,6 +142,8 @@ Receive reward far greater still.`)
     event.add('milf.clunky_drill.vertical', `(vertical)`)
     event.add('milf.clunky_drill.mode', `Drill mode changed!`)
 
+    event.add('milf.big_bulky_drill.tooltip', `Works similarly to the normal drill, but ${MilfEffects.GRAD.NEGATIVE("doesn't") } count as a shovel. The mining area is only increased if ALL of the blocks in said area are stone-like.`)
+
     event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${MilfEffects.GRAD.UPGRADE("upgrade")} it. Preserves ${MilfEffects.WAVE_C("all")} the content. Not consumed on use, even when used as a crafting ingredient.`)
 
     event.add('milf.recall_concoction.new_pos', `New recall position saved!`)

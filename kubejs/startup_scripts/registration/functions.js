@@ -28,7 +28,18 @@ function createNewItem(id, args) {
     global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
-function addLang(builder, id, args){
+function createNewJavaItem(id, args, javaAdapterFactory) {
+    args = args || {}
+    StartupEvents.registry('item', event => {
+        let builder = event.createCustom(`milf:${id}`, () => {
+            return javaAdapterFactory()
+        })
+        itemBuilder(builder, args)
+    })
+    addLang(`milf:${id}`, args)
+}
+
+function addLang( id, args){
     args = args || {}
     global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }

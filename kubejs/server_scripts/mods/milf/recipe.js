@@ -7,6 +7,23 @@ ServerEvents.recipes(event => {
             "PLR",
         ],
         key: {
+            "H": { "item": "modern_industrialization:steel_drill_head" },
+            "F": { "item": "modern_industrialization:steel_tank" },
+            "R": { "item": "immersiveengineering:component_iron" },
+            "L": { "item": "modern_industrialization:iron_large_plate" },
+            "P": { "item": "modern_industrialization:steel_gear" },
+
+        },
+        outputItems: [[{ id: "milf:big_bulky_drill" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RPH",
+            "LFP",
+            "PLR",
+        ],
+        key: {
             "H": { "item": "modern_industrialization:bronze_drill_head" },
             "F": { "item": "modern_industrialization:bronze_tank" },
             "R": { "item": "modern_industrialization:invar_curved_plate" },
@@ -15,6 +32,20 @@ ServerEvents.recipes(event => {
             
         },
         outputItems: [[{ id: "milf:clunky_drill" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "R  ",
+            "Rrr",
+            "CRR"
+        ],
+        key: {
+            R: { item: "modern_industrialization:steel_rod" },
+            r: { item: "modern_industrialization:steel_ring" },
+            C: { item: "immersiveengineering:component_iron" }
+        },
+        outputItems: [[{ id: "milf:mi_upgrader" }, 1]],
     })
 
     milfShaped(event, {

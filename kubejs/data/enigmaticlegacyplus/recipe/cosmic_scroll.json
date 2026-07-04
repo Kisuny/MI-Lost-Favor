@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "A": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "C": {
+            "item": "enigmaticlegacyplus:cosmic_heart"
+        },
+        "D": {
+            "item": "enigmaticlegacyplus:astral_dust"
+        },
+        "I": {
+            "item": "enigmaticlegacyplus:etherium_ingot"
+        },
+        "X": {
+            "item": "enigmaticlegacyplus:darkest_scroll"
+        }
+    },
+    "pattern": [
+        "DAD",
+        "IXI",
+        "DCD"
+    ],
+    "result": {
+        "count": 1,
+        "id": "enigmaticlegacyplus:cosmic_scroll",
+        "components": {
+            "minecraft:custom_name": "{\"text\":\"\\u00a76The Architect's Favor\\u00a7r\"}"
+        }
+    }
+}

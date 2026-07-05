@@ -10,3 +10,11 @@ MoreJS.villagerTrades(event => {
     )
 
 })
+
+MoreJS.updateOffer(event => {
+    
+    if (event.offer.result.id === "tide:village_fishing_rod") {
+        event.cancel()
+    }
+
+})

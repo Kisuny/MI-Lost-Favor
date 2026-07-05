@@ -201,6 +201,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('desc.immersiveengineering.info.mineral.stannite', "Станнит")
     event.add('desc.immersiveengineering.info.mineral.brindleyite', "Бриндлейит")
     event.add('desc.immersiveengineering.info.mineral.hematite', "Гематит")
+    event.add('milf.emi_info.concrete', "Дождитесь, пока <keyword>Жидкий цемент</keyword> застынет - со временем он сам затвердеет в этот блок.")
 
     event.add("curios.identifier.tool_belt", "Пояс")
     event.add("curios.identifier.pocket_lamp", "Карманный фонарь")

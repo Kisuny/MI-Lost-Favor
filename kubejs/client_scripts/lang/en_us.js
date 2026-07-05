@@ -15,6 +15,7 @@ ClientEvents.lang('en_us', event => {
         })
     })
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
+    event.add('block.paganbless.chalice', 'Chalice')
 
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)
@@ -198,6 +199,7 @@ Receive reward far greater still.`)
     event.add('desc.immersiveengineering.info.mineral.stannite', "Stannite")
     event.add('desc.immersiveengineering.info.mineral.brindleyite', "Brindleyite")
     event.add('desc.immersiveengineering.info.mineral.hematite', "Hematite")
+    event.add('milf.emi_info.concrete', "Wait for the <keyword>Liquid Concrete</keyword> to set - it will harden into this block on its own over time.")
 
 
     event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Some kind of magic is stopping you")}`)

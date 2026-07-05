@@ -8,6 +8,7 @@ const item_interact_block = [
     { id: "augmenting_table", item: "apotheosis:augmenting_table", stage: "apotheosis_augmenting_table" },
     { id: "reforging_table", item: "apotheosis:reforging_table", stage: "apotheosis_reforging_table" },
     { id: "simple_reforging_table", item: "apotheosis:simple_reforging_table", stage: "apotheosis_simple_reforging_table" },
+    { id: "trading_post", item: "tradingpost:trading_post", stage: "early_items" },
 ]
 
 const entity_interact_block = [

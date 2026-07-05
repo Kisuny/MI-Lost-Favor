@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     addResidueType("iesnium", { result: "occultism:iesnium_block" })
     // Custom alloy exmaple
     addClibanoCombustion(event, "obsidiansteel_ingot_from_clibano_combustion", {
-        first: { tag: "c:ingots/stainless_steel" },
+        first: { tag: "c:ingots/aluminum" },
         second: "occultism:obsidian_dust",
         result: "forbidden_arcanus:obsidiansteel_ingot",
         enhancer: "forbidden_arcanus:artisan_relic",

@@ -15,7 +15,6 @@
 	chapter.4058552B01F39ED4.chapter_subtitle: ["A chapter that helps you understand how to automate processes, complete with examples"]
 	chapter.4058552B01F39ED4.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><b>How to automate?"
 	chapter.432989F8344DA732.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Endgame Magic I"
-	chapter.490376B5036BB339.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Endgame Magic II"
 	chapter.4D6A3C5941C9908A.chapter_subtitle: ["[WIP Chapter]"]
 	chapter.4D6A3C5941C9908A.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>endgame"
 	chapter.4E4F6FF3EEEB1E51.chapter_subtitle: ["Essential information that describes and explains the mechanics of the modpack"]
@@ -24,7 +23,7 @@
 	chapter.561B8642F13079C1.chapter_subtitle: ["The Bronze Age: Dive into the world of technology!"]
 	chapter.561B8642F13079C1.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Bronze Age"
 	chapter.65C3129D0852EC26.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic I"
-	chapter.6A330F872573CB26.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Endgame Magic III"
+	chapter.6A330F872573CB26.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Endgame Magic II"
 	chapter.7A58E54E4B6B5025.chapter_subtitle: ["This chapter covers all possible ways to store items and fluid"]
 	chapter.7A58E54E4B6B5025.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Storage"
 	chapter.7CCFB657E26B4699.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic II"
@@ -1342,6 +1341,11 @@
 		"Всех &#FEECD6заинтересовавшихся&r приглашаем в книжку &#9BB8EDSpectrum&r'a, расписывать тут такую механику не видим смысла!"
 	]
 	quest.29F05931D0564717.quest_desc: [""]
+	quest.2A45037810AC863C.quest_desc: [
+		"Most crops need water to grow, as water is <warning>consumed and disappears</warning>, you'll need an <property>aqueduct</property> and <property>hydration system</property> to prevent the crops from using up the water."
+		"{@pagebreak}"
+		"Для роста большинства культур необходима вода, вода будет <warning>потребляться и исчезать</warning>, вам понадобится <property>система акведуков</property> и <property>гидрации</property>, чтобы культуры не потребляли воду."
+	]
 	quest.2A604659C308A486.quest_desc: [
 		"<keyword>Trading Post</keyword> allows you to <positive>trade with all villagers in a area at once</positive> in a single interface"
 		"{@pagebreak}"
@@ -2329,6 +2333,11 @@
 		""
 		"Функция: позволяет создавать \"ложную\" темноту в области. Эта искусственная тьма не даёт мобам спавниться в зоне действия."
 	]
+	quest.474FF9F4C24B4AE3.quest_desc: [
+		"A very <positive>effective</positive> hook for <named>treasure fishing</named>!"
+		"{@pagebreak}"
+		"Очень <positive>эффективный</positive> крючок для <named>ловли сокровищ</named>!"
+	]
 	quest.476DA0252473C6EE.quest_desc: [
 		"Currently, there are seven different Enhancers implemented that can be found by exploring the world. Each one has one or multiple effects that will help you advance quicker or improve your setup. "
 		""
@@ -3249,9 +3258,9 @@
 		"Угадайте, для чего нужен фильтр! ;)"
 	]
 	quest.65ACC9954B888913.quest_desc: [
-		"We recommend that you learn about each type of hook!"
+		"We recommend that you learn about each <wiggly>type of hook</wiggly>!"
 		"{@pagebreak}"
-		"Рекомендуем ознакомиться с каждым типом крючков!"
+		"Рекомендуем ознакомиться с каждым <wiggly>типом крючков</wiggly>!"
 	]
 	quest.6621095DCFF9AE0F.quest_desc: ["<positive>Crush ore</positive> and other things into <keyword>powder</keyword>, with <keyword>increased yield</keyword>!"]
 	quest.662C013A5E66F0B9.quest_desc: [
@@ -3293,6 +3302,7 @@
 		""
 		"To unlock new crafts, a player must spend <magic>99.5%</magic> of their <warning>TOTAL</warning> time in the world under a <blood>curse</blood>. Keep in mind that the longer you go without wearing the ring, the longer you’ll have to spend in the world with it."
 		""
+		"You'll find a way to deal with most of the <curse>curses</curse> in the future!"
 		"{@pagebreak}"
 		"<warning><b>Если вы наденете это кольцо то вы не сможете снять его в будущем!</warning></b>"
 		""
@@ -3301,6 +3311,8 @@
 		"Семь <positive>благословений</positive> наградят выстоявшего - бонусные уровни Добычи и Удачи, +300% опыта, +10 силы зачарования, уникальный дроп с некоторых существ, функционал Кольца Эндера, а так же возможность создавать и использовать <magic>уникальные реликвии</magic>, недоступные никаким иным способом!"
 		""
 		"Чтобы открыть новые крафты игроку необходимо <magic>99.5%</magic> своего <warning>ОБЩЕГО</warning> времени в мире быть <blood>проклятым</blood>, имейте ввиду, чем дольше вы не надеваете кольцо, тем дольше вам придется существовать в мире с ним."
+		""
+		"На большинство <curse>проклятий</curse> в будущем вы найдете управу!"
 	]
 	quest.6823D5F00B44B271.quest_desc: [
 		"Used to... mold brick-looking stuff"
@@ -3478,9 +3490,9 @@
 	quest.6A7D9640907654A2.quest_desc: ["Combines Spike's cruelty with a deeper purpose: when a non-player creature steps onto it, the array deals a heart of damage and releases 0.5 units of raw Spiritus into the surrounding chunk. Has a brief cooldown; players are immune. Requires an Tabula Animata."]
 	quest.6AADBAB610C068F2.quest_desc: ["на метле можно уместить  2 игрока, можно красить имеет 9 слотов"]
 	quest.6AC5BBB361E90BF1.quest_desc: [
-		"We recommend that you read about each type of bobber!"
+		"We recommend that you read about each <wind>type of bobber</wind>!"
 		"{@pagebreak}"
-		"Мы рекомендуем ознакомиться с каждым видом поплавков!"
+		"Мы рекомендуем ознакомиться с каждым <wind>видом поплавков</wind>!"
 	]
 	quest.6B3078F8DB055448.quest_desc: [
 		"This ritual also unlocks many new Possession Rituals that allow you to summon rare mobs and obtain their rare drops. For example, you can summon a Shalker without spending a ton of time searching for and opening the End portal to obtain Shalker Shell."
@@ -3636,13 +3648,13 @@
 		"{image:milf:textures/quest_pic/sfm_example_02.png width:285 height:300 align:center fit:true}"
 	]
 	quest.6F3B8F14CD52165D.quest_desc: [
-		"The fishing system has been significantly overhauled, and many custom modpack items have been added to the loot, but you must use this fishing rod to catch fish."
+		"The fishing system has been <property>significantly overhauled</property>, and <positive>many custom modpack items</positive> have been added to the loot, but you must use <keyword>this fishing rod</keyword> to catch fish."
 		""
-		"You can read more about fishing and other important information in the guide—it’s as detailed as possible!"
+		"You can read more about fishing and other important information in the <named>guide</named> - it's as detailed as possible!"
 		"{@pagebreak}"
-		"Система рыбалки сильно переработана, в сокровища добавлено множество кастомных предметов модпака, но рыбу необходимо ловить  этой удочкой."
+		"Система рыбалки <property>сильно переработана</property>, в сокровища добавлено <positive>множество кастомных предметов модпака</positive>, но рыбу необходимо ловить <keyword>этой удочкой</keyword>."
 		""
-		"Вы можете прочитать больше о том как ловить рыбу и другую важную информацию в гайде, он максимально подробный!"
+		"Вы можете прочитать больше о том как ловить рыбу и другую важную информацию в <keyword>гайде</keyword>, он максимально подробный!"
 	]
 	quest.6F85911351916741.quest_desc: ["An <keyword>Edelwood Bucket</keyword> can hold multiple fluids at once (<keyword>4 buckets for water</keyword> and <keyword>3 buckets for lava</keyword>). Can also hold <keyword>stews</keyword> and some small entities. The <keyword>Edelwood Bucket</keyword> will require the <property>Permafrost enchantment</property> in order to hold <warning>lava</warning> safely."]
 	quest.6FBA4C72D386837A.quest_desc: [

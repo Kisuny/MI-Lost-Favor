@@ -1221,7 +1221,7 @@
 				to_observe: "ytech:aurochs"
 				type: "observation"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: -12.0d
 		}
 		{
@@ -1246,7 +1246,7 @@
 				to_observe: "ytech:mouflon"
 				type: "observation"
 			}]
-			x: 15.0d
+			x: 14.5d
 			y: -12.0d
 		}
 		{
@@ -1271,7 +1271,7 @@
 				to_observe: "ytech:fowl"
 				type: "observation"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: -11.5d
 		}
 		{
@@ -1296,7 +1296,7 @@
 				to_observe: "ytech:wild_boar"
 				type: "observation"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: -11.5d
 		}
 		{
@@ -1308,7 +1308,7 @@
 				id: "274F98243AA9482F"
 				type: "checkmark"
 			}]
-			x: 14.5d
+			x: 14.0d
 			y: -10.5d
 		}
 		{
@@ -1422,7 +1422,7 @@
 				to_observe: "minecraft:sheep"
 				type: "observation"
 			}]
-			x: 15.0d
+			x: 14.5d
 			y: -13.5d
 		}
 		{
@@ -2418,7 +2418,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:crops)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 14.5d
+			x: 14.0d
 			y: -8.0d
 		}
 		{
@@ -2462,7 +2462,7 @@
 				to_observe: "minecraft:chicken"
 				type: "observation"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: -13.0d
 		}
 		{
@@ -2490,7 +2490,7 @@
 				to_observe: "minecraft:cow"
 				type: "observation"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: -13.5d
 		}
 		{
@@ -2518,7 +2518,7 @@
 				to_observe: "minecraft:pig"
 				type: "observation"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: -13.0d
 		}
 		{
@@ -3943,6 +3943,71 @@
 			}]
 			x: 2.5d
 			y: -12.0d
+		}
+		{
+			dependencies: ["65ACC9954B888913"]
+			entity_vis_size: 1.0f
+			id: "474FF9F4C24B4AE3"
+			shape: "heart"
+			tasks: [{
+				id: "05298C5DD2879F9F"
+				item: { count: 1, id: "starcatcher:shiny_hook" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410F856A333A2FDF"]
+			entity_vis_size: 1.0f
+			id: "08C4EC0C59D337BC"
+			shape: "heart"
+			tasks: [{
+				id: "082CDEA31A6B695E"
+				item: { components: { "gateways:gateway": "gateways:emerald_grove" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["71DD1AE71C4E1B9F"]
+			entity_vis_size: 1.0f
+			id: "705DA0DF34A3DFF2"
+			shape: "diamond"
+			tasks: [{
+				id: "0368DF66BBA0F136"
+				item: { components: { "gateways:gateway": "gateways:basic/enderman" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["71DD1AE71C4E1B9F"]
+			entity_vis_size: 1.0f
+			id: "770B80AB4C4EC776"
+			shape: "diamond"
+			tasks: [{
+				id: "22823AFA9185B11B"
+				item: { components: { "gateways:gateway": "gateways:basic/slime" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["71DD1AE71C4E1B9F"]
+			entity_vis_size: 1.0f
+			id: "3DC2BBC787CEBAAB"
+			shape: "diamond"
+			tasks: [{
+				id: "0853B10D6F92227C"
+				item: { components: { "gateways:gateway": "gateways:overworldian_nights" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
 		}
 	]
 }

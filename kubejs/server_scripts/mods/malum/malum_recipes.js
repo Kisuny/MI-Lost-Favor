@@ -27,41 +27,12 @@ ServerEvents.recipes(event => {
     event.remove({ output: "malum:crude_scythe" })
 
 
-    spiritInfusion(event, {
-        input: { item: "spectrum:onyx_block", count: 1 },
-        extraInputs: [
-            {
-                item: "modern_industrialization:electronic_circuit",
-                count: 2
-            },
-            {
-                item: "occultism:demonic_meat",
-                count: 1
-            },
-            {
-                item: "eidolon_repraised:shadow_gem",
-                count: 1
-            },
-            {
-                item: "malum:large_strange_crystal",
-                count: 1
-            },
-        ],
-        spirits: [
-            { type: "malum:earthen", count: 8 },
-            { type: "malum:wicked", count: 4 },
-            { type: "malum:arcane", count: 12 },
-        ],
-        result: {
-            id: "milf:onyx_table_core",
-            count: 1
-        }
-    })
+    
     spiritInfusion(event, {
         input: { item: "spectrum:moonstone_block", count: 1 },
         extraInputs: [
             {
-                item: "modern_industrialization:processing_unit",
+                item: "modern_industrialization:electronic_circuit",
                 count: 2
             },
             {

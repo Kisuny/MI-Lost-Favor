@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({
         output: [
             "tide:fishing_hook",
-            /tide:.*_fishing_bobber/,
+            /tide:.*_bobber/,
             /tide:.*_fishing_rod/,
             /tide:.*_line/,
             'tide:wooden_crate', 
@@ -22,6 +22,9 @@ ServerEvents.recipes(event => {
             /tide:.*_bait/,
             'tide:lavaproof_hook',
             'tide:twilight_hook',
+            'tide:fiery_hook',
+            'tide:permafrost_hook',
+            'tide:bait',
         ]
     })
 

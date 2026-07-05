@@ -6510,5 +6510,31 @@
 			x: -6.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["4DD1404D1B9CA7F7"]
+			entity_vis_size: 1.0f
+			id: "127001B9329DEDB1"
+			shape: "heart"
+			tasks: [{
+				id: "292510648A2C6464"
+				item: { components: { "gateways:gateway": "gateways:basic/blaze" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["127001B9329DEDB1"]
+			entity_vis_size: 1.0f
+			id: "34FC3A721981390B"
+			shape: "heart"
+			tasks: [{
+				id: "5010A9737C66408A"
+				item: { components: { "gateways:gateway": "gateways:endless/blaze" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -4.5d
+		}
 	]
 }

@@ -174,4 +174,24 @@ ServerEvents.recipes(event => {
         count: 8
     })
 
+    customAlchemicalForgeCraft(event, {
+        affinities: [
+            "toxony:decay",
+            "toxony:soul",
+            "toxony:moon"
+        ],
+        auxiliary: [
+            {
+                "item": "neovitae:tabula_animata"
+            },
+            {
+                "item": "eidolon_repraised:shadow_gem"
+            }
+        ],
+        main: {
+            "item": "spectrum:onyx_block"
+        },
+        result: "milf:onyx_table_core"
+    })
+
 })

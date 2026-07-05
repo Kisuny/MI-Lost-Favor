@@ -126,6 +126,9 @@ To gain the strength beyond the need,
 But those who match this power will
 Receive reward far greater still.`)
 
+    event.add('milf.ms_s_second_order.tooltip', `When diplomacy fails and foes give no ground,
+The only solution is to make them less sound.`)
+
     event.add('milf.divine_mint.gui.possible_loot', `Possible loot:`)
     event.add('milf.divine_mint.gui.no_effect', `No effect`)
     event.add('milf.divine_mint.gui.difficulty.hard', `Hard difficulty`)

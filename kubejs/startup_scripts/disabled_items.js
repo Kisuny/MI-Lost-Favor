@@ -1,4 +1,6 @@
 global.disabledItems = [
+    new DisabledItemBuilder(/oritech:\w+/).build(),
+    new DisabledItemBuilder(/oritechthings:\w+/).build(),
     new DisabledItemBuilder(/moderndynamics:\w+_cable/).build(),
     new DisabledItemBuilder(/immersiveengineering:wire_\w+/).build(),
     new DisabledItemBuilder(/immersiveengineering:stick_(?!treated\b)(\w+)\b/)

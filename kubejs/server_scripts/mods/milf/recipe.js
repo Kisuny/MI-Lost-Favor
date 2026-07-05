@@ -36,6 +36,23 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "  R",
+            "HR ",
+            "FCB",
+        ],
+        key: {
+            "C": { "item": "modern_industrialization:digital_circuit" },
+            "F": { "item": "modern_industrialization:he_mox_fuel_rod" },
+            "R": { "item": "modern_industrialization:silver_rod" },
+            "H": { "item": "modern_industrialization:small_heat_exchanger" },
+            "B": { "item": "modern_industrialization:stainless_steel_curved_plate" },
+
+        },
+        outputItems: [[{ id: "milf:ms_s_second_order" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
             "R  ",
             "Rrr",
             "CRR"

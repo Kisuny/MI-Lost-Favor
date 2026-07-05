@@ -20,6 +20,7 @@ let currentCoinData = null
 let DIVINE_COIN_SEQUENCE_TICKS = 134
 
 let $Tag = Java.loadClass("net.minecraft.nbt.Tag")
+let $RenderGuiLayerEvent$Post = Java.loadClass("net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Post")
 
 ItemEvents.firstRightClicked("milf:divine_coin", event => {
 
@@ -153,7 +154,7 @@ ClientEvents.tick(event => {
 
 })
 
-NativeEvents.onEvent("net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Post", event => {
+NativeEvents.onEvent($RenderGuiLayerEvent$Post, event => {
     if (event.getName().equals($VanillaGuiLayers.CROSSHAIR)){
         if(Client.options.hideGui) return
 

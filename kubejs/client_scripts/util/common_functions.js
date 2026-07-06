@@ -47,3 +47,13 @@ function projectPosToScreen(pos, gameRenderer, deltaTracker, guiScale) {
 function getRandomBetween(min, max){
     return Math.random() * (max - min) + min
 }
+
+function getPosCompound(pos){
+    let posData = new $CompoundTag()
+    
+    posData.putDouble("x", pos.x)
+    posData.putDouble("y", pos.y)
+    posData.putDouble("z", pos.z)
+
+    return posData
+}

@@ -197,6 +197,10 @@ The only solution is to make them less sound.`)
     event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Absorbs up to 4 enchantments from an item, ${MilfEffects.GLITCH("destroying")} it in the process. Using the enchanted orb on another item ${textAnimatorString("replaces", "fade")} all of that item's enchantments with the absorbed ones.`)
     event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Infuses the axe item with the ${MilfEffects.GRAD.custom("Essence Of The Forest", "#1DEB6C", "#6AFFC3")}, allowing it to chop the ${MilfEffects.GRAD.POSITIVE("whole tree")} in one go in exchange for being only a ${MilfEffects.GRAD.NEGATIVE("tenth as effective")} as before. It can be applied only once, with no ability to revert downsides`)
 
+    event.add('milf.cursed_ring_tooltip.remaining', `${MilfEffects.GRAD.UPUPGRADE("%1$s hours")} and ${MilfEffects.GRAD.UPUPGRADE("%2$s minutes")} remaining until the curse ${MilfEffects.GRAD.custom("seeps through your bones", "#712F6C", "#D93667")}`)
+
+
+
     event.add('desc.immersiveengineering.info.mineral.ametrine_geode', "Ametrine Geode")
     event.add('desc.immersiveengineering.info.mineral.zinkenite', "Zinkenite")
     event.add('desc.immersiveengineering.info.mineral.stannite', "Stannite")

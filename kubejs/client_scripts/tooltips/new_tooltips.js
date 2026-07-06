@@ -53,6 +53,9 @@ ItemEvents.modifyTooltips(event => {
     event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
     event.add("#magnumtorch:torches", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
 
+    event.modify("enigmaticlegacyplus:cursed_ring", { shift: true }, tooltip => {
+        tooltip.dynamic("milf:cursed_ring_tooltip")
+    })
 
     //#region
 

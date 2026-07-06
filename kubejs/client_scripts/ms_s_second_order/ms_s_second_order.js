@@ -162,7 +162,7 @@ NativeEvents.onEvent($RenderLevelStageEvent, event => {
 function renderSecondOrderTp(player, pose, partialTick, camera) {
     try {
 
-        let tpPosData = getSecondOrderTPPos(player, SECOND_ORDER_BASE_RANGE)
+        let tpPosData = getSideToTopTargetPos(player, SECOND_ORDER_BASE_RANGE, SECOND_ORDER_ADDITIONAL_RANGE)
         if (secondOrderTPSequenceData.isTpSequence) { tpPosData = currentSecondOrderTPData }
         if (!tpPosData) {
             if (currentSecondOrderTPData.vector && !currentSecondOrderTPData.isInTheAir){
@@ -230,7 +230,7 @@ function renderSecondOrderTp(player, pose, partialTick, camera) {
 
 }
 
-function getSecondOrderTPPos(player, maxDistance){
+function getSideToTopTargetPos(player, maxDistance, additionalDistance){
     let eyePosition = player.getEyePosition(Client.getTimer().getGameTimeDeltaPartialTick(false))
     let lookVector = player.getLookAngle()
 
@@ -238,7 +238,7 @@ function getSecondOrderTPPos(player, maxDistance){
 
     let blockHit = player.level.clip(new $ClipContext(
         eyePosition,
-        traceEnd.add(lookVector.scale(SECOND_ORDER_ADDITIONAL_RANGE)),
+        traceEnd.add(lookVector.scale(additionalDistance)),
         $ClipContext$Block.COLLIDER,
         $ClipContext$Fluid.NONE,
         player
@@ -264,7 +264,6 @@ function getSecondOrderTPPos(player, maxDistance){
         if (player.level.getBlockState(blockPos.above()).isAir()) {
             let vector = new Vec3d(blockHitLocation.x, blockPos.getCenter().add(0, 0.5, 0).y, blockHitLocation.z)
             return { vector: vector}
-            //return blockPos.getCenter().add(0, 0.5, 0)
         } else if (player.level.getBlockState(blockPos.above().above()).isAir()) {
             let vector = new Vec3d(blockHitLocation.x, blockPos.above().getCenter().add(0, 0.5, 0).y, blockHitLocation.z)
             return { vector: vector }

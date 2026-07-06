@@ -1,0 +1,52 @@
+{
+    "attributes": {
+        "range_bonus": 0,
+        "two_handed": true,
+        "category": "rapier",
+        "attacks": [
+            {
+                "hitbox": "HORIZONTAL_PLANE",
+                "damage_multiplier": 0.2,
+                "angle": 20,
+                "upswing": 0.3,
+                "animation": "bettercombat:one_handed_slash_horizontal_left",
+                "swing_sound": {
+                    "id": "bettercombat:rapier_slash"
+                }
+            },
+            {
+                "hitbox": "VERTICAL_PLANE",
+                "damage_multiplier": 0.2,
+                "angle": 20,
+                "upswing": 0.3,
+                "animation": "bettercombat:one_handed_uppercut_right",
+                "swing_sound": {
+                    "id": "bettercombat:rapier_slash"
+                }
+            },
+            {
+                "hitbox": "FORWARD_BOX",
+                "damage_multiplier": 1,
+                "angle": 0,
+                "upswing": 1.4,
+                "movement_speed_multiplier": 1.8,
+                "animation": "bettercombat:one_handed_stab",
+                "swing_sound": {
+                    "id": "bettercombat:rapier_stab"
+                }
+            },
+            {
+                "hitbox": "FORWARD_BOX",
+                "damage_multiplier": 2,
+                "angle": 0,
+                "upswing": 2,
+                "movement_speed_multiplier": 25,
+                "range_multiplier": 1.8,
+                "animation": "bettercombat:one_handed_stab_mounted",
+                "swing_sound": {
+                    "id": "bettercombat:sword_slash"
+                }
+            }
+        ]
+    }
+}

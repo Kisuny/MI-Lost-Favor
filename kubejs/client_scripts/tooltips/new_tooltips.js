@@ -45,6 +45,7 @@ ItemEvents.modifyTooltips(event => {
     })
 
     event.add("milf:mi_upgrader", Text.translatable(`milf.mi_upgrader.tooltip`))
+    event.add("milf:ms_s_second_order", Text.translatable(`milf.ms_s_second_order.tooltip`))
 
     event.add("milf:grecall_concoction_t1", Text.translatable(`milf.grecall_concoction.t1.tooltip`))
     event.add("milf:grecall_concoction_t2", Text.translatable(`milf.grecall_concoction.t2.tooltip`))

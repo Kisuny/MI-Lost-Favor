@@ -81,14 +81,28 @@ createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Прив
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 
+createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: { tier: "flint" } })
+
+createNewItem('ms_s_second_order', {
+    stackSize: 1, itemType: "sword", lang: { "en_us": "Ms S's Second Order" },
+    use: {
+        animation: "spear",
+        duration: 100000,
+    },
+    tool: {
+        tier: "s_silver", 
+        attackDamageBaseline: 8,
+        speedBaseline: -0.7
+    } 
+})
+
+
 createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
 createNewItem('mi_replacer', { stackSize: 1, lang: { "en_us": "MI Replacer En Masse" } })
 
 createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:25, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
 createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
 createNewItem('sniffer', { stackSize: 1, lang: { "en_us": "Sniffer" } })
-
-createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: {tier: "flint"} })
 
 createNewItem('stone_nose', {
     stackSize: 1,

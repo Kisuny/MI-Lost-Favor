@@ -66,7 +66,7 @@ ItemEvents.firstRightClicked("milf:mi_replacer", event => {
     }
     
 })
-let $RenderGuiLayerEvent$Post = Java.loadClass("net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Post")
+
 NativeEvents.onEvent($RenderGuiLayerEvent$Post, event => {
     if (event.getName().equals($VanillaGuiLayers.CROSSHAIR)) {
         if (Client.options.hideGui) return

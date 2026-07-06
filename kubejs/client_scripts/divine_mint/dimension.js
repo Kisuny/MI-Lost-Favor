@@ -1,5 +1,3 @@
-let $ViewportEvent$RenderFog = Java.loadClass("net.neoforged.neoforge.client.event.ViewportEvent$RenderFog")
-
 NativeEvents.onEvent($ViewportEvent$RenderFog, event => {
 
     if(Client.level.dimension != "milf:abstraction") return

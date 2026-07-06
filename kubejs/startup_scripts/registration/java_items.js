@@ -17,10 +17,12 @@ let $MIComponents = Java.loadClass("aztech.modern_industrialization.MIComponents
 createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shovels"] }, 
     () => new JavaAdapter($SteamDrillItem, {
 
-        isHorizontal: true,
-
-        changeMode() {
-            this.isHorizontal = !this.isHorizontal
+        isHorizontal(stack){
+            let component = stack.get($DataComponents.CUSTOM_DATA)
+            if (!component) return false
+            let compoundTag = component.copyTag()
+            if (!compoundTag.contains("milf:isHorizontal")) return false
+            return compoundTag.getBoolean("milf:isHorizontal")
         },
 
         appendHoverText(stack, context, tooltip, flag) {
@@ -39,7 +41,7 @@ createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shove
             }
             // 1x3 state
             tooltip.add($MIText.MiningArea
-                .text((this.isActivated(stack) ? Text.of("1x3 ").append((this.isHorizontal ? Text.translatable("milf.clunky_drill.horizontal") : Text.translatable("milf.clunky_drill.vertical"))) : $MIText.MiningArea1x1.text()).setStyle($TextHelper.NUMBER_TEXT))
+                .text((this.isActivated(stack) ? Text.of("1x3 ").append((this.isHorizontal(stack) ? Text.translatable("milf.clunky_drill.horizontal") : Text.translatable("milf.clunky_drill.vertical"))) : $MIText.MiningArea1x1.text()).setStyle($TextHelper.NUMBER_TEXT))
                 .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
             // Silk touch
             tooltip.add($MIText.SilkTouchState
@@ -63,19 +65,19 @@ createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shove
                 let blockResult = rayTraceResult
                 let facing = blockResult.direction
                 let lookVec = player.getViewVector(0)
-                return this._getArea(blockResult.getBlockPos(), facing, lookVec)
+                return this._getArea(blockResult.getBlockPos(), facing, lookVec, stack)
             }
             return null
 
         },
 
-        _getArea(pos, hitFace, lookVec) {
+        _getArea(pos, hitFace, lookVec, stack) {
             let faceIndex = hitFace.ordinal()
             let right = $GeometryHelper.FACE_RIGHT[faceIndex]
             let up = $GeometryHelper.FACE_UP[faceIndex]
             let isSideFace = hitFace.step().y() == 0
             if (isSideFace) {
-                let side = this.isHorizontal ? right : up
+                let side = this.isHorizontal(stack) ? right : up
                 let rx = side.x(), ry = side.y(), rz = side.z()
                 return new $SteamDrillItem.Area(pos, pos.offset(rx, ry, rz), pos.offset(-rx, -ry, -rz))
             }
@@ -84,7 +86,7 @@ createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shove
             let dotUp = lookVec.x * up.x() + lookVec.y * up.y() + lookVec.z * up.z()
 
             let dirX, dirY, dirZ
-            if (this.isHorizontal) {
+            if (this.isHorizontal(stack)) {
                 if (Math.abs(dotRight) <= Math.abs(dotUp)) {
                     let sign = dotRight > 0 ? 1 : -1
                     dirX = sign * right.x()

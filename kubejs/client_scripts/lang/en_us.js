@@ -36,7 +36,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.minecraft_mobs', `You started hearing ${MilfEffects.GRAD.custom("strange noises", "#ED1A1A", "#B62651")} at night...`)
     event.add('milf.stage.early_items', `This world no longer ${MilfEffects.GLITCH("rejects")} you...`)
 
-
+    event.add('gateways.basic/deer', "Deer Gateway")
+    event.add('gateways.basic/villager', "Villager Gateway")
     event.add('gateways.tiered/haven', 'Haven Gateway')
     event.add('wave_entity.apotheosis.amethyst_crab', 'Reinforced Amethest Crab')
     event.add('wave_entity.apotheosis.ferrous_wroughtnaut', 'Reinforced Ferrous Wroughtnaut')
@@ -222,8 +223,6 @@ The only solution is to make them less sound.`)
     event.add("curios.identifier.time_sand_pouch", "Temporal Pouch")
     event.add("curios.identifier.backpack", "Backpack")
     event.add("curios.identifier.atlas", "Atlas")
-
-    event.add('gateways.basic/deer', "Deer Gateway")
 
     event.add('rei_categories.modern_industrialization.blast_furnace', "Steam Blast Furnace")
 

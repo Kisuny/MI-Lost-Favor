@@ -194,6 +194,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.flags.occupied', "Чанк уже запривачен: ")
 
     event.add('gateways.basic/deer', "Врата Оленя")
+    event.add('gateways.basic/villager', "Врата Жителей")
     event.add('rei_categories.modern_industrialization.blast_furnace', "Паровая Доменная Печь")
 
     event.add('desc.immersiveengineering.info.mineral.ametrine_geode', "Аметриновая Жеода")

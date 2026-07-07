@@ -1,0 +1,380 @@
+{
+    "type": "gateways:normal",
+    "size": "small",
+    "color": "#8c7853",
+    "waves": [
+        {
+            "max_wave_time": 1200,
+            "setup_time": 100,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:zombie",
+                    "nbt": {
+                        "ArmorItems": [
+                            {},
+                            {},
+                            {},
+                            {
+                                "id": "minecraft:leather_helmet",
+                                "count": 1
+                            }
+                        ],
+                        "active_effects": [
+                            {
+                                "id": "minecraft:speed",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:skeleton",
+                    "nbt": {
+                        "ArmorItems": [
+                            {},
+                            {},
+                            {},
+                            {
+                                "id": "minecraft:leather_helmet",
+                                "count": 1
+                            }
+                        ],
+                        "active_effects": [
+                            {
+                                "id": "minecraft:speed",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombie",
+                    "rolls": 3
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:skeleton",
+                    "rolls": 2
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1200,
+            "setup_time": 150,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 5,
+                    "entity": "minecraft:zombie",
+                    "nbt": {
+                        "ArmorItems": [
+                            {},
+                            {},
+                            {
+                                "id": "minecraft:chainmail_chestplate",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:chainmail_helmet",
+                                "count": 1
+                            }
+                        ],
+                        "active_effects": [
+                            {
+                                "id": "minecraft:strength",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:skeleton",
+                    "nbt": {
+                        "ArmorItems": [
+                            {},
+                            {},
+                            {
+                                "id": "minecraft:chainmail_chestplate",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:chainmail_helmet",
+                                "count": 1
+                            }
+                        ],
+                        "active_effects": [
+                            {
+                                "id": "minecraft:strength",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombie",
+                    "rolls": 5
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:skeleton",
+                    "rolls": 3
+                }
+            ]
+        },
+        {
+            "max_wave_time": 2200,
+            "setup_time": 200,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 7,
+                    "entity": "minecraft:zombie",
+                    "nbt": {
+                        "ArmorItems": [
+                            {
+                                "id": "minecraft:iron_boots",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:iron_leggings",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:iron_chestplate",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:iron_helmet",
+                                "count": 1
+                            }
+                        ],
+                        "active_effects": [
+                            {
+                                "id": "minecraft:strength",
+                                "amplifier": 1,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            },
+                            {
+                                "id": "minecraft:speed",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "minecraft:skeleton",
+                    "nbt": {
+                        "ArmorItems": [
+                            {
+                                "id": "minecraft:iron_boots",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:iron_leggings",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:iron_chestplate",
+                                "count": 1
+                            },
+                            {
+                                "id": "minecraft:iron_helmet",
+                                "count": 1
+                            }
+                        ],
+                        "active_effects": [
+                            {
+                                "id": "minecraft:strength",
+                                "amplifier": 1,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            },
+                            {
+                                "id": "minecraft:speed",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "minecraft:witch",
+                    "nbt": {
+                        "active_effects": [
+                            {
+                                "id": "minecraft:strength",
+                                "amplifier": 0,
+                                "duration": 2400,
+                                "ambient": false,
+                                "show_particles": false,
+                                "show_icon": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombie",
+                    "rolls": 9
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:skeleton",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:witch",
+                    "rolls": 1
+                },
+                {
+                    "type": "gateways:summon",
+                    "entity": {
+                        "type": "gateways:standard",
+                        "count": 4,
+                        "entity": "minecraft:villager"
+                    }
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:entity_loot",
+            "entity": "minecraft:zombie",
+            "rolls": 15
+        },
+        {
+            "type": "gateways:entity_loot",
+            "entity": "minecraft:skeleton",
+            "rolls": 9
+        },
+        {
+            "type": "gateways:entity_loot",
+            "entity": "minecraft:witch",
+            "rolls": 1
+        }
+    ]
+}

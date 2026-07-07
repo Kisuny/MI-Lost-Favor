@@ -24,3 +24,13 @@ LootJS.modifiers(event => {
 
 })
 
+LootJS.lootTables(event => {
+    replaceInTables("minecraft:stick", "milf:twig", LootType.BLOCK)
+
+    function replaceInTables(itemId, replaceWithId, tables) {
+        event.modifyLootTables(tables).replaceItem(ItemFilter.item(itemId, false), replaceWithId, true)
+    }
+})
+
+
+

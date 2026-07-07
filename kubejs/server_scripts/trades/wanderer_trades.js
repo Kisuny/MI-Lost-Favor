@@ -1,8 +1,11 @@
 MoreJS.updateOffer(event => {
-
     if (!event.isWanderer()) return
+    if (event.offer.result.id === "occultism:datura") {
+        event.cancel()
+    }
     event.offer.replaceEmeralds(Item.of("devices:gold_coin"))
 
+    
 })
 
 MoreJS.wandererTrades(event => {

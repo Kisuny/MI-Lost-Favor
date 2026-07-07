@@ -6536,5 +6536,41 @@
 			x: -9.5d
 			y: -4.5d
 		}
+		{
+			dependencies: ["65DB2546A83972B8"]
+			entity_vis_size: 1.0f
+			id: "2FCC382FED2E49C9"
+			shape: "heart"
+			size: 2.0d
+			tasks: [{
+				id: "15713298FC3F891C"
+				item: { count: 1, id: "milf:grappling_gun" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2FCC382FED2E49C9"]
+			entity_vis_size: 1.0f
+			id: "3423EBF4E0C66D7B"
+			rewards: [{
+				count: 18
+				id: "6286383F93D8A362"
+				item: {
+					count: 1
+					id: "milf:zipped_zipline"
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "009EB270DED04386"
+				item: { count: 1, id: "milf:zipped_zipline" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.0d
+		}
 	]
 }

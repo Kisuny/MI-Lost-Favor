@@ -70,19 +70,6 @@
 			y: -8.0d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "1F631D74E519A65D"
-			shape: "diamond"
-			tasks: [{
-				count: 3L
-				id: "0C9203A4A33C6622"
-				item: { count: 1, id: "minecraft:stick" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: -8.5d
-		}
-		{
 			dependencies: ["22F6F4D5CF2C2BE8"]
 			entity_vis_size: 1.0f
 			id: "759483B6196A8D38"
@@ -224,7 +211,7 @@
 		{
 			dependencies: [
 				"759483B6196A8D38"
-				"1F631D74E519A65D"
+				"531918BB8C7C0071"
 			]
 			entity_vis_size: 1.0f
 			id: "12EA2728AD90FABD"
@@ -1846,6 +1833,7 @@
 			dependencies: ["56956E24B043B41A"]
 			entity_vis_size: 1.0f
 			id: "742D4F5A2D903B69"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "6A2DE9994B248736"
@@ -2563,14 +2551,14 @@
 			entity_vis_size: 1.0f
 			id: "73DFBE8FE9BDEBD5"
 			shape: "diamond"
-			size: 0.8d
+			size: 1.0d
 			tasks: [{
 				id: "0BFF560E4083520B"
 				item: { count: 1, id: "birdnest:birds_nest" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -6.5d
+			x: -3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
@@ -4008,6 +3996,34 @@
 			}]
 			x: 11.5d
 			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "531918BB8C7C0071"
+			shape: "diamond"
+			tasks: [{
+				id: "42EEAA107CF4E997"
+				item: { count: 1, id: "milf:twig" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"531918BB8C7C0071"
+				"56956E24B043B41A"
+			]
+			entity_vis_size: 1.0f
+			id: "6584492E2B9D1324"
+			shape: "diamond"
+			tasks: [{
+				id: "2916819E660EFDDC"
+				item: { count: 1, id: "minecraft:stick" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
 		}
 	]
 }

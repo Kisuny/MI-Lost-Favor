@@ -26,6 +26,8 @@ ServerEvents.tags('item', event => {
 
     ])
 
+    event.add("milf:sticks", ['#c:rods/wooden', '#c:wood_sticks', 'milf:twig', "immersiveengineering:stick_treated"])
+
     event.add("more_sounds:equipment", "#milf:knives")
 
     event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic', '#relics:relics'])

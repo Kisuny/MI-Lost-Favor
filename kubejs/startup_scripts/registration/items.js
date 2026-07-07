@@ -66,6 +66,7 @@ createNewItem('crushed_iron', { tag: ["c:crushed_ores", "c:crushed_ores/iron"], 
 createNewItem('crushed_lead', { tag: ["c:crushed_ores", "c:crushed_ores/lead"], lang: { "en_us": "Сrushed lead", "ru_ru": "Измельченный свинец" }})
 createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], lang: { "en_us": "Сrushed tin", "ru_ru": "Измельченное олово" }})
 
+createNewItem('twig')
 createNewItem('unfired_fire_clay_brick')
 createNewItem('fire_clay_ball')
 createNewItem('bronze_glass', { stackSize: 8, lang: { "en_us": "Bronze glass", "ru_ru": "Бронзовое стекло" } })
@@ -94,6 +95,13 @@ createNewItem('ms_s_second_order', {
         attackDamageBaseline: 8,
         speedBaseline: -0.7
     } 
+})
+
+createNewItem('grappling_gun', {
+    stackSize: 1, use: {
+        animation: "bow",
+        duration: 100000,
+    }, 
 })
 
 

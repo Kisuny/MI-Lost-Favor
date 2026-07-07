@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             "T": { "item": "ytech:grass_twine" },
-            "S": { "item": "minecraft:stick" },
+            "S": { "tag": "milf:sticks" },
             "F": { "item": "ytech:sharp_flint" },
         },
         outputItems: [[{ id: "milf:flint_pickaxe" }, 1]]

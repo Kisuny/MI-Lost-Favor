@@ -1,11 +1,17 @@
 global.disabledItems = [
     new DisabledItemBuilder(/oritech:\w+/).build(),
     new DisabledItemBuilder(/oritechthings:\w+/).build(),
+
     new DisabledItemBuilder(/moderndynamics:\w+_cable/).build(),
+
     new DisabledItemBuilder(/immersiveengineering:wire_\w+/).build(),
     new DisabledItemBuilder(/immersiveengineering:stick_(?!treated\b)(\w+)\b/)
         .replaceWithRegexMapping(material => `modern_industrialization:${material}_rod`).build(),
+
     new DisabledItemBuilder("ytech:bronze_mortar_and_pestle").build(),
+
+    new DisabledItemBuilder("monsterplus:curseflame_powder").build(),
+
     new DisabledItemBuilder("refurbished_furniture:knife").build(),
     new DisabledItemBuilder("aquaculture:diamond_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:gold_fillet_knife").build(),
@@ -15,6 +21,7 @@ global.disabledItems = [
     new DisabledItemBuilder("moredelight:wooden_knife").build(),
     new DisabledItemBuilder("moredelight:stone_knife").build(),
     new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables().build(),
+
     new DisabledItemBuilder("extradelight:salt").replaceWith("modern_industrialization:salt_dust").build(),
     new DisabledItemBuilder("expandeddelight:salt").replaceWith("modern_industrialization:salt_dust").build(),
 ]

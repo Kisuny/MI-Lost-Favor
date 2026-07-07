@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
         let replaceWithId = entry.replaceData.id
         if (replaceWithId == null){
             event.remove({ output: itemId })
+            event.remove({ input: itemId })
         } else {
             let isReplaced = false
             entry.replaceData.in.forEach(replaceInfo => {
@@ -24,6 +25,7 @@ ServerEvents.recipes(event => {
 
             if (!isReplaced){
                 event.remove({ output: itemId })
+                event.remove({ input: itemId })
             }
 
         }

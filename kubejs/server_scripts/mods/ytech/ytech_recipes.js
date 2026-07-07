@@ -292,6 +292,19 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#milf:knives')
     event.replaceInput({ input: '#c:knives' }, '#c:knives', '#milf:knives')
 
+    let replaceStick = [
+        "ytech:fire_pit", "ytech:flint_knife", 
+        "ytech:flint_axe", "ytech:flint_spear", 
+        "ytech:crafting_workspace",
+        "ytech:divining_rod"
+    ]
+
+    replaceStick.forEach(output => {
+        event.replaceInput({ input: 'minecraft:stick', output: output}, 'minecraft:stick', '#milf:sticks')
+    })
+
+    
+
     event.custom({
         "type": "ytech:remaining_shapeless_crafting",
         "category": "misc",
@@ -362,6 +375,15 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "minecraft:stick" }, 1]],
+        inputItems: [
+            [{ "item": "milf:twig" }],
+            [{ tag: "milf:knives" }],
+        ],
+        compatOff: true
+    })
+
     milfShaped(event, {
         pattern: [
             "F ",
@@ -388,7 +410,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-        milfShaped(event, {
+    milfShaped(event, {
         pattern: [
             "F ",
             "SR"

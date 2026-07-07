@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             "S  "
         ],
         key: {
-            S: { item: "minecraft:stick" },
+            S: { tag: "milf:sticks" },
             T: { item: "ytech:grass_twine" },
             F: { item: "ytech:sharp_flint" },
         },

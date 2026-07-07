@@ -4010,20 +4010,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"531918BB8C7C0071"
-				"56956E24B043B41A"
-			]
-			entity_vis_size: 1.0f
-			id: "6584492E2B9D1324"
-			shape: "diamond"
-			tasks: [{
-				id: "2916819E660EFDDC"
-				item: { count: 1, id: "minecraft:stick" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: -9.0d
 			dependencies: ["51E3EA7E70ECE842"]
 			entity_vis_size: 1.0f
 			id: "4D212923E3A7FA85"
@@ -4035,6 +4021,22 @@
 			}]
 			x: 19.5d
 			y: -1.5d
+		}
+		{
+			dependencies: [
+				"531918BB8C7C0071"
+				"56956E24B043B41A"
+			]
+			entity_vis_size: 1.0f
+			id: "16ACD62D27785778"
+			shape: "diamond"
+			tasks: [{
+				id: "2531CED64679D012"
+				item: { count: 1, id: "minecraft:stick" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
 		}
 	]
 }

@@ -4024,6 +4024,17 @@
 			}]
 			x: -3.0d
 			y: -9.0d
+			dependencies: ["51E3EA7E70ECE842"]
+			entity_vis_size: 1.0f
+			id: "4D212923E3A7FA85"
+			shape: "diamond"
+			tasks: [{
+				id: "377C7C043E6EC0ED"
+				item: { components: { "gateways:gateway": "gateways:basic/villager" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -1.5d
 		}
 	]
 }

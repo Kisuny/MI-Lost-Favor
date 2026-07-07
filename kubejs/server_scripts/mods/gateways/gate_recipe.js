@@ -35,6 +35,26 @@ ServerEvents.recipes(event => {
     })
     
     customGateRecipe(event, {
+        gateway: "gateways:basic/villager",
+        pattern: [
+            "B#B",
+            "#A#",
+            "B#B"
+        ],
+        keys: {
+            "#": {
+                "item": "devices:gold_coin"
+            },
+            "A": {
+                "item": "modern_industrialization:bronze_plate"
+            },
+            "B": {
+                "item": "minecraft:emerald"
+            }
+        }
+    })
+    
+    customGateRecipe(event, {
         gateway: "gateways:tiered/haven",
         pattern: [
             "tet",

@@ -8,7 +8,7 @@ let $TextAlign = Java.loadClass("net.tysontheember.emberstextapi.immersivemessag
 
 
 NetworkEvents.dataReceived('immersive_message', (event) => {
-    //console.log("WHAT DA HELL");
+    //console.log(event.data);
     /**@type {import("net.minecraft.nbt.Tag").$Tag$$Original}*/ let text = event.data.text, args = event.data.args, player = Client.player
     //text = Component.of("").append(text.getAsString())
     //console.log(Component.translate("milf.placers.notification2"))
@@ -22,7 +22,7 @@ function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").
     for(let [key,  value] of Object.entries(stupidFreakingCompoundTag)){
         if(key == "content"){
             //console.log(value);
-            prettyJSObject[key] = COMPOUND_TAGS_ME_ARSE(value)
+            prettyJSObject[key] = deserializeCompoundTagText(value)
             continue
         }
         switch (value.getType().getName()) {
@@ -53,42 +53,15 @@ function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").
     return prettyJSObject
 }
 
-function COMPOUND_TAGS_ME_ARSE(tagLikeText){
-    //console.log(tagLikeText.text);
-    let text = Text.of(``)
-    if (tagLikeText.text){
-        text.append(tagLikeText.text.getAsString())
-    }
-    if (tagLikeText.translate){
-        text.append(Text.translatable(tagLikeText.translate.getAsString()))
-    }
-    if (tagLikeText.extra){
-        let extraArray = Array.isArray(tagLikeText.extra) ? tagLikeText.extra : [tagLikeText.extra]
-        extraArray.forEach(compoundTag => {
-            if (compoundTag.getAsString !== undefined && compoundTag.getType && compoundTag.getType().getName() === "STRING"){
-                text.append(Text.of(compoundTag.getAsString()))
-                return
-            }
-            for(let [key,  value] of Object.entries(compoundTag)){
-                switch (key) {
-                    case "translate":
-                        text.append(Text.translatable(value.getAsString()))
-                        break;
-                    case "":
-                        text.append(Text.of(value.getAsString()))
-                        break;
-                    case "text":
-                        text.append(Text.of(value.getAsString()))
-                        break;
-                    default:
-                        //console.log("whoao :( " + value.getAsString());
-                        break;
-                }
-            }
-        })
+function deserializeCompoundTagText(tagLikeText){
+
+    try {
+        return $Component$Serializer["fromJson(java.lang.String,net.minecraft.core.HolderLookup$Provider)"](tagLikeText.getAsString(), Client.level.registryAccess())
+    } catch (error) {
+        console.log(error);
+        return null
     }
 
-    return text
 }
 
 let MilfMessagesManager = {
@@ -129,15 +102,18 @@ ClientEvents.tick(event => {
 
 })
 
-function sendImmersiveMessage(text, player, args){
+function sendImmersiveMessage(tagLikeText, player, args){
 
-    args = args || {}
-    let textComponent = COMPOUND_TAGS_ME_ARSE(text)
+    args = args || {}    
+    let textComponent = deserializeCompoundTagText(tagLikeText)
+
+    if(!textComponent) return
+
     let argsJS = I_HATE_COMPOUND_TAGS(args)
     let duration = ((argsJS.duration || 2.2)) * 20 | 0
     
     argsJS.applyWarn && (textComponent = Component.of("⚠ ").append(textComponent))
-    //console.log(duration);
+    
     
     let message = new $ImmersiveMessage["(net.minecraft.network.chat.Component,int)"](textComponent, duration)
     
@@ -148,7 +124,7 @@ function sendImmersiveMessage(text, player, args){
     if (argsJS.offsetGroup) {
         MilfMessagesManager.addMessage(messageId, duration + (argsJS.fadeIn * 20 | 0 || 0) + (argsJS.fadeOut * 20 | 0 || 0))
         //message.offset(0, MilfMessagesManager.messageCount * -16)
-    }
+    }    
 
     $ClientMessageManager.open(messageId, message)
 
@@ -209,7 +185,7 @@ function applyArgsToImmersiveMessage(message, args){
     }
     if (args.subtext){
         Client.scheduleInTicks(args.subtext.delay * 20 | 0, callback => {
-            let subtextComponent = COMPOUND_TAGS_ME_ARSE(args.subtext.content)
+            let subtextComponent = deserializeCompoundTagText(args.subtext.content)
             let subtextMessage = new $ImmersiveMessage["(net.minecraft.network.chat.Component,int)"](args.subtext.content, (args.duration * 20 | 0 || 44) - (args.subtext.delay * 20 | 0 || 0))
             applyArgsToImmersiveMessage(subtextMessage, args.subtext)            
 

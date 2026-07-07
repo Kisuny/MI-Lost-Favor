@@ -36,6 +36,10 @@ let $FogShape = Java.loadClass("com.mojang.blaze3d.shaders.FogShape")
 let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 let $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
 let $Component = Java.loadClass("net.minecraft.network.chat.Component")
+let $ParticleTypes = Java.loadClass("net.minecraft.core.particles.ParticleTypes")
+let $Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3")
+let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
+
 
 let $TooltipHandler = Java.loadClass("auviotre.enigmatic.legacy.handlers.TooltipHandler")
 let $EnigmaticHandler = Java.loadClass("auviotre.enigmatic.legacy.handlers.EnigmaticHandler")

@@ -98,6 +98,9 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.mi_pipe_recolor.tooltip', `You can change the type using ${MilfEffects.UP_DOWN("Chisel")}`)
     event.add('milf.curio_bag.tooltip', `Can be opened with ${MilfEffects.UP_DOWN("radial menu")} while in the hotbar or in a curio slot`)
 
+    event.add('milf.notification.missing_items.to_upgrade', `Requires %s to upgrade!`)
+    event.add('milf.notification.missing_items.to_use', `Requires %s to use!`)
+
     event.add('milf.mi_upgrade_notification_1', `Requires `)
     event.add('milf.mi_upgrade_notification_2', ` to upgrade!`)
 

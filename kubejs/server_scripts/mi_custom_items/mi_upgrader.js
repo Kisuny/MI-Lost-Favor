@@ -15,56 +15,45 @@ BlockEvents.rightClicked(Object.keys(MI_UPGRADES), event => {
 
     let blockEntity = block.getEntity()
     let requiredMaterials = MI_UPGRADES[block.getId()].upgradeMaterials
+    
+    let { isEnough, missingItems } = checkAndRemoveItems(player, requiredMaterials)
 
-    let enough = true
-    let missingItems = []
-    for (let entry of requiredMaterials) {
-        let { id, count } = entry
+    //let isEnough = true
+    // let missingItems = []
+    // for (let entry of requiredMaterials) {
+    //     let { id, count } = entry
 
-        let item = Item.of(id)
+    //     let item = Item.of(id)
 
-        let playerCount = player.getInventory().count(item)
+    //     let playerCount = player.getInventory().count(item)
 
-        if (playerCount < count) {
-            enough = false
-            missingItems.push(id)
+    //     if (playerCount < count) {
+    //         enough = false
+    //         missingItems.push(id)
 
-        }
+    //     }
 
-    }
-
-    // if (!enough) {
-    //     let missingItemsData = new $CompoundTag()
-    //     missingItemsData.put("itemsToShake", itemsTag)
-    //     event.player.sendData("milf_divine_coin_not_enough_items", missingItemsData)
-    //     return
     // }
 
-    
+    if(isEnough || event.player.creative){
+        // if(!event.player.creative){
 
-    if(enough || event.player.creative){
-        if(!event.player.creative){
+        //     for (let entry of requiredMaterials) {
+        //         let { id, count } = entry
 
-            for (let entry of requiredMaterials) {
-                let { id, count } = entry
+        //         let item = Item.of(id)
 
-                let item = Item.of(id)
+        //         let playerCount = player.getInventory().clearOrCountMatchingItems(
+        //             stack => stack.is(item),
+        //             count,
+        //             player.inventoryMenu.getCraftSlots()
+        //         )
 
-                let playerCount = player.getInventory().clearOrCountMatchingItems(
-                    stack => stack.is(item),
-                    count,
-                    player.inventoryMenu.getCraftSlots()
-                )
+        //     }
 
-            }
+        //     player.containerMenu.broadcastChanges()
 
-            player.containerMenu.broadcastChanges()
-
-            // let itemIndex = event.player.inventory.find(Item.of(MI_UPGRADES[block.getId()].upgradeMaterial))
-            // let item = event.player.inventory.getItem(itemIndex)
-            // item.count--
-            // event.player.inventoryMenu.broadcastFullState()
-        }
+        // }
 
         particleFrame(PARTICLES.dispersed, block.getPos(), {x:1, y:1, z:1}, event)
         
@@ -76,7 +65,7 @@ BlockEvents.rightClicked(Object.keys(MI_UPGRADES), event => {
         level.removeBlockEntity(blockPos)
         level.setBlockAndUpdate(blockPos, newBlock)
         let newEntityData = level.getBlock(blockPos).getEntityData()
-        console.log(newEntityData);
+        //console.log(newEntityData);
         
         if (newEntityData.contains("fluids") && entityData.contains("fluids")){
             let newFluidsList = newEntityData.get("fluids")

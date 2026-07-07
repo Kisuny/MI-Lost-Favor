@@ -67,6 +67,36 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "Nr ",
+            "rRB",
+            "TBG"
+        ],
+        key: {
+            r: { item: "modern_industrialization:iron_rod" },
+            N: { item: "modern_industrialization:steel_nugget" },
+            R: { item: "modern_industrialization:steel_rod" },
+            T: { item: "ytech:grass_twine" },
+            B: { item: "milf:steel_machine_bit" },
+            G: { item: "immersiveengineering:wooden_grip" }
+        },
+        outputItems: [[{ id: "milf:grappling_gun" }, 1]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "FRF",
+            "FRF",
+            "FRF"
+        ],
+        key: {
+            F: { tag: "c:fences/wooden" },
+            R: { tag: "milf:ropes" }
+        },
+        outputItems: [[{ id: "milf:zipped_zipline" }, 1]],
+    })
+
+    milfShaped(event, {
+        pattern: [
             " FT",
             " SF",
             "S  ",

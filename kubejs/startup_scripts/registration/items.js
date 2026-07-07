@@ -104,6 +104,7 @@ createNewItem('grappling_gun', {
     }, 
 })
 
+createNewItem('zipped_zipline', { stackSize: 19})
 
 createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
 createNewItem('mi_replacer', { stackSize: 1, lang: { "en_us": "MI Replacer En Masse" } })

@@ -95,6 +95,34 @@
             },
             "trigger": "minecraft:player_killed_entity"
         },
+        "kill_azazel_human": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "netherman:azazel_human"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_azazel": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "netherman:azazel"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
         "kill_obsidilith": {
             "conditions": {
                 "entity": [
@@ -244,6 +272,12 @@
         ],
         [
             "kill_geburah"
+        ],
+        [
+            "kill_azazel_human"
+        ],
+        [
+            "kill_azazel"
         ],
         [
             "kill_lunar_monstrosity"

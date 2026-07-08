@@ -70,6 +70,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Убить Малькут')
     event.add('advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Убить Хесед')
     event.add('advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Убить Лунное Чудовище')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_azazel_human', 'Убить Истинного Азазель')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_azazel', 'Убить велкую божественную Колесницу Азазель')
 
     // pinnacle (мифический) — убийства
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Убить Химеру Вилден')

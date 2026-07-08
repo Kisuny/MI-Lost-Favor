@@ -78,6 +78,8 @@ ClientEvents.lang('en_us', event => {
     event.add('advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Slay Malkuth')
     event.add('advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Slay Chesed')
     event.add('advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Slay the Lunar Monstrosity')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_azazel_human', 'Slay The True Azazel')
+    event.add('advancements.apotheosis.progression.summit.criteria.kill_azazel', 'Slay The Divine Chariot Azazel')
 
     // pinnacle (mythic) kill criteria
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Slay the Wilden Chimera')

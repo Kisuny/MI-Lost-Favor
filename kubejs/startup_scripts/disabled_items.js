@@ -1,4 +1,6 @@
 global.disabledItems = [
+    new DisabledItemBuilder("extendedae:silicon_block").build(),
+
     new DisabledItemBuilder(/oritech:\w+/).build(),
     new DisabledItemBuilder(/oritechthings:\w+/).build(),
 

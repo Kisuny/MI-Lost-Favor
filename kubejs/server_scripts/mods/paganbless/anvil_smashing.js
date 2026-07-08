@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         [
             [{ "tag": "c:bolts/iron" }, 4],
             [{ "tag": "c:plates/iron" }, 2],
-            [{ "tag": "c:dusts/lapis" }, 4],
+            [{ "tag": "c:dusts/bronze" }, 4],
         ],
         [{ "id": 'moderndynamics:filter' }, 2]
     );

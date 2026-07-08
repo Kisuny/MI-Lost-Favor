@@ -1,6 +1,5 @@
 const item_interact_block = [
     { id: "blast_furnace", item: "minecraft:blast_furnace", stage: "blast_furnace" },
-    { id: "spawner", item: "minecraft:spawner", stage: "early_items" },
     { id: "iron_nugget", item: "minecraft:iron_nugget", stage: "post_iron" },
     { id: "iron_block", item: "minecraft:iron_block", stage: "post_iron" },
     { id: "gold_nugget", item: "minecraft:gold_nugget", stage: "post_iron" },

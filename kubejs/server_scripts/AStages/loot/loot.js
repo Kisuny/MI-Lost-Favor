@@ -47,6 +47,11 @@ const lootRestrictions = [
         items: 'minecraft:enchanted_book',
     },
     {
+        stage: 'netherite_scrap_everywhere',
+        everywhere: true,
+        items: ['minecraft:netherite_scrap', 'minecraft:ancient_debris'],
+    },
+    {
         stage: 'bucket_everywhere',
         everywhere: true,
         items: 'minecraft:bucket',
@@ -56,6 +61,7 @@ const lootRestrictions = [
         stage: 'gems_everywhere',
         everywhere: true,
         tags: 'c:gems',
+        items: ["minecraft:emerald_block", "minecraft:diamond_block", "minecraft:lapis_block"]
     },
     
 

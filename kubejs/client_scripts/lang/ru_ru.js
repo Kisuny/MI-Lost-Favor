@@ -5,6 +5,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.entity.interact.part2', 'Что-то магическое запрещает вам использовать ')
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
     event.add('milf.text.first_join', `Добро пожаловать в ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
+    event.add('milf.text.recommendation_1', `<warning>Важно:</warning> CurseForge и Prism Launcher могут автоматически создавать собственный файл <keyword>options.txt</keyword>, который перезаписывает настройки модпака. К сожалению, мы не можем предотвратить это. Если файл уже существует, <keyword>удалите</keyword> его из папки <keyword>.minecraft</keyword>. При следующем запуске он будет создан заново с правильными настройками, и все настройки модпака будут работать корректно`)
     event.add('milf.text.curios.already_equipped', 'У вас уже надето: ')
 
     const foodCategoryNamesRu = { fruit: 'фрукты', cooked_meats: 'мясные блюда', bread: 'хлеб' }

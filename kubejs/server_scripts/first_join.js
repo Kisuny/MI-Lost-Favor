@@ -15,4 +15,6 @@ PlayerEvents.loggedIn(event => {
         DEFAULT_MILESTONE_NOTIFICATION_STYLE,
         event.server
     )
+
+    player.tell(Text.translate("milf.text.recommendation_1"))
 })

@@ -95,6 +95,18 @@
 			x: -1.0d
 			y: 31.5d
 		}
+		{
+			id: "27C7EAC6B9307C2F"
+			linked_quest: "0FBB5C5541E982A6"
+			x: -6.5d
+			y: 14.0d
+		}
+		{
+			id: "73CB041FD564EEE0"
+			linked_quest: "146E3BD6BC57D833"
+			x: -15.5d
+			y: 14.0d
+		}
 	]
 	quests: [
 		{
@@ -818,16 +830,23 @@
 		{
 			dependencies: ["3BB0FE129E37B19E"]
 			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"ftbquests:icon": "bosses_of_mass_destruction:item/blazing_eye"
-				}
-				id: "ftbquests:custom_icon"
-			}
 			id: "0621BAAC08B04895"
 			tasks: [{
 				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
 				criterion: ""
+				ftbquestsentityvis_icon: {
+					enabled: 1b
+					entity: "bosses_of_mass_destruction:gauntlet"
+					idle_mode: "USE_GLOBAL"
+					offset_x: 0.0f
+					offset_y: 0.0f
+					rotation: 0.0f
+					silhouette_mode: "NONE"
+					size: 1.0f
+					spin_mode: "USE_GLOBAL"
+					use_as_quest_icon: 0b
+					walk_mode: "USE_GLOBAL"
+				}
 				id: "6303FFC5535427DB"
 				type: "advancement"
 			}]
@@ -970,6 +989,8 @@
 				"6854389FAE6E5634"
 				"3056F19142720FB0"
 				"0752D6DB75CA88BC"
+				"0FBB5C5541E982A6"
+				"146E3BD6BC57D833"
 			]
 			entity_vis_size: 1.0f
 			icon: {
@@ -1357,16 +1378,23 @@
 		{
 			dependencies: ["3BB0FE129E37B19E"]
 			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"ftbquests:icon": "bosses_of_mass_destruction:item/ancient_anima"
-				}
-				id: "ftbquests:custom_icon"
-			}
 			id: "5676B98948194125"
 			tasks: [{
 				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
 				criterion: ""
+				ftbquestsentityvis_icon: {
+					enabled: 1b
+					entity: "bosses_of_mass_destruction:lich"
+					idle_mode: "USE_GLOBAL"
+					offset_x: 0.0f
+					offset_y: 0.0f
+					rotation: 0.0f
+					silhouette_mode: "NONE"
+					size: 1.0f
+					spin_mode: "USE_GLOBAL"
+					use_as_quest_icon: 0b
+					walk_mode: "USE_GLOBAL"
+				}
 				id: "1FB112CE9EDA34BB"
 				type: "advancement"
 			}]
@@ -1376,16 +1404,23 @@
 		{
 			dependencies: ["3BB0FE129E37B19E"]
 			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"ftbquests:icon": "bosses_of_mass_destruction:item/obsidian_heart"
-				}
-				id: "ftbquests:custom_icon"
-			}
 			id: "33AA69A920D7135E"
 			tasks: [{
 				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
 				criterion: ""
+				ftbquestsentityvis_icon: {
+					enabled: 1b
+					entity: "bosses_of_mass_destruction:obsidilith"
+					idle_mode: "USE_GLOBAL"
+					offset_x: 0.0f
+					offset_y: 0.0f
+					rotation: 0.0f
+					silhouette_mode: "NONE"
+					size: 1.0f
+					spin_mode: "USE_GLOBAL"
+					use_as_quest_icon: 0b
+					walk_mode: "USE_GLOBAL"
+				}
 				id: "6DE5C0B61B5F7BD7"
 				type: "advancement"
 			}]
@@ -1395,16 +1430,23 @@
 		{
 			dependencies: ["3BB0FE129E37B19E"]
 			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"ftbquests:icon": "bosses_of_mass_destruction:item/void_thorn"
-				}
-				id: "ftbquests:custom_icon"
-			}
 			id: "0FF37E339976CAAB"
 			tasks: [{
 				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
 				criterion: ""
+				ftbquestsentityvis_icon: {
+					enabled: 1b
+					entity: "bosses_of_mass_destruction:void_blossom"
+					idle_mode: "USE_GLOBAL"
+					offset_x: 0.0f
+					offset_y: 0.0f
+					rotation: 0.0f
+					silhouette_mode: "NONE"
+					size: 1.0f
+					spin_mode: "USE_GLOBAL"
+					use_as_quest_icon: 0b
+					walk_mode: "USE_GLOBAL"
+				}
 				id: "623005CF53946C65"
 				type: "advancement"
 			}]
@@ -2139,6 +2181,19 @@
 				{
 					advancement: "fdbosses:qliphoth_awakening/geburah"
 					criterion: ""
+					ftbquestsentityvis_icon: {
+						enabled: 0b
+						entity: "fdbosses:geburah"
+						idle_mode: "USE_GLOBAL"
+						offset_x: 0.0f
+						offset_y: 0.0f
+						rotation: 0.0f
+						silhouette_mode: "NONE"
+						size: 1.0f
+						spin_mode: "USE_GLOBAL"
+						use_as_quest_icon: 1b
+						walk_mode: "FORCE_ON"
+					}
 					id: "75278B83D03D1236"
 					type: "advancement"
 				}
@@ -3002,6 +3057,19 @@
 			tasks: [{
 				advancement: "eternal_starlight:kill_lunar_monstrosity"
 				criterion: ""
+				ftbquestsentityvis_icon: {
+					enabled: 1b
+					entity: "eternal_starlight:lunar_monstrosity"
+					idle_mode: "USE_GLOBAL"
+					offset_x: 0.0f
+					offset_y: 0.0f
+					rotation: 0.0f
+					silhouette_mode: "NONE"
+					size: 1.0f
+					spin_mode: "USE_GLOBAL"
+					use_as_quest_icon: 0b
+					walk_mode: "USE_GLOBAL"
+				}
 				id: "7F3CBD9C602CF99F"
 				type: "advancement"
 			}]

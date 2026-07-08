@@ -239,7 +239,7 @@
 		"&0Цыганские фокусы!&r"
 	]
 	quest.0651B6B965560FDE.quest_subtitle: "Phantoms? Hate those guys"
-	quest.06793C23D00355A7.quest_desc: ["Magnet? And configurable??? I'll take 2 please"]
+	quest.06793C23D00355A7.quest_desc: ["<keyword>Magnet</keyword>? And <positive>configurable</positive>??? I'll take 2 please"]
 	quest.06B403309D54D86E.quest_desc: [
 		"You may have already noticed this little icon next to pedestal output - you can place <magic>crafting tablets</magic> with desired crafts here! When the pedestal has a <magic>crafting tablet</magic> inside it, it changes behavior - now it only accepts items that could be used in a specified craft (that means that if your crafting table output is, for example, a piston, the pedestal will accept any type of planks, even if you used one specific type in the <magic>tablet</magic>) and nothing else (note: items could &o&lonly&r&r be inserted from the top of the pedestal). Then if the pedestal is powered by redstone, it will output the crafting result from the bottom and &o&lonly&r&r from the bottom"
 		"{@pagebreak}"
@@ -269,9 +269,14 @@
 		""
 		"Наконец, после смешивания ядовитых веществ мне остается только взять лупу и поработать с веществом. При достаточном количестве поисков я могу обнаружить совершенно новую аффинность, связанную с этим ингредиентом. Из-за природы материала этот неэффективный метод - лучшее, что я могу сделать, если хочу создать совершенно новую аффинность."
 	]
+	quest.078A77490809E4E3.quest_desc: [
+		"It's easy to get lost in the <magic>maze</magic>, and there are plenty of <warning>traps</warning> and <property>puzzles</property> - make your way through the maze to reach the <blood>true Azazel</blood>!"
+		"{@pagebreak}"
+		"В <magic>лабиринте</magic> легко запутаться, а так же там множество <warning>ловушек</warning> и <property>пазлов</property>, доберись до <blood>истинного азазеля</blood> пройдя лабиринт!"
+	]
 	quest.07B3FFC9267C5861.quest_desc: ["The <keyword>Maledictus Pact Enhancer</keyword> allows the creation of <warning>cursed items</warning> in the <keyword>Hephaestus Forge</keyword>. It can be found as loot in <magic>Bastion Treasure Rooms</magic> with a chance of <keyword>18%</keyword> per chest. "]
 	quest.07D52B22D8158404.quest_desc: ["<keyword>Mob Predictions</keyword> will need to be processed in a <keyword>Loot Fabricator</keyword>, a device which uses <property>power</property> to convert predictions to <property>mob drops</property>. The drops which are available are based on a list of <keyword>pre-defined items</keyword>, and a <positive>target can be selected</positive> for each type of model. The <keyword>Loot Fabricator</keyword> will remember your choices for each type, so you can <positive>feed multiple types of predictions</positive> into a single fabricator."]
-	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
+	quest.07E78D29C898CE55.quest_desc: ["<named>Wild sheep</named>"]
 	quest.07ED244BED2A7802.quest_desc: ["Training a <keyword>Data Model</keyword> can be done in one of <keyword>two ways</keyword>: with a <keyword>Deep Learner</keyword> or with a <keyword>Simulation Chamber</keyword>. The <keyword>Deep Learner</keyword> allows you to store a few <keyword>Data Models</keyword> within, and <positive>kills</positive> you receive will begin to <property>train the model</property>. All models start out in the <warning>Faulty</warning> state, and must be trained up to &l<positive>Basic</positive> in the <keyword>Deep Learner</keyword>."]
 	quest.080CC80D28F2DBED.quest_desc: [
 		"[ \"You can use a \", { \"text\": \"water container\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38077A8FBBA9C3A1\" } }, \" to catch mobs like fish or axolotls and breed them. It’s a very lag-friendly block - use it instead of having a large number of mobs in your area, as that can negatively impact server performance!\" ]"
@@ -286,16 +291,16 @@
 	]
 	quest.083BEEC631645C14.quest_desc: ["<positive>Summon</positive> <keyword>Possessed Bee</keyword> with <keyword>Ihagan's Enthrallment</keyword> and <positive>kill</positive>"]
 	quest.092205B6B1CC863A.quest_desc: [
-		"A block for vertical movement through blocks!"
+		"A <keyword>block</keyword> for <positive>vertical movement</positive> through blocks!"
 		"{@pagebreak}"
-		"Блок для вертикального перемещения через блоки!"
+		"<keyword>Блок</keyword> для <positive>вертикального перемещения</positive> через блоки!"
 	]
 	quest.0978D0F956B39F80.quest_desc: [
 		"&nFragile&r yet useful, has &#FEECD6Looting III&r by default!"
 		"{@pagebreak}"
 		"&nХрупкий&r, но очень полезный, &#FEECD6добыча&r сразу при тебе!"
 	]
-	quest.0981C6749746653F.quest_desc: ["Draws the world forward to the next sunset. Consumed on use."]
+	quest.0981C6749746653F.quest_desc: ["<positive>Draws</positive> the world forward to the next <magic>sunset</magic>. <warning>Consumed on use</warning>."]
 	quest.0987D26A943A7B60.quest_subtitle: "That's tough"
 	quest.09A4E941382DDCB7.quest_desc: [
 		"Find the <keyword>Gatekeeper</keyword> and <positive>defeating him in a duel</positive>."
@@ -313,17 +318,17 @@
 		"Душу <keyword>в вторую руку</keyword> <positive>пкм по земле</positive> - ставит <keyword>светящийся блок душ</keyword>"
 	]
 	quest.0ACD0476CE4CAED1.quest_desc: [
-		"Allows water to be pumped from rivers into the aqueduct network!"
+		"Allows water to be <positive>pumped</positive> from rivers into the <property>aqueduct network</property>!"
 		""
-		"In the future, you will have the opportunity to generate water infinitely!"
+		"In the future, you will have the opportunity to <positive>generate water infinitely</positive>!"
 		""
-		"&lDoes not consume water in biomes such as rivers and oceans&r"
+		"&l<property>Does not consume water</property> in biomes such as rivers and oceans&r"
 		"{@pagebreak}"
-		"Позволяет выкачивать воду из рек в систему акведуков!"
+		"Позволяет <positive>выкачивать воду</positive> из рек в <property>систему акведуков</property>!"
 		""
-		"В будущем у вас появится возможность генерировать воду бесконечно!"
+		"В будущем у вас появится возможность <positive>генерировать воду бесконечно</positive>!"
 		""
-		"&lНе потребляет воду в таких биомах как: реки, океаны&r"
+		"&l<property>Не потребляет воду</property> в таких биомах как: реки, океаны&r"
 	]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
 	quest.0B37EB64F02A743F.quest_desc: [
@@ -402,7 +407,7 @@
 		"• +2x Recharge Rate"
 	]
 	quest.0D2D182AEBB7368B.title: "Afrit Crystallizer"
-	quest.0D2F0CADB899F43F.quest_desc: ["Hurls entities skyward with considerable force."]
+	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
 	quest.0D70E9CF33C567A7.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>llama</keyword>."]
 	quest.0DBD3895EE949921.quest_desc: [
 		"Ah, a pact that binds forever is a heavy thing. <curse>Geasa</curse> are potent, yes, and can achieve powerful effects, but their downsides are constant companions. These pacts can be <keyword>forsworn</keyword> on the <fire>Brazier</fire>, allowing you to decide what price you are willing to pay."
@@ -424,9 +429,9 @@
 		"Может бы использован для <positive>удаления</positive> <warning>проклятых зачарований</warning> с предметов"
 	]
 	quest.0E157BC29AA2A2F0.quest_desc: [
-		"Where is the gold pot??"
+		"Where is the <named>gold pot</named>??"
 		"{@pagebreak}"
-		"Только &lсамый&r удачивлый сможет найти символ лепреконов!"
+		"Только &lсамый&r удачливый сможет найти <named>символ лепреконов</named>!"
 	]
 	quest.0E16DE12CC7D4CEA.quest_desc: [
 		"Adds small <property>rewarding events</property> such as <magic>Dig Spots</magic>, <magic>Fishing Spots</magic>, <magic>Drop Rushes</magic> and &6Gold Rushes&r."
@@ -463,24 +468,24 @@
 		"Самый простой способ открывать <keyword>Timedoor</keyword>. Загрузи в него <property>Location Card</property> и нажми правой кнопкой, чтобы открыть портал вручную, или подай <warning>Redstone</warning>, если он стоит как блок. Это <property>лучший ранний инструмент</property> для телепорта и ему <warning>не нужен Time Steel</warning>."
 	]
 	quest.0E9FA290A23FF8CC.quest_desc: [
-		"Heart Transplant is a workstation for villagers "
+		"<named>Heart Transplant</named> is a <keyword>workstation</keyword> for villagers "
 		""
-		"Ascetic sells a variety of interesting Risus-related items, such as maps that help you locate various structures from the Risus mod!"
+		"<named>Ascetic</named> sells a variety of interesting <magic>Risus</magic>-related items, such as maps that help you locate various structures from the <magic>Risus</magic> mod!"
 		"{@pagebreak}"
-		"Heart Transplant является рабочей станцией для жителей"
+		"<named>Heart Transplant</named> является <keyword>рабочей станцией</keyword> для жителей"
 		""
-		"Ascetic продает множество интересных вещей связанных с risus, например карты которые помогают найти разные структуры из мода Risus!"
+		"<named>Ascetic</named> продает множество интересных вещей связанных с <magic>Risus</magic>, например карты которые помогают найти разные структуры из мода <magic>Risus</magic>!"
 	]
 	quest.0EBE4702C54278F6.quest_desc: [
-		"It has far more storage space!"
+		"It has far more <property>storage space</property>!"
 		""
-		"&lBefore upgrading, empty your Trinkets Pouch&r"
+		"&lBefore upgrading, empty your <named>Trinkets Pouch</named>&r"
 		"{@pagebreak}"
-		"Имеет куда большую вместительность!"
+		"Имеет куда большую <property>вместительность</property>!"
 		""
-		"&lПеред улучшением опустошите свой Trinkets Pouch&r"
+		"&lПеред улучшением опустошите свой <named>Trinkets Pouch</named>&r"
 	]
-	quest.0EC6045881A3898D.quest_desc: ["Wild pig"]
+	quest.0EC6045881A3898D.quest_desc: ["<named>Wild pig</named>"]
 	quest.0EC60F3FB9DFB29E.quest_desc: [
 		"Required to craft the <keyword>Transmogrification Table</keyword>. Also allows you to make your items <keyword>invisible</keyword>!"
 		""
@@ -499,20 +504,25 @@
 		"Данный свиток &#d33b2b&lпривязывается&r&r к &nтипу предмета&r, &#FEECD6снимать&r и &#FEECD6накладывать&r можно только с того предмета, с которого оно было снято."
 	]
 	quest.0F53AF70888733D6.quest_desc: [
-		"The <keyword>Athame</keyword> is a fast and deadly weapon and you will need to use the <keyword>Diamond Ritual</keyword> to obtain its power"
+		"The <keyword>Athame</keyword> is a fast and deadly weapon and you will need to use the <magic>Diamond Ritual</magic> to obtain its power"
 		"{@pagebreak}"
-		"<keyword>Атамэ</keyword> - быстрое и смертоносное оружие, и чтобы получить его силу, вам придется использовать <keyword>Алмазный ритуал</keyword>."
+		"<keyword>Атамэ</keyword> - быстрое и смертоносное оружие, и чтобы получить его силу, вам придется использовать <magic>Алмазный ритуал</magic>."
 	]
 	quest.0F9AA4AABC8BFBEB.quest_desc: [
 		"<positive>Give</positive> your <keyword>Ars Ecclesia</keyword> to the <keyword>Witch</keyword>!"
 		"{@pagebreak}"
 		"<positive>Отдай</positive> свою книгу (<keyword>Ars Ecclesia</keyword>) <keyword>ведьме</keyword>!"
 	]
+	quest.0FBB5C5541E982A6.quest_desc: [
+		"Defeat <blood>The True Azazel</blood>!"
+		"{@pagebreak}"
+		"Победи <blood>Истинного Азазеля</blood>!"
+	]
 	quest.0FD2406DC9C47871.quest_desc: ["Spiritus is creature essence, the lifeblood of Hellfire Forge crafting. Mark creatures with Throwing Daggers, slay them, and collect the <property>Raw Spiritus</property> that falls."]
 	quest.0FD47B07FF66BDC0.quest_desc: [
-		"A <keyword>portable power source</keyword> that slowly creates <keyword>Chronons</keyword> while it is in your <keyword>inventory</keyword> or <keyword>Curios slot</keyword>. It has no storage of its own, so it is mainly used to <positive>charge</positive> <keyword>Cells</keyword> and <keyword>Batteries</keyword>."
+		"A <keyword>portable power source</keyword> that slowly creates <magic>Chronons</magic> while it is in your <property>inventory</property> or <property>Curios slot</property>. It has no storage of its own, so it is mainly used to <positive>charge</positive> <named>Cells</named> and <named>Batteries</named>."
 		"{@pagebreak}"
-		"Переносной <keyword>источник энергии</keyword>, который медленно создает <keyword>Chronon</keyword>, пока лежит в <keyword>инвентаре</keyword> или слоте <keyword>Curios</keyword>. У него нет собственного запаса, поэтому он нужен в первую очередь для <positive>зарядки</positive> <keyword>ячеек</keyword> и <keyword>батарей</keyword>."
+		"Переносной <keyword>источник энергии</keyword>, который медленно создает <magic>Chronon</magic>, пока лежит в <property>инвентаре</property> или слоте <property>Curios</property>. У него нет собственного запаса, поэтому он нужен в первую очередь для <positive>зарядки</positive> <named>ячеек</named> и <named>батарей</named>."
 	]
 	quest.10400EC9FEFEC45F.quest_desc: [
 		"[ \"from the \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" mod or \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } }, \".\" ]"
@@ -589,13 +599,13 @@
 		"Меняет один тип блока на другой без разрушения постройки. &7Shift-правой кнопкой&r выбери нужный блок, потом включи режим замены и нажми <positive>правой кнопкой</positive> по области. Поддерживает связные области, fuzzy-замену и block entities, если это включено"
 	]
 	quest.126C6EE35C263E3A.quest_desc: [
-		"When <warning>lightning</warning> hits the ground, it leaves <keyword>small shards</keyword> behind."
+		"When <warning>lightning</warning> hits the ground, it leaves <property>small shards</property> behind."
 		""
-		"Use <keyword>lightning rods</keyword> to have more consistent <keyword>Storm Stone</keyword> generation. You can use the <keyword>Fusion Shrine</keyword> to summon <warning>thunderstorms</warning>!"
+		"Use <keyword>lightning rods</keyword> to have more consistent <named>Storm Stone</named> generation. You can use the <magic>Fusion Shrine</magic> to summon <warning>thunderstorms</warning>!"
 		"{@pagebreak}"
-		"Когда <warning>молния</warning> бьёт в землю, на земле остаются <keyword>маленькие осколки шторма</keyword>."
+		"Когда <warning>молния</warning> бьёт в землю, на земле остаются <property>маленькие осколки шторма</property>."
 		""
-		"Используйте <keyword>громоотвод</keyword> чтобы получить <keyword>штормовой осколок</keyword>, используй <keyword>святыню слияния</keyword> чтобы призвать <warning>штормовую погоду</warning>!"
+		"Используйте <keyword>громоотвод</keyword> чтобы получить <named>штормовой осколок</named>, используй <magic>святыню слияния</magic> чтобы призвать <warning>штормовую погоду</warning>!"
 	]
 	quest.127F92D0F2CC923C.quest_desc: [
 		"Using a <keyword>wrench</keyword>, you can <positive>rotate any machine</positive> by right-clicking. You can rotate the <keyword>output side</keyword> by sneaking while you <positive>shift-click</positive>."
@@ -618,9 +628,9 @@
 		"[ \"Встречается в натуральной генерации, так же можно купить на \", { \"text\": \"маркете\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"257157A1AA94B5E4\" } }, \"!\" ]"
 	]
 	quest.12B718B57B898E3A.quest_desc: [
-		"Stores the <keyword>coordinates</keyword> of a <keyword>Timedoor</keyword> destination. <positive>Write it</positive> from a <keyword>marker</keyword>, then <positive>load it</positive> into a <keyword>Timedoor Projector</keyword> or <positive>Tempad</positive> to open the matching portal."
+		"Stores the <property>coordinates</property> of a <named>Timedoor</named> destination. <positive>Write it</positive> from a <keyword>marker</keyword>, then <positive>load it</positive> into a <named>Timedoor Projector</named> or <named>Tempad</named> to open the matching portal."
 		"{@pagebreak}"
-		"Сохраняет <keyword>координаты</keyword> точки <keyword>Timedoor</keyword>. <positive>Запиши</positive> её от <keyword>метки</keyword>, затем <positive>загрузи</positive> в <keyword>Timedoor Projector</keyword> или <positive>Tempad</positive>, чтобы открыть нужный портал."
+		"Сохраняет <property>координаты</property> точки <named>Timedoor</named>. <positive>Запиши</positive> её от <keyword>метки</keyword>, затем <positive>загрузи</positive> в <named>Timedoor Projector</named> или <named>Tempad</named>, чтобы открыть нужный портал."
 	]
 	quest.12EA2728AD90FABD.quest_desc: [
 		"Can <positive>cook food</positive>. You can also <positive>light torches</positive> by <positive>Shift-clicking</positive> it"
@@ -630,9 +640,9 @@
 	quest.13134EE8E1631EBB.quest_desc: [""]
 	quest.1325489D5E635F06.quest_subtitle: "Banners can be repainted using souls"
 	quest.1376283846993363.quest_desc: [
-		"Once you've obtained your first <keyword>Soul Shards</keyword>, you'll be able to <positive>summon</positive> the mobs you need and kill them again and again!"
+		"Once you've obtained your first <soul>Soul Shards</soul>, you'll be able to <positive>summon</positive> the mobs you need and kill them again and again!"
 		"{@pagebreak}"
-		"Как только вы получите свои первые <keyword>Осколки души</keyword>, вы сможете <positive>призывать</positive> нужных вам мобов и убивать их снова и снова!"
+		"Как только вы получите свои первые <soul>Осколки души</soul>, вы сможете <positive>призывать</positive> нужных вам мобов и убивать их снова и снова!"
 	]
 	quest.137E20A86306BF4A.quest_desc: [
 		"&#b0620eNothing&r difficult, right? "
@@ -679,9 +689,9 @@
 		"Советы: сначала тестируй на неживых блоках, помечай точки назначения, держи запас фокусов."
 	]
 	quest.146059B6FF1324D4.quest_desc: [
-		"The Carving Knife is a simple tool crafted from a Stick, an Iron Ingot and a Crystallized Bond. While it can be used as a Sword in combat - even supporting the same enchantments - it is ill-advised to do so. Instead, it is much more useful for carving off flesh from Tissue blocks, tearing scutes off of Turtles or harvesting the horns of a Goat."
+		"The <keyword>Carving Knife</keyword> is a simple tool crafted from a <property>Stick</property>, an <property>Iron Ingot</property> and a <bone>Crystallized Bond</bone>. While it can be used as a Sword in combat - even supporting the same enchantments - it is <warning>ill-advised</warning> to do so. Instead, it is much more useful for <positive>carving off flesh</positive> from Tissue blocks, tearing scutes off of Turtles or harvesting the horns of a Goat."
 		"{@pagebreak}"
-		"Нож для разделки — это простой инструмент, изготовленный из палки, железного слитка и кристаллизованной связки. Хотя его можно использовать в бою как меч — он даже поддерживает те же зачарования — делать это не рекомендуется. Вместо этого он гораздо полезнее для снятия мяса с блоков ткани, сдирания панциря с черепах или сбора рогов козлов."
+		"<keyword>Нож для разделки</keyword> — это простой инструмент, изготовленный из <property>палки</property>, <property>железного слитка</property> и <bone>кристаллизованной связки</bone>. Хотя его можно использовать в бою как меч — он даже поддерживает те же зачарования — делать это <warning>не рекомендуется</warning>. Вместо этого он гораздо полезнее для <positive>снятия мяса</positive> с блоков ткани, сдирания панциря с черепах или сбора рогов козлов."
 	]
 	quest.146496E17DF6BE97.quest_desc: [
 		"The &#9BB8EDEnder Dropper&r is an opposite of the &#9BB8EDEnder Hopper&r. With each &#d33b2bredstone pulse&r, it ejects an item from your personal &#9BB8EDEnder Chest&r. "
@@ -696,10 +706,15 @@
 		""
 		"Эндер-Раздатчик работает только тогда, когда вы находитесь онлайн."
 	]
-	quest.14948686DB724C19.quest_desc: [
-		"If you combine it with the evil essence on the anvil, it will yield charges for the Totem of Undying"
+	quest.146E3BD6BC57D833.quest_desc: [
+		"Defeat <blood>The Divine Chariot Azazel</blood> and get the <named>mask</named> - it'll come in handy later!"
 		"{@pagebreak}"
-		"Если объединить на наковальне вместе с Evil Essence это даст заряды Totem Of Undying"
+		"Победи <blood>Великую Божественную Колесницу Азазель</blood> и добудь <named>маску</named>, которая пригодится в будущем!"
+	]
+	quest.14948686DB724C19.quest_desc: [
+		"If you combine it with the <curse>evil essence</curse> on the anvil, it will yield charges for the <named>Totem of Undying</named>"
+		"{@pagebreak}"
+		"Если объединить на наковальне вместе с <curse>Evil Essence</curse> это даст заряды <named>Totem Of Undying</named>"
 	]
 	quest.14A425365D35DE37.quest_desc: ["Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"]
 	quest.14BA9A5CAC394A27.quest_desc: ["Allows the plant on which it is used to <positive>fully grow</positive> with only <keyword>one</keyword> use compared to <keyword>Bone Meal</keyword>. You can also make <keyword>Magical Farm Land</keyword> with it."]
@@ -728,13 +743,13 @@
 	]
 	quest.15257CFF2D9E8EE6.quest_subtitle: "WIP"
 	quest.15C276FD883F33F5.quest_desc: [""]
-	quest.16219C02EDE3F680.quest_desc: ["Получает сурс из сурс джаров и превращает его в жидкий сурс, далее с ним можно много приколов делать, например генератор сурс стоуна лава + ликвид сурс "]
+	quest.16219C02EDE3F680.quest_desc: ["Получает <keyword>сурс</keyword> из <keyword>сурс джаров</keyword> и превращает его в <property>жидкий сурс</property>, далее с ним можно много приколов делать, например <magic>генератор сурс стоуна</magic> лава + ликвид сурс "]
 	quest.1664E9D5D87BDF33.quest_desc: [
 		"It has been noted that the book on this table consumes quite a lot of <warning>FPS</warning>, so <warning>keep that in mind</warning>!"
 		"{@pagebreak}"
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду</warning>!"
 	]
-	quest.16C5B67E3D1F579C.quest_desc: ["Scribed with a Block of Lapis and awakened by a Sea Pickle. Pipes water into every fluid container touching its six faces; every 5 ticks it deposits up to 6 buckets, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and parks completely on a redstone signal."]
+	quest.16C5B67E3D1F579C.quest_desc: ["Scribed with a <keyword>Block of Lapis</keyword> and awakened by a <soul>Sea Pickle</soul>. <positive>Pipes water</positive> into every fluid container touching its six faces; every 5 ticks it deposits up to <property>6 buckets</property>, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and <warning>parks completely</warning> on a redstone signal."]
 	quest.16CEDB259696495B.quest_desc: [
 		"As with previous <keyword>familiars</keyword> and <keyword>Possessed mobs</keyword>, read about them in the <keyword>book</keyword>."
 		"{@pagebreak}"
@@ -795,18 +810,18 @@
 	]
 	quest.189B4E6D9B694118.title: "Tier III Altar"
 	quest.18B86EAED5FBB821.quest_desc: [
-		"Crafted from Skin Boots combined with Blood Feathers and Ashen Remains, finished off with an Ophanim imitation - a \"blessed\" pair of boots that drastically boosts the wearer's agility."
+		"Crafted from <keyword>Skin Boots</keyword> combined with <blood>Blood Feathers</blood> and <bone>Ashen Remains</bone>, finished off with an <magic>Ophanim</magic> imitation - a \"blessed\" pair of boots that drastically <positive>boosts the wearer's agility</positive>."
 		""
-		"Tradeoff: defense is nearly nonexistent, and they only accept Unbreaking and Mending enchantments. Still, the massive mobility gain often makes them worth wearing over regular armor."
+		"Tradeoff: defense is <warning>nearly nonexistent</warning>, and they only accept Unbreaking and Mending enchantments. Still, the massive mobility gain often makes them worth wearing over regular armor."
 		"{@pagebreak}"
-		"Создаются из Skin Boots в сочетании с Blood Feathers и Ashen Remains, дополненные имитацией Ophanim - \"благословенные\" ботинки, резко увеличивающие подвижность владельца."
+		"Создаются из <keyword>Skin Boots</keyword> в сочетании с <blood>Blood Feathers</blood> и <bone>Ashen Remains</bone>, дополненные имитацией <magic>Ophanim</magic> - \"благословенные\" ботинки, резко увеличивающие <positive>подвижность владельца</positive>."
 		""
-		"Компромисс: защита практически отсутствует, а из зачарований принимают только Unbreaking и Mending. Тем не менее огромный прирост скорости часто оправдывает их использование вместо обычной брони."
+		"Компромисс: защита <warning>практически отсутствует</warning>, а из зачарований принимают только Unbreaking и Mending. Тем не менее огромный прирост скорости часто оправдывает их использование вместо обычной брони."
 	]
 	quest.18C81CA675805679.quest_desc: [
-		"The Soul Scratcher holds the spirit-burning Soul Fire. As such, it is considerably more powerful when wielded against living beings. Unfortunately, this does make it much weaker against enemies without soul, such as the Undead or the Offsprings."
+		"The <keyword>Soul Scratcher</keyword> holds the spirit-burning <soul>Soul Fire</soul>. As such, it is considerably <positive>more powerful</positive> when wielded against living beings. Unfortunately, this does make it <warning>much weaker</warning> against enemies without soul, such as the Undead or the Offsprings."
 		"{@pagebreak}"
-		"«Душераздиратель» хранит в себе душепожирающий Огонь Души. Поэтому он значительно сильнее, когда используется против живых существ. К сожалению, из-за этого он гораздо слабее против врагов, лишенных души."
+		"«<keyword>Душераздиратель</keyword>» хранит в себе душепожирающий <soul>Огонь Души</soul>. Поэтому он значительно <positive>сильнее</positive>, когда используется против живых существ. К сожалению, из-за этого он гораздо <warning>слабее</warning> против врагов, лишенных души."
 	]
 	quest.19300837BD132C67.quest_desc: ["<positive>Бустит по горизонтали</positive> когда встаёшь"]
 	quest.19545E28C84E87B2.quest_desc: [
@@ -856,13 +871,13 @@
 		"<keyword>Рута</keyword>: <property>Увеличение скорости роста растений</property>"
 	]
 	quest.199BAB67264283C1.quest_desc: [
-		"The first proper brew of the \"Superstitiously Enormous Gnomes Summit\" (SEGS) department of P.L.A.C.E.R.S., which was \"founded\" in 19■■. The concoction was allowed for public usage outside of the Whimsy Induced Polygon (WIP) range and approved by John the Redhatted themself after numerous proper trials on \"volunteers.\" Brings the one consuming it unconscious while the field agents in their pointy red hats transport the applicant to the location of one's choosing. The process is accomplished with the extremely high (but not unhealthy, we assure you) dosage of amnestics so that, in the eyes of the user, the whole operation happens instantaneously. The whole procedure is handled by professionals of their trade, and we guarantee the safety of both the customer and their belongings."
+		"The first proper brew of the \"Superstitiously Enormous Gnomes Summit\" (SEGS) department of P.L.A.C.E.R.S., which was \"founded\" in 19■■. The concoction was allowed for public usage outside of the Whimsy Induced Polygon (WIP) range and approved by John the Redhatted themself after numerous proper trials on \"volunteers.\" <warning>Brings the one consuming it unconscious</warning> while the field agents in their pointy red hats <positive>transport the applicant</positive> to the <magic>location of one's choosing</magic>. The process is accomplished with the extremely high (but not unhealthy, we assure you) dosage of amnestics so that, in the eyes of the user, the whole operation happens instantaneously. The whole procedure is handled by professionals of their trade, and we guarantee the safety of both the customer and their belongings."
 		""
 		"&z🛈 The company policy only allows for ONE desired destination to be saved in the records, and only in the \"looking directly at them\" proximity of beds or campfires (don't ask us about reasons, that's a corporate secret).&r"
 		"{@pagebreak}"
-		"«Зелье Возвращения» позволяет привязать точку телепортации к большинству кроватей и костров, присутствующих в модпаке; после применения этого зелья игрок телепортируется к привязанной точке."
+		"«<named>Зелье Возвращения</named>» позволяет <positive>привязать точку телепортации</positive> к большинству кроватей и костров, присутствующих в модпаке; после применения этого зелья игрок <positive>телепортируется</positive> к привязанной точке."
 		""
-		"&z🛈 Зелье привязывается только к одному источнику.&r"
+		"&z🛈 Зелье привязывается только к <property>одному источнику</property>.&r"
 	]
 	quest.19C9F5C94F3F8853.quest_desc: [
 		"If you need a lot of <keyword>deer antlers</keyword>, this is the best option available to you right now!"
@@ -900,11 +915,11 @@
 		"• Чтобы <warning>выключить</warning>, <positive>поместите полный блок над ним</positive>."
 		"• Имеет <keyword>фильтры</keyword>, через которые всасываются предметы."
 	]
-	quest.1A16CF965AF2EEC5.quest_desc: ["To impose order on the armour's undirected growth, the Vitaemancer wears the Training Bracelet, a focus inscribed in an Alchemy Array. With a copy of the relevant Tome in hand, you can set a level cap for any upgrade; once the armour reaches that limit it ceases training the skill. Only one bracelet is active at a time (priority: off-hand, Curios, main inventory, then add-ons). To allow all upgrades except one, set the bracelet to 'allow others' mode and cap the unwanted skill at level 0."]
-	quest.1A2B3C4D5E6F7003.quest_desc: ["Place the <keyword>Ara Vitae</keyword> - the sacred basin at the heart of vitaemancy. Right-click it to deposit items for altar crafting. EV drains steadily during workings; <warning>crimson motes</warning> rising from the surface confirm it is underway."]
+	quest.1A16CF965AF2EEC5.quest_desc: ["To impose order on the armour's undirected growth, the <keyword>Vitaemancer</keyword> wears the <named>Training Bracelet</named>, a focus inscribed in an <magic>Alchemy Array</magic>. With a copy of the relevant <property>Tome</property> in hand, you can <positive>set a level cap</positive> for any upgrade; once the armour reaches that limit it ceases training the skill. Only one bracelet is active at a time (priority: off-hand, Curios, main inventory, then add-ons). To allow all upgrades except one, set the bracelet to <warning>'allow others'</warning> mode and cap the unwanted skill at level 0."]
+	quest.1A2B3C4D5E6F7003.quest_desc: ["Place the <named>Ara Vitae</named> - the sacred basin at the heart of <magic>vitaemancy</magic>. Right-click it to deposit items for altar crafting. <property>EV</property> drains steadily during workings; <blood>crimson motes</blood> rising from the surface confirm it is underway."]
 	quest.1A2B3C4D5E6F7003.title: "Construct the Ara Vitae"
 	quest.1A2B3C4D5E6F7004.quest_desc: [
-		"Lay a <keyword>diamond</keyword> upon the bare altar. With no <positive>Essentia Vitae</positive> of its own, the altar draws <blood>blood</blood> from any nearby who carry no <keyword>Blood Orb</keyword>, refining it into <positive>Essentia Vitae (EV)</positive> until the working completes. "
+		"Lay a <keyword>diamond</keyword> upon the bare altar. With no <positive>Essentia Vitae</positive> of its own, the altar draws <blood>blood</blood> from any nearby who carry no <named>Blood Orb</named>, refining it into <positive>Essentia Vitae (EV)</positive> until the working completes. "
 		""
 		"<positive>It never kills, taking only what it needs.</positive>"
 		"{@pagebreak}"
@@ -913,26 +928,26 @@
 		"<positive>Он никогда не убивает, беря только то, что ему необходимо.</positive>"
 	]
 	quest.1A2B3C4D5E6F7004.title: "Novicius Orb of Vitae"
-	quest.1A2B3C4D5E6F7005.quest_desc: ["The fundamental crafting substrate for all vitaemantic creations. Costs <keyword>1,000 EV</keyword> at the Tier 0 altar. Nearly every recipe will ask for a Tabula - keep a stack on hand."]
+	quest.1A2B3C4D5E6F7005.quest_desc: ["The fundamental crafting substrate for all <magic>vitaemantic</magic> creations. Costs <keyword>1,000 EV</keyword> at the Tier 0 altar. Nearly every recipe will ask for a <named>Tabula</named> - keep a stack on hand."]
 	quest.1A2B3C4D5E6F7006.quest_desc: ["Mark your prey. Throwing an <keyword>Iron Throwing Dagger</keyword> at a creature marks it - when the marked creature dies, it releases <property>Raw Spiritus</property>. You will need this later."]
-	quest.1A2B3C4D5E6F7007.quest_desc: ["Runes are inscribed plates placed around the Ara Vitae basin to enhance it. Craft <keyword>8 Rune Blanks</keyword> as the foundation - these will be upgraded into specialized runes."]
+	quest.1A2B3C4D5E6F7007.quest_desc: ["Runes are inscribed plates placed around the <named>Ara Vitae</named> basin to enhance it. Craft <keyword>8 Rune Blanks</keyword> as the foundation - these will be upgraded into specialized runes."]
 	quest.1A2B3C4D5E6F7007.title: "First Runes"
-	quest.1A2B3C4D5E6F7009.quest_desc: ["Forged in the <keyword>Tier I altar</keyword> for <keyword>5,000 EV</keyword>. Expands your Anima further and unlocks <property>off-hand EV harvesting</property> - hold the orb in your off hand to collect EV directly from kills."]
+	quest.1A2B3C4D5E6F7009.quest_desc: ["Forged in the <keyword>Tier I altar</keyword> for <keyword>5,000 EV</keyword>. Expands your <magic>Anima</magic> further and unlocks <property>off-hand EV harvesting</property> - hold the orb in your off hand to collect EV directly from kills."]
 	quest.1A2B3C4D5E6F7009.title: "Discipulus Orb of Vitae"
-	quest.1A2B3C4D5E6F700A.quest_desc: ["Tier I crafting substrate. Costs <keyword>2,000 EV</keyword>. Required for advanced vitaemantic recipes."]
-	quest.1A2B3C4D5E6F700B.quest_desc: ["Place the <keyword>Tabula Vitae</keyword> - your alchemical workbench for brewing <property>Alchemy Flasks</property>, crafting <property>Anointments</property>, applying <property>Reagents</property> to tools, and filling Sigils with their elemental base items."]
+	quest.1A2B3C4D5E6F700A.quest_desc: ["Tier I crafting substrate. Costs <keyword>2,000 EV</keyword>. Required for advanced <magic>vitaemantic</magic> recipes."]
+	quest.1A2B3C4D5E6F700B.quest_desc: ["Place the <named>Tabula Vitae</named> - your alchemical workbench for brewing <property>Alchemy Flasks</property>, crafting <property>Anointments</property>, applying <property>Reagents</property> to tools, and filling Sigils with their elemental base items."]
 	quest.1A2B3C4D5E6F700B.title: "Place the Tabula Vitae"
 	quest.1A2B3C4D5E6F700C.quest_desc: [
-		"Potion-brewing is a pedestrian art. Any hedge-witch with a cauldron can boil nether wart into a serviceable tincture. By weaving Essentia Vitae into the brewing process, you transcend the crude limitations of conventional alchemy."
+		"Potion-brewing is a pedestrian art. Any hedge-witch with a cauldron can boil nether wart into a serviceable tincture. By weaving <positive>Essentia Vitae</positive> into the brewing process, you <magic>transcend</magic> the crude limitations of conventional alchemy."
 		""
-		"Forged upon the Ara Vitae, the Alchemy Flask holds eight doses of whatever elixir you fill it with. Once drained to its dregs, rinse it with water to prepare a fresh vessel. Flasks may also be transmuted into projectile forms:"
+		"Forged upon the <named>Ara Vitae</named>, the <keyword>Alchemy Flask</keyword> holds eight doses of whatever elixir you fill it with. Once drained to its dregs, rinse it with water to prepare a fresh vessel. Flasks may also be transmuted into projectile forms:"
 	]
 	quest.1A2B3C4D5E6F700D.quest_desc: [""]
 	quest.1A2B3C4D5E6F700D.title: "Tier II Altar"
-	quest.1A2B3C4D5E6F700E.quest_desc: ["Forged in the <keyword>Tier II altar</keyword> for <keyword>25,000 EV</keyword>. The Veneficus Orb significantly expands your Anima pool and is required to conduct advanced rituals."]
+	quest.1A2B3C4D5E6F700E.quest_desc: ["Forged in the <keyword>Tier II altar</keyword> for <keyword>25,000 EV</keyword>. The <named>Veneficus Orb</named> significantly expands your <magic>Anima</magic> pool and is required to conduct advanced rituals."]
 	quest.1A2B3C4D5E6F700E.title: "Veneficus Orb of Vitae"
 	quest.1A2B3C4D5E6F700F.quest_desc: [
-		"Place the <keyword>Master Ritual Stone</keyword> to begin conducting rituals. Use the <property>Ritual Diviner</property> to see the stone placement pattern, then activate with an <keyword>Activation Crystal</keyword>."
+		"Place the <named>Master Ritual Stone</named> to begin conducting rituals. Use the <property>Ritual Diviner</property> to see the stone placement pattern, then activate with an <magic>Activation Crystal</magic>."
 		""
 		"You can read about existing rituals in the guidebook!"
 		"{@pagebreak}"
@@ -947,23 +962,23 @@
 		"Right-click the Master Ritual Stone along with a Ritual Stone in your inventory to build the ritual-structure"
 	]
 	quest.1A2B3C4D5E6F7010.title: "Ritual Diviner"
-	quest.1A2B3C4D5E6F7011.quest_desc: ["The forge of demons. The <keyword>Hellfire Forge</keyword> crafts <property>Sentient Equipment</property>, <property>Explosive Charges</property>, and <property>Spiritus Gems</property> using Raw Spiritus as fuel. It is the core machine of the mid-game."]
+	quest.1A2B3C4D5E6F7011.quest_desc: ["The forge of demons. The <fire>Hellfire Forge</fire> crafts <property>Sentient Equipment</property>, <property>Explosive Charges</property>, and <property>Spiritus Gems</property> using Raw Spiritus as fuel. It is the core machine of the mid-game."]
 	quest.1A2B3C4D5E6F7011.title: "Place the Hellfire Forge"
-	quest.1A2B3C4D5E6F7012.quest_desc: ["Tier II crafting substrate. Costs <keyword>5,000 EV</keyword>. Required for the <property>Sigil of Bound Treasures</property> and other advanced vitaemantic items."]
+	quest.1A2B3C4D5E6F7012.quest_desc: ["Tier II crafting substrate. Costs <keyword>5,000 EV</keyword>. Required for the <property>Sigil of Bound Treasures</property> and other advanced <magic>vitaemantic</magic> items."]
 	quest.1A2B3C4D5E6F7018.quest_desc: [
-		"The armour worn by a Vitaemancer is no inert collection of plates."
+		"The armour worn by a <keyword>Vitaemancer</keyword> is no inert collection of plates."
 		""
-		"Sentient Armor breathes, learns, and grows alongside its wearer. Each piece begins equivalent to iron in its protection but carries 100 Upgrade Points that it spends as you teach it new skills."
+		"<named>Sentient Armor</named> breathes, learns, and grows alongside its wearer. Each piece begins equivalent to iron in its protection but carries <property>100 Upgrade Points</property> that it spends as you teach it new skills."
 		""
-		"The armour is alive, and it watches everything you do. Be deliberate in what you teach it. Hold sneak while examining a piece to see what it has learned so far."
+		"The armour is <warning>alive</warning>, and it watches everything you do. Be deliberate in what you teach it. Hold sneak while examining a piece to see what it has learned so far."
 	]
 	quest.1A2B3C4D5E6F7018.title: "Sentient Armour Set"
-	quest.1A2B3C4D5E6F7019.quest_desc: ["Tier III crafting substrate. Costs <keyword>15,000 EV</keyword>. Required for the <property>Ritual Diviner [Dusk]</property> and high-tier vitaemantic instruments."]
-	quest.1A2B3C4D5E6F7019B.quest_desc: ["The Dusk Diviner enables Tier III rituals: <property>Sentient Evolution</property> (expands armor to 300 Upgrade Points), <property>Sentient Extraction</property>, and the <property>Highway to Hell</property> portal ritual for full Endless Realm access."]
+	quest.1A2B3C4D5E6F7019.quest_desc: ["Tier III crafting substrate. Costs <keyword>15,000 EV</keyword>. Required for the <property>Ritual Diviner [Dusk]</property> and high-tier <magic>vitaemantic</magic> instruments."]
+	quest.1A2B3C4D5E6F7019B.quest_desc: ["The <named>Dusk Diviner</named> enables Tier III rituals: <property>Sentient Evolution</property> (expands armor to 300 Upgrade Points), <property>Sentient Extraction</property>, and the <fire>Highway to Hell</fire> portal ritual for full Endless Realm access."]
 	quest.1A2B3C4D5E6F7019B.title: "Ritual Diviner [Dusk]"
 	quest.1A2B3C4D5E6F701A.quest_desc: [""]
 	quest.1A2B3C4D5E6F701A.title: "Tier IV Altar"
-	quest.1A2B3C4D5E6F701B.quest_desc: ["The penultimate orb. Forged in the <keyword>Tier IV altar</keyword> for <keyword>80,000 EV</keyword>. Grants vast Anima reserves sufficient to sustain even the most demanding Tier IV rituals continuously."]
+	quest.1A2B3C4D5E6F701B.quest_desc: ["The penultimate orb. Forged in the <keyword>Tier IV altar</keyword> for <keyword>80,000 EV</keyword>. Grants vast <magic>Anima</magic> reserves sufficient to sustain even the most demanding Tier IV rituals continuously."]
 	quest.1A2B3C4D5E6F701B.title: "Dominus Orb of Vitae"
 	quest.1A2B3C4D5E6F701D.quest_desc: ["Tier IV crafting substrate. Costs <keyword>30,000 EV</keyword>. The highest crafting tablet, required for Tier V altar construction components."]
 	quest.1A2B3C4D5E6F701F.quest_desc: [""]
@@ -982,9 +997,9 @@
 	]
 	quest.1AE0400A3C0AF316.quest_desc: ["<keyword>Looks OP</keyword> for such an easy craft, so idk where to put it :p"]
 	quest.1B46FCF75F842E87.quest_desc: [
-		"You can only obtain it by killing the Wither while under a curse!"
+		"You can only obtain it by killing the <blood>Wither</blood> while under a <curse>curse</curse>!"
 		"{@pagebreak}"
-		"Можно получить только при убийстве Wither будучи проклятым!"
+		"Можно получить только при убийстве <blood>Wither</blood> будучи <curse>проклятым</curse>!"
 	]
 	quest.1B978110B709BF52.quest_subtitle: "Holds 512 items"
 	quest.1BBD0967E43849FF.quest_desc: [
@@ -992,8 +1007,12 @@
 		"{@pagebreak}"
 		"Для открытия крафта необходимо <positive>выбить</positive> данный ресурс из руды."
 	]
-	quest.1BCEB13A38CE4D8E.quest_desc: ["Позволяет <positive>искать руду</positive> в чанках"]
-	quest.1BDEFAB880413159.quest_desc: ["Advances the world to the next sunrise. Consumed on use."]
+	quest.1BCEB13A38CE4D8E.quest_desc: [
+		"Allows you to <positive>search for ore</positive> in chunks"
+		"{@pagebreak}"
+		"Позволяет <positive>искать руду</positive> в чанках"
+	]
+	quest.1BDEFAB880413159.quest_desc: ["<positive>Advances</positive> the world to the next <magic>sunrise</magic>. <warning>Consumed on use</warning>."]
 	quest.1BFC38890CBCF4F4.quest_desc: ["The <property>magnetized modifier</property> can only be used on <keyword>Boots</keyword>. When boots with this modifier are <positive>equipped</positive>, the item pick-up range of the player will increase by <keyword>1.5 blocks</keyword>."]
 	quest.1C0F24C077FF849F.quest_desc: [
 		"You can find more <property>rituals</property> in the <keyword>book</keyword>; we only include the most useful ones!"
@@ -1015,7 +1034,16 @@
 		"{@pagebreak}"
 		"Хранит несколько <property>Location Card</property> в одном предмете. Tempad читает его автоматически, поэтому в нем удобно носить общие точки и наборы мест для телепорта."
 	]
-	quest.1D51E63C464298A6.quest_desc: ["Draws dropped items within 2 blocks toward its centre. Place atop a chest and collected items deposit directly inside."]
+	quest.1D51E63C464298A6.quest_desc: ["<positive>Draws</positive> dropped items within <property>2 blocks</property> toward its centre. Place atop a chest and collected items deposit directly inside."]
+	quest.1D85685CE954626B.quest_desc: [
+		"Find the little <soul>ghastlys</soul> and tame them - they'll help you find the <named>Mansion</named>!"
+		""
+		"Use <positive>Crimson Roots</positive> to tame it"
+		"{@pagebreak}"
+		"Найдите маленьких <soul>ghastly</soul> и приручите их, они помогут найти <named>Mansion</named>!"
+		""
+		"Для приручения используйте <positive>Crimson Roots</positive>"
+	]
 	quest.1E0A4735FB02983C.quest_desc: [
 		"Stores <property>Chronon energy</property> for your devices. Keep it in your inventory or a &6Curios slot&r, and it will feed power to carried Tempad items automatically."
 		"{@pagebreak}"
@@ -1043,8 +1071,6 @@
 		""
 		"{@pagebreak}"
 		"Превращает <keyword>слитки в стержни</keyword>, а <keyword>стержни в болты</keyword> при наличии <keyword>смазки</keyword>."
-		""
-		"ТРУБЫ"
 	]
 	quest.1E4A4AD1899325D3.quest_desc: [
 		"By pressing <keyword>'P'</keyword> on any side of a block, you can stick up to <keyword>4 items</keyword> to it, so it's time to open your own flea market with strong desires to unlock better storage solutions!"
@@ -1073,11 +1099,11 @@
 		"{@pagebreak}"
 		"[ \"«<keyword>Красное удобрение</keyword>» можно использовать на почве для <positive>ускорения роста</positive>. Его можно сочетать с «\", { \"text\": \"Жёлтым удобрением\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F12E543084C6825\" } }, \"».\" ]"
 	]
-	quest.1F6BDB6298315AF5.quest_desc: ["Converts nearby water sources to ice and covers exposed solid ground in a thin layer of snow within a 3-block radius. Dissipates once everything in reach is frozen."]
+	quest.1F6BDB6298315AF5.quest_desc: ["<positive>Converts</positive> nearby water sources to <property>ice</property> and covers exposed solid ground in a thin layer of <property>snow</property> within a <keyword>3-block radius</keyword>. Dissipates once everything in reach is frozen."]
 	quest.1F7DB003CE2F7141.quest_desc: [
-		"The Existential Executioner allows you to inflict the Existential Burn state onto enemies. It's best used against enemies with considerable regeneration or healing capabilities; or to otherwise slowly whittle down a greater target."
+		"The <keyword>Existential Executioner</keyword> allows you to inflict the <curse>Existential Burn</curse> state onto enemies. It's best used against enemies with considerable regeneration or healing capabilities; or to otherwise slowly whittle down a greater target."
 		"{@pagebreak}"
-		"«Экзистенциальный палач» позволяет накладывать на врагов состояние «Экзистенциальный ожог». Его лучше всего использовать против врагов, обладающих значительной способностью к регенерации или исцелению, либо для постепенного истощения более сильной цели."
+		"«<keyword>Экзистенциальный палач</keyword>» позволяет накладывать на врагов состояние «<curse>Экзистенциальный ожог</curse>». Его лучше всего использовать против врагов, обладающих значительной способностью к регенерации или исцелению, либо для постепенного истощения более сильной цели."
 	]
 	quest.1F7DF0379C917C3B.quest_desc: [
 		"Well, if it works, it works, i guess..."
@@ -1127,16 +1153,16 @@
 	]
 	quest.2141539997D6480F.quest_subtitle: "ADHD edition"
 	quest.2141539997D6480F.title: "<pend>Hi wrld"
-	quest.217DD26BDF6AB040.quest_desc: ["Launches entities horizontally in the direction they face."]
+	quest.217DD26BDF6AB040.quest_desc: ["<positive>Launches</positive> entities horizontally in the direction they face."]
 	quest.21EC4B09DE3636B8.quest_desc: [
-		"Give your Ars Ecclesia to the village cleric!"
+		"Give your <named>Ars Ecclesia</named> to the village cleric!"
 		"{@pagebreak}"
-		"Отдай свою книгу(Ars Ecclesia) жителю-священнику!"
+		"Отдай свою книгу(<named>Ars Ecclesia</named>) жителю-священнику!"
 	]
 	quest.22128FA939CC5229.quest_desc: [
-		"Kill the cow near the Goblet!"
+		"<positive>Kill</positive> the cow near the <blood>Goblet</blood>!"
 		"{@pagebreak}"
-		"Убей корову возле Чаши!"
+		"<positive>Убей</positive> корову возле <blood>Чаши</blood>!"
 	]
 	quest.22128FA939CC5229.title: "Goblet with cow blood"
 	quest.223D9E832411A590.quest_desc: [
@@ -1160,9 +1186,9 @@
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду!</warning>"
 	]
 	quest.228901DACDBF42E3.quest_desc: [
-		"Where flasks empower the body, Anointments empower the hand. These are alchemical coatings for your tools, weapons, and Charges. Hold the anointment in one hand and press [Use] to apply it to the item in the other; not every coating suits every instrument, choose wisely. An anointment may also be applied via a smithing table where it takes the place of a smithing template, useful for two-handed weapons."
+		"Where flasks empower the body, <keyword>Anointments</keyword> empower the hand. These are alchemical coatings for your tools, weapons, and Charges. Hold the anointment in one hand and press [Use] to apply it to the item in the other; not every coating suits every instrument, choose wisely. An anointment may also be applied via a smithing table where it takes the place of a smithing template, useful for two-handed weapons."
 		""
-		"Unlike elixirs, anointments are not governed by time. They diminish with each use of the coated tool, fading stroke by stroke until spent. They are held in the Tabula Vial; ordinary glass cannot withstand the reactive compounds within."
+		"Unlike elixirs, anointments are <warning>not governed by time</warning>. They diminish with each use of the coated tool, fading stroke by stroke until spent. They are held in the <named>Tabula Vial</named>; ordinary glass cannot withstand the reactive compounds within."
 	]
 	quest.22B7317BB018972A.quest_desc: [
 		"&4Separates&r resources into their components via fast motor go brrr."
@@ -1187,9 +1213,9 @@
 		"{image:milf:textures/quest_pic/clibano.png width:100 height:100 align:center fit:true}"
 	]
 	quest.22C5E661BDA4DCC2.quest_desc: [
-		"You can write your own message in a bottle and toss it into the sea—other players will have the chance to fish it out and read it!"
+		"You can write your own <named>message in a bottle</named> and toss it into the sea—other players will have the chance to <positive>fish it out</positive> and read it!"
 		"{@pagebreak}"
-		"Можно сделать своё послание в бутылке и бросить его в море, у других игроков появится возможность выловить ваше послание и прочитать его!"
+		"Можно сделать своё <named>послание в бутылке</named> и бросить его в море, у других игроков появится возможность <positive>выловить</positive> ваше послание и прочитать его!"
 	]
 	quest.22F6F4D5CF2C2BE8.quest_desc: [
 		"First things first, get some <keyword>gravel</keyword> to begin your journey, it'll surely be handy."
@@ -1207,8 +1233,8 @@
 		"{@pagebreak}"
 		"<property>Увеличивает силу</property> всех <property>аффиксов</property> на <keyword>предмете с аффиксами</keyword>."
 	]
-	quest.236E57B50041DE24.quest_desc: ["Commands the weather, toggling rain on or off at a cost of 500 EV from the owner's anima. Consumed on use."]
-	quest.23A684C49FC17830.quest_desc: ["Transmutes raw materials dropped nearby into their smelted forms (10 EV per stack from the owner's network). Items within its radius will not despawn while awaiting processing; processes all valid stacks simultaneously, with cook times matching a standard furnace."]
+	quest.236E57B50041DE24.quest_desc: ["<positive>Commands the weather</positive>, toggling rain on or off at a cost of <property>500 EV</property> from the owner's anima. <warning>Consumed on use</warning>."]
+	quest.23A684C49FC17830.quest_desc: ["<positive>Transmutes</positive> raw materials dropped nearby into their smelted forms (<property>10 EV</property> per stack from the owner's network). Items within its radius will not despawn while awaiting processing; processes all valid stacks simultaneously, with cook times matching a standard furnace."]
 	quest.23D1FD73CC570350.quest_desc: [
 		"Used to store and transfer ink. The two ink containers equalize the amount of ink in them, so you can only really transfer half."
 		"{@pagebreak}"
@@ -1225,15 +1251,15 @@
 		"Один из самых важных блоков в модпаке (пока вы не придумаете, как автоматизировать такую ручную операцию *подмигнул*) позволяет <positive>создавать блоки</positive> из ингредиентов в сетке <keyword>3x3x3</keyword>."
 	]
 	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
-	quest.245E70DC7FBF7DB3.quest_desc: ["Radiates illumination from invisible sources above the array, lighting an area without cluttering it with torches."]
-	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is finite. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The Vitaemancer has devised Rituals to assist with focused training, and the Ritual of Sentient Evolution to imbue your armour with a greater capacity for growth. Stand upon the Master Ritual Stone while clad in Sentient Armor, and the circle pours its power into the symbiotic plates. The armour's potential expands beyond its former limits."]
+	quest.245E70DC7FBF7DB3.quest_desc: ["<positive>Radiates illumination</positive> from invisible sources above the <magic>array</magic>, lighting an area without cluttering it with torches."]
+	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is <warning>finite</warning>. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The <keyword>Vitaemancer</keyword> has devised Rituals to assist with focused training, and the <property>Ritual of Sentient Evolution</property> to imbue your armour with a greater capacity for growth. Stand upon the <named>Master Ritual Stone</named> while clad in <named>Sentient Armor</named>, and the circle pours its power into the symbiotic plates. The armour's potential <positive>expands</positive> beyond its former limits."]
 	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>slime</keyword>."]
 	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
 	quest.2518CA7E57223D3A.quest_desc: [
-		"One of the earliest ways of flying"
+		"One of the earliest ways of <positive>flying</positive>"
 		"{@pagebreak}"
-		"Один из первых способов полёта"
+		"Один из первых способов <positive>полёта</positive>"
 	]
 	quest.256F4B9E44347533.quest_desc: ["Operates similar to the <keyword>Source Relay: Splitter</keyword> but can teleport <property>source</property> an endless distance between other <keyword>Warp relays</keyword>. For distances beyond <keyword>30 blocks</keyword>, there is a <warning>chance that some source will be lost</warning> during warp."]
 	quest.257157A1AA94B5E4.quest_desc: [
@@ -1304,14 +1330,14 @@
 		"<positive>Вырастите</positive> <keyword>Киндлинга</keyword> и возьмите его перо нажав <positive>Shift + ПКМ</positive> с <keyword>ножницами</keyword> на взрослой особи."
 	]
 	quest.281456E8387B7043.quest_desc: [
-		"Some of the hats change the behavior of the minigame!"
+		"Some of the <named>hats</named> change the behavior of the minigame!"
 		"{@pagebreak}"
-		"Некоторые из шляп изменяют поведение минигры!"
+		"Некоторые из <named>шляп</named> изменяют поведение минигры!"
 	]
 	quest.2828CD751DD0C8EA.quest_desc: [
-		"Bestows true flight upon all within the circle."
+		"<positive>Bestows true flight</positive> upon all within the <magic>circle</magic>."
 		"{@pagebreak}"
-		"даёт настоящий полёт всем в круге"
+		"даёт настоящий <positive>полёт</positive> всем в <magic>круге</magic>"
 	]
 	quest.286CADEC3AB44CCE.quest_desc: [
 		"Use your newly acquired <keyword>sharp flint</keyword> to <positive>harvest</positive> some <keyword>grass</keyword>"
@@ -1320,9 +1346,9 @@
 	]
 	quest.2886FD1C5D11C454.quest_desc: ["Так же можно найти ломая minecraft:soul_soil в незере в биоме Soul Sand Valley"]
 	quest.28A0B0DE7DA8451F.quest_desc: [
-		"Harvests Essentia Vitae from the suffering of nearby creatures."
+		"<positive>Harvests</positive> <property>Essentia Vitae</property> from the suffering of nearby creatures."
 		"{@pagebreak}"
-		"собирает EV от страданий существ рядом"
+		"<positive>собирает</positive> <property>EV</property> от страданий существ рядом"
 	]
 	quest.28A2FCBC095F291E.quest_desc: ["<positive>Use</positive> the <keyword>poison paste</keyword> on <keyword>farmland</keyword>. Can farm <keyword>plants</keyword> from this mod."]
 	quest.28DE945FA0D4BCB9.quest_desc: [
@@ -1393,7 +1419,7 @@
 	]
 	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. You can read them whenever, &owe won't judge&r."]
 	quest.2BAF1070D316E4A4.quest_desc: [
-		"Apotheosis overhauls Enchanting by adding Enchanting Stats.  These are special properties provided by bookshelves that change the behavior of the Enchanting Table. There are three primary stats, and a few secondary stats. In addition, the max level of the Enchanting Table is increased to 100, and the max levels of most enchantments are automatically increased."
+		"Apotheosis overhauls Enchanting by adding <keyword>Enchanting Stats</keyword>.  These are special properties provided by bookshelves that change the behavior of the <keyword>Enchanting Table</keyword>. There are three primary stats, and a few secondary stats. In addition, the max level of the Enchanting Table is increased to <property>100</property>, and the max levels of most enchantments are automatically increased."
 		""
 		"While enchanting, the most important stats are:"
 		""
@@ -1403,23 +1429,23 @@
 		""
 		"and &5Arcana&r, a measure of mystical quality, which increases the number of enchantments received and makes rare enchantments more common."
 		""
-		"Secondary Stats"
+		"<property>Secondary Stats</property>"
 		""
 		"Aside from the primary stats, there are a number of auxiliary stats that change some minor behaviors, or adjust how the primary stats behave."
 		""
-		"Enchanting Clues change the number of enchantments you are shown when hovering a slot in the Enchanting Table. Typically, more clues are always better."
+		"<keyword>Enchanting Clues</keyword> change the number of enchantments you are shown when hovering a slot in the Enchanting Table. Typically, more clues are always better."
 		""
-		"Quantic Stability ensures that Quanta will only be beneficial, instead of having a chance to cause negative effects."
+		"<keyword>Quantic Stability</keyword> ensures that Quanta will only be <positive>beneficial</positive>, instead of having a chance to cause negative effects."
 		""
-		"Allowing Treasure causes treasure enchantments (such as Mending) to show up in the Enchanting Table. Though, be warned, curses are also treasure enchantments!"
+		"<keyword>Allowing Treasure</keyword> causes treasure enchantments (such as Mending) to show up in the Enchanting Table. Though, be warned, <curse>curses</curse> are also treasure enchantments!"
 		""
-		"Enchantment Filters allow you to blacklist certain enchantments from the Enchanting Table. Blocks which provide this stat can be used to remove unwanted enchantments from the pool."
+		"<keyword>Enchantment Filters</keyword> allow you to <warning>blacklist</warning> certain enchantments from the Enchanting Table. Blocks which provide this stat can be used to remove unwanted enchantments from the pool."
 		""
 		""
 		""
 		"{@pagebreak}"
 		""
-		"Apotheosis перерабатывает Enchanting, добавляя характеристики для зачарования. Это специальные свойства, предоставляемые книжными полками, которые изменяют поведение стола зачарования. Есть три основных параметра и несколько второстепенных. Кроме того, максимальный уровень стола зачарования увеличен до 100, как и максимальный уровень большинства зачарований."
+		"Apotheosis перерабатывает Enchanting, добавляя <keyword>характеристики для зачарования</keyword>. Это специальные свойства, предоставляемые книжными полками, которые изменяют поведение <keyword>стола зачарования</keyword>. Есть три основных параметра и несколько второстепенных. Кроме того, максимальный уровень стола зачарования увеличен до <property>100</property>, как и максимальный уровень большинства зачарований."
 		""
 		"Несмотря на всю свою привлекательность, наиболее важными характеристиками являются:"
 		""
@@ -1429,17 +1455,17 @@
 		""
 		"&5Arcana&r — показатель мистического качества, увеличивающий количество получаемых зачарований и делающий редкие зачарования более частыми."
 		""
-		"Вторичные характеристики."
+		"<property>Вторичные характеристики.</property>"
 		""
 		"Помимо основных характеристик, существует ряд вспомогательных характеристик, которые изменяют некоторые второстепенные поведения или корректируют поведение основных характеристик."
 		""
-		"Подсказки — изменяют количество зачарований, которые отображаются при наведении курсора на слот в таблице зачарования. Как правило, чем больше подсказок, тем лучше."
+		"<keyword>Подсказки</keyword> — изменяют количество зачарований, которые отображаются при наведении курсора на слот в таблице зачарования. Как правило, чем больше подсказок, тем лучше."
 		""
-		"Quantic Stability — гарантирует, что Quanta будет приносить только пользу, а не вызывать негативные последствия."
+		"<keyword>Quantic Stability</keyword> — гарантирует, что Quanta будет приносить только <positive>пользу</positive>, а не вызывать негативные последствия."
 		""
-		"Разрешение сокровищ — позволяет отображать зачарования сокровищ (такие как «Починка») в таблице зачарований. Однако будьте осторожны, проклятия также являются зачарованиями сокровищ!"
+		"<keyword>Разрешение сокровищ</keyword> — позволяет отображать зачарования сокровищ (такие как «Починка») в таблице зачарований. Однако будьте осторожны, <curse>проклятия</curse> также являются зачарованиями сокровищ!"
 		""
-		"Фильтры зачарования — позволяют занести определенные зачарования в черный список в таблице зачарования. Блоки, которые предоставляют эту характеристику, могут быть использованы для удаления нежелательных зачарований из пула."
+		"<keyword>Фильтры зачарования</keyword> — позволяют занести определенные зачарования в <warning>черный список</warning> в таблице зачарования. Блоки, которые предоставляют эту характеристику, могут быть использованы для удаления нежелательных зачарований из пула."
 	]
 	quest.2BB85B5FB4A2E943.quest_desc: [
 		"Grows in <magic>dark forests</magic>."
@@ -1448,9 +1474,9 @@
 	]
 	quest.2BC8FC3AC76D89BA.quest_desc: ["Mod adds a complete <property>fast travel system</property> built around glowing portal doorways called <keyword>Timedoors</keyword>, powered by a unique <keyword>Chronon energy system</keyword> with <keyword>generators</keyword>, <keyword>cells</keyword>, and <keyword>batteries</keyword>"]
 	quest.2C3B7F7495AF3169.quest_desc: [
-		"Stand on the Master Ritual Stone wearing Sentient Armor. The ritual wipes every upgrade from every Sentient piece you have equipped and resets used points to zero, giving you back a clean slate at the cost of all accumulated training. No tomes are produced; if you want to preserve the upgrades for later, use Sentient Extraction instead."
+		"Stand on the <named>Master Ritual Stone</named> wearing <named>Sentient Armor</named>. The ritual <warning>wipes every upgrade</warning> from every Sentient piece you have equipped and resets used points to zero, giving you back a clean slate at the cost of all accumulated training. No tomes are produced; if you want to preserve the upgrades for later, use <property>Sentient Extraction</property> instead."
 		"{@pagebreak}"
-		"Встаньте на Камень главного ритуала, надев Sentient Armor. Ритуал удаляет все улучшения со всех предметов Sentient Armor, которые вы надели, и сбрасывает использованные очки до нуля, давая вам возможность начать с чистого листа за счет потери всего накопленного опыта. tomes при этом не создаются; если вы хотите сохранить улучшения на будущее, воспользуйтесь вместо этого «Sentient Extraction»."
+		"Встаньте на <named>Камень главного ритуала</named>, надев <named>Sentient Armor</named>. Ритуал <warning>удаляет все улучшения</warning> со всех предметов Sentient Armor, которые вы надели, и сбрасывает использованные очки до нуля, давая вам возможность начать с чистого листа за счет потери всего накопленного опыта. tomes при этом не создаются; если вы хотите сохранить улучшения на будущее, воспользуйтесь вместо этого «<property>Sentient Extraction</property>»."
 	]
 	quest.2C98103199647244.quest_desc: [
 		"The <keyword>Tome of Peritia</keyword> is a vessel for <magic>captured experience</magic>, <positive>safe from the grasp of death</positive>. <keyword>Sneak and Use</keyword> to store a level, <keyword>Use</keyword> alone to retrieve it. Hold either action to transfer multiple levels rapidly."
@@ -1605,7 +1631,7 @@
 		"{@pagebreak}"
 		"Эти грибы выглядят мрачно, но их &lкора&r такая аппетитная"
 	]
-	quest.30FA92F29B6D0477.quest_desc: ["Same effect as Aqua Affinity, but it allows you to have a normal breaking block speed while moving"]
+	quest.30FA92F29B6D0477.quest_desc: ["Same effect as <keyword>Aqua Affinity</keyword>, but it allows you to have a <positive>normal breaking block speed</positive> while moving"]
 	quest.31133967C7848E1E.quest_desc: ["Scribed with Kelp and awakened by Redstone Dust. Opens a vitaemantic current through the open column of air directly above the glyph, lifting or drowning any entity that enters. Right-click with an empty hand to reverse the flow; the array remembers its direction across world reloads. Strength scales with additional Redstone in the redstone slot (acceleration) and Kelp in the kelp slot (terminal velocity); right-click the array with more ingredients to stack them."]
 	quest.316DB511541398F4.quest_desc: [
 		"<keyword>Amalgam</keyword> spawns in <magic>Deeper Down dungeons</magic>."
@@ -1638,7 +1664,7 @@
 		""
 		"Это дает отличный результат в сочетании с методами увеличения высоты прыжка."
 	]
-	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your cute little pet rock daily! It's quite playful when you let it roam freely, so don't let it loose without the leash. As the good rock that it is, it'll help you locate the precious little minerals around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the ores and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
+	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your <named>cute little pet rock</named> daily! It's quite playful when you let it roam freely, so don't let it loose without the <keyword>leash</keyword>. As the good rock that it is, it'll help you <positive>locate the precious little minerals</positive> around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the <property>ores</property> and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
 	quest.32A2AA91FA55AB4A.quest_desc: [
 		"The whole idea of <property>automation</property> is that you make a different <keyword>creation machine</keyword> for each item, for example, for <keyword>plates of bronze</keyword>, <keyword>tin</keyword>, <keyword>steel</keyword>, etc. you make your own <keyword>compressor</keyword> each, and feed that machine <keyword>infinite amounts</keyword> of the ingots you need."
@@ -1667,15 +1693,15 @@
 	quest.32A68ACEFBF8D876.quest_desc: [
 		"Ore is generated by <keyword>veins</keyword>. To figure out if the ore you need is beneath your feet, you need to look for <keyword>ore samples</keyword> on the surface. As soon as you find the sample you’re looking for, feel free to dig down - sooner or later, you’ll find the ore you need. Also, most ore is <warning>hidden from view</warning>; the further you progress in the modpack, the more ore you’ll start to notice!"
 		""
-		"In the future, you'll have an easy way to find the ore you need."
+		"In the future, you'll have an <positive>easy way</positive> to find the ore you need."
 		""
-		"You can find out at what height the ore you want will spawn by hovering your cursor over it in <keyword>EMI</keyword>."
+		"You can find out at what <property>height</property> the ore you want will spawn by hovering your cursor over it in <keyword>EMI</keyword>."
 		"{@pagebreak}"
 		"Руда генерируется <keyword>жилами</keyword>, чтобы понять, что под вашими ногами есть нужная руда, вам необходимо искать <keyword>образцы руды</keyword> на поверхности. Как только вы найдете нужный вам образец - можете смело копать вниз, рано или поздно вы найдете нужную вам руду. Кроме того, большинство руды <warning>скрыто от ваших глаз</warning>: чем больше вы прогрессируете в модпаке, тем больше руды вы начинаете замечать!"
 		""
-		"В будущем у вас появится простой способ находить нужную вам руду."
+		"В будущем у вас появится <positive>простой способ</positive> находить нужную вам руду."
 		""
-		"Вы можете узнать, на какой высоте спавнится нужная вам руда, наведя на неё в <keyword>EMI</keyword>."
+		"Вы можете узнать, на какой <property>высоте</property> спавнится нужная вам руда, наведя на неё в <keyword>EMI</keyword>."
 	]
 	quest.32A68ACEFBF8D876.title: "Where's my ore?"
 	quest.3311BAD6D1B590DE.quest_desc: [
@@ -1689,7 +1715,7 @@
 		"{@pagebreak}"
 		"Предметные трубы обычно предпочитают ближайший инвентарь. Ингибитор увеличивает длину соединения на 1000 для целей поиска пути, что заставляет трубы для предметов избегать этого соединения, если это возможно."
 	]
-	quest.33D177C9C103372D.quest_desc: ["Allows you to <positive>throw oils</positive>. Can become handy in the future."]
+	quest.33D177C9C103372D.quest_desc: ["Allows you to <positive>throw oils</positive>. Can become <property>handy</property> in the future."]
 	quest.3439A90E9544512F.quest_desc: [
 		"Deep down below, you found a <magic>secure structure</magic>. There &lmust be a way&r to get into it, if not now, maybe later. You better <keyword>remember this place</keyword>."
 		"{@pagebreak}"
@@ -1707,9 +1733,9 @@
 		"&0Атмосферу нужно &lПОДНЯТЬ!"
 	]
 	quest.349B96434E8FA41C.quest_desc: [
-		"Endgame flying"
+		"<magic>Endgame</magic> flying"
 		"{@pagebreak}"
-		"Полет в финальной стадии"
+		"Полет в <magic>финальной стадии</magic>"
 	]
 	quest.34D0D56BD238BC1A.quest_desc: ["<positive>Place</positive> this block near your <keyword>Hephaestus Forge</keyword> and it will automatically <positive>transfer essences</positive> from nearby <keyword>Utrem Jars</keyword> into the forge"]
 	quest.351C8BB52E7CD0E8.quest_desc: [
@@ -1902,12 +1928,11 @@
 		""
 		"{image:milf:textures/quest_pic/machine_extender.png width:200 height:130 align:center}"
 		"{@pagebreak}"
-		""
 		"Удлинитель машины можно разместить сверху машины, чтобы «удлинить» ее, освободив больше места для подключения труб. Удлинители машины можно стакать."
 		""
 		"Вот пример с химическим реактором:"
 		""
-		"{image:quest_pics:textures/machine_extender.png width:200 height:130 align:center}"
+		"{image:milf:textures/quest_pic/machine_extender.png width:200 height:130 align:center}"
 	]
 	quest.3B77EDA3E715F8ED.quest_desc: [
 		"Can only be acquired via <keyword>axe</keyword> (because we care about the well-being of your fists, you masochist (•ᴗ•) )"
@@ -1945,7 +1970,7 @@
 	quest.3C4D5E6F7A8B0021.quest_desc: ["The <keyword>Activation Crystal (Weak)</keyword> starts any ritual. Right-click the Master Ritual Stone with it once all supporting stones are in place. Stronger crystals (<keyword>Awakened</keyword>) are required for Tier II rituals."]
 	quest.3C4D5E6F7A8B0021.title: "Activation Crystal"
 	quest.3C4D5E6F7A8B0022.quest_desc: [
-		"The Ritual Tinkerer (also known as the Ritual Reader) is essential for mastery over your circles. Cycle between three modes with Sneak + Use:"
+		"The <named>Ritual Tinkerer</named> (also known as the Ritual Reader) is essential for mastery over your circles. Cycle between three modes with Sneak + Use:"
 		""
 		"• Information - reveals the purpose of the selected ritual."
 		""
@@ -1963,7 +1988,7 @@
 	quest.3C4D5E6F7A8B0044.quest_desc: ["The highest grade of Spiritus Gem. <keyword>Grand Spiritus Gems</keyword> fuel the most powerful Hellfire Forge recipes and are required for Tier V altar components."]
 	quest.3C4D5E6F7A8B0044.title: "Grand Spiritus Gem"
 	quest.3C4D5E6F7A8B0061.quest_desc: [
-		"The Teleposer doesn't teleport - it swaps everything above two linked blocks instantly: blocks, items, and entities together."
+		"The <named>Teleposer</named> doesn't teleport - it <positive>swaps</positive> everything above two linked blocks instantly: blocks, items, and entities together."
 		""
 		"Setup: place two Teleposers, bind a Focus to the target via right-click, place it in the source, apply strong redstone power."
 		""
@@ -1983,9 +2008,9 @@
 	quest.3C4D5E6F7A8B0073.quest_desc: ["The brain of the network - one per network. New nodes within 16 blocks auto-bind to the nearest master on placement. Use the <property>Node Router</property> tool to manually link nodes across longer chains."]
 	quest.3C4D5E6F7A8B0073.title: "Master Routing Node"
 	quest.3C4D5E6F7A8B0093.quest_desc: [
-		"deep blood-red decorative trim material. Apply at a smithing table like any other trim."
+		"<blood>deep blood-red</blood> decorative trim material. Apply at a smithing table like any other trim."
 		"{@pagebreak}"
-		"декоративный материал для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
+		"<blood>декоративный материал</blood> для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
 	]
 	quest.3C4D5E6F7A8B0093.title: "Demonite Ingot"
 	quest.3CD24DA505BC109F.quest_desc: [
@@ -2032,9 +2057,9 @@
 	]
 	quest.3D5FB6D17EC9693F.title: "World Tier: Summit"
 	quest.3D661614AB8A295E.quest_desc: [
-		"The Cresent Moon Enhancer reduces the Aureal cost of rituals when used in the Hephaestus Forge. Depending on the time of the day the reduced amount differs between 10% during the night and 1% during the day. "
+		"The <named>Cresent Moon Enhancer</named> <positive>reduces</positive> the Aureal cost of rituals when used in the Hephaestus Forge. Depending on the time of the day the reduced amount differs between 10% during the night and 1% during the day. "
 		""
-		"This enhancer is currently not obtainable in survival."
+		"This enhancer is currently <warning>not obtainable in survival</warning>."
 	]
 	quest.3D7610F02FB93E78.quest_desc: [
 		"A pouch for your coins"
@@ -2054,7 +2079,7 @@
 		""
 		"Довольно хрупкий, хотя прочнее обычного Weaver Nest."
 	]
-	quest.3DABDF05A0D06EF5.quest_desc: ["The Time Twister tracks the player’s personal timeline and allows backtracking to previous locations. It records dimension changes and death events, presenting them on a radial display. Selecting a point teleports the player back to that location and erases all timeline entries after the chosen point."]
+	quest.3DABDF05A0D06EF5.quest_desc: ["The <named>Time Twister</named> tracks the player's personal timeline and allows <positive>backtracking</positive> to previous locations. It records dimension changes and death events, presenting them on a radial display. Selecting a point <positive>teleports</positive> the player back to that location and <warning>erases all timeline entries</warning> after the chosen point."]
 	quest.3DD74B48583DB8C0.quest_desc: [
 		"Many parts of a mob, including ourselves, react differently when <warning>toxins</warning> are introduced in their bodies. This makes &6unique ingredients&r when certain mobs are <warning>afflicted</warning>. As such, we should extract them. When a mob <warning>dies while being afflicted with poison</warning>, they can drop &6special ingredients&r. However, a sword is too crude to extract them. As such, they must die by a <keyword>scalpel</keyword> in order to carefully extract these &6valuable parts&r."
 		"{@pagebreak}"
@@ -2064,7 +2089,7 @@
 	]
 	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
 	quest.3EA1E7E490D39A84.quest_desc: [
-		"Demonic Spiritus can also exist in a diffused state throughout the very air. By burning Spiritus in a Vas Maleficum, you release it into the Aura, an invisible miasma that permeates each chunk of the world."
+		"Demonic <property>Spiritus</property> can also exist in a diffused state throughout the very air. By burning Spiritus in a <named>Vas Maleficum</named>, you release it into the <magic>Aura</magic>, an invisible miasma that permeates each chunk of the world."
 		""
 		"Feed the Vas Maleficum a charged Spiritus Gem, loose Spiritus, or Spiritus Crystals of any Aspect. Crystals are consumed once the chunk's Spiritus dips below 50; loose Spiritus and gem contents are consumed gradually as needed."
 		""
@@ -2114,11 +2139,17 @@
 		"Что может быть &#FEECD6лучше&r шоколада? Я вот не знаю, а вы? &0Чёрт, 4я стена рушится… Вы ничего не видели!&r"
 	]
 	quest.4074482799422285.quest_desc: [
-		"необходимо обратить внимание на то, что для полной стркутуры необходимо стальное стекло сверху в центре"
+		"Please note that the complete structure requires a <keyword>steel window block</keyword> at the top center."
 		""
-		"работает за бумагу, радиус 32 блока, показывает внутри себя то, что он загружает, можно кликнуть и увидеть путь до прогружаемого блока"
+		"It work for a <property>paper</property>, has a <property>radius of 32 blocks</property>, and displays the block it is loading inside itself; you can click on it to see the path to the loaded block."
 		""
-		"Чтобы открыть запись об этом блоке в книге нужно взять в руку эхо шард"
+		"To open the entry for this block in the book, you need to pick up an <keyword>Echo Shard</keyword>."
+		"{@pagebreak}"
+		"необходимо обратить внимание на то, что для полной стркутуры необходимо <keyword>стальное стекло</keyword> сверху в центре"
+		""
+		"работает за <property>бумагу</property>, <property>радиус 32 блока</property>, показывает внутри себя то, что он загружает, можно кликнуть и увидеть путь до прогружаемого блока"
+		""
+		"Чтобы открыть запись об этом блоке в книге нужно взять в руку <keyword>эхо шард</keyword>"
 	]
 	quest.4081617269AD644A.quest_desc: [
 		"[ \"Azurite can only be found in \", { \"text\": \"Eternal Starlight\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B37B11A0B0A84E6\" } }, \" dimension!\" ]"
@@ -2162,7 +2193,7 @@
 	]
 	quest.4234498523BE845B.quest_desc: ["Once your model is <positive>Basic</positive> or higher, you can use the <keyword>Simulation Chamber</keyword> to run simulations. Simulations will always produce a <property>generalized prediction</property>, and may also produce a <keyword>Mob Prediction</keyword>, based on the <property>accuracy</property> of the model. The <keyword>higher tier</keyword> of the model, the higher the accuracy, up to <keyword>99.5% at Self Aware</keyword>. Running simulations requires <property>energy</property> (based on the model type) and a <property>catalyst item</property>, which is usually a <keyword>Prediction Matrix</keyword>."]
 	quest.4287B0D38E0C2A7A.quest_desc: [
-		"The Scryer's Linkage links to another block, allowing machines to interact with its linked block from distance places."
+		"The <named>Scryer's Linkage</named> <positive>links</positive> to another block, allowing machines to interact with its linked block from distance places."
 		""
 		"It is capable of linking items, liquids, energy, redstone, and a few other things."
 		""
@@ -2177,10 +2208,10 @@
 		"Проще говоря данный блок имитирует тот блок с которым его связали."
 	]
 	quest.4287B0D38E0C2A7A.quest_subtitle: "Entangled block"
-	quest.428850B1426EB3D4.quest_desc: ["Wild cow"]
+	quest.428850B1426EB3D4.quest_desc: ["<named>Wild cow</named>"]
 	quest.42B6798C0C2BD9E5.quest_desc: [
-		"All the bronze machines use steam to operate"
-		"Automatically outputs steam from the top"
+		"All the <keyword>bronze machines</keyword> use <property>steam</property> to operate"
+		"Automatically <positive>outputs steam</positive> from the top"
 	]
 	quest.430423172DB205F2.quest_subtitle: "Nitor?!"
 	quest.430D38FF55DB4445.quest_desc: ["<positive>Use it</positive> to apply a new <keyword>Soulbound</keyword> item modifier."]
@@ -2281,9 +2312,9 @@
 		"Сохраняет скопированную постройку как <property>шаблон</property> и позволяет загрузить ее позже. В <property>left slot</property> положи Copy-Paste Gadget с копией, в <property>right slot</property> - <keyword>бумагу</keyword>, задай <property>название</property> и сохрани. Код шаблона можно передать другим игрокам."
 	]
 	quest.460E0E1586EBB12E.quest_desc: [
-		"To leave this dimension, take a bite of this fragrant apple!"
+		"To <positive>leave</positive> this <magic>dimension</magic>, take a bite of this <named>fragrant apple</named>!"
 		"{@pagebreak}"
-		"Чтобы покинуть это измерение, откуси кусочек этого ароматного яблока!"
+		"Чтобы <positive>покинуть</positive> это <magic>измерение</magic>, откуси кусочек этого <named>ароматного яблока</named>!"
 	]
 	quest.4629E5EC0E279E81.quest_desc: [
 		"Crafted from a Blood Feather, Echo Pearl, and War Horn at a Smithing Table. Applies its loaded potion effects to all nearby enemies instead of allies. Supports the Flame enchantment, igniting victims along with the potion effect."
@@ -2291,9 +2322,9 @@
 		"Создаётся из Blood Feather, Echo Pearl и War Horn на кузнечном столе. Применяет загруженный эффект зелья на всех врагов рядом, а не на союзников. Поддерживает зачарование Flame, поджигающее жертв вместе с эффектом зелья."
 	]
 	quest.464E6E68F80377D1.quest_desc: [
-		"Scythe has unique enchantments - try enchanting it!"
+		"<keyword>Scythe</keyword> has <property>unique enchantments</property> - try enchanting it!"
 		"{@pagebreak}"
-		"Scythe имеет уникальные зачарования, попробуйте её зачаровать!"
+		"<keyword>Scythe</keyword> имеет <property>уникальные зачарования</property>, попробуйте её зачаровать!"
 	]
 	quest.4662695201019F94.quest_desc: [
 		"Adding <keyword>fume funnels</keyword> to the left and right of your <keyword>witch's oven</keyword> can <positive>drastically improve</positive> it's <keyword>yield</keyword>."
@@ -2325,7 +2356,7 @@
 		"&lБыстрая перезарядку&r - скорость пополнения опыта вручную!"
 	]
 	quest.46E60171B59F733A.quest_desc: [
-		"A device consisting of a case with a dark mass at its center that swirls and consumes nearby light - essentially a contained miniature black hole."
+		"A device consisting of a case with a <curse>dark mass</curse> at its center that swirls and consumes nearby light - essentially a contained miniature <magic>black hole</magic>."
 		""
 		"Function: lets you place \"false\" darkness in an area. This artificial darkness prevents monsters from spawning in the affected zone."
 		"{@pagebreak}"
@@ -2379,7 +2410,7 @@
 		"<obfuscate mode=random interval=30>Найти его можно там же, где и обычную <keyword>Банку Ихора</keyword> </obfuscate>"
 	]
 	quest.48BB521ECABF71BF.title: "Afrit Smelter"
-	quest.48D0478F8516F1C7.quest_desc: ["Teleport to other players"]
+	quest.48D0478F8516F1C7.quest_desc: ["<positive>Teleport</positive> to other players"]
 	quest.48D6F64AD6B17D08.quest_desc: [
 		"Next, I must heat it in a crucible to remove any impurities."
 		"{@pagebreak}"
@@ -2414,9 +2445,9 @@
 	]
 	quest.4908E1F8C74C3C13.quest_desc: ["when toggled on and carried in the inventory, makes the holder visible in the Teleport app of any Tempad with the Player Teleport upgrade installed. Right-clicking it toggles between active (green screen) and inactive (red screen)."]
 	quest.490D92E237AFBA82.quest_desc: [
-		"When a candle is lit, it accelerates plant growth "
+		"When a <fire>candle</fire> is lit, it <positive>accelerates plant growth</positive> "
 		"{@pagebreak}"
-		"с смесью получается свеча который ускоряет рост растений"
+		"с смесью получается <fire>свеча</fire> который <positive>ускоряет рост растений</positive>"
 	]
 	quest.4932A126EA1016F2.quest_desc: [
 		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays <keyword>useful information</keyword> about my bodies chemical composition. The <positive>toxicity</positive> gauge examines 3 important parts of my body. The <positive>toxins</positive>, my <warning>tolerance</warning>, and the &9thresholds&r I can reach!"
@@ -2451,11 +2482,11 @@
 		"Чем тверже блок, тем быстрее эта киркой его разбивает; чем мягче блок, тем больше сопротивления он оказывает."
 	]
 	quest.498922D593321422.quest_desc: [
-		"Better furnace, but bigger!"
+		"<positive>Better</positive> furnace, but <property>bigger</property>!"
 		"{@pagebreak}"
-		"Печь покруче - но ещё и побольше!"
+		"<positive>Печь покруче</positive> - но ещё и <property>побольше</property>!"
 	]
-	quest.49F633AB8533C593.quest_desc: ["Mends the items at the cost of oil."]
+	quest.49F633AB8533C593.quest_desc: ["<positive>Mends</positive> the items at the cost of <property>oil</property>."]
 	quest.49FACA83D02FA842.quest_desc: [
 		"The Vitae Link is a bound relay that crafts on a linked altar's behalf, but only up to a tier you choose."
 		""
@@ -2497,6 +2528,11 @@
 		"• <keyword>Щелкните правой кнопкой мыши</keyword> по кормушке, чтобы положить туда корм для животных."
 		"• Кормушка будет <positive>автоматически кормить находящихся поблизости животных</positive>, когда они проголодаются."
 		"• Кормушка <warning>прекратит кормление животных</warning>, если в зоне станет слишком тесно."
+	]
+	quest.4A466EBB29C36CCD.quest_desc: [
+		"Solve the <property>puzzle</property> to gain access to the <magic>maze</magic>!"
+		"{@pagebreak}"
+		"Решите <property>загадку</property> для доступа к <magic>лабиринту</magic>!"
 	]
 	quest.4A87529560AC3F59.quest_desc: ["Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
 	quest.4ADB796A7EC14DE4.quest_desc: [
@@ -2581,9 +2617,9 @@
 		"Войдите в <magic>защитные руины</magic>"
 	]
 	quest.4D212923E3A7FA85.quest_desc: [
-		"An easy way to get villagers!"
+		"An easy way to get <named>villagers</named>!"
 		"{@pagebreak}"
-		"Простой способ получить жителей!"
+		"Простой способ получить <named>жителей</named>!"
 	]
 	quest.4D2CAE9449DCAAF2.quest_subtitle: "water for source"
 	quest.4D80BF0416C5EFD2.quest_desc: ["The <property>demolishing modifier</property> can unlock the true power out of your tools (<keyword>Pickaxes</keyword>, <keyword>Shovels</keyword>, <keyword>Axes</keyword>, <keyword>Hoes</keyword>). Tools with this modifier will be able to break a <keyword>3x3 area</keyword>."]
@@ -2618,9 +2654,9 @@
 	quest.4F8E67CD8A60C47B.quest_desc: ["Every upgrade has a shadow. Downgrades are imposed by the Ritual of Sentient Downgrade and exchange unwanted upgrade levels for a curse, freeing Upgrade Points to reinvest elsewhere."]
 	quest.4F8E67CD8A60C47B.quest_subtitle: "Info for nerds"
 	quest.4F9AF422C4AA5B85.quest_desc: [
-		"lets you find any biome you want!"
+		"<positive>lets you find</positive> any <magic>biome</magic> you want!"
 		"{@pagebreak}"
-		"Позволяет найти любой нужный вам биом!"
+		"<positive>Позволяет найти</positive> любой нужный вам <magic>биом</magic>!"
 	]
 	quest.4FB0EC4D5EEA7EE6.quest_desc: [
 		"Hold down the <positive>right mouse button + Shift key</positive> on the <keyword>Lily Pad</keyword>!"
@@ -2756,9 +2792,9 @@
 		"<keyword>Ручной колодец</keyword>. Производит разное количество <keyword>воды</keyword> в разных биомах. Может быть подключен к <property>системе акведуков</property>."
 	]
 	quest.553F282C59585B66.quest_desc: [
-		"If you stand on this flower, you can feel the regeneration effect!"
+		"If you stand on this <named>flower</named>, you can feel the <positive>regeneration effect</positive>!"
 		"{@pagebreak}"
-		"Если постоять на этом цветке, можно почувствовать эффект регенерации!"
+		"Если постоять на этом <named>цветке</named>, можно почувствовать <positive>эффект регенерации</positive>!"
 	]
 	quest.5554B53144E7F2C5.quest_desc: ["<positive>Right-click</positive> on a <keyword>fully grown crop</keyword> to replant it with the power of worm-friendship!"]
 	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can <positive>squeeze information</positive> out of <keyword>books</keyword> ´꒳`"]
@@ -2771,7 +2807,7 @@
 		""
 		"Стоимость: <keyword>2000 МЭ</keyword>"
 	]
-	quest.55B031B4D7E5DEE3.quest_desc: ["Wild chicken"]
+	quest.55B031B4D7E5DEE3.quest_desc: ["<named>Wild chicken</named>"]
 	quest.5613C04E72D2AC99.quest_desc: ["Unlike the <keyword>Timedoor Projector</keyword>, the <keyword>Tempad</keyword> automatically detects all <keyword>Timedoor Markers</keyword> and <keyword>Chronomarks</keyword> owned by the player, making <keyword>Location Cards</keyword> optional for personal travel."]
 	quest.5643AEC296D95BE9.quest_desc: ["<warning>Slowness</warning> and <warning>weakness</warning>."]
 	quest.56890AC89A622C58.quest_desc: ["Coaxes nearby crops and plants to grow faster in a 2-block radius, applying a gentle acceleration each second."]
@@ -2790,14 +2826,19 @@
 		"Эта <keyword>сетка</keyword> может улавливать основные ресурсы, такие как <keyword>песок</keyword>, <keyword>гравий</keyword>, <keyword>глину</keyword> и <keyword>рыбу</keyword>."
 	]
 	quest.57671811B0F76299.title: "Coal"
+	quest.57C4CC73DC66630C.quest_desc: [
+		"<named>Compass</named> will help you find the right structure!"
+		"{@pagebreak}"
+		"<named>Compass</named> поможет вам найти нужную структуру!"
+	]
 	quest.58111B4CAD89BCCE.quest_desc: [
 		"&#FEECD6Create&r your first &4c&r&6o&r&el&r&2o&r<property>r</property>&9e&r&5d&r sapling!"
 		"{@pagebreak}"
 		"&#FEECD6Создайте&r свой первый &4ц&r&6в&r&eе&r&2т&r<property>н</property>&9о&r&5й&r &#CAE4C8саженец&r! "
 	]
 	quest.582F02F8A2F308E7.quest_desc: [
-		"Another breakthrough invention of PLACERS™ (Packing Logistics And Controlled Erections of Rebuildable Structures) engineers - the lesser one, but not less artifice: Not So Multi But Still Block Packer 2099 3x3x3 Edition! This small device can do what most of us can, but less most of us want to do - turn complex details into not-less-complex machines! Just shove all the constituents of a whole into one of the BIG square holes this thing has, and BOOM - the HOLE® (Hidden and Originally Least Expected) mechanism will do all the hard work for you!"
-		"(The inner workings of this apparatus are considered a corporate secret, but we can assure you that it's most logical that to make this thing you have to unpack one of the newer models in a similar lineup of machines, specifically the Multiblock Packer 3000 (Safety regulations edition))"
+		"Another <positive>breakthrough invention</positive> of <named>PLACERS™</named> (Packing Logistics And Controlled Erections of Rebuildable Structures) engineers - the lesser one, but not less artifice: <named>Not So Multi But Still Block Packer 2099 3x3x3 Edition</named>! This small device can do what most of us can, but less most of us want to do - turn complex details into not-less-complex machines! Just shove all the constituents of a whole into one of the BIG square holes this thing has, and BOOM - the <named>HOLE®</named> (Hidden and Originally Least Expected) mechanism will do all the <positive>hard work</positive> for you!"
+		"(The inner workings of this apparatus are considered a <warning>corporate secret</warning>, but we can assure you that it's most logical that to make this thing you have to unpack one of the newer models in a similar lineup of machines, specifically the <named>Multiblock Packer 3000 (Safety regulations edition)</named>)"
 	]
 	quest.586308E0B5B5E030.quest_desc: [
 		"[ \"Keep in mind that the horses have been greatly \", { \"text\": \"improved\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B66EF3877866949\" } }, \"!\" ]"
@@ -2820,7 +2861,7 @@
 	quest.58E8A03E6BB037C5.quest_desc: ["Applies the <property>Glowing effect</property> to all entities near the player when it's in your inventory."]
 	quest.58FC7BE00AECD484.quest_subtitle: "Crack the bone!"
 	quest.590167B593FE267A.quest_desc: [""]
-	quest.590C55E7230D6C5E.quest_desc: ["Yet another revolutionary invention from the \"Things that one person asked for and we spent quite some time bringing them to life\" department of PLACERS™ - the almighty FINGMER (Functionally Irreversible Neatly Game-designed Machine and whatever Else Replacer). With this little thing, your everyday routine of replacing things with the better versions of themselves will become as easy as saying the word \"concrete\"! By virtue of our CEO, Ms. S., being so thorough in following the production of our products, each and every unit of this wondrous apparatus will flawlessly upgrade ANY compatible block (when provided with proper materials, of course) without missing a single bit of content inside! Reusable too (as long as you don't lose it), even within the crafting table! Craft one today and become one of thousands of happy customers who have already brought their factory to another level!"]
+	quest.590C55E7230D6C5E.quest_desc: ["Yet another <positive>revolutionary invention</positive> from the \"Things that one person asked for and we spent quite some time bringing them to life\" department of <named>PLACERS™</named> - the almighty <named>FINGMER</named> (Functionally Irreversible Neatly Game-designed Machine and whatever Else Replacer). With this little thing, your everyday routine of replacing things with the better versions of themselves will become as easy as saying the word \"concrete\"! By virtue of our CEO, Ms. S., being so thorough in following the production of our products, each and every unit of this wondrous apparatus will <positive>flawlessly upgrade ANY compatible block</positive> (when provided with <property>proper materials</property>, of course) without missing a single bit of content inside! <property>Reusable</property> too (as long as you don't lose it), even within the crafting table! Craft one today and become one of thousands of happy customers who have already brought their factory to another level!"]
 	quest.591843445BE8DF11.quest_desc: [
 		"Collect some &#FEECD6Shimmerstone&r in mines!"
 		"{@pagebreak}"
@@ -2845,7 +2886,7 @@
 		""
 		"Любой сундук в незере"
 	]
-	quest.5A23E325ABD115A1.quest_desc: ["The perfect companion for your digging sessions! Provides emotional support in the time of need and is passable as a chair when you need some structural support too! Don't forget to feed it with... something… It's not picky at all, and hydrate it at least once a day for it to grow into a strong and healthy boulder one day!"]
+	quest.5A23E325ABD115A1.quest_desc: ["The <named>perfect companion</named> for your digging sessions! Provides <positive>emotional support</positive> in the time of need and is passable as a chair when you need some structural support too! Don't forget to <positive>feed it</positive> with... something… It's not picky at all, and <positive>hydrate it</positive> at least once a day for it to grow into a <property>strong and healthy boulder</property> one day!"]
 	quest.5A4BB58AB11D4B81.quest_desc: [
 		"The <keyword>witch's oven</keyword> is a modified furnace used to collect <keyword>byproducts</keyword> and <keyword>fumes</keyword> made from burning materials."
 		""
@@ -3038,7 +3079,7 @@
 		"Any leashable mob will work for this."
 		"You can install a \"<keyword>SPEED UPGRADE</keyword>\" to accelerate the milling. The upgrade is a <keyword>speed potion</keyword>."
 	]
-	quest.5F3B3C006860B496.quest_desc: ["<positive>Attracts items</positive> when powered"]
+	quest.5F3B3C006860B496.quest_desc: ["<positive>Attracts items</positive> when <property>powered</property>"]
 	quest.5F750B9378BA292B.quest_desc: [""]
 	quest.5F97E71B27845702.quest_desc: [""]
 	quest.5F99F4F474FA0648.quest_desc: [
@@ -3086,8 +3127,13 @@
 		""
 		"Костюм чумного доктора обладает довольно приятным дополнением. Время действия негативных эффектов снижается в зависимости от количества частей одежды на вас. Это может даже полностью свести эффект на нет."
 	]
+	quest.5FBE128C3228AF27.quest_desc: [
+		"Destroy the <fire>Nether Locker</fire>, and you might just get a <named>compass</named>!"
+		"{@pagebreak}"
+		"Разрушь <fire>Nether Locker</fire> и с некоторым шансом получишь <named>компас</named>!"
+	]
 	quest.605AFF391B6FB32E.quest_desc: ["<keyword>32 channels/cable</keyword>"]
-	quest.606AC3FF6B9213D5.quest_desc: ["Just like a normal <keyword>composter</keyword>, but mechanical!"]
+	quest.606AC3FF6B9213D5.quest_desc: ["Just like a normal <keyword>composter</keyword>, but <property>mechanical</property>!"]
 	quest.606DEC68ADF83126.quest_desc: [
 		"In the Selling Bin, you can sell the fish you've caught; the price depends on the fish's size and other fish characteristics."
 		"{@pagebreak}"
@@ -3149,7 +3195,7 @@
 		"{@pagebreak}"
 		"<warning>Можно найти 1 раз за игру 1 игроком"
 	]
-	quest.61E590BED7EE9DA4.quest_desc: ["<keyword>Entity magnet?!</keyword>"]
+	quest.61E590BED7EE9DA4.quest_desc: ["<magic>Entity magnet?!</magic>"]
 	quest.6245F17DF657C296.quest_desc: [
 		"Most upgrades are trained by performing the matching activity while wearing the chestplate; every time you do, the armour banks experience toward the next level. How much it banks depends on the upgrade:"
 		""
@@ -3282,16 +3328,16 @@
 	]
 	quest.672249922B854604.quest_desc: ["Outputs a redstone signal from 0 to 15 proportional to the EV stored in the owner's anima, scaling linearly up to 1,000,000 EV. Requires a bound Arcane Ash to function."]
 	quest.6728D3D62F6812D6.quest_desc: [
-		"Automatic farm with 2 configurable sizes."
+		"<named>Automatic farm</named> with <property>2 configurable sizes</property>."
 		""
-		"Will turn grass into farmland around itself, hydrate soil when provoded with water, plant crops when provided with seeds and harvest all the crops if there's enough output room for everything that could be harvested from plants (e.g. for wheat you need 2 output slots: one for seeds and one for wheat itself)"
+		"Will <positive>turn grass into farmland</positive> around itself, <positive>hydrate soil</positive> when provided with water, <positive>plant crops</positive> when provided with seeds and <positive>harvest all the crops</positive> if there's enough output room for everything that could be harvested from plants (e.g. for wheat you need 2 output slots: one for seeds and one for wheat itself)"
 	]
 	quest.6728D3D62F6812D6.quest_subtitle: "Your ultimate farming solution!"
 	quest.672EEF1A13EC159D.quest_desc: ["90~"]
 	quest.673E8DF15D5D30CA.quest_desc: [
-		"Complete fire immunity and more!"
+		"Complete <fire>fire immunity</fire> and more!"
 		"{@pagebreak}"
-		"Полноценный иммунитет от огня и немного больше"
+		"Полноценный <fire>иммунитет от огня</fire> и немного больше"
 	]
 	quest.67BD80F96D184AA4.quest_desc: [
 		"You can find a small amount of Strong Tau in the dungeon, but if you're unlucky and only find weak tau, you can turn it into strong tau if a living creature - such as a pig - is standing on the plant while it grows. In this case, the plant will turn into strong tau the very first time it grows. Additionally, for a strong tau to grow, a living creature must be standing on the plant and transferring its life energy to it."
@@ -3320,9 +3366,9 @@
 		"На большинство <curse>проклятий</curse> в будущем вы найдете управу!"
 	]
 	quest.6823D5F00B44B271.quest_desc: [
-		"Used to... mold brick-looking stuff"
+		"Used to... <positive>mold</positive> <property>brick-looking stuff</property>"
 		"{@pagebreak}"
-		"Используется для... формовки кирпичеподобных изделий"
+		"Используется для... <positive>формовки</positive> <property>кирпичеподобных изделий</property>"
 	]
 	quest.682A5ADBA0B7FF36.quest_desc: [
 		"The <warning>Factory Manager</warning> is the core component of SFM. We want you to ease into what the mod is capable of, so as a reward, you’ll receive some cables, a couple of storage blocks, and, most importantly, a program disk containing your first program—it will help you figure out what you can do with this mod."
@@ -3335,7 +3381,7 @@
 		"{image:milf:textures/quest_pic/sfm_example_01.png width:500 height:210 align:center fit:true}"
 		""
 		"{@pagebreak}"
-		"<warning>Factory Manager</warning> является основным блоком в SFM. Мы планируем чтобы вы плавно погрузилсь в то, на что способен мод, по этой причине в качестве награды вы получаете немного кабелей, пару хранилищ, и, что самое главное Program disk с вашей первой программой, она поможет вам разобраться то, что можно сделать с этим модом."
+		"<warning>Factory Manager</warning> является основным блоком в SFM. Мы планируем чтобы вы плавно погрузилсь в то, на что способен мод, по этой причине в качестве награды вы получаете немного <property>кабелей</property>, пару <property>хранилищ</property>, и, что самое главное <named>Program disk</named> с вашей первой программой, она поможет вам разобраться то, что можно сделать с этим модом."
 		""
 		"Поставьте &lКабеля&r, &lМенеджер&r и &lХранилища&r так, как показано на скриншоте ниже."
 		""
@@ -3547,10 +3593,10 @@
 		"It can for example be used to <positive>charge</positive> a <keyword>Creeper</keyword> or to create an <keyword>Arcane Crystal Obelisk</keyword>. It is also needed to <positive>activate</positive> the <keyword>Hephaestus Forge</keyword>."
 	]
 	quest.6D68EF9352B93B19.quest_desc: [
-		"As a true apex predator of this blocky world, you have to mark your territory to assure your dominance over this particular domain (and protect it from others just as apex and just as predators as yourself), and that's where this handy new flag comes into play! "
-		"Place it on unclaimed soil to claim it for your team (or yourself if that's what you fancy). Works similar to the claim chunk FTB function, just without the actual map involved (since you haven't unlocked one yet)."
+		"As a true apex predator of this blocky world, you have to <positive>mark your territory</positive> to assure your dominance over this particular domain (and protect it from others just as apex and just as predators as yourself), and that's where this handy new <keyword>flag</keyword> comes into play! "
+		"<positive>Place it</positive> on unclaimed soil to <positive>claim it</positive> for your team (or yourself if that's what you fancy). Works similar to the claim chunk FTB function, just without the actual map involved (since you haven't unlocked one yet)."
 		""
-		"&lYou can press F3 + G to enable chunk highlighting.&r"
+		"&lYou can press <keyword>F3 + G</keyword> to enable <property>chunk highlighting</property>.&r"
 	]
 	quest.6D68EF9352B93B19.title: "Chunk Claiming"
 	quest.6D7E39E29B325D19.quest_desc: [
@@ -3602,7 +3648,7 @@
 		"{@pagebreak}"
 		"Однажды мне пришла идея <warning>смешать</warning> <keyword>огненный порошок</keyword> с <warning>ядом</warning>, они и по отдельности сильны, но вместе... &l<warning>ДА ЭТО ЧЁРТОВ ВЕДЬМИН ОГОНЬ!!!</warning>"
 	]
-	quest.6E9C62BDDD273EF4.quest_desc: ["Hurls entities skyward with considerable force."]
+	quest.6E9C62BDDD273EF4.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
 	quest.6EDA8467F491B3D2.quest_desc: [
 		"Each chimney provides <keyword>+50°</keyword> but the maximum number of <keyword>Chimneys</keyword> that can be installed is <keyword>4 Brick Chimneys</keyword> and <keyword>4 reinforced Brick Chimneys</keyword>."
 		"{@pagebreak}"
@@ -3618,33 +3664,38 @@
 		"{@pagebreak}"
 		"Создаётся изменением Козьего рога. По-прежнему можно дудеть, но также можно зарядить зельем - звук применит эффект на всех питомцев и игроков рядом. Длительность - половина от оригинального зелья. Эффект остаётся после использования, новое зелье перезаписывает старое."
 	]
+	quest.6F01728FA447D081.quest_desc: [
+		"Use the <named>compass</named> on the <property>monument</property> to find the <magic>head altar</magic>"
+		"{@pagebreak}"
+		"Используйте <named>компас</named> на <property>монументе</property> чтобы найти <magic>head altar</magic>"
+	]
 	quest.6F16E9EA931A2F69.quest_desc: [
-		"Hover over the disk to see the warnings and errors for your program"
+		"Hover over the disk to see the <warning>warnings and errors</warning> for your program"
 		""
-		"Shift-right-click the manager with the label gun in your hand to load the labels from your program"
+		"Shift-right-click the manager with the <keyword>label gun</keyword> in your hand to load the labels from your program"
 		""
-		"You can now use the scroll wheel while holding shift to change the active label"
+		"You can now use the <keyword>scroll wheel</keyword> while holding shift to <positive>change the active label</positive>"
 		""
-		"Right click blocks in the world to apply or remove the label."
+		"Right click blocks in the world to <positive>apply or remove</positive> the label."
 		""
-		"There is also a right-click menu for entering a custom label that may not be in your program yet."
+		"There is also a right-click menu for entering a <property>custom label</property> that may not be in your program yet."
 		""
-		"Once you've assigned the labels, right click the manager while NOT holding shift to save the labels to the Program Disk"
+		"Once you've assigned the labels, right click the manager while NOT holding shift to <positive>save the labels</positive> to the <named>Program Disk</named>"
 		""
 		"Your program should now be running without any issues"
 		""
 		"{image:milf:textures/quest_pic/sfm_example_02.png width:285 height:300 align:center fit:true}"
 		""
 		"{@pagebreak}"
-		"Наведите курсор на диск, чтобы увидеть предупреждения и ошибки вашей программы"
+		"Наведите курсор на диск, чтобы увидеть <warning>предупреждения и ошибки</warning> вашей программы"
 		""
-		"Нажмите правую кнопку мыши, удерживая клавишу Shift, на менеджере с пистолетом в руке, чтобы загрузить метки из вашей программы"
+		"Нажмите правую кнопку мыши, удерживая клавишу Shift, на менеджере с <keyword>пистолетом</keyword> в руке, чтобы загрузить метки из вашей программы"
 		""
-		"Теперь вы можете использовать колесико мышки, удерживая клавишу Shift, чтобы изменить активную метку."
+		"Теперь вы можете использовать <keyword>колесико мышки</keyword>, удерживая клавишу Shift, чтобы <positive>изменить активную метку</positive>."
 		""
-		"Щелкните правой кнопкой мыши по блокам в мире, чтобы добавить или удалить метку."
+		"Щелкните правой кнопкой мыши по блокам в мире, чтобы <positive>добавить или удалить</positive> метку."
 		""
-		"Также доступно контекстное меню, позволяющее ввести собственное название, которого пока нет в вашей программе."
+		"Также доступно контекстное меню, позволяющее ввести <property>собственное название</property>, которого пока нет в вашей программе."
 		""
 		"После того как вы назначили метки, щелкните правой кнопкой мыши по диспетчеру, НЕ удерживая клавишу Shift, чтобы сохранить метки на программном диске"
 		""
@@ -3748,9 +3799,9 @@
 	quest.71721385710E5EB0.quest_desc: ["You can press \"<positive>C</positive>\" to <positive>crawl</positive> and say hi to all your worm-like friends!"]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
 	quest.71CC5CD5F8018F02.quest_desc: [
-		"[ \"Later on, you will need to craft many items using the anvil crafting. Pay attention to the \", { \"text\": \"winch\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! You can craft several items at once with it, and it won't break the anvil!\" ]"
+		"[ \"Later on, you will need to craft many items using the anvil crafting. Pay attention to the \", { \"text\": \"winch\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! You can <positive>craft several items at once</positive> with it, and it <warning>won't break the anvil</warning>!\" ]"
 		"{@pagebreak}"
-		"[ \"В дальнейшем вам понадобится создавать множество вещей использую наковальню для крафта, обратите внимание на \", { \"text\": \"лебедку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! В ней вы можете одновременно создавать несколько предметов, а так же в ней не ломается наковальня!\" ]"
+		"[ \"В дальнейшем вам понадобится создавать множество вещей использую наковальню для крафта, обратите внимание на \", { \"text\": \"лебедку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! В ней вы можете <positive>одновременно создавать несколько предметов</positive>, а так же в ней <warning>не ломается наковальня</warning>!\" ]"
 	]
 	quest.71DD1AE71C4E1B9F.quest_desc: [
 		"[ \"Don't forget to decorate your base with \", { \"text\": \"flags!\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6D68EF9352B93B19\" } }, \" \" ]"
@@ -3763,7 +3814,7 @@
 		"{@pagebreak}"
 		"О большинстве <keyword>ритуалов</keyword> можно прочитать в <keyword>гайдбуке</keyword>!"
 	]
-	quest.721EE6BCEA9B6F36.quest_desc: ["Access in-game encyclopedia"]
+	quest.721EE6BCEA9B6F36.quest_desc: ["<positive>Access</positive> in-game <property>encyclopedia</property>"]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
 		"{@pagebreak}"
@@ -3830,9 +3881,9 @@
 		"Оленей замечали в окрестностях <positive>тайги</positive>, <positive>саванн</positive>, <positive>лесов</positive>, <positive>равнин</positive> и <positive>бесплодных земель</positive>!"
 	]
 	quest.745BE9DA293006D1.quest_desc: [
-		"Bundle's lil bro, look at it, so cute ❤"
+		"<named>Bundle</named>'s lil bro, look at it, so <positive>cute</positive> ❤"
 		"{@pagebreak}"
-		"Младший брат мешка, посмотрите, какой он милый ❤"
+		"Младший брат <named>мешка</named>, посмотрите, какой он <positive>милый</positive> ❤"
 	]
 	quest.74D4C6332BC7AE9D.quest_desc: [
 		"<keyword>Thaumic Footsteps</keyword>"
@@ -3899,9 +3950,9 @@
 	]
 	quest.7974D49E6CAE39BF.quest_desc: ["Позволяет сделать ездового питомца при пкм на Starbuncle"]
 	quest.79CE5FF7EB605456.quest_desc: [
-		"Tired of building all those complex multiblock structures? Want to have an ability to easily move them around if you feel weak Feng Shui from it? We're presenting to you: Multiblock Packer 3000 (Safety regulations edition)."
-		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With advanced compacting technology, we accomplished the ability to pack ANY multiblock into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at PLACERS™ (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new PUSH® (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
-		"Craft one for yourself today, and you'll get an unlimited supply of boxes, a Multiblock Packer 3000 (Safety regulations edition) PLACER, AND a little plushie of our demure, ditzy CEO for free!"
+		"Tired of building all those complex multiblock structures? Want to have an ability to <positive>easily move them around</positive> if you feel weak Feng Shui from it? We're presenting to you: <named>Multiblock Packer 3000 (Safety regulations edition)</named>."
+		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With <property>advanced compacting technology</property>, we accomplished the ability to <positive>pack ANY multiblock</positive> into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at <named>PLACERS™</named> (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new <named>PUSH®</named> (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
+		"Craft one for yourself today, and you'll get an <positive>unlimited supply of boxes</positive>, a Multiblock Packer 3000 (Safety regulations edition) PLACER, AND a little plushie of our demure, ditzy CEO for free!"
 		""
 		"<fade>ⓘ (We are not responsible for any injuries inflicted on the user by the machine. May contain traces of radioactive waste, horsehairs, and insulin. Not recommended for use for infants, piglins, and fairies) </fade>"
 	]
@@ -3925,7 +3976,7 @@
 	]
 	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["<positive>Charges items</positive>. That's it"]
-	quest.7AA3CDBC6B160F86.quest_desc: ["<keyword>Free furnaces</keyword>"]
+	quest.7AA3CDBC6B160F86.quest_desc: ["<property>Free furnaces</property>"]
 	quest.7AB88C2D779F62E2.quest_desc: [
 		"An upgraded coin pouch that automatically picks up coins from the floor"
 		"{@pagebreak}"
@@ -4271,6 +4322,7 @@
 	task.6B073DC5E1960334.title: "Odus' Open Convocation"
 	task.6BD37E6531E3BAF0.title: "Any #starcatcher:tackle_skins"
 	task.6C76C1D379AC2926.title: "Horseman"
+	task.6C99A31E20FD2A4C.title: "Any #milf:crest_base_blocks"
 	task.6D290A3A18CB158B.title: "Time Arrays"
 	task.6DA0FB55995165C0.title: "Armor Quick Swap"
 	task.6DB27C8811207858.title: "Any #magnumtorch:torches"

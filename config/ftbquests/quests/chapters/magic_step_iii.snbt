@@ -17,15 +17,26 @@
 				id: "risus:beating_heart"
 			}
 			id: "7F4DD202F7059EF5"
-			rewards: [{
-				id: "1380605DF3BF56D7"
-				item: {
-					count: 1
-					id: "risus:researchers_notes"
+			rewards: [
+				{
+					id: "1380605DF3BF56D7"
+					item: {
+						count: 1
+						id: "risus:researchers_notes"
+					}
+					team_reward: false
+					type: "item"
 				}
-				team_reward: false
-				type: "item"
-			}]
+				{
+					id: "7F4970ED317170CD"
+					item: {
+						count: 1
+						id: "netherman:azazel_guide_book"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -3217,6 +3228,221 @@
 			]
 			x: 8.0d
 			y: -10.0d
+		}
+		{
+			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
+			id: "5FBE128C3228AF27"
+			tasks: [{
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					id: "netherman:locker_nether"
+				}
+				id: "020C1648F6E5BA2A"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "netherman:locker_nether"
+				type: "observation"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5FBE128C3228AF27"]
+			entity_vis_size: 1.0f
+			id: "57C4CC73DC66630C"
+			tasks: [{
+				id: "013416D328602F6B"
+				item: { count: 1, id: "netherman:altar_compass_key" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57C4CC73DC66630C"]
+			entity_vis_size: 1.0f
+			id: "6F01728FA447D081"
+			tasks: [{
+				icon: {
+					id: "netherman:samsonit_key"
+				}
+				id: "2142C104BB0BB141"
+				structure: "netherman:monument"
+				type: "structure"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F01728FA447D081"]
+			entity_vis_size: 1.0f
+			id: "733650018D5A71C9"
+			tasks: [{
+				id: "2273483E235738DA"
+				item: { components: { "minecraft:custom_data": { HeadAltarMode: 1b } }, count: 1, id: "netherman:altar_compass_key" }
+				optional_task: true
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["733650018D5A71C9"]
+			entity_vis_size: 1.0f
+			id: "4A466EBB29C36CCD"
+			tasks: [{
+				icon: {
+					id: "netherman:z_puzzle"
+				}
+				id: "4E4B6B996A949980"
+				structure: "netherman:head_altar"
+				type: "structure"
+			}]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F4DD202F7059EF5"]
+			entity_vis_size: 1.0f
+			id: "1D85685CE954626B"
+			tasks: [
+				{
+					ftbquestsentityvis_icon: {
+						enabled: 1b
+						entity: "netherman:ghastly"
+						idle_mode: "USE_GLOBAL"
+						offset_x: 0.0f
+						offset_y: 0.0f
+						rotation: 0.0f
+						silhouette_mode: "NONE"
+						size: 1.0f
+						spin_mode: "USE_GLOBAL"
+						use_as_quest_icon: 1b
+						walk_mode: "USE_GLOBAL"
+					}
+					icon: {
+						components: {
+							"ftbquests:icon": "netherman:item/ghastly_spawn_egg"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "5D7A1E3C1F9776BB"
+					structure: "netherman:gast_chamber"
+					type: "structure"
+				}
+				{
+					id: "1CF5DEFF3955D1C4"
+					item: { count: 1, id: "minecraft:crimson_roots" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D85685CE954626B"]
+			entity_vis_size: 1.0f
+			id: "1AB60A75D53EDEE0"
+			tasks: [{
+				icon: {
+					id: "netherman:azazel_trophy"
+				}
+				id: "59EC5E843B9220DE"
+				structure: "netherman:mansion_nether"
+				type: "structure"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1AB60A75D53EDEE0"]
+			entity_vis_size: 1.0f
+			id: "146E3BD6BC57D833"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				entity: "netherman:azazel"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0343684E781CE1BC"
+				type: "kill"
+				value: 1L
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["146E3BD6BC57D833"]
+			entity_vis_size: 1.0f
+			id: "7AF3270B981FFEAD"
+			tasks: [{
+				id: "41D85E6734BE5833"
+				item: { count: 1, id: "netherman:azazel_trophy" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A466EBB29C36CCD"]
+			entity_vis_size: 1.0f
+			id: "078A77490809E4E3"
+			tasks: [{
+				icon: {
+					id: "netherman:samsonite_bell"
+				}
+				id: "6981555D737CA812"
+				structure: "netherman:maze"
+				type: "structure"
+			}]
+			x: -13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"078A77490809E4E3"
+				"7AF3270B981FFEAD"
+			]
+			entity_vis_size: 1.0f
+			icon_scale: 2.0d
+			id: "0FBB5C5541E982A6"
+			shape: "none"
+			size: 6.0d
+			tasks: [{
+				entity: "netherman:azazel_human"
+				entity_vis_idle_mode: "FORCE_OFF"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "12194E985C6B3170"
+				type: "kill"
+				value: 1L
+			}]
+			x: -17.5d
+			y: -0.5d
 		}
 	]
 }

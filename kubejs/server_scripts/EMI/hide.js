@@ -97,7 +97,6 @@ RecipeViewerEvents.removeEntries('item', event => {
         'rep_ae2_bridge:earth',
         'amendments:dye_bottle',
         'ftblibrary:icon_item',
-        'astages:limit_movement',
         'littlejoys:fishing_spot',
         'littlejoys:dig_spot',
         'mob_weapon_api:laser_gatling',

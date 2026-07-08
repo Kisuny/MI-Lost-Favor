@@ -11,6 +11,7 @@
           "to_place": {
             "type": "minecraft:weighted_state_provider",
             "entries": [
+              {"data": {"Name": "minecraft:crimson_roots"}, "weight": 8},
               {"data": {"Name": "chipped:sprouting_crimson_roots"}, "weight": 4},
               {"data": {"Name": "chipped:sprouting_crimson_roots_bulb"}, "weight": 2},
               {"data": {"Name": "chipped:wilted_crimson_roots_bulb"}, "weight": 2},

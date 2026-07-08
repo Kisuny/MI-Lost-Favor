@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "milf:blood_wastes",
+    "milf:crimson_mangrove_swamp"
+  ],
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "netherman:nether_geyser",
+  "size": 1,
+  "max_distance_from_center": 80,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": { "absolute": -40 },
+    "max_inclusive": { "absolute": 10 }
+  },
+  "project_start_to_heightmap": "OCEAN_FLOOR_WG",
+  "use_expansion_hack": false
+}

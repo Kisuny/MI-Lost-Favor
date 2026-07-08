@@ -246,6 +246,14 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:amber_visage"))
             })
             .pool((pool) => {
+                pool.when(conditions => {
+                    conditions.randomChance(0.1)
+                })
+                pool.addEntry(LootEntry.of("milf:recall_concoction"))
+                pool.addEntry(LootEntry.of("milf:grecall_concoction_t1"))
+                pool.addEntry(LootEntry.empty())
+            })
+            .pool((pool) => {
                 pool.when(conditions => { 
                     conditions.randomChance(0.2)
                 })

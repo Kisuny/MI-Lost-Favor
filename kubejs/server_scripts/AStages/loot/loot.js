@@ -3,15 +3,43 @@
 const lootRestrictions = [
 
     {
-        stage: 'tools_and_armors_everywhere',
+        stage: 'any_tools_and_armors_everywhere',
         everywhere: true,
         tags: ['c:tools', 'c:armors'],
+        ignoredItems: [
+            'minecraft:iron_shovel', 'minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_hoe',
+            'minecraft:iron_sword', 'minecraft:iron_helmet', 'minecraft:iron_chestplate', 'minecraft:iron_leggings', 'minecraft:iron_boots',
+            'minecraft:diamond_shovel', 'minecraft:diamond_pickaxe', 'minecraft:diamond_axe', 'minecraft:diamond_hoe',
+            'minecraft:diamond_sword', 'minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots',
+            'minecraft:netherite_pickaxe', 'minecraft:netherite_shovel', 'minecraft:netherite_axe', 'minecraft:netherite_hoe', 'minecraft:netherite_helmet',
+            'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots', 'minecraft:netherite_sword',
+        ]
+    },
+    {
+        stage: 'iron_tools_and_armors_everywhere',
+        everywhere: true,
+        items: ['minecraft:iron_shovel', 'minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_hoe', 'minecraft:iron_sword', 'minecraft:iron_helmet', 'minecraft:iron_chestplate', 'minecraft:iron_leggings', 'minecraft:iron_boots']
+    },
+    {
+        stage: 'diamond_tools_and_armors_everywhere',
+        everywhere: true,
+        items: ['minecraft:diamond_shovel', 'minecraft:diamond_pickaxe', 'minecraft:diamond_axe', 'minecraft:diamond_hoe', 'minecraft:diamond_sword', 'minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots']
+    },
+    {
+        stage: 'netherite_tools_and_armors_everywhere',
+        everywhere: true,
+        items: ['minecraft:netherite_pickaxe', 'minecraft:netherite_shovel', 'minecraft:netherite_axe', 'minecraft:netherite_hoe', 'minecraft:netherite_helmet','minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots', 'minecraft:netherite_sword']
     },
     {
         stage: 'simplyswords_swords_everywhere',
         everywhere: true,
         tags: ['simplyswords:swords'],
-        items: 'simplyswords:runic_tablet'
+        ignoredTags: 'simplyswords:uniques'
+    },
+    {
+        stage: 'simplyswords_uniques_swords_everywhere',
+        everywhere: true,
+        tags: ['simplyswords:uniques']
     },
     {
         stage: 'enchanted_book_everywhere',
@@ -23,79 +51,30 @@ const lootRestrictions = [
         everywhere: true,
         items: 'minecraft:bucket',
     },
+    // diamonds/emeralds/lapis etc
     {
         stage: 'gems_everywhere',
         everywhere: true,
         tags: 'c:gems',
+    },
+    
+
+    //List of ideas that won't work because of GLM https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/glm/
+    {
+        stage: 'relic_test',
+        everywhere: true,
+        tags: ['milf:artifacts', 'relics:relics']
     },
     {
         stage: 'enigmaticlegacyplus_everywhere',
         everywhere: true,
         mods: 'enigmaticlegacyplus',
     },
-
-    // {
-    //     stage: 'replace_iron_to_tin',
-    //     everywhere: true,
-    //     replacements: { 'minecraft:raw_iron': ['minecraft:raw_copper', 1] }
-    // },
-
-    // {
-    //     stage: 'test_loot_stage_2',
-    //     entityFilter: 'PARTIAL',
-    //     entities: 'minecraft:zombie',
-    //     items: 'minecraft:rotten_flesh',
-    //     replacements: { 'minecraft:rotten_flesh': ['minecraft:emerald_block', 10] }
-    // },
-
-    // {
-    //     stage: 'test_loot_stage_3',
-    //     lootTableFilter: 'PARTIAL',
-    //     lootTables: 'minecraft:chests/simple_dungeon',
-    //     items: 'minecraft:rotten_flesh'
-    // },
-    // {
-    //     stage: 'test_loot_stage_4',
-    //     everywhere: true,
-    //     tags: ['c:tools', 'c:armors'],
-    //     items: ['minecraft:diamond_sword'],
-    //     ignoredItems: 'minecraft:diamond_pickaxe'
-    // },
-
-    // {
-    //     stage: 'test_loot_stage_5',
-    //     everywhere: true,
-    //     mods: ['milf',  'devices']
-    // },
     {
-        stage: 'relic_test',
+        stage: 'simplyswords_runic_tablet_everywhere',
         everywhere: true,
-        tags: ['milf:artifacts', 'relics:relics']
+        items: 'simplyswords:runic_tablet',
     },
-
-    // {
-    //     stage: 'test_loot_stage_7',
-    //     everywhere: true,
-    //     items: ['minecraft:gold_ingot', 'minecraft:diamond'],
-    //     replacements: {
-    //         'minecraft:gold_ingot': ['minecraft:iron_ingot', 2],
-    //         'minecraft:diamond': 'minecraft:coal' // count defaults to 1 when omitted
-    //     }
-    // },
-
-    // {
-    //     stage: 'test_loot_stage_8',
-    //     blocks: 'minecraft:coal_ore',
-    //     items: 'minecraft:coal',
-    //     replacer: stack => Item.of('minecraft:charcoal', stack.getCount())
-    // },
-
-
-    // {
-    //     stage: 'test_loot_stage_10',
-    //     entityFilter: 'ALL',
-    //     entities: 'minecraft:creeper'
-    // }
 ]
 
 lootRestrictions.forEach(addLootRestriction)

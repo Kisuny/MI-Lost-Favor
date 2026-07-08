@@ -1,0 +1,47 @@
+{
+  "parent": "netherexp:nether/soul_sand_valley/soul_sand_valley",
+  "criteria": {
+    "netherexp:black_ice_glaciers": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "netherexp:black_ice_glaciers"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.nether.fright_before_xmas.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "id": "netherexp:netherite_plated_block",
+      "components": {
+        "minecraft:custom_model_data": 1
+      }
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.nether.fright_before_xmas.title"
+    }
+  },
+  "requirements": [
+    [
+      "netherexp:black_ice_glaciers"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

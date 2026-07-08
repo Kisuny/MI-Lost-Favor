@@ -104,6 +104,28 @@ LootJS.modifiers(event => {
         })
     })
 
+    // Any loot table that already rolls an iron/gold ingot
+    // gets a chance to also drop raw_tin/raw_copper
+    const ironOrGoldFilter = ItemFilter.anyOf(
+        ItemFilter.item("minecraft:iron_ingot", false),
+        ItemFilter.item("minecraft:gold_ingot", false),
+    )
+
+    const oreAddonLootTypes = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]
+
+    oreAddonLootTypes.forEach(type => {
+        event.addTableModifier(type).group(ironOrGoldFilter, group => {
+            group.pool(pool => {
+                pool.when(c => c.randomChance(0.3))
+                pool.addEntry(LootEntry.of("modern_industrialization:raw_tin", [1, 10]))
+            })
+            group.pool(pool => {
+                pool.when(c => c.randomChance(0.3))
+                pool.addEntry(LootEntry.of("minecraft:raw_copper", [1, 10]))
+            })
+        })
+    })
+
     structuresLootTable.common.forEach(table => {
         event
             .addTableModifier(table)

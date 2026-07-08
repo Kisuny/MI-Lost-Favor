@@ -4066,6 +4066,15 @@
 			dependencies: ["336C43BDBE0A0995"]
 			entity_vis_size: 1.0f
 			id: "4DD1404D1B9CA7F7"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "minecraft:ancient_debris"
+				}
+				id: "4C183945FE934E50"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "octagon"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -4240,14 +4249,25 @@
 				id: "minecraft:diamond_helmet"
 			}
 			id: "6388891962FA9721"
-			rewards: [{
-				id: "159203DF1BCFC14C"
-				item: {
-					count: 1
-					id: "grimoireofgaia:box_diamond"
+			rewards: [
+				{
+					id: "159203DF1BCFC14C"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_diamond"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					auto: "enabled"
+					icon: {
+						id: "minecraft:diamond_chestplate"
+					}
+					id: "76D62EF7E386F07D"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "pentagon"
 			tasks: [
 				{

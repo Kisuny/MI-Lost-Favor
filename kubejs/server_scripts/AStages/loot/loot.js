@@ -1,5 +1,3 @@
-// WIP for now
-
 const lootRestrictions = [
 
     {
@@ -39,7 +37,7 @@ const lootRestrictions = [
     {
         stage: 'simplyswords_uniques_swords_everywhere',
         everywhere: true,
-        tags: ['simplyswords:uniques']
+        tags: ['simplyswords:uniques', 'simplybows:uniques']
     },
     {
         stage: 'enchanted_book_everywhere',
@@ -54,7 +52,7 @@ const lootRestrictions = [
     {
         stage: 'bucket_everywhere',
         everywhere: true,
-        items: 'minecraft:bucket',
+        tags: 'c:buckets',
     },
     // diamonds/emeralds/lapis etc
     {
@@ -65,22 +63,22 @@ const lootRestrictions = [
     },
     
 
-    //List of ideas that won't work because of GLM https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/glm/
-    {
-        stage: 'relic_test',
-        everywhere: true,
-        tags: ['milf:artifacts', 'relics:relics']
-    },
-    {
-        stage: 'enigmaticlegacyplus_everywhere',
-        everywhere: true,
-        mods: 'enigmaticlegacyplus',
-    },
-    {
-        stage: 'simplyswords_runic_tablet_everywhere',
-        everywhere: true,
-        items: 'simplyswords:runic_tablet',
-    },
+    // List of ideas that won't work because of GLM https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/glm/
+    // {
+    //     stage: 'relic_test',
+    //     everywhere: true,
+    //     tags: ['milf:artifacts', 'relics:relics']
+    // },
+    // {
+    //     stage: 'enigmaticlegacyplus_everywhere',
+    //     everywhere: true,
+    //     mods: 'enigmaticlegacyplus',
+    // },
+    // {
+    //     stage: 'simplyswords_runic_tablet_everywhere',
+    //     everywhere: true,
+    //     items: 'simplyswords:runic_tablet',
+    // },
 ]
 
 lootRestrictions.forEach(addLootRestriction)

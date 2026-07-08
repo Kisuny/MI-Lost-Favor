@@ -2669,6 +2669,18 @@
 			dependencies: ["002562156B0D8E9F"]
 			entity_vis_size: 1.0f
 			id: "2BAF1070D316E4A4"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "minecraft:item/enchanted_book"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4F76CA5E86C00635"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "7142828AFBDBF9A3"
@@ -3005,18 +3017,32 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "30ED4F9B49BFC36C"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					components: {
-						"ftbquests:icon": "betteradvancedtooltips:textures/font/icons/warn.png"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "betteradvancedtooltips:textures/font/icons/warn.png"
+						}
+						id: "ftbquests:custom_icon"
 					}
-					id: "ftbquests:custom_icon"
+					id: "20165DF8F49E8177"
+					team_reward: false
+					type: "custom"
 				}
-				id: "20165DF8F49E8177"
-				team_reward: false
-				type: "custom"
-			}]
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "simplyswords:item/tempest_anim_01"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "7C41108E48C9E62D"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "gear"
 			tasks: [{
 				id: "184359A96376C457"

@@ -146,6 +146,20 @@ ServerEvents.recipes(event => {
                 { "item": "ytech:shell_beads" },
             ]
         },
+        {
+            id: "fortress", pedestal_items: [
+                { "item": "minecraft:nether_brick" },
+                { "item": "minecraft:nether_brick" },
+                { "item": "minecraft:nether_brick" },
+                { "item": "minecraft:nether_brick" },
+            ]
+        },
+        {
+            id: "weeping_well", pedestal_items: [
+                { "tag": "c:buckets" },
+                { "item": "devices:orichalcum_coin" }
+            ]
+        },
     ]
 
     locate_structure_list.forEach(s => {

@@ -282,9 +282,9 @@ ServerEvents.recipes(event => {
         },
         {
             id: "cataclysm:amethyst_nest", name: "cataclysm_amethyst_nest", augments: [
-                { "item": "minecraft:amethyst_block" },
-                { "item": "minecraft:amethyst_block" },
-                { "item": "minecraft:amethyst_block" },
+                { "key": "minecraft:amethyst_block" },
+                { "key": "minecraft:amethyst_block" },
+                { "key": "minecraft:amethyst_block" },
             ]
         },
         {
@@ -341,6 +341,20 @@ ServerEvents.recipes(event => {
                 { "key": "spectrum:lime_pigment" },
             ]
         },
+        {
+            id: "betterfortresses:fortress", name: "fortress", augments: [
+                { "key": "minecraft:nether_brick" },
+                { "key": "minecraft:nether_brick" },
+                { "key": "minecraft:nether_brick" },
+                { "key": "minecraft:nether_brick" },
+            ]
+        },
+        {
+            id: "malum:weeping_well", name: "weeping_well", augments: [
+                { "key": "devices:orichalcum_coin" },
+                { "key": "minecraft:water_bucket" }
+            ]
+        },
     ]
 
     locate_structure_list.forEach(structure => {
@@ -365,8 +379,8 @@ ServerEvents.recipes(event => {
             ]
         }
 
-        //JsonIO.write(locateStructureJson, locateStructureRecipeJson);
-        //JsonIO.write(locateStructureTagJson, tagStructureJson);
+        // JsonIO.write(locateStructureJson, locateStructureRecipeJson);
+        // JsonIO.write(locateStructureTagJson, tagStructureJson);
     });
 
 })

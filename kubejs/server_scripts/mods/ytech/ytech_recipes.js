@@ -372,7 +372,8 @@ ServerEvents.recipes(event => {
             [{ "item": "minecraft:string" }],
             [{ tag: "milf:knives" }],
         ],
-        compatOff:true
+        compatOff:true,
+        removeRecipe: true
     })
 
     yTechShapeless(event, {

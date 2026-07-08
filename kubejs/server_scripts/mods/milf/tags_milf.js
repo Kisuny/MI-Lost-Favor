@@ -26,7 +26,7 @@ ServerEvents.tags('item', event => {
 
     ])
 
-    event.add("milf:sticks", ['#c:rods/wooden', '#c:wood_sticks', 'milf:twig', "immersiveengineering:stick_treated"])
+    event.add("milf:sticks", ['milf:twig', '#c:rods/wooden', '#c:wood_sticks',  "immersiveengineering:stick_treated"])
 
     event.add("milf:ropes", ['#c:ropes', 'ytech:grass_twine',])
 

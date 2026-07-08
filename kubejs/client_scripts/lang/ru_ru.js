@@ -27,6 +27,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${MilfEffects.GRAD.custom("тёмных глубинах", "#1A4FFF", "#0A1A7A")}...`)
     event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${MilfEffects.GRAD.custom("существами, которым нет числа", "#9B59B6", "#E8D5FF")}`)
     event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${MilfEffects.GRAD.UPGRADE("новыми рудами")}...`)
+    event.add('milf.stage.malum_access_ore', `Шахты теперь шепчут ${MilfEffects.GRAD.custom("тайной рудой", "#7A2ED1", "#D9A9FF")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
     event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${MilfEffects.GRAD.custom("странные звуки", "#ED1A1A", "#B62651")} ночью...`)

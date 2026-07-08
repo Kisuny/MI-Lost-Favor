@@ -28,6 +28,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.cataclysm_mobs', `Something ancient stirs in the ${MilfEffects.GRAD.custom("darkened depths", "#093BE0", "#3B13B3")}...`)
     event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${MilfEffects.GRAD.custom("creatures beyond count", "#8A5CCF", "#CEBCFF")}`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${MilfEffects.GRAD.custom("new ores", "#55A2FA", "#8DDBFF")}...`)
+    event.add('milf.stage.malum_access_ore', `The mines now whisper with ${MilfEffects.GRAD.custom("arcane ore", "#7A2ED1", "#D9A9FF")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')

@@ -73,7 +73,6 @@ LootJS.modifiers(event => {
             'dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_treasure',
             'dungeons_arise:chests/bandit_towers/bandit_towers_treasure',
             'friendsandfoes:chests/illusioner_shack',
-            'artifacts:entities/mimic',
             'rottencreatures:entities/dead_beard',
             'rottencreatures:entities/immortal',
             'underground_bunkers:chests/underground_bunker/underground_bunker_treasure',
@@ -96,7 +95,7 @@ LootJS.modifiers(event => {
     }
 
     // devices loot addons for ALL chest loot tables
-    const devicesLootTiers = { tier1: 0.4, tier2: 0.2, tier3: 0.1 }
+    const devicesLootTiers = { tier1: 0.2, tier2: 0.1, tier3: 0.05 }
 
     Object.entries(devicesLootTiers).forEach(([tier, chance]) => {
         event.addTableModifier(LootType.CHEST).pool(pool => {
@@ -110,7 +109,7 @@ LootJS.modifiers(event => {
             .addTableModifier(table)
             .pool((pool) => {
                 pool.when(conditions => {
-                    conditions.randomChance(0.1)
+                    conditions.randomChance(0.05)
                 })
                 pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
                 pool.addEntry(LootEntry.of("milf:rune_of_armor"))
@@ -118,6 +117,7 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
                 pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
                 pool.addEntry(LootEntry.of("milf:rune_of_mining"))
+                pool.addEntry(LootEntry.empty())
                 pool.addEntry(LootEntry.empty())
                 pool.addEntry(LootEntry.empty())
             })
@@ -130,7 +130,7 @@ LootJS.modifiers(event => {
             })
             .pool((pool) => {
                 pool.when(conditions => {
-                    conditions.randomChance(0.2)
+                    conditions.randomChance(0.05)
                 })
                 pool.addEntry(LootEntry.of("milf:transmutation_orb", [1, 3]))
                 pool.addEntry(LootEntry.of("milf:regal_orb", [1, 3]))
@@ -142,6 +142,12 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:orb_of_corruption", [1, 3]))
                 pool.addEntry(LootEntry.empty())
                 pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
             })
     });
 
@@ -150,7 +156,7 @@ LootJS.modifiers(event => {
             .addTableModifier(table)
             .pool((pool) => {
                 pool.when(conditions => {
-                    conditions.randomChance(0.2)
+                    conditions.randomChance(0.1)
                 })
                 pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
                 pool.addEntry(LootEntry.of("milf:rune_of_armor"))
@@ -171,7 +177,7 @@ LootJS.modifiers(event => {
             })
             .pool((pool) => {
                 pool.when(conditions => {
-                    conditions.randomChance(0.3)
+                    conditions.randomChance(0.1)
                 })
                 pool.addEntry(LootEntry.of("milf:transmutation_orb", [1, 5]))
                 pool.addEntry(LootEntry.of("milf:regal_orb", [1, 5]))
@@ -181,6 +187,14 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:orb_of_annulment", [1, 5]))
                 pool.addEntry(LootEntry.of("milf:orb_of_regret", [1, 5]))
                 pool.addEntry(LootEntry.of("milf:orb_of_corruption", [1, 5]))
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
             })
     });
 
@@ -189,7 +203,7 @@ LootJS.modifiers(event => {
             .addTableModifier(table)
             .pool((pool) => {
                 pool.when(conditions => {
-                    conditions.randomChance(0.5)
+                    conditions.randomChance(0.3)
                 })
                 pool.addEntry(LootEntry.of("milf:rune_of_piercing", [1, 2]))
                 pool.addEntry(LootEntry.of("milf:rune_of_armor", [1, 2]))
@@ -210,7 +224,7 @@ LootJS.modifiers(event => {
             })
             .pool((pool) => {
                 pool.when(conditions => { 
-                    conditions.randomChance(0.6)
+                    conditions.randomChance(0.2)
                 })
                 pool.addEntry(LootEntry.of("milf:transmutation_orb", [2, 5]))
                 pool.addEntry(LootEntry.of("milf:regal_orb", [2, 5]))
@@ -220,6 +234,14 @@ LootJS.modifiers(event => {
                 pool.addEntry(LootEntry.of("milf:orb_of_annulment", [2, 5]))
                 pool.addEntry(LootEntry.of("milf:orb_of_regret", [2, 5]))
                 pool.addEntry(LootEntry.of("milf:orb_of_corruption", [2, 5]))
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
+                pool.addEntry(LootEntry.empty())
             })
     });
 

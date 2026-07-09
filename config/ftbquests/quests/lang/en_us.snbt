@@ -279,9 +279,9 @@
 	quest.07E78D29C898CE55.quest_desc: ["<named>Wild sheep</named>"]
 	quest.07ED244BED2A7802.quest_desc: ["Training a <keyword>Data Model</keyword> can be done in one of <keyword>two ways</keyword>: with a <keyword>Deep Learner</keyword> or with a <keyword>Simulation Chamber</keyword>. The <keyword>Deep Learner</keyword> allows you to store a few <keyword>Data Models</keyword> within, and <positive>kills</positive> you receive will begin to <property>train the model</property>. All models start out in the <warning>Faulty</warning> state, and must be trained up to &l<positive>Basic</positive> in the <keyword>Deep Learner</keyword>."]
 	quest.080CC80D28F2DBED.quest_desc: [
-		"[ \"You can use a \", { \"text\": \"water container\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38077A8FBBA9C3A1\" } }, \" to catch mobs like fish or axolotls and breed them. It’s a very lag-friendly block - use it instead of having a large number of mobs in your area, as that can negatively impact server performance!\" ]"
+		"[ \"You can use a \", { \"text\": \"water container\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38077A8FBBA9C3A1\" } }, \" to catch mobs like fish or axolotls and <positive>breed them</positive>. It's a very <property>lag-friendly block</property> - use it instead of having a large number of mobs in your area, as that can <warning>negatively impact server performance</warning>!\" ]"
 		"{@pagebreak}"
-		"[ \"Используя \", { \"text\": \"водный контейнер\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38077A8FBBA9C3A1\" } }, \" можно поймать таких мобов как рыбы или аксолотль и разводить их, это очень лаг-френдли блок, используйте его вместо большого количества мобов на вашей территории, это плохо сказывается на производительности сервера!\" ]"
+		"[ \"Используя \", { \"text\": \"водный контейнер\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38077A8FBBA9C3A1\" } }, \" можно поймать таких мобов как рыбы или аксолотль и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!\" ]"
 	]
 	quest.080CC80D28F2DBED.title: "A cage for our aquatic animal friends"
 	quest.08136C156A331A52.quest_desc: [
@@ -1494,9 +1494,9 @@
 	]
 	quest.2CCA1CEC324FE789.quest_desc: ["Bends things with <keyword>double the speed</keyword> of compressor!"]
 	quest.2CFF4A7767CD830E.quest_desc: [
-		"[ \"You can use a \", { \"text\": \"bird catcher\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"351FE7156FB415A0\" } }, \" to catch mobs like bees or bats and breed them. This is a very lag-friendly block - use it instead of having large numbers of mobs in your territory, as that can negatively impact server performance!\" ]"
+		"[ \"You can use a \", { \"text\": \"bird catcher\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"351FE7156FB415A0\" } }, \" to catch mobs like bees or bats and <positive>breed them</positive>. This is a very <property>lag-friendly block</property> - use it instead of having large numbers of mobs in your territory, as that can <warning>negatively impact server performance</warning>!\" ]"
 		"{@pagebreak}"
-		"[ \"Используя \", { \"text\": \"птицелов\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"351FE7156FB415A0\" } }, \" можно поймать таких мобов как пчёл или летучих мышей и разводить их, это очень лаг-френдли блок, используйте его вместо большого количества мобов на вашей территории, это плохо сказывается на производительности сервера!\" ]"
+		"[ \"Используя \", { \"text\": \"птицелов\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"351FE7156FB415A0\" } }, \" можно поймать таких мобов как пчёл или летучих мышей и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!\" ]"
 	]
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
 	quest.2D26EA473D256B54.quest_desc: ["An <keyword>upgraded variant</keyword> that allows <positive>catching boss entities</positive>"]
@@ -1529,7 +1529,11 @@
 		"{@pagebreak}"
 		"До <keyword>4</keyword>"
 	]
-	quest.2E3384D5D0C2A9CF.quest_desc: ["Можно засунуть большинство мобов, даже боссов и начать их фармить при помощи дрыгмы, так же банки поддерживают ловлю в банку фолиатов из мода Ocultism"]
+	quest.2E3384D5D0C2A9CF.quest_desc: [
+		"You can put most mobs - even <blood>bosses</blood> - inside and start farming them using a <keyword>drygmy</keyword>; the jars also support catching <keyword>foliates</keyword> from the <magic>Occultism</magic> mod."
+		"{@pagebreak}"
+		"Можно засунуть большинство мобов, даже <blood>боссов</blood> и начать их фармить при помощи <keyword>дрыгмы</keyword>, так же банки поддерживают ловлю в банку <keyword>фолиатов</keyword> из мода <magic>Occultism</magic>"
+	]
 	quest.2E52CA7586B64968.quest_desc: ["minecraft:jungle"]
 	quest.2E5638B2207FCCBF.quest_desc: [
 		"&lChalice (Filled)&r:"
@@ -1776,6 +1780,11 @@
 		"You can also buy from <keyword>Wandering Trader</keyword>."
 		""
 		"You can also get it from <keyword>Piglin Barter</keyword>."
+	]
+	quest.365584F44AB28CB8.quest_desc: [
+		"A handy <keyword>radar</keyword> that shows which <named>fish</named> you can <positive>catch</positive> in the area where you are"
+		"{@pagebreak}"
+		"Удобный <keyword>радар</keyword> показывающий какую из <named>рыб</named> вы можете <positive>поймать</positive> в той области где находитесь"
 	]
 	quest.3682A94D1B71ED30.quest_desc: [
 		"&m&l&#e4affaPastel&r&r&r &l&#e4affaSpectrum&r&r - A unique mod, in a league of its own. "
@@ -3135,9 +3144,9 @@
 	quest.605AFF391B6FB32E.quest_desc: ["<keyword>32 channels/cable</keyword>"]
 	quest.606AC3FF6B9213D5.quest_desc: ["Just like a normal <keyword>composter</keyword>, but <property>mechanical</property>!"]
 	quest.606DEC68ADF83126.quest_desc: [
-		"In the Selling Bin, you can sell the fish you've caught; the price depends on the fish's size and other fish characteristics."
+		"In the <named>Selling Bin</named>, you can <positive>sell</positive> the fish you've caught; the <property>price</property> depends on the fish's size and other fish characteristics."
 		"{@pagebreak}"
-		"В Selling Bin можно продавать выловленную рыбу, цена зависит от размера рыбы и других характеристик рыбы."
+		"В <named>Selling Bin</named> можно <positive>продавать</positive> выловленную рыбу, <property>цена</property> зависит от размера рыбы и других характеристик рыбы."
 	]
 	quest.6071F775D9AB5DBA.quest_desc: [
 		"The <property>essence of nature</property> itself. Can create new life and revive life long dead."
@@ -3185,9 +3194,9 @@
 	]
 	quest.6161B74A88A73B46.quest_subtitle: "Low HP build, pog!"
 	quest.617E14880D9D75A0.quest_desc: [
-		"[ \"You can use a \", { \"text\": \"cage\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25790982D97FF33B\" } }, \" to catch mobs like sheep or cows and breed them. It’s a very lag-friendly block - use it instead of having a large number of mobs in your area, as that can negatively impact server performance!\" ]"
+		"[ \"You can use a \", { \"text\": \"cage\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25790982D97FF33B\" } }, \" to catch mobs like sheep or cows and <positive>breed them</positive>. It's a very <property>lag-friendly block</property> - use it instead of having a large number of mobs in your area, as that can <warning>negatively impact server performance</warning>!\" ]"
 		"{@pagebreak}"
-		"[ \"Используя \", { \"text\": \"клетку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25790982D97FF33B\" } }, \" можно поймать таких мобов как овец или коров и разводить их, это очень лаг-френдли блок, используйте его вместо большого количества мобов на вашей территории, это плохо сказывается на производительности сервера!\" ]"
+		"[ \"Используя \", { \"text\": \"клетку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25790982D97FF33B\" } }, \" можно поймать таких мобов как овец или коров и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!\" ]"
 	]
 	quest.617E14880D9D75A0.title: "A cage for our animal friends"
 	quest.61DD20DF56A3CEDD.quest_desc: [
@@ -3891,9 +3900,9 @@
 		"<keyword>Тауматургам</keyword> приготовиться"
 	]
 	quest.752A68C79A982D82.quest_desc: [
-		"This artifact is compatible with fishing from the Starcatcher mod! "
+		"This <named>artifact</named> is compatible with fishing from the <magic>Starcatcher</magic> mod! "
 		"{@pagebreak}"
-		"Данный артефакт совместим вместе с рыбалкой из мода Starcatcher! "
+		"Данный <named>артефакт</named> совместим вместе с рыбалкой из мода <magic>Starcatcher</magic>! "
 	]
 	quest.754E0F5DDA39F8C1.quest_desc: [
 		"&#FEECD6Crush&r this &#CAE4C8toxic&r &#CAE4C8reed&r with an anvil!"
@@ -4105,9 +4114,9 @@
 		"Мы &l&2настоятельно рекомендуем&r&r вам познакомится с этим модом и начинать автоматизировать вещи с его помощью, это правда очень удобно!"
 	]
 	quest.7F8041E0EFBB9BB6.quest_desc: [
-		"You can create your own fishing tournaments and compete to see who’s the best angler!"
+		"You can <positive>create</positive> your own <named>fishing tournaments</named> and compete to see who's the best angler!"
 		"{@pagebreak}"
-		"Можно создавать свои рыбные турниры и посоревноваться кто лучший рыбак!"
+		"Можно <positive>создавать</positive> свои <named>рыбные турниры</named> и посоревноваться кто лучший рыбак!"
 	]
 	reward.015382CFC13FFB7A.title: "Deeper Down Access "
 	reward.04B7B3AE59A69B54.title: "Ring Trinket Slot"

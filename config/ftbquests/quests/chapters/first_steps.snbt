@@ -3945,8 +3945,11 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["65ACC9954B888913"]
+			dependencies: ["2CB775EC10EADEF7"]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "starcatcher:shiny_hook"
+			}
 			id: "474FF9F4C24B4AE3"
 			shape: "heart"
 			tasks: [{
@@ -3955,7 +3958,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -4049,6 +4052,19 @@
 			}]
 			x: -3.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["2CB775EC10EADEF7"]
+			entity_vis_size: 1.0f
+			id: "365584F44AB28CB8"
+			shape: "heart"
+			tasks: [{
+				id: "51864591E2BA8D3B"
+				item: { count: 1, id: "starcatcher:fish_radar" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 9.5d
 		}
 	]
 }

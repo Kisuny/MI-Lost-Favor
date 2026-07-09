@@ -1,9 +1,13 @@
 {
   "base_chance": 5,
   "catch_info": {
+    "fish_bucket": {
+      "count": 1,
+      "id": "starcatcher:starcaught_bucket"
+    },
     "item": {
       "count": 1,
-      "id": "spectrum:crawfish"
+      "id": "starcatcher:crystalback_minnow"
     }
   },
   "difficulty": {
@@ -46,11 +50,11 @@
       "type": "starcatcher:daytime_restriction",
       "ranges": [
         {
-          "first": 0,
-          "second": 12700
+          "first": 12700,
+          "second": 24000
         }
       ],
-      "translation_override": "gui.guide.day"
+      "translation_override": "gui.guide.night"
     },
     {
       "type": "starcatcher:fluid",

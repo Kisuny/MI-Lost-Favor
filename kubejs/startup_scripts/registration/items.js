@@ -1,6 +1,4 @@
-createNewItem("meze_109", { itemType: "helmet", material: 'milf:meze', stackSize: 1, rarity: 'epic' })
 createNewItem("steaming_iron_ingot", { food: { nutrition: 4, saturation: 0, alwaysEdible: true, eaten: "setOnFire", effects: [['minecraft:nausea', 200, 0, 1], ['minecraft:darkness', 100, 0, 1]] }, lang: { "en_us": "Steaming iron ingot", "ru_ru": "Жареный железный слиток" }})
-createNewItem("dirt_cake", { food: { nutrition: 1, saturation: 0, alwaysEdible: true, effects: [['minecraft:hunger', 200, 0, 1], ['minecraft:slowness', 200, 0, 1], ['minecraft:strength', 100, 0, 1]] }, lang: { "en_us": "Dirt cake", "ru_ru": "Торт из грязи" } })
 createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle", "ru_ru": "Бетонное мороженое" }})
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
 createNewItem('larva', { food: { nutrition: 4, saturation: 0.5, alwaysEdible: true, effects: [['minecraft:hunger', 80, 0, 1]] }})
@@ -57,7 +55,8 @@ createNewItem('rune_of_mining', {stackSize: 16, rarity: 'rare', lang : { "en_us"
 createNewItem('blaze_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Blaze Core", "ru_ru": "Ядро Пламени" }})
 createNewItem('electronic_ender_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Electronic Ender Core", "ru_ru": "Электронное Ядро Энда" }})
 createNewItem('magnet_part', {stackSize: 16, lang : { "en_us": "Magnet Part", "ru_ru": "Магнитная часть" }})
-createNewItem('demagnetized_magnet_part', {stackSize: 16, lang : { "en_us": "Demagnetized Magnet Part", "ru_ru": "Размагниченная Часть Магнита" }})
+createNewItem('polarized_magnet_part', { stackSize: 16, lang: { "en_us": "Polarized Magnet Part" } })
+
 
 createNewItem('needle', { maxDamage: 500, tag: "ytech:bone_needles", lang: { "en_us": "Needle", "ru_ru": "Игла" }})
 createNewItem('crushed_copper', { tag: ["c:crushed_ores", "c:crushed_ores/copper"], lang: { "en_us": "Сrushed copper", "ru_ru": "Измельченная медь" }})
@@ -81,6 +80,8 @@ createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дал�
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
+
+createNewItem("meze_109", { itemType: "helmet", material: 'milf:meze', stackSize: 1, rarity: 'epic' })
 
 createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: { tier: "flint" } })
 

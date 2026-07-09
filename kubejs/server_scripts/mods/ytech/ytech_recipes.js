@@ -425,4 +425,12 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
+        inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+        inputItems: [[{ tag: "milf:sticks" }, 1]],
+        outputItems: [[{ item: "ytech:wooden_bolt" }, 2]],
+        //removeRecipeType: "modern_industrialization:cutting_machine",
+    })
+
 })

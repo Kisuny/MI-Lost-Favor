@@ -7,7 +7,7 @@ BlockEvents.rightClicked("grimoireofgaia:deco_garden_gnome", event => {
     if (player.persistentData[key]) return;
 
     player.persistentData.putBoolean(key, true);
-    server.scheduleInTicks(5 * 20, _ => player.persistentData.remove(key));
+    server.scheduleInTicks(1 * 20, _ => player.persistentData.remove(key));
 
     const playerName = player.profile.name;
     player.server.runCommandSilent(`/playsound milf:wooo ambient ${playerName} ${player.x} ${player.y} ${player.z}`);
@@ -20,7 +20,7 @@ BlockEvents.rightClicked(['milf:kisuny_plush', 'milf:saeta_plush'], event => {
     if (player.persistentData[key]) return;
 
     player.persistentData.putBoolean(key, true);
-    server.scheduleInTicks(5 * 20, _ => player.persistentData.remove(key));
+    server.scheduleInTicks(1 * 20, _ => player.persistentData.remove(key));
 
     const playerName = player.profile.name;
     player.server.runCommandSilent(`/playsound milf:plush ambient ${playerName} ${player.x} ${player.y} ${player.z}`);

@@ -77,6 +77,24 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:craft_cmy_pedestal"
     })
 
+
+    customWorktable(event, {
+        pattern: [
+            " q ",
+            "trt",
+            " w "
+        ],
+        reagents: ["eeee"],
+        key: {
+            "q": { "item": "neovitae:lava_crystal" },
+            "w": { "item": "forbidden_arcanus:mundabitur_dust" },
+            "e": { "item": "occultism:iesnium_ingot" },
+            "t": { "item": "minecraft:iron_bars" },
+            "r": { "tag": "magnumtorch:torches" },
+        },
+        result: "forbidden_arcanus:artisan_relic"
+    })
+
     const addAdditionItemInShapelessPairs = [
         ["forbidden_arcanus:corrupti_dust", "spectrum:onyx_powder"],
     ]

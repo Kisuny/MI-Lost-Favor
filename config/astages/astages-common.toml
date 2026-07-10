@@ -62,7 +62,7 @@
 	"Enable Remove All Operation Stage Alert" = true
 	#If true, uses an injection Mixin to force AStages' loot restrictions to run as the absolute last check, after all other mods have finished.
 	#If false, relies on Forge's standard Global Loot Modifier registry order (JSON).
-	"Force Last Loot Modifier Execution" = false
+	"Force Last Loot Modifier Execution" = true
 
 [Developer]
 	#Enable test-mode used by developers to check if all restrictions work as expected.

@@ -47,7 +47,7 @@ const lootRestrictions = [
     {
         stage: 'netherite_scrap_everywhere',
         everywhere: true,
-        items: ['minecraft:netherite_scrap', 'minecraft:ancient_debris'],
+        items: ['minecraft:netherite_scrap', 'minecraft:ancient_debris', 'minecraft:netherite_ingot'],
     },
     {
         stage: 'bucket_everywhere',
@@ -64,21 +64,17 @@ const lootRestrictions = [
     
 
     // List of ideas that won't work because of GLM https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/glm/
-    // {
-    //     stage: 'relic_test',
-    //     everywhere: true,
-    //     tags: ['milf:artifacts', 'relics:relics']
-    // },
-    // {
-    //     stage: 'enigmaticlegacyplus_everywhere',
-    //     everywhere: true,
-    //     mods: 'enigmaticlegacyplus',
-    // },
-    // {
-    //     stage: 'simplyswords_runic_tablet_everywhere',
-    //     everywhere: true,
-    //     items: 'simplyswords:runic_tablet',
-    // },
+    {
+        stage: 'enigmaticlegacyplus_everywhere',
+        everywhere: true,
+        mods: 'enigmaticlegacyplus',
+    },
+    {
+        stage: 'relics_everywhere',
+        everywhere: true,
+        tags: 'milf:artifacts',
+    },
+
 ]
 
 lootRestrictions.forEach(addLootRestriction)

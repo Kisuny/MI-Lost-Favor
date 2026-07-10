@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
         "enigmaticlegacyplus:enchantment_transposer",
         "enigmaticlegacyplus:escape_scroll",
         "enigmaticlegacyplus:magnet_ring",
+        "enigmaticlegacyplus:dislocation_ring",
     ]})
 
     ytechBlockHitCraft(event,{

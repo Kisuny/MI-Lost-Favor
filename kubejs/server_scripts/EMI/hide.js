@@ -365,6 +365,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'enigmaticlegacyplus:recall_potion',
         'enigmaticlegacyplus:escape_scroll',
         'enigmaticlegacyplus:magnet_ring',
+        'enigmaticlegacyplus:dislocation_ring',
         'reliquified_artifacts:mimi_dust',
         /smallships:malum_soulwood_.*/, 
         /smallships:wormwood_.*/, 

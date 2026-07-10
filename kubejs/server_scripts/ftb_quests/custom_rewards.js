@@ -33,12 +33,13 @@ milestone_rewards.forEach(entry => {
 
 // Simple stage rewards - add stages only, no notification
 const simple_stage_rewards = [
-    { quest_id: "4002784F5F537B2D", stage: ["post_iron", "goblin_traders_mobs", "iron_tools_and_armors_everywhere", "bucket_everywhere"] }, // Iron Ingot
+    { quest_id: "4002784F5F537B2D", stage: ["post_iron", "goblin_traders_mobs"] }, // Iron Ingot
+    { quest_id: "26A2544BCF0C603E", stage: ["iron_tools_and_armors_everywhere", "bucket_everywhere", "enigmaticlegacyplus_everywhere", "relics_everywhere"] }, // Iron Ingot
     { quest_id: "3922C9ACA47723BA", stage: "forbidden_arcanus_mobs" }, // Enter in Eternal Starlight
     { quest_id: "76D62EF7E386F07D", stage: ["diamond_tools_and_armors_everywhere", "simplyswords_swords_everywhere"] }, // diamond set 
     { quest_id: "4F76CA5E86C00635", stage: "enchanted_book_everywhere" }, // ench. table craft
     { quest_id: "0DC1BAE9C1D023E7", stage: "gems_everywhere" }, // bronze plate 
-    { quest_id: "4C183945FE934E50", stage: ["netherite_tools_and_armors_everywhere", "netherite_scrap_everywhere"] }, // ench. table craft
+    { quest_id: "4C183945FE934E50", stage: ["netherite_tools_and_armors_everywhere", "netherite_scrap_everywhere"] }, // nether portal
     { quest_id: "7C41108E48C9E62D", stage: ["simplyswords_uniques_swords_everywhere", "any_tools_and_armors_everywhere"] }, // Haven gateway
     { quest_id: "7650FE6CA0220DA3", stage: "the_nether_access" }, // flint and steel
     { quest_id: "0A8447D787E641E3", stage: "void_access" }, // void portal craft

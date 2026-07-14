@@ -39,3 +39,19 @@ ItemEvents.dynamicTooltips("milf:cursed_ring_tooltip", event => {
     event.add(text.getString())
 
 })
+
+ItemEvents.dynamicTooltips("milf:soul_of_the_helpless_tooltip", event => {
+
+    let player = Client.player
+    if (!player) return
+
+    let gold = $EnigmaticHandler.isTheCursedOne(player)
+
+    event.lines.add(1, gold
+        ? Text.translatable("tooltip.enigmaticlegacy.cursedOnesOnly1").gold()
+        : Text.translatable("tooltip.enigmaticlegacy.cursedOnesOnly1").darkRed())
+    event.lines.add(2, gold
+        ? Text.translatable("tooltip.enigmaticlegacy.cursedOnesOnly2").gold()
+        : Text.translatable("tooltip.enigmaticlegacy.cursedOnesOnly2").darkRed())
+
+})

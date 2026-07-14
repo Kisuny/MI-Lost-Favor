@@ -57,6 +57,10 @@ ItemEvents.modifyTooltips(event => {
         tooltip.dynamic("milf:cursed_ring_tooltip")
     })
 
+    event.modify("milf:soul_of_the_helpless", tooltip => {
+        tooltip.dynamic("milf:soul_of_the_helpless_tooltip")
+    })
+
     //#region
 
     //#region Seeds

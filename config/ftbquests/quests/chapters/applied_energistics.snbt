@@ -8,179 +8,14 @@
 	}
 	id: "535EA14E4BC77614"
 	order_index: 5
-	quest_links: [
-		{
-			id: "40C555118DABB51D"
-			linked_quest: "6C9D001FF1B265FB"
-			shape: "octagon"
-			x: -6.0d
-			y: -1.5d
-		}
-		{
-			id: "08495798461A6163"
-			linked_quest: "2F024F23E23C206B"
-			shape: "diamond"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			id: "38BC2D5AD5985817"
-			linked_quest: "5666EC7EBCE18EBA"
-			shape: "octagon"
-			x: -6.0d
-			y: 1.5d
-		}
-	]
+	quest_links: [{
+		id: "08495798461A6163"
+		linked_quest: "2F024F23E23C206B"
+		shape: "diamond"
+		x: 7.5d
+		y: 1.0d
+	}]
 	quests: [
-		{
-			dependencies: [
-				"6C9D001FF1B265FB"
-				"5666EC7EBCE18EBA"
-			]
-			entity_vis_size: 1.0f
-			id: "37E81A0F2015DFE9"
-			shape: "octagon"
-			tasks: [{
-				id: "777FB0AD8F13FA9F"
-				item: { count: 1, id: "ae2:mysterious_cube" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5666EC7EBCE18EBA"]
-			entity_vis_size: 1.0f
-			id: "7460A2152BF3AEF2"
-			shape: "octagon"
-			tasks: [{
-				id: "7292D65510F249C1"
-				item: { count: 1, id: "milf:blueprint_pack" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"1F905B94015D7B5F"
-				"0DF683DDB7246117"
-			]
-			entity_vis_size: 1.0f
-			id: "01161CA5FC3822D6"
-			shape: "rsquare"
-			tasks: [{
-				id: "4C337A427EE4CFB0"
-				item: { count: 1, id: "milf:mysterious_blueprint" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -3.5d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "0DF683DDB7246117"
-			shape: "octagon"
-			tasks: [{
-				id: "1D0EC8F759AF3144"
-				item: { count: 1, id: "milf:disk_from_space" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["01161CA5FC3822D6"]
-			dependency_requirement: "one_completed"
-			entity_vis_size: 1.0f
-			id: "685FA68A7D47018E"
-			shape: "diamond"
-			tasks: [{
-				id: "000A6CCFFBB40F36"
-				item: { components: { "immersiveengineering:blueprint": "Mysterious Blueprint", "minecraft:item_name": "{\"color\":\"#84B9FF\",\"text\":\"Mysterious Blueprint\"}" }, count: 1, id: "immersiveengineering:blueprint" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"685FA68A7D47018E"
-				"1BB2ECE1BD490210"
-			]
-			entity_vis_size: 1.0f
-			id: "32C58BE0544F85B4"
-			shape: "diamond"
-			tasks: [{
-				id: "288DC66918C0738D"
-				item: { count: 1, id: "ae2:fluix_glass_cable" }
-				type: "item"
-			}]
-			x: -4.0d
-			y: -7.5d
-		}
-		{
-			dependencies: [
-				"685FA68A7D47018E"
-				"1BB2ECE1BD490210"
-			]
-			entity_vis_size: 1.0f
-			id: "3D1B8A903D7EDADE"
-			shape: "diamond"
-			tasks: [{
-				id: "163F111202CB7793"
-				item: { count: 1, id: "ae2:storage_bus" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"1BB2ECE1BD490210"
-				"685FA68A7D47018E"
-			]
-			entity_vis_size: 1.0f
-			id: "65883D51925AB432"
-			shape: "diamond"
-			tasks: [{
-				id: "35D9187529D76DB4"
-				item: { count: 1, id: "ae2:crafting_terminal" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: -7.5d
-		}
-		{
-			dependencies: [
-				"685FA68A7D47018E"
-				"1E9222AEFCF3FB00"
-			]
-			entity_vis_size: 1.0f
-			hide_dependent_lines: true
-			id: "6BEE4550F660FDFC"
-			shape: "diamond"
-			tasks: [{
-				id: "79CDFF51CF609749"
-				item: { count: 1, id: "ae2:charged_certus_quartz_crystal" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["6BEE4550F660FDFC"]
-			entity_vis_size: 1.0f
-			id: "1BB2ECE1BD490210"
-			shape: "diamond"
-			tasks: [{
-				id: "41FA7FD3B5E726A2"
-				item: { count: 1, id: "ae2:fluix_crystal" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -7.0d
-		}
 		{
 			entity_vis_size: 1.0f
 			id: "7A1E51EF37A6ADFE"
@@ -218,11 +53,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"1F905B94015D7B5F"
-				"7A1E51EF37A6ADFE"
-				"01161CA5FC3822D6"
-			]
+			dependencies: ["7A1E51EF37A6ADFE"]
 			entity_vis_size: 1.0f
 			id: "11F53F1C1499544D"
 			shape: "rsquare"
@@ -236,7 +67,6 @@
 		}
 		{
 			dependencies: [
-				"1F905B94015D7B5F"
 				"02F9C9866E4ECB53"
 				"11F53F1C1499544D"
 			]
@@ -253,7 +83,6 @@
 		}
 		{
 			dependencies: [
-				"1F905B94015D7B5F"
 				"43BC2E23878BD134"
 				"6B67C202A239B0AA"
 			]
@@ -1366,20 +1195,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["685FA68A7D47018E"]
-			entity_vis_size: 1.0f
-			hide_dependent_lines: true
-			id: "1E9222AEFCF3FB00"
-			shape: "diamond"
-			tasks: [{
-				id: "21D10AB4FC9C9311"
-				item: { count: 1, id: "ae2:charger" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["1EACB245C3B65A31"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
@@ -1519,10 +1334,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"0AB4145A720562AD"
-				"685FA68A7D47018E"
-			]
+			dependencies: ["0AB4145A720562AD"]
 			entity_vis_size: 1.0f
 			id: "41D59A044D841532"
 			shape: "pentagon"
@@ -2108,19 +1920,6 @@
 			}]
 			x: 5.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["685FA68A7D47018E"]
-			entity_vis_size: 1.0f
-			id: "6DD0AB27900F46E3"
-			shape: "diamond"
-			tasks: [{
-				id: "0686DF9C1B459456"
-				item: { count: 1, id: "ae2:inscriber" }
-				type: "item"
-			}]
-			x: -4.0d
-			y: -5.5d
 		}
 		{
 			dependencies: ["26E6CEEF81EF802F"]
@@ -3147,7 +2946,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["685FA68A7D47018E"]
 			entity_vis_size: 1.0f
 			id: "552C3F17C3FC7259"
 			shape: "pentagon"
@@ -3218,10 +3016,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"46C42546894AB95C"
-				"01161CA5FC3822D6"
-			]
+			dependencies: ["46C42546894AB95C"]
 			entity_vis_size: 1.0f
 			id: "0A7A95409C574C29"
 			shape: "rsquare"
@@ -3590,25 +3385,6 @@
 			}]
 			x: -9.0d
 			y: 13.0d
-		}
-		{
-			dependencies: [
-				"7460A2152BF3AEF2"
-				"33EE86C92BFB3629"
-				"591843445BE8DF11"
-			]
-			dependency_requirement: "one_completed"
-			entity_vis_size: 1.0f
-			id: "1F905B94015D7B5F"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "122C101864193BC7"
-				item: { count: 1, id: "modern_industrialization:enigma_machine" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["1957F336D5673B59"]

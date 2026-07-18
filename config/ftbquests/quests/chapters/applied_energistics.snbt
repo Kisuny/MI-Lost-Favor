@@ -25,8 +25,8 @@
 				item: { count: 1, id: "milf:old_tablet" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.5d
+			x: -4.5d
+			y: -2.5d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -2780,7 +2780,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["552C3F17C3FC7259"]
 			entity_vis_size: 1.0f
 			id: "46C42546894AB95C"
 			rewards: [{
@@ -2944,18 +2943,6 @@
 			}]
 			x: -9.0d
 			y: -2.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "552C3F17C3FC7259"
-			shape: "pentagon"
-			tasks: [{
-				id: "07BA42D73B8B1835"
-				item: { count: 1, id: "modern_industrialization:microbial_fabricator" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: -4.5d
 		}
 		{
 			dependencies: ["41473B2927F7B123"]
@@ -3398,6 +3385,18 @@
 			}]
 			x: -0.5d
 			y: 7.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6DD0AB27900F46E3"
+			shape: "diamond"
+			tasks: [{
+				id: "0686DF9C1B459456"
+				item: { count: 1, id: "ae2:inscriber" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
 		}
 	]
 }

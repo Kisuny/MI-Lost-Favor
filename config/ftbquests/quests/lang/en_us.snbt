@@ -2,12 +2,12 @@
 	chapter.085BF45D104AB2F2.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic III"
 	chapter.0C09FDBAA0A4D561.title: "Simple Machinery"
 	chapter.126830F3CB1F8DDD.chapter_subtitle: ["Cutting-edge technology!"]
-	chapter.126830F3CB1F8DDD.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>aluminum"
+	chapter.126830F3CB1F8DDD.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Da Digitalization"
 	chapter.1DE9AF77B4D50480.chapter_subtitle: ["The very first basic stage of survival, introducing you to primitive technologies"]
 	chapter.1DE9AF77B4D50480.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>First steps"
 	chapter.231570DE6A7FCD52.chapter_subtitle: ["chapter contains all the travel information and, in a way, the entire RPG component of the modpack!"]
 	chapter.231570DE6A7FCD52.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Journeys \\& Gear"
-	chapter.2854B367FF485F69.title: "Petrochemical Party (PP)"
+	chapter.2854B367FF485F69.title: "Less-simple Machinery"
 	chapter.2D655D4AC57B9E25.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Midgame Magic II"
 	chapter.389198189DCA1A49.chapter_subtitle: ["This chapter lists all the utility items for easy finding"]
 	chapter.389198189DCA1A49.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Utilities"
@@ -24,12 +24,14 @@
 	chapter.535EA14E4BC77614.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Applied Energistics"
 	chapter.561B8642F13079C1.chapter_subtitle: ["The Bronze Age: Dive into the world of technology!"]
 	chapter.561B8642F13079C1.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Bronze Age"
+	chapter.5E7FFA9FEEEFE1A7.title: "Automation 'n' Stuff"
 	chapter.65C3129D0852EC26.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic I"
 	chapter.6A330F872573CB26.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Endgame Magic II"
 	chapter.7A58E54E4B6B5025.chapter_subtitle: ["This chapter covers all possible ways to store items and fluid"]
 	chapter.7A58E54E4B6B5025.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Storage"
 	chapter.7CCFB657E26B4699.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic II"
 	chapter.7F17ADA3E2DBCAE3.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Midgame Magic III"
+	chapter.7F3238D8C7E5EF3C.title: "Petrochemical Party (PP)"
 	chapter_group.414DFD996A564669.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Early"
 	chapter_group.4602108FDD7051BD.title: "<magic><shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Primitive"
 	chapter_group.786FFA1BEC14E223.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Midgame"
@@ -668,6 +670,7 @@
 		""
 		"The fundamental unit of this mod is the <keyword>Data Model</keyword> - an item which holds information about an entity that you can utilize to generate their drops. To get a Data Model, you must first craft a <keyword>Data Model Framework</keyword>, and <positive>use it on the target entity</positive> to build the model. Once you have your model, you will have to train it."
 	]
+	quest.14167582565E089A.title: "bureaucracy gen"
 	quest.14308FB8B934DAAC.quest_desc: [
 		"&oAll Building Gadgets items need <property>Forge Energy</property>&o. Use the <keyword>settings menu</keyword>(<warning>X</warning> key with gadget in hand) to change <positive>modes</positive>, set <keyword>range</keyword>, &7anchor&r the preview, and <warning>undo</warning> the last action where the tool allows it.&r"
 		""
@@ -2023,6 +2026,7 @@
 		"<blood>декоративный материал</blood> для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
 	]
 	quest.3C4D5E6F7A8B0093.title: "Demonite Ingot"
+	quest.3C8BF30F0824322E.title: "ingot"
 	quest.3CD24DA505BC109F.quest_desc: [
 		"<positive>Obtain</positive> &l&5Neolith&r&r from the failing-engulfed <keyword>obsidian</keyword>."
 		"{@pagebreak}"
@@ -2818,6 +2822,7 @@
 		"Стоимость: <keyword>2000 МЭ</keyword>"
 	]
 	quest.55B031B4D7E5DEE3.quest_desc: ["<named>Wild chicken</named>"]
+	quest.55C1B8EEBCB3DEE5.title: "low-grade plastic"
 	quest.5613C04E72D2AC99.quest_desc: ["Unlike the <keyword>Timedoor Projector</keyword>, the <keyword>Tempad</keyword> automatically detects all <keyword>Timedoor Markers</keyword> and <keyword>Chronomarks</keyword> owned by the player, making <keyword>Location Cards</keyword> optional for personal travel."]
 	quest.5643AEC296D95BE9.quest_desc: ["<warning>Slowness</warning> and <warning>weakness</warning>."]
 	quest.56890AC89A622C58.quest_desc: ["Coaxes nearby crops and plants to grow faster in a 2-block radius, applying a gentle acceleration each second."]
@@ -4090,6 +4095,7 @@
 		""
 		"{image:milf:textures/quest_pic/otter_2_.png width:200 height:200 align:center}"
 	]
+	quest.7F052BE18CA9A5CF.title: "Exogenous Guts Generator"
 	quest.7F12E543084C6825.quest_desc: [
 		"<keyword>Yellow Fertilizer</keyword> can be applied to farmland to <positive>prevent trampling of crops</positive>"
 		"{@pagebreak}"
@@ -4238,7 +4244,6 @@
 	task.271E89A2A2B37CFC.title: "Showcase Item"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.284E0D3F10A1E2A1.title: "Weapons"
-	task.298799CECF737186.title: "Any #modern_industrialization:item_pipes"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
 	task.2B915AAA46F6518E.title: "Capacity"
 	task.2BE6D4D9E1298E99.title: "Any #minecraft:decorated_pot_sherds"
@@ -4277,7 +4282,6 @@
 	task.40EE6EFAE710D3F5.title: "Ophyx' Calling"
 	task.42075FB0D0CA93C3.title: "Zume"
 	task.42DC3FD183E10DD5.title: "*Click*"
-	task.43199D58E9963367.title: "Any #c:ingots/silicon"
 	task.4336D6754C458F76.title: "Any #milf:chiseled_gemstone_block"
 	task.453F9EE1BA955692.title: "Any #milf:azure_dike_trinkets"
 	task.458BFB75460FD02D.title: "Plonk"
@@ -4318,6 +4322,7 @@
 	task.5AD635A29E44CC90.title: "where my ore?!"
 	task.5B0F59765FB17AE3.title: "Any #starcatcher:baits"
 	task.5EC8E0E987CF862A.title: "More plants"
+	task.603FD90AE0FFC11E.title: "Any #modern_industrialization:item_pipes"
 	task.606870688F9DD0CC.title: "Any #starcatcher:bobbers"
 	task.608727F73B6EDF0F.title: "The End?!"
 	task.62C0B2D1C395761B.title: "Why is this chapter here?"

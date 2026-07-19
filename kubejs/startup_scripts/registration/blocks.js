@@ -13,5 +13,5 @@ createNewBlock("concreteness_portal", {
     [
     'spectrum:unbreakable', "minecraft:wither_immune", "minecraft:dragon_immune", 
     "minecraft:geode_invalid_blocks", "minecraft:blocks_wind_charge_explosions", "minecraft:features_cannot_replace"
-    ] 
+    ]
 })

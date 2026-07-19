@@ -2065,9 +2065,24 @@
 			entity_vis_size: 1.0f
 			id: "73A3668DA95AAD0E"
 			tasks: [{
-				id: "2C8DA6142A9AA951"
-				item: { count: 1, id: "minecraft:dirt" }
-				type: "item"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					id: "milf:bedrock_iron_ore_sample"
+				}
+				id: "2CB879B1C175E20C"
+				observation_type: "block_tag"
+				observe_type: 1
+				timer: 0L
+				to_observe: "milf:bedrock_samples"
+				type: "observation"
 			}]
 			x: -17.5d
 			y: 9.5d

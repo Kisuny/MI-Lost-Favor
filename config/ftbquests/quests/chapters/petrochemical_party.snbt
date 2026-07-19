@@ -33,6 +33,13 @@
 			x: 15.5d
 			y: -1.5d
 		}
+		{
+			id: "3B0CB3B03A384025"
+			linked_quest: "73A3668DA95AAD0E"
+			shape: "diamond"
+			x: 15.0d
+			y: -8.0d
+		}
 	]
 	quests: [
 		{
@@ -658,19 +665,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["1CF1098F75837B7B"]
-			entity_vis_size: 1.0f
-			id: "5BD510B2143277DE"
-			shape: "octagon"
-			tasks: [{
-				id: "759B9F18860A87FF"
-				item: { count: 1, id: "modern_industrialization:electronic_circuit" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: -2.5d
-		}
-		{
 			dependencies: ["04D87F5213AF93A2"]
 			entity_vis_size: 1.0f
 			id: "1CF1098F75837B7B"
@@ -695,8 +689,8 @@
 				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: -3.5d
+			x: 16.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["67E363E8E2E58D43"]
@@ -973,17 +967,6 @@
 			y: -3.5d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "14167582565E089A"
-			tasks: [{
-				id: "2D6B7D7051D9FAD9"
-				item: { count: 1, id: "minecraft:paper" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["424C00C372BF234E"]
 			entity_vis_size: 1.0f
 			id: "4D84CFABB8DEE1EC"
@@ -1024,18 +1007,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["474D0AC7AEA206FC"]
-			entity_vis_size: 1.0f
-			id: "0850F7FA25CC04CD"
-			tasks: [{
-				id: "31AAC115C4C2D9C2"
-				item: { count: 1, id: "oritech:steam_engine_block" }
-				type: "item"
-			}]
-			x: 11.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["5BD510B2143277DE"]
 			entity_vis_size: 1.0f
 			id: "4E202538566347CB"
@@ -1044,8 +1015,8 @@
 				item: { count: 1, id: "oritech:big_solar_panel_block" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -3.5d
+			x: 13.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3C8BF30F0824322E"]
@@ -1160,17 +1131,149 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6CA54239AFF1C9F6"]
+			dependencies: ["5BD510B2143277DE"]
 			entity_vis_size: 1.0f
-			id: "474D0AC7AEA206FC"
+			id: "64269FD318C953B4"
+			shape: "heart"
+			tasks: [{
+				id: "3CAEA3BEB180D459"
+				item: { components: { "immersiveengineering:blueprint": "MI Components" }, count: 1, id: "immersiveengineering:blueprint" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"70A0A078B94FF034"
+				"5BD510B2143277DE"
+			]
+			entity_vis_size: 1.0f
+			id: "34DC427BAEC84462"
+			shape: "heart"
+			tasks: [{
+				id: "7275C9107121DF21"
+				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:diamond_wand" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1CF1098F75837B7B"]
+			entity_vis_size: 1.0f
+			id: "5BD510B2143277DE"
+			shape: "octagon"
+			tasks: [{
+				id: "759B9F18860A87FF"
+				item: { count: 1, id: "modern_industrialization:electronic_circuit" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5D07A5B2F5ECF337"
+				"5AAC11E85000FC20"
+			]
+			entity_vis_size: 1.0f
+			id: "106DA438AC3117F4"
+			shape: "heart"
+			tasks: [{
+				id: "58512C3FD567D153"
+				item: { count: 1, id: "modern_industrialization:advanced_large_steam_boiler" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["04D87F5213AF93A2"]
+			entity_vis_size: 1.0f
+			id: "69FAF24301EB45FA"
 			shape: "diamond"
 			tasks: [{
-				id: "40368871D70DC092"
-				item: { count: 1, id: "modern_industrialization:piston" }
+				id: "517CEF85B5FFD439"
+				item: { count: 1, id: "milf:lens" }
 				type: "item"
 			}]
 			x: 11.5d
-			y: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"73A3668DA95AAD0E"
+				"202E47EA04B98CCF"
+			]
+			entity_vis_size: 1.0f
+			id: "5389D60018574ECC"
+			tasks: [{
+				id: "5B075267A478288A"
+				item: { count: 1, id: "oritech:deep_drill_block" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3EEFF233348769A9"]
+			entity_vis_size: 1.0f
+			id: "202E47EA04B98CCF"
+			shape: "diamond"
+			tasks: [{
+				id: "175D79925A290CF7"
+				item: { count: 1, id: "oritech:laser_arm_block" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["69FAF24301EB45FA"]
+			entity_vis_size: 1.0f
+			id: "3EEFF233348769A9"
+			shape: "diamond"
+			tasks: [{
+				id: "40E5E520AFA9C656"
+				item: { count: 1, id: "oritech:enderic_lens" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["202E47EA04B98CCF"]
+			entity_vis_size: 1.0f
+			id: "1F487C6810AD6A57"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3636DDD8063C6785"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:budding_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B941C7C6FC04408"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5BD510B2143277DE"]
+			entity_vis_size: 1.0f
+			id: "033E514EEBB314AD"
+			shape: "heart"
+			tasks: [{
+				id: "7A2F3FD440E9244A"
+				item: { count: 1, id: "oritech:augment_application_block" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -5.5d
 		}
 	]
 }

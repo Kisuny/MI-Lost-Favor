@@ -1635,8 +1635,8 @@
 			id: "55756CD3B1F8F89F"
 			shape: "diamond"
 			tasks: [{
-				id: "0FBFBD2C6DB28B7A"
-				item: { components: { "immersiveengineering:blueprint": "MI Tools" }, count: 1, id: "immersiveengineering:blueprint" }
+				id: "2FD22B4562E199C1"
+				item: { components: { "immersiveengineering:blueprint": "Useful Tools" }, count: 1, id: "immersiveengineering:blueprint" }
 				type: "item"
 			}]
 			x: -9.5d
@@ -2815,6 +2815,45 @@
 			}]
 			x: -12.5d
 			y: 10.5d
+		}
+		{
+			dependencies: ["56E3EA39BC92CB8A"]
+			entity_vis_size: 1.0f
+			id: "0850F7FA25CC04CD"
+			shape: "heart"
+			tasks: [{
+				id: "31AAC115C4C2D9C2"
+				item: { count: 1, id: "oritech:steam_engine_block" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5EBF48809F0A806A"]
+			entity_vis_size: 1.0f
+			id: "66D8668A4267CBE5"
+			shape: "heart"
+			tasks: [{
+				id: "736DC0D8DA6C7C69"
+				item: { count: 1, id: "modern_industrialization:configurable_tank" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["23986DAD83FA303E"]
+			entity_vis_size: 1.0f
+			id: "49A2B52A2538342C"
+			shape: "heart"
+			tasks: [{
+				id: "71FA337FBA82CF7A"
+				item: { count: 1, id: "sophisticatedstorage:advanced_compacting_upgrade" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 7.0d
 		}
 	]
 }

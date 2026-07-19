@@ -17,6 +17,8 @@ ClientEvents.lang('en_us', event => {
     })
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
     event.add('block.paganbless.chalice', 'Chalice')
+    event.add('block.immersivepetroleum.crudeoil_fluid_block', 'Crude Oil')
+    
 
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)

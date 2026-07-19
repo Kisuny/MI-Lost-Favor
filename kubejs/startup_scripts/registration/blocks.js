@@ -3,6 +3,8 @@ createNewBlock("kisuny_plush", { blockType: "cardinal", renderType: "cutout", no
 createNewBlock("radio_tower_block", { hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower block", "ru_ru": "Блок радио вышки" } })
 createNewBlock("radio_tower_slab", { texturePath: 'milf:block/radio_tower_block', blockType: "slab", hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower slab", "ru_ru": "Плита радио вышки" } })
 
+createNewBlock("reservoir_rock", { hardness: 5, soundType: "deepslate", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe' })
+
 createNewBlock("chunk_flag", { property: enabledProperty, soundType: "wood", box: [5, 0, 5, 11, 1, 11, true], defaultCutout: true, tagBlock: 'minecraft:mineable/axe', lang: { "en_us": "Chunk flag", "ru_ru": "Флаг чанка" } })
 
 createNewBlock("abstraction_portal", { hardness: 20, soundType: "amethyst", requiresTool: true, tagBlock: ['minecraft:mineable/pickaxe', "minecraft:needs_diamond_tool"] })

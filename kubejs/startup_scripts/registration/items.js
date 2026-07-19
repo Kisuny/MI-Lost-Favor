@@ -68,14 +68,24 @@ createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], la
 createNewItem('twig')
 createNewItem('unfired_fire_clay_brick')
 createNewItem('fire_clay_ball')
+createNewItem('ferrosilicon_dust')
+
+
 createNewItem('bronze_glass', { stackSize: 8, lang: { "en_us": "Bronze glass", "ru_ru": "Бронзовое стекло" } })
 createNewItem('steel_infused_glass', { stackSize: 8, lang: { "en_us": "Steel infused glass", "ru_ru": "Стальное стекло" } })
 createNewItem('tempered_glass', { stackSize: 8, lang: { "en_us": "Tempered glass", "ru_ru": "Закаленное стекло" } })
+
 createNewItem('bronze_machine_bit', { stackSize: 32, lang: { "en_us": "Bronze machine bit", "ru_ru": "Бронзовый фрагмент механизма" } })
 createNewItem('steel_machine_bit', { stackSize: 32, lang: { "en_us": "Steel machine bit", "ru_ru": "Стальной фрагмент механизма" } })
 createNewItem('basic_machine_bit', { stackSize: 32, lang: { "en_us": "Basic machine bit", "ru_ru": "Базовый фрагмент механизма" } })
 createNewItem('small_copper_fluid_container', { texturePath: 'milf:item/copper_fluid_container', lang: { "en_us": "Small copper fluid container", "ru_ru": "Небольшой медный контейнер для жидкости" } })
 createNewItem('small_steel_fluid_container', { texturePath: 'milf:item/steel_fluid_container', lang: { "en_us": "Small steel fluid container", "ru_ru": "Небольшой стальной контейнер для жидкости" } })
+
+createNewItem('basic_motor')
+createNewItem('basic_pump')
+
+createNewItem('space_hive')
+
 createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дальномер" } })
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })

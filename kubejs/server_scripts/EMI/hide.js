@@ -191,7 +191,6 @@ RecipeViewerEvents.removeEntries('item', event => {
         "occultism:silver_nugget",
 
         "malum:copper_nugget",
-        /immersiveengineering:storage_.*/,
         /immersiveengineering:dust_.*/,
         /immersiveengineering:raw_.*/,
         /immersiveengineering:nugget_.*/,

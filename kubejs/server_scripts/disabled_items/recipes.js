@@ -8,24 +8,33 @@ ServerEvents.recipes(event => {
             event.remove({ output: itemId })
             event.remove({ input: itemId })
         } else {
-            let isReplaced = false
+            let isInput = false
+            let isOutput = false
             entry.replaceData.in.forEach(replaceInfo => {
                 switch (replaceInfo) {
                     case "RECIPE_INPUTS":
                         event.replaceInput({ input: itemId }, itemId, replaceWithId)
-                        isReplaced = true
+                        isInput = true
                         break
 
                     case "RECIPE_OUTPUTS":
                         event.replaceOutput({ output: itemId }, itemId, replaceWithId)
-                        isReplaced = true
+                        isOutput = true
                         break
                 }
             })
 
-            if (!isReplaced){
-                event.remove({ output: itemId })
+            if (isOutput && !isInput){
                 event.remove({ input: itemId })
+            }
+
+            if (!isOutput && isInput) {
+                event.remove({ output: itemId })
+            }
+
+            if (!isOutput && !isInput){
+                event.remove({ input: itemId })
+                event.remove({ output: itemId })
             }
 
         }

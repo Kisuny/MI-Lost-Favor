@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         pressBlueprintRecipe(blueprint, bpTier, color, bpTier)
     }
 
-    function pressBlueprintRecipe(blueprint, bpTier, color, name) {
+    function pressBlueprintRecipe(mold, bpTier, color, name) {
         event.custom({
             type: "immersiveengineering:metal_press",
             energy: 3200,
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
                 basePredicate:{item: "milf:blank_blueprint"},
                 count: 1
             },
-            mold: blueprint,
+            mold: mold,
             result: {
                 id: "immersiveengineering:blueprint",
                 count: 1,
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
         });
     }
 
-    function pressBlueprintRecipeWithInput(blueprint, input, bpTier, color, name) {
+    function pressBlueprintRecipeWithInput(mold, input, bpTier, color, name) {
         event.custom({
             type: "immersiveengineering:metal_press",
             energy: 3200,
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
                 basePredicate:{item: input},
                 count: 1
             },
-            mold: blueprint,
+            mold: mold,
             result: {
                 id: "immersiveengineering:blueprint",
                 count: 1,
@@ -126,10 +126,9 @@ ServerEvents.recipes(event => {
 
     pressBlueprintRecipeWithInput("milf:divine_blueprint", "milf:goo_coated_blank_blueprint", tier5bp, '#abffc0', tier5bp)
 
-    pressBlueprintRecipe("modern_industrialization:guidebook", "MI tools", '#ccac7c', "MI Tools Blueprint")
-
-
-
+    pressBlueprintRecipe("modern_industrialization:guidebook", "Useful Tools", '#ccac7c', "Useful Tools")
+    pressBlueprintRecipe("modern_industrialization:analog_circuit", "MI Basic Components", '#F06E28', "MI Basic Components")
+    pressBlueprintRecipe("modern_industrialization:electronic_circuit", "MI Components", '#28B1F0', "MI Components")
 
     // processors
     aePressRecipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);

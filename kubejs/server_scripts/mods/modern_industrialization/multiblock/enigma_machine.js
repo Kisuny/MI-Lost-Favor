@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
             [{item:"milf:punched_card"}, 1]
         ],
         outputItems:[[{
-            "components": { "immersiveengineering:blueprint": "MI components" },
+            "components": { "immersiveengineering:blueprint": "MI Components" },
             "id": "immersiveengineering:blueprint"
         }, 1]],
     })

@@ -30,13 +30,16 @@ const ieArcFurnaceCraft = (event, args) => {
         })
     }
     if(args.removeRecipe){event.remove(args.outputItems.forEach((out) => {event.remove({output: out})}))}
+    if (args.removeRecipeType) {
+        args.outputItems.forEach((out) => {
+            event.remove({ output: out[0]?.item || `#${out[0].tag}`, type: args.removeRecipeType })
+        })
+    }
     event.custom(recipe)
 }
 
 ServerEvents.recipes(event => {
 
-    //#region ae stuff
-    //ae starter pack
     ieArcFurnaceCraft(event,{
         inputItems:[
             [{"item": "ae2:mysterious_cube"}, 1],
@@ -55,11 +58,10 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    //quartz_glass
     ieArcFurnaceCraft(event,{
         inputItems:[
-            [{"tag": "c:glass_blocks"}, 6],
-            [{"tag": "c:dusts/certus_quartz"}, 7],
+            [{"tag": "minecraft:smelts_to_glass"}, 6],
+            [{"tag": "c:dusts/certus_quartz"}, 3],
             [{"tag": "c:dusts/quartz"}, 2]
         ],
         outputItems:[
@@ -71,13 +73,12 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    //vibrant_quartz_glass
     ieArcFurnaceCraft(event,{
         inputItems:[
-            [{"tag": "c:glass_blocks"}, 6],
-            [{"tag": "c:dusts/certus_quartz"}, 7],
+            [{ "tag": "minecraft:smelts_to_glass"}, 6],
+            [{"tag": "c:dusts/certus_quartz"}, 3],
             [{"tag": "c:dusts/quartz"}, 2],
-            [{"item": "spectrum:shimmerstone_gem"}, 12]
+            [{"item": "spectrum:shimmerstone_gem"}, 3]
         ],
         outputItems:[
             [{"item": "ae2:quartz_vibrant_glass"}, 6]
@@ -87,7 +88,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    //tempered_glass
     ieArcFurnaceCraft(event,{
         inputItems:[
             [{"tag": "c:sands"}, 3],
@@ -141,6 +141,24 @@ ServerEvents.recipes(event => {
             [{"item": "spectrum:skeleton_horse_head"}, 4]
         ]
     })
-    //#endregion
 
-});
+    ieArcFurnaceCraft(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:bauxite_dust" }, 12],
+            [{ "item": "modern_industrialization:carbon_dust" }, 2],
+        ],
+        outputItems: [
+            [{ "item": "modern_industrialization:aluminum_ingot" }, 3],
+            [{ "item": "modern_industrialization:titanium_tiny_dust" }, 2],
+            [{ "item": "modern_industrialization:titanium_tiny_dust" }, 1, 0.5],
+            [{ "item": "modern_industrialization:titanium_tiny_dust" }, 1, 0.3],
+            [{ "item": "modern_industrialization:titanium_tiny_dust" }, 1, 0.1]
+        ],
+        slag: [
+            [{ "item": "milf:ferrosilicon_dust" }, 2]
+        ],
+        removeRecipeType:"immersiveengineering:arc_furnace",
+        compatOff:true
+    })
+
+})

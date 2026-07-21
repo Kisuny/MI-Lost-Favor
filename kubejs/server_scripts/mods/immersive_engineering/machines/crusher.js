@@ -38,6 +38,14 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
             outputItems:args.outputItems
         })
     }
+    if (args.oriCompat){
+        oritechPulverizerRecipe(event, {
+            inputItems: args.inputItems,
+            outputItems: args.outputItems,
+            compatOff: true,
+
+        })
+    }
     if(args.removeRecipe){args.outputItems.forEach((out) => {event.remove({output: out[0]})})}
     if (args.removeRecipeType) { args.outputItems.forEach((out) => {event.remove({output: out[0], type:args.removeRecipeType})}) }
     event.custom(recipe)
@@ -110,7 +118,8 @@ ServerEvents.recipes(event => {
                 [{item:`milf:crushed_${ore}`}, 2],
                 [{item:`milf:crushed_${ore}`}, 1, 0.5]
             ],
-            compatTier:"bronze"
+            compatTier:"bronze",
+            oriCompat:true
         })
         // miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:macerator",
         //     inputItems:[

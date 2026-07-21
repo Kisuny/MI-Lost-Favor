@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
             /immersiveengineering:ingot.*/,
             /immersiveengineering:raw.*/,
             /immersiveengineering:nugget.*/,
-            /immersiveengineering:storage_.*/,
+            // /immersiveengineering:storage_.*/,
             'immersiveengineering:wire_copper',
             'immersiveengineering:wire_electrum',
             'immersiveengineering:wire_aluminum',
@@ -555,7 +555,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "immersiveengineering:smelting/iron_ingot_from_dust_from_blasting",
         "immersiveengineering:smelting/gold_ingot_from_dust",
         "immersiveengineering:smelting/gold_ingot_from_dust_from_blasting",
-        "immersiveengineering:crafting/nugget_netherite_to_netherite_ingot"
+        "immersiveengineering:crafting/nugget_netherite_to_netherite_ingot",
+        "immersiveengineering:crafting/ingot_steel_to_storage_steel"
 
     ]
 

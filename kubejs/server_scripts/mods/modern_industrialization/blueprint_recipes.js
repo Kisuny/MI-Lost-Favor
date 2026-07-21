@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
-    let miComponents = "MI components"
-    let miTools = "MI tools"
+
+    let miBasicComponents = "MI Basic Components"
+    let miComponents = "MI Components"
+    let miTools = "Useful Tools"
 
     ieBlueprintCraft(event, {
         inputItems: [
@@ -180,6 +182,53 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "milf:bits_mold" }]],
         category: miComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintCraft(event, {
+        inputItems: [
+            [{ "item": "oritech:magnetic_coil" }, 2],
+            [{ "item": "modern_industrialization:copper_plate" }, 4],
+            [{ "item": "modern_industrialization:iron_rod" }, 2],
+            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
+        ],
+        outputItems: [[{ "item": "milf:basic_motor" }]],
+        category: miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintCraft(event, {
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 1],
+            [{ "item": "modern_industrialization:copper_rotor" }, 2],
+            [{ "item": "modern_industrialization:copper_curved_plate" }, 2],
+            [{ "item": "moderndynamics:fluid_pipe" }, 2],
+        ],
+        outputItems: [[{ "item": "milf:basic_pump" }]],
+        category: miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintCraft(event, {
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 8],
+            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:conveyor" }]],
+        category: miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintCraft(event, {
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 2],
+            [{ "item": "milf:basic_pump" }, 1],
+            [{ "item": "modern_industrialization:analog_circuit" }, 1],
+            [{ "item": "modern_industrialization:conveyor" }, 1],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:basic_upgrade" }]],
+        category: miBasicComponents,
         removeRecipe: true
     })
 

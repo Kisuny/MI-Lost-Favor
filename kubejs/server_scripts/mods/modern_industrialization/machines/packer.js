@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     //ae_press_recipes ("extendedae:concurrent_processor_press", "extendedae:entro_crystal", "extendedae:concurrent_processor_print", tier4token)
 
 
-    miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"sophisticatedstorage:compacting_upgrade"}]
         ],
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:trash_can"}]
         ],
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:8, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"sophisticatedstorage:advanced_compacting_upgrade"}]
         ],
@@ -73,19 +73,19 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:configurable_tank"}]
         ],
         inputItems:[
-            [{item:"modern_industrialization:analog_circuit"}],
-            [{item:"modern_industrialization:pump"}, 2],
+            [{ item:"immersiveengineering:component_electronic"}],
+            [{item:"milf:basic_pump"}, 2],
             [{item:"modern_industrialization:aluminum_tank"}],
         ],
         removeRecipe:true
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 8, time: 1000, machine: "modern_industrialization:packer",
         outputItems: [
             [{ item: "modern_industrialization:electric_quarry" }]
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:8, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:silicon_ingot"}]
         ],
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:fire_clay_bricks"}]
         ],
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy:4, time:100, machine:"modern_industrialization:packer",
         inputItems:[
             [{item: "milf:fire_clay_ball"}, 2],
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"milf:unfired_fire_clay_brick"}, 2]]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy:4, time:100, machine:"modern_industrialization:packer",
         inputItems:[
             [{item: "minecraft:clay_ball"}, 2],
@@ -136,13 +136,13 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"ytech:unfired_brick"}, 3]]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [[{ item: "immersiveengineering:ersatz_leather" }, 2]],
         outputItems: [[{ item: "minecraft:leather" }]]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [
             [{ item: "modern_industrialization:coal_dust" }, 1],
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "moderndynamics:machine_extender" }, 1]]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [
             [{ item: "modern_industrialization:steel_large_plate" }, 1], 

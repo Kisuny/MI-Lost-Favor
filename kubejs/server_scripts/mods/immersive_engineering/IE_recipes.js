@@ -23,7 +23,7 @@ function ieShapedFluid(event, args) {
             }
             //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
         })
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:assembler",
             inputItems: itemInputs,
             inputFluids: fluidInputs,
@@ -88,6 +88,96 @@ ServerEvents.recipes(event => {
         "modern_industrialization:steel_plate"
     )
 
+    //#region ieShapedFluid
+
+    ieShapedFluid(event, {
+        pattern: [
+            "WQW",
+            "rCr",
+            "SRS"
+        ],
+        key: {
+            C: { item: "modern_industrialization:analog_circuit" },
+            Q: { tag: "c:gems/quartz" },
+            W: { item: "modern_industrialization:electrum_wire" },
+            r: { item: "modern_industrialization:rubber_sheet" },
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            R: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "modern_industrialization:molten_redstone"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:component_electronic" }, 1]],
+        removeRecipe: true
+    })
+
+    ieShapedFluid(event, {
+        pattern: [
+            "W W",
+            "nri",
+            "WBW"
+        ],
+        key: {
+            B: { item: "immersiveengineering:basic_engineering" },
+            W: { item: "immersiveengineering:wirecoil_electrum" },
+            n: { item: "modern_industrialization:nickel_plate" },
+            i: { item: "modern_industrialization:iron_plate" },
+            r: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "immersiveengineering:redstone_acid"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:capacitor_mv" }, 1]],
+        removeRecipe: true
+    })
+
+    ieShapedFluid(event, {
+        pattern: [
+            "W W",
+            "lrl",
+            "WBW"
+        ],
+        key: {
+            B: { tag: "immersiveengineering:treated_wood" },
+            W: { item: "immersiveengineering:wirecoil_copper" },
+            l: { item: "modern_industrialization:lead_plate" },
+            r: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "immersiveengineering:redstone_acid"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:capacitor_lv" }, 1]],
+        removeRecipe: true
+    })
+
+    ieShapedFluid(event, {
+        pattern: [
+            "SCS",
+            "PWP",
+            "SIS"
+        ],
+        key: {
+            S: { item: "modern_industrialization:steel_large_plate" },
+            C: { item: "immersiveengineering:component_steel" },
+            I: { item: "immersiveengineering:component_iron" },
+            P: { item: "modern_industrialization:constantan_plate" },
+            W: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                tag: "minecraft:water"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:radiator" }, 1]],
+        removeRecipe: true
+    })
+
+    //#endregion
+
+    //#region milfShaped
+
     milfShaped(event, {
         pattern: [
             "NFN",
@@ -100,6 +190,228 @@ ServerEvents.recipes(event => {
             F: { item: "modern_industrialization:fire_clay_brick" },
         },
         outputItems: [[{ id: "immersiveengineering:blastbrick" }, 3]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "G B",
+            "DSS",
+            "T F"
+        ],
+        key: {
+            T: { item: "immersiveengineering:craftingtable" },
+            D: { item: "modern_industrialization:iron_double_ingot" },
+            G: { item: "modern_industrialization:steel_gear" },
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            B: { item: "milf:blank_blueprint" },
+            F: { item: "immersiveengineering:treated_fence" }
+        },
+        outputItems: [[{ id: "immersiveengineering:workbench" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PSP",
+            "IRI",
+            "PSP"
+        ],
+        key: {
+            S: { item: "immersiveengineering:component_steel" },
+            I: { item: "immersiveengineering:component_iron" },
+            P: { item: "modern_industrialization:iron_large_plate" },
+            R: { item: "immersiveengineering:component_electronic" }
+        },
+        outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WGw",
+            "G G",
+            "BBB"
+        ],
+        key: {
+            G: { item: "milf:steel_infused_glass" },
+            W: { item: "immersiveengineering:wirecoil_copper" },
+            w: { item: "immersiveengineering:wirecoil_electrum" },
+            B: { tag: "immersiveengineering:treated_wood" },
+        },
+        outputItems: [[{ id: "immersiveengineering:charging_station" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "IRI",
+            "IDI"
+        ],
+        key: {
+            R: { item: "modern_industrialization:copper_rod" },
+            I: { tag: "immersiveengineering:connector_insulator" },
+            D: { item: "modern_industrialization:copper_double_ingot" }
+        },
+        outputItems: [[{ id: "immersiveengineering:connector_lv" }, 2]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "IDI",
+            "   "
+        ],
+        key: {
+            R: { item: "modern_industrialization:copper_rod" },
+            I: { tag: "immersiveengineering:connector_insulator" },
+            D: { item: "modern_industrialization:copper_double_ingot" }
+        },
+        outputItems: [[{ id: "immersiveengineering:connector_lv_relay" }, 4]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "IRI",
+            "IDI"
+        ],
+        key: {
+            R: { item: "modern_industrialization:electrum_rod" },
+            I: { tag: "immersiveengineering:connector_insulator" },
+            D: { item: "modern_industrialization:electrum_double_ingot" }
+        },
+        outputItems: [[{ id: "immersiveengineering:connector_mv" }, 2]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "IDI",
+            "   "
+        ],
+        key: {
+            R: { item: "modern_industrialization:electrum_rod" },
+            I: { tag: "immersiveengineering:connector_insulator" },
+            D: { item: "modern_industrialization:electrum_double_ingot" }
+        },
+        outputItems: [[{ id: "immersiveengineering:connector_mv_relay" }, 4]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WWW",
+            "R W",
+            "C  "
+        ],
+        key: {
+            W: { item: "immersiveengineering:wirecoil_electrum" },
+            R: { item: "modern_industrialization:iron_rod" },
+            C: { item: "immersiveengineering:connector_lv" }
+        },
+        outputItems: [[{ id: "immersiveengineering:toolupgrade_powerpack_antenna" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RRR",
+            "WCW",
+            "WcW"
+        ],
+        key: {
+            W: { item: "immersiveengineering:wirecoil_electrum" },
+            R: { item: "modern_industrialization:iron_rod" },
+            C: { item: "immersiveengineering:capacitor_mv" },
+            c: { item: "immersiveengineering:component_electronic" }
+        },
+        outputItems: [[{ id: "immersiveengineering:toolupgrade_powerpack_tesla" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "ISI",
+            "WcW",
+            " W "
+        ],
+        key: {
+            W: { item: "immersiveengineering:wirecoil_electrum" },
+            I: { item: "modern_industrialization:iron_double_ingot" },
+            S: { item: "modern_industrialization:steel_double_ingot" },
+            c: { item: "immersiveengineering:component_electronic" }
+        },
+        outputItems: [[{ id: "immersiveengineering:toolupgrade_powerpack_magnet" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "bWb",
+            "WSW",
+            "bWb"
+        ],
+        key: {
+            W: { item: "immersiveengineering:waterwheel_segment" },
+            S: { item: "modern_industrialization:steel_double_ingot" },
+            b: { item: "modern_industrialization:steel_bolt" }
+        },
+        outputItems: [[{ id: "immersiveengineering:watermill" }, 1]],
+        removeRecipe: true
+    })
+
+
+    milfShaped(event, {
+        pattern: [
+            "PUP",
+            "IRI",
+            "PSP"
+        ],
+        key: {
+            S: { item: "immersiveengineering:component_steel" },
+            I: { item: "immersiveengineering:component_iron" },
+            P: { item: "modern_industrialization:steel_large_plate" },
+            R: { item: "minecraft:echo_shard" },
+            U: { item: "modern_industrialization:basic_upgrade" }
+        },
+        outputItems: [[{ id: "immersiveengineering:resonanz_engineering" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SCS",
+            "SMS",
+            "EFE"
+        ],
+        key: {
+            E: { item: "immersiveengineering:light_engineering" },
+            F: { item: "immersiveengineering:steel_fence" },
+            S: { item: "immersiveengineering:steel_scaffolding_standard" },
+            M: { item: "milf:basic_motor" },
+            C: { item: "immersiveengineering:component_electronic" }
+        },
+        outputItems: [[{ id: "immersiveengineering:sample_drill" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " DB",
+            " SD",
+            "S  "
+        ],
+        key: {
+            D: { item: "modern_industrialization:steel_double_ingot" },
+            B: { item: "modern_industrialization:steel_bolt" },
+            S: { item: "immersiveengineering:stick_treated" }
+        },
+        outputItems: [[{ id: "immersiveengineering:sawblade" }, 1]],
         removeRecipe: true
     })
 
@@ -118,16 +430,16 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "WQW",
-            "QRQ",
-            "WQW"
+            "IDI",
+            "DMD",
+            "IDI"
         ],
         key: {
-            Q: { item: "minecraft:redstone" },
-            W: { item: "modern_industrialization:iron_large_plate" },
-            R: { item: "modern_industrialization:analog_circuit" },
+            I: { item: "modern_industrialization:uranium_ingot" },
+            M: { item: "modern_industrialization:uranium_block" },
+            D: { item: "minecraft:magma_block" }
         },
-        outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 1]],
+        outputItems: [[{ id: "immersiveengineering:storage_uranium" }, 1]],
         removeRecipe: true
     })
 
@@ -189,27 +501,6 @@ ServerEvents.recipes(event => {
             R: { item: "immersiveengineering:component_iron" },
         },
         outputItems: [[{ id: "immersiveengineering:light_engineering" }, 1]],
-        removeRecipe: true
-    })
-
-    ieShapedFluid(event, {
-        pattern: [
-            "SCS",
-            "PWP",
-            "SIS"
-        ],
-        key: {
-            S: { item: "modern_industrialization:steel_large_plate" },
-            C: { item: "immersiveengineering:component_steel" },
-            I: { item: "immersiveengineering:component_iron" },
-            P: { item: "modern_industrialization:constantan_plate" },
-            W: {
-                type: "immersiveengineering:fluid_stack",
-                amount: 1000,
-                tag: "minecraft:water"
-            }
-        },
-        outputItems: [[{ id: "immersiveengineering:radiator" }, 1]],
         removeRecipe: true
     })
 
@@ -348,10 +639,10 @@ ServerEvents.recipes(event => {
             "NIN"
         ],
         key: {
-            I: { item: "immersiveengineering:component_iron" },
-            C: { item: "immersiveengineering:coil_lv" },
-            P: { item: "modern_industrialization:steel_large_plate" },
-            N: { item: "modern_industrialization:electrum_nugget" }
+            I: { item: "modern_industrialization:iron_double_ingot" },
+            C: { item: "immersiveengineering:coil_mv" },
+            P: { item: "modern_industrialization:steel_plate" },
+            N: { item: "modern_industrialization:electrum_plate" }
         },
         outputItems: [[{ id: "immersiveengineering:dynamo" }, 1]],
         removeRecipe: true,
@@ -366,9 +657,9 @@ ServerEvents.recipes(event => {
         ],
         key: {
             C: { item: "immersiveengineering:coil_lv" },
-            P: { item: "modern_industrialization:steel_ingot" },
+            P: { item: "modern_industrialization:steel_double_ingot" },
             N: { item: "modern_industrialization:constantan_plate" },
-            A: { item: "modern_industrialization:copper_nugget" }
+            A: { item: "modern_industrialization:copper_curved_plate" }
         },
         outputItems: [[{ id: "immersiveengineering:thermoelectric_generator" }, 1]],
         removeRecipe: true,
@@ -378,19 +669,17 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "GLG",
-            "GIG",
+            "G G",
             "BSB"
         ],
         key: {
-            I: { item: "immersiveengineering:component_iron" },
-            S: { item: "immersiveengineering:component_steel" },
+            S: { item: "immersiveengineering:light_engineering" },
             B: { item: "immersiveengineering:basic_engineering" },
             G: { item: "milf:steel_infused_glass" },
             L: { item: "immersiveengineering:light_bulb" }
         },
         outputItems: [[{ id: "immersiveengineering:cloche" }, 1]],
-        removeRecipe: true,
-        compatOff: true
+        removeRecipe: true
     })
 
     milfShaped(event, {
@@ -479,36 +768,42 @@ ServerEvents.recipes(event => {
         removeRecipe: true,
     })
 
-    milfShaped(event, {
-        pattern: [
-            " P ",
-            "GLG",
-            "WWW"
+    //#endregion
+
+    //#region MI machines
+
+    miMachineRecipe(event, {
+        energy: 4, time: 600, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ "item": "immersiveengineering:slag_gravel" }, 3],
+            [{ "tag": "c:sands" }, 2],
+            [{ "item": "milf:cement" }, 4]
         ],
-        key: {
-            P: { item: "modern_industrialization:aluminum_plate" },
-            G: { item: "milf:steel_infused_glass" },
-            L: { item: "immersiveengineering:light_bulb" },
-            W: { item: "modern_industrialization:copper_wire" }
-        },
-        outputItems: [[{ id: "immersiveengineering:electric_lantern" }, 3]],
-        removeRecipe: true,
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 1000]
+        ],
+        outputFluids: [
+            [{ fluid: "immersiveengineering:concrete" }, 1000]
+        ],
+        removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ "item": "modern_industrialization:sulfur_dust" }, 2]
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 250],
+            [{ fluid: "modern_industrialization:molten_redstone" }, 250]
+        ],
+        outputFluids: [
+            [{ fluid: "immersiveengineering:redstone_acid" }, 500]
+        ],
+        removeRecipe: true
+    })
 
-    //TODO: добавить всё что дробится и плавиться из руды или похожее на руду
-    const ore_for_arc_furnace = [
-        "antimony",
-        "iesnium",
-    ]
-
-    const ore_for_crusher = [
-        "antimony",
-        "monazite",
-        "salt",
-        "stratine",
-        "ae2:certus_quartz_crystal",
-    ]
+    //#endregion
 })
 
 
@@ -556,7 +851,10 @@ KubeJSTweaks.beforeRecipes(event => {
         "immersiveengineering:smelting/gold_ingot_from_dust",
         "immersiveengineering:smelting/gold_ingot_from_dust_from_blasting",
         "immersiveengineering:crafting/nugget_netherite_to_netherite_ingot",
-        "immersiveengineering:crafting/ingot_steel_to_storage_steel"
+        "immersiveengineering:crafting/ingot_steel_to_storage_steel",
+
+        "immersiveengineering:crafting/redstone_acid",
+        "immersiveengineering:mixer/redstone_acid"
 
     ]
 

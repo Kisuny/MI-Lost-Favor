@@ -315,6 +315,15 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShapeless(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:steel_ring" }, 1],
+            [{ "item": "minecraft:flint" }, 1]
+        ],
+        outputItems: [[{ "id": "minecraft:flint_and_steel" }]],
+        removeRecipe: true
+    })
+
 })
 
 KubeJSTweaks.beforeRecipes(event => {    

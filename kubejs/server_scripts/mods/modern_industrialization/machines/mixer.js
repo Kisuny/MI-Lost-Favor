@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
-    miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:8, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:"c:plates/aluminum"}],
             [{tag:"c:dusts/aluminum"}],
@@ -10,7 +11,8 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {energy:8, time:600, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:8, time:600, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:"c:dusts/diamond"}],
             [{tag:"c:nuggets/steel"}, 1, 0],
@@ -20,7 +22,8 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:clay_ball"}, 2],
             [{item:"minecraft:kelp"}],
@@ -29,7 +32,8 @@ ServerEvents.recipes(event => {
             [{item:"architects_palette:algal_blend"}, 4]
         ]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"modern_industrialization:brick_dust"}, 2],
             [{item:"architects_palette:algal_blend"}, 2],
@@ -40,7 +44,8 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
     
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"modern_industrialization:salt_dust"}],
             [{item:"minecraft:tuff"}],
@@ -54,7 +59,8 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"modern_industrialization:nickel_dust"}],
             [{item:"modern_industrialization:copper_dust"}],
@@ -64,7 +70,8 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"modern_industrialization:nickel_tiny_dust"}],
             [{item:"modern_industrialization:copper_tiny_dust"}],
@@ -74,7 +81,7 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:mixer",
         inputItems: [
             [{ item: "modern_industrialization:constantan_tiny_dust" }],
@@ -86,7 +93,7 @@ ServerEvents.recipes(event => {
         removeRecipeType: "modern_industrialization:mixer"
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:mixer",
         inputItems: [
             [{ item: "modern_industrialization:constantan_dust" }],
@@ -98,7 +105,8 @@ ServerEvents.recipes(event => {
         removeRecipeType: "modern_industrialization:mixer"
     })   
 
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:clay_ball"}, 3],
             [{item:"modern_industrialization:fire_clay_dust"}, 3],
@@ -110,7 +118,7 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:mixer",
         inputItems: [
             [{ tag: "minecraft:planks" }, 2],
@@ -121,5 +129,33 @@ ServerEvents.recipes(event => {
         outputItems: [
             [{ item: "immersiveengineering:treated_wood_horizontal" }, 2]
         ]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 200, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "modern_industrialization:coke_dust" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 100]
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:raw_synthetic_oil" }, 200]
+        ],
+        removeThisRecipeType: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 5, time: 100, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "modern_industrialization:carbon_dust" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 150]
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:raw_synthetic_oil" }, 250]
+        ],
+        removeThisRecipeType: true
     })
 })

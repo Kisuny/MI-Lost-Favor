@@ -17,13 +17,11 @@
 
 */
 
-let uniqueIDS = []
-
-const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
-    const fluidsin = args.inputFluids || [];
-    const fluidsout = args.outputFluids || [];
-    const inputs = args.inputItems || [];
-    const outputs = args.outputItems || [];
+const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
+    const fluidInputs = args.inputFluids || []
+    const fluidOutputs = args.outputFluids || []
+    const inputs = args.inputItems || []
+    const outputs = args.outputItems || []
     const energy = args.multiplyEnergy ? args.energy + (inputs.length + fluids.length) * (energy / 4) : args.energy || 8
     const time = args.time || 100
 
@@ -59,18 +57,34 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
         }
         recipe.item_outputs.push(output)
     })
-    fluidsin.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] || 1000 }, { probability: input[2] })) })
-    fluidsout.forEach((out) => { recipe.fluid_outputs.push(Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })) })
+    fluidInputs.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] || 1000 }, { probability: input[2] })) })
+    fluidOutputs.forEach((out) => { recipe.fluid_outputs.push(Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })) })
     let id = args.recipeId
     if (args.removeRecipe) {
         outputs.forEach((out) => {
             event.remove({ output: out[0].item })
+        })
+        fluidOutputs.forEach(output => {
+            let fluid = Fluid.of(output[0].fluid)
+            console.log(fluid);
+            
+            event.remove({ output: fluid })
         })
     }
     if(args.removeRecipeType){
         outputs.forEach((out) => {
             event.remove({ output: out[0].item, type: args.removeRecipeType })
         })
+    }
+    if (args.removeThisRecipeType){
+        outputs.forEach((out) => {
+            event.remove({ output: out[0].item, type: args.machine })
+        })
+        fluidOutputs.forEach(output => {
+            let fluid = Fluid.of(output[0].fluid)            
+            event.remove({ output: fluid, type: args.machine })
+        })
+
     }
     if (args.token) { recipe.item_inputs.push(Object.assign({}, args.token, { amount: 1 }, { probability: 0 })) }
     if (args.dimension) {
@@ -115,7 +129,7 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     }
     if (Object.keys(miMachinesCompat).some(key => key.includes(args.machine))) {
         args.machine = miMachinesCompat[args.machine]
-        miMachineCraft(event, args)
+        miMachineRecipe(event, args)
     }
 };
 
@@ -203,22 +217,6 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            ' PC',
-            'PWP',
-            'RP '
-        ],
-        key: {
-            P: { item: "minecraft:paper" },
-            W: { item: "modern_industrialization:copper_wire" },
-            C: { item: "modern_industrialization:coal_dust" },
-            R: { item: "minecraft:redstone" },
-        },
-        outputItems: [[{ id: "modern_industrialization:resistor" }, 6]],
-        compatOff: true
-    })
-
-    milfShaped(event, {
-        pattern: [
             "P P",
             "PCP",
             "P P"
@@ -228,6 +226,41 @@ ServerEvents.recipes(event => {
             C: { item: "modern_industrialization:heatproof_machine_casing" }
         },
         outputItems: [[{ id: "modern_industrialization:invar_machine_casing_pipe" }, 2]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "HCH",
+            "MHM",
+            "D D"
+        ],
+        key: {
+            H: { item: "immersiveengineering:heavy_engineering" },
+            C: { item: "modern_industrialization:steel_machine_casing" },
+            M: { item: "milf:basic_motor" },
+            D: { item: "modern_industrialization:copper_drill" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steam_quarry" }, 2]],
+    })
+
+    event.forEachRecipe({ output: /.*fine_wire/, type: "modern_industrialization:wiremill" }, r => {
+        let inputItems = JSON.parse(r.originalJson).item_inputs.map(item => [item])
+
+        yTechShapeless(event, {
+            outputItems: [[{ "id": r.originalRecipeResult.id }, 1]],
+            inputItems: inputItems.concat([[{ item: "immersiveengineering:wirecutter"}]]),
+            compatOff: true
+        })
+
+        miMachineRecipe(event, {
+            energy: 12, time: 100, machine: "modern_industrialization:wiremill",
+            inputItems: inputItems,
+            outputItems: [
+                [{ item: r.originalRecipeResult.id }, 2]
+            ]
+        })
+        
+        event.remove({ output: r.originalRecipeResult.id })
     })
 
 
@@ -382,7 +415,35 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    ieBottlingMachineRecipe(event, {
+        outputItems: [
+            [{ item: "modern_industrialization:transistor" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:silicone_modified_phenolic_resin" }, 200]
+        ],
+        inputItems: [
+            [{ item: "modern_industrialization:electrum_fine_wire" }, 1],
+            [{ item: "modern_industrialization:steel_plate" }, 2]
+        ],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
 
+    ieBottlingMachineRecipe(event, {
+        outputItems: [
+            [{ item: "modern_industrialization:diode" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:silicone_modified_phenolic_resin" }, 100]
+        ],
+        inputItems: [
+            [{ item: "modern_industrialization:electrum_wire" }, 1],
+            [{ item: "modern_industrialization:steel_plate" }, 2],
+            [{ item: "immersiveengineering:insulating_glass" }, 1]
+
+        ],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
 
     event.replaceOutput(
         { output: 'modern_industrialization:steel_block' },
@@ -394,13 +455,6 @@ ServerEvents.recipes(event => {
         { input: 'modern_industrialization:steel_block' },
         'modern_industrialization:steel_block',
         'immersiveengineering:storage_steel'
-    )
-
-
-    event.replaceInput(
-        { output: 'modern_industrialization:analog_circuit' },
-        'modern_industrialization:analog_circuit_board',
-        'immersiveengineering:component_electronic'
     )
 
     const craftWithFluidPipes = [
@@ -439,7 +493,7 @@ ServerEvents.recipes(event => {
             '#modern_industrialization:fluid_pipes',
             'moderndynamics:fluid_pipe'
         )
-    });
+    })
 
     const craftWithItemPipes = [
         'modern_industrialization:steam_quarry',
@@ -460,7 +514,7 @@ ServerEvents.recipes(event => {
             '#modern_industrialization:item_pipes',
             'moderndynamics:item_pipe'
         )
-    });
+    })
 
     const pipeTypes = ["fluid", "item"]
     pipeTypes.forEach(type => {
@@ -477,7 +531,7 @@ ServerEvents.recipes(event => {
             'modern_industrialization:bronze_curved_plate',
             'modern_industrialization:aluminum_curved_plate'
         )
-    });
+    })
 
     const hatches = ['modern_industrialization:bronze_item_input_hatch', 'modern_industrialization:steel_item_input_hatch', 'modern_industrialization:steel_fluid_input_hatch', 'modern_industrialization:bronze_fluid_input_hatch']
 

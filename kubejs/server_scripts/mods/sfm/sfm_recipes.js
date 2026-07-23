@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
             "ewe"
         ],
         key: {
-            q: {item:"modern_industrialization:analog_circuit"},
-            w: {item: "sfm:cable"},
-            e: {tag: "c:chests"},
+            q: { item:"immersiveengineering:component_electronic"},
+            w: { item: "immersiveengineering:heavy_engineering"},
+            e: { item: "modern_industrialization:rubber_sheet"},
         },
         outputItems:[[{"id": "sfm:manager"}]],
         removeRecipe:true
@@ -21,10 +21,10 @@ ServerEvents.recipes(event => {
             "rqr"
         ],
         key: {
-            q: {item:"modern_industrialization:pump"},
-            w: {item: "enchanted:whiff_of_magic"},
-            e: {item: "modern_industrialization:basic_machine_hull"},
-            r: {item: "immersiveengineering:light_engineering"},
+            q: { item:"milf:basic_pump"},
+            w: { item: "modern_industrialization:steel_water_pump"},
+            e: { item: "immersiveengineering:component_electronic"},
+            r: { item: "modern_industrialization:iron_large_plate"},
         },
         outputItems:[[{"id": "sfm:water_tank"}]],
         removeRecipe:true
@@ -32,16 +32,17 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "qqq",
-            "rer",
+            "rep",
             "www"
         ],
         key: {
             q: {item:"moderndynamics:fluid_pipe"},
             w: {item:"moderndynamics:item_pipe"},
             e: {item:"moderndynamics:machine_extender"},
-            r: {item:"minecraft:iron_bars"},
+            r: { item:"milf:basic_motor"},
+            p: { item: "milf:basic_pump" },
         },
-        outputItems:[[{"id": "sfm:cable"}, 16]],
+        outputItems:[[{"id": "sfm:cable"}, 6]],
         removeRecipe:true
     })
     

@@ -8,7 +8,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const ieBottlingMachineCraft = (event, args) => {
+const ieBottlingMachineRecipe = (event, args) => {
     let recipe = {
         type: "immersiveengineering:bottling_machine",
         inputs: [],
@@ -18,19 +18,24 @@ const ieBottlingMachineCraft = (event, args) => {
     args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
     args.outputItems.forEach((out) => {recipe.results.push(Object.assign({},{"basePredicate": out[0]}, {count:out[1] || 1}))})
     if(!args.compatOff){
-        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:assembler",
+        miMachineRecipe(event, {energy:8, time:100, machine:"modern_industrialization:assembler",
             inputItems:args.inputItems,
             outputItems:args.outputItems,
             inputFluids:args.inputFluids
         })
     }
     if(args.removeRecipe){args.outputItems.forEach((out) => event.remove({output: out[0].item}))}
+    if (args.removeRecipeType) {
+        args.outputItems.forEach((out) => {
+            event.remove({ output: out[0]?.item || `#${out[0].tag}`, type: args.removeRecipeType })
+        })
+    }
     event.custom(recipe)
 }
 
 ServerEvents.recipes(event => {
 
-    ieBottlingMachineCraft(event, {
+    ieBottlingMachineRecipe(event, {
         outputItems:[
             [{item:"modern_industrialization:plastic_plate"}],
             [{item:"immersiveengineering:mold_plate"}, 1]
@@ -44,7 +49,7 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
-    ieBottlingMachineCraft(event, {
+    ieBottlingMachineRecipe(event, {
         outputItems:[
             [{item:"milf:basic_machine_bit"}, 8],
             [{item:"milf:bits_mold"}, 1]
@@ -58,7 +63,7 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
-    ieBottlingMachineCraft(event, {
+    ieBottlingMachineRecipe(event, {
         outputItems: [
             [{ item: "modern_industrialization:basic_machine_hull" }, 1]
         ],
@@ -74,7 +79,7 @@ ServerEvents.recipes(event => {
     })
 
     function bottling_recipe(inputs, fluid, outputs) {
-        ieBottlingMachineCraft(event, {
+        ieBottlingMachineRecipe(event, {
             inputItems:inputs,
             outputItems:outputs,
             inputFluids:[[{fluid:fluid[0]}, fluid[1]]],
@@ -151,7 +156,7 @@ ServerEvents.recipes(event => {
         [
             [ { "item": "ae2:annihilation_core" }, 1 ]
         ]
-    );
+    )
 
     bottling_recipe(
         [
@@ -163,6 +168,21 @@ ServerEvents.recipes(event => {
         [
             [ { "item": "ae2:formation_core" }, 1 ]
         ]
-    );
+    )
 
-});
+    ieBottlingMachineRecipe(event, {
+        outputItems: [
+            [{ item: "immersiveengineering:electric_lantern" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "modern_industrialization:soldering_alloy" }, 200]
+        ],
+        inputItems: [
+            [{ item: "milf:steel_infused_glass" }, 2],
+            [{ item: "immersiveengineering:light_bulb" }, 1],
+            [{ item: "modern_industrialization:copper_wire" }, 2]
+        ],
+        removeRecipe:true
+    })
+
+})

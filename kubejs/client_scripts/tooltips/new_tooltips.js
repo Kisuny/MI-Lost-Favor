@@ -99,7 +99,6 @@ ItemEvents.modifyTooltips(event => {
 
     //#region WIP items tooltip
     const wip_tooltip = [
-        /fluxnetworks:.*/,
         /replication:.*/,
     ]
     wip_tooltip.forEach(element => {

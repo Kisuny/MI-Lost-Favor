@@ -15,7 +15,6 @@ ServerEvents.tags('item', event => {
 
         // "aquaculture:iron_fillet_knife", "aquaculture:gold_fillet_knife", "aquaculture:diamond_fillet_knife",
 
-        // "refurbished_furniture:knife",
 
         "occultism:butcher_knife", "occultism:iesnium_butcher_knife",
 

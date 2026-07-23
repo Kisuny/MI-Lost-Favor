@@ -14,7 +14,6 @@ global.disabledItems = [
 
     new DisabledItemBuilder("monsterplus:curseflame_powder").build(),
 
-    new DisabledItemBuilder("refurbished_furniture:knife").build(),
     new DisabledItemBuilder("aquaculture:diamond_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:gold_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:iron_fillet_knife").build(),

@@ -53,7 +53,6 @@ ServerEvents.tags('block', event => {
         "minecraft:campfire",
         "minecraft:soul_campfire",
         "occultism:spirit_campfire",
-        "eternal_starlight:torreya_campfire",
         "dungeonsdelight:living_campfire",
         "minecraft:yellow_bed",
         "minecraft:lime_bed",

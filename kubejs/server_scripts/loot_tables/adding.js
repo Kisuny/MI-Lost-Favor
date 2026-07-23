@@ -310,7 +310,6 @@ LootJS.modifiers(event => {
 
     const blaze_core_bosses = [
         "companions:sacred_pontiff",
-        "born_in_chaos_v1:lord_pumpkinhead_head",
         "mythsandlegends:black_charro",
         "mowziesmobs:umvuthi",
         "mowziesmobs:frostmaw",

@@ -11,7 +11,6 @@ const item_interact_block = [
 ]
 
 const entity_interact_block = [
-    { id: "gatekeeper", entity: "eternal_starlight:the_gatekeeper", langKey: "entity.eternal_starlight.the_gatekeeper", stage: "the_gatekeeper" },
     { id: "villager", entity: "minecraft:villager", langKey: "entity.minecraft.villager", stage: "early_items" },
     { id: "wandering_trader", entity: "minecraft:wandering_trader", langKey: "entity.minecraft.wandering_trader", stage: "early_items" },
 ]

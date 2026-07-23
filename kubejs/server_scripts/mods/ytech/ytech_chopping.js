@@ -77,11 +77,6 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
-    ytechChoppingCraft(event, {
-        inputItems: [[{ item: "culturaldelights:squid" }]],
-        outputItems: [[{ id: "minecraft:ink_sac" }, 2]],
-        tool: { tag: "milf:knives" },
-    })
 
     ytechChoppingCraft(event, {
         outputItems: [[{ "id": "minecraft:stick" }, 1]],

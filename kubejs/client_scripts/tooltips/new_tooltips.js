@@ -65,11 +65,6 @@ ItemEvents.modifyTooltips(event => {
 
     //#region Seeds
     const seeds_tooltip = [
-        'rusticdelight:cotton_seeds',
-        'rusticdelight:bell_pepper_seeds',
-        'fruitsdelight:durian_sapling',
-        'fruitsdelight:lemon_seeds',
-        'fruitsdelight:hamimelon_seeds',
         'enchanted:water_artichoke_seeds',
         'enchanted:snowbell_seeds',
         'minecraft:wheat_seeds',

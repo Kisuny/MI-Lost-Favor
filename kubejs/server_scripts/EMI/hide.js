@@ -131,7 +131,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         // 'trofers:medium_pillar',
         // 'trofers:small_pillar',
         'lootr:trophy',
-        /(?:minecraft|eternal_starlight|ytech|cataclysm|immersiveengineering|spectrum|artifacts|toxony|ribbits):[a-z_]+_spawn_egg|ars_nouveau:[a-z_]+_se|occultism:spawn_egg\/[a-z_]+/,
+        // /(?:minecraft|ytech|cataclysm|immersiveengineering|spectrum|artifacts|toxony|ribbits):[a-z_]+_spawn_egg|ars_nouveau:[a-z_]+_se|occultism:spawn_egg\/[a-z_]+/,
         /ars_nouveau:[a-z_]+_se/,
         'modern_industrialization:creative_tank',
         'modern_industrialization:creative_storage_unit',

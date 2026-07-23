@@ -20,12 +20,8 @@ global.disabledItems = [
     new DisabledItemBuilder("aquaculture:iron_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:stone_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:wooden_fillet_knife").build(),
-    new DisabledItemBuilder("moredelight:wooden_knife").build(),
-    new DisabledItemBuilder("moredelight:stone_knife").build(),
     new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables().build(),
 
-    new DisabledItemBuilder("extradelight:salt").replaceWith("modern_industrialization:salt_dust").build(),
-    new DisabledItemBuilder("expandeddelight:salt").replaceWith("modern_industrialization:salt_dust").build(),
 ]
 
 function DisabledItemBuilder(id){

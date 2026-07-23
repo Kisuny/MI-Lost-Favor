@@ -288,12 +288,6 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "born_in_chaos_v1:infernal_pumpkin", name: "born_in_chaos_v1_infernal_pumpkin", augments: [
-                { "key": "minecraft:jack_o_lantern" },
-                { "key": "enchanted:foul_fume" },
-            ]
-        },
-        {
             id: "companions:companions_monkey_temple", name: "companions_monkey_temple", augments: [
                 { "key": "minecraft:cocoa_beans" },
                 { "key": "enchanted:candelabra" },

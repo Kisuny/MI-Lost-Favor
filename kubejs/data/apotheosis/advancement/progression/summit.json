@@ -206,20 +206,6 @@
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_lunar_monstrosity": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "eternal_starlight:lunar_monstrosity"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
         }
     },
     "display": {
@@ -278,9 +264,6 @@
         ],
         [
             "kill_azazel"
-        ],
-        [
-            "kill_lunar_monstrosity"
         ]
     ],
     "sends_telemetry_event": true

@@ -28,8 +28,8 @@
 			id: "650BA3A9101A7A3D"
 			linked_quest: "14B7F1FD3C10B17C"
 			shape: "diamond"
-			x: -5.0d
-			y: 21.0d
+			x: -5.5d
+			y: 20.5d
 		}
 		{
 			id: "37A9C1C59EB7DCEB"
@@ -49,8 +49,8 @@
 			id: "6D641F226C1D2410"
 			linked_quest: "144DEA3CFC2456E3"
 			shape: "diamond"
-			x: -8.0d
-			y: 18.0d
+			x: -7.5d
+			y: 18.5d
 		}
 		{
 			id: "14E9D69AA430550F"
@@ -66,6 +66,20 @@
 			shape: "heart"
 			x: -3.5d
 			y: 5.5d
+		}
+		{
+			id: "7F400D0454B8C2EE"
+			linked_quest: "6B96DD0210C774F1"
+			shape: "diamond"
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			id: "0B11C9FD3C21E1F9"
+			linked_quest: "69AA9D9D0E276932"
+			shape: "diamond"
+			x: -5.5d
+			y: 18.5d
 		}
 	]
 	quests: [
@@ -83,10 +97,7 @@
 			y: 19.5d
 		}
 		{
-			dependencies: [
-				"570E4E47D3CBC937"
-				"09B3D8B6687BF6CD"
-			]
+			dependencies: ["09B3D8B6687BF6CD"]
 			entity_vis_size: 1.0f
 			id: "682A5ADBA0B7FF36"
 			rewards: [
@@ -214,9 +225,9 @@
 			dependencies: [
 				"7D9C31E5FE076F2C"
 				"0092A651B34CC9F1"
-				"69845046182082C2"
 				"14B7F1FD3C10B17C"
 				"144DEA3CFC2456E3"
+				"69AA9D9D0E276932"
 			]
 			entity_vis_size: 1.0f
 			id: "6729C19CB1F44ECF"
@@ -385,7 +396,7 @@
 				item: { count: 1, id: "immersiveengineering:connector_lv" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: 27.0d
 		}
 		{
@@ -411,7 +422,7 @@
 				item: { count: 1, id: "immersiveengineering:connector_lv_relay" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: 27.0d
 		}
 		{
@@ -587,8 +598,8 @@
 		}
 		{
 			dependencies: [
-				"56B854374AFEF7EF"
-				"031F29774F4F1E51"
+				"2EF23FEDB2EDE30D"
+				"432EBAE5AB6CAC37"
 			]
 			entity_vis_size: 1.0f
 			id: "2C0ECD0B46F2895D"
@@ -632,7 +643,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 25.0d
+			y: 24.5d
 		}
 		{
 			dependencies: [
@@ -1262,6 +1273,7 @@
 			}
 			id: "5666EC7EBCE18EBA"
 			shape: "octagon"
+			size: 2.0d
 			tasks: [
 				{
 					id: "1285EBA057AB8B29"
@@ -1423,7 +1435,7 @@
 			dependencies: [
 				"0DFBA17CD8B2B892"
 				"78A9A6A48CF58766"
-				"11A564357FD7FDFD"
+				"6B96DD0210C774F1"
 			]
 			entity_vis_size: 1.0f
 			icon: {
@@ -1606,6 +1618,15 @@
 			dependencies: ["55756CD3B1F8F89F"]
 			entity_vis_size: 1.0f
 			id: "2F10BA3C4E457AE5"
+			rewards: [{
+				count: 16
+				id: "6BB81C5D04D8AEA4"
+				item: {
+					count: 1
+					id: "modern_industrialization:lignite_coal"
+				}
+				type: "item"
+			}]
 			shape: "heart"
 			size: 2.0d
 			tasks: [{
@@ -1620,6 +1641,15 @@
 			dependencies: ["55756CD3B1F8F89F"]
 			entity_vis_size: 1.0f
 			id: "522539A6C9F9C87E"
+			rewards: [{
+				count: 7
+				id: "684BC70668A90DF1"
+				item: {
+					count: 1
+					id: "modern_industrialization:lignite_coal"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "0DC8826EBBC6A44D"
@@ -1656,23 +1686,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"55756CD3B1F8F89F"
-				"70A0A078B94FF034"
-			]
-			entity_vis_size: 1.0f
-			id: "468A8B2EA06FD87C"
-			shape: "diamond"
-			tasks: [{
-				id: "3CF51E4C7C17A283"
-				item: { count: 1, id: "yo_hooks:iron_grappling_hook" }
-				type: "item"
-			}]
-			x: -10.5d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1683,14 +1697,25 @@
 			]
 			entity_vis_size: 1.0f
 			id: "30BCF14BC4590CA0"
-			rewards: [{
-				id: "68F8CFBC9532016B"
-				item: {
-					count: 1
-					id: "immersiveengineering:manual"
+			rewards: [
+				{
+					id: "68F8CFBC9532016B"
+					item: {
+						count: 1
+						id: "immersiveengineering:manual"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "4BC91A76DA87626F"
+					item: {
+						count: 1
+						id: "immersiveengineering:rs_engineering"
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
@@ -1830,6 +1855,15 @@
 			dependencies: ["0E938BA904E9C229"]
 			entity_vis_size: 1.0f
 			id: "78642404EF1EEA87"
+			rewards: [{
+				count: 7
+				id: "2D10340CA139AAD8"
+				item: {
+					count: 1
+					id: "modern_industrialization:coke_block"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "30F0535177E67B20"
@@ -1870,6 +1904,15 @@
 			dependencies: ["5666EC7EBCE18EBA"]
 			entity_vis_size: 1.0f
 			id: "44F02476E0CE40E7"
+			rewards: [{
+				count: 6
+				id: "1125419E9AC23E22"
+				item: {
+					count: 1
+					id: "immersiveengineering:storage_steel"
+				}
+				type: "item"
+			}]
 			shape: "heart"
 			tasks: [{
 				id: "391AA49014F38DA9"
@@ -1911,6 +1954,26 @@
 			dependencies: ["47A796CE47B0765B"]
 			entity_vis_size: 1.0f
 			id: "19276F81270ABB80"
+			rewards: [
+				{
+					count: 7
+					id: "3840CFD9DA1FC410"
+					item: {
+						count: 1
+						id: "minecraft:potato"
+					}
+					type: "item"
+				}
+				{
+					count: 13
+					id: "1EB70A6DC636D34B"
+					item: {
+						count: 1
+						id: "minecraft:sugar_cane"
+					}
+					type: "item"
+				}
+			]
 			shape: "heart"
 			size: 2.0d
 			tasks: [{
@@ -1936,18 +1999,6 @@
 		}
 		{
 			entity_vis_size: 1.0f
-			id: "69845046182082C2"
-			shape: "diamond"
-			tasks: [{
-				id: "3466C7411DBCEA21"
-				item: { count: 1, id: "modern_industrialization:molten_redstone_bucket" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 18.0d
-		}
-		{
-			entity_vis_size: 1.0f
 			id: "0092A651B34CC9F1"
 			shape: "diamond"
 			tasks: [{
@@ -1955,8 +2006,8 @@
 				item: { count: 1, id: "modern_industrialization:electrum_wire" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: 21.0d
+			x: -7.5d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -2061,9 +2112,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["0B19CF68ECB1A0CD"]
+			dependencies: ["598423FC06FA9DA8"]
 			entity_vis_size: 1.0f
 			id: "73A3668DA95AAD0E"
+			shape: "heart"
 			tasks: [{
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
@@ -2170,8 +2222,8 @@
 				item: { count: 1, id: "modern_industrialization:soldering_alloy_bucket" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: 9.0d
+			x: -8.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["09DD071A8672B1E3"]
@@ -2221,20 +2273,8 @@
 				item: { count: 1, id: "immersiveengineering:ersatz_leather" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -5.5d
 			y: 7.5d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "11A564357FD7FDFD"
-			shape: "diamond"
-			tasks: [{
-				id: "5CA612B06DD74A42"
-				item: { count: 1, id: "modern_industrialization:saltpeter_dust" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -2286,6 +2326,15 @@
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "43383C2DA08BCE46"
+			rewards: [{
+				count: 16
+				id: "3569CFF1CFF26183"
+				item: {
+					count: 1
+					id: "ae2:silicon"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2ABCA473F939CE9A"
@@ -2444,6 +2493,15 @@
 			dependencies: ["5380619F075F1D42"]
 			entity_vis_size: 1.0f
 			id: "72ABBE1AFD8BD1A0"
+			rewards: [{
+				count: 6
+				id: "53592D3B4721C16A"
+				item: {
+					count: 1
+					id: "modern_industrialization:transistor"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "27BBF15B98BD9678"
@@ -2457,6 +2515,15 @@
 			dependencies: ["5380619F075F1D42"]
 			entity_vis_size: 1.0f
 			id: "166F456C226C20BA"
+			rewards: [{
+				count: 6
+				id: "747B1410E8BDDAF8"
+				item: {
+					count: 1
+					id: "modern_industrialization:diode"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "576BB76E1CD35746"
@@ -2500,7 +2567,16 @@
 			dependencies: ["78642404EF1EEA87"]
 			entity_vis_size: 1.0f
 			id: "74CB697B5C2A904D"
-			shape: "rsquare"
+			rewards: [{
+				count: 44
+				id: "6CA02237F4547C4C"
+				item: {
+					count: 1
+					id: "modern_industrialization:carbon_tiny_dust"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "323C31A186F7AD4E"
 				item: { count: 1, id: "modern_industrialization:carbon_dust" }
@@ -2539,7 +2615,7 @@
 			dependencies: ["0BCD76587F2DB00F"]
 			entity_vis_size: 1.0f
 			id: "2592EFE93694FDCB"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "0D2CB27F6AA07098"
 				item: { count: 1, id: "milf:ferrosilicon_dust" }
@@ -2769,7 +2845,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["686F439E21ED2A67"]
+			dependencies: [
+				"686F439E21ED2A67"
+				"0186F0E0F50617A6"
+			]
 			entity_vis_size: 1.0f
 			id: "08A37580D6185921"
 			shape: "heart"
@@ -2778,13 +2857,22 @@
 				item: { count: 1, id: "immersiveengineering:electric_lantern" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -7.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["5380619F075F1D42"]
 			entity_vis_size: 1.0f
 			id: "565772683D184EE4"
+			rewards: [{
+				count: 4
+				id: "1F5C9F601874F721"
+				item: {
+					count: 1
+					id: "oritech:machine_core_2"
+				}
+				type: "item"
+			}]
 			shape: "heart"
 			tasks: [{
 				id: "6915DF4270980CB2"
@@ -2795,20 +2883,18 @@
 			y: 2.5d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "27BA1E985525E275"
-			tasks: [{
-				id: "369741F2C52373C8"
-				item: { count: 1, id: "modern_industrialization:bronze_mixer" }
-				type: "item"
-			}]
-			x: -18.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["55756CD3B1F8F89F"]
 			entity_vis_size: 1.0f
 			id: "2C25AEBDF41F50CC"
+			rewards: [{
+				count: 13
+				id: "2D40C09CF7CD687E"
+				item: {
+					count: 1
+					id: "modern_industrialization:copper_wire"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "52DA737D698403DB"
@@ -2841,8 +2927,8 @@
 				item: { count: 1, id: "oritech:steam_engine_block" }
 				type: "item"
 			}]
-			x: -12.5d
-			y: 5.5d
+			x: -13.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5EBF48809F0A806A"]
@@ -2869,6 +2955,152 @@
 			}]
 			x: -13.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["570E4E47D3CBC937"]
+			entity_vis_size: 1.0f
+			id: "48916FC46862AF38"
+			shape: "heart"
+			tasks: [{
+				id: "11C9EA60B466F596"
+				item: { count: 1, id: "modern_industrialization:iron_large_plate" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0B19CF68ECB1A0CD"]
+			entity_vis_size: 1.0f
+			id: "598423FC06FA9DA8"
+			shape: "diamond"
+			tasks: [{
+				id: "27AF4B8CFD0345FC"
+				item: { count: 1, id: "immersivepetroleum:oil_can" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["19276F81270ABB80"]
+			entity_vis_size: 1.0f
+			id: "4D98CB72281A611E"
+			rewards: [
+				{
+					id: "5905E89A1974D01A"
+					item: {
+						count: 1
+						id: "minecraft:poisonous_potato"
+					}
+					type: "item"
+				}
+				{
+					id: "0EDF028C38AB5ECD"
+					item: {
+						count: 1
+						id: "immersiveengineering:cloche"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				count: 16L
+				id: "2FA8ABCD7DDD0E05"
+				item: { count: 1, id: "minecraft:potato" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4D98CB72281A611E"]
+			entity_vis_size: 1.0f
+			id: "77E25F02283E346E"
+			rewards: [{
+				id: "7E88C3AA764F76E8"
+				item: {
+					count: 1
+					id: "immersiveengineering:cloche"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 64L
+				id: "59E2337DBF3FF1E7"
+				item: { count: 1, id: "minecraft:potato" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["77E25F02283E346E"]
+			entity_vis_size: 1.0f
+			id: "7FF335B526228AD0"
+			rewards: [{
+				id: "6F31C196AF37B29A"
+				item: {
+					count: 1
+					id: "grimoireofgaia:deco_garden_gnome"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 256L
+				id: "636E0003565C4ACA"
+				item: { count: 1, id: "minecraft:potato" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["7FF335B526228AD0"]
+			entity_vis_size: 1.0f
+			id: "6A582112E8986BA5"
+			rewards: [{
+				id: "0515501F6C6345EB"
+				item: {
+					count: 1
+					id: "milf:fermenter_placer"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2038DB1F1A61DCF8"
+				item: { components: { "modern_industrialization:item_storage": { amount: 2048L, resource: { id: "minecraft:potato" } } }, count: 1, id: "modern_industrialization:bronze_barrel" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["6A582112E8986BA5"]
+			entity_vis_size: 1.0f
+			id: "5450D3E1BD91B6FD"
+			rewards: [{
+				count: 500
+				id: "5E4C2C64098B4873"
+				item: {
+					count: 1
+					id: "milf:concrete_popsicle"
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				count: 16L
+				id: "31540A7C2A580D74"
+				item: { components: { "modern_industrialization:item_storage": { amount: 2048L, resource: { id: "minecraft:potato" } } }, count: 1, id: "modern_industrialization:bronze_barrel" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 19.0d
 		}
 	]
 }

@@ -621,7 +621,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["65DB2546A83972B8"]
@@ -660,7 +660,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["65DB2546A83972B8"]
@@ -769,7 +769,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7D9C31E5FE076F2C"]
@@ -907,14 +907,14 @@
 			dependencies: ["624A33C4995164C4"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "modern_industrialization:synthetic_oil_bucket"
+				id: "modern_industrialization:molten_redstone_bucket"
 			}
 			id: "69AA9D9D0E276932"
 			shape: "square"
 			tasks: [
 				{
 					id: "6403FCA8E109CCB6"
-					item: { count: 1, id: "modern_industrialization:synthetic_oil_bucket" }
+					item: { count: 1, id: "modern_industrialization:molten_redstone_bucket" }
 					optional_task: true
 					type: "item"
 				}
@@ -927,7 +927,11 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["0BF9914AD888855F"]
+			dependencies: [
+				"11DD849750D8AE0A"
+				"030131A5586DACDD"
+			]
+			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "144DEA3CFC2456E3"
 			shape: "rsquare"
@@ -936,7 +940,7 @@
 				item: { count: 1, id: "modern_industrialization:rubber_sheet" }
 				type: "item"
 			}]
-			x: 15.5d
+			x: 17.0d
 			y: 4.5d
 		}
 		{
@@ -949,7 +953,7 @@
 				item: { count: 1, id: "modern_industrialization:copper_wire" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 17.0d
 			y: 1.5d
 		}
 		{
@@ -967,7 +971,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -982,8 +986,8 @@
 				item: { count: 1, id: "modern_industrialization:resistor" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: 1.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1081,7 +1085,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0096486EF0CEF828"]
@@ -1094,7 +1098,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["590167B593FE267A"]
@@ -1700,14 +1704,14 @@
 			dependencies: ["47BB1661B5D6E3C7"]
 			entity_vis_size: 1.0f
 			id: "0096486EF0CEF828"
-			shape: "rsquare"
+			shape: "octagon"
 			tasks: [{
 				id: "5F1AE8ADA03FC2C6"
 				item: { components: { "immersiveengineering:blueprint": "components" }, count: 1, id: "immersiveengineering:blueprint" }
 				type: "item"
 			}]
 			x: 17.0d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -1750,23 +1754,23 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"2A770E2C788BFA02"
 				"70A0A078B94FF034"
+				"1E6BED5C5AC79D28"
 			]
 			entity_vis_size: 1.0f
 			id: "1CEAB423AA2813F7"
-			shape: "rsquare"
+			shape: "heart"
 			tasks: [{
 				id: "58E6B371F716CC54"
 				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:iron_wand" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.0d
+			x: -0.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1811,7 +1815,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4DD1404D1B9CA7F7"]
@@ -1907,6 +1911,7 @@
 				"30017C3FFFD0325A"
 				"47BB1661B5D6E3C7"
 				"70D85C67F1D59878"
+				"442DDCE87EB5DAF7"
 			]
 			entity_vis_size: 1.0f
 			id: "7D9C31E5FE076F2C"
@@ -1967,7 +1972,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7D9C31E5FE076F2C"]
@@ -2160,13 +2165,14 @@
 			dependencies: ["2E9B7D82DC87E7F4"]
 			entity_vis_size: 1.0f
 			id: "7703003D01291686"
+			shape: "heart"
 			tasks: [{
 				id: "5E90E691766578F7"
 				item: { count: 1, id: "modern_industrialization:sulfur_dust" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: 5.5d
+			x: 13.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1E133CCB1EA54444"]
@@ -2362,14 +2368,14 @@
 			entity_vis_size: 1.0f
 			id: "7B98E3F236CFC940"
 			shape: "heart"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "2580635509E992FD"
 				item: { count: 1, id: "immersive_machinery:tunnel_digger" }
 				type: "item"
 			}]
 			x: 17.0d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["48CF410DC516A33A"]
@@ -2453,7 +2459,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["10B7432FE5C23BDF"]
@@ -2466,7 +2472,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5A52FA17A1DF4CAB"]
@@ -2479,7 +2485,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["48CF410DC516A33A"]
@@ -2691,6 +2697,7 @@
 			dependencies: [
 				"14B7F1FD3C10B17C"
 				"0096486EF0CEF828"
+				"144DEA3CFC2456E3"
 			]
 			entity_vis_size: 1.0f
 			id: "70D85C67F1D59878"
@@ -2699,8 +2706,107 @@
 				item: { count: 1, id: "modern_industrialization:analog_circuit_board" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 1.5d
+			x: 18.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"70A0A078B94FF034"
+				"1E6BED5C5AC79D28"
+			]
+			entity_vis_size: 1.0f
+			id: "468A8B2EA06FD87C"
+			shape: "heart"
+			tasks: [{
+				id: "3CF51E4C7C17A283"
+				item: { count: 1, id: "yo_hooks:iron_grappling_hook" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2E9B7D82DC87E7F4"]
+			entity_vis_size: 1.0f
+			id: "6B96DD0210C774F1"
+			shape: "heart"
+			tasks: [{
+				id: "1119BE2BB83CD0DC"
+				item: { count: 1, id: "modern_industrialization:saltpeter_dust" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0BF9914AD888855F"]
+			entity_vis_size: 1.0f
+			id: "11DD849750D8AE0A"
+			shape: "rsquare"
+			tasks: [{
+				id: "5BFBA257C206DE6D"
+				item: { count: 1, id: "modern_industrialization:synthetic_oil_bucket" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"11DD849750D8AE0A"
+				"7703003D01291686"
+			]
+			entity_vis_size: 1.0f
+			id: "030131A5586DACDD"
+			shape: "heart"
+			tasks: [{
+				id: "7D92F6EC40BC9111"
+				item: { count: 1, id: "modern_industrialization:synthetic_rubber_bucket" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"14B7F1FD3C10B17C"
+				"0096486EF0CEF828"
+			]
+			entity_vis_size: 1.0f
+			id: "442DDCE87EB5DAF7"
+			tasks: [{
+				id: "7B33EBA25D5E5718"
+				item: { count: 1, id: "modern_industrialization:inductor" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["002562156B0D8E9F"]
+			entity_vis_size: 1.0f
+			id: "5DFCC2EFB28B7EDD"
+			shape: "heart"
+			tasks: [{
+				id: "0E5BED43EE7B5971"
+				item: { count: 1, id: "minecraft:paper" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1E195026745014C0"]
+			entity_vis_size: 1.0f
+			id: "69AEF54E21586B04"
+			shape: "heart"
+			tasks: [{
+				id: "78AB0B0B54AE7354"
+				item: { count: 1, id: "minecraft:stick" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
 		}
 	]
 }

@@ -337,8 +337,8 @@
 				item: { count: 1, id: "modern_industrialization:radio_transcriber" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -364,7 +364,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -428,7 +428,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.5d
+			x: 6.5d
 			y: -4.5d
 		}
 		{
@@ -512,7 +512,7 @@
 				item: { components: { "immersiveengineering:blueprint": "Mysterious Blueprint", "minecraft:item_name": "{\"color\":\"#84B9FF\",\"text\":\"Mysterious Blueprint\"}" }, count: 1, id: "immersiveengineering:blueprint" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
@@ -525,8 +525,8 @@
 				item: { count: 1, id: "ae2:fluix_glass_cable" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -6.5d
+			x: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1BB2ECE1BD490210"]
@@ -538,8 +538,8 @@
 				item: { count: 1, id: "ae2:storage_bus" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1BB2ECE1BD490210"]
@@ -551,8 +551,8 @@
 				item: { count: 1, id: "ae2:crafting_terminal" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -6.0d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1E9222AEFCF3FB00"]
@@ -564,8 +564,8 @@
 				item: { count: 1, id: "ae2:charged_certus_quartz_crystal" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6BEE4550F660FDFC"]
@@ -577,8 +577,8 @@
 				item: { count: 1, id: "ae2:fluix_crystal" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -5.5d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["685FA68A7D47018E"]
@@ -590,8 +590,8 @@
 				item: { count: 1, id: "ae2:charger" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["33EE86C92BFB3629"]
@@ -668,6 +668,7 @@
 			dependencies: ["04D87F5213AF93A2"]
 			entity_vis_size: 1.0f
 			id: "1CF1098F75837B7B"
+			shape: "diamond"
 			tasks: [{
 				id: "63594D06FD17DFC4"
 				item: { count: 1, id: "modern_industrialization:electronic_circuit_board" }
@@ -696,6 +697,7 @@
 			dependencies: ["67E363E8E2E58D43"]
 			entity_vis_size: 1.0f
 			id: "7F052BE18CA9A5CF"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "08A40241C1E70808"
@@ -712,21 +714,18 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"5AAC11E85000FC20"
-				"7D255DEA7F775448"
-				"12443CA3CCF8B7EB"
-			]
+			dependencies: ["7594596CF90EF0AB"]
 			entity_vis_size: 1.0f
 			id: "6AD06683D27743A5"
-			shape: "diamond"
+			shape: "heart"
+			size: 2.0d
 			tasks: [{
 				id: "3EB4134D311ED8B8"
 				item: { count: 1, id: "modern_industrialization:electric_blast_furnace" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.5d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -825,7 +824,6 @@
 		}
 		{
 			dependencies: [
-				"6AD06683D27743A5"
 				"5C468466725E67B5"
 				"0637C1EEF97A3C3E"
 			]
@@ -841,7 +839,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["6CA54239AFF1C9F6"]
+			dependencies: [
+				"6CA54239AFF1C9F6"
+				"5AAC11E85000FC20"
+			]
 			entity_vis_size: 1.0f
 			id: "4D32402093933244"
 			shape: "heart"
@@ -850,7 +851,7 @@
 				item: { count: 1, id: "oritech:pulverizer_block" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.5d
 			y: -2.5d
 		}
 		{
@@ -912,10 +913,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"67E363E8E2E58D43"
-				"0EF6CC2F775A1EC8"
-			]
+			dependencies: ["6AD06683D27743A5"]
 			entity_vis_size: 1.0f
 			id: "1CCA73BCD422F7AE"
 			shape: "diamond"
@@ -924,8 +922,8 @@
 				item: { count: 1, id: "oritech:biosteel_ingot" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["630A54A229D2838B"]
@@ -978,19 +976,6 @@
 			}]
 			x: 4.5d
 			y: 3.5d
-		}
-		{
-			dependencies: ["5F3B3C006860B496"]
-			entity_vis_size: 1.0f
-			id: "12443CA3CCF8B7EB"
-			shape: "diamond"
-			tasks: [{
-				id: "7C8DA9D12B7D1C34"
-				item: { count: 1, id: "modern_industrialization:cupronickel_wire_magnetic" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["424C00C372BF234E"]
@@ -1054,16 +1039,12 @@
 				item: { count: 1, id: "oritech:adamant_ingot" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"6C005522C28BBD7E"
-				"1CCA73BCD422F7AE"
-			]
+			dependencies: ["1CCA73BCD422F7AE"]
 			entity_vis_size: 1.0f
-			hide_dependency_lines: true
 			id: "3C8BF30F0824322E"
 			shape: "diamond"
 			tasks: [{
@@ -1075,7 +1056,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["424C00C372BF234E"]
+			dependencies: [
+				"424C00C372BF234E"
+				"1E1B9B0A4E8D7B4C"
+			]
 			entity_vis_size: 1.0f
 			id: "0EF6CC2F775A1EC8"
 			shape: "diamond"
@@ -1274,6 +1258,97 @@
 			}]
 			x: 14.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["0EF6CC2F775A1EC8"]
+			entity_vis_size: 1.0f
+			id: "7EDD8B1772DDC920"
+			shape: "diamond"
+			tasks: [{
+				id: "267D909A326F2F3B"
+				item: { count: 1, id: "modern_industrialization:cupronickel_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4936C26108C714EA"]
+			entity_vis_size: 1.0f
+			id: "34BA5A209E728ACB"
+			shape: "diamond"
+			tasks: [{
+				id: "239F008F339CAF05"
+				item: { count: 1, id: "modern_industrialization:sulfuric_acid_bucket" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7EDD8B1772DDC920"]
+			entity_vis_size: 1.0f
+			id: "7594596CF90EF0AB"
+			shape: "diamond"
+			tasks: [{
+				id: "3A4621A7E1D6648F"
+				item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6AD06683D27743A5"]
+			entity_vis_size: 1.0f
+			id: "51876C47533C815B"
+			shape: "heart"
+			tasks: [{
+				id: "17008864D3BEEE9F"
+				item: { count: 1, id: "modern_industrialization:silicon_dust" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6AD06683D27743A5"]
+			entity_vis_size: 1.0f
+			id: "314981773CCD0CBF"
+			shape: "heart"
+			tasks: [{
+				id: "43E8973C25FF9D96"
+				item: { count: 1, id: "modern_industrialization:steel_ingot" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["599264DC3C7BDC24"]
+			entity_vis_size: 1.0f
+			id: "782E8BC78D78E078"
+			shape: "diamond"
+			tasks: [{
+				id: "25530C44C6973F20"
+				item: { count: 1, id: "milf:bioactive_coating" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["67E363E8E2E58D43"]
+			entity_vis_size: 1.0f
+			id: "1E1B9B0A4E8D7B4C"
+			shape: "diamond"
+			tasks: [{
+				id: "45F3CB869C1F7181"
+				item: { count: 1, id: "oritech:plastic_sheet" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
 		}
 	]
 }

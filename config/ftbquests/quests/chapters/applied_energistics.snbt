@@ -43,11 +43,10 @@
 				item: { count: 1, id: "milf:holy_book_of_color" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["43BC2E23878BD134"]
 			entity_vis_size: 1.0f
 			id: "62D84921B93F2FAE"
 			shape: "rsquare"
@@ -296,88 +295,6 @@
 			}]
 			x: 2.5d
 			y: 5.0d
-		}
-		{
-			dependencies: [
-				"4C1409BB01AF8553"
-				"74966D61A3B62020"
-			]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "5011A1CDE7FCA0B5"
-			shape: "octagon"
-			tasks: [{
-				id: "5E22D00FA409C071"
-				item: { count: 1, id: "ae2:advanced_card" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5011A1CDE7FCA0B5"]
-			entity_vis_size: 1.0f
-			id: "21F0E1AB881B2734"
-			shape: "rsquare"
-			tasks: [{
-				id: "66F285EC57D2D36F"
-				item: { count: 1, id: "ae2:fuzzy_card" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5011A1CDE7FCA0B5"]
-			entity_vis_size: 1.0f
-			id: "1087010E8C69571B"
-			shape: "rsquare"
-			tasks: [{
-				id: "4B513AEF61D3B113"
-				item: { count: 1, id: "ae2:speed_card" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["5011A1CDE7FCA0B5"]
-			entity_vis_size: 1.0f
-			id: "6682F9E5C54971BD"
-			shape: "rsquare"
-			tasks: [{
-				id: "566FB7E2EA8DFC7E"
-				item: { count: 1, id: "ae2:inverter_card" }
-				type: "item"
-			}]
-			x: 20.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["5011A1CDE7FCA0B5"]
-			entity_vis_size: 1.0f
-			id: "442663893170B944"
-			shape: "rsquare"
-			tasks: [{
-				id: "1206A295B68DC9B6"
-				item: { count: 1, id: "ae2:equal_distribution_card" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5011A1CDE7FCA0B5"]
-			entity_vis_size: 1.0f
-			id: "287A440719541F13"
-			shape: "rsquare"
-			tasks: [{
-				id: "72C7124230F909AA"
-				item: { count: 1, id: "ae2:energy_card" }
-				type: "item"
-			}]
-			x: 20.0d
-			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -779,8 +696,8 @@
 				item: { count: 1, id: "milf:automation_disk" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["32BF1BBD35EF70BF"]
@@ -1156,22 +1073,6 @@
 			}]
 			x: 20.0d
 			y: 10.0d
-		}
-		{
-			dependencies: [
-				"7A4B76FE94E94EB3"
-				"5011A1CDE7FCA0B5"
-			]
-			entity_vis_size: 1.0f
-			id: "615658750609C9CE"
-			shape: "rsquare"
-			tasks: [{
-				id: "488464801B7B8D56"
-				item: { count: 1, id: "megacells:compression_card" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: 2.0d
 		}
 		{
 			dependencies: ["6DCE76F4CC875612"]

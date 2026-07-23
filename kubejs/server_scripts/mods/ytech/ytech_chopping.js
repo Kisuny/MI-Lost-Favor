@@ -18,7 +18,7 @@ const ytechChoppingCraft = (event, args) => {
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
     if(!args.compatOff){
-        miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:cutting_machine",
+        miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:cutting_machine",
             inputItems:args.inputItems,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]],
             inputFluids:[[{fluid:"modern_industrialization:lubricant"}, 1]]

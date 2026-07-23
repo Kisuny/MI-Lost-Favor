@@ -9,7 +9,7 @@ function ieHydrotreaterRecipe(event, args){
     }
     if(args.outputItems) recipe.secondary_result = {output:Object.assign({}, args.outputItems[0][0], {count:args.outputItems[0][1] || 1})}
     if(!args.compatOff){
-        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:chemical_reactor",
+        miMachineRecipe(event, {energy:8, time:100, machine:"modern_industrialization:chemical_reactor",
             outputItems:args.outputItems,
             inputFluids:args.inputFluids,
             outputFluids:args.outputFluids

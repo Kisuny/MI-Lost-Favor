@@ -21,7 +21,7 @@ const ytechBlockHitCraft = (event, args) => {
         if(args.outputItems[0][0].id.slice(-4) == "_bit") {            
             args.outputItems[0][1] = 10
         }
-        iePressCraft(event, {energy:3200,
+        iePressRecipe(event, {energy:3200,
             inputItems:args.inputItems,
             outputItems:args.outputItems,
             mold:{item:"immersiveengineering:mold_unpacking"},

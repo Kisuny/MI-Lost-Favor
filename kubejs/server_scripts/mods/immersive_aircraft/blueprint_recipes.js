@@ -3,7 +3,7 @@ ServerEvents.recipes(event =>{
     let aircrafts = "Aircraft machines"
     let aircraftUpgrades = "Aircraft upgrades"
     function blueprint_recipe(inputs, output, blueprint) {
-        ieBlueprintCraft(event, {
+        ieBlueprintRecipe(event, {
             inputItems: inputs,
             outputItems: [[output]],
             category: blueprint,

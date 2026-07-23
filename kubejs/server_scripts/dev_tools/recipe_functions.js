@@ -41,7 +41,7 @@ function milfShaped(event, args){
             }
             //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
         })
-        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
+        miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
             inputItems:itemInputs,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
@@ -73,7 +73,7 @@ function milfSmelting(/**@type {$RecipesKubeEvent_}*/ event, args){
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
     if(!args.compatOff){
-        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
+        miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
             inputItems:args.inputItems,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
@@ -92,7 +92,7 @@ function milfCampfire(event, args){
         result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
     }
     if (!args.compatOff) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:mi_furnace",
             inputItems: args.inputItems,
             outputItems: args.outputItems

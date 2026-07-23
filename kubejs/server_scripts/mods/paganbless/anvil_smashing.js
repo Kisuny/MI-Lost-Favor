@@ -15,7 +15,7 @@ const anvilSmashingCraft = (event, args) => {
     }
     args.inputItems.forEach((input) => {recipe.ingredients.push(Object.assign({},input[0], {count:input[1] || 1}))})
     if(!args.compatOff){
-        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:packer",
+        miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:packer",
             inputItems:args.inputItems,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
@@ -114,15 +114,6 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:diamond_plate" }, 3]
         ],
         [{ "id": 'yo_hooks:diamond_grappling_hook' }, 1]
-
-    );
-
-    anvil_recipe(
-        [
-            [{ "item": "yo_hooks:diamond_grappling_hook" }, 1],
-            [{ "item": "modern_industrialization:netherite_dust" }, 1]
-        ],
-        [{ "id": 'yo_hooks:netherite_grappling_hook' }, 1]
 
     );
 
@@ -247,7 +238,7 @@ ServerEvents.recipes(event => {
             return [itemOrTag, ingredient.count]
         })        
 
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:packer",
             inputItems: inputItems,
             outputItems: [[{ item: rjson.result.id }, rjson.result.count]]

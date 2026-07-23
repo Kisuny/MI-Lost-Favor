@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    miMachineCraft(event, {energy:2, time:100,
+    miMachineRecipe(event, {energy:2, time:100,
         inputItems:[
             [{tag: "spectrum:gemstone_shards"}],
         ],

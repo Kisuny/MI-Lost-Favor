@@ -9,7 +9,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const iePressCraft = (event, args) => {
+const iePressRecipe = (event, args) => {
     let recipe = {
         type: "immersiveengineering:metal_press",
         energy: args.energy || 3200,
@@ -45,12 +45,12 @@ const iePressCraft = (event, args) => {
                 miInputs = miInputs.concat([[args.mold, 1, 0]])
                 break;
         }
-        miMachineCraft(event, {energy:2, time:200, machine:machine,
+        miMachineRecipe(event, {energy:2, time:200, machine:machine,
             inputItems:miInputs,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
         if (args.reverseCompat && machine == "modern_industrialization:unpacker"){            
-            miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:packer",
+            miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:packer",
                 inputItems:[[{item:recipe.result.id}, recipe.result.count]],
                 outputItems:args.inputItems
             })
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     var tier5bp = "Divine Blueprint"
 
     function aePressRecipe(input, output, mold, energy) {
-        iePressCraft(event, {
+        iePressRecipe(event, {
             inputItems:[input],
             outputItems:[output],
             mold: {item : mold},
@@ -126,9 +126,9 @@ ServerEvents.recipes(event => {
 
     pressBlueprintRecipeWithInput("milf:divine_blueprint", "milf:goo_coated_blank_blueprint", tier5bp, '#abffc0', tier5bp)
 
-    pressBlueprintRecipe("modern_industrialization:guidebook", "Useful Tools", '#ccac7c', "Useful Tools")
-    pressBlueprintRecipe("modern_industrialization:analog_circuit", "MI Basic Components", '#F06E28', "MI Basic Components")
-    pressBlueprintRecipe("modern_industrialization:electronic_circuit", "MI Components", '#28B1F0', "MI Components")
+    pressBlueprintRecipe("modern_industrialization:guidebook", MILF_BLUEPRINTS.usefulTools, '#ccac7c', MILF_BLUEPRINTS.usefulTools)
+    pressBlueprintRecipe("modern_industrialization:analog_circuit", MILF_BLUEPRINTS.miBasicComponents, '#F06E28', MILF_BLUEPRINTS.miBasicComponents)
+    pressBlueprintRecipe("modern_industrialization:electronic_circuit", MILF_BLUEPRINTS.miComponents, '#28B1F0', MILF_BLUEPRINTS.miComponents)
 
     // processors
     aePressRecipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);
@@ -142,56 +142,56 @@ ServerEvents.recipes(event => {
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:cell_half"}, 1], "milf:cell_press", 3200);
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:core_press", 3200);
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems:[[{"tag": "minecraft:logs"}, 3]],
         outputItems:[[{id :"minecraft:chest"}, 1]],
         mold: {item : "modern_industrialization:steel_ring"},
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems:[[{"tag": "minecraft:logs"}, 3]],
         outputItems:[[{id :"minecraft:barrel"}, 1]],
         mold: {item : "modern_industrialization:steel_rod"},
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems: [[{ "tag": "minecraft:planks" }, 9]],
         outputItems: [[{ id: "minecraft:crafting_table" }, 1]],
         mold: { item: "minecraft:leather" },
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems: [[{ "item": "knightlib:great_essence" }, 9]],
         outputItems: [[{ id: "grimoireofgaia:experience_iron" }, 1]],
         mold: { item: "immersiveengineering:mold_packing_9" },
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems: [[{ "item": "knightlib:small_essence" }, 4]],
         outputItems: [[{ id: "knightlib:great_essence" }, 1]],
         mold: { item: "immersiveengineering:mold_packing_4" },
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems: [[{ "item": "grimoireofgaia:experience_iron" }, 4]],
         outputItems: [[{ id: "grimoireofgaia:experience_diamond" }, 1]],
         mold: { item: "immersiveengineering:mold_packing_4" },
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems: [[{ "item": "grimoireofgaia:experience_iron" }, 2]],
         outputItems: [[{ id: "grimoireofgaia:experience_gold" }, 1]],
         mold: { item: "modern_industrialization:packer_double_ingot_template" },
         energy: 3200,
     })
 
-    iePressCraft(event, {
+    iePressRecipe(event, {
         inputItems: [[{ "item": "grimoireofgaia:experience_gold" }, 2]],
         outputItems: [[{ id: "grimoireofgaia:experience_diamond" }, 1]],
         mold: { item: "modern_industrialization:packer_double_ingot_template" },

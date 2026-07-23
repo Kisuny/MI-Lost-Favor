@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:mixer",
         inputItems: [
             [{ item: "immersivepetroleum:bitumen" }, 2],

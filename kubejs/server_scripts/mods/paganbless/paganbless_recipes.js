@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
         "paganbless:herb_pouch",
     ]})
 
-    miMachineCraft(event, {energy:4, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:4, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"paganbless:essence_of_the_forest"}, 2],
             [{item:"paganbless:cinnabar"}, 2],

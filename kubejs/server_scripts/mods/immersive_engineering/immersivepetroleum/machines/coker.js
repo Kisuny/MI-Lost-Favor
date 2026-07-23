@@ -10,7 +10,7 @@ function ieCokerRecipe(event, args){
     }
     
     if(!args.compatOff){
-        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:distillation_tower",
+        miMachineRecipe(event, {energy:8, time:100, machine:"modern_industrialization:distillation_tower",
             outputItems:args.outputItems,
             inputFluids:args.inputFluids,
             outputFluids:args.outputFluids

@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+    miMachineRecipe(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
         inputItems:[
             [{item:"modern_industrialization:tin_cable"}, 4],
             [{item:"modern_industrialization:portable_storage_unit"}],
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+    miMachineRecipe(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
         inputItems:[
             [{item:"modern_industrialization:tin_cable"}, 4],
             [{item:"modern_industrialization:cupronickel_wire_magnetic"}, 8],
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+    miMachineRecipe(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
         inputItems:[
             [{item:"modern_industrialization:electrum_cable"}, 4],
             [{item:"modern_industrialization:cupronickel_wire_magnetic"}, 8],
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 8, time: 200, machine: "modern_industrialization:assembler",
         inputItems: [
             [{ item: "modern_industrialization:electrum_cable" }, 8],
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+    miMachineRecipe(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
         inputItems:[
             [{tag:"c:cobblestones"}, 8],
         ],
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+    miMachineRecipe(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
         inputItems:[
             [{tag:"modern_industrialization:iron_plate"}, 6],
         ],

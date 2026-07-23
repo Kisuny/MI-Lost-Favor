@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
     })
 
     // Mixer equivalents
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:"toxony:possible_ingredients"}],
             [{tag:"toxony:possible_ingredients"}],
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:affinity_fusion_mix"}, 2]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:"toxony:ingredients/poisonous"}],
             [{tag:"toxony:plants/poisonous"}],
@@ -235,7 +235,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:poison_paste"}, 2]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:honeycomb"}],
             [{item:"minecraft:blaze_powder"}],
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:witchfire_tox_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:glow_ink_sac"}],
             [{item:"toxony:empty_oil_pot"}],
@@ -254,7 +254,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:glowing_oil_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:"toxony:possible_ingredients"}],
             [{tag:"toxony:possible_ingredients"}],
@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:pure_blend"}, 2]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:"toxony:possible_ingredients"}],
             [{tag:"toxony:possible_ingredients"}],
@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:toxic_blend"}, 2]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:ghast_tear"}],
             [{item:"toxony:sunspot"}],
@@ -283,7 +283,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:regeneration_tox_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:toxic_paste"}],
             [{item:"toxony:acid_slimeball"}, 2],
@@ -294,19 +294,19 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:acid_oil_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:toxic_paste"}],
         ],
         outputItems:[[{item:"minecraft:green_dye"}, 8]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:poison_paste"}],
         ],
         outputItems:[[{item:"minecraft:green_dye"}, 4]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:fermented_spider_eye"}],
             [{item:"toxony:water_hemlock"}],
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:fatigue_oil_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:toxic_paste"}],
         ],
@@ -326,7 +326,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:oil_base"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:toxic_paste"}],
             [{item:"toxony:toxin"}],
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:toxin_tox_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:magma_cream"}],
             [{item:"toxony:empty_oil_pot"}],
@@ -347,7 +347,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:fire_resistance_oil_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:poison_paste"}],
             [{item:"toxony:empty_oil_pot"}],
@@ -357,7 +357,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:poison_oil_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:warproot"}],
             [{item:"toxony:acid_slimeball"}],
@@ -369,7 +369,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:acid_tox_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"minecraft:fermented_spider_eye"}],
             [{item:"toxony:moonlight_hemlock"}],
@@ -380,7 +380,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:smoke_tox_pot"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:poison_paste"}],
             [{tag:"toxony:possible_ingredients"}],
@@ -388,7 +388,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"toxony:poison_blend"}, 2]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:"toxony:toxic_paste"}],
             [{item:"toxony:toxic_spit"}],
@@ -402,21 +402,21 @@ ServerEvents.recipes(event => {
     })
 
     // Alts for copper crucible
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
         inputItems:[[{item:"toxony:affinity_fusion_mix"}]],
         outputItems:[[{item:"toxony:affinity_unknown_substance"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
         inputItems:[[{item:"toxony:poison_paste"}]],
         outputItems:[[{item:"toxony:toxic_paste"}]]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mi_furnace",
         inputItems:[[{item:"toxony:redstone_mixture"}]],
         outputItems:[[{item:"toxony:redstone_solution"}]]
     })
    
     // Alts for alembic (EMI doesn't show this) 
-    miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+    miMachineRecipe(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
         inputItems:[
             [{item:"toxony:toxin"}],
             [{item:"minecraft:leather"}, 2]
@@ -427,7 +427,7 @@ ServerEvents.recipes(event => {
             [{item:"toxony:toxic_leather"}, 2],
         ]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+    miMachineRecipe(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
         inputItems:[
             [{item:"toxony:toxin"}],
             [{item:"toxony:empty_oil_pot"}]
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
             [{item:'toxony:empty_tox_pot'}],
         ]
     })
-    miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+    miMachineRecipe(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
         inputItems:[
             [{item:"toxony:toxic_formula"}],
             [{item:"toxony:glass_vial"}]
@@ -452,7 +452,7 @@ ServerEvents.recipes(event => {
 
     // Shitcoding starts here
     Ingredient.of("#toxony:possible_ingredients").itemIds.forEach(itemId => {
-        miMachineCraft(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
+        miMachineRecipe(event, {energy:2, time:100, machine:"extended_industrialization:brewery",
             inputItems:[
                 [{item:"toxony:redstone_solution"}],
                 [{item: itemId}],

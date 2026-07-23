@@ -1,6 +1,6 @@
     
 ServerEvents.recipes(event => {
-    miMachineCraft(event, {energy:16, time:140, machine:"modern_industrialization:desalter",
+    miMachineRecipe(event, {energy:16, time:140, machine:"modern_industrialization:desalter",
         inputFluids:[
             [{fluid:"immersivepetroleum:crudeoil"}, 1000],
             [{fluid:"minecraft:water"}, 50]

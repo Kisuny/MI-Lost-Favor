@@ -24,7 +24,7 @@ const ieArcFurnaceCraft = (event, args) => {
     args.outputItems.forEach((out) => {out[2] ? recipe.secondaries.push({output:{basePredicate:out[0], count:out[1] || 1}, chance:out[2]}) : recipe.results.push({basePredicate:out[0], count:out[1] || 1})})
     if (args.slag){recipe.slag = args.slag == true ? {basePredicate: {"item": "immersiveengineering:slag"}, count: 1} : {basePredicate: args.slag[0][0], count: args.slag[0][1] || 1}}
     if(!args.compatOff){
-        miMachineCraft(event, {energy:32, time:args.time || 200, machine:"modern_industrialization:blast_furnace",
+        miMachineRecipe(event, {energy:32, time:args.time || 200, machine:"modern_industrialization:blast_furnace",
             inputItems:args.inputItems,
             outputItems:args.outputItems.concat(args.slag == true ? [[{"item": "immersiveengineering:slag"}]] : args.slag || [[]])
         })

@@ -33,7 +33,7 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
                 miEnergy = 8
                 break
         }
-        miMachineCraft(event, {energy:miEnergy, time:args.time || 200, machine:"modern_industrialization:macerator",
+        miMachineRecipe(event, {energy:miEnergy, time:args.time || 200, machine:"modern_industrialization:macerator",
             inputItems:args.inputItems,
             outputItems:args.outputItems
         })

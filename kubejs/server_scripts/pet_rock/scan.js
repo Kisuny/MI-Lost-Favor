@@ -72,11 +72,7 @@ NetworkEvents.dataReceived("milf_pet_rock_deposits_to_scan", event => {
     let playerBlockPos = player.blockPosition()
     let genResultMap = worldTargets.generated()
     let blockPosTag = new $ListTag()
-
-    //let depositGenerator = $AdLods.getInstance().features.depositGenerator.get()
-    //console.log(depositGenerator);
     
-
     let filteredMap = genResultMap.entrySet().stream().filter(entry => {
         return oresSet.contains(entry.getValue().name) && entry.getKey().closerThan(playerBlockPos, scanRadius)
     }).forEach(entry => {

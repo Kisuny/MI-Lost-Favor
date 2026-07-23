@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             compatOff:true
         })
 
-        miMachineCraft(event, {energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
+        miMachineRecipe(event, {energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
             inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
             inputItems: [ingredients],
             outputItems: [[{item:result.id}, 6]],
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
             compatOff: true
         })
 
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
             inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
             inputItems: [[{ tag: logTag }]],
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
             compatOff:true
         })
 
-        miMachineCraft(event, {energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
+        miMachineRecipe(event, {energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
             inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
             inputItems: [[input, 1]],
             outputItems: [[{item:result.id}, 2]],
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
         let result = rJSON.result
         let input = rJSON.key.P        
 
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
             inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
             inputItems: [[input, 1]],
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
             //removeRecipeType:"minecraft:crafting_shaped"
         })
 
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
             inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
             inputItems: [[input, 1]],

@@ -10,7 +10,7 @@ function ieDistillationRecipe(event, args){
     args.outputItems && args.outputItems.forEach((output) => {recipe.byproducts.push({chance:output[2] || 0.1, output:output[0]})})
     args.outputFluids.forEach((output) => {recipe.results.push({id:output[0].fluid, amount:output[1] || 10})})
     if(!args.compatOff){
-        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:distillation_tower",
+        miMachineRecipe(event, {energy:8, time:100, machine:"modern_industrialization:distillation_tower",
             outputItems:args.outputItems,
             inputFluids:args.inputFluids,
             outputFluids:args.outputFluids

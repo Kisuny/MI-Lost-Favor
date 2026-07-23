@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 8, time: 600, machine: "modern_industrialization:chemical_reactor",
         inputItems: [
             [{ item: "grimoireofgaia:deco_garden_gnome" }, 1, 0],

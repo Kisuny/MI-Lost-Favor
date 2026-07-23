@@ -16,7 +16,7 @@ const ytechMillingCraft = (event, args) => {
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
     if(!args.compatOff){
-        miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:macerator",
+        miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:macerator",
             inputItems:args.inputItems,
             outputItems: args.bonusChance ? [[{item:recipe.result.id}, recipe.result.count], [{item:recipe.result.id}, recipe.result.count, args.bonusChance]] :[[{item:recipe.result.id}, recipe.result.count]],
         })

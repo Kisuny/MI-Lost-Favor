@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    miMachineCraft(event, {energy:16, time:140, machine:"modern_industrialization:steam_cracker",
+    miMachineRecipe(event, {energy:16, time:140, machine:"modern_industrialization:steam_cracker",
         inputFluids:[
             [{fluid:"modern_industrialization:naphtha"}, 1000],
             [{fluid:"modern_industrialization:steam"}, 500]

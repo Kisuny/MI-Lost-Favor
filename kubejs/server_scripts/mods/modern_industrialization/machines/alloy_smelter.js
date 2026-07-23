@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         machine:"extended_industrialization:alloy_smelter",
         energy:4,
         time:200,
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         machine:"extended_industrialization:alloy_smelter",
         energy:4,
         time:200,
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         machine: "extended_industrialization:alloy_smelter",
         energy: 4,
         time: 200,
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
 
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         machine:"extended_industrialization:alloy_smelter",
         energy:4,
         time:200,
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
 
     })
 
-    miMachineCraft(event, {energy:4, time:400, machine:"extended_industrialization:alloy_smelter",
+    miMachineRecipe(event, {energy:4, time:400, machine:"extended_industrialization:alloy_smelter",
         inputItems:[
             [{tag:`c:glass_blocks`}, 2],
             [{tag:`c:dusts/iron`}, 1]

@@ -28,7 +28,7 @@ const yTechShaped = (/**@type {$RecipesKubeEvent}*/ event, args) => {
             }
             itemInputs.push([m[1], (amounts.match(regex) || []).length])
         })
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:assembler",
             inputItems: itemInputs,
             outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
@@ -49,7 +49,7 @@ function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args) {
         result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || args.outputItems[0][0].count || 1 }),
     }
     if (!args.compatOff) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:assembler",
             inputItems: args.inputItems,
             outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
@@ -425,7 +425,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
         inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
         inputItems: [[{ tag: "milf:sticks" }, 1]],

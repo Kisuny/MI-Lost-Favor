@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
     })
 
     function blueprint_recipe(inputs, output, blueprint) {
-        ieBlueprintCraft(event, {
+        ieBlueprintRecipe(event, {
             inputItems: inputs,
             outputItems: [[output]],
             category: blueprint

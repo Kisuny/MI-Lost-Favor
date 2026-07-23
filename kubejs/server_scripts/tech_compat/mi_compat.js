@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
 
     //#region press
     function press_mi(ingredients, result, mold, miEnergy){
-        iePressCraft(event, {
+        iePressRecipe(event, {
             inputItems: ingredients.tag ? [[{tag:ingredients.tag}, ingredients.amount]] : [[{item:ingredients.item}, ingredients.amount]],
             outputItems: [[{id:result.item}, result.amount]],
             mold: {item : mold},

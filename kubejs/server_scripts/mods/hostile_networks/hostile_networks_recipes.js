@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         )
     })
     
-    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:8, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"hostilenetworks:blank_data_model"}]
         ],
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
     
-    miMachineCraft(event, {energy:8, time:600, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:8, time:600, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"hostilenetworks:deep_learner"}]
         ],
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         ],
         removeRecipe:true
     })
-    miMachineCraft(event, {energy:8, time:500, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:8, time:500, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"hostilenetworks:sim_chamber"}]
         ],
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         ],
         removeRecipe:true
     })
-    miMachineCraft(event, {energy:8, time:500, machine:"modern_industrialization:packer",
+    miMachineRecipe(event, {energy:8, time:500, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"hostilenetworks:loot_fabricator"}]
         ],

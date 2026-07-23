@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
         result: "milf:miasma_orb"
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:macerator",
         inputItems: [[{ tag: "milf:artifacts" }]],
         outputItems: [[{ id: "milf:artifact_dust" }, 1, 0.3]],

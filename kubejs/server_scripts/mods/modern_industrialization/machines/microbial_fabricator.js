@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    miMachineCraft(event, {energy:16, time:1000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:1000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:bottle_of_fading"}, 1],
             [{item:"ae2:mysterious_cube"}, 1],
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true,
     })
 
-    miMachineCraft(event, {energy:16, time:2000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:2000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:bottle_of_failing"}, 1],
             [{item:"justdirethings:gooblock_tier1"}, 1],
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         custom_condition:"milf:microbial_fabricator_bioactive_coating"
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 16, time: 2000, machine: "modern_industrialization:microbial_fabricator",
         inputItems: [
             [{ item: "spectrum:bottle_of_decay_away" }, 1],
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
         custom_condition: "milf:microbial_fabricator_bioactive_coating"
     })
 
-    miMachineCraft(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:bottle_of_ruin"}, 1],
             [{item:"justdirethings:gooblock_tier2"}, 1],
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
         custom_condition:"milf:microbial_fabricator_thermophilic_dermis"
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 16, time: 4000, machine: "modern_industrialization:microbial_fabricator",
         inputItems: [
             [{ item: "spectrum:bottle_of_decay_away" }, 1],
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         custom_condition: "milf:microbial_fabricator_thermophilic_dermis"
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 16, time: 10000, machine: "modern_industrialization:microbial_fabricator",
         inputItems: [
             [{ item: "spectrum:moonstruck_nectar" }, 1],
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         custom_condition: "milf:microbial_fabricator_symbiote_membrane"
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 16, time: 10000, machine: "modern_industrialization:microbial_fabricator",
         inputItems: [
             [{ item: "spectrum:bottle_of_decay_away" }, 1],
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
     })
 
 
-    miMachineCraft(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:vegetal"}, 64],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true,
     })
 
-    miMachineCraft(event, {energy:16, time:8000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:8000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:stratine_gem"}, 1],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true,
     })
 
-    miMachineCraft(event, {energy:16, time:12000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:12000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"spectrum:aether_vestiges"}, 1],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true,
     })
 
-    miMachineCraft(event, {energy:16, time:12000, machine:"modern_industrialization:microbial_fabricator",
+    miMachineRecipe(event, {energy:16, time:12000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"justdirethings:gooblock_tier3"}, 1],
             [{item:"milf:blank_blueprint"}, 1],

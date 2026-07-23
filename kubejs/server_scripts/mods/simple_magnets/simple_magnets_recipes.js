@@ -9,20 +9,20 @@ ServerEvents.recipes(event => {
     // event.replaceInput({mod: 'simplemagnets'}, 'minecraft:redstone', 'immersiveengineering:wirecoil_redstone')
     // event.replaceInput({mod: 'simplemagnets'}, 'minecraft:gold_ingot', 'modern_industrialization:gold_plate')
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 8, time: 200, machine: "modern_industrialization:polarizer",
         inputItems: [[{ item: "milf:magnet_part" }]],
         outputItems: [[{ item: "milf:polarized_magnet_part" }]],
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 8, time: 200, machine: "modern_industrialization:cutting_machine",
         inputItems: [[{ item: "modern_industrialization:iron_double_ingot" }]],
         outputItems: [[{ item: "milf:magnet_part" }]],
         inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
     })
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: 8, time: 200, machine: "modern_industrialization:assembler",
         inputItems: [
             [{ item: "milf:polarized_magnet_part" }, 2],

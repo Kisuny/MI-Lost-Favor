@@ -11,7 +11,7 @@ function ieMixerRecipe(event, args){
     }
     args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
     if(!args.compatOff){
-        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:mixer",
+        miMachineRecipe(event, {energy:8, time:100, machine:"modern_industrialization:mixer",
             inputItems:args.inputItems,
             inputFluids:args.inputFluids,
             outputFluids:args.outputFluids
@@ -23,15 +23,4 @@ function ieMixerRecipe(event, args){
 
 ServerEvents.recipes(event => {
 
-    ieMixerRecipe(event, {
-        inputItems:[
-            [ { "item": "immersiveengineering:slag_gravel" }, 3 ],
-            [ { "tag": "c:sands" }, 2 ],
-            [ { "item": "milf:cement" }, 4 ]
-        ],
-        inputFluids:[[ {tag :"minecraft:water"} , 2000 ]],
-        outputFluids:[[ {fluid :"immersiveengineering:concrete"} , 2000 ]],
-        removeRecipe:true,
-        compatOff:true
-    })
 })

@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     ]
 
     gadgetPairs.forEach(([gadget, card]) => {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 8, time: 200, machine: "modern_industrialization:assembler",
             inputItems: [
                 [{ item: "modern_industrialization:analog_circuit" }, 2],

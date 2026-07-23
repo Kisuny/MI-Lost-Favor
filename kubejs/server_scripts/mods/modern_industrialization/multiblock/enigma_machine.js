@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         .itemOut("milf:divine_blueprint") */
 
 
-    miMachineCraft(event, {energy:8, time:6000, machine:"modern_industrialization:enigma_machine",
+    miMachineRecipe(event, {energy:8, time:6000, machine:"modern_industrialization:enigma_machine",
         inputItems:[
             [{item:"milf:blank_blueprint"}, 1],
             [{item:"milf:punched_card"}, 1],

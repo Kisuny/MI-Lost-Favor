@@ -40,19 +40,19 @@ function yTechWorkspaceRecipe(event, args){
             itemInputs.push(args.materialset.replaceWith)
         }
         if(args.miCompatMachine != "modern_industrialization:packer"){
-            miMachineCraft(event, {
+            miMachineRecipe(event, {
                 energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
                 inputItems: itemInputs,
                 outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
             })
         } else {
-            miMachineCraft(event, {
+            miMachineRecipe(event, {
                 energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
                 inputItems: itemInputs,
                 outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
             })
 
-            miMachineCraft(event, {
+            miMachineRecipe(event, {
                 energy: 1, time: 200, machine: "modern_industrialization:unpacker",
                 inputItems: [[{ item: recipe.result.id }, recipe.result.count]],
                 outputItems: itemInputs
@@ -1110,14 +1110,15 @@ ServerEvents.recipes(event => {
     yTechWorkspaceRecipe(event, {
         pattern: [
             ['WWW','WTW','WWW'],
-            ['   ',' B ','   '].workspaceCorners("S"),
+            ['   ',' B ','   '].workspaceCorners("S").workspaceSides("b"),
             ['   ','   ','   '].workspaceCorners("S")
         ],
         key: {
             S: { item: "immersiveengineering:stick_treated" },
             T: { item: "craftingstation:crafting_station_slab" },
             W: { tag: "immersiveengineering:treated_wood_slab" },
-            B: { item: "immersiveengineering:wooden_barrel" }
+            B: { item: "immersiveengineering:wooden_barrel" },
+            b: { item: "milf:steel_machine_bit" }
         },
         outputItems: [[{ id: "immersiveengineering:craftingtable" }, 1]],
         tool: wrench,
@@ -1127,14 +1128,15 @@ ServerEvents.recipes(event => {
     yTechWorkspaceRecipe(event, {
         pattern: [
             ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P"),
-            ['   ','   ','   '].workspaceSides("S").workspaceCorners("R").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceSides("S").workspaceCorners("R").workspaceCenter(" ").workspaceSides("M").workspaceFront(" ").workspaceBack("C"),
             ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P")
         ],
         key: {
             S: { tag: "immersiveengineering:treated_wood" },
             R: { item: "modern_industrialization:steel_rod" },
             P: { item: "modern_industrialization:steel_plate" },
-            C: { item: "modern_industrialization:analog_circuit" }
+            C: { item: "immersiveengineering:component_electronic" },
+            M: { item: "milf:basic_motor" },
         },
         outputItems: [[{ id: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" }, 1]],
         tool: { item: "immersiveengineering:hammer" },

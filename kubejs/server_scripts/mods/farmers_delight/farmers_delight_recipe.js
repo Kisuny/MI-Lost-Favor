@@ -10,7 +10,7 @@ function cuttingBoardRecipe(/**@type {$RecipesKubeEvent_}*/ event, args){
         result: result,
     }
     if (!args.compatOff) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:cutting_machine",
             inputItems: args.inputItems,
             inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],

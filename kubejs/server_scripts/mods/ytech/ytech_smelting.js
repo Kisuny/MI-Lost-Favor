@@ -10,7 +10,7 @@ const ytechSmeltingCraft = (event, args) => {
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
     if(!args.compatOff){
-        miMachineCraft(event, {energy:4, time:200, machine:"extended_industrialization:alloy_smelter",
+        miMachineRecipe(event, {energy:4, time:200, machine:"extended_industrialization:alloy_smelter",
             inputItems:args.inputItems,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })

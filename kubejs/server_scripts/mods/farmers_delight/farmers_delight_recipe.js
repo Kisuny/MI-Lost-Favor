@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             'PPP'
         ],
         key: {
-            S: { item: "extradelight:wooden_spoon" },
+            S: { item: "minecraft:wooden_shovel" },
             B: { item: "minecraft:brick" },
             P: { item: "modern_industrialization:iron_plate" },
         },
@@ -128,10 +128,7 @@ ServerEvents.recipes(event => {
             "farmersdelight:wooden_basket", 
             "farmersdelight:bamboo_basket", 
             "eidolon_edoni:illwood_cabinet",
-            "eidolon_edoni:polished_cabinet",
-            "expandeddelight:cinnamon_cabinet",
-            "extradelight:cinnamon_cabinet",
-            "extradelight:fruit_cabinet"
+            "eidolon_edoni:polished_cabinet"
 
         ], 
         originalPattern => {

@@ -1,0 +1,1 @@
+let $EnigmaticHandler = Java.loadClass("auviotre.enigmatic.legacy.handlers.EnigmaticHandler")

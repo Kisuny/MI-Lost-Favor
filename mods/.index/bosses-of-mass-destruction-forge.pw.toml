@@ -1,16 +1,17 @@
-filename = 'BOMD-NeoForge-1.21-1.3.2.jar'
-name = 'Bosses of Mass Destruction [Forge | NeoForge]'
-side = 'both'
+filename = 'BOMD-NeoForge-1.21-1.3.3.jar'
+name = 'Bosses of Mass Destruction'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'BOMD-NeoForge-1.21-1.3.3.jar'
 
 [download]
-hash = 'e88b07125236065f278c36b3a7051548ee104944'
+hash = '446ff63afb858ad49149d24b72541739de83d38d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6117186
+file-id = 8448640
 project-id = 941573

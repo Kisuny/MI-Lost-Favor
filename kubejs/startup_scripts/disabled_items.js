@@ -37,18 +37,13 @@ global.disabledItems = [
 
     new DisabledItemBuilder("monsterplus:curseflame_powder").build(),
 
-    new DisabledItemBuilder("refurbished_furniture:knife").build(),
     new DisabledItemBuilder("aquaculture:diamond_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:gold_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:iron_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:stone_fillet_knife").build(),
     new DisabledItemBuilder("aquaculture:wooden_fillet_knife").build(),
-    new DisabledItemBuilder("moredelight:wooden_knife").build(),
-    new DisabledItemBuilder("moredelight:stone_knife").build(),
     new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables().build(),
 
-    new DisabledItemBuilder("extradelight:salt").replaceWith("modern_industrialization:salt_dust").build(),
-    new DisabledItemBuilder("expandeddelight:salt").replaceWith("modern_industrialization:salt_dust").build(),
 ]
 
 function createExclusionRegex(base, exclude) {

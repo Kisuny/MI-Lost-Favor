@@ -109,12 +109,6 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "born_in_chaos_v1_infernal_pumpkin", pedestal_items: [
-                { "item": "minecraft:jack_o_lantern" },
-                { "item": "enchanted:foul_fume" },
-            ]
-        },
-        {
             id: "companions_monkey_temple", pedestal_items: [
                 { "item": "minecraft:cocoa_beans" },
                 { "item": "enchanted:candelabra" },

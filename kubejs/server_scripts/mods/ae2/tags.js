@@ -24,4 +24,7 @@ ServerEvents.tags('item', event => {
 
     event.add(tier4recipe, tier4token)
 
+    // Removed from c:buckets so the enigmaticlegacyplus:starlight_bucket cannot copy it - infinite quantum infusion fluid would break progression
+    event.remove('c:buckets', 'advanced_ae:quantum_infusion_bucket')
+
 })

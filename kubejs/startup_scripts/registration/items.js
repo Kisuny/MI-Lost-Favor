@@ -245,4 +245,5 @@ createNewItem('cutting_card', { lang: {  "ru_ru": "Карта резки" } })
 createNewItem('blank_card', { lang: { "en_us": "Blank Card" } })
 createNewItem('miasma_orb', { lang: { "ru_ru": "Сфера скверны" }, stackSize: 1, rarity: 'epic'  })
 createNewItem('artifact_dust', { lang: { "ru_ru": "Артефактная пыль" }, stackSize: 15, rarity: 'epic'  })
+createNewItem('soul_of_the_helpless', { lang: { "ru_ru": "Душа беспомощного" }, stackSize: 16, rarity: 'epic'  })
 

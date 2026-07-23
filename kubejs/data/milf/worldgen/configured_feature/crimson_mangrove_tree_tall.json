@@ -45,7 +45,7 @@
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "eternal_starlight:nightfall_mud"
+        "Name": "minecraft:mud"
       }
     },
     "foliage_placer": {
@@ -105,7 +105,7 @@
       "mangrove_root_placement": {
         "can_be_exposed": true,
         "can_grow_through": [
-          "eternal_starlight:nightfall_mud",
+          "minecraft:mud",
           "minecraft:muddy_mangrove_roots",
           "minecraft:moss_block",
           "minecraft:moss_carpet",
@@ -126,7 +126,7 @@
           }
         },
         "muddy_roots_in": [
-          "eternal_starlight:nightfall_mud"
+          "minecraft:mud"
         ]
       },
       "trunk_offset_y": 0

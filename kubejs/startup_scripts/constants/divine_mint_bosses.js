@@ -30,7 +30,6 @@ global.milfBosses = {
         "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena", isStructureExclusive:true },
         "bosses_of_mass_destruction:lich": { structure: "bosses_of_mass_destruction:lich_tower" },
         "bosses_of_mass_destruction:gauntlet": { structure: "bosses_of_mass_destruction:gauntlet_arena", isStructureExclusive: true },
-        "eternal_starlight:lunar_monstrosity": { structure: "" }
     },
 
     tier2:{
@@ -62,9 +61,7 @@ global.milfBosses = {
         "mythsandlegends:black_charro": { structure: "mythsandlegends:graveyard" , additionalTransformations: (pose) => {
             pose.translate(0, 20, 0)
             pose.scale(1.5, 1.5, 1)
-        }},
-        "born_in_chaos_v1:sir_pumpkinhead": { fakeLootEntity: "born_in_chaos_v1:pumpkinhead", structure: "born_in_chaos_v1:infernal_pumpkin" } //I HATE MCREATOR MODS
-
+        }}
     }
 
 }

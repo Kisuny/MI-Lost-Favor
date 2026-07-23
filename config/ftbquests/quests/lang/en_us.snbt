@@ -1675,6 +1675,7 @@
 	]
 	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your <named>cute little pet rock</named> daily! It's quite playful when you let it roam freely, so don't let it loose without the <keyword>leash</keyword>. As the good rock that it is, it'll help you <positive>locate the precious little minerals</positive> around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the <property>ores</property> and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
+	quest.3280261221D57614.quest_subtitle: "WIP"
 	quest.32A2AA91FA55AB4A.quest_desc: [
 		"The whole idea of <property>automation</property> is that you make a different <keyword>creation machine</keyword> for each item, for example, for <keyword>plates of bronze</keyword>, <keyword>tin</keyword>, <keyword>steel</keyword>, etc. you make your own <keyword>compressor</keyword> each, and feed that machine <keyword>infinite amounts</keyword> of the ingots you need."
 		""
@@ -1897,7 +1898,7 @@
 		"{@pagebreak}"
 		"Более вместительное хранилище энергии Chronon. Работает как ячейка, но хранит больше энергии и продолжает питать переносимые устройства."
 	]
-	quest.3923CA397022E916.quest_desc: ["Даётся за убийство дракона с проклятьем"]
+	quest.3923CA397022E916.quest_desc: [""]
 	quest.39553C7C57BEE887.quest_desc: [
 		"Hold down the right mouse button + Shift key on the \"warped fungus\" or \"crimson fungus\"!"
 		"{@pagebreak}"
@@ -2301,6 +2302,16 @@
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \", but be aware and don't believe a single word, because we know better.\" ]"
 	]
+	quest.44AA4DF21D616953.quest_desc: [
+		"The <keyword>Starlight Bucket</keyword> is a universal bucket. <positive>Right-click</positive> it onto any other bucket in your inventory to copy that fluid into it, then use it exactly like the original bucket to place that content."
+		""
+		"<warning>Works only with buckets that have the #c:buckets tag</warning>"
+		"{@pagebreak}"
+		"<keyword>Ведро света звёзд</keyword> - универсальное ведро. Используйте <positive>ПКМ</positive> им по любому другому ведру в инвентаре, чтобы скопировать в него эту жидкость, а затем используйте его точно так же, как оригинальное ведро - чтобы вылить это содержимое."
+		""
+		"<warning>работает только с вёдрами у которых есть тег #c:buckets</warning>"
+	]
+	quest.44AA4DF21D616953.title: "Starlight Bucket"
 	quest.44B39469DF2F9E65.quest_desc: [
 		"The <keyword>Workstation</keyword> is a two-part block that serves as a docking station for the <keyword>Tempad</keyword> and a stationary <keyword>Timedoor terminal</keyword>. <positive>Right-click</positive> the docking pad with a <keyword>Tempad</keyword> to dock it, which unlocks the <keyword>cassette slot</keyword> for upgrade tapes and enables the <property>Portal Setup app</property> on the terminal screen."
 		""
@@ -4148,6 +4159,7 @@
 	reward.20165DF8F49E8177.title: "New mobs"
 	reward.20BA335B5255AB60.title: "Hands Trinket slot"
 	reward.224D85127D80FED8.title: "New mobs"
+	reward.26A2544BCF0C603E.title: "New loot in looting chests"
 	reward.2BD4B3CA5BEDBA19.title: "The End Access "
 	reward.2C80D8BA9B69917E.title: "Ring Trinket slot"
 	reward.3922C9ACA47723BA.title: "New mobs"

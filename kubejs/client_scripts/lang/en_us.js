@@ -247,6 +247,7 @@ The only solution is to make them less sound.`)
     event.add('dimension.milf.crimson_veil', "Crimson Veil")
     event.add('biome.milf.blood_wastes', "Blood Wastes")
     event.add('biome.milf.crimson_mangrove_swamp', "Crimson Mangrove Swamp")
+    event.add('milf.cursed_drops', "This item drops from mobs only if you are under the effect of a <blood>cursed ring</blood>")
 
     //#region fix forbidden_arcanus langs
     event.add("block.forbidden_arcanus.clibano_center", "Clibano")

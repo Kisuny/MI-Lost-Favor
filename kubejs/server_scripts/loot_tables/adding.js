@@ -310,7 +310,6 @@ LootJS.modifiers(event => {
 
     const blaze_core_bosses = [
         "companions:sacred_pontiff",
-        "born_in_chaos_v1:lord_pumpkinhead_head",
         "mythsandlegends:black_charro",
         "mowziesmobs:umvuthi",
         "mowziesmobs:frostmaw",
@@ -337,7 +336,28 @@ LootJS.modifiers(event => {
 
     event.addEntityModifier("hexerei:crow").addLoot("eidolon_repraised:raven_feather").applyEnchantmentBonus("minecraft:looting", [0, 1])
 
-
+    //Add items only if player is cursed from enigmatic legacy
+    event.addEntityModifier([
+        "minecraft:cat", 
+        "minecraft:axolotl", 
+        "cnb:lilytad", 
+        "cnb:little_grebe", 
+        "cnb:minipad", 
+        "cnb:sporeling", 
+        "crittersandcompanions:otter",
+        "crittersandcompanions:dumbo_octopus",
+        "crittersandcompanions:ferret",
+        "crittersandcompanions:ladybug",
+        "crittersandcompanions:red_panda",
+        "crittersandcompanions:shima_enaga"
+    ]).pool(pool => {
+        pool.when(c => c.killedByPlayer().matchPlayerCustom(player => {
+            const cursed = $EnigmaticHandler.isTheCursedOne(player)
+            // console.log(`isCursed = ${cursed}`)
+            return cursed
+        }))
+        pool.addEntry(LootEntry.of("milf:soul_of_the_helpless").applyEnchantmentBonus("minecraft:looting", [0, 1]))
+    })
 
 
 

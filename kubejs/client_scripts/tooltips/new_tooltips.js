@@ -57,15 +57,14 @@ ItemEvents.modifyTooltips(event => {
         tooltip.dynamic("milf:cursed_ring_tooltip")
     })
 
+    event.modify("milf:soul_of_the_helpless", tooltip => {
+        tooltip.dynamic("milf:soul_of_the_helpless_tooltip")
+    })
+
     //#region
 
     //#region Seeds
     const seeds_tooltip = [
-        'rusticdelight:cotton_seeds',
-        'rusticdelight:bell_pepper_seeds',
-        'fruitsdelight:durian_sapling',
-        'fruitsdelight:lemon_seeds',
-        'fruitsdelight:hamimelon_seeds',
         'enchanted:water_artichoke_seeds',
         'enchanted:snowbell_seeds',
         'minecraft:wheat_seeds',
@@ -100,7 +99,6 @@ ItemEvents.modifyTooltips(event => {
 
     //#region WIP items tooltip
     const wip_tooltip = [
-        /fluxnetworks:.*/,
         /replication:.*/,
     ]
     wip_tooltip.forEach(element => {

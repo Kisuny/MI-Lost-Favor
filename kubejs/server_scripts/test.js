@@ -1,3 +1,0 @@
-ServerEvents.tick(event => {
-/*     event */
-});

@@ -27,15 +27,6 @@ global.emixxGroups = [
     {
         type: "group",
         mod: "minecraft",
-        name: "paintings",
-        items: [
-            "minecraft:painting",
-            "eternal_starlight:starlit_painting",
-        ],
-    },
-    {
-        type: "group",
-        mod: "minecraft",
         name: "goat_horns",
         items: [
             "minecraft:goat_horn",

@@ -3371,13 +3371,14 @@
 				item: { count: 1, id: "enigmaticlegacyplus:infernal_cinder" }
 				type: "item"
 			}]
-			x: 18.5d
+			x: 17.5d
 			y: -5.5d
 		}
 		{
 			dependencies: [
 				"2DAEFF331DD573F0"
 				"6B2D79721C8C35AE"
+				"1D373AE78BB607BA"
 			]
 			entity_vis_size: 1.0f
 			id: "078E66CEE0C9F156"
@@ -4946,6 +4947,140 @@
 			}]
 			x: -9.5d
 			y: 22.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "50EE4E5BAD962DDE"
+			tasks: [{
+				id: "2E6858D1431912B2"
+				item: { count: 1, id: "enigmaticlegacyplus:starlight_particle" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["50EE4E5BAD962DDE"]
+			entity_vis_size: 1.0f
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "1D373AE78BB607BA"
+			tasks: [{
+				id: "66705D1466AC4857"
+				item: { count: 1, id: "enigmaticlegacyplus:starlight_ingot" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["1736BA81330EBA57"]
+			entity_vis_size: 1.0f
+			id: "755F4028EDCAF2B2"
+			tasks: [{
+				id: "06E3627CA8EFED13"
+				item: { count: 1, id: "enigmaticlegacyplus:spellstone_sword" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"1D373AE78BB607BA"
+				"39F1D2EB6198CFC8"
+			]
+			entity_vis_size: 1.0f
+			id: "4CC073FFA763F308"
+			tasks: [{
+				id: "76EE73ADE44B9ED1"
+				item: { count: 1, id: "enigmaticlegacyplus:starlight_ring" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"1D373AE78BB607BA"
+				"39F1D2EB6198CFC8"
+			]
+			entity_vis_size: 1.0f
+			id: "39674DC03AE136CF"
+			tasks: [{
+				id: "1CFE0E1EFC7702B5"
+				item: { count: 1, id: "enigmaticlegacyplus:starlight_pearl" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"1D373AE78BB607BA"
+				"39F1D2EB6198CFC8"
+			]
+			entity_vis_size: 1.0f
+			id: "44AA4DF21D616953"
+			tasks: [{
+				id: "6982217757D803FD"
+				item: { count: 1, id: "enigmaticlegacyplus:starlight_bucket" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"1D373AE78BB607BA"
+				"6B2D79721C8C35AE"
+				"39F1D2EB6198CFC8"
+			]
+			entity_vis_size: 1.0f
+			id: "07D8732D1F80AB2B"
+			tasks: [{
+				id: "7E40F829A1E9B3B7"
+				item: { count: 1, id: "enigmaticlegacyplus:ascension_amulet" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["46273D25211ABB90"]
+			entity_vis_size: 1.0f
+			id: "091F66C04E102143"
+			tasks: [{
+				id: "6B420D803FFB1BAE"
+				item: { count: 1, id: "enigmaticlegacyplus:bless_potion" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["39674DC03AE136CF"]
+			entity_vis_size: 1.0f
+			id: "3280261221D57614"
+			tasks: [{
+				id: "291311BC1B0807F9"
+				item: { components: { "enigmaticlegacyplus:general_boolean": 1b }, count: 1, id: "enigmaticlegacyplus:etherium_core" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["67F8922E4579FA8C"]
+			entity_vis_size: 1.0f
+			id: "2DAE042CA61B0B72"
+			tasks: [{
+				id: "6A8DC732A7CAEE9F"
+				item: { count: 1, id: "milf:soul_of_the_helpless" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -5.5d
 		}
 	]
 }

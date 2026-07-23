@@ -228,6 +228,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('dimension.milf.crimson_veil', "Багровая Завеса")
     event.add('biome.milf.blood_wastes', "Кровавые Пустоши")
     event.add('biome.milf.crimson_mangrove_swamp', "Багровое Мангровое Болото")
+    event.add('milf.cursed_drops', "Данный предмет выпадает из мобов только если на вас действует <blood>проклятое кольцо</blood>")
 
     //#region fix forbidden_arcanus langs
     event.add("block.forbidden_arcanus.clibano_center", "Клибан")

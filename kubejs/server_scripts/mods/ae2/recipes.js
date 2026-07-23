@@ -50,5 +50,23 @@ ServerEvents.recipes(event => {
         `minecraft:${element}_ingot`,
         `modern_industrialization:${element}_plate`
     )
-    });
+    })
+})
+
+KubeJSTweaks.beforeRecipes(event => {
+
+    const disableByRecipeID = [
+        "ae2:smelting/silicon_from_certus_quartz_dust",
+        "extendedae:smelting/quartz_blend",
+        "ae2:blasting/silicon_from_certus_quartz_dust",
+        "extendedae:blasting/quartz_blend",
+
+        "spectrum:mod_integration/ae2/cinderhearth/silicon",
+        "spectrum:mod_integration/ae2/cinderhearth/silicon_from_rock_crystal"
+    ]
+
+    disableByRecipeID.forEach(id => {
+        event.disable(id)
+    })
+
 })

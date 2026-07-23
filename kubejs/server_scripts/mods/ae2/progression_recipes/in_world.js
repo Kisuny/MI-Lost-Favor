@@ -17,7 +17,7 @@ const aeInWorldRecipe = (event, args) => {
     }
     args.inputItems.forEach((input) => {recipe.ingredients.push(Object.assign({},input[0], {count:input[1] || 1}))})
     if(!args.compatOff){
-        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mixer",
+        miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:mixer",
             inputItems:args.inputItems,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]],
             inputFluids:[[args.inputFluids[0][0], 1000, 0]]

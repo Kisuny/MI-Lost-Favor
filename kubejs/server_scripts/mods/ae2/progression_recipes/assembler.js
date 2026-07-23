@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     //#region helper functions
     function ae_item_cell (cellComponent, output, token, housing) {
         housing = housing || "ae2:item_cell_housing"
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
 
     function ae_fluid_cell (cellComponent, output, token, housing) {
         housing = housing || "ae2:fluid_cell_housing"
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_cell_component (cellComponent, upgradeMaterial, processor, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_processor (printedCircuit, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_core (coreMaterial, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_card (base, upgradeMaterial, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
     }
 
     function cell_upgrade (baseCell, nextCellComponent, upgradeMaterial, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_crafting_storage (cellComponent, wireMaterial, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_crafting_storage_upgrade (cellComponent, craftingStorage, wireMaterial, output, token) {
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 16,
             time: 200,
             machine: "modern_industrialization:assembler",
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
     }
 
     function ae_assembler_knife_reversable_recipe(item1, item2){
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 8,
             time: 60,
             machine: "modern_industrialization:assembler",
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
             removeRecipe: true
         });
         
-        miMachineCraft(event, {
+        miMachineRecipe(event, {
             energy: 8,
             time: 60,
             machine: "modern_industrialization:assembler",
@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
     // #endregion
 
     // #region cell housings
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -368,7 +368,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -404,7 +404,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -422,7 +422,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -440,7 +440,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -470,7 +470,7 @@ ServerEvents.recipes(event => {
     ae_card("ae2:basic_card", "minecraft:magma_block", 'ae2:void_card', T1_TOKEN)
     ae_card("ae2:basic_card", "minecraft:crafting_table", 'ae2:crafting_card', T1_TOKEN)
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -487,7 +487,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -504,7 +504,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -520,7 +520,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -538,7 +538,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -556,7 +556,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -575,7 +575,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -592,7 +592,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -609,7 +609,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -626,7 +626,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -643,7 +643,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -658,7 +658,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -676,7 +676,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -697,7 +697,7 @@ ServerEvents.recipes(event => {
 
     // #region JDT
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -714,7 +714,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -731,7 +731,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -748,7 +748,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -765,7 +765,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -781,7 +781,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T2_ENERGY,
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
@@ -814,7 +814,7 @@ ServerEvents.recipes(event => {
     ae_card("ae2:advanced_card", "ae2:fluix_crystal", 'ae2:equal_distribution_card', T2_TOKEN)
     ae_card("ae2:advanced_card", "ae2:charged_certus_quartz_crystal", 'ae2:energy_card', T2_TOKEN)
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -829,7 +829,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -844,7 +844,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -859,7 +859,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -874,7 +874,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -889,7 +889,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -904,7 +904,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -919,7 +919,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -934,7 +934,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -949,7 +949,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -964,7 +964,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -979,7 +979,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -994,7 +994,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1012,7 +1012,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1029,7 +1029,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1045,7 +1045,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1061,7 +1061,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1078,7 +1078,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1096,7 +1096,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1115,7 +1115,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1132,7 +1132,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1149,7 +1149,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1167,7 +1167,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1183,7 +1183,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1199,7 +1199,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1216,7 +1216,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1233,7 +1233,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1250,7 +1250,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1265,7 +1265,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1281,7 +1281,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1297,7 +1297,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1313,7 +1313,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1334,7 +1334,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1351,7 +1351,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1368,7 +1368,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1384,7 +1384,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1400,7 +1400,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1417,7 +1417,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1434,7 +1434,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1451,7 +1451,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1468,7 +1468,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1484,7 +1484,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1500,7 +1500,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1517,7 +1517,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T3_ENERGY,
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
@@ -1539,7 +1539,7 @@ ServerEvents.recipes(event => {
 
     ae_card("ae2:advanced_card", "ae2:matter_ball", "megacells:compression_card", T3_TOKEN)
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1556,7 +1556,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1573,7 +1573,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1589,7 +1589,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1605,7 +1605,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1620,7 +1620,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1635,7 +1635,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1650,7 +1650,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1667,7 +1667,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1684,7 +1684,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1702,7 +1702,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1717,7 +1717,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1733,7 +1733,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1749,7 +1749,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1765,7 +1765,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1781,7 +1781,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1798,7 +1798,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1814,7 +1814,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1831,7 +1831,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1848,7 +1848,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1865,7 +1865,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1883,7 +1883,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1900,7 +1900,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1919,7 +1919,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1939,7 +1939,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1960,7 +1960,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1976,7 +1976,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -1992,7 +1992,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T4_ENERGY,
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
@@ -2012,7 +2012,7 @@ ServerEvents.recipes(event => {
     // #region tier 4 recipes
     ae_processor("extendedae:concurrent_processor_print","extendedae:concurrent_processor", T4_TOKEN)
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T5_ENERGY,
         time: T5_TIME,
         machine: "modern_industrialization:assembler",
@@ -2027,7 +2027,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T5_ENERGY,
         time: T5_TIME,
         machine: "modern_industrialization:assembler",
@@ -2045,7 +2045,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T5_ENERGY,
         time: T5_TIME,
         machine: "modern_industrialization:assembler",
@@ -2065,7 +2065,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    miMachineCraft(event, {
+    miMachineRecipe(event, {
         energy: T5_ENERGY,
         time: T5_TIME,
         machine: "modern_industrialization:assembler",

@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     var tier4token = "milf:quantum_disk"
 
     function blueprint_recipe(inputs, output, bpTier) {
-        ieBlueprintCraft(event, {
+        ieBlueprintRecipe(event, {
             inputItems: inputs,
             outputItems: [[output]],
             category: bpTier,

@@ -1,4 +1,4 @@
-filename = 'SimpleRPC-4.1.2.jar'
+filename = 'SimpleRPC-4.1.4.jar'
 name = 'Simple RPC'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
@@ -19,17 +19,18 @@ x-prismlauncher-mc-versions = [
     '1.21.7',
     '1.21.8',
     '1.21.9',
-    '26.1.2'
+    '26.1.2',
+    '26.2'
 ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '[1.18.2 - 26.1.2] Simple RPC Universal 4.1.2'
+x-prismlauncher-version-number = '[1.18.2 - 26.2] Simple RPC Universal 4.1.4'
 
 [download]
-hash = 'f7ad42c0b82a9ef4af20d0023b941255e2d12a7a'
+hash = 'fe7e47214681cd724c4b8b346bb0aa11bea4e9c7'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8119384
+file-id = 8489200
 project-id = 411816

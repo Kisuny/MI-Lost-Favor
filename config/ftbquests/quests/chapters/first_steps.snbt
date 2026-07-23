@@ -780,7 +780,10 @@
 				{
 					auto: "enabled"
 					icon: {
-						id: "eternal_starlight:loot_bag"
+						components: {
+							"ftbquests:icon": "minecraft:item/black_bundle"
+						}
+						id: "ftbquests:custom_icon"
 					}
 					id: "26A2544BCF0C603E"
 					team_reward: false

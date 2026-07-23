@@ -68,7 +68,7 @@
 		{
 			id: "408EB970203A9597"
 			linked_quest: "0987D26A943A7B60"
-			x: 9.5d
+			x: 8.5d
 			y: 21.0d
 		}
 		{
@@ -132,7 +132,7 @@
 					type: "advancement"
 				}
 			]
-			x: -8.5d
+			x: -9.0d
 			y: 14.0d
 		}
 		{
@@ -158,7 +158,7 @@
 					type: "advancement"
 				}
 			]
-			x: -7.5d
+			x: -8.0d
 			y: 14.0d
 		}
 		{
@@ -850,7 +850,7 @@
 				id: "6303FFC5535427DB"
 				type: "advancement"
 			}]
-			x: -13.5d
+			x: -14.0d
 			y: 14.0d
 		}
 		{
@@ -988,7 +988,6 @@
 				"642BEF122D51B708"
 				"6854389FAE6E5634"
 				"3056F19142720FB0"
-				"0752D6DB75CA88BC"
 				"0FBB5C5541E982A6"
 				"146E3BD6BC57D833"
 			]
@@ -1034,7 +1033,10 @@
 				{
 					auto: "enabled"
 					icon: {
-						id: "born_in_chaos_v1:eternal_candy"
+						components: {
+							"ftbquests:icon": "eidolon_edoni:item/cherry_candy"
+						}
+						id: "ftbquests:custom_icon"
 					}
 					id: "16B46238FC936637"
 					team_reward: false
@@ -1398,7 +1400,7 @@
 				id: "1FB112CE9EDA34BB"
 				type: "advancement"
 			}]
-			x: -12.5d
+			x: -13.0d
 			y: 14.0d
 		}
 		{
@@ -1424,7 +1426,7 @@
 				id: "6DE5C0B61B5F7BD7"
 				type: "advancement"
 			}]
-			x: -11.5d
+			x: -12.0d
 			y: 14.0d
 		}
 		{
@@ -1450,7 +1452,7 @@
 				id: "623005CF53946C65"
 				type: "advancement"
 			}]
-			x: -10.5d
+			x: -11.0d
 			y: 14.0d
 		}
 		{
@@ -1570,58 +1572,6 @@
 			]
 			x: 0.5d
 			y: 20.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			icon: {
-				id: "born_in_chaos_v1:nightmare_mantleofthe_night_helmet"
-			}
-			id: "3E562C053D920EC9"
-			tasks: [
-				{
-					id: "0626E7AB3C436032"
-					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_helmet" }
-					type: "item"
-				}
-				{
-					id: "748713FAD4137283"
-					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate" }
-					type: "item"
-				}
-				{
-					id: "0A9241B66437345C"
-					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_leggings" }
-					type: "item"
-				}
-				{
-					id: "7FEA614C10F9C76F"
-					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_boots" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: 20.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			icon: {
-				id: "born_in_chaos_v1:spiny_shell_armor_helmet"
-			}
-			id: "197962274B3A4E4B"
-			tasks: [
-				{
-					id: "269DA6737651D427"
-					item: { count: 1, id: "born_in_chaos_v1:spiny_shell_armor_helmet" }
-					type: "item"
-				}
-				{
-					id: "31828EA7C20D95AF"
-					item: { count: 1, id: "born_in_chaos_v1:spiny_shell_armor_chestplate" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: 19.0d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -1744,37 +1694,6 @@
 		{
 			entity_vis_size: 1.0f
 			icon: {
-				id: "born_in_chaos_v1:dark_metal_armor_helmet"
-			}
-			id: "167AA4965BE76204"
-			tasks: [
-				{
-					id: "515AD78B67CEEC9F"
-					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_helmet" }
-					type: "item"
-				}
-				{
-					id: "0DAF40EC76A0A8AE"
-					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_chestplate" }
-					type: "item"
-				}
-				{
-					id: "32DE68BDE72E3F63"
-					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_leggings" }
-					type: "item"
-				}
-				{
-					id: "56429DA05740C8D9"
-					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_boots" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: 21.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			icon: {
 				id: "cataclysm:ignitium_helmet"
 			}
 			id: "38F8984A7A07B2E5"
@@ -1806,7 +1725,7 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
+			x: 7.5d
 			y: 21.0d
 		}
 		{
@@ -1827,7 +1746,7 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
+			x: 7.5d
 			y: 20.0d
 		}
 		{
@@ -2087,7 +2006,7 @@
 				item: { count: 1, id: "mythsandlegends:stony_shield" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 3.0d
 			y: 22.5d
 		}
 		{
@@ -2111,7 +2030,7 @@
 				item: { count: 1, id: "cataclysm:azure_sea_shield" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: 22.5d
 		}
 		{
@@ -2123,31 +2042,7 @@
 				item: { count: 1, id: "endermanoverhaul:corrupted_shield" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 22.5d
-		}
-		{
-			dependencies: ["309D0179B980CF6A"]
-			entity_vis_size: 1.0f
-			id: "6CB0501561F1358F"
-			tasks: [{
-				id: "5FA1537D59925EB5"
-				item: { count: 1, id: "eternal_starlight:glacite_shield" }
-				type: "item"
-			}]
 			x: 5.0d
-			y: 22.5d
-		}
-		{
-			dependencies: ["309D0179B980CF6A"]
-			entity_vis_size: 1.0f
-			id: "2EAB289A2D70B5CD"
-			tasks: [{
-				id: "3D5497D883E45F6F"
-				item: { count: 1, id: "eternal_starlight:flowglaze_shield" }
-				type: "item"
-			}]
-			x: 6.0d
 			y: 22.5d
 		}
 		{
@@ -2159,7 +2054,7 @@
 				item: { count: 1, id: "immersiveengineering:shield" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 22.5d
 		}
 		{
@@ -2198,7 +2093,7 @@
 					type: "advancement"
 				}
 			]
-			x: -9.5d
+			x: -10.0d
 			y: 14.0d
 		}
 		{
@@ -2709,18 +2604,6 @@
 			y: 27.0d
 		}
 		{
-			dependencies: ["309D0179B980CF6A"]
-			entity_vis_size: 1.0f
-			id: "08E88C970DB33574"
-			tasks: [{
-				id: "1E9F25BBC261FE0C"
-				item: { count: 1, id: "eternal_starlight:moonring_bow" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 30.5d
-		}
-		{
 			dependencies: ["002562156B0D8E9F"]
 			entity_vis_size: 1.0f
 			id: "2BAF1070D316E4A4"
@@ -3046,35 +2929,6 @@
 			}]
 			x: 7.0d
 			y: 9.5d
-		}
-		{
-			dependencies: [
-				"3BB0FE129E37B19E"
-				"5B37B11A0B0A84E6"
-			]
-			entity_vis_size: 1.0f
-			id: "0752D6DB75CA88BC"
-			tasks: [{
-				advancement: "eternal_starlight:kill_lunar_monstrosity"
-				criterion: ""
-				ftbquestsentityvis_icon: {
-					enabled: 1b
-					entity: "eternal_starlight:lunar_monstrosity"
-					idle_mode: "USE_GLOBAL"
-					offset_x: 0.0f
-					offset_y: 0.0f
-					rotation: 0.0f
-					silhouette_mode: "NONE"
-					size: 1.0f
-					spin_mode: "USE_GLOBAL"
-					use_as_quest_icon: 0b
-					walk_mode: "USE_GLOBAL"
-				}
-				id: "7F3CBD9C602CF99F"
-				type: "advancement"
-			}]
-			x: -14.5d
-			y: 14.0d
 		}
 		{
 			dependencies: [

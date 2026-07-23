@@ -412,7 +412,7 @@
 			entity_vis_size: 1.0f
 			icon: {
 				components: {
-					"ftbquests:icon": "exposure:textures/gui/sprites/toast/heads_up.png"
+					"ftbquests:icon": "forbidden_arcanus:textures/gui/sprites/icon/souls.png"
 				}
 				id: "ftbquests:custom_icon"
 			}
@@ -466,8 +466,11 @@
 			rewards: [{
 				id: "646F9FADB48BCCD2"
 				item: {
+					components: {
+						"ftbquests:missing_item": "born_in_chaos_v1:chocolate_heart"
+					}
 					count: 1
-					id: "born_in_chaos_v1:chocolate_heart"
+					id: "ftbquests:missing_item"
 				}
 				team_reward: false
 				type: "item"

@@ -729,7 +729,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 26.5d
@@ -1594,24 +1594,8 @@
 				structure: "cataclysm:amethyst_nest"
 				type: "structure"
 			}]
-			x: 7.5d
-			y: -16.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "5DF6397F5A9F548E"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
-				}
-				id: "52A56CB936C148EB"
-				structure: "born_in_chaos_v1:infernal_pumpkin"
-				type: "structure"
-			}]
-			x: 3.5d
-			y: -16.5d
+			x: 5.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]

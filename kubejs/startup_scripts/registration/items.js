@@ -88,8 +88,15 @@ createNewItem('space_hive')
 
 createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дальномер" } })
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
-createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
+
+createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
+createNewItem('mysterious_disk', { stackSize: 1, lang: { "ru_ru": "Таинственный диск" } })
+createNewItem('storage_disk', { stackSize: 1, lang: { "ru_ru": "Диск Хранения данных" } })
+createNewItem('automation_disk', { stackSize: 1, lang: {  "ru_ru": "Диск автоматизации" } })
+createNewItem('quantum_disk', { stackSize: 1, lang: { "ru_ru": "Квантовый диск" } })
+
+createNewItem('hemispherical_press_mold', { stackSize: 1 })
 
 createNewItem("meze_109", { itemType: "helmet", material: 'milf:meze', stackSize: 1, rarity: 'epic' })
 
@@ -195,17 +202,10 @@ createNewItem('old_tablet', { stackSize: 1, lang: { "en_us": "Old tablet", "ru_r
 createNewItem('disk_from_space', { stackSize: 1, lang: { "en_us": "Disk from space", "ru_ru": "Внеземной диск" } })
 createNewItem('holy_book_of_color', { texturePath: 'milf:item/color_holy_book', stackSize: 1, lang: { "en_us": "Holy book of color", "ru_ru": "Священная книга цвета" } })
 
-createNewItem('punched_card', { stackSize: 1, lang: { "en_us": "Punched card", "ru_ru": "Перфокарта" } })
-createNewItem('blank_blueprint', { stackSize: 63, lang: { "en_us": "Blank blueprint", "ru_ru": "Пустой чертеж" } })
-
-createNewItem('bioactive_coating', { stackSize: 1, lang: { "en_us": "Bioactive Coating", "ru_ru": "Биоактивное покрытие" } })
-createNewItem('thermophilic_dermis', { stackSize: 1, lang: { "en_us": "Thermophilic Dermis", "ru_ru": "Термофильный покров" } })
-createNewItem('symbiote_membrane', { stackSize: 1, lang: { "en_us": "Symbiote Membrane", "ru_ru": "Мембрана симбионта" } })
-
-createNewItem('goo_coated_blank_blueprint', { stackSize: 1, lang: { "en_us": "Goo-Coated Blank Blueprint", "ru_ru": "Пустой чертёж в слизи" } })
+createNewItem('punched_card', { stackSize: 8, lang: { "en_us": "Punched Card", "ru_ru": "Перфокарта" } })
+createNewItem('blank_blueprint', { stackSize: 63, lang: { "en_us": "Blank Blueprint", "ru_ru": "Пустой чертеж" } })
 
 createNewItem('core_hull', { lang: { "en_us": "Core hull", "ru_ru": "Основа ядра" } })
-createNewItem('core_press', { stackSize: 16, lang: { "en_us": "Core press", "ru_ru": "Пресс для ядра" } })
 
 createNewItem('cell_half', { lang: { "en_us": "Cell half", "ru_ru": "Часть ячейки" } })
 createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_ru": "Пресс для ячейки" } })
@@ -213,12 +213,7 @@ createNewItem('glyph_frame_t1', { lang: { "en_us": "Glyph Frame T1", "ru_ru": "�
 createNewItem('glyph_frame_t2', { lang: { "en_us": "Glyph Frame T2", "ru_ru": "Рамка для глифов T2" } })
 createNewItem('glyph_frame_t3', { lang: { "en_us": "Glyph Frame T3", "ru_ru": "Рамка для глифов T3" } })
 
-createNewItem('mysterious_disk', { texturePath: 'milf:item/automation_disk_t1', stackSize: 8, lang: { "en_us": "Mysterious disk", "ru_ru": "Таинственный диск" } })
-createNewItem('storage_disk', { texturePath: 'milf:item/automation_disk_t2', stackSize: 8, lang: { "en_us": "Storage disk", "ru_ru": "Диск Хранения данных" } })
-createNewItem('automation_disk', { texturePath: 'milf:item/automation_disk_t3', stackSize: 8, lang: { "en_us": "Automation disk", "ru_ru": "Диск автоматизации" } })
-createNewItem('quantum_disk', { texturePath: 'milf:item/automation_disk_t4', stackSize: 8, lang: { "en_us": "Quantum disk", "ru_ru": "Квантовый диск" } })
-
-createNewItem('blueprint_pack', { stackSize: 4, lang: { "en_us": "Blueprint pack", "ru_ru": "Набор чертежей" } })
+createNewItem('blueprint_pack', { stackSize: 1, lang: { "en_us": "Blueprint Pack", "ru_ru": "Набор чертежей" } })
 createNewItem('mysterious_blueprint', { texturePath: 'milf:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
 createNewItem('storage_blueprint', { texturePath: 'milf:item/blueprint_t2', stackSize: 1, lang: { "en_us": "Storage blueprint", "ru_ru": "Чертёж хранения" } })
 createNewItem('automation_blueprint', { texturePath: 'milf:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })

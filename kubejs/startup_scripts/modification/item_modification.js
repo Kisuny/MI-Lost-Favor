@@ -80,4 +80,12 @@ ItemEvents.modification(event => {
         )
     })
 
+    event.modify('modern_industrialization:sodium_block', item => {
+        item.modifyFood(food => {
+            food.nutrition(2)
+            food.saturation(2)
+            food.effect('minecraft:nausea', 200, 0, 1)
+        })
+    })
+
 })

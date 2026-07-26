@@ -49,12 +49,12 @@ const PIPE_ITEMS = [
     'immersiveengineering:stick_steel',
     'modern_industrialization:cadmium_rod',
     'modern_industrialization:aluminum_rod',
-    'modern_industrialization:blazegold_rod',
+    'modern_industrialization:tumbaga_rod',
     'modern_industrialization:bronze_rod',
-    'modern_industrialization:celestigem_rod',
+    'modern_industrialization:carbon_steel_rod',
     'modern_industrialization:certus_quartz_rod',
     'modern_industrialization:copper_rod',
-    'modern_industrialization:ferricore_rod',
+    'modern_industrialization:bioresistant_alloy_rod',
     'modern_industrialization:eclipse_alloy_rod',
     'modern_industrialization:gold_rod',
     'modern_industrialization:he_mox_rod',
@@ -92,4 +92,12 @@ PlayerEvents.loggedOut(event => {
     if (event.player.persistentData.gnomeCooldown) event.player.persistentData.remove("gnomeCooldown");
     if (event.player.persistentData.plushCooldown) event.player.persistentData.remove("plushCooldown");
     if (event.player.persistentData.pipeDropCooldown) event.player.persistentData.remove("pipeDropCooldown");
-});
+})
+
+ServerEvents.recipes(event => {
+    miMachineRecipe(event, {
+        energy: 109, time: 109, machine: "modern_industrialization:blast_furnace",
+        inputItems: [[{ item: "milf:meze_109" }]],
+        outputItems: [[{ item: "milf:meze_109", components: { enchantments: { levels: { "minecraft:punch": 9 } }, lore: [`{text:"Who said that headphones burn-in ain't real?"}`] } }]]
+    })
+})

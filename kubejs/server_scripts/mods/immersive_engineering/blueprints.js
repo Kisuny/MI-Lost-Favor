@@ -1,9 +1,17 @@
 //priority: 10
 const MILF_BLUEPRINTS = {
     craftingComponents: "components",
+    molds: "molds",
+
     miBasicComponents: "MI Basic Components",
     miComponents: "MI Components",
     usefulTools: "Useful Tools",
+
+    tier1AE: "Mysterious Blueprint",
+    tier2AE: "Storage Blueprint",
+    tier3AE: "Automation Blueprint",
+    tier4AE: "Quantum Blueprint",
+    tier5AE: "Divine Blueprint"
 }
 
 /**
@@ -82,6 +90,31 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "immersiveengineering:component_electronic_adv" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "immersiveengineering:slab_storage_steel" }, 1],
+            [{ "item": "modern_industrialization:steel_curved_plate" }, 8],
+            [{ "item": "modern_industrialization:steel_rod" }, 8]
+        ],
+        outputItems: [[{ "item": "milf:hemispherical_press_mold" }, 1]],
+        category: MILF_BLUEPRINTS.molds,
+        removeRecipe: true,
+    })
+
+    Ingredient.of("#milf:press_molds").itemIds.forEach(moldId => {
+        if (moldId == "milf:hemispherical_press_mold") return
+        ieBlueprintRecipe(event, {
+            inputItems: [
+                [{ "item": "modern_industrialization:steel_large_plate" }, 1],
+                [{ "item": "modern_industrialization:steel_rod" }, 4],
+                [{ "item": "immersiveengineering:wirecutter" }, 1],
+            ],
+            outputItems: [[{ "item": moldId }, 1]],
+            category: MILF_BLUEPRINTS.molds,
+            removeRecipe: true,
+        })
     })
 
 })

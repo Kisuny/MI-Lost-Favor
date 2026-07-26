@@ -92,6 +92,25 @@ ServerEvents.recipes(event => {
 
     ieShapedFluid(event, {
         pattern: [
+            "rSr",
+            "SRS",
+            "rSr"
+        ],
+        key: {
+            S: { item: "immersiveengineering:wirecoil_steel" },
+            r: { item: "modern_industrialization:rubber_sheet" },
+            R: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "modern_industrialization:molten_redstone"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_redstone" }, 4]],
+        removeRecipe: true
+    })
+
+    ieShapedFluid(event, {
+        pattern: [
             "WQW",
             "rCr",
             "SRS"
@@ -177,6 +196,38 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region milfShaped
+
+    milfShaped(event, {
+        pattern: [
+            "RLR",
+            "RRR",
+            "SFS"
+        ],
+        key: {
+            L: { tag: "c:leathers" },
+            S: { item: "modern_industrialization:steel_rod" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            F: { item: "modern_industrialization:steel_plate" }
+        },
+        outputItems: [[{ id: "immersiveengineering:conveyor_basic" }, 12]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WCW",
+            "WBW",
+            "sss"
+        ],
+        key: {
+            B: { item: "immersiveengineering:basic_engineering" },
+            C: { item: "immersiveengineering:component_electronic" },
+            W: { item: "immersiveengineering:wirecoil_redstone" },
+            s: { item: "modern_industrialization:steel_plate" }
+        },
+        outputItems: [[{ id: "immersiveengineering:machine_interface" }, 1]],
+        removeRecipe: true
+    })
 
     milfShaped(event, {
         pattern: [
@@ -446,6 +497,22 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "WQW",
+            "IRI",
+            "WQW"
+        ],
+        key: {
+            Q: { item: "immersiveengineering:wirecoil_electrum" },
+            I: { item: "immersiveengineering:wirecoil_steel" },
+            W: { item: "modern_industrialization:steel_large_plate" },
+            R: { item: "immersiveengineering:component_electronic_adv" },
+        },
+        outputItems: [[{ id: "immersiveengineering:electromagnet" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
             "QRQ",
             "WQW"
         ],
@@ -562,21 +629,6 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "WRW",
-            "RrR",
-            "WRW"
-        ],
-        key: {
-            W: { item: "immersiveengineering:wirecoil_steel" },
-            R: { item: "minecraft:redstone" },
-            r: { item: "modern_industrialization:rubber_sheet" }
-        },
-        outputItems: [[{ id: "immersiveengineering:wirecoil_redstone" }, 4]],
-        removeRecipe: true
-    })
-
-    milfShaped(event, {
-        pattern: [
             "BBB",
             "BGB",
             "BBB"
@@ -620,7 +672,7 @@ ServerEvents.recipes(event => {
             "ESC"
         ],
         key: {
-            A: { tag: "milf:accumulator" },
+            A: { tag: "milf:accumulators" },
             C: { item: "immersiveengineering:wirecoil_copper_ins" },
             E: { item: "immersiveengineering:wirecoil_electrum_ins" },
             S: { item: "ytech:leather_strips" },
@@ -721,7 +773,7 @@ ServerEvents.recipes(event => {
                 "BPB"
             ],
             key: {
-                B: { item: ["iron", "gold"].includes(material) ? `minecraft:${material}_nugget` : `modern_industrialization:${material}_nugget` },
+                B: { item: `modern_industrialization:${material}_bolt` },
                 P: { item: `modern_industrialization:${material}_plate` },
             },
             outputItems: [[{ id: `immersiveengineering:sheetmetal_${material}` }, 6]],
@@ -743,13 +795,13 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "RWR",
-            "WBW",
+            "WQW",
             "RWR"
         ],
         key: {
             W: { item: "immersiveengineering:wirecoil_redstone" },
             R: { item: "modern_industrialization:rubber_sheet" },
-            B: { item: "immersiveengineering:rs_engineering" }
+            Q: { item: "immersiveengineering:rs_engineering" }
         },
         outputItems: [[{ id: "modern_industrialization:ie_energy_input_hatch" }, 1]],
     })
@@ -804,7 +856,12 @@ ServerEvents.recipes(event => {
     })
 
     //#endregion
+
 })
+
+//=￣ω￣=
+milfElectromagnetRecipe("modern_industrialization:steel_rod", "modern_industrialization:steel_rod_magnetic", 19202)
+milfElectromagnetRecipe("modern_industrialization:cupronickel_wire", "modern_industrialization:cupronickel_wire_magnetic", 26907)
 
 
 

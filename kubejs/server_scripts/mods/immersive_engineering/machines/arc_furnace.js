@@ -161,4 +161,17 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
+    ieArcFurnaceCraft(event, {
+        inputItems: [
+            [{ "item": "extendedae:quartz_blend" }, 1],
+            [{ "item": "modern_industrialization:coke_dust" }, 2],
+        ],
+        outputItems: [
+            [{ "item": "ae2:silicon" }, 1],
+            [{ "item": "modern_industrialization:hop_graphite_dust" }, 1, 0.08]
+        ],
+        removeRecipeType: "immersiveengineering:arc_furnace",
+        compatOff: true
+    })
+
 })

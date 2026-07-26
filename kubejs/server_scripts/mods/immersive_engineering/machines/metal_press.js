@@ -115,16 +115,14 @@ ServerEvents.recipes(event => {
                 count: 1,
                 components: { "immersiveengineering:blueprint": bpTier, "minecraft:item_name": "{'text':'" + name + "','color':'" + color + "'}" }
             }
-        });
+        })
     }
 
-    aePressBlueprintRecipe("milf:mysterious_blueprint", tier1bp, '#84b9ff')
-    aePressBlueprintRecipe("milf:storage_blueprint", tier2bp, '#fff678')
-    aePressBlueprintRecipe("milf:automation_blueprint", tier3bp, '#8de8ff')
-    aePressBlueprintRecipe("milf:quantum_blueprint", tier4bp, '#c795ff')
-    //aePressBlueprintRecipe("milf:divine_blueprint", tier5bp, '#abffc0')
-
-    pressBlueprintRecipeWithInput("milf:divine_blueprint", "milf:goo_coated_blank_blueprint", tier5bp, '#abffc0', tier5bp)
+    aePressBlueprintRecipe("milf:mysterious_blueprint", MILF_BLUEPRINTS.tier1AE, '#84b9ff')
+    aePressBlueprintRecipe("milf:storage_blueprint", MILF_BLUEPRINTS.tier2AE, '#fff678')
+    aePressBlueprintRecipe("milf:automation_blueprint", MILF_BLUEPRINTS.tier3AE, '#8de8ff')
+    aePressBlueprintRecipe("milf:quantum_blueprint", MILF_BLUEPRINTS.tier4AE, '#c795ff')
+    aePressBlueprintRecipe("milf:divine_blueprint", MILF_BLUEPRINTS.tier5AE, '#abffc0')
 
     pressBlueprintRecipe("modern_industrialization:guidebook", MILF_BLUEPRINTS.usefulTools, '#ccac7c', MILF_BLUEPRINTS.usefulTools)
     pressBlueprintRecipe("modern_industrialization:analog_circuit", MILF_BLUEPRINTS.miBasicComponents, '#F06E28', MILF_BLUEPRINTS.miBasicComponents)
@@ -140,7 +138,7 @@ ServerEvents.recipes(event => {
 
     //custom stuff
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:cell_half"}, 1], "milf:cell_press", 3200);
-    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:core_press", 3200);
+    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:hemispherical_press_mold", 3200);
 
     iePressRecipe(event, {
         inputItems:[[{"tag": "minecraft:logs"}, 3]],

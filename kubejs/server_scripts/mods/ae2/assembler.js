@@ -695,110 +695,6 @@ ServerEvents.recipes(event => {
 
     // #endregion
 
-    // #region JDT
-
-    miMachineRecipe(event, {
-        energy: T2_ENERGY,
-        time: T2_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
-            [{item: "spectrum:block_placer"}, 1],
-            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
-            [{item: "ae2:logic_processor"}, 2],
-            [{item: "ae2:item_cell_housing"}, 1]
-        ],
-        outputItems: [
-            [{item: "justdirethings:blockplacert1"}, 1]
-        ],
-        token: T1_TOKEN,
-        removeRecipe: true
-    });
-
-    miMachineRecipe(event, {
-        energy: T2_ENERGY,
-        time: T2_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
-            [{item: "spectrum:block_placer"}, 1],
-            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
-            [{item: "ae2:logic_processor"}, 2],
-            [{item: "ae2:fluid_cell_housing"}, 1]
-        ],
-        outputItems: [
-            [{item: "justdirethings:fluidplacert1"}, 1]
-        ],
-        token: T1_TOKEN,
-        removeRecipe: true
-    });
-
-    miMachineRecipe(event, {
-        energy: T2_ENERGY,
-        time: T2_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
-            [{item: "modern_industrialization:steel_drill_head"}, 1],
-            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
-            [{item: "ae2:logic_processor"}, 2],
-            [{item: "ae2:item_cell_housing"}, 1]
-        ],
-        outputItems: [
-            [{item: "justdirethings:blockbreakert1"}, 1]
-        ],
-        token: T1_TOKEN,
-        removeRecipe: true
-    });
-
-    miMachineRecipe(event, {
-        energy: T2_ENERGY,
-        time: T2_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
-            [{item: "minecraft:bucket"}, 4],
-            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
-            [{item: "ae2:logic_processor"}, 2],
-            [{item: "ae2:fluid_cell_housing"}, 1]
-        ],
-        outputItems: [
-            [{item: "justdirethings:fluidcollectort1"}, 1]
-        ],
-        token: T1_TOKEN,
-        removeRecipe: true
-    });
-
-    miMachineRecipe(event, {
-        energy: T2_ENERGY,
-        time: T2_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
-            [{item: "minecraft:dropper"}, 1],
-            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
-            [{item: "ae2:logic_processor"}, 2]
-        ],
-        outputItems: [
-            [{item: "justdirethings:droppert1"}, 1]
-        ],
-        token: T1_TOKEN,
-        removeRecipe: true
-    });
-
-    miMachineRecipe(event, {
-        energy: T2_ENERGY,
-        time: T2_TIME,
-        machine: "modern_industrialization:assembler",
-        inputItems: [
-            [{item: "minecraft:observer"}, 1],
-            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
-            [{item: "ae2:logic_processor"}, 2]
-        ],
-        outputItems: [
-            [{item: "justdirethings:sensort1"}, 1]
-        ],
-        token: T1_TOKEN,
-        removeRecipe: true
-    });
-
-    // #endregion
-
     // #endregion
 
     // #region tier 2 recipes
@@ -1545,8 +1441,8 @@ ServerEvents.recipes(event => {
         machine: "modern_industrialization:assembler",
         inputItems: [
             [{item: "ae2:wireless_receiver"}, 1],
-            [{ item: "modern_industrialization:ferricore_curved_plate"}, 4],
-            [{ item: "modern_industrialization:ferricore_rod" }, 8],
+            [{ item: "modern_industrialization:bioresistant_alloy_curved_plate"}, 4],
+            [{ item: "modern_industrialization:bioresistant_alloy_rod" }, 8],
             [{item: "ae2:fluix_glass_cable"}, 4]
         ],
         outputItems: [
@@ -1563,7 +1459,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{tag: "c:plates/stainless_steel"}, 4],
             [{ item: "extended_industrialization:silver_tesla_top_load" }, 1],
-            [{ item: "modern_industrialization:ferricore_rod"}, 1],
+            [{ item: "modern_industrialization:bioresistant_alloy_rod"}, 1],
             [{item: "ae2:fluix_pearl"}, 1]
         ],
         outputItems: [

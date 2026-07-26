@@ -33,21 +33,10 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{ "item": "ae2:charged_certus_quartz_crystal" }, 1],
             [{ "tag": "c:gems/quartz" }, 1],
-            [{ "item": "minecraft:amethyst_shard" }, 1],
+            [{ "item": "oritech:fluxite" }, 2],
         ],
         outputItems:[[{id:"ae2:fluix_crystal"}]],
         inputFluids: [[{fluid : "minecraft:water"}]],
-        removeRecipe:true
-    })
-
-    aeInWorldRecipe(event,{
-        inputItems:[
-            [{ "item": "milf:quantum_blueprint" }, 1],
-            [{ "item": "extendedae:entro_shard" }, 1],
-            [{ "item": "spectrum:moonstone_core" }, 1],
-        ],
-        outputItems:[[{id:"milf:divine_blueprint"}]],
-        inputFluids: [[{fluid : "justdirethings:refined_t3_fluid_source"}]],
         removeRecipe:true
     })
 

@@ -833,7 +833,10 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["630A54A229D2838B"]
+			dependencies: [
+				"630A54A229D2838B"
+				"0637C1EEF97A3C3E"
+			]
 			entity_vis_size: 1.0f
 			id: "67E363E8E2E58D43"
 			shape: "diamond"
@@ -1186,10 +1189,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"67E363E8E2E58D43"
-				"0637C1EEF97A3C3E"
-			]
+			dependencies: ["67E363E8E2E58D43"]
 			entity_vis_size: 1.0f
 			id: "1E1B9B0A4E8D7B4C"
 			shape: "diamond"

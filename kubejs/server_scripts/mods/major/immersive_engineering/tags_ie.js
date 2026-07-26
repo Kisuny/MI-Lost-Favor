@@ -29,6 +29,8 @@ ServerEvents.tags('item', event => {
     ])
 
     event.add('c:rods/treated_wood','immersiveengineering:stick_treated')
+    event.add('immersiveengineering:shaders', [/^immersiveengineering:shader_[a-z_]+$/])
+    event.add('immersiveengineering:chutes', [/^immersiveengineering:chute_[a-z_]+$/])
 
     event.add('milf:press_molds', [
         'immersiveengineering:mold_plate',

@@ -16,8 +16,8 @@ function oritechPulverizerRecipe(event, args) {
             outputItems: args.outputItems
         })
     }
-    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
-    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item, type: args.removeRecipeType }) }
     event.custom(recipe)
 }
 
@@ -50,7 +50,7 @@ function oritechRefineryRecipe(event, args) {
         })
     }
     if (args.removeRecipe) { 
-        event.remove({ output: args.outputItems[0][0].id }) 
+        event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item }) 
         if(args.outputFluids){
             args.outputFluids.forEach(output => {
                 let fluid = Fluid.of(output[0].fluid)
@@ -58,7 +58,7 @@ function oritechRefineryRecipe(event, args) {
             })
         }
     }
-    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item, type: args.removeRecipeType }) }
     event.custom(recipe)
 }
 
@@ -80,8 +80,8 @@ function oritechCentrifugeRecipe(event, args) {
             outputItems: args.outputItems
         })
     }
-    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
-    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item, type: args.removeRecipeType }) }
     event.custom(recipe)
 }
 
@@ -96,8 +96,8 @@ function oritechDrillRecipe(event, args) {
         results: results,
         time: args.time || 100
     }
-    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
-    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].item }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].item, type: args.removeRecipeType }) }
     event.custom(recipe)
 }
 
@@ -308,27 +308,6 @@ ServerEvents.recipes(event => {
         outputFluids: [[{ fluid: "milf:silicone_modified_phenolic_resin" }, 200]],
     })
 
-    // oritechRefineryRecipe(event, {
-    //     time: 141,
-    //     inputItems: [
-    //         [{
-    //             "type": "neoforge:compound",
-    //             "amount": 1,
-    //             "children": 
-    //             [
-    //                 {
-    //                     item: "milf:ferrosilicon_dust"
-    //                 },
-    //                 {
-    //                     item: "extendedae:quartz_blend"
-    //                 }
-    //             ]}
-    //         ]
-    //     ],
-    //     inputFluids: [[{ fluid: "immersiveengineering:redstone_acid" }, 326]],
-    //     outputFluids: [[{ fluid: "modern_industrialization:hydrochloric_acid" }, 200]],
-    //     outputItems: [[{ item: "ae2:silicon" }, 1]],
-    // })
 
     oritechRefineryRecipe(event, {
         time: 141,
@@ -376,7 +355,9 @@ KubeJSTweaks.beforeRecipes(event => {
 
     const disableByRecipeID = [
         "oritech:centrifuge/carbon",
-        "oritech:centrifuge/compat/immersiveengineering/carbon_fibre_strands"
+        "oritech:centrifuge/compat/immersiveengineering/carbon_fibre_strands",
+        "oritech:plastic_sheet_from_smelting_polymer_resin",
+        "oritech:plastic_sheet_from_blasting_polymer_resin"
     ]
 
     disableByRecipeID.forEach(id => {

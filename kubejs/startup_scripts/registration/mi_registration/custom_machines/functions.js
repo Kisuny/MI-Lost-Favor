@@ -204,14 +204,33 @@ function registerBatchMIMachine(name, args){
 }
 
 function registerTieredMIMachine(name, args){
-    let recipe
+    let basicRecipeType
     MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(name)
-        args.itemsIn && (recipe = recipe.withItemInputs())
-        args.itemsOut && (recipe = recipe.withItemOutputs())
-        args.fluidsIn && (recipe = recipe.withFluidInputs())
-        args.fluidsOut && (recipe = recipe.withFluidOutputs())
+        basicRecipeType = event.register(name)
+        args.itemsIn && (basicRecipeType = basicRecipeType.withItemInputs())
+        args.itemsOut && (basicRecipeType = basicRecipeType.withItemOutputs())
+        args.fluidsIn && (basicRecipeType = basicRecipeType.withFluidInputs())
+        args.fluidsOut && (basicRecipeType = basicRecipeType.withFluidOutputs())
     })
+
+    args.tiers.forEach(tier => {        
+
+        let tierRecipe = tier.recipe
+        if (!tierRecipe) {
+            tier.recipeType = basicRecipeType
+            return
+        }
+
+        MIMachineEvents.registerRecipeTypes(event => {
+            let tierRecipeType = event.register(tier.id)
+            tierRecipe.itemsIn && (tierRecipeType = tierRecipeType.withItemInputs())
+            tierRecipe.itemsOut && (tierRecipeType = tierRecipeType.withItemOutputs())
+            tierRecipe.fluidsIn && (tierRecipeType = tierRecipeType.withFluidInputs())
+            tierRecipe.fluidsOut && (tierRecipeType = tierRecipeType.withFluidOutputs())
+            tier.recipeType = tierRecipeType
+        })
+    })
+
     MITweaksMachineEvents.registerTieredMultiblocks(event => {
         let tiersArray = []
         args.tiers.forEach(tier => {
@@ -221,10 +240,10 @@ function registerTieredMIMachine(name, args){
                 shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
             })
             shape = shape.build()
-            if (args.fromExisting) recipe = event.getRecipeType(args.fromExisting)
+            if (args.fromExisting) basicRecipeType = event.getRecipeType(args.fromExisting)
             tiersArray.push(event.createTier(
                 tier.id,
-                recipe,
+                tier.recipeType || basicRecipeType,
                 shape,
                 (workstations) => workstations.add(tier.workstationID),
                 tier.maxBaseEU || 128,
@@ -314,6 +333,7 @@ function saveJsonToPath(path, json){
 function jsonDataForMITweaksTieredMachine(machineName, mainCasing, mainOverlays, tiers){
     tiers.forEach(tier => {
         global.langCustomStuff[`custom_multiblock_tier.mi_tweaks.${tier.id}`] = Object.assign({ "en_us": tier.name || idToName(tier.id)})
+        global.langCustomStuff[`rei_categories.mi_tweaks.${tier.id}`] = Object.assign({ "en_us": tier.name || idToName(tier.id) })
     })
     jsonDataForMITweaksMachine(machineName, mainCasing, mainOverlays)
 }

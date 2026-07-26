@@ -63,17 +63,6 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "modern_industrialization:steel_curved_plate" }, 2],
-            [{ "item": "modern_industrialization:steel_nugget" }, 1],
-            [{ "item": "modern_industrialization:iron_plate" }, 1]
-        ],
-        outputItems: [[{ "item": "measurements:tape_measure" }]],
-        category: MILF_BLUEPRINTS.usefulTools,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
             [{ "item": "modern_industrialization:steel_nugget" }, 6],
             [{ "item": "modern_industrialization:steel_curved_plate" }, 1],
             [{ "item": "modern_industrialization:steel_ring" }, 1],

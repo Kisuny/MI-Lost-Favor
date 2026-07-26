@@ -32,7 +32,7 @@ MIRecipeEvents.customCondition(event => {
 
         let bedrockSampleId = oreEntry.bedrockSampleId        
 
-        event.register(`${bedrockSampleId}`,
+        event.registerWithIcon(`${bedrockSampleId}`,
             (context, recipe) => {
 
                 let blockBelow = context.level.getBlock(context.blockEntity.blockPos.below()[context.blockEntity.orientation.facingDirection.getOpposite().getName()]()).id
@@ -42,6 +42,7 @@ MIRecipeEvents.customCondition(event => {
                 
                 return false
             },
+            Item.of(`${bedrockSampleId}`),
             Text.translatable(`milf.mi_condition.quarry`, Item.getItem(bedrockSampleId).getDescription())
         )
 

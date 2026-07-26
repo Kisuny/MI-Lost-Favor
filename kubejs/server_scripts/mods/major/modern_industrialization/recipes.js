@@ -135,23 +135,6 @@ let miMachinesCompat = {
     "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
 }
 
-MIRecipeEvents.customCondition(event => {
-    event.register("milf:placer_craft_condition",
-        // condition itself, receives the machine context and the recipe that is being checked
-        (context, recipe) => {
-            if (context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")) {
-                //context.level.setBlockAndUpdate(context.getBlockEntity().getBlockPos().above(), recipe.itemOutputs.first.stack.block)
-                //console.log(context.level.getBlockEntity(context.getBlockEntity().getBlockPos().above().offset(2,0,0)).blockState.properties);
-                //console.log("something");
-                return true
-            }
-            return false
-            //return context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")
-        },
-        // description for REI-like mods
-        Text.of("Must be placed on an odd X position"));
-});
-
 ServerEvents.recipes(event => {
     event.remove({
         output: [

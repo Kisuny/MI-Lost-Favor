@@ -71,7 +71,8 @@ registerTieredMIMachine('microbial_fabricator', {
                 "a": "ae2:quartz_glass",
                 "B": "immersiveengineering:resonanz_engineering"
             },
-            workstationID: "oritech:carbon_plating_block"
+            workstationID: "oritech:carbon_plating_block",
+            recipe: { itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true }
         },
 
         {
@@ -84,11 +85,15 @@ registerTieredMIMachine('microbial_fabricator', {
                 "a": "ae2:quartz_glass",
                 "B": "immersiveengineering:resonanz_engineering"
             },
-            workstationID: "modern_industrialization:bioresistant_machine_casing"
+            workstationID: "modern_industrialization:bioresistant_machine_casing",
+            recipe: { itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true }
         }
     ],
     pBar: { x: 58, y: 33, name: 'enigma_arrow' },
     itemInputSlots: [[50, 15, 1, 1], [40, 35, 1, 1], [50, 55, 1, 1]],
+    fluidInputSlots: [[30, 15, 1, 1], [30, 55, 1, 1]],
+
     itemOutputSlots: [[80, 35, 1, 1]],
+    fluidOutputSlots: [[100, 35, 1, 1]],
     mainCasing: 'resonanz_engineering', mainOverlays: 'microbial_fabricator', frontOverlay: true, sideOverlay: true
 })

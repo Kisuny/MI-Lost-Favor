@@ -59,10 +59,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"62D84921B93F2FAE"
-				"3392F7799A810F38"
-			]
+			dependencies: ["62D84921B93F2FAE"]
 			entity_vis_size: 1.0f
 			id: "24D3487EB912CEA7"
 			shape: "rsquare"
@@ -106,10 +103,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"24D3487EB912CEA7"
-				"3CA010E8BE135BA6"
-			]
+			dependencies: ["24D3487EB912CEA7"]
 			entity_vis_size: 1.0f
 			id: "32BF1BBD35EF70BF"
 			shape: "diamond"
@@ -1476,110 +1470,6 @@
 			}]
 			x: 13.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["2D5A34C1AA29624B"]
-			entity_vis_size: 1.0f
-			id: "6629C3460CF83045"
-			shape: "diamond"
-			tasks: [{
-				id: "0495280F6380AFE3"
-				item: { count: 1, id: "justdirethings:gooblock_tier2" }
-				type: "item"
-			}]
-			x: -9.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3246CBB843309CCD"]
-			entity_vis_size: 1.0f
-			id: "5F115745F029B774"
-			shape: "diamond"
-			tasks: [{
-				id: "62E8FE2FCB8E3B78"
-				item: { count: 1, id: "milf:symbiote_membrane" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["6629C3460CF83045"]
-			entity_vis_size: 1.0f
-			id: "282BC4FCF91CF0DB"
-			shape: "pentagon"
-			tasks: [{
-				id: "4F88FA2652137DDE"
-				item: { count: 1, id: "milf:thermophilic_dermis" }
-				type: "item"
-			}]
-			x: -9.0d
-			y: 2.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "2D5A34C1AA29624B"
-			shape: "pentagon"
-			tasks: [{
-				id: "53E9369DF7BB6821"
-				item: { count: 1, id: "milf:bioactive_coating" }
-				type: "item"
-			}]
-			x: -9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3FD7BA9A0D97FAB1"]
-			entity_vis_size: 1.0f
-			id: "3392F7799A810F38"
-			shape: "rsquare"
-			tasks: [{
-				id: "35E9A7FE3FDD4DDD"
-				item: { count: 1, id: "justdirethings:refined_t3_fluid_bucket" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"6629C3460CF83045"
-				"0A7A95409C574C29"
-			]
-			entity_vis_size: 1.0f
-			id: "3FD7BA9A0D97FAB1"
-			shape: "rsquare"
-			tasks: [{
-				id: "672BCB0EED8E38D5"
-				item: { count: 1, id: "justdirethings:refined_t2_fluid_bucket" }
-				type: "item"
-			}]
-			x: -8.0d
-			y: 0.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "0A7A95409C574C29"
-			shape: "rsquare"
-			tasks: [{
-				id: "23782B02E79339AE"
-				item: { count: 1, id: "justdirethings:polymorphic_fluid_bucket" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: -3.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "3CA010E8BE135BA6"
-			shape: "pentagon"
-			tasks: [{
-				id: "5CB3BBA2F495BDBE"
-				item: { count: 1, id: "milf:goo_coated_blank_blueprint" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: 4.5d
 		}
 		{
 			dependencies: ["1957F336D5673B59"]

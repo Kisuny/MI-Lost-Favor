@@ -1043,23 +1043,6 @@
 		{
 			dependencies: [
 				"60ED2372ED3ED723"
-				"0982B1AD0DD58150"
-			]
-			dependency_requirement: "one_completed"
-			entity_vis_size: 1.0f
-			id: "4525568F559A2696"
-			shape: "diamond"
-			tasks: [{
-				id: "76B76656C48FF5B1"
-				item: { count: 1, id: "modern_industrialization:cupronickel_ingot" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"60ED2372ED3ED723"
 				"146AB5EA5C63FCB0"
 			]
 			dependency_requirement: "one_completed"
@@ -1270,20 +1253,6 @@
 			}]
 			x: 0.0d
 			y: -10.5d
-		}
-		{
-			dependencies: ["13134EE8E1631EBB"]
-			dependency_requirement: "one_completed"
-			entity_vis_size: 1.0f
-			id: "0982B1AD0DD58150"
-			shape: "diamond"
-			tasks: [{
-				id: "3959D55664012F83"
-				item: { count: 1, id: "modern_industrialization:cupronickel_dust" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: -3.5d
 		}
 		{
 			dependencies: ["13134EE8E1631EBB"]
@@ -2719,7 +2688,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "3CF51E4C7C17A283"
-				item: { count: 1, id: "yo_hooks:iron_grappling_hook" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(yo_hooks:hooks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -2807,6 +2776,154 @@
 			}]
 			x: -5.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["746C3F9FC539AE14"]
+			entity_vis_size: 1.0f
+			id: "7A663BF0F927D37D"
+			shape: "diamond"
+			tasks: [{
+				id: "5EAEE2F6FE41FD13"
+				item: { count: 1, id: "immersiveengineering:conveyor_redstone" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["144DEA3CFC2456E3"]
+			entity_vis_size: 1.0f
+			id: "746C3F9FC539AE14"
+			shape: "octagon"
+			tasks: [{
+				id: "406549F0739B2E70"
+				item: { count: 1, id: "immersiveengineering:conveyor_basic" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["746C3F9FC539AE14"]
+			entity_vis_size: 1.0f
+			id: "7F9578EF964138F7"
+			shape: "diamond"
+			tasks: [{
+				id: "34438EC5F77AE5C4"
+				item: { count: 1, id: "immersiveengineering:sorter" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["746C3F9FC539AE14"]
+			entity_vis_size: 1.0f
+			id: "4516C5AAE69F43C0"
+			shape: "heart"
+			tasks: [{
+				id: "2A99233E6F3AAD7D"
+				item: { count: 1, id: "immersiveengineering:conveyor_extract" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["746C3F9FC539AE14"]
+			entity_vis_size: 1.0f
+			id: "61125A42DB924930"
+			shape: "diamond"
+			tasks: [{
+				id: "75E8E74132907234"
+				item: { count: 1, id: "immersiveengineering:conveyor_vertical" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["746C3F9FC539AE14"]
+			entity_vis_size: 1.0f
+			id: "758884ACA22C0E9B"
+			shape: "diamond"
+			tasks: [{
+				id: "20B24DC6424DAAB0"
+				item: { count: 1, id: "immersiveengineering:conveyor_dropper" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["746C3F9FC539AE14"]
+			entity_vis_size: 1.0f
+			id: "13ED7DBE33B78919"
+			shape: "diamond"
+			tasks: [{
+				id: "394EDF1FB751E2BC"
+				item: { count: 1, id: "immersiveengineering:conveyor_splitter" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5D494B7A215617F0"
+			shape: "diamond"
+			tasks: [{
+				id: "0AB130A41E5973D2"
+				item: { count: 1, id: "immersiveengineering:item_batcher" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1E4285B3DFEA0F02"
+				"60ED2372ED3ED723"
+			]
+			entity_vis_size: 1.0f
+			id: "6C199308F820CF2A"
+			shape: "diamond"
+			tasks: [{
+				id: "7D3E417848F60DF2"
+				item: { count: 1, id: "modern_industrialization:tumbaga_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["13134EE8E1631EBB"]
+			entity_vis_size: 1.0f
+			id: "1E4285B3DFEA0F02"
+			shape: "diamond"
+			tasks: [{
+				id: "12A8E7A0B879D747"
+				item: { count: 1, id: "modern_industrialization:tumbaga_dust" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"70A0A078B94FF034"
+				"1E6BED5C5AC79D28"
+			]
+			entity_vis_size: 1.0f
+			id: "047487BFFB8421D5"
+			shape: "diamond"
+			tasks: [{
+				id: "16C922B46979DB9A"
+				item: { count: 1, id: "measurements:tape_measure" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
 		}
 	]
 }

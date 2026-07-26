@@ -1674,26 +1674,9 @@
 		}
 		{
 			dependencies: [
-				"55756CD3B1F8F89F"
-				"70A0A078B94FF034"
-			]
-			entity_vis_size: 1.0f
-			id: "047487BFFB8421D5"
-			shape: "diamond"
-			tasks: [{
-				id: "16C922B46979DB9A"
-				item: { count: 1, id: "measurements:tape_measure" }
-				type: "item"
-			}]
-			x: -10.0d
-			y: 11.0d
-		}
-		{
-			dependencies: [
 				"47A796CE47B0765B"
 				"5CFDD87F903B4D73"
 				"09B3D8B6687BF6CD"
-				"02DE0C0CEEF919B1"
 			]
 			entity_vis_size: 1.0f
 			id: "30BCF14BC4590CA0"
@@ -1874,33 +1857,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"5F5759B9A1A98472"
-				"471DDD3117695AB5"
-			]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "immersiveengineering:radiator"
-			}
-			id: "02DE0C0CEEF919B1"
-			optional: true
-			shape: "pentagon"
-			tasks: [
-				{
-					id: "44C8A2033644B0E2"
-					item: { count: 1, id: "immersiveengineering:radiator" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4B7201D3BC8E6E52"
-					type: "checkmark"
-				}
-			]
-			x: -6.5d
-			y: 15.5d
-		}
-		{
 			dependencies: ["5666EC7EBCE18EBA"]
 			entity_vis_size: 1.0f
 			id: "44F02476E0CE40E7"
@@ -2052,7 +2008,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["56E3EA39BC92CB8A"]
+			dependencies: [
+				"56E3EA39BC92CB8A"
+				"0CB3E781091E1E3C"
+			]
 			entity_vis_size: 1.0f
 			id: "0E938BA904E9C229"
 			shape: "octagon"
@@ -2157,7 +2116,6 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["20644F403A7BFBE5"]
 			entity_vis_size: 1.0f
 			id: "06F7C08ED3C81765"
 			shape: "heart"
@@ -2166,8 +2124,8 @@
 				item: { count: 1, id: "modern_industrialization:steel_drill" }
 				type: "item"
 			}]
-			x: -15.5d
-			y: 8.5d
+			x: -20.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["573624F2629A2398"]
@@ -2179,8 +2137,8 @@
 				item: { count: 1, id: "oritech:machine_speed_addon" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 3.0d
+			x: -12.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -2247,8 +2205,8 @@
 				id: "1D8EAAE825696CB6"
 				type: "checkmark"
 			}]
-			x: -14.0d
-			y: 4.0d
+			x: -12.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["573624F2629A2398"]
@@ -2260,8 +2218,8 @@
 				item: { count: 1, id: "oritech:machine_efficiency_addon" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 4.0d
+			x: -13.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["686F439E21ED2A67"]
@@ -2378,6 +2336,7 @@
 				"56E3EA39BC92CB8A"
 				"029C4BE74B27914D"
 				"6B68E1A94ACB8F0B"
+				"0CB3E781091E1E3C"
 			]
 			entity_vis_size: 1.0f
 			id: "06B1AE6512D2AC25"
@@ -2560,8 +2519,8 @@
 				item: { count: 1, id: "oritech:carbon_fibre_strands" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: 3.5d
+			x: -8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["78642404EF1EEA87"]
@@ -2586,7 +2545,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["56E3EA39BC92CB8A"]
+			dependencies: ["0CB3E781091E1E3C"]
 			entity_vis_size: 1.0f
 			id: "5E8EBE3F26E0D265"
 			shape: "heart"
@@ -2595,11 +2554,11 @@
 				item: { count: 1, id: "oritech:bio_generator_block" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 5.0d
+			x: -11.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["56E3EA39BC92CB8A"]
+			dependencies: ["0CB3E781091E1E3C"]
 			entity_vis_size: 1.0f
 			id: "5F7235457A1E3E44"
 			shape: "heart"
@@ -2608,8 +2567,8 @@
 				item: { count: 1, id: "oritech:lava_generator_block" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: 4.0d
+			x: -11.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -2918,7 +2877,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["56E3EA39BC92CB8A"]
+			dependencies: ["0CB3E781091E1E3C"]
 			entity_vis_size: 1.0f
 			id: "0850F7FA25CC04CD"
 			shape: "heart"
@@ -2927,8 +2886,8 @@
 				item: { count: 1, id: "oritech:steam_engine_block" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: 5.0d
+			x: -10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5EBF48809F0A806A"]
@@ -2955,19 +2914,6 @@
 			}]
 			x: -13.5d
 			y: 7.0d
-		}
-		{
-			dependencies: ["570E4E47D3CBC937"]
-			entity_vis_size: 1.0f
-			id: "48916FC46862AF38"
-			shape: "heart"
-			tasks: [{
-				id: "11C9EA60B466F596"
-				item: { count: 1, id: "modern_industrialization:iron_large_plate" }
-				type: "item"
-			}]
-			x: -13.0d
-			y: 13.5d
 		}
 		{
 			dependencies: ["0B19CF68ECB1A0CD"]
@@ -3101,6 +3047,90 @@
 			}]
 			x: -1.5d
 			y: 19.0d
+		}
+		{
+			dependencies: ["20644F403A7BFBE5"]
+			entity_vis_size: 1.0f
+			id: "578BB6900C39F631"
+			shape: "heart"
+			tasks: [{
+				id: "34899771ED3EE39D"
+				item: { count: 1, id: "modern_industrialization:copper_drill" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["570E4E47D3CBC937"]
+			entity_vis_size: 1.0f
+			id: "6A9746900DC46FFA"
+			shape: "heart"
+			tasks: [{
+				id: "2DC4D93F13B3CCC6"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:gears)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["56E3EA39BC92CB8A"]
+			entity_vis_size: 1.0f
+			id: "37592BF1E9F32E1C"
+			rewards: [{
+				id: "004CF30A14D4F34C"
+				item: {
+					count: 1
+					id: "milf:machine_assembler_placer"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "0DC7C80449B5D9C2"
+				item: { count: 1, id: "modern_industrialization:basic_energy_input_hatch" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["37592BF1E9F32E1C"]
+			entity_vis_size: 1.0f
+			id: "0CB3E781091E1E3C"
+			shape: "octagon"
+			tasks: [{
+				id: "153A90DDCC1ECB2D"
+				item: { count: 1, id: "modern_industrialization:machine_assembler" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "58876EFBA59C1E47"
+			tasks: [{
+				id: "71D92460211C5B33"
+				item: { count: 1, id: "modern_industrialization:carbon_steel_ingot" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2C25AEBDF41F50CC"]
+			entity_vis_size: 1.0f
+			id: "2549384BB7B79F37"
+			shape: "diamond"
+			tasks: [{
+				id: "5785A10BF5F91F14"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:press_molds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 11.0d
 		}
 	]
 }

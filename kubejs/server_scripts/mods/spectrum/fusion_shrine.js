@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
         fluid: "modern_industrialization:liquid_air",
         ingredients: [
             { "item": "eidolon_repraised:holy_symbol", count: 1 },
-            { "item": "justdirethings:celestigem", count: 18 }
+            { "item": "modern_industrialization:bioresistant_alloy_dust", count: 18 }
         ],
         result: {
             "id": "forbidden_arcanus:divine_pact",

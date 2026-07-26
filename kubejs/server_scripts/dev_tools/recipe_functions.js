@@ -27,20 +27,8 @@ function milfShaped(event, args){
         recipe.replace = args.replace
     }
     if(!args.compatOff){
-        let itemInputs = []
-        let amounts = args.pattern.join("")
-        
-        Object.entries(args.key).forEach(m =>{
-            let regex = new RegExp(m[0],'g')
-            if(args.replace && Object.keys(args.replace).includes(m[0]) && m[1].item == args.replace[m[0]].item){
-                //console.log(m[1]);
-                
-                itemInputs.push([m[1], (amounts.match(regex) || []).length, 0])
-            } else {
-                itemInputs.push([m[1], (amounts.match(regex) || []).length])
-            }
-            //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
-        })
+        let itemInputs = getItemInputsFromShaped(args)
+
         miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
             inputItems:itemInputs,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
@@ -57,6 +45,13 @@ function milfShapeless(event, args){
         category: "misc",
         ingredients: args.inputItems.map(i => Object.assign({}, i[0], i[1] > 1 ? {count: i[1]} : {})),
         result: Object.assign({}, args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+    }
+    if (!args.compatOff) {        
+        miMachineRecipe(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: args.inputItems,
+            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+        })
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
     if(args.removeRecipeType){event.remove({output: args.outputItems[0][0].id, type: args.removeRecipeType})}

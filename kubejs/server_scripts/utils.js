@@ -33,6 +33,22 @@ function milfPlaySound(/**@type {$BlockRightClickedKubeEvent_} */ event, resourc
         (player, pos, soundEvent, source, args.volume || 1, args.pitch || 1)
 }
 
+function getItemInputsFromShaped(args){
+    let itemInputs = []
+    let patternString = args.pattern.join("")
+
+    Object.entries(args.key).forEach(m => {
+        //let regex = new RegExp(m[0],"g")
+        if (args.replace && Object.keys(args.replace).includes(m[0]) && m[1].item == args.replace[m[0]].item) {
+            itemInputs.push([m[1], (patternString.split(m[0])).length - 1, 0])
+        } else {
+            itemInputs.push([m[1], (patternString.split(m[0])).length - 1])
+        }
+    })
+
+    return itemInputs
+}
+
 function getXYZFromPosCompound(posCompound){
     let x = posCompound.getDouble("x")
     let y = posCompound.getDouble("y")

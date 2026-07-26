@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         key: {
             R: { item: "modern_industrialization:steel_rod" },
             r: { item: "modern_industrialization:steel_ring" },
-            C: { item: "immersiveengineering:component_iron" }
+            C: { item: "immersiveengineering:component_steel" }
         },
         outputItems: [[{ id: "milf:mi_upgrader" }, 1]],
     })

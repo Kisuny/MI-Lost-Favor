@@ -30,12 +30,12 @@ function yTechWorkspaceRecipe(event, args){
         tool:args.tool || { tag: "c:hammers" }
     }
     if (!args.compatOff) {
-        let itemInputs = []
-        let amounts = args.pattern.map(layer => layer.join("")).join("")
-        Object.entries(args.key).forEach(m => {
-            let regex = new RegExp(m[0], 'g')
-            itemInputs.push([m[1], (amounts.match(regex) || []).length])
-        })
+        let itemInputs = getItemInputsFromShaped(args)
+        // let amounts = args.pattern.map(layer => layer.join("")).join("")
+        // Object.entries(args.key).forEach(m => {
+        //     let regex = new RegExp(m[0], 'g')
+        //     itemInputs.push([m[1], (amounts.match(regex) || []).length])
+        // })
         if(args.materialset){
             itemInputs.push(args.materialset.replaceWith)
         }
@@ -1226,42 +1226,6 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:bronze_anvil" }, 1]],
         tool: { tag: "c:hammers" },
-        removeRecipe: true
-    })
-
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W"),
-            ['   ','   ','   '].workspaceFull("I").workspaceSides("W").workspaceFront("L").workspaceCenter("c"),
-            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W")
-        ],
-        key: {
-            I: { item: "immersiveengineering:sheetmetal_steel" },
-            W: { item: "immersiveengineering:treated_wood_horizontal" },
-            L: { item: "immersiveengineering:logic_unit" },
-            c: { item: "modern_industrialization:analog_circuit" }
-        },
-        outputItems: [[{ id: "modern_industrialization:enigma_machine" }, 1]],
-        miCompatMachine:packer,
-        tool: { item: "immersiveengineering:hammer" },
-        removeRecipe: true
-    })
-
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W"),
-            ['   ','   ','   '].workspaceFull("I").workspaceSides("W").workspaceFront("L").workspaceCenter("c"),
-            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W")
-        ],
-        key: {
-            I: { item: "immersiveengineering:sheetmetal_steel" },
-            W: { item: "immersiveengineering:treated_wood_horizontal" },
-            L: { item: "immersiveengineering:logic_unit" },
-            c: { item: "immersiveengineering:component_electronic_adv" }
-        },
-        outputItems: [[{ id: "modern_industrialization:radio_transcriber" }, 1]],
-        miCompatMachine:packer,
-        tool: { item: "immersiveengineering:hammer" },
         removeRecipe: true
     })
 

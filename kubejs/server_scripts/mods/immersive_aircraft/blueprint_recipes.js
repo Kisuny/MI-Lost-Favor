@@ -100,7 +100,7 @@ ServerEvents.recipes(event =>{
         [
             [{ "item": "immersive_machinery:diamond_drill" }, 1],
             [{ "item": "modern_industrialization:netherite_nugget" }, 18],
-            [{ "item": "modern_industrialization:netherite_dust" }, 6],
+            [{ "item": "extended_industrialization:netherite_dust" }, 6],
         ],
         { "item": "immersive_machinery:netherite_drill" }, aircraftUpgrades
     );

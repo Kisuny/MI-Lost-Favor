@@ -1,7 +1,6 @@
 ServerEvents.tags('item', event => {
     let noCompat = [
         //item outputs that will not be converted
-        /.*fine_wire/,
         "modern_industrialization:diamond_tiny_dust",
         "modern_industrialization:blastproof_alloy_plate",
         "minecraft:stick",
@@ -104,7 +103,7 @@ ServerEvents.recipes(event => {
 
 
     //#region press
-    function press_mi(ingredients, result, mold, miEnergy){
+    function pressCompatRecipe(ingredients, result, mold, miEnergy){
         iePressRecipe(event, {
             inputItems: ingredients.tag ? [[{tag:ingredients.tag}, ingredients.amount]] : [[{item:ingredients.item}, ingredients.amount]],
             outputItems: [[{id:result.item}, result.amount]],
@@ -118,32 +117,53 @@ ServerEvents.recipes(event => {
     //plates
     event.forEachRecipe({ type: 'modern_industrialization:compressor', not : {output: "#milf:nocompat"}, output:"#c:plates"}, r => {
         const rjson = JSON.parse(r.json)
-        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_plate', (rjson.duration * rjson.eu))
+        pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_plate', (rjson.duration * rjson.eu * 6))
     })
-    
+
+    //curved_plates
+    event.forEachRecipe({ type: 'modern_industrialization:compressor', not: { output: "#milf:nocompat" }, output: "#c:curved_plates" }, r => {
+        const rjson = JSON.parse(r.json)
+        pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'milf:hemispherical_press_mold', (rjson.duration * rjson.eu * 6))
+    })
+
+    //rings
+    event.forEachRecipe({ type: 'modern_industrialization:compressor', not: { output: "#milf:nocompat" }, output: "#c:rings" }, r => {
+        const rjson = JSON.parse(r.json)        
+        pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'milf:hemispherical_press_mold', (rjson.duration * rjson.eu * 6))
+    })
+
     //rods
     event.forEachRecipe({ type: 'modern_industrialization:cutting_machine', not : {output: "#milf:nocompat"}, output:"#c:rods"}, r => {
         const rjson = JSON.parse(r.json)
-        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_rod', (rjson.duration * rjson.eu))
+        pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_rod', (rjson.duration * rjson.eu * 6))
     })
 
-    //wires
-    // event.forEachRecipe({ type: 'modern_industrialization:wiremill', not : {output: "#milf:nocompat"}, output:"#c:wires"}, r => {
-    //     const rjson = JSON.parse(r.json)
-    //     press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_wire', (rjson.duration * rjson.eu))
-    // })
+    //gears
+    event.forEachRecipe({ type: 'modern_industrialization:assembler', not: { output: "#milf:nocompat" }, output: "#c:gears" }, r => {
+        const rjson = JSON.parse(r.json)
+        let input = Object.assign({}, (rjson.item_inputs)[0], { amount: 1, tag: (rjson.item_inputs)[0].tag.replace("plates", "large_plates")})
+        
+        let output = Object.assign({}, (rjson.item_outputs)[0], { amount: 1 })
+        pressCompatRecipe(input, output, 'immersiveengineering:mold_gear', (rjson.duration * rjson.eu * 12))
+    })
+
+    // wires
+    event.forEachRecipe({ type: 'modern_industrialization:wiremill', not : {output: "#milf:nocompat"}, output:"#c:wires"}, r => {
+        const rjson = JSON.parse(r.json)        
+        event.remove({ output: (rjson.item_outputs)[0].item, type: "immersiveengineering:metal_press" })
+    })
     //unpacker
     event.forEachRecipe({ type: 'modern_industrialization:unpacker', not : {output: "#milf:nocompat"}, output:["#c:ingots","#c:nuggets","#c:tiny_dusts"]}, r => {
         const rjson = JSON.parse(r.json)
-        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_unpacking', (rjson.duration * rjson.eu))
+        pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_unpacking', (rjson.duration * rjson.eu * 6))
     })
     //packer
     event.forEachRecipe({ type: 'modern_industrialization:packer', not : {output: "#milf:nocompat"}}, r => {
         const rjson = JSON.parse(r.json)
         if(!Array.isArray(rjson.item_inputs)){rjson.item_inputs = [rjson.item_inputs]}
         if(!Array.isArray(rjson.item_outputs)){rjson.item_outputs = [rjson.item_outputs]}
-        if(rjson.item_inputs[0].amount == 9){press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_packing_9', (rjson.duration * rjson.eu))}
-        else if(!(rjson.item_inputs)[1]){press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_packing_4', (rjson.duration * rjson.eu))}
+        if (rjson.item_inputs[0].amount == 9) { pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_packing_9', (rjson.duration * rjson.eu * 6))}
+        else if (!(rjson.item_inputs)[1]) { pressCompatRecipe((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_packing_4', (rjson.duration * rjson.eu * 6))}
     })    
     //#endregion
 })

@@ -17,17 +17,7 @@ const yTechShaped = (/**@type {$RecipesKubeEvent}*/ event, args) => {
         result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
     }
     if (!args.compatOff) {
-        let itemInputs = []
-        let amounts = args.pattern.join("")
-        Object.entries(args.key).forEach(m => {
-            let regex = new RegExp(m[0], 'g')
-            if (m[0] == "#" || m[0] == "@") {
-                if (m[1].tag == "c:hammers" || m[1].tag == "c:saws" || m[1].tag == "c:files") return                
-                itemInputs.push([m[1], (amounts.match(regex) || []).length, 0])
-                return
-            }
-            itemInputs.push([m[1], (amounts.match(regex) || []).length])
-        })
+        let itemInputs = getItemInputsFromYTechShaped(args)
         miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:assembler",
             inputItems: itemInputs,
@@ -37,6 +27,22 @@ const yTechShaped = (/**@type {$RecipesKubeEvent}*/ event, args) => {
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
     event.custom(recipe)
+}
+
+function getItemInputsFromYTechShaped(args) {
+    let itemInputs = []
+    let patternString = args.pattern.join("")
+
+    Object.entries(args.key).forEach(m => {
+        //let regex = new RegExp(m[0],"g")
+        if (m[0] == "#" || m[0] == "@") {
+            if (m[1].tag == "c:hammers" || m[1].tag == "c:saws" || m[1].tag == "c:files") return
+            itemInputs.push([m[1], (patternString.split(m[0])).length - 1, 0])
+            return
+        } 
+        itemInputs.push([m[1], (patternString.split(m[0])).length - 1])
+    })
+    return itemInputs
 }
 
 function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args) {
@@ -423,6 +429,21 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:wild_horse" }, 1]],
         removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " TF",
+            " ST",
+            "S  "
+        ],
+        key: {
+            F: { item: "ytech:sharp_flint" },
+            T: { item: "ytech:grass_twine" },
+            S: { tag: "milf:sticks" }
+        },
+        outputItems: [[{ id: "ytech:flint_spear" }, 1]],
+        removeRecipe: true
     })
 
     miMachineRecipe(event, {

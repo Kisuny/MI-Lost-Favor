@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             "occultism:raw_silver",
         ]
     })
-    event.replaceOutput({ output: 'occultism:netherite_dust' }, 'occultism:netherite_dust', 'modern_industrialization:netherite_dust')
+    event.replaceOutput({ output: 'occultism:netherite_dust' }, 'occultism:netherite_dust', 'extended_industrialization:netherite_dust')
     customAlchemicalForgeCraft(event, {
         affinities: [
             "toxony:moon",
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ["occultism:chalk_light_blue_impure", "modern_industrialization:aluminum_dust"],
         ["occultism:chalk_black_impure", "modern_industrialization:steel_dust"],
         ["occultism:chalk_magenta_impure", "modern_industrialization:titanium_dust"],
-        ["occultism:chalk_cyan_impure", "modern_industrialization:celestigem_dust"],
+        ["occultism:chalk_cyan_impure", "modern_industrialization:carbon_steel_dust"],
     ]
 
 

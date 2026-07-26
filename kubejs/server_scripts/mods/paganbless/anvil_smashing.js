@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:ingots/aluminum" }, 2],
         ],
         [{ "id": 'hangglider:glider_framework' }, 1]
-    );
+    )
 
 
     anvil_recipe(
@@ -51,8 +51,8 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/iron" }, 4],
         ],
-        [{ "id": 'moderndynamics:inhibitor' }, 4]
-    );
+        [{ "id": 'moderndynamics:inhibitor' }, 2]
+    )
 
     anvil_recipe(
         [
@@ -60,8 +60,8 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/lead" }, 4],
         ],
-        [{ "id": 'moderndynamics:attractor' }, 2]
-    );
+        [{ "id": 'moderndynamics:attractor' }, 1]
+    )
 
     anvil_recipe(
         [
@@ -69,8 +69,8 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/redstone" }, 4],
         ],
-        [{ "id": 'moderndynamics:extractor' }, 2]
-    );
+        [{ "id": 'moderndynamics:extractor' }, 1]
+    )
 
     anvil_recipe(
         [
@@ -78,44 +78,26 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/bronze" }, 4],
         ],
-        [{ "id": 'moderndynamics:filter' }, 2]
-    );
+        [{ "id": 'moderndynamics:filter' }, 1]
+    )
 
     anvil_recipe(
         [
-            [{ "item": "minecraft:glass" }, 2],
-            [{ "item": "modern_industrialization:copper_plate" }, 4]
+            [{ "item": "milf:bronze_glass" }, 4],
+            [{ "item": "modern_industrialization:copper_plate" }, 6],
         ],
-        [{ "id": 'moderndynamics:fluid_pipe' }, 16]
+        [{ "id": 'moderndynamics:fluid_pipe' }, 8]
 
-    );
+    )
 
     anvil_recipe(
         [
-            [{ "item": "minecraft:glass" }, 2],
-            [{ "item": "modern_industrialization:iron_plate" }, 4]
+            [{ "item": "milf:bronze_glass" }, 2],
+            [{ "item": "modern_industrialization:iron_large_plate" }, 2],
         ],
-        [{ "id": 'moderndynamics:item_pipe' }, 16]
+        [{ "id": 'moderndynamics:item_pipe' }, 6]
 
-    );
-
-    anvil_recipe(
-        [
-            [{ "item": "yo_hooks:iron_grappling_hook" }, 1],
-            [{ "item": "modern_industrialization:gold_plate" }, 3]
-        ],
-        [{ "id": 'yo_hooks:gold_grappling_hook' }, 1]
-
-    );
-
-    anvil_recipe(
-        [
-            [{ "item": "yo_hooks:gold_grappling_hook" }, 1],
-            [{ "item": "modern_industrialization:diamond_plate" }, 3]
-        ],
-        [{ "id": 'yo_hooks:diamond_grappling_hook' }, 1]
-
-    );
+    )
 
     //#region mi stuff
 
@@ -136,9 +118,9 @@ ServerEvents.recipes(event => {
     casingMIRecipe('titanium', 'modern_industrialization:solid_titanium_machine_casing')
     casingMIRecipe('stainless_steel', 'modern_industrialization:clean_stainless_steel_machine_casing')
     casingMIRecipe('aluminum', 'modern_industrialization:frostproof_machine_casing')
-    casingMIRecipe('ferricore')
-    casingMIRecipe('blazegold');
-    casingMIRecipe('celestigem');
+    casingMIRecipe('bioresistant_alloy')
+    casingMIRecipe('tumbaga')
+    casingMIRecipe('carbon_steel')
 
     anvil_recipe(
         [

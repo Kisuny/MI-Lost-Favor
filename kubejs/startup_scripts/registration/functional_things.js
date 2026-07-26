@@ -346,6 +346,12 @@ const multiblocksForPlacers = [
         langBoxes: {"en_us": `Desalter ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} опреснителя`},
         mod:"modern_industrialization"
     },
+    {
+        name: ['machine_assembler', 'machine_assembler'],
+        langPlacers: { "en_us": `Machine Assembler ${en_usPlacer}` },
+        langBoxes: { "en_us": `Machine Assembler ${en_usEmptyBox}` },
+        mod: "modern_industrialization"
+    },
     //#endregion
 
     //#region mi_tweaks
@@ -361,27 +367,27 @@ const multiblocksForPlacers = [
         langBoxes: { "en_us": `Advanced Steam Alloy Smelter ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} улучшенной паровой плавильни сплавов`},
         mod:"mi_tweaks"
     },
-    {
-        name:"bioactive_chamber",
-        langPlacers: { "en_us": `Bioactive Chamber ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} биоактивной камеры`},
-        langBoxes: { "en_us": `Bioactive Chamber ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} биоактивной камеры`},
-        mod:"mi_tweaks",
-        activeMachineShape: 0
-    },
-    {
-        name:["bioactive_chamber_shape_1", "bioactive_chamber"],
-        langPlacers: { "en_us": `Bioactive Chamber T2 ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} биоактивной камеры T2`},
-        langBoxes: { "en_us": `Bioactive Chamber T2 ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} биоактивной камеры T2`},
-        mod:"mi_tweaks",
-        activeMachineShape: 1
-    },
-    {
-        name:["bioactive_chamber_shape_2", "bioactive_chamber"],
-        langPlacers: { "en_us": `Bioactive Chamber T3 ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} биоактивной камеры T3`},
-        langBoxes: { "en_us": `Bioactive Chamber T3 ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} биоактивной камеры T3`},
-        mod:"mi_tweaks",
-        activeMachineShape: 2
-    },
+    // {
+    //     name:"bioactive_chamber",
+    //     langPlacers: { "en_us": `Bioactive Chamber ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} биоактивной камеры`},
+    //     langBoxes: { "en_us": `Bioactive Chamber ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} биоактивной камеры`},
+    //     mod:"mi_tweaks",
+    //     activeMachineShape: 0
+    // },
+    // {
+    //     name:["bioactive_chamber_shape_1", "bioactive_chamber"],
+    //     langPlacers: { "en_us": `Bioactive Chamber T2 ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} биоактивной камеры T2`},
+    //     langBoxes: { "en_us": `Bioactive Chamber T2 ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} биоактивной камеры T2`},
+    //     mod:"mi_tweaks",
+    //     activeMachineShape: 1
+    // },
+    // {
+    //     name:["bioactive_chamber_shape_2", "bioactive_chamber"],
+    //     langPlacers: { "en_us": `Bioactive Chamber T3 ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} биоактивной камеры T3`},
+    //     langBoxes: { "en_us": `Bioactive Chamber T3 ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} биоактивной камеры T3`},
+    //     mod:"mi_tweaks",
+    //     activeMachineShape: 2
+    // },
     {
         name:"advanced_large_steam_furnace",
         langPlacers: { "en_us": `Advanced Large Steam Furnace ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} улучшенной большой паровой печи`},
@@ -546,7 +552,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_iron_ore",
             normal: "minecraft:iron_ore",
             raw: "minecraft:raw_iron"
-        }
+        },
+        oreTier: 0
     },
     { 
         lang: { "en_us": `Gold ${en_usOreSample}`, "ru_ru": `Золотой ${ru_ruOreSample}` }, 
@@ -555,7 +562,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_gold_ore",
             normal: "minecraft:gold_ore",
             raw: "minecraft:raw_gold"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Diamond ${en_usOreSample}`, "ru_ru": `Алмазный ${ru_ruOreSample}` }, 
@@ -564,7 +572,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_diamond_ore",
             normal: "minecraft:diamond_ore",
             raw: "modern_industrialization:diamond_crushed_dust"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Copper ${en_usOreSample}`, "ru_ru": `Медный ${ru_ruOreSample}` }, 
@@ -573,7 +582,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_copper_ore",
             normal: "minecraft:copper_ore",
             raw: "minecraft:raw_copper"
-        }
+        },
+        oreTier: 0
     },
     { 
         lang: { "en_us": `Coal ${en_usOreSample}`, "ru_ru": `Угольный ${ru_ruOreSample}` }, 
@@ -582,7 +592,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_coal_ore",
             normal: "minecraft:coal_ore",
             raw: "modern_industrialization:coal_crushed_dust"
-        }
+        },
+        oreTier: 0
     },
     { 
         lang: { "en_us": `Emerald ${en_usOreSample}`, "ru_ru": `Изумрудный ${ru_ruOreSample}` }, 
@@ -591,7 +602,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_emerald_ore",
             normal: "minecraft:emerald_ore",
             raw: "modern_industrialization:emerald_crushed_dust"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Lapis ${en_usOreSample}`, "ru_ru": `Лазуритовый ${ru_ruOreSample}` }, 
@@ -600,7 +612,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_lapis_ore",
             normal: "minecraft:lapis_ore",
             raw: "modern_industrialization:lapis_crushed_dust"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Redstone ${en_usOreSample}`, "ru_ru": `Редстоуновый ${ru_ruOreSample}` }, 
@@ -609,7 +622,8 @@ const samplesData = [
             deepslate: "minecraft:deepslate_redstone_ore",
             normal: "minecraft:redstone_ore",
             raw: "modern_industrialization:redstone_crushed_dust"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Ancient Debris Sample`, "ru_ru": `${ru_ruOreSample} Древних Осколков` }, 
@@ -618,7 +632,8 @@ const samplesData = [
         oreData: {
             normal: "minecraft:ancient_debris",
             raw: "minecraft:netherite_scrap"
-        }
+        },
+        oreTier: 3
     },
     { 
         lang: { "en_us": `Nether Quartz ${en_usOreSample}`, "ru_ru": `Кварцевый ${ru_ruOreSample}` }, 
@@ -626,7 +641,8 @@ const samplesData = [
         oreData: {
             normal: "minecraft:nether_quartz_ore",
             raw: "modern_industrialization:quartz_crushed_dust"
-        }
+        },
+        oreTier: 2
     },
     { 
         lang: { "en_us": `Nether Gold ${en_usOreSample}`, "ru_ru": `${ru_ruOreSample} Адского Золота` }, 
@@ -634,7 +650,8 @@ const samplesData = [
         oreData: {
             normal: "minecraft:nether_gold_ore",
             raw: "milf:crushed_gold"
-        }
+        },
+        oreTier: 2
     },
     { 
         lang: { "en_us": `Antimony ${en_usOreSample}`, "ru_ru": `${ru_ruOreSample} Сурьмы` }, 
@@ -643,7 +660,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_antimony_ore",
             normal: "modern_industrialization:antimony_ore",
             raw: "modern_industrialization:raw_antimony"
-        }
+        },
+        oreTier: 2
     },
     { 
         lang: { "en_us": `Bauxite ${en_usOreSample}`, "ru_ru": `Бокситовый ${ru_ruOreSample}` }, 
@@ -652,7 +670,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_bauxite_ore",
             normal: "modern_industrialization:bauxite_ore",
             raw: "modern_industrialization:bauxite_crushed_dust"
-        }
+        },
+        oreTier: 2
     },
     { 
         lang: { "en_us": `Iridium ${en_usOreSample}`, "ru_ru": `Иридиевый ${ru_ruOreSample}` }, 
@@ -660,7 +679,8 @@ const samplesData = [
         oreData: {
             normal: "modern_industrialization:iridium_ore",
             raw: "modern_industrialization:raw_iridium"
-        }
+        },
+        oreTier: 3
     },
     { 
         lang: { "en_us": `Lead ${en_usOreSample}`, "ru_ru": `Свинцовый ${ru_ruOreSample}` }, 
@@ -669,7 +689,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_lead_ore",
             normal: "modern_industrialization:lead_ore",
             raw: "modern_industrialization:raw_lead"
-        }
+        },
+        oreTier: 0
     },
     { 
         lang: { "en_us": `Monazite ${en_usOreSample}`, "ru_ru": `Монацитовый ${ru_ruOreSample}` }, 
@@ -678,7 +699,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_monazite_ore",
             normal: "modern_industrialization:monazite_ore",
             raw: "modern_industrialization:monazite_crushed_dust"
-        }
+        },
+        oreTier: 3
     },
     {
         lang: { "en_us": `Nickel ${en_usOreSample}`, "ru_ru": `Никельевый ${ru_ruOreSample}` }, 
@@ -687,7 +709,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_nickel_ore",
             normal: "modern_industrialization:nickel_ore",
             raw: "modern_industrialization:raw_nickel"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Platinum ${en_usOreSample}`, "ru_ru": `Платиновый ${ru_ruOreSample}` }, 
@@ -695,16 +718,18 @@ const samplesData = [
         oreData: {
             normal: "modern_industrialization:platinum_ore",
             raw: "modern_industrialization:raw_platinum"
-        }
+        },
+        oreTier: 3
      },
     { 
         lang: { "en_us": `Salt ${en_usOreSample}`, "ru_ru": `${ru_ruOreSample} Соли` }, 
         itemName: "salt", directory: "modern_industrialization", bedrockTexture: "modern_industrialization:block/salt_block",
         oreData: {
-            deepslate: "expandeddelight:deepslate_salt_ore",
+            deepslate: "modern_industrialization:deepslate_salt_ore",
             normal: "modern_industrialization:salt_ore",
             raw: "modern_industrialization:salt_crushed_dust"
-        }
+        },
+        oreTier: 1
     },
     { 
         lang: { "en_us": `Quartz ${en_usOreSample}`, "ru_ru": `Кварцевый ${ru_ruOreSample}` }, 
@@ -712,7 +737,8 @@ const samplesData = [
         oreData: {
             normal: "modern_industrialization:quartz_ore",
             raw: "modern_industrialization:quartz_crushed_dust"
-        }
+        },
+        oreTier: 1
     },
     {
         lang: { "en_us": `Tin ${en_usOreSample}`, "ru_ru": `Оловянный ${ru_ruOreSample}` }, 
@@ -721,7 +747,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_tin_ore",
             normal: "modern_industrialization:tin_ore",
             raw: "modern_industrialization:raw_tin"
-        }
+        },
+        oreTier: 0
     },
     {
         lang: { "en_us": `Titanium ${en_usOreSample}`, "ru_ru": `Титановый ${ru_ruOreSample}` }, 
@@ -729,7 +756,8 @@ const samplesData = [
         oreData: {
             normal: "modern_industrialization:titanium_ore",
             raw: "modern_industrialization:raw_titanium"
-        }
+        },
+        oreTier: 3
     },
     { 
         lang: { "en_us": `Tungsten ${en_usOreSample}`, "ru_ru": `Вольфрамовый ${ru_ruOreSample}` }, 
@@ -738,7 +766,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_tungsten_ore",
             normal: "modern_industrialization:tungsten_ore",
             raw: "modern_industrialization:raw_tungsten"
-        }
+        },
+        oreTier: 3
     },
     { 
         lang: { "en_us": `Uranium ${en_usOreSample}`, "ru_ru": `Урановый ${ru_ruOreSample}` }, 
@@ -747,7 +776,8 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_uranium_ore",
             normal: "modern_industrialization:uranium_ore",
             raw: "modern_industrialization:raw_uranium"
-        }
+        },
+        oreTier: 2
     }
 ]
 

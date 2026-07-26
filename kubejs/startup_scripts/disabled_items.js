@@ -26,6 +26,7 @@ global.disabledItems = [
 
     new DisabledItemBuilder(/moderndynamics:\w+_cable/).build(),
 
+    new DisabledItemBuilder("immersiveengineering:mold_wire").build(),
     new DisabledItemBuilder(/immersiveengineering:wire_\w+/).build(),
     new DisabledItemBuilder(/immersiveengineering:stick_(?!treated\b)(\w+)\b/)
         .replaceWithRegexMapping(material => `modern_industrialization:${material}_rod`).build(),

@@ -1,7 +1,5 @@
-// Registration new materials
 MIMaterialEvents.addMaterials(event => {
 
-    // Constantan
     event.createMaterial('Constantan', 'constantan', 0xf1885b,
         builder => {
         builder
@@ -10,7 +8,6 @@ MIMaterialEvents.addMaterials(event => {
             .defaultRecipes()
     })
 
-    // Saltpeter
     event.createMaterial('Saltpeter', 'saltpeter', 0x9C9E9E,
         builder => {
         builder
@@ -19,7 +16,6 @@ MIMaterialEvents.addMaterials(event => {
             .defaultRecipes()
     })
 
-    // HOP Graphite
     event.createMaterial('HOP Graphite', 'hop_graphite', 0x111212,
         builder => {
         builder
@@ -28,23 +24,21 @@ MIMaterialEvents.addMaterials(event => {
             .defaultRecipes()
     })
 
-    // Plastic
     event.createMaterial('Plastic', 'plastic', 0x9A9F9C,
         builder => {
         builder
             .materialSet('dull')
-            .addParts('plate', 'dust', 'tiny_dust')
+            .addParts('plate', "large_plate", 'dust', 'tiny_dust')
             .defaultRecipes()
     })
 
-    // Netherite
     event.createMaterial('Netherite', 'netherite', 0x5a5455, builder => {
-        builder.addParts('nugget', 'dust', 'tiny_dust', 'rod')
+        builder.addParts('nugget', 'rod', 'tiny_dust')
             .addExternalPart('ingot', 'minecraft:netherite_ingot')
+            .addExternalPart('dust', 'extended_industrialization:netherite_dust')
             .defaultRecipes()
     })
 
-    // Certus quartz
     event.createMaterial('Certus quartz', 'certus_quartz', 0xd5f4f7,
         builder => {
         builder
@@ -56,44 +50,31 @@ MIMaterialEvents.addMaterials(event => {
             .defaultRecipes()
     })
 
-    event.createMaterial('Ferricore', 'ferricore', 0x54ccc2,
+    event.createMaterial('Bioresistant Alloy', 'bioresistant_alloy', 0x54ccc2,
         builder => {
         builder
             .materialSet('shiny')
-            .addExternalPart('ingot', 'justdirethings:ferricore_ingot')
-            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .addParts("ingot", 'rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", 'tiny_dust')
             .machineCasing(8.0)
             .specialCasing("Bioresistant Machine Casing", "bioresistant_machine_casing", 8.0)
             .defaultRecipes()
     })
 
-    event.createMaterial('Blazegold', 'blazegold', 0xb0501c,
+    event.createMaterial('Tumbaga', 'tumbaga', 0xb0501c,
         builder => {
         builder
             .materialSet('shiny')
-            .addExternalPart('ingot', 'justdirethings:blazegold_ingot')
-            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .addParts("ingot", 'rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", 'tiny_dust')
             .machineCasing(8.0)
             .specialCasing("Bioactive Machine Casing", "bioactive_machine_casing", 8.0)
             .defaultRecipes()
     })
 
-    event.createMaterial('Eclipse alloy', 'eclipse_alloy', 0x15203b,
+    event.createMaterial('Carbon Steel', 'carbon_steel', 0x15203b,
         builder => {
         builder
             .materialSet('shiny')
-            .addExternalPart('ingot', 'justdirethings:eclipsealloy_ingot')
-            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
-            .machineCasing(8.0)
-            .defaultRecipes()
-    })
-
-    event.createMaterial('Celestigem', 'celestigem', 0x54ccc2,
-        builder => {
-        builder
-            .materialSet('shiny')
-            .addExternalPart('ingot', 'justdirethings:celestigem')
-            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .addParts("ingot", 'rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", 'tiny_dust')
             .machineCasing(8.0)
             .specialCasing("Biointensive Machine Casing", "biointensive_machine_casing", 8.0)
             .defaultRecipes()

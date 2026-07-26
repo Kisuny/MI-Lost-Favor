@@ -1,51 +1,50 @@
-// Modifying materials
-
-// Uranium
 MIMaterialEvents.modifyMaterial('uranium', event => {
-    event.builder
-        .addParts('plate')
+    event.builder.addParts('plate', "bolt")
 })
 
-// Steel
 MIMaterialEvents.modifyMaterial('steel', event => {
-    event.builder
-        .addParts('wire')
+    event.builder.addParts('wire')
 })
 
-// Lead
 MIMaterialEvents.modifyMaterial('lead', event => {
-    event.builder
-        .addParts('wire', 'bolt', 'rod')
+    event.builder.addParts('wire', 'bolt', 'rod')
 })
 
-// Invar
 MIMaterialEvents.modifyMaterial('invar', event => {
     event.builder
         .pipeCasing(8.0)
         .addParts("curved_plate")
 })
 
-// Silver
 MIMaterialEvents.modifyMaterial('silver', event => {
-    event.builder
-        .addParts("rod")
+    event.builder.addParts("rod", "bolt")
 })
 
-// Nickel
 MIMaterialEvents.modifyMaterial('nickel', event => {
-    event.builder
-        .addParts("rod")
+    event.builder.addParts("rod", "bolt")
 })
 
-// constantan
 MIMaterialEvents.modifyMaterial('constantan', event => {
-    event.builder
-        .addParts("rod")
+    event.builder.addParts("rod", "bolt")
 })
 
-// Electrum
 MIMaterialEvents.modifyMaterial('electrum', event => {
-    event.builder
-        .addParts("rod")
+    event.builder.addParts("rod", "bolt")
+})
+
+MIMaterialEvents.modifyMaterial('tin', event => {
+    event.builder.addParts("large_plate")
+})
+
+MIMaterialEvents.modifyMaterial('gold', event => {
+    event.builder.addParts("large_plate")
+})
+
+MIMaterialEvents.modifyMaterial('copper', event => {
+    event.builder.addParts("large_plate")
+})
+
+MIMaterialEvents.modifyMaterial('bronze', event => {
+    event.builder.addParts("large_plate")
 })
 

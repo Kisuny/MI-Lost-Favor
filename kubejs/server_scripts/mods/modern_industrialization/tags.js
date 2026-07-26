@@ -5,10 +5,9 @@ ServerEvents.tags('item', event => {
         //'modern_industrialization:steel_hammer', 
         'modern_industrialization:diamond_hammer', 
         //'modern_industrialization:iron_hammer',
-        "extended_industrialization:netherite_dust"
     ])
 
-    const modIngredient = Ingredient.of(`@modern_industrialization`)
+    const modIngredient = Ingredient.of(`@modern_industrialization | @extended_industrialization`)
     const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot"].join("|")
 
     const pattern = $patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)

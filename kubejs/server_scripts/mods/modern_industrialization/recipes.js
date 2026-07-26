@@ -65,9 +65,7 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
             event.remove({ output: out[0].item })
         })
         fluidOutputs.forEach(output => {
-            let fluid = Fluid.of(output[0].fluid)
-            console.log(fluid);
-            
+            let fluid = Fluid.of(output[0].fluid)            
             event.remove({ output: fluid })
         })
     }
@@ -168,6 +166,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:packer' })
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
 
+    event.remove({ type: 'modern_industrialization:quarry' })
+
     customPestleAndMortarCraft(event, {
         ingredients: [
             { "item": "architects_palette:algal_blend" },
@@ -241,6 +241,57 @@ ServerEvents.recipes(event => {
             D: { item: "modern_industrialization:copper_drill" }
         },
         outputItems: [[{ id: "modern_industrialization:steam_quarry" }, 2]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PCP",
+            "HBH",
+            "PCP"
+        ],
+        key: {
+            B: { item: "modern_industrialization:large_steam_boiler" },
+            P: { item: "milf:basic_pump" },
+            H: { item: "immersiveengineering:furnace_heater" },
+            C: { item: "immersiveengineering:component_electronic_adv" }
+        },
+        outputItems: [[{ id: "modern_industrialization:advanced_large_steam_boiler" }, 1]],
+        removeRecipe:true
+    })
+
+    miMachineRecipe(event, {
+        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
+            [{ "tag": "immersiveengineering:treated_wood" }, 12],
+            [{ "item": "immersiveengineering:logic_unit" }, 4],
+            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
+            [{ "item": "immersiveengineering:wirecoil_steel" }, 12],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:radio_transcriber" }, 1]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
+            [{ "tag": "immersiveengineering:treated_wood" }, 12],
+            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
+            [{ "item": "immersiveengineering:wirecoil_steel" }, 12],
+            [{ "item": "milf:tempered_glass" }, 4],
+            [{ "item": "milf:punched_card" }, 8],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:enigma_machine" }, 1]]
+    })
+
+    aeInscriberRecipe(event, {
+        inputItems: [
+            [{ "item": "milf:tempered_glass" }, 1],
+            [{ "item": "modern_industrialization:steel_curved_plate" }, 1],
+            [{ "item": "milf:hemispherical_press_mold" }, 1],
+        ],
+        outputItems: [[{ "id": "milf:lens" }, 1]],
+        mode: "inscribe"
     })
 
     event.forEachRecipe({ output: /.*fine_wire/, type: "modern_industrialization:wiremill" }, r => {
@@ -601,8 +652,8 @@ KubeJSTweaks.beforeRecipes(event => {
                 event.disable(`modern_industrialization:materials/${ore}/forge_hammer/raw_metal_to_dust_with_tool`)
                 event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust_with_tool`)
                 event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust`) */
-        const regex = new RegExp(`modern_industrialization:materials\\/${ore}\\/(?:macerator|forge_hammer)\\/raw_metal.*`)
-        event.getEntry(regex).forEach(entry => {
+        const rawMetalRegex = new RegExp(`modern_industrialization:materials\\/${ore}\\/(?:macerator|forge_hammer)\\/raw_metal.*`)
+        event.getEntry(rawMetalRegex).forEach(entry => {
             entry.fromPath("item_inputs").ifPresent(input => input.second.asJsonArray.get(0).asJsonObject.add("tag", `c:crushed_ores/${ore}`))
             entry.fromPath("ingredient").ifPresent(input => input.second.asJsonObject.add("tag", `c:crushed_ores/${ore}`))
         })

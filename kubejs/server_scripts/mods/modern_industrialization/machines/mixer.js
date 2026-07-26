@@ -62,52 +62,6 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
-            [{item:"modern_industrialization:nickel_dust"}],
-            [{item:"modern_industrialization:copper_dust"}],
-        ],
-        outputItems:[
-            [{item:"modern_industrialization:constantan_dust"}, 2]
-        ]
-    })
-
-    miMachineRecipe(event, {
-        energy:2, time:100, machine:"modern_industrialization:mixer",
-        inputItems:[
-            [{item:"modern_industrialization:nickel_tiny_dust"}],
-            [{item:"modern_industrialization:copper_tiny_dust"}],
-        ],
-        outputItems:[
-            [{item:"modern_industrialization:constantan_tiny_dust"}, 2]
-        ]
-    })
-
-    miMachineRecipe(event, {
-        energy: 2, time: 100, machine: "modern_industrialization:mixer",
-        inputItems: [
-            [{ item: "modern_industrialization:constantan_tiny_dust" }],
-            [{ item: "modern_industrialization:copper_tiny_dust" }],
-        ],
-        outputItems: [
-            [{ item: "modern_industrialization:cupronickel_tiny_dust" }, 3]
-        ],
-        removeRecipeType: "modern_industrialization:mixer"
-    })
-
-    miMachineRecipe(event, {
-        energy: 2, time: 100, machine: "modern_industrialization:mixer",
-        inputItems: [
-            [{ item: "modern_industrialization:constantan_dust" }],
-            [{ item: "modern_industrialization:copper_dust" }],
-        ],
-        outputItems: [
-            [{ item: "modern_industrialization:cupronickel_dust" }, 2]
-        ],
-        removeRecipeType: "modern_industrialization:mixer"
-    })   
-
-    miMachineRecipe(event, {
-        energy:2, time:100, machine:"modern_industrialization:mixer",
-        inputItems:[
             [{item:"minecraft:clay_ball"}, 3],
             [{item:"modern_industrialization:fire_clay_dust"}, 3],
             [{item:"modern_industrialization:bauxite_dust"}, 1],

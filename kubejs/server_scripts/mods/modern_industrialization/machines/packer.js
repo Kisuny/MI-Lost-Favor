@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     //tier 3
     ae_press_recipes ("ae2:calculation_processor_press", "#c:gems/certus_quartz", "ae2:printed_calculation_processor", tier3token)
     ae_press_recipes ("ae2:engineering_processor_press", "#c:ingots/aluminum", "ae2:printed_engineering_processor", tier3token)
-    ae_press_recipes ("milf:core_press", "#c:plates/iron", "milf:core_hull", tier3token)
+    ae_press_recipes ("milf:hemispherical_press_mold", "#c:plates/iron", "milf:core_hull", tier3token)
 
     //tier 4
     ae_press_recipes ("advanced_ae:quantum_processor_press", "advanced_ae:quantum_alloy", "advanced_ae:printed_quantum_processor", tier4token)

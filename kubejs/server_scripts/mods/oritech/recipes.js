@@ -36,7 +36,7 @@ function oritechRefineryRecipe(event, args) {
         recipe.fluidInput = Object.assign({}, args.inputFluids[0][0], { amount: args.inputFluids[0][1] || 1000 })
     }
     if (args.outputFluids) {
-        let fluids = []
+        let fluids = []        
         args.outputFluids.forEach(fluid => { fluids.push(Object.assign({}, fluid[0], { amount: fluid[1] || 1000 })) })
         recipe.fluidOutputs = fluids
     }
@@ -195,8 +195,24 @@ ServerEvents.recipes(event => {
         removeRecipe: true,
     })
 
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WIW",
+            "RWR"
+        ],
+        key: {
+            R: { item: `modern_industrialization:rubber_sheet` },
+            I: { item: "oritech:machine_extender" },
+            W: { item: "immersiveengineering:wirecoil_electrum" }
+
+        },
+        outputItems: [[{ id: "modern_industrialization:basic_energy_input_hatch" }, 1]],
+        removeRecipe: true,
+    })
+
     miMachineRecipe(event, {
-        energy: 1, time: 200, machine: "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
         inputItems: [
             [{ "item": "minecraft:glass_bottle" }, 6],
             [{ "item": "milf:basic_motor" }, 2],
@@ -211,7 +227,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 1, time: 200, machine: "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
         inputItems: [
             [{ "item": "oritech:metal_beam_block" }, 6],
             [{ "item": "milf:basic_pump" }, 4],
@@ -226,7 +242,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 1, time: 200, machine: "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
         inputItems: [
             [{ "item": "milf:small_copper_fluid_container" }, 2],
             [{ "item": "oritech:machine_extender" }, 1],
@@ -240,7 +256,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 1, time: 200, machine: "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:wirecoil_electrum" }, 8],
             [{ "item": "oritech:machine_extender" }, 1],
@@ -253,7 +269,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 1, time: 200, machine: "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:wirecoil_electrum" }, 6],
             [{ "item": "oritech:machine_extender" }, 1],
@@ -292,24 +308,36 @@ ServerEvents.recipes(event => {
         outputFluids: [[{ fluid: "milf:silicone_modified_phenolic_resin" }, 200]],
     })
 
+    // oritechRefineryRecipe(event, {
+    //     time: 141,
+    //     inputItems: [
+    //         [{
+    //             "type": "neoforge:compound",
+    //             "amount": 1,
+    //             "children": 
+    //             [
+    //                 {
+    //                     item: "milf:ferrosilicon_dust"
+    //                 },
+    //                 {
+    //                     item: "extendedae:quartz_blend"
+    //                 }
+    //             ]}
+    //         ]
+    //     ],
+    //     inputFluids: [[{ fluid: "immersiveengineering:redstone_acid" }, 326]],
+    //     outputFluids: [[{ fluid: "modern_industrialization:hydrochloric_acid" }, 200]],
+    //     outputItems: [[{ item: "ae2:silicon" }, 1]],
+    // })
+
     oritechRefineryRecipe(event, {
         time: 141,
-        inputItems: [
-            [{
-                "type": "neoforge:compound",
-                "amount": 1,
-                "children": 
-                [
-                    {
-                        item: "milf:ferrosilicon_dust"
-                    },
-                    {
-                        item: "extendedae:quartz_blend"
-                    }
-                ]}
-            ]
-        ],
+        inputItems: [[{ item: "milf:ferrosilicon_dust"}]],
         inputFluids: [[{ fluid: "immersiveengineering:redstone_acid" }, 326]],
+        outputFluids: [
+            [{ fluid: "minecraft:water" }, 100],
+            [{ fluid: "modern_industrialization:hydrochloric_acid" }, 200]
+        ],
         outputItems: [[{ item: "ae2:silicon" }, 1]],
     })
 

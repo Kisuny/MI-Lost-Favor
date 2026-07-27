@@ -59,6 +59,11 @@
 		""
 		"&#9BB8EDСпойлер&r: это не самый ранний этап, просто имей ввиду!"
 	]
+	quest.0083A8FB4ECA2086.quest_desc: [
+		"добавляет heat для инструментов/брони."
+		""
+		"По мере использования предмета с heat предмет нагревается, как только предмет нагреется вы сможете добавить одну из аугментаций."
+	]
 	quest.00DD7D7D33A1B40E.quest_desc: [
 		"<property>Passively produces</property> various <keyword>resources</keyword> depending on <keyword>mesh</keyword> in it. Has to be placed in &9river&r or &9ocean&r <magic>biome</magic>."
 		""
@@ -178,6 +183,15 @@
 		"&4I&r&6n&r&ek&r extraction"
 		"{@pagebreak}"
 		"Нужно же где-то брать &4э&r&6н&r&eе&r&2р&r<property>г</property>&9и&r&5ю&r, верно?"
+	]
+	quest.0335CC4F07E1069E.quest_desc: [
+		""
+		"{@pagebreak}"
+		"Полная починка шмотки за 1 материал"
+		""
+		"так же если положить просто шмотку и бить наковальней или автоматической наковальней шмотка разберется на ресурс из которого сделана эта шмотка, так например алмазная броня разбирается на алмаз."
+		""
+		"Так же можно накладывать улучшения на броню/инструменты"
 	]
 	quest.03FD9E737AD73A39.quest_desc: [
 		"The &#FEECD6Titrartion Barrel&r allows you to create &#9BB8EDalcoholic beverages&r and many other &#FEECD6dishes&r. There is one &nnuance&r - fermentation processes take &l&#FEECD6real hours&r or even &#FEECD6&ldays&r&r&r&r."
@@ -412,6 +426,11 @@
 	]
 	quest.0D2D182AEBB7368B.title: "Afrit Crystallizer"
 	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
+	quest.0D58533D474BB840.quest_desc: [
+		"Позволяет получать доступ к машинам для воронок или других необходимых способов взаимодействия с машиной."
+		""
+		"Кроме того в награду вы получаете линзу, которая отображает множество полезной информации, нужен ли редстоун для работы блока/механизмы, какие слоты принимает сторона машины и т.д. "
+	]
 	quest.0D70E9CF33C567A7.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>llama</keyword>."]
 	quest.0DBD3895EE949921.quest_desc: [
 		"Ah, a pact that binds forever is a heavy thing. <curse>Geasa</curse> are potent, yes, and can achieve powerful effects, but their downsides are constant companions. These pacts can be <keyword>forsworn</keyword> on the <fire>Brazier</fire>, allowing you to decide what price you are willing to pay."
@@ -584,6 +603,7 @@
 		""
 		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (яд должен подойти), и в этот момент воспользоваться иглой."
 	]
+	quest.11C14EFDFC29588D.quest_desc: ["4 нижних слота каждый под свою жижу сверху результат сплава"]
 	quest.1208751263D1F495.quest_desc: [
 		"A cursed chalice that gives exactly what you deserve. Right-click to drink (slow sip, like honey) and see for yourself."
 		""
@@ -1261,6 +1281,7 @@
 	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>slime</keyword>."]
 	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
+	quest.24E7FD78ADA1347F.quest_desc: ["при переплавки некоторых руд можно получить осадок других металлов, например при переплавке меди можно получить немного золота"]
 	quest.2518CA7E57223D3A.quest_desc: [
 		"One of the earliest ways of <positive>flying</positive>"
 		"{@pagebreak}"
@@ -1614,6 +1635,7 @@
 		"{@pagebreak}"
 		"Ты же знаешь, для чего это нужно, да?"
 	]
+	quest.30BAEF406C7549E3.quest_desc: ["автомат. клики за счёт эмбера"]
 	quest.30C4AD468ACFB3C5.quest_desc: [
 		"Can <positive>catch</positive> <keyword>living creatures</keyword>!"
 		"{@pagebreak}"
@@ -1787,6 +1809,7 @@
 		""
 		"You can also get it from <keyword>Piglin Barter</keyword>."
 	]
+	quest.3643627887D2AD11.quest_desc: ["Хранилище эмбера"]
 	quest.365584F44AB28CB8.quest_desc: [
 		"A handy <keyword>radar</keyword> that shows which <named>fish</named> you can <positive>catch</positive> in the area where you are"
 		"{@pagebreak}"
@@ -2027,6 +2050,7 @@
 		"<blood>декоративный материал</blood> для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
 	]
 	quest.3C4D5E6F7A8B0093.title: "Demonite Ingot"
+	quest.3C90765213BDB46C.quest_desc: ["ставит симпатичный свет в мире"]
 	quest.3CD24DA505BC109F.quest_desc: [
 		"<positive>Obtain</positive> &l&5Neolith&r&r from the failing-engulfed <keyword>obsidian</keyword>."
 		"{@pagebreak}"
@@ -2553,12 +2577,14 @@
 		"• Кормушка будет <positive>автоматически кормить находящихся поблизости животных</positive>, когда они проголодаются."
 		"• Кормушка <warning>прекратит кормление животных</warning>, если в зоне станет слишком тесно."
 	]
+	quest.4A41E20A8AC0FA47.quest_desc: ["Удобный способ забирать ресурсы из под машин"]
 	quest.4A466EBB29C36CCD.quest_desc: [
 		"Solve the <property>puzzle</property> to gain access to the <magic>maze</magic>!"
 		"{@pagebreak}"
 		"Решите <property>загадку</property> для доступа к <magic>лабиринту</magic>!"
 	]
 	quest.4A87529560AC3F59.quest_desc: ["Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
+	quest.4ACDF200B2039DD9.quest_desc: ["Улучшенная версия кристалла, больше прочности, свет можно кидать на расстояние, а не только через пкм"]
 	quest.4ADB796A7EC14DE4.quest_desc: [
 		"The Soul Crimson Stone is an upgraded version of the normal Crimson Stone. Due to the power of the harnessed souls, this enhancer is able to completely remove the essence cost of one Hephaestus Forge ritual. After one use it loses its power and becomes a normal Crimson Stone."
 		""
@@ -2794,6 +2820,7 @@
 		""
 		"Новые указы можно получить в качестве награды за выполнение определенных заданий или обменять у жителей деревни, достигших более высоких уровней."
 	]
+	quest.5380E40C4577CC4F.quest_desc: ["Удлиняет путь для эмбера"]
 	quest.5386ADA67BEB546A.quest_desc: ["<positive>Встаёшь</positive> - даёт <keyword>опыт</keyword> из привязанного <keyword>обелиска с опытом</keyword>"]
 	quest.538E3976DDFD9FBF.quest_desc: [
 		"Displays the total number of <keyword> buffs</keyword> in the <keyword>Crucible</keyword>"
@@ -2850,6 +2877,7 @@
 		"{@pagebreak}"
 		"Эта <keyword>сетка</keyword> может улавливать основные ресурсы, такие как <keyword>песок</keyword>, <keyword>гравий</keyword>, <keyword>глину</keyword> и <keyword>рыбу</keyword>."
 	]
+	quest.572D8B61A151F4AB.quest_desc: ["Stamper должен быть на блок выше Stamper Base т.к. это что-то типа \"Пресса\""]
 	quest.57671811B0F76299.title: "Coal"
 	quest.57C4CC73DC66630C.quest_desc: [
 		"<named>Compass</named> will help you find the right structure!"
@@ -2901,6 +2929,11 @@
 		"Получается объединением False Bloodwyrm Head с Blood Feather и Born To Burn на кузнечном столе."
 		""
 		"Это оружие выпускает огонь перед игроком (заправляется Dragon Breath) и накладывает на жертв Flame Frailty - усиленную уязвимость к огню."
+	]
+	quest.597888258BED9F62.quest_desc: [
+		"Позволяет выращивать семена ресурсов, нужно навести мордой в семечко и дать эмбера"
+		""
+		"у семян есть уровень, разрушение семян приводит к потере уровня, чем больше уровень тем больше нагетов падает."
 	]
 	quest.5984DB66549B9040.quest_desc: ["<warning>Poison</warning>."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
@@ -2990,6 +3023,7 @@
 		"{@pagebreak}"
 		"Используя Светящийся чернильный мешок(или &k<property>Light Blue Ink</property>&r), награждает носителя &#FEECD6ночным зрением&r! "
 	]
+	quest.5CBEB0F6C8FD57FE.quest_desc: ["Нужен для большинства активаций, например для активации экстрактора жидкостных или предметных экстракторов, так же для активации передачи эмбера в эмбер эмиттере"]
 	quest.5CC8256483CC8A63.quest_desc: [
 		"You can change the <keyword>Capacity mechanism</keyword> by <positive>scrolling the wheels</positive> at the bottom to decrease capacity, or up to increase capacity."
 		""
@@ -3369,6 +3403,11 @@
 		"{@pagebreak}"
 		"В подземелье можно найти небольшое количество сильного тау, но если вам не повезло и вы нашли только слабое тау, вы можете превратить его в сильное, если на растении стоит живое существо во время роста — например, свинья. В этом случае растение превратится в сильное тау при первом же росте. Кроме того, для роста сильного тау необходимо, чтобы на растении стояло живое существо и передавало ему свою жизненную энергию."
 	]
+	quest.67C6130FA2F3DFE4.quest_desc: [
+		"каждый аспектус в разных мирах свой, чтобы понять какие именно - нужно либо эксперементы и рандом, либо же создать Codebreaking Slate, в нём будут подсказки какое количество аспектусов было выбрано верно"
+		""
+		"нужен редстоун на cannon чтобы запустить крафт"
+	]
 	quest.67F8922E4579FA8C.quest_desc: [
 		"<warning><b>If you put this ring on, you won't be able to take it off later!</b></warning>"
 		""
@@ -3529,6 +3568,7 @@
 		"Периодически испускает <warning>импульс красного камня</warning>. Нажав <positive>ПКМ</positive>, вы можете изменить <keyword>длительность импульса</keyword>, а нажав <positive>Shift+ПКМ</positive> - <keyword>интервал между импульсами</keyword>."
 	]
 	quest.69418DE8B3EC2C19.quest_desc: ["An invisible ward that pushes hostile creatures away in a 5-block radius. Crafted from iron and lapis, accessible to apprentices."]
+	quest.6972361CC8E0281E.quest_desc: ["большая хранилка Ambers, можно увеличить если дать эмбер вплоть до 1.440.000 вместимости."]
 	quest.69B63B5F93071543.quest_desc: [
 		"&#C6BCE9Constructor's Staff&r - a tool for placing blocks in a defined pattern by spending &3Cyan Ink&r. "
 		"{@pagebreak}"
@@ -3684,6 +3724,11 @@
 		"{@pagebreak}"
 		"<keyword>Повышает шанс</keyword> получить <keyword>голову моба</keyword> если <positive>убить этим топором</positive>."
 	]
+	quest.6EF0B013A2B2DB1F.quest_desc: [
+		"Чтобы понять что было не так в крафте используй это"
+		""
+		"Оранжевые точки у уже скрафченного предмета показывают на УСПЕШНЫЕ аспектусы"
+	]
 	quest.6EF30F56F492C947.quest_desc: [
 		"Made by altering a Goat Horn. Can still be tooted, but can also be filled with a potion - blowing it applies that effect to all nearby pets and players. Duration is half the original potion's. Effects linger after use, and a new potion overwrites the old one."
 		"{@pagebreak}"
@@ -3823,6 +3868,7 @@
 	]
 	quest.71721385710E5EB0.quest_desc: ["You can press \"<positive>C</positive>\" to <positive>crawl</positive> and say hi to all your worm-like friends!"]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
+	quest.71A28CD8A6826BD9.quest_desc: ["3x3x2 block"]
 	quest.71CC5CD5F8018F02.quest_desc: [
 		"[ \"Later on, you will need to craft many items using the anvil crafting. Pay attention to the \", { \"text\": \"winch\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! You can <positive>craft several items at once</positive> with it, and it <warning>won't break the anvil</warning>!\" ]"
 		"{@pagebreak}"
@@ -4002,6 +4048,7 @@
 	]
 	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["<positive>Charges items</positive>. That's it"]
+	quest.7A829E765BC1B36A.quest_desc: ["генерация эмбера но быстрее?"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["<property>Free furnaces</property>"]
 	quest.7AB88C2D779F62E2.quest_desc: [
 		"An upgraded coin pouch that automatically picks up coins from the floor"

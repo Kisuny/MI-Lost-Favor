@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     var replacementsItemToItem = {
         "ars_nouveau:mendosteen_pod": "paganbless:chopped_rue",
         "ars_nouveau:earth_essence": "enchanted:breath_of_the_goddess",
-        "ars_nouveau:air_essence": "occultism:awakened_feather",
+        "ars_nouveau:air_essence": "minecraft:barrier",
         "ars_nouveau:red_archwood_sapling": "enchanted:tongue_of_dog",
         "ars_nouveau:green_archwood_sapling": "enchanted:creeper_heart",
         "ars_nouveau:blue_archwood_sapling": "enchanted:water_artichoke",
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
 
     // tag -> item
     var replacementsTagToItem = {
-        "c:storage_blocks/source": "occultism:spirit_attuned_crystal",
+        "c:storage_blocks/source": "minecraft:barrier",
         "c:gems/source": "enchanted:attuned_stone",
     };
 

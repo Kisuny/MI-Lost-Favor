@@ -36,11 +36,11 @@ ServerEvents.tags('item', event => {
         'spectrum:resplendent_carpet'
     ])
     event.add('minecraft:rails', ['framedblocks:framed_rail_slope', 'framedblocks:framed_powered_rail_slope', 'framedblocks:framed_detector_rail_slope', 'framedblocks:framed_activator_rail_slope', 'framedblocks:framed_fancy_rail', 'framedblocks:framed_fancy_powered_rail', 'framedblocks:framed_fancy_detector_rail', 'framedblocks:framed_fancy_activator_rail', 'framedblocks:framed_fancy_rail_slope', 'framedblocks:framed_fancy_powered_rail_slope', 'framedblocks:framed_fancy_detector_rail_slope', 'framedblocks:framed_fancy_activator_rail_slope'])
-    event.add('minecraft:buttons', ['occultism:otherrock_button', 'darkerdepths:petrified_button', 'framedblocks:framed_button', 'framedblocks:framed_stone_button', 'ars_additions:sourcestone_button', 'ars_additions:polished_sourcestone_button'])
+    event.add('minecraft:buttons', ['darkerdepths:petrified_button', 'framedblocks:framed_button', 'framedblocks:framed_stone_button', 'ars_additions:sourcestone_button', 'ars_additions:polished_sourcestone_button'])
     event.add('minecraft:fence_gates', ["supplementaries:iron_gate", "supplementaries:gold_gate"])
     event.add('minecraft:trapdoors', ['cataclysm:chorus_trapdoor', 'unusualend:chorus_nest_trapdoor', 'darkerdepths:petrified_trapdoor', 'ars_additions:sourcestone_trapdoor', 'ars_additions:polished_sourcestone_trapdoor', 'dungeonsdelight:stained_scrap_trapdoor', 'xkdeco:glass_trapdoor', 'xkdeco:varnished_trapdoor', 'xkdeco:ebony_trapdoor', 'xkdeco:mahogany_trapdoor', 'xkdeco:steel_trapdoor', 'xkdeco:hollow_steel_trapdoor', 'xkdeco:factory_trapdoor', 'xkdeco:factory_trapdoor_rusting', 'xkdeco:factory_trapdoor_rusted'])
     event.add('minecraft:planks', [/^rechiseled:(?!.*(?:stairs|slab))[a-z_]+planks[a-z_]*$/])
-    const modsList = '(arts_and_crafts|xkdeco|unusualend|cataclysm|darkerdepths|ars_nouveau|dungeonsdelight|eidolon_repraised|ae2|forbidden_arcanus|spectrum|extradelight|suppsquared|fdbosses|immersiveengineering|betterarcheology|occultism|framedblocks|immersivepetroleum|chipped|malum|ars_additions)'
+    const modsList = '(arts_and_crafts|xkdeco|unusualend|cataclysm|darkerdepths|ars_nouveau|dungeonsdelight|eidolon_repraised|ae2|forbidden_arcanus|spectrum|extradelight|suppsquared|fdbosses|immersiveengineering|betterarcheology|framedblocks|immersivepetroleum|chipped|malum|ars_additions)'
     event.add('minecraft:stairs', [/^rechiseled:[a-z_]*_stairs?[a-z_]*$/, new RegExp(`^${modsList}:[a-z_]*_stairs?[a-z_]*$`)])
     event.add('minecraft:slabs', [/^rechiseled:[a-z_]*slab[a-z_]*$/, new RegExp(`^${modsList}:[a-z_]*slab[a-z_]*$`)])
     event.add('minecraft:walls', [/^rechiseled:[a-z_]*wall[a-z_]*$/, new RegExp(`^${modsList}:[a-z_]*wall[a-z_]*$`)])

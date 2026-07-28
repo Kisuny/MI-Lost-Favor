@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         key: {
             "q": { "item": "neovitae:lava_crystal" },
             "w": { "item": "forbidden_arcanus:mundabitur_dust" },
-            "e": { "item": "occultism:iesnium_ingot" },
+            "e": { "item": "minecraft:barrier" },
             "t": { "item": "minecraft:iron_bars" },
             "r": { "tag": "magnumtorch:torches" },
         },

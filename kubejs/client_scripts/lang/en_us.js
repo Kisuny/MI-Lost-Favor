@@ -281,18 +281,6 @@ The only solution is to make them less sound.`)
     event.add("milf.food.poison_5", "You have eaten an extreme amount of fruits and vegetables and are now critically poisoned! Please eat something else immediately to recover. If you continue to eat fruits or vegetables while poisoned, you may die from the poison!")
     //#region
 
-    //#region rituals
-    event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
-    event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
-    event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
-    event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
-
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
-    //#endregion
-
 
     //#region hostile networks
 
@@ -383,9 +371,6 @@ The only solution is to make them less sound.`)
     event.add("custom.trivia.urchinkin", "Evil urchins that seek to destroy you.");
     event.add("custom.trivia.wadjet", "The remains of\nan ancient serpentine warrior,\nsworn to defend its master.");
 
-    // occultism
-    event.add("custom.trivia.afrit", "A wandering spirit,\nripe for exploitation.");
-    event.add("custom.trivia.possessed_endermite", "Even enderic creatures aren't immune\nto the influence of the occult.");
 
     //minecraft
     event.add("custom.trivia.bee", "Floating about the forest,\nBees work tirelessly to produce Honeycombs\nyou can centrifuge into a variety of items.\nWait a minute, that's not quite right...");

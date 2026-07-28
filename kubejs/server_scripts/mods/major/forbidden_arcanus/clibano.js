@@ -107,11 +107,11 @@ function clibanoCombustionOreCraft(event, oreName, outputItem, exp, chance) {
 
 ServerEvents.recipes(event => {
     
-    addResidueType("iesnium", { result: "occultism:iesnium_block" })
+    // addResidueType("iesnium", { result: "occultism:iesnium_block" })
     // Custom alloy exmaple
     addClibanoCombustion(event, "obsidiansteel_ingot_from_clibano_combustion", {
         first: { tag: "c:ingots/aluminum" },
-        second: "occultism:obsidian_dust",
+        second: "minecraft:barrier",
         result: "forbidden_arcanus:obsidiansteel_ingot",
         enhancer: "forbidden_arcanus:artisan_relic",
         fireType: "soul_fire",
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
     })
     
     // default ore example
-    clibanoCombustionOreCraft(event, "iesnium", "occultism:iesnium_ingot", 1.0, 0.05)
+    // clibanoCombustionOreCraft(event, "iesnium", "occultism:iesnium_ingot", 1.0, 0.05)
 
 
 })

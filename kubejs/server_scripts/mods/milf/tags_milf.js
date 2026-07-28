@@ -16,8 +16,6 @@ ServerEvents.tags('item', event => {
         // "aquaculture:iron_fillet_knife", "aquaculture:gold_fillet_knife", "aquaculture:diamond_fillet_knife",
 
 
-        "occultism:butcher_knife", "occultism:iesnium_butcher_knife",
-
         "dungeonsdelight:flint_cleaver", "dungeonsdelight:iron_cleaver",
             "dungeonsdelight:diamond_cleaver", "dungeonsdelight:golden_cleaver", "dungeonsdelight:netherite_cleaver",
 

@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             { tag: 'milf:basic_gemstone_powders' },
             { item: 'minecraft:phantom_membrane' },
             { item: 'forbidden_arcanus:arcane_crystal_dust' },
-            { item: 'occultism:echo_dust' },
+            { item: 'minecraft:barrier' },
             { item: 'spectrum:onyx_powder' },
         ],
         output: 'forbidden_arcanus:mundabitur_dust',

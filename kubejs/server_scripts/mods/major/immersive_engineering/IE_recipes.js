@@ -7,22 +7,25 @@ function ieShapedFluid(event, args) {
         result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
     }
     if (!args.compatOff) {
-        let itemInputs = []
-        let fluidInputs = []
-        let amounts = args.pattern.join("")
 
-        Object.entries(args.key).forEach(m => {
-            let regex = new RegExp(m[0], 'g')
-            if (m[1].type) {
-                let tempObj = Object.assign({}, m[1])
-                delete tempObj.type
-                delete tempObj.amount
-                fluidInputs.push([tempObj, m[1].amount])
-            } else {
-                itemInputs.push([m[1], (amounts.match(regex) || []).length])
-            }
-            //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
-        })
+        let { itemInputs, fluidInputs } = getInputsFromIEShaped(args)
+
+        // let itemInputs = []
+        // let fluidInputs = []
+        // let amounts = args.pattern.join("")
+
+        // Object.entries(args.key).forEach(m => {
+        //     let regex = new RegExp(m[0], 'g')
+        //     if (m[1].type) {
+        //         let tempObj = Object.assign({}, m[1])
+        //         delete tempObj.type
+        //         delete tempObj.amount
+        //         fluidInputs.push([tempObj, m[1].amount])
+        //     } else {
+        //         itemInputs.push([m[1], (amounts.match(regex) || []).length])
+        //     }
+        //     //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
+        // })
         miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:assembler",
             inputItems: itemInputs,
@@ -139,6 +142,27 @@ ServerEvents.recipes(event => {
         ],
         key: {
             B: { item: "immersiveengineering:basic_engineering" },
+            W: { item: "immersiveengineering:wirecoil_steel" },
+            n: { item: "modern_industrialization:hop_graphite_plate" },
+            i: { item: "modern_industrialization:aluminum_plate" },
+            r: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "immersiveengineering:redstone_acid"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:capacitor_hv" }, 1]],
+        removeRecipe: true
+    })
+
+    ieShapedFluid(event, {
+        pattern: [
+            "W W",
+            "nri",
+            "WBW"
+        ],
+        key: {
+            B: { item: "immersiveengineering:basic_engineering" },
             W: { item: "immersiveengineering:wirecoil_electrum" },
             n: { item: "modern_industrialization:nickel_plate" },
             i: { item: "modern_industrialization:iron_plate" },
@@ -196,6 +220,54 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region milfShaped
+
+    milfShaped(event, {
+        pattern: [
+            "SbS",
+            "bBb",
+            "SbS"
+        ],
+        key: {
+            B: { item: "milf:blank_blueprint" },
+            S: { item: "modern_industrialization:rubber_sheet" },
+            b: { item: "milf:steel_machine_bit" }
+        },
+        outputItems: [[{ 
+            id: "immersiveengineering:blueprint",
+            components: { "immersiveengineering:blueprint": MILF_BLUEPRINTS.craftingComponents, "minecraft:item_name": "{'text':'" + "Components" + "','color':'" + '#765A53' + "'}" }
+        }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "ISI",
+            "RRR",
+            "ISI"
+        ],
+        key: {
+            S: { item: "modern_industrialization:steel_curved_plate" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            I: { item: "modern_industrialization:iron_bolt" }
+        },
+        outputItems: [[{ id: "immersiveengineering:fluid_pipe" }, 4]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "IWI",
+            "WSW",
+            "IWI"
+        ],
+        key: {
+            S: { item: "immersiveengineering:basic_engineering" },
+            W: { item: "modern_industrialization:aluminum_wire" },
+            I: { item: "modern_industrialization:iron_bolt" }
+        },
+        outputItems: [[{ id: "immersiveengineering:item_batcher" }, 4]],
+        removeRecipe: true
+    })
 
     milfShaped(event, {
         pattern: [
@@ -351,6 +423,36 @@ ServerEvents.recipes(event => {
             D: { item: "modern_industrialization:electrum_double_ingot" }
         },
         outputItems: [[{ id: "immersiveengineering:connector_mv_relay" }, 4]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "IRI",
+            "IDI"
+        ],
+        key: {
+            R: { item: "modern_industrialization:aluminum_rod" },
+            I: { tag: "immersiveengineering:connector_insulator" },
+            D: { item: "modern_industrialization:aluminum_double_ingot" }
+        },
+        outputItems: [[{ id: "immersiveengineering:connector_hv" }, 2]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "IDI",
+            "   "
+        ],
+        key: {
+            R: { item: "modern_industrialization:aluminum_rod" },
+            I: { item: "immersiveengineering:insulating_glass" },
+            D: { item: "modern_industrialization:aluminum_double_ingot" }
+        },
+        outputItems: [[{ id: "immersiveengineering:connector_hv_relay" }, 4]],
         removeRecipe: true
     })
 
@@ -827,8 +929,24 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 4, time: 600, machine: "modern_industrialization:mixer",
         inputItems: [
-            [{ "item": "immersiveengineering:slag_gravel" }, 3],
+            [{ "item": "immersiveengineering:slag_gravel" }, 2],
             [{ "tag": "c:sands" }, 2],
+            [{ "item": "milf:cement" }, 4]
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 1000]
+        ],
+        outputFluids: [
+            [{ fluid: "immersiveengineering:concrete" }, 1000]
+        ],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 600, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ "item": "minecraft:gravel" }, 5],
+            [{ "tag": "c:sands" }, 3],
             [{ "item": "milf:cement" }, 4]
         ],
         inputFluids: [
@@ -855,6 +973,16 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:mi_furnace",
+        inputItems: [
+            [{ "item": "immersiveengineering:slag_glass" }, 1]
+        ],
+        outputItems: [
+            [{ "item": "immersiveengineering:insulating_glass" }, 1]
+        ]
+    })
+
     //#endregion
 
 })
@@ -871,11 +999,13 @@ KubeJSTweaks.beforeRecipes(event => {
         /immersiveengineering:crafting\/.*hammercrushing.*/,
         /immersiveengineering:crusher\/.*aluminum/,
         /immersiveengineering:blastfurnace.*/,
+        
         "immersiveengineering:alloysmelter/insulating_glass",
         "immersiveengineering:alloysmelter/bronze",
         "immersiveengineering:alloysmelter/electrum",
         "immersiveengineering:alloysmelter/constantan",
         "immersiveengineering:alloysmelter/invar",
+
         "immersiveengineering:arcfurnace/raw_block_aluminum",
         "immersiveengineering:arcfurnace/raw_ore_aluminum",
         "immersiveengineering:arcfurnace/ore_silver",
@@ -892,26 +1022,33 @@ KubeJSTweaks.beforeRecipes(event => {
         "immersiveengineering:arcfurnace/ore_uranium",
         "immersiveengineering:arcfurnace/raw_block_uranium",
         "immersiveengineering:arcfurnace/raw_ore_uranium",
+        "immersiveengineering:arcfurnace/steel",
+
         "immersiveengineering:crusher/ore_quartz",
         "immersiveengineering:crusher/ore_lapis",
         "immersiveengineering:crusher/red_sandstone",
-        "immersiveengineering:mixer/concrete",
-        "immersiveengineering:arcfurnace/steel",
+
         "immersiveengineering:cokeoven/charcoal",
         "immersiveengineering:cokeoven/coke_block",
         "immersiveengineering:cokeoven/coke",
-        "immersiveengineering:crafting/empty_shell",
+        
         "immersiveengineering:smelting/copper_ingot_from_dust",
         "immersiveengineering:smelting/copper_ingot_from_dust_from_blasting",
         "immersiveengineering:smelting/iron_ingot_from_dust",
         "immersiveengineering:smelting/iron_ingot_from_dust_from_blasting",
         "immersiveengineering:smelting/gold_ingot_from_dust",
         "immersiveengineering:smelting/gold_ingot_from_dust_from_blasting",
+
         "immersiveengineering:crafting/nugget_netherite_to_netherite_ingot",
         "immersiveengineering:crafting/ingot_steel_to_storage_steel",
-
+        "immersiveengineering:crafting/empty_shell",
         "immersiveengineering:crafting/redstone_acid",
-        "immersiveengineering:mixer/redstone_acid"
+        "immersiveengineering:crafting/concrete",
+
+
+        "immersiveengineering:mixer/redstone_acid",
+        "immersiveengineering:mixer/concrete",
+
 
     ]
 

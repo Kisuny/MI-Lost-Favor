@@ -49,6 +49,27 @@ function getItemInputsFromShaped(args){
     return itemInputs
 }
 
+function getInputsFromIEShaped(args) {
+    let itemInputs = []
+    let fluidInputs = []
+    let patternString = args.pattern.join("")
+
+    Object.entries(args.key).forEach(m => {
+
+        if (m[1].type) {
+            let tempObj = Object.assign({}, m[1])
+            delete tempObj.type
+            delete tempObj.amount
+            fluidInputs.push([tempObj, m[1].amount])
+        } else {
+            itemInputs.push([m[1], (patternString.split(m[0])).length - 1])
+        }
+
+    })
+
+    return { itemInputs, fluidInputs }
+}
+
 function getXYZFromPosCompound(posCompound){
     let x = posCompound.getDouble("x")
     let y = posCompound.getDouble("y")
@@ -115,6 +136,14 @@ function sendMissingItemsNotification(player, missingItems, notificationType){
             
             ticksOffset+=5
         })
+}
+
+function neoCompound(children, amount){
+    return {
+        type: "neoforge:compound",
+        amount: amount || 1,
+        children: children
+    }
 }
 
 const MissingItemsNotificationType = {

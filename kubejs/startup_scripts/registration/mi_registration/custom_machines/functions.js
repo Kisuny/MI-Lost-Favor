@@ -5,6 +5,10 @@ global.miTweaksTags = global.miTweaksTags || []
 const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input", "fluid_output"]
 const machineTiersAll = ["bronze", "steel", "electric"]
 
+function shapeMemberOf(event, block, actualBlock){
+    return block.tag ? event.memberOfBlockTag(actualBlock, block.tag) : event.memberOfBlock(actualBlock)
+}
+
 function registerSingleMIMachine(name, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
@@ -80,7 +84,7 @@ function registerMIMachine(name, args){
         let shape = event.layeredShape(args.casing , args.shape)
         Object.entries(args.shapeKeys).forEach(([key, block]) => {
             let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
         })
         shape = shape.build()
         const multiTypeFunction = args.steam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
@@ -124,7 +128,7 @@ function registerPowerlessMIMachine(name, args){
         let shape = event.layeredShape(args.casing , args.shape)
         Object.entries(args.shapeKeys).forEach(([key, block]) => {
             let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
         })
         shape = shape.build()
         const multiTypeFunction = event.multiblock
@@ -170,7 +174,7 @@ function registerBatchMIMachine(name, args){
         let shape = event.layeredShape(args.casing , args.shape)
         Object.entries(args.shapeKeys).forEach(([key, block]) => {
             let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
         })
         shape = shape.build()
         const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
@@ -237,7 +241,7 @@ function registerTieredMIMachine(name, args){
             let shape = event.layeredShape(tier.casing , tier.shape)
             Object.entries(tier.shapeKeys).forEach(([key, block]) => {
                 let actualBlock = (typeof block === "string") ? block : block.id
-                shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+                shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
             })
             shape = shape.build()
             if (args.fromExisting) basicRecipeType = event.getRecipeType(args.fromExisting)
@@ -311,7 +315,7 @@ function registerBatchMIMachineFromExisting(name, args){
         let shape = event.layeredShape(args.casing , args.shape)
         Object.entries(args.shapeKeys).forEach(([key, block]) => {
             let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
         })
         shape = shape.build()
         const multiTypeFunction = args.steam ? event.steam : event.electric

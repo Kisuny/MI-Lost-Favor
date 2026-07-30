@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    //#region craftingComponents
+
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:rubber_sheet" }, 1],
@@ -61,6 +63,10 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
+    //#endregion
+
+    //#region usefulTools
+
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:steel_nugget" }, 6],
@@ -113,17 +119,126 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    //#endregion
+
+    //#region miBasicComponents
+
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "tag": "c:rods/steel" }, 2],
-            [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
+            [{ "item": "oritech:magnetic_coil" }, 2],
+            [{ "item": "modern_industrialization:copper_plate" }, 4],
+            [{ "item": "modern_industrialization:iron_rod" }, 2],
+            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
+        ],
+        outputItems: [[{ "item": "milf:basic_motor" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:battery_alloy_curved_plate" }, 6],
+            [{ "item": "modern_industrialization:battery_alloy_plate" }, 2],
+            [{ "item": "minecraft:redstone" }, 3],
+            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:redstone_battery" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipeType: "minecraft:crafting_shaped",
+        compatOff: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 1],
+            [{ "item": "modern_industrialization:copper_rotor" }, 2],
+            [{ "item": "modern_industrialization:copper_curved_plate" }, 2],
+            [{ "item": "moderndynamics:fluid_pipe" }, 2],
+        ],
+        outputItems: [[{ "item": "milf:basic_pump" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 8],
+            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:conveyor" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 2],
+            [{ "item": "milf:basic_pump" }, 1],
+            [{ "item": "modern_industrialization:analog_circuit" }, 1],
+            [{ "item": "modern_industrialization:conveyor" }, 1],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:basic_upgrade" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:carbon_steel_plate" }, 4],
+            [{ "item": "modern_industrialization:copper_wire" }, 2],
+            [{ "item": "modern_industrialization:iron_rod" }, 2],
             [{ "item": "modern_industrialization:tin_cable" }, 2],
             [{ "item": "modern_industrialization:steel_rod_magnetic" }, 1]
         ],
         outputItems: [[{ "item": "modern_industrialization:motor" }]],
-        category: MILF_BLUEPRINTS.miComponents,
+        category: MILF_BLUEPRINTS.miBasicComponents,
         removeRecipe: true
     })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:carbon_steel_curved_plate" }, 2],
+            [{ "item": "moderndynamics:fluid_pipe" }, 3],
+            [{ "item": "modern_industrialization:motor" }, 1],
+            [{ "item": "modern_industrialization:tin_rotor" }, 2],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:pump" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:carbon_steel_bolt" }, 4],
+            [{ "item": "modern_industrialization:tin_cable" }, 2],
+            [{ "item": "modern_industrialization:portable_storage_unit" }, 1],
+            [{ "item": "modern_industrialization:electronic_circuit" }, 1],
+            [{ "item": "milf:basic_machine_bit" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:basic_machine_hull" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:electronic_circuit_board" }, 1],
+            [{ "item": "modern_industrialization:transistor" }, 2],
+            [{ "item": "modern_industrialization:diode" }, 1],
+            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
+            [{ "item": "modern_industrialization:redstone_battery" }, 1],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:electronic_circuit" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
+    //#endregion
+
+
+    //#region miComponents
 
     ieBlueprintRecipe(event, {
         inputItems: [
@@ -148,30 +263,6 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tin_cable" }, 2],
         ],
         outputItems: [[{ "item": "modern_industrialization:piston" }]],
-        category: MILF_BLUEPRINTS.miComponents,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "tag": "c:bolts/tin" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 3],
-            [{ "item": "modern_industrialization:motor" }, 1],
-            [{ "item": "modern_industrialization:tin_rotor" }, 3],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:pump" }]],
-        category: MILF_BLUEPRINTS.miComponents,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "tag": "c:plates/battery_alloy" }, 4],
-            [{ "item": "modern_industrialization:analog_circuit" }, 1],
-            [{ "item": "modern_industrialization:battery_alloy_curved_plate" }, 2],
-            [{ "item": "modern_industrialization:tin_cable"}, 2],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:portable_storage_unit" }]],
         category: MILF_BLUEPRINTS.miComponents,
         removeRecipe: true
     })
@@ -225,64 +316,5 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "oritech:magnetic_coil" }, 2],
-            [{ "item": "modern_industrialization:copper_plate" }, 4],
-            [{ "item": "modern_industrialization:iron_rod" }, 2],
-            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
-        ],
-        outputItems: [[{ "item": "milf:basic_motor" }]],
-        category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "modern_industrialization:battery_alloy_curved_plate" }, 6],
-            [{ "item": "modern_industrialization:battery_alloy_plate" }, 2],
-            [{ "item": "minecraft:redstone" }, 3],
-            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:redstone_battery" }]],
-        category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipeType: "minecraft:crafting_shaped",
-        compatOff:true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "milf:basic_motor" }, 1],
-            [{ "item": "modern_industrialization:copper_rotor" }, 2],
-            [{ "item": "modern_industrialization:copper_curved_plate" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 2],
-        ],
-        outputItems: [[{ "item": "milf:basic_pump" }]],
-        category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "milf:basic_motor" }, 2],
-            [{ "item": "modern_industrialization:rubber_sheet" }, 8],
-            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:conveyor" }]],
-        category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "milf:basic_motor" }, 2],
-            [{ "item": "milf:basic_pump" }, 1],
-            [{ "item": "modern_industrialization:analog_circuit" }, 1],
-            [{ "item": "modern_industrialization:conveyor" }, 1],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:basic_upgrade" }]],
-        category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipe: true
-    })
-
+    //#endregion
 })

@@ -4,9 +4,9 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 1, time: 1200, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
-            [{ tag: "oritech:biomatter" }, 5, 0.8],
-            [{ tag: "oritech:biomatter" }, 3, 0.5],
-            [{ tag: "oritech:biomatter" }, 2, 0.3],
+            [{ tag: "oritech:biomatter" }, 4, 0.7],
+            [{ tag: "oritech:biomatter" }, 3, 0.4],
+            [{ tag: "oritech:biomatter" }, 2, 0.25],
         ],
         inputFluids: [
             [{ fluid: "minecraft:water" }, 150, 0.9],
@@ -20,10 +20,10 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 60, time: 600, machine: "modern_industrialization:microbial_fabricator_basic",
+        energy: 34, time: 600, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
-            [{ item: "milf:space_hive" }, 1, 0],
             [{ tag: "minecraft:meat" }, 1, 0.79],
+            [{ item: "milf:space_hive" }, 1, 0],
             [{ tag: "minecraft:meat" }, 1, 0.74],
         ],
         inputFluids: [
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 64, time: 200, machine: "modern_industrialization:microbial_fabricator_basic",
+        energy: 40, time: 200, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
             [{ item: "modern_industrialization:wood_pulp" }, 6],
             [{ item: "oritech:biomass_block" }, 1],
@@ -50,6 +50,34 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ item: "oritech:raw_biopolymer" }, 1]],
         custom_condition: "microbial_fabricator"
+    })
+
+    miMachineRecipe(event, {
+        energy: 16, time: 100, machine: "modern_industrialization:microbial_fabricator_basic",
+        inputItems: [
+            [{ item: "oritech:biomass" }, 1, 0.88],
+            [{ item: "oritech:biosteel_ingot" }, 1],
+            [{ item: "oritech:biomass" }, 1, 0.33],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 125, 0.44],
+            [{ fluid: "milf:alien_goo" }, 125, 0.21],
+        ],
+        outputItems: [[{ item: "modern_industrialization:bioresistant_alloy_ingot" }, 1, 0.82]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 61, time: 200, machine: "modern_industrialization:microbial_fabricator_bioresistant",
+        inputItems: [
+            [{ item: "modern_industrialization:adamant_dust" }, 2],
+            [{ item: "ae2:ender_dust" }, 2],
+            [{ item: "oritech:fluxite" }, 4],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 125, 0.95],
+            [{ fluid: "milf:alien_goo" }, 125, 0.65],
+        ],
+        outputItems: [[{ item: "oritech:enderic_compound" }, 1]]
     })
 
 })

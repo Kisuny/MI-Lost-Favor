@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
     casingMIRecipe('titanium', 'modern_industrialization:solid_titanium_machine_casing')
     casingMIRecipe('stainless_steel', 'modern_industrialization:clean_stainless_steel_machine_casing')
     casingMIRecipe('aluminum', 'modern_industrialization:frostproof_machine_casing')
-    casingMIRecipe('bioresistant_alloy')
+    casingMIRecipe('bioresistant_alloy', "modern_industrialization:bioresistant_machine_casing")
     casingMIRecipe('tumbaga')
     casingMIRecipe('carbon_steel')
 

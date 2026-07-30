@@ -822,6 +822,10 @@ samplesData.forEach(ore => {
 
 global.oresWithSamples = samplesData
 
+const enabledProperty = $BooleanProperty.create("enabled")
+const activeMachineShapeProperty = $IntegerProperty.create("machine_shape", 0, 5)
+const previewOffsetProperty = $IntegerProperty.create("preview_offset", 0, 5)
+
 multiblocksForPlacers.forEach(template => {
     const [nameString, itemName] = Array.isArray(template.name) ? [template.name[0], template.name[1]] : [template.name, template.name]
     if(template.activeMachineShape){

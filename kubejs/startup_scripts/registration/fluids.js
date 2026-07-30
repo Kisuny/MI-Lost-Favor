@@ -15,3 +15,17 @@ createNewFluid("alien_goo", {
     stillTexture: "milf:fluid/alien_goo",
     flowingTexture: "milf:fluid/alien_goo",
 })
+
+createNewFluid("syngas", {
+    stillTexture: "milf:fluid/syngas",
+    flowingTexture: "milf:fluid/syngas",
+    fluidTag: "c:gaseous",
+    noBlock:true
+})
+
+createNewFluid("purified_syngas", {
+    stillTexture: "milf:fluid/purified_syngas",
+    flowingTexture: "milf:fluid/purified_syngas",
+    fluidTag: "c:gaseous",
+    noBlock: true
+})

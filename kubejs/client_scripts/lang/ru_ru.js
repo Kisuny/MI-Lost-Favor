@@ -345,9 +345,6 @@ ClientEvents.lang('ru_ru', event => {
     event.add("custom.trivia.urchinkin", "Злобные ежи, стремящиеся вас уничтожить.")
     event.add("custom.trivia.wadjet", "Останки\nдревнего змееподобного воина,\nпоклявшегося защищать своего хозяина.")
 
-    // occultism
-    event.add("custom.trivia.afrit", "Блуждающий дух,\nготовый к использованию.")
-    event.add("custom.trivia.possessed_endermite", "Даже эндерические существа не застрахованы\nот влияния оккультизма.")
 
     //minecraft
     event.add("custom.trivia.bee", "Порхая по лесу,\nПчёлы неустанно производят Соты,\nкоторые можно перегнать в центрифуге в разные вещи.\nПодождите, это не совсем так...")
@@ -367,17 +364,6 @@ ClientEvents.lang('ru_ru', event => {
 
     //#endregion
 
-    //#region rituals
-    event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
-    event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
-    event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
-    event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
-
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
-    event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
-    //#endregion
 
     // esoteric reaping tooltips
     event.add('milf.esoteric_reaping.wind_nucleus', "Выпадает с <wind>Бриза</wind> при убийстве <keyword>Примитивной Косой</keyword>")

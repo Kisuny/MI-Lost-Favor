@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
                 count: 2
             },
             {
-                item: "occultism:dragonyst_dust",
+                item: "minecraft:barrier",
                 count: 1
             },
             {

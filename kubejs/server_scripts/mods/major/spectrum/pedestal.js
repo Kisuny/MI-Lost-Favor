@@ -44,8 +44,59 @@ const customPedestalCraftShapeless = (event, args) => {
 };
 
 
+// Converts an item(s) existing minecraft:crafting_shaped/shapeless recipe into a pedestal
+// craft (keeping the original ingredients) and removes the original recipe.
+// args: id (result item id), tier, time, experience, advancement, yield_upgrades,
+//       amethyst/citrine/topaz/onyx/moonstone (color counts)
+const pedestalFromRecipe = (event, args) => {
+  const ids = Array.isArray(args.id) ? args.id : [args.id];
+
+  for (const id of ids) {
+    event.forEachRecipe({ output: id }, recipe => {
+      const rJSON = JSON.parse(recipe.json);
+      const common = {
+        tier: args.tier,
+        time: args.time,
+        amethyst: args.amethyst,
+        citrine: args.citrine,
+        topaz: args.topaz,
+        onyx: args.onyx,
+        moonstone: args.moonstone,
+        experience: args.experience,
+        result: rJSON.result,
+        advancement: args.advancement,
+        yield_upgrades: args.yield_upgrades
+      };
+
+      if (rJSON.type === "minecraft:crafting_shaped") {
+        customPedestalCraft(event, Object.assign({}, common, {
+          pattern: rJSON.pattern,
+          key: rJSON.key
+        }));
+      } else if (rJSON.type === "minecraft:crafting_shapeless") {
+        customPedestalCraftShapeless(event, Object.assign({}, common, {
+          ingredients: rJSON.ingredients
+        }));
+      } else {
+        return;
+      }
+
+      event.remove({ id: recipe.getId() });
+    });
+  }
+};
+
 ServerEvents.recipes(event => {
 
+  //Exmaple (dont forget to add advancement that unlocks the item, if necessary)
+  // pedestalFromRecipe(event, {
+  //   id: "starbunclemania:fluid_sourcelink",
+  //   tier: "simple",
+  //   time: 100,
+  //   citrine: 2,
+  //   topaz: 1,
+  //   experience: 0.5,
+  // });
 })
 
 

@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         mainIngredient: "forbidden_arcanus:xpetrified_orb",
         inputs: [
             { item: "spectrum:downstone_fragments", amount: 1 },
-            { item: "occultism:dragonyst_dust", amount: 1 },
+            { item: "minecraft:barrier", amount: 1 },
             { item: "modern_industrialization:blastproof_alloy_ingot", amount: 5 },
             { item: "forbidden_arcanus:stellarite_block", amount: 1 },
         ],

@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             { tag: 'milf:basic_gemstone_powders' },
             { item: 'minecraft:phantom_membrane' },
             { item: 'forbidden_arcanus:arcane_crystal_dust' },
-            { item: 'occultism:echo_dust' },
+            { item: 'minecraft:barrier' },
             { item: 'spectrum:onyx_powder' },
         ],
         output: 'forbidden_arcanus:mundabitur_dust',
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         key: {
             "q": { "item": "neovitae:lava_crystal" },
             "w": { "item": "forbidden_arcanus:mundabitur_dust" },
-            "e": { "item": "occultism:iesnium_ingot" },
+            "e": { "item": "minecraft:barrier" },
             "t": { "item": "minecraft:iron_bars" },
             "r": { "tag": "magnumtorch:torches" },
         },

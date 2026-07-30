@@ -93,6 +93,13 @@ ClientEvents.lang('en_us', event => {
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ender_guardian', 'Slay the Ender Guardian')
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Slay Scylla')
     event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Slay the Leviathan')
+   
+    event.add('milf.credit.mi_part', `${MilfEffects.GRAD.MILF('MI:LF™ Certified MI Part')}`)
+    event.add('milf.credit.mi_machine', `${MilfEffects.GRAD.MILF('MI:LF™ Certified MI Machine')}`)
+
+    event.add('milf.credit.item', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Item')}`)
+    event.add('milf.credit.block', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Block')}`)
+    event.add('milf.credit.fluid', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Fluid')}`)
 
     event.add('tag.item.milf.knives', 'Knives')
 

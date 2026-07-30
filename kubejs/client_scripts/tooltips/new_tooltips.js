@@ -1,3 +1,5 @@
+//priority: 1
+
 // There's too much clutter here; we'll have to reorganize everything in the future to make it more read-friendly.
 
 ItemEvents.modifyTooltips(event => {
@@ -28,7 +30,7 @@ ItemEvents.modifyTooltips(event => {
     simpleShiftText({ item: "milf:electronic_ender_core", text: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89" })
     simpleShiftText({ item: "milf:crimson_veil_elixir", text: "milf.crimson_veil_elixir.tooltip", color: "#A71237" })
     simpleShiftText({ item: "enigmaticlegacyplus:enchantment_transposer", text: "milf.buy_from_goblin_and_wanderer.tooltip", color: "#7C3B94" })
-    
+    simpleShiftText({ item: "milf:orb_of_the_forest", text: "milf.orb_of_the_forest.tooltip", color: "#1CC433" })
 
     //#region
 
@@ -44,13 +46,6 @@ ItemEvents.modifyTooltips(event => {
         tooltip.insert(2, Text.translate("milf.money_pouch.tooltip").color("#f5c25b"))
     })
 
-    event.add("milf:mi_upgrader", Text.translatable(`milf.mi_upgrader.tooltip`))
-    event.add("milf:ms_s_second_order", Text.translatable(`milf.ms_s_second_order.tooltip`))
-
-    event.add("milf:grecall_concoction_t1", Text.translatable(`milf.grecall_concoction.t1.tooltip`))
-    event.add("milf:grecall_concoction_t2", Text.translatable(`milf.grecall_concoction.t2.tooltip`))
-
-    event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
     event.add("#magnumtorch:torches", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
 
     event.modify("enigmaticlegacyplus:cursed_ring", { shift: true }, tooltip => {
@@ -84,16 +79,6 @@ ItemEvents.modifyTooltips(event => {
     seeds_tooltip.forEach(seed => {
         event.add(seed, Text.translate("milf.how_to_seed.tooltip").color("#43BD24"));
     });
-    //#region
-
-    //#region Orbs
-    const orbs = ['milf:transmutation_orb', 'milf:orb_of_annulment', 'milf:orb_of_alchemy', 'milf:orb_of_regret', 'milf:regal_orb', 'milf:orb_of_corruption', 'milf:divine_orb', 'milf:orb_of_chance', "milf:orb_of_the_forest"]
-
-    orbs.forEach(orb => {
-        event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(5)}`))
-    })
-    simpleShiftText({ item: "milf:orb_of_the_forest", text: "milf.orb_of_the_forest.tooltip", color: "#1CC433" })
-
     //#region
 
 

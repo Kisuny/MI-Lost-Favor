@@ -178,48 +178,6 @@
 		}
 		{
 			dependencies: [
-				"0BCD76587F2DB00F"
-				"70A0A078B94FF034"
-			]
-			entity_vis_size: 1.0f
-			id: "640DC65E9255BECE"
-			shape: "heart"
-			tasks: [{
-				id: "1F0D6D058B31E805"
-				item: { count: 1, id: "hangglider:hang_glider" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["0BCD76587F2DB00F"]
-			entity_vis_size: 1.0f
-			id: "137C9C8D6C96D777"
-			shape: "heart"
-			tasks: [{
-				id: "566D035BD5D0BDFA"
-				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["0BCD76587F2DB00F"]
-			entity_vis_size: 1.0f
-			id: "65700530D320078C"
-			shape: "heart"
-			tasks: [{
-				id: "3DC345DCD7A02CDE"
-				item: { count: 1, id: "travelertoolbelt:gold_belt" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: -7.5d
-		}
-		{
-			dependencies: [
 				"2BF259A527954BC2"
 				"133B214DA65F4335"
 				"7D255DEA7F775448"
@@ -267,7 +225,7 @@
 			entity_vis_size: 1.0f
 			id: "02430FD89123331E"
 			shape: "heart"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "718761104CFF4A93"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:fluid_pipes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -331,7 +289,7 @@
 			dependencies: ["0BCD76587F2DB00F"]
 			entity_vis_size: 1.0f
 			id: "6F239EE66350C3CB"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "78AD41C30D90FBD6"
 				item: { count: 1, id: "modern_industrialization:aluminum_wire" }
@@ -634,7 +592,7 @@
 			entity_vis_size: 1.0f
 			id: "71A8DFC654E06849"
 			shape: "heart"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "603FD90AE0FFC11E"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:item_pipes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -705,20 +663,30 @@
 				"4C8B6443CDC82DF7"
 			]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "modern_industrialization:shale_oil_bucket"
+			}
 			id: "5C468466725E67B5"
 			shape: "diamond"
-			tasks: [{
-				id: "3E826129F5D52A35"
-				item: { count: 1, id: "modern_industrialization:shale_oil_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3E826129F5D52A35"
+					item: { count: 1, id: "modern_industrialization:shale_oil_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B9C5230CCDE52D3"
+					type: "checkmark"
+				}
+			]
 			x: 9.5d
 			y: 2.5d
 		}
 		{
 			dependencies: [
-				"7C4DF9CD80FE276F"
 				"0FAA7F9832C28913"
+				"7C4DF9CD80FE276F"
 			]
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
@@ -778,10 +746,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"6CA54239AFF1C9F6"
-				"55C1B8EEBCB3DEE5"
-			]
+			dependencies: ["6CA54239AFF1C9F6"]
 			entity_vis_size: 1.0f
 			id: "7C4DF9CD80FE276F"
 			shape: "diamond"
@@ -905,16 +870,17 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["5BD510B2143277DE"]
+			dependencies: ["6F239EE66350C3CB"]
 			entity_vis_size: 1.0f
 			id: "4E202538566347CB"
+			shape: "heart"
 			tasks: [{
 				id: "0D15BF4D9D0374E3"
 				item: { count: 1, id: "oritech:big_solar_panel_block" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -3.5d
+			x: 8.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["630ED9369282E3DB"]
@@ -962,13 +928,23 @@
 				"15310D70CE87F7DB"
 			]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "milf:alien_goo_bucket"
+			}
 			id: "0637C1EEF97A3C3E"
 			shape: "diamond"
-			tasks: [{
-				id: "7AAD6E66F0291261"
-				item: { count: 1, id: "milf:alien_goo_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7AAD6E66F0291261"
+					item: { count: 1, id: "milf:alien_goo_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54A99832E3D2943E"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 1.5d
 		}
@@ -1002,7 +978,7 @@
 		{
 			dependencies: [
 				"70A0A078B94FF034"
-				"04D87F5213AF93A2"
+				"6F239EE66350C3CB"
 			]
 			entity_vis_size: 1.0f
 			id: "34DC427BAEC84462"
@@ -1012,14 +988,14 @@
 				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:diamond_wand" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -3.5d
+			x: 6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1CF1098F75837B7B"]
 			entity_vis_size: 1.0f
 			id: "5BD510B2143277DE"
-			shape: "octagon"
+			shape: "diamond"
 			tasks: [{
 				id: "759B9F18860A87FF"
 				item: { count: 1, id: "modern_industrialization:electronic_circuit" }
@@ -1137,7 +1113,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["5C468466725E67B5"]
+			dependencies: ["1BD5551B083C5C1E"]
 			entity_vis_size: 1.0f
 			id: "34BA5A209E728ACB"
 			shape: "diamond"
@@ -1308,33 +1284,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["5C468466725E67B5"]
-			entity_vis_size: 1.0f
-			id: "32A60B0680EB175A"
-			shape: "diamond"
-			tasks: [{
-				id: "2E7F91997CC7DD9D"
-				item: { count: 1, id: "modern_industrialization:naphtha_bucket" }
-				type: "item"
-			}]
-			x: 9.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["32A60B0680EB175A"]
-			entity_vis_size: 1.0f
-			id: "6AAF7C6EBE40C5FF"
-			shape: "diamond"
-			tasks: [{
-				id: "1FCF9B03144F88C9"
-				item: { count: 1, id: "oritech:polymer_resin" }
-				type: "item"
-			}]
-			x: 11.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["6AAF7C6EBE40C5FF"]
+			dependencies: ["087CC7EB7F8E39A2"]
 			entity_vis_size: 1.0f
 			id: "0FAA7F9832C28913"
 			shape: "diamond"
@@ -1349,15 +1299,97 @@
 		{
 			dependencies: ["4C8B6443CDC82DF7"]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "modern_industrialization:hydrochloric_acid_bucket"
+			}
 			id: "18A36B86806A5EDB"
 			shape: "diamond"
-			tasks: [{
-				id: "60300BF1BAD7A5C4"
-				item: { count: 1, id: "modern_industrialization:hydrochloric_acid_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "60300BF1BAD7A5C4"
+					item: { count: 1, id: "modern_industrialization:hydrochloric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AB80E568A9EAE36"
+					type: "checkmark"
+				}
+			]
 			x: 6.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["5C468466725E67B5"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "milf:syngas_bucket"
+			}
+			id: "1BD5551B083C5C1E"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0AD54A37E3AC4DD7"
+					item: { count: 1, id: "milf:syngas_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08B23E61AF543B70"
+					type: "checkmark"
+				}
+			]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1BD5551B083C5C1E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "milf:purified_syngas_bucket"
+			}
+			id: "087CC7EB7F8E39A2"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "440E93619BB124DD"
+					item: { count: 1, id: "milf:purified_syngas_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "71180D30C44D5864"
+					type: "checkmark"
+				}
+			]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6BEE4550F660FDFC"]
+			entity_vis_size: 1.0f
+			id: "0801EB1C659E1923"
+			shape: "heart"
+			tasks: [{
+				id: "7F2417232DEB1A0F"
+				item: { count: 1, id: "oritech:exo_helmet" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F239EE66350C3CB"]
+			entity_vis_size: 1.0f
+			id: "5D494B7A215617F0"
+			shape: "heart"
+			tasks: [{
+				id: "0AB130A41E5973D2"
+				item: { count: 1, id: "immersiveengineering:item_batcher" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -10.5d
 		}
 	]
 }

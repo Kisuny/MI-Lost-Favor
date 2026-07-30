@@ -177,6 +177,15 @@
 			dependencies: ["590167B593FE267A"]
 			entity_vis_size: 1.0f
 			id: "6CB0342958887169"
+			rewards: [{
+				count: 22
+				id: "47FEA36526833E50"
+				item: {
+					count: 1
+					id: "modern_industrialization:lignite_coal"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "08C35FBD19C6CF75"
@@ -485,6 +494,14 @@
 				id: "yet_another_industrialization:bronze_mixed_input_hatch"
 			}
 			id: "38AC9B9A78A6B95D"
+			rewards: [{
+				id: "79BA75187DB4A7D5"
+				item: {
+					count: 1
+					id: "yet_another_industrialization:bronze_mixed_output_hatch"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -495,11 +512,6 @@
 				{
 					id: "2DE28D70E493975C"
 					item: { count: 1, id: "modern_industrialization:bronze_item_input_hatch" }
-					type: "item"
-				}
-				{
-					id: "0133DE286CBDFAD2"
-					item: { count: 1, id: "yet_another_industrialization:bronze_mixed_input_hatch" }
 					type: "item"
 				}
 			]
@@ -513,6 +525,14 @@
 				id: "yet_another_industrialization:bronze_mixed_output_hatch"
 			}
 			id: "7204D7ED210430A0"
+			rewards: [{
+				id: "7BA2E39525494201"
+				item: {
+					count: 1
+					id: "yet_another_industrialization:bronze_mixed_input_hatch"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -523,11 +543,6 @@
 				{
 					id: "32A16A677B2D1488"
 					item: { count: 1, id: "modern_industrialization:bronze_fluid_output_hatch" }
-					type: "item"
-				}
-				{
-					id: "5BEDAAD4FB288E37"
-					item: { count: 1, id: "yet_another_industrialization:bronze_mixed_output_hatch" }
 					type: "item"
 				}
 			]
@@ -878,7 +893,7 @@
 			dependencies: ["590167B593FE267A"]
 			entity_vis_size: 1.0f
 			id: "662C013A5E66F0B9"
-			shape: "rsquare"
+			shape: "octagon"
 			tasks: [{
 				id: "08DB012FE1B6FE06"
 				item: { count: 1, id: "extended_industrialization:bronze_solar_boiler" }
@@ -1087,6 +1102,15 @@
 			dependencies: ["590167B593FE267A"]
 			entity_vis_size: 1.0f
 			id: "606AC3FF6B9213D5"
+			rewards: [{
+				count: 43
+				id: "32D0DE84D74DA665"
+				item: {
+					count: 1
+					id: "minecraft:bone_meal"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "59B6C19F7333605E"
@@ -1126,6 +1150,15 @@
 			dependencies: ["590167B593FE267A"]
 			entity_vis_size: 1.0f
 			id: "2CCA1CEC324FE789"
+			rewards: [{
+				count: 13
+				id: "3283B63B2DCF534E"
+				item: {
+					count: 1
+					id: "modern_industrialization:copper_ring"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "17E483A9F6AD4992"
@@ -1212,14 +1245,14 @@
 			dependencies: ["2B815502453269AF"]
 			entity_vis_size: 1.0f
 			id: "06F29772DEA6EF99"
-			shape: "square"
+			shape: "heart"
 			tasks: [{
 				id: "03149AA931214853"
 				item: { count: 1, id: "modern_industrialization:steel_tank" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.5d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1353,14 +1386,14 @@
 			dependencies: ["2B815502453269AF"]
 			entity_vis_size: 1.0f
 			id: "5DC8B6B0DD382499"
-			shape: "square"
+			shape: "heart"
 			tasks: [{
 				id: "53F814A698F5D2D1"
 				item: { count: 1, id: "modern_industrialization:steel_barrel" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.5d
+			x: 0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2867,18 +2900,6 @@
 			}]
 			x: 20.5d
 			y: 5.5d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "5D494B7A215617F0"
-			shape: "diamond"
-			tasks: [{
-				id: "0AB130A41E5973D2"
-				item: { count: 1, id: "immersiveengineering:item_batcher" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -5.5d
 		}
 		{
 			dependencies: [

@@ -324,6 +324,36 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "PTP",
+            " P "
+        ],
+        key: {
+            T: { item: "minecraft:torch" },
+            P: { item: "modern_industrialization:iron_plate" },
+            R: { item: "modern_industrialization:iron_ring" },
+        },
+        outputItems: [[{ id: "minecraft:lantern" }, 3]],
+        removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "PTP",
+            " P "
+        ],
+        key: {
+            T: { item: "minecraft:soul_torch" },
+            P: { item: "modern_industrialization:iron_plate" },
+            R: { item: "modern_industrialization:iron_ring" },
+        },
+        outputItems: [[{ id: "minecraft:soul_lantern" }, 3]],
+        removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
 })
 
 KubeJSTweaks.beforeRecipes(event => {    

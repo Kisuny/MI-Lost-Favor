@@ -446,6 +446,18 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShapeless(event, {
+        inputItems: [
+            [{ "tag": "minecraft:sand" }, 1],
+            [neoCompound([
+                { item: "minecraft:brick"},
+                { item: "modern_industrialization:fire_clay_brick" }
+            ]), 1]
+        ],
+        outputItems: [[{ "id": "ytech:ingot_sand_mold" }]],
+        removeRecipe: true
+    })
+
     miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
         inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],

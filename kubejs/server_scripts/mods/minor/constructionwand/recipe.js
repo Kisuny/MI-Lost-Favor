@@ -32,14 +32,13 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             " BP",
-            " CB",
+            " SB",
             "S  "
         ],
         key: {
             P: { item: "modern_industrialization:diamond_large_plate" },
             S: { item: "immersiveengineering:stick_treated" },
-            B: { item: "modern_industrialization:motor" },
-            C: { item: "modern_industrialization:electronic_circuit" }
+            B: { item: "modern_industrialization:aluminum_wire" },
         },
         outputItems: [[{ id: "constructionwand:diamond_wand" }, 1]],
         removeRecipe: true

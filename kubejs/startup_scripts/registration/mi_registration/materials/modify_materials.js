@@ -1,50 +1,42 @@
-MIMaterialEvents.modifyMaterial('uranium', event => {
-    event.builder.addParts('plate', "bolt")
-})
+MIMaterialModifier("uranium").addParts(["plate", "bolt"])
+MIMaterialModifier("steel").addParts(["wire"])
+MIMaterialModifier("lead").addParts(["wire", "bolt", "rod"])
+MIMaterialModifier("invar").addPipeCasing(8.0).addParts(["curved_plate"])
+MIMaterialModifier("silver").addParts(["rod", "bolt"])
+MIMaterialModifier("nickel").addParts(["rod", "bolt"])
+MIMaterialModifier("electrum").addParts(["rod", "bolt"])
+MIMaterialModifier("tin").addParts(["large_plate"])
+MIMaterialModifier("gold").addParts(["large_plate"])
+MIMaterialModifier("copper").addParts(["large_plate"])
+MIMaterialModifier("bronze").addParts(["large_plate"])
+MIMaterialModifier("battery_alloy").addParts(["large_plate"])
 
-MIMaterialEvents.modifyMaterial('steel', event => {
-    event.builder.addParts('wire')
-})
+function MIMaterialModifier(name ){
+    this.name = name
 
-MIMaterialEvents.modifyMaterial('lead', event => {
-    event.builder.addParts('wire', 'bolt', 'rod')
-})
+    this.addParts = function(parts){
+        MIMaterialEvents.modifyMaterial(this.name, event => {
+            event.builder.addParts(parts)
+        })
 
-MIMaterialEvents.modifyMaterial('invar', event => {
-    event.builder
-        .pipeCasing(8.0)
-        .addParts("curved_plate")
-})
+        parts.forEach(part => {
+            
+            milfData.addCredit(`${this.name}_${part}`,"mi_part", "modern_industrialization")
+        })
 
-MIMaterialEvents.modifyMaterial('silver', event => {
-    event.builder.addParts("rod", "bolt")
-})
+        return this
+    }
 
-MIMaterialEvents.modifyMaterial('nickel', event => {
-    event.builder.addParts("rod", "bolt")
-})
+    this.addPipeCasing = function(hardness){
+        MIMaterialEvents.modifyMaterial(this.name, event => {
+            event.builder.pipeCasing(hardness)
+        })
 
-MIMaterialEvents.modifyMaterial('constantan', event => {
-    event.builder.addParts("rod", "bolt")
-})
+        milfData.addCredit(`${this.name}_machine_casing_pipe`, "mi_block", "modern_industrialization")
 
-MIMaterialEvents.modifyMaterial('electrum', event => {
-    event.builder.addParts("rod", "bolt")
-})
-
-MIMaterialEvents.modifyMaterial('tin', event => {
-    event.builder.addParts("large_plate")
-})
-
-MIMaterialEvents.modifyMaterial('gold', event => {
-    event.builder.addParts("large_plate")
-})
-
-MIMaterialEvents.modifyMaterial('copper', event => {
-    event.builder.addParts("large_plate")
-})
-
-MIMaterialEvents.modifyMaterial('bronze', event => {
-    event.builder.addParts("large_plate")
-})
+        return this
+    }
+    
+    return this
+}
 

@@ -173,6 +173,41 @@ registerMIMachine('electric_coke_oven', {
     mainCasing: 'heatproof_machine_casing', mainOverlays: 'coke_oven', frontOverlay: true
 })
 
+registerMIMachine('source_alembic', {
+    itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true, casing: 'sourcestone_machine_casing',
+    shape: [
+        ['    AAAAA    ', '             ', '    AAAAA    ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        ['  AAAAAAAAA  ', '    aaaaa    ', '  AAAAAAAAA  ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        [' AAAAAAAAAAA ', '   BBBBBBB   ', ' AAAAAAAAAAA ', '             ', '             ', '             ', '     bbb     ', '     bbb     ', '     bbb     ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        [' AAAAAAAAAAA ', '  BBBBBBBBB  ', ' AAAAAAAAAAA ', '             ', '     bbb     ', '    bbbbb    ', '   bbCCCbb   ', '   bbCCCbb   ', '   bb   bb   ', '    bbbbb    ', '     bbb     ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        ['AAAAAAAAAAAAA', ' aBBBBBBBBBa ', 'AAAAAAAAAAAAA', '     ccc     ', '    bbbbb    ', '   bCCCCCb   ', '   bCCCCCb   ', '   bCCCCCb   ', '   b CCC b   ', '   b     b   ', '    bbbbb    ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        ['AAAAAAAAAAAAA', ' aBBBBBBBBBa ', 'AAAAAAAAAAAAA', '    cbbbc    ', '   bbCCCbb   ', '   bCCCCCb   ', '  bCCCCCCCb  ', '  bCCCCCCCb  ', '  bCCCCCC b  ', '   b  C  b   ', '   bb   bb   ', '     bbb     ', '     bbb     ', '     AAA     ', '     bbb     ', '     bbb     ', '     bbb     ', '     bAb     ', '     DAD     '],
+        ['AAAAAAAAAAAAA', ' aBBBBBBBBBa ', 'AAAAAAAAAAAAA', '  ccAbbbAcc  ', '  DbbCCCbbD  ', ' cAbCCCCCbAc ', ' DbCCCCCCCbD ', ' DbCCCCCCCbD ', ' DbCCCCCC bD ', ' cAb CCC bAc ', '  Dbb C bbD  ', '  ccAbCbAcc  ', '    Db bD    ', '    DAdAD    ', '     b b     ', '     b b     ', '     b b     ', '     A A     ', '     A A     '],
+        ['AAAAAAAAAAAAA', ' aBBBBBBBBBa ', 'AAAAAAAAAAAAA', '    cbbbc    ', '   bbCCCbb   ', '   bCCCCCb   ', '  bCCCCCCCb  ', '  bCCCCCC b  ', '  b CCCCC b  ', '   b  CC b   ', '   bb   bb   ', '     bbb     ', '     bbb     ', '     AAA     ', '     bbb     ', '     bbb     ', '     bbb     ', '     bAb     ', '     DAD     '],
+        ['AAAAAAAAAAAAA', ' aBBBBBBBBBa ', 'AAAAAAAAAAAAA', '     ccc     ', '    bbbbb    ', '   bCCCCCb   ', '   bCCCCCb   ', '   bCCCCCb   ', '   b CCC b   ', '   b     b   ', '    bbbbb    ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        [' AAAAAAAAAAA ', '  BBBBBBBBB  ', ' AAAAAAAAAAA ', '             ', '     bbb     ', '    bbbbb    ', '   bbCCCbb   ', '   bbCCCbb   ', '   bb   bb   ', '    bbbbb    ', '     bbb     ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        [' AAAAAAAAAAA ', '   BBBBBBB   ', ' AAAAAAAAAAA ', '             ', '             ', '             ', '     bbb     ', '     bbb     ', '     bbb     ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        ['  AAAAAAAAA  ', '    aaBaa    ', '  AAAAAAAAA  ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             '],
+        ['    AAAAA    ', '      #      ', '    AAAAA    ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ']
+    ],
+    shapeKeys: {
+        "A": {id: "ars_nouveau:sourcestone_large_bricks", tag: "ars_nouveau:purple_bricks"},
+        "a": {id: "ars_nouveau:sourcestone", tag: "ars_nouveau:sourcestones", hatches: MI_HATCHES_ALL},
+        "B": {id: "ars_nouveau:sourcestone", tag: "ars_nouveau:sourcestones"},
+        "b": {id: "spectrum:amethyst_glass", tag: "spectrum:gemstone_glass"},
+        "C": {id: "spectrum:amethyst_powder_block", tag: "spectrum:gemstone_powder_blocks"},
+        "c": {id: "ars_nouveau:sourcestone_large_bricks_slab", tag: "ars_nouveau:purple_brick_slabs"},
+        "D": "ars_additions:sourcestone_wall",
+        "d": {id: "minecraft:campfire", tag:  "minecraft:campfires"},
+    },
+    pBar: { x: 58, y: 33, name: 'arrow' },
+    itemInputSlots: [[40, 15, 3, 1]],
+    itemOutputSlots: [[100, 15, 1, 1]],
+    fluidInputSlots: [[40, 55, 1, 1]],
+    fluidOutputSlots: [[100, 55, 1, 1]],
+    mainCasing: 'sourcestone_machine_casing', mainOverlays: 'blast_furnace', frontOverlay: true
+})
+
 registerSingleMIMachine('mi_furnace', {
     name: "Furnace", itemsIn: true, itemsOut: true, tiers: machineTiersAll,
     pBar: { x: 77, y: 33, name: 'arrow' }, efBar: { x: 38, y: 62 }, enBar: { x: 18, y: 30 },

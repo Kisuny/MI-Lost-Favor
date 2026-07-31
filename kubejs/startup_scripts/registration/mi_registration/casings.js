@@ -15,4 +15,6 @@ MIMachineEvents.registerCasings(event => {
     event.registerBlockImitation("bioresistant_machine_casing", "modern_industrialization:bioresistant_machine_casing")
     event.registerBlockImitation("bioactive_machine_casing", "modern_industrialization:bioactive_machine_casing")
     event.registerBlockImitation("biointensive_machine_casing", "modern_industrialization:biointensive_machine_casing")
+
+    event.registerBlockImitation("sourcestone_machine_casing", "ars_nouveau:sourcestone")
 })

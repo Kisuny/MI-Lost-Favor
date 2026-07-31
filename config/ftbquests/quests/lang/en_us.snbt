@@ -8,15 +8,12 @@
 	chapter.231570DE6A7FCD52.chapter_subtitle: ["chapter contains all the travel information and, in a way, the entire RPG component of the modpack!"]
 	chapter.231570DE6A7FCD52.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Journeys \\& Gear"
 	chapter.2854B367FF485F69.title: "Less-simple Machinery"
-	chapter.2D655D4AC57B9E25.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Midgame Magic II"
 	chapter.389198189DCA1A49.chapter_subtitle: ["This chapter lists all the utility items for easy finding"]
 	chapter.389198189DCA1A49.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Utilities"
-	chapter.3ED35234FA540A5A.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Midgame Magic I"
 	chapter.3ED5DF3804C2BE8A.chapter_subtitle: ["Easy-to-use navigation showing the different stages"]
 	chapter.3ED5DF3804C2BE8A.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Stages</shadow>"
 	chapter.4058552B01F39ED4.chapter_subtitle: ["A chapter that helps you understand how to automate processes, complete with examples"]
 	chapter.4058552B01F39ED4.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><b>How to automate?"
-	chapter.432989F8344DA732.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Endgame Magic I"
 	chapter.4D6A3C5941C9908A.chapter_subtitle: ["[WIP Chapter]"]
 	chapter.4D6A3C5941C9908A.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>endgame"
 	chapter.4E4F6FF3EEEB1E51.chapter_subtitle: ["Essential information that describes and explains the mechanics of the modpack"]
@@ -307,7 +304,6 @@
 		"{@pagebreak}"
 		"Удобный способ <positive>хранить еду</positive>. Многооо еды. <positive>ЛКМ</positive> для смены режима, <positive>ПКМ</positive> с <warning>закрытым</warning> режимом для смены выбранной еды, <positive>ПКМ</positive> с <positive>открытым</positive> режимом для <positive>употребления</positive> указанной еды. Чтобы <positive>положить еду</positive> в бокс - <positive>ПКМ</positive> едой на бокс."
 	]
-	quest.083BEEC631645C14.quest_desc: ["<positive>Summon</positive> <keyword>Possessed Bee</keyword> with <keyword>Ihagan's Enthrallment</keyword> and <positive>kill</positive>"]
 	quest.092205B6B1CC863A.quest_desc: [
 		"A <keyword>block</keyword> for <positive>vertical movement</positive> through blocks!"
 		"{@pagebreak}"
@@ -320,11 +316,6 @@
 	]
 	quest.0981C6749746653F.quest_desc: ["<positive>Draws</positive> the world forward to the next <magic>sunset</magic>. <warning>Consumed on use</warning>."]
 	quest.0987D26A943A7B60.quest_subtitle: "That's tough"
-	quest.09A4E941382DDCB7.quest_desc: [
-		"Find the <keyword>Gatekeeper</keyword> and <positive>defeating him in a duel</positive>."
-		"{@pagebreak}"
-		"Найдите <keyword>привратника</keyword> и <positive>одолейте его в дуэли</positive>."
-	]
 	quest.0A302433CAC7895F.quest_desc: [
 		"<warning>Toxin Oil!</warning> Like its predecessor, but <warning>WAY MORE VOLATILE</warning>. Using <warning>toxin</warning> as a base, we can use a deadly effect that produces a <warning>LETHAL result</warning>, which poison has always lacked. My magnificent creation can now be offered to EVERYONE."
 		"{@pagebreak}"
@@ -383,7 +374,6 @@
 	]
 	quest.0C1938F058F0ECC8.quest_desc: ["Forged in the <keyword>Tier III altar</keyword> for <keyword>40,000 EV</keyword>. Required to power <property>Sentient Extraction</property> rituals and sustain the deeper blood workings of Tier III."]
 	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The <keyword>Quantum Catcher</keyword> can be used to <positive>capture and transport entities</positive>. To obtain it, you can <positive>combine</positive> <keyword>Spawner Scrap</keyword> and an <keyword>Arcane Crystal Block</keyword> in a <keyword>Smithing Table</keyword>"]
-	quest.0C6231CE410086A5.title: "Affrit Crusher"
 	quest.0C6CEA409B38B70C.quest_desc: [
 		"Create this <keyword>compass</keyword> and find a <magic>mysterious structure</magic>!"
 		"{@pagebreak}"
@@ -424,7 +414,6 @@
 		"• +2x Power Capacity"
 		"• +2x Recharge Rate"
 	]
-	quest.0D2D182AEBB7368B.title: "Afrit Crystallizer"
 	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
 	quest.0D58533D474BB840.quest_desc: [
 		"Позволяет получать доступ к машинам для воронок или других необходимых способов взаимодействия с машиной."
@@ -741,7 +730,11 @@
 		"{@pagebreak}"
 		"Если объединить на наковальне вместе с <curse>Evil Essence</curse> это даст заряды <named>Totem Of Undying</named>"
 	]
-	quest.14A425365D35DE37.quest_desc: ["Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"]
+	quest.14A425365D35DE37.quest_desc: [
+		"Stores up to <keyword>~1000 levels</keyword>, <positive>attracts experience</positive> from nearby, with an adjustable <keyword>experience collection radius</keyword>"
+		"{@pagebreak}"
+		"Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"
+	]
 	quest.14BA9A5CAC394A27.quest_desc: ["Allows the plant on which it is used to <positive>fully grow</positive> with only <keyword>one</keyword> use compared to <keyword>Bone Meal</keyword>. You can also make <keyword>Magical Farm Land</keyword> with it."]
 	quest.14D2170A0424A902.quest_desc: [
 		"Toxic paste is extremely unstable. But its volatility will be the highlight of my next alchemical instrument! Potions are too refined, too narrow. By creating a flask that yields greater capacity and putting a little bit of the paste inside, I can make a much more efficient and possibly renewable potion container."
@@ -775,11 +768,6 @@
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду</warning>!"
 	]
 	quest.16C5B67E3D1F579C.quest_desc: ["Scribed with a <keyword>Block of Lapis</keyword> and awakened by a <soul>Sea Pickle</soul>. <positive>Pipes water</positive> into every fluid container touching its six faces; every 5 ticks it deposits up to <property>6 buckets</property>, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and <warning>parks completely</warning> on a redstone signal."]
-	quest.16CEDB259696495B.quest_desc: [
-		"As with previous <keyword>familiars</keyword> and <keyword>Possessed mobs</keyword>, read about them in the <keyword>book</keyword>."
-		"{@pagebreak}"
-		"Как и с прошлыми <keyword>фамильярами</keyword> и <keyword>одержимыми мобами</keyword>, прочтите информацию о них в <keyword>книге</keyword>"
-	]
 	quest.16FC0392E5AA51D8.quest_desc: [
 		"There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from TOXIN, I have managed to create this cloudy gas that weakens and blinds in a small area."
 		"{@pagebreak}"
@@ -810,6 +798,8 @@
 		""
 		"<keyword>Maps</keyword> are essential to not get lost here, so you'll have an opportunity to make a scribbled one quite early, but the proper one will require the <property>tech knowledge</property> you don't possess as of the time being, but worry not, as it will come to you eventually."
 		""
+		"<positive>Press <key>R</key> to open the Radial Menu</positive>, where you'll find most of the modpack important <keyword>keybindings</keyword>."
+		""
 		"Inhabitants of those long-forgotten <magic>places</magic> around the world experienced burglary firsthand and thus know how to protect their possessions, <warning>locking them behind those magical locks</warning> </font>"
 	]
 	quest.17A44FD7738F4496.quest_desc: [
@@ -822,8 +812,6 @@
 		"{@pagebreak}"
 		"[ \"Вы можете использовать \", { \"text\": \"клетку для животных\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"617E14880D9D75A0\" } }, \" чтобы получать необходимое количество Tongue of Dog!\" ]"
 	]
-	quest.18238251518B54D5.quest_desc: ["123"]
-	quest.18238251518B54D5.title: "Chimmera Familiar"
 	quest.188484018F12E3B9.quest_desc: [
 		"We won't stop at simple oils. We have many more possibilities FOR MORE POTENCY! Toxin has opened new doors to its potential. AND WE WILL USE THEM GRACIOUSLY!"
 		""
@@ -848,7 +836,7 @@
 		"{@pagebreak}"
 		"«<keyword>Душераздиратель</keyword>» хранит в себе душепожирающий <soul>Огонь Души</soul>. Поэтому он значительно <positive>сильнее</positive>, когда используется против живых существ. К сожалению, из-за этого он гораздо <warning>слабее</warning> против врагов, лишенных души."
 	]
-	quest.19300837BD132C67.quest_desc: ["<positive>Бустит по горизонтали</positive> когда встаёшь"]
+	quest.19300837BD132C67.quest_desc: [""]
 	quest.19545E28C84E87B2.quest_desc: [
 		"If the items have risen above the altar - the recipe is correct."
 		""
@@ -1039,11 +1027,6 @@
 	]
 	quest.1BDEFAB880413159.quest_desc: ["<positive>Advances</positive> the world to the next <magic>sunrise</magic>. <warning>Consumed on use</warning>."]
 	quest.1BFC38890CBCF4F4.quest_desc: ["The <property>magnetized modifier</property> can only be used on <keyword>Boots</keyword>. When boots with this modifier are <positive>equipped</positive>, the item pick-up range of the player will increase by <keyword>1.5 blocks</keyword>."]
-	quest.1C0F24C077FF849F.quest_desc: [
-		"You can find more <property>rituals</property> in the <keyword>book</keyword>; we only include the most useful ones!"
-		"{@pagebreak}"
-		"Больше <property>ритуалов</property> можно посмотреть в <keyword>книге</keyword>, мы добавляем только самые полезные!"
-	]
 	quest.1C223281C108DA0A.quest_desc: [
 		"A more advanced <keyword>station</keyword> for creating <keyword>potions</keyword>. Can also create some other liquids."
 		"{@pagebreak}"
@@ -1164,6 +1147,8 @@
 		"После активации наденьте его в слот Curios, чтобы получить <property>+1 слот для талисмана</property>, позволяющий надеть ещё одну безделушку. Пробуждение глаза также открывает <magic>Рассказчика</magic> - таинственный голос, который начинает комментировать ваш путь: вход в Нижний мир или Энд, бой с Иссушителем или Драконом Края, смерть, возрождение и другие ключевые моменты."
 	]
 	quest.2141539997D6480F.quest_desc: [
+		"\"R\" - Radial menu."
+		""
 		"Mobs - gone."
 		""
 		"Dungeons - scary."
@@ -1275,7 +1260,6 @@
 		"{@pagebreak}"
 		"Один из самых важных блоков в модпаке (пока вы не придумаете, как автоматизировать такую ручную операцию *подмигнул*) позволяет <positive>создавать блоки</positive> из ингредиентов в сетке <keyword>3x3x3</keyword>."
 	]
-	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.245E70DC7FBF7DB3.quest_desc: ["<positive>Radiates illumination</positive> from invisible sources above the <magic>array</magic>, lighting an area without cluttering it with torches."]
 	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is <warning>finite</warning>. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The <keyword>Vitaemancer</keyword> has devised Rituals to assist with focused training, and the <property>Ritual of Sentient Evolution</property> to imbue your armour with a greater capacity for growth. Stand upon the <named>Master Ritual Stone</named> while clad in <named>Sentient Armor</named>, and the circle pours its power into the symbiotic plates. The armour's potential <positive>expands</positive> beyond its former limits."]
 	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
@@ -1408,6 +1392,12 @@
 		"{@pagebreak}"
 		"&#FEECD6Мешок&r позволяет хранить в себе &l&#FEECD6огромное&r&r количество предметов одного типа, удобно в шахтах!"
 	]
+	quest.2AB24F8E192B7EE4.quest_desc: [
+		"Life and death have always walked together. One tome grants growth, the other a worthy end"
+		"{@pagebreak}"
+		"Жизнь и смерть всегда идут рядом. Один том дарует рост, другой - достойное завершение"
+	]
+	quest.2AB24F8E192B7EE4.title: "Blessing and Grace"
 	quest.2B2F816ABE338A0C.quest_desc: [
 		"A <keyword>fume filter</keyword> can be added to <keyword>fume funnels</keyword> to further increase yield. With <keyword>two filters</keyword>, success is <positive>guaranteed</positive>."
 		"{@pagebreak}"
@@ -1443,7 +1433,7 @@
 		""
 		"{image:milf:textures/quest_pic/locking.png width:200 height:170 align:center}"
 	]
-	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. You can read them whenever, &owe won't judge&r."]
+	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. <warning><bold>You can read them whenever, we won't judge</warning>."]
 	quest.2BAF1070D316E4A4.quest_desc: [
 		"Apotheosis overhauls Enchanting by adding <keyword>Enchanting Stats</keyword>.  These are special properties provided by bookshelves that change the behavior of the <keyword>Enchanting Table</keyword>. There are three primary stats, and a few secondary stats. In addition, the max level of the Enchanting Table is increased to <property>100</property>, and the max levels of most enchantments are automatically increased."
 		""
@@ -1549,11 +1539,6 @@
 		"Данный блок &#FEECD6никак не реагирует&r на свет, он будет всегда того цвета, которого он был, вне зависимости от &#FEECD6падающего на него света&r!"
 		""
 		"Невероятно хорошо подходит в качестве &#CAE4C8хромокея&r, у нас есть любители создавать &#FEECD6контент&r?"
-	]
-	quest.2E3381758862F44D.quest_desc: [
-		"up to <keyword>4</keyword>"
-		"{@pagebreak}"
-		"До <keyword>4</keyword>"
 	]
 	quest.2E3384D5D0C2A9CF.quest_desc: [
 		"You can put most mobs - even <blood>bosses</blood> - inside and start farming them using a <keyword>drygmy</keyword>; the jars also support catching <keyword>foliates</keyword> from the <magic>Occultism</magic> mod."
@@ -1748,11 +1733,6 @@
 		"Предметные трубы обычно предпочитают ближайший инвентарь. Ингибитор увеличивает длину соединения на 1000 для целей поиска пути, что заставляет трубы для предметов избегать этого соединения, если это возможно."
 	]
 	quest.33D177C9C103372D.quest_desc: ["Allows you to <positive>throw oils</positive>. Can become <property>handy</property> in the future."]
-	quest.3439A90E9544512F.quest_desc: [
-		"Deep down below, you found a <magic>secure structure</magic>. There &lmust be a way&r to get into it, if not now, maybe later. You better <keyword>remember this place</keyword>."
-		"{@pagebreak}"
-		"Глубоко, внизу, вы нашли <magic>защищённое сооружение</magic>. &lДолжен&r быть способ попасть в него! Если не сейчас, то потом... лучше <keyword>запомните это место</keyword>"
-	]
 	quest.344DE4692AD588E0.quest_desc: [
 		"You can make a &#FEECD6present&r and give it to your &#CAE4C8friend&r, or your &#d33b2bunfriend&r!"
 		""
@@ -1775,7 +1755,7 @@
 		"{@pagebreak}"
 		"Постройте &#FEECD6святыню слияния&r, но имейте ввиду, для неё должен быть &#FEECD6доступ&r к &#9BB8EDнебу&r."
 	]
-	quest.353FB272140BABA3.quest_desc: ["<positive>Пушит игрока вверх</positive>, джамп пад?"]
+	quest.353FB272140BABA3.quest_desc: [""]
 	quest.353FB272140BABA3.quest_subtitle: "Jump pad"
 	quest.35450D58651AF44B.quest_desc: ["Allows you to <positive>access your system</positive> from any point in the world when linked to <keyword>quantum ring</keyword>"]
 	quest.357CC2253FDA3DA1.quest_desc: [
@@ -1887,6 +1867,41 @@
 		"Более подробно о росте можно прочитать в <keyword>книге</keyword>!"
 	]
 	quest.37EC4A78711DC4E6.quest_subtitle: "trashcan"
+	quest.3827371BD2D8A5BA.quest_desc: [
+		"&lMutations&r"
+		""
+		"While many plants are naturally occurring, herbology often requires witches to mutate existing plants to suit their needs."
+		""
+		"This is done using <keyword>mutandis</keyword> or <keyword>mutandis extremis</keyword>."
+		"{@pagebreak}"
+		"&lMutandis&r"
+		""
+		"Using <keyword>mutandis</keyword> on a block will make it start <property>mutating</property>, giving it a chance to turn into a different block based on nearby <magic>mutagens</magic> after a few minutes."
+		"{@pagebreak}"
+		""
+		"&lMutagens&r"
+		""
+		"<magic>Mutagens</magic> are the blocks a witch needs to place in the area surrounding a mutating plant. The more mutagens you place, the more likely it is for the plant to <property>mutate</property>."
+		""
+		"The block in the center is the plant being mutated, while the surrounding blocks are its <magic>mutagens</magic>."
+		""
+		"{@pagebreak}"
+		"&lМутации&r"
+		""
+		"Хотя многие растения встречаются в природе, гербология часто требует, чтобы ведьмы мутировали существующие растения под свои нужды."
+		""
+		"Это делается с помощью <keyword>мутандиса</keyword> или <keyword>мутандиса экстремис</keyword>."
+		"{@pagebreak}"
+		"&lМутандис&r"
+		""
+		"Использование <keyword>мутандиса</keyword> на блоке заставляет его начать <property>мутировать</property>, давая ему шанс превратиться в другой блок в зависимости от находящихся рядом <magic>мутагенов</magic> через несколько минут."
+		"{@pagebreak}"
+		"Мутагены"
+		""
+		"<magic>Мутагены</magic> - это блоки, которые ведьма должна разместить в области вокруг мутирующего растения. Чем больше мутагенов вы разместите, тем выше вероятность, что растение <property>мутирует</property>."
+		""
+		"Блок в центре - это мутируемое растение, а окружающие блоки - его <magic>мутагены</magic>."
+	]
 	quest.3844F342D000826A.quest_desc: [
 		"A <keyword>copper mesh</keyword> can catch <keyword>tin</keyword>, <keyword>lead</keyword> and <keyword>copper</keyword>."
 		"{@pagebreak}"
@@ -1955,7 +1970,6 @@
 		"{@pagebreak}"
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
 	]
-	quest.3AB217EEA136075C.title: "Djinni Crusher"
 	quest.3ACEAB25342B053C.title: "WIP Items"
 	quest.3B40DB8CA23BB5A0.quest_desc: ["When <keyword>walls and fences</keyword> hold you, fret not, now you can <positive>jump them</positive>!"]
 	quest.3B4BC79A5DE6EC7C.quest_desc: [
@@ -2230,6 +2244,11 @@
 		"<warning>Отключает спавн мобов</warning> в области"
 	]
 	quest.4234498523BE845B.quest_desc: ["Once your model is <positive>Basic</positive> or higher, you can use the <keyword>Simulation Chamber</keyword> to run simulations. Simulations will always produce a <property>generalized prediction</property>, and may also produce a <keyword>Mob Prediction</keyword>, based on the <property>accuracy</property> of the model. The <keyword>higher tier</keyword> of the model, the higher the accuracy, up to <keyword>99.5% at Self Aware</keyword>. Running simulations requires <property>energy</property> (based on the model type) and a <property>catalyst item</property>, which is usually a <keyword>Prediction Matrix</keyword>."]
+	quest.426F71334E75DDD0.quest_desc: [
+		"An easy way to find the structure you need!"
+		"{@pagebreak}"
+		"Легкий способ найти нужную вам структуру!"
+	]
 	quest.4287B0D38E0C2A7A.quest_desc: [
 		"The <named>Scryer's Linkage</named> <positive>links</positive> to another block, allowing machines to interact with its linked block from distance places."
 		""
@@ -2457,7 +2476,6 @@
 		""
 		"<obfuscate mode=random interval=30>Найти его можно там же, где и обычную <keyword>Банку Ихора</keyword> </obfuscate>"
 	]
-	quest.48BB521ECABF71BF.title: "Afrit Smelter"
 	quest.48D0478F8516F1C7.quest_desc: ["<positive>Teleport</positive> to other players"]
 	quest.48D6F64AD6B17D08.quest_desc: [
 		"Next, I must heat it in a crucible to remove any impurities."
@@ -2666,6 +2684,11 @@
 		"{@pagebreak}"
 		"Войдите в <magic>защитные руины</magic>"
 	]
+	quest.4D1140A41CD018A7.quest_desc: [
+		"Use the brush and the pigment you found to repaint the sapling you made earlier in a different color"
+		"{@pagebreak}"
+		"используйте кисточку и найденную краску чтобы перекрасить ранее полученный саженец в другой"
+	]
 	quest.4D212923E3A7FA85.quest_desc: [
 		"An easy way to get <named>villagers</named>!"
 		"{@pagebreak}"
@@ -2821,16 +2844,11 @@
 		"Новые указы можно получить в качестве награды за выполнение определенных заданий или обменять у жителей деревни, достигших более высоких уровней."
 	]
 	quest.5380E40C4577CC4F.quest_desc: ["Удлиняет путь для эмбера"]
-	quest.5386ADA67BEB546A.quest_desc: ["<positive>Встаёшь</positive> - даёт <keyword>опыт</keyword> из привязанного <keyword>обелиска с опытом</keyword>"]
+	quest.5386ADA67BEB546A.quest_desc: [""]
 	quest.538E3976DDFD9FBF.quest_desc: [
 		"Displays the total number of <keyword> buffs</keyword> in the <keyword>Crucible</keyword>"
 		"{@pagebreak}"
 		"Отображает суммарное количество <keyword>бафов</keyword> в <keyword>кузне</keyword>"
-	]
-	quest.53CBB401AAEFD083.quest_desc: [
-		"By feeding <property>Source</property> and a <keyword>Jar of Mobs</keyword>, you can perform a <warning>sacrifice</warning> for the <keyword>Occultism</keyword> mod if placed under the <keyword>altar</keyword>"
-		"{@pagebreak}"
-		"Подавая <property>сурс</property> и <keyword>банку с мобами</keyword>, можно делать <warning>жертвоприношение</warning> для мода <keyword>окультизм</keyword>, если поставить под <keyword>алтарём</keyword>"
 	]
 	quest.53D189F7EF7CD121.quest_subtitle: "Perform the ritual!"
 	quest.53D226046704B4F5.quest_desc: [
@@ -2916,11 +2934,10 @@
 	quest.590167B593FE267A.quest_desc: [""]
 	quest.590C55E7230D6C5E.quest_desc: ["Yet another <positive>revolutionary invention</positive> from the \"Things that one person asked for and we spent quite some time bringing them to life\" department of <named>PLACERS™</named> - the almighty <named>FINGMER</named> (Functionally Irreversible Neatly Game-designed Machine and whatever Else Replacer). With this little thing, your everyday routine of replacing things with the better versions of themselves will become as easy as saying the word \"concrete\"! By virtue of our CEO, Ms. S., being so thorough in following the production of our products, each and every unit of this wondrous apparatus will <positive>flawlessly upgrade ANY compatible block</positive> (when provided with <property>proper materials</property>, of course) without missing a single bit of content inside! <property>Reusable</property> too (as long as you don't lose it), even within the crafting table! Craft one today and become one of thousands of happy customers who have already brought their factory to another level!"]
 	quest.591843445BE8DF11.quest_desc: [
-		"Collect some &#FEECD6Shimmerstone&r in mines!"
+		"Collect some &#FEECD6Shimmerstone&r!"
 		"{@pagebreak}"
-		"Собери немного &#FEECD6сверкающих камней&r в шахтах!"
+		"Собери немного &#FEECD6сверкающих камней&r!"
 	]
-	quest.591843445BE8DF11.quest_subtitle: "Weird, haven't noticed it before..."
 	quest.5976E3C7AF7B9F36.quest_desc: [
 		"A modified Ender Dragon Head from End Cities. Purely cosmetic on its own, no effects."
 		""
@@ -2972,11 +2989,6 @@
 		""
 		"Для сбора растений используйте <keyword>Athame</keyword>"
 	]
-	quest.5B4F187D926B738F.quest_desc: [
-		"Take a look at the <keyword>dependency</keyword> for this quest; it explains in detail how to obtain the crystals."
-		"{@pagebreak}"
-		"Обратите внимание на <keyword>зависимости</keyword> данного квеста, там подробно рассказывают как получить кристаллы."
-	]
 	quest.5B66EF3877866949.quest_desc: [
 		"This mod adds <keyword>horse improvements</keyword> you haven't thought you needed."
 		""
@@ -3008,6 +3020,11 @@
 		"Можно использовать для <positive>вызова лошади</positive> из любой точки мира. "
 		""
 		"Создаётся из <keyword>3 медных слитков</keyword> и <keyword>1 рога</keyword>."
+	]
+	quest.5C91DD619D5F382D.quest_desc: [
+		"Left alt to open book menu"
+		"Next Spell X"
+		"Previous Spell Z"
 	]
 	quest.5C95E8450BEAD473.quest_desc: [
 		"Using the <keyword>Cinnabar Ritual</keyword> you can obtain the incredibly powerful <keyword>Pentacle</keyword>. Whatever mob is <positive>sacrificed</positive> to obtain it will result in the Pentacle <positive>spawning that mob for eternity</positive>."
@@ -3055,7 +3072,7 @@
 		"{@pagebreak}"
 		"Существует много разнообразных ритуалов, ознакомьтесь с ними в гайдбуке!"
 		""
-		"Один из важных ритуалов это 5 арканы, он даёт создаёт Soulwood sapling, прочтите так же подробнее об этом в гайдбуке!"
+		"Один из важных ритуалов это 5 арканы, он даёт создать Soulwood sapling, прочтите так же подробнее об этом в гайдбуке!"
 	]
 	quest.5CEDA5F61D74B3A8.quest_desc: [
 		"Place blocks fast in <keyword>line</keyword>, <keyword>wall</keyword>, <keyword>floor</keyword>, <keyword>column</keyword>, <keyword>stair</keyword>, and <keyword>grid</keyword> shapes. &7Shift-right-click&r to choose the block, then use the settings menu and <positive>right-click</positive> to build. It uses blocks from your inventory or linked storage and shows a preview first"
@@ -3072,11 +3089,6 @@
 		"Upgrade with a Diamond Block and another Blood Feather into Diamond-Tipped Ophanim Wings - while crouching, they trigger a stabbing attack that hits nearby enemies based on your body's facing direction (not where you're looking), dealing damage and consuming durability."
 		"{@pagebreak}"
 		"Улучшаются Diamond Block и ещё одним Blood Feather до Diamond-Tipped Ophanim Wings - при приседании наносят колющую атаку по врагам рядом, основанную на направлении тела (не взгляда), расходуя прочность пропорционально урону."
-	]
-	quest.5D5C49482E28ECD5.quest_desc: [
-		"Позволяет создавать улучшенные версии <keyword>дробителей</keyword>, <keyword>плавителей</keyword> и <keyword>кристаллизаторов</keyword>."
-		"{@pagebreak}"
-		"Allows you to create improved versions of <keyword>crushers</keyword>, <keyword>melters</keyword>, and <keyword>crystallizers</keyword>."
 	]
 	quest.5DDA25EB563D52A6.quest_desc: ["Redstone works quite differently when you use aluminum to transfer its signals, looks like the strength of the signal remains the same no matter the distance traveled, and you could do little adjustments inside relays to send different signal types, which opens great possibilities..."]
 	quest.5E0298584559E31D.quest_desc: [
@@ -3254,7 +3266,6 @@
 		"{@pagebreak}"
 		"<warning>Можно найти 1 раз за игру 1 игроком"
 	]
-	quest.61E590BED7EE9DA4.quest_desc: ["<magic>Entity magnet?!</magic>"]
 	quest.6245F17DF657C296.quest_desc: [
 		"Most upgrades are trained by performing the matching activity while wearing the chestplate; every time you do, the armour banks experience toward the next level. How much it banks depends on the upgrade:"
 		""
@@ -3304,11 +3315,6 @@
 		"{@pagebreak}"
 		"Более <keyword>быстрый переносной генератор</keyword>, чем обычный <keyword>Chronon Generator</keyword>. Он производит <keyword>Chronon</keyword> быстрее, но по-прежнему работает как предмет в инвентаре, а не как блок."
 	]
-	quest.63F9D18BD9BB214C.quest_desc: [
-		"As with previous <keyword>familiars</keyword> and <keyword>Possessed mobs</keyword>, read about them in the <keyword>book</keyword>."
-		"{@pagebreak}"
-		"Как и с прошлыми <keyword>фамильярами</keyword> и <keyword>одержимыми мобами</keyword>, прочтите информацию о них в <keyword>книге</keyword>"
-	]
 	quest.640DC65E9255BECE.quest_desc: [
 		"Allows for <positive>downward gliding</positive>, works well with the <keyword>Slime Sling</keyword>"
 		"{@pagebreak}"
@@ -3332,11 +3338,6 @@
 		"[ \"You can read more about each ship, their speeds, and other details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/talhanation/wiki/wiki/Small-Ships-Wiki\" } }, \"!\" ]"
 	]
 	quest.6443864802D04B07.title: "Are you sure it's Small Ships?"
-	quest.64A80D12CB567158.quest_desc: [
-		"Time to put your shiny... well, I guess rather dull, new antler pickaxe to good use!"
-		"{@pagebreak}"
-		"Пришло время использовать твою блестящую... ну, скорее скучную, новую кирку из рогов!"
-	]
 	quest.64C835EE832D0FC2.quest_desc: ["крос дим не воркает, тп на записаные корды"]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"<keyword>Invisible lighting</keyword>!"
@@ -3346,11 +3347,6 @@
 		"<keyword>Невидимый свет</keyword>!"
 		""
 		"Невероятно удобный способ осветить своё Уб&m&0ожество&r&rежище"
-	]
-	quest.64FE8C0AC725C0D2.quest_desc: [
-		"Using <keyword>occultism</keyword> and the <keyword>Possessed Endermite ritual</keyword>, you can <positive>summon a Endermite</positive> that may drop <keyword>End Stone</keyword>, which can be used to <positive>craft</positive> <property>purple chalk</property>."
-		"{@pagebreak}"
-		"Используя <keyword>оккультизм</keyword> и ритуал <keyword>Possessed Endermite</keyword> вы можете <positive>призвать Чешуйницу Края</positive> из которой может выпасть <keyword>End Stone</keyword>, для <positive>крафта</positive> <property>фиолетового мелка</property>."
 	]
 	quest.650A8D7F596AC191.quest_desc: [
 		"Cycle the trades of every villager that hasn't been traded before without needing to wait for working hours or replacing the workstation block over and over again."
@@ -3610,19 +3606,6 @@
 		"{@pagebreak}"
 		"Мы рекомендуем ознакомиться с каждым <wind>видом поплавков</wind>!"
 	]
-	quest.6B3078F8DB055448.quest_desc: [
-		"This ritual also unlocks many new Possession Rituals that allow you to summon rare mobs and obtain their rare drops. For example, you can summon a Shalker without spending a ton of time searching for and opening the End portal to obtain Shalker Shell."
-		""
-		"Read more about these rituals in the book!"
-		""
-		"We have also added quests for only some familiars; you can read about the others in the book."
-		"{@pagebreak}"
-		"Так же данный ритула открывает множество новых Ритуалов обладания которые позволяют призывать редких мобов и получить их редкий дроп, например, призвать шалкера не тратя тонну времени на поиск и открытие энда, для, например, панцирей шалкера."
-		""
-		"Более подробнее о таких ритуалах прочтите в книге!"
-		""
-		"Мы также добавили квесты только для некоторых фамильяров; о других вы можете прочитать в книге."
-	]
 	quest.6C59597B8D81F454.title: "Copper"
 	quest.6C7B55F12C222907.quest_desc: [
 		"It's a &#FEECD6shovel&r, a &#9BB8EDpickaxe&r, an &#C7E2E9axe&r, and a &#CAE4C8hoe&r &nall in one&r. It's like a Swiss tool!"
@@ -3647,11 +3630,6 @@
 		"In order to create an <keyword>Obelisk</keyword> you'll have to <positive>place</positive> <keyword>2 Arcane Crystal Blocks</keyword> on top of an <keyword>Arcane Polished Darkstone Block</keyword>. To complete the transformation, you'll have to once again use <keyword>Mundabitur Dust</keyword>. "
 	]
 	quest.6D30F1913CBFB525.quest_subtitle: "Oopsie-daisy of the Deeper Down"
-	quest.6D569CD522298948.quest_desc: [
-		"It can be used instead of <keyword>white chalk</keyword> in rituals!"
-		"{@pagebreak}"
-		"Его можно использовать вместо <keyword>белого мелка</keyword> в ритуалах!"
-	]
 	quest.6D62B6D792D203BA.quest_desc: [
 		"<keyword>Mundabitur Dust</keyword> can be used to craft <keyword>Arcane Gold Ingots</keyword> or to <positive>transform various different things</positive>."
 		""
@@ -3856,7 +3834,6 @@
 		""
 		"Так же мне не следует пытаться прививать материалы, о которых я мало что знаю. Сначала мне нужно полностью изучить как растение так и свойство. В противном случае операция провалится еще до того, как начнётся, и все мои усилия будут сведены на нет. Далее я описал все возможные варианты превращений."
 	]
-	quest.715BBA6DCDA1C2F1.quest_desc: [""]
 	quest.7162B15B452A8B2E.quest_desc: [
 		"An attuned stone is a diamond which has been infused with magical energy."
 		""
@@ -3967,11 +3944,6 @@
 		"{@pagebreak}"
 		"Данный <named>артефакт</named> совместим вместе с рыбалкой из мода <magic>Starcatcher</magic>! "
 	]
-	quest.754E0F5DDA39F8C1.quest_desc: [
-		"&#FEECD6Crush&r this &#CAE4C8toxic&r &#CAE4C8reed&r with an anvil!"
-		"{@pagebreak}"
-		"&#FEECD6Раздавите&r этот &#CAE4C8токсичный&r вид &#CAE4C8тростника&r своей новенькой наковальней!"
-	]
 	quest.757ED58D0C1CED21.quest_desc: ["Press <keyword>\"Y\"</keyword> on an item in your inventory (or in EMI) to <positive>highlight similar items in nearby chests</positive>"]
 	quest.7635ED9379E95573.quest_desc: ["Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"]
 	quest.76A00C0FCE2D91E1.quest_desc: [
@@ -4020,7 +3992,6 @@
 		"{@pagebreak}"
 		"Один из важнейших блоков для дальнейшей прогрессии. Более подробные инструкции, как с ним взаимодействовать, можно прочитать в книге!"
 	]
-	quest.7974D49E6CAE39BF.quest_desc: ["Позволяет сделать ездового питомца при пкм на Starbuncle"]
 	quest.79CE5FF7EB605456.quest_desc: [
 		"Tired of building all those complex multiblock structures? Want to have an ability to <positive>easily move them around</positive> if you feel weak Feng Shui from it? We're presenting to you: <named>Multiblock Packer 3000 (Safety regulations edition)</named>."
 		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With <property>advanced compacting technology</property>, we accomplished the ability to <positive>pack ANY multiblock</positive> into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at <named>PLACERS™</named> (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new <named>PUSH®</named> (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
@@ -4162,7 +4133,7 @@
 	quest.7F2A3447D994B25E.quest_desc: [
 		"&lThere's only one way to make liquid source!&r"
 		""
-		"<keyword>1 Ethereal Source</keyword> -> <keyword>2 liquid source</keyword> "
+		"<keyword>1 Ethereal Source</keyword> -> <keyword>8 liquid source</keyword> "
 	]
 	quest.7F7B0FF0BAC90638.quest_desc: [
 		"This is a simple example to help you understand how to <positive>assign labels</positive> and what the <keyword>mod syntax</keyword> is."
@@ -4245,16 +4216,13 @@
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.01899FA102ABD33A.title: "Any #milf:metal_fences"
 	task.01C0F8B5DE9EEDCD.title: "Cry of the Forsaken Soul"
-	task.0201D3254268522D.title: "Kandar's Open Conjure"
 	task.020311F4DEE019DA.title: "Any #ytech:tanning_racks"
 	task.0231A968EC37120B.title: "Spectrum"
 	task.02CC9AB30304F2F4.title: "Any #milf:netherite_storage"
-	task.04686380A3EF8E64.title: "Any #minecraft:vanilla_music_discs"
 	task.0499279911FFA20D.title: "Any #animal_pen:aviaries"
-	task.05835F9632D8F0DD.title: "Eldrich Chalice"
 	task.05F09C91C1D5D399.title: "Jump Over Fences"
 	task.0690302B69EE721E.title: "Any #pastel:colored_saplings"
-	task.06C366B476A6A584.title: "Ronaza's Contract"
+	task.0819CADADD969983.title: "Any #minecraft:logs"
 	task.08346CF6BB01116A.title: "Any #milf:notched_polished_block"
 	task.08DD73E0742DA0F8.title: "Any #milf:notched_polished_block"
 	task.0925CEA8A38CBB6C.title: "Any #milf:colored_lamp"
@@ -4269,12 +4237,7 @@
 	task.0F53207FFCB0E0C6.title: "Any #c:animal_foods"
 	task.0F74A9109F9CECEA.title: "Any #minecraft:wooden_slabs"
 	task.100D580CE861E070.title: "Tempad"
-	task.1066475D862E1E0F.title: "Tier 2 Dimensional Storage Stabilizer"
 	task.1096F78FFF063784.title: "Utility Arrays"
-	task.12A25107AA4CA41F.title: "Stabilized Dimensional Storage Actuator"
-	task.13C0AC8F685DF37C.title: "Stable Wormhole"
-	task.14FD5C33E459D83C.title: "Tier 3 Storage Stabilizer"
-	task.1581CD219F02ED5C.title: "Fatma's Incentivized Attraction"
 	task.15D15E5200247C44.title: "Gather some gem dust"
 	task.1685B4C2F761E3C1.title: "Any #risus:joyflame_fire_base_blocks"
 	task.16D6420BFC5D81FE.title: "Any #milf:pillar_base_blocks"
@@ -4290,7 +4253,6 @@
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"
 	task.207749237CB9FE16.title: "Defensive Arrays"
 	task.20D75746DF67A83F.title: "Movement and Transit Arrays"
-	task.223A6719946C7ABC.title: "Any #c:chests"
 	task.2354398433192DFF.title: "Any #neovitae:altar/runes_t4"
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
@@ -4312,15 +4274,13 @@
 	task.2DD9CC89EC523943.title: "???"
 	task.2E27771C78B7E3E9.title: "Any #milf:phantom_frame"
 	task.2E5D24ACE6FAA580.title: "Any #milf:chiseled_base_blocks"
-	task.2E75F41D80DEB4FE.title: "Any #minecraft:logs"
-	task.3010BA0C77BD53FA.title: "Strigeor's Higher Binding"
 	task.30EF11C70C08380B.title: "Enhancer Relics"
 	task.31969FC5A93B0C8B.title: "Any #neovitae:altar/runes_t1"
 	task.3198AD11970AE4C5.title: "Any #minecraft:planks"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
-	task.34B3E49B9A4E4B61.title: "basic"
+	task.34B3E49B9A4E4B61.title: "basic [WIP chapter]"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.350A5A937753423B.title: "Sentient Extraction"
 	task.3636DDD8063C6785.title: "Any #c:budding_blocks"
@@ -4331,16 +4291,13 @@
 	task.38DF68FAD82285EB.title: "Any #starcatcher:tackle_boxes"
 	task.3A29E8F35850BD56.title: "Elevator"
 	task.3A5AE59EDDEBE0BA.title: "Any #minecraft:boats"
-	task.3AC7749433FF53D8.title: "Abras' Conjure"
 	task.3B4C4E1225398BD9.title: "Black Hole"
 	task.3CC7AB10CF42EE49.title: "Inspector Gadget"
 	task.3CF465D57CE596A9.title: "Boss Checklist"
 	task.3CF51E4C7C17A283.title: "Any #yo_hooks:hooks"
 	task.3CF6B07576AC93DD.title: "Downgrades"
-	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"
 	task.403F17B1F42C51C7.title: "Overclocking"
 	task.40ED385E3D23C00B.title: "Little Joys"
-	task.40EE6EFAE710D3F5.title: "Ophyx' Calling"
 	task.42075FB0D0CA93C3.title: "Zume"
 	task.42DC3FD183E10DD5.title: "*Click*"
 	task.4336D6754C458F76.title: "Any #milf:chiseled_gemstone_block"
@@ -4352,20 +4309,15 @@
 	task.46CE431166A44610.title: "Oil pot"
 	task.46D24C3E78F3813B.title: "Any #milf:polished_base_blocks"
 	task.4954115A00FEC164.title: "Any #c:logs/archwood"
-	task.49AD79AA5693E79F.title: "Osorin's Unbound Calling"
 	task.49C1237D393FF8C9.title: "Any #smallships:ships"
-	task.4AA33BD44F51AF55.title: "Sevira's Permanent Confinement"
-	task.4B7415C6171EB8C4.title: "Any #c:rods/wooden"
 	task.4BA891B4F70A44E3.title: "Any #milf:copper_storage"
 	task.4BBE7498A48891A8.title: "Any #forbidden_arcanus:blacksmith_gavel"
 	task.4C13E036E01DE93A.title: "Any #milf:diamond_storage"
 	task.4C34F34DFB64B73E.title: "Any #milf:polished_base_blocks"
 	task.4C9B71D2BC1CA752.title: "Next quests"
-	task.4E27A8371F4A90AB.title: "Any #c:stones"
 	task.4E3EC41B69DAD787.title: "Any #milf:polished_base_blocks"
 	task.4E4DCBBCBFA389BB.title: "Any #c:files"
 	task.4F2B1C1396AE3947.title: "Any #minecraft:planks"
-	task.4F6145E6EAF3C5A0.title: "Iesnium Ritual Bowl"
 	task.4FC3D78F5ED8F928.title: "Redstone Arrays"
 	task.50145BF6C914A142.title: "Any #milf:gemstone_lamp"
 	task.50C270499A4A3120.title: "Soaring Skies"
@@ -4376,10 +4328,8 @@
 	task.573221EE8F0A7F99.title: "Ritual of Sentient Evolution"
 	task.5733CBC7B63AE4B4.title: "source manipulation"
 	task.5785A10BF5F91F14.title: "Any #milf:press_molds"
-	task.578EB8AADD098204.title: "Storage Actuator Base"
 	task.57EB27D28427564E.title: "Any #neovitae:altar/runes_t3"
 	task.583D11B3732CE886.title: "TrashSlot"
-	task.587A56D8D8AFA800.title: "Any #malum:runewood_logs"
 	task.58F6FDCF58A4331D.title: "Any #starcatcher:hooks"
 	task.5AD635A29E44CC90.title: "where my ore?!"
 	task.5B0F59765FB17AE3.title: "Any #starcatcher:baits"
@@ -4390,24 +4340,17 @@
 	task.62C0B2D1C395761B.title: "Why is this chapter here?"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.6319A7E878B57B90.title: "Trade Cycling"
-	task.64E3E2FCC89E29E6.title: "Tier 1 Dimensional Storage Stabilizer"
-	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
 	task.65741180CA3C4BD1.title: "Any #milf:gold_storage"
 	task.6721DBF2E8A9F7CE.title: "Any #starcatcher:hats"
-	task.68DA7E9C5CC5E0FB.title: "Uphyxes Inverted Tower"
 	task.690983E33893CB82.title: "Any #milf:polished_slabs"
-	task.6AD68F6740255A61.title: "Otherstone"
-	task.6B073DC5E1960334.title: "Odus' Open Convocation"
 	task.6BD37E6531E3BAF0.title: "Any #starcatcher:tackle_skins"
 	task.6C76C1D379AC2926.title: "Horseman"
 	task.6C99A31E20FD2A4C.title: "Any #milf:crest_base_blocks"
 	task.6D290A3A18CB158B.title: "Time Arrays"
 	task.6DA0FB55995165C0.title: "Armor Quick Swap"
 	task.6DB27C8811207858.title: "Any #magnumtorch:torches"
-	task.6E241CA073F70AD3.title: "Xeovrenth Adjure"
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
-	task.6F0159439B990201.title: "Tier 4 Dimensional Storage Stabilizer"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
 	task.7001AAAE3F1E4149.title: "Looking for ores?"
 	task.701E2CCC21092BDF.title: "Weapon/shield/armor [WIP]"
@@ -4423,14 +4366,10 @@
 	task.77C744B48E7A1B18.title: "Any #minecraft:beds"
 	task.77CF8D64718D9A67.title: "Vanilla items for spectrum progression"
 	task.78C5E8DD6BAEE398.title: "Any #milf:polished_gemstone_block"
-	task.7A17DC443ACEC210.title: "Dimensional Storage Actuator"
 	task.7AE5252F3D792BCA.title: "Mouse Tweaks \\& More Mouse Tweaks"
-	task.7D883C5E2E946BC2.title: "Sacrificial Bowl"
-	task.7DAF10DA2032C3C2.title: "Golden Ritual Bowl"
 	task.7DFA2C0B9737E55D.title: "Spice of Life"
 	task.7EA81F98CCB0B5EE.title: "Upgrades"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"
-	task.7FAF7967D40C0369.title: "Malum"
 	task.7FCEEDA6DB984E36.title: "Focus Tiers and Topologies"
 }

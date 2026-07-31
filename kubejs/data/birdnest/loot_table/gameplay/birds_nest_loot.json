@@ -244,63 +244,6 @@
 				},
 				{
 					"type": "item",
-					"name": "fruitsdelight:durian_sapling",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.50
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "fruitsdelight:lemon_seeds",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.50
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "fruitsdelight:hamimelon_seeds",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.50
-						}
-					]
-				},
-				{
-					"type": "item",
 					"name": "enchanted:water_artichoke_seeds",
 					"functions": [
 						{

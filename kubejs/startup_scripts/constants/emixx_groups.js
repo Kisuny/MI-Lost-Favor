@@ -136,7 +136,6 @@ global.emixxGroups = [
     { type: "tag", name: "chutes", tag: "immersiveengineering:chutes" },
     { type: "tag", name: "drying_racks", tag: "ytech:drying_racks" },
     { type: "tag", name: "upgrades", tag: "sophisticatedbackpacks:upgrade" },
-    { type: "tag", name: "jelly_blocks", tag: "fruitsdelight:jelly_blocks" },
     { type: "tag", name: "fish_templates", tag: "starcatcher:templates" },
     { type: "tag", name: "fishing_rods", tag: "c:tools/fishing_rod" },
     { type: "tag", name: "end_eyes", tag: "endrem:eyes" },

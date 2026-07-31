@@ -9,6 +9,9 @@ const BLOCK_REPLACEMENTS = {
     'minecraft:iron_block': 'minecraft:raw_iron_block',
     'minecraft:gold_block': 'minecraft:raw_gold_block',
     'eidolon_repraised:crucible': 'minecraft:cauldron',
+    'minecraft:anvil' :  "minecraft:grindstone",
+    'minecraft:chipped_anvil' : "minecraft:grindstone",
+    'minecraft:damaged_anvil': "minecraft:grindstone",
 };
 
 MoreJS.structureLoad((event) => {
@@ -16,7 +19,7 @@ MoreJS.structureLoad((event) => {
         palette.forEach((blockInfo) => {
             const replacement = BLOCK_REPLACEMENTS[blockInfo.id];
             if (replacement) {
-                console.log(`[milf] ${event.id}: ${blockInfo.id} -> ${replacement}`);
+                // console.log(`[milf] ${event.id}: ${blockInfo.id} -> ${replacement}`);
                 blockInfo.setBlock(replacement);
                 return;
             }
@@ -25,7 +28,7 @@ MoreJS.structureLoad((event) => {
                 const finalState = blockInfo.getNbt().getString('final_state');
                 const jigsawReplacement = BLOCK_REPLACEMENTS[finalState];
                 if (jigsawReplacement) {
-                    console.log(`[milf] ${event.id}: jigsaw final_state ${finalState} -> ${jigsawReplacement}`);
+                    // console.log(`[milf] ${event.id}: jigsaw final_state ${finalState} -> ${jigsawReplacement}`);
                     blockInfo.nbt().putString('final_state', jigsawReplacement);
                 }
             }

@@ -15,3 +15,5 @@ createNewFluid("alien_goo", {
     stillTexture: "milf:fluid/alien_goo",
     flowingTexture: "milf:fluid/alien_goo",
 })
+
+createNewFluid("shimmersteel_essence", {textureType:"thick", color: Number("0xC18A36"), lang: { "ru_ru": "Эссенция сверкостали" }})

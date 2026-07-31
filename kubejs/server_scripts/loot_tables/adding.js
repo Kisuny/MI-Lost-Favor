@@ -84,7 +84,8 @@ LootJS.modifiers(event => {
     const devicesLootTiers = { tier1: 0.2, tier2: 0.1, tier3: 0.05 }
 
     Object.entries(devicesLootTiers).forEach(([tier, chance]) => {
-        event.addTableModifier(LootType.CHEST).pool(pool => {
+        // regex excludes archaeology tables (e.g. minecraft:archaeology/desert_pyramid), which don't contain "chests/" in their id
+        event.addTableModifier(/.*chests\/.*/).pool(pool => {
             pool.when(c => c.randomChance(chance))
             pool.addEntry(LootEntry.reference(`devices:loot_addons/chest/${tier}`))
         })

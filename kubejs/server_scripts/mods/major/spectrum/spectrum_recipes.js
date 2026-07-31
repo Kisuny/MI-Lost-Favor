@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
     const removing_by_recipe_id = [
         "spectrum:smelting/blackslag_ores/iron",
         "spectrum:enchanter/spectrum_books/indestructible",
+        "spectrum:blasting/ore/shimmerstone_ores",
+        "spectrum:smelting/ore/shimmerstone_ores",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -17,27 +19,40 @@ ServerEvents.recipes(event => {
             "spectrum:pedestal_moonstone",
         ]
     })
-
-
-    customAlchemicalForgeCraft(event, {
-        affinities: [
-            "toxony:heat",
-            "toxony:soul",
-            "toxony:decay"
+    
+    event.shapeless('milf:gem_composite', [
+        '4x milf:mixed_gem_powder',
+    ])
+    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:'spectrum:citrine_powder'},],
+            [{item: 'spectrum:amethyst_powder'}, ],
+            [{item: 'spectrum:topaz_powder'}],
         ],
-        auxiliary: [
-            {
-                "item": "modern_industrialization:bronze_block"
-            },
-            {
-                "item": "enchanted:creeper_heart"
-            }
-        ],
-        main: {
-            "item": "neovitae:activation_crystal_weak"
-        },
-        result: "milf:table_core"
+        outputItems:[[{item:"milf:mixed_gem_powder"}, 2]]
     })
+
+
+    miMachineRecipe(event, {
+        energy: 4, time: 80, machine: "modern_industrialization:blast_furnace",
+        inputItems: [
+            [{ item: "spectrum:shimmerstone_gem" }, 2],
+            [{ item: "modern_industrialization:steel_ingot" }, 1],
+        ],
+        outputFluids: [
+            [{ fluid: "milf:shimmersteel_essence" }, 300],
+        ]
+    })
+
+    event.shaped("milf:table_core", [
+        "EQE",
+        "QWQ",
+        "EQE"
+    ], {
+        Q: "modern_industrialization:bronze_block",
+        W: "enchanted:creeper_heart",
+        E: "paganbless:runic_charge",
+    });
 
     customPedestalCraft(event, {
         time: 200,
@@ -119,7 +134,6 @@ ServerEvents.recipes(event => {
                 [{ "tag": "immersiveengineering:treated_wood" }, 8],
                 [{ "item": "minecraft:polished_diorite" }, 4],
                 [{ "item": "milf:table_core" }, 1],
-                [{ "item": "eidolon_repraised:shadow_gem" }, 1],
                 [{ "item": gem }, 12]
             ],
             { "item": output }, dyesOfTheOccult

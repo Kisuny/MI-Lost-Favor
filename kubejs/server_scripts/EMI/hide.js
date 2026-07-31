@@ -122,7 +122,6 @@ RecipeViewerEvents.removeEntries('item', event => {
         // 'trofers:medium_pillar',
         // 'trofers:small_pillar',
         'lootr:trophy',
-        /ars_nouveau:[a-z_]+_se/,
         'modern_industrialization:creative_tank',
         'modern_industrialization:creative_storage_unit',
         'modern_industrialization:creative_barrel',

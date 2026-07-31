@@ -17,4 +17,21 @@ const alchemyTableCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
     
+    // jsut example recipe
+    // alchemyTableCraft(event, {
+    //     input: [
+    //         { tag: 'milf:basic_gemstone_powders' },
+    //         { item: 'minecraft:quartz' },
+    //         { item: 'minecraft:lapis_lazuli' },
+    //         { item: 'minecraft:soul_sand' },
+    //         { item: 'spectrum:shimmerstone_gem' },
+    //     ],
+    //     output: 'cognition:cognitive_flux',
+    //     count: 8,
+    //     syphon: 50,
+    //     ticks: 200,
+    //     upgradeLevel: 2,
+    //     removeRecipe: true
+    // });
+
 });

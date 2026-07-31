@@ -12,7 +12,6 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
 // Milestone rewards - add stages + show notification
 const milestone_rewards = [
     { quest_id: "7EF0A7794783232F", stages: "tier_1_access_ore" }, // Bronze Plate (First steps)
-    { quest_id: "5F437D0400382507", stages: "malum_access_ore" }, // hephaestus_forge_tier_2 - malum ore access
     { quest_id: "4178A18CA2E5A74F", stages: "monsterplus_mobs" }, // toxony:alchemical_forge_part (root whispering)
     { quest_id: "19304AD673874503", stages: "eidolon_mobs" }, // Ars Ecclesia (root whispering)
     { quest_id: "20165DF8F49E8177", stages: ["mowziesmobs_mobs", "mythsandlegends_mobs"] }, // haven gate

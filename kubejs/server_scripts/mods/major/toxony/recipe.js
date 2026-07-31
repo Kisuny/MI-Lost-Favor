@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             { "tag": "toxony:ingredients/poisonous" },
             { "tag": "toxony:plants/poisonous"},
-            { "item": "minecraft:bone_meal"},
+            { "item": "spectrum:vegetal"},
             { "item": "enchanted:foul_fume"},
         ],
         output: "toxony:poison_paste",
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{tag:"toxony:ingredients/poisonous"}],
             [{tag:"toxony:plants/poisonous"}],
-            [{item:"minecraft:bone_meal"}],
+            [{item:"spectrum:vegetal"}],
             [{item:"enchanted:foul_fume"}],
         ],
         outputItems:[[{item:"toxony:poison_paste"}, 2]]

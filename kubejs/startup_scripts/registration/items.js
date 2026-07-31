@@ -209,9 +209,6 @@ createNewItem('core_hull', { lang: { "en_us": "Core hull", "ru_ru": "Основ�
 
 createNewItem('cell_half', { lang: { "en_us": "Cell half", "ru_ru": "Часть ячейки" } })
 createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_ru": "Пресс для ячейки" } })
-createNewItem('glyph_frame_t1', { lang: { "en_us": "Glyph Frame T1", "ru_ru": "Рамка для глифов T1" } })
-createNewItem('glyph_frame_t2', { lang: { "en_us": "Glyph Frame T2", "ru_ru": "Рамка для глифов T2" } })
-createNewItem('glyph_frame_t3', { lang: { "en_us": "Glyph Frame T3", "ru_ru": "Рамка для глифов T3" } })
 
 createNewItem('blueprint_pack', { stackSize: 1, lang: { "en_us": "Blueprint Pack", "ru_ru": "Набор чертежей" } })
 createNewItem('mysterious_blueprint', { texturePath: 'milf:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
@@ -240,5 +237,6 @@ createNewItem('cutting_card', { lang: {  "ru_ru": "Карта резки" } })
 createNewItem('blank_card', { lang: { "en_us": "Blank Card" } })
 createNewItem('miasma_orb', { lang: { "ru_ru": "Сфера скверны" }, stackSize: 1, rarity: 'epic'  })
 createNewItem('artifact_dust', { lang: { "ru_ru": "Артефактная пыль" }, stackSize: 15, rarity: 'epic'  })
+createNewItem('mixed_gem_powder', { lang: { "ru_ru": "Порошок драгоценных камней" } })
 createNewItem('soul_of_the_helpless', { lang: { "ru_ru": "Душа беспомощного" }, stackSize: 16, rarity: 'epic'  })
 

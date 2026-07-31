@@ -30,7 +30,6 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.cataclysm_mobs', `Something ancient stirs in the ${MilfEffects.GRAD.custom("darkened depths", "#093BE0", "#3B13B3")}...`)
     event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${MilfEffects.GRAD.custom("creatures beyond count", "#8A5CCF", "#CEBCFF")}`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${MilfEffects.GRAD.custom("new ores", "#55A2FA", "#8DDBFF")}...`)
-    event.add('milf.stage.malum_access_ore', `The mines now whisper with ${MilfEffects.GRAD.custom("arcane ore", "#7A2ED1", "#D9A9FF")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')
@@ -220,6 +219,7 @@ The only solution is to make them less sound.`)
     event.add('desc.immersiveengineering.info.mineral.brindleyite', "Brindleyite")
     event.add('desc.immersiveengineering.info.mineral.hematite', "Hematite")
     event.add('milf.emi_info.concrete', "Wait for the <keyword>Liquid Concrete</keyword> to set - it will harden into this block on its own over time.")
+    event.add('milf.emi_info.gem_dust', "<keyword>The Anvil Method</keyword>: Drop a gem on the ground and let an <property>anvil</property> fall straight down onto it to crush it into dust. <warning>Note that this early-game method only yields one dust per gem</warning>")
 
 
     event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Some kind of magic is stopping you")}`)

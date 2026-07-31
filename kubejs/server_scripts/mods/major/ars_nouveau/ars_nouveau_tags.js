@@ -1,12 +1,54 @@
+//tags for block and item at the same time
+const sharedTags = [
+    { 
+        id: 'ars_nouveau:purple_bricks', values: [
+        'ars_nouveau:sourcestone_mosaic', 
+        'ars_nouveau:sourcestone_basketweave', 
+        'ars_nouveau:sourcestone_alternating', 
+        'ars_nouveau:sourcestone_large_bricks', 
+        'ars_nouveau:sourcestone_small_bricks', 
+        'ars_nouveau:gilded_sourcestone_mosaic', 
+        'ars_nouveau:gilded_sourcestone_basketweave', 
+        'ars_nouveau:gilded_sourcestone_alternating', 
+        'ars_nouveau:gilded_sourcestone_large_bricks', 
+        'ars_nouveau:gilded_sourcestone_small_bricks', 
+        'ars_additions:cracked_sourcestone_large_bricks', 
+        'ars_additions:cracked_sourcestone_small_bricks'
+        ] 
+    },
+    { 
+        id: 'ars_nouveau:purple_brick_slabs', values: [
+            'ars_nouveau:sourcestone_mosaic_slab', 
+            'ars_nouveau:sourcestone_basketweave_slab', 
+            'ars_nouveau:sourcestone_alternating_slab', 
+            'ars_nouveau:sourcestone_large_bricks_slab', 
+            'ars_nouveau:sourcestone_small_bricks_slab', 
+            'ars_nouveau:gilded_sourcestone_small_bricks_slab', 
+            'ars_nouveau:gilded_sourcestone_mosaic_slab', 
+            'ars_nouveau:gilded_sourcestone_basketweave_slab', 
+            'ars_nouveau:gilded_sourcestone_alternating_slab', 
+            'ars_nouveau:gilded_sourcestone_large_bricks_slab'
+        ] 
+    },
+    { 
+        id: 'ars_nouveau:sourcestones', values: [
+        'ars_nouveau:sourcestone', 
+        'ars_nouveau:smooth_sourcestone', 
+        ] 
+    }
+]
+
 ServerEvents.tags('block', event => {
 
     event.add('ars_nouveau:golem/budding', ["spectrum:budding_topaz", "spectrum:budding_citrine", "spectrum:budding_onyx", "spectrum:budding_moonstone"])
     event.add('ars_nouveau:golem/cluster', ["spectrum:topaz_cluster", "spectrum:citrine_cluster", "spectrum:onyx_cluster", "spectrum:moonstone_cluster"])
 
 
+    sharedTags.forEach(({ id, values }) => event.add(id, values))
 })
 ServerEvents.tags('item', event => {
     event.add('ars_nouveau:golem/shard', ["spectrum:topaz_shard", "spectrum:citrine_shard", "spectrum:onyx_shard", "spectrum:moonstone_shard"])
+
 
     event.add("ars_nouveau:tier_1_glyphs", [
         'ars_nouveau:glyph_prestidigitation', 
@@ -51,6 +93,27 @@ ServerEvents.tags('item', event => {
         'ars_nouveau:glyph_amplify', 
         'ars_nouveau:glyph_randomize', 
         'ars_nouveau:glyph_sensitive',
+        'reliquified_ars_nouveau:glyph_multicast', 
+        'ars_controle:glyph_filter_or', 
+        'ars_controle:glyph_filter_not', 
+        'ars_controle:glyph_filter_above', 
+        'ars_controle:glyph_filter_below', 
+        'ars_controle:glyph_filter_level', 
+        'ars_controle:glyph_filter_random', 
+        'ars_controle:glyph_filter_xnor', 
+        'ars_controle:glyph_filter_xor', 
+        'ars_elemental:glyph_aerial_filter',
+        'ars_elemental:glyph_aquatic_filter', 
+        'ars_elemental:glyph_fiery_filter', 
+        'ars_elemental:glyph_insect_filter', 
+        'ars_elemental:glyph_not_aerial_filter', 
+        'ars_elemental:glyph_not_aquatic_filter', 
+        'ars_elemental:glyph_not_fiery_filter', 
+        'ars_elemental:glyph_not_insect_filter', 
+        'ars_elemental:glyph_not_summon_filter', 
+        'ars_elemental:glyph_not_undead_filter', 
+        'ars_elemental:glyph_summon_filter', 
+        'ars_elemental:glyph_undead_filter'
     ])
     event.add("ars_nouveau:tier_2_glyphs", [
         'ars_elemental:glyph_arc_projectile', 
@@ -140,6 +203,9 @@ ServerEvents.tags('item', event => {
         'arsdelight:frostaya_hornbeer', 
         'arsdelight:source_berry_hornbeer'
     ])
+
+    event.add('ars_nouveau:archwood_saplings', ['ars_nouveau:blue_archwood_sapling', 'ars_nouveau:purple_archwood_sapling', 'ars_nouveau:red_archwood_sapling', 'ars_nouveau:green_archwood_sapling', 'ars_elemental:yellow_archwood_sapling'])
+    sharedTags.forEach(({ id, values }) => event.add(id, values))
 })
 
 ServerEvents.tags("entity_type", event => {

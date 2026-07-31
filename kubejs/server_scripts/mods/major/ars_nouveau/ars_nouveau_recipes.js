@@ -14,42 +14,18 @@ ServerEvents.recipes(event => {
 
     event.remove({ type: "ars_nouveau:enchantment" })
     event.remove({ type: "ars_nouveau:reactive_enchantment" })
-    event.remove({ output: "ars_nouveau:novice_spell_book" })
-    event.remove({ output: "ars_nouveau:scribes_table" })
     event.remove({ output: "ars_additions:handy_haversack" })
     event.remove({output: [
-        "ars_nouveau:novice_spell_book",
-        "ars_nouveau:scribes_table",
         "ars_additions:handy_haversack",
         "ars_nouveau:mycelial_sourcelink",
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:vitalic_sourcelink",
         "ars_nouveau:alchemical_sourcelink",
     ]})
-    addHephaestusRitual("apprentice_spell_book", {
-        enhancers: "forbidden_arcanus:elementarium",
-        essences: { aureal: 500, blood: 5000, souls: 2, experience: 100 },
-        mainIngredient: "ars_nouveau:novice_spell_book",
-        inputs: [
-            { item: "occultism:dragonyst_dust", amount: 1 },
-            { item: "forbidden_arcanus:obsidiansteel_ingot", amount: 7 },
-        ],
-        result: "ars_nouveau:apprentice_spell_book",
-    })
 
-    addHephaestusRitual("archmage_book_upgrade", {
-        enhancers: "forbidden_arcanus:elementarium",
-        essences: { aureal: 1000, blood: 30000, souls: 150, experience: 2500 },
-        mainIngredient: "ars_nouveau:apprentice_spell_book",
-        inputs: [
-            { item: "ars_nouveau:wilden_tribute", amount: 1 },
-            { item: "minecraft:nether_star", amount: 1 },
-            { item: "minecraft:totem_of_undying", amount: 1 },
-            { item: "ars_nouveau:source_gem_block", amount: 1 },
-            { item: "spectrum:moonstruck_nectar", amount: 1 },
-        ],
-        forgeTier: 4,
-        result: "ars_nouveau:archmage_spell_book",
+    //remove all glyphs recipes 
+    Ingredient.of('#milf:glyphs').itemIds.forEach(glyph => {
+        event.remove({output: glyph})
     })
 
     event.remove({
@@ -81,162 +57,6 @@ ServerEvents.recipes(event => {
         F: "enchanted:creeper_heart"
     });
 
-    const glyphIngredientReplacementsForTier1AndTier2 = {
-        'ars_nouveau:earth_essence': 'enchanted:breath_of_the_goddess',
-        'ars_nouveau:air_essence': 'enchanted:flying_ointment',
-        'ars_nouveau:wilden_wing': 'enchanted:wool_of_bat',
-        'ars_nouveau:water_essence': 'enchanted:brew_of_the_depths',
-        'ars_nouveau:conjuration_essence': 'enchanted:happenstance_oil',
-        'ars_nouveau:abjuration_essence': 'enchanted:soul_of_the_world',
-        'ars_nouveau:manipulation_essence': 'modern_industrialization:wrench',
-        'ars_nouveau:runic_chalk': 'enchanted:ritual_chalk',
-        'ars_nouveau:fire_essence': 'enchanted:fire_poppet',
-        'starbunclemania:fluid_jar': 'modern_industrialization:bronze_fluid_input_hatch',
-        'ars_nouveau:magebloom': 'minecraft:torchflower',
-        'sauce:anima_essence': 'occultism:cruelty_essence',
-    }
-
-    Ingredient.of('#ars_nouveau:tier_1_glyphs').itemIds.forEach(glyph => {
-        event.forEachRecipe({ type: 'ars_nouveau:glyph', output: glyph }, recipe => {
-            const data = JSON.parse(recipe.json.toString())
-
-            recipe.remove()
-
-            const newInputs = data.inputs
-                .concat([{ item: 'milf:glyph_frame_t1' }])
-                .map(input => {
-                    if (input.item && glyphIngredientReplacementsForTier1AndTier2[input.item]) {
-                        return { item: glyphIngredientReplacementsForTier1AndTier2[input.item] }
-                    }
-                    return input
-                })
-
-            event.custom({
-                type: 'ars_nouveau:glyph',
-                exp: data.exp,
-                inputs: newInputs,
-                output: data.output
-            })
-        })
-    })
-    Ingredient.of('#ars_nouveau:tier_2_glyphs').itemIds.forEach(glyph => {
-        event.forEachRecipe({ type: 'ars_nouveau:glyph', output: glyph }, recipe => {
-            const data = JSON.parse(recipe.json.toString())
-
-            recipe.remove()
-
-            const newInputs = data.inputs
-                .concat([{ item: 'milf:glyph_frame_t2' }])
-                .map(input => {
-                    if (input.item && glyphIngredientReplacementsForTier1AndTier2[input.item]) {
-                        return { item: glyphIngredientReplacementsForTier1AndTier2[input.item] }
-                    }
-                    return input
-                })
-
-            event.custom({
-                type: 'ars_nouveau:glyph',
-                exp: data.exp,
-                inputs: newInputs,
-                output: data.output
-            })
-        })
-    })
-
-    Ingredient.of('#ars_nouveau:tier_3_glyphs').itemIds.forEach(glyph => {
-        event.forEachRecipe({ type: 'ars_nouveau:glyph', output: glyph }, recipe => {
-            const data = JSON.parse(recipe.json.toString())
-
-            recipe.remove()
-
-            const newInputs = data.inputs.concat([{ item: 'milf:glyph_frame_t3' }])
-
-            event.custom({
-                type: 'ars_nouveau:glyph',
-                exp: data.exp,
-                inputs: newInputs,
-                output: data.output
-            })
-        })
-    })
-
-    customAlchemicalForgeCraft(event, {
-        affinities: [
-            "toxony:decay",
-            "toxony:soul",
-            "toxony:wind"
-        ],
-        auxiliary: [
-            {
-                "item": "paganbless:runic_charge"
-            },
-            {
-                "item": "paganbless:athame"
-            }
-        ],
-        main: {
-            "item": "minecraft:writable_book"
-        },
-        result: "ars_nouveau:novice_spell_book"
-    })
-    customAlchemicalForgeCraft(event, {
-        affinities: [
-            "toxony:soul",
-            "toxony:forest",
-            "toxony:ocean"
-        ],
-        auxiliary: [
-            {
-                "item": "thaumon:research_notes"
-            },
-            {
-                "item": "supplementaries:antique_ink"
-            }
-        ],
-        main: {
-            "item": "minecraft:cartography_table"
-        },
-        result: "ars_nouveau:scribes_table"
-    })
-
-    milfShaped(event, {
-        pattern: [
-            "QQQ",
-            "QWQ",
-            "QQQ"
-        ],
-        key: {
-            Q: { item: "minecraft:paper" },
-            W: { item: "paganbless:runic_charge" }
-        },
-        outputItems: [[{ "id": "milf:glyph_frame_t1" }, 1]]
-    })
-    milfShaped(event, {
-        pattern: [
-            "WQW",
-            "QEQ",
-            "WQW"
-        ],
-        key: {
-            Q: { item: "occultism:iesnium_nugget" },
-            W: { item: "cognition:fluorescent_jelly" },
-            E: { item: "milf:glyph_frame_t1" },
-        },
-        outputItems: [[{ "id": "milf:glyph_frame_t2" }, 1]]
-    })
-    milfShaped(event, {
-        pattern: [
-            "WQW",
-            "QEQ",
-            "WQW"
-        ],
-        key: {
-            Q: { item: "spectrum:paltaeria_fragments" },
-            W: { item: "spectrum:stratine_fragments" },
-            E: { item: "milf:glyph_frame_t2" },
-        },
-        outputItems: [[{ "id": "milf:glyph_frame_t3" }, 1]]
-    })
     milfShaped(event, {
         pattern: [
             "trt",
@@ -246,7 +66,7 @@ ServerEvents.recipes(event => {
         key: {
             q: { item: "minecraft:writable_book" },
             w: { item: "paganbless:runic_charge" },
-            e: { item: "toxony:toxic_leather" },
+            e: { item: "hexerei:infused_fabric" },
             r: { item: "minecraft:amethyst_shard" },
             t: { item: "crittersandcompanions:silk" },
         },
@@ -255,72 +75,8 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    customPedestalCraft(event, {
-        time: 1000,
-        tier: "complex",
-        experience: 2.0,
-        citrine: 16,
-        topaz: 4,
-        amethyst: 2,
-        moonstone: 20,
-        onyx: 8,
-        pattern: [
-            'ewe',
-            'eqe',
-            'ewe'
-        ],
-        key: {
-            q: 'spectrum:bismuth_crystal',
-            w: 'spectrum:pure_gold',
-            e: "ars_nouveau:archwood_planks"
-        },
-        result: {
-            "id": "ars_nouveau:imbuement_chamber",
-            "count": 1
-        },
-        advancement: "spectrum:lategame/collect_pure_resource",
-        removeRecipe: true
-    })
+    event.replaceInput({ output: 'ars_nouveau:imbuement_chamber' }, 'minecraft:gold_ingot', 'embers:dawnstone_plate')
 
-    miMachineRecipe(event, {energy:2, time:100,
-        inputItems:[
-            [{tag: "spectrum:gemstone_shards"}],
-        ],
-        inputFluids:[
-            [{fluid:"modern_industrialization:high_pressure_steam"}, 200],
-            [{fluid:"spectrum:liquid_crystal"}, 100]
-        ],
-        outputFluids:[
-            [{fluid:"milf:ethereal_source"}, 1000]
-        ]
-    })
-
-    customPedestalCraft(event, {
-        time: 1000,
-        tier: "complex",
-        experience: 2.0,
-        citrine: 10,
-        topaz: 20,
-        moonstone: 10,
-        onyx: 16,
-        pattern: [
-            'ewe',
-            'rqr',
-            'ewe'
-        ],
-        key: {
-            q: 'modern_industrialization:titanium_tank',
-            w: 'ars_nouveau:source_gem',
-            e: "ars_nouveau:sourcestone",
-            r: "ars_nouveau:sourcestone",
-        },
-        result: {
-            "id": "starbunclemania:fluid_sourcelink",
-            "count": 1
-        },
-        advancement: "spectrum:lategame/craft_moonstone_pedestal",
-        removeRecipe: true
-    })
     customPedestalCraft(event, {
         time: 400,
         tier: "advanced",
@@ -347,41 +103,135 @@ ServerEvents.recipes(event => {
     })
 
 
-    customWorktable(event, {
+    customPedestalCraft(event, {
+        time: 200,
+        tier: "basic",
+        experience: 2.0,
+        citrine: 4,
+        topaz: 8,
+        amethyst: 12,
         pattern: [
-            " ye",
-            " wy",
-            "t  "
+            ' ew',
+            ' qe',
+            'r  '
         ],
-        reagents: ["u   "],
         key: {
-            "w": { "item": "paganbless:black_thorn_staff" },
-            "e": { "item": "enchanted:attuned_stone" },
-            "t": { "item": "eidolon_repraised:arcane_gold_ingot" },
-            "y": { "item": "eidolon_repraised:gold_inlay" },
-            "u": { "item": "eidolon_repraised:soul_shard" },
+            q: 'paganbless:black_thorn_staff',
+            w: "enchanted:attuned_stone",
+            e: "#c:plates/dawnstone",
+            r: "embers:dawnstone_ingot",
         },
-        result: "ars_nouveau:dominion_wand",
+        result: {
+            "id": "ars_nouveau:dominion_wand",
+            "count": 1
+        },
+        advancement: "spectrum:place_pedestal",
         removeRecipe: true
     })
 
-    customWorktable(event, {
+    customPedestalCraft(event, {
+        time: 1200,
+        tier: "basic",
+        experience: 2.0,
+        citrine: 12,
+        topaz: 2,
+        amethyst: 8,
         pattern: [
-            "wyw",
-            " q ",
-            "ere"
+            'wtw',
+            'yqy',
+            'ere'
         ],
-        reagents: ["utut"],
         key: {
-            "q": { "item": "minecraft:lectern" },
-            "w": { "item": "eidolon_repraised:arcane_gold_ingot" },
-            "e": { "item": "eidolon_repraised:gold_inlay" },
-            "r": { "item": "immersiveengineering:steel_fence" },
-            "y": { "item": "minecraft:heavy_weighted_pressure_plate" },
-            "t": { "item": "enchanted:attuned_stone" },
-            "u": { "item": "eidolon_repraised:soul_shard" },
+            q: 'minecraft:lectern',
+            w: "embers:dawnstone_ingot",
+            e: "#c:plates/dawnstone",
+            r: "immersiveengineering:steel_fence",
+            t: "minecraft:heavy_weighted_pressure_plate",
+            y: "enchanted:attuned_stone",
         },
-        result: "ars_nouveau:storage_lectern",
+        result: {
+            "id": "ars_nouveau:storage_lectern",
+            "count": 1
+        },
+        advancement: "spectrum:place_pedestal",
         removeRecipe: true
     })
+
+    customPedestalCraft(event, {
+        time: 400,
+        tier: "simple",
+        experience: 1.0,
+        citrine: 2,
+        topaz: 5,
+        pattern: [
+            'wtw',
+            'wrw',
+            'wqw'
+        ],
+        key: {
+            q: 'ytech:millstone',
+            w: 'ars_nouveau:source_gem',
+            r: "minecraft:writable_book",
+            t: "ytech:bronze_anvil",
+        },
+        result: {
+            id: "ars_elemental:anima_caster_tome",
+            count: 1,
+            components: {
+                custom_name: '{"color":"gray","text":"Hephaestus Touch"}',
+                "sauce:school_tome_caster": {
+                    flavor_text: "A gift from the <magic>ancient smith</magic>, reducing matter to its primordial form",
+                    spells: {
+                        0: {
+                            color: { b: 127, g: 127, id: "ars_nouveau:constant", r: 127 },
+                            name: "Leshy's Mercy",
+                            particleTimeline: {
+                                "ars_nouveau:touch": {
+                                    onResolvingEffect: {
+                                        motion: { propMap: {}, type: "ars_nouveau:burst" },
+                                        particleOptions: {
+                                            properties: {
+                                                "ars_nouveau:density": { density: 10, radius: 0.1, spawnType: "SPHERE" },
+                                                "ars_nouveau:emitter": { age: 0, rotation: { x: 0.0, y: 0.0 } },
+                                                "ars_nouveau:particle_type": {
+                                                    particleType: "ars_nouveau:campfire_cosy_smoke",
+                                                    subProperties: {
+                                                        "ars_nouveau:color": {
+                                                            particleColor: { b: 127, g: 127, id: "ars_nouveau:constant", r: 127 },
+                                                            tintDisabled: 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            type: "ars_nouveau:campfire_cosy_smoke"
+                                        }
+                                    },
+                                    resolveSound: { sound: { pitch: 0.45, sound: { id: "ars_nouveau:mace_smash_air" } } },
+                                    type: "ars_nouveau:touch"
+                                }
+                            },
+                            recipe: ["ars_nouveau:glyph_touch", "ars_nouveau:glyph_crush", "ars_nouveau:glyph_sensitive"],
+                            sound: {}
+                        }
+                    }
+                }
+            }
+        },
+        advancement: "spectrum:place_pedestal"
+    })
+
+
+    miMachineRecipe(event, {energy:2, time:40, machine:"modern_industrialization:source_alembic",
+        inputItems:[
+            [{tag:"milf:basic_gemstone_shards"}, 6],
+        ],
+        inputFluids: [
+            [{ fluid: "supplementaries:lumisene" }, 200]
+        ],
+        outputFluids: [
+            [{ fluid: "milf:ethereal_source" }, 500]
+        ],
+    })
+
+
 })

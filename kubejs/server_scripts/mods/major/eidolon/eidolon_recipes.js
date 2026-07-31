@@ -38,6 +38,13 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    event.remove({ output: 'eidolon_repraised:pewter_blend' })
+    event.shapeless('eidolon_repraised:pewter_blend x2', [
+        '#c:ingots/lead',
+        '#c:ingots/iron',
+        'spectrum:vegetal'
+    ])
+
     customMixingCauldron(event, {
         fluid: "minecraft:water",
         fluidAmount: 1000,

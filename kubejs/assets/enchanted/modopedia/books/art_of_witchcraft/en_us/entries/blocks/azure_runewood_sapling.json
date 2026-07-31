@@ -1,0 +1,53 @@
+{
+  "assigned_items": ["malum:azure_runewood_sapling", "malum:runewood_sapling", "malum:runewood_log", "malum:runewood", "malum:exposed_runewood_log", "malum:stripped_runewood_log", "malum:stripped_runewood", "malum:revealed_runewood_log", "malum:runewood_boards", "malum:vertical_runewood_boards", "malum:runewood_planks", "malum:vertical_runewood_planks", "malum:runewood_tiles", "malum:rustic_runewood_planks", "malum:vertical_rustic_runewood_planks", "malum:rustic_runewood_tiles", "malum:cut_runewood_planks", "malum:runewood_panel", "malum:runewood_beam", "malum:runewood_leaves", "malum:azure_runewood_leaves"],
+  "icon": {
+    "count": 1,
+    "id": "malum:azure_runewood_sapling"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Azure Runewood Trees",
+          "template": "modopedia:page/headered_text",
+          "text": "It was said that Azure Runewood absorbed the echoes of countless rituals, its bark recording them as glowing runes. When magic abandoned the world, those echoes faded, and the trees vanished with them"
+        },
+        {
+          "components": [
+            {
+              "type": "modopedia:multiblock",
+              "multiblock": {
+                "type": "modopedia:dense",
+                "key": {
+                  "S": {
+                    "type": "modopedia:simple",
+                    "states": [
+                      "malum:azure_runewood_sapling"
+                    ]
+                  }
+                },
+                "pattern": [
+                  [
+                    "S"
+                  ]
+                ]
+              },
+              "no_offsets": true
+            }
+          ],
+          "height": 60,
+          "y": 54
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "result": "malum:azure_runewood_sapling",
+          "template": "enchanted:page/mutagen"
+        }
+      ]
+    }
+  ],
+  "title": "Azure Runewood Trees"
+}

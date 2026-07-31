@@ -1,0 +1,59 @@
+{
+  "assigned_items": [
+    "ars_nouveau:blue_archwood_sapling", 
+    "ars_nouveau:red_archwood_sapling", 
+    "ars_nouveau:purple_archwood_sapling", 
+    "ars_nouveau:green_archwood_sapling", 
+    "ars_elemental:yellow_archwood_sapling"
+],
+  "icon": {
+    "count": 1,
+    "id": "ars_nouveau:purple_archwood_sapling"
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "header": "Archwood Trees",
+          "template": "modopedia:page/headered_text",
+          "text": "A tree species that once grew where magic was woven into nature. After the world lost its magic, Archwood was believed extinct, its timber little more than a legend among mages"
+        },
+        {
+          "components": [
+            {
+              "type": "modopedia:multiblock",
+              "multiblock": {
+                "type": "modopedia:dense",
+                "key": {
+                  "S": {
+                    "type": "modopedia:simple",
+                    "states": [
+                      "ars_nouveau:purple_archwood_sapling"
+                    ]
+                  }
+                },
+                "pattern": [
+                  [
+                    "S"
+                  ]
+                ]
+              },
+              "no_offsets": true
+            }
+          ],
+          "height": 60,
+          "y": 54
+        }
+      ]
+    },
+    {
+      "components": [
+        {
+          "result": "ars_nouveau:purple_archwood_sapling",
+          "template": "enchanted:page/mutagen"
+        }
+      ]
+    }
+  ],
+  "title": "Archwood Trees"
+}

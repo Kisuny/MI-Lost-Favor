@@ -46,8 +46,8 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
 
         })
     }
-    if(args.removeRecipe){args.outputItems.forEach((out) => {event.remove({output: out[0]})})}
-    if (args.removeRecipeType) { args.outputItems.forEach((out) => {event.remove({output: out[0], type:args.removeRecipeType})}) }
+    if(args.removeRecipe){args.outputItems.forEach((out) => {event.remove({output: out[0].item})})}
+    if (args.removeRecipeType) { args.outputItems.forEach((out) => {event.remove({output: out[0].item, type:args.removeRecipeType})}) }
     event.custom(recipe)
 }
 
@@ -86,6 +86,12 @@ ServerEvents.recipes(event => {
     ieCrusherCraft(event,{
         inputItems:[[{"item": "modern_industrialization:fire_clay_brick"}]],
         outputItems:[[{item: "modern_industrialization:fire_clay_dust"}, 1]],
+    })
+
+    ieCrusherCraft(event, {
+        inputItems: [[{ tag: "c:ender_pearls" }]],
+        outputItems: [[{ item: "ae2:ender_dust" }, 1]],
+        removeRecipe:true
     })
 
     let spectrumPowderTypes = ["spectrum:topaz_powder", "spectrum:amethyst_powder", "spectrum:citrine_powder", "spectrum:onyx_powder", "spectrum:moonstone_powder", "spectrum:quitoxic_powder"]

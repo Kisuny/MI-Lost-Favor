@@ -136,19 +136,18 @@ let miMachinesCompat = {
 }
 
 ServerEvents.recipes(event => {
+
     event.remove({
         output: [
             'modern_industrialization:netherite_hammer',
             'modern_industrialization:steel_hammer',
             'modern_industrialization:diamond_hammer',
-            'modern_industrialization:iron_hammer',
-            "modern_industrialization:diamond_tiny_dust"
+            'modern_industrialization:iron_hammer'
         ]
     })
 
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:packer' })
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
-
     event.remove({ type: 'modern_industrialization:quarry' })
 
     customPestleAndMortarCraft(event, {
@@ -162,25 +161,124 @@ ServerEvents.recipes(event => {
         amount: 3,
     })
 
-    yTechShaped(event, {
-        pattern: [
-            "ccc",
-            "c#c",
-            "ccc",
-        ],
-        key: {
-            "#": { "tag": "ytech:brick_molds" },
-            "c": { "item": "milf:fire_clay_ball" },
-        },
-        outputItems: [[{ id: "milf:unfired_fire_clay_brick" }, 8]],
-        compatOff:true
+    //#region milfShaped
+
+
+    global.dyeColors.forEach(({name: color}) => {
+
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "DMD",
+                "BPB"
+            ],
+            key: {
+                D: { item: `minecraft:${color}_dye` },
+                M: { item: "milf:basic_motor" },
+                B: { item: "modern_industrialization:aluminum_bolt" },
+                P: { item: "modern_industrialization:aluminum_curved_plate" }
+
+            },
+            outputItems: [[{ id: `modern_industrialization:${color}_item_pipe` }, 8]],
+            removeRecipe: true,
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "DMD",
+                "BPB"
+            ],
+            key: {
+                D: { item: `minecraft:${color}_dye` },
+                M: { item: "milf:basic_pump" },
+                B: { item: "modern_industrialization:aluminum_bolt" },
+                P: { item: "modern_industrialization:aluminum_curved_plate" }
+
+            },
+            outputItems: [[{ id: `modern_industrialization:${color}_fluid_pipe` }, 12]],
+            removeRecipe: true,
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "PPP",
+                "DPD",
+                "PPP"
+            ],
+            key: {
+                D: { item: `minecraft:${color}_dye` },
+                P: { tag: "modern_industrialization:item_pipes" },
+
+            },
+            outputItems: [[{ id: `modern_industrialization:${color}_item_pipe` }, 7]],
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "PPP",
+                "DPD",
+                "PPP"
+            ],
+            key: {
+                D: { item: `minecraft:${color}_dye` },
+                P: { tag: "modern_industrialization:fluid_pipes" },
+
+            },
+            outputItems: [[{ id: `modern_industrialization:${color}_fluid_pipe` }, 7]],
+        })
+
+        milfShapeless(event, {
+            inputItems: [
+                [{ item: `minecraft:${color}_dye` }, 1],
+                [{ tag: "modern_industrialization:item_pipes" }, 1],
+            ],
+            outputItems: [[{ id: `modern_industrialization:${color}_item_pipe` }, 1]],
+        })
+
+        milfShapeless(event, {
+            inputItems: [
+                [{ item: `minecraft:${color}_dye` }, 1],
+                [{ tag: "modern_industrialization:fluid_pipes" }, 1],
+            ],
+            outputItems: [[{ id: `modern_industrialization:${color}_fluid_pipe` }, 1]],
+        })
+
+
     })
 
-    milfSmelting(event, {
-        inputItems: [[{ item: "milf:unfired_fire_clay_brick" }]],
-        outputItems: [[{ id: "modern_industrialization:fire_clay_brick" }]],
-        removeRecipe:true
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "M M",
+            "BPB"
+        ],
+        key: {
+            M: { item: "milf:basic_motor" },
+            B: { item: "modern_industrialization:aluminum_bolt" },
+            P: { item: "modern_industrialization:aluminum_curved_plate" }
+
+        },
+        outputItems: [[{ id: `modern_industrialization:item_pipe` }, 8]],
+        removeRecipe: true,
     })
+
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "M M",
+            "BPB"
+        ],
+        key: {
+            M: { item: "milf:basic_pump" },
+            B: { item: "modern_industrialization:aluminum_bolt" },
+            P: { item: "modern_industrialization:aluminum_curved_plate" }
+
+        },
+        outputItems: [[{ id: `modern_industrialization:fluid_pipe` }, 12]],
+        removeRecipe: true,
+    })
+
 
     milfShaped(event, {
         pattern: [
@@ -194,8 +292,8 @@ ServerEvents.recipes(event => {
 
         },
         outputItems: [[{ id: "modern_industrialization:fire_clay_bricks" }]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -239,64 +337,36 @@ ServerEvents.recipes(event => {
             C: { item: "immersiveengineering:component_electronic_adv" }
         },
         outputItems: [[{ id: "modern_industrialization:advanced_large_steam_boiler" }, 1]],
-        removeRecipe:true
+        removeRecipe: true
     })
 
-    miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
-        inputItems: [
-            [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
-            [{ "tag": "immersiveengineering:treated_wood" }, 12],
-            [{ "item": "immersiveengineering:logic_unit" }, 4],
-            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
-            [{ "item": "immersiveengineering:wirecoil_steel" }, 12],
+    milfShaped(event, {
+        pattern: [
+            "DDD",
+            "DDD",
+            " S "
         ],
-        outputItems: [[{ "item": "modern_industrialization:radio_transcriber" }, 1]]
+        key: {
+            D: { item: "modern_industrialization:iron_double_ingot" },
+            S: { item: "minecraft:stick" },
+        },
+        outputItems: [[{ id: `modern_industrialization:iron_hammer` }, 1]],
+        removeRecipe: true
     })
 
-    miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
-        inputItems: [
-            [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
-            [{ "tag": "immersiveengineering:treated_wood" }, 12],
-            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
-            [{ "item": "immersiveengineering:wirecoil_steel" }, 12],
-            [{ "item": "milf:tempered_glass" }, 4],
-            [{ "item": "milf:punched_card" }, 8],
+    milfShaped(event, {
+        pattern: [
+            "DDD",
+            "DDD",
+            " S "
         ],
-        outputItems: [[{ "item": "modern_industrialization:enigma_machine" }, 1]]
+        key: {
+            D: { item: "modern_industrialization:steel_double_ingot" },
+            S: { item: "minecraft:stick" },
+        },
+        outputItems: [[{ id: `modern_industrialization:steel_hammer` }, 1]],
+        removeRecipe: true
     })
-
-    aeInscriberRecipe(event, {
-        inputItems: [
-            [{ "item": "milf:tempered_glass" }, 1],
-            [{ "item": "modern_industrialization:steel_curved_plate" }, 1],
-            [{ "item": "milf:hemispherical_press_mold" }, 1],
-        ],
-        outputItems: [[{ "id": "milf:lens" }, 1]],
-        mode: "inscribe"
-    })
-
-    event.forEachRecipe({ output: /.*fine_wire/, type: "modern_industrialization:wiremill" }, r => {
-        let inputItems = JSON.parse(r.originalJson).item_inputs.map(item => [item])
-
-        yTechShapeless(event, {
-            outputItems: [[{ "id": r.originalRecipeResult.id }, 1]],
-            inputItems: inputItems.concat([[{ item: "immersiveengineering:wirecutter"}]]),
-            compatOff: true
-        })
-
-        miMachineRecipe(event, {
-            energy: 12, time: 100, machine: "modern_industrialization:wiremill",
-            inputItems: inputItems,
-            outputItems: [
-                [{ item: r.originalRecipeResult.id }, 2]
-            ]
-        })
-        
-        event.remove({ output: r.originalRecipeResult.id })
-    })
-
 
     const tanksAndBarrelsMI = [
         ["modern_industrialization:bronze_machine_casing", "milf:bronze_glass", "bronze"],
@@ -305,7 +375,7 @@ ServerEvents.recipes(event => {
         ["modern_industrialization:clean_stainless_steel_machine_casing", "milf:tempered_glass", "stainless_steel"],
         ["modern_industrialization:solid_titanium_machine_casing", "milf:tempered_glass", "titanium"]
     ]
-    
+
     tanksAndBarrelsMI.forEach(entry => {
         yTechShaped(event, {
             pattern: [
@@ -340,11 +410,11 @@ ServerEvents.recipes(event => {
     })
 
     const hatchesMI = [
-        ['milf:steel_machine_bit',"steel"],
-        ['milf:bronze_machine_bit',"bronze"]
+        ['milf:steel_machine_bit', "steel"],
+        ['milf:bronze_machine_bit', "bronze"]
     ]
-    
-    hatchesMI.forEach(entry =>{
+
+    hatchesMI.forEach(entry => {
         milfShaped(event, {
             pattern: [
                 "BPB",
@@ -388,7 +458,7 @@ ServerEvents.recipes(event => {
             },
             outputItems: [[{ id: `modern_industrialization:${entry[1]}_fluid_output_hatch` }, 1]],
             removeRecipe: true,
-            
+
         })
 
         milfShaped(event, {
@@ -407,6 +477,24 @@ ServerEvents.recipes(event => {
         })
     })
 
+    //#endregion
+
+    //#region yTechShaped
+
+    yTechShaped(event, {
+        pattern: [
+            "ccc",
+            "c#c",
+            "ccc",
+        ],
+        key: {
+            "#": { "tag": "ytech:brick_molds" },
+            "c": { "item": "milf:fire_clay_ball" },
+        },
+        outputItems: [[{ id: "milf:unfired_fire_clay_brick" }, 8]],
+        compatOff: true
+    })
+
     yTechShaped(event, {
         pattern: [
             " I ",
@@ -421,33 +509,46 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    milfShaped(event, {
-        pattern: [
-            "DDD",
-            "DDD",
-            " S "
-        ],
-        key: {
-            D: { item: "modern_industrialization:iron_double_ingot" },
-            S: { item: "minecraft:stick" },
-        },
-        outputItems: [[{ id: `modern_industrialization:iron_hammer` }, 1]],
-        removeRecipe: true
+    //#endregion
+
+
+    milfSmelting(event, {
+        inputItems: [[{ item: "milf:unfired_fire_clay_brick" }]],
+        outputItems: [[{ id: "modern_industrialization:fire_clay_brick" }]],
+        removeRecipe:true
     })
 
-    milfShaped(event, {
-        pattern: [
-            "DDD",
-            "DDD",
-            " S "
+
+    aeInscriberRecipe(event, {
+        inputItems: [
+            [{ "item": "milf:tempered_glass" }, 1],
+            [{ "item": "modern_industrialization:steel_curved_plate" }, 1],
+            [{ "item": "milf:hemispherical_press_mold" }, 1],
         ],
-        key: {
-            D: { item: "modern_industrialization:steel_double_ingot" },
-            S: { item: "minecraft:stick" },
-        },
-        outputItems: [[{ id: `modern_industrialization:steel_hammer` }, 1]],
-        removeRecipe: true
+        outputItems: [[{ "id": "milf:lens" }, 1]],
+        mode: "inscribe"
     })
+
+    event.forEachRecipe({ output: /.*fine_wire/, type: "modern_industrialization:wiremill" }, r => {
+        let inputItems = JSON.parse(r.originalJson).item_inputs.map(item => [item])
+
+        yTechShapeless(event, {
+            outputItems: [[{ "id": r.originalRecipeResult.id }, 1]],
+            inputItems: inputItems.concat([[{ item: "immersiveengineering:wirecutter"}]]),
+            compatOff: true
+        })
+
+        miMachineRecipe(event, {
+            energy: 12, time: 100, machine: "modern_industrialization:wiremill",
+            inputItems: inputItems,
+            outputItems: [
+                [{ item: r.originalRecipeResult.id }, 2]
+            ]
+        })
+        
+        event.remove({ output: r.originalRecipeResult.id })
+    })
+
 
     ieBottlingMachineRecipe(event, {
         outputItems: [
@@ -550,24 +651,12 @@ ServerEvents.recipes(event => {
         )
     })
 
-    const pipeTypes = ["fluid", "item"]
-    pipeTypes.forEach(type => {
-        global.dyeColors.forEach(color => {
-            event.replaceInput(
-                { output: `modern_industrialization:${color.name}_${type}_pipe` },
-                'modern_industrialization:bronze_curved_plate',
-                'modern_industrialization:aluminum_curved_plate'
-            )
-        });
-
-        event.replaceInput(
-            { output: `modern_industrialization:${type}_pipe` },
-            'modern_industrialization:bronze_curved_plate',
-            'modern_industrialization:aluminum_curved_plate'
-        )
-    })
-
-    const hatches = ['modern_industrialization:bronze_item_input_hatch', 'modern_industrialization:steel_item_input_hatch', 'modern_industrialization:steel_fluid_input_hatch', 'modern_industrialization:bronze_fluid_input_hatch']
+    const hatches = [
+        'modern_industrialization:bronze_item_input_hatch', 
+        'modern_industrialization:steel_item_input_hatch', 
+        'modern_industrialization:steel_fluid_input_hatch', 
+        'modern_industrialization:bronze_fluid_input_hatch'
+    ]
 
     hatches.forEach(hatch =>{
         yTechShapeless(event, {
@@ -582,10 +671,6 @@ ServerEvents.recipes(event => {
             category:"misc"
         })
     })
-
-
-
-
 
 })
 
@@ -610,6 +695,12 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/iron/assembler/barrel",
         "modern_industrialization:steam_age/steel/quarry_asbl",
         "modern_industrialization:assembler_generated/steam_age/steel/quarry",
+        "modern_industrialization:materials/coke/packer/block",
+        "modern_industrialization:materials/coke/unpacker/gem",
+        "modern_industrialization:materials/coke/craft/block_from_gem",
+        "modern_industrialization:materials/coke/craft/gem_from_block",
+
+        "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
 
         "modern_industrialization:alloy/mixer/cupronickel/tiny_dust",
         "modern_industrialization:materials/mixer/fire_clay_dust",

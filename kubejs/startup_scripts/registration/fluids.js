@@ -17,3 +17,16 @@ createNewFluid("alien_goo", {
 })
 
 createNewFluid("shimmersteel_essence", {textureType:"thick", color: Number("0xC18A36"), lang: { "ru_ru": "Эссенция сверкостали" }})
+createNewFluid("syngas", {
+    stillTexture: "milf:fluid/syngas",
+    flowingTexture: "milf:fluid/syngas",
+    fluidTag: "c:gaseous",
+    noBlock:true
+})
+
+createNewFluid("purified_syngas", {
+    stillTexture: "milf:fluid/purified_syngas",
+    flowingTexture: "milf:fluid/purified_syngas",
+    fluidTag: "c:gaseous",
+    noBlock: true
+})

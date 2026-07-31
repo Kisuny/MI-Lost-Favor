@@ -60,12 +60,41 @@ function addAlloyRecipes(event, materialName, components, args){
         removeRecipeType: "extended_industrialization:alloy_smelter"
     })
 
+    if(args.blockRecipe){
+        miMachineRecipe(event, {
+            energy: baseEnergy * 9, time: baseTime * 2, machine: "extended_industrialization:alloy_smelter",
+            inputItems: components.map(component => [
+                { item: `${component.blockMod ? component.blockMod : "modern_industrialization"}:${component.name}_block` }, component.amount]
+            ),
+            outputItems: [[{ item: `modern_industrialization:${materialName}_block` }, totalAmount]],
+            removeRecipeType: "modern_industrialization:mixer"
+        })
+    }
+
+
+
+
 }
 
 ServerEvents.recipes(event => {
-    addAlloyRecipes(event, "tumbaga", [{ name: "copper", amount: 2, ingotMod: "minecraft" }, { name: "gold", amount: 1, ingotMod: "minecraft", nuggetMod:"minecraft" }])
-    addAlloyRecipes(event, "constantan", [{ name: "copper", amount: 1, ingotMod: "minecraft" }, { name: "nickel", amount: 1 }])
-    addAlloyRecipes(event, "cupronickel", [{ name: "copper", amount: 1, ingotMod: "minecraft" }, { name: "constantan", amount: 1 }])
+    addAlloyRecipes(event, "tumbaga", [
+        { name: "copper", amount: 2, ingotMod: "minecraft" , blockMod: "minecraft"}, 
+        { name: "gold", amount: 1, ingotMod: "minecraft", nuggetMod: "minecraft", blockMod: "minecraft" }
+    ])
+    addAlloyRecipes(event, "constantan", [
+        { name: "copper", amount: 1, ingotMod: "minecraft", blockMod: "minecraft" }, 
+        { name: "nickel", amount: 1 }
+    ],{
+        blockRecipe: true
+    })
+    addAlloyRecipes(event, "cupronickel", [
+        { name: "copper", amount: 1, ingotMod: "minecraft", blockMod: "minecraft" }, 
+        { name: "constantan", amount: 1 }
+    ],
+    {
+        baseEnergy: 16,
+        blockRecipe: true
+    })
 
 
 })

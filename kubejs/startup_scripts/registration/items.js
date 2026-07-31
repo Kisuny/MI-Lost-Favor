@@ -85,6 +85,8 @@ createNewItem('basic_motor')
 createNewItem('basic_pump')
 
 createNewItem('space_hive')
+createNewItem('kerogen')
+
 
 createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дальномер" } })
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })

@@ -49,34 +49,34 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
-    ieBottlingMachineRecipe(event, {
-        outputItems:[
-            [{item:"milf:basic_machine_bit"}, 8],
-            [{item:"milf:bits_mold"}, 1]
-        ],
-        inputFluids:[
-            [{fluid:"milf:liquid_plastic"}, 1000]
-        ],
-        inputItems:[
-            [{item:"milf:bits_mold"}, 1]
-        ],
-        compatOff:true
-    })
+    // ieBottlingMachineRecipe(event, {
+    //     outputItems:[
+    //         [{item:"milf:basic_machine_bit"}, 8],
+    //         [{item:"milf:bits_mold"}, 1]
+    //     ],
+    //     inputFluids:[
+    //         [{fluid:"milf:liquid_plastic"}, 1000]
+    //     ],
+    //     inputItems:[
+    //         [{item:"milf:bits_mold"}, 1]
+    //     ],
+    //     compatOff:true
+    // })
 
-    ieBottlingMachineRecipe(event, {
-        outputItems: [
-            [{ item: "modern_industrialization:basic_machine_hull" }, 1]
-        ],
-        inputFluids: [
-            [{ fluid: "milf:liquid_plastic" }, 1500]
-        ],
-        inputItems: [
-            [{ item: "modern_industrialization:tin_cable" }, 4],
-            [{ item: "modern_industrialization:portable_storage_unit" }],
-            [{ item: "milf:tempered_glass" }]
-        ],
-        compatOff: true
-    })
+    // ieBottlingMachineRecipe(event, {
+    //     outputItems: [
+    //         [{ item: "modern_industrialization:basic_machine_hull" }, 1]
+    //     ],
+    //     inputFluids: [
+    //         [{ fluid: "milf:liquid_plastic" }, 1500]
+    //     ],
+    //     inputItems: [
+    //         [{ item: "modern_industrialization:tin_cable" }, 4],
+    //         [{ item: "modern_industrialization:portable_storage_unit" }],
+    //         [{ item: "milf:tempered_glass" }]
+    //     ],
+    //     compatOff: true
+    // })
 
     function bottling_recipe(inputs, fluid, outputs) {
         ieBottlingMachineRecipe(event, {

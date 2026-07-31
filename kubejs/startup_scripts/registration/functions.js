@@ -1,22 +1,12 @@
 //priority: 1000
 
-//const { $DiggerItemBuilder$Pickaxe } = require("@package/dev/latvian/mods/kubejs/item/custom")
-
-/** @type {typeof import("net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent").$BlockEntityTypeAddBlocksEvent } */
 let $BlockEntityTypeAddBlocksEvent  = Java.loadClass("net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent")
-/** @type {typeof import("net.minecraft.world.level.block.state.properties.EnumProperty").$EnumProperty } */
 let $EnumProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.EnumProperty")
-/** @type {typeof import("net.minecraft.world.level.block.state.properties.IntegerProperty").$IntegerProperty } */
 let $IntegerProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.IntegerProperty")
-/** @type {typeof import("net.minecraft.world.level.block.state.properties.BooleanProperty").$BooleanProperty } */
 let $BooleanProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
+
 global.langCustomStuff = global.langCustomStuff || {}
-
-const enabledProperty = $BooleanProperty.create("enabled")
-//const activeMachineShapeProperty  = $EnumProperty.create("shape", "String",["0", "1", "2", "3", "4"])
-const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 5)
-const previewOffsetProperty = $IntegerProperty.create("preview_offset", 0, 5)
-
+global.creditCustomStuff = global.creditCustomStuff || {}
 
 function createNewItem(id, args) {
     args = args || {}
@@ -25,23 +15,53 @@ function createNewItem(id, args) {
         item.texture(args.texturePath || `milf:item/${id}`)
         itemBuilder(item, args)
     })
-    global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    milfData.ITEM(id, args)
+    //global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
-function createNewJavaItem(id, args, javaAdapterFactory) {
+function createNewJavaItem(id, args, itemFactory) {
     args = args || {}
     StartupEvents.registry('item', event => {
         let builder = event.createCustom(`milf:${id}`, () => {
-            return javaAdapterFactory()
+            return itemFactory()
         })
         itemBuilder(builder, args)
     })
-    addLang(`milf:${id}`, args)
+    milfData.ITEM(id, args)
 }
 
-function addLang( id, args){
-    args = args || {}
-    global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+let milfData = {
+
+    addAllMilf(id, args, type) {
+        this.addMilfLang(id, args, type)
+        this.addMilfCredit(id, type)
+    },
+
+    addMilfLang(id, args, type) {
+        this.addLang(id, args, type, "milf")
+        //global.langCustomStuff[`${type}.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    },
+
+    addLang(id, args, type, modId){
+        global.langCustomStuff[`${type}.${modId}.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    },
+
+    addMilfCredit(id, type){
+        this.addCredit(id, type, "milf")
+    },
+
+    addCredit(id, type, modId){
+        if (type == "fluid") {
+            global.creditCustomStuff[`${modId}:${id}_bucket`] = `milf.credit.${type}`
+            return
+        }
+        global.creditCustomStuff[`${modId}:${id}`] = `milf.credit.${type}`
+    },
+
+    ITEM(id, args) { this.addAllMilf(id, args, "item")},
+    BLOCK(id, args) { this.addAllMilf(id, args, "block")},
+    FLUID(id, args) { this.addAllMilf(id, args, "fluid")}
+
 }
 
 function itemBuilder(/**@type {$DiggerItemBuilder$Pickaxe} */ builder, args) {
@@ -115,7 +135,19 @@ function createNewBlock(id, args) {
             itemBuilder(item, args)
         })
     })
-    global.langCustomStuff[`block.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    milfData.BLOCK(id, args)
+}
+
+function createNewJavaBlock(id, args, blockFactory) {
+    args = args || {}
+    StartupEvents.registry('block', event => {
+        let builder = event.createCustom(`milf:${id}`, () => {
+            return blockFactory()
+        })
+        
+    })
+    createNewJavaItem(id, args, () => new $BlockItem(`milf:${id}`, new $Item$Properties()))
+    milfData.BLOCK(id, args)
 }
 
 function createNewFluid(id, args) {
@@ -125,9 +157,14 @@ function createNewFluid(id, args) {
         args.stillTexture && fluid.stillTexture(args.stillTexture)
         args.flowingTexture && fluid.flowingTexture(args.flowingTexture)
         args.color && fluid.tint.apply(fluid, [args.color])
+        args.levelDecreasePerBlock && fluid.levelDecreasePerBlock(args.levelDecreasePerBlock)
+        args.fluidTag && fluid.tag(args.fluidTag)
+        args.noBucket && fluid.noBucket()
+        args.noBlock && fluid.noBlock()
+
         itemBuilder(fluid.bucketItem, args)
     })
-    global.langCustomStuff[`fluid.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    milfData.FLUID(id, args)
 }
 
 function idToName(id) {

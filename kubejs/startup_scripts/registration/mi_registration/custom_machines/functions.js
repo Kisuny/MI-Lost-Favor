@@ -9,10 +9,10 @@ function shapeMemberOf(event, block, actualBlock){
     return block.tag ? event.memberOfBlockTag(actualBlock, block.tag) : event.memberOfBlock(actualBlock)
 }
 
-function registerSingleMIMachine(name, args){
+function registerSingleMIMachine(id, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(name)
+        recipe = event.register(id)
         args.itemsIn && (recipe = recipe.withItemInputs())
         args.itemsOut && (recipe = recipe.withItemOutputs())
         args.fluidsIn && (recipe = recipe.withFluidInputs())
@@ -20,7 +20,7 @@ function registerSingleMIMachine(name, args){
     })
     MIMachineEvents.registerMachines(event => {
         event.craftingSingleBlock(
-            args.name || idToName(name), name, recipe, args.tiers || ["electric"], args.guiheight || -1, 
+            args.name || idToName(id), id, recipe, args.tiers || ["electric"], args.guiheight || -1, 
             event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
             event.efficiencyBar(args.efBar?.x || 48, args.efBar?.y || 86), event.energyBar(args.enBar?.x || 14, args.enBar?.y || 44),
             args.slots?.iIn || 0, args.slots?.iOut || 0, args.slots?.fIn || 0, args.slots?.fOut || 0, args.slots?.capacity || 16,
@@ -37,12 +37,17 @@ function registerSingleMIMachine(name, args){
             args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
         ) 
     })
+    args.tiers.forEach(tier =>{
+        if (tier == "electric") return
+        milfData.addCredit(`${tier}_${id}`, "mi_machine", "modern_industrialization")
+    })
+    
 }
 
-function registerSinglePowerlessMIMachine(name, args){
+function registerSinglePowerlessMIMachine(id, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(name)
+        recipe = event.register(id)
         args.itemsIn && (recipe = recipe.withItemInputs())
         args.itemsOut && (recipe = recipe.withItemOutputs())
         args.fluidsIn && (recipe = recipe.withFluidInputs())
@@ -50,7 +55,7 @@ function registerSinglePowerlessMIMachine(name, args){
     })
     MITweaksMachineEvents.registerPowerlessMachines(event => {
         event.singleblock(
-            args.name || idToName(name), name, recipe, args.guiheight || -1, 
+            args.name || idToName(id), id, recipe, args.guiheight || -1, 
             event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
             args.slots?.iIn || 0, args.slots?.iOut || 0, args.slots?.fIn || 0, args.slots?.fOut || 0, args.slots?.capacity || 16,
             items => {
@@ -68,13 +73,82 @@ function registerSinglePowerlessMIMachine(name, args){
             args.baseEU || 1, args.redstone || true
         ) 
     })
-    jsonDataForMITweaksMachine(name, args.mainCasing, args.mainOverlays)
+    jsonDataForMITweaksMachine(id, args)
 }
 
-function registerMIMachine(name, args){
+// let $SimpleMember = Java.loadClass("aztech.modern_industrialization.machines.multiblocks.SimpleMember")
+
+// registerTestMIMachine('test', {
+//     itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true, casing: 'heatproof_machine_casing',
+//     shape: [['HHH', 'aaa', 'AaA', 'AaA'],
+//     ['HHH', 'a a', 'A A', 'AAA'],
+//     ['BAB', 'B#B', 'BAB', 'BAB']],
+//     shapeKeys: {
+//         "A": "modern_industrialization:heatproof_machine_casing",
+//         "a": "modern_industrialization:cupronickel_coil",
+//         "B": "modern_industrialization:invar_machine_casing_pipe",
+//         "H": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL }
+//     },
+//     pBar: { x: 77, y: 33, name: 'arrow' },
+//     itemInputSlots: [[56, 35, 1, 2]],
+//     itemOutputSlots: [[102, 35, 1, 1]],
+//     fluidInputSlots: [[36, 35, 1, 1]],
+//     fluidOutputSlots: [[122, 35, 1, 1]],
+//     mainCasing: 'heatproof_machine_casing', mainOverlays: 'coke_oven', frontOverlay: true
+// })
+
+// function registerTestMIMachine(id, args) {
+//     let recipe
+//     MIMachineEvents.registerRecipeTypes(event => {
+//         recipe = event.register(id)
+//         args.itemsIn && (recipe = recipe.withItemInputs())
+//         args.itemsOut && (recipe = recipe.withItemOutputs())
+//         args.fluidsIn && (recipe = recipe.withFluidInputs())
+//         args.fluidsOut && (recipe = recipe.withFluidOutputs())
+//     })
+//     MIMachineEvents.registerMachines(event => {
+//         let shape = event.layeredShape(args.casing, args.shape)
+//         Object.entries(args.shapeKeys).forEach(([key, block]) => {
+//             let actualBlock = (typeof block === "string") ? block : block.id
+//             shape = shape.key(key, $SimpleMember.forBlockState(Block.getBlock("minecraft:oak_stairs")
+//             .getStateDefinition().getPossibleStates().getLast()), 
+//             block.hatches ? event.hatchOf(block.hatches) : event.noHatch()
+//         )
+//         })
+//         shape = shape.build()
+//         const multiTypeFunction = args.steam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
+//         multiTypeFunction.apply(event, [
+//             args.customName || idToName(id), id, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+//             itemInputs => {
+//                 if (!args.itemInputSlots) { return itemInputs }
+//                 args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
+//                 return itemInputs
+//             },
+//             itemOutputs => {
+//                 if (!args.itemOutputSlots) { return itemOutputs }
+//                 args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
+//                 return itemOutputs
+//             },
+//             fluidInputs => {
+//                 if (!args.fluidInputSlots) { return fluidInputs }
+//                 args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
+//                 return fluidInputs
+//             },
+//             fluidOutputs => {
+//                 if (!args.fluidOutputSlots) { return fluidOutputs }
+//                 args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
+//                 return fluidOutputs
+//             },
+//             args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+//         ])
+//     })
+//     milfData.addCredit(`${id}`, "mi_machine", "modern_industrialization")
+// }
+
+function registerMIMachine(id, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(name)
+        recipe = event.register(id)
         args.itemsIn && (recipe = recipe.withItemInputs())
         args.itemsOut && (recipe = recipe.withItemOutputs())
         args.fluidsIn && (recipe = recipe.withFluidInputs())
@@ -89,7 +163,7 @@ function registerMIMachine(name, args){
         shape = shape.build()
         const multiTypeFunction = args.steam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
         multiTypeFunction.apply(event, [
-            args.customName || idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            args.customName || idToName(id), id, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
             itemInputs => {
                 if(!args.itemInputSlots) {return itemInputs}
                 args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
@@ -113,6 +187,7 @@ function registerMIMachine(name, args){
             args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
         ]) 
     })
+    milfData.addCredit(`${id}`, "mi_machine", "modern_industrialization")
 }
 
 function registerPowerlessMIMachine(name, args){
@@ -158,7 +233,7 @@ function registerPowerlessMIMachine(name, args){
             args.baseRecipeEU || 1, args.redstoneControlModule || true
         ]) 
     })
-    jsonDataForMITweaksMachine(name, args.mainCasing, args.mainOverlays)
+    jsonDataForMITweaksMachine(name, args)
 }
 
 function registerBatchMIMachine(name, args){
@@ -204,7 +279,7 @@ function registerBatchMIMachine(name, args){
             args.batchsize || 8, args.costMulti || 1
         ]) 
     })
-    jsonDataForMITweaksMachine(name, args.mainCasing, args.mainOverlays)
+    jsonDataForMITweaksMachine(name, args)
 }
 
 function registerTieredMIMachine(name, args){
@@ -307,7 +382,7 @@ function registerTieredMIMachine(name, args){
         }
 
     })
-    jsonDataForMITweaksTieredMachine(name, args.mainCasing, args.mainOverlays, args.tiers)
+    jsonDataForMITweaksTieredMachine(name, args)
 }
 
 function registerBatchMIMachineFromExisting(name, args){
@@ -326,7 +401,7 @@ function registerBatchMIMachineFromExisting(name, args){
             args.batchsize, args.costMulti
         ]) 
     })
-    jsonDataForMITweaksMachine(name, args.mainCasing, args.mainOverlays)
+    jsonDataForMITweaksMachine(name, args)
 }
 
 function saveJsonToPath(path, json){
@@ -334,53 +409,74 @@ function saveJsonToPath(path, json){
     JsonIO.write(path, json)
 }
 
-function jsonDataForMITweaksTieredMachine(machineName, mainCasing, mainOverlays, tiers){
+function jsonDataForMITweaksTieredMachine(machineName, args){
+    let {tiers} = args
     tiers.forEach(tier => {
         global.langCustomStuff[`custom_multiblock_tier.mi_tweaks.${tier.id}`] = Object.assign({ "en_us": tier.name || idToName(tier.id)})
         global.langCustomStuff[`rei_categories.mi_tweaks.${tier.id}`] = Object.assign({ "en_us": tier.name || idToName(tier.id) })
     })
-    jsonDataForMITweaksMachine(machineName, mainCasing, mainOverlays)
+    jsonDataForMITweaksMachine(machineName, args)
 }
 
-function jsonDataForMITweaksMachine(machineName, mainCasing, mainOverlays){
-    global.langCustomStuff[`block.mi_tweaks.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
-    global.langCustomStuff[`rei_categories.modern_industrialization.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
-    global.langCustomStuff[`rei_categories.mi_tweaks.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
-    global.miTweaksTags.push(`mi_tweaks:${machineName}`)
+function jsonDataForMITweaksMachine(machineId, args){
+    let { mainCasing, mainOverlays } = args
+    global.langCustomStuff[`block.mi_tweaks.${machineId}`] = Object.assign({ "en_us": idToName(machineId)})
+    global.langCustomStuff[`rei_categories.modern_industrialization.${machineId}`] = Object.assign({ "en_us": idToName(machineId)})
+    global.langCustomStuff[`rei_categories.mi_tweaks.${machineId}`] = Object.assign({ "en_us": idToName(machineId)})
+    milfData.addCredit(`${machineId}`, "mi_machine", "mi_tweaks")
+    global.miTweaksTags.push(`mi_tweaks:${machineId}`)
     return
-    let blockstatesPath = `kubejs/assets/mi_tweaks/blockstates/${machineName}.json`;
+    let blockstatesPath = `kubejs/assets/mi_tweaks/blockstates/${machineId}.json`
     let blockstatesJson = {
         "variants": {
             "": {
-                "model": `mi_tweaks:block/${machineName}`
+                "model": `mi_tweaks:block/${machineId}`
             }
         }
     }
     saveJsonToPath(blockstatesPath, blockstatesJson)
 
-    let modelPath = `kubejs/assets/mi_tweaks/models/block/${machineName}.json`;
+    let modelPath = `kubejs/assets/mi_tweaks/models/block/${machineId}.json`
     let modelJson = {
         "casing": `modern_industrialization:${mainCasing}`,
         "default_overlays": {
             "fluid_auto": "modern_industrialization:block/overlays/fluid_auto",
-            "front": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
-            "front_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
-            "side": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
-            "side_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
+            // "front": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
+            // "front_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
+            // "side": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
+            // "side_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
             "item_auto": "modern_industrialization:block/overlays/item_auto",
             "output": "modern_industrialization:block/overlays/output"
         },
         "loader": "modern_industrialization:machine"
     }
+
+    if (args.frontOverlay){
+        modelJson.default_overlays.front = `modern_industrialization:block/machines/${mainOverlays}/overlay_front`
+        modelJson.default_overlays.front_active = `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`
+    }
+
+    if (args.topOverlay){
+        modelJson.default_overlays.top = `modern_industrialization:block/machines/${mainOverlays}/overlay_top`
+        modelJson.default_overlays.top_active = `modern_industrialization:block/machines/${mainOverlays}/overlay_top_active`
+    }
+
+    if (args.sideOverlay) {
+        modelJson.default_overlays.side = `modern_industrialization:block/machines/${mainOverlays}/overlay_side`
+        modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${mainOverlays}/overlay_side_active`
+    }
+
+    
+
     saveJsonToPath(modelPath, modelJson)
 
-    let itemPath = `kubejs/assets/mi_tweaks/models/item/${machineName}.json`;
+    let itemPath = `kubejs/assets/mi_tweaks/models/item/${machineId}.json`
     let itemJson = {
-        "parent": `mi_tweaks:block/${machineName}`
+        "parent": `mi_tweaks:block/${machineId}`
     }
     saveJsonToPath(itemPath, itemJson)
 
-    let dataPath = `kubejs/data/mi_tweaks/loot_table/blocks/${machineName}.json`;
+    let dataPath = `kubejs/data/mi_tweaks/loot_table/blocks/${machineId}.json`
     let dataJson = {
         "type": "minecraft:block",
         "pools": [
@@ -394,13 +490,13 @@ function jsonDataForMITweaksMachine(machineName, mainCasing, mainOverlays){
                 "entries": [
                     {
                         "type": "minecraft:item",
-                        "name": `mi_tweaks:${machineName}`
+                        "name": `mi_tweaks:${machineId}`
                     }
                 ],
                 "rolls": 1.0
             }
         ],
-        "random_sequence": `mi_tweaks:blocks/${machineName}`
+        "random_sequence": `mi_tweaks:blocks/${machineId}`
     }
     saveJsonToPath(dataPath, dataJson)
 }

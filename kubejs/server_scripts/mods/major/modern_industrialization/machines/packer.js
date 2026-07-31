@@ -151,14 +151,4 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "moderndynamics:machine_extender" }, 1]]
     })
 
-    miMachineRecipe(event, {
-        energy: 2, time: 100, machine: "modern_industrialization:packer",
-        inputItems: [
-            [{ item: "modern_industrialization:steel_large_plate" }, 1], 
-            [{ item: "immersiveengineering:mold_wire" }, 1, 0]
-        ],
-        outputItems: [[{ item: "immersiveengineering:mold_wire" }]]
-    })
-
-
 })

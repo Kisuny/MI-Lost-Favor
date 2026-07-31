@@ -53,45 +53,49 @@ NetworkEvents.dataReceived('milf_divine_coin_validate', (event) => {
 
         let resurrectionItems = bossData.resurrectionItems
 
-        let enough = true
-        let itemsTag = new $ListTag()
-        for (let entry of resurrectionItems) {
-            let { id, count } = entry
+        if (resurrectionItems){
+            let enough = true
+            let itemsTag = new $ListTag()
+            for (let entry of resurrectionItems) {
+                let { id, count } = entry
 
-            let item = Item.of(id)
+                let item = Item.of(id)
 
-            let playerCount = player.getInventory().count(item)
+                let playerCount = player.getInventory().count(item)
 
-            if(playerCount < count){
-                enough = false
-                itemsTag.add($StringTag.valueOf(id))
-                //sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.not_enough_items"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
-                
+                if (playerCount < count) {
+                    enough = false
+                    itemsTag.add($StringTag.valueOf(id))
+                    //sendImmersiveMessage(Component.translatable("milf.divine_mint.notification.not_enough_items"), player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+
+                }
+
             }
 
+            if (!enough) {
+                let missingItemsData = new $CompoundTag()
+                missingItemsData.put("itemsToShake", itemsTag)
+                event.player.sendData("milf_divine_coin_not_enough_items", missingItemsData)
+                return
+            }
+
+            for (let entry of resurrectionItems) {
+                let { id, count } = entry
+
+                let item = Item.of(id)
+
+                let playerCount = player.getInventory().clearOrCountMatchingItems(
+                    stack => stack.is(item),
+                    count,
+                    player.inventoryMenu.getCraftSlots()
+                )
+
+            }
+
+            player.containerMenu.broadcastChanges()
         }
 
-        if (!enough) {
-            let missingItemsData = new $CompoundTag()
-            missingItemsData.put("itemsToShake", itemsTag)
-            event.player.sendData("milf_divine_coin_not_enough_items", missingItemsData)
-            return
-        }
 
-        for (let entry of resurrectionItems) {
-            let { id, count } = entry
-
-            let item = Item.of(id)
-
-            let playerCount = player.getInventory().clearOrCountMatchingItems(
-                stack => stack.is(item),
-                count,
-                player.inventoryMenu.getCraftSlots()
-            )
-
-        }
-
-        player.containerMenu.broadcastChanges()
 
         let playerPosData = new $CompoundTag()
         playerPosData.putDouble("x", playerPos.x)

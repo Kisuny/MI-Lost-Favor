@@ -24,10 +24,25 @@ const ieArcFurnaceCraft = (event, args) => {
     args.outputItems.forEach((out) => {out[2] ? recipe.secondaries.push({output:{basePredicate:out[0], count:out[1] || 1}, chance:out[2]}) : recipe.results.push({basePredicate:out[0], count:out[1] || 1})})
     if (args.slag){recipe.slag = args.slag == true ? {basePredicate: {"item": "immersiveengineering:slag"}, count: 1} : {basePredicate: args.slag[0][0], count: args.slag[0][1] || 1}}
     if(!args.compatOff){
-        miMachineRecipe(event, {energy:32, time:args.time || 200, machine:"modern_industrialization:blast_furnace",
-            inputItems:args.inputItems,
-            outputItems:args.outputItems.concat(args.slag == true ? [[{"item": "immersiveengineering:slag"}]] : args.slag || [[]])
-        })
+
+        let miOutputItems = args.outputItems.concat(args.slag == true ? [[{ "item": "immersiveengineering:slag" }]] : args.slag || [[]])
+        let miInputItems = args.inputItems
+
+        if (miOutputItems.length <= 3 && miInputItems.length <= 3){
+            miMachineRecipe(event, {
+                energy: 31, time: 222, machine: "modern_industrialization:blast_furnace",
+                inputItems: args.inputItems,
+                outputItems: miOutputItems
+            })
+        } else {
+            miMachineRecipe(event, {
+                energy: 47, time: 111, machine: "modern_industrialization:blast_furnace",
+                inputItems: args.inputItems,
+                outputItems: miOutputItems
+            })
+        }
+
+
     }
     if(args.removeRecipe){event.remove(args.outputItems.forEach((out) => {event.remove({output: out})}))}
     if (args.removeRecipeType) {

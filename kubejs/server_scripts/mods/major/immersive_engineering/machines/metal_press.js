@@ -196,4 +196,12 @@ ServerEvents.recipes(event => {
         energy: 3200,
     })
 
+    iePressRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:coke_dust" }, 4]
+        ],
+        mold: { item: "immersiveengineering:mold_packing_4" },
+        outputItems: [[{ id: "modern_industrialization:coke_block" }]]
+    })
+
 })

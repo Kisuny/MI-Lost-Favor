@@ -8,10 +8,10 @@ function ieRefineryRecipe(event, args){
     }
     if(args.catalyst) recipe.catalyst = args.catalyst
     if(!args.compatOff){
-        miMachineRecipe(event, {energy:8, time:100, machine:"modern_industrialization:distillation_tower",
-            outputItems:args.outputItems,
-            inputFluids:args.inputFluids,
-            outputFluids:args.outputFluids
+        miMachineRecipe(event, {energy:48, time:200, machine:"modern_industrialization:chemical_reactor",
+            inputItems: [[args.catalyst, 1, 0]],
+            inputFluids:args.inputFluids.map(entry => [entry[0], entry[1] * 100]),
+            outputFluids: args.outputFluids.map(entry => [entry[0], entry[1] * 100])
         })
     }
     //if(args.removeRecipe){args.outputFluids.forEach((out) => {event.remove({output: out[0].fluid})})}
@@ -19,43 +19,76 @@ function ieRefineryRecipe(event, args){
 }
 
 ServerEvents.recipes(event => {
-    ieRefineryRecipe(event, {
-        outputFluids:[[ {fluid :"modern_industrialization:hydrogen"} , 16 ]],
-        inputFluids:[[ {fluid :"immersiveengineering:ethanol"} , 8 ], [ {fluid :"modern_industrialization:steam"} , 16 ]],
-        compatOff:true,
-        catalyst: { item:"modern_industrialization:nickel_plate" }
+    // ieRefineryRecipe(event, {
         
-    })
+    //     inputFluids:[
+    //         [ {fluid :"immersiveengineering:ethanol"} , 8 ], 
+    //         [ {fluid :"modern_industrialization:steam"} , 16 ]
+    //     ],
+    //     outputFluids: [[{ fluid: "modern_industrialization:hydrogen" }, 16]],
+    //     compatOff:true,
+    //     catalyst: { item:"modern_industrialization:nickel_plate" }
+        
+    // })
 
     ieRefineryRecipe(event, {
-        outputFluids:[[ {fluid :"modern_industrialization:styrene"} , 16 ]],
-        inputFluids:[[ {fluid :"modern_industrialization:benzene"} , 8 ], [ {fluid :"modern_industrialization:ethylene"} , 8 ]],
+        
+        inputFluids:[
+            [ {fluid :"modern_industrialization:benzene"} , 8 ], 
+            [ {fluid :"modern_industrialization:ethylene"} , 8 ]
+        ],
+        outputFluids: [[{ fluid: "modern_industrialization:styrene" }, 16]],
         compatOff:true,
         catalyst: { item:"modern_industrialization:copper_plate" }
         
     })
 
     ieRefineryRecipe(event, {
-        outputFluids:[[ {fluid :"immersiveengineering:high_power_biodiesel"} , 16 ]],
-        inputFluids:[[ {fluid :"immersivepetroleum:diesel"} , 8 ], [ {fluid :"modern_industrialization:toluene"} , 8 ]],
+        
+        inputFluids:[
+            [ {fluid :"immersivepetroleum:diesel"} , 8 ], 
+            [ {fluid :"modern_industrialization:toluene"} , 8 ]
+        ],
+        outputFluids: [[{ fluid: "immersiveengineering:high_power_biodiesel" }, 16]],
         compatOff:true,
         catalyst: { item:"modern_industrialization:copper_plate" }
         
     })
 
     ieRefineryRecipe(event, {
-        outputFluids:[[ {fluid :"immersivepetroleum:benzol"} , 16 ]],
-        inputFluids:[[ {fluid :"modern_industrialization:benzene"} , 12 ], [ {fluid :"modern_industrialization:toluene"} , 4 ]],
+        
+        inputFluids:[
+            [ {fluid :"modern_industrialization:benzene"} , 12 ], 
+            [ {fluid :"modern_industrialization:toluene"} , 4 ]
+        ],
+        outputFluids: [[{ fluid: "immersivepetroleum:benzol" }, 16]],
         compatOff:true,
         catalyst: { item:"modern_industrialization:raw_platinum" }
         
     })
 
     ieRefineryRecipe(event, {
-        outputFluids:[[ {fluid :"immersivepetroleum:gasoline"} , 16 ]],
-        inputFluids:[[ {fluid :"immersivepetroleum:benzol"} , 12 ], [ {fluid :"modern_industrialization:toluene"} , 4 ]],
+        
+        inputFluids:[
+            [ {fluid :"immersivepetroleum:benzol"} , 12 ], 
+            [ {fluid :"modern_industrialization:toluene"} , 4 ]
+        ],
+        outputFluids: [[{ fluid: "immersivepetroleum:gasoline" }, 16]],
         compatOff:true,
         catalyst: { item:"modern_industrialization:raw_platinum" }
+    })
+
+
+    ieRefineryRecipe(event, {
+        energy: 120,
+        catalyst: { item: "modern_industrialization:aluminum_large_plate" },
+        inputFluids: [
+            [{ fluid: "modern_industrialization:shale_oil" }, 4],
+            [{ fluid: "modern_industrialization:steam" }, 8]
+        ],
+        outputFluids: [
+            [{ fluid: "milf:syngas" }, 3],
+        ]
     })
 })
 

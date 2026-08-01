@@ -204,4 +204,18 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:coke_block" }]]
     })
 
+    iePressRecipe(event, {
+        inputItems: [[{ "item": "modern_industrialization:rubber_sheet" }, 8]],
+        outputItems: [[{ id: "modern_industrialization:rubber_boots" }, 1]],
+        mold: { item: "minecraft:iron_boots" },
+        energy: 3200,
+    })
+
+    iePressRecipe(event, {
+        inputItems: [[{ "item": "modern_industrialization:rubber_sheet" }, 8]],
+        outputItems: [[{ id: "modern_industrialization:rubber_helmet" }, 1]],
+        mold: { item: "minecraft:iron_helmet" },
+        energy: 3200,
+    })
+
 })

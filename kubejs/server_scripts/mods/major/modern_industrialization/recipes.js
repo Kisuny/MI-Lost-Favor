@@ -1,22 +1,44 @@
 /**
- * any MI machine recipe
- *  - `args`: everything is optional
- *      - `energy` : energy|steam consumption/tick, defaults to 8; allowed machine tier depends on this `1-3` : bronze tier; `4-7` : steel tier; `8+` electric tier
- *      - `time` : time in ticks (20 = 1sec), defaults to 100
- *      - `machine` : String - mi machine name, defaults to "modern_industrialization:chemical_reactor" (has all inputs and outputs)
- *      - `token` : item that will not be consumed upon craft, {item|tag : name}
- *      - --------
- *      - `multiplyEnergy`: Boolean - (more items = more energy) if true: energy = energy + (inputs.length + fluids.length) * (energy / 4)
- *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
- *      - --------
- *      - `ins/outs` : Arrays - each element looks like this : [{ tag|item|fluid : name }, amount, probability], amount defaults to 1 for items and 1000 for fluids if not specified
- *          - `inputItems`
- *          - `outputItems`
- *          - `inputFluids`
- *          - `outputFluids`
+ * @typedef {Object} ItemOrTagObject
+ * @property {string} [item]
+ * @property {string} [tag]
+ */
 
-*/
+/**
+ * @typedef {[ItemOrTagObject, amount?: number, probability?: number]} MILFItemRecipeEntry
+ */
 
+/**
+ * @typedef {Object} FluidOrTagObject
+ * @property {string} [fluid]
+ * @property {string} [tag]
+ */
+
+/**
+ * @typedef {[FluidOrTagObject, amount?: number, probability?: number]} MILFFluidRecipeEntry
+ */
+
+/**
+ * @typedef {Object} MiMachineRecipeArgs
+ * @property {number} [energy=8] - energy/steam consumption per tick. Tier: 1–3 bronze, 4–7 steel, 8+ electric
+ * @property {number} [time=100] 
+ * @property {string} [machine="modern_industrialization:chemical_reactor"]
+ * @property {boolean} [removeRecipe] - removes all default recipes that produce the same output items/fluids
+ * @property {string} [removeRecipeType] - removes recipes with the given output items but only of this recipe type
+ * @property {boolean} [removeThisRecipeType] - removes recipes with the same output items/fluids and the same machine type as the current recipe
+ * @property {MILFItemRecipeEntry[]} [inputItems]
+ * @property {MILFItemRecipeEntry[]} [outputItems]
+ * @property {MILFFluidRecipeEntry[]} [inputFluids]
+ * @property {MILFFluidRecipeEntry[]} [outputFluids]
+ * @property {string} [recipeId]
+ * @property {string} [dimension]
+ * @property {Object} [adjacent_block]
+ * @property {string} [custom_condition]
+ */
+
+/**
+ * @param {MiMachineRecipeArgs} args
+ */
 const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
     const fluidInputs = args.inputFluids || []
     const fluidOutputs = args.outputFluids || []
@@ -104,7 +126,6 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
             custom_id: args.custom_condition
         })
     }
-    // console.log(id);
 
     if(args.ieCompat){
         switch (args.machine) {
@@ -129,7 +150,7 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
         args.machine = miMachinesCompat[args.machine]
         miMachineRecipe(event, args)
     }
-};
+}
 
 let miMachinesCompat = {
     "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
@@ -162,7 +183,6 @@ ServerEvents.recipes(event => {
     })
 
     //#region milfShaped
-
 
     global.dyeColors.forEach(({name: color}) => {
 
@@ -321,7 +341,23 @@ ServerEvents.recipes(event => {
             M: { item: "milf:basic_motor" },
             D: { item: "modern_industrialization:copper_drill" }
         },
-        outputItems: [[{ id: "modern_industrialization:steam_quarry" }, 2]],
+        outputItems: [[{ id: "modern_industrialization:steam_quarry" }, 1]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PMP",
+            "ICS",
+            "PMP"
+        ],
+        key: {
+            P: { item: "modern_industrialization:steel_large_plate" },
+            M: { item: "milf:basic_motor" },
+            S: { item: "immersiveengineering:component_steel" },
+            I: { item: "immersiveengineering:component_iron" },
+            C: { item: "immersiveengineering:component_electronic" }
+        },
+        outputItems: [[{ id: "modern_industrialization:machine_assembler" }, 1]],
     })
 
     milfShaped(event, {
@@ -334,7 +370,7 @@ ServerEvents.recipes(event => {
             B: { item: "modern_industrialization:large_steam_boiler" },
             P: { item: "milf:basic_pump" },
             H: { item: "immersiveengineering:furnace_heater" },
-            C: { item: "immersiveengineering:component_electronic_adv" }
+            C: { item: "modern_industrialization:electronic_circuit" }
         },
         outputItems: [[{ id: "modern_industrialization:advanced_large_steam_boiler" }, 1]],
         removeRecipe: true
@@ -511,6 +547,7 @@ ServerEvents.recipes(event => {
 
     //#endregion
 
+    //#region misc
 
     milfSmelting(event, {
         inputItems: [[{ item: "milf:unfired_fire_clay_brick" }]],
@@ -580,17 +617,33 @@ ServerEvents.recipes(event => {
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
-    event.replaceOutput(
-        { output: 'modern_industrialization:steel_block' },
-        'modern_industrialization:steel_block',
-        'immersiveengineering:storage_steel'
-    )
+    // event.replaceOutput(
+    //     { output: 'modern_industrialization:steel_block' },
+    //     'modern_industrialization:steel_block',
+    //     'immersiveengineering:storage_steel'
+    // )
 
-    event.replaceInput(
-        { input: 'modern_industrialization:steel_block' },
-        'modern_industrialization:steel_block',
-        'immersiveengineering:storage_steel'
-    )
+    // event.replaceInput(
+    //     { input: 'modern_industrialization:steel_block' },
+    //     'modern_industrialization:steel_block',
+    //     'immersiveengineering:storage_steel'
+    // )
+
+    // let miEthanol = Fluid.of("modern_industrialization:ethanol")
+    // let ieEthanol = Fluid.of("immersiveengineering:ethanol")
+
+    // event.replaceInput(
+    //     { input: miEthanol },
+    //     miEthanol,
+    //     "immersiveengineering:ethanol"
+    // )
+
+    // event.replaceOutput(
+    //     { output: miEthanol },
+    //     miEthanol,
+    //     "immersiveengineering:ethanol"
+    // )
+    
 
     const craftWithFluidPipes = [
         'extended_industrialization:electric_canning_machine',
@@ -671,6 +724,8 @@ ServerEvents.recipes(event => {
             category:"misc"
         })
     })
+
+    //#endregion
 
 })
 

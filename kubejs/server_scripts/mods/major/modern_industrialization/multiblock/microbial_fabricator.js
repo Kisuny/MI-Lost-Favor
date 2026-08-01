@@ -67,6 +67,21 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 16, time: 100, machine: "modern_industrialization:microbial_fabricator_basic",
+        inputItems: [
+            [{ item: "spectrum:amethyst_powder" }, 1, 0.78],
+            [{ item: "minecraft:amethyst_shard" }, 1],
+            [{ item: "spectrum:amethyst_powder" }, 1, 0.63],
+        ],
+        inputFluids: [
+            [{ fluid: "immersiveengineering:redstone_acid" }, 250, 0.64],
+            [{ fluid: "modern_industrialization:sugar_solution" }, 250, 0.81],
+        ],
+        outputItems: [[{ item: "oritech:fluxite" }, 1, 0.66]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
         energy: 61, time: 200, machine: "modern_industrialization:microbial_fabricator_bioresistant",
         inputItems: [
             [{ item: "modern_industrialization:adamant_dust" }, 2],

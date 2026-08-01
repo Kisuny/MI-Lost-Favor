@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
             "rSr"
         ],
         key: {
-            S: { item: "immersiveengineering:wirecoil_steel" },
+            S: { item: "modern_industrialization:aluminum_wire" },
             r: { item: "modern_industrialization:rubber_sheet" },
             R: {
                 type: "immersiveengineering:fluid_stack",
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
                 fluid: "modern_industrialization:molten_redstone"
             }
         },
-        outputItems: [[{ id: "immersiveengineering:wirecoil_redstone" }, 4]],
+        outputItems: [[{ id: "immersiveengineering:wirecoil_redstone" }, 8]],
         removeRecipe: true
     })
 
@@ -256,6 +256,23 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "RCR",
+            "RER",
+            "IHI"
+        ],
+        key: {
+            I: { item: "modern_industrialization:rubber_sheet" },
+            E: { item: "modern_industrialization:ie_energy_input_hatch" },
+            R: { item: "modern_industrialization:aluminum_curved_plate" },
+            C: { item: "immersiveengineering:coil_mv" },
+            H: { item: "immersiveengineering:capacitor_hv" }
+        },
+        outputItems: [[{ id: "immersiveengineering:tesla_coil" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
             "IWI",
             "WSW",
             "IWI"
@@ -347,6 +364,22 @@ ServerEvents.recipes(event => {
             R: { item: "immersiveengineering:component_electronic" }
         },
         outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PSP",
+            "IRI",
+            "PSP"
+        ],
+        key: {
+            S: { item: "immersiveengineering:wirecoil_copper" },
+            I: { item: "immersiveengineering:wirecoil_electrum" },
+            P: { item: "modern_industrialization:iron_large_plate" },
+            R: { item: "immersiveengineering:component_steel" }
+        },
+        outputItems: [[{ id: "immersiveengineering:furnace_heater" }, 1]],
         removeRecipe: true
     })
 
@@ -750,11 +783,11 @@ ServerEvents.recipes(event => {
             'ASA'
         ],
         key: {
-            A: { tag: "c:plates/aluminum" },
-            S: { tag: "c:plates/iron" },
-            s: { item: "immersiveengineering:sheetmetal_aluminum" }
+            A: { item: "modern_industrialization:aluminum_plate" },
+            S: { item: "modern_industrialization:iron_plate" },
+            s: { item: "immersiveengineering:wirecoil_steel" }
         },
-        outputItems: [[{ id: "milf:radio_tower_block" }, 6]],
+        outputItems: [[{ id: "milf:radio_tower_block" }, 4]],
     })
 
     milfShaped(event, {

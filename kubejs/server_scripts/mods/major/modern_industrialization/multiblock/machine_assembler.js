@@ -53,6 +53,21 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:large_motor" }, 4],
+            [{ item: "modern_industrialization:electronic_circuit" }, 2],
+            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 6],
+            [{ item: "immersiveengineering:wirecoil_steel" }, 4],
+            [{ item: "modern_industrialization:aluminum_drill" }, 4],
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:electric_quarry" }]
+        ],
+        removeRecipe: true
+    })
+
 })
 
 

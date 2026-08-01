@@ -51,7 +51,7 @@ const PIPE_ITEMS = [
     'modern_industrialization:aluminum_rod',
     'modern_industrialization:tumbaga_rod',
     'modern_industrialization:bronze_rod',
-    'modern_industrialization:carbon_steel_rod',
+    'modern_industrialization:silicon_steel_rod',
     'modern_industrialization:certus_quartz_rod',
     'modern_industrialization:copper_rod',
     'modern_industrialization:bioresistant_alloy_rod',

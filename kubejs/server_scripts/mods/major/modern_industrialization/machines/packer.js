@@ -85,19 +85,6 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineRecipe(event, {
-        energy: 8, time: 1000, machine: "modern_industrialization:packer",
-        outputItems: [
-            [{ item: "modern_industrialization:electric_quarry" }]
-        ],
-        inputItems: [
-            [{ item: "modern_industrialization:advanced_machine_hull" }],
-            [{ item: "milf:excavator_full_placer" }, 1],
-            [{ item: "modern_industrialization:robot_arm" }, 4],
-        ],
-        removeRecipe: true
-    })
-
     miMachineRecipe(event, {energy:8, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:silicon_ingot"}]

@@ -20,9 +20,6 @@ ServerEvents.recipes(event => {
         ]
     })
     
-    event.shapeless('milf:gem_composite', [
-        '4x milf:mixed_gem_powder',
-    ])
     miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{item:'spectrum:citrine_powder'},],
@@ -31,6 +28,14 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[[{item:"milf:mixed_gem_powder"}, 2]]
     })
+
+    milfShapeless(event, {
+        inputItems: [
+            [{ "item": "milf:mixed_gem_powder" }, 4]
+        ],
+        outputItems: [[{ "id": "milf:gem_composite" }, 1]]
+    })
+
 
 
     miMachineRecipe(event, {

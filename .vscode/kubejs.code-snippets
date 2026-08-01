@@ -1,0 +1,367 @@
+{
+	"KubeJS: vanilla shaped": {
+		"scope": "javascript",
+		"prefix": "kjs-shaped",
+		"body": [
+			"event.shaped('${1:modid:item}', [",
+			"    '${2:   }',",
+			"    '${3:   }',",
+			"    '${4:   }'",
+			"], {",
+			"    ${5:Q}: '${6:minecraft:item}',",
+			"});"
+		],
+		"description": "Vanilla shaped recipe"
+	},
+	"KubeJS: vanilla shapeless": {
+		"scope": "javascript",
+		"prefix": "kjs-shapeless",
+		"body": [
+			"event.shapeless('${1:modid:item}', [",
+			"    '${2:minecraft:item}',",
+			"]);"
+		],
+		"description": "Vanilla shapeless recipe"
+	},
+	"KubeJS: vanilla smelting/smoking/blasting": {
+		"scope": "javascript",
+		"prefix": "kjs-smelting",
+		"body": [
+			"event.${1|smelting,smoking,blasting,campfireCooking|}('${2:modid:item}', '${3:minecraft:item}')",
+			"    .xp(${4:0.1})",
+			"    .cookingTime(${5:200});"
+		],
+		"description": "Vanilla cooking recipe"
+	},
+	"MI: machine recipe": {
+		"scope": "javascript",
+		"prefix": "mi-machine",
+		"body": [
+			"miMachineRecipe(event, {",
+			"    energy: ${1:2}, time: ${2:40}, machine: \"modern_industrialization:${3|macerator,mixer,compressor,electrolyzer,assembler,autocrafter,chemical_reactor,blast_furnace,fluid_extractor,alloy_smelter,packer,unpacker,polarizer,source_alembic|}\",",
+			"    inputItems: [",
+			"        [{ item: \"${4:modid:item}\" }, ${5:1}],",
+			"    ],",
+			"    outputItems: [[{ item: \"${6:modid:item}\" }, ${7:1}]],",
+			"    inputFluids: [",
+			"        [{ fluid: \"${8:modid:fluid}\" }, ${9:250}],",
+			"    ],",
+			"    outputFluids: [",
+			"        [{ fluid: \"${10:modid:fluid}\" }, ${11:1000}],",
+			"    ],",
+			"    removeRecipe: ${12|true,false|}",
+			"});"
+		],
+		"description": "Modern Industrialization machine recipe (miMachineRecipe helper)"
+	},
+	"Spectrum: pedestal craft": {
+		"scope": "javascript",
+		"prefix": "spectrum-pedestal",
+		"body": [
+			"customPedestalCraft(event, {",
+			"    time: ${1:400},",
+			"    tier: \"${2|basic,simple,advanced,complex|}\",",
+			"    experience: ${3:1.0},",
+			"    citrine: ${4:0},",
+			"    topaz: ${5:0},",
+			"    onyx: ${6:0},",
+			"    amethyst: ${7:0},",
+			"    moonstone: ${8:0},",
+			"    pattern: [",
+			"        '${9:qww}',",
+			"        '${10:wew}',",
+			"        '${11:www}'",
+			"    ],",
+			"    key: {",
+			"        q: '${12:modid:item}',",
+			"        w: '${13:modid:item}',",
+			"        e: '${14:modid:item}',",
+			"    },",
+			"    result: {",
+			"        \"id\": \"${15:modid:item}\",",
+			"        \"count\": ${16:1}",
+			"    },",
+			"    advancement: \"${17:spectrum:place_pedestal}\",",
+			"    removeRecipe: ${18|true,false|}",
+			"});"
+		],
+		"description": "Spectrum pedestal craft (customPedestalCraft helper)"
+	},
+	"Spectrum: pedestal craft shapeless": {
+		"scope": "javascript",
+		"prefix": "spectrum-pedestal-shapeless",
+		"body": [
+			"customPedestalCraftShapeless(event, {",
+			"    time: ${1:400},",
+			"    tier: \"${2|basic,simple,advanced,complex|}\",",
+			"    experience: ${3:1.0},",
+			"    citrine: ${4:0},",
+			"    topaz: ${5:0},",
+			"    onyx: ${6:0},",
+			"    amethyst: ${7:0},",
+			"    moonstone: ${8:0},",
+			"    ingredients: [",
+			"        { \"item\": \"${9:modid:item}\" },",
+			"    ],",
+			"    result: {",
+			"        \"id\": \"${10:modid:item}\",",
+			"        \"count\": ${11:1}",
+			"    },",
+			"    advancement: \"${12:spectrum:place_pedestal}\"",
+			"});"
+		],
+		"description": "Spectrum shapeless pedestal craft (customPedestalCraftShapeless helper)"
+	},
+	"Spectrum: pedestal from existing recipe": {
+		"scope": "javascript",
+		"prefix": "spectrum-pedestal-from-recipe",
+		"body": [
+			"pedestalFromRecipe(event, {",
+			"    id: \"${1:modid:item}\",",
+			"    tier: \"${2|basic,simple,advanced,complex|}\",",
+			"    time: ${3:400},",
+			"    experience: ${4:1.0},",
+			"    citrine: ${5:0},",
+			"    topaz: ${6:0},",
+			"    onyx: ${7:0},",
+			"    amethyst: ${8:0},",
+			"    moonstone: ${9:0},",
+			"    advancement: \"${10:spectrum:place_pedestal}\",",
+			"    yield_upgrades: ${11|false,true|}",
+			"});"
+		],
+		"description": "Convert an existing shaped/shapeless recipe into a pedestal craft (pedestalFromRecipe helper), removes the original recipe"
+	},
+	"Spectrum: fusion shrine craft": {
+		"scope": "javascript",
+		"prefix": "spectrum-fusion-shrine",
+		"body": [
+			"customShrineRecipe(event, {",
+			"    time: ${1:60},",
+			"    experience: ${2:8.0},",
+			"    fluid: \"${3:spectrum:dragonrot}\",",
+			"    ingredients: [",
+			"        { \"item\": \"${4:modid:item}\", count: ${5:1} },",
+			"    ],",
+			"    result: {",
+			"        \"id\": \"${6:modid:item}\",",
+			"        \"count\": ${7:1}",
+			"    },",
+			"    advancement: \"${8:spectrum:unlocks/blocks/fusion_shrine}\"",
+			"});"
+		],
+		"description": "Spectrum fusion shrine craft (customShrineRecipe helper)"
+	},
+	"Toxony: alchemical forge craft": {
+		"scope": "javascript",
+		"prefix": "toxony-alchemical-forge",
+		"body": [
+			"customAlchemicalForgeCraft(event, {",
+			"    affinities: [\"toxony:${1|cold,soul,wind,heat,decay,moon,sun,forest,nether,ocean|}\"],",
+			"    auxiliary: [{ \"item\": \"${2:modid:item}\" }],",
+			"    main: { \"item\": \"${3:modid:item}\" },",
+			"    result: \"${4:modid:item}\"",
+			"});"
+		],
+		"description": "Toxony alchemical forge craft (customAlchemicalForgeCraft helper)"
+	},
+	"Malum: spirit infusion": {
+		"scope": "javascript",
+		"prefix": "malum-spirit",
+		"body": [
+			"spiritInfusion(event, {",
+			"    input: { item: \"${1:modid:item}\", count: ${2:1} },",
+			"    result: { id: \"${3:modid:item}\", count: ${4:1} },",
+			"    extraInputs: [",
+			"        { item: \"${5:modid:item}\", count: ${6:1} }",
+			"    ],",
+			"    spirits: [",
+			"        { type: \"malum:${7|sacred,wicked,arcane,eldritch,aerial,aqueous,earthen,infernal,umbral|}\", count: ${8:1} }",
+			"    ],",
+			"    removeRecipe: ${9|true,false|}",
+			"});"
+		],
+		"description": "Malum spirit infusion recipe"
+	},
+	"Eidolon: worktable craft": {
+		"scope": "javascript",
+		"prefix": "eidolon-worktable",
+		"body": [
+			"customWorktable(event, {",
+			"    pattern: [",
+			"        '${1:qww}',",
+			"        '${2:wew}',",
+			"        '${3:www}'",
+			"    ],",
+			"    reagents: [${4:'rrrr'}],",
+			"    key: {",
+			"        \"q\": { \"item\": \"${5:modid:item}\" },",
+			"        \"w\": { \"item\": \"${6:modid:item}\" },",
+			"        \"e\": { \"item\": \"${7:modid:item}\" },",
+			"    },",
+			"    result: \"${8:modid:item}\",",
+			"    removeRecipe: ${9|true,false|}",
+			"});"
+		],
+		"description": "Eidolon worktable recipe (customWorktable helper)"
+	},
+	"Hexerei: mixing cauldron": {
+		"scope": "javascript",
+		"prefix": "hexerei-cauldron",
+		"body": [
+			"customMixingCauldron(event, {",
+			"    fluid: \"${1:minecraft:water}\",",
+			"    fluidAmount: ${2:1000},",
+			"    ingredients: [",
+			"        { \"item\": \"${3:modid:item}\" },",
+			"    ],",
+			"    output: \"${4:modid:item}\",",
+			"    removeRecipe: ${5|false,true|}",
+			"});"
+		],
+		"description": "Hexerei mixing cauldron recipe (customMixingCauldron helper)"
+	},
+	"Milf: milfShapeless (compat craft)": {
+		"scope": "javascript",
+		"prefix": "milf-shapeless",
+		"body": [
+			"milfShapeless(event, {",
+			"    inputItems: [",
+			"        [{ \"item\": \"${1:modid:item}\" }, ${2:1}],",
+			"    ],",
+			"    outputItems: [[{ \"id\": \"${3:modid:item}\" }, ${4:1}]],",
+			"    removeRecipe: ${5|true,false|},",
+			"    compatOff: ${6|true,false|}",
+			"});"
+		],
+		"description": "milfShapeless helper craft (shapeless + auto MI assembler compat)"
+	},
+	"Ars Nouveau: crush recipe": {
+		"scope": "javascript",
+		"prefix": "ars-crush",
+		"body": [
+			"milfArsNouveauCrush(event, {",
+			"    input: { item: \"${1:modid:item}\" },",
+			"    outputs: [",
+			"        { stack: { id: \"${2:modid:item}\" }, count: ${3:1}, chance: ${4:1.0}, maxRange: ${5:1} },",
+			"    ],",
+			"    removeRecipe: ${6|true,false|}",
+			"});"
+		],
+		"description": "Ars Nouveau crush recipe (milfArsNouveauCrush helper)"
+	},
+	"Ars Nouveau: imbuement craft": {
+		"scope": "javascript",
+		"prefix": "ars-imbuement",
+		"body": [
+			"customImbuementCraft(event, {",
+			"    input: { \"item\": \"${1:modid:item}\" },",
+			"    output: \"${2:modid:item}\",",
+			"    amount: ${3:1},",
+			"    pedestalItems: [${4}],",
+			"    source: ${5:500},",
+			"    removeRecipe: ${6|true,false|}",
+			"});"
+		],
+		"description": "Ars Nouveau imbuement craft (customImbuementCraft helper)"
+	},
+	"Eidolon: brazier summoning ritual": {
+		"scope": "javascript",
+		"prefix": "eidolon-brazier-summon",
+		"body": [
+			"brazierSummon(event, {",
+			"    output: \"${1:modid:entity}\",",
+			"    focus: \"${2:modid:item}\",",
+			"    pedestals: [\"${3:modid:item}\", \"${4:modid:item}\"],",
+			"    reagent: \"${5:modid:item}\"",
+			"});"
+		],
+		"description": "Eidolon ritual brazier summoning (brazierSummon helper)"
+	},
+	"Enchanted: kettle craft": {
+		"scope": "javascript",
+		"prefix": "enchanted-kettle",
+		"body": [
+			"customKettleCraft(event, {",
+			"    cookColour: \"${1:000000}\",",
+			"    finalColour: \"${2:ffffff}\",",
+			"    ingredients: [",
+			"        { \"item\": \"${3:modid:item}\" },",
+			"    ],",
+			"    power: ${4:0},",
+			"    result: { id: \"${5:modid:item}\", count: ${6:1} },",
+			"    removeRecipe: ${7|true,false|}",
+			"});"
+		],
+		"description": "Enchanted kettle craft (customKettleCraft helper)"
+	},
+	"Enchanted: spinning wheel craft": {
+		"scope": "javascript",
+		"prefix": "enchanted-spinning-wheel",
+		"body": [
+			"customSpiningWheel(event, {",
+			"    ingredients: [",
+			"        { \"item\": \"${1:modid:item}\" },",
+			"    ],",
+			"    power: ${2:0},",
+			"    output: \"${3:modid:item}\",",
+			"    amount: ${4:1},",
+			"    removeRecipe: ${5|true,false|}",
+			"});"
+		],
+		"description": "Enchanted spinning wheel craft (customSpiningWheel helper)"
+	},
+	"Enigmatic Legacy Plus: cursed shaped craft": {
+		"scope": "javascript",
+		"prefix": "enigmatic-cursed-shaped",
+		"body": [
+			"customCursedShaped(event, {",
+			"    category: \"${1|equipment,building,misc,redstone|}\",",
+			"    pattern: [",
+			"        '${2:qww}',",
+			"        '${3:wew}',",
+			"        '${4:www}'",
+			"    ],",
+			"    key: {",
+			"        q: '${5:modid:item}',",
+			"        w: '${6:modid:item}',",
+			"        e: '${7:modid:item}',",
+			"    },",
+			"    result: \"${8:modid:item}\",",
+			"    count: ${9:1},",
+			"    removeRecipe: ${10|true,false|}",
+			"});"
+		],
+		"description": "Enigmatic Legacy Plus cursed shaped craft (customCursedShaped helper)"
+	},
+	"Neovitae: alchemy table craft": {
+		"scope": "javascript",
+		"prefix": "neovitae-alchemy-table",
+		"body": [
+			"alchemyTableCraft(event, {",
+			"    input: { \"item\": \"${1:modid:item}\" },",
+			"    output: \"${2:modid:item}\",",
+			"    count: ${3:1},",
+			"    syphon: ${4:10},",
+			"    ticks: ${5:100},",
+			"    upgradeLevel: ${6:0},",
+			"    removeRecipe: ${7|true,false|}",
+			"});"
+		],
+		"description": "Neovitae alchemy table craft (alchemyTableCraft helper)"
+	},
+	"KubeJS: remove recipes by id list": {
+		"scope": "javascript",
+		"prefix": "kjs-remove-ids",
+		"body": [
+			"const removing_by_recipe_id = [",
+			"    \"${1:modid:recipe_id}\",",
+			"]",
+			"",
+			"removing_by_recipe_id.forEach(id => {",
+			"    event.remove({ id: id })",
+			"});"
+		],
+		"description": "List of recipe ids to remove via forEach"
+	}
+}

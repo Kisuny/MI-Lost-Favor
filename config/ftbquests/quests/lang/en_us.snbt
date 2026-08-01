@@ -324,7 +324,11 @@
 	quest.0AA51C0B8B225908.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
 		""
-		"Бесплатное освящение помещений или шахт"
+		"Free lighting for rooms or mines"
+		"{@pagebreak}"
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
+		""
+		"Бесплатный свет в помещениях или шахтах"
 	]
 	quest.0AA51C0B8B225908.title: "lighting"
 	quest.0ACD0476CE4CAED1.quest_desc: [
@@ -416,7 +420,11 @@
 		"• +2x Recharge Rate"
 	]
 	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
-	quest.0D55B997939B664F.quest_desc: ["Позволяет получить случайный глиф первого уровня, глифы не могут повторяться, как только вы изучите все глифы 1 уровня вы будете получать немного опыта за свиток."]
+	quest.0D55B997939B664F.quest_desc: [
+		"This allows you to obtain a random Level 1 glyph; glyphs cannot be duplicated. Once you have learned all Level 1 glyphs, you will receive a small amount of experience for each codex."
+		"{@pagebreak}"
+		"Позволяет получить случайный глиф первого уровня, глифы не могут повторяться, как только вы изучите все глифы 1 уровня вы будете получать немного опыта за кодекс."
+	]
 	quest.0D58533D474BB840.quest_desc: [
 		"Позволяет получать доступ к машинам для воронок или других необходимых способов взаимодействия с машиной."
 		""
@@ -484,7 +492,11 @@
 	quest.0E87D93CF5EB7F46.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
 		""
-		"сруб большого количества древесины или листвы"
+		"Allows you to fell most of the wood or leaves from trees"
+		"{@pagebreak}"
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
+		""
+		"Позволяет срубать большинство древесины или листвы с деревьев"
 	]
 	quest.0E87D93CF5EB7F46.title: "treecapitator"
 	quest.0E9FA290A23FF8CC.quest_desc: [
@@ -512,6 +524,15 @@
 		"{@pagebreak}"
 		""
 		"Необходим для создания <keyword>стола трансформации</keyword>. Также позволяет сделать ваши предметы <keyword>невидимыми</keyword>!"
+	]
+	quest.0F305B7FD3E18226.quest_desc: [
+		"This tome will allow you to crush ore and other items"
+		""
+		"In the future, you'll be able to create your own spell similar to this one"
+		"{@pagebreak}"
+		"Данный том позволит вам дробить руду и другие вещи"
+		""
+		"В будущем у вас появится возможность создавать собственное заклинание похожее на это"
 	]
 	quest.0F4825A153097924.quest_desc: [
 		"&#FEECD6Enchantment Canvas&r helps you remove &#C6BCE9enchantments&r from an item and reapply them if needed. "
@@ -1024,6 +1045,15 @@
 		"[ \"Если у вас появилась <warning>проблема</warning> или вы хотите предложить какую-то <positive>идею</positive>, вы всегда можете вступить в наш \", { \"text\": \"<magic>Discord</magic>\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://discord.com/invite/xAaFCCqKAn\" } }, \"! \" ]"
 	]
 	quest.1AE0400A3C0AF316.quest_desc: ["<keyword>Looks OP</keyword> for such an easy craft, so idk where to put it :p"]
+	quest.1B1D0B9C6ECDA107.quest_desc: [
+		"Actively requests items from other nodes and places them in its connected inventory, based on its <warning>filter</warning>."
+		""
+		"Request order:\n1. <keyword>Sender Nodes</keyword>\n2. <keyword>Provider Nodes</keyword>\n3. <keyword>Storage Nodes</keyword>"
+		"{@pagebreak}"
+		"Активно запрашивает предметы у других узлов согласно своему <warning>фильтру</warning> и кладёт их в подключённый инвентарь."
+		""
+		"Порядок запроса:\n1. <keyword>Узлы отправки</keyword>\n2. <keyword>Узлы поставки</keyword>\n3. <keyword>Узлы хранения</keyword>"
+	]
 	quest.1B46FCF75F842E87.quest_desc: [
 		"You can only obtain it by killing the <blood>Wither</blood> while under a <curse>curse</curse>!"
 		"{@pagebreak}"
@@ -1541,6 +1571,11 @@
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
 	quest.2D26EA473D256B54.quest_desc: ["An <keyword>upgraded variant</keyword> that allows <positive>catching boss entities</positive>"]
 	quest.2D89107A2B1F6A6C.quest_desc: [
+		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
+		""
+		""
+		"Grants the \"Bounce Off the Ground\" effect - which negates fall damage"
+		"{@pagebreak}"
 		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
 		""
 		"Даёт эффект отскакивание от земли - избавление от урона при падение падения"
@@ -2172,6 +2207,14 @@
 		""
 		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  free deepslate"
 		""
+		"You can read about all the combinations right on the glyph itself in EMI"
+		"{@pagebreak}"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  утановить землю"
+		""
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  утановить булыжник"
+		""
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  утановить дипслейт"
+		""
 		"Можно почитать о всех комбинациях на самом глифе в EMI"
 	]
 	quest.3D70D1CA920E0805.title: "free cobble or not"
@@ -2661,6 +2704,10 @@
 	quest.4A7B4E770FBD1EDB.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
 		""
+		"calls to the tamed horse"
+		"{@pagebreak}"
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
+		""
 		"призывает прирученую лошадь"
 	]
 	quest.4A7B4E770FBD1EDB.title: "horse power"
@@ -3039,6 +3086,19 @@
 	]
 	quest.5984DB66549B9040.quest_desc: ["<warning>Poison</warning>."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
+	quest.599C53FBB645B90E.quest_desc: [
+		"Actively tries to keep its connected inventory empty by pushing items out."
+		""
+		"Push order:"
+		"1. <keyword>Gather Nodes</keyword>"
+		"2. <keyword>Storage Nodes</keyword>"
+		"{@pagebreak}"
+		"Активно старается опустошить подключённый инвентарь, отправляя из него предметы."
+		""
+		"Порядок отправки:"
+		"1. <keyword>Узлы сбора</keyword>"
+		"2. <keyword>Узлы хранения</keyword>"
+	]
 	quest.5A09DD956F629AC5.quest_desc: [
 		"Can be found once per game by one player"
 		"{@pagebreak}"
@@ -3111,6 +3171,14 @@
 		"Next Spell X"
 		"Previous Spell Z"
 		""
+		"By unlocking new glyphs, you increase your mana pool, which helps you cast more complex spells."
+		""
+		"Currently, only level 1 glyphs are available to you."
+		""
+		"{@pagebreak}"
+		"Левый альт - открыть меню книги"
+		"Менять порядок созданных спеллов можно кнопкой X и Z"
+		""
 		"Открывая новые глифы вы повышаете количество своей маны, что помогает вам использовать более комплексные спеллы"
 		""
 		"На данный момент вам доступны глифы первого уровня"
@@ -3180,6 +3248,13 @@
 		"Улучшаются Diamond Block и ещё одним Blood Feather до Diamond-Tipped Ophanim Wings - при приседании наносят колющую атаку по врагам рядом, основанную на направлении тела (не взгляда), расходуя прочность пропорционально урону."
 	]
 	quest.5DB331B0DC5B29D7.quest_desc: [
+		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
+		""
+		"This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a projectile, self-cast, etc - so feel free to experiment."
+		""
+		"You can enhance this and other spells using the Amplify glyph!"
+		"{@pagebreak}"
+		""
 		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
 		""
 		"Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть снаряд, самоналожение и т.д. - эксперементируйте. "
@@ -3363,6 +3438,23 @@
 		"[ \"Используя \", { \"text\": \"клетку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25790982D97FF33B\" } }, \" можно поймать таких мобов как овец или коров и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!\" ]"
 	]
 	quest.617E14880D9D75A0.title: "A cage for our animal friends"
+	quest.6195B2541F2E191E.quest_desc: [
+		"The <keyword>Pastel Network</keyword> is a set of nodes that transfer items <positive>without line of sight</positive> - a much better alternative to hoppers, minecarts and pipes."
+		""
+		"Every node connects to others within a <property>12 block</property> radius, and must be placed against an inventory to work."
+		""
+		"Nodes only interact with other nodes of the <keyword>same color</keyword> - painting them lets you run several separate networks close together without them mixing."
+		""
+		"<warning>Removing the redstone signal</warning> disables a node's function: <keyword>Gather Nodes</keyword> stop requesting, <keyword>Provider Nodes</keyword> stop offering, <keyword>Sender Nodes</keyword> stop pushing, and <keyword>Storage Nodes</keyword> can neither accept nor give items."
+		"{@pagebreak}"
+		"<keyword>Пастельная сеть</keyword> - набор узлов, которые передают предметы <positive>без прямой видимости</positive> - куда лучшая альтернатива хопперам, вагонеткам и трубам."
+		""
+		"Каждый узел соединяется с другими в радиусе <property>12 блоков</property> и должен быть установлен вплотную к инвентарю, чтобы работать."
+		""
+		"Узлы взаимодействуют только с узлами <keyword>того же цвета</keyword> - покрасив их, можно расположить рядом несколько отдельных сетей, не смешивая их между собой."
+		""
+		"<warning>Отключение редстоун-сигнала</warning> отключает функцию узла: <keyword>узлы сбора</keyword> перестают запрашивать предметы, <keyword>узлы поставки</keyword> перестают их предлагать, <keyword>узлы отправки</keyword> перестают отправлять предметы, а <keyword>узлы хранения</keyword> не могут ни принимать, ни отдавать предметы."
+	]
 	quest.61DD20DF56A3CEDD.quest_desc: [
 		"<warning>Can be found once per game by one player"
 		"{@pagebreak}"
@@ -3392,6 +3484,15 @@
 		"Так же зачарователь позволяет вам накладывать зачарования конфликтующие между собой, например, защита + защита от снарядов."
 		""
 		"Имей ввиду, действия с конфликтующими зачарованиями &oбудут потреблять чуть больше опыта&r так же для этого &oнеобходима открытая глава в книге&r!"
+	]
+	quest.6270DCC59DA5FFB4.quest_desc: [
+		"Makes the items in its connected inventory available to the network."
+		""
+		"It does not push items itself - only <keyword>Gather Nodes</keyword> can request and pull them."
+		"{@pagebreak}"
+		"Делает предметы из подключённого инвентаря доступными для сети."
+		""
+		"Сам он ничего не отправляет - забрать предметы могут только <keyword>узлы сбора</keyword>."
 	]
 	quest.62D095FE0536F7B7.quest_desc: [
 		"Now that I have a much more durable leather, I only need a very durable metal. The strongest I can find to withstand the chemicals. That's when I came across ancient debris. It's quite fitting it is deep within the bowels of the Nether."
@@ -3525,6 +3626,15 @@
 		"Чтобы открыть новые крафты игроку необходимо <magic>99.5%</magic> своего <warning>ОБЩЕГО</warning> времени в мире быть <blood>проклятым</blood>, имейте ввиду, чем дольше вы не надеваете кольцо, тем дольше вам придется существовать в мире с ним."
 		""
 		"На большинство <curse>проклятий</curse> в будущем вы найдете управу!"
+	]
+	quest.6815869A324EFC96.quest_desc: [
+		"The simplest of nodes - it has no active function."
+		""
+		"It only extends the reach of your <keyword>Pastel Network</keyword>, letting you cheaply bridge gaps between other nodes."
+		"{@pagebreak}"
+		"Простейший из узлов - у него нет активной функции."
+		""
+		"Он лишь расширяет радиус действия вашей <keyword>Пастельной сети</keyword>, позволяя дёшево перекрыть промежутки между другими узлами."
 	]
 	quest.6823D5F00B44B271.quest_desc: [
 		"Used to... <positive>mold</positive> <property>brick-looking stuff</property>"
@@ -3706,6 +3816,15 @@
 		"We recommend that you read about each <wind>type of bobber</wind>!"
 		"{@pagebreak}"
 		"Мы рекомендуем ознакомиться с каждым <wind>видом поплавков</wind>!"
+	]
+	quest.6BE6570F75CC191A.quest_desc: [
+		"Best used together with <keyword>Sender Nodes</keyword> (which push to it) and <keyword>Gather Nodes</keyword> (which pull from it)."
+		""
+		"Its <warning>filter</warning> controls which items it accepts and offers - leave it empty to store any item."
+		"{@pagebreak}"
+		"Лучше всего работает в паре с <keyword>узлом отправки</keyword> (кладёт в него предметы) и <keyword>узлом сбора</keyword> (забирает из него предметы)."
+		""
+		"Его <warning>фильтр</warning> определяет, какие предметы он принимает и отдаёт - оставьте фильтр пустым, чтобы хранить любые предметы."
 	]
 	quest.6C59597B8D81F454.title: "Copper"
 	quest.6C7B55F12C222907.quest_desc: [
@@ -4185,6 +4304,10 @@
 	quest.7CA4C6614455169B.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
 		""
+		"replaces most tools with a single spell"
+		"{@pagebreak}"
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
+		""
 		"заменяет большинство инструментов, одним заклинанием"
 	]
 	quest.7CA4C6614455169B.title: "A pickaxe? No. An axe? No. A shovel?"
@@ -4388,6 +4511,7 @@
 	task.268D4F85B02495FD.title: "Xaeromap [WIP]"
 	task.2693375290DFFFE2.title: "<glitch>Hello World!"
 	task.271E89A2A2B37CFC.title: "Showcase Item"
+	task.274175BBF260B9C6.title: "Pastel Network"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.284E0D3F10A1E2A1.title: "Weapons"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"

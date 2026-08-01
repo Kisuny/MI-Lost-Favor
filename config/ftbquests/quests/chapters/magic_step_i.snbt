@@ -3020,7 +3020,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -5475,6 +5475,7 @@
 				id: "ars_elemental:glyph_conjure_terrain"
 			}
 			id: "3D70D1CA920E0805"
+			min_width: 250
 			shape: "diamond"
 			tasks: [{
 				id: "2767CB9587FEF195"
@@ -5509,6 +5510,77 @@
 			}]
 			x: 6.5d
 			y: 12.5d
+		}
+		{
+			dependencies: ["6195B2541F2E191E"]
+			entity_vis_size: 1.0f
+			id: "6815869A324EFC96"
+			tasks: [{
+				id: "6B090086E10E2DE1"
+				item: { count: 1, id: "spectrum:connection_node" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 48.0d
+		}
+		{
+			dependencies: ["6195B2541F2E191E"]
+			entity_vis_size: 1.0f
+			id: "6270DCC59DA5FFB4"
+			tasks: [{
+				id: "262380AFBD76E042"
+				item: { count: 1, id: "spectrum:provider_node" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 48.5d
+		}
+		{
+			dependencies: ["6195B2541F2E191E"]
+			entity_vis_size: 1.0f
+			id: "599C53FBB645B90E"
+			tasks: [{
+				id: "72D344640ED333F3"
+				item: { count: 1, id: "spectrum:sender_node" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 49.0d
+		}
+		{
+			dependencies: ["6195B2541F2E191E"]
+			entity_vis_size: 1.0f
+			id: "6BE6570F75CC191A"
+			tasks: [{
+				id: "5D9109FE54F75009"
+				item: { count: 1, id: "spectrum:storage_node" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 48.5d
+		}
+		{
+			dependencies: ["6195B2541F2E191E"]
+			entity_vis_size: 1.0f
+			id: "1B1D0B9C6ECDA107"
+			tasks: [{
+				id: "7124DFC8E112D48C"
+				item: { count: 1, id: "spectrum:gather_node" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 48.0d
+		}
+		{
+			dependencies: ["4B801253049DAC2F"]
+			entity_vis_size: 1.0f
+			id: "6195B2541F2E191E"
+			tasks: [{
+				id: "274175BBF260B9C6"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 47.0d
 		}
 	]
 }

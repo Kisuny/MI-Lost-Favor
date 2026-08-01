@@ -4,6 +4,11 @@ ServerEvents.recipes(event => {
         "spectrum:enchanter/spectrum_books/indestructible",
         "spectrum:blasting/ore/shimmerstone_ores",
         "spectrum:smelting/ore/shimmerstone_ores",
+        "spectrum:pedestal/tier3/pastel_network/provider_node_refined",
+        "spectrum:pedestal/tier3/pastel_network/connection_node_refined",
+        "spectrum:pedestal/tier3/pastel_network/sender_node_refined",
+        "spectrum:pedestal/tier3/pastel_network/storage_node_refined",
+        "spectrum:pedestal/tier3/pastel_network/gather_node_refined",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -19,14 +24,15 @@ ServerEvents.recipes(event => {
             "spectrum:pedestal_moonstone",
         ]
     })
-    
-    miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
-        inputItems:[
-            [{item:'spectrum:citrine_powder'},],
-            [{item: 'spectrum:amethyst_powder'}, ],
-            [{item: 'spectrum:topaz_powder'}],
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: 'spectrum:citrine_powder' },],
+            [{ item: 'spectrum:amethyst_powder' },],
+            [{ item: 'spectrum:topaz_powder' }],
         ],
-        outputItems:[[{item:"milf:mixed_gem_powder"}, 2]]
+        outputItems: [[{ item: "milf:mixed_gem_powder" }, 2]]
     })
 
     milfShapeless(event, {
@@ -148,6 +154,50 @@ ServerEvents.recipes(event => {
     pedestalBasicCraft('spectrum:pedestal_basic_amethyst', 'minecraft:amethyst_shard')
     pedestalBasicCraft('spectrum:pedestal_basic_citrine', 'spectrum:citrine_shard')
 
+    // https://github.com/DaFuqs/Spectrum/blob/656a75a5a2a76fa259c1e2596901f06c27717b44/src/main/java/de/dafuqs/spectrum/registries/SpectrumPastelUpgradeSignatures.java
+    // spectrum:raw_malachite -> malum:earthen_spirit
+    // spectrum:raw_azurite -> malum:aqueous_spirit
+    // spectrum:raw_bloodstone -> malum:sacred_spirit
+    // spectrum:pure_malachite -> cognition:cognitive_crystal
+    // spectrum:pure_azurite -> apotheosis:luminous_crystal_shard
+    // spectrum:pure_bloodstone -> malum:strange_crystal
+    // spectrum:resonance_shard -> eidolon_repraised:shadow_gem
+
+    const nodes = [
+        { id: "spectrum:connection_node", count: 8, material: "minecraft:quartz" },
+        { id: "spectrum:provider_node", count: 2, material: "minecraft:amethyst_shard", amethyst: 2, },
+        { id: "spectrum:sender_node", count: 2, material: "spectrum:citrine_shard", citrine: 2 },
+        { id: "spectrum:storage_node", count: 2, material: "spectrum:topaz_shard", topaz: 2 },
+        { id: "spectrum:gather_node", count: 2, material: "spectrum:onyx_shard", onyx: 2 },
+    ]
+    nodes.forEach(node => {
+        customPedestalCraft(event, {
+            time: 200,
+            tier: "advanced",
+            experience: 2.0,
+            pattern: [
+                ' r ',
+                'rer',
+                'qwq'
+            ],
+            key: {
+                q: 'spectrum:polished_calcite',
+                w: 'spectrum:polished_basalt',
+                e: node.material,
+                r: "enchanted:attuned_stone",
+            },
+            result: {
+                "id": node.id,
+                "count": node.count
+            },
+            amethyst: node.amethyst,
+            citrine: node.citrine,
+            topaz: node.topaz,
+            onyx: node.onyx,
+            advancement: "spectrum:unlocks/blocks/pastel_network",
+            removeRecipe: true
+        })
+    });
 
 
 })

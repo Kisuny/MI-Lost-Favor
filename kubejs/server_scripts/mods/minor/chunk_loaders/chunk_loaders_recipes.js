@@ -1,18 +1,5 @@
 ServerEvents.recipes(event => {
-    milfShaped(event, {
-        pattern: [
-            "wew",
-            "eqe",
-            "wew"
-        ],
-        key: {
-            q: { item: "modern_industrialization:analog_circuit" },
-            w: { item: "enchanted:attuned_stone_charged" },
-            e: { item: "immersiveengineering:heavy_engineering" }
-        },
-        outputItems: [[{ id: "chunkloaders:basic_chunk_loader" }]],
-        removeRecipe: true
-    })
+
     milfShaped(event, {
         pattern: [
             "wew",

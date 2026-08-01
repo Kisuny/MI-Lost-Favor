@@ -22,34 +22,46 @@ ServerEvents.recipes(event => {
         })
 
         let item
-        let isRawOre = false
-        let isOre = false
+        let isRawOreInput = false
+        let isOreInput = false
+        let isCrushedDustInput = false
 
         if (ingredient.item){            
             item = Item.of(ingredient.item)
             if (item && (item.hasTag("c:raw_materials")) || (item.hasTag("c:crushed_ores"))) {
-                isRawOre = true
+                isRawOreInput = true
             }
             if (item && item.hasTag("c:ores")) {
-                isOre = true
+                isOreInput = true
+            }
+            if (item && item.hasTag("c:crushed_dusts")) {
+                isCrushedDustInput = true
             }
         } else {
             let key = $TagKey.create($Registries.ITEM, $ResourceLocation.parse(ingredient.tag))
             let tagItems = $BuiltInRegistries.ITEM.getOrCreateTag(key)
-            isRawOre = tagItems.stream().anyMatch(holder => {
+            isRawOreInput = tagItems.stream().anyMatch(holder => {
                 let currentItem = Item.of(holder.value())
                 return currentItem && (currentItem.hasTag("c:raw_materials")) || (currentItem.hasTag("c:crushed_ores"))
             })
-            isOre = tagItems.stream().anyMatch(holder => {
+            isOreInput = tagItems.stream().anyMatch(holder => {
                 let currentItem = Item.of(holder.value())
                 return currentItem && currentItem.hasTag("c:ores")
             })
+            isCrushedDustInput = tagItems.stream().anyMatch(holder => {
+                let currentItem = Item.of(holder.value())
+                return currentItem && currentItem.hasTag("c:crushed_dusts")
+            })
         }
 
-        if(isOre){
+        if(isOreInput){
             ieCrusherCraft(event, {
                 inputItems: ingredient.tag ? [[{ tag: ingredient.tag }, ingredient.amount]] : [[{ item: ingredient.item }, ingredient.amount]],
-                outputItems: ieOutput.map(entry => [entry[0], Math.ceil(entry[1] * 1.5), entry[2]]),
+                outputItems: ieOutput.map(entry => [
+                    entry[0], Math.ceil(entry[1] * 1.3), entry[2]
+                ]).concat(ieOutput.map(entry => [
+                    entry[0], Math.ceil(1), 0.65
+                ])),
                 energy: miEnergy,
                 compatOff: true,
                 removeRecipeType: "immersiveengineering:crusher"
@@ -64,9 +76,17 @@ ServerEvents.recipes(event => {
             })
         }
 
+        if (isCrushedDustInput){
+            oritechGrinderRecipe(event, {
+                inputItems: ingredient.tag ? [[{ tag: ingredient.tag }, ingredient.amount]] : [[{ item: ingredient.item }, ingredient.amount]],
+                outputItems: oriOutput,
+                compatOff: true,
+            })
+        }
 
 
-        if (isRawOre && oriOutput.length <= 2){
+
+        if (isRawOreInput && oriOutput.length <= 2){
             //console.log(ingredient);
             
             oritechPulverizerRecipe(event, {

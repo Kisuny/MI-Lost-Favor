@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "modern_industrialization:carbon_steel_plate" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_plate" }, 4],
             [{ "item": "modern_industrialization:copper_wire" }, 2],
             [{ "item": "modern_industrialization:iron_rod" }, 2],
             [{ "item": "modern_industrialization:tin_cable" }, 2],
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "modern_industrialization:carbon_steel_curved_plate" }, 2],
+            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 2],
             [{ "item": "moderndynamics:fluid_pipe" }, 3],
             [{ "item": "modern_industrialization:motor" }, 1],
             [{ "item": "modern_industrialization:tin_rotor" }, 2],
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "modern_industrialization:carbon_steel_bolt" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_bolt" }, 4],
             [{ "item": "modern_industrialization:tin_cable" }, 2],
             [{ "item": "modern_industrialization:portable_storage_unit" }, 1],
             [{ "item": "modern_industrialization:electronic_circuit" }, 1],
@@ -235,6 +235,18 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:diamond_tiny_dust" }, 55],
+            [{ "item": "modern_industrialization:invar_large_plate" }, 1],
+            [{ "item": "immersiveengineering:sawblade" }, 1],
+            [{ "item": "immersiveengineering:wirecutter" }, 1],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:invar_rotary_blade" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipe: true
+    })
+
     //#endregion
 
 
@@ -242,11 +254,36 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "tag": "c:dusts/glowstone" }, 4],
-            [{ "tag": "c:rods/steel" }, 2],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_plate" }, 3],
+            [{ "item": "modern_industrialization:steel_rod_magnetic" }, 3],
+            [{ "item": "modern_industrialization:copper_fine_wire" }, 12],
+            [{ "item": "modern_industrialization:adamant_rod" }, 6],
+            [{ "item": "modern_industrialization:tin_cable" }, 9],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:large_motor" }]],
+        category: MILF_BLUEPRINTS.miComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:large_motor" }, 2],
+            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
+            [{ "item": "modern_industrialization:aluminum_rotor" }, 4],
+            [{ "item": "milf:tempered_glass" }, 6],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:large_pump" }]],
+        category: MILF_BLUEPRINTS.miComponents,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "oritech:enderic_lens" }, 1],
+            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
             [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
             [{ "item": "milf:lens" }, 2],
-            [{ "item": "modern_industrialization:analog_circuit" }, 1],
         ],
         outputItems: [[{ "item": "milf:rangefinder" }]],
         category: MILF_BLUEPRINTS.miComponents,
@@ -256,11 +293,12 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "tag": "c:plates/steel" }, 3],
-            [{ "tag": "c:rods/steel" }, 2],
-            [{ "tag": "c:gears/steel" }, 1],
-            [{ "item": "modern_industrialization:motor" }, 1],
-            [{ "item": "modern_industrialization:tin_cable" }, 2],
+            [{ "item": "modern_industrialization:motor" }, 3],
+            [{ "item": "modern_industrialization:steel_large_plate" }, 1],
+            [{ "item": "modern_industrialization:steel_gear" }, 1],
+            [{ "item": "modern_industrialization:steel_rod" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
+            [{ "item": "modern_industrialization:copper_fine_wire" }, 3],
         ],
         outputItems: [[{ "item": "modern_industrialization:piston" }]],
         category: MILF_BLUEPRINTS.miComponents,
@@ -269,11 +307,11 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "tag": "c:rods/steel" }, 2],
-            [{ "item": "modern_industrialization:analog_circuit" }, 1],
+            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_rod" }, 3],
+            [{ "item": "modern_industrialization:electronic_circuit" }, 1],
             [{ "item": "modern_industrialization:motor" }, 2],
             [{ "item": "modern_industrialization:piston" }, 1],
-            [{ "item": "modern_industrialization:tin_cable"}, 3],
         ],
         outputItems: [[{ "item": "modern_industrialization:robot_arm" }]],
         category: MILF_BLUEPRINTS.miComponents,
@@ -282,39 +320,30 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "tag": "c:bolts/steel" }, 1],
-            [{ "tag": "c:plates/aluminum" }, 2],
-            [{ "item": "modern_industrialization:analog_circuit" }, 1],
-            [{ "item": "milf:cd" }, 1],
-            [{ "item": "modern_industrialization:motor" }, 1],
-            [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
+            [{ "item": "modern_industrialization:battery_alloy_curved_plate" }, 6],
+            [{ "item": "modern_industrialization:battery_alloy_plate" }, 2],
+            [{ "item": "modern_industrialization:silicon_dust" }, 3],
+            [{ "item": "modern_industrialization:electrum_cable" }, 2],
         ],
-        outputItems: [[{ "item": "milf:cd_reader" }]],
-        category: MILF_BLUEPRINTS.miComponents,
-        removeRecipe: true
+        outputItems: [[{ "item": "modern_industrialization:silicon_battery" }]],
+        category: MILF_BLUEPRINTS.miBasicComponents,
+        removeRecipeType: "minecraft:crafting_shaped",
+        compatOff: true
     })
 
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "tag": "c:tiny_dusts/diamond" }, 16],
-            [{ "tag": "c:plates/invar" }, 4],
-            [{ "item": "immersiveengineering:sawblade" }, 1],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:invar_rotary_blade" }]],
-        category: MILF_BLUEPRINTS.miComponents,
-        removeRecipe: true
-    })
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "modern_industrialization:steel_large_plate" }, 5],
-            [{ "item": "modern_industrialization:steel_plate" }, 4],
-            [{ "item": "modern_industrialization:steel_bolt" }, 32],
-        ],
-        outputItems: [[{ "item": "milf:bits_mold" }]],
-        category: MILF_BLUEPRINTS.miComponents,
-        removeRecipe: true
-    })
+    // ieBlueprintRecipe(event, {
+    //     inputItems: [
+    //         [{ "tag": "c:bolts/steel" }, 1],
+    //         [{ "tag": "c:plates/aluminum" }, 2],
+    //         [{ "item": "modern_industrialization:analog_circuit" }, 1],
+    //         [{ "item": "milf:cd" }, 1],
+    //         [{ "item": "modern_industrialization:motor" }, 1],
+    //         [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
+    //     ],
+    //     outputItems: [[{ "item": "milf:cd_reader" }]],
+    //     category: MILF_BLUEPRINTS.miComponents,
+    //     removeRecipe: true
+    // })
 
     //#endregion
 })

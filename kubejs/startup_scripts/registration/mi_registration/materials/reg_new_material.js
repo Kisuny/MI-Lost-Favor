@@ -54,7 +54,7 @@ let builders = [
         .addSpecialCasing("bioactive_machine_casing", 8.0, { "en_us": "Bioactive Machine Casing" })
         .withDefaultRecipes(),
 
-    new MIMaterialBuilder("carbon_steel", "Carbon Steel", 0x15203b)
+    new MIMaterialBuilder("silicon_steel", "Silicon Steel", 0x15203b)
         .withMaterialSet("shiny")
         .addParts(["ingot", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
         .withMachineCasing(8.0)

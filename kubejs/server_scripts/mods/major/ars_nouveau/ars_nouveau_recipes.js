@@ -6,6 +6,8 @@ ServerEvents.recipes(event => {
         "ars_elemental:caster_bag",
         "ars_nouveau:apprentice_book_upgrade",
         "ars_nouveau:archmage_book_upgrade",
+        "ars_nouveau:novice_spellbook_alt",
+        "ars_nouveau:novice_spell_book",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -21,6 +23,10 @@ ServerEvents.recipes(event => {
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:vitalic_sourcelink",
         "ars_nouveau:alchemical_sourcelink",
+        "ars_additions:source_spawner",
+        "ars_nouveau:stable_warp_scroll",
+        "ars_controle:scroll_holder",
+        "ars_nouveau:warp_scroll",
     ]})
 
     //remove all glyphs recipes 
@@ -233,5 +239,46 @@ ServerEvents.recipes(event => {
         ],
     })
 
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "eidolon_repraised:parchment" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "item": "paganbless:runic_charge" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "tag": "hexerei:flower_biproduct" },
+        ],
+        output: "ars_additions:codex_entry"
+    })
+
+    customPedestalCraft(event, {
+        time: 1000,
+        tier: "basic",
+        experience: 2.0,
+        citrine: 12,
+        topaz: 12,
+        amethyst: 24,
+        pattern: [
+            'qwe',
+            'rt ',
+            '   '
+        ],
+        key: {
+            q: 'minecraft:book',
+            w: "ytech:bronze_pickaxe",
+            e: "ytech:bronze_axe",
+            r: "ytech:bronze_sword",
+            t: "ytech:bronze_shovel",
+        },
+        result: {
+            "id": "ars_nouveau:novice_spell_book",
+            "count": 1
+        },
+        advancement: "spectrum:place_pedestal"
+    })
 
 })

@@ -54,6 +54,11 @@ const lootRestrictions = [
         everywhere: true,
         tags: 'c:buckets',
     },
+    {
+        stage: 'anvils_everywhere',
+        everywhere: true,
+        items: ["minecraft:anvil", "minecraft:damaged_anvil", "minecraft:chipped_anvil"]
+    },
     // diamonds/emeralds/lapis etc
     {
         stage: 'gems_everywhere',

@@ -77,4 +77,20 @@ ServerEvents.recipes(event => {
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
+
+    miMachineRecipe(event, {
+        energy: 4, time: 200, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "minecraft:paper" }, 3],
+            [{ item: "eidolon_repraised:enchanted_ash" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 100]
+        ],
+        outputItems: [
+            [{ item: "eidolon_repraised:parchment" }, 4]
+        ],
+        removeRecipe: true
+    })
+
 })

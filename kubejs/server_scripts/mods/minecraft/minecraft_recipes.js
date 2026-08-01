@@ -3,10 +3,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'minecraft:tinted_glass' })
     event.remove({ id: 'minecraft:bread' })
 
+    event.remove({output: "minecraft:enchanting_table"})
     event.replaceInput({ output:"minecraft:flint_and_steel" }, "iron_ingot","modern_industrialization:steel_ingot")
     event.replaceInput({ output:"minecraft:hopper" }, "iron_ingot","modern_industrialization:iron_plate")
     // YTech why do u change vanilla recipes with minecraft id :(
     event.replaceInput({mod: "minecraft"}, "ytech:flour", "minecraft:wheat")
+    event.replaceInput({input: "minecraft:enchanting_table"}, "minecraft:enchanting_table", "apothic_enchanting:apothic_enchanting_table")
 
     yTechShaped(event, {
         pattern: [
@@ -279,9 +281,9 @@ ServerEvents.recipes(event => {
             Q: { item: "minecraft:crying_obsidian" },
             W: { item: "minecraft:obsidian" },
             E: { item: "modern_industrialization:diamond_plate" },
-            R: { item: "minecraft:book" },
+            R: { tag: "apothic_enchanting:tomes" },
         },
-        outputItems: [[{ id: "minecraft:enchanting_table" }]],
+        outputItems: [[{ id: "apothic_enchanting:apothic_enchanting_table" }]],
         removeRecipe:true
     })
 

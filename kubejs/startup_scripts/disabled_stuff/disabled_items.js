@@ -4,6 +4,8 @@ global.disabledItems = [
     // new DisabledItemBuilder(/oritech:\w+/).build(),
     // new DisabledItemBuilder(/oritechthings:\w+/).build(),
 
+    new DisabledItemBuilder("modern_industrialization:steel_block").replaceWith("immersiveengineering:storage_steel").build(),
+
     //#region Oritech
     new DisabledItemBuilder("oritech:machine_core_1").build(),
     new DisabledItemBuilder("oritech:raw_silicon").build(),

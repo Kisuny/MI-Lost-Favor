@@ -3478,8 +3478,8 @@
 				item: { count: 1, id: "gaze:compromise_ring" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: 19.0d
+			x: -3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -3499,11 +3499,14 @@
 				item: { count: 1, id: "gaze:charge_necklace" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 19.0d
+			x: -4.0d
+			y: 14.5d
 		}
 		{
-			dependencies: ["464E6E68F80377D1"]
+			dependencies: [
+				"464E6E68F80377D1"
+				"7F4DD202F7059EF5"
+			]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "10400EC9FEFEC45F"
@@ -3517,8 +3520,8 @@
 				structure: "malum:weeping_well"
 				type: "structure"
 			}]
-			x: 17.5d
-			y: 13.0d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["10400EC9FEFEC45F"]
@@ -3531,8 +3534,8 @@
 				item: { count: 1, id: "malum:encyclopedia_esoterica" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: 11.5d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["10400EC9FEFEC45F"]
@@ -3544,8 +3547,8 @@
 				item: { count: 1, id: "malum:null_slate" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: 15.0d
+			x: 0.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -3561,14 +3564,11 @@
 				item: { count: 1, id: "malum:void_salts" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: 15.0d
+			x: -2.0d
+			y: 10.5d
 		}
 		{
-			dependencies: [
-				"10400EC9FEFEC45F"
-				"30D85FEE268EBA0E"
-			]
+			dependencies: ["10400EC9FEFEC45F"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2B4B93F5CCDECFDF"
@@ -3577,8 +3577,8 @@
 				item: { count: 1, id: "malum:mnemonic_fragment" }
 				type: "item"
 			}]
-			x: 16.5d
-			y: 15.0d
+			x: -1.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["10400EC9FEFEC45F"]
@@ -3590,14 +3590,11 @@
 				item: { count: 1, id: "malum:auric_embers" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 15.0d
+			x: 2.0d
+			y: 10.5d
 		}
 		{
-			dependencies: [
-				"10400EC9FEFEC45F"
-				"480FDA382E724263"
-			]
+			dependencies: ["10400EC9FEFEC45F"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6641AB866DFBEDC2"
@@ -3606,8 +3603,8 @@
 				item: { count: 1, id: "malum:malignant_lead" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: 15.0d
+			x: 1.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["10400EC9FEFEC45F"]
@@ -3619,8 +3616,8 @@
 				item: { count: 1, id: "malum:anomalous_design" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 15.0d
+			x: -3.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["36D3C6D1EFCC4639"]
@@ -3631,8 +3628,8 @@
 				item: { count: 1, id: "malum:complete_design" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 16.0d
+			x: -3.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6026E68EB415B65F"]
@@ -3643,8 +3640,8 @@
 				item: { count: 1, id: "malum:fused_consciousness" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 17.0d
+			x: -3.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -3658,8 +3655,8 @@
 				item: { count: 1, id: "malum:malignant_pewter_ingot" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 16.5d
+			x: 0.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["7EB4A19B01893573"]
@@ -3670,8 +3667,8 @@
 				item: { count: 1, id: "malum:malignant_pewter_plating" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 18.0d
+			x: 0.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5D77FB17EBF511DD"]
@@ -3700,8 +3697,8 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: 19.5d
+			x: 0.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7EB4A19B01893573"]
@@ -3713,8 +3710,8 @@
 				item: { count: 1, id: "malum:weight_of_worlds" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 16.0d
+			x: 2.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7EB4A19B01893573"]
@@ -3726,8 +3723,8 @@
 				item: { count: 1, id: "malum:edge_of_deliverance" }
 				type: "item"
 			}]
-			x: 20.0d
-			y: 16.5d
+			x: 2.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["7EB4A19B01893573"]
@@ -3739,8 +3736,8 @@
 				item: { count: 1, id: "malum:erosion_scepter" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 17.0d
+			x: 2.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -3758,8 +3755,8 @@
 				item: { count: 1, id: "gaze:splintered_world" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 18.5d
+			x: -3.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -3778,8 +3775,8 @@
 				item: { count: 1, id: "gaze:seidhr" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 19.5d
+			x: -3.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -3797,8 +3794,8 @@
 				item: { count: 1, id: "gaze:meditation_ring" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: 18.5d
+			x: -2.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -3817,8 +3814,8 @@
 				item: { count: 1, id: "gaze:adaptive_wheel" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 18.5d
+			x: -4.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -3833,8 +3830,8 @@
 				item: { count: 1, id: "malum:ring_of_echoing_arcana" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 16.5d
+			x: -0.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -3850,8 +3847,8 @@
 				item: { count: 1, id: "gaze:spirit_saber" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 19.0d
+			x: -0.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["5D77FB17EBF511DD"]
@@ -3864,8 +3861,8 @@
 				item: { count: 1, id: "gaze:swift_spiral" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: 19.0d
+			x: 1.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["0237945A1F6F9132"]
@@ -3877,8 +3874,8 @@
 				item: { count: 1, id: "gaze:spirit_channel_pouch" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 20.5d
+			x: -3.5d
+			y: 16.0d
 		}
 	]
 }

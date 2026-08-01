@@ -321,11 +321,12 @@
 		"{@pagebreak}"
 		"<warning>ТОКСИЧНОЕ МАСЛО!</warning> Ещё более летучий и опасный вариант! Оно уже может приводить к <warning>летальному исходу</warning>. Я КАЖДОМУ дам попробовать моё невероятное творение!"
 	]
-	quest.0A8264D255BE5EF5.quest_desc: [
-		"Spirit <keyword>in the offhand</keyword> <positive>RMB on ground</positive> - places <keyword>glowing spirit block</keyword>"
-		"{@pagebreak}"
-		"Душу <keyword>в вторую руку</keyword> <positive>пкм по земле</positive> - ставит <keyword>светящийся блок душ</keyword>"
+	quest.0AA51C0B8B225908.quest_desc: [
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
+		""
+		"Бесплатное освящение помещений или шахт"
 	]
+	quest.0AA51C0B8B225908.title: "lighting"
 	quest.0ACD0476CE4CAED1.quest_desc: [
 		"Allows water to be <positive>pumped</positive> from rivers into the <property>aqueduct network</property>!"
 		""
@@ -415,6 +416,7 @@
 		"• +2x Recharge Rate"
 	]
 	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
+	quest.0D55B997939B664F.quest_desc: ["Позволяет получить случайный глиф первого уровня, глифы не могут повторяться, как только вы изучите все глифы 1 уровня вы будете получать немного опыта за свиток."]
 	quest.0D58533D474BB840.quest_desc: [
 		"Позволяет получать доступ к машинам для воронок или других необходимых способов взаимодействия с машиной."
 		""
@@ -479,6 +481,12 @@
 		"{@pagebreak}"
 		"Самый простой способ открывать <keyword>Timedoor</keyword>. Загрузи в него <property>Location Card</property> и нажми правой кнопкой, чтобы открыть портал вручную, или подай <warning>Redstone</warning>, если он стоит как блок. Это <property>лучший ранний инструмент</property> для телепорта и ему <warning>не нужен Time Steel</warning>."
 	]
+	quest.0E87D93CF5EB7F46.quest_desc: [
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
+		""
+		"сруб большого количества древесины или листвы"
+	]
+	quest.0E87D93CF5EB7F46.title: "treecapitator"
 	quest.0E9FA290A23FF8CC.quest_desc: [
 		"<named>Heart Transplant</named> is a <keyword>workstation</keyword> for villagers "
 		""
@@ -505,7 +513,6 @@
 		""
 		"Необходим для создания <keyword>стола трансформации</keyword>. Также позволяет сделать ваши предметы <keyword>невидимыми</keyword>!"
 	]
-	quest.0F3DBB0D6EEF427E.quest_subtitle: "elevator in water"
 	quest.0F4825A153097924.quest_desc: [
 		"&#FEECD6Enchantment Canvas&r helps you remove &#C6BCE9enchantments&r from an item and reapply them if needed. "
 		""
@@ -537,7 +544,7 @@
 		"Переносной <keyword>источник энергии</keyword>, который медленно создает <magic>Chronon</magic>, пока лежит в <property>инвентаре</property> или слоте <property>Curios</property>. У него нет собственного запаса, поэтому он нужен в первую очередь для <positive>зарядки</positive> <named>ячеек</named> и <named>батарей</named>."
 	]
 	quest.10400EC9FEFEC45F.quest_desc: [
-		"[ \"from the \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" mod or \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } }, \".\" ]"
+		"[ \"You can use the structure-finding ritual from the \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" mod or \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } }, \".\" ]"
 		"{@pagebreak}"
 		"[ \"Можно использовать ритуал поиска структур из мода \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" или \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } } ]"
 	]
@@ -761,7 +768,15 @@
 	]
 	quest.15257CFF2D9E8EE6.quest_subtitle: "WIP"
 	quest.15C276FD883F33F5.quest_desc: [""]
-	quest.16219C02EDE3F680.quest_desc: ["Получает <keyword>сурс</keyword> из <keyword>сурс джаров</keyword> и превращает его в <property>жидкий сурс</property>, далее с ним можно много приколов делать, например <magic>генератор сурс стоуна</magic> лава + ликвид сурс "]
+	quest.16219C02EDE3F680.quest_desc: [
+		"The <keyword>Source Condenser</keyword> draws <keyword>source</keyword> from connected <keyword>source jars</keyword> and converts it into <property>liquid source</property>."
+		""
+		"The resulting liquid can be put to a variety of uses, such as building a <magic>source stone generator</magic> powered by lava and liquid source."
+		"{@pagebreak}"
+		"<keyword>Конденсатор сурса</keyword> извлекает <keyword>сурс</keyword> из подключённых <keyword>сурс джаров</keyword> и преобразует его в <property>жидкий сурс</property>."
+		""
+		"Полученную жидкость можно использовать в разных целях, например для постройки <magic>генератора сурс стоуна</magic> на основе лавы и жидкого сурса."
+	]
 	quest.1664E9D5D87BDF33.quest_desc: [
 		"It has been noted that the book on this table consumes quite a lot of <warning>FPS</warning>, so <warning>keep that in mind</warning>!"
 		"{@pagebreak}"
@@ -1032,6 +1047,7 @@
 		"{@pagebreak}"
 		"Более продвинутая <keyword>станция</keyword> для создания <keyword>зелий</keyword>. Также может создавать некоторые другие жидкости."
 	]
+	quest.1CA058CF370F34C2.quest_desc: ["подавая редстоун будет исполнять записанное на неё заклинание"]
 	quest.1D16519FE894BC16.quest_desc: [
 		"<keyword>Tesseract</keyword> allows you to <positive>transport Items, Fluid and Energy</positive>. Tesseracts work at <property>any distance and even across dimensions</property>! Use <keyword>multiple channels</keyword> to have different groups of Tesseracts!"
 		"{@pagebreak}"
@@ -1092,9 +1108,9 @@
 		"[ \"Больее подробно \", { \"text\": \"тут\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/plonk\" } } ]"
 	]
 	quest.1EA565179E5C25AE.quest_desc: [
-		"One utility provided by Apotheosis are Tomes. These act similar to a book when being enchanted, but can only receive enchantments for a certain type of item.  There are nine tomes in total, one each for helmets, chestplates, leggings, boots, swords, bows, pickaxes, fishing poles, and a final tome that accepts enchantments which do not fit on any of the others."
+		"One utility provided by Apotheosis are <keyword>Tomes</keyword>. These act similar to a book when being enchanted, but can only receive enchantments for a certain type of item.  There are <keyword>nine tomes</keyword> in total, one each for <property>helmets, chestplates, leggings, boots, swords, bows, pickaxes, fishing poles</property>, and a final tome that accepts enchantments which do not fit on any of the others."
 		"{@pagebreak}"
-		"Одной из полезных функций Apotheosis являются фолианты. Они действуют аналогично книгам, когда на них накладывается зачарование, но могут принимать зачарования только для определенного типа предметов.  Всего существует девять фолиантов: по одному для шлемов, нагрудников, наколенников, сапог, мечей, луков, кирок, удочек и один фолиант, который принимает зачарования, не подходящие ни для одного из остальных."
+		"Одной из полезных функций Apotheosis являются <keyword>фолианты</keyword>. Они действуют аналогично книгам, когда на них накладывается зачарование, но могут принимать зачарования только для определенного типа предметов.  Всего существует <keyword>девять фолиантов</keyword>: по одному для <property>шлемов, нагрудников, наколенников, сапог, мечей, луков, кирок, удочек</property>, и один фолиант, который принимает зачарования, не подходящие ни для одного из остальных."
 	]
 	quest.1EE1B8261F4D85A0.quest_desc: ["<property>Glowing</property> for <keyword>30 seconds</keyword>."]
 	quest.1F491D4829884C61.quest_desc: [
@@ -1271,7 +1287,15 @@
 		"{@pagebreak}"
 		"Один из первых способов <positive>полёта</positive>"
 	]
-	quest.256F4B9E44347533.quest_desc: ["Operates similar to the <keyword>Source Relay: Splitter</keyword> but can teleport <property>source</property> an endless distance between other <keyword>Warp relays</keyword>. For distances beyond <keyword>30 blocks</keyword>, there is a <warning>chance that some source will be lost</warning> during warp."]
+	quest.256F4B9E44347533.quest_desc: [
+		"The <keyword>Source Relay: Warp</keyword> works like the <keyword>Source Relay: Splitter</keyword>, but can teleport <property>source</property> an unlimited distance between other <keyword>Warp Relays</keyword>."
+		""
+		"Beyond <keyword>30 blocks</keyword>, there is a <warning>chance that some source will be lost</warning> during the warp."
+		"{@pagebreak}"
+		"<keyword>Варп-реле сурса</keyword> работает так же, как <keyword>реле-разветвитель</keyword>, но способно телепортировать <property>сурс</property> на неограниченное расстояние между другими <keyword>варп-реле</keyword>."
+		""
+		"На расстоянии свыше <keyword>30 блоков</keyword> появляется <warning>шанс потерять часть сурса</warning> во время телепортации."
+	]
 	quest.257157A1AA94B5E4.quest_desc: [
 		"Used to <positive>purchase most seeds</positive> in the modpack."
 		"{@pagebreak}"
@@ -1516,6 +1540,12 @@
 	]
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
 	quest.2D26EA473D256B54.quest_desc: ["An <keyword>upgraded variant</keyword> that allows <positive>catching boss entities</positive>"]
+	quest.2D89107A2B1F6A6C.quest_desc: [
+		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
+		""
+		"Даёт эффект отскакивание от земли - избавление от урона при падение падения"
+	]
+	quest.2D89107A2B1F6A6C.title: "bounce"
 	quest.2D8C9DF5E216E09C.quest_desc: [
 		"Sometimes, you've started to notice &#C6BCE9stars&r falling from the sky. Try &#FEECD6breaking&r them and collecting their &#C6BCE9fragments&r and &#C6BCE9dust&r, they are very useful!"
 		"{@pagebreak}"
@@ -1585,7 +1615,15 @@
 		"{@pagebreak}"
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду!</warning>"
 	]
-	quest.2F9109DBADADEE10.quest_desc: ["<keyword>Charms</keyword> are a set of curios enchanted with strong protection magics. They range from allowing you to walk on <keyword>Powdered Snow</keyword>, to saving you from the <keyword>Warden's</keyword> powerful <property>Sonic Boom</property>. Each charm has a specific amount of <keyword>charges</keyword> available to protect you. Once the charges have been <warning>depleted</warning>, pop them into an <keyword>Imbuement chamber</keyword> to charge them back up."]
+	quest.2F9109DBADADEE10.quest_desc: [
+		"<keyword>Charms</keyword> are a set of curios enchanted with strong protection magics. They range from allowing you to walk on <keyword>Powdered Snow</keyword>, to saving you from the <keyword>Warden's</keyword> powerful <property>Sonic Boom</property>."
+		""
+		"Each charm has a specific amount of <keyword>charges</keyword> available to protect you. Once the charges have been <warning>depleted</warning>, pop them into an <keyword>Imbuement chamber</keyword> to charge them back up."
+		"{@pagebreak}"
+		"<keyword>Чармы</keyword> - это набор безделушек, зачарованных мощной защитной магией. Они варьируются от возможности ходить по <keyword>рыхлому снегу</keyword> до спасения от <property>лазерного удара</property> <keyword>Вардена</keyword>."
+		""
+		"У каждого чарма есть определённое количество <keyword>зарядов</keyword>, доступных для защиты. Когда заряды <warning>заканчиваются</warning>, поместите чарм в <keyword>камеру пропитки</keyword>, чтобы зарядить его заново."
+	]
 	quest.2FBB9E95379CD74A.quest_desc: [
 		"An inexhaustable barrage of <keyword>snowballs</keyword> can be obtained by performing the <keyword>Quartz Ritual</keyword>"
 		"{@pagebreak}"
@@ -1749,6 +1787,7 @@
 		"{@pagebreak}"
 		"Полет в <magic>финальной стадии</magic>"
 	]
+	quest.34AF308DB5E001D9.quest_desc: ["Вы можете использовать стол и пергамент вместе с спелл книгой для создания рецепта заклинания и поместить его в турель, чтобы она автоматически выполняла ваше заклинание ценой сурса"]
 	quest.34D0D56BD238BC1A.quest_desc: ["<positive>Place</positive> this block near your <keyword>Hephaestus Forge</keyword> and it will automatically <positive>transfer essences</positive> from nearby <keyword>Utrem Jars</keyword> into the forge"]
 	quest.351C8BB52E7CD0E8.quest_desc: [
 		"Build a &#FEECD6fusion shrine&r! Keep in mind, it must have &#FEECD6access&r to the &#9BB8EDsky&r in order for it to work."
@@ -1856,7 +1895,15 @@
 		"&#9BB8EDСтекло&r хорошо вписывается в интерьер, а так же &#FEECD6светится&r!"
 	]
 	quest.37160E9A836B7361.title: "Tin"
-	quest.374D778AA6C127E6.quest_desc: ["Enables the transport of source between Source Jars and other Source Relays. To pull source from jars, use the Dominion Wand on the jar, and then on the relay. To send between relays or from a relay to a jar, use the wand on the relay and then the target you wish to send source to. Relays may only reach up to 30 blocks away. To clear connections, sneak while using the Dominion Wand on the relay."]
+	quest.374D778AA6C127E6.quest_desc: [
+		"The <keyword>Source Relay</keyword> transports <property>source</property> between <keyword>Source Jars</keyword> and other <keyword>Source Relays</keyword>."
+		""
+		"To pull source from a jar, use the <keyword>Dominion Wand</keyword> on the jar and then on the relay. To send source between relays, or from a relay to a jar, use the wand on the relay first and then on the target. Relays can only reach up to <keyword>30 blocks</keyword> away. Sneak while using the wand on a relay to clear its connections."
+		"{@pagebreak}"
+		"<keyword>Реле сурса</keyword> обеспечивает передачу <property>сурса</property> между <keyword>сурс джарами</keyword> и другими <keyword>реле</keyword>."
+		""
+		"Чтобы забрать сурс из джара, используйте <keyword>Жезл владения</keyword> сначала на джаре, а затем на реле. Чтобы передать сурс между реле или из реле в джар, используйте жезл сначала на реле, а затем на цели. Реле работает на расстоянии до <keyword>30 блоков</keyword>. Чтобы очистить связи, используйте жезл на реле с зажатым шифтом."
+	]
 	quest.37508D7F8B4E2CA1.quest_desc: [
 		"After <positive>growing</positive> a <keyword>jade bulb</keyword>, <positive>collect</positive> some of its petals"
 		""
@@ -1867,6 +1914,11 @@
 		"Более подробно о росте можно прочитать в <keyword>книге</keyword>!"
 	]
 	quest.37EC4A78711DC4E6.quest_subtitle: "trashcan"
+	quest.38221698E02BF6C9.quest_desc: [
+		"Use the guidebook from the Enchanted mod to view the recipe"
+		"{@pagebreak}"
+		"Используйте гайд-бук из мода Enchanted чтобы увидеть рецепт"
+	]
 	quest.3827371BD2D8A5BA.quest_desc: [
 		"&lMutations&r"
 		""
@@ -2113,6 +2165,16 @@
 		""
 		"This enhancer is currently <warning>not obtainable in survival</warning>."
 	]
+	quest.3D70D1CA920E0805.quest_desc: [
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  free dirt"
+		""
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  free cobbestone"
+		""
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  free deepslate"
+		""
+		"Можно почитать о всех комбинациях на самом глифе в EMI"
+	]
+	quest.3D70D1CA920E0805.title: "free cobble or not"
 	quest.3D7610F02FB93E78.quest_desc: [
 		"A pouch for your coins"
 		"{@pagebreak}"
@@ -2209,11 +2271,6 @@
 		"[ \"Азурит можно найти только в измерение \", { \"text\": \"Eternal Starlight\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B37B11A0B0A84E6\" } }, \"!\" ]"
 	]
 	quest.40C152C451D65950.quest_subtitle: "WIP"
-	quest.40CC4CB2281C6FE1.quest_desc: [
-		"By using Vial, you gain access to communicate with the gatekeeper!"
-		"{@pagebreak}"
-		"Употребив Vial вы получаете доступ для общения с привратником!"
-	]
 	quest.40FBEE2028873C00.quest_desc: [
 		"My clothes are torn to bits. I feel my own academy attire does not reflect my truest desires. I must attain a new wardrobe. And I have the perfect material to make it out of."
 		""
@@ -2601,7 +2658,21 @@
 		"{@pagebreak}"
 		"Решите <property>загадку</property> для доступа к <magic>лабиринту</magic>!"
 	]
-	quest.4A87529560AC3F59.quest_desc: ["Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
+	quest.4A7B4E770FBD1EDB.quest_desc: [
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
+		""
+		"призывает прирученую лошадь"
+	]
+	quest.4A7B4E770FBD1EDB.title: "horse power"
+	quest.4A87529560AC3F59.quest_desc: [
+		"The <keyword>Source Relay: Collector</keyword> works like a regular <keyword>Source Relay</keyword>, but will automatically draw source from any <keyword>Source Jars</keyword> within <property>5 blocks</property>, even if they are not linked to it."
+		""
+		"See the <keyword>Source Relay</keyword> for usage instructions."
+		"{@pagebreak}"
+		"<keyword>Реле-коллектор сурса</keyword> работает так же, как и обычное <keyword>реле сурса</keyword>, но автоматически забирает сурс из любых <keyword>сурс джаров</keyword> в радиусе <property>5 блоков</property>, даже если они не подключены к реле напрямую."
+		""
+		"Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
+	]
 	quest.4ACDF200B2039DD9.quest_desc: ["Улучшенная версия кристалла, больше прочности, свет можно кидать на расстояние, а не только через пкм"]
 	quest.4ADB796A7EC14DE4.quest_desc: [
 		"The Soul Crimson Stone is an upgraded version of the normal Crimson Stone. Due to the power of the harnessed souls, this enhancer is able to completely remove the essence cost of one Hephaestus Forge ritual. After one use it loses its power and becomes a normal Crimson Stone."
@@ -2672,7 +2743,15 @@
 		""
 		"[ \"Возможно \", { \"text\": \"это\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"650A973AF6830D93\" } }, \" вам поможет\" ]"
 	]
-	quest.4BD90DDEB289EB1C.quest_desc: ["Operates similar to the Source Relay, but will deposit to jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
+	quest.4BD90DDEB289EB1C.quest_desc: [
+		"The <keyword>Source Relay: Deposit</keyword> works like a regular <keyword>Source Relay</keyword>, but will automatically deposit source into any <keyword>Source Jars</keyword> within <property>5 blocks</property>, even if they are not linked to it."
+		""
+		"See the <keyword>Source Relay</keyword> for usage instructions."
+		"{@pagebreak}"
+		"<keyword>Реле-депозит сурса</keyword> работает так же, как и обычное <keyword>реле сурса</keyword>, но автоматически передаёт сурс в любые <keyword>сурс джары</keyword> в радиусе <property>5 блоков</property>, даже если они не подключены к реле напрямую."
+		""
+		"Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
+	]
 	quest.4C56E87E195A4339.quest_desc: [
 		"Place these &#FEECD6microorganisms&r near some food and &#9BB8EDwait&r a bit. The bacteria will start to eat it and leave the &#FEECD6rests&r behind. Maybe you can use this to &#9BB8EDyour advantage&r!"
 		""
@@ -2694,9 +2773,16 @@
 		"{@pagebreak}"
 		"Простой способ получить <named>жителей</named>!"
 	]
-	quest.4D2CAE9449DCAAF2.quest_subtitle: "water for source"
 	quest.4D80BF0416C5EFD2.quest_desc: ["The <property>demolishing modifier</property> can unlock the true power out of your tools (<keyword>Pickaxes</keyword>, <keyword>Shovels</keyword>, <keyword>Axes</keyword>, <keyword>Hoes</keyword>). Tools with this modifier will be able to break a <keyword>3x3 area</keyword>."]
-	quest.4DBD70274DBF7823.quest_desc: ["Operates similar to the Source Relay, but will support taking from and transferring to multiple jars at once. The splitter has a much larger through-put than the Source Relay, and will split this throughput amongst all of its jars. See the instructions on the Source Relay for use."]
+	quest.4DBD70274DBF7823.quest_desc: [
+		"The <keyword>Source Relay: Splitter</keyword> works like a regular <keyword>Source Relay</keyword>, but can take from and send to <property>multiple jars</property> at once."
+		""
+		"It has a much higher throughput than a regular relay, which is split evenly amongst all of its connected jars. See the <keyword>Source Relay</keyword> for usage instructions."
+		"{@pagebreak}"
+		"<keyword>Реле-разветвитель сурса</keyword> работает так же, как и обычное <keyword>реле сурса</keyword>, но умеет забирать и передавать сурс сразу от <property>нескольких джаров</property>."
+		""
+		"Пропускная способность разветвителя значительно выше, чем у обычного реле, и распределяется поровну между всеми подключёнными джарами. Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
+	]
 	quest.4DCB694F94371292.quest_desc: [
 		"An empty world with nothing in it, handy to build your base somewhere in <keyword>infinty</keyword>!"
 		""
@@ -2824,7 +2910,6 @@
 		""
 		"Так же для работы лебедки во второй руке не должно быть предметов!"
 	]
-	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
 	quest.5327E771FF6F0B4E.quest_desc: [
 		"<warning>Can be found once per game by one player"
 		""
@@ -3025,6 +3110,10 @@
 		"Left alt to open book menu"
 		"Next Spell X"
 		"Previous Spell Z"
+		""
+		"Открывая новые глифы вы повышаете количество своей маны, что помогает вам использовать более комплексные спеллы"
+		""
+		"На данный момент вам доступны глифы первого уровня"
 	]
 	quest.5C95E8450BEAD473.quest_desc: [
 		"Using the <keyword>Cinnabar Ritual</keyword> you can obtain the incredibly powerful <keyword>Pentacle</keyword>. Whatever mob is <positive>sacrificed</positive> to obtain it will result in the Pentacle <positive>spawning that mob for eternity</positive>."
@@ -3090,6 +3179,14 @@
 		"{@pagebreak}"
 		"Улучшаются Diamond Block и ещё одним Blood Feather до Diamond-Tipped Ophanim Wings - при приседании наносят колющую атаку по врагам рядом, основанную на направлении тела (не взгляда), расходуя прочность пропорционально урону."
 	]
+	quest.5DB331B0DC5B29D7.quest_desc: [
+		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
+		""
+		"Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть снаряд, самоналожение и т.д. - эксперементируйте. "
+		""
+		"Вы можете усилить это и другие заклинания используя глиф Amplify!"
+	]
+	quest.5DB331B0DC5B29D7.title: "Sword"
 	quest.5DDA25EB563D52A6.quest_desc: ["Redstone works quite differently when you use aluminum to transfer its signals, looks like the strength of the signal remains the same no matter the distance traveled, and you could do little adjustments inside relays to send different signal types, which opens great possibilities..."]
 	quest.5E0298584559E31D.quest_desc: [
 		"Can be found in &l<positive>Green</positive> biomes!"
@@ -3202,6 +3299,11 @@
 		"Destroy the <fire>Nether Locker</fire>, and you might just get a <named>compass</named>!"
 		"{@pagebreak}"
 		"Разрушь <fire>Nether Locker</fire> и с некоторым шансом получишь <named>компас</named>!"
+	]
+	quest.5FE5CE29EBFDE44F.quest_desc: [
+		"This ring can be upgraded to other rings"
+		"{@pagebreak}"
+		"Данное кольцо можно улучшать в другие кольца"
 	]
 	quest.605AFF391B6FB32E.quest_desc: ["<keyword>32 channels/cable</keyword>"]
 	quest.606AC3FF6B9213D5.quest_desc: ["Just like a normal <keyword>composter</keyword>, but <property>mechanical</property>!"]
@@ -3338,7 +3440,6 @@
 		"[ \"You can read more about each ship, their speeds, and other details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/talhanation/wiki/wiki/Small-Ships-Wiki\" } }, \"!\" ]"
 	]
 	quest.6443864802D04B07.title: "Are you sure it's Small Ships?"
-	quest.64C835EE832D0FC2.quest_desc: ["крос дим не воркает, тп на записаные корды"]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"<keyword>Invisible lighting</keyword>!"
 		""
@@ -3612,7 +3713,6 @@
 		"{@pagebreak}"
 		"Это &#FEECD6лопата&r, &#9BB8EDкирка&r, &#C7E2E9топор&r, и &#CAE4C8мотыга&r &nв одном&r, буквально швейцарский нож!"
 	]
-	quest.6C85E4BCF27839E4.quest_subtitle: "Build warp portal"
 	quest.6C9D001FF1B265FB.quest_desc: [
 		"&lUse this to extract the meteorite and all its contents!&r"
 		"{@pagebreak}"
@@ -3851,6 +3951,27 @@
 		"{@pagebreak}"
 		"[ \"В дальнейшем вам понадобится создавать множество вещей использую наковальню для крафта, обратите внимание на \", { \"text\": \"лебедку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! В ней вы можете <positive>одновременно создавать несколько предметов</positive>, а так же в ней <warning>не ломается наковальня</warning>!\" ]"
 	]
+	quest.71D17E12AF1CA374.quest_desc: [
+		"Spellcasting in Ars Nouveau revolves around the <keyword>Spell Book</keyword>, where spells are assembled from three types of components: <magic>Forms</magic>, <flame>Effects</flame>, and <positive>Augments</positive>."
+		""
+		"A spell always begins with a <magic>Form</magic>. Forms determine how a spell is cast or where its effects appear. Some launch a projectile, others affect the block or entity you are looking at, while some create an area of effect or summon magical constructs."
+		""
+		"Next come the <flame>Effects</flame>, which determine what the spell actually does. Effects can deal <negative>damage</negative>, heal, break blocks, grow plants, teleport targets, create light, freeze enemies, and much more. A single spell may contain multiple effects, allowing them to activate one after another."
+		""
+		"Finally, <positive>Augments</positive> modify the spell's behavior. They can increase damage, range, duration, area, speed, or efficiency, reduce mana cost, or otherwise alter how Forms and Effects behave. Many augments can be stacked multiple times, making spells stronger or more specialized."
+		""
+		"The true strength of Ars Nouveau lies in combining these components. For example, a projectile can <negative>ignite</negative> enemies on impact, an area spell can heal nearby allies, or a touch spell can both break a block and instantly place another in its place. <keyword>Experimenting</keyword> with different combinations is the key to discovering powerful and efficient spells for every situation."
+		"{@pagebreak}"
+		"В Ars Nouveau все заклинания создаются в <keyword>Книге заклинаний</keyword>, объединяя три типа компонентов: <magic>Формы</magic>, <flame>Эффекты</flame> и <positive>Аугментации</positive>."
+		""
+		"Любое заклинание начинается с <magic>Формы</magic>. Именно форма определяет, как будет применено заклинание и где появится его эффект. Одни формы выпускают магический снаряд, другие воздействуют на блок или существо, на которое вы смотрите, а некоторые создают область действия или призывают магические конструкции."
+		""
+		"После формы идут <flame>Эффекты</flame> - они определяют, что именно делает заклинание. Эффекты позволяют наносить <negative>урон</negative>, лечить, разрушать блоки, выращивать растения, телепортировать цели, создавать свет, замораживать противников и выполнять множество других действий. В одном заклинании можно объединить несколько эффектов, которые будут срабатывать последовательно."
+		""
+		"Завершают заклинание <positive>Аугментации</positive>. Они изменяют поведение форм и эффектов: увеличивают урон, дальность, длительность, радиус действия, скорость или эффективность, уменьшают расход маны и добавляют другие полезные свойства. Многие аугментации можно использовать несколько раз, усиливая выбранные характеристики."
+		""
+		"Главная особенность Ars Nouveau - возможность сочетать формы, эффекты и аугментации практически любым способом. Например, можно создать снаряд, который <negative>поджигает</negative> врагов, заклинание области, исцеляющее союзников, или заклинание касания, одновременно разрушающее один блок и устанавливающее другой. <keyword>Экспериментируя</keyword> с различными комбинациями, вы сможете создать заклинания практически для любой задачи."
+	]
 	quest.71DD1AE71C4E1B9F.quest_desc: [
 		"[ \"Don't forget to decorate your base with \", { \"text\": \"flags!\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6D68EF9352B93B19\" } }, \" \" ]"
 		"{@pagebreak}"
@@ -4017,7 +4138,6 @@
 		""
 		"- In Search Of Greatness, by the Fifth Herald of Color"
 	]
-	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["<positive>Charges items</positive>. That's it"]
 	quest.7A829E765BC1B36A.quest_desc: ["генерация эмбера но быстрее?"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["<property>Free furnaces</property>"]
@@ -4062,6 +4182,12 @@
 		"{@pagebreak}"
 		"Эти <keyword>колючие листья</keyword> можно получить только с помощью <keyword>ножниц</keyword>"
 	]
+	quest.7CA4C6614455169B.quest_desc: [
+		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
+		""
+		"заменяет большинство инструментов, одним заклинанием"
+	]
+	quest.7CA4C6614455169B.title: "A pickaxe? No. An axe? No. A shovel?"
 	quest.7D5DCEA36FF46987.quest_desc: [
 		"A <keyword>bed for daytime</keyword>."
 		"{@pagebreak}"
@@ -4094,7 +4220,6 @@
 	]
 	quest.7EC33CE042AD3676.title: "The Ritual of Lost Souls"
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
-	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
 	quest.7EFCA744EC5BCFDB.quest_desc: [
 		"Many players are used to there being <keyword>2 ways</keyword> to automate <keyword>redstone</keyword> and <keyword>AE2</keyword> in Minecraft, but this is not the case."
 		""
@@ -4239,6 +4364,7 @@
 	task.100D580CE861E070.title: "Tempad"
 	task.1096F78FFF063784.title: "Utility Arrays"
 	task.15D15E5200247C44.title: "Gather some gem dust"
+	task.15DFF1BAB9B3F84B.title: "Spellcrafting"
 	task.1685B4C2F761E3C1.title: "Any #risus:joyflame_fire_base_blocks"
 	task.16D6420BFC5D81FE.title: "Any #milf:pillar_base_blocks"
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
@@ -4340,7 +4466,6 @@
 	task.62C0B2D1C395761B.title: "Why is this chapter here?"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.6319A7E878B57B90.title: "Trade Cycling"
-	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
 	task.65741180CA3C4BD1.title: "Any #milf:gold_storage"
 	task.6721DBF2E8A9F7CE.title: "Any #starcatcher:hats"
 	task.690983E33893CB82.title: "Any #milf:polished_slabs"
@@ -4351,6 +4476,7 @@
 	task.6DA0FB55995165C0.title: "Armor Quick Swap"
 	task.6DB27C8811207858.title: "Any #magnumtorch:torches"
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
+	task.6E33E93B85AF0B3A.title: "Useful Spells"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
 	task.7001AAAE3F1E4149.title: "Looking for ores?"
 	task.701E2CCC21092BDF.title: "Weapon/shield/armor [WIP]"

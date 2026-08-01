@@ -11,26 +11,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4B801253049DAC2F"]
-			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/starlight.png"
-				}
-				id: "ftbquests:custom_icon"
-			}
-			id: "40CC4CB2281C6FE1"
-			shape: "gear"
-			size: 6.0d
-			tasks: [{
-				id: "574885181485687C"
-				item: { count: 1, id: "milf:vial_of_liquid_confidence" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["5B37B11A0B0A84E6"]
 			entity_vis_size: 1.0f
 			hide_dependent_lines: true

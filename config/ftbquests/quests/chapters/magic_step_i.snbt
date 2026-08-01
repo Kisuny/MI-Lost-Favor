@@ -2295,29 +2295,10 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 11.5d
+			y: 12.0d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "34AF308DB5E001D9"
-			rewards: [{
-				id: "6BEAD29D17A554CF"
-				item: {
-					count: 1
-					id: "ars_additions:codex_entry"
-				}
-				team_reward: false
-				type: "item"
-			}]
-			tasks: [{
-				id: "24FFD0AA042446A9"
-				item: { count: 1, id: "ars_nouveau:scribes_table" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 14.5d
-		}
-		{
+			dependencies: ["0D55B997939B664F"]
 			entity_vis_size: 1.0f
 			id: "58DE851CD9578153"
 			shape: "heart"
@@ -2326,8 +2307,8 @@
 				item: { count: 1, id: "ars_nouveau:annotated_codex" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 12.5d
+			x: 7.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4D5DFD75A11BE595"]
@@ -4924,7 +4905,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["3E15643F54DAA8C1"]
@@ -4936,7 +4917,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 18.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["4956D7308C3208A8"]
@@ -4959,7 +4940,7 @@
 				}
 			]
 			x: 4.0d
-			y: 17.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["7BEADB01F0B1B236"]
@@ -4980,7 +4961,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 19.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["42D6344AC9C1D6E5"]
@@ -4995,7 +4976,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 20.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["4D1140A41CD018A7"]
@@ -5062,6 +5043,7 @@
 			y: 34.5d
 		}
 		{
+			dependencies: ["5C91DD619D5F382D"]
 			entity_vis_size: 1.0f
 			id: "0D55B997939B664F"
 			tasks: [{
@@ -5069,8 +5051,464 @@
 				item: { count: 1, id: "ars_additions:codex_entry" }
 				type: "item"
 			}]
+			x: 6.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"002562156B0D8E9F"
+				"1751D13041775276"
+				"15B3AFECD77757E9"
+				"2FD815964A918D4E"
+				"421018A5285593B1"
+				"41BF9135970F1E51"
+				"7C9EC97D1C3F9CBA"
+				"6BA662C9EDAB419D"
+				"197B8CEECA61C12A"
+				"38C9E92573A25F80"
+			]
+			entity_vis_size: 1.0f
+			id: "2BAF1070D316E4A4"
+			min_required_dependencies: 1
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "minecraft:item/enchanted_book"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4F76CA5E86C00635"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "1C9336EE40464B1E"
+				item: { count: 1, id: "apothic_enchanting:apothic_enchanting_table" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["2BAF1070D316E4A4"]
+			entity_vis_size: 1.0f
+			id: "5E639A3B6E268A89"
+			shape: "circle"
+			tasks: [{
+				count: 15L
+				id: "400B755DFDFB7E34"
+				item: { count: 1, id: "minecraft:bookshelf" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "4FD896F49FCD93CD"
+			tasks: [{
+				id: "7DA53BB73402BCFD"
+				item: { count: 1, id: "apothic_enchanting:hellshelf" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["4FD896F49FCD93CD"]
+			entity_vis_size: 1.0f
+			id: "69DEB3E3786D81B3"
+			tasks: [{
+				id: "59096AC1056CEC94"
+				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 28.5d
+		}
+		{
+			dependencies: ["69DEB3E3786D81B3"]
+			entity_vis_size: 1.0f
+			id: "6DFAF7C73B8D00B9"
+			tasks: [{
+				id: "40930EC8C3CD6E3E"
+				item: { count: 1, id: "apothic_enchanting:sightshelf" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["69DEB3E3786D81B3"]
+			entity_vis_size: 1.0f
+			id: "6E4CBFF9631515D7"
+			tasks: [{
+				id: "58AB7B19D408F991"
+				item: { count: 1, id: "apothic_enchanting:glowing_hellshelf" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["69DEB3E3786D81B3"]
+			entity_vis_size: 1.0f
+			id: "71540B1B7889D6A8"
+			tasks: [{
+				id: "119BB8525D285B99"
+				item: { count: 1, id: "apothic_enchanting:blazing_hellshelf" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 29.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "0EB065FD617CB39A"
+			tasks: [{
+				id: "51DD67D808B429AE"
+				item: { count: 1, id: "apothic_enchanting:seashelf" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["0EB065FD617CB39A"]
+			entity_vis_size: 1.0f
+			id: "65E85CBAE5600143"
+			tasks: [{
+				id: "1C13551642C8921D"
+				item: { count: 1, id: "apothic_enchanting:infused_seashelf" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 33.5d
+		}
+		{
+			dependencies: ["65E85CBAE5600143"]
+			entity_vis_size: 1.0f
+			id: "2B284E366F5E6D1D"
+			tasks: [{
+				id: "27F66B767D54B9D6"
+				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["65E85CBAE5600143"]
+			entity_vis_size: 1.0f
+			id: "7AC09418ED7CB4DA"
+			tasks: [{
+				id: "15E8B1792BF9A701"
+				item: { count: 1, id: "apothic_enchanting:heart_seashelf" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 34.5d
+		}
+		{
+			dependencies: ["65E85CBAE5600143"]
+			entity_vis_size: 1.0f
+			id: "7479DE3BBB6ABA34"
+			tasks: [{
+				id: "4A1C53EEB8BDACF2"
+				item: { count: 1, id: "apothic_enchanting:crystal_seashelf" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 34.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "6E69C1E11989DC47"
+			tasks: [{
+				id: "79BACA2EE9E64B75"
+				item: { count: 1, id: "apothic_enchanting:dormant_deepshelf" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["6E69C1E11989DC47"]
+			entity_vis_size: 1.0f
+			id: "5856F34DE4934B24"
+			tasks: [{
+				id: "77162FD8292F9AA6"
+				item: { count: 1, id: "apothic_enchanting:deepshelf" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 32.0d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			entity_vis_size: 1.0f
+			id: "368ACB7BC2A1DE73"
+			tasks: [{
+				id: "61EAB15C270B7C14"
+				item: { count: 1, id: "apothic_enchanting:treasure_shelf" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			entity_vis_size: 1.0f
+			id: "2DEC7F525C4670EE"
+			tasks: [{
+				id: "6F1793AC9FEC1661"
+				item: { count: 1, id: "apothic_enchanting:soul_touched_deepshelf" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 33.0d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			entity_vis_size: 1.0f
+			id: "716BC68F5F2693D0"
+			tasks: [{
+				id: "1EE42D464C8B4B77"
+				item: { count: 1, id: "apothic_enchanting:echoing_deepshelf" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["716BC68F5F2693D0"]
+			entity_vis_size: 1.0f
+			id: "330159427597F920"
+			tasks: [{
+				id: "49F284DE794FC5B5"
+				item: { count: 1, id: "apothic_enchanting:echoing_sculkshelf" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["2DEC7F525C4670EE"]
+			entity_vis_size: 1.0f
+			id: "2C42BB85178E9422"
+			tasks: [{
+				id: "5FEB306C9807A8ED"
+				item: { count: 1, id: "apothic_enchanting:soul_touched_sculkshelf" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 33.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "0B1A4F013022E0E5"
+			tasks: [{
+				id: "0A780D2CE270E694"
+				item: { count: 1, id: "apothic_enchanting:geode_shelf" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "7F527222B6AD3D58"
+			tasks: [{
+				id: "1932E15FDDF226D5"
+				item: { count: 1, id: "apothic_enchanting:stoneshelf" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "5E23EE9227E4299B"
+			tasks: [{
+				id: "7A187318119AC88B"
+				item: { count: 1, id: "apothic_enchanting:melonshelf" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "51E631F371E999BA"
+			tasks: [{
+				id: "6D495AA334344316"
+				item: { count: 1, id: "apothic_enchanting:beeshelf" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			entity_vis_size: 1.0f
+			id: "4410D695EA7BFB2A"
+			tasks: [{
+				id: "3AEF56ADBF49342C"
+				item: { count: 1, id: "apothic_enchanting:endshelf" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 28.0d
+		}
+		{
+			dependencies: ["4410D695EA7BFB2A"]
+			entity_vis_size: 1.0f
+			id: "22692EA0AF834C5C"
+			tasks: [{
+				id: "1F329D94959D496B"
+				item: { count: 1, id: "apothic_enchanting:pearl_endshelf" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["4410D695EA7BFB2A"]
+			entity_vis_size: 1.0f
+			id: "4A82827BAB0FFDE5"
+			tasks: [{
+				id: "52AAC0151933EF1A"
+				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:glyph_break"
+			}
+			id: "7CA4C6614455169B"
+			shape: "diamond"
+			tasks: [{
+				id: "6E33E93B85AF0B3A"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:glyph_harm"
+			}
+			id: "5DB331B0DC5B29D7"
+			shape: "diamond"
+			tasks: [{
+				id: "4630DD08E75F7D40"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:glyph_bounce"
+			}
+			id: "2D89107A2B1F6A6C"
+			shape: "diamond"
+			tasks: [{
+				id: "638E3A3AA0413B7E"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:glyph_light"
+			}
+			id: "0AA51C0B8B225908"
+			shape: "diamond"
+			tasks: [{
+				id: "38C82C46CFC712D7"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:glyph_fell"
+			}
+			id: "0E87D93CF5EB7F46"
+			shape: "diamond"
+			tasks: [{
+				id: "33D235E37A2A3BBD"
+				type: "checkmark"
+			}]
 			x: 9.0d
-			y: 15.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_elemental:glyph_conjure_terrain"
+			}
+			id: "3D70D1CA920E0805"
+			shape: "diamond"
+			tasks: [{
+				id: "2767CB9587FEF195"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["71D17E12AF1CA374"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:glyph_summon_steed"
+			}
+			id: "4A7B4E770FBD1EDB"
+			shape: "diamond"
+			tasks: [{
+				id: "150CD4C004A066B9"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["5C91DD619D5F382D"]
+			entity_vis_size: 1.0f
+			id: "71D17E12AF1CA374"
+			shape: "heart"
+			tasks: [{
+				id: "15DFF1BAB9B3F84B"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 12.5d
 		}
 	]
 }

@@ -136,10 +136,14 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
                     compatOff: true
                 })
                 break;
-        
+
             default:
                 break;
         }
+    }
+
+    if (args.machine === "modern_industrialization:macerator") {
+        milfMacToCrush(event, recipe.item_inputs[0], recipe.item_outputs, id)
     }
     if (id) {
         event.custom(recipe).id(id)

@@ -43,7 +43,7 @@ function milfShapeless(event, args){
     let recipe = {
         type: "minecraft:crafting_shapeless",
         category: "misc",
-        ingredients: args.inputItems.map(i => Object.assign({}, i[0], i[1] > 1 ? {count: i[1]} : {})),
+        ingredients: args.inputItems.flatMap(i => Array.from({length: i[1] || 1}, () => Object.assign({}, i[0]))),
         result: Object.assign({}, args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
     if (!args.compatOff) {        

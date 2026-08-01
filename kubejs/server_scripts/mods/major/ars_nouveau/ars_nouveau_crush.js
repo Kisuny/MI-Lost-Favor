@@ -129,16 +129,6 @@ ServerEvents.recipes(event => {
         }
     })
     // console.log(`[milf/crush] done: ${milfMacToCrushCount} recipes added, ${milfMacToCrushSkipped} skipped`)
-
-    milfArsNouveauCrush(event, {
-        input: { item: "minecraft:glowstone" },
-        outputs: [
-            { stack: { id: "minecraft:glowstone_dust" }, count: 2, chance: 1.0, maxRange: 1 },
-            { stack: { id: "spectrum:shimmerstone_gem" }, count: 1, chance: 1.0, maxRange: 1 },
-            { stack: { id: "spectrum:shimmerstone_gem" }, count: 1, chance: 0.5, maxRange: 3 }
-        ],
-        removeRecipe: true
-    })
 })
 //#endregion
 

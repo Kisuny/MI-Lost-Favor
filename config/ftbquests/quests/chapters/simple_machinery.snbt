@@ -3071,8 +3071,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:gears)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: 13.5d
+			x: -12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["56E3EA39BC92CB8A"]
@@ -3175,6 +3175,26 @@
 			}]
 			x: -4.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["570E4E47D3CBC937"]
+			entity_vis_size: 1.0f
+			id: "53E12F97D710C54C"
+			shape: "heart"
+			tasks: [
+				{
+					id: "1326D54E885922DF"
+					item: { count: 1, id: "modern_industrialization:rubber_helmet" }
+					type: "item"
+				}
+				{
+					id: "33C6B80CFCECDAE9"
+					item: { count: 1, id: "modern_industrialization:rubber_boots" }
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 14.5d
 		}
 	]
 }

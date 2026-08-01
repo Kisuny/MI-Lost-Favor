@@ -13,6 +13,7 @@
 			id: "27CCA0095188167C"
 			linked_quest: "64269FD318C953B4"
 			shape: "diamond"
+			size: 2.0d
 			x: 0.0d
 			y: -3.0d
 		}
@@ -71,7 +72,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["18173B817094E01A"]
@@ -277,10 +278,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"18173B817094E01A"
-				"76AA3E7B1D92FA56"
-			]
+			dependencies: ["18173B817094E01A"]
 			entity_vis_size: 1.0f
 			id: "29612A0868F64BF0"
 			shape: "diamond"
@@ -289,8 +287,8 @@
 				item: { count: 1, id: "modern_industrialization:electric_water_pump" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["18173B817094E01A"]
@@ -333,6 +331,7 @@
 			dependencies: [
 				"6CA54239AFF1C9F6"
 				"64269FD318C953B4"
+				"474D0AC7AEA206FC"
 			]
 			entity_vis_size: 1.0f
 			id: "7D5A74D4B9B10E94"
@@ -348,7 +347,8 @@
 		{
 			dependencies: [
 				"7D5A74D4B9B10E94"
-				"785815350A561989"
+				"1463D31561833F60"
+				"76AA3E7B1D92FA56"
 			]
 			entity_vis_size: 1.0f
 			id: "1C00BD0399683CCA"
@@ -360,13 +360,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
-			dependencies: [
-				"18173B817094E01A"
-				"76AA3E7B1D92FA56"
-			]
+			dependencies: ["18173B817094E01A"]
 			entity_vis_size: 1.0f
 			id: "4B8A84A6FBB643E2"
 			shape: "diamond"
@@ -375,11 +372,10 @@
 				item: { count: 1, id: "extended_industrialization:electric_brewery" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.5d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["64269FD318C953B4"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "milf:rangefinder"
@@ -398,8 +394,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -4.0d
+			x: -7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C00BD0399683CCA"]
@@ -421,8 +417,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -5.0d
+			x: 5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -438,7 +434,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["18173B817094E01A"]
@@ -482,8 +478,8 @@
 				item: { count: 1, id: "travelanchors:travel_anchor" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.5d
+			x: 1.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1C00BD0399683CCA"]
@@ -495,11 +491,11 @@
 				item: { count: 1, id: "extended_industrialization:machine_config_card" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.5d
+			x: -1.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["1C00BD0399683CCA"]
+			dependencies: ["033E514EEBB314AD"]
 			entity_vis_size: 1.0f
 			icon: {
 				components: {
@@ -525,8 +521,8 @@
 				id: "268D4F85B02495FD"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -5.5d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -667,7 +663,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["64269FD318C953B4"]
+			dependencies: [
+				"64269FD318C953B4"
+				"1E495DDB761FB660"
+			]
 			entity_vis_size: 1.0f
 			id: "76AA3E7B1D92FA56"
 			shape: "diamond"
@@ -676,8 +675,8 @@
 				item: { count: 1, id: "modern_industrialization:large_pump" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["12B05FD9B885507F"]
@@ -761,27 +760,27 @@
 			dependencies: ["1E495DDB761FB660"]
 			entity_vis_size: 1.0f
 			id: "7035448EEB806E53"
-			shape: "heart"
+			shape: "diamond"
 			tasks: [{
 				id: "111F423084ECEAC3"
 				item: { count: 1, id: "modern_industrialization:mv_steam_turbine" }
 				type: "item"
 			}]
 			x: -3.5d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["474D0AC7AEA206FC"]
 			entity_vis_size: 1.0f
 			id: "7341563B1C2AA41F"
-			shape: "heart"
+			shape: "diamond"
 			tasks: [{
 				id: "33B67DD9FE966316"
 				item: { count: 1, id: "modern_industrialization:mv_diesel_generator" }
 				type: "item"
 			}]
 			x: 3.5d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2FA49064CA705A96"]
@@ -1262,7 +1261,7 @@
 				item: { count: 1, id: "extended_industrialization:electric_farmer" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: -6.5d
 		}
 		{
@@ -1370,8 +1369,8 @@
 				item: { count: 1, id: "modern_industrialization:distillery" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: -2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C00BD0399683CCA"]
@@ -1669,7 +1668,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1833,24 +1832,8 @@
 				item: { count: 1, id: "mi_tweaks:large_electric_furnace" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -6.5d
-		}
-		{
-			dependencies: [
-				"64B741C93CAA5B34"
-				"70A0A078B94FF034"
-			]
-			entity_vis_size: 1.0f
-			id: "0619910E0E53B32F"
-			shape: "heart"
-			tasks: [{
-				id: "1B3B5BD4E82FA836"
-				item: { count: 1, id: "milf:grecall_concoction_t2" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -9.5d
+			x: -3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1979,19 +1962,6 @@
 			y: -19.5d
 		}
 		{
-			dependencies: ["22B7317BB018972A"]
-			entity_vis_size: 1.0f
-			id: "429FBCC5AF00006B"
-			shape: "heart"
-			tasks: [{
-				id: "418161D20C0DAA06"
-				item: { count: 1, id: "modern_industrialization:carbon_dust" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: -8.0d
-		}
-		{
 			dependencies: ["721C26781ACF5AFC"]
 			entity_vis_size: 1.0f
 			id: "764C29950C2CC009"
@@ -2048,16 +2018,32 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["474D0AC7AEA206FC"]
 			entity_vis_size: 1.0f
 			id: "033E514EEBB314AD"
 			shape: "heart"
+			size: 3.0d
 			tasks: [{
 				id: "7A2F3FD440E9244A"
 				item: { count: 1, id: "oritech:augment_application_block" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -5.5d
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E495DDB761FB660"]
+			entity_vis_size: 1.0f
+			id: "7EE1C5951AF6B5E7"
+			shape: "heart"
+			size: 3.0d
+			tasks: [{
+				id: "6F9C6B5266FD742E"
+				item: { count: 1, id: "modern_industrialization:electric_quarry" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
 		}
 	]
 }

@@ -94,6 +94,30 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
+            [{ "item": "modern_industrialization:copper_wire" }, 2],
+            [{ "item": "modern_industrialization:copper_nugget" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 1],
+            [{ "tag": "c:glass_blocks" }, 1]
+        ],
+        outputItems: [[{ "item": "immersiveengineering:light_bulb" }, 1]],
+        category: MILF_BLUEPRINTS.craftingComponents,
+        removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:electrum_wire" }, 2],
+            [{ "item": "modern_industrialization:steel_curved_plate" }, 2],
+            [{ "item": "modern_industrialization:invar_rod" }, 1],
+            [{ "tag": "c:glass_blocks" }, 1]
+        ],
+        outputItems: [[{ "item": "immersiveengineering:electron_tube" }, 2]],
+        category: MILF_BLUEPRINTS.craftingComponents,
+        removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
             [{ "item": "immersiveengineering:slab_storage_steel" }, 1],
             [{ "item": "modern_industrialization:steel_curved_plate" }, 8],
             [{ "item": "modern_industrialization:steel_rod" }, 8]

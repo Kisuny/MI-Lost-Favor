@@ -71,6 +71,10 @@ function oritechCentrifugeRecipe(event, args) {
     }
 }
 
+function oritechGrinderRecipe(event, args) {
+    oritechItemRecipe("oritech:grinder", "extended_industrialization:alloy_smelter", event, args)
+}
+
 function oritechFoundryRecipe(event, args) {
     oritechItemRecipe("oritech:foundry", "extended_industrialization:alloy_smelter", event, args)
 }
@@ -168,6 +172,9 @@ ServerEvents.recipes(event => {
 
     event.remove({ type: "oritech:pulverizer" })
     event.remove({ type: "oritech:foundry" })
+    event.remove({ type: "oritech:refinery" })
+    event.remove({ type: "oritech:centrifuge" })
+    event.remove({ type: "oritech:grinder" })
 
     //#region milfShaped
 
@@ -211,22 +218,6 @@ ServerEvents.recipes(event => {
             removeRecipe: true,
         })
     })
-
-    // milfShaped(event, {
-    //     pattern: [
-    //         "PSP",
-    //         "SIS",
-    //         "PSP"
-    //     ],
-    //     key: {
-    //         S: { item: `oritech:machine_core_2` },
-    //         I: { item: "modern_industrialization:basic_upgrade" },
-    //         P: { item: "oritech:machine_plating_block" }
-
-    //     },
-    //     outputItems: [[{ id: "oritech:machine_extender" }, 1]],
-    //     removeRecipe: true,
-    // })
 
     milfShaped(event, {
         pattern: [
@@ -299,11 +290,11 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "RBR",
-            "RRR",
+            "RFR",
             "IPI"
         ],
         key: {
-            R: { item: "oritech:carbon_fibre_strands" },
+            F: { item: "oritech:carbon_fibre_strands" },
             I: { item: "modern_industrialization:tumbaga_curved_plate" },
             P: { item: "modern_industrialization:tumbaga_large_plate" },
             B: { item: "xkdeco:hollow_steel_beam" },
@@ -479,8 +470,8 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:motor" }, 4],
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 4],
             [{ "item": "modern_industrialization:tumbaga_gear" }, 2],
-            [{ "item": "modern_industrialization:carbon_steel_large_plate" }, 1],
-            [{ "item": "modern_industrialization:carbon_steel_rod" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 1],
+            [{ "item": "modern_industrialization:silicon_steel_rod" }, 4],
             [{ "item": "modern_industrialization:invar_rotary_blade" }, 4],
             [{ "item": "modern_industrialization:rubber_sheet" }, 16],
             [{ "item": "oritech:metal_beam_block" }, 2],
@@ -498,7 +489,7 @@ ServerEvents.recipes(event => {
             [{ "item": "immersiveengineering:component_electronic_adv" }, 2],
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 4],
             [{ "item": "modern_industrialization:tumbaga_gear" }, 4],
-            [{ "item": "modern_industrialization:carbon_steel_rod" }, 4],
+            [{ "item": "modern_industrialization:silicon_steel_rod" }, 4],
             [{ "item": "oritech:machine_core_4" }, 1]
         ],
         outputItems: [[{ "item": "oritech:assembler_block" }, 1]],
@@ -516,7 +507,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:aluminum_plate" }, 4],
             [{ "item": "oritech:machine_core_3" }, 1]
         ],
-        outputItems: [[{ "item": "oritech:drone_port_block" }, 1]],
+        outputItems: [[{ "item": "oritech:drone_port_block" }, 2]],
         removeRecipe: "minecraft:crafting_shaped",
         compatOff: true
     })
@@ -526,7 +517,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "modern_industrialization:pump" }, 2],
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 6],
-            [{ "item": "modern_industrialization:carbon_steel_large_plate" }, 2],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 2],
             [{ "item": "milf:tempered_glass" }, 4],
             [{ "item": "oritech:machine_core_4" }, 1]
         ],
@@ -543,12 +534,92 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:steel_large_plate" }, 2],
             [{ "item": "milf:tempered_glass" }, 4],
             [{ "item": "modern_industrialization:aluminum_wire" }, 2],
-            [{ "item": "oritech:machine_core_4" }, 1]
+            [{ "item": "oritech:machine_core_4" }, 1],
+            [{ "item": "immersiveengineering:component_electronic_adv" }, 1]
         ],
         outputItems: [[{ "item": "oritech:big_solar_panel_block" }, 1]],
         removeRecipe: "minecraft:crafting_shaped",
         compatOff: true
     })
+
+    miMachineRecipe(event, {
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:motor" }, 4],
+            [{ "item": "modern_industrialization:tumbaga_large_plate" }, 4],
+            [{ "item": "modern_industrialization:tumbaga_gear" }, 2],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 2],
+            [{ "item": "modern_industrialization:invar_rotary_blade" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 12],
+            [{ "item": "oritech:metal_beam_block" }, 2],
+        ],
+        outputItems: [[{ "item": "oritech:fragment_forge_block" }, 1]],
+        removeRecipe: "minecraft:crafting_shaped",
+        compatOff: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 4],
+            [{ "item": "modern_industrialization:tumbaga_large_plate" }, 4],
+            [{ "item": "modern_industrialization:steel_gear" }, 2],
+            [{ "item": "modern_industrialization:steel_rod" }, 6],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 12],
+            [{ "item": "oritech:metal_beam_block" }, 3],
+            [{ "item": "oritech:enderic_lens" }, 1],
+        ],
+        outputItems: [[{ "item": "oritech:laser_arm_block" }, 1]],
+        removeRecipe: "minecraft:crafting_shaped",
+        compatOff: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "milf:basic_motor" }, 8],
+            [{ "item": "oritech:flux_gate" }, 1],
+            [{ "item": "modern_industrialization:tumbaga_gear" }, 6],
+            [{ "item": "modern_industrialization:tumbaga_large_plate" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 16],
+            [{ "item": "immersiveengineering:drillhead_steel" }, 1],
+        ],
+        outputItems: [[{ "item": "oritech:deep_drill_block" }, 1]],
+        removeRecipe: "minecraft:crafting_shaped",
+        compatOff: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "oritech:carbon_fibre_strands" }, 3],
+            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
+            [{ "item": "modern_industrialization:steel_large_plate" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 16],
+            [{ "item": "immersiveengineering:wirecoil_electrum" }, 8],
+            [{ "item": "immersiveengineering:coil_mv" }, 2],
+        ],
+        outputItems: [[{ "item": "oritech:power_pole_block" }, 1]],
+        removeRecipe: "minecraft:crafting_shaped",
+        compatOff: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:piston" }, 4],
+            [{ "item": "modern_industrialization:electronic_circuit" }, 2],
+            [{ "item": "oritech:flux_gate" }, 2],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 16],
+            [{ "item": "modern_industrialization:tumbaga_large_plate" }, 8],
+            [{ "item": "modern_industrialization:adamant_large_plate" }, 16],
+        ],
+        outputItems: [[{ "item": "oritech:augment_application_block" }, 1]],
+        removeRecipe: "minecraft:crafting_shaped",
+        compatOff: true
+    })
+
+
 
     //#endregion
 
@@ -624,6 +695,18 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "enchanted:attuned_stone_charged" }, 1],
+            [{ item: "modern_industrialization:electronic_circuit" }, 1],
+            [{ item: "modern_industrialization:electronic_circuit" }, 1],
+            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 1]
+        ],
+        outputItems: [[{ item: "chunkloaders:basic_chunk_loader" }, 1]],
+        removeRecipe: true
+    })
+
     //#endregion
 
     //#region refinery
@@ -651,8 +734,8 @@ ServerEvents.recipes(event => {
         time: 242,
         inputItems: [[{ item: "milf:reservoir_rock" }]],
         outputFluids: [
-            [{ fluid: "minecraft:water" }, 200],
-            [{ fluid: "modern_industrialization:shale_oil" }, 200],
+            [{ fluid: "minecraft:water" }, 150],
+            [{ fluid: "modern_industrialization:shale_oil" }, 350],
             [{ fluid: "modern_industrialization:hydrogen" }, 100]
         ],
         outputItems: [[{ item: "milf:kerogen" }, 1]],
@@ -663,9 +746,9 @@ ServerEvents.recipes(event => {
         inputFluids: [[{ fluid: "milf:syngas" }, 500]],
         inputItems: [[{ item: "oritech:enderic_compound" }]],
         outputFluids: [
-            [{ fluid: "milf:purified_syngas" }, 250],
-            [{ fluid: "modern_industrialization:sulfuric_acid" }, 150],
-            [{ fluid: "modern_industrialization:chlorine" }, 100]
+            [{ fluid: "milf:purified_syngas" }, 350],
+            [{ fluid: "modern_industrialization:sulfuric_acid" }, 100],
+            [{ fluid: "modern_industrialization:chlorine" }, 50]
         ],
     })
 
@@ -774,7 +857,14 @@ KubeJSTweaks.beforeRecipes(event => {
         "oritech:compat/immersiveengineering/alloying/adamant",
         "oritech:compat/immersiveengineering/arcalloying/adamant",
         "occultism:crushing/adamant_dust_from_ingot",
-        "oritech:grinder/adamant"
+        "oritech:grinder/adamant",
+        "oritech:centrifuge/fluid/plasticoil",
+        "oritech:centrifuge/fluid/plasticoilbetter",
+        "oritech:centrifuge/fluid/plasticbiobetter",
+        "oritech:refinery/quartz",
+        "oritech:laser/fluxite",
+        "oritech:particle/fluxite",
+        "oritech:assembler/fluxgate"
     ]
 
     disableByRecipeID.forEach(id => {

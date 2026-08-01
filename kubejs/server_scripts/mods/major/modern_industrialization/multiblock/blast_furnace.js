@@ -48,14 +48,30 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 25, time: 93, machine: "modern_industrialization:blast_furnace",
         inputItems: [
-            [{ item: "modern_industrialization:steel_dust" }, 4],
-            [{ item: "modern_industrialization:carbon_dust" }, 1],
+            [{ item: "modern_industrialization:steel_dust" }, 9],
+            [{ item: "modern_industrialization:silicon_dust" }, 1],
         ],
         inputFluids: [
-            [{ fluid: "modern_industrialization:sulfuric_acid" }, 250],
+            [{ fluid: "modern_industrialization:sulfuric_acid" }, 100],
         ],
-        outputItems: [[{ item: "modern_industrialization:carbon_steel_ingot" }, 5]],
+        outputItems: [[{ item: "modern_industrialization:silicon_steel_ingot" }, 10]],
         removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 22, time: 1122, machine: "modern_industrialization:blast_furnace",
+        inputItems: [
+            [{ item: "grimoireofgaia:deco_garden_gnome" }, 1, 0],
+            [{ item: "milf:grecall_concoction_t1" }],
+            [{ item: "grimoireofgaia:experience_diamond" }, 2],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 500],
+            [{ fluid: "modern_industrialization:sugar_solution" }, 2000]
+        ],
+        outputItems: [
+            [{ item: "milf:grecall_concoction_t2" }, 1]
+        ]
     })
 
 

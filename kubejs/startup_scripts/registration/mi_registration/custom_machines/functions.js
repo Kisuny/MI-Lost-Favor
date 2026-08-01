@@ -1,40 +1,156 @@
 //priority: 2
 
+let $SimpleMember = Java.loadClass("aztech.modern_industrialization.machines.multiblocks.SimpleMember")
+let $BlockState = Java.loadClass("net.minecraft.world.level.block.state.BlockState")
+let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
+let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
+
 global.miTweaksTags = global.miTweaksTags || []
 
 const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input", "fluid_output"]
 const machineTiersAll = ["bronze", "steel", "electric"]
 
-function shapeMemberOf(event, block, actualBlock){
-    return block.tag ? event.memberOfBlockTag(actualBlock, block.tag) : event.memberOfBlock(actualBlock)
+let miRecipeRegistry = {}
+
+function shapeMemberOf(event, blockEntry){
+
+    if (blockEntry.id) {
+        if (blockEntry.tag) {
+            return $SimpleMember.forBlockTagId(blockEntry.id, blockEntry.tag)
+        }
+
+        if (blockEntry.stateProperties) {
+            let propertiesString = blockEntry.stateProperties
+            let propertiesTag = $TagParser.parseTag(propertiesString)
+
+            let stateCompoundTag = new $CompoundTag()
+
+            stateCompoundTag.putString("Name", blockEntry.id)
+            stateCompoundTag.put("Properties",propertiesTag)
+
+            let blockState = $NbtUtils.readBlockState(
+                $BuiltInRegistries.BLOCK.asLookup(),
+                stateCompoundTag
+            )
+
+            if (blockState.isAir()) return $SimpleMember.forBlockId(blockEntry.id)
+            
+
+            return $SimpleMember.forBlockState(blockState)
+        }
+
+        return $SimpleMember.forBlockId(blockEntry.id)
+    }
+
+    if (typeof blockEntry == "string") return $SimpleMember.forBlockId(blockEntry)
+
+    return $SimpleMember.forBlockId("minecraft:bedrock")
+
+}
+
+function registerMIRecipeType(id, { itemsIn, itemsOut, fluidsIn, fluidsOut }){
+    MIMachineEvents.registerRecipeTypes(event => {
+        let recipe = event.register(id)
+        itemsIn && (recipe = recipe.withItemInputs())
+        itemsOut && (recipe = recipe.withItemOutputs())
+        fluidsIn && (recipe = recipe.withFluidInputs())
+        fluidsOut && (recipe = recipe.withFluidOutputs())
+        miRecipeRegistry[id] = recipe
+    })
+
+}
+
+let addSlotsCallback = (slots, slotArray) => {
+    if (!slotArray) return slots
+    slotArray.forEach(slot => slots.addSlots.apply(slots, slot))
+    return slots
+}
+
+function createMultiSlotCallbacks({ itemInputSlots, itemOutputSlots, fluidInputSlots, fluidOutputSlots }){
+
+    return [
+        items => addSlotsCallback(items, itemInputSlots),
+        items => addSlotsCallback(items, itemOutputSlots),
+        fluids => addSlotsCallback(fluids, fluidInputSlots),
+        fluids => addSlotsCallback(fluids, fluidOutputSlots)
+    ]
+}
+
+function createSingleSlotCallbacks({ itemSlots, fluidSlots }) {
+    return {
+        itemsCallback: items => addSlotsCallback(items, itemSlots),
+        fluidsCallback: fluids => addSlotsCallback(fluids, fluidSlots)
+    }
+}
+
+function defaultProgressBar(event, pBar) {
+    return event.progressBar(pBar?.x || 60, pBar?.y || 60, pBar?.name || "arrow")
+}
+
+function buildMachineShape(event, args) {
+    let shape = event.layeredShape(args.casing, args.shape)
+    Object.entries(args.shapeKeys).forEach(([key, blockEntry]) => {
+        let member = shapeMemberOf(event, blockEntry)
+        let hatch = blockEntry.hatches ? event.hatchOf(blockEntry.hatches) : event.noHatch()
+        shape = shape.key(key, member, hatch)
+    })
+    return shape.build()
+}
+
+function getOverlaysOrDefaults(args) {
+    return {
+        mainCasing: args.mainCasing || 'treated_wood_casing',
+        mainOverlays: args.mainOverlays || 'enigma_overlays',
+        frontOverlay: args.frontOverlay || false,
+        topOverlay: args.topOverlay || false,
+        sideOverlay: args.sideOverlay || false
+    }
+}
+
+function registerMIMultiblock(eventType, eventKey, id, args, multiTypeCallback, extraArgs) {
+    registerMIRecipeType(id, args)
+
+    eventType[eventKey](event => {
+        let shape = buildMachineShape(event, args)
+        let [itemInputsCallback, itemOutputsCallback, fluidInputsCallback, fluidOutputsCallback] = createMultiSlotCallbacks(args)
+        let overlays = getOverlaysOrDefaults(args)
+
+        let multiTypeFunction = multiTypeCallback(event, args.steam)
+
+        let baseArgs = [
+            args.customName || idToName(id), id,
+            miRecipeRegistry[id],
+            shape,
+            defaultProgressBar(event, args.pBar),
+            itemInputsCallback,
+            itemOutputsCallback,
+            fluidInputsCallback,
+            fluidOutputsCallback,
+            overlays.mainCasing, overlays.mainOverlays, overlays.frontOverlay, overlays.topOverlay, overlays.sideOverlay
+        ]
+
+        let allArgs = extraArgs ? baseArgs.concat(extraArgs) : baseArgs.slice()
+
+        multiTypeFunction.apply(event, allArgs)
+    })
 }
 
 function registerSingleMIMachine(id, args){
-    let recipe
-    MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(id)
-        args.itemsIn && (recipe = recipe.withItemInputs())
-        args.itemsOut && (recipe = recipe.withItemOutputs())
-        args.fluidsIn && (recipe = recipe.withFluidInputs())
-        args.fluidsOut && (recipe = recipe.withFluidOutputs())
-    })
+    registerMIRecipeType(id, args)
+    let { itemsCallback, fluidsCallback } = createSingleSlotCallbacks(args)
+    let overlays = getOverlaysOrDefaults(args)
+
     MIMachineEvents.registerMachines(event => {
         event.craftingSingleBlock(
-            args.name || idToName(id), id, recipe, args.tiers || ["electric"], args.guiheight || -1, 
-            event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            args.name || idToName(id), id, 
+            miRecipeRegistry[id], 
+            args.tiers || ["electric"], args.guiheight || -1, 
+            defaultProgressBar(event, args.pBar),
             event.efficiencyBar(args.efBar?.x || 48, args.efBar?.y || 86), event.energyBar(args.enBar?.x || 14, args.enBar?.y || 44),
             args.slots?.iIn || 0, args.slots?.iOut || 0, args.slots?.fIn || 0, args.slots?.fOut || 0, args.slots?.capacity || 16,
-            items => {
-                if(!args.itemSlots) {return items}
-                args.itemSlots.forEach(slot => items.addSlots.apply(items, slot))
-                return items
-            },
-            fluids => {
-                if(!args.fluidSlots) {return fluids}
-                args.fluidSlots.forEach(slot => fluids.addSlots.apply(fluids, slot))
-                return fluids
-            },
-            args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+            itemsCallback,
+            fluidsCallback,
+            overlays.frontOverlay, overlays.topOverlay, overlays.sideOverlay
         ) 
     })
     args.tiers.forEach(tier =>{
@@ -45,38 +161,25 @@ function registerSingleMIMachine(id, args){
 }
 
 function registerSinglePowerlessMIMachine(id, args){
-    let recipe
-    MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(id)
-        args.itemsIn && (recipe = recipe.withItemInputs())
-        args.itemsOut && (recipe = recipe.withItemOutputs())
-        args.fluidsIn && (recipe = recipe.withFluidInputs())
-        args.fluidsOut && (recipe = recipe.withFluidOutputs())
-    })
+    registerMIRecipeType(id, args)
+    let { itemsCallback, fluidsCallback } = createSingleSlotCallbacks(args)
+    let overlays = getOverlaysOrDefaults(args)
     MITweaksMachineEvents.registerPowerlessMachines(event => {
         event.singleblock(
-            args.name || idToName(id), id, recipe, args.guiheight || -1, 
-            event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            args.name || idToName(id), id, 
+            miRecipeRegistry[id], 
+            args.guiheight || -1, 
+            defaultProgressBar(event, args.pBar),
             args.slots?.iIn || 0, args.slots?.iOut || 0, args.slots?.fIn || 0, args.slots?.fOut || 0, args.slots?.capacity || 16,
-            items => {
-                if(!args.itemSlots) {return items}
-                args.itemSlots.forEach(slot => items.addSlots.apply(items, slot))
-                return items
-            },
-            fluids => {
-                if(!args.fluidSlots) {return fluids}
-                args.fluidSlots.forEach(slot => fluids.addSlots.apply(fluids, slot))
-                return fluids
-            },
+            itemsCallback,
+            fluidsCallback,
             args.mainCasing || "steel", args.mainOverlays || 'enigma_overlays', 
-            args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
+            overlays.frontOverlay, overlays.topOverlay, overlays.sideOverlay,
             args.baseEU || 1, args.redstone || true
         ) 
     })
     jsonDataForMITweaksMachine(id, args)
 }
-
-// let $SimpleMember = Java.loadClass("aztech.modern_industrialization.machines.multiblocks.SimpleMember")
 
 // registerTestMIMachine('test', {
 //     itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true, casing: 'heatproof_machine_casing',
@@ -146,266 +249,113 @@ function registerSinglePowerlessMIMachine(id, args){
 // }
 
 function registerMIMachine(id, args){
-    let recipe
-    MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(id)
-        args.itemsIn && (recipe = recipe.withItemInputs())
-        args.itemsOut && (recipe = recipe.withItemOutputs())
-        args.fluidsIn && (recipe = recipe.withFluidInputs())
-        args.fluidsOut && (recipe = recipe.withFluidOutputs())
-    })
-    MIMachineEvents.registerMachines(event => {
-        let shape = event.layeredShape(args.casing , args.shape)
-        Object.entries(args.shapeKeys).forEach(([key, block]) => {
-            let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
-        })
-        shape = shape.build()
-        const multiTypeFunction = args.steam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
-        multiTypeFunction.apply(event, [
-            args.customName || idToName(id), id, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
-            itemInputs => {
-                if(!args.itemInputSlots) {return itemInputs}
-                args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
-                return itemInputs
-            },
-            itemOutputs => {
-                if(!args.itemOutputSlots) {return itemOutputs}
-                args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
-                return itemOutputs
-            },
-            fluidInputs => {
-                if(!args.fluidInputSlots) {return fluidInputs}
-                args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
-                return fluidInputs
-            },
-            fluidOutputs => {
-                if(!args.fluidOutputSlots) {return fluidOutputs}
-                args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
-                return fluidOutputs
-            },
-            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
-        ]) 
-    })
+    registerMIMultiblock(MIMachineEvents, "registerMachines", id, args,
+        (event, isSteam) => isSteam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
+    )
     milfData.addCredit(`${id}`, "mi_machine", "modern_industrialization")
 }
 
-function registerPowerlessMIMachine(name, args){
-    let recipe
-    MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(name)
-        args.itemsIn && (recipe = recipe.withItemInputs())
-        args.itemsOut && (recipe = recipe.withItemOutputs())
-        args.fluidsIn && (recipe = recipe.withFluidInputs())
-        args.fluidsOut && (recipe = recipe.withFluidOutputs())
-    })
-    MITweaksMachineEvents.registerPowerlessMachines(event => {
-        let shape = event.layeredShape(args.casing , args.shape)
-        Object.entries(args.shapeKeys).forEach(([key, block]) => {
-            let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
-        })
-        shape = shape.build()
-        const multiTypeFunction = event.multiblock
-        multiTypeFunction.apply(event, [
-            args.customName || idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
-            itemInputs => {
-                if(!args.itemInputSlots) {return itemInputs}
-                args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
-                return itemInputs
-            },
-            itemOutputs => {
-                if(!args.itemOutputSlots) {return itemOutputs}
-                args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
-                return itemOutputs
-            },
-            fluidInputs => {
-                if(!args.fluidInputSlots) {return fluidInputs}
-                args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
-                return fluidInputs
-            },
-            fluidOutputs => {
-                if(!args.fluidOutputSlots) {return fluidOutputs}
-                args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
-                return fluidOutputs
-            },
-            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
-            args.baseRecipeEU || 1, args.redstoneControlModule || true
-        ]) 
-    })
-    jsonDataForMITweaksMachine(name, args)
+function registerPowerlessMIMachine(id, args){
+    let extraArgs = [args.baseRecipeEU || 1, args.redstoneControlModule || true]
+    registerMIMultiblock(MITweaksMachineEvents, "registerPowerlessMachines", id, args,
+        (event) => event.multiblock,
+        extraArgs
+    )
+    jsonDataForMITweaksMachine(id, args)
 }
 
-function registerBatchMIMachine(name, args){
-    let recipe
-    MIMachineEvents.registerRecipeTypes(event => {
-        recipe = event.register(name)
-        args.itemsIn && (recipe = recipe.withItemInputs())
-        args.itemsOut && (recipe = recipe.withItemOutputs())
-        args.fluidsIn && (recipe = recipe.withFluidInputs())
-        args.fluidsOut && (recipe = recipe.withFluidOutputs())
-    })
-    MITweaksMachineEvents.registerBatchMultiblocks(event => {
-        let shape = event.layeredShape(args.casing , args.shape)
-        Object.entries(args.shapeKeys).forEach(([key, block]) => {
-            let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
-        })
-        shape = shape.build()
-        const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
-        multiTypeFunction.apply(event, [
-            idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
-            itemInputs => {
-                if(!args.itemInputSlots) {return itemInputs}
-                args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
-                return itemInputs
-            },
-            itemOutputs => {
-                if(!args.itemOutputSlots) {return itemOutputs}
-                args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
-                return itemOutputs
-            },
-            fluidInputs => {
-                if(!args.fluidInputSlots) {return fluidInputs}
-                args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
-                return fluidInputs
-            },
-            fluidOutputs => {
-                if(!args.fluidOutputSlots) {return fluidOutputs}
-                args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
-                return fluidOutputs
-            },
-            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
-            args.batchsize || 8, args.costMulti || 1
-        ]) 
-    })
-    jsonDataForMITweaksMachine(name, args)
+function registerBatchMIMachine(id, args){
+    let extraArgs = [args.batchsize || 8, args.costMulti || 1]
+    registerMIMultiblock(MITweaksMachineEvents, "registerBatchMultiblocks", id, args,
+        (event, isSteam) => isSteam ? event.steamStandalone : event.electricStandalone,
+        extraArgs
+    )
+    jsonDataForMITweaksMachine(id, args)
 }
 
-function registerTieredMIMachine(name, args){
-    let basicRecipeType
-    MIMachineEvents.registerRecipeTypes(event => {
-        basicRecipeType = event.register(name)
-        args.itemsIn && (basicRecipeType = basicRecipeType.withItemInputs())
-        args.itemsOut && (basicRecipeType = basicRecipeType.withItemOutputs())
-        args.fluidsIn && (basicRecipeType = basicRecipeType.withFluidInputs())
-        args.fluidsOut && (basicRecipeType = basicRecipeType.withFluidOutputs())
-    })
+function registerTieredMIMachine(id, args){
+    registerMIRecipeType(id, args)
 
     args.tiers.forEach(tier => {        
-
         let tierRecipe = tier.recipe
-        if (!tierRecipe) {
-            tier.recipeType = basicRecipeType
-            return
-        }
-
-        MIMachineEvents.registerRecipeTypes(event => {
-            let tierRecipeType = event.register(tier.id)
-            tierRecipe.itemsIn && (tierRecipeType = tierRecipeType.withItemInputs())
-            tierRecipe.itemsOut && (tierRecipeType = tierRecipeType.withItemOutputs())
-            tierRecipe.fluidsIn && (tierRecipeType = tierRecipeType.withFluidInputs())
-            tierRecipe.fluidsOut && (tierRecipeType = tierRecipeType.withFluidOutputs())
-            tier.recipeType = tierRecipeType
-        })
+        if (!tierRecipe) { return }
+        registerMIRecipeType(tier.id, tierRecipe)
     })
 
     MITweaksMachineEvents.registerTieredMultiblocks(event => {
         let tiersArray = []
-        args.tiers.forEach(tier => {
-            let shape = event.layeredShape(tier.casing , tier.shape)
-            Object.entries(tier.shapeKeys).forEach(([key, block]) => {
-                let actualBlock = (typeof block === "string") ? block : block.id
-                shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
-            })
-            shape = shape.build()
-            if (args.fromExisting) basicRecipeType = event.getRecipeType(args.fromExisting)
+        args.tiers.forEach(tierArgs => {
+            let recipeType = miRecipeRegistry[tierArgs.id] || miRecipeRegistry[id]
+            let shape = buildMachineShape(event, tierArgs)
+            if (args.fromExisting) recipeType = event.getRecipeType(args.fromExisting)
             tiersArray.push(event.createTier(
-                tier.id,
-                tier.recipeType || basicRecipeType,
+                tierArgs.id,
+                recipeType,
                 shape,
-                (workstations) => workstations.add(tier.workstationID),
-                tier.maxBaseEU || 128,
-                tier.batchsize || 1,
-                tier.costMulti || 1
+                (workstations) => workstations.add(tierArgs.workstationID),
+                tierArgs.maxBaseEU || 128,
+                tierArgs.batchsize || 1,
+                tierArgs.costMulti || 1
             ))
         })
-        
+
+        let overlays = getOverlaysOrDefaults(args)
 
         if(args.fromExisting){
             let multiTypeFunction = args.steam ? event.steam : event.electric
+
             multiTypeFunction.apply(event, [
-                idToName(name), name,
+                idToName(id), id,
                 (tiers) => {
                     tiersArray.forEach(tier => {
                         tiers.add(tier)
                     })
                 },
-                args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+                overlays.mainCasing, overlays.mainOverlays, overlays.frontOverlay, overlays.topOverlay, overlays.sideOverlay
             ])
 
             
         } else {
             let multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
+            let [itemInputsCallback, itemOutputsCallback, fluidInputsCallback, fluidOutputsCallback] = createMultiSlotCallbacks(args)
 
             multiTypeFunction.apply(event, [
-                idToName(name), name,
+                idToName(id), id,
                 (tiers) => {
                     tiersArray.forEach(tier => {
                         tiers.add(tier)
                     })
                 },
-                event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
-                itemInputs => {
-                    if (!args.itemInputSlots) { return itemInputs }
-                    args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
-                    return itemInputs
-                },
-                itemOutputs => {
-                    if (!args.itemOutputSlots) { return itemOutputs }
-                    args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
-                    return itemOutputs
-                },
-                fluidInputs => {
-                    if (!args.fluidInputSlots) { return fluidInputs }
-                    args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
-                    return fluidInputs
-                },
-                fluidOutputs => {
-                    if (!args.fluidOutputSlots) { return fluidOutputs }
-                    args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
-                    return fluidOutputs
-                },
-                args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+                defaultProgressBar(event, args.pBar),
+                itemInputsCallback,
+                itemOutputsCallback,
+                fluidInputsCallback,
+                fluidOutputsCallback,
+                overlays.mainCasing, overlays.mainOverlays, overlays.frontOverlay, overlays.topOverlay, overlays.sideOverlay
             ])
 
         }
 
     })
-    jsonDataForMITweaksTieredMachine(name, args)
+    jsonDataForMITweaksTieredMachine(id, args)
 }
 
-function registerBatchMIMachineFromExisting(name, args){
+function registerBatchMIMachineFromExisting(id, args){
     MITweaksMachineEvents.registerBatchMultiblocks(event => {
-        let shape = event.layeredShape(args.casing , args.shape)
-        Object.entries(args.shapeKeys).forEach(([key, block]) => {
-            let actualBlock = (typeof block === "string") ? block : block.id
-            shape = shape.key(key, shapeMemberOf(event, block, actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
-        })
-        shape = shape.build()
+        let shape = buildMachineShape(event, args)
         const multiTypeFunction = args.steam ? event.steam : event.electric
+        let overlays = getOverlaysOrDefaults(args)
         multiTypeFunction.apply(event, [
-            idToName(name), name, event.getRecipeType(args.recipeType), shape,
+            idToName(id), id, event.getRecipeType(args.recipeType), shape,
             (emiWorkstations) => emiWorkstations.add.apply(emiWorkstations, args.emiWorkstations),
-            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
+            overlays.mainCasing, overlays.mainOverlays, overlays.frontOverlay, overlays.topOverlay, overlays.sideOverlay,
             args.batchsize, args.costMulti
         ]) 
     })
-    jsonDataForMITweaksMachine(name, args)
+    jsonDataForMITweaksMachine(id, args)
 }
 
 function saveJsonToPath(path, json){
-    //JsonIO.write(path, JSON.stringify(json, null, 2))
     JsonIO.write(path, json)
 }
 
@@ -441,10 +391,6 @@ function jsonDataForMITweaksMachine(machineId, args){
         "casing": `modern_industrialization:${mainCasing}`,
         "default_overlays": {
             "fluid_auto": "modern_industrialization:block/overlays/fluid_auto",
-            // "front": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
-            // "front_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
-            // "side": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
-            // "side_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
             "item_auto": "modern_industrialization:block/overlays/item_auto",
             "output": "modern_industrialization:block/overlays/output"
         },

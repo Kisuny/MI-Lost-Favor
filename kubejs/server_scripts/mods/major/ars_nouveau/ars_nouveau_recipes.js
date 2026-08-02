@@ -281,4 +281,17 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:place_pedestal"
     })
 
+    miMachineRecipe(event, {energy:10, time:400, machine:"modern_industrialization:source_alembic",
+        inputItems:[
+            [{item:"ars_nouveau:novice_spell_book"}],
+            [{item:"eidolon_repraised:shadow_gem"}],
+            [{item:"toxony:toxic_leather"}, 8],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:shimmersteel_essence" }, 1000]
+        ],
+        outputItems: [[{item: "ars_nouveau:apprentice_spell_book"}, 1]],
+        removeRecipe: true
+    })
+
 })

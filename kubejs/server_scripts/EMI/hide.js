@@ -331,6 +331,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         'ars_controle:scroll_holder',
         'ars_nouveau:stable_warp_scroll',
         'ars_additions:source_spawner',
+        'not_enough_glyphs:glyph_momentum',
         'ars_nouveau:warp_scroll',
         'aquaculture:worm_farm',
         'enigmaticlegacyplus:twisted_potion',

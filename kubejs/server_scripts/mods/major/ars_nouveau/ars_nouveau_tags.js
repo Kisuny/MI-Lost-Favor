@@ -113,7 +113,22 @@ ServerEvents.tags('item', event => {
         'ars_elemental:glyph_not_summon_filter', 
         'ars_elemental:glyph_not_undead_filter', 
         'ars_elemental:glyph_summon_filter', 
-        'ars_elemental:glyph_undead_filter'
+        'ars_elemental:glyph_undead_filter',
+        'toomanyglyphs:glyph_ray', 
+        'not_enough_glyphs:glyph_plow', 
+        'toomanyglyphs:glyph_reverse_direction', 
+        'not_enough_glyphs:glyph_ride', 
+        'toomanyglyphs:glyph_filter_animal', 
+        'toomanyglyphs:glyph_filter_block', 
+        'not_enough_glyphs:glyph_filter_dark', 
+        'toomanyglyphs:glyph_filter_entity', 
+        'toomanyglyphs:glyph_filter_item', 
+        'not_enough_glyphs:glyph_filter_light', 
+        'toomanyglyphs:glyph_filter_living', 
+        'toomanyglyphs:glyph_filter_monster', 
+        'toomanyglyphs:glyph_filter_living_not_monster', 
+        'toomanyglyphs:glyph_filter_living_not_player', 
+        'toomanyglyphs:glyph_filter_player',
     ])
     event.add("ars_nouveau:tier_2_glyphs", [
         'ars_elemental:glyph_arc_projectile', 
@@ -163,6 +178,18 @@ ServerEvents.tags('item', event => {
         'ars_elemental:glyph_slip_feet', 
         'ars_elemental:glyph_summon_bee', 
         'ars_elemental:glyph_summon_slime',
+        'toomanyglyphs:glyph_chaining', 
+        'not_enough_glyphs:glyph_feed', 
+        'not_enough_glyphs:glyph_propagate_plane', 
+        'not_enough_glyphs:glyph_contingency_blink', 
+        'not_enough_glyphs:glyph_contingency_death', 
+        'not_enough_glyphs:glyph_contingency_time', 
+        'not_enough_glyphs:glyph_contingency_fall', 
+        'not_enough_glyphs:glyph_contingency_fire', 
+        'not_enough_glyphs:glyph_contingency_heal', 
+        'not_enough_glyphs:glyph_contingency_health', 
+        'toomanyglyphs:glyph_filter_is_baby', 
+        'toomanyglyphs:glyph_filter_is_mature'
     ])
     event.add("ars_nouveau:tier_3_glyphs", [
         'ars_elemental:glyph_homing_projectile', 
@@ -194,6 +221,7 @@ ServerEvents.tags('item', event => {
         'ars_elemental:glyph_oxidize',
         'ars_elemental:glyph_rage',
         'ars_elemental:glyph_water_jet',
+        'not_enough_glyphs:glyph_trail',
     ])
 
     event.add('ars_nouveau:horn_food', [

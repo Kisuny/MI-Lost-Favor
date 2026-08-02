@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 4.0d
+			id: "523814CC54BB2952"
 			image: "milf:textures/quest_pic/saeta_pointing.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 12.0d
+			id: "27211C36BF9FE483"
 			image: "milf:textures/quest_pic/welcome_chapter.png"
 			rotation: 0.0d
 			width: 25.0d
@@ -454,18 +456,6 @@
 			dependencies: ["2B7F14733C000C22"]
 			entity_vis_size: 1.0f
 			id: "706FE8A4CD20FDEF"
-			rewards: [{
-				id: "646F9FADB48BCCD2"
-				item: {
-					components: {
-						"ftbquests:missing_item": "born_in_chaos_v1:chocolate_heart"
-					}
-					count: 1
-					id: "ftbquests:missing_item"
-				}
-				team_reward: false
-				type: "item"
-			}]
 			shape: "heart"
 			tasks: [{
 				id: "5180AC955AE4C748"

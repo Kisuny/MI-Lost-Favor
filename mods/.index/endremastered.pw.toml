@@ -1,16 +1,17 @@
-filename = 'endrem-neoforge-1.21.X-6.0.2.jar'
-name = 'End Remastered [NeoForge/Fabric]'
-side = 'both'
+filename = 'endrem-neoforge-1.21.1-6.3.0.jar'
+name = 'End Remastered'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'End Remastered R6.3.0 [Neoforge]'
 
 [download]
-hash = 'bfba2c654f3df8cc7d6006056eefbf2b9070dcd4'
+hash = 'd3fca102a9f5aeb108d5118665b86ead1dd30988'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5625392
+file-id = 8503446
 project-id = 404183

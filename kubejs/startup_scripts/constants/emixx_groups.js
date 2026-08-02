@@ -1,5 +1,5 @@
 /**
- * EMI++ groups
+ * rEMI  groups
  *
  * Tag group - creates an EMI group from a tag, optionally merging sources into it:
  * { type: "tag", name: string, tag: string, sources?: string[] }

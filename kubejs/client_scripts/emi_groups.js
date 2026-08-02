@@ -1,7 +1,7 @@
-// https://github.com/evanbones/emi-plus-plus/issues/38
+// https://github.com/evanbones/Reliable-EMI
 ClientEvents.generateAssets("after_mods", (event) => {
     /**
-     * Add a new group to EMI++
+     * Add a new group to rEMI
      * @param {Special.Mod | 'pack' | 'c'} mod
      * @param {string} name The name of the group
      * @param {'group' | 'tag' | 'regex'} type
@@ -9,14 +9,14 @@ ClientEvents.generateAssets("after_mods", (event) => {
      */
     function add(mod, name, type, data) {
         const file = `${mod}:stack_groups/${name}`
-        const obj = { type: `emixx:${type}` }
+        const obj = { type: `remi:${type}` }
 
         if (type === "group") {
             obj.contents = data
         } else if (type === "tag") {
             obj.tag = data
         } else if (type === "regex") {
-            obj.type = "emixx:group"
+            obj.type = "remi:group"
             obj.contents = Ingredient.of(new RegExp(data)).itemIds.toArray()
         }
 

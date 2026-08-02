@@ -4,739 +4,17 @@
 	filename: "midgame_magic_iii"
 	group: "786FFA1BEC14E223"
 	icon: {
-		id: "forbidden_arcanus:hephaestus_forge_tier_1"
+		components: {
+			"ftbquests:missing_item": "forbidden_arcanus:hephaestus_forge_tier_1"
+		}
+		id: "ftbquests:missing_item"
 	}
 	id: "7F17ADA3E2DBCAE3"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			hide_dependent_lines: true
-			id: "00AF6AEAB0CB01FB"
-			tasks: [{
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				icon: {
-					id: "forbidden_arcanus:runic_deepslate"
-				}
-				id: "4DA24F78A588884B"
-				observation_type: "block_tag"
-				observe_type: 1
-				timer: 0L
-				to_observe: "#forbidden_arcanus:runic_stones"
-				type: "observation"
-			}]
-			x: 1.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			hide_dependent_lines: true
-			id: "36BDC0E634C762E5"
-			tasks: [{
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				icon: {
-					id: "forbidden_arcanus:stella_arcanum"
-				}
-				id: "616508DF1029F048"
-				observation_type: "block"
-				observe_type: 0
-				timer: 0L
-				to_observe: "forbidden_arcanus:stella_arcanum"
-				type: "observation"
-			}]
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			id: "4057F0E61DC737E0"
-			shape: "gear"
-			tasks: [{
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				icon: {
-					id: "forbidden_arcanus:deepslate_arcane_crystal_ore"
-				}
-				id: "0E635515A6D25F14"
-				observation_type: "block_tag"
-				observe_type: 1
-				timer: 0L
-				to_observe: "#forbidden_arcanus:arcane_crystal_ores"
-				type: "observation"
-			}]
-			x: -1.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["4057F0E61DC737E0"]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "6D62B6D792D203BA"
-			shape: "gear"
-			tasks: [{
-				id: "044B3D1EC2ADE7DC"
-				item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["6D62B6D792D203BA"]
-			entity_vis_size: 1.0f
-			id: "1D9DE7EAC8B966F9"
-			tasks: [{
-				id: "32BECEF5732B99D8"
-				item: { count: 1, id: "forbidden_arcanus:deorum_ingot" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 12.5d
-		}
-		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "73A5D237B167B47E"
-			tasks: [{
-				id: "4BBE7498A48891A8"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forbidden_arcanus:blacksmith_gavel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["6D62B6D792D203BA"]
-			entity_vis_size: 1.0f
-			id: "3EA4DF00F5156F2E"
-			shape: "gear"
-			tasks: [
-				{
-					count: 48L
-					id: "622B7393D241F22D"
-					item: { count: 1, id: "forbidden_arcanus:polished_darkstone" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "0D4DA3A363879943"
-					item: { count: 1, id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "505DD296745B8208"
-					item: { count: 1, id: "forbidden_arcanus:chiseled_arcane_polished_darkstone" }
-					type: "item"
-				}
-				{
-					id: "37850DC5BEC722D0"
-					item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
-					type: "item"
-				}
-				{
-					id: "18805AA4454C570F"
-					item: { count: 1, id: "minecraft:smithing_table" }
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: 13.5d
-		}
-		{
-			dependencies: [
-				"3EA4DF00F5156F2E"
-				"73A5D237B167B47E"
-			]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:hephaestus_forge_tier_1"
-			}
-			id: "026821F02D50FE0D"
-			shape: "gear"
-			size: 2.0d
-			tasks: [
-				{
-					entity_vis_idle_mode: "USE_GLOBAL"
-					entity_vis_offset_x: 0.0f
-					entity_vis_offset_y: 0.0f
-					entity_vis_rotation: 0.0f
-					entity_vis_silhouette_mode: "NONE"
-					entity_vis_size: 1.0f
-					entity_vis_spin_mode: "USE_GLOBAL"
-					entity_vis_use_as_quest_icon: false
-					entity_vis_walk_mode: "USE_GLOBAL"
-					icon: {
-						id: "forbidden_arcanus:hephaestus_forge_tier_1"
-					}
-					id: "7FDAB40939A257E3"
-					observation_type: "block"
-					observe_type: 0
-					timer: 0L
-					to_observe: "forbidden_arcanus:hephaestus_forge_tier_1"
-					type: "observation"
-				}
-				{
-					id: "1C397E927CFD87D5"
-					item: { count: 1, id: "forbidden_arcanus:aureal_bottle" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2755254953E284CF"
-					item: { count: 1, id: "forbidden_arcanus:soul_extractor" }
-					type: "item"
-				}
-				{
-					id: "3C228491CD41AA60"
-					item: { count: 1, id: "forbidden_arcanus:xpetrified_orb" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1A9BAB3B8190CF70"
-					item: { count: 1, id: "forbidden_arcanus:test_tube" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3A6576CB62E4937D"
-					item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_1" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 1.0d
-			y: 16.5d
-		}
-		{
-			dependencies: [
-				"026821F02D50FE0D"
-				"4B62E3D7B166D33F"
-			]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:smelter_prism"
-			}
-			id: "5AEBD2E96FA53366"
-			tasks: [
-				{
-					id: "586E4BC93CE0B3C3"
-					item: { count: 1, id: "forbidden_arcanus:smelter_prism" }
-					type: "item"
-				}
-				{
-					id: "37CC71F536749AA7"
-					item: { count: 1, id: "minecraft:smithing_table" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "537391B59B785C85"
-					item: { count: 1, id: "forbidden_arcanus:apply_modifier_smithing_template" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 3.0d
-			y: 15.5d
-		}
-		{
-			dependencies: [
-				"026821F02D50FE0D"
-				"7E277FEC22A1924D"
-				"00AF6AEAB0CB01FB"
-				"787735496233A905"
-				"70A0A078B94FF034"
-			]
-			entity_vis_size: 1.0f
-			hide_until_deps_complete: false
-			id: "0C1A0D4E0DF5CE9C"
-			shape: "heart"
-			tasks: [{
-				id: "34738715144E753F"
-				item: { count: 1, id: "forbidden_arcanus:quantum_catcher" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["026821F02D50FE0D"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:ferrognetic_mixture"
-			}
-			id: "1BFC38890CBCF4F4"
-			tasks: [
-				{
-					id: "1388A5F55CF0B9CA"
-					item: { count: 1, id: "forbidden_arcanus:ferrognetic_mixture" }
-					type: "item"
-				}
-				{
-					id: "553271F3014E6E97"
-					item: { count: 1, id: "minecraft:smithing_table" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "73673D092AE29886"
-					item: { count: 1, id: "forbidden_arcanus:apply_modifier_smithing_template" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 3.0d
-			y: 17.5d
-		}
-		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "7E277FEC22A1924D"
-			tasks: [{
-				id: "4E28531589AB7D51"
-				item: { count: 1, id: "forbidden_arcanus:spawner_scrap" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 16.0d
-		}
-		{
-			dependencies: ["026821F02D50FE0D"]
-			entity_vis_size: 1.0f
-			id: "6E69C3F456FD1C3D"
-			tasks: [{
-				id: "7247BF891491CAD0"
-				item: { count: 1, id: "forbidden_arcanus:darkstone_pedestal" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: 17.5d
-		}
-		{
-			dependencies: ["026821F02D50FE0D"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:arcane_crystal_obelisk"
-			}
-			id: "6D1F116F28F30039"
-			tasks: [
-				{
-					count: 2L
-					id: "682469E33499DDD7"
-					item: { count: 1, id: "forbidden_arcanus:arcane_crystal_block" }
-					type: "item"
-				}
-				{
-					id: "240FD1D6316D8A7C"
-					item: { count: 1, id: "forbidden_arcanus:arcane_polished_darkstone" }
-					type: "item"
-				}
-				{
-					id: "7FBBC147A7B95924"
-					item: { count: 1, id: "forbidden_arcanus:arcane_crystal_obelisk" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -1.0d
-			y: 15.5d
-		}
-		{
-			dependencies: ["476DA0252473C6EE"]
-			entity_vis_size: 1.0f
-			id: "5E6040C8BC8CAE0F"
-			tasks: [{
-				id: "01DE3A32A0C8BF30"
-				item: { count: 1, id: "forbidden_arcanus:artisan_relic" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["476DA0252473C6EE"]
-			entity_vis_size: 1.0f
-			id: "3D661614AB8A295E"
-			tasks: [{
-				id: "382A672F497ED917"
-				item: { count: 1, id: "forbidden_arcanus:crescent_moon" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["476DA0252473C6EE"]
-			entity_vis_size: 1.0f
-			id: "39C79097C7355375"
-			tasks: [{
-				id: "374BB8AAAD62D512"
-				item: { count: 1, id: "forbidden_arcanus:crimson_stone" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["39C79097C7355375"]
-			entity_vis_size: 1.0f
-			id: "4ADB796A7EC14DE4"
-			tasks: [{
-				id: "0F7FC68469568CFF"
-				item: { count: 1, id: "forbidden_arcanus:soul_crimson_stone" }
-				type: "item"
-			}]
-			x: -5.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["476DA0252473C6EE"]
-			entity_vis_size: 1.0f
-			hide_dependent_lines: true
-			id: "4B62E3D7B166D33F"
-			tasks: [{
-				id: "437E9F3D068B31DE"
-				item: { count: 1, id: "forbidden_arcanus:elementarium" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["476DA0252473C6EE"]
-			entity_vis_size: 1.0f
-			id: "3BA2CB4907E139B5"
-			tasks: [{
-				id: "0E90093130898647"
-				item: { count: 1, id: "forbidden_arcanus:divine_pact" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 18.5d
-		}
-		{
-			dependencies: ["476DA0252473C6EE"]
-			entity_vis_size: 1.0f
-			id: "07B3FFC9267C5861"
-			tasks: [{
-				id: "4E24E84D1EE9D90C"
-				item: { count: 1, id: "forbidden_arcanus:maledictus_pact" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 19.5d
-		}
-		{
-			dependencies: ["026821F02D50FE0D"]
-			entity_vis_size: 1.0f
-			id: "476DA0252473C6EE"
-			shape: "gear"
-			tasks: [{
-				id: "30EF11C70C08380B"
-				type: "checkmark"
-			}]
-			x: -1.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["1D9DE7EAC8B966F9"]
-			entity_vis_size: 1.0f
-			id: "58E8A03E6BB037C5"
-			tasks: [{
-				id: "7F49D49D4C6D95C5"
-				item: { count: 1, id: "forbidden_arcanus:spectral_eye_amulet" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["4E062C1AFC3440ED"]
-			entity_vis_size: 1.0f
-			id: "6F85911351916741"
-			tasks: [{
-				id: "0F5BC3523F4C7DEF"
-				item: { count: 1, id: "forbidden_arcanus:edelwood_bucket" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["4E062C1AFC3440ED"]
-			entity_vis_size: 1.0f
-			id: "02DD191C0682BFD6"
-			tasks: [{
-				id: "6FDF6C316C90A1D1"
-				item: { count: 1, id: "forbidden_arcanus:utrem_jar" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: 9.5d
-		}
-		{
-			dependencies: ["6D62B6D792D203BA"]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "22B9F5FC4D1868F1"
-			tasks: [
-				{
-					count: 17L
-					id: "062D00DBCD3C731F"
-					item: { count: 1, id: "forbidden_arcanus:polished_darkstone_bricks" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "3F8926EDF78CF267"
-					item: { count: 1, id: "forbidden_arcanus:polished_darkstone" }
-					type: "item"
-				}
-				{
-					id: "2DA0CDB7134B7B65"
-					item: { count: 1, id: "forbidden_arcanus:clibano_core" }
-					type: "item"
-				}
-				{
-					id: "53CAC869F44B006B"
-					item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: 13.5d
-		}
-		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			id: "704B2659E03B8728"
-			tasks: [{
-				id: "7A90812B96421829"
-				item: { count: 1, id: "forbidden_arcanus:corrupt_soul" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["704B2659E03B8728"]
-			entity_vis_size: 1.0f
-			id: "4E062C1AFC3440ED"
-			tasks: [{
-				id: "031457819B01835F"
-				item: { count: 1, id: "forbidden_arcanus:growing_edelwood" }
-				type: "item"
-			}]
-			x: -5.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["4E062C1AFC3440ED"]
-			entity_vis_size: 1.0f
-			id: "3603AEA776633DA9"
-			tasks: [{
-				id: "4167F59F57F0762D"
-				item: { count: 1, id: "forbidden_arcanus:dark_matter" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: 10.5d
-		}
-		{
-			dependencies: [
-				"22B9F5FC4D1868F1"
-				"5E6040C8BC8CAE0F"
-			]
-			entity_vis_size: 1.0f
-			id: "1FC1A96DBEC7375E"
-			tasks: [{
-				id: "54C2D8C56D4625B3"
-				item: { count: 1, id: "forbidden_arcanus:obsidiansteel_ingot" }
-				type: "item"
-			}]
-			x: -5.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["1FC1A96DBEC7375E"]
-			entity_vis_size: 1.0f
-			id: "00212E4FD17D95A7"
-			tasks: [{
-				id: "23EF1012E90338C3"
-				item: { count: 1, id: "forbidden_arcanus:corrupti_dust" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: 14.0d
-		}
-		{
-			dependencies: [
-				"00212E4FD17D95A7"
-				"3603AEA776633DA9"
-			]
-			entity_vis_size: 1.0f
-			id: "1FD668D64C10EA51"
-			tasks: [{
-				id: "3B4C4E1225398BD9"
-				type: "checkmark"
-			}]
-			x: -7.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["1FD668D64C10EA51"]
-			entity_vis_size: 1.0f
-			id: "45D33F7CE141D969"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "031BE8B71974B789"
-				item: { count: 1, id: "forbidden_arcanus:xpetrified_orb" }
-				type: "item"
-			}]
-			x: -9.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["14BA9A5CAC394A27"]
-			entity_vis_size: 1.0f
-			id: "1183EEDA65D3180C"
-			tasks: [{
-				id: "0ECA043644187428"
-				item: { count: 1, id: "forbidden_arcanus:magical_farmland" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["4E062C1AFC3440ED"]
-			entity_vis_size: 1.0f
-			id: "6CE13F93E085DABB"
-			tasks: [{
-				id: "111D518063E5DE7E"
-				item: { count: 1, id: "forbidden_arcanus:edelwood_ladder" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["4057F0E61DC737E0"]
-			entity_vis_size: 1.0f
-			id: "14BA9A5CAC394A27"
-			tasks: [{
-				id: "0CA6A9EC9BA5B0E3"
-				item: { count: 1, id: "forbidden_arcanus:arcane_bone_meal" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["4057F0E61DC737E0"]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "787735496233A905"
-			tasks: [{
-				id: "12B5029A1B748ADE"
-				item: { count: 1, id: "forbidden_arcanus:aureal_bottle" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 17.0d
-		}
-		{
-			dependencies: ["02DD191C0682BFD6"]
-			entity_vis_size: 1.0f
-			id: "708646B228220B60"
-			tasks: [{
-				id: "2D0E9368FD28E9E6"
-				item: { count: 1, id: "forbidden_arcanus:soul_extractor" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 9.5d
-		}
-		{
-			dependencies: ["787735496233A905"]
-			entity_vis_size: 1.0f
-			id: "5AEEF8055EA6AE88"
-			tasks: [{
-				id: "607AF6CAA11BAC97"
-				item: { count: 1, id: "forbidden_arcanus:enchanted_soul" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 17.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			hide_until_deps_complete: false
-			id: "5B37B11A0B0A84E6"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					components: {
-						"ftbquests:icon": "forbidden_arcanus:item/corrupt_soul"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "3922C9ACA47723BA"
-				team_reward: false
-				type: "custom"
-			}]
-			shape: "gear"
-			tasks: [{
-				dimension: "eternal_starlight:starlight"
-				icon: {
-					components: {
-						"ftbquests:icon": "eternal_starlight:block/starlight_portal"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "3A6A7BE97330EF23"
-				type: "dimension"
-			}]
-			x: 0.0d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"026821F02D50FE0D"
-				"70A0A078B94FF034"
-			]
+			dependencies: ["70A0A078B94FF034"]
 			entity_vis_size: 1.0f
 			id: "7AB88C2D779F62E2"
 			tasks: [{
@@ -744,11 +22,10 @@
 				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:magical_pouch" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 19.0d
+			x: 19.0d
+			y: 15.5d
 		}
 		{
-			dependencies: ["026821F02D50FE0D"]
 			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			icon: {
@@ -793,7 +70,7 @@
 				{
 					count: 2L
 					id: "1E425921746D4CFD"
-					item: { count: 1, id: "forbidden_arcanus:obsidiansteel_ingot" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:obsidiansteel_ingot" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
@@ -803,12 +80,12 @@
 				}
 				{
 					id: "35ED5E8E8F2480F0"
-					item: { count: 1, id: "forbidden_arcanus:elementarium" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:elementarium" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 18.75d
+			x: 15.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["67772F96BF66540F"]
@@ -819,14 +96,11 @@
 				item: { count: 1, id: "apotheosis:sigil_of_rebirth" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 20.5d
+			x: 15.0d
+			y: 16.5d
 		}
 		{
-			dependencies: [
-				"026821F02D50FE0D"
-				"35B625450DD3545F"
-			]
+			dependencies: ["35B625450DD3545F"]
 			entity_vis_size: 1.0f
 			id: "51FBF0B7A92E3FD8"
 			tasks: [{
@@ -834,11 +108,10 @@
 				item: { components: { "simplemagnets:magnet_active": 0b }, count: 1, id: "simplemagnets:advancedmagnet" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 19.0d
+			x: 18.0d
+			y: 15.5d
 		}
 		{
-			dependencies: ["026821F02D50FE0D"]
 			entity_vis_size: 1.0f
 			id: "16B66B5BC8A015C9"
 			shape: "diamond"
@@ -847,11 +120,10 @@
 				item: { count: 1, id: "enderstorage:ender_pouch" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.5d
+			x: 11.0d
+			y: 16.0d
 		}
 		{
-			dependencies: ["026821F02D50FE0D"]
 			entity_vis_size: 1.0f
 			id: "50A4B989CE0B80CE"
 			shape: "diamond"
@@ -860,11 +132,10 @@
 				item: { components: { "enderstorage:frequency": { left: "white", middle: "white", right: "white" } }, count: 1, id: "enderstorage:ender_chest" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 15.0d
+			x: 10.5d
+			y: 16.5d
 		}
 		{
-			dependencies: ["026821F02D50FE0D"]
 			entity_vis_size: 1.0f
 			id: "66BCBB720F988351"
 			shape: "diamond"
@@ -873,119 +144,8 @@
 				item: { components: { "enderstorage:frequency": { left: "white", middle: "white", right: "white" } }, count: 1, id: "enderstorage:ender_tank" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 15.0d
-		}
-		{
-			dependencies: ["026821F02D50FE0D"]
-			entity_vis_size: 1.0f
-			id: "1E9F6AAB7EF2BE01"
-			shape: "heart"
-			size: 1.5d
-			tasks: [{
-				id: "0506AF75ED93D34B"
-				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 19.0d
-		}
-		{
-			dependencies: ["5B37B11A0B0A84E6"]
-			entity_vis_size: 1.0f
-			id: "4E0D64575495180A"
-			tasks: [{
-				id: "4954115A00FEC164"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 9.0d
-		}
-		{
-			dependencies: [
-				"026821F02D50FE0D"
-				"4E062C1AFC3440ED"
-			]
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
-			id: "42579E72777FEA41"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					components: {
-						"ftbquests:icon": "malum:block/ores/soulstone_ore"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "5F437D0400382507"
-				team_reward: false
-				type: "custom"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [
-				{
-					entity_vis_idle_mode: "USE_GLOBAL"
-					entity_vis_offset_x: 0.0f
-					entity_vis_offset_y: 0.0f
-					entity_vis_rotation: 0.0f
-					entity_vis_silhouette_mode: "NONE"
-					entity_vis_size: 1.0f
-					entity_vis_spin_mode: "USE_GLOBAL"
-					entity_vis_use_as_quest_icon: false
-					entity_vis_walk_mode: "USE_GLOBAL"
-					icon: {
-						id: "forbidden_arcanus:hephaestus_forge_tier_2"
-					}
-					id: "76B70979D87737A2"
-					observation_type: "block"
-					observe_type: 0
-					timer: 0L
-					to_observe: "forbidden_arcanus:hephaestus_forge_tier_2"
-					type: "observation"
-				}
-				{
-					id: "773A0361C646450B"
-					item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_2" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 8.0d
-			y: 17.0d
-		}
-		{
-			dependencies: [
-				"42579E72777FEA41"
-				"4B62E3D7B166D33F"
-			]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:terrastomp_prism"
-			}
-			id: "4D80BF0416C5EFD2"
-			tasks: [
-				{
-					id: "1E12320FE81FEAB5"
-					item: { count: 1, id: "forbidden_arcanus:terrastomp_prism" }
-					type: "item"
-				}
-				{
-					id: "358BBE0E74B77389"
-					item: { count: 1, id: "minecraft:smithing_table" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "188A6688D3F18BA6"
-					item: { count: 1, id: "forbidden_arcanus:apply_modifier_smithing_template" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 8.0d
-			y: 15.0d
+			x: 11.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["2BC8FC3AC76D89BA"]
@@ -996,8 +156,8 @@
 				item: { count: 1, id: "tempad:location_card" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 11.5d
+			x: 13.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["12B718B57B898E3A"]
@@ -1008,8 +168,8 @@
 				item: { count: 1, id: "tempad:card_wallet" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 10.5d
+			x: 13.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["50F1D009FC192076"]
@@ -1021,8 +181,8 @@
 				item: { components: { "tempad:chronon_content": 1 }, count: 1, id: "tempad:timedoor_projector" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 11.5d
+			x: 15.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["12B718B57B898E3A"]
@@ -1034,8 +194,8 @@
 				item: { count: 1, id: "tempad:timedoor_marker" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 11.5d
+			x: 14.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["2BC8FC3AC76D89BA"]
@@ -1047,8 +207,8 @@
 				item: { components: { "tempad:chronon_content": 0 }, count: 1, id: "tempad:chronon_cell" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 12.5d
+			x: 13.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1E0A4735FB02983C"]
@@ -1059,8 +219,8 @@
 				item: { count: 1, id: "tempad:chronon_generator" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 12.5d
+			x: 14.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2BC8FC3AC76D89BA"]
@@ -1071,8 +231,8 @@
 				item: { count: 1, id: "tempad:location_broadcaster" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 13.5d
+			x: 13.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1086,11 +246,10 @@
 				item: { count: 1, id: "tempad:screening_device" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 13.5d
+			x: 14.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["1D9DE7EAC8B966F9"]
 			entity_vis_size: 1.0f
 			id: "2BC8FC3AC76D89BA"
 			rewards: [{
@@ -1105,14 +264,11 @@
 				id: "100D580CE861E070"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 12.5d
+			x: 11.5d
+			y: 12.0d
 		}
 		{
-			dependencies: [
-				"3CD24DA505BC109F"
-				"5B37B11A0B0A84E6"
-			]
+			dependencies: ["3CD24DA505BC109F"]
 			entity_vis_size: 1.0f
 			id: "4081617269AD644A"
 			shape: "square"
@@ -1455,88 +611,6 @@
 			}]
 			x: 7.0d
 			y: 4.0d
-		}
-		{
-			dependencies: [
-				"42579E72777FEA41"
-				"1BBD0967E43849FF"
-			]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:hephaestus_forge_tier_3"
-			}
-			id: "3D7D325BBD4A7751"
-			tasks: [
-				{
-					entity_vis_idle_mode: "USE_GLOBAL"
-					entity_vis_offset_x: 0.0f
-					entity_vis_offset_y: 0.0f
-					entity_vis_rotation: 0.0f
-					entity_vis_silhouette_mode: "NONE"
-					entity_vis_size: 1.0f
-					entity_vis_spin_mode: "USE_GLOBAL"
-					entity_vis_use_as_quest_icon: false
-					entity_vis_walk_mode: "USE_GLOBAL"
-					icon: {
-						id: "forbidden_arcanus:hephaestus_forge_tier_3"
-					}
-					id: "32C0D178C1186510"
-					observation_type: "block"
-					observe_type: 0
-					timer: 0L
-					to_observe: "forbidden_arcanus:hephaestus_forge_tier_3"
-					type: "observation"
-				}
-				{
-					id: "5418AA635DD23574"
-					item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_3" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 10.5d
-			y: 17.0d
-		}
-		{
-			dependencies: ["3D7D325BBD4A7751"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "forbidden_arcanus:sea_prism"
-			}
-			id: "30FA92F29B6D0477"
-			tasks: [
-				{
-					id: "04A6BEA2A50204B7"
-					item: { count: 1, id: "forbidden_arcanus:sea_prism" }
-					type: "item"
-				}
-				{
-					id: "47FD712C09E61A0B"
-					item: { count: 1, id: "minecraft:smithing_table" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2EDCFEDB2FBCFBD1"
-					item: { count: 1, id: "forbidden_arcanus:apply_modifier_smithing_template" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 11.0d
-			y: 15.5d
-		}
-		{
-			dependencies: ["3D7D325BBD4A7751"]
-			entity_vis_size: 1.0f
-			id: "34D0D56BD238BC1A"
-			tasks: [{
-				id: "04A025234389708E"
-				item: { count: 1, id: "forbidden_arcanus:quantum_injector" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 15.5d
 		}
 		{
 			dependencies: ["02BF6162E5CF3F09"]

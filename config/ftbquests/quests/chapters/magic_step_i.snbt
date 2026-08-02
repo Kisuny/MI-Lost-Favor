@@ -3020,7 +3020,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -3216,6 +3216,15 @@
 			dependencies: ["2B388DAC1919D26C"]
 			entity_vis_size: 1.0f
 			id: "4D5DFD75A11BE595"
+			rewards: [{
+				id: "5B6C378125F42CDB"
+				item: {
+					count: 1
+					id: "spectrum:guidebook"
+				}
+				team_reward: false
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -4820,6 +4829,9 @@
 			]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
+			icon: {
+				id: "ars_nouveau:amethyst_golem_charm"
+			}
 			id: "051773C85A4FB2DF"
 			shape: "heart"
 			tasks: [
@@ -5581,6 +5593,18 @@
 			}]
 			x: 4.0d
 			y: 47.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "054589529C185AE1"
+			shape: "heart"
+			tasks: [{
+				id: "7B31EBF696F8A459"
+				item: { count: 1, id: "crittersandcompanions:grappling_hook" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 18.0d
 		}
 	]
 }

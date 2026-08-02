@@ -283,20 +283,22 @@
 		}
 		{
 			dependencies: [
-				"36BDC0E634C762E5"
 				"3926D8DF461B4AC4"
 				"70A0A078B94FF034"
 			]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "forbidden_arcanus:eternal_stella"
+				components: {
+					"ftbquests:missing_item": "forbidden_arcanus:eternal_stella"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "27F5E8BA17C7EA2E"
 			shape: "heart"
 			tasks: [
 				{
 					id: "0A57673E6B1C09FC"
-					item: { count: 1, id: "forbidden_arcanus:eternal_stella" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:eternal_stella" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
@@ -307,7 +309,7 @@
 				}
 				{
 					id: "1E4E9070031A743C"
-					item: { count: 1, id: "forbidden_arcanus:apply_modifier_smithing_template" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:apply_modifier_smithing_template" }, count: 1, id: "ftbquests:missing_item" }
 					optional_task: true
 					type: "item"
 				}
@@ -323,7 +325,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "4574917FC38BD5EA"
-				item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_5" }
+				item: { components: { "ftbquests:missing_item": "forbidden_arcanus:hephaestus_forge_tier_5" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -891,7 +893,7 @@
 				{
 					count: 2L
 					id: "707EBA553C8161D8"
-					item: { count: 1, id: "forbidden_arcanus:stellarite_block" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:stellarite_block" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
@@ -1208,11 +1210,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"3D7D325BBD4A7751"
-				"36BDC0E634C762E5"
-				"176AB140A797FE9B"
-			]
+			dependencies: ["176AB140A797FE9B"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3E6F9ACF7C710FA4"
@@ -1229,7 +1227,10 @@
 					entity_vis_use_as_quest_icon: false
 					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: {
-						id: "forbidden_arcanus:hephaestus_forge_tier_4"
+						components: {
+							"ftbquests:missing_item": "forbidden_arcanus:hephaestus_forge_tier_4"
+						}
+						id: "ftbquests:missing_item"
 					}
 					id: "76C6D2D48965E0D5"
 					observation_type: "block"
@@ -1240,7 +1241,7 @@
 				}
 				{
 					id: "05708B7E531DF805"
-					item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_4" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:hephaestus_forge_tier_4" }, count: 1, id: "ftbquests:missing_item" }
 					optional_task: true
 					type: "item"
 				}
@@ -1252,13 +1253,16 @@
 			dependencies: ["3E6F9ACF7C710FA4"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "forbidden_arcanus:soul_binding_crystal"
+				components: {
+					"ftbquests:missing_item": "forbidden_arcanus:soul_binding_crystal"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "430D38FF55DB4445"
 			tasks: [
 				{
 					id: "19F32EF9BEB6EFDA"
-					item: { count: 1, id: "forbidden_arcanus:soul_binding_crystal" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:soul_binding_crystal" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
@@ -1269,7 +1273,7 @@
 				}
 				{
 					id: "377CB35B707FC661"
-					item: { count: 1, id: "forbidden_arcanus:apply_modifier_smithing_template" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:apply_modifier_smithing_template" }, count: 1, id: "ftbquests:missing_item" }
 					optional_task: true
 					type: "item"
 				}
@@ -1286,7 +1290,7 @@
 			id: "2D26EA473D256B54"
 			tasks: [{
 				id: "2E91FDD26F8AD61F"
-				item: { count: 1, id: "forbidden_arcanus:boss_catcher" }
+				item: { components: { "ftbquests:missing_item": "forbidden_arcanus:boss_catcher" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -1334,7 +1338,7 @@
 				{
 					count: 2L
 					id: "1CDC8B3B93FFFC66"
-					item: { count: 1, id: "forbidden_arcanus:dark_nether_star" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:dark_nether_star" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
@@ -1345,7 +1349,7 @@
 				}
 				{
 					id: "49A13F5697B90833"
-					item: { count: 1, id: "forbidden_arcanus:maledictus_pact" }
+					item: { components: { "ftbquests:missing_item": "forbidden_arcanus:maledictus_pact" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{

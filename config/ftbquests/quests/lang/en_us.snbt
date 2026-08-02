@@ -94,29 +94,6 @@
 		"{@pagebreak}"
 		"<positive>Убивая</positive> <keyword>жителей</keyword> или <keyword>игроков</keyword> есть шанс выбить эту &l<property>душу</property>"
 	]
-	quest.026821F02D50FE0D.quest_desc: [
-		"It might look a bit overwhelming at first, but it's very straightforward once you get used to it. Each ritual has one main ingredient that goes into the big slot in the middle. The four slots surrounding it can be used for <property>enhancers</property>. Some enhancers are required to start certain rituals while many enhancers are optional and provide useful advantages such as <keyword>reduced essence costs</keyword>. "
-		""
-		"You might have noticed that the menu contains <keyword>4 different bars</keyword>. These all represent a different <property>essence type</property>. To fill these bars, you can use the slots on the side of the screen. "
-		""
-		"The four essence types are:"
-		""
-		"• <keyword>Aureal</keyword> - If you want to use items to provide the needed Aureal you'll need to use normal <keyword>Aureal Bottles</keyword>(<keyword>35</keyword>) or their Splash variant(<keyword>30</keyword>). Alternatively, the Aureal production can be automated using <keyword>Arcane Crystal Obelisks</keyword>. "
-		""
-		"• <keyword>Souls</keyword> - There are currently <keyword>two ways</keyword> to acquire souls, but both need a <keyword>Soul Extractor</keyword>."
-		" <keyword>1</keyword> - Suck the Souls out of their beloved Sand with the <keyword>Soul Extractor</keyword> and turn <keyword>Soul Sand</keyword> into <warning>Soulless Sand</warning>."
-		""
-		" <keyword>2</keyword> - In your world, you may occasionally run across the path of a <keyword>Lost Soul</keyword>. These poor little fellows got lost and now wander aimlessly through the world. They are pretty adorable and get easily scared. However, if you want you can <positive>catch</positive> them with your <keyword>Soul Extractor</keyword>. "
-		""
-		"• <keyword>Blood</keyword> - For this essence you'll need to get your fingers dirty and <positive>sacrifice entities</positive>. Either directly hurt entities near the forge and their blood will directly fill the essence bar or craft any weapon and damage entities while having a <keyword>Test Tube</keyword> in offhand. "
-		""
-		"• <keyword>Experience</keyword> - Gaining experience is usually pretty simple, but you'll now need it in item form. Alternatively, did you know that the <keyword>Hephaestus Forge</keyword> can also <positive>remove enchantments</positive> from your tools to gain experience? Simply put your tools in the experience slot and all enchantments on that item will be magically turned into experience to fill the bar. "
-		""
-		""
-		""
-		""
-		"Each ritual requires a different set of essences to start."
-	]
 	quest.0274D350ABE3F101.quest_desc: [
 		"Indicates the amount of water for a <keyword>Well Pulley</keyword>."
 		""
@@ -148,7 +125,6 @@
 		"{@pagebreak}"
 		"<keyword>Голубой азурит</keyword> позволяет вам <positive>открыть путь</positive> к <magic>закрытым загадкам</magic>, а так же <property>увеличивает вашу выживаемость</property>!"
 	]
-	quest.02DD191C0682BFD6.quest_desc: ["You can put <keyword>water/lava/essences</keyword> in <keyword>Utrem Jars</keyword> with a <keyword>bucket</keyword> or any other similar items in hand, allowing you to <positive>store lava</positive> without <warning>taking up space in chests</warning>."]
 	quest.02F9C9866E4ECB53.quest_desc: [
 		"\"Seek the truth for all-truth's sake,"
 		"Always learn from your mistake,"
@@ -214,7 +190,16 @@
 		"• +2x Recharge Rate"
 	]
 	quest.0501BDB7ED850B47.quest_desc: [""]
-	quest.051773C85A4FB2DF.quest_subtitle: "Kill golem for get charm"
+	quest.051773C85A4FB2DF.quest_desc: [
+		"Kill <keyword>golem</keyword> to get the <keyword>charm</keyword>"
+		""
+		"The golem can collect gems from <keyword>amethyst</keyword>, <keyword>topaz</keyword>, and <keyword>citrine</keyword> geodes!"
+		"{@pagebreak}"
+		"Убей <keyword>голема</keyword>, чтобы получить <keyword>амулет</keyword>"
+		""
+		"Голем может собирать гемы из <keyword>аметистовых</keyword>, <keyword>топазовых</keyword> и <keyword>цитриновых</keyword> жеод!"
+	]
+	quest.051773C85A4FB2DF.quest_subtitle: "free gem farm"
 	quest.0528A7114DC06152.quest_desc: [
 		"Gives a <keyword>1 to 2 ratio</keyword> when chopping <keyword>logs into planks</keyword>, as opposed to the <keyword>1 to 1</keyword> in a crafting grid."
 		"{@pagebreak}"
@@ -270,7 +255,11 @@
 		"Если спустя <keyword>7 дней</keyword> вы не заходили на сервер - <keyword>чанк лоудер</keyword> <warning>перестанет работать</warning>."
 	]
 	quest.0757DF8CA56E666F.quest_desc: ["Ritual &lCrystallum Fractura&r - Harvests mature crystal clusters and weaves a 2x growth aura + 1.25x spiritus injection across the chunks in range"]
-	quest.078297FA7375ABD6.quest_desc: ["The <keyword>Ender Source Jar</keyword> allows you to store <property>source</property> in an ender-connected <keyword>Source Jar</keyword>. Each jar you <positive>place</positive> will link to the same <property>pool of source</property>, allowing you to use the <keyword>Source Jar</keyword> from <keyword>anywhere</keyword>."]
+	quest.078297FA7375ABD6.quest_desc: [
+		"The <keyword>Ender Source Jar</keyword> allows you to store <property>source</property> in an ender-connected <keyword>Source Jar</keyword>. Each jar you <positive>place</positive> will link to the same <property>pool of source</property>, allowing you to use the <keyword>Source Jar</keyword> from <keyword>anywhere</keyword>."
+		"{@pagebreak}"
+		"<keyword>Эндер-джар сурса</keyword> позволяет хранить <property>сурс</property> в связанных через эндер <keyword>джарах</keyword>. Каждый <positive>размещённый</positive> джар будет подключен к одному и тому же <property>пулу сурса</property>, позволяя использовать <keyword>сурс</keyword> из <keyword>любой точки</keyword>."
+	]
 	quest.078401AAC8FB6799.quest_desc: [
 		"Alternatively, if I am struggling to find a certain affinity within an ingredient, I can instead FUSE other ones for a variable outcome. I can make a substance that will allow me to gain another affinity from three other poisonous materials. To do this I first must create the mix."
 		""
@@ -289,7 +278,6 @@
 		"{@pagebreak}"
 		"В <magic>лабиринте</magic> легко запутаться, а так же там множество <warning>ловушек</warning> и <property>пазлов</property>, доберись до <blood>истинного азазеля</blood> пройдя лабиринт!"
 	]
-	quest.07B3FFC9267C5861.quest_desc: ["The <keyword>Maledictus Pact Enhancer</keyword> allows the creation of <warning>cursed items</warning> in the <keyword>Hephaestus Forge</keyword>. It can be found as loot in <magic>Bastion Treasure Rooms</magic> with a chance of <keyword>18%</keyword> per chest. "]
 	quest.07D52B22D8158404.quest_desc: ["<keyword>Mob Predictions</keyword> will need to be processed in a <keyword>Loot Fabricator</keyword>, a device which uses <property>power</property> to convert predictions to <property>mob drops</property>. The drops which are available are based on a list of <keyword>pre-defined items</keyword>, and a <positive>target can be selected</positive> for each type of model. The <keyword>Loot Fabricator</keyword> will remember your choices for each type, so you can <positive>feed multiple types of predictions</positive> into a single fabricator."]
 	quest.07E78D29C898CE55.quest_desc: ["<named>Wild sheep</named>"]
 	quest.07ED244BED2A7802.quest_desc: ["Training a <keyword>Data Model</keyword> can be done in one of <keyword>two ways</keyword>: with a <keyword>Deep Learner</keyword> or with a <keyword>Simulation Chamber</keyword>. The <keyword>Deep Learner</keyword> allows you to store a few <keyword>Data Models</keyword> within, and <positive>kills</positive> you receive will begin to <property>train the model</property>. All models start out in the <warning>Faulty</warning> state, and must be trained up to &l<positive>Basic</positive> in the <keyword>Deep Learner</keyword>."]
@@ -324,11 +312,11 @@
 	quest.0AA51C0B8B225908.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
 		""
-		"Free lighting for rooms or mines"
+		"<positive>Free</positive> lighting for <keyword>rooms</keyword> or <keyword>mines</keyword>"
 		"{@pagebreak}"
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
 		""
-		"Бесплатный свет в помещениях или шахтах"
+		"<positive>Бесплатный</positive> свет в <keyword>помещениях</keyword> или <keyword>шахтах</keyword>"
 	]
 	quest.0AA51C0B8B225908.title: "lighting"
 	quest.0ACD0476CE4CAED1.quest_desc: [
@@ -378,7 +366,6 @@
 		"Поскольку поиск руды - дело <keyword>чертовски утомительное</keyword> (особенно когда большая часть руды ускользает из поля зрения по… определенным причинам), процессу <keyword>«вынюхивания»</keyword> руды не помешало бы чуть больше… <keyword>нюхания!</keyword> Эти имитации <keyword>каменных носов</keyword>, пропитанные древним веществом, вызывающим заложенность носа, должны вам в этом помочь, на короткое время <positive>отмечая все залежи</positive> определенного типа в радиусе <positive>500 блоков вокруг вас</positive>! В ближайшее время вы не сможете получить больше таких предметов, поэтому заранее подготовьте <keyword>что-нибудь, чтобы отметить</keyword> местонахождение жилы."
 	]
 	quest.0C1938F058F0ECC8.quest_desc: ["Forged in the <keyword>Tier III altar</keyword> for <keyword>40,000 EV</keyword>. Required to power <property>Sentient Extraction</property> rituals and sustain the deeper blood workings of Tier III."]
-	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The <keyword>Quantum Catcher</keyword> can be used to <positive>capture and transport entities</positive>. To obtain it, you can <positive>combine</positive> <keyword>Spawner Scrap</keyword> and an <keyword>Arcane Crystal Block</keyword> in a <keyword>Smithing Table</keyword>"]
 	quest.0C6CEA409B38B70C.quest_desc: [
 		"Create this <keyword>compass</keyword> and find a <magic>mysterious structure</magic>!"
 		"{@pagebreak}"
@@ -421,9 +408,9 @@
 	]
 	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
 	quest.0D55B997939B664F.quest_desc: [
-		"This allows you to obtain a random Level 1 glyph; glyphs cannot be duplicated. Once you have learned all Level 1 glyphs, you will receive a small amount of experience for each codex."
+		"This allows you to obtain a random <keyword>Level 1 glyph</keyword>; glyphs cannot be duplicated. Once you have learned all <keyword>Level 1 glyphs</keyword>, you will receive a small amount of <property>experience</property> for each codex."
 		"{@pagebreak}"
-		"Позволяет получить случайный глиф первого уровня, глифы не могут повторяться, как только вы изучите все глифы 1 уровня вы будете получать немного опыта за кодекс."
+		"Позволяет получить случайный <keyword>глиф первого уровня</keyword>, глифы не могут повторяться, как только вы изучите все <keyword>глифы 1 уровня</keyword> вы будете получать немного <property>опыта</property> за кодекс."
 	]
 	quest.0D58533D474BB840.quest_desc: [
 		"Позволяет получать доступ к машинам для воронок или других необходимых способов взаимодействия с машиной."
@@ -492,11 +479,11 @@
 	quest.0E87D93CF5EB7F46.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
 		""
-		"Allows you to fell most of the wood or leaves from trees"
+		"<positive>Allows</positive> you to fell most of the <keyword>wood</keyword> or <keyword>leaves</keyword> from trees"
 		"{@pagebreak}"
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
 		""
-		"Позволяет срубать большинство древесины или листвы с деревьев"
+		"Позволяет срубать большинство <keyword>древесины</keyword> или <keyword>листвы</keyword> с деревьев"
 	]
 	quest.0E87D93CF5EB7F46.title: "treecapitator"
 	quest.0E9FA290A23FF8CC.quest_desc: [
@@ -526,13 +513,13 @@
 		"Необходим для создания <keyword>стола трансформации</keyword>. Также позволяет сделать ваши предметы <keyword>невидимыми</keyword>!"
 	]
 	quest.0F305B7FD3E18226.quest_desc: [
-		"This tome will allow you to crush ore and other items"
+		"This <keyword>tome</keyword> will allow you to <positive>crush</positive> <keyword>ore</keyword> and other items"
 		""
-		"In the future, you'll be able to create your own spell similar to this one"
+		"In the future, you'll be able to <positive>create</positive> your own <magic>spell</magic> similar to this one"
 		"{@pagebreak}"
-		"Данный том позволит вам дробить руду и другие вещи"
+		"Данный <keyword>том</keyword> позволит вам <positive>дробить</positive> <keyword>руду</keyword> и другие вещи"
 		""
-		"В будущем у вас появится возможность создавать собственное заклинание похожее на это"
+		"В будущем у вас появится возможность <positive>создавать</positive> собственное <magic>заклинание</magic> похожее на это"
 	]
 	quest.0F4825A153097924.quest_desc: [
 		"&#FEECD6Enchantment Canvas&r helps you remove &#C6BCE9enchantments&r from an item and reapply them if needed. "
@@ -593,7 +580,6 @@
 		"You can also buy from <keyword>Wandering Trader</keyword>"
 	]
 	quest.1150D94139B83FBF.quest_desc: ["Now you can <positive>hot-swap armor</positive> by simply <positive>right-clicking</positive> it, or if you, fancy pants, want to have the whole hat-check room of armor, you can <positive>sneak right-click</positive> an <keyword>armor stand</keyword> to hot-swap the whole set!"]
-	quest.1183EEDA65D3180C.quest_desc: ["To get it, you need to <positive>right click</positive> normal <keyword>Farmland</keyword> with <keyword>Arcane Bone Meal</keyword>. <keyword>Magical Farmland</keyword> <keyword>doubles the quantity</keyword> of crop drops."]
 	quest.11A8A041EB1774AA.quest_desc: [
 		"Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
 		""
@@ -763,7 +749,6 @@
 		"{@pagebreak}"
 		"Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"
 	]
-	quest.14BA9A5CAC394A27.quest_desc: ["Allows the plant on which it is used to <positive>fully grow</positive> with only <keyword>one</keyword> use compared to <keyword>Bone Meal</keyword>. You can also make <keyword>Magical Farm Land</keyword> with it."]
 	quest.14D2170A0424A902.quest_desc: [
 		"Toxic paste is extremely unstable. But its volatility will be the highlight of my next alchemical instrument! Potions are too refined, too narrow. By creating a flask that yields greater capacity and putting a little bit of the paste inside, I can make a much more efficient and possibly renewable potion container."
 		""
@@ -1071,7 +1056,6 @@
 		"Позволяет <positive>искать руду</positive> в чанках"
 	]
 	quest.1BDEFAB880413159.quest_desc: ["<positive>Advances</positive> the world to the next <magic>sunrise</magic>. <warning>Consumed on use</warning>."]
-	quest.1BFC38890CBCF4F4.quest_desc: ["The <property>magnetized modifier</property> can only be used on <keyword>Boots</keyword>. When boots with this modifier are <positive>equipped</positive>, the item pick-up range of the player will increase by <keyword>1.5 blocks</keyword>."]
 	quest.1C223281C108DA0A.quest_desc: [
 		"A more advanced <keyword>station</keyword> for creating <keyword>potions</keyword>. Can also create some other liquids."
 		"{@pagebreak}"
@@ -1165,7 +1149,6 @@
 		"Работает - и отлично, наверное."
 	]
 	quest.1FC26CA207964E0D.quest_desc: [""]
-	quest.1FD668D64C10EA51.quest_desc: ["You can create a <keyword>Block Hole</keyword> by <positive>throwing</positive> &6Dark Matter&r together with <keyword>Corrupti Dust</keyword> on the ground. It will <property>attract items</property> and small entities like <keyword>Arrows</keyword> or <keyword>Experience Orbs</keyword> and <warning>delete them</warning>. Once it absorbed enough experience points, it will throw out a <keyword>Xpetrified Orb</keyword>."]
 	quest.1FE16BABD524C29B.quest_desc: ["<keyword>Tree Capitator</keyword> that is... packed inside a <property>small orb</property>? Gimme two please ('-')"]
 	quest.2034C50745FB7217.quest_subtitle: "WIP"
 	quest.203B742A5DB473FA.quest_desc: ["Simply <positive>smash</positive> a piece of <keyword>flint</keyword> against a <keyword>stone</keyword> to sharpen it"]
@@ -1250,23 +1233,6 @@
 		"&4Separates&r resources into their components via fast motor go brrr."
 		"{@pagebreak}"
 		"&6Центрифуга&r, &4позволяет разделять&r различные ресурсы на другие"
-	]
-	quest.22B9F5FC4D1868F1.quest_desc: [
-		"The clibano is a powerful upgrade to the Blast Furnace that allows faster smelting as well as creating new alloys. "
-		""
-		"To transform the structure into the actual clibano you'll need to use your Mundabitur Dust on the Clibano Core block."
-		""
-		"By default the clibano will smelt with normal fire. However, there are two other fire types that provide additional benefits."
-		""
-		"Soul Fire increases the smelting speed by the factor 1.5x. In order to smelt with soul fire you have to input either a Soul or Dark Soul into the slot."
-		""
-		"Enchanted Fire is created when burning Enchanted Souls and increases your smelting speed by 2.5x. "
-		""
-		"When you smelt with Soul Fire or Enchanted Fire there is a chance that each smolten item creates a small amount of residue. You can see the currently stored residues in the clibano in the bar that's located beneath the output slot."
-		"Once a few residues have accumulated they will turn into an additional output item. For example, nine iron residues will form a whole Iron Block for you."
-		""
-		""
-		"{image:milf:textures/quest_pic/clibano.png width:100 height:100 align:center fit:true}"
 	]
 	quest.22C5E661BDA4DCC2.quest_desc: [
 		"You can write your own <named>message in a bottle</named> and toss it into the sea—other players will have the chance to <positive>fish it out</positive> and read it!"
@@ -1574,11 +1540,11 @@
 		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
 		""
 		""
-		"Grants the \"Bounce Off the Ground\" effect - which negates fall damage"
+		"Grants the <named>\"Bounce Off the Ground\"</named> effect - which <positive>negates</positive> fall damage"
 		"{@pagebreak}"
 		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
 		""
-		"Даёт эффект отскакивание от земли - избавление от урона при падение падения"
+		"Даёт эффект <named>«Отскакивание от земли»</named> - <positive>избавление</positive> от урона при падении"
 	]
 	quest.2D89107A2B1F6A6C.title: "bounce"
 	quest.2D8C9DF5E216E09C.quest_desc: [
@@ -1720,7 +1686,6 @@
 		"{@pagebreak}"
 		"Эти грибы выглядят мрачно, но их &lкора&r такая аппетитная"
 	]
-	quest.30FA92F29B6D0477.quest_desc: ["Same effect as <keyword>Aqua Affinity</keyword>, but it allows you to have a <positive>normal breaking block speed</positive> while moving"]
 	quest.31133967C7848E1E.quest_desc: ["Scribed with Kelp and awakened by Redstone Dust. Opens a vitaemantic current through the open column of air directly above the glyph, lifting or drowning any entity that enters. Right-click with an empty hand to reverse the flow; the array remembers its direction across world reloads. Strength scales with additional Redstone in the redstone slot (acceleration) and Kelp in the kelp slot (terminal velocity); right-click the array with more ingredients to stack them."]
 	quest.316DB511541398F4.quest_desc: [
 		"<keyword>Amalgam</keyword> spawns in <magic>Deeper Down dungeons</magic>."
@@ -1823,7 +1788,6 @@
 		"Полет в <magic>финальной стадии</magic>"
 	]
 	quest.34AF308DB5E001D9.quest_desc: ["Вы можете использовать стол и пергамент вместе с спелл книгой для создания рецепта заклинания и поместить его в турель, чтобы она автоматически выполняла ваше заклинание ценой сурса"]
-	quest.34D0D56BD238BC1A.quest_desc: ["<positive>Place</positive> this block near your <keyword>Hephaestus Forge</keyword> and it will automatically <positive>transfer essences</positive> from nearby <keyword>Utrem Jars</keyword> into the forge"]
 	quest.351C8BB52E7CD0E8.quest_desc: [
 		"Build a &#FEECD6fusion shrine&r! Keep in mind, it must have &#FEECD6access&r to the &#9BB8EDsky&r in order for it to work."
 		"{@pagebreak}"
@@ -2030,7 +1994,6 @@
 		"Зажми правую кнопку мыши и шифт на warped fungus или Crimson fungus!"
 	]
 	quest.39A6C12928525DCD.quest_subtitle: "WIP"
-	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
 	quest.39DB1E37478B1FE7.quest_desc: ["The Eternal Youth is a consumable item that - quite simply put - imbues the animal it's used on with a never ending state of immortality as a youngling. If the animal in question is not currently young, it will be reverted to its youth. The immortality given is near absolute; the few ways of killing such an animal is either to lose it to the void or to use a second Eternal Youth on them."]
 	quest.39DCC2821529301C.quest_desc: [
 		"passive sigil held in hand: +50 Spiritus Collection, +25 Bonus Sacrifice, +10 Blood Siphon (heals on kill, capped at 4 hearts)"
@@ -2082,7 +2045,6 @@
 		"{@pagebreak}"
 		"Как только у меня будет достаточно данных об ингредиенте, я могу взять в руку <keyword>лупу</keyword> и посмотреть в своем инвентаре, с каким <property>свойством</property> ассоциируется этот ядовитый ингредиент. О, прекрасное искусство экспериментальной науки!"
 	]
-	quest.3BA2CB4907E139B5.quest_desc: ["The <keyword>Divine Pact Enhancer</keyword> allows the creation of <keyword>celestial items</keyword> in the <keyword>Hephaestus Forge</keyword>. "]
 	quest.3BB0FE129E37B19E.title: "World Tier: Ascent"
 	quest.3BB8C6DBB6FE9970.quest_desc: [
 		"To obtain the &l&0mid&5night &5shard&r, you need to suffocate a living creature in the &l&5mid&0night &l&5so&0lu&5ti&0on&r."
@@ -2195,27 +2157,22 @@
 		"Так же используется для создания рюкзака."
 	]
 	quest.3D5FB6D17EC9693F.title: "World Tier: Summit"
-	quest.3D661614AB8A295E.quest_desc: [
-		"The <named>Cresent Moon Enhancer</named> <positive>reduces</positive> the Aureal cost of rituals when used in the Hephaestus Forge. Depending on the time of the day the reduced amount differs between 10% during the night and 1% during the day. "
-		""
-		"This enhancer is currently <warning>not obtainable in survival</warning>."
-	]
 	quest.3D70D1CA920E0805.quest_desc: [
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  free dirt"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  <positive>free dirt</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  free cobbestone"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>free cobblestone</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  free deepslate"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>free deepslate</positive>"
 		""
-		"You can read about all the combinations right on the glyph itself in EMI"
+		"You can read about all the combinations right on the glyph itself in <keyword>EMI</keyword>"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  утановить землю"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  <positive>установить землю</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  утановить булыжник"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>установить булыжник</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  утановить дипслейт"
+		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>установить дипслейт</positive>"
 		""
-		"Можно почитать о всех комбинациях на самом глифе в EMI"
+		"Можно почитать о всех комбинациях на самом глифе в <keyword>EMI</keyword>"
 	]
 	quest.3D70D1CA920E0805.title: "free cobble or not"
 	quest.3D7610F02FB93E78.quest_desc: [
@@ -2258,12 +2215,6 @@
 		"If some nasty bacteria is threatening your kitchen or your life, you can use this to clean the mess. Well, stop the mess from expanding, at least..."
 		"{@pagebreak}"
 		"Если всё таки какая-то из жидкостей вырвалась наружу, данная баночка поможет вернуть всё на своё место! С некоторыми нюансами."
-	]
-	quest.3EA4DF00F5156F2E.quest_desc: [
-		"The <keyword>Hephaestus Forge</keyword> is needed for every player that wants to dive deep into the world of forbidden magic. Gathering the required material for creating it might take a while, but it's worth the effort as it will open up the possibility of executing <property>powerful rituals</property> which can have various outcomes. "
-		""
-		"After having built the above pattern, <positive>place</positive> the <keyword>Smithing Table</keyword> in the central spot above the <keyword>Gilded Chiseled Polished Darkstone</keyword> block. In order to transform it into the desired <keyword>Hephaestus Forge</keyword> you'll now only need to <positive>sneak and right-click</positive> with the <keyword>Mundabitur Dust</keyword> on the <keyword>Smithing Table</keyword>. A bolt of <warning>corrupted lightning</warning> will <warning>strike</warning> the block and <property>transform it</property>. "
-		"{image:milf:textures/quest_pic/hephaestus_forge.png width:170 height:170 align:center fit:true}"
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>squid</keyword>."]
 	quest.3F076989AA64CD64.quest_desc: [
@@ -2488,6 +2439,11 @@
 		"{@pagebreak}"
 		"Создаётся из Blood Feather, Echo Pearl и War Horn на кузнечном столе. Применяет загруженный эффект зелья на всех врагов рядом, а не на союзников. Поддерживает зачарование Flame, поджигающее жертв вместе с эффектом зелья."
 	]
+	quest.464B4BB86A9CF448.quest_desc: [
+		"You can <positive>combine</positive> multiple <keyword>chests</keyword> or any other <keyword>storage containers</keyword> into a single, very user-friendly <keyword>crafting interface</keyword> - it's literally <named>AE2</named> on a minimal setup."
+		"{@pagebreak}"
+		"Вы можете <positive>объединить</positive> множество <keyword>сундуков</keyword> или любых других <keyword>хранилищ</keyword> в один очень удобный <keyword>интерфейс для крафта</keyword>, это буквально <named>AE2</named> на минималках."
+	]
 	quest.464E6E68F80377D1.quest_desc: [
 		"<keyword>Scythe</keyword> has <property>unique enchantments</property> - try enchanting it!"
 		"{@pagebreak}"
@@ -2535,13 +2491,6 @@
 		"A very <positive>effective</positive> hook for <named>treasure fishing</named>!"
 		"{@pagebreak}"
 		"Очень <positive>эффективный</positive> крючок для <named>ловли сокровищ</named>!"
-	]
-	quest.476DA0252473C6EE.quest_desc: [
-		"Currently, there are seven different Enhancers implemented that can be found by exploring the world. Each one has one or multiple effects that will help you advance quicker or improve your setup. "
-		""
-		"Some Enhancers are not accessible in survival mode right now. The methods of obtaining them will be implemented in future updates. We decided to include them nonetheless to give modpack authors the chance to already use them in a creative way if desired. "
-		""
-		"Furthermore, their uses are currently unlimited. In a future update, we intend to add a renewable way of acquiring them. Once this happens, they will receive a use limit."
 	]
 	quest.47ECA2AA01DBE0C5.quest_desc: [""]
 	quest.4821B8BFF0FEE06B.quest_desc: [
@@ -2704,11 +2653,11 @@
 	quest.4A7B4E770FBD1EDB.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
 		""
-		"calls to the tamed horse"
+		"<positive>Calls</positive> to the <keyword>tamed horse</keyword>"
 		"{@pagebreak}"
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
 		""
-		"призывает прирученую лошадь"
+		"<positive>Призывает</positive> <keyword>приручённую лошадь</keyword>"
 	]
 	quest.4A7B4E770FBD1EDB.title: "horse power"
 	quest.4A87529560AC3F59.quest_desc: [
@@ -2721,11 +2670,6 @@
 		"Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
 	]
 	quest.4ACDF200B2039DD9.quest_desc: ["Улучшенная версия кристалла, больше прочности, свет можно кидать на расстояние, а не только через пкм"]
-	quest.4ADB796A7EC14DE4.quest_desc: [
-		"The Soul Crimson Stone is an upgraded version of the normal Crimson Stone. Due to the power of the harnessed souls, this enhancer is able to completely remove the essence cost of one Hephaestus Forge ritual. After one use it loses its power and becomes a normal Crimson Stone."
-		""
-		"This enhancer is currently not obtainable in survival."
-	]
 	quest.4AF2F61FD389981F.quest_desc: [
 		"mod allows you to have very tall posts with some different types to choose from, instead of just the Treated-Wood, Aluminum and Steel variants."
 		""
@@ -2772,7 +2716,6 @@
 		"Добавьте в стол топливо, предмет, внешний вид которого вы хотите изменить, и предмет, в который вы хотите его превратить."
 	]
 	quest.4B4152C17573E98D.quest_subtitle: "Change the appearance of your items"
-	quest.4B62E3D7B166D33F.quest_desc: ["The Elementarium Enhancer combines the power of the four elements and allows the creation of elemental items in the Hephaestus Forge. For example, it is required to create elemental prisms. With a chance of 18% this enhancer can be found in the following structures: Jungle Temples, Desert Pyramids, and Underwater Ruins."]
 	quest.4B801253049DAC2F.quest_desc: [
 		"&#FEECD6Catch&r the right phase of the moon and create your first &#4040a1onyx&r!"
 		""
@@ -2811,16 +2754,20 @@
 		"Войдите в <magic>защитные руины</magic>"
 	]
 	quest.4D1140A41CD018A7.quest_desc: [
-		"Use the brush and the pigment you found to repaint the sapling you made earlier in a different color"
+		"Use the <keyword>brush</keyword> and the <keyword>pigment</keyword> you found to <positive>repaint</positive> the <keyword>sapling</keyword> you made earlier in a different color"
 		"{@pagebreak}"
-		"используйте кисточку и найденную краску чтобы перекрасить ранее полученный саженец в другой"
+		"Используйте <keyword>кисточку</keyword> и найденную <keyword>краску</keyword>, чтобы <positive>перекрасить</positive> ранее полученный <keyword>саженец</keyword> в другой цвет"
 	]
 	quest.4D212923E3A7FA85.quest_desc: [
 		"An easy way to get <named>villagers</named>!"
 		"{@pagebreak}"
 		"Простой способ получить <named>жителей</named>!"
 	]
-	quest.4D80BF0416C5EFD2.quest_desc: ["The <property>demolishing modifier</property> can unlock the true power out of your tools (<keyword>Pickaxes</keyword>, <keyword>Shovels</keyword>, <keyword>Axes</keyword>, <keyword>Hoes</keyword>). Tools with this modifier will be able to break a <keyword>3x3 area</keyword>."]
+	quest.4D5DFD75A11BE595.quest_desc: [
+		"Don't forget to read the <keyword>guidebook</keyword> and check out the <keyword>advancements</keyword> - all of <named>Spectrum's</named> progress is tied to these two sources of information!"
+		"{@pagebreak}"
+		"Не забывайте читать <keyword>гайдбук</keyword> и <keyword>достижения</keyword>, весь прогресс <named>Spectrum</named> завязан на двух этих источниках информации!"
+	]
 	quest.4DBD70274DBF7823.quest_desc: [
 		"The <keyword>Source Relay: Splitter</keyword> works like a regular <keyword>Source Relay</keyword>, but can take from and send to <property>multiple jars</property> at once."
 		""
@@ -2839,7 +2786,6 @@
 		""
 		"P.S. Для открытия крафта улучшите свой старый пьедестал!"
 	]
-	quest.4E062C1AFC3440ED.quest_desc: ["<positive>Use</positive> <keyword>corrupt soul</keyword> on <keyword>oak sapling</keyword> or <keyword>dead bush</keyword>"]
 	quest.4E56E1DDA10FCFE6.quest_desc: [
 		"The <keyword>Coille Slat</keyword> grants <positive>growth to plants</positive> and can be obtained by using the <keyword>Emerald Ritual</keyword>"
 		"{@pagebreak}"
@@ -3061,7 +3007,6 @@
 		"{@pagebreak}"
 		"Позволяет передавать <property>знания о глифах</property> за <keyword>опыт</keyword>, чем больше глифов - тем более опыта потребуется для передачи."
 	]
-	quest.58E8A03E6BB037C5.quest_desc: ["Applies the <property>Glowing effect</property> to all entities near the player when it's in your inventory."]
 	quest.58FC7BE00AECD484.quest_subtitle: "Crack the bone!"
 	quest.590167B593FE267A.quest_desc: [""]
 	quest.590C55E7230D6C5E.quest_desc: ["Yet another <positive>revolutionary invention</positive> from the \"Things that one person asked for and we spent quite some time bringing them to life\" department of <named>PLACERS™</named> - the almighty <named>FINGMER</named> (Functionally Irreversible Neatly Game-designed Machine and whatever Else Replacer). With this little thing, your everyday routine of replacing things with the better versions of themselves will become as easy as saying the word \"concrete\"! By virtue of our CEO, Ms. S., being so thorough in following the production of our products, each and every unit of this wondrous apparatus will <positive>flawlessly upgrade ANY compatible block</positive> (when provided with <property>proper materials</property>, of course) without missing a single bit of content inside! <property>Reusable</property> too (as long as you don't lose it), even within the crafting table! Craft one today and become one of thousands of happy customers who have already brought their factory to another level!"]
@@ -3122,8 +3067,6 @@
 		"Показывает радиус работы тотемов"
 	]
 	quest.5AB1A672225555B0.quest_desc: ["By pressing \"<positive>Shift + X</positive>\" on an item in your inventory, you can <positive>link said item in chat</positive>"]
-	quest.5AEBD2E96FA53366.quest_desc: ["The <property>fiery modifier</property> can be applied to all tool items (<keyword>Pickaxes, Shovels, Axes, Hoes</keyword>) and will <positive>automatic</positive>smelting of all mined blocks&r if they have a smelting recipe. "]
-	quest.5AEEF8055EA6AE88.quest_desc: ["<positive>Use</positive> a <keyword>Splash Aureal Bottle</keyword> on a normal soul for getting"]
 	quest.5B1AE3ABD351EB63.quest_desc: ["While the Spiritus Aura Gauge rests in your inventory, it projects a spectral reading onto your vision. From top to bottom the bars measure Raw, Ruina, Invictus, Nihilum, and Vindicta. Hold sneak for a precise numerical reading (0 to 100 per Aspect)."]
 	quest.5B306FE5EB74ADA8.quest_desc: [
 		"In <keyword>Planter</keyword>, you can grow specific plants such as the <keyword>Mirecap Mushroom</keyword> / the <keyword>Flowering Oanna</keyword> / <keyword>Sildrian Seed</keyword> / <keyword>Sprig Of Avennian</keyword>"
@@ -3167,21 +3110,21 @@
 		"Создаётся из <keyword>3 медных слитков</keyword> и <keyword>1 рога</keyword>."
 	]
 	quest.5C91DD619D5F382D.quest_desc: [
-		"Left alt to open book menu"
-		"Next Spell X"
-		"Previous Spell Z"
+		"<positive>Left Alt</positive> to open book menu"
+		"Next Spell <positive>X</positive>"
+		"Previous Spell <positive>Z</positive>"
 		""
-		"By unlocking new glyphs, you increase your mana pool, which helps you cast more complex spells."
+		"By unlocking new <keyword>glyphs</keyword>, you increase your <property>mana pool</property>, which helps you cast more complex spells."
 		""
-		"Currently, only level 1 glyphs are available to you."
+		"Currently, only <keyword>level 1 glyphs</keyword> are available to you."
 		""
 		"{@pagebreak}"
-		"Левый альт - открыть меню книги"
-		"Менять порядок созданных спеллов можно кнопкой X и Z"
+		"<positive>Левый альт</positive> - открыть меню книги"
+		"Менять порядок созданных спеллов можно кнопкой <positive>X</positive> и <positive>Z</positive>"
 		""
-		"Открывая новые глифы вы повышаете количество своей маны, что помогает вам использовать более комплексные спеллы"
+		"Открывая новые <keyword>глифы</keyword> вы повышаете количество своей <property>маны</property>, что помогает вам использовать более комплексные спеллы"
 		""
-		"На данный момент вам доступны глифы первого уровня"
+		"На данный момент вам доступны <keyword>глифы первого уровня</keyword>"
 	]
 	quest.5C95E8450BEAD473.quest_desc: [
 		"Using the <keyword>Cinnabar Ritual</keyword> you can obtain the incredibly powerful <keyword>Pentacle</keyword>. Whatever mob is <positive>sacrificed</positive> to obtain it will result in the Pentacle <positive>spawning that mob for eternity</positive>."
@@ -3223,13 +3166,13 @@
 		"{image:milf:textures/quest_pic/capacity.png width:200 height:60 align:center}"
 	]
 	quest.5CD79C87448D8A51.quest_desc: [
-		"There are many different rituals - check them out in the guidebook!"
+		"There are many different <keyword>rituals</keyword> - check them out in the <keyword>guidebook</keyword>!"
 		""
-		"One of the important rituals is the 5 Arcana; it creates a Soulwood sapling. Be sure to read more about it in the guidebook!"
+		"One of the important rituals is the <property>5 Arcana</property>; it creates a <named>Soulwood sapling</named>. Be sure to read more about it in the <keyword>guidebook</keyword>!"
 		"{@pagebreak}"
-		"Существует много разнообразных ритуалов, ознакомьтесь с ними в гайдбуке!"
+		"Существует много разнообразных <keyword>ритуалов</keyword>, ознакомьтесь с ними в <keyword>гайдбуке</keyword>!"
 		""
-		"Один из важных ритуалов это 5 арканы, он даёт создать Soulwood sapling, прочтите так же подробнее об этом в гайдбуке!"
+		"Один из важных ритуалов это <property>5 арканы</property>, он позволяет создать <named>Soulwood sapling</named>, прочтите так же подробнее об этом в <keyword>гайдбуке</keyword>!"
 	]
 	quest.5CEDA5F61D74B3A8.quest_desc: [
 		"Place blocks fast in <keyword>line</keyword>, <keyword>wall</keyword>, <keyword>floor</keyword>, <keyword>column</keyword>, <keyword>stair</keyword>, and <keyword>grid</keyword> shapes. &7Shift-right-click&r to choose the block, then use the settings menu and <positive>right-click</positive> to build. It uses blocks from your inventory or linked storage and shows a preview first"
@@ -3250,16 +3193,16 @@
 	quest.5DB331B0DC5B29D7.quest_desc: [
 		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
 		""
-		"This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a projectile, self-cast, etc - so feel free to experiment."
+		"This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a <keyword>projectile</keyword>, <keyword>self-cast</keyword>, etc - so feel free to experiment."
 		""
-		"You can enhance this and other spells using the Amplify glyph!"
+		"You can <positive>enhance</positive> this and other spells using the <keyword>Amplify</keyword> glyph!"
 		"{@pagebreak}"
 		""
 		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
 		""
-		"Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть снаряд, самоналожение и т.д. - эксперементируйте. "
+		"Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть <keyword>снаряд</keyword>, <keyword>самоналожение</keyword> и т.д. - эксперементируйте."
 		""
-		"Вы можете усилить это и другие заклинания используя глиф Amplify!"
+		"Вы можете <positive>усилить</positive> это и другие заклинания используя глиф <keyword>Amplify</keyword>!"
 	]
 	quest.5DB331B0DC5B29D7.title: "Sword"
 	quest.5DDA25EB563D52A6.quest_desc: ["Redstone works quite differently when you use aluminum to transfer its signals, looks like the strength of the signal remains the same no matter the distance traveled, and you could do little adjustments inside relays to send different signal types, which opens great possibilities..."]
@@ -3268,18 +3211,17 @@
 		"{@pagebreak}"
 		"&l<positive>Зелёные</positive>&r биомы помогут с поиском заветного удачливого растения!"
 	]
-	quest.5E6040C8BC8CAE0F.quest_desc: ["The <keyword>Artisan Relic</keyword> can be used as an <keyword>Enhancer</keyword> in the <keyword>Hephaestus Forge</keyword>. It will <keyword>reduce the required Experience essence cost by 25%</keyword>. With a <keyword>chance of 18%</keyword> it can be found in the chests of <keyword>Armorer, Toolsmith, or Weaponsmith</keyword> villager buildings.  "]
 	quest.5E639A3B6E268A89.quest_desc: [
-		"The primary means of acquiring stats is through bookshelves. Each bookshelf placed in a valid bookshelf location will contribute to the Enchanting Table. There are a total of 32 valid bookshelf locations: the ring around the table (including corners) on the same y-level, and one y-level above. There must be an air block in-between the Enchanting Table and the bookshelf to be valid. Other blocks which provide stats (such as skulls or candles) must also be placed in a valid bookshelf location to contribute to the table."
+		"The primary means of acquiring stats is through <keyword>bookshelves</keyword>. Each bookshelf placed in a valid bookshelf location will contribute to the <keyword>Enchanting Table</keyword>. There are a total of <property>32 valid bookshelf locations</property>: the ring around the table (including corners) on the same y-level, and one y-level above. There must be an air block in-between the Enchanting Table and the bookshelf to be valid. Other blocks which provide stats (such as <keyword>skulls</keyword> or <keyword>candles</keyword>) must also be placed in a valid bookshelf location to contribute to the table."
 		""
 		""
-		"Some blocks may provide stats dynamically, which means the tooltip is not completely accurate.  For example, candles can be stacked (up to 4 in a single block space), and provide more Arcana when stacked."
+		"Some blocks may provide stats dynamically, which means the tooltip is not completely accurate. For example, <keyword>candles</keyword> can be stacked (up to <property>4</property> in a single block space), and provide more <property>Arcana</property> when stacked."
 		""
 		"{@pagebreak}"
 		""
-		"Основным способом получения характеристик являются книжные полки. Каждая книжная полка, размещенная в подходящем месте, будет влиять на стол зачарования. Всего есть 32 подходящих места для книжных полок: кольцо вокруг стола (включая углы) на том же уровне y и на один уровень y выше. Между столом зачарования и книжной полкой должен быть блок воздуха, чтобы место было правильным. Другие блоки, которые дают характеристики (такие как черепа или свечи), также должны быть размещены в правильном месте для книжной полки, чтобы добавлять характеристики к столу."
+		"Основным способом получения характеристик являются <keyword>книжные полки</keyword>. Каждая книжная полка, размещенная в подходящем месте, будет влиять на <keyword>стол зачарования</keyword>. Всего есть <property>32 подходящих места</property> для книжных полок: кольцо вокруг стола (включая углы) на том же уровне y и на один уровень y выше. Между столом зачарования и книжной полкой должен быть блок воздуха, чтобы место было правильным. Другие блоки, которые дают характеристики (такие как <keyword>черепа</keyword> или <keyword>свечи</keyword>), также должны быть размещены в правильном месте для книжной полки, чтобы добавлять характеристики к столу."
 		""
-		"Некоторые блоки могут предоставлять характеристики динамически, что означает, что всплывающая подсказка не является полностью точной.  Например, свечи можно устанавливать в стак (до 4 штук в одном блоке) и при этом получать больше Arcana."
+		"Некоторые блоки могут предоставлять характеристики динамически, что означает, что всплывающая подсказка не является полностью точной. Например, <keyword>свечи</keyword> можно устанавливать в стак (до <property>4 штук</property> в одном блоке) и при этом получать больше <property>Arcana</property>."
 	]
 	quest.5EC0131511F7FDEF.quest_desc: [
 		"A modified Totem of Undying. Instead of preventing death, it delays it by 10 seconds - a delay that can be extended through repeated uses."
@@ -3842,18 +3784,7 @@
 		"{@pagebreak}"
 		"Печь - только <keyword>покруче</keyword>!"
 	]
-	quest.6CE13F93E085DABB.quest_desc: ["The <keyword>Edelwood Ladder</keyword> can be climbed <keyword>twice as fast</keyword> as a vanilla Ladder"]
-	quest.6D1F116F28F30039.quest_desc: [
-		"Gathering the required essences for a ritual can be tedious - luckily <keyword>Aureal</keyword> can be automated with the help of <keyword>Obelisks</keyword>. When placed in one of the spots where normally a <keyword>Pedestal</keyword> would go, it will slowly fill up the <keyword>Aureal bar</keyword> in the <keyword>Hephaestus Forge</keyword>. "
-		""
-		"In order to create an <keyword>Obelisk</keyword> you'll have to <positive>place</positive> <keyword>2 Arcane Crystal Blocks</keyword> on top of an <keyword>Arcane Polished Darkstone Block</keyword>. To complete the transformation, you'll have to once again use <keyword>Mundabitur Dust</keyword>. "
-	]
 	quest.6D30F1913CBFB525.quest_subtitle: "Oopsie-daisy of the Deeper Down"
-	quest.6D62B6D792D203BA.quest_desc: [
-		"<keyword>Mundabitur Dust</keyword> can be used to craft <keyword>Arcane Gold Ingots</keyword> or to <positive>transform various different things</positive>."
-		""
-		"It can for example be used to <positive>charge</positive> a <keyword>Creeper</keyword> or to create an <keyword>Arcane Crystal Obelisk</keyword>. It is also needed to <positive>activate</positive> the <keyword>Hephaestus Forge</keyword>."
-	]
 	quest.6D68EF9352B93B19.quest_desc: [
 		"As a true apex predator of this blocky world, you have to <positive>mark your territory</positive> to assure your dominance over this particular domain (and protect it from others just as apex and just as predators as yourself), and that's where this handy new <keyword>flag</keyword> comes into play! "
 		"<positive>Place it</positive> on unclaimed soil to <positive>claim it</positive> for your team (or yourself if that's what you fancy). Works similar to the claim chunk FTB function, just without the actual map involved (since you haven't unlocked one yet)."
@@ -3904,7 +3835,6 @@
 		"Давайте просто сделаем вид, что на текстуре этой штуки нет пилы, и продолжим, пока вы не сможете сделать эту пилу, чтобы удовлетворить свои потребности в точности."
 	]
 	quest.6E680C846961BFE3.quest_subtitle: "Finally"
-	quest.6E69C3F456FD1C3D.quest_desc: ["Every ritual you execute will require you to sacrifice certain items which need to be placed on Pedestals. Obtaining these Pedestals should be your next step. Most rituals will only need 6 Pedestals while others may require you to use all 8 available spots for Pedestals. "]
 	quest.6E99902F01ED8483.quest_desc: [
 		"Blaze powder was already as <warning>VOLATILE</warning> as toxin. It burns just like toxin does. So a thought came to me. Was there a way to <warning>mix these substances together</warning> to create the <warning>ultimate purifying effect</warning>. That's when I created this miraculous fusion. &l<warning>WITCHFIRE</warning>."
 		"{@pagebreak}"
@@ -3979,7 +3909,6 @@
 		""
 		"Вы можете прочитать больше о том как ловить рыбу и другую важную информацию в <keyword>гайде</keyword>, он максимально подробный!"
 	]
-	quest.6F85911351916741.quest_desc: ["An <keyword>Edelwood Bucket</keyword> can hold multiple fluids at once (<keyword>4 buckets for water</keyword> and <keyword>3 buckets for lava</keyword>). Can also hold <keyword>stews</keyword> and some small entities. The <keyword>Edelwood Bucket</keyword> will require the <property>Permafrost enchantment</property> in order to hold <warning>lava</warning> safely."]
 	quest.6FBA4C72D386837A.quest_desc: [
 		"A &#DEB3E0Fabrication Chest&r has four special slots for &#FEECD6Crafting Tablets&r."
 		""
@@ -4002,7 +3931,6 @@
 		"А еще распишитесь *&#9BB8EDтут&r*, *&#9BB8EDздесь&r*, и предоставьте &#FEECD6фото паспорта&r!"
 	]
 	quest.6FCE521D7A64B367.quest_desc: ["Folds space between two aligned glyphs for a seamless vertical elevator. Place at least two arrays directly above one another on the same block column, at any distance up to 64 blocks. Jump while standing on an array to teleport upward to the next array above; Sneak to descend to the nearest below. Multiple arrays can be chained for multi-floor shafts. Each search is limited to the same X/Z column, so precise alignment matters."]
-	quest.704B2659E03B8728.quest_subtitle: "Kill Corrupt Lost Soul"
 	quest.706FE8A4CD20FDEF.quest_desc: [
 		"A &7square&r, a &6diamond&r, a <property>circle</property> - they don’t mean anything; they’re just decorations."
 		""
@@ -4133,13 +4061,6 @@
 		"<keyword>Чаша</keyword> может быть помещена на вершину <keyword>алтаря</keyword>, чтобы <property>увеличить его энергоемкость</property>. Чашу можно наполнить, <positive>использовав на ней Redstone Soup</positive>."
 	]
 	quest.73A3668DA95AAD0E.title: "bedrock_sample"
-	quest.73A5D237B167B47E.quest_desc: [
-		"Blacksmith Gavels are a new tool type like Pickaxes or Shovels. Just like Pickaxes they can be used to mine stone-related blocks at a higher speed. Furthermore, they have pretty high attack damage making them a viable weapon, though, at the cost of a lower attack speed."
-		""
-		"Due to their enhanced mining technique Gavels have a 30% chance of duplicating mined Ores."
-		""
-		"Besides the use as a normal tool Blacksmith Gavels are also needed to start rituals in the Hephaestus Forge. Every Gavel has a remaining ritual uses counter in their tooltip that shows how many rituals this item can still be used for. More advanced Gavel variants can be used more often. "
-	]
 	quest.73DAABF80C068AA2.quest_desc: [
 		"Dust can be obtained from gems by using the power of the &#9BB8EDanvil&r, or rather &#9BB8EDgravity&r. Just &l<wiggle>drop</wiggle>&r the anvil on the &#9BB8EDitem&r and it will be crushed!"
 		""
@@ -4215,7 +4136,6 @@
 		""
 		"Подай редстоун-сигнал чтобы поставить Link на паузу - пока сигнал есть, зарядка остановлена. Компаратор на выходе показывает насколько заполнена Anima владельца - идеально для автоматического отключения кровяных двигателей когда бар полон."
 	]
-	quest.787735496233A905.quest_desc: ["When drunk it will grant <keyword>35 Aureal</keyword> to the player. It can also be used to input <keyword>Aureal</keyword> into the <keyword>Hephaestus Forge</keyword>."]
 	quest.789815CA55295F71.quest_desc: [
 		"Expands a worn Sentient Armor's upgrade capacity beyond its former limits."
 		"{@pagebreak}"
@@ -4304,11 +4224,11 @@
 	quest.7CA4C6614455169B.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
 		""
-		"replaces most tools with a single spell"
+		"<positive>Replaces</positive> most tools with a single <keyword>spell</keyword>"
 		"{@pagebreak}"
 		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
 		""
-		"заменяет большинство инструментов, одним заклинанием"
+		"<positive>Заменяет</positive> большинство инструментов одним <keyword>заклинанием</keyword>"
 	]
 	quest.7CA4C6614455169B.title: "A pickaxe? No. An axe? No. A shovel?"
 	quest.7D5DCEA36FF46987.quest_desc: [
@@ -4317,7 +4237,6 @@
 		"<keyword>Кровать для дневного сна</keyword>."
 	]
 	quest.7DB2152F92496396.quest_desc: ["Compress <property>Raw Spiritus</property> in the Hellfire Forge to form a <keyword>Common Spiritus Gem</keyword>. This is the primary fuel for Sentient Equipment crafting and Hellfire Forge recipes."]
-	quest.7E277FEC22A1924D.quest_desc: ["<keyword>Spawner Scrap</keyword> drops when <positive>breaking</positive> a <keyword>Spawner</keyword>"]
 	quest.7E931DB1E3794703.quest_desc: [
 		"[ \"You can use the \", { \"text\": \"Pentacle\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5C95E8450BEAD473\" } }, \" to get the amount of Creeper Heart you need!\" ]"
 		""
@@ -4524,7 +4443,6 @@
 	task.2DD9CC89EC523943.title: "???"
 	task.2E27771C78B7E3E9.title: "Any #milf:phantom_frame"
 	task.2E5D24ACE6FAA580.title: "Any #milf:chiseled_base_blocks"
-	task.30EF11C70C08380B.title: "Enhancer Relics"
 	task.31969FC5A93B0C8B.title: "Any #neovitae:altar/runes_t1"
 	task.3198AD11970AE4C5.title: "Any #minecraft:planks"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
@@ -4541,7 +4459,6 @@
 	task.38DF68FAD82285EB.title: "Any #starcatcher:tackle_boxes"
 	task.3A29E8F35850BD56.title: "Elevator"
 	task.3A5AE59EDDEBE0BA.title: "Any #minecraft:boats"
-	task.3B4C4E1225398BD9.title: "Black Hole"
 	task.3CC7AB10CF42EE49.title: "Inspector Gadget"
 	task.3CF465D57CE596A9.title: "Boss Checklist"
 	task.3CF51E4C7C17A283.title: "Any #yo_hooks:hooks"
@@ -4558,10 +4475,8 @@
 	task.46C57609C45C54C6.title: "Any #milf:fusion_shrine"
 	task.46CE431166A44610.title: "Oil pot"
 	task.46D24C3E78F3813B.title: "Any #milf:polished_base_blocks"
-	task.4954115A00FEC164.title: "Any #c:logs/archwood"
 	task.49C1237D393FF8C9.title: "Any #smallships:ships"
 	task.4BA891B4F70A44E3.title: "Any #milf:copper_storage"
-	task.4BBE7498A48891A8.title: "Any #forbidden_arcanus:blacksmith_gavel"
 	task.4C13E036E01DE93A.title: "Any #milf:diamond_storage"
 	task.4C34F34DFB64B73E.title: "Any #milf:polished_base_blocks"
 	task.4C9B71D2BC1CA752.title: "Next quests"

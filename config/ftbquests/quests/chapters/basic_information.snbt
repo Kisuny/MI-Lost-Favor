@@ -286,7 +286,7 @@
 				type: "checkmark"
 			}]
 			x: -1.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -331,7 +331,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -398,7 +398,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["179140A353AB44E8"]
@@ -455,14 +455,19 @@
 		{
 			dependencies: ["2B7F14733C000C22"]
 			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbquests:textures/shapes/heart/outline.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "706FE8A4CD20FDEF"
-			shape: "heart"
 			tasks: [{
 				id: "5180AC955AE4C748"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: 0.5d
+			y: 6.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -481,6 +486,23 @@
 			}]
 			x: 0.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "ktnilcks:textures/gui/lock20.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6DEB4EF33DC9F8A4"
+			tasks: [{
+				id: "2D7C31BAB3D924BD"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 6.0d
 		}
 	]
 }

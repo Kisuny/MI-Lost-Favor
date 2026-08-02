@@ -182,4 +182,10 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 40, machine: "modern_industrialization:macerator",
+        inputItems: [[{ item: "malum:large_strange_crystal" }]],
+        outputItems: [[{ item: "malum:strange_crystal" }, 2]]
+    })
+
 })

@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         ],
         inputItems:[
             [{item:"modern_industrialization:redstone_control_module"}],
-            [{item:"forbidden_arcanus:obsidiansteel_block"}],
+            [{item:"minecraft:barrier"}], //forbidden_arcanus:obsidiansteel_block
             [{item:"modern_industrialization:steel_large_plate"}],
         ],
         removeRecipe:true

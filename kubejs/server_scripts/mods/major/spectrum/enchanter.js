@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             name: "yigd:soulbound",
             level_cap: 1,
             pigment_color: "spectrum:cyan_pigment",
-            item_1: "forbidden_arcanus:soul",
+            item_1: "minecraft:barrier", // "forbidden_arcanus:soul"
             item_2: "bosses_of_mass_destruction:soul_star",
             advancement: "spectrum:midgame/build_enchanting_structure"
         },
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
             xp_scaling: [400, 800],
             item_scaling: [8, 16],
             pigment_color: "spectrum:white_pigment",
-            item_1: "forbidden_arcanus:xpetrified_orb",
+            item_1: "minecraft:barrier", //forbidden_arcanus:xpetrified_orb
             item_2: "spectrum:pure_malachite",
             advancement: "spectrum:unlocks/colored_saplings/white_sapling"
         },

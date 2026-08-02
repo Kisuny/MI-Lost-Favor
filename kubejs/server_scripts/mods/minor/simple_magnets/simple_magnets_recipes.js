@@ -34,17 +34,4 @@ ServerEvents.recipes(event => {
             [{ fluid: "modern_industrialization:soldering_alloy"}, 1132]
         ]
     })
-
-
-    addHephaestusRitual("advanced_magnet", {
-        enhancers: "forbidden_arcanus:elementarium",
-        essences: { aureal: 200, blood: 1000, souls: 10, experience: 666 },
-        mainIngredient: "simplemagnets:basicmagnet",
-        inputs: [
-            { item: "companions:relic_gold", amount: 5 },
-            { item: "bosses_of_mass_destruction:charged_ender_pearl", amount: 1 },
-            { item: "milf:magnet_part", amount: 2 },
-        ],
-        result: "simplemagnets:advancedmagnet",
-    })
 });

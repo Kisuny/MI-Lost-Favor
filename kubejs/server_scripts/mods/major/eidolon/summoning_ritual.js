@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     
     brazierSummon(event, {
         output: "goblintraders:goblin_trader",
-        pedestals: ["forbidden_arcanus:bat_wing", "eidolon_repraised:soul_shard"],
+        pedestals: ["minecraft:barrier", "eidolon_repraised:soul_shard"], // "forbidden_arcanus:bat_wing"
         reagent: "milf:larva"
     })
 

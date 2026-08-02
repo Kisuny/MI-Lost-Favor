@@ -78,12 +78,6 @@ ItemEvents.modifyTooltips(event => {
     addOre('spectrum:stratine_ore', [NE(4, 63)]);
     addOre(['spectrum:malachite_ore', 'spectrum:deepslate_malachite_ore', 'spectrum:blackslag_malachite_ore'], [DD(-316, -256)]);
 
-    // ── Forbidden Arcanus ────────────────────────────────────────────────────
-    addOre(['forbidden_arcanus:arcane_crystal_ore', 'forbidden_arcanus:deepslate_arcane_crystal_ore'], [ES(-40, 14)]);
-    addOre(['forbidden_arcanus:runic_stone', 'forbidden_arcanus:runic_deepslate', 'forbidden_arcanus:runic_darkstone'], [ES(-64, 2)]);
-    addOre('forbidden_arcanus:stella_arcanum', [ES(-44, 42)]);
-    addOre('forbidden_arcanus:darkstone', [ES(-64, -51)]);
-
     // ── Malum ────────────────────────────────────────────────────
     addOre(['malum:brilliant_stone', 'malum:brilliant_deepslate'], [ES(-64, 40)]);
     addOre(['malum:natural_quartz_ore', 'malum:deepslate_quartz_ore'], [ES(-64, 10)]);

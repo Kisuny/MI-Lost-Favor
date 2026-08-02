@@ -37,18 +37,5 @@ ServerEvents.recipes(event => {
             "count": 1
         }
     })
-    customShrineRecipe(event, {
-        time: 220,
-        experience: 8.0,
-        fluid: "modern_industrialization:liquid_air",
-        ingredients: [
-            { "item": "eidolon_repraised:holy_symbol", count: 1 },
-            { "item": "modern_industrialization:bioresistant_alloy_dust", count: 18 }
-        ],
-        result: {
-            "id": "forbidden_arcanus:divine_pact",
-            "count": 1
-        }
-    })
 
 })

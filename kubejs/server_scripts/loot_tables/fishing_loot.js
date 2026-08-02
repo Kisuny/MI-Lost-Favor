@@ -26,8 +26,6 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("endrem:guardian_eye").withWeight(25))
             pool.addEntry(LootEntry.of("endrem:exotic_eye").withWeight(25))
             pool.addEntry(LootEntry.of("endrem:cryptic_eye").withWeight(25))
-            pool.addEntry(LootEntry.of("forbidden_arcanus:artisan_relic").withWeight(25))
-            pool.addEntry(LootEntry.of("forbidden_arcanus:elementarium").withWeight(25))
             pool.addEntry(LootEntry.of("aquaculture:neptunium_axe").withWeight(10))
             pool.addEntry(LootEntry.of("aquaculture:neptunium_pickaxe").withWeight(10))
             pool.addEntry(LootEntry.of("aquaculture:neptunium_shovel").withWeight(10))

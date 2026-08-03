@@ -194,6 +194,7 @@ ItemEvents.firstRightClicked("milf:dev_pen", event => {
                 BlockProperties.WEST,
                 BlockProperties.SOUTH,
                 BlockProperties.EAST,
+                BlockProperties.WATERLOGGED
 
             ].map(property => property.getName())
 

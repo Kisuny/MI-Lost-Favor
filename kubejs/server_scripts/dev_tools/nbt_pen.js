@@ -1,4 +1,5 @@
-let nbtPenMode = 0
+
+let nbtPenModeState = 0
 let nbtPenAabb = AABB.CUBE
 let nbtPenMIBlockEntity
 
@@ -8,30 +9,40 @@ let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 let $IntArrayTag = Java.loadClass("net.minecraft.nbt.IntArrayTag")
 let $StringTag = Java.loadClass("net.minecraft.nbt.StringTag")
 let $JavaArrayList = Java.loadClass("java.util.ArrayList")
-let $HashMap = Java.loadClass("java.util.HashMap")
-let $Rotation = Java.loadClass("net.minecraft.world.level.block.Rotation")
+let $StructureTemplate = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate")
+let $StructurePlaceSettings = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
+let $StructureBlockInfo = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo")
+let $Mirror = Java.loadClass("net.minecraft.world.level.block.Mirror")
+let $NbtOps = Java.loadClass("net.minecraft.nbt.NbtOps")
 
 
 ItemEvents.firstRightClicked("milf:nbt_pen", event => {
     if(!event.getTarget()?.block.getPos()) return
     let blockpos = event.getTarget().block.getPos()
-    switch (nbtPenMode) {
+    switch (nbtPenModeState) {
         case 0:
-            nbtPenAabb = AABB.ofBlock(blockpos.offset(0,0,0))
-            nbtPenAabb = nbtPenAabb.minmax(AABB.ofBlock(blockpos.offset(0,0,0)))
-            event.player.tell(Text.info(`RMB to add, Shift+RMB to cancel`))
+            nbtPenAabb = AABB.ofBlock(blockpos.offset(0,1,0))
+            //nbtPenAabb = nbtPenAabb.minmax(AABB.ofBlock(blockpos.offset(0,0,0)))
             break;
         case 1:
-            if(event.player.crouching) break;
+
+            nbtPenAabb = nbtPenAabb.minmax(AABB.ofBlock(blockpos.offset(0, -1, 0)))
+            event.player.tell(Text.info(`RMB on controller to save, Shift+RMB to cancel`))
+            break;
+        case 2:
+            let {level, player} = event
+
+            if(player.crouching) break;
+
             nbtPenMIBlockEntity = event.getTarget().block.getEntity()
+
             if(!nbtPenMIBlockEntity) break
-
-
             
             if(nbtPenMIBlockEntity.getActiveShape() instanceof $ActiveShapeComponent) {
                 nbtPenMIBlockEntity = nbtPenMIBlockEntity.getActiveShape()
             }
-            let NBTData = convertPosMemberMapToNBT(nbtPenMIBlockEntity.getActiveShape().simpleMembers, event.getTarget().block)
+            let NBTData = getNBTDataFromAABB(nbtPenAabb, level, player.getHorizontalFacing())
+            //let NBTData = getNBTDataFromMembersAndController(nbtPenMIBlockEntity.getActiveShape().simpleMembers, event.getTarget().block)
             //console.log(NBTData);
             let shape = ""
             //console.log(event.getTarget().block.entityData);
@@ -42,32 +53,138 @@ ItemEvents.firstRightClicked("milf:nbt_pen", event => {
             let path = `kubejs/data/${event.getTarget().block.getId().split(":")[0]}/structure/multiblocks/${event.getTarget().block.getId().split(":")[1] + shape}.nbt`
             NBTIO.write(path, NBTData)
             event.player.tell(Text.info(`Saved to: ${path}`))
-            break;
+
+            console.log(NBTData);
+            
     }
-    nbtPenMode ++
-    nbtPenMode %= 2
+    nbtPenModeState ++
+    nbtPenModeState %= 3
     return
 })
 
-function convertPosMemberMapToNBT(map, block){
+function getNBTDataFromAABB(/** @type {nbtPenAabb} */ aabb, level, /** @type {$Direction} */ playerDirection ){
+    
+    let tempTemplate = new $StructureTemplate()
+    
+    let tempTemplateSize = new Vec3i(
+        aabb.xsize,
+        aabb.ysize,
+        aabb.zsize
+    )
 
-    let BSMap = new $HashMap()
 
-    BSMap.put(new BlockPos(0,0,0), block.getBlockState())
+    let startPos = BlockPos.containing(aabb.getMinPosition()).immutable()
 
-    map.forEach((blockPos, simpleMember) => {
-        let blockState = simpleMember.getPreviewState().rotate($Rotation.CLOCKWISE_180)
-        BSMap.put(blockPos, blockState)
+    console.log(startPos);
+    console.log(tempTemplateSize);
+
+    let kjsWhy = new BlockPos(
+        aabb.xsize,
+        aabb.ysize,
+        aabb.zsize).immutable()
+
+    
+    tempTemplate.fillFromWorld(
+        level,
+        startPos,
+        kjsWhy,
+        false,
+        null
+    )
+
+    let zeroPos = BlockPos.ZERO
+    let relativeRotation = getRelativeRotation()
+    let inverseRotation = getInverseRotation(relativeRotation)
+
+    let rotatedBounds = $StructureTemplate["transform(net.minecraft.core.BlockPos,net.minecraft.world.level.block.Mirror,net.minecraft.world.level.block.Rotation,net.minecraft.core.BlockPos)"](
+        zeroPos.offset(kjsWhy).immutable(),
+        $Mirror.NONE,
+        relativeRotation,
+        zeroPos
+    )
+
+    let normalizedSize = new Vec3i(
+        Math.abs(rotatedBounds.getX()),
+        Math.abs(rotatedBounds.getY()),
+        Math.abs(rotatedBounds.getZ())
+    )
+
+    let settings = new $StructurePlaceSettings()
+    let templateBlocks = []
+
+    tempTemplate.palettes.forEach(palette => 
+        palette.blocks().forEach(blockInfo => 
+            templateBlocks.push(blockInfo)) )
+
+    //let transformedBlocks = new $ArrayList()
+
+
+    let posStateMap = new $HashMap()
+
+
+    templateBlocks.forEach( blockInfo => {
+        let rotatedPos = $StructureTemplate["transform(net.minecraft.core.BlockPos,net.minecraft.world.level.block.Mirror,net.minecraft.world.level.block.Rotation,net.minecraft.core.BlockPos)"](
+            blockInfo.pos(), 
+            $Mirror.NONE,
+            relativeRotation, 
+            zeroPos
+        )
+        rotatedPos = offsetToPositiveSpace(rotatedPos)
+        let rotatedState = blockInfo.state().rotate(level, rotatedPos, inverseRotation)
+
+        //transformedBlocks.add(new $StructureBlockInfo(rotatedPos, rotatedState, blockInfo.nbt()))
+        posStateMap.put(rotatedPos, rotatedState)
     })
 
-    //console.log(BSMap);
+    //console.log(posStateMap);
     
 
+    return convertPosStateMapToNBT(posStateMap)
+
+    // let finalTemplate = new $StructureTemplate()
+    // let tempNbt = tempTemplate.save(new $CompoundTag())
+
+    function getInverseRotation(/** @type {$Rotation} */ rotation) {
+        if (rotation == $Rotation.CLOCKWISE_90) return $Rotation.COUNTERCLOCKWISE_90
+        if (rotation == $Rotation.COUNTERCLOCKWISE_90) return $Rotation.CLOCKWISE_90
+        if (rotation == $Rotation.CLOCKWISE_180) return $Rotation.NONE
+        return rotation
+    }
+
+
+    function getRelativeRotation(){
+        switch (playerDirection) {
+            case Direction.NORTH:
+                return $Rotation.CLOCKWISE_180
+            case Direction.WEST:
+                return $Rotation.COUNTERCLOCKWISE_90
+            case Direction.EAST:
+                return $Rotation.CLOCKWISE_90
+            default:
+                return $Rotation.NONE
+        }
+    }
+
+    function offsetToPositiveSpace(rotatedPos){
+        switch (relativeRotation) {
+            case $Rotation.CLOCKWISE_90:
+                return rotatedPos.offset(tempTemplateSize.getZ() - 1, 0, 0)
+            case $Rotation.CLOCKWISE_180:
+                return rotatedPos.offset(tempTemplateSize.getX() - 1, 0, tempTemplateSize.getZ() - 1)
+            case $Rotation.COUNTERCLOCKWISE_90:
+                return rotatedPos.offset(0, 0, tempTemplateSize.getX() - 1)
+            default:
+                return rotatedPos
+        }
+    }
     
+}
+
+function convertPosStateMapToNBT(posStateMap){
     let minX = 10000, minY = 10000, minZ = 10000
     let maxX = -10000, maxY = -10000, maxZ = -10000
 
-    BSMap.keySet().forEach(pos =>{
+    posStateMap.keySet().forEach(pos => {
         minX = Math.min(minX, pos.getX())
         minY = Math.min(minY, pos.getY())
         minZ = Math.min(minZ, pos.getZ())
@@ -83,32 +200,30 @@ function convertPosMemberMapToNBT(map, block){
     let paletteList = new $JavaArrayList()
     let paletteIndexMap = {}
 
-    BSMap.values().forEach(state =>{
+    posStateMap.values().forEach(state => {
         if (!paletteIndexMap[state]) {
-            paletteIndexMap[state] =  paletteList.size()
+            paletteIndexMap[state] = paletteList.size()
             paletteList.add(state)
         }
     })
 
     let blocksList = new $ListTag()
-    BSMap.forEach((blockPos, blockState) => {
-        
+    posStateMap.forEach((blockPos, blockState) => {
+
         let relativeX = sizeX - 1 - blockPos.getX() + minX
         let relativeY = blockPos.getY() - minY
         let relativeZ = sizeZ - 1 - blockPos.getZ() + minZ
 
         let blockCompound = new $CompoundTag()
-        //let nbtData = $NbtIo["readCompressed(java.io.InputStream,net.minecraft.nbt.NbtAccounter)"](inputStream, new $NbtAccounter.unlimitedHeap())
-        //blockCompound["put(string, net.minecraft.nbt.IntArrayTag(int[]))"]("pos", new $IntArrayTag([relativeX, relativeY, relativeZ]))
         blockCompound.put("pos", NBT.intArrayTag([relativeX, relativeY, relativeZ]))
-        
+
         blockCompound.putInt("state", paletteIndexMap[blockState])
 
         blocksList.add(blockCompound)
     })
 
     let paletteTag = new $ListTag()
-    paletteList.forEach(state =>{
+    paletteList.forEach(state => {
         paletteTag.add(serializeBlockState(state))
     })
 
@@ -121,19 +236,41 @@ function convertPosMemberMapToNBT(map, block){
     return root
 }
 
+function getNBTDataFromMembersAndController(map, block){
+
+    let posStateMap = new $HashMap()
+
+    posStateMap.put(new BlockPos(0,0,0), block.getBlockState())
+
+    map.forEach((blockPos, simpleMember) => {
+        let blockState = simpleMember.getPreviewState().rotate($Rotation.CLOCKWISE_180)
+        posStateMap.put(blockPos, blockState)
+    })
+
+    return convertPosStateMapToNBT(posStateMap)
+    
+}
+
 function serializeBlockState(state){
-    let tag = new $CompoundTag()
+    // let tag = new $CompoundTag()
 
-    tag.putString("Name", state.getBlock().builtInRegistryHolder().key().location().toString())
+    // tag.putString("Name", state.getBlock().builtInRegistryHolder().key().location().toString())
 
-    if (!state.getProperties().isEmpty()) {
-        let propertiesTag = new $CompoundTag()
+    // if (!state.getProperties().isEmpty()) {
+    //     let propertiesTag = new $CompoundTag()
 
-        state.getProperties().forEach( property => {
-            let value = state.getValue(property).toString()
-            propertiesTag.putString(property.getName(), value)
-        })
-        tag.put("Properties", propertiesTag)
-    }
+    //     state.getProperties().forEach( property => {
+    //         let value = state.getValue(property).toString()
+    //         propertiesTag.putString(property.getName(), value)
+    //     })
+    //     tag.put("Properties", propertiesTag)
+    // }
+
+    // console.log(tag);
+    
+    // return tag
+
+    let tag = $BlockState.CODEC.encodeStart($NbtOps.INSTANCE, state).getOrThrow()
+    //console.log(tag);
     return tag
 }

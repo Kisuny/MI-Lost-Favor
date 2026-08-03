@@ -343,7 +343,7 @@ ServerEvents.recipes(event => {
     //#region mi:machine_assembler
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "minecraft:glass_bottle" }, 6],
             [{ "item": "milf:basic_motor" }, 2],
@@ -359,7 +359,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "oritech:metal_beam_block" }, 6],
             [{ "item": "milf:basic_pump" }, 4],
@@ -375,7 +375,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:small_copper_fluid_container" }, 2],
             [{ "item": "oritech:machine_extender" }, 1],
@@ -390,7 +390,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:wirecoil_electrum" }, 8],
             [{ "item": "oritech:machine_extender" }, 1],
@@ -404,7 +404,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:wirecoil_electrum" }, 6],
             [{ "item": "oritech:machine_extender" }, 1],
@@ -419,7 +419,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:basic_motor" }, 2],
             [{ "item": "oritech:plastic_sheet" }, 8],
@@ -435,7 +435,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:wirecoil_steel" }, 6],
             [{ "item": "modern_industrialization:steel_rod" }, 6],
@@ -449,7 +449,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:small_steel_fluid_container" }, 2],
             [{ "item": "modern_industrialization:tumbaga_large_plate" }, 4],
@@ -465,7 +465,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:motor" }, 4],
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 4],
@@ -483,7 +483,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:motor" }, 6],
             [{ "item": "immersiveengineering:component_electronic_adv" }, 2],
@@ -498,7 +498,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:basic_motor" }, 2],
             [{ "item": "immersiveengineering:component_electronic_adv" }, 2],
@@ -513,7 +513,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:pump" }, 2],
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 6],
@@ -527,7 +527,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:basic_motor" }, 2],
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 4],
@@ -543,7 +543,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:motor" }, 4],
             [{ "item": "modern_industrialization:tumbaga_large_plate" }, 4],
@@ -559,7 +559,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:basic_motor" }, 4],
             [{ "item": "modern_industrialization:tumbaga_large_plate" }, 4],
@@ -575,7 +575,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "milf:basic_motor" }, 8],
             [{ "item": "oritech:flux_gate" }, 1],
@@ -590,7 +590,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "oritech:carbon_fibre_strands" }, 3],
             [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
@@ -605,7 +605,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 12, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 12, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:piston" }, 4],
             [{ "item": "modern_industrialization:electronic_circuit" }, 2],

@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
             [{ "tag": "immersiveengineering:treated_wood" }, 12],
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
             [{ "tag": "immersiveengineering:treated_wood" }, 12],
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ item: "immersiveengineering:component_electronic_adv" }, 1],
             [{ item: "modern_industrialization:cupronickel_wire_magnetic" }, 8],
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ item: "immersiveengineering:component_electronic_adv" }, 1],
             [{ item: "modern_industrialization:cupronickel_wire_magnetic" }, 4],
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 32, time: 200, machine: "modern_industrialization:machine_assembler",
+        energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
             [{ item: "modern_industrialization:large_motor" }, 4],
             [{ item: "modern_industrialization:electronic_circuit" }, 2],

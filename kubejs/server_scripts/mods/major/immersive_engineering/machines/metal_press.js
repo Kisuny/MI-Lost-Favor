@@ -209,6 +209,8 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:rubber_boots" }, 1]],
         mold: { item: "minecraft:iron_boots" },
         energy: 3200,
+        removeRecipe:true,
+        compatOff:true
     })
 
     iePressRecipe(event, {
@@ -216,6 +218,8 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:rubber_helmet" }, 1]],
         mold: { item: "minecraft:iron_helmet" },
         energy: 3200,
+        removeRecipe: true,
+        compatOff: true
     })
 
 })

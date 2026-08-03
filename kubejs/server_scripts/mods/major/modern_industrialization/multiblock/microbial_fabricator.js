@@ -92,7 +92,8 @@ ServerEvents.recipes(event => {
             [{ fluid: "milf:alien_goo" }, 125, 0.95],
             [{ fluid: "milf:alien_goo" }, 125, 0.65],
         ],
-        outputItems: [[{ item: "oritech:enderic_compound" }, 1]]
+        outputItems: [[{ item: "oritech:enderic_compound" }, 1]],
+        //custom_condition: "tier_gated"
     })
 
 })

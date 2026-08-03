@@ -41,43 +41,43 @@
       }
     },
     "crack": {
-      "base_crack_size": 1.0,
-      "crack_point_offset": 10,
-      "generate_crack_chance": 0.3
+      "base_crack_size": 1.3,
+      "crack_point_offset": 9,
+      "generate_crack_chance": 1
     },
     "distribution_points": {
       "type": "minecraft:uniform",
       "value": {
-        "max_inclusive": 2,
-        "min_inclusive": 1
+        "max_inclusive": 8,
+        "min_inclusive": 7
       }
     },
-    "invalid_blocks_threshold": 25,
+    "invalid_blocks_threshold": 1,
     "layers": {
-      "filling": 0.4,
+      "filling": 0.55,
       "inner_layer": 2.2,
-      "middle_layer": 3.3,
-      "outer_layer": 6.6
+      "middle_layer": 2.6,
+      "outer_layer": 3.1
     },
-    "max_gen_offset": 16,
-    "min_gen_offset": -16,
-    "noise_multiplier": 0.05,
+    "max_gen_offset": 32,
+    "min_gen_offset": -32,
+    "noise_multiplier": 0.075,
     "outer_wall_distance": {
       "type": "minecraft:uniform",
       "value": {
-        "max_inclusive": 6,
-        "min_inclusive": 4
+        "max_inclusive": 3,
+        "min_inclusive": 2
       }
     },
     "placements_require_layer0_alternate": true,
     "point_offset": {
       "type": "minecraft:uniform",
       "value": {
-        "max_inclusive": 2,
-        "min_inclusive": 1
+        "max_inclusive": 5,
+        "min_inclusive": 4
       }
     },
     "use_alternate_layer0_chance": 0.083,
-    "use_potential_placements_chance": 0.0
+    "use_potential_placements_chance": 0.1
   }
 }

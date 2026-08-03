@@ -16,7 +16,7 @@ registerMIMachine('enigma_machine', {
     shapeKeys: {
         M: "immersiveengineering:sheetmetal_steel",
         P: "immersiveengineering:treated_wood_horizontal",
-        H: { id: "immersiveengineering:basic_engineering", hatches: MI_HATCHES_ALL },
+        H: { id: "immersiveengineering:basic_engineering", hatches: MI_HATCHES.ALL },
         S: "immersiveengineering:slab_sheetmetal_steel",
         L: "immersiveengineering:logic_unit",
         B: "xkdeco:hollow_steel_beam",
@@ -62,22 +62,6 @@ registerMIMachine('radio_transcriber', {
     mainCasing: 'treated_wood_casing', mainOverlays: 'enigma_overlays', frontOverlay: true
 })
 
-registerMIMachine('machine_assembler', {
-    itemsIn: true, itemsOut: true,
-    casing: 'machine_plating_block',
-    shape: [['AAA', 'aBa', 'AAA'],
-    ['AAA', 'B B', 'AAA'],
-    ['AAA', 'a#a', 'AAA']],
-    shapeKeys: {
-        "A": { id: "oritech:machine_plating_block", hatches: ["energy_input", "item_input", "item_output"] },
-        "a": "immersiveengineering:light_engineering",
-        "B": "immersiveengineering:logic_unit"
-    },
-    pBar: { x: 54, y: 69, name: 'square' },
-    itemInputSlots: [[20, 35, 2, 2], [74, 35, 2, 2], [20, 89, 2, 2], [74, 89, 2, 2]],
-    itemOutputSlots: [[56, 71, 1, 1]],
-    mainCasing: 'light_engineering', mainOverlays: 'multiblock_packer', frontOverlay: true
-})
 
 registerMIMachine('steam_cracker', {
     itemsOut: true, fluidsIn: true, fluidsOut: true, casing: 'sheetmetal_steel_casing',
@@ -163,7 +147,7 @@ registerMIMachine('electric_coke_oven', {
         "A": "modern_industrialization:heatproof_machine_casing",
         "a": "modern_industrialization:cupronickel_coil",
         "B": "modern_industrialization:invar_machine_casing_pipe",
-        "H": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL }
+        "H": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL }
     },
     pBar: { x: 77, y: 33, name: 'arrow' },
     itemInputSlots: [[56, 35, 1, 2]],
@@ -192,7 +176,7 @@ registerMIMachine('source_alembic', {
     ],
     shapeKeys: {
         "A": {id: "ars_nouveau:sourcestone_large_bricks", tag: "ars_nouveau:purple_bricks"},
-        "a": {id: "ars_nouveau:sourcestone", tag: "ars_nouveau:sourcestones", hatches: MI_HATCHES_ALL},
+        "a": {id: "ars_nouveau:sourcestone", tag: "ars_nouveau:sourcestones", hatches: MI_HATCHES.ALL},
         "B": {id: "ars_nouveau:sourcestone", tag: "ars_nouveau:sourcestones"},
         "b": {id: "spectrum:amethyst_glass", tag: "spectrum:gemstone_glass"},
         "C": {id: "spectrum:amethyst_powder_block", tag: "spectrum:gemstone_powder_blocks"},

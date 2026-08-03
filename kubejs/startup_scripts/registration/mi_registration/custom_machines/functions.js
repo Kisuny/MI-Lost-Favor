@@ -7,7 +7,6 @@ let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
 
 global.miTweaksTags = global.miTweaksTags || []
 
-const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input", "fluid_output"]
 const machineTiersAll = ["bronze", "steel", "electric"]
 
 let miRecipeRegistry = {}
@@ -190,7 +189,7 @@ function registerSinglePowerlessMIMachine(id, args){
 //         "A": "modern_industrialization:heatproof_machine_casing",
 //         "a": "modern_industrialization:cupronickel_coil",
 //         "B": "modern_industrialization:invar_machine_casing_pipe",
-//         "H": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL }
+//         "H": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL }
 //     },
 //     pBar: { x: 77, y: 33, name: 'arrow' },
 //     itemInputSlots: [[56, 35, 1, 2]],

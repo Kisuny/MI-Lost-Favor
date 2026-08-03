@@ -5,7 +5,7 @@ registerBatchMIMachineFromExisting('advanced_large_steam_furnace', {
     ['BAB', 'B B', 'BaB'],
     ['AAA', 'a#a', 'aaa']],
     shapeKeys: {
-        "A": { id: "modern_industrialization:fire_clay_bricks", hatches: MI_HATCHES_ALL },
+        "A": { id: "modern_industrialization:fire_clay_bricks", hatches: MI_HATCHES.ALL },
         "a": "modern_industrialization:bronze_plated_bricks",
         "B": "modern_industrialization:bronze_machine_casing_pipe"
     },
@@ -24,7 +24,7 @@ registerTieredMIMachine('large_electric_furnace', {
             ['BAB', 'B B', 'B B', 'BAB'],
             ['A#A', 'aaa', 'aaa', 'AAA']],
             shapeKeys: {
-                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL },
+                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL },
                 "a": "modern_industrialization:cupronickel_coil",
                 "B": "modern_industrialization:invar_machine_casing_pipe"
             },
@@ -38,7 +38,7 @@ registerTieredMIMachine('large_electric_furnace', {
             ['BAB', 'B B', 'B B', 'BAB'],
             ['A#A', 'aaa', 'aaa', 'AAA']],
             shapeKeys: {
-                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL },
+                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL },
                 "a": "modern_industrialization:kanthal_coil",
                 "B": "modern_industrialization:invar_machine_casing_pipe"
             },
@@ -60,7 +60,7 @@ registerBatchMIMachineFromExisting('advanced_steam_blast_furnace', {
     ['AaaaA', 'Aa#aA', 'AaaaA', ' BBB ']],
     shapeKeys: {
         "A": "immersiveengineering:blastbrick",
-        "a": { id: "extended_industrialization:steel_plated_bricks", hatches: MI_HATCHES_ALL },
+        "a": { id: "extended_industrialization:steel_plated_bricks", hatches: MI_HATCHES.ALL },
         "B": "immersiveengineering:slab_blastbrick"
     },
     mainCasing: 'steel_plated_bricks', mainOverlays: 'blast_furnace', frontOverlay: true,
@@ -76,7 +76,7 @@ registerBatchMIMachine('advanced_steam_alloy_smelter', {
     ['AAaAA', 'AA#AA', 'AAaAA', 'BBaBB']],
     shapeKeys: {
         "A": "immersiveengineering:alloybrick",
-        "a": { id: "extended_industrialization:steel_plated_bricks", hatches: MI_HATCHES_ALL },
+        "a": { id: "extended_industrialization:steel_plated_bricks", hatches: MI_HATCHES.ALL },
         "B": "immersiveengineering:slab_alloybrick",
         "b": "modern_industrialization:fire_clay_bricks"
     },

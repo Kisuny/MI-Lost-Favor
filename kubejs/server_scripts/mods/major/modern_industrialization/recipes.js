@@ -156,26 +156,6 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
     }
 }
 
-// let $ElectricTieredCraftingMultiblockBlockEntity = Java.loadClass("net.swedz.mi_tweaks.machine.blockentity.multiblock.tiered.ElectricTieredCraftingMultiblockBlockEntity")
-
-// MIRecipeEvents.customCondition(event => {
-
-//     event.registerWithIcon(`tier_gated`,
-//         (context, recipe) => {
-//             let blockEntity = context.blockEntity
-
-//             if (blockEntity instanceof $ElectricTieredCraftingMultiblockBlockEntity){
-//                 return blockEntity.baseMaxRecipeEu >= recipe.eu
-//             }
-
-//             return false
-//         },
-//         Item.of("milf:mi_upgrader"),
-//         Text.translatable(`milf.mi_condition.tier_gated`)
-//     )
-
-// })
-
 let miMachinesCompat = {
     "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
 }

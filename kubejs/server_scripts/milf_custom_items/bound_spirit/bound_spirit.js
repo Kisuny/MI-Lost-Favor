@@ -1,7 +1,4 @@
 
-let $DeathInfoManager = Java.loadClass("com.b1n_ry.yigd.data.DeathInfoManager")
-let $ResolvableProfile = Java.loadClass("net.minecraft.world.item.component.ResolvableProfile")
-let $GraveStatus = Java.loadClass("com.b1n_ry.yigd.data.GraveStatus")
 
 PlayerEvents.respawned(event => {
     if(event.isEndConquered()) return
@@ -35,7 +32,7 @@ PlayerEvents.respawned(event => {
 
 function getLastGrave(player) {
     let profile = new $ResolvableProfile(player.getGameProfile())
-    let graves = new $JavaArrayList($DeathInfoManager.INSTANCE.getBackupData(profile))
+    let graves = new $ArrayList($DeathInfoManager.INSTANCE.getBackupData(profile))
 
     graves.removeIf(graveComponent => graveComponent.getStatus() != $GraveStatus.UNCLAIMED)
     if (graves.isEmpty()) {

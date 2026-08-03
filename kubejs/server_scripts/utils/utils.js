@@ -1,6 +1,3 @@
-let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
-let $SoundSource = Java.loadClass("net.minecraft.sounds.SoundSource")
-
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }

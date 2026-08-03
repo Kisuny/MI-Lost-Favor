@@ -1,8 +1,6 @@
 let devPenState = 0
 let devPenAABB = AABB.CUBE
 
-let $BlockState = Java.loadClass("net.minecraft.world.level.block.state.BlockState")
-let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
 
 ItemEvents.firstRightClicked("milf:dev_pen", event => {
     if(!event.getTarget()?.block.getPos()) return

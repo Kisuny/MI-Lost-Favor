@@ -1,4 +1,3 @@
-let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 const CHUNK_FLAG = "milf:chunk_flag"
 
 BlockEvents.rightClicked(CHUNK_FLAG, event =>{

@@ -1,7 +1,3 @@
-const $BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
-const $HeightmapTypes = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap$Types")
-const $BedBlock = Java.loadClass("net.minecraft.world.level.block.BedBlock")
-
 ServerEvents.tick(event => {
     event.server.getPlayerList().getPlayers().forEach(player => {
         let persistentData = player.getPersistentData()

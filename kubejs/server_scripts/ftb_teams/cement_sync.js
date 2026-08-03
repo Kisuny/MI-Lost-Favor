@@ -1,6 +1,3 @@
-let $AdvancementProgressEvent = Java.loadClass("net.neoforged.neoforge.event.entity.player.AdvancementEvent$AdvancementProgressEvent")
-let $AdvancementEarnEvent = Java.loadClass("net.neoforged.neoforge.event.entity.player.AdvancementEvent$AdvancementEarnEvent")
-
 // ItemEvents.firstRightClicked("modern_industrialization:steel_rod", event => {
 //     if (event.hand == "OFF_HAND") return false
 //     if (event.level.isClientSide()) return false

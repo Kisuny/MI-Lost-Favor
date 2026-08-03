@@ -1,4 +1,3 @@
-let $Block = Java.loadClass("net.minecraft.world.level.block.Block")
 
 BlockEvents.rightClicked("grimoireofgaia:deco_garden_gnome", event => {
     const player = event.entity;

@@ -1,4 +1,3 @@
-let $FinalizeSpawnEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent")
 
 NativeEvents.onEvent($FinalizeSpawnEvent, event => {
     let level = event.getLevel()

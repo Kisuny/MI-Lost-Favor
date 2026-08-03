@@ -11,27 +11,38 @@ const BLOCK_REPLACEMENTS = {
     'eidolon_repraised:crucible': 'minecraft:cauldron',
     'minecraft:anvil' :  "minecraft:grindstone",
     'minecraft:chipped_anvil' : "minecraft:grindstone",
-    'minecraft:damaged_anvil': "minecraft:grindstone",
-};
-
+    'minecraft:damaged_anvil': "minecraft:grindstone"
+}
 MoreJS.structureLoad((event) => {
+
     event.forEachPalettes((palette) => {
+
         palette.forEach((blockInfo) => {
-            const replacement = BLOCK_REPLACEMENTS[blockInfo.id];
+
+            let replacement = BLOCK_REPLACEMENTS[blockInfo.id]
+
             if (replacement) {
-                // console.log(`[milf] ${event.id}: ${blockInfo.id} -> ${replacement}`);
-                blockInfo.setBlock(replacement);
-                return;
+                //console.log(`[milf] ${event.id}: ${blockInfo.id} -> ${replacement} | pos: ${blockInfo.pos()}`);
+                
+                let oldProperties = blockInfo.properties                
+                blockInfo.setBlock(replacement, oldProperties)
+
+                return
             }
 
             if (blockInfo.id === 'minecraft:jigsaw') {
-                const finalState = blockInfo.getNbt().getString('final_state');
-                const jigsawReplacement = BLOCK_REPLACEMENTS[finalState];
+
+                let finalState = blockInfo.getNbt()?.getString('final_state')
+                let jigsawReplacement = BLOCK_REPLACEMENTS[finalState]
+
                 if (jigsawReplacement) {
                     // console.log(`[milf] ${event.id}: jigsaw final_state ${finalState} -> ${jigsawReplacement}`);
-                    blockInfo.nbt().putString('final_state', jigsawReplacement);
+                    blockInfo.getNbt().putString('final_state', jigsawReplacement)
                 }
             }
-        });
-    });
-});
+
+        })
+
+    })
+    
+})

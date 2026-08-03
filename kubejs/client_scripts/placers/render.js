@@ -43,6 +43,9 @@ NetworkEvents.dataReceived('placers_render', (event) => {
     let vertexBuffer = getVertexBuffer(structureData)
 
     if (vertexBuffer) {
+        if (placersToRender.has(boxPosHash)) {
+            placersToRender.get(boxPosHash).close()
+        }
         placersToRender.set(boxPosHash, vertexBuffer)
         placersData.set(boxPosHash, { isVisible: true, originPos: boxPos })
     }
@@ -53,6 +56,10 @@ NetworkEvents.dataReceived('placers_remove_render', (event) => {
 
     let boxBlockPosTag = event.data.boxPos
     let boxPosHash = new BlockPos(boxBlockPosTag.getInt("x"), boxBlockPosTag.getInt("y"), boxBlockPosTag.getInt("z")).hashCode()
+
+    if (placersToRender.has(boxPosHash)){
+        placersToRender.get(boxPosHash).close()
+    }
 
     placersToRender.delete(boxPosHash)
     placersData.delete(boxPosHash)

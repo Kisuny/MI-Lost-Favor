@@ -9,8 +9,8 @@ let placersGuiTicks = Platform.isClientEnvironment() ? 0 : null
 let placersGuiAnimationTV = Platform.isClientEnvironment() ? 1 : null
 
 
-/**@type {Object} */ const PLACER_BLOCKS = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
-/**@type {Object} */ const BOX_BLOCKS = global.AnotherDefinitelyUniqueNameForBoxes
+/**@type {Object} */ const PLACER_BLOCKS = global.PLACER_BLOCK_TO_ITEM_NAME_MAP
+/**@type {Object} */ const BOX_BLOCKS = global.EMPTY_BOX_BLOCK_TO_ITEM_NAME_MAP
 
 /**
  * @param {$GuiGraphics_} guiGraphics

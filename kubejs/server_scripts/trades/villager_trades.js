@@ -5,7 +5,8 @@ MoreJS.villagerTrades(event => {
         "immersiveengineering:electrician",
         "immersiveengineering:machinist",
         "immersiveengineering:engineer",
-        "ae2:fluix_researcher" 
+        "ae2:fluix_researcher",
+        "ars_nouveau:shady_wizard",
     ], [1, 5]
     )
 

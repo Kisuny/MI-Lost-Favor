@@ -1,3 +1,43 @@
+const customImbuementCraft = (event, args) => {
+    event.custom({
+        "type": "ars_nouveau:imbuement",
+        "input": args.input,
+        "output": {
+            "count": args.amount || 1,
+            "id": args.output
+        },
+        "pedestalItems": args.pedestalItems || [],
+        "source": args.source || 500
+    });
+    // remove by OUTPUT Not by ID!!!!
+    if (args.removeRecipe === true) {
+        event.remove({ output: args.output });
+    }
+};
+
+const customEnchantingApparatusCraft = (event, args) => {
+    event.custom({
+        "type": "ars_nouveau:enchanting_apparatus",
+        "keepNbtOfReagent": args.keepNbtOfReagent || false,
+        "pedestalItems": args.pedestalItems,
+        "reagent": args.reagent,
+        "result": {
+            "count": args.amount || 1,
+            "id": args.output
+        },
+        "sourceCost": args.sourceCost || 0
+    });
+    // remove by OUTPUT Not by ID!!!!
+    if (args.removeRecipe === true) {
+        event.remove({ output: args.output });
+    }
+    if (args.removeById) {
+        event.remove({id: args.removeById})
+    }
+};
+
+
+
 ServerEvents.recipes(event => {
     const removing_by_recipe_id = [
         "ars_nouveau:archwood_to_chest",
@@ -8,6 +48,9 @@ ServerEvents.recipes(event => {
         "ars_nouveau:archmage_book_upgrade",
         "ars_nouveau:novice_spellbook_alt",
         "ars_nouveau:novice_spell_book",
+        "ars_nouveau:imbuement_amethyst",
+        "ars_nouveau:imbuement_amethyst_block",
+        "ars_nouveau:imbuement_lapis",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -28,7 +71,17 @@ ServerEvents.recipes(event => {
         "ars_controle:scroll_holder",
         "ars_nouveau:warp_scroll",
     ]})
-
+    customImbuementCraft(event, {
+        input: { "item": "milf:mixed_gem_powder" },
+        output: "ars_nouveau:source_gem",
+        source: 500
+    })
+    customImbuementCraft(event, {
+        input: { "item": "milf:gem_composite" },
+        output: "ars_nouveau:source_gem_block",
+        source: 2000
+    })
+    
     //remove all glyphs recipes 
     Ingredient.of('#milf:glyphs').itemIds.forEach(glyph => {
         event.remove({output: glyph})
@@ -82,6 +135,50 @@ ServerEvents.recipes(event => {
     })
 
     event.replaceInput({ output: 'ars_nouveau:imbuement_chamber' }, 'minecraft:gold_ingot', 'embers:dawnstone_plate')
+
+    const itemReplacements = {
+        "minecraft:gold_ingot": "malum:hallowed_gold_ingot",
+        "minecraft:gold_block": "malum:block_of_hallowed_gold",
+    }
+    const tagReplacements = {
+        "c:ingots/gold": "malum:hallowed_gold_ingot",
+        "c:storage_blocks/gold": "malum:block_of_hallowed_gold",
+    }
+
+    const replaceIngredient = ingredient => {
+        if (ingredient.item && itemReplacements[ingredient.item]) {
+            return Object.assign({}, ingredient, { item: itemReplacements[ingredient.item] })
+        }
+        if (ingredient.tag && tagReplacements[ingredient.tag]) {
+            const replaced = Object.assign({}, ingredient, { item: tagReplacements[ingredient.tag] })
+            delete replaced.tag
+            return replaced
+        }
+        return null
+    }
+
+    event.forEachRecipe({ or: [{ type: "ars_nouveau:enchanting_apparatus" }, { type: "ars_nouveau:imbuement" }] }, recipe => {
+        let json = JSON.parse(recipe.json)
+        let changed = false
+        let mainField = json.reagent ? "reagent" : (json.input ? "input" : null)
+        let replacedMain = mainField ? replaceIngredient(json[mainField]) : null
+        if (replacedMain) {
+            json[mainField] = replacedMain
+            changed = true
+        }
+        json.pedestalItems = (json.pedestalItems || []).map(item => {
+            let replacedItem = replaceIngredient(item)
+            if (replacedItem) {
+                changed = true
+                return replacedItem
+            }
+            return item
+        })
+        if (changed) {
+            event.remove({ id: recipe.getId() })
+            event.custom(json)
+        }
+    })
 
     customPedestalCraft(event, {
         time: 400,
@@ -293,5 +390,40 @@ ServerEvents.recipes(event => {
         outputItems: [[{item: "ars_nouveau:apprentice_spell_book"}, 1]],
         removeRecipe: true
     })
+
+    spiritInfusion(event, {
+        input: { item: "oritech:machine_core_2", count: 1 },
+        result: { id: "modern_industrialization:source_alembic", count: 1 },
+        extraInputs: [
+            { item: "ars_nouveau:sourcestone", count: 8 },
+            { item: "ars_nouveau:source_gem", count: 8 },
+            { item: "spectrum:onyx_shard", count: 4 },
+        ],
+        spirits: [
+            { type: "malum:arcane", count: 12 },
+            { type: "malum:eldritch", count: 8 },
+            { type: "malum:aqueous", count: 8 },
+            { type: "malum:earthen", count: 8 },
+        ],
+    });
+
+    
+    customEnchantingApparatusCraft(event, {
+        reagent: { "item": "minecraft:redstone_block" },
+        pedestalItems: [
+            { "item": "malum:hallowed_gold_ingot" },
+            { "item": "malum:hallowed_gold_ingot" },
+            { "item": "malum:hallowed_gold_ingot" },
+            { "item": "malum:hallowed_gold_ingot" },
+            { "item": "ars_nouveau:source_gem" },
+            { "item": "ars_nouveau:source_gem" },
+            { "item": "ars_nouveau:source_gem" },
+            { "item": "ars_nouveau:source_gem" },
+        ],
+        output: "ars_nouveau:basic_spell_turret",
+        amount: 1,
+        removeById: "ars_nouveau:basic_spell_turret"
+    });
+    
 
 })

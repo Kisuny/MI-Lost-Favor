@@ -10,15 +10,18 @@ const customEnchanterCraft = (event, args) => {
     })
 }
 
-function customEnchanterUpgradeCraft(event, { bulk_item, enchantment, item_scaling, required_advancement, level_cap, xp_scaling }) {
+function customEnchanterUpgradeCraft(event, { pigment_color, enchantment, item_scaling, required_advancement, xp_scaling }) {
+    const levels = item_scaling.map((count, i) => ({
+        ingredient: { item: pigment_color },
+        ingredient_count_per_bowl: count,
+        experience: xp_scaling[i]
+    }));
+
     event.custom({
         type: "spectrum:enchantment_upgrade",
-        bulk_item: bulk_item,
         enchantment: enchantment,
-        item_scaling: item_scaling,
-        level_cap: level_cap,
-        required_advancement: required_advancement,
-        xp_scaling: xp_scaling
+        levels: levels,
+        required_advancement: required_advancement
     });
 }
 
@@ -64,20 +67,11 @@ ServerEvents.recipes(event => {
         seen.add(cfg.name);
 
         customEnchanterUpgradeCraft(event, {
-            bulk_item: {
-                item: cfg.pigment_color
-            },
+            pigment_color: cfg.pigment_color,
             enchantment: cfg.name,
-            item_scaling: {
-                type: "spectrum:indexed",
-                indexes: cfg.item_scaling
-            },
-            level_cap: cfg.level_cap,
+            item_scaling: cfg.item_scaling,
             required_advancement: cfg.advancement,
-            xp_scaling: {
-                type: "spectrum:indexed",
-                indexes: cfg.xp_scaling
-            }
+            xp_scaling: cfg.xp_scaling
         });
     });
 

@@ -27,7 +27,6 @@
 	chapter.7A58E54E4B6B5025.chapter_subtitle: ["This chapter covers all possible ways to store items and fluid"]
 	chapter.7A58E54E4B6B5025.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Storage"
 	chapter.7CCFB657E26B4699.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic II"
-	chapter.7F17ADA3E2DBCAE3.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Midgame Magic III"
 	chapter.7F3238D8C7E5EF3C.title: "Petrochemical Party"
 	chapter_group.414DFD996A564669.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Early"
 	chapter_group.4602108FDD7051BD.title: "<magic><shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Primitive"
@@ -953,7 +952,7 @@
 	quest.1A2B3C4D5E6F7003.quest_desc: ["Place the <named>Ara Vitae</named> - the sacred basin at the heart of <magic>vitaemancy</magic>. Right-click it to deposit items for altar crafting. <property>EV</property> drains steadily during workings; <blood>crimson motes</blood> rising from the surface confirm it is underway."]
 	quest.1A2B3C4D5E6F7003.title: "Construct the Ara Vitae"
 	quest.1A2B3C4D5E6F7004.quest_desc: [
-		"Lay a <keyword>diamond</keyword> upon the bare altar. With no <positive>Essentia Vitae</positive> of its own, the altar draws <blood>blood</blood> from any nearby who carry no <named>Blood Orb</named>, refining it into <positive>Essentia Vitae (EV)</positive> until the working completes. "
+		"Lay a <keyword>Attuned Stone</keyword> upon the bare altar. With no <positive>Essentia Vitae</positive> of its own, the altar draws <blood>blood</blood> from any nearby who carry no <named>Blood Orb</named>, refining it into <positive>Essentia Vitae (EV)</positive> until the working completes. "
 		""
 		"<positive>It never kills, taking only what it needs.</positive>"
 		"{@pagebreak}"
@@ -1244,12 +1243,6 @@
 		"{@pagebreak}"
 		"Прежде всего, запаситесь <keyword>гравием</keyword>, чтобы начать свое путешествие, он вам обязательно пригодится."
 	]
-	quest.235EC6F66B8527EE.quest_desc: [
-		"You can generate <keyword>clay</keyword> using <keyword>mud</keyword> and <keyword>liquid crystals</keyword>."
-		"{@pagebreak}"
-		"Вы можете генерировать <keyword>глину</keyword> используя <keyword>грязь</keyword> и <keyword>Жидкие кристаллы</keyword>"
-	]
-	quest.235EC6F66B8527EE.quest_subtitle: "müd"
 	quest.2369BD1B085AEDFB.quest_desc: [
 		"<property>Overcharges</property> every <property>Affix</property> on an <keyword>Affix Item</keyword>."
 		"{@pagebreak}"
@@ -1348,11 +1341,6 @@
 		"<positive>Place</positive> an <keyword>attractor</keyword> on an <keyword>item pipe</keyword> to allow it to pull from connected inventories. <positive>Place</positive> an <keyword>attractor</keyword> on a <keyword>fluid pipe</keyword> to increase the speed at which it pulls fluids from the network."
 		"{@pagebreak}"
 		"<positive>Установите</positive> <keyword>аттрактор</keyword> на <keyword>трубу для предметов</keyword>, чтобы он мог извлекать предметы из подключенных инвентарей. <positive>Установите</positive> <keyword>аттрактор</keyword> на <keyword>трубу для жидкостей</keyword>, чтобы увеличить скорость извлечения жидкостей из сети."
-	]
-	quest.27F5E8BA17C7EA2E.quest_desc: [
-		"The <keyword>eternal modifier</keyword> is probably the strongest of the currently implemented modifiers. However, the advantage of completely <positive>removing durability</positive> from an item and making it truly <keyword>eternal</keyword> comes with a <warning>high cost</warning>: the ritual that creates the <keyword>Eternal Stella</keyword> item requires a <keyword>Stellarite Piece</keyword> as an ingredient."
-		""
-		"The <keyword>Eternal Stella</keyword> is applicable to all items with a <keyword>durability bar</keyword>."
 	]
 	quest.28044EAC12575B59.quest_desc: [
 		"<positive>Grow</positive> the <keyword>Kindling</keyword> and take its feather by pressing <positive>Shift + RMB</positive> with <keyword>Shears</keyword> on the adult."
@@ -1535,7 +1523,6 @@
 		"[ \"Используя \", { \"text\": \"птицелов\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"351FE7156FB415A0\" } }, \" можно поймать таких мобов как пчёл или летучих мышей и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!\" ]"
 	]
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
-	quest.2D26EA473D256B54.quest_desc: ["An <keyword>upgraded variant</keyword> that allows <positive>catching boss entities</positive>"]
 	quest.2D89107A2B1F6A6C.quest_desc: [
 		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
 		""
@@ -2259,11 +2246,7 @@
 		""
 		"Чтобы открыть запись об этом блоке в книге нужно взять в руку <keyword>эхо шард</keyword>"
 	]
-	quest.4081617269AD644A.quest_desc: [
-		"[ \"Azurite can only be found in \", { \"text\": \"Eternal Starlight\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B37B11A0B0A84E6\" } }, \" dimension!\" ]"
-		"{@pagebreak}"
-		"[ \"Азурит можно найти только в измерение \", { \"text\": \"Eternal Starlight\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B37B11A0B0A84E6\" } }, \"!\" ]"
-	]
+	quest.4081617269AD644A.quest_desc: [""]
 	quest.40C152C451D65950.quest_subtitle: "WIP"
 	quest.40FBEE2028873C00.quest_desc: [
 		"My clothes are torn to bits. I feel my own academy attire does not reflect my truest desires. I must attain a new wardrobe. And I have the perfect material to make it out of."
@@ -2322,7 +2305,6 @@
 		"Automatically <positive>outputs steam</positive> from the top"
 	]
 	quest.430423172DB205F2.quest_subtitle: "Nitor?!"
-	quest.430D38FF55DB4445.quest_desc: ["<positive>Use it</positive> to apply a new <keyword>Soulbound</keyword> item modifier."]
 	quest.43141E73595BA04F.quest_desc: [
 		"A <keyword>broom</keyword> can be used to <positive>sweep chalk away</positive> quickly, without having to spend time erasing it."
 		""

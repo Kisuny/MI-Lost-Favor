@@ -1,18 +1,19 @@
 ServerEvents.recipes(event => {
 
-    customWorktable(event, {
-        pattern: [
-            " qq", 
-            " qq", 
-            "q  "
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "paganbless:runic_charge" },
+            { "item": "crittersandcompanions:silk" },
+            { "item": "crittersandcompanions:silk" },
+            { "item": "crittersandcompanions:silk" },
+            { "item": "crittersandcompanions:silk" },
+            { "item": "crittersandcompanions:silk" },
+            { "item": "crittersandcompanions:silk" },
+            { "item": "crittersandcompanions:silk" },
         ],
-        reagents: ["w   "],
-        key: {
-            "q": { "item": "crittersandcompanions:silk" },
-            "w": { "item": "eidolon_repraised:holy_symbol" },
-        },
-        result: "crittersandcompanions:grappling_hook",
+        output: "crittersandcompanions:grappling_hook",
         removeRecipe: true
-    })
-
+    });
 })

@@ -1,12 +1,5 @@
 //priority: 100
 
-// let $ImmersiveFont = Java.loadClass("toni.immersivemessages.ImmersiveFont")
-// let $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
-// let $SoundEffect = Java.loadClass("toni.immersivemessages.api.SoundEffect")
-// let $ImmersiveMessagesManager = Java.loadClass("toni.immersivemessages.ImmersiveMessagesManager")
-// let $ToniBinding = Java.loadClass("toni.lib.animation.Binding")
-// let $ToniEasingType = Java.loadClass("toni.lib.animation.easing.EasingType")
-
 const DEFAULT_WARN_NOTIFICATION_STYLE = {
     anchor:"MIDDLE_RIGHT",
     slideIn:"right",

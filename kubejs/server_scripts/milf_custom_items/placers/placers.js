@@ -1,16 +1,6 @@
 //const { $BlockRightClickedKubeEvent } = require("@package/dev/latvian/mods/kubejs/block")
 
 //priority: 10
-let $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI").api()
-let $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
-let $NbtIo = Java.loadClass("net.minecraft.nbt.NbtIo")
-let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
-let $NbtAccounter = Java.loadClass("net.minecraft.nbt.NbtAccounter")
-let $Rotation = Java.loadClass("net.minecraft.world.level.block.Rotation")
-let $Direction = Java.loadClass("net.minecraft.core.Direction")
-let $HashMap = Java.loadClass("java.util.HashMap")
-let $Integer = Java.loadClass("java.lang.Integer")
-let $Boolean = Java.loadClass("java.lang.Boolean")
 
 const { 
     PLACER_ENABLED_PROPERTY,

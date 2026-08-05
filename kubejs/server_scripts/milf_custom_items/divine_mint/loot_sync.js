@@ -1,26 +1,4 @@
 //priority: 2
-let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
-let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
-let $MobSpawnType = Java.loadClass("net.minecraft.world.entity.MobSpawnType")
-
-let $NodeUtils = Java.loadClass("com.yanny.ali.plugin.common.NodeUtils")
-let $Collections = Java.loadClass("java.util.Collections")
-let $ArrayList = Java.loadClass("java.util.ArrayList")
-let $List = Java.loadClass("java.util.List")
-
-let $PluginManager = Java.loadClass("com.yanny.ali.manager.PluginManager")
-let $IItemNode = Java.loadClass("com.yanny.ali.api.IItemNode")
-let $ListNode = Java.loadClass("com.yanny.ali.api.ListNode")
-let $LootTableNode = Java.loadClass("com.yanny.ali.plugin.common.nodes.LootTableNode")
-
-let $Collectors = Java.loadClass("java.util.stream.Collectors")
-let $ILootModifier = Java.loadClass("com.yanny.ali.api.ILootModifier")
-let $FakeLootDataManager = Java.loadClass("com.yanny.ali.manager.FakeLootDataManager")
-
-let $ItemCollectorUtils = Java.loadClass("com.yanny.ali.plugin.server.ItemCollectorUtils")
-let $Stream = Java.loadClass("java.util.stream.Stream")
-
-
 NetworkEvents.dataReceived('milf_divine_mint_sync_loot', (event) => {
 
     let level = event.getLevel()

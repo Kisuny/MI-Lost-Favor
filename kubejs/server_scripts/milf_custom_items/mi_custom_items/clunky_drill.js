@@ -1,4 +1,3 @@
-let $SteamDrillItem = Java.loadClass("aztech.modern_industrialization.items.SteamDrillItem")
 
 NetworkEvents.dataReceived('milf_clunky_drill_change_mode', (event) => {
 

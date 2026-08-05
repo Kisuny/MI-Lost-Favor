@@ -1,13 +1,4 @@
-/** @type {typeof import("net.minecraft.world.item.ItemStack").$ItemStack } */
-let $ItemStack  = Java.loadClass("net.minecraft.world.item.ItemStack")
-let $Registries = Java.loadClass("net.minecraft.core.registries.Registries")
-let $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
-let $DisabledEnchantmentsConfig = Java.loadClass("me.pajic.enchantmentdisabler.ED").CONFIG
-let $DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents")
-let $Tool = Java.loadClass("net.minecraft.world.item.component.Tool")
-let $TagKey = Java.loadClass("net.minecraft.tags.TagKey")
-let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
+
 
 const ORBCRAFT_BLACK_LIST = [  
 

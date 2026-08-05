@@ -1,6 +1,3 @@
-let $ChainKnotEntity = Java.loadClass("com.evandev.connectiblechains.entity.ChainKnotEntity")
-let $Chainable = Java.loadClass("com.evandev.connectiblechains.entity.Chainable")
-
 NetworkEvents.dataReceived('milf_grappling_gun_zipline', (event) => {
 
     let { data, player, level } = event

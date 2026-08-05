@@ -1,7 +1,4 @@
 //priority: 100
-let $patternJavaClass = Java.loadClass("java.util.regex.Pattern")
-let $matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
-
 ServerEvents.tags('item', event => {
     const allItems = Ingredient.of(`*`)
 

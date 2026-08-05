@@ -12,7 +12,6 @@ const oreIds = global.oresWithSamples.reduce((acc, ore) => {
     "framedblocks:framed_flat_ext_inner_double_slope_panel_corner" : "test"
 })
 
-let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type")
 
 ItemEvents.firstRightClicked("milf:pet_rock_on_a_leash", event => {
     if (event.hand == "OFF_HAND") return false

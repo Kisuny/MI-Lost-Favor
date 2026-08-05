@@ -1,16 +1,5 @@
 //priority: 2
 
-let $DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents")
-let $Component$Serializer = Java.loadClass("net.minecraft.network.chat.Component$Serializer")
-let $HashSet = Java.loadClass("java.util.HashSet")
-let $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
-let $MobEffectInstance = Java.loadClass("net.minecraft.world.effect.MobEffectInstance")
-let $MobEffects = Java.loadClass("net.minecraft.world.effect.MobEffects")
-let $Float = Java.loadClass("java.lang.Float")
-let $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity")
-let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag")
-
-
 let DIVINE_MINT_BOSSES_DATA = global.milfBosses
 
 NetworkEvents.dataReceived('milf_divine_mint_give_divine_coin', (event) => {
@@ -241,7 +230,6 @@ NetworkEvents.dataReceived('milf_divine_coin_spawn_boss', (event) => {
 
 })
 
-let $LivingDropsEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingDropsEvent")
 NativeEvents.onEvent($LivingDropsEvent, event => {
     let entity = event.getEntity()
     if (entity.getPersistentData().contains("milfLootModifier")){

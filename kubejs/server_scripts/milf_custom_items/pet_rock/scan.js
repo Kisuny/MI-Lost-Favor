@@ -1,10 +1,3 @@
-let $WorldTargets = Java.loadClass("com.endertech.minecraft.mods.adlods.world.WorldTargets")
-let $AdLods = Java.loadClass("com.endertech.minecraft.mods.adlods.AdLods")
-
-let $Collectors = Java.loadClass("java.util.stream.Collectors")
-let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
-let $Tag = Java.loadClass("net.minecraft.nbt.Tag")
-
 function getAllPossibleDeposits(name){
     return new $HashSet([name, name + "_vertical"])
 }

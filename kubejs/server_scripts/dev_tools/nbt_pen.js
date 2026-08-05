@@ -1,20 +1,6 @@
-
 let nbtPenModeState = 0
 let nbtPenAabb = AABB.CUBE
 let nbtPenMIBlockEntity
-
-let $ActiveShapeComponent = Java.loadClass("aztech.modern_industrialization.machines.components.ActiveShapeComponent")
-let $ListTag = Java.loadClass("net.minecraft.nbt.ListTag")
-let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
-let $IntArrayTag = Java.loadClass("net.minecraft.nbt.IntArrayTag")
-let $StringTag = Java.loadClass("net.minecraft.nbt.StringTag")
-let $JavaArrayList = Java.loadClass("java.util.ArrayList")
-let $StructureTemplate = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate")
-let $StructurePlaceSettings = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
-let $StructureBlockInfo = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo")
-let $Mirror = Java.loadClass("net.minecraft.world.level.block.Mirror")
-let $NbtOps = Java.loadClass("net.minecraft.nbt.NbtOps")
-
 
 ItemEvents.firstRightClicked("milf:nbt_pen", event => {
     if(!event.getTarget()?.block.getPos()) return
@@ -197,7 +183,7 @@ function convertPosStateMapToNBT(posStateMap){
     const sizeY = maxY - minY + 1
     const sizeZ = maxZ - minZ + 1
 
-    let paletteList = new $JavaArrayList()
+    let paletteList = new $ArrayList()
     let paletteIndexMap = {}
 
     posStateMap.values().forEach(state => {

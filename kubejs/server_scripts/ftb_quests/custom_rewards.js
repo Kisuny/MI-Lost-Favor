@@ -1,4 +1,3 @@
-let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
 
 // reward for Forge Hammer
 FTBQuestsEvents.customReward('0DC887212398806D', event => {

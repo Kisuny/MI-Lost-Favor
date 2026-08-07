@@ -1,54 +1,156 @@
-let placersToRender = new Map()
-let placersData = new Map()
+let placersToRender = new $ConcurrentHashMap()
+let placersData = new $ConcurrentHashMap()
 
 const DIRECTIONS = $Direction.values()
-const RENDER_TYPE_TRANSLUCENT = $RenderType.translucent()
-const OVERLAY_NO_OVERLAY = $OverlayTexture.NO_OVERLAY
-const MODEL_DATA_EMPTY = $ModelData.EMPTY
 
-NetworkEvents.dataReceived('placers_render', (event) => {
+NetworkEvents.dataReceived('placers_render_new', (event) => {
+    //let stamp = new Date().getTime()
+    let {data, server, level} = event
 
-    let boxBlockPosTag = event.data.boxPos
+    let boxBlockPosTag = data.getCompound("boxPos")
     let boxPos = new BlockPos(boxBlockPosTag.getInt("x"), boxBlockPosTag.getInt("y"), boxBlockPosTag.getInt("z"))
     let boxPosHash = boxPos.hashCode()
 
-    //console.log(event.data);
-    let hashedBlockStates = {}
-    let structureData = new Map()
+    let relativeStartPosTag = data.getCompound("relativeStartPos")
+    let relativeStartPos = new BlockPos(
+        relativeStartPosTag.getInt("x"),
+        relativeStartPosTag.getInt("y"),
+        relativeStartPosTag.getInt("z")
+    )
 
-    for (let data of event.data.blocks){
+    let initialDirection = $Direction.CODEC.parse(
+        $NbtOps.INSTANCE, data.get("initialDirection")
+    ).getOrThrow()    
 
-        let id = data.getString("id")
-        let properties = I_HATE_COMPOUND_TAGS(data.properties)
-        let blockPosCTag  = data.blockPos
+    let blockStatesCache = {}
+    let structureData = new $HashMap()
 
-        let idAndPropertiesHash = `${id.hashCode()}:${data.properties.hashCode()}`
+    let blocksList = data.getList("blocks", $Tag.TAG_COMPOUND)
 
-        let blockPos = new BlockPos(blockPosCTag.getInt("x"), blockPosCTag.getInt("y"), blockPosCTag.getInt("z"))
-        /**@type {$BlockState_}*/ let blockState
-        if (hashedBlockStates[idAndPropertiesHash]){
-            blockState = hashedBlockStates[idAndPropertiesHash]
+    blocksList.forEach(blockEntry => {
+        let blockPosCompoundTag = blockEntry.getCompound("blockPos")
+
+        let blockPos = new BlockPos(
+            blockPosCompoundTag.getInt("x"), 
+            blockPosCompoundTag.getInt("y"), 
+            blockPosCompoundTag.getInt("z")
+        )
+
+        let serializedBlockState = blockEntry.getCompound("blockState")
+
+        let stateHash = serializedBlockState.hashCode()
+
+        let blockState
+
+        if (blockStatesCache[stateHash]){
+            blockState = blockStatesCache[stateHash]
         } else {
-            blockState = Block.withProperties(Block.getBlock(id).defaultBlockState(), properties)
-            hashedBlockStates[idAndPropertiesHash] = blockState            
+            blockState = $NbtUtils.readBlockState(
+                level.registryAccess().lookupOrThrow($Registries.BLOCK),
+                serializedBlockState
+            )
+            blockStatesCache[stateHash] = blockState
         }
 
-        //let hash = blockPos.hashCode() + data.properties.hashCode() + id.hashCode() + boxPosHash
-        let hashedKey = `${blockPos.hashCode()}:${idAndPropertiesHash}:${boxPosHash}`
 
-        structureData.set(hashedKey,  {blockPos: blockPos, blockState: blockState})
+        let hashedKey = `${blockPos.hashCode()}:${stateHash}:${boxPosHash}`
+        structureData.put(hashedKey, { blockPos: blockPos, blockState: blockState })
+        
+    })
 
-    }
+    let meshData = getMeshData(structureData)
 
-    let vertexBuffer = getVertexBuffer(structureData)
+    if (!meshData) return
 
-    if (vertexBuffer) {
-        if (placersToRender.has(boxPosHash)) {
-            placersToRender.get(boxPosHash).close()
+    let structureVertexBuffer = new $VertexBuffer($VertexBuffer.Usage.STATIC)
+
+    structureVertexBuffer.bind()
+    structureVertexBuffer.upload(meshData)
+    $VertexBuffer.unbind()
+
+    placersToRender.compute(boxPosHash, (key, renderData) => {
+        if (renderData && renderData.vertexBuffer) {
+            renderData.vertexBuffer.close()
         }
-        placersToRender.set(boxPosHash, vertexBuffer)
-        placersData.set(boxPosHash, { isVisible: true, originPos: boxPos })
-    }
+        return {
+            vertexBuffer: structureVertexBuffer,
+            direction: initialDirection,
+            relativeStartPos: relativeStartPos
+        }
+    })
+
+    placersData.put(boxPosHash, { isVisible: true, originPos: boxPos })
+
+    
+    // Utils.supplyAsync(function()  {
+        
+    //     return getMeshData(structureData)
+    // })
+    //     .thenAccept(meshData => {
+    //         if (!meshData) return
+
+    //         Client.scheduleInTicks(0, () => {
+
+    //             let structureVertexBuffer = new $VertexBuffer($VertexBuffer.Usage.STATIC)
+
+    //             structureVertexBuffer.bind()
+    //             structureVertexBuffer.upload(meshData)
+    //             $VertexBuffer.unbind()
+
+    //             placersToRender.compute(boxPosHash, (key, renderData) => {
+    //                 if (renderData && renderData.vertexBuffer) {
+    //                     renderData.vertexBuffer.close()
+    //                 }
+    //                 return {
+    //                     vertexBuffer: structureVertexBuffer, 
+    //                     direction: initialDirection,
+    //                     relativeStartPos:relativeStartPos
+    //                 }
+    //             })
+
+    //             placersData.put(boxPosHash, { isVisible: true, originPos: boxPos })
+
+    //             //console.log(new Date().getTime() - stamp);
+    //         })
+    //     }
+    // )
+
+})
+
+NetworkEvents.dataReceived('placers_render_update', (event) => {
+
+    let { data, server, level } = event
+
+    let newRelativeStartPosTag = event.data.getCompound("newRelativeStartPos")
+    let newRelativeStartPos = new BlockPos(
+        newRelativeStartPosTag.getInt("x"), 
+        newRelativeStartPosTag.getInt("y"), 
+        newRelativeStartPosTag.getInt("z")
+    )
+
+    let boxBlockPosTag = event.data.getCompound("boxPos")
+    let boxPos = new BlockPos(boxBlockPosTag.getInt("x"), boxBlockPosTag.getInt("y"), boxBlockPosTag.getInt("z"))
+    let boxPosHash = boxPos.hashCode()
+
+    let newDirection = $Direction.CODEC.parse(
+        $NbtOps.INSTANCE, data.get("newDirection")
+    ).getOrThrow()
+
+
+
+    Client.scheduleInTicks(0, () => {
+        placersToRender.compute(boxPosHash, (key, renderData) => {
+
+            if (renderData == null) return null
+
+            let oldDirection = renderData.direction
+
+            if (oldDirection == newDirection) return Object.assign({}, renderData, {
+                relativeStartPos: newRelativeStartPos,
+            })
+
+        })
+    })
 
 })
 
@@ -57,21 +159,25 @@ NetworkEvents.dataReceived('placers_remove_render', (event) => {
     let boxBlockPosTag = event.data.boxPos
     let boxPosHash = new BlockPos(boxBlockPosTag.getInt("x"), boxBlockPosTag.getInt("y"), boxBlockPosTag.getInt("z")).hashCode()
 
-    if (placersToRender.has(boxPosHash)){
-        placersToRender.get(boxPosHash).close()
-    }
+    Client.scheduleInTicks(0, () => {
+        if (placersToRender.contains(boxPosHash)) {
+            placersToRender.get(boxPosHash).vertexBuffer.close()
+        }
 
-    placersToRender.delete(boxPosHash)
-    placersData.delete(boxPosHash)
+        placersToRender.remove(boxPosHash)
+        placersData.remove(boxPosHash)
+    })
+
+
 
 })
 
 ClientEvents.tick(event => {
     const { player } = event
-    if (placersData.size == 0) return
+    if (placersData.size() == 0) return
     if (player.tickCount % 100 != 0) return
 
-    placersData.forEach((data, hash) =>{
+    placersData.forEach((hash, data) =>{
         let originPos = data.originPos
         let chunkPos = new $ChunkPos(originPos)
         let currentChunk = Client.player.chunkPosition()
@@ -80,34 +186,38 @@ ClientEvents.tick(event => {
         let distance = Math.max(dx, dz)
 
         if (distance >= Client.options.effectiveRenderDistance) {
-            placersData.set(hash, { isVisible: false, originPos: originPos })
+            placersData.put(hash, { isVisible: false, originPos: originPos })
         } else {
-            placersData.set(hash, { isVisible: true, originPos: originPos })
+            placersData.put(hash, { isVisible: true, originPos: originPos })
         }
     })    
 })
 
-function getVertexBuffer(structureToAdd) {
-    if (structureToAdd.size == 0) { return null }
+
+function getMeshData(structureData) {
+    if (structureData.isEmpty()) { return null }
+
+    let bakedStatesCache = {}
 
     let level = Client.level
     let modelManager = Client.getModelManager()
-    let randomSource = level.getRandom()
+    let randomSource = $RandomSource.create()
 
     let tesselator = $Tesselator.getInstance()
-    let smoothQuadLighter = new $SmoothQuadLighter($BlockColors.createDefault())
+    let smoothQuadLighter = new $SmoothQuadLighter(Client.getBlockColors())
 
-    //let bufferBuilder = Client.renderBuffers().bufferSource().getBuffer(renderType)
-    let bufferBuilder = tesselator.begin($VertexFormat.Mode.QUADS, $DefaultVertexFormat.POSITION_COLOR_TEX_LIGHTMAP)
+    let byteBufferBuilder = new $ByteBufferBuilder(4194304)
 
+    let bufferBuilder = new $BufferBuilder(byteBufferBuilder, $VertexFormat.Mode.QUADS, $DefaultVertexFormat.POSITION_COLOR_TEX_LIGHTMAP)
     let tempPoseStack = new $PoseStack()
 
     let translucentModels = []
+    let dummyBlockPos = new BlockPos(0,300,0)
+    
 
-    for (const data of structureToAdd.values()) {
-        let { blockPos, blockState } = data
+    structureData.forEach((hashedKey, { blockPos, blockState }) => {
         addQuadsToBuffer(blockPos, blockState)
-    }
+    })
 
     translucentModels.forEach(data => {
         let { blockPos, blockState } = data
@@ -115,23 +225,35 @@ function getVertexBuffer(structureToAdd) {
     })
 
     let meshData = bufferBuilder.build()
+    
     if (meshData) {
-        let structureVertexBuffer = new $VertexBuffer($VertexBuffer.Usage.STATIC)
-        structureVertexBuffer.bind()
-        structureVertexBuffer.upload(meshData)
-        $VertexBuffer.unbind()
-        return structureVertexBuffer
-    } else {
-        return null
+        return meshData
     }
 
-    function addQuadsToBuffer(blockPos, /**@type {$BlockState_}*/ blockState, isTranslucent) {
+    return null
 
-        smoothQuadLighter.setup(level, blockPos, blockState)
+
+
+
+    function addQuadsToBuffer(blockPos, blockState, isSecondPass) {
+        let stateHash = blockState.toString().hashCode()
+
+        if (bakedStatesCache[stateHash]) {
+            let { allQuads, isTranslucent } = bakedStatesCache[stateHash]
+
+            if (!isSecondPass && isTranslucent) {
+                translucentModels.push({ blockPos, blockState })
+                return
+            }
+
+            putQuadsData(blockPos, allQuads)
+            return
+        }
+
+        smoothQuadLighter.setup(level, dummyBlockPos, blockState)
 
         let model = modelManager.getBlockModelShaper().getBlockModel(blockState)        
-
-        let modelData = model.getModelData(level, blockPos, blockState, MODEL_DATA_EMPTY)
+        let modelData = model.getModelData(level, blockPos, blockState, $ModelData.EMPTY)
 
         handleEntities()
         function handleEntities(){
@@ -146,89 +268,81 @@ function getVertexBuffer(structureToAdd) {
                     return
                 }
 
-                // let entity = block.newBlockEntity(blockPos, blockState)
-                // if (entity.sideConfig){
-
-                //     entity.sideConfig["put(java.lang.Object,boolean)"](Direction.WEST, false)
-                //     let compoundTag = new $CompoundTag()
-                //     compoundTag.putByte("connections", 3)
-                //     console.log(compoundTag);
-                //     console.log(entity);
-
-                //     console.log(entity.sideConfig);
-                    
-                    
-                //     entity.level = Client.level
-                //     //entity.writeCustomNBT(compoundTag, false, Client.level.registryAccess())
-                //     console.log(entity.updateConnectionByte(Direction.WEST));
-                //     console.log(entity.getAvailableConnectionByte());
-                    
-                //     console.log(entity.level);
-                    
-                //     modelData = entity.getModelData()
-                //     console.log(modelData.getProperties());
-                    
-                // }
-
             }
         }
 
         let renderTypeSet = model.getRenderTypes(blockState, randomSource, modelData)
-        let renderTypeForModel = renderTypeSet.empty ? RENDER_TYPE_TRANSLUCENT : renderTypeSet.asList().first
+        let renderTypeForModel = renderTypeSet.empty ? $RenderType.translucent() : renderTypeSet.asList().first
+        let isTranslucent = renderTypeForModel == $RenderType.translucent()
 
-        if (renderTypeForModel == RENDER_TYPE_TRANSLUCENT && !isTranslucent) {
-            translucentModels.push({ blockPos:blockPos, blockState:blockState })
-            return
-        }
+        let allQuads = []
 
+        let directionalQuadsToLightMap = new $HashMap()
+        let directinalQuads = DIRECTIONS.reduce(
+            (quadsArray, direction) =>
+                quadsArray.concat(model.getQuads(
+                    blockState, direction, randomSource, modelData, renderTypeForModel)
+                )
+            , []
+        )
 
-        tempPoseStack.pushPose()
-        tempPoseStack.translate(blockPos.getX(), blockPos.getY(), blockPos.getZ())
-        let pose = tempPoseStack.last()
-
-        for (let dir of DIRECTIONS) {
-
-            let quads = model.getQuads(blockState, dir, randomSource, modelData, renderTypeForModel)
-            for (let quad of quads) {
-
-                smoothQuadLighter.computeLightingForQuad(quad)
-
-                let baseBrightness = smoothQuadLighter.getComputedBrightness()
-                let lightmapCoords = smoothQuadLighter.getComputedLightmap()
-
-                bufferBuilder.putBulkData(pose, quad, [baseBrightness[0], baseBrightness[1], baseBrightness[2], baseBrightness[3]],
-                    1, 1, 1, 1, [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]], OVERLAY_NO_OVERLAY, false)
-
-                // let shade = Client.level.getShade(quad.getDirection(), quad.isShade())
-                // let light = $LevelRenderer.getLightColor(Client.level, blockPos)
-
-                //bufferBuilder.putBulkData(pose, quad, [shade, shade, shade, shade], 1, 1, 1, 1, [light, light, light, light] , $OverlayTexture.NO_OVERLAY, false)
-                //bufferBuilder.putBulkData(pose, quad, 1, 1, 1, 1, $LevelRenderer.getLightColor(Client.level, blockPos), $OverlayTexture.NO_OVERLAY)
-
-            }
-
-        }
-
-        let generalQuads = model.getQuads(blockState, null, randomSource, modelData, renderTypeForModel)
-        for (let quad of generalQuads) {
+        directinalQuads.forEach(quad => {
 
             smoothQuadLighter.computeLightingForQuad(quad)
 
-            let baseBrightness = smoothQuadLighter.getComputedBrightness()
-            let lightmapCoords = smoothQuadLighter.getComputedLightmap()
+            allQuads.push({
+                quad: quad,
+                baseBrightness: smoothQuadLighter.getComputedBrightness().slice(),
+                lightmapCoords: smoothQuadLighter.getComputedLightmap().slice()
+            })
+            
+        })
 
-            bufferBuilder.putBulkData(pose, quad, [baseBrightness[0], baseBrightness[1], baseBrightness[2], baseBrightness[3]],
-                1, 1, 1, 1, [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]], OVERLAY_NO_OVERLAY, false)
+        //console.log(directionalQuadsToLightMap);
+        
 
-            // let shade = Client.level.getShade(quad.getDirection(), quad.isShade())
-            // let light = $LevelRenderer.getLightColor(Client.level, blockPos)
+        let generalQuadsToLightMap = new $HashMap()
+        let generalQuads = model.getQuads(blockState, null, randomSource, modelData, renderTypeForModel)
 
-            //bufferBuilder.putBulkData(pose, quad, [shade, shade, shade, shade], 1, 1, 1, 1, [light, light, light, light], $OverlayTexture.NO_OVERLAY, false)
-            //bufferBuilder.putBulkData(pose, quad, 1, 1, 1, 1, $LevelRenderer.getLightColor(Client.level, blockPos), $OverlayTexture.NO_OVERLAY)
+        generalQuads.forEach(quad => {
 
+            smoothQuadLighter.computeLightingForQuad(quad)
+
+            allQuads.push({
+                quad: quad,
+                baseBrightness: smoothQuadLighter.getComputedBrightness().slice(),
+                lightmapCoords: smoothQuadLighter.getComputedLightmap().slice()
+            })
+            
+        })
+
+        bakedStatesCache[stateHash] = { allQuads: allQuads, isTranslucent: isTranslucent }
+
+        if (isTranslucent && !isSecondPass) {
+            translucentModels.push({ blockPos: blockPos, blockState: blockState })
+            return
         }
 
-        tempPoseStack.popPose()
+        putQuadsData(blockPos, allQuads)
+
+        function putQuadsData(blockPos, allQuads){
+            tempPoseStack.pushPose()
+            tempPoseStack.translate(blockPos.getX(), blockPos.getY(), blockPos.getZ())
+            let pose = tempPoseStack.last()
+
+            allQuads.forEach(({ quad, baseBrightness, lightmapCoords })=> {
+                bufferBuilder.putBulkData(
+                    pose, quad,
+                    [baseBrightness[0], baseBrightness[1], baseBrightness[2], baseBrightness[3]],
+                    1, 1, 1, 1,
+                    [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]],
+                    $OverlayTexture.NO_OVERLAY, false
+                )
+            })
+
+            tempPoseStack.popPose()
+
+        }
 
     }
 
@@ -239,24 +353,11 @@ const AFTER_TRANSLUCENT_BLOCKS_STAGE = $Stage.AFTER_TRANSLUCENT_BLOCKS
 
 NativeEvents.onEvent("net.neoforged.neoforge.client.event.RenderLevelStageEvent", event => {
 
-    if (placersToRender.size == 0 || event.getStage() != AFTER_TRANSLUCENT_BLOCKS_STAGE) return
+    if (placersToRender.size() == 0 || event.getStage() != AFTER_TRANSLUCENT_BLOCKS_STAGE) return
 
     let placersShader = $GameRenderer.getPositionColorTexLightmapShader()
-    //let placersShader = $GameRenderer.getRendertypeSolidShader()
-    //let placersShader = $RenderSystem.getShader()
-    //let placersShader = $GameRenderer.getRendertypeTranslucentShader()
-    //let placersShader = $GameRenderer.getRendertypeCutoutShader()
-    //let placersShader = $GameRenderer.getRendertypeTranslucentMovingBlockShader()
-    //let placersShader = $GameRenderer.getRendertypeOutlineShader()
 
-    //console.log(placersShader.FOG_START + " " + placersShader.FOG_END + " " + placersShader.FOG_SHAPE + " " + placersShader.FOG_COLOR)
-    // $RenderSystem.setShaderFogColor(1,1,1)
-    // $RenderSystem.setShaderFogStart(1)
-    // $RenderSystem.setShaderFogEnd(5)
-    // $RenderSystem.setShaderFogShape($FogShape.SPHERE)
-
-    placersRenderType.setupRenderState();
-    //$RenderSystem.depthMask(false)
+    placersRenderType.setupRenderState()
 
     let gameRenderer = Client.gameRenderer
     let modelViewMatrix = new $Matrix4f()
@@ -269,25 +370,36 @@ NativeEvents.onEvent("net.neoforged.neoforge.client.event.RenderLevelStageEvent"
         -camera.getPosition().z,
         modelViewMatrix
     )
-    //console.log(modelViewMatrix + " " + modelViewMatrixEvent);
     let projectionMatrix = event.getProjectionMatrix()
 
-    placersToRender.forEach((vertexBuffer, hash) =>{
+    placersToRender.forEach((hash, renderData) =>{
 
-        if (!placersData.get(hash).isVisible) return
+        let placerData = placersData.get(hash)
+
+        let { originPos, isVisible } = placerData
+
+        if (!isVisible) return
+
+        let { vertexBuffer, relativeStartPos } = renderData
+
+        let localModelViewMatrix = new $Matrix4f(modelViewMatrix)
+
+        localModelViewMatrix.translate(
+            relativeStartPos.x,
+            relativeStartPos.y,
+            relativeStartPos.z
+        )
 
         vertexBuffer.bind()
         vertexBuffer.drawWithShader(
-            modelViewMatrix,
+            localModelViewMatrix,
             projectionMatrix,
             placersShader
         )
         $VertexBuffer.unbind()
 
     })
-    //$RenderSystem.depthMask(true)
 
     placersRenderType.clearRenderState()
-        
 
 })

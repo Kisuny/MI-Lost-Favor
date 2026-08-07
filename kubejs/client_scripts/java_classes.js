@@ -44,3 +44,11 @@ let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
 let $TooltipHandler = Java.loadClass("auviotre.enigmatic.legacy.handlers.TooltipHandler")
 let $EnigmaticHandler = Java.loadClass("auviotre.enigmatic.legacy.handlers.EnigmaticHandler")
 let $EnigmaticAttachments = Java.loadClass("auviotre.enigmatic.legacy.registries.EnigmaticAttachments")
+
+let $Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+let $ConcurrentHashMap = Java.loadClass("java.util.concurrent.ConcurrentHashMap")
+let $RandomSource = Java.loadClass("net.minecraft.util.RandomSource")
+let $ByteBufferBuilder = Java.loadClass("com.mojang.blaze3d.vertex.ByteBufferBuilder")
+let $NbtOps = Java.loadClass("net.minecraft.nbt.NbtOps")
+let $LinkedHashMap = Java.loadClass("java.util.LinkedHashMap")
+

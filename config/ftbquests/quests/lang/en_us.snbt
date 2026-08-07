@@ -1333,9 +1333,9 @@
 		"Найдите <magic>заброшенный город</magic> в <magic>глубоких низинах</magic>"
 	]
 	quest.27D16535C7FE372B.quest_desc: [
-		"<keyword>Brazier</keyword> lets you perform a variety of useful <property>rituals</property>; one of these is searching for structures. You can press <keyword>«U»</keyword> to view all available rituals. In particular, note that you can search for the structures you need using the <keyword>Locator ritual</keyword>!"
+		"<keyword>Brazier</keyword> lets you perform a variety of useful <property>rituals</property>; one of these is searching for structures. You can press <keyword>«U»</keyword> to view all available rituals in EMI. In particular, note that you can search for the structures you need using the <keyword>Locator ritual</keyword>!"
 		"{@pagebreak}"
-		"<keyword>Brazier</keyword> позволяет проводить множество полезных <property>ритуалов</property>, один из таких - поиск структуры. Вы можете нажать <keyword>«U»</keyword> и посмотреть все возможные ритуалы. Обратите внимание, что вы можете искать нужные вам структуры используя ритуал <keyword>Locator</keyword>!"
+		"<keyword>Brazier</keyword> позволяет проводить множество полезных <property>ритуалов</property>, один из таких - поиск структуры. Вы можете нажать <keyword>«U»</keyword> и посмотреть все возможные ритуалы используя EMI. Обратите внимание, что вы можете искать нужные вам структуры используя ритуал <keyword>Locator</keyword>!"
 	]
 	quest.27DF75B7564C37A4.quest_desc: [
 		"<positive>Place</positive> an <keyword>attractor</keyword> on an <keyword>item pipe</keyword> to allow it to pull from connected inventories. <positive>Place</positive> an <keyword>attractor</keyword> on a <keyword>fluid pipe</keyword> to increase the speed at which it pulls fluids from the network."
@@ -3238,6 +3238,15 @@
 		"Играя на сервере <warning>будь осторожен</warning> со всеми жидкостями в подобных баночках, они могут разрастись &lочень&r сильно…"
 	]
 	quest.5EFB6A7B7AC52555.quest_subtitle: "Oopsie!"
+	quest.5EFDA7F9E030E5D7.quest_desc: [
+		"Alakarkinos allows you to collect many magical items, such as <keyword>Chthonic Gold</keyword>, <keyword>Shimmerstone Gems</keyword>, <keyword>Brilliance</keyword>, <keyword>Soul Shards</keyword>, and <keyword>Onyx Powder</keyword>. To use it, you need to select a <property>container</property> where Alakarkinos will store items and provide it with a small amount of <magic>Source</magic>. "
+		""
+		"[ \"In order for Alakarkinos to use a block, you must place it in the world; to automate this process, you can use the \", { \"text\": \"Block Placer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5D02CAC8B45A26C4\" } }, \" from Spectrum.\" ]"
+		"{@pagebreak}"
+		"Alakarkinos позволяет добывать множество магический вещий, такие как <keyword>Chthonic Gold</keyword>, <keyword>Shimmerstone Gems</keyword>, <keyword>Brilliance</keyword>, <keyword>Soul Shards</keyword> и <keyword>Onyx Powder</keyword>, для его работы необходимо указать <property>контейнер</property> в который Alakarkinos будет складывать предметы и дать ему немного <magic>Source</magic>. "
+		""
+		"[ \"Для того чтобы Alakarkinos использовал блок - его необходимо установить в мире, для автоматизации вы можете использовать \", { \"text\": \"Block Placer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5D02CAC8B45A26C4\" } }, \" из Spectrum.\" ]"
+	]
 	quest.5F151FBC5A68433F.quest_desc: [
 		"To power it, <positive>leash a mob</positive> to it."
 		""
@@ -4415,6 +4424,7 @@
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
 	task.17F51111E6673E64.title: "Any #animal_pen:animal_pens"
+	task.1851FA60312782FA.title: "Any #ars_nouveau:threads"
 	task.187C9713E05213E5.title: "Any #neovitae:altar/runes_t2"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1AE53C37C664CA3B.title: "Clavis"
@@ -4438,7 +4448,6 @@
 	task.284E0D3F10A1E2A1.title: "Weapons"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
 	task.2B915AAA46F6518E.title: "Capacity"
-	task.2BE6D4D9E1298E99.title: "Any #minecraft:decorated_pot_sherds"
 	task.2C236C4C499DB27A.title: "Any #hexerei:brooms"
 	task.2CD40379A7378211.title: "Any #milf:pillar_base_blocks"
 	task.2D505FCD743999D9.title: "Any #milf:chiseled_base_blocks"
@@ -4453,6 +4462,7 @@
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
 	task.34B3E49B9A4E4B61.title: "basic [WIP chapter]"
+	task.34C505B79BD3B47F.title: "tools and equipment"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.350A5A937753423B.title: "Sentient Extraction"
 	task.3636DDD8063C6785.title: "Any #c:budding_blocks"

@@ -753,355 +753,355 @@ ServerEvents.recipes(event => {
 
     //#region MI basic machines
 
-    //polarizer
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' W ','I I',' W '].workspaceCorners("I").workspaceCenter("c"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("i"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            I: { item: "modern_industrialization:inductor" },
-            W: { item: "modern_industrialization:tin_wire" },
-            c: { item: "modern_industrialization:analog_circuit" },
-            i: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:polarizer" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //polarizer
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' W ','I I',' W '].workspaceCorners("I").workspaceCenter("c"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("i"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         I: { item: "modern_industrialization:inductor" },
+    //         W: { item: "modern_industrialization:tin_wire" },
+    //         c: { item: "modern_industrialization:analog_circuit" },
+    //         i: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:polarizer" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //assembler
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' W ','I I',' W '].workspaceCenter("c").workspaceCorners("A"),
-            ['   ','   ','   '].workspaceFull("M").workspaceLeft("D").workspaceFront("G").workspaceCenter(" "),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            D: { item: "milf:cd_reader" },
-            A: { item: "modern_industrialization:robot_arm" },
-            I: { item: "milf:rangefinder" },
-            W: { item: "modern_industrialization:conveyor" },
-            c: { item: "modern_industrialization:analog_circuit" }
-        },
-        outputItems: [[{ id: "modern_industrialization:assembler" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //assembler
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' W ','I I',' W '].workspaceCenter("c").workspaceCorners("A"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceLeft("D").workspaceFront("G").workspaceCenter(" "),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         D: { item: "milf:cd_reader" },
+    //         A: { item: "modern_industrialization:robot_arm" },
+    //         I: { item: "milf:rangefinder" },
+    //         W: { item: "modern_industrialization:conveyor" },
+    //         c: { item: "modern_industrialization:analog_circuit" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:assembler" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //wiremill
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','I I',' c '].workspaceCenter("m").workspaceCorners("A"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("i"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            A: { item: "modern_industrialization:aluminum_blade" },
-            I: { item: "modern_industrialization:steel_rod_magnetic" },
-            c: { item: "modern_industrialization:analog_circuit" },
-            m: { item: "immersiveengineering:mold_wire" },
-            i: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_wiremill" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //wiremill
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','I I',' c '].workspaceCenter("m").workspaceCorners("A"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("i"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         A: { item: "modern_industrialization:aluminum_blade" },
+    //         I: { item: "modern_industrialization:steel_rod_magnetic" },
+    //         c: { item: "modern_industrialization:analog_circuit" },
+    //         m: { item: "immersiveengineering:mold_wire" },
+    //         i: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_wiremill" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //mixer
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            ['   ','   ','   '].workspaceCenter("G").workspaceCorners("A").workspaceSides("w"),
-            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("r"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            A: { item: "modern_industrialization:motor" },
-            w: { item: "modern_industrialization:tin_wire" },
-            r: { item: "modern_industrialization:aluminum_rotor" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_mixer" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //mixer
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         ['   ','   ','   '].workspaceCenter("G").workspaceCorners("A").workspaceSides("w"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("r"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         A: { item: "modern_industrialization:motor" },
+    //         w: { item: "modern_industrialization:tin_wire" },
+    //         r: { item: "modern_industrialization:aluminum_rotor" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_mixer" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //cutting_machine
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','w w',' c '].workspaceCenter("c").workspaceCorners("A"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("r").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            A: { item: "modern_industrialization:motor" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            c: { item: "modern_industrialization:conveyor" },
-            r: { item: "modern_industrialization:invar_rotary_blade" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_cutting_machine" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //cutting_machine
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','w w',' c '].workspaceCenter("c").workspaceCorners("A"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("r").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         A: { item: "modern_industrialization:motor" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         c: { item: "modern_industrialization:conveyor" },
+    //         r: { item: "modern_industrialization:invar_rotary_blade" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_cutting_machine" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //packer
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("A"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            A: { item: "modern_industrialization:piston" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:motor" },
-            c: { item: "modern_industrialization:tin_wire" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_packer" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //packer
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("A"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         A: { item: "modern_industrialization:piston" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:motor" },
+    //         c: { item: "modern_industrialization:tin_wire" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_packer" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //furnace
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("c"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:motor" },
-            c: { item: "modern_industrialization:cupronickel_wire_magnetic" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_mi_furnace" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //furnace
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("c"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:motor" },
+    //         c: { item: "modern_industrialization:cupronickel_wire_magnetic" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_mi_furnace" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //brewery
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','w w',' c '].workspaceCenter("r").workspaceCorners("g"),
-            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("r"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            g: { item: "minecraft:glass_bottle" },
-            r: { item: "minecraft:blaze_rod" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            c: { item: "modern_industrialization:pump" }
-        },
-        outputItems: [[{ id: "extended_industrialization:electric_brewery" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //brewery
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','w w',' c '].workspaceCenter("r").workspaceCorners("g"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("r"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         g: { item: "minecraft:glass_bottle" },
+    //         r: { item: "minecraft:blaze_rod" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         c: { item: "modern_industrialization:pump" }
+    //     },
+    //     outputItems: [[{ id: "extended_industrialization:electric_brewery" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //waste_collector
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            ['   ','   ','   '].workspaceCenter("R").workspaceCorners("r").workspaceSides("r"),
-            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("c"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            r: { tag: "c:rods/steel" },
-            R: { item: "modern_industrialization:tin_rotor" },
-            c: { item: "modern_industrialization:pump" }
-        },
-        outputItems: [[{ id: "extended_industrialization:electric_waste_collector" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //waste_collector
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         ['   ','   ','   '].workspaceCenter("R").workspaceCorners("r").workspaceSides("r"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("c"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         r: { tag: "c:rods/steel" },
+    //         R: { item: "modern_industrialization:tin_rotor" },
+    //         c: { item: "modern_industrialization:pump" }
+    //     },
+    //     outputItems: [[{ id: "extended_industrialization:electric_waste_collector" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //honey_extractor
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            ['   ','   ','   '].workspaceCenter("G").workspaceLeft("w").workspaceRight("w").workspaceFront("c").workspaceBack("c"),
-            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" ").workspaceFront("R"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            w: { item: "modern_industrialization:analog_circuit" },
-            R: { item: "modern_industrialization:tin_rotor" },
-            c: { item: "modern_industrialization:pump" }
-        },
-        outputItems: [[{ id: "extended_industrialization:electric_honey_extractor" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //honey_extractor
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         ['   ','   ','   '].workspaceCenter("G").workspaceLeft("w").workspaceRight("w").workspaceFront("c").workspaceBack("c"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" ").workspaceFront("R"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         R: { item: "modern_industrialization:tin_rotor" },
+    //         c: { item: "modern_industrialization:pump" }
+    //     },
+    //     outputItems: [[{ id: "extended_industrialization:electric_honey_extractor" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //unpacker
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("A"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("m").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            m: { item: "immersiveengineering:mold_unpacking" },
-            A: { item: "modern_industrialization:piston" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:motor" },
-            c: { item: "modern_industrialization:tin_wire" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_unpacker" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //unpacker
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("A"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("m").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         m: { item: "immersiveengineering:mold_unpacking" },
+    //         A: { item: "modern_industrialization:piston" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:motor" },
+    //         c: { item: "modern_industrialization:tin_wire" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_unpacker" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //composter
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' c ','w w',' A '].workspaceCenter("p").workspaceCorners("W"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("m").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            m: { item: "minecraft:composter" },
-            A: { item: "modern_industrialization:motor" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:tin_rotor" },
-            c: { item: "modern_industrialization:pump" },
-            W: { item: "modern_industrialization:tin_wire" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "extended_industrialization:electric_composter" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //composter
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' c ','w w',' A '].workspaceCenter("p").workspaceCorners("W"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("m").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         m: { item: "minecraft:composter" },
+    //         A: { item: "modern_industrialization:motor" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:tin_rotor" },
+    //         c: { item: "modern_industrialization:pump" },
+    //         W: { item: "modern_industrialization:tin_wire" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "extended_industrialization:electric_composter" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //bending_machine
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' A ','w w',' A '].workspaceCenter("p").workspaceCorners("W"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            p: { item: "modern_industrialization:motor" },
-            A: { item: "modern_industrialization:piston" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            W: { item: "modern_industrialization:steel_ring" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "extended_industrialization:electric_bending_machine" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //bending_machine
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' A ','w w',' A '].workspaceCenter("p").workspaceCorners("W"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         p: { item: "modern_industrialization:motor" },
+    //         A: { item: "modern_industrialization:piston" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         W: { item: "modern_industrialization:steel_ring" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "extended_industrialization:electric_bending_machine" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //compressor
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' p ','w w',' p '].workspaceCenter("W").workspaceCorners("A"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            p: { item: "modern_industrialization:motor" },
-            A: { item: "modern_industrialization:piston" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            W: { item: "modern_industrialization:tin_wire" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_compressor" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //compressor
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' p ','w w',' p '].workspaceCenter("W").workspaceCorners("A"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         p: { item: "modern_industrialization:motor" },
+    //         A: { item: "modern_industrialization:piston" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         W: { item: "modern_industrialization:tin_wire" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_compressor" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //alloy_smelter
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' r ','w w',' r '].workspaceCenter("p").workspaceCorners("c"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            r: { item: "modern_industrialization:tin_rotor" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:motor" },
-            c: { item: "modern_industrialization:cupronickel_wire_magnetic" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "extended_industrialization:electric_alloy_smelter" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //alloy_smelter
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' r ','w w',' r '].workspaceCenter("p").workspaceCorners("c"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         r: { item: "modern_industrialization:tin_rotor" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:motor" },
+    //         c: { item: "modern_industrialization:cupronickel_wire_magnetic" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "extended_industrialization:electric_alloy_smelter" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //water_pump
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' p ','w w',' p '].workspaceCenter("r").workspaceCorners("c"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            r: { item: "modern_industrialization:tin_rotor" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:motor" },
-            c: { item: "modern_industrialization:pump" },
-            I: { item: "moderndynamics:fluid_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_water_pump" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //water_pump
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' p ','w w',' p '].workspaceCenter("r").workspaceCorners("c"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         r: { item: "modern_industrialization:tin_rotor" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:motor" },
+    //         c: { item: "modern_industrialization:pump" },
+    //         I: { item: "moderndynamics:fluid_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_water_pump" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
-    //macerator
-    yTechWorkspaceRecipe(event, {
-        pattern: [
-            [' p ','w w',' p '].workspaceCenter("r").workspaceCorners("p"),
-            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
-            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
-        ],
-        key: {
-            r: { item: "modern_industrialization:invar_rotary_blade" },
-            w: { item: "modern_industrialization:analog_circuit" },
-            p: { item: "modern_industrialization:motor" },
-            I: { item: "moderndynamics:item_pipe" }
-        },
-        outputItems: [[{ id: "modern_industrialization:electric_macerator" }, 1]],
-        materialset: WORKSPACE_MATERIALSETS.BASIC,
-        tool: wrench,
-        removeRecipe: true,
-        miCompatMachine:packer
-    })
+    // //macerator
+    // yTechWorkspaceRecipe(event, {
+    //     pattern: [
+    //         [' p ','w w',' p '].workspaceCenter("r").workspaceCorners("p"),
+    //         ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" ").workspaceBack("I"),
+    //         ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
+    //     ],
+    //     key: {
+    //         r: { item: "modern_industrialization:invar_rotary_blade" },
+    //         w: { item: "modern_industrialization:analog_circuit" },
+    //         p: { item: "modern_industrialization:motor" },
+    //         I: { item: "moderndynamics:item_pipe" }
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:electric_macerator" }, 1]],
+    //     materialset: WORKSPACE_MATERIALSETS.BASIC,
+    //     tool: wrench,
+    //     removeRecipe: true,
+    //     miCompatMachine:packer
+    // })
 
     //#endregion
 

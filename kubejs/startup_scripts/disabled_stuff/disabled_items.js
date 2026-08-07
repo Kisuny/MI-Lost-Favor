@@ -1,53 +1,54 @@
 global.disabledItems = [
-    new DisabledItemBuilder("extendedae:silicon_block").build(),
+    new DisabledItemBuilder("extendedae:silicon_block"),
 
-    // new DisabledItemBuilder(/oritech:\w+/).build(),
-    // new DisabledItemBuilder(/oritechthings:\w+/).build(),
+    // new DisabledItemBuilder(/oritech:\w+/),
+    // new DisabledItemBuilder(/oritechthings:\w+/),
 
-    new DisabledItemBuilder("modern_industrialization:steel_block").replaceWith("immersiveengineering:storage_steel").build(),
+    new DisabledItemBuilder("modern_industrialization:steel_block").replaceWith("immersiveengineering:storage_steel"),
 
     //#region Oritech
-    new DisabledItemBuilder("oritech:machine_core_1").build(),
-    new DisabledItemBuilder("oritech:raw_silicon").build(),
-    new DisabledItemBuilder("oritech:nickel_ingot").build(),
-    new DisabledItemBuilder("oritech:nickel_nugget").build(),
-    new DisabledItemBuilder("oritech:small_nickel_dust").build(),
-    new DisabledItemBuilder("oritech:nickel_dust").build(),
-    new DisabledItemBuilder("oritech:nickel_ore").build(),
-    new DisabledItemBuilder("oritech:deepslate_nickel_ore").build(),
-    new DisabledItemBuilder("oritech:silicon").build(),
-    new DisabledItemBuilder("oritech:silicon_block").build(),
-    new DisabledItemBuilder("oritech:steel_dust").build(),
+    new DisabledItemBuilder("oritech:machine_core_1"),
+    new DisabledItemBuilder("oritech:raw_silicon"),
+    new DisabledItemBuilder("oritech:nickel_ingot"),
+    new DisabledItemBuilder("oritech:nickel_nugget"),
+    new DisabledItemBuilder("oritech:small_nickel_dust"),
+    new DisabledItemBuilder("oritech:nickel_dust"),
+    new DisabledItemBuilder("oritech:nickel_ore"),
+    new DisabledItemBuilder("oritech:deepslate_nickel_ore"),
+    new DisabledItemBuilder("oritech:silicon"),
+    new DisabledItemBuilder("oritech:silicon_block"),
+    new DisabledItemBuilder("oritech:steel_dust"),
 
-    new DisabledItemBuilder(/oritech:raw_(?!biopolymer\b)(\w+)\b/).build(),
-    new DisabledItemBuilder(/oritech:\w+_clump/).build(),
+    new DisabledItemBuilder(/oritech:raw_(?!biopolymer\b)(\w+)\b/),
+    new DisabledItemBuilder(/oritech:\w+_clump/),
 
-    new DisabledItemBuilder("oritech:steel_ingot").replaceWith("modern_industrialization:steel_ingot", true).inRecipes(["RECIPE_INPUTS"]).build(),
+    new DisabledItemBuilder("oritech:steel_ingot").replaceWith("modern_industrialization:steel_ingot", true).inRecipes(["RECIPE_INPUTS"]),
 
     //#endregion Oritech
 
-    new DisabledItemBuilder(/moderndynamics:\w+_cable/).build(),
+    new DisabledItemBuilder(/moderndynamics:\w+_cable/),
 
-    new DisabledItemBuilder("immersiveengineering:mold_wire").build(),
-    new DisabledItemBuilder(/immersiveengineering:wire_\w+/).build(),
+    new DisabledItemBuilder("immersiveengineering:mold_wire"),
+    new DisabledItemBuilder(/immersiveengineering:wire_\w+/),
     new DisabledItemBuilder(/immersiveengineering:stick_(?!treated\b)(\w+)\b/)
-        .replaceWithRegexMapping(material => `modern_industrialization:${material}_rod`).build(),
+        .replaceWithRegexMapping(material => `modern_industrialization:${material}_rod`),
 
-    new DisabledItemBuilder(createExclusionRegex("immersiveengineering:storage_", ["uranium", "steel"])).build(),
+    new DisabledItemBuilder(createExclusionRegex("immersiveengineering:storage_", ["uranium", "steel"])),
+    
+    new DisabledItemBuilder("extended_industrialization:nano_saber"),
 
+    new DisabledItemBuilder("ytech:bronze_mortar_and_pestle"),
 
-    new DisabledItemBuilder("ytech:bronze_mortar_and_pestle").build(),
+    new DisabledItemBuilder("monsterplus:curseflame_powder"),
 
-    new DisabledItemBuilder("monsterplus:curseflame_powder").build(),
+    new DisabledItemBuilder("aquaculture:diamond_fillet_knife"),
+    new DisabledItemBuilder("aquaculture:gold_fillet_knife"),
+    new DisabledItemBuilder("aquaculture:iron_fillet_knife"),
+    new DisabledItemBuilder("aquaculture:stone_fillet_knife"),
+    new DisabledItemBuilder("aquaculture:wooden_fillet_knife"),
+    new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables(),
 
-    new DisabledItemBuilder("aquaculture:diamond_fillet_knife").build(),
-    new DisabledItemBuilder("aquaculture:gold_fillet_knife").build(),
-    new DisabledItemBuilder("aquaculture:iron_fillet_knife").build(),
-    new DisabledItemBuilder("aquaculture:stone_fillet_knife").build(),
-    new DisabledItemBuilder("aquaculture:wooden_fillet_knife").build(),
-    new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables().build(),
-
-]
+].map(builder => builder.build())
 
 function createExclusionRegex(base, exclude) {
     let escapedBase = base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")

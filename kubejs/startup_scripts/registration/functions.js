@@ -43,6 +43,10 @@ let milfData = {
     },
 
     addLang(id, args, type, modId){
+        if (type == "fluid") {
+            global.langCustomStuff[`item.${modId}.${id}_bucket`] = Object.assign({ "en_us": idToName(id) + " Bucket" }, args.lang)
+            global.langCustomStuff[`fluid_type.${modId}.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+        }
         global.langCustomStuff[`${type}.${modId}.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
     },
 

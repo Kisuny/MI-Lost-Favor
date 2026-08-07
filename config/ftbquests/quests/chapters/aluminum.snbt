@@ -1494,5 +1494,34 @@
 			x: 25.0d
 			y: -2.0d
 		}
+		{
+			entity_vis_size: 1.0f
+			id: "1AE0400A3C0AF316"
+			shape: "heart"
+			tasks: [
+				{
+					id: "6FBA60F4E663116E"
+					item: { count: 1, id: "extended_industrialization:nano_helmet" }
+					type: "item"
+				}
+				{
+					id: "15050ACE37E5AEDA"
+					item: { count: 1, id: "extended_industrialization:nano_chestplate" }
+					type: "item"
+				}
+				{
+					id: "61CEF576F158418B"
+					item: { count: 1, id: "extended_industrialization:nano_leggings" }
+					type: "item"
+				}
+				{
+					id: "18B18BE30F1D1303"
+					item: { count: 1, id: "extended_industrialization:nano_boots" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -5.5d
+		}
 	]
 }

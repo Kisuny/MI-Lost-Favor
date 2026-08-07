@@ -662,7 +662,7 @@ ServerEvents.recipes(event => {
         time: 200,
         inputItems: [
             [{ item: "modern_industrialization:aluminum_ingot" }, 1],
-            [{ item: "modern_industrialization:antimony_ingot" }, 1]
+            [{ item: "ae2:quartz_block" }, 1]
         ],
         outputItems: [[{ item: "oritech:adamant_ingot" }, 1]]
     })
@@ -698,12 +698,12 @@ ServerEvents.recipes(event => {
     oritechAssemblerRecipe(event, {
         time: 200,
         inputItems: [
-            [{ item: "enchanted:attuned_stone_charged" }, 1],
+            [{ item: "oritech:machine_speed_addon" }, 1],
             [{ item: "modern_industrialization:electronic_circuit" }, 1],
-            [{ item: "modern_industrialization:electronic_circuit" }, 1],
+            [{ item: "oritech:machine_efficiency_addon" }, 1],
             [{ item: "modern_industrialization:silicon_steel_large_plate" }, 1]
         ],
-        outputItems: [[{ item: "chunkloaders:basic_chunk_loader" }, 1]],
+        outputItems: [[{ item: "oritech:machine_ultimate_addon" }, 1]],
         removeRecipe: true
     })
 

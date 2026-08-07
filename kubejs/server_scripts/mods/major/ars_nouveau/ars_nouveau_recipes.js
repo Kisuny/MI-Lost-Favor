@@ -139,10 +139,12 @@ ServerEvents.recipes(event => {
     const itemReplacements = {
         "minecraft:gold_ingot": "malum:hallowed_gold_ingot",
         "minecraft:gold_block": "malum:block_of_hallowed_gold",
+        "minecraft:diamond": "eidolon_repraised:shadow_gem",
     }
     const tagReplacements = {
         "c:ingots/gold": "malum:hallowed_gold_ingot",
         "c:storage_blocks/gold": "malum:block_of_hallowed_gold",
+        "c:gems/diamond": "eidolon_repraised:shadow_gem",
     }
 
     const replaceIngredient = ingredient => {

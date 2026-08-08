@@ -1,0 +1,46 @@
+{
+  "general": {
+    "overrideVanillaRod": true,
+    "holdToCast": true,
+    "rodDurabilityMultiplier": 1.0,
+    "fishableVoidHeights": [
+      {
+        "dimension": "minecraft:overworld",
+        "type": "RELATIVE_TO_BOTTOM",
+        "height": -6
+      },
+      {
+        "dimension": "minecraft:the_nether",
+        "type": "RELATIVE_TO_BOTTOM",
+        "height": -6
+      },
+      {
+        "dimension": "minecraft:the_end",
+        "type": "RELATIVE_TO_BOTTOM",
+        "height": 50
+      }
+    ],
+    "autoFishDataBlacklist": [],
+    "crateWeight": 4.0,
+    "crateQuality": 1.0,
+    "logDataErrors": false
+  },
+  "items": {
+    "fishItemSizes": "ALWAYS",
+    "bucketableFishItems": "WHEN_LIVING",
+    "enableBedrockBreakingItems": true,
+    "pocketWatchBlacklist": []
+  },
+  "journal": {
+    "giveJournal": false,
+    "showToasts": false
+  },
+  "minigame": {
+    "doMinigame": false,
+    "minigameDifficultyMultiplier": 1.0,
+    "doSuccessSound": false,
+    "doFailSound": false,
+    "useThirdPartyMinigames": false,
+    "useThirdPartyFishData": false
+  }
+}

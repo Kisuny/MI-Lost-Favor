@@ -196,7 +196,12 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    ieShapedFluid(event, {
+
+    //#endregion
+
+    //#region milfShaped
+
+    milfShaped(event, {
         pattern: [
             "SCS",
             "PWP",
@@ -207,19 +212,11 @@ ServerEvents.recipes(event => {
             C: { item: "immersiveengineering:component_steel" },
             I: { item: "immersiveengineering:component_iron" },
             P: { item: "modern_industrialization:constantan_plate" },
-            W: {
-                type: "immersiveengineering:fluid_stack",
-                amount: 1000,
-                tag: "minecraft:water"
-            }
+            W: { item: "modern_industrialization:large_pump" },
         },
         outputItems: [[{ id: "immersiveengineering:radiator" }, 1]],
         removeRecipe: true
     })
-
-    //#endregion
-
-    //#region milfShaped
 
     milfShaped(event, {
         pattern: [

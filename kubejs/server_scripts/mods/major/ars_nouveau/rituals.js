@@ -45,26 +45,26 @@ ServerEvents.recipes(event => {
         { id: "ars_elemental:ritual_attraction", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
         { id: "ars_nouveau:ritual_scrying", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
         { id: "ars_elemental:ritual_detection", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
-        { id: "ars_nouveau:ritual_overgrowth", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_elemental:ritual_archwood_forestation", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_disintegration", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_elemental:ritual_tesla_coil", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_elemental:ritual_squirrels", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_warping", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_conjure_island_plains", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_flight", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_restoration", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_fertility", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_gravity", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_elemental:ritual_archwood_forest", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_sanctuary", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_binding", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_containment", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_harvest", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
+        { id: "ars_nouveau:ritual_overgrowth", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_elemental:ritual_archwood_forestation", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_disintegration", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_elemental:ritual_tesla_coil", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_elemental:ritual_squirrels", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_warping", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_conjure_island_plains", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_flight", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_restoration", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_fertility", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_gravity", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_elemental:ritual_archwood_forest", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_sanctuary", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_binding", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_containment", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
+        { id: "ars_nouveau:ritual_harvest", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         // ritual_awakening - crafted via mixing cauldron instead
-        { id: "ars_nouveau:ritual_conjure_island_desert", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
+        { id: "ars_nouveau:ritual_conjure_island_desert", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         {
-            id: "ars_nouveau:ritual_wilden_summon", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4,
+            id: "ars_nouveau:ritual_wilden_summon", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0,
             addition_ingredients: [{ "item": "ars_nouveau:source_gem_block" }]
         },
     ]
@@ -88,9 +88,7 @@ ServerEvents.recipes(event => {
 
     // item -> item
     var replacementsItemToItem = {
-        "ars_nouveau:mendosteen_pod": "paganbless:chopped_rue",
         "ars_nouveau:earth_essence": "enchanted:breath_of_the_goddess",
-        "ars_nouveau:air_essence": "minecraft:barrier",
         "ars_nouveau:red_archwood_sapling": "enchanted:tongue_of_dog",
         "ars_nouveau:green_archwood_sapling": "enchanted:creeper_heart",
         "ars_nouveau:blue_archwood_sapling": "enchanted:water_artichoke",
@@ -99,17 +97,11 @@ ServerEvents.recipes(event => {
 
     // item -> tag
     var replacementsItemToTag = {
-        "ars_nouveau:green_archwood_log": "minecraft:logs",
         "ars_nouveau:purple_archwood_log": "minecraft:logs",
-        "ars_nouveau:red_archwood_log": "minecraft:logs",
-        "ars_elemental:yellow_archwood_log": "minecraft:logs",
-        "ars_nouveau:blue_archwood_log": "minecraft:logs",
-        "ars_nouveau:green_archwood_log": "minecraft:logs",
     };
 
     // tag -> item
     var replacementsTagToItem = {
-        "c:storage_blocks/source": "minecraft:barrier",
         "c:gems/source": "enchanted:attuned_stone",
     };
 

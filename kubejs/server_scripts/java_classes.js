@@ -102,3 +102,5 @@ let $SoundSource = Java.loadClass("net.minecraft.sounds.SoundSource")
 
 let $patternJavaClass = Java.loadClass("java.util.regex.Pattern")
 let $matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
+
+let $LinkedHashMap = Java.loadClass("java.util.LinkedHashMap")

@@ -41,4 +41,45 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineRecipe(event, {
+        energy: 8, time: 200, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:electronic_circuit_board" }, 1],
+            [{ item: "immersiveengineering:component_electronic_adv" }, 1],
+            [{ item: "modern_industrialization:electrum_fine_wire" }, 5],
+
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:overdrive_module" }]
+        ],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 8, time: 200, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:electronic_circuit_board" }, 1],
+            [{ item: "oritech:plastic_sheet" }, 1],
+            [{ item: "milf:tempered_glass" }, 1],
+            [{ item: "modern_industrialization:electrum_fine_wire" }, 5],
+
+        ],
+        outputItems: [
+            [{ item: "extended_industrialization:machine_config_card" }]
+        ],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 8, time: 200, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "enchanted:attuned_stone_charged" }, 1],
+            [{ item: "immersiveengineering:resonanz_engineering" }, 1],
+            [{ item: "modern_industrialization:electronic_circuit" }, 2],
+            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 4]
+        ],
+        outputItems: [[{ item: "chunkloaders:basic_chunk_loader" }, 1]],
+        removeRecipe: true
+    })
+
 })

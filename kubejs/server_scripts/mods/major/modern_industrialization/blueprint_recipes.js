@@ -208,18 +208,6 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    ieBlueprintRecipe(event, {
-        inputItems: [
-            [{ "item": "modern_industrialization:silicon_steel_bolt" }, 4],
-            [{ "item": "modern_industrialization:tin_cable" }, 2],
-            [{ "item": "modern_industrialization:portable_storage_unit" }, 1],
-            [{ "item": "modern_industrialization:electronic_circuit" }, 1],
-            [{ "item": "milf:basic_machine_bit" }, 4],
-        ],
-        outputItems: [[{ "item": "modern_industrialization:basic_machine_hull" }]],
-        category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipe: true
-    })
 
     ieBlueprintRecipe(event, {
         inputItems: [

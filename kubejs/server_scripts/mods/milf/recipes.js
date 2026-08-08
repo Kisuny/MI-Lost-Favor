@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
 
     customWorktable(event, {
         pattern: [
-            "   ",
+            " r ",
             " w ",
             " e "
         ],
@@ -215,6 +215,7 @@ ServerEvents.recipes(event => {
         key: {
             "w": { "item": "milf:miasma_orb" },
             "e": { "tag": "c:drinks/watery" },
+            "r": { "item": "ars_nouveau:magebloom_crop" },
             "u": { "tag": "eidolon_repraised:patron_symbol" },
         },
         result: "milf:crimson_veil_elixir",

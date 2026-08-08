@@ -79,6 +79,11 @@
 		""
 		"Поместите свой любимый верстак на палке в специальное слот для безделушек и нажмите клавишу быстрого доступа, чтобы открыть его <warning>(по умолчанию SHIFT + V)</warning>"
 	]
+	quest.0194B16954142DC5.quest_desc: [
+		"The Primitive Smelter is necessary for some early recipes."
+		""
+		"You're going to have to install chimneys on it for it to be useful, first. You can have up to four Reinforced Brick Chimneys, and up to 4 Brick Chimneys on top of them."
+	]
 	quest.01DA1F605860E4CB.quest_desc: [
 		"A <keyword>torch</keyword>, <keyword>candelabra</keyword> or <keyword>candle</keyword> can be an <property>effective means</property> of increasing your <keyword>altar's</keyword> <property>recharge rate</property>."
 		""
@@ -108,6 +113,7 @@
 		"{@pagebreak}"
 		"Быстро очищает <keyword>большие области</keyword> для <positive>копки</positive>, тоннелей и уборки местности. &7Shift-правой кнопкой&r задай <keyword>размер и форму</keyword>, потом <positive>правой кнопкой</positive> удали выделенную область. <warning>Дроп не выпадает</warning>, поэтому используй его только если блоки не нужны обратно"
 	]
+	quest.0287AC720FD11E9A.quest_desc: ["This sigil can contain 5 other sigils, letting you quickly switch between them."]
 	quest.02AE8C2723A731E7.quest_desc: [
 		"The <warning>acid</warning> was already <warning>potent</warning>. &lLETS MAKE IT MORE!&r Now with access to <warning>stronger ingredients</warning>, I can <positive>reformulate</positive> the &l<warning>acid oil</warning> using <warning>toxin</warning>. As such, the <warning>acid effect</warning> has been amplified, making it <warning>reduce armor strength</warning> even more, while gaining the ability to <warning>dissolve diamond level ores</warning>."
 		"{@pagebreak}"
@@ -188,11 +194,13 @@
 		"&lCandelabra&r: "
 		"• +2x Recharge Rate"
 	]
-	quest.0501BDB7ED850B47.quest_desc: [""]
+	quest.0501BDB7ED850B47.quest_desc: ["While not very common, Black Thorn trees are very distinctive trees. They are short and have silver-colored leaves, and are necessary for early magic."]
 	quest.051773C85A4FB2DF.quest_desc: [
-		"Kill <keyword>golem</keyword> to get the <keyword>charm</keyword>"
+		"The golem can collect gems from <keyword>amethyst</keyword>, <keyword>topaz</keyword>, and <keyword>citrine</keyword> geodes! Even better, it can turn blocks of these gems and turn them into their budding variants!"
 		""
-		"The golem can collect gems from <keyword>amethyst</keyword>, <keyword>topaz</keyword>, and <keyword>citrine</keyword> geodes!"
+		"To make an Amethyst Golem, activate a Ritual of Awakening next to a Budding Amethyst Block."
+		""
+		"You can kill the <keyword>golem</keyword> to get back the <keyword>charm</keyword>, which will easily resummon it."
 		"{@pagebreak}"
 		"Убей <keyword>голема</keyword>, чтобы получить <keyword>амулет</keyword>"
 		""
@@ -229,7 +237,13 @@
 		"Не забудьте заглянуть в <magic>церковь в подземном городе</magic> для всех необходимых блоков."
 	]
 	quest.05C4AA05CA0E6F80.quest_desc: [""]
+	quest.05EFE56056E7F4E6.quest_desc: ["Like the petty version, but can hold up to 256 Spiritus."]
 	quest.0619910E0E53B32F.quest_desc: [""]
+	quest.064DF65AD963C932.quest_desc: [
+		"Conjures light sources wherever you are aiming for a mere 10 EV from your Anima reserves."
+		""
+		"The light's color can be changed, as well as its brightness."
+	]
 	quest.0651B6B965560FDE.quest_desc: [
 		"A &#FEECD6Phantom Frame&r will become invisible once you insert an item into it."
 		"{@pagebreak}"
@@ -244,6 +258,7 @@
 		"{@pagebreak}"
 		"Возможно, вы уже заметили эту маленькую иконку рядом с выходом пьедестала — здесь можно размещать планшеты с желаемыми изделиями! Когда в пьедестале находится планшет для крафта, он меняет свое поведение — теперь он принимает только предметы, которые могут быть использованы в указанном крафте (это означает, что если выход вашего крафт-стола — например, поршень, пьедестал будет принимать любой тип досок, даже если вы использовали один конкретный тип в планшете) и ничего больше (примечание: предметы можно вставлять только сверху пьедестала). Затем, если пьедестал питается от редстоуна, он будет выдавать результат крафта снизу и только снизу."
 	]
+	quest.072F0916C2364762.quest_desc: ["What's an altar without something to pray to?"]
 	quest.0743F72CB6464DAF.quest_desc: [
 		"A single player can have up to <keyword>9 active chunk loaders</keyword> "
 		""
@@ -290,6 +305,11 @@
 		"A convenient way to <positive>store food</positive>. A lot of food. <positive>LMB</positive> to change mode, <positive>RMB</positive> with the <warning>closed</warning> one to change selected food, <positive>RMB</positive> with the <positive>opened</positive> one to <positive>eat</positive> said food. To <positive>put food</positive> in the box, <positive>RMB</positive> on the box with food."
 		"{@pagebreak}"
 		"Удобный способ <positive>хранить еду</positive>. Многооо еды. <positive>ЛКМ</positive> для смены режима, <positive>ПКМ</positive> с <warning>закрытым</warning> режимом для смены выбранной еды, <positive>ПКМ</positive> с <positive>открытым</positive> режимом для <positive>употребления</positive> указанной еды. Чтобы <positive>положить еду</positive> в бокс - <positive>ПКМ</positive> едой на бокс."
+	]
+	quest.08C4EC0C59D337BC.quest_desc: [
+		"If you don't like animal domestication, you don't have to do animal domestication."
+		""
+		"You can instead make a Gateway of the Emerald Grove. Right clicking with it will open a portal that summons waves of enemies, and if you can successfully beat all of them, you will receive a pack of domesticated animals"
 	]
 	quest.092205B6B1CC863A.quest_desc: [
 		"A <keyword>block</keyword> for <positive>vertical movement</positive> through blocks!"
@@ -405,6 +425,11 @@
 		"• +2x Power Capacity"
 		"• +2x Recharge Rate"
 	]
+	quest.0D25CAEE5110F2AE.quest_desc: [
+		"The Runic Core is the centerpiece of all Pagan rituals. Place it down and surround it with six infused slabs of the same type. Light it with some flint and steel, and then slay a creature atop it. This will perform the ritual that corresponds to the type of slabs surrounding the Runic Core."
+		""
+		"View the Pagan Guide to see how to set up the slabs around the Runic Core."
+	]
 	quest.0D2F0CADB899F43F.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
 	quest.0D55B997939B664F.quest_desc: [
 		"This allows you to obtain a random <keyword>Level 1 glyph</keyword>; glyphs cannot be duplicated. Once you have learned all <keyword>Level 1 glyphs</keyword>, you will receive a small amount of <property>experience</property> for each codex."
@@ -511,6 +536,11 @@
 		""
 		"Необходим для создания <keyword>стола трансформации</keyword>. Также позволяет сделать ваши предметы <keyword>невидимыми</keyword>!"
 	]
+	quest.0F0E646687215736.quest_desc: [
+		"Place a Goblet on an altar to increase its capacity by 2. "
+		""
+		"It can also be filled with blood by killing something atop it, which is used for some magic."
+	]
 	quest.0F305B7FD3E18226.quest_desc: [
 		"This <keyword>tome</keyword> will allow you to <positive>crush</positive> <keyword>ore</keyword> and other items"
 		""
@@ -606,6 +636,7 @@
 		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (яд должен подойти), и в этот момент воспользоваться иглой."
 	]
 	quest.11C14EFDFC29588D.quest_desc: ["4 нижних слота каждый под свою жижу сверху результат сплава"]
+	quest.11DEF9AD7861A0C9.quest_desc: ["Combine the Stone Mortar and Pestle with a Brick in a crafting grid to make Brick Dust"]
 	quest.1208751263D1F495.quest_desc: [
 		"A cursed chalice that gives exactly what you deserve. Right-click to drink (slow sip, like honey) and see for yourself."
 		""
@@ -666,7 +697,7 @@
 	quest.13134EE8E1631EBB.quest_desc: [""]
 	quest.1325489D5E635F06.quest_subtitle: "Banners can be repainted using souls"
 	quest.1376283846993363.quest_desc: [
-		"Once you've obtained your first <soul>Soul Shards</soul>, you'll be able to <positive>summon</positive> the mobs you need and kill them again and again!"
+		"Once you've obtained your first <soul>Soul Shards</soul> with the Crystsallization Ritual, you'll be able to <positive>summon</positive> the mobs you need and kill them again and again!"
 		"{@pagebreak}"
 		"Как только вы получите свои первые <soul>Осколки души</soul>, вы сможете <positive>призывать</positive> нужных вам мобов и убивать их снова и снова!"
 	]
@@ -748,6 +779,7 @@
 		"{@pagebreak}"
 		"Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"
 	]
+	quest.14BEA9C248D4F905.quest_desc: ["The Otherwhere Chalk is used for Rites having to do with teleportation and The End."]
 	quest.14D2170A0424A902.quest_desc: [
 		"Toxic paste is extremely unstable. But its volatility will be the highlight of my next alchemical instrument! Potions are too refined, too narrow. By creating a flask that yields greater capacity and putting a little bit of the paste inside, I can make a much more efficient and possibly renewable potion container."
 		""
@@ -788,6 +820,16 @@
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду</warning>!"
 	]
 	quest.16C5B67E3D1F579C.quest_desc: ["Scribed with a <keyword>Block of Lapis</keyword> and awakened by a <soul>Sea Pickle</soul>. <positive>Pipes water</positive> into every fluid container touching its six faces; every 5 ticks it deposits up to <property>6 buckets</property>, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and <warning>parks completely</warning> on a redstone signal."]
+	quest.16E087D682ED1D5A.quest_desc: [
+		"The bush will slowly grow and is harvestable."
+		""
+		"Can be found in swamps or bought from the Merchant."
+	]
+	quest.16E9CEC9B10725B7.quest_desc: [
+		"It's the furnace. You know it, you love it."
+		""
+		"But they are a bit limited this early on. That's where the Primitive Alloy Smelter and Primitive Smelter come in."
+	]
 	quest.16FC0392E5AA51D8.quest_desc: [
 		"There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from TOXIN, I have managed to create this cloudy gas that weakens and blinds in a small area."
 		"{@pagebreak}"
@@ -1011,18 +1053,20 @@
 	quest.1A2B3C4D5E6F7019B.title: "Ritual Diviner [Dusk]"
 	quest.1A2B3C4D5E6F701A.quest_desc: [""]
 	quest.1A2B3C4D5E6F701A.title: "Tier IV Altar"
-	quest.1A2B3C4D5E6F701B.quest_desc: ["The penultimate orb. Forged in the <keyword>Tier IV altar</keyword> for <keyword>80,000 EV</keyword>. Grants vast <magic>Anima</magic> reserves sufficient to sustain even the most demanding Tier IV rituals continuously."]
+	quest.1A2B3C4D5E6F701B.quest_desc: ["The penultimate(?) orb. Forged in the <keyword>Tier IV altar</keyword> for <keyword>80,000 EV</keyword>. Grants vast <magic>Anima</magic> reserves sufficient to sustain even the most demanding Tier IV rituals continuously."]
 	quest.1A2B3C4D5E6F701B.title: "Dominus Orb of Vitae"
 	quest.1A2B3C4D5E6F701D.quest_desc: ["Tier IV crafting substrate. Costs <keyword>30,000 EV</keyword>. The highest crafting tablet, required for Tier V altar construction components."]
 	quest.1A2B3C4D5E6F701F.quest_desc: [""]
 	quest.1A2B3C4D5E6F701F.title: "Tier V Altar"
-	quest.1A2B3C4D5E6F7020.quest_desc: [""]
+	quest.1A2B3C4D5E6F7020.quest_desc: ["The penultimate(!!) orb. Forged in the <keyword>Tier V altar</keyword> for <keyword>200,000 EV</keyword>. Grants absurd <magic>Anima</magic> reserves sufficient to sustain even the most demanding Tier IV rituals continuously."]
 	quest.1A2B3C4D5E6F7020.title: "Transcendent Orb of Vitae"
+	quest.1A9DBF7600366DE2.quest_desc: ["Deletes the block of liquid you are looking at for 50EV from your Anima reserves."]
 	quest.1AA253AD184CAD2E.quest_desc: [
 		"Just some &#FEECD6beautiful lamps&r. Not all items have to have utility, right? "
 		"{@pagebreak}"
 		"Просто &#FEECD6красивые лампы&r, не создавать же только утилит-предметы, верно? "
 	]
+	quest.1ACC5B02FFBB0292.quest_desc: ["Instead of being in an inventory, Poppets can also be placed on a Poppet Shelf to be active. Each shelf can hold up to 4 Poppets."]
 	quest.1AD6EA8FC5E52268.quest_desc: [
 		"[ \"If you're having an <warning>issue</warning> or want to suggest an <positive>idea</positive>, you're always welcome to join our \", { \"text\": \"<magic>Discord</magic>\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://discord.com/invite/xAaFCCqKAn\" } }, \"! \" ]"
 		"{@pagebreak}"
@@ -1061,6 +1105,11 @@
 		"Более продвинутая <keyword>станция</keyword> для создания <keyword>зелий</keyword>. Также может создавать некоторые другие жидкости."
 	]
 	quest.1CA058CF370F34C2.quest_desc: ["подавая редстоун будет исполнять записанное на неё заклинание"]
+	quest.1CC75E9657D45037.quest_desc: [
+		"The plant will slowly grow and is harvestable."
+		""
+		"Can be found in swamps or bought from the Merchant."
+	]
 	quest.1D16519FE894BC16.quest_desc: [
 		"<keyword>Tesseract</keyword> allows you to <positive>transport Items, Fluid and Energy</positive>. Tesseracts work at <property>any distance and even across dimensions</property>! Use <keyword>multiple channels</keyword> to have different groups of Tesseracts!"
 		"{@pagebreak}"
@@ -1086,6 +1135,7 @@
 		"{@pagebreak}"
 		"Хранит <property>энергию Chronon</property> для твоих устройств. Если держать ее в инвентаре или в &6слоте Curios&r, она будет автоматически питать все переносимые предметы Tempad."
 	]
+	quest.1E0DA0C2225118AF.quest_desc: ["The improved Wooden Altar."]
 	quest.1E136FE5D9294481.quest_desc: [
 		"Every <magic>magician</magic> should have a <magic>magic furnace</magic>."
 		""
@@ -1131,6 +1181,7 @@
 		"{@pagebreak}"
 		"Может использоваться для <positive>добычи чистых ресурсов</positive>, а также некоторых <warning>хрупких блоков</warning>."
 	]
+	quest.1F54D7E5A24DE6BC.quest_desc: ["Launches you in the direction you're looking for 50EV from your Anima reserves. Useful for improved flights, but good luck improvising a landing."]
 	quest.1F5A20E076FA270E.quest_desc: [
 		"[ \"<keyword>Red Fertilizer</keyword> can be applied to farmland to <positive>boost growth speed</positive>. It can be combined with \", { \"text\": \"Yellow Fertilizer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F12E543084C6825\" } }, \".\" ]"
 		"{@pagebreak}"
@@ -1151,7 +1202,11 @@
 	quest.1FE16BABD524C29B.quest_desc: ["<keyword>Tree Capitator</keyword> that is... packed inside a <property>small orb</property>? Gimme two please ('-')"]
 	quest.2034C50745FB7217.quest_subtitle: "WIP"
 	quest.203B742A5DB473FA.quest_desc: ["Simply <positive>smash</positive> a piece of <keyword>flint</keyword> against a <keyword>stone</keyword> to sharpen it"]
-	quest.2050AE324A7E3ABC.quest_desc: ["Позволяет <positive>не дамажить</positive> <keyword>метлу</keyword> в <warning>лаве</warning> "]
+	quest.2050AE324A7E3ABC.quest_desc: [
+		"Having this attached to your broom will let you fly in lava for some time."
+		"{@pagebreak}"
+		"Позволяет <positive>не дамажить</positive> <keyword>метлу</keyword> в <warning>лаве</warning> "
+	]
 	quest.2071CE16FAA3FDEE.quest_desc: [
 		"<keyword>Bronze barrels</keyword> can be used to store and move <keyword>32 stacks</keyword> of one item. "
 		""
@@ -1209,7 +1264,7 @@
 		"Да, это &#FEECD6губка&r. &#ff6600Лавовая&r, ещё вопросы?…"
 	]
 	quest.2269A11BFEF41742.quest_desc: [
-		"The &larthana&r is a ritual knife used for sacrifice. When used to kill certain mobs, they can drop rare materials."
+		"The &larthana&r is a ritual knife used for sacrifice. When used to kill certain mobs, they can drop rare materials. Enchanting it with Looting will increase the odds of these materials dropping."
 		"{@pagebreak}"
 		"Атамэ - это ритуальный нож, используемый для жертвоприношений. При убийстве определенных мобов с него могут выпасть редкие предметы."
 	]
@@ -1266,13 +1321,20 @@
 		"Один из самых важных блоков в модпаке (пока вы не придумаете, как автоматизировать такую ручную операцию *подмигнул*) позволяет <positive>создавать блоки</positive> из ингредиентов в сетке <keyword>3x3x3</keyword>."
 	]
 	quest.245E70DC7FBF7DB3.quest_desc: ["<positive>Radiates illumination</positive> from invisible sources above the <magic>array</magic>, lighting an area without cluttering it with torches."]
+	quest.247A04F9979837AB.quest_desc: ["Only saplings can mutate. Fully-grown trees will not."]
 	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is <warning>finite</warning>. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The <keyword>Vitaemancer</keyword> has devised Rituals to assist with focused training, and the <property>Ritual of Sentient Evolution</property> to imbue your armour with a greater capacity for growth. Stand upon the <named>Master Ritual Stone</named> while clad in <named>Sentient Armor</named>, and the circle pours its power into the symbiotic plates. The armour's potential <positive>expands</positive> beyond its former limits."]
 	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>slime</keyword>."]
-	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
+	quest.24D1B4E69FDDF397.quest_desc: [
+		"Cosmetic. Combine this with any item in the crafting grid to have it hang off of your broom."
+		"{@pagebreak}"
+		"декор, можно объединить с любым предметом чтобы отображать его"
+	]
 	quest.24E7FD78ADA1347F.quest_desc: ["при переплавки некоторых руд можно получить осадок других металлов, например при переплавке меди можно получить немного золота"]
 	quest.2518CA7E57223D3A.quest_desc: [
 		"One of the earliest ways of <positive>flying</positive>"
+		""
+		"After placing it down, crouch + right click to modify it"
 		"{@pagebreak}"
 		"Один из первых способов <positive>полёта</positive>"
 	]
@@ -1290,6 +1352,13 @@
 		"{@pagebreak}"
 		"Используется для <positive>покупки большинства семян</positive> в модпаке."
 	]
+	quest.25790982D97FF33B.quest_desc: [
+		"With an Animal Cage in hand, right click an animal to capture it. You can capture multiple of the same animal in a single cage. Right click with the cage on an Animal Pen to store and interact with them, or crouch + Right Click to let them go."
+		""
+		"Works for most land animals such as cows, pigs, sheep."
+	]
+	quest.25814A2E5E005F82.quest_desc: ["Freezes the water you walk over. Permanently. Drains 100EV every 5 seconds from your Anima reserves."]
+	quest.263E27B045BEECE4.quest_desc: ["Provides even greater sight than it's predecessor, revealing stats such as Ara Vitae's crafting progress, speed, and more."]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
 	quest.26D3721A292E8E8C.quest_desc: [
@@ -1314,6 +1383,11 @@
 		"- Клавиша <keyword>[B]</keyword> - <positive>ставит маркеры</positive>; нажми <keyword>[B]</keyword> смотря на <keyword>костёр</keyword>, <keyword>кровать</keyword>, <keyword>баннер</keyword> и т.д. чтобы добавить их как маркер"
 		"- Атласы можно <positive>клонировать и объединять</positive> в <keyword>столе картографа</keyword>"
 	]
+	quest.26E6571980D85436.quest_desc: [
+		"The plant will slowly grow and is harvestable."
+		""
+		"Can be found in swamps or bought from the Merchant."
+	]
 	quest.273D51DE9AFC6B5A.quest_desc: [""]
 	quest.274F9ACC0F44CDAC.quest_desc: [
 		"If you pay attention while fishing in the <property>deep waters</property>, you will see some <keyword>strange spheres</keyword> sometimes rise to the surface."
@@ -1333,9 +1407,11 @@
 		"Найдите <magic>заброшенный город</magic> в <magic>глубоких низинах</magic>"
 	]
 	quest.27D16535C7FE372B.quest_desc: [
-		"<keyword>Brazier</keyword> lets you perform a variety of useful <property>rituals</property>; one of these is searching for structures. You can press <keyword>«U»</keyword> to view all available rituals. In particular, note that you can search for the structures you need using the <keyword>Locator ritual</keyword>!"
+		"<keyword>Brazier</keyword> lets you perform a variety of useful <property>rituals</property>; one of these is searching for structures. You can press <keyword>«U»</keyword> to view all available rituals in EMI. In particular, note that you can search for the structures you need using the <keyword>Locator ritual</keyword>!"
+		""
+		"To perform a ritual, place the Brazier down and surround it with Stone Hands. Some items need to go on the Hands, and and one on the Brazier. Once ready, use a flint and steel on the brazier to start the ritual."
 		"{@pagebreak}"
-		"<keyword>Brazier</keyword> позволяет проводить множество полезных <property>ритуалов</property>, один из таких - поиск структуры. Вы можете нажать <keyword>«U»</keyword> и посмотреть все возможные ритуалы. Обратите внимание, что вы можете искать нужные вам структуры используя ритуал <keyword>Locator</keyword>!"
+		"<keyword>Brazier</keyword> позволяет проводить множество полезных <property>ритуалов</property>, один из таких - поиск структуры. Вы можете нажать <keyword>«U»</keyword> и посмотреть все возможные ритуалы используя EMI. Обратите внимание, что вы можете искать нужные вам структуры используя ритуал <keyword>Locator</keyword>!"
 	]
 	quest.27DF75B7564C37A4.quest_desc: [
 		"<positive>Place</positive> an <keyword>attractor</keyword> on an <keyword>item pipe</keyword> to allow it to pull from connected inventories. <positive>Place</positive> an <keyword>attractor</keyword> on a <keyword>fluid pipe</keyword> to increase the speed at which it pulls fluids from the network."
@@ -1368,7 +1444,7 @@
 		"{@pagebreak}"
 		"<positive>собирает</positive> <property>EV</property> от страданий существ рядом"
 	]
-	quest.28A2FCBC095F291E.quest_desc: ["<positive>Use</positive> the <keyword>poison paste</keyword> on <keyword>farmland</keyword>. Can farm <keyword>plants</keyword> from this mod."]
+	quest.28A2FCBC095F291E.quest_desc: ["<positive>Use</positive> the <keyword>poison paste</keyword> on <keyword>farmland</keyword>. Can farm <keyword>plants</keyword> from this mod, but will destroy neighboring \"normal\" farmland."]
 	quest.28DE945FA0D4BCB9.quest_desc: [
 		"&#9BB8EDThis chest&r is literally a safe, only the person who placed it down can open it. Incredible &#C6BCE9magic&r!"
 		"{@pagebreak}"
@@ -1384,7 +1460,8 @@
 		"{@pagebreak}"
 		"Всех &#FEECD6заинтересовавшихся&r приглашаем в книжку &#9BB8EDSpectrum&r'a, расписывать тут такую механику не видим смысла!"
 	]
-	quest.29F05931D0564717.quest_desc: [""]
+	quest.29F05931D0564717.quest_desc: ["To make leather, first make a tanning rack and place it down."]
+	quest.29F05931D0564717.title: "Making Leather: Tanning Rack"
 	quest.2A45037810AC863C.quest_desc: [
 		"Most crops need water to grow, as water is <warning>consumed and disappears</warning>, you'll need an <property>aqueduct</property> and <property>hydration system</property> to prevent the crops from using up the water."
 		"{@pagebreak}"
@@ -1568,6 +1645,7 @@
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
 	]
+	quest.2EEEC6F9C1EDBCB0.quest_desc: ["You can connect several aqueducts to pipe water in a straight line from point A to point B. Each aqueduct block can hold two buckets of water, and they interact with the other components of the aqueduct system."]
 	quest.2EF484C39D617CD2.quest_desc: [
 		"Labels functions similar to &9&lItem Frames&r&r but can adapt to all surfaces and be physically connected to any solid block no matter the shape."
 		""
@@ -1598,6 +1676,7 @@
 		""
 		"The menu displays all bosses from various mods, which you can mark as defeated, or they will be marked automatically if the mod is installed on the server. For each boss, you can view their model/image, mod name, drops, spawn conditions, and other additional info."
 	]
+	quest.2F74A3F607148012.quest_desc: ["Once you have made the hanging variant, hold it and right click on the bottom of a block to hang it. After a while, it will turn into the useful dry variant."]
 	quest.2F8C776248EC39A4.quest_desc: [
 		"It has been noted that the book on this table consumes quite a lot of <warning>FPS</warning>, so <warning>keep that in mind!</warning>"
 		"{@pagebreak}"
@@ -1674,6 +1753,7 @@
 		"Эти грибы выглядят мрачно, но их &lкора&r такая аппетитная"
 	]
 	quest.31133967C7848E1E.quest_desc: ["Scribed with Kelp and awakened by Redstone Dust. Opens a vitaemantic current through the open column of air directly above the glyph, lifting or drowning any entity that enters. Right-click with an empty hand to reverse the flow; the array remembers its direction across world reloads. Strength scales with additional Redstone in the redstone slot (acceleration) and Kelp in the kelp slot (terminal velocity); right-click the array with more ingredients to stack them."]
+	quest.315C6C30D4EFB4FB.quest_desc: ["Hammers are important. You'll be using them early on in place of machines with Forge Hammers, but they have limited durability and they are not as resource-efficient."]
 	quest.316DB511541398F4.quest_desc: [
 		"<keyword>Amalgam</keyword> spawns in <magic>Deeper Down dungeons</magic>."
 		""
@@ -1757,6 +1837,7 @@
 		"{@pagebreak}"
 		"Предметные трубы обычно предпочитают ближайший инвентарь. Ингибитор увеличивает длину соединения на 1000 для целей поиска пути, что заставляет трубы для предметов избегать этого соединения, если это возможно."
 	]
+	quest.3378CF07A57A5ECD.quest_desc: ["This sigil can be linked to a storage container, and for the cost of 200EV from your Anima reserves, open that container remotely, and cross-dimensionally, for as long as that container is within a loaded chunk."]
 	quest.33D177C9C103372D.quest_desc: ["Allows you to <positive>throw oils</positive>. Can become <property>handy</property> in the future."]
 	quest.344DE4692AD588E0.quest_desc: [
 		"You can make a &#FEECD6present&r and give it to your &#CAE4C8friend&r, or your &#d33b2bunfriend&r!"
@@ -1769,6 +1850,11 @@
 		""
 		"&0Атмосферу нужно &lПОДНЯТЬ!"
 	]
+	quest.347AB6D3764BFAAA.quest_desc: [
+		"Combine this whistle with a broom in a crafting grid to bind the broom to it."
+		""
+		"Using the whistle will them call the bound broom over to you."
+	]
 	quest.349B96434E8FA41C.quest_desc: [
 		"<magic>Endgame</magic> flying"
 		"{@pagebreak}"
@@ -1780,6 +1866,7 @@
 		"{@pagebreak}"
 		"Постройте &#FEECD6святыню слияния&r, но имейте ввиду, для неё должен быть &#FEECD6доступ&r к &#9BB8EDнебу&r."
 	]
+	quest.351FE7156FB415A0.quest_desc: ["Same as the Animal Cage but for flying creatures such as bats and bees."]
 	quest.353FB272140BABA3.quest_desc: [""]
 	quest.353FB272140BABA3.quest_subtitle: "Jump pad"
 	quest.35450D58651AF44B.quest_desc: ["Allows you to <positive>access your system</positive> from any point in the world when linked to <keyword>quantum ring</keyword>"]
@@ -1900,6 +1987,7 @@
 		"Более подробно о росте можно прочитать в <keyword>книге</keyword>!"
 	]
 	quest.37EC4A78711DC4E6.quest_subtitle: "trashcan"
+	quest.38077A8FBBA9C3A1.quest_desc: ["Same as the Animal Cage but for aquatic creatures such as squids and salmon."]
 	quest.38221698E02BF6C9.quest_desc: [
 		"Use the guidebook from the Enchanted mod to view the recipe"
 		"{@pagebreak}"
@@ -1922,6 +2010,8 @@
 		"<magic>Mutagens</magic> are the blocks a witch needs to place in the area surrounding a mutating plant. The more mutagens you place, the more likely it is for the plant to <property>mutate</property>."
 		""
 		"The block in the center is the plant being mutated, while the surrounding blocks are its <magic>mutagens</magic>."
+		""
+		"Check the relevant entry in the Art of Witchcraft book to see what mutations need which mutagens."
 		""
 		"{@pagebreak}"
 		"&lМутации&r"
@@ -2181,6 +2271,7 @@
 		"Довольно хрупкий, хотя прочнее обычного Weaver Nest."
 	]
 	quest.3DABDF05A0D06EF5.quest_desc: ["The <named>Time Twister</named> tracks the player's personal timeline and allows <positive>backtracking</positive> to previous locations. It records dimension changes and death events, presenting them on a radial display. Selecting a point <positive>teleports</positive> the player back to that location and <warning>erases all timeline entries</warning> after the chosen point."]
+	quest.3DC2BBC787CEBAAB.quest_desc: ["If you can finish this gateway, you might just get some useful items."]
 	quest.3DD74B48583DB8C0.quest_desc: [
 		"Many parts of a mob, including ourselves, react differently when <warning>toxins</warning> are introduced in their bodies. This makes &6unique ingredients&r when certain mobs are <warning>afflicted</warning>. As such, we should extract them. When a mob <warning>dies while being afflicted with poison</warning>, they can drop &6special ingredients&r. However, a sword is too crude to extract them. As such, they must die by a <keyword>scalpel</keyword> in order to carefully extract these &6valuable parts&r."
 		"{@pagebreak}"
@@ -2188,6 +2279,7 @@
 		""
 		"Когда моб <warning>умирает, будучи пораженным ядом</warning>, с него могут выпасть &6особые предметы&r. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти &6ценные ингредиенты&r, их нужно умертвить <keyword>скальпелем</keyword>."
 	]
+	quest.3E0B415C278B8E33.quest_desc: ["The cornerstone of the Eidolon mod. A guidebook, spellbook and prayerbook all in one."]
 	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
 	quest.3EA1E7E490D39A84.quest_desc: [
 		"Demonic <property>Spiritus</property> can also exist in a diffused state throughout the very air. By burning Spiritus in a <named>Vas Maleficum</named>, you release it into the <magic>Aura</magic>, an invisible miasma that permeates each chunk of the world."
@@ -2202,6 +2294,11 @@
 		"If some nasty bacteria is threatening your kitchen or your life, you can use this to clean the mess. Well, stop the mess from expanding, at least..."
 		"{@pagebreak}"
 		"Если всё таки какая-то из жидкостей вырвалась наружу, данная баночка поможет вернуть всё на своё место! С некоторыми нюансами."
+	]
+	quest.3EA8B5DE633E228F.quest_desc: [
+		"Use the Touch of Darkness spell on a pewter inlay. "
+		""
+		"If not yet unlocked, try experimenting with the mod. It unlocks progressively."
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>squid</keyword>."]
 	quest.3F076989AA64CD64.quest_desc: [
@@ -2271,6 +2368,11 @@
 		"Чтобы получить <keyword>одомашненную версию животных</keyword>, необходимо <positive>разводить диких животных</positive>!"
 		""
 		"Чем дальше заходит род диких животных, тем <keyword>больше шанс</keyword> что животное станет <keyword>одомашненным</keyword> "
+	]
+	quest.4153EB3BB134B614.quest_desc: [
+		"When they grow from saplings, Black Thorn trees have a chance to create Essence of the Forest in their trunk. These will be easily visible on their black bark. Right click these while holding a Boline to harvest them. After harvesting, the logs will slowly regrow new Essences in place of the harvested ones."
+		""
+		"They're useful for magic, and they are also yummy."
 	]
 	quest.4185AADFF5388758.quest_desc: [
 		"The <keyword>Wican Ward</keyword> will be granted to you if you complete the <keyword>Amethyst Ritual</keyword> and will <warning>stop mobs from spawning</warning> in your area"
@@ -2356,6 +2458,7 @@
 		"- Extract from the Holy Book of Color on the ceremony to become the High Hierarch of Spectrum"
 	]
 	quest.43EE44FBD36E1051.quest_desc: ["From &lskeletons&r (<keyword>strat/skeleton/wither skeleton/bogged</keyword>) with <keyword>scythe</keyword>"]
+	quest.43FF39F863DE377A.quest_desc: ["Allows you to conjure a liquid lava block for the cost of 1,000 EV out of your Anima reserves."]
 	quest.4411D3E177F394CE.quest_desc: [
 		"&lPlayer Skull&r:"
 		"• +2.5x Power Capacity"
@@ -2406,10 +2509,16 @@
 		"{@pagebreak}"
 		"Для достижения истинного совершенства по-прежнему потребуется немного удачи. В своих путешествиях вы можете встретить &6Сигил злобы&r - эзотерический артефакт, который <keyword>случайным образом изменяет</keyword> аффикс предмета. Что именно он делает, остается загадкой."
 	]
+	quest.4580B1AEAA36E6B4.quest_desc: ["Augment a Ritual of Awakening with a Book and Quill to create a Bookwyrm Charm. Use it on a Storage Lectern to give it a new home while it works as your own personal warehouse manager."]
 	quest.45C5E9EB1E15F9D1.quest_desc: [
 		"Save a copied build as a <property>template</property> and load it later. Put a Copy-Paste Gadget with copied data in the <property>left slot</property>, <keyword>paper</keyword> in the <property>right slot</property>, give the template a <property>name</property>, and save it. You can also share the <warning>template code</warning> with other players."
 		"{@pagebreak}"
 		"Сохраняет скопированную постройку как <property>шаблон</property> и позволяет загрузить ее позже. В <property>left slot</property> положи Copy-Paste Gadget с копией, в <property>right slot</property> - <keyword>бумагу</keyword>, задай <property>название</property> и сохрани. Код шаблона можно передать другим игрокам."
+	]
+	quest.45F2610658232D2D.quest_desc: [
+		"The bush will slowly grow and is harvestable."
+		""
+		"Can be found in swamps or bought from the Merchant."
 	]
 	quest.460E0E1586EBB12E.quest_desc: [
 		"To <positive>leave</positive> this <magic>dimension</magic>, take a bite of this <named>fragrant apple</named>!"
@@ -2423,6 +2532,10 @@
 	]
 	quest.464B4BB86A9CF448.quest_desc: [
 		"You can <positive>combine</positive> multiple <keyword>chests</keyword> or any other <keyword>storage containers</keyword> into a single, very user-friendly <keyword>crafting interface</keyword> - it's literally <named>AE2</named> on a minimal setup."
+		""
+		"With a Dominion Wand in hand, shift + right click a storage container to designate it, and then right click the storage lectern to bind the two. "
+		""
+		"Will not function without a bookwyrm, but can have more than one. Each bookwyrm allows connecting 8 more containers."
 		"{@pagebreak}"
 		"Вы можете <positive>объединить</positive> множество <keyword>сундуков</keyword> или любых других <keyword>хранилищ</keyword> в один очень удобный <keyword>интерфейс для крафта</keyword>, это буквально <named>AE2</named> на минималках."
 	]
@@ -2474,6 +2587,7 @@
 		"{@pagebreak}"
 		"Очень <positive>эффективный</positive> крючок для <named>ловли сокровищ</named>!"
 	]
+	quest.47DF3BB83B4C272F.quest_desc: ["Rune Slabs allow for a few useful rituals, but in this form they still do nothing. You will need to smash them with an anvil together with some other ingredient to infuse them first."]
 	quest.47ECA2AA01DBE0C5.quest_desc: [""]
 	quest.4821B8BFF0FEE06B.quest_desc: [
 		"Skulls can increase both the capacity and recharge rate of an altar, with varying effectiveness."
@@ -2571,6 +2685,7 @@
 		""
 		"Этот &5прибор&r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать &5древние ритуалы&r и <positive>смеси ядов</positive>. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
 	]
+	quest.49688ECB08702A0C.quest_desc: ["The Nether Chalk represents fire, the demonic, and The Nether."]
 	quest.497D98E4037B0265.quest_desc: [
 		"This peculiar tool seems to disobey normal material properties."
 		"The harder a block is, the quicker this pick breaks it; the softer a block is, the more resistance it gives."
@@ -2608,6 +2723,11 @@
 		"Для автоматизации: подавай предметы в любую сторону кроме нижней, забирай результат снизу. Одновременно крафтит только один Link."
 		""
 		"Вариант Orb Vitae Link: вставь Blood Orb внутрь - он будет перекачивать Essentia Vitae из алтаря прямо в Anima владельца орба."
+	]
+	quest.4A0DF37960C686FF.quest_desc: [
+		"The Primitive Alloy Smelter allows you to combine two different materials into one new material."
+		""
+		"You're going to have to install chimneys on it for it to be useful, first. You can have up to four Reinforced Brick Chimneys, and up to 4 Brick Chimneys on top of them."
 	]
 	quest.4A1CF718DA71EAC5.quest_desc: [
 		"The <keyword>feeding trough</keyword> <positive>feeds nearby animals for breeding</positive>."
@@ -2671,6 +2791,7 @@
 		"{@pagebreak}"
 		"<keyword>Чаша</keyword> работает как <property>бездонное ведро с молоком</property>, <positive>исцеляя вас</positive>, когда вы этого потребуете. <keyword>Ритуал Лазурита</keyword> дарует вам это чудо."
 	]
+	quest.4B2D0927FC5E56C9.quest_desc: ["Take the dried plant and place it on a Herbalist Bench. Then, use the boline on it a few times to create chopped plants."]
 	quest.4B3C2C61B4A1072A.quest_desc: [
 		"<keyword>Bounty boards</keyword> can be found throughout the world in villages, and they'll generate bounties inside of them. These bounties often ask for you to bring back an item, or kill some mobs in return for whatever rewards they're offering. If you can complete the bounty, you just have to bring it back to the bounty board and <keyword>right click</keyword> the board to <positive>redeem your rewards</positive>!"
 		""
@@ -2698,6 +2819,7 @@
 		"Добавьте в стол топливо, предмет, внешний вид которого вы хотите изменить, и предмет, в который вы хотите его превратить."
 	]
 	quest.4B4152C17573E98D.quest_subtitle: "Change the appearance of your items"
+	quest.4B5230171EE8E306.quest_desc: ["The crafting station acts like the normal crafting table, except that it can access adjacent inventories, and items can be placed and kept on it"]
 	quest.4B801253049DAC2F.quest_desc: [
 		"&#FEECD6Catch&r the right phase of the moon and create your first &#4040a1onyx&r!"
 		""
@@ -2773,6 +2895,11 @@
 		"{@pagebreak}"
 		"<keyword>Coille Slat</keyword> - даёт <positive>рост растениям</positive>"
 	]
+	quest.4E984D0C4BB23055.quest_desc: [
+		"Right click one of the many types of Ritual Tablets on this Brazier to prepare the ritual. Right click it again to activate the ritual."
+		""
+		"Some rituals allow you to augment them before activating them by throwing items into the Brazier."
+	]
 	quest.4EC4C131533D8548.quest_desc: [
 		"A kind of &#FEECD6lamps&r, good for &#9BB8EDdecorating your base&r. Also emits cute &#FEECD6particles&r!"
 		"{@pagebreak}"
@@ -2797,6 +2924,8 @@
 		"{@pagebreak}"
 		"<positive>Зажми правую кнопку мыши и шифт</positive> на <keyword>кувшинке</keyword>!"
 	]
+	quest.4FC50DF9C143E30A.quest_desc: ["Next, get some raw hide. These drops from animals, so get to hunting."]
+	quest.4FC50DF9C143E30A.title: "Making Leather: Raw Hide"
 	quest.4FE2592DC14B5731.title: "navigation_module"
 	quest.500B0AF8A393CC5D.quest_desc: [
 		"The <keyword>chicken nest</keyword> <positive>collects eggs dropped by nearby chickens and stores them for later pickup</positive>."
@@ -2829,6 +2958,12 @@
 		"{@pagebreak}"
 		"Задает <keyword>точку назначения</keyword> для телепортации. <positive>Поставь её</positive> в месте, куда должен вести <magic>портал</magic>, а затем <positive>запиши координаты</positive> на пустую <property>Location Card</property> через <positive>правую кнопку мыши</positive>."
 	]
+	quest.50F86C44AB26BEB2.quest_desc: ["Grants Haste 1 for 100 EV every 5 seconds from your Anima reserves."]
+	quest.5116FA2F58C59929.quest_desc: [
+		"Aim the Slime Sling at something solid and fire at it to launch *YOURSELF* in the opposite direction!"
+		""
+		"Allows you to reach great heights. I just hope you know how to make great landings."
+	]
 	quest.51355FDCB71F9048.quest_desc: [
 		"&#C6BCE9Quitoxic Reeds&r can be found in &#CAE4C8swamps&r!"
 		""
@@ -2847,6 +2982,11 @@
 		"{@pagebreak}"
 		"Перед улучшением <keyword>алтаря</keyword> убедитесь что у вас есть все блоки для его улучшения, некоторые необходимо создать в <warning>предыдущем алтаре</warning>!"
 	]
+	quest.51BC2EDB324F7ECD.quest_desc: [
+		"The Forge Hammer is necessary for the early parts of tech. Place a material (usually ingots) in them to view available recipes, although most will also require a Hammer item in the second slot. Using the Forge Hammer is not as resource efficient as using machines:"
+		""
+		"A Forge Hammer will turn two ingots into one plate, while a Compressor will turn one ingot into one plate."
+	]
 	quest.51BC2EDB324F7ECD.quest_subtitle: "New quest chapter"
 	quest.51C0876E925B1FF1.quest_desc: [
 		"<keyword>Slime Boots</keyword> let you <positive>bounce off the ground instead of taking damage</positive>, and they work well with the <keyword>Slime Sling</keyword>"
@@ -2854,6 +2994,11 @@
 		"<keyword>Slime Boots</keyword> позволяют <positive>отпригывать от земли вместо получения урона</positive>, хорошо сочетаются вместе с <keyword>Slime Sling</keyword>"
 	]
 	quest.51E3EA7E70ECE842.quest_subtitle: "New ore"
+	quest.51F468219CD1AC52.quest_desc: [
+		"Use the Touch of Light spell on a gold inlay to create this."
+		""
+		"If you don't have the Touch of Light spell yet, experiment with the mod to unlock it."
+	]
 	quest.51FBF0B7A92E3FD8.quest_desc: [
 		"- The <keyword>Advanced Magnet</keyword> <positive>picks up Items and Experience</positive> within a <property>configurable range</property>!"
 		""
@@ -2877,6 +3022,10 @@
 		"Данный блок очень сильно поможет вам в будущем!"
 	]
 	quest.52E47CD2A5102410.quest_desc: [
+		"To smash items without losing anvil durability, place a winch with a crank on its side. Put some rope in it. Then, right clicking the crank will pull the rope closer to the winch, and crouch + right click will let the anvil drop."
+		""
+		"The winch has to be at least four blocks above the ground, otherwise it wouldn't be able to lift the anvil."
+		""
 		"You need an <keyword>undamaged anvil</keyword> to use this block."
 		""
 		"Also, make sure there are no items in the offhand while the winch is in operation!"
@@ -2916,6 +3065,7 @@
 		"{@pagebreak}"
 		"То же самое, что и <keyword>медная</keyword>, но с небольшой вероятностью добычи <keyword>золота</keyword> и <keyword>железа</keyword>."
 	]
+	quest.5504357597BD115A.quest_desc: ["Only saplings can mutate. Fully-grown trees will not."]
 	quest.552B1FFCECBD0652.quest_desc: [
 		"A <keyword>manual well</keyword>. Produces different amounts of <keyword>water</keyword> in different biomes. Can be connected to a <property>system of aqueducts</property>"
 		"{@pagebreak}"
@@ -2939,7 +3089,10 @@
 	]
 	quest.55B031B4D7E5DEE3.quest_desc: ["<named>Wild chicken</named>"]
 	quest.5613C04E72D2AC99.quest_desc: ["Unlike the <keyword>Timedoor Projector</keyword>, the <keyword>Tempad</keyword> automatically detects all <keyword>Timedoor Markers</keyword> and <keyword>Chronomarks</keyword> owned by the player, making <keyword>Location Cards</keyword> optional for personal travel."]
+	quest.5634B70F205A9FB4.quest_desc: ["Right click the raw hide on to the tanning rack, and then, with knife hand, right click on the rack a few times to turn raw hide into leather"]
+	quest.5634B70F205A9FB4.title: "Making Leather: The last step"
 	quest.5643AEC296D95BE9.quest_desc: ["<warning>Slowness</warning> and <warning>weakness</warning>."]
+	quest.5645E4DA993EDC3D.quest_desc: ["The most basic of chalks, used for standard circles."]
 	quest.56890AC89A622C58.quest_desc: ["Coaxes nearby crops and plants to grow faster in a 2-block radius, applying a gentle acceleration each second."]
 	quest.56956E24B043B41A.quest_desc: [
 		"&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"
@@ -2982,6 +3135,13 @@
 		"В данже была найдена <keyword>засохшая нефритовая луковица</keyword>, возможно у вас выйдет <positive>оживить</positive> её?"
 	]
 	quest.5879B627CB54AF43.quest_desc: ["Projects a column of protective force (roughly 6 blocks tall, 3 wide) above it, reflecting any projectile that passes through back the way it came. Requires an Tabula Animata and a diamond."]
+	quest.58AC66315C962012.quest_desc: [
+		"To mutate a Toxony plant, it has to be planted on Poisonous Farmland and must not be fully matured."
+		""
+		"The Lost Journal's \"evolved plants\" section will show what elemental affinity is needed to evolve which plant. To identify what item has what affinity, hold a magnifying glass in your offhand while either rapidly eating 20 of the same item or injecting it into a near-death enemy via redstone solution."
+		""
+		"Once an item's affinity has been identified, hold it and right-click the appropriate plant with it to mutate it."
+	]
 	quest.58DE851CD9578153.quest_desc: [
 		"Allows you to share <property>knowledge of glyphs</property> in exchange for <keyword>experience</keyword>"
 		""
@@ -3034,10 +3194,11 @@
 		"Любой сундук в незере"
 	]
 	quest.5A23E325ABD115A1.quest_desc: ["The <named>perfect companion</named> for your digging sessions! Provides <positive>emotional support</positive> in the time of need and is passable as a chair when you need some structural support too! Don't forget to <positive>feed it</positive> with... something… It's not picky at all, and <positive>hydrate it</positive> at least once a day for it to grow into a <property>strong and healthy boulder</property> one day!"]
+	quest.5A26B593C3D70B56.quest_desc: ["Used to make Toxic Formula, Canisters, as well as other items."]
 	quest.5A4BB58AB11D4B81.quest_desc: [
 		"The <keyword>witch's oven</keyword> is a modified furnace used to collect <keyword>byproducts</keyword> and <keyword>fumes</keyword> made from burning materials."
 		""
-		"Unlike a furnace, this oven <warning>cannot process ores</warning>. <positive>Place</positive> a <keyword>clay jar</keyword> into the middle slot to collect fumes."
+		"Unlike a furnace, this oven <warning>cannot process ores</warning>. <positive>Place</positive> a <keyword>clay jar</keyword> into the middle slot for a chance to collect fumes."
 		"{@pagebreak}"
 		"<keyword>Ведьмина печь</keyword> - это модифицированная печь, используемая для сбора <keyword>побочных продуктов</keyword> и <keyword>дыма</keyword>, образующихся при горении материалов."
 		""
@@ -3082,6 +3243,7 @@
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/horseman\" } }, \".\" ]"
 	]
+	quest.5BA28B2D3F0434AC.quest_desc: ["The Spinning Wheel is what allows the infusion of mundane Poppets with other materials to create magical Poppets."]
 	quest.5C6F64DF2FA17AA2.quest_desc: [
 		"Can be used to <positive>summon a horse</positive> from any location in the world. "
 		""
@@ -3147,6 +3309,7 @@
 		""
 		"{image:milf:textures/quest_pic/capacity.png width:200 height:60 align:center}"
 	]
+	quest.5CC8571CA8C94B9E.quest_desc: ["Highlights geodes with bright lights, even through blocks. Most easy to see when looking down. The color of the light changes as you grow closer to the geode."]
 	quest.5CD79C87448D8A51.quest_desc: [
 		"There are many different <keyword>rituals</keyword> - check them out in the <keyword>guidebook</keyword>!"
 		""
@@ -3238,6 +3401,15 @@
 		"Играя на сервере <warning>будь осторожен</warning> со всеми жидкостями в подобных баночках, они могут разрастись &lочень&r сильно…"
 	]
 	quest.5EFB6A7B7AC52555.quest_subtitle: "Oopsie!"
+	quest.5EFDA7F9E030E5D7.quest_desc: [
+		"Alakarkinos allows you to collect many magical items, such as <keyword>Chthonic Gold</keyword>, <keyword>Shimmerstone Gems</keyword>, <keyword>Brilliance</keyword>, <keyword>Soul Shards</keyword>, and <keyword>Onyx Powder</keyword>. To use it, you need to select a <property>container</property> where Alakarkinos will store items and provide it with a small amount of <magic>Source</magic>. "
+		""
+		"[ \"In order for Alakarkinos to use a block, you must place it in the world; to automate this process, you can use the \", { \"text\": \"Block Placer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5D02CAC8B45A26C4\" } }, \" from Spectrum.\" ]"
+		"{@pagebreak}"
+		"Alakarkinos позволяет добывать множество магический вещий, такие как <keyword>Chthonic Gold</keyword>, <keyword>Shimmerstone Gems</keyword>, <keyword>Brilliance</keyword>, <keyword>Soul Shards</keyword> и <keyword>Onyx Powder</keyword>, для его работы необходимо указать <property>контейнер</property> в который Alakarkinos будет складывать предметы и дать ему немного <magic>Source</magic>. "
+		""
+		"[ \"Для того чтобы Alakarkinos использовал блок - его необходимо установить в мире, для автоматизации вы можете использовать \", { \"text\": \"Block Placer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5D02CAC8B45A26C4\" } }, \" из Spectrum.\" ]"
+	]
 	quest.5F151FBC5A68433F.quest_desc: [
 		"To power it, <positive>leash a mob</positive> to it."
 		""
@@ -3245,6 +3417,13 @@
 		""
 		"Any leashable mob will work for this."
 		"You can install a \"<keyword>SPEED UPGRADE</keyword>\" to accelerate the milling. The upgrade is a <keyword>speed potion</keyword>."
+	]
+	quest.5F1F7D43DA96F778.quest_desc: [
+		"Place it atop an altar to increase its capacity by 2."
+		""
+		"Can also be used to burn plants, the incense from which will have effects based on what plant is burned."
+		""
+		"Consult with your Ars Ecclesia for effects."
 	]
 	quest.5F3B3C006860B496.quest_desc: ["<positive>Attracts items</positive> when <property>powered</property>"]
 	quest.5F750B9378BA292B.quest_desc: [""]
@@ -3304,6 +3483,18 @@
 		"{@pagebreak}"
 		"Данное кольцо можно улучшать в другие кольца"
 	]
+	quest.6054C54E3E44BA38.quest_desc: [
+		"{image:enchanted:textures/gui/modopedia/circle_magic.png width:100 height:100 align:center}"
+		""
+		"Circle Magic are powerful rituals that allow one to perform many feats: teleportation, protection from monsters, entrapping monsters of even drawing out raw materials from their underground veins without a single strike of a pickaxe."
+		"{@pagebreak}"
+		"To cast Circle Magic, draw the specific circle for the specific ritual you want to perform, as shown in the Art of Witchcraft book. Then, throw the spell materials into the circle, near the golden glyph at the center. Finally, right click the golden glyph to activate the ritual."
+		""
+		"Most rituals require Altar Power. They must be cast near an altar with enough power, but some rituals allow for that requirement to be replaced with a Charged Attuned Crystal thrown in with the materials."
+		""
+		"Consult the Art of Witchcraft book to see what rituals are available and how to perform them."
+	]
+	quest.6054C54E3E44BA38.title: "Circle Magic"
 	quest.605AFF391B6FB32E.quest_desc: ["<keyword>32 channels/cable</keyword>"]
 	quest.606AC3FF6B9213D5.quest_desc: ["Just like a normal <keyword>composter</keyword>, but <property>mechanical</property>!"]
 	quest.606DEC68ADF83126.quest_desc: [
@@ -3328,7 +3519,7 @@
 		"BUT HOW AND WHY??"
 		""
 		"…"
-		""
+		"Items must be arranged exactly like in the recipe or else the crafting will fail and the components will be lost."
 		"&#4EC847<fade>🛈 Toxin is used as fuel!"
 		"{@pagebreak}"
 		""
@@ -3384,6 +3575,11 @@
 		"{@pagebreak}"
 		"<warning>Можно найти 1 раз за игру 1 игроком"
 	]
+	quest.61EAC0739C627CBC.quest_desc: [
+		"The Trowel will let you give more interesting textures to walls and floors. "
+		""
+		"When holding and using the trowel, it will place down random blocks from your hotbar."
+	]
 	quest.6245F17DF657C296.quest_desc: [
 		"Most upgrades are trained by performing the matching activity while wearing the chestplate; every time you do, the armour banks experience toward the next level. How much it banks depends on the upgrade:"
 		""
@@ -3432,6 +3628,7 @@
 		"{@pagebreak}"
 		"Поместите кусок Sentient Armor на небольшую площадку размером 5×2×5 над Главным ритуальным камнем. В ходе ритуала все улучшения, нанесенные на броню, будут извлечены в виде отдельных «Том улучшений» (по одному на каждое улучшение с сохранением накопленного опыта), после чего броня будет полностью очищена. Позже эти тома можно будет вновь нанести на новый нагрудник."
 	]
+	quest.631F38ADF34C57B6.quest_desc: ["Only saplings can mutate. Fully-grown trees will not."]
 	quest.636C2DC2295C1B6D.quest_desc: [
 		"The &l&6Poseidon's gift&r!"
 		"{@pagebreak}"
@@ -3465,6 +3662,7 @@
 		"[ \"You can read more about each ship, their speeds, and other details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/talhanation/wiki/wiki/Small-Ships-Wiki\" } }, \"!\" ]"
 	]
 	quest.6443864802D04B07.title: "Are you sure it's Small Ships?"
+	quest.64A621522E1D2DD5.quest_desc: ["Creates floating platforms beneath your feet. Shift + right click to deactivate. Consumes 100EV/s from your Anima reserves."]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"<keyword>Invisible lighting</keyword>!"
 		""
@@ -3506,6 +3704,17 @@
 		"When placed in the world, you can <positive>right-click</positive> them with <keyword>buckets or other tanks</keyword> to transfer fluids."
 		""
 		"Also, you can <positive>stack them</positive> in your inventory if they have the same contents. How nifty!"
+	]
+	quest.66A1D185BC37064A.quest_desc: [
+		"Crafting with the Crucible is an exact science. Recipes have 'stages' to them from top to bottom, with each having a number of items that can be required for it, but the order does not matter."
+		""
+		"Put a heat source beneath it and water inside of it."
+		""
+		"Once the water begins boiling, you can begin. Throw in the first stage's reagents and wait until the liquid's color changes. Once it does, quickly throw in the next stage's items, as you only have a limited amount of time to do so. "
+		""
+		"Some stages may also require you to stir the cauldron. Simply right click it to do so."
+		""
+		"Fail to perform the craft accurately and you will lose the reagents."
 	]
 	quest.672249922B854604.quest_desc: ["Outputs a redstone signal from 0 to 15 proportional to the EV stored in the owner's anima, scaling linearly up to 1,000,000 EV. Requires a bound Arcane Ash to function."]
 	quest.6728D3D62F6812D6.quest_desc: [
@@ -3560,6 +3769,7 @@
 		""
 		"Он лишь расширяет радиус действия вашей <keyword>Пастельной сети</keyword>, позволяя дёшево перекрыть промежутки между другими узлами."
 	]
+	quest.6819B4405CCB4CD6.quest_desc: ["When placed in a Mixing Cauldron, jumping inside of it three times will fill the cauldron with blood."]
 	quest.6823D5F00B44B271.quest_desc: [
 		"Used to... <positive>mold</positive> <property>brick-looking stuff</property>"
 		"{@pagebreak}"
@@ -3624,6 +3834,7 @@
 	]
 	quest.68B64BBF3CC18E1C.quest_subtitle: "[Right-click] on a block to summon a loyal Gargoyle guardian."
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>wolf</keyword>."]
+	quest.68C66411366AEECE.quest_desc: ["Cosmetic"]
 	quest.68EFB14826CB715C.quest_desc: [
 		"Her eyes will gaze upon this work,"
 		"To find mere never-ending shirk,"
@@ -3735,11 +3946,20 @@
 	quest.6A1DA8ABA8F13FC2.title: "World Tier: Frontier"
 	quest.6A2EFED5C079A7AA.quest_subtitle: "WIP"
 	quest.6A7D9640907654A2.quest_desc: ["Combines Spike's cruelty with a deeper purpose: when a non-player creature steps onto it, the array deals a heart of damage and releases 0.5 units of raw Spiritus into the surrounding chunk. Has a brief cooldown; players are immune. Requires an Tabula Animata."]
-	quest.6AADBAB610C068F2.quest_desc: ["на метле можно уместить  2 игрока, можно красить имеет 9 слотов"]
+	quest.6AADBAB610C068F2.quest_desc: [
+		"Having this on your broom will not only let another player ride it alongside you, but will also give the broom 9 inventory slots"
+		"{@pagebreak}"
+		"на метле можно уместить  2 игрока, можно красить имеет 9 слотов"
+	]
 	quest.6AC5BBB361E90BF1.quest_desc: [
 		"We recommend that you read about each <wind>type of bobber</wind>!"
 		"{@pagebreak}"
 		"Мы рекомендуем ознакомиться с каждым <wind>видом поплавков</wind>!"
+	]
+	quest.6ACF4A657414E3D6.quest_desc: [
+		"Apotheosis Gems will very quickly take up a lot of your storage space. "
+		""
+		"The Gem Case fixes that by allowing you to stack these gems."
 	]
 	quest.6BE6570F75CC191A.quest_desc: [
 		"Best used together with <keyword>Sender Nodes</keyword> (which push to it) and <keyword>Gather Nodes</keyword> (which pull from it)."
@@ -3912,6 +4132,7 @@
 		""
 		"Вы можете прочитать больше о том как ловить рыбу и другую важную информацию в <keyword>гайде</keyword>, он максимально подробный!"
 	]
+	quest.6FABBCC7CB80AF62.quest_desc: ["Once you make Fire-Clay Balls, you can combine them with a Brick Mold in a crafting grid to make Unfired Fire Clay Bricks. You will then have to put the bricks in a furnace to make them usable."]
 	quest.6FBA4C72D386837A.quest_desc: [
 		"A &#DEB3E0Fabrication Chest&r has four special slots for &#FEECD6Crafting Tablets&r."
 		""
@@ -3934,6 +4155,7 @@
 		"А еще распишитесь *&#9BB8EDтут&r*, *&#9BB8EDздесь&r*, и предоставьте &#FEECD6фото паспорта&r!"
 	]
 	quest.6FCE521D7A64B367.quest_desc: ["Folds space between two aligned glyphs for a seamless vertical elevator. Place at least two arrays directly above one another on the same block column, at any distance up to 64 blocks. Jump while standing on an array to teleport upward to the next array above; Sneak to descend to the nearest below. Multiple arrays can be chained for multi-floor shafts. Each search is limited to the same X/Z column, so precise alignment matters."]
+	quest.703F575B0690DE26.quest_desc: ["Gem Dust is necessary to for making better use of Apotheosis gems. Drop an anvil on some gems to get Gem Dust."]
 	quest.706FE8A4CD20FDEF.quest_desc: [
 		"A &7square&r, a &6diamond&r, a <property>circle</property> - they don’t mean anything; they’re just decorations."
 		""
@@ -3969,6 +4191,11 @@
 		"A mod designed to encourage dietary variety! It does so by rewarding the player for eating a variety of foods instead of punishing them for failing to diversify. Instead of using the stick we use the carrot!"
 		""
 		"In this modpack, only <keyword>rare and very filling food</keyword> will give you <warning>extra hearts</warning>! (Oh, and weird ones too, just to fulfill the sincere desire of your gourmet needs.)"
+	]
+	quest.70FAA49F0C768E38.quest_desc: [
+		"Unreasonably fast? Maybe."
+		""
+		"TOO fast? Never."
 	]
 	quest.7145CB4C825D9D77.quest_desc: ["Clavis transforms the traditional loot system: every loot chest is now locked and can be opened through a simple yet engaging <keyword>mini-game</keyword>. The better you perform, the <positive>richer your reward</positive> - up to nearly <positive>double the loot</positive> for a perfect result."]
 	quest.714992905CA44375.quest_desc: [
@@ -4034,6 +4261,7 @@
 		"О большинстве <keyword>ритуалов</keyword> можно прочитать в <keyword>гайдбуке</keyword>!"
 	]
 	quest.721EE6BCEA9B6F36.quest_desc: ["<positive>Access</positive> in-game <property>encyclopedia</property>"]
+	quest.72474FB178234D8E.quest_desc: ["Activate this sigil to temporarily banish all fluids around you. You can use this to run across the ocean bed, or to walk across the Nether's lava lakes."]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
 		"{@pagebreak}"
@@ -4045,7 +4273,11 @@
 		"&#FEECD6Лампы&r испускают немного &#FEECD6света&r и понадобятся в будущем для улучшения ваших &#9BB8EDструктур!&r"
 	]
 	quest.72F7318B36C13A89.quest_desc: ["From <keyword>enderman</keyword> with <keyword>scythe</keyword>"]
-	quest.7334667E017F1A95.quest_desc: ["позволяет плавать и не спрыгивать с метлы под водой"]
+	quest.7334667E017F1A95.quest_desc: [
+		"Allows you to fly in water"
+		"{@pagebreak}"
+		"позволяет плавать и не спрыгивать с метлы под водой"
+	]
 	quest.733E5E7E27403D28.quest_desc: [
 		"Maximum: 4"
 		""
@@ -4098,6 +4330,7 @@
 		"{@pagebreak}"
 		"Младший брат <named>мешка</named>, посмотрите, какой он <positive>милый</positive> ❤"
 	]
+	quest.746ED760B3D00FBA.quest_desc: ["This dowsing rod will direct you towards swamps and jungles. Crouch + right click to choose which it will point you to. Right click to find a new one."]
 	quest.74D4C6332BC7AE9D.quest_desc: [
 		"<keyword>Thaumic Footsteps</keyword>"
 		"{@pagebreak}"
@@ -4109,6 +4342,8 @@
 		"Данный <named>артефакт</named> совместим вместе с рыбалкой из мода <magic>Starcatcher</magic>! "
 	]
 	quest.757ED58D0C1CED21.quest_desc: ["Press <keyword>\"Y\"</keyword> on an item in your inventory (or in EMI) to <positive>highlight similar items in nearby chests</positive>"]
+	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by right clicking cobblestone on stone."]
+	quest.75DE98178AF407BD.quest_desc: ["The most basic element of Toxony."]
 	quest.7635ED9379E95573.quest_desc: ["Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"]
 	quest.76A00C0FCE2D91E1.quest_desc: [
 		"The <keyword>distillery</keyword> allows witches to <positive>separate materials</positive> into their components by utilising differences in boiling and condensing points."
@@ -4155,6 +4390,9 @@
 		"{@pagebreak}"
 		"Один из важнейших блоков для дальнейшей прогрессии. Более подробные инструкции, как с ним взаимодействовать, можно прочитать в книге!"
 	]
+	quest.7943319F97052FD4.quest_desc: ["You can place dried sage in these and light them up with flint and steel to prevent mob spawns."]
+	quest.7974626CE9895475.quest_desc: ["Allows you to conjure a water block for the cost of 100 EV out of your Anima reserves."]
+	quest.79AE7151ADF00D10.quest_desc: ["No ritual circle is complete without a golden sigil at it's center."]
 	quest.79CE5FF7EB605456.quest_desc: [
 		"Tired of building all those complex multiblock structures? Want to have an ability to <positive>easily move them around</positive> if you feel weak Feng Shui from it? We're presenting to you: <named>Multiblock Packer 3000 (Safety regulations edition)</named>."
 		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With <property>advanced compacting technology</property>, we accomplished the ability to <positive>pack ANY multiblock</positive> into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at <named>PLACERS™</named> (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new <named>PUSH®</named> (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
@@ -4201,6 +4439,7 @@
 		""
 		"Улучшение: объедини два Blood Tank + Glass + Bloodstone на верстаке. Результат на один тир выше основного танка, жидкости сливаются. Одинаковые жидкости суммируются, разные - побеждает основной танк."
 	]
+	quest.7BF0822DA2EA2407.quest_desc: ["The Common gem holds up to 1,024 Spiritus."]
 	quest.7C082F9CC1474254.quest_desc: [
 		"<keyword>Magnum Torch</keyword> adds three kinds of very powerful torches that <positive>prevent mobs from spawning</positive> in a huge area. Only natural spawns will be prevented, so e.g. spawners and raids still work as they should."
 		""
@@ -4234,12 +4473,29 @@
 		"<positive>Заменяет</positive> большинство инструментов одним <keyword>заклинанием</keyword>"
 	]
 	quest.7CA4C6614455169B.title: "A pickaxe? No. An axe? No. A shovel?"
+	quest.7CC15CAF5CC569EE.quest_desc: ["Take the dried plant and place it on a Herbalist Bench. Then, use the boline on it a few times to create chopped plants."]
+	quest.7CC6B7D579B7C7B8.quest_desc: ["Once you have made the hanging variant, hold it and right click on the bottom of a block to hang it. After a while, it will turn into the useful dry variant."]
+	quest.7CC9F88727D23AF6.quest_desc: [
+		"Poppets can be spun with various materials to create magical poppets. These poppets will grant the target magical effects when certain conditions occur, at the cost of the Poppet's durability. The poppet has to either be in the target's inventory or on a Poppet shelf to take effect."
+		""
+		"To give the Poppet a target, you must first use a Taglock Kit on the target and use it on the Poppet (crouch + right click with the taglock in the off-hand)"
+		""
+		"Poppets can also be Infused or made Sturdy."
+		""
+		"Infused Poppets have greater effects. When a tool breaks, a Tool Poppet will prevent it from breaking and restore some durability. An Infused Poppet will instead FULLY restore that tool's durability."
+		""
+		"Sturdy Poppets have additional durability."
+	]
 	quest.7D5DCEA36FF46987.quest_desc: [
-		"A <keyword>bed for daytime</keyword>."
+		"A <keyword>bed for daytime</keyword>. The hammock can only be placed between two Nails and Rope."
 		"{@pagebreak}"
 		"<keyword>Кровать для дневного сна</keyword>."
 	]
-	quest.7DB2152F92496396.quest_desc: ["Compress <property>Raw Spiritus</property> in the Hellfire Forge to form a <keyword>Common Spiritus Gem</keyword>. This is the primary fuel for Sentient Equipment crafting and Hellfire Forge recipes."]
+	quest.7DB2152F92496396.quest_desc: [
+		"Compress <property>Raw Spiritus</property> in the Hellfire Forge to form a <keyword>Common Spiritus Gem</keyword>. This is the primary fuel for Sentient Equipment crafting and Hellfire Forge recipes."
+		""
+		"This petty gem holds up to 56 Spiritus."
+	]
 	quest.7E931DB1E3794703.quest_desc: [
 		"[ \"You can use the \", { \"text\": \"Pentacle\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5C95E8450BEAD473\" } }, \" to get the amount of Creeper Heart you need!\" ]"
 		""
@@ -4264,6 +4520,7 @@
 		"отслеживает смерти существ в радиусе 21×21×21, роняет Raw Spiritus на месте гибели. Чем сильнее моб - тем больше Spiritus"
 	]
 	quest.7EC33CE042AD3676.title: "The Ritual of Lost Souls"
+	quest.7ED354CF6EFE61BC.quest_desc: ["The Dominion Wand lets you say targets for the various Ars Nouveau blocks. It can designate homes for Amethyst Golems, storage chests for Storage Lecterns, and targets for Spell Turrets."]
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
 	quest.7EFCA744EC5BCFDB.quest_desc: [
 		"Many players are used to there being <keyword>2 ways</keyword> to automate <keyword>redstone</keyword> and <keyword>AE2</keyword> in Minecraft, but this is not the case."
@@ -4305,6 +4562,7 @@
 		""
 		"<keyword>1 Ethereal Source</keyword> -> <keyword>8 liquid source</keyword> "
 	]
+	quest.7F3F56C04BFCF7BD.quest_desc: ["Necessary for creating some Toxony materials."]
 	quest.7F7B0FF0BAC90638.quest_desc: [
 		"This is a simple example to help you understand how to <positive>assign labels</positive> and what the <keyword>mod syntax</keyword> is."
 		""
@@ -4415,6 +4673,7 @@
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
 	task.17F51111E6673E64.title: "Any #animal_pen:animal_pens"
+	task.1851FA60312782FA.title: "Any #ars_nouveau:threads"
 	task.187C9713E05213E5.title: "Any #neovitae:altar/runes_t2"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1AE53C37C664CA3B.title: "Clavis"
@@ -4424,11 +4683,13 @@
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"
 	task.207749237CB9FE16.title: "Defensive Arrays"
 	task.20D75746DF67A83F.title: "Movement and Transit Arrays"
+	task.218811C858C82BFD.title: "Checkmark"
 	task.2354398433192DFF.title: "Any #neovitae:altar/runes_t4"
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.258E74CA68DE446A.title: "Item Locking"
 	task.25CB2D0B385D4533.title: "Spectrum?"
+	task.25E5275296A8B186.title: "Plant Mutations"
 	task.2629C2F369B3D084.title: "&#A39FE1PINGS!!! THEY'RE EVERYWHERE"
 	task.268D4F85B02495FD.title: "Xaeromap [WIP]"
 	task.2693375290DFFFE2.title: "<glitch>Hello World!"
@@ -4438,7 +4699,6 @@
 	task.284E0D3F10A1E2A1.title: "Weapons"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
 	task.2B915AAA46F6518E.title: "Capacity"
-	task.2BE6D4D9E1298E99.title: "Any #minecraft:decorated_pot_sherds"
 	task.2C236C4C499DB27A.title: "Any #hexerei:brooms"
 	task.2CD40379A7378211.title: "Any #milf:pillar_base_blocks"
 	task.2D505FCD743999D9.title: "Any #milf:chiseled_base_blocks"
@@ -4453,6 +4713,7 @@
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
 	task.34B3E49B9A4E4B61.title: "basic [WIP chapter]"
+	task.34C505B79BD3B47F.title: "tools and equipment"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.350A5A937753423B.title: "Sentient Extraction"
 	task.3636DDD8063C6785.title: "Any #c:budding_blocks"

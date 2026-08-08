@@ -148,7 +148,7 @@
 				item: { count: 1, id: "immersiveengineering:redstone_timer" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: -6.5d
 		}
 		{
@@ -221,7 +221,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:fluid_pipes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: -8.5d
 		}
 		{
@@ -521,23 +521,7 @@
 				item: { count: 1, id: "modern_industrialization:electronic_circuit_board" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"3784CF017C0CB226"
-				"04D87F5213AF93A2"
-			]
-			entity_vis_size: 1.0f
-			id: "0743F72CB6464DAF"
-			shape: "heart"
-			tasks: [{
-				id: "47212556DF1503EF"
-				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
-				type: "item"
-			}]
-			x: 11.5d
+			x: 13.5d
 			y: -3.5d
 		}
 		{
@@ -671,10 +655,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"0FAA7F9832C28913"
-				"7C4DF9CD80FE276F"
-			]
+			dependencies: ["7C4DF9CD80FE276F"]
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "5E3575379E4C2D65"
@@ -684,7 +665,7 @@
 				item: { count: 1, id: "oritech:cooler_block" }
 				type: "item"
 			}]
-			x: 14.5d
+			x: 12.5d
 			y: -0.5d
 		}
 		{
@@ -738,19 +719,6 @@
 			}]
 			x: 10.5d
 			y: -0.5d
-		}
-		{
-			dependencies: ["04D87F5213AF93A2"]
-			entity_vis_size: 1.0f
-			id: "65263718582EB26B"
-			shape: "diamond"
-			tasks: [{
-				id: "3B5E3BAD488F7FCB"
-				item: { count: 1, id: "modern_industrialization:portable_storage_unit" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -1.5d
 		}
 		{
 			dependencies: ["15310D70CE87F7DB"]
@@ -947,19 +915,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["5BD510B2143277DE"]
-			entity_vis_size: 1.0f
-			id: "64269FD318C953B4"
-			shape: "heart"
-			tasks: [{
-				id: "3CAEA3BEB180D459"
-				item: { components: { "immersiveengineering:blueprint": "MI Components" }, count: 1, id: "immersiveengineering:blueprint" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -3.5d
-		}
-		{
 			dependencies: [
 				"70A0A078B94FF034"
 				"6F239EE66350C3CB"
@@ -987,22 +942,6 @@
 			}]
 			x: 14.5d
 			y: -2.5d
-		}
-		{
-			dependencies: [
-				"5D07A5B2F5ECF337"
-				"5BD510B2143277DE"
-			]
-			entity_vis_size: 1.0f
-			id: "106DA438AC3117F4"
-			shape: "heart"
-			tasks: [{
-				id: "58512C3FD567D153"
-				item: { count: 1, id: "modern_industrialization:advanced_large_steam_boiler" }
-				type: "item"
-			}]
-			x: 15.5d
-			y: -3.5d
 		}
 		{
 			dependencies: ["6DD0AB27900F46E3"]
@@ -1184,7 +1123,7 @@
 				item: { count: 1, id: "oritech:power_pole_block" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: -8.5d
 		}
 		{
@@ -1414,7 +1353,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["0B67C28510069155"]
+			dependencies: [
+				"0B67C28510069155"
+				"04D87F5213AF93A2"
+			]
 			entity_vis_size: 1.0f
 			id: "3B58725C76A0D279"
 			shape: "heart"
@@ -1423,8 +1365,8 @@
 				item: { count: 1, id: "oritech:machine_yield_addon" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -4.5d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["55C1B8EEBCB3DEE5"]
@@ -1454,6 +1396,54 @@
 			}]
 			x: 4.5d
 			y: 7.0d
+		}
+		{
+			dependencies: [
+				"04D87F5213AF93A2"
+				"2E1EE104ADEC917E"
+			]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "milf:machine_assembler_shape_1_placer"
+			}
+			id: "48DBD8DF263D8953"
+			shape: "diamond"
+			tasks: [{
+				id: "3F3D7A790E013D53"
+				item: { count: 1, id: "milf:machine_assembler_shape_1_placer" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0FAA7F9832C28913"
+				"5E3575379E4C2D65"
+			]
+			entity_vis_size: 1.0f
+			id: "6C5E651DCE6B718A"
+			shape: "diamond"
+			tasks: [{
+				id: "47BD45D7B7C221D4"
+				item: { count: 1, id: "milf:basic_machine_bit" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["04D87F5213AF93A2"]
+			entity_vis_size: 1.0f
+			id: "2E1EE104ADEC917E"
+			shape: "diamond"
+			tasks: [{
+				id: "190A1D7029A0FE35"
+				item: { count: 1, id: "oritech:machine_ultimate_addon" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.5d
 		}
 	]
 }

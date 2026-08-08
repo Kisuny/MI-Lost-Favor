@@ -82,17 +82,19 @@ const PARTICLES = {
 const MI_MODS = ["modern_industrialization", "mi_tweaks", "yet_another_industrialization", "extended_industrialization"]
 const NBT_HELPER = {
 
-    templatesCache: {},
+    templatesCache: new LRUCache(3),
 
     getNBTCompoundTag(modName, templateName, /**@type {import("net.minecraft.server.MinecraftServer").$MinecraftServer$$Original} */ resourceManager) {
 
-        let cachedData = this.templatesCache[`${modName}:${templateName}`]
+        let cachedData = this.templatesCache.get(`${modName}:${templateName}`)
 
         if (cachedData) {
-            //console.log(this.templatesCache);
             
             return cachedData
         }
+
+        //console.log(this.templatesCache.store);
+        
 
         try {
             let structureLocation = $ResourceLocation.fromNamespaceAndPath(modName,`structure/multiblocks/${templateName}.nbt`)
@@ -107,13 +109,51 @@ const NBT_HELPER = {
             let nbtData = $NbtIo["readCompressed(java.io.InputStream,net.minecraft.nbt.NbtAccounter)"](inputStream, $NbtAccounter.unlimitedHeap())
             inputStream.close()
 
-            this.templatesCache[`${modName}:${templateName}`] = nbtData
+            this.templatesCache.put(`${modName}:${templateName}`, nbtData)
             
             return nbtData
         } catch (error) {
             console.log(error)
         }        
     },
+}
+
+function LRUCache(limit){
+    this.limit = limit
+    this.store = new $LinkedHashMap(this.limit, 1, true)
+
+    this.put = function (key, value) {
+        this.store.put(key, value)
+
+        if (this.store.size() > this.limit) {
+            let eldestKey = this.store.keySet().iterator().next()
+            this.store.remove(eldestKey)
+        }
+    }
+
+    this.get = function (key) {
+        if (!this.store.containsKey(key)) {
+            return undefined
+        }
+        return this.store.get(key)
+    }
+
+    this.has = function (key) {
+        return this.store.containsKey(key)
+    }
+
+    this.delete = function (key) {
+        if (this.store.containsKey(key)) {
+            this.store.remove(key)
+            return true
+        }
+        return false
+    }
+
+    this.size = function () {
+        return this.store.size()
+    }
+    
 }
 
 BlockEvents.rightClicked(PLACER_BLOCKS, event => {
@@ -260,7 +300,13 @@ function handlePreview(event, template, playerStructureData, blockStructureData)
         } 
     }
 
-    setPropertyAndUpdate(event, blockState, [BlockProperties.HORIZONTAL_FACING, event.player.getHorizontalFacing()])
+    let requireRemesh = true
+
+    if (blockState.getValue(BlockProperties.HORIZONTAL_FACING) == event.player.getHorizontalFacing()) {
+        requireRemesh = false
+    } else {
+        setPropertyAndUpdate(event, blockState, [BlockProperties.HORIZONTAL_FACING, event.player.getHorizontalFacing()])
+    }
     
     const canPlace = validateArea(event, playerStructureData.bounds)
     if (!canPlace) {
@@ -269,7 +315,7 @@ function handlePreview(event, template, playerStructureData, blockStructureData)
         return
     }
 
-    updatePreview(event, template, playerStructureData)
+    updatePreview(event, template, playerStructureData, requireRemesh)
 }
 
 function handlePlacement(event, template, modName, playerStructureData, blockStructureData){
@@ -346,77 +392,122 @@ function handlePreviewFailure(event, template, playerStructureData, blockStructu
     event.cancel()
 }
 
-function updatePreview(/** @type {$BlockRightClickedKubeEvent} */ event, templateTag, playerStructureData){
+function updatePreview(/** @type {$BlockRightClickedKubeEvent} */ event, templateTag, playerStructureData, requireRemesh){
     const { blockPosRelativeStart, bounds, facing } = playerStructureData
 
     let boxPos = new BlockPos(playerStructureData.boxPos.x, playerStructureData.boxPos.y, playerStructureData.boxPos.z)
     let boxPosHash = boxPos.hashCode()
+    let serializedDirection = $Direction.CODEC.encodeStart($NbtOps.INSTANCE, facing).getOrThrow()
+
     milfPlaySound(event, "minecraft:block.bamboo.hit", { pos: boxPos })
     
     let blockState = event.level.getBlockState(event.block.pos)
-
     setPropertyAndUpdate(event, blockState, [PLACER_ENABLED_PROPERTY, $Boolean.TRUE])
-
-    let posStateMap = getRotatedPosStateMapFromTemplate(event, templateTag, facing)
-
-    let blocksToRenderData = []
-
-    let cachedStates = {}
-
-    posStateMap.forEach(( pos, state) => {
-        if(state.isAir()) return
-        let relativePos = blockPosRelativeStart.offset(pos)
-        //console.log(state);
-
-        let stateHash = state.toString()
-        
-        let cachedState = cachedStates[stateHash]
-        let serializedState
-        if (cachedState){
-            serializedState = cachedState
-        } else {
-            serializedState = $NbtUtils.writeBlockState(state).getCompound("Properties") || {}
-            cachedStates[stateHash] = serializedState
-        }
-        blocksToRenderData.push({ 
-            blockPos: { x: relativePos.getX(), y: relativePos.getY(), z: relativePos.getZ() }, 
-            id: state.id, 
-            properties: serializedState
-        })
-    })
-
-    //console.log(cachedStates);
-    
 
     let players = BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash)
     let isNewPlayer = true
-    players.forEach(player =>{
+    players.forEach(player => {
         if (player == event.player) {
             isNewPlayer = false
             return
         }
     })
-    
-    if (isNewPlayer) BOX_TO_PLAYERS_MAP.addPlayer(boxPosHash, event.player)    
-    
-    BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash).forEach(player =>{
-        player.sendData("placers_render", {
-            blocks: blocksToRenderData,
-            boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z }
-        })
-    })
 
     particleFrameFromBounds(PARTICLES.placed, bounds, event)
+
+    if (isNewPlayer) {
+        BOX_TO_PLAYERS_MAP.addPlayer(boxPosHash, event.player)
+
+        let blocksToRenderData = getBlocksToRenderData()
+
+        BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash).forEach(player => {
+            player.sendData("placers_render_new", {
+                blocks: blocksToRenderData,
+                boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z },
+                initialDirection: serializedDirection,
+                relativeStartPos: {
+                    x: blockPosRelativeStart.x,
+                    y: blockPosRelativeStart.y,
+                    z: blockPosRelativeStart.z
+                }
+            })
+        })
+
+        return
+
+    } 
+
+    if (requireRemesh){
+        let blocksToRenderData = getBlocksToRenderData()
+
+        BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash).forEach(player => {
+            if (player.hasDisconnected()) return
+            player.sendData("placers_render_new", {
+                blocks: blocksToRenderData,
+                boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z },
+                initialDirection: serializedDirection,
+                relativeStartPos: {
+                    x: blockPosRelativeStart.x,
+                    y: blockPosRelativeStart.y,
+                    z: blockPosRelativeStart.z
+                }
+            })
+        })
+    } else {
+        BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash).forEach(player => {
+            if (player.hasDisconnected()) return
+            player.sendData("placers_render_update", {
+                newDirection: serializedDirection,
+                boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z },
+                newRelativeStartPos: {
+                    x: blockPosRelativeStart.x,
+                    y: blockPosRelativeStart.y,
+                    z: blockPosRelativeStart.z
+                }
+                //blocks: blocksToRenderData,
+                //boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z }
+            })
+        })
+    }
+    
+
+
+    function getBlocksToRenderData(){
+        let posStateMap = getRotatedPosStateMapFromTemplate(event, templateTag, facing)
+        let blocksToRenderData = []
+        let cachedStates = {}
+
+        posStateMap.forEach((pos, state) => {
+            if (state.isAir()) return
+            let relativePos = pos
+            //console.log(state);
+
+            let stateHash = state.toString()
+
+            let cachedState = cachedStates[stateHash]
+            let serializedState
+            if (cachedState) {
+                serializedState = cachedState
+            } else {
+                serializedState = $NbtUtils.writeBlockState(state)
+                cachedStates[stateHash] = serializedState
+            }
+            blocksToRenderData.push({
+                blockPos: { x: relativePos.getX(), y: relativePos.getY(), z: relativePos.getZ() },
+                blockState: serializedState
+            })
+        })
+
+        return blocksToRenderData
+    }
 }
 
-const rotatedTemplatesInfoCache = {
-
-} 
+const rotatedTemplatesInfoCache = new LRUCache(4)
 
 function getRotatedPosStateMapFromTemplate(event, templateTag, facing){
 
     let templateHash = `${templateTag.hashCode()}:${facing.hashCode()}`
-    let cachedMap = rotatedTemplatesInfoCache[templateHash]
+    let cachedMap = rotatedTemplatesInfoCache.get(templateHash)
 
     if (cachedMap) {
         return cachedMap
@@ -446,7 +537,7 @@ function getRotatedPosStateMapFromTemplate(event, templateTag, facing){
         })
 
         let templateHash = `${templateTag.hashCode()}:${facing.hashCode()}`
-        rotatedTemplatesInfoCache[templateHash] = rotatedMap
+        rotatedTemplatesInfoCache.put(templateHash,  rotatedMap)
 
         return rotatedMap
 
@@ -529,6 +620,7 @@ function removePreview(event, structureData, preserveState) {
 }
 
 function validateArea(/** @type {$BlockRightClickedKubeEvent} */ event, bounds) {
+    //let stamp = new Date().getTime()
     const { xMin, xMax, zMin, zMax, yMin, yMax, posX, posY, posZ} = bounds
 
     
@@ -544,6 +636,8 @@ function validateArea(/** @type {$BlockRightClickedKubeEvent} */ event, bounds) 
             valid = false            
         }
     })
+
+    //console.log(new Date().getTime() - stamp);
 
     return valid
 }

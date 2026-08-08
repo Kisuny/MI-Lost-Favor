@@ -1,26 +1,61 @@
 registerMIMachine('enigma_machine', {
     itemsIn: true, itemsOut: true, casing: 'treated_wood_casing',
     shape: [
-        ['           ', '           ', '           ', '           ', '           ', '           '],
-        ['    PPP    ', '    SSS    ', '           ', '           ', '           ', '           '],
-        ['  PPPPPPP  ', '  MM   MM  ', '           ', '           ', '           ', '           '],
-        ['  PPPPPPP  ', '  M     M  ', '           ', '           ', '           ', '           '],
-        [' PPPMMMPPP ', ' S  HLH  S ', '    B B    ', '    B B    ', '    BBB    ', '    SMS    '],
-        [' PPPMMMPPP ', ' S  LGL  S ', '     G     ', '     G     ', '    BGB    ', '    MMM    '],
-        [' PPPMMMPPP ', ' S  H#H  S ', '    B B    ', '    B B    ', '    BBB    ', '    SMS    '],
-        ['  PPPPPPP  ', '  M     M  ', '           ', '           ', '           ', '           '],
-        ['  PPPPPPP  ', '  MM   MM  ', '           ', '           ', '           ', '           '],
-        ['    PPP    ', '    SSS    ', '           ', '           ', '           ', '           '],
-        ['           ', '           ', '           ', '           ', '           ', '           '],
+        ['AaA', 'BaB', 'bFb', 'bcb', 'BaB', 'DdD'],
+        ['aEa', 'aea', 'FeF', 'cec', 'aea', 'ddd'],
+        ['AaA', 'B#B', 'bCb', 'bcb', 'BaB', 'DdD']
     ],
     shapeKeys: {
-        M: "immersiveengineering:sheetmetal_steel",
-        P: "immersiveengineering:treated_wood_horizontal",
-        H: { id: "immersiveengineering:basic_engineering", hatches: MI_HATCHES.ALL },
-        S: "immersiveengineering:slab_sheetmetal_steel",
-        L: "immersiveengineering:logic_unit",
-        B: "xkdeco:hollow_steel_beam",
-        G: "ae2:quartz_vibrant_glass"
+        "A": {
+            "id": "xkdeco:air_duct",
+            "hatches": null,
+            "stateProperties": "{down:\"false\",up:\"false\"}"
+        },
+        "a": {
+            "id": "immersiveengineering:logic_unit",
+            "hatches": null
+        },
+        "B": {
+            "id": "immersiveengineering:basic_engineering",
+            "hatches": MI_HATCHES.ALL
+        },
+        "b": {
+            "id": "xkdeco:hollow_steel_beam",
+            "hatches": null,
+            "stateProperties": "{up:\"true\"}"
+        },
+        "C": {
+            "id": "immersiveengineering:steel_wallmount",
+            "hatches": null,
+            "stateProperties": "{orientation:\"vert_up\"}"
+        },
+        "c": {
+            "id": "immersiveengineering:steel_wallmount",
+            "hatches": null,
+            "stateProperties": "{orientation:\"vert_down\"}"
+        },
+        "D": {
+            "id": "immersiveengineering:slab_sheetmetal_steel",
+            "hatches": null,
+            "stateProperties": "{type:\"bottom\"}"
+        },
+        "d": {
+            "id": "immersiveengineering:sheetmetal_steel",
+            "hatches": null
+        },
+        "E": {
+            "id": "architects_palette:polished_glowstone",
+            "hatches": null
+        },
+        "e": {
+            "id": "ae2:quartz_glass",
+            "hatches": null
+        },
+        "F": {
+            "id": "immersiveengineering:steel_wallmount",
+            "hatches": null,
+            "stateProperties": "{orientation:\"side_down\"}"
+        }
     },
     pBar: { x: 58, y: 33, name: 'enigma_arrow' },
     itemInputSlots: [[40, 35, 1, 1], [50, 55, 1, 1], [50, 15, 1, 1]],
@@ -31,30 +66,45 @@ registerMIMachine('enigma_machine', {
 registerMIMachine('radio_transcriber', {
     itemsIn: true, itemsOut: true, casing: 'treated_wood_casing',
     shape: [
-        ['           ', '           ', '           ', '           ', '           '],
-        ['           ', '           ', '           ', '           ', '           '],
-        ['    sss    ', '           ', '           ', '           ', '           '],
-        ['   sMHMs   ', '    BOB    ', '    wsw    ', '           ', '           '],
-        ['  sM   Ms  ', '   B   B   ', '   w   w   ', '           ', '           '],
-        ['  sH   Hs  ', '   L   L   ', '   s   s   ', '           ', '     T     '],
-        ['  sM   Ms  ', '   B   B   ', '   w   w   ', '           ', '           '],
-        ['   s   s   ', '           ', '     B     ', '           ', '           '],
-        ['           ', '           ', '    E#I    ', '    wtw    ', '           '],
-        ['           ', '           ', '           ', '           ', '           '],
-        ['           ', '           ', '           ', '           ', '           '],
+        [' ADA ', ' cAc ', ' B B ', '     ', '     '],
+        ['A   A', 'c   c', 'B   B', '     ', '     '],
+        ['D   D', 'A   A', '     ', '     ', '  d  '],
+        ['A   A', 'c   c', 'B   B', '     ', '     '],
+        ['B   B', '     ', '  c  ', '  B  ', '     '],
+        ['     ', '     ', ' A#A ', ' BbB ', '  C  ']
     ],
     shapeKeys: {
-        M: "immersiveengineering:sheetmetal_steel",
-        s: "immersiveengineering:slab_storage_steel",
-        T: "immersiveengineering:radio_tower",
-        B: "xkdeco:hollow_steel_beam",
-        L: "immersiveengineering:logic_unit",
-        w: "immersiveengineering:steel_wallmount",
-        t: "immersiveengineering:tesla_coil",
-        H: "immersiveengineering:basic_engineering",
-        I: { id: "immersiveengineering:basic_engineering", hatches: ["item_input"] },
-        O: { id: "immersiveengineering:basic_engineering", hatches: ["item_output"] },
-        E: { id: "immersiveengineering:basic_engineering", hatches: ["energy_input"] }
+        "A": {
+            "id": "immersiveengineering:logic_unit",
+            "hatches": null
+        },
+        "B": {
+            "id": "immersiveengineering:steel_wallmount",
+            "hatches": null
+        },
+        "b": {
+            "id": "immersiveengineering:tesla_coil",
+            "hatches": null,
+            "stateProperties": "{multiblockslave:\"false\"}"
+        },
+        "C": {
+            "id": "immersiveengineering:tesla_coil",
+            "hatches": null,
+            "stateProperties": "{multiblockslave:\"true\"}"
+        },
+        "c": {
+            "id": "xkdeco:hollow_steel_beam",
+            "hatches": null,
+            "stateProperties": "{up:\"true\"}"
+        },
+        "D": {
+            "id": "immersiveengineering:basic_engineering",
+            "hatches": MI_HATCHES.ITEM.concat(MI_HATCHES.INPUT.ENERGY)
+        },
+        "d": {
+            "id": "immersiveengineering:radio_tower",
+            "hatches": null
+        }
     },
     pBar: { x: 58, y: 33, name: 'radio_tower_ui' },
     itemInputSlots: [[41, 35, 1, 1], [60, 55, 1, 1]],

@@ -8,7 +8,6 @@ ItemEvents.firstRightClicked("milf:nbt_pen", event => {
     switch (nbtPenModeState) {
         case 0:
             nbtPenAabb = AABB.ofBlock(blockpos.offset(0,1,0))
-            //nbtPenAabb = nbtPenAabb.minmax(AABB.ofBlock(blockpos.offset(0,0,0)))
             break;
         case 1:
 
@@ -18,9 +17,10 @@ ItemEvents.firstRightClicked("milf:nbt_pen", event => {
         case 2:
             let {level, player} = event
 
-            if(player.crouching) break;
+            if(player.crouching) break
 
-            nbtPenMIBlockEntity = event.getTarget().block.getEntity()
+            let block = event.getTarget().block
+            nbtPenMIBlockEntity = block.getEntity()
 
             if(!nbtPenMIBlockEntity) break
             
@@ -28,8 +28,7 @@ ItemEvents.firstRightClicked("milf:nbt_pen", event => {
                 nbtPenMIBlockEntity = nbtPenMIBlockEntity.getActiveShape()
             }
             let NBTData = getNBTDataFromAABB(nbtPenAabb, level, player.getHorizontalFacing())
-            //let NBTData = getNBTDataFromMembersAndController(nbtPenMIBlockEntity.getActiveShape().simpleMembers, event.getTarget().block)
-            //console.log(NBTData);
+
             let shape = ""
             //console.log(event.getTarget().block.entityData);
             
@@ -102,9 +101,6 @@ function getNBTDataFromAABB(/** @type {nbtPenAabb} */ aabb, level, /** @type {$D
         palette.blocks().forEach(blockInfo => 
             templateBlocks.push(blockInfo)) )
 
-    //let transformedBlocks = new $ArrayList()
-
-
     let posStateMap = new $HashMap()
 
 
@@ -118,17 +114,11 @@ function getNBTDataFromAABB(/** @type {nbtPenAabb} */ aabb, level, /** @type {$D
         rotatedPos = offsetToPositiveSpace(rotatedPos)
         let rotatedState = blockInfo.state().rotate(level, rotatedPos, inverseRotation)
 
-        //transformedBlocks.add(new $StructureBlockInfo(rotatedPos, rotatedState, blockInfo.nbt()))
         posStateMap.put(rotatedPos, rotatedState)
     })
-
-    //console.log(posStateMap);
     
 
     return convertPosStateMapToNBT(posStateMap)
-
-    // let finalTemplate = new $StructureTemplate()
-    // let tempNbt = tempTemplate.save(new $CompoundTag())
 
     function getInverseRotation(/** @type {$Rotation} */ rotation) {
         if (rotation == $Rotation.CLOCKWISE_90) return $Rotation.COUNTERCLOCKWISE_90

@@ -356,6 +356,22 @@ ServerEvents.recipes(event => {
         removeRecipeType: "ytech:remaining_shaped_crafting"
     })
 
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "paganbless:boline" },
+            { "item": "minecraft:flint" },
+            { "item": "minecraft:flint" },
+            { "item": "minecraft:flint" },
+            { "item": "minecraft:flint" },
+            { "item": "minecraft:flint" },
+            { "item": "minecraft:flint" },
+            { "item": "minecraft:flint" },
+        ],
+        output: "minecraft:flint_and_steel"
+    });
 })
 
 KubeJSTweaks.beforeRecipes(event => {    

@@ -102,7 +102,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -1131,7 +1131,7 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
+			x: -4.0d
 			y: 1.0d
 		}
 		{
@@ -1773,7 +1773,7 @@
 				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:devices_pouch" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: 0.5d
 		}
 		{
@@ -1798,7 +1798,7 @@
 				item: { count: 1, id: "milf:recall_concoction" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -4631,8 +4631,8 @@
 				item: { count: 1, id: "cognition:cognitive_pickaxe" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 24.5d
+			x: 0.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["0F24421000EA7AF7"]
@@ -4709,8 +4709,8 @@
 				item: { count: 1, id: "cognition:flint_and_cognitive_alloy" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 24.0d
+			x: 0.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["0F24421000EA7AF7"]
@@ -5620,6 +5620,19 @@
 			}]
 			x: 5.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			entity_vis_size: 1.0f
+			id: "53B87C59AA74075B"
+			shape: "heart"
+			tasks: [{
+				id: "4A65ADC491013846"
+				item: { count: 1, id: "minecraft:flint_and_steel" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
 		}
 	]
 }

@@ -7,6 +7,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.first_join', `Welcome to the ${MilfEffects.GRAD.MILF("MI:Lost Favor")}!`)
     event.add('milf.text.recommendation_1', `<warning>Important:</warning> CurseForge and Prism Launcher may automatically create their own <keyword>options.txt</keyword> file, which overrides the modpack settings. Unfortunately, we cannot prevent this. If the file already exists, <keyword>delete</keyword> it from your <keyword>.minecraft</keyword> folder. The next time you launch the game, it will be recreated with the correct settings, and all modpack settings will work properly.`)
     event.add('milf.text.curios.already_equipped', 'You already have equipped: ')
+    event.add('milf.tooltip.enchanted_book.max_level', '<magic>Max lvl</magic>:')
 
     const foodCategoryNamesEn = { fruit: 'fruit', cooked_meats: 'cooked meats', bread: 'bread' }
     Object.keys(foodCategoryNamesEn).forEach(priority => {

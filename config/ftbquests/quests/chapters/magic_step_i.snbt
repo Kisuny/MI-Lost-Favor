@@ -2641,7 +2641,10 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["0F305B7FD3E18226"]
+			dependencies: [
+				"0F305B7FD3E18226"
+				"336C43BDBE0A0995"
+			]
 			entity_vis_size: 1.0f
 			id: "591843445BE8DF11"
 			shape: "gear"
@@ -3211,7 +3214,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 44.0d
+			y: 43.5d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]
@@ -4030,8 +4033,8 @@
 				item: { count: 1, id: "apothic_enchanting:helmet_tome" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 30.0d
+			x: 10.5d
+			y: 44.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4049,8 +4052,8 @@
 				item: { count: 1, id: "apothic_enchanting:chestplate_tome" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: 30.5d
+			x: 11.0d
+			y: 44.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4068,8 +4071,8 @@
 				item: { count: 1, id: "apothic_enchanting:leggings_tome" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 31.0d
+			x: 10.5d
+			y: 45.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4087,8 +4090,8 @@
 				item: { count: 1, id: "apothic_enchanting:boots_tome" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 30.5d
+			x: 10.0d
+			y: 44.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4106,8 +4109,8 @@
 				item: { count: 1, id: "apothic_enchanting:weapon_tome" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 30.0d
+			x: 8.5d
+			y: 44.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4125,8 +4128,8 @@
 				item: { count: 1, id: "apothic_enchanting:bow_tome" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 31.0d
+			x: 8.5d
+			y: 45.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4144,8 +4147,8 @@
 				item: { count: 1, id: "apothic_enchanting:pickaxe_tome" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 30.5d
+			x: 9.0d
+			y: 44.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4163,8 +4166,8 @@
 				item: { count: 1, id: "apothic_enchanting:fishing_tome" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 30.0d
+			x: 9.5d
+			y: 44.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4182,19 +4185,20 @@
 				item: { count: 1, id: "apothic_enchanting:other_tome" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 31.0d
+			x: 9.5d
+			y: 45.0d
 		}
 		{
-			dependencies: ["4D4846179574789A"]
+			dependencies: ["4B801253049DAC2F"]
 			entity_vis_size: 1.0f
 			id: "1EA565179E5C25AE"
+			shape: "heart"
 			tasks: [{
 				id: "56EE6B7B03B03D4D"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: 30.5d
+			x: 7.0d
+			y: 44.5d
 		}
 		{
 			dependencies: ["0F24421000EA7AF7"]
@@ -4900,13 +4904,14 @@
 				type: "item"
 			}]
 			shape: "heart"
+			size: 2.0d
 			tasks: [{
 				id: "3532E3B7E506A3B8"
 				item: { count: 1, id: "ars_nouveau:storage_lectern" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 6.5d
+			x: 1.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["73DAABF80C068AA2"]
@@ -5101,8 +5106,8 @@
 				item: { count: 1, id: "apothic_enchanting:apothic_enchanting_table" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 30.5d
+			x: 12.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["2BAF1070D316E4A4"]
@@ -5115,11 +5120,11 @@
 				item: { count: 1, id: "minecraft:bookshelf" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: 30.5d
+			x: 14.0d
+			y: 44.5d
 		}
 		{
-			dependencies: ["5E639A3B6E268A89"]
+			dependencies: ["0EB065FD617CB39A"]
 			entity_vis_size: 1.0f
 			id: "4FD896F49FCD93CD"
 			tasks: [{
@@ -5127,8 +5132,8 @@
 				item: { count: 1, id: "apothic_enchanting:hellshelf" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 29.0d
+			x: 15.5d
+			y: 47.5d
 		}
 		{
 			dependencies: ["4FD896F49FCD93CD"]
@@ -5140,7 +5145,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 28.5d
+			y: 48.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -5152,7 +5157,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 27.5d
+			y: 49.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -5163,8 +5168,8 @@
 				item: { count: 1, id: "apothic_enchanting:glowing_hellshelf" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 28.5d
+			x: 15.5d
+			y: 50.0d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -5175,8 +5180,8 @@
 				item: { count: 1, id: "apothic_enchanting:blazing_hellshelf" }
 				type: "item"
 			}]
-			x: 16.5d
-			y: 29.5d
+			x: 14.5d
+			y: 49.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5187,8 +5192,8 @@
 				item: { count: 1, id: "apothic_enchanting:seashelf" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: 32.5d
+			x: 14.0d
+			y: 46.0d
 		}
 		{
 			dependencies: ["0EB065FD617CB39A"]
@@ -5200,19 +5205,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 33.5d
-		}
-		{
-			dependencies: ["65E85CBAE5600143"]
-			entity_vis_size: 1.0f
-			id: "2B284E366F5E6D1D"
-			tasks: [{
-				id: "27F66B767D54B9D6"
-				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: 35.0d
+			y: 47.5d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -5224,7 +5217,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 34.5d
+			y: 49.5d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -5236,91 +5229,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 34.5d
-		}
-		{
-			dependencies: ["5E639A3B6E268A89"]
-			entity_vis_size: 1.0f
-			id: "6E69C1E11989DC47"
-			tasks: [{
-				id: "79BACA2EE9E64B75"
-				item: { count: 1, id: "apothic_enchanting:dormant_deepshelf" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: 32.0d
-		}
-		{
-			dependencies: ["6E69C1E11989DC47"]
-			entity_vis_size: 1.0f
-			id: "5856F34DE4934B24"
-			tasks: [{
-				id: "77162FD8292F9AA6"
-				item: { count: 1, id: "apothic_enchanting:deepshelf" }
-				type: "item"
-			}]
-			x: 15.5d
-			y: 32.0d
-		}
-		{
-			dependencies: ["5856F34DE4934B24"]
-			entity_vis_size: 1.0f
-			id: "368ACB7BC2A1DE73"
-			tasks: [{
-				id: "61EAB15C270B7C14"
-				item: { count: 1, id: "apothic_enchanting:treasure_shelf" }
-				type: "item"
-			}]
-			x: 17.0d
-			y: 32.0d
-		}
-		{
-			dependencies: ["5856F34DE4934B24"]
-			entity_vis_size: 1.0f
-			id: "2DEC7F525C4670EE"
-			tasks: [{
-				id: "6F1793AC9FEC1661"
-				item: { count: 1, id: "apothic_enchanting:soul_touched_deepshelf" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 33.0d
-		}
-		{
-			dependencies: ["5856F34DE4934B24"]
-			entity_vis_size: 1.0f
-			id: "716BC68F5F2693D0"
-			tasks: [{
-				id: "1EE42D464C8B4B77"
-				item: { count: 1, id: "apothic_enchanting:echoing_deepshelf" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 31.0d
-		}
-		{
-			dependencies: ["716BC68F5F2693D0"]
-			entity_vis_size: 1.0f
-			id: "330159427597F920"
-			tasks: [{
-				id: "49F284DE794FC5B5"
-				item: { count: 1, id: "apothic_enchanting:echoing_sculkshelf" }
-				type: "item"
-			}]
-			x: 17.5d
-			y: 31.0d
-		}
-		{
-			dependencies: ["2DEC7F525C4670EE"]
-			entity_vis_size: 1.0f
-			id: "2C42BB85178E9422"
-			tasks: [{
-				id: "5FEB306C9807A8ED"
-				item: { count: 1, id: "apothic_enchanting:soul_touched_sculkshelf" }
-				type: "item"
-			}]
-			x: 17.5d
-			y: 33.0d
+			y: 49.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5331,8 +5240,8 @@
 				item: { count: 1, id: "apothic_enchanting:geode_shelf" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 32.0d
+			x: 15.5d
+			y: 43.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5344,7 +5253,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 31.0d
+			y: 42.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5355,8 +5264,8 @@
 				item: { count: 1, id: "apothic_enchanting:melonshelf" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 29.0d
+			x: 12.5d
+			y: 43.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5367,44 +5276,8 @@
 				item: { count: 1, id: "apothic_enchanting:beeshelf" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: 30.0d
-		}
-		{
-			dependencies: ["5E639A3B6E268A89"]
-			entity_vis_size: 1.0f
-			id: "4410D695EA7BFB2A"
-			tasks: [{
-				id: "3AEF56ADBF49342C"
-				item: { count: 1, id: "apothic_enchanting:endshelf" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: 28.0d
-		}
-		{
-			dependencies: ["4410D695EA7BFB2A"]
-			entity_vis_size: 1.0f
-			id: "22692EA0AF834C5C"
-			tasks: [{
-				id: "1F329D94959D496B"
-				item: { count: 1, id: "apothic_enchanting:pearl_endshelf" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 27.0d
-		}
-		{
-			dependencies: ["4410D695EA7BFB2A"]
-			entity_vis_size: 1.0f
-			id: "4A82827BAB0FFDE5"
-			tasks: [{
-				id: "52AAC0151933EF1A"
-				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
-				type: "item"
-			}]
-			x: 13.0d
-			y: 27.0d
+			x: 13.5d
+			y: 42.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]

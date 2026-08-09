@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "magic_step_ii"
-	group: "414DFD996A564669"
+	group: "786FFA1BEC14E223"
 	icon: {
 		id: "eidolon_repraised:sanguine_amulet"
 	}
@@ -38,7 +38,7 @@
 			y: 8.002178949453267d
 		}
 	]
-	order_index: 4
+	order_index: 3
 	quest_links: [{
 		id: "143129ABC11C9F13"
 		linked_quest: "6A6B9424EFC13EC1"
@@ -6424,7 +6424,7 @@
 				}
 			]
 			x: -11.5d
-			y: -39.5d
+			y: -42.0d
 		}
 		{
 			dependencies: ["3476E6DF114A1001"]
@@ -6455,7 +6455,7 @@
 				}
 			]
 			x: -11.5d
-			y: -41.0d
+			y: -43.5d
 		}
 		{
 			dependencies: ["3476E6DF114A1001"]
@@ -6499,7 +6499,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -39.0d
+			y: -41.5d
 		}
 		{
 			dependencies: ["57D2F6744F1EED52"]
@@ -6512,7 +6512,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: -39.5d
+			y: -42.0d
 		}
 		{
 			dependencies: ["57D2F6744F1EED52"]
@@ -6525,7 +6525,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -40.0d
+			y: -42.5d
 		}
 		{
 			dependencies: ["57D2F6744F1EED52"]
@@ -6538,7 +6538,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -40.0d
+			y: -42.5d
 		}
 		{
 			dependencies: ["57D2F6744F1EED52"]
@@ -6551,7 +6551,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -39.0d
+			y: -41.5d
 		}
 		{
 			dependencies: ["0C4C16E9B2832629"]
@@ -7229,19 +7229,6 @@
 		{
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
-			id: "63634D71ECECAB2E"
-			shape: "gear"
-			tasks: [{
-				id: "0D1FAC40E5D2B344"
-				item: { count: 1, id: "ars_nouveau:ritual_containment" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -65.5d
-		}
-		{
-			entity_vis_size: 1.0f
-			hide_dependency_lines: true
 			id: "43D221EF2F57EF81"
 			shape: "diamond"
 			tasks: [{
@@ -7676,19 +7663,6 @@
 			y: -63.0d
 		}
 		{
-			dependencies: ["63634D71ECECAB2E"]
-			entity_vis_size: 1.0f
-			id: "2E3384D5D0C2A9CF"
-			min_required_dependencies: 1
-			tasks: [{
-				id: "7832123FCAD2C169"
-				item: { count: 1, id: "ars_nouveau:mob_jar" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -66.5d
-		}
-		{
 			dependencies: ["3734BC43E4C8B17C"]
 			entity_vis_size: 1.0f
 			id: "1AAAFAE1B6E3E59B"
@@ -7702,7 +7676,7 @@
 			y: -59.0d
 		}
 		{
-			dependencies: ["2E3384D5D0C2A9CF"]
+			dependencies: ["3476E6DF114A1001"]
 			entity_vis_size: 1.0f
 			id: "117BA19FF568DCC4"
 			shape: "heart"
@@ -7711,8 +7685,8 @@
 				item: { count: 1, id: "ars_nouveau:planarium" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -67.5d
+			x: -20.5d
+			y: -38.5d
 		}
 		{
 			dependencies: ["3F5D9B3D8030599B"]
@@ -7764,8 +7738,8 @@
 				item: { count: 1, id: "milf:gem_composite" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: -37.0d
+			x: -10.0d
+			y: -38.0d
 		}
 		{
 			dependencies: ["3476E6DF114A1001"]
@@ -7790,6 +7764,128 @@
 			}]
 			x: -17.5d
 			y: -48.5d
+		}
+		{
+			dependencies: ["59E4C997B579A012"]
+			entity_vis_size: 1.0f
+			id: "5856F34DE4934B24"
+			tasks: [{
+				id: "77162FD8292F9AA6"
+				item: { count: 1, id: "apothic_enchanting:deepshelf" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -38.5d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			entity_vis_size: 1.0f
+			id: "368ACB7BC2A1DE73"
+			shape: "heart"
+			tasks: [{
+				id: "61EAB15C270B7C14"
+				item: { count: 1, id: "apothic_enchanting:treasure_shelf" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -38.5d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			entity_vis_size: 1.0f
+			id: "2DEC7F525C4670EE"
+			tasks: [{
+				id: "6F1793AC9FEC1661"
+				item: { count: 1, id: "apothic_enchanting:soul_touched_deepshelf" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -37.5d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			entity_vis_size: 1.0f
+			id: "716BC68F5F2693D0"
+			tasks: [{
+				id: "1EE42D464C8B4B77"
+				item: { count: 1, id: "apothic_enchanting:echoing_deepshelf" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -39.5d
+		}
+		{
+			dependencies: ["716BC68F5F2693D0"]
+			entity_vis_size: 1.0f
+			id: "330159427597F920"
+			tasks: [{
+				id: "49F284DE794FC5B5"
+				item: { count: 1, id: "apothic_enchanting:echoing_sculkshelf" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -39.5d
+		}
+		{
+			dependencies: ["2DEC7F525C4670EE"]
+			entity_vis_size: 1.0f
+			id: "2C42BB85178E9422"
+			tasks: [{
+				id: "5FEB306C9807A8ED"
+				item: { count: 1, id: "apothic_enchanting:soul_touched_sculkshelf" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -37.5d
+		}
+		{
+			dependencies: ["20B65C8DAB5D7478"]
+			entity_vis_size: 1.0f
+			id: "2B284E366F5E6D1D"
+			shape: "heart"
+			tasks: [{
+				id: "27F66B767D54B9D6"
+				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -37.5d
+		}
+		{
+			dependencies: ["15A5840E7269CC05"]
+			entity_vis_size: 1.0f
+			id: "59E4C997B579A012"
+			tasks: [{
+				id: "1FDF0EA7266CDF09"
+				item: { count: 1, id: "apothic_enchanting:dormant_deepshelf" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -38.5d
+		}
+		{
+			dependencies: ["5EFDA7F9E030E5D7"]
+			entity_vis_size: 1.0f
+			id: "15A5840E7269CC05"
+			tasks: [{
+				id: "3DFF23772F7E5A21"
+				item: { count: 1, id: "malum:raw_brilliance" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -38.5d
+		}
+		{
+			dependencies: ["5EFDA7F9E030E5D7"]
+			entity_vis_size: 1.0f
+			id: "20B65C8DAB5D7478"
+			tasks: [{
+				id: "3CDC932284857C5E"
+				item: { count: 1, id: "malum:cthonic_gold" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -37.5d
 		}
 	]
 }

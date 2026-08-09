@@ -403,6 +403,10 @@ The only solution is to make them less sound.`)
     event.add('milf.key_prompts.go_down', 'Go down')
     event.add('key.hexerei.broomActivate', 'Viewing angle (F5 for work)')
     event.add('milf.key_prompts.horn', 'Enable the horn')
+
+    // missing enchantment descriptions
+    event.add('enchantment.netherexp.volley.desc', 'Increases the amount of bullets fired per shot.')
+    event.add('enchantment.ars_additions.spellweave.desc', "Provides a thread slot on armor that doesn't have threads.")
 })
 
 let MilfEffects = {

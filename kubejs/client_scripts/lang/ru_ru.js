@@ -373,4 +373,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.key_prompts.go_down', 'Вниз')
     event.add('key.hexerei.broomActivate', 'Угол обзора (F5 для работы)')
     event.add('milf.key_prompts.horn', 'Активировать сигнал')
+
+    // отсутствующие описания зачарований 
+    event.add('enchantment.netherexp.volley.desc', 'Увеличивает количество пуль, выпускаемых за один выстрел.')
+    event.add('enchantment.ars_additions.spellweave.desc', 'Даёт слот для нити на броне, у которой его нет.')
 })

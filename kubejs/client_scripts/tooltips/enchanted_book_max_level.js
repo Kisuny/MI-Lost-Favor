@@ -1,9 +1,7 @@
 // Shows the real max level of the stored enchantment on enchanted books, since EMI now
 // only lists level 1 books (see kubejs/client_scripts/EMI/hide_enchanted_books.js)
-const ApothicEnchanting = Java.loadClass('dev.shadowsoffire.apothic_enchanting.ApothicEnchanting')
-
 function getRealMaxLevel(holder) {
-    const info = ApothicEnchanting.getEnchInfo(holder)
+    const info = $ApothicEnchanting.getEnchInfo(holder)
     if (info) return info.maxLevel()
     return holder.value().getMaxLevel()
 }

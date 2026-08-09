@@ -52,3 +52,5 @@ let $ByteBufferBuilder = Java.loadClass("com.mojang.blaze3d.vertex.ByteBufferBui
 let $NbtOps = Java.loadClass("net.minecraft.nbt.NbtOps")
 let $LinkedHashMap = Java.loadClass("java.util.LinkedHashMap")
 
+let $ApothicEnchanting = Java.loadClass('dev.shadowsoffire.apothic_enchanting.ApothicEnchanting')
+

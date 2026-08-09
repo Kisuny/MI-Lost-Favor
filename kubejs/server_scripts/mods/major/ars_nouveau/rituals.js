@@ -59,7 +59,6 @@ ServerEvents.recipes(event => {
         { id: "ars_elemental:ritual_archwood_forest", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         { id: "ars_nouveau:ritual_sanctuary", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         { id: "ars_nouveau:ritual_binding", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
-        { id: "ars_nouveau:ritual_containment", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         { id: "ars_nouveau:ritual_harvest", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         // ritual_awakening - crafted via mixing cauldron instead
         { id: "ars_nouveau:ritual_conjure_island_desert", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },

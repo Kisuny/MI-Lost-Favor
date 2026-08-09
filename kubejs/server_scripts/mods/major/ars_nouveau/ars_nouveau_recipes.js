@@ -59,7 +59,6 @@ ServerEvents.recipes(event => {
 
     event.remove({ type: "ars_nouveau:enchantment" })
     event.remove({ type: "ars_nouveau:reactive_enchantment" })
-    event.remove({ output: "ars_additions:handy_haversack" })
     event.remove({output: [
         "ars_additions:handy_haversack",
         "ars_nouveau:mycelial_sourcelink",
@@ -70,6 +69,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:stable_warp_scroll",
         "ars_controle:scroll_holder",
         "ars_nouveau:warp_scroll",
+        "ars_nouveau:ritual_containment",
     ]})
     customImbuementCraft(event, {
         input: { "item": "milf:mixed_gem_powder" },
@@ -140,6 +140,7 @@ ServerEvents.recipes(event => {
         "minecraft:gold_ingot": "malum:hallowed_gold_ingot",
         "minecraft:gold_block": "malum:block_of_hallowed_gold",
         "minecraft:diamond": "eidolon_repraised:shadow_gem",
+        "ars_nouveau:stable_warp_scroll": "spectrum:neolith",
     }
     const tagReplacements = {
         "c:ingots/gold": "malum:hallowed_gold_ingot",
@@ -328,13 +329,35 @@ ServerEvents.recipes(event => {
 
     miMachineRecipe(event, {energy:2, time:40, machine:"modern_industrialization:source_alembic",
         inputItems:[
-            [{tag:"milf:basic_gemstone_shards"}, 6],
+            [{tag:"milf:basic_gemstone_powders"}, 6],
         ],
         inputFluids: [
             [{ fluid: "supplementaries:lumisene" }, 200]
         ],
         outputFluids: [
             [{ fluid: "milf:ethereal_source" }, 500]
+        ],
+    })
+    miMachineRecipe(event, {energy:2, time:40, machine:"modern_industrialization:source_alembic",
+        inputItems:[
+            [{item:"spectrum:onyx_powder"}, 3],
+        ],
+        inputFluids: [
+            [{ fluid: "supplementaries:lumisene" }, 200]
+        ],
+        outputFluids: [
+            [{ fluid: "milf:ethereal_source" }, 1000]
+        ],
+    })
+    miMachineRecipe(event, {energy:2, time:40, machine:"modern_industrialization:source_alembic",
+        inputItems:[
+            [{item:"spectrum:moonstone_powder"}, 3],
+        ],
+        inputFluids: [
+            [{ fluid: "supplementaries:lumisene" }, 200]
+        ],
+        outputFluids: [
+            [{ fluid: "milf:ethereal_source" }, 2000]
         ],
     })
 

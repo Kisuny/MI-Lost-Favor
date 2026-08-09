@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             Q: { item: "minecraft:crying_obsidian" },
-            W: { item: "minecraft:obsidian" },
+            W: { item: "spectrum:onyx_shard" },
             E: { item: "modern_industrialization:diamond_plate" },
             R: { tag: "apothic_enchanting:tomes" },
         },

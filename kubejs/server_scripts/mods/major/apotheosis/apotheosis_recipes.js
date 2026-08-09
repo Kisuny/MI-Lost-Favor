@@ -255,6 +255,103 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    pedestalFromRecipe(event, {
+        id: "apothic_enchanting:hellshelf",
+        replace: [
+            { from: "#c:bookshelves", to: "apothic_enchanting:seashelf" }
+        ],
+        tier: "advanced",
+        time: 200,
+        citrine: 8,
+        topaz: 8,
+        onyx: 4,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "apothic_enchanting:sightshelf",
+        tier: "advanced",
+        time: 200,
+        citrine: 8,
+        topaz: 8,
+        onyx: 4,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "apothic_enchanting:beeshelf",
+        tier: "advanced",
+        time: 200,
+        citrine: 8,
+        topaz: 8,
+        onyx: 4,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "apothic_enchanting:geode_shelf",
+        tier: "advanced",
+        time: 200,
+        citrine: 16,
+        topaz: 16,
+        amethyst: 16,
+        onyx: 12,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+
+    customEnchantingApparatusCraft(event, {
+        reagent: { "tag": "c:bookshelves" },
+        pedestalItems: [
+            { "item": "malum:refined_brilliance" },
+            { "item": "malum:refined_brilliance" },
+            { "item": "malum:refined_brilliance" },
+            { "item": "minecraft:cracked_deepslate_tiles" },
+            { "item": "minecraft:cracked_deepslate_tiles" },
+            { "item": "minecraft:cracked_deepslate_tiles" },
+        ],
+        output: "apothic_enchanting:dormant_deepshelf",
+        amount: 1,
+        sourceCost: 1000,
+        keepNbtOfReagent: false,
+        removeRecipe: true
+    });
+    customEnchantingApparatusCraft(event, {
+        reagent: { "item": "milf:miasma_orb" },
+        pedestalItems: [
+            { "item": "eidolon_repraised:shadow_gem" },
+            { "item": "eidolon_repraised:shadow_gem" },
+            { "item": "apothic_enchanting:deepshelf" },
+            { "item": "apothic_enchanting:deepshelf" },
+            { "item": "spectrum:midnight_chip" },
+            { "item": "malum:hallowed_gold_ingot" },
+            { "item": "malum:hallowed_gold_ingot" },
+            { "item": "malum:hallowed_gold_ingot" },
+        ],
+        output: "apothic_enchanting:treasure_shelf",
+        amount: 1,
+        sourceCost: 5000,
+        keepNbtOfReagent: false,
+        removeRecipe: true
+    });
+    customEnchantingApparatusCraft(event, {
+        reagent: { "item": "malum:prismatic_focus_lens" },
+        pedestalItems: [
+            { "item": "apothic_enchanting:infused_seashelf" },
+            { "item": "apothic_enchanting:infused_seashelf" },
+            { "item": "sophisticatedstorage:advanced_filter_upgrade" },
+            { "item": "minecraft:prismarine_bricks" },
+            { "item": "minecraft:prismarine_bricks" },
+            { "item": "malum:cthonic_gold_fragment" },
+            { "item": "malum:cthonic_gold_fragment" },
+        ],
+        output: "apothic_enchanting:filtering_shelf",
+        amount: 1,
+        sourceCost: 1000,
+        keepNbtOfReagent: false,
+        removeRecipe: true
+    });
+
 })
 
 

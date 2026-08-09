@@ -44,12 +44,40 @@ const customPedestalCraftShapeless = (event, args) => {
 };
 
 
-// Converts an item(s) existing minecraft:crafting_shaped/shapeless recipe into a pedestal
-// craft (keeping the original ingredients) and removes the original recipe.
-// args: id (result item id), tier, time, experience, advancement, yield_upgrades,
-//       amethyst/citrine/topaz/onyx/moonstone (color counts)
+const parsePedestalSpec = spec => {
+  if (typeof spec === "string") {
+    return spec.startsWith("#")
+      ? { type: "tag", id: spec.slice(1) }
+      : { type: "item", id: spec };
+  }
+  if (spec.tag) return { type: "tag", id: spec.tag };
+  return { type: "item", id: spec.item };
+};
+
+const pedestalSpecMatches = (node, from) => {
+  if (!node || typeof node !== "object") return false;
+  return from.type === "tag" ? node.tag === from.id : node.item === from.id;
+};
+
+const pedestalSpecToJSON = to => (to.type === "tag" ? { tag: to.id } : { item: to.id });
+
+const replacePedestalIngredient = (node, from, to) => {
+  if (Array.isArray(node)) return node.map(n => replacePedestalIngredient(n, from, to));
+  if (node && typeof node === "object") {
+    if (pedestalSpecMatches(node, from)) return pedestalSpecToJSON(to);
+    let result = {};
+    for (let k in node) result[k] = replacePedestalIngredient(node[k], from, to);
+    return result;
+  }
+  return node;
+};
+
 const pedestalFromRecipe = (event, args) => {
-  const ids = Array.isArray(args.id) ? args.id : [args.id];
+  let ids = Array.isArray(args.id) ? args.id : [args.id];
+  let replacements = (args.replace || []).map(r => ({
+    from: parsePedestalSpec(r.from),
+    to: parsePedestalSpec(r.to)
+  }));
 
   for (const id of ids) {
     event.forEachRecipe({ output: id }, recipe => {
@@ -69,13 +97,17 @@ const pedestalFromRecipe = (event, args) => {
       };
 
       if (rJSON.type === "minecraft:crafting_shaped") {
+        let key = rJSON.key;
+        for (const { from, to } of replacements) key = replacePedestalIngredient(key, from, to);
         customPedestalCraft(event, Object.assign({}, common, {
           pattern: rJSON.pattern,
-          key: rJSON.key
+          key: key
         }));
       } else if (rJSON.type === "minecraft:crafting_shapeless") {
+        let ingredients = rJSON.ingredients;
+        for (const { from, to } of replacements) ingredients = replacePedestalIngredient(ingredients, from, to);
         customPedestalCraftShapeless(event, Object.assign({}, common, {
-          ingredients: rJSON.ingredients
+          ingredients: ingredients
         }));
       } else {
         return;
@@ -91,6 +123,12 @@ ServerEvents.recipes(event => {
   //Exmaple (dont forget to add advancement that unlocks the item, if necessary)
   // pedestalFromRecipe(event, {
   //   id: "starbunclemania:fluid_sourcelink",
+  //   replace: [
+  //     { from: "minecraft:iron_ingot", to: "#forge:ingots/copper" }, // item -> tag
+  //     { from: "#minecraft:planks", to: "minecraft:oak_planks" }, // tag -> item
+  //     { from: "minecraft:stick", to: "minecraft:blaze_rod" }, // item -> item
+  //     { from: "#forge:gems", to: "#forge:dusts" },  // tag -> tag
+  //   ],
   //   tier: "simple",
   //   time: 100,
   //   citrine: 2,

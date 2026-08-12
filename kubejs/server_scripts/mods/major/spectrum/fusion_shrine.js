@@ -15,6 +15,8 @@ const customShrineRecipe = (event, args) => {
         "during_crafting_effects": args.duringEffects || ["nothing", "nothing", "nothing"],
         "finish_crafting_effect": args.finishEffect || "nothing",
     });
+    if (args.removeRecipe) { event.remove({ output: args.result.id }) }
+    if (args.removeRecipeType) { event.remove({ output: args.result.id, type: args.removeRecipeType }) }
 };
 
 ServerEvents.recipes(event => {

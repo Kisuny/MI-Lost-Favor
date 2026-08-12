@@ -38,12 +38,16 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    event.remove({ output: 'eidolon_repraised:pewter_blend' })
-    event.shapeless('eidolon_repraised:pewter_blend x2', [
-        '#c:ingots/lead',
-        '#c:ingots/iron',
-        'spectrum:vegetal'
-    ])
+    miMachineRecipe(event, {
+        energy: 2, time: 40, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "spectrum:vegetal" }, 1],
+            [{ tag: "c:ingots/lead" }, 1],
+            [{ tag: "c:ingots/iron" }, 1],
+        ],
+        outputItems: [[{ item: "eidolon_repraised:pewter_blend" }, 2]],
+        removeRecipe: true
+    });
 
     customMixingCauldron(event, {
         fluid: "minecraft:water",

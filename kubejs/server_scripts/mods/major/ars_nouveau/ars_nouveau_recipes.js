@@ -450,5 +450,21 @@ ServerEvents.recipes(event => {
         removeById: "ars_nouveau:basic_spell_turret"
     });
     
-
+    customShrineRecipe(event, {
+        time: 200,
+        experience: 4.0,
+        fluid: "milf:ethereal_source",
+        ingredients: [
+            { "item": "spectrum:enchantment_canvas", count: 1 },
+            { "item": "malum:hallowed_gold_ingot", count: 4 },
+            { "item": "eidolon_repraised:shadow_gem", count: 1 },
+            { "item": "ars_nouveau:sourcestone", count: 12 }
+        ],
+        result: {
+            "id": "ars_nouveau:enchanting_apparatus",
+            "count": 1
+        },
+        advancement: "spectrum:unlocks/blocks/fusion_shrine",
+        removeRecipe: true
+    });
 })

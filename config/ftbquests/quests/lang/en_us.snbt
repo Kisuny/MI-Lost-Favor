@@ -328,11 +328,11 @@
 		"<warning>ТОКСИЧНОЕ МАСЛО!</warning> Ещё более летучий и опасный вариант! Оно уже может приводить к <warning>летальному исходу</warning>. Я КАЖДОМУ дам попробовать моё невероятное творение!"
 	]
 	quest.0AA51C0B8B225908.quest_desc: [
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
+		" <item id=ars_nouveau:glyph_touch tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_light tooltip=true/>"
 		""
 		"<positive>Free</positive> lighting for <keyword>rooms</keyword> or <keyword>mines</keyword>"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_light/>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_light tooltip=true/>"
 		""
 		"<positive>Бесплатный</positive> свет в <keyword>помещениях</keyword> или <keyword>шахтах</keyword>"
 	]
@@ -500,13 +500,13 @@
 		"Самый простой способ открывать <keyword>Timedoor</keyword>. Загрузи в него <property>Location Card</property> и нажми правой кнопкой, чтобы открыть портал вручную, или подай <warning>Redstone</warning>, если он стоит как блок. Это <property>лучший ранний инструмент</property> для телепорта и ему <warning>не нужен Time Steel</warning>."
 	]
 	quest.0E87D93CF5EB7F46.quest_desc: [
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
+		" <item id=ars_nouveau:glyph_touch tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_fell tooltip=true/>"
 		""
 		"<positive>Allows</positive> you to fell most of the <keyword>wood</keyword> or <keyword>leaves</keyword> from trees"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_fell/>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_fell tooltip=true/>"
 		""
-		"Позволяет срубать большинство <keyword>древесины</keyword> или <keyword>листвы</keyword> с деревьев"
+		"<positive>Позволяет</positive> срубать большинство <keyword>древесины</keyword> или <keyword>листвы</keyword> с деревьев"
 	]
 	quest.0E87D93CF5EB7F46.title: "treecapitator"
 	quest.0E9FA290A23FF8CC.quest_desc: [
@@ -1600,12 +1600,12 @@
 	]
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
 	quest.2D89107A2B1F6A6C.quest_desc: [
-		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
+		" <item id=ars_nouveau:glyph_self tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>"
 		""
 		""
 		"Grants the <named>\"Bounce Off the Ground\"</named> effect - which <positive>negates</positive> fall damage"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_self size=0.1/>  >   <item id=ars_nouveau:glyph_bounce/>"
+		" <item id=ars_nouveau:glyph_self size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>"
 		""
 		"Даёт эффект <named>«Отскакивание от земли»</named> - <positive>избавление</positive> от урона при падении"
 	]
@@ -2229,19 +2229,19 @@
 	]
 	quest.3D5FB6D17EC9693F.title: "World Tier: Summit"
 	quest.3D70D1CA920E0805.quest_desc: [
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  <positive>free dirt</positive>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/>  -  <positive>free dirt</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>free cobblestone</positive>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>free cobblestone</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>free deepslate</positive>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>free deepslate</positive>"
 		""
 		"You can read about all the combinations right on the glyph itself in <keyword>EMI</keyword>"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/>  -  <positive>установить землю</positive>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/>  -  <positive>установить землю</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>установить булыжник</positive>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>установить булыжник</positive>"
 		""
-		" <item id=ars_nouveau:glyph_touch size=0.1/> > <item id=ars_elemental:glyph_conjure_terrain/> > <item id=ars_nouveau:glyph_amplify/> > <item id=ars_nouveau:glyph_amplify/>  -  <positive>установить дипслейт</positive>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>установить дипслейт</positive>"
 		""
 		"Можно почитать о всех комбинациях на самом глифе в <keyword>EMI</keyword>"
 	]
@@ -2747,11 +2747,11 @@
 		"Решите <property>загадку</property> для доступа к <magic>лабиринту</magic>!"
 	]
 	quest.4A7B4E770FBD1EDB.quest_desc: [
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_summon_steed tooltip=true/>"
 		""
 		"<positive>Calls</positive> to the <keyword>tamed horse</keyword>"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_summon_steed/>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_summon_steed tooltip=true/>"
 		""
 		"<positive>Призывает</positive> <keyword>приручённую лошадь</keyword>"
 	]
@@ -3330,14 +3330,14 @@
 		"Улучшаются Diamond Block и ещё одним Blood Feather до Diamond-Tipped Ophanim Wings - при приседании наносят колющую атаку по врагам рядом, основанную на направлении тела (не взгляда), расходуя прочность пропорционально урону."
 	]
 	quest.5DB331B0DC5B29D7.quest_desc: [
-		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
+		" <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>"
 		""
 		"This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a <keyword>projectile</keyword>, <keyword>self-cast</keyword>, etc - so feel free to experiment."
 		""
 		"You can <positive>enhance</positive> this and other spells using the <keyword>Amplify</keyword> glyph!"
 		"{@pagebreak}"
 		""
-		" <item id=ars_nouveau:glyph_projectile size=0.1/>  >   <item id=ars_nouveau:glyph_harm/>"
+		" <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>"
 		""
 		"Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть <keyword>снаряд</keyword>, <keyword>самоналожение</keyword> и т.д. - эксперементируйте."
 		""
@@ -4458,11 +4458,11 @@
 		"Эти <keyword>колючие листья</keyword> можно получить только с помощью <keyword>ножниц</keyword>"
 	]
 	quest.7CA4C6614455169B.quest_desc: [
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>"
 		""
 		"<positive>Replaces</positive> most tools with a single <keyword>spell</keyword>"
 		"{@pagebreak}"
-		" <item id=ars_nouveau:glyph_touch size=0.1/>  >   <item id=ars_nouveau:glyph_break/>"
+		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>"
 		""
 		"<positive>Заменяет</positive> большинство инструментов одним <keyword>заклинанием</keyword>"
 	]

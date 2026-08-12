@@ -2521,7 +2521,7 @@
 				}
 			]
 			x: 4.0d
-			y: 30.5d
+			y: 29.0d
 		}
 		{
 			dependencies: ["73DAABF80C068AA2"]
@@ -2547,7 +2547,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 29.5d
+			y: 28.0d
 		}
 		{
 			dependencies: ["4D4846179574789A"]
@@ -2560,7 +2560,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 30.5d
+			y: 29.0d
 		}
 		{
 			dependencies: ["73DAABF80C068AA2"]
@@ -2612,7 +2612,7 @@
 				}
 			]
 			x: 2.0d
-			y: 31.5d
+			y: 30.0d
 		}
 		{
 			dependencies: ["73DAABF80C068AA2"]
@@ -2796,7 +2796,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 25.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["4C56E87E195A4339"]
@@ -2810,7 +2810,7 @@
 				type: "advancement"
 			}]
 			x: 4.0d
-			y: 27.0d
+			y: 25.5d
 		}
 		{
 			dependencies: ["6071F775D9AB5DBA"]
@@ -2823,7 +2823,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 28.5d
+			y: 27.0d
 		}
 		{
 			dependencies: ["4D4846179574789A"]
@@ -2888,7 +2888,7 @@
 				}
 			]
 			x: 4.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: [
@@ -2904,7 +2904,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -2917,7 +2917,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 35.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -2930,7 +2930,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 34.0d
+			y: 31.5d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -2943,7 +2943,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 35.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -2956,7 +2956,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -2968,7 +2968,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["03FD9E737AD73A39"]
@@ -2980,7 +2980,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 34.0d
+			y: 31.5d
 		}
 		{
 			dependencies: ["03FD9E737AD73A39"]
@@ -2992,7 +2992,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 35.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["03FD9E737AD73A39"]
@@ -3004,7 +3004,7 @@
 				type: "checkmark"
 			}]
 			x: 2.0d
-			y: 36.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["6FC03E8F2A62B6AC"]
@@ -3016,7 +3016,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 37.5d
+			y: 35.0d
 		}
 		{
 			dependencies: ["6FC03E8F2A62B6AC"]
@@ -3024,11 +3024,11 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 2.5d
-			y: 37.5d
+			y: 35.0d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -3042,7 +3042,7 @@
 				type: "advancement"
 			}]
 			x: 4.0d
-			y: 38.0d
+			y: 34.5d
 		}
 		{
 			dependencies: ["2CBD884256778D81"]
@@ -3100,7 +3100,7 @@
 				}
 			]
 			x: 4.0d
-			y: 40.5d
+			y: 36.0d
 		}
 		{
 			dependencies: ["351C8BB52E7CD0E8"]
@@ -3114,7 +3114,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 44.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3126,7 +3126,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 42.0d
+			y: 37.0d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -3139,7 +3139,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 34.0d
+			y: 31.5d
 		}
 		{
 			dependencies: ["73DAABF80C068AA2"]
@@ -3183,7 +3183,7 @@
 				}
 			]
 			x: 3.5d
-			y: 28.5d
+			y: 27.0d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3214,7 +3214,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 43.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]
@@ -3485,7 +3485,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 42.0d
+			y: 37.0d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3497,7 +3497,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 46.0d
+			y: 41.0d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3509,7 +3509,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3521,7 +3521,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 43.5d
+			y: 38.5d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3533,7 +3533,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 42.5d
+			y: 37.5d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3545,7 +3545,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 45.5d
+			y: 40.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4034,7 +4034,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 44.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4053,7 +4053,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4072,7 +4072,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 45.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4091,7 +4091,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4110,7 +4110,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 44.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4129,7 +4129,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 45.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4148,7 +4148,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4167,7 +4167,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 44.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -4186,7 +4186,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 45.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -4198,7 +4198,7 @@
 				type: "checkmark"
 			}]
 			x: 7.0d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["0F24421000EA7AF7"]
@@ -4210,7 +4210,7 @@
 				item: { count: 1, id: "cognition:experience_obelisk" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 21.5d
 		}
 		{
@@ -4223,7 +4223,7 @@
 				item: { count: 1, id: "cognition:cognitive_flux" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 22.5d
 		}
 		{
@@ -4236,7 +4236,7 @@
 				item: { count: 1, id: "cognition:attunement_staff" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 20.5d
 		}
 		{
@@ -4249,7 +4249,7 @@
 				item: { count: 1, id: "cognition:experience_fountain" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 20.5d
 		}
 		{
@@ -4262,7 +4262,7 @@
 				item: { count: 1, id: "cognition:precision_dispeller" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 20.5d
 		}
 		{
@@ -4275,7 +4275,7 @@
 				item: { count: 1, id: "cognition:accelerator" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 21.5d
 		}
 		{
@@ -4287,7 +4287,7 @@
 				item: { count: 1, id: "cognition:molecular_metamorpher" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 22.5d
 		}
 		{
@@ -4299,7 +4299,7 @@
 				item: { count: 1, id: "cognition:linear_accelerator" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 20.5d
 		}
 		{
@@ -4312,7 +4312,7 @@
 				item: { count: 1, id: "cognition:enlightened_amulet" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 21.5d
 		}
 		{
@@ -4324,7 +4324,7 @@
 				item: { count: 1, id: "cognition:transforming_focus" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 21.5d
 		}
 		{
@@ -4336,7 +4336,7 @@
 				item: { count: 1, id: "cognition:fluorescent_jelly" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 23.5d
 		}
 		{
@@ -4349,7 +4349,7 @@
 				item: { count: 1, id: "cognition:mending_neurogel" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -10.5d
 			y: 21.0d
 		}
 		{
@@ -4361,7 +4361,7 @@
 				item: { count: 1, id: "cognition:primordial_assembly" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: 22.5d
 		}
 		{
@@ -4373,7 +4373,7 @@
 				item: { count: 1, id: "cognition:bibliophage" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -6.0d
 			y: 22.5d
 		}
 		{
@@ -4386,7 +4386,7 @@
 				item: { count: 1, id: "cognition:flask_of_hades" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 21.0d
 		}
 		{
@@ -4399,7 +4399,7 @@
 				item: { count: 1, id: "cognition:flask_of_poseidon" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: 20.5d
 		}
 		{
@@ -4412,7 +4412,7 @@
 				item: { count: 1, id: "cognition:flask_of_chaos" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.0d
 			y: 21.0d
 		}
 		{
@@ -4424,7 +4424,7 @@
 				item: { count: 1, id: "cognition:archivers_bookshelf" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.5d
 			y: 21.5d
 		}
 		{
@@ -4451,7 +4451,7 @@
 				to_observe: "cognition:infected_bookshelf"
 				type: "observation"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 22.5d
 		}
 		{
@@ -4478,7 +4478,7 @@
 				to_observe: "cognition:infected_archivers_bookshelf"
 				type: "observation"
 			}]
-			x: -9.0d
+			x: -8.5d
 			y: 21.5d
 		}
 		{
@@ -4490,7 +4490,7 @@
 				item: { count: 1, id: "cognition:enchanted_bookshelf" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.5d
 			y: 23.5d
 		}
 		{
@@ -4517,7 +4517,7 @@
 				to_observe: "cognition:infected_enchanted_bookshelf"
 				type: "observation"
 			}]
-			x: -9.0d
+			x: -8.5d
 			y: 23.5d
 		}
 		{
@@ -4534,7 +4534,7 @@
 				item: { count: 1, id: "cognition:forgotten_dust" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -10.0d
 			y: 22.5d
 		}
 		{
@@ -4546,7 +4546,7 @@
 				item: { count: 1, id: "cognition:fluorescent_agar" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 22.5d
 		}
 		{
@@ -4558,7 +4558,7 @@
 				item: { count: 1, id: "cognition:nutrient_agar" }
 				type: "item"
 			}]
-			x: -13.0d
+			x: -12.5d
 			y: 22.5d
 		}
 		{
@@ -4570,7 +4570,7 @@
 				item: { count: 1, id: "cognition:extravagant_agar" }
 				type: "item"
 			}]
-			x: -14.0d
+			x: -13.5d
 			y: 22.0d
 		}
 		{
@@ -4582,7 +4582,7 @@
 				item: { count: 1, id: "cognition:insightful_agar" }
 				type: "item"
 			}]
-			x: -14.0d
+			x: -13.5d
 			y: 23.0d
 		}
 		{
@@ -4596,7 +4596,7 @@
 				item: { count: 1, id: "cognition:fortuitous_amulet" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.5d
 			y: 21.0d
 		}
 		{
@@ -4609,7 +4609,7 @@
 				item: { count: 1, id: "cognition:cognitive_sword" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 24.0d
 		}
 		{
@@ -4622,7 +4622,7 @@
 				item: { count: 1, id: "cognition:cognitive_shovel" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 24.5d
 		}
 		{
@@ -4635,7 +4635,7 @@
 				item: { count: 1, id: "cognition:cognitive_pickaxe" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 24.0d
 		}
 		{
@@ -4648,7 +4648,7 @@
 				item: { count: 1, id: "cognition:cognitive_axe" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 23.5d
 		}
 		{
@@ -4661,7 +4661,7 @@
 				item: { count: 1, id: "cognition:cognitive_hoe" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 24.0d
 		}
 		{
@@ -4674,7 +4674,7 @@
 				item: { count: 1, id: "cognition:cognitive_bow" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 23.5d
 		}
 		{
@@ -4687,7 +4687,7 @@
 				item: { count: 1, id: "cognition:cognitive_rod" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 23.5d
 		}
 		{
@@ -4700,7 +4700,7 @@
 				item: { count: 1, id: "cognition:cognitive_shears" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 24.0d
 		}
 		{
@@ -4713,7 +4713,7 @@
 				item: { count: 1, id: "cognition:flint_and_cognitive_alloy" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 24.5d
 		}
 		{
@@ -4743,7 +4743,7 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: 0.0d
 			y: 24.5d
 		}
 		{
@@ -4756,7 +4756,7 @@
 				item: { count: 1, id: "cognition:memory_tablet" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -10.0d
 			y: 20.5d
 		}
 		{
@@ -4769,7 +4769,7 @@
 				item: { count: 1, id: "minecraft:budding_amethyst" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 20.5d
 		}
 		{
@@ -4783,7 +4783,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 46.0d
+			y: 41.0d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -5007,7 +5007,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 34.0d
+			y: 31.5d
 		}
 		{
 			dependencies: ["4D1140A41CD018A7"]
@@ -5020,7 +5020,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["4D1140A41CD018A7"]
@@ -5033,7 +5033,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 35.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["4D1140A41CD018A7"]
@@ -5046,7 +5046,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["44768370EB45538C"]
@@ -5058,7 +5058,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 34.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["5C91DD619D5F382D"]
@@ -5107,7 +5107,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["2BAF1070D316E4A4"]
@@ -5121,7 +5121,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 44.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["0EB065FD617CB39A"]
@@ -5133,7 +5133,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 47.5d
+			y: 42.5d
 		}
 		{
 			dependencies: ["4FD896F49FCD93CD"]
@@ -5145,7 +5145,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 48.5d
+			y: 43.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -5157,7 +5157,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 49.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -5169,7 +5169,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 50.0d
+			y: 45.0d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -5181,7 +5181,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 49.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5193,7 +5193,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 46.0d
+			y: 41.0d
 		}
 		{
 			dependencies: ["0EB065FD617CB39A"]
@@ -5205,7 +5205,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 47.5d
+			y: 42.5d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -5217,7 +5217,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 49.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -5229,7 +5229,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 49.5d
+			y: 44.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5241,7 +5241,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: 43.0d
+			y: 38.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5253,7 +5253,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 42.5d
+			y: 37.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5265,7 +5265,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 43.0d
+			y: 38.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -5277,7 +5277,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 42.5d
+			y: 37.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5386,7 +5386,10 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["5C91DD619D5F382D"]
+			dependencies: [
+				"5C91DD619D5F382D"
+				"0D55B997939B664F"
+			]
 			entity_vis_size: 1.0f
 			id: "71D17E12AF1CA374"
 			shape: "heart"
@@ -5407,7 +5410,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 48.0d
+			y: 43.0d
 		}
 		{
 			dependencies: ["6195B2541F2E191E"]
@@ -5419,7 +5422,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 48.5d
+			y: 43.5d
 		}
 		{
 			dependencies: ["6195B2541F2E191E"]
@@ -5431,7 +5434,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 49.0d
+			y: 44.0d
 		}
 		{
 			dependencies: ["6195B2541F2E191E"]
@@ -5443,7 +5446,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 48.5d
+			y: 43.5d
 		}
 		{
 			dependencies: ["6195B2541F2E191E"]
@@ -5455,7 +5458,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 48.0d
+			y: 43.0d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -5466,7 +5469,7 @@
 				type: "checkmark"
 			}]
 			x: 4.0d
-			y: 47.0d
+			y: 42.0d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]

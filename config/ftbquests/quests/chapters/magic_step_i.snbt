@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2B388DAC1919D26C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "magic_step_i"
@@ -3024,7 +3025,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -4256,7 +4257,7 @@
 			dependencies: ["0F24421000EA7AF7"]
 			entity_vis_size: 1.0f
 			id: "622EE0B2EA665DBE"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "2F5A61868C9B2636"
 				item: { count: 1, id: "cognition:precision_dispeller" }
@@ -4349,7 +4350,7 @@
 				item: { count: 1, id: "cognition:mending_neurogel" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -10.0d
 			y: 21.0d
 		}
 		{
@@ -4361,7 +4362,7 @@
 				item: { count: 1, id: "cognition:primordial_assembly" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 22.5d
 		}
 		{
@@ -4373,7 +4374,7 @@
 				item: { count: 1, id: "cognition:bibliophage" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.5d
 			y: 22.5d
 		}
 		{
@@ -4386,7 +4387,7 @@
 				item: { count: 1, id: "cognition:flask_of_hades" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: 21.0d
 		}
 		{
@@ -4399,7 +4400,7 @@
 				item: { count: 1, id: "cognition:flask_of_poseidon" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 20.5d
 		}
 		{
@@ -4412,7 +4413,7 @@
 				item: { count: 1, id: "cognition:flask_of_chaos" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: 21.0d
 		}
 		{
@@ -4424,7 +4425,7 @@
 				item: { count: 1, id: "cognition:archivers_bookshelf" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -7.0d
 			y: 21.5d
 		}
 		{
@@ -4451,7 +4452,7 @@
 				to_observe: "cognition:infected_bookshelf"
 				type: "observation"
 			}]
-			x: -8.0d
+			x: -7.5d
 			y: 22.5d
 		}
 		{
@@ -4478,7 +4479,7 @@
 				to_observe: "cognition:infected_archivers_bookshelf"
 				type: "observation"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 21.5d
 		}
 		{
@@ -4490,7 +4491,7 @@
 				item: { count: 1, id: "cognition:enchanted_bookshelf" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -7.0d
 			y: 23.5d
 		}
 		{
@@ -4517,7 +4518,7 @@
 				to_observe: "cognition:infected_enchanted_bookshelf"
 				type: "observation"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 23.5d
 		}
 		{
@@ -4534,7 +4535,7 @@
 				item: { count: 1, id: "cognition:forgotten_dust" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.5d
 			y: 22.5d
 		}
 		{
@@ -4546,7 +4547,7 @@
 				item: { count: 1, id: "cognition:fluorescent_agar" }
 				type: "item"
 			}]
-			x: -11.5d
+			x: -11.0d
 			y: 22.5d
 		}
 		{
@@ -4558,7 +4559,7 @@
 				item: { count: 1, id: "cognition:nutrient_agar" }
 				type: "item"
 			}]
-			x: -12.5d
+			x: -12.0d
 			y: 22.5d
 		}
 		{
@@ -4570,7 +4571,7 @@
 				item: { count: 1, id: "cognition:extravagant_agar" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -13.0d
 			y: 22.0d
 		}
 		{
@@ -4582,7 +4583,7 @@
 				item: { count: 1, id: "cognition:insightful_agar" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -13.0d
 			y: 23.0d
 		}
 		{
@@ -4596,7 +4597,7 @@
 				item: { count: 1, id: "cognition:fortuitous_amulet" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -9.0d
 			y: 21.0d
 		}
 		{
@@ -4756,7 +4757,7 @@
 				item: { count: 1, id: "cognition:memory_tablet" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.5d
 			y: 20.5d
 		}
 		{
@@ -5415,6 +5416,9 @@
 		{
 			dependencies: ["6195B2541F2E191E"]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "spectrum:provider_node"
+			}
 			id: "6270DCC59DA5FFB4"
 			tasks: [{
 				id: "262380AFBD76E042"

@@ -3689,6 +3689,15 @@
 			min_width: 300
 			rewards: [
 				{
+					id: "100089357DBD0D42"
+					item: {
+						count: 1
+						id: "enigmaticlegacyplus:cursed_ring"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
 					id: "707B8C2E22244E1E"
 					item: {
 						count: 1
@@ -3734,9 +3743,8 @@
 			shape: "heart"
 			size: 2.0d
 			tasks: [{
-				id: "15158E575E9905D4"
-				item: { count: 1, id: "enigmaticlegacyplus:cursed_ring" }
-				type: "item"
+				id: "15717BF2B7AD2FA3"
+				type: "checkmark"
 			}]
 			x: -7.0d
 			y: -8.0d

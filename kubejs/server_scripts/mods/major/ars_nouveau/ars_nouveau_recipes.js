@@ -467,4 +467,29 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:unlocks/blocks/fusion_shrine",
         removeRecipe: true
     });
+
+
+    spiritInfusion(event, {
+        input: { item: "eidolon_repraised:soul_shard", count: 1 },
+        extraInputs: [
+            { item: "malum:cthonic_gold_fragment", count: 4 },
+        ],
+        spirits: [
+            { type: "malum:earthen", count: 4 },
+        ],
+        result: { id: "ars_nouveau:starbuncle_shards", count: 1 },
+    });
+    
+    spiritInfusion(event, {
+        input: { item: "eidolon_repraised:soul_shard", count: 1 },
+        extraInputs: [
+            { item: "malum:cthonic_gold_fragment", count: 4 },
+        ],
+        spirits: [
+            { type: "malum:aqueous", count: 4 },
+        ],
+        result: { id: "ars_nouveau:alakarkinos_token", count: 1 },
+    });
+
+
 })

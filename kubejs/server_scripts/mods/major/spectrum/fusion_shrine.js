@@ -1,5 +1,5 @@
 const customShrineRecipe = (event, args) => {
-    event.custom({
+    const recipe = {
         "type": "spectrum:fusion_shrine",
         "time": args.time,
         "experience": args.experience || 0.0,
@@ -11,10 +11,16 @@ const customShrineRecipe = (event, args) => {
         "result": args.result,
         "required_advancement": args.advancement || "spectrum:unlocks/blocks/fusion_shrine",
         "world_conditions": args.conditions || {},
-        "start_crafting_effect": args.startEffect || "nothing",
-        "during_crafting_effects": args.duringEffects || ["nothing", "nothing", "nothing"],
-        "finish_crafting_effect": args.finishEffect || "nothing",
-    });
+    };
+
+    if (args.startEffect || args.duringEffects || args.finishEffect) {
+        recipe.effects = {};
+        if (args.startEffect) recipe.effects.start = args.startEffect;
+        if (args.duringEffects) recipe.effects.during = args.duringEffects;
+        if (args.finishEffect) recipe.effects.finish = args.finishEffect;
+    }
+
+    event.custom(recipe);
     if (args.removeRecipe) { event.remove({ output: args.result.id }) }
     if (args.removeRecipeType) { event.remove({ output: args.result.id, type: args.removeRecipeType }) }
 };

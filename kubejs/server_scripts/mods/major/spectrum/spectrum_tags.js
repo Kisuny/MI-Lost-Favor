@@ -166,6 +166,4 @@ ServerEvents.tags('item', event => {
         'spectrum:onyx_powder_block', 
         'spectrum:moonstone_powder_block'
     ])
-
-    event.add("spectrum:pastel_node_upgrades", ['malum:sacred_spirit', 'modern_industrialization:lapis_dust', 'eidolon_repraised:magicians_wax', 'eidolon_repraised:death_essence', 'eidolon_repraised:quicken_incense', 'enchanted:attuned_stone', 'dungeonsdelight:wardenzola', 'functionalstorage:redstone_upgrade', 'minecraft:glow_ink_sac', 'malum:blazing_quartz', 'malum:arcane_charcoal', 'malum:earthen_spirit', 'malum:aqueous_spirit'])
 })

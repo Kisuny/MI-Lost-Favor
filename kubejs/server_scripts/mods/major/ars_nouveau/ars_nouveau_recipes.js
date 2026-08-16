@@ -472,7 +472,7 @@ ServerEvents.recipes(event => {
     spiritInfusion(event, {
         input: { item: "eidolon_repraised:soul_shard", count: 1 },
         extraInputs: [
-            { item: "malum:cthonic_gold_fragment", count: 4 },
+            { item: "malum:refined_soulstone", count: 2 },
         ],
         spirits: [
             { type: "malum:earthen", count: 4 },
@@ -483,7 +483,7 @@ ServerEvents.recipes(event => {
     spiritInfusion(event, {
         input: { item: "eidolon_repraised:soul_shard", count: 1 },
         extraInputs: [
-            { item: "malum:cthonic_gold_fragment", count: 4 },
+            { item: "malum:refined_soulstone", count: 2 },
         ],
         spirits: [
             { type: "malum:aqueous", count: 4 },

@@ -2309,8 +2309,8 @@
 				item: { count: 1, id: "ars_nouveau:annotated_codex" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 11.5d
+			x: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["4D5DFD75A11BE595"]
@@ -3025,7 +3025,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -5087,7 +5087,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -5308,8 +5308,8 @@
 				id: "6E33E93B85AF0B3A"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: 11.5d
+			x: 9.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5323,8 +5323,8 @@
 				id: "4630DD08E75F7D40"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 13.0d
+			x: 8.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5338,8 +5338,8 @@
 				id: "638E3A3AA0413B7E"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 12.0d
+			x: 8.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5353,8 +5353,8 @@
 				id: "38C82C46CFC712D7"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: 12.5d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5368,8 +5368,8 @@
 				id: "33D235E37A2A3BBD"
 				type: "checkmark"
 			}]
-			x: 9.0d
-			y: 12.0d
+			x: 9.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5384,8 +5384,8 @@
 				id: "2767CB9587FEF195"
 				type: "checkmark"
 			}]
-			x: 9.0d
-			y: 13.0d
+			x: 9.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -5399,8 +5399,8 @@
 				id: "150CD4C004A066B9"
 				type: "checkmark"
 			}]
-			x: 8.5d
-			y: 13.5d
+			x: 9.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -5414,8 +5414,8 @@
 				id: "15DFF1BAB9B3F84B"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: 12.5d
+			x: 7.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6195B2541F2E191E"]
@@ -5673,6 +5673,20 @@
 			}]
 			x: 6.0d
 			y: 47.0d
+		}
+		{
+			dependencies: ["5C91DD619D5F382D"]
+			entity_vis_size: 1.0f
+			id: "09750D94752769D9"
+			min_width: 300
+			shape: "heart"
+			tasks: [{
+				id: "1AF5B9DF023605AD"
+				item: { count: 1, id: "ars_nouveau:source_berry_roll" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 13.0d
 		}
 	]
 }

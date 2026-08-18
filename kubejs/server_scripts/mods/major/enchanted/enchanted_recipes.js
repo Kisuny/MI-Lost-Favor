@@ -89,24 +89,17 @@ ServerEvents.recipes(event => {
         heat: "heated"
     })
 
-    ieShapedFluid(event, {
-        pattern: [
-            " W ",
-            " D ",
-            " L "
-        ],
-        key: {
-            W: { item: "enchanted:whiff_of_magic" },
-            D: { item: "minecraft:diamond" },
-            L: {
-                type: "immersiveengineering:fluid_stack",
-                amount: 1000,
-                tag: "minecraft:lava"
-            }
-        },
-        outputItems: [[{ id: "enchanted:attuned_stone" }, 1]],
-        removeRecipe: true
-    })
 
+    miMachineRecipe(event, {
+        energy: 2, time: 40, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "minecraft:diamond" }, 2],
+            [{ item: "enchanted:whiff_of_magic" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:lava" }, 1000],
+        ],
+        outputItems: [[{ item: "enchanted:attuned_stone" }, 2]]
+    });
 
 })

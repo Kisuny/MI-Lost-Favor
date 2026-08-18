@@ -51,6 +51,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:imbuement_amethyst",
         "ars_nouveau:imbuement_amethyst_block",
         "ars_nouveau:imbuement_lapis",
+        "ars_elemental:bone_meal",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -491,5 +492,20 @@ ServerEvents.recipes(event => {
         result: { id: "ars_nouveau:alakarkinos_token", count: 1 },
     });
 
+    spiritInfusion(event, {
+        input: { item: "ars_additions:lost_codex_entry", count: 1 },
+        extraInputs: [
+            { item: "ars_nouveau:magebloom_fiber", count: 8 },
+            { item: "malum:blazing_quartz", count: 2 },
+            { item: "malum:hallowed_gold_ingot", count: 1 },
+        ],
+        spirits: [
+            { type: "malum:eldritch", count: 2 },
+            { type: "malum:sacred", count: 2 },
+            { type: "malum:wicked", count: 2 },
+        ],
+        result: { id: "ars_nouveau:blank_thread", count: 1 },
+        removeRecipe: true
+    });
 
 })

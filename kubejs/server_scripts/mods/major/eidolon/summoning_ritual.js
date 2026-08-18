@@ -27,9 +27,27 @@ ServerEvents.recipes(event => {
     
     brazierSummon(event, {
         output: "goblintraders:goblin_trader",
-        pedestals: ["minecraft:barrier", "eidolon_repraised:soul_shard"], // "forbidden_arcanus:bat_wing"
+        pedestals: ["enchanted:wool_of_bat", "eidolon_repraised:soul_shard"], // "forbidden_arcanus:bat_wing"
         reagent: "milf:larva"
     })
+    
 
+    brazierSummon(event, {
+        output: "ars_nouveau:wilden_guardian",
+        pedestals: [{"tag": "c:foods/raw_fish"}, "eidolon_repraised:soul_shard"],
+        reagent: "minecraft:charcoal"
+    });
+
+    brazierSummon(event, {
+        output: "ars_nouveau:wilden_hunter",
+        pedestals: ["enchanted:tongue_of_dog", "eidolon_repraised:soul_shard"],
+        reagent: "minecraft:charcoal"
+    });
+
+    brazierSummon(event, {
+        output: "ars_nouveau:wilden_stalker",
+        pedestals: ["enchanted:wool_of_bat", "eidolon_repraised:soul_shard"],
+        reagent: "minecraft:charcoal"
+    });
 
 })

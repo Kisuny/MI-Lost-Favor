@@ -34322,13 +34322,15 @@
             "scales": {
                 "nutritional:source": 0.17,
                 "nutritional:grain": 0.15,
-                "nutritional:dairy": 0.1
+                "nutritional:dairy": 0.1,
+                "nutritional:fruit": 0.15
             }
         },
         "arsdelight:arch_sauce": {
             "scales": {
                 "nutritional:source": 0.1,
-                "nutritional:vegetable": 0.15
+                "nutritional:vegetable": 0.15,
+                "nutritional:fruit": 0.15
             }
         },
         "arsdelight:wilden_sauce": {
@@ -34339,9 +34341,7 @@
         },
         "arsdelight:arch_soup": {
             "scales": {
-                "nutritional:source": 0.45,
-                "nutritional:vegetable": 0.3,
-                "nutritional:protein": 0.2
+                "nutritional:source": 0.45
             }
         },
         "arsdelight:wilden_stew": {
@@ -34402,7 +34402,8 @@
         },
         "arsdelight:unstable_cocktail": {
             "scales": {
-                "nutritional:source": 0.35
+                "nutritional:source": 0.35,
+                "nutritional:fruit": 0.15
             }
         },
         "arsdelight:mendosteen_hornbeer": {
@@ -34468,13 +34469,17 @@
         "arsdelight:mendosteen_chicken": {
             "scales": {
                 "nutritional:source": 0.45,
-                "nutritional:protein": 0.55
+                "nutritional:protein": 0.55,
+                "nutritional:vegetable": 0.2,
+                "nutritional:fruit": 0.15
             }
         },
         "arsdelight:bastion_pork": {
             "scales": {
                 "nutritional:source": 0.45,
-                "nutritional:protein": 0.55
+                "nutritional:protein": 0.55,
+                "nutritional:vegetable": 0.2,
+                "nutritional:fruit": 0.15
             }
         },
         "arsdelight:bombegrante_steak": {
@@ -34486,7 +34491,9 @@
         "arsdelight:frostaya_mutton": {
             "scales": {
                 "nutritional:source": 0.45,
-                "nutritional:protein": 0.55
+                "nutritional:protein": 0.55,
+                "nutritional:vegetable": 0.2,
+                "nutritional:fruit": 0.15
             }
         },
         "spectrum:sugary_star_candy": {

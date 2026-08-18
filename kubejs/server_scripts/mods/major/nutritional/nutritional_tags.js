@@ -34,6 +34,12 @@ ServerEvents.tags('item', event => {
         'arsdelight:neutralized_bombegrante_jam',
         'arsdelight:neutralized_frostaya_jam',
         'arsdelight:source_berry_jam',
+        'arsdelight:unstable_cocktail',
+        'arsdelight:arch_sauce',
+        'arsdelight:source_berry_cupcake',
+        'arsdelight:frostaya_mutton',
+        'arsdelight:bastion_pork',
+        'arsdelight:mendosteen_chicken',
 
         // Spectrum
         '#spectrum:star_candies',
@@ -104,7 +110,6 @@ ServerEvents.tags('item', event => {
 
         'arsdelight:wilden_sauce',
 
-        'arsdelight:arch_soup',
         'arsdelight:wilden_stew',
         'arsdelight:bowl_of_wilden_salad',
         'arsdelight:bowl_of_honey_glazed_chimera',
@@ -221,9 +226,11 @@ ServerEvents.tags('item', event => {
     event.add('nutritional:nutrient/vegetable', [
         // Arsdelight
         'arsdelight:arch_sauce',
-        'arsdelight:arch_soup',
         'arsdelight:wilden_stew',
         'arsdelight:bowl_of_wilden_salad',
+        'arsdelight:frostaya_mutton',
+        'arsdelight:bastion_pork',
+        'arsdelight:mendosteen_chicken',
 
         // Spectrum
         'spectrum:aloe_leaf',

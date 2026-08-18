@@ -46,6 +46,7 @@ global.disabledItems = [
     new DisabledItemBuilder("aquaculture:iron_fillet_knife"),
     new DisabledItemBuilder("aquaculture:stone_fillet_knife"),
     new DisabledItemBuilder("aquaculture:wooden_fillet_knife"),
+    new DisabledItemBuilder("enigmaticlegacyplus:forbidden_fruit"),
     new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables(),
 
 ].map(builder => builder.build())

@@ -135,32 +135,21 @@
 			entity_vis_size: 1.0f
 			icon: {
 				components: {
-					"ftbquests:icon": "solcarrot:item/food_book"
+					"ftbquests:icon": "eatinganimation:item/apple_eating_2"
 				}
 				id: "ftbquests:custom_icon"
 			}
 			id: "70AB266645FE1C03"
-			rewards: [
-				{
-					id: "0B7CDDF7626E38B9"
-					item: {
-						count: 1
-						id: "solcarrot:food_book"
-					}
-					team_reward: false
-					type: "item"
+			rewards: [{
+				count: 4
+				id: "1772FD9BE177AF8B"
+				item: {
+					count: 1
+					id: "farmersdelight:hamburger"
 				}
-				{
-					count: 4
-					id: "1772FD9BE177AF8B"
-					item: {
-						count: 1
-						id: "farmersdelight:hamburger"
-					}
-					team_reward: false
-					type: "item"
-				}
-			]
+				team_reward: false
+				type: "item"
+			}]
 			tasks: [{
 				id: "7DFA2C0B9737E55D"
 				type: "checkmark"

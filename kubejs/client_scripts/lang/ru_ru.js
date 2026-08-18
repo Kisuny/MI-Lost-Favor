@@ -377,4 +377,7 @@ ClientEvents.lang('ru_ru', event => {
     // отсутствующие описания зачарований 
     event.add('enchantment.netherexp.volley.desc', 'Увеличивает количество пуль, выпускаемых за один выстрел.')
     event.add('enchantment.ars_additions.spellweave.desc', 'Даёт слот для нити на броне, у которой его нет.')
+
+    event.add('reward.nutritional.source_bonded', 'Связь с Истоком')
+    event.add('nutrient.nutritional.source', 'Исток')
 })

@@ -1,0 +1,17 @@
+{
+  "detect": "average",
+  "min": 60.0,
+  "max": 75.0,
+  "mob_effect": "ars_nouveau:mana_regen",
+  "amplifier": 0,
+  "nutrients": [
+    "nutritional:source"
+  ],
+  "attribute_modifiers": [
+    {
+      "amount": 40.0,
+      "attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+      "operation": "add_value"
+    }
+  ]
+}

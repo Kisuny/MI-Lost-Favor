@@ -26,8 +26,8 @@
   {
     "id": "key_19c9c36d757",
     "title": "Toggled Reacharound Placement",
-    "locked": true,
     "icon": "minecraft:scaffolding",
+    "locked": true,
     "action": {
       "type": "KEY",
       "name": "key.bridgingmod.toggle_bridging",
@@ -43,6 +43,18 @@
     "action": {
       "type": "KEY",
       "name": "key.advancements",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_1a01514b7a8",
+    "title": "Open Nutrition Screen",
+    "icon": "minecraft:apple",
+    "locked": true,
+    "action": {
+      "type": "KEY",
+      "name": "key.nutritional.open_nutrition",
       "toggle": false,
       "mode": "AUTO"
     }

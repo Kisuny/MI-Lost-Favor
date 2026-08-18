@@ -407,6 +407,9 @@ The only solution is to make them less sound.`)
     // missing enchantment descriptions
     event.add('enchantment.netherexp.volley.desc', 'Increases the amount of bullets fired per shot.')
     event.add('enchantment.ars_additions.spellweave.desc', "Provides a thread slot on armor that doesn't have threads.")
+    
+    event.add('reward.nutritional.source_bonded', 'Source Bonded')
+    event.add('nutrient.nutritional.source', 'Source')
 })
 
 let MilfEffects = {

@@ -1,0 +1,16 @@
+{
+  "attribute_modifiers": [
+    {
+      "amount": 20.0,
+      "attribute": "minecraft:generic.luck",
+      "operation": "add_value"
+    }
+  ],
+  "consecutive_days_required": 7,
+  "display": {
+    "color": "#9c27b0",
+    "name": "reward.nutritional.source_bonded"
+  },
+  "lose_on_tier_below": "nutritional:surviving",
+  "qualifying_tier": "nutritional:nourished"
+}

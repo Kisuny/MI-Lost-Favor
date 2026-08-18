@@ -37,6 +37,14 @@ ServerEvents.recipes(event => {
         "malum:soulstone_from_crushed_blasting",
         "malum:blazing_quartz_from_smelting",
         "malum:blazing_quartz_from_blasting",
+        "malum:brilliance_from_crushed_smelting",
+        "malum:brilliance_from_raw_smelting",
+        "malum:brilliance_from_smelting",
+        "malum:brilliance_from_deepslate_smelting",
+        "malum:brilliance_from_crushed_blasting",
+        "malum:brilliance_from_raw_blasting",
+        "malum:brilliance_from_blasting",
+        "malum:brilliance_from_deepslate_blasting",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -119,7 +127,7 @@ ServerEvents.recipes(event => {
     })
 
     spiritInfusion(event, {
-        input: { item: "modern_industrialization:stainless_steel_ingot", count: 2 },
+        input: { item: "modern_industrialization:aluminum_double_ingot", count: 1 },
         result: { id: "malum:malignant_pewter_ingot", count: 1 },
         extraInputs: [
             { item: "malum:malignant_lead", count: 1 },
@@ -187,5 +195,15 @@ ServerEvents.recipes(event => {
         inputItems: [[{ item: "malum:large_strange_crystal" }]],
         outputItems: [[{ item: "malum:strange_crystal" }, 2]]
     })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 160, machine: "modern_industrialization:blast_furnace",
+        inputItems: [
+            [{ item: "malum:raw_brilliance" }, 1],
+        ],
+        outputItems: [[{ item: "malum:refined_brilliance" }, 1]]
+    })
+
+    
 
 })

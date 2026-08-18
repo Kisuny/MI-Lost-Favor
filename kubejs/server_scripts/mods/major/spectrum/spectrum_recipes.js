@@ -163,14 +163,14 @@ ServerEvents.recipes(event => {
     // spectrum:pure_bloodstone -> malum:strange_crystal
     // spectrum:resonance_shard -> eidolon_repraised:shadow_gem
 
-    const nodes = [
+    const item_nodes = [
         { id: "spectrum:connection_node", count: 8, material: "minecraft:quartz" },
         { id: "spectrum:provider_node", count: 2, material: "minecraft:amethyst_shard", amethyst: 2, },
         { id: "spectrum:sender_node", count: 2, material: "spectrum:citrine_shard", citrine: 2 },
         { id: "spectrum:storage_node", count: 2, material: "spectrum:topaz_shard", topaz: 2 },
         { id: "spectrum:gather_node", count: 2, material: "spectrum:onyx_shard", onyx: 2 },
     ]
-    nodes.forEach(node => {
+    item_nodes.forEach(node => {
         customPedestalCraft(event, {
             time: 200,
             tier: "advanced",
@@ -186,6 +186,70 @@ ServerEvents.recipes(event => {
                 e: node.material,
                 r: "enchanted:attuned_stone",
             },
+            result: {
+                "id": node.id,
+                "count": node.count
+            },
+            amethyst: node.amethyst,
+            citrine: node.citrine,
+            topaz: node.topaz,
+            onyx: node.onyx,
+            advancement: "spectrum:unlocks/blocks/pastel_network",
+            removeRecipe: true
+        })
+    });
+    const fluid_nodes = [
+        { id: "spectrum:fluid_provider_node", count: 2, material: "minecraft:amethyst_shard", amethyst: 2, },
+        { id: "spectrum:fluid_sender_node", count: 2, material: "spectrum:citrine_shard", citrine: 2 },
+        { id: "spectrum:fluid_storage_node", count: 2, material: "spectrum:topaz_shard", topaz: 2 },
+        { id: "spectrum:fluid_gather_node", count: 2, material: "spectrum:onyx_shard", onyx: 2 },
+    ]
+    fluid_nodes.forEach(node => {
+        customPedestalCraft(event, {
+            time: 200,
+            tier: "advanced",
+            experience: 2.0,
+            pattern: [
+                ' t ',
+                'rer',
+                'qwq'
+            ],
+            key: {
+                q: 'spectrum:polished_calcite',
+                w: 'spectrum:polished_basalt',
+                e: node.material,
+                r: "enchanted:attuned_stone",
+                t: "minecraft:glass_bottle",
+            },
+            result: {
+                "id": node.id,
+                "count": node.count
+            },
+            amethyst: node.amethyst,
+            citrine: node.citrine,
+            topaz: node.topaz,
+            onyx: node.onyx,
+            advancement: "spectrum:unlocks/blocks/pastel_network",
+            removeRecipe: true
+        })
+    });
+    
+    const omni_nodes = [
+        { id: "spectrum:omni_provider_node", count: 2, amethyst: 2, },
+        { id: "spectrum:omni_sender_node", count: 2, citrine: 2 },
+        { id: "spectrum:omni_storage_node", count: 2, topaz: 2 },
+        { id: "spectrum:omni_gather_node", count: 2, onyx: 2 },
+    ]
+    omni_nodes.forEach((node, i) => {
+        customPedestalCraftShapeless(event, {
+            time: 200,
+            tier: "advanced",
+            experience: 2.0,
+            ingredients: [
+                { item: item_nodes[i + 1].id },
+                { item: fluid_nodes[i].id },
+                { item: "malum:refined_soulstone" },
+            ],
             result: {
                 "id": node.id,
                 "count": node.count

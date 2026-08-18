@@ -41,6 +41,7 @@ const customPedestalCraftShapeless = (event, args) => {
     "result": args.result,
     "required_advancement": args.advancement
   });
+  if(args.removeRecipe){event.remove({output: args.result.id})}
 };
 
 

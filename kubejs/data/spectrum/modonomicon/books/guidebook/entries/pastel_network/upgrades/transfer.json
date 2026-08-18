@@ -1,0 +1,99 @@
+{
+  "name": "book.spectrum.guidebook.pastel_upgrades.transfer.name",
+  "icon": {
+    "item": "malum:aqueous_spirit"
+  },
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectrum:unlocks/pastel_network/unlock_pastel_node_upgrading"
+  },
+  "category": "spectrum:pastel_network",
+  "hide_while_locked": true,
+  "parents": [],
+  "background_u_index": 0,
+  "background_v_index": 4,
+  "x": 7,
+  "y": -1,
+  "pages": [
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.malum.aqueous_spirit",
+      "item": {
+        "item": "malum:aqueous_spirit"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.raw_azurite.text"
+    },
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.eidolon_repraised.quicken_incense",
+      "item": {
+        "item": "eidolon_repraised:quicken_incense"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.pure_azurite.text",
+      "condition": {
+        "type": "modonomicon:advancement",
+        "advancement_id": "spectrum:midgame/grow_azurite_in_crystallarieum"
+      }
+    },
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.malum.earthen_spirit",
+      "item": {
+        "item": "malum:earthen_spirit"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.raw_malachite.text",
+      "condition": {
+        "type": "modonomicon:advancement",
+        "advancement_id": "spectrum:lategame/collect_malachite"
+      }
+    },
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.eidolon_repraised.death_essence",
+      "item": {
+        "item": "eidolon_repraised:death_essence"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.pure_malachite.text",
+      "condition": {
+        "type": "modonomicon:advancement",
+        "advancement_id": "spectrum:unlocks/malachite/malachite_tools"
+      }
+    },
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.malum.sacred_spirit",
+      "item": {
+        "item": "malum:sacred_spirit"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.raw_bloodstone.text",
+      "condition": {
+        "type": "modonomicon:advancement",
+        "advancement_id": "spectrum:pluck_resplendent_feather"
+      }
+    },
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.eidolon_repraised.magicians_wax",
+      "item": {
+        "item": "eidolon_repraised:magicians_wax"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.pure_bloodstone.text",
+      "condition": {
+        "type": "modonomicon:advancement",
+        "advancement_id": "spectrum:unlocks/resources/bloodstone"
+      }
+    },
+    {
+      "type": "modonomicon:spotlight",
+      "title": "item.enchanted.attuned_stone",
+      "item": {
+        "item": "enchanted:attuned_stone"
+      },
+      "text": "book.spectrum.guidebook.pastel_upgrades.transfer.resonance_shard.text",
+      "condition": {
+        "type": "modonomicon:advancement",
+        "advancement_id": "spectrum:lategame/strike_up_hummingstone_hymn"
+      }
+    }
+  ]
+}

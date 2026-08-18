@@ -170,6 +170,21 @@
 		""
 		"Так же можно накладывать улучшения на броню/инструменты"
 	]
+	quest.03ADE1ABC36DD1B1.quest_desc: [
+		"Actively requests items/fluid from other nodes and places them in its connected inventory, based on its <warning>filter</warning>."
+		""
+		"Request order:"
+		"1. <keyword>Sender Nodes</keyword>"
+		"2. <keyword>Provider Nodes</keyword>"
+		"3. <keyword>Storage Nodes</keyword>"
+		"{@pagebreak}"
+		"Активно запрашивает предметы/жидкости у других узлов согласно своему <warning>фильтру</warning> и кладёт их в подключённый инвентарь."
+		""
+		"Порядок запроса:"
+		"1. <keyword>Узлы отправки</keyword>"
+		"2. <keyword>Узлы поставки</keyword>"
+		"3. <keyword>Узлы хранения</keyword>"
+	]
 	quest.03FD9E737AD73A39.quest_desc: [
 		"The &#FEECD6Titrartion Barrel&r allows you to create &#9BB8EDalcoholic beverages&r and many other &#FEECD6dishes&r. There is one &nnuance&r - fermentation processes take &l&#FEECD6real hours&r or even &#FEECD6&ldays&r&r&r&r."
 		""
@@ -608,6 +623,7 @@
 		"You can also buy from <keyword>Wandering Trader</keyword>"
 	]
 	quest.1150D94139B83FBF.quest_desc: ["Now you can <positive>hot-swap armor</positive> by simply <positive>right-clicking</positive> it, or if you, fancy pants, want to have the whole hat-check room of armor, you can <positive>sneak right-click</positive> an <keyword>armor stand</keyword> to hot-swap the whole set!"]
+	quest.117BA19FF568DCC4.quest_desc: [""]
 	quest.11A8A041EB1774AA.quest_desc: [
 		"Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
 		""
@@ -1072,15 +1088,7 @@
 		"[ \"Если у вас появилась <warning>проблема</warning> или вы хотите предложить какую-то <positive>идею</positive>, вы всегда можете вступить в наш \", { \"text\": \"<magic>Discord</magic>\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://discord.com/invite/xAaFCCqKAn\" } }, \"! \" ]"
 	]
 	quest.1AE0400A3C0AF316.quest_desc: ["<keyword>Looks OP</keyword> for such an easy craft, so idk where to put it :p"]
-	quest.1B1D0B9C6ECDA107.quest_desc: [
-		"Actively requests items from other nodes and places them in its connected inventory, based on its <warning>filter</warning>."
-		""
-		"Request order:\n1. <keyword>Sender Nodes</keyword>\n2. <keyword>Provider Nodes</keyword>\n3. <keyword>Storage Nodes</keyword>"
-		"{@pagebreak}"
-		"Активно запрашивает предметы у других узлов согласно своему <warning>фильтру</warning> и кладёт их в подключённый инвентарь."
-		""
-		"Порядок запроса:\n1. <keyword>Узлы отправки</keyword>\n2. <keyword>Узлы поставки</keyword>\n3. <keyword>Узлы хранения</keyword>"
-	]
+	quest.1B1D0B9C6ECDA107.quest_desc: [""]
 	quest.1B46FCF75F842E87.quest_desc: [
 		"You can only obtain it by killing the <blood>Wither</blood> while under a <curse>curse</curse>!"
 		"{@pagebreak}"
@@ -1128,6 +1136,11 @@
 		"Найдите маленьких <soul>ghastly</soul> и приручите их, они помогут найти <named>Mansion</named>!"
 		""
 		"Для приручения используйте <positive>Crimson Roots</positive>"
+	]
+	quest.1DB9CB5ACE0B9455.quest_desc: [
+		"It works with both fluids and items at the same time!"
+		"{@pagebreak}"
+		"Работает как с жидкостями так и предметами одновременно!"
 	]
 	quest.1E0A4735FB02983C.quest_desc: [
 		"Stores <property>Chronon energy</property> for your devices. Keep it in your inventory or a &6Curios slot&r, and it will feed power to carried Tempad items automatically."
@@ -1324,6 +1337,11 @@
 	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is <warning>finite</warning>. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The <keyword>Vitaemancer</keyword> has devised Rituals to assist with focused training, and the <property>Ritual of Sentient Evolution</property> to imbue your armour with a greater capacity for growth. Stand upon the <named>Master Ritual Stone</named> while clad in <named>Sentient Armor</named>, and the circle pours its power into the symbiotic plates. The armour's potential <positive>expands</positive> beyond its former limits."]
 	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>slime</keyword>."]
+	quest.24AF6D706483C8CC.quest_desc: [
+		"It works with both fluids and items at the same time!"
+		"{@pagebreak}"
+		"Работает как с жидкостями так и предметами одновременно!"
+	]
 	quest.24D1B4E69FDDF397.quest_desc: [
 		"Cosmetic. Combine this with any item in the crafting grid to have it hang off of your broom."
 		"{@pagebreak}"
@@ -1748,6 +1766,11 @@
 	]
 	quest.31133967C7848E1E.quest_desc: ["Scribed with Kelp and awakened by Redstone Dust. Opens a vitaemantic current through the open column of air directly above the glyph, lifting or drowning any entity that enters. Right-click with an empty hand to reverse the flow; the array remembers its direction across world reloads. Strength scales with additional Redstone in the redstone slot (acceleration) and Kelp in the kelp slot (terminal velocity); right-click the array with more ingredients to stack them."]
 	quest.315C6C30D4EFB4FB.quest_desc: ["Hammers are important. You'll be using them early on in place of machines with Forge Hammers, but they have limited durability and they are not as resource-efficient."]
+	quest.315CF81B96F71B18.quest_desc: [
+		"It works with both fluids and items at the same time!"
+		"{@pagebreak}"
+		"Работает как с жидкостями так и предметами одновременно!"
+	]
 	quest.316DB511541398F4.quest_desc: [
 		"<keyword>Amalgam</keyword> spawns in <magic>Deeper Down dungeons</magic>."
 		""
@@ -2115,6 +2138,19 @@
 		"Once I have enough data on a specific poisonous ingredient, I can hold my <keyword>magnifying glass</keyword> in my hand and hover over it in my inventory to see what <property>affinity</property> this poisonous ingredient is associated with. Oh, the beautiful art of experimental science!"
 		"{@pagebreak}"
 		"Как только у меня будет достаточно данных об ингредиенте, я могу взять в руку <keyword>лупу</keyword> и посмотреть в своем инвентаре, с каким <property>свойством</property> ассоциируется этот ядовитый ингредиент. О, прекрасное искусство экспериментальной науки!"
+	]
+	quest.3BAAF056841417BE.quest_desc: [
+		"Actively tries to keep its connected inventory empty by pushing items/fluid out."
+		""
+		"Push order:"
+		"1. <keyword>Gather Nodes</keyword>"
+		"2. <keyword>Storage Nodes</keyword>"
+		"{@pagebreak}"
+		"Активно старается опустошить подключённый инвентарь, отправляя из него предметы/жидкости."
+		""
+		"Порядок отправки:"
+		"1. <keyword>Узлы сбора</keyword>"
+		"2. <keyword>Узлы хранения</keyword>"
 	]
 	quest.3BB0FE129E37B19E.title: "World Tier: Ascent"
 	quest.3BB8C6DBB6FE9970.quest_desc: [
@@ -2581,6 +2617,15 @@
 		"{@pagebreak}"
 		"Очень <positive>эффективный</positive> крючок для <named>ловли сокровищ</named>!"
 	]
+	quest.47856FF69B4F1E38.quest_desc: [
+		"Best used together with <keyword>Sender Nodes</keyword> (which push to it) and <keyword>Gather Nodes</keyword> (which pull from it)."
+		""
+		"Its <warning>filter</warning> controls which items/fluid it accepts and offers - leave it empty to store any item/fluid."
+		"{@pagebreak}"
+		"Лучше всего работает в паре с <keyword>узлом отправки</keyword> (кладёт в него предметы) и <keyword>узлом сбора</keyword> (забирает из него предметы)."
+		""
+		"Его <warning>фильтр</warning> определяет, какие предметы/жидкости он принимает и отдаёт - оставьте фильтр пустым, чтобы хранить любые предметы/жидкости."
+	]
 	quest.47DF3BB83B4C272F.quest_desc: ["Rune Slabs allow for a few useful rituals, but in this form they still do nothing. You will need to smash them with an anvil together with some other ingredient to infuse them first."]
 	quest.47ECA2AA01DBE0C5.quest_desc: [""]
 	quest.4821B8BFF0FEE06B.quest_desc: [
@@ -2780,6 +2825,11 @@
 		"Проведите ритуал \"Breaching the Edge of Demon Realm\" Чтобы открыть свой первый стартовый данж!"
 	]
 	quest.4AF78754EC20B0F6.title: "Breaching the Edge of Demon Realm"
+	quest.4B10B701EAED45E2.quest_desc: [
+		"It works with both fluids and items at the same time!"
+		"{@pagebreak}"
+		"Работает как с жидкостями так и предметами одновременно!"
+	]
 	quest.4B1F758CB8DB73F5.quest_desc: [
 		"The <keyword>Chalice</keyword> works like a <property>bottomless milk bucket</property>, <positive>curing you</positive> whenever you require. The <keyword>Lapis Lazuli Ritual</keyword> will grant you this boon."
 		"{@pagebreak}"
@@ -3167,19 +3217,7 @@
 	]
 	quest.5984DB66549B9040.quest_desc: ["<warning>Poison</warning>."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
-	quest.599C53FBB645B90E.quest_desc: [
-		"Actively tries to keep its connected inventory empty by pushing items out."
-		""
-		"Push order:"
-		"1. <keyword>Gather Nodes</keyword>"
-		"2. <keyword>Storage Nodes</keyword>"
-		"{@pagebreak}"
-		"Активно старается опустошить подключённый инвентарь, отправляя из него предметы."
-		""
-		"Порядок отправки:"
-		"1. <keyword>Узлы сбора</keyword>"
-		"2. <keyword>Узлы хранения</keyword>"
-	]
+	quest.599C53FBB645B90E.quest_desc: [""]
 	quest.5A09DD956F629AC5.quest_desc: [
 		"Can be found once per game by one player"
 		"{@pagebreak}"
@@ -3555,6 +3593,8 @@
 		"Nodes only interact with other nodes of the <keyword>same color</keyword> - painting them lets you run several separate networks close together without them mixing."
 		""
 		"<warning>Removing the redstone signal</warning> disables a node's function: <keyword>Gather Nodes</keyword> stop requesting, <keyword>Provider Nodes</keyword> stop offering, <keyword>Sender Nodes</keyword> stop pushing, and <keyword>Storage Nodes</keyword> can neither accept nor give items."
+		""
+		"<magic><b>Check out the list of node upgrades in the guidebook!</b></magic>"
 		"{@pagebreak}"
 		"<keyword>Пастельная сеть</keyword> - набор узлов, которые передают предметы <positive>без прямой видимости</positive> - куда лучшая альтернатива хопперам, вагонеткам и трубам."
 		""
@@ -3563,6 +3603,8 @@
 		"Узлы взаимодействуют только с узлами <keyword>того же цвета</keyword> - покрасив их, можно расположить рядом несколько отдельных сетей, не смешивая их между собой."
 		""
 		"<warning>Отключение редстоун-сигнала</warning> отключает функцию узла: <keyword>узлы сбора</keyword> перестают запрашивать предметы, <keyword>узлы поставки</keyword> перестают их предлагать, <keyword>узлы отправки</keyword> перестают отправлять предметы, а <keyword>узлы хранения</keyword> не могут ни принимать, ни отдавать предметы."
+		""
+		"<magic><b>Ознакомьтесь с списком улучшений для узлов в гайдбуке!</b></magic>"
 	]
 	quest.61DD20DF56A3CEDD.quest_desc: [
 		"<warning>Can be found once per game by one player"
@@ -3612,15 +3654,7 @@
 		""
 		"Имей ввиду, действия с конфликтующими зачарованиями &oбудут потреблять чуть больше опыта&r так же для этого &oнеобходима открытая глава в книге&r!"
 	]
-	quest.6270DCC59DA5FFB4.quest_desc: [
-		"Makes the items in its connected inventory available to the network."
-		""
-		"It does not push items itself - only <keyword>Gather Nodes</keyword> can request and pull them."
-		"{@pagebreak}"
-		"Делает предметы из подключённого инвентаря доступными для сети."
-		""
-		"Сам он ничего не отправляет - забрать предметы могут только <keyword>узлы сбора</keyword>."
-	]
+	quest.6270DCC59DA5FFB4.quest_desc: [""]
 	quest.62D095FE0536F7B7.quest_desc: [
 		"Now that I have a much more durable leather, I only need a very durable metal. The strongest I can find to withstand the chemicals. That's when I came across ancient debris. It's quite fitting it is deep within the bowels of the Nether."
 		""
@@ -3917,6 +3951,15 @@
 		"Периодически испускает <warning>импульс красного камня</warning>. Нажав <positive>ПКМ</positive>, вы можете изменить <keyword>длительность импульса</keyword>, а нажав <positive>Shift+ПКМ</positive> - <keyword>интервал между импульсами</keyword>."
 	]
 	quest.69418DE8B3EC2C19.quest_desc: ["An invisible ward that pushes hostile creatures away in a 5-block radius. Crafted from iron and lapis, accessible to apprentices."]
+	quest.695BD75871453E02.quest_desc: [
+		"Makes the items/fluid in its connected inventory available to the network."
+		""
+		"It does not push items/fluid itself - only <keyword>Gather Nodes</keyword> can request and pull them."
+		"{@pagebreak}"
+		"Делает предметы/жидкости из подключённого инвентаря доступными для сети."
+		""
+		"Сам он ничего не отправляет - забрать предметы/жидкости могут только <keyword>узлы сбора</keyword>."
+	]
 	quest.6972361CC8E0281E.quest_desc: ["большая хранилка Ambers, можно увеличить если дать эмбер вплоть до 1.440.000 вместимости."]
 	quest.69B63B5F93071543.quest_desc: [
 		"&#C6BCE9Constructor's Staff&r - a tool for placing blocks in a defined pattern by spending &3Cyan Ink&r. "
@@ -3968,15 +4011,7 @@
 		""
 		"The Gem Case fixes that by allowing you to stack these gems."
 	]
-	quest.6BE6570F75CC191A.quest_desc: [
-		"Best used together with <keyword>Sender Nodes</keyword> (which push to it) and <keyword>Gather Nodes</keyword> (which pull from it)."
-		""
-		"Its <warning>filter</warning> controls which items it accepts and offers - leave it empty to store any item."
-		"{@pagebreak}"
-		"Лучше всего работает в паре с <keyword>узлом отправки</keyword> (кладёт в него предметы) и <keyword>узлом сбора</keyword> (забирает из него предметы)."
-		""
-		"Его <warning>фильтр</warning> определяет, какие предметы он принимает и отдаёт - оставьте фильтр пустым, чтобы хранить любые предметы."
-	]
+	quest.6BE6570F75CC191A.quest_desc: [""]
 	quest.6C59597B8D81F454.title: "Copper"
 	quest.6C7B55F12C222907.quest_desc: [
 		"It's a &#FEECD6shovel&r, a &#9BB8EDpickaxe&r, an &#C7E2E9axe&r, and a &#CAE4C8hoe&r &nall in one&r. It's like a Swiss tool!"
@@ -4195,9 +4230,41 @@
 		"{image:milf:textures/quest_pic/dependencies_tip.png width:496 height:292 align:center fit:true}"
 	]
 	quest.70AB266645FE1C03.quest_desc: [
-		"A mod designed to encourage dietary variety! It does so by rewarding the player for eating a variety of foods instead of punishing them for failing to diversify. Instead of using the stick we use the carrot!"
+		"Nutritional tracks <keyword>what kinds</keyword> of food you eat, not just how much."
 		""
-		"In this modpack, only <keyword>rare and very filling food</keyword> will give you <warning>extra hearts</warning>! (Oh, and weird ones too, just to fulfill the sincere desire of your gourmet needs.)"
+		"• Every food falls into categories: <property>fruit, grain, protein, vegetable, dairy, and source</property>."
+		""
+		"• Each category has its own level from 0 to 100. Eating that food type raises it, eating other things lets it slowly decay."
+		""
+		"• Your overall diet tier (<keyword>malnourished, starving, surviving, nourished, gourmand</keyword>) depends on these levels and gives you passive bonuses or penalties - health, decay rate, etc."
+		""
+		"• Eating <warning>too little or too much</warning> of one category triggers extra effects - both good (strength, mana regen) and bad (weakness)."
+		""
+		"• Keep a high diet tier for several days in a row and you unlock a <property>permanent reward</property> that stays until your diet drops too low again."
+		""
+		"• Open the full nutrition screen through the radial menu(R button) to see all your levels and current tier."
+		""
+		"• The small icon next to your hotbar shows your current diet tier at a glance."
+		""
+		"In short: eat a <keyword>varied diet</keyword> to stay strong. Ignore one category for too long and you'll feel it."
+		"{@pagebreak}"
+		"Nutritional следит за тем, <keyword>что именно</keyword> ты ешь, а не только сколько."
+		""
+		"• Вся еда делится на категории: <property>фрукты, зерно, белок, овощи, молочное и исток</property>."
+		""
+		"• У каждой категории свой уровень от 0 до 100. Еда этого типа поднимает уровень, без неё он медленно падает."
+		""
+		"• Общий тир питания (<keyword>истощён, голодает, выживает, сыт, гурман</keyword>) зависит от этих уровней и даёт пассивные бонусы или штрафы - здоровье, скорость истощения и прочее."
+		""
+		"• Если <warning>сильно перебрать или недобрать</warning> по одной категории - срабатывают дополнительные эффекты, как хорошие (сила, реген маны), так и плохие (слабость)."
+		""
+		"• Продержи высокий тир питания несколько дней подряд - получишь <property>постоянную награду</property>, которая держится, пока тир не упадёт слишком низко."
+		""
+		"• Полный экран питания открывается через радиальное меню(кнопка R) - там видны все уровни и текущий тир."
+		""
+		"• Маленькая иконка рядом с хотбаром показывает твой текущий тир питания."
+		""
+		"Коротко: питайся <keyword>разнообразно</keyword>, чтобы быть сильным. Забьёшь на одну категорию надолго - почувствуешь это."
 	]
 	quest.70FAA49F0C768E38.quest_desc: [
 		"Unreasonably fast? Maybe."
@@ -4594,6 +4661,7 @@
 	reward.058FD5B700A2EB20.title: "Feet Trinket Slot"
 	reward.084C079A765DC32C.title: "Focus Trinket Slot"
 	reward.094072146D87AD84.title: "Pouch Trinket slot"
+	reward.0A58BA17068FCA2C.title: "New Radial Menu Button"
 	reward.0A8447D787E641E3.title: "Void Access "
 	reward.0DC1BAE9C1D023E7.title: "New loot in looting chests"
 	reward.0DC887212398806D.title: "Bronze Age"
@@ -4654,12 +4722,14 @@
 	task.020311F4DEE019DA.title: "Any #ytech:tanning_racks"
 	task.0231A968EC37120B.title: "Spectrum"
 	task.02CC9AB30304F2F4.title: "Any #milf:netherite_storage"
+	task.0363EC3EC77281B0.title: "Any #c:foods/raw_fish"
 	task.0499279911FFA20D.title: "Any #animal_pen:aviaries"
 	task.05F09C91C1D5D399.title: "Jump Over Fences"
 	task.0690302B69EE721E.title: "Any #pastel:colored_saplings"
 	task.0819CADADD969983.title: "Any #minecraft:logs"
 	task.08346CF6BB01116A.title: "Any #milf:notched_polished_block"
 	task.08DD73E0742DA0F8.title: "Any #milf:notched_polished_block"
+	task.08F06882A84D6604.title: "Storage Node"
 	task.0925CEA8A38CBB6C.title: "Any #milf:colored_lamp"
 	task.093F4052EBECED46.title: "Environmental Arrays"
 	task.09936E3502457C61.title: "Any #milf:colored_glowblock"
@@ -4698,6 +4768,7 @@
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.25E5275296A8B186.title: "Plant Mutations"
 	task.2629C2F369B3D084.title: "&#A39FE1PINGS!!! THEY'RE EVERYWHERE"
+	task.265ECF3473777E15.title: "Sender Node"
 	task.268D4F85B02495FD.title: "Xaeromap [WIP]"
 	task.2693375290DFFFE2.title: "<glitch>Hello World!"
 	task.271E89A2A2B37CFC.title: "Showcase Item"
@@ -4714,6 +4785,7 @@
 	task.2DD9CC89EC523943.title: "???"
 	task.2E27771C78B7E3E9.title: "Any #milf:phantom_frame"
 	task.2E5D24ACE6FAA580.title: "Any #milf:chiseled_base_blocks"
+	task.3100C06021B649A2.title: "Gather Node"
 	task.31969FC5A93B0C8B.title: "Any #neovitae:altar/runes_t1"
 	task.3198AD11970AE4C5.title: "Any #minecraft:planks"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
@@ -4799,12 +4871,13 @@
 	task.746ABC8ABB3E1BA3.title: "Specialisation"
 	task.76C88F3B61F626A4.title: "Discord"
 	task.76CE25E2E78A0201.title: "Any #milf:pedestal_basic"
+	task.771305FBBF6544AD.title: "Provider Node"
 	task.77B05217F3206FA8.title: "Crawl"
 	task.77C744B48E7A1B18.title: "Any #minecraft:beds"
 	task.77CF8D64718D9A67.title: "Vanilla items for spectrum progression"
 	task.78C5E8DD6BAEE398.title: "Any #milf:polished_gemstone_block"
 	task.7AE5252F3D792BCA.title: "Mouse Tweaks \\& More Mouse Tweaks"
-	task.7DFA2C0B9737E55D.title: "Spice of Life"
+	task.7DFA2C0B9737E55D.title: "Nutrition"
 	task.7EA81F98CCB0B5EE.title: "Upgrades"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"

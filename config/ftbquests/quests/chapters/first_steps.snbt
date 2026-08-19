@@ -2808,7 +2808,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -5688,6 +5688,146 @@
 			}]
 			x: 17.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["56E289A5D6AF4E43"]
+			entity_vis_size: 1.0f
+			id: "54512147F9EDF1B8"
+			tasks: [{
+				id: "6D922D9316605424"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cookingforblockheads:cooking_tables)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "farmersdelight:cooking_pot"
+			}
+			id: "56E289A5D6AF4E43"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "73BD50A4981DCB0F"
+					item: { count: 1, id: "farmersdelight:cooking_pot" }
+					type: "item"
+				}
+				{
+					id: "58F8D9B3EFE7535F"
+					item: { count: 1, id: "farmersdelight:stove" }
+					type: "item"
+				}
+			]
+			x: 19.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "4861F7678E9EBC07"
+			shape: "diamond"
+			tasks: [{
+				id: "64AEFFB84EDCD7B2"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cookingforblockheads:ovens)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "55DAB609AE18E051"
+			shape: "diamond"
+			tasks: [{
+				id: "4AE201E6C61E4159"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cookingforblockheads:fridges)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "334DE78CAF503048"
+			shape: "diamond"
+			tasks: [{
+				id: "635EE375C840D26B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cookingforblockheads:sinks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "71AF5D40C19C7E45"
+			shape: "diamond"
+			tasks: [{
+				id: "63EA140C1AB502BC"
+				item: { count: 1, id: "cookingforblockheads:cow_jar" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "5D3C356AC05EDE50"
+			shape: "diamond"
+			tasks: [{
+				count: 4L
+				id: "2116C5BA9924136B"
+				item: { count: 1, id: "cookingforblockheads:white_kitchen_floor" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "7EB255B87CD2864C"
+			shape: "diamond"
+			tasks: [{
+				id: "58C2F004B0078362"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cookingforblockheads:counters)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["54512147F9EDF1B8"]
+			entity_vis_size: 1.0f
+			id: "023749AF74F3A059"
+			shape: "diamond"
+			tasks: [{
+				id: "7B3544B20876E51B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(cookingforblockheads:connectors)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["56E289A5D6AF4E43"]
+			entity_vis_size: 1.0f
+			id: "2F988FC1DB4DEF86"
+			shape: "heart"
+			tasks: [{
+				id: "017C4A66930ED9EB"
+				item: { count: 1, id: "farmersdelight:skillet" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 3.0d
 		}
 	]
 }

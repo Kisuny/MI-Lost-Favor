@@ -2,32 +2,31 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            " C ",
-            " B ",
-            "   "
-        ],
-        key: {
-            C: { tag: "c:tools/cleaver" },
-            B: { item: "farmersdelight:cutting_board" }
-        },
-        outputItems: [[{ id: "cookingforblockheads:cutting_board" }, 1]],
-        removeRecipe: true
-    })
-
-    milfShaped(event, {
-        pattern: [
-            "PLP",
-            "PSP",
-            "WLW"
+            "SSS",
+            "PFP",
+            "PLP"
         ],
         key: {
             P: { item: "modern_industrialization:iron_plate" },
             L: { item: "modern_industrialization:iron_large_plate" },
-            W: { item: "modern_industrialization:electrum_wire" },
-            S: { item: "milf:steel_infused_glass" }
+            F: { item: "minecraft:furnace" },
+            S: { item: "minecraft:black_stained_glass" }
         },
         outputItems: [[{ id: "cookingforblockheads:white_oven" }, 1]],
         removeRecipe: true
+    })
+    milfShaped(event, {
+        pattern: [
+            " PW",
+            "PSP",
+            "WP "
+        ],
+        key: {
+            P: { item: "modern_industrialization:iron_plate" },
+            W: { item: "modern_industrialization:electrum_wire" },
+            S: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "cookingforblockheads:heating_unit" }, 1]]
     })
 
     milfShaped(event, {

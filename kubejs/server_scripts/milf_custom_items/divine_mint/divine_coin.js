@@ -117,7 +117,7 @@ NetworkEvents.dataReceived('milf_divine_coin_boss_particles', (event) => {
     let posVector = new Vec3d(spawnPos.getDouble("x"), spawnPos.getDouble("y") + 0.01, spawnPos.getDouble("z"))
 
     milfPlaySound(event, "fdbosses:geburah_sin_change", {pos: BlockPos.containing(posVector)})
-    event.getLevel().spawnParticles("companions:teddy_transformation_cloud", false, posVector.x(), posVector.y(), posVector.z(), 0, 0, 0, 1, 0)
+    event.getLevel().spawnParticles("minecraft:happy_villager", false, posVector.x(), posVector.y(), posVector.z(), 0, 0, 0, 1, 0)
 
 })
 

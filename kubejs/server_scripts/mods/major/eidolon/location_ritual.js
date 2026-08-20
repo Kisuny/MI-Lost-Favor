@@ -109,12 +109,6 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "companions_monkey_temple", pedestal_items: [
-                { "item": "minecraft:cocoa_beans" },
-                { "item": "enchanted:candelabra" },
-            ]
-        },
-        {
             id: "monastery", pedestal_items: [
                 { "item": "minecraft:goat_horn" },
                 { "item": "minecraft:red_terracotta" },

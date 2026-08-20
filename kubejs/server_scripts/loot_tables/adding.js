@@ -296,7 +296,6 @@ LootJS.modifiers(event => {
     event.addTableModifier("spectrum:chests/city_below/moonstone_temple_roof_ridge").addLoot("milf:holy_book_of_color").setCount([1, 1])
 
     const blaze_core_bosses = [
-        "companions:sacred_pontiff",
         "mythsandlegends:black_charro",
         "mowziesmobs:umvuthi",
         "mowziesmobs:frostmaw",

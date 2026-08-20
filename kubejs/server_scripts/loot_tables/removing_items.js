@@ -72,8 +72,6 @@ LootJS.modifiers(event => {
         { item_name: 'tide:obsidian_fragment' },
         { item_name: 'tide:fish_bone' },
         { item_name: 'minecraft:enchanting_table' },
-        { item_name: 'companions:book_magic_ray' },
-        { item_name: 'companions:book_black_hole' },
         { item_name: 'ars_nouveau:ritual_containment' },
         { item_name: /tide:.*_fishing_rod/, },
     ]

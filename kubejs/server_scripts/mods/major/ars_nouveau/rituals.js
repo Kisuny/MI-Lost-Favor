@@ -279,12 +279,6 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "companions:companions_monkey_temple", name: "companions_monkey_temple", augments: [
-                { "key": "minecraft:cocoa_beans" },
-                { "key": "enchanted:candelabra" },
-            ]
-        },
-        {
             id: "mowziesmobs:monastery", name: "monastery", augments: [
                 { "key": "minecraft:goat_horn" },
                 { "key": "minecraft:red_terracotta" },

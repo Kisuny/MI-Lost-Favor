@@ -9,6 +9,10 @@ const BLOCK_REPLACEMENTS = {
     'minecraft:iron_block': 'minecraft:raw_iron_block',
     'minecraft:gold_block': 'minecraft:raw_gold_block',
     'eidolon_repraised:crucible': 'minecraft:cauldron',
+    'farmersdelight:cutting_board': 'cookingforblockheads:cutting_board',
+    'farmersdelight:cooking_pot': 'grimoireofgaia:deco_mandragora_pot',
+    'farmersdelight:stove': 'cookingforblockheads:connector',
+    'aquaculture:tackle_box': 'supplementaries:flower_box',
     'minecraft:anvil' :  "minecraft:grindstone",
     'minecraft:chipped_anvil' : "minecraft:grindstone",
     'minecraft:damaged_anvil': "minecraft:grindstone"

@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             "ewe"
         ],
         key: {
-            q: { item:"immersiveengineering:component_electronic"},
+            q: { item:"oritech:machine_extender"},
             w: { item: "immersiveengineering:heavy_engineering"},
             e: { item: "modern_industrialization:rubber_sheet"},
         },

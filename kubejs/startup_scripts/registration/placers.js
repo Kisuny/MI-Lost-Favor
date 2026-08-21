@@ -298,6 +298,8 @@ registerPlacer("vacuum_freezer", "modern_industrialization", {
     langSuffix: { ru_ru: "вакуумного морозильника" }
 })
 
+//#region custom
+
 registerPlacer("enigma_machine", "modern_industrialization", {
     langSuffix: { ru_ru: "машины Энигма" }
 })
@@ -310,10 +312,15 @@ registerPlacer("steam_cracker", "modern_industrialization", {
     langSuffix: { ru_ru: "парового крекера" }
 })
 
-registerPlacer("desalter", "modern_industrialization", {
-    langSuffix: { ru_ru: "опреснителя" }
+registerPlacer("chemical_plant", "modern_industrialization", {
+    langSuffix: { }
 })
 
+// registerPlacer("desalter", "modern_industrialization", {
+//     langSuffix: { ru_ru: "опреснителя" }
+// })
+
+//#endregion
 //#endregion
 
 //#region mi_tweaks

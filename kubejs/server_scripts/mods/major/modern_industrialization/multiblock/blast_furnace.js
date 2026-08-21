@@ -74,6 +74,21 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineRecipe(event, {
+        energy: 25, time: 200, machine: "modern_industrialization:blast_furnace",
+        inputItems: [
+            [{ item: "modern_industrialization:coke_dust" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "modern_industrialization:methane" }, 250],
+            [{ fluid: "minecraft:water" }, 1000],
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:acetylene" }, 250]
+        ],
+        removeThisRecipeType: true
+    })
+
 
 
 })

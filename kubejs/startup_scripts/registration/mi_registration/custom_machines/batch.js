@@ -13,43 +13,6 @@ registerBatchMIMachineFromExisting('advanced_large_steam_furnace', {
     batchsize: 8, costMulti: 0.75
 })
 
-
-registerTieredMIMachine('large_electric_furnace', {
-    fromExisting: "modern_industrialization:mi_furnace",
-    casing: 'modern_industrialization:heatproof_machine_casing',
-    tiers: [
-        {
-            id: "large_electric_furnace_cupronickel_tier", name: "Cupronickel", casing: "heatproof_machine_casing",
-            shape: [['AAA', 'aaa', 'aaa', 'AAA'],
-            ['BAB', 'B B', 'B B', 'BAB'],
-            ['A#A', 'aaa', 'aaa', 'AAA']],
-            shapeKeys: {
-                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL },
-                "a": "modern_industrialization:cupronickel_coil",
-                "B": "modern_industrialization:invar_machine_casing_pipe"
-            },
-            workstationID: "modern_industrialization:bronze_mi_furnace",
-            batchsize: 8, costMulti: 1
-        },
-
-        {
-            id: "large_electric_furnace_kanthal_tier", name: "Kanthal", casing: "heatproof_machine_casing",
-            shape: [['AAA', 'aaa', 'aaa', 'AAA'],
-            ['BAB', 'B B', 'B B', 'BAB'],
-            ['A#A', 'aaa', 'aaa', 'AAA']],
-            shapeKeys: {
-                "A": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL },
-                "a": "modern_industrialization:kanthal_coil",
-                "B": "modern_industrialization:invar_machine_casing_pipe"
-            },
-            workstationID: "modern_industrialization:bronze_mi_furnace",
-            batchsize: 16, costMulti: 1.2
-        },
-
-    ],
-    mainCasing: 'heatproof_machine_casing', mainOverlays: 'mi_furnace', frontOverlay: true
-})
-
 registerBatchMIMachineFromExisting('advanced_steam_blast_furnace', {
     steam: true, casing: 'steel_plated_bricks', recipeType: "modern_industrialization:blast_furnace",
     emiWorkstations: ["modern_industrialization:steam_blast_furnace"],

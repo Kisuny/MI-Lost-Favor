@@ -9,7 +9,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const iePressRecipe = (event, args) => {
+function iePressRecipe(event, args) {
     let recipe = {
         type: "immersiveengineering:metal_press",
         energy: args.energy || 3200,
@@ -80,11 +80,7 @@ ServerEvents.recipes(event => {
         })
     }
 
-    function aePressBlueprintRecipe(blueprint, bpTier, color) {
-        pressBlueprintRecipe(blueprint, bpTier, color, bpTier)
-    }
-
-    function pressBlueprintRecipe(mold, bpTier, color, name) {
+    function pressBlueprintRecipe(mold, blueprintItem) {
         event.custom({
             type: "immersiveengineering:metal_press",
             energy: 3200,
@@ -93,52 +89,30 @@ ServerEvents.recipes(event => {
                 count: 1
             },
             mold: mold,
-            result: {
-                id: "immersiveengineering:blueprint",
-                count: 1,
-                components: { "immersiveengineering:blueprint": bpTier, "minecraft:item_name": "{'text':'" + name + "','color':'" + color + "'}" }
-            }
-        });
-    }
-
-    function pressBlueprintRecipeWithInput(mold, input, bpTier, color, name) {
-        event.custom({
-            type: "immersiveengineering:metal_press",
-            energy: 3200,
-            input: {
-                basePredicate:{item: input},
-                count: 1
-            },
-            mold: mold,
-            result: {
-                id: "immersiveengineering:blueprint",
-                count: 1,
-                components: { "immersiveengineering:blueprint": bpTier, "minecraft:item_name": "{'text':'" + name + "','color':'" + color + "'}" }
-            }
+            result: blueprintItem
         })
     }
+    // aePressBlueprintRecipe("milf:mysterious_blueprint", MILF_BLUEPRINTS.tier1AE, '#84b9ff')
+    // aePressBlueprintRecipe("milf:storage_blueprint", MILF_BLUEPRINTS.tier2AE, '#fff678')
+    // aePressBlueprintRecipe("milf:automation_blueprint", MILF_BLUEPRINTS.tier3AE, '#8de8ff')
+    // aePressBlueprintRecipe("milf:quantum_blueprint", MILF_BLUEPRINTS.tier4AE, '#c795ff')
+    // aePressBlueprintRecipe("milf:divine_blueprint", MILF_BLUEPRINTS.tier5AE, '#abffc0')
 
-    aePressBlueprintRecipe("milf:mysterious_blueprint", MILF_BLUEPRINTS.tier1AE, '#84b9ff')
-    aePressBlueprintRecipe("milf:storage_blueprint", MILF_BLUEPRINTS.tier2AE, '#fff678')
-    aePressBlueprintRecipe("milf:automation_blueprint", MILF_BLUEPRINTS.tier3AE, '#8de8ff')
-    aePressBlueprintRecipe("milf:quantum_blueprint", MILF_BLUEPRINTS.tier4AE, '#c795ff')
-    aePressBlueprintRecipe("milf:divine_blueprint", MILF_BLUEPRINTS.tier5AE, '#abffc0')
-
-    pressBlueprintRecipe("modern_industrialization:guidebook", MILF_BLUEPRINTS.usefulTools, '#ccac7c', MILF_BLUEPRINTS.usefulTools)
-    pressBlueprintRecipe("modern_industrialization:analog_circuit", MILF_BLUEPRINTS.miBasicComponents, '#F06E28', MILF_BLUEPRINTS.miBasicComponents)
-    pressBlueprintRecipe("modern_industrialization:electronic_circuit", MILF_BLUEPRINTS.miComponents, '#28B1F0', MILF_BLUEPRINTS.miComponents)
+    pressBlueprintRecipe("modern_industrialization:guidebook", MILF_BLUEPRINTS.getAsItem.usefulTools)
+    pressBlueprintRecipe("modern_industrialization:analog_circuit", MILF_BLUEPRINTS.getAsItem.miBasicComponents)
+    pressBlueprintRecipe("modern_industrialization:electronic_circuit", MILF_BLUEPRINTS.getAsItem.miComponents)
 
     // processors
-    aePressRecipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);
-    aePressRecipe([{"tag": "c:ingots/gold"}, 2], [{id :"ae2:printed_logic_processor"}, 1], "ae2:logic_processor_press", 3200);
-    aePressRecipe([{"tag": "c:gems/certus_quartz"}, 2], [{id :"ae2:printed_calculation_processor"}, 1], "ae2:calculation_processor_press", 3200);
-    aePressRecipe([{"tag": "c:ingots/aluminum"}, 2], [{id :"ae2:printed_engineering_processor"}, 1], "ae2:engineering_processor_press", 3200);
-    aePressRecipe([{"item": "advanced_ae:quantum_alloy"}, 2], [{id :"advanced_ae:printed_quantum_processor"}, 1], "advanced_ae:quantum_processor_press", 3200);
-    aePressRecipe([{"item": "megacells:sky_steel_ingot"}, 2], [{id :"megacells:printed_accumulation_processor"}, 1], "megacells:accumulation_processor_press", 3200);
+    // aePressRecipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);
+    // aePressRecipe([{"tag": "c:ingots/gold"}, 2], [{id :"ae2:printed_logic_processor"}, 1], "ae2:logic_processor_press", 3200);
+    // aePressRecipe([{"tag": "c:gems/certus_quartz"}, 2], [{id :"ae2:printed_calculation_processor"}, 1], "ae2:calculation_processor_press", 3200);
+    // aePressRecipe([{"tag": "c:ingots/aluminum"}, 2], [{id :"ae2:printed_engineering_processor"}, 1], "ae2:engineering_processor_press", 3200);
+    // aePressRecipe([{"item": "advanced_ae:quantum_alloy"}, 2], [{id :"advanced_ae:printed_quantum_processor"}, 1], "advanced_ae:quantum_processor_press", 3200);
+    // aePressRecipe([{"item": "megacells:sky_steel_ingot"}, 2], [{id :"megacells:printed_accumulation_processor"}, 1], "megacells:accumulation_processor_press", 3200);
 
     //custom stuff
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:cell_half"}, 1], "milf:cell_press", 3200);
-    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:hemispherical_press_mold", 3200);
+    //aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:hemispherical_press_mold", 3200);
 
     iePressRecipe(event, {
         inputItems:[[{"tag": "minecraft:logs"}, 3]],
@@ -168,12 +142,12 @@ ServerEvents.recipes(event => {
         energy: 3200,
     })
 
-    iePressRecipe(event, {
-        inputItems: [[{ "item": "knightlib:small_essence" }, 4]],
-        outputItems: [[{ id: "knightlib:great_essence" }, 1]],
-        mold: { item: "immersiveengineering:mold_packing_4" },
-        energy: 3200,
-    })
+    // iePressRecipe(event, {
+    //     inputItems: [[{ "item": "knightlib:small_essence" }, 4]],
+    //     outputItems: [[{ id: "knightlib:great_essence" }, 1]],
+    //     mold: { item: "immersiveengineering:mold_packing_4" },
+    //     energy: 3200,
+    // })
 
     iePressRecipe(event, {
         inputItems: [[{ "item": "grimoireofgaia:experience_iron" }, 4]],

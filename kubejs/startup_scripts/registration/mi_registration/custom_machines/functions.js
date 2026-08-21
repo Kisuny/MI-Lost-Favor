@@ -6,6 +6,7 @@ let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
 let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
 
 global.miTweaksTags = global.miTweaksTags || []
+global.miTweaksMachinesData = global.miTweaksMachinesData || []
 
 const machineTiersAll = ["bronze", "steel", "electric"]
 
@@ -153,7 +154,10 @@ function registerSingleMIMachine(id, args){
         ) 
     })
     args.tiers.forEach(tier =>{
-        if (tier == "electric") return
+        if (tier == "electric") {
+            //milfData.addCredit(`${id}`, "mi_machine", "modern_industrialization")
+            return
+        }
         milfData.addCredit(`${tier}_${id}`, "mi_machine", "modern_industrialization")
     })
     
@@ -180,73 +184,6 @@ function registerSinglePowerlessMIMachine(id, args){
     jsonDataForMITweaksMachine(id, args)
 }
 
-// registerTestMIMachine('test', {
-//     itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true, casing: 'heatproof_machine_casing',
-//     shape: [['HHH', 'aaa', 'AaA', 'AaA'],
-//     ['HHH', 'a a', 'A A', 'AAA'],
-//     ['BAB', 'B#B', 'BAB', 'BAB']],
-//     shapeKeys: {
-//         "A": "modern_industrialization:heatproof_machine_casing",
-//         "a": "modern_industrialization:cupronickel_coil",
-//         "B": "modern_industrialization:invar_machine_casing_pipe",
-//         "H": { id: "modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES.ALL }
-//     },
-//     pBar: { x: 77, y: 33, name: 'arrow' },
-//     itemInputSlots: [[56, 35, 1, 2]],
-//     itemOutputSlots: [[102, 35, 1, 1]],
-//     fluidInputSlots: [[36, 35, 1, 1]],
-//     fluidOutputSlots: [[122, 35, 1, 1]],
-//     mainCasing: 'heatproof_machine_casing', mainOverlays: 'coke_oven', frontOverlay: true
-// })
-
-// function registerTestMIMachine(id, args) {
-//     let recipe
-//     MIMachineEvents.registerRecipeTypes(event => {
-//         recipe = event.register(id)
-//         args.itemsIn && (recipe = recipe.withItemInputs())
-//         args.itemsOut && (recipe = recipe.withItemOutputs())
-//         args.fluidsIn && (recipe = recipe.withFluidInputs())
-//         args.fluidsOut && (recipe = recipe.withFluidOutputs())
-//     })
-//     MIMachineEvents.registerMachines(event => {
-//         let shape = event.layeredShape(args.casing, args.shape)
-//         Object.entries(args.shapeKeys).forEach(([key, block]) => {
-//             let actualBlock = (typeof block === "string") ? block : block.id
-//             shape = shape.key(key, $SimpleMember.forBlockState(Block.getBlock("minecraft:oak_stairs")
-//             .getStateDefinition().getPossibleStates().getLast()), 
-//             block.hatches ? event.hatchOf(block.hatches) : event.noHatch()
-//         )
-//         })
-//         shape = shape.build()
-//         const multiTypeFunction = args.steam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
-//         multiTypeFunction.apply(event, [
-//             args.customName || idToName(id), id, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
-//             itemInputs => {
-//                 if (!args.itemInputSlots) { return itemInputs }
-//                 args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
-//                 return itemInputs
-//             },
-//             itemOutputs => {
-//                 if (!args.itemOutputSlots) { return itemOutputs }
-//                 args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
-//                 return itemOutputs
-//             },
-//             fluidInputs => {
-//                 if (!args.fluidInputSlots) { return fluidInputs }
-//                 args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
-//                 return fluidInputs
-//             },
-//             fluidOutputs => {
-//                 if (!args.fluidOutputSlots) { return fluidOutputs }
-//                 args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
-//                 return fluidOutputs
-//             },
-//             args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
-//         ])
-//     })
-//     milfData.addCredit(`${id}`, "mi_machine", "modern_industrialization")
-// }
-
 function registerMIMachine(id, args){
     registerMIMultiblock(MIMachineEvents, "registerMachines", id, args,
         (event, isSteam) => isSteam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
@@ -272,6 +209,42 @@ function registerBatchMIMachine(id, args){
     jsonDataForMITweaksMachine(id, args)
 }
 
+function TieredBatchMachineTooltipBuilder(machineId){
+    this.machineId = machineId
+
+    this.tiers = {}
+
+    this.addTier = function (tierId, batchSize, euMultiplier){
+        this.tiers[tierId] = {
+            batchSize: batchSize,
+            euMultiplier: euMultiplier
+        }
+
+        return {
+            addTier: this.addTier,
+            tiers: this.tiers,
+            machineId: this.machineId,
+            build: this.build,
+
+            asBatchOf: (recipeMachineId) => {
+                this.tiers[tierId].recipeMachineId = recipeMachineId
+
+                return this
+            }
+        }
+    }
+
+    this.build = function(){
+        let tooltipData = {}
+        tooltipData[this.machineId] = this.tiers
+        return tooltipData
+    }
+
+    return this
+}
+
+global.miTweaksTieredBatchMachineTooltips = global.miTweaksTieredBatchMachineTooltips || {}
+global.miProxyableMachineRecipeTypes = global.miProxyableMachineRecipeTypes || {}
 function registerTieredMIMachine(id, args){
     registerMIRecipeType(id, args)
 
@@ -281,12 +254,37 @@ function registerTieredMIMachine(id, args){
         registerMIRecipeType(tier.id, tierRecipe)
     })
 
+    let batchTooltipBuilder = new TieredBatchMachineTooltipBuilder(id)
+
     MITweaksMachineEvents.registerTieredMultiblocks(event => {
         let tiersArray = []
         args.tiers.forEach(tierArgs => {
-            let recipeType = miRecipeRegistry[tierArgs.id] || miRecipeRegistry[id]
+            let registeredTierRecipeType = miRecipeRegistry[tierArgs.id]
+            let recipeType = registeredTierRecipeType
+                || (tierArgs.fromExisting && event.getRecipeType(tierArgs.fromExisting))
+                || (args.fromExisting && event.getRecipeType(args.fromExisting))
+                || miRecipeRegistry[id]
+
+            //a bandaid, but there's currently no other way that I know of to make this work, so I don't care ( ⓛ ω ⓛ )
+            if (registeredTierRecipeType && tierArgs.fromExisting){
+                global.miProxyableMachineRecipeTypes[`modern_industrialization:${tierArgs.id}`] = tierArgs.fromExisting
+            }
+
+            let batchMachineId = ((tierArgs.fromExisting || args.fromExisting)) || null
+
+            if (tierArgs.batchsize) {
+                let tierBuilder = batchTooltipBuilder.addTier(tierArgs.id, tierArgs.batchsize, tierArgs.costMulti || 1)
+
+                if (batchMachineId) {
+                    tierBuilder.asBatchOf(tierArgs.reiCategory || batchMachineId)
+                }
+            }
+
             let shape = buildMachineShape(event, tierArgs)
-            if (args.fromExisting) recipeType = event.getRecipeType(args.fromExisting)
+
+            //let recipeType = miRecipeRegistry[tierArgs.id] || miRecipeRegistry[id]
+            // if (args.fromExisting) recipeType = event.getRecipeType(args.fromExisting)
+            // if (tierArgs.fromExisting) recipeType = event.getRecipeType(tierArgs.fromExisting)
             tiersArray.push(event.createTier(
                 tierArgs.id,
                 recipeType,
@@ -336,6 +334,9 @@ function registerTieredMIMachine(id, args){
         }
 
     })
+
+    global.miTweaksTieredBatchMachineTooltips = Object.assign({}, global.miTweaksTieredBatchMachineTooltips, batchTooltipBuilder.build())
+
     jsonDataForMITweaksTieredMachine(id, args)
 }
 
@@ -374,6 +375,20 @@ function jsonDataForMITweaksMachine(machineId, args){
     global.langCustomStuff[`rei_categories.mi_tweaks.${machineId}`] = Object.assign({ "en_us": idToName(machineId)})
     milfData.addCredit(`${machineId}`, "mi_machine", "mi_tweaks")
     global.miTweaksTags.push(`mi_tweaks:${machineId}`)
+    global.miTweaksMachinesData[machineId] = {
+        //blockStates: {},
+        model: {
+            block: {
+                frontOverlay: args.frontOverlay,
+                topOverlay: args.topOverlay,
+                sideOverlay: args.sideOverlay,
+                mainCasing: mainCasing,
+                mainOverlays: mainOverlays
+            },
+            //item: {}
+        },
+        //lootTable: {}
+    }
     return
     let blockstatesPath = `kubejs/assets/mi_tweaks/blockstates/${machineId}.json`
     let blockstatesJson = {

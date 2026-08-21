@@ -47,14 +47,28 @@ registerTieredMIMachine('machine_assembler', {
         {
             id: "basic_machine_assembler", name: "Basic Tier", casing: "machine_plating_block",
             shape: [['AAA', 'aBa', 'AAA'],
-            ['AAA', 'B B', 'AAA'],
-            ['AAA', 'a#a', 'AAA']],
+                ['AAA', 'BbB', 'AAA'],
+                ['AAA', 'a#a', 'AAA']],
             shapeKeys: {
-                "A": { id: "oritech:machine_plating_block", hatches: MI_HATCHES.ITEM.concat(MI_HATCHES.INPUT.ENERGY) },
-                "a": "immersiveengineering:light_engineering",
-                "B": "immersiveengineering:logic_unit"
+                "A": {
+                    "id": "oritech:machine_plating_block",
+                    "hatches": MI_HATCHES.ITEM.concat(MI_HATCHES.INPUT.ENERGY)
+                },
+                "a": {
+                    "id": "immersiveengineering:light_engineering",
+                    "hatches": null
+                },
+                "B": {
+                    "id": "xkdeco:factory_vent_fan",
+                    "hatches": null
+                },
+                "b": {
+                    "id": "oritech:machine_extender",
+                    "hatches": null,
+                    "stateProperties": "{addon_used:\"false\"}"
+                }
             },
-            workstationID: "oritech:machine_plating_block",
+            workstationID: "oritech:machine_extender",
             maxBaseEU: 33,
             recipe: { itemsIn: true, itemsOut: true}
         },
@@ -69,7 +83,7 @@ registerTieredMIMachine('machine_assembler', {
             shapeKeys: {
                 "A": {
                     "id": "oritech:machine_plating_block",
-                    "hatches": MI_HATCHES.ITEM.concat(MI_HATCHES.INPUT.ENERGY)
+                    "hatches": MI_HATCHES.ALL
                 },
                 "a": {
                     "id": "immersiveengineering:logic_unit",
@@ -84,7 +98,7 @@ registerTieredMIMachine('machine_assembler', {
                     "hatches": null
                 },
                 "C": {
-                    "id": "immersiveengineering:steel_scaffolding_standard",
+                    "id": "xkdeco:factory_vent_fan",
                     "hatches": null
                 },
                 "c": {
@@ -115,6 +129,7 @@ registerTieredMIMachine('machine_assembler', {
 
     pBar: { x: 54, y: 69, name: 'square' },
     itemInputSlots: [[20, 35, 2, 2], [74, 35, 2, 2], [20, 89, 2, 2], [74, 89, 2, 2]],
+    //fluidInputSlots: [[29, 71, 1, 1], [56, 44, 1, 1], [83, 71, 1, 1], [56, 98, 1, 1]],
     itemOutputSlots: [[56, 71, 1, 1]],
     mainCasing: 'light_engineering', mainOverlays: 'multiblock_packer', frontOverlay: true
 })

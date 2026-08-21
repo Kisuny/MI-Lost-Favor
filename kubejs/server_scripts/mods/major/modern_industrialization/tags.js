@@ -6,7 +6,7 @@ ServerEvents.tags('item', event => {
     ])
 
     const modIngredient = Ingredient.of(`@modern_industrialization | @extended_industrialization`)
-    const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot", "crushed_dust"].join("|")
+    const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot", "crushed_dust", "cable"].join("|")
 
     const pattern = $patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)
     modIngredient.stacks.toList().forEach((itemStack) => {
@@ -22,6 +22,12 @@ ServerEvents.tags('item', event => {
         'modern_industrialization:coke', 
         'modern_industrialization:coke_block', 
         'modern_industrialization:coke_dust', 
+    ])
+
+    event.add('milf:mi_gates', [
+        'modern_industrialization:and_gate',
+        'modern_industrialization:or_gate',
+        'modern_industrialization:not_gate',
     ])
 
     event.add('c:hammers', [

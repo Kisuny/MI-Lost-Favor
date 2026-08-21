@@ -268,19 +268,6 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "oritech:enderic_lens" }, 1],
-            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
-            [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
-            [{ "item": "milf:lens" }, 2],
-        ],
-        outputItems: [[{ "item": "milf:rangefinder" }]],
-        category: MILF_BLUEPRINTS.miComponents,
-        removeRecipe: true
-    })
-
-
-    ieBlueprintRecipe(event, {
-        inputItems: [
             [{ "item": "modern_industrialization:motor" }, 3],
             [{ "item": "modern_industrialization:steel_large_plate" }, 1],
             [{ "item": "modern_industrialization:steel_gear" }, 1],
@@ -319,19 +306,58 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    // ieBlueprintRecipe(event, {
-    //     inputItems: [
-    //         [{ "tag": "c:bolts/steel" }, 1],
-    //         [{ "tag": "c:plates/aluminum" }, 2],
-    //         [{ "item": "modern_industrialization:analog_circuit" }, 1],
-    //         [{ "item": "milf:cd" }, 1],
-    //         [{ "item": "modern_industrialization:motor" }, 1],
-    //         [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
-    //     ],
-    //     outputItems: [[{ "item": "milf:cd_reader" }]],
-    //     category: MILF_BLUEPRINTS.miComponents,
-    //     removeRecipe: true
-    // })
-
     //#endregion
+
+    //#region 
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
+            [{ "item": "oritech:machine_ultimate_addon" }, 1],
+            [{ "item": "milf:cd" }, 1],
+            [{ "item": "modern_industrialization:motor" }, 1],
+            [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
+        ],
+        outputItems: [[{ "item": "milf:cd_reader" }]],
+        category: MILF_BLUEPRINTS.tier2AE,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:adamant_machine_casing" }, 1],
+            [{ "item": "modern_industrialization:adamant_curved_plate" }, 4],
+            [{ "item": "modern_industrialization:certus_quartz_plate" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:hardened_machine_casing" }]],
+        category: MILF_BLUEPRINTS.tier2AE,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:electronic_circuit" }, 1],
+            [{ item: "modern_industrialization:electrum_fine_wire" }, 4],
+            [{ item: "modern_industrialization:silicon_steel_plate" }, 4]
+        ],
+        outputItems: [
+            [{ item: "milf:blank_card" }]
+        ],
+        category: MILF_BLUEPRINTS.tier2AE,
+        removeRecipe: true
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ item: "immersiveengineering:storage_steel" }, 4],
+            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 4]
+        ],
+        outputItems: [
+            [{ item: "milf:cell_press" }]
+        ],
+        category: MILF_BLUEPRINTS.tier2AE,
+        removeRecipe: true
+    })
+
+    //$endregion
 })

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "mi_tweaks:electric_coke_oven"
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "mi_tweaks:blocks/electric_coke_oven"
+}

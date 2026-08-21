@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+    //#region basic tier
 
     miMachineRecipe(event, {
         energy: 1, time: 1200, machine: "modern_industrialization:microbial_fabricator_basic",
@@ -81,6 +82,44 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    //#endregion
+
+    //#region bioresistant tier
+
+    miMachineRecipe(event, {
+        energy: 44, time: 200, machine: "modern_industrialization:microbial_fabricator_bioresistant",
+        inputItems: [
+            [{ item: "ae2:charged_certus_quartz_crystal" }, 1, 0.43],
+            [{ item: "milf:space_hive" }, 1, 0],
+            [{ item: "ae2:charged_certus_quartz_crystal" }, 1, 0.54],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 75, 0.23],
+            [{ fluid: "milf:alien_goo" }, 75, 0.36],
+        ],
+        outputItems: [
+            [{ item: "milf:space_hive" }, 1, 0.1],
+        ],
+        custom_condition: "microbial_fabricator"
+    })
+
+    miMachineRecipe(event, {
+        energy: 44, time: 700, machine: "modern_industrialization:microbial_fabricator_bioresistant",
+        inputItems: [
+            [{ item: "oritech:biomass_block" }, 1, 0.93],
+            [{ item: "milf:space_hive" }, 1, 0],
+            [{ item: "oritech:biomass_block" }, 1, 0.84],
+        ],
+        inputFluids: [
+            [{ fluid: "oritech:still_biofuel" }, 75, 0.23],
+            [{ fluid: "oritech:still_biofuel" }, 75, 0.36],
+        ],
+        outputFluids: [
+            [{ fluid: "milf:alien_goo" }, 200],
+        ],
+        custom_condition: "microbial_fabricator"
+    })
+
     miMachineRecipe(event, {
         energy: 61, time: 200, machine: "modern_industrialization:microbial_fabricator_bioresistant",
         inputItems: [
@@ -95,6 +134,38 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "oritech:enderic_compound" }, 1]],
         //custom_condition: "tier_gated"
     })
+
+    miMachineRecipe(event, {
+        energy: 66, time: 400, machine: "modern_industrialization:microbial_fabricator_bioresistant",
+        inputItems: [
+            [{ item: "oritech:enderic_compound" }, 1, 0.71],
+            [{ item: "minecraft:amethyst_shard" }, 2],
+            [{ item: "oritech:enderic_compound" }, 1, 0.84],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 500, 0.83],
+            [{ fluid: "milf:alien_goo" }, 500, 0.75],
+        ],
+        outputItems: [[{ item: "minecraft:echo_shard" }, 1, 0.74]],
+        //custom_condition: "tier_gated"
+    })
+
+    miMachineRecipe(event, {
+        energy: 66, time: 100, machine: "modern_industrialization:microbial_fabricator_bioresistant",
+        inputItems: [
+            [{ item: "minecraft:deepslate" }, 1, 0.71],
+            [{ item: "milf:space_hive" }, 1, 0],
+            [{ item: "minecraft:deepslate" }, 1, 0.84],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 100, 0.53],
+            [{ fluid: "milf:alien_goo" }, 100, 0.45],
+        ],
+        outputItems: [[{ item: "ae2:sky_stone_block" }, 2, 0.72]],
+        //custom_condition: "tier_gated"
+    })
+
+    //#endregion
 
 })
 

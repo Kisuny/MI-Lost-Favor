@@ -10,7 +10,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
+function ieCrusherRecipe (event, args) {
     let recipe = {
         type: "immersiveengineering:crusher",
         input: args.inputItems[0][0],
@@ -53,7 +53,7 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
 
 ServerEvents.recipes(event => {
 
-    ieCrusherCraft(event,{
+    ieCrusherRecipe(event,{
         inputItems:[[{"tag": "c:sandstone/uncolored_blocks"}]],
         outputItems:[
             [{item: "minecraft:sand"}, 2],
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         compatTier:"steel",
     })
 
-    ieCrusherCraft(event,{
+    ieCrusherRecipe(event,{
         inputItems:[[{"tag": "c:sandstone/red_blocks"}]],
         outputItems:[
             [{item: "minecraft:red_sand"}, 2],
@@ -71,24 +71,24 @@ ServerEvents.recipes(event => {
         compatTier:"steel",
     })
 
-    ieCrusherCraft(event,{
+    ieCrusherRecipe(event,{
         inputItems:[[{"item": "extendedae:entro_crystal"}]],
         outputItems:[[{item: "extendedae:entro_dust"}, 1]],
         compatTier: "electric",
     })
 
-    ieCrusherCraft(event,{
+    ieCrusherRecipe(event,{
         inputItems:[[{"item": "advanced_ae:shattered_singularity"}]],
         outputItems:[[{item: "advanced_ae:quantum_infused_dust"}, 2]],
         compatTier: "electric",
     })
 
-    ieCrusherCraft(event,{
+    ieCrusherRecipe(event,{
         inputItems:[[{"item": "modern_industrialization:fire_clay_brick"}]],
         outputItems:[[{item: "modern_industrialization:fire_clay_dust"}, 1]],
     })
 
-    ieCrusherCraft(event, {
+    ieCrusherRecipe(event, {
         inputItems: [[{ tag: "c:ender_pearls" }]],
         outputItems: [[{ item: "ae2:ender_dust" }, 1]],
         removeRecipe:true
@@ -101,13 +101,13 @@ ServerEvents.recipes(event => {
         if (rjson.result.id.split(":")[0] == "ae2") return
         if (Array.isArray(rjson.ingredient)) {
             rjson.ingredient.forEach(ing =>{
-                ieCrusherCraft(event, {
+                ieCrusherRecipe(event, {
                     inputItems: [[ing]],
                     outputItems: [[{item:rjson.result.id}, Math.floor(rjson.result.count / 2)], [{item:rjson.result.id}, 1, 0.5]]
                 })
             })
         } else {
-            ieCrusherCraft(event, {
+            ieCrusherRecipe(event, {
                 inputItems: [rjson.ingredient],
                 outputItems: [[{item:rjson.result.id}, Math.floor(rjson.result.count / 2)], [{item:rjson.result.id}, 1, 0.5]]
             })
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
     const oresToChange = ['iron', 'gold', 'copper', 'tin', 'lead']
     oresToChange.forEach(ore =>{
 
-        ieCrusherCraft(event,{
+        ieCrusherRecipe(event,{
             inputItems:[[{tag:`c:raw_materials/${ore}`}]],
             outputItems:[
                 [{item:`milf:crushed_${ore}`}, 2],

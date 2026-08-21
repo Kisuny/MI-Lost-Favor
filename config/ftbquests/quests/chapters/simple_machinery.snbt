@@ -13,8 +13,8 @@
 		image: "milf:textures/quest_pic/saetactually.png"
 		rotation: 0.0d
 		width: 2.0d
-		x: -17.108169275696d
-		y: 6.865855377589007d
+		x: -17.1d
+		y: 7.457142857142848d
 	}]
 	order_index: 1
 	quest_links: [
@@ -94,11 +94,11 @@
 				item: { count: 1, id: "sfm:cable" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 19.5d
+			x: -14.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["09B3D8B6687BF6CD"]
+			dependencies: ["56E3EA39BC92CB8A"]
 			entity_vis_size: 1.0f
 			id: "682A5ADBA0B7FF36"
 			rewards: [
@@ -158,14 +158,14 @@
 				}
 			]
 			shape: "heart"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "69A1F29004AF8523"
 				item: { count: 1, id: "sfm:manager" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: 15.5d
+			x: -13.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7F7B0FF0BAC90638"]
@@ -177,8 +177,8 @@
 				item: { count: 1, id: "sfm:disk" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: 20.0d
+			x: -13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["682A5ADBA0B7FF36"]
@@ -190,20 +190,20 @@
 				item: { count: 1, id: "sfm:labelgun" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: 17.5d
+			x: -14.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6F16E9EA931A2F69"]
 			entity_vis_size: 1.0f
 			id: "7F7B0FF0BAC90638"
-			shape: "heart"
+			shape: "diamond"
 			tasks: [{
 				id: "37E4333D9D7C89EF"
 				type: "checkmark"
 			}]
-			x: -11.5d
-			y: 19.0d
+			x: -13.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -219,8 +219,8 @@
 				item: { count: 1, id: "sfm:water_tank" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 19.5d
+			x: -13.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -2117,6 +2117,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["35EF7AFBE2D4245B"]
 			entity_vis_size: 1.0f
 			id: "06F7C08ED3C81765"
 			shape: "heart"
@@ -2125,8 +2126,8 @@
 				item: { count: 1, id: "modern_industrialization:steel_drill" }
 				type: "item"
 			}]
-			x: -20.0d
-			y: 8.0d
+			x: -19.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["573624F2629A2398"]
@@ -2711,6 +2712,7 @@
 				id: "immersiveengineering:concrete_bucket"
 			}
 			id: "589DCFCE3920A7A5"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "25787930ECCE717B"
@@ -2736,7 +2738,7 @@
 				item: { count: 1, id: "immersiveengineering:concrete" }
 				type: "item"
 			}]
-			x: -16.0d
+			x: -15.5d
 			y: 4.5d
 		}
 		{
@@ -2750,7 +2752,7 @@
 				type: "item"
 			}]
 			x: -17.5d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -2902,19 +2904,6 @@
 			}]
 			x: -6.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["23986DAD83FA303E"]
-			entity_vis_size: 1.0f
-			id: "49A2B52A2538342C"
-			shape: "heart"
-			tasks: [{
-				id: "71FA337FBA82CF7A"
-				item: { count: 1, id: "sophisticatedstorage:advanced_compacting_upgrade" }
-				type: "item"
-			}]
-			x: -13.5d
-			y: 7.0d
 		}
 		{
 			dependencies: ["0B19CF68ECB1A0CD"]
@@ -3196,6 +3185,163 @@
 			]
 			x: -10.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["5845CC8158A158F0"]
+			entity_vis_size: 1.0f
+			id: "513B89033C90E816"
+			shape: "diamond"
+			tasks: [{
+				id: "7785C15B8B384F7C"
+				item: { count: 1, id: "xkdeco:factory_vent_fan" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0281C5323A369316"]
+			entity_vis_size: 1.0f
+			id: "788C49BB1E76B644"
+			shape: "heart"
+			tasks: [{
+				id: "59859238C7CC7982"
+				item: { count: 1, id: "immersiveengineering:glider" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["513B89033C90E816"]
+			entity_vis_size: 1.0f
+			id: "564FADD2E365A398"
+			shape: "heart"
+			tasks: [{
+				id: "1058CCA19F1158B5"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:large_steam_machines)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["09B3D8B6687BF6CD"]
+			entity_vis_size: 1.0f
+			id: "00544E360CE5F0F6"
+			shape: "heart"
+			size: 2.0d
+			tasks: [{
+				id: "1B6BDA6C0EE31997"
+				item: { count: 1, id: "sophisticatedstorage:controller" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["00544E360CE5F0F6"]
+			entity_vis_size: 1.0f
+			id: "7B1641B7970C8BAC"
+			shape: "diamond"
+			tasks: [{
+				id: "18DB98A7B358C25C"
+				item: { count: 1, id: "sophisticatedstorage:storage_io" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["00544E360CE5F0F6"]
+			entity_vis_size: 1.0f
+			id: "4A8A9887093F0FD7"
+			shape: "heart"
+			tasks: [{
+				id: "06EC2A1815EC62F9"
+				item: { count: 1, id: "sophisticatedstorage:storage_tool" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["4A8A9887093F0FD7"]
+			entity_vis_size: 1.0f
+			id: "69A77662787727A6"
+			shape: "diamond"
+			tasks: [{
+				id: "40EE298B6205B4F4"
+				item: { count: 1, id: "sophisticatedstorage:packing_tape" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["4A8A9887093F0FD7"]
+			entity_vis_size: 1.0f
+			id: "37C557DC509B6428"
+			shape: "diamond"
+			tasks: [{
+				id: "3E7FCBA7AB3BCF7D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:soph_storage_connector)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["4A8A9887093F0FD7"]
+			entity_vis_size: 1.0f
+			id: "730FE22E7C0A49F3"
+			shape: "diamond"
+			tasks: [{
+				id: "3349D1A9CADB1B8F"
+				item: { count: 1, id: "sophisticatedstorage:decoration_table" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["578BB6900C39F631"]
+			entity_vis_size: 1.0f
+			id: "35EF7AFBE2D4245B"
+			shape: "heart"
+			tasks: [{
+				id: "665E44E70E41A88B"
+				item: { count: 1, id: "modern_industrialization:bronze_drill" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["35EF7AFBE2D4245B"]
+			entity_vis_size: 1.0f
+			id: "43BA55183D3C5ACF"
+			shape: "heart"
+			tasks: [{
+				id: "234D339F158384D3"
+				item: { count: 1, id: "modern_industrialization:gold_drill" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5380619F075F1D42"]
+			entity_vis_size: 1.0f
+			id: "415AAE749E70C82B"
+			shape: "heart"
+			tasks: [{
+				id: "3F18FEBF61559FB0"
+				item: { count: 1, id: "oritech:exo_boots" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
 		}
 	]
 }

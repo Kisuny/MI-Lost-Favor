@@ -67,6 +67,22 @@ function getInputsFromIEShaped(args) {
     return { itemInputs, fluidInputs }
 }
 
+function removeRecipesByOutputs(event, { outputItems, outputFluids, removeRecipeType }){
+    outputItems?.forEach((output) => {
+        let filter = { output: output[0].item }
+        if (removeRecipeType) filter.type = removeRecipeType
+        event.remove(filter)
+    })
+    outputFluids?.forEach(output => {
+        let fluid = Fluid.of(output[0].fluid)
+        
+        let filter = { output: fluid }        
+
+        if (removeRecipeType) filter.type = removeRecipeType
+        event.remove(filter)
+    })
+}
+
 function getXYZFromPosCompound(posCompound){
     let x = posCompound.getDouble("x")
     let y = posCompound.getDouble("y")

@@ -1,7 +1,10 @@
-function milfElectromagnetRecipe(input, output, energy){
+Object.entries(global.electromagnetRecipes).forEach(([inputId, recipeData]) => {
+
+    let { outputId, energy } = recipeData 
+
     BlockEvents.rightClicked("immersiveengineering:electromagnet", event => {
         if (event.getHand() == "OFF_HAND") return
-        if (!event.player.mainHandItem.is(Item.of(input))) return
+        if (!event.player.mainHandItem.is(Item.of(inputId))) return
         let { level, block, player } = event
 
         let blockEntity = block.entity
@@ -18,7 +21,7 @@ function milfElectromagnetRecipe(input, output, energy){
             let item = event.player.mainHandItem
             item.count--
 
-            $Block.popResource(level, block.pos.above(), Item.of(output))
+            $Block.popResource(level, block.pos.above(), Item.of(outputId))
 
             milfPlaySound(event, "immersiveengineering:electromagnet")
         } else {
@@ -29,5 +32,4 @@ function milfElectromagnetRecipe(input, output, energy){
         }
 
     })
-
-}
+})

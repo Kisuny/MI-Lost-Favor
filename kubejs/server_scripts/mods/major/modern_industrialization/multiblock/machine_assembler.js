@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
-            [{ "item": "immersiveengineering:sheetmetal_steel" }, 32],
+            [{ "item": "modern_industrialization:steel_large_plate" }, 6],
             [{ "tag": "immersiveengineering:treated_wood" }, 12],
             [{ "item": "immersiveengineering:logic_unit" }, 4],
             [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
             [{ "item": "immersiveengineering:wirecoil_steel" }, 12],
             [{ "item": "milf:tempered_glass" }, 4],
-            [{ "item": "milf:punched_card" }, 8],
+            [{ "item": "milf:punched_card" }, 4],
         ],
         outputItems: [[{ "item": "modern_industrialization:enigma_machine" }, 1]]
     })
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
             [{ item: "modern_industrialization:heatproof_machine_casing" }],
         ],
         outputItems: [
-            [{ item: "modern_industrialization:electric_coke_oven" }]
+            [{ item: "mi_tweaks:electric_coke_oven" }]
         ],
         removeRecipe: true
     })
@@ -318,7 +318,32 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 54, time: 300, machine: "modern_industrialization:advanced_machine_assembler",
+        energy: 48, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_motor" }, 2],
+            [{ "item": "modern_industrialization:tin_cable" }, 4],
+            [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:steel_rotor" }, 1],
+            [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:lv_steam_turbine" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 48, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:piston" }, 1],
+            [{ "item": "modern_industrialization:tin_cable" }, 4],
+            [{ "item": "milf:small_steel_fluid_container" }, 2],
+            [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:lv_diesel_generator" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 48, time: 300, machine: "modern_industrialization:advanced_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "modern_industrialization:large_pump" }, 1],
@@ -327,6 +352,150 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:adamant_large_plate" }, 2]
         ],
         outputItems: [[{ "item": "modern_industrialization:assembler" }]],
+        removeRecipe: true
+    })
+
+
+
+    miMachineRecipe(event, {
+        energy: 48, time: 280, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:advanced_machine_hull" }, 1],
+            [{ item: "modern_industrialization:large_pump" }, 1],
+            [{ item: "extended_industrialization:mv_photovoltaic_cell" }, 1],
+            [{ tag: "modern_industrialization:fluid_pipes" }, 12]
+        ],
+        outputItems: [[{ item: "extended_industrialization:mv_solar_panel" }, 1]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 48, time: 280, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:hardened_machine_casing" }, 1],
+            [{ item: "ae2:logic_processor" }, 2],
+            [{ item: "modern_industrialization:silicon_battery" }, 2],
+            [{ item: "modern_industrialization:silicon_steel_bolt" }, 4]
+        ],
+        outputItems: [[{ item: "modern_industrialization:advanced_machine_hull" }, 1]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 48, time: 280, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:advanced_machine_hull" }, 1],
+            [{ item: "ae2:logic_processor" }, 4],
+            [{ item: "modern_industrialization:silicon_battery" }, 4],
+            [{ item: "modern_industrialization:silver_plate" }, 4],
+            [{ item: "modern_industrialization:electrum_cable" }, 8],
+            [{ item: "extended_industrialization:silver_tesla_top_load" }, 1]
+        ],
+        outputItems: [[{ item: "extended_industrialization:tesla_coil" }, 1]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 48, time: 280, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:advanced_machine_hull" }, 1],
+            [{ item: "ae2:logic_processor" }, 4],
+            [{ item: "modern_industrialization:silicon_battery" }, 4],
+            [{ item: "modern_industrialization:silver_plate" }, 4],
+            [{ item: "modern_industrialization:electrum_cable" }, 8],
+            [{ item: "extended_industrialization:silver_tesla_top_load" }, 1]
+        ],
+        outputItems: [[{ item: "extended_industrialization:tesla_receiver" }, 1]],
+        removeRecipe: true
+    })
+
+    milfReversibleRecipe(event, 
+        "extended_industrialization:tesla_coil",
+        "extended_industrialization:tesla_receiver"
+    )
+
+    miMachineRecipe(event, {
+        energy: 54, time: 300, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:advanced_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:large_pump" }, 3],
+            [{ "item": "modern_industrialization:electronic_circuit" }, 2],
+            [{ "item": "oritech:cooler_block" }, 1],
+            [{ "item": "modern_industrialization:adamant_large_plate" }, 2],
+            [{ "item": "modern_industrialization:aluminum_large_plate" }, 6]
+        ],
+        outputItems: [[{ "item": "modern_industrialization:vacuum_freezer" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_motor" }, 3],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+            [{ "item": "modern_industrialization:lv_steam_turbine" }, 1],
+            [{ "item": "modern_industrialization:aluminum_rotor" }, 1],
+            [{ "item": "modern_industrialization:plastic_large_plate" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:mv_steam_turbine" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_pump" }, 1],
+            [{ "item": "modern_industrialization:adamant_gear" }, 2],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+            [{ "item": "modern_industrialization:lv_diesel_generator" }, 1],
+            [{ "item": "modern_industrialization:plastic_large_plate" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:mv_diesel_generator" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_motor" }, 6],
+            [{ "item": "modern_industrialization:adamant_gear" }, 2],
+            [{ "item": "milf:tempered_glass" }, 4],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+            [{ "item": "ae2:logic_processor" }, 2],
+            [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:plastic_large_plate" }, 6],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:centrifuge" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_pump" }, 2],
+            [{ "item": "modern_industrialization:bioresistant_alloy_large_plate" }, 8],
+            [{ "item": "milf:tempered_glass" }, 2],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+            [{ "item": "ae2:logic_processor" }, 2],
+            [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:plastic_large_plate" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:chemical_reactor" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_pump" }, 1],
+            [{ "item": "modern_industrialization:cupronickel_wire_magnetic" }, 16],
+            [{ "item": "oritech:enderic_compound" }, 2],
+            [{ "item": "milf:tempered_glass" }, 6],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+            [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:plastic_large_plate" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:electrolyzer" }]],
         removeRecipe: true
     })
 

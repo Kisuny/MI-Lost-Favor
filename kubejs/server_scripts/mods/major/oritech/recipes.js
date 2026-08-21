@@ -42,7 +42,7 @@ function oritechRefineryRecipe(event, args) {
     }
     if (!args.compatOff) {
         miMachineRecipe(event, {
-            energy: 12, time: recipe.time, machine: "modern_industrialization:chemical_reactor",
+            energy: 12, time: recipe.time, machine: "modern_industrialization:chemical_plant",
             inputItems: args.inputItems,
             outputItems: args.outputItems,
             inputFluids: args.inputFluids,
@@ -142,7 +142,7 @@ function oritechItemRecipe(oriMachine, compatMachine, event, args){
     }
     if (!args.compatOff) {
         miMachineRecipe(event, {
-            energy: 12, time: recipe.time, machine: compatMachine,
+            energy: args.compatEnergy || 12, time: args.compatTime || recipe.time, machine: compatMachine,
             inputItems: args.inputItems,
             outputItems: args.outputItems
         })
@@ -174,6 +174,8 @@ ServerEvents.recipes(event => {
     event.remove({ type: "oritech:foundry" })
     event.remove({ type: "oritech:refinery" })
     event.remove({ type: "oritech:centrifuge" })
+    event.remove({ type: "oritech:centrifuge_fluid" })
+    event.remove({ type: "oritech:assembler" })
     event.remove({ type: "oritech:grinder" })
 
     //#region milfShaped
@@ -278,6 +280,23 @@ ServerEvents.recipes(event => {
             "RWR"
         ],
         key: {
+            R: { item: `modern_industrialization:silicon_steel_large_plate` },
+            I: { item: "oritech:machine_core_4" },
+            W: { item: "modern_industrialization:tumbaga_curved_plate" }
+
+        },
+        outputItems: [[{ id: "oritech:machine_core_5" }, 1]],
+        removeRecipe: true,
+    })
+
+
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WIW",
+            "RWR"
+        ],
+        key: {
             R: { item: `modern_industrialization:rubber_sheet` },
             I: { item: "oritech:machine_extender" },
             W: { item: "immersiveengineering:wirecoil_electrum" }
@@ -336,6 +355,79 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "oritech:exo_helmet" }, 1]],
         removeRecipe: true,
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " BR",
+            " rB",
+            "r  "
+        ],
+        key: {
+            R: { item: "modern_industrialization:rubber_sheet" },
+            r: { item: "modern_industrialization:nickel_rod" },
+            B: { item: "modern_industrialization:nickel_bolt" }
+
+        },
+        outputItems: [[{ id: "oritech:wrench" }, 1]],
+        removeRecipe: true,
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "rRr",
+            "clc",
+            "cBc"
+        ],
+        key: {
+            R: { item: `modern_industrialization:rubber_sheet` },
+            r: { item: "modern_industrialization:silicon_steel_rod" },
+            c: { item: "modern_industrialization:silicon_steel_curved_plate" },
+            B: { item: "modern_industrialization:redstone_battery" },
+            l: { item: "ytech:leather_strips" }
+
+        },
+        outputItems: [[{ id: "oritech:jetpack" }, 1]],
+        removeRecipe: true,
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "bPb",
+            " T ",
+            "bPb"
+        ],
+        key: {
+            T: { item: "modern_industrialization:steel_tank" },
+            P: { item: "modern_industrialization:tumbaga_large_plate" },
+            b: { item: "modern_industrialization:steel_bolt" }
+
+        },
+        outputItems: [[{ id: "oritech:small_tank_block" }, 1]],
+        removeRecipe: true,
+    })
+
+    //#endregion
+
+    //#region ieShapedFluid
+
+    ieShapedFluid(event, {
+        pattern: [
+            "srs",
+            "sRs",
+            "   "
+        ],
+        key: {
+            s: { item: "modern_industrialization:rubber_sheet" },
+            r: { item: "modern_industrialization:rubber_boots" },
+            R: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "milf:silicone_modified_phenolic_resin"
+            }
+        },
+        outputItems: [[{ id: "oritech:exo_boots" }]],
+        removeRecipe: true
     })
 
     //#endregion
@@ -490,7 +582,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 4],
             [{ "item": "modern_industrialization:tumbaga_gear" }, 4],
             [{ "item": "modern_industrialization:silicon_steel_rod" }, 4],
-            [{ "item": "oritech:machine_core_4" }, 1]
+            [{ "item": "oritech:machine_core_5" }, 1]
         ],
         outputItems: [[{ "item": "oritech:assembler_block" }, 1]],
         removeRecipe: "minecraft:crafting_shaped",
@@ -534,7 +626,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:steel_large_plate" }, 2],
             [{ "item": "milf:tempered_glass" }, 4],
             [{ "item": "modern_industrialization:aluminum_wire" }, 2],
-            [{ "item": "oritech:machine_core_4" }, 1],
+            [{ "item": "oritech:machine_core_3" }, 1],
             [{ "item": "immersiveengineering:component_electronic_adv" }, 1]
         ],
         outputItems: [[{ "item": "oritech:big_solar_panel_block" }, 1]],
@@ -644,6 +736,12 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "oritech:carbon_fibre_strands" }, 1]],
     })
 
+    oritechCentrifugeRecipe(event, {
+        time: 400,
+        inputItems: [[{ item: "milf:kerogen" }, 1]],
+        outputItems: [[{ item: "oritech:biomass" }, 3]],
+    })
+
     //#endregion
 
     //#region foundry
@@ -680,6 +778,7 @@ ServerEvents.recipes(event => {
             [{ item: "immersiveengineering:wirecoil_steel" }, 1]
         ],
         outputItems: [[{ item: "modern_industrialization:electronic_circuit_board" }, 1]],
+        compatEnergy: 48,
         removeRecipe:true
     })
 
@@ -692,6 +791,33 @@ ServerEvents.recipes(event => {
             [{ item: "modern_industrialization:tin_cable" }, 1]
         ],
         outputItems: [[{ item: "modern_industrialization:portable_storage_unit" }, 1]],
+        compatEnergy: 48,
+        removeRecipe: true
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "modern_industrialization:steel_rod" }],
+            [{ item: "modern_industrialization:copper_wire" }],
+            [{ item: "modern_industrialization:copper_wire" }],
+            [{ item: "modern_industrialization:rubber_sheet" }]
+        ],
+        outputItems: [[{ item: "oritech:magnetic_coil" }, 2]],
+        compatOff: true,
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 100,
+        inputItems: [
+            [{ item: "modern_industrialization:copper_wire" }],
+            [{ item: "modern_industrialization:copper_plate" }],
+            [{ item: "modern_industrialization:rubber_sheet" }],
+            [{ item: "modern_industrialization:rubber_sheet" }]
+        ],
+        outputItems: [[{ item: "modern_industrialization:analog_circuit_board" }, 1]],
+        compatEnergy: 16,
+        compatTime: 400,
         removeRecipe: true
     })
 
@@ -704,6 +830,20 @@ ServerEvents.recipes(event => {
             [{ item: "modern_industrialization:silicon_steel_large_plate" }, 1]
         ],
         outputItems: [[{ item: "oritech:machine_ultimate_addon" }, 1]],
+        compatEnergy: 64,
+        removeRecipe: true
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "oritech:machine_ultimate_addon" }, 1],
+            [{ item: "oritech:machine_ultimate_addon" }, 1],
+            [{ item: "oritech:flux_gate" }, 1],
+            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 1]
+        ],
+        outputItems: [[{ item: "oritech:machine_yield_addon" }, 1]],
+        compatEnergy: 64,
         removeRecipe: true
     })
 
@@ -761,6 +901,29 @@ ServerEvents.recipes(event => {
             [{ fluid: "modern_industrialization:ethylene" }, 50],
             [{ fluid: "immersiveengineering:ethanol" }, 25]
         ],
+    })
+
+    oritechRefineryRecipe(event, {
+        time: 500,
+        inputFluids: [[{ fluid: "modern_industrialization:oxygen" }, 1000]],
+        inputItems: [[{ item: "immersivepetroleum:petcoke" }]],
+        outputFluids: [
+            [{ fluid: "milf:purified_syngas" }, 75],
+            [{ fluid: "modern_industrialization:sulfuric_acid" }, 25],
+            [{ fluid: "modern_industrialization:chlorine" }, 25]
+        ],
+        compatOff: true
+    })
+
+    oritechRefineryRecipe(event, {
+        time: 466,
+        inputFluids: [[{ fluid: "immersivepetroleum:petroleum_gas" }, 500]],
+        inputItems: [[{ item: "modern_industrialization:chromium_dust" }]],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:butadiene" }, 300],
+            [{ fluid: "modern_industrialization:hydrogen" }, 100],
+            [{ fluid: "modern_industrialization:steam" }, 100]
+        ]
     })
 
     //#endregion
@@ -864,7 +1027,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "oritech:refinery/quartz",
         "oritech:laser/fluxite",
         "oritech:particle/fluxite",
-        "oritech:assembler/fluxgate"
+        "oritech:assembler/fluxgate",
+        "oritech:assembler/magnet"
     ]
 
     disableByRecipeID.forEach(id => {

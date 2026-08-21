@@ -37,56 +37,57 @@ let builders = [
         .addExternalPart({ ingot: "ae2:certus_quartz_crystal" })
         .addExternalPart({ dust: "ae2:certus_quartz_dust" })
         .addParts(["rod", "plate", "large_plate"])
-        .withMachineCasing(8.0)
+        .withMachineCasing(8)
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("bioresistant_alloy", "Bioresistant Alloy", 0x54ccc2)
         .withMaterialSet("shiny")
         .addParts(["ingot", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
-        .addSpecialCasing("bioresistant_machine_casing", 8.0, { "en_us": "Bioresistant Machine Casing" })
+        .withMachineCasing(8)
+        .addSpecialCasing("bioresistant_machine_casing", 8, { "en_us": "Bioresistant Machine Casing" })
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("tumbaga", "Tumbaga", 0xb0501c)
         .withMaterialSet("shiny")
         .addParts(["ingot", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
-        .addSpecialCasing("bioactive_machine_casing", 8.0, { "en_us": "Bioactive Machine Casing" })
+        .withMachineCasing(8)
+        .addSpecialCasing("bioactive_machine_casing", 8, { "en_us": "Bioactive Machine Casing" })
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("silicon_steel", "Silicon Steel", 0x15203b)
         .withMaterialSet("shiny")
         .addParts(["ingot", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
-        .addSpecialCasing("biointensive_machine_casing", 8.0, { "en_us": "Biointensive Machine Casing" })
+        .withMachineCasing(8)
+        .addSpecialCasing("biointensive_machine_casing", 8, { "en_us": "Biointensive Machine Casing" })
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("adamant", "Adamant", 0x15203b)
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "oritech:adamant_ingot" })
         .addParts(["rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
+        .withMachineCasing(8)
+        .addSpecialCasing("hardened_machine_casing", 8)
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("energite", "Energite", 0x15203b)
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "oritech:energite_ingot" })
         .addParts(["rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
+        .withMachineCasing(8)
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("duratium", "Duratium", 0x15203b)
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "oritech:duratium_ingot" })
         .addParts(["rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
+        .withMachineCasing(8)
         .withDefaultRecipes(),
 
     new MIMaterialBuilder("biosteel", "Biosteel", 0x15203b)
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "oritech:biosteel_ingot" })
         .addParts(["rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
-        .withMachineCasing(8.0)
+        .withMachineCasing(8)
         .withDefaultRecipes()
 ]
 
@@ -104,7 +105,8 @@ function MIMaterialBuilder(materialId, materialName, color) {
         machineCasing: null,
         specialCasing:null,
         block: null,
-        isWithDefaultRecipes: false
+        isWithDefaultRecipes: false,
+        pipeCasing: null
     }
 
     this.create = function(event){
@@ -121,9 +123,11 @@ function MIMaterialBuilder(materialId, materialName, color) {
                 Object.entries(config.externalParts).forEach(([part, id]) => builder.addExternalPart(part, id))
 
                 config.machineCasing && builder.machineCasing(config.machineCasing)
+                config.pipeCasing && builder.pipeCasing(config.pipeCasing)
                 config.block && builder.block(config.block)
                 config.specialCasing && builder.specialCasing(config.specialCasing.name, config.specialCasing.id, config.specialCasing.hardness)
                 config.isWithDefaultRecipes && builder.defaultRecipes()
+                
             }
         )
         
@@ -159,6 +163,12 @@ function MIMaterialBuilder(materialId, materialName, color) {
     this.withMachineCasing = function (hardness) {
         this.config.machineCasing = hardness
         milfData.addCredit(`${this.materialId}_machine_casing`, "mi_part", "modern_industrialization")
+        return this
+    }
+
+    this.withPipeCasing = function (hardness) {
+        this.config.pipeCasing = hardness
+        milfData.addCredit(`${this.materialId}_machine_casing_pipe`, "mi_part", "modern_industrialization")
         return this
     }
 

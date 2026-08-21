@@ -34,12 +34,14 @@
  * @property {string} [dimension]
  * @property {Object} [adjacent_block]
  * @property {string} [custom_condition]
+ * @property {ItemOrTagObject} requiredDisk
+
  */
 
 /**
  * @param {MiMachineRecipeArgs} args
  */
-const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
+function miMachineRecipe(event, args){
     const fluidInputs = args.inputFluids || []
     const fluidOutputs = args.outputFluids || []
     const inputs = args.inputItems || []
@@ -58,7 +60,7 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
         "process_conditions": []
     }
 
-    inputs.forEach((input) => {
+    inputs.forEach((input) => {        
         let inp = Object.assign({}, input[0], { amount: input[1] ?? input[0]?.amount ?? 1 }, { probability: input[2] })
         if (inp.count) {
             inp.amount = inp.count
@@ -103,10 +105,25 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
         fluidOutputs.forEach(output => {
             let fluid = Fluid.of(output[0].fluid)            
             event.remove({ output: fluid, type: args.machine })
+            //if (args.machine == "modern_industrialization:mixer") console.log(fluid);
+            
         })
 
     }
-    if (args.token) { recipe.item_inputs.push(Object.assign({}, args.token, { amount: 1 }, { probability: 0 })) }
+    if (args.requiredDisk) {
+        recipe.item_inputs.push(
+            Object.assign(
+                {},
+                { amount: 1, probability: 0 },
+                args.requiredDisk,
+            )
+        )
+
+        recipe.process_conditions.push({
+            type: "modern_industrialization:custom",
+            custom_id: "cd_reader"
+        })
+    }
     if (args.dimension) {
         recipe.process_conditions.push({
             type: "modern_industrialization:dimension",
@@ -130,7 +147,7 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
     if(args.ieCompat){
         switch (args.machine) {
             case "modern_industrialization:macerator":
-                ieCrusherCraft(event, {
+                ieCrusherRecipe(event, {
                     inputItems: args.inputItems,
                     outputItems: args.outputItems,
                     compatOff: true
@@ -142,7 +159,7 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
         }
     }
 
-    if (args.machine === "modern_industrialization:macerator") {
+    if (args.machine == "modern_industrialization:macerator" && energy <= 4) {
         milfMacToCrush(event, recipe.item_inputs[0], recipe.item_outputs, id)
     }
     if (id) {
@@ -154,11 +171,46 @@ const miMachineRecipe = (/**@type {$RecipesKubeEvent} */event, args) => {
         args.machine = miMachinesCompat[args.machine]
         miMachineRecipe(event, args)
     }
+
+    if (machinesForMITweaksTierCompat.contains(args.machine)) {
+        let recipesMap = global.miProxyableMachineRecipeTypes
+        Object.keys(recipesMap)
+            .filter(key => recipesMap[key] == args.machine)
+            .forEach(tierRecipeType => {
+                miMachineRecipe(
+                    event, 
+                    Object.assign({}, args, { machine: tierRecipeType })
+                )
+            })
+    }
+    
 }
+
+let machinesForMITweaksTierCompat = new $HashSet(
+    Object.values(global.miProxyableMachineRecipeTypes)
+)
 
 let miMachinesCompat = {
     "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
 }
+
+MIRecipeEvents.customCondition(event => {
+
+    event.registerWithIcon(`cd_reader`,
+        (context, recipe) => {
+            let block = context.level.getBlock(context.blockEntity.blockPos)
+            let data = block.getEntityData()
+            let upgradeCompound = data.getCompound("upgradesItemStack")
+            if (!upgradeCompound) return
+            let upgradeId = upgradeCompound.getString("id")
+
+            return upgradeId == "milf:cd_reader"
+        },
+        Item.of("milf:cd"),
+        Text.translatable(`milf.mi_condition.cd_reader`)
+    )
+
+})
 
 ServerEvents.recipes(event => {
 
@@ -173,7 +225,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:packer' })
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
-    event.remove({ type: 'modern_industrialization:quarry' })
+    //event.remove({ type: 'modern_industrialization:quarry' })
 
     customPestleAndMortarCraft(event, {
         ingredients: [
@@ -303,6 +355,150 @@ ServerEvents.recipes(event => {
         removeRecipe: true,
     })
 
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WQW",
+            "RWR"
+        ],
+        key: {
+            W: { item: "immersiveengineering:wirecoil_redstone" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            Q: { item: "immersiveengineering:rs_engineering" }
+        },
+        outputItems: [[{ id: "modern_industrialization:ie_energy_input_hatch" }, 1]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WQW",
+            "RWR"
+        ],
+        key: {
+            R: { item: "immersiveengineering:wirecoil_redstone" },
+            W: { item: "modern_industrialization:rubber_sheet" },
+            Q: { item: "immersiveengineering:rs_engineering" }
+        },
+        outputItems: [[{ id: "modern_industrialization:ie_energy_output_hatch" }, 1]],
+    })
+
+    milfReversibleRecipe(event,
+        "modern_industrialization:ie_energy_input_hatch",
+        "modern_industrialization:ie_energy_output_hatch"
+    )
+
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WQW",
+            "RWR"
+        ],
+        key: {
+            W: { item: "milf:basic_machine_bit" },
+            R: { item: "modern_industrialization:tin_cable" },
+            Q: { item: "modern_industrialization:ie_energy_output_hatch" }
+        },
+        outputItems: [[{ id: "modern_industrialization:lv_energy_output_hatch" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WQW",
+            "RWR"
+        ],
+        key: {
+            R: { item: "milf:basic_machine_bit" },
+            W: { item: "modern_industrialization:tin_cable" },
+            Q: { item: "modern_industrialization:ie_energy_input_hatch" }
+        },
+        outputItems: [[{ id: "modern_industrialization:lv_energy_input_hatch" }, 1]],
+        removeRecipe: true
+    })
+
+    milfReversibleRecipe(event, 
+        "modern_industrialization:lv_energy_input_hatch",
+        "modern_industrialization:lv_energy_output_hatch"
+    )
+
+    milfShaped(event, {
+        pattern: [
+            "SBP",
+            "SCP",
+            "MPR"
+        ],
+        key: {
+            P: { item: "modern_industrialization:bronze_curved_plate" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            S: { item: "modern_industrialization:silicon_steel_curved_plate" },
+            M: { item: "milf:basic_motor" },
+            B: { item: "modern_industrialization:redstone_battery" },
+            C: { item: "immersiveengineering:component_electronic_adv" }
+        },
+        outputItems: [[{ id: "extended_industrialization:robot_auto_feeder" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "QBQ",
+            "WQW"
+        ],
+        key: {
+            B: { item: "modern_industrialization:bronze_plated_bricks" },
+            Q: { item: "modern_industrialization:steel_curved_plate" },
+            W: { item: "minecraft:nether_brick" }
+
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_plated_bricks" }]],
+        removeRecipe: true,
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "QBQ",
+            "WQW"
+        ],
+        key: {
+            B: { item: "modern_industrialization:analog_circuit" },
+            Q: { item: "moderndynamics:item_pipe" },
+            W: { item: "milf:steel_machine_bit" }
+
+        },
+        outputItems: [[{ id: "modern_industrialization:configurable_chest" }]],
+        removeRecipe: true,
+    })
+
+    Object.entries({
+        "modern_industrialization:steel_compressor": "mi_tweaks:large_steam_compressor",
+        "modern_industrialization:steel_cutting_machine": "mi_tweaks:large_steam_cutting_machine",
+        "modern_industrialization:steel_wiremill": "mi_tweaks:large_steam_wiremill",
+        "modern_industrialization:steel_mixer": "mi_tweaks:large_steam_mixer",
+        "modern_industrialization:steel_unpacker": "mi_tweaks:large_steam_unpacker",
+        "modern_industrialization:steel_packer": "mi_tweaks:large_steam_packer",
+        "modern_industrialization:steel_mi_furnace": "mi_tweaks:large_steam_mi_furnace",
+        "modern_industrialization:steel_macerator": "mi_tweaks:large_steam_macerator"
+    }).forEach(([steelMachineId, largeMachineId]) => {
+        milfShaped(event, {
+            pattern: [
+                "WQW",
+                "QBQ",
+                "WQW"
+            ],
+            key: {
+                B: { item: steelMachineId },
+                Q: { item: "extended_industrialization:steel_plated_bricks" },
+                W: { item: "milf:steel_machine_bit" }
+
+            },
+            outputItems: [[{ id: largeMachineId }]],
+            removeRecipe: true,
+        })
+    })
 
     milfShaped(event, {
         pattern: [
@@ -366,13 +562,14 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "PCP",
+            "pCp",
             "HBH",
-            "PCP"
+            "pPp"
         ],
         key: {
             B: { item: "modern_industrialization:large_steam_boiler" },
-            P: { item: "milf:basic_pump" },
+            P: { item: "modern_industrialization:large_pump" },
+            p: { item: "milf:basic_pump" },
             H: { item: "immersiveengineering:furnace_heater" },
             C: { item: "modern_industrialization:electronic_circuit" }
         },
@@ -557,17 +754,6 @@ ServerEvents.recipes(event => {
         inputItems: [[{ item: "milf:unfired_fire_clay_brick" }]],
         outputItems: [[{ id: "modern_industrialization:fire_clay_brick" }]],
         removeRecipe:true
-    })
-
-
-    aeInscriberRecipe(event, {
-        inputItems: [
-            [{ "item": "milf:tempered_glass" }, 1],
-            [{ "item": "modern_industrialization:steel_curved_plate" }, 1],
-            [{ "item": "milf:hemispherical_press_mold" }, 1],
-        ],
-        outputItems: [[{ "id": "milf:lens" }, 1]],
-        mode: "inscribe"
     })
 
     event.forEachRecipe({ output: /.*fine_wire/, type: "modern_industrialization:wiremill" }, r => {
@@ -760,6 +946,7 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/coke/craft/gem_from_block",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
+        "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",
 
         "modern_industrialization:alloy/mixer/cupronickel/tiny_dust",
         "modern_industrialization:materials/mixer/fire_clay_dust",

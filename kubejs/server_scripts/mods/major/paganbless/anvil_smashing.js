@@ -131,14 +131,14 @@ ServerEvents.recipes(event => {
         [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1]
     )
 
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/steel" }, 8],
-            [{ "item": "modern_industrialization:fire_clay_bricks" }, 1],
-            [{ "tag": "c:plates/steel" }, 8],
-        ],
-        [{ "id": 'extended_industrialization:steel_plated_bricks' }, 1]
-    )
+    // anvil_recipe(
+    //     [
+    //         [{ "tag": "c:bolts/steel" }, 8],
+    //         [{ "item": "modern_industrialization:fire_clay_bricks" }, 1],
+    //         [{ "tag": "c:plates/steel" }, 8],
+    //     ],
+    //     [{ "id": 'extended_industrialization:steel_plated_bricks' }, 1]
+    // )
 
     anvil_recipe(
         [

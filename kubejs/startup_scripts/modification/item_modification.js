@@ -88,4 +88,20 @@ ItemEvents.modification(event => {
         })
     })
 
+    event.modify('oritech:machine_speed_addon', item => {
+        item.setMaxStackSize(16)
+    })
+
+    event.modify('oritech:machine_efficiency_addon', item => {
+        item.setMaxStackSize(16)
+    })
+
+    event.modify('oritech:machine_ultimate_addon', item => {
+        item.setMaxStackSize(16)
+    })
+
+    event.modify('oritech:machine_yield_addon', item => {
+        item.setMaxStackSize(16)
+    })
+
 })

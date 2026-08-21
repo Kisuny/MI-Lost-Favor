@@ -11,7 +11,58 @@ const MILF_BLUEPRINTS = {
     tier2AE: "Storage Blueprint",
     tier3AE: "Automation Blueprint",
     tier4AE: "Quantum Blueprint",
-    tier5AE: "Divine Blueprint"
+    tier5AE: "Divine Blueprint",
+
+
+    /**
+     * @returns {Record<Exclude<keyof typeof MILF_BLUEPRINTS, 'getAsItem'>, BlueprintItem>} 
+     */
+    get getAsItem() {
+        let result = {}
+
+        let blueprintToColorMap = {
+            tier1AE: "#84b9ff",
+            tier2AE: "#fff678",
+            tier3AE: "#8de8ff",
+            tier4AE: "#c795ff",
+            tier5AE: "#abffc0",
+
+            miBasicComponents: "#F06E28",
+            miComponents: "#28B1F0",
+            usefulTools: "#ccac7c",
+        }
+
+        for (const key of Object.keys(this)) {
+            if (key != "getAsItem" && key != "getDisk") {
+                result[key] = {
+                    id: "immersiveengineering:blueprint",
+                    count: 1,
+                    components: {
+                        "immersiveengineering:blueprint": this[key],
+                        "minecraft:item_name": "{'text':'" + this[key] + "','color':'" + (blueprintToColorMap[key] || "#FCFCFD") + "'}"
+                    }
+                }
+            }
+        }
+
+        return result
+    },
+
+    get getDisk(){
+
+        return {
+            tier1AE: "milf:mysterious_disk",
+            tier2AE: "milf:mysterious_disk",
+            tier3AE: "milf:storage_disk",
+            tier4AE: "milf:automation_disk",
+            tier5AE: "milf:quantum_disk",
+        }
+
+    },
+
+    getKeyFromValue(value){
+        return Object.keys(this).find(key => this[key] == value)
+    }
 }
 
 /**
@@ -40,12 +91,23 @@ const ieBlueprintRecipe = (event, args) => {
     }
     args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
     if(!args.compatOff){
-        let token = args.blueprintCompatItem
-        miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
-            inputItems:args.inputItems,
-            outputItems:[[{item:recipe.result.id}, recipe.result.count]],
-            token:token
-        })
+
+        let miArgs = {
+            energy: 2, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: args.inputItems,
+            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+        }
+
+        let disk = MILF_BLUEPRINTS.getDisk[MILF_BLUEPRINTS.getKeyFromValue(args.category)]
+
+        //console.log(disk);
+        
+
+        if (disk){
+            miArgs.requiredDisk = { item: disk }
+        }
+
+        miMachineRecipe(event, miArgs)
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].item})}
     if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].item, type: args.removeRecipeType }) }

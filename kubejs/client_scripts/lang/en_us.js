@@ -19,7 +19,6 @@ ClientEvents.lang('en_us', event => {
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
     event.add('block.paganbless.chalice', 'Chalice')
     event.add('block.immersivepetroleum.crudeoil_fluid_block', 'Crude Oil')
-    
 
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)
@@ -100,7 +99,19 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.credit.block', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Block')}`)
     event.add('milf.credit.fluid', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Fluid')}`)
 
+
+
+    event.add('milf.mi_tweaks.tooltip.batch', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes in ${MilfEffects.GRAD.MILF('batches')}:`)
+    event.add('milf.mi_tweaks.tooltip.tier_batch', `    ${MilfEffects.GRAD.MILF('%1$s')} ▶ batches of up to ${MilfEffects.GRAD.MILF('%2$s')} at ${MilfEffects.GRAD.MILF('%3$s')} the EU cost`)
+    event.add('milf.mi_tweaks.tooltip.own_recipe', `Own`)
+
+    event.add('milf.mi_condition.cd_reader', `Requires  <item id=milf:cd_reader size=0.08/> as a ${MilfEffects.GRAD.MILF("machine upgrade")}`)
+
+
+    event.add('rei_categories.modern_industrialization.mi_furnace', 'Furnace')
+
     event.add('tag.item.milf.knives', 'Knives')
+    event.add('tag.item.milf.sticks', 'Sticks')
 
     event.add('milf.cannot.mine.block', 'You cannot mine this block for now')
     event.add('milf.press_button', 'Hold ')

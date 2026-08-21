@@ -1,3 +1,4 @@
+//priority: 1
 ItemEvents.modifyTooltips(event => {
 
     event.add("milf:mi_upgrader", Text.translatable(`milf.mi_upgrader.tooltip`))
@@ -27,6 +28,8 @@ ItemEvents.modifyTooltips(event => {
     Object.entries(global.creditCustomStuff).forEach(([id, langKey]) => {
         event.add(id, Text.translatable(langKey))
     })
+
+    
 
 
 })

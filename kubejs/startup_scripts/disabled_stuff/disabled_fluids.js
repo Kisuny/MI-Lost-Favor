@@ -1,13 +1,23 @@
 global.disabledFluids = [
 
-    new DisabledFluidBuilder("modern_industrialization:plant_oil").replaceWith("immersiveengineering:plantoil").build(),
-    new DisabledFluidBuilder("modern_industrialization:ethanol").replaceWith("immersiveengineering:ethanol").build(),
-    new DisabledFluidBuilder("modern_industrialization:biodiesel").replaceWith("immersiveengineering:biodiesel").build(),
+    new DisabledFluidBuilder("immersivepetroleum:lubricant"),
 
+    new DisabledFluidBuilder("modern_industrialization:raw_biodiesel"),
+    new DisabledFluidBuilder("modern_industrialization:diesel"),
+    new DisabledFluidBuilder("modern_industrialization:plant_oil").replaceWith("immersiveengineering:plantoil"),
+    new DisabledFluidBuilder("modern_industrialization:ethanol").replaceWith("immersiveengineering:ethanol"),
+    new DisabledFluidBuilder("modern_industrialization:biodiesel").replaceWith("immersiveengineering:biodiesel"),
 
-    new DisabledFluidBuilder("oritech:still_steam").replaceWith("modern_industrialization:steam").build(),
-    new DisabledFluidBuilder("oritech:still_sulfuric_acid").replaceWith("modern_industrialization:sulfuric_acid").build()
-]
+    new DisabledFluidBuilder("oritech:still_silicon_wash"),
+    new DisabledFluidBuilder("oritech:still_mineral_slurry"),
+    new DisabledFluidBuilder("oritech:still_oil"),
+    new DisabledFluidBuilder("oritech:still_heavy_oil"),
+    new DisabledFluidBuilder("oritech:still_naphtha"),
+    new DisabledFluidBuilder("oritech:still_diesel"),
+    new DisabledFluidBuilder("oritech:still_steam").replaceWith("modern_industrialization:steam"),
+    new DisabledFluidBuilder("oritech:still_sulfuric_acid").replaceWith("modern_industrialization:sulfuric_acid")
+
+].map(builder => builder.build())
 
 
 function DisabledFluidBuilder(id) {

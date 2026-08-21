@@ -1,5 +1,5 @@
 
-const ieSqueezerCraft = (event, args) => {
+function ieSqueezerRecipe (event, args) {
     let recipe = {
         type: "immersiveengineering:squeezer",
         energy: args.energy || 6400,
@@ -14,9 +14,9 @@ const ieSqueezerCraft = (event, args) => {
     event.custom(recipe)
 }
 ServerEvents.recipes(event => {
-    ieSqueezerCraft(event, {
+    ieSqueezerRecipe(event, {
         inputItems: [[{ item: "minecraft:jungle_leaves" }, 1]],
         outputItems: [[{ id: "milf:nutmeg" }, 1]],
-        outputFluids: [[{ id: "modern_industrialization:plant_oil" }, 30]],
+        outputFluids: [[{ id: "immersiveengineering:plantoil" }, 30]],
     })
 })

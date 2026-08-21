@@ -47,24 +47,6 @@
 			y: 0.0d
 		}
 		{
-			id: "6B8F97DE5E091815"
-			linked_quest: "5F5AB4341CAE8DE2"
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			id: "05FF1E6BE24CD1E1"
-			linked_quest: "75FB7CD04B7F2522"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			id: "7E6939502CA74A9B"
-			linked_quest: "0665DE086D83F6F9"
-			x: 7.0d
-			y: 0.0d
-		}
-		{
 			id: "708C1B04DF5B827B"
 			linked_quest: "06EAC7034ACFA220"
 			x: 4.0d
@@ -323,15 +305,53 @@
 			y: 3.0d
 		}
 	]
-	quests: [{
-		entity_vis_size: 1.0f
-		id: "7189776839551466"
-		tasks: [{
-			id: "2623396FB6F14D0A"
-			item: { count: 1, id: "minecraft:bundle" }
-			type: "item"
-		}]
-		x: 2.0d
-		y: 4.0d
-	}]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "7189776839551466"
+			tasks: [{
+				id: "2623396FB6F14D0A"
+				item: { count: 1, id: "minecraft:bundle" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["61E704FFE6D51154"]
+			entity_vis_size: 1.0f
+			id: "215391BCBE601A20"
+			tasks: [{
+				id: "70E9DEB5C0405E9F"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:gold_storage)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["215391BCBE601A20"]
+			entity_vis_size: 1.0f
+			id: "54BBE01BC7D9626A"
+			tasks: [{
+				id: "25EEFAFE89269E7F"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:diamond_storage)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54BBE01BC7D9626A"]
+			entity_vis_size: 1.0f
+			id: "19942017FB453CC5"
+			tasks: [{
+				id: "7A088DB9F1387FB0"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:netherite_storage)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+	]
 }

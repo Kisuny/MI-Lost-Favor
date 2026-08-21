@@ -32,7 +32,7 @@ ServerEvents.tags('item', event => {
 
     event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic', '#relics:relics'])
     //#region tags for emi++ grouping in EMI
-    event.add("milf:multiblock_items", [/^milf:[a-z0-9_]+(placer|empty_box)$/])
+    //event.add("milf:multiblock_items", [/^milf:[a-z0-9_]+(placer|empty_box)$/])
 
     const chiselMaterials = [
         'andesite', 'black_concrete', 'blue_concrete', 'bricks', 'brown_concrete',

@@ -75,9 +75,9 @@ createNewItem('bronze_glass', { stackSize: 8, lang: { "en_us": "Bronze glass", "
 createNewItem('steel_infused_glass', { stackSize: 8, lang: { "en_us": "Steel infused glass", "ru_ru": "Стальное стекло" } })
 createNewItem('tempered_glass', { stackSize: 8, lang: { "en_us": "Tempered glass", "ru_ru": "Закаленное стекло" } })
 
-createNewItem('bronze_machine_bit', { stackSize: 32, lang: { "en_us": "Bronze machine bit", "ru_ru": "Бронзовый фрагмент механизма" } })
-createNewItem('steel_machine_bit', { stackSize: 32, lang: { "en_us": "Steel machine bit", "ru_ru": "Стальной фрагмент механизма" } })
-createNewItem('basic_machine_bit', { stackSize: 32, lang: { "en_us": "Basic machine bit", "ru_ru": "Базовый фрагмент механизма" } })
+createNewItem('bronze_machine_bit', {tag: "milf:ba_bits", stackSize: 32, lang: { "en_us": "Bronze machine bit", "ru_ru": "Бронзовый фрагмент механизма" } })
+createNewItem('steel_machine_bit', { tag: "milf:ba_bits", stackSize: 32, lang: { "en_us": "Steel machine bit", "ru_ru": "Стальной фрагмент механизма" } })
+createNewItem('basic_machine_bit', {  stackSize: 32, lang: { "en_us": "Basic machine bit", "ru_ru": "Базовый фрагмент механизма" } })
 createNewItem('small_copper_fluid_container', { texturePath: 'milf:item/copper_fluid_container', lang: { "en_us": "Small copper fluid container", "ru_ru": "Небольшой медный контейнер для жидкости" } })
 createNewItem('small_steel_fluid_container', { texturePath: 'milf:item/steel_fluid_container', lang: { "en_us": "Small steel fluid container", "ru_ru": "Небольшой стальной контейнер для жидкости" } })
 
@@ -89,10 +89,12 @@ createNewItem('kerogen')
 
 
 createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дальномер" } })
-createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
+createNewItem('cd_reader', { stackSize: 12, lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
+createNewItem('5d_memory_crystal', { stackSize: 1, lang: { "en_us": "5D Memory Crystal" } })
+
 createNewItem('mysterious_disk', { stackSize: 1, lang: { "ru_ru": "Таинственный диск" } })
 createNewItem('storage_disk', { stackSize: 1, lang: { "ru_ru": "Диск Хранения данных" } })
 createNewItem('automation_disk', { stackSize: 1, lang: {  "ru_ru": "Диск автоматизации" } })
@@ -212,12 +214,12 @@ createNewItem('core_hull', { lang: { "en_us": "Core hull", "ru_ru": "Основ�
 createNewItem('cell_half', { lang: { "en_us": "Cell half", "ru_ru": "Часть ячейки" } })
 createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_ru": "Пресс для ячейки" } })
 
-createNewItem('blueprint_pack', { stackSize: 1, lang: { "en_us": "Blueprint Pack", "ru_ru": "Набор чертежей" } })
-createNewItem('mysterious_blueprint', { texturePath: 'milf:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
-createNewItem('storage_blueprint', { texturePath: 'milf:item/blueprint_t2', stackSize: 1, lang: { "en_us": "Storage blueprint", "ru_ru": "Чертёж хранения" } })
-createNewItem('automation_blueprint', { texturePath: 'milf:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })
-createNewItem('quantum_blueprint', { texturePath: 'milf:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
-createNewItem('divine_blueprint', { texturePath: 'milf:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
+// createNewItem('blueprint_pack', { stackSize: 1, lang: { "en_us": "Blueprint Pack", "ru_ru": "Набор чертежей" } })
+// createNewItem('mysterious_blueprint', { texturePath: 'milf:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
+// createNewItem('storage_blueprint', { texturePath: 'milf:item/blueprint_t2', stackSize: 1, lang: { "en_us": "Storage blueprint", "ru_ru": "Чертёж хранения" } })
+// createNewItem('automation_blueprint', { texturePath: 'milf:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })
+// createNewItem('quantum_blueprint', { texturePath: 'milf:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
+// createNewItem('divine_blueprint', { texturePath: 'milf:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
 
 createNewItem('unfired_shovel_head_mold', { lang: { "en_us": "Unfired shovel Head Mold", "ru_ru": "Необожженная форма лопаты" } })
 createNewItem('shovel_head_sand_mold', { lang: { "en_us": "Shovel Head sand mold", "ru_ru": "Форма лопаты из песка" } })

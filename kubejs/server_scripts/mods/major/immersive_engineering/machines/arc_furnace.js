@@ -11,7 +11,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const ieArcFurnaceCraft = (event, args) => {
+function ieArcFurnaceCraft (event, args) {
     let recipe = {
         type: "immersiveengineering:arc_furnace",
         additives: [],
@@ -58,14 +58,13 @@ ServerEvents.recipes(event => {
     ieArcFurnaceCraft(event,{
         inputItems:[
             [{"item": "ae2:mysterious_cube"}, 1],
-            [{"item": "spectrum:bottle_of_fading"}, 4],
-            [{"item": "spectrum:light_blue_pigment"}, 32]
+            [{"item": "spectrum:bottle_of_fading"}, 4]
         ],
         outputItems:[
             [{"item": "ae2:controller"}, 1],
             [{"item": "ae2:terminal"}, 1],
-            [{"item": "milf:blueprint_pack"}, 1],
-            [{"item": "milf:disk_from_space"}, 1],
+            [{ "item": "milf:5d_memory_crystal"}, 1],
+            [{ "item": "milf:disk_from_space" }, 1],
 
         ],
         slag:[

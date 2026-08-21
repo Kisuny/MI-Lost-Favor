@@ -186,56 +186,60 @@ ServerEvents.recipes(event => {
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
-    yTechShaped(event, {
+    milfShaped(event, {
         pattern: [
-            "ddd",
-            "d#d",
+            "dLd",
+            "dSd",
             "   ",
         ],
         key: {
-            "#": { "tag": "c:hammers" },
             "d": { "item": "modern_industrialization:diamond_plate" },
+            S: { "item": "immersiveengineering:armor_steel_helmet" },
+            L: { "item": "modern_industrialization:diamond_large_plate" },
         },
         outputItems: [[{ id: "minecraft:diamond_helmet" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
-    yTechShaped(event, {
+    milfShaped(event, {
         pattern: [
-            "d#d",
-            "ddd",
+            "dSd",
+            "dLd",
             "ddd",
         ],
         key: {
-            "#": { "tag": "c:hammers" },
             "d": { "item": "modern_industrialization:diamond_plate" },
+            S: { "item": "immersiveengineering:armor_steel_chestplate" },
+            L: { "item": "modern_industrialization:diamond_large_plate" },
         },
         outputItems: [[{ id: "minecraft:diamond_chestplate" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
-    yTechShaped(event, {
+    milfShaped(event, {
         pattern: [
-            "ddd",
-            "d#d",
+            "dLd",
+            "dSd",
             "d d",
         ],
         key: {
-            "#": { "tag": "c:hammers" },
             "d": { "item": "modern_industrialization:diamond_plate" },
+            S: { "item": "immersiveengineering:armor_steel_leggings" },
+            L: { "item": "modern_industrialization:diamond_large_plate" },
+
         },
         outputItems: [[{ id: "minecraft:diamond_leggings" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
     
-    yTechShaped(event, {
+    milfShaped(event, {
         pattern: [
-            "d#d",
+            "dSd",
             "d d",
             "   ",
         ],
         key: {
-            "#": { "tag": "c:hammers" },
             "d": { "item": "modern_industrialization:diamond_plate" },
+            S: { "item": "immersiveengineering:armor_steel_boots" },
         },
         outputItems: [[{ id: "minecraft:diamond_boots" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
@@ -270,6 +274,25 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:barrel" }, 1]],
         compatOff:true
     })
+
+    yTechShaped(event, {
+        pattern: [
+            "SP#",
+            "RBP",
+            "rRS",
+        ],
+        key: {
+            "#": { "tag": "c:files" },
+            "S": { "item": "ytech:leather_strips" },
+            "R": { "item": "modern_industrialization:iron_rod" },
+            "P": { "item": "modern_industrialization:iron_plate" },
+            "B": { "item": "modern_industrialization:iron_bolt" },
+            "r": { "item": "modern_industrialization:steel_ring" },
+        },
+        outputItems: [[{ id: "minecraft:shears" }, 1]],
+        removeRecipe: true
+    })
+
 
     milfShaped(event, {
         pattern: [

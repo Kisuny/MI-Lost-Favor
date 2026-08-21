@@ -89,6 +89,21 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            " BC",
+            " RB",
+            "R  "
+        ],
+        key: {
+            B: { item: "modern_industrialization:steel_bolt" },
+            R: { item: "modern_industrialization:iron_rod" },
+            C: { item: "ae2:charged_certus_quartz_crystal" },
+        },
+        outputItems: [[{ id: "ae2:charged_staff" }, 1]],
+        removeRecipe: true
+    })
+
 
 })
 

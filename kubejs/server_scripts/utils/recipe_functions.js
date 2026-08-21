@@ -1,3 +1,4 @@
+//priority: 1
 /**
  * @typedef {Object} MilfShapedArgs
  * @property {Object.<string, any>} key
@@ -37,6 +38,49 @@ function milfShaped(event, args){
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
     if(args.removeRecipeType){event.remove({output: args.outputItems[0][0].id, type: args.removeRecipeType})}
     event.custom(recipe)
+}
+
+function milfShapedCustom(event, args) {
+    let recipe = {
+        type: "minecraft:crafting_shaped",
+        category: "misc",
+        key: args.key,
+        pattern: args.pattern,
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+    }
+
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    let builder = event.shaped(
+        recipe.result.id,
+        recipe.pattern,
+        recipe.key
+    )
+
+    if (args.keepIngredient){
+        builder.keepIngredient(args.keepIngredient)
+    }
+
+    if (!args.compatOff) {
+        let itemInputs = getItemInputsFromShaped(args)
+
+        if (args.keepIngredient) {
+            itemInputs.map(entry => {
+                if (entry[0].item == args.keepIngredient) {
+                    entry.push(0)
+                }
+                return entry
+            })
+        }
+
+        
+
+        miMachineRecipe(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: itemInputs,
+            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+        })
+    }
 }
 
 function milfShapeless(event, args){
@@ -95,6 +139,36 @@ function milfCampfire(event, args){
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
+}
+
+function milfReversibleRecipe(event, itemId1, itemId2){
+    milfShaped(event, {
+        pattern: [
+            "W",
+        ],
+        key: {
+            W: { item: itemId1 },
+        },
+        outputItems: [[{ id: itemId2 }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "W",
+        ],
+        key: {
+            W: { item: itemId2 },
+        },
+        outputItems: [[{ id: itemId1 }, 1]]
+    })
+}
+
+function milfDisableRecipesById(recipeIds){
+    KubeJSTweaks.beforeRecipes(event => {
+        recipeIds.forEach(id => {
+            event.disable(id)
+        })
+    })
 }
 
 function transformShapedRecipe(event, recipe, transformPattern, transformKey){

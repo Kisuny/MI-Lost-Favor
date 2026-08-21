@@ -8,74 +8,28 @@ function ieRefineryRecipe(event, args){
     }
     if(args.catalyst) recipe.catalyst = args.catalyst
     if(!args.compatOff){
-        miMachineRecipe(event, {energy:48, time:200, machine:"modern_industrialization:chemical_reactor",
+        miMachineRecipe(event, {energy:48, time:200, machine:"modern_industrialization:chemical_plant",
             inputItems: [[args.catalyst, 1, 0]],
             inputFluids:args.inputFluids.map(entry => [entry[0], entry[1] * 100]),
             outputFluids: args.outputFluids.map(entry => [entry[0], entry[1] * 100])
         })
     }
-    //if(args.removeRecipe){args.outputFluids.forEach((out) => {event.remove({output: out[0].fluid})})}
+    if (args.removeRecipe) { removeRecipesByOutputs(event, args)}
     event.custom(recipe)
 }
 
 ServerEvents.recipes(event => {
-    // ieRefineryRecipe(event, {
-        
-    //     inputFluids:[
-    //         [ {fluid :"immersiveengineering:ethanol"} , 8 ], 
-    //         [ {fluid :"modern_industrialization:steam"} , 16 ]
-    //     ],
-    //     outputFluids: [[{ fluid: "modern_industrialization:hydrogen" }, 16]],
-    //     compatOff:true,
-    //     catalyst: { item:"modern_industrialization:nickel_plate" }
-        
-    // })
 
     ieRefineryRecipe(event, {
         
         inputFluids:[
-            [ {fluid :"modern_industrialization:benzene"} , 8 ], 
-            [ {fluid :"modern_industrialization:ethylene"} , 8 ]
+            [{ fluid:"immersiveengineering:biodiesel"} , 12 ], 
+            [ {fluid :"modern_industrialization:toluene"} , 6 ]
         ],
-        outputFluids: [[{ fluid: "modern_industrialization:styrene" }, 16]],
-        compatOff:true,
-        catalyst: { item:"modern_industrialization:copper_plate" }
+        outputFluids: [[{ fluid: "immersiveengineering:high_power_biodiesel" }, 18]],
+        catalyst: { item:"modern_industrialization:copper_plate" },
+        removeRecipe: true
         
-    })
-
-    ieRefineryRecipe(event, {
-        
-        inputFluids:[
-            [ {fluid :"immersivepetroleum:diesel"} , 8 ], 
-            [ {fluid :"modern_industrialization:toluene"} , 8 ]
-        ],
-        outputFluids: [[{ fluid: "immersiveengineering:high_power_biodiesel" }, 16]],
-        compatOff:true,
-        catalyst: { item:"modern_industrialization:copper_plate" }
-        
-    })
-
-    ieRefineryRecipe(event, {
-        
-        inputFluids:[
-            [ {fluid :"modern_industrialization:benzene"} , 12 ], 
-            [ {fluid :"modern_industrialization:toluene"} , 4 ]
-        ],
-        outputFluids: [[{ fluid: "immersivepetroleum:benzol" }, 16]],
-        compatOff:true,
-        catalyst: { item:"modern_industrialization:raw_platinum" }
-        
-    })
-
-    ieRefineryRecipe(event, {
-        
-        inputFluids:[
-            [ {fluid :"immersivepetroleum:benzol"} , 12 ], 
-            [ {fluid :"modern_industrialization:toluene"} , 4 ]
-        ],
-        outputFluids: [[{ fluid: "immersivepetroleum:gasoline" }, 16]],
-        compatOff:true,
-        catalyst: { item:"modern_industrialization:raw_platinum" }
     })
 
 
@@ -89,6 +43,19 @@ ServerEvents.recipes(event => {
         outputFluids: [
             [{ fluid: "milf:syngas" }, 3],
         ]
+    })
+
+    ieRefineryRecipe(event, {
+        energy: 120,
+        catalyst: { item: "modern_industrialization:titanium_dust" },
+        inputFluids: [
+            [{ fluid: "modern_industrialization:ethylene" }, 8],
+            [{ fluid: "modern_industrialization:propene" }, 2]
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:polyethylene" }, 10],
+        ],
+        removeRecipe: true
     })
 })
 

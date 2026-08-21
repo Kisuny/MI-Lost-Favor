@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{ "item": "ae2:charged_certus_quartz_crystal" }, 1],
             [{ "tag": "c:gems/quartz" }, 1],
-            [{ "item": "oritech:fluxite" }, 2],
+            [{ "item": "oritech:fluxite" }, 1],
         ],
         outputItems:[[{id:"ae2:fluix_crystal"}]],
         inputFluids: [[{fluid : "minecraft:water"}]],

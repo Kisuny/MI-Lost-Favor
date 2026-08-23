@@ -10,15 +10,15 @@ ItemEvents.modifyTooltips(event => {
 
         //console.log(machineId, tooltipEntry);
 
-        event.add(
-            `mi_tweaks:${machineId}`, 
-            { shift: false }, 
-            Text.translatable("text.modern_industrialization.TooltipsShiftRequired").gray()
-        )
+        // event.add(
+        //     `mi_tweaks:${machineId}`, 
+        //     { shift: false }, 
+        //     Text.translatable("text.modern_industrialization.TooltipsShiftRequired").gray()
+        // )
 
         event.modify(
             `mi_tweaks:${machineId}`,
-            { shift: true },
+            // { shift: true },
             tooltip => tooltip.dynamic("milf:mi_tweaks_batch_tooltip")
         )
     })
@@ -30,7 +30,22 @@ ItemEvents.dynamicTooltips("milf:mi_tweaks_batch_tooltip", event => {
     if (!item) return
     let player = Client.player
     if (!player) return
-    if (!event.shift) return
+    if (!event.shift) {
+        //console.log(event.lines.get(2));
+
+        //console.log(Text.translatable("text.modern_industrialization.TooltipsShiftRequired").getString());
+
+        let holdShiftString = Text.translatable("text.modern_industrialization.TooltipsShiftRequired").getString()
+
+        if (event.lines.stream()
+            .map(component => component.string)
+            .noneMatch(string => string == holdShiftString)
+        ) {
+            event.add(Text.translatable("text.modern_industrialization.TooltipsShiftRequired").gray())
+        }
+        
+        return
+    }
 
     let tooltipEntry = global.miTweaksTieredBatchMachineTooltips[item.idLocation.path]
 

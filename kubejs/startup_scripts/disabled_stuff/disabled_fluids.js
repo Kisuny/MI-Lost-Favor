@@ -4,6 +4,7 @@ global.disabledFluids = [
 
     new DisabledFluidBuilder("modern_industrialization:raw_biodiesel"),
     new DisabledFluidBuilder("modern_industrialization:diesel"),
+    new DisabledFluidBuilder("modern_industrialization:creosote").replaceWith("immersiveengineering:creosote"),
     new DisabledFluidBuilder("modern_industrialization:plant_oil").replaceWith("immersiveengineering:plantoil"),
     new DisabledFluidBuilder("modern_industrialization:ethanol").replaceWith("immersiveengineering:ethanol"),
     new DisabledFluidBuilder("modern_industrialization:biodiesel").replaceWith("immersiveengineering:biodiesel"),

@@ -4,7 +4,7 @@ LootJS.lootTables(event => {
     const lootTypes = LootType.values().map(type => type.name()).map(typeName => LootType[typeName])
     let itemEntries = global.disabledItems
 
-    console.log(lootTypes);
+    //console.log(lootTypes);
     
 
     //console.log(itemEntries);
@@ -14,7 +14,7 @@ LootJS.lootTables(event => {
         let itemId = entry.id
         let replaceWithId = entry.replaceData.id
         let regexMapping = entry.replaceData.regexMapping
-        console.log(regexMapping);
+        //console.log(regexMapping);
         
         if (regexMapping) {
             getItemIdsByRegex(itemId).forEach(id => {
@@ -85,11 +85,5 @@ LootJS.lootTables(event => {
             return false
         }
     }
-
-    function getItemIdsByRegex(regex){
-        return Ingredient.of(regex).itemIds
-    }
-
-
 
 })

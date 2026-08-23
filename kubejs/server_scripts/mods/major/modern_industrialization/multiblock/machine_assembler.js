@@ -499,6 +499,19 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:large_pump" }, 1],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 6],
+            [{ "item": "modern_industrialization:silicon_steel_bolt" }, 12],
+            [{ "item": "modern_industrialization:advanced_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 4],
+        ],
+        outputItems: [[{ "item": "modern_industrialization:steam_cracker" }]],
+        removeRecipe: true
+    })
+
     //#endregion
 
 })

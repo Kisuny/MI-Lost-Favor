@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
     })
 
     customMixingCauldron(event, {
-        fluid: "modern_industrialization:creosote",
+        fluid: "immersiveengineering:creosote",
         fluidAmount: 1000,
         ingredients: [
             { "item": "minecraft:glass_bottle" },

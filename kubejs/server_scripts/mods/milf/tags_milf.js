@@ -1,5 +1,12 @@
 ServerEvents.tags('item', event => {
-    event.add("milf:runes", ['milf:rune_of_piercing', 'milf:rune_of_armor', 'milf:rune_of_bloodshed', 'milf:rune_of_diversity', 'milf:rune_of_fishing', 'milf:rune_of_mining'])
+    event.add("milf:runes", [
+        'milf:rune_of_piercing', 
+        'milf:rune_of_armor', 
+        'milf:rune_of_bloodshed', 
+        'milf:rune_of_diversity', 
+        'milf:rune_of_fishing', 
+        'milf:rune_of_mining'
+    ])
 
     event.add("milf:sweet_berries", ["minecraft:sweet_berries", "toxony:false_berries"])
     event.add("milf:claws", ["friendsandfoes:crab_claw", "starcatcher:lava_crab_claw", "cataclysm:chitin_claw"])
@@ -13,11 +20,9 @@ ServerEvents.tags('item', event => {
 
         "malum:soul_stained_steel_knife", "malum:sundering_anchor",
 
-        // "aquaculture:iron_fillet_knife", "aquaculture:gold_fillet_knife", "aquaculture:diamond_fillet_knife",
-
-
         "dungeonsdelight:flint_cleaver", "dungeonsdelight:iron_cleaver",
-            "dungeonsdelight:diamond_cleaver", "dungeonsdelight:golden_cleaver", "dungeonsdelight:netherite_cleaver",
+            "dungeonsdelight:diamond_cleaver", "dungeonsdelight:golden_cleaver", 
+            "dungeonsdelight:netherite_cleaver",
 
         "ytech:flint_knife", "ytech:bronze_knife"
 
@@ -31,8 +36,37 @@ ServerEvents.tags('item', event => {
     event.add("more_sounds:equipment", "#milf:knives")
 
     event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic', '#relics:relics'])
+
+    event.add('milf:press_molds', [
+        'immersiveengineering:mold_plate',
+        'immersiveengineering:mold_gear',
+        'immersiveengineering:mold_rod',
+        'immersiveengineering:mold_bullet_casing',
+        'immersiveengineering:mold_packing_4',
+        "immersiveengineering:mold_packing_9",
+        "immersiveengineering:mold_unpacking",
+        "milf:hemispherical_press_mold"
+    ])
+
+    event.add('milf:accumulators', [
+        'immersiveengineering:capacitor_mv', 
+        'immersiveengineering:capacitor_lv', 
+        'immersiveengineering:capacitor_hv'
+    ])
+
+    event.add('milf:metal_fences', [
+        'immersiveposts:fence_uranium',
+        'immersiveposts:fence_iron',
+        'immersiveposts:fence_gold',
+        'immersiveposts:fence_copper',
+        'immersiveposts:fence_lead',
+        'immersiveposts:fence_silver',
+        'immersiveposts:fence_nickel',
+        'immersiveposts:fence_constantan',
+        'immersiveposts:fence_electrum'
+    ])
+
     //#region tags for emi++ grouping in EMI
-    //event.add("milf:multiblock_items", [/^milf:[a-z0-9_]+(placer|empty_box)$/])
 
     const chiselMaterials = [
         'andesite', 'black_concrete', 'blue_concrete', 'bricks', 'brown_concrete',

@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
             [{ item: "immersiveengineering:mold_plate" }, 1, 0]
         ],
         inputFluids:[
-            [{fluid:"milf:liquid_plastic"}, 250]
+            [{fluid:"milf:liquid_plastic"}, 100]
         ],
         outputItems: [[{ "item": "modern_industrialization:plastic_plate" }]],
         removeRecipe: true

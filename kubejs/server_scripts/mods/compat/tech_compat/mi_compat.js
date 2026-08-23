@@ -5,6 +5,7 @@ ServerEvents.tags('item', event => {
         "minecraft:stick",
         "minecraft:chain",
         "modern_industrialization:fire_clay_bricks",
+        "extendedae:entro_block"
     ]
 
     event.add('milf:nocompat', noCompat)
@@ -194,18 +195,23 @@ ServerEvents.recipes(event => {
 
     let itemIdsAlreadyHandledByMI = new $HashSet()
 
-    event.forEachRecipe({type: "modern_industrialization:packer"}, recipe => {
+    event.forEachRecipe({ type: "modern_industrialization:packer", not: { output: "#milf:nocompat" } }, recipe => {
         let recipeJson = JSON.parse(recipe.json)
         let miItemInputs = ensureArray(recipeJson.item_inputs)
         let miItemOutputs = ensureArray(recipeJson.item_outputs)        
 
         let miOutput = miItemOutputs[0]
 
-        if (miItemInputs.length != 1) return
+        if (miItemInputs.length != 1) {
+
+            if (miItemInputs[1].item != "modern_industrialization:packer_block_template") return
+
+            miItemInputs = miItemInputs.filter(entry => entry.item != "modern_industrialization:packer_block_template")
+
+        }
         if (miOutput.amount != 1) return
 
         let miInput = miItemInputs[0]
-
 
         if (miInput.amount == 4) {
 
@@ -237,7 +243,7 @@ ServerEvents.recipes(event => {
 
     let itemIdsAlreadyHandledByMIAndIE = new $HashSet(itemIdsAlreadyHandledByMI)
 
-    event.forEachRecipe({ type: "immersiveengineering:metal_press" }, recipe => {
+    event.forEachRecipe({ type: "immersiveengineering:metal_press", not: { output: "#milf:nocompat" } }, recipe => {
         let recipeJson = JSON.parse(recipe.json)
         let mold = recipeJson.mold
 
@@ -250,7 +256,7 @@ ServerEvents.recipes(event => {
 
     event.forEachRecipe({ 
         type: 'minecraft:crafting_shaped', 
-        not: { or: [{ mod: "xkdeco" }, { mod: "extendedae" }, { mod: "oritech" }]} 
+        not: { or: [{ output: "#milf:nocompat" }, { mod: "xkdeco" }, { mod: "oritech" }]} 
     }, recipe => {
         let rJSON = JSON.parse(recipe.json)
         let result = rJSON.result
@@ -263,7 +269,7 @@ ServerEvents.recipes(event => {
         let miInputs = getItemInputsFromShaped({
             pattern: pattern,
             key: key
-        })
+        })        
 
         if (miInputs.length != 1) return
 

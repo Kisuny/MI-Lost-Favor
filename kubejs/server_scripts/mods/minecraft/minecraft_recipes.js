@@ -397,14 +397,9 @@ ServerEvents.recipes(event => {
     });
 })
 
-KubeJSTweaks.beforeRecipes(event => {    
-
-    const disableByRecipeID = [
-        "minecraft:iron_bars"
-    ]
-
-    disableByRecipeID.forEach(id => {
-        event.disable(id)
-    })
-
-})
+milfDisableRecipesById([
+    "minecraft:iron_bars",
+    "minecraft:golden_pickaxe",
+    "minecraft:golden_sword",
+    "minecraft:golden_axe",
+])

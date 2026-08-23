@@ -944,6 +944,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/coke/unpacker/gem",
         "modern_industrialization:materials/coke/craft/block_from_gem",
         "modern_industrialization:materials/coke/craft/gem_from_block",
+        "modern_industrialization:materials/steel/craft/block_from_ingot",
+        "modern_industrialization:materials/steel/packer/block",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
         "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",

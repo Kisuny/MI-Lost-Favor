@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             [{ tag: "minecraft:logs_that_burn" }, 1]
         ],
         outputFluids: [
-            [{ fluid: "modern_industrialization:creosote" }, 250],
+            [{ fluid: "immersiveengineering:creosote" }, 250],
         ],
         outputItems: [
             [{ item: "minecraft:charcoal" }, 1],
@@ -32,9 +32,9 @@ ServerEvents.recipes(event => {
             [{ item: "minecraft:coal_block" }, 1]
         ],
         outputFluids: [
-            [{ fluid: "modern_industrialization:creosote" }, 2000],
-            [{ fluid: "modern_industrialization:creosote" }, 1000, 0.77],
-            [{ fluid: "modern_industrialization:creosote" }, 700, 0.55],
+            [{ fluid: "immersiveengineering:creosote" }, 2000],
+            [{ fluid: "immersiveengineering:creosote" }, 1000, 0.77],
+            [{ fluid: "immersiveengineering:creosote" }, 700, 0.55],
         ],
         outputItems: [
             [{ item: "modern_industrialization:coke" }, 7],

@@ -6,21 +6,23 @@ global.disabledItems = [
     //#endregion
 
     //#region MI
-    
     new DisabledItemBuilder("industrialization_overdrive:pyrolyse_oven"),
     new DisabledItemBuilder("extended_industrialization:nano_saber"),
     new DisabledItemBuilder("modern_industrialization:steel_block").replaceWith("immersiveengineering:storage_steel"),
-    
+    new DisabledItemBuilder("modern_industrialization:netherite_hammer"),
+    new DisabledItemBuilder("modern_industrialization:diamond_hammer"),
+    new DisabledItemBuilder("modern_industrialization:iron_barrel"),
+    new DisabledItemBuilder("modern_industrialization:iron_tank"),
     //#endregion
 
     //#region Oritech
 
-    new DisabledItemBuilder("oritech:adamant_dust").replaceWith("modern_industrialization:adamant_dust"),
-    new DisabledItemBuilder("oritech:energite_dust").replaceWith("modern_industrialization:energite_dust"),
-    new DisabledItemBuilder("oritech:duratium_dust").replaceWith("modern_industrialization:duratium_dust"),
-    new DisabledItemBuilder("oritech:biosteel_dust").replaceWith("modern_industrialization:biosteel_dust"),
-    new DisabledItemBuilder("oritech:quartz_dust").replaceWith("modern_industrialization:quartz_dust"),
-    new DisabledItemBuilder("oritech:coal_dust").replaceWith("modern_industrialization:coal_dust"),
+    new DisabledItemBuilder("oritech:adamant_dust"),
+    new DisabledItemBuilder("oritech:energite_dust"),
+    new DisabledItemBuilder("oritech:duratium_dust"),
+    new DisabledItemBuilder("oritech:biosteel_dust"),
+    new DisabledItemBuilder("oritech:quartz_dust"),
+    new DisabledItemBuilder("oritech:coal_dust"),
 
     new DisabledItemBuilder("oritech:steel_ingot"),
     new DisabledItemBuilder("oritech:steel_block"),
@@ -160,18 +162,91 @@ global.disabledItems = [
 
     //#endregion
 
+    //#region ytech
 
+    new DisabledItemBuilder(/ytech:(?!stone)(\w+)_mortar_and_pestle\b/),
+    new DisabledItemBuilder(/ytech:(?!flint|bronze)(\w+)_knife\b/),
+    new DisabledItemBuilder(/ytech:(?!flint)(\w+)_spear\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_hoe\b/),
+    new DisabledItemBuilder(/ytech:(?!stone|bronze)(\w+)_hammer\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_hammer_head_part\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_file\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_saw\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_shears\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_shovel\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_sword\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_sword_blade_part\b/),
+    new DisabledItemBuilder(/ytech:(?!flint|bronze)(\w+)_axe\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_axe_head_part\b/),
+    new DisabledItemBuilder(/ytech:(?!antler|bronze)(\w+)_pickaxe\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_pickaxe_head_part\b/),
+
+    new DisabledItemBuilder(/ytech:(?!wooden)(\w+)_plate\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_block\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_helmet\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_chestplate\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_leggings\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_boots\b/),
+
+    new DisabledItemBuilder(/ytech:(\w+)_ore\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_deposit\b/),
+
+
+    new DisabledItemBuilder(/ytech:(?!divining)(\w+)_rod\b/)
+        .replaceWithRegexMapping(material => `modern_industrialization:${material == "golden" ? "gold" : material}_rod`),
+    new DisabledItemBuilder(/ytech:(\w+)_ingot\b/)
+        .replaceWithRegexMapping(material => `modern_industrialization:${material == "golden" ? "gold" : material}_ingot`),
+    new DisabledItemBuilder(/ytech:(?!wooden)(\w+)_bolt\b/)
+        .replaceWithRegexMapping(material => `modern_industrialization:${material == "golden" ? "gold" : material}_bolt`),
+
+    new DisabledItemBuilder("ytech:crushed_copper").replaceWith("milf:crushed_copper"),
+    new DisabledItemBuilder("ytech:crushed_gold").replaceWith("milf:crushed_gold"),
+    new DisabledItemBuilder("ytech:crushed_iron").replaceWith("milf:crushed_iron"),
+    new DisabledItemBuilder("ytech:crushed_galena").replaceWith("milf:crushed_lead"),
+    new DisabledItemBuilder("ytech:crushed_cassiterite").replaceWith("milf:crushed_tin"),
+
+    new DisabledItemBuilder("ytech:raw_galena").replaceWith("modern_industrialization:raw_lead"),
+    new DisabledItemBuilder("ytech:raw_cassiterite").replaceWith("modern_industrialization:raw_tin"),
+
+    new DisabledItemBuilder("ytech:reinforced_bricks"),
+    new DisabledItemBuilder("ytech:bread_dough"),
+    new DisabledItemBuilder("ytech:flour"),
+
+    //#endregion
 
     new DisabledItemBuilder(/moderndynamics:\w+_cable/),
 
+    //#region IE
+
     new DisabledItemBuilder("immersiveengineering:mold_wire"),
-    new DisabledItemBuilder(/immersiveengineering:wire_\w+/),
+    
     new DisabledItemBuilder(/immersiveengineering:stick_(?!treated\b)(\w+)\b/)
-        .replaceWithRegexMapping(material => `modern_industrialization:${material}_rod`),
+        .replaceWithRegexMapping(material => `modern_industrialization:${material}_rod`)
+        .replaceIn(["LOOT_TABLES"]),
 
-    new DisabledItemBuilder(createExclusionRegex("immersiveengineering:storage_", ["uranium", "steel"])),
+    new DisabledItemBuilder(/immersiveengineering:ingot_(\w+)\b/)
+        .replaceWithRegexMapping(material => `modern_industrialization:${material}_ingot`)
+        .replaceIn(["RECIPE_INPUTS"]),
+    new DisabledItemBuilder(/immersiveengineering:wire_(\w+)\b/)
+        .replaceWithRegexMapping(material => `modern_industrialization:${material}_wire`)
+        .replaceIn(["RECIPE_INPUTS"]),
 
-    new DisabledItemBuilder("ytech:bronze_mortar_and_pestle"),
+    new DisabledItemBuilder(/immersiveengineering:storage_(?!uranium|steel\b)(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:slab_storage_(?!uranium|steel\b)(\w+)\b/),
+
+    new DisabledItemBuilder(/immersiveengineering:dust_(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:raw_(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:nugget_(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:ingot_(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:plate_(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:ore_(\w+)\b/),
+    new DisabledItemBuilder(/immersiveengineering:deepslate_ore_(\w+)\b/),
+
+    new DisabledItemBuilder(/immersiveengineering:.*coke.*/),
+
+    new DisabledItemBuilder(/immersiveposts:stick_(\w+)\b/),
+
+    //#endregion
 
     new DisabledItemBuilder("monsterplus:curseflame_powder"),
 
@@ -182,52 +257,24 @@ global.disabledItems = [
     new DisabledItemBuilder("aquaculture:wooden_fillet_knife"),
     new DisabledItemBuilder("enigmaticlegacyplus:forbidden_fruit"),
     new DisabledItemBuilder("enigmaticlegacyplus:unholy_grail"),
-    new DisabledItemBuilder("farmersdelight:flint_knife").replaceWith("ytech:flint_knife", true).inLootTables(),
+    new DisabledItemBuilder("farmersdelight:flint_knife")
+        .replaceWith("ytech:flint_knife").replaceIn(["LOOT_TABLES"]),
 
 ].map(builder => builder.build())
-
-function createExclusionRegex(base, exclude) {
-    let escapedBase = base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-
-    let lookahead = ""
-    if (exclude.length > 0) {
-        let escapedWords = exclude.map(word =>
-            word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b"
-        )
-        lookahead = `(?!${escapedWords.join('|')})`
-    }
-
-    let pattern = `${escapedBase}${lookahead}(\\w+)\\b`
-
-    return `/${pattern}/`
-}
-
 
 function DisabledItemBuilder(id){
     const self = this
     this.id = id,
 
     this.replaceData = { id: null, in: ["RECIPE_INPUTS", "RECIPE_OUTPUTS", "LOOT_TABLES"], regexMapping: null},
-    this.replaceWith = function(id, isNotEverywhere){
+    this.replaceWith = function(id){
         self.replaceData.id = id
-        this.inRecipes = function (exact) {
-            if (exact){
-                self.replaceData.in = exact
-                return self
-            } else {
-                self.replaceData.in = ["RECIPE_INPUTS", "RECIPE_OUTPUTS"]
-                return self
-            }
+        return self
+    }
 
-        }
-        this.inLootTables = function () {
-            self.replaceData.in = ["LOOT_TABLES"]
-            return self
-        }
-        if (isNotEverywhere){
-            return this
-        }
-        else return self
+    this.replaceIn = function(types){
+        this.replaceData.in = types
+        return self
     }
 
     this.replaceWithRegexMapping = function(mapping){
@@ -235,14 +282,8 @@ function DisabledItemBuilder(id){
         return self
     }
 
-    this.additionalLootTables = []
-
-    this.alsoRemoveFrom = function(loot_tables){
-        self.additionalLootTables = loot_tables
-    }
-
     this.build = function(){
-        return { id: self.id, replaceData: self.replaceData, additionalLootTables: self.additionalLootTables }
+        return { id: self.id, replaceData: self.replaceData}
     }
 
     return self

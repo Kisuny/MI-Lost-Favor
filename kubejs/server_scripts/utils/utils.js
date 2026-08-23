@@ -83,6 +83,10 @@ function removeRecipesByOutputs(event, { outputItems, outputFluids, removeRecipe
     })
 }
 
+function getItemIdsByRegex(regex) {
+    return Ingredient.of(regex).itemIds
+}
+
 function getXYZFromPosCompound(posCompound){
     let x = posCompound.getDouble("x")
     let y = posCompound.getDouble("y")

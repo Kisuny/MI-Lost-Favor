@@ -4,6 +4,28 @@ ServerEvents.recipes(event => {
     itemEntries.forEach(entry => {
         let itemId = entry.id
         let replaceWithId = entry.replaceData.id
+        let regexMapping = entry.replaceData.regexMapping
+
+        if (regexMapping) {
+            getItemIdsByRegex(itemId).forEach(id => {
+                let material = id.match(itemId)[1]
+                let replaceWithRegexId = regexMapping(material)
+                entry.replaceData.in.forEach(replaceInfo => {
+                    switch (replaceInfo) {
+                        case "RECIPE_INPUTS":
+                            event.replaceInput({ input: id }, id, replaceWithRegexId)
+                            break
+
+                        case "RECIPE_OUTPUTS":
+                            event.replaceOutput({ output: id }, id, replaceWithRegexId)
+                            break
+                    }
+                })
+                
+                
+            })
+        }
+
         if (replaceWithId == null){
             event.remove({ output: itemId })
             event.remove({ input: itemId })

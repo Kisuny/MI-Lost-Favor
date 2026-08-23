@@ -10,22 +10,6 @@ function ieShapedFluid(event, args) {
 
         let { itemInputs, fluidInputs } = getInputsFromIEShaped(args)
 
-        // let itemInputs = []
-        // let fluidInputs = []
-        // let amounts = args.pattern.join("")
-
-        // Object.entries(args.key).forEach(m => {
-        //     let regex = new RegExp(m[0], 'g')
-        //     if (m[1].type) {
-        //         let tempObj = Object.assign({}, m[1])
-        //         delete tempObj.type
-        //         delete tempObj.amount
-        //         fluidInputs.push([tempObj, m[1].amount])
-        //     } else {
-        //         itemInputs.push([m[1], (amounts.match(regex) || []).length])
-        //     }
-        //     //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
-        // })
         miMachineRecipe(event, {
             energy: 2, time: 200, machine: "modern_industrialization:assembler",
             inputItems: itemInputs,
@@ -38,58 +22,56 @@ function ieShapedFluid(event, args) {
     event.custom(recipe)
 }
 
-
 ServerEvents.recipes(event => {
-    // (`･Θ･´) - Some recipes are located in data because it is easier to change a recipe there and delete the previous recipe at the same time (overwrite)
-    event.remove({
-        output: [
-            /immersiveengineering:.*coke.*/,
-            /immersiveengineering:plate.*/,
-            // /immersiveengineering:wire.*/,
-            /immersiveengineering:stick.*/,
-            /immersiveengineering:dust.*/,
-            /immersiveengineering:ingot.*/,
-            /immersiveengineering:raw.*/,
-            /immersiveengineering:nugget.*/,
-            // /immersiveengineering:storage_.*/,
-            'immersiveengineering:wire_copper',
-            'immersiveengineering:wire_electrum',
-            'immersiveengineering:wire_aluminum',
-            'immersiveengineering:wire_steel',
-            'immersiveengineering:wire_lead',
-            /immersiveposts:stick_.*/,
 
-        ]
-    })
+    // event.remove({
+    //     output: [
+    //         // /immersiveengineering:.*coke.*/,
+    //         // /immersiveengineering:plate.*/,
+    //         // /immersiveengineering:wire.*/,
+    //         // /immersiveengineering:stick.*/,
+    //         // /immersiveengineering:dust.*/,
+    //         // /immersiveengineering:ingot.*/,
+    //         // /immersiveengineering:raw.*/,
+    //         // /immersiveengineering:nugget.*/,
+    //         // // /immersiveengineering:storage_.*/,
+    //         // 'immersiveengineering:wire_copper',
+    //         // 'immersiveengineering:wire_electrum',
+    //         // 'immersiveengineering:wire_aluminum',
+    //         // 'immersiveengineering:wire_steel',
+    //         // 'immersiveengineering:wire_lead',
+    //         // /immersiveposts:stick_.*/,
 
-    event.remove({ id: "immersiveengineering:crafting/nugget_copper_to_copper_ingot" })
+    //     ]
+    // })
 
-    const materials_for_wires = ["steel", "copper", "lead"]
-    materials_for_wires.forEach(material => {
-        event.replaceInput(
-            { input: `immersiveengineering:wire_${material}` },
-            `immersiveengineering:wire_${material}`,
-            `modern_industrialization:${material}_wire`
-        )
-    });
+    //event.remove({ id: "immersiveengineering:crafting/nugget_copper_to_copper_ingot" })
 
-    const iron_to_steel = [
-        "immersiveengineering:hammer",
-        "immersiveengineering:dynamo",
-    ]
-    iron_to_steel.forEach(element => {
-        event.replaceInput(
-            { output: element },
-            "iron_ingot",
-            "modern_industrialization:steel_ingot"
-        )
-    });
+    // const materials_for_wires = ["steel", "copper", "lead"]
+    // materials_for_wires.forEach(material => {
+    //     event.replaceInput(
+    //         { input: `immersiveengineering:wire_${material}` },
+    //         `immersiveengineering:wire_${material}`,
+    //         `modern_industrialization:${material}_wire`
+    //     )
+    // });
 
-    event.replaceInput(
-        { output: "immersiveengineering:toolbox" },
-        "modern_industrialization:aluminum_plate",
-        "modern_industrialization:steel_plate"
-    )
+    // const iron_to_steel = [
+    //     "immersiveengineering:hammer",
+    // ]
+    // iron_to_steel.forEach(element => {
+    //     event.replaceInput(
+    //         { output: element },
+    //         "iron_ingot",
+    //         "modern_industrialization:steel_ingot"
+    //     )
+    // })
+
+    // event.replaceInput(
+    //     { output: "immersiveengineering:toolbox" },
+    //     "modern_industrialization:aluminum_plate",
+    //     "modern_industrialization:steel_plate"
+    // )
 
     //#region ieShapedFluid
 
@@ -200,6 +182,38 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region milfShaped
+
+    milfShaped(event, {
+        pattern: [
+            " Dr",
+            " RD",
+            "R  "
+        ],
+        key: {
+            R: { item: "immersiveengineering:stick_treated" },
+            D: { item: "modern_industrialization:steel_double_ingot" },
+            r: { item: "ytech:leather_strips" },
+        },
+        outputItems: [[{ id: "immersiveengineering:hammer" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "rIr",
+            "GCG",
+            "RRR"
+        ],
+        key: {
+            r: { item: "modern_industrialization:iron_ring" },
+            I: { item: "modern_industrialization:iron_rod" },
+            G: { item: "modern_industrialization:bronze_dust" },
+            C: { item: "immersiveengineering:crate" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+        },
+        outputItems: [[{ id: "immersiveengineering:toolbox" }, 1]],
+        removeRecipe: true
+    })
 
     milfShaped(event, {
         pattern: [
@@ -1188,10 +1202,10 @@ milfDisableRecipesById([
     "immersiveengineering:smelting/gold_ingot_from_dust_from_blasting",
 
     "immersiveengineering:crafting/nugget_netherite_to_netherite_ingot",
-    "immersiveengineering:crafting/ingot_steel_to_storage_steel",
     "immersiveengineering:crafting/empty_shell",
     "immersiveengineering:crafting/redstone_acid",
     "immersiveengineering:crafting/concrete",
+    "immersiveengineering:crafting/nugget_copper_to_copper_ingot",
 
 
     "immersiveengineering:mixer/redstone_acid",

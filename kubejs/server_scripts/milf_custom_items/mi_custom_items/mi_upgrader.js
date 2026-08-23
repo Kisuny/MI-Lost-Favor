@@ -145,56 +145,10 @@ ServerEvents.recipes(event => {
                 }
 
                 break;
-            // case 2:
-            //     event.shaped(value.upgradesTo,
-            //         [
-            //             " K ",
-            //             " U ",
-            //             "S E"
-            //         ],
-            //         {
-            //             K: { item: key },
-            //             U: { item: "milf:mi_upgrader" },
-            //             S: { item: value.upgradeMaterials[0].id },
-            //             E: { item: value.upgradeMaterials[1].id }
-            //         }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
-            //     break;
-            // case 3:
-            //     event.shaped(value.upgradesTo,
-            //         [
-            //             " K ",
-            //             " U ",
-            //             "SEG"
-            //         ],
-            //         {
-            //             K: { item: key },
-            //             U: { item: "milf:mi_upgrader" },
-            //             S: { item: value.upgradeMaterials[0].id },
-            //             E: { item: value.upgradeMaterials[1].id },
-            //             G: { item: value.upgradeMaterials[2].id }
-            //         }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
-            //     break;
-            // case 4:
-            //     event.shaped(value.upgradesTo,
-            //         [
-            //             " K ",
-            //             "SUE",
-            //             "G s"
-            //         ],
-            //         {
-            //             K: { item: key },
-            //             U: { item: "milf:mi_upgrader" },
-            //             S: { item: value.upgradeMaterials[0].id },
-            //             E: { item: value.upgradeMaterials[1].id },
-            //             G: { item: value.upgradeMaterials[2].id },
-            //             s: { item: value.upgradeMaterials[3].id }
-            //         }).keepIngredient("milf:mi_upgrader").modifyResult("milf:mi_upgrader_recipe")
-            //     break;
+
             default:
                 break;
         }
-
-
 
     }
 
@@ -204,17 +158,8 @@ ServerEvents.modifyRecipeResult("milf:mi_upgrader_recipe", event =>{
 
     let prev = event.grid.getItem(0)
 
-    //console.log(prev)
-    
-
     let outputItem = new $ItemStack(event.item.asHolder(), 1, prev.componentsPatch)
-    // try {
-    //     console.log(outputItem);
-        
-    // } catch (error) {
-    //     console.log(error);
-        
-    // }
     
     event.success(outputItem)
+
 })

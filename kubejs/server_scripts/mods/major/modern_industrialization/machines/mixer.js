@@ -1,27 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // miMachineRecipe(event, {
-    //     energy:8, time:100, machine:"modern_industrialization:mixer",
-    //     inputItems:[
-    //         [{tag:"c:plates/aluminum"}],
-    //         [{tag:"c:dusts/aluminum"}],
-    //     ],
-    //     outputItems:[
-    //         [{item:"milf:cd"}]
-    //     ]
-    // })
-
-    // miMachineRecipe(event, {
-    //     energy:8, time:600, machine:"modern_industrialization:mixer",
-    //     inputItems:[
-    //         [{tag:"c:dusts/diamond"}],
-    //         [{tag:"c:nuggets/steel"}, 1, 0],
-    //     ],
-    //     outputItems:[
-    //         [{item:"modern_industrialization:diamond_tiny_dust"}, 4]
-    //     ]
-    // })
-
     miMachineRecipe(event, {
         energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
@@ -52,7 +30,7 @@ ServerEvents.recipes(event => {
         ],
         inputFluids:[
             [{fluid:"minecraft:water"}, 1000],
-            [{fluid:"modern_industrialization:creosote"}, 500]
+            [{ fluid:"immersiveengineering:creosote"}, 500]
         ],
         outputItems:[
             [{item:"architects_palette:cerebral_plate"}, 16]
@@ -78,7 +56,7 @@ ServerEvents.recipes(event => {
             [{ tag: "minecraft:planks" }, 2],
         ],
         inputFluids: [
-            [{ fluid: "modern_industrialization:creosote" }, 250]
+            [{ fluid: "immersiveengineering:creosote" }, 250]
         ],
         outputItems: [
             [{ item: "immersiveengineering:treated_wood_horizontal" }, 2]

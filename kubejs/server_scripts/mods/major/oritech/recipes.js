@@ -1028,7 +1028,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "oritech:laser/fluxite",
         "oritech:particle/fluxite",
         "oritech:assembler/fluxgate",
-        "oritech:assembler/magnet"
+        "oritech:assembler/magnet",
+        "oritech:plastic_blockblockinv"
     ]
 
     disableByRecipeID.forEach(id => {

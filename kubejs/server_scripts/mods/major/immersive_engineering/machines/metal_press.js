@@ -62,14 +62,6 @@ function iePressRecipe(event, args) {
 
 ServerEvents.recipes(event => {
 
-    //ae stuff
-
-    var tier1bp = 'Mysterious Blueprint'
-    var tier2bp = "Storage Blueprint"
-    var tier3bp = "Automation Blueprint"
-    var tier4bp = "Quantum Blueprint"
-    var tier5bp = "Divine Blueprint"
-
     function aePressRecipe(input, output, mold, energy) {
         iePressRecipe(event, {
             inputItems:[input],
@@ -92,25 +84,11 @@ ServerEvents.recipes(event => {
             result: blueprintItem
         })
     }
-    // aePressBlueprintRecipe("milf:mysterious_blueprint", MILF_BLUEPRINTS.tier1AE, '#84b9ff')
-    // aePressBlueprintRecipe("milf:storage_blueprint", MILF_BLUEPRINTS.tier2AE, '#fff678')
-    // aePressBlueprintRecipe("milf:automation_blueprint", MILF_BLUEPRINTS.tier3AE, '#8de8ff')
-    // aePressBlueprintRecipe("milf:quantum_blueprint", MILF_BLUEPRINTS.tier4AE, '#c795ff')
-    // aePressBlueprintRecipe("milf:divine_blueprint", MILF_BLUEPRINTS.tier5AE, '#abffc0')
 
     pressBlueprintRecipe("modern_industrialization:guidebook", MILF_BLUEPRINTS.getAsItem.usefulTools)
     pressBlueprintRecipe("modern_industrialization:analog_circuit", MILF_BLUEPRINTS.getAsItem.miBasicComponents)
     pressBlueprintRecipe("modern_industrialization:electronic_circuit", MILF_BLUEPRINTS.getAsItem.miComponents)
 
-    // processors
-    // aePressRecipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);
-    // aePressRecipe([{"tag": "c:ingots/gold"}, 2], [{id :"ae2:printed_logic_processor"}, 1], "ae2:logic_processor_press", 3200);
-    // aePressRecipe([{"tag": "c:gems/certus_quartz"}, 2], [{id :"ae2:printed_calculation_processor"}, 1], "ae2:calculation_processor_press", 3200);
-    // aePressRecipe([{"tag": "c:ingots/aluminum"}, 2], [{id :"ae2:printed_engineering_processor"}, 1], "ae2:engineering_processor_press", 3200);
-    // aePressRecipe([{"item": "advanced_ae:quantum_alloy"}, 2], [{id :"advanced_ae:printed_quantum_processor"}, 1], "advanced_ae:quantum_processor_press", 3200);
-    // aePressRecipe([{"item": "megacells:sky_steel_ingot"}, 2], [{id :"megacells:printed_accumulation_processor"}, 1], "megacells:accumulation_processor_press", 3200);
-
-    //custom stuff
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:cell_half"}, 1], "milf:cell_press", 3200);
     //aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:hemispherical_press_mold", 3200);
 
@@ -142,13 +120,6 @@ ServerEvents.recipes(event => {
         energy: 3200,
     })
 
-    // iePressRecipe(event, {
-    //     inputItems: [[{ "item": "knightlib:small_essence" }, 4]],
-    //     outputItems: [[{ id: "knightlib:great_essence" }, 1]],
-    //     mold: { item: "immersiveengineering:mold_packing_4" },
-    //     energy: 3200,
-    // })
-
     iePressRecipe(event, {
         inputItems: [[{ "item": "grimoireofgaia:experience_iron" }, 4]],
         outputItems: [[{ id: "grimoireofgaia:experience_diamond" }, 1]],
@@ -176,6 +147,14 @@ ServerEvents.recipes(event => {
         ],
         mold: { item: "immersiveengineering:mold_packing_4" },
         outputItems: [[{ id: "modern_industrialization:coke_block" }]]
+    })
+
+    iePressRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:steel_ingot" }, 9]
+        ],
+        mold: { item: "immersiveengineering:mold_packing_9" },
+        outputItems: [[{ id: "immersiveengineering:storage_steel" }]]
     })
 
     iePressRecipe(event, {

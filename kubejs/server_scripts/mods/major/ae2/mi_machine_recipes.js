@@ -471,7 +471,7 @@ ServerEvents.recipes(event => {
         },
 
         "ae2:cell_component_256k": {
-            
+
             disk: MILF_BLUEPRINTS.getDisk.tier3AE,
             energy: T3_ENERGY,
             time: T3_TIME,
@@ -1724,6 +1724,7 @@ ServerEvents.recipes(event => {
             [{ item: "ae2:engineering_processor" }, 1],
             [{ item: "ae2:calculation_processor" }, 1],
             [{ item: "modern_industrialization:silicon_large_plate" }, 1],
+            [{ item: "modern_industrialization:silicon_battery" }, 2],
             [{ item: "modern_industrialization:silver_wire" }, 4],
         ],
         inputFluids: [

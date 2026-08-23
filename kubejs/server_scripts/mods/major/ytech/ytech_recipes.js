@@ -1,14 +1,4 @@
-/**
- * YTech remaining shaped recipe
- *  - `args`:
- *      - `key` : 
- *      - `pattern` : 
- *      - `outputItems` : 
- *      - --------
- *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
- *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
-*/
-const yTechShaped = (/**@type {$RecipesKubeEvent}*/ event, args) => {
+function yTechShaped ( event, args) {
     let recipe = {
         type: "ytech:remaining_shaped_crafting",
         category: "misc",
@@ -67,107 +57,107 @@ function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args) {
 }
 
 ServerEvents.recipes(event => {
-    // (`･Θ･´) - Some recipes are located in data because it is easier to change a recipe there and delete the previous recipe at the same time (overwrite)
-    event.remove({
-        output: [
-            'ytech:tin_plate',
-            'ytech:lead_plate',
-            'ytech:copper_plate',
-            'ytech:golden_plate',
-            'ytech:bronze_plate',
-            'ytech:iron_plate',
-            'ytech:tin_block',
-            'ytech:lead_block',
-            'ytech:bronze_block',
-            'ytech:raw_galena_block',
-            'ytech:raw_cassiterite_block',
-            "ytech:crushed_iron",
-            'ytech:copper_helmet',
-            'ytech:copper_chestplate',
-            'ytech:copper_leggings',
-            'ytech:copper_boots',
-            'ytech:bronze_helmet',
-            'ytech:bronze_chestplate',
-            'ytech:bronze_leggings',
-            'ytech:bronze_boots',
-            'ytech:bread_dough',
-            'ytech:flour',
-            'ytech:copper_pickaxe_head_part',
-            'ytech:copper_axe_head_part',
-            'ytech:copper_sword_blade_part',
-            'ytech:tin_axe_head_part',
-            'ytech:tin_pickaxe_head_part',
-            'ytech:tin_sword_blade_part',
-            'ytech:gold_axe_head_part',
-            'ytech:gold_pickaxe_head_part',
-            'ytech:gold_sword_blade_part',
-            'ytech:lead_axe_head_part',
-            'ytech:lead_pickaxe_head_part',
-            'ytech:lead_sword_blade_part',
-            'ytech:lead_pickaxe',
-            'ytech:tin_pickaxe',
-            'ytech:copper_pickaxe',
-            'ytech:copper_axe',
-            'ytech:lead_axe',
-            'ytech:tin_axe',
-            'ytech:copper_sword',
-            'ytech:lead_sword',
-            'ytech:tin_sword',
-            'ytech:tin_shovel',
-            'ytech:lead_shovel',
-            'ytech:copper_shovel',
-            'ytech:tin_shears',
-            'ytech:lead_shears',
-            'ytech:golden_shears',
-            'ytech:copper_shears',
 
-            'ytech:tin_mortar_and_pestle',
-            'ytech:lead_mortar_and_pestle',
-            'ytech:iron_mortar_and_pestle',
-            'ytech:copper_mortar_and_pestle',
-            'ytech:golden_mortar_and_pestle',
-            'ytech:tin_knife',
-            'ytech:lead_knife',
-            'ytech:iron_knife',
-            'ytech:golden_knife',
-            'ytech:copper_knife',
-            'ytech:copper_hoe',
-            'ytech:lead_hoe',
-            'ytech:tin_hoe',
-            'ytech:tin_hammer',
-            'ytech:lead_hammer',
-            'ytech:iron_hammer',
-            'ytech:golden_hammer',
-            'ytech:copper_hammer',
-            'ytech:tin_file',
-            'ytech:lead_file',
-            'ytech:iron_file',
-            'ytech:golden_file',
-            'ytech:copper_file',
-            'ytech:tin_hammer_head_part',
-            'ytech:lead_hammer_head_part',
-            'ytech:gold_hammer_head_part',
-            'ytech:copper_hammer_head_part',
-            'ytech:copper_saw',
-            'ytech:golden_saw',
-            'ytech:iron_saw',
-            'ytech:lead_saw',
-            'ytech:tin_saw',
+    // event.remove({
+    //     output: [
+    //         'ytech:tin_plate',
+    //         'ytech:lead_plate',
+    //         'ytech:copper_plate',
+    //         'ytech:golden_plate',
+    //         'ytech:bronze_plate',
+    //         'ytech:iron_plate',
+    //         'ytech:tin_block',
+    //         'ytech:lead_block',
+    //         'ytech:bronze_block',
+    //         'ytech:raw_galena_block',
+    //         'ytech:raw_cassiterite_block',
+    //         "ytech:crushed_iron",
+    //         'ytech:copper_helmet',
+    //         'ytech:copper_chestplate',
+    //         'ytech:copper_leggings',
+    //         'ytech:copper_boots',
+    //         'ytech:bronze_helmet',
+    //         'ytech:bronze_chestplate',
+    //         'ytech:bronze_leggings',
+    //         'ytech:bronze_boots',
+    //         'ytech:bread_dough',
+    //         'ytech:flour',
+    //         'ytech:copper_pickaxe_head_part',
+    //         'ytech:copper_axe_head_part',
+    //         'ytech:copper_sword_blade_part',
+    //         'ytech:tin_axe_head_part',
+    //         'ytech:tin_pickaxe_head_part',
+    //         'ytech:tin_sword_blade_part',
+    //         'ytech:gold_axe_head_part',
+    //         'ytech:gold_pickaxe_head_part',
+    //         'ytech:gold_sword_blade_part',
+    //         'ytech:lead_axe_head_part',
+    //         'ytech:lead_pickaxe_head_part',
+    //         'ytech:lead_sword_blade_part',
+    //         'ytech:lead_pickaxe',
+    //         'ytech:tin_pickaxe',
+    //         'ytech:copper_pickaxe',
+    //         'ytech:copper_axe',
+    //         'ytech:lead_axe',
+    //         'ytech:tin_axe',
+    //         'ytech:copper_sword',
+    //         'ytech:lead_sword',
+    //         'ytech:tin_sword',
+    //         'ytech:tin_shovel',
+    //         'ytech:lead_shovel',
+    //         'ytech:copper_shovel',
+    //         'ytech:tin_shears',
+    //         'ytech:lead_shears',
+    //         'ytech:golden_shears',
+    //         'ytech:copper_shears',
+
+    //         'ytech:tin_mortar_and_pestle',
+    //         'ytech:lead_mortar_and_pestle',
+    //         'ytech:iron_mortar_and_pestle',
+    //         'ytech:copper_mortar_and_pestle',
+    //         'ytech:golden_mortar_and_pestle',
+    //         'ytech:tin_knife',
+    //         'ytech:lead_knife',
+    //         'ytech:iron_knife',
+    //         'ytech:golden_knife',
+    //         'ytech:copper_knife',
+    //         'ytech:copper_hoe',
+    //         'ytech:lead_hoe',
+    //         'ytech:tin_hoe',
+    //         'ytech:tin_hammer',
+    //         'ytech:lead_hammer',
+    //         'ytech:iron_hammer',
+    //         'ytech:golden_hammer',
+    //         'ytech:copper_hammer',
+    //         'ytech:tin_file',
+    //         'ytech:lead_file',
+    //         'ytech:iron_file',
+    //         'ytech:golden_file',
+    //         'ytech:copper_file',
+    //         'ytech:tin_hammer_head_part',
+    //         'ytech:lead_hammer_head_part',
+    //         'ytech:gold_hammer_head_part',
+    //         'ytech:copper_hammer_head_part',
+    //         'ytech:copper_saw',
+    //         'ytech:golden_saw',
+    //         'ytech:iron_saw',
+    //         'ytech:lead_saw',
+    //         'ytech:tin_saw',
 
 
-        ]
-    })
+    //     ]
+    // })
 
-    const removing_by_recipe_id = [
-        "ytech:bronze_ingot_from_alloying",
-        "minecraft:golden_pickaxe",
-        "minecraft:golden_sword",
-        "minecraft:golden_axe",
-    ]
+    // const removing_by_recipe_id = [
+    //     "ytech:bronze_ingot_from_alloying",
+    //     "minecraft:golden_pickaxe",
+    //     "minecraft:golden_sword",
+    //     "minecraft:golden_axe",
+    // ]
 
-    removing_by_recipe_id.forEach(id => {
-        event.remove({ id: id })
-    });
+    // removing_by_recipe_id.forEach(id => {
+    //     event.remove({ id: id })
+    // });
 
     yTechShaped(event, {
         pattern: [
@@ -263,37 +253,37 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.ytech.hammering("heavy_weighted_pressure_plate", "iron_block")
-        .tool("#c:hammers");;
+        .tool("#c:hammers");
 
-    event.replaceInput({ output: 'ytech:reinforced_bricks' }, 'modern_industrialization:copper_bolt', 'modern_industrialization:fire_clay_brick')
-    event.replaceInput({ output: 'ytech:reinforced_bricks' }, 'modern_industrialization:copper_plate', 'modern_industrialization:fire_clay_brick')
-    event.replaceInput({ input: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'milf:crushed_copper')
-    event.replaceInput({ input: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'milf:crushed_gold')
-    event.replaceInput({ input: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'milf:crushed_iron')
-    event.replaceInput({ input: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'milf:crushed_lead')
-    event.replaceInput({ input: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'milf:crushed_tin')
-    event.replaceInput({ input: 'ytech:raw_galena' }, 'ytech:raw_galena', 'modern_industrialization:raw_lead')
-    event.replaceInput({ input: 'ytech:raw_cassiterite' }, 'ytech:raw_cassiterite', 'modern_industrialization:raw_tin')
-    event.replaceOutput({ output: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'milf:crushed_gold')
-    event.replaceOutput({ output: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'milf:crushed_tin')
-    event.replaceOutput({ output: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'milf:crushed_lead')
-    event.replaceOutput({ output: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'milf:crushed_copper')
-    event.replaceOutput({ output: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'milf:crushed_iron')
-    event.replaceOutput({ output: 'ytech:bronze_ingot' }, 'ytech:bronze_ingot', 'modern_industrialization:bronze_ingot')
-    event.replaceOutput({ output: 'ytech:tin_ingot' }, 'ytech:tin_ingot', 'modern_industrialization:tin_ingot')
-    event.replaceOutput({ output: 'ytech:lead_ingot' }, 'ytech:lead_ingot', 'modern_industrialization:lead_ingot')
-    event.replaceOutput({ output: 'ytech:tin_rod' }, 'ytech:tin_rod', 'modern_industrialization:tin_rod')
-    event.replaceOutput({ output: 'ytech:copper_rod' }, 'ytech:copper_rod', 'modern_industrialization:copper_rod')
-    event.replaceOutput({ output: 'ytech:golden_rod' }, 'ytech:golden_rod', 'modern_industrialization:gold_rod')
-    event.replaceOutput({ output: 'ytech:iron_rod' }, 'ytech:iron_rod', 'modern_industrialization:iron_rod')
-    event.replaceOutput({ output: 'ytech:lead_rod' }, 'ytech:lead_rod', 'modern_industrialization:lead_rod')
-    event.replaceOutput({ output: 'ytech:bronze_rod' }, 'ytech:bronze_rod', 'modern_industrialization:bronze_rod')
-    event.replaceOutput({ output: 'ytech:golden_bolt' }, 'ytech:golden_bolt', 'modern_industrialization:gold_bolt')
-    event.replaceOutput({ output: 'ytech:copper_bolt' }, 'ytech:copper_bolt', 'modern_industrialization:copper_bolt')
-    event.replaceOutput({ output: 'ytech:iron_bolt' }, 'ytech:iron_bolt', 'modern_industrialization:iron_bolt')
-    event.replaceOutput({ output: 'ytech:lead_bolt' }, 'ytech:lead_bolt', 'modern_industrialization:lead_bolt')
-    event.replaceOutput({ output: 'ytech:tin_bolt' }, 'ytech:tin_bolt', 'modern_industrialization:tin_bolt')
-    event.replaceOutput({ output: 'ytech:bronze_bolt' }, 'ytech:bronze_bolt', 'modern_industrialization:bronze_bolt')
+    // event.replaceInput({ output: 'ytech:reinforced_bricks' }, 'modern_industrialization:copper_bolt', 'modern_industrialization:fire_clay_brick')
+    // event.replaceInput({ output: 'ytech:reinforced_bricks' }, 'modern_industrialization:copper_plate', 'modern_industrialization:fire_clay_brick')
+    // event.replaceInput({ input: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'milf:crushed_copper')
+    // event.replaceInput({ input: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'milf:crushed_gold')
+    // event.replaceInput({ input: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'milf:crushed_iron')
+    // event.replaceInput({ input: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'milf:crushed_lead')
+    // event.replaceInput({ input: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'milf:crushed_tin')
+    // event.replaceInput({ input: 'ytech:raw_galena' }, 'ytech:raw_galena', 'modern_industrialization:raw_lead')
+    // event.replaceInput({ input: 'ytech:raw_cassiterite' }, 'ytech:raw_cassiterite', 'modern_industrialization:raw_tin')
+    // event.replaceOutput({ output: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'milf:crushed_gold')
+    // event.replaceOutput({ output: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'milf:crushed_tin')
+    // event.replaceOutput({ output: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'milf:crushed_lead')
+    // event.replaceOutput({ output: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'milf:crushed_copper')
+    // event.replaceOutput({ output: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'milf:crushed_iron')
+    // event.replaceOutput({ output: 'ytech:bronze_ingot' }, 'ytech:bronze_ingot', 'modern_industrialization:bronze_ingot')
+    // event.replaceOutput({ output: 'ytech:tin_ingot' }, 'ytech:tin_ingot', 'modern_industrialization:tin_ingot')
+    // event.replaceOutput({ output: 'ytech:lead_ingot' }, 'ytech:lead_ingot', 'modern_industrialization:lead_ingot')
+    // event.replaceOutput({ output: 'ytech:tin_rod' }, 'ytech:tin_rod', 'modern_industrialization:tin_rod')
+    // event.replaceOutput({ output: 'ytech:copper_rod' }, 'ytech:copper_rod', 'modern_industrialization:copper_rod')
+    // event.replaceOutput({ output: 'ytech:golden_rod' }, 'ytech:golden_rod', 'modern_industrialization:gold_rod')
+    // event.replaceOutput({ output: 'ytech:iron_rod' }, 'ytech:iron_rod', 'modern_industrialization:iron_rod')
+    // event.replaceOutput({ output: 'ytech:lead_rod' }, 'ytech:lead_rod', 'modern_industrialization:lead_rod')
+    // event.replaceOutput({ output: 'ytech:bronze_rod' }, 'ytech:bronze_rod', 'modern_industrialization:bronze_rod')
+    // event.replaceOutput({ output: 'ytech:golden_bolt' }, 'ytech:golden_bolt', 'modern_industrialization:gold_bolt')
+    // event.replaceOutput({ output: 'ytech:copper_bolt' }, 'ytech:copper_bolt', 'modern_industrialization:copper_bolt')
+    // event.replaceOutput({ output: 'ytech:iron_bolt' }, 'ytech:iron_bolt', 'modern_industrialization:iron_bolt')
+    // event.replaceOutput({ output: 'ytech:lead_bolt' }, 'ytech:lead_bolt', 'modern_industrialization:lead_bolt')
+    // event.replaceOutput({ output: 'ytech:tin_bolt' }, 'ytech:tin_bolt', 'modern_industrialization:tin_bolt')
+    // event.replaceOutput({ output: 'ytech:bronze_bolt' }, 'ytech:bronze_bolt', 'modern_industrialization:bronze_bolt')
 
     event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#milf:knives')
     event.replaceInput({ input: '#c:knives' }, '#c:knives', '#milf:knives')
@@ -359,6 +349,19 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:grass_bed" }, 1]],
         removeRecipe:true
+    })
+
+
+    milfShaped(event, {
+        pattern: [
+            "FF",
+            "FF"
+        ],
+        key: {
+            F: { item: "ytech:grass_fibers" },
+        },
+        outputItems: [[{ id: "ytech:thatch" }, 1]],
+        removeRecipe: true
     })
 
     yTechShapeless(event, {
@@ -467,3 +470,7 @@ ServerEvents.recipes(event => {
     })
 
 })
+
+milfDisableRecipesById([
+    "ytech:bronze_ingot_from_alloying"
+])

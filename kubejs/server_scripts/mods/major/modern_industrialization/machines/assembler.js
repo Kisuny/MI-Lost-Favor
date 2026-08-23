@@ -351,8 +351,8 @@ ServerEvents.recipes(event => {
         energy: 18, time: 300, machine: "modern_industrialization:assembler",
         inputItems: [
             [{ "item": "modern_industrialization:digital_circuit_board" }, 1],
+            [{ "item": "modern_industrialization:electronic_circuit" }, 1],
             [{ "item": "oritech:advanced_computing_engine" }, 1],
-            [{ "item": "modern_industrialization:silicon_battery" }, 2],
             [{ "item": "modern_industrialization:or_gate" }, 2],
             [{ "item": "modern_industrialization:not_gate" }, 2],
             [{ "item": "modern_industrialization:and_gate" }, 2],

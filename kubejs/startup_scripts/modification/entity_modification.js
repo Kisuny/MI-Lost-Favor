@@ -37,13 +37,6 @@ const listsWithMultipliers = [
         }
     },
     {
-        list: netherskeletons_mobs, multipliers: {
-            'minecraft:generic.max_health': 3,
-            'minecraft:generic.attack_damage': 2,
-            'minecraft:generic.armor': 2,
-        }
-    },
-    {
         list: rottencreatures_mobs, multipliers: {
             'minecraft:generic.max_health': 3,
             'minecraft:generic.attack_damage': 2,
@@ -130,19 +123,6 @@ const cataclysm_mobs = [
     "cataclysm:lionfish",
     "cataclysm:deepling_brute",
     "cataclysm:deepling",
-];
-
-//t3
-const netherskeletons_mobs = [
-    "netherskeletons:basalt_skeleton",
-    "netherskeletons:charred_skeleton",
-    "netherskeletons:crimson_skeleton",
-    "netherskeletons:crying_obby_skeleton",
-    "netherskeletons:netherborn_skeleton",
-    "netherskeletons:skelly_ghast",
-    "netherskeletons:skelly_piglin",
-    "netherskeletons:soul_skeleton",
-    "netherskeletons:warped_skeleton",
 ];
 
 //t3
@@ -255,7 +235,6 @@ const grimoireofgaia_mobs = [
 // monsterplus_mobs
 // mowziesmobs_mobs
 // mythsandlegends_mobs
-// netherskeletons_mobs
 // rottencreatures_mobs
 EntityJSEvents.attributes(function (event) {
     let mobToMultipliers = {};

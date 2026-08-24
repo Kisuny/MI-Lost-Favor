@@ -1,0 +1,17 @@
+filename = 'fastboot-1.21.x-v1.3neo.jar'
+name = 'FastBoot'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6', '1.21.7', '1.21.8' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'fastboot-1.21.x-v1.3neo.jar'
+
+[download]
+hash = '1c9101baf7e4b111fc55e0b5a8687e67be2f626c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6998687
+project-id = 1030285

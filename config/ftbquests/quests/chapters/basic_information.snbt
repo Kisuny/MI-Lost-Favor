@@ -382,12 +382,19 @@
 					count: 1
 					id: "grimoireofgaia:deco_garden_gnome"
 				}
+				team_reward: false
 				type: "item"
 			}]
-			tasks: [{
-				id: "4C9B71D2BC1CA752"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4C9B71D2BC1CA752"
+					type: "checkmark"
+				}
+				{
+					id: "16B2E922EA9A05D5"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: 2.0d
 		}

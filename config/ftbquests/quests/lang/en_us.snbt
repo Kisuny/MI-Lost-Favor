@@ -396,15 +396,15 @@
 		"Чудо голосование добавило чудо летающих червей, а теперь их нет..."
 	]
 	quest.0BAE1463A33045D0.quest_desc: [
-		"In this modpack, there are <keyword>pings</keyword> for players, set to &3button 5&r on the mouse by default. For convenience, we recommend setting pings to &3ALT&r or the middle mouse button (&3wheel&r)."
+		"In this modpack, there are <keyword><bounce amplitude=2.0 frequency=1.5 phase=1.0>pings</bounce></keyword> for players, set to <keyword>button 5</keyword> on the mouse by default. For convenience, we recommend setting pings to <keyword>ALT</keyword> or the middle mouse button (<keyword>wheel</keyword>)."
 		""
-		"You can also &lspecify a channel for pings&r, so you don't have to listen to the sounds of other people's pings. To do this, use the command &l&3/pingwheel channel NameChannel&r&r"
+		"You can also <property>specify a channel for pings</property>, so you don't have to <shake amplitude=0.3 frequency=1.5>listen to the sounds of other people's pings</shake>. To do this, use the command <keyword>/pingwheel channel NameChannel</keyword>"
 		""
 		"{@pagebreak}"
-		"В модпаке существуют <keyword>метки</keyword> для игроков, по умолчанию эта кнопка «&3button 5&r» на мышке, рекомендуем поставить эту кнопку на &3ALT&r или же среднюю кнопку мышки(&3колесико&r), для удобства."
+		"В модпаке существуют <keyword><bounce amplitude=2.0 frequency=1.5 phase=1.0>метки</bounce></keyword> для игроков, по умолчанию эта кнопка «<keyword>button 5</keyword>» на мышке, рекомендуем поставить эту кнопку на <keyword>ALT</keyword> или же среднюю кнопку мышки (<keyword>колесико</keyword>), для удобства."
 		""
-		"Вы так же можете &lуказать свой канал для меток&r, чтобы &nне слушать звуки чужих меток&r командой &l&3/pingwheel channel НазваниеКанала&r&r"
-		"Либо же &l&3/pingwheel config&r&r и написать в меню &3channel&r нужный вам канал, удаление канала из меню ввода канала позволит вернуться в &oобщий канал&r. Так же командой &l&3/pingwheel config&r&r можно настроить другие функции мода, в случае надобности."
+		"Вы так же можете <property>указать свой канал для меток</property>, чтобы <warning><shake amplitude=0.3 frequency=1.5>не слушать звуки чужих меток</shake></warning> командой <keyword>/pingwheel channel НазваниеКанала</keyword>"
+		"Либо же <keyword>/pingwheel config</keyword> и написать в меню <keyword>channel</keyword> нужный вам канал, удаление канала из меню ввода канала позволит вернуться в <property>общий канал</property>. Так же командой <keyword>/pingwheel config</keyword> можно настроить другие функции мода, в случае надобности."
 	]
 	quest.0BF78D040CA973B7.quest_desc: ["Each chimney provides <keyword>+50°</keyword> but the maximum number of <keyword>Chimneys</keyword> that can be installed is <keyword>4 Brick Chimneys</keyword> and <keyword>4 reinforced Brick Chimneys</keyword>."]
 	quest.0BF7B4B3DAAE234C.quest_desc: [
@@ -495,15 +495,25 @@
 		"Только &lсамый&r удачливый сможет найти <named>символ лепреконов</named>!"
 	]
 	quest.0E16DE12CC7D4CEA.quest_desc: [
-		"Adds small <property>rewarding events</property> such as <magic>Dig Spots</magic>, <magic>Fishing Spots</magic>, <magic>Drop Rushes</magic> and &6Gold Rushes&r."
+		"Adds small <property>rewarding events</property> such as <magic>Dig Spots</magic>, <magic>Fishing Spots</magic>, <magic>Drop Rushes</magic> and <magic>Gold Rushes</magic>."
 		""
-		"• <magic>Dig Spots</magic> holding &6small treasures&r"
+		"• <magic>Dig Spots</magic> holding <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>small treasures</bounce></positive>"
 		""
-		"• <magic>Fishing Spots</magic> guaranteeing a &6catch with treasure&r"
+		"• <magic>Fishing Spots</magic> guaranteeing a <positive>catch with treasure</positive>"
 		""
 		"• <magic>Drop Rushes</magic> for <keyword>bonus harvests</keyword> in a simple <property>timed challenge</property>"
 		""
-		"• &6Gold Rushes&r for <keyword>extra ores</keyword> while <positive>mining</positive>"
+		"• <magic>Gold Rushes</magic> for <keyword>extra ores</keyword> while <positive>mining</positive>"
+		"{@pagebreak}"
+		"Добавляет небольшие <property>события с наградой</property>, такие как <magic>Dig Spots</magic>, <magic>Fishing Spots</magic>, <magic>Drop Rushes</magic> и <magic>Gold Rushes</magic>."
+		""
+		"• <magic>Dig Spots</magic> хранят <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>небольшие сокровища</bounce></positive>"
+		""
+		"• <magic>Fishing Spots</magic> гарантируют <positive>улов с сокровищем</positive>"
+		""
+		"• <magic>Drop Rushes</magic> дают <keyword>дополнительный урожай</keyword> в простом <property>испытании на время</property>"
+		""
+		"• <magic>Gold Rushes</magic> дают <keyword>дополнительную руду</keyword> во время <positive>добычи</positive>"
 	]
 	quest.0E432C3C0C5E9D1D.quest_desc: ["<property>Fire Resistance</property> (duh)"]
 	quest.0E4BFAA97BD15447.quest_desc: [
@@ -636,7 +646,11 @@
 		""
 		"You can also buy from <keyword>Wandering Trader</keyword>"
 	]
-	quest.1150D94139B83FBF.quest_desc: ["Now you can <positive>hot-swap armor</positive> by simply <positive>right-clicking</positive> it, or if you, fancy pants, want to have the whole hat-check room of armor, you can <positive>sneak right-click</positive> an <keyword>armor stand</keyword> to hot-swap the whole set!"]
+	quest.1150D94139B83FBF.quest_desc: [
+		"Now you can <positive>hot-swap armor</positive> by simply <positive>right-clicking</positive> it, or if you, <wiggle amplitude=0.5 frequency=1.0 phase=1.0>fancy pants</wiggle>, want to have the whole hat-check room of armor, you can <positive>sneak right-click</positive> an <keyword>armor stand</keyword> to hot-swap the whole set!"
+		"{@pagebreak}"
+		"Теперь вы можете <positive>быстро сменить броню</positive>, просто <positive>кликнув ПКМ</positive> по ней, а если вы, <wiggle amplitude=0.5 frequency=1.0 phase=1.0>пижон эдакий</wiggle>, хотите устроить целую гардеробную из брони, можно <positive>зажать Shift и кликнуть ПКМ</positive> по <keyword>стойке для брони</keyword>, чтобы сменить весь комплект разом!"
+	]
 	quest.117BA19FF568DCC4.quest_desc: [""]
 	quest.11A8A041EB1774AA.quest_desc: [
 		"Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
@@ -872,13 +886,25 @@
 		""
 		"As this modpack is <property>progress dependent</property>, we introduced quite a number of <warning>restrictions</warning>, as well as <positive>simplifications</positive> to the gameplay! "
 		""
-		"No hostile monsters spawn around you(Almost), wicked bastards are lurking around in the <magic>dungeons</magic>, waiting for the opportunity to strike at the first unwary wanderer that happens to stumble across their domain, so be <warning>cautious</warning>. "
+		"No hostile monsters spawn around you(Almost), wicked bastards are lurking around in the <magic>dungeons</magic>, <shake amplitude=0.4 frequency=1.2>waiting for the opportunity to strike</shake> at the first unwary wanderer that happens to stumble across their domain, so be <warning>cautious</warning>. "
 		""
-		"<keyword>Maps</keyword> are essential to not get lost here, so you'll have an opportunity to make a scribbled one quite early, but the proper one will require the <property>tech knowledge</property> you don't possess as of the time being, but worry not, as it will come to you eventually."
+		"<keyword>Maps</keyword> are essential to not get lost here, so you'll have an opportunity to make a scribbled one quite early, but the proper one will require the <property>tech knowledge</property> you don't possess as of the time being, but <positive><fade minAlpha=0.4 frequency=1.0>worry not</fade></positive>, as it will come to you eventually."
 		""
 		"<positive>Press <key>R</key> to open the Radial Menu</positive>, where you'll find most of the modpack important <keyword>keybindings</keyword>."
 		""
-		"Inhabitants of those long-forgotten <magic>places</magic> around the world experienced burglary firsthand and thus know how to protect their possessions, <warning>locking them behind those magical locks</warning> </font>"
+		"Inhabitants of those long-forgotten <magic>places</magic> around the world experienced burglary firsthand and thus know how to protect their possessions, <warning>locking them behind those magical locks</warning>"
+		"{@pagebreak}"
+		"&lДобро пожаловать в <grad colors=#848dcb,#45509d freq=0.5>MI:Lost Favor!"
+		""
+		"Поскольку этот модпак завязан на <property>прогрессии</property>, мы ввели немало <warning>ограничений</warning>, а также <positive>упрощений</positive> геймплея!"
+		""
+		"Рядом с вами враждебные мобы не спавнятся (почти), но в <magic>подземельях</magic> таятся мерзкие твари, <shake amplitude=0.4 frequency=1.2>выжидающие момент для удара</shake> по первому неосторожному путнику, забредшему в их владения, так что будьте <warning>осторожны</warning>."
+		""
+		"<keyword>Карты</keyword> необходимы, чтобы не заблудиться здесь - набросок карты вы сможете сделать довольно рано, но для нормальной карты понадобятся <property>технические знания</property>, которых у вас пока нет, но <positive><fade minAlpha=0.4 frequency=1.0>не переживайте</fade></positive>, со временем они появятся."
+		""
+		"<positive>Нажмите <key>R</key>, чтобы открыть радиальное меню</positive>, где вы найдёте большинство важных <keyword>горячих клавиш</keyword> модпака."
+		""
+		"Обитатели этих давно забытых <magic>мест</magic> по всему миру на собственном опыте познали, что такое кража, и потому знают, как защитить своё имущество, <warning>запирая его на магические замки</warning>"
 	]
 	quest.17A44FD7738F4496.quest_desc: [
 		"Used to <positive>crush items</positive> to make them less intact"
@@ -1243,19 +1269,33 @@
 		"После активации наденьте его в слот Curios, чтобы получить <property>+1 слот для талисмана</property>, позволяющий надеть ещё одну безделушку. Пробуждение глаза также открывает <magic>Рассказчика</magic> - таинственный голос, который начинает комментировать ваш путь: вход в Нижний мир или Энд, бой с Иссушителем или Драконом Края, смерть, возрождение и другие ключевые моменты."
 	]
 	quest.2141539997D6480F.quest_desc: [
-		"\"R\" - Radial menu."
+		"\"R\" - <keyword>Radial menu</keyword>."
 		""
-		"Mobs - gone."
+		"Mobs - <positive>gone</positive>."
 		""
-		"Dungeons - scary."
+		"Dungeons - <warning><shake amplitude=0.4 frequency=1.5>scary</shake></warning>."
 		""
-		"Maps - later."
+		"Maps - <property>later</property>."
 		""
-		"Chests - locked."
+		"Chests - <warning>locked</warning>."
 		""
 		"Have fun, unlock stuff."
 		""
-		"Good luck, sweetie pie <3"
+		"Good luck, <positive><bounce amplitude=1.2 frequency=1.5 phase=1.0>sweetie pie</bounce></positive> <3"
+		"{@pagebreak}"
+		"«R» - <keyword>радиальное меню</keyword>."
+		""
+		"Мобов - <positive>нету</positive>."
+		""
+		"Подземелья - <warning><shake amplitude=0.4 frequency=1.5>опасные</shake></warning>."
+		""
+		"Карта - <property>позже</property>."
+		""
+		"Сундуки - <warning>заперты</warning>."
+		""
+		"Веселись, разблокируй всякое."
+		""
+		"Удачи, <positive><bounce amplitude=1.2 frequency=1.5 phase=1.0>солнышко</bounce></positive> <3"
 	]
 	quest.2141539997D6480F.quest_subtitle: "ADHD edition"
 	quest.2141539997D6480F.title: "<pend>Hi wrld"
@@ -1537,6 +1577,7 @@
 		"{image:milf:textures/quest_pic/locking.png width:200 height:170 align:center}"
 	]
 	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. <warning><bold>You can read them whenever, we won't judge</warning>."]
+	quest.2B7F14733C000C22.title: "information quests"
 	quest.2BAF1070D316E4A4.quest_desc: [
 		"Apotheosis overhauls Enchanting by adding <keyword>Enchanting Stats</keyword>.  These are special properties provided by bookshelves that change the behavior of the <keyword>Enchanting Table</keyword>. There are three primary stats, and a few secondary stats. In addition, the max level of the Enchanting Table is increased to <property>100</property>, and the max levels of most enchantments are automatically increased."
 		""
@@ -1685,9 +1726,13 @@
 		"• Используя &7перо&r на этикетке вы отобразите название предмета."
 	]
 	quest.2F728B18B7B4C5FE.quest_desc: [
-		"<keyword>Boss Checklist</keyword> adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu <keyword>\"R\"</keyword>."
+		"<keyword><shake amplitude=0.4 frequency=1.0>Boss Checklist</shake></keyword> adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu <keyword>\"R\"</keyword>."
 		""
-		"The menu displays all bosses from various mods, which you can mark as defeated, or they will be marked automatically if the mod is installed on the server. For each boss, you can view their model/image, mod name, drops, spawn conditions, and other additional info."
+		"The menu displays all bosses from various mods, which you can <positive><pulse base=0.6 amplitude=1.2>mark as defeated</pulse></positive>, or they will be marked automatically if the mod is installed on the server. For each boss, you can view their <property>model/image, mod name, drops, spawn conditions</property>, and other additional info."
+		"{@pagebreak}"
+		"<keyword><shake amplitude=0.4 frequency=1.0>Boss Checklist</shake></keyword> добавляет в игру список всех боссов модпака, доступный через радиальное меню на <keyword>\"R\"</keyword>."
+		""
+		"Меню показывает всех боссов из разных модов, которых можно <positive><pulse base=0.6 amplitude=1.2>отметить как побеждённых</pulse></positive>, либо они отмечаются автоматически, если мод установлен на сервере. Для каждого босса доступны <property>модель/изображение, название мода, дроп, условия спавна</property> и другая дополнительная информация."
 	]
 	quest.2F74A3F607148012.quest_desc: ["Once you have made the hanging variant, hold it and right click on the bottom of a block to hang it. After a while, it will turn into the useful dry variant."]
 	quest.2F8C776248EC39A4.quest_desc: [
@@ -2126,7 +2171,11 @@
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
 	]
 	quest.3ACEAB25342B053C.title: "WIP Items"
-	quest.3B40DB8CA23BB5A0.quest_desc: ["When <keyword>walls and fences</keyword> hold you, fret not, now you can <positive>jump them</positive>!"]
+	quest.3B40DB8CA23BB5A0.quest_desc: [
+		"When <keyword>walls and fences</keyword> hold you, fret not, now you can <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>jump them</bounce></positive>!"
+		"{@pagebreak}"
+		"Когда <keyword>стены и заборы</keyword> вас держат, не переживайте, теперь вы можете <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>перепрыгнуть их</bounce></positive>!"
+	]
 	quest.3B4BC79A5DE6EC7C.quest_desc: [
 		"The <keyword>Machine Extender</keyword> can be <positive>placed on top of a machine</positive> to \"extend\" it, giving <keyword>more space</keyword> for pipes to connect. Machine Extenders can be <positive>stacked</positive>."
 		""
@@ -2343,11 +2392,17 @@
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>squid</keyword>."]
 	quest.3F076989AA64CD64.quest_desc: [
-		"Mod adds a keybind which <positive>zooms in</positive> your <keyword>FOV</keyword> while it's held down, allowing you to see <keyword>further away</keyword>, and keybinds for <keyword>increasing and decreasing the zoom level</keyword>."
+		"Mod adds a keybind which <positive><circle radius=0.8 frequency=1.2 phase=0.0>zooms in</circle></positive> your <keyword>FOV</keyword> while it's held down, allowing you to see <keyword><wave amplitude=1.2 frequency=0.8 wavelength=3.0>further away</wave></keyword>, and keybinds for <keyword>increasing and decreasing the zoom level</keyword>."
 		""
 		"By default on the <keyword>«G»</keyword> button!"
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/zume\" } }, \".\" ]"
+		"{@pagebreak}"
+		"Мод добавляет клавишу, которая <positive><circle radius=0.8 frequency=1.2 phase=0.0>приближает</circle></positive> ваш <keyword>FOV</keyword>, пока зажата, позволяя видеть <keyword><wave amplitude=1.2 frequency=0.8 wavelength=3.0>дальше</wave></keyword>, а также клавиши для <keyword>увеличения и уменьшения уровня зума</keyword>."
+		""
+		"По умолчанию на кнопке <keyword>«G»</keyword>!"
+		""
+		"[ \"Подробнее можно почитать \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/zume\" } }, \".\" ]"
 	]
 	quest.3F168A7DE7626306.quest_desc: [
 		"<keyword>Tin</keyword> suitable for smelter"
@@ -2517,9 +2572,13 @@
 		"&n&l&#FEECD6Совет:&r&r&r Используйте &#FEECD6мотыгу&r для разрушения &#CAE4C8листвы&r, это гораздо быстрее чем ручками!"
 	]
 	quest.449B931E4C9867A1.quest_desc: [
-		"Press <keyword>T</keyword> to reveal the <keyword>trash slot</keyword> in your inventory, so you no longer have to litter around whenever you fill your pockets with \"useful\" items and suddenly there's no space left. Of course, later down the line you'll unlock plastic, paper, metal, and all the other types of trash that you'll HAVE to filter into corresponding, progressively expanding trash slots, because of course we need to complicate things. How could we possibly be modpack devs otherwise, eh?"
+		"Press <keyword>T</keyword> to reveal the <keyword>trash slot</keyword> in your inventory, so you no longer have to litter around whenever you fill your pockets with \"useful\" items and suddenly there's no space left. Of course, later down the line you'll unlock <property>plastic, paper, metal</property>, and all the other types of trash that you'll <warning>HAVE to filter</warning> into corresponding, progressively expanding trash slots, because <wiggle amplitude=0.5 frequency=1.0 phase=1.0>of course we need to complicate things</wiggle>. How could we possibly be modpack devs otherwise, eh?"
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \", but be aware and don't believe a single word, because we know better.\" ]"
+		"{@pagebreak}"
+		"Нажмите <keyword>T</keyword>, чтобы открыть <keyword>слот мусора</keyword> в инвентаре, чтобы больше не приходилось мусорить каждый раз, когда карманы забиты «полезными» вещами и вдруг не остаётся места. Конечно же, позже вы разблокируете <property>пластик, бумагу, металл</property> и все остальные виды мусора, которые вам <warning>ПРИДЁТСЯ сортировать</warning> по соответствующим, постепенно расширяющимся слотам мусора, потому что <wiggle amplitude=0.5 frequency=1.0 phase=1.0>как же без усложнений</wiggle>. Как иначе мы могли бы быть разработчиками модпака, а?"
+		""
+		"[ \"Подробнее можно почитать \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \", но не верьте ни единому слову, мы знаем лучше.\" ]"
 	]
 	quest.44AA4DF21D616953.quest_desc: [
 		"The <keyword>Starlight Bucket</keyword> is a universal bucket. <positive>Right-click</positive> it onto any other bucket in your inventory to copy that fluid into it, then use it exactly like the original bucket to place that content."
@@ -3288,7 +3347,11 @@
 		"{@pagebreak}"
 		"Показывает радиус работы тотемов"
 	]
-	quest.5AB1A672225555B0.quest_desc: ["By pressing \"<positive>Shift + X</positive>\" on an item in your inventory, you can <positive>link said item in chat</positive>"]
+	quest.5AB1A672225555B0.quest_desc: [
+		"By pressing \"<positive>Shift + X</positive>\" on an item in your inventory, you can <positive>link said item in chat</positive>"
+		"{@pagebreak}"
+		"Нажав «<positive>Shift + X</positive>» на предмете в инвентаре, вы можете <positive>отправить ссылку на предмет в чат</positive>"
+	]
 	quest.5B1AE3ABD351EB63.quest_desc: ["While the Spiritus Aura Gauge rests in your inventory, it projects a spectral reading onto your vision. From top to bottom the bars measure Raw, Ruina, Invictus, Nihilum, and Vindicta. Hold sneak for a precise numerical reading (0 to 100 per Aspect)."]
 	quest.5B306FE5EB74ADA8.quest_desc: [
 		"In <keyword>Planter</keyword>, you can grow specific plants such as the <keyword>Mirecap Mushroom</keyword> / the <keyword>Flowering Oanna</keyword> / <keyword>Sildrian Seed</keyword> / <keyword>Sprig Of Avennian</keyword>"
@@ -3302,25 +3365,47 @@
 	quest.5B66EF3877866949.quest_desc: [
 		"This mod adds <keyword>horse improvements</keyword> you haven't thought you needed."
 		""
-		"• When mounted, clicking on a fence will leash the horse to it. Requires Lead in the special slot that's added to horse inventory."
+		"• When mounted, clicking on a fence will <positive>leash the horse</positive> to it. Requires <keyword>Lead</keyword> in the special slot that's added to horse inventory."
 		""
-		"• Ridden horses can swim now. Press jump (spacebar) when in water."
+		"• Ridden horses can <positive>swim</positive> now. Press jump (spacebar) when in water."
 		""
-		"• Horses now fit in boats."
+		"• Horses now <positive>fit in boats</positive>."
 		""
-		"• Makes traversing forests easier by tweaking Leaves collision. You'll get stuck on leaves much less now."
+		"• Makes traversing forests easier by tweaking <property>Leaves collision</property>. You'll get stuck on leaves much less now."
 		""
-		"• Increases horse step height by 10%. Allows riding up a path to a full block and not get stuck."
+		"• Increases <property>horse step height</property> by <keyword>10%</keyword>. Allows riding up a path to a full block and not get stuck."
 		""
-		"• When mounted, your mining speed will remain the same as on ground. Removes 80% block break speed penalty when mounted."
+		"• When mounted, your <property>mining speed</property> will remain the same as on ground. Removes <keyword>80%</keyword> block break speed penalty when mounted."
 		""
 		"• Keeps player's looking direction when mounting a horse. Rotates horse instead of you."
 		""
-		"• When horse is not moving, player can move the camera independently of the ridden horse, up to 100 degrees (after which horse will follow the rotation)."
+		"• When horse is not moving, player can move the camera independently of the ridden horse, up to <keyword>100 degrees</keyword> (after which horse will follow the rotation)."
 		""
-		"• Makes horse disappear (almost) when rider is looking down. Watch your step!"
+		"• Makes horse <warning>disappear (almost)</warning> when rider is looking down. <warning><shake amplitude=0.3 frequency=1.0>Watch your step!</shake></warning>"
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/horseman\" } }, \".\" ]"
+		"{@pagebreak}"
+		"Этот мод добавляет <keyword>улучшения для лошадей</keyword>, о которых вы даже не подозревали, что они вам нужны."
+		""
+		"• Верхом на лошади клик по забору <positive>привяжет лошадь</positive> к нему. Требуется <keyword>поводок</keyword> в специальном слоте, добавленном в инвентарь лошади."
+		""
+		"• Оседланные лошади теперь умеют <positive>плавать</positive>. Нажмите прыжок (пробел), находясь в воде."
+		""
+		"• Лошади теперь <positive>помещаются в лодки</positive>."
+		""
+		"• Облегчает передвижение по лесам, изменяя <property>коллизию листвы</property>. Вы будете гораздо реже застревать в листьях."
+		""
+		"• Увеличивает <property>высоту шага лошади</property> на <keyword>10%</keyword>. Позволяет заезжать на тропинку высотой в целый блок, не застревая."
+		""
+		"• Верхом на лошади ваша <property>скорость добычи</property> остаётся такой же, как на земле. Убирает штраф <keyword>80%</keyword> к скорости разрушения блоков при езде верхом."
+		""
+		"• Сохраняет направление взгляда игрока при посадке на лошадь. Поворачивается лошадь, а не вы."
+		""
+		"• Пока лошадь стоит на месте, можно свободно вращать камеру независимо от неё, до <keyword>100 градусов</keyword> (после чего лошадь довернётся следом)."
+		""
+		"• Лошадь почти <warning>исчезает</warning>, когда всадник смотрит вниз. <warning><shake amplitude=0.3 frequency=1.0>Смотрите под ноги!</shake></warning>"
+		""
+		"[ \"Подробнее можно почитать \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/horseman\" } }, \".\" ]"
 	]
 	quest.5BA28B2D3F0434AC.quest_desc: ["The Spinning Wheel is what allows the infusion of mundane Poppets with other materials to create magical Poppets."]
 	quest.5C6F64DF2FA17AA2.quest_desc: [
@@ -3766,9 +3851,9 @@
 		"Невероятно удобный способ осветить своё Уб&m&0ожество&r&rежище"
 	]
 	quest.650A8D7F596AC191.quest_desc: [
-		"Cycle the trades of every villager that hasn't been traded before without needing to wait for working hours or replacing the workstation block over and over again."
+		"Cycle the trades of every <keyword>villager</keyword> that hasn't been traded before without needing to wait for <property>working hours</property> or replacing the <keyword>workstation block</keyword> over and over again."
 		""
-		"Sometimes the <keyword>Cycle button</keyword> isn't available; in that case, you can use the <keyword>«C»</keyword> shortcut key"
+		"Sometimes the <keyword><bounce amplitude=1.5 frequency=1.0 phase=1.0>Cycle button</bounce></keyword> isn't available; in that case, you can use the <keyword>«C»</keyword> shortcut key"
 	]
 	quest.650EB42A35DC8763.quest_desc: [
 		"Allows <positive>exchanging one block for another</positive>. Can change <keyword>multiple connected blocks simultaneously</keyword>. Handy when dealing with <keyword>EBF coils</keyword>!  "
@@ -3983,19 +4068,35 @@
 	quest.6902C00ECD02ACEA.quest_desc: [
 		"<keyword>Mouse Tweaks</keyword> replaces the standard <keyword>RMB</keyword> dragging mechanic, adds two new <keyword>LMB</keyword> dragging mechanics and an ability to quickly move items with the <keyword>scroll wheel</keyword>."
 		""
-		"You can also <positive>sort items</positive> in your inventory or chests by clicking the <keyword>middle mouse button</keyword>!"
+		"You can also <pulse base=0.6 amplitude=1.2><positive>sort items</positive></pulse> in your inventory or chests by clicking the <keyword>middle mouse button</keyword>!"
 		""
 		"[\"More info for Mouse Tweaks: \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks\" } }]"
 		""
 		""
 		"More Mouse Tweaks - complements Mouse Tweaks by adding more mouse functionality"
 		""
-		"ALT+LMB to drop a slot"
-		"CTRL+LMB to quick-move all matching slots"
-		"CTRL+ALT+LMB to drop all matching slots"
-		"SHIFT+RMB for bulk crafting or trading"
+		"<keyword>ALT+LMB</keyword> to drop a slot"
+		"<keyword>CTRL+LMB</keyword> to quick-move all matching slots"
+		"<keyword>CTRL+ALT+LMB</keyword> to drop all matching slots"
+		"<keyword>SHIFT+RMB</keyword> for bulk crafting or trading"
 		""
 		"[ \"More info for More Mouse Tweaks: \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/moremousetweaks\" } } ]"
+		"{@pagebreak}"
+		"<keyword>Mouse Tweaks</keyword> заменяет стандартную механику перетаскивания на <keyword>ПКМ</keyword>, добавляет два новых способа перетаскивания на <keyword>ЛКМ</keyword> и возможность быстро перемещать предметы <keyword>колёсиком мыши</keyword>."
+		""
+		"Так же можно <pulse base=0.6 amplitude=1.2><positive>сортировать предметы</positive></pulse> в инвентаре или сундуках, кликнув <keyword>средней кнопкой мыши</keyword>!"
+		""
+		"[\"Подробнее про Mouse Tweaks: \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks\" } }]"
+		""
+		""
+		"More Mouse Tweaks - дополняет Mouse Tweaks, добавляя больше функций мыши"
+		""
+		"<keyword>ALT+ЛКМ</keyword> выбросить слот"
+		"<keyword>CTRL+ЛКМ</keyword> быстро переместить все совпадающие слоты"
+		"<keyword>CTRL+ALT+ЛКМ</keyword> выбросить все совпадающие слоты"
+		"<keyword>SHIFT+ПКМ</keyword> для массового крафта или торговли"
+		""
+		"[ \"Подробнее про More Mouse Tweaks: \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/moremousetweaks\" } } ]"
 	]
 	quest.691756F3D7240809.quest_desc: [
 		"Periodically emits a <warning>redstone pulse</warning>. By pressing <positive>RMB</positive> you can change the <keyword>length of the pulse</keyword>, and by pressing <positive>Shift+RMB</positive> you can change the <keyword>interval between pulses</keyword>."
@@ -4106,21 +4207,21 @@
 		"Для его создания вам понадобится следующая схема: 16 линейных и 12 изогнутых ритуальных блоков, немного крови посередине и костёр над ней. Всего необходимо разжечь 12 огня в тех местах, на которые указывают ритуальные блоки."
 	]
 	quest.6DEB4EF33DC9F8A4.quest_desc: [
-		"<keyword>ItemLocks</keyword> allows you to <positive>lock</positive> item slots in your inventory, preventing you from moving items unwillingly."
+		"<keyword>ItemLocks</keyword> allows you to <positive><pulse base=0.6 amplitude=1.0>lock</pulse></positive> item slots in your inventory, preventing you from moving items unwillingly."
 		""
 		"• Toggle lock on individual slots by holding <positive>LOCK</positive> (Default: C) and left clicking a slot."
 		""
-		"• Bypass a lock by holding <warning>BYPASS</warning> (Default: B) and interacting with a slot."
+		"• Bypass a lock by holding <warning><shake amplitude=0.3 frequency=1.2>BYPASS</shake></warning> (Default: B) and interacting with a slot."
 		""
 		"• Making a slot empty while bypassing a lock does not remove the lock."
 		""
 		"• Empty slots with a lock are unlocked until it's occupied."
 		"{@pagebreak}"
-		"<keyword>ItemLocks</keyword> позволяет <positive>заблокировать</positive> слоты в инвентаре, чтобы случайно не сдвинуть предметы."
+		"<keyword>ItemLocks</keyword> позволяет <positive><pulse base=0.6 amplitude=1.0>заблокировать</pulse></positive> слоты в инвентаре, чтобы случайно не сдвинуть предметы."
 		""
 		"• Переключить блокировку слота: зажать <positive>LOCK</positive> (по умолчанию: C) и кликнуть ЛКМ по слоту."
 		""
-		"• Обойти блокировку: зажать <warning>BYPASS</warning> (по умолчанию: B) и взаимодействовать со слотом."
+		"• Обойти блокировку: зажать <warning><shake amplitude=0.3 frequency=1.2>BYPASS</shake></warning> (по умолчанию: B) и взаимодействовать со слотом."
 		""
 		"• Если опустошить слот в обход блокировки, сама блокировка не снимается."
 		""
@@ -4251,19 +4352,19 @@
 	quest.6FCE521D7A64B367.quest_desc: ["Folds space between two aligned glyphs for a seamless vertical elevator. Place at least two arrays directly above one another on the same block column, at any distance up to 64 blocks. Jump while standing on an array to teleport upward to the next array above; Sneak to descend to the nearest below. Multiple arrays can be chained for multi-floor shafts. Each search is limited to the same X/Z column, so precise alignment matters."]
 	quest.703F575B0690DE26.quest_desc: ["Gem Dust is necessary to for making better use of Apotheosis gems. Drop an anvil on some gems to get Gem Dust."]
 	quest.706FE8A4CD20FDEF.quest_desc: [
-		"A &7square&r, a &6diamond&r, a <property>circle</property> - they don’t mean anything; they’re just decorations."
+		"A <property>square</property>, a <property>diamond</property>, a <property>circle</property> - they don’t mean anything; they’re just decorations."
 		""
-		"The <keyword>heart icon</keyword> indicates that this quest is <positive><b>very useful</b></positive>, and we highly recommend completing it!"
+		"The <keyword>heart icon</keyword> indicates that this quest is <positive><bounce amplitude=1.2 frequency=1.0 phase=1.0><b>very useful</b></bounce></positive>, and we highly recommend completing it!"
 		""
-		"The <keyword>gear</keyword> icon usually means that the quest is a <warning>main quest</warning> and you need to complete it! "
+		"The <keyword>gear</keyword> icon usually means that the quest is a <warning><shake amplitude=0.3 frequency=1.0>main quest</shake></warning> and you need to complete it! "
 		""
 		"{@pagebreak}"
 		""
-		"Квадрат, ромб, круг - ни на что не показывают, просто декорации."
+		"<property>Квадрат</property>, <property>ромб</property>, <property>круг</property> - ни на что не показывают, просто декорации."
 		""
-		"<keyword>Сердечко</keyword> - показывает на то, что квест <positive><b>очень полезен</b></positive> и мы настоятельно рекомендуем выполнить его!"
+		"<keyword>Сердечко</keyword> - показывает на то, что квест <positive><bounce amplitude=1.2 frequency=1.0 phase=1.0><b>очень полезен</b></bounce></positive> и мы настоятельно рекомендуем выполнить его!"
 		""
-		"<keyword>Шестеренка</keyword> - означает что квест является <warning>основным</warning> и вам необходимо его пройти!"
+		"<keyword>Шестеренка</keyword> - означает что квест является <warning><shake amplitude=0.3 frequency=1.0>основным</shake></warning> и вам необходимо его пройти!"
 	]
 	quest.70798A5B74FDB203.quest_desc: [
 		"Grows in <magic>swamps</magic>."
@@ -4292,7 +4393,7 @@
 		""
 		"• Eating <warning>too little or too much</warning> of one category triggers extra effects - both good (strength, mana regen) and bad (weakness)."
 		""
-		"• Keep a high diet tier for several days in a row and you unlock a <property>bonus effect</property> - it isn't a one-time permanent buff, it's kept active for as long as you maintain the diet, and gets removed if your diet drops too low <warning>or you die</warning>."
+		"• Keep a high diet tier for several days in a row and you unlock a <property>bonus effect</property> - it isn't a one-time permanent buff, it's kept active for as long as you maintain the diet, and gets removed if your diet drops too low <warning><shake amplitude=0.8 frequency=1.2>or you die</shake></warning>."
 		""
 		"• The <warning>Nether and the End</warning> drain your nutrient levels faster than the Overworld - eating well matters more there."
 		""
@@ -4312,7 +4413,7 @@
 		""
 		"• Если <warning>сильно перебрать или недобрать</warning> по одной категории - срабатывают дополнительные эффекты, как хорошие (сила, реген маны), так и плохие (слабость)."
 		""
-		"• Продержи высокий тир питания несколько дней подряд - получишь <property>бонусный эффект</property> - это не разовый вечный бафф, он поддерживается активным пока ты держишь диету, и снимается, если тир упадёт слишком низко <warning>или ты умрёшь</warning>."
+		"• Продержи высокий тир питания несколько дней подряд - получишь <property>бонусный эффект</property> - это не разовый вечный бафф, он поддерживается активным пока ты держишь диету, и снимается, если тир упадёт слишком низко <warning><shake amplitude=0.8 frequency=1.2>или ты умрёшь</shake></warning>."
 		""
 		"• В <warning>Аду и Энде</warning> уровни нутриентов падают быстрее, чем в Оверворлде - там питаться разнообразно важнее."
 		""
@@ -4327,7 +4428,11 @@
 		""
 		"TOO fast? Never."
 	]
-	quest.7145CB4C825D9D77.quest_desc: ["Clavis transforms the traditional loot system: every loot chest is now locked and can be opened through a simple yet engaging <keyword>mini-game</keyword>. The better you perform, the <positive>richer your reward</positive> - up to nearly <positive>double the loot</positive> for a perfect result."]
+	quest.7145CB4C825D9D77.quest_desc: [
+		"Clavis transforms the traditional loot system: every loot chest is now locked and can be opened through a simple yet engaging <keyword>mini-game</keyword>. The better you perform, the <positive>richer your reward</positive> - up to nearly <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>double the loot</bounce></positive> for a perfect result."
+		"{@pagebreak}"
+		"Clavis трансформирует привычную систему лута: теперь каждый сундук с добычей заперт, и открыть его можно через простую, но увлекательную <keyword>мини-игру</keyword>. Чем лучше вы справитесь, тем <positive>богаче награда</positive> - вплоть до почти <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>удвоенного лута</bounce></positive> за идеальный результат."
+	]
 	quest.714992905CA44375.quest_desc: [
 		"My catalogue of ingredients, although plentiful, can be limiting in its color. I do not have enough ingredients to expand my ideas, my vision! But I know how I can get more. It may seem like these are all the flowers and herbs the world has to offer, but I know simple plant life can be so much more complex. I will imbue these plants, strip them down to their genetical make-up, and create new plants. COMPLETELY REMADE BY MY HAND."
 		""
@@ -4350,7 +4455,11 @@
 		""
 		"Его можно зарядить, чтобы использовать в качестве портативного контейнера для алтарной энергии, позволяющего создавать магию кругов без присутствия алтаря, а также использовать при создании различных магических инструментов."
 	]
-	quest.71721385710E5EB0.quest_desc: ["You can press \"<positive>C</positive>\" to <positive>crawl</positive> and say hi to all your worm-like friends!"]
+	quest.71721385710E5EB0.quest_desc: [
+		"You can press \"<positive>C</positive>\" to <positive>crawl</positive> and say hi to all your <wiggle amplitude=0.5 frequency=1.5 phase=1.0>worm-like friends</wiggle>!"
+		"{@pagebreak}"
+		"Вы можете нажать «<positive>C</positive>», чтобы <positive>ползти</positive> и поздороваться со всеми своими <wiggle amplitude=0.5 frequency=1.5 phase=1.0>червеобразными друзьями</wiggle>!"
+	]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
 	quest.71A28CD8A6826BD9.quest_desc: ["3x3x2 block"]
 	quest.71AF5D40C19C7E45.quest_desc: [
@@ -4476,7 +4585,11 @@
 		"{@pagebreak}"
 		"Данный <named>артефакт</named> совместим вместе с рыбалкой из мода <magic>Starcatcher</magic>! "
 	]
-	quest.757ED58D0C1CED21.quest_desc: ["Press <keyword>\"Y\"</keyword> on an item in your inventory (or in EMI) to <positive>highlight similar items in nearby chests</positive>"]
+	quest.757ED58D0C1CED21.quest_desc: [
+		"Press <keyword>\"Y\"</keyword> on an item in your inventory (or in EMI) to <positive>highlight similar items in nearby chests</positive>"
+		"{@pagebreak}"
+		"Нажмите <keyword>«Y»</keyword> на предмете в инвентаре (или в EMI), чтобы <positive>подсветить похожие предметы в соседних сундуках</positive>"
+	]
 	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by right clicking cobblestone on stone."]
 	quest.75DE98178AF407BD.quest_desc: ["The most basic element of Toxony."]
 	quest.7635ED9379E95573.quest_desc: ["Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"]
@@ -4813,6 +4926,7 @@
 	task.15D15E5200247C44.title: "Gather some gem dust"
 	task.15DFF1BAB9B3F84B.title: "Spellcrafting"
 	task.1685B4C2F761E3C1.title: "Any Joyflame Fire Base Blocks"
+	task.16B2E922EA9A05D5.title: "I promise to <positive><pulse base=0.6 amplitude=1.2>actually read</pulse></positive> the quests - now, or later when I've got <wiggle amplitude=0.5 frequency=1.0 phase=1.0>the time and the mood</wiggle> for it!"
 	task.16D6420BFC5D81FE.title: "Any Pillar Base Blocks"
 	task.175E331625D7D0E8.title: "Any Crest Base Blocks"
 	task.17EBE6D06902A269.title: "Any Basic Gemstone Shards"
@@ -4894,7 +5008,7 @@
 	task.4BA891B4F70A44E3.title: "Any Copper Storage"
 	task.4C13E036E01DE93A.title: "Any Diamond Storage"
 	task.4C34F34DFB64B73E.title: "Any Polished Base Blocks"
-	task.4C9B71D2BC1CA752.title: "Next quests"
+	task.4C9B71D2BC1CA752.title: "Yeah, just clicking through <keyword>checkboxes</keyword> without reading <warning><shake amplitude=1.0 frequency=1.0>sucks</shake></warning> - I'll give this a real read, <swing angle=15.0 frequency=1.0 phase=0.0>promise</swing>!"
 	task.4E3EC41B69DAD787.title: "Any Polished Base Blocks"
 	task.4E4DCBBCBFA389BB.title: "Any Files"
 	task.4F2B1C1396AE3947.title: "Any Planks"

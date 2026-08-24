@@ -898,7 +898,11 @@ ServerEvents.recipes(event => {
         'modern_industrialization:bronze_item_input_hatch', 
         'modern_industrialization:steel_item_input_hatch', 
         'modern_industrialization:steel_fluid_input_hatch', 
-        'modern_industrialization:bronze_fluid_input_hatch'
+        'modern_industrialization:bronze_fluid_input_hatch',
+        'yet_another_industrialization:advanced_mixed_input_hatch',
+        'yet_another_industrialization:bronze_mixed_input_hatch',
+        'yet_another_industrialization:steel_mixed_input_hatch',
+        'yet_another_industrialization:turbo_mixed_input_hatch'
     ]
 
     hatches.forEach(hatch =>{
@@ -914,6 +918,7 @@ ServerEvents.recipes(event => {
             category:"misc"
         })
     })
+
 
     //#endregion
 

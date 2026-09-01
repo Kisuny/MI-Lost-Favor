@@ -1,24 +1,28 @@
 {
-  "base_chance": 5,
+  "base_chance": 6,
   "catch_info": {
     "fish_bucket": {
-      "count": 1,
-      "id": "starcatcher:starcaught_bucket"
+      "identifier": "starcatcher:starcaught_bucket"
     },
     "item": {
-      "count": 1,
-      "id": "starcatcher:blue_crystal_fin"
+      "identifier": "starcatcher:blue_crystal_fin"
     }
   },
   "difficulty": {
     "decay": 1.0,
-    "hp": 75,
-    "missPenalty": 5,
-    "modifiers": [],
-    "speed": 7,
+    "hp": 100,
+    "missPenalty": 20,
+    "modifiers": [
+      {
+        "type": "starcatcher:freeze_on_miss",
+        "length": 40,
+        "rampTime": 10
+      }
+    ],
+    "speed": 10,
     "sweetspots": [
       {
-        "color_as_int": -16711936,
+        "color_as_int": -15732736,
         "hitbox_size_in_pixels": 22,
         "is_flip": false,
         "moving_rate": 1.0,
@@ -28,30 +32,37 @@
         "vanishing_rate": 0.0
       },
       {
-        "color_as_int": -16711936,
-        "hitbox_size_in_pixels": 22,
+        "color_as_int": -5383962,
+        "hitbox_size_in_pixels": 33,
         "is_flip": false,
         "moving_rate": 1.0,
         "reward": 15,
-        "sweetspot_type": "starcatcher:normal",
-        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "sweetspot_type": "starcatcher:freeze",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/frozen.png",
         "vanishing_rate": 0.0
       }
     ]
   },
   "has_guide_entry": true,
-  "rarity": "uncommon",
+  "rarity": "rare",
   "restrictions": [
     {
       "type": "starcatcher:dimension",
-      "dimension_entry": "deeper_down"
+      "dimension_entry": "deeper_down",
+      "translation_override": "dimension.spectrum.deeper_down"
+    },
+    {
+      "type": "starcatcher:elevation_restriction",
+      "max_y": 2147483647,
+      "min_y": 50,
+      "translation_override": "gui.guide.elevation.surface"
     },
     {
       "type": "starcatcher:daytime_restriction",
       "ranges": [
         {
-          "first": 0,
-          "second": 12700
+          "max": 12700,
+          "min": 0
         }
       ],
       "translation_override": "gui.guide.day"
@@ -60,7 +71,8 @@
       "type": "starcatcher:fluid",
       "fluids": [
         "spectrum:liquid_crystal"
-      ]
+      ],
+      "translation_override": "block.spectrum.liquid_crystal"
     }
   ],
   "size_and_weight": {
@@ -71,5 +83,12 @@
     "golden_chance": 0.02
   },
   "skips_minigame": false,
-  "textures": "starcatcher:textures/gui/minigame/surface.png"
+  "textures": {
+    "buttons": "starcatcher:textures/gui/minigame/buttons.png",
+    "handle": "starcatcher:textures/gui/minigame/handle.png",
+    "rod": "starcatcher:textures/gui/minigame/rod.png",
+    "tank": "starcatcher:textures/gui/minigame/tanks/surface.png",
+    "treasure": "starcatcher:textures/gui/minigame/treasure.png",
+    "wheels": "starcatcher:textures/gui/minigame/wheels.png"
+  }
 }

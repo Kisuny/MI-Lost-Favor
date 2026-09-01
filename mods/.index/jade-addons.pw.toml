@@ -1,16 +1,17 @@
-filename = 'JadeAddons-1.21.1-NeoForge-6.1.0.jar'
-name = 'Jade Addons (Neo/Forge)'
-side = 'both'
+filename = 'JadeAddons-1.21.1-NeoForge-6.1.1.jar'
+name = 'Jade Addons'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge 1.21.1] 6.1.1'
 
 [download]
-hash = 'd0aef07e67f9e2dd7ae68f9f27d845511d8eaff3'
+hash = '6c50a845ac3d336fa88e6466c36aa8b3815ca5c5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6315149
+file-id = 8777229
 project-id = 583345

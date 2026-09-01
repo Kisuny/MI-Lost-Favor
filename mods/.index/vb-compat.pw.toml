@@ -1,0 +1,17 @@
+filename = 'vb-compat-2.2-1.21.1.jar'
+name = 'Van Backport Compat'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'vb-compat-2.2-1.21.1.jar'
+
+[download]
+hash = 'ae7a63a26d04211f6b5d67b4e1b95e3b6e4a8064'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8677960
+project-id = 1388531

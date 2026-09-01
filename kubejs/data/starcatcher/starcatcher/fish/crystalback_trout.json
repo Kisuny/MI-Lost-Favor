@@ -2,12 +2,10 @@
   "base_chance": 5,
   "catch_info": {
     "fish_bucket": {
-      "count": 1,
-      "id": "starcatcher:starcaught_bucket"
+      "identifier": "starcatcher:starcaught_bucket"
     },
     "item": {
-      "count": 1,
-      "id": "starcatcher:crystalback_trout"
+      "identifier": "starcatcher:crystalback_trout"
     }
   },
   "difficulty": {
@@ -24,7 +22,7 @@
     "speed": 7,
     "sweetspots": [
       {
-        "color_as_int": -16711936,
+        "color_as_int": -15732736,
         "hitbox_size_in_pixels": 22,
         "is_flip": false,
         "moving_rate": 1.0,
@@ -34,7 +32,7 @@
         "vanishing_rate": 0.0
       },
       {
-        "color_as_int": -16711936,
+        "color_as_int": -15732736,
         "hitbox_size_in_pixels": 22,
         "is_flip": false,
         "moving_rate": 1.0,
@@ -60,13 +58,21 @@
   "restrictions": [
     {
       "type": "starcatcher:dimension",
-      "dimension_entry": "deeper_down"
+      "dimension_entry": "deeper_down",
+      "translation_override": "dimension.spectrum.deeper_down"
+    },
+    {
+      "type": "starcatcher:elevation_restriction",
+      "max_y": 2147483647,
+      "min_y": 50,
+      "translation_override": "gui.guide.elevation.surface"
     },
     {
       "type": "starcatcher:fluid",
       "fluids": [
         "spectrum:liquid_crystal"
-      ]
+      ],
+      "translation_override": "block.spectrum.liquid_crystal"
     }
   ],
   "size_and_weight": {
@@ -77,5 +83,12 @@
     "golden_chance": 0.02
   },
   "skips_minigame": false,
-  "textures": "starcatcher:textures/gui/minigame/surface.png"
+  "textures": {
+    "buttons": "starcatcher:textures/gui/minigame/buttons.png",
+    "handle": "starcatcher:textures/gui/minigame/handle.png",
+    "rod": "starcatcher:textures/gui/minigame/rod.png",
+    "tank": "starcatcher:textures/gui/minigame/tanks/icy.png",
+    "treasure": "starcatcher:textures/gui/minigame/treasure.png",
+    "wheels": "starcatcher:textures/gui/minigame/wheels.png"
+  }
 }

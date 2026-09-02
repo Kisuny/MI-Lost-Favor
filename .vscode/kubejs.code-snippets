@@ -189,13 +189,13 @@
 		"body": [
 			"spiritInfusion(event, {",
 			"    input: { item: \"${1:modid_item}\", count: ${2:1} },",
-			"    result: { id: \"${3:modid_item}\", count: ${4:1} },",
 			"    extraInputs: [",
 			"        { item: \"${5:modid_item}\", count: ${6:1} },",
 			"    ],",
 			"    spirits: [",
 			"        { type: \"malum:${7|sacred,wicked,arcane,eldritch,aerial,aqueous,earthen,infernal,umbral|}\", count: ${8:1} },",
 			"    ],",
+			"    result: { id: \"${3:modid_item}\", count: ${4:1} },",
 			"    removeRecipe: ${9|true,false|}",
 			"});"
 		],

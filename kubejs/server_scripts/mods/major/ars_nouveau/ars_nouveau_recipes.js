@@ -508,4 +508,57 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
+    customShrineRecipe(event, {
+        time: 120,
+        experience: 2.0,
+        fluid: "minecraft:water",
+        ingredients: [
+            { "item": "ars_nouveau:source_gem", count: 8 },
+            { "item": "malum:hallowed_gold_ingot", count: 3 }
+        ],
+        result: {
+            "id": "sauce:source_fluid_bucket",
+            "count": 1
+        },
+        advancement: "spectrum:unlocks/blocks/fusion_shrine"
+    });
+
+    spiritInfusion(event, {
+        input: { item: "sauce:source_fluid_bucket", count: 1 },
+        extraInputs: [
+            { item: "malum:hallowed_gold_ingot", count: 2 },
+            { item: "ars_nouveau:source_gem", count: 4 },
+        ],
+        spirits: [
+            { type: "malum:wicked", count: 8 },
+        ],
+        result: { id: "starbunclemania:fluid_sourcelink", count: 1 },
+        removeRecipe: true
+    });
+
+    customPedestalCraft(event, {
+        time: 800,
+        tier: "advanced",
+        experience: 4.0,
+        citrine: 16,
+        topaz: 16,
+        onyx: 2,
+        amethyst: 32,
+        pattern: [
+            ' e ',
+            'eqe',
+            ' e '
+        ],
+        key: {
+            q: 'ars_elemental:curio_bag',
+            e: 'ars_nouveau:source_gem',
+        },
+        result: {
+            "id": "ars_elemental:caster_bag",
+            "count": 1
+        },
+        advancement: "spectrum:create_onyx_shard",
+        removeRecipe: true
+    });
+
 })

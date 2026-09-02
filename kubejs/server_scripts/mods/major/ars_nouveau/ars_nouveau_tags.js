@@ -129,6 +129,10 @@ ServerEvents.tags('item', event => {
         'toomanyglyphs:glyph_filter_living_not_monster', 
         'toomanyglyphs:glyph_filter_living_not_player', 
         'toomanyglyphs:glyph_filter_player',
+        'ars_trinkets:glyph_filter_not_self',
+        'ars_trinkets:glyph_filter_self',
+        'ars_nouveau:glyph_self',
+        'arsomega:glyph_overhead',
     ])
     event.add("ars_nouveau:tier_2_glyphs", [
         'ars_elemental:glyph_arc_projectile', 
@@ -189,7 +193,15 @@ ServerEvents.tags('item', event => {
         'not_enough_glyphs:glyph_contingency_heal', 
         'not_enough_glyphs:glyph_contingency_health', 
         'toomanyglyphs:glyph_filter_is_baby', 
-        'toomanyglyphs:glyph_filter_is_mature'
+        'toomanyglyphs:glyph_filter_is_mature',
+        'arsomega:glyph_missile', 
+        'arsomega:glyph_propagate_underfoot', 
+        'arsomega:glyph_flatten', 
+        'ars_scalaes:glyph_resize', 
+        'arsomega:glyph_propagate_missile', 
+        'arsomega:glyph_propagate_projectile', 
+        'arsomega:glyph_propagate_overhead', 
+        'arsomega:glyph_propagate_self',
     ])
     event.add("ars_nouveau:tier_3_glyphs", [
         'ars_elemental:glyph_homing_projectile', 

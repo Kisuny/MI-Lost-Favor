@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         { id: "ars_nouveau:ritual_conjure_island_desert", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0 },
         {
             id: "ars_nouveau:ritual_wilden_summon", pedestal_tier: "advanced", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 0,
-            addition_ingredients: [{ "item": "ars_nouveau:source_gem_block" }]
+            addition_ingredients: [{ "item": "malum:block_of_cthonic_gold" }, { "item": "malum:refined_soulstone" }]
         },
     ]
 

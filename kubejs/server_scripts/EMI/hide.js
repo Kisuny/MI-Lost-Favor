@@ -2,6 +2,7 @@ RecipeViewerEvents.removeEntries('item', event => {
     const list = [
 
         //'modern_industrialization:steel_block',
+        'ars_nouveau:planarium_projector',
         'modern_industrialization:electric_furnace',
         'modern_industrialization:steel_furnace',
         'modern_industrialization:bronze_furnace',

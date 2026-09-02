@@ -137,11 +137,17 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ output: 'ars_nouveau:imbuement_chamber' }, 'minecraft:gold_ingot', 'embers:dawnstone_plate')
 
+    // enchanting_apparatus and imbuement global replacements
     const itemReplacements = {
         "minecraft:gold_ingot": "malum:hallowed_gold_ingot",
         "minecraft:gold_block": "malum:block_of_hallowed_gold",
         "minecraft:diamond": "eidolon_repraised:shadow_gem",
         "ars_nouveau:stable_warp_scroll": "spectrum:neolith",
+        "ars_nouveau:glyph_accelerate": "malum:aerial_spirit",
+        "ars_elemental:glyph_arc_projectile": "malum:aqueous_spirit",
+        "ars_elemental:glyph_homing_projectile": "malum:sacred_spirit",
+        "ars_nouveau:glyph_pierce": "malum:arcane_spirit",
+        "ars_nouveau:glyph_decelerate": "malum:infernal_spirit"
     }
     const tagReplacements = {
         "c:ingots/gold": "malum:hallowed_gold_ingot",

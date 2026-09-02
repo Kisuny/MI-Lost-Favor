@@ -375,6 +375,22 @@
 		],
 		"description": "Neovitae alchemy table craft (alchemyTableCraft helper)"
 	},
+	"Spectrum: enchanter craft": {
+		"scope": "javascript",
+		"prefix": "spectrum-enchanter",
+		"body": [
+			"customEnchanterCraft(event, {",
+			"    time: ${1:300},",
+			"    experience: ${2:100},",
+			"    ingredients: [",
+			"        { \"item\": \"${3:modid_item}\" },",
+			"    ],",
+			"    result: { \"id\": \"${4:modid_item}\", \"count\": ${5:1} },",
+			"    advancement: \"${6:spectrum:midgame/build_enchanting_structure}\"",
+			"});"
+		],
+		"description": "Spectrum enchanter craft (customEnchanterCraft helper)"
+	},
 	"KubeJS: remove recipes by id list": {
 		"scope": "javascript",
 		"prefix": "kjs-remove-ids",

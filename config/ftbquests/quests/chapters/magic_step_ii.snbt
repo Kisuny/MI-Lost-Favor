@@ -7906,5 +7906,50 @@
 			x: -8.0d
 			y: -34.0d
 		}
+		{
+			dependencies: ["625DBAE6C9492790"]
+			entity_vis_size: 1.0f
+			id: "16B66B5BC8A015C9"
+			shape: "diamond"
+			tasks: [{
+				id: "4F8176DE07429EE2"
+				item: { count: 1, id: "enderstorage:ender_pouch" }
+				type: "item"
+			}]
+			x: -36.0d
+			y: -20.5d
+		}
+		{
+			dependencies: [
+				"625DBAE6C9492790"
+				"0BCD76587F2DB00F"
+			]
+			entity_vis_size: 1.0f
+			id: "50A4B989CE0B80CE"
+			shape: "diamond"
+			tasks: [{
+				id: "62A1047F35349647"
+				item: { components: { "enderstorage:frequency": { left: "white", middle: "white", right: "white" } }, count: 1, id: "enderstorage:ender_chest" }
+				type: "item"
+			}]
+			x: -36.5d
+			y: -20.0d
+		}
+		{
+			dependencies: [
+				"625DBAE6C9492790"
+				"0BCD76587F2DB00F"
+			]
+			entity_vis_size: 1.0f
+			id: "66BCBB720F988351"
+			shape: "diamond"
+			tasks: [{
+				id: "7D0AD5C6D06B918F"
+				item: { components: { "enderstorage:frequency": { left: "white", middle: "white", right: "white" } }, count: 1, id: "enderstorage:ender_tank" }
+				type: "item"
+			}]
+			x: -35.5d
+			y: -20.0d
+		}
 	]
 }

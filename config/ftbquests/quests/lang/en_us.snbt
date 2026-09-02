@@ -59,6 +59,12 @@
 		""
 		"По мере использования предмета с heat предмет нагревается, как только предмет нагреется вы сможете добавить одну из аугментаций."
 	]
+	quest.00AAEE194364F6E4.quest_desc: [""]
+	quest.00B60E60D302F80B.quest_desc: [
+		"The <keyword>Wand</keyword> is the basic casting tool - inscribe any spell recipe on it at your spell book and right-click to cast, at the cost of <property>source</property>."
+		"{@pagebreak}"
+		"<keyword>Волшебная палочка</keyword> - базовый инструмент для каста: впишите в неё любое заклинание через спелл-бук и кликните ПКМ, чтобы сотворить его ценой <property>сурса</property>."
+	]
 	quest.00DD7D7D33A1B40E.quest_desc: [
 		"<property>Passively produces</property> various <keyword>resources</keyword> depending on <keyword>mesh</keyword> in it. Has to be placed in &9river&r or &9ocean&r <magic>biome</magic>."
 		""
@@ -272,10 +278,20 @@
 	]
 	quest.0651B6B965560FDE.quest_subtitle: "Phantoms? Hate those guys"
 	quest.06793C23D00355A7.quest_desc: ["<keyword>Magnet</keyword>? And <positive>configurable</positive>??? I'll take 2 please"]
+	quest.069D268554F4E905.quest_desc: [
+		"The <keyword>Enchanter's Shield</keyword> grants you a short burst of <property>Mana Regeneration</property> and <property>Spell Damage</property> whenever you block damage with it, and repairs itself over time using your source."
+		"{@pagebreak}"
+		"<keyword>Щит зачарователя</keyword> даёт короткий всплеск <property>восстановления сурса</property> и <property>урона заклинаний</property> каждый раз, когда вы блокируете урон, а также сам чинится со временем за счёт вашего сурса."
+	]
 	quest.06B403309D54D86E.quest_desc: [
 		"You may have already noticed this little icon next to pedestal output - you can place <magic>crafting tablets</magic> with desired crafts here! When the pedestal has a <magic>crafting tablet</magic> inside it, it changes behavior - now it only accepts items that could be used in a specified craft (that means that if your crafting table output is, for example, a piston, the pedestal will accept any type of planks, even if you used one specific type in the <magic>tablet</magic>) and nothing else (note: items could &o&lonly&r&r be inserted from the top of the pedestal). Then if the pedestal is powered by redstone, it will output the crafting result from the bottom and &o&lonly&r&r from the bottom"
 		"{@pagebreak}"
 		"Возможно, вы уже заметили эту маленькую иконку рядом с выходом пьедестала — здесь можно размещать планшеты с желаемыми изделиями! Когда в пьедестале находится планшет для крафта, он меняет свое поведение — теперь он принимает только предметы, которые могут быть использованы в указанном крафте (это означает, что если выход вашего крафт-стола — например, поршень, пьедестал будет принимать любой тип досок, даже если вы использовали один конкретный тип в планшете) и ничего больше (примечание: предметы можно вставлять только сверху пьедестала). Затем, если пьедестал питается от редстоуна, он будет выдавать результат крафта снизу и только снизу."
+	]
+	quest.06C15C812464A74B.quest_desc: [
+		"The <keyword>Wixie Familiar</keyword> is a personal buff companion, separate from the worker Wixie that autocrafts items and potions at the Wixie Cauldron."
+		"{@pagebreak}"
+		"<keyword>Фамильяр Викси</keyword> - персональный компаньон-баф, отдельный от рабочей Викси, которая автоматически крафтит предметы и зелья у котла Викси."
 	]
 	quest.072F0916C2364762.quest_desc: ["What's an altar without something to pray to?"]
 	quest.0743F72CB6464DAF.quest_desc: [
@@ -330,6 +346,11 @@
 		""
 		"You can instead make a Gateway of the Emerald Grove. Right clicking with it will open a portal that summons waves of enemies, and if you can successfully beat all of them, you will receive a pack of domesticated animals"
 	]
+	quest.08E67200738BB7EA.quest_desc: [
+		"The <keyword>Void Prism</keyword> simply destroys any spell projectile that passes through it - useful for safely disposing of stray projectile spells in automated setups."
+		"{@pagebreak}"
+		"<keyword>Void Prism</keyword> просто уничтожает любое заклинание-снаряд, пролетающее через него - удобно, чтобы безопасно избавляться от лишних заклинаний в автоматизированных схемах."
+	]
 	quest.092205B6B1CC863A.quest_desc: [
 		"A <keyword>block</keyword> for <positive>vertical movement</positive> through blocks!"
 		"{@pagebreak}"
@@ -380,6 +401,11 @@
 		"&l<property>Не потребляет воду</property> в таких биомах как: реки, океаны&r"
 	]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
+	quest.0B1A4F013022E0E5.quest_desc: [
+		"The <keyword>Geode-Encased Bookshelf</keyword> grants <positive>Quantic Stability</positive> - it reduces the chance of getting a curse from your enchants. Pair it with a <keyword>Deepshelf of Arcane Treasures</keyword> to safely fish for treasure enchantments."
+		"{@pagebreak}"
+		"<keyword>Geode-Encased Bookshelf</keyword> даёт <positive>стабильность</positive> - снижает шанс получить проклятие при зачаровании. Используйте её вместе с <keyword>Deepshelf of Arcane Treasures</keyword>, чтобы безопаснее охотиться за сокровищными зачарованиями."
+	]
 	quest.0B37EB64F02A743F.quest_desc: [
 		"<positive>Enchant</positive> your <keyword>boots</keyword> with power. More <keyword>power</keyword>, more <keyword>speed</keyword>!"
 		"{@pagebreak}"
@@ -413,6 +439,16 @@
 		"Поскольку поиск руды - дело <keyword>чертовски утомительное</keyword> (особенно когда большая часть руды ускользает из поля зрения по… определенным причинам), процессу <keyword>«вынюхивания»</keyword> руды не помешало бы чуть больше… <keyword>нюхания!</keyword> Эти имитации <keyword>каменных носов</keyword>, пропитанные древним веществом, вызывающим заложенность носа, должны вам в этом помочь, на короткое время <positive>отмечая все залежи</positive> определенного типа в радиусе <positive>500 блоков вокруг вас</positive>! В ближайшее время вы не сможете получить больше таких предметов, поэтому заранее подготовьте <keyword>что-нибудь, чтобы отметить</keyword> местонахождение жилы."
 	]
 	quest.0C1938F058F0ECC8.quest_desc: ["Forged in the <keyword>Tier III altar</keyword> for <keyword>40,000 EV</keyword>. Required to power <property>Sentient Extraction</property> rituals and sustain the deeper blood workings of Tier III."]
+	quest.0C2D7FD69F37C672.quest_desc: [
+		"The <keyword>Void Jar</keyword> destroys items on pickup and grants a small amount of <property>source</property> in return. Sneak-use it to turn it on/off, and use an item in your off hand (or on the Scribe's Table with the jar on it) to set which item it consumes. It must be in your hotbar to work."
+		"{@pagebreak}"
+		"<keyword>Void Jar</keyword> уничтожает подбираемые предметы и взамен даёт немного <property>сурса</property>. Используйте её с шифтом, чтобы включить/выключить, а предметом во второй руке (или на Столе писца с банкой на нём) задайте, какой предмет она поглощает. Банка должна лежать в хотбаре, чтобы работать."
+	]
+	quest.0C4C16E9B2832629.quest_desc: [
+		"The <keyword>Spell Prism</keyword> redirects any <property>Projectile</property> spell that hits it in the direction the prism is facing, and sends a signal to nearby <keyword>Observers</keyword> whenever it redirects a spell."
+		"{@pagebreak}"
+		"<keyword>Spell Prism</keyword> перенаправляет любое заклинание типа <property>Projectile</property>, попавшее в него, в сторону, куда он направлен, и подаёт сигнал ближайшим <keyword>наблюдателям</keyword> каждый раз, когда перенаправляет заклинание."
+	]
 	quest.0C6CEA409B38B70C.quest_desc: [
 		"Create this <keyword>compass</keyword> and find a <magic>mysterious structure</magic>!"
 		"{@pagebreak}"
@@ -623,6 +659,11 @@
 		"{@pagebreak}"
 		"[ \"Можно использовать ритуал поиска структур из мода \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" или \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } } ]"
 	]
+	quest.106A26CD6AACA34F.quest_desc: [
+		"The <keyword>Allow Scroll</keyword> works as a whitelist for your <keyword>Starbuncle</keyword> - it will only pick up and move items that are on the scroll's list, ignoring everything else."
+		"{@pagebreak}"
+		"<keyword>Allow Scroll</keyword> работает как белый список для вашего <keyword>Старбанкла</keyword> - он будет забирать и переносить только те предметы, что указаны в свитке, игнорируя всё остальное."
+	]
 	quest.106F4D5B5D4A02F7.quest_desc: [
 		"Anyone &#FEECD6interested&r is invited to read the &l&#e4affaSpectrum&r&r guidebook, no point in copying the information to here!"
 		"{@pagebreak}"
@@ -651,7 +692,15 @@
 		"{@pagebreak}"
 		"Теперь вы можете <positive>быстро сменить броню</positive>, просто <positive>кликнув ПКМ</positive> по ней, а если вы, <wiggle amplitude=0.5 frequency=1.0 phase=1.0>пижон эдакий</wiggle>, хотите устроить целую гардеробную из брони, можно <positive>зажать Shift и кликнуть ПКМ</positive> по <keyword>стойке для брони</keyword>, чтобы сменить весь комплект разом!"
 	]
-	quest.117BA19FF568DCC4.quest_desc: [""]
+	quest.117BA19FF568DCC4.quest_desc: [
+		"The <keyword>Planarium</keyword> is a jar that holds its own small <keyword>pocket dimension</keyword>. Name it with the <keyword>Name Glyph</keyword> or an anvil to create a unique dimension, then <positive>sneak-interact</positive> with the jar to enter it."
+		""
+		"Blocks placed inside are rendered on the jar itself. To leave, just break any of the boundary walls. Use the <keyword>Dominion Wand</keyword> on a boundary wall and then on a spot inside to set your <keyword>spawn point</keyword> for next time."
+		"{@pagebreak}"
+		"<keyword>Планариум</keyword> - это банка, содержащая свой маленький <keyword>карманный мир</keyword>. Назовите её с помощью <keyword>руны имени</keyword> или наковальни, чтобы создать уникальное измерение, а затем взаимодействуйте с банкой <positive>с зажатым шифтом</positive>, чтобы попасть внутрь."
+		""
+		"Размещённые внутри блоки отображаются прямо на банке. Чтобы выйти, просто сломайте любую из граничных стен. Используйте <keyword>Жезл владения</keyword> на граничной стене, а затем на точке внутри, чтобы задать <keyword>точку возрождения</keyword> для следующего входа."
+	]
 	quest.11A8A041EB1774AA.quest_desc: [
 		"Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5)."
 		""
@@ -823,6 +872,11 @@
 		""
 		"Что еще более любопытно, так это то, что если мне в руки попадет зачарованная книга, которая переводится как «Refill», то содержимое моей пустой фляги будет пополняться, просто если я просплю всю ночь! Хотя у меня есть свои сомнения по поводу зачарования, я не могу отрицать его полезность в моих экспериментах!"
 	]
+	quest.14E6DD846DE9838E.quest_desc: [
+		"The <keyword>Amethyst Golem Familiar</keyword> is a defensive companion - it halves knockback taken and knocks back attackers. Give it an <keyword>Amethyst Shard</keyword> to grant yourself <property>Shielding</property> for 3 minutes."
+		"{@pagebreak}"
+		"<keyword>Аметистовый голем</keyword> - фамильяр для защиты: он уменьшает получаемый отброс вдвое и отбрасывает атакующих. Дайте ему <keyword>осколок аметиста</keyword>, чтобы получить <property>щит</property> на 3 минуты."
+	]
 	quest.15054A95EDCBE33D.quest_desc: [
 		"Allows to store &otime&r while the &mbottle&r <keyword>Pouch</keyword> is in the player inventory. When enough time is stored, you can <positive>speed up block entities</positive>. More clicks = more speed increase. "
 		"{@pagebreak}"
@@ -834,6 +888,11 @@
 		"Одна &#FEECD6баночка&r вмещает только &#9BB8ED1 тип&r краски, палитра вмещает больше типов, но в ней &#FEECD6не так много места&r как в баночках!"
 	]
 	quest.15257CFF2D9E8EE6.quest_subtitle: "WIP"
+	quest.15AB613DE0B0F012.quest_desc: [
+		"The <keyword>Drygmy Familiar</keyword> increases the damage of <property>Earth</property> spells by 2 and gives a chance for extra loot when you kill mobs yourself, similar to Looting."
+		"{@pagebreak}"
+		"<keyword>Фамильяр Драгми</keyword> увеличивает урон заклинаний <property>Земли</property> на 2 и даёт шанс на дополнительный лут, когда вы сами убиваете мобов - похоже на зачарование Looting."
+	]
 	quest.15C276FD883F33F5.quest_desc: [""]
 	quest.16219C02EDE3F680.quest_desc: [
 		"The <keyword>Source Condenser</keyword> draws <keyword>source</keyword> from connected <keyword>source jars</keyword> and converts it into <property>liquid source</property>."
@@ -848,6 +907,15 @@
 		"It has been noted that the book on this table consumes quite a lot of <warning>FPS</warning>, so <warning>keep that in mind</warning>!"
 		"{@pagebreak}"
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду</warning>!"
+	]
+	quest.167C8222BBC164BB.quest_desc: [
+		"The <keyword>Enchanter's Sword</keyword> applies a <property>Touch</property> spell before damaging an entity, and grants all your spells extra <property>Spell Damage</property>. Inscribe it at the Scribe's Table with a spell that has no form, e.g.:"
+		""
+		" <item id=ars_nouveau:glyph_ignite size=0.1 tooltip=true/> > <item id=ars_nouveau:glyph_extend_time tooltip=true/>"
+		"{@pagebreak}"
+		"<keyword>Меч зачарователя</keyword> применяет заклинание <property>Touch</property> перед нанесением урона и даёт всем вашим заклинаниям бонус к <property>урону заклинаний</property>. Впишите на Столе писца заклинание без формы, например:"
+		""
+		" <item id=ars_nouveau:glyph_ignite size=0.1 tooltip=true/> > <item id=ars_nouveau:glyph_extend_time tooltip=true/>"
 	]
 	quest.16C5B67E3D1F579C.quest_desc: ["Scribed with a <keyword>Block of Lapis</keyword> and awakened by a <soul>Sea Pickle</soul>. <positive>Pipes water</positive> into every fluid container touching its six faces; every 5 ticks it deposits up to <property>6 buckets</property>, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and <warning>parks completely</warning> on a redstone signal."]
 	quest.16E087D682ED1D5A.quest_desc: [
@@ -916,6 +984,11 @@
 		"{@pagebreak}"
 		"[ \"Вы можете использовать \", { \"text\": \"клетку для животных\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"617E14880D9D75A0\" } }, \" чтобы получать необходимое количество Tongue of Dog!\" ]"
 	]
+	quest.18646595E124795C.quest_desc: [
+		"The <keyword>Earth Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Earth</keyword> school."
+		"{@pagebreak}"
+		"<keyword>Earth Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам поблизости, используя силу школы <keyword>Земли</keyword>."
+	]
 	quest.188484018F12E3B9.quest_desc: [
 		"We won't stop at simple oils. We have many more possibilities FOR MORE POTENCY! Toxin has opened new doors to its potential. AND WE WILL USE THEM GRACIOUSLY!"
 		""
@@ -940,6 +1013,11 @@
 		"{@pagebreak}"
 		"«<keyword>Душераздиратель</keyword>» хранит в себе душепожирающий <soul>Огонь Души</soul>. Поэтому он значительно <positive>сильнее</positive>, когда используется против живых существ. К сожалению, из-за этого он гораздо <warning>слабее</warning> против врагов, лишенных души."
 	]
+	quest.19177CEA7E005D12.quest_desc: [
+		"The <keyword>Enchanter's Fishing Rod</keyword> works as a normal rod, but hooking an entity lets you cast its inscribed <property>Touch</property> spell on it for as long as the line holds. Inscribe it at the Scribe's Table with a formless spell, same as the sword and gauntlet."
+		"{@pagebreak}"
+		"<keyword>Удочка зачарователя</keyword> работает как обычная удочка, но, зацепив существо, вы можете применять на него вписанное заклинание <property>Touch</property>, пока держится леска. Впишите заклинание без формы на Столе писца, так же как для меча и перчатки."
+	]
 	quest.19300837BD132C67.quest_desc: [""]
 	quest.19545E28C84E87B2.quest_desc: [
 		"If the items have risen above the altar - the recipe is correct."
@@ -958,14 +1036,19 @@
 		""
 		"На игроке может быть максимум 2 проклятья. Снять их непросто."
 	]
+	quest.196D201910731E66.quest_desc: [
+		"The <keyword>Alteration Table</keyword> is used to inscribe <keyword>Threads</keyword> onto magic armor - place the armor on the stand to see its available <property>Thread Slots</property>, then use a Thread on the display to add it. Take the armor back off to apply the changes, or interact with an empty hand to remove a Thread."
+		"{@pagebreak}"
+		"<keyword>Стол изменений</keyword> используется, чтобы вписывать <keyword>нити</keyword> в магическую броню - положите броню на стойку, чтобы увидеть доступные <property>слоты для нитей</property>, а затем используйте нить на экране, чтобы добавить её. Заберите броню обратно, чтобы применить изменения, или взаимодействуйте пустой рукой, чтобы снять нить."
+	]
 	quest.19720A27E00D46F5.quest_desc: [
-		"Bridging allows for placing blocks in gaps in front, above, or below blocks, even if the surface isn't visible! When it's available, a crosshair is shown to indicate where that block will be placed. When the <keyword>F3 menu</keyword> is visible, there's an extra outline showing the exact position it's placing in (but you can turn it on all the time in the config)"
+		"<keyword>Bridging</keyword> allows for placing blocks in gaps in front, above, or below blocks, even if the surface isn't visible! When it's available, a <property>crosshair</property> is shown to indicate where that block will be placed. When the <keyword>F3 menu</keyword> is visible, there's an extra outline showing the exact position it's placing in (but you can turn it on all the time in the config)"
 		""
 		"You can turn this mode on and off in the radial menu; press <keyword>«R»</keyword> to open it."
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/bridging-mod\" } }, \".\" ]"
 		"{@pagebreak}"
-		"Бриджинг позволяет размещать блоки в промежутках перед, над или под блоками, даже если поверхность не видна! Когда эта функция доступна, появляется перекрестье, указывающее место, где будет размещен блок. Когда отображается <keyword>меню F3</keyword>, появляется дополнительная обводка, показывающая точное место размещения (но вы можете включить ее на постоянной основе в настройках)."
+		"<keyword>Бриджинг</keyword> позволяет размещать блоки в промежутках перед, над или под блоками, даже если поверхность не видна! Когда эта функция доступна, появляется <property>перекрестье</property>, указывающее место, где будет размещен блок. Когда отображается <keyword>меню F3</keyword>, появляется дополнительная обводка, показывающая точное место размещения (но вы можете включить ее на постоянной основе в настройках)."
 		""
 		"Включение и выключение этого режима есть в радиальном меню, нажмите <keyword>«R»</keyword> для его открытия."
 		""
@@ -995,6 +1078,11 @@
 		"«<named>Зелье Возвращения</named>» позволяет <positive>привязать точку телепортации</positive> к большинству кроватей и костров, присутствующих в модпаке; после применения этого зелья игрок <positive>телепортируется</positive> к привязанной точке."
 		""
 		"&z🛈 Зелье привязывается только к <property>одному источнику</property>.&r"
+	]
+	quest.19A668F07576FE6B.quest_desc: [
+		"The <keyword>Deny Scroll</keyword> works as a blacklist for your <keyword>Starbuncle</keyword> - opposite of the Allow Scroll, it will pick up and move any item that is NOT on the scroll's list."
+		"{@pagebreak}"
+		"<keyword>Deny Scroll</keyword> работает как чёрный список для вашего <keyword>Старбанкла</keyword> - в отличие от Allow Scroll, он будет забирать и переносить любой предмет, которого НЕТ в списке свитка."
 	]
 	quest.19C9F5C94F3F8853.quest_desc: [
 		"If you need a lot of <keyword>deer antlers</keyword>, this is the best option available to you right now!"
@@ -1108,6 +1196,17 @@
 		"{@pagebreak}"
 		"Просто &#FEECD6красивые лампы&r, не создавать же только утилит-предметы, верно? "
 	]
+	quest.1AAAFAE1B6E3E59B.quest_desc: [
+		"The <keyword>Portable Brazier Relay</keyword> (Ars Controle) lets you carry a ritual's effects with you, as long as the <keyword>Ritual Brazier</keyword> stays loaded and has a supply of <property>source</property>."
+		"{@pagebreak}"
+		"<keyword>Portable Brazier Relay</keyword> (Ars Controle) позволяет носить эффект ритуала с собой, пока <keyword>жаровня ритуала</keyword> остаётся загруженной и обеспечена <property>сурсом</property>."
+	]
+	quest.1AC7380981787140.quest_desc: [
+		"The <keyword>Ritual of Binding</keyword>, cast near an entity, turns it into a <keyword>Bound Script</keyword> - use that script to learn the entity as a <keyword>Familiar</keyword> in your spell book. Summoning a familiar gives you <warning>Familiar Sickness</warning> for a short while, preventing you from summoning another one right away."
+		"{@pagebreak}"
+		"<keyword>Ритуал связывания</keyword>, проведённый рядом с существом, превращает его в <keyword>связывающий свиток</keyword> - используйте его, чтобы выучить это существо как <keyword>фамильяра</keyword> в спелл-буке. После призыва фамильяра вы получаете <warning>болезнь фамильяра</warning> на некоторое время, из-за которой нельзя сразу призвать другого."
+	]
+	quest.1ACB063689ABD5F8.quest_desc: ["[ \"You can summon a mob using a \", { \"text\": \"brazier\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } } ]"]
 	quest.1ACC5B02FFBB0292.quest_desc: ["Instead of being in an inventory, Poppets can also be placed on a Poppet Shelf to be active. Each shelf can hold up to 4 Poppets."]
 	quest.1AD6EA8FC5E52268.quest_desc: [
 		"[ \"If you're having an <warning>issue</warning> or want to suggest an <positive>idea</positive>, you're always welcome to join our \", { \"text\": \"<magic>Discord</magic>\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://discord.com/invite/xAaFCCqKAn\" } }, \"! \" ]"
@@ -1138,7 +1237,11 @@
 		"{@pagebreak}"
 		"Более продвинутая <keyword>станция</keyword> для создания <keyword>зелий</keyword>. Также может создавать некоторые другие жидкости."
 	]
-	quest.1CA058CF370F34C2.quest_desc: ["подавая редстоун будет исполнять записанное на неё заклинание"]
+	quest.1CA058CF370F34C2.quest_desc: [
+		"The <keyword>Basic Spell Turret</keyword> casts <property>Projectile</property>, <property>Touch</property>, <property>Sensitive</property> and <property>Redstone</property> glyphs for free - inscribe a spell onto it, then feed it a <keyword>Redstone</keyword> signal to make it cast."
+		"{@pagebreak}"
+		"<keyword>Basic Spell Turret</keyword> бесплатно исполняет заклинания на глифах <property>Projectile</property>, <property>Touch</property>, <property>Sensitive</property> и <property>Redstone</property> - запишите на неё заклинание, а затем подайте <keyword>редстоун</keyword>, чтобы она его сотворила."
+	]
 	quest.1CC75E9657D45037.quest_desc: [
 		"The plant will slowly grow and is harvestable."
 		""
@@ -1155,6 +1258,11 @@
 		"Хранит несколько <property>Location Card</property> в одном предмете. Tempad читает его автоматически, поэтому в нем удобно носить общие точки и наборы мест для телепорта."
 	]
 	quest.1D51E63C464298A6.quest_desc: ["<positive>Draws</positive> dropped items within <property>2 blocks</property> toward its centre. Place atop a chest and collected items deposit directly inside."]
+	quest.1D8060BE3655422F.quest_desc: [
+		"The <keyword>Necrotic Focus</keyword> (Ars Elemental) is the corrupted version of the Summon Focus - it boosts <property>Anima</property> school spells and, if your summoned wolves, undead or vexes die while you wear it, they resurrect once as stronger revenants that mirror your Homing spells and heal you on kill."
+		"{@pagebreak}"
+		"<keyword>Некротический фокус</keyword> (Ars Elemental) - порченная версия Фокуса призыва: усиливает заклинания школы <property>Анимы</property>, а если ваши призванные волки, нежить или вексы погибнут, пока он надет, они один раз воскреснут в виде более сильных ревенантов, повторяющих ваши заклинания самонаведения и лечащих вас при убийстве."
+	]
 	quest.1D85685CE954626B.quest_desc: [
 		"Find the little <soul>ghastlys</soul> and tame them - they'll help you find the <named>Mansion</named>!"
 		""
@@ -1163,6 +1271,11 @@
 		"Найдите маленьких <soul>ghastly</soul> и приручите их, они помогут найти <named>Mansion</named>!"
 		""
 		"Для приручения используйте <positive>Crimson Roots</positive>"
+	]
+	quest.1DB03DFB1C331CFB.quest_desc: [
+		"The <keyword>Spell Crossbow</keyword> works like the Spell Bow, but the source cost is deducted when you load it rather than when you fire - if you have enough source, the loaded bolt applies your inscribed spell on hit. Augment Arrows can empower it too."
+		"{@pagebreak}"
+		"<keyword>Арбалет заклинаний</keyword> работает как Лук заклинаний, но сурс списывается при заряжании, а не при выстреле - если сурса хватило, заряженный болт применяет вписанное заклинание при попадании. Стрелы-усилители тоже подходят."
 	]
 	quest.1DB9CB5ACE0B9455.quest_desc: [
 		"It works with both fluids and items at the same time!"
@@ -1258,6 +1371,11 @@
 		"• Left-click on a barrel item with an item to insert it into the barrel."
 		""
 		"• Left-click the barrel item on an empty slot to extract some items from it."
+	]
+	quest.208F0C74C15F40B8.quest_desc: [
+		"The <keyword>Warp Index</keyword> lets you access your <keyword>Storage Lecterns</keyword> remotely, without walking up to them, as long as you stay in the same dimension."
+		"{@pagebreak}"
+		"<keyword>Warp Index</keyword> позволяет обращаться к вашим <keyword>Storage Lectern</keyword> удалённо, не подходя к ним, пока вы находитесь в том же измерении."
 	]
 	quest.20CB438E06BA0730.quest_desc: [
 		"Starts off dormant - just an inert eye sitting in your inventory. Right-click it to wake it up (give it a moment, it needs to \"open\")."
@@ -1358,6 +1476,11 @@
 	]
 	quest.236E57B50041DE24.quest_desc: ["<positive>Commands the weather</positive>, toggling rain on or off at a cost of <property>500 EV</property> from the owner's anima. <warning>Consumed on use</warning>."]
 	quest.23A684C49FC17830.quest_desc: ["<positive>Transmutes</positive> raw materials dropped nearby into their smelted forms (<property>10 EV</property> per stack from the owner's network). Items within its radius will not despawn while awaiting processing; processes all valid stacks simultaneously, with cook times matching a standard furnace."]
+	quest.23C7291610733C3A.quest_desc: [
+		"The <keyword>Spell Turret</keyword> is an upgrade of the <keyword>Basic Spell Turret</keyword> - it can cast a spell using any glyphs, not just the free ones, at the cost of <property>source</property>."
+		"{@pagebreak}"
+		"<keyword>Spell Turret</keyword> - улучшенная версия <keyword>Basic Spell Turret</keyword>: она может исполнять заклинание с любыми глифами, а не только с бесплатными, но ценой <property>сурса</property>."
+	]
 	quest.23D1FD73CC570350.quest_desc: [
 		"Used to store and transfer ink. The two ink containers equalize the amount of ink in them, so you can only really transfer half."
 		"{@pagebreak}"
@@ -1368,6 +1491,11 @@
 		"{@pagebreak}"
 		"Обеспечивает <keyword>хранение</keyword> и легкий доступ к любому типу инструментов, которые вы помещаете внутрь"
 	]
+	quest.243A3CED1665C67C.quest_desc: [
+		"The <keyword>Spell Horn</keyword> (Ars Elemental) is a chargeable casting tool - hold the charge to cast your inscribed spell on yourself and nearby entities, the longer you charge it, the wider the area of effect."
+		"{@pagebreak}"
+		"<keyword>Рог заклинаний</keyword> (Ars Elemental) - заряжаемый инструмент для каста: удерживайте зарядку, чтобы применить вписанное заклинание на себя и существ поблизости, чем дольше заряд - тем шире область действия."
+	]
 	quest.244621C9368A3934.quest_desc: [
 		"One of the most important blocks in the modpack (until you find a way to perform such a human-dependent procedure via machinery *wink*) allows you to <positive>construct blocks</positive> from ingredients in a <keyword>3x3x3 grid</keyword>"
 		"{@pagebreak}"
@@ -1377,6 +1505,11 @@
 	quest.247A04F9979837AB.quest_desc: ["Only saplings can mutate. Fully-grown trees will not."]
 	quest.248D9183E09E5920.quest_desc: ["The armour grows in many directions at once, but its capacity is <warning>finite</warning>. Trying to master everything yields mastery of nothing. Consider forging multiple chestplates, each trained for a specific purpose, such as a miner's set, a warrior's set, or an explorer's set. The <keyword>Vitaemancer</keyword> has devised Rituals to assist with focused training, and the <property>Ritual of Sentient Evolution</property> to imbue your armour with a greater capacity for growth. Stand upon the <named>Master Ritual Stone</named> while clad in <named>Sentient Armor</named>, and the circle pours its power into the symbiotic plates. The armour's potential <positive>expands</positive> beyond its former limits."]
 	quest.248D9183E09E5920.quest_subtitle: "Info for nerds"
+	quest.24A4A021921E3E9C.quest_desc: [
+		"The <keyword>Fire Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Fire</keyword> school to burn them."
+		"{@pagebreak}"
+		"<keyword>Fire Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам, используя силу школы <keyword>Огня</keyword>, чтобы поджечь их."
+	]
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>slime</keyword>."]
 	quest.24AF6D706483C8CC.quest_desc: [
 		"It works with both fluids and items at the same time!"
@@ -1417,6 +1550,11 @@
 	]
 	quest.25814A2E5E005F82.quest_desc: ["Freezes the water you walk over. Permanently. Drains 100EV every 5 seconds from your Anima reserves."]
 	quest.263E27B045BEECE4.quest_desc: ["Provides even greater sight than it's predecessor, revealing stats such as Ara Vitae's crafting progress, speed, and more."]
+	quest.2649938C27A08C3A.quest_desc: [
+		"The <keyword>Enchanter's Scythe</keyword> (Ars Hex) works like the Enchanter's Sword - inscribe a spell without a form at the Scribe's Table and it triggers on hit. Rebound-thrown scythes will also trigger Reactive spells."
+		"{@pagebreak}"
+		"<keyword>Коса зачарователя</keyword> (Ars Hex) работает как Меч зачарователя - впишите на Столе писца заклинание без формы, и оно сработает при ударе. Брошенная и вернувшаяся коса также запускает реактивные заклинания."
+	]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
 	quest.26D3721A292E8E8C.quest_desc: [
@@ -1445,6 +1583,11 @@
 		"The plant will slowly grow and is harvestable."
 		""
 		"Can be found in swamps or bought from the Merchant."
+	]
+	quest.270B97C22D0163AC.quest_desc: [
+		"The <keyword>Water Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Water</keyword> school to slow them down."
+		"{@pagebreak}"
+		"<keyword>Water Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам, используя силу школы <keyword>Воды</keyword>, чтобы замедлить их."
 	]
 	quest.273D51DE9AFC6B5A.quest_desc: [""]
 	quest.274F9ACC0F44CDAC.quest_desc: [
@@ -1535,12 +1678,22 @@
 		"{@pagebreak}"
 		"&#FEECD6Мешок&r позволяет хранить в себе &l&#FEECD6огромное&r&r количество предметов одного типа, удобно в шахтах!"
 	]
+	quest.2AAAA3AC86EBD46B.quest_desc: [
+		"The <keyword>Timer Spell Turret</keyword> fires automatically on a timer (default 1 second) - right-click to increase the interval, punch to decrease it, or sneak for 10-second steps. Setting it to 0 or feeding it a Redstone signal disables it. Lock it with the <keyword>Dominion Wand</keyword> to prevent further changes."
+		"{@pagebreak}"
+		"<keyword>Timer Spell Turret</keyword> стреляет автоматически по таймеру (по умолчанию раз в секунду) - ПКМ увеличивает интервал, удар уменьшает, а с шифтом изменение идёт шагом в 10 секунд. Установка на 0 или подача редстоуна отключает её. Заблокировать настройки можно <keyword>Жезлом владения</keyword>."
+	]
 	quest.2AB24F8E192B7EE4.quest_desc: [
 		"Life and death have always walked together. One tome grants growth, the other a worthy end"
 		"{@pagebreak}"
 		"Жизнь и смерть всегда идут рядом. Один том дарует рост, другой - достойное завершение"
 	]
 	quest.2AB24F8E192B7EE4.title: "Blessing and Grace"
+	quest.2B284E366F5E6D1D.quest_desc: [
+		"The <keyword>Filtering Shelf</keyword> lets you <warning>blacklist</warning> enchantments from your enchanting table - insert an enchanted book with a single enchantment on it (like a curse) into the shelf, and that enchantment will stop appearing on future enchants. Holds up to <keyword>6 books</keyword>."
+		"{@pagebreak}"
+		"<keyword>Filtering Shelf</keyword> позволяет <warning>заблокировать</warning> зачарования в столе - вставьте в полку зачарованную книгу с одним зачарованием (например, проклятием), и оно перестанет выпадать при зачаровании. Вмещает до <keyword>6 книг</keyword>."
+	]
 	quest.2B2F816ABE338A0C.quest_desc: [
 		"A <keyword>fume filter</keyword> can be added to <keyword>fume funnels</keyword> to further increase yield. With <keyword>two filters</keyword>, success is <positive>guaranteed</positive>."
 		"{@pagebreak}"
@@ -1576,7 +1729,11 @@
 		""
 		"{image:milf:textures/quest_pic/locking.png width:200 height:170 align:center}"
 	]
-	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. <warning><bold>You can read them whenever, we won't judge</warning>."]
+	quest.2B7F14733C000C22.quest_desc: [
+		"All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. <positive><fade minAlpha=0.4 frequency=1.0>You can read them whenever, we won't judge</fade></positive>."
+		"{@pagebreak}"
+		"Все последующие квесты в этой главе нужны, чтобы познакомить вас с некоторыми <keyword>неочевидными механиками</keyword>. <positive><fade minAlpha=0.4 frequency=1.0>Читайте их когда угодно, мы не осудим</fade></positive>."
+	]
 	quest.2B7F14733C000C22.title: "information quests"
 	quest.2BAF1070D316E4A4.quest_desc: [
 		"Apotheosis overhauls Enchanting by adding <keyword>Enchanting Stats</keyword>.  These are special properties provided by bookshelves that change the behavior of the <keyword>Enchanting Table</keyword>. There are three primary stats, and a few secondary stats. In addition, the max level of the Enchanting Table is increased to <property>100</property>, and the max levels of most enchantments are automatically increased."
@@ -1600,11 +1757,7 @@
 		"<keyword>Allowing Treasure</keyword> causes treasure enchantments (such as Mending) to show up in the Enchanting Table. Though, be warned, <curse>curses</curse> are also treasure enchantments!"
 		""
 		"<keyword>Enchantment Filters</keyword> allow you to <warning>blacklist</warning> certain enchantments from the Enchanting Table. Blocks which provide this stat can be used to remove unwanted enchantments from the pool."
-		""
-		""
-		""
 		"{@pagebreak}"
-		""
 		"Apotheosis перерабатывает Enchanting, добавляя <keyword>характеристики для зачарования</keyword>. Это специальные свойства, предоставляемые книжными полками, которые изменяют поведение <keyword>стола зачарования</keyword>. Есть три основных параметра и несколько второстепенных. Кроме того, максимальный уровень стола зачарования увеличен до <property>100</property>, как и максимальный уровень большинства зачарований."
 		""
 		"Несмотря на всю свою привлекательность, наиболее важными характеристиками являются:"
@@ -1637,6 +1790,11 @@
 		"Stand on the <named>Master Ritual Stone</named> wearing <named>Sentient Armor</named>. The ritual <warning>wipes every upgrade</warning> from every Sentient piece you have equipped and resets used points to zero, giving you back a clean slate at the cost of all accumulated training. No tomes are produced; if you want to preserve the upgrades for later, use <property>Sentient Extraction</property> instead."
 		"{@pagebreak}"
 		"Встаньте на <named>Камень главного ритуала</named>, надев <named>Sentient Armor</named>. Ритуал <warning>удаляет все улучшения</warning> со всех предметов Sentient Armor, которые вы надели, и сбрасывает использованные очки до нуля, давая вам возможность начать с чистого листа за счет потери всего накопленного опыта. tomes при этом не создаются; если вы хотите сохранить улучшения на будущее, воспользуйтесь вместо этого «<property>Sentient Extraction</property>»."
+	]
+	quest.2C42BB85178E9422.quest_desc: [
+		"The <keyword>Soul-Touched Sculkshelf</keyword> is an advanced bookshelf crafted from <warning>Warden</warning> drops - one of the strongest for your enchanting table, and it also reveals an extra hidden enchantment in the table's menu, same as the Shelf of Sight."
+		"{@pagebreak}"
+		"<keyword>Soul-Touched Sculkshelf</keyword> - продвинутая книжная полка, создаётся из дропа <warning>Стража</warning> - одна из самых сильных для стола зачарований, а также открывает дополнительное скрытое зачарование в меню стола, как и Shelf of Sight."
 	]
 	quest.2C98103199647244.quest_desc: [
 		"The <keyword>Tome of Peritia</keyword> is a vessel for <magic>captured experience</magic>, <positive>safe from the grasp of death</positive>. <keyword>Sneak and Use</keyword> to store a level, <keyword>Use</keyword> alone to retrieve it. Hold either action to transfer multiple levels rapidly."
@@ -1685,6 +1843,7 @@
 		"{@pagebreak}"
 		"«Пламенный демон» пронизан чистым огнем. При его применении жертва не только загорается, но и попадает в состояние «Пламенной уязвимости», в котором ожоги становятся еще более болезненными. Кроме того, даже враги, обладающие иммунитетом к огню, не останутся в стороне: они ослабевают и поглощаются чистым пламенем изнутри."
 	]
+	quest.2DEC7F525C4670EE.quest_desc: [""]
 	quest.2DF330EA3F8D56B7.quest_desc: [
 		"This block &#FEECD6does not react&r to light in any way. It will always be the same color, no matter the lighting!"
 		""
@@ -1698,6 +1857,11 @@
 	quest.2E5638B2207FCCBF.quest_desc: [
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
+	]
+	quest.2EDF30504EBF6A20.quest_desc: [
+		"The <keyword>Siren Familiar</keyword> (Ars Elemental) is a personal companion version of the Siren, separate from the tamed Siren used at a Siren Shrine to passively generate fishing loot."
+		"{@pagebreak}"
+		"<keyword>Сирена</keyword> (Ars Elemental) в виде фамильяра - персональный компаньон, отдельный от прирученной Сирены у Святилища Сирены, которая пассивно генерирует рыболовный лут."
 	]
 	quest.2EEEC6F9C1EDBCB0.quest_desc: ["You can connect several aqueducts to pipe water in a straight line from point A to point B. Each aqueduct block can hold two buckets of water, and they interact with the other components of the aqueduct system."]
 	quest.2EF484C39D617CD2.quest_desc: [
@@ -1724,6 +1888,11 @@
 		"• Вы можете перекрасить <keyword>этикетку</keyword> в любой понравившийся вам цвет используя &4<shake>к</shake>&r&6<shake>р</shake>&r&e<shake>а</shake>&r&2<shake>с</shake>&r<property><shake>и</shake></property>&9<shake>т</shake>&r&5<shake>е</shake>&r&4<shake>л</shake>&r&6<shake>и</shake>&r. "
 		""
 		"• Используя &7перо&r на этикетке вы отобразите название предмета."
+	]
+	quest.2F024F23E23C206B.quest_desc: [
+		"The <keyword>ME Source Jar</keyword> plugs <property>source</property> into your <keyword>ME network</keyword> - it acts as a regular Source Jar that also stores and exposes source over AE2, so ME-side machines can push and pull source just like any other network resource."
+		"{@pagebreak}"
+		"<keyword>ME Source Jar</keyword> подключает <property>сурс</property> к вашей <keyword>ME сети</keyword> - работает как обычный сурс джар, но при этом хранит и предоставляет сурс через AE2, так что устройства сети могут забирать и отправлять сурс как любой другой ресурс."
 	]
 	quest.2F728B18B7B4C5FE.quest_desc: [
 		"<keyword><shake amplitude=0.4 frequency=1.0>Boss Checklist</shake></keyword> adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu <keyword>\"R\"</keyword>."
@@ -1835,6 +2004,11 @@
 		""
 		"Как альтренатива можно использовать кристалл на обсидиане."
 	]
+	quest.31BB2F1B4F37A93D.quest_desc: [
+		"The <keyword>Stabilized Warp Index</keyword> is an upgrade of the regular one - it lets you access your <keyword>Storage Lecterns</keyword> remotely across <keyword>dimensions</keyword> as well, not just within the same one."
+		"{@pagebreak}"
+		"<keyword>Stabilized Warp Index</keyword> - улучшенная версия обычного: позволяет обращаться к вашим <keyword>Storage Lectern</keyword> удалённо даже <keyword>между измерениями</keyword>, а не только в пределах одного."
+	]
 	quest.31DB78BD5EE5AF9E.quest_desc: [
 		"Designed like a regular &8hopper&r in shape and function, the &#9BB8EDEnder Hopper&r has the special ability to place items directly into your &#9BB8EDEnder Chest&r."
 		""
@@ -1852,6 +2026,11 @@
 		"Используя остаточную левитационную энергию, сохранившуюся в панцире шалкера, и придавая ей нужную форму с помощью кровавого пера, можно создать противовес, который уменьшит силу тяжести, действующую на юзера. Этот эффект схож с действием зелья медленного падения, при этом он может суммироваться с ним."
 		""
 		"Это дает отличный результат в сочетании с методами увеличения высоты прыжка."
+	]
+	quest.32124938227533A3.quest_desc: [
+		"The <keyword>Advanced Prism</keyword> is an upgrade of the <keyword>Spell Prism</keyword> - use the <keyword>Dominion Wand</keyword> to aim it at a specific block instead of just a direction, and equip <property>Prism Lenses</property> to modify the redirected spell (arc/homing trajectory, speed changes, or effects like piercing and chaining that cost source)."
+		"{@pagebreak}"
+		"<keyword>Advanced Prism</keyword> - улучшенная версия <keyword>Spell Prism</keyword>: <keyword>Жезлом владения</keyword> его можно навести на конкретный блок вместо просто направления, а с помощью <property>линз</property> изменять перенаправленное заклинание (траектория по дуге или самонаведение, изменение скорости, а также эффекты вроде пробивания и цепочки, требующие сурса)."
 	]
 	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your <named>cute little pet rock</named> daily! It's quite playful when you let it roam freely, so don't let it loose without the <keyword>leash</keyword>. As the good rock that it is, it'll help you <positive>locate the precious little minerals</positive> around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the <property>ores</property> and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
@@ -1894,10 +2073,20 @@
 		"Вы можете узнать, на какой <property>высоте</property> спавнится нужная вам руда, наведя на неё в <keyword>EMI</keyword>."
 	]
 	quest.32A68ACEFBF8D876.title: "Where's my ore?"
+	quest.330159427597F920.quest_desc: [
+		"The <keyword>Echoing Sculkshelf</keyword> is an advanced bookshelf crafted from <warning>Warden</warning> drops - one of the strongest for your enchanting table, and it also reveals an extra hidden enchantment in the table's menu, same as the Shelf of Sight."
+		"{@pagebreak}"
+		"<keyword>Echoing Sculkshelf</keyword> - продвинутая книжная полка, создаётся из дропа <warning>Стража</warning> - одна из самых сильных для стола зачарований, а также открывает дополнительное скрытое зачарование в меню стола, как и Shelf of Sight."
+	]
 	quest.3311BAD6D1B590DE.quest_desc: [
 		"Better than nothing, and fancy furthermore, eh?"
 		"{@pagebreak}"
 		"Лучше, чем ничего, и к тому же роскошно, да?"
+	]
+	quest.33296F2EE45D2485.quest_desc: [
+		"The <keyword>Jar of Light</keyword> summons a light that follows you around - use it again to dismiss it. A simple portable light source that doesn't need to be placed."
+		"{@pagebreak}"
+		"<keyword>Jar of Light</keyword> призывает источник света, который следует за вами - используйте её ещё раз, чтобы убрать свет. Простой переносной источник освещения, который не нужно ставить."
 	]
 	quest.334DE78CAF503048.quest_desc: [
 		"A <keyword>sink</keyword> supplies <named>water</named> to nearby cooking tables for recipes that need it. <warning>It does not generate water on its own</warning> - connect it to a water source or pipe."
@@ -1933,7 +2122,15 @@
 		"{@pagebreak}"
 		"Полет в <magic>финальной стадии</magic>"
 	]
-	quest.34AF308DB5E001D9.quest_desc: ["Вы можете использовать стол и пергамент вместе с спелл книгой для создания рецепта заклинания и поместить его в турель, чтобы она автоматически выполняла ваше заклинание ценой сурса"]
+	quest.34AF308DB5E001D9.quest_desc: [
+		"In this pack glyphs aren't crafted directly at the <keyword>Scribe's Table</keyword> - instead, craft a <keyword>Codex Entry</keyword>, <keyword>Lost Codex Entry</keyword> or <keyword>Ancient Codex Entry</keyword> to get a <positive>random glyph</positive> of that tier."
+		""
+		"The table is still useful together with a <keyword>Blank Parchment</keyword> and your spell book: inscribe a spell recipe onto the parchment, then place it into a <keyword>Spell Turret</keyword> so it automatically casts your spell at the cost of <property>source</property>."
+		"{@pagebreak}"
+		"В этом паке глифы не создаются напрямую на <keyword>Столе писца</keyword> - вместо этого крафтите <keyword>Codex Entry</keyword>, <keyword>Lost Codex Entry</keyword> или <keyword>Ancient Codex Entry</keyword>, чтобы получить <positive>случайный глиф</positive> соответствующего уровня."
+		""
+		"Стол при этом всё ещё пригодится вместе с <keyword>чистым пергаментом</keyword> и спелл-буком: запишите на пергамент рецепт заклинания и поместите его в <keyword>Spell Turret</keyword>, чтобы она автоматически исполняла ваше заклинание ценой <property>сурса</property>."
+	]
 	quest.351C8BB52E7CD0E8.quest_desc: [
 		"Build a &#FEECD6fusion shrine&r! Keep in mind, it must have &#FEECD6access&r to the &#9BB8EDsky&r in order for it to work."
 		"{@pagebreak}"
@@ -2005,6 +2202,11 @@
 		""
 		"&#ffb04fP.S. Если вы чувствуете что вам что-то непонятно, обратите внимание на ачивки мода! Почти весь контент открывается прогрессируя по ачивкам! Начиная от рецептов, до падающих звёзд с неба!&r"
 	]
+	quest.368ACB7BC2A1DE73.quest_desc: [
+		"The <keyword>Deepshelf of Arcane Treasures</keyword> unlocks <keyword>treasure enchantments</keyword> in the enchanting table that you can't normally get there, like <property>Mending</property>, <property>Frost Walker</property>, <property>Soul Speed</property> or <property>Swift Sneak</property>. Many treasure enchantments are curses, so pair it with a <keyword>Geode-Encased Bookshelf</keyword> for stability first."
+		"{@pagebreak}"
+		"<keyword>Deepshelf of Arcane Treasures</keyword> открывает в столе <keyword>сокровищные зачарования</keyword>, которые иначе там не получить, например <property>Починку</property>, <property>Хождение по льду</property>, <property>Скорость души</property> или <property>Мягкую поступь</property>. Многие сокровищные зачарования - проклятия, поэтому сначала обзаведитесь <keyword>Geode-Encased Bookshelf</keyword> для стабильности."
+	]
 	quest.36A7954415EF0E4A.quest_desc: ["From &lundead mobs&r (<keyword>ghast/phantom</keyword>) with <keyword>scythe</keyword>"]
 	quest.36ABE0F50C03A3AC.quest_desc: [
 		"Creating a <keyword>brew, infusion or potion</keyword> is a simple process, requiring either a <keyword>witch's cauldron</keyword> or <keyword>kettle</keyword>."
@@ -2035,12 +2237,22 @@
 		""
 		"Когда варево <warning>испортится</warning>, оно <warning>станет коричневым</warning>, и его нужно будет <positive>удалить с помощью пустого ведра</positive>."
 	]
+	quest.36AC3A86F835004B.quest_desc: [
+		"The <keyword>Summon Focus</keyword> is a curio that buffs your summoning spells - equip it to make your summoned creatures stronger."
+		"{@pagebreak}"
+		"<keyword>Фокус призыва</keyword> - куриос, усиливающий ваши заклинания призыва: наденьте его, чтобы призванные существа стали сильнее."
+	]
 	quest.36B2E2371DD293E9.quest_desc: [
 		"This &#9BB8EDglass&r integrates well into the interior, and also &#FEECD6glows&r!"
 		"{@pagebreak}"
 		"&#9BB8EDСтекло&r хорошо вписывается в интерьер, а так же &#FEECD6светится&r!"
 	]
 	quest.37160E9A836B7361.title: "Tin"
+	quest.373326F7A1904E7A.quest_desc: [
+		"The <keyword>Warping Spell Prism</keyword> warps a redirected spell projectile anywhere in the world - even across dimensions."
+		"{@pagebreak}"
+		"<keyword>Warping Spell Prism</keyword> телепортирует перенаправленное заклинание-снаряд в любую точку мира - даже в другое измерение."
+	]
 	quest.374D778AA6C127E6.quest_desc: [
 		"The <keyword>Source Relay</keyword> transports <property>source</property> between <keyword>Source Jars</keyword> and other <keyword>Source Relays</keyword>."
 		""
@@ -2132,12 +2344,26 @@
 		"[ \"Предшественник сундука и ваше первое(\", { \"text\": \"или не совсем первое?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") надежное хранилище, может хранить до 9 стаков предметов.\" ]"
 	]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
+	quest.38F232B383F61523.quest_desc: [
+		"The <keyword>Rotating Spell Turret</keyword> can be aimed with the <keyword>Dominion Wand</keyword> at a target position - it slowly rotates towards that heading before firing, letting you set up sweeping or precisely angled shots."
+		"{@pagebreak}"
+		"<keyword>Rotating Spell Turret</keyword> можно навести <keyword>Жезлом владения</keyword> на нужную позицию - она медленно доворачивается в эту сторону перед выстрелом, что позволяет настраивать развёрнутые или точно направленные атаки."
+	]
 	quest.38FAA757FA36219C.quest_desc: [
 		"A stronger storage item for Chronon energy. It works like the Cell, but holds more power and keeps feeding carried devices while you travel."
 		"{@pagebreak}"
 		"Более вместительное хранилище энергии Chronon. Работает как ячейка, но хранит больше энергии и продолжает питать переносимые устройства."
 	]
 	quest.3923CA397022E916.quest_desc: [""]
+	quest.3946FA56BFBE4C4C.quest_desc: [
+		"<property>Source</property> is the magic energy of <keyword>Ars Nouveau</keyword>, used to power its devices."
+		""
+		"In this pack it's obtained as <keyword>Ethereal Source</keyword>, which you convert into liquid source using the <keyword>Fluid Sourcelink</keyword>. From there it's stored in <keyword>Source Jars</keyword> and moved around with <keyword>Source Relays</keyword>. The next quests will walk you through each step in detail."
+		"{@pagebreak}"
+		"<property>Сурс</property> - это магическая энергия мода <keyword>Ars Nouveau</keyword>, которая питает его устройства."
+		""
+		"В этом паке он добывается в виде <keyword>Эфемерного сурса</keyword>, который вы перегоняете в жидкий сурс с помощью <keyword>Fluid Sourcelink</keyword>. Дальше он хранится в <keyword>Сурс джарах</keyword> и передаётся через <keyword>Сурс реле</keyword>. Следующие квесты подробно разберут каждый из этих шагов."
+	]
 	quest.39553C7C57BEE887.quest_desc: [
 		"Hold down the right mouse button + Shift key on the \"warped fungus\" or \"crimson fungus\"!"
 		"{@pagebreak}"
@@ -2391,6 +2617,11 @@
 		"If not yet unlocked, try experimenting with the mod. It unlocks progressively."
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>squid</keyword>."]
+	quest.3EF93CF3A40BE38E.quest_desc: [
+		"The <keyword>Air Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Air</keyword> school."
+		"{@pagebreak}"
+		"<keyword>Air Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам поблизости, используя силу школы <keyword>Воздуха</keyword>."
+	]
 	quest.3F076989AA64CD64.quest_desc: [
 		"Mod adds a keybind which <positive><circle radius=0.8 frequency=1.2 phase=0.0>zooms in</circle></positive> your <keyword>FOV</keyword> while it's held down, allowing you to see <keyword><wave amplitude=1.2 frequency=0.8 wavelength=3.0>further away</wave></keyword>, and keybinds for <keyword>increasing and decreasing the zoom level</keyword>."
 		""
@@ -2502,6 +2733,16 @@
 		"All the <keyword>bronze machines</keyword> use <property>steam</property> to operate"
 		"Automatically <positive>outputs steam</positive> from the top"
 	]
+	quest.42D35BE08BFA8BA5.quest_desc: [
+		"The <keyword>Enchanter's Knife</keyword> (Ars Delight) is a lightweight blade - use it on grass, wheat or rice to get extra stems without spending durability, right-click a pumpkin to carve it, and kill animals with it for a chance at rare secondary drops."
+		"{@pagebreak}"
+		"<keyword>Нож зачарователя</keyword> (Ars Delight) - лёгкий клинок: используйте его на траве, пшенице или рисе, чтобы получить дополнительные стебли без траты прочности, вырезайте тыквы правой кнопкой, а при убийстве животных даёт шанс на редкий дополнительный дроп."
+	]
+	quest.42D762F2F08FC147.quest_desc: [
+		"The <keyword>Starbuncle Familiar</keyword> grants you <property>Speed II</property> while summoned. Give it a <keyword>Gold Nugget</keyword> to consume it and briefly reveal nearby gold ore."
+		"{@pagebreak}"
+		"<keyword>Фамильяр Старбанкла</keyword> даёт вам <property>Скорость II</property>, пока призван. Дайте ему <keyword>золотой самородок</keyword>, чтобы он его съел и ненадолго подсветил вам золотую руду поблизости."
+	]
 	quest.430423172DB205F2.quest_subtitle: "Nitor?!"
 	quest.43141E73595BA04F.quest_desc: [
 		"A <keyword>broom</keyword> can be used to <positive>sweep chalk away</positive> quickly, without having to spend time erasing it."
@@ -2597,6 +2838,11 @@
 		""
 		"When a Tempad is docked and the terminal receives a Redstone signal, it opens a Timedoor to the selected destination. The Portal Setup app allows fine-tuning the Timedoor’s position and rotation up to 5 blocks in any direction, as well as toggling whether the portal is upright or flat on the ground. A constant Redstone signal keeps the Timedoor open indefinitely at a cost of 10 Chronons per second."
 	]
+	quest.4503191B144132A6.quest_desc: [
+		"The <keyword>Wixie Hat</keyword> lets your familiar transport <property>potions</property> as well - once equipped, use the <keyword>Dominion Wand</keyword> to link it between <keyword>Potion Jars</keyword>, and it will move potions between them."
+		"{@pagebreak}"
+		"<keyword>Wixie Hat</keyword> позволяет вашему фамильяру переносить ещё и <property>зелья</property> - после надевания используйте <keyword>Жезл владения</keyword>, чтобы связать его между <keyword>Potion Jar</keyword>, и он будет переносить зелья между ними."
+	]
 	quest.454C3080B0A7A24A.quest_desc: [
 		"Quite &#FEECD6bad&r for bridges and diving!"
 		"{@pagebreak}"
@@ -2673,6 +2919,11 @@
 		"&lЭффективность&r - увеличивает вместимый опыт"
 		"&lБыстрая перезарядку&r - скорость пополнения опыта вручную!"
 	]
+	quest.46C4CB92B56E6E29.quest_desc: [
+		"<keyword>Starbuncle Shades</keyword> disable a Starbuncle's ability to pick up items or harvest Source Berries - use the Dominion Wand on it to remove the shades again."
+		"{@pagebreak}"
+		"<keyword>Starbuncle Shades</keyword> отключают у Старбанкла способность подбирать предметы и собирать Сурс ягоды - снять очки можно, использовав на нём Жезл владения."
+	]
 	quest.46E60171B59F733A.quest_desc: [
 		"A device consisting of a case with a <curse>dark mass</curse> at its center that swirls and consumes nearby light - essentially a contained miniature <magic>black hole</magic>."
 		""
@@ -2698,6 +2949,11 @@
 	]
 	quest.47DF3BB83B4C272F.quest_desc: ["Rune Slabs allow for a few useful rituals, but in this form they still do nothing. You will need to smash them with an anvil together with some other ingredient to infuse them first."]
 	quest.47ECA2AA01DBE0C5.quest_desc: [""]
+	quest.47F2731601B9EA18.quest_desc: [
+		"The <keyword>Bookwyrm Familiar</keyword> buffs its mage - it reduces the source cost of spells and increases spell damage by 1. Purely a companion, with no other effects."
+		"{@pagebreak}"
+		"<keyword>Букврим</keyword> усиливает своего мага - снижает стоимость сурса для заклинаний и увеличивает урон от них на 1. Чисто компаньон без других эффектов."
+	]
 	quest.4821B8BFF0FEE06B.quest_desc: [
 		"Skulls can increase both the capacity and recharge rate of an altar, with varying effectiveness."
 		""
@@ -2729,6 +2985,11 @@
 		""
 		"В слот улучшения печи можно поместить <property>Нагревательный блок</property> (Heating Unit), позволяющий нагревать её от <positive>энергии</positive> вместо топлива."
 	]
+	quest.4873C4F6B0B288E4.quest_desc: [
+		"The <keyword>Spell Mirror</keyword> reflects any spell projectile that hits it at a mirrored angle - it can be placed on walls, floors or ceilings, and needs a supporting block behind it to stay placed."
+		"{@pagebreak}"
+		"<keyword>Spell Mirror</keyword> отражает попавшее в него заклинание-снаряд под зеркальным углом - его можно ставить на стены, пол или потолок, но ему нужен опорный блок сзади, иначе он сломается."
+	]
 	quest.488A7A739FF67BEB.quest_desc: [
 		"<warning>Can be found only once per game by one player.</warning>"
 		""
@@ -2738,6 +2999,11 @@
 		"<warning>Можно найти только один раз за игру одним игроком.</warning>"
 		""
 		"<obfuscate mode=random interval=30>Найти его можно там же, где и обычную <keyword>Банку Ихора</keyword> </obfuscate>"
+	]
+	quest.48CF4E125249C661.quest_desc: [
+		"The <keyword>Spell Bow</keyword> is inscribed with a spell at the Scribe's Table - if you have enough source, your arrows become Spell Arrows that apply it on hit. Works even without arrows in your inventory (a harmless spell arrow is used), and Augment Arrows can empower the effect."
+		"{@pagebreak}"
+		"<keyword>Лук заклинаний</keyword> получает заклинание на Столе писца - если хватает сурса, ваши стрелы становятся заклинательными и применяют эффект при попадании. Работает даже без стрел в инвентаре (используется безвредная заклинательная стрела), а стрелы-усилители могут усиливать эффект."
 	]
 	quest.48D0478F8516F1C7.quest_desc: ["<positive>Teleport</positive> to other players"]
 	quest.48D6F64AD6B17D08.quest_desc: [
@@ -2802,6 +3068,15 @@
 		"Если же я потребляю большое количество <positive>токсинов</positive>, превышающее мою толерантность, то индикатор черепа становится &4красным&r. Это говорит о том, что &4я должен как можно скорее избавиться от токсинов&r, так как любая лишняя капля токсина поглотит меня, навсегда лишив самостоятельности. Вывести токсины из организма можно с помощью &2зелий регенерации&r или &2золотого яблока&r!"
 		""
 		"Этот &5прибор&r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать &5древние ритуалы&r и <positive>смеси ядов</positive>. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
+	]
+	quest.494CA2A1D1FB6CF4.quest_desc: [
+		"The <keyword>Alakarkinos</keyword> is a crab familiar that digs through material to find rare items. Bind it to a chest with the <keyword>Dominion Wand</keyword>, and it will search anything placed within 3 blocks around that chest, as long as <property>source</property> is available nearby."
+		""
+		"In this pack it's fed <keyword>Gem Composite</keyword> instead of gravel or sand, and digs up <positive>rare materials from other mods that don't otherwise appear in this world</positive> - makes it your only way to obtain some of them."
+		"{@pagebreak}"
+		"<keyword>Алакаркинос</keyword> - фамильяр-краб, который перекапывает материал в поисках редких предметов. Привяжите его к сундуку <keyword>Жезлом владения</keyword>, и он будет искать в блоках в радиусе 3 блоков вокруг этого сундука, пока рядом есть <property>сурс</property>."
+		""
+		"В этом паке ему нужно скармливать <keyword>Gem Composite</keyword> вместо гравия или песка, и он выкапывает <positive>редкие материалы из других модов, которые больше нигде в этом мире не встречаются</positive> - это единственный способ добыть некоторые из них."
 	]
 	quest.49688ECB08702A0C.quest_desc: ["The Nether Chalk represents fire, the demonic, and The Nether."]
 	quest.497D98E4037B0265.quest_desc: [
@@ -3135,6 +3410,7 @@
 		""
 		"- <property>Радиус действия для предметов и опыта можно настраивать отдельно</property>"
 	]
+	quest.5234DC07A9DA97B9.quest_desc: ["[ \"You can summon a mob using a \", { \"text\": \"brazier\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } } ]"]
 	quest.52DE3396BBC36B30.quest_desc: [
 		"<keyword>Crystal Apothecary</keyword> automatically <positive>collects gemstone clusters</positive>. Anything - &6Topaz&r, &5Amethyst&r, <property>Certus Quartz</property> etc. It doesn't even need to be loaded!"
 		"{@pagebreak}"
@@ -3193,7 +3469,11 @@
 		"{@pagebreak}"
 		"Сердце кухни. <keyword>Кухонный стол</keyword> - центральный блок кухни: он даёт доступ к <property>ингредиентам</property> из подключённых рядом хранилищ прямо из сетки крафта и показывает все рецепты, которые можно приготовить прямо сейчас."
 	]
-	quest.5504357597BD115A.quest_desc: ["Only saplings can mutate. Fully-grown trees will not."]
+	quest.54D4F87B38A76E38.quest_desc: [
+		"Without augments, the <keyword>Ritual of Wilden Summon</keyword> summons a random assortment of Wilden monsters for a short fight. Augment it with a <keyword>Wilden Spike</keyword>, <keyword>Wilden Horn</keyword> and <keyword>Wilden Wing</keyword> instead to summon the <warning>Wilden Chimera</warning> boss."
+		"{@pagebreak}"
+		"Без усилителей <keyword>Ритуал призыва Вилденов</keyword> призывает случайный набор монстров Вилден для короткого боя. Добавьте <keyword>шип</keyword>, <keyword>рог</keyword> и <keyword>крыло Вилдена</keyword>, чтобы вместо этого призвать босса <warning>Вилден Химеру</warning>."
+	]
 	quest.552B1FFCECBD0652.quest_desc: [
 		"A <keyword>manual well</keyword>. Produces different amounts of <keyword>water</keyword> in different biomes. Can be connected to a <property>system of aqueducts</property>"
 		"{@pagebreak}"
@@ -3265,6 +3545,20 @@
 		"{@pagebreak}"
 		"<named>Compass</named> поможет вам найти нужную структуру!"
 	]
+	quest.57CAE11AE4C9DA70.quest_desc: [
+		"The <keyword>Enchanter's Gauntlet</keyword> is a spellcasting multi-tool that can also mine at diamond-tool hardness. It always casts <property>Touch</property> and must be inscribed at the Scribe's Table with a formless spell - spells cast with it get a source discount."
+		"{@pagebreak}"
+		"<keyword>Перчатка зачарователя</keyword> - универсальный инструмент для заклинаний, который также копает на уровне алмазного инструмента. Она всегда накладывает <property>Touch</property> и должна быть вписана на Столе писца заклинанием без формы - заклинания через неё кастуются со скидкой по сурсу."
+	]
+	quest.57D2F6744F1EED52.quest_desc: [
+		"The <keyword>Starbuncle</keyword> is a little familiar that carries items between inventories for you - it collects nearby drops and hauls goods from one container to another, and will also harvest fully grown <keyword>Source Berry</keyword> bushes on its own."
+		""
+		"Bind it to inventories with the <keyword>Dominion Wand</keyword>, and use <keyword>Allow</keyword>/<keyword>Deny</keyword> scrolls to filter which items it's allowed to move."
+		"{@pagebreak}"
+		"<keyword>Старбанкл</keyword> - маленький фамильяр, который переносит предметы между инвентарями: подбирает выпавшие поблизости вещи и таскает грузы из одного контейнера в другой, а также сам собирает урожай с созревших кустов <keyword>Сурс ягод</keyword>."
+		""
+		"Привязывайте его к инвентарям <keyword>Жезлом владения</keyword>, а свитками <keyword>Allow</keyword>/<keyword>Deny</keyword> задавайте, какие предметы ему разрешено переносить."
+	]
 	quest.58111B4CAD89BCCE.quest_desc: [
 		"&#FEECD6Create&r your first &4c&r&6o&r&el&r&2o&r<property>r</property>&9e&r&5d&r sapling!"
 		"{@pagebreak}"
@@ -3274,6 +3568,7 @@
 		"Another <positive>breakthrough invention</positive> of <named>PLACERS™</named> (Packing Logistics And Controlled Erections of Rebuildable Structures) engineers - the lesser one, but not less artifice: <named>Not So Multi But Still Block Packer 2099 3x3x3 Edition</named>! This small device can do what most of us can, but less most of us want to do - turn complex details into not-less-complex machines! Just shove all the constituents of a whole into one of the BIG square holes this thing has, and BOOM - the <named>HOLE®</named> (Hidden and Originally Least Expected) mechanism will do all the <positive>hard work</positive> for you!"
 		"(The inner workings of this apparatus are considered a <warning>corporate secret</warning>, but we can assure you that it's most logical that to make this thing you have to unpack one of the newer models in a similar lineup of machines, specifically the <named>Multiblock Packer 3000 (Safety regulations edition)</named>)"
 	]
+	quest.5856F34DE4934B24.quest_desc: [""]
 	quest.586308E0B5B5E030.quest_desc: [
 		"[ \"Keep in mind that the horses have been greatly \", { \"text\": \"improved\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B66EF3877866949\" } }, \"!\" ]"
 		"{@pagebreak}"
@@ -3307,6 +3602,11 @@
 		"{@pagebreak}"
 		"Собери немного &#FEECD6сверкающих камней&r!"
 	]
+	quest.5963025212DB7946.quest_desc: [
+		"The <keyword>Blank Thread</keyword> is the base for crafting a <keyword>Thread</keyword> - imbue it in the <keyword>Enchanting Apparatus</keyword> with the right ingredients to turn it into a specific perk, then inscribe it onto armor at the <keyword>Alteration Table</keyword>."
+		"{@pagebreak}"
+		"<keyword>Чистая нить</keyword> - основа для создания <keyword>нити</keyword> с эффектом: обработайте её в <keyword>Зачаровывающем аппарате</keyword> с нужными ингредиентами, чтобы превратить в конкретный перк, а затем впишите в броню на <keyword>Столе изменений</keyword>."
+	]
 	quest.5976E3C7AF7B9F36.quest_desc: [
 		"A modified Ender Dragon Head from End Cities. Purely cosmetic on its own, no effects."
 		""
@@ -3324,6 +3624,7 @@
 	quest.5984DB66549B9040.quest_desc: ["<warning>Poison</warning>."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
 	quest.599C53FBB645B90E.quest_desc: [""]
+	quest.59E4C997B579A012.quest_desc: [""]
 	quest.5A09DD956F629AC5.quest_desc: [
 		"Can be found once per game by one player"
 		"{@pagebreak}"
@@ -3353,6 +3654,11 @@
 		"Нажав «<positive>Shift + X</positive>» на предмете в инвентаре, вы можете <positive>отправить ссылку на предмет в чат</positive>"
 	]
 	quest.5B1AE3ABD351EB63.quest_desc: ["While the Spiritus Aura Gauge rests in your inventory, it projects a spectral reading onto your vision. From top to bottom the bars measure Raw, Ruina, Invictus, Nihilum, and Vindicta. Hold sneak for a precise numerical reading (0 to 100 per Aspect)."]
+	quest.5B1BC43C5234056F.quest_desc: [
+		"The <keyword>XP Jar</keyword> works just like the <keyword>Void Jar</keyword>, but grants <property>experience</property> instead of source when it destroys an item. Sneak-use it to turn it on/off, and it must be in your hotbar to work."
+		"{@pagebreak}"
+		"<keyword>XP Jar</keyword> работает так же, как <keyword>Void Jar</keyword>, но вместо сурса даёт <property>опыт</property> за уничтоженный предмет. Используйте её с шифтом, чтобы включить/выключить, банка должна лежать в хотбаре."
+	]
 	quest.5B306FE5EB74ADA8.quest_desc: [
 		"In <keyword>Planter</keyword>, you can grow specific plants such as the <keyword>Mirecap Mushroom</keyword> / the <keyword>Flowering Oanna</keyword> / <keyword>Sildrian Seed</keyword> / <keyword>Sprig Of Avennian</keyword>"
 		""
@@ -3525,15 +3831,20 @@
 		"{@pagebreak}"
 		"&l<positive>Зелёные</positive>&r биомы помогут с поиском заветного удачливого растения!"
 	]
+	quest.5E5B235150D463AE.quest_desc: [
+		"The <keyword>Flashjack Familiar</keyword> (Ars Elemental) increases the damage of <property>Lightning</property> spells by 2 and reduces movement-based spell costs by 20%. It can also be linked to a <keyword>Spell Turret</keyword> with the Dominion Wand to hijack it and aim at its own target."
+		"{@pagebreak}"
+		"<keyword>Flashjack</keyword> (Ars Elemental) увеличивает урон заклинаний <property>Молнии</property> на 2 и снижает стоимость заклинаний передвижения на 20%. Его можно связать с <keyword>Spell Turret</keyword> Жезлом владения, чтобы он перехватывал управление турелью и наводил её на свою цель."
+	]
 	quest.5E639A3B6E268A89.quest_desc: [
-		"The primary means of acquiring stats is through <keyword>bookshelves</keyword>. Each bookshelf placed in a valid bookshelf location will contribute to the <keyword>Enchanting Table</keyword>. There are a total of <property>32 valid bookshelf locations</property>: the ring around the table (including corners) on the same y-level, and one y-level above. There must be an air block in-between the Enchanting Table and the bookshelf to be valid. Other blocks which provide stats (such as <keyword>skulls</keyword> or <keyword>candles</keyword>) must also be placed in a valid bookshelf location to contribute to the table."
+		"The primary means of acquiring stats is through <keyword>bookshelves</keyword>. Each bookshelf placed in a valid bookshelf location will contribute to the <keyword>Enchanting Table</keyword>. There are a total of <property>32 valid bookshelf locations</property>: the ring around the table (including corners) on the same Y-level, and one Y-level above. There must be an air block in-between the Enchanting Table and the bookshelf to be valid. Other blocks which provide stats (such as <keyword>skulls</keyword> or <keyword>candles</keyword>) must also be placed in a valid bookshelf location to contribute to the table."
 		""
 		""
 		"Some blocks may provide stats dynamically, which means the tooltip is not completely accurate. For example, <keyword>candles</keyword> can be stacked (up to <property>4</property> in a single block space), and provide more <property>Arcana</property> when stacked."
 		""
 		"{@pagebreak}"
 		""
-		"Основным способом получения характеристик являются <keyword>книжные полки</keyword>. Каждая книжная полка, размещенная в подходящем месте, будет влиять на <keyword>стол зачарования</keyword>. Всего есть <property>32 подходящих места</property> для книжных полок: кольцо вокруг стола (включая углы) на том же уровне y и на один уровень y выше. Между столом зачарования и книжной полкой должен быть блок воздуха, чтобы место было правильным. Другие блоки, которые дают характеристики (такие как <keyword>черепа</keyword> или <keyword>свечи</keyword>), также должны быть размещены в правильном месте для книжной полки, чтобы добавлять характеристики к столу."
+		"Основным способом получения характеристик являются <keyword>книжные полки</keyword>. Каждая книжная полка, размещенная в подходящем месте, будет влиять на <keyword>стол зачарования</keyword>. Всего есть <property>32 подходящих места</property> для книжных полок: кольцо вокруг стола (включая углы) на том же уровне «Y» и на один уровень «Y» выше. Между столом зачарования и книжной полкой должен быть блок воздуха, чтобы место было правильным. Другие блоки, которые дают характеристики (такие как <keyword>черепа</keyword> или <keyword>свечи</keyword>), также должны быть размещены в правильном месте для книжной полки, чтобы добавлять характеристики к столу."
 		""
 		"Некоторые блоки могут предоставлять характеристики динамически, что означает, что всплывающая подсказка не является полностью точной. Например, <keyword>свечи</keyword> можно устанавливать в стак (до <property>4 штук</property> в одном блоке) и при этом получать больше <property>Arcana</property>."
 	]
@@ -3779,6 +4090,11 @@
 	]
 	quest.6245F17DF657C296.quest_subtitle: "Info for nerds"
 	quest.624A33C4995164C4.quest_desc: ["Hot enough furnace to produce <keyword>steel</keyword>, as well as some <keyword>other useful resources</keyword>"]
+	quest.625AEA43A983AD8E.quest_desc: [
+		"The <keyword>Shapers Focus</keyword> is required to cast spells that manipulate blocks - Conjuration Essence and other block-shaping glyphs like <property>Snare</property> or <property>Dispel</property> need it to place, remove or transform blocks."
+		"{@pagebreak}"
+		"<keyword>Shapers Focus</keyword> нужен для заклинаний, изменяющих блоки - глифы вроде <property>Snare</property> или <property>Dispel</property> используют его, чтобы ставить, убирать или превращать блоки."
+	]
 	quest.625DBAE6C9492790.quest_desc: [
 		"Enchanter can enchant books with specific enchantments and improve them. "
 		""
@@ -3792,6 +4108,15 @@
 		"Имей ввиду, действия с конфликтующими зачарованиями &oбудут потреблять чуть больше опыта&r так же для этого &oнеобходима открытая глава в книге&r!"
 	]
 	quest.6270DCC59DA5FFB4.quest_desc: [""]
+	quest.62B24669E3352EAB.quest_desc: [
+		"The <keyword>Source Jar</keyword> stores <property>source</property> for later use, up to <keyword>10000</keyword>. Fill it by pouring liquid source into it, or right-clicking it with a bucket of liquid source."
+		""
+		"Use the <keyword>Dominion Wand</keyword> on the jar and then on a device or relay to link them - once linked, the device will draw source from the jar automatically whenever it needs it."
+		"{@pagebreak}"
+		"<keyword>Сурс джар</keyword> хранит <property>сурс</property> для дальнейшего использования, до <keyword>10000</keyword> единиц. Заполняйте его, выливая в него жидкий сурс, или кликнув по нему ведром с жидким сурсом."
+		""
+		"Используйте <keyword>Жезл владения</keyword> на джаре, а затем на устройстве или реле, чтобы связать их - после этого устройство будет само забирать сурс из джара, когда он ему понадобится."
+	]
 	quest.62D095FE0536F7B7.quest_desc: [
 		"Now that I have a much more durable leather, I only need a very durable metal. The strongest I can find to withstand the chemicals. That's when I came across ancient debris. It's quite fitting it is deep within the bowels of the Nether."
 		""
@@ -3860,6 +4185,11 @@
 		"{@pagebreak}"
 		"Позволяет <positive>заменять блоки</positive> одного типа на другой."
 	]
+	quest.6524AD691FB1FB6D.quest_desc: [
+		"The <keyword>Mimic Scroll</keyword> is placed in an item frame on an inventory - a <keyword>Starbuncle</keyword> will then only deposit items that already exist in that inventory, matching its existing contents."
+		"{@pagebreak}"
+		"<keyword>Mimic Scroll</keyword> вставляется в рамку на инвентаре - после этого <keyword>Старбанкл</keyword> будет складывать в него только те предметы, что там уже есть, повторяя содержимое инвентаря."
+	]
 	quest.65A0E1BB560D5E14.quest_desc: [
 		"Guess what a filter does! ;)"
 		"{@pagebreak}"
@@ -3916,6 +4246,11 @@
 		"каждый аспектус в разных мирах свой, чтобы понять какие именно - нужно либо эксперементы и рандом, либо же создать Codebreaking Slate, в нём будут подсказки какое количество аспектусов было выбрано верно"
 		""
 		"нужен редстоун на cannon чтобы запустить крафт"
+	]
+	quest.67D160A1575175C3.quest_desc: [
+		"The <keyword>Whirlisprig Familiar</keyword> reduces the source cost of <property>Earth</property> glyphs by half and grants bonus saturation from food - a personal buff version, separate from the worker Whirlisprig that generates materials near its flower."
+		"{@pagebreak}"
+		"<keyword>Фамильяр Виррисприга</keyword> снижает стоимость сурса для глифов <property>Земли</property> вдвое и даёт бонус к насыщению от еды - персональный баф, отдельный от рабочего Виррисприга, который производит материалы возле своего цветка."
 	]
 	quest.67F8922E4579FA8C.quest_desc: [
 		"<warning><b>If you put this ring on, you won't be able to take it off later!</b></warning>"
@@ -4103,6 +4438,11 @@
 		"{@pagebreak}"
 		"Периодически испускает <warning>импульс красного камня</warning>. Нажав <positive>ПКМ</positive>, вы можете изменить <keyword>длительность импульса</keyword>, а нажав <positive>Shift+ПКМ</positive> - <keyword>интервал между импульсами</keyword>."
 	]
+	quest.6921F83FABDF46E1.quest_desc: [
+		"The <keyword>Manipulation Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, confusing them so they may attack each other."
+		"{@pagebreak}"
+		"<keyword>Manipulation Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам, сбивая их с толку так, что они начинают атаковать друг друга."
+	]
 	quest.69418DE8B3EC2C19.quest_desc: ["An invisible ward that pushes hostile creatures away in a 5-block radius. Crafted from iron and lapis, accessible to apprentices."]
 	quest.695BD75871453E02.quest_desc: [
 		"Makes the items/fluid in its connected inventory available to the network."
@@ -4199,6 +4539,11 @@
 		"{@pagebreak}"
 		"брось катализатор в зону ритуала, с неба упадёт соответствующий метеор"
 	]
+	quest.6DD09F8CD0139D53.quest_desc: [
+		"The <keyword>Mark of Mastery</keyword> (Ars Elemental) is used at the <keyword>Enchanting Apparatus</keyword> to upgrade a <keyword>Lesser Focus</keyword> into a <keyword>Greater Focus</keyword>, removing its off-element penalty and adding powerful bonuses. It's also required for crafting Elemental armor."
+		"{@pagebreak}"
+		"<keyword>Знак мастерства</keyword> (Ars Elemental) используется в <keyword>Зачаровывающем аппарате</keyword>, чтобы улучшить <keyword>Малый фокус</keyword> до <keyword>Большого фокуса</keyword>, убрав штраф за чужой элемент и добавив мощные бонусы. Также нужен для крафта элементальной брони."
+	]
 	quest.6DD0AB27900F46E3.quest_desc: [""]
 	quest.6DDD919AA913F5E3.quest_desc: ["A cruel ward: any living creature that steps onto it suffers a full heart of damage. Nearly invisible once inscribed, ideal for defending passages or feeding automated arrangements."]
 	quest.6DE88D96910CF3A5.quest_desc: [
@@ -4232,12 +4577,18 @@
 		"{@pagebreak}"
 		"Будьте осторожны, <property>платериевый самоцвет</property> почти сразу же улетает вверх при выпадение, когда копаете руду - ставьте над ней блок или придумайте что-то умнее! "
 	]
+	quest.6DFAF7C73B8D00B9.quest_desc: [
+		"The <keyword>Shelf of Sight</keyword> doesn't boost level or power - instead it reveals extra enchantments that would otherwise stay hidden in the enchanting table's menu."
+		"{@pagebreak}"
+		"<keyword>Shelf of Sight</keyword> не повышает уровень или силу - вместо этого открывает дополнительные зачарования, которые иначе останутся скрытыми в меню стола зачарований."
+	]
 	quest.6E11ECC7B831480C.quest_desc: [
 		"Collect &l12 unique eyes&r to activate the portal."
 		"{@pagebreak}"
 		"Соберите &l12 уникальных глаз&r для активации портала."
 	]
 	quest.6E11ECC7B831480C.quest_subtitle: "The End Access"
+	quest.6E4CBFF9631515D7.quest_desc: [""]
 	quest.6E57514B8D09F6D8.quest_desc: [
 		"nearby <keyword>pets</keyword> <positive>teleport</positive> with you"
 		""
@@ -4253,6 +4604,7 @@
 		"Давайте просто сделаем вид, что на текстуре этой штуки нет пилы, и продолжим, пока вы не сможете сделать эту пилу, чтобы удовлетворить свои потребности в точности."
 	]
 	quest.6E680C846961BFE3.quest_subtitle: "Finally"
+	quest.6E8468CCB9AA7BC2.quest_desc: ["[ \"You can summon a mob using a \", { \"text\": \"brazier\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } } ]"]
 	quest.6E99902F01ED8483.quest_desc: [
 		"Blaze powder was already as <warning>VOLATILE</warning> as toxin. It burns just like toxin does. So a thought came to me. Was there a way to <warning>mix these substances together</warning> to create the <warning>ultimate purifying effect</warning>. That's when I created this miraculous fusion. &l<warning>WITCHFIRE</warning>."
 		"{@pagebreak}"
@@ -4350,6 +4702,11 @@
 		"А еще распишитесь *&#9BB8EDтут&r*, *&#9BB8EDздесь&r*, и предоставьте &#FEECD6фото паспорта&r!"
 	]
 	quest.6FCE521D7A64B367.quest_desc: ["Folds space between two aligned glyphs for a seamless vertical elevator. Place at least two arrays directly above one another on the same block column, at any distance up to 64 blocks. Jump while standing on an array to teleport upward to the next array above; Sneak to descend to the nearest below. Multiple arrays can be chained for multi-floor shafts. Each search is limited to the same X/Z column, so precise alignment matters."]
+	quest.6FDCFFC3BB5BE0EB.quest_desc: [
+		"The <keyword>Firenando Familiar</keyword> (Ars Elemental) is a combat companion with 80 health and armor - it automatically targets nearby hostile mobs with homing projectiles that ignite and knock them back, regenerates over time, and goes dormant instead of dying (revive it with Magma Cream or Blaze Powder)."
+		"{@pagebreak}"
+		"<keyword>Firenando</keyword> (Ars Elemental) - боевой фамильяр со здоровьем и бронёй: сам атакует ближайших враждебных мобов самонаводящимися снарядами, поджигая и отбрасывая их, со временем восстанавливается, а вместо смерти впадает в спячку (оживить можно магмовыми сливками или порохом ифрита)."
+	]
 	quest.703F575B0690DE26.quest_desc: ["Gem Dust is necessary to for making better use of Apotheosis gems. Drop an anvil on some gems to get Gem Dust."]
 	quest.706FE8A4CD20FDEF.quest_desc: [
 		"A <property>square</property>, a <property>diamond</property>, a <property>circle</property> - they don’t mean anything; they’re just decorations."
@@ -4446,6 +4803,11 @@
 		""
 		"Так же мне не следует пытаться прививать материалы, о которых я мало что знаю. Сначала мне нужно полностью изучить как растение так и свойство. В противном случае операция провалится еще до того, как начнётся, и все мои усилия будут сведены на нет. Далее я описал все возможные варианты превращений."
 	]
+	quest.71540B1B7889D6A8.quest_desc: [
+		"The <keyword>Blazing Hellshelf</keyword> is a stronger, more aggressive <keyword>Nether</keyword>-themed bookshelf than the Glowing Hellshelf, and it also reveals an extra hidden enchantment in the table's menu, same as the Shelf of Sight."
+		"{@pagebreak}"
+		"<keyword>Blazing Hellshelf</keyword> - более сильная и агрессивная книжная полка в стиле <keyword>Нижнего мира</keyword>, чем Glowing Hellshelf, а также открывает дополнительное скрытое зачарование в меню стола, как и Shelf of Sight."
+	]
 	quest.7162B15B452A8B2E.quest_desc: [
 		"An attuned stone is a diamond which has been infused with magical energy."
 		""
@@ -4455,6 +4817,7 @@
 		""
 		"Его можно зарядить, чтобы использовать в качестве портативного контейнера для алтарной энергии, позволяющего создавать магию кругов без присутствия алтаря, а также использовать при создании различных магических инструментов."
 	]
+	quest.716BC68F5F2693D0.quest_desc: [""]
 	quest.71721385710E5EB0.quest_desc: [
 		"You can press \"<positive>C</positive>\" to <positive>crawl</positive> and say hi to all your <wiggle amplitude=0.5 frequency=1.5 phase=1.0>worm-like friends</wiggle>!"
 		"{@pagebreak}"
@@ -4733,6 +5096,11 @@
 		"Infused Poppets have greater effects. When a tool breaks, a Tool Poppet will prevent it from breaking and restore some durability. An Infused Poppet will instead FULLY restore that tool's durability."
 		""
 		"Sturdy Poppets have additional durability."
+	]
+	quest.7CCCA5B482DE9A13.quest_desc: [
+		"The <keyword>SpellBinder</keyword> (Not Enough Glyphs) is an alternative to the spell book that can hold up to 25 spells from caster tomes or parchments - great for spells you're done tweaking, or for sharing magic without handing over your whole book. It also has its own Thread slots for special bonuses (like Focus, Randomize or turning it into a melee weapon)."
+		"{@pagebreak}"
+		"<keyword>SpellBinder</keyword> (Not Enough Glyphs) - альтернатива спелл-буке: хранит до 25 заклинаний из тома-кастера или пергаментов, удобен для заклинаний, которые вы больше не меняете, или чтобы поделиться магией, не отдавая всю книгу. У него также есть свои слоты для нитей с особыми бонусами (Focus, Randomize или превращение в оружие ближнего боя)."
 	]
 	quest.7D5DCEA36FF46987.quest_desc: [
 		"A <keyword>bed for daytime</keyword>. The hammock can only be placed between two Nails and Rope."

@@ -3025,7 +3025,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -5089,6 +5089,7 @@
 			entity_vis_size: 1.0f
 			id: "2BAF1070D316E4A4"
 			min_required_dependencies: 1
+			min_width: 300
 			rewards: [{
 				auto: "enabled"
 				icon: {
@@ -5114,6 +5115,7 @@
 			dependencies: ["2BAF1070D316E4A4"]
 			entity_vis_size: 1.0f
 			id: "5E639A3B6E268A89"
+			min_width: 300
 			shape: "circle"
 			tasks: [{
 				count: 15L

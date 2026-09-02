@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
         "spectrum:pedestal/tier3/pastel_network/sender_node_refined",
         "spectrum:pedestal/tier3/pastel_network/storage_node_refined",
         "spectrum:pedestal/tier3/pastel_network/gather_node_refined",
+        "spectrum:smelting/ore/azurite_ores",
+        "spectrum:blasting/ore/azurite_ores",
     ]
 
     removing_by_recipe_id.forEach(id => {

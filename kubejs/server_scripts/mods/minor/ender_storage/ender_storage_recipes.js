@@ -1,59 +1,31 @@
 ServerEvents.recipes(event => {
-    
-    event.remove({mod: "enderstorage"})
 
-    customEnchanterCraft(event, {
-        time: 600,
-        experience: 1000,
-        ingredients: [
-            { "item": "ars_elemental:curio_bag" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "royalvariations:royal_ender_pearl" },
-            { "item": "dungeonsdelight:ancient_egg" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "royalvariations:royal_ender_pearl" },
-            { "item": "dungeonsdelight:ancient_egg" },
-        ],
-        result: { id: "enderstorage:ender_pouch", count: 1 },
-        advancement: "spectrum:midgame/build_enchanting_structure"
-    });
+    const recipes = [
+        { mainItem: "ars_elemental:curio_bag", id: "enderstorage:ender_pouch", count: 1 },
+        { mainItem: "modern_industrialization:aluminum_tank", id: "enderstorage:ender_tank", count: 2 },
+        { mainItem: "modern_industrialization:aluminum_barrel", id: "enderstorage:ender_chest", count: 2 }
+    ]
 
-    customEnchanterCraft(event, {
-        time: 600,
-        experience: 1000,
-        ingredients: [
-            { "item": "modern_industrialization:aluminum_tank" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "royalvariations:royal_ender_pearl" },
-            { "item": "dungeonsdelight:ancient_egg" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "royalvariations:royal_ender_pearl" },
-            { "item": "dungeonsdelight:ancient_egg" },
-        ],
-        result: { id: "enderstorage:ender_tank", count: 2 },
-        advancement: "spectrum:midgame/build_enchanting_structure"
-    });
-    
-    customEnchanterCraft(event, {
-        time: 600,
-        experience: 1000,
-        ingredients: [
-            { "item": "modern_industrialization:aluminum_barrel" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "royalvariations:royal_ender_pearl" },
-            { "item": "dungeonsdelight:ancient_egg" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "malum:hallowed_gold_ingot" },
-            { "item": "royalvariations:royal_ender_pearl" },
-            { "item": "dungeonsdelight:ancient_egg" },
-        ],
-        result: { id: "enderstorage:ender_chest", count: 2 },
-        advancement: "spectrum:midgame/build_enchanting_structure"
+    recipes.forEach(({ mainItem, id, count }) => {
+        customEnchanterCraft(event, {
+            time: 600,
+            experience: 1000,
+            ingredients: [
+                { "item": mainItem },
+                { "item": "malum:hallowed_gold_ingot" },
+                { "item": "malum:hallowed_gold_ingot" },
+                { "item": "royalvariations:royal_ender_pearl" },
+                { "item": "dungeonsdelight:ancient_egg" },
+                { "item": "malum:hallowed_gold_ingot" },
+                { "item": "malum:hallowed_gold_ingot" },
+                { "item": "royalvariations:royal_ender_pearl" },
+                { "item": "dungeonsdelight:ancient_egg" },
+            ],
+            result: id,
+            count: count,
+            removeRecipe: true,
+            advancement: "spectrum:midgame/build_enchanting_structure"
+        });
     });
 
 })

@@ -222,24 +222,21 @@ ServerEvents.recipes(event => {
         count: 8
     })
 
-    customAlchemicalForgeCraft(event, {
-        affinities: [
-            "toxony:decay",
-            "toxony:soul",
-            "toxony:moon"
+
+    customShrineRecipe(event, {
+        time: 60,
+        experience: 4.0,
+        fluid: "milf:shimmersteel_essence",
+        ingredients: [
+            { "item": "spectrum:onyx_shard", count: 12 },
+            { "item": "enchanted:foul_fume", count: 4 },
+            { "item": "embers:winding_gears", count: 1 },
         ],
-        auxiliary: [
-            {
-                "item": "neovitae:tabula_animata"
-            },
-            {
-                "item": "eidolon_repraised:shadow_gem"
-            }
-        ],
-        main: {
-            "item": "spectrum:onyx_block"
+        result: {
+            "id": "milf:onyx_table_core",
+            "count": 1
         },
-        result: "milf:onyx_table_core"
-    })
+        advancement: "spectrum:unlocks/blocks/fusion_shrine"
+    });
 
 })

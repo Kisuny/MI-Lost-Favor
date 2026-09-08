@@ -49,22 +49,31 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
-    customMixingCauldron(event, {
-        fluid: "minecraft:water",
-        fluidAmount: 1000,
-        ingredients: [
-            { "item": "minecraft:book" },
-            { "item": "toxony:poison_paste" },
-            { "item": "minecraft:rotten_flesh" },
-            { "item": "minecraft:rotten_flesh" },
-            { "item": "minecraft:rotten_flesh" },
-            { "item": "minecraft:rotten_flesh" },
-            { "item": "minecraft:rotten_flesh" },
-            { "item": "toxony:poison_paste" },
+    customPedestalCraft(event, {
+        time: 400,
+        tier: "advanced",
+        experience: 4.0,
+        citrine: 16,
+        topaz: 16,
+        amethyst: 16,
+        onyx: 4,
+        pattern: [
+            'eqe',
+            'qwq',
+            'eqe'
         ],
-        output: "eidolon_repraised:codex",
+        key: {
+            q: 'toxony:poison_paste',
+            w: 'minecraft:book',
+            e: 'minecraft:rotten_flesh',
+        },
+        result: {
+            "id": "eidolon_repraised:codex",
+            "count": 1
+        },
+        advancement: "spectrum:create_onyx_shard",
         removeRecipe: true
-    })
+    });
 
     yTechShaped(event, {
         pattern: [

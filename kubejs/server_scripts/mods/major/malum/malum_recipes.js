@@ -126,18 +126,6 @@ ServerEvents.recipes(event => {
     })
 
     spiritInfusion(event, {
-        input: { item: "neovitae:tainted_flesh", count: 2 },
-        result: { id: "malum:living_flesh", count: 2 },
-        extraInputs: [],
-        spirits: [
-            { type: "malum:sacred", count: 2 },
-            { type: "malum:wicked", count: 2 }
-        ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
-    })
-
-    spiritInfusion(event, {
         input: { item: "modern_industrialization:aluminum_double_ingot", count: 1 },
         result: { id: "malum:malignant_pewter_ingot", count: 1 },
         extraInputs: [

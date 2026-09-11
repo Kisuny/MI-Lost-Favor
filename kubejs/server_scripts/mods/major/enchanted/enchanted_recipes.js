@@ -28,22 +28,160 @@ ServerEvents.recipes(event => {
         })
     }
 
-    anvil_recipe(
-        [
-            [{ "item": "minecraft:iron_ingot" }, 5],
-            [{ "item": "minecraft:iron_bars" }, 2],
-            [{ "item": "paganbless:runic_charge" }, 1],
-        ],
-        [{ "id": 'enchanted:witch_oven' }, 1]
-    );
 
-    anvil_recipe(
-        [
-            [{ "item": "minecraft:cauldron" }, 1],
-            [{ "item": "paganbless:runic_charge" }, 1],
+    customPedestalCraft(event, {
+        time: 1000,
+        tier: "basic",
+        experience: 2.0,
+        citrine: 4,
+        topaz: 2,
+        amethyst: 8,
+        pattern: [
+            'eqe',
+            'www',
+            'qrq'
         ],
-        [{ "id": 'enchanted:kettle' }, 1]
-    );
+        key: {
+            q: 'minecraft:iron_ingot',
+            w: 'minecraft:iron_bars',
+            e: 'spectrum:shimmerstone_gem',
+            r: 'paganbless:runic_charge',
+        },
+        result: {
+            "id": "enchanted:witch_oven",
+            "count": 1
+        },
+        advancement: "spectrum:place_pedestal",
+        removeRecipe: true
+    });
+
+    pedestalFromRecipe(event, {
+        id: "enchanted:fume_funnel",
+        tier: "basic",
+        time: 200,
+        experience: 4.0,
+        amethyst: 8,
+        advancement: "spectrum:place_pedestal"
+    });
+    
+    pedestalFromRecipe(event, {
+        id: "enchanted:broom",
+        tier: "basic",
+        time: 200,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    
+    pedestalFromRecipe(event, {
+        id: "enchanted:ritual_chalk",
+        tier: "basic",
+        time: 200,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:fume_filter",
+        tier: "basic",
+        time: 200,
+        experience: 4.0,
+        amethyst: 4,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:poppet_shelf",
+        tier: "basic",
+        time: 800,
+        experience: 4.0,
+        amethyst: 8,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:altar",
+        tier: "basic",
+        time: 200,
+        experience: 4.0,
+        amethyst: 2,
+        citrine: 6,
+        topaz: 2,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:chalice",
+        tier: "basic",
+        time: 400,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:candelabra",
+        tier: "basic",
+        time: 400,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:poppet",
+        tier: "basic",
+        time: 400,
+        amethyst: 4,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:spinning_wheel",
+        tier: "basic",
+        time: 800,
+        amethyst: 4,
+        citrine: 4,
+        topaz: 4,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:circle_talisman",
+        tier: "basic",
+        time: 800,
+        citrine: 4,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+    pedestalFromRecipe(event, {
+        id: "enchanted:distillery",
+        tier: "basic",
+        time: 800,
+        amethyst: 16,
+        citrine: 4,
+        topaz: 4,
+        experience: 4.0,
+        advancement: "spectrum:place_pedestal"
+    });
+
+
+    customPedestalCraft(event, {
+        time: 1000,
+        tier: "basic",
+        experience: 2.0,
+        citrine: 8,
+        amethyst: 4,
+        pattern: [
+            'ewe',
+            'rqr',
+            ' t '
+        ],
+        key: {
+            q: 'minecraft:cauldron',
+            w: 'paganbless:runic_charge',
+            e: 'spectrum:shimmerstone_gem',
+            r: 'crittersandcompanions:silk',
+            t: 'minecraft:smooth_stone_slab'
+        },
+        result: {
+            "id": "enchanted:kettle",
+            "count": 1
+        },
+        advancement: "spectrum:place_pedestal",
+        removeRecipe: true
+    });
 
     customPestleAndMortarCraft(event, {
         ingredients: [

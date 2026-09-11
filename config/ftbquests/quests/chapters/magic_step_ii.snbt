@@ -64,7 +64,7 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -32.5d
+			x: -33.0d
 			y: -27.0d
 		}
 		{
@@ -103,7 +103,7 @@
 					type: "item"
 				}
 			]
-			x: -33.5d
+			x: -34.0d
 			y: -27.5d
 		}
 		{
@@ -119,7 +119,7 @@
 				item: { count: 1, id: "usefulslime:slime_sling" }
 				type: "item"
 			}]
-			x: -31.5d
+			x: -31.0d
 			y: -27.5d
 		}
 		{
@@ -7781,6 +7781,34 @@
 			}]
 			x: -46.0d
 			y: -18.0d
+		}
+		{
+			dependencies: [
+				"70A0A078B94FF034"
+				"4EF8D657143CD113"
+			]
+			entity_vis_size: 1.0f
+			id: "15054A95EDCBE33D"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "milf:slot/time_sand_pouch"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "6D760C6378680C1F"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "7BB22F2E930F6F88"
+				item: { components: { "gag:grains_of_time": 0 }, count: 1, id: "gag:time_sand_pouch" }
+				type: "item"
+			}]
+			x: -32.0d
+			y: -27.0d
 		}
 	]
 }

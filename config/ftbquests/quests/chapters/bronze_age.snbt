@@ -3218,5 +3218,18 @@
 			x: 13.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["57F916BD1A2EE89C"]
+			entity_vis_size: 1.0f
+			id: "4D4DCC8BF72CB593"
+			shape: "heart"
+			tasks: [{
+				id: "2DED2E4CFB83E45D"
+				item: { components: { "sophisticatedcore:number_of_inventory_slots": 27, "sophisticatedcore:number_of_upgrade_slots": 1, "sophisticatedcore:render_info_tag": { upgradeItems: [{ }] }, "sophisticatedcore:storage_uuid": [I; 1916723092, -1992474304, -1306188761, -717481051 ] }, count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -4.0d
+		}
 	]
 }

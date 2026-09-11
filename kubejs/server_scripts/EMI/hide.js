@@ -8,6 +8,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'modern_industrialization:bronze_furnace',
         'extended_industrialization:large_steam_furnace',
         'extended_industrialization:large_electric_furnace',
+        'spectrum:deepslate_shimmerstone_ore',
+        'spectrum:shimmerstone_ore',
         // 'modern_industrialization:netherite_hammer',
         // 'modern_industrialization:diamond_hammer',
         // "modern_industrialization:iron_barrel",

@@ -65,8 +65,8 @@ const milfMacToCrushExcludedInputs = [
 
 // Recipes producing any(!) of these output items are skipped entirely, regardless of input.
 const milfMacToCrushExcludedOutputs = [
-    // "minecraft:sugar",
-    // "minecraft:blaze_powder",
+    "minecraft:glowstone_dust",
+    "#c:dusts/glowstone"
 ]
 
 

@@ -52,6 +52,7 @@ ServerEvents.recipes(event => {
         "ars_nouveau:imbuement_amethyst_block",
         "ars_nouveau:imbuement_lapis",
         "ars_elemental:bone_meal",
+        "ars_nouveau:glowstone_block_to_dust",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -135,7 +136,30 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    event.replaceInput({ output: 'ars_nouveau:imbuement_chamber' }, 'minecraft:gold_ingot', 'embers:dawnstone_plate')
+    customPedestalCraft(event, {
+        time: 700,
+        tier: "basic",
+        experience: 4.0,
+        citrine: 12,
+        topaz: 12,
+        amethyst: 12,
+        pattern: [
+            'wqw',
+            'wew',
+            'wqw'
+        ],
+        key: {
+            q: 'embers:dawnstone_plate',
+            w: 'paganbless:black_thorn_planks',
+            e: 'paganbless:runic_charge',
+        },
+        result: {
+            "id": "ars_nouveau:imbuement_chamber",
+            "count": 1
+        },
+        advancement: "spectrum:place_pedestal",
+        removeRecipe: true
+    });
 
     // enchanting_apparatus and imbuement global replacements
     const itemReplacements = {
@@ -259,7 +283,7 @@ ServerEvents.recipes(event => {
             w: "embers:dawnstone_ingot",
             e: "#c:plates/dawnstone",
             r: "immersiveengineering:steel_fence",
-            t: "minecraft:heavy_weighted_pressure_plate",
+            t: "enchanted:foul_fume",
             y: "enchanted:attuned_stone",
         },
         result: {

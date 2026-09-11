@@ -15,5 +15,21 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"cognition:cognitive_flux"}, 6]],
         removeRecipe: true
     })
+    // foreach for tags example
+    // Ingredient.of('#milf:glyphs').itemIds.forEach(glyph => {
+    //     event.remove({output: glyph})
+    // })
+
+
+
+    pedestalFromRecipe(event, {
+        id: "cognition:molecular_metamorpher",
+        tier: "basic",
+        time: 400,
+        experience: 1.0,
+        topaz: 20,
+        advancement: "spectrum:place_pedestal",
+        yield_upgrades: false
+    });
 
 });

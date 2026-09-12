@@ -343,6 +343,12 @@ RecipeViewerEvents.removeCategories(event => {
         'modern_industrialization:bronze_furnace',
         'hexerei:woodcutter',
         'paganbless:cauldron_imbuing',
+        //#region AWI hiding
+        'milf:abstraction',
+        'milf:crimson_veil',
+        'javd:void',
+        'neovitae:dungeon',
+        //#region
     ]);
 });
 

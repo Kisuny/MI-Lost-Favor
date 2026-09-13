@@ -36,6 +36,32 @@ ClientEvents.generateAssets("before_mods", event => {
         "modern_industrialization:electric_macerator",
         "oritech:pulverizer",
         "immersiveengineering:crusher",
+
+        "modern_industrialization:bronze_compressor",
+        "modern_industrialization:steel_compressor",
+        "modern_industrialization:electric_compressor",
+
+        "modern_industrialization:bronze_cutting_machine",
+        "modern_industrialization:steel_cutting_machiner",
+        "modern_industrialization:electric_cutting_machine",
+
+        "modern_industrialization:bronze_mi_furnace",
+        "modern_industrialization:steel_mi_furnace",
+        "modern_industrialization:electric_mi_furnace",
+
+        "modern_industrialization:bronze_mixer",
+        "modern_industrialization:steel_mixer",
+        "modern_industrialization:electric_mixer",
+
+        "modern_industrialization:steel_packer",
+        "modern_industrialization:electric_packer",
+
+        "modern_industrialization:steel_unpacker",
+        "modern_industrialization:electric_unpacker",
+
+        "modern_industrialization:steel_wiremill",
+        "modern_industrialization:electric_wiremill",
+
         "modern_industrialization:assembler",
 
         
@@ -53,7 +79,32 @@ ClientEvents.generateAssets("before_mods", event => {
         "spectrum:deeper_down",
     ]
 
-    categories.forEach((categoryId, index) => {
+    let modifiedCategories = []
+
+    let miMachinesVariationsSteel = new $HashMap(global.VANILLA_MI_MACHINES_VARIATIONS) 
+
+    miMachinesVariationsSteel = miMachinesVariationsSteel.entrySet().stream().collect($Collectors.toMap(
+        entry => {
+            let id = entry.getKey()
+            return `${id.split(":")[0]}:steel_${id.split(":")[1]}`
+        },
+        enttry => enttry.getValue()
+    ))
+
+    categories.forEach(category => {
+        modifiedCategories.push(category)
+
+        if (miMachinesVariationsSteel[category]){
+            Object.entries(miMachinesVariationsSteel[category]).forEach(([variationMachineId, recipeData]) => {
+                modifiedCategories.push(recipeData.category || variationMachineId)
+            })
+
+        }
+    })
+
+    //console.log(modifiedCategories);
+
+    modifiedCategories.forEach((categoryId, index) => {
         
         json[categoryId] = {
             order: index + 1

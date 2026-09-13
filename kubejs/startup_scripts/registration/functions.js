@@ -13,6 +13,8 @@ function createNewItem(id, args) {
     StartupEvents.registry('item', event => {
         let item = args.itemType ? event.create("milf:" + id, args.itemType) : event.create("milf:" + id)
         item.texture(args.texturePath || `milf:item/${id}`)
+        //item.modelGenerator(generator => generator.custom(json => json.add))
+        //item.disableRepair()
         itemBuilder(item, args)
     })
     milfData.ITEM(id, args)
@@ -76,6 +78,7 @@ function itemBuilder(/**@type {$DiggerItemBuilder$Pickaxe} */ builder, args) {
     args.tag && (!Array.isArray(args.tag) ? builder.tag(args.tag) : args.tag.forEach(tag => { builder.tag(tag) }))
     args.maxDamage && builder.maxDamage(args.maxDamage)
     args.useAnimation && builder.useAnimation(args.useAnimation)
+    args.disableRepair && builder.disableRepair()
     args.food && builder.food(food => {
         args.food.nutrition && food.nutrition(args.food.nutrition)
         args.food.saturation && food.saturation(args.food.saturation)

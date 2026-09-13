@@ -68,6 +68,32 @@ createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], la
 createNewItem('twig')
 createNewItem('unfired_fire_clay_brick')
 createNewItem('fire_clay_ball')
+
+createNewItem('molten_bronze_clay_bucket', {
+
+    stackSize: 1,
+    maxDamage: 9,
+    disableRepair: true,
+    tag: "ytech:clay_molds",
+
+    modelGenerator: (generator) => {
+        generator.custom(json => {
+            Object.entries({
+                "parent": "neoforge:item/default",
+                "loader": "neoforge:fluid_container",
+                "cover_is_mask": false,
+                "flip_gas": false,
+                "fluid": "embers:molten_bronze",
+                "textures": {
+                    "base": "ytech:item/clay_bucket",
+                    "fluid": "ytech:item/bucket_overlay"
+                }
+            }).forEach(([key, value]) => json.add(key, value))
+        })
+    }
+
+})
+
 createNewItem('ferrosilicon_dust')
 
 

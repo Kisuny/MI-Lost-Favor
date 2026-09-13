@@ -104,4 +104,14 @@ ItemEvents.modification(event => {
         item.setMaxStackSize(16)
     })
 
+    event.modify('ytech:clay_bucket', item => {
+        //item.resetComponents().set($DataComponents.MAX_DAMAGE, 1)
+        item.setMaxDamage(1)
+        item.setMaxStackSize(1)
+        item.setDamage(0)
+        item.disableRepair()
+        
+    })
+
+
 })

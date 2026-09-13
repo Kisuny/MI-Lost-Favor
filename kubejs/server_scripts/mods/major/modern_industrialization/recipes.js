@@ -49,8 +49,10 @@ function miMachineRecipe(event, args){
     const energy = args.multiplyEnergy ? args.energy + (inputs.length + fluids.length) * (energy / 4) : args.energy || 8
     const time = args.time || 100
 
+    let recipeType = args.machine || "modern_industrialization:chemical_reactor"
+
     let recipe = {
-        "type": args.machine || "modern_industrialization:chemical_reactor",
+        "type": recipeType,
         "eu": energy,
         "duration": time,
         "item_inputs": [],
@@ -87,24 +89,34 @@ function miMachineRecipe(event, args){
     if (args.removeRecipe) {
         outputs.forEach((out) => {
             event.remove({ output: out[0].item })
+            miRemovedRecipesMap.computeIfAbsent(out[0].item, _ => { return new $HashSet() }).add("all")
+            //miRemovedRecipesMap.add(out[0].item)
         })
         fluidOutputs.forEach(output => {
             let fluid = Fluid.of(output[0].fluid)            
             event.remove({ output: fluid })
+            miRemovedRecipesMap.computeIfAbsent(output[0].fluid, _ => { return new $HashSet() }).add("all")
+            //miRemovedRecipesMap.add(output[0].fluid)
         })
     }
     if(args.removeRecipeType){
         outputs.forEach((out) => {
             event.remove({ output: out[0].item, type: args.removeRecipeType })
+            miRemovedRecipesMap.computeIfAbsent(out[0].item, _ => { return new $HashSet() }).add(args.removeRecipeType)
+            //miRemovedRecipesMap.add(out[0].item)
         })
     }
     if (args.removeThisRecipeType){
         outputs.forEach((out) => {
-            event.remove({ output: out[0].item, type: args.machine })
+            event.remove({ output: out[0].item, type: recipeType })
+            miRemovedRecipesMap.computeIfAbsent(out[0].item, _ => { return new $HashSet() }).add(recipeType)
+            //miRemovedRecipesMap.add(out[0].item)
         })
         fluidOutputs.forEach(output => {
             let fluid = Fluid.of(output[0].fluid)            
-            event.remove({ output: fluid, type: args.machine })
+            event.remove({ output: fluid, type: recipeType })
+            miRemovedRecipesMap.computeIfAbsent(output[0].fluid, _ => { return new $HashSet() }).add(recipeType)
+            //miRemovedRecipesMap.add(output[0].fluid)
             //if (args.machine == "modern_industrialization:mixer") console.log(fluid);
             
         })
@@ -183,8 +195,34 @@ function miMachineRecipe(event, args){
                 )
             })
     }
+
+    if (miMachinesVariations[args.machine]){
+        Object.entries(miMachinesVariations[args.machine]).forEach(([machineId, recipeData]) => {
+            //let newArgs = Object.assign({}, args, { machine: machineId })
+
+            let newArgs = JSON.parse(JSON.stringify(args))
+            newArgs = Object.assign({}, newArgs, { machine: machineId })
+
+            if (recipeData.argsPredicate) {
+                if (!recipeData.argsPredicate(args)) return
+            }
+
+            if (recipeData.argsCallback){
+                recipeData.argsCallback(newArgs)
+            }
+
+            miMachineRecipe(event,newArgs)
+
+        })
+
+    }
     
-}
+} 
+
+let miMachinesVariations = global.VANILLA_MI_MACHINES_VARIATIONS
+
+let miRemovedRecipesMap = new $HashMap()
+
 
 let machinesForMITweaksTierCompat = new $HashSet(
     Object.values(global.miProxyableMachineRecipeTypes)
@@ -193,24 +231,6 @@ let machinesForMITweaksTierCompat = new $HashSet(
 let miMachinesCompat = {
     "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
 }
-
-MIRecipeEvents.customCondition(event => {
-
-    event.registerWithIcon(`cd_reader`,
-        (context, recipe) => {
-            let block = context.level.getBlock(context.blockEntity.blockPos)
-            let data = block.getEntityData()
-            let upgradeCompound = data.getCompound("upgradesItemStack")
-            if (!upgradeCompound) return
-            let upgradeId = upgradeCompound.getString("id")
-
-            return upgradeId == "milf:cd_reader"
-        },
-        Item.of("milf:cd"),
-        Text.translatable(`milf.mi_condition.cd_reader`)
-    )
-
-})
 
 ServerEvents.recipes(event => {
 

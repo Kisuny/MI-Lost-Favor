@@ -1,10 +1,5 @@
 ServerEvents.recipes(event => {
 
-
-    // event.remove({id: [
-    //     'modern_industrialization:materials/copper/smelting/dust_to_ingot_smelting',
-    // ]})
-
     event.remove({output: [
         'modern_industrialization:steel_furnace', 
         'modern_industrialization:electric_furnace', 
@@ -21,25 +16,23 @@ ServerEvents.recipes(event => {
             console.error(`[furnace.js] Skipping ${kubeRecipe.id} (original: ${kubeRecipe.originalId}): ingredients ${JSON.stringify(ingredients)}, result: ${JSON.stringify(result)}`);
             return;
         }
-        event.recipes.modern_industrialization.mi_furnace(2, 200).itemIn(ingredients).itemOut(result);
-/*         const rjson = JSON.parse(kubeRecipe.json)
-        if (Array.isArray(rjson.ingredient)) {
-            rjson.ingredient.forEach(ing =>{
-                miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:furnace",
-                    inputItems: [[ing]],
-                    outputItems: [[rjson.result]]
-                })
-            })
-        } else {
-            miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:furnace",
-                inputItems: [[rjson.ingredient]],
-                outputItems: [[rjson.result]]
-            })
-        } */
 
-    });
+        //console.log(ingredients, result);
+
+        let inputIngredientCompound = neoCompound(ingredients.getFirst().getItemIds().stream().map(id => { return {item: id} }).toList(), 1)
+        
+        //console.log(ingredientCompound);
+        
+        miMachineRecipe(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:mi_furnace",
+            inputItems: [[inputIngredientCompound]],
+            outputItems: [[{ item: result.id }, result.getCount()]]
+        })
+        
+        //event.recipes.modern_industrialization.mi_furnace(2, 200).itemIn(ingredients).itemOut(result);
+
+    })
     
-    // Adding recipes that have been deleted 
     miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
         inputItems:[[{item:"minecraft:raw_copper"}, 1]],
         outputItems:[[{item:"minecraft:copper_ingot"}, 1]]
@@ -98,9 +91,3 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'minecraft:smelting', input: `modern_industrialization:bronze_dust` })
 
 })
-
-/* 
-KubeJSTweaks.beforeRecipes(event =>{
-    let regex = new RegExp(".*\_exported_mi_furnace")
-    event.disable(regex)
-}) */

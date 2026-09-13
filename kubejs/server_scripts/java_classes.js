@@ -93,6 +93,7 @@ let $Boolean = Java.loadClass("java.lang.Boolean")
 let $Block = Java.loadClass("net.minecraft.world.level.block.Block")
 
 let $LivingDropsEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingDropsEvent")
+let $LivingEntity = Java.loadClass("net.minecraft.world.entity.LivingEntity")
 
 let $BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
 let $HeightmapTypes = Java.loadClass("net.minecraft.world.level.levelgen.Heightmap$Types")

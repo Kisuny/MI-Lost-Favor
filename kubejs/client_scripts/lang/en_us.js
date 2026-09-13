@@ -39,6 +39,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.minecraft_mobs', `You started hearing ${MilfEffects.GRAD.custom("strange noises", "#ED1A1A", "#B62651")} at night...`)
     event.add('milf.stage.early_items', `This world no longer ${MilfEffects.GLITCH("rejects")} you...`)
 
+    event.add('milf.soul_harvest.tooltip', 'Collects <magic>soul shards</magic> from slain <keyword>undead</keyword>')
+
     event.add('gateways.basic/deer', "Deer Gateway")
     event.add('gateways.basic/villager', "Villager Gateway")
     event.add('gateways.tiered/haven', 'Haven Gateway')

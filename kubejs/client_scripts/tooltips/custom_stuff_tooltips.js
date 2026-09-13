@@ -9,6 +9,18 @@ ItemEvents.modifyTooltips(event => {
 
     event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
 
+    const soulHarvestWeapons = [
+        "malum:crude_scythe", 
+        "animusnv:runic_sentient_scythe", 
+        "animusnv:hand_of_death",
+        "neovitae:sentient_scythe",
+    ]
+    soulHarvestWeapons.forEach(weapon => {
+        event.modify(weapon, tooltip => {
+            tooltip.insert(1, Text.translatable(`milf.soul_harvest.tooltip`))
+        })
+    })
+
     const orbs = [
         'milf:transmutation_orb', 
         'milf:orb_of_annulment', 

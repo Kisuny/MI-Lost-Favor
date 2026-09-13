@@ -1,5 +1,7 @@
 global.disabledItems = [
 
+    new DisabledItemBuilder("milf:embers_dummy_chart_block_crate"),
+
     //#region AE
     new DisabledItemBuilder("extendedae:silicon_block"),
     new DisabledItemBuilder("ae2:sky_stone_tank"),

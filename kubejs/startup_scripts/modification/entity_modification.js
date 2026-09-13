@@ -308,6 +308,18 @@ EntityJSEvents.attributes(function (event) {
             });
         })(mobId, newValues, attrs);
     }
+
+
+    Array.of(
+        "ytech:deer",
+        "ytech:aurochs"
+    ).forEach(mobId => {
+        event.modify(mobId, event => {
+            event.add("minecraft:generic.movement_speed", 0.17)
+        })
+    })
+
+
 });
 
 // EntityJSEvents.attributes(event => {

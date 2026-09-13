@@ -6,7 +6,8 @@ let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
 let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
 
 global.miTweaksTags = global.miTweaksTags || []
-global.miTweaksMachinesData = global.miTweaksMachinesData || []
+global.miTweaksMachinesData = global.miTweaksMachinesData || {}
+global.miMachinesAssetsData = global.miMachinesAssetsData || {}
 
 const machineTiersAll = ["bronze", "steel", "electric"]
 
@@ -160,6 +161,10 @@ function registerSingleMIMachine(id, args){
         }
         milfData.addCredit(`${tier}_${id}`, "mi_machine", "modern_industrialization")
     })
+
+    if (args.customModelData){
+        global.miMachinesAssetsData[id] = args.customModelData
+    }
     
 }
 

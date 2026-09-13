@@ -54,3 +54,4 @@ let $LinkedHashMap = Java.loadClass("java.util.LinkedHashMap")
 
 let $ApothicEnchanting = Java.loadClass('dev.shadowsoffire.apothic_enchanting.ApothicEnchanting')
 
+let $Collectors = Java.loadClass('java.util.stream.Collectors')

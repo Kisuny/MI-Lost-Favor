@@ -105,3 +105,9 @@ let $patternJavaClass = Java.loadClass("java.util.regex.Pattern")
 let $matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
 
 let $LinkedHashMap = Java.loadClass("java.util.LinkedHashMap")
+
+let $EntityJoinLevelEvent = Java.loadClass("net.neoforged.neoforge.event.entity.EntityJoinLevelEvent")
+let $DeerEntity = Java.loadClass("com.yanny.ytech.configuration.entity.DeerEntity")
+let $AvoidEntityGoal = Java.loadClass("net.minecraft.world.entity.ai.goal.AvoidEntityGoal")
+
+let $ReiMachineRecipes = Java.loadClass("aztech.modern_industrialization.compat.rei.machines.ReiMachineRecipes")

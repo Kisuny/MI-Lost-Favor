@@ -1,16 +1,17 @@
-filename = 'immersive_machinery-0.2.0+1.21.1-neoforge.jar'
-name = 'Immersive Machinery [Fabric/Forge]'
-side = 'both'
+filename = 'immersive_machinery-0.2.1+1.21.1-neoforge.jar'
+name = 'Immersive Machinery'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge 1.21.1] Immersive Machinery - 0.2.1'
 
 [download]
-hash = '479c940b7e869dc4637a7f1d291ef310e8749c7f'
+hash = 'd00a0534979b7bee472512f536e84e620fc2b797'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6495135
+file-id = 8846470
 project-id = 1068736

@@ -1,16 +1,17 @@
-filename = 'polymorph-neoforge-1.1.0+1.21.1.jar'
-name = 'Polymorph (Fabric/Forge/Quilt)'
-side = 'both'
+filename = 'polymorph-neoforge-1.2.0+1.21.1.jar'
+name = 'Polymorph'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
-x-prismlauncher-release-type = 'release'
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'polymorph-neoforge-1.2.0+1.21.1.jar'
 
 [download]
-hash = '84f8c539fa326dc723ae62b7a6916d6b01982d07'
+hash = 'fa6c5fa8a21229c85d564b47c73df7160b3bd4df'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6794589
+file-id = 8849478
 project-id = 388800

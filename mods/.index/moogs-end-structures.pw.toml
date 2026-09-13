@@ -1,4 +1,4 @@
-filename = 'MoogsEndStructures-1.21-2.0.3.jar'
+filename = 'MoogsEndStructures-universal-1.21-2.1.0.jar'
 name = 'MoogsEndStructures'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
@@ -17,17 +17,18 @@ x-prismlauncher-mc-versions = [
     '1.21.9',
     '26.1',
     '26.1.1',
-    '26.1.2'
+    '26.1.2',
+    '26.2'
 ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'MES 2.0.3-1.21 [UNIVERSAL]'
+x-prismlauncher-version-number = "Moog's End Structures 2.1.0-1.21+ [UNIVERSAL]"
 
 [download]
-hash = '8725f8fa38ab3f3fd6e8627bf2f8f7f908ec2e51'
+hash = 'ad835304a67817f759805092f5e75fdd2b8f5c82'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8128039
+file-id = 8832389
 project-id = 892382

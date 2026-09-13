@@ -28,7 +28,8 @@ ServerEvents.generateData("before_mods", event => {
             "grimoireofgaia:fan_ice"
         ],
         scythe: [
-            "malum:soul_stained_steel_hoe"
+            "malum:soul_stained_steel_hoe",
+            "animusnv:hand_of_death",
         ],
         heavy_axe: [
             "risus:unawakened_vessel",

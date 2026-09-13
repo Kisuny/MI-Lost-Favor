@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         "minecraft:iron_sword": "malum:soul_stained_steel_sword",
         "minecraft:iron_pickaxe": "malum:soul_stained_steel_pickaxe",
         "minecraft:iron_shovel": "malum:soul_stained_steel_shovel",
-        "minecraft:iron_hoe": "malum:soul_stained_steel_hoe",
+        "minecraft:iron_hoe": "malum:crude_scythe",
         "minecraft:redstone": "malum:hex_ash",
         "c:dusts/redstone": "malum:hex_ash",
         "minecraft:redstone_block": "malum:block_of_hex_ash",
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         // "": "",
     }
 
-    const vitaeInputKeys = ["input", "inputs", "ingredient", "ingredients", "key", "catalysts", "catalyst", "addedinput", "baseinput"]
+    const vitaeInputKeys = ["input", "inputs", "ingredient", "ingredients", "key", "catalysts", "catalyst", "addedinput", "baseinput", "transformInput"]
 
     function patchVitaeIngredients(node) {
         if (Array.isArray(node)) {

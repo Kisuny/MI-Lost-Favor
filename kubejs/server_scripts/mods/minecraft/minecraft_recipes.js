@@ -402,4 +402,5 @@ milfDisableRecipesById([
     "minecraft:golden_pickaxe",
     "minecraft:golden_sword",
     "minecraft:golden_axe",
+    "minecraft:bread",
 ])

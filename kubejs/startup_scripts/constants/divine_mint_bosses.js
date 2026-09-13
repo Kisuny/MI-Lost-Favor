@@ -24,7 +24,7 @@ global.milfBosses = {
             resurrectionItems: [
             { id: "minecraft:vine", count: 6},
             { id:"devices:gold_coin", count: 5},
-            { id: "knightlib:great_essence", count: 4 },
+            // { id: "knightlib:great_essence", count: 4 },
             { id: "minecraft:spore_blossom", count: 1 }
         ]},
         "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena", isStructureExclusive:true },
@@ -49,7 +49,7 @@ global.milfBosses = {
         resurrectionItems: [
             { id: "minecraft:feather", count: 8 },
             { id: "devices:gold_coin", count: 5 },
-            { id: "knightlib:great_essence", count: 2 },
+            // { id: "knightlib:great_essence", count: 2 },
             { id: "minecraft:chicken", count: 1 }
         ]},
         "mowziesmobs:ferrous_wroughtnaut": { structure: "mowziesmobs:wrought_chamber" },

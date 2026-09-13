@@ -174,12 +174,12 @@ ServerEvents.recipes(event => {
         [{ "id": 'modern_industrialization:wrench' }, 1]
     )
 
-    anvil_recipe(
-        [
-            [{ "item": "knightlib:great_essence" }, 13],
-        ],
-        [{ "id": 'grimoireofgaia:experience_iron' }, 1]
-    )
+    // anvil_recipe(
+    //     [
+    //         [{ "item": "knightlib:great_essence" }, 13],
+    //     ],
+    //     [{ "id": 'grimoireofgaia:experience_iron' }, 1]
+    // )
 
     //#endregion
 

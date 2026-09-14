@@ -58,9 +58,6 @@ ServerEvents.recipes(event => {
         event.remove({ id: id })
     });
 
-    event.remove({ output: "malum:crude_scythe" })
-
-
     miMachineRecipe(event, {
         energy: 2, time: 40, machine: "modern_industrialization:blast_furnace",
         inputItems: [
@@ -157,10 +154,10 @@ ServerEvents.recipes(event => {
     })
 
     spiritInfusion(event, {
-        input: { item: "hexerei:infused_fabric", count: 2 },
-        result: { id: "malum:soulwoven_silk", count: 4 },
+        input: { item: "eidolon_repraised:wicked_weave", count: 2 },
+        result: { id: "malum:soulwoven_silk", count: 8 },
         extraInputs: [
-            { tag: "c:strings", count: 2 }
+            { item: "crittersandcompanions:silk", count: 1 }
         ],
         spirits: [
             { type: "malum:aerial", count: 3 },
@@ -208,6 +205,11 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "malum:refined_brilliance" }, 1]]
     })
 
-    
+    customImbuementCraft(event, {
+        input: { "item": "eidolon_repraised:reaper_scythe" },
+        output: "malum:crude_scythe",
+        source: 5000,
+        removeRecipe: true
+    });
 
 })

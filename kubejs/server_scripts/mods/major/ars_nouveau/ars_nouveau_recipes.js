@@ -441,10 +441,21 @@ ServerEvents.recipes(event => {
             [{item:"toxony:toxic_leather"}, 8],
         ],
         inputFluids: [
-            [{ fluid: "milf:shimmersteel_essence" }, 1000]
+            [{ fluid: "milf:shimmersteel_essence" }, 5000]
         ],
-        outputItems: [[{item: "ars_nouveau:apprentice_spell_book"}, 1]],
-        removeRecipe: true
+        outputItems: [[{item: "ars_nouveau:apprentice_spell_book"}, 1]]
+    })
+    
+    miMachineRecipe(event, {energy:10, time:400, machine:"modern_industrialization:source_alembic",
+        inputItems:[
+            [{item:"ars_nouveau:apprentice_spell_book"}],
+            [{item:"ars_nouveau:wilden_tribute"}],
+            [{item:"milf:miasma_orb"}, 4],
+        ],
+        inputFluids: [
+            [{ fluid: "spectrum:liquid_crystal" }, 32000]
+        ],
+        outputItems: [[{item: "ars_nouveau:archmage_spell_book"}, 1]]
     })
 
     spiritInfusion(event, {
@@ -591,4 +602,29 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
+    customCrucible(event, {
+        steps: [
+            {
+                items: [
+                    { "item": "eidolon_repraised:parchment" },
+                    { "item": "eidolon_repraised:parchment" },
+                ]
+            },
+            {
+                items: [
+                    { "item": "eidolon_repraised:soul_harvest_incense" },
+                    { "item": "toxony:toxic_paste" },
+                ],
+                stirs: 1
+            },
+            {
+                items: [
+                    { "item": "ars_nouveau:source_gem" },
+                ],
+                stirs: 2
+            }
+        ],
+        result: "ars_additions:lost_codex_entry",
+        count: 2
+    });
 })

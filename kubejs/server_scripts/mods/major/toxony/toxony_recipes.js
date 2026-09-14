@@ -463,4 +463,79 @@ ServerEvents.recipes(event => {
             ],
         })
     })
+
+    pedestalFromRecipe(event, {
+        id: "toxony:cyclebow",
+        tier: "advanced",
+        time: 400,
+        citrine: 4,
+        topaz: 4,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:bolt_cartridge",
+        tier: "advanced",
+        time: 400,
+        citrine: 2,
+        topaz: 2,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:copper_crucible",
+        tier: "advanced",
+        time: 400,
+        citrine: 12,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:oil_pot_sash",
+        tier: "advanced",
+        time: 400,
+        citrine: 4,
+        amethyst: 4,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:tox_gauge",
+        tier: "advanced",
+        time: 400,
+        citrine: 8,
+        amethyst: 8,
+        onyx: 2,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:toxin_canister",
+        tier: "advanced",
+        time: 400,
+        citrine: 4,
+        amethyst: 4,
+        onyx: 1,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:alembic",
+        tier: "advanced",
+        time: 400,
+        citrine: 4,
+        amethyst: 4,
+        experience: 4.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
+    pedestalFromRecipe(event, {
+        id: "toxony:alchemical_forge_part",
+        tier: "advanced",
+        time: 400,
+        citrine: 32,
+        amethyst: 32,
+        onyx: 8,
+        experience: 20.0,
+        advancement: "spectrum:create_onyx_shard"
+    });
 });

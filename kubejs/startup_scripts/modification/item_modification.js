@@ -1,5 +1,5 @@
 ItemEvents.modification(event => {
-    
+
     const ytech_tool_modification = [
         { itemName: 'ytech:copper_pickaxe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'pickaxe' },
         { itemName: 'ytech:copper_shovel', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'shovel' },
@@ -65,13 +65,13 @@ ItemEvents.modification(event => {
         })
     });
 
-    event.modify("ytech:stone_mortar_and_pestle", item => {item.maxDamage = 365})
+    event.modify("ytech:stone_mortar_and_pestle", item => { item.maxDamage = 365 })
 
-    event.modify("ytech:bronze_mesh", item => {item.maxDamage = 100})
-    event.modify("ars_hex:magebloom_brush", item => {item.maxDamage = 3000})
+    event.modify("ytech:bronze_mesh", item => { item.maxDamage = 100 })
+    event.modify("ars_hex:magebloom_brush", item => { item.maxDamage = 3000 })
 
 
-    event.modify("cataclysm:ring_of_grudged", item =>{
+    event.modify("cataclysm:ring_of_grudged", item => {
         item.attachCuriosCapability(
             CuriosJSCapabilityBuilder.create().addAttribute(
                 "cataclysm:additional_critical_damage",
@@ -110,8 +110,13 @@ ItemEvents.modification(event => {
         item.setMaxStackSize(1)
         item.setDamage(0)
         item.disableRepair()
-        
+
     })
 
+    event.modify('malum:crude_scythe', item => {
+        item.setMaxDamage(450)
+        item.setAttackDamage(8)
+        item.setAttackSpeed(-2.9)
+    })
 
 })

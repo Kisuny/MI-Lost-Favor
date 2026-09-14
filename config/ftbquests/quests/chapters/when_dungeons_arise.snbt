@@ -99,19 +99,18 @@
 		{
 			id: "27C7EAC6B9307C2F"
 			linked_quest: "0FBB5C5541E982A6"
-			x: -6.5d
+			x: -7.5d
 			y: 14.0d
 		}
 		{
 			id: "73CB041FD564EEE0"
 			linked_quest: "146E3BD6BC57D833"
-			x: -15.5d
+			x: -14.5d
 			y: 14.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["3BB0FE129E37B19E"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "fdbosses:chesed_trophy"
@@ -133,11 +132,10 @@
 					type: "advancement"
 				}
 			]
-			x: -9.0d
-			y: 14.0d
+			x: -11.5d
+			y: 19.0d
 		}
 		{
-			dependencies: ["3BB0FE129E37B19E"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "fdbosses:malkuth_trophy"
@@ -159,8 +157,8 @@
 					type: "advancement"
 				}
 			]
-			x: -8.0d
-			y: 14.0d
+			x: -10.5d
+			y: 19.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -728,7 +726,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["3D5FB6D17EC9693F"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "ars_nouveau:wilden_tribute"
@@ -751,77 +748,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -11.0d
-			y: 19.0d
-		}
-		{
-			dependencies: ["0CC9329A82A7454A"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "mowziesmobs:earthrend_gauntlet"
-			}
-			id: "3F90529CDCC8957B"
-			tasks: [
-				{
-					advancement: "mowziesmobs:sculptor_challenge"
-					criterion: ""
-					id: "2FC2F507A4D86037"
-					type: "advancement"
-				}
-				{
-					id: "1A42B8D0A4C10ACA"
-					item: { count: 1, id: "mowzies_cataclysm:tongbi_eye" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -11.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0CC9329A82A7454A"]
-			entity_vis_size: 1.0f
-			hide_dependent_lines: true
-			id: "78B154D7DC8F7464"
-			tasks: [
-				{
-					entity: "mowziesmobs:umvuthi"
-					entity_vis_idle_mode: "USE_GLOBAL"
-					entity_vis_offset_x: 0.0f
-					entity_vis_offset_y: 0.0f
-					entity_vis_rotation: 0.0f
-					entity_vis_silhouette_mode: "NONE"
-					entity_vis_size: 1.0f
-					entity_vis_spin_mode: "USE_GLOBAL"
-					entity_vis_tag_cycle_mode: "USE_GLOBAL"
-					entity_vis_tag_cycle_seconds: 0.0f
-					entity_vis_use_as_quest_icon: true
-					entity_vis_walk_mode: "USE_GLOBAL"
-					id: "6B086A9EC79AC60B"
-					type: "kill"
-					value: 1L
-				}
-				{
-					id: "2A93C9A9158D04EE"
-					item: { count: 1, id: "mowzies_cataclysm:sun_eye" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -9.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["78B154D7DC8F7464"]
-			entity_vis_size: 1.0f
-			id: "2A012125B8338426"
-			tasks: [{
-				id: "59A620D29180CF49"
-				item: { count: 1, id: "mowziesmobs:sol_visage" }
-				type: "item"
-			}]
-			x: -8.0d
-			y: 5.5d
+			x: -8.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3D5FB6D17EC9693F"]
@@ -833,7 +761,7 @@
 				id: "7F54A45654BAAE5E"
 				type: "advancement"
 			}]
-			x: -7.0d
+			x: -6.5d
 			y: 19.0d
 		}
 		{
@@ -844,6 +772,7 @@
 				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
 				criterion: ""
 				ftbquestsentityvis_icon: {
+					cycle_seconds: 0.0f
 					enabled: 1b
 					entity: "bosses_of_mass_destruction:gauntlet"
 					idle_mode: "USE_GLOBAL"
@@ -859,7 +788,7 @@
 				id: "6303FFC5535427DB"
 				type: "advancement"
 			}]
-			x: -14.0d
+			x: -13.5d
 			y: 14.0d
 		}
 		{
@@ -994,8 +923,6 @@
 				"0621BAAC08B04895"
 				"33AA69A920D7135E"
 				"0FF37E339976CAAB"
-				"642BEF122D51B708"
-				"6854389FAE6E5634"
 				"3056F19142720FB0"
 				"0FBB5C5541E982A6"
 				"146E3BD6BC57D833"
@@ -1076,7 +1003,6 @@
 				"1BE616ADE422AD7F"
 				"1648F458FA2F75D9"
 				"6FB19077F74D8653"
-				"37151E848097297D"
 				"2A8C0D9B2C194AD2"
 			]
 			entity_vis_size: 1.0f
@@ -1394,6 +1320,7 @@
 				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
 				criterion: ""
 				ftbquestsentityvis_icon: {
+					cycle_seconds: 0.0f
 					enabled: 1b
 					entity: "bosses_of_mass_destruction:lich"
 					idle_mode: "USE_GLOBAL"
@@ -1409,7 +1336,7 @@
 				id: "1FB112CE9EDA34BB"
 				type: "advancement"
 			}]
-			x: -13.0d
+			x: -12.5d
 			y: 14.0d
 		}
 		{
@@ -1420,6 +1347,7 @@
 				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
 				criterion: ""
 				ftbquestsentityvis_icon: {
+					cycle_seconds: 0.0f
 					enabled: 1b
 					entity: "bosses_of_mass_destruction:obsidilith"
 					idle_mode: "USE_GLOBAL"
@@ -1435,7 +1363,7 @@
 				id: "6DE5C0B61B5F7BD7"
 				type: "advancement"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 14.0d
 		}
 		{
@@ -1446,6 +1374,7 @@
 				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
 				criterion: ""
 				ftbquestsentityvis_icon: {
+					cycle_seconds: 0.0f
 					enabled: 1b
 					entity: "bosses_of_mass_destruction:void_blossom"
 					idle_mode: "USE_GLOBAL"
@@ -1461,7 +1390,7 @@
 				id: "623005CF53946C65"
 				type: "advancement"
 			}]
-			x: -11.0d
+			x: -10.5d
 			y: 14.0d
 		}
 		{
@@ -1549,38 +1478,6 @@
 			]
 			x: 0.5d
 			y: 19.0d
-		}
-		{
-			dependencies: ["2B815502453269AF"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "mythsandlegends:frosthowl_helmet"
-			}
-			id: "5ED184B7A33F6AE2"
-			tasks: [
-				{
-					id: "7BD0B15FE28A1985"
-					item: { count: 1, id: "mythsandlegends:frosthowl_helmet" }
-					type: "item"
-				}
-				{
-					id: "3D326785821EC4BD"
-					item: { count: 1, id: "mythsandlegends:frosthowl_chestplate" }
-					type: "item"
-				}
-				{
-					id: "70DD97A154606CFE"
-					item: { count: 1, id: "mythsandlegends:frosthowl_leggings" }
-					type: "item"
-				}
-				{
-					id: "426DE16F4DBFA136"
-					item: { count: 1, id: "mythsandlegends:frosthowl_boots" }
-					type: "item"
-				}
-			]
-			x: 0.5d
-			y: 20.0d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -1759,131 +1656,6 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["0CC9329A82A7454A"]
-			entity_vis_size: 1.0f
-			id: "6D3B47471BD99C33"
-			tasks: [
-				{
-					entity: "mythsandlegends:black_charro"
-					entity_vis_idle_mode: "USE_GLOBAL"
-					entity_vis_offset_x: 0.0f
-					entity_vis_offset_y: 0.0f
-					entity_vis_rotation: 0.0f
-					entity_vis_silhouette_mode: "NONE"
-					entity_vis_size: 1.0f
-					entity_vis_spin_mode: "USE_GLOBAL"
-					entity_vis_tag_cycle_mode: "USE_GLOBAL"
-					entity_vis_tag_cycle_seconds: 0.0f
-					entity_vis_use_as_quest_icon: true
-					entity_vis_walk_mode: "USE_GLOBAL"
-					id: "0514F1BACC0B03C2"
-					type: "kill"
-					value: 1L
-				}
-				{
-					id: "247D2049FF335063"
-					item: { count: 1, id: "mythsandlegends:soulbinder_amulet" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4096031059712BDC"
-					item: { count: 1, id: "mythsandlegends:umbras_whisper" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -13.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["6D3B47471BD99C33"]
-			entity_vis_size: 1.0f
-			id: "69876AF147198368"
-			tasks: [{
-				entity: "mythsandlegends:gargoyle"
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "1AC2808B2EF33D44"
-				type: "kill"
-				value: 1L
-			}]
-			x: -14.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["779A518117286DCF"]
-			entity_vis_size: 1.0f
-			id: "0148634AF45EAFC7"
-			tasks: [{
-				id: "195AB09BA884CEE6"
-				item: { count: 1, id: "mythsandlegends:stone_sanctum_table" }
-				type: "item"
-			}]
-			x: -15.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["69876AF147198368"]
-			entity_vis_size: 1.0f
-			id: "779A518117286DCF"
-			tasks: [
-				{
-					id: "561BF4881CB7D0C4"
-					item: { count: 1, id: "mythsandlegends:gargoyle_head" }
-					type: "item"
-				}
-				{
-					id: "6A399F73C326274A"
-					item: { count: 1, id: "mythsandlegends:gargoyle_arm" }
-					type: "item"
-				}
-				{
-					id: "715E5521DA630D7B"
-					item: { count: 1, id: "mythsandlegends:gargoyle_leg" }
-					type: "item"
-				}
-				{
-					id: "5D89A0B3D13C0A8D"
-					item: { count: 1, id: "mythsandlegends:gargoyle_wing" }
-					type: "item"
-				}
-				{
-					id: "24B713FA4A2E8B21"
-					item: { count: 1, id: "mythsandlegends:gargoyle_torso" }
-					type: "item"
-				}
-				{
-					id: "1B8C12BD4D2E0FA1"
-					item: { count: 1, id: "mythsandlegends:cursed_core" }
-					type: "item"
-				}
-			]
-			x: -14.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["0148634AF45EAFC7"]
-			entity_vis_size: 1.0f
-			id: "68B64BBF3CC18E1C"
-			tasks: [{
-				id: "40E1751066AF43A4"
-				item: { count: 1, id: "mythsandlegends:gargoyle_effigy" }
-				type: "item"
-			}]
-			x: -14.5d
-			y: 6.0d
-		}
-		{
 			entity_vis_size: 1.0f
 			id: "7C4731645AB0DE12"
 			tasks: [{
@@ -2007,6 +1779,7 @@
 					advancement: "fdbosses:qliphoth_awakening/geburah"
 					criterion: ""
 					ftbquestsentityvis_icon: {
+						cycle_seconds: 0.0f
 						enabled: 0b
 						entity: "fdbosses:geburah"
 						idle_mode: "USE_GLOBAL"
@@ -2023,7 +1796,7 @@
 					type: "advancement"
 				}
 			]
-			x: -10.0d
+			x: -9.5d
 			y: 14.0d
 		}
 		{
@@ -2036,7 +1809,7 @@
 				id: "685404EB36577C20"
 				type: "advancement"
 			}]
-			x: -9.0d
+			x: -8.5d
 			y: 19.0d
 		}
 		{
@@ -2049,7 +1822,7 @@
 				id: "2DB6C3DB679C3FB2"
 				type: "advancement"
 			}]
-			x: -15.0d
+			x: -15.5d
 			y: 19.0d
 		}
 		{
@@ -2073,7 +1846,7 @@
 					type: "advancement"
 				}
 			]
-			x: -14.0d
+			x: -14.5d
 			y: 19.0d
 		}
 		{
@@ -2097,7 +1870,7 @@
 					type: "advancement"
 				}
 			]
-			x: -12.0d
+			x: -12.5d
 			y: 19.0d
 		}
 		{
@@ -2132,7 +1905,7 @@
 					type: "advancement"
 				}
 			]
-			x: -13.0d
+			x: -13.5d
 			y: 19.0d
 		}
 		{
@@ -2155,7 +1928,7 @@
 					type: "advancement"
 				}
 			]
-			x: -10.0d
+			x: -9.5d
 			y: 19.0d
 		}
 		{
@@ -2178,7 +1951,7 @@
 					type: "advancement"
 				}
 			]
-			x: -8.0d
+			x: -7.5d
 			y: 19.0d
 		}
 		{
@@ -2544,7 +2317,6 @@
 				"620B6774449C91F2"
 			]
 			entity_vis_size: 1.0f
-			hide_dependency_lines: true
 			id: "30ED4F9B49BFC36C"
 			rewards: [
 				{

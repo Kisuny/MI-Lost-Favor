@@ -14,6 +14,21 @@ const customWorktable = (event, args) => {
     }
 };
 
+// max 5 steps - EMI displays more incorrectly
+const customCrucible = (event, args) => {
+    event.custom({
+        "type": "eidolon_repraised:crucible",
+        "steps": args.steps,
+        "result": {
+            "id": args.result,
+            "count": args.count || 1
+        }
+    });
+    if (args.removeRecipe === true) {
+        event.remove({ output: args.result });
+    }
+};
+
 
 ServerEvents.recipes(event => {
 

@@ -2316,6 +2316,7 @@
 			tasks: [
 				{
 					ftbquestsentityvis_icon: {
+						cycle_seconds: 0.0f
 						enabled: 0b
 						entity: "minecraft:pig"
 						idle_mode: "USE_GLOBAL"
@@ -3816,7 +3817,7 @@
 				structure: "fdbosses:malkuth_arena"
 				type: "structure"
 			}]
-			x: 9.5d
+			x: 9.0d
 			y: -10.5d
 		}
 		{
@@ -3845,7 +3846,10 @@
 			shape: "diamond"
 			tasks: [{
 				icon: {
-					id: "mythsandlegends:umbras_whisper"
+					components: {
+						"ftbquests:missing_item": "mythsandlegends:umbras_whisper"
+					}
+					id: "ftbquests:missing_item"
 				}
 				id: "28A689D42BE79D8A"
 				structure: "mythsandlegends:graveyard"

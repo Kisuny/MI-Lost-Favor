@@ -1,3 +1,5 @@
+//priority: 1
+
 let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
 let $ClipContext = Java.loadClass("net.minecraft.world.level.ClipContext")
 let $ClipContext$Block = Java.loadClass("net.minecraft.world.level.ClipContext$Block")
@@ -12,6 +14,20 @@ let $GeometryHelper = Java.loadClass("aztech.modern_industrialization.util.Geome
 let $MIText = Java.loadClass("aztech.modern_industrialization.MIText")
 let $TextHelper = Java.loadClass("aztech.modern_industrialization.util.TextHelper")
 let $MIComponents = Java.loadClass("aztech.modern_industrialization.MIComponents")
+
+let $Item = Java.loadClass("net.minecraft.world.item.Item")
+let $IEDataComponents = Java.loadClass("blusunrize.immersiveengineering.common.register.IEDataComponents")
+let $SimpleFluidContent = Java.loadClass("net.neoforged.neoforge.fluids.SimpleFluidContent")
+let $FluidType = Java.loadClass("net.neoforged.neoforge.fluids.FluidType")
+let $FluidUtil = Java.loadClass("net.neoforged.neoforge.fluids.FluidUtil")
+let $IEItemFluidHandler = Java.loadClass("blusunrize.immersiveengineering.common.fluids.IEItemFluidHandler")
+let $FluidHandler = Java.loadClass("net.neoforged.neoforge.capabilities.Capabilities$FluidHandler")
+let $FluidAction = Java.loadClass("net.neoforged.neoforge.fluids.capability.IFluidHandler$FluidAction")
+let $IEUtils = Java.loadClass("blusunrize.immersiveengineering.common.util.Utils")
+let $InteractionResult = Java.loadClass("net.minecraft.world.InteractionResult")
+
+let $JsonOps = Java.loadClass("com.mojang.serialization.JsonOps")
+
 
 
 createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shovels"] }, 
@@ -261,3 +277,62 @@ createNewJavaItem("big_bulky_drill", { tag: ["minecraft:pickaxes"] },
     }, new $Item$Properties().stacksTo(1))
 )
 
+createNewJavaItem("clay_bucket", {  },
+    () => new JavaAdapter($Item, {
+
+        appendHoverText(stack, context, tooltip, flag) {
+            let fluidStack = $FluidUtil.getFluidContained(stack)
+
+            fluidStack.ifPresent(fluidStack => tooltip.add($IEItemFluidHandler.fluidItemInfoFlavor(fluidStack, $FluidType.BUCKET_VOLUME)))
+        },
+
+        useOn(context){
+            // let level = context.getLevel()
+            // let blockPos = context.getClickedPos()
+            // let stack = context.getItemInHand()
+
+            // if (level.getCapability($FluidHandler.BLOCK, blockPos, null) == null){
+            //     let fluidStack = stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($IEDataComponents.GENERIC_FLUID, $SimpleFluidContent.EMPTY).copy()
+
+            //     if (!fluidStack.isEmpty() && $IEUtils.placeFluidBlock(level, blockPos.relative(context.getClickedFace()), fluidStack)){
+
+            //         //cursed kjs bs
+
+            //         let jsonStack = $SimpleFluidContent.CODEC.encodeStart($JsonOps.INSTANCE, $SimpleFluidContent.copyOf(fluidStack)).getOrThrow()
+
+            //         //console.log(jsonStack)
+
+            //         stack.set($IEDataComponents.GENERIC_FLUID, jsonStack)
+            //         return $InteractionResult.SUCCESS
+            //     }
+            // }
+
+            return $InteractionResult.PASS
+        },
+
+        hasCraftingRemainingItem(stack){
+            return stack.has($IEDataComponents.JERRYCAN_DRAIN) || $FluidUtil.getFluidContained(stack).isPresent()
+        },
+
+        getCraftingRemainingItem(stack){
+            if (stack.has($IEDataComponents.JERRYCAN_DRAIN)){
+                let returnStack = stack.copy()
+                let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
+                if(handler){
+                    handler.drain(returnStack.get($IEDataComponents.JERRYCAN_DRAIN), $FluidAction.EXECUTE)
+                    returnStack.remove($IEDataComponents.JERRYCAN_DRAIN)
+                    return returnStack
+                }
+            } else if ($FluidUtil.getFluidContained(stack).isPresent()) {
+                let returnStack = stack.copy()
+                let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
+                if (handler) {
+                    handler.drain($FluidType.BUCKET_VOLUME, $FluidAction.EXECUTE)
+                    return returnStack
+                }
+            }
+            return stack
+        }
+
+    }, new $Item$Properties().stacksTo(1))
+)

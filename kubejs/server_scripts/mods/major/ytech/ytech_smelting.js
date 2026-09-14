@@ -19,14 +19,14 @@ function ytechSmeltingRecipe(event, args) {
 }
 
 ServerEvents.recipes(event => {
-    ytechSmeltingRecipe(event, {
-        inputItems:[
-            [{ item: "modern_industrialization:bronze_ingot"}],
-        ],
-        outputItems:[
-            [{ id:"milf:molten_bronze_clay_bucket"}]
-        ],
-        mold: { item: "ytech:clay_bucket"},
-        minTemp: 1000,
-    })
+    // ytechSmeltingRecipe(event, {
+    //     inputItems:[
+    //         [{ item: "modern_industrialization:bronze_ingot"}],
+    //     ],
+    //     outputItems:[
+    //         [{ id:"milf:molten_bronze_clay_bucket"}]
+    //     ],
+    //     mold: { item: "ytech:clay_bucket"},
+    //     minTemp: 1000,
+    // })
 })

@@ -32,3 +32,9 @@ createNewFluid("purified_syngas", {
     fluidTag: "c:gaseous",
     noBlock: true
 })
+
+createNewFluid("dummy_fluid", {
+    stillTexture: "milf:fluid/dummy_fluid",
+    flowingTexture: "milf:fluid/dummy_fluid",
+    noBlock: true
+})

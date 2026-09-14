@@ -113,6 +113,10 @@ ItemEvents.modification(event => {
 
     })
 
+    event.modify('milf:clay_bucket', item => {
+        item.resetComponents().set("immersiveengineering:fluid", {})
+    })
+
     event.modify('malum:crude_scythe', item => {
         item.setMaxDamage(450)
         item.setAttackDamage(8)

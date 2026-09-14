@@ -42,7 +42,7 @@ ClientEvents.generateAssets("before_mods", event => {
         "modern_industrialization:electric_compressor",
 
         "modern_industrialization:bronze_cutting_machine",
-        "modern_industrialization:steel_cutting_machiner",
+        "modern_industrialization:steel_cutting_machine",
         "modern_industrialization:electric_cutting_machine",
 
         "modern_industrialization:bronze_mi_furnace",

@@ -111,3 +111,4 @@ let $DeerEntity = Java.loadClass("com.yanny.ytech.configuration.entity.DeerEntit
 let $AvoidEntityGoal = Java.loadClass("net.minecraft.world.entity.ai.goal.AvoidEntityGoal")
 
 let $ReiMachineRecipes = Java.loadClass("aztech.modern_industrialization.compat.rei.machines.ReiMachineRecipes")
+let $FluidType = Java.loadClass("net.neoforged.neoforge.fluids.FluidType")

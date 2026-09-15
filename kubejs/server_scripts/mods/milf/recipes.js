@@ -1,5 +1,271 @@
 ServerEvents.recipes(event => {
 
+    Object.entries({
+        "milf:unfired_clay_mold_axe": {
+            woodenPart: "milf:wooden_axe_head",
+            mold: "milf:clay_mold_axe",
+            volume: $FluidType.BUCKET_VOLUME / 4,
+            castMap: {
+                "embers:molten_bronze": "ytech:bronze_axe_head_part"
+            }
+        },
+        "milf:unfired_clay_mold_hammer": {
+            woodenPart: "milf:wooden_hammer_head",
+            mold: "milf:clay_mold_hammer",
+            volume: $FluidType.BUCKET_VOLUME,
+            castMap: {
+                "embers:molten_bronze": "ytech:bronze_hammer_head_part"
+            }
+        },
+        "milf:unfired_clay_mold_hoe": {
+            woodenPart: "milf:wooden_hoe_head",
+            mold: "milf:clay_mold_hoe",
+            volume: $FluidType.BUCKET_VOLUME / 5,
+            castMap: {
+                "embers:molten_bronze": "milf:bronze_hoe_head_part"
+            }
+        },
+        "milf:unfired_clay_mold_pickaxe": {
+            woodenPart: "milf:wooden_pickaxe_head",
+            mold: "milf:clay_mold_pickaxe",
+            volume: $FluidType.BUCKET_VOLUME / 4,
+            castMap: {
+                "embers:molten_bronze": "ytech:bronze_pickaxe_head_part"
+            }
+        },
+        "milf:unfired_clay_mold_shovel": {
+            woodenPart: "milf:wooden_shovel_head",
+            mold: "milf:clay_mold_shovel",
+            volume: $FluidType.BUCKET_VOLUME / 8,
+            castMap: {
+                "embers:molten_bronze": "milf:bronze_shovel_head_part"
+            }
+        },
+        "milf:unfired_clay_mold_sword": {
+            woodenPart: "milf:wooden_sword_blade",
+            mold: "milf:clay_mold_sword",
+            volume: $FluidType.BUCKET_VOLUME / 5,
+            castMap: {
+                "embers:molten_bronze": "ytech:bronze_sword_blade_part"
+            }
+        }
+    }).forEach(([unfiredMoldId, data]) => {
+
+        let { woodenPart, mold, castMap, volume } = data
+
+        milfShapedCustom(event, {
+            pattern: [
+                'p  ',
+                'm  ',
+                '   '
+            ],
+            key: {
+                p: { item: woodenPart },
+                m: { item: "milf:unfired_clay_plate" },
+            },
+            keepIngredient: woodenPart,
+            outputItems: [[{ id: unfiredMoldId }, 1]],
+        })
+
+        ytechSmeltingRecipe(event, {
+            inputItems: [
+                [{ item: unfiredMoldId }],
+            ],
+            outputItems: [
+                [{ id: mold }]
+            ],
+            minTemp: 1000,
+        })
+
+        Object.entries(castMap).forEach(([fluidId, part])=> {
+
+            let fluidComponent = {"immersiveengineering:fluid": {}}
+            fluidComponent["immersiveengineering:fluid"].id = fluidId
+            fluidComponent["immersiveengineering:fluid"].amount = volume
+
+            yTechShapeless(event, {
+                inputItems: [
+                    [{ tag: "c:hammers" }],
+                    [{
+                        "type": "neoforge:components",
+                        "items": mold,
+                        "strict": false,
+                        "components": fluidComponent
+                    }],
+                    [{
+                        "type": "neoforge:components",
+                        "items": "milf:clay_bucket",
+                        "strict": false,
+                        "components": { 
+                            "immersiveengineering:fluid": {
+                                id: "minecraft:water",
+                                amount: 1000
+                            } 
+                        }
+                    }],
+                ],
+                outputItems: [[{ id: part }, 1]],
+                compatOff: true
+            })
+
+            // yTechShaped(event, {
+            //     pattern: [
+            //         ' h ',
+            //         ' m ',
+            //         '   '
+            //     ],
+            //     key: {
+            //         h: { tag: "c:hammers" },
+            //         m: {
+            //             "type": "neoforge:components",
+            //             "items": mold,
+            //             "strict": false,
+            //             "components": fluidComponent
+            //         }
+            //     },
+            //     outputItems: [[{ id: part }, 1]],
+            //     compatOff: true
+            // })
+        })
+
+
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "ccc",
+        ],
+        key: {
+            "c": { "item": "minecraft:clay_ball" },
+        },
+        outputItems: [[{ id: "milf:unfired_clay_plate" }, 1]]
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "bb ",
+            "bph",
+            "a  ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_axe_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "bpb",
+            "ppp",
+            "a h",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_hammer_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "bbp",
+            "a h",
+            "   ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_hoe_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "bpb",
+            "a h",
+            "   ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_pickaxe_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " p ",
+            "bpb",
+            "a h",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_shovel_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " b ",
+            "abh",
+            " p ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_sword_blade" }, 1]],
+        compatOff: true
+    })
+
+    Object.entries({
+        "milf:wooden_axe_head": "minecraft:wooden_axe",
+        "milf:wooden_hammer_head": null,
+        "milf:wooden_hoe_head": "minecraft:wooden_hoe",
+        "milf:wooden_pickaxe_head": "minecraft:wooden_pickaxe",
+        "milf:wooden_shovel_head": "minecraft:wooden_shovel",
+        "milf:wooden_sword_blade": "minecraft:wooden_sword"
+    }).forEach(([partId, toolId]) => {
+
+        if (!toolId) return
+
+        milfShaped(event, {
+            pattern: [
+                " bp",
+                " tb",
+                "s  ",
+            ],
+            key: {
+                "s": { "item": "minecraft:stick" },
+                "t": { "item": "ytech:grass_twine" },
+                "b": { "item": "ytech:wooden_bolt" },
+                p: { item: partId }
+            },
+            outputItems: [[{ id: toolId }, 1]],
+            compatOff: true
+        })
+    })
+
+
     milfShaped(event, {
         pattern: [
             "RPH",
@@ -237,6 +503,8 @@ ServerEvents.recipes(event => {
             "count": 1
         },
         advancement: "spectrum:unlocks/blocks/fusion_shrine"
-    });
+    })
+
+
 
 })

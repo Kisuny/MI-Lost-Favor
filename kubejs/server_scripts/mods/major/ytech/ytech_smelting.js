@@ -3,10 +3,13 @@ function ytechSmeltingRecipe(event, args) {
         type: "ytech:smelting",
         minTemp: args.minTemp || 1000,
         smeltingTime: args.smeltingTime || 200,
-        mold: args.mold || {tag: "ytech:molds/ingot"},
+        //mold: args.mold || {tag: "ytech:molds/ingot"},
         ingredient:args.inputItems[0][0],
         inputCount:args.inputItems[0][1] || 1,
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+    }
+    if(args.mold)  {
+        recipe.mold = args.mold
     }
     if(!args.compatOff){
         // miMachineRecipe(event, {energy:4, time:200, machine:"extended_industrialization:alloy_smelter",

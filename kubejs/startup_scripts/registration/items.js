@@ -69,30 +69,22 @@ createNewItem('twig')
 createNewItem('unfired_fire_clay_brick')
 createNewItem('fire_clay_ball')
 
-// createNewItem('molten_bronze_clay_bucket', {
+createNewItem('unfired_clay_mold_axe', { stackSize: 1})
+createNewItem('unfired_clay_mold_hammer', { stackSize: 1 })
+createNewItem('unfired_clay_mold_hoe', { stackSize: 1 })
+createNewItem('unfired_clay_mold_pickaxe', { stackSize: 1 })
+createNewItem('unfired_clay_mold_shovel', { stackSize: 1 })
+createNewItem('unfired_clay_mold_sword', { stackSize: 1 })
 
-//     stackSize: 1,
-//     maxDamage: 9,
-//     disableRepair: true,
-//     tag: "ytech:clay_molds",
+createNewItem('unfired_clay_plate')
+createNewItem('clay_plate')
 
-//     modelGenerator: (generator) => {
-//         generator.custom(json => {
-//             Object.entries({
-//                 "parent": "neoforge:item/default",
-//                 "loader": "neoforge:fluid_container",
-//                 "cover_is_mask": false,
-//                 "flip_gas": false,
-//                 "fluid": "embers:molten_bronze",
-//                 "textures": {
-//                     "base": "ytech:item/clay_bucket",
-//                     "fluid": "ytech:item/bucket_overlay"
-//                 }
-//             }).forEach(([key, value]) => json.add(key, value))
-//         })
-//     }
-
-// })
+createNewItem('wooden_axe_head', { stackSize: 1 })
+createNewItem('wooden_hammer_head', { stackSize: 1 })
+createNewItem('wooden_hoe_head', { stackSize: 1 })
+createNewItem('wooden_pickaxe_head', { stackSize: 1 })
+createNewItem('wooden_shovel_head', { stackSize: 1 })
+createNewItem('wooden_sword_blade', { stackSize: 1 })
 
 createNewItem('ferrosilicon_dust')
 

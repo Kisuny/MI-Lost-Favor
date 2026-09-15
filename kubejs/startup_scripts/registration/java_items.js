@@ -25,8 +25,11 @@ let $FluidHandler = Java.loadClass("net.neoforged.neoforge.capabilities.Capabili
 let $FluidAction = Java.loadClass("net.neoforged.neoforge.fluids.capability.IFluidHandler$FluidAction")
 let $IEUtils = Java.loadClass("blusunrize.immersiveengineering.common.util.Utils")
 let $InteractionResult = Java.loadClass("net.minecraft.world.InteractionResult")
+let $Player = Java.loadClass("net.minecraft.world.entity.player.Player")
 
-let $JsonOps = Java.loadClass("com.mojang.serialization.JsonOps")
+//let $JsonOps = Java.loadClass("com.mojang.serialization.JsonOps")
+let $HashSet = Java.loadClass("java.util.HashSet")
+let $HashMap = Java.loadClass("java.util.HashMap")
 
 
 
@@ -311,11 +314,11 @@ createNewJavaItem("clay_bucket", {  },
         },
 
         hasCraftingRemainingItem(stack){
-            return stack.has($IEDataComponents.JERRYCAN_DRAIN) || $FluidUtil.getFluidContained(stack).isPresent()
+            return stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN) || $FluidUtil.getFluidContained(stack).isPresent()
         },
 
         getCraftingRemainingItem(stack){
-            if (stack.has($IEDataComponents.JERRYCAN_DRAIN)){
+            if (stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN)){
                 let returnStack = stack.copy()
                 let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
                 if(handler){
@@ -327,7 +330,9 @@ createNewJavaItem("clay_bucket", {  },
                 let returnStack = stack.copy()
                 let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
                 if (handler) {
-                    handler.drain($FluidType.BUCKET_VOLUME, $FluidAction.EXECUTE)
+                    let drainStack = handler.getFluid().copy()
+                    drainStack.setAmount($FluidType.BUCKET_VOLUME)
+                    handler.drain(drainStack, $FluidAction.EXECUTE)
                     return returnStack
                 }
             }
@@ -336,3 +341,120 @@ createNewJavaItem("clay_bucket", {  },
 
     }, new $Item$Properties().stacksTo(1))
 )
+
+let CLAY_MOLDS = {
+    "clay_mold_axe": {
+        volume: $FluidType.BUCKET_VOLUME / 4,
+        castResults: {
+            "embers:molten_bronze": "ytech:bronze_axe_head_part"
+        }
+    },
+    "clay_mold_hammer": {
+        volume: $FluidType.BUCKET_VOLUME,
+        castResults: {
+            "embers:molten_bronze": "ytech:bronze_hammer_head_part"
+        }
+    },
+    "clay_mold_hoe": {
+        volume: $FluidType.BUCKET_VOLUME / 5,
+        castResults: {
+            "embers:molten_bronze": "milf:bronze_hoe_head_part"
+        }
+    },
+    "clay_mold_pickaxe": {
+        volume: $FluidType.BUCKET_VOLUME / 4,
+        castResults: {
+            "embers:molten_bronze": "ytech:bronze_pickaxe_head_part"
+        }
+    },
+    "clay_mold_shovel": {
+        volume: $FluidType.BUCKET_VOLUME / 8,
+        castResults: {
+            "embers:molten_bronze": "milf:bronze_shovel_head_part"
+        }
+    },
+    "clay_mold_sword": {
+        volume: $FluidType.BUCKET_VOLUME / 5,
+        castResults: {
+            "embers:molten_bronze": "ytech:bronze_sword_blade_part"
+        }
+    }
+}
+
+Object.entries(CLAY_MOLDS).forEach(([moldId, data]) => {
+    createNewJavaItem(moldId, {},
+        () => new JavaAdapter($Item, {
+
+            // CASTABLES: new $HashSet([
+            //     "embers:molten_bronze"
+            // ]),
+
+            appendHoverText(stack, context, tooltip, flag) {
+                let fluidStack = $FluidUtil.getFluidContained(stack)
+
+                fluidStack.ifPresent(fluidStack => tooltip.add($IEItemFluidHandler.fluidItemInfoFlavor(fluidStack, data.volume)))
+            },
+
+            useOn(context) {
+                return $InteractionResult.FAIL
+            },
+
+            // hasCraftingRemainingItem(stack) {
+            //     return stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN) || $FluidUtil.getFluidContained(stack).isPresent()
+            // },
+
+            // getCraftingRemainingItem(stack) {
+            //     if (stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN)) {
+            //         let returnStack = stack.copy()
+            //         let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
+            //         if (handler) {
+            //             handler.drain(returnStack.get($IEDataComponents.JERRYCAN_DRAIN), $FluidAction.EXECUTE)
+            //             returnStack.remove($IEDataComponents.JERRYCAN_DRAIN)
+            //             return returnStack
+            //         }
+            //     } else if ($FluidUtil.getFluidContained(stack).isPresent()) {
+            //         let returnStack = stack.copy()
+            //         let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
+            //         if (handler) {
+            //             handler.drain($FluidType.BUCKET_VOLUME, $FluidAction.EXECUTE)
+            //             return returnStack
+            //         }
+            //     }
+            //     return stack
+            // },
+
+            //causes seemingly random NBT corruptions, have no idea why ƪ(˘⌣˘)ʃ
+
+            // inventoryTick(stack, level, entity, slotId, isSelected){
+            //     if(level.isClientSide()) return
+
+            //     if(!(entity instanceof $Player)) return
+
+            //     let fluidStack = $FluidUtil.getFluidContained(stack)
+
+            //     fluidStack.ifPresent(fluidStack => {
+
+            //         let fluidId = fluidStack.getFluid().id
+
+            //         if (this.CASTABLES.contains(fluidId)  ){
+            //             let currentDamage = stack.getDamageValue()
+            //             let maxDamage = stack.getMaxDamage()
+            //             let nextDamage = currentDamage + 1
+
+            //             if (nextDamage >= maxDamage) {
+            //                 let replacementStack = Item.of(data.castResults[fluidId])
+
+            //                 entity.getInventory().setItem(slotId, replacementStack)
+            //             } else {
+            //                 stack.setDamageValue(nextDamage)
+            //             }
+            //         }
+
+            //     })
+
+
+            // }
+
+        }, new $Item$Properties().stacksTo(1))
+    )
+})

@@ -9,4 +9,13 @@ NativeEvents.onEvent($RegisterCapabilitiesEvent, event => {
         Item.of("milf:clay_bucket").item
     )
 
+    Object.entries(CLAY_MOLDS).forEach(([moldId, data]) => {
+        event.registerItem(
+            $FluidHandler.ITEM,
+            (stack, _) => new $FluidHandlerItemStack($IEDataComponents.GENERIC_FLUID, stack, data.volume),
+            Item.of(`milf:${moldId}`).item
+        )
+    })
+
+
 })

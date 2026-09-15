@@ -88,7 +88,22 @@ let builders = [
         .addExternalPart({ ingot: "oritech:biosteel_ingot" })
         .addParts(["rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
         .withMachineCasing(8)
-        .withDefaultRecipes()
+        .withDefaultRecipes(),
+
+    new MIMaterialBuilder("pure_azurite", "Pure Azurite", 0x15203b)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "spectrum:pure_azurite" })
+        .addCustomParts(["node", "impetus"]),
+
+    new MIMaterialBuilder("pure_bloodstone", "Pure Bloodstone", 0x15203b)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "spectrum:pure_bloodstone" })
+        .addCustomParts(["node", "impetus"]),
+
+    new MIMaterialBuilder("pure_malachite", "Pure Malachite", 0x15203b)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "spectrum:pure_malachite" })
+        .addCustomParts(["node", "impetus"])
 ]
 
 MIMaterialEvents.addMaterials(event => {
@@ -101,6 +116,7 @@ function MIMaterialBuilder(materialId, materialName, color) {
     this.config = {
         materialSet: "shiny",
         parts: [],
+        customParts: [],
         externalParts: {},
         machineCasing: null,
         specialCasing:null,
@@ -119,6 +135,7 @@ function MIMaterialBuilder(materialId, materialName, color) {
                 builder.materialSet(config.materialSet)
 
                 config.parts.length != 0 && builder.addParts(config.parts)
+                config.customParts.length != 0 && config.customParts.forEach(part => builder.customRegularPart(idToName(part), part))
 
                 Object.entries(config.externalParts).forEach(([part, id]) => builder.addExternalPart(part, id))
 
@@ -152,6 +169,16 @@ function MIMaterialBuilder(materialId, materialName, color) {
 
     this.addParts = function (parts) {
         this.config.parts = parts
+
+        parts.forEach(part => {
+            milfData.addCredit(`${this.materialId}_${part}`, "mi_part", "modern_industrialization")
+        })
+
+        return this
+    }
+
+    this.addCustomParts = function (parts) {
+        this.config.customParts = parts
 
         parts.forEach(part => {
             milfData.addCredit(`${this.materialId}_${part}`, "mi_part", "modern_industrialization")

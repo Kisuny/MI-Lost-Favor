@@ -1,5 +1,5 @@
 MIMaterialModifier("uranium").addParts(["plate", "bolt"])
-MIMaterialModifier("steel").addParts(["wire", "rotor", "blade"]).addSpecialCasing("reinforced_steel_machine_casing", 8)
+MIMaterialModifier("steel").addParts(["wire", "rotor", "blade"]).addSpecialCasing("reinforced_steel_machine_casing", 8).addCustomParts(["node", "impetus"])
 MIMaterialModifier("lead").addParts(["wire", "bolt", "rod"])
 MIMaterialModifier("invar").addPipeCasing(8.0).addParts(["curved_plate"])
 MIMaterialModifier("silver").addParts(["rod", "bolt"])
@@ -12,6 +12,15 @@ MIMaterialModifier("bronze").addParts(["large_plate"])
 MIMaterialModifier("battery_alloy").addParts(["large_plate"])
 MIMaterialModifier("carbon").addParts(["coil"])
 MIMaterialModifier("silicon").addParts(["large_plate"])
+MIMaterialModifier("aluminum").addCustomParts(["node", "impetus"])
+MIMaterialModifier("antimony").addCustomParts(["node", "impetus"])
+MIMaterialModifier("beryllium").addCustomParts(["node", "impetus"])
+MIMaterialModifier("chromium").addCustomParts(["node", "impetus"])
+MIMaterialModifier("iridium").addCustomParts(["node", "impetus"])
+MIMaterialModifier("platinum").addCustomParts(["node", "impetus"])
+MIMaterialModifier("stainless_steel").addCustomParts(["node", "impetus"])
+MIMaterialModifier("titanium").addCustomParts(["node", "impetus"])
+MIMaterialModifier("tungsten").addCustomParts(["node", "impetus"])
 
 function MIMaterialModifier(name ){
     this.name = name
@@ -24,6 +33,22 @@ function MIMaterialModifier(name ){
         parts.forEach(part => {
             
             milfData.addCredit(`${this.name}_${part}`,"mi_part", "modern_industrialization")
+        })
+
+        return this
+    }
+
+    this.addCustomParts = function (parts) {
+        MIMaterialEvents.modifyMaterial(this.name, event => {
+            parts.forEach(part => {
+                event.builder.customRegularPart(idToName(part), part)
+            })
+            
+        })
+
+        parts.forEach(part => {
+
+            milfData.addCredit(`${this.name}_${part}`, "mi_part", "modern_industrialization")
         })
 
         return this

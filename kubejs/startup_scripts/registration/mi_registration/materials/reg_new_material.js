@@ -107,7 +107,7 @@ let builders = [
 
     new MIMaterialBuilder("oblivion_alloy", "Oblivion Alloy", 0x15203b)
         .withMaterialSet("shiny")
-        .addParts(["ingot", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
+        .addParts(["ingot", "nugget", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
         .addCustomParts(["node", "impetus", "fractured_impetus"])
         .withDefaultRecipes()
 ]

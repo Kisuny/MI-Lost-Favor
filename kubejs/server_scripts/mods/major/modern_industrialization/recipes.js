@@ -149,6 +149,14 @@ function miMachineRecipe(event, args){
             block: args.adjacent_block.block
         })
     }
+    if (args.open_water_condition) {
+        recipe.process_conditions.push({
+            "type": "mi_tweaks:open_water",
+            "relative": args.open_water_condition.relative || "below",
+            "range": args.open_water_condition.range || 2,
+            "fill": args.open_water_condition.fill || 0.5
+        })
+    }
     if (args.custom_condition) {
         recipe.process_conditions.push({
             type: "modern_industrialization:custom",
@@ -562,6 +570,20 @@ ServerEvents.recipes(event => {
             D: { item: "modern_industrialization:copper_drill" }
         },
         outputItems: [[{ id: "modern_industrialization:steam_quarry" }, 1]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "BNB",
+            "NPN"
+        ],
+        key: {
+            N: { item: "milf:fish_net" },
+            P: { item: "ytech:wooden_plate" },
+            B: { item: "ytech:wooden_bolt" }
+        },
+        outputItems: [[{ id: "mi_tweaks:fish_trap" }, 1]],
     })
 
     milfShaped(event, {

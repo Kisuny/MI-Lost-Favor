@@ -27,3 +27,11 @@ registerSinglePowerlessMIMachine('not_so_multi_but_still_block_packer_2099_3x3x3
     itemSlots: [[44, 35, 2, 1], [44, 53, 1, 1], [98, 35, 2, 1], [116, 53, 1, 1], [44, 107, 2, 1], [44, 89, 1, 1], [98, 107, 2, 1], [116, 89, 1, 1], [80, 71, 1, 1]],
     mainCasing: 'treated_wood_casing', mainOverlays: 'multiblock_packer', frontOverlay: true
 })
+
+registerSinglePowerlessMIMachine('fish_trap', {
+    itemsIn: true, itemsOut: true,
+    pBar: { x: 77, y: 33, name: "fish" },
+    slots: { iIn: 2, iOut: 2 },
+    itemSlots: [[56, 27, 1, 2], [102, 27, 1, 2]],
+    mainCasing: 'chart_crate', mainOverlays: 'fish_trap', frontOverlay: true, sideOverlay:true
+})

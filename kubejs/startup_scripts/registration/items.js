@@ -2,6 +2,7 @@ createNewItem("steaming_iron_ingot", { food: { nutrition: 4, saturation: 0, alwa
 createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle", "ru_ru": "Бетонное мороженое" }})
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
 createNewItem('larva', { food: { nutrition: 4, saturation: 0.5, alwaysEdible: true, effects: [['minecraft:hunger', 80, 0, 1]] }})
+createNewItem('fih_cube', { food: { nutrition: 4, saturation: 1.5 } })
 createNewItem('eggnog', { stackSize: 16, useAnimation: "drink", food: { nutrition: 5, saturation: 2.5 } })
 
 global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
@@ -69,6 +70,8 @@ createNewItem('twig')
 createNewItem('unfired_fire_clay_brick')
 createNewItem('fire_clay_ball')
 
+createNewItem('fish_net', { stackSize: 15 })
+
 createNewItem('unfired_clay_mold_axe', { stackSize: 1})
 createNewItem('unfired_clay_mold_hammer', { stackSize: 1 })
 createNewItem('unfired_clay_mold_hoe', { stackSize: 1 })
@@ -120,7 +123,8 @@ createNewItem('quantum_disk', { stackSize: 1, lang: { "ru_ru": "Квантовы
 
 createNewItem('hemispherical_press_mold', { stackSize: 1 })
 
-createNewItem("meze_109", { itemType: "helmet", material: 'milf:meze', stackSize: 1, rarity: 'epic' })
+createNewItem("meze_109", { itemType: "helmet", material: 'milf:egg', stackSize: 1, rarity: 'epic' })
+createNewItem("fishnets", { itemType: "leggings", material: 'milf:egg', stackSize: 1, rarity: 'epic' })
 
 createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: { tier: "flint" } })
 

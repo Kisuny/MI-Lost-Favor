@@ -94,19 +94,22 @@ let builders = [
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "spectrum:pure_azurite" })
         .addParts(["nugget"])
-        .addCustomParts(["node", "impetus", "fractured_impetus"]),
+        .addCustomParts(["node", "impetus", "fractured_impetus"])
+        .withDefaultRecipes(),
 
     new MIMaterialBuilder("pure_bloodstone", "Pure Bloodstone", 0x15203b)
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "spectrum:pure_bloodstone" })
         .addParts(["nugget"])
-        .addCustomParts(["node", "impetus", "fractured_impetus"]),
+        .addCustomParts(["node", "impetus", "fractured_impetus"])
+        .withDefaultRecipes(),
 
     new MIMaterialBuilder("pure_malachite", "Pure Malachite", 0x15203b)
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "spectrum:pure_malachite" })
         .addParts(["nugget"])
-        .addCustomParts(["node", "impetus", "fractured_impetus"]),
+        .addCustomParts(["node", "impetus", "fractured_impetus"])
+        .withDefaultRecipes(),
 
     new MIMaterialBuilder("oblivion_alloy", "Oblivion Alloy", 0x15203b)
         .withMaterialSet("shiny")

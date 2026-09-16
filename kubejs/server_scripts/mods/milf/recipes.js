@@ -268,6 +268,34 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            " TT",
+            " MT",
+            "   ",
+        ],
+        key: {
+            "T": { "item": "ytech:grass_twine" },
+            "M": { "item": "ytech:twine_mesh" }
+
+        },
+        outputItems: [[{ id: "milf:fish_net" }, 1]]
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "NNN",
+            "NnN",
+            "N N",
+        ],
+        key: {
+            "N": { "item": "milf:fish_net" },
+            "n": { "tag": "ytech:bone_needles" },
+
+        },
+        outputItems: [[{ id: "milf:fishnets" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
             "RPH",
             "LFP",
             "PLR",

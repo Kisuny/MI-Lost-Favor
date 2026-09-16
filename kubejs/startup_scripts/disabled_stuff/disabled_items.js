@@ -259,6 +259,9 @@ global.disabledItems = [
     new DisabledItemBuilder("aquaculture:wooden_fillet_knife"),
     new DisabledItemBuilder("enigmaticlegacyplus:forbidden_fruit"),
     new DisabledItemBuilder("enigmaticlegacyplus:unholy_grail"),
+    new DisabledItemBuilder("malum:aluminum_impetus"),
+    new DisabledItemBuilder("malum:aluminum_node"),
+    new DisabledItemBuilder("malum:fractured_aluminum_impetus"),
     new DisabledItemBuilder("farmersdelight:flint_knife")
         .replaceWith("ytech:flint_knife").replaceIn(["LOOT_TABLES"]),
 

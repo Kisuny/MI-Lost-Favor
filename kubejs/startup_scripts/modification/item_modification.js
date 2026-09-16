@@ -1,4 +1,21 @@
+global.miImpetusMaterials = [
+    "steel", "aluminum", "antimony", "beryllium", "chromium", "iridium",
+    "platinum", "stainless_steel", "titanium", "tungsten",
+    "pure_azurite", "pure_bloodstone", "pure_malachite", "oblivion_alloy"
+]
+
 ItemEvents.modification(event => {
+
+    global.miImpetusMaterials.forEach(material => {
+        event.modify(`modern_industrialization:${material}_impetus`, item => {
+            item.setMaxStackSize(1)
+            item.setMaxDamage(800)
+            item.setDamage(0)
+        })
+        event.modify(`modern_industrialization:${material}_fractured_impetus`, item => {
+            item.setMaxStackSize(1)
+        })
+    })
 
     const ytech_tool_modification = [
         { itemName: 'ytech:copper_pickaxe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'pickaxe' },

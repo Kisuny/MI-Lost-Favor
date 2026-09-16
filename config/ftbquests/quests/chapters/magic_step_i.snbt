@@ -2977,7 +2977,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: 32.0d
@@ -5722,6 +5722,74 @@
 			}]
 			x: 33.0d
 			y: -8.0d
+		}
+		{
+			dependencies: [
+				"01641AD0DC69F2D0"
+				"39553C7C57BEE887"
+				"70A0A078B94FF034"
+			]
+			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			id: "4F9AF422C4AA5B85"
+			shape: "heart"
+			size: 1.0d
+			tasks: [{
+				id: "367E380A2B943FA1"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["70A0A078B94FF034"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "usefulslime:slime_boots"
+			}
+			id: "51C0876E925B1FF1"
+			shape: "heart"
+			tasks: [
+				{
+					id: "6A3D52C0E596860F"
+					item: { count: 1, id: "usefulslime:slime_helmet" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "76AD25B97AEB9AC8"
+					item: { count: 1, id: "usefulslime:slime_chestplate" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "194BB818C10B6691"
+					item: { count: 1, id: "usefulslime:slime_leggings" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "427495B3C335A883"
+					item: { count: 1, id: "usefulslime:slime_boots" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["70A0A078B94FF034"]
+			entity_vis_size: 1.0f
+			id: "5116FA2F58C59929"
+			shape: "heart"
+			tasks: [{
+				id: "09564A9BE5B03CB0"
+				item: { count: 1, id: "usefulslime:slime_sling" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
 		}
 	]
 }

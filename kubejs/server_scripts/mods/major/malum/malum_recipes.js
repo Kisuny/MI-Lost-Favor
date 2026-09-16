@@ -110,6 +110,38 @@ ServerEvents.recipes(event => {
         removeRecipe: true,
         removeType: "malum:spirit_infusion"
     })
+    
+    spiritInfusion(event, {
+        input: { item: "minecraft:glowstone_dust", count: 4 },
+        result: { id: "malum:ether", count: 2 },
+        extraInputs: [
+            { item: "malum:blazing_quartz", count: 1 }
+        ],
+        spirits: [
+            { type: "malum:infernal", count: 2 },
+            { type: "malum:arcane", count: 1 }
+        ],
+        removeRecipe: true,
+        removeType: "malum:spirit_infusion"
+    })
+    
+    spiritInfusion(event, {
+        input: { item: "modern_industrialization:bronze_mi_furnace", count: 1 },
+        extraInputs: [
+            { item: "malum:twisted_rock", count: 8 },
+            { item: "malum:tainted_rock", count: 8 },
+            { item: "malum:hex_ash", count: 2 },
+            { item: "malum:soul_stained_steel_ingot", count: 4 },
+            { item: "malum:hallowed_gold_ingot", count: 4 },
+        ],
+        spirits: [
+            { type: "malum:infernal", count: 8 },
+            { type: "malum:aqueous", count: 8 }
+        ],
+        result: { id: "malum:spirit_crucible", count: 1 },
+        removeRecipe: true,
+        removeType: "malum:spirit_infusion"
+    })
 
     spiritInfusion(event, {
         input: { item: "modern_industrialization:sulfur_dust", count: 1 },

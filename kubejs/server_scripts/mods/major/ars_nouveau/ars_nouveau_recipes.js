@@ -460,11 +460,11 @@ ServerEvents.recipes(event => {
 
     spiritInfusion(event, {
         input: { item: "oritech:machine_core_2", count: 1 },
-        result: { id: "modern_industrialization:source_alembic", count: 1 },
         extraInputs: [
             { item: "ars_nouveau:sourcestone", count: 8 },
             { item: "ars_nouveau:source_gem", count: 8 },
             { item: "spectrum:onyx_shard", count: 4 },
+            { item: "modern_industrialization:oblivion_alloy_ingot", count: 2 },
         ],
         spirits: [
             { type: "malum:arcane", count: 12 },
@@ -472,6 +472,7 @@ ServerEvents.recipes(event => {
             { type: "malum:aqueous", count: 8 },
             { type: "malum:earthen", count: 8 },
         ],
+        result: { id: "modern_industrialization:source_alembic", count: 1 },
     });
 
     

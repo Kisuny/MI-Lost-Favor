@@ -23,8 +23,6 @@
 	chapter.561B8642F13079C1.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Bronze Age"
 	chapter.5E7FFA9FEEEFE1A7.title: "Automation 'n' Stuff"
 	chapter.65C3129D0852EC26.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic I"
-	chapter.7A58E54E4B6B5025.chapter_subtitle: ["This chapter covers all possible ways to store items and fluid"]
-	chapter.7A58E54E4B6B5025.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Storage"
 	chapter.7CCFB657E26B4699.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Early Magic II"
 	chapter.7F3238D8C7E5EF3C.title: "Petrochemical Party"
 	chapter_group.414DFD996A564669.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Early"
@@ -94,6 +92,11 @@
 		""
 		"Поместите свой любимый верстак на палке в специальное слот для безделушек и нажмите клавишу быстрого доступа, чтобы открыть его <warning>(по умолчанию SHIFT + V)</warning>"
 	]
+	quest.014D3C767CACA387.quest_desc: [
+		"The <keyword>Spellweaving Axe</keyword> is imbued with <keyword>aqueous arcana</keyword> - once <pulse>primed</pulse>, every block you break spawns up to <property>4 loci</property> that automatically seek out and break far-out matching blocks, letting you <positive>clear whole trees</positive> in seconds."
+		"{@pagebreak}"
+		"<keyword>Spellweaving Axe</keyword> пропитан <keyword>водной арканой</keyword> - будучи <pulse>активированным</pulse>, при ломании каждого блока он порождает до <property>4 локусов</property>, которые сами находят и ломают похожие блоки на расстоянии, позволяя <positive>срубать целые деревья</positive> за секунды."
+	]
 	quest.0194B16954142DC5.quest_desc: [
 		"The Primitive Smelter is necessary for some early recipes."
 		""
@@ -107,7 +110,11 @@
 		"{@pagebreak}"
 		"<keyword>Факел</keyword>, <keyword>канделябр</keyword> или <keyword>свеча</keyword> могут стать <property>эффективным средством</property> для увеличения <property>скорости перезарядки</property> вашего <keyword>алтаря</keyword>."
 	]
-	quest.02196EDBFE8C5BA5.quest_desc: ["speed upgrade "]
+	quest.02196EDBFE8C5BA5.quest_desc: [
+		"Simply placing the <keyword>Spirit Catalyzer</keyword> near a <keyword>Spirit Crucible</keyword> does nothing on its own - <warning>right-click it with fuel</warning>, just like a furnace (regular coal, charcoal or a lava bucket all work). Once burning, it boosts any Crucible within <property>4 blocks</property>, <positive>speeding up its focusing process</positive>. Up to <property>8 fueled Catalyzers</property> can stack together for even more speed, but each one also raises <warning>instability</warning>, risking extra damage to the <keyword>Impetus</keyword> inside."
+		"{@pagebreak}"
+		"Просто поставить <keyword>Spirit Catalyzer</keyword> рядом со <keyword>Spirit Crucible</keyword> недостаточно - нужно <warning>заправить его топливом через ПКМ</warning>, как обычную печку (подойдёт уголь, древесный уголь, ведро лавы и т.д.). Пока он горит, он усиливает любой тигель в радиусе <property>4 блоков</property>, <positive>ускоряя процесс фокусировки</positive>. Можно поставить до <property>8 заряженных катализаторов</property> для ещё большей скорости, но каждый из них также повышает <warning>нестабильность</warning>, рискуя нанести дополнительный урон <keyword>Impetus</keyword> внутри."
+	]
 	quest.023749AF74F3A059.quest_desc: [
 		"A <keyword>connector</keyword> links cooking tables, sinks, fridges, ovens and counters into one <property>continuous kitchen network</property>, letting ingredients and heat sources be shared across the whole setup."
 		"{@pagebreak}"
@@ -138,6 +145,63 @@
 		"The <warning>acid</warning> was already <warning>potent</warning>. <shake amplitude=0.4 frequency=1.5>&lLETS MAKE IT MORE!&r</shake> Now with access to <warning>stronger ingredients</warning>, I can <positive>reformulate</positive> the &l<warning>acid oil</warning> using <warning>toxin</warning>. As such, the <warning>acid effect</warning> has been amplified, making it <warning>reduce armor strength</warning> even more, while gaining the ability to <warning><shake amplitude=0.3 frequency=1.0>dissolve diamond level ores</shake></warning>."
 		"{@pagebreak}"
 		"Кислота и так была <warning>мощной</warning>. <shake amplitude=0.4 frequency=1.5>&lДАВАЙТЕ СДЕЛАЕМ ЕЕ ЕЩЕ СИЛЬНЕЕ!&r</shake> Теперь, имея доступ к <warning>более сильным ингредиентам</warning>, я могу <positive>переработать</positive> <warning>кислотное масло</warning>, используя <warning>токсин</warning>. Таким образом, <warning>эффект кислоты усилился</warning>, что позволило ей еще больше <warning>снизить прочность доспехов</warning> и получить способность <warning><shake amplitude=0.3 frequency=1.0>растворять руды алмазного уровня</shake></warning>."
+	]
+	quest.02B69D48E145D17F.quest_desc: [
+		"The <pulse><keyword>Spirit Crucible</keyword></pulse> performs <keyword>Spirit Focusing</keyword> - socket an <keyword>Impetus</keyword> (a durable reagent, like the <keyword>Alchemical Impetus</keyword>) together with <warning>Spirit Arcana</warning>, and it will <positive>transmute</positive> new resources cycle after cycle, slowly <curse>damaging the Impetus</curse> each time until it fractures. Speed it up with a <keyword>Spirit Catalyzer</keyword>, tune its stats with a <keyword>Tuning Fork</keyword>, and keep a <keyword>Repair Pylon</keyword> nearby to mend the Impetus before it breaks for good."
+		""
+		"You can push its stats around with <keyword>Augments</keyword> (up to 4 in the Crucible itself, or one in each nearby <keyword>Spirit Catalyzer</keyword>). Here's what each attribute they touch actually does:"
+		""
+		"<property>Focusing Speed</property> - how fast a cycle completes. "
+		""
+		"<property>Fuel Usage Rate</property> - how much fuel a cycle burns through. "
+		""
+		"<warning>Instability</warning> - the risk of the Impetus taking <curse>extra damage</curse> per cycle. "
+		""
+		"<positive>Fortune Chance</positive> - odds of a cycle producing double the items. "
+		""
+		"<positive>Chain Focusing Chance</positive> - odds of an extra cycle firing right after the current one. "
+		""
+		"<positive>Restoration Chance</positive> - odds of the Impetus <positive>healing slightly</positive> after a cycle. "
+		""
+		"<positive>Damage Absorption Chance</positive> - odds of fully blocking a hit of damage to the Impetus. "
+		""
+		"<keyword>Resonance Tuning</keyword> - slows the process but heavily cuts Instability. "
+		""
+		"<keyword>Weakness Tuning</keyword> - boosts whichever attribute is currently weakest. "
+		""
+		"<keyword>Misfortune Reversal</keyword> - turns Impetus damage into a bonus once it's healed. "
+		""
+		"<keyword>Caustic Synergy</keyword> - converts rising Instability into more <keyword>Tuning Potency</keyword>. "
+		""
+		"<curse>Tuning Strain</curse> - makes the <keyword>Tuning Fork</keyword>'s attribute-shifting cost more."
+		"{@pagebreak}"
+		"<pulse><keyword>Spirit Crucible</keyword></pulse> выполняет <keyword>Spirit Focusing</keyword> (фокусировку духов) - вставьте <keyword>Impetus</keyword> (прочный реагент, например <keyword>Alchemical Impetus</keyword>) вместе с <warning>душой арканы</warning>, и тигель будет <positive>трансмутировать</positive> новые ресурсы цикл за циклом, постепенно <curse>повреждая Impetus</curse>, пока тот не расколется. Ускоряйте процесс с помощью <keyword>Spirit Catalyzer</keyword>, настраивайте характеристики <keyword>Tuning Fork</keyword>'ом и держите рядом <keyword>Repair Pylon</keyword>, чтобы чинить Impetus до того, как он сломается окончательно."
+		""
+		"Характеристики тигля можно менять с помощью <keyword>улучшений (Augments)</keyword> (до 4 штук прямо в тигле, либо по одному в каждом соседнем <keyword>Spirit Catalyzer</keyword>). Вот что на самом деле означает каждая характеристика, на которую они влияют:"
+		""
+		"<property>Focusing Speed</property> (скорость фокусировки) - насколько быстро завершается цикл. "
+		""
+		"<property>Fuel Usage Rate</property> (расход топлива) - сколько топлива тратится за цикл. "
+		""
+		"<warning>Instability</warning> (нестабильность) - риск того, что Impetus получит <curse>дополнительный урон</curse> за цикл."
+		""
+		"<positive>Fortune Chance</positive> - шанс получить вдвое больше предметов за цикл. "
+		""
+		"<positive>Chain Focusing Chance</positive> - шанс, что сразу после текущего цикла запустится ещё один. "
+		""
+		"<positive>Restoration Chance</positive> - шанс, что Impetus <positive>немного подлечится</positive> после цикла. "
+		""
+		"<positive>Damage Absorption Chance</positive> - шанс полностью заблокировать урон по Impetus. "
+		""
+		"<keyword>Resonance Tuning</keyword> - замедляет процесс, но сильно снижает нестабильность. "
+		""
+		"<keyword>Weakness Tuning</keyword> - усиливает ту характеристику, которая сейчас самая слабая. "
+		""
+		"<keyword>Misfortune Reversal</keyword> - превращает урон по Impetus в бонус после его исцеления. "
+		""
+		"<keyword>Caustic Synergy</keyword> - конвертирует растущую нестабильность в дополнительную <keyword>Tuning Potency</keyword>."
+		""
+		"<curse>Tuning Strain</curse> - делает перераспределение характеристик через <keyword>Tuning Fork</keyword> более затратным."
 	]
 	quest.02BDC1FB8AC8485D.quest_desc: [
 		"You can use an <keyword>oil pot</keyword> by <positive>placing it</positive> with <positive>Shift + RMB</positive> and clicking it with a <keyword>weapon</keyword>. The weapon will gain the <property>effect of the oil</property>. "
@@ -246,6 +310,11 @@
 		"Gives a <keyword>1 to 2 ratio</keyword> when chopping <keyword>logs into planks</keyword>, as opposed to the <keyword>1 to 1</keyword> in a crafting grid."
 		"{@pagebreak}"
 		"При распиловке <keyword>брёвен на доски</keyword> дает соотношение <keyword>1 к 2</keyword>, в отличие от соотношения <keyword>1 к 1</keyword> в верстаке."
+	]
+	quest.053040847B756D6A.quest_desc: [
+		"A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>, made by opposing Arcane and Eldritch arcana. In theory it should create balance - in practice, the two forces <shake amplitude=0.4 frequency=1.5>violently reject each other</shake>, causing a <curse>corruptive explosion</curse> that spawns <curse>Blight</curse>. <warning>This entry is a warning, not a recommendation.</warning>"
+		"{@pagebreak}"
+		"<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>, созданное противопоставлением арканной и эльдритч арканы. В теории это должно давать баланс - на практике же силы <shake amplitude=0.4 frequency=1.5>яростно отталкиваются друг от друга</shake>, вызывая <curse>тлетворный взрыв</curse>, порождающий <curse>Скверну (Blight)</curse>. <warning>Эта запись - предупреждение, а не рекомендация.</warning>"
 	]
 	quest.054589529C185AE1.quest_desc: [
 		"in skilled hands, a &lvery&r fast way to move around"
@@ -499,6 +568,11 @@
 		""
 		"После выполнения данного задания вы сможете забрать награду в виде <keyword>новой кнопки в радиальном меню</keyword>!"
 	]
+	quest.0CCAF81A445E7138.quest_desc: [
+		"Explosions are chaotic - great for mining, terrible for looting. The <keyword>Ring of the Hoarder</keyword> entangles the blast with your soul, causing all the <positive>debris and loot</positive> to appear <shake amplitude=0.3 frequency=1.0>right at your feet</shake> instead of scattering everywhere."
+		"{@pagebreak}"
+		"Взрывы хаотичны - отлично подходят для добычи, но ужасны для сбора лута. <keyword>Ring of the Hoarder</keyword> связывает взрыв с вашей душой, из-за чего весь <positive>мусор и добыча</positive> появляются <shake amplitude=0.3 frequency=1.0>прямо у ваших ног</shake>, а не разлетаются по округе."
+	]
 	quest.0CD9D93D8A93DE87.quest_desc: [
 		"Various <keyword>leads and chains</keyword> can be <positive>used on fences/walls</positive> by <positive>right clicking</positive> them and connecting two of them together so that you can <positive>quickly move along</positive> these connections using <keyword>any pickaxe</keyword>!"
 		"{@pagebreak}"
@@ -716,6 +790,11 @@
 		""
 		"You can also buy from <keyword>Wandering Trader</keyword>"
 	]
+	quest.1137649007131CC4.quest_desc: [
+		"The <keyword>Belt of the Prospector</keyword> blesses your explosions with <property>Fortune III</property>, and mining valuable resources has a chance to grant <curse>Avarice</curse> - stacking, temporary bonus that adds a <positive>1/10 chance per stack</positive> for an extra Fortune level when breaking blocks."
+		"{@pagebreak}"
+		"<keyword>Belt of the Prospector</keyword> благословляет ваши взрывы <property>Fortune III</property>, а добыча ценных ресурсов даёт шанс получить <curse>Алчность (Avarice)</curse> - накапливаемый временный бонус, дающий <positive>10% шанс за стак</positive> на дополнительный уровень Fortune при добыче блоков."
+	]
 	quest.1150D94139B83FBF.quest_desc: [
 		"Now you can <positive>hot-swap armor</positive> by simply <positive>right-clicking</positive> it, or if you, <wiggle amplitude=0.5 frequency=1.0 phase=1.0>fancy pants</wiggle>, want to have the whole hat-check room of armor, you can <positive>sneak right-click</positive> an <keyword>armor stand</keyword> to hot-swap the whole set!"
 		"{@pagebreak}"
@@ -813,6 +892,11 @@
 		"&#b0620eNothing&r difficult, right? "
 		"{@pagebreak}"
 		"&#b0620eНичего&r сложного, верно? "
+	]
+	quest.1385C039941797F6.quest_desc: [
+		"A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>, harnessing the opposition between Wicked and Sacred arcana, granting <property>+100% Misfortune Reversal</property>. When your <keyword>Impetus</keyword> takes damage, the <keyword>Sympathy Drive</keyword> remembers - and when it's healed by a <keyword>Mending Diffuser</keyword>, it <positive>'forgives' the damage</positive>, repairing further and boosting stats for the next <property>3 cycles</property>."
+		"{@pagebreak}"
+		"<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>, использующее противостояние порочной и священной арканы, даёт <property>+100% Misfortune Reversal</property>. Когда ваш <keyword>Impetus</keyword> получает урон, <keyword>Sympathy Drive</keyword> запоминает это - а когда его лечит <keyword>Mending Diffuser</keyword>, он <positive>«прощает» урон</positive>, чинит ещё сильнее и улучшает характеристики на следующие <property>3 цикла</property>."
 	]
 	quest.138BF142D6B6F964.quest_desc: [
 		"Clotted Cream removes all &#C6BCE9effects&r from you, just like milk. Cream can be used as a replacement for milk in recipes, and has some of &#FEECD6its own&r!"
@@ -957,6 +1041,11 @@
 		""
 		"But they are a bit limited this early on. That's where the Primitive Alloy Smelter and Primitive Smelter come in."
 	]
+	quest.16EE5D6120FB76E9.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword>, using a superior conductor woven from Astral Weave: <property>+100% Focusing Speed</property>, with <positive>no drawbacks</positive> whatsoever - a straightforward speed boost."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, использующее превосходный проводник из Astral Weave: <property>+100% скорости фокусировки</property>, причём <positive>без каких-либо недостатков</positive> - простое и честное ускорение."
+	]
 	quest.16FC0392E5AA51D8.quest_desc: [
 		"There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from TOXIN, I have managed to create this cloudy gas that weakens and blinds in a small area."
 		"{@pagebreak}"
@@ -1028,6 +1117,11 @@
 		"Используя перегонный аппарат, мы можем изготавливать <pulse base=0.6 amplitude=0.9>МИЛЫЕ ТОКСИЧНЫЕ ГОРШОЧКИ</pulse>. Для самых мощных масел подходит только этот вариант. Простой глиняный горшочек трескался под воздействием токсина."
 	]
 	quest.189B4E6D9B694118.title: "Tier III Altar"
+	quest.18ACEAD795560C00.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword>, extracting the full force of a soul on fire: <property>-25% Fuel Usage Rate</property> and <positive>+25% Focusing Speed</positive> - lessens the fuel needed from a <keyword>Spirit Catalyzer</keyword> while also hastening the whole process."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, извлекающее полную силу пылающей души: <property>-25% расхода топлива</property> и <positive>+25% скорости фокусировки</positive> - снижает требования к топливу от <keyword>Spirit Catalyzer</keyword> и одновременно ускоряет весь процесс."
+	]
 	quest.18B86EAED5FBB821.quest_desc: [
 		"Crafted from <keyword>Skin Boots</keyword> combined with <blood>Blood Feathers</blood> and <bone>Ashen Remains</bone>, finished off with an <magic>Ophanim</magic> imitation - a \"blessed\" pair of boots that drastically <positive>boosts the wearer's agility</positive>."
 		""
@@ -1049,21 +1143,21 @@
 	]
 	quest.19300837BD132C67.quest_desc: [""]
 	quest.19545E28C84E87B2.quest_desc: [
-		"If the items have risen above the altar - the recipe is correct."
+		"The <pulse><keyword>Soulbinding Brazier</keyword></pulse> is used to swear a <warning>Geas</warning> - a magical oath bound <curse>semi-permanently</curse> to your soul, granting a powerful effect at the cost of a fitting drawback. Socket the <keyword>prime item</keyword>, <warning>Spirit Arcana</warning> and other ingredients into the brazier - if the items <positive>rise up above it</positive>, your recipe is correct."
 		""
-		"Add ether to start the craft. Once started - add your blood to the altar by pressing RMB (multiple players can contribute in a single ritual), then just wait."
+		"Add <keyword>Ether</keyword> to start the craft. Once started - add your <curse>blood</curse> to the altar by pressing <property>RMB</property> (multiple players can contribute to a single ritual), then just wait."
 		""
-		"You can also add the blood of any other creature. To do so, apply a weakness effect to it before lighting the brazier."
+		"You can also add the blood of any other creature. To do so, apply a <warning>weakness</warning> effect to it before lighting the brazier."
 		""
-		"A player can have a maximum of 2 curses. They are also difficult to remove."
+		"A player can have a maximum of <property>2 Geas</property> bound at once. They are also <curse>difficult to remove</curse>, so choose wisely."
 		"{@pagebreak}"
-		"Если предметы поднялись над алтарём - рецепт верный."
+		"<pulse><keyword>Soulbinding Brazier</keyword></pulse> используется для принесения <warning>Geas</warning> (клятвы) - магической присяги, <curse>полупостоянно</curse> привязанной к вашей душе, которая даёт мощный эффект ценой подходящего недостатка. Поместите в жаровню <keyword>основной предмет</keyword>, <warning>душу арканы</warning> и другие ингредиенты - если предметы <positive>поднялись над жаровней</positive>, рецепт верный."
 		""
-		"Добавь эфир, чтобы запустить крафт. После запуска - добавь свою кровь в алтарь нажатием RMB (можно добавить нескольких игроков за один ритуал), затем просто жди."
+		"Добавьте <keyword>Ether</keyword>, чтобы запустить крафт. После запуска - добавьте свою <curse>кровь</curse> в алтарь нажатием <property>ПКМ</property> (в одном ритуале могут поучаствовать несколько игроков), затем просто ждите."
 		""
-		"Также можно добавить кровь любого другого существа. Для этого наложи на него эффект слабости до того, как зажечь жаровню."
+		"Также можно добавить кровь любого другого существа. Для этого наложите на него эффект <warning>слабости</warning> до того, как зажечь жаровню."
 		""
-		"На игроке может быть максимум 2 проклятья. Снять их непросто."
+		"На игроке может быть привязано максимум <property>2 Geas</property> одновременно. Снять их также <curse>непросто</curse>, так что выбирайте осторожно."
 	]
 	quest.196D201910731E66.quest_desc: [
 		"The <keyword>Alteration Table</keyword> is used to inscribe <keyword>Threads</keyword> onto magic armor - place the armor on the stand to see its available <property>Thread Slots</property>, then use a Thread on the display to add it. Take the armor back off to apply the changes, or interact with an empty hand to remove a Thread."
@@ -1249,6 +1343,11 @@
 		"{@pagebreak}"
 		"Можно получить только при убийстве <blood>Wither</blood> будучи <curse>проклятым</curse>!"
 	]
+	quest.1B978110B709BF52.quest_desc: [
+		"The <pulse><keyword>Soulwoven Pouch</keyword></pulse> acts like a bundle, but also <positive>automatically</positive> snaps up any <warning>Spirits</warning> you collect, keeping your inventory clear of clutter. Stored magical items are <wave>rotated slightly out of reality</wave>, taking up less space than they normally would."
+		"{@pagebreak}"
+		"<pulse><keyword>Soulwoven Pouch</keyword></pulse> работает как обычный <keyword>Мешок</keyword>, но ещё и <positive>автоматически</positive> подбирает любые собранные <warning>души</warning>, не давая им засорять инвентарь. Хранимые магические предметы слегка <wave>вывёрнуты из реальности</wave>, занимая меньше места, чем обычно."
+	]
 	quest.1B978110B709BF52.quest_subtitle: "Holds 512 items"
 	quest.1BBD0967E43849FF.quest_desc: [
 		"<keyword>Rare gemstones</keyword> that can be obtained while <positive>mining stratine ore</positive>."
@@ -1265,6 +1364,11 @@
 		"A more advanced <keyword>station</keyword> for creating <keyword>potions</keyword>. Can also create some other liquids."
 		"{@pagebreak}"
 		"Более продвинутая <keyword>станция</keyword> для создания <keyword>зелий</keyword>. Также может создавать некоторые другие жидкости."
+	]
+	quest.1C6A99C7FA20BEF4.quest_desc: [
+		"The <keyword>Ring of the Demolitionist</keyword> <positive>amplifies explosions</positive> - if raw explosive power isn't enough, this ring makes sure you're never lacking in <shake amplitude=0.3 frequency=1.0>dakka</shake>."
+		"{@pagebreak}"
+		"<keyword>Ring of the Demolitionist</keyword> <positive>усиливает взрывы</positive> - если сырой взрывной мощи не хватает, это кольцо проследит, чтобы <shake amplitude=0.3 frequency=1.0>дакки</shake> у вас всегда было в достатке."
 	]
 	quest.1CA058CF370F34C2.quest_desc: [
 		"The <keyword>Basic Spell Turret</keyword> casts <property>Projectile</property>, <property>Touch</property>, <property>Sensitive</property> and <property>Redstone</property> glyphs for free - inscribe a spell onto it, then feed it a <keyword>Redstone</keyword> signal to make it cast."
@@ -1585,6 +1689,11 @@
 		"{@pagebreak}"
 		"<keyword>Коса зачарователя</keyword> (Ars Hex) работает как Меч зачарователя - впишите на Столе писца заклинание без формы, и оно сработает при ударе. Брошенная и вернувшаяся коса также запускает реактивные заклинания."
 	]
+	quest.264E9578B746FDD6.quest_desc: [
+		"By fusing a <keyword>Soulwoven Pouch</keyword> with rot, it sprouts teeth and becomes the <shake><warning>Ravenous Pouch</warning></shake> - it works like a magnet, <positive>automatically</positive> sucking up items lying on the ground, but only the kinds it already has some of stored inside."
+		"{@pagebreak}"
+		"Если сплавить <keyword>Soulwoven Pouch</keyword> с гнилью, у него прорастают зубы, и он превращается в <shake><warning>Ravenous Pouch</warning></shake> - он работает как магнит, <positive>автоматически</positive> подбирая предметы с земли, но только те виды, которых уже есть хоть немного внутри него."
+	]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
 	quest.26D3721A292E8E8C.quest_desc: [
@@ -1676,6 +1785,11 @@
 		"<positive>собирает</positive> <property>EV</property> от страданий существ рядом"
 	]
 	quest.28A2FCBC095F291E.quest_desc: ["<positive>Use</positive> the <keyword>poison paste</keyword> on <keyword>farmland</keyword>. Can farm <keyword>plants</keyword> from this mod, but will destroy neighboring \"normal\" farmland."]
+	quest.28C1CA69E1D32E42.quest_desc: [
+		"A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>. The <keyword>Resonance Tuner</keyword> dampens the clash between Aerial and Earthen arcana, granting <property>+100% Resonance Tuning</property> - <positive>heavily reducing</positive> (or even eliminating) <warning>Instability</warning> at the cost of a slower process."
+		"{@pagebreak}"
+		"<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>. <keyword>Resonance Tuner</keyword> гасит конфликт между воздушной и земной арканой, давая <property>+100% Resonance Tuning</property> - это <positive>сильно снижает</positive> (или вовсе убирает) <warning>нестабильность</warning> ценой более долгого процесса."
+	]
 	quest.28DE945FA0D4BCB9.quest_desc: [
 		"&#9BB8EDThis chest&r is literally a safe, only the person who placed it down can open it. Incredible &#C6BCE9magic&r!"
 		"{@pagebreak}"
@@ -2033,6 +2147,16 @@
 		""
 		"Как альтренатива можно использовать кристалл на обсидиане."
 	]
+	quest.3177629F183FB8D9.quest_desc: [
+		"Spirit Arcana can carry impurities of hunger and lust, catalyzed into <curse>Gluttony</curse> - a stacking amplifier for magic damage. The <keyword>Belt of the Starved</keyword> grants this effect whenever you eat <curse>rotten food</curse>, but be warned: it also <warning>drains your hunger faster</warning> in return."
+		"{@pagebreak}"
+		"<warning>Духи</warning> иногда несут в себе примеси голода и похоти, которые катализируются в <curse>Обжорство (Gluttony)</curse> - накапливаемый усилитель магического урона. <keyword>Belt of the Starved</keyword> даёт этот эффект каждый раз, когда вы едите <curse>гнилую еду</curse>, но учтите: он также <warning>быстрее осушает ваш голод</warning> взамен."
+	]
+	quest.318632EF61E817A3.quest_desc: [
+		"The <keyword>Spellweaving Pickaxe</keyword> is imbued with <keyword>earthen arcana</keyword> - once <pulse>primed</pulse>, every block you mine spawns up to <property>4 loci</property> that automatically seek out and break nearby matching blocks for you, mining <positive>whole veins</positive> in an instant."
+		"{@pagebreak}"
+		"<keyword>Spellweaving Pickaxe</keyword> пропитана <keyword>земной арканой</keyword> - будучи <pulse>активированной</pulse>, при добыче каждого блока она порождает до <property>4 локусов</property>, которые сами находят и ломают похожие блоки поблизости, мгновенно добывая <positive>целые жилы руды</positive>."
+	]
 	quest.31BB2F1B4F37A93D.quest_desc: [
 		"The <keyword>Stabilized Warp Index</keyword> is an upgrade of the regular one - it lets you access your <keyword>Storage Lecterns</keyword> remotely across <keyword>dimensions</keyword> as well, not just within the same one."
 		"{@pagebreak}"
@@ -2055,6 +2179,11 @@
 		"Используя остаточную левитационную энергию, сохранившуюся в панцире шалкера, и придавая ей нужную форму с помощью кровавого пера, можно создать противовес, который уменьшит силу тяжести, действующую на юзера. Этот эффект схож с действием зелья медленного падения, при этом он может суммироваться с ним."
 		""
 		"Это дает отличный результат в сочетании с методами увеличения высоты прыжка."
+	]
+	quest.3212006511E9CE81.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword> that subverts the wicked spirit's tendency to prey on the weak: <property>+40% Weakness Tuning</property>, giving a strong bonus to the <keyword>Crucible's weakest attribute</keyword> (besides fuel usage and instability), at the cost of <curse>+8% Tuning Strain</curse>."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, обращающее вспять склонность порочного духа охотиться на слабых: <property>+40% Weakness Tuning</property>, дающее мощный бонус к <keyword>самой слабой характеристике тигля</keyword> (кроме расхода топлива и нестабильности), ценой <curse>+8% Tuning Strain</curse>."
 	]
 	quest.32124938227533A3.quest_desc: [
 		"The <keyword>Advanced Prism</keyword> is an upgrade of the <keyword>Spell Prism</keyword> - use the <keyword>Dominion Wand</keyword> to aim it at a specific block instead of just a direction, and equip <property>Prism Lenses</property> to modify the redirected spell (arc/homing trajectory, speed changes, or effects like piercing and chaining that cost source)."
@@ -2236,6 +2365,11 @@
 		"{@pagebreak}"
 		"<keyword>Deepshelf of Arcane Treasures</keyword> открывает в столе <keyword>сокровищные зачарования</keyword>, которые иначе там не получить, например <property>Починку</property>, <property>Хождение по льду</property>, <property>Скорость души</property> или <property>Мягкую поступь</property>. Многие сокровищные зачарования - <curse><shake amplitude=0.3 frequency=1.0>проклятия</shake></curse>, поэтому сначала обзаведитесь <keyword>Geode-Encased Bookshelf</keyword> для стабильности."
 	]
+	quest.3697B8576D9C989D.quest_desc: [
+		"The <keyword>Ring of Esoteric Spoils</keyword> grants <property>+1 Spirit Spoils</property> - every mob you kill with a <keyword>Scythe</keyword> now <positive>sheds an extra Soul</positive> on top of its usual drop, letting you farm <warning>Souls</warning> much faster."
+		"{@pagebreak}"
+		"<keyword>Ring of Esoteric Spoils</keyword> даёт <property>+1 Spirit Spoils</property> - теперь каждый моб, убитый <keyword>Косой</keyword>, <positive>отдаёт на одну душу больше</positive> сверх обычного дропа, что позволяет фармить <warning>души</warning> заметно быстрее."
+	]
 	quest.36ABE0F50C03A3AC.quest_desc: [
 		"Creating a <keyword>brew, infusion or potion</keyword> is a simple process, requiring either a <keyword>witch's cauldron</keyword> or <keyword>kettle</keyword>."
 		""
@@ -2274,6 +2408,11 @@
 		"This &#9BB8EDglass&r integrates well into the interior, and also &#FEECD6glows&r!"
 		"{@pagebreak}"
 		"&#9BB8EDСтекло&r хорошо вписывается в интерьер, а так же &#FEECD6светится&r!"
+	]
+	quest.36C6F5A35AB8D29C.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword> that rejects cause and effect: <property>+10% Chain Focusing Chance</property> - whenever a cycle finishes, it can sometimes <positive>trigger an extra cycle</positive> almost instantly. Chained activations stack a bonus to <positive>all other attributes</positive>, but that comes with <warning>+15% Fuel Usage Rate</warning> and <curse>+5% Tuning Strain</curse>."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, отвергающее причинно-следственную связь: <property>+10% Chain Focusing Chance</property> - при завершении цикла может почти мгновенно <positive>запуститься ещё один цикл</positive>. Цепочки активаций накапливают бонус ко <positive>всем остальным характеристикам</positive>, но за это приходится платить <warning>+15% расхода топлива</warning> и <curse>+5% Tuning Strain</curse>."
 	]
 	quest.37160E9A836B7361.title: "Tin"
 	quest.373326F7A1904E7A.quest_desc: [
@@ -2372,6 +2511,11 @@
 		"[ \"Предшественник сундука и ваше первое(\", { \"text\": \"или не совсем первое?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") надежное хранилище, может хранить до 9 стаков предметов.\" ]"
 	]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
+	quest.38C2A8361476DC5F.quest_desc: [
+		"<property>Soul Ward</property> is a powerful barrier, but it's slow to recover on its own. The <keyword>Ring of Manaweaving</keyword> reacts to <warning>Spirit</warning> collection, <positive>accelerating the recovery</positive> of your Soul Ward and Spell Mana every time you pick one up."
+		"{@pagebreak}"
+		"<property>Soul Ward</property> - мощный барьер, но он медленно восстанавливается сам по себе. <keyword>Ring of Manaweaving</keyword> реагирует на сбор <warning>духов</warning>, <positive>ускоряя восстановление</positive> вашего Soul Ward и маны заклинаний каждый раз, когда вы подбираете дух."
+	]
 	quest.38F232B383F61523.quest_desc: [
 		"The <keyword>Rotating Spell Turret</keyword> can be aimed with the <keyword>Dominion Wand</keyword> at a target position - it slowly rotates towards that heading before firing, letting you set up sweeping or precisely angled shots."
 		"{@pagebreak}"
@@ -2408,6 +2552,11 @@
 		"Fancy, <keyword>queen-sized</keyword> patch of fiber"
 		"{@pagebreak}"
 		"Необычный, <keyword>королевский размер</keyword>, с набивкой из волокна"
+	]
+	quest.3A5AFEA0354715BB.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword>, using Living Flesh to sympathize with natural healing: <property>+15% Restoration Chance</property> - each time a focusing cycle finishes, it has a chance to <positive>slightly repair</positive> the <keyword>Impetus</keyword>. It <curse>cannot mend</curse> an already fractured one, though."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, использующее Живую Плоть для подражания естественному исцелению: <property>+15% Restoration Chance</property> - при завершении каждого цикла фокусировки есть шанс <positive>немного починить</positive> <keyword>Impetus</keyword>. Однако уже расколотый Impetus этим <curse>не вылечить</curse>."
 	]
 	quest.3A5FB1474CC41CED.quest_desc: [
 		"Grows in <magic>taiga biomes</magic> (the cold ones)."
@@ -2476,6 +2625,11 @@
 		"[ \"You can use the \", { \"text\": \"Aviary\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CFF4A7767CD830E\" } }, \" to get the amount of Wool of Bat you need!\" ]"
 		"{@pagebreak}"
 		"[ \"Вы можете использовать \", { \"text\": \"клетку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CFF4A7767CD830E\" } }, \" чтобы получать необходимое количество Wool of Bat!\" ]"
+	]
+	quest.3BCB895AFBCE2BFB.quest_desc: [
+		"The <keyword>Ring of Desperate Voracity</keyword> makes <curse>rotten food</curse> a bit more bearable, letting you gain more hunger and saturation from it. It also <positive>extends the duration</positive> of the <curse>Gluttony</curse> effect granted by the <keyword>Belt of the Starved</keyword>."
+		"{@pagebreak}"
+		"<keyword>Ring of Desperate Voracity</keyword> делает <curse>гнилую еду</curse> чуть более съедобной, позволяя получать от неё больше голода и насыщения. Также он <positive>продлевает действие</positive> эффекта <curse>Обжорства (Gluttony)</curse>, который даёт <keyword>Belt of the Starved</keyword>."
 	]
 	quest.3C0AA6B0C3E4BFE5.quest_desc: [
 		"This pickaxe &#ECB4B4deletes&r all of the blocks it mines. Quite handy when you don't care about the blocks you are mining!"
@@ -2668,6 +2822,11 @@
 		"{@pagebreak}"
 		"<keyword>Олово</keyword>, пригодное для плавки"
 	]
+	quest.3F5D9B3D8030599B.quest_desc: [
+		"The <pulse><keyword>Spirit Altar</keyword></pulse> is the heart of Malum's infusion crafting. Kill mobs with a <keyword>Scythe</keyword> to reap their <warning>Spirits</warning> - place the <keyword>base item</keyword> together with the required <warning>Spirits</warning> on the altar itself, then arrange the other crafting ingredients on the surrounding <keyword>Runewood Item Pedestals</keyword>, and the altar will <wave><positive>weave</positive></wave> them together into the infused result."
+		"{@pagebreak}"
+		"<pulse><keyword>Алтарь духов</keyword></pulse> - сердце инфузионного крафта в Malum. Убивайте мобов <keyword>косой</keyword>, чтобы пожинать их <warning>духов</warning> - поместите <keyword>базовый предмет</keyword> вместе с нужными <warning>духами</warning> прямо на алтарь, а остальные ингредиенты для крафта разложите по <keyword>рунвуд-постаментам</keyword> вокруг, после чего алтарь <wave><positive>сплавит</positive></wave> их в итоговый результат."
+	]
 	quest.3F70D40267927529.quest_desc: [
 		"After reviewing my old studies, I managed to obtain some recipe for making specialty blends for consumption. Maybe I'll try some a little each day. Although not a leaf more. This is a rather dangerous game."
 		"{@pagebreak}"
@@ -2675,6 +2834,16 @@
 	]
 	quest.3F7A0CB51203DAB6.quest_subtitle: "Experienced!"
 	quest.3F93E2966991C460.title: "Highway to Hell ritual"
+	quest.3FA9E1B3ACE5D820.quest_desc: [
+		"The <pulse><keyword>Runic Workbench</keyword></pulse> is used to craft <warning>Runes</warning> and <keyword>Brooches</keyword> - trinkets equipped in their own accessory slots that grant <positive>passive bonuses</positive> like extra damage, speed or healing. <keyword>Brooches</keyword> also let you trade other trinket slots for more <warning>Rune</warning> slots, so you can stack even more bonuses."
+		"{@pagebreak}"
+		"<pulse><keyword>Runic Workbench</keyword></pulse> используется для крафта <warning>Рун</warning> и <keyword>Брошей</keyword> - безделушек, которые надеваются в отдельные слоты аксессуаров и дают <positive>пассивные бонусы</positive>: урон, скорость, лечение и прочее. <keyword>Броши</keyword> также позволяют менять другие слоты безделушек на дополнительные слоты для <warning>Рун</warning>, чтобы накопить ещё больше бонусов."
+	]
+	quest.3FB784B12FC8FE13.quest_desc: [
+		"The <keyword>Ring of Curative Talent</keyword> reacts to <warning>Spirit</warning> collection - every time you pick one up, it <positive>restores a small amount of health</positive>."
+		"{@pagebreak}"
+		"<keyword>Ring of Curative Talent</keyword> реагирует на сбор <warning>духов</warning> - каждый раз, когда вы подбираете дух, он <positive>восстанавливает немного здоровья</positive>."
+	]
 	quest.400E4777C506724C.quest_desc: [
 		"&oUnbelievably useful&r, but keep in mind, it's &#FEECD6&lvery&r fragile&r! "
 		"{@pagebreak}"
@@ -2729,6 +2898,11 @@
 		""
 		"They're useful for magic, and they are also yummy."
 	]
+	quest.415452EBB6C356EE.quest_desc: [
+		"The <keyword>Necklace of Blissful Harmony</keyword> hides your presence from nearby foes, <positive>reducing their aggression</positive> towards you. Its effect is <property>especially potent</property> against creatures carrying a <curse>Wicked</curse> spirit."
+		"{@pagebreak}"
+		"<keyword>Necklace of Blissful Harmony</keyword> скрывает ваше присутствие от врагов поблизости, <positive>снижая их агрессию</positive> к вам. Эффект <property>особенно силён</property> против существ, несущих <curse>Wicked</curse>-дух."
+	]
 	quest.4185AADFF5388758.quest_desc: [
 		"The <keyword>Wican Ward</keyword> will be granted to you if you complete the <keyword>Amethyst Ritual</keyword> and will <warning>stop mobs from spawning</warning> in your area"
 		"{@pagebreak}"
@@ -2776,7 +2950,6 @@
 		"{@pagebreak}"
 		"<keyword>Фамильяр Старбанкла</keyword> даёт вам <property>Скорость II</property>, пока призван. Дайте ему <keyword>золотой самородок</keyword>, чтобы он его съел и ненадолго подсветил вам золотую руду поблизости."
 	]
-	quest.430423172DB205F2.quest_subtitle: "Nitor?!"
 	quest.43141E73595BA04F.quest_desc: [
 		"A <keyword>broom</keyword> can be used to <positive>sweep chalk away</positive> quickly, without having to spend time erasing it."
 		""
@@ -3272,6 +3445,11 @@
 		""
 		"[ \"Возможно \", { \"text\": \"это\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"650A973AF6830D93\" } }, \" вам поможет\" ]"
 	]
+	quest.4B89F0145E730715.quest_desc: [
+		"Normally, <property>Soul Ward</property> stops recovering for a while after you're hit. The <keyword>Belt of the Magebane</keyword> ends that downtime - it boosts <positive>Soul Ward recovery rate and capacity</positive>, and even absorbs the <warning>arcane essence</warning> of any magic damage you take, instantly converting it into Soul Ward recovery."
+		"{@pagebreak}"
+		"Обычно <property>Soul Ward</property> перестаёт восстанавливаться на время после получения удара. <keyword>Belt of the Magebane</keyword> убирает эту задержку - он увеличивает <positive>скорость восстановления и ёмкость Soul Ward</positive>, а также поглощает <warning>арканную сущность</warning> любого магического урона, мгновенно превращая её в восстановление Soul Ward."
+	]
 	quest.4BD90DDEB289EB1C.quest_desc: [
 		"The <keyword>Source Relay: Deposit</keyword> works like a regular <keyword>Source Relay</keyword>, but will automatically deposit source into any <keyword>Source Jars</keyword> within <property>5 blocks</property>, even if they are not linked to it."
 		""
@@ -3281,11 +3459,21 @@
 		""
 		"Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
 	]
+	quest.4C281D7C803BC705.quest_desc: [
+		"Working with the <keyword>Spirit Crucible</keyword> tends to <curse>wear down and fracture</curse> your <keyword>Impetus</keyword>. Feed the <keyword>Repair Pylon</keyword> some <warning>Spirit Arcana</warning> plus a matching repair material, and it will <positive>automatically find and repair</positive> any damaged Impetus sitting on a nearby Item Pedestal, Item Stand or in the Crucible itself. It can also repair <keyword>ordinary and magical tools</keyword> the same way using <warning>Spirits</warning> instead of experience - restoring <property>half their durability</property>, or <property>three quarters</property> for gear made from materials that resonate with spirits."
+		"{@pagebreak}"
+		"Работа с <keyword>Spirit Crucible</keyword> постепенно <curse>изнашивает и раскалывает</curse> ваш <keyword>Impetus</keyword>. Снабдите <keyword>Repair Pylon</keyword> немного <warning>души арканы</warning> и подходящим материалом для ремонта, и он <positive>сам найдёт и починит</positive> любой повреждённый Impetus на соседнем постаменте, стенде или прямо в тигле. Точно так же он умеет чинить <keyword>обычные и магические инструменты</keyword>, используя <warning>духов</warning> вместо опыта - восстанавливая <property>половину прочности</property>, а для снаряжения из материалов, резонирующих с духами - <property>три четверти</property>."
+	]
 	quest.4C56E87E195A4339.quest_desc: [
 		"Place these &#FEECD6microorganisms&r near some food and &#9BB8EDwait&r a bit. The bacteria will start to eat it and leave the &#FEECD6rests&r behind. Maybe you can use this to &#9BB8EDyour advantage&r!"
 		""
 		"{@pagebreak}"
 		"Установите &#FEECD6бутылочку&r рядом с &#CAE4C8листьями&r и немного &#9BB8EDподождите&r, бактерии начнут съедать &#CAE4C8листву&r и оставлять процессы своей &#FEECD6жизнидейстельности&r прямо в этих же &#CAE4C8листях&r, возможно вы сможете использовать это в &#9BB8EDсвоих целях&r!"
+	]
+	quest.4CB26ABA69E4A8DB.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword>, drawing power from unbounded fractal complexity: <property>+10% Fortune Chance</property>, letting a focusing cycle potentially produce <positive>double the usual items</positive>, at the cost of <warning>+10% Instability</warning> and <curse>-20% Focusing Speed</curse>."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, черпающее силу из безграничной фрактальной сложности: <property>+10% Fortune Chance</property>, что позволяет циклу фокусировки иногда выдавать <positive>вдвое больше предметов</positive> ценой <warning>+10% нестабильности</warning> и <curse>-20% скорости фокусировки</curse>."
 	]
 	quest.4CD83E3F1602127A.quest_desc: [
 		"Enter the <magic>preservation ruins</magic>."
@@ -3451,6 +3639,11 @@
 		""
 		"- <property>Радиус действия для предметов и опыта можно настраивать отдельно</property>"
 	]
+	quest.5232FE3A3B191E96.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword> that bends the flow of arcana rather than light: <property>-15% Instability</property>. Keep in mind, stability can only prevent the <keyword>Impetus</keyword> from taking <warning>additional</warning> damage - it won't undo damage already dealt."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, изгибающее не свет, а поток арканы: <property>-15% нестабильности</property>. Учтите, стабильность лишь предотвращает <warning>дополнительный</warning> урон по <keyword>Impetus</keyword> - уже нанесённый урон она не отменяет."
+	]
 	quest.5234DC07A9DA97B9.quest_desc: ["[ \"You can summon a mob using a \", { \"text\": \"brazier\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } } ]"]
 	quest.52DE3396BBC36B30.quest_desc: [
 		"<keyword>Crystal Apothecary</keyword> automatically <positive>collects gemstone clusters</positive>. Anything - &6Topaz&r, &5Amethyst&r, <property>Certus Quartz</property> etc. It doesn't even need to be loaded!"
@@ -3495,7 +3688,7 @@
 	quest.5380E40C4577CC4F.quest_desc: ["Удлиняет путь для эмбера"]
 	quest.5386ADA67BEB546A.quest_desc: [""]
 	quest.538E3976DDFD9FBF.quest_desc: [
-		"Displays the total number of <keyword> buffs</keyword> in the <keyword>Crucible</keyword>"
+		"Displays the total number of <keyword>buffs</keyword> in the <keyword>Crucible</keyword>"
 		"{@pagebreak}"
 		"Отображает суммарное количество <keyword>бафов</keyword> в <keyword>кузне</keyword>"
 	]
@@ -4108,6 +4301,11 @@
 		"<warning>Отключение редстоун-сигнала</warning> отключает функцию узла: <keyword>узлы сбора</keyword> перестают запрашивать предметы, <keyword>узлы поставки</keyword> перестают их предлагать, <keyword>узлы отправки</keyword> перестают отправлять предметы, а <keyword>узлы хранения</keyword> не могут ни принимать, ни отдавать предметы."
 		""
 		"<magic><b>Ознакомьтесь с списком улучшений для узлов в гайдбуке!</b></magic>"
+	]
+	quest.61BB4319A563D757.quest_desc: [
+		"The <keyword>Ring of the Howling Maelstrom</keyword> alters the <property>Rebound</property> enchantment - when you throw your scythe, <shake amplitude=0.3 frequency=1.0>cutting winds</shake> spin around it, damaging nearby foes, at the cost of a longer cooldown. Wear it together with the <keyword>Necklace of the Narrow Edge</keyword> to concentrate the winds into a small storm the moment your scythe lands a hit."
+		"{@pagebreak}"
+		"<keyword>Ring of the Howling Maelstrom</keyword> изменяет зачарование <property>Rebound</property> - когда вы бросаете косу, вокруг неё закручиваются <shake amplitude=0.3 frequency=1.0>режущие ветра</shake>, наносящие урон противникам рядом, но ценой увеличенной перезарядки. Наденьте его вместе с <keyword>Necklace of the Narrow Edge</keyword>, чтобы сконцентрировать ветра в небольшой шторм в момент удара косой."
 	]
 	quest.61DD20DF56A3CEDD.quest_desc: [
 		"<warning>Can be found once per game by one player"
@@ -4737,6 +4935,11 @@
 		""
 		"Вы можете прочитать больше о том как ловить рыбу и другую важную информацию в <keyword>гайде</keyword>, он максимально подробный!"
 	]
+	quest.6F8A5DBF0BB08B9B.quest_desc: [
+		"The <keyword>Necklace of the Mystic Mirror</keyword> boosts your <property>Arcane Resonance</property> by 100%, <positive>amplifying every effect</positive> that triggers on collecting a <warning>Spirit</warning> - like health regen from the <keyword>Ring of Curative Talent</keyword> or Soul Ward/mana recovery from the <keyword>Ring of Manaweaving</keyword>."
+		"{@pagebreak}"
+		"<keyword>Necklace of the Mystic Mirror</keyword> увеличивает <property>Arcane Resonance</property> на 100%, <positive>усиливая все эффекты</positive>, которые срабатывают при сборе <warning>духа</warning> - например, лечение от <keyword>Ring of Curative Talent</keyword> или восстановление Soul Ward/маны от <keyword>Ring of Manaweaving</keyword>."
+	]
 	quest.6FABBCC7CB80AF62.quest_desc: ["Once you make Fire-Clay Balls, you can combine them with a Brick Mold in a crafting grid to make Unfired Fire Clay Bricks. You will then have to put the bricks in a furnace to make them usable."]
 	quest.6FBA4C72D386837A.quest_desc: [
 		"A &#DEB3E0Fabrication Chest&r has four special slots for &#FEECD6Crafting Tablets&r."
@@ -4881,7 +5084,6 @@
 		"{@pagebreak}"
 		"Вы можете нажать «<positive>C</positive>», чтобы <positive>ползти</positive> и поздороваться со всеми своими <wiggle amplitude=0.5 frequency=1.5 phase=1.0>червеобразными друзьями</wiggle>!"
 	]
-	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
 	quest.71A28CD8A6826BD9.quest_desc: ["3x3x2 block"]
 	quest.71AF5D40C19C7E45.quest_desc: [
 		"A <named>Cow Jar</named> - supplies a connected cooking table with <keyword>milk</keyword>, letting you craft recipes that normally require a <property>milk bucket</property> without needing an actual bucket."
@@ -4927,6 +5129,11 @@
 		"{@pagebreak}"
 		"&#DEB3E0Пилон&r позволяет &#FEECD6ускорить&r крафты в мультиблочных структурах мода Spectrum, так же данный пилон помогает ускорить машинки из мода &#9BB8EDModern industrialization&r."
 	]
+	quest.726010092187524C.quest_desc: [
+		"The <keyword>Necklace of the Narrow Edge</keyword> mystically focuses your scythe strikes - <positive>+40% Scythe Proficiency</positive> and the <property>Rebound</property> and <property>Ascension</property> augments, but it <curse>disables Scythe Sweeping</curse>, so only a single target takes the full brunt of the blow."
+		"{@pagebreak}"
+		"<keyword>Necklace of the Narrow Edge</keyword> мистически фокусирует удары косой - <positive>+40% Scythe Proficiency</positive> и усиления <property>Rebound</property> и <property>Ascension</property>, но <curse>отключает подсекание косой (Scythe Sweeping)</curse>, так что весь удар достаётся только одной цели."
+	]
 	quest.72C89C29380EF7B7.quest_desc: [
 		"These &#FEECD6Lamps&r emit some &#FEECD6light&r, and will also be needed in the future to improve your &#9BB8EDstructures!&r"
 		"{@pagebreak}"
@@ -4955,6 +5162,11 @@
 		"<keyword>Чаша</keyword> может быть помещена на вершину <keyword>алтаря</keyword>, чтобы <property>увеличить его энергоемкость</property>. Чашу можно наполнить, <positive>использовав на ней Redstone Soup</positive>."
 	]
 	quest.73A3668DA95AAD0E.title: "bedrock_sample"
+	quest.73D9C18575318FB8.quest_desc: [
+		"The <keyword>Ring of Arcane Prowess</keyword> feeds off excess magical energy - every time you collect a <warning>Spirit</warning>, you gain a small amount of <positive>experience</positive>."
+		"{@pagebreak}"
+		"<keyword>Ring of Arcane Prowess</keyword> питается избыточной магической энергией - каждый раз, когда вы собираете <warning>дух</warning>, вы получаете немного <positive>опыта</positive>."
+	]
 	quest.73DAABF80C068AA2.quest_desc: [
 		"Dust can be obtained from gems by using the power of the &#9BB8EDanvil&r, or rather &#9BB8EDgravity&r. Just &l<wiggle>drop</wiggle>&r the anvil on the &#9BB8EDitem&r and it will be crushed!"
 		""
@@ -5003,6 +5215,11 @@
 		"Press <keyword>\"Y\"</keyword> on an item in your inventory (or in EMI) to <positive>highlight similar items in nearby chests</positive>"
 		"{@pagebreak}"
 		"Нажмите <keyword>«Y»</keyword> на предмете в инвентаре (или в EMI), чтобы <positive>подсветить похожие предметы в соседних сундуках</positive>"
+	]
+	quest.7587ED7D2CA515B6.quest_desc: [
+		"The <keyword>Ring of Alchemical Mastery</keyword> manipulates the potions running through your blood - each time you collect a <warning>Spirit</warning>, it <curse>partially filters out negative effects</curse> while <positive>prolonging positive ones</positive>."
+		"{@pagebreak}"
+		"<keyword>Ring of Alchemical Mastery</keyword> манипулирует зельями в вашей крови - каждый раз, когда вы собираете <warning>дух</warning>, он <curse>частично ослабляет отрицательные эффекты</curse>, одновременно <positive>продлевая положительные</positive>."
 	]
 	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by right clicking cobblestone on stone."]
 	quest.75DE98178AF407BD.quest_desc: ["The most basic element of Toxony."]
@@ -5101,6 +5318,11 @@
 		""
 		"Улучшение: объедини два Blood Tank + Glass + Bloodstone на верстаке. Результат на один тир выше основного танка, жидкости сливаются. Одинаковые жидкости суммируются, разные - побеждает основной танк."
 	]
+	quest.7B0B574F6080C210.quest_desc: [
+		"The <keyword>Ring of the Rising Edge</keyword> alters the <property>Ascension</property> enchantment - at the cost of reduced damage, foes cut by its wind blades are <wave>launched upwards</wave>, great for crowd control. Wear it together with the <keyword>Necklace of the Narrow Edge</keyword> to launch enemies with far greater force."
+		"{@pagebreak}"
+		"<keyword>Ring of the Rising Edge</keyword> изменяет зачарование <property>Ascension</property> - ценой сниженного урона враги, задетые лезвиями ветра, <wave>подбрасываются вверх</wave>, что отлично подходит для контроля толпы. Наденьте его вместе с <keyword>Necklace of the Narrow Edge</keyword>, чтобы подбрасывать врагов гораздо сильнее."
+	]
 	quest.7BF0822DA2EA2407.quest_desc: ["The Common gem holds up to 1,024 Spiritus."]
 	quest.7C082F9CC1474254.quest_desc: [
 		"<keyword>Magnum Torch</keyword> adds three kinds of very powerful torches that <positive>prevent mobs from spawning</positive> in a huge area. Only natural spawns will be prevented, so e.g. spawners and raids still work as they should."
@@ -5124,6 +5346,11 @@
 		"Those <keyword>prickly leaves</keyword> can only be acquired with <keyword>shears</keyword> - <warning>no other tool will work</warning>"
 		"{@pagebreak}"
 		"Эти <keyword>колючие листья</keyword> можно получить только с помощью <keyword>ножниц</keyword>"
+	]
+	quest.7C84ABFDDF976F8D.quest_desc: [
+		"A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>. The <keyword>Caustic Catalyst</keyword> harnesses the volatile reaction between Infernal and Aqueous arcana, granting <property>+100% Caustic Synergy</property> - the higher the Crucible's <warning>Instability</warning> climbs, the more it boosts <positive>Tuning Potency</positive>."
+		"{@pagebreak}"
+		"<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>. <keyword>Caustic Catalyst</keyword> использует нестабильную реакцию между инфернальной и водной арканой, давая <property>+100% Caustic Synergy</property> - чем выше <warning>нестабильность</warning> тигля, тем сильнее это усиливает <positive>Tuning Potency</positive>."
 	]
 	quest.7CA4C6614455169B.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>"
@@ -5152,6 +5379,11 @@
 		"The <keyword>SpellBinder</keyword> (Not Enough Glyphs) is an alternative to the spell book that can hold up to 25 spells from caster tomes or parchments - great for spells you're done tweaking, or for sharing magic without handing over your whole book. It also has its own Thread slots for special bonuses (like Focus, Randomize or turning it into a melee weapon)."
 		"{@pagebreak}"
 		"<keyword>SpellBinder</keyword> (Not Enough Glyphs) - альтернатива спелл-буке: хранит до 25 заклинаний из тома-кастера или пергаментов, удобен для заклинаний, которые вы больше не меняете, или чтобы поделиться магией, не отдавая всю книгу. У него также есть свои слоты для нитей с особыми бонусами (Focus, Randomize или превращение в оружие ближнего боя)."
+	]
+	quest.7CFF72E3005032D8.quest_desc: [
+		"An augment for the <keyword>Spirit Crucible</keyword>, using the multiphasic property of Soulstained Steel: <property>+10% Damage Absorption Chance</property> and <positive>-5% Instability</positive> - gives a chance to <positive>completely absorb</positive> damage dealt to the <keyword>Impetus</keyword>, at the cost of <curse>-20% Focusing Speed</curse>."
+		"{@pagebreak}"
+		"Улучшение для <keyword>Spirit Crucible</keyword>, использующее многофазное свойство Soulstained Steel: <property>+10% Damage Absorption Chance</property> и <positive>-5% нестабильности</positive> - даёт шанс <positive>полностью поглотить</positive> урон по <keyword>Impetus</keyword> ценой <curse>-20% скорости фокусировки</curse>."
 	]
 	quest.7D5DCEA36FF46987.quest_desc: [
 		"A <keyword>bed for daytime</keyword>. The hammock can only be placed between two Nails and Rope."
@@ -5367,7 +5599,6 @@
 	task.258E74CA68DE446A.title: "Item Locking"
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.25E5275296A8B186.title: "Plant Mutations"
-	task.25EEFAFE89269E7F.title: "Any #milf:diamond_storage"
 	task.2629C2F369B3D084.title: "<shake amplitude=0.4 frequency=1.3>&#A39FE1PINGS!!! THEY'RE EVERYWHERE</shake>"
 	task.265ECF3473777E15.title: "Sender Node"
 	task.268D4F85B02495FD.title: "Xaeromap [WIP]"
@@ -5380,6 +5611,7 @@
 	task.2B915AAA46F6518E.title: "Capacity"
 	task.2C236C4C499DB27A.title: "Any Brooms"
 	task.2CD40379A7378211.title: "Any Pillar Base Blocks"
+	task.2D3C3D2289284790.title: "не забудь добавить примеры заклинаний"
 	task.2D505FCD743999D9.title: "Any Chiseled Base Blocks"
 	task.2D7C31BAB3D924BD.title: "Item Locks"
 	task.2DC4D93F13B3CCC6.title: "Any Gears"
@@ -5474,7 +5706,6 @@
 	task.7001AAAE3F1E4149.title: "Looking for ores?"
 	task.701E2CCC21092BDF.title: "Weapon/shield/armor [WIP]"
 	task.70666D7BC794CADC.title: "Well of Suffering"
-	task.70E9DEB5C0405E9F.title: "Any #milf:gold_storage"
 	task.715168A27BACCD77.title: "Hi wrld"
 	task.718761104CFF4A93.title: "Any Fluid Pipes"
 	task.7431F878DB34A30D.title: "Bridging"
@@ -5487,7 +5718,6 @@
 	task.77C744B48E7A1B18.title: "Any Beds"
 	task.77CF8D64718D9A67.title: "Vanilla items for spectrum progression"
 	task.78C5E8DD6BAEE398.title: "Any Polished Gemstone Block"
-	task.7A088DB9F1387FB0.title: "Any #milf:netherite_storage"
 	task.7AE5252F3D792BCA.title: "Mouse Tweaks \\& More Mouse Tweaks"
 	task.7B3544B20876E51B.title: "Any Connectors"
 	task.7DFA2C0B9737E55D.title: "Nutrition"

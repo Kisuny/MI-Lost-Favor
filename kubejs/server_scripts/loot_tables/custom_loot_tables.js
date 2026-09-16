@@ -4,6 +4,7 @@ LootJS.lootTables(event => {
         .createPool(pool => {
             pool.addEntry(LootEntry.of("malum:raw_brilliance").withWeight(80))
             pool.addEntry(LootEntry.of("malum:cthonic_gold").withWeight(80))
+            pool.addEntry(LootEntry.of("malum:blazing_quartz").withWeight(80))
             pool.addEntry(LootEntry.of("malum:cthonic_gold_fragment").withWeight(100))
             pool.addEntry(LootEntry.of("malum:tainted_rock").withWeight(100))
             pool.addEntry(LootEntry.of("malum:twisted_rock").withWeight(100))

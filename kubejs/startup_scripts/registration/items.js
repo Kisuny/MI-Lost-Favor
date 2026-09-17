@@ -72,6 +72,7 @@ createNewItem('fire_clay_ball')
 
 createNewItem('fish_net', { stackSize: 15 })
 
+createNewItem('unfired_clay_mold_ingot', { stackSize: 1})
 createNewItem('unfired_clay_mold_axe', { stackSize: 1})
 createNewItem('unfired_clay_mold_hammer', { stackSize: 1 })
 createNewItem('unfired_clay_mold_hoe', { stackSize: 1 })
@@ -88,6 +89,12 @@ createNewItem('wooden_hoe_head', { stackSize: 1 })
 createNewItem('wooden_pickaxe_head', { stackSize: 1 })
 createNewItem('wooden_shovel_head', { stackSize: 1 })
 createNewItem('wooden_sword_blade', { stackSize: 1 })
+
+createNewItem('bronze_shovel_head_part', { lang: { "en_us": "Bronze Shovel Head Part", "ru_ru": "Часть лопаты из бронзы" } })
+createNewItem('lead_shovel_head_part')
+
+createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
+createNewItem('lead_hoe_head_part')
 
 createNewItem('ferrosilicon_dust')
 
@@ -243,17 +250,15 @@ createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_
 // createNewItem('quantum_blueprint', { texturePath: 'milf:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
 // createNewItem('divine_blueprint', { texturePath: 'milf:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
 
-createNewItem('unfired_shovel_head_mold', { lang: { "en_us": "Unfired shovel Head Mold", "ru_ru": "Необожженная форма лопаты" } })
-createNewItem('shovel_head_sand_mold', { lang: { "en_us": "Shovel Head sand mold", "ru_ru": "Форма лопаты из песка" } })
-createNewItem('shovel_head_clay_mold', {maxDamage: 16, lang: { "en_us": "Shovel Head clay mold", "ru_ru": "Форма лопаты из глины" } })
-createNewItem('shovel_head_pattern', { lang: { "en_us": "Shovel Head Pattern", "ru_ru": "Шаблон лопаты" } })
-createNewItem('bronze_shovel_head_part', { lang: { "en_us": "Bronze Shovel Head Part", "ru_ru": "Часть лопаты из бронзы" } })
+// createNewItem('unfired_shovel_head_mold', { lang: { "en_us": "Unfired shovel Head Mold", "ru_ru": "Необожженная форма лопаты" } })
+// createNewItem('shovel_head_sand_mold', { lang: { "en_us": "Shovel Head sand mold", "ru_ru": "Форма лопаты из песка" } })
+// createNewItem('shovel_head_clay_mold', {maxDamage: 16, lang: { "en_us": "Shovel Head clay mold", "ru_ru": "Форма лопаты из глины" } })
+// createNewItem('shovel_head_pattern', { lang: { "en_us": "Shovel Head Pattern", "ru_ru": "Шаблон лопаты" } })
 
-createNewItem('unfired_hoe_head_mold', { lang: { "en_us": "Unfired Hoe Head Mold", "ru_ru": "Необожженная форма мотыги" } })
-createNewItem('hoe_head_sand_mold', { lang: { "en_us": "Hoe Head Sand Mold", "ru_ru": "Форма мотыги из песка" } })
-createNewItem('hoe_head_clay_mold', { maxDamage: 16, lang: { "en_us": "Hoe Head Clay Mold", "ru_ru": "Форма мотыги из глины" } })
-createNewItem('hoe_head_pattern', { lang: { "en_us": "Hoe Head Pattern", "ru_ru": "Шаблон мотыги" } })
-createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
+// createNewItem('unfired_hoe_head_mold', { lang: { "en_us": "Unfired Hoe Head Mold", "ru_ru": "Необожженная форма мотыги" } })
+// createNewItem('hoe_head_sand_mold', { lang: { "en_us": "Hoe Head Sand Mold", "ru_ru": "Форма мотыги из песка" } })
+// createNewItem('hoe_head_clay_mold', { maxDamage: 16, lang: { "en_us": "Hoe Head Clay Mold", "ru_ru": "Форма мотыги из глины" } })
+// createNewItem('hoe_head_pattern', { lang: { "en_us": "Hoe Head Pattern", "ru_ru": "Шаблон мотыги" } })
 
 createNewItem('building_card', { lang: { "ru_ru": "Карта строительства" } })
 createNewItem('destruction_card', { lang: {  "ru_ru": "Карта разрушения" } })

@@ -7,7 +7,12 @@ ServerEvents.tags("item", event => {
     ])
 
     event.add("ytech:clay_molds", [
-        "ytech:clay_bucket"
+        "ytech:clay_bucket",
+        "milf:clay_mold_ingot"
+    ])
+
+    event.add("ytech:molds/ingot", [
+        "milf:clay_mold_ingot"
     ])
 
     event.add("ytech:molds/hoe_head", [

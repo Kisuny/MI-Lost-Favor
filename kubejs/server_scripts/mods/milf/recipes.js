@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
             mold: "milf:clay_mold_axe",
             volume: $FluidType.BUCKET_VOLUME / 4,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_axe_head_part"
+                "embers:molten_bronze": "ytech:bronze_axe_head_part",
+                "embers:molten_lead": "ytech:lead_axe_head_part"
             }
         },
         "milf:unfired_clay_mold_hammer": {
@@ -14,7 +15,8 @@ ServerEvents.recipes(event => {
             mold: "milf:clay_mold_hammer",
             volume: $FluidType.BUCKET_VOLUME,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_hammer_head_part"
+                "embers:molten_bronze": "ytech:bronze_hammer_head_part",
+                "embers:molten_lead": "ytech:lead_hammer_head_part"
             }
         },
         "milf:unfired_clay_mold_hoe": {
@@ -22,7 +24,8 @@ ServerEvents.recipes(event => {
             mold: "milf:clay_mold_hoe",
             volume: $FluidType.BUCKET_VOLUME / 5,
             castMap: {
-                "embers:molten_bronze": "milf:bronze_hoe_head_part"
+                "embers:molten_bronze": "milf:bronze_hoe_head_part",
+                "embers:molten_lead": "milf:lead_hoe_head_part"
             }
         },
         "milf:unfired_clay_mold_pickaxe": {
@@ -30,7 +33,8 @@ ServerEvents.recipes(event => {
             mold: "milf:clay_mold_pickaxe",
             volume: $FluidType.BUCKET_VOLUME / 4,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_pickaxe_head_part"
+                "embers:molten_bronze": "ytech:bronze_pickaxe_head_part",
+                "embers:molten_lead": "ytech:lead_pickaxe_head_part"
             }
         },
         "milf:unfired_clay_mold_shovel": {
@@ -38,7 +42,8 @@ ServerEvents.recipes(event => {
             mold: "milf:clay_mold_shovel",
             volume: $FluidType.BUCKET_VOLUME / 8,
             castMap: {
-                "embers:molten_bronze": "milf:bronze_shovel_head_part"
+                "embers:molten_bronze": "milf:bronze_shovel_head_part",
+                "embers:molten_lead": "milf:lead_shovel_head_part"
             }
         },
         "milf:unfired_clay_mold_sword": {
@@ -46,7 +51,8 @@ ServerEvents.recipes(event => {
             mold: "milf:clay_mold_sword",
             volume: $FluidType.BUCKET_VOLUME / 5,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_sword_blade_part"
+                "embers:molten_bronze": "ytech:bronze_sword_blade_part",
+                "embers:molten_lead": "ytech:lead_sword_blade_part"
             }
         }
     }).forEach(([unfiredMoldId, data]) => {
@@ -139,6 +145,30 @@ ServerEvents.recipes(event => {
             "c": { "item": "minecraft:clay_ball" },
         },
         outputItems: [[{ id: "milf:unfired_clay_plate" }, 1]]
+    })
+
+    milfShapedCustom(event, {
+        pattern: [
+            " b ",
+            " p ",
+            " p ",
+        ],
+        key: {
+            "p": { "item": "milf:unfired_clay_plate" },
+            "b": { "item": "minecraft:brick" }
+        },
+        keepIngredient: "minecraft:brick",
+        outputItems: [[{ id: "milf:unfired_clay_mold_ingot" }, 1]]
+    })
+
+    ytechSmeltingRecipe(event, {
+        inputItems: [
+            [{ item: "milf:unfired_clay_mold_ingot" }],
+        ],
+        outputItems: [
+            [{ id: "milf:clay_mold_ingot" }]
+        ],
+        minTemp: 1000,
     })
 
     yTechShaped(event, {

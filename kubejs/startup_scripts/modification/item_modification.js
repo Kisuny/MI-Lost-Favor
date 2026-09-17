@@ -141,7 +141,8 @@ ItemEvents.modification(event => {
         "milf:clay_mold_hoe",
         "milf:clay_mold_pickaxe",
         "milf:clay_mold_shovel",
-        "milf:clay_mold_sword"
+        "milf:clay_mold_sword",
+        "milf:clay_mold_ingot"
     ).forEach(id => {
         event.modify(id, item => {
             item.resetComponents().set("immersiveengineering:fluid", {})

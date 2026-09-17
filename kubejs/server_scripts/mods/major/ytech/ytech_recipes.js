@@ -58,33 +58,33 @@ function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args) {
 
 ServerEvents.recipes(event => {
 
-    yTechShaped(event, {
-        pattern: [
-            ' E ',
-            '   ',
-            '  H'
-        ],
-        key: {
-            E: { tag: "milf:knives" },
-            H: { tag: "ytech:beeswaxes" }
-        },
-        outputItems: [[{ id: "milf:hoe_head_pattern" }, 1]],
-        compatOff: true
-    })
+    // yTechShaped(event, {
+    //     pattern: [
+    //         ' E ',
+    //         '   ',
+    //         '  H'
+    //     ],
+    //     key: {
+    //         E: { tag: "milf:knives" },
+    //         H: { tag: "ytech:beeswaxes" }
+    //     },
+    //     outputItems: [[{ id: "milf:hoe_head_pattern" }, 1]],
+    //     compatOff: true
+    // })
 
-    yTechShaped(event, {
-        pattern: [
-            ' E ',
-            '   ',
-            ' H '
-        ],
-        key: {
-            E: { tag: "milf:knives" },
-            H: { tag: "ytech:beeswaxes" }
-        },
-        outputItems: [[{ id: "milf:shovel_head_pattern" }, 1]],
-        compatOff: true
-    })
+    // yTechShaped(event, {
+    //     pattern: [
+    //         ' E ',
+    //         '   ',
+    //         ' H '
+    //     ],
+    //     key: {
+    //         E: { tag: "milf:knives" },
+    //         H: { tag: "ytech:beeswaxes" }
+    //     },
+    //     outputItems: [[{ id: "milf:shovel_head_pattern" }, 1]],
+    //     compatOff: true
+    // })
 
     yTechShaped(event, {
         pattern: [
@@ -371,5 +371,6 @@ ServerEvents.recipes(event => {
 })
 
 milfDisableRecipesById([
-    "ytech:bronze_ingot_from_alloying"
+    "ytech:bronze_ingot_from_alloying",
+    /ytech:(\w+)_from_mold/
 ])

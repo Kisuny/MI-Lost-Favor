@@ -56,7 +56,6 @@ let $Collectors = Java.loadClass("java.util.stream.Collectors")
 let $ILootModifier = Java.loadClass("com.yanny.ali.api.ILootModifier")
 let $FakeLootDataManager = Java.loadClass("com.yanny.ali.manager.FakeLootDataManager")
 
-let $ItemCollectorUtils = Java.loadClass("com.yanny.ali.plugin.server.ItemCollectorUtils")
 let $Stream = Java.loadClass("java.util.stream.Stream")
 
 let $ChainKnotEntity = Java.loadClass("com.evandev.connectiblechains.entity.ChainKnotEntity")

@@ -42,7 +42,8 @@ NetworkEvents.dataReceived('milf_divine_mint_sync_loot', (event) => {
             // tierLoot[bossID] = output
             // console.log(output);
             
-            let items = $ItemCollectorUtils.collectLootTable(aliRegistry, lootTable)
+            let items = new $ArrayList()
+            collectItems(aliRegistry.parseTable($Collections.emptyList(), lootTable), items)
 
             let modifiers = new $ArrayList()
 
@@ -109,6 +110,14 @@ NetworkEvents.dataReceived('milf_divine_mint_sync_loot', (event) => {
 
 })
 
+
+function collectItems(node, output){
+    if (node instanceof $IItemNode){
+        node.getModifiedItem().ifLeft(item => output.add(item.getItem()))
+    } else if (node instanceof $ListNode){
+        node.nodes().forEach(child => collectItems(child, output))
+    }
+}
 
 function collectItemStacks(node, output){
     //console.log(node);

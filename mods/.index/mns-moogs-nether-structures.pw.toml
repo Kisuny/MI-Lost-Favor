@@ -1,4 +1,4 @@
-filename = 'MoogsNetherStructures-1.21-3.0.0.jar'
+filename = 'MoogsNetherStructures-universal-1.21-3.1.1.jar'
 name = 'MoogsNetherStructures'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
@@ -18,17 +18,18 @@ x-prismlauncher-mc-versions = [
     '26.1',
     '26.1.1',
     '26.1.2',
-    '26.2'
+    '26.2',
+    '26.3'
 ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'MNS 3.0.0-1.21 [UNIVERSAL]'
+x-prismlauncher-version-number = "Moog's Nether Structures 3.1.1-1.21+ [UNIVERSAL]"
 
 [download]
-hash = 'b07843ca80d49579beabb4397157de0c4330db01'
+hash = '78845cb7bccaa7812bacce4efdd5481b81b8c347'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8298675
+file-id = 8902210
 project-id = 967466

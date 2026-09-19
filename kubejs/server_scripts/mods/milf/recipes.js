@@ -564,5 +564,24 @@ ServerEvents.recipes(event => {
     })
 
 
+    customAlchemicalForgeCraft(event, {
+        affinities: [
+            "toxony:moon",
+            "toxony:ocean",
+            "toxony:sun"
+        ],
+        auxiliary: [
+            {
+                "item": "minecraft:lapis_lazuli"
+            },
+            {
+                "item": "minecraft:amethyst_shard"
+            }
+        ],
+        main: {
+            "item": "minecraft:raw_copper"
+        },
+        result: "milf:copper_sulfate"
+    })
 
 })

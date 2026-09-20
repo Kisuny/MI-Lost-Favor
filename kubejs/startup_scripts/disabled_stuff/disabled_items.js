@@ -186,6 +186,10 @@ global.disabledItems = [
     new DisabledItemBuilder(/ytech:(?!wooden)(\w+)_plate\b/),
     new DisabledItemBuilder(/ytech:(?!brick)(\w+)_mold\b/),
     new DisabledItemBuilder(/ytech:(\w+)_pattern\b/),
+    new DisabledItemBuilder(/ytech:dried_(\w+)\b/),
+    new DisabledItemBuilder(/ytech:(?!unfired)(\w+)_clay_bucket\b/),
+
+    new DisabledItemBuilder(/ytech:clay_bucket\b/).replaceWith("milf:clay_bucket"),
 
 
     new DisabledItemBuilder(/ytech:(\w+)_block\b/),

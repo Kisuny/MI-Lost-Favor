@@ -71,6 +71,48 @@ createNewItem('unfired_fire_clay_brick')
 createNewItem('fire_clay_ball')
 
 createNewItem('fish_net', { stackSize: 15 })
+createNewItem('firestarter', { 
+    maxDamage: 8, 
+    stackSize: 1,
+    use: {
+        animation: "bow",
+        duration: 80,
+        finishUsing(itemStack, level, player) {
+
+            if (level.isClientSide()) return itemStack
+
+            let reachDistance = player.blockInteractionRange()
+            let hitResult = level.clip(
+                new $ClipContext(
+                    player.getEyePosition(),
+                    player.getEyePosition().add(player.getViewVector(1).scale(reachDistance)),
+                    $ClipContext$Block.OUTLINE,
+                    $ClipContext$Fluid.NONE,
+                    player
+                )
+            )
+
+            if(hitResult.getType() == $HitResult$Type.BLOCK){
+                let blockPos = hitResult.getBlockPos()
+                let blockEntity = level.getBlockEntity(blockPos)
+
+                if (!blockEntity) return itemStack
+
+                itemStack.hurtAndBreak(1, level, player, item => {
+                    player.onEquippedItemBroken(item, player.getEquipmentSlotForItem(itemStack))
+                })
+
+                let blockId = $BuiltInRegistries.BLOCK.getKey(blockEntity.getBlockState().getBlock())
+
+                if (blockId == "milf:clay_crucible"){
+                    if (blockEntity.isFull()) blockEntity.setLit(true)
+                }
+            }
+
+            return itemStack
+        }
+    }
+})
 
 createNewItem('unfired_clay_mold_ingot', { stackSize: 1})
 createNewItem('unfired_clay_mold_axe', { stackSize: 1})

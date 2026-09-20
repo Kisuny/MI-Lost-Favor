@@ -13,6 +13,8 @@ ServerEvents.tags('item', event => {
 
     event.add("milf:knives", [
 
+        "ytech:bronze_knife", "ytech:lead_knife",  "ytech:flint_knife", 
+
         "farmersdelight:iron_knife", "farmersdelight:golden_knife", 
             "farmersdelight:diamond_knife", "farmersdelight:netherite_knife",
 
@@ -22,9 +24,7 @@ ServerEvents.tags('item', event => {
 
         "dungeonsdelight:flint_cleaver", "dungeonsdelight:iron_cleaver",
             "dungeonsdelight:diamond_cleaver", "dungeonsdelight:golden_cleaver", 
-            "dungeonsdelight:netherite_cleaver",
-
-        "ytech:flint_knife", "ytech:bronze_knife"
+            "dungeonsdelight:netherite_cleaver"
 
     ])
 

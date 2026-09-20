@@ -226,7 +226,8 @@ createNewJavaItem("big_bulky_drill", { tag: ["minecraft:pickaxes"] },
 
         _isAreaMineableBlock( level,  state,  pos) {
             return state.isAir() ||
-                (state.is($BlockTags.MINEABLE_WITH_PICKAXE) && state.is($BlockTags.BASE_STONE_OVERWORLD)) &&
+                (state["is(net.minecraft.tags.TagKey)"]($BlockTags.MINEABLE_WITH_PICKAXE) && 
+                state["is(net.minecraft.tags.TagKey)"]($BlockTags.BASE_STONE_OVERWORLD)) &&
                 state.getDestroySpeed(level, pos) > 0
         },
 

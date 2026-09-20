@@ -33,6 +33,7 @@ createNewItem('amber_visage', { stackSize: 16, rarity: 'epic', lang: { "en_us": 
 createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_ru": "Ядро Стола" } })
 createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксовое Ядро Стола" } })
 createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
+createNewItem('copper_sulfate', {lang: { "ru_ru": "Медный купорос" } })
 
 createNewItem('dev_pen')
 createNewItem('nbt_pen')

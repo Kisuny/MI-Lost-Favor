@@ -3,7 +3,7 @@ const customImbuementCraft = (event, args) => {
         "type": "ars_nouveau:imbuement",
         "input": args.input,
         "output": {
-            "count": args.amount || 1,
+            "count": args.count || 1,
             "id": args.output
         },
         "pedestalItems": args.pedestalItems || [],

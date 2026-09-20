@@ -73,6 +73,7 @@ LootJS.modifiers(event => {
         { item_name: 'tide:fish_bone' },
         { item_name: 'minecraft:enchanting_table' },
         { item_name: 'ars_nouveau:ritual_containment' },
+        { item_name: 'toxony:poison_paste' },
         { item_name: /tide:.*_fishing_rod/, },
     ]
     

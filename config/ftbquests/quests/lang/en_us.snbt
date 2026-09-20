@@ -372,7 +372,6 @@
 		"{@pagebreak}"
 		"<keyword>Фамильяр Викси</keyword> - персональный компаньон-баф, отдельный от рабочей Викси, которая автоматически крафтит предметы и зелья у котла Викси."
 	]
-	quest.072F0916C2364762.quest_desc: ["What's an altar without something to pray to?"]
 	quest.0743F72CB6464DAF.quest_desc: [
 		"A single player can have up to <keyword>9 active chunk loaders</keyword> "
 		""
@@ -608,7 +607,11 @@
 		""
 		"Кроме того в награду вы получаете линзу, которая отображает множество полезной информации, нужен ли редстоун для работы блока/механизмы, какие слоты принимает сторона машины и т.д. "
 	]
-	quest.0D70E9CF33C567A7.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>llama</keyword>."]
+	quest.0D70E9CF33C567A7.quest_desc: [
+		"Drops from a <poison>poisoned</poison> <keyword>llama</keyword>."
+		"{@pagebreak}"
+		"Выпадает из <poison>отравленной</poison> <keyword>ламы</keyword>."
+	]
 	quest.0DBD3895EE949921.quest_desc: [
 		"Ah, a pact that binds forever is a heavy thing. <curse><pulse base=0.6 amplitude=0.9>Geasa</pulse></curse> are potent, yes, and can achieve powerful effects, but their downsides are constant companions. These pacts can be <keyword>forsworn</keyword> on the <fire>Brazier</fire>, allowing you to decide what price you are willing to pay."
 		""
@@ -827,13 +830,13 @@
 		""
 		"This process may be long, but it is invaluable to know what these natural affinities are. I need to inject these solutions into a strong enough subject, and when its at its lowest point, the affinity associated with the poisonous ingredient will reveal itself to me!"
 		""
-		"By holding the solution in one hand and then the needle in the other, I can put the solution inside the needle. Then once I find a very strong subject, I must bring their life to the brink (poison should do the trick). Once its at an inch of its life, that's when I use the needle."
+		"By holding the solution in one hand and then the needle in the other, I can put the solution inside the needle. Then once I find a very strong subject, I must bring their life to the brink (<poison>poison</poison> should do the trick). Once its at an inch of its life, that's when I use the needle."
 		"{@pagebreak}"
 		"Теперь мне понадобится инструмент, чтобы вводить микстуру в подопытного. Им может стать медицинский шприц. Он просто идеален для этих целей!"
 		""
-		"Процесс может быть долгим, но очень важно знать, каковы эти свойства. Мне нужно ввести раствор в достаточно сильного подопытного, и когда концентрация яда в нём достигнет минимума, мне откроется свойство этого ингредиента!"
+		"Процесс может быть долгим, но очень важно знать, каковы эти свойства. Мне нужно ввести раствор в достаточно сильного подопытного, и когда концентрация <poison>яда</poison> в нём достигнет минимума, мне откроется свойство этого ингредиента!"
 		""
-		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (яд должен подойти), и в этот момент воспользоваться иглой."
+		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (<poison>яд</poison> должен подойти), и в этот момент воспользоваться иглой."
 	]
 	quest.11C14EFDFC29588D.quest_desc: ["4 нижних слота каждый под свою жижу сверху результат сплава"]
 	quest.11DEF9AD7861A0C9.quest_desc: ["Combine the Stone Mortar and Pestle with a Brick in a crafting grid to make Brick Dust"]
@@ -906,9 +909,9 @@
 	quest.1391787E47AA2306.quest_subtitle: "Extra &4♡♡♡♡♡♡♡♡♡♡♡&r"
 	quest.13A5CB86A2E90249.quest_subtitle: "<warning><shake amplitude=0.4 frequency=1.4>⚠⚠⚠⚠WARNING!!!!⚠⚠⚠⚠</shake></warning>"
 	quest.13C6412ED5BDC06F.quest_desc: [
-		"With toxic paste in my arsenal, I can improve on the techniques of the ancients. I can create a more powerful blend using it. But I must be incredibly careful. My system may not be able to handle it if I haven't already grown accustomed."
+		"With <poison>toxic paste</poison> in my arsenal, I can improve on the techniques of the ancients. I can create a more powerful blend using it. But I must be incredibly careful. My system may not be able to handle it if I haven't already grown accustomed."
 		"{@pagebreak}"
-		"Имея в своем арсенале токсичную пасту, я могу усовершенствовать технику древних. С ее помощью я могу создать более мощную смесь. Но я должен быть невероятно осторожен. Мой организм может не выдержать, если я еще не привык."
+		"Имея в своем арсенале <poison>токсичную пасту</poison>, я могу усовершенствовать технику древних. С ее помощью я могу создать более мощную смесь. Но я должен быть невероятно осторожен. Мой организм может не выдержать, если я еще не привык."
 	]
 	quest.140CCC62298F33D3.quest_desc: [
 		"<keyword>Hostile Neural Networks</keyword> allows you to train <keyword>data models</keyword> and run <property>simulations</property>, producing <keyword>mob predictions</keyword>, which can be used to generate mob loot."
@@ -973,15 +976,15 @@
 	]
 	quest.14BEA9C248D4F905.quest_desc: ["The Otherwhere Chalk is used for Rites having to do with teleportation and The End."]
 	quest.14D2170A0424A902.quest_desc: [
-		"Toxic paste is extremely unstable. But its volatility will be the highlight of my next alchemical instrument! Potions are too refined, too narrow. By creating a flask that yields greater capacity and putting a little bit of the paste inside, I can make a much more efficient and possibly renewable potion container."
+		"<poison>Toxic paste</poison> is extremely unstable. But its volatility will be the highlight of my next alchemical instrument! Potions are too refined, too narrow. By creating a flask that yields greater capacity and putting a little bit of the paste inside, I can make a much more efficient and possibly renewable potion container."
 		""
-		"To fill the flask, I need another potion in my other hand and then use the flask to pour it inside. Because of how unstable the paste is, I will be able to create a toxic formula that can refill its contents without recompositing another potion. This makes the potions renewable! However, because of its toxins, it has a high toxicity level. Monitor your toxicity levels with the toxicity gauge after repeated use of the flask."
+		"To fill the flask, I need another potion in my other hand and then use the flask to pour it inside. Because of how unstable the paste is, I will be able to create a <poison>toxic formula</poison> that can refill its contents without recompositing another potion. This makes the potions renewable! However, because of its <poison>toxins</poison>, it has a high <poison>toxicity level</poison>. Monitor your toxicity levels with the toxicity gauge after repeated use of the flask."
 		""
 		"What's even more curious is, if I ever get my hands on an enchanting book that roughly translates to «Refill», then the contents of my empty flask will be refilled just by sleeping through the night! Although I have my qualms with enchanting, I cannot deny its utility in my experiments!"
 		"{@pagebreak}"
-		"Токсичная паста крайне нестабильна. Но ее нестабильность станет изюминкой моего следующего алхимического инструмента! Зелья слишком изысканны, слишком узки. Создав колбу большей вместимости и поместив внутрь немного пасты, я смогу сделать гораздо более эффективный и, возможно, возобновляемый сосуд для зелий."
+		"<poison>Токсичная паста</poison> крайне нестабильна. Но ее нестабильность станет изюминкой моего следующего алхимического инструмента! Зелья слишком изысканны, слишком узки. Создав колбу большей вместимости и поместив внутрь немного пасты, я смогу сделать гораздо более эффективный и, возможно, возобновляемый сосуд для зелий."
 		""
-		"Чтобы наполнить колбу, мне нужно взять в другую руку еще одно зелье, а затем с помощью колбы налить его внутрь. Поскольку паста нестабильна, я смогу создать токсичную формулу, которая сможет пополнить ее содержимое без повторного приготовления другого зелья. Таким образом, зелья станут возобновляемыми! Однако из-за токсинов у него высокий уровень токсичности. После многократного использования колбы следите за уровнем токсичности с помощью индикатора токсичности."
+		"Чтобы наполнить колбу, мне нужно взять в другую руку еще одно зелье, а затем с помощью колбы налить его внутрь. Поскольку паста нестабильна, я смогу создать <poison>токсичную формулу</poison>, которая сможет пополнить ее содержимое без повторного приготовления другого зелья. Таким образом, зелья станут возобновляемыми! Однако из-за <poison>токсинов</poison> у него высокий уровень <poison>токсичности</poison>. После многократного использования колбы следите за уровнем токсичности с помощью индикатора токсичности."
 		""
 		"Что еще более любопытно, так это то, что если мне в руки попадет зачарованная книга, которая переводится как «Refill», то содержимое моей пустой фляги будет пополняться, просто если я просплю всю ночь! Хотя у меня есть свои сомнения по поводу зачарования, я не могу отрицать его полезность в моих экспериментах!"
 	]
@@ -1047,9 +1050,9 @@
 		"Улучшение для <keyword>Spirit Crucible</keyword>, использующее превосходный проводник из Astral Weave: <property>+100% скорости фокусировки</property>, причём <positive>без каких-либо недостатков</positive> - простое и честное ускорение."
 	]
 	quest.16FC0392E5AA51D8.quest_desc: [
-		"There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from TOXIN, I have managed to create this cloudy gas that weakens and blinds in a small area."
+		"There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from <poison>TOXIN</poison>, I have managed to create this cloudy gas that weakens and blinds in a small area."
 		"{@pagebreak}"
-		"Я усовершенствовал состав масла усталости с помощью токсина и получил смесь способную, при резком изменении внутренней энергии, взрываться газом со свойствами предшественника."
+		"Я усовершенствовал состав масла усталости с помощью <poison>токсина</poison> и получил смесь способную, при резком изменении внутренней энергии, взрываться газом со свойствами предшественника."
 	]
 	quest.1714360882474479.quest_subtitle: "New items interaction"
 	quest.172C44614A53FAAF.quest_desc: [
@@ -1108,13 +1111,13 @@
 		"<keyword>Earth Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам поблизости, используя силу школы <keyword>Земли</keyword>."
 	]
 	quest.188484018F12E3B9.quest_desc: [
-		"We won't stop at simple oils. We have many more possibilities <shake amplitude=0.35 frequency=1.2>FOR MORE POTENCY!</shake> Toxin has opened new doors to its potential. <shake amplitude=0.35 frequency=1.2>AND WE WILL USE THEM GRACIOUSLY!</shake>"
+		"We won't stop at simple oils. We have many more possibilities <shake amplitude=0.35 frequency=1.2>FOR MORE POTENCY!</shake> <poison>Toxin</poison> has opened new doors to its potential. <shake amplitude=0.35 frequency=1.2>AND WE WILL USE THEM GRACIOUSLY!</shake>"
 		""
-		"Using my alembic we can INFUSE our pots from just basic clay into a <pulse base=0.6 amplitude=0.9>BEAUTIFUL TOXIN POT</pulse>. Many of my more potent oils will need this enhanced container. For the simple clay pot was WEAK and shattered under the effects of toxin."
+		"Using my alembic we can INFUSE our pots from just basic clay into a <poison>BEAUTIFUL TOXIN POT</poison>. Many of my more potent oils will need this enhanced container. For the simple clay pot was WEAK and shattered under the effects of <poison>toxin</poison>."
 		"{@pagebreak}"
-		"Мы не остановимся на простых маслах. У нас гораздо больше возможностей <shake amplitude=0.35 frequency=1.2>ДЛЯ ПОВЫШЕНИЯ ЭФФЕКТИВНОСТИ!</shake> Токсин открыл новые возможности для раскрытия их потенциала. <shake amplitude=0.35 frequency=1.2>И Я ИСПОЛЬЗУЮ ЕГО С ПОЛЬЗОЙ!</shake>"
+		"Мы не остановимся на простых маслах. У нас гораздо больше возможностей <shake amplitude=0.35 frequency=1.2>ДЛЯ ПОВЫШЕНИЯ ЭФФЕКТИВНОСТИ!</shake> <poison>Токсин</poison> открыл новые возможности для раскрытия их потенциала. <shake amplitude=0.35 frequency=1.2>И Я ИСПОЛЬЗУЮ ЕГО С ПОЛЬЗОЙ!</shake>"
 		""
-		"Используя перегонный аппарат, мы можем изготавливать <pulse base=0.6 amplitude=0.9>МИЛЫЕ ТОКСИЧНЫЕ ГОРШОЧКИ</pulse>. Для самых мощных масел подходит только этот вариант. Простой глиняный горшочек трескался под воздействием токсина."
+		"Используя перегонный аппарат, мы можем изготавливать <poison>МИЛЫЕ ТОКСИЧНЫЕ ГОРШОЧКИ</poison>. Для самых мощных масел подходит только этот вариант. Простой глиняный горшочек трескался под воздействием <poison>токсина</poison>."
 	]
 	quest.189B4E6D9B694118.title: "Tier III Altar"
 	quest.18ACEAD795560C00.quest_desc: [
@@ -1215,15 +1218,15 @@
 	quest.19E126BBEF648662.quest_desc: [
 		"However, there is a catch to mutagens. Not all of them are the same, and the one I get greatly depends on the INGREDIENTS I CONSUME. As such when eating substances or making blends, I must be mindful of which ones I eat, as each ingredient contains an affinity for one aspect of the world that another may not share."
 		""
-		"To discover these affinities within poisonous ingredients, I must do one of two things. Either I consume it in great quantities until I figure it out, which is quite painful. Or something much more efficient. I've learned a way to deconstruct an ingredients chemical makeup into a more pure substance. And watch its effects as a third party spectator."
+		"To discover these affinities within <poison>poisonous ingredients</poison>, I must do one of two things. Either I consume it in great quantities until I figure it out, which is quite painful. Or something much more efficient. I've learned a way to deconstruct an ingredients chemical makeup into a more pure substance. And watch its effects as a third party spectator."
 		""
-		"Redstone is quite sensitive to the toxic components of poisonous ingredients, as seen used by my toxicity gauge. First, I must turn it into a mixture."
+		"Redstone is quite sensitive to the <poison>toxic components</poison> of poisonous ingredients, as seen used by my toxicity gauge. First, I must turn it into a mixture."
 		"{@pagebreak}"
-		"Однако не все токсины одинаковы. Полученный мутаген зависит от ИНГИРЕДИЕНТОВ в смесях. Что значит, что я должен помнить какие ингредиенты я употребляю, ибо они могут иметь разные эффекты."
+		"Однако не все <poison>токсины</poison> одинаковы. Полученный мутаген зависит от ИНГИРЕДИЕНТОВ в смесях. Что значит, что я должен помнить какие ингредиенты я употребляю, ибо они могут иметь разные эффекты."
 		""
-		"Чтобы обнаружить это сходство в ядовитых ингредиентах, я должен сделать одно из двух. Либо я потреблю каждый в больших количествах, пока не разберусь, что довольно болезненно. Либо нечто гораздо более эффективное. Я научился превращать химический состав ингредиентов в более чистое вещество. И наблюдать за его действием со стороны."
+		"Чтобы обнаружить это сходство в <poison>ядовитых ингредиентах</poison>, я должен сделать одно из двух. Либо я потреблю каждый в больших количествах, пока не разберусь, что довольно болезненно. Либо нечто гораздо более эффективное. Я научился превращать химический состав ингредиентов в более чистое вещество. И наблюдать за его действием со стороны."
 		""
-		"Редстоун довольно чувствителен к токсинам, что можно понять из принципа работы измерителя токсичности. Но сначала я должен превратить его в смесь."
+		"Редстоун довольно чувствителен к <poison>токсинам</poison>, что можно понять из принципа работы измерителя токсичности. Но сначала я должен превратить его в смесь."
 	]
 	quest.19F4ECE3B256B396.quest_desc: [
 		"Sharp as a needle... literally (and performs as one too)"
@@ -1463,8 +1466,12 @@
 	quest.1EE1B8261F4D85A0.quest_desc: ["<property>Glowing</property> for <keyword>30 seconds</keyword>."]
 	quest.1F491D4829884C61.quest_desc: [
 		"Could be used to <positive>mine pure resources</positive>, as well as some <warning>fragile blocks</warning>"
+		""
+		"Like the <keyword>Resonance</keyword> enchantment, this pickaxe also allows you to mine <warning>spawners</warning>."
 		"{@pagebreak}"
 		"Может использоваться для <positive>добычи чистых ресурсов</positive>, а также некоторых <warning>хрупких блоков</warning>."
+		""
+		"Как и зачарование <keyword>Resonance</keyword>, эта кирка также позволяет добывать <warning>спавнеры</warning>."
 	]
 	quest.1F54D7E5A24DE6BC.quest_desc: ["Launches you in the direction you're looking for 50EV from your Anima reserves. Useful for improved flights, but good luck improvising a landing."]
 	quest.1F5A20E076FA270E.quest_desc: [
@@ -1644,7 +1651,11 @@
 		"{@pagebreak}"
 		"<keyword>Fire Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам, используя силу школы <keyword>Огня</keyword>, чтобы поджечь их."
 	]
-	quest.24A65F3E0C177185.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>slime</keyword>."]
+	quest.24A65F3E0C177185.quest_desc: [
+		"Drops from a <poison>poisoned</poison> <keyword>slime</keyword>."
+		"{@pagebreak}"
+		"Выпадает из <poison>отравленного</poison> <keyword>слайма</keyword>."
+	]
 	quest.24AF6D706483C8CC.quest_desc: [
 		"It works with both fluids and items at the same time!"
 		"{@pagebreak}"
@@ -1925,9 +1936,13 @@
 		"<keyword>Фильтры зачарования</keyword> — позволяют занести определенные зачарования в <warning>черный список</warning> в таблице зачарования. Блоки, которые предоставляют эту характеристику, могут быть использованы для удаления нежелательных зачарований из пула."
 	]
 	quest.2BB85B5FB4A2E943.quest_desc: [
-		"Grows in <magic>dark forests</magic>."
+		"Grows in <nature>dark forests</nature>."
 		""
 		"You can also buy from <keyword>Wandering Trader</keyword>"
+		"{@pagebreak}"
+		"Растёт в <nature>тёмных лесах</nature>."
+		""
+		"Также можно купить у <keyword>странствующего торговца</keyword>."
 	]
 	quest.2BC8FC3AC76D89BA.quest_desc: ["Mod adds a complete <property>fast travel system</property> built around glowing portal doorways called <keyword>Timedoors</keyword>, powered by a unique <keyword>Chronon energy system</keyword> with <keyword>generators</keyword>, <keyword>cells</keyword>, and <keyword>batteries</keyword>"]
 	quest.2C3B7F7495AF3169.quest_desc: [
@@ -2308,13 +2323,13 @@
 		""
 		"The alembic can refine weaker potions into their stronger variants without the need of additional material, purifying the liquid to a more concentrated form. Although this is not enough! The alembic has gotten them closer to binding with my paste, but its not pure enough."
 		""
-		"I think I can devise a solution that uses only the most concentrated form of Netherwart! To unlock what poison has to offer us! I've collected all my notes, stood through consecutive nights. My mind has been awake past dusk more times than I can count. With the glass vials and my toxic paste..."
+		"I think I can devise a solution that uses only the most concentrated form of Netherwart! To unlock what <poison>poison</poison> has to offer us! I've collected all my notes, stood through consecutive nights. My mind has been awake past dusk more times than I can count. With the glass vials and my <poison>toxic paste</poison>..."
 		"{@pagebreak}"
 		"Алембик. Старый прибор в академии, который помогает очищать жидкости подобно тому, как тигель очищает твердые тела. Однако они хрупкие. Чтобы он работал, мне нужен более прочный стеклообразный материал. Я знаю, что он находится в Аду. Я должен найти его!"
 		""
 		"Алембик может перерабатывать слабые зелья в их более сильные варианты без использования дополнительных материалов. Очищая жидкость до более концентрированной формы. Хотя зелья недостаточно! Алембик приблизил их к связыванию с моей пастой, но оно недостаточно чистое."
 		""
-		"Думаю, я смогу придумать решение, в котором будет использована только самая концентрированная форма Бородавок! Чтобы открыть то, что может предложить нам яд! Я собрал все свои записи, простоял несколько ночей подряд. Мой разум бодрствовал до наступления сумерек больше раз, чем я могу сосчитать. Со стеклянными флаконами и ядовитой пастой..."
+		"Думаю, я смогу придумать решение, в котором будет использована только самая концентрированная форма Бородавок! Чтобы открыть то, что может предложить нам <poison>яд</poison>! Я собрал все свои записи, простоял несколько ночей подряд. Мой разум бодрствовал до наступления сумерек больше раз, чем я могу сосчитать. Со стеклянными флаконами и <poison>ядовитой пастой</poison>..."
 	]
 	quest.35B625450DD3545F.quest_desc: [
 		"The <keyword>Basic Magnet</keyword> <positive>picks up Items and Experience</positive> within a <property>5 block range</property> of the player!"
@@ -2323,11 +2338,17 @@
 	]
 	quest.35CD3646C82BCCBD.quest_desc: ["To move Spiritus across distances, place a Spira Infernalis: each tick it probes a position 16 blocks away in each of the four cardinal directions, and if the probed position holds more Spiritus than the pylon's own chunk, the pylon pulls a small fraction of the difference. The flow equilibrates rather than draining the source dry, so chain pylons from a saturated chunk toward your worksite to ferry Aura over long distances."]
 	quest.360B3C7F848E2965.quest_desc: [
-		"Grows in <magic>crimson forests</magic>."
+		"Grows in <nature>crimson forests</nature>."
 		""
 		"You can also buy from <keyword>Wandering Trader</keyword>."
 		""
 		"You can also get it from <keyword>Piglin Barter</keyword>."
+		"{@pagebreak}"
+		"Растёт в <nature>багровых лесах</nature>."
+		""
+		"Также можно купить у <keyword>странствующего торговца</keyword>."
+		""
+		"Также можно получить через <keyword>обмен с пиглинами</keyword>."
 	]
 	quest.3643627887D2AD11.quest_desc: ["Хранилище эмбера"]
 	quest.365584F44AB28CB8.quest_desc: [
@@ -2559,9 +2580,13 @@
 		"Улучшение для <keyword>Spirit Crucible</keyword>, использующее Живую Плоть для подражания естественному исцелению: <property>+15% Restoration Chance</property> - при завершении каждого цикла фокусировки есть шанс <positive>немного починить</positive> <keyword>Impetus</keyword>. Однако уже расколотый Impetus этим <curse>не вылечить</curse>."
 	]
 	quest.3A5FB1474CC41CED.quest_desc: [
-		"Grows in <magic>taiga biomes</magic> (the cold ones)."
+		"Grows in <nature>taiga biomes</nature> (the cold ones)."
 		""
 		"You can also buy from <keyword>Wandering Trader</keyword>"
+		"{@pagebreak}"
+		"Растёт в <nature>таёжных биомах</nature> (холодных)."
+		""
+		"Также можно купить у <keyword>странствующего торговца</keyword>."
 	]
 	quest.3AA18F4C134E7ACB.quest_desc: [
 		"Fuel for <keyword>Transmogrification Table</keyword>!"
@@ -2771,11 +2796,11 @@
 	quest.3DABDF05A0D06EF5.quest_desc: ["The <named>Time Twister</named> tracks the player's personal timeline and allows <positive>backtracking</positive> to previous locations. It records dimension changes and death events, presenting them on a radial display. Selecting a point <positive>teleports</positive> the player back to that location and <warning>erases all timeline entries</warning> after the chosen point."]
 	quest.3DC2BBC787CEBAAB.quest_desc: ["If you can finish this gateway, you might just get some useful items."]
 	quest.3DD74B48583DB8C0.quest_desc: [
-		"Many parts of a mob, including ourselves, react differently when <warning>toxins</warning> are introduced in their bodies. This makes &6unique ingredients&r when certain mobs are <warning>afflicted</warning>. As such, we should extract them. When a mob <warning>dies while being afflicted with poison</warning>, they can drop &6special ingredients&r. However, a sword is too crude to extract them. As such, they must die by a <keyword>scalpel</keyword> in order to carefully extract these &6valuable parts&r."
+		"Many parts of a mob, including ourselves, react differently when <poison>toxins</poison> are introduced in their bodies. This makes &6unique ingredients&r when certain mobs are <poison>afflicted</poison>. As such, we should extract them. When a mob <poison>dies while being afflicted with poison</poison>, they can drop &6special ingredients&r. However, a sword is too crude to extract them. As such, they must die by a <keyword>scalpel</keyword> in order to carefully extract these &6valuable parts&r."
 		"{@pagebreak}"
-		"Многие части мобов, включая нас самих, по-разному реагируют на попадание <warning>токсинов</warning> в их организм. Таким образом, при поражении определенных мобов получаются &6уникальные ингредиенты&r. Поэтому мы должны добыть их. "
+		"Многие части мобов, включая нас самих, по-разному реагируют на попадание <poison>токсинов</poison> в их организм. Таким образом, при поражении определенных мобов получаются &6уникальные ингредиенты&r. Поэтому мы должны добыть их. "
 		""
-		"Когда моб <warning>умирает, будучи пораженным ядом</warning>, с него могут выпасть &6особые предметы&r. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти &6ценные ингредиенты&r, их нужно умертвить <keyword>скальпелем</keyword>."
+		"Когда моб <poison>умирает, будучи пораженным ядом</poison>, с него могут выпасть &6особые предметы&r. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти &6ценные ингредиенты&r, их нужно умертвить <keyword>скальпелем</keyword>."
 	]
 	quest.3E0B415C278B8E33.quest_desc: ["The cornerstone of the Eidolon mod. A guidebook, spellbook and prayerbook all in one."]
 	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
@@ -2794,11 +2819,19 @@
 		"Если всё таки какая-то из жидкостей вырвалась наружу, данная баночка поможет вернуть всё на своё место! С некоторыми нюансами."
 	]
 	quest.3EA8B5DE633E228F.quest_desc: [
-		"Use the Touch of Darkness spell on a pewter inlay. "
+		"Use the <curse>Touch of Darkness</curse> spell on a <property>pewter inlay</property>."
 		""
-		"If not yet unlocked, try experimenting with the mod. It unlocks progressively."
+		"<warning>If not yet unlocked</warning>, try experimenting with the mod - it unlocks progressively."
+		"{@pagebreak}"
+		"Используйте заклинание <curse>Прикосновение тьмы</curse> на <property>оловянной инкрустации</property>."
+		""
+		"<warning>Если заклинание ещё не открыто</warning>, попробуйте поэкспериментировать с модом - он открывается постепенно."
 	]
-	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>squid</keyword>."]
+	quest.3EB7176D4C776E9D.quest_desc: [
+		"Drops from a <poison>poisoned</poison> <keyword>squid</keyword>."
+		"{@pagebreak}"
+		"Выпадает из <poison>отравленного</poison> <keyword>кальмара</keyword>."
+	]
 	quest.3EF93CF3A40BE38E.quest_desc: [
 		"The <keyword>Air Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Air</keyword> school."
 		"{@pagebreak}"
@@ -2872,11 +2905,11 @@
 	quest.40FBEE2028873C00.quest_desc: [
 		"My clothes are torn to bits. I feel my own academy attire does not reflect my truest desires. I must attain a new wardrobe. And I have the perfect material to make it out of."
 		""
-		"A perfect amalgamation of poison and purpose. The leather of animals felt missing something tactile and comfortable. By imbuing it with my toxin, I can create a hardened and more durable material. And it smells of progress all over!"
+		"A perfect amalgamation of <poison>poison</poison> and purpose. The leather of animals felt missing something tactile and comfortable. By imbuing it with my <poison>toxin</poison>, I can create a hardened and more durable material. And it smells of progress all over!"
 		"{@pagebreak}"
 		"Моя академическая роба изорвана в клочья. Мне стоит обновиться... И у меня есть просто замечательный материал для пошива!"
 		""
-		"Идеальное сочетание яда и моей цели. Мне кажется, что обычной коже не хватает удобства и элегантности. Добавив в неё токсин, я могу сделать её прочнее. Попахивает прогрессом!"
+		"Идеальное сочетание <poison>яда</poison> и моей цели. Мне кажется, что обычной коже не хватает удобства и элегантности. Добавив в неё <poison>токсин</poison>, я могу сделать её прочнее. Попахивает прогрессом!"
 	]
 	quest.4103FC453FC2CCC0.quest_desc: [
 		"Now you are &9worthy&r!"
@@ -3255,29 +3288,29 @@
 		"с смесью получается <fire>свеча</fire> который <positive>ускоряет рост растений</positive>"
 	]
 	quest.4932A126EA1016F2.quest_desc: [
-		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays <keyword>useful information</keyword> about my bodies chemical composition. The <positive>toxicity</positive> gauge examines 3 important parts of my body. The <positive>toxins</positive>, my <warning>tolerance</warning>, and the &9thresholds&r I can reach!"
+		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays <keyword>useful information</keyword> about my bodies chemical composition. The <poison>toxicity</poison> gauge examines 3 important parts of my body. The <poison>toxins</poison>, my <property>tolerance</property>, and the &9thresholds&r I can reach!"
 		""
-		"The &2green bar&r displays how much toxins are <warning>already in my system</warning>. Of course &oeating&r or &odrinking&r <positive>poisonous</positive> substances will increase this amount. And if my diet is poison-less, the toxins will very <warning>slowly dissipate</warning> from my body till none remains. But that isn't the goal is it?"
+		"The &2green bar&r displays how much toxins are <poison>already in my system</poison>. Of course &oeating&r or &odrinking&r <poison>poisonous</poison> substances will increase this amount. And if my diet is poison-less, the toxins will very <poison>slowly dissipate</poison> from my body till none remains. But that isn't the goal is it?"
 		""
 		"And as much as I want to &5experiment&r with my own chemical makeup, the <warning>flesh</warning> is weak and the body needs to adapt. The &5purple&r bar displays my bodily tolerance of toxin I can hold. Exceed this amount and there are &4dangerous&r consequences. I must make sure the &2green&r bar &4never reaches the apex of the purple&r."
 		""
-		"The <warning>tolerance</warning> is quite important. In order to be able to hold onto more <positive>toxins</positive>, this &5purple bar&r must increase. And to do that, the body must adapt to the <positive>poisonous substances</positive>. This means I must consume more to slowly build up that bar."
+		"The <property>tolerance</property> is quite important. In order to be able to hold onto more <poison>toxins</poison>, this &5purple bar&r must increase. And to do that, the body must adapt to the <poison>poisonous substances</poison>. This means I must consume more to slowly build up that bar."
 		""
-		"If however, I were to intake a large amount of <positive>toxins</positive> that exceed my tolerance, then the skull indicator will turn <warning>red</warning>. This tells me <warning><shake amplitude=0.35 frequency=1.2>I must detox myself</shake></warning> as soon as possible as any &4extra bit of toxin will consume me&r, making any bit of my autonomy permanently removed. I can detox with &2regeneration potions&r or a &2golden apple&r!"
+		"If however, I were to intake a large amount of <poison>toxins</poison> that exceed my tolerance, then the skull indicator will turn <warning>red</warning>. This tells me <warning><shake amplitude=0.35 frequency=1.2>I must detox myself</shake></warning> as soon as possible as any &4extra bit of toxin will consume me&r, making any bit of my autonomy permanently removed. I can detox with &2regeneration potions&r or a &2golden apple&r!"
 		""
 		"This &5device&r will help me greatly in my research to come. Especially when I review my research on &5ancient poison rituals&r and &2blends&r. I need to ensure I don't get too excited and keep this device on me at all times so I don't go over my limits. I have a feeling this device will evolve from being less of a precaution to a wonderful future prospect."
 		"{@pagebreak}"
-		"Чтобы воспользоваться &5устройством&r, достаточно просто подержать его в &oруке&r (или в качестве &lбезделушке&r на себе), и на экране появится индикатор, отображающий <keyword>полезную информацию</keyword> о химическом составе моего тела. Прибор для определения <positive>токсичности</positive> исследует три важные части моего тела. <positive>Токсины</positive>, моя <warning>переносимость</warning> и &9порог&r, которого я могу достичь!"
+		"Чтобы воспользоваться &5устройством&r, достаточно просто подержать его в &oруке&r (или в качестве &lбезделушке&r на себе), и на экране появится индикатор, отображающий <keyword>полезную информацию</keyword> о химическом составе моего тела. Прибор для определения <poison>токсичности</poison> исследует три важные части моего тела. <poison>Токсины</poison>, моя <property>переносимость</property> и &9порог&r, которого я могу достичь!"
 		""
-		"&2Зеленая полоска&r показывает, сколько токсинов <warning>уже находится в моем организме</warning>. Конечно, употребление в &oпищу&r или &oпитье&r <positive>ядовитых веществ</positive> увеличит это количество. А если в моем рационе нет ядов, то токсины будут очень медленно выводиться из организма, пока их не останется совсем. Но ведь цель не в этом, не так ли?"
+		"&2Зеленая полоска&r показывает, сколько токсинов <poison>уже находится в моем организме</poison>. Конечно, употребление в &oпищу&r или &oпитье&r <poison>ядовитых веществ</poison> увеличит это количество. А если в моем рационе нет ядов, то токсины будут очень медленно выводиться из организма, пока их не останется совсем. Но ведь цель не в этом, не так ли?"
 		""
-		"И как бы мне ни хотелось &5поэкспериментировать&r с собственным химическим составом, <warning>плоть</warning> слаба, а тело должно адаптироваться. &5Фиолетовая полоса&r показывает допустимое количество <positive>токсина</positive>, которое я могу выдержать в организме. Превышение этого количества &4чревато опасными последствиями&r. Я должен следить за тем, чтобы зеленая полоска &4никогда не достигала вершины фиолетовой&r."
+		"И как бы мне ни хотелось &5поэкспериментировать&r с собственным химическим составом, <warning>плоть</warning> слаба, а тело должно адаптироваться. &5Фиолетовая полоса&r показывает допустимое количество <poison>токсина</poison>, которое я могу выдержать в организме. Превышение этого количества &4чревато опасными последствиями&r. Я должен следить за тем, чтобы зеленая полоска &4никогда не достигала вершины фиолетовой&r."
 		""
-		"<warning>Толерантность</warning> очень важна. Для того чтобы организм мог удерживать больше <positive>токсинов</positive>, эта &5фиолетовая полоска&r должна увеличиваться. А для этого организм должен адаптироваться к <positive>ядовитым веществам</positive>. Это значит, что я должен потреблять больше, чтобы медленно наращивать эту планку."
+		"<property>Толерантность</property> очень важна. Для того чтобы организм мог удерживать больше <poison>токсинов</poison>, эта &5фиолетовая полоска&r должна увеличиваться. А для этого организм должен адаптироваться к <poison>ядовитым веществам</poison>. Это значит, что я должен потреблять больше, чтобы медленно наращивать эту планку."
 		""
-		"Если же я потребляю большое количество <positive>токсинов</positive>, превышающее мою толерантность, то индикатор черепа становится &4красным&r. Это говорит о том, что <shake amplitude=0.35 frequency=1.2>&4я должен как можно скорее избавиться от токсинов&r</shake>, так как любая лишняя капля токсина поглотит меня, навсегда лишив самостоятельности. Вывести токсины из организма можно с помощью &2зелий регенерации&r или &2золотого яблока&r!"
+		"Если же я потребляю большое количество <poison>токсинов</poison>, превышающее мою толерантность, то индикатор черепа становится <warning>красным</warning>. Это говорит о том, что <warning><shake amplitude=0.35 frequency=1.2>я должен как можно скорее избавиться от токсинов</shake></warning>, так как любая лишняя капля токсина поглотит меня, навсегда лишив самостоятельности. Вывести токсины из организма можно с помощью &2зелий регенерации&r или &2золотого яблока&r!"
 		""
-		"Этот &5прибор&r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать &5древние ритуалы&r и <positive>смеси ядов</positive>. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
+		"Этот &5прибор&r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать &5древние ритуалы&r и <poison>смеси ядов</poison>. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
 	]
 	quest.494CA2A1D1FB6CF4.quest_desc: [
 		"The <keyword>Alakarkinos</keyword> is a crab familiar that digs through material to find rare items. Bind it to a chest with the <keyword>Dominion Wand</keyword>, and it will search anything placed within 3 blocks around that chest, as long as <property>source</property> is available nearby."
@@ -3566,7 +3599,11 @@
 		"• <keyword>Щелкните правой кнопкой мыши</keyword> по куриному гнезду, чтобы собрать яйца."
 		"• Вы также можете использовать <keyword>воронку</keyword>, чтобы достать яйца из гнезда."
 	]
-	quest.50A70151E50EC5DC.quest_desc: ["Drops from <keyword>bogged</keyword>."]
+	quest.50A70151E50EC5DC.quest_desc: [
+		"Drops from <keyword>bogged</keyword>."
+		"{@pagebreak}"
+		"Выпадает из <keyword>богера</keyword>."
+	]
 	quest.50B6CF21E2CD0206.quest_desc: [
 		"A reinforced Respawn Anchor for those who don't trust glowstone. Right-click it to call this place home - just like the vanilla block."
 		""
@@ -3622,9 +3659,13 @@
 	]
 	quest.51E3EA7E70ECE842.quest_subtitle: "New ore"
 	quest.51F468219CD1AC52.quest_desc: [
-		"Use the Touch of Light spell on a gold inlay to create this."
+		"Use the <positive>Touch of Light</positive> spell on a <property>gold inlay</property> to create this."
 		""
-		"If you don't have the Touch of Light spell yet, experiment with the mod to unlock it."
+		"<warning>If you don't have the Touch of Light spell yet</warning>, experiment with the mod to unlock it."
+		"{@pagebreak}"
+		"Используйте заклинание <positive>Прикосновение света</positive> на <property>золотой инкрустации</property>, чтобы создать этот предмет."
+		""
+		"<warning>Если у вас ещё нет заклинания Прикосновение света</warning>, поэкспериментируйте с модом, чтобы открыть его."
 	]
 	quest.51FBF0B7A92E3FD8.quest_desc: [
 		"- The <keyword>Advanced Magnet</keyword> <positive>picks up Items and Experience</positive> within a <property>configurable range</property>!"
@@ -3815,7 +3856,7 @@
 	]
 	quest.5879B627CB54AF43.quest_desc: ["Projects a column of protective force (roughly 6 blocks tall, 3 wide) above it, reflecting any projectile that passes through back the way it came. Requires an Tabula Animata and a diamond."]
 	quest.58AC66315C962012.quest_desc: [
-		"To mutate a Toxony plant, it has to be planted on Poisonous Farmland and must not be fully matured."
+		"To mutate a <nature>Toxony plant</nature>, it has to be planted on <poison>Poisonous Farmland</poison> and must not be fully matured."
 		""
 		"The Lost Journal's \"evolved plants\" section will show what elemental affinity is needed to evolve which plant. To identify what item has what affinity, hold a magnifying glass in your offhand while either rapidly eating 20 of the same item or injecting it into a near-death enemy via redstone solution."
 		""
@@ -4175,9 +4216,9 @@
 		""
 		"I must admit, my pants were the most tattered of all my attire. So having fresh leggings is a euphoric feeling. Otherwise, the breeze would have made my skin crawl and my nights freezing."
 		""
-		"To avoid having fungus feet, some nice pair of boots will be invaluable. Always a fresh pair, except these ones are already infused with my toxin. Almost feel like my feet are being cleansed by the fumes. Plus the pain."
+		"To avoid having fungus feet, some nice pair of boots will be invaluable. Always a fresh pair, except these ones are already infused with my <poison>toxin</poison>. Almost feel like my feet are being cleansed by the fumes. Plus the pain."
 		""
-		"Finally, the centerpiece of the suit. The mask that personified the period. The Plague Mask. Although I've placed a convenient hood over it for days of rain. This mask will greatly benefit the sometimes overpowering toxins."
+		"Finally, the centerpiece of the suit. The mask that personified the period. The Plague Mask. Although I've placed a convenient hood over it for days of rain. This mask will greatly benefit the sometimes overpowering <poison>toxins</poison>."
 		""
 		"The plague doctor outfit has a rather potent effect. When afflicted by a hazardous ailment such as slowness or blindness, the effect won't last as long. The amount of time the effect is reduced by depends on how many parts of the outfit I am wearing. It can even nullify the effect completely, if it's already applied for a very short span of time."
 		"{@pagebreak}"
@@ -4185,9 +4226,9 @@
 		""
 		"Должен признать, что брюки были самыми потрепанными из всего моего наряда. Поэтому обновка вызывает у меня приятное чувство. Иначе от дуновения ветерка у меня по коже бегали мурашки, а по ночам я мёрз как собака."
 		""
-		"Чтобы избежать появления грибка на ногах, пара хороших ботинок будет незаменима. Всегда свежая пара, за исключением того, что она пропитана токсином. Такое ощущение, будто мои ноги очищаются от испарений. Плюс боль."
+		"Чтобы избежать появления грибка на ногах, пара хороших ботинок будет незаменима. Всегда свежая пара, за исключением того, что она пропитана <poison>токсином</poison>. Такое ощущение, будто мои ноги очищаются от испарений. Плюс боль."
 		""
-		"И наконец главная деталь костюма! Маска, олицетворявшая тот период, чумная маска. Я даже накинул на нее удобный капюшон на случай дождя. Но это не главное. Она поможет мне справиться, если я переборщу с токсинами."
+		"И наконец главная деталь костюма! Маска, олицетворявшая тот период, чумная маска. Я даже накинул на нее удобный капюшон на случай дождя. Но это не главное. Она поможет мне справиться, если я переборщу с <poison>токсинами</poison>."
 		""
 		"Костюм чумного доктора обладает довольно приятным дополнением. Время действия негативных эффектов снижается в зависимости от количества частей одежды на вас. Это может даже полностью свести эффект на нет."
 	]
@@ -4255,7 +4296,7 @@
 		""
 		"&6Схема прибора&r, утерянного множество лет назад."
 		""
-		"Того, что полностью раскрывает <warning>силу токсина</warning>."
+		"Того, что полностью раскрывает <poison>силу токсина</poison>."
 		""
 		"Как он работает??"
 		"Грубо переводя \"В Мендус мы одновременно наливаем ликёр жизни.\""
@@ -4598,7 +4639,11 @@
 		""
 		"{image:milf:textures/quest_pic/incense_altar_example.png width:100 height:100 align:center fit:true}"
 	]
-	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a <warning>poisoned</warning> <keyword>wolf</keyword>."]
+	quest.68C1714F3E9B2CA2.quest_desc: [
+		"Drops from a <poison>poisoned</poison> <keyword>wolf</keyword>."
+		"{@pagebreak}"
+		"Выпадает из <poison>отравленного</poison> <keyword>волка</keyword>."
+	]
 	quest.68C66411366AEECE.quest_desc: ["Cosmetic"]
 	quest.68EFB14826CB715C.quest_desc: [
 		"Her eyes will gaze upon this work,"
@@ -4985,9 +5030,13 @@
 		"<keyword>Шестеренка</keyword> - означает что квест является <warning><shake amplitude=0.3 frequency=1.0>основным</shake></warning> и вам необходимо его пройти!"
 	]
 	quest.70798A5B74FDB203.quest_desc: [
-		"Grows in <magic>swamps</magic>."
+		"Grows in <nature>swamps</nature>."
 		""
 		"You can also buy from <keyword>Wandering Trader</keyword>"
+		"{@pagebreak}"
+		"Растёт в <nature>болотах</nature>."
+		""
+		"Также можно купить у <keyword>странствующего торговца</keyword>."
 	]
 	quest.70A0A078B94FF034.quest_desc: [
 		"This chapter provides an easy way to find almost all the necessary <keyword>utility items</keyword>, or to read about what they’re used for."
@@ -5222,7 +5271,7 @@
 		"<keyword>Ring of Alchemical Mastery</keyword> манипулирует зельями в вашей крови - каждый раз, когда вы собираете <warning>дух</warning>, он <curse>частично ослабляет отрицательные эффекты</curse>, одновременно <positive>продлевая положительные</positive>."
 	]
 	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by right clicking cobblestone on stone."]
-	quest.75DE98178AF407BD.quest_desc: ["The most basic element of Toxony."]
+	quest.75DE98178AF407BD.quest_desc: ["The most basic element of <poison>Toxony</poison>."]
 	quest.7635ED9379E95573.quest_desc: ["Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"]
 	quest.76A00C0FCE2D91E1.quest_desc: [
 		"The <keyword>distillery</keyword> allows witches to <positive>separate materials</positive> into their components by utilising differences in boiling and condensing points."
@@ -5466,7 +5515,7 @@
 		""
 		"<keyword>1 Ethereal Source</keyword> -> <keyword>8 liquid source</keyword> "
 	]
-	quest.7F3F56C04BFCF7BD.quest_desc: ["Necessary for creating some Toxony materials."]
+	quest.7F3F56C04BFCF7BD.quest_desc: ["Necessary for creating some <poison>Toxony</poison> materials."]
 	quest.7F7B0FF0BAC90638.quest_desc: [
 		"This is a simple example to help you understand how to <positive>assign labels</positive> and what the <keyword>mod syntax</keyword> is."
 		""
@@ -5725,4 +5774,102 @@
 	task.7EECE34CF3EE7B8C.title: "Any Logs"
 	task.7FA316644840FB37.title: "Any Pillar Base Blocks"
 	task.7FCEEDA6DB984E36.title: "Focus Tiers and Topologies"
+	quest.32D5E840A562CEE1.quest_desc: [
+		"Death's rest is sacred - the <bone>Vestige of the Bone Paladin</bone> is a replica of the grave paladins' silver armor, worn to honor the dead and let their souls rest instead of being called back into <curse>undeath</curse>."
+		""
+		"While worn as a full set, it <positive>regenerates a portion of your ethereal hearts</positive> over time, and grants <positive>immunity to poison and withering</positive>."
+		"{@pagebreak}"
+		"Покой смерти священен - <bone>Реликвия костяного паладина</bone> - это реплика серебряных доспехов паладинов могил, которую носят в память об умерших, позволяя их душам покоиться, а не быть призванными обратно в <curse>нежить</curse>."
+		""
+		"Надетая полным комплектом, она <positive>восстанавливает часть эфемерных сердец</positive> со временем и даёт <positive>иммунитет к яду и иссушению</positive>."
+	]
+	quest.6C8985F958D5AD63.quest_desc: [
+		"The <named>All-Rounder</named> is a theurgical utility tool forged from the power of both deities - hold a goblet while killing a creature with it, and the goblet <blood>fills with that creature's blood</blood>."
+		""
+		"Pleasing a deity imbues the tool with their power, but favoring one side <curse>strips away the other's blessing</curse>. Only a truly <magic>balanced</magic> reputation lets you keep both powers at once."
+		"{@pagebreak}"
+		"<named>Мастер на все руки</named> - универсальный теургический инструмент, выкованный силой обеих божеств - держите кубок и убейте этим инструментом существо, и кубок <blood>наполнится его кровью</blood>."
+		""
+		"Если вы угождаете божеству, инструмент пропитывается его силой, но перекос в сторону одного из них <curse>лишает вас благословения другого</curse>. Лишь по-настоящему <magic>сбалансированная</magic> репутация позволяет сохранить обе силы одновременно."
+	]
+	quest.7C9146A2C8B9A6E8.quest_desc: [
+		"The dark lord is pleased, and has revealed some knowledge of their otherworldly appearance - now represented in this <curse>Elder Statue</curse>. It allows far <magic>more powerful dark rites</magic> than your crude straw effigy ever could."
+		"{@pagebreak}"
+		"Тёмный владыка доволен и приоткрыл толику знаний о своём потустороннем облике - теперь воплощённом в этой <curse>Древней статуе</curse>. Она позволяет проводить куда <magic>более мощные тёмные ритуалы</magic>, чем грубое соломенное чучело."
+	]
+	quest.072F0916C2364762.quest_desc: [
+		"To speak with the powers that be, an <named>icon</named> is needed first. The <bone>Straw Effigy</bone> is crude, but once placed atop an <keyword>altar</keyword> it gives your prayers something to <magic>direct themselves at</magic> - maybe they'll be heard."
+		"{@pagebreak}"
+		"Чтобы обратиться к высшим силам, сперва нужен <named>идол</named>. <bone>Соломенное чучело</bone> грубое, но, будучи установленным на <keyword>алтарь</keyword>, даёт вашим молитвам цель, к которой они <magic>устремятся</magic> - быть может, их услышат."
+	]
+	quest.3EBBEBAC9F6421D8.quest_desc: [
+		"The <wind>Gravity Belt</wind> makes you feel almost as light as air - equipped, your fall <positive>slows dramatically</positive> and you take only a <keyword>quarter</keyword> of the usual fall damage."
+		"{@pagebreak}"
+		"<wind>Пояс гравитации</wind> делает вас почти невесомым - надев его, вы падаете гораздо <positive>медленнее</positive> и получаете лишь <keyword>четверть</keyword> обычного урона от падения."
+	]
+	quest.1DCCE2A2A3F63A00.quest_desc: [
+		"The <named>Raven Cloak</named> unfurls into a pair of wings. Tap or hold <keyword>jump</keyword> to flap and glide through the air, then hold <keyword>sneak</keyword> to land <wave>gently</wave>."
+		"{@pagebreak}"
+		"<named>Плащ ворона</named> разворачивается в пару крыльев. Нажимайте или удерживайте <keyword>прыжок</keyword>, чтобы махать ими и парить в воздухе, а затем удерживайте <keyword>присед</keyword> для <wave>мягкой</wave> посадки."
+	]
+	quest.01CFD7A3F5DA8CF9.quest_desc: [
+		"<shake><warning>Handle with care!</warning></shake> The <curse>Glass Hand</curse> doubles the damage dealt by all your attacks - but any damage you take is <shake>quintupled</shake> in return."
+		"{@pagebreak}"
+		"<shake><warning>Обращайтесь с осторожностью!</warning></shake> <curse>Стеклянная рука</curse> удваивает урон от всех ваших атак - но получаемый вами урон увеличивается в <shake>пять раз</shake>."
+	]
+	quest.502236E7EFA1AEAF.quest_desc: [
+		"The <magic>Bonechill Wand</magic> chills the soul of anything it strikes - the target is gripped by an <curse>icy hold</curse> that prevents all health regeneration, just like the claws of a wraith."
+		"{@pagebreak}"
+		"<magic>Ледяной посох</magic> замораживает душу того, по кому попадает - цель охватывает <curse>ледяная хватка</curse>, полностью блокирующая восстановление здоровья, точно так же, как когти скитальца."
+	]
+	quest.34203AB89226074C.quest_desc: [
+		"The <blood>Sword of Sapping</blood> deals <curse>wither</curse> damage on top of its normal strike, and any damage dealt this way <positive>heals</positive> you back."
+		"{@pagebreak}"
+		"<blood>Меч истощения</blood> дополнительно наносит урон <curse>иссушения</curse> поверх обычного удара, и весь урон, нанесённый таким образом, <positive>исцеляет</positive> вас."
+	]
+	quest.0F356021B63ADB59.quest_desc: [
+		"The <blood>Sanguine Amulet</blood> quietly stores up the health you regenerate while at full hearts, then releases that <positive>stored healing</positive> the moment you're hurt."
+		"{@pagebreak}"
+		"<blood>Кровавый амулет</blood> незаметно копит здоровье, которое вы восстанавливаете на полном запасе сердец, а затем высвобождает этот <positive>запас исцеления</positive> в момент, когда вы получаете урон."
+	]
+	quest.5DA979250B4A1A07.quest_desc: [
+		"This glove-shaped charm, the <named>Prestigious Palm</named>, lets you touch what once escaped your grasp - roughly <property>doubling</property> your interaction range."
+		"{@pagebreak}"
+		"Этот амулет в форме перчатки, <named>Изысканная длань</named>, позволяет дотянуться до того, что раньше было вне досягаемости - примерно <property>удваивая</property> вашу дальность взаимодействия."
+	]
+	quest.3EE94A0DEB14D5FA.quest_desc: [
+		"Crafted from the bones of the dead and the heart of a wraith, the <soul>Soulbone Amulet</soul> grants <soul>ethereal hearts</soul> upon slaying an enemy - up to 10 by default, consumed before your normal health."
+		"{@pagebreak}"
+		"Созданный из костей мёртвых и сердца скитальца, <soul>Костяной амулет души</soul> даёт <soul>эфемерные сердца</soul> за убийство врага - до 10 по умолчанию, они расходуются раньше обычного здоровья."
+	]
+	quest.4C886369932230C9.quest_desc: [
+		"A showcase of the power hidden within a shadow gem - the <magic>Soulfire Wand</magic> unleashes <fire>brilliant bolts of energy</fire> on every swing, dealing hefty damage to almost any target."
+		"{@pagebreak}"
+		"Демонстрация силы, скрытой в теневом самоцвете - <magic>Посох душепламени</magic> выпускает <fire>яркие сгустки энергии</fire> при каждом взмахе, нанося солидный урон почти любой цели."
+	]
+	quest.231C0353572C1573.quest_desc: [
+		"The <named>Void Amulet</named> is imbued with supernatural defense - when worn, incoming projectiles are <positive>absorbed and nullified</positive> instead of striking you, though it needs about ten seconds to recharge afterwards."
+		"{@pagebreak}"
+		"<named>Амулет пустоты</named> пропитан сверхъестественной защитой - надев его, вы <positive>поглощаете и обнуляете</positive> летящие в вас снаряды, но после срабатывания ему нужно около десяти секунд на перезарядку."
+	]
+	quest.0FE7E31E80DC2D6E.quest_desc: [
+		"An exceedingly heavy belt - the <bone>Resolute Belt</bone> renders you almost <property>immovable</property>. Any knockback you receive is not only negated, but <curse>reflected</curse> back onto your attacker."
+		"{@pagebreak}"
+		"Чрезвычайно тяжёлый пояс - <bone>Стойкий пояс</bone> делает вас почти <property>неподвижным</property>. Любая отдача, которую вы получаете, не просто гасится, а <curse>отражается</curse> обратно на атакующего."
+	]
+	quest.3C14473106D2F262.quest_desc: [
+		"Worn on the head, the <magic>Mind-Shielding Plate</magic> resists unwanted intrusions into your mind, grants <positive>immunity to nausea</positive>, and lets you retain three quarters of your levels on death."
+		"{@pagebreak}"
+		"Надетая на голову, <magic>Пластина защиты разума</magic> сопротивляется нежелательным вторжениям в ваш разум, даёт <positive>иммунитет к тошноте</positive> и позволяет сохранить три четверти уровней опыта при смерти."
+	]
+	quest.6F177833E7CDE370.quest_desc: [
+		"Inscribed with runes and sanctifying salts, the <magic>Warded Mail</magic> bolsters any armor worn over it, letting it <positive>defend against magical attacks</positive> that would normally pierce straight through."
+		"{@pagebreak}"
+		"Расписанная рунами и освящёнными солями, <magic>Заговорённая кольчуга</magic> усиливает любую броню, надетую поверх неё, позволяя ей <positive>защищаться от магических атак</positive>, которые обычно проходят насквозь."
+	]
+	quest.36D75A04F01D52AF.quest_desc: [
+		"An ancient ring, <named>Archangel's Sight</named> guides your ranged attacks toward the <keyword>nearest target</keyword> automatically. <property>Shift-click</property> the ring to cycle its mode - ignore other players, or aim only at enemies."
+		"{@pagebreak}"
+		"Древнее кольцо <named>Взор архангела</named> автоматически наводит ваши дальнобойные атаки на <keyword>ближайшую цель</keyword>. <property>Шифт-клик</property> по кольцу переключает режим - игнорировать других игроков или целиться только во врагов."
+	]
 }

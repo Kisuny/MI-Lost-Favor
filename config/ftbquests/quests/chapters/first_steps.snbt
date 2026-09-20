@@ -3053,7 +3053,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6E4207765D29DD7B"
-				item: { count: 1, id: "milf:hoe_head_pattern" }
+				item: { components: { "ftbquests:missing_item": "milf:hoe_head_pattern" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -3066,7 +3066,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "60825E7A78CC1DB3"
-				item: { count: 1, id: "milf:shovel_head_pattern" }
+				item: { components: { "ftbquests:missing_item": "milf:shovel_head_pattern" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -0.5d

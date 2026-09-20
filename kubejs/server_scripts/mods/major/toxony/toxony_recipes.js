@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             { "tag": "toxony:ingredients/poisonous" },
             { "tag": "toxony:plants/poisonous"},
-            { "item": "spectrum:vegetal"},
+            { "item": "spectrum:midnight_chip"},
             { "item": "enchanted:foul_fume"},
         ],
         output: "toxony:poison_paste",
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{tag:"toxony:ingredients/poisonous"}],
             [{tag:"toxony:plants/poisonous"}],
-            [{item:"spectrum:vegetal"}],
+            [{item:"spectrum:midnight_chip"}],
             [{item:"enchanted:foul_fume"}],
         ],
         outputItems:[[{item:"toxony:poison_paste"}, 2]]

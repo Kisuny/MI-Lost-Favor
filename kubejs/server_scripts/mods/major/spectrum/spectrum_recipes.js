@@ -265,6 +265,16 @@ ServerEvents.recipes(event => {
         })
     });
 
+    customImbuementCraft(event, {
+        input: { "item": "milf:copper_sulfate" },
+        pedestalItems: [
+            {"item": "spectrum:blue_pigment"},
+            {"item": "spectrum:orange_pigment"},
+        ],
+        output: "spectrum:raw_azurite",
+        count: 6,
+        source: 2000
+    });
 
 })
 

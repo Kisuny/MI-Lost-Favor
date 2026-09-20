@@ -7,8 +7,6 @@ let $AABB = Java.loadClass("net.minecraft.world.phys.AABB")
 let $RenderSystem = Platform.isClientEnvironment() ? Java.loadClass("com.mojang.blaze3d.systems.RenderSystem") : null
 // let $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem")
 let $Axis = Java.loadClass("com.mojang.math.Axis")
-/** @type {typeof import("net.minecraft.world.item.ItemStack").$ItemStack } */
-let $ItemStack  = Java.loadClass("net.minecraft.world.item.ItemStack")
 
 NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
     event.registerBelowAll("milf:upgrades_tooltips", (gui, delta) => global.renderUpgradesTooltips(gui, delta))

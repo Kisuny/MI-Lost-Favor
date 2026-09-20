@@ -77,7 +77,7 @@ createNewItem('firestarter', {
     stackSize: 1,
     use: {
         animation: "bow",
-        duration: 80,
+        duration: 50,
         finishUsing(itemStack, level, player) {
 
             if (level.isClientSide()) return itemStack

@@ -33,354 +33,354 @@ let $HashMap = Java.loadClass("java.util.HashMap")
 
 
 
-createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shovels"] }, 
-    () => new JavaAdapter($SteamDrillItem, {
+// createNewJavaItem("clunky_drill", { tag: ["minecraft:pickaxes", "minecraft:shovels"] }, 
+//     () => new JavaAdapter($SteamDrillItem, {
 
-        isHorizontal(stack){
-            let component = stack.get($DataComponents.CUSTOM_DATA)
-            if (!component) return false
-            let compoundTag = component.copyTag()
-            if (!compoundTag.contains("milf:isHorizontal")) return false
-            return compoundTag.getBoolean("milf:isHorizontal")
-        },
+//         isHorizontal(stack){
+//             let component = stack.get($DataComponents.CUSTOM_DATA)
+//             if (!component) return false
+//             let compoundTag = component.copyTag()
+//             if (!compoundTag.contains("milf:isHorizontal")) return false
+//             return compoundTag.getBoolean("milf:isHorizontal")
+//         },
 
-        appendHoverText(stack, context, tooltip, flag) {
-            let data = this.getTooltipImage(stack).get()
+//         appendHoverText(stack, context, tooltip, flag) {
+//             let data = this.getTooltipImage(stack).get()
 
-            // Water %
-            tooltip.add($MIText.WaterPercent.text(data.waterLevel()).setStyle($TextHelper.WATER_TEXT))
-            let barWater = Math.ceil(data.waterLevel() / 5)
-            let barVoid = 20 - barWater
-            // Water bar
-            tooltip.add(Component.literal("|".repeat(barWater)).setStyle($TextHelper.WATER_TEXT)
-                .append(Component.literal("|".repeat(barVoid)).setStyle($Style.EMPTY["withColor(net.minecraft.network.chat.TextColor)"]($TextColor.fromRgb(0x6b6b6b)))))
-            // Fuel left
-            if (data.burnTicks() > 0) {
-                tooltip.add($MIText.SecondsLeft.text((data.burnTicks() / 100).toFixed()).setStyle($TextHelper.GRAY_TEXT))
-            }
-            // 1x3 state
-            tooltip.add($MIText.MiningArea
-                .text((this.isActivated(stack) ? Text.of("1x3 ").append((this.isHorizontal(stack) ? Text.translatable("milf.clunky_drill.horizontal") : Text.translatable("milf.clunky_drill.vertical"))) : $MIText.MiningArea1x1.text()).setStyle($TextHelper.NUMBER_TEXT))
-                .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
-            // Silk touch
-            tooltip.add($MIText.SilkTouchState
-                .text((!stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($MIComponents.SILK_TOUCH, true) ? $MIText.Deactivated.text().setStyle($TextHelper.RED)
-                    : $MIText.Activated.text().setStyle($TextHelper.GREEN)))
-                .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
-        },
+//             // Water %
+//             tooltip.add($MIText.WaterPercent.text(data.waterLevel()).setStyle($TextHelper.WATER_TEXT))
+//             let barWater = Math.ceil(data.waterLevel() / 5)
+//             let barVoid = 20 - barWater
+//             // Water bar
+//             tooltip.add(Component.literal("|".repeat(barWater)).setStyle($TextHelper.WATER_TEXT)
+//                 .append(Component.literal("|".repeat(barVoid)).setStyle($Style.EMPTY["withColor(net.minecraft.network.chat.TextColor)"]($TextColor.fromRgb(0x6b6b6b)))))
+//             // Fuel left
+//             if (data.burnTicks() > 0) {
+//                 tooltip.add($MIText.SecondsLeft.text((data.burnTicks() / 100).toFixed()).setStyle($TextHelper.GRAY_TEXT))
+//             }
+//             // 1x3 state
+//             tooltip.add($MIText.MiningArea
+//                 .text((this.isActivated(stack) ? Text.of("1x3 ").append((this.isHorizontal(stack) ? Text.translatable("milf.clunky_drill.horizontal") : Text.translatable("milf.clunky_drill.vertical"))) : $MIText.MiningArea1x1.text()).setStyle($TextHelper.NUMBER_TEXT))
+//                 .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
+//             // Silk touch
+//             tooltip.add($MIText.SilkTouchState
+//                 .text((!stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($MIComponents.SILK_TOUCH, true) ? $MIText.Deactivated.text().setStyle($TextHelper.RED)
+//                     : $MIText.Activated.text().setStyle($TextHelper.GREEN)))
+//                 .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
+//         },
 
-        getArea(level, player, stack, rayTraceOnly) {
+//         getArea(level, player, stack, rayTraceOnly) {
 
-            let should3by1 = this.isActivated(stack) && !player.isShiftKeyDown()
+//             let should3by1 = this.isActivated(stack) && !player.isShiftKeyDown()
 
-            if (!should3by1) {
-                return null
-            }
-
-
-            let rayTraceResult = this._rayTraceSimple(level, player, 0)
-
-            if (rayTraceResult.getType() == $HitResult$Type.BLOCK) {
-                let blockResult = rayTraceResult
-                let facing = blockResult.direction
-                let lookVec = player.getViewVector(0)
-                return this._getArea(blockResult.getBlockPos(), facing, lookVec, stack)
-            }
-            return null
-
-        },
-
-        _getArea(pos, hitFace, lookVec, stack) {
-            let faceIndex = hitFace.ordinal()
-            let right = $GeometryHelper.FACE_RIGHT[faceIndex]
-            let up = $GeometryHelper.FACE_UP[faceIndex]
-            let isSideFace = hitFace.step().y() == 0
-            if (isSideFace) {
-                let side = this.isHorizontal(stack) ? right : up
-                let rx = side.x(), ry = side.y(), rz = side.z()
-                return new $SteamDrillItem.Area(pos, pos.offset(rx, ry, rz), pos.offset(-rx, -ry, -rz))
-            }
-
-            let dotRight = lookVec.x * right.x() + lookVec.y * right.y() + lookVec.z * right.z()
-            let dotUp = lookVec.x * up.x() + lookVec.y * up.y() + lookVec.z * up.z()
-
-            let dirX, dirY, dirZ
-            if (this.isHorizontal(stack)) {
-                if (Math.abs(dotRight) <= Math.abs(dotUp)) {
-                    let sign = dotRight > 0 ? 1 : -1
-                    dirX = sign * right.x()
-                    dirY = sign * right.y()
-                    dirZ = sign * right.z()
-                } else {
-                    let sign = dotUp > 0 ? 1 : -1
-                    dirX = sign * up.x()
-                    dirY = sign * up.y()
-                    dirZ = sign * up.z()
-                }
-            } else {
-                if (Math.abs(dotRight) >= Math.abs(dotUp)) {
-                    let sign = dotRight > 0 ? 1 : -1
-                    dirX = sign * right.x()
-                    dirY = sign * right.y()
-                    dirZ = sign * right.z()
-                } else {
-                    let sign = dotUp > 0 ? 1 : -1
-                    dirX = sign * up.x()
-                    dirY = sign * up.y()
-                    dirZ = sign * up.z()
-                }
-            }
+//             if (!should3by1) {
+//                 return null
+//             }
 
 
-            return new $SteamDrillItem.Area(
-                pos,
-                pos.offset(dirX, dirY, dirZ),
-                pos.offset(-dirX, -dirY, -dirZ)
-            )
-        },
+//             let rayTraceResult = this._rayTraceSimple(level, player, 0)
 
-        _rayTraceSimple(world, living, partialTicks) {
-            let blockReachDistance = living.blockInteractionRange()
-            let vec3d = living.getEyePosition(partialTicks)
-            let vec3d1 = living.getViewVector(partialTicks)
-            let vec3d2 = vec3d.add(vec3d1.x * blockReachDistance, vec3d1.y * blockReachDistance, vec3d1.z * blockReachDistance)
-            return world.clip(new $ClipContext(vec3d, vec3d2, $ClipContext$Block.OUTLINE, $ClipContext$Fluid.NONE, living))
-        }
+//             if (rayTraceResult.getType() == $HitResult$Type.BLOCK) {
+//                 let blockResult = rayTraceResult
+//                 let facing = blockResult.direction
+//                 let lookVec = player.getViewVector(0)
+//                 return this._getArea(blockResult.getBlockPos(), facing, lookVec, stack)
+//             }
+//             return null
 
-    }, new $Item$Properties().stacksTo(1))
-)
+//         },
 
-createNewJavaItem("big_bulky_drill", { tag: ["minecraft:pickaxes"] },
-    () => new JavaAdapter($SteamDrillItem, {
+//         _getArea(pos, hitFace, lookVec, stack) {
+//             let faceIndex = hitFace.ordinal()
+//             let right = $GeometryHelper.FACE_RIGHT[faceIndex]
+//             let up = $GeometryHelper.FACE_UP[faceIndex]
+//             let isSideFace = hitFace.step().y() == 0
+//             if (isSideFace) {
+//                 let side = this.isHorizontal(stack) ? right : up
+//                 let rx = side.x(), ry = side.y(), rz = side.z()
+//                 return new $SteamDrillItem.Area(pos, pos.offset(rx, ry, rz), pos.offset(-rx, -ry, -rz))
+//             }
 
-        appendHoverText(stack, context, tooltip, flag) {
-            let data = this.getTooltipImage(stack).get()
+//             let dotRight = lookVec.x * right.x() + lookVec.y * right.y() + lookVec.z * right.z()
+//             let dotUp = lookVec.x * up.x() + lookVec.y * up.y() + lookVec.z * up.z()
 
-            // Water %
-            tooltip.add($MIText.WaterPercent.text(data.waterLevel()).setStyle($TextHelper.WATER_TEXT))
-            let barWater = Math.ceil(data.waterLevel() / 5)
-            let barVoid = 20 - barWater
-            // Water bar
-            tooltip.add(Component.literal("|".repeat(barWater)).setStyle($TextHelper.WATER_TEXT)
-                .append(Component.literal("|".repeat(barVoid)).setStyle($Style.EMPTY["withColor(net.minecraft.network.chat.TextColor)"]($TextColor.fromRgb(0x6b6b6b)))))
-            // Fuel left
-            if (data.burnTicks() > 0) {
-                tooltip.add($MIText.SecondsLeft.text((data.burnTicks() / 100).toFixed()).setStyle($TextHelper.GRAY_TEXT))
-            }
-            // 1x3 state
-            tooltip.add($MIText.MiningArea
-                .text((this.isActivated(stack) ? Text.of("5x3 ") : $MIText.MiningArea1x1.text()).setStyle($TextHelper.NUMBER_TEXT))
-                .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
-            // Silk touch
-            tooltip.add($MIText.SilkTouchState
-                .text((!stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($MIComponents.SILK_TOUCH, true) ? $MIText.Deactivated.text().setStyle($TextHelper.RED)
-                    : $MIText.Activated.text().setStyle($TextHelper.GREEN)))
-                .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
-            tooltip.add(Text.translatable("milf.big_bulky_drill.tooltip"))
-        },
-
-        getArea(level, player, stack, rayTraceOnly) {
-
-            let should5by1 = this.isActivated(stack) && !player.isShiftKeyDown()
-
-            if (!should5by1) {
-                return null
-            }
+//             let dirX, dirY, dirZ
+//             if (this.isHorizontal(stack)) {
+//                 if (Math.abs(dotRight) <= Math.abs(dotUp)) {
+//                     let sign = dotRight > 0 ? 1 : -1
+//                     dirX = sign * right.x()
+//                     dirY = sign * right.y()
+//                     dirZ = sign * right.z()
+//                 } else {
+//                     let sign = dotUp > 0 ? 1 : -1
+//                     dirX = sign * up.x()
+//                     dirY = sign * up.y()
+//                     dirZ = sign * up.z()
+//                 }
+//             } else {
+//                 if (Math.abs(dotRight) >= Math.abs(dotUp)) {
+//                     let sign = dotRight > 0 ? 1 : -1
+//                     dirX = sign * right.x()
+//                     dirY = sign * right.y()
+//                     dirZ = sign * right.z()
+//                 } else {
+//                     let sign = dotUp > 0 ? 1 : -1
+//                     dirX = sign * up.x()
+//                     dirY = sign * up.y()
+//                     dirZ = sign * up.z()
+//                 }
+//             }
 
 
-            let rayTraceResult = this._rayTraceSimple(level, player, 0)
+//             return new $SteamDrillItem.Area(
+//                 pos,
+//                 pos.offset(dirX, dirY, dirZ),
+//                 pos.offset(-dirX, -dirY, -dirZ)
+//             )
+//         },
 
-            if (rayTraceResult.getType() == $HitResult$Type.BLOCK) {
-                let blockResult = rayTraceResult
-                let facing = blockResult.direction
-                let lookVec = player.getViewVector(0)
-                let area = this._getArea(blockResult.getBlockPos(), facing, lookVec)
-                if (this.checkIfMineableInArea(level, area, player)) return area
+//         _rayTraceSimple(world, living, partialTicks) {
+//             let blockReachDistance = living.blockInteractionRange()
+//             let vec3d = living.getEyePosition(partialTicks)
+//             let vec3d1 = living.getViewVector(partialTicks)
+//             let vec3d2 = vec3d.add(vec3d1.x * blockReachDistance, vec3d1.y * blockReachDistance, vec3d1.z * blockReachDistance)
+//             return world.clip(new $ClipContext(vec3d, vec3d2, $ClipContext$Block.OUTLINE, $ClipContext$Fluid.NONE, living))
+//         }
+
+//     }, new $Item$Properties().stacksTo(1))
+// )
+
+// createNewJavaItem("big_bulky_drill", { tag: ["minecraft:pickaxes"] },
+//     () => new JavaAdapter($SteamDrillItem, {
+
+//         appendHoverText(stack, context, tooltip, flag) {
+//             let data = this.getTooltipImage(stack).get()
+
+//             // Water %
+//             tooltip.add($MIText.WaterPercent.text(data.waterLevel()).setStyle($TextHelper.WATER_TEXT))
+//             let barWater = Math.ceil(data.waterLevel() / 5)
+//             let barVoid = 20 - barWater
+//             // Water bar
+//             tooltip.add(Component.literal("|".repeat(barWater)).setStyle($TextHelper.WATER_TEXT)
+//                 .append(Component.literal("|".repeat(barVoid)).setStyle($Style.EMPTY["withColor(net.minecraft.network.chat.TextColor)"]($TextColor.fromRgb(0x6b6b6b)))))
+//             // Fuel left
+//             if (data.burnTicks() > 0) {
+//                 tooltip.add($MIText.SecondsLeft.text((data.burnTicks() / 100).toFixed()).setStyle($TextHelper.GRAY_TEXT))
+//             }
+//             // 1x3 state
+//             tooltip.add($MIText.MiningArea
+//                 .text((this.isActivated(stack) ? Text.of("5x3 ") : $MIText.MiningArea1x1.text()).setStyle($TextHelper.NUMBER_TEXT))
+//                 .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
+//             // Silk touch
+//             tooltip.add($MIText.SilkTouchState
+//                 .text((!stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($MIComponents.SILK_TOUCH, true) ? $MIText.Deactivated.text().setStyle($TextHelper.RED)
+//                     : $MIText.Activated.text().setStyle($TextHelper.GREEN)))
+//                 .setStyle($TextHelper.GRAY_TEXT.withItalic(false)))
+//             tooltip.add(Text.translatable("milf.big_bulky_drill.tooltip"))
+//         },
+
+//         getArea(level, player, stack, rayTraceOnly) {
+
+//             let should5by1 = this.isActivated(stack) && !player.isShiftKeyDown()
+
+//             if (!should5by1) {
+//                 return null
+//             }
+
+
+//             let rayTraceResult = this._rayTraceSimple(level, player, 0)
+
+//             if (rayTraceResult.getType() == $HitResult$Type.BLOCK) {
+//                 let blockResult = rayTraceResult
+//                 let facing = blockResult.direction
+//                 let lookVec = player.getViewVector(0)
+//                 let area = this._getArea(blockResult.getBlockPos(), facing, lookVec)
+//                 if (this.checkIfMineableInArea(level, area, player)) return area
                 
-            }
-            return null
+//             }
+//             return null
 
-        },
+//         },
 
-        checkIfMineableInArea(world,  area,  miner){
-            if (area == null) return true
-            let areAllMineable = true
-            let centerState = world.getBlockState(area.center())
-            if (!this._isAreaMineableBlock(world, centerState, area.center())) {
-                return false
-            }
-            BlockPos.betweenClosed(area.corner1(), area.corner2()).forEach(blockPos => {
-                if(area.center().equals(blockPos)) {
-                    return
-                }
+//         checkIfMineableInArea(world,  area,  miner){
+//             if (area == null) return true
+//             let areAllMineable = true
+//             let centerState = world.getBlockState(area.center())
+//             if (!this._isAreaMineableBlock(world, centerState, area.center())) {
+//                 return false
+//             }
+//             BlockPos.betweenClosed(area.corner1(), area.corner2()).forEach(blockPos => {
+//                 if(area.center().equals(blockPos)) {
+//                     return
+//                 }
 
-                let tempState = world.getBlockState(blockPos)
-                if (!this._isAreaMineableBlock(world, tempState, blockPos)) {
-                    //console.log(tempState);
-                    areAllMineable = false
-                }
-            })
+//                 let tempState = world.getBlockState(blockPos)
+//                 if (!this._isAreaMineableBlock(world, tempState, blockPos)) {
+//                     //console.log(tempState);
+//                     areAllMineable = false
+//                 }
+//             })
 
-            return areAllMineable
-        },
+//             return areAllMineable
+//         },
 
-        _isAreaMineableBlock( level,  state,  pos) {
-            return state.isAir() ||
-                (state["is(net.minecraft.tags.TagKey)"]($BlockTags.MINEABLE_WITH_PICKAXE) && 
-                state["is(net.minecraft.tags.TagKey)"]($BlockTags.BASE_STONE_OVERWORLD)) &&
-                state.getDestroySpeed(level, pos) > 0
-        },
+//         _isAreaMineableBlock( level,  state,  pos) {
+//             return state.isAir() ||
+//                 (state["is(net.minecraft.tags.TagKey)"]($BlockTags.MINEABLE_WITH_PICKAXE) && 
+//                 state["is(net.minecraft.tags.TagKey)"]($BlockTags.BASE_STONE_OVERWORLD)) &&
+//                 state.getDestroySpeed(level, pos) > 0
+//         },
 
-        _getArea(pos, hitFace, lookVec) {
-            let faceIndex = hitFace.ordinal()
-            let right = $GeometryHelper.FACE_RIGHT[faceIndex]
-            let up = $GeometryHelper.FACE_UP[faceIndex]
-            let isSideFace = hitFace.step().y() == 0
-            if (isSideFace) {
-                right = right.scale(2)
-                let rx = right.x(), ry = right.y(), rz = right.z()
-                let ux = up.x(), uy = up.y(), uz = up.z()
-                return new $SteamDrillItem.Area(
-                    pos, 
-                    pos.offset(rx + ux, ry + uy, rz + uz), 
-                    pos.offset(-rx - ux, -ry - uy, -rz - uz)
-                )
-            }
+//         _getArea(pos, hitFace, lookVec) {
+//             let faceIndex = hitFace.ordinal()
+//             let right = $GeometryHelper.FACE_RIGHT[faceIndex]
+//             let up = $GeometryHelper.FACE_UP[faceIndex]
+//             let isSideFace = hitFace.step().y() == 0
+//             if (isSideFace) {
+//                 right = right.scale(2)
+//                 let rx = right.x(), ry = right.y(), rz = right.z()
+//                 let ux = up.x(), uy = up.y(), uz = up.z()
+//                 return new $SteamDrillItem.Area(
+//                     pos, 
+//                     pos.offset(rx + ux, ry + uy, rz + uz), 
+//                     pos.offset(-rx - ux, -ry - uy, -rz - uz)
+//                 )
+//             }
 
-            let dotRight = lookVec.x * right.x() + lookVec.y * right.y() + lookVec.z * right.z()
-            let dotUp = lookVec.x * up.x() + lookVec.y * up.y() + lookVec.z * up.z()
+//             let dotRight = lookVec.x * right.x() + lookVec.y * right.y() + lookVec.z * right.z()
+//             let dotUp = lookVec.x * up.x() + lookVec.y * up.y() + lookVec.z * up.z()
 
-            if (Math.abs(dotRight) <= Math.abs(dotUp)) {
-                right = right.scale(2)
-            } else {
-                up = up.scale(2)
-            }
+//             if (Math.abs(dotRight) <= Math.abs(dotUp)) {
+//                 right = right.scale(2)
+//             } else {
+//                 up = up.scale(2)
+//             }
 
-            let rSign = dotRight > 0 ? 1 : -1
-            let uSign = dotUp > 0 ? 1 : -1
-            let dirX = rSign * right.x() + uSign * up.x()
-            let dirY = rSign * right.y() + uSign * up.y()
-            let dirZ = rSign * right.z() + uSign * up.z()
+//             let rSign = dotRight > 0 ? 1 : -1
+//             let uSign = dotUp > 0 ? 1 : -1
+//             let dirX = rSign * right.x() + uSign * up.x()
+//             let dirY = rSign * right.y() + uSign * up.y()
+//             let dirZ = rSign * right.z() + uSign * up.z()
 
 
-            return new $SteamDrillItem.Area(
-                pos,
-                pos.offset(dirX, dirY, dirZ),
-                pos.offset(-dirX, -dirY, -dirZ)
-            )
-        },
+//             return new $SteamDrillItem.Area(
+//                 pos,
+//                 pos.offset(dirX, dirY, dirZ),
+//                 pos.offset(-dirX, -dirY, -dirZ)
+//             )
+//         },
 
-        _rayTraceSimple(world, living, partialTicks) {
-            let blockReachDistance = living.blockInteractionRange()
-            let vec3d = living.getEyePosition(partialTicks)
-            let vec3d1 = living.getViewVector(partialTicks)
-            let vec3d2 = vec3d.add(vec3d1.x * blockReachDistance, vec3d1.y * blockReachDistance, vec3d1.z * blockReachDistance)
-            return world.clip(new $ClipContext(vec3d, vec3d2, $ClipContext$Block.OUTLINE, $ClipContext$Fluid.NONE, living))
-        }
+//         _rayTraceSimple(world, living, partialTicks) {
+//             let blockReachDistance = living.blockInteractionRange()
+//             let vec3d = living.getEyePosition(partialTicks)
+//             let vec3d1 = living.getViewVector(partialTicks)
+//             let vec3d2 = vec3d.add(vec3d1.x * blockReachDistance, vec3d1.y * blockReachDistance, vec3d1.z * blockReachDistance)
+//             return world.clip(new $ClipContext(vec3d, vec3d2, $ClipContext$Block.OUTLINE, $ClipContext$Fluid.NONE, living))
+//         }
 
-    }, new $Item$Properties().stacksTo(1))
-)
+//     }, new $Item$Properties().stacksTo(1))
+// )
 
-createNewJavaItem("clay_bucket", {  },
-    () => new JavaAdapter($Item, {
+// createNewJavaItem("clay_bucket", {  },
+//     () => new JavaAdapter($Item, {
 
-        appendHoverText(stack, context, tooltip, flag) {
-            let fluidStack = $FluidUtil.getFluidContained(stack)
+//         appendHoverText(stack, context, tooltip, flag) {
+//             let fluidStack = $FluidUtil.getFluidContained(stack)
 
-            fluidStack.ifPresent(fluidStack => tooltip.add($IEItemFluidHandler.fluidItemInfoFlavor(fluidStack, $FluidType.BUCKET_VOLUME)))
-        },
+//             fluidStack.ifPresent(fluidStack => tooltip.add($IEItemFluidHandler.fluidItemInfoFlavor(fluidStack, $FluidType.BUCKET_VOLUME)))
+//         },
 
-        useOn(context){
-            // let level = context.getLevel()
-            // let blockPos = context.getClickedPos()
-            // let stack = context.getItemInHand()
+//         useOn(context){
+//             // let level = context.getLevel()
+//             // let blockPos = context.getClickedPos()
+//             // let stack = context.getItemInHand()
 
-            // if (level.getCapability($FluidHandler.BLOCK, blockPos, null) == null){
-            //     let fluidStack = stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($IEDataComponents.GENERIC_FLUID, $SimpleFluidContent.EMPTY).copy()
+//             // if (level.getCapability($FluidHandler.BLOCK, blockPos, null) == null){
+//             //     let fluidStack = stack["getOrDefault(net.minecraft.core.component.DataComponentType,java.lang.Object)"]($IEDataComponents.GENERIC_FLUID, $SimpleFluidContent.EMPTY).copy()
 
-            //     if (!fluidStack.isEmpty() && $IEUtils.placeFluidBlock(level, blockPos.relative(context.getClickedFace()), fluidStack)){
+//             //     if (!fluidStack.isEmpty() && $IEUtils.placeFluidBlock(level, blockPos.relative(context.getClickedFace()), fluidStack)){
 
-            //         //cursed kjs bs
+//             //         //cursed kjs bs
 
-            //         let jsonStack = $SimpleFluidContent.CODEC.encodeStart($JsonOps.INSTANCE, $SimpleFluidContent.copyOf(fluidStack)).getOrThrow()
+//             //         let jsonStack = $SimpleFluidContent.CODEC.encodeStart($JsonOps.INSTANCE, $SimpleFluidContent.copyOf(fluidStack)).getOrThrow()
 
-            //         //console.log(jsonStack)
+//             //         //console.log(jsonStack)
 
-            //         stack.set($IEDataComponents.GENERIC_FLUID, jsonStack)
-            //         return $InteractionResult.SUCCESS
-            //     }
-            // }
+//             //         stack.set($IEDataComponents.GENERIC_FLUID, jsonStack)
+//             //         return $InteractionResult.SUCCESS
+//             //     }
+//             // }
 
-            return $InteractionResult.PASS
-        },
+//             return $InteractionResult.PASS
+//         },
 
-        hasCraftingRemainingItem(stack){
-            return stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN) || $FluidUtil.getFluidContained(stack).isPresent()
-        },
+//         hasCraftingRemainingItem(stack){
+//             return stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN) || $FluidUtil.getFluidContained(stack).isPresent()
+//         },
 
-        getCraftingRemainingItem(stack){
-            if (stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN)){
-                let returnStack = stack.copy()
-                let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
-                if(handler){
-                    handler.drain(returnStack.get($IEDataComponents.JERRYCAN_DRAIN), $FluidAction.EXECUTE)
-                    returnStack.remove($IEDataComponents.JERRYCAN_DRAIN)
-                    return returnStack
-                }
-            } else if ($FluidUtil.getFluidContained(stack).isPresent()) {
-                let returnStack = stack.copy()
-                let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
-                if (handler) {
-                    let drainStack = handler.getFluid().copy()
-                    drainStack.setAmount($FluidType.BUCKET_VOLUME)
-                    handler.drain(drainStack, $FluidAction.EXECUTE)
-                    return returnStack
-                }
-            }
-            return stack
-        }
+//         getCraftingRemainingItem(stack){
+//             if (stack["has(net.minecraft.core.component.DataComponentType)"]($IEDataComponents.JERRYCAN_DRAIN)){
+//                 let returnStack = stack.copy()
+//                 let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
+//                 if(handler){
+//                     handler.drain(returnStack.get($IEDataComponents.JERRYCAN_DRAIN), $FluidAction.EXECUTE)
+//                     returnStack.remove($IEDataComponents.JERRYCAN_DRAIN)
+//                     return returnStack
+//                 }
+//             } else if ($FluidUtil.getFluidContained(stack).isPresent()) {
+//                 let returnStack = stack.copy()
+//                 let handler = $FluidUtil.getFluidHandler(returnStack).orElse(null)
+//                 if (handler) {
+//                     let drainStack = handler.getFluid().copy()
+//                     drainStack.setAmount($FluidType.BUCKET_VOLUME)
+//                     handler.drain(drainStack, $FluidAction.EXECUTE)
+//                     return returnStack
+//                 }
+//             }
+//             return stack
+//         }
 
-    }, new $Item$Properties().stacksTo(1))
-)
+//     }, new $Item$Properties().stacksTo(1))
+// )
 
-let CLAY_MOLDS = {
-    "clay_mold_axe": {
-        volume: $FluidType.BUCKET_VOLUME / 4
-    },
-    "clay_mold_hammer": {
-        volume: $FluidType.BUCKET_VOLUME
-    },
-    "clay_mold_hoe": {
-        volume: $FluidType.BUCKET_VOLUME / 5
-    },
-    "clay_mold_pickaxe": {
-        volume: $FluidType.BUCKET_VOLUME / 4
-    },
-    "clay_mold_shovel": {
-        volume: $FluidType.BUCKET_VOLUME / 8
-    },
-    "clay_mold_sword": {
-        volume: $FluidType.BUCKET_VOLUME / 5
-    },
-    "clay_mold_ingot": {
-        volume: $FluidType.BUCKET_VOLUME / 8
-    }
-}
+// let CLAY_MOLDS = {
+//     "clay_mold_axe": {
+//         volume: $FluidType.BUCKET_VOLUME / 4
+//     },
+//     "clay_mold_hammer": {
+//         volume: $FluidType.BUCKET_VOLUME
+//     },
+//     "clay_mold_hoe": {
+//         volume: $FluidType.BUCKET_VOLUME / 5
+//     },
+//     "clay_mold_pickaxe": {
+//         volume: $FluidType.BUCKET_VOLUME / 4
+//     },
+//     "clay_mold_shovel": {
+//         volume: $FluidType.BUCKET_VOLUME / 8
+//     },
+//     "clay_mold_sword": {
+//         volume: $FluidType.BUCKET_VOLUME / 5
+//     },
+//     "clay_mold_ingot": {
+//         volume: $FluidType.BUCKET_VOLUME / 8
+//     }
+// }
 
-Object.entries(CLAY_MOLDS).forEach(([moldId, data]) => {
-    createNewJavaItem(moldId, {},
-        () => new JavaAdapter($Item, {
+// Object.entries(CLAY_MOLDS).forEach(([moldId, data]) => {
+//     createNewJavaItem(moldId, {},
+//         () => new JavaAdapter($Item, {
 
-            appendHoverText(stack, context, tooltip, flag) {
-                let fluidStack = $FluidUtil.getFluidContained(stack)
+//             appendHoverText(stack, context, tooltip, flag) {
+//                 let fluidStack = $FluidUtil.getFluidContained(stack)
 
-                fluidStack.ifPresent(fluidStack => tooltip.add($IEItemFluidHandler.fluidItemInfoFlavor(fluidStack, data.volume)))
-            },
+//                 fluidStack.ifPresent(fluidStack => tooltip.add($IEItemFluidHandler.fluidItemInfoFlavor(fluidStack, data.volume)))
+//             },
 
-            useOn(context) {
-                return $InteractionResult.FAIL
-            },
+//             useOn(context) {
+//                 return $InteractionResult.FAIL
+//             },
 
-        }, new $Item$Properties().stacksTo(1))
-    )
-})
+//         }, new $Item$Properties().stacksTo(1))
+//     )
+// })

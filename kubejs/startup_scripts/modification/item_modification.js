@@ -130,24 +130,24 @@ ItemEvents.modification(event => {
 
     })
 
-    event.modify('milf:clay_bucket', item => {
-        item.resetComponents().set("immersiveengineering:fluid", {})
-    })
+    // event.modify('milf:clay_bucket', item => {
+    //     item.resetComponents().set("immersiveengineering:fluid", {})
+    // })
 
-    Array.of(
-        "milf:clay_bucket",
-        "milf:clay_mold_axe",
-        "milf:clay_mold_hammer",
-        "milf:clay_mold_hoe",
-        "milf:clay_mold_pickaxe",
-        "milf:clay_mold_shovel",
-        "milf:clay_mold_sword",
-        "milf:clay_mold_ingot"
-    ).forEach(id => {
-        event.modify(id, item => {
-            item.resetComponents().set("immersiveengineering:fluid", {})
-        })
-    })
+    // Array.of(
+    //     "milf:clay_bucket",
+    //     "milf:clay_mold_axe",
+    //     "milf:clay_mold_hammer",
+    //     "milf:clay_mold_hoe",
+    //     "milf:clay_mold_pickaxe",
+    //     "milf:clay_mold_shovel",
+    //     "milf:clay_mold_sword",
+    //     "milf:clay_mold_ingot"
+    // ).forEach(id => {
+    //     event.modify(id, item => {
+    //         item.resetComponents().set("immersiveengineering:fluid", {})
+    //     })
+    // })
 
     event.modify('malum:crude_scythe', item => {
         item.setMaxDamage(450)

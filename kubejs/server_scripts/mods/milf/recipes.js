@@ -1,4 +1,39 @@
+function milfClayCrucibleRecipe(event, args){
+    let recipe = {
+        type: "milf:clay_crucible",
+        time: args.time || 109,
+        input: Object.assign({}, args.inputItems[0][0], { count: args.inputItems[0][1] || 8 }),
+        fuel: Object.assign({}, args.inputItems[1][0], { count: args.inputItems[1][1] || 4 }),
+        output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000 }),
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
 ServerEvents.recipes(event => {
+
+    Object.entries({
+
+        "milf:crushed_gold" : "embers:molten_gold",
+        "milf:crushed_tin": "embers:molten_tin",
+        "milf:crushed_copper": "embers:molten_copper",
+        "milf:crushed_lead": "embers:molten_lead"
+
+    }).forEach(([oreId, fluidId]) => {
+        milfClayCrucibleRecipe(event, {
+            inputItems: [
+                [{ item: oreId }],
+                [{ tag: "c:coal" }]
+            ],
+            outputFluids: [
+                [{ id: fluidId }]
+            ],
+            time: 200
+        })
+    })
 
     Object.entries({
         "milf:unfired_clay_mold_axe": {
@@ -85,9 +120,9 @@ ServerEvents.recipes(event => {
 
         Object.entries(castMap).forEach(([fluidId, part])=> {
 
-            let fluidComponent = {"immersiveengineering:fluid": {}}
-            fluidComponent["immersiveengineering:fluid"].id = fluidId
-            fluidComponent["immersiveengineering:fluid"].amount = volume
+            let fluidComponent = {"milf:fluid": {}}
+            fluidComponent["milf:fluid"].id = fluidId
+            fluidComponent["milf:fluid"].amount = volume
 
             yTechShapeless(event, {
                 inputItems: [

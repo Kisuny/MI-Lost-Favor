@@ -215,13 +215,12 @@
 			"    tier: \"${2|basic,simple,advanced,complex|}\",",
 			"    time: ${3:400},",
 			"    experience: ${4:1.0},",
-			"    citrine: ${5:0},",
-			"    topaz: ${6:0},",
-			"    onyx: ${7:0},",
-			"    amethyst: ${8:0},",
+			"    amethyst: ${5:0},",
+			"    citrine: ${6:0},",
+			"    topaz: ${7:0},",
+			"    onyx: ${8:0},",
 			"    moonstone: ${9:0},",
 			"    advancement: \"${10:spectrum:place_pedestal}\",",
-			"    yield_upgrades: ${11|false,true|}",
 			"});"
 		],
 		"description": "Convert an existing shaped/shapeless recipe into a pedestal craft (pedestalFromRecipe helper), removes the original recipe"
@@ -231,17 +230,17 @@
 		"prefix": "spectrum-fusion-shrine",
 		"body": [
 			"customShrineRecipe(event, {",
-			"    time: ${1:60},",
-			"    experience: ${2:8.0},",
-			"    fluid: \"${3:spectrum:dragonrot}\",",
+			"    time: 60,",
+			"    experience: 8.0,",
+			"    fluid: \"${1|spectrum:dragonrot,spectrum:liquid_crystal,spectrum:midnight_solution,supplementaries:lumisene,minecraft:water,minecraft:lava|}\",",
 			"    ingredients: [",
-			"        { \"item\": \"${4:modid_item}\", count: ${5:1} },",
+			"        { \"item\": \"${2:modid_item}\", count: ${3:1} },",
 			"    ],",
 			"    result: {",
-			"        \"id\": \"${6:modid_item}\",",
-			"        \"count\": ${7:1}",
+			"        \"id\": \"${4:modid_item}\",",
+			"        \"count\": ${5:1}",
 			"    },",
-			"    advancement: \"${8:spectrum:unlocks/blocks/fusion_shrine}\"",
+			"    advancement: \"${6:spectrum:unlocks/blocks/fusion_shrine}\"",
 			"});"
 		],
 		"description": "Spectrum fusion shrine craft (customShrineRecipe helper)"
@@ -524,7 +523,8 @@
 			"        { \"item\": \"${3:modid_item}\" },",
 			"    ],",
 			"    result: { \"id\": \"${4:modid_item}\", \"count\": ${5:1} },",
-			"    advancement: \"${6:spectrum:midgame/build_enchanting_structure}\"",
+			"    removeRecipe: ${6|true,false|}",
+			"    advancement: \"${7:spectrum:midgame/build_enchanting_structure}\"",
 			"});"
 		],
 		"description": "Spectrum enchanter craft (customEnchanterCraft helper)"

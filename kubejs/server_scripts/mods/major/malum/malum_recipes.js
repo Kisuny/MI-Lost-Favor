@@ -9,7 +9,7 @@
  *     type: 'malum:sacred' | 'malum:wicked' | 'malum:arcane' | 'malum:eldritch' | 'malum:aerial' | 'malum:aqueous' | 'malum:earthen' | 'malum:infernal' | 'malum:umbral'
  *   }>,
  *   removeRecipe?: boolean,
- *   removeType?: string
+ *   removeRecipeType?: string
  * }} args
  */
 const spiritInfusion = (event, args) => {
@@ -20,13 +20,8 @@ const spiritInfusion = (event, args) => {
         extraInputs: args.extraInputs,
         spirits: args.spirits
     })
-    if (args.removeRecipe) {
-        if (args.removeType) {
-            event.remove({ output: args.result.id, type: args.removeType })
-        } else {
-            event.remove({ output: args.result.id })
-        }
-    }
+    if (args.removeRecipe) { event.remove({ output: args.result.id }) }
+    if (args.removeRecipeType) { event.remove({ output: args.result.id, type: args.removeRecipeType }) }
 }
 
 ServerEvents.recipes(event => {
@@ -93,8 +88,7 @@ ServerEvents.recipes(event => {
             { type: "malum:earthen", count: 2 },
             { type: "malum:aqueous", count: 2 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -107,8 +101,7 @@ ServerEvents.recipes(event => {
             { type: "malum:sacred", count: 2 },
             { type: "malum:arcane", count: 1 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
     
     spiritInfusion(event, {
@@ -121,8 +114,7 @@ ServerEvents.recipes(event => {
             { type: "malum:infernal", count: 2 },
             { type: "malum:arcane", count: 1 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
     
     spiritInfusion(event, {
@@ -139,8 +131,7 @@ ServerEvents.recipes(event => {
             { type: "malum:aqueous", count: 8 }
         ],
         result: { id: "malum:spirit_crucible", count: 1 },
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -150,8 +141,7 @@ ServerEvents.recipes(event => {
         spirits: [
             { type: "malum:arcane", count: 1 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -166,8 +156,7 @@ ServerEvents.recipes(event => {
             { type: "malum:earthen", count: 16 },
             { type: "malum:eldritch", count: 16 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -181,8 +170,7 @@ ServerEvents.recipes(event => {
             { type: "malum:earthen", count: 1 },
             { type: "malum:arcane", count: 1 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -195,8 +183,7 @@ ServerEvents.recipes(event => {
             { type: "malum:aerial", count: 3 },
             { type: "malum:earthen", count: 3 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -207,8 +194,7 @@ ServerEvents.recipes(event => {
             { type: "malum:sacred", count: 1 },
             { type: "malum:arcane", count: 1 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     spiritInfusion(event, {
@@ -219,8 +205,7 @@ ServerEvents.recipes(event => {
             { type: "malum:wicked", count: 1 },
             { type: "malum:arcane", count: 1 }
         ],
-        removeRecipe: true,
-        removeType: "malum:spirit_infusion"
+        removeRecipeType: "malum:spirit_infusion"
     })
 
     miMachineRecipe(event, {

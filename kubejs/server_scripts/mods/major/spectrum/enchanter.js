@@ -1,16 +1,18 @@
 const customEnchanterCraft = (event, args) => {
+    const result = typeof args.result === "string"
+        ? { id: args.result, count: args.count || 1 }
+        : args.result
     event.custom({
         "type": "spectrum:enchanter",
         "time": args.time || 300,
         "required_experience": args.experience || 100,
         //max 9 items
         "ingredients": args.ingredients,
-        "result": typeof args.result === "string"
-            ? { id: args.result, count: args.count || 1 }
-            : args.result,
+        "result": result,
         "required_advancement": args.advancement
     })
-    if (args.removeRecipe) { event.remove(args.result) }
+    if (args.removeRecipe) { event.remove({ output: result.id }) }
+    if (args.removeRecipeType) { event.remove({ output: result.id, type: args.removeRecipeType }) }
 }
 
 function customEnchanterUpgradeCraft(event, { pigment_color, enchantment, item_scaling, required_advancement, xp_scaling }) {

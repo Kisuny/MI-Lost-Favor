@@ -266,12 +266,6 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "mythsandlegends:graveyard", name: "myths_and_legends_graveyard", augments: [
-                { "key": "minecraft:skeleton_skull" },
-                { "key": "minecraft:skeleton_skull" },
-            ]
-        },
-        {
             id: "cataclysm:amethyst_nest", name: "cataclysm_amethyst_nest", augments: [
                 { "key": "minecraft:amethyst_block" },
                 { "key": "minecraft:amethyst_block" },

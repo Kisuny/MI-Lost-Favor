@@ -22,6 +22,7 @@ const customPedestalCraft = (event, args) => {
     "disable_yield_upgrades": args.yield_upgrades || false,
   });
   if(args.removeRecipe){event.remove({output: args.result.id})}
+  if(args.removeRecipeType){event.remove({output: args.result.id, type: args.removeRecipeType})}
 };
 
 const customPedestalCraftShapeless = (event, args) => {
@@ -42,6 +43,7 @@ const customPedestalCraftShapeless = (event, args) => {
     "required_advancement": args.advancement
   });
   if(args.removeRecipe){event.remove({output: args.result.id})}
+  if(args.removeRecipeType){event.remove({output: args.result.id, type: args.removeRecipeType})}
 };
 
 

@@ -6,22 +6,23 @@ ServerEvents.recipes(event => {
         ]
     })
 
-
-    customWorktable(event, {
-        pattern: [
-            "wrw",
-            "ueu",
-            "uuu"
+    customShrineRecipe(event, {
+        time: 1600,
+        experience: 20.0,
+        fluid: "spectrum:liquid_crystal",
+        ingredients: [
+            { "item": "enchanted:attuned_stone_charged", count: 2 },
+            { "item": "hexerei:infused_fabric", count: 5 },
+            { "item": "minecraft:nautilus_shell", count: 4 },
+            { "item": "ars_elemental:curio_bag", count: 1 },
+            { "item": "embers:dawnstone_block", count: 1 },
+            { "item": "spectrum:raw_azurite", count: 4 },
         ],
-        reagents: ["tttt"],
-        key: {
-            "w": { "item": "enchanted:attuned_stone_charged" },
-            "e": { "item": "ars_elemental:curio_bag" },
-            "r": { "item": "eidolon_repraised:arcane_gold_block" },
-            "u": { "item": "hexerei:infused_fabric" },
-            "t": { "item": "minecraft:nautilus_shell" },
+        result: {
+            "id": "gag:time_sand_pouch",
+            "count": 1
         },
-        result: "gag:time_sand_pouch",
-        removeRecipe: true
-    })
+        removeRecipe: true,
+        advancement: "spectrum:midgame/collect_azurite"
+    });
 })

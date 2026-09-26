@@ -497,16 +497,21 @@
 			y: -26.0d
 		}
 		{
+			dependencies: [
+				"625DBAE6C9492790"
+				"3CD24DA505BC109F"
+			]
 			entity_vis_size: 1.0f
 			id: "6EEC74AEC9DD96B8"
 			min_required_dependencies: 1
+			shape: "heart"
 			tasks: [{
 				id: "34B52B16733D13B3"
 				item: { count: 1, id: "eidolon_repraised:cleaving_axe" }
 				type: "item"
 			}]
-			x: -36.5d
-			y: -17.0d
+			x: -39.0d
+			y: -20.5d
 		}
 		{
 			dependencies: [
@@ -883,6 +888,7 @@
 			y: -31.5d
 		}
 		{
+			dependencies: ["51355FDCB71F9048"]
 			entity_vis_size: 1.0f
 			id: "497D98E4037B0265"
 			shape: "heart"
@@ -2403,7 +2409,7 @@
 				item: { count: 1, id: "spectrum:storm_stone" }
 				type: "item"
 			}]
-			x: -44.5d
+			x: -45.0d
 			y: -18.5d
 		}
 		{
@@ -2507,7 +2513,7 @@
 				item: { count: 1, id: "spectrum:crystal_apothecary" }
 				type: "item"
 			}]
-			x: -44.5d
+			x: -45.0d
 			y: -21.0d
 		}
 		{
@@ -2532,7 +2538,7 @@
 				item: { count: 1, id: "spectrum:block_detector" }
 				type: "item"
 			}]
-			x: -44.0d
+			x: -44.5d
 			y: -20.5d
 		}
 		{
@@ -2608,7 +2614,7 @@
 				item: { count: 1, id: "spectrum:take_off_belt" }
 				type: "item"
 			}]
-			x: -44.5d
+			x: -45.0d
 			y: -20.0d
 		}
 		{
@@ -2706,8 +2712,8 @@
 				item: { count: 1, id: "spectrum:gloves_of_dawns_grasp" }
 				type: "item"
 			}]
-			x: -37.5d
-			y: -8.0d
+			x: -40.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["24103CFEEA1D14CE"]
@@ -2733,7 +2739,7 @@
 				item: { count: 1, id: "spectrum:upgrade_experience" }
 				type: "item"
 			}]
-			x: -45.0d
+			x: -45.5d
 			y: -20.5d
 		}
 		{
@@ -3039,7 +3045,7 @@
 				item: { count: 1, id: "spectrum:gilded_book" }
 				type: "item"
 			}]
-			x: -39.5d
+			x: -40.0d
 			y: -19.0d
 		}
 		{
@@ -3056,8 +3062,8 @@
 				item: { count: 1, id: "spectrum:whispy_circlet" }
 				type: "item"
 			}]
-			x: -39.0d
-			y: -7.5d
+			x: 0.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["24103CFEEA1D14CE"]
@@ -3116,14 +3122,14 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "47883BE95BFFBE8A"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "16284ABBB4B2FBB5"
 				item: { count: 1, id: "spectrum:ring_of_pursuit" }
 				type: "item"
 			}]
-			x: -40.0d
-			y: -8.5d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -3369,6 +3375,16 @@
 		{
 			dependencies: ["625DBAE6C9492790"]
 			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"minecraft:enchantments": {
+						levels: {
+							"minecraft:power": 5
+						}
+					}
+				}
+				id: "spectrum:seven_league_boots"
+			}
 			id: "0B37EB64F02A743F"
 			tasks: [
 				{
@@ -3383,7 +3399,7 @@
 					type: "item"
 				}
 			]
-			x: -38.5d
+			x: -38.0d
 			y: -19.0d
 		}
 		{
@@ -3401,16 +3417,12 @@
 				item: { count: 1, id: "spectrum:totem_pendant" }
 				type: "item"
 			}]
-			x: -40.5d
+			x: -37.5d
 			y: -8.0d
 		}
 		{
-			dependencies: [
-				"24103CFEEA1D14CE"
-				"3EB4859B19E62501"
-			]
+			dependencies: ["3EB4859B19E62501"]
 			entity_vis_size: 1.0f
-			hide_dependency_lines: true
 			id: "72D79032E51F7F6E"
 			shape: "heart"
 			tasks: [{
@@ -3418,8 +3430,8 @@
 				item: { count: 1, id: "spectrum:neat_ring" }
 				type: "item"
 			}]
-			x: -39.0d
-			y: -6.0d
+			x: 1.5d
+			y: -17.5d
 		}
 		{
 			dependencies: [
@@ -3435,8 +3447,8 @@
 				item: { count: 1, id: "spectrum:lesser_potion_pendant" }
 				type: "item"
 			}]
-			x: -40.0d
-			y: -6.5d
+			x: -40.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -3446,14 +3458,14 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0FA645748A42D390"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "2F7C023D1A077716"
 				item: { count: 1, id: "spectrum:greater_potion_pendant" }
 				type: "item"
 			}]
-			x: -38.0d
-			y: -6.5d
+			x: 11.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["706DE3A2DAA5E52D"]
@@ -5204,6 +5216,7 @@
 			y: -37.0d
 		}
 		{
+			dependencies: ["4081617269AD644A"]
 			entity_vis_size: 1.0f
 			id: "208F0C74C15F40B8"
 			shape: "heart"
@@ -6786,6 +6799,7 @@
 			y: -25.5d
 		}
 		{
+			dependencies: ["3CD24DA505BC109F"]
 			entity_vis_size: 1.0f
 			id: "117BA19FF568DCC4"
 			shape: "heart"
@@ -6794,8 +6808,8 @@
 				item: { count: 1, id: "ars_nouveau:planarium" }
 				type: "item"
 			}]
-			x: -53.0d
-			y: -12.5d
+			x: -44.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["6BD6BC7D5F275F41"]
@@ -7112,7 +7126,7 @@
 				type: "item"
 			}]
 			x: -39.0d
-			y: -20.5d
+			y: -19.5d
 		}
 		{
 			dependencies: [
@@ -7147,7 +7161,10 @@
 			y: -20.0d
 		}
 		{
-			dependencies: ["70A0A078B94FF034"]
+			dependencies: [
+				"70A0A078B94FF034"
+				"4081617269AD644A"
+			]
 			entity_vis_size: 1.0f
 			id: "15054A95EDCBE33D"
 			rewards: [{
@@ -8620,14 +8637,14 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "64E396779CFD2EFC"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "6C88E6DC73696E07"
 				item: { count: 1, id: "spectrum:circlet_of_arrogance" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: -16.0d
+			x: 11.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["4081617269AD644A"]

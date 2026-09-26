@@ -18,6 +18,8 @@ ClientEvents.generateAssets("before_mods", event => {
         "malum:spirit_infusion",
         "eidolon_repraised:rituals",
         "eidolon_repraised:worktable",
+        "spectrum:pedestal_crafting",
+        "spectrum:fusion_shrine",
     ]
 
     categoriesBeforeDefaults.forEach((categoryId, index) => {

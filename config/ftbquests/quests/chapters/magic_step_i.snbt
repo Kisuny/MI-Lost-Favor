@@ -577,8 +577,8 @@
 				item: { count: 1, id: "hexerei:crystal_ball" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["49CF5D29C3F2F41F"]
@@ -3837,26 +3837,7 @@
 				type: "structure"
 			}]
 			x: 8.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "6C8FD0DC341B404F"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:missing_item": "mythsandlegends:umbras_whisper"
-					}
-					id: "ftbquests:missing_item"
-				}
-				id: "28A689D42BE79D8A"
-				structure: "mythsandlegends:graveyard"
-				type: "structure"
-			}]
-			x: 12.5d
-			y: -8.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3872,7 +3853,7 @@
 				type: "structure"
 			}]
 			x: 9.5d
-			y: -12.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3890,8 +3871,8 @@
 				structure: "mowziesmobs:monastery"
 				type: "structure"
 			}]
-			x: 5.0d
-			y: -8.5d
+			x: 9.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3906,7 +3887,7 @@
 				structure: "mowziesmobs:umvuthana_grove"
 				type: "structure"
 			}]
-			x: 12.0d
+			x: 11.5d
 			y: -9.0d
 		}
 		{
@@ -3922,7 +3903,7 @@
 				structure: "mowziesmobs:wrought_chamber"
 				type: "structure"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -8.0d
 		}
 		{
@@ -3941,7 +3922,7 @@
 				structure: "minecraft:monument"
 				type: "structure"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -9.0d
 		}
 		{
@@ -3960,7 +3941,7 @@
 				structure: "minecraft:ancient_city"
 				type: "structure"
 			}]
-			x: 12.0d
+			x: 11.5d
 			y: -8.0d
 		}
 		{
@@ -4880,12 +4861,22 @@
 		{
 			dependencies: ["4956D7308C3208A8"]
 			entity_vis_size: 1.0f
+			icon: {
+				id: "ars_nouveau:imbuement_chamber"
+			}
 			id: "7BEADB01F0B1B236"
-			tasks: [{
-				id: "0F195314C08173AB"
-				item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0F195314C08173AB"
+					item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
+					type: "item"
+				}
+				{
+					id: "53AE3EB02CB0BDDE"
+					item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
+					type: "item"
+				}
+			]
 			x: 16.0d
 			y: 0.5d
 		}
@@ -5725,12 +5716,10 @@
 		}
 		{
 			dependencies: [
-				"01641AD0DC69F2D0"
-				"39553C7C57BEE887"
 				"70A0A078B94FF034"
+				"7E470E4F941A62BB"
 			]
 			entity_vis_size: 1.0f
-			hide_dependency_lines: true
 			id: "4F9AF422C4AA5B85"
 			shape: "heart"
 			size: 1.0d
@@ -5739,11 +5728,14 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -10.0d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["70A0A078B94FF034"]
+			dependencies: [
+				"70A0A078B94FF034"
+				"7BEADB01F0B1B236"
+			]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "usefulslime:slime_boots"
@@ -5775,11 +5767,14 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: -9.5d
+			x: 15.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["70A0A078B94FF034"]
+			dependencies: [
+				"70A0A078B94FF034"
+				"7BEADB01F0B1B236"
+			]
 			entity_vis_size: 1.0f
 			id: "5116FA2F58C59929"
 			shape: "heart"
@@ -5788,10 +5783,11 @@
 				item: { count: 1, id: "usefulslime:slime_sling" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -9.5d
+			x: 16.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["351C8BB52E7CD0E8"]
 			entity_vis_size: 1.0f
 			id: "33296F2EE45D2485"
 			shape: "heart"
@@ -5800,8 +5796,8 @@
 				item: { count: 1, id: "ars_nouveau:jar_of_light" }
 				type: "item"
 			}]
-			x: 31.5d
-			y: 13.0d
+			x: 36.5d
+			y: -1.0d
 		}
 	]
 }

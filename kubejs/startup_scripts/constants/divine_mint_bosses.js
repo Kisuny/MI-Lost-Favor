@@ -56,11 +56,7 @@ global.milfBosses = {
         "mowziesmobs:frostmaw": {structure: "mowziesmobs:frostmaw_spawn", additionalTransformations: (pose) => {
             pose.scale(0.8, 0.8, 1)
         }},
-        "cataclysm:amethyst_crab": { structure: "cataclysm:amethyst_nest" },
-        "mythsandlegends:black_charro": { structure: "mythsandlegends:graveyard" , additionalTransformations: (pose) => {
-            pose.translate(0, 20, 0)
-            pose.scale(1.5, 1.5, 1)
-        }}
+        "cataclysm:amethyst_crab": { structure: "cataclysm:amethyst_nest" }
     }
 
 }

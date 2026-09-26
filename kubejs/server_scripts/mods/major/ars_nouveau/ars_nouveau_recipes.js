@@ -178,6 +178,11 @@ ServerEvents.recipes(event => {
         "c:storage_blocks/gold": "malum:block_of_hallowed_gold",
         "c:gems/diamond": "eidolon_repraised:shadow_gem",
     }
+    // blacklist by item id output |:
+    // just for removing in helper functions 
+    const recipeBlacklist = [
+        "ars_nouveau:planarium"
+    ]
 
     const replaceIngredient = ingredient => {
         if (ingredient.item && itemReplacements[ingredient.item]) {
@@ -193,6 +198,9 @@ ServerEvents.recipes(event => {
 
     event.forEachRecipe({ or: [{ type: "ars_nouveau:enchanting_apparatus" }, { type: "ars_nouveau:imbuement" }] }, recipe => {
         let json = JSON.parse(recipe.json)
+        if (json.result && recipeBlacklist.includes(json.result.id)) {
+            return
+        }
         let changed = false
         let mainField = json.reagent ? "reagent" : (json.input ? "input" : null)
         let replacedMain = mainField ? replaceIngredient(json[mainField]) : null
@@ -627,5 +635,67 @@ ServerEvents.recipes(event => {
         ],
         result: "ars_additions:lost_codex_entry",
         count: 2
+    });
+
+    customPedestalCraft(event, {
+        time: 1200,
+        tier: "advanced",
+        experience: 4.0,
+        onyx: 12,
+        citrine: 20,
+        topaz: 20,
+        amethyst: 20,
+        pattern: [
+            ' w ',
+            'eqe',
+            'e e'
+        ],
+        key: {
+            q: 'ars_nouveau:mob_jar',
+            w: 'spectrum:neolith',
+            e: 'embers:dawnstone_ingot',
+        },
+        result: {
+            "id": "ars_nouveau:planarium",
+            "count": 1
+        },
+        advancement: "spectrum:midgame/collect_neolith",
+        removeRecipe: true
+    });
+
+    customShrineRecipe(event, {
+        time: 600,
+        experience: 4.0,
+        fluid: "supplementaries:lumisene",
+        ingredients: [
+            { "item": "minecraft:glowstone", count: 12 },
+            { "item": "minecraft:redstone_lamp", count: 2 },
+            { "item": "cognition:fluorescent_jelly", count: 8 },
+        ],
+        result: {
+            "id": "ars_nouveau:jar_of_light",
+            "count": 1
+        },
+        removeRecipe: true,
+        advancement: "spectrum:unlocks/blocks/fusion_shrine"
+    });
+
+    customShrineRecipe(event, {
+        time: 1600,
+        experience: 20.0,
+        fluid: "spectrum:midnight_solution",
+        ingredients: [
+            { "item": "ars_nouveau:bookwyrm_charm", count: 4 },
+            { "item": "minecraft:blaze_powder", count: 4 },
+            { "item": "ars_nouveau:source_gem", count: 12 },
+            { "tag": "c:ender_pearls", count: 4 },
+            { "item": "spectrum:raw_azurite", count: 4 },
+        ],
+        result: {
+            "id": "ars_additions:warp_index",
+            "count": 1
+        },
+        removeRecipe: true,
+        advancement: "spectrum:midgame/collect_azurite"
     });
 })

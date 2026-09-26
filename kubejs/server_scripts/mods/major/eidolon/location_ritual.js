@@ -96,12 +96,6 @@ ServerEvents.recipes(event => {
             ]
         },
         {
-            id: "myths_and_legends_graveyard", pedestal_items: [
-                { "item": "minecraft:skeleton_skull" },
-                { "item": "minecraft:skeleton_skull" },
-            ]
-        },
-        {
             id: "cataclysm_amethyst_nest", pedestal_items: [
                 { "item": "minecraft:amethyst_block" },
                 { "item": "minecraft:amethyst_block" },

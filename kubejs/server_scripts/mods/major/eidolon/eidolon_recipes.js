@@ -24,13 +24,8 @@ const customCrucible = (event, args) => {
             "count": args.count || 1
         }
     });
-    if (args.removeRecipe) {
-        if (args.removeType) {
-            event.remove({ output: args.result, type: args.removeType })
-        } else {
-            event.remove({ output: args.result })
-        }
-    }
+    if (args.removeRecipe) { event.remove({ output: args.result }) }
+    if (args.removeRecipeType) { event.remove({ output: args.result, type: args.removeRecipeType }) }
 };
 
 
@@ -53,8 +48,7 @@ ServerEvents.recipes(event => {
             },
         ],
         result: "eidolon_repraised:arcane_gold_ingot",
-        removeRecipe: true,
-        removeType : "eidolon_repraised:crucible",
+        removeRecipeType: "eidolon_repraised:crucible",
         count: 2
     });
 
@@ -252,8 +246,7 @@ ServerEvents.recipes(event => {
             },
         ],
         result: "eidolon_repraised:shadow_gem",
-        removeRecipe: true,
-        removeType : "eidolon_repraised:crucible",
+        removeRecipeType: "eidolon_repraised:crucible",
         count: 2
     });
     customCrucible(event, {
@@ -282,9 +275,54 @@ ServerEvents.recipes(event => {
             },
         ],
         result: "eidolon_repraised:lesser_soul_gem",
-        removeRecipe: true,
-        removeType : "eidolon_repraised:crucible",
+        removeRecipeType: "eidolon_repraised:crucible",
         count: 2
+    });
+
+    customEnchanterCraft(event, {
+        time: 600,
+        experience: 1000,
+        ingredients: [
+                { "tag": "minecraft:axes" },
+                { "item": "modern_industrialization:steel_large_plate" },
+                { "item": "modern_industrialization:steel_large_plate" },
+                { "item": "spectrum:neolith" },
+                { "item": "enchanted:creeper_heart" },
+                { "item": "modern_industrialization:steel_large_plate" },
+                { "item": "modern_industrialization:steel_large_plate" },
+                { "item": "spectrum:neolith" },
+                { "item": "enchanted:creeper_heart" }
+            ],
+        result: { "id": "eidolon_repraised:cleaving_axe", "count": 1 },
+        removeRecipeType: "eidolon_repraised:worktable",
+        advancement: "spectrum:midgame/build_enchanting_structure"
+    });
+
+    customPedestalCraft(event, {
+        time: 1200,
+        tier: "advanced",
+        experience: 4.0,
+        citrine: 0,
+        topaz: 0,
+        amethyst: 16,
+        onyx: 8,
+        pattern: [
+            'wqw',
+            'rtr',
+            ' t '
+        ],
+        key: {
+            q: 'minecraft:crying_obsidian',
+            w: 'minecraft:obsidian',
+            r: 'spectrum:quitoxic_powder',
+            t: 'modern_industrialization:steel_rod',
+        },
+        result: {
+            "id": "eidolon_repraised:reversal_pick",
+            "count": 1
+        },
+        advancement: "spectrum:collect_quitoxic_reeds",
+        removeRecipeType: "eidolon_repraised:worktable"
     });
     
 })

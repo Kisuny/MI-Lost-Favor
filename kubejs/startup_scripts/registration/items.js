@@ -124,7 +124,7 @@ createNewItem('unfired_clay_mold_shovel', { stackSize: 1 })
 createNewItem('unfired_clay_mold_sword', { stackSize: 1 })
 
 createNewItem('unfired_clay_plate')
-createNewItem('clay_plate')
+//createNewItem('clay_plate')
 
 createNewItem('wooden_axe_head', { stackSize: 1 })
 createNewItem('wooden_hammer_head', { stackSize: 1 })

@@ -102,6 +102,11 @@
 		""
 		"You're going to have to install chimneys on it for it to be useful, first. You can have up to four Reinforced Brick Chimneys, and up to 4 Brick Chimneys on top of them."
 	]
+	quest.01CFD7A3F5DA8CF9.quest_desc: [
+		"<shake><warning>Handle with care!</warning></shake> The <curse>Glass Hand</curse> doubles the damage dealt by all your attacks - but any damage you take is <shake>quintupled</shake> in return."
+		"{@pagebreak}"
+		"<shake><warning>Обращайтесь с осторожностью!</warning></shake> <curse>Стеклянная рука</curse> удваивает урон от всех ваших атак - но получаемый вами урон увеличивается в <shake>пять раз</shake>."
+	]
 	quest.01DA1F605860E4CB.quest_desc: [
 		"A <keyword>torch</keyword>, <keyword>candelabra</keyword> or <keyword>candle</keyword> can be an <property>effective means</property> of increasing your <keyword>altar's</keyword> <property>recharge rate</property>."
 		""
@@ -371,6 +376,11 @@
 		"The <keyword>Wixie Familiar</keyword> is a personal buff companion, separate from the worker Wixie that autocrafts items and potions at the Wixie Cauldron."
 		"{@pagebreak}"
 		"<keyword>Фамильяр Викси</keyword> - персональный компаньон-баф, отдельный от рабочей Викси, которая автоматически крафтит предметы и зелья у котла Викси."
+	]
+	quest.072F0916C2364762.quest_desc: [
+		"To speak with the powers that be, an <named>icon</named> is needed first. The <bone>Straw Effigy</bone> is crude, but once placed atop an <keyword>altar</keyword> it gives your prayers something to <magic>direct themselves at</magic> - maybe they'll be heard."
+		"{@pagebreak}"
+		"Чтобы обратиться к высшим силам, сперва нужен <named>идол</named>. <bone>Соломенное чучело</bone> грубое, но, будучи установленным на <keyword>алтарь</keyword>, даёт вашим молитвам цель, к которой они <magic>устремятся</magic> - быть может, их услышат."
 	]
 	quest.0743F72CB6464DAF.quest_desc: [
 		"A single player can have up to <keyword>9 active chunk loaders</keyword> "
@@ -730,6 +740,11 @@
 		""
 		"В будущем у вас появится возможность <positive>создавать</positive> собственное <magic>заклинание</magic> похожее на это"
 	]
+	quest.0F356021B63ADB59.quest_desc: [
+		"The <blood>Sanguine Amulet</blood> quietly stores up the health you regenerate while at full hearts, then releases that <positive>stored healing</positive> the moment you're hurt."
+		"{@pagebreak}"
+		"<blood>Кровавый амулет</blood> незаметно копит здоровье, которое вы восстанавливаете на полном запасе сердец, а затем высвобождает этот <positive>запас исцеления</positive> в момент, когда вы получаете урон."
+	]
 	quest.0F4825A153097924.quest_desc: [
 		"&#FEECD6Enchantment Canvas&r helps you remove &#C6BCE9enchantments&r from an item and reapply them if needed. "
 		""
@@ -759,6 +774,11 @@
 		"A <keyword>portable power source</keyword> that slowly creates <magic>Chronons</magic> while it is in your <property>inventory</property> or <property>Curios slot</property>. It has no storage of its own, so it is mainly used to <positive>charge</positive> <named>Cells</named> and <named>Batteries</named>."
 		"{@pagebreak}"
 		"Переносной <keyword>источник энергии</keyword>, который медленно создает <magic>Chronon</magic>, пока лежит в <property>инвентаре</property> или слоте <property>Curios</property>. У него нет собственного запаса, поэтому он нужен в первую очередь для <positive>зарядки</positive> <named>ячеек</named> и <named>батарей</named>."
+	]
+	quest.0FE7E31E80DC2D6E.quest_desc: [
+		"An exceedingly heavy belt - the <bone>Resolute Belt</bone> renders you almost <property>immovable</property>. Any knockback you receive is not only negated, but <curse>reflected</curse> back onto your attacker."
+		"{@pagebreak}"
+		"Чрезвычайно тяжёлый пояс - <bone>Стойкий пояс</bone> делает вас почти <property>неподвижным</property>. Любая отдача, которую вы получаете, не просто гасится, а <curse>отражается</curse> обратно на атакующего."
 	]
 	quest.10400EC9FEFEC45F.quest_desc: [
 		"[ \"You can use the structure-finding ritual from the \", { \"text\": \"Eidolon\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } }, \" mod or \", { \"text\": \"Ars Additions\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"426F71334E75DDD0\" } }, \".\" ]"
@@ -1418,6 +1438,11 @@
 		"{@pagebreak}"
 		"Работает как с жидкостями так и предметами одновременно!"
 	]
+	quest.1DCCE2A2A3F63A00.quest_desc: [
+		"The <named>Raven Cloak</named> unfurls into a pair of wings. Tap or hold <keyword>jump</keyword> to flap and glide through the air, then hold <keyword>sneak</keyword> to land <wave>gently</wave>."
+		"{@pagebreak}"
+		"<named>Плащ ворона</named> разворачивается в пару крыльев. Нажимайте или удерживайте <keyword>прыжок</keyword>, чтобы махать ими и парить в воздухе, а затем удерживайте <keyword>присед</keyword> для <wave>мягкой</wave> посадки."
+	]
 	quest.1E0A4735FB02983C.quest_desc: [
 		"Stores <property>Chronon energy</property> for your devices. Keep it in your inventory or a &6Curios slot&r, and it will feed power to carried Tempad items automatically."
 		"{@pagebreak}"
@@ -1608,6 +1633,11 @@
 		"First things first, get some <keyword>gravel</keyword> to begin your journey, it'll surely be handy."
 		"{@pagebreak}"
 		"Прежде всего, запаситесь <keyword>гравием</keyword>, чтобы начать свое путешествие, он вам обязательно пригодится."
+	]
+	quest.231C0353572C1573.quest_desc: [
+		"The <named>Void Amulet</named> is imbued with supernatural defense - when worn, incoming projectiles are <positive>absorbed and nullified</positive> instead of striking you, though it needs about ten seconds to recharge afterwards."
+		"{@pagebreak}"
+		"<named>Амулет пустоты</named> пропитан сверхъестественной защитой - надев его, вы <positive>поглощаете и обнуляете</positive> летящие в вас снаряды, но после срабатывания ему нужно около десяти секунд на перезарядку."
 	]
 	quest.2369BD1B085AEDFB.quest_desc: [
 		"<property>Overcharges</property> every <property>Affix</property> on an <keyword>Affix Item</keyword>."
@@ -2246,6 +2276,15 @@
 		"Вы можете узнать, на какой <property>высоте</property> спавнится нужная вам руда, наведя на неё в <keyword>EMI</keyword>."
 	]
 	quest.32A68ACEFBF8D876.title: "Where's my ore?"
+	quest.32D5E840A562CEE1.quest_desc: [
+		"Death's rest is sacred - the <bone>Vestige of the Bone Paladin</bone> is a replica of the grave paladins' silver armor, worn to honor the dead and let their souls rest instead of being called back into <curse>undeath</curse>."
+		""
+		"While worn as a full set, it <positive>regenerates a portion of your ethereal hearts</positive> over time, and grants <positive>immunity to poison and withering</positive>."
+		"{@pagebreak}"
+		"Покой смерти священен - <bone>Реликвия костяного паладина</bone> - это реплика серебряных доспехов паладинов могил, которую носят в память об умерших, позволяя их душам покоиться, а не быть призванными обратно в <curse>нежить</curse>."
+		""
+		"Надетая полным комплектом, она <positive>восстанавливает часть эфемерных сердец</positive> со временем и даёт <positive>иммунитет к яду и иссушению</positive>."
+	]
 	quest.330159427597F920.quest_desc: [
 		"The <keyword>Echoing Sculkshelf</keyword> is an advanced bookshelf crafted from <warning>Warden</warning> drops - one of the strongest for your enchanting table, and it also reveals an extra hidden enchantment in the table's menu, same as the Shelf of Sight."
 		"{@pagebreak}"
@@ -2274,6 +2313,11 @@
 	]
 	quest.3378CF07A57A5ECD.quest_desc: ["This sigil can be linked to a storage container, and for the cost of 200EV from your Anima reserves, open that container remotely, and cross-dimensionally, for as long as that container is within a loaded chunk."]
 	quest.33D177C9C103372D.quest_desc: ["Allows you to <positive>throw oils</positive>. Can become <property>handy</property> in the future."]
+	quest.34203AB89226074C.quest_desc: [
+		"The <blood>Sword of Sapping</blood> deals <curse>wither</curse> damage on top of its normal strike, and any damage dealt this way <positive>heals</positive> you back."
+		"{@pagebreak}"
+		"<blood>Меч истощения</blood> дополнительно наносит урон <curse>иссушения</curse> поверх обычного удара, и весь урон, нанесённый таким образом, <positive>исцеляет</positive> вас."
+	]
 	quest.344DE4692AD588E0.quest_desc: [
 		"You can make a &#FEECD6present&r and give it to your &#CAE4C8friend&r, or your &#d33b2bunfriend&r!"
 		""
@@ -2434,6 +2478,11 @@
 		"An augment for the <keyword>Spirit Crucible</keyword> that rejects cause and effect: <property>+10% Chain Focusing Chance</property> - whenever a cycle finishes, it can sometimes <positive>trigger an extra cycle</positive> almost instantly. Chained activations stack a bonus to <positive>all other attributes</positive>, but that comes with <warning>+15% Fuel Usage Rate</warning> and <curse>+5% Tuning Strain</curse>."
 		"{@pagebreak}"
 		"Улучшение для <keyword>Spirit Crucible</keyword>, отвергающее причинно-следственную связь: <property>+10% Chain Focusing Chance</property> - при завершении цикла может почти мгновенно <positive>запуститься ещё один цикл</positive>. Цепочки активаций накапливают бонус ко <positive>всем остальным характеристикам</positive>, но за это приходится платить <warning>+15% расхода топлива</warning> и <curse>+5% Tuning Strain</curse>."
+	]
+	quest.36D75A04F01D52AF.quest_desc: [
+		"An ancient ring, <named>Archangel's Sight</named> guides your ranged attacks toward the <keyword>nearest target</keyword> automatically. <property>Shift-click</property> the ring to cycle its mode - ignore other players, or aim only at enemies."
+		"{@pagebreak}"
+		"Древнее кольцо <named>Взор архангела</named> автоматически наводит ваши дальнобойные атаки на <keyword>ближайшую цель</keyword>. <property>Шифт-клик</property> по кольцу переключает режим - игнорировать других игроков или целиться только во врагов."
 	]
 	quest.37160E9A836B7361.title: "Tin"
 	quest.373326F7A1904E7A.quest_desc: [
@@ -2598,7 +2647,6 @@
 		"{@pagebreak}"
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
 	]
-	quest.3ACEAB25342B053C.title: "WIP Items"
 	quest.3B40DB8CA23BB5A0.quest_desc: [
 		"When <keyword>walls and fences</keyword> hold you, fret not, now you can <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>jump them</bounce></positive>!"
 		"{@pagebreak}"
@@ -2660,6 +2708,11 @@
 		"This pickaxe &#ECB4B4deletes&r all of the blocks it mines. Quite handy when you don't care about the blocks you are mining!"
 		"{@pagebreak}"
 		"Данная кирка будет &#ECB4B4удалять&r все вскопанные ею блоки, они будут просто &#FEECD6исчезать из мира&r, достаточно удобно когда вам не то чтобы нужны ресурсы из ваших странствий!"
+	]
+	quest.3C14473106D2F262.quest_desc: [
+		"Worn on the head, the <magic>Mind-Shielding Plate</magic> resists unwanted intrusions into your mind, grants <positive>immunity to nausea</positive>, and lets you retain three quarters of your levels on death."
+		"{@pagebreak}"
+		"Надетая на голову, <magic>Пластина защиты разума</magic> сопротивляется нежелательным вторжениям в ваш разум, даёт <positive>иммунитет к тошноте</positive> и позволяет сохранить три четверти уровней опыта при смерти."
 	]
 	quest.3C4D5E6F7A8B0001.quest_desc: ["Your first sigil. Right-click to instantly reveal your <property>Anima storage</property>, altar <keyword>tier</keyword>, <keyword>EV volume</keyword>, and <keyword>capacity</keyword> - your blood magic compass. Craft it with <keyword>Redstone Dust</keyword> base and a <keyword>Tabula Rasa</keyword> catalyst."]
 	quest.3C4D5E6F7A8B0001.title: "Sigil of Divination"
@@ -2803,7 +2856,6 @@
 		"Когда моб <poison>умирает, будучи пораженным ядом</poison>, с него могут выпасть &6особые предметы&r. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти &6ценные ингредиенты&r, их нужно умертвить <keyword>скальпелем</keyword>."
 	]
 	quest.3E0B415C278B8E33.quest_desc: ["The cornerstone of the Eidolon mod. A guidebook, spellbook and prayerbook all in one."]
-	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
 	quest.3EA1E7E490D39A84.quest_desc: [
 		"Demonic <property>Spiritus</property> can also exist in a diffused state throughout the very air. By burning Spiritus in a <named>Vas Maleficum</named>, you release it into the <magic>Aura</magic>, an invisible miasma that permeates each chunk of the world."
 		""
@@ -2831,6 +2883,16 @@
 		"Drops from a <poison>poisoned</poison> <keyword>squid</keyword>."
 		"{@pagebreak}"
 		"Выпадает из <poison>отравленного</poison> <keyword>кальмара</keyword>."
+	]
+	quest.3EBBEBAC9F6421D8.quest_desc: [
+		"The <wind>Gravity Belt</wind> makes you feel almost as light as air - equipped, your fall <positive>slows dramatically</positive> and you take only a <keyword>quarter</keyword> of the usual fall damage."
+		"{@pagebreak}"
+		"<wind>Пояс гравитации</wind> делает вас почти невесомым - надев его, вы падаете гораздо <positive>медленнее</positive> и получаете лишь <keyword>четверть</keyword> обычного урона от падения."
+	]
+	quest.3EE94A0DEB14D5FA.quest_desc: [
+		"Crafted from the bones of the dead and the heart of a wraith, the <soul>Soulbone Amulet</soul> grants <soul>ethereal hearts</soul> upon slaying an enemy - up to 10 by default, consumed before your normal health."
+		"{@pagebreak}"
+		"Созданный из костей мёртвых и сердца скитальца, <soul>Костяной амулет души</soul> даёт <soul>эфемерные сердца</soul> за убийство врага - до 10 по умолчанию, они расходуются раньше обычного здоровья."
 	]
 	quest.3EF93CF3A40BE38E.quest_desc: [
 		"The <keyword>Air Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Air</keyword> school."
@@ -3503,6 +3565,11 @@
 		"{@pagebreak}"
 		"Установите &#FEECD6бутылочку&r рядом с &#CAE4C8листьями&r и немного &#9BB8EDподождите&r, бактерии начнут съедать &#CAE4C8листву&r и оставлять процессы своей &#FEECD6жизнидейстельности&r прямо в этих же &#CAE4C8листях&r, возможно вы сможете использовать это в &#9BB8EDсвоих целях&r!"
 	]
+	quest.4C886369932230C9.quest_desc: [
+		"A showcase of the power hidden within a shadow gem - the <magic>Soulfire Wand</magic> unleashes <fire>brilliant bolts of energy</fire> on every swing, dealing hefty damage to almost any target."
+		"{@pagebreak}"
+		"Демонстрация силы, скрытой в теневом самоцвете - <magic>Посох душепламени</magic> выпускает <fire>яркие сгустки энергии</fire> при каждом взмахе, нанося солидный урон почти любой цели."
+	]
 	quest.4CB26ABA69E4A8DB.quest_desc: [
 		"An augment for the <keyword>Spirit Crucible</keyword>, drawing power from unbounded fractal complexity: <property>+10% Fortune Chance</property>, letting a focusing cycle potentially produce <positive>double the usual items</positive>, at the cost of <warning>+10% Instability</warning> and <curse>-20% Focusing Speed</curse>."
 		"{@pagebreak}"
@@ -3598,6 +3665,11 @@
 		""
 		"• <keyword>Щелкните правой кнопкой мыши</keyword> по куриному гнезду, чтобы собрать яйца."
 		"• Вы также можете использовать <keyword>воронку</keyword>, чтобы достать яйца из гнезда."
+	]
+	quest.502236E7EFA1AEAF.quest_desc: [
+		"The <magic>Bonechill Wand</magic> chills the soul of anything it strikes - the target is gripped by an <curse>icy hold</curse> that prevents all health regeneration, just like the claws of a wraith."
+		"{@pagebreak}"
+		"<magic>Ледяной посох</magic> замораживает душу того, по кому попадает - цель охватывает <curse>ледяная хватка</curse>, полностью блокирующая восстановление здоровья, точно так же, как когти скитальца."
 	]
 	quest.50A70151E50EC5DC.quest_desc: [
 		"Drops from <keyword>bogged</keyword>."
@@ -4093,6 +4165,11 @@
 		"Upgrade with a Diamond Block and another Blood Feather into Diamond-Tipped Ophanim Wings - while crouching, they trigger a stabbing attack that hits nearby enemies based on your body's facing direction (not where you're looking), dealing damage and consuming durability."
 		"{@pagebreak}"
 		"Улучшаются Diamond Block и ещё одним Blood Feather до Diamond-Tipped Ophanim Wings - при приседании наносят колющую атаку по врагам рядом, основанную на направлении тела (не взгляда), расходуя прочность пропорционально урону."
+	]
+	quest.5DA979250B4A1A07.quest_desc: [
+		"This glove-shaped charm, the <named>Prestigious Palm</named>, lets you touch what once escaped your grasp - roughly <property>doubling</property> your interaction range."
+		"{@pagebreak}"
+		"Этот амулет в форме перчатки, <named>Изысканная длань</named>, позволяет дотянуться до того, что раньше было вне досягаемости - примерно <property>удваивая</property> вашу дальность взаимодействия."
 	]
 	quest.5DB331B0DC5B29D7.quest_desc: [
 		" <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>"
@@ -4808,6 +4885,15 @@
 		"{@pagebreak}"
 		"Это &#FEECD6лопата&r, &#9BB8EDкирка&r, &#C7E2E9топор&r, и &#CAE4C8мотыга&r &nв одном&r, буквально швейцарский нож!"
 	]
+	quest.6C8985F958D5AD63.quest_desc: [
+		"The <named>All-Rounder</named> is a theurgical utility tool forged from the power of both deities - hold a goblet while killing a creature with it, and the goblet <blood>fills with that creature's blood</blood>."
+		""
+		"Pleasing a deity imbues the tool with their power, but favoring one side <curse>strips away the other's blessing</curse>. Only a truly <magic>balanced</magic> reputation lets you keep both powers at once."
+		"{@pagebreak}"
+		"<named>Мастер на все руки</named> - универсальный теургический инструмент, выкованный силой обеих божеств - держите кубок и убейте этим инструментом существо, и кубок <blood>наполнится его кровью</blood>."
+		""
+		"Если вы угождаете божеству, инструмент пропитывается его силой, но перекос в сторону одного из них <curse>лишает вас благословения другого</curse>. Лишь по-настоящему <magic>сбалансированная</magic> репутация позволяет сохранить обе силы одновременно."
+	]
 	quest.6C9D001FF1B265FB.quest_desc: [
 		"&lUse this to extract the meteorite and all its contents!&r"
 		"{@pagebreak}"
@@ -4970,6 +5056,11 @@
 		"Теперь ваша программа должна работать без каких-либо проблем"
 		""
 		"{image:milf:textures/quest_pic/sfm_example_02.png width:285 height:300 align:center fit:true}"
+	]
+	quest.6F177833E7CDE370.quest_desc: [
+		"Inscribed with runes and sanctifying salts, the <magic>Warded Mail</magic> bolsters any armor worn over it, letting it <positive>defend against magical attacks</positive> that would normally pierce straight through."
+		"{@pagebreak}"
+		"Расписанная рунами и освящёнными солями, <magic>Заговорённая кольчуга</magic> усиливает любую броню, надетую поверх неё, позволяя ей <positive>защищаться от магических атак</positive>, которые обычно проходят насквозь."
 	]
 	quest.6F3B8F14CD52165D.quest_desc: [
 		"The fishing system has been <property>significantly overhauled</property>, and <positive>many custom modpack items</positive> have been added to the loot, but you must use <keyword>this fishing rod</keyword> to catch fish."
@@ -5401,6 +5492,11 @@
 		"{@pagebreak}"
 		"<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>. <keyword>Caustic Catalyst</keyword> использует нестабильную реакцию между инфернальной и водной арканой, давая <property>+100% Caustic Synergy</property> - чем выше <warning>нестабильность</warning> тигля, тем сильнее это усиливает <positive>Tuning Potency</positive>."
 	]
+	quest.7C9146A2C8B9A6E8.quest_desc: [
+		"The dark lord is pleased, and has revealed some knowledge of their otherworldly appearance - now represented in this <curse>Elder Statue</curse>. It allows far <magic>more powerful dark rites</magic> than your crude straw effigy ever could."
+		"{@pagebreak}"
+		"Тёмный владыка доволен и приоткрыл толику знаний о своём потустороннем облике - теперь воплощённом в этой <curse>Древней статуе</curse>. Она позволяет проводить куда <magic>более мощные тёмные ритуалы</magic>, чем грубое соломенное чучело."
+	]
 	quest.7CA4C6614455169B.quest_desc: [
 		" <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>"
 		""
@@ -5774,102 +5870,4 @@
 	task.7EECE34CF3EE7B8C.title: "Any Logs"
 	task.7FA316644840FB37.title: "Any Pillar Base Blocks"
 	task.7FCEEDA6DB984E36.title: "Focus Tiers and Topologies"
-	quest.32D5E840A562CEE1.quest_desc: [
-		"Death's rest is sacred - the <bone>Vestige of the Bone Paladin</bone> is a replica of the grave paladins' silver armor, worn to honor the dead and let their souls rest instead of being called back into <curse>undeath</curse>."
-		""
-		"While worn as a full set, it <positive>regenerates a portion of your ethereal hearts</positive> over time, and grants <positive>immunity to poison and withering</positive>."
-		"{@pagebreak}"
-		"Покой смерти священен - <bone>Реликвия костяного паладина</bone> - это реплика серебряных доспехов паладинов могил, которую носят в память об умерших, позволяя их душам покоиться, а не быть призванными обратно в <curse>нежить</curse>."
-		""
-		"Надетая полным комплектом, она <positive>восстанавливает часть эфемерных сердец</positive> со временем и даёт <positive>иммунитет к яду и иссушению</positive>."
-	]
-	quest.6C8985F958D5AD63.quest_desc: [
-		"The <named>All-Rounder</named> is a theurgical utility tool forged from the power of both deities - hold a goblet while killing a creature with it, and the goblet <blood>fills with that creature's blood</blood>."
-		""
-		"Pleasing a deity imbues the tool with their power, but favoring one side <curse>strips away the other's blessing</curse>. Only a truly <magic>balanced</magic> reputation lets you keep both powers at once."
-		"{@pagebreak}"
-		"<named>Мастер на все руки</named> - универсальный теургический инструмент, выкованный силой обеих божеств - держите кубок и убейте этим инструментом существо, и кубок <blood>наполнится его кровью</blood>."
-		""
-		"Если вы угождаете божеству, инструмент пропитывается его силой, но перекос в сторону одного из них <curse>лишает вас благословения другого</curse>. Лишь по-настоящему <magic>сбалансированная</magic> репутация позволяет сохранить обе силы одновременно."
-	]
-	quest.7C9146A2C8B9A6E8.quest_desc: [
-		"The dark lord is pleased, and has revealed some knowledge of their otherworldly appearance - now represented in this <curse>Elder Statue</curse>. It allows far <magic>more powerful dark rites</magic> than your crude straw effigy ever could."
-		"{@pagebreak}"
-		"Тёмный владыка доволен и приоткрыл толику знаний о своём потустороннем облике - теперь воплощённом в этой <curse>Древней статуе</curse>. Она позволяет проводить куда <magic>более мощные тёмные ритуалы</magic>, чем грубое соломенное чучело."
-	]
-	quest.072F0916C2364762.quest_desc: [
-		"To speak with the powers that be, an <named>icon</named> is needed first. The <bone>Straw Effigy</bone> is crude, but once placed atop an <keyword>altar</keyword> it gives your prayers something to <magic>direct themselves at</magic> - maybe they'll be heard."
-		"{@pagebreak}"
-		"Чтобы обратиться к высшим силам, сперва нужен <named>идол</named>. <bone>Соломенное чучело</bone> грубое, но, будучи установленным на <keyword>алтарь</keyword>, даёт вашим молитвам цель, к которой они <magic>устремятся</magic> - быть может, их услышат."
-	]
-	quest.3EBBEBAC9F6421D8.quest_desc: [
-		"The <wind>Gravity Belt</wind> makes you feel almost as light as air - equipped, your fall <positive>slows dramatically</positive> and you take only a <keyword>quarter</keyword> of the usual fall damage."
-		"{@pagebreak}"
-		"<wind>Пояс гравитации</wind> делает вас почти невесомым - надев его, вы падаете гораздо <positive>медленнее</positive> и получаете лишь <keyword>четверть</keyword> обычного урона от падения."
-	]
-	quest.1DCCE2A2A3F63A00.quest_desc: [
-		"The <named>Raven Cloak</named> unfurls into a pair of wings. Tap or hold <keyword>jump</keyword> to flap and glide through the air, then hold <keyword>sneak</keyword> to land <wave>gently</wave>."
-		"{@pagebreak}"
-		"<named>Плащ ворона</named> разворачивается в пару крыльев. Нажимайте или удерживайте <keyword>прыжок</keyword>, чтобы махать ими и парить в воздухе, а затем удерживайте <keyword>присед</keyword> для <wave>мягкой</wave> посадки."
-	]
-	quest.01CFD7A3F5DA8CF9.quest_desc: [
-		"<shake><warning>Handle with care!</warning></shake> The <curse>Glass Hand</curse> doubles the damage dealt by all your attacks - but any damage you take is <shake>quintupled</shake> in return."
-		"{@pagebreak}"
-		"<shake><warning>Обращайтесь с осторожностью!</warning></shake> <curse>Стеклянная рука</curse> удваивает урон от всех ваших атак - но получаемый вами урон увеличивается в <shake>пять раз</shake>."
-	]
-	quest.502236E7EFA1AEAF.quest_desc: [
-		"The <magic>Bonechill Wand</magic> chills the soul of anything it strikes - the target is gripped by an <curse>icy hold</curse> that prevents all health regeneration, just like the claws of a wraith."
-		"{@pagebreak}"
-		"<magic>Ледяной посох</magic> замораживает душу того, по кому попадает - цель охватывает <curse>ледяная хватка</curse>, полностью блокирующая восстановление здоровья, точно так же, как когти скитальца."
-	]
-	quest.34203AB89226074C.quest_desc: [
-		"The <blood>Sword of Sapping</blood> deals <curse>wither</curse> damage on top of its normal strike, and any damage dealt this way <positive>heals</positive> you back."
-		"{@pagebreak}"
-		"<blood>Меч истощения</blood> дополнительно наносит урон <curse>иссушения</curse> поверх обычного удара, и весь урон, нанесённый таким образом, <positive>исцеляет</positive> вас."
-	]
-	quest.0F356021B63ADB59.quest_desc: [
-		"The <blood>Sanguine Amulet</blood> quietly stores up the health you regenerate while at full hearts, then releases that <positive>stored healing</positive> the moment you're hurt."
-		"{@pagebreak}"
-		"<blood>Кровавый амулет</blood> незаметно копит здоровье, которое вы восстанавливаете на полном запасе сердец, а затем высвобождает этот <positive>запас исцеления</positive> в момент, когда вы получаете урон."
-	]
-	quest.5DA979250B4A1A07.quest_desc: [
-		"This glove-shaped charm, the <named>Prestigious Palm</named>, lets you touch what once escaped your grasp - roughly <property>doubling</property> your interaction range."
-		"{@pagebreak}"
-		"Этот амулет в форме перчатки, <named>Изысканная длань</named>, позволяет дотянуться до того, что раньше было вне досягаемости - примерно <property>удваивая</property> вашу дальность взаимодействия."
-	]
-	quest.3EE94A0DEB14D5FA.quest_desc: [
-		"Crafted from the bones of the dead and the heart of a wraith, the <soul>Soulbone Amulet</soul> grants <soul>ethereal hearts</soul> upon slaying an enemy - up to 10 by default, consumed before your normal health."
-		"{@pagebreak}"
-		"Созданный из костей мёртвых и сердца скитальца, <soul>Костяной амулет души</soul> даёт <soul>эфемерные сердца</soul> за убийство врага - до 10 по умолчанию, они расходуются раньше обычного здоровья."
-	]
-	quest.4C886369932230C9.quest_desc: [
-		"A showcase of the power hidden within a shadow gem - the <magic>Soulfire Wand</magic> unleashes <fire>brilliant bolts of energy</fire> on every swing, dealing hefty damage to almost any target."
-		"{@pagebreak}"
-		"Демонстрация силы, скрытой в теневом самоцвете - <magic>Посох душепламени</magic> выпускает <fire>яркие сгустки энергии</fire> при каждом взмахе, нанося солидный урон почти любой цели."
-	]
-	quest.231C0353572C1573.quest_desc: [
-		"The <named>Void Amulet</named> is imbued with supernatural defense - when worn, incoming projectiles are <positive>absorbed and nullified</positive> instead of striking you, though it needs about ten seconds to recharge afterwards."
-		"{@pagebreak}"
-		"<named>Амулет пустоты</named> пропитан сверхъестественной защитой - надев его, вы <positive>поглощаете и обнуляете</positive> летящие в вас снаряды, но после срабатывания ему нужно около десяти секунд на перезарядку."
-	]
-	quest.0FE7E31E80DC2D6E.quest_desc: [
-		"An exceedingly heavy belt - the <bone>Resolute Belt</bone> renders you almost <property>immovable</property>. Any knockback you receive is not only negated, but <curse>reflected</curse> back onto your attacker."
-		"{@pagebreak}"
-		"Чрезвычайно тяжёлый пояс - <bone>Стойкий пояс</bone> делает вас почти <property>неподвижным</property>. Любая отдача, которую вы получаете, не просто гасится, а <curse>отражается</curse> обратно на атакующего."
-	]
-	quest.3C14473106D2F262.quest_desc: [
-		"Worn on the head, the <magic>Mind-Shielding Plate</magic> resists unwanted intrusions into your mind, grants <positive>immunity to nausea</positive>, and lets you retain three quarters of your levels on death."
-		"{@pagebreak}"
-		"Надетая на голову, <magic>Пластина защиты разума</magic> сопротивляется нежелательным вторжениям в ваш разум, даёт <positive>иммунитет к тошноте</positive> и позволяет сохранить три четверти уровней опыта при смерти."
-	]
-	quest.6F177833E7CDE370.quest_desc: [
-		"Inscribed with runes and sanctifying salts, the <magic>Warded Mail</magic> bolsters any armor worn over it, letting it <positive>defend against magical attacks</positive> that would normally pierce straight through."
-		"{@pagebreak}"
-		"Расписанная рунами и освящёнными солями, <magic>Заговорённая кольчуга</magic> усиливает любую броню, надетую поверх неё, позволяя ей <positive>защищаться от магических атак</positive>, которые обычно проходят насквозь."
-	]
-	quest.36D75A04F01D52AF.quest_desc: [
-		"An ancient ring, <named>Archangel's Sight</named> guides your ranged attacks toward the <keyword>nearest target</keyword> automatically. <property>Shift-click</property> the ring to cycle its mode - ignore other players, or aim only at enemies."
-		"{@pagebreak}"
-		"Древнее кольцо <named>Взор архангела</named> автоматически наводит ваши дальнобойные атаки на <keyword>ближайшую цель</keyword>. <property>Шифт-клик</property> по кольцу переключает режим - игнорировать других игроков или целиться только во врагов."
-	]
 }

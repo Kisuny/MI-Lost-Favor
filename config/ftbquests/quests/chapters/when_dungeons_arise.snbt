@@ -765,33 +765,6 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["3BB0FE129E37B19E"]
-			entity_vis_size: 1.0f
-			id: "0621BAAC08B04895"
-			tasks: [{
-				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
-				criterion: ""
-				ftbquestsentityvis_icon: {
-					cycle_seconds: 0.0f
-					enabled: 1b
-					entity: "bosses_of_mass_destruction:gauntlet"
-					idle_mode: "USE_GLOBAL"
-					offset_x: 0.0f
-					offset_y: 0.0f
-					rotation: 0.0f
-					silhouette_mode: "NONE"
-					size: 1.0f
-					spin_mode: "USE_GLOBAL"
-					use_as_quest_icon: 0b
-					walk_mode: "USE_GLOBAL"
-				}
-				id: "6303FFC5535427DB"
-				type: "advancement"
-			}]
-			x: -13.5d
-			y: 14.0d
-		}
-		{
 			dependencies: ["30ED4F9B49BFC36C"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
@@ -919,10 +892,6 @@
 		}
 		{
 			dependencies: [
-				"5676B98948194125"
-				"0621BAAC08B04895"
-				"33AA69A920D7135E"
-				"0FF37E339976CAAB"
 				"3056F19142720FB0"
 				"0FBB5C5541E982A6"
 				"146E3BD6BC57D833"
@@ -1117,8 +1086,8 @@
 				item: { count: 1, id: "endrem:cursed_eye" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 10.0d
+			x: 11.5d
+			y: 12.5d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -1301,99 +1270,6 @@
 			y: 11.5d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "2C68F3A0742EE34F"
-			shape: "diamond"
-			tasks: [{
-				id: "149DBA3DCE6AEAB8"
-				item: { count: 1, id: "endrem:blossom_eye" }
-				type: "item"
-			}]
-			x: 9.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["3BB0FE129E37B19E"]
-			entity_vis_size: 1.0f
-			id: "5676B98948194125"
-			tasks: [{
-				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
-				criterion: ""
-				ftbquestsentityvis_icon: {
-					cycle_seconds: 0.0f
-					enabled: 1b
-					entity: "bosses_of_mass_destruction:lich"
-					idle_mode: "USE_GLOBAL"
-					offset_x: 0.0f
-					offset_y: 0.0f
-					rotation: 0.0f
-					silhouette_mode: "NONE"
-					size: 1.0f
-					spin_mode: "USE_GLOBAL"
-					use_as_quest_icon: 0b
-					walk_mode: "USE_GLOBAL"
-				}
-				id: "1FB112CE9EDA34BB"
-				type: "advancement"
-			}]
-			x: -12.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["3BB0FE129E37B19E"]
-			entity_vis_size: 1.0f
-			id: "33AA69A920D7135E"
-			tasks: [{
-				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
-				criterion: ""
-				ftbquestsentityvis_icon: {
-					cycle_seconds: 0.0f
-					enabled: 1b
-					entity: "bosses_of_mass_destruction:obsidilith"
-					idle_mode: "USE_GLOBAL"
-					offset_x: 0.0f
-					offset_y: 0.0f
-					rotation: 0.0f
-					silhouette_mode: "NONE"
-					size: 1.0f
-					spin_mode: "USE_GLOBAL"
-					use_as_quest_icon: 0b
-					walk_mode: "USE_GLOBAL"
-				}
-				id: "6DE5C0B61B5F7BD7"
-				type: "advancement"
-			}]
-			x: -11.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["3BB0FE129E37B19E"]
-			entity_vis_size: 1.0f
-			id: "0FF37E339976CAAB"
-			tasks: [{
-				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
-				criterion: ""
-				ftbquestsentityvis_icon: {
-					cycle_seconds: 0.0f
-					enabled: 1b
-					entity: "bosses_of_mass_destruction:void_blossom"
-					idle_mode: "USE_GLOBAL"
-					offset_x: 0.0f
-					offset_y: 0.0f
-					rotation: 0.0f
-					silhouette_mode: "NONE"
-					size: 1.0f
-					spin_mode: "USE_GLOBAL"
-					use_as_quest_icon: 0b
-					walk_mode: "USE_GLOBAL"
-				}
-				id: "623005CF53946C65"
-				type: "advancement"
-			}]
-			x: -10.5d
-			y: 14.0d
-		}
-		{
 			dependencies: [
 				"6EC86F6DFD014125"
 				"70F4C4891CB043CC"
@@ -1403,7 +1279,6 @@
 				"64668A2DCC727071"
 				"6ECBD883A491B450"
 				"1AB38B4C36829D74"
-				"2C68F3A0742EE34F"
 				"6BD505CB5F3FC5CB"
 				"78F3829CADF4E3D0"
 				"275DDDBD9D1BFB6B"
@@ -2363,17 +2238,6 @@
 			}]
 			x: -26.5d
 			y: 14.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "7013BD87AC0FE4ED"
-			tasks: [{
-				id: "68348C0E9C9A1614"
-				item: { count: 1, id: "tide:starlight_bow" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 30.5d
 		}
 		{
 			dependencies: ["1714360882474479"]

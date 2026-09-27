@@ -374,16 +374,6 @@
 	]
 	quests: [
 		{
-			entity_vis_size: 1.0f
-			id: "3ACEAB25342B053C"
-			tasks: [{
-				id: "256EB14943449A82"
-				type: "checkmark"
-			}]
-			x: -20.0d
-			y: 0.5d
-		}
-		{
 			dependencies: ["70A0A078B94FF034"]
 			entity_vis_size: 1.0f
 			icon: {
@@ -398,18 +388,6 @@
 			}]
 			x: -23.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			entity_vis_size: 1.0f
-			id: "3E6BADA7B5D3F004"
-			tasks: [{
-				id: "5BB32F838E2E2877"
-				item: { count: 1, id: "morered:or_gate" }
-				type: "item"
-			}]
-			x: -20.0d
-			y: 1.5d
 		}
 		{
 			dependencies: ["70A0A078B94FF034"]

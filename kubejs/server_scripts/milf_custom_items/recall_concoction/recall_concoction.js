@@ -58,7 +58,6 @@ ServerEvents.tags('block', event => {
         "ytech:grass_bed",
         "spectrum:resplendent_bed",
         "minecraft:orange_bed",
-        "arts_and_crafts:bleached_bed",
         "minecraft:gray_bed",
         "minecraft:green_bed",
         "minecraft:light_blue_bed",

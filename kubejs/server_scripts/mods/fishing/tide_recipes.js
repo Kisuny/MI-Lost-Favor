@@ -10,26 +10,11 @@ ServerEvents.recipes(event => {
 
     event.remove({
         output: [
-            "tide:fishing_hook",
-            /tide:.*_bobber/,
-            /tide:.*_fishing_rod/,
-            /tide:.*_line/,
-            'tide:wooden_crate', 
-            'tide:obsidian_crate', 
-            'tide:purpur_crate', 
-            'tide:angling_table',
-            'tide:fishing_journal',
-            /tide:.*_bait/,
-            'tide:lavaproof_hook',
-            'tide:twilight_hook',
-            'tide:fiery_hook',
-            'tide:permafrost_hook',
-            'tide:bait',
         ]
     })
 
 
-    event.replaceOutput({ output: 'tide:cooked_fish' }, 'tide:cooked_fish', 'starcatcher:cooked_starcaught_fish')
+
 
 
 

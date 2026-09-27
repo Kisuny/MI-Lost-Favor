@@ -16,8 +16,6 @@ ServerEvents.generateData("before_mods", event => {
 
             "malum:sundering_anchor",
 
-            "tide:sailfish",
-
             "paganbless:boline",
             "paganbless:athame",
 

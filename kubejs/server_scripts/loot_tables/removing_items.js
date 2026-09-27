@@ -69,12 +69,9 @@ LootJS.modifiers(event => {
         { item_name: '#minecraft:saplings' },
         { item_name: 'eidolon_repraised:lead_ingot' },
         { item_name: 'enigmaticlegacyplus:recall_potion' },
-        { item_name: 'tide:obsidian_fragment' },
-        { item_name: 'tide:fish_bone' },
         { item_name: 'minecraft:enchanting_table' },
         { item_name: 'ars_nouveau:ritual_containment' },
         { item_name: 'toxony:poison_paste' },
-        { item_name: /tide:.*_fishing_rod/, },
     ]
     
     const loot_types = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]

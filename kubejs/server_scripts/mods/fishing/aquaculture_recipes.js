@@ -37,11 +37,5 @@ ServerEvents.recipes(event => {
         ]
     })
 
-
-    event.replaceOutput({ output: 'tide:cooked_fish' }, 'tide:cooked_fish', 'starcatcher:cooked_starcaught_fish')
-
-
-
-
 });
 

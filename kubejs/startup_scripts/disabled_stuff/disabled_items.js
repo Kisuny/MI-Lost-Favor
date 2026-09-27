@@ -270,6 +270,10 @@ global.disabledItems = [
     new DisabledItemBuilder("malum:aluminum_impetus"),
     new DisabledItemBuilder("malum:aluminum_node"),
     new DisabledItemBuilder("malum:fractured_aluminum_impetus"),
+    new DisabledItemBuilder("gaze:enchantment_workbench"),
+    new DisabledItemBuilder("malum:natural_quartz"),
+    new DisabledItemBuilder("malum:natural_quartz_ore"),
+    new DisabledItemBuilder("malum:deepslate_quartz_ore"),
     new DisabledItemBuilder("farmersdelight:flint_knife")
         .replaceWith("ytech:flint_knife").replaceIn(["LOOT_TABLES"]),
 

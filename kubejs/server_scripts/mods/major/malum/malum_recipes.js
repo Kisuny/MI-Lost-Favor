@@ -229,4 +229,23 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
+    spiritInfusion(event, {
+        input: { item: "malum:soul_stained_steel_sword", count: 1 },
+        extraInputs: [
+            { item: "malum:fused_consciousness", count: 1 },
+            { item: "minecraft:quartz", count: 8 },
+            { item: "malum:tainted_rock", count: 8 },
+            { item: "malum:malignant_pewter_plating", count: 4 },
+        ],
+        spirits: [
+            { type: "malum:infernal", count: 32 },
+            { type: "malum:wicked", count: 16 },
+            { type: "malum:arcane", count: 16 },
+            { type: "malum:aqueous", count: 8 },
+            { type: "malum:earthen", count: 16 },
+        ],
+        result: { id: "gaze:soul_rapier", count: 1 },
+        removeRecipe: true
+    });
+
 })

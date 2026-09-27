@@ -152,6 +152,22 @@ function oritechItemRecipe(oriMachine, compatMachine, event, args){
     event.custom(recipe)
 }
 
+function oritechLaserRecipe(event, args) {
+    let ingredients = []
+    let results = []
+    args.inputItems.forEach(item => { ingredients.push(Object.assign({}, item[0], { count: item[1] || 1 })) })
+    args.outputItems.forEach(item => { results.push(Object.assign({}, item[0].item ? { id: item[0].item } : item[0], { count: item[1] || 1 })) })
+    let recipe = {
+        type: "oritech:laser",
+        ingredients: ingredients,
+        results: results,
+        time: args.time || 100
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id || args.outputItems[0][0].item, type: args.removeRecipeType }) }
+    event.custom(recipe)
+}
+
 function oritechDrillRecipe(event, args) {
     let ingredients = []
     let results = []
@@ -1002,6 +1018,21 @@ ServerEvents.recipes(event => {
     //     removeRecipe: true
     // })
 
+
+    //#endregion
+
+    //#region Enderic Laser
+
+
+    // oritechLaserRecipe(event, {
+    //     time: 1,
+    //     inputItems: [
+    //         [{ item: "spectrum:echo_cluster" }]
+    //     ],
+    //     outputItems: [
+    //         [{ item: "spectrum:pure_echo" }, 4]
+    //     ],
+    // })
 
     //#endregion
 

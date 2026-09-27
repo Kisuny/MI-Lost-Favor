@@ -33,7 +33,6 @@ ItemEvents.modifyTooltips(event => {
 
     const OW = (min, max) => ({ dim: 'overworld', min: min, max: max });
     const NE = (min, max) => ({ dim: 'nether', min: min, max: max });
-    const ES = (min, max) => ({ dim: 'eternal_starlight', min: min, max: max });
     const DD = (min, max) => ({ dim: 'deeper_down', min: min, max: max });
     const EN = (min, max) => ({ dim: 'the_end', min: min, max: max });
     const CV = (min, max) => ({ dim: 'crimson_veil', min: min, max: max });
@@ -72,20 +71,16 @@ ItemEvents.modifyTooltips(event => {
     addQuarryOre('modern_industrialization:titanium_ore');
 
     // ── Spectrum ────────────────────────────────────────────────────
-    addOre(['spectrum:azurite_ore', 'spectrum:deepslate_azurite_ore'], [ES(-64, -32)]);
-    addOre(['spectrum:shimmerstone_ore', 'spectrum:deepslate_shimmerstone_ore', 'spectrum:blackslag_shimmerstone_ore'], [OW(-12, 128), ES(-16, 128), DD(-16, 128)]);
-    addOre('spectrum:paltaeria_ore', [EN(0, 255)]);
-    addOre('spectrum:stratine_ore', [NE(4, 63)]);
-    addOre(['spectrum:malachite_ore', 'spectrum:deepslate_malachite_ore', 'spectrum:blackslag_malachite_ore'], [DD(-316, -256)]);
+    // addOre(['spectrum:azurite_ore', 'spectrum:deepslate_azurite_ore'], [ES(-64, -32)]);
+    // addOre(['spectrum:shimmerstone_ore', 'spectrum:deepslate_shimmerstone_ore', 'spectrum:blackslag_shimmerstone_ore'], [OW(-12, 128), ES(-16, 128), DD(-16, 128)]);
+    // addOre('spectrum:paltaeria_ore', [EN(0, 255)]);
+    // addOre('spectrum:stratine_ore', [NE(4, 63)]);
+    // addOre(['spectrum:malachite_ore', 'spectrum:deepslate_malachite_ore', 'spectrum:blackslag_malachite_ore'], [DD(-316, -256)]);
 
     // ── Malum ────────────────────────────────────────────────────
-    addOre(['malum:brilliant_stone', 'malum:brilliant_deepslate'], [ES(-64, 40)]);
-    addOre(['malum:natural_quartz_ore', 'malum:deepslate_quartz_ore'], [ES(-64, 10)]);
-    addOre(['malum:soulstone_ore', 'malum:deepslate_soulstone_ore'], [ES(-64, 100)]);
-    addOre(['malum:cthonic_gold_ore', 'minecraft:deepslate_gold_ore'], [ES(-64, 40)]);
-    addOre('malum:blazing_quartz_ore', [NE(-16, 112)]);
-
-    // Removed
-    // ── Evilcraft ────────────────────────────────────────────────────
-    // addOre(['evilcraft:dark_ore_deepslate', 'evilcraft:dark_ore'], [CV(-64, 80)]);
+    // addOre(['malum:brilliant_stone', 'malum:brilliant_deepslate'], [ES(-64, 40)]);
+    // addOre(['malum:natural_quartz_ore', 'malum:deepslate_quartz_ore'], [ES(-64, 10)]);
+    // addOre(['malum:soulstone_ore', 'malum:deepslate_soulstone_ore'], [ES(-64, 100)]);
+    // addOre(['malum:cthonic_gold_ore', 'minecraft:deepslate_gold_ore'], [ES(-64, 40)]);
+    // addOre('malum:blazing_quartz_ore', [NE(-16, 112)]);
 })

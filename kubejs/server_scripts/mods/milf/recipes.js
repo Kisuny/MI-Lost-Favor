@@ -13,6 +13,29 @@ function milfClayCrucibleRecipe(event, args){
     event.custom(recipe)
 }
 
+function milfClayCrucibleKilnRecipe(event, args) {
+    let recipe = {
+        type: "milf:clay_crucible_kiln",
+        time: args.time || 109,
+        requires_bellows: args.requires_bellows || false,
+        input1: Object.assign({}, args.inputItems[0][0], { count: args.inputItems[0][1] || 8 }),
+        input2: Object.assign({}, args.inputItems[1][0], { count: args.inputItems[1][1] || 4 }),
+        output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000 }),
+    }
+    if (args.fire_pit_fuel){
+        recipe.fire_pit_fuel = args.fire_pit_fuel
+    }
+    if(args.fire_pit_output){
+        recipe.fire_pit_output = args.fire_pit_output
+
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
 ServerEvents.recipes(event => {
 
     Object.entries({
@@ -33,6 +56,26 @@ ServerEvents.recipes(event => {
             ],
             time: 200
         })
+    })
+
+    milfClayCrucibleKilnRecipe(event, {
+        inputItems: [
+            [{ item: "milf:crushed_copper" }, 6],
+            [{ item: "milf:crushed_tin" }, 2]
+        ],
+        outputFluids: [
+            [{ id: "embers:molten_bronze" }]
+        ],
+        fire_pit_fuel: {
+            "tag": "minecraft:logs",
+            "count": 4
+        },
+        fire_pit_output:{
+            "id": "minecraft:charcoal",
+            "count": 4
+        },
+        requires_bellows:true,
+        time: 200
     })
 
     Object.entries({
@@ -138,7 +181,7 @@ ServerEvents.recipes(event => {
                         "items": "milf:clay_bucket",
                         "strict": false,
                         "components": { 
-                            "immersiveengineering:fluid": {
+                            "milf:fluid": {
                                 id: "minecraft:water",
                                 amount: 1000
                             } 

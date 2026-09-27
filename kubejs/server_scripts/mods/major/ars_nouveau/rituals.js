@@ -172,32 +172,6 @@ ServerEvents.recipes(event => {
 
     const locate_structure_list = [
         {
-            id: "bosses_of_mass_destruction:lich_tower", name: "lich_tower", augments: [
-                { "key": "enchanted:whiff_of_magic" },
-                { "key": "minecraft:skeleton_skull" },
-                { "key": "enchanted:ender_dew" },
-            ]
-        },
-        {
-            id: "bosses_of_mass_destruction:void_blossom", name: "void_blossom", augments: [
-                { "key": "enchanted:ender_dew" },
-                { "key": "enchanted:breath_of_the_goddess" },
-                { "key": "paganbless:chopped_lavender" },
-            ]
-        },
-        {
-            id: "bosses_of_mass_destruction:gauntlet_arena", name: "gauntlet_arena", augments: [
-                { "key": "enchanted:tongue_of_dog" },
-                { "key": "enchanted:demonic_blood" },
-            ]
-        },
-        {
-            id: "bosses_of_mass_destruction:obsidilith_arena", name: "obsidilith_arena", augments: [
-                { "key": "minecraft:end_stone" },
-                { "key": "enchanted:whiff_of_magic" },
-            ]
-        },
-        {
             id: "takesapillage:bastille", name: "bastille", augments: [
                 { "key": "minecraft:raw_iron" },
                 { "key": "minecraft:crossbow" },

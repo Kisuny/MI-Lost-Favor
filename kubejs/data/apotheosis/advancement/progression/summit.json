@@ -81,20 +81,6 @@
             },
             "trigger": "apotheosis:equipped_item"
         },
-        "kill_lich": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "bosses_of_mass_destruction:lich"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
         "kill_azazel_human": {
             "conditions": {
                 "entity": [
@@ -117,48 +103,6 @@
                         "entity": "this",
                         "predicate": {
                             "type": "netherman:azazel"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_obsidilith": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "bosses_of_mass_destruction:obsidilith"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_void_blossom": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "bosses_of_mass_destruction:void_blossom"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:player_killed_entity"
-        },
-        "kill_gauntlet": {
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "bosses_of_mass_destruction:gauntlet"
                         }
                     }
                 ]

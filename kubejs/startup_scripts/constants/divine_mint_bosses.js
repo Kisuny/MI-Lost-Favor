@@ -20,16 +20,6 @@ global.milfBosses = {
         "fdbosses:malkuth": { structure: "fdbosses:malkuth_arena", isStructureExclusive: true },
         "fdbosses:chesed": { structure: "fdbosses:chesed_arena", isStructureExclusive: true },
         "fdbosses:geburah": { fakeItemToRender: "fdbosses:geburah_trophy", structure: "fdbosses:geburah_arena", isStructureExclusive: true },
-        "bosses_of_mass_destruction:void_blossom": { fakeItemToRender: "bosses_of_mass_destruction:void_blossom", structure: "bosses_of_mass_destruction:void_blossom", 
-            resurrectionItems: [
-            { id: "minecraft:vine", count: 6},
-            { id:"devices:gold_coin", count: 5},
-            // { id: "knightlib:great_essence", count: 4 },
-            { id: "minecraft:spore_blossom", count: 1 }
-        ]},
-        "bosses_of_mass_destruction:obsidilith": { fakeItemToRender: "bosses_of_mass_destruction:obsidian_heart", structure: "bosses_of_mass_destruction:obsidilith_arena", isStructureExclusive:true },
-        "bosses_of_mass_destruction:lich": { structure: "bosses_of_mass_destruction:lich_tower" },
-        "bosses_of_mass_destruction:gauntlet": { structure: "bosses_of_mass_destruction:gauntlet_arena", isStructureExclusive: true },
     },
 
     tier2:{

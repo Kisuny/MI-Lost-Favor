@@ -304,10 +304,6 @@ LootJS.modifiers(event => {
     ]
 
     const electronic_ender_core_bosses = [
-        "bosses_of_mass_destruction:gauntlet",
-        "bosses_of_mass_destruction:lich",
-        "bosses_of_mass_destruction:obsidilith",
-        "bosses_of_mass_destruction:void_blossom",
         "fdbosses:geburah",
         "fdbosses:chesed",
         "fdbosses:malkuth",

@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             level_cap: 1,
             pigment_color: "spectrum:cyan_pigment",
             item_1: "mythsandlegends:ethereal_flame",
-            item_2: "bosses_of_mass_destruction:soul_star",
+            item_2: "minecraft:barrier",
             advancement: "spectrum:midgame/build_enchanting_structure"
         },
         {

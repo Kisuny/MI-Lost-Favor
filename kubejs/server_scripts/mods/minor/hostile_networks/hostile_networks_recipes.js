@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         ],
         inputItems:[
             [{item:"modern_industrialization:redstone_control_module"}],
-            [{item:"bosses_of_mass_destruction:obsidian_heart"}],
+            [{item:"minecraft:barrier"}],
             [{item:"modern_industrialization:steel_large_plate"}],
         ],
         removeRecipe:true

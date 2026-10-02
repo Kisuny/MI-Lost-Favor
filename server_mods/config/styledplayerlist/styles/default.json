@@ -1,0 +1,21 @@
+{
+  "style_name": "Default",
+  "update_tick_time": 20,
+  "list_header": [
+    "",
+    "<bold><grad colors=#848dcb,#45509d freq=0.5><wave amplitude=0.5 frequency=0.8 wavelength=1.0><shadow offsetX=0.0 offsetY=0.0 color=\"#070812\" alpha=1.0>MI:Lost Favor</shadow></wave></grad>",
+    "",
+    "<color #737D89><strikethrough>        </strikethrough>[ </color><gr #c5c9e6 #cc7354>%vanish:online%<color #6666676>/</color><gr:#c5c9e6:#cc7354>%server:max_players%<color #737D89> ]<strikethrough>        </strikethrough></color>",
+    ""
+  ],
+  "list_footer": [
+    "",
+    "<color #737D89><strikethrough>                          </strikethrough></color>",
+    "",
+    "<color #3c468d>Ping: <color #E8EDF2>%player:ping%</color>  <color #3c468d>Deaths: <color #E8EDF2>%player:statistic deaths%</color>",
+    "",
+    " <color #3c468d>Playtime: <color #E8EDF2>%player:playtime HH'<color:#c5c9e6>h</color>' mm'<color:#c5c9e6>m</color>' ss'<color:#c5c9e6>s</color>'%</color> ",
+    ""
+  ],
+  "hidden_in_commands": false
+}

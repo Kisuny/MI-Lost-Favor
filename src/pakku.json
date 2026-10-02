@@ -2,6 +2,7 @@
     "name": "MI Lost Favor",
     "version": "0.5.0",
     "description": "MI:LF™ - a Tech/Magic modpack where progression is more than just crafting. Linear progression, stages, tons of quests, and plenty of custom changes - all wrapped in a world with a story of its own",
+    "author": "kisuny & saeta",
     "overrides": [
         "config",
         "kubejs/config",
@@ -13,9 +14,7 @@
     "client_overrides": [
         "kubejs/assets",
         "servers.dat",
-        "observable_announce",
-        "resourcepacks/Modern Retexturization.zip",
-        "resourcepacks/*Eating Animations More Compat.zip"
+        "observable_announce"
     ],
     "projects": {
         "ars-numerichud": {
@@ -34,6 +33,9 @@
             "side": "CLIENT"
         },
         "rsls": {
+            "side": "CLIENT"
+        },
+        "styled-player-list-unofficial-neoforge": {
             "side": "CLIENT"
         },
         "tooltip-overhaul": {

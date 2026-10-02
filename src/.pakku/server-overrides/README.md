@@ -22,15 +22,10 @@ Memory and other JVM settings are in `user_jvm_args.txt`. Change `-Xms` and `-Xm
 (keep them equal) and leave 1-1.5 GB of the machine's RAM free for the operating system.
 The rest of the file contains Aikar's G1GC flags; leave them as they are unless you know why you want to change them.
 
-## Stopping and automatic restart
-
-- Stop the server with the `/stop` command in the server console, or with Ctrl+C. The server stays stopped.
-- If the server **crashes**, the start script restarts it automatically after 10 seconds.
-- If it crashes 5 times in a row (each within 10 minutes of starting), the script gives up so it does not
-  loop forever. Check `logs/latest.log` and `crash-reports/` to find the cause.
 
 You can change this behaviour with environment variables set before running the script:
-`MAX_CRASHES` (default 5), `CRASH_WINDOW` in seconds (default 600) and `RESTART_DELAY` in seconds (default 10).
+`MAX_CRASHES` (default 5), `CRASH_WINDOW` in seconds (default 600), `MIN_UPTIME` in seconds (default 60)
+and `RESTART_DELAY` in seconds (default 10).
 
 On Linux, run the script inside `screen` or `tmux` if you want it to keep running after you disconnect.
 

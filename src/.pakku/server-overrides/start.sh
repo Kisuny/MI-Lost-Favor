@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-# Installs NeoForge on first run, then starts the server. Requires Java 21+.
 set -e
 cd "$(dirname "$0")"
 
 NEOFORGE_VERSION="21.1.249"
+
+MAX_CRASHES="${MAX_CRASHES:-5}"
+CRASH_WINDOW="${CRASH_WINDOW:-600}"
+RESTART_DELAY="${RESTART_DELAY:-10}"
+MIN_UPTIME="${MIN_UPTIME:-60}"
 
 if ! command -v java >/dev/null 2>&1; then
     echo "Java was not found. Install Java 21 or newer." >&2
@@ -26,4 +30,50 @@ if [ ! -f "$ARGS_FILE" ]; then
     rm -f "$INSTALLER" "${INSTALLER}.log"
 fi
 
-exec java @user_jvm_args.txt @"$ARGS_FILE" nogui "$@"
+STOP=0
+CHILD=""
+trap 'STOP=1; [ -n "$CHILD" ] && kill -TERM "$CHILD" 2>/dev/null' INT TERM
+
+CRASHES=0
+while true; do
+    STARTED=$(date +%s)
+
+    java @user_jvm_args.txt @"$ARGS_FILE" nogui "$@" <&0 &
+    CHILD=$!
+    CODE=0
+    wait "$CHILD" || CODE=$?
+    if [ "$STOP" -eq 1 ]; then
+        wait "$CHILD" 2>/dev/null || true
+        echo "Server stopped."
+        exit 0
+    fi
+    CHILD=""
+
+    UPTIME=$(( $(date +%s) - STARTED ))
+
+    if [ "$CODE" -eq 0 ] && [ "$UPTIME" -ge "$MIN_UPTIME" ]; then
+        CRASHES=0
+        echo "Server stopped after ${UPTIME}s."
+    else
+        if [ "$UPTIME" -gt "$CRASH_WINDOW" ]; then
+            CRASHES=0
+        fi
+        CRASHES=$(( CRASHES + 1 ))
+        echo "Server exited with code ${CODE} after ${UPTIME}s (failure ${CRASHES} of ${MAX_CRASHES})." >&2
+
+        if [ "$CRASHES" -ge "$MAX_CRASHES" ]; then
+            echo "Too many failures in a row, not restarting. Check the logs and crash-reports folders." >&2
+            exit 1
+        fi
+    fi
+
+    echo "Restarting in ${RESTART_DELAY} seconds. Press Ctrl+C to cancel."
+    sleep "$RESTART_DELAY" &
+    CHILD=$!
+    wait "$CHILD" || true
+    if [ "$STOP" -eq 1 ]; then
+        echo "Restart cancelled."
+        exit 0
+    fi
+    CHILD=""
+done

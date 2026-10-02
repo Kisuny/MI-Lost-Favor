@@ -7,7 +7,7 @@ import zipfile
 
 parser = argparse.ArgumentParser()
 parser.add_argument("zip_path")
-parser.add_argument("--ram", type=int, default=8160)
+parser.add_argument("--ram", type=int, default=8192)
 parser.add_argument("--name")
 args = parser.parse_args()
 

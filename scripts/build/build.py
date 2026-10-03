@@ -144,8 +144,12 @@ if not args.client_only and not server_zip:
 
 if server_zip:
     mods = [p for p in pakku_lock["projects"] if p["type"] == "MOD"]
-    client_slugs = {slug for slug, value in pakku_config.get("projects", {}).items() if value.get("side") == "CLIENT"}
-    expected = len(mods) - len(client_slugs)
+    excluded_slugs = {
+        slug
+        for slug, value in pakku_config.get("projects", {}).items()
+        if value.get("side") == "CLIENT" or value.get("export") is False
+    }
+    expected = len(mods) - len(excluded_slugs)
     with zipfile.ZipFile(server_zip) as archive:
         actual = sum(1 for n in archive.namelist() if re.match(r"^mods/.*\.jar$", n))
     print(f"\nServer pack jars: {actual} (expected at least {expected})")

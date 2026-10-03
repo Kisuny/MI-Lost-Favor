@@ -1,1 +1,0 @@
-For more convenient development, I use symlinks, which is why all mods are in .jar format on GitHub. There may be a way to use .index from the Prism client just as conveniently, together with symlinks, but I haven't found one yet. Nevertheless, there is a list of mods that exceeds GitHub's 100 MB limit, and this list is collected here for manual installation.

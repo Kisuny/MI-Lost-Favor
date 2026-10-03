@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 cd /d "%~dp0"
 
-set NEOFORGE_VERSION=21.1.249
+set NEOFORGE_VERSION=@NEOFORGE_VERSION@
 
 if not defined MAX_CRASHES set MAX_CRASHES=5
 if not defined CRASH_WINDOW set CRASH_WINDOW=600

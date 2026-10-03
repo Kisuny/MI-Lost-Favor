@@ -4,7 +4,7 @@ from pathlib import Path
 
 EXCLUDE = ["SimpleDiscordLink"]
 
-root = Path(__file__).resolve().parent.parent
+root = Path(__file__).resolve().parents[2]
 source = root / "server_mods"
 target = root / "src" / ".pakku" / "server-overrides"
 

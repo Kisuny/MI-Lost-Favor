@@ -4,10 +4,13 @@ import os
 import shutil
 import tempfile
 import zipfile
+from pathlib import Path
+
+SETTINGS = json.loads((Path(__file__).resolve().parent / "build_settings.json").read_text(encoding="utf-8"))
 
 parser = argparse.ArgumentParser()
 parser.add_argument("zip_path")
-parser.add_argument("--ram", type=int, default=8192)
+parser.add_argument("--ram", type=int, default=SETTINGS["recommended_ram"])
 parser.add_argument("--name")
 args = parser.parse_args()
 

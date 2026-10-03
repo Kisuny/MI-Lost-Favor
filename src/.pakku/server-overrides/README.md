@@ -3,7 +3,7 @@
 ## Requirements
 
 - **Java 21 or newer** (check with `java -version`).
-- Enough RAM: the default is 8 GB for the server (see [Memory](#memory)), so the machine should have at least 9-10 GB.
+- Enough RAM: the default is 8 GB for the server, so the machine should have at least 9-10 GB.
 
 ## First start
 
@@ -16,20 +16,15 @@
 
 The first start takes a while because the world is generated and all mods are loaded.
 
-## Memory
+## JVM args
 
 Memory and other JVM settings are in `user_jvm_args.txt`. Change `-Xms` and `-Xmx` together
 (keep them equal) and leave 1-1.5 GB of the machine's RAM free for the operating system.
 The rest of the file contains Aikar's G1GC flags; leave them as they are unless you know why you want to change them.
 
-
-You can change this behaviour with environment variables set before running the script:
-`MAX_CRASHES` (default 5), `CRASH_WINDOW` in seconds (default 600), `MIN_UPTIME` in seconds (default 60)
-and `RESTART_DELAY` in seconds (default 10).
-
 On Linux, run the script inside `screen` or `tmux` if you want it to keep running after you disconnect.
 
-## Updating to a new version
+## Updating to a new pack version
 
 1. Stop the server with `/stop`.
 2. **Back up the whole server folder**, especially the world.

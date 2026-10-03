@@ -1,0 +1,82 @@
+name: Build modpack
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Modpack version (leave empty to use the one from pakku.json)
+        required: false
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Build client and server packs
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          VERSION_ARGS=()
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            VERSION_ARGS=(--version "${GITHUB_REF_NAME#v}")
+          elif [[ -n "$INPUT_VERSION" ]]; then
+            VERSION_ARGS=(--version "$INPUT_VERSION")
+          fi
+          python3 scripts/build/build.py "${VERSION_ARGS[@]}"
+
+      - name: Read modpack version
+        id: version
+        run: echo "version=$(jq -r .version src/pakku.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate mod changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p ../dist
+          TAGS=$(gh api "repos/${GITHUB_REPOSITORY}/git/matching-refs/tags/v" --paginate --jq '.[].ref' | sed 's|refs/tags/||' | sort -V || true)
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            PREV=$(printf '%s\n%s\n' "$TAGS" "$GITHUB_REF_NAME" | sort -Vu | grep -B1 -x "$GITHUB_REF_NAME" | head -n 1)
+            [[ "$PREV" == "$GITHUB_REF_NAME" ]] && PREV=""
+          else
+            PREV=$(echo "$TAGS" | tail -n 1)
+          fi
+          if [[ -n "$PREV" ]] && gh api -H "Accept: application/vnd.github.raw" "repos/${GITHUB_REPOSITORY}/contents/src/pakku-lock.json?ref=${PREV}" > old-lock.json; then
+            echo "Comparing with ${PREV}"
+            java -jar ../pakku.jar diff -v --markdown ../dist/changes.md old-lock.json pakku-lock.json || true
+          fi
+          if [[ ! -s ../dist/changes.md ]]; then
+            echo "No mod changes detected (or no previous release to compare with)." > ../dist/changes.md
+          fi
+          cat ../dist/changes.md
+        working-directory: src
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: MI-Lost-Favor-${{ steps.version.outputs.version }}
+          path: dist/*
+          if-no-files-found: error
+
+      - name: Create GitHub release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ steps.version.outputs.version }}
+          files: dist/*.zip
+          body_path: dist/changes.md
+          generate_release_notes: true

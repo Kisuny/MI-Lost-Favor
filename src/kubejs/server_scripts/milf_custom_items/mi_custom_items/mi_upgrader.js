@@ -156,6 +156,9 @@ ServerEvents.recipes(event => {
 
 ServerEvents.modifyRecipeResult("milf:mi_upgrader_recipe", event =>{
 
+    // some mods/viewers assemble recipes with an empty grid - keep the default result then
+    if (event.grid.size() === 0) return
+
     let prev = event.grid.getItem(0)
 
     let outputItem = new $ItemStack(event.item.asHolder(), 1, prev.componentsPatch)

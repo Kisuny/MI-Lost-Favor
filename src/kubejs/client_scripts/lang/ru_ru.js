@@ -34,11 +34,11 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.early_items', `Этот мир больше не ${MilfEffects.GLITCH("отвергает")} вас...`)
 
     event.add('gateways.tiered/haven', 'Haven Gateway')
-    event.add('wave_entity.apotheosis.amethyst_crab', 'Усиленный Amethest Crab')
-    event.add('wave_entity.apotheosis.ferrous_wroughtnaut', 'Усиленный Ferrous Wroughtnaut')
-    event.add('wave_entity.apotheosis.black_charro', 'Усиленный Black Charro')
-    event.add('wave_entity.apotheosis.mowziesmobs_umvuthi', 'Усиленный Umvuthi')
-    event.add('wave_entity.apotheosis.mowziesmobs_frostmaw', 'Усиленный Frostmaw')
+    event.add("apotheosis", 'wave_entity.apotheosis.amethyst_crab', 'Усиленный Amethest Crab')
+    event.add("apotheosis", 'wave_entity.apotheosis.ferrous_wroughtnaut', 'Усиленный Ferrous Wroughtnaut')
+    event.add("apotheosis", 'wave_entity.apotheosis.black_charro', 'Усиленный Black Charro')
+    event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_umvuthi', 'Усиленный Umvuthi')
+    event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_frostmaw', 'Усиленный Frostmaw')
 
     const rarityRu = { uncommon: 'Необычн', rare: 'Редк', epic: 'Эпическ', mythic: 'Мифическ' }
     const rarityRuEndings = { legs: 'ых Поножей', chest: 'ого Нагрудника', hand: 'ого Оружия', helm: 'ого Шлема', feet: 'их Ботинок' }
@@ -47,41 +47,41 @@ ClientEvents.lang('ru_ru', event => {
     worlds_tier.forEach(tier => {
         rarity.forEach(rar => {
             Object.entries(rarityRuEndings).forEach(([slot, ending]) => {
-                event.add(`advancements.apotheosis.progression.${tier}.criteria.${rar}_${slot}`, `Надеть ${rarityRu[rar]}${ending}`)
+                event.add("apotheosis", `advancements.apotheosis.progression.${tier}.criteria.${rar}_${slot}`, `Надеть ${rarityRu[rar]}${ending}`)
             })
         })
     })
 
-    event.add('advancements.apotheosis.progression.frontier.criteria.complete_haven_gate', 'Завершить Врата Haven')
+    event.add("apotheosis", 'advancements.apotheosis.progression.frontier.criteria.complete_haven_gate', 'Завершить Врата Haven')
 
     // ascent (редкий) — убийства
-    event.add('advancements.apotheosis.progression.ascent.criteria.kill_ender_dragon', 'Убить Эндер-Дракона')
-    event.add('advancements.apotheosis.progression.ascent.criteria.kill_wither', 'Убить Иссушителя')
-    event.add('advancements.apotheosis.progression.ascent.criteria.kill_elder_guardian', 'Убить Старшего Стража')
-    event.add('advancements.apotheosis.progression.ascent.criteria.kill_warden', 'Убить Хранителя')
+    event.add("apotheosis", 'advancements.apotheosis.progression.ascent.criteria.kill_ender_dragon', 'Убить Эндер-Дракона')
+    event.add("apotheosis", 'advancements.apotheosis.progression.ascent.criteria.kill_wither', 'Убить Иссушителя')
+    event.add("apotheosis", 'advancements.apotheosis.progression.ascent.criteria.kill_elder_guardian', 'Убить Старшего Стража')
+    event.add("apotheosis", 'advancements.apotheosis.progression.ascent.criteria.kill_warden', 'Убить Хранителя')
 
     // summit (эпический) — убийства
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_lich', 'Убить Ночного Лича')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_obsidilith', 'Убить Обсидилита')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_void_blossom', 'Убить Бездонный Цветок')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_gauntlet', 'Убить Незерскую Перчатку')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_geburah', 'Убить Гебуру')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Убить Малькут')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Убить Хесед')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Убить Лунное Чудовище')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_azazel_human', 'Убить Истинного Азазель')
-    event.add('advancements.apotheosis.progression.summit.criteria.kill_azazel', 'Убить велкую божественную Колесницу Азазель')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_lich', 'Убить Ночного Лича')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_obsidilith', 'Убить Обсидилита')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_void_blossom', 'Убить Бездонный Цветок')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_gauntlet', 'Убить Незерскую Перчатку')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_geburah', 'Убить Гебуру')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Убить Малькут')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Убить Хесед')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Убить Лунное Чудовище')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_azazel_human', 'Убить Истинного Азазель')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_azazel', 'Убить велкую божественную Колесницу Азазель')
 
     // pinnacle (мифический) — убийства
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Убить Химеру Вилден')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_the_harbinger', 'Убить Предвестника')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ancient_remnant', 'Убить Древний Остаток')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ignis', 'Убить Игниса')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_netherite_monstrosity', 'Убить Незеритовое Чудовище')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_maledictus', 'Убить Малeдиктуса')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_ender_guardian', 'Убить Стража Края')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Убить Сциллу')
-    event.add('advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Убить Левиафана')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Убить Химеру Вилден')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_the_harbinger', 'Убить Предвестника')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_ancient_remnant', 'Убить Древний Остаток')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_ignis', 'Убить Игниса')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_netherite_monstrosity', 'Убить Незеритовое Чудовище')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_maledictus', 'Убить Малeдиктуса')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_ender_guardian', 'Убить Стража Края')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Убить Сциллу')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Убить Левиафана')
 
     event.add('milf.how_to_seed.tooltip', 'Можно найти в птичьем гнезде или купить на рынке')
     event.add('milf.how_to_get_blaze_core.tooltip', 'Можно получить с шансом 50% если убить ключом: The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
@@ -220,8 +220,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add("rite.milf.witch_hazel_broom", "Ритуал Формирования")
     event.add("rite.milf.mahogany_broom", "Ритуал Формирования")
 
-    event.add("text.apotheosis.world_tier_tutorial", "Этот предмет имеет неизвестную силу")
-    event.add("text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${MilfEffects.UP_DOWN("World Tier: Haven")}, чтобы разблокировать её`)
+    event.add("apotheosis", "text.apotheosis.world_tier_tutorial", "Этот предмет имеет неизвестную силу")
+    event.add("apotheosis", "text.apotheosis.world_tier_tutorial.2", `Нажмите кнопку радиального меню и активируйте ${MilfEffects.UP_DOWN("World Tier: Haven")}, чтобы разблокировать её`)
+    event.add("smallships", "tips.smallships.sail_toggle", `Нажмите кнопку радиального меню и активируйте ${MilfEffects.UP_DOWN("Toggle Sail")}, чтобы поставить / убрать парус`)
 
     event.add("dimension.spectrum.deeper_down", `Глубокие Низины`)
     event.add("milf.crimson_veil_elixir.tooltip", `Выпей это и ${MilfEffects.WIGGLE("усни")} - и лишь во сне откроется путь в ${MilfEffects.GRAD.custom("Кровавые Пустоши", "#8A0303", "#D12F0E")}, за ${MilfEffects.GLITCH("багровую завесу")}, где покоятся ${MilfEffects.GRAD.custom("ужасы мёртвых", "#D12F0E", "#841B4C")}`)

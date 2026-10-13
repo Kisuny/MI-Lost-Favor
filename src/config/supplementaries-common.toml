@@ -711,7 +711,7 @@
 		# Range: 10 ~ 600
 		min_search_radius = 75
 		#Makes blocks tagged as 'tinted_on_map' use their tint color. This allows for accurate biome colors for water and grass as well as other custom block that use any tint
-		tinted_blocks_on_maps = true
+		tinted_blocks_on_maps = false
 
 		[tweaks.map_tweaks.random_adventurer_maps]
 			#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).

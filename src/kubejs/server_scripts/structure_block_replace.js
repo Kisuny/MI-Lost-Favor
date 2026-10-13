@@ -1,52 +1,50 @@
-const BLOCK_REPLACEMENTS = {
-    'minecraft:enchanting_table': 'minecraft:lectern',
-    'minecraft:blast_furnace': 'ytech:primitive_smelter',
-    'minecraft:crafting_table': 'minecraft:bookshelf',
-    'minecraft:hopper': 'woodenhopper:wooden_hopper',
-    'immersiveengineering:workbench': 'supplementaries:clock_block',
-    'immersiveengineering:crate': 'minecraft:barrel',
-    'eidolon_repraised:lead_block': 'modern_industrialization:lead_block',
-    'minecraft:iron_block': 'minecraft:raw_iron_block',
-    'minecraft:gold_block': 'minecraft:raw_gold_block',
-    'eidolon_repraised:crucible': 'minecraft:cauldron',
-    'farmersdelight:cutting_board': 'cookingforblockheads:cutting_board',
-    'farmersdelight:cooking_pot': 'grimoireofgaia:deco_mandragora_pot',
-    'farmersdelight:stove': 'cookingforblockheads:connector',
-    'aquaculture:tackle_box': 'supplementaries:flower_box',
-    'minecraft:anvil' :  "minecraft:grindstone",
-    'minecraft:chipped_anvil' : "minecraft:grindstone",
-    'minecraft:damaged_anvil': "minecraft:grindstone"
-}
-MoreJS.structureLoad((event) => {
+// const BLOCK_REPLACEMENTS = {
+//     'minecraft:enchanting_table': 'minecraft:lectern',
+//     'minecraft:blast_furnace': 'ytech:primitive_smelter',
+//     'minecraft:crafting_table': 'minecraft:bookshelf',
+//     'minecraft:hopper': 'woodenhopper:wooden_hopper',
+//     'immersiveengineering:workbench': 'supplementaries:clock_block',
+//     'immersiveengineering:crate': 'minecraft:barrel',
+//     'minecraft:iron_block': 'minecraft:raw_iron_block',
+//     'minecraft:gold_block': 'minecraft:raw_gold_block',
+//     'farmersdelight:cutting_board': 'cookingforblockheads:cutting_board',
+//     'farmersdelight:cooking_pot': 'grimoireofgaia:deco_mandragora_pot',
+//     'farmersdelight:stove': 'cookingforblockheads:connector',
+//     'aquaculture:tackle_box': 'supplementaries:flower_box',
+//     'minecraft:anvil' :  "minecraft:grindstone",
+//     'minecraft:chipped_anvil' : "minecraft:grindstone",
+//     'minecraft:damaged_anvil': "minecraft:grindstone"
+// }
+// MoreJS.structureLoad((event) => {
 
-    event.forEachPalettes((palette) => {
+//     event.forEachPalettes((palette) => {
 
-        palette.forEach((blockInfo) => {
+//         palette.forEach((blockInfo) => {
 
-            let replacement = BLOCK_REPLACEMENTS[blockInfo.id]
+//             let replacement = BLOCK_REPLACEMENTS[blockInfo.id]
 
-            if (replacement) {
-                //console.log(`[milf] ${event.id}: ${blockInfo.id} -> ${replacement} | pos: ${blockInfo.pos()}`);
+//             if (replacement) {
+//                 //console.log(`[milf] ${event.id}: ${blockInfo.id} -> ${replacement} | pos: ${blockInfo.pos()}`);
                 
-                let oldProperties = blockInfo.properties                
-                blockInfo.setBlock(replacement, oldProperties)
+//                 let oldProperties = blockInfo.properties                
+//                 blockInfo.setBlock(replacement, oldProperties)
 
-                return
-            }
+//                 return
+//             }
 
-            if (blockInfo.id === 'minecraft:jigsaw') {
+//             if (blockInfo.id === 'minecraft:jigsaw') {
 
-                let finalState = blockInfo.getNbt()?.getString('final_state')
-                let jigsawReplacement = BLOCK_REPLACEMENTS[finalState]
+//                 let finalState = blockInfo.getNbt()?.getString('final_state')
+//                 let jigsawReplacement = BLOCK_REPLACEMENTS[finalState]
 
-                if (jigsawReplacement) {
-                    // console.log(`[milf] ${event.id}: jigsaw final_state ${finalState} -> ${jigsawReplacement}`);
-                    blockInfo.getNbt().putString('final_state', jigsawReplacement)
-                }
-            }
+//                 if (jigsawReplacement) {
+//                     // console.log(`[milf] ${event.id}: jigsaw final_state ${finalState} -> ${jigsawReplacement}`);
+//                     blockInfo.getNbt().putString('final_state', jigsawReplacement)
+//                 }
+//             }
 
-        })
+//         })
 
-    })
+//     })
     
-})
+// })

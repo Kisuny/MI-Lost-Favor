@@ -115,6 +115,24 @@ let builders = [
         .withMaterialSet("shiny")
         .addParts(["ingot", "nugget", "rod", "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust", "tiny_dust"])
         .addCustomParts(["node", "impetus", "fractured_impetus"])
+        .withDefaultRecipes(),
+
+    new MIMaterialBuilder("brass", "Brass", 0xd9a441)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "thaumaturge:ingot_brass" })
+        .addParts(["plate"])
+        .withDefaultRecipes(),
+
+    new MIMaterialBuilder("thaumium", "Thaumium", 0x6a4c9c)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "thaumaturge:ingot_thaumium" })
+        .addParts(["plate"])
+        .withDefaultRecipes(),
+
+    new MIMaterialBuilder("void_metal", "Void Metal", 0x261a33)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "thaumaturge:ingot_void" })
+        .addParts(["plate"])
         .withDefaultRecipes()
 ]
 

@@ -167,3 +167,12 @@ ServerEvents.tags('item', event => {
         'spectrum:moonstone_powder_block'
     ])
 })
+
+ServerEvents.tags('block', event => {
+    // block version of milf:pedestal_basic: Salis Mundus on these turns them into an Arcane Workbench (thaumaturge_recipes.js)
+    event.add('milf:pedestal_basic', [
+        'spectrum:pedestal_basic_topaz',
+        'spectrum:pedestal_basic_citrine',
+        'spectrum:pedestal_basic_amethyst',
+    ])
+})

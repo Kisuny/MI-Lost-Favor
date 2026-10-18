@@ -10,7 +10,13 @@
 	id: "65C3129D0852EC26"
 	images: [ ]
 	order_index: 3
-	quest_links: [ ]
+	quest_links: [{
+		id: "3362A093387E8C38"
+		linked_quest: "30ED4F9B49BFC36C"
+		shape: "gear"
+		x: 12.5d
+		y: -3.0d
+	}]
 	quests: [
 		{
 			dependencies: ["0501BDB7ED850B47"]
@@ -3422,13 +3428,15 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: false
 			id: "426F71334E75DDD0"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "0FC4E5ADDF74B638"
 				item: { count: 1, id: "ars_additions:ritual_locate_structure" }
 				type: "item"
 			}]
 			x: 9.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
@@ -3507,444 +3515,6 @@
 			}]
 			x: 38.5d
 			y: -4.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "6BF70D81E65F2F4B"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "bosses_of_mass_destruction:item/blazing_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "5755F56DA8D5938F"
-				structure: "bosses_of_mass_destruction:gauntlet_arena"
-				type: "structure"
-			}]
-			x: 8.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "041B31CCAB569B71"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "bosses_of_mass_destruction:item/ancient_anima"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "670D85BD48F1F54C"
-				structure: "bosses_of_mass_destruction:lich_tower"
-				type: "structure"
-			}]
-			x: 7.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "7B54BBAA9D346DD8"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "bosses_of_mass_destruction:item/obsidian_heart"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "1D60979E5ED5A368"
-				structure: "bosses_of_mass_destruction:obsidilith_arena"
-				type: "structure"
-			}]
-			x: 10.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "75E72BED18FC6B05"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "bosses_of_mass_destruction:item/void_thorn"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "02206AC8E46525CE"
-				structure: "bosses_of_mass_destruction:void_blossom"
-				type: "structure"
-			}]
-			x: 10.0d
-			y: -9.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "7015BD53EBE64378"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "supplementaries:textures/map/decorations/pillager_outpost.png"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "61BC1F3B5742BD09"
-				structure: "takesapillage:bastille"
-				type: "structure"
-			}]
-			x: 8.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "170549C1D01D801B"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "particle_effects:textures/particle/trial_omen/1.png"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "3187B766555468F5"
-				structure: "hellish_trials:nether_trial"
-				type: "structure"
-			}]
-			x: 9.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "7CCC31F27C2830FE"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/storm_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "54DECF107DCFA6C0"
-				structure: "cataclysm:acropolis"
-				type: "structure"
-			}]
-			x: 8.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "1817CE80C0B23EEC"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/mech_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "010FE98BA3F88464"
-				structure: "cataclysm:ancient_factory"
-				type: "structure"
-			}]
-			x: 8.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "0773200A913364DF"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/desert_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "618CAC33261F8DCB"
-				structure: "cataclysm:cursed_pyramid"
-				type: "structure"
-			}]
-			x: 8.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "2D6FB53276C42379"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/cursed_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "67CE375D4F94BF47"
-				structure: "cataclysm:frosted_prison"
-				type: "structure"
-			}]
-			x: 7.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "29C40A0FF3F68E9A"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/abyss_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "35B405A5409141FB"
-				structure: "cataclysm:sunken_city"
-				type: "structure"
-			}]
-			x: 10.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "4D187BBF5C8A2A40"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/flame_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "32D4957D8D2D8CF6"
-				structure: "cataclysm:burning_arena"
-				type: "structure"
-			}]
-			x: 10.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "48A47918B8334F4C"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/monstrous_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "28AA7489937F82AF"
-				structure: "cataclysm:soul_black_smith"
-				type: "structure"
-			}]
-			x: 10.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "344D369598E48AD0"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/void_eye"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "45EB6DCE3B8AE3E4"
-				structure: "cataclysm:ruined_citadel"
-				type: "structure"
-			}]
-			x: 9.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "55C32802F2732A53"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "fdbosses:eye_of_chesed"
-				}
-				id: "5F56314E4D718C98"
-				structure: "fdbosses:chesed_arena"
-				type: "structure"
-			}]
-			x: 11.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "521B762C42C377C4"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "fdbosses:eye_of_geburah"
-				}
-				id: "39515E7F11402A32"
-				structure: "fdbosses:geburah_arena"
-				type: "structure"
-			}]
-			x: 7.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "6B9994ECADB101D4"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "fdbosses:eye_of_malkuth"
-				}
-				id: "6A1296738E4F75CC"
-				structure: "fdbosses:malkuth_arena"
-				type: "structure"
-			}]
-			x: 9.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "241904EB139D2EC6"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "cataclysm:item/amethyst_crab_meat"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "5A6F9F935D3E602A"
-				structure: "cataclysm:amethyst_nest"
-				type: "structure"
-			}]
-			x: 8.5d
-			y: -11.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "7A1E1144E845DD8B"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "mowziesmobs:ice_crystal"
-				}
-				id: "37EB29CD6B319B71"
-				structure: "mowziesmobs:frostmaw_spawn"
-				type: "structure"
-			}]
-			x: 9.5d
-			y: -11.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "1AE61E6DE10AEE0E"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"minecraft:damage": 0
-					}
-					id: "mowziesmobs:earthrend_gauntlet"
-				}
-				id: "0C29E60427DC71DB"
-				structure: "mowziesmobs:monastery"
-				type: "structure"
-			}]
-			x: 9.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "0909B9F372E65EB0"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "mowziesmobs:sol_visage"
-				}
-				id: "424C850B8AE39F90"
-				structure: "mowziesmobs:umvuthana_grove"
-				type: "structure"
-			}]
-			x: 11.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "4EFFBFF2F8957F26"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "mowziesmobs:wrought_axe"
-				}
-				id: "72B99CF9A32D2AE8"
-				structure: "mowziesmobs:wrought_chamber"
-				type: "structure"
-			}]
-			x: 6.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "20D0EB5CAD391BA4"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"hostilenetworks:data_model": "hostilenetworks:elder_guardian"
-					}
-					id: "hostilenetworks:data_model"
-				}
-				id: "55D138E216CA250E"
-				structure: "minecraft:monument"
-				type: "structure"
-			}]
-			x: 6.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["426F71334E75DDD0"]
-			entity_vis_size: 1.0f
-			id: "33255EBD3853DE59"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					components: {
-						"hostilenetworks:data_model": "hostilenetworks:warden"
-					}
-					id: "hostilenetworks:data_model"
-				}
-				id: "661480D841A4E0C3"
-				structure: "minecraft:ancient_city"
-				type: "structure"
-			}]
-			x: 11.5d
-			y: -8.0d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -5808,6 +5378,2380 @@
 			}]
 			x: 36.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["1588ACAB878D9062"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:scribing_tools"
+			}
+			id: "3E3F73718E6B80C9"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [
+				{
+					id: "77F47F822EA05896"
+					item: { count: 1, id: "thaumaturge:scribing_tools" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "657EBFE5B59D1A5A"
+					item: { count: 1, id: "thaumaturge:table_wood" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					entity_vis_cycle_seconds: 0.0f
+					entity_vis_enabled: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_slim_arms: false
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "06ADEBE17AA530DD"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "thaumaturge:research_table"
+					type: "observation"
+				}
+			]
+			x: 40.07d
+			y: -16.049999999999997d
+		}
+		{
+			dependencies: ["3E3F73718E6B80C9"]
+			entity_vis_size: 1.0f
+			id: "520C1ED651C224C6"
+			tasks: [{
+				id: "0EFC5B5505627A89"
+				item: { count: 1, id: "thaumaturge:deconstruction_table" }
+				type: "item"
+			}]
+			x: 42.67d
+			y: -15.049999999999997d
+		}
+		{
+			dependencies: ["3E3F73718E6B80C9"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:crucible"
+			}
+			id: "0949D24A83982030"
+			shape: "gear"
+			tasks: [
+				{
+					id: "3F7C0AB03DAB0D98"
+					item: { count: 1, id: "thaumaturge:crucible" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					entity_vis_cycle_seconds: 0.0f
+					entity_vis_enabled: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_slim_arms: false
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "78896AFAA2A8609D"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "thaumaturge:crucible"
+					type: "observation"
+				}
+			]
+			x: 40.07d
+			y: -18.93d
+		}
+		{
+			dependencies: ["0949D24A83982030"]
+			entity_vis_size: 1.0f
+			id: "24E66B4DBD8C98D6"
+			tasks: [{
+				id: "1594894720D35A5C"
+				item: { count: 1, id: "thaumaturge:nitor_yellow" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -21.09d
+		}
+		{
+			dependencies: ["24E66B4DBD8C98D6"]
+			entity_vis_size: 1.0f
+			id: "04C08C0E909C4B64"
+			tasks: [{
+				id: "3521F3A592BF19CB"
+				item: { count: 1, id: "thaumaturge:tallow" }
+				type: "item"
+			}]
+			x: 37.19d
+			y: -21.45d
+		}
+		{
+			dependencies: ["24E66B4DBD8C98D6"]
+			entity_vis_size: 1.0f
+			id: "4CDE1E7F1E4086AB"
+			tasks: [{
+				id: "62ABE2F2A7488C3C"
+				item: { count: 1, id: "thaumaturge:ingot_brass" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -22.89d
+		}
+		{
+			dependencies: ["24E66B4DBD8C98D6"]
+			entity_vis_size: 1.0f
+			id: "4B44A617B8DEDDF6"
+			tasks: [{
+				id: "5C984BFA5D9B86E2"
+				item: { count: 1, id: "thaumaturge:alumentum" }
+				type: "item"
+			}]
+			x: 41.87d
+			y: -21.09d
+		}
+		{
+			dependencies: ["4CDE1E7F1E4086AB"]
+			entity_vis_size: 1.0f
+			id: "104048DA97C73A1F"
+			tasks: [{
+				id: "53F3F62A34644623"
+				item: { count: 1, id: "thaumaturge:ingot_thaumium" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -24.69d
+		}
+		{
+			dependencies: ["104048DA97C73A1F"]
+			entity_vis_size: 1.0f
+			id: "40BEDA3032D1E742"
+			tasks: [{
+				id: "781FB32C9E155041"
+				item: { count: 1, id: "thaumaturge:cluster_iron" }
+				type: "item"
+			}]
+			x: 41.87d
+			y: -24.69d
+		}
+		{
+			dependencies: ["104048DA97C73A1F"]
+			entity_vis_size: 1.0f
+			id: "22C7191BCFD71303"
+			tasks: [{
+				id: "04981C0B8E1F5912"
+				item: { count: 1, id: "thaumaturge:smelter_basic" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -27.21d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:jar_normal"
+			}
+			id: "540F640BF5853DFD"
+			tasks: [
+				{
+					id: "4E397DAF9B1D1F3C"
+					item: { count: 1, id: "thaumaturge:jar_normal" }
+					type: "item"
+				}
+				{
+					id: "79EBCAE5D6AC0FA6"
+					item: { count: 1, id: "thaumaturge:label" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 43.31d
+			y: -32.91d
+		}
+		{
+			dependencies: ["22C7191BCFD71303"]
+			entity_vis_size: 1.0f
+			id: "5A8EC8030115C6B2"
+			size: 2.0d
+			tasks: [{
+				count: 8L
+				id: "57CE50E9FD95C922"
+				item: { count: 1, id: "thaumaturge:tube" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -31.89d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "129E5C68D2D4E946"
+			tasks: [{
+				id: "799406808AEDCBA8"
+				item: { count: 1, id: "thaumaturge:essentia_crystalizer" }
+				type: "item"
+			}]
+			x: 38.37d
+			y: -34.83d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "1A886E2BB6EA2FED"
+			tasks: [{
+				id: "40DF392C571C0EA0"
+				item: { count: 1, id: "thaumaturge:centrifuge" }
+				type: "item"
+			}]
+			x: 41.77d
+			y: -34.83d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "67D682C4C70D76FA"
+			size: 1.5d
+			tasks: [{
+				id: "5B1BECAC5FF8E620"
+				item: { count: 1, id: "thaumaturge:smelter_thaumium" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -38.19d
+		}
+		{
+			dependencies: [
+				"67D682C4C70D76FA"
+				"1A886E2BB6EA2FED"
+			]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:thaumatorium"
+			}
+			id: "1D4DC486A77B0175"
+			shape: "octagon"
+			tasks: [
+				{
+					id: "07446BD0556EE753"
+					item: { count: 1, id: "thaumaturge:thaumatorium" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "55993D4097E203F5"
+					item: { count: 1, id: "thaumaturge:alchemical_construct" }
+					type: "item"
+				}
+				{
+					id: "6D8AFACF05E401E8"
+					item: { count: 1, id: "thaumaturge:crucible" }
+					type: "item"
+				}
+			]
+			x: 42.97d
+			y: -39.89d
+		}
+		{
+			dependencies: ["1D4DC486A77B0175"]
+			entity_vis_size: 1.0f
+			id: "0177B46BC0535637"
+			tasks: [{
+				id: "237A604F24BE060D"
+				item: { count: 1, id: "thaumaturge:essentia_input" }
+				type: "item"
+			}]
+			x: 44.47d
+			y: -40.09d
+		}
+		{
+			dependencies: ["67D682C4C70D76FA"]
+			entity_vis_size: 1.0f
+			id: "2DDAE0C16C262178"
+			shape: "heart"
+			tasks: [{
+				id: "7E9147B508C8290B"
+				item: { count: 1, id: "thaumaturge:smelter_aux" }
+				type: "item"
+			}]
+			x: 38.32d
+			y: -37.59d
+		}
+		{
+			dependencies: ["104048DA97C73A1F"]
+			entity_vis_size: 1.0f
+			id: "15D5D4390EC62A2F"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "46352A6B7D2D7F1B"
+				item: { count: 1, id: "thaumaturge:goggles_revealing" }
+				type: "item"
+			}]
+			x: 35.75d
+			y: -23.97d
+		}
+		{
+			dependencies: ["15D5D4390EC62A2F"]
+			entity_vis_size: 1.0f
+			id: "36F23B5F89A658CE"
+			tasks: [{
+				id: "46B5278EF606E10E"
+				item: { count: 1, id: "thaumaturge:redstone_relay" }
+				type: "item"
+			}]
+			x: 32.47d
+			y: -23.09d
+		}
+		{
+			dependencies: ["36F23B5F89A658CE"]
+			entity_vis_size: 1.0f
+			hide_dependent_lines: true
+			id: "1746BE84CB237886"
+			tasks: [{
+				id: "324404E7C8961220"
+				item: { count: 1, id: "thaumaturge:arcane_ear" }
+				type: "item"
+			}]
+			x: 31.450000000000003d
+			y: -21.96d
+		}
+		{
+			dependencies: [
+				"1746BE84CB237886"
+				"2877B4AC72802D4E"
+			]
+			entity_vis_size: 1.0f
+			id: "53593B12E795DB8B"
+			tasks: [{
+				id: "176BF3454AB35EBA"
+				item: { count: 1, id: "thaumaturge:turret_basic" }
+				type: "item"
+			}]
+			x: 39.16285714285714d
+			y: -40.742142857142866d
+		}
+		{
+			dependencies: ["53593B12E795DB8B"]
+			entity_vis_size: 1.0f
+			id: "72A487B7230B485E"
+			tasks: [{
+				id: "68C0E852FF31D09D"
+				item: { count: 1, id: "thaumaturge:arcane_bore" }
+				type: "item"
+			}]
+			x: 37.85285714285714d
+			y: -41.55214285714286d
+		}
+		{
+			dependencies: ["15D5D4390EC62A2F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:infernal_furnace"
+			}
+			id: "73873453FF4644FD"
+			tasks: [
+				{
+					id: "181FD11B648ABA9C"
+					item: { count: 1, id: "thaumaturge:infernal_furnace" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "05536012E2AD4BE4"
+					item: { count: 1, id: "minecraft:obsidian" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "75456CA60BB4FA30"
+					item: { count: 1, id: "minecraft:nether_bricks" }
+					type: "item"
+				}
+				{
+					id: "48DAC57E2569F5E1"
+					item: { count: 1, id: "minecraft:iron_bars" }
+					type: "item"
+				}
+				{
+					id: "63CE81F033B42117"
+					item: { count: 1, id: "minecraft:lava_bucket" }
+					type: "item"
+				}
+			]
+			x: 34.31d
+			y: -20.89d
+		}
+		{
+			dependencies: ["73873453FF4644FD"]
+			entity_vis_size: 1.0f
+			id: "1E1BF0E9B203F377"
+			tasks: [{
+				id: "53D0222084E58402"
+				item: { count: 1, id: "thaumaturge:bellows" }
+				type: "item"
+			}]
+			x: 33.74d
+			y: -19.880000000000003d
+		}
+		{
+			dependencies: ["15D5D4390EC62A2F"]
+			entity_vis_size: 1.0f
+			id: "20C55281C8A7AC41"
+			tasks: [{
+				id: "4FD379E9A924ED00"
+				item: { count: 1, id: "thaumaturge:lamp_arcane" }
+				type: "item"
+			}]
+			x: 33.35d
+			y: -21.57d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "40E8E4E773DA5275"
+			tasks: [{
+				id: "1C192A83325B425E"
+				item: { count: 1, id: "thaumaturge:lamp_growth" }
+				type: "item"
+			}]
+			x: 59.4d
+			y: -21.34d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "4FB020299D9D090C"
+			tasks: [{
+				id: "4E8D572789FD953E"
+				item: { count: 1, id: "thaumaturge:mirror" }
+				type: "item"
+			}]
+			x: 62.05d
+			y: -27.67d
+		}
+		{
+			dependencies: ["4FB020299D9D090C"]
+			entity_vis_size: 1.0f
+			id: "1242B04D0E100118"
+			tasks: [{
+				id: "525BC9CD61864A33"
+				item: { count: 1, id: "thaumaturge:hand_mirror" }
+				type: "item"
+			}]
+			x: 63.459999999999994d
+			y: -26.12d
+		}
+		{
+			dependencies: ["15D5D4390EC62A2F"]
+			entity_vis_size: 1.0f
+			id: "54092235BD6D4CEE"
+			tasks: [{
+				id: "7CBFC89FF0ABDBAE"
+				item: { count: 1, id: "thaumaturge:hungry_chest" }
+				type: "item"
+			}]
+			x: 32.97d
+			y: -25.92d
+		}
+		{
+			dependencies: ["54092235BD6D4CEE"]
+			entity_vis_size: 1.0f
+			id: "674D31D3BAC0C66C"
+			tasks: [{
+				id: "403189ACA24B1992"
+				item: { count: 1, id: "thaumaturge:levitator" }
+				type: "item"
+			}]
+			x: 31.86d
+			y: -26.69d
+		}
+		{
+			dependencies: ["15D5D4390EC62A2F"]
+			entity_vis_size: 1.0f
+			id: "07B0438CE5D93837"
+			tasks: [{
+				id: "56AC3AB101292191"
+				item: { count: 1, id: "thaumaturge:dioptra" }
+				type: "item"
+			}]
+			x: 32.47d
+			y: -24.85d
+		}
+		{
+			dependencies: ["07B0438CE5D93837"]
+			entity_vis_size: 1.0f
+			id: "698605B50DAAED6D"
+			tasks: [{
+				id: "54D93D8D2F9FBEF7"
+				item: { count: 1, id: "thaumaturge:pattern_crafter" }
+				type: "item"
+			}]
+			x: 31.159999999999997d
+			y: -25.2d
+		}
+		{
+			dependencies: ["3E3F73718E6B80C9"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:cloth_chest"
+			}
+			id: "05085C3F579E623E"
+			shape: "heart"
+			tasks: [
+				{
+					id: "435C0FBF4099F5A1"
+					item: { count: 1, id: "thaumaturge:cloth_chest" }
+					type: "item"
+				}
+				{
+					id: "31B69DAEAB5573C8"
+					item: { count: 1, id: "thaumaturge:cloth_legs" }
+					type: "item"
+				}
+				{
+					id: "6623CD02B4F3F106"
+					item: { count: 1, id: "thaumaturge:cloth_boots" }
+					type: "item"
+				}
+			]
+			x: 42.67d
+			y: -16.85d
+		}
+		{
+			dependencies: ["22C7191BCFD71303"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:infusion_matrix"
+			}
+			id: "3C1DC3C6EAEDE881"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6F49CB2784976FAB"
+					item: { count: 1, id: "thaumaturge:infusion_matrix" }
+					type: "item"
+				}
+				{
+					id: "59AD6C2C2CC6C44F"
+					item: { count: 1, id: "thaumaturge:pedestal_arcane" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "24132D6FCE4AC1E2"
+					item: { count: 1, id: "thaumaturge:stone_arcane" }
+					type: "item"
+				}
+			]
+			x: 46.55d
+			y: -30.45d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "5E1B9BAF865E9FEC"
+			tasks: [{
+				id: "5209968F3CAB6C19"
+				item: { count: 1, id: "thaumaturge:crystal_aer" }
+				type: "item"
+			}]
+			x: 57.94d
+			y: -19.57d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "5DC22B786BF725AB"
+			tasks: [
+				{
+					id: "30CE8D3842F4E2ED"
+					item: { count: 1, id: "thaumaturge:matrix_speed" }
+					type: "item"
+				}
+				{
+					id: "1A8521374908B180"
+					item: { count: 1, id: "thaumaturge:matrix_cost" }
+					type: "item"
+				}
+			]
+			x: 50.97d
+			y: -45.57d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "3D62C8F179CCAD4F"
+			tasks: [{
+				id: "7928105621C62DB8"
+				item: { count: 1, id: "thaumaturge:stabilizer" }
+				type: "item"
+			}]
+			x: 53.13d
+			y: -44.760000000000005d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "68CB79595986B945"
+			tasks: [{
+				id: "6F1500D31DFB9104"
+				item: { count: 1, id: "thaumaturge:cloud_ring" }
+				type: "item"
+			}]
+			x: 57.81d
+			y: -41.46d
+		}
+		{
+			dependencies: ["68CB79595986B945"]
+			entity_vis_size: 1.0f
+			id: "61AA04F74D7EC9D2"
+			tasks: [{
+				id: "1E110E91517AD799"
+				item: { count: 1, id: "thaumaturge:curiosity_band" }
+				type: "item"
+			}]
+			x: 59.89d
+			y: -41.7d
+		}
+		{
+			dependencies: ["68CB79595986B945"]
+			entity_vis_size: 1.0f
+			id: "6563CC2B815DB2C9"
+			shape: "diamond"
+			tasks: [{
+				id: "1DFAC0F72F1DFDE3"
+				item: { count: 1, id: "thaumaturge:verdant_charm" }
+				type: "item"
+			}]
+			x: 58.57d
+			y: -43.1d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "0B4F37261BB3BC95"
+			size: 1.5d
+			tasks: [{
+				id: "497A8B5571909757"
+				item: { count: 1, id: "thaumaturge:traveller_boots" }
+				type: "item"
+			}]
+			x: 61.61d
+			y: -35.08d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			id: "1F3313C0D615B384"
+			tasks: [{
+				id: "076166208E08956F"
+				item: { count: 1, id: "thaumaturge:thaumostatic_harness" }
+				type: "item"
+			}]
+			x: 64.19d
+			y: -31.28d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			id: "61AC36389B00CF5C"
+			shape: "diamond"
+			tasks: [{
+				id: "19B03CA50A50D8D9"
+				item: { count: 1, id: "thaumaturge:elemental_pickaxe" }
+				type: "item"
+			}]
+			x: 60.68d
+			y: -40.7d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:fortress_helm"
+			}
+			id: "77B2606DFCA6422C"
+			size: 1.5d
+			tasks: [
+				{
+					id: "508AC3DA774AFDF9"
+					item: { count: 1, id: "thaumaturge:fortress_helm" }
+					type: "item"
+				}
+				{
+					id: "25419F69294772CA"
+					item: { count: 1, id: "thaumaturge:fortress_chest" }
+					type: "item"
+				}
+				{
+					id: "63D9F7FB3DB787A3"
+					item: { count: 1, id: "thaumaturge:fortress_legs" }
+					type: "item"
+				}
+			]
+			x: 63.230000000000004d
+			y: -35.58d
+		}
+		{
+			dependencies: [
+				"61AC36389B00CF5C"
+				"1A9DB5B9D43E551B"
+				"342B008AAA22D692"
+				"190253AE29FB43E4"
+				"3DD48A2EC9763DFA"
+			]
+			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
+			id: "399CDF2614FE7006"
+			shape: "heart"
+			tasks: [{
+				id: "6BFEAB5519E188B6"
+				item: { count: 1, id: "thaumaturge:arcane_grindstone" }
+				type: "item"
+			}]
+			x: 63.64d
+			y: -39.21d
+		}
+		{
+			dependencies: ["0949D24A83982030"]
+			entity_vis_size: 1.0f
+			id: "66302099EA46811B"
+			shape: "gear"
+			tasks: [{
+				id: "3C64494A46ECF14D"
+				type: "checkmark"
+			}]
+			x: 38.1772448979592d
+			y: -18.910714285714278d
+		}
+		{
+			dependencies: ["66302099EA46811B"]
+			entity_vis_size: 1.0f
+			id: "76CFEAC1C8219731"
+			tasks: [{
+				id: "5858C29850F87B58"
+				item: { components: { "thaumaturge:wand_parts": { cap: "thaumaturge:iron", rod: "thaumaturge:wood" } }, count: 1, id: "thaumaturge:wand" }
+				type: "item"
+			}]
+			x: 36.8272448979592d
+			y: -18.910714285714278d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "4D51459611976636"
+			shape: "diamond"
+			tasks: [{
+				id: "767C028D1C045D3B"
+				item: { count: 1, id: "thaumaturge:wand_cap_gold" }
+				type: "item"
+			}]
+			x: 51.34d
+			y: -18.9d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "43FC385D3F494A62"
+			tasks: [{
+				id: "75FA4B4DDFBBAF74"
+				item: { count: 1, id: "thaumaturge:wand_cap_thaumium" }
+				type: "item"
+			}]
+			x: 52.06d
+			y: -45.2d
+		}
+		{
+			dependencies: ["45687370CDDFC68C"]
+			entity_vis_size: 1.0f
+			id: "49AE05A0B9700459"
+			size: 2.0d
+			tasks: [{
+				id: "34C6A51C2817FB8E"
+				item: { count: 1, id: "thaumaturge:wand_rod_greatwood" }
+				type: "item"
+			}]
+			x: 45.96d
+			y: -17.230000000000004d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "63CB5090045DB2E8"
+			tasks: [{
+				id: "730EA7C937640491"
+				item: { count: 1, id: "thaumaturge:wand_rod_silverwood" }
+				type: "item"
+			}]
+			x: 55.62d
+			y: -43.33d
+		}
+		{
+			dependencies: ["63CB5090045DB2E8"]
+			entity_vis_size: 1.0f
+			id: "505BEF40815A169E"
+			tasks: [{
+				id: "43D3E6D07B88ED2C"
+				item: { count: 1, id: "thaumaturge:staff_rod_greatwood" }
+				type: "item"
+			}]
+			x: 57.12d
+			y: -44.34d
+		}
+		{
+			dependencies: ["63CB5090045DB2E8"]
+			entity_vis_size: 1.0f
+			id: "461DA4F63B6101BD"
+			tasks: [{
+				id: "29AFE4BF44138EDE"
+				item: { count: 1, id: "thaumaturge:staff_rod_primal" }
+				type: "item"
+			}]
+			x: 56.07d
+			y: -45.07d
+		}
+		{
+			dependencies: ["0949D24A83982030"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:focal_manipulator"
+			}
+			id: "45687370CDDFC68C"
+			tasks: [
+				{
+					id: "65DF5B16D484012D"
+					item: { count: 1, id: "thaumaturge:focus_1" }
+					type: "item"
+				}
+				{
+					id: "2B11F36BAA310E86"
+					item: { count: 1, id: "thaumaturge:focal_manipulator" }
+					type: "item"
+				}
+			]
+			x: 43.67d
+			y: -17.490000000000002d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "60CB3BF32C3391FE"
+			tasks: [{
+				id: "743C39FC92841139"
+				item: { count: 1, id: "thaumaturge:focus_2" }
+				type: "item"
+			}]
+			x: 49.85d
+			y: -45.85d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "670E10B8B275E45A"
+			tasks: [{
+				id: "401738CC13CE5F22"
+				item: { count: 1, id: "thaumaturge:node_stabilizer" }
+				type: "item"
+			}]
+			x: 62.650000000000006d
+			y: -23.7d
+		}
+		{
+			dependencies: ["670E10B8B275E45A"]
+			entity_vis_size: 1.0f
+			id: "29380A3F97E4285F"
+			tasks: [{
+				id: "21884D8A113B9990"
+				item: { count: 1, id: "thaumaturge:jar_node" }
+				type: "item"
+			}]
+			x: 63.980000000000004d
+			y: -23.14d
+		}
+		{
+			dependencies: [
+				"670E10B8B275E45A"
+				"3C1DC3C6EAEDE881"
+			]
+			entity_vis_size: 1.0f
+			id: "244614783F3F1780"
+			tasks: [{
+				id: "5524D4DDAF9B56E1"
+				item: { count: 1, id: "thaumaturge:node_stabilizer_advanced" }
+				type: "item"
+			}]
+			x: 61.29d
+			y: -24.9d
+		}
+		{
+			dependencies: ["244614783F3F1780"]
+			entity_vis_size: 1.0f
+			id: "39A63047B6E271AA"
+			tasks: [{
+				id: "156C782674C04E5E"
+				item: { count: 1, id: "thaumaturge:node_transducer" }
+				type: "item"
+			}]
+			x: 63.099999999999994d
+			y: -24.9d
+		}
+		{
+			dependencies: ["39A63047B6E271AA"]
+			entity_vis_size: 1.0f
+			id: "6567A34532952E78"
+			tasks: [{
+				id: "6A62A8B8FEC77587"
+				item: { count: 1, id: "thaumaturge:vis_relay" }
+				type: "item"
+			}]
+			x: 64.47d
+			y: -24.44d
+		}
+		{
+			dependencies: ["45687370CDDFC68C"]
+			entity_vis_size: 1.0f
+			id: "7D700FF7CA851852"
+			tasks: [{
+				id: "3C5607D0D48705BE"
+				item: { count: 1, id: "thaumaturge:recharge_pedestal" }
+				type: "item"
+			}]
+			x: 44.91d
+			y: -15.549999999999997d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "285C58E9B5B62D8D"
+			shape: "heart"
+			tasks: [{
+				id: "018D3A7B31C3F386"
+				item: { count: 1, id: "thaumaturge:amulet_vis_crafted" }
+				type: "item"
+			}]
+			x: 54.16d
+			y: -44.24d
+		}
+		{
+			dependencies: ["1E75BDA70DCA389A"]
+			entity_vis_size: 1.0f
+			id: "4BBEC7027C9A502D"
+			tasks: [{
+				id: "2F9894EF9B35183A"
+				item: { count: 1, id: "thaumaturge:condenser" }
+				type: "item"
+			}]
+			x: 32.42d
+			y: -29.78d
+		}
+		{
+			dependencies: ["67D682C4C70D76FA"]
+			entity_vis_size: 1.0f
+			id: "2877B4AC72802D4E"
+			shape: "gear"
+			tasks: [{
+				id: "51750667EB808415"
+				item: { count: 1, id: "thaumaturge:mind_clockwork" }
+				type: "item"
+			}]
+			x: 40.05285714285714d
+			y: -40.04214285714286d
+		}
+		{
+			dependencies: ["2877B4AC72802D4E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:golem_builder"
+			}
+			id: "34EEFEBD64F6C27D"
+			tasks: [
+				{
+					id: "123B07155AC38159"
+					item: { count: 1, id: "thaumaturge:golem_builder" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					entity_vis_cycle_seconds: 0.0f
+					entity_vis_enabled: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_slim_arms: false
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "27725C3D9D177420"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "thaumaturge:golem_builder"
+					type: "observation"
+				}
+			]
+			x: 40.082857142857144d
+			y: -41.422142857142866d
+		}
+		{
+			dependencies: ["34EEFEBD64F6C27D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:golem"
+			}
+			id: "281E6E28DA21C63C"
+			tasks: [
+				{
+					id: "37117439E5D7973F"
+					item: { count: 1, id: "thaumaturge:golem" }
+					type: "item"
+				}
+				{
+					id: "10AF4E74288562DC"
+					item: { count: 1, id: "thaumaturge:golem_bell" }
+					type: "item"
+				}
+			]
+			x: 40.05285714285714d
+			y: -42.742142857142866d
+		}
+		{
+			dependencies: ["281E6E28DA21C63C"]
+			entity_vis_size: 1.0f
+			id: "682C5216F8A7DDA1"
+			size: 1.5d
+			tasks: [{
+				id: "6C83568A3C51FA9B"
+				item: { count: 1, id: "thaumaturge:seal_blank" }
+				type: "item"
+			}]
+			x: 40.05285714285714d
+			y: -44.19214285714286d
+		}
+		{
+			dependencies: ["682C5216F8A7DDA1"]
+			entity_vis_size: 1.0f
+			id: "182044CAA76E0AA5"
+			tasks: [{
+				id: "227CD1559FFD9629"
+				item: { count: 1, id: "thaumaturge:seal_pickup" }
+				type: "item"
+			}]
+			x: 39.39285714285714d
+			y: -45.602142857142866d
+		}
+		{
+			dependencies: ["182044CAA76E0AA5"]
+			entity_vis_size: 1.0f
+			id: "3072D2959AA30598"
+			tasks: [{
+				id: "4CFDB5BFBB5FE0D7"
+				item: { count: 1, id: "thaumaturge:seal_fill" }
+				type: "item"
+			}]
+			x: 38.41285714285714d
+			y: -46.79214285714286d
+		}
+		{
+			dependencies: ["3072D2959AA30598"]
+			entity_vis_size: 1.0f
+			id: "40D2890C91875846"
+			tasks: [{
+				id: "1BF61F795AD78A00"
+				item: { count: 1, id: "thaumaturge:seal_empty" }
+				type: "item"
+			}]
+			x: 37.152857142857144d
+			y: -47.822142857142865d
+		}
+		{
+			dependencies: ["40D2890C91875846"]
+			entity_vis_size: 1.0f
+			id: "7AE7CBFF78C07DCD"
+			tasks: [{
+				id: "589733A6BF36FB1D"
+				item: { count: 1, id: "thaumaturge:seal_provider" }
+				type: "item"
+			}]
+			x: 37.78285714285714d
+			y: -49.422142857142866d
+		}
+		{
+			dependencies: ["682C5216F8A7DDA1"]
+			entity_vis_size: 1.0f
+			id: "33036141A7EFC6A3"
+			tasks: [{
+				id: "7491FBC3F7003674"
+				item: { count: 1, id: "thaumaturge:seal_guard" }
+				type: "item"
+			}]
+			x: 43.19285714285714d
+			y: -44.682142857142864d
+		}
+		{
+			dependencies: ["682C5216F8A7DDA1"]
+			entity_vis_size: 1.0f
+			id: "59BA3EF227DEFA80"
+			tasks: [{
+				id: "2519BDF9840F58D9"
+				item: { count: 1, id: "thaumaturge:seal_use" }
+				type: "item"
+			}]
+			x: 44.612857142857145d
+			y: -43.29214285714286d
+		}
+		{
+			dependencies: ["59BA3EF227DEFA80"]
+			entity_vis_size: 1.0f
+			id: "6349DC046496846C"
+			tasks: [{
+				id: "7DD785C9A8B554D2"
+				item: { count: 1, id: "thaumaturge:seal_harvest" }
+				type: "item"
+			}]
+			x: 45.71285714285714d
+			y: -44.072142857142865d
+		}
+		{
+			dependencies: ["682C5216F8A7DDA1"]
+			entity_vis_size: 1.0f
+			id: "5A162386624E004E"
+			tasks: [{
+				id: "4CBD55C634AF9F10"
+				item: { count: 1, id: "thaumaturge:seal_breaker" }
+				type: "item"
+			}]
+			x: 35.91285714285714d
+			y: -43.81214285714287d
+		}
+		{
+			dependencies: ["5A162386624E004E"]
+			entity_vis_size: 1.0f
+			id: "29C3A8141627209E"
+			tasks: [{
+				id: "19F8495431D822DC"
+				item: { count: 1, id: "thaumaturge:seal_lumber" }
+				type: "item"
+			}]
+			x: 35.502857142857145d
+			y: -45.29214285714286d
+		}
+		{
+			dependencies: ["3E3F73718E6B80C9"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:sanity_checker"
+			}
+			id: "3BA262DFCF93C405"
+			invisible: true
+			invisible_until_tasks: 1
+			tasks: [
+				{
+					id: "3F17F8D517052054"
+					type: "custom"
+				}
+				{
+					id: "43E01AAC37A2082C"
+					item: { count: 1, id: "thaumaturge:sanity_checker" }
+					type: "item"
+				}
+			]
+			x: 37.47d
+			y: -16.85d
+		}
+		{
+			dependencies: ["3BA262DFCF93C405"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "08CC8E58967FBF02"
+			tasks: [{
+				id: "4EA1E9533A8E10B1"
+				item: { count: 1, id: "thaumaturge:sanity_soap" }
+				type: "item"
+			}]
+			x: 36.07d
+			y: -16.85d
+		}
+		{
+			dependencies: ["174C5B8CF07DAAF8"]
+			entity_vis_size: 1.0f
+			id: "1BAF934FD4D5E1F7"
+			shape: "gear"
+			tasks: [{
+				id: "361BBE51AEEAB67F"
+				item: { count: 1, id: "thaumaturge:curio_rites" }
+				type: "item"
+			}]
+			x: 32.63d
+			y: -33.08d
+		}
+		{
+			dependencies: ["174C5B8CF07DAAF8"]
+			entity_vis_size: 1.0f
+			id: "71E017B9C7CA0DBE"
+			size: 1.5d
+			tasks: [{
+				id: "4DD9E2690E234F4A"
+				item: { count: 1, id: "thaumaturge:ingot_void" }
+				type: "item"
+			}]
+			x: 31.049999999999997d
+			y: -31.63d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "1A620DE639DFAB74"
+			tasks: [{
+				id: "0C7537439503F329"
+				item: { count: 1, id: "thaumaturge:void_siphon" }
+				type: "item"
+			}]
+			x: 29.32d
+			y: -35.54d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "2FAADC89017286DA"
+			tasks: [{
+				id: "0D580F4A5E5143A4"
+				item: { count: 1, id: "thaumaturge:essentia_reservoir" }
+				type: "item"
+			}]
+			x: 26.94d
+			y: -30.45d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "7106023D5E035950"
+			tasks: [{
+				id: "2061B618CA573B9C"
+				item: { count: 1, id: "thaumaturge:primal_crusher" }
+				type: "item"
+			}]
+			x: 27.04d
+			y: -29.3d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "161BB2F50197CE72"
+			tasks: [{
+				id: "46EEFE1677AC7BFD"
+				item: { count: 1, id: "thaumaturge:wand_cap_void" }
+				type: "item"
+			}]
+			x: 27.04d
+			y: -31.6d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "02AE0DCDF838E013"
+			tasks: [{
+				id: "27BA3011F935533D"
+				item: { count: 1, id: "thaumaturge:void_robe_chest" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: -34.72d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "58691BAB0F5B57EE"
+			tasks: [{
+				id: "39F0C474EFFD719B"
+				item: { count: 1, id: "thaumaturge:voidseer_charm" }
+				type: "item"
+			}]
+			x: 30.270000000000003d
+			y: -36.21d
+		}
+		{
+			dependencies: ["72D3205C95C1415D"]
+			entity_vis_size: 1.0f
+			id: "5659B38A951A8480"
+			tasks: [{
+				id: "08053163F8C7515D"
+				item: { count: 1, id: "thaumaturge:smelter_void" }
+				type: "item"
+			}]
+			x: 22.27d
+			y: -34.57d
+		}
+		{
+			dependencies: ["5659B38A951A8480"]
+			entity_vis_size: 1.0f
+			id: "0F72F6A6DFDAFF98"
+			shape: "octagon"
+			tasks: [{
+				id: "26A3AEEB91F92734"
+				item: { count: 1, id: "thaumaturge:advanced_alchemical_furnace" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -35.03d
+		}
+		{
+			dependencies: ["04C08C0E909C4B64"]
+			entity_vis_size: 1.0f
+			id: "4F1BC6ACA6A1EA49"
+			tasks: [{
+				id: "315BE3175B59F20E"
+				item: { count: 1, id: "thaumaturge:everfull_urn" }
+				type: "item"
+			}]
+			x: 35.79d
+			y: -20.8d
+		}
+		{
+			dependencies: [
+				"5A8EC8030115C6B2"
+				"22C7191BCFD71303"
+			]
+			entity_vis_size: 1.0f
+			id: "78F322A66F672151"
+			shape: "heart"
+			tasks: [{
+				id: "655F18479A8CD70D"
+				item: { count: 1, id: "thaumaturge:alembic" }
+				type: "item"
+			}]
+			x: 43.15d
+			y: -30.45d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "4342AF89312E42F7"
+			shape: "diamond"
+			tasks: [{
+				id: "611F4ED8CC241BFB"
+				item: { count: 1, id: "thaumaturge:wand_cap_copper" }
+				type: "item"
+			}]
+			x: 51.47d
+			y: -17.75d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "07A3E607B00B143C"
+			shape: "diamond"
+			tasks: [{
+				id: "1F2463729E7EC8CC"
+				item: { count: 1, id: "thaumaturge:wand_rod_blaze" }
+				type: "item"
+			}]
+			x: 51.42d
+			y: -16.6d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "207B3EC9BA549E84"
+			shape: "diamond"
+			tasks: [{
+				id: "56FF488AA37EC002"
+				item: { count: 1, id: "thaumaturge:wand_rod_bone" }
+				type: "item"
+			}]
+			x: 51.21d
+			y: -15.469999999999999d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "66B7FAA014CBF2FF"
+			shape: "diamond"
+			tasks: [{
+				id: "130145C31C1A4F5E"
+				item: { count: 1, id: "thaumaturge:wand_rod_ice" }
+				type: "item"
+			}]
+			x: 51.05d
+			y: -20.009999999999998d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "6DF8C2A53A138F6C"
+			shape: "diamond"
+			tasks: [{
+				id: "64B1F900BF4EA1F2"
+				item: { count: 1, id: "thaumaturge:wand_rod_reed" }
+				type: "item"
+			}]
+			x: 50.6d
+			y: -21.07d
+		}
+		{
+			dependencies: ["67D682C4C70D76FA"]
+			entity_vis_size: 1.0f
+			id: "23345201B7C80848"
+			shape: "heart"
+			tasks: [{
+				id: "5324C63C54593E6A"
+				item: { count: 1, id: "thaumaturge:smelter_vent" }
+				type: "item"
+			}]
+			x: 41.82d
+			y: -37.59d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			id: "190253AE29FB43E4"
+			shape: "diamond"
+			tasks: [{
+				id: "131FDD0B61FDE5A2"
+				item: { components: { "thaumaturge:infusion_enchantments": { arcing: 2 } }, count: 1, id: "thaumaturge:elemental_sword" }
+				type: "item"
+			}]
+			x: 64.16d
+			y: -32.65d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			id: "1A9DB5B9D43E551B"
+			shape: "diamond"
+			tasks: [{
+				id: "5CC16CC53CB7A2B5"
+				item: { components: { "thaumaturge:infusion_enchantments": { burrowing: 1, collector: 1 } }, count: 1, id: "thaumaturge:elemental_axe" }
+				type: "item"
+			}]
+			x: 62.36d
+			y: -38.54d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			id: "3DD48A2EC9763DFA"
+			shape: "diamond"
+			tasks: [{
+				id: "45EDCBC7A6C1C2FD"
+				item: { components: { "thaumaturge:infusion_enchantments": { destructive: 1 } }, count: 1, id: "thaumaturge:elemental_shovel" }
+				type: "item"
+			}]
+			x: 63.989999999999995d
+			y: -29.91d
+		}
+		{
+			dependencies: ["0B4F37261BB3BC95"]
+			entity_vis_size: 1.0f
+			id: "342B008AAA22D692"
+			shape: "diamond"
+			tasks: [{
+				id: "06CAC5DF3E088B19"
+				item: { count: 1, id: "thaumaturge:elemental_hoe" }
+				type: "item"
+			}]
+			x: 61.6d
+			y: -39.67d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "5BC548AB7EAF0F72"
+			tasks: [{
+				id: "70DBDA456457B2A0"
+				item: { count: 1, id: "thaumaturge:paving_stone_travel" }
+				type: "item"
+			}]
+			x: 58.7d
+			y: -20.43d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "317835520316F8ED"
+			tasks: [{
+				id: "38F0381C4A827B2B"
+				item: { count: 1, id: "thaumaturge:paving_stone_barrier" }
+				type: "item"
+			}]
+			x: 60.03d
+			y: -22.31d
+		}
+		{
+			dependencies: ["77B2606DFCA6422C"]
+			entity_vis_size: 1.0f
+			id: "1BFABB84BC30107A"
+			shape: "diamond"
+			tasks: [{
+				id: "0600CCB83021E4D0"
+				item: { components: { "thaumaturge:goggles_upgrade": { } }, count: 1, id: "thaumaturge:fortress_helm" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 64.4d
+			y: -36.66d
+		}
+		{
+			dependencies: ["77B2606DFCA6422C"]
+			entity_vis_size: 1.0f
+			id: "68E638B9068B5EB0"
+			shape: "diamond"
+			tasks: [{
+				id: "38E3877F515AC2EC"
+				item: { components: { "thaumaturge:fortress_mask": 0 }, count: 1, id: "thaumaturge:fortress_helm" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 63.900000000000006d
+			y: -37.95d
+		}
+		{
+			dependencies: ["77B2606DFCA6422C"]
+			entity_vis_size: 1.0f
+			id: "7FF7EE660537048D"
+			shape: "diamond"
+			tasks: [{
+				id: "09012D1ADE75EEAB"
+				item: { components: { "thaumaturge:fortress_mask": 1 }, count: 1, id: "thaumaturge:fortress_helm" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 65.12d
+			y: -33.99d
+		}
+		{
+			dependencies: ["77B2606DFCA6422C"]
+			entity_vis_size: 1.0f
+			id: "6310A4BEF8569057"
+			shape: "diamond"
+			tasks: [{
+				id: "0A9C70747CB4D752"
+				item: { components: { "thaumaturge:fortress_mask": 2 }, count: 1, id: "thaumaturge:fortress_helm" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 64.81d
+			y: -35.34d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "1F6A2272195D6B60"
+			tasks: [{
+				id: "2F62DFAF1F4A1048"
+				item: { count: 1, id: "thaumaturge:jar_brain" }
+				type: "item"
+			}]
+			x: 60.59d
+			y: -23.32d
+		}
+		{
+			dependencies: ["1D4DC486A77B0175"]
+			entity_vis_size: 1.0f
+			id: "59CAF34F0BB64E91"
+			tasks: [{
+				id: "6D1272E1ABC6BA61"
+				item: { count: 1, id: "thaumaturge:brain_box" }
+				type: "item"
+			}]
+			x: 43.17d
+			y: -41.34d
+		}
+		{
+			dependencies: ["0177B46BC0535637"]
+			entity_vis_size: 1.0f
+			id: "173B248AF693549E"
+			tasks: [{
+				id: "2C03B91442B6458C"
+				item: { count: 1, id: "thaumaturge:essentia_output" }
+				type: "item"
+			}]
+			x: 45.92d
+			y: -40.49d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "3D4426984A031FD9"
+			shape: "hexagon"
+			tasks: [{
+				id: "17D94C0EA5AE5C7F"
+				item: { count: 1, id: "thaumaturge:resonator" }
+				type: "item"
+			}]
+			x: 36.83d
+			y: -32.91d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "2961145E8F79DFB7"
+			tasks: [{
+				id: "128EB063C561974F"
+				item: { count: 1, id: "thaumaturge:tube_valve" }
+				type: "item"
+			}]
+			x: 42.72d
+			y: -34.02d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "09CF975577FC0CA7"
+			tasks: [{
+				id: "012F49722F84E78C"
+				item: { count: 1, id: "thaumaturge:tube_filter" }
+				type: "item"
+			}]
+			x: 37.42d
+			y: -34.02d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "5528A05D4367E58D"
+			tasks: [{
+				id: "2371C1C0351FFE3F"
+				item: { count: 1, id: "thaumaturge:tube_restrict" }
+				type: "item"
+			}]
+			x: 36.68d
+			y: -31.67d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "5B5ADE048B6DB9E4"
+			tasks: [{
+				id: "7D0B46955E34E230"
+				item: { count: 1, id: "thaumaturge:tube_oneway" }
+				type: "item"
+			}]
+			x: 36.99d
+			y: -30.45d
+		}
+		{
+			dependencies: ["5A8EC8030115C6B2"]
+			entity_vis_size: 1.0f
+			id: "57D8A12671D243BD"
+			tasks: [{
+				id: "1DDD7EA3B6E29C65"
+				item: { count: 1, id: "thaumaturge:tube_buffer" }
+				type: "item"
+			}]
+			x: 43.46d
+			y: -31.67d
+		}
+		{
+			dependencies: ["76CFEAC1C8219731"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "thaumaturge:textures/misc/node_bubble.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "50C095B07C5644C9"
+			shape: "heart"
+			tasks: [{
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: {
+					components: {
+						"minecraft:block_entity_data": {
+							Aspects: [
+								{
+									amount: 22
+									aspect: "thaumaturge:perditio"
+								}
+								{
+									amount: 20
+									aspect: "thaumaturge:aer"
+								}
+							]
+							AspectsBase: [
+								{
+									amount: 22
+									aspect: "thaumaturge:perditio"
+								}
+								{
+									amount: 20
+									aspect: "thaumaturge:aer"
+								}
+							]
+							Type: "normal"
+							id: "thaumaturge:node"
+							"neoforge:attachments": {
+								"astages:block_stage": {
+									owner: [I;
+										-59202318
+										133646977
+										-1471610684
+										-363498604
+									]
+								}
+							}
+						}
+					}
+					id: "thaumaturge:creative_node_placer"
+				}
+				id: "3EB28AC4A4661168"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "thaumaturge:node"
+				type: "observation"
+			}]
+			x: 35.4872448979592d
+			y: -18.700714285714277d
+		}
+		{
+			dependencies: ["45687370CDDFC68C"]
+			entity_vis_size: 1.0f
+			id: "1031B3479DFD74F0"
+			tasks: [{
+				id: "3FDD78B11539451D"
+				item: { count: 1, id: "thaumaturge:focus_pouch" }
+				type: "item"
+			}]
+			x: 45.54d
+			y: -18.83d
+		}
+		{
+			dependencies: ["6563CC2B815DB2C9"]
+			entity_vis_size: 1.0f
+			id: "4625925682FF5E90"
+			shape: "diamond"
+			tasks: [{
+				id: "16D139E4213A3F2F"
+				item: { components: { "thaumaturge:verdant_type": 1 }, count: 1, id: "thaumaturge:verdant_charm" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 60.07d
+			y: -43.66d
+		}
+		{
+			dependencies: ["6563CC2B815DB2C9"]
+			entity_vis_size: 1.0f
+			id: "2DD43615D5F6303F"
+			shape: "diamond"
+			tasks: [{
+				id: "42948E7D7DA8A5E7"
+				item: { components: { "thaumaturge:verdant_type": 2 }, count: 1, id: "thaumaturge:verdant_charm" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 59.06d
+			y: -44.620000000000005d
+		}
+		{
+			dependencies: ["3C1DC3C6EAEDE881"]
+			entity_vis_size: 1.0f
+			id: "63C240281F129E11"
+			tasks: [{
+				id: "4230634D8DFA53E0"
+				item: { count: 1, id: "thaumaturge:lamp_fertility" }
+				type: "item"
+			}]
+			x: 57.11d
+			y: -18.759999999999998d
+		}
+		{
+			dependencies: ["2877B4AC72802D4E"]
+			entity_vis_size: 1.0f
+			id: "27D574CC56B4F8AF"
+			tasks: [{
+				id: "22EA9A3B471977F1"
+				item: { count: 1, id: "thaumaturge:golem_fetter" }
+				type: "item"
+			}]
+			x: 41.31285714285714d
+			y: -40.54214285714286d
+		}
+		{
+			dependencies: ["182044CAA76E0AA5"]
+			entity_vis_size: 1.0f
+			id: "077D9F17973FA4BD"
+			tasks: [{
+				id: "064EAEF8BE9EE2D7"
+				item: { count: 1, id: "thaumaturge:seal_pickup_advanced" }
+				type: "item"
+			}]
+			x: 41.69285714285714d
+			y: -46.79214285714286d
+		}
+		{
+			dependencies: ["3072D2959AA30598"]
+			entity_vis_size: 1.0f
+			id: "4D3119B2AD4B5809"
+			tasks: [{
+				id: "066047F8D0DD583B"
+				item: { count: 1, id: "thaumaturge:seal_fill_advanced" }
+				type: "item"
+			}]
+			x: 40.05285714285714d
+			y: -48.34214285714287d
+		}
+		{
+			dependencies: ["40D2890C91875846"]
+			entity_vis_size: 1.0f
+			id: "5F019BAE022FB43A"
+			tasks: [{
+				id: "5C6EC0A470FE33DF"
+				item: { count: 1, id: "thaumaturge:seal_empty_advanced" }
+				type: "item"
+			}]
+			x: 35.63285714285714d
+			y: -48.62214285714286d
+		}
+		{
+			dependencies: ["7AE7CBFF78C07DCD"]
+			entity_vis_size: 1.0f
+			id: "2CA0C11BFB8682C8"
+			tasks: [{
+				id: "6004EA1D432BC22E"
+				item: { count: 1, id: "thaumaturge:seal_stock" }
+				type: "item"
+			}]
+			x: 37.46285714285714d
+			y: -50.73214285714286d
+		}
+		{
+			dependencies: ["33036141A7EFC6A3"]
+			entity_vis_size: 1.0f
+			id: "59ACAA8A5981ACC3"
+			tasks: [{
+				id: "5896B6B1103F855F"
+				item: { count: 1, id: "thaumaturge:seal_guard_advanced" }
+				type: "item"
+			}]
+			x: 43.24285714285714d
+			y: -46.22214285714286d
+		}
+		{
+			dependencies: ["33036141A7EFC6A3"]
+			entity_vis_size: 1.0f
+			id: "5A5FC99532C46021"
+			tasks: [{
+				id: "3DDEBB3C47A8F2D5"
+				item: { count: 1, id: "thaumaturge:seal_butcher" }
+				type: "item"
+			}]
+			x: 44.60285714285714d
+			y: -45.29214285714286d
+		}
+		{
+			dependencies: ["5A162386624E004E"]
+			entity_vis_size: 1.0f
+			id: "28FDC449C9984F8A"
+			tasks: [{
+				id: "0E0D7B62771E296B"
+				item: { count: 1, id: "thaumaturge:seal_breaker_advanced" }
+				type: "item"
+			}]
+			x: 34.39285714285714d
+			y: -44.072142857142865d
+		}
+		{
+			dependencies: ["4FB020299D9D090C"]
+			entity_vis_size: 1.0f
+			id: "2A35213A3A04E232"
+			tasks: [{
+				id: "69C9FA199EC7858E"
+				item: { count: 1, id: "thaumaturge:mirror_essentia" }
+				type: "item"
+			}]
+			x: 63.91d
+			y: -28.64d
+		}
+		{
+			dependencies: ["4FB020299D9D090C"]
+			entity_vis_size: 1.0f
+			id: "0140F7C71D725B2C"
+			tasks: [{
+				id: "2CBDFE26855A0202"
+				item: { count: 1, id: "thaumaturge:thaumonomicon_sharing" }
+				type: "item"
+			}]
+			x: 63.730000000000004d
+			y: -27.37d
+		}
+		{
+			dependencies: ["22C7191BCFD71303"]
+			entity_vis_size: 1.0f
+			id: "1E75BDA70DCA389A"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "thaumaturge:textures/research/r_fluxrift.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "489650C01C734A57"
+				type: "custom"
+			}]
+			x: 33.59d
+			y: -30.45d
+		}
+		{
+			dependencies: ["1E75BDA70DCA389A"]
+			entity_vis_size: 1.0f
+			id: "1A8626728F5EEEC0"
+			tasks: [{
+				id: "2FA7B829532D7625"
+				item: { count: 1, id: "thaumaturge:causality_collapser" }
+				type: "item"
+			}]
+			x: 33.36d
+			y: -31.78d
+		}
+		{
+			dependencies: ["1E75BDA70DCA389A"]
+			entity_vis_size: 1.0f
+			id: "174C5B8CF07DAAF8"
+			tasks: [{
+				id: "5C1A00D55B1C2575"
+				item: { count: 1, id: "thaumaturge:void_seed" }
+				type: "item"
+			}]
+			x: 32.37d
+			y: -31.02d
+		}
+		{
+			dependencies: ["36F23B5F89A658CE"]
+			entity_vis_size: 1.0f
+			id: "38B8089E98548992"
+			tasks: [{
+				id: "4BBBD66BC98FA752"
+				item: { count: 1, id: "thaumaturge:vis_generator" }
+				type: "item"
+			}]
+			x: 31.020000000000003d
+			y: -23.56d
+		}
+		{
+			dependencies: ["04C08C0E909C4B64"]
+			entity_vis_size: 1.0f
+			id: "4F2D567629A6733D"
+			tasks: [{
+				id: "0C77383713EFF75E"
+				item: { count: 1, id: "thaumaturge:liquid_death_bucket" }
+				type: "item"
+			}]
+			x: 35.79d
+			y: -22.11d
+		}
+		{
+			dependencies: ["174C5B8CF07DAAF8"]
+			entity_vis_size: 1.0f
+			id: "4BA0AC7B8B96DAA7"
+			shape: "gear"
+			tasks: [{
+				id: "7BEA02DE0648542A"
+				item: { count: 1, id: "thaumaturge:thaumonomicon_linking" }
+				type: "item"
+			}]
+			x: 30.96d
+			y: -29.49d
+		}
+		{
+			dependencies: ["71E017B9C7CA0DBE"]
+			entity_vis_size: 1.0f
+			id: "36B5EAF0AA9A7A9C"
+			tasks: [{
+				count: 4L
+				id: "585BE38173049BC3"
+				item: { count: 1, id: "thaumaturge:eldritch_eye" }
+				type: "item"
+			}]
+			x: 27.56d
+			y: -33.26d
+		}
+		{
+			dependencies: ["36B5EAF0AA9A7A9C"]
+			entity_vis_size: 1.0f
+			id: "62A5265A46A6BDB6"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "thaumaturge:textures/research/r_outer.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "566AB703AA8A71D7"
+				structure: "thaumaturge:eldritch_obelisk"
+				type: "structure"
+			}]
+			x: 26.66d
+			y: -34.45d
+		}
+		{
+			dependencies: ["62A5265A46A6BDB6"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "thaumaturge:textures/research/cat_eldritch.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0DD73167DB76EDF5"
+			tasks: [{
+				dimension: "thaumaturge:outer_lands"
+				id: "52C0AF327BE0F9AD"
+				type: "dimension"
+			}]
+			x: 25.49d
+			y: -35.129999999999995d
+		}
+		{
+			dependencies: ["0DD73167DB76EDF5"]
+			entity_vis_size: 1.0f
+			id: "04E03981C12BDA47"
+			tasks: [{
+				id: "26FAC56676ED3A7C"
+				item: { components: { "thaumaturge:labyrinth_key": 0 }, count: 1, id: "thaumaturge:runed_tablet" }
+				type: "item"
+			}]
+			x: 24.33d
+			y: -35.8d
+		}
+		{
+			dependencies: ["36B5EAF0AA9A7A9C"]
+			entity_vis_size: 1.0f
+			id: "208777789AD07A63"
+			tasks: [{
+				id: "7DD036DC5264AD5F"
+				item: { count: 1, id: "thaumaturge:runed_tablet" }
+				type: "item"
+			}]
+			x: 26.07d
+			y: -33.19d
+		}
+		{
+			dependencies: ["208777789AD07A63"]
+			entity_vis_size: 1.0f
+			id: "10B4451331D5DCA7"
+			shape: "gear"
+			tasks: [{
+				entity: "thaumaturge:eldritch_warden"
+				entityTypeTag: "milf:thaumaturge_labyrinth_guardians"
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "539E56DF1CFE8E1A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 24.81d
+			y: -33.65d
+		}
+		{
+			dependencies: ["10B4451331D5DCA7"]
+			entity_vis_size: 1.0f
+			id: "72D3205C95C1415D"
+			tasks: [{
+				id: "556B2987B9276355"
+				item: { count: 1, id: "thaumaturge:primordial_pearl" }
+				type: "item"
+			}]
+			x: 23.54d
+			y: -34.11d
+		}
+		{
+			dependencies: ["6567A34532952E78"]
+			entity_vis_size: 1.0f
+			id: "0EF5ACF7C92580B9"
+			tasks: [{
+				id: "1E11B02A3DD8684B"
+				item: { count: 1, id: "thaumaturge:flux_scrubber" }
+				type: "item"
+			}]
+			x: 65.75d
+			y: -24.009999999999998d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "4BC2FCE0E37976BE"
+			shape: "diamond"
+			tasks: [{
+				id: "591DA745FE5F2DB7"
+				item: { count: 1, id: "thaumaturge:wand_rod_quartz" }
+				type: "item"
+			}]
+			x: 50.83d
+			y: -14.380000000000003d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "5A2F3A9E4D35BBAA"
+			shape: "diamond"
+			tasks: [{
+				id: "57961643D634EF17"
+				item: { count: 1, id: "thaumaturge:wand_rod_obsidian" }
+				type: "item"
+			}]
+			x: 50.29d
+			y: -13.369999999999997d
+		}
+		{
+			dependencies: ["49AE05A0B9700459"]
+			entity_vis_size: 1.0f
+			id: "6CE341C475D02DD4"
+			shape: "diamond"
+			tasks: [{
+				id: "72F0605CBE9389FB"
+				item: { count: 1, id: "thaumaturge:wand_cap_silver" }
+				type: "item"
+			}]
+			x: 49.61d
+			y: -12.439999999999998d
+		}
+		{
+			dependencies: ["7D700FF7CA851852"]
+			entity_vis_size: 1.0f
+			id: "6457463A246C4B4E"
+			shape: "heart"
+			tasks: [{
+				id: "4A068FE2976193CA"
+				item: { count: 1, id: "thaumaturge:grapple_gun" }
+				type: "item"
+			}]
+			x: 48.8d
+			y: -11.620000000000005d
+		}
+		{
+			dependencies: ["7D700FF7CA851852"]
+			entity_vis_size: 1.0f
+			id: "42C48F5CA612A371"
+			tasks: [{
+				id: "61561033CEE97C6A"
+				item: { count: 1, id: "thaumaturge:vis_battery" }
+				type: "item"
+			}]
+			x: 47.88d
+			y: -10.93d
+		}
+		{
+			dependencies: ["7D700FF7CA851852"]
+			entity_vis_size: 1.0f
+			id: "5105FE128D3C3B31"
+			shape: "heart"
+			tasks: [{
+				id: "30ACDC7226FC96AC"
+				item: { count: 1, id: "thaumaturge:arcane_workbench_charger" }
+				type: "item"
+			}]
+			x: 46.87d
+			y: -10.379999999999995d
+		}
+		{
+			dependencies: ["7BD009818F17D15B"]
+			entity_vis_size: 1.0f
+			id: "1588ACAB878D9062"
+			tasks: [{
+				id: "52A7899F0E98F47D"
+				item: { count: 1, id: "thaumaturge:thaumometer" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -13.450000000000003d
+		}
+		{
+			dependencies: ["19BC400453B26A5F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "thaumaturge:arcane_workbench"
+			}
+			id: "7BD009818F17D15B"
+			tasks: [
+				{
+					id: "532F601C1952294D"
+					item: { count: 1, id: "thaumaturge:arcane_workbench" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					entity_vis_cycle_seconds: 0.0f
+					entity_vis_enabled: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_slim_arms: false
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
+					id: "64F04708FA165CD7"
+					observation_type: "block"
+					observe_type: 0
+					timer: 0L
+					to_observe: "thaumaturge:arcane_workbench"
+					type: "observation"
+				}
+			]
+			x: 40.07d
+			y: -11.950000000000003d
+		}
+		{
+			dependencies: ["41B15E7A854942E7"]
+			entity_vis_size: 1.0f
+			id: "19BC400453B26A5F"
+			tasks: [{
+				id: "7C0A1C46454ED394"
+				item: { count: 1, id: "thaumaturge:thaumonomicon" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -10.450000000000003d
+		}
+		{
+			dependencies: ["557EB4FDC17714AB"]
+			entity_vis_size: 1.0f
+			id: "41B15E7A854942E7"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "betteradvancedtooltips:textures/font/icons/warn.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "2AF7D2C03CA107EF"
+				team_reward: false
+				type: "custom"
+			}]
+			tasks: [{
+				id: "68AC25DC1435DE11"
+				item: { count: 1, id: "thaumaturge:salis_mundus" }
+				type: "item"
+			}]
+			x: 40.07d
+			y: -8.950000000000003d
+		}
+		{
+			dependencies: ["4B801253049DAC2F"]
+			entity_vis_size: 1.0f
+			id: "557EB4FDC17714AB"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0A399F77AC11AE3B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(thaumaturge:vis_crystals)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 40.05102040816324d
+			y: -6.4974489795918515d
+		}
+		{
+			dependencies: ["3D62C8F179CCAD4F"]
+			entity_vis_size: 1.0f
+			id: "64213B29661E8CFA"
+			tasks: [{
+				id: "3F1A3CB3D29EF075"
+				item: { count: 1, id: "thaumaturge:inlay" }
+				type: "item"
+			}]
+			x: 54.13d
+			y: -45.76d
+		}
+		{
+			dependencies: ["4BBEC7027C9A502D"]
+			entity_vis_size: 1.0f
+			id: "391E4252D75AAD3D"
+			tasks: [{
+				id: "170966E3C8BADA66"
+				item: { count: 1, id: "thaumaturge:condenser_lattice" }
+				type: "item"
+			}]
+			x: 33.42d
+			y: -28.78d
+		}
+		{
+			dependencies: ["04C08C0E909C4B64"]
+			entity_vis_size: 1.0f
+			id: "605E54FC1A63E921"
+			tasks: [{
+				id: "45A1374E592A50FA"
+				item: { count: 1, id: "thaumaturge:bottle_taint" }
+				type: "item"
+			}]
+			x: 38.19d
+			y: -22.45d
+		}
+		{
+			dependencies: ["3BA262DFCF93C405"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "61F76CB6C572F1FE"
+			tasks: [{
+				id: "54BF25B2FE56B125"
+				item: { count: 1, id: "thaumaturge:bath_salts" }
+				type: "item"
+			}]
+			x: 37.47d
+			y: -15.35d
+		}
+		{
+			dependencies: ["61F76CB6C572F1FE"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "4C4CB0B763F282D5"
+			tasks: [{
+				id: "4BF7DBFE54CA68B7"
+				item: { count: 1, id: "thaumaturge:spa" }
+				type: "item"
+			}]
+			x: 36.47d
+			y: -14.35d
 		}
 	]
 }

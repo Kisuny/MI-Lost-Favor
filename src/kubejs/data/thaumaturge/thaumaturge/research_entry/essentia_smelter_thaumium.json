@@ -1,0 +1,62 @@
+{
+  "category": "thaumaturge:alchemy",
+  "name": "research.thaumaturge.essentia_smelter_thaumium.title",
+  "parents": [
+    "thaumaturge:tubes",
+    "thaumaturge:metallurgy@3"
+  ],
+  "column": 8,
+  "row": 0,
+  "icons": [
+    "thaumaturge:smelter_thaumium"
+  ],
+  "stages": [
+    {
+      "text": "research.thaumaturge.essentia_smelter_thaumium.stage_0",
+      "obtain": [
+        {
+          "items": [
+            "modern_industrialization:thaumium_plate"
+          ],
+          "amount": 1
+        }
+      ],
+      "craft": [
+        {
+          "items": [
+            "thaumaturge:alchemical_construct"
+          ],
+          "amount": 1
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "category": "thaumaturge:alchemy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "text": "research.thaumaturge.essentia_smelter_thaumium.stage_1",
+      "recipes": [
+        "thaumaturge:arcane_workbench/smelter_thaumium"
+      ]
+    }
+  ],
+  "note_aspects": [
+    {
+      "aspect": "thaumaturge:ignis",
+      "amount": 6
+    },
+    {
+      "aspect": "thaumaturge:alkimia",
+      "amount": 5
+    },
+    {
+      "aspect": "thaumaturge:metallum",
+      "amount": 4
+    }
+  ],
+  "complexity": 2
+}

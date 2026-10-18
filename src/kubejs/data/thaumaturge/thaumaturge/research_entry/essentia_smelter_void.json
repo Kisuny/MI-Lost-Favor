@@ -1,0 +1,72 @@
+{
+  "category": "thaumaturge:alchemy",
+  "name": "research.thaumaturge.essentia_smelter_void.title",
+  "parents": [
+    "thaumaturge:essentia_smelter_thaumium",
+    "thaumaturge:base_eldritch"
+  ],
+  "column": 12,
+  "row": 0,
+  "icons": [
+    "thaumaturge:smelter_void"
+  ],
+  "stages": [
+    {
+      "text": "research.thaumaturge.essentia_smelter_void.stage_0",
+      "recipes": [
+        "thaumaturge:arcane_workbench/advanced_alchemical_construct"
+      ],
+      "obtain": [
+        {
+          "items": [
+            "modern_industrialization:void_metal_plate"
+          ],
+          "amount": 1
+        }
+      ],
+      "craft": [
+        {
+          "items": [
+            "thaumaturge:advanced_alchemical_construct"
+          ],
+          "amount": 1
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "category": "thaumaturge:alchemy",
+          "amount": 1
+        },
+        {
+          "type": "theory",
+          "category": "thaumaturge:eldritch",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "text": "research.thaumaturge.essentia_smelter_void.stage_1",
+      "recipes": [
+        "thaumaturge:arcane_workbench/advanced_alchemical_construct",
+        "thaumaturge:arcane_workbench/smelter_void",
+        "thaumaturge:dust_trigger/advanced_alchemical_furnace"
+      ]
+    }
+  ],
+  "note_aspects": [
+    {
+      "aspect": "thaumaturge:ignis",
+      "amount": 8
+    },
+    {
+      "aspect": "thaumaturge:alkimia",
+      "amount": 6
+    },
+    {
+      "aspect": "thaumaturge:vacuos",
+      "amount": 5
+    }
+  ],
+  "complexity": 3
+}

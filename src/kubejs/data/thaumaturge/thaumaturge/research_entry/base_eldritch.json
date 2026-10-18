@@ -1,0 +1,61 @@
+{
+  "category": "thaumaturge:eldritch",
+  "name": "research.thaumaturge.base_eldritch.title",
+  "parents": [
+    "thaumaturge:metallurgy",
+    "thaumaturge:unlock_eldritch"
+  ],
+  "column": 0,
+  "row": 0,
+  "meta": [
+    "round"
+  ],
+  "icons": [
+    "thaumaturge:void_seed"
+  ],
+  "stages": [
+    {
+      "text": "research.thaumaturge.base_eldritch.stage_0",
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "category": "thaumaturge:basics",
+          "amount": 1
+        },
+        {
+          "type": "theory",
+          "category": "thaumaturge:alchemy",
+          "amount": 1
+        },
+        {
+          "type": "theory",
+          "category": "thaumaturge:eldritch",
+          "amount": 1
+        }
+      ],
+      "warp": 2
+    },
+    {
+      "text": "research.thaumaturge.base_eldritch.stage_1",
+      "recipes": [
+        "thaumaturge:crucible/void_ingot",
+        "thaumaturge:metal_void"
+      ]
+    }
+  ],
+  "note_aspects": [
+    {
+      "aspect": "thaumaturge:alienis",
+      "amount": 5
+    },
+    {
+      "aspect": "thaumaturge:tenebrae",
+      "amount": 4
+    },
+    {
+      "aspect": "thaumaturge:vacuos",
+      "amount": 4
+    }
+  ],
+  "complexity": 3
+}

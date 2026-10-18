@@ -1,0 +1,78 @@
+{
+  "category": "thaumaturge:alchemy",
+  "name": "research.thaumaturge.metallurgy.title",
+  "parents": [
+    "thaumaturge:base_alchemy"
+  ],
+  "column": 2,
+  "row": 2,
+  "icons": [
+    "thaumaturge:ingot_brass"
+  ],
+  "stages": [
+    {
+      "text": "research.thaumaturge.metallurgy.stage_0",
+      "recipes": [
+        "thaumaturge:crucible/ingot_brass"
+      ],
+      "craft": [
+        {
+          "items": "#c:ingots/brass",
+          "amount": 1
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "observation",
+          "category": "thaumaturge:alchemy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "text": "research.thaumaturge.metallurgy.stage_1",
+      "recipes": [
+        "thaumaturge:crucible/ingot_brass",
+        "thaumaturge:metal_brass",
+        "thaumaturge:crucible/ingot_thaumium"
+      ],
+      "craft": [
+        {
+          "items": "#c:ingots/thaumium",
+          "amount": 1
+        }
+      ],
+      "required_knowledge": [
+        {
+          "type": "theory",
+          "category": "thaumaturge:alchemy",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "text": "research.thaumaturge.metallurgy.stage_2",
+      "recipes": [
+        "thaumaturge:crucible/ingot_brass",
+        "thaumaturge:metal_brass",
+        "thaumaturge:crucible/ingot_thaumium",
+        "thaumaturge:metal_thaumium"
+      ]
+    }
+  ],
+  "note_aspects": [
+    {
+      "aspect": "thaumaturge:metallum",
+      "amount": 8
+    },
+    {
+      "aspect": "thaumaturge:ignis",
+      "amount": 4
+    },
+    {
+      "aspect": "thaumaturge:fabrico",
+      "amount": 3
+    }
+  ],
+  "complexity": 2
+}

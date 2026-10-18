@@ -64,7 +64,8 @@ const lootRestrictions = [
         stage: 'gems_everywhere',
         everywhere: true,
         tags: 'c:gems',
-        items: ["minecraft:emerald_block", "minecraft:diamond_block", "minecraft:lapis_block"]
+        items: ["minecraft:emerald_block", "minecraft:diamond_block", "minecraft:lapis_block"],
+        ignoredItems: ["thaumaturge:amber", "thaumaturge:quicksilver"]
     },
     
 

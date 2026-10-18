@@ -1,0 +1,42 @@
+{
+  "category": "thaumaturge:artifice",
+  "name": "research.thaumaturge.base_artifice.title",
+  "parents": [
+    "thaumaturge:unlock_artifice"
+  ],
+  "column": 0,
+  "row": 0,
+  "meta": [
+    "round",
+    "hidden"
+  ],
+  "icons": [
+    "thaumaturge:textures/research/cat_artifice.png"
+  ],
+  "stages": [
+    {
+      "text": "research.thaumaturge.base_artifice.stage_0",
+      "recipes": [
+        "thaumaturge:arcane_workbench/goggles_revealing",
+        "thaumaturge:arcane_workbench/mechanism_simple",
+        "thaumaturge:arcane_workbench/mechanism_complex",
+        "thaumaturge:arcane_workbench/mirrored_glass"
+      ]
+    }
+  ],
+  "note_aspects": [
+    {
+      "aspect": "thaumaturge:fabrico",
+      "amount": 3
+    },
+    {
+      "aspect": "thaumaturge:instrumentum",
+      "amount": 2
+    },
+    {
+      "aspect": "thaumaturge:machina",
+      "amount": 2
+    }
+  ],
+  "complexity": 1
+}

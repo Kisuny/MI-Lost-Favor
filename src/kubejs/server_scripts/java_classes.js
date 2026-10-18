@@ -1,5 +1,7 @@
 //priority: 701
 
+let $KnowledgeAccess = Java.loadClass('com.leclowndu93150.thaumaturge.api.capability.KnowledgeAccess')
+
 let $EnigmaticHandler = Java.loadClass("auviotre.enigmatic.legacy.handlers.EnigmaticHandler")
 let $FinalizeSpawnEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent")
 

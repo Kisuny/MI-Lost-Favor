@@ -39,13 +39,22 @@
 		}
 	]
 	order_index: 3
-	quest_links: [{
-		id: "143129ABC11C9F13"
-		linked_quest: "6A6B9424EFC13EC1"
-		shape: "heart"
-		x: 72.0d
-		y: -31.0d
-	}]
+	quest_links: [
+		{
+			id: "143129ABC11C9F13"
+			linked_quest: "6A6B9424EFC13EC1"
+			shape: "heart"
+			x: 72.0d
+			y: -31.0d
+		}
+		{
+			id: "5DB53B96AD4035E2"
+			linked_quest: "4CC5367ACA738A78"
+			shape: "octagon"
+			x: -13.5d
+			y: -10.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["056505A2F0A197CB"]

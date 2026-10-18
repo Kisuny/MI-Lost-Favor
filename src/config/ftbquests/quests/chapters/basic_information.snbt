@@ -9,15 +9,6 @@
 	id: "4E4F6FF3EEEB1E51"
 	images: [
 		{
-			height: 4.0d
-			id: "523814CC54BB2952"
-			image: "milf:textures/quest_pic/saeta_pointing.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: -1.0d
-			y: -2.5d
-		}
-		{
 			height: 12.0d
 			id: "27211C36BF9FE483"
 			image: "milf:textures/quest_pic/welcome_chapter.png"
@@ -25,6 +16,65 @@
 			width: 25.0d
 			x: 0.0d
 			y: -10.5d
+		}
+		{
+			alpha: 210
+			color: 12962544
+			height: 8.5d
+			id: "3032E57C4FB2FA07"
+			image: "enchanted:textures/enchanted/circle_magic/shapes/large_circle/enchanted/ritual_chalk.png"
+			order: -5
+			rotation: 0.0d
+			width: 8.5d
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			alpha: 170
+			color: 12962544
+			height: 3.4d
+			id: "2120B418636419F8"
+			image: "simplybows:textures/entity/constellation_star.png"
+			order: -6
+			rotation: 0.0d
+			width: 3.4d
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			alpha: 0
+			click_action: "none:"
+			color: 12962544
+			height: 5.0d
+			id: "10944506D3002119"
+			image: "malum:textures/gui/book/widgets/runewood_frame_subentry.png"
+			order: -3
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			alpha: 0
+			click_action: "none:"
+			color: 12962544
+			height: 5.0d
+			id: "6CDF3D3CDC0894B6"
+			image: "malum:textures/gui/book/widgets/runewood_frame_subentry.png"
+			order: -3
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 4.0d
+			id: "523814CC54BB2952"
+			image: "milf:textures/quest_pic/saeta_pointing.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.5d
+			y: -2.5d
 		}
 	]
 	order_index: 0
@@ -41,8 +91,8 @@
 				id: "458BFB75460FD02D"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -1.99d
+			y: 9.59d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -58,8 +108,8 @@
 				id: "7431F878DB34A30D"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 3.16d
+			y: 8.88d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -76,8 +126,8 @@
 				id: "7AE5252F3D792BCA"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 1.0d
+			x: 1.35d
+			y: 0.19d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -93,8 +143,8 @@
 				id: "42075FB0D0CA93C3"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 4.0d
+			x: 4.99d
+			y: 5.34d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -110,8 +160,8 @@
 				id: "05F09C91C1D5D399"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 1.99d
+			y: 9.59d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -122,8 +172,8 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "179140A353AB44E8"
-			shape: "octagon"
-			size: 1.0d
+			shape: "diamond"
+			size: 2.0d
 			tasks: [{
 				id: "2693375290DFFFE2"
 				type: "checkmark"
@@ -156,8 +206,8 @@
 				id: "7DFA2C0B9737E55D"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 0.0d
+			x: -4.71d
+			y: 6.67d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -191,8 +241,8 @@
 				id: "6C76C1D379AC2926"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: 5.0d
+			x: -4.99d
+			y: 5.34d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -208,8 +258,8 @@
 				id: "583D11B3732CE886"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: 4.0d
+			x: 2.6d
+			y: 0.73d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -225,8 +275,8 @@
 				id: "77B05217F3206FA8"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: 0.68d
+			y: 9.95d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -242,8 +292,8 @@
 				id: "271E89A2A2B37CFC"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: 4.44d
+			y: 2.7d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -259,8 +309,8 @@
 				id: "09C8A19971E0C5CF"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 2.0d
+			x: 4.9d
+			y: 3.98d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -276,8 +326,8 @@
 				id: "40ED385E3D23C00B"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 6.0d
+			x: -3.65d
+			y: 1.59d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -293,8 +343,8 @@
 				id: "5681B6E38A2DC015"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 4.0d
+			x: -4.9d
+			y: 3.98d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -321,8 +371,8 @@
 				id: "1AE53C37C664CA3B"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 6.0d
+			x: -2.6d
+			y: 0.73d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -346,8 +396,8 @@
 				id: "6DA0FB55995165C0"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 4.0d
+			x: -0.68d
+			y: 9.95d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -363,8 +413,8 @@
 				id: "3CF465D57CE596A9"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: -1.35d
+			y: 0.19d
 		}
 		{
 			dependencies: ["179140A353AB44E8"]
@@ -396,7 +446,7 @@
 				}
 			]
 			x: 0.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["179140A353AB44E8"]
@@ -409,6 +459,7 @@
 			}
 			id: "2141539997D6480F"
 			shape: "heart"
+			size: 2.0d
 			tasks: [{
 				id: "715168A27BACCD77"
 				type: "checkmark"
@@ -430,8 +481,8 @@
 				id: "2629C2F369B3D084"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 3.0d
+			x: 4.71d
+			y: 6.67d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -447,8 +498,8 @@
 				id: "6319A7E878B57B90"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: -4.44d
+			y: 2.7d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -464,8 +515,8 @@
 				id: "5180AC955AE4C748"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 6.0d
+			x: -3.16d
+			y: 8.88d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -476,14 +527,14 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "1AD6EA8FC5E52268"
-			shape: "none"
+			shape: "diamond"
 			size: 2.0d
 			tasks: [{
 				id: "76C88F3B61F626A4"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 7.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
@@ -499,8 +550,8 @@
 				id: "2D7C31BAB3D924BD"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: 6.0d
+			x: 3.65d
+			y: 1.59d
 		}
 	]
 }

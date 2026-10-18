@@ -22,6 +22,39 @@ function ytechSmeltingRecipe(event, args) {
 }
 
 ServerEvents.recipes(event => {
+
+    event.remove({type: "ytech:smelting"})
+    event.remove({ type: "ytech:hammering" })
+    event.remove({ type: "ytech:drying" })
+    event.remove({ type: "ytech:alloying" })
+
+    milfSmelting(event, {
+        inputItems: [
+            [{ item: "ytech:unfired_amphora" }]
+        ],
+        outputItems: [
+            [{ id: "ytech:amphora" }]
+        ]
+    })
+
+    milfSmelting(event, {
+        inputItems: [
+            [{ item: "ytech:unfired_decoration_pot" }]
+        ],
+        outputItems: [
+            [{ id: "minecraft:decorated_pot" }]
+        ]
+    })
+
+    milfSmelting(event, {
+        inputItems: [
+            [{ item: "ytech:unfired_flower_pot" }]
+        ],
+        outputItems: [
+            [{ id: "minecraft:flower_pot" }]
+        ]
+    })
+
     // ytechSmeltingRecipe(event, {
     //     inputItems:[
     //         [{ item: "modern_industrialization:bronze_ingot"}],

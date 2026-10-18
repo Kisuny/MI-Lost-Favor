@@ -22,12 +22,71 @@ function milfClayCrucibleKilnRecipe(event, args) {
         input2: Object.assign({}, args.inputItems[1][0], { count: args.inputItems[1][1] || 4 }),
         output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000 }),
     }
-    if (args.fire_pit_fuel){
-        recipe.fire_pit_fuel = args.fire_pit_fuel
-    }
-    if(args.fire_pit_output){
-        recipe.fire_pit_output = args.fire_pit_output
+    if (!args.compatOff) {
 
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
+function milfCastingRecipe(event, args){
+    let recipe = {
+        type: "milf:casting",
+        time: args.time || 109 * 3,
+        mold: args.mold,
+        mold_remains: Object.assign({}, args.outputItems[1][0], { count: args.outputItems[1][1] || 3 }),
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+        fluid: Object.assign({}, args.inputFluids[0][0], { amount: args.inputFluids[0][1] || 1000 }),
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
+function milfKilnSmeltingRecipe(event, args) {
+    let recipe = {
+        type: "milf:kiln_smelting",
+        input: Object.assign({}, args.inputItems[0][0], { count: 1 }),
+        output: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
+function milfBloomeryRecipe(event, args) {
+    let recipe = {
+        type: "milf:bloomery",
+        input1: Object.assign({}, args.inputItems[0][0], { count: args.inputItems[0][1] || 1 }),
+        input2: Object.assign({}, args.inputItems[1][0], { count: args.inputItems[1][1] || 1 }),
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+        time: args.time || 109*2,
+        requires_bellows: args.requires_bellows
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
+
+function milfStoneBasinRecipe(event, args) {
+    let inputs = []
+
+    args.inputItems && args.inputItems.forEach(item => { inputs.push(Object.assign({}, item[0], { })) })
+
+
+    let recipe = {
+        type: "milf:stone_basin",
+        inputs: inputs,
+        fluid: Object.assign({}, args.inputFluids[0][0], { amount: args.inputFluids[0][1] || 1000 }),
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+        stirs: args.stirs,
     }
     if (!args.compatOff) {
 
@@ -37,6 +96,81 @@ function milfClayCrucibleKilnRecipe(event, args) {
 }
 
 ServerEvents.recipes(event => {
+
+
+    milfStoneBasinRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:brick_dust" }],
+            [{ item: "modern_industrialization:brick_dust" }],
+            [{ item: "architects_palette:algal_blend" }],
+            [{ item: "architects_palette:algal_blend" }]
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 500]
+        ],
+        outputItems: [
+            [{ id: "milf:fire_clay_ball" }, 2],
+        ],
+        requires_bellows: true,
+        stirs: 4
+    })
+
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "milf:unfired_brick" }, 8],
+            [{ item: "milf:unfired_brick" }, 8],
+        ],
+
+        outputItems: [
+            [{ id: "minecraft:brick" }, 16],
+        ],
+
+        requires_bellows: true,
+
+        time: 150
+    })
+
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "milf:unfired_fire_clay_brick" }, 8],
+            [{ item: "milf:unfired_fire_clay_brick" }, 8],
+        ],
+
+        outputItems: [
+            [{ id: "modern_industrialization:fire_clay_brick" }, 16],
+        ],
+
+        requires_bellows: true,
+
+        time: 150
+    })
+
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:glass_pane" }, 4],
+            [{ item: "modern_industrialization:bronze_dust" }, 2],
+        ],
+
+        outputItems: [
+            [{ id: "milf:bronze_glass" }, 1],
+        ],
+        requires_bellows: true,
+        time: 150
+    })
+
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:glass_pane" }, 4],
+            [{ item: "modern_industrialization:steel_dust" }, 2],
+        ],
+
+        outputItems: [
+            [{ id: "milf:steel_infused_glass" }, 1],
+        ],
+        requires_bellows: true,
+        time: 150
+    })
+
 
     Object.entries({
 
@@ -79,174 +213,122 @@ ServerEvents.recipes(event => {
     })
 
     Object.entries({
-        "milf:unfired_clay_mold_axe": {
-            woodenPart: "milf:wooden_axe_head",
-            mold: "milf:clay_mold_axe",
-            volume: $FluidType.BUCKET_VOLUME / 4,
+        "milf:clay_mold_axe": {
+            volume: 250,
+            potsherds: 3,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_axe_head_part",
-                "embers:molten_lead": "ytech:lead_axe_head_part"
+                "embers:molten_bronze": "milf:bronze_axe_head",
+                "embers:molten_lead": "milf:lead_axe_head"
             }
         },
-        "milf:unfired_clay_mold_hammer": {
-            woodenPart: "milf:wooden_hammer_head",
-            mold: "milf:clay_mold_hammer",
-            volume: $FluidType.BUCKET_VOLUME,
+        "milf:clay_mold_hammer": {
+            volume: 1000,
+            potsherds: 3,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_hammer_head_part",
-                "embers:molten_lead": "ytech:lead_hammer_head_part"
+                "embers:molten_bronze": "milf:bronze_hammer_head",
+                "embers:molten_lead": "milf:lead_hammer_head"
             }
         },
-        "milf:unfired_clay_mold_hoe": {
-            woodenPart: "milf:wooden_hoe_head",
-            mold: "milf:clay_mold_hoe",
-            volume: $FluidType.BUCKET_VOLUME / 5,
+        "milf:clay_mold_hoe": {
+            volume: 200,
+            potsherds: 3,
             castMap: {
-                "embers:molten_bronze": "milf:bronze_hoe_head_part",
-                "embers:molten_lead": "milf:lead_hoe_head_part"
+                "embers:molten_bronze": "milf:bronze_hoe_head",
+                "embers:molten_lead": "milf:lead_hoe_head"
             }
         },
-        "milf:unfired_clay_mold_pickaxe": {
-            woodenPart: "milf:wooden_pickaxe_head",
-            mold: "milf:clay_mold_pickaxe",
-            volume: $FluidType.BUCKET_VOLUME / 4,
+        "milf:clay_mold_pickaxe": {
+            volume: 250,
+            potsherds: 3,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_pickaxe_head_part",
-                "embers:molten_lead": "ytech:lead_pickaxe_head_part"
+                "embers:molten_bronze": "milf:bronze_pickaxe_head",
+                "embers:molten_lead": "milf:lead_pickaxe_head"
             }
         },
-        "milf:unfired_clay_mold_shovel": {
-            woodenPart: "milf:wooden_shovel_head",
-            mold: "milf:clay_mold_shovel",
-            volume: $FluidType.BUCKET_VOLUME / 8,
+        "milf:clay_mold_shovel": {
+            volume: 125,
+            potsherds: 3,
             castMap: {
-                "embers:molten_bronze": "milf:bronze_shovel_head_part",
-                "embers:molten_lead": "milf:lead_shovel_head_part"
+                "embers:molten_bronze": "milf:bronze_shovel_head",
+                "embers:molten_lead": "milf:lead_shovel_head"
             }
         },
-        "milf:unfired_clay_mold_sword": {
-            woodenPart: "milf:wooden_sword_blade",
+        "milf:clay_mold_sword": {
+            volume: 175,
+            potsherds: 3,
+            castMap: {
+                "embers:molten_bronze": "milf:bronze_sword_blade",
+                "embers:molten_lead": "milf:lead_sword_blade"
+            }
+        },
+        "milf:clay_mold_ingot": {
             mold: "milf:clay_mold_sword",
-            volume: $FluidType.BUCKET_VOLUME / 5,
+            volume: 250,
+            potsherds: 5,
             castMap: {
-                "embers:molten_bronze": "ytech:bronze_sword_blade_part",
-                "embers:molten_lead": "ytech:lead_sword_blade_part"
+                "embers:molten_bronze": "modern_industrialization:bronze_ingot",
+                "embers:molten_lead": "modern_industrialization:lead_ingot",
+                "embers:molten_tin": "modern_industrialization:tin_ingot",
+                "embers:molten_gold": "minecraft:gold_ingot"
+
             }
-        }
-    }).forEach(([unfiredMoldId, data]) => {
+        },
+        "milf:clay_mold_rod": {
+            volume: 125,
+            potsherds: 5,
+            castMap: {
+                "embers:molten_bronze": "modern_industrialization:bronze_rod",
+                "embers:molten_lead": "modern_industrialization:lead_rod",
+                "embers:molten_tin": "modern_industrialization:tin_rod",
+                "embers:molten_gold": "modern_industrialization:gold_rod"
+            }
+        },
+        "milf:clay_mold_anvil_full": {
+            volume: 4000,
+            potsherds: 10,
+            castMap: {
+                "embers:molten_bronze": "milf:bronze_anvil",
+            }
+        },
+    }).forEach(([moldId, data]) => {
 
-        let { woodenPart, mold, castMap, volume } = data
-
-        milfShapedCustom(event, {
-            pattern: [
-                'p  ',
-                'm  ',
-                '   '
-            ],
-            key: {
-                p: { item: woodenPart },
-                m: { item: "milf:unfired_clay_plate" },
-            },
-            keepIngredient: woodenPart,
-            outputItems: [[{ id: unfiredMoldId }, 1]],
-        })
-
-        ytechSmeltingRecipe(event, {
-            inputItems: [
-                [{ item: unfiredMoldId }],
-            ],
-            outputItems: [
-                [{ id: mold }]
-            ],
-            minTemp: 1000,
-        })
+        let { castMap, volume, potsherds } = data
 
         Object.entries(castMap).forEach(([fluidId, part])=> {
 
-            let fluidComponent = {"milf:fluid": {}}
-            fluidComponent["milf:fluid"].id = fluidId
-            fluidComponent["milf:fluid"].amount = volume
-
-            yTechShapeless(event, {
-                inputItems: [
-                    [{ tag: "c:hammers" }],
-                    [{
-                        "type": "neoforge:components",
-                        "items": mold,
-                        "strict": false,
-                        "components": fluidComponent
-                    }],
-                    [{
-                        "type": "neoforge:components",
-                        "items": "milf:clay_bucket",
-                        "strict": false,
-                        "components": { 
-                            "milf:fluid": {
-                                id: "minecraft:water",
-                                amount: 1000
-                            } 
-                        }
-                    }],
+            milfCastingRecipe(event, {
+                mold: {item: moldId},
+                outputItems: [
+                    [{ id: part }],
+                    [{ id: "milf:potsherd" }, potsherds]
                 ],
-                outputItems: [[{ id: part }, 1]],
-                compatOff: true
+                inputFluids: [
+                    [{ fluid: fluidId }, volume]
+                ],
+                time: 400
             })
 
-            // yTechShaped(event, {
-            //     pattern: [
-            //         ' h ',
-            //         ' m ',
-            //         '   '
-            //     ],
-            //     key: {
-            //         h: { tag: "c:hammers" },
-            //         m: {
-            //             "type": "neoforge:components",
-            //             "items": mold,
-            //             "strict": false,
-            //             "components": fluidComponent
-            //         }
-            //     },
-            //     outputItems: [[{ id: part }, 1]],
-            //     compatOff: true
-            // })
         })
 
 
     })
 
-    milfShaped(event, {
-        pattern: [
-            "ccc",
-        ],
-        key: {
-            "c": { "item": "minecraft:clay_ball" },
-        },
-        outputItems: [[{ id: "milf:unfired_clay_plate" }, 1]]
-    })
-
-    milfShapedCustom(event, {
-        pattern: [
-            " b ",
-            " p ",
-            " p ",
-        ],
-        key: {
-            "p": { "item": "milf:unfired_clay_plate" },
-            "b": { "item": "minecraft:brick" }
-        },
-        keepIngredient: "minecraft:brick",
-        outputItems: [[{ id: "milf:unfired_clay_mold_ingot" }, 1]]
-    })
-
-    ytechSmeltingRecipe(event, {
+    milfKilnSmeltingRecipe(event, {
         inputItems: [
-            [{ item: "milf:unfired_clay_mold_ingot" }],
+            [{ item: "minecraft:smooth_sandstone" }],
         ],
         outputItems: [
-            [{ id: "milf:clay_mold_ingot" }]
+            [{ id: "minecraft:glass" }],
+        ]
+    })
+
+    milfKilnSmeltingRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:cobblestone" }],
         ],
-        minTemp: 1000,
+        outputItems: [
+            [{ id: "minecraft:stone" }],
+        ]
     })
 
     yTechShaped(event, {
@@ -388,6 +470,104 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "milf:fish_net" }, 1]]
     })
 
+    milfShaped(event, {
+        pattern: [
+            " PP",
+            " PP",
+            "   ",
+        ],
+        key: {
+            "P": { "item": "ytech:pebble" }
+
+        },
+        outputItems: [[{ id: "milf:fire_pit" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PBP",
+            "PTP",
+            " S ",
+        ],
+        key: {
+            "T": { "item": "ytech:grass_twine" },
+            "S": { "item": "minecraft:stick" },
+            "P": { "item": "ytech:pebble" },
+            "B": { "item": "ytech:wooden_bolt" }
+
+        },
+        outputItems: [[{ id: "milf:stone_hammer" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " TS",
+            "  T",
+            "   ",
+        ],
+        key: {
+            "T": { "item": "milf:twig" },
+            "S": { "item": "minecraft:stick" }
+
+        },
+        outputItems: [[{ id: "milf:roasting_contraption" }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " TS",
+            " ST",
+            "   ",
+        ],
+        key: {
+            "T": { "item": "ytech:grass_fibers" },
+            "S": { "item": "minecraft:stick" }
+
+        },
+        outputItems: [[{ id: "milf:firestarter" }, 1]]
+    })
+
+    milfShapeless(event, {
+        inputItems: [
+            [{ "item": "ytech:sharp_flint" }, 1],
+            [{ "item": "ytech:grass_twine" }, 1],
+        ],
+        outputItems: [[{ "id": "milf:flint_chisel" }]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SSL",
+            "LNL",
+            " L ",
+        ],
+        key: {
+            "L": { "item": "minecraft:leather" },
+            "S": { "item": "ytech:leather_strips" },
+            "N": { "tag": "ytech:bone_needles" }
+
+        },
+        outputItems: [[{ id: "milf:waterskin" }, 1]]
+    })
+
+
+    milfShaped(event, {
+        pattern: [
+            "RLR",
+            "L L",
+            "RCR",
+        ],
+        key: {
+            "L": { "item": "minecraft:leather" },
+            "R": { "item": "modern_industrialization:lead_rod" },
+            "C": { "item": "milf:clay_crucible" }
+
+        },
+        outputItems: [[{ id: "milf:pot_bellows" }, 1]]
+    })
+
+
     yTechShaped(event, {
         pattern: [
             "NNN",
@@ -501,7 +681,7 @@ ServerEvents.recipes(event => {
         pattern: [
             " FT",
             " SF",
-            "S  ",
+            "   ",
         ],
         key: {
             "T": { "item": "ytech:grass_twine" },

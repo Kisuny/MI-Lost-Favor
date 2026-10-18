@@ -63,15 +63,15 @@ createNewItem('polarized_magnet_part', { stackSize: 16, lang: { "en_us": "Polari
 
 
 createNewItem('needle', { maxDamage: 500, tag: "ytech:bone_needles", lang: { "en_us": "Needle", "ru_ru": "Игла" }})
-createNewItem('crushed_copper', { tag: ["c:crushed_ores", "c:crushed_ores/copper"], lang: { "en_us": "Сrushed copper", "ru_ru": "Измельченная медь" }})
-createNewItem('crushed_gold', { tag: ["c:crushed_ores", "c:crushed_ores/gold"], lang: { "en_us": "Сrushed gold", "ru_ru": "Измельченное золото" }})
-createNewItem('crushed_iron', { tag: ["c:crushed_ores", "c:crushed_ores/iron"], lang: { "en_us": "Сrushed iron", "ru_ru": "Измельченное железо" }})
-createNewItem('crushed_lead', { tag: ["c:crushed_ores", "c:crushed_ores/lead"], lang: { "en_us": "Сrushed lead", "ru_ru": "Измельченный свинец" }})
-createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], lang: { "en_us": "Сrushed tin", "ru_ru": "Измельченное олово" }})
+// createNewItem('crushed_copper', { tag: ["c:crushed_ores", "c:crushed_ores/copper"], lang: { "en_us": "Сrushed copper", "ru_ru": "Измельченная медь" }})
+// createNewItem('crushed_gold', { tag: ["c:crushed_ores", "c:crushed_ores/gold"], lang: { "en_us": "Сrushed gold", "ru_ru": "Измельченное золото" }})
+// createNewItem('crushed_iron', { tag: ["c:crushed_ores", "c:crushed_ores/iron"], lang: { "en_us": "Сrushed iron", "ru_ru": "Измельченное железо" }})
+// createNewItem('crushed_lead', { tag: ["c:crushed_ores", "c:crushed_ores/lead"], lang: { "en_us": "Сrushed lead", "ru_ru": "Измельченный свинец" }})
+// createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], lang: { "en_us": "Сrushed tin", "ru_ru": "Измельченное олово" }})
 
 createNewItem('twig')
-createNewItem('unfired_fire_clay_brick')
-createNewItem('fire_clay_ball')
+// createNewItem('unfired_fire_clay_brick')
+// createNewItem('fire_clay_ball')
 
 createNewItem('fish_net', { stackSize: 15 })
 // createNewItem('firestarter', { 
@@ -117,29 +117,29 @@ createNewItem('fish_net', { stackSize: 15 })
 //     }
 // })
 
-createNewItem('unfired_clay_mold_ingot', { stackSize: 1})
-createNewItem('unfired_clay_mold_axe', { stackSize: 1})
-createNewItem('unfired_clay_mold_hammer', { stackSize: 1 })
-createNewItem('unfired_clay_mold_hoe', { stackSize: 1 })
-createNewItem('unfired_clay_mold_pickaxe', { stackSize: 1 })
-createNewItem('unfired_clay_mold_shovel', { stackSize: 1 })
-createNewItem('unfired_clay_mold_sword', { stackSize: 1 })
+// createNewItem('unfired_clay_mold_ingot', { stackSize: 1})
+// createNewItem('unfired_clay_mold_axe', { stackSize: 1})
+// createNewItem('unfired_clay_mold_hammer', { stackSize: 1 })
+// createNewItem('unfired_clay_mold_hoe', { stackSize: 1 })
+// createNewItem('unfired_clay_mold_pickaxe', { stackSize: 1 })
+// createNewItem('unfired_clay_mold_shovel', { stackSize: 1 })
+// createNewItem('unfired_clay_mold_sword', { stackSize: 1 })
 
-createNewItem('unfired_clay_plate')
+//createNewItem('unfired_clay_plate')
 //createNewItem('clay_plate')
 
-createNewItem('wooden_axe_head', { stackSize: 1 })
-createNewItem('wooden_hammer_head', { stackSize: 1 })
-createNewItem('wooden_hoe_head', { stackSize: 1 })
-createNewItem('wooden_pickaxe_head', { stackSize: 1 })
-createNewItem('wooden_shovel_head', { stackSize: 1 })
-createNewItem('wooden_sword_blade', { stackSize: 1 })
+// createNewItem('wooden_axe_head', { stackSize: 1 })
+// createNewItem('wooden_hammer_head', { stackSize: 1 })
+// createNewItem('wooden_hoe_head', { stackSize: 1 })
+// createNewItem('wooden_pickaxe_head', { stackSize: 1 })
+// createNewItem('wooden_shovel_head', { stackSize: 1 })
+// createNewItem('wooden_sword_blade', { stackSize: 1 })
 
-createNewItem('bronze_shovel_head_part', { lang: { "en_us": "Bronze Shovel Head Part", "ru_ru": "Часть лопаты из бронзы" } })
-createNewItem('lead_shovel_head_part')
+// createNewItem('bronze_shovel_head_part', { lang: { "en_us": "Bronze Shovel Head Part", "ru_ru": "Часть лопаты из бронзы" } })
+// createNewItem('lead_shovel_head_part')
 
-createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
-createNewItem('lead_hoe_head_part')
+// createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
+// createNewItem('lead_hoe_head_part')
 
 createNewItem('ferrosilicon_dust')
 

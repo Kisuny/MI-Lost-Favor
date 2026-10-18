@@ -29,49 +29,49 @@ const ytechAlloyingCraft = (event, args) => {
 }
 ServerEvents.recipes(event => {
 
-    ytechAlloyingCraft(event, {
-        inputItems:[
-            [{tag: "c:sands"}],
-            [{tag: "c:dusts/bronze"}]
-        ],
-        outputItems:[
-            [{id:"milf:bronze_glass"},2]
-        ],
-        minTemp: 1000
-    })
+    // ytechAlloyingCraft(event, {
+    //     inputItems:[
+    //         [{tag: "c:sands"}],
+    //         [{tag: "c:dusts/bronze"}]
+    //     ],
+    //     outputItems:[
+    //         [{id:"milf:bronze_glass"},2]
+    //     ],
+    //     minTemp: 1000
+    // })
 
-    ytechAlloyingCraft(event, {
-        inputItems:[
-            [{tag: "c:sands"}],
-            [{tag: "c:dusts/steel"}]
-        ],
-        outputItems:[
-            [{id:"milf:steel_infused_glass"},2]
-        ],
-        minTemp: 1200
-    })
+    // ytechAlloyingCraft(event, {
+    //     inputItems:[
+    //         [{tag: "c:sands"}],
+    //         [{tag: "c:dusts/steel"}]
+    //     ],
+    //     outputItems:[
+    //         [{id:"milf:steel_infused_glass"},2]
+    //     ],
+    //     minTemp: 1200
+    // })
 
-    ytechAlloyingCraft(event, {
-        inputItems:[
-            [{tag: "c:cobblestones"}],
-            [{item: "ytech:pebble"}]
-        ],
-        outputItems:[
-            [{id:"minecraft:stone"}]
-        ],
-        minTemp: 800
-    })
+    // ytechAlloyingCraft(event, {
+    //     inputItems:[
+    //         [{tag: "c:cobblestones"}],
+    //         [{item: "ytech:pebble"}]
+    //     ],
+    //     outputItems:[
+    //         [{id:"minecraft:stone"}]
+    //     ],
+    //     minTemp: 800
+    // })
 
-    ytechAlloyingCraft(event, {
-        inputItems:[
-            [{item: "minecraft:copper_ingot"}, 3],
-            [{item: "modern_industrialization:tin_ingot"}]
-        ],
-        outputItems:[
-            [{id:"modern_industrialization:bronze_ingot"}, 4]
-        ],
-        minTemp: 1085,
-        compatOff:true
-    })
+    // ytechAlloyingCraft(event, {
+    //     inputItems:[
+    //         [{item: "minecraft:copper_ingot"}, 3],
+    //         [{item: "modern_industrialization:tin_ingot"}]
+    //     ],
+    //     outputItems:[
+    //         [{id:"modern_industrialization:bronze_ingot"}, 4]
+    //     ],
+    //     minTemp: 1085,
+    //     compatOff:true
+    // })
 
 })

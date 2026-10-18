@@ -11,15 +11,32 @@ global.milfBosses = {
         "cataclysm:ender_guardian": { structure: "cataclysm:ruined_citadel" },
         "cataclysm:the_leviathan": { structure: "cataclysm:sunken_city", isStructureExclusive: true },
         "cataclysm:scylla": { structure: "cataclysm:acropolis" },
-        "ars_nouveau:wilden_boss": { structure: "" }
-
-    },
-
-    tier3:{
-
+        
         "fdbosses:malkuth": { structure: "fdbosses:malkuth_arena", isStructureExclusive: true },
         "fdbosses:chesed": { structure: "fdbosses:chesed_arena", isStructureExclusive: true },
         "fdbosses:geburah": { fakeItemToRender: "fdbosses:geburah_trophy", structure: "fdbosses:geburah_arena", isStructureExclusive: true },
+    },
+
+    tier3:{
+        // summoned in the ars nouveau 
+        // "ars_nouveau:wilden_boss": { structure: "" },
+        "legendary_monsters:ancient_guardian": { structure: "legendary_monsters:ancient_stronghold" },
+        "legendary_monsters:dune_sentinel": { structure: "legendary_monsters:ruined_pyramid" },
+        "legendary_monsters:overgrown_colossus": { structure: "legendary_monsters:mossy_temple" },
+        "legendary_monsters:frostbitten_golem": { structure: "legendary_monsters:frostbitten_temple" },
+        "legendary_monsters:warped_fungussus": { structure: "legendary_monsters:warped_fungussus_nest" },
+        "legendary_monsters:skeletosaurus": { structure: "legendary_monsters:skeletosaurus_nest" },
+        "legendary_monsters:lava_eater": { structure: "legendary_monsters:lava_eater_spawn" },
+        "legendary_monsters:withered_abomination": { structure: "legendary_monsters:soul_fortress_remains" },
+        "legendary_monsters:cloud_golem": { structure: "legendary_monsters:cloudy_temple", isStructureExclusive: true },
+        "legendary_monsters:shulker_mimic": { structure: "legendary_monsters:shulker_tower" },
+        "legendary_monsters:endersent": { structure: "legendary_monsters:ancient_tower_remains" },
+        "legendary_monsters:annihilation_pursuer": { structure: "legendary_monsters:space_station" },
+        "legendary_monsters:the_obliterator": { structure: "legendary_monsters:space_station", isStructureExclusive: true },
+        "legendary_monsters:posessed_paladin": { structure: "legendary_monsters:collapsed_kingdom", isStructureExclusive: true },
+
+        "netherman:azazel_human": { structure: "netherman:maze" },
+        "netherman:azazel": { structure: "" },
     },
 
     tier2:{

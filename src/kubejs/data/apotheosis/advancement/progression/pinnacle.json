@@ -201,6 +201,48 @@
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_malkuth": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "fdbosses:malkuth"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_chesed": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "fdbosses:chesed"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_geburah": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "fdbosses:geburah"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
         }
     },
     "display": {
@@ -259,6 +301,15 @@
         ],
         [
             "kill_maledictus"
+        ],
+        [
+            "kill_malkuth"
+        ],
+        [
+            "kill_chesed"
+        ],
+        [
+            "kill_geburah"
         ]
     ],
     "sends_telemetry_event": true

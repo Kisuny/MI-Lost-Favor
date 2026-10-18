@@ -130,6 +130,82 @@ const locate_structure_rituals = [
             "minecraft:water_bucket",
         ]
     },
+    {
+        name: "lm_ancient_stronghold", structure: "legendary_monsters:ancient_stronghold", items: [
+            "legendary_monsters:eye_of_many_ribs",
+        ]
+    },
+    {
+        name: "lm_cloudy_temple", structure: "legendary_monsters:cloudy_temple", items: [
+            "legendary_monsters:eye_of_air",
+        ]
+    },
+    {
+        name: "lm_mossy_temple", structure: "legendary_monsters:mossy_temple", items: [
+            "legendary_monsters:eye_of_moss",
+        ]
+    },
+    {
+        name: "lm_frostbitten_temple", structure: "legendary_monsters:frostbitten_temple", items: [
+            "legendary_monsters:eye_of_frost",
+        ]
+    },
+    {
+        name: "lm_ruined_pyramid", structure: "legendary_monsters:ruined_pyramid", items: [
+            "legendary_monsters:eye_of_sandstorm",
+        ]
+    },
+    {
+        name: "lm_skeletosaurus_nest", structure: "legendary_monsters:skeletosaurus_nest", items: [
+            "legendary_monsters:eye_of_bones",
+        ]
+    },
+    {
+        name: "lm_lava_eater_spawn", structure: "legendary_monsters:lava_eater_spawn", items: [
+            "legendary_monsters:eye_of_magma",
+        ]
+    },
+    {
+        name: "lm_warped_fungussus_nest", structure: "legendary_monsters:warped_fungussus_nest", items: [
+            "minecraft:warped_fungus",
+            "minecraft:warped_wart_block",
+            "minecraft:warped_roots",
+        ]
+    },
+    {
+        name: "lm_soul_fortress_remains", structure: "legendary_monsters:soul_fortress_remains", items: [
+            "legendary_monsters:eye_of_soul",
+        ]
+    },
+    {
+        name: "lm_collapsed_kingdom", structure: "legendary_monsters:collapsed_kingdom", items: [
+            "legendary_monsters:eye_of_ghost",
+        ]
+    },
+    {
+        name: "lm_shulker_tower", structure: "legendary_monsters:shulker_tower", items: [
+            "legendary_monsters:eye_of_shulker",
+        ]
+    },
+    {
+        name: "lm_ancient_tower_remains", structure: "legendary_monsters:ancient_tower_remains", items: [
+            "legendary_monsters:eye_of_chorus",
+        ]
+    },
+    {
+        name: "lm_space_station", structure: "legendary_monsters:space_station", items: [
+            "minecraft:ender_eye",
+            "minecraft:end_crystal",
+            "minecraft:chorus_flower",
+        ]
+    },
+    {
+        name: "azazel_maze", structure: "netherman:maze", items: [
+            "minecraft:gold_block",
+            "minecraft:blackstone",
+            "minecraft:crimson_fungus",
+        ]
+    },
 ]
 
 ServerEvents.generateData("before_mods", event => {

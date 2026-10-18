@@ -40,6 +40,16 @@ ClientEvents.lang('ru_ru', event => {
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_umvuthi', 'Усиленный Umvuthi')
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_frostmaw', 'Усиленный Frostmaw')
 
+    event.add('gateways.tiered/legends', 'Врата Легенд')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.ancient_guardian', 'Усиленный Древний страж')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.dune_sentinel', 'Усиленный Страж дюн')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.overgrown_colossus', 'Усиленный Заросший колосс')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.frostbitten_golem', 'Усиленный Обмороженный голем')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.warped_fungussus', 'Усиленный Искажённый грибок')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.skeletosaurus', 'Усиленный Скелетозавр')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.lava_eater', 'Усиленный Пожиратель лавы')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.withered_abomination', 'Усиленная Визер-мерзость')
+
     const rarityRu = { uncommon: 'Необычн', rare: 'Редк', epic: 'Эпическ', mythic: 'Мифическ' }
     const rarityRuEndings = { legs: 'ых Поножей', chest: 'ого Нагрудника', hand: 'ого Оружия', helm: 'ого Шлема', feet: 'их Ботинок' }
     const worlds_tier = ['frontier', 'ascent', 'summit', 'pinnacle']
@@ -65,12 +75,16 @@ ClientEvents.lang('ru_ru', event => {
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_obsidilith', 'Убить Обсидилита')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_void_blossom', 'Убить Бездонный Цветок')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_gauntlet', 'Убить Незерскую Перчатку')
-    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_geburah', 'Убить Гебуру')
-    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Убить Малькут')
-    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Убить Хесед')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Убить Лунное Чудовище')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_azazel_human', 'Убить Истинного Азазель')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_azazel', 'Убить велкую божественную Колесницу Азазель')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.complete_legends_gate', 'Завершить Врата Легенд')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_cumulonimbus', 'Убить Кумулонимбуса')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_chorusent', 'Убить Эндер-посланника')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_shulker_mimic', 'Убить Подражателя шалкера')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_annihilation_pursuer', 'Убить Преследователя аннигиляции')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_obliterator', 'Убить Обливератора')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_possessed_paladin', 'Убить Одержимого паладина')
 
     // pinnacle (мифический) — убийства
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Убить Химеру Вилден')
@@ -82,6 +96,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_ender_guardian', 'Убить Стража Края')
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Убить Сциллу')
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Убить Левиафана')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_geburah', 'Убить Гебуру')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_malkuth', 'Убить Малькут')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_chesed', 'Убить Хесед')
 
     event.add('milf.how_to_seed.tooltip', 'Можно найти в птичьем гнезде или купить на рынке')
     event.add('milf.how_to_get_blaze_core.tooltip', 'Можно получить с шансом 50% если убить ключом: The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
@@ -381,4 +398,8 @@ ClientEvents.lang('ru_ru', event => {
 
     event.add('reward.nutritional.source_bonded', 'Связь с Истоком')
     event.add('nutrient.nutritional.source', 'Исток')
+
+    // руды thaumaturge генерируются внутри жил ADLODS
+    event.add('research.thaumaturge.ore.addendum_0', '§oЯнтарная руда§r<IMG>thaumaturge:textures/research/research3.png:0:128:128:128:.6</IMG>Эта руда не лежит сама по себе - она вкраплена в угольные жилы вместе с лигнитом. При добыче из неё выпадают куски янтаря.')
+    event.add('research.thaumaturge.ore.addendum_1', '§oКиноварь§r<IMG>thaumaturge:textures/research/research3.png:128:128:128:128:.6</IMG>Эта красноватая руда сопутствует редстоуну - ищи её внутри редстоуновых жил. При плавке даёт ртуть.')
 })

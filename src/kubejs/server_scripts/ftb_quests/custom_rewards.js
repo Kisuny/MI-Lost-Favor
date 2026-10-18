@@ -16,7 +16,7 @@ const milestone_rewards = [
     { quest_id: "20165DF8F49E8177", stages: ["mowziesmobs_mobs", "mythsandlegends_mobs"] }, // haven gate
     { quest_id: "224D85127D80FED8", stages: ["cataclysm_mobs", "rottencreatures_mobs", "enderzoology_mobs"] }, // vanilla bosses
     { quest_id: "16B46238FC936637", stages: ["grimoireofgaia_mobs"] }, // bomd and fdbosses bosses
-    { quest_id: "74E5C7C4B8A33E55", stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs"] }, // Iron Bloom
+    { quest_id: "74E5C7C4B8A33E55", stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs"] }, // Iron Bloom
     { quest_id: "670CBE4973B6F390", stages: ["early_items", "blast_furnace", "mythsandlegends_mobs", "royalvariations_mobs"] }, // Steel Ingot
 ]
 
@@ -47,6 +47,7 @@ const simple_stage_rewards = [
     { quest_id: "2F509B489C343BD7", stage: "apotheosis_reforging_table" },
     { quest_id: "6E3C09D7543B99D1", stage: "apotheosis_simple_reforging_table" },
     { quest_id: "4D0EBC927D8AD01D", stage: "xaeromap" },
+    { quest_id: "2AF7D2C03CA107EF", stage: "thaumaturge_mobs" }, // salis mundus
 ]
 
 simple_stage_rewards.forEach(entry => {

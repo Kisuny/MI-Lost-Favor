@@ -1,0 +1,656 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "legendary_monsters"
+        },
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apotheosis"
+        }
+    ],
+    "type": "apotheosis:tiered",
+    "settings": {
+        "soundtrack": "apotheosis:music_disc_flash",
+        "tier": "ascent",
+        "size": "large",
+        "color": "#C9A23F"
+    },
+    "waves": [
+        {
+            "max_wave_time": 6000,
+            "setup_time": 100,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.ancient_guardian",
+                    "entity": "legendary_monsters:ancient_guardian",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 3.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.2
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.2
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 800,
+                            "orb_size": 25
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "legendary_monsters:ambusher",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "legendary_monsters:spiky_bug",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.dune_sentinel",
+                    "entity": "legendary_monsters:dune_sentinel",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 3.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.2
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.2
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 900,
+                            "orb_size": 25
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "legendary_monsters:bomber",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "minecraft:husk",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.overgrown_colossus",
+                    "entity": "legendary_monsters:overgrown_colossus",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 2.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 1000,
+                            "orb_size": 25
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.frostbitten_golem",
+                    "entity": "legendary_monsters:frostbitten_golem",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 2.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 1100,
+                            "orb_size": 25
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:stray",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:ascent/ranged/iron"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.warped_fungussus",
+                    "entity": "legendary_monsters:warped_fungussus",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 2.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 1150,
+                            "orb_size": 25
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.skeletosaurus",
+                    "entity": "legendary_monsters:skeletosaurus",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 2.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 1200,
+                            "orb_size": 25
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.lava_eater",
+                    "entity": "legendary_monsters:lava_eater",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 2.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 1300,
+                            "orb_size": 25
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "max_wave_time": 6000,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "desc": "wave_entity.legendary_monsters.withered_abomination",
+                    "entity": "legendary_monsters:withered_abomination",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:loot_table",
+                            "loot_table": "minecraft:empty"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.3
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 2.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:projectile_damage",
+                            "operation": "add_multiplied_total",
+                            "value": 0.15
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.knockback_resistance",
+                            "operation": "add_value",
+                            "value": 0.1
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.movement_speed",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ],
+                    "rewards": [
+                        {
+                            "type": "gateways:experience",
+                            "experience": 1400,
+                            "orb_size": 25
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "minecraft:wither_skeleton",
+                    "finalize_spawn": true,
+                    "modifiers": [
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:counted",
+            "count": 3,
+            "reward": {
+                "type": "apotheosis:affix_item",
+                "rarities": [
+                    "apotheosis:uncommon",
+                    "apotheosis:rare",
+                    "apotheosis:epic"
+                ]
+            }
+        },
+        {
+            "type": "gateways:counted",
+            "count": 5,
+            "reward": {
+                "type": "apotheosis:gem",
+                "purities": [
+                    "chipped",
+                    "flawed",
+                    "normal"
+                ]
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "count": 16,
+                "id": "apotheosis:gem_dust"
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "count": 6,
+                "id": "apotheosis:rare_material"
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": {
+                "count": 1,
+                "id": "apotheosis:sigil_of_socketing"
+            }
+        }
+    ],
+    "rules": {
+        "lives": 3,
+        "requires_nearby_player": true
+    }
+}

@@ -50,6 +50,16 @@ ClientEvents.lang('en_us', event => {
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_umvuthi', 'Reinforced Umvuthi')
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_frostmaw', 'Reinforced Frostmaw')
 
+    event.add('gateways.tiered/legends', 'Gateway of Legends')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.ancient_guardian', 'Reinforced Ancient Guardian')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.dune_sentinel', 'Reinforced Dune Sentinel')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.overgrown_colossus', 'Reinforced Overgrown Colossus')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.frostbitten_golem', 'Reinforced Frostbitten Golem')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.warped_fungussus', 'Reinforced Warped Fungussus')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.skeletosaurus', 'Reinforced Skeletosaurus')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.lava_eater', 'Reinforced Lava Eater')
+    event.add("legendary_monsters", 'wave_entity.legendary_monsters.withered_abomination', 'Reinforced Withered Abomination')
+
 
     const rarity = ['uncommon', 'rare', 'epic', 'mythic']
     const worlds_tier = ['frontier', 'ascent', 'summit', 'pinnacle']
@@ -76,12 +86,16 @@ ClientEvents.lang('en_us', event => {
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_obsidilith', 'Slay the Obsidilith')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_void_blossom', 'Slay the Void Blossom')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_gauntlet', 'Slay the Nether Gauntlet')
-    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_geburah', 'Slay Geburah')
-    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_malkuth', 'Slay Malkuth')
-    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_chesed', 'Slay Chesed')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_lunar_monstrosity', 'Slay the Lunar Monstrosity')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_azazel_human', 'Slay The True Azazel')
     event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_azazel', 'Slay The Divine Chariot Azazel')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.complete_legends_gate', 'Complete the Gateway of Legends')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_cumulonimbus', 'Slay Cumulonimbus')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_chorusent', 'Slay the Chorusent')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_shulker_mimic', 'Slay the Shulker Mimic')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_annihilation_pursuer', 'Slay an Annihilation Pursuer')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_obliterator', 'Slay The Obliterator')
+    event.add("apotheosis", 'advancements.apotheosis.progression.summit.criteria.kill_possessed_paladin', 'Slay the Possessed Paladin')
 
     // pinnacle (mythic) kill criteria
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_wilden_boss', 'Slay the Wilden Chimera')
@@ -93,6 +107,9 @@ ClientEvents.lang('en_us', event => {
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_ender_guardian', 'Slay the Ender Guardian')
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_scylla', 'Slay Scylla')
     event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_the_leviathan', 'Slay the Leviathan')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_geburah', 'Slay Geburah')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_malkuth', 'Slay Malkuth')
+    event.add("apotheosis", 'advancements.apotheosis.progression.pinnacle.criteria.kill_chesed', 'Slay Chesed')
    
     event.add('milf.credit.mi_part', `${MilfEffects.GRAD.MILF('MI:LF™ Certified MI Part')}`)
     event.add('milf.credit.mi_machine', `${MilfEffects.GRAD.MILF('MI:LF™ Certified MI Machine')}`)
@@ -423,6 +440,10 @@ The only solution is to make them less sound.`)
     
     event.add('reward.nutritional.source_bonded', 'Source Bonded')
     event.add('nutrient.nutritional.source', 'Source')
+
+    // thaumaturge ores are generated inside ADLODS deposits
+    event.add('research.thaumaturge.ore.addendum_0', '§oAmber Ore§r<IMG>thaumaturge:textures/research/research3.png:0:128:128:128:.6</IMG>This ore does not lie on its own - it is found scattered through coal deposits, alongside lignite. When mined it drops chunks of amber.')
+    event.add('research.thaumaturge.ore.addendum_1', '§oCinnabar§r<IMG>thaumaturge:textures/research/research3.png:128:128:128:128:.6</IMG>This reddish ore accompanies redstone - look for it inside redstone deposits. When smelted it produces quicksilver.')
 })
 
 let MilfEffects = {

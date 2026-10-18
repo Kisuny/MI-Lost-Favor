@@ -109,42 +109,90 @@
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_geburah": {
+        "complete_legends_gate": {
+            "conditions": {
+                "gateway": "gateways:tiered/legends"
+            },
+            "trigger": "gateways:finish_gateway"
+        },
+        "kill_cumulonimbus": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "fdbosses:geburah"
+                            "type": "legendary_monsters:cloud_golem"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_malkuth": {
+        "kill_chorusent": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "fdbosses:malkuth"
+                            "type": "legendary_monsters:endersent"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_chesed": {
+        "kill_shulker_mimic": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "fdbosses:chesed"
+                            "type": "legendary_monsters:shulker_mimic"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_annihilation_pursuer": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "legendary_monsters:annihilation_pursuer"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_obliterator": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "legendary_monsters:the_obliterator"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_possessed_paladin": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "legendary_monsters:posessed_paladin"
                         }
                     }
                 ]
@@ -183,31 +231,31 @@
             "epic_hand"
         ],
         [
-            "kill_lich"
-        ],
-        [
-            "kill_obsidilith"
-        ],
-        [
-            "kill_void_blossom"
-        ],
-        [
-            "kill_gauntlet"
-        ],
-        [
-            "kill_malkuth"
-        ],
-        [
-            "kill_chesed"
-        ],
-        [
-            "kill_geburah"
-        ],
-        [
             "kill_azazel_human"
         ],
         [
             "kill_azazel"
+        ],
+        [
+            "complete_legends_gate"
+        ],
+        [
+            "kill_cumulonimbus"
+        ],
+        [
+            "kill_chorusent"
+        ],
+        [
+            "kill_shulker_mimic"
+        ],
+        [
+            "kill_annihilation_pursuer"
+        ],
+        [
+            "kill_obliterator"
+        ],
+        [
+            "kill_possessed_paladin"
         ]
     ],
     "sends_telemetry_event": true

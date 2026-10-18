@@ -1,0 +1,44 @@
+# This holds the schematic version for internal purposes. DO NOT TOUCH!
+schematicVersion = 2
+
+# This category holds configs that define uuid behaviour.
+[Ship]
+	#Set the speed indication: 0 = km/h, 1 = m/s, 2 = knots, 3 = mph
+	shipModSpeedUnit = 0
+
+	#This category holds configs that define general uuid behaviour.
+	[Ship.General]
+
+		#General camera settings for ships.
+		[Ship.General.Camera]
+			#Automatically enable third person camera when entering a uuid.
+			shipGeneralCameraAutoThirdPerson = true
+			#Center the third person camera on the ship instead of the player, allowing a full 360 degree orbit.
+			shipGeneralCameraShipCenterEnable = true
+
+			#Zoom camera settings for third person view in ships.
+			[Ship.General.Camera.Zoom]
+				#Generally enable the zooming feature.
+				shipGeneralCameraZoomEnable = true
+				#Set maximum distance of zoom (value must be smaller than or equal to 50.0).
+				#Range: 1.0 ~ 50.0
+				shipGeneralCameraZoomMax = 20.0
+				#Set minimum distance of zoom (value must be bigger than or equal to 1.0).
+				#Range: 1.0 ~ 50.0
+				shipGeneralCameraZoomMin = 5.0
+
+# This category holds configs that define general mod settings.
+[General]
+	#Enable smallships creative tab in the creative inventory (only takes effect after restart).
+	smallshipsItemGroupEnable = false
+	#Check for a new version of the mod and show a chat message when joining a world while an update is available.
+	updateCheckerEnable = false
+
+#Visual wind settings.
+[Wind]
+	#Show the white wind lines on the water surface.
+	windParticlesEnable = true
+	#Base amount of wind line particles spawned per tick (scaled with wind strength).
+	windParticlesAmount = 3
+	#Let the ship banner follow the wind direction.
+	windBannerEnable = true

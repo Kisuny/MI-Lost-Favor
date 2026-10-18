@@ -32,6 +32,7 @@ ServerEvents.tags('item', event => {
 
     event.add("milf:ropes", ['#c:ropes', 'ytech:grass_twine',])
 
+    event.add("c:hammers", ['milf:stone_hammer',])
 
     event.add("more_sounds:equipment", "#milf:knives")
 

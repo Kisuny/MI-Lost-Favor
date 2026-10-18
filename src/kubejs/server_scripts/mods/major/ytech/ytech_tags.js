@@ -1,91 +1,63 @@
+
 ServerEvents.tags("item", event => {
 
     event.add("modern_industrialization:forge_hammer_tools", [
         "ytech:bronze_hammer",
-        "ytech:stone_hammer",
+        "milf:stone_hammer",
 
     ])
 
-    event.add("ytech:clay_molds", [
-        "ytech:clay_bucket",
-        "milf:clay_mold_ingot"
-    ])
+    Object.entries({
+        hoe: {
+            partName: "head"
+        },
+        shovel: {
+            partName: "head"
+        },
+        sword: {
+            partName: "blade"
+        },
+        hammer: {
+            partName: "head"
+        },
+        axe: {
+            partName: "head"
+        },
+        pickaxe: {
+            partName: "head"
+        }
+    }).forEach(([part, data]) => {
 
-    event.add("ytech:molds/ingot", [
-        "milf:clay_mold_ingot"
-    ])
+        let {partName} = data
 
-    event.add("ytech:molds/hoe_head", [
-        "milf:hoe_head_clay_mold",
-        "milf:hoe_head_sand_mold",
-    ])
-    
-    event.add("ytech:molds/shovel_head", [
-        "milf:shovel_head_clay_mold",
-        "milf:shovel_head_sand_mold",
-    ])
-    event.add("ytech:molds", [
-        "milf:hoe_head_clay_mold",
-        "milf:hoe_head_sand_mold",
-        "milf:shovel_head_clay_mold",
-        "milf:shovel_head_sand_mold",
-    ])
-    event.add("ytech:clay_molds", [
-        "milf:hoe_head_clay_mold",
-        "milf:shovel_head_clay_mold",
-    ])
-    event.add("ytech:clay_molds/hoe_head", [
-        "milf:hoe_head_clay_mold",
-    ])
-    event.add("ytech:clay_molds/shovel_head", [
-        "milf:shovel_head_clay_mold",
-    ])
-    event.add("ytech:sand_molds/hoe_head", [
-        "milf:hoe_head_sand_mold",
-    ])
-    event.add("ytech:sand_molds/shovel_head", [
-        "milf:shovel_head_sand_mold",
-    ])
-    event.add("ytech:unfired_molds", [
-        "milf:unfired_hoe_head_mold",
-        "milf:unfired_shovel_head_mold",
-    ])
-    event.add("ytech:unfired_molds/hoe_head", [
-        "milf:unfired_hoe_head_mold",
-    ])
-    event.add("ytech:unfired_molds/shovel_head", [
-        "milf:unfired_shovel_head_mold",
-    ])
-    event.add("ytech:sand_molds", [
-        "milf:hoe_head_sand_mold",
-        "milf:shovel_head_sand_mold",
-    ])
-    event.add("ytech:patterns", [
-        "milf:hoe_head_pattern",
-        "milf:shovel_head_pattern",
-    ])
-    event.add("ytech:patterns/hoe_head", [
-        "milf:hoe_head_pattern",
-    ])
-    event.add("ytech:patterns/shovel_head", [
-        "milf:shovel_head_pattern",
-    ])
-    event.add("ytech:parts", [
-        "milf:bronze_hoe_head_part",
-        "milf:bronze_shovel_head_part",
-    ])
-    event.add("ytech:parts/hoe_heads/bronze", [
-        "milf:bronze_hoe_head_part",
-    ])
-    event.add("ytech:parts/shovel_heads/bronze", [
-        "milf:bronze_shovel_head_part",
-    ])
-    event.add("ytech:parts/hoe_heads", [
-        "milf:bronze_hoe_head_part",
-    ])
-    event.add("ytech:parts/shovel_heads", [
-        "milf:bronze_shovel_head_part",
-    ])
+        let materials = ["bronze", "lead"]
+
+        materials.forEach(material => {
+            event.add(`ytech:parts/${part}_${partName}s/${material}`, [
+                `milf:${material}_${part}_${partName}`,
+            ])
+        })
+
+
+    })
+
+
+    // event.add("ytech:parts", [
+    //     "milf:bronze_hoe_head",
+    //     "milf:bronze_shovel_head",
+    // ])
+    // event.add("ytech:parts/hoe_heads/bronze", [
+    //     "milf:bronze_hoe_head",
+    // ])
+    // event.add("ytech:parts/shovel_heads/bronze", [
+    //     "milf:bronze_shovel_head",
+    // ])
+    // event.add("ytech:parts/hoe_heads", [
+    //     "milf:bronze_hoe_head",
+    // ])
+    // event.add("ytech:parts/shovel_heads", [
+    //     "milf:bronze_shovel_head",
+    // ])
 
     event.add("ytech:sharp_flints", "#milf:knives")
 

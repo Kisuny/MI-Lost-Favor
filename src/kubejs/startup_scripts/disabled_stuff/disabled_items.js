@@ -170,18 +170,18 @@ global.disabledItems = [
     new DisabledItemBuilder(/ytech:(?!flint|bronze|lead)(\w+)_knife\b/),
     new DisabledItemBuilder(/ytech:(?!flint)(\w+)_spear\b/),
     new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_hoe\b/),
-    new DisabledItemBuilder(/ytech:(?!stone|bronze|lead)(\w+)_hammer\b/),
-    new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_hammer_head_part\b/),
+    new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_hammer\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_hammer_head_part\b/),
     new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_file\b/),
     new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_saw\b/),
     new DisabledItemBuilder(/ytech:(?!bronze)(\w+)_shears\b/),
     new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_shovel\b/),
     new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_sword\b/),
-    new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_sword_blade_part\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_sword_blade_part\b/),
     new DisabledItemBuilder(/ytech:(?!flint|bronze|lead)(\w+)_axe\b/),
-    new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_axe_head_part\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_axe_head_part\b/),
     new DisabledItemBuilder(/ytech:(?!antler|bronze|lead)(\w+)_pickaxe\b/),
-    new DisabledItemBuilder(/ytech:(?!bronze|lead)(\w+)_pickaxe_head_part\b/),
+    new DisabledItemBuilder(/ytech:(\w+)_pickaxe_head_part\b/),
 
     new DisabledItemBuilder(/ytech:(?!wooden)(\w+)_plate\b/),
     new DisabledItemBuilder(/ytech:(?!brick)(\w+)_mold\b/),
@@ -189,7 +189,7 @@ global.disabledItems = [
     new DisabledItemBuilder(/ytech:dried_(\w+)\b/),
     new DisabledItemBuilder(/ytech:(?!unfired)(\w+)_clay_bucket\b/),
 
-    new DisabledItemBuilder(/ytech:clay_bucket\b/).replaceWith("milf:clay_bucket"),
+    new DisabledItemBuilder(/ytech:clay_bucket\b/).replaceWith("milf:clay_crucible"),
 
 
     new DisabledItemBuilder(/ytech:(\w+)_block\b/),
@@ -201,6 +201,7 @@ global.disabledItems = [
     new DisabledItemBuilder(/ytech:(\w+)_ore\b/),
     new DisabledItemBuilder(/ytech:(\w+)_deposit\b/),
 
+    new DisabledItemBuilder(/ytech:(\w+)_drying_rack\b/),
 
     new DisabledItemBuilder(/ytech:(?!divining)(\w+)_rod\b/)
         .replaceWithRegexMapping(material => `modern_industrialization:${material == "golden" ? "gold" : material}_rod`),
@@ -221,6 +222,15 @@ global.disabledItems = [
     new DisabledItemBuilder("ytech:reinforced_bricks"),
     new DisabledItemBuilder("ytech:bread_dough"),
     new DisabledItemBuilder("ytech:flour"),
+    new DisabledItemBuilder("ytech:iron_bloom"),
+    new DisabledItemBuilder("ytech:unfired_clay_bucket"),
+    new DisabledItemBuilder("ytech:fire_pit"),
+    new DisabledItemBuilder("ytech:primitive_alloy_smelter"),
+    new DisabledItemBuilder("ytech:primitive_smelter"),
+    new DisabledItemBuilder("ytech:reinforced_brick_chimney"),
+    new DisabledItemBuilder("ytech:brick_chimney"),
+    new DisabledItemBuilder("ytech:bronze_anvil"),
+
 
     //#endregion
 

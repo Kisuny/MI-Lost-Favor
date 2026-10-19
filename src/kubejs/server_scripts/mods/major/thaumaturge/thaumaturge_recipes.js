@@ -11,6 +11,7 @@ const thaumResearch = (recipe, args) => {
 }
 const thaumAddRecipe = (event, recipe, args, types) => {
     if (args.removeRecipe && args.id) event.remove({ id: args.id })
+    if (args.removeOutput && recipe.result) event.remove({ output: recipe.result.id })
     if (args.removeRecipeType && recipe.result) types.forEach(type => event.remove({ output: recipe.result.id, type: type }))
     const added = event.custom(recipe)
     if (args.id) added.id(args.id)

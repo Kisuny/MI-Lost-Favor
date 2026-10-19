@@ -680,22 +680,24 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:unlocks/blocks/fusion_shrine"
     });
 
-    customShrineRecipe(event, {
-        time: 1600,
-        experience: 20.0,
-        fluid: "spectrum:midnight_solution",
-        ingredients: [
-            { "item": "ars_nouveau:bookwyrm_charm", count: 4 },
-            { "item": "minecraft:blaze_powder", count: 4 },
-            { "item": "ars_nouveau:source_gem", count: 12 },
-            { "tag": "c:ender_pearls", count: 4 },
-            { "item": "spectrum:raw_azurite", count: 4 },
+    customThaumInfusion(event, {
+        catalyst: 'ars_nouveau:bookwyrm_charm',
+        components: 
+        [
+            'spectrum:blazing_crystal', 
+            'ars_nouveau:source_gem_block', 
+            'ars_nouveau:source_gem_block', 
+            '#c:ender_pearls', 
+            'spectrum:raw_azurite', 
+            'spectrum:raw_azurite', 
+            'spectrum:raw_azurite', 
+            'spectrum:raw_azurite', 
         ],
-        result: {
-            "id": "ars_additions:warp_index",
-            "count": 1
-        },
-        removeRecipe: true,
-        advancement: "spectrum:midgame/collect_azurite"
-    });
+        aspects: { vacuos: 50, alienis: 50, motus: 25, praecantatio: 25 },
+        instability: 10, 
+        research: 'thaumaturge:infusion',
+        result: 'ars_additions:warp_index',
+        removeOutput: true,
+    })
+
 })

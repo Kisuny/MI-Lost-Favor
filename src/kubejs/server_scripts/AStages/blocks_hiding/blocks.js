@@ -41,7 +41,24 @@ const ores = [
     { stage: "tier_2_access_ore", id: "ore_uranium", origin: "modern_industrialization:uranium_ore", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_deepslate_uranium", origin: "modern_industrialization:deepslate_uranium_ore", replace: "minecraft:deepslate" },
     { stage: "tier_2_access_ore", id: "ore_raw_uranium", origin: "modern_industrialization:raw_uranium_block", replace: "minecraft:stone" },
+    { stage: "anvils_everywhere", id: "hopper", origin: "minecraft:hopper", replace: "woodenhopper:wooden_hopper" },
+    { stage: "anvils_everywhere", id: "anvil", origin: "minecraft:anvil", replace: "minecraft:grindstone" },
+    { stage: "anvils_everywhere", id: "chipped_anvil", origin: "minecraft:chipped_anvil", replace: "minecraft:grindstone" },
+    { stage: "anvils_everywhere", id: "damaged_anvil", origin: "minecraft:damaged_anvil", replace: "minecraft:grindstone" },
+    { stage: "always_hidden", id: "enchanting_table", origin: "minecraft:enchanting_table", replace: "minecraft:lectern" },
 ]
+
+// const BLOCK_REPLACEMENTS = {
+//     'minecraft:crafting_table': 'minecraft:bookshelf',
+//     'immersiveengineering:workbench': 'supplementaries:clock_block',
+//     'immersiveengineering:crate': 'minecraft:barrel',
+//     'minecraft:iron_block': 'minecraft:raw_iron_block',
+//     'minecraft:gold_block': 'minecraft:raw_gold_block',
+//     'farmersdelight:cutting_board': 'cookingforblockheads:cutting_board',
+//     'farmersdelight:cooking_pot': 'grimoireofgaia:deco_mandragora_pot',
+//     'farmersdelight:stove': 'cookingforblockheads:connector',
+//     'aquaculture:tackle_box': 'supplementaries:flower_box',
+// }
 ores.forEach(element => {
     AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace).matchAllBlockStates()
 });

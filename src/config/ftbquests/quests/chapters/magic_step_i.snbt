@@ -3146,8 +3146,8 @@
 				item: { count: 1, id: "javd:portal_block" }
 				type: "item"
 			}]
-			x: 43.0d
-			y: 0.0d
+			x: 40.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]
@@ -3489,177 +3489,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "1751D13041775276"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6DB44AE4E5BC7A42"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "44C8D804719614B5"
-				item: { count: 1, id: "apothic_enchanting:helmet_tome" }
-				type: "item"
-			}]
-			x: 46.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "15B3AFECD77757E9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1F7BC7FF283694BA"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "16CA7F32BC6C023D"
-				item: { count: 1, id: "apothic_enchanting:chestplate_tome" }
-				type: "item"
-			}]
-			x: 47.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "197B8CEECA61C12A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "117AAEE065897681"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "50D1EB0B9E014CCF"
-				item: { count: 1, id: "apothic_enchanting:leggings_tome" }
-				type: "item"
-			}]
-			x: 46.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "2FD815964A918D4E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "16D97B0B5EB81EB2"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "27DE3553862143DF"
-				item: { count: 1, id: "apothic_enchanting:boots_tome" }
-				type: "item"
-			}]
-			x: 46.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "7C9EC97D1C3F9CBA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3C296C3791D8CA88"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "2D49F111DE52AAC1"
-				item: { count: 1, id: "apothic_enchanting:weapon_tome" }
-				type: "item"
-			}]
-			x: 44.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "421018A5285593B1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "16A14E00A144CECB"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "54721F884F7E01C4"
-				item: { count: 1, id: "apothic_enchanting:bow_tome" }
-				type: "item"
-			}]
-			x: 44.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "41BF9135970F1E51"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "651AA0E8426FB2C6"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "4F6528018FA2B209"
-				item: { count: 1, id: "apothic_enchanting:pickaxe_tome" }
-				type: "item"
-			}]
-			x: 45.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "6BA662C9EDAB419D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "247682AE63AF684A"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "62DE9789EDC1233F"
-				item: { count: 1, id: "apothic_enchanting:fishing_tome" }
-				type: "item"
-			}]
-			x: 45.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1EA565179E5C25AE"]
-			entity_vis_size: 1.0f
-			id: "38C9E92573A25F80"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "17C7E265760D58A1"
-				table_id: 5572290499387502054L
-				type: "random"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "48D40217692E5963"
-				item: { count: 1, id: "apothic_enchanting:other_tome" }
-				type: "item"
-			}]
-			x: 45.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["4B801253049DAC2F"]
 			entity_vis_size: 1.0f
 			id: "1EA565179E5C25AE"
@@ -3668,8 +3497,8 @@
 				id: "56EE6B7B03B03D4D"
 				type: "checkmark"
 			}]
-			x: 43.0d
-			y: 1.0d
+			x: 42.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0F24421000EA7AF7"]
@@ -4548,18 +4377,18 @@
 			dependencies: [
 				"002562156B0D8E9F"
 				"1751D13041775276"
-				"15B3AFECD77757E9"
-				"2FD815964A918D4E"
 				"421018A5285593B1"
+				"2FD815964A918D4E"
+				"15B3AFECD77757E9"
 				"41BF9135970F1E51"
 				"7C9EC97D1C3F9CBA"
 				"6BA662C9EDAB419D"
-				"197B8CEECA61C12A"
 				"38C9E92573A25F80"
+				"197B8CEECA61C12A"
 			]
 			entity_vis_size: 1.0f
 			id: "2BAF1070D316E4A4"
-			min_required_dependencies: 1
+			min_required_dependencies: 2
 			min_width: 300
 			rewards: [{
 				auto: "enabled"
@@ -4579,8 +4408,8 @@
 				item: { count: 1, id: "apothic_enchanting:apothic_enchanting_table" }
 				type: "item"
 			}]
-			x: 48.5d
-			y: 1.0d
+			x: 48.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2BAF1070D316E4A4"]
@@ -4594,8 +4423,8 @@
 				item: { count: 1, id: "minecraft:bookshelf" }
 				type: "item"
 			}]
-			x: 50.0d
-			y: 1.0d
+			x: 49.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0EB065FD617CB39A"]
@@ -4606,8 +4435,8 @@
 				item: { count: 1, id: "apothic_enchanting:hellshelf" }
 				type: "item"
 			}]
-			x: 51.5d
-			y: 4.0d
+			x: 51.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4FD896F49FCD93CD"]
@@ -4618,8 +4447,8 @@
 				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
 				type: "item"
 			}]
-			x: 51.5d
-			y: 5.0d
+			x: 51.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -4630,8 +4459,8 @@
 				item: { count: 1, id: "apothic_enchanting:sightshelf" }
 				type: "item"
 			}]
-			x: 52.5d
-			y: 6.0d
+			x: 52.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -4642,8 +4471,8 @@
 				item: { count: 1, id: "apothic_enchanting:glowing_hellshelf" }
 				type: "item"
 			}]
-			x: 51.5d
-			y: 6.5d
+			x: 51.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -4654,8 +4483,8 @@
 				item: { count: 1, id: "apothic_enchanting:blazing_hellshelf" }
 				type: "item"
 			}]
-			x: 50.5d
-			y: 6.0d
+			x: 50.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -4666,8 +4495,8 @@
 				item: { count: 1, id: "apothic_enchanting:seashelf" }
 				type: "item"
 			}]
-			x: 50.0d
-			y: 2.5d
+			x: 49.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0EB065FD617CB39A"]
@@ -4678,8 +4507,8 @@
 				item: { count: 1, id: "apothic_enchanting:infused_seashelf" }
 				type: "item"
 			}]
-			x: 48.5d
-			y: 4.0d
+			x: 48.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -4690,8 +4519,8 @@
 				item: { count: 1, id: "apothic_enchanting:heart_seashelf" }
 				type: "item"
 			}]
-			x: 49.5d
-			y: 6.0d
+			x: 49.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -4702,8 +4531,8 @@
 				item: { count: 1, id: "apothic_enchanting:crystal_seashelf" }
 				type: "item"
 			}]
-			x: 47.5d
-			y: 6.0d
+			x: 47.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -4714,8 +4543,8 @@
 				item: { count: 1, id: "apothic_enchanting:geode_shelf" }
 				type: "item"
 			}]
-			x: 51.5d
-			y: -0.5d
+			x: 51.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -4726,8 +4555,8 @@
 				item: { count: 1, id: "apothic_enchanting:stoneshelf" }
 				type: "item"
 			}]
-			x: 50.5d
-			y: -1.0d
+			x: 50.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -4738,8 +4567,8 @@
 				item: { count: 1, id: "apothic_enchanting:melonshelf" }
 				type: "item"
 			}]
-			x: 48.5d
-			y: -0.5d
+			x: 48.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -4750,8 +4579,8 @@
 				item: { count: 1, id: "apothic_enchanting:beeshelf" }
 				type: "item"
 			}]
-			x: 49.5d
-			y: -1.0d
+			x: 49.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["71D17E12AF1CA374"]
@@ -7764,6 +7593,176 @@
 			]
 			x: -1.5d
 			y: 0.5d
+		}
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "38C9E92573A25F80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17C7E265760D58A1"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "48D40217692E5963"
+				item: { count: 1, id: "apothic_enchanting:other_tome" }
+				type: "item"
+			}]
+			x: 45.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "6BA662C9EDAB419D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "247682AE63AF684A"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "62DE9789EDC1233F"
+				item: { count: 1, id: "apothic_enchanting:fishing_tome" }
+				type: "item"
+			}]
+			x: 45.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "41BF9135970F1E51"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "651AA0E8426FB2C6"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4F6528018FA2B209"
+				item: { count: 1, id: "apothic_enchanting:pickaxe_tome" }
+				type: "item"
+			}]
+			x: 44.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "421018A5285593B1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16A14E00A144CECB"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "54721F884F7E01C4"
+				item: { count: 1, id: "apothic_enchanting:bow_tome" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "7C9EC97D1C3F9CBA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C296C3791D8CA88"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2D49F111DE52AAC1"
+				item: { count: 1, id: "apothic_enchanting:weapon_tome" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "2FD815964A918D4E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16D97B0B5EB81EB2"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "27DE3553862143DF"
+				item: { count: 1, id: "apothic_enchanting:boots_tome" }
+				type: "item"
+			}]
+			x: 45.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "197B8CEECA61C12A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "117AAEE065897681"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "50D1EB0B9E014CCF"
+				item: { count: 1, id: "apothic_enchanting:leggings_tome" }
+				type: "item"
+			}]
+			x: 46.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "15B3AFECD77757E9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F7BC7FF283694BA"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "16CA7F32BC6C023D"
+				item: { count: 1, id: "apothic_enchanting:chestplate_tome" }
+				type: "item"
+			}]
+			x: 46.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1EA565179E5C25AE"]
+			entity_vis_size: 1.0f
+			id: "1751D13041775276"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DB44AE4E5BC7A42"
+				table_id: 5572290499387502054L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "44C8D804719614B5"
+				item: { count: 1, id: "apothic_enchanting:helmet_tome" }
+				type: "item"
+			}]
+			x: 46.0d
+			y: 0.0d
 		}
 	]
 }

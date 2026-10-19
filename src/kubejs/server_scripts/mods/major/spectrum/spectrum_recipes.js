@@ -276,6 +276,33 @@ ServerEvents.recipes(event => {
         source: 2000
     });
 
+    customPedestalCraft(event, {
+        time: 1200,
+        tier: "advanced",
+        experience: 2.0,
+        topaz: 4,
+        amethyst: 4,
+        citrine: 4,
+        onyx: 4,
+        pattern: [
+            'qeq',
+            'wrw',
+            'qeq'
+        ],
+        key: {
+            q: 'spectrum:raw_azurite',
+            w: 'minecraft:dragon_breath',
+            e: 'spectrum:midnight_chip',
+            r: 'thaumaturge:primordial_pearl',
+        },
+        result: {
+            "id": "spectrum:bottle_of_ruin",
+            "count": 1
+        },
+        advancement: "spectrum:unlocks/items/bottle_of_ruin",
+        removeRecipe: true
+    });
+
 })
 
 

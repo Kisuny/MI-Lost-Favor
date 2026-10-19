@@ -5096,7 +5096,11 @@
 		"{@pagebreak}"
 		"Если постоять на этом <named>цветке</named>, можно почувствовать <positive>эффект регенерации</positive>!"
 	]
-	quest.5554B53144E7F2C5.quest_desc: ["<positive>Right-click</positive> on a <keyword>fully grown crop</keyword> to replant it with the power of worm-friendship!"]
+	quest.5554B53144E7F2C5.quest_desc: [
+		"<positive>Right-click</positive> on a <keyword>fully grown crop</keyword> to replant it with the power of worm-friendship!"
+		"{@pagebreak}"
+		"<positive>ПКМ</positive> по <keyword>полностью созревшей культуре</keyword> - и она пересадится силой <wiggly>дружбы с червями</wiggly>!"
+	]
 	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can <positive>squeeze information</positive> out of <keyword>books</keyword> ´꒳`"]
 	quest.557EB4FDC17714AB.quest_desc: [
 		"<magic>Vis Crystals</magic> grow as colorful clusters in caves. Break a cluster and pick up a crystal - your fingers will <shake amplitude=0.3 frequency=1.0>tingle strangely</shake>."
@@ -6119,6 +6123,10 @@
 		"Cycle the trades of every <keyword>villager</keyword> that hasn't been traded before without needing to wait for <property>working hours</property> or replacing the <keyword>workstation block</keyword> over and over again."
 		""
 		"Sometimes the <keyword><bounce amplitude=1.5 frequency=1.0 phase=1.0>Cycle button</bounce></keyword> isn't available; in that case, you can use the <keyword>«C»</keyword> shortcut key"
+		"{@pagebreak}"
+		"Позволяет менять товары любого <keyword>жителя</keyword>, с которым ещё не торговали, без ожидания <property>рабочих часов</property> и без постоянной переустановки <keyword>рабочего блока</keyword>."
+		""
+		"Иногда <keyword><bounce amplitude=1.5 frequency=1.0 phase=1.0>кнопка смены</bounce></keyword> недоступна - в этом случае используй горячую клавишу <keyword>C</keyword>"
 	]
 	quest.650EB42A35DC8763.quest_desc: [
 		"Allows <positive>exchanging one block for another</positive>. Can change <keyword>multiple connected blocks simultaneously</keyword>. Handy when dealing with <keyword>EBF coils</keyword>!  "

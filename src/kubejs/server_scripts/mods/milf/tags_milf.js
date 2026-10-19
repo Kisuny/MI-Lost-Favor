@@ -34,6 +34,21 @@ ServerEvents.tags('item', event => {
 
     event.add("c:hammers", ['milf:stone_hammer',])
 
+    const hammers = [
+        'another_furniture:furniture_hammer', 
+        'grimoireofgaia:minotaur_hammer',  
+        'immersiveengineering:hammer', 
+        'framedblocks:framed_hammer',  
+        'ytech:bronze_hammer', 
+        'modern_industrialization:iron_hammer', 
+        'ytech:lead_hammer', 
+        'hexerei:warhammer', 
+        'modern_industrialization:steel_hammer'
+        ]
+    hammers.forEach(hammer =>{
+        event.add('milf:hammers', hammer)
+    })
+
     event.add("more_sounds:equipment", "#milf:knives")
 
     event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic', '#relics:relics'])

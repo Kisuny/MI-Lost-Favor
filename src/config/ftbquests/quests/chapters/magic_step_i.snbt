@@ -469,34 +469,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"6A2FCA07586ED280"
-				"0501BDB7ED850B47"
-				"1714360882474479"
-			]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "hexerei:mixing_cauldron"
-			}
-			id: "7E470E4F941A62BB"
-			shape: "gear"
-			tasks: [
-				{
-					id: "2D7E038B8FF4407B"
-					item: { count: 1, id: "hexerei:mixing_cauldron" }
-					type: "item"
-				}
-				{
-					id: "30D5B050219B4B9F"
-					item: { count: 1, id: "minecraft:lava_bucket" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 0.5d
-		}
-		{
 			dependencies: ["6A2FCA07586ED280"]
 			entity_vis_size: 1.0f
 			id: "4F3E70AAD31A62A8"
@@ -7764,6 +7736,34 @@
 			}]
 			x: 36.47d
 			y: -14.35d
+		}
+		{
+			dependencies: [
+				"6A2FCA07586ED280"
+				"0501BDB7ED850B47"
+				"2142E9E929D80AA9"
+			]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "hexerei:mixing_cauldron"
+			}
+			id: "7E470E4F941A62BB"
+			shape: "gear"
+			tasks: [
+				{
+					id: "2D7E038B8FF4407B"
+					item: { count: 1, id: "hexerei:mixing_cauldron" }
+					type: "item"
+				}
+				{
+					id: "30D5B050219B4B9F"
+					item: { count: 1, id: "minecraft:lava_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 0.5d
 		}
 	]
 }

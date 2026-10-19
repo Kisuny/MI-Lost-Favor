@@ -882,33 +882,34 @@ ServerEvents.recipes(event => {
     )
 
     builders.push(
+        new WorkspaceRecipeBuilder("minecraft:crafting_table")
+            .top(plane => plane.center("L"))
+            .middle(plane => plane.sides("S").center("P"))
+            .bottom(plane => plane.plus("P"))
+            .setKey({
+                L: { item: "minecraft:leather" },
+                S: { item: "ytech:leather_strips" },
+                P: { tag: "minecraft:planks" }
+            })
+            .setArgs({
+                tool: { tag: "ytech:bone_needles" }
+            })
+    )
+
+    builders.push(
         new WorkspaceRecipeBuilder("modern_industrialization:forge_hammer")
             .top(plane => plane.fill("I"))
             .middle(plane => plane.center("P"))
             .bottom(plane => plane.center("B").corners("I").sides("I"))
             .setKey({
                 B: { item: "minecraft:iron_block" },
-                I: { tag: "c:ingots/iron" },
+                I: { item: "minecraft:iron_ingot" },
                 P: { item: "minecraft:heavy_weighted_pressure_plate" }
             })
             .setArgs({
                 tool: { tag: "c:hammers" }
             })
     )
-
-    // builders.push(
-    //     new WorkspaceRecipeBuilder("ytech:bronze_anvil")
-    //         .top(plane => plane.center("B").corners("I").sides("I"))
-    //         .middle(plane => plane.center("I"))
-    //         .bottom(plane => plane.plus("B"))
-    //         .setKey({
-    //             B: { item: "modern_industrialization:bronze_block" },
-    //             I: { tag: "c:ingots/bronze" }
-    //         })
-    //         .setArgs({
-    //             tool: { tag: "c:hammers" }
-    //         })
-    // )
 
     builders.push(
         new WorkspaceRecipeBuilder("transmog:transmogrification_table")
@@ -984,65 +985,6 @@ ServerEvents.recipes(event => {
                 removeRecipeType: "ytech:workspace_crafting"
             })
     )
-
-    // builders.push(
-    //     new WorkspaceRecipeBuilder("ytech:primitive_smelter")
-    //         .top(plane => plane.fill("P").center(" ").corners(" "))
-    //         .middle(plane => plane.fill("P").center(" ").front("S").corners(" "))
-    //         .bottom(plane => plane.fill("C").center("F").front("S").corners("P"))
-    //         .setKey({
-    //             P: { item: "minecraft:brick" },
-    //             F: { item: "ytech:fire_pit" },
-    //             C: { item: "minecraft:bricks" },
-    //             S: { item: "minecraft:brick_slab" }
-    //         })
-    //         .setArgs({
-    //             tool: { tag: "c:hammers" }
-    //         })
-    // )
-
-    // builders.push(
-    //     new WorkspaceRecipeBuilder("ytech:brick_chimney")
-    //         .top(plane => plane.sides("P"))
-    //         .middle(plane => plane.sides("P"))
-    //         .bottom(plane => plane.sides("P"))
-    //         .setKey({
-    //             P: { item: "minecraft:brick" }
-    //         })
-    //         .setArgs({
-    //             tool: { tag: "c:hammers" }
-    //         })
-    // )
-
-    // builders.push(
-    //     new WorkspaceRecipeBuilder("ytech:primitive_alloy_smelter")
-    //         .top(plane => plane.sides("P"))
-    //         .middle(plane => plane.fill("P").sides("C").center(" ").front("S"))
-    //         .bottom(plane => plane.fill("C").center("F").front("S").corners("P"))
-    //         .setKey({
-    //             P: { item: "minecraft:brick" },
-    //             F: { item: "ytech:fire_pit" },
-    //             C: { item: "minecraft:bricks" },
-    //             S: { item: "minecraft:brick_slab" }
-    //         })
-    //         .setArgs({
-    //             tool: { tag: "c:hammers" }
-    //         })
-    // )
-
-    // builders.push(
-    //     new WorkspaceRecipeBuilder("ytech:reinforced_brick_chimney")
-    //         .top(plane => plane.fill("F").center(" "))
-    //         .middle(plane => plane.fill("P").center(" "))
-    //         .bottom(plane => plane.fill("F").center(" "))
-    //         .setKey({
-    //             P: { item: "minecraft:brick" },
-    //             F: { item: "modern_industrialization:fire_clay_brick" }
-    //         })
-    //         .setArgs({
-    //             tool: { tag: "c:hammers" }
-    //         })
-    // )
 
     builders.push(
         new WorkspaceRecipeBuilder("ytech:aqueduct_valve")
@@ -1147,21 +1089,6 @@ ServerEvents.recipes(event => {
                 compatOff: true
             })
     )
-
-    // builders.push(
-    //     new WorkspaceRecipeBuilder("ytech:oak_drying_rack")
-    //         .top(plane => plane.set(['   ', 'LTL', '   ']))
-    //         .middle(plane => plane.set(['   ', 'L L', '   ']))
-    //         .bottom(plane => plane.set(['   ', 'L L', '   ']))
-    //         .setKey({
-    //             L: { tag: "milf:non_vanilla_logs" },
-    //             T: { item: "ytech:grass_twine" }
-    //         })
-    //         .setArgs({
-    //             tool: { tag: "minecraft:axes" },
-    //             removeRecipe: false
-    //         })
-    // )
 
     builders.push(
         new WorkspaceRecipeBuilder("ytech:oak_tanning_rack")

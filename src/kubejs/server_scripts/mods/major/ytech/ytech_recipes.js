@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
             B: { item: "minecraft:clay_ball" },
             "#": { tag: "ytech:brick_molds" }
         },
-        outputItems: [[{ id: "ytech:unfired_brick" }, 12]],
+        outputItems: [[{ id: "milf:unfired_brick" }, 12]],
         compatOff: true,
         removeRecipe: true
     })
@@ -95,17 +95,6 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    yTechShapeless(event, {
-        outputItems: [[{ "id": "ytech:leather_strips" }, 4]],
-        inputItems: [
-            [{ "tag": "c:leathers" }, 1],
-            [{ "tag": "milf:knives" }, 1],
-        ],
-        category: "equipment",
-        removeRecipeType: "ytech:remaining_shapeless_crafting",
-        compatOff:true
-    })
-
     yTechShaped(event, {
         pattern: [
             'W#W',
@@ -119,6 +108,174 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:bowl" }, 3]],
         compatOff: true,
         removeRecipeType: "ytech:remaining_shaped_crafting" 
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' N ',
+            ' W ',
+            ' B '
+        ],
+        key: {
+            W: { "tag": "c:leathers" },
+            B: { "tag": "milf:knives" },
+            N: { "tag": "ytech:bone_needles" }
+        },
+        outputItems: [[{ id: "ytech:leather_strips" }, 2]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' T ',
+            'TNT',
+            ' T '
+        ],
+        key: {
+            T: { "item": "ytech:grass_twine" },
+            N: { "tag": "ytech:bone_needles" }
+        },
+        outputItems: [[{ id: "ytech:twine_mesh" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' #R',
+            ' R ',
+            'S  '
+        ],
+        key: {
+            R: { "item": "modern_industrialization:lead_rod" },
+            S: { "item": "minecraft:stick" },
+            "#": { "tag": "c:hammers" }
+        },
+        outputItems: [[{ id: "ytech:lead_file" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' #R',
+            ' R ',
+            'S  '
+        ],
+        key: {
+            R: { "item": "modern_industrialization:bronze_rod" },
+            S: { "item": "minecraft:stick" },
+            "#": { "tag": "c:hammers" }
+        },
+        outputItems: [[{ id: "ytech:bronze_file" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '  R',
+            'BR ',
+            'S  '
+        ],
+        key: {
+            R: { "item": "modern_industrialization:lead_plate" },
+            S: { "item": "minecraft:stick" },
+            B: { "item": "ytech:wooden_bolt" }
+        },
+        outputItems: [[{ id: "ytech:lead_saw" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '  R',
+            'BR ',
+            'S  '
+        ],
+        key: {
+            R: { "item": "modern_industrialization:bronze_plate" },
+            S: { "item": "minecraft:stick" },
+            B: { "item": "ytech:wooden_bolt" }
+        },
+        outputItems: [[{ id: "ytech:bronze_saw" }, 1]],
+        removeRecipe: true
+    })
+
+    Object.entries({
+        "modern_industrialization:bronze_rod": "modern_industrialization:bronze_bolt",
+        "modern_industrialization:copper_rod": "modern_industrialization:copper_bolt",
+        "modern_industrialization:gold_rod": "modern_industrialization:gold_bolt",
+        "modern_industrialization:lead_rod": "modern_industrialization:lead_bolt",
+        "modern_industrialization:tin_rod": "modern_industrialization:tin_bolt"
+    }).forEach(([rod, bolt]) => {
+        yTechShaped(event, {
+            pattern: [
+                '   ',
+                '#  ',
+                'S  '
+            ],
+            key: {
+                "#": { "tag": "c:files" },
+                S: { "item": rod },
+            },
+            outputItems: [[{ id: bolt }, 2]],
+            compatOff: true
+        })
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' # ',
+            '   ',
+            ' S '
+        ],
+        key: {
+            "#": { "tag": "minecraft:axes" },
+            S: { "item": "minecraft:stick" }
+        },
+        outputItems: [[{ id: "ytech:wooden_bolt" }, 2]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' # ',
+            '   ',
+            ' S '
+        ],
+        key: {
+            "#": { "tag": "c:saws" },
+            S: { "item": "minecraft:stick" }
+        },
+        outputItems: [[{ id: "ytech:wooden_bolt" }, 4]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' ST',
+            ' #S',
+            '   '
+        ],
+        key: {
+            "#": { "tag": "minecraft:axes" },
+            T: { "item": "ytech:grass_twine" },
+            S: { "tag": "mild:sticks" }
+        },
+        outputItems: [[{ id: "ytech:crafting_workspace" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '   ',
+            'WBW',
+            'WWW'
+        ],
+        key: {
+            W: { tag: "minecraft:logs" },
+            B: { item: "ytech:wooden_box" }
+        },
+        outputItems: [[{ id: "ytech:strainer" }, 1]],
+        removeRecipe: true
     })
 
     yTechShapeless(event, {
@@ -146,8 +303,6 @@ ServerEvents.recipes(event => {
     })
 
 
-    event.recipes.ytech.hammering("heavy_weighted_pressure_plate", "iron_block")
-        .tool("#c:hammers");
 
     event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#milf:knives')
     event.replaceInput({ input: '#c:knives' }, '#c:knives', '#milf:knives')
@@ -165,15 +320,15 @@ ServerEvents.recipes(event => {
 
     
 
-    event.custom({
-        "type": "ytech:remaining_shapeless_crafting",
-        "category": "misc",
-        "ingredients": [
-            { "tag": "c:bricks" },
-            { "tag": "c:mortar_and_pestles" }
-        ],
-        "result": { "id": "modern_industrialization:brick_dust", "count": 1 }
-    })
+    // event.custom({
+    //     "type": "ytech:remaining_shapeless_crafting",
+    //     "category": "misc",
+    //     "ingredients": [
+    //         { "tag": "c:bricks" },
+    //         { "tag": "c:mortar_and_pestles" }
+    //     ],
+    //     "result": { "id": "modern_industrialization:brick_dust", "count": 1 }
+    // })
 
     event.remove({ type: "map_atlases:crafting_atlas" })
 
@@ -313,17 +468,17 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    milfShapeless(event, {
-        inputItems: [
-            [{ "tag": "minecraft:sand" }, 1],
-            [neoCompound([
-                { item: "minecraft:brick"},
-                { item: "modern_industrialization:fire_clay_brick" }
-            ]), 1]
-        ],
-        outputItems: [[{ "id": "ytech:ingot_sand_mold" }]],
-        removeRecipe: true
-    })
+    // milfShapeless(event, {
+    //     inputItems: [
+    //         [{ "tag": "minecraft:sand" }, 1],
+    //         [neoCompound([
+    //             { item: "minecraft:brick"},
+    //             { item: "modern_industrialization:fire_clay_brick" }
+    //         ]), 1]
+    //     ],
+    //     outputItems: [[{ "id": "ytech:ingot_sand_mold" }]],
+    //     removeRecipe: true
+    // })
 
     miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
@@ -337,8 +492,22 @@ ServerEvents.recipes(event => {
 
 milfDisableRecipesById([
     "ytech:bronze_ingot_from_alloying",
-    /ytech:(\w+)_from_mold/,
+    /ytech:(\w+)_mold/,
+    /ytech:(\w+)_from_smelting/,
+    /ytech:(\w+)_sand_mold/,
+    /ytech:(\w+)_head_mold/,
+    /ytech:(\w+)_hammer/,
+    /ytech:(\w+)_ingot/,
+    /ytech:(\w+)_bolt/,
+    /ytech:(\w+)_rod/,
     /ytech:crushed_(\w+)\b/,
-    "ytech:bronze_anvil"
+    /ytech:raw_(\w+)\b/,
+    /ytech:tin_(\w+)\b/,
+    /ytech:copper_(\w+)\b/,
+    /ytech:gold_(\w+)\b/,
+    "ytech:bronze_anvil",
+    "ytech:primitive_alloy_smelter",
+    "ytech:primitive_smelter",
+    "ytech:unlit_torch"
     
 ])

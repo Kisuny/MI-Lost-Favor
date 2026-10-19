@@ -10,12 +10,13 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "AAA", 
-            "ABA", 
-            "AAA"
+            "AIA", 
+            "IBI", 
+            "AIA"
         ],
         key: {
-            A: {item: "modern_industrialization:bronze_plate"},
+            A: {item: "modern_industrialization:bronze_rod"},
+            I: { item: "modern_industrialization:bronze_ingot" },
             B: {item: "hexerei:small_satchel"}
         },
         outputItems: [[{id: "bankstorage:bank_1"}, 1]],
@@ -24,12 +25,13 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "AAA", 
-            "ABA", 
-            "AAA"]
+            "AIA", 
+            "IBI", 
+            "AIA"]
             ,
         key: {
-            A: {item: "modern_industrialization:bronze_plate"},
+            A: { item: "modern_industrialization:bronze_rod" },
+            I: { item: "modern_industrialization:bronze_ingot" },
             B: {item: "toxony:potion_flask"}
         },
         outputItems: [[{id: "tankstorage:tank_1"}, 1]],

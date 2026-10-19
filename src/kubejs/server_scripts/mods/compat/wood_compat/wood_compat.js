@@ -24,11 +24,19 @@ ServerEvents.recipes(event => {
         })
 
         yTechShapeless(event, {
-            outputItems: [[{id:result.id}, 4]],
-            inputItems:[ingredients, [{tag:"c:saws"}]],
+            outputItems: [[{id:result.id}, 3]],
+            inputItems:[ingredients, [{item:"ytech:lead_saw"}]],
             category:"building",
             removeRecipeType:"crafting_shapeless",
             compatOff:true
+        })
+
+        yTechShapeless(event, {
+            outputItems: [[{ id: result.id }, 4]],
+            inputItems: [ingredients, [{ item: "ytech:bronze_saw" }]],
+            category: "building",
+            removeRecipeType: "crafting_shapeless",
+            compatOff: true
         })
 
         ytechChoppingCraft(event,{
@@ -59,7 +67,15 @@ ServerEvents.recipes(event => {
 
         yTechShapeless(event, {
             outputItems: [[{ id: planks }, 3]],
-            inputItems: [[{ tag: logTag }], [{ tag: "c:saws" }]],
+            inputItems: [[{ tag: logTag }], [{ item: "ytech:lead_saw" }]],
+            category: "building",
+            removeRecipeType: "crafting_shapeless",
+            compatOff: true
+        })
+
+        yTechShapeless(event, {
+            outputItems: [[{ id: planks }, 4]],
+            inputItems: [[{ tag: logTag }], [{ item: "ytech:bronze_saw" }]],
             category: "building",
             removeRecipeType: "crafting_shapeless",
             compatOff: true
@@ -184,8 +200,16 @@ ServerEvents.recipes(event => {
         if (!addedVanillaWoodTypes.contains(input.item)) {
 
             yTechShapeless(event, {
+                outputItems: [[{ id: result.id }, 3]],
+                inputItems: [[input, 1], [{ item: "ytech:lead_saw" }]],
+                category: "building",
+                removeRecipeType: "ytech:remaining_shapeless_crafting",
+                compatOff: true
+            })
+
+            yTechShapeless(event, {
                 outputItems: [[{ id: result.id }, 4]],
-                inputItems: [[input, 1], [{ tag: "c:saws" }]],
+                inputItems: [[input, 1], [{ item: "ytech:bronze_saw" }]],
                 category: "building",
                 removeRecipeType: "ytech:remaining_shapeless_crafting",
                 compatOff: true

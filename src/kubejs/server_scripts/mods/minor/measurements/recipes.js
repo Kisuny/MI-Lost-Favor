@@ -7,8 +7,8 @@ ServerEvents.recipes(event => {
             "SSR"
         ],
         key: {
-            R: { item: "modern_industrialization:steel_ring" },
-            N: { item: "modern_industrialization:steel_nugget" },
+            R: { item: "modern_industrialization:tin_nugget" },
+            N: { item: "modern_industrialization:tin_nugget" },
             S: { item: "ytech:leather_strips" }
 
         },

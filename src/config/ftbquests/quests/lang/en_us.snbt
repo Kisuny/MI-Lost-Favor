@@ -9,6 +9,7 @@
 	chapter.231570DE6A7FCD52.chapter_subtitle: ["chapter contains all the travel information and, in a way, the entire RPG component of the modpack!"]
 	chapter.231570DE6A7FCD52.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Journeys \\& Gear"
 	chapter.2854B367FF485F69.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Less-simple Machinery"
+	chapter.2FC7CA6006523946.title: "Rock and STEAM!"
 	chapter.389198189DCA1A49.chapter_subtitle: ["This chapter lists all the utility items for easy finding"]
 	chapter.389198189DCA1A49.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Utilities"
 	chapter.3ED5DF3804C2BE8A.chapter_subtitle: ["Easy-to-use navigation showing the different stages"]
@@ -30,6 +31,8 @@
 	chapter_group.4602108FDD7051BD.title: "<magic><shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Primitive"
 	chapter_group.786FFA1BEC14E223.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Midgame"
 	chapter_group.7CCD8F01A3D08612.title: "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Endgame"
+	image.27626A995D7C3AE7.title: "TODO (GRRR)"
+	image.78365FF46B8F3FC6.title: "TODO (requires bellows)"
 	quest.002562156B0D8E9F.quest_desc: ["Tired of making <keyword>plates</keyword> and <keyword>rings</keyword> manually? This thing could <positive>lend a hand</positive>!"]
 	quest.003DD157D984B372.quest_desc: [
 		"The <keyword>Portal Scroll</keyword> opens a physical portal to a chosen destination that players, mobs and items can walk through - it disappears after <property>5 minutes</property>. Use a <keyword>Waystone</keyword> to \"Return to Portal\" and go back through it while it's still open."
@@ -128,11 +131,6 @@
 		"<keyword>Наполняющий переливатель эссенции</keyword> забирает эссенцию из <property>сети труб</property> или другого источника и отправляет её <wave>по воздуху</wave> в <keyword>защищённые банки</keyword> на расстоянии до <property>16 блоков</property> в ту сторону, куда он смотрит."
 		""
 		"Работает на том же приёме, что держит эссенцию стабильной при инфузии, но уже вне алтаря. Удобно заполнять стену из банок, не протягивая трубы к каждой."
-	]
-	quest.0194B16954142DC5.quest_desc: [
-		"The Primitive Smelter is necessary for some early recipes."
-		""
-		"You're going to have to install chimneys on it for it to be useful, first. You can have up to four Reinforced Brick Chimneys, and up to 4 Brick Chimneys on top of them."
 	]
 	quest.01CFD7A3F5DA8CF9.quest_desc: [
 		"<shake><warning>Handle with care!</warning></shake> The <curse>Glass Hand</curse> doubles the damage dealt by all your attacks - but any damage you take is <shake>quintupled</shake> in return."
@@ -648,7 +646,6 @@
 		"Вы так же можете <property>указать свой канал для меток</property>, чтобы <warning><shake amplitude=0.3 frequency=1.5>не слушать звуки чужих меток</shake></warning> командой <keyword>/pingwheel channel НазваниеКанала</keyword>"
 		"Либо же <keyword>/pingwheel config</keyword> и написать в меню <keyword>channel</keyword> нужный вам канал, удаление канала из меню ввода канала позволит вернуться в <property>общий канал</property>. Так же командой <keyword>/pingwheel config</keyword> можно настроить другие функции мода, в случае надобности."
 	]
-	quest.0BF78D040CA973B7.quest_desc: ["Each chimney provides <keyword>+50°</keyword> but the maximum number of <keyword>Chimneys</keyword> that can be installed is <keyword>4 Brick Chimneys</keyword> and <keyword>4 reinforced Brick Chimneys</keyword>."]
 	quest.0BF7B4B3DAAE234C.quest_desc: [
 		"Since looking for ores is <keyword>hella frustrating</keyword> (especially when most of the ores are escaping your vision due to... reasons), the process of <keyword>sniffing</keyword> the ores out could use a little bit more of... <keyword>sniffing!</keyword> Those <keyword>stone nose</keyword> imitations imbued with ancient sinus inducing stuff should help you with that, <positive>marking all the deposits</positive> of some specific type in the vicinity of <positive>500 blocks around you</positive> for a short duration! You won't get more of those for quite some time, so prepare <keyword>something to mark</keyword> the location of the vein in advance."
 		"{@pagebreak}"
@@ -1113,11 +1110,6 @@
 		"Stores the <property>coordinates</property> of a <named>Timedoor</named> destination. <positive>Write it</positive> from a <keyword>marker</keyword>, then <positive>load it</positive> into a <named>Timedoor Projector</named> or <named>Tempad</named> to open the matching portal."
 		"{@pagebreak}"
 		"Сохраняет <property>координаты</property> точки <named>Timedoor</named>. <positive>Запиши</positive> её от <keyword>метки</keyword>, затем <positive>загрузи</positive> в <named>Timedoor Projector</named> или <named>Tempad</named>, чтобы открыть нужный портал."
-	]
-	quest.12EA2728AD90FABD.quest_desc: [
-		"Can <positive>cook food</positive>. You can also <positive>light torches</positive> by <positive>Shift-clicking</positive> it"
-		"{@pagebreak}"
-		"Может <positive>готовить еду</positive>. Также можно <positive>зажигать факелы</positive>, нажав <positive>Shift</positive> и щелкнув по <keyword>костру</keyword>."
 	]
 	quest.13134EE8E1631EBB.quest_desc: [""]
 	quest.1325489D5E635F06.quest_subtitle: "Banners can be repainted using souls"
@@ -1917,11 +1909,6 @@
 		"The <keyword>Existential Executioner</keyword> allows you to inflict the <curse><fade minAlpha=0.3 frequency=0.7>Existential Burn</fade></curse> state onto enemies. It's best used against enemies with considerable regeneration or healing capabilities; or to otherwise slowly whittle down a greater target."
 		"{@pagebreak}"
 		"«<keyword>Экзистенциальный палач</keyword>» позволяет накладывать на врагов состояние «<curse><fade minAlpha=0.3 frequency=0.7>Экзистенциальный ожог</fade></curse>». Его лучше всего использовать против врагов, обладающих значительной способностью к регенерации или исцелению, либо для постепенного истощения более сильной цели."
-	]
-	quest.1F7DF0379C917C3B.quest_desc: [
-		"Well, if it works, it works, i guess..."
-		"{@pagebreak}"
-		"Работает - и отлично, наверное."
 	]
 	quest.1FC26CA207964E0D.quest_desc: [""]
 	quest.1FE16BABD524C29B.quest_desc: ["<keyword>Tree Capitator</keyword> that is... packed inside a <property>small orb</property>? Gimme two please ('-')"]
@@ -3826,11 +3813,6 @@
 		""
 		"[ \"Подробнее можно почитать \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/zume\" } }, \".\" ]"
 	]
-	quest.3F168A7DE7626306.quest_desc: [
-		"<keyword>Tin</keyword> suitable for smelter"
-		"{@pagebreak}"
-		"<keyword>Олово</keyword>, пригодное для плавки"
-	]
 	quest.3F5D9B3D8030599B.quest_desc: [
 		"The <pulse><keyword>Spirit Altar</keyword></pulse> is the heart of Malum's infusion crafting. Kill mobs with a <keyword>Scythe</keyword> to reap their <warning>Spirits</warning> - place the <keyword>base item</keyword> together with the required <warning>Spirits</warning> on the altar itself, then arrange the other crafting ingredients on the surrounding <keyword>Runewood Item Pedestals</keyword>, and the altar will <wave><positive>weave</positive></wave> them together into the infused result."
 		"{@pagebreak}"
@@ -4481,11 +4463,6 @@
 		"Для автоматизации: подавай предметы в любую сторону кроме нижней, забирай результат снизу. Одновременно крафтит только один Link."
 		""
 		"Вариант Orb Vitae Link: вставь Blood Orb внутрь - он будет перекачивать Essentia Vitae из алтаря прямо в Anima владельца орба."
-	]
-	quest.4A0DF37960C686FF.quest_desc: [
-		"The Primitive Alloy Smelter allows you to combine two different materials into one new material."
-		""
-		"You're going to have to install chimneys on it for it to be useful, first. You can have up to four Reinforced Brick Chimneys, and up to 4 Brick Chimneys on top of them."
 	]
 	quest.4A1CF718DA71EAC5.quest_desc: [
 		"The <keyword>feeding trough</keyword> <positive>feeds nearby animals for breeding</positive>."
@@ -6334,11 +6311,6 @@
 		"Он лишь расширяет радиус действия вашей <keyword>Пастельной сети</keyword>, позволяя дёшево перекрыть промежутки между другими узлами."
 	]
 	quest.6819B4405CCB4CD6.quest_desc: ["When placed in a Mixing Cauldron, jumping inside of it three times will fill the cauldron with blood."]
-	quest.6823D5F00B44B271.quest_desc: [
-		"Used to... <positive>mold</positive> <property>brick-looking stuff</property>"
-		"{@pagebreak}"
-		"Используется для... <positive>формовки</positive> <property>кирпичеподобных изделий</property>"
-	]
 	quest.682A5ADBA0B7FF36.quest_desc: [
 		"The <warning>Factory Manager</warning> is the core component of SFM. We want you to ease into what the mod is capable of, so as a reward, you’ll receive some cables, a couple of storage blocks, and, most importantly, a program disk containing your first program—it will help you figure out what you can do with this mod."
 		""
@@ -6409,11 +6381,6 @@
 		"Роняет <keyword>Электрическое ядро</keyword> и <keyword>Сферу фазы</keyword>. Добей его <property>гаечным ключом</property>, чтобы с шансом <property>50%</property> получить <named>Электронное ядро Эндера</named>."
 	]
 	quest.6854389FAE6E5634.title: "Chesed"
-	quest.687476E0881C0199.quest_desc: [
-		"<keyword>Copper</keyword> suitable for <keyword>smelter</keyword>"
-		"{@pagebreak}"
-		"<keyword>Медь</keyword>, пригодная для <keyword>плавки</keyword>"
-	]
 	quest.68771994A16E5B8C.quest_desc: [
 		"allows the <positive>recolor various blocks</positive> like <keyword>AE2 cables</keyword>, wool, terracotta, concrete etc. with a single item. Doesn't use dye beyond the initial crafting recipe. Infinite durability."
 		""
@@ -6783,11 +6750,6 @@
 		"Однажды мне пришла идея <warning>смешать</warning> <keyword>огненный порошок</keyword> с <warning>ядом</warning>, они и по отдельности сильны, но вместе... &l<flame><shake amplitude=0.4 frequency=1.3>ДА ЭТО ЧЁРТОВ ВЕДЬМИН ОГОНЬ!!!</shake></flame>"
 	]
 	quest.6E9C62BDDD273EF4.quest_desc: ["<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."]
-	quest.6EDA8467F491B3D2.quest_desc: [
-		"Each chimney provides <keyword>+50°</keyword> but the maximum number of <keyword>Chimneys</keyword> that can be installed is <keyword>4 Brick Chimneys</keyword> and <keyword>4 reinforced Brick Chimneys</keyword>."
-		"{@pagebreak}"
-		"Каждый <keyword>chiмney</keyword> даёт <keyword>+50°</keyword>, но максимум можно поставить <keyword>4 обычных chimney</keyword> и <keyword>4 укреплённых chimney</keyword>."
-	]
 	quest.6EEC74AEC9DD96B8.quest_desc: [
 		"<keyword>Increases the chance</keyword> of dropping a <keyword>mob's head</keyword> when you <positive>kill it</positive> with this axe."
 		"{@pagebreak}"
@@ -6861,7 +6823,6 @@
 		"{@pagebreak}"
 		"<keyword>Necklace of the Mystic Mirror</keyword> увеличивает <property>Arcane Resonance</property> на 100%, <positive>усиливая все эффекты</positive>, которые срабатывают при сборе <warning>духа</warning> - например, лечение от <keyword>Ring of Curative Talent</keyword> или восстановление Soul Ward/маны от <keyword>Ring of Manaweaving</keyword>."
 	]
-	quest.6FABBCC7CB80AF62.quest_desc: ["Once you make Fire-Clay Balls, you can combine them with a Brick Mold in a crafting grid to make Unfired Fire Clay Bricks. You will then have to put the bricks in a furnace to make them usable."]
 	quest.6FBA4C72D386837A.quest_desc: [
 		"A &#DEB3E0Fabrication Chest&r has four special slots for &#FEECD6Crafting Tablets&r."
 		""
@@ -7154,20 +7115,6 @@
 		"{@pagebreak}"
 		"Иногда выпадает из листвы когда вы <positive>срубаете деревья</positive>, птицы очень полезны т.к. <positive>собирают всякий мусор</positive> у себя в гнёздах, кто знает, что там можно найти?"
 	]
-	quest.742D4F5A2D903B69.quest_desc: [
-		"Dropped by <keyword>deer</keyword>. It slightly resembles a <keyword>half-pickaxe</keyword> if you look at it from a specific angle..."
-		""
-		"It is important that the deer model has <keyword>antlers</keyword>. There are <warning>deer without antlers</warning>!"
-		""
-		"Deer have been spotted in the vicinity of <positive>taiga</positive>, <positive>savannahs</positive>, <positive>forests</positive>, <positive>plains</positive>, and <positive>badlands</positive>!"
-		""
-		"{@pagebreak}"
-		"Выпадает из <keyword>оленя</keyword>. Если посмотреть под определенным углом, он немного напоминает <keyword>половину кирки</keyword>..."
-		""
-		"Важно, необходимо чтобы на модели оленя были <keyword>рога</keyword>, бывают <warning>олени без рогов</warning>!"
-		""
-		"Оленей замечали в окрестностях <positive>тайги</positive>, <positive>саванн</positive>, <positive>лесов</positive>, <positive>равнин</positive> и <positive>бесплодных земель</positive>!"
-	]
 	quest.745BE9DA293006D1.quest_desc: [
 		"<named>Bundle</named>'s lil bro, look at it, so <positive>cute</positive> ❤"
 		"{@pagebreak}"
@@ -7222,7 +7169,7 @@
 		"{@pagebreak}"
 		"<keyword>Ring of Alchemical Mastery</keyword> манипулирует зельями в вашей крови - каждый раз, когда вы собираете <warning>дух</warning>, он <curse>частично ослабляет отрицательные эффекты</curse>, одновременно <positive>продлевая положительные</positive>."
 	]
-	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by right clicking cobblestone on stone."]
+	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by left clicking cobblestone on stone or by breaking your fingers by the process of obliterating cobblestone splinters barehanded, the choice is yours <3."]
 	quest.75DE98178AF407BD.quest_desc: ["The most basic element of <poison>Toxony</poison>."]
 	quest.7635ED9379E95573.quest_desc: ["Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"]
 	quest.76A00C0FCE2D91E1.quest_desc: [
@@ -7559,12 +7506,14 @@
 	reward.0DC1BAE9C1D023E7.title: "New gems in chests"
 	reward.0DC887212398806D.title: "Bronze Age"
 	reward.0E39813C84812910.title: "Face Trinket Slot"
+	reward.11478FE5D25B6B22.title: "Tin Ore"
 	reward.116FEA5302E15B7D.title: "Hands Trinket Slot"
 	reward.12D16D8D384FB0D8.title: "Pin Trinket Slot"
 	reward.16B46238FC936637.title: "New mobs"
 	reward.1700ECB1400F81BB.title: "Hands Trinket slot"
 	reward.1816E9C04215E83A.title: "Belt Trinket slot"
 	reward.184E78B18B597C06.title: "\"Adv Pattern Encoder\" Trinket Slot"
+	reward.189D7FFDE4FAA450.title: "Copper Ore"
 	reward.19304AD673874503.title: "Eidolon Mobs"
 	reward.19B52AC9AC1571C5.title: "Charm Trinket slot"
 	reward.1F1063A9E62215F0.title: "Rune Trinket Slot"
@@ -7589,14 +7538,17 @@
 	reward.4C184C19BA719B4F.title: "Feet Trinket slot"
 	reward.4D0EBC927D8AD01D.title: "Xaeromap"
 	reward.4F76CA5E86C00635.title: "Enchanted Book in looting chests"
+	reward.5915A52497DEB9AD.title: "Iron Ore"
 	reward.5B2F20AA1D77D9D7.title: "Body Trinket slot"
 	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
 	reward.5BD3DB1BBF7C043E.title: "Ring Trinket Slot"
+	reward.5C60746B59774B3F.title: "Lead Ore"
 	reward.5EBDE634D224C573.title: "Crimson Veil Access"
 	reward.5F437D0400382507.title: "Malum Ore Access "
 	reward.610453008A85C538.title: "Amulet Trinket Slot"
 	reward.66F76B515E0CC819.title: "Shoulders Trinket Slot"
 	reward.670CBE4973B6F390.title: "New interactions: villagers, spawners, wandering trader and new mobs"
+	reward.6890958A3C59F53B.title: "Coal"
 	reward.6C1E7006967265FC.title: "Charm Trinket Slot"
 	reward.70FAD5B8BC6CD8CC.title: "\"Deep Learner\" Trinket Slot"
 	reward.7108991BE6DD4A51.title: "Radial Menu Button"
@@ -7632,15 +7584,15 @@
 	task.09FBBC80BC28B007.title: "Any Glass Blocks"
 	task.0A399F77AC11AE3B.title: "Any #thaumaturge:vis_crystals"
 	task.0A8BF0365BCF8AB0.title: "Tabula Rasa"
+	task.0A9AC4F3802C3825.title: "Any #c:seeds"
 	task.0AA841E0B413D617.title: "Slay the Possessed Paladin"
 	task.0B1832E4208E1AA5.title: "Any Iron Storage"
 	task.0E23718424EB6584.title: "Any Polished Base Blocks"
-	task.0EB4593433321D21.title: "Any Saws"
 	task.0F53207FFCB0E0C6.title: "Any Animal Foods"
-	task.0F74A9109F9CECEA.title: "Any Wooden Slabs"
 	task.100D580CE861E070.title: "Tempad"
 	task.1058CCA19F1158B5.title: "Any #milf:large_steam_machines"
 	task.1096F78FFF063784.title: "Utility Arrays"
+	task.10B6992F8294A4AE.title: "Coal"
 	task.15D15E5200247C44.title: "Gather some gem dust"
 	task.15DFF1BAB9B3F84B.title: "Spellcrafting"
 	task.1685B4C2F761E3C1.title: "Any Joyflame Fire Base Blocks"
@@ -7658,6 +7610,7 @@
 	task.1DB3762470DC4D9D.title: "Any Chiseled Base Blocks"
 	task.1E035F00A3923B5F.title: "Ritual of Meteo"
 	task.1FC975DB259AA8A8.title: "Any Gemstone Lamp"
+	task.206DA38E2CC090E2.title: "Iron"
 	task.207749237CB9FE16.title: "Defensive Arrays"
 	task.208CB664198EA02C.title: "saeta hi :3"
 	task.20D75746DF67A83F.title: "Movement and Transit Arrays"
@@ -7689,7 +7642,6 @@
 	task.2E5D24ACE6FAA580.title: "Any Chiseled Base Blocks"
 	task.3100C06021B649A2.title: "Gather Node"
 	task.31969FC5A93B0C8B.title: "Any Tier 1 Runes"
-	task.3198AD11970AE4C5.title: "Any Planks"
 	task.33EDDA420C4AF477.title: "Slay Cumulonimbus"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
 	task.3460D0595D90DE40.title: "Any Onyx Chiseled Block"
@@ -7716,6 +7668,7 @@
 	task.40ED385E3D23C00B.title: "Little Joys"
 	task.42075FB0D0CA93C3.title: "Zume"
 	task.42DC3FD183E10DD5.title: "*Click*"
+	task.42DDB0169B1F2845.title: "Any #minecraft:fishes"
 	task.4336D6754C458F76.title: "Any Chiseled Gemstone Block"
 	task.44C33398BFF2355C.title: "Any #c:cables"
 	task.453F9EE1BA955692.title: "Any Azure Dike Trinkets"
@@ -7735,12 +7688,13 @@
 	task.4C34F34DFB64B73E.title: "Any Polished Base Blocks"
 	task.4C9B71D2BC1CA752.title: "Yeah, just clicking through <keyword>checkboxes</keyword> without reading <warning><shake amplitude=1.0 frequency=1.0>sucks</shake></warning> - I'll give this a real read, <swing angle=15.0 frequency=1.0 phase=0.0>promise</swing>!"
 	task.4E3EC41B69DAD787.title: "Any Polished Base Blocks"
-	task.4E4DCBBCBFA389BB.title: "Any Files"
 	task.4F2B1C1396AE3947.title: "Any Planks"
 	task.4FC3D78F5ED8F928.title: "Redstone Arrays"
 	task.50145BF6C914A142.title: "Any Gemstone Lamp"
 	task.50C270499A4A3120.title: "Soaring Skies"
 	task.5180AC955AE4C748.title: "Why do some quests come in different forms?"
+	task.52047CED97838DDE.title: "Any #minecraft:planks"
+	task.531CED2BF5C25304.title: "Any #ytech:aqueducts"
 	task.539E56DF1CFE8E1A.title: "Defeat the labyrinth guardian"
 	task.5681B6E38A2DC015.title: "Harvest with ease"
 	task.56B98F00698B5FCE.title: "Crystallum Fractura"
@@ -7755,6 +7709,7 @@
 	task.58F6FDCF58A4331D.title: "Any Hooks"
 	task.5AD635A29E44CC90.title: "where my ore?!"
 	task.5B0F59765FB17AE3.title: "Any Baits"
+	task.5C665A06B59E6AAC.title: "Tin"
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.5F28BDF1A99DFFC7.title: "Any #milf:ba_bits"
 	task.603FD90AE0FFC11E.title: "Any Item Pipes"
@@ -7778,14 +7733,17 @@
 	task.6E27CA7959D2DC61.title: "Any Bedrock Equipment"
 	task.6E33E93B85AF0B3A.title: "Useful Spells"
 	task.6F9CD690878AEB29.title: "Any Scalpels"
+	task.6FC74480E6150F3A.title: "Any #minecraft:wooden_slabs"
 	task.7001AAAE3F1E4149.title: "Looking for ores?"
 	task.70666D7BC794CADC.title: "Well of Suffering"
 	task.715168A27BACCD77.title: "Hi wrld"
 	task.718761104CFF4A93.title: "Any Fluid Pipes"
 	task.7258894B4C48373F.title: "Complete the Haven Gateway"
+	task.728B4282A0EAEB4E.title: "Lead"
 	task.7431F878DB34A30D.title: "Bridging"
 	task.745285CCE59E780F.title: "Any Polished Gemstone Block"
 	task.746ABC8ABB3E1BA3.title: "Specialisation"
+	task.7482F95E696968CF.title: "Copper"
 	task.76C88F3B61F626A4.title: "Discord"
 	task.76CE25E2E78A0201.title: "Any Basic Pedestal"
 	task.771305FBBF6544AD.title: "Provider Node"

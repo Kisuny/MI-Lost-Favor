@@ -22,16 +22,32 @@ ServerEvents.recipes(event => {
     ] });
 
 
-    event.shaped("hexerei:mixing_cauldron", [
-        "TQT",
-        "WRW",
-        "WWW"
-    ], {
-        Q: "paganbless:black_thorn_stick",
-        W: "minecraft:iron_ingot",
-        R: "minecraft:cauldron",
-        T: "minecraft:torch"
-    });
+    milfShaped(event, {
+        pattern: [
+            "SRS",
+            "LCL",
+            "LLL",
+        ],
+        key: {
+            "L": { "item": "modern_industrialization:iron_plate" },
+            "S": { "item": "ytech:leather_strips" },
+            "R": { "item": "modern_industrialization:bronze_rod" },
+            "C": { "item": "minecraft:cauldron" }
+
+        },
+        outputItems: [[{ id: "hexerei:mixing_cauldron" }, 1]]
+    })
+
+    // event.shaped("hexerei:mixing_cauldron", [
+    //     "TQT",
+    //     "WRW",
+    //     "WWW"
+    // ], {
+    //     Q: "paganbless:black_thorn_stick",
+    //     W: "minecraft:iron_ingot",
+    //     R: "minecraft:cauldron",
+    //     T: "minecraft:torch"
+    // });
 
     event.replaceInput( { input: 'enchanted:belladonna_seeds' },'enchanted:belladonna_seeds','hexerei:belladonna_plant')
     event.replaceInput( { input: 'enchanted:mandrake_root' },'enchanted:mandrake_root','hexerei:mandrake_root')

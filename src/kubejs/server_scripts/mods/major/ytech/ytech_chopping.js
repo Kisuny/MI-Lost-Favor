@@ -34,10 +34,11 @@ ServerEvents.recipes(event => {
         inputItems:[[{tag: "c:bones"}]],
         outputItems:[[{id:"ytech:bone_needle"}]],
         tool: {tag : "milf:knives"},
+        removeRecipe: true
     })
 
     ytechChoppingCraft(event,{
-        inputItems:[[{item: "minecraft:iron_nugget"}]],
+        inputItems:[[{item: "modern_industrialization:tin_nugget"}]],
         outputItems:[[{id:"milf:needle"}]],
         tool: {tag : "milf:knives"},
     })
@@ -52,23 +53,35 @@ ServerEvents.recipes(event => {
     ytechChoppingCraft(event,{
         inputItems:[[{item: "ytech:terracotta_bricks"}]],
         outputItems:[[{id:"ytech:terracotta_aqueduct"}]],
-        tool: {tag : "c:hammers"},
+        tool: {tag : "modern_industrialization:forge_hammer_tools"},
         removeRecipe:true
     })
 
     ytechChoppingCraft(event,{
         inputItems:[[{item: "minecraft:mud_bricks"}]],
         outputItems:[[{id:"ytech:mudbrick_aqueduct"}]],
-        tool: {tag : "c:hammers"},
+        tool: {tag : "modern_industrialization:forge_hammer_tools"},
         removeRecipe:true
     })
 
     ytechChoppingCraft(event,{
         inputItems:[[{item: "minecraft:stone_bricks"}]],
         outputItems:[[{id:"ytech:stone_aqueduct"}]],
-        tool: {tag : "c:hammers"},
+        tool: {tag : "modern_industrialization:forge_hammer_tools"},
         removeRecipe:true
     })
+
+    ytechChoppingCraft(event, {
+        inputItems: [[{ item: "minecraft:terracotta" }]],
+        outputItems: [[{ id: "modern_industrialization:brick_dust" }, 2]],
+        tool: 
+            neoCompound([
+                { item: "ytech:lead_pickaxe" },
+                { item: "ytech:bronze_pickaxe" }
+            ]),
+        //removeRecipe: true
+    })
+
 
     ytechChoppingCraft(event, {
         inputItems: [[{ item: "architects_palette:rotten_flesh_block" }]],

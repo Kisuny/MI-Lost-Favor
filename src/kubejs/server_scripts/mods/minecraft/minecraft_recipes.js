@@ -10,6 +10,36 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod: "minecraft"}, "ytech:flour", "minecraft:wheat")
     event.replaceInput({input: "minecraft:enchanting_table"}, "minecraft:enchanting_table", "apothic_enchanting:apothic_enchanting_table")
 
+    milfShaped(event, {
+        pattern: [
+            " C ",
+            " S ",
+            "   "
+        ],
+        key: {
+            "C": { "tag": "minecraft:coals" },
+            "S": { "item": "minecraft:stick" }
+        },
+        outputItems: [[{ id: "minecraft:torch" }, 4]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "  S",
+            " Ss",
+            "SbB"
+        ],
+        key: {
+            "s": { "item": "minecraft:string" },
+            "S": { "item": "minecraft:stick" },
+            "b": { "item": "ytech:wooden_bolt" },
+            "B": { "item": "modern_industrialization:copper_bolt" }
+        },
+        outputItems: [[{ id: "minecraft:fishing_rod" }, 1]],
+        removeRecipe: true
+    })
+
     yTechShaped(event, {
         pattern: [
             "#S ",
@@ -18,7 +48,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             "#": { "tag": "ytech:bone_needles" },
-            "N": { "item": "modern_industrialization:tin_nugget" },
+            "N": { "item": "minecraft:copper_ingot" },
             "S": { "tag": "ytech:leather_strips" }
         },
         outputItems: [[{ id: "minecraft:lead" }, 1]],

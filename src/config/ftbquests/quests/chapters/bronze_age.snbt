@@ -12,12 +12,6 @@
 	order_index: 0
 	quest_links: [
 		{
-			id: "243A57B9EE4118A6"
-			linked_quest: "1A029535714421E5"
-			x: -1.0d
-			y: -11.5d
-		}
-		{
 			id: "5D7D8ADC200CB8D1"
 			linked_quest: "71CC5CD5F8018F02"
 			x: 1.0d
@@ -41,7 +35,6 @@
 	quests: [
 		{
 			dependencies: [
-				"6FABBCC7CB80AF62"
 				"127F92D0F2CC923C"
 				"34EEB03ED7EEE16F"
 			]
@@ -225,7 +218,6 @@
 		}
 		{
 			dependencies: [
-				"1A029535714421E5"
 				"52E47CD2A5102410"
 				"71CC5CD5F8018F02"
 			]
@@ -305,7 +297,6 @@
 			dependencies: [
 				"51BC2EDB324F7ECD"
 				"71CC5CD5F8018F02"
-				"1A029535714421E5"
 			]
 			entity_vis_size: 1.0f
 			id: "0A085734E03F68AC"
@@ -1256,10 +1247,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"6FABBCC7CB80AF62"
-				"590167B593FE267A"
-			]
+			dependencies: ["590167B593FE267A"]
 			entity_vis_size: 1.0f
 			id: "42B6798C0C2BD9E5"
 			shape: "octagon"
@@ -1273,7 +1261,6 @@
 		}
 		{
 			dependencies: [
-				"1A029535714421E5"
 				"52E47CD2A5102410"
 				"71CC5CD5F8018F02"
 			]
@@ -2675,8 +2662,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(yo_hooks:hooks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 10.0d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["2E9B7D82DC87E7F4"]
@@ -2881,22 +2868,6 @@
 			}]
 			x: 10.5d
 			y: -3.5d
-		}
-		{
-			dependencies: [
-				"70A0A078B94FF034"
-				"1E6BED5C5AC79D28"
-			]
-			entity_vis_size: 1.0f
-			id: "047487BFFB8421D5"
-			shape: "diamond"
-			tasks: [{
-				id: "16C922B46979DB9A"
-				item: { count: 1, id: "measurements:tape_measure" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: 10.0d
 		}
 		{
 			dependencies: ["1E6BED5C5AC79D28"]

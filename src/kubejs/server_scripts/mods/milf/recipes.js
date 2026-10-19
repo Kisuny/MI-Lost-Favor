@@ -58,6 +58,19 @@ function milfKilnSmeltingRecipe(event, args) {
     event.custom(recipe)
 }
 
+function milfChiselHitRecipe(event, args) {
+    let recipe = {
+        type: "milf:chisel_hit",
+        input: Object.assign({}, args.inputItems[0][0], { count: 1 }),
+        output: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
 function milfBloomeryRecipe(event, args) {
     let recipe = {
         type: "milf:bloomery",
@@ -96,6 +109,8 @@ function milfStoneBasinRecipe(event, args) {
 }
 
 ServerEvents.recipes(event => {
+
+
 
 
     milfStoneBasinRecipe(event, {
@@ -267,6 +282,7 @@ ServerEvents.recipes(event => {
             potsherds: 5,
             castMap: {
                 "embers:molten_bronze": "modern_industrialization:bronze_ingot",
+                "embers:molten_copper": "minecraft:copper_ingot",
                 "embers:molten_lead": "modern_industrialization:lead_ingot",
                 "embers:molten_tin": "modern_industrialization:tin_ingot",
                 "embers:molten_gold": "minecraft:gold_ingot"
@@ -280,7 +296,9 @@ ServerEvents.recipes(event => {
                 "embers:molten_bronze": "modern_industrialization:bronze_rod",
                 "embers:molten_lead": "modern_industrialization:lead_rod",
                 "embers:molten_tin": "modern_industrialization:tin_rod",
-                "embers:molten_gold": "modern_industrialization:gold_rod"
+                "embers:molten_gold": "modern_industrialization:gold_rod",
+                "embers:molten_copper": "modern_industrialization:copper_rod"
+
             }
         },
         "milf:clay_mold_anvil_full": {
@@ -485,6 +503,43 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "  S",
+            "   ",
+            "   ",
+        ],
+        key: {
+            "S": { "item": "rocks:cobblestone_splitter" }
+
+        },
+        outputItems: [[{ id: "ytech:pebble" }, 1]]
+    })
+
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "rocks:rock" }],
+        ],
+        outputItems: [
+            [{ id: "milf:pet_rock" }],
+        ]
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " SS",
+            "SRS",
+            " SF"
+        ],
+        key: {
+            R: { item: "milf:pet_rock" },
+            S: { tag: "ytech:leather_strips" },
+            F: { item: "ytech:sharp_flint" }
+        },
+        outputItems: [[{ id: "milf:pet_rock_on_a_leash" }, 1]],
+    })
+
+
+    milfShaped(event, {
+        pattern: [
             "PBP",
             "PTP",
             " S ",
@@ -538,17 +593,92 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "SSL",
+            "SSB",
             "LNL",
             " L ",
         ],
         key: {
             "L": { "item": "minecraft:leather" },
             "S": { "item": "ytech:leather_strips" },
+            "B": { "item": "ytech:wooden_bolt" },
             "N": { "tag": "ytech:bone_needles" }
 
         },
         outputItems: [[{ id: "milf:waterskin" }, 1]]
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'PEE',
+            'PDE',
+            'HPP'
+        ],
+        key: {
+            E: { item: "paganbless:essence_of_the_forest" },
+            P: { item: "modern_industrialization:tin_ingot" },
+            D: { tag: "milf:chisels" },
+            H: { tag: "c:hammers" }
+        },
+        outputItems: [[{ id: "milf:orb_of_the_forest" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' EP',
+            'EPE',
+            'PE '
+        ],
+        key: {
+            E: { item: "ytech:leather_strips" },
+            P: { item: "modern_industrialization:tin_rod" },
+        },
+        outputItems: [[{ id: "gag:escape_rope" }, 1]],
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '   ',
+            'LLL',
+            'EPE'
+        ],
+        key: {
+            "L": { "item": "minecraft:leather" },
+            E: { item: "ytech:leather_strips" },
+            P: { item: "modern_industrialization:tin_rod" },
+        },
+        outputItems: [[{ id: "minecraft:saddle" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'P  ',
+            'E T',
+            'TET'
+        ],
+        key: {
+            T: { "item": "ytech:grass_twine" },
+            E: { item: "ytech:leather_strips" },
+            P: { item: "modern_industrialization:lead_bolt" },
+        },
+        outputItems: [[{ id: "comforts:rope_and_nail" }, 2]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '  S',
+            'BS ',
+            'PB '
+        ],
+        key: {
+            S: { "item": "minecraft:stick" },
+            P: { item: "modern_industrialization:tin_plate" },
+            B: { item: "modern_industrialization:bronze_bolt" },
+        },
+        outputItems: [[{ id: "mechtrowel:mech_trowel" }, 1]],
+        removeRecipe: true
     })
 
 

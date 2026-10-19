@@ -47,15 +47,34 @@ ServerEvents.recipes(event => {
         });
     });
 
-    event.shapeless('farmersdelight:wheat_dough', [
-        'minecraft:wheat',
-        'ytech:water_clay_bucket'
-    ]).keepIngredient('ytech:water_clay_bucket').id('milf:wheat_dough_from_water_clay_bucket')
+    ieShapedFluid(event, {
+        pattern: [
+            "Ww ",
+            "   ",
+            "   "
+        ],
+        key: {
+            W: { item: "minecraft:wheat" },
+            w: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 100,
+                fluid: "minecraft:water"
+            }
+        },
+        outputItems: [[{ id: "farmersdelight:wheat_dough" }, 1]],
+        removeRecipe: true
+    })
+
+
+    // event.shapeless('farmersdelight:wheat_dough', [
+    //     'minecraft:wheat',
+    //     'ytech:water_clay_bucket'
+    // ]).keepIngredient('ytech:water_clay_bucket').id('milf:wheat_dough_from_water_clay_bucket')
     
-    event.shapeless('farmersdelight:wheat_dough', [
-        'minecraft:wheat',
-        'minecraft:water_bucket'
-    ]).keepIngredient('minecraft:water_bucket').id('milf:wheat_dough_from_water_bucket')
+    // event.shapeless('farmersdelight:wheat_dough', [
+    //     'minecraft:wheat',
+    //     'minecraft:water_bucket'
+    // ]).keepIngredient('minecraft:water_bucket').id('milf:wheat_dough_from_water_bucket')
 
     cuttingBoardRecipe(event, {
         inputItems: [[{ item: "minecraft:quartz_block" }, 1]],
@@ -88,7 +107,7 @@ ServerEvents.recipes(event => {
         key: {
             S: { item: "minecraft:wooden_shovel" },
             B: { item: "minecraft:brick" },
-            P: { item: "modern_industrialization:iron_plate" },
+            P: { item: "modern_industrialization:tin_plate" },
         },
         outputItems: [[{ id: "farmersdelight:cooking_pot" }, 1]],
         removeRecipe: true
@@ -102,10 +121,26 @@ ServerEvents.recipes(event => {
         ],
         key: {
             B: { item: "minecraft:brick" },
-            L: { item: "modern_industrialization:iron_large_plate" },
-            P: { item: "modern_industrialization:iron_plate" },
+            L: { item: "modern_industrialization:tin_large_plate" },
+            P: { item: "modern_industrialization:tin_plate" },
         },
         outputItems: [[{ id: "farmersdelight:skillet" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            'pLp',
+            'bfb',
+            'bbb'
+        ],
+        key: {
+            b: { item: "minecraft:brick" },
+            f: { item: "milf:fire_pit" },
+            L: { item: "modern_industrialization:tin_large_plate" },
+            p: { item: "modern_industrialization:tin_plate" },
+        },
+        outputItems: [[{ id: "farmersdelight:stove" }, 1]],
         removeRecipe: true
     })
 

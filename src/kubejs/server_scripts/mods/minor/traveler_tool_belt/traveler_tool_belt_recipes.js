@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     // I do this because replaceInput cannot replace tags.
     // This recipe also requires travelertoolbelt:belt_shaped recipe type.
     const upgrades = [
-        { from: 'travelertoolbelt:belt', to: 'travelertoolbelt:copper_belt', plate: 'bronze' },
+        //{ from: 'travelertoolbelt:belt', to: 'travelertoolbelt:copper_belt', plate: 'bronze' },
         { from: 'travelertoolbelt:copper_belt', to: 'travelertoolbelt:iron_belt', plate: 'steel' },
         { from: 'travelertoolbelt:iron_belt', to: 'travelertoolbelt:gold_belt', plate: 'aluminum' },
         { from: 'travelertoolbelt:gold_belt', to: 'travelertoolbelt:diamond_belt', plate: 'stainless_steel' }
@@ -49,4 +49,25 @@ ServerEvents.recipes(event => {
     })
 
     event.replaceInput({ output: 'travelertoolbelt:netherite_belt' }, 'minecraft:netherite_ingot', 'modern_industrialization:blastproof_alloy_plate')
+
+
+    event.custom({
+        "type": "travelertoolbelt:belt_shaped",
+        "category": "equipment",
+        "key": {
+            "A": { "item": `modern_industrialization:bronze_rod` },
+            "N": { "item": `modern_industrialization:bronze_nugget` },
+            "B": { "item": 'travelertoolbelt:belt' }
+        },
+        "pattern": [
+            "NAN",
+            "ABA",
+            "NAN"
+        ],
+        "result": {
+            "count": 1,
+            "id": 'travelertoolbelt:copper_belt'
+        }
+    })
+
 })

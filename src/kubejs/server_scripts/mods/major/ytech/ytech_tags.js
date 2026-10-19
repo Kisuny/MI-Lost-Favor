@@ -2,9 +2,7 @@
 ServerEvents.tags("item", event => {
 
     event.add("modern_industrialization:forge_hammer_tools", [
-        "ytech:bronze_hammer",
-        "milf:stone_hammer",
-
+        "ytech:bronze_hammer"
     ])
 
     Object.entries({

@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             "BPB"
         ],
         key: {
-            R: { item: "modern_industrialization:iron_rod" },
+            R: { item: "modern_industrialization:tin_rod" },
             P: { item: "modern_industrialization:copper_plate" },
             B: { item: "modern_industrialization:copper_bolt" }
         },

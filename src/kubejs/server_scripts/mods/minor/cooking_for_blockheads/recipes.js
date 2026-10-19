@@ -7,8 +7,8 @@ ServerEvents.recipes(event => {
             "PLP"
         ],
         key: {
-            P: { item: "modern_industrialization:iron_plate" },
-            L: { item: "modern_industrialization:iron_large_plate" },
+            P: { item: "modern_industrialization:tin_plate" },
+            L: { item: "modern_industrialization:tin_large_plate" },
             F: { item: "minecraft:furnace" },
             S: { item: "minecraft:black_stained_glass" }
         },
@@ -36,8 +36,8 @@ ServerEvents.recipes(event => {
             "PLP"
         ],
         key: {
-            P: { item: "modern_industrialization:iron_plate" },
-            L: { item: "modern_industrialization:iron_large_plate" },
+            P: { item: "modern_industrialization:tin_plate" },
+            L: { item: "modern_industrialization:tin_large_plate" },
             C: { tag: "c:chests/wooden" },
         },
         outputItems: [[{ id: "cookingforblockheads:white_fridge" }, 1]],

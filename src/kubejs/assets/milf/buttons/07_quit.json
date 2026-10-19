@@ -1,0 +1,24 @@
+{
+    "x": -80,
+    "y": 26,
+    "width": 160,
+    "height": 20,
+    "anchor": "middle_center",
+    "sprites": {
+        "enabled": "milf:menu/button_quit",
+        "enabled_focused": "milf:menu/button_quit_hover"
+    },
+    "text": {
+        "key": "milf.menu.quit",
+        "color": 15124660,
+        "drop_shadow": true
+    },
+    "hover_text": {
+        "key": "milf.menu.quit",
+        "color": 16777215,
+        "drop_shadow": true
+    },
+    "action": {
+        "type": "packmenu:quit"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "x": 2,
+    "y": -40,
+    "width": 78,
+    "height": 20,
+    "anchor": "middle_center",
+    "sprites": {
+        "enabled": "milf:menu/button",
+        "enabled_focused": "milf:menu/button_hover",
+        "disabled": "milf:menu/button_disabled"
+    },
+    "text": {
+        "key": "milf.menu.mods",
+        "color": 12962278,
+        "drop_shadow": true
+    },
+    "hover_text": {
+        "key": "milf.menu.mods",
+        "color": 16777215,
+        "drop_shadow": true
+    },
+    "action": {
+        "type": "packmenu:open_screen",
+        "screen": "mods"
+    }
+}

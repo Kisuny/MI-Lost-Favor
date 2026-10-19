@@ -1,0 +1,25 @@
+{
+    "x": -80,
+    "y": -92,
+    "width": 160,
+    "height": 24,
+    "anchor": "middle_center",
+    "sprites": {
+        "enabled": "milf:menu/button_primary",
+        "enabled_focused": "milf:menu/button_primary_hover"
+    },
+    "text": {
+        "key": "milf.menu.singleplayer",
+        "color": 1579309,
+        "drop_shadow": false
+    },
+    "hover_text": {
+        "key": "milf.menu.singleplayer",
+        "color": 1579309,
+        "drop_shadow": false
+    },
+    "action": {
+        "type": "packmenu:open_screen",
+        "screen": "singleplayer"
+    }
+}

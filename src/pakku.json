@@ -14,7 +14,8 @@
     "client_overrides": [
         "kubejs/assets",
         "servers.dat",
-        "observable_announce"
+        "observable_announce",
+        "packmenu"
     ],
     "projects": {
         "ars-numerichud": {
@@ -48,6 +49,9 @@
             "side": "CLIENT"
         },
         "irisshaders": {
+            "side": "CLIENT"
+        },
+        "packmenu": {
             "side": "CLIENT"
         },
         "isometric-renders-forked": {

@@ -17,7 +17,7 @@ const milestone_rewards = [
     { quest_id: "224D85127D80FED8", stages: ["cataclysm_mobs", "rottencreatures_mobs", "enderzoology_mobs"] }, // vanilla bosses
     { quest_id: "16B46238FC936637", stages: ["grimoireofgaia_mobs"] }, // bomd and fdbosses bosses
     { quest_id: "74E5C7C4B8A33E55", stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs"] }, // Iron Bloom
-    { quest_id: "670CBE4973B6F390", stages: ["early_items", "blast_furnace", "mythsandlegends_mobs", "royalvariations_mobs"] }, // Steel Ingot
+    { quest_id: "670CBE4973B6F390", stages: ["early_items", "blast_furnace", "mythsandlegends_mobs"] }, // Steel Ingot
 ]
 
 milestone_rewards.forEach(entry => {
@@ -31,7 +31,7 @@ milestone_rewards.forEach(entry => {
 
 // Simple stage rewards - add stages only, no notification
 const simple_stage_rewards = [
-    { quest_id: "4002784F5F537B2D", stage: ["post_iron", "goblin_traders_mobs"] }, // Iron Ingot
+    { quest_id: "4002784F5F537B2D", stage: ["post_iron", "goblin_traders_mobs", "anvils_everywhere"] }, // Iron Ingot
     { quest_id: "26A2544BCF0C603E", stage: ["iron_tools_and_armors_everywhere", "bucket_everywhere", "enigmaticlegacyplus_everywhere", "relics_everywhere"] }, // Iron Ingot
     { quest_id: "76D62EF7E386F07D", stage: ["diamond_tools_and_armors_everywhere", "simplyswords_swords_everywhere"] }, // diamond set 
     { quest_id: "4F76CA5E86C00635", stage: "enchanted_book_everywhere" }, // ench. table craft

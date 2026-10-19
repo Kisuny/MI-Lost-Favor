@@ -2,8 +2,8 @@
   "feature": "thaumaturge:nodes_wild",
   "placement": [
     {
-      "type": "thaumaturge:node_spawn_chance",
-      "kind": "wild"
+      "type": "minecraft:rarity_filter",
+      "chance": 16
     },
     {
       "type": "minecraft:count",

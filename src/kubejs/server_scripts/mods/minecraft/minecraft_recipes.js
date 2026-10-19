@@ -293,8 +293,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-
-    milfShaped(event, {
+    customThaumArcaneCraft(event, {
         pattern: [
             " R ",
             "EQE",
@@ -306,8 +305,12 @@ ServerEvents.recipes(event => {
             E: { item: "modern_industrialization:diamond_plate" },
             R: { tag: "apothic_enchanting:tomes" },
         },
-        outputItems: [[{ id: "apothic_enchanting:apothic_enchanting_table" }]],
-        removeRecipe:true
+        crystals: { ordo: 1, terra: 1, ignis: 5 },
+        vis: 20,
+        research: 'thaumaturge:unlock_infusion',
+        result: 'apothic_enchanting:apothic_enchanting_table',
+        id: 'thaumaturge:arcane_workbench/apothic_enchanting_table',
+        removeOutput: true
     })
 
     yTechShapeless(event, {

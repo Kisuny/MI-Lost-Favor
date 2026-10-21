@@ -5,6 +5,9 @@ ServerEvents.tags('item', event => {
         'embers:caminite_gauge', 
         'embers:caminite_valve',
     ])
+
+    event.add("embers:reservoir_cap", "embers:reservoir")
+
     
 })
 

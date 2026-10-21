@@ -50,6 +50,7 @@ function milfKilnSmeltingRecipe(event, args) {
         type: "milf:kiln_smelting",
         input: Object.assign({}, args.inputItems[0][0], { count: 1 }),
         output: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+        requires_bellows: args.requires_bellows || false
     }
     if (!args.compatOff) {
 
@@ -71,6 +72,21 @@ function milfChiselHitRecipe(event, args) {
     event.custom(recipe)
 }
 
+function milfAnvilRecipe(event, args) {
+    let recipe = {
+        type: "milf:anvil",
+        input: Object.assign({}, args.inputItems[0][0], { count: args.inputItems[0][1] }),
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] }),
+        maxHit: args.maxHit || 0.35,
+        tier: args.tier || "stone"
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
 function milfBloomeryRecipe(event, args) {
     let recipe = {
         type: "milf:bloomery",
@@ -78,10 +94,15 @@ function milfBloomeryRecipe(event, args) {
         input2: Object.assign({}, args.inputItems[1][0], { count: args.inputItems[1][1] || 1 }),
         output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
         time: args.time || 109*2,
-        requires_bellows: args.requires_bellows
+        coal_count: args.coal_count || 4,
+        requires_bellows: args.requires_bellows || false
     }
     if (!args.compatOff) {
-
+        miMachineRecipe(event, {
+            energy: 2, time: 200, machine: "extended_industrialization:alloy_smelter",
+            inputItems: args.inputItems,
+            outputItems: [[{ item: recipe.output.id }, recipe.output.count]]
+        })
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
@@ -110,7 +131,10 @@ function milfStoneBasinRecipe(event, args) {
 
 ServerEvents.recipes(event => {
 
-
+    milfSmelting(event, {
+        inputItems: [[{ item: "milf:unfired_brick" }]],
+        outputItems: [[{ id: "minecraft:brick" }]],
+    })
 
 
     milfStoneBasinRecipe(event, {
@@ -140,7 +164,7 @@ ServerEvents.recipes(event => {
             [{ id: "minecraft:brick" }, 16],
         ],
 
-        requires_bellows: true,
+        coal_count: 2,
 
         time: 150
     })
@@ -155,9 +179,40 @@ ServerEvents.recipes(event => {
             [{ id: "modern_industrialization:fire_clay_brick" }, 16],
         ],
 
-        requires_bellows: true,
+        coal_count: 2,
 
         time: 150
+    })
+
+
+    yTechShaped(event, {
+        pattern: [
+            'BBB',
+            'B#B',
+            'BBB'
+        ],
+        key: {
+            B: { item: "minecraft:clay_ball" },
+            "#": { tag: "ytech:brick_molds" }
+        },
+        outputItems: [[{ id: "milf:unfired_brick" }, 12]],
+        compatOff: true,
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'BBB',
+            'B#B',
+            'BBB'
+        ],
+        key: {
+            B: { item: "embers:caminite_blend" },
+            "#": { tag: "ytech:brick_molds" }
+        },
+        outputItems: [[{ id: "milf:unfired_caminite_brick" }, 12]],
+        compatOff: true,
+        removeRecipe: true
     })
 
     milfBloomeryRecipe(event, {
@@ -331,6 +386,36 @@ ServerEvents.recipes(event => {
 
     })
 
+    entriesForEach({
+        "modern_industrialization:lead_ingot":"modern_industrialization:lead_plate",
+        "modern_industrialization:tin_ingot": "modern_industrialization:tin_plate",
+        "minecraft:copper_ingot": "modern_industrialization:copper_plate"
+    },([ingot, plate]) => {
+        milfAnvilRecipe(event, {
+            inputItems: [
+                [{ item: ingot }],
+            ],
+            outputItems: [
+                [{ id: plate }],
+            ],
+            maxHit: 0.61,
+            tier: "bronze"
+        })
+    })
+
+    milfAnvilRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:iron_ingot" }, 2],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:iron_double_ingot" }],
+        ],
+        maxHit: 0.22,
+        tier: "bronze"
+    })
+
+
+
     milfKilnSmeltingRecipe(event, {
         inputItems: [
             [{ item: "minecraft:smooth_sandstone" }],
@@ -346,6 +431,16 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [
             [{ id: "minecraft:stone" }],
+        ],
+        requires_bellows:true
+    })
+
+    milfKilnSmeltingRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:stone" }],
+        ],
+        outputItems: [
+            [{ id: "minecraft:smooth_stone" }],
         ]
     })
 
@@ -660,7 +755,7 @@ ServerEvents.recipes(event => {
         key: {
             T: { "item": "ytech:grass_twine" },
             E: { item: "ytech:leather_strips" },
-            P: { item: "modern_industrialization:lead_bolt" },
+            P: { item: "modern_industrialization:tin_bolt" },
         },
         outputItems: [[{ id: "comforts:rope_and_nail" }, 2]],
         removeRecipe: true

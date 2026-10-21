@@ -268,6 +268,27 @@ global.disabledItems = [
 
     //#endregion
 
+
+    //#region Embers
+    new DisabledItemBuilder("embers:copper_nugget"),
+    new DisabledItemBuilder("embers:lead_nugget"),
+    new DisabledItemBuilder("embers:silver_nugget"),
+
+    new DisabledItemBuilder("embers:raw_lead"),
+    new DisabledItemBuilder("embers:raw_silver"),
+
+    new DisabledItemBuilder("embers:lead_ingot"),
+    new DisabledItemBuilder("embers:silver_ingot"),
+
+    new DisabledItemBuilder("embers:copper_plate"),
+    new DisabledItemBuilder("embers:iron_plate"),
+    new DisabledItemBuilder("embers:lead_plate"),
+    new DisabledItemBuilder("embers:silver_plate"),
+    new DisabledItemBuilder("embers:mithril_plate"),
+    new DisabledItemBuilder(/embers:mithril_(\w+)\b/),
+
+    //#endregion
+
     new DisabledItemBuilder("monsterplus:curseflame_powder"),
 
     new DisabledItemBuilder("aquaculture:diamond_fillet_knife"),

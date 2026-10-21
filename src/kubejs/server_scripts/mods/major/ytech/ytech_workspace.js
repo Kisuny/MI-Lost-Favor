@@ -898,13 +898,13 @@ ServerEvents.recipes(event => {
 
     builders.push(
         new WorkspaceRecipeBuilder("modern_industrialization:forge_hammer")
-            .top(plane => plane.fill("I"))
+            .top(plane => plane.plus("I").center("B"))
             .middle(plane => plane.center("P"))
-            .bottom(plane => plane.center("B").corners("I").sides("I"))
+            .bottom(plane => plane.plus("I").center("B"))
             .setKey({
-                B: { item: "minecraft:iron_block" },
+                B: { item: "modern_industrialization:iron_double_ingot" },
                 I: { item: "minecraft:iron_ingot" },
-                P: { item: "minecraft:heavy_weighted_pressure_plate" }
+                P: { item: "modern_industrialization:iron_double_ingot" }
             })
             .setArgs({
                 tool: { tag: "c:hammers" }

@@ -49,6 +49,11 @@ ServerEvents.tags('item', event => {
         event.add('milf:hammers', hammer)
     })
 
+    //event.add("milf:chisels", "#c:files")
+
+
+    event.add("more_sounds:equipment", "#milf:hammers")
+    event.add("more_sounds:equipment", "#milf:chisels")
     event.add("more_sounds:equipment", "#milf:knives")
 
     event.add("milf:artifacts", ['#artifacts:artifacts', '#relics:relic', '#relics:relics'])

@@ -3383,5 +3383,17 @@
 			x: -4.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["5F02DDEEB01618F7"]
+			entity_vis_size: 1.0f
+			id: "4C7CBF8D8AA8C67B"
+			tasks: [{
+				id: "3F6DBD0892841A6A"
+				item: { count: 1, id: "embers:ember_energy_converter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
 	]
 }

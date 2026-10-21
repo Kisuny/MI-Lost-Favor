@@ -13,68 +13,25 @@
 		{
 			id: "7751BDB7620AC516"
 			linked_quest: "51BC2EDB324F7ECD"
-			x: -4.0d
-			y: -10.0d
+			x: -2.0d
+			y: -15.0d
 		}
 		{
 			id: "4216E860AFA240F0"
 			linked_quest: "7E470E4F941A62BB"
-			x: 9.0d
-			y: -7.0d
+			x: 0.5d
+			y: -18.0d
 		}
 	]
 	quests: [
 		{
-			entity_vis_size: 1.0f
-			id: "679B9C4BB9418CEC"
-			rewards: [{
-				id: "7D0D5252D13E79AD"
-				item: {
-					count: 1
-					id: "embers:ancient_codex"
-				}
-				type: "item"
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "1E3535A7526A8E7A"
-				item: { count: 1, id: "embers:caminite_blend" }
-				type: "item"
-			}]
-			x: 15.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["679B9C4BB9418CEC"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "embers:caminite_plate"
-			}
-			id: "344E6C982D0E7E93"
-			shape: "gear"
-			tasks: [
-				{
-					id: "28B691F3C90DB638"
-					item: { count: 1, id: "embers:raw_caminite_plate" }
-					type: "item"
-				}
-				{
-					id: "095C7AC60CFDF413"
-					item: { count: 1, id: "embers:caminite_plate" }
-					type: "item"
-				}
-			]
-			x: 17.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["344E6C982D0E7E93"]
+			dependencies: ["5CBEB0F6C8FD57FE"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "embers:item_pipe"
 			}
 			id: "7B3153AC00483C86"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "6B44D42AF022AC3D"
@@ -87,17 +44,17 @@
 					type: "item"
 				}
 			]
-			x: 18.5d
-			y: -3.5d
+			x: -5.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["344E6C982D0E7E93"]
+			dependencies: ["5CBEB0F6C8FD57FE"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "embers:fluid_pipe"
 			}
 			id: "27656B07C48F70B5"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "2A42578496D185A4"
@@ -110,24 +67,11 @@
 					type: "item"
 				}
 			]
-			x: 18.5d
-			y: -1.5d
+			x: -6.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["679B9C4BB9418CEC"]
-			entity_vis_size: 1.0f
-			id: "53F134759DE5DF97"
-			shape: "gear"
-			tasks: [{
-				id: "408F5D2DE185E40C"
-				item: { count: 1, id: "embers:caminite_brick" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["53F134759DE5DF97"]
+			dependencies: ["780D8DB37BFF3E4A"]
 			entity_vis_size: 1.0f
 			id: "0D58533D474BB840"
 			rewards: [{
@@ -145,8 +89,8 @@
 				item: { count: 1, id: "embers:mechanical_core" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.5d
+			x: -2.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0D58533D474BB840"]
@@ -167,145 +111,129 @@
 				item: { count: 1, id: "embers:ember_bore" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: -2.5d
+			x: -1.0d
+			y: 13.5d
 		}
 		{
-			dependencies: ["71A28CD8A6826BD9"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "embers:ember_crystal"
-			}
-			id: "2E09C2AAE232CF59"
-			shape: "gear"
-			tasks: [
-				{
-					id: "068254507F0D028C"
-					item: { count: 1, id: "embers:ember_grit" }
-					type: "item"
-				}
-				{
-					id: "61BA7381A96B537D"
-					item: { count: 1, id: "embers:ember_shard" }
-					type: "item"
-				}
-				{
-					id: "410DF6B5408BA7FE"
-					item: { count: 1, id: "embers:ember_crystal" }
-					type: "item"
-				}
-			]
-			x: 9.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2E09C2AAE232CF59"]
+			dependencies: ["1C40A70A805C3222"]
 			entity_vis_size: 1.0f
 			id: "239848409D6EB06A"
-			shape: "gear"
+			shape: "hexagon"
 			tasks: [{
 				id: "47A62DEF10CFD169"
 				item: { count: 1, id: "embers:ember_activator" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.5d
+			x: -2.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["239848409D6EB06A"]
+			dependencies: ["61B2758D2389D692"]
 			entity_vis_size: 1.0f
 			id: "7F38DB556CF5CF6A"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "1FE31664E4FFE101"
 				item: { count: 1, id: "embers:ember_emitter" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["239848409D6EB06A"]
+			dependencies: ["61B2758D2389D692"]
 			entity_vis_size: 1.0f
 			id: "324D3F41EBECDB36"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "769F32B9DFF05D40"
 				item: { count: 1, id: "embers:ember_receiver" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.0d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["7F38DB556CF5CF6A"]
+			dependencies: ["239848409D6EB06A"]
 			entity_vis_size: 1.0f
 			id: "3643627887D2AD11"
-			shape: "gear"
+			shape: "heart"
 			tasks: [{
 				id: "4299401A4778E1D1"
 				item: { components: { "minecraft:custom_data": { ForgeCaps: { "embers:ember": 0.0d, "embers:ember_capacity": 24000.0d } } }, count: 1, id: "embers:copper_cell" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: -3.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["3643627887D2AD11"]
+			dependencies: [
+				"324D3F41EBECDB36"
+				"7F38DB556CF5CF6A"
+				"27656B07C48F70B5"
+				"7B3153AC00483C86"
+				"7CAD19F299B6FED0"
+			]
 			entity_vis_size: 1.0f
 			id: "0E1B5FF7A1983164"
-			shape: "gear"
+			shape: "pentagon"
+			size: 2.0d
 			tasks: [{
 				id: "2B91D82D0BCFF11D"
 				item: { count: 1, id: "embers:melter" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["0E1B5FF7A1983164"]
+			dependencies: ["0FA5869020681286"]
 			entity_vis_size: 1.0f
 			id: "24E7FD78ADA1347F"
+			shape: "heart"
 			tasks: [{
 				id: "219B27C8E23586FB"
 				item: { count: 1, id: "embers:geologic_separator" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: 6.5d
+			y: 11.5d
 		}
 		{
-			dependencies: ["344E6C982D0E7E93"]
 			entity_vis_size: 1.0f
 			id: "5CBEB0F6C8FD57FE"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "0252AC54815B58C0"
 				item: { count: 1, id: "embers:caminite_lever" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -2.5d
+			x: -4.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["3643627887D2AD11"]
+			dependencies: [
+				"27E0515F3230FED5"
+				"6E8510AC49AAFB6A"
+			]
 			entity_vis_size: 1.0f
 			id: "11C14EFDFC29588D"
-			shape: "gear"
+			shape: "pentagon"
+			size: 1.5d
 			tasks: [{
 				id: "706E9D23CD959416"
 				item: { count: 1, id: "embers:mixer_centrifuge" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.5d
+			x: -2.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["3643627887D2AD11"]
+			dependencies: ["20CFF974A8F0ECD2"]
 			entity_vis_size: 1.0f
 			id: "572D8B61A151F4AB"
-			shape: "gear"
+			shape: "pentagon"
+			size: 2.0d
 			tasks: [
 				{
 					id: "2CBFEBA0BDDA6396"
@@ -318,36 +246,35 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -1.5d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7F38DB556CF5CF6A"]
 			entity_vis_size: 1.0f
 			id: "5380E40C4577CC4F"
+			shape: "heart"
 			tasks: [{
 				id: "5ED268E3A0343151"
 				item: { count: 1, id: "embers:ember_relay" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
-			dependencies: [
-				"572D8B61A151F4AB"
-				"11C14EFDFC29588D"
-			]
+			dependencies: ["11C14EFDFC29588D"]
 			entity_vis_size: 1.0f
 			id: "780D8DB37BFF3E4A"
-			shape: "gear"
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "256D758860A3D9AD"
 				item: { count: 1, id: "embers:dawnstone_ingot" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: -2.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["780D8DB37BFF3E4A"]
@@ -358,32 +285,21 @@
 				item: { count: 1, id: "embers:beam_splitter" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7B3153AC00483C86"]
-			entity_vis_size: 1.0f
-			id: "10D23036D01BAC19"
-			tasks: [{
-				id: "7FD0AB08FCDA29E8"
-				item: { count: 1, id: "embers:item_dropper" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: -4.5d
+			x: -3.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["572D8B61A151F4AB"]
 			entity_vis_size: 1.0f
 			id: "4A41E20A8AC0FA47"
+			shape: "heart"
 			tasks: [{
 				id: "3733F6B3DB79D358"
 				item: { count: 1, id: "embers:bin" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -0.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["780D8DB37BFF3E4A"]
@@ -394,11 +310,10 @@
 				item: { count: 1, id: "embers:pressure_refinery" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -1.0d
+			x: -4.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["780D8DB37BFF3E4A"]
 			entity_vis_size: 1.0f
 			id: "55EB1A2A1AF1E3A8"
 			tasks: [{
@@ -406,8 +321,8 @@
 				item: { count: 1, id: "embers:ember_ejector" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -5.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["780D8DB37BFF3E4A"]
@@ -441,11 +356,11 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: 0.0d
+			x: -4.0d
+			y: 11.0d
 		}
 		{
-			dependencies: ["780D8DB37BFF3E4A"]
+			dependencies: ["55EB1A2A1AF1E3A8"]
 			entity_vis_size: 1.0f
 			id: "40F836370A5CCB10"
 			tasks: [{
@@ -453,8 +368,8 @@
 				item: { count: 1, id: "embers:ember_funnel" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.0d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["780D8DB37BFF3E4A"]
@@ -463,7 +378,8 @@
 				id: "embers:alchemy_tablet"
 			}
 			id: "67C6130FA2F3DFE4"
-			shape: "gear"
+			shape: "rsquare"
+			size: 2.0d
 			tasks: [
 				{
 					id: "75278A626F2352BA"
@@ -481,36 +397,38 @@
 					type: "item"
 				}
 			]
-			x: -9.5d
-			y: -2.0d
+			x: 1.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["67C6130FA2F3DFE4"]
 			entity_vis_size: 1.0f
 			id: "6EF0B013A2B2DB1F"
 			shape: "heart"
+			size: 1.5d
 			tasks: [{
 				id: "03D2B301A2E398D1"
 				item: { components: { "minecraft:custom_data": { inventory: { Items: [ ], Size: 7 } } }, count: 1, id: "embers:codebreaking_slate" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: -3.0d
+			x: 1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["780D8DB37BFF3E4A"]
 			entity_vis_size: 1.0f
 			id: "0335CC4F07E1069E"
+			shape: "heart"
 			tasks: [{
 				id: "58A99344627C936D"
 				item: { count: 1, id: "embers:dawnstone_anvil" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.0d
+			x: -5.5d
+			y: 10.0d
 		}
 		{
-			dependencies: ["780D8DB37BFF3E4A"]
+			dependencies: ["45BE0FBDB25ECEFA"]
 			entity_vis_size: 1.0f
 			id: "503CF652540E5819"
 			tasks: [{
@@ -518,8 +436,8 @@
 				item: { count: 1, id: "embers:copper_charger" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["503CF652540E5819"]
@@ -531,8 +449,8 @@
 				item: { components: { "minecraft:custom_data": { ForgeCaps: { "embers:ember": 0.0d, "embers:ember_capacity": 6000.0d } } }, count: 1, id: "embers:ember_cartridge" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["503CF652540E5819"]
@@ -544,8 +462,8 @@
 				item: { components: { "minecraft:custom_data": { ForgeCaps: { "embers:ember": 0.0d, "embers:ember_capacity": 2000.0d } } }, count: 1, id: "embers:ember_jar" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.5d
+			x: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["67C6130FA2F3DFE4"]
@@ -556,72 +474,11 @@
 				item: { count: 1, id: "embers:tyrfing" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: -4.5d
+			x: 3.0d
+			y: 8.5d
 		}
 		{
-			dependencies: ["46DE953F398EBD70"]
-			entity_vis_size: 1.0f
-			id: "2AE46163AD359AAB"
-			shape: "heart"
-			tasks: [{
-				id: "34F0D67DFAB496BF"
-				item: { count: 1, id: "embers:inflictor_gem" }
-				type: "item"
-			}]
-			x: -15.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["67C6130FA2F3DFE4"]
-			entity_vis_size: 1.0f
-			id: "16BB102A4782EEB9"
-			tasks: [{
-				id: "6FF0716060F50990"
-				item: { count: 1, id: "embers:ashen_fabric" }
-				type: "item"
-			}]
-			x: -13.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["16BB102A4782EEB9"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "embers:ashen_goggles"
-			}
-			id: "46DE953F398EBD70"
-			shape: "heart"
-			tasks: [
-				{
-					id: "73BD62D8D2123D53"
-					item: { count: 1, id: "embers:ashen_goggles" }
-					type: "item"
-				}
-				{
-					id: "267AF61AC66180DF"
-					item: { count: 1, id: "embers:ashen_cloak" }
-					type: "item"
-				}
-				{
-					id: "721ECAE4249C1F15"
-					item: { count: 1, id: "embers:ashen_leggings" }
-					type: "item"
-				}
-				{
-					id: "2CA138072C6A06C5"
-					item: { count: 1, id: "embers:ashen_boots" }
-					type: "item"
-				}
-			]
-			x: -14.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"780D8DB37BFF3E4A"
-				"503CF652540E5819"
-			]
+			dependencies: ["503CF652540E5819"]
 			entity_vis_size: 1.0f
 			id: "6A8A745E9ADEB786"
 			shape: "diamond"
@@ -630,14 +487,11 @@
 				item: { components: { "minecraft:custom_data": { didUse: 0b, poweredOn: 1b } }, count: 1, id: "embers:grandhammer" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: 7.0d
+			y: 7.0d
 		}
 		{
-			dependencies: [
-				"780D8DB37BFF3E4A"
-				"503CF652540E5819"
-			]
+			dependencies: ["503CF652540E5819"]
 			entity_vis_size: 1.0f
 			id: "29E5FC611F959789"
 			shape: "diamond"
@@ -646,14 +500,11 @@
 				item: { count: 1, id: "embers:blazing_ray" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 8.5d
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"780D8DB37BFF3E4A"
-				"503CF652540E5819"
-			]
+			dependencies: ["503CF652540E5819"]
 			entity_vis_size: 1.0f
 			id: "5C6C75DC1E9C4EF8"
 			shape: "diamond"
@@ -662,14 +513,11 @@
 				item: { components: { "minecraft:custom_data": { lastUse: 4159112L } }, count: 1, id: "embers:cinder_staff" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.5d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
-			dependencies: [
-				"780D8DB37BFF3E4A"
-				"503CF652540E5819"
-			]
+			dependencies: ["503CF652540E5819"]
 			entity_vis_size: 1.0f
 			id: "6C7D0409785384AF"
 			shape: "diamond"
@@ -678,14 +526,11 @@
 				item: { components: { "minecraft:custom_data": { didUse: 0b, poweredOn: 0b } }, count: 1, id: "embers:clockwork_axe" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 9.0d
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"780D8DB37BFF3E4A"
-				"503CF652540E5819"
-			]
+			dependencies: ["503CF652540E5819"]
 			entity_vis_size: 1.0f
 			id: "780856FB09FB7C80"
 			shape: "diamond"
@@ -694,8 +539,8 @@
 				item: { components: { "minecraft:custom_data": { didUse: 0b, poweredOn: 0b } }, count: 1, id: "embers:clockwork_pickaxe" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0335CC4F07E1069E"]
@@ -706,11 +551,11 @@
 				item: { count: 1, id: "embers:automatic_hammer" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 1.0d
+			x: -6.5d
+			y: 10.5d
 		}
 		{
-			dependencies: ["0335CC4F07E1069E"]
+			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "0083A8FB4ECA2086"
 			shape: "heart"
@@ -719,8 +564,8 @@
 				item: { count: 1, id: "embers:ancient_motive_core" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 2.0d
+			x: 8.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["67C6130FA2F3DFE4"]
@@ -731,8 +576,8 @@
 				item: { count: 1, id: "embers:glimmer_crystal" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: -2.5d
+			x: 3.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3C90765213BDB46C"]
@@ -743,8 +588,8 @@
 				item: { count: 1, id: "embers:glimmer_lamp" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: -2.5d
+			x: 2.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0FA5869020681286"]
@@ -755,8 +600,8 @@
 				item: { count: 1, id: "embers:wildfire_core" }
 				type: "item"
 			}]
-			x: -14.5d
-			y: 1.5d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["45BE0FBDB25ECEFA"]
@@ -768,8 +613,8 @@
 				item: { count: 1, id: "embers:ember_injector" }
 				type: "item"
 			}]
-			x: -15.5d
-			y: 0.5d
+			x: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["67C6130FA2F3DFE4"]
@@ -780,8 +625,8 @@
 				item: { count: 1, id: "embers:intelligent_apparatus" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: -1.5d
+			x: 0.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["071453124C68591E"]
@@ -793,23 +638,23 @@
 				item: { count: 1, id: "embers:mnemonic_inscriber" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: -1.5d
+			x: 1.0d
+			y: 11.5d
 		}
 		{
-			dependencies: ["53F134759DE5DF97"]
+			dependencies: ["27656B07C48F70B5"]
 			entity_vis_size: 1.0f
 			id: "27932EC4DE62EEE4"
+			shape: "heart"
 			tasks: [{
 				id: "3967CD3FAD629A6E"
 				item: { count: 1, id: "embers:fluid_vessel" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: -4.0d
+			x: -6.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["27932EC4DE62EEE4"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "embers:reservoir"
@@ -836,28 +681,30 @@
 			dependencies: ["67C6130FA2F3DFE4"]
 			entity_vis_size: 1.0f
 			id: "0FA5869020681286"
+			shape: "rsquare"
 			tasks: [{
 				id: "616B6678D1E071A3"
 				item: { count: 1, id: "embers:ember_crystal_cluster" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: -0.5d
+			x: 5.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["239848409D6EB06A"]
 			entity_vis_size: 1.0f
 			id: "464C0FDB519EB5C6"
+			shape: "heart"
 			tasks: [{
 				id: "72107403BFEC3887"
 				item: { count: 1, id: "embers:heat_exchanger" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: -1.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["239848409D6EB06A"]
+			dependencies: ["0D58533D474BB840"]
 			entity_vis_size: 1.0f
 			id: "6E6BE85FC3DE7DCC"
 			shape: "heart"
@@ -866,8 +713,8 @@
 				item: { count: 1, id: "embers:hearth_coil" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.0d
+			x: -3.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6E6BE85FC3DE7DCC"]
@@ -878,8 +725,8 @@
 				item: { count: 1, id: "embers:heat_insulation" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: -4.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6E6BE85FC3DE7DCC"]
@@ -890,8 +737,8 @@
 				item: { count: 1, id: "embers:char_instiller" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: -3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6E6BE85FC3DE7DCC"]
@@ -902,11 +749,11 @@
 				item: { count: 1, id: "embers:atmospheric_bellows" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.5d
+			x: -4.0d
+			y: 14.5d
 		}
 		{
-			dependencies: ["55EB1A2A1AF1E3A8"]
+			dependencies: ["2B43EF104C566973"]
 			entity_vis_size: 1.0f
 			id: "1AC4A9E422C90AF5"
 			tasks: [{
@@ -914,11 +761,10 @@
 				item: { count: 1, id: "embers:mechanical_pump" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.0d
+			x: -15.0d
+			y: 14.5d
 		}
 		{
-			dependencies: ["572D8B61A151F4AB"]
 			entity_vis_size: 1.0f
 			id: "7E77C00BEDCD3453"
 			tasks: [{
@@ -927,7 +773,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7E77C00BEDCD3453"]
@@ -940,32 +786,21 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["503CF652540E5819"]
-			entity_vis_size: 1.0f
-			id: "7467DC8D4F4E61DD"
-			tasks: [{
-				id: "3222FBBB300E102E"
-				item: { count: 1, id: "embers:ember_siphon" }
-				type: "item"
-			}]
-			x: -0.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["572D8B61A151F4AB"]
+			dependencies: ["45BE0FBDB25ECEFA"]
 			entity_vis_size: 1.0f
 			id: "610DA4755015BD05"
 			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "3728F1D947FBF03F"
 				item: { components: { "minecraft:block_entity_data": { boilTime: 0, clogged: 0b, connection0: 0, connection1: 0, connection2: 0, connection3: 2, connection4: 0, connection5: 0, fluidTank: { Fluid: { amount: 15700, id: "minecraft:water" } }, from0: 0b, from1: 0b, from2: 0b, from3: 0b, from4: 0b, from5: 0b, gasTank: { Fluid: { amount: 12000, id: "embers:steam" } }, id: "embers:mini_boiler", lastBoil: 300, lastRobin: 0, lastTransfer: -1, "neoforge:attachments": { "astages:block_stage": { owner: [I; -59202318, 133646977, -1471610684, -363498604 ] } } } }, count: 1, id: "embers:mini_boiler" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 11.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["45BE0FBDB25ECEFA"]
@@ -992,11 +827,11 @@
 					type: "item"
 				}
 			]
-			x: -15.5d
-			y: 2.5d
+			x: 8.5d
+			y: 11.0d
 		}
 		{
-			dependencies: ["45BE0FBDB25ECEFA"]
+			dependencies: ["6561D8BD00329746"]
 			entity_vis_size: 1.0f
 			id: "559862781DC90BD8"
 			shape: "heart"
@@ -1005,11 +840,14 @@
 				item: { count: 1, id: "embers:wildfire_stirling" }
 				type: "item"
 			}]
-			x: -16.0d
-			y: 1.5d
+			x: 14.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["0FA5869020681286"]
+			dependencies: [
+				"0FA5869020681286"
+				"71A28CD8A6826BD9"
+			]
 			entity_vis_size: 1.0f
 			id: "5F47EEF5B5DC2ED2"
 			tasks: [{
@@ -1017,8 +855,8 @@
 				item: { count: 1, id: "embers:field_chart" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 1.5d
+			x: 5.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["780D8DB37BFF3E4A"]
@@ -1029,8 +867,8 @@
 				item: { count: 1, id: "embers:dawnstone_mail" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.5d
+			x: -3.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0FA5869020681286"]
@@ -1053,8 +891,8 @@
 					type: "item"
 				}
 			]
-			x: -12.5d
-			y: 1.5d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0FA5869020681286"]
@@ -1065,8 +903,8 @@
 				item: { count: 1, id: "embers:explosion_charm" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: 1.5d
+			x: 5.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["75FF21A1B4FA8CB1"]
@@ -1077,8 +915,8 @@
 				item: { count: 1, id: "embers:explosion_pedestal" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: 3.0d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0FA5869020681286"]
@@ -1089,8 +927,8 @@
 				item: { components: { "minecraft:custom_data": { ForgeCaps: { "embers:ember": 0.0d, "embers:ember_capacity": 1000.0d } } }, count: 1, id: "embers:ember_bulb" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: 1.5d
+			x: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3ACCA8831B14D8DF"]
@@ -1102,7 +940,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["67C6130FA2F3DFE4"]
@@ -1113,8 +951,8 @@
 				item: { count: 1, id: "embers:nonbeliever_amulet" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: -5.5d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["67C6130FA2F3DFE4"]
@@ -1126,11 +964,11 @@
 				item: { count: 1, id: "embers:entropic_enumerator" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.0d
+			x: 1.5d
+			y: 12.5d
 		}
 		{
-			dependencies: ["67C6130FA2F3DFE4"]
+			dependencies: ["6561D8BD00329746"]
 			entity_vis_size: 1.0f
 			id: "3C9586039920F5C3"
 			shape: "heart"
@@ -1139,8 +977,8 @@
 				item: { count: 1, id: "embers:catalytic_plug" }
 				type: "item"
 			}]
-			x: -9.5d
-			y: -4.0d
+			x: 14.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0335CC4F07E1069E"]
@@ -1153,10 +991,10 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 2.0d
+			y: 9.5d
 		}
 		{
-			dependencies: ["0083A8FB4ECA2086"]
+			dependencies: ["45BE0FBDB25ECEFA"]
 			entity_vis_size: 1.0f
 			id: "73E45401CE651D42"
 			shape: "heart"
@@ -1165,11 +1003,10 @@
 				item: { count: 1, id: "embers:inferno_forge" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 3.0d
+			x: 8.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "5AA2EABADBC55D0B"
 			shape: "diamond"
@@ -1178,11 +1015,10 @@
 				item: { count: 1, id: "embers:diffraction_barrel" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.0d
+			x: -7.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "2B7790B78502645B"
 			shape: "diamond"
@@ -1191,11 +1027,10 @@
 				item: { count: 1, id: "embers:focal_lens" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 4.0d
+			x: -10.5d
+			y: 12.5d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "48EAD3B529052DEE"
 			shape: "diamond"
@@ -1204,11 +1039,10 @@
 				item: { count: 1, id: "embers:blasting_core" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 5.0d
+			x: -9.5d
+			y: 13.5d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "723E11A38E5D0249"
 			shape: "diamond"
@@ -1217,11 +1051,10 @@
 				item: { count: 1, id: "embers:shifting_scales" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.5d
+			x: -10.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "6D8D3469119A1D79"
 			shape: "diamond"
@@ -1230,11 +1063,10 @@
 				item: { count: 1, id: "embers:smoky_tinker_lens" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 5.0d
+			x: -10.5d
+			y: 13.5d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "6A18D2A5BFD5831D"
 			shape: "diamond"
@@ -1243,11 +1075,10 @@
 				item: { count: 1, id: "embers:tinker_lens" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 6.5d
+			x: -9.5d
+			y: 15.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "78D639C672615B4F"
 			shape: "diamond"
@@ -1256,11 +1087,10 @@
 				item: { count: 1, id: "embers:cinder_jet" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 5.5d
+			x: -10.0d
+			y: 14.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "39AB276847E503F2"
 			shape: "diamond"
@@ -1269,11 +1099,10 @@
 				item: { count: 1, id: "embers:flame_barrier" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.5d
+			x: -9.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "6C052D20373ABCEB"
 			shape: "diamond"
@@ -1282,11 +1111,10 @@
 				item: { count: 1, id: "embers:intelligent_apparatus" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 5.0d
+			x: -7.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "16672FC60995902C"
 			shape: "diamond"
@@ -1295,11 +1123,10 @@
 				item: { count: 1, id: "embers:winding_gears" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.0d
+			x: -6.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "7380CE89DA3E5A1C"
 			shape: "diamond"
@@ -1308,11 +1135,10 @@
 				item: { count: 1, id: "embers:eldritch_insignia" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.5d
+			x: -9.0d
+			y: 14.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "15F528A8C208D2AD"
 			shape: "diamond"
@@ -1321,11 +1147,10 @@
 				item: { count: 1, id: "embers:superheater" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.0d
+			x: -7.0d
+			y: 14.0d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "128C45AD8EA127F1"
 			shape: "diamond"
@@ -1334,11 +1159,10 @@
 				item: { count: 1, id: "embers:caster_orb" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 6.0d
+			x: -10.5d
+			y: 14.5d
 		}
 		{
-			dependencies: ["73E45401CE651D42"]
 			entity_vis_size: 1.0f
 			id: "0B32052B12172380"
 			shape: "diamond"
@@ -1347,13 +1171,12 @@
 				item: { count: 1, id: "embers:resonating_bell" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: -11.5d
+			y: 13.5d
 		}
 		{
-			dependencies: ["51BC2EDB324F7ECD"]
+			dependencies: ["03A7F491AAF9C123"]
 			entity_vis_size: 1.0f
-			hide_dependency_lines: true
 			icon: {
 				id: "modern_industrialization:bronze_plate"
 			}
@@ -1429,24 +1252,11 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -10.0d
+			x: -3.5d
+			y: -17.0d
 		}
 		{
-			dependencies: ["51E3EA7E70ECE842"]
-			entity_vis_size: 1.0f
-			id: "093E9ACE7175D801"
-			shape: "diamond"
-			tasks: [{
-				id: "7BB56B943092CBFC"
-				item: { count: 1, id: "ytech:bronze_shears" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["6B8190158D968891"]
+			dependencies: ["498F30B9D7B982F7"]
 			entity_vis_size: 1.0f
 			id: "5F24FD53DB1378DA"
 			shape: "diamond"
@@ -1455,14 +1265,11 @@
 				item: { count: 1, id: "modern_industrialization:iron_bolt" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -11.0d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
-			dependencies: [
-				"5F24FD53DB1378DA"
-				"6B8190158D968891"
-			]
+			dependencies: ["2142E9E929D80AA9"]
 			entity_vis_size: 1.0f
 			id: "71CC5CD5F8018F02"
 			rewards: [
@@ -1517,10 +1324,11 @@
 					type: "observation"
 				}
 			]
-			x: 2.5d
-			y: -10.0d
+			x: -2.0d
+			y: -17.5d
 		}
 		{
+			dependencies: ["41CB59DC79E8BF8F"]
 			entity_vis_size: 1.0f
 			id: "6B8190158D968891"
 			shape: "diamond"
@@ -1529,21 +1337,8 @@
 				item: { count: 1, id: "modern_industrialization:iron_rod" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["51E3EA7E70ECE842"]
-			entity_vis_size: 1.0f
-			id: "19C9F5C94F3F8853"
-			shape: "diamond"
-			tasks: [{
-				id: "46CA1D477DB07A30"
-				item: { components: { "gateways:gateway": "gateways:basic/deer" }, count: 1, id: "gateways:gate_pearl" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: -11.5d
+			x: -0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["71CC5CD5F8018F02"]
@@ -1566,8 +1361,8 @@
 				item: { count: 1, id: "apotheosis:gem_dust" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -10.0d
+			x: -2.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]
@@ -1578,8 +1373,8 @@
 				item: { count: 1, id: "apotheosis:gem_fused_slate" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -10.0d
+			x: -2.0d
+			y: -19.5d
 		}
 		{
 			dependencies: ["355834F8507CE535"]
@@ -1591,8 +1386,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_socketing" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -10.0d
+			x: -2.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["355834F8507CE535"]
@@ -1604,8 +1399,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_withdrawal" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -9.5d
+			x: -1.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["355834F8507CE535"]
@@ -1617,8 +1412,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_unnaming" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -10.5d
+			x: -2.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]
@@ -1629,8 +1424,8 @@
 				item: { count: 1, id: "apotheosis:gem_cutting_table" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -11.5d
+			x: -3.5d
+			y: -20.0d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]
@@ -1641,8 +1436,8 @@
 				item: { count: 1, id: "apotheosis:salvaging_table" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -8.5d
+			x: -0.5d
+			y: -20.0d
 		}
 		{
 			dependencies: [
@@ -1657,8 +1452,8 @@
 				item: { count: 1, id: "apotheosis:gem_case" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -10.0d
+			x: -2.0d
+			y: -22.5d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]
@@ -1670,8 +1465,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_malice" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -11.0d
+			x: -3.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]
@@ -1683,8 +1478,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_supremacy" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.0d
+			x: -1.0d
+			y: -18.5d
 		}
 		{
 			dependencies: [
@@ -1699,8 +1494,8 @@
 				item: { count: 1, id: "tradingpost:trading_post" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -10.5d
+			x: -4.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["51E3EA7E70ECE842"]
@@ -1712,22 +1507,24 @@
 				item: { components: { "gateways:gateway": "gateways:basic/villager" }, count: 1, id: "gateways:gate_pearl" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -12.0d
+			x: -4.5d
+			y: -18.0d
 		}
 		{
+			dependencies: ["65B37370BC936739"]
 			entity_vis_size: 1.0f
 			id: "53D226046704B4F5"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "7536511D4A392455"
 				item: { count: 1, id: "ytech:bronze_mesh" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.5d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["03A7F491AAF9C123"]
 			entity_vis_size: 1.0f
 			id: "2142E9E929D80AA9"
 			tasks: [{
@@ -1735,10 +1532,11 @@
 				item: { count: 1, id: "modern_industrialization:iron_plate" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -7.0d
+			x: -0.5d
+			y: -17.0d
 		}
 		{
+			dependencies: ["5F24FD53DB1378DA"]
 			entity_vis_size: 1.0f
 			id: "65B37370BC936739"
 			shape: "hexagon"
@@ -1747,8 +1545,620 @@
 				item: { count: 1, id: "modern_industrialization:iron_hammer" }
 				type: "item"
 			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			entity_vis_size: 1.0f
+			id: "03A7F491AAF9C123"
+			tasks: [{
+				id: "63D29919236B1BEF"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			entity_vis_size: 1.0f
+			id: "59DA080AE7C2CAFC"
+			tasks: [{
+				id: "0537521A1D2F6175"
+				item: { count: 1, id: "ytech:bronze_saw" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["14746D0E8771D703"]
+			entity_vis_size: 1.0f
+			id: "2B43EF104C566973"
+			tasks: [{
+				id: "422D8ABAE34D684E"
+				item: { count: 1, id: "modern_industrialization:iron_gear" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 12.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "14746D0E8771D703"
+			tasks: [{
+				id: "36B677D7034D4833"
+				item: { count: 1, id: "embers:gear_stamp" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["572D8B61A151F4AB"]
+			entity_vis_size: 1.0f
+			id: "03151C463B4D7962"
+			tasks: [{
+				id: "7F80402EF22AA707"
+				item: { count: 1, id: "embers:plate_stamp" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["572D8B61A151F4AB"]
+			entity_vis_size: 1.0f
+			id: "6FD0F34DD5C70490"
+			tasks: [{
+				id: "74C4C88286EBD7FB"
+				item: { count: 1, id: "embers:nugget_stamp" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["572D8B61A151F4AB"]
+			entity_vis_size: 1.0f
+			id: "51A722F9AC5A4826"
+			tasks: [{
+				id: "5F81DE037793A8E4"
+				item: { count: 1, id: "embers:ingot_stamp" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["572D8B61A151F4AB"]
+			entity_vis_size: 1.0f
+			id: "66CDB0B92616C357"
+			tasks: [{
+				id: "0746D1C2863CE2C4"
+				item: { count: 1, id: "embers:flat_stamp" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["610DA4755015BD05"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "modern_industrialization:steam_bucket"
+			}
+			id: "6561D8BD00329746"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [
+				{
+					id: "134994F5E9831789"
+					item: { count: 1, id: "modern_industrialization:steam_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "304330FEA15A948C"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0F5A8505E80666E1"]
+			entity_vis_size: 1.0f
+			id: "25A0DB50AF558709"
+			shape: "diamond"
+			tasks: [{
+				id: "7917AA7FAFD5ED04"
+				item: { count: 1, id: "milf:everburning_roots" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0F5A8505E80666E1"]
+			entity_vis_size: 1.0f
+			id: "3AFD02BE11FC391E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7DA7D1F3A8F3A213"
+				item: { count: 1, id: "milf:everburning_roots_heart" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0F5A8505E80666E1"]
+			entity_vis_size: 1.0f
+			id: "0C7AA640A3758FBC"
+			shape: "diamond"
+			tasks: [{
+				id: "0F285801665A6E86"
+				item: { count: 1, id: "milf:everburning_roots_veins" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["25A0DB50AF558709"]
+			entity_vis_size: 1.0f
+			id: "41A331A3401DB6E7"
+			shape: "diamond"
+			tasks: [{
+				id: "492250F36920BA3D"
+				item: { count: 1, id: "embers:archaic_brick" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["572D8B61A151F4AB"]
+			entity_vis_size: 1.0f
+			id: "41CB59DC79E8BF8F"
+			tasks: [{
+				id: "0A056F3E433F2970"
+				item: { count: 1, id: "milf:rod_stamp" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["572D8B61A151F4AB"]
+			entity_vis_size: 1.0f
+			id: "498F30B9D7B982F7"
+			tasks: [{
+				id: "07A3D6DDE875B71A"
+				item: { count: 1, id: "milf:bolt_stamp" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0C7AA640A3758FBC"]
+			entity_vis_size: 1.0f
+			id: "689FA448C5B82060"
+			shape: "diamond"
+			tasks: [{
+				id: "7325E585255C3286"
+				item: { count: 1, id: "embers:ember_shard" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"3AFD02BE11FC391E"
+				"41A331A3401DB6E7"
+				"689FA448C5B82060"
+			]
+			entity_vis_size: 1.0f
+			id: "1C40A70A805C3222"
+			shape: "hexagon"
+			tasks: [{
+				id: "3A38E66E396F341F"
+				item: { count: 1, id: "embers:ancient_motive_core" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5C0C632191E8A46A"]
+			entity_vis_size: 1.0f
+			id: "0F5A8505E80666E1"
+			rewards: [{
+				id: "56935AFDB441AD1D"
+				item: {
+					count: 1
+					id: "embers:ancient_codex"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5463DA0473314995"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"5F24FD53DB1378DA"
+				"6B8190158D968891"
+			]
+			entity_vis_size: 1.0f
+			id: "3FC89E7A104961D7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2864FAF3FBBDD7C4"
+				item: { count: 1, id: "minecraft:iron_pickaxe" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E1B5FF7A1983164"]
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "embers:block/fluid/molten_iron_still"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "20CFF974A8F0ECD2"
+			shape: "square"
+			tasks: [
+				{
+					id: "516CFEDB41D091F2"
+					type: "checkmark"
+				}
+				{
+					fluid: {
+						amount: 1000
+						id: "embers:molten_iron"
+					}
+					id: "4160F03F33BAAED8"
+					optional_task: true
+					type: "fluid"
+				}
+			]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3FC89E7A104961D7"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:raw_gold"
+			}
+			id: "6E8510AC49AAFB6A"
+			rewards: [
+				{
+					count: 3
+					id: "776F2E8D7E754A38"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								oreId: "minecraft:raw_gold"
+							}
+						}
+						count: 1
+						id: "milf:stone_nose"
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:gold_ore"
+					}
+					id: "20031D9F89CE6D7E"
+					team_reward: false
+					type: "custom"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "550A8C52B3053504"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:redstone"
+			}
+			id: "5C0C632191E8A46A"
+			rewards: [
+				{
+					count: 3
+					id: "5619FA4B82E81F59"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								oreId: "minecraft:redstone"
+							}
+						}
+						count: 1
+						id: "milf:stone_nose"
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:redstone_ore"
+					}
+					id: "02513EBF5A2A450B"
+					team_reward: false
+					type: "custom"
+				}
+			]
+			tasks: [{
+				id: "7601074A2C1EF7D8"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["3FC89E7A104961D7"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:lapis_lazuli"
+			}
+			id: "27E0515F3230FED5"
+			rewards: [
+				{
+					count: 3
+					id: "67B3A698FD42A83E"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								oreId: "minecraft:lapis_lazuli"
+							}
+						}
+						count: 1
+						id: "milf:stone_nose"
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:lapis_ore"
+					}
+					id: "6CB5BF00835196FF"
+					team_reward: false
+					type: "custom"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4E17E0052CCF2431"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2142E9E929D80AA9"]
+			entity_vis_size: 1.0f
+			id: "364BAF17C93EF6D2"
+			tasks: [{
+				id: "09FD83148E864A2D"
+				item: { count: 1, id: "minecraft:bucket" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["6B8190158D968891"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:chainmail_helmet"
+			}
+			id: "02A736963A8815BE"
+			optional: true
+			rewards: [{
+				id: "543ECFD406DCFF3C"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_overworld"
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "4140ECF05FBFF1EE"
+					item: { count: 1, id: "minecraft:chainmail_helmet" }
+					type: "item"
+				}
+				{
+					id: "203EDD0A361783CC"
+					item: { count: 1, id: "minecraft:chainmail_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2D0192EC9BC6453D"
+					item: { count: 1, id: "minecraft:chainmail_leggings" }
+					type: "item"
+				}
+				{
+					id: "2863BB3C4DF12FEC"
+					item: { count: 1, id: "minecraft:chainmail_boots" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["02A736963A8815BE"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:iron_helmet"
+			}
+			id: "52A28BD429FE5F3C"
+			optional: true
+			rewards: [{
+				id: "2D8267C990341D71"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_iron"
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [
+				{
+					id: "1BDA14AC835ABD57"
+					item: { count: 1, id: "minecraft:iron_helmet" }
+					type: "item"
+				}
+				{
+					id: "532B769604581B18"
+					item: { count: 1, id: "minecraft:iron_chestplate" }
+					type: "item"
+				}
+				{
+					id: "54D061F43B23978F"
+					item: { count: 1, id: "minecraft:iron_leggings" }
+					type: "item"
+				}
+				{
+					id: "2BAD26AEEB8A1257"
+					item: { count: 1, id: "minecraft:iron_boots" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14746D0E8771D703"]
+			entity_vis_size: 1.0f
+			id: "14768B178D66D3E8"
+			tasks: [{
+				id: "3FEB52A222551BF1"
+				item: { count: 1, id: "modern_industrialization:bronze_gear" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["239848409D6EB06A"]
+			entity_vis_size: 1.0f
+			id: "7CAD19F299B6FED0"
+			tasks: [{
+				id: "58CDDD550D0B5D9B"
+				item: { count: 1, id: "embers:tinker_hammer" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["24E7FD78ADA1347F"]
+			entity_vis_size: 1.0f
+			id: "7518FE377F6FF1AC"
+			tasks: [{
+				id: "3E8D9DBFA3F3499B"
+				item: { count: 1, id: "modern_industrialization:silver_ingot" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["689FA448C5B82060"]
+			entity_vis_size: 1.0f
+			id: "61B2758D2389D692"
+			shape: "diamond"
+			tasks: [{
+				id: "7E76A3B6E0199F8F"
+				item: { count: 1, id: "embers:ember_crystal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["51A722F9AC5A4826"]
+			entity_vis_size: 1.0f
+			id: "57E70F40C45A549F"
+			tasks: [{
+				id: "22ABA185E78150D4"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:ingots)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03151C463B4D7962"]
+			entity_vis_size: 1.0f
+			id: "624FF12A7532734A"
+			tasks: [{
+				id: "2E03B51296E0AB10"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:plates)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
 			x: 1.5d
-			y: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2142E9E929D80AA9"]
+			entity_vis_size: 1.0f
+			id: "5F9999636D826FD0"
+			tasks: [{
+				id: "76ECF79E94A4557E"
+				item: { count: 1, id: "minecraft:hopper" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["6FD0F34DD5C70490"]
+			entity_vis_size: 1.0f
+			id: "505295E7EDE05831"
+			tasks: [{
+				id: "03F4F030949BC992"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(embers:aspectus)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66CDB0B92616C357"]
+			entity_vis_size: 1.0f
+			id: "45128FEBBAE31C5C"
+			tasks: [{
+				id: "63EE5A11C50AF268"
+				item: { count: 1, id: "embers:ember_grit" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
 		}
 	]
 }

@@ -58,21 +58,6 @@ function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args) {
 
 ServerEvents.recipes(event => {
 
-    yTechShaped(event, {
-        pattern: [
-            'BBB',
-            'B#B',
-            'BBB'
-        ],
-        key: {
-            B: { item: "minecraft:clay_ball" },
-            "#": { tag: "ytech:brick_molds" }
-        },
-        outputItems: [[{ id: "milf:unfired_brick" }, 12]],
-        compatOff: true,
-        removeRecipe: true
-    })
-
     yTechShapeless(event, {
         outputItems: [[{ "id": "ytech:bronze_hoe" }, 1]],
         inputItems: [
@@ -113,8 +98,8 @@ ServerEvents.recipes(event => {
     yTechShaped(event, {
         pattern: [
             ' N ',
-            ' W ',
-            ' B '
+            ' WB',
+            '   '
         ],
         key: {
             W: { "tag": "c:leathers" },
@@ -124,6 +109,21 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:leather_strips" }, 2]],
         removeRecipe: true
     })
+
+    yTechShaped(event, {
+        pattern: [
+            'BPB',
+            'PPP',
+            'BPB'
+        ],
+        key: {
+            P: { "item": "ytech:wooden_plate" },
+            B: { "item": "modern_industrialization:lead_bolt" },
+        },
+        outputItems: [[{ id: "ytech:brick_mold" }, 1]],
+        removeRecipe: true
+    })
+
 
     yTechShaped(event, {
         pattern: [

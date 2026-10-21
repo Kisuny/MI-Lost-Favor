@@ -76,10 +76,9 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:brick_dust" }, 2]],
         tool: 
             neoCompound([
-                { item: "ytech:lead_pickaxe" },
-                { item: "ytech:bronze_pickaxe" }
+                { item: "ytech:lead_hammer" },
+                { item: "ytech:bronze_hammer" }
             ]),
-        //removeRecipe: true
     })
 
 

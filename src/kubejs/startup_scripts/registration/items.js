@@ -63,83 +63,16 @@ createNewItem('polarized_magnet_part', { stackSize: 16, lang: { "en_us": "Polari
 
 
 createNewItem('needle', { maxDamage: 500, tag: "ytech:bone_needles", lang: { "en_us": "Needle", "ru_ru": "Игла" }})
-// createNewItem('crushed_copper', { tag: ["c:crushed_ores", "c:crushed_ores/copper"], lang: { "en_us": "Сrushed copper", "ru_ru": "Измельченная медь" }})
-// createNewItem('crushed_gold', { tag: ["c:crushed_ores", "c:crushed_ores/gold"], lang: { "en_us": "Сrushed gold", "ru_ru": "Измельченное золото" }})
-// createNewItem('crushed_iron', { tag: ["c:crushed_ores", "c:crushed_ores/iron"], lang: { "en_us": "Сrushed iron", "ru_ru": "Измельченное железо" }})
-// createNewItem('crushed_lead', { tag: ["c:crushed_ores", "c:crushed_ores/lead"], lang: { "en_us": "Сrushed lead", "ru_ru": "Измельченный свинец" }})
-// createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], lang: { "en_us": "Сrushed tin", "ru_ru": "Измельченное олово" }})
 
 createNewItem('twig')
-// createNewItem('unfired_fire_clay_brick')
-// createNewItem('fire_clay_ball')
+createNewItem('unfired_caminite_brick')
+createNewItem('rod_stamp_raw')
+createNewItem('rod_stamp')
+createNewItem('bolt_stamp_raw')
+createNewItem('bolt_stamp')
+
 
 createNewItem('fish_net', { stackSize: 15 })
-// createNewItem('firestarter', { 
-//     maxDamage: 8, 
-//     stackSize: 1,
-//     use: {
-//         animation: "bow",
-//         duration: 50,
-//         finishUsing(itemStack, level, player) {
-
-//             if (level.isClientSide()) return itemStack
-
-//             let reachDistance = player.blockInteractionRange()
-//             let hitResult = level.clip(
-//                 new $ClipContext(
-//                     player.getEyePosition(),
-//                     player.getEyePosition().add(player.getViewVector(1).scale(reachDistance)),
-//                     $ClipContext$Block.OUTLINE,
-//                     $ClipContext$Fluid.NONE,
-//                     player
-//                 )
-//             )
-
-//             if(hitResult.getType() == $HitResult$Type.BLOCK){
-//                 let blockPos = hitResult.getBlockPos()
-//                 let blockEntity = level.getBlockEntity(blockPos)
-
-//                 if (!blockEntity) return itemStack
-
-//                 itemStack.hurtAndBreak(1, level, player, item => {
-//                     player.onEquippedItemBroken(item, player.getEquipmentSlotForItem(itemStack))
-//                 })
-
-//                 let blockId = $BuiltInRegistries.BLOCK.getKey(blockEntity.getBlockState().getBlock())
-
-//                 if (blockId == "milf:clay_crucible"){
-//                     if (blockEntity.isFull()) blockEntity.setLit(true)
-//                 }
-//             }
-
-//             return itemStack
-//         }
-//     }
-// })
-
-// createNewItem('unfired_clay_mold_ingot', { stackSize: 1})
-// createNewItem('unfired_clay_mold_axe', { stackSize: 1})
-// createNewItem('unfired_clay_mold_hammer', { stackSize: 1 })
-// createNewItem('unfired_clay_mold_hoe', { stackSize: 1 })
-// createNewItem('unfired_clay_mold_pickaxe', { stackSize: 1 })
-// createNewItem('unfired_clay_mold_shovel', { stackSize: 1 })
-// createNewItem('unfired_clay_mold_sword', { stackSize: 1 })
-
-//createNewItem('unfired_clay_plate')
-//createNewItem('clay_plate')
-
-// createNewItem('wooden_axe_head', { stackSize: 1 })
-// createNewItem('wooden_hammer_head', { stackSize: 1 })
-// createNewItem('wooden_hoe_head', { stackSize: 1 })
-// createNewItem('wooden_pickaxe_head', { stackSize: 1 })
-// createNewItem('wooden_shovel_head', { stackSize: 1 })
-// createNewItem('wooden_sword_blade', { stackSize: 1 })
-
-// createNewItem('bronze_shovel_head_part', { lang: { "en_us": "Bronze Shovel Head Part", "ru_ru": "Часть лопаты из бронзы" } })
-// createNewItem('lead_shovel_head_part')
-
-// createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
-// createNewItem('lead_hoe_head_part')
 
 createNewItem('ferrosilicon_dust')
 
@@ -287,23 +220,6 @@ createNewItem('core_hull', { lang: { "en_us": "Core hull", "ru_ru": "Основ�
 
 createNewItem('cell_half', { lang: { "en_us": "Cell half", "ru_ru": "Часть ячейки" } })
 createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_ru": "Пресс для ячейки" } })
-
-// createNewItem('blueprint_pack', { stackSize: 1, lang: { "en_us": "Blueprint Pack", "ru_ru": "Набор чертежей" } })
-// createNewItem('mysterious_blueprint', { texturePath: 'milf:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
-// createNewItem('storage_blueprint', { texturePath: 'milf:item/blueprint_t2', stackSize: 1, lang: { "en_us": "Storage blueprint", "ru_ru": "Чертёж хранения" } })
-// createNewItem('automation_blueprint', { texturePath: 'milf:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })
-// createNewItem('quantum_blueprint', { texturePath: 'milf:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
-// createNewItem('divine_blueprint', { texturePath: 'milf:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
-
-// createNewItem('unfired_shovel_head_mold', { lang: { "en_us": "Unfired shovel Head Mold", "ru_ru": "Необожженная форма лопаты" } })
-// createNewItem('shovel_head_sand_mold', { lang: { "en_us": "Shovel Head sand mold", "ru_ru": "Форма лопаты из песка" } })
-// createNewItem('shovel_head_clay_mold', {maxDamage: 16, lang: { "en_us": "Shovel Head clay mold", "ru_ru": "Форма лопаты из глины" } })
-// createNewItem('shovel_head_pattern', { lang: { "en_us": "Shovel Head Pattern", "ru_ru": "Шаблон лопаты" } })
-
-// createNewItem('unfired_hoe_head_mold', { lang: { "en_us": "Unfired Hoe Head Mold", "ru_ru": "Необожженная форма мотыги" } })
-// createNewItem('hoe_head_sand_mold', { lang: { "en_us": "Hoe Head Sand Mold", "ru_ru": "Форма мотыги из песка" } })
-// createNewItem('hoe_head_clay_mold', { maxDamage: 16, lang: { "en_us": "Hoe Head Clay Mold", "ru_ru": "Форма мотыги из глины" } })
-// createNewItem('hoe_head_pattern', { lang: { "en_us": "Hoe Head Pattern", "ru_ru": "Шаблон мотыги" } })
 
 createNewItem('building_card', { lang: { "ru_ru": "Карта строительства" } })
 createNewItem('destruction_card', { lang: {  "ru_ru": "Карта разрушения" } })

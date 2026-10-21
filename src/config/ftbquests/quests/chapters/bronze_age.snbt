@@ -14,8 +14,8 @@
 		{
 			id: "5D7D8ADC200CB8D1"
 			linked_quest: "71CC5CD5F8018F02"
-			x: 1.0d
-			y: -11.5d
+			x: 4.5d
+			y: -11.0d
 		}
 		{
 			id: "6D4F7AC62CC14D99"
@@ -30,6 +30,13 @@
 			shape: "diamond"
 			x: 13.5d
 			y: 11.5d
+		}
+		{
+			id: "5766344370382298"
+			linked_quest: "6561D8BD00329746"
+			shape: "hexagon"
+			x: -3.0d
+			y: -10.5d
 		}
 	]
 	quests: [
@@ -76,12 +83,6 @@
 				{
 					id: "2C30858936ECEBA9"
 					item: { count: 1, id: "milf:bronze_machine_bit" }
-					type: "item"
-				}
-				{
-					id: "14D42635C6CEF543"
-					item: { count: 1, id: "minecraft:gunpowder" }
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -217,10 +218,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"52E47CD2A5102410"
-				"71CC5CD5F8018F02"
-			]
+			dependencies: ["52E47CD2A5102410"]
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "127F92D0F2CC923C"
@@ -231,7 +229,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0A085734E03F68AC"]
@@ -1260,10 +1258,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"52E47CD2A5102410"
-				"71CC5CD5F8018F02"
-			]
+			dependencies: ["52E47CD2A5102410"]
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "34EEB03ED7EEE16F"
@@ -1273,7 +1268,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -10.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["13134EE8E1631EBB"]
@@ -3201,6 +3196,52 @@
 			}]
 			x: 27.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["46DE953F398EBD70"]
+			entity_vis_size: 1.0f
+			id: "2AE46163AD359AAB"
+			shape: "heart"
+			tasks: [{
+				id: "34F0D67DFAB496BF"
+				item: { count: 1, id: "embers:inflictor_gem" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["180D0B17778FF1F2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "embers:ashen_goggles"
+			}
+			id: "46DE953F398EBD70"
+			shape: "heart"
+			tasks: [
+				{
+					id: "73BD62D8D2123D53"
+					item: { count: 1, id: "embers:ashen_goggles" }
+					type: "item"
+				}
+				{
+					id: "267AF61AC66180DF"
+					item: { count: 1, id: "embers:ashen_cloak" }
+					type: "item"
+				}
+				{
+					id: "721ECAE4249C1F15"
+					item: { count: 1, id: "embers:ashen_leggings" }
+					type: "item"
+				}
+				{
+					id: "2CA138072C6A06C5"
+					item: { count: 1, id: "embers:ashen_boots" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 12.5d
 		}
 	]
 }

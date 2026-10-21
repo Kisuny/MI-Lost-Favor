@@ -167,3 +167,8 @@ const MissingItemsNotificationType = {
     UPGRADE(itemName) { return Component.translatable("milf.notification.missing_items.to_upgrade", itemName)},
     USE(itemName) { return Component.translatable("milf.notification.missing_items.to_use", itemName) }
 }
+
+
+function entriesForEach(object, callback){
+    Object.entries(object).forEach(callback)
+}

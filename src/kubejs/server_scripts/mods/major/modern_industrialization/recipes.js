@@ -774,19 +774,19 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    yTechShaped(event, {
-        pattern: [
-            " I ",
-            " # ",
-            " I "
-        ],
-        key: {
-            I: { item: "minecraft:iron_ingot" },
-            "#": { tag: "c:hammers" },
-        },
-        outputItems: [[{ id: `modern_industrialization:iron_double_ingot` }, 1]],
-        compatOff: true
-    })
+    // yTechShaped(event, {
+    //     pattern: [
+    //         " I ",
+    //         " # ",
+    //         " I "
+    //     ],
+    //     key: {
+    //         I: { item: "minecraft:iron_ingot" },
+    //         "#": { tag: "c:hammers" },
+    //     },
+    //     outputItems: [[{ id: `modern_industrialization:iron_double_ingot` }, 1]],
+    //     compatOff: true
+    // })
 
     //#endregion
 
@@ -993,6 +993,9 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/coke/craft/gem_from_block",
         "modern_industrialization:materials/steel/craft/block_from_ingot",
         "modern_industrialization:materials/steel/packer/block",
+        "modern_industrialization:materials/brick/smelting/dust_to_ingot_smelting",
+        "modern_industrialization:materials/brick/smelting/dust_to_ingot_blasting",
+        "modern_industrialization:vanilla_recipes/steam_bucket",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
         "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",

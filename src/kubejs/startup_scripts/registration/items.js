@@ -87,6 +87,8 @@ createNewItem('basic_machine_bit', {  stackSize: 32, lang: { "en_us": "Basic mac
 createNewItem('small_copper_fluid_container', { texturePath: 'milf:item/copper_fluid_container', lang: { "en_us": "Small copper fluid container", "ru_ru": "Небольшой медный контейнер для жидкости" } })
 createNewItem('small_steel_fluid_container', { texturePath: 'milf:item/steel_fluid_container', lang: { "en_us": "Small steel fluid container", "ru_ru": "Небольшой стальной контейнер для жидкости" } })
 
+createNewItem('bronze_mechanical_component')
+
 createNewItem('basic_motor')
 createNewItem('basic_pump')
 

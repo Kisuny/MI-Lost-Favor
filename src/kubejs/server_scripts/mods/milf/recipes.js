@@ -63,7 +63,10 @@ function milfChiselHitRecipe(event, args) {
     let recipe = {
         type: "milf:chisel_hit",
         input: Object.assign({}, args.inputItems[0][0], { count: 1 }),
-        output: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] }),
+    }
+    if(args.outputItems[1]){
+        recipe.output_block= Object.assign({}, args.outputItems[1][0], { count: 1 })
     }
     if (!args.compatOff) {
 
@@ -136,6 +139,8 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:brick" }]],
     })
 
+    //#region stone basin
+
 
     milfStoneBasinRecipe(event, {
         inputItems: [
@@ -150,9 +155,79 @@ ServerEvents.recipes(event => {
         outputItems: [
             [{ id: "milf:fire_clay_ball" }, 2],
         ],
-        requires_bellows: true,
         stirs: 4
     })
+
+    milfStoneBasinRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ash" }],
+            [{ item: "modern_industrialization:salt_dust" }],
+            [{ item: "modern_industrialization:quartz_dust" }],
+            [{ item: "minecraft:charcoal" }]
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 500]
+        ],
+        outputItems: [
+            [{ id: "architects_palette:cerebral_plate" }, 8],
+        ],
+        stirs: 4,
+        removeRecipe: true
+    })
+
+    milfStoneBasinRecipe(event, {
+        inputItems: [
+            [{ tag: "minecraft:planks" }],
+            [{ tag: "minecraft:planks" }],
+            [{ tag: "minecraft:planks" }],
+            [{ tag: "minecraft:planks" }],
+        ],
+        inputFluids: [
+            [{ fluid: "immersiveengineering:creosote" }, 500]
+        ],
+        outputItems: [
+            [{ id: "immersiveengineering:treated_wood_horizontal" }, 4],
+        ],
+        stirs: 6
+    })
+
+    milfStoneBasinRecipe(event, {
+        inputItems: [
+            [{ item: "craftingstation:crafting_station" }],
+            [{ item: "immersiveengineering:wooden_barrel" }],
+            [{ item: "modern_industrialization:iron_double_ingot" }],
+            [{ item: "modern_industrialization:iron_double_ingot" }],
+        ],
+        inputFluids: [
+            [{ fluid: "immersiveengineering:creosote" }, 500]
+        ],
+        outputItems: [
+            [{ id: "immersiveengineering:craftingtable" }, 1],
+        ],
+        stirs: 12,
+        removeRecipe:true
+    })
+
+    milfStoneBasinRecipe(event, {
+        inputItems: [
+            [{ item: "milf:bronze_machine_bit" }],
+            [{ item: "milf:bronze_machine_bit" }],
+            [{ item: "milf:bronze_machine_bit" }],
+            [{ item: "milf:blank_blueprint" }],
+        ],
+        inputFluids: [
+            [{ fluid: "modern_industrialization:steam" }, 500]
+        ],
+        outputItems: [
+            [MILF_BLUEPRINTS.getAsItem.miSteamComponents, 1],
+        ],
+        stirs: 12,
+        removeRecipe: true
+    })
+
+    //endregion
+
+    //#region bloomery
 
     milfBloomeryRecipe(event, {
         inputItems: [
@@ -184,6 +259,35 @@ ServerEvents.recipes(event => {
         time: 150
     })
 
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:glass_pane" }, 4],
+            [{ item: "modern_industrialization:bronze_dust" }, 2],
+        ],
+
+        outputItems: [
+            [{ id: "milf:bronze_glass" }, 1],
+        ],
+        requires_bellows: true,
+        time: 150
+    })
+
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:glass_pane" }, 4],
+            [{ item: "modern_industrialization:steel_dust" }, 2],
+        ],
+
+        outputItems: [
+            [{ id: "milf:steel_infused_glass" }, 1],
+        ],
+        requires_bellows: true,
+        time: 150
+    })
+
+    //#endregion
+
+    //#region ytech shaped
 
     yTechShaped(event, {
         pattern: [
@@ -215,32 +319,241 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    milfBloomeryRecipe(event, {
-        inputItems: [
-            [{ item: "minecraft:glass_pane" }, 4],
-            [{ item: "modern_industrialization:bronze_dust" }, 2],
+    yTechShaped(event, {
+        pattern: [
+            "bb ",
+            "bph",
+            "a  ",
         ],
-
-        outputItems: [
-            [{ id: "milf:bronze_glass" }, 1],
-        ],
-        requires_bellows: true,
-        time: 150
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_axe_head" }, 1]],
+        compatOff: true
     })
 
-    milfBloomeryRecipe(event, {
-        inputItems: [
-            [{ item: "minecraft:glass_pane" }, 4],
-            [{ item: "modern_industrialization:steel_dust" }, 2],
+    yTechShaped(event, {
+        pattern: [
+            "bpb",
+            "ppp",
+            "a h",
         ],
-
-        outputItems: [
-            [{ id: "milf:steel_infused_glass" }, 1],
-        ],
-        requires_bellows: true,
-        time: 150
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_hammer_head" }, 1]],
+        compatOff: true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            "bbp",
+            "a h",
+            "   ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_hoe_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "bpb",
+            "a h",
+            "   ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_pickaxe_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " p ",
+            "bpb",
+            "a h",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_shovel_head" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " b ",
+            "abh",
+            " p ",
+        ],
+        key: {
+            "b": { "item": "ytech:wooden_bolt" },
+            "p": { "item": "ytech:wooden_plate" },
+            "h": { "tag": "c:hammers" },
+            "a": { "tag": "minecraft:axes" },
+        },
+        outputItems: [[{ id: "milf:wooden_sword_blade" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " SS",
+            "SRS",
+            " SF"
+        ],
+        key: {
+            R: { item: "milf:pet_rock" },
+            S: { tag: "ytech:leather_strips" },
+            F: { item: "ytech:sharp_flint" }
+        },
+        outputItems: [[{ id: "milf:pet_rock_on_a_leash" }, 1]],
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'PEE',
+            'PDE',
+            'HPP'
+        ],
+        key: {
+            E: { item: "paganbless:essence_of_the_forest" },
+            P: { item: "modern_industrialization:tin_ingot" },
+            D: { tag: "milf:chisels" },
+            H: { tag: "c:hammers" }
+        },
+        outputItems: [[{ id: "milf:orb_of_the_forest" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' EP',
+            'EPE',
+            'PE '
+        ],
+        key: {
+            E: { item: "ytech:leather_strips" },
+            P: { item: "modern_industrialization:tin_rod" },
+        },
+        outputItems: [[{ id: "gag:escape_rope" }, 1]],
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '   ',
+            'LLL',
+            'EPE'
+        ],
+        key: {
+            "L": { "item": "minecraft:leather" },
+            E: { item: "ytech:leather_strips" },
+            P: { item: "modern_industrialization:tin_rod" },
+        },
+        outputItems: [[{ id: "minecraft:saddle" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'P  ',
+            'E T',
+            'TET'
+        ],
+        key: {
+            T: { "item": "ytech:grass_twine" },
+            E: { item: "ytech:leather_strips" },
+            P: { item: "modern_industrialization:tin_bolt" },
+        },
+        outputItems: [[{ id: "comforts:rope_and_nail" }, 2]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            '  S',
+            'BS ',
+            'PB '
+        ],
+        key: {
+            S: { "item": "minecraft:stick" },
+            P: { item: "modern_industrialization:tin_plate" },
+            B: { item: "modern_industrialization:bronze_bolt" },
+        },
+        outputItems: [[{ id: "mechtrowel:mech_trowel" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "NNN",
+            "NnN",
+            "N N",
+        ],
+        key: {
+            "N": { "item": "milf:fish_net" },
+            "n": { "tag": "ytech:bone_needles" },
+
+        },
+        outputItems: [[{ id: "milf:fishnets" }, 1]]
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "Q#Q",
+            "CMC",
+            " Q ",
+        ],
+        key: {
+            "C": { "item": "spectrum:citrine_shard" },
+            "#": { "tag": "c:files" },
+            "Q": { "tag": "c:gems/quartz" },
+            "M": { "item": "enchanted:reek_of_misfortune" },
+        },
+        outputItems: [[{ id: "milf:amber_visage" }, 1]]
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "N#s",
+            "BMB",
+            "SES"
+        ],
+        key: {
+            "#": { tag: "c:mortar_and_pestles" },
+            N: { item: "milf:nutmeg" },
+            E: { tag: "c:eggs" },
+            B: { item: "minecraft:cocoa_beans" },
+            S: { item: "minecraft:sugar" },
+            M: { item: "minecraft:milk_bucket" },
+            s: { item: "minecraft:stick" },
+        },
+        outputItems: [[{ id: "milf:eggnog" }, 1]],
+        compatOff: true
+    })
+
+    //endregion
+
+    //region clay crucible
 
     Object.entries({
 
@@ -281,6 +594,10 @@ ServerEvents.recipes(event => {
         requires_bellows:true,
         time: 200
     })
+
+    //endregion
+
+    //region casting
 
     Object.entries({
         "milf:clay_mold_axe": {
@@ -386,6 +703,10 @@ ServerEvents.recipes(event => {
 
     })
 
+    //endregion
+
+    //region anvil
+
     entriesForEach({
         "modern_industrialization:lead_ingot":"modern_industrialization:lead_plate",
         "modern_industrialization:tin_ingot": "modern_industrialization:tin_plate",
@@ -414,7 +735,9 @@ ServerEvents.recipes(event => {
         tier: "bronze"
     })
 
+    //#endregion
 
+    //region kiln
 
     milfKilnSmeltingRecipe(event, {
         inputItems: [
@@ -444,101 +767,9 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    yTechShaped(event, {
-        pattern: [
-            "bb ",
-            "bph",
-            "a  ",
-        ],
-        key: {
-            "b": { "item": "ytech:wooden_bolt" },
-            "p": { "item": "ytech:wooden_plate" },
-            "h": { "tag": "c:hammers" },
-            "a": { "tag": "minecraft:axes" },
-        },
-        outputItems: [[{ id: "milf:wooden_axe_head" }, 1]],
-        compatOff: true
-    })
+    //endregion
 
-    yTechShaped(event, {
-        pattern: [
-            "bpb",
-            "ppp",
-            "a h",
-        ],
-        key: {
-            "b": { "item": "ytech:wooden_bolt" },
-            "p": { "item": "ytech:wooden_plate" },
-            "h": { "tag": "c:hammers" },
-            "a": { "tag": "minecraft:axes" },
-        },
-        outputItems: [[{ id: "milf:wooden_hammer_head" }, 1]],
-        compatOff: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "bbp",
-            "a h",
-            "   ",
-        ],
-        key: {
-            "b": { "item": "ytech:wooden_bolt" },
-            "p": { "item": "ytech:wooden_plate" },
-            "h": { "tag": "c:hammers" },
-            "a": { "tag": "minecraft:axes" },
-        },
-        outputItems: [[{ id: "milf:wooden_hoe_head" }, 1]],
-        compatOff: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "bpb",
-            "a h",
-            "   ",
-        ],
-        key: {
-            "b": { "item": "ytech:wooden_bolt" },
-            "p": { "item": "ytech:wooden_plate" },
-            "h": { "tag": "c:hammers" },
-            "a": { "tag": "minecraft:axes" },
-        },
-        outputItems: [[{ id: "milf:wooden_pickaxe_head" }, 1]],
-        compatOff: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            " p ",
-            "bpb",
-            "a h",
-        ],
-        key: {
-            "b": { "item": "ytech:wooden_bolt" },
-            "p": { "item": "ytech:wooden_plate" },
-            "h": { "tag": "c:hammers" },
-            "a": { "tag": "minecraft:axes" },
-        },
-        outputItems: [[{ id: "milf:wooden_shovel_head" }, 1]],
-        compatOff: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            " b ",
-            "abh",
-            " p ",
-        ],
-        key: {
-            "b": { "item": "ytech:wooden_bolt" },
-            "p": { "item": "ytech:wooden_plate" },
-            "h": { "tag": "c:hammers" },
-            "a": { "tag": "minecraft:axes" },
-        },
-        outputItems: [[{ id: "milf:wooden_sword_blade" }, 1]],
-        compatOff: true
-    })
+    //region shaped
 
     Object.entries({
         "milf:wooden_axe_head": "minecraft:wooden_axe",
@@ -566,6 +797,22 @@ ServerEvents.recipes(event => {
             outputItems: [[{ id: toolId }, 1]],
             compatOff: true
         })
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SSB",
+            "LNL",
+            " L ",
+        ],
+        key: {
+            "L": { "item": "minecraft:leather" },
+            "S": { "item": "ytech:leather_strips" },
+            "B": { "item": "ytech:wooden_bolt" },
+            "N": { "tag": "ytech:bone_needles" }
+
+        },
+        outputItems: [[{ id: "milf:waterskin" }, 1]]
     })
 
 
@@ -608,30 +855,6 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:pebble" }, 1]]
     })
-
-    milfChiselHitRecipe(event, {
-        inputItems: [
-            [{ item: "rocks:rock" }],
-        ],
-        outputItems: [
-            [{ id: "milf:pet_rock" }],
-        ]
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            " SS",
-            "SRS",
-            " SF"
-        ],
-        key: {
-            R: { item: "milf:pet_rock" },
-            S: { tag: "ytech:leather_strips" },
-            F: { item: "ytech:sharp_flint" }
-        },
-        outputItems: [[{ id: "milf:pet_rock_on_a_leash" }, 1]],
-    })
-
 
     milfShaped(event, {
         pattern: [
@@ -677,106 +900,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "milf:firestarter" }, 1]]
     })
 
-    milfShapeless(event, {
-        inputItems: [
-            [{ "item": "ytech:sharp_flint" }, 1],
-            [{ "item": "ytech:grass_twine" }, 1],
-        ],
-        outputItems: [[{ "id": "milf:flint_chisel" }]],
-        removeRecipe: true
-    })
-
-    milfShaped(event, {
-        pattern: [
-            "SSB",
-            "LNL",
-            " L ",
-        ],
-        key: {
-            "L": { "item": "minecraft:leather" },
-            "S": { "item": "ytech:leather_strips" },
-            "B": { "item": "ytech:wooden_bolt" },
-            "N": { "tag": "ytech:bone_needles" }
-
-        },
-        outputItems: [[{ id: "milf:waterskin" }, 1]]
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            'PEE',
-            'PDE',
-            'HPP'
-        ],
-        key: {
-            E: { item: "paganbless:essence_of_the_forest" },
-            P: { item: "modern_industrialization:tin_ingot" },
-            D: { tag: "milf:chisels" },
-            H: { tag: "c:hammers" }
-        },
-        outputItems: [[{ id: "milf:orb_of_the_forest" }, 1]],
-        compatOff: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            ' EP',
-            'EPE',
-            'PE '
-        ],
-        key: {
-            E: { item: "ytech:leather_strips" },
-            P: { item: "modern_industrialization:tin_rod" },
-        },
-        outputItems: [[{ id: "gag:escape_rope" }, 1]],
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            '   ',
-            'LLL',
-            'EPE'
-        ],
-        key: {
-            "L": { "item": "minecraft:leather" },
-            E: { item: "ytech:leather_strips" },
-            P: { item: "modern_industrialization:tin_rod" },
-        },
-        outputItems: [[{ id: "minecraft:saddle" }, 1]],
-        removeRecipe: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            'P  ',
-            'E T',
-            'TET'
-        ],
-        key: {
-            T: { "item": "ytech:grass_twine" },
-            E: { item: "ytech:leather_strips" },
-            P: { item: "modern_industrialization:tin_bolt" },
-        },
-        outputItems: [[{ id: "comforts:rope_and_nail" }, 2]],
-        removeRecipe: true
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            '  S',
-            'BS ',
-            'PB '
-        ],
-        key: {
-            S: { "item": "minecraft:stick" },
-            P: { item: "modern_industrialization:tin_plate" },
-            B: { item: "modern_industrialization:bronze_bolt" },
-        },
-        outputItems: [[{ id: "mechtrowel:mech_trowel" }, 1]],
-        removeRecipe: true
-    })
-
-
     milfShaped(event, {
         pattern: [
             "RLR",
@@ -790,21 +913,6 @@ ServerEvents.recipes(event => {
 
         },
         outputItems: [[{ id: "milf:pot_bellows" }, 1]]
-    })
-
-
-    yTechShaped(event, {
-        pattern: [
-            "NNN",
-            "NnN",
-            "N N",
-        ],
-        key: {
-            "N": { "item": "milf:fish_net" },
-            "n": { "tag": "ytech:bone_needles" },
-
-        },
-        outputItems: [[{ id: "milf:fishnets" }, 1]]
     })
 
     milfShaped(event, {
@@ -836,7 +944,7 @@ ServerEvents.recipes(event => {
             "R": { "item": "modern_industrialization:invar_curved_plate" },
             "L": { "item": "modern_industrialization:invar_large_plate" },
             "P": { "item": "modern_industrialization:bronze_gear" },
-            
+
         },
         outputItems: [[{ id: "milf:clunky_drill" }, 1]]
     })
@@ -916,39 +1024,78 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "milf:flint_pickaxe" }, 1]]
     })
 
-    yTechShaped(event, {
-        pattern: [
-            "Q#Q",
-            "CMC",
-            " Q ",
+    //endregion
+
+    //region chisel
+
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "rocks:rock" }],
         ],
-        key: {
-            "C": { "item": "spectrum:citrine_shard" },
-            "#": { "tag": "c:files" },
-            "Q": { "tag": "c:gems/quartz" },
-            "M": { "item": "enchanted:reek_of_misfortune" },
-        },
-        outputItems: [[{ id: "milf:amber_visage" }, 1]]
+        outputItems: [
+            [{ id: "milf:pet_rock" }],
+        ]
     })
 
-    yTechShaped(event, {
-        pattern: [
-            "N#s",
-            "BMB",
-            "SES"
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:bronze_machine_casing" }]
         ],
-        key: {
-            "#": { tag: "c:mortar_and_pestles" },
-            N: { item: "milf:nutmeg" },
-            E: { tag: "c:eggs" },
-            B: { item: "minecraft:cocoa_beans" },
-            S: { item: "minecraft:sugar" },
-            M: { item: "minecraft:milk_bucket" },
-            s: { item: "minecraft:stick" },
-        },
-        outputItems: [[{ id: "milf:eggnog" }, 1]],
-        compatOff: true
+        outputItems: [
+            [{ id: "milf:bronze_machine_bit" }, 5]
+        ]
     })
+
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:steel_machine_casing" }]
+        ],
+        outputItems: [
+            [{ id: "milf:steel_machine_bit" }, 5]
+        ]
+    })
+
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:nether_bricks" }]
+        ],
+        outputItems: [
+            [{ id: "minecraft:nether_brick" }, 4]
+        ]
+    })
+
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:cobblestone" }]
+        ],
+        outputItems: [
+            [{ id: "ytech:pebble" }, 5]
+        ]
+    })
+
+    //endregion
+
+    //region shapeless
+
+    milfShapeless(event, {
+        inputItems: [
+            [{ "item": "ytech:sharp_flint" }, 1],
+            [{ "item": "ytech:grass_twine" }, 1],
+        ],
+        outputItems: [[{ "id": "milf:flint_chisel" }]],
+        removeRecipe: true
+    })
+
+    milfShapeless(event, {
+        inputItems: [
+            [{ "tag": "c:cobblestones" }, 1],
+        ],
+        outputItems: [[{ "id": "ytech:pebble" }, 2]]
+    })
+
+    //#endregion
+
+    //region misc
 
     customMixingCauldron(event, {
         fluid: "minecraft:water",
@@ -1066,5 +1213,7 @@ ServerEvents.recipes(event => {
         },
         result: "milf:copper_sulfate"
     })
+
+    //endregion
 
 })

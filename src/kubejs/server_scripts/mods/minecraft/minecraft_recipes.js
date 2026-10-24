@@ -413,6 +413,62 @@ ServerEvents.recipes(event => {
         removeRecipeType: "ytech:remaining_shaped_crafting"
     })
 
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "PCP",
+            "   "
+        ],
+        key: {
+            C: { item: "minecraft:chainmail_helmet" },
+            P: { item: "modern_industrialization:iron_plate" }
+        },
+        outputItems: [[{ id: "minecraft:iron_helmet" }, 1]],
+        removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "PCP",
+            "P P"
+        ],
+        key: {
+            C: { item: "minecraft:chainmail_chestplate" },
+            P: { item: "modern_industrialization:iron_plate" }
+        },
+        outputItems: [[{ id: "minecraft:iron_chestplate" }, 1]],
+        removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PPP",
+            "PCP",
+            "   "
+        ],
+        key: {
+            C: { item: "minecraft:chainmail_leggings" },
+            P: { item: "modern_industrialization:iron_plate" }
+        },
+        outputItems: [[{ id: "minecraft:iron_leggings" }, 1]],
+        removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "PCP",
+            "P P"
+        ],
+        key: {
+            C: { item: "minecraft:chainmail_boots" },
+            P: { item: "modern_industrialization:iron_plate" }
+        },
+        outputItems: [[{ id: "minecraft:iron_boots" }, 1]],
+        removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
 
     customMixingCauldron(event, {
         fluid: "minecraft:lava",

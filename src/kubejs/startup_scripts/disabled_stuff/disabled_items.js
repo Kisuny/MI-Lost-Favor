@@ -270,9 +270,26 @@ global.disabledItems = [
 
 
     //#region Embers
+
+    new DisabledItemBuilder("embers:lead_shovel"),
+    new DisabledItemBuilder("embers:dawnstone_shovel"),
+
+    new DisabledItemBuilder("embers:lead_hoe"),
+    new DisabledItemBuilder("embers:dawnstone_hoe"),
+
+    new DisabledItemBuilder("embers:lead_pickaxe"),
+    new DisabledItemBuilder("embers:dawnstone_pickaxe"),
+
+    new DisabledItemBuilder("embers:lead_axe"),
+    new DisabledItemBuilder("embers:dawnstone_axe"),
+
+    new DisabledItemBuilder("embers:lead_sword"),
+    new DisabledItemBuilder("embers:dawnstone_sword"),
+
     new DisabledItemBuilder("embers:copper_nugget"),
     new DisabledItemBuilder("embers:lead_nugget"),
     new DisabledItemBuilder("embers:silver_nugget"),
+    new DisabledItemBuilder("embers:dawnstone_nugget"),
 
     new DisabledItemBuilder("embers:raw_lead"),
     new DisabledItemBuilder("embers:raw_silver"),
@@ -285,9 +302,15 @@ global.disabledItems = [
     new DisabledItemBuilder("embers:lead_plate"),
     new DisabledItemBuilder("embers:silver_plate"),
     new DisabledItemBuilder("embers:mithril_plate"),
+    new DisabledItemBuilder("embers:dawnstone_plate"),
     new DisabledItemBuilder(/embers:mithril_(\w+)\b/),
 
     //#endregion
+
+    new DisabledItemBuilder("minecraft:wooden_spear"),
+    new DisabledItemBuilder("minecraft:stone_spear"),
+    new DisabledItemBuilder("minecraft:iron_spear"),
+    new DisabledItemBuilder("minecraft:wooden_spear"),
 
     new DisabledItemBuilder("monsterplus:curseflame_powder"),
 

@@ -53,32 +53,40 @@ ServerEvents.recipes(event => {
     ytechChoppingCraft(event,{
         inputItems:[[{item: "ytech:terracotta_bricks"}]],
         outputItems:[[{id:"ytech:terracotta_aqueduct"}]],
-        tool: {tag : "modern_industrialization:forge_hammer_tools"},
+        tool: neoCompound([
+            { item: "ytech:lead_hammer" },
+            { tag: "modern_industrialization:forge_hammer_tools" }
+        ]),
         removeRecipe:true
     })
 
     ytechChoppingCraft(event,{
         inputItems:[[{item: "minecraft:mud_bricks"}]],
         outputItems:[[{id:"ytech:mudbrick_aqueduct"}]],
-        tool: {tag : "modern_industrialization:forge_hammer_tools"},
+        tool: neoCompound([
+            { item: "ytech:lead_hammer" },
+            { tag: "modern_industrialization:forge_hammer_tools" }
+        ]),
         removeRecipe:true
     })
 
     ytechChoppingCraft(event,{
         inputItems:[[{item: "minecraft:stone_bricks"}]],
         outputItems:[[{id:"ytech:stone_aqueduct"}]],
-        tool: {tag : "modern_industrialization:forge_hammer_tools"},
+        tool: neoCompound([
+            { item: "ytech:lead_hammer" },
+            { tag: "modern_industrialization:forge_hammer_tools" }
+        ]),
         removeRecipe:true
     })
 
     ytechChoppingCraft(event, {
         inputItems: [[{ item: "minecraft:terracotta" }]],
         outputItems: [[{ id: "modern_industrialization:brick_dust" }, 2]],
-        tool: 
-            neoCompound([
-                { item: "ytech:lead_hammer" },
-                { item: "ytech:bronze_hammer" }
-            ]),
+        tool: neoCompound([
+            { item: "ytech:lead_hammer" },
+            { tag: "modern_industrialization:forge_hammer_tools" }
+        ]),
     })
 
 
@@ -91,7 +99,7 @@ ServerEvents.recipes(event => {
 
 
     ytechChoppingCraft(event, {
-        outputItems: [[{ "id": "minecraft:stick" }, 1]],
+        outputItems: [[{ "id": "minecraft:stick" }, 2]],
         inputItems: [[{ "item": "milf:twig" }],],
         tool: { tag: "milf:knives" }  
     })

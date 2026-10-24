@@ -285,246 +285,246 @@ ServerEvents.recipes(event => {
 
     let builders = [ ]
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_mi_furnace")
-            .top(plane => plane.fill("M").center("C").sides("p"))
-            .middle(plane => plane.fill("M").front("G").center("S").back("P"))
-            .bottom(plane => plane.fill("B").center("F"))
-            .setKey({
-                B: { item: "modern_industrialization:fire_clay_bricks" },
-                S: { item: "ytech:primitive_smelter" },
-                C: { item: "ytech:reinforced_brick_chimney" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                p: { item: "modern_industrialization:bronze_curved_plate" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_mi_furnace")
+    //         .top(plane => plane.fill("M").center("C").sides("p"))
+    //         .middle(plane => plane.fill("M").front("G").center("S").back("P"))
+    //         .bottom(plane => plane.fill("B").center("F"))
+    //         .setKey({
+    //             B: { item: "modern_industrialization:fire_clay_bricks" },
+    //             S: { item: "ytech:primitive_smelter" },
+    //             C: { item: "ytech:reinforced_brick_chimney" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             p: { item: "modern_industrialization:bronze_curved_plate" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:steam_blast_furnace")
-            .top(plane => plane.fill("B").center("C"))
-            .middle(plane => plane.fill("B").front(" ").center("S"))
-            .bottom(plane => plane.fill("B"))
-            .setKey({
-                B: { item: "modern_industrialization:fire_clay_bricks" },
-                S: { item: "ytech:primitive_smelter" },
-                C: { item: "ytech:reinforced_brick_chimney" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:steam_blast_furnace")
+    //         .top(plane => plane.fill("B").center("C"))
+    //         .middle(plane => plane.fill("B").front(" ").center("S"))
+    //         .bottom(plane => plane.fill("B"))
+    //         .setKey({
+    //             B: { item: "modern_industrialization:fire_clay_bricks" },
+    //             S: { item: "ytech:primitive_smelter" },
+    //             C: { item: "ytech:reinforced_brick_chimney" }
+    //         })
+    //         .setArgs({
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:coke_oven")
-            .top(plane => plane.fill("B").center("C"))
-            .middle(plane => plane.fill("B").front(" ").center("S"))
-            .bottom(plane => plane.fill("B"))
-            .setKey({
-                B: { item: "minecraft:bricks" },
-                S: { item: "ytech:primitive_smelter" },
-                C: { item: "ytech:reinforced_brick_chimney" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:coke_oven")
+    //         .top(plane => plane.fill("B").center("C"))
+    //         .middle(plane => plane.fill("B").front(" ").center("S"))
+    //         .bottom(plane => plane.fill("B"))
+    //         .setKey({
+    //             B: { item: "minecraft:bricks" },
+    //             S: { item: "ytech:primitive_smelter" },
+    //             C: { item: "ytech:reinforced_brick_chimney" }
+    //         })
+    //         .setArgs({
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_macerator")
-            .top(plane => plane.corners("g").sides("r"))
-            .middle(plane => plane.fill("M").front("G").center(" ").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                g: { tag: "c:gears/copper" },
-                r: { tag: "c:rods/copper" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_macerator")
+    //         .top(plane => plane.corners("g").sides("r"))
+    //         .middle(plane => plane.fill("M").front("G").center(" ").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             g: { tag: "c:gears/copper" },
+    //             r: { tag: "c:rods/copper" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_compressor")
-            .top(plane => plane.sides("r").center("d"))
-            .middle(plane => plane.fill("M").front("G").center("h").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:gears/copper" },
-                h: { item: "modern_industrialization:forge_hammer" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" },
-                d: { item: "modern_industrialization:iron_double_ingot" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_compressor")
+    //         .top(plane => plane.sides("r").center("d"))
+    //         .middle(plane => plane.fill("M").front("G").center("h").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:gears/copper" },
+    //             h: { item: "modern_industrialization:forge_hammer" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" },
+    //             d: { item: "modern_industrialization:iron_double_ingot" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_cutting_machine")
-            .top(plane => plane.sides("r"))
-            .middle(plane => plane.fill("M").front("G").center("h").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:gears/copper" },
-                h: { item: "modern_industrialization:copper_blade" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_cutting_machine")
+    //         .top(plane => plane.sides("r"))
+    //         .middle(plane => plane.fill("M").front("G").center("h").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:gears/copper" },
+    //             h: { item: "modern_industrialization:copper_blade" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:bronze_composter")
-            .top(plane => plane.sides("r"))
-            .middle(plane => plane.fill("M").front("G").center("h").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:rods/copper" },
-                h: { item: "minecraft:composter" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:bronze_composter")
+    //         .top(plane => plane.sides("r"))
+    //         .middle(plane => plane.fill("M").front("G").center("h").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:rods/copper" },
+    //             h: { item: "minecraft:composter" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_water_pump")
-            .top(plane => plane.corners("g").sides("r").center("P"))
-            .middle(plane => plane.fill("M").front("G").center("h").back("P"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:rods/copper" },
-                h: { item: "modern_industrialization:copper_rotor" },
-                g: { tag: "c:gears/copper" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_water_pump")
+    //         .top(plane => plane.corners("g").sides("r").center("P"))
+    //         .middle(plane => plane.fill("M").front("G").center("h").back("P"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:rods/copper" },
+    //             h: { item: "modern_industrialization:copper_rotor" },
+    //             g: { tag: "c:gears/copper" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_mixer")
-            .top(plane => plane.center("G").sides("r").corners("g"))
-            .middle(plane => plane.fill("M").sides("G").center("h"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:rods/copper" },
-                h: { item: "modern_industrialization:copper_rotor" },
-                g: { tag: "c:gears/copper" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_mixer")
+    //         .top(plane => plane.center("G").sides("r").corners("g"))
+    //         .middle(plane => plane.fill("M").sides("G").center("h"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:rods/copper" },
+    //             h: { item: "modern_industrialization:copper_rotor" },
+    //             g: { tag: "c:gears/copper" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:bronze_solar_boiler")
-            .top(plane => plane.center("G").sides("s").corners("M"))
-            .middle(plane => plane.fill("M").front("G").center("F").back("P"))
-            .bottom(plane => plane.fill("B").center("P"))
-            .setKey({
-                s: { tag: "c:plates/silver" },
-                B: { item: "modern_industrialization:fire_clay_bricks" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:bronze_solar_boiler")
+    //         .top(plane => plane.center("G").sides("s").corners("M"))
+    //         .middle(plane => plane.fill("M").front("G").center("F").back("P"))
+    //         .bottom(plane => plane.fill("B").center("P"))
+    //         .setKey({
+    //             s: { tag: "c:plates/silver" },
+    //             B: { item: "modern_industrialization:fire_clay_bricks" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:bronze_boiler")
-            .top(plane => plane.center("F").sides("r").corners("M"))
-            .middle(plane => plane.fill("M").front("G").center("h").back("I"))
-            .bottom(plane => plane.fill("B").center("P"))
-            .setKey({
-                r: { tag: "c:rods/copper" },
-                h: { item: "minecraft:furnace" },
-                B: { item: "modern_industrialization:fire_clay_bricks" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:bronze_boiler")
+    //         .top(plane => plane.center("F").sides("r").corners("M"))
+    //         .middle(plane => plane.fill("M").front("G").center("h").back("I"))
+    //         .bottom(plane => plane.fill("B").center("P"))
+    //         .setKey({
+    //             r: { tag: "c:rods/copper" },
+    //             h: { item: "minecraft:furnace" },
+    //             B: { item: "modern_industrialization:fire_clay_bricks" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:bronze_waste_collector")
-            .top(plane => plane.center("m").sides("r"))
-            .middle(plane => plane.fill("M").front("G").center("h").back("P"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:rods/copper" },
-                h: { item: "minecraft:composter" },
-                m: { item: "ytech:copper_mesh" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:bronze_waste_collector")
+    //         .top(plane => plane.center("m").sides("r"))
+    //         .middle(plane => plane.fill("M").front("G").center("h").back("P"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:rods/copper" },
+    //             h: { item: "minecraft:composter" },
+    //             m: { item: "ytech:copper_mesh" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:bronze_bending_machine")
-            .top(plane => plane.fill("g").sides("r"))
-            .middle(plane => plane.fill("M").front("G").center(" ").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                r: { tag: "c:rods/copper" },
-                g: { tag: "c:gears/copper" },
-                P: { item: "moderndynamics:fluid_pipe" },
-                G: { item: "milf:bronze_glass" },
-                F: { item: "milf:small_copper_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:bronze_bending_machine")
+    //         .top(plane => plane.fill("g").sides("r"))
+    //         .middle(plane => plane.fill("M").front("G").center(" ").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             r: { tag: "c:rods/copper" },
+    //             g: { tag: "c:gears/copper" },
+    //             P: { item: "moderndynamics:fluid_pipe" },
+    //             G: { item: "milf:bronze_glass" },
+    //             F: { item: "milf:small_copper_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
     builders.push(
         new WorkspaceRecipeBuilder("mi_tweaks:advanced_large_steam_furnace")
@@ -798,22 +798,22 @@ ServerEvents.recipes(event => {
 
     //#region misc
 
-    builders.push(
-        new WorkspaceRecipeBuilder("immersiveengineering:craftingtable")
-            .top(plane => plane.fill("W").center("T"))
-            .middle(plane => plane.center("B").corners("S").sides("b"))
-            .bottom(plane => plane.corners("S"))
-            .setKey({
-                S: { item: "immersiveengineering:stick_treated" },
-                T: { item: "craftingstation:crafting_station_slab" },
-                W: { tag: "immersiveengineering:treated_wood_slab" },
-                B: { item: "immersiveengineering:wooden_barrel" },
-                b: { item: "milf:steel_machine_bit" }
-            })
-            .setArgs({
-                tool: wrench
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("immersiveengineering:craftingtable")
+    //         .top(plane => plane.fill("W").center("T"))
+    //         .middle(plane => plane.center("B").corners("S").sides("b"))
+    //         .bottom(plane => plane.corners("S"))
+    //         .setKey({
+    //             S: { item: "immersiveengineering:stick_treated" },
+    //             T: { item: "craftingstation:crafting_station_slab" },
+    //             W: { tag: "immersiveengineering:treated_wood_slab" },
+    //             B: { item: "immersiveengineering:wooden_barrel" },
+    //             b: { item: "milf:steel_machine_bit" }
+    //         })
+    //         .setArgs({
+    //             tool: wrench
+    //         })
+    // )
 
     builders.push(
         new WorkspaceRecipeBuilder("mi_tweaks:multiblock_packer_3000_safety_regulations_edition")
@@ -899,12 +899,12 @@ ServerEvents.recipes(event => {
     builders.push(
         new WorkspaceRecipeBuilder("modern_industrialization:forge_hammer")
             .top(plane => plane.plus("I").center("B"))
-            .middle(plane => plane.center("P"))
-            .bottom(plane => plane.plus("I").center("B"))
+            .middle(plane => plane.center("B"))
+            .bottom(plane => plane.plus("I").center("B").corners("P"))
             .setKey({
                 B: { item: "modern_industrialization:iron_double_ingot" },
                 I: { item: "minecraft:iron_ingot" },
-                P: { item: "modern_industrialization:iron_double_ingot" }
+                P: { item: "embers:caminite_brick" }
             })
             .setArgs({
                 tool: { tag: "c:hammers" }

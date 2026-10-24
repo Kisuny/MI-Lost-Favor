@@ -80,6 +80,28 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:lead_hammer" }, 1]],
+        inputItems: [
+            [{ "item": "minecraft:stick" }, 1],
+            [{ "item": "milf:lead_hammer_head" }, 1],
+            [{ "tag": "c:hammers" }, 1],
+        ],
+        category: "equipment",
+        removeRecipe: true
+    })
+
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:bronze_hammer" }, 1]],
+        inputItems: [
+            [{ "item": "minecraft:stick" }, 1],
+            [{ "item": "milf:bronze_hammer_head" }, 1],
+            [{ "tag": "c:hammers" }, 1],
+        ],
+        category: "equipment",
+        removeRecipe: true
+    })
+
     yTechShaped(event, {
         pattern: [
             'W#W',
@@ -258,7 +280,7 @@ ServerEvents.recipes(event => {
         key: {
             "#": { "tag": "minecraft:axes" },
             T: { "item": "ytech:grass_twine" },
-            S: { "tag": "mild:sticks" }
+            S: { "tag": "milf:sticks" }
         },
         outputItems: [[{ id: "ytech:crafting_workspace" }, 1]],
         removeRecipe: true

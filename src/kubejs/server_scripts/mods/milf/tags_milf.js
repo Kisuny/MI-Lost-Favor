@@ -35,10 +35,8 @@ ServerEvents.tags('item', event => {
     event.add("c:hammers", ['milf:stone_hammer',])
 
     const hammers = [
-        'another_furniture:furniture_hammer', 
         'grimoireofgaia:minotaur_hammer',  
         'immersiveengineering:hammer', 
-        'framedblocks:framed_hammer',  
         'ytech:bronze_hammer', 
         'modern_industrialization:iron_hammer', 
         'ytech:lead_hammer', 
@@ -49,7 +47,14 @@ ServerEvents.tags('item', event => {
         event.add('milf:hammers', hammer)
     })
 
-    //event.add("milf:chisels", "#c:files")
+    event.add("c:crushed_ores/copper", "milf:crushed_copper")
+    event.add("c:crushed_ores/iron", "milf:crushed_iron")
+    event.add("c:crushed_ores/lead", "milf:crushed_lead")
+    event.add("c:crushed_ores/tin", "milf:crushed_tin")
+    event.add("c:crushed_ores/gold", "milf:crushed_gold")
+
+
+    event.add("milf:chisels", "#c:files")
 
 
     event.add("more_sounds:equipment", "#milf:hammers")

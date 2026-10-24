@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
             'wqw'
         ],
         key: {
-            q: 'embers:dawnstone_plate',
+            q: 'modern_industrialization:dawnstone_plate',
             w: 'paganbless:black_thorn_planks',
             e: 'paganbless:runic_charge',
         },

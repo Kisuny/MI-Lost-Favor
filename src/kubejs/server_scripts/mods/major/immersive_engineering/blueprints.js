@@ -3,6 +3,7 @@ const MILF_BLUEPRINTS = {
     craftingComponents: "components",
     molds: "molds",
 
+    miSteamComponents: "MI Steam Components",
     miBasicComponents: "MI Basic Components",
     miComponents: "MI Components",
     usefulTools: "Useful Tools",
@@ -27,6 +28,7 @@ const MILF_BLUEPRINTS = {
             tier4AE: "#c795ff",
             tier5AE: "#abffc0",
 
+            miSteamComponents: "#F3AC3A",
             miBasicComponents: "#F06E28",
             miComponents: "#28B1F0",
             usefulTools: "#ccac7c",

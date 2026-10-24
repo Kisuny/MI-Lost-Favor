@@ -133,7 +133,14 @@ let builders = [
         .withMaterialSet("shiny")
         .addExternalPart({ ingot: "thaumaturge:ingot_void" })
         .addParts(["plate"])
-        .withDefaultRecipes()
+        .withDefaultRecipes(),
+
+    new MIMaterialBuilder("dawnstone", "Dawnstone", 0x15203b)
+        .withMaterialSet("shiny")
+        .addExternalPart({ ingot: "embers:dawnstone_ingot" })
+        .addParts(["nugget", "rod", "plate", "ring", "curved_plate", "gear", "dust", "tiny_dust"])
+        .addCustomParts(["node", "impetus", "fractured_impetus"])
+        .withDefaultRecipes(),
 ]
 
 MIMaterialEvents.addMaterials(event => {

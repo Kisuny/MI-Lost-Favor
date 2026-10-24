@@ -69,5 +69,6 @@ ServerEvents.recipes(event => {
             "id": 'travelertoolbelt:copper_belt'
         }
     })
+    event.remove({ output: "travelertoolbelt:copper_belt" })
 
 })

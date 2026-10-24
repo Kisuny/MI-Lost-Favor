@@ -126,13 +126,20 @@ ServerEvents.recipes(event => {
 
     //#region press
     function pressCompatRecipe(ingredients, result, mold, miEnergy){
-        iePressRecipe(event, {
-            inputItems: ingredients.tag ? [[{tag:ingredients.tag}, ingredients.amount]] : [[{item:ingredients.item}, ingredients.amount]],
-            outputItems: [[{id:result.item}, result.amount]],
-            mold: {item : mold},
+
+        let args = {
+            inputItems: ingredients.tag ? [[{ tag: ingredients.tag }, ingredients.amount]] : [[{ item: ingredients.item }, ingredients.amount]],
+            outputItems: [[{ id: result.item }, result.amount]],
+            mold: { item: mold },
             energy: miEnergy,
             compatOff: true,
-        })
+        }
+
+        if (mold == "immersiveengineering:mold_gear"){
+            args.removeRecipeType = "minecraft:crafting_shaped"
+        }        
+
+        iePressRecipe(event, args)
         event.remove({ type: 'immersiveengineering:metal_press', output:result.item})
     }
 

@@ -1,5 +1,71 @@
 ServerEvents.recipes(event => {
 
+    //#region steamComponents
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "milf:bronze_machine_bit" }, 1],
+            [{ "item": "milf:bronze_glass" }, 2],
+            [{ "item": "milf:small_copper_fluid_container" }, 1],
+            [{ "item": "embers:item_extractor" }, 1],
+            [{ "item": "embers:fluid_extractor" }, 1]
+
+
+        ],
+        outputItems: [[{ "item": "milf:bronze_mechanical_component" }, 1]],
+        category: MILF_BLUEPRINTS.miSteamComponents,
+        removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:copper_bolt" }, 2],
+            [{ "item": "modern_industrialization:copper_plate" }, 4]
+
+
+        ],
+        outputItems: [[{ "item": "milf:small_copper_fluid_container" }, 1]],
+        category: MILF_BLUEPRINTS.miSteamComponents,
+        removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:steel_bolt" }, 2],
+            [{ "item": "modern_industrialization:steel_plate" }, 4]
+
+
+        ],
+        outputItems: [[{ "item": "milf:small_steel_fluid_container" }, 1]],
+        category: MILF_BLUEPRINTS.miSteamComponents,
+        removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:bronze_rod" }, 1],
+            [{ "item": "modern_industrialization:bronze_bolt" }, 4],
+            [{ "item": "modern_industrialization:bronze_plate" }, 2],
+
+        ],
+        outputItems: [[{ "item": "modern_industrialization:wrench" }, 1]],
+        category: MILF_BLUEPRINTS.miSteamComponents,
+        removeRecipe: true,
+    })
+
+    ieBlueprintRecipe(event, {
+        inputItems: [
+            [{ "item": "modern_industrialization:fire_clay_brick" }, 4],
+            [{ "item": "architects_palette:cerebral_plate" }, 8]
+
+        ],
+        outputItems: [[{ "item": "modern_industrialization:fire_clay_bricks" }, 2]],
+        category: MILF_BLUEPRINTS.miSteamComponents,
+        removeRecipe: true,
+    })
+
+    //endregion
+
     //#region craftingComponents
 
     ieBlueprintRecipe(event, {

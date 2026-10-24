@@ -385,7 +385,7 @@ ServerEvents.recipes(event => {
         key: {
             T: { item: "immersiveengineering:craftingtable" },
             D: { item: "modern_industrialization:iron_double_ingot" },
-            G: { item: "modern_industrialization:steel_gear" },
+            G: { item: "modern_industrialization:iron_gear" },
             S: { tag: "immersiveengineering:treated_wood_slab" },
             B: { item: "milf:blank_blueprint" },
             F: { item: "immersiveengineering:treated_fence" }
@@ -1211,5 +1211,6 @@ milfDisableRecipesById([
     "immersiveengineering:mixer/redstone_acid",
     "immersiveengineering:mixer/concrete",
 
-    "immersiveengineering:refinery/high_power_biodiesel"
+    "immersiveengineering:refinery/high_power_biodiesel",
+    "immersiveengineering:crafting/treated_wood_horizontal"
 ])

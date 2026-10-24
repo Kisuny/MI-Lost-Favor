@@ -90,4 +90,15 @@ ServerEvents.recipes(event => {
         ],
         removeThisRecipeType: true
     })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:mixer",
+        inputFluids: [
+            [{ fluid: "embers:dwarven_oil" }, 100],
+            [{ fluid: "minecraft:water" }, 400]
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:lubricant" }, 500]
+        ]
+    })
 })

@@ -15,6 +15,41 @@ function embersMeltingRecipe(event, args) {
     event.custom(recipe)
 }
 
+
+function embersMixingRecipe(event, args) {
+
+    let inputs = []
+
+    args.inputFluids.forEach(entry => inputs.push(Object.assign({}, entry[0], { amount: entry[1] || 1 })))
+
+    let recipe = {
+        type: "embers:mixing",
+        inputs: inputs,
+        output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 7 + 1 }),
+    }
+
+    if (!args.compatOff) {
+
+    }
+   
+    event.custom(recipe)
+}
+
+function embersBoilingRecipe(event, args) {
+
+    let recipe = {
+        type: "embers:boiling",
+        input: Object.assign({}, args.inputFluids[0][0], { amount: args.inputFluids[0][1] ||  1 }),
+        output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] ||  1 }),
+    }
+
+    if (!args.compatOff) {
+
+    }
+
+    event.custom(recipe)
+}
+
 function embersStampingRecipe(event, args) {
     let recipe = {
         type: "embers:stamping",
@@ -40,6 +75,7 @@ ServerEvents.recipes(event => {
 
     event.remove({type:"embers:melting"})
     event.remove({ type: "embers:stamping" })
+    event.remove({ type: "embers:boiling" })
 
     entriesForEach({
         "modern_industrialization:copper_dust": {
@@ -157,7 +193,7 @@ ServerEvents.recipes(event => {
         "embers:molten_copper": {
             ingot: "minecraft:copper_ingot",
             rod: "modern_industrialization:copper_rod",
-            nugget: "minecraft:copper_nugget",
+            nugget: "modern_industrialization:copper_nugget",
             plate: "modern_industrialization:copper_plate",
             bolt: "modern_industrialization:copper_bolt",
             gear: "modern_industrialization:copper_gear",
@@ -165,8 +201,10 @@ ServerEvents.recipes(event => {
         },
         "embers:molten_dawnstone": {
             ingot: "embers:dawnstone_ingot",
-            nugget: "embers:dawnstone_nugget",
-            plate: "embers:dawnstone_plate",
+            nugget: "modern_industrialization:dawnstone_nugget",
+            plate: "modern_industrialization:dawnstone_plate",
+            gear: "modern_industrialization:dawnstone_gear",
+            rod: "modern_industrialization:dawnstone_rod",
             aspectus: "embers:dawnstone_aspectus"
         },
 
@@ -278,6 +316,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [
             [{ id: "embers:ember_shard" }],
+            [{ id: "milf:everburning_roots" }],
         ],
         removeRecipe: true
     })
@@ -364,8 +403,7 @@ ServerEvents.recipes(event => {
         "embers:raw_flat_stamp": "embers:flat_stamp",
         "embers:raw_ingot_stamp": "embers:ingot_stamp",
         "embers:raw_nugget_stamp": "embers:nugget_stamp",
-        "embers:raw_plate_stamp": "embers:plate_stamp",
-        "embers:raw_gear_stamp": "embers:gear_stamp"
+        "embers:raw_plate_stamp": "embers:plate_stamp"
     }).forEach(([rawStamp, stamp]) => {
         milfBloomeryRecipe(event, {
             inputItems: [
@@ -381,6 +419,65 @@ ServerEvents.recipes(event => {
             time: 200,
             removeRecipe: true
         })
+    })
+
+    milfBloomeryRecipe(event, {
+        inputItems: [
+            [{ item: "architects_palette:cerebral_plate" }, 4],
+            [{ item: "embers:raw_gear_stamp" }, 1],
+        ],
+
+        outputItems: [
+            [{ id: "embers:gear_stamp" }, 1],
+        ],
+
+        coal_count: 4,
+        time: 500,
+        requires_bellows: true,
+        removeRecipe: true
+    })
+
+    milfClayCrucibleKilnRecipe(event, {
+        inputItems: [
+            [{ tag: "c:foods/raw_fish" }, 3],
+            [{ item: "architects_palette:cerebral_plate" }, 1]
+        ],
+        outputFluids: [
+            [{ id: "embers:dwarven_oil" }, 200]
+        ],
+        requires_bellows: true,
+        time: 400
+    })
+
+    milfClayCrucibleKilnRecipe(event, {
+        inputItems: [
+            [{ tag: "minecraft:logs_that_burn" }, 4],
+            [{ item: "minecraft:soul_sand" }, 2]
+        ],
+        outputFluids: [
+            [{ id: "embers:soul_crude" }, 50]
+        ],
+        requires_bellows: true,
+        time: 400
+    })
+
+    embersMixingRecipe(event, {
+        inputFluids: [
+            [{ fluid: "embers:soul_crude" }, 1],
+            [{ fluid: "embers:dwarven_oil" }, 4]
+        ],
+        outputFluids: [
+            [{ fluid: "immersiveengineering:creosote" }, 5]
+        ]
+    })
+
+    embersBoilingRecipe(event, {
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 1]
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:steam" }, 1]
+        ]
     })
 
     milfShaped(event, {
@@ -666,6 +763,537 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "embers:stamp_base" }, 1]],
         removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "P P",
+            "PHP",
+            " p ",
+        ],
+        key: {
+            "H": { "item": "xkdeco:factory_vent_fan" },
+            "p": { "item": "embers:item_pipe" },
+            "P": { "item": "modern_industrialization:lead_plate" }
+
+        },
+        outputItems: [[{ id: "embers:item_vacuum" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "DHD",
+            "BWB",
+        ],
+        key: {
+            "H": { "item": "embers:ember_receiver" },
+            "B": { "item": "embers:archaic_brick" },
+            "D": { "item": "modern_industrialization:carbon_dust" },
+            "W": { "item": "immersiveengineering:wirecoil_electrum" }
+
+        },
+        outputItems: [[{ id: "embers:ember_energy_converter" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SSS",
+            "F F",
+            "DRD",
+        ],
+        key: {
+            "F": { "item": "embers:ashen_fabric" },
+            "S": { "item": "ytech:leather_strips" },
+            "D": { "item": "modern_industrialization:dawnstone_plate" },
+            "R": { "item": "modern_industrialization:steel_ring" }
+
+        },
+        outputItems: [[{ id: "embers:ashen_goggles" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RDR",
+            "FSF",
+            "FDF",
+        ],
+        key: {
+            "F": { "item": "embers:ashen_fabric" },
+            "S": { "item": "immersiveengineering:armor_steel_chestplate" },
+            "D": { "item": "embers:dawnstone_ingot" },
+            "R": { "item": "modern_industrialization:steel_ring" }
+
+        },
+        outputItems: [[{ id: "embers:ashen_cloak" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "FFF",
+            "DSD",
+            "D D",
+        ],
+        key: {
+            "F": { "item": "embers:ashen_fabric" },
+            "S": { "item": "immersiveengineering:armor_steel_leggings" },
+            "D": { "item": "modern_industrialization:dawnstone_plate" },
+
+        },
+        outputItems: [[{ id: "embers:ashen_leggings" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "R R",
+            "FSF",
+            "F F",
+        ],
+        key: {
+            "F": { "item": "embers:ashen_fabric" },
+            "S": { "item": "immersiveengineering:armor_steel_boots" },
+            "R": { "item": "modern_industrialization:steel_ring" }
+
+        },
+        outputItems: [[{ id: "embers:ashen_boots" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "pdp",
+            "   ",
+        ],
+        key: {
+            "P": { "item": "embers:item_pipe" },
+            "p": { "item": "modern_industrialization:lead_plate" },
+            "d": { "item": "modern_industrialization:lapis_dust" }
+
+        },
+        outputItems: [[{ id: "embers:item_dropper" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "IPI",
+            "IPI",
+            "RdR",
+        ],
+        key: {
+            "P": { "item": "embers:item_pipe" },
+            "I": { "item": "modern_industrialization:lead_ingot" },
+            "R": { "item": "modern_industrialization:lead_rod" },
+            "d": { "item": "modern_industrialization:lapis_dust" }
+
+        },
+        outputItems: [[{ id: "embers:item_transfer" }, 2]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "IPI",
+            "IPI",
+            "RdR",
+        ],
+        key: {
+            "P": { "item": "embers:fluid_pipe" },
+            "I": { "item": "modern_industrialization:tin_ingot" },
+            "R": { "item": "modern_industrialization:tin_rod" },
+            "d": { "item": "modern_industrialization:lapis_dust" }
+
+        },
+        outputItems: [[{ id: "embers:fluid_transfer" }, 2]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " d ",
+            "RPR",
+            "BBB",
+        ],
+        key: {
+            "P": { "item": "embers:ember_emitter" },
+            "B": { "item": "embers:archaic_brick" },
+            "R": { "item": "modern_industrialization:lead_rod" },
+            "d": { "item": "modern_industrialization:gold_dust" }
+
+        },
+        outputItems: [[{ id: "embers:ember_ejector" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "d d",
+            "pPp",
+            " p ",
+        ],
+        key: {
+            "P": { "item": "embers:ember_receiver" },
+            "p": { "item": "modern_industrialization:gold_plate" },
+            "d": { "item": "modern_industrialization:gold_dust" }
+
+        },
+        outputItems: [[{ id: "embers:ember_funnel" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BpB",
+            "pPp",
+            "BdB",
+        ],
+        key: {
+            "P": { "item": "embers:ember_relay" },
+            "B": { "item": "embers:archaic_brick" },
+            "p": { "item": "modern_industrialization:copper_plate" },
+            "d": { "item": "modern_industrialization:gold_dust" }
+
+        },
+        outputItems: [[{ id: "embers:beam_splitter" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "p p",
+            "rpr",
+            "rrr",
+        ],
+        key: {
+            "p": { "item": "modern_industrialization:dawnstone_plate" },
+            "r": { "item": "modern_industrialization:dawnstone_ring" }
+
+        },
+        outputItems: [[{ id: "embers:dawnstone_mail" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "DDD",
+            "FPF",
+            "BbB",
+        ],
+        key: {
+            "B": { "item": "embers:archaic_brick" },
+            "F": { "item": "embers:fluid_pipe" },
+            "P": { "item": "modern_industrialization:gold_double_ingot" },
+            "D": { "item": "modern_industrialization:iron_plate" },
+            "b": { "item": "embers:caminite_bricks" }
+
+        },
+        outputItems: [[{ id: "embers:mixer_centrifuge" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BDB",
+            "RDR",
+            "RPR",
+        ],
+        key: {
+            "B": { "item": "embers:archaic_brick" },
+            "R": { "item": "modern_industrialization:iron_rod" },
+            "D": { "item": "embers:dawnstone_ingot" },
+            "P": { "item": "modern_industrialization:copper_plate" }
+
+        },
+        outputItems: [[{ id: "embers:pressure_refinery" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "ppp",
+            "PDP",
+            "RER",
+        ],
+        key: {
+            "R": { "item": "embers:caminite_bricks" },
+            "E": { "item": "embers:fluid_extractor" },
+            "P": { "item": "embers:fluid_pipe" },
+            "D": { "item": "embers:dawnstone_ingot" },
+            "p": { "item": "modern_industrialization:iron_plate" }
+
+        },
+        outputItems: [[{ id: "embers:mechanical_pump" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "ppp",
+            "IBI",
+            "RBR",
+        ],
+        key: {
+            "R": { "item": "embers:caminite_bricks" },
+            "B": { "item": "embers:archaic_brick" },
+            "I": { "item": "embers:dawnstone_ingot" },
+            "p": { "item": "modern_industrialization:dawnstone_plate" }
+
+        },
+        outputItems: [[{ id: "embers:alchemy_tablet" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "p p",
+            "BpB",
+            "RBR",
+        ],
+        key: {
+            "R": { "item": "embers:caminite_bricks" },
+            "B": { "item": "embers:archaic_brick" },
+            "p": { "item": "modern_industrialization:dawnstone_plate" }
+
+        },
+        outputItems: [[{ id: "embers:alchemy_pedestal" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "rCr",
+            "rCr",
+            "RBR",
+        ],
+        key: {
+            "R": { "item": "embers:dawnstone_ingot" },
+            "B": { "item": "embers:archaic_brick" },
+            "r": { "item": "modern_industrialization:copper_rod" },
+            "C": { "item": "embers:ember_crystal" }
+
+        },
+        outputItems: [[{ id: "embers:beam_cannon" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "ppP",
+            "RCR",
+        ],
+        key: {
+            "R": { "item": "embers:caminite_bricks" },
+            "P": { "item": "embers:fluid_extractor" },
+            "p": { "item": "modern_industrialization:iron_plate" },
+            "C": { "item": "embers:ember_crystal_cluster" },
+        },
+        outputItems: [[{ id: "embers:geologic_separator" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RBR",
+            "RBR",
+            "BCB",
+        ],
+        key: {
+            "R": { "item": "modern_industrialization:copper_rod" },
+            "B": { "item": "embers:archaic_brick" },
+            "C": { "item": "embers:geologic_separator" },
+        },
+        outputItems: [[{ id: "embers:combustion_chamber" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RRR",
+            "BbB",
+            "bCb",
+        ],
+        key: {
+            "b": { "item": "embers:archaic_brick" },
+            "R": { "item": "modern_industrialization:silver_rod" },
+            "B": { "item": "modern_industrialization:silver_ingot" },
+            "C": { "item": "embers:geologic_separator" },
+        },
+        outputItems: [[{ id: "embers:combustion_chamber" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RRR",
+            "RCR",
+            "B B",
+        ],
+        key: {
+            "R": { "item": "modern_industrialization:copper_rod" },
+            "B": { "item": "embers:archaic_brick" },
+            "C": { "item": "embers:wildfire_core" },
+        },
+        outputItems: [[{ id: "embers:combustion_chamber" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "L L",
+            "RCR",
+            "BbB",
+        ],
+        key: {
+            "L": { "item": "modern_industrialization:lead_plate" },
+            "R": { "item": "modern_industrialization:silver_rod" },
+            "B": { "item": "embers:archaic_brick" },
+            "b": { "item": "embers:caminite_bricks" },
+            "C": { "item": "embers:wildfire_core" },
+        },
+        outputItems: [[{ id: "embers:cinder_plinth" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "pFp",
+            "FGF",
+            "pFp",
+        ],
+        key: {
+            "F": { "item": "embers:fluid_pipe" },
+            "p": { "item": "modern_industrialization:iron_plate" },
+            "G": { "item": "modern_industrialization:iron_gear" },
+        },
+        outputItems: [[{ id: "embers:mini_boiler" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "bFb",
+            "IGI",
+            "BFB",
+        ],
+        key: {
+            "F": { "item": "embers:fluid_pipe" },
+            "I": { "item": "embers:item_pipe" },
+            "b": { "item": "embers:caminite_bricks" },
+            "B": { "item": "embers:archaic_brick" },
+            "G": { "tag": "c:gears" },
+        },
+        outputItems: [[{ id: "embers:mechanical_core" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "pBp",
+            "SBS",
+            "ICI",
+        ],
+        key: {
+            "C": { "item": "embers:wildfire_core" },
+            "B": { "item": "milf:bronze_machine_bit" },
+            "S": { "item": "embers:ember_shard" },
+            "p": { "item": "modern_industrialization:dawnstone_plate" },
+            "I": { "item": "embers:dawnstone_ingot" }
+        },
+        outputItems: [[{ id: "embers:wildfire_stirling" }, 1]],
+        removeRecipe: true
+    })
+
+
+
+    Object.entries({
+        "silver": {
+            plateId: "modern_industrialization:silver_plate"
+        }
+    }).forEach(([material, data]) => {
+        let { plateId } = data
+
+        yTechShaped(event, {
+            pattern: [
+                "d# ",
+                "s  ",
+                "s  ",
+            ],
+            key: {
+                "#": { "tag": "c:hammers" },
+                "s": { "item": "minecraft:stick" },
+                "d": { "item": plateId },
+            },
+            outputItems: [[{ id: `embers:${material}_shovel` }, 1]],
+            removeRecipeType: "minecraft:crafting_shaped"
+        })
+
+        yTechShaped(event, {
+            pattern: [
+                "ddd",
+                " s#",
+                " s ",
+            ],
+            key: {
+                "#": { "tag": "c:hammers" },
+                "s": { "item": "minecraft:stick" },
+                "d": { "item": plateId },
+            },
+            outputItems: [[{ id: `embers:${material}_pickaxe` }, 1]],
+            removeRecipeType: "minecraft:crafting_shaped"
+        })
+
+        yTechShaped(event, {
+            pattern: [
+                "dd#",
+                " s ",
+                " s ",
+            ],
+            key: {
+                "#": { "tag": "c:hammers" },
+                "s": { "item": "minecraft:stick" },
+                "d": { "item": plateId },
+            },
+            outputItems: [[{ id: `embers:${material}_hoe` }, 1]],
+            removeRecipeType: "minecraft:crafting_shaped"
+        })
+
+        yTechShaped(event, {
+            pattern: [
+                "d  ",
+                "d  ",
+                "s# ",
+            ],
+            key: {
+                "#": { "tag": "c:hammers" },
+                "s": { "item": "minecraft:stick" },
+                "d": { "item": plateId },
+            },
+            outputItems: [[{ id: `embers:${material}_sword` }, 1]],
+            removeRecipeType: "minecraft:crafting_shaped"
+        })
+
+        yTechShaped(event, {
+            pattern: [
+                "dd#",
+                "ds ",
+                " s ",
+            ],
+            key: {
+                "#": { "tag": "c:hammers" },
+                "s": { "item": "minecraft:stick" },
+                "d": { "item": plateId },
+            },
+            outputItems: [[{ id: `embers:${material}_axe` }, 1]],
+            removeRecipeType: "minecraft:crafting_shaped"
+        })
+
     })
 
 

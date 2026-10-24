@@ -57,6 +57,11 @@ function iePressRecipe(event, args) {
         }
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
+    if (args.removeRecipeType) {
+        args.outputItems.forEach((out) => {
+            event.remove({ output: out[0]?.id || `#${out[0].tag}`, type: args.removeRecipeType })
+        })
+    }
     event.custom(recipe)
 }
 

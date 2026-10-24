@@ -1023,8 +1023,8 @@
 					type: "observation"
 				}
 			]
-			x: 10.5d
-			y: 9.0d
+			x: 11.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1359,8 +1359,8 @@
 				item: { count: 1, id: "ytech:divining_rod" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 8.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1E90CFCF74511186"]
@@ -1372,8 +1372,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ytech:aqueducts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.0d
+			x: 11.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["36FC9754D82F262A"]
@@ -1436,8 +1436,8 @@
 					type: "observation"
 				}
 			]
-			x: 10.0d
-			y: 8.0d
+			x: 11.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["48F72C9AA0D029A9"]
@@ -1488,8 +1488,8 @@
 					type: "observation"
 				}
 			]
-			x: 9.0d
-			y: 8.0d
+			x: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0ACD0476CE4CAED1"]
@@ -1528,8 +1528,8 @@
 					type: "observation"
 				}
 			]
-			x: 9.5d
-			y: 9.0d
+			x: 10.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["183336DC1AF8137B"]
@@ -1898,47 +1898,6 @@
 			}]
 			x: 10.0d
 			y: -11.5d
-		}
-		{
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:golden_helmet"
-			}
-			id: "118F1F53D1353A5B"
-			optional: true
-			rewards: [{
-				id: "012AC807A9656470"
-				item: {
-					count: 1
-					id: "grimoireofgaia:box_overworld"
-				}
-				type: "item"
-			}]
-			shape: "pentagon"
-			tasks: [
-				{
-					id: "18AC8F4243FAB57F"
-					item: { count: 1, id: "minecraft:golden_helmet" }
-					type: "item"
-				}
-				{
-					id: "05B8EC5FF5FC93A5"
-					item: { count: 1, id: "minecraft:golden_chestplate" }
-					type: "item"
-				}
-				{
-					id: "6B11A240FDAAD093"
-					item: { count: 1, id: "minecraft:golden_leggings" }
-					type: "item"
-				}
-				{
-					id: "373F2AEF23ADB71A"
-					item: { count: 1, id: "minecraft:golden_boots" }
-					type: "item"
-				}
-			]
-			x: 37.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["4692844BA629A00B"]
@@ -2724,148 +2683,8 @@
 				id: "7001AAAE3F1E4149"
 				type: "checkmark"
 			}]
-			x: 37.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["0BF7B4B3DAAE234C"]
-			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"minecraft:custom_data": {
-						oreId: "minecraft:raw_iron"
-					}
-				}
-				id: "milf:stone_nose"
-			}
-			id: "00F875A3E242FB34"
-			rewards: [{
-				count: 3
-				id: "1E5B1858D13453C8"
-				item: {
-					components: {
-						"minecraft:custom_data": {
-							oreId: "minecraft:raw_iron"
-						}
-					}
-					count: 1
-					id: "milf:stone_nose"
-				}
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "36DD5A8EF1AAC639"
-				type: "checkmark"
-			}]
-			x: 36.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0BF7B4B3DAAE234C"]
-			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"minecraft:custom_data": {
-						oreId: "minecraft:raw_copper"
-					}
-				}
-				id: "milf:stone_nose"
-			}
-			id: "6C59597B8D81F454"
-			rewards: [{
-				count: 3
-				id: "21BBF54E55505811"
-				item: {
-					components: {
-						"minecraft:custom_data": {
-							oreId: "minecraft:raw_copper"
-						}
-					}
-					count: 1
-					id: "milf:stone_nose"
-				}
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "7A9734ED78BCABE8"
-				type: "checkmark"
-			}]
-			x: 36.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0BF7B4B3DAAE234C"]
-			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"minecraft:custom_data": {
-						oreId: "modern_industrialization:raw_tin"
-					}
-				}
-				id: "milf:stone_nose"
-			}
-			id: "37160E9A836B7361"
-			rewards: [{
-				count: 3
-				id: "28E909B05DA20875"
-				item: {
-					components: {
-						"minecraft:custom_data": {
-							oreId: "modern_industrialization:raw_tin"
-						}
-					}
-					count: 1
-					id: "milf:stone_nose"
-				}
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "46D78E9ACA8F897F"
-				type: "checkmark"
-			}]
-			x: 38.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0BF7B4B3DAAE234C"]
-			entity_vis_size: 1.0f
-			icon: {
-				components: {
-					"minecraft:custom_data": {
-						oreId: "minecraft:coal"
-					}
-				}
-				id: "milf:stone_nose"
-			}
-			id: "57671811B0F76299"
-			rewards: [{
-				count: 3
-				id: "0C61949FA094B130"
-				item: {
-					components: {
-						"minecraft:custom_data": {
-							oreId: "minecraft:coal"
-						}
-					}
-					count: 1
-					id: "milf:stone_nose"
-				}
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "1063BA27980C2670"
-				type: "checkmark"
-			}]
-			x: 38.5d
-			y: -1.5d
+			x: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["56956E24B043B41A"]
@@ -2896,6 +2715,7 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["07B8D8ADCAA2EBA8"]
 			entity_vis_size: 1.0f
 			id: "32A68ACEFBF8D876"
 			shape: "heart"
@@ -2903,8 +2723,8 @@
 				id: "5AD635A29E44CC90"
 				type: "checkmark"
 			}]
-			x: 37.5d
-			y: 0.5d
+			x: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2CB775EC10EADEF7"]
@@ -4043,12 +3863,13 @@
 					type: "custom"
 				}
 			]
+			shape: "diamond"
 			tasks: [{
 				id: "728B4282A0EAEB4E"
 				type: "checkmark"
 			}]
 			x: 10.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["56AE77021D975ACD"]
@@ -4968,6 +4789,46 @@
 			}]
 			x: 31.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["791E938B9261F59D"]
+			entity_vis_size: 1.0f
+			id: "7A38219FB247B0A0"
+			shape: "heart"
+			size: 0.76d
+			tasks: [{
+				id: "00DDB6863C45E9DC"
+				item: { count: 1, id: "milf:potsherd" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1714360882474479"]
+			entity_vis_size: 1.0f
+			id: "666A55F5C215984D"
+			shape: "diamond"
+			tasks: [{
+				id: "61DBF9BC22906727"
+				item: { count: 1, id: "milf:fire_striker" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["666A55F5C215984D"]
+			entity_vis_size: 1.0f
+			id: "279AC0E786B09653"
+			shape: "diamond"
+			tasks: [{
+				id: "1CF67C3EC744042C"
+				item: { count: 1, id: "minecraft:flint" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 5.0d
 		}
 	]
 }

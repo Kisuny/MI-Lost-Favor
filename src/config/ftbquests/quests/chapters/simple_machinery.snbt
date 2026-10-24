@@ -75,13 +75,6 @@
 			x: -3.0d
 			y: 11.0d
 		}
-		{
-			id: "0B11C9FD3C21E1F9"
-			linked_quest: "69AA9D9D0E276932"
-			shape: "diamond"
-			x: -5.5d
-			y: 18.5d
-		}
 	]
 	quests: [
 		{
@@ -228,7 +221,6 @@
 				"0092A651B34CC9F1"
 				"14B7F1FD3C10B17C"
 				"144DEA3CFC2456E3"
-				"69AA9D9D0E276932"
 			]
 			entity_vis_size: 1.0f
 			id: "6729C19CB1F44ECF"
@@ -3262,8 +3254,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:large_steam_machines)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: 6.5d
+			x: -14.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["09B3D8B6687BF6CD"]
@@ -3384,16 +3376,29 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["5F02DDEEB01618F7"]
+			dependencies: ["74CB697B5C2A904D"]
 			entity_vis_size: 1.0f
 			id: "4C7CBF8D8AA8C67B"
+			shape: "heart"
 			tasks: [{
 				id: "3F6DBD0892841A6A"
 				item: { count: 1, id: "embers:ember_energy_converter" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: -10.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4269FC87A34C8E58"
+			shape: "heart"
+			tasks: [{
+				id: "2051AB29F5B1A765"
+				item: { count: 1, id: "embers:item_vacuum" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 7.0d
 		}
 	]
 }

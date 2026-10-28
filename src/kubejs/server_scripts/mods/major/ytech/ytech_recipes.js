@@ -464,6 +464,19 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "F ",
+            "S "
+        ],
+        key: {
+            F: { item: "milf:stone_rod" },
+            S: { item: "milf:stone_basin" }
+        },
+        outputItems: [[{ id: "ytech:stone_mortar_and_pestle" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "F ",
             "SR"
         ],
         key: {

@@ -294,6 +294,12 @@ global.disabledItems = [
     new DisabledItemBuilder("embers:raw_lead"),
     new DisabledItemBuilder("embers:raw_silver"),
 
+    new DisabledItemBuilder("embers:lead_ore"),
+    new DisabledItemBuilder("embers:deepslate_lead_ore"),
+
+    new DisabledItemBuilder("embers:silver_ore"),
+    new DisabledItemBuilder("embers:deepslate_silver_ore"),
+
     new DisabledItemBuilder("embers:lead_ingot"),
     new DisabledItemBuilder("embers:silver_ingot"),
 

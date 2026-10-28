@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             R: { item: "milf:pet_rock" },
-            S: { item: "paganbless:black_thorn_stick" },
+            S: { item: "minecraft:stick" },
         },
         outputItems: [[{ id: "constructionwand:stone_wand" }, 1]],
         removeRecipe: true
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         key: {
             P: { item: "modern_industrialization:iron_large_plate" },
             S: { tag: "milf:sticks" },
-            B: { item: "modern_industrialization:steel_ring" },
+            B: { item: "modern_industrialization:iron_ring" },
         },
         outputItems: [[{ id: "constructionwand:iron_wand" }, 1]],
         removeRecipe: true
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         key: {
             P: { item: "modern_industrialization:diamond_large_plate" },
             S: { item: "immersiveengineering:stick_treated" },
-            B: { item: "modern_industrialization:aluminum_wire" },
+            B: { item: "modern_industrialization:copper_wire" },
         },
         outputItems: [[{ id: "constructionwand:diamond_wand" }, 1]],
         removeRecipe: true

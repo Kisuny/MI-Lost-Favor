@@ -17,5 +17,5 @@ ServerEvents.recipes(event => {
     });
 
 
-    event.recipes.modern_industrialization.forge_hammer('minecraft:iron_ingot', 'ytech:iron_bloom', 5, 1)
+    //event.recipes.modern_industrialization.forge_hammer('minecraft:iron_ingot', 'ytech:iron_bloom', 5, 1)
 })

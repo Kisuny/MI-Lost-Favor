@@ -40,6 +40,20 @@ ServerEvents.recipes(event => {
         inputItems: [[{ tag: "c:leathers" }, 1]],
         outputItems: [[{ item: "ytech:leather_strips" }, 5]]
     })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 200, machine: "modern_industrialization:cutting_machine",
+        inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+        inputItems: [[{ item: "milf:stone_pole" }, 1]],
+        outputItems: [[{ item: "milf:stone_rod" }, 2]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 200, machine: "modern_industrialization:cutting_machine",
+        inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+        inputItems: [[{ item: "minecraft:stone" }, 1]],
+        outputItems: [[{ item: "milf:stone_pole" }, 4]]
+    })
    
 })
 

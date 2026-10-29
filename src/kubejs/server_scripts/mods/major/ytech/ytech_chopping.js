@@ -44,6 +44,21 @@ ServerEvents.recipes(event => {
     })
 
     ytechChoppingCraft(event, {
+        inputItems: [[{ item: "minecraft:iron_nugget" }]],
+        outputItems: [[{ id: "starcatcher:hook" }]],
+        tool: { tag: "milf:knives" },
+    })
+
+    ytechChoppingCraft(event, {
+        inputItems: [[{ item: "minecraft:iron_ingot" }]],
+        outputItems: [[{ id: "milf:fire_striker" }]],
+        tool: neoCompound([
+            { item: "ytech:lead_file" },
+            { item: "ytech:bronze_file" }
+        ]),
+    })
+
+    ytechChoppingCraft(event, {
         inputItems: [[{ tag: "minecraft:wooden_slabs" }]],
         outputItems: [[{ id: "minecraft:stick" }, 2]],
         tool: { tag: "minecraft:axes" },
@@ -87,6 +102,17 @@ ServerEvents.recipes(event => {
             { item: "ytech:lead_hammer" },
             { tag: "modern_industrialization:forge_hammer_tools" }
         ]),
+        compatOff: true
+    })
+
+    ytechChoppingCraft(event, {
+        inputItems: [[{ item: "minecraft:coal_block" }]],
+        outputItems: [[{ id: "modern_industrialization:coal_crushed_dust" }, 2]],
+        tool: neoCompound([
+            { item: "ytech:lead_hammer" },
+            { tag: "modern_industrialization:forge_hammer_tools" }
+        ]),
+        compatOff: true
     })
 
 

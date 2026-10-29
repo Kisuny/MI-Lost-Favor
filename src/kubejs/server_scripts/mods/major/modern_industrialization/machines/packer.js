@@ -124,18 +124,27 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "embers:caminite_blend" }, 2],
+            [{ item: "ytech:brick_mold" }, 1, 0]
+        ],
+        outputItems: [[{ item: "milf:unfired_caminite_brick" }, 3]]
+    })
+
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [[{ item: "immersiveengineering:ersatz_leather" }, 2]],
         outputItems: [[{ item: "minecraft:leather" }]]
     })
 
-    miMachineRecipe(event, {
-        energy: 2, time: 100, machine: "modern_industrialization:packer",
-        inputItems: [
-            [{ item: "modern_industrialization:coal_dust" }, 1],
-            [{ item: "modern_industrialization:bronze_machine_casing" }, 1]
-        ],
-        outputItems: [[{ item: "moderndynamics:machine_extender" }, 1]]
-    })
+    // miMachineRecipe(event, {
+    //     energy: 2, time: 100, machine: "modern_industrialization:packer",
+    //     inputItems: [
+    //         [{ item: "modern_industrialization:coal_dust" }, 1],
+    //         [{ item: "modern_industrialization:bronze_machine_casing" }, 1]
+    //     ],
+    //     outputItems: [[{ item: "moderndynamics:machine_extender" }, 1]]
+    // })
 
 })

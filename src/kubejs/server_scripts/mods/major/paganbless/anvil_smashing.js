@@ -45,60 +45,6 @@ ServerEvents.recipes(event => {
     )
 
 
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:bolts/iron" }, 4],
-    //         [{ "tag": "c:plates/iron" }, 2],
-    //         [{ "tag": "c:dusts/iron" }, 4],
-    //     ],
-    //     [{ "id": 'moderndynamics:inhibitor' }, 2]
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:bolts/iron" }, 4],
-    //         [{ "tag": "c:plates/iron" }, 2],
-    //         [{ "tag": "c:dusts/lead" }, 4],
-    //     ],
-    //     [{ "id": 'moderndynamics:attractor' }, 1]
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:bolts/iron" }, 4],
-    //         [{ "tag": "c:plates/iron" }, 2],
-    //         [{ "tag": "c:dusts/redstone" }, 4],
-    //     ],
-    //     [{ "id": 'moderndynamics:extractor' }, 1]
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:bolts/iron" }, 4],
-    //         [{ "tag": "c:plates/iron" }, 2],
-    //         [{ "tag": "c:dusts/bronze" }, 4],
-    //     ],
-    //     [{ "id": 'moderndynamics:filter' }, 1]
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "item": "milf:bronze_glass" }, 4],
-    //         [{ "item": "modern_industrialization:copper_plate" }, 6],
-    //     ],
-    //     [{ "id": 'moderndynamics:fluid_pipe' }, 8]
-
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "item": "milf:bronze_glass" }, 2],
-    //         [{ "item": "modern_industrialization:iron_large_plate" }, 2],
-    //     ],
-    //     [{ "id": 'moderndynamics:item_pipe' }, 6]
-
-    // )
-
     //#region mi stuff
 
     anvil_recipe(
@@ -110,31 +56,6 @@ ServerEvents.recipes(event => {
         [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1]
     )
 
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:bolts/steel" }, 8],
-    //         [{ "item": "modern_industrialization:fire_clay_bricks" }, 1],
-    //         [{ "tag": "c:plates/steel" }, 8],
-    //     ],
-    //     [{ "id": 'extended_industrialization:steel_plated_bricks' }, 1]
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:plates/copper" }, 2],
-    //         [{ "tag": "c:bolts/copper" }, 4],
-    //     ],
-    //     [{ "id": 'milf:small_copper_fluid_container' }, 1]
-    // )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "tag": "c:plates/steel" }, 2],
-    //         [{ "tag": "c:bolts/steel" }, 4],
-    //     ],
-    //     [{ "id": 'milf:small_steel_fluid_container' }, 1]
-    // )
-
     anvil_recipe(
         [
             [{ "item": "immersiveengineering:fluid_pipe" }, 6],
@@ -144,45 +65,29 @@ ServerEvents.recipes(event => {
         [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
     )
 
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/bronze" }, 4],
-            [{ "tag": "c:rods/bronze" }, 1],
-            [{ "tag": "c:plates/bronze" }, 2],
-        ],
-        [{ "id": 'modern_industrialization:wrench' }, 1]
-    )
-
-    // anvil_recipe(
-    //     [
-    //         [{ "item": "knightlib:great_essence" }, 13],
-    //     ],
-    //     [{ "id": 'grimoireofgaia:experience_iron' }, 1]
-    // )
-
     //#endregion
 
     //spectrum compat
-    event.forEachRecipe({ type: 'spectrum:anvil_crushing', not : {output: "#milf:nocompat"}}, r => {
-        const rjson = JSON.parse(r.json)
-        if (rjson.result.id.split(":")[0] == "ae2") return
-        if (Array.isArray(rjson.ingredient)) {
-            rjson.ingredient.forEach(ing =>{
-                anvilSmashingCraft(event, {
-                    inputItems: [[ing]],
-                    outputItems: [[rjson.result]],
-                    compatOff:true
-                })
-            })
-        } else {
-            anvilSmashingCraft(event, {
-                inputItems: [rjson.ingredient],
-                outputItems: [[rjson.result]],
-                compatOff:true
-            })
-        }
+    // event.forEachRecipe({ type: 'spectrum:anvil_crushing', not : {output: "#milf:nocompat"}}, r => {
+    //     const rjson = JSON.parse(r.json)
+    //     if (rjson.result.id.split(":")[0] == "ae2") return
+    //     if (Array.isArray(rjson.ingredient)) {
+    //         rjson.ingredient.forEach(ing =>{
+    //             anvilSmashingCraft(event, {
+    //                 inputItems: [[ing]],
+    //                 outputItems: [[rjson.result]],
+    //                 compatOff:true
+    //             })
+    //         })
+    //     } else {
+    //         anvilSmashingCraft(event, {
+    //             inputItems: [rjson.ingredient],
+    //             outputItems: [[rjson.result]],
+    //             compatOff:true
+    //         })
+    //     }
         
-    })
+    // })
 
     //mi compat
 

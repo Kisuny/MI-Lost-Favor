@@ -50,6 +50,8 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:signs', [new RegExp(`^${modsList}:[a-z_]*sign[a-z_]*$`)])
     event.add('minecraft:copper_blocks', [new RegExp(`^${modsList}:[a-z_]*copper[a-z_]*$`)])
 
+    event.removeAllTagsFrom("minecraft:copper_nugget")
+
 })
 
 

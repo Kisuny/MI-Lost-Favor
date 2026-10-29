@@ -19,5 +19,25 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+        inputItems: [
+            [{ item: "modern_industrialization:bronze_machine_casing" }]
+        ],
+        outputItems: [
+            [{ item: "milf:bronze_machine_bit" }, 8],
+        ]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+        inputItems: [
+            [{ item: "modern_industrialization:steel_machine_casing" }]
+        ],
+        outputItems: [
+            [{ item: "milf:steel_machine_bit" }, 8],
+        ]
+    })
+
 
 })

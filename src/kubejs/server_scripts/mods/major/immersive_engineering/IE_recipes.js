@@ -24,54 +24,7 @@ function ieShapedFluid(event, args) {
 
 ServerEvents.recipes(event => {
 
-    // event.remove({
-    //     output: [
-    //         // /immersiveengineering:.*coke.*/,
-    //         // /immersiveengineering:plate.*/,
-    //         // /immersiveengineering:wire.*/,
-    //         // /immersiveengineering:stick.*/,
-    //         // /immersiveengineering:dust.*/,
-    //         // /immersiveengineering:ingot.*/,
-    //         // /immersiveengineering:raw.*/,
-    //         // /immersiveengineering:nugget.*/,
-    //         // // /immersiveengineering:storage_.*/,
-    //         // 'immersiveengineering:wire_copper',
-    //         // 'immersiveengineering:wire_electrum',
-    //         // 'immersiveengineering:wire_aluminum',
-    //         // 'immersiveengineering:wire_steel',
-    //         // 'immersiveengineering:wire_lead',
-    //         // /immersiveposts:stick_.*/,
-
-    //     ]
-    // })
-
-    //event.remove({ id: "immersiveengineering:crafting/nugget_copper_to_copper_ingot" })
-
-    // const materials_for_wires = ["steel", "copper", "lead"]
-    // materials_for_wires.forEach(material => {
-    //     event.replaceInput(
-    //         { input: `immersiveengineering:wire_${material}` },
-    //         `immersiveengineering:wire_${material}`,
-    //         `modern_industrialization:${material}_wire`
-    //     )
-    // });
-
-    // const iron_to_steel = [
-    //     "immersiveengineering:hammer",
-    // ]
-    // iron_to_steel.forEach(element => {
-    //     event.replaceInput(
-    //         { output: element },
-    //         "iron_ingot",
-    //         "modern_industrialization:steel_ingot"
-    //     )
-    // })
-
-    // event.replaceInput(
-    //     { output: "immersiveengineering:toolbox" },
-    //     "modern_industrialization:aluminum_plate",
-    //     "modern_industrialization:steel_plate"
-    // )
+    event.remove({type: "immersiveengineering:alloy"})
 
     //#region ieShapedFluid
 

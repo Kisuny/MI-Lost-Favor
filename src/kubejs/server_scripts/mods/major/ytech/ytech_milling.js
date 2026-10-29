@@ -27,18 +27,21 @@ const ytechMillingCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
 
-    ytechMillingCraft(event,{
-        inputItems:[[{item: "minecraft:raw_iron"}]],
-        outputItems:[[{id:"milf:crushed_iron"}]],
-        bonusChance: 0.5,
-        compatOff:true
+    entriesForEach({
+        "minecraft:raw_iron": "milf:crushed_iron",
+        "minecraft:raw_copper": "milf:crushed_copper",
+        "minecraft:raw_gold": "milf:crushed_gold",
+        "modern_industrialization:raw_lead": "milf:crushed_lead",
+        "modern_industrialization:raw_tin": "milf:crushed_tin"
+    }, ([rawOre, crushedOre]) =>{
+
+        ytechMillingCraft(event, {
+            inputItems: [[{ item: rawOre }]],
+            outputItems: [[{ id: crushedOre }]],
+            bonusChance: 0.5,
+            compatOff: true
+        })
+
     })
 
-    ytechMillingCraft(event,{
-        inputItems:[[{item: "minecraft:coal"}]],
-        outputItems:[[{id:"modern_industrialization:coal_dust"}]],
-        bonusChance: 0,
-        compatOff:true
-    })
-
-});
+})

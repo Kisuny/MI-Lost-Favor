@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "modern_industrialization:steel_large_plate" }, 6],
             [{ "tag": "immersiveengineering:treated_wood" }, 12],
-            [{ "item": "immersiveengineering:logic_unit" }, 4],
+            [{ "item": "milf:tempered_glass" }, 4],
             [{ "item": "immersiveengineering:component_electronic_adv" }, 1],
             [{ "item": "immersiveengineering:wirecoil_steel" }, 12],
         ],

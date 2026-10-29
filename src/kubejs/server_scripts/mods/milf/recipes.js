@@ -53,7 +53,11 @@ function milfKilnSmeltingRecipe(event, args) {
         requires_bellows: args.requires_bellows || false
     }
     if (!args.compatOff) {
-
+        miMachineRecipe(event, {
+            energy: 4, time: 200, machine: "extended_industrialization:alloy_smelter",
+            inputItems: args.inputItems,
+            outputItems: args.outputItems
+        })
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
@@ -67,10 +71,17 @@ function milfChiselHitRecipe(event, args) {
     }
     if(args.outputItems[1]){
         recipe.output_block= Object.assign({}, args.outputItems[1][0], { count: 1 })
+    } else {
+        if (!args.compatOff) {
+            miMachineRecipe(event, {
+                energy: 2, time: 200, machine: "modern_industrialization:cutting_machine",
+                inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+                inputItems: args.inputItems,
+                outputItems: args.outputItems
+            })
+        }
     }
-    if (!args.compatOff) {
 
-    }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
 }
@@ -771,33 +782,33 @@ ServerEvents.recipes(event => {
 
     //region shaped
 
-    Object.entries({
-        "milf:wooden_axe_head": "minecraft:wooden_axe",
-        "milf:wooden_hammer_head": null,
-        "milf:wooden_hoe_head": "minecraft:wooden_hoe",
-        "milf:wooden_pickaxe_head": "minecraft:wooden_pickaxe",
-        "milf:wooden_shovel_head": "minecraft:wooden_shovel",
-        "milf:wooden_sword_blade": "minecraft:wooden_sword"
-    }).forEach(([partId, toolId]) => {
+    // Object.entries({
+    //     "milf:wooden_axe_head": "minecraft:wooden_axe",
+    //     "milf:wooden_hammer_head": null,
+    //     "milf:wooden_hoe_head": "minecraft:wooden_hoe",
+    //     "milf:wooden_pickaxe_head": "minecraft:wooden_pickaxe",
+    //     "milf:wooden_shovel_head": "minecraft:wooden_shovel",
+    //     "milf:wooden_sword_blade": "minecraft:wooden_sword"
+    // }).forEach(([partId, toolId]) => {
 
-        if (!toolId) return
+    //     if (!toolId) return
 
-        milfShaped(event, {
-            pattern: [
-                " bp",
-                " tb",
-                "s  ",
-            ],
-            key: {
-                "s": { "item": "minecraft:stick" },
-                "t": { "item": "ytech:grass_twine" },
-                "b": { "item": "ytech:wooden_bolt" },
-                p: { item: partId }
-            },
-            outputItems: [[{ id: toolId }, 1]],
-            compatOff: true
-        })
-    })
+    //     milfShaped(event, {
+    //         pattern: [
+    //             " bp",
+    //             " tb",
+    //             "s  ",
+    //         ],
+    //         key: {
+    //             "s": { "item": "minecraft:stick" },
+    //             "t": { "item": "ytech:grass_twine" },
+    //             "b": { "item": "ytech:wooden_bolt" },
+    //             p: { item: partId }
+    //         },
+    //         outputItems: [[{ id: toolId }, 1]],
+    //         compatOff: true
+    //     })
+    // })
 
     milfShaped(event, {
         pattern: [
@@ -1043,7 +1054,8 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [
             [{ id: "milf:bronze_machine_bit" }, 5]
-        ]
+        ],
+        compatOff:true
     })
 
     milfChiselHitRecipe(event, {
@@ -1052,7 +1064,8 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [
             [{ id: "milf:steel_machine_bit" }, 5]
-        ]
+        ],
+        compatOff: true
     })
 
     milfChiselHitRecipe(event, {
@@ -1217,3 +1230,9 @@ ServerEvents.recipes(event => {
     //endregion
 
 })
+
+
+//(‾◡◝)
+milfDisableRecipesById([
+    "milf:anvil/stone/crushed_iron"
+])

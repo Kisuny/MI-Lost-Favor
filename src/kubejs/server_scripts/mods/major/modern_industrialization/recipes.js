@@ -255,17 +255,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
     //event.remove({ type: 'modern_industrialization:quarry' })
 
-    customPestleAndMortarCraft(event, {
-        ingredients: [
-            { "item": "architects_palette:algal_blend" },
-            { "item": "architects_palette:algal_blend" },
-            { "item": "modern_industrialization:brick_dust" },
-            { "item": "modern_industrialization:brick_dust" },
-        ],
-        output: "milf:fire_clay_ball",
-        amount: 3,
-    })
-
     //#region milfShaped
 
     global.dyeColors.forEach(({name: color}) => {

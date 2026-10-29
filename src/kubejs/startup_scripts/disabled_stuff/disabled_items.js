@@ -313,10 +313,21 @@ global.disabledItems = [
 
     //#endregion
 
+    //#region Minecraft
+
     new DisabledItemBuilder("minecraft:wooden_spear"),
     new DisabledItemBuilder("minecraft:stone_spear"),
     new DisabledItemBuilder("minecraft:iron_spear"),
     new DisabledItemBuilder("minecraft:wooden_spear"),
+
+    new DisabledItemBuilder("minecraft:wooden_pickaxe"),
+    new DisabledItemBuilder("minecraft:wooden_axe"),
+    new DisabledItemBuilder("minecraft:wooden_hoe"),
+    new DisabledItemBuilder("minecraft:wooden_sword"),
+
+    new DisabledItemBuilder("minecraft:copper_nugget").replaceWith("modern_industrialization:copper_nugget"),
+
+    //#endregion
 
     new DisabledItemBuilder("monsterplus:curseflame_powder"),
 

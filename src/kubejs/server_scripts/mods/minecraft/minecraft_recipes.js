@@ -469,6 +469,18 @@ ServerEvents.recipes(event => {
         removeRecipeType: "ytech:remaining_shaped_crafting"
     })
 
+    milfShaped(event, {
+        pattern: [
+            "P P",
+            " P ",
+            "   "
+        ],
+        key: {
+            P: { item: "modern_industrialization:iron_plate" }
+        },
+        outputItems: [[{ id: "minecraft:bucket" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
 
     customMixingCauldron(event, {
         fluid: "minecraft:lava",
@@ -496,6 +508,7 @@ milfDisableRecipesById([
     "minecraft:golden_hoe",
     "minecraft:bread",
     "minecraft:smooth_stone",
-    "minecraft:brick"
-
+    "minecraft:brick",
+    "minecraft:copper_nugget",
+    "minecraft:copper_ingot_from_nuggets"
 ])

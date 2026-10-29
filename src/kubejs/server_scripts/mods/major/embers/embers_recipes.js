@@ -1298,3 +1298,7 @@ ServerEvents.recipes(event => {
 
 
 })
+
+milfDisableRecipesById([
+    "embers:copper_nugget_to_ingot"
+])

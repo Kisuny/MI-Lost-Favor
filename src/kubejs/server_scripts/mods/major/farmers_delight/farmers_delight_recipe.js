@@ -191,3 +191,7 @@ ServerEvents.recipes(event => {
 
 })
 
+milfDisableRecipesById([
+    "farmersdelight:salvaging/saddle",
+    "farmersdelight:/crafting/wheat_dough_from_water"
+])

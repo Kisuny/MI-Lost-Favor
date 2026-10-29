@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     })
 
     iePressRecipe(event, {
-        inputItems: [[{ "tag": "minecraft:planks" }, 9]],
+        inputItems: [[{ "tag": "minecraft:planks" }, 2]],
         outputItems: [[{ id: "minecraft:crafting_table" }, 1]],
         mold: { item: "minecraft:leather" },
         energy: 3200,

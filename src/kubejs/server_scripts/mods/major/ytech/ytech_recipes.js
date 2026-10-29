@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ input: '#c:knives' }, '#c:knives', '#milf:knives')
 
     let replaceStick = [
-        "ytech:fire_pit", "ytech:flint_knife", 
+        "ytech:flint_knife", 
         "ytech:flint_axe", "ytech:flint_spear", 
         "ytech:crafting_workspace",
         "ytech:divining_rod"

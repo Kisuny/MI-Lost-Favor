@@ -2,7 +2,7 @@ let $MiscStorage = Java.loadClass("com.alessandro.astages.engine.server.MiscStor
 
 ItemEvents.firstRightClicked("milf:nbt_pen", event => {
     let {player} = event
-    if (!player.getOffHandItem().id == "milf:dev_pen") return
+    if (player.getOffHandItem().id != "milf:dev_pen") return
 
     let stages = $MiscStorage.ALL_STAGES
 

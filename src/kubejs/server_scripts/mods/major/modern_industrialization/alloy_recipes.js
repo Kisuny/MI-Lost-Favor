@@ -1,26 +1,28 @@
-function addAlloyRecipes(event, materialName, components, args){
+function addAlloyRecipes(event, outputMaterial, components, args){
 
     args = args || {}
 
     let baseEnergy = args.baseEnergy || 2
     let baseTime = args.baseTime || 100
     let totalAmount = components.reduce((accumulator, currentComponent) => {
-        return accumulator + currentComponent.amount
+        return accumulator + currentComponent[1]
     }, 0)
 
     miMachineRecipe(event, {
         energy: baseEnergy, time: baseTime, machine: "modern_industrialization:mixer",
-        inputItems: components.map(component => [{ item: `modern_industrialization:${component.name}_tiny_dust` }, component.amount]),
-        outputItems: [[{ item: `modern_industrialization:${materialName}_tiny_dust` }, totalAmount]],
+        inputItems: components.map(component => [{ item: component[0].tiny_dust }, component[1]]),
+        outputItems: [[{ item: outputMaterial.tiny_dust }, totalAmount]],
         removeRecipeType: "modern_industrialization:mixer"
     })
 
     miMachineRecipe(event, {
         energy: baseEnergy, time: baseTime, machine: "modern_industrialization:mixer",
-        inputItems: components.map(component => [{ item: `modern_industrialization:${component.name}_dust` }, component.amount]),
-        outputItems: [[{ item: `modern_industrialization:${materialName}_dust` }, totalAmount]],
+        inputItems: components.map(component => [{ item: component[0].dust }, component[1]]),
+        outputItems: [[{ item: outputMaterial.dust }, totalAmount]],
         removeRecipeType: "modern_industrialization:mixer"
     })
+
+    if(components.length != 2) return
 
     miMachineRecipe(event, {
         machine: "extended_industrialization:alloy_smelter",
@@ -29,15 +31,15 @@ function addAlloyRecipes(event, materialName, components, args){
         inputItems: components.map(component => ([
             { 
                 type: "neoforge:compound",
-                amount: component.amount * 9,
+                amount: component[1] * 9,
                 children: [
-                    { item: `modern_industrialization:${component.name}_tiny_dust` },
-                    { item: `${component.nuggetMod || "modern_industrialization"}:${component.name}_nugget` }
+                    { item: component[0].tiny_dust },
+                    { item: component[0].nugget }
                 ]
                 
             }
         ])),
-        outputItems: [[{ item: `modern_industrialization:${materialName}_ingot` }, totalAmount]],
+        outputItems: [[{ item: outputMaterial.ingot }, totalAmount]],
         removeRecipeType: "extended_industrialization:alloy_smelter"
     })
 
@@ -48,15 +50,15 @@ function addAlloyRecipes(event, materialName, components, args){
         inputItems: components.map(component => ([
             {
                 type: "neoforge:compound",
-                amount: component.amount,
+                amount: component[1],
                 children: [
-                    { item: `modern_industrialization:${component.name}_dust` },
-                    { item: `${component.ingotMod || "modern_industrialization"}:${component.name}_ingot` }
+                    { item: component[0].dust },
+                    { item: component[0].ingot }
                 ]
 
             }
         ])),
-        outputItems: [[{ item: `modern_industrialization:${materialName}_ingot` }, totalAmount]],
+        outputItems: [[{ item: outputMaterial.ingot }, totalAmount]],
         removeRecipeType: "extended_industrialization:alloy_smelter"
     })
 
@@ -64,10 +66,10 @@ function addAlloyRecipes(event, materialName, components, args){
         miMachineRecipe(event, {
             energy: baseEnergy * 9, time: baseTime * 2, machine: "extended_industrialization:alloy_smelter",
             inputItems: components.map(component => [
-                { item: `${component.blockMod ? component.blockMod : "modern_industrialization"}:${component.name}_block` }, component.amount]
+                { item: component[0].block }, component[1]]
             ),
-            outputItems: [[{ item: `modern_industrialization:${materialName}_block` }, totalAmount]],
-            removeRecipeType: "modern_industrialization:mixer"
+            outputItems: [[{ item: outputMaterial.block }, totalAmount]],
+            removeRecipeType: "extended_industrialization:alloy_smelter"
         })
     }
 
@@ -77,24 +79,95 @@ function addAlloyRecipes(event, materialName, components, args){
 }
 
 ServerEvents.recipes(event => {
-    addAlloyRecipes(event, "tumbaga", [
-        { name: "copper", amount: 2, ingotMod: "minecraft" , blockMod: "minecraft"}, 
-        { name: "gold", amount: 1, ingotMod: "minecraft", nuggetMod: "minecraft", blockMod: "minecraft" }
-    ])
-    addAlloyRecipes(event, "constantan", [
-        { name: "copper", amount: 1, ingotMod: "minecraft", blockMod: "minecraft" }, 
-        { name: "nickel", amount: 1 }
+
+    let copper = new MIMaterialBuilder("copper")
+        .setPart(MIMaterialBuilder.PartType.ingot, "minecraft:copper_ingot")
+        .setPart(MIMaterialBuilder.PartType.block, "minecraft:copper_block")
+        .build()
+
+    let gold = new MIMaterialBuilder("gold")
+        .setPart(MIMaterialBuilder.PartType.ingot, "minecraft:gold_ingot")
+        .setPart(MIMaterialBuilder.PartType.block, "minecraft:gold_block")
+        .setPart(MIMaterialBuilder.PartType.nugget, "minecraft:gold_nugget")
+        .build()
+
+    let redstone = new MIMaterialBuilder("redstone")
+        .setPart(MIMaterialBuilder.PartType.ingot, null)
+        .setPart(MIMaterialBuilder.PartType.block, "minecraft:redstone_block")
+        .setPart(MIMaterialBuilder.PartType.dust, "minecraft:redstone")
+        .setPart(MIMaterialBuilder.PartType.nugget, null)
+        .build()
+
+    let dawnstone = new MIMaterialBuilder("dawnstone")
+        .setPart(MIMaterialBuilder.PartType.ingot, "embers:dawnstone_ingot")
+        .setPart(MIMaterialBuilder.PartType.block, "embers:dawnstone_block")
+        .build()
+
+    let nickel = new MIMaterialBuilder("nickel").build()
+    let constantan = new MIMaterialBuilder("constantan").build()
+    let cupronickel = new MIMaterialBuilder("cupronickel").build()
+    let tumbaga = new MIMaterialBuilder("tumbaga").build()
+
+    addAlloyRecipes(event, dawnstone, [
+        [copper, 1],
+        [gold, 1]
+    ], {
+        blockRecipe: true
+    })
+
+    addAlloyRecipes(event, constantan, [
+        [copper, 1],
+        [nickel, 1]
     ],{
         blockRecipe: true
     })
-    addAlloyRecipes(event, "cupronickel", [
-        { name: "copper", amount: 1, ingotMod: "minecraft", blockMod: "minecraft" }, 
-        { name: "constantan", amount: 1 }
+
+    addAlloyRecipes(event, cupronickel, [
+        [copper, 1],
+        [constantan, 1]
     ],
     {
         baseEnergy: 16,
         blockRecipe: true
     })
 
+    addAlloyRecipes(event, tumbaga, [
+        [copper, 1],
+        [redstone, 1],
+        [dawnstone, 1]
+    ], {
+        baseEnergy: 4,
+        baseTime: 200
+    })
 
 })
+
+function MIMaterialBuilder(name){
+    this.name = name
+
+    this.config = {
+        ingot: `modern_industrialization:${name}_ingot`,
+        dust: `modern_industrialization:${name}_dust`,
+        tiny_dust: `modern_industrialization:${name}_tiny_dust`,
+        block: `modern_industrialization:${name}_block`,
+        nugget: `modern_industrialization:${name}_nugget`,
+    }
+
+    this.setPart = function(partType, id){
+        this.config[partType] = id
+        return this
+    }
+
+    this.build = function(){
+        return this.config
+    }
+
+}
+
+MIMaterialBuilder.PartType = {
+    ingot: "ingot",
+    dust: "dust",
+    tiny_dust: "tiny_dust",
+    block: "block",
+    nugget: "nugget"
+}

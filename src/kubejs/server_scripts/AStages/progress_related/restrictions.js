@@ -255,6 +255,9 @@ Object.entries({
     "lead_ore": {
         oreId: "modern_industrialization:lead_ore",
         hide: ["modern_industrialization:raw_lead"],
+        lootReplace: {
+            "modern_industrialization:raw_lead": "ytech:pebble"
+        },
         oreTag: "c:ores/lead",
         withDeepslate: true
     },
@@ -262,11 +265,17 @@ Object.entries({
     "tin_ore": {
         oreId: "modern_industrialization:tin_ore",
         hide: ["modern_industrialization:raw_tin"],
+        lootReplace: {
+            "modern_industrialization:raw_tin": "minecraft:flint"
+        },
         withDeepslate: true
     },
     "copper_ore": {
         oreId: "minecraft:copper_ore",
         hide: ["minecraft:raw_copper"],
+        lootReplace: {
+            "minecraft:raw_copper": "ytech:pebble",
+        },
         replace: [{
             "minecraft:raw_copper_block": "chipped:smooth_raw_copper_block_column"
         }],
@@ -276,6 +285,9 @@ Object.entries({
     "iron_ore": {
         oreId: "minecraft:iron_ore",
         hide: ["minecraft:raw_iron"],
+        lootReplace: {
+            "minecraft:raw_iron": "farmersdelight:rope"
+        },
         replace: [{
             "minecraft:raw_iron_block": "chipped:smooth_raw_iron_block_column"
         }],
@@ -288,6 +300,10 @@ Object.entries({
             "minecraft:coal_block": "architects_palette:charcoal_block"
         }],
         hide: ["modern_industrialization:lignite_coal", "minecraft:coal"],
+        lootReplace: {
+            "minecraft:coal": "supplementaries:ash",
+            "modern_industrialization:lignite_coal": "supplementaries:ash"
+        },
         withDeepslate: true
     },
 
@@ -300,6 +316,9 @@ Object.entries({
         replace: [{
             "minecraft:redstone_block": "spectrum:redstone_sand"
         }],
+        lootReplace: {
+            "minecraft:redstone": "modern_industrialization:wood_pulp",
+        },
         hide: ["minecraft:redstone"],
         withDeepslate: true
     },
@@ -309,6 +328,9 @@ Object.entries({
         replace: [{
             "minecraft:lapis_block": "abyssal_decor:lapis_pillar"
         }],
+        lootReplace: {
+            "minecraft:lapis_lazuli": "minecraft:clay_ball",
+        },
         hide: ["minecraft:lapis_lazuli"],
         withDeepslate: true
     },
@@ -318,12 +340,18 @@ Object.entries({
             "minecraft:raw_gold_block": "architects_palette:chiseled_gold_ore_bricks"
         }],
         hide: ["minecraft:raw_gold"],
+        lootReplace: {
+            "minecraft:raw_gold": "minecraft:bone",
+        },
         withDeepslate: true
     },
 
     "quartz_ore": {
         oreId: "modern_industrialization:quartz_ore",
         hide: ["minecraft:quartz"],
+        lootReplace: {
+            "minecraft:quartz": "minecraft:string",
+        },
         //withDeepslate: true
     },
     "salt_ore": {
@@ -342,6 +370,9 @@ Object.entries({
             "minecraft:emerald_block": "architects_palette:chiseled_emerald_ore_bricks"
         }],
         hide: ["minecraft:emerald"],
+        lootReplace: {
+            "minecraft:emerald": "paganbless:essence_of_the_forest",
+        },
         withDeepslate: true
     },
     "diamond_ore": {
@@ -350,6 +381,9 @@ Object.entries({
             "minecraft:diamond_block": "architects_palette:chiseled_diamond_ore_bricks"
         }],
         hide: ["minecraft:diamond"],
+        lootReplace: {
+            "minecraft:diamond": "abyssal_decor:white_pearl",
+        },
         withDeepslate: true
     },
 
@@ -380,6 +414,9 @@ Object.entries({
     "ancient_debris_ore": {
         oreId: "minecraft:ancient_debris",
         hide: ["minecraft:netherite_scrap"],
+        lootReplace: {
+            "minecraft:netherite_scrap": "minecraft:ender_pearl",
+        },
         additionalIds: ["minecraft:nether_gold_ore"],
         builderCallback: (bulder) => {
             bulder.setReplaceId("minecraft:netherrack")
@@ -515,7 +552,27 @@ Object.entries({
                     oreId: fromId,
                     replaceWith: toId
                 })
+
+
+
             })
+        })
+
+    }
+
+    if (data.lootReplace) {
+        Object.entries(data.lootReplace).forEach(([fromId, toId]) => {
+            
+            AStages.addRestrictionForLoot(`${stageId}/loot/${oreId}/${fromId}`, stageId)
+                .applyEverywhere()
+                .restrictItems([fromId])
+                .replacer(stack => {
+                    if (stack.id == fromId) {
+                        return Item.of(toId, stack.getCount())
+                    }
+
+                    return stack
+                })
         })
 
     }
@@ -543,6 +600,17 @@ function oreRestriction(stageId, oreEntry) {
     AStages.addRestrictionForOre(`${stageId}/ore/${oreId}`, stageId, oreId, replaceWith)
         .matchAllBlockStates()
         .affectPlayerActions()
+
+    AStages.addRestrictionForLoot(`${stageId}/loot/${oreId}`, stageId)
+        .applyEverywhere()
+        .restrictItems([oreId])
+        .replacer(stack => {
+            if (stack.id == oreId) {
+                return Item.of(replaceWith, stack.getCount())
+            }
+
+            return stack
+        })
 
     if (replaceSampleWith){
         AStages.addRestrictionForOre(`${stageId}/${sampleId}`, stageId, sampleId, replaceSampleWith)

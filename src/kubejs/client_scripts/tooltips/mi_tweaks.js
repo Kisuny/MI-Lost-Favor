@@ -1,7 +1,20 @@
-
-
 //priority: 2
 
+let miMachineVariationsData = miMachineVariationsData || {}
+
+Object.entries(global.VANILLA_MI_MACHINES_VARIATIONS).forEach(([machineId, variationsObject]) => {
+
+    Object.entries(variationsObject).forEach(([variationId, recipeData]) => {
+
+        let variationMachineId = variationId.replace("modern_industrialization", "mi_tweaks")
+
+        if (recipeData.tooltips) {
+            miMachineVariationsData[variationMachineId] = [recipeData.tooltips, machineId, recipeData.addAsWorkstationTo]
+        }
+
+    })
+
+})
 
 ItemEvents.modifyTooltips(event => {
     Object.entries(global.miTweaksTieredBatchMachineTooltips).forEach(([machineId, tooltipEntry]) => {
@@ -21,6 +34,53 @@ ItemEvents.modifyTooltips(event => {
             // { shift: true },
             tooltip => tooltip.dynamic("milf:mi_tweaks_batch_tooltip")
         )
+    })
+
+    Object.entries(global.VANILLA_MI_MACHINES_VARIATIONS).forEach(([machineId, variationsObject]) => {
+
+        Object.entries(variationsObject).forEach(([variationId, recipeData]) => {
+
+            let variationMachineId = variationId.replace("modern_industrialization", "mi_tweaks")
+
+            if (recipeData.tooltips) {
+                event.modify(
+                    variationMachineId,
+                    tooltip => tooltip.dynamic("milf:mi_tweaks_variation_tooltip")
+                )
+            }
+
+        })
+
+    })
+
+    
+
+})
+
+ItemEvents.dynamicTooltips("milf:mi_tweaks_variation_tooltip", event => {
+    let { item } = event
+    if (!item) return
+
+    let daat = miMachineVariationsData[item.id]
+
+    if (!daat) return
+
+    let [tooltips, machineId, addAsWorkstationTo] = daat
+
+    tooltips.forEach(newTooltip => {
+
+        let machineForLangId = addAsWorkstationTo ? addAsWorkstationTo.at(-1) : machineId
+
+        let machineLang = `rei_categories.${machineForLangId.split(":")[0]}.${machineForLangId.split(":")[1]}`
+
+        let toAdd = Component.translatable(newTooltip,
+            Component.translatable(
+                machineLang
+            )
+        )
+
+        event.add(toAdd.getString())
+
     })
 })
 

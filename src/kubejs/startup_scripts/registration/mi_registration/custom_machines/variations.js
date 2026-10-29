@@ -170,9 +170,9 @@ addMachineVariations(
     (variationId, modifiedData) => {return {
         argsCallback: (args) => {
             if (args.inputItems) {
-                args.inputItems.unshift([{ item: "embers:ember_grit" }, 1, 0.71])
+                args.inputItems.unshift([{ item: "embers:ember_grit" }, 1, 0.109*3])
             } else {
-                args.inputItems = [[{ item: "embers:ember_grit" }, 1, 0.71]]
+                args.inputItems = [[{ item: "embers:ember_grit" }, 1, 0.109 * 3]]
             }
 
             args.energy = 1
@@ -185,7 +185,11 @@ addMachineVariations(
         },
 
         category: `mi_tweaks:${variationId}`,
-        addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData)
+        addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData),
+        tooltips: [
+            "milf.mi_tweaks.tooltip.ember_powered1",
+            "milf.mi_tweaks.tooltip.ember_powered2"
+        ]
     }},
     (variationId, modifiedData) => {
         registerSinglePowerlessMIMachine(
@@ -215,7 +219,11 @@ addMachineVariations(
         },
 
         category: `mi_tweaks:${variationId}`,
-        addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData)
+        addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData),
+        tooltips: [
+            "milf.mi_tweaks.tooltip.solar_powered1",
+            "milf.mi_tweaks.tooltip.solar_powered2"
+        ]
     }},
     (variationId, modifiedData) => {
         registerSinglePowerlessMIMachine(
@@ -260,7 +268,11 @@ addMachineVariations(
             },
 
             category: `mi_tweaks:${variationId}`,
-            addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData)
+            addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData),
+            tooltips: [
+                "milf.mi_tweaks.tooltip.basic_electric1",
+                "milf.mi_tweaks.tooltip.basic_electric2"
+            ]
         }
     },
     (variationId, modifiedData) => {

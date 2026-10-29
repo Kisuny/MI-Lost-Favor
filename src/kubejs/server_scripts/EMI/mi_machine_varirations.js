@@ -4,7 +4,16 @@ Object.entries(global.VANILLA_MI_MACHINES_VARIATIONS).forEach(([machineId, varia
 
         if (recipeData.addAsWorkstationTo) {
             recipeData.addAsWorkstationTo.forEach(category => {
-                $ReiMachineRecipes.registerWorkstation(category, recipeData.category || variationId)
+
+                let variationCategory = recipeData.category || variationId
+
+                $ReiMachineRecipes.registerWorkstation(category, variationCategory)
+
+                RecipeViewerEvents.removeCategories(event => {
+                    event.remove([
+                        variationCategory
+                    ])
+                })
             })
         }
 

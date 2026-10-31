@@ -7,7 +7,16 @@
 		id: "modern_industrialization:plastic_plate"
 	}
 	id: "7F3238D8C7E5EF3C"
-	images: [ ]
+	images: [{
+		click_action: "none:"
+		height: 3.0d
+		id: "0953594E91F9AC83"
+		image: "milf:textures/quest_pic/wip.png"
+		rotation: 0.0d
+		width: 6.0d
+		x: -8.0d
+		y: -21.0d
+	}]
 	order_index: 1
 	quest_links: [
 		{
@@ -2611,6 +2620,149 @@
 			}]
 			x: 0.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["2774191BB4EC55EF"]
+			entity_vis_size: 1.0f
+			id: "3597748A2F80D89B"
+			tasks: [{
+				id: "7F6D945C2BF91854"
+				item: { count: 1, id: "appliedthaumaturge:arcane_assembler" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5011A1CDE7FCA0B5"]
+			entity_vis_size: 1.0f
+			id: "5C06B6C3A1B9AB7A"
+			tasks: [{
+				id: "4E1D52514EF4B72F"
+				item: { count: 1, id: "appliedthaumaturge:upgrade_arcane" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["5011A1CDE7FCA0B5"]
+			entity_vis_size: 1.0f
+			id: "7A0448766FC35B70"
+			tasks: [{
+				id: "4B6D3BBDE92F5E22"
+				item: { count: 1, id: "appliedthaumaturge:upgrade_alchemy" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["5011A1CDE7FCA0B5"]
+			entity_vis_size: 1.0f
+			id: "1792ED2B72C26685"
+			tasks: [{
+				id: "5A4687F9726AAFD4"
+				item: { count: 1, id: "appliedthaumaturge:upgrade_node" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -19.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "59F4624D728FA1A4"
+			tasks: [{
+				id: "082C059FF323BEF2"
+				item: { count: 1, id: "appliedthaumaturge:entangled_wand_core" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -18.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "74CFEC7B8ED53D33"
+			tasks: [{
+				id: "0E850D51ED11057F"
+				item: { count: 1, id: "appliedthaumaturge:blank_knowledge_core" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -19.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "601E75A559C3BE8B"
+			tasks: [
+				{
+					id: "7AD471134B8D208A"
+					item: { count: 1, id: "appliedthaumaturge:diffusion_core" }
+					type: "item"
+				}
+				{
+					id: "2199F620387EB88D"
+					item: { count: 1, id: "appliedthaumaturge:coalescence_core" }
+					type: "item"
+				}
+			]
+			x: -13.0d
+			y: -19.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6A7DAAE2E4F9A7A0"
+			tasks: [{
+				id: "46A75B36FAF1B941"
+				item: { count: 1, id: "appliedthaumaturge:essentia_level_emitter" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -19.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "40D17672CD0BA23E"
+			tasks: [{
+				id: "4C5852744E2B84B1"
+				item: { count: 1, id: "appliedthaumaturge:portable_essentia_cell_1k" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -19.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0E6199CEF11C93D8"
+			tasks: [{
+				id: "1945695FA24902D1"
+				item: { count: 1, id: "appliedthaumaturge:wireless_essentia_terminal" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -18.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0F98614EC3AA803C"
+			tasks: [{
+				id: "0B3CDEA452F655F2"
+				item: { count: 1, id: "appliedthaumaturge:wireless_arcane_terminal" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -18.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "42CDE628B1BE4DB1"
+			tasks: [{
+				id: "50776CDE641CF441"
+				item: { count: 1, id: "appliedthaumaturge:vis_relay_interface" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -18.0d
 		}
 	]
 }

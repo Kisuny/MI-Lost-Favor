@@ -602,6 +602,15 @@
 		"&l<property>Не потребляет воду</property> в таких биомах как: реки, океаны&r"
 	]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
+	quest.0B18D6C562478843.quest_desc: [
+		"Works exactly like the item <keyword>Storage Bus</keyword>, but for essentia: lets the network <positive>read and fill</positive> essentia containers it faces."
+		""
+		"Point it at an <named>ME Essentia Interface</named> of another network to <property>link the two</property>."
+		"{@pagebreak}"
+		"Работает как обычная <keyword>шина хранения</keyword>, только для эссенции: даёт сети <positive>читать и заполнять</positive> хранилища эссенции перед собой."
+		""
+		"Направь её на <named>ME интерфейс эссенции</named> другой сети, чтобы <property>связать их</property>."
+	]
 	quest.0B1A4F013022E0E5.quest_desc: [
 		"The <keyword>Geode-Encased Bookshelf</keyword> grants <positive>Quantic Stability</positive> - it reduces the chance of getting a curse from your enchants. Pair it with a <keyword>Deepshelf of Arcane Treasures</keyword> to safely fish for treasure enchantments."
 		"{@pagebreak}"
@@ -720,6 +729,11 @@
 		""
 		"Кроме того в награду вы получаете линзу, которая отображает множество полезной информации, нужен ли редстоун для работы блока/механизмы, какие слоты принимает сторона машины и т.д. "
 	]
+	quest.0D70C343A1BBC484.quest_desc: [
+		"Like the item <keyword>Export Bus</keyword>, but for essentia: <aqua><wave>pushes</wave></aqua> essentia from the network into the container it faces."
+		"{@pagebreak}"
+		"Как обычная <keyword>шина экспорта</keyword>, только для эссенции: <aqua><wave>выталкивает</wave></aqua> эссенцию из сети в хранилище перед собой."
+	]
 	quest.0D70E9CF33C567A7.quest_desc: [
 		"Drops from a <poison>poisoned</poison> <keyword>llama</keyword>."
 		"{@pagebreak}"
@@ -787,6 +801,15 @@
 		"Некоторые блоки можно <positive>поместить на вершину алтаря</positive>, чтобы <property>усилить его эффект</property>."
 		""
 		"Модернизации имеют &lтип&r, только лучшая модернизация в рамках типа будет засчитана."
+	]
+	quest.0E6199CEF11C93D8.quest_desc: [
+		"The <keyword>Essentia Terminal</keyword>, but <wind><wave>wireless</wave></wind>. Manage your essentia from anywhere within range of a <keyword>Wireless Access Point</keyword>."
+		""
+		"Insert an <named>Alchemy Upgrade</named> to fill and empty jars directly from the network."
+		"{@pagebreak}"
+		"<keyword>Терминал эссенции</keyword>, но <wind><wave>беспроводной</wave></wind>. Управляй эссенцией в радиусе <keyword>точки беспроводного доступа</keyword>."
+		""
+		"Вставь <named>улучшение Алхимии</named>, чтобы наполнять и сливать банки прямо из сети."
 	]
 	quest.0E68687A10D2E318.quest_desc: [
 		"The simplest way to open <keyword>Timedoors</keyword>. Load a <property>Location Card</property> into it, then right-click to open a portal by hand or power it with <warning>Redstone</warning> when placed as a block. It is the <property>best early-game teleport tool</property> and <warning>does not need Time Steel</warning>."
@@ -910,6 +933,19 @@
 		"Perditio и Aqua тратятся только во время плавки."
 		""
 		"Для каждой продвинутой алхимической конструкции нужна <magic>первородная жемчужина</magic> - по книге при крафте она не расходуется, так что восемь жемчужин не понадобится."
+	]
+	quest.0F98614EC3AA803C.quest_desc: [
+		"The <keyword>Arcane Crafting Terminal</keyword> in your hand. Link it in a <keyword>Wireless Access Point</keyword> and charge it in a <keyword>Charger</keyword>."
+		""
+		"The <property>grid, crystals and wand</property> stay inside when you close it. Vis is drawn from the aura of the <magic>chunk you stand in</magic> - an <named>Arcane Charging Card</named> expands the area."
+		""
+		"With a <named>Drain Upgrade</named> it can <soul>drain aura nodes</soul> into the wand inside."
+		"{@pagebreak}"
+		"<keyword>Терминал магического крафта</keyword> в руке. Привяжи его в <keyword>точке беспроводного доступа</keyword> и заряди в <keyword>зарядном устройстве</keyword>."
+		""
+		"<property>Сетка, кристаллы и жезл</property> остаются внутри после закрытия. Вис берётся из ауры <magic>чанка, где ты стоишь</magic> - <named>карта магической зарядки</named> расширяет область."
+		""
+		"С <named>улучшением Истощения</named> может <soul>вытягивать вис из узлов ауры</soul> в жезл внутри."
 	]
 	quest.0F9AA4AABC8BFBEB.quest_desc: [
 		"<positive>Give</positive> your <keyword>Ars Ecclesia</keyword> to the <keyword>Witch</keyword>!"
@@ -1364,6 +1400,15 @@
 		"<positive>Нажмите <key>R</key>, чтобы открыть радиальное меню</positive>, где вы найдёте большинство важных <keyword>горячих клавиш</keyword> модпака."
 		""
 		"Обитатели этих давно забытых <magic>мест</magic> по всему миру на собственном опыте познали, что такое кража, и потому знают, как защитить своё имущество, <warning>запирая его на магические замки</warning>"
+	]
+	quest.1792ED2B72C26685.quest_desc: [
+		"Upgrade for the <keyword>Wireless Arcane Crafting Terminal</keyword>. &7Shift+RMB&r switches to <property>Drain mode</property>."
+		""
+		"In Drain mode, hold <positive>RMB</positive> at an <magic><pulse>aura node</pulse></magic> to <soul>drain it</soul> into the wand inside the terminal - same rules as holding that wand directly. Release or look away to stop."
+		"{@pagebreak}"
+		"Улучшение для <keyword>беспроводного терминала магического крафта</keyword>. &7Shift+ПКМ&r включает <property>режим Истощения</property>."
+		""
+		"В этом режиме держи <positive>ПКМ</positive>, глядя на <magic><pulse>узел ауры</pulse></magic>, чтобы <soul>вытягивать</soul> из него вис в жезл внутри терминала - по тем же правилам, что и с жезлом в руке. Отпусти кнопку или отведи взгляд, чтобы остановить."
 	]
 	quest.17A44FD7738F4496.quest_desc: [
 		"Used to <positive>crush items</positive> to make them less intact"
@@ -2351,6 +2396,15 @@
 		""
 		"Многие части открываются отдельными исследованиями во вкладке <named>Големостроения</named>."
 	]
+	quest.28265FFE921F9366.quest_desc: [
+		"No more pouring jars around the altar. The <named>ME Infusion Provider</named> exposes <positive>all essentia of your ME network</positive> to the <magic><pulse>Runic Matrix</pulse></magic> during <keyword>infusion</keyword>."
+		""
+		"Works with <keyword>Essentia Storage Buses</keyword> too, so an infusion altar can run on its own <property>subnetwork</property>."
+		"{@pagebreak}"
+		"Больше не нужно расставлять банки вокруг алтаря. <named>ME поставщик инфузии</named> открывает <magic><pulse>рунической матрице</pulse></magic> <positive>всю эссенцию ME сети</positive> во время <keyword>инфузии</keyword>."
+		""
+		"Работает и с <keyword>шинами хранения эссенции</keyword>, так что алтарь можно посадить на отдельную <property>подсеть</property>."
+	]
 	quest.2828CD751DD0C8EA.quest_desc: [
 		"<positive>Bestows true flight</positive> upon all within the <magic>circle</magic>."
 		"{@pagebreak}"
@@ -2382,6 +2436,15 @@
 		"A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>. The <keyword>Resonance Tuner</keyword> dampens the clash between Aerial and Earthen arcana, granting <property>+100% Resonance Tuning</property> - <positive>heavily reducing</positive> (or even eliminating) <warning>Instability</warning> at the cost of a slower process."
 		"{@pagebreak}"
 		"<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>. <keyword>Resonance Tuner</keyword> гасит конфликт между воздушной и земной арканой, давая <property>+100% Resonance Tuning</property> - это <positive>сильно снижает</positive> (или вовсе убирает) <warning>нестабильность</warning> ценой более долгого процесса."
+	]
+	quest.28C403B47E080914.quest_desc: [
+		"Your first <named>essentia storage cell</named>. Put it in an <keyword>ME Drive</keyword> and the network can store essentia like items."
+		""
+		"<property>4k</property>, <property>16k</property> and <property>64k</property> tiers come later - each needs better <keyword>processors</keyword> to link more components together."
+		"{@pagebreak}"
+		"Первая <named>ячейка хранения эссенции</named>. Вставь в <keyword>ME привод</keyword>, и сеть будет хранить эссенцию как предметы."
+		""
+		"Уровни <property>4k</property>, <property>16k</property> и <property>64k</property> будут позже - каждому нужны <keyword>процессоры</keyword> получше, чтобы связать больше компонентов."
 	]
 	quest.28DE945FA0D4BCB9.quest_desc: [
 		"&#9BB8EDThis chest&r is literally a safe, only the person who placed it down can open it. Incredible &#C6BCE9magic&r!"
@@ -3095,6 +3158,19 @@
 		"{@pagebreak}"
 		"<keyword>Бездонная... книга?</keyword> Для всех тех красивых набросков, которые «ты» написал об этом прекрасном мире."
 	]
+	quest.3597748A2F80D89B.quest_desc: [
+		"A <keyword>Molecular Assembler</keyword> for <magic>arcane crafting</magic>. On its own it <warning>doesn't know any recipes</warning> - insert a <named>Knowledge Core</named>, and every recipe it remembers becomes available to <keyword>autocrafting</keyword>."
+		""
+		"<keyword>Capacity Cards</keyword> add core slots: <property>up to 3 cores</property> (27 recipes). <keyword>Acceleration Cards</keyword> speed it up."
+		""
+		"Vis is spent in order: <property>Vis Relay buffer</property> -> <property>wand</property> -> <property>essentia crystals</property> (only if no usable wand). An <named>Arcane Charging Card</named> lets it draw aura from nearby chunks."
+		"{@pagebreak}"
+		"<keyword>Молекулярный сборщик</keyword> для <magic>магического крафта</magic>. Сам по себе он <warning>не знает рецептов</warning> - вставь <named>ядро знаний</named>, и все рецепты из него станут доступны <keyword>автокрафту</keyword>."
+		""
+		"<keyword>Карты ёмкости</keyword> открывают слоты ядер: <property>до 3 ядер</property> (27 рецептов). <keyword>Карты ускорения</keyword> ускоряют работу."
+		""
+		"Вис тратится по порядку: <property>буфер ретранслятора виса</property> -> <property>жезл</property> -> <property>кристаллы эссенции</property> (только если нет рабочего жезла). <named>Карта магической зарядки</named> позволяет брать ауру из соседних чанков."
+	]
 	quest.35A512DACA56FF16.quest_desc: [
 		"The Alembic. An old device in the academy that will help purify liquids similar to how the crucible purifies solids. However, they are fragile. In order for this to work, I need a stronger glassy material. I know one located in the Nether. I must find it!"
 		""
@@ -3692,6 +3768,11 @@
 		"Можно почитать о всех комбинациях на самом глифе в <keyword>EMI</keyword>"
 	]
 	quest.3D70D1CA920E0805.title: "free cobble or not"
+	quest.3D71A155E7DADF14.quest_desc: [
+		"Like the item <keyword>Import Bus</keyword>, but for essentia: <aqua><wave>pulls</wave></aqua> essentia from the container it faces into the network."
+		"{@pagebreak}"
+		"Как обычная <keyword>шина импорта</keyword>, только для эссенции: <aqua><wave>втягивает</wave></aqua> эссенцию из хранилища перед собой в сеть."
+	]
 	quest.3D7610F02FB93E78.quest_desc: [
 		"A pouch for your coins"
 		"{@pagebreak}"
@@ -3865,6 +3946,19 @@
 		"<named>Очистка металлов</named>: брось сырую руду в тигель с нужной эссенцией и получишь <keyword>самородный кластер</keyword>. Переплавка кластера даёт <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>вдвое больше слитков</bounce></positive>."
 	]
 	quest.40C152C451D65950.quest_subtitle: "WIP"
+	quest.40D17672CD0BA23E.quest_desc: [
+		"Your essentia, <positive>in your pocket</positive>. <positive>RMB</positive> opens its terminal - deposit or withdraw with <keyword>phials</keyword> and <keyword>jars</keyword>. You can also <positive>RMB</positive> a filled container onto the cell in your inventory to empty it."
+		""
+		"Holds up to <property>12 aspect types</property> at half the capacity of a regular cell. Recharge it in a <keyword>Charger</keyword>, <keyword>Energy Cards</keyword> extend the battery."
+		""
+		"&7Shift+RMB&r on an <warning>empty</warning> cell disassembles it. Also works in an <keyword>ME Drive</keyword>."
+		"{@pagebreak}"
+		"Эссенция <positive>в кармане</positive>. <positive>ПКМ</positive> открывает её терминал - клади и забирай <keyword>фиалами</keyword> и <keyword>банками</keyword>. Ещё можно нажать <positive>ПКМ</positive> заполненной банкой по ячейке в инвентаре, чтобы слить её туда."
+		""
+		"Вмещает до <property>12 типов аспектов</property>, ёмкость вдвое меньше обычной ячейки. Заряжается в <keyword>зарядном устройстве</keyword>, <keyword>карты энергии</keyword> увеличивают батарею."
+		""
+		"&7Shift+ПКМ&r по <warning>пустой</warning> ячейке разбирает её. Работает и в <keyword>ME приводе</keyword>."
+	]
 	quest.40D2890C91875846.quest_desc: [
 		"The opposite of <keyword>Store</keyword>: golems <wave>take items out</wave> of the container the seal is attached to and just hold them. Use other seals to tell them what to do with the items next."
 		""
@@ -4006,6 +4100,19 @@
 		"{@pagebreak}"
 		"Поглощает vis, когда аура выше <property>95%</property>, и отдаёт, когда она падает ниже <property>75%</property>. Держит ауру чанка стабильной."
 	]
+	quest.42CDE628B1BE4DB1.quest_desc: [
+		"Carries vis across your <keyword>ME network</keyword> between distant <magic>vis relays</magic>."
+		""
+		"Place it on a cable facing a linked relay, &7Shift+RMB&r it with a <keyword>Memory Card</keyword> to record the <property>source</property>. Then <positive>RMB</positive> another interface to make it a <property>receiver</property>, or an <keyword>Arcane Terminal</keyword> / <keyword>Arcane Assembler</keyword> to recharge its wand."
+		""
+		"Needs a <warning>channel</warning>, <warning>4 AE</warning> per draw, both chunks loaded and the <warning>same ME network</warning>."
+		"{@pagebreak}"
+		"Передаёт вис по <keyword>ME сети</keyword> между далёкими <magic>ретрансляторами виса</magic>."
+		""
+		"Поставь на кабель напротив привязанного ретранслятора, нажми &7Shift+ПКМ&r <keyword>картой памяти</keyword>, чтобы записать <property>источник</property>. Потом <positive>ПКМ</positive> по другому интерфейсу сделает его <property>приёмником</property>, а по <keyword>магическому терминалу</keyword> или <keyword>сборщику</keyword> - будет заряжать жезл в нём."
+		""
+		"Нужен <warning>канал</warning>, <warning>4 AE</warning> за забор, оба чанка прогружены и <warning>одна и та же ME сеть</warning>."
+	]
 	quest.42D35BE08BFA8BA5.quest_desc: [
 		"The <keyword>Enchanter's Knife</keyword> (Ars Delight) is a lightweight blade - use it on grass, wheat or rice to get extra stems without spending durability, right-click a pumpkin to carve it, and kill animals with it for a chance at rare secondary drops."
 		"{@pagebreak}"
@@ -4033,6 +4140,19 @@
 		"Это практически &#C6BCE9магия креатива&r!"
 		""
 		"Генератор частиц позволяет &#FEECD6создавать&r большинство частиц из &#CAE4C8Minecraft&r'a, невероятные спецэффекты для любой &#9BB8EDпостройки&r!"
+	]
+	quest.432DBC67C99F9FCF.quest_desc: [
+		"Turns out the <bone>undead</bone> are <wiggle amplitude=0.5 frequency=1.0 phase=1.0>not very bright</wiggle>. The <named>ME Arcane Inscriber</named> <warning>forces</warning> recipes into a <keyword>Knowledge Core</keyword>."
+		""
+		"Load a recipe into the grid and inscribe it. Loading a recipe the core already knows <property>erases</property> it instead."
+		""
+		"One core holds <property>9 recipes</property>. &7Shift+RMB&r with a core in hand wipes it clean."
+		"{@pagebreak}"
+		"Оказалось, <bone>нежить</bone> <wiggle amplitude=0.5 frequency=1.0 phase=1.0>не слишком сообразительна</wiggle>. <named>ME магический гравировщик</named> <warning>принудительно</warning> записывает рецепты в <keyword>ядро знаний</keyword>."
+		""
+		"Загрузи рецепт в сетку и запиши его. Если ядро уже знает этот рецепт, он <property>сотрётся</property>."
+		""
+		"Одно ядро хранит <property>9 рецептов</property>. &7Shift+ПКМ&r с ядром в руке полностью его очищает."
 	]
 	quest.433D4543F6EF194F.quest_desc: ["chunk loader"]
 	quest.4342AF89312E42F7.quest_desc: [
@@ -4243,6 +4363,19 @@
 		"<wiggle amplitude=0.5 frequency=1.0><keyword>Starbuncle Shades</keyword></wiggle> disable a Starbuncle's ability to pick up items or harvest Source Berries - use the Dominion Wand on it to remove the shades again."
 		"{@pagebreak}"
 		"<wiggle amplitude=0.5 frequency=1.0><keyword>Starbuncle Shades</keyword></wiggle> отключают у Старбанкла способность подбирать предметы и собирать Сурс ягоды - снять очки можно, использовав на нём Жезл владения."
+	]
+	quest.46E28C86141DD513.quest_desc: [
+		"Your <keyword>Arcane Workbench</keyword>, hooked into ME. It <positive>refills the crafting grid and crystals</positive> straight from the network. Like a bare workbench, it draws vis from the aura of <property>its own chunk</property>."
+		""
+		"Pick up a <keyword>Thaumometer</keyword> on the cursor and hover a stored item to <magic>scan</magic> it without taking it out."
+		""
+		"Search by aspect: <property>%ignis</property> shows only items containing <aqua>Ignis</aqua>. Works only with <warning>discovered</warning> aspects."
+		"{@pagebreak}"
+		"<keyword>Магический верстак</keyword>, подключённый к ME. <positive>Сам пополняет сетку и кристаллы</positive> из сети. Как и обычный верстак, берёт вис из ауры <property>своего чанка</property>."
+		""
+		"Возьми <keyword>таумометр</keyword> на курсор и наведи на предмет в хранилище, чтобы <magic>просканировать</magic> его, не доставая."
+		""
+		"Поиск по аспекту: <property>%ignis</property> покажет только предметы с <aqua>Ignis</aqua>. Работает только с <warning>открытыми</warning> аспектами."
 	]
 	quest.46E60171B59F733A.quest_desc: [
 		"A device consisting of a case with a <curse><pulse base=0.5 amplitude=1.0>dark mass</pulse></curse> at its center that swirls and consumes nearby light - essentially a contained miniature <magic>black hole</magic>."
@@ -5252,6 +5385,15 @@
 		""
 		"Роняет <keyword>большой панцирь шалкера</keyword>."
 	]
+	quest.588A016BC9D246D5.quest_desc: [
+		"The <named>ME Essentia Interface</named> is a bridge between <keyword>ME networks</keyword>. Point an <keyword>Essentia Storage Bus</keyword> from another network at it, and the two networks <positive>see each other's essentia</positive>."
+		""
+		"It also <aqua><wave>pulls essentia</wave></aqua> from any connected <property>tube</property> and gives it back to anything with stronger suction than a jar."
+		"{@pagebreak}"
+		"<named>ME интерфейс эссенции</named> - мост между <keyword>ME сетями</keyword>. Направь на него <keyword>шину хранения эссенции</keyword> из другой сети, и сети <positive>увидят эссенцию друг друга</positive>."
+		""
+		"Ещё он <aqua><wave>затягивает эссенцию</wave></aqua> из подключённых <property>трубок</property> и отдаёт её всему, что тянет сильнее банки."
+	]
 	quest.58AC66315C962012.quest_desc: [
 		"To mutate a <nature>Toxony plant</nature>, it has to be planted on <poison>Poisonous Farmland</poison> and must not be fully matured."
 		""
@@ -5336,6 +5478,19 @@
 		"Делается из <keyword>заводного разума</keyword>, так что понадобится немного продвинуться в <named>Големостроении</named>."
 	]
 	quest.59E4C997B579A012.quest_desc: [""]
+	quest.59F4624D728FA1A4.quest_desc: [
+		"Two <keyword>silverwood cores</keyword> infused around a <named>Singularity</named> come out as a <glitch frequency=0.7 shiftChance=0.06>bound pair</glitch>. Wands made from them share <positive>one vis reservoir</positive> - at any distance, <fade minAlpha=0.4 frequency=1.0>even between worlds</fade>."
+		""
+		"Leave one wand on a <keyword>Recharge Pedestal</keyword> and carry the other."
+		""
+		"<warning>Note:</warning> the Singularity goes on an <property>outer pedestal</property>, not the center. Cores from different infusions don't link."
+		"{@pagebreak}"
+		"Две <keyword>сердцевины из серебряного дерева</keyword>, пропитанные вокруг <named>сингулярности</named>, выходят <glitch frequency=0.7 shiftChance=0.06>связанной парой</glitch>. Жезлы из них делят <positive>один запас виса</positive> - на любом расстоянии, <fade minAlpha=0.4 frequency=1.0>даже между мирами</fade>."
+		""
+		"Оставь один жезл на <keyword>пьедестале подзарядки</keyword>, а второй носи с собой."
+		""
+		"<warning>Важно:</warning> сингулярность кладётся на <property>боковой пьедестал</property>, не в центр. Сердцевины из разных инфузий не связываются."
+	]
 	quest.5A09DD956F629AC5.quest_desc: [
 		"Can be found once per game by one player"
 		"{@pagebreak}"
@@ -5486,6 +5641,15 @@
 		"Магический камень впитывает чары как губка. Этот добавляет <bounce amplitude=1.5 frequency=1.2 phase=1.0>лёгкости шагу</bounce>: всё, что по нему проходит, на пару секунд получает <positive>больше скорости и ловкости</positive>."
 		""
 		"Проложи из них дорогу между базой и местами, где часто бываешь."
+	]
+	quest.5C06B6C3A1B9AB7A.quest_desc: [
+		"By default arcane devices drink vis only from <property>their own chunk</property>. The <named>Arcane Charging Card</named> extends that to nearby chunks - <property>3x3 area</property> - and splits each draw <positive>evenly</positive> across them."
+		""
+		"Goes into the <keyword>Arcane Crafting Terminal</keyword>, its wireless version and the <keyword>Arcane Assembler</keyword>."
+		"{@pagebreak}"
+		"По умолчанию магические устройства берут вис только из <property>своего чанка</property>. <named>Карта магической зарядки</named> расширяет это на соседние чанки - <property>область 3x3</property> - и делит каждый забор <positive>поровну</positive> между ними."
+		""
+		"Ставится в <keyword>терминал магического крафта</keyword>, его беспроводную версию и <keyword>магический сборщик</keyword>."
 	]
 	quest.5C6F64DF2FA17AA2.quest_desc: [
 		"Can be used to <positive>summon a horse</positive> from any location in the world. "
@@ -5756,6 +5920,21 @@
 		"This ring can be upgraded to other rings"
 		"{@pagebreak}"
 		"Данное кольцо можно улучшать в другие кольца"
+	]
+	quest.601E75A559C3BE8B.quest_desc: [
+		"Modified <keyword>Formation</keyword> and <keyword>Annihilation Cores</keyword>, wrapped in <property>quicksilver</property> so <warning><shake amplitude=0.3 frequency=1.2>corrosive</shake></warning> essentia doesn't eat the circuitry."
+		""
+		"<named>Diffusion Core</named> - diffuses essentia and <glitch frequency=0.6 shiftChance=0.05>digitizes</glitch> it."
+		"<named>Coalescence Core</named> - binds it back into <aqua>raw form</aqua>."
+		""
+		"Base components for every essentia bus and terminal."
+		"{@pagebreak}"
+		"Доработанные <keyword>ядра формирования</keyword> и <keyword>аннигиляции</keyword>, покрытые <property>ртутью</property>, чтобы <warning><shake amplitude=0.3 frequency=1.2>едкая</shake></warning> эссенция не разъела схемы."
+		""
+		"<named>Ядро диффузии</named> - рассеивает эссенцию и <glitch frequency=0.6 shiftChance=0.05>оцифровывает</glitch> её."
+		"<named>Ядро коалесценции</named> - собирает её обратно в <aqua>сырую форму</aqua>."
+		""
+		"Базовые компоненты для всех шин и терминалов эссенции."
 	]
 	quest.6054C54E3E44BA38.quest_desc: [
 		"{image:enchanted:textures/gui/modopedia/circle_magic.png width:100 height:100 align:center}"
@@ -6583,6 +6762,15 @@
 	quest.6A1DA8ABA8F13FC2.title: "World Tier: Frontier"
 	quest.6A2EFED5C079A7AA.quest_subtitle: "WIP"
 	quest.6A7D9640907654A2.quest_desc: ["Combines Spike's cruelty with a deeper purpose: when a non-player creature steps onto it, the array deals a heart of damage and releases 0.5 units of raw Spiritus into the surrounding chunk. Has a brief cooldown; players are immune. Requires an Tabula Animata."]
+	quest.6A7DAAE2E4F9A7A0.quest_desc: [
+		"Like the item <keyword>Level Emitter</keyword>, but watches <aqua>one aspect</aqua>. Emits a <warning><pulse>redstone signal</pulse></warning> when its stored amount goes <property>above</property> or <property>below</property> the threshold you set."
+		""
+		"Use it to start production when an aspect runs low, or stop it before it floods the network."
+		"{@pagebreak}"
+		"Как обычный <keyword>датчик уровня</keyword>, но следит за <aqua>одним аспектом</aqua>. Подаёт <warning><pulse>сигнал редстоуна</pulse></warning>, когда его количество в сети становится <property>выше</property> или <property>ниже</property> заданного порога."
+		""
+		"Пригодится, чтобы запускать производство, когда аспект заканчивается, или останавливать его, пока сеть не переполнилась."
+	]
 	quest.6AADBAB610C068F2.quest_desc: [
 		"Having this on your broom will not only let another player ride it alongside you, but will also give the broom 9 inventory slots"
 		"{@pagebreak}"
@@ -6597,6 +6785,15 @@
 		"Apotheosis Gems will very quickly take up a lot of your storage space. "
 		""
 		"The Gem Case fixes that by allowing you to stack these gems."
+	]
+	quest.6B8864636BB318EE.quest_desc: [
+		"Digitized essentia is invisible until you build this. The <named>ME Essentia Terminal</named> shows <positive>all essentia</positive> your network can access."
+		""
+		"You can <aqua>insert</aqua> and <aqua>extract</aqua> essentia through it with <keyword>phials</keyword> and <keyword>jars</keyword>."
+		"{@pagebreak}"
+		"Оцифрованную эссенцию не видно, пока не построишь это. <named>ME терминал эссенции</named> показывает <positive>всю эссенцию</positive>, доступную сети."
+		""
+		"Через него можно <aqua>класть</aqua> и <aqua>забирать</aqua> эссенцию <keyword>фиалами</keyword> и <keyword>банками</keyword>."
 	]
 	quest.6BE6570F75CC191A.quest_desc: [""]
 	quest.6C7B55F12C222907.quest_desc: [
@@ -7064,6 +7261,15 @@
 		"{@pagebreak}"
 		"<property>ПКМ</property> по существу призывает над врагами одно большое <wind>взрывное облако</wind> на <property>14 урона</property> и три маленьких по <property>5 урона</property>."
 	]
+	quest.7324D2E87D9219D4.quest_desc: [
+		"Essentia stays <warning><shake amplitude=0.3 frequency=1.2>volatile</shake></warning> even in digital form. This warded housing of <keyword>thaumium</keyword> and <keyword>quartz glass</keyword> keeps it contained."
+		""
+		"Combine it with an <property>essentia storage component</property> to get a cell."
+		"{@pagebreak}"
+		"Эссенция остаётся <warning><shake amplitude=0.3 frequency=1.2>нестабильной</shake></warning> даже в цифровом виде. Этот защищённый корпус из <keyword>таумия</keyword> и <keyword>кварцевого стекла</keyword> удерживает её внутри."
+		""
+		"Объедини его с <property>компонентом хранения эссенции</property>, чтобы получить ячейку."
+	]
 	quest.7334667E017F1A95.quest_desc: [
 		"Allows you to fly in water"
 		"{@pagebreak}"
@@ -7117,6 +7323,19 @@
 		"Младший брат <named>мешка</named>, посмотрите, какой он <positive>милый</positive> ❤"
 	]
 	quest.746ED760B3D00FBA.quest_desc: ["This dowsing rod will direct you towards swamps and jungles. Crouch + right click to choose which it will point you to. Right click to find a new one."]
+	quest.74CFEC7B8ED53D33.quest_desc: [
+		"A <bone>zombie brain</bone> that can <named>remember recipes</named>. Machines can't do research, but they can repeat a craft they were <wiggle amplitude=0.5 frequency=1.0 phase=1.0>shown</wiggle>."
+		""
+		"Teach it in the <keyword>ME Arcane Inscriber</keyword>, then insert it into the <keyword>Arcane Assembler</keyword>. One core holds <property>9 recipes</property>."
+		""
+		"&7Shift+RMB&r with a core in hand <warning>wipes</warning> its memory."
+		"{@pagebreak}"
+		"<bone>Мозг зомби</bone>, который умеет <named>запоминать рецепты</named>. Машины не могут исследовать, но могут повторить крафт, который им <wiggle amplitude=0.5 frequency=1.0 phase=1.0>показали</wiggle>."
+		""
+		"Обучи его в <keyword>ME магическом гравировщике</keyword>, потом вставь в <keyword>магический сборщик</keyword>. Одно ядро хранит <property>9 рецептов</property>."
+		""
+		"&7Shift+ПКМ&r с ядром в руке <warning>стирает</warning> его память."
+	]
 	quest.74D4C6332BC7AE9D.quest_desc: [
 		"<keyword>Thaumic Footsteps</keyword>"
 		"{@pagebreak}"
@@ -7241,6 +7460,23 @@
 		"Craft one for yourself today, and you'll get an <positive>unlimited supply of boxes</positive>, a Multiblock Packer 3000 (Safety regulations edition) PLACER, AND a little plushie of our demure, ditzy CEO for free!"
 		""
 		"<fade>ⓘ (We are not responsible for any injuries inflicted on the user by the machine. May contain traces of radioactive waste, horsehairs, and insulin. Not recommended for use for infants, piglins, and fairies) </fade>"
+	]
+	quest.7A0448766FC35B70.quest_desc: [
+		"Upgrade for the <keyword>Wireless Essentia Terminal</keyword>. &7Shift+RMB&r switches between <property>Terminal</property> and <property>Alchemy</property> modes."
+		""
+		"In <aqua><wave>Alchemy mode</wave></aqua>:"
+		"<positive>RMB</positive> on a labeled jar - fills it with matching essentia from the network"
+		"<positive>LMB</positive> on a jar - empties it into the network, no label needed"
+		""
+		"Needs an <warning>active wireless connection</warning> and power."
+		"{@pagebreak}"
+		"Улучшение для <keyword>беспроводного терминала эссенции</keyword>. &7Shift+ПКМ&r переключает режимы <property>Терминал</property> и <property>Алхимия</property>."
+		""
+		"В <aqua><wave>режиме Алхимии</wave></aqua>:"
+		"<positive>ПКМ</positive> по банке с ярлыком - наполняет её нужной эссенцией из сети"
+		"<positive>ЛКМ</positive> по банке - сливает её в сеть, ярлык не нужен"
+		""
+		"Нужно <warning>активное беспроводное подключение</warning> и энергия."
 	]
 	quest.7A1E51EF37A6ADFE.quest_desc: [
 		"\"Deeper went we for powers,"

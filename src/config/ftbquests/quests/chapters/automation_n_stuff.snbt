@@ -2317,5 +2317,65 @@
 			x: -17.5d
 			y: -19.5d
 		}
+		{
+			dependencies: ["1B9347D06EEF84FF"]
+			entity_vis_size: 1.0f
+			id: "588A016BC9D246D5"
+			tasks: [{
+				id: "04EB6977CB038474"
+				item: { count: 1, id: "appliedthaumaturge:essentia_interface" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["1B9347D06EEF84FF"]
+			entity_vis_size: 1.0f
+			id: "28265FFE921F9366"
+			tasks: [{
+				id: "1652890E27FBA395"
+				item: { count: 1, id: "appliedthaumaturge:infusion_provider" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["7324D2E87D9219D4"]
+			entity_vis_size: 1.0f
+			id: "28C403B47E080914"
+			tasks: [{
+				id: "3D0441B3C9949CA6"
+				item: { count: 1, id: "appliedthaumaturge:essentia_cell_1k" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["241DC7E11E0BCAE9"]
+			entity_vis_size: 1.0f
+			id: "7324D2E87D9219D4"
+			tasks: [{
+				id: "59B644324A6ECB00"
+				item: { count: 1, id: "appliedthaumaturge:essentia_cell_housing" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["1B9347D06EEF84FF"]
+			entity_vis_size: 1.0f
+			id: "0B18D6C562478843"
+			tasks: [{
+				id: "0002E670929E7715"
+				item: { count: 1, id: "appliedthaumaturge:essentia_storage_bus" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -26.0d
+		}
 	]
 }

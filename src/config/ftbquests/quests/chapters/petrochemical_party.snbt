@@ -7,15 +7,27 @@
 		id: "immersiveengineering:component_electronic_adv"
 	}
 	id: "2854B367FF485F69"
-	images: [{
-		height: 2.0d
-		id: "05D666672A300F3A"
-		image: "ftbchunks:textures/minimap_info.png"
-		rotation: 0.0d
-		width: 2.0d
-		x: 4.5d
-		y: -3.0d
-	}]
+	images: [
+		{
+			height: 2.0d
+			id: "05D666672A300F3A"
+			image: "ftbchunks:textures/minimap_info.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			click_action: "none:"
+			height: 3.0d
+			id: "58CF316C7F410FD3"
+			image: "milf:textures/quest_pic/wip.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -8.0d
+			y: -8.5d
+		}
+	]
 	order_index: 2
 	quest_links: [
 		{
@@ -1581,6 +1593,64 @@
 			}]
 			x: -3.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["2F86392A01EAA34B"]
+			entity_vis_size: 1.0f
+			id: "6B8864636BB318EE"
+			tasks: [{
+				id: "4B22B29C43851540"
+				item: { count: 1, id: "appliedthaumaturge:essentia_terminal" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F86392A01EAA34B"]
+			entity_vis_size: 1.0f
+			id: "46E28C86141DD513"
+			tasks: [{
+				id: "0557E4FE0336C284"
+				item: { count: 1, id: "appliedthaumaturge:arcane_terminal" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F86392A01EAA34B"]
+			entity_vis_size: 1.0f
+			id: "432DBC67C99F9FCF"
+			tasks: [{
+				id: "725C512E2A7DBF2C"
+				item: { count: 1, id: "appliedthaumaturge:arcane_inscriber" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0D70C343A1BBC484"
+			tasks: [{
+				id: "7F705ABE5B356376"
+				item: { count: 1, id: "appliedthaumaturge:essentia_export_bus" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3D71A155E7DADF14"
+			tasks: [{
+				id: "739A4057A05825C9"
+				item: { count: 1, id: "appliedthaumaturge:essentia_import_bus" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.0d
 		}
 	]
 }

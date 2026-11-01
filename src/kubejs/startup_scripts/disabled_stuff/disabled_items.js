@@ -366,6 +366,10 @@ global.disabledItems = [
     new DisabledItemBuilder("thaumaturge:plate_brass"),
     new DisabledItemBuilder("thaumaturge:plate_thaumium"),
     new DisabledItemBuilder("thaumaturge:plate_void"),
+    new DisabledItemBuilder("thaumaturge:deepslate_ore_quartz"),
+    new DisabledItemBuilder("thaumaturge:ore_quartz"),
+    new DisabledItemBuilder("thaumaturge:jar_creative"),
+    new DisabledItemBuilder("appliedthaumaturge:essentia_cell_creative"),
     new DisabledItemBuilder("farmersdelight:flint_knife")
         .replaceWith("ytech:flint_knife").replaceIn(["LOOT_TABLES"]),
 

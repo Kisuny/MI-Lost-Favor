@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+
+    miMachineRecipe(event, {
+        energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
+        inputItems: [
+            [{ item: "immersiveengineering:treated_wood_horizontal" }, 6],
+            [{ item: "embers:adhesive" }, 2],
+        ],
+        inputFluids: [
+            [{ fluid: "embers:soul_crude" }, 100],
+        ],
+        outputItems: [[{ item: "embers:sealed_planks" }, 6]],
+        removeRecipe:true
+    })
+
+
     miMachineRecipe(event, {
         energy: 4, time: 656, machine: "modern_industrialization:blast_furnace",
         inputItems: [

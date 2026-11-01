@@ -115,6 +115,15 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
+    ytechChoppingCraft(event, {
+        inputItems: [[{ item: "minecraft:quartz_block" }]],
+        outputItems: [[{ id: "modern_industrialization:quartz_crushed_dust" }, 1]],
+        tool: neoCompound([
+            { item: "modern_industrialization:iron_hammer" },
+            { item: "modern_industrialization:steel_hammer" },
+        ]),
+        compatOff: true
+    })
 
     ytechChoppingCraft(event, {
         inputItems: [[{ item: "architects_palette:rotten_flesh_block" }]],

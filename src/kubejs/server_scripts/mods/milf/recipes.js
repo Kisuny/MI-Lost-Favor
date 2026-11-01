@@ -7,7 +7,11 @@ function milfClayCrucibleRecipe(event, args){
         output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000 }),
     }
     if (!args.compatOff) {
-
+        miMachineRecipe(event, {
+            energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
+            inputItems: args.inputItems,
+            outputFluids: args.outputFluids,
+        })
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
@@ -23,7 +27,11 @@ function milfClayCrucibleKilnRecipe(event, args) {
         output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000 }),
     }
     if (!args.compatOff) {
-
+        miMachineRecipe(event, {
+            energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
+            inputItems: args.inputItems,
+            outputFluids: args.outputFluids,
+        })
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
@@ -54,7 +62,7 @@ function milfKilnSmeltingRecipe(event, args) {
     }
     if (!args.compatOff) {
         miMachineRecipe(event, {
-            energy: 4, time: 200, machine: "extended_industrialization:alloy_smelter",
+            energy: 4, time: 200, machine: "modern_industrialization:mi_furnace",
             inputItems: args.inputItems,
             outputItems: args.outputItems
         })
@@ -71,18 +79,33 @@ function milfChiselHitRecipe(event, args) {
     }
     if(args.outputItems[1]){
         recipe.output_block= Object.assign({}, args.outputItems[1][0], { count: 1 })
+
+        if (!args.compatOff) {
+            miMachineRecipe(event, {
+                energy: 2, time: 200, machine: "modern_industrialization:assembler",
+                inputItems: args.inputItems,
+                outputItems: args.outputItems
+            })
+        }
+
     } else {
         if (!args.compatOff) {
+
             miMachineRecipe(event, {
                 energy: 2, time: 200, machine: "modern_industrialization:cutting_machine",
                 inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
                 inputItems: args.inputItems,
                 outputItems: args.outputItems
             })
+                
+
         }
     }
 
-    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    if (args.removeRecipe) { 
+        event.remove({ output: args.outputItems[0][0].id })
+        if (args.outputItems[1]) event.remove({ output: args.outputItems[1][0].id })
+    }
     event.custom(recipe)
 }
 

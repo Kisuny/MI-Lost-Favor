@@ -119,10 +119,10 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.credit.fluid', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Fluid')}`)
 
 
-    event.add('milf.mi_tweaks.tooltip.solar_powered1', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes with ${MilfEffects.GRAD.MILF('2X')} efficiency`)
+    event.add('milf.mi_tweaks.tooltip.solar_powered1', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes with ${MilfEffects.GRAD.MILF('2.5X')} efficiency`)
     event.add('milf.mi_tweaks.tooltip.solar_powered2', `Requires ${MilfEffects.GRAD.MILF('direct sunlight')} to run`)
 
-    event.add('milf.mi_tweaks.tooltip.basic_electric1', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes with ${MilfEffects.GRAD.MILF('5X')} efficiency`)
+    event.add('milf.mi_tweaks.tooltip.basic_electric1', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes with ${MilfEffects.GRAD.MILF('4X')} efficiency`)
     event.add('milf.mi_tweaks.tooltip.basic_electric2', `Requires  <item id=modern_industrialization:redstone_battery size=0.08/> and Redstone Acid to run`)
 
     event.add('milf.mi_tweaks.tooltip.ember_powered1', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes with ${MilfEffects.GRAD.MILF('1.5X')} efficiency`)

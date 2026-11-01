@@ -7,7 +7,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const anvilSmashingCraft = (event, args) => {
+function paganAnvilSmashingRecipe(event, args) {
     let recipe = {
         type: "paganbless:anvil_smashing",
         ingredients: [],
@@ -27,15 +27,15 @@ const anvilSmashingCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
 
-    function anvil_recipe(inputs, output) {
-        anvilSmashingCraft(event, {
+    function anvulRecipe(inputs, output) {
+        paganAnvilSmashingRecipe(event, {
             inputItems: inputs,
             outputItems: [output],
             removeRecipe: true
         })
     }
 
-    anvil_recipe(
+    anvulRecipe(
         [
             [{ "tag": "c:bolts/aluminum" }, 4],
             [{ "tag": "c:rods/aluminum" }, 4],
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
     //#region mi stuff
 
-    anvil_recipe(
+    anvulRecipe(
         [
             [{ "tag": "c:bolts/bronze" }, 8],
             [{ "item": "modern_industrialization:fire_clay_bricks" }, 1],
@@ -56,13 +56,22 @@ ServerEvents.recipes(event => {
         [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1]
     )
 
-    anvil_recipe(
+    anvulRecipe(
         [
             [{ "item": "immersiveengineering:fluid_pipe" }, 6],
             [{ "item": "milf:steel_infused_glass" }, 1],
             [{ "item": "milf:steel_machine_bit" }, 10],
         ],
         [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
+    )
+
+    anvulRecipe(
+        [
+            [{ "item": "minecraft:stick" }, 2],
+            [{ "item": "modern_industrialization:iron_bolt" }, 3],
+            [{ "item": "modern_industrialization:iron_rod" }, 2],
+        ],
+        [{ "id": 'minecraft:iron_pickaxe' }, 1]
     )
 
     //#endregion

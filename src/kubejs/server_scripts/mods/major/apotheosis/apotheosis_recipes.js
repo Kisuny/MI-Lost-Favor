@@ -87,6 +87,52 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "PPP",
+            "SCS",
+            "WWW"
+        ],
+        key: {
+            C: { item: "modern_industrialization:forge_hammer" },
+            P: { item: "modern_industrialization:steel_large_plate" },
+            S: { item: "apotheosis:gem_dust" },
+            W: { item: "embers:sealed_planks" }
+        },
+        outputItems: [[{ id: "apotheosis:salvaging_table" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PPP",
+            "WSW",
+            "W W"
+        ],
+        key: {
+            P: { item: "modern_industrialization:steel_large_plate" },
+            S: { item: "apotheosis:gem_dust" },
+            W: { item: "embers:sealed_planks" }
+        },
+        outputItems: [[{ id: "apotheosis:salvaging_table" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "GGG",
+            "WSW",
+            "WWW"
+        ],
+        key: {
+            G: { item: "milf:steel_infused_glass" },
+            S: { item: "apotheosis:gem_dust" },
+            W: { item: "embers:sealed_planks" }
+        },
+        outputItems: [[{ id: "apotheosis:salvaging_table" }, 1]],
+        removeRecipe: true
+    })
+
     pedestalFromRecipe(event, {
         id: "apothic_enchanting:hellshelf",
         replace: [

@@ -163,6 +163,39 @@ ServerEvents.recipes(event => {
 
     yTechShaped(event, {
         pattern: [
+            'BRB',
+            'R#R',
+            'BRB'
+        ],
+        key: {
+            R: { "item": "modern_industrialization:copper_rod" },
+            B: { "item": "modern_industrialization:copper_bolt" },
+            "#": neoCompound([
+                { "item": "ytech:lead_hammer" },
+                { tag: "modern_industrialization:forge_hammer_tools" }
+            ])
+        },
+        outputItems: [[{ id: "ytech:copper_mesh" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            'BRB',
+            'R#R',
+            'BRB'
+        ],
+        key: {
+            R: { "item": "modern_industrialization:bronze_rod" },
+            B: { "item": "modern_industrialization:bronze_bolt" },
+            "#": { "item": "modern_industrialization:iron_hammer" }
+        },
+        outputItems: [[{ id: "ytech:bronze_mesh" }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
             ' #R',
             ' R ',
             'S  '

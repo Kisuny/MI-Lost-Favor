@@ -3385,8 +3385,8 @@
 				item: { count: 1, id: "embers:ember_energy_converter" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 0.5d
+			x: -11.0d
+			y: 1.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -3399,6 +3399,19 @@
 			}]
 			x: -13.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["74CB697B5C2A904D"]
+			entity_vis_size: 1.0f
+			id: "2059FD3053704DCF"
+			shape: "heart"
+			tasks: [{
+				id: "4420973308BFC45F"
+				item: { count: 1, id: "embers:tyrfing" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
 		}
 	]
 }

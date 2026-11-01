@@ -201,21 +201,21 @@ ServerEvents.recipes(event => {
 
     })
 
-    yTechShaped(event, {
-        pattern: [
-            "RBR",
-            "BsB",
-            " s#",
-        ],
-        key: {
-            "#": { "tag": "c:hammers" },
-            "s": { "item": "minecraft:stick" },
-            "B": { "item": "modern_industrialization:iron_bolt" },
-            "R": { "item": "modern_industrialization:iron_rod" },
-        },
-        outputItems: [[{ id: `minecraft:iron_pickaxe` }, 1]],
-        removeRecipe: true
-    })
+    // yTechShaped(event, {
+    //     pattern: [
+    //         "RBR",
+    //         "BsB",
+    //         " s#",
+    //     ],
+    //     key: {
+    //         "#": { "tag": "c:hammers" },
+    //         "s": { "item": "minecraft:stick" },
+    //         "B": { "item": "modern_industrialization:iron_bolt" },
+    //         "R": { "item": "modern_industrialization:iron_rod" },
+    //     },
+    //     outputItems: [[{ id: `minecraft:iron_pickaxe` }, 1]],
+    //     removeRecipe: true
+    // })
 
     milfShaped(event, {
         pattern: [
@@ -308,17 +308,15 @@ ServerEvents.recipes(event => {
 
     yTechShaped(event, {
         pattern: [
-            "SP#",
-            "RBP",
+            "SR#",
+            "R R",
             "rRS",
         ],
         key: {
             "#": { "tag": "c:files" },
             "S": { "item": "ytech:leather_strips" },
             "R": { "item": "modern_industrialization:iron_rod" },
-            "P": { "item": "modern_industrialization:iron_plate" },
-            "B": { "item": "modern_industrialization:iron_bolt" },
-            "r": { "item": "modern_industrialization:steel_ring" },
+            "r": { "item": "modern_industrialization:iron_ring" },
         },
         outputItems: [[{ id: "minecraft:shears" }, 1]],
         removeRecipe: true

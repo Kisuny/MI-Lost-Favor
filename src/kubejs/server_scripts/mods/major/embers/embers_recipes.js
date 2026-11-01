@@ -35,6 +35,31 @@ function embersMixingRecipe(event, args) {
     event.custom(recipe)
 }
 
+function embersAlchemyRecipe(event, args) {
+
+    let inputs = []
+    let aspects = []
+
+    args.inputItems.forEach(entry => inputs.push(Object.assign(entry[0])))
+    args.aspects.forEach(aspect => aspects.push(Object.assign(aspect[0])))
+
+    let recipe = {
+        type: "embers:alchemy",
+        aspects: aspects,
+        inputs: inputs,
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+        tablet: args.tablet || {item: "minecraft:barrier"}
+    }
+
+    if (!args.compatOff) {
+
+    }
+
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+
+    event.custom(recipe)
+}
+
 function embersBoilingRecipe(event, args) {
 
     let recipe = {
@@ -76,6 +101,9 @@ ServerEvents.recipes(event => {
     event.remove({type:"embers:melting"})
     event.remove({ type: "embers:stamping" })
     event.remove({ type: "embers:boiling" })
+    event.remove({type: "embers:alchemy"})
+
+    //#region melting
 
     entriesForEach({
         "modern_industrialization:copper_dust": {
@@ -125,6 +153,10 @@ ServerEvents.recipes(event => {
         })
     })
 
+    //#endregion
+
+    //#region stamping
+
     entriesForEach({
         "embers:molten_iron" : {
             ingot: "minecraft:iron_ingot",
@@ -133,7 +165,7 @@ ServerEvents.recipes(event => {
             plate: "modern_industrialization:iron_plate",
             bolt: "modern_industrialization:iron_bolt",
             gear: "modern_industrialization:iron_gear",
-            aspectus: "embers:iron_aspectus"
+            //aspectus: "embers:iron_aspectus"
         },
         "embers:molten_bronze": {
             ingot: "modern_industrialization:bronze_ingot",
@@ -149,7 +181,7 @@ ServerEvents.recipes(event => {
             nugget: "modern_industrialization:silver_nugget",
             plate: "modern_industrialization:silver_plate",
             bolt: "modern_industrialization:silver_bolt",
-            aspectus: "embers:silver_aspectus"
+            //aspectus: "embers:silver_aspectus"
         },
         "embers:molten_invar": {
             ingot: "modern_industrialization:invar_ingot",
@@ -172,7 +204,7 @@ ServerEvents.recipes(event => {
             nugget: "modern_industrialization:lead_nugget",
             plate: "modern_industrialization:lead_plate",
             bolt: "modern_industrialization:lead_bolt",
-            aspectus: "embers:lead_aspectus"
+            //aspectus: "embers:lead_aspectus"
         },
         "embers:molten_tin": {
             ingot: "modern_industrialization:tin_ingot",
@@ -197,7 +229,7 @@ ServerEvents.recipes(event => {
             plate: "modern_industrialization:copper_plate",
             bolt: "modern_industrialization:copper_bolt",
             gear: "modern_industrialization:copper_gear",
-            aspectus: "embers:copper_aspectus"
+            //aspectus: "embers:copper_aspectus"
         },
         "embers:molten_dawnstone": {
             ingot: "embers:dawnstone_ingot",
@@ -277,7 +309,7 @@ ServerEvents.recipes(event => {
                 [{ item: "embers:gear_stamp" }],
             ],
             inputFluids: [
-                [{ fluid: fluid }, 1000]
+                [{ fluid: fluid }, 700]
             ],
             outputItems: [
                 [{ id: gear }],
@@ -306,9 +338,35 @@ ServerEvents.recipes(event => {
             [{ item: "embers:ember_crystal" }],
         ],
         outputItems: [
-            [{ id: "embers:ember_grit" }],
+            [{ id: "embers:ember_grit" }, 3],
         ]
     })
+
+    Object.entries({
+        "minecraft:raw_copper": "milf:crushed_copper",
+        "minecraft:raw_gold": "milf:crushed_gold",
+        "minecraft:raw_iron": "milf:crushed_iron",
+        "modern_industrialization:raw_tin": "milf:crushed_tin",
+        "modern_industrialization:raw_lead": "milf:crushed_lead",
+
+        "milf:crushed_copper": "modern_industrialization:copper_dust",
+        "milf:crushed_gold": "modern_industrialization:gold_dust",
+        "milf:crushed_iron": "modern_industrialization:iron_dust",
+        "milf:crushed_lead": "modern_industrialization:lead_dust",
+        "milf:crushed_tin": "modern_industrialization:tin_dust"
+    }).forEach(([crushedOre, dust]) => {
+        embersStampingRecipe(event, {
+            inputItems: [
+                [{ item: "embers:flat_stamp" }],
+                [{ item: crushedOre }],
+            ],
+            outputItems: [
+                [{ id: dust }, 2],
+            ]
+        })
+    })
+
+    //#endregion
 
     milfChiselHitRecipe(event, {
         inputItems: [
@@ -351,6 +409,8 @@ ServerEvents.recipes(event => {
         stirs: 4,
         removeRecipe:true
     })
+
+    //#region bloomery
 
     milfBloomeryRecipe(event, {
         inputItems: [
@@ -437,6 +497,8 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    //#endregion
+
     milfClayCrucibleKilnRecipe(event, {
         inputItems: [
             [{ tag: "c:foods/raw_fish" }, 3],
@@ -479,6 +541,1349 @@ ServerEvents.recipes(event => {
             [{ fluid: "modern_industrialization:steam" }, 1]
         ]
     })
+
+    embersBoilingRecipe(event, {
+        inputFluids: [
+            [{ fluid: "embers:dwarven_oil" }, 1]
+        ],
+        outputFluids: [
+            [{ fluid: "embers:dwarven_gas" }, 1]
+        ]
+    })
+
+    //#region alchemy
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:caminite_plate" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:codebreaking_slate" }],
+        ],
+
+        tablet: { item: "embers:archaic_brick" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "modern_industrialization:lead_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:codebreaking_slate" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:lead_aspectus" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:silver_plate" }],
+            [{ item: "modern_industrialization:silver_rod" }],
+            [{ item: "embers:iron_aspectus" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:silver_aspectus" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "modern_industrialization:lead_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:codebreaking_slate" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:lead_aspectus" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:copper_large_plate" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "minecraft:soul_sand" }],
+            [{ item: "minecraft:soul_sand" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:copper_aspectus" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:dawnstone_block" }],
+            [{ item: "embers:dawnstone_block" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:codebreaking_slate" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:dawnstone_anvil" }],
+        ],
+
+        tablet: { item: "embers:caminite_bricks" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:copper_plate" }],
+            [{ item: "modern_industrialization:tin_bolt" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:ember_dial" }],
+        ],
+
+        removeRecipe: true,
+
+        tablet: { item: "milf:bronze_glass" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:iron_gear" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:silver_aspectus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:atmospheric_gauge" }],
+        ],
+
+        removeRecipe: true,
+
+        tablet: { item: "embers:ember_dial" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "modern_industrialization:tin_bolt" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:item_dial" }],
+        ],
+
+        removeRecipe: true,
+
+        tablet: { item: "milf:bronze_glass" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "modern_industrialization:tin_bolt" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:fluid_dial" }],
+        ],
+
+        removeRecipe: true,
+
+        tablet: { item: "milf:bronze_glass" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:silver_plate" }],
+            [{ item: "modern_industrialization:tin_bolt" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:silver_aspectus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:clockwork_attenuator" }],
+        ],
+
+        removeRecipe: true,
+
+        tablet: { item: "milf:bronze_glass" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:silver_plate" }],
+            [{ item: "modern_industrialization:silver_plate" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }]
+        ],
+
+        outputItems: [
+            [{ id: "embers:mirror_relay" }, 4],
+        ],
+
+        removeRecipe: true,
+
+        tablet: { item: "modern_industrialization:lead_plate" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:archaic_brick" }],
+            [{ item: "embers:archaic_brick" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:codebreaking_slate" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:archaic_circuit" }],
+        ],
+
+        tablet: { item: "embers:ember_dial" },
+        removeRecipe:true
+
+    })
+
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:archaic_brick" }],
+            [{ item: "modern_industrialization:dawnstone_rod" }],
+            [{ item: "modern_industrialization:dawnstone_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:intelligent_apparatus" }],
+        ],
+
+        tablet: { item: "embers:archaic_circuit" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "ytech:leather_strips" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:explosion_charm" }],
+        ],
+
+        tablet: { item: "embers:archaic_circuit" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:explosion_charm" }],
+            [{ item: "embers:ancient_motive_core" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:codebreaking_slate" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:explosion_pedestal" }],
+        ],
+
+        tablet: { item: "embers:alchemy_pedestal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:plate_stamp" }],
+            [{ item: "embers:ember_crystal" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:mnemonic_inscriber" }],
+        ],
+
+        tablet: { item: "embers:ember_ejector" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "spectrum:shimmerstone_gem" }],
+            [{ item: "embers:ember_grit" }],
+            [{ item: "spectrum:shimmerstone_gem" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:glimmer_crystal" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "modern_industrialization:iron_double_ingot" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:iron_aspectus" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:tin_rod" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:isolated_materia" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:glimmer_crystal" }],
+            [{ item: "embers:ember_shard" }],
+            [{ item: "embers:ember_shard" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:glimmer_lamp" }],
+        ],
+
+        tablet: { item: "embers:ember_lantern" },
+        removeRecipe:true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:caminite_bricks" }],
+            [{ item: "embers:archaic_circuit" }],
+            [{ item: "modern_industrialization:copper_plate" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:automatic_hammer" }],
+        ],
+
+        tablet: { item: "embers:tinker_hammer" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_shard" }],
+            [{ item: "embers:ember_shard" }],
+            [{ item: "embers:ember_shard" }],
+            [{ item: "embers:ember_crystal" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:ember_crystal_cluster" }],
+        ],
+
+        tablet: { item: "embers:ember_grit" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ash" }],
+            [{ item: "modern_industrialization:dawnstone_large_plate" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:silver_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:wildfire_core" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal_cluster" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:silver_ingot" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "embers:ember_crystal" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:resonating_bell" }],
+        ],
+
+        tablet: { item: "modern_industrialization:silver_ingot" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:archaic_circuit" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:eldritch_insignia" }],
+        ],
+
+        tablet: { item: "embers:archaic_circuit" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:winding_gears" }],
+        ],
+
+        tablet: { item: "modern_industrialization:dawnstone_gear" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "minecraft:gunpowder" }],
+            [{ item: "minecraft:gunpowder" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:blasting_core" }],
+        ],
+
+        tablet: { item: "immersiveengineering:component_iron" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:coal_dust" }],
+
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:smoky_tinker_lens" }],
+        ],
+
+        tablet: { item: "embers:tinker_lens" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:dawnstone_large_plate" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "milf:small_steel_fluid_container" }],
+            [{ item: "immersiveengineering:component_iron" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:cinder_jet" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe:true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:dawnstone_large_plate" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:diffraction_barrel" }],
+        ],
+
+        tablet: { item: "embers:dawnstone_ingot" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:dawnstone_plate" }],
+            [{ item: "modern_industrialization:dawnstone_rod" }],
+            [{ item: "modern_industrialization:dawnstone_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:caster_orb" }],
+        ],
+
+        tablet: { item: "embers:ember_crystal_cluster" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:dawnstone_plate" }],
+            [{ item: "modern_industrialization:dawnstone_plate" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:flame_barrier" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "embers:ember_crystal" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:ashen_amulet" }],
+        ],
+
+        tablet: { item: "embers:ash" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ tag: "c:sand" }],
+            [{ tag: "c:sand" }],
+            [{ tag: "c:sand" }],
+            [{ tag: "c:sand" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "minecraft:soul_sand" }, 4],
+        ],
+
+        tablet: { item: "embers:ash" }
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:dawnstone_plate" }],
+            [{ item: "modern_industrialization:copper_rod" }],
+            [{ item: "modern_industrialization:copper_rod" }],
+            [{ item: "modern_industrialization:copper_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:superheater" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "modern_industrialization:dawnstone_rod" }],
+            [{ item: "modern_industrialization:dawnstone_rod" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:copper_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:focal_lens" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "modern_industrialization:silver_plate" }],
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "modern_industrialization:silver_plate" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:copper_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:shifting_scales" }],
+        ],
+
+        tablet: { item: "embers:ashen_fabric" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:tin_nugget" }],
+            [{ item: "modern_industrialization:tin_ingot" }],
+            [{ item: "modern_industrialization:tin_plate" }],
+            [{ item: "modern_industrialization:tin_rod" }],
+            [{ item: "modern_industrialization:tin_bolt" }],
+            [{ item: "modern_industrialization:tin_block" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:tin_crystal_seed" }],
+        ],
+
+        tablet: { item: "embers:ancient_motive_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:gold_nugget" }],
+            [{ item: "minecraft:gold_ingot" }],
+            [{ item: "modern_industrialization:gold_plate" }],
+            [{ item: "modern_industrialization:gold_rod" }],
+            [{ item: "modern_industrialization:gold_bolt" }],
+            [{ item: "minecraft:gold_block" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:gold_crystal_seed" }],
+        ],
+
+        tablet: { item: "embers:ancient_motive_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_nugget" }],
+            [{ item: "modern_industrialization:lead_ingot" }],
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "modern_industrialization:lead_rod" }],
+            [{ item: "modern_industrialization:lead_bolt" }],
+            [{ item: "modern_industrialization:lead_block" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:lead_crystal_seed" }],
+        ],
+
+        tablet: { item: "embers:ancient_motive_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:iron_nugget" }],
+            [{ item: "minecraft:iron_ingot" }],
+            [{ item: "modern_industrialization:iron_plate" }],
+            [{ item: "modern_industrialization:iron_rod" }],
+            [{ item: "modern_industrialization:iron_bolt" }],
+            [{ item: "minecraft:iron_block" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:iron_crystal_seed" }],
+        ],
+
+        tablet: { item: "embers:ancient_motive_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:copper_nugget" }],
+            [{ item: "minecraft:copper_ingot" }],
+            [{ item: "modern_industrialization:copper_plate" }],
+            [{ item: "modern_industrialization:copper_rod" }],
+            [{ item: "modern_industrialization:copper_bolt" }],
+            [{ item: "minecraft:copper_block" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:copper_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:copper_crystal_seed" }],
+        ],
+
+        tablet: { item: "embers:ancient_motive_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal_cluster" }],
+            [{ item: "embers:dawnstone_block" }],
+            [{ item: "embers:dawnstone_block" }],
+            [{ item: "modern_industrialization:iron_large_plate" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:inferno_forge" }],
+        ],
+
+        tablet: { item: "embers:mechanical_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "modern_industrialization:dawnstone_large_plate" }],
+            [{ item: "embers:ember_funnel" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:codebreaking_slate" }],
+            [{ item: "embers:lead_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:crystal_cell" }],
+        ],
+
+        tablet: { item: "embers:mechanical_core" },
+        removeRecipe: true
+
+    })
+
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "milf:pottery_clay_ball" }],
+            [{ item: "milf:fire_clay_ball" }],
+            [{ item: "architects_palette:cerebral_plate" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:adhesive" }, 3],
+        ],
+
+        tablet: { item: "embers:caminite_blend" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:archaic_light" }],
+            [{ item: "embers:archaic_light" }],
+            [{ item: "embers:archaic_light" }],
+            [{ item: "embers:archaic_light" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:field_chart" }],
+        ],
+
+        tablet: { item: "embers:atmospheric_gauge" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:wildfire_core" }],
+            [{ item: "modern_industrialization:dawnstone_gear" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:clockwork_pickaxe" }],
+        ],
+
+        tablet: { item: "ytech:bronze_pickaxe" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:wildfire_core" }],
+            [{ item: "modern_industrialization:dawnstone_gear" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:clockwork_axe" }],
+        ],
+
+        tablet: { item: "ytech:bronze_axe" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:wildfire_core" }],
+            [{ item: "modern_industrialization:dawnstone_gear" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:grandhammer" }],
+        ],
+
+        tablet: { item: "ytech:bronze_hammer" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:wildfire_core" }],
+            [{ item: "modern_industrialization:dawnstone_gear" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "modern_industrialization:dawnstone_curved_plate" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:blazing_ray" }],
+        ],
+
+        tablet: { item: "immersiveengineering:revolver" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:wildfire_core" }],
+            [{ item: "modern_industrialization:dawnstone_gear" }],
+            [{ item: "modern_industrialization:dawnstone_ring" }],
+            [{ item: "modern_industrialization:silver_double_ingot" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:cinder_staff" }],
+        ],
+
+        tablet: { item: "immersiveengineering:treated_post" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:carbon_dust" }],
+            [{ item: "modern_industrialization:carbon_dust" }],
+            [{ item: "modern_industrialization:lead_plate" }],
+            [{ item: "embers:ancient_motive_core" }],
+            [{ item: "embers:archaic_circuit" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:tyrfing" }],
+        ],
+
+        tablet: { item: "minecraft:netherite_sword" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:ember_amulet" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "ytech:leather_strips" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:ember_belt" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:dawnstone_ring" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:ember_crystal" }],
+            [{ item: "embers:archaic_circuit" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+
+        ],
+
+        outputItems: [
+            [{ id: "embers:ember_ring" }],
+        ],
+
+        tablet: { item: "embers:wildfire_core" },
+        removeRecipe: true
+
+    })
+
+    embersAlchemyRecipe(event, {
+        inputItems: [
+            [{ item: "embers:ash" }],
+            [{ item: "embers:ash" }],
+            [{ item: "embers:ash" }],
+            [{ item: "embers:ash" }],
+            [{ item: "embers:ash" }],
+            [{ item: "embers:ash" }],
+        ],
+
+        aspects: [
+            [{ item: "embers:copper_aspectus" }],
+            [{ item: "embers:lead_aspectus" }],
+            [{ item: "embers:dawnstone_aspectus" }],
+            [{ item: "embers:iron_aspectus" }],
+            [{ item: "embers:silver_aspectus" }],
+            [{ item: "embers:intelligent_apparatus" }],
+        ],
+
+        outputItems: [
+            [{ id: "embers:ashen_fabric" }],
+        ],
+
+        tablet: { item: "immersiveengineering:hemp_fabric" },
+        removeRecipe: true
+
+    })
+
+    //#endregion
+
+    //#region shaped
 
     milfShaped(event, {
         pattern: [
@@ -866,6 +2271,23 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            " BN",
+            "PNG",
+            " BN",
+        ],
+        key: {
+            "B": { "item": "modern_industrialization:iron_bolt" },
+            "N": { "item": "modern_industrialization:lead_nugget" },
+            "P": { "item": "modern_industrialization:lead_plate" },
+            "G": { "item": "minecraft:glass" }
+
+        },
+        outputItems: [[{ id: "embers:tinker_lens" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
             " P ",
             "pdp",
             "   ",
@@ -1000,14 +2422,16 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "BDB",
-            "RDR",
+            "EDI",
             "RPR",
         ],
         key: {
             "B": { "item": "embers:archaic_brick" },
             "R": { "item": "modern_industrialization:iron_rod" },
             "D": { "item": "embers:dawnstone_ingot" },
-            "P": { "item": "modern_industrialization:copper_plate" }
+            "P": { "item": "modern_industrialization:copper_plate" },
+            "E": { "item": "embers:ember_dial" },
+            "I": { "item": "embers:item_dial" }
 
         },
         outputItems: [[{ id: "embers:pressure_refinery" }, 1]],
@@ -1016,15 +2440,16 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "ppp",
-            "PDP",
+            "pFp",
+            "PeP",
             "RER",
         ],
         key: {
             "R": { "item": "embers:caminite_bricks" },
             "E": { "item": "embers:fluid_extractor" },
             "P": { "item": "embers:fluid_pipe" },
-            "D": { "item": "embers:dawnstone_ingot" },
+            "e": { "item": "embers:ember_dial" },
+            "F": { "item": "embers:fluid_dial" },
             "p": { "item": "modern_industrialization:iron_plate" }
 
         },
@@ -1125,7 +2550,7 @@ ServerEvents.recipes(event => {
             "B": { "item": "modern_industrialization:silver_ingot" },
             "C": { "item": "embers:geologic_separator" },
         },
-        outputItems: [[{ id: "embers:combustion_chamber" }, 1]],
+        outputItems: [[{ id: "embers:catalysis_chamber" }, 1]],
         removeRecipe: true
     })
 
@@ -1140,7 +2565,7 @@ ServerEvents.recipes(event => {
             "B": { "item": "embers:archaic_brick" },
             "C": { "item": "embers:wildfire_core" },
         },
-        outputItems: [[{ id: "embers:combustion_chamber" }, 1]],
+        outputItems: [[{ id: "embers:ignem_reactor" }, 1]],
         removeRecipe: true
     })
 
@@ -1155,7 +2580,7 @@ ServerEvents.recipes(event => {
             "R": { "item": "modern_industrialization:silver_rod" },
             "B": { "item": "embers:archaic_brick" },
             "b": { "item": "embers:caminite_bricks" },
-            "C": { "item": "embers:wildfire_core" },
+            "C": { "item": "embers:ember_crystal_cluster" },
         },
         outputItems: [[{ id: "embers:cinder_plinth" }, 1]],
         removeRecipe: true
@@ -1187,7 +2612,7 @@ ServerEvents.recipes(event => {
             "I": { "item": "embers:item_pipe" },
             "b": { "item": "embers:caminite_bricks" },
             "B": { "item": "embers:archaic_brick" },
-            "G": { "tag": "c:gears" },
+            "G": { "item": "embers:archaic_circuit" },
         },
         outputItems: [[{ id: "embers:mechanical_core" }, 1]],
         removeRecipe: true
@@ -1210,7 +2635,206 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "ttt",
+            "cCc",
+            "BBB",
+        ],
+        key: {
+            "C": { "item": "embers:wildfire_core" },
+            "B": { "item": "embers:caminite_bricks" },
+            "c": { "item": "modern_industrialization:copper_plate" },
+            "t": { "item": "modern_industrialization:silver_rod" }
+        },
+        outputItems: [[{ id: "embers:ember_injector" }, 1]],
+        removeRecipe: true
+    })
 
+    milfShaped(event, {
+        pattern: [
+            "BpB",
+            "cCc",
+            "BpB",
+        ],
+        key: {
+            "C": { "item": "embers:fluid_vessel" },
+            "B": { "item": "embers:caminite_bricks" },
+            "c": { "item": "modern_industrialization:iron_double_ingot" },
+            "p": { "item": "architects_palette:cerebral_plate" },
+        },
+        outputItems: [[{ id: "embers:reservoir" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "GRG",
+            "GRG",
+            "PLP",
+        ],
+        key: {
+            "G": { "item": "minecraft:glass" },
+            "L": { "item": "modern_industrialization:iron_gear" },
+            "P": { "item": "modern_industrialization:iron_plate" },
+            "R": { "item": "modern_industrialization:iron_rod" },
+
+        },
+        outputItems: [[{ id: "embers:catalytic_plug" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BCB",
+            "BGB",
+            "PPP",
+        ],
+        key: {
+            "G": { "item": "modern_industrialization:dawnstone_gear" },
+            "C": { "item": "embers:mechanical_core" },
+            "B": { "item": "embers:caminite_bricks" },
+            "P": { "item": "modern_industrialization:iron_large_plate" },
+
+        },
+        outputItems: [[{ id: "embers:ember_bore" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WWW",
+            "DCD",
+            "PPP",
+        ],
+        key: {
+            "W": { "item": "modern_industrialization:copper_wire" },
+            "C": { "item": "embers:ember_crystal_cluster" },
+            "D": { "item": "modern_industrialization:iron_double_ingot" },
+            "P": { "item": "embers:caminite_bricks" },
+
+        },
+        outputItems: [[{ id: "embers:hearth_coil" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RPR",
+            "LBL",
+            "RPR",
+        ],
+        key: {
+            "L": { "item": "minecraft:leather" },
+            "B": { "item": "milf:pot_bellows" },
+            "R": { "item": "modern_industrialization:dawnstone_rod" },
+            "P": { "item": "embers:sealed_planks" },
+
+        },
+        outputItems: [[{ id: "embers:atmospheric_bellows" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PLP",
+            "RPR",
+            "PLP",
+        ],
+        key: {
+            "L": { "item": "modern_industrialization:iron_plate" },
+            "R": { "item": "modern_industrialization:iron_rod" },
+            "P": { "item": "embers:sealed_planks" },
+
+        },
+        outputItems: [[{ id: "embers:char_instiller" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SPS",
+            "SDS",
+            "SDS",
+        ],
+        key: {
+            "S": { "tag": "embers:ashen_stone" },
+            "D": { "item": "modern_industrialization:copper_double_ingot" },
+            "P": { "item": "modern_industrialization:silver_plate" },
+
+        },
+        outputItems: [[{ id: "embers:heat_insulation" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "cIc",
+            "RCR",
+            "RPR",
+        ],
+        key: {
+            "R": { "item": "modern_industrialization:dawnstone_rod" },
+            "c": { "item": "modern_industrialization:steel_plate" },
+            "I": { "item": "modern_industrialization:steel_double_ingot" },
+            "C": { "item": "embers:wildfire_core" },
+            "P": { "item": "modern_industrialization:steel_large_plate" },
+
+        },
+        outputItems: [[{ id: "embers:copper_charger" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RP ",
+            " CP",
+            " GR",
+        ],
+        key: {
+            "C": { "item": "embers:wildfire_core" },
+            "G": { "item": "milf:steel_infused_glass" },
+            "R": { "item": "modern_industrialization:dawnstone_rod" },
+            "P": { "item": "modern_industrialization:steel_plate" },
+
+        },
+        outputItems: [[{ id: "embers:ember_bulb" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RPR",
+            "GCG",
+            " P ",
+        ],
+        key: {
+            "C": { "item": "embers:wildfire_core" },
+            "G": { "item": "milf:steel_infused_glass" },
+            "R": { "item": "modern_industrialization:dawnstone_rod" },
+            "P": { "item": "modern_industrialization:steel_plate" },
+
+        },
+        outputItems: [[{ id: "embers:ember_jar" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RPR",
+            "PCP",
+            "GPG",
+        ],
+        key: {
+            "C": { "item": "embers:wildfire_core" },
+            "G": { "item": "milf:steel_infused_glass" },
+            "R": { "item": "modern_industrialization:dawnstone_rod" },
+            "P": { "item": "modern_industrialization:steel_plate" },
+
+        },
+        outputItems: [[{ id: "embers:ember_cartridge" }, 1]],
+        removeRecipe: true
+    })
 
     Object.entries({
         "silver": {
@@ -1295,6 +2919,8 @@ ServerEvents.recipes(event => {
         })
 
     })
+
+    //#endregion
 
 
 })

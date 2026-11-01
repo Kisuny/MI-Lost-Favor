@@ -295,9 +295,13 @@ global.disabledItems = [
     new DisabledItemBuilder("embers:raw_silver"),
 
     new DisabledItemBuilder("embers:lead_ore"),
+    new DisabledItemBuilder("embers:raw_lead_block"),
+    new DisabledItemBuilder("embers:lead_block"),
     new DisabledItemBuilder("embers:deepslate_lead_ore"),
 
     new DisabledItemBuilder("embers:silver_ore"),
+    new DisabledItemBuilder("embers:silver_block"),
+    new DisabledItemBuilder("embers:raw_silver_block"),
     new DisabledItemBuilder("embers:deepslate_silver_ore"),
 
     new DisabledItemBuilder("embers:lead_ingot"),
@@ -310,6 +314,19 @@ global.disabledItems = [
     new DisabledItemBuilder("embers:mithril_plate"),
     new DisabledItemBuilder("embers:dawnstone_plate"),
     new DisabledItemBuilder(/embers:mithril_(\w+)\b/),
+
+    new DisabledItemBuilder("embers:entropic_enumerator"),
+
+    new DisabledItemBuilder("embers:silver_crystal_seed"),
+    new DisabledItemBuilder("embers:nickel_crystal_seed"),
+    new DisabledItemBuilder("embers:aluminum_crystal_seed"),
+    new DisabledItemBuilder("embers:zinc_crystal_seed"),
+    new DisabledItemBuilder("embers:platinum_crystal_seed"),
+    new DisabledItemBuilder("embers:uranium_crystal_seed"),
+    new DisabledItemBuilder("embers:dawnstone_crystal_seed"),
+    new DisabledItemBuilder("embers:dwarven_mithril_crystal_seed"),
+
+
 
     //#endregion
 
@@ -329,13 +346,35 @@ global.disabledItems = [
 
     //#endregion
 
-    new DisabledItemBuilder("monsterplus:curseflame_powder"),
+    //#region Aquaculture
 
     new DisabledItemBuilder("aquaculture:diamond_fillet_knife"),
     new DisabledItemBuilder("aquaculture:gold_fillet_knife"),
     new DisabledItemBuilder("aquaculture:iron_fillet_knife"),
     new DisabledItemBuilder("aquaculture:stone_fillet_knife"),
     new DisabledItemBuilder("aquaculture:wooden_fillet_knife"),
+
+    new DisabledItemBuilder("aquaculture:neptunium_fishing_rod"),
+    new DisabledItemBuilder("aquaculture:diamond_fishing_rod"),
+    new DisabledItemBuilder("aquaculture:gold_fishing_rod"),
+    new DisabledItemBuilder("aquaculture:iron_fishing_rod"),
+
+    new DisabledItemBuilder("aquaculture:bobber"),
+    new DisabledItemBuilder("aquaculture:fishing_line"),
+    new DisabledItemBuilder("aquaculture:worm"),
+    new DisabledItemBuilder("aquaculture:tackle_box"),
+
+
+    new DisabledItemBuilder(/aquaculture:(\w+)_hook\b/),
+    new DisabledItemBuilder(/aquaculture:(\w+)_fish_mount\b/),
+    new DisabledItemBuilder(/aquaculture:(\w+)_fish_mount\b/),
+    new DisabledItemBuilder(/aquaculture:(\w+)_bucket\b/),
+
+    //#endregion
+
+    new DisabledItemBuilder("monsterplus:curseflame_powder"),
+
+
     new DisabledItemBuilder("enigmaticlegacyplus:forbidden_fruit"),
     new DisabledItemBuilder("enigmaticlegacyplus:unholy_grail"),
     new DisabledItemBuilder("malum:aluminum_impetus"),

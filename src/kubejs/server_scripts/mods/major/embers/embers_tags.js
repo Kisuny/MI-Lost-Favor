@@ -14,6 +14,10 @@ ServerEvents.tags('item', event => {
 
     event.add("c:ingots/dawnstone", "modern_industrialization:dawnstone_ingot")
 
+    event.add("embers:aspectus", "embers:intelligent_apparatus")
+    event.add("embers:aspectus", "embers:codebreaking_slate")
+
+
 })
 
 ServerEvents.tags('block', event => {

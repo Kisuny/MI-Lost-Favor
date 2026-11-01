@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     })
 
     function anvil_recipe(inputs, output) {
-        anvilSmashingCraft(event, {
+        paganAnvilSmashingRecipe(event, {
             inputItems: inputs,
             outputItems: [output],
             removeRecipe: true

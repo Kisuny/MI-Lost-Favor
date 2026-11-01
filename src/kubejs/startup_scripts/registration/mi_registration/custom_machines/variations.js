@@ -164,7 +164,7 @@ const MI_SLOT_TYPE_CALLBACK = {
 }
 
 addMachineVariations(
-    VANILLA_STEAM_MI_MACHINES,
+    Object.fromEntries(Object.entries(VANILLA_STEAM_MI_MACHINES).filter(([id, data]) => data.minTier == "bronze")),
     (machineId) => `ember_powered_${machineId.split(":")[1]}`,
     (data) => addSlotToMachineData(MI_SLOT_TYPE_CALLBACK.itemInput, [12, 35, 1, 1], data),
     (variationId, modifiedData) => {return {
@@ -181,11 +181,11 @@ addMachineVariations(
         },
 
         argsPredicate: (args) => {
-            return args.energy <= 4
+            return args.energy <= 2
         },
 
         category: `mi_tweaks:${variationId}`,
-        addAsWorkstationTo: getAllCategoriesUpToSteel(modifiedData),
+        addAsWorkstationTo: getAllCategoriesUpToBronze(modifiedData),
         tooltips: [
             "milf.mi_tweaks.tooltip.ember_powered1",
             "milf.mi_tweaks.tooltip.ember_powered2"
@@ -211,7 +211,7 @@ addMachineVariations(
 
             args.energy = 1
 
-            args.time = args.time / 2 | 0
+            args.time = args.time / 2.5 | 0
         },
 
         argsPredicate: (args) => {
@@ -259,7 +259,7 @@ addMachineVariations(
 
                 args.energy = 1
 
-                args.time = args.time / 5 | 0
+                args.time = args.time / 4 | 0
 
             },
 
@@ -317,6 +317,12 @@ function getAllCategoriesUpToSteel(data){
     if(data.minTier == "bronze"){
         categories.push(data.minRecipeCategory.replace("bronze", "steel"))
     }
+
+    return categories
+}
+
+function getAllCategoriesUpToBronze(data) {
+    let categories = [data.minRecipeCategory]
 
     return categories
 }

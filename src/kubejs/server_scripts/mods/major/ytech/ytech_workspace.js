@@ -610,11 +610,12 @@ ServerEvents.recipes(event => {
         new WorkspaceRecipeBuilder("minecraft:anvil")
             .top(plane => plane.set([' B ', ' B ', ' B ']))
             .middle(plane => plane.center("I"))
-            .bottom(plane => plane.center("I").corners("P").sides("P"))
+            .bottom(plane => plane.center("I").corners("b").sides("R"))
             .setKey({
                 B: { item: "modern_industrialization:iron_double_ingot" },
                 I: { tag: "c:ingots/iron" },
-                P: { item: "modern_industrialization:iron_plate" }
+                b: { item: "modern_industrialization:iron_bolt" },
+                R: { item: "modern_industrialization:iron_rod" }
             })
             .setArgs({
                 tool: { tag: "c:hammers" }

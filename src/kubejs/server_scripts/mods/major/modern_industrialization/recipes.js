@@ -84,7 +84,16 @@ function miMachineRecipe(event, args){
         recipe.item_outputs.push(output)
     })
     fluidInputs.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] || 1000 }, { probability: input[2] })) })
-    fluidOutputs.forEach((out) => { recipe.fluid_outputs.push(Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })) })
+    fluidOutputs.forEach((out) => { 
+        let output = Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })
+
+        if (output.id) {
+            output.fluid = output.id
+            delete output.id
+        }
+
+        recipe.fluid_outputs.push(output) 
+    })
     let id = args.recipeId
     if (args.removeRecipe) {
         outputs.forEach((out) => {
@@ -957,6 +966,92 @@ ServerEvents.recipes(event => {
             p: { item: "embers:mechanical_pump" },
         },
         outputItems: [[{ id: "modern_industrialization:bronze_water_pump" }, 1]],
+        removeRecipe: true
+    })
+
+    //#endregion
+
+    //#region ember powered
+
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "RpR",
+            "BCB"
+        ],
+        key: {
+            C: { item: "embers:copper_charger" },
+            B: { item: "embers:sealed_planks" },
+            R: { item: "modern_industrialization:dawnstone_gear" },
+            p: { item: "modern_industrialization:lead_double_ingot" },
+            P: { item: "minecraft:piston" },
+        },
+        outputItems: [[{ id: "mi_tweaks:ember_powered_compressor" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BRB",
+            "rpr",
+            "BCB"
+        ],
+        key: {
+            C: { item: "embers:copper_charger" },
+            B: { item: "embers:sealed_planks" },
+            R: { item: "modern_industrialization:dawnstone_gear" },
+            p: { item: "ytech:iron_saw_blade" },
+            r: { item: "modern_industrialization:dawnstone_rod" },
+        },
+        outputItems: [[{ id: "mi_tweaks:ember_powered_cutting_machine" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "B B",
+            "rpr",
+            "BCB"
+        ],
+        key: {
+            C: { item: "embers:copper_charger" },
+            B: { item: "embers:sealed_planks" },
+            p: { item: "embers:ember_crystal" },
+            r: { item: "modern_industrialization:dawnstone_gear" },
+        },
+        outputItems: [[{ id: "mi_tweaks:ember_powered_macerator" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "B B",
+            "rpr",
+            "BCB"
+        ],
+        key: {
+            C: { item: "embers:copper_charger" },
+            B: { item: "embers:sealed_planks" },
+            r: { item: "embers:ember_crystal" },
+            p: { item: "embers:ember_crystal_cluster" },
+        },
+        outputItems: [[{ id: "mi_tweaks:ember_powered_mi_furnace" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "B B",
+            "grg",
+            "BCB"
+        ],
+        key: {
+            C: { item: "embers:copper_charger" },
+            B: { item: "embers:sealed_planks" },
+            g: { item: "milf:bronze_glass" },
+            r: { item: "modern_industrialization:copper_rotor" },
+        },
+        outputItems: [[{ id: "mi_tweaks:ember_powered_mixer" }, 1]],
         removeRecipe: true
     })
 

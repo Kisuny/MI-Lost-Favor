@@ -16,7 +16,7 @@ const milestone_rewards = [
     { quest_id: "20165DF8F49E8177", stages: ["mowziesmobs_mobs", "mythsandlegends_mobs"] }, // haven gate
     { quest_id: "224D85127D80FED8", stages: ["cataclysm_mobs", "rottencreatures_mobs", "enderzoology_mobs"] }, // vanilla bosses
     { quest_id: "16B46238FC936637", stages: ["grimoireofgaia_mobs"] }, // bomd and fdbosses bosses
-    { quest_id: "74E5C7C4B8A33E55", stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs"] }, // Iron Bloom
+    { quest_id: "74E5C7C4B8A33E55", stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs", "darkerdepths_mobs"] }, // Iron Bloom
     { quest_id: "670CBE4973B6F390", stages: ["early_items", "blast_furnace", "mythsandlegends_mobs"] }, // Steel Ingot
 ]
 

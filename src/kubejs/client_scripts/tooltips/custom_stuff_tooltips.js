@@ -9,31 +9,13 @@ ItemEvents.modifyTooltips(event => {
 
     event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
 
-    const soulHarvestWeapons = [
-        "malum:crude_scythe", 
-        "malum:soul_stained_steel_scythe", 
-        "ars_hex:enchanter_scythe", 
-        "animusnv:runic_sentient_scythe", 
-        "animusnv:hand_of_death",
-        "neovitae:sentient_scythe",
-    ]
-    soulHarvestWeapons.forEach(weapon => {
+    global.soulHarvestWeapons.forEach(weapon => {
         event.modify(weapon, tooltip => {
             tooltip.insert(1, Text.translatable(`milf.soul_harvest.tooltip`))
         })
     })
 
-    const orbs = [
-        'milf:transmutation_orb', 
-        'milf:orb_of_annulment', 
-        'milf:orb_of_alchemy', 
-        'milf:orb_of_regret', 
-        'milf:regal_orb', 
-        'milf:orb_of_corruption', 
-        'milf:divine_orb', 
-        'milf:orb_of_chance', 
-        "milf:orb_of_the_forest"
-    ]
+    const orbs = global.milfOrbs.concat(["milf:orb_of_the_forest"])
 
     orbs.forEach(orb => {
         event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(5)}`))

@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "spectrum:blood_orchid"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "5"
+      }
+    ]
+  },
+  "lootTable": "spectrum:blocks/blood_orchid"
+}

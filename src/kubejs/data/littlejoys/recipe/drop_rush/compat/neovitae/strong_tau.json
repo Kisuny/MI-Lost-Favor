@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "neovitae:strong_tau"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "7"
+      }
+    ]
+  },
+  "lootTable": "neovitae:blocks/strong_tau"
+}

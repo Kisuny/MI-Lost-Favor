@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "spectrum:sawblade_holly_bush"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "7"
+      }
+    ]
+  },
+  "lootTable": "littlejoys:drop_rush/spectrum_sawblade_holly_bush"
+}

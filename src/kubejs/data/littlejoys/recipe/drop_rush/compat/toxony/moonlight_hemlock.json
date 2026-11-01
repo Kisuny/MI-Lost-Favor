@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "toxony:moonlight_hemlock"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "5"
+      }
+    ]
+  },
+  "lootTable": "toxony:blocks/moonlight_hemlock"
+}

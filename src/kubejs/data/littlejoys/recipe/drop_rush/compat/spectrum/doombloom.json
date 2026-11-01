@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "spectrum:doombloom"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "4"
+      }
+    ]
+  },
+  "lootTable": "littlejoys:drop_rush/spectrum_doombloom"
+}

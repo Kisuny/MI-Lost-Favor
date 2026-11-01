@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "paganbless:belladonna_plant"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "5"
+      }
+    ]
+  },
+  "lootTable": "paganbless:blocks/belladonna_plant"
+}

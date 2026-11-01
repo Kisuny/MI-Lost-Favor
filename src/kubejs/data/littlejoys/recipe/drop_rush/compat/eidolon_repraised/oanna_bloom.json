@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "eidolon_repraised:oanna_bloom"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "3"
+      }
+    ]
+  },
+  "lootTable": "eidolon_repraised:blocks/oanna_bloom"
+}

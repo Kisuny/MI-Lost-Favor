@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "enchanted:belladonna"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "4"
+      }
+    ]
+  },
+  "lootTable": "enchanted:blocks/belladonna"
+}

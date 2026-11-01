@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "spectrum:amaranth"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "7"
+      }
+    ]
+  },
+  "lootTable": "spectrum:blocks/amaranth"
+}

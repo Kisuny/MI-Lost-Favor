@@ -1,0 +1,18 @@
+{
+  "type": "littlejoys:drop_rush",
+  "eventCondition": {
+    "type": "all",
+    "conditions": [
+      {
+        "type": "is_block",
+        "block": "hexerei:belladonna_plant"
+      },
+      {
+        "type": "is_state_property",
+        "property": "age",
+        "value": "3"
+      }
+    ]
+  },
+  "lootTable": "littlejoys:drop_rush/hexerei_belladonna_plant"
+}

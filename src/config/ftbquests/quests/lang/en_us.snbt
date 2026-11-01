@@ -46,6 +46,15 @@
 		""
 		"<positive>Используя</positive> <keyword>тэглок</keyword> на <keyword>игроке</keyword> или его <keyword>кровати</keyword>, вы можете собрать <property>образец</property> для использования в магии."
 	]
+	quest.005D4652EF6A69DD.quest_desc: [
+		"The <keyword>Ember-powered Compressor</keyword> runs the same recipes as the bronze one, but <positive>without steam</positive> - it burns <keyword>Ember Grit</keyword> from a separate slot instead."
+		""
+		"Recipes run <positive>1.5x faster</positive>, and grit is not spent on every operation - roughly <property>one per three</property> crafts."
+		"{@pagebreak}"
+		"<keyword>Эмберная версия компрессора</keyword> выполняет те же рецепты, что и бронзовая, но <positive>без пара</positive> - вместо него она сжигает <keyword>пыль кристаллизованного эмбера</keyword> из отдельного слота."
+		""
+		"Рецепты идут <positive>в 1.5 раза быстрее</positive>, а пыль тратится не каждый раз - примерно <property>одна на три</property> операции."
+	]
 	quest.00739F6BA600ACA3.quest_desc: [
 		"The &#FEECD6Molten Rod&r allows you to catch &#ECB4B4creatures&r and do &#ff6600lava fishing&r."
 		""
@@ -60,9 +69,21 @@
 		"&#9BB8EDСпойлер&r: это не самый ранний этап, просто имей ввиду!"
 	]
 	quest.0083A8FB4ECA2086.quest_desc: [
-		"добавляет heat для инструментов/брони."
+		"<magic>Augments</magic> - the way to give your gear new abilities."
 		""
-		"По мере использования предмета с heat предмет нагревается, как только предмет нагреется вы сможете добавить одну из аугментаций."
+		"1. Hammer a <keyword>Motive Core</keyword> into an item on the anvil - it starts gaining <flame>Heat</flame> as you use it."
+		""
+		"2. When the Heat bar is full, temper it in the <keyword>Inferno Forge</keyword> for an <property>augment slot</property>."
+		""
+		"3. Hammer augments onto it at the <keyword>Dawnstone Anvil</keyword>: item first, then the augment. Augments have levels, the item's level limits how many you can fit. Placing the item alone and hammering <positive>removes all augments</positive> for free."
+		"{@pagebreak}"
+		"<magic>Улучшения</magic> - способ дать снаряжению новые способности."
+		""
+		"1. Набейте на наковальне <keyword>ядро пробуждения</keyword> на предмет - он начнёт копить <flame>жар</flame> при использовании."
+		""
+		"2. Когда шкала жара заполнится, закалите предмет в <keyword>Вулканической кузнице</keyword> и получите <property>слот улучшения</property>."
+		""
+		"3. Набивайте улучшения на <keyword>Золотитовой наковальне</keyword>: сначала предмет, потом улучшение. У улучшений есть уровни, а уровень предмета ограничивает, сколько их влезет. Если положить предмет один и ударить, <positive>все улучшения снимутся</positive> бесплатно."
 	]
 	quest.00947DC3E3643781.quest_desc: [
 		"The <keyword>Dormant Shard</keyword> is used to craft an extra <keyword>Attuned Shard</keyword>, letting you link more <keyword>Warp Plates</keyword> together - place it inside an empty Warp Plate."
@@ -167,6 +188,15 @@
 		"Смотрит <positive>вниз</positive> - даёт <keyword>больше воды</keyword>, <positive>вверх</positive> - <keyword>меньше</keyword>. "
 	]
 	quest.0276B19962E9F9C6.quest_desc: ["Emits a brief (half-second) redstone pulse whenever a mob or player steps on it. Like a pressure plate, but nearly invisible."]
+	quest.02795E5BC6541857.quest_desc: [
+		"The <keyword>Ignem Reactor</keyword> refines Ember crystals with a <flame>huge multiplier</flame>. Place it next to the top parts of both a <keyword>Combustion Chamber</keyword> and a <keyword>Catalysis Chamber</keyword>."
+		""
+		"Multiplier = <property>fuel level + catalyst level + 1</property>. Keep both levels <warning>close to each other</warning>, or the reactor won't be happy."
+		"{@pagebreak}"
+		"<keyword>Огненный реактор</keyword> перерабатывает кристаллы эмбера с <flame>огромным множителем</flame>. Поставьте его рядом с верхними частями <keyword>Камеры сгорания</keyword> и <keyword>Камеры катализа</keyword>."
+		""
+		"Множитель = <property>уровень топлива + уровень катализатора + 1</property>. Держите оба уровня <warning>близкими друг к другу</warning>, иначе реактору это не понравится."
+	]
 	quest.02836553495C2849.quest_desc: [
 		"Clear <keyword>large areas</keyword> very fast for <positive>digging</positive>, tunnels, or land cleanup. &7Shift-right-click&r to set the <keyword>size and shape</keyword>, then <positive>right-click</positive> to destroy the marked area. <warning>It gives no drops</warning>, so use it only when you do not need the blocks back"
 		"{@pagebreak}"
@@ -278,19 +308,32 @@
 		""
 		"P.S. Для открытия крафта улучшите свой старый пьедестал!"
 	]
+	quest.03151C463B4D7962.quest_desc: [
+		"The <keyword>Plate Stamp</keyword> turns molten metal into <keyword>plates</keyword> - <positive>no more hammering</positive> them by hand."
+		"{@pagebreak}"
+		"<keyword>Пресс-форма пластины</keyword> превращает расплавленный металл в <keyword>пластины</keyword> - <positive>больше не нужно</positive> ковать их вручную."
+	]
 	quest.032A57D52718A594.quest_desc: [
 		"&4I&r&6n&r&ek&r extraction"
 		"{@pagebreak}"
 		"Нужно же где-то брать &4э&r&6н&r&eе&r&2р&r<property>г</property>&9и&r&5ю&r, верно?"
 	]
 	quest.0335CC4F07E1069E.quest_desc: [
+		"The <keyword>Dawnstone Anvil</keyword> is worked with the <keyword>Tinker's Hammer</keyword>."
 		""
+		"<named>Repair:</named> place the damaged item, then its repair material, and <shake amplitude=0.3 frequency=1.0>strike</shake>. A <positive>single material fully repairs</positive> the item."
+		""
+		"<named>Disassembly:</named> place the item alone and hit it - it <warning>breaks down</warning> into what it was made of, so diamond armor gives back diamonds."
+		""
+		"It is also where <magic>augments</magic> are hammered onto tools and armor."
 		"{@pagebreak}"
-		"Полная починка шмотки за 1 материал"
+		"На <keyword>Золотитовой наковальне</keyword> работают <keyword>Инженерным молотом</keyword>."
 		""
-		"так же если положить просто шмотку и бить наковальней или автоматической наковальней шмотка разберется на ресурс из которого сделана эта шмотка, так например алмазная броня разбирается на алмаз."
+		"<named>Починка:</named> положите повреждённый предмет, затем материал для починки, и <shake amplitude=0.3 frequency=1.0>бейте</shake>. <positive>Один материал полностью чинит</positive> предмет."
 		""
-		"Так же можно накладывать улучшения на броню/инструменты"
+		"<named>Разборка:</named> положите предмет один и ударьте - он <warning>распадётся</warning> на то, из чего сделан, например алмазная броня вернёт алмазы."
+		""
+		"Ещё на ней набивают <magic>улучшения</magic> на инструменты и броню."
 	]
 	quest.03ADE1ABC36DD1B1.quest_desc: [
 		"Actively requests items/fluid from other nodes and places them in its connected inventory, based on its <warning>filter</warning>."
@@ -329,6 +372,15 @@
 	quest.04914A341C6DBCC8.quest_desc: [
 		"&lCandelabra&r: "
 		"• +2x Recharge Rate"
+	]
+	quest.04B0CC2E94D39892.quest_desc: [
+		"Keeping the coil hot eats a lot of Ember. Each <keyword>Heat Insulation</keyword> raises its maximum heat by <property>75</property> and makes it cool down <positive>30% slower</positive>."
+		""
+		"With a bit of redstone control the coil can become <positive>much more efficient</positive>."
+		"{@pagebreak}"
+		"Поддерживать катушку горячей - дорогое удовольствие. Каждая <keyword>Теплоизоляция</keyword> поднимает её максимальный жар на <property>75</property> и замедляет остывание на <positive>30%</positive>."
+		""
+		"Если добавить немного редстоун-управления, катушка станет <positive>гораздо экономнее</positive>."
 	]
 	quest.04C08C0E909C4B64.quest_desc: [
 		"<named>Hedge Alchemy</named> - turning cheap things into useful ones. <bone>Rotten Flesh</bone> becomes <keyword>Magic Tallow</keyword> and <keyword>Leather</keyword>, and later the crucible can multiply <keyword>gunpowder</keyword>, <keyword>slime</keyword>, <keyword>string</keyword> and more by feeding them their own essentia."
@@ -404,6 +456,11 @@
 	]
 	quest.0651B6B965560FDE.quest_subtitle: "Phantoms? Hate those guys"
 	quest.06793C23D00355A7.quest_desc: ["<keyword>Magnet</keyword>? And <positive>configurable</positive>??? I'll take 2 please"]
+	quest.067EBF57E30E4B9A.quest_desc: [
+		"Through <magic>hellish synthesis</magic> on an <bone>Ash</bone> tablet you can make <keyword>Soul Sand</keyword> - matter from a strange faraway realm, no trip to the Nether needed."
+		"{@pagebreak}"
+		"С помощью <magic>адского синтеза</magic> на платформе с <bone>пеплом</bone> можно получить <keyword>песок душ</keyword> - вещество из далёкого странного мира, без похода в Незер."
+	]
 	quest.069D268554F4E905.quest_desc: [
 		"The <keyword>Enchanter's Shield</keyword> grants you a short burst of <property>Mana Regeneration</property> and <property>Spell Damage</property> whenever you block damage with it, and repairs itself over time using your source."
 		"{@pagebreak}"
@@ -418,6 +475,20 @@
 		"The <keyword>Wixie Familiar</keyword> is a personal buff companion, separate from the worker Wixie that autocrafts items and potions at the Wixie Cauldron."
 		"{@pagebreak}"
 		"<keyword>Фамильяр Викси</keyword> - персональный компаньон-баф, отдельный от рабочей Викси, которая автоматически крафтит предметы и зелья у котла Викси."
+	]
+	quest.070A800EEE25EDCE.quest_desc: [
+		"The <keyword>Reservoir</keyword> stores <aqua>huge amounts of fluid</aqua>. On its own it holds nothing - stack <keyword>Caminite Rings</keyword> on top, each adds <property>40 buckets</property>."
+		""
+		"It is filled and drained only through the port at the bottom. <keyword>Caminite Valves</keyword> hold as much as a ring, but give <positive>4 extra sides</positive> for pipes."
+		"{@pagebreak}"
+		"<keyword>Резервуар</keyword> хранит <aqua>огромные объёмы жидкости</aqua>. Сам по себе он пустой - ставьте сверху <keyword>Каминитовые кольца</keyword>, каждое добавляет <property>40 вёдер</property>."
+		""
+		"Заполняется и опустошается он только через порт внизу. <keyword>Каминитовые кольца с клапанами</keyword> вмещают столько же, сколько обычное кольцо, но дают <positive>4 дополнительные стороны</positive> для труб."
+	]
+	quest.071453124C68591E.quest_desc: [
+		"The <keyword>Intelligent Apparatus</keyword> is an armor <magic>augment</magic>: creatures slain by the wearer drop <positive>more experience</positive>. Higher augment level - more XP."
+		"{@pagebreak}"
+		"<keyword>Интеллектуальный аппарат</keyword> - <magic>улучшение</magic> для брони: существа, убитые носителем, роняют <positive>больше опыта</positive>. Чем выше уровень улучшения, тем больше опыта."
 	]
 	quest.072F0916C2364762.quest_desc: [
 		"To speak with the powers that be, an <named>icon</named> is needed first. The <bone>Straw Effigy</bone> is crude, but once placed atop an <keyword>altar</keyword> it gives your prayers something to <magic>direct themselves at</magic> - maybe they'll be heard."
@@ -602,6 +673,11 @@
 		"&l<property>Не потребляет воду</property> в таких биомах как: реки, океаны&r"
 	]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
+	quest.0B07CCE80546DA9C.quest_desc: [
+		"The Bore brings up <keyword>Ember Crystals</keyword>, <keyword>Shards</keyword> and <keyword>Grit</keyword> - finally an <positive>automatic</positive> source of Ember, no more chiseling roots."
+		"{@pagebreak}"
+		"Буровая поднимает <keyword>кристаллы</keyword>, <keyword>осколки</keyword> и <keyword>пыль эмбера</keyword> - наконец-то <positive>автоматический</positive> источник эмбера, больше не нужно долбить корни."
+	]
 	quest.0B18D6C562478843.quest_desc: [
 		"Works exactly like the item <keyword>Storage Bus</keyword>, but for essentia: lets the network <positive>read and fill</positive> essentia containers it faces."
 		""
@@ -615,6 +691,15 @@
 		"The <keyword>Geode-Encased Bookshelf</keyword> grants <positive>Quantic Stability</positive> - it reduces the chance of getting a curse from your enchants. Pair it with a <keyword>Deepshelf of Arcane Treasures</keyword> to safely fish for treasure enchantments."
 		"{@pagebreak}"
 		"<keyword>Geode-Encased Bookshelf</keyword> даёт <positive>стабильность</positive> - снижает шанс получить проклятие при зачаровании. Используйте её вместе с <keyword>Deepshelf of Arcane Treasures</keyword>, чтобы безопаснее охотиться за сокровищными зачарованиями."
+	]
+	quest.0B32052B12172380.quest_desc: [
+		"The <keyword>Resonating Bell</keyword> lets a tool <wave>ring through blocks</wave>: RMB a block and nearby blocks of the same type will <flame>light up</flame> - unless there are tons of them around."
+		""
+		"The search area grows with augment level. Perfect for finding ores."
+		"{@pagebreak}"
+		"<keyword>Резонансный колокол</keyword> позволяет инструменту <wave>звенеть сквозь блоки</wave>: ПКМ по блоку, и такие же блоки поблизости <flame>подсветятся</flame> - если их вокруг не слишком много."
+		""
+		"Радиус поиска растёт с уровнем улучшения. Отлично подходит для поиска руд."
 	]
 	quest.0B37EB64F02A743F.quest_desc: [
 		"<positive>Enchant</positive> your <keyword>boots</keyword> with power. More <keyword>power</keyword>, more <keyword>speed</keyword>!"
@@ -679,6 +764,15 @@
 		"{@pagebreak}"
 		"Я почти сделал это! Материал, который будет использоваться для раскрытия <warning>всего потенциала яда</warning>. Я приготовил это снадобье, чтобы подготовить <warning><shake amplitude=0.35 frequency=1.0>окончательное создание</shake></warning> высшего вещества! Но мне нужно еще раз войти в <magic>Ад</magic>."
 	]
+	quest.0C7AA640A3758FBC.quest_desc: [
+		"<keyword>Everburning Roots Veins</keyword> are roots with <flame>Ember crystals grown right inside</flame>."
+		""
+		"<named>How:</named> hit the block in the world with a <keyword>chisel</keyword>. It will <shake amplitude=0.3 frequency=1.0>crack open</shake>, drop an <keyword>Ember Shard</keyword> and turn into ordinary <keyword>Everburning Roots</keyword>."
+		"{@pagebreak}"
+		"<keyword>Everburning Roots Veins</keyword> - корни, внутри которых <flame>проросли кристаллы эмбера</flame>."
+		""
+		"<named>Как:</named> ударьте по блоку в мире <keyword>зубилом</keyword>. Он <shake amplitude=0.3 frequency=1.0>треснет</shake>, выронит <keyword>Осколок кристалла эмбера</keyword> и превратится в обычные <keyword>Everburning Roots</keyword>."
+	]
 	quest.0C7FBEEB6BB3499E.quest_desc: ["<positive>Adds items</positive> into <keyword>system</keyword>"]
 	quest.0CC9329A82A7454A.quest_desc: [
 		"Find your first &l&6affix item&r!"
@@ -725,9 +819,13 @@
 		"Позволяет получить случайный <keyword>глиф первого уровня</keyword>, глифы не могут повторяться, как только вы изучите все <keyword>глифы 1 уровня</keyword> вы будете получать немного <property>опыта</property> за кодекс."
 	]
 	quest.0D58533D474BB840.quest_desc: [
-		"Позволяет получать доступ к машинам для воронок или других необходимых способов взаимодействия с машиной."
+		"Big machines like the <keyword>Ember Bore</keyword> have only one port. The <keyword>Mechanical Core</keyword> <positive>extends it</positive>: it works as a proxy to the items, fluids or Ember of the large machine it faces."
 		""
-		"Кроме того в награду вы получаете линзу, которая отображает множество полезной информации, нужен ли редстоун для работы блока/механизмы, какие слоты принимает сторона машины и т.д. "
+		"Up to <property>3</property> cores can be chained. Upgrades like the Catalytic Plug can also be attached through a core."
+		"{@pagebreak}"
+		"У больших машин вроде <keyword>Эмберной буровой установки</keyword> всего один порт. <keyword>Механическое ядро</keyword> <positive>расширяет его</positive>: оно даёт доступ к предметам, жидкостям или эмберу большой машины, на которую смотрит."
+		""
+		"Можно соединить в цепочку до <property>3</property> ядер. Через ядро можно подключать и улучшения вроде Каталитического штепселя."
 	]
 	quest.0D70C343A1BBC484.quest_desc: [
 		"Like the item <keyword>Export Bus</keyword>, but for essentia: <aqua><wave>pushes</wave></aqua> essentia from the network into the container it faces."
@@ -783,6 +881,15 @@
 		"• <magic>Drop Rushes</magic> дают <keyword>дополнительный урожай</keyword> в простом <property>испытании на время</property>"
 		""
 		"• <magic>Gold Rushes</magic> дают <keyword>дополнительную руду</keyword> во время <positive>добычи</positive>"
+	]
+	quest.0E1B5FF7A1983164.quest_desc: [
+		"The <keyword>Melter</keyword> is two blocks tall. Give Ember to the <property>bottom</property> block and put meltable items into the <property>top</property> one - they will <flame>melt down</flame>, and the molten metal can be piped out."
+		""
+		"The melter works with <keyword>metal dusts</keyword>: one dust gives <property>60 mB</property> of metal."
+		"{@pagebreak}"
+		"<keyword>Эмберная плавильная печь</keyword> высотой в два блока. Подавайте эмбер в <property>нижний</property> блок, а переплавляемое - в <property>верхний</property>: всё <flame>расплавится</flame>, и металл можно будет откачать трубами."
+		""
+		"Печь работает с <keyword>металлической пылью</keyword>: одна пыль даёт <property>60 mB</property> металла."
 	]
 	quest.0E432C3C0C5E9D1D.quest_desc: ["<property>Fire Resistance</property> (duh)"]
 	quest.0E4BFAA97BD15447.quest_desc: [
@@ -903,6 +1010,19 @@
 		"{@pagebreak}"
 		"<keyword>Атамэ</keyword> - быстрое и смертоносное оружие, и чтобы получить его силу, вам придется использовать <magic>Алмазный ритуал</magic>."
 	]
+	quest.0F5A8505E80666E1.quest_desc: [
+		"Deep beneath the overworld something is <flame>still burning</flame>. <named>Embers</named> is about <flame>Ember</flame> - the heat of the world's core locked inside crystals - and the machines that run on it."
+		""
+		"Your <keyword>Ancient Codex</keyword> keeps notes on every device. Hover over any Embers item and hold <property>Ctrl</property> to open its entry, or press <property>Ctrl + RMB</property> on a placed block."
+		""
+		"The codex explains how machines work, but its recipes <warning>may not match</warning> - check <keyword>EMI</keyword> and the quests for those."
+		"{@pagebreak}"
+		"Глубоко под верхним миром что-то <flame>всё ещё горит</flame>. <named>Embers</named> - это мод про <flame>эмбер</flame>, жар ядра мира, запертый в кристаллах, и про машины, которые на нём работают."
+		""
+		"В <keyword>Кодексе инженера</keyword> есть заметки о каждом устройстве. Наведите курсор на любой предмет Embers и зажмите <property>Ctrl</property>, чтобы открыть его статью, или нажмите <property>Ctrl + ПКМ</property> по поставленному блоку."
+		""
+		"Кодекс объясняет, как работают машины, но рецепты в нём <warning>могут не совпадать</warning> - их смотрите в <keyword>EMI</keyword> и квестах."
+	]
 	quest.0F72F6A6DFDAFF98.quest_desc: [
 		"Regular smelteries are slow, need fuel and cannot handle large amounts of slurry - it gets <warning>unstable</warning> when too much gathers in one place. The <magic><pulse>Advanced Alchemical Furnace</pulse></magic> solves all of that: it processes far more slurry at once and <positive>much faster</positive>."
 		""
@@ -952,10 +1072,28 @@
 		"{@pagebreak}"
 		"<positive>Отдай</positive> свою книгу (<keyword>Ars Ecclesia</keyword>) <keyword>ведьме</keyword>!"
 	]
+	quest.0FA5869020681286.quest_desc: [
+		"An <keyword>Ember Crystal Cluster</keyword> - several crystals and shards <magic>alchemically fused</magic> together into one big chunk of <flame>raw power</flame>."
+		""
+		"It feeds the hungrier machines and becomes the base for the <keyword>Wildfire Core</keyword>."
+		"{@pagebreak}"
+		"<keyword>Друза кристаллизованного эмбера</keyword> - несколько кристаллов и осколков, <magic>алхимически сплавленных</magic> в один большой кусок <flame>чистой силы</flame>."
+		""
+		"Она питает самые прожорливые машины и служит основой для <keyword>Ядра дикого огня</keyword>."
+	]
 	quest.0FBB5C5541E982A6.quest_desc: [
 		"Defeat <blood><glitch frequency=0.7 shiftChance=0.06>The True Azazel</glitch></blood>!"
 		"{@pagebreak}"
 		"Победи <blood><glitch frequency=0.7 shiftChance=0.06>Истинного Азазеля</glitch></blood>!"
+	]
+	quest.0FC22E42F711EF48.quest_desc: [
+		"The <keyword>Clockwork Attenuator</keyword> controls <property>machine speed</property>. It has two settings toggled by a <pulse>redstone signal</pulse>: active and inactive."
+		""
+		"Change the current setting with RMB and Shift + RMB."
+		"{@pagebreak}"
+		"<keyword>Заводной аттенюатор</keyword> управляет <property>скоростью машины</property>. У него два режима, которые переключаются <pulse>редстоун-сигналом</pulse>: активный и неактивный."
+		""
+		"Текущий режим настраивается ПКМ и Shift + ПКМ."
 	]
 	quest.0FD2406DC9C47871.quest_desc: ["Spiritus is creature essence, the lifeblood of Hellfire Forge crafting. Mark creatures with Throwing Daggers, slay them, and collect the <property>Raw Spiritus</property> that falls."]
 	quest.0FD47B07FF66BDC0.quest_desc: [
@@ -1035,6 +1173,15 @@
 		"{@pagebreak}"
 		"Переносит постройку в новое место вместо обычного копирования. Выдели область, используй <keyword>Cut</keyword>, чтобы сохранить ее в гаджете, потом <keyword>Paste</keyword> для установки. Он сохраняет данные block entities, включая содержимое сундуков, но отмены нет"
 	]
+	quest.10DB338331ED9F10.quest_desc: [
+		"The <keyword>Ember-powered Furnace</keyword> runs the same recipes as the bronze one, but <positive>without steam</positive> - it burns <keyword>Ember Grit</keyword> from a separate slot instead."
+		""
+		"Recipes run <positive>1.5x faster</positive>, and grit is not spent on every operation - roughly <property>one per three</property> crafts."
+		"{@pagebreak}"
+		"<keyword>Эмберная версия печи</keyword> выполняет те же рецепты, что и бронзовая, но <positive>без пара</positive> - вместо него она сжигает <keyword>пыль кристаллизованного эмбера</keyword> из отдельного слота."
+		""
+		"Рецепты идут <positive>в 1.5 раза быстрее</positive>, а пыль тратится не каждый раз - примерно <property>одна на три</property> операции."
+	]
 	quest.10DF8F26503CA411.title: "World Tier: Pinnacle"
 	quest.10EDC166831C6721.quest_desc: [
 		"With even greater potential in material, I can enhance both the <property>capacity</property> and the <property>duration</property> of the <keyword>flask</keyword> even further. Now I can keep the effect for <keyword>triple the normal length</keyword>. This power is <warning><shake amplitude=0.4 frequency=1.3>UNBELIEVABLE</shake></warning>!"
@@ -1093,8 +1240,21 @@
 		""
 		"Держа раствор и иглу в разных руках я могу ввести раствор внутрь иглы на ПКМ. Затем, как только я найду достаточно сильный субъект, нужно оставить его на волосок от смерти (<poison>яд</poison> должен подойти), и в этот момент воспользоваться иглой."
 	]
-	quest.11C14EFDFC29588D.quest_desc: ["4 нижних слота каждый под свою жижу сверху результат сплава"]
+	quest.11C14EFDFC29588D.quest_desc: [
+		"The <keyword>Mixer Centrifuge</keyword> creates alloys. Each of the <property>4 sides</property> of the bottom block is its own tank - pump a different molten metal into each."
+		""
+		"Give the <property>top</property> block Ember, and once the right combination is inside, the alloy will <wave>mix</wave> and can be pumped out of the top."
+		"{@pagebreak}"
+		"<keyword>Смесительная центрифуга</keyword> делает сплавы. Каждая из <property>4 сторон</property> нижнего блока - отдельный бак, в каждый закачивается свой металл."
+		""
+		"Подайте эмбер в <property>верхний</property> блок, и при правильном сочетании металлы <wave>смешаются</wave> в сплав, который откачивается сверху."
+	]
 	quest.11DEF9AD7861A0C9.quest_desc: ["Combine the Stone Mortar and Pestle with a Brick in a crafting grid to make Brick Dust"]
+	quest.1209E8353B7EC4F8.quest_desc: [
+		"<keyword>Adhesive</keyword> is a synthesized <positive>replacement for slime balls</positive> in recipes - no more hunting rare slimes."
+		"{@pagebreak}"
+		"<keyword>Сгусток клея</keyword> - синтезированная <positive>замена слизи</positive> в рецептах, больше не нужно гоняться за редкими слизнями."
+	]
 	quest.121B443B4996E62B.quest_desc: [
 		"Replace one block type with another without breaking the build. &7Shift-right-click&r the block you want to match, choose exchange mode, then <positive>right-click</positive> the area. It can work on connected areas, use fuzzy replacement, and support block entities if enabled"
 		"{@pagebreak}"
@@ -1126,6 +1286,15 @@
 		"&lДержа ключ в руке вы так же можете посмотреть как строить тот или иной мультиблок! Для этого установите основной блок мультиблока.&r"
 		""
 		"<warning>Обратите внимание, что разбивая машину гаечным ключом, вы не сможете ее получить.</warning> Для этого используйте <keyword>кирку</keyword>!"
+	]
+	quest.128C45AD8EA127F1.quest_desc: [
+		"The <keyword>Caster Orb</keyword> makes every swing of a tool or weapon <flame>fire a small Ember projectile</flame>, as long as you carry Ember. Its size and damage grow with augment level."
+		""
+		"Since the item now shoots, it can also take projectile augments like the Focal Lens."
+		"{@pagebreak}"
+		"<keyword>Сфера заклинателя</keyword> заставляет каждый взмах инструмента или оружия <flame>выпускать небольшой снаряд из эмбера</flame>, если у вас есть эмбер. Размер и урон растут с уровнем."
+		""
+		"Раз предмет теперь стреляет, на него можно ставить и улучшения для снарядов, например Фокусирующую линзу."
 	]
 	quest.129E5C68D2D4E946.quest_desc: [
 		"The reverse of the smeltery: it pulls essentia from your tubes and slowly turns it into <magic>Vis Crystals</magic>. Feed it vis to make it work faster."
@@ -1178,6 +1347,15 @@
 		""
 		"The fundamental unit of this mod is the <keyword>Data Model</keyword> - an item which holds information about an entity that you can utilize to generate their drops. To get a Data Model, you must first craft a <keyword>Data Model Framework</keyword>, and <positive>use it on the target entity</positive> to build the model. Once you have your model, you will have to train it."
 	]
+	quest.141180573E1737AE.quest_desc: [
+		"The <keyword>Char Instiller</keyword> limits the coil to <property>smoking</property> recipes, but <positive>doubles its speed</positive>."
+		""
+		"Can not be used together with <keyword>Atmospheric Bellows</keyword>."
+		"{@pagebreak}"
+		"<keyword>Коптильня</keyword> ограничивает катушку рецептами <property>копчения</property>, зато <positive>удваивает скорость</positive>."
+		""
+		"Нельзя ставить вместе с <keyword>Атмосферными мехами</keyword>."
+	]
 	quest.14167582565E089A.title: "bureaucracy gen"
 	quest.14308FB8B934DAAC.quest_desc: [
 		"&oAll Building Gadgets items need <property>Forge Energy</property>&o. Use the <keyword>settings menu</keyword>(<warning>X</warning> key with gadget in hand) to change <positive>modes</positive>, set <keyword>range</keyword>, &7anchor&r the preview, and <warning>undo</warning> the last action where the tool allows it.&r"
@@ -1223,6 +1401,11 @@
 		"Defeat <blood><glitch frequency=0.7 shiftChance=0.06>The Divine Chariot Azazel</glitch></blood> and get the <named>mask</named> - it'll come in handy later!"
 		"{@pagebreak}"
 		"Победи <blood><glitch frequency=0.7 shiftChance=0.06>Великую Божественную Колесницу Азазель</glitch></blood> и добудь <named>маску</named>, которая пригодится в будущем!"
+	]
+	quest.14746D0E8771D703.quest_desc: [
+		"The <keyword>Gear Stamp</keyword> casts <keyword>gears</keyword> from molten metal. This one is tougher to make: it is fired in a <keyword>Bloomery</keyword> with <property>bellows</property>."
+		"{@pagebreak}"
+		"<keyword>Пресс-форма шестерни</keyword> отливает <keyword>шестерни</keyword> из расплава. Сделать её сложнее: её обжигают в <keyword>Bloomery</keyword> с <property>мехами</property>."
 	]
 	quest.14948686DB724C19.quest_desc: [
 		"If you combine it with the <curse><shake amplitude=0.3 frequency=1.0>evil essence</shake></curse> on the anvil, it will yield charges for the <named>Totem of Undying</named>"
@@ -1284,6 +1467,15 @@
 		""
 		"<keyword>Очки откровения</keyword> показывают vis и эссенцию внутри предметов и <positive>снижают затраты vis</positive>."
 	]
+	quest.15F528A8C208D2AD.quest_desc: [
+		"The <keyword>Superheater</keyword> <flame>cooks</flame> everything: mined blocks drop smelted, slain creatures drop cooked food, and targets take extra <fire>burn damage</fire>."
+		""
+		"Higher level - more damage. Uses Ember from your inventory."
+		"{@pagebreak}"
+		"<keyword>Супернагреватель</keyword> всё <flame>прожаривает</flame>: добытые блоки выпадают переплавленными, убитые существа роняют готовую еду, а цели получают дополнительный <fire>урон огнём</fire>."
+		""
+		"Чем выше уровень, тем больше урон. Тратит эмбер из инвентаря."
+	]
 	quest.161BB2F50197CE72.quest_desc: [
 		"Void metal resists magic, yet <curse>channels it with surprising ease</curse>. The best wand caps."
 		"{@pagebreak}"
@@ -1303,6 +1495,15 @@
 		"{@pagebreak}"
 		"Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду</warning>!"
 	]
+	quest.16672FC60995902C.quest_desc: [
+		"<keyword>Winding Gears</keyword> on a tool: RMB to <wiggle amplitude=0.5 frequency=1.0 phase=1.0>wind it up</wiggle>. While wound, holding LMB attacks automatically and mining is faster, but the spring slowly unwinds."
+		""
+		"On boots they make you <positive>jump much higher</positive>, bounce without fall damage, and jump farther after a sprint - as long as you hold a wound tool."
+		"{@pagebreak}"
+		"<keyword>Взводимые шестерни</keyword> на инструменте: ПКМ, чтобы <wiggle amplitude=0.5 frequency=1.0 phase=1.0>завести его</wiggle>. Пока завод есть, зажатая ЛКМ атакует сама и копать быстрее, но пружина постепенно раскручивается."
+		""
+		"На ботинках они позволяют <positive>прыгать гораздо выше</positive>, отскакивать без урона от падения и прыгать дальше после бега - пока в руке заведённый инструмент."
+	]
 	quest.167C8222BBC164BB.quest_desc: [
 		"The <keyword>Enchanter's Sword</keyword> applies a <property>Touch</property> spell before damaging an entity, and grants all your spells extra <property>Spell Damage</property>. Inscribe it at the Scribe's Table with a spell that has no form, e.g.:"
 		""
@@ -1312,7 +1513,25 @@
 		""
 		" <item id=ars_nouveau:glyph_ignite size=0.1 tooltip=true/> > <item id=ars_nouveau:glyph_extend_time tooltip=true/>"
 	]
+	quest.16C54D0EF5E58124.quest_desc: [
+		"The <keyword>Ember-powered Cutting Machine</keyword> runs the same recipes as the bronze one, but <positive>without steam</positive> - it burns <keyword>Ember Grit</keyword> from a separate slot instead."
+		""
+		"Recipes run <positive>1.5x faster</positive>, and grit is not spent on every operation - roughly <property>one per three</property> crafts."
+		"{@pagebreak}"
+		"<keyword>Эмберная версия режущего механизма</keyword> выполняет те же рецепты, что и бронзовая, но <positive>без пара</positive> - вместо него она сжигает <keyword>пыль кристаллизованного эмбера</keyword> из отдельного слота."
+		""
+		"Рецепты идут <positive>в 1.5 раза быстрее</positive>, а пыль тратится не каждый раз - примерно <property>одна на три</property> операции."
+	]
 	quest.16C5B67E3D1F579C.quest_desc: ["Scribed with a <keyword>Block of Lapis</keyword> and awakened by a <soul>Sea Pickle</soul>. <positive>Pipes water</positive> into every fluid container touching its six faces; every 5 ticks it deposits up to <property>6 buckets</property>, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and <warning>parks completely</warning> on a redstone signal."]
+	quest.16D181CFA852AC43.quest_desc: [
+		"<soul>Soul Crude</soul> is boiled out of <keyword>soul sand</keyword> and logs in a <keyword>Clay Crucible</keyword> heated by a <keyword>Kiln</keyword>, working the bellows all the time."
+		""
+		"Mixed with <keyword>Dwarven Oil</keyword> in the Mixer Centrifuge it becomes <keyword>creosote</keyword>."
+		"{@pagebreak}"
+		"<soul>Шлам душ</soul> вываривают из <keyword>песка душ</keyword> и брёвен в <keyword>Clay Crucible</keyword>, поставленном на <keyword>Kiln</keyword>, постоянно раздувая мехи."
+		""
+		"Если смешать его с <keyword>Дворфийским маслом</keyword> в Смесительной центрифуге, получится <keyword>креозот</keyword>."
+	]
 	quest.16E087D682ED1D5A.quest_desc: [
 		"The bush will slowly grow and is harvestable."
 		""
@@ -1713,6 +1932,15 @@
 		"{@pagebreak}"
 		"<keyword>Portable Brazier Relay</keyword> (Ars Controle) позволяет носить эффект ритуала с собой, пока <keyword>жаровня ритуала</keyword> остаётся загруженной и обеспечена <property>сурсом</property>."
 	]
+	quest.1AC4A9E422C90AF5.quest_desc: [
+		"The <keyword>Mechanical Pump</keyword> draws <aqua>water</aqua> from the world, for example for the <keyword>Pressure Refinery</keyword>."
+		""
+		"Ember converts poorly into motion, so a pump running on Ember alone is <warning>slow</warning> - build several."
+		"{@pagebreak}"
+		"<keyword>Механический насос</keyword> выкачивает <aqua>воду</aqua> из мира, например для <keyword>Парового активатора эмбера</keyword>."
+		""
+		"Эмбер плохо превращается в движение, поэтому насос только на эмбере работает <warning>медленно</warning> - ставьте несколько."
+	]
 	quest.1AC7380981787140.quest_desc: [
 		"The <keyword>Ritual of Binding</keyword>, cast near an entity, turns it into a <keyword>Bound Script</keyword> - use that script to learn the entity as a <keyword>Familiar</keyword> in your spell book. Summoning a familiar gives you <warning><shake amplitude=0.3 frequency=1.0>Familiar Sickness</shake></warning> for a short while, preventing you from summoning another one right away."
 		"{@pagebreak}"
@@ -1769,6 +1997,15 @@
 		"{@pagebreak}"
 		"Более продвинутая <keyword>станция</keyword> для создания <keyword>зелий</keyword>. Также может создавать некоторые другие жидкости."
 	]
+	quest.1C40A70A805C3222.quest_desc: [
+		"The <keyword>Ancient Motive Core</keyword> is the <flame>spark</flame> of ancient machinery, built around an <keyword>Everburning Roots Heart</keyword>."
+		""
+		"It is the heart of the <keyword>Ember Activator</keyword>, and later it becomes the key to <magic>augmenting</magic> your tools and armor."
+		"{@pagebreak}"
+		"<keyword>Древнее ядро пробуждения</keyword> - <flame>искра</flame> древних механизмов, собранная вокруг <keyword>Everburning Roots Heart</keyword>."
+		""
+		"Это сердце <keyword>Активатора эмбера</keyword>, а позже оно станет ключом к <magic>улучшению</magic> инструментов и брони."
+	]
 	quest.1C6A99C7FA20BEF4.quest_desc: [
 		"The <keyword>Ring of the Demolitionist</keyword> <positive>amplifies explosions</positive> - if raw explosive power isn't enough, this ring makes sure you're never lacking in <shake amplitude=0.3 frequency=1.0>dakka</shake>."
 		"{@pagebreak}"
@@ -1793,6 +2030,11 @@
 		"Holds several <property>Location Cards</property> in one item. The Tempad reads the wallet automatically, which makes it useful for carrying shared locations and grouped travel points."
 		"{@pagebreak}"
 		"Хранит несколько <property>Location Card</property> в одном предмете. Tempad читает его автоматически, поэтому в нем удобно носить общие точки и наборы мест для телепорта."
+	]
+	quest.1D421A6959AC9A61.quest_desc: [
+		"Put an <keyword>Explosion Charm</keyword> on this pedestal and it will <positive>protect the area</positive> from explosions on its own, no need to wear it."
+		"{@pagebreak}"
+		"Положите <keyword>Взрывной амулет</keyword> на этот пьедестал, и он сам будет <positive>защищать округу</positive> от взрывов, носить его не нужно."
 	]
 	quest.1D4DC486A77B0175.quest_desc: [
 		"The peak of alchemy: the <magic>Thaumatorium</magic> automates crucible recipes, pulling essentia straight from your tubes. No more <glitch frequency=0.7 shiftChance=0.06>miscounted aspects</glitch>."
@@ -1863,6 +2105,11 @@
 		"{@pagebreak}"
 		"Сами себя качающие <wind>мехи</wind>: прикреплённые к печи (или адской печи) ускоряют плавку. Также нужны для насосов плавильни."
 	]
+	quest.1E40B915725543E6.quest_desc: [
+		"The <keyword>Item Dial</keyword> shows the <property>contents of an inventory</property> it is attached to, slot by slot."
+		"{@pagebreak}"
+		"<keyword>Индикатор предметов</keyword> показывает <property>содержимое инвентаря</property>, к которому прикреплён, по слотам."
+	]
 	quest.1E4A4AD1899325D3.quest_desc: [
 		"By pressing <keyword>'P'</keyword> on any side of a block, you can stick up to <keyword>4 items</keyword> to it, so it's time to open your own flea market with strong desires to unlock better storage solutions!"
 		""
@@ -1908,6 +2155,11 @@
 		"Босс спит, притворяясь <wiggly>шалкеровым ящиком</wiggly> - думай, что открываешь."
 	]
 	quest.1EE42F73CD16E77C.title: "Shulker Tower"
+	quest.1F2CE700E7267900.quest_desc: [
+		"A <keyword>Silver Pickaxe</keyword> - bright and precise. Nothing magical, just a solid tool."
+		"{@pagebreak}"
+		"<keyword>Серебряная кирка</keyword> - яркая и точная. Ничего волшебного, просто хороший инструмент."
+	]
 	quest.1F3313C0D615B384.quest_desc: [
 		"<wind><wave>Flight!</wave></wind> The harness runs on <fire>Potentia</fire> essentia: right-click it with filled jars, then press <keyword>H</keyword> while wearing it to toggle."
 		"{@pagebreak}"
@@ -1955,6 +2207,15 @@
 		"Having this attached to your broom will let you fly in lava for some time."
 		"{@pagebreak}"
 		"Позволяет <positive>не дамажить</positive> <keyword>метлу</keyword> в <warning>лаве</warning> "
+	]
+	quest.2059FD3053704DCF.quest_desc: [
+		"<keyword>Tyrfing</keyword> is a <curse>pulsating</curse> lead blade shaped through alchemy. Against most targets it is a bit duller than a normal sword..."
+		""
+		"...but the <warning>more armor</warning> the enemy wears, the <shake amplitude=0.4 frequency=1.5>harder it hits</shake>."
+		"{@pagebreak}"
+		"<keyword>Тюрвинг</keyword> - <curse>пульсирующий</curse> свинцовый клинок, выкованный алхимией. Против большинства целей он чуть тупее обычного меча..."
+		""
+		"...но чем <warning>больше брони</warning> на враге, тем <shake amplitude=0.4 frequency=1.5>сильнее он бьёт</shake>."
 	]
 	quest.206555064F36DA11.quest_desc: [
 		"A <nature>Shimmerleaf</nature> flower whose dormant purifying power has been awakened in the crucible. Plant it, and its <magic><wave>soft glow</wave></magic> slowly but surely restores land corrupted by magic within about <property>8 blocks</property> back to its <positive>natural state</positive>."
@@ -2019,6 +2280,15 @@
 		""
 		"После активации наденьте его в слот Curios, чтобы получить <property>+1 слот для талисмана</property>, позволяющий надеть ещё одну безделушку. Пробуждение глаза также открывает <magic><fade minAlpha=0.3 frequency=0.6>Рассказчика</fade></magic> - таинственный голос, который начинает комментировать ваш путь: вход в Нижний мир или Энд, бой с Иссушителем или Драконом Края, смерть, возрождение и другие ключевые моменты."
 	]
+	quest.20CFF974A8F0ECD2.quest_desc: [
+		"Your first <flame>molten metal</flame>! It can be pumped out of the melter into a <keyword>Stamp Base</keyword>, a tank or a <keyword>Mixer Centrifuge</keyword>."
+		""
+		"Each dust gives <property>60 mB</property>. Want more? Later a <keyword>Geologic Separator</keyword> will add a <positive>bonus metal</positive> on top."
+		"{@pagebreak}"
+		"Ваш первый <flame>расплавленный металл</flame>! Его можно откачать из печи в <keyword>Депо штамповочного пресса</keyword>, бак или <keyword>Смесительную центрифугу</keyword>."
+		""
+		"Каждая пыль даёт <property>60 mB</property>. Хотите больше? Позже <keyword>Геологический сепаратор</keyword> добавит сверху <positive>бонусный металл</positive>."
+	]
 	quest.2141539997D6480F.quest_desc: [
 		"\"R\" - <keyword>Radial menu</keyword>."
 		""
@@ -2050,6 +2320,11 @@
 	]
 	quest.2141539997D6480F.quest_subtitle: "ADHD edition"
 	quest.2141539997D6480F.title: "<pend>Hi wrld"
+	quest.217A728178EE271F.quest_desc: [
+		"The <keyword>Silver Aspectus</keyword> - silver has always been a good channel for the <magic>arcane</magic>. Needed for finer transmutations."
+		"{@pagebreak}"
+		"<keyword>Серебряный аспект</keyword> - серебро всегда хорошо проводило <magic>тайные силы</magic>. Нужен для более тонких трансмутаций."
+	]
 	quest.217DD26BDF6AB040.quest_desc: ["<positive>Launches</positive> entities horizontally in the direction they face."]
 	quest.21EC4B09DE3636B8.quest_desc: [
 		"Give your <named>Ars Ecclesia</named> to the village cleric!"
@@ -2127,6 +2402,15 @@
 		"<property>Увеличивает силу</property> всех <property>аффиксов</property> на <keyword>предмете с аффиксами</keyword>."
 	]
 	quest.236E57B50041DE24.quest_desc: ["<positive>Commands the weather</positive>, toggling rain on or off at a cost of <property>500 EV</property> from the owner's anima. <warning>Consumed on use</warning>."]
+	quest.239848409D6EB06A.quest_desc: [
+		"The <keyword>Ember Activator</keyword> finally turns crystals into <flame>usable energy</flame>."
+		""
+		"<named>How:</named> feed <keyword>Ember Shards</keyword> or <keyword>Crystals</keyword> into the <property>bottom</property> with a hopper or pipes. With a <shake amplitude=0.3 frequency=1.0>fiery burst</shake>, activated Ember appears in the copper cage on top - pull it out with an <keyword>Ember Emitter</keyword>."
+		"{@pagebreak}"
+		"<keyword>Активатор эмбера</keyword> наконец превращает кристаллы в <flame>полезную энергию</flame>."
+		""
+		"<named>Как:</named> подавайте <keyword>осколки</keyword> или <keyword>кристаллы эмбера</keyword> в его <property>нижнюю часть</property> воронкой или трубами. С <shake amplitude=0.3 frequency=1.0>огненной вспышкой</shake> в медной клетке сверху появится активированный эмбер - забирайте его <keyword>Излучателем эмбера</keyword>."
+	]
 	quest.23A684C49FC17830.quest_desc: ["<positive>Transmutes</positive> raw materials dropped nearby into their smelted forms (<property>10 EV</property> per stack from the owner's network). Items within its radius will not despawn while awaiting processing; processes all valid stacks simultaneously, with cook times matching a standard furnace."]
 	quest.23C7291610733C3A.quest_desc: [
 		"The <keyword>Spell Turret</keyword> is an upgrade of the <keyword>Basic Spell Turret</keyword> - it can cast a spell using any glyphs, not just the free ones, at the cost of <property>source</property>."
@@ -2198,7 +2482,15 @@
 		"{@pagebreak}"
 		"Твоё первое алхимическое творение - маленькое <flame>вечное пламя</flame>. Его создание завершает запись <named>Алхимия</named> и открывает остальную ветку."
 	]
-	quest.24E7FD78ADA1347F.quest_desc: ["при переплавки некоторых руд можно получить осадок других металлов, например при переплавке меди можно получить немного золота"]
+	quest.24E7FD78ADA1347F.quest_desc: [
+		"Ores are never pure. The <keyword>Geologic Separator</keyword> filters out impurities while melting and gives a <positive>bonus metal</positive> - for example, a bit of gold when melting copper."
+		""
+		"Place it <property>next to the Melter</property>, with the tap facing the melter's bottom block."
+		"{@pagebreak}"
+		"Руды никогда не бывают чистыми. <keyword>Геологический сепаратор</keyword> отделяет примеси при плавке и даёт <positive>бонусный металл</positive> - например, немного золота при плавке меди."
+		""
+		"Ставьте его <property>рядом с плавильней</property>, краником к её нижнему блоку."
+	]
 	quest.2518CA7E57223D3A.quest_desc: [
 		"One of the earliest ways of <positive>flying</positive>"
 		""
@@ -2226,6 +2518,15 @@
 		"Works for most land animals such as cows, pigs, sheep."
 	]
 	quest.25814A2E5E005F82.quest_desc: ["Freezes the water you walk over. Permanently. Drains 100EV every 5 seconds from your Anima reserves."]
+	quest.25A0DB50AF558709.quest_desc: [
+		"Plain <keyword>Everburning Roots</keyword> - what remains of the veins once the Ember has been chiseled out of them."
+		""
+		"Don't throw them away: fired in a <keyword>Bloomery</keyword> together with <keyword>unfired caminite bricks</keyword>, they turn into <keyword>Archaic Bricks</keyword>."
+		"{@pagebreak}"
+		"Обычные <keyword>Everburning Roots</keyword> - то, что остаётся от прожилок, когда из них выбили эмбер зубилом."
+		""
+		"Не выбрасывайте их: если обжечь их в <keyword>Bloomery</keyword> вместе с <keyword>Unfired Caminite Brick</keyword>, получатся <keyword>Архаичные кирпичи</keyword>."
+	]
 	quest.263E27B045BEECE4.quest_desc: ["Provides even greater sight than it's predecessor, revealing stats such as Ara Vitae's crafting progress, speed, and more."]
 	quest.2649938C27A08C3A.quest_desc: [
 		"The <keyword>Enchanter's Scythe</keyword> (Ars Hex) works like the Enchanter's Sword - inscribe a spell without a form at the Scribe's Table and it triggers on hit. Rebound-thrown scythes will also trigger Reactive spells."
@@ -2238,7 +2539,21 @@
 		"Если сплавить <keyword>Soulwoven Pouch</keyword> с гнилью, у него прорастают зубы, и он превращается в <shake><warning>Ravenous Pouch</warning></shake> - он работает как магнит, <positive>автоматически</positive> подбирая предметы с земли, но только те виды, которых уже есть хоть немного внутри него."
 	]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
+	quest.268AD6B05E5B99F3.quest_desc: [
+		"Place a tool, weapon or armor piece on the <keyword>Dawnstone Anvil</keyword>, then an <keyword>Ancient Motive Core</keyword>, and <shake amplitude=0.3 frequency=1.0>hammer away</shake>."
+		""
+		"The item gains the ability to <flame>absorb Heat</flame>, which builds up through normal use."
+		"{@pagebreak}"
+		"Положите на <keyword>Золотитовую наковальню</keyword> инструмент, оружие или броню, затем <keyword>Древнее ядро пробуждения</keyword>, и <shake amplitude=0.3 frequency=1.0>куйте</shake>."
+		""
+		"Предмет научится <flame>накапливать жар</flame>, который растёт при обычном использовании."
+	]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
+	quest.26CD0CCE6AB07361.quest_desc: [
+		"The <keyword>Lead Aspectus</keyword> - another <magic>alignment</magic> for your recipes. The more aspecti you own, the more transmutations you can attempt."
+		"{@pagebreak}"
+		"<keyword>Свинцовый аспект</keyword> - ещё одно <magic>русло</magic> для рецептов. Чем больше у вас аспектов, тем больше трансмутаций можно попробовать."
+	]
 	quest.26D3721A292E8E8C.quest_desc: [
 		"This is the first navigation method; more convenient navigation methods will become available later."
 		""
@@ -2278,6 +2593,15 @@
 		"Тебе придется <positive>поплавать</positive> чтобы добыть кусочек данной субстанции."
 		""
 		"Относись внимательно к каждому ресурсу, который плавает себе спокойно в <property>глубоких водах</property>!"
+	]
+	quest.275F45C7B7EB6161.quest_desc: [
+		"The <keyword>Ember-powered Mixer</keyword> runs the same recipes as the bronze one, but <positive>without steam</positive> - it burns <keyword>Ember Grit</keyword> from a separate slot instead."
+		""
+		"Recipes run <positive>1.5x faster</positive>, and grit is not spent on every operation - roughly <property>one per three</property> crafts."
+		"{@pagebreak}"
+		"<keyword>Эмберная версия смешивающего механизма</keyword> выполняет те же рецепты, что и бронзовая, но <positive>без пара</positive> - вместо него она сжигает <keyword>пыль кристаллизованного эмбера</keyword> из отдельного слота."
+		""
+		"Рецепты идут <positive>в 1.5 раза быстрее</positive>, а пыль тратится не каждый раз - примерно <property>одна на три</property> операции."
 	]
 	quest.278211E712E220D5.quest_desc: [
 		"Copy a 3D build area and paste it elsewhere. Use <keyword>Copy</keyword> to select the area, then <keyword>Paste</keyword> to place it. You still need the blocks in your inventory, and you can <keyword>rotate</keyword>, <warning>mirror</warning>, &7offset&r, or &7anchor&r the preview before placing"
@@ -2460,6 +2784,15 @@
 		""
 		"Голем: <warning>разрушитель</warning> (Breaker) и <magic>умный</magic> (Smart)."
 	]
+	quest.290E7850E993650A.quest_desc: [
+		"An <magic>Aspectus</magic> is metal wrapped around an Ember Crystal. Placed under <keyword>Alchemy Pedestals</keyword>, it bends the energy of burning ingredients into a certain <magic>alignment</magic>."
+		""
+		"The <keyword>Dawnstone Aspectus</keyword> is the first one you get - and every recipe needs the right ones in the right places."
+		"{@pagebreak}"
+		"<magic>Аспект</magic> - это металл, обёрнутый вокруг кристалла эмбера. Поставленный под <keyword>Алхимический пьедестал</keyword>, он направляет энергию сгорающих ингредиентов в определённое <magic>русло</magic>."
+		""
+		"<keyword>Золотитовый аспект</keyword> - первый из них, и каждому рецепту нужны правильные аспекты на правильных местах."
+	]
 	quest.2932104ADB7BE4D0.quest_desc: [
 		"Almost <property>flight</property>"
 		"{@pagebreak}"
@@ -2502,6 +2835,15 @@
 		""
 		"Голем: <warning>разрушитель</warning> (Breaker) и <magic>умный</magic> (Smart)."
 	]
+	quest.29E5FC611F959789.quest_desc: [
+		"The <keyword>Blazing Ray</keyword> looks like a gun but works like artillery: each shot fires a <flame>straight beam of pure Ember</flame> until it hits a block or a creature."
+		""
+		"Fired in quick succession it gets <warning>inaccurate</warning> - augments like the Focal Lens or Diffraction Barrel deal with that, each in its own way."
+		"{@pagebreak}"
+		"<keyword>Огненный обрез</keyword> похож на ружьё, но работает как артиллерия: каждый выстрел выпускает <flame>прямой луч чистого эмбера</flame>, пока тот не упрётся в блок или существо."
+		""
+		"При частой стрельбе он <warning>теряет точность</warning> - улучшения вроде Фокусирующей линзы или Дифракционного дульного устройства решают это, каждое по-своему."
+	]
 	quest.29F05931D0564717.quest_desc: ["To make leather, first make a tanning rack and place it down."]
 	quest.29F05931D0564717.title: "Making Leather: Tanning Rack"
 	quest.2A35213A3A04E232.quest_desc: [
@@ -2543,6 +2885,15 @@
 		"Жизнь и смерть всегда идут рядом. Один том дарует рост, другой - достойное завершение"
 	]
 	quest.2AB24F8E192B7EE4.title: "Blessing and Grace"
+	quest.2AE46163AD359AAB.quest_desc: [
+		"Hold the <keyword>Inflictor Gem</keyword> in your hand when you take damage - it will <glitch frequency=0.6 shiftChance=0.05>absorb that type of damage</glitch> and remember it."
+		""
+		"Stitch the gem to <keyword>ashen armor</keyword> with a <keyword>string</keyword> in a crafting grid: each gem cuts damage of its type by about <positive>a third</positive>. To take gems off, put the armor into the grid alone."
+		"{@pagebreak}"
+		"Держите <keyword>Самоцвет сосредоточения</keyword> в руке, когда получаете урон, - он <glitch frequency=0.6 shiftChance=0.05>впитает этот тип урона</glitch> и запомнит его."
+		""
+		"Пришейте самоцвет к <keyword>пепельной броне</keyword> <keyword>нитью</keyword> в сетке крафта: каждый самоцвет снижает урон своего типа примерно на <positive>треть</positive>. Чтобы снять самоцветы, положите броню в сетку одну."
+	]
 	quest.2B284E366F5E6D1D.quest_desc: [
 		"The <keyword>Filtering Shelf</keyword> lets you <warning><shake amplitude=0.3 frequency=1.0>blacklist</shake></warning> enchantments from your enchanting table - insert an enchanted book with a single enchantment on it (like a <curse>curse</curse>) into the shelf, and that enchantment will stop appearing on future enchants. Holds up to <keyword>6 books</keyword>."
 		"{@pagebreak}"
@@ -2582,6 +2933,11 @@
 		""
 		""
 		"{image:milf:textures/quest_pic/locking.png width:200 height:170 align:center}"
+	]
+	quest.2B7790B78502645B.quest_desc: [
+		"The <keyword>Focal Lens</keyword> sharpens Ember weapons: fireballs become <positive>homing</positive>, and rays become <positive>piercing</positive>."
+		"{@pagebreak}"
+		"<keyword>Фокусирующая линза</keyword> делает эмберное оружие точнее: огненные шары становятся <positive>самонаводящимися</positive>, а лучи - <positive>пробивающими</positive>."
 	]
 	quest.2B7F14733C000C22.quest_desc: [
 		"All subsequent quests in this chapter exist to make you aware of certain <keyword>non-obvious mechanics</keyword>. <positive><fade minAlpha=0.4 frequency=1.0>You can read them whenever, we won't judge</fade></positive>."
@@ -2697,6 +3053,15 @@
 		"[ \"Используя \", { \"text\": \"птицелов\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"351FE7156FB415A0\" } }, \" можно поймать таких мобов как пчёл или летучих мышей и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!\" ]"
 	]
 	quest.2CFF4A7767CD830E.title: "A cage for our flying little friends"
+	quest.2D0BE19E5336B53E.quest_desc: [
+		"Witches shrug off the otherworldly, and with the <keyword>Amulet of the Heretic</keyword> so do you: magic attacks lose <positive>90%</positive> of their damage."
+		""
+		"You still always take at least <warning>half a heart</warning> from magic."
+		"{@pagebreak}"
+		"Ведьмы равнодушны к потустороннему, и с <keyword>Амулетом еретика</keyword> вы тоже: магические атаки теряют <positive>90%</positive> урона."
+		""
+		"Но хотя бы <warning>полсердца</warning> урона от магии вы всё равно получите."
+	]
 	quest.2D89107A2B1F6A6C.quest_desc: [
 		" <item id=ars_nouveau:glyph_self tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>"
 		""
@@ -2753,6 +3118,11 @@
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
 	]
+	quest.2E9AEA793CE469EA.quest_desc: [
+		"<keyword>Ember Crystals</keyword> are what you feed the forge: the more you toss in with the item, the <positive>more likely</positive> the tempering succeeds."
+		"{@pagebreak}"
+		"<keyword>Кристаллы эмбера</keyword> - корм для кузницы: чем больше вы бросите вместе с предметом, тем <positive>выше шанс</positive> удачной закалки."
+	]
 	quest.2EDF30504EBF6A20.quest_desc: [
 		"The <keyword>Siren Familiar</keyword> (Ars Elemental) is a personal companion version of the Siren, separate from the tamed Siren used at a Siren Shrine to passively generate fishing loot."
 		"{@pagebreak}"
@@ -2806,6 +3176,15 @@
 		"<property>ПКМ</property> - <soul>парирование</soul> вокруг себя: урон оружия плюс <property>30%</property> отражённого урона, и <positive>лечение</positive> на <property>20%</property> от максимального здоровья. Урон сквозь броню парировать нельзя."
 		""
 		"<property>Shift + удержание ПКМ</property> <property>1 секунду</property>, глядя на существо в радиусе <property>10 блоков</property>, выпускает <soul>самонаводящиеся призрачные кинжалы</soul>."
+	]
+	quest.2F7104C71536C583.quest_desc: [
+		"The <keyword>Fluid Transfer</keyword> is the fluid version of the Item Transfer."
+		""
+		"Set the filter with a <keyword>bucket</keyword> or another container holding the fluid - it <positive>isn't consumed</positive>. Without a filter it works as a <wave>one-way pipe</wave>."
+		"{@pagebreak}"
+		"<keyword>Передатчик жидкостей</keyword> - жидкостная версия передатчика предметов."
+		""
+		"Фильтр задаётся <keyword>ведром</keyword> или другой ёмкостью с жидкостью - она <positive>не тратится</positive>. Без фильтра работает как <wave>односторонняя труба</wave>."
 	]
 	quest.2F728B18B7B4C5FE.quest_desc: [
 		"<keyword><shake amplitude=0.4 frequency=1.0>Boss Checklist</shake></keyword> adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu <keyword>\"R\"</keyword>."
@@ -2904,7 +3283,15 @@
 		"{@pagebreak}"
 		"Ты же знаешь, для чего это нужно, да?"
 	]
-	quest.30BAEF406C7549E3.quest_desc: ["автомат. клики за счёт эмбера"]
+	quest.30BAEF406C7549E3.quest_desc: [
+		"Tired of swinging the hammer yourself? The <keyword>Automatic Hammer</keyword> works the <keyword>Dawnstone Anvil</keyword> in front of it - <shake amplitude=0.3 frequency=1.0>harder and faster</shake> than you."
+		""
+		"It needs a little Ember and a <pulse>redstone signal</pulse>."
+		"{@pagebreak}"
+		"Надоело махать молотом самому? <keyword>Автоматический молот</keyword> работает на <keyword>Золотитовой наковальне</keyword> перед собой - <shake amplitude=0.3 frequency=1.0>сильнее и быстрее</shake> вас."
+		""
+		"Ему нужно немного эмбера и <pulse>редстоун-сигнал</pulse>."
+	]
 	quest.30C4AD468ACFB3C5.quest_desc: [
 		"Can <positive>catch</positive> <keyword>living creatures</keyword>!"
 		"{@pagebreak}"
@@ -3003,12 +3390,26 @@
 		"{@pagebreak}"
 		"<keyword>Advanced Prism</keyword> - улучшенная версия <keyword>Spell Prism</keyword>: <keyword>Жезлом владения</keyword> его можно навести на конкретный блок вместо просто направления, а с помощью <property>линз</property> изменять перенаправленное заклинание (траектория по дуге или самонаведение, изменение скорости, а также эффекты вроде пробивания и цепочки, требующие сурса)."
 	]
+	quest.322789010A806768.quest_desc: [
+		"The <keyword>Mantle Cartridge</keyword> holds <positive>more Ember</positive> than a jar, but it only works while <property>held in your hand</property> - usually the off hand."
+		"{@pagebreak}"
+		"<keyword>Картридж огненного покрова</keyword> вмещает <positive>больше эмбера</positive>, чем батарея, но работает, только когда <property>находится в руке</property> - обычно во второй."
+	]
 	quest.322EFB9731238E57.quest_desc: [
 		"Place the egg and wait - a <bone>Skeloraptor</bone> will hatch from it. It is a <positive>mount</positive>: press <property>R</property> to <shake amplitude=0.4 frequency=1.6>roar</shake> and scare away mobs."
 		"{@pagebreak}"
 		"Поставь яйцо и подожди - из него вылупится <bone>скелетораптор</bone>. Это <positive>ездовое животное</positive>: нажми <property>R</property>, чтобы <shake amplitude=0.4 frequency=1.6>зарычать</shake> и распугать мобов."
 	]
 	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your <named>cute little pet rock</named> daily! It's quite playful when you let it roam freely, so don't let it loose without the <keyword>leash</keyword>. As the good rock that it is, it'll help you <positive>locate the precious little minerals</positive> around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the <property>ores</property> and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
+	quest.324D3F41EBECDB36.quest_desc: [
+		"The <keyword>Ember Receptor</keyword> is the receiving end. Place it on a machine: every Ember burst it catches gets pushed straight into that machine, <positive>no redstone needed</positive>."
+		""
+		"If the machine can't take everything, the excess is <warning>lost</warning> in a puff of smoke and sparks."
+		"{@pagebreak}"
+		"<keyword>Приёмник эмбера</keyword> - принимающая сторона. Поставьте его на машину: каждый пойманный пакет эмбера сразу уходит в неё, <positive>редстоун не нужен</positive>."
+		""
+		"Если машина не может принять всё, излишек <warning>теряется</warning> с облачком дыма и искр."
+	]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
 	quest.3280261221D57614.quest_subtitle: "WIP"
 	quest.32A2AA91FA55AB4A.quest_desc: [
@@ -3213,7 +3614,15 @@
 		""
 		"Также можно получить через <keyword>обмен с пиглинами</keyword>."
 	]
-	quest.3643627887D2AD11.quest_desc: ["Хранилище эмбера"]
+	quest.3643627887D2AD11.quest_desc: [
+		"The <keyword>Copper Cell</keyword> does one thing: <positive>stores Ember</positive>. Fill it through an <keyword>Ember Receptor</keyword> and drain it with an <keyword>Ember Emitter</keyword>."
+		""
+		"A broken cell <positive>keeps its stored Ember</positive>, so you can move it around freely."
+		"{@pagebreak}"
+		"<keyword>Медный аккумулятор</keyword> делает одно: <positive>хранит эмбер</positive>. Заполняйте его через <keyword>Приёмник эмбера</keyword> и забирайте эмбер <keyword>Излучателем эмбера</keyword>."
+		""
+		"Сломанный аккумулятор <positive>сохраняет запасённый эмбер</positive>, так что его можно спокойно переносить."
+	]
 	quest.365584F44AB28CB8.quest_desc: [
 		"A handy <keyword>radar</keyword> that shows which <named>fish</named> you can <positive>catch</positive> in the area where you are"
 		"{@pagebreak}"
@@ -3514,6 +3923,15 @@
 		"Тянуть из него можно жезлом, через <keyword>зарядный пьедестал</keyword> рядом, или передавать поток дальше <keyword>ретрансляторами vis</keyword>."
 	]
 	quest.39A6C12928525DCD.quest_subtitle: "WIP"
+	quest.39AB276847E503F2.quest_desc: [
+		"The <keyword>Flame Barrier</keyword> surrounds you with a <fire>shield of fire</fire> when you are hit: the attacker is <flame>set on fire</flame> and takes damage."
+		""
+		"Each blast uses Ember; damage grows with augment level."
+		"{@pagebreak}"
+		"<keyword>Огненный барьерный модуль</keyword> окружает вас <fire>огненным щитом</fire> при ударе: нападающий <flame>загорается</flame> и получает урон."
+		""
+		"Каждая вспышка тратит эмбер, урон растёт с уровнем улучшения."
+	]
 	quest.39DB1E37478B1FE7.quest_desc: ["The Eternal Youth is a consumable item that - quite simply put - imbues the animal it's used on with a never ending state of immortality as a youngling. If the animal in question is not currently young, it will be reverted to its youth. The immortality given is near absolute; the few ways of killing such an animal is either to lose it to the void or to use a second Eternal Youth on them."]
 	quest.39DCC2821529301C.quest_desc: [
 		"passive sigil held in hand: +50 Spiritus Collection, +25 Bonus Sacrifice, +10 Blood Siphon (heals on kill, capped at 4 hearts)"
@@ -3557,6 +3975,20 @@
 		"Now, for those empty pots. They can be filled with replacement oil without recreating the composition in the pot. Just by making this base, we can refill all our oil containers and even sashes. BEAUTIFUL."
 		"{@pagebreak}"
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
+	]
+	quest.3ACCA8831B14D8DF.quest_desc: [
+		"<bone>Ash</bone> is more useful than it looks: a poor fuel, a way to recolor stone, and an important <magic>alchemy</magic> ingredient - it is the base for soul sand and the Ashen Amulet."
+		"{@pagebreak}"
+		"<bone>Пепел</bone> полезнее, чем кажется: слабое топливо, способ перекрасить камень и важный ингредиент <magic>алхимии</magic> - из него получаются песок душ и Пепельный амулет."
+	]
+	quest.3AFD02BE11FC391E.quest_desc: [
+		"The <keyword>Everburning Roots Heart</keyword> is the core of a <warning>rare</warning> underground growth in the overworld. Around it spread <keyword>Everburning Roots</keyword> and their <keyword>Veins</keyword>, all of them <flame>smoldering with Ember</flame>."
+		""
+		"The Heart is needed to build an <keyword>Ancient Motive Core</keyword>, so dig it out and take it home. Need more cores later? Go looking for another nest."
+		"{@pagebreak}"
+		"<keyword>Everburning Roots Heart</keyword> - центр <warning>редкого</warning> подземного нароста в верхнем мире. Вокруг него расползаются <keyword>Everburning Roots</keyword> и их <keyword>Veins</keyword>, и всё это <flame>тлеет эмбером</flame>."
+		""
+		"Сердце нужно для создания <keyword>Древнего ядра пробуждения</keyword>, так что выкопайте его и заберите домой. Понадобятся ещё ядра - ищите следующее гнездо."
 	]
 	quest.3B40DB8CA23BB5A0.quest_desc: [
 		"When <keyword>walls and fences</keyword> hold you, fret not, now you can <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>jump them</bounce></positive>!"
@@ -3692,7 +4124,29 @@
 		"<blood>декоративный материал</blood> для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
 	]
 	quest.3C4D5E6F7A8B0093.title: "Demonite Ingot"
-	quest.3C90765213BDB46C.quest_desc: ["ставит симпатичный свет в мире"]
+	quest.3C6DCBB03C1A7BB3.quest_desc: [
+		"Attach the <keyword>Ember Dial</keyword> to anything that holds Ember and look at it to see <property>how much is stored</property>."
+		"{@pagebreak}"
+		"Прикрепите <keyword>Индикатор эмбера</keyword> к чему угодно, что хранит эмбер, и посмотрите на него, чтобы узнать, <property>сколько внутри</property>."
+	]
+	quest.3C90765213BDB46C.quest_desc: [
+		"A <keyword>Glimmer Crystal</keyword> is quartz infused with heat and Ember, eager to <flame>give its light away</flame>. Use it to place light sources anywhere."
+		""
+		"Each use drains the crystal, but it <positive>slowly recharges</positive> while you stand in sunlight."
+		"{@pagebreak}"
+		"<keyword>Мерцающий кристалл</keyword> - кварц, пропитанный жаром и эмбером, который охотно <flame>отдаёт свой свет</flame>. С ним можно ставить источники света где угодно."
+		""
+		"Каждое использование тратит заряд, но кристалл <positive>медленно восстанавливается</positive>, пока вы стоите на солнце."
+	]
+	quest.3C9586039920F5C3.quest_desc: [
+		"For the impatient: a <keyword>Catalytic Plug</keyword> attached to a machine <positive>doubles its speed</positive> while it is fed <wind>steam</wind> from the back."
+		""
+		"Two plugs - <positive>4x</positive> speed. More than two, or more than one Mechanical Core in between, lowers efficiency."
+		"{@pagebreak}"
+		"Для нетерпеливых: <keyword>Каталитический штепсель</keyword>, подключённый к машине, <positive>удваивает её скорость</positive>, пока в него сзади подаётся <wind>пар</wind>."
+		""
+		"Два штепселя - скорость <positive>x4</positive>. Больше двух или больше одного механического ядра между ними снижают эффективность."
+	]
 	quest.3CD24DA505BC109F.quest_desc: [
 		"<positive>Obtain</positive> &l&5Neolith&r&r from the failing-engulfed <keyword>obsidian</keyword>."
 		"{@pagebreak}"
@@ -3777,6 +4231,11 @@
 		"A pouch for your coins"
 		"{@pagebreak}"
 		"Мешок для ваших монет"
+	]
+	quest.3D76A39F7408C767.quest_desc: [
+		"The <keyword>Mirror Relay</keyword> works like a normal relay, but Ember <wave>bounces off it</wave> like light off a mirror instead of passing through. Handy for turning a beam around."
+		"{@pagebreak}"
+		"<keyword>Зеркальное реле эмбера</keyword> работает как обычное реле, но эмбер <wave>отражается от него</wave>, как свет от зеркала, а не проходит насквозь. Удобно, чтобы развернуть луч."
 	]
 	quest.3D7C097E1F8BBF2E.quest_desc: [
 		"The <magic>Chorusent</magic> - a giant of the End that <shake amplitude=0.4 frequency=1.2>smashes the ground</shake> beneath its feet."
@@ -3981,6 +4440,11 @@
 		""
 		"В отличие от <keyword>магической лампы</keyword>, из которой она сделана, сама по себе она <warning>почти не светит</warning>, пока не получит эссенцию <nature>Herba</nature> - её подают прямо по <keyword>трубе для эссенции</keyword>. <property>Сигнал редстоуна</property> её выключает."
 	]
+	quest.40F836370A5CCB10.quest_desc: [
+		"The <keyword>Ember Funnel</keyword> catches Ember from <property>several sources</property> at once and quickly passes it into the connected machine - <positive>nothing gets lost</positive>."
+		"{@pagebreak}"
+		"<keyword>Жёлоб эмбера</keyword> ловит эмбер сразу из <property>нескольких источников</property> и быстро передаёт его в подключённую машину - <positive>ничего не теряется</positive>."
+	]
 	quest.40FBEE2028873C00.quest_desc: [
 		"My clothes are torn to bits. I feel my own academy attire does not reflect my truest desires. I must attain a new wardrobe. And I have the perfect material to make it out of."
 		""
@@ -4038,10 +4502,24 @@
 		"{@pagebreak}"
 		"<warning>Отключает спавн мобов</warning> в области"
 	]
+	quest.41A331A3401DB6E7.quest_desc: [
+		"Fire <property>4</property> <keyword>unfired caminite bricks</keyword> and <property>4</property> <keyword>Everburning Roots</keyword> together in a <keyword>Bloomery</keyword> to get <property>8</property> <keyword>Archaic Bricks</keyword>."
+		""
+		"They are the frame of your first Ember devices, and they look great next to caminite in buildings."
+		"{@pagebreak}"
+		"Обожгите <property>4</property> <keyword>Unfired Caminite Brick</keyword> и <property>4</property> <keyword>Everburning Roots</keyword> вместе в <keyword>Bloomery</keyword> и получите <property>8</property> <keyword>Архаичных кирпичей</keyword>."
+		""
+		"Из них собирается каркас первых эмберных устройств, а ещё они отлично смотрятся рядом с каминитом в постройках."
+	]
 	quest.41B15E7A854942E7.quest_desc: [
 		"<keyword>Flint</keyword>, a <keyword>Bowl</keyword>, <keyword>Redstone</keyword> and <property>three Vis Crystals</property> in a crafting table. This <magic>magic dust</magic> turns mundane blocks into thaumaturgical ones."
 		"{@pagebreak}"
 		"<keyword>Кремень</keyword>, <keyword>миска</keyword>, <keyword>редстоун</keyword> и <property>три кристалла Vis</property> в верстаке. Эта <magic>магическая пыль</magic> превращает обычные блоки в таумотургические."
+	]
+	quest.41CB59DC79E8BF8F.quest_desc: [
+		"The <keyword>Rod Stamp</keyword> casts <keyword>rods</keyword> straight from molten metal."
+		"{@pagebreak}"
+		"<keyword>Rod Stamp</keyword> отливает <keyword>стержни</keyword> прямо из расплава."
 	]
 	quest.41CE63014308AEAD.quest_desc: [
 		"Carry the <keyword>Epitaph</keyword> in your inventory, and if you <blood><fade minAlpha=0.3 frequency=0.8>die</fade></blood>, it will be consumed to mark your place of death with a <keyword>Fleeting Memorial</keyword>. Any <keyword>Waystone</keyword> can then offer it as a teleport destination - once you teleport there, the memorial disappears."
@@ -4049,6 +4527,15 @@
 		"Носите <keyword>Epitaph</keyword> в инвентаре - если вы <blood><fade minAlpha=0.3 frequency=0.8>погибнете</fade></blood>, он будет израсходован, чтобы отметить место смерти <keyword>временным мемориалом</keyword>. Любой <keyword>вейстоун</keyword> сможет предложить его как точку телепортации - как только вы телепортируетесь туда, мемориал исчезнет."
 	]
 	quest.4234498523BE845B.quest_desc: ["Once your model is <positive>Basic</positive> or higher, you can use the <keyword>Simulation Chamber</keyword> to run simulations. Simulations will always produce a <property>generalized prediction</property>, and may also produce a <keyword>Mob Prediction</keyword>, based on the <property>accuracy</property> of the model. The <keyword>higher tier</keyword> of the model, the higher the accuracy, up to <keyword>99.5% at Self Aware</keyword>. Running simulations requires <property>energy</property> (based on the model type) and a <property>catalyst item</property>, which is usually a <keyword>Prediction Matrix</keyword>."]
+	quest.4269FC87A34C8E58.quest_desc: [
+		"Give the <keyword>Item Vacuum</keyword> a <pulse>redstone signal</pulse> and it will <wave>suck in</wave> all loose items in a large area in front of it."
+		""
+		"It has no inventory of its own and pushes items straight into a pipe or container at its back. Put an <keyword>Item Transfer</keyword> there to <property>filter</property> what gets picked up."
+		"{@pagebreak}"
+		"Подайте на <keyword>Вакуумный сборщик</keyword> <pulse>редстоун-сигнал</pulse>, и он <wave>втянет</wave> все лежащие предметы на большой площади перед собой."
+		""
+		"Своего инвентаря у него нет - предметы сразу уходят в трубу или контейнер сзади. Поставьте туда <keyword>Передатчик предметов</keyword>, чтобы <property>фильтровать</property>, что собирать."
+	]
 	quest.426F71334E75DDD0.quest_desc: [
 		"Many dungeons and boss lairs are <warning>far away</warning> and hard to stumble upon. The <named>Locate Structure</named> ritual finds them for you."
 		""
@@ -4112,6 +4599,11 @@
 		"Поставь на кабель напротив привязанного ретранслятора, нажми &7Shift+ПКМ&r <keyword>картой памяти</keyword>, чтобы записать <property>источник</property>. Потом <positive>ПКМ</positive> по другому интерфейсу сделает его <property>приёмником</property>, а по <keyword>магическому терминалу</keyword> или <keyword>сборщику</keyword> - будет заряжать жезл в нём."
 		""
 		"Нужен <warning>канал</warning>, <warning>4 AE</warning> за забор, оба чанка прогружены и <warning>одна и та же ME сеть</warning>."
+	]
+	quest.42D22B2231476004.quest_desc: [
+		"The <keyword>Atmospheric Gauge</keyword> measures the <flame>density of Ember</flame> - the energy of the world's core - at your position."
+		"{@pagebreak}"
+		"<keyword>Атмосферный датчик</keyword> измеряет <flame>плотность эмбера</flame> - энергии ядра мира - в точке, где вы стоите."
 	]
 	quest.42D35BE08BFA8BA5.quest_desc: [
 		"The <keyword>Enchanter's Knife</keyword> (Ars Delight) is a lightweight blade - use it on grass, wheat or rice to get extra stems without spending durability, right-click a pumpkin to carve it, and kill animals with it for a chance at rare secondary drops."
@@ -4266,7 +4758,17 @@
 		"{@pagebreak}"
 		"<keyword>Пустой малый фокус</keyword> - чистый холст. Преврати его в заклинание на <keyword>фокусном манипуляторе</keyword> и прикрепи к жезлу."
 	]
+	quest.45688966EE53EC80.quest_desc: [
+		"Place the <keyword>Gold Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>gold nuggets</positive>. An <property>endless</property> source of gold, no mining needed."
+		"{@pagebreak}"
+		"Поставьте <keyword>Золотое кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>золотые самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
+	]
 	quest.4580B1AEAA36E6B4.quest_desc: ["Augment a Ritual of Awakening with a Book and Quill to create a Bookwyrm Charm. Use it on a Storage Lectern to give it a new home while it works as your own personal warehouse manager."]
+	quest.45BE0FBDB25ECEFA.quest_desc: [
+		"A Crystal Cluster is too <flame>wild</flame> for delicate work. The <keyword>Wildfire Core</keyword> is that fire <property>tamed</property> - the heart of injectors, reactors and many augments."
+		"{@pagebreak}"
+		"Друза слишком <flame>дикая</flame> для тонкой работы. <keyword>Ядро дикого огня</keyword> - тот же огонь, но <property>укрощённый</property>: сердце инжекторов, реакторов и многих улучшений."
+	]
 	quest.45BE217002ADEF98.quest_desc: [
 		"A <soul>Corrupted Soul</soul> bound to a <keyword>Golden Halberd</keyword>. Summons a tamed <soul>Guard</soul> - slower than the knight, but <shake amplitude=0.3 frequency=1.0>hits harder</shake> and in a wider arc."
 		""
@@ -4320,6 +4822,15 @@
 		"{@pagebreak}"
 		"Вы можете <positive>объединить</positive> множество <keyword>сундуков</keyword> или любых других <keyword>хранилищ</keyword> в один очень удобный <keyword>интерфейс для крафта</keyword>, это буквально <named>AE2</named> на минималках."
 	]
+	quest.464C0FDB519EB5C6.quest_desc: [
+		"<keyword>Ember Grit</keyword> produces no Ember in the Activator by itself. The <keyword>Heat Exchanger</keyword>, attached to the <property>bottom</property> of an <keyword>Ember Activator</keyword>, multiplies produced Ember by <property>0.9</property> but adds a flat <positive>+300</positive> per item."
+		""
+		"This lets you burn grit for power and squeezes a bit more out of shards and crystals."
+		"{@pagebreak}"
+		"<keyword>Пыль кристаллизованного эмбера</keyword> сама по себе в активаторе эмбера не даёт. <keyword>Теплообменник</keyword>, установленный <property>снизу</property> <keyword>Активатора эмбера</keyword>, умножает выработку на <property>0.9</property>, но добавляет фиксированные <positive>+300</positive> за каждый предмет."
+		""
+		"Так можно жечь пыль ради энергии и выжимать чуть больше из осколков и кристаллов."
+	]
 	quest.464E6E68F80377D1.quest_desc: [
 		"<keyword>Scythe</keyword> has <property>unique enchantments</property> - try enchanting it!"
 		"{@pagebreak}"
@@ -4363,6 +4874,15 @@
 		"<wiggle amplitude=0.5 frequency=1.0><keyword>Starbuncle Shades</keyword></wiggle> disable a Starbuncle's ability to pick up items or harvest Source Berries - use the Dominion Wand on it to remove the shades again."
 		"{@pagebreak}"
 		"<wiggle amplitude=0.5 frequency=1.0><keyword>Starbuncle Shades</keyword></wiggle> отключают у Старбанкла способность подбирать предметы и собирать Сурс ягоды - снять очки можно, использовав на нём Жезл владения."
+	]
+	quest.46DE953F398EBD70.quest_desc: [
+		"Cloth soaked in alchemical <bone>ash</bone> becomes flexible yet tough <keyword>Ashen Fabric</keyword>, and from it - the <keyword>Ashen Cloak</keyword> set. Solid armor that looks quite dashing."
+		""
+		"The <keyword>Ashen Goggles</keyword> also show machine info, like a <keyword>Tinker's Lens</keyword> that is always on. And every piece has slots for <magic>Inflictor Gems</magic>."
+		"{@pagebreak}"
+		"Ткань, пропитанная алхимическим <bone>пеплом</bone>, становится гибкой и прочной <keyword>Пепельной тканью</keyword>, а из неё шьётся комплект <keyword>Пепельной накидки</keyword>. Крепкая броня, и выглядит весьма эффектно."
+		""
+		"<keyword>Пепельные очки</keyword> к тому же показывают информацию о машинах, как постоянно включённый <keyword>Инженерный окуляр</keyword>. А в каждой части есть слоты для <magic>Самоцветов сосредоточения</magic>."
 	]
 	quest.46E28C86141DD513.quest_desc: [
 		"Your <keyword>Arcane Workbench</keyword>, hooked into ME. It <positive>refills the crafting grid and crystals</positive> straight from the network. Like a bare workbench, it draws vis from the aura of <property>its own chunk</property>."
@@ -4477,6 +4997,15 @@
 		"{@pagebreak}"
 		"Затем выпарить все примеси в котелке."
 	]
+	quest.48EAD3B529052DEE.quest_desc: [
+		"The <keyword>Blasting Core</keyword> makes things <shake amplitude=0.4 frequency=1.5>explode</shake>."
+		""
+		"On tools it breaks nearby blocks along with the mined one. On weapons it blasts nearby creatures. On armor it blows back attackers when you get hit. Everything grows stronger with augment level."
+		"{@pagebreak}"
+		"<keyword>Разрывное ядро</keyword> заставляет всё <shake amplitude=0.4 frequency=1.5>взрываться</shake>."
+		""
+		"На инструментах оно ломает соседние блоки вместе с добываемым. На оружии - взрывом задевает существ вокруг. На броне - отбрасывает врагов, когда вас бьют. Всё усиливается с уровнем улучшения."
+	]
 	quest.48FA96EF23D033A4.quest_desc: [
 		"A rare block found only in Heart Chambers. Beats at varying intervals, applying a health effect to all creatures in range - friend or foe alike."
 		""
@@ -4509,6 +5038,15 @@
 		"When a <fire>candle</fire> is lit, it <positive>accelerates plant growth</positive> "
 		"{@pagebreak}"
 		"с смесью получается <fire>свеча</fire> который <positive>ускоряет рост растений</positive>"
+	]
+	quest.49200CC753166FD6.quest_desc: [
+		"<keyword>Ember Grit</keyword> is crushed Ember crystal that still <flame>burns hot</flame>. Crush an <keyword>Ember Crystal</keyword> with the <keyword>Flat Stamp</keyword> to get <property>3</property> grit."
+		""
+		"It is the fuel for the <keyword>Ember-powered</keyword> machines."
+		"{@pagebreak}"
+		"<keyword>Пыль кристаллизованного эмбера</keyword> - измельчённый кристалл, который всё ещё <flame>жарко горит</flame>. Раздавите <keyword>Кристалл эмбера</keyword> <keyword>Плоской пресс-формой</keyword> и получите <property>3</property> пыли."
+		""
+		"Это топливо для <keyword>эмберных</keyword> машин."
 	]
 	quest.4932A126EA1016F2.quest_desc: [
 		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays <keyword>useful information</keyword> about my bodies chemical composition. The <poison>toxicity</poison> gauge examines 3 important parts of my body. The <poison>toxins</poison>, my <property>tolerance</property>, and the &9thresholds&r I can reach!"
@@ -4556,6 +5094,11 @@
 		"<positive>Better</positive> furnace, but <property>bigger</property>!"
 		"{@pagebreak}"
 		"<positive>Печь покруче</positive> - но ещё и <property>побольше</property>!"
+	]
+	quest.498F30B9D7B982F7.quest_desc: [
+		"The <keyword>Bolt Stamp</keyword> casts <keyword>bolts</keyword> straight from molten metal."
+		"{@pagebreak}"
+		"<keyword>Bolt Stamp</keyword> отливает <keyword>болты</keyword> прямо из расплава."
 	]
 	quest.49AE05A0B9700459.quest_desc: [
 		"A rod made from <nature>Greatwood</nature> holds far more vis than a stick. Greatwood trees grow in <nature>magical forests</nature>."
@@ -4605,7 +5148,15 @@
 		"• Кормушка будет <positive>автоматически кормить находящихся поблизости животных</positive>, когда они проголодаются."
 		"• Кормушка <warning>прекратит кормление животных</warning>, если в зоне станет слишком тесно."
 	]
-	quest.4A41E20A8AC0FA47.quest_desc: ["Удобный способ забирать ресурсы из под машин"]
+	quest.4A41E20A8AC0FA47.quest_desc: [
+		"A simple lead barrel with an open top. The <keyword>Bin</keyword> holds a stack of any item."
+		""
+		"Place it <property>under</property> a Stamp Base or Exchange Tablet and it will <positive>collect the outputs</positive> automatically."
+		"{@pagebreak}"
+		"Простая свинцовая бочка без крышки. <keyword>Свинцовый контейнер</keyword> вмещает стак любого предмета."
+		""
+		"Поставьте его <property>под</property> депо пресса или платформу обмена, и он будет <positive>сам собирать продукцию</positive>."
+	]
 	quest.4A466EBB29C36CCD.quest_desc: [
 		"Solve the <property>puzzle</property> to gain access to the <magic>maze</magic>!"
 		"{@pagebreak}"
@@ -4630,7 +5181,15 @@
 		""
 		"Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
 	]
-	quest.4ACDF200B2039DD9.quest_desc: ["Улучшенная версия кристалла, больше прочности, свет можно кидать на расстояние, а не только через пкм"]
+	quest.4ACDF200B2039DD9.quest_desc: [
+		"The <keyword>Glimmer Lamp</keyword> is a crystal in a metal cage that <wave>launches</wave> light sources, so you can light up spots <positive>far away</positive>."
+		""
+		"It has fewer charges and recharges slower in sunlight than the plain crystal."
+		"{@pagebreak}"
+		"<keyword>Мерцающая лампа</keyword> - кристалл в металлической клетке, который <wave>запускает</wave> источники света, так что можно освещать места <positive>издалека</positive>."
+		""
+		"Зарядов у неё меньше, и на солнце она восстанавливается медленнее, чем обычный кристалл."
+	]
 	quest.4AF2F61FD389981F.quest_desc: [
 		"mod allows you to have very tall posts with some different types to choose from, instead of just the Treated-Wood, Aluminum and Steel variants."
 		""
@@ -4743,6 +5302,15 @@
 		""
 		"Инструкции по использованию смотрите у <keyword>реле сурса</keyword>."
 	]
+	quest.4BEC36CE12559111.quest_desc: [
+		"While you wear the <keyword>Ashen Amulet</keyword>, every block you break and every creature you kill <shake amplitude=0.3 frequency=1.0>crumbles to ash</shake> - and drops <warning>nothing but ash</warning>."
+		""
+		"Power, yes. Well thought-out power - not so much."
+		"{@pagebreak}"
+		"Пока на вас <keyword>Пепельный амулет</keyword>, каждый сломанный блок и каждое убитое существо <shake amplitude=0.3 frequency=1.0>рассыпается пеплом</shake> - и не роняет <warning>ничего, кроме пепла</warning>."
+		""
+		"Сила? Да. Продуманная сила? Не очень."
+	]
 	quest.4C281D7C803BC705.quest_desc: [
 		"Working with the <keyword>Spirit Crucible</keyword> tends to <curse>wear down and fracture</curse> your <keyword>Impetus</keyword>. Feed the <keyword>Repair Pylon</keyword> some <warning>Spirit Arcana</warning> plus a matching repair material, and it will <positive>automatically find and repair</positive> any damaged Impetus sitting on a nearby Item Pedestal, Item Stand or in the Crucible itself. It can also repair <keyword>ordinary and magical tools</keyword> the same way using <warning>Spirits</warning> instead of experience - restoring <property>half their durability</property>, or <property>three quarters</property> for gear made from materials that resonate with spirits."
 		"{@pagebreak}"
@@ -4762,6 +5330,15 @@
 		""
 		"{@pagebreak}"
 		"Установите &#FEECD6бутылочку&r рядом с &#CAE4C8листьями&r и немного &#9BB8EDподождите&r, бактерии начнут съедать &#CAE4C8листву&r и оставлять процессы своей &#FEECD6жизнидейстельности&r прямо в этих же &#CAE4C8листях&r, возможно вы сможете использовать это в &#9BB8EDсвоих целях&r!"
+	]
+	quest.4C7CBF8D8AA8C67B.quest_desc: [
+		"The <keyword>Ember Dynamo</keyword> catches Ember bursts like a receptor and turns them into <property>FE</property>."
+		""
+		"Link an <keyword>Emitter</keyword> to it with the <keyword>Tinker's Hammer</keyword> and it will <wave>push the energy</wave> into the block it is attached to."
+		"{@pagebreak}"
+		"<keyword>Ember Dynamo</keyword> ловит пакеты эмбера, как приёмник, и превращает их в <property>FE</property>."
+		""
+		"Свяжите с ним <keyword>излучатель</keyword> <keyword>Инженерным молотом</keyword>, и он будет <wave>отдавать энергию</wave> в блок, к которому прикреплён."
 	]
 	quest.4C886369932230C9.quest_desc: [
 		"A showcase of the power hidden within a shadow gem - the <magic>Soulfire Wand</magic> unleashes <fire>brilliant bolts of energy</fire> on every swing, dealing hefty damage to almost any target."
@@ -4915,6 +5492,15 @@
 		"<property>ПКМ</property> <wiggly>телепортирует</wiggly> тебя в случайную точку рядом - идеально, чтобы увернуться от тяжёлого удара."
 	]
 	quest.4F3E70AAD31A62A8.quest_desc: ["minecraft:swamp"]
+	quest.4F4CED81F6A4054F.quest_desc: [
+		"The <keyword>Ember Ring</keyword>, <keyword>Amulet</keyword> and <keyword>Belt</keyword> <positive>reduce the Ember cost</positive> of clockwork tools and Ember weapons."
+		""
+		"Each piece gives a different reduction, and they <property>stack</property> - wear all three."
+		"{@pagebreak}"
+		"<keyword>Кольцо</keyword>, <keyword>амулет</keyword> и <keyword>пояс</keyword> с эмберной инкрустацией <positive>снижают расход эмбера</positive> заводными инструментами и эмберным оружием."
+		""
+		"У каждого своя скидка, и они <property>складываются</property> - носите все три."
+	]
 	quest.4F8E67CD8A60C47B.quest_desc: ["Every upgrade has a shadow. Downgrades are imposed by the Ritual of Sentient Downgrade and exchange unwanted upgrade levels for a curse, freeing Upgrade Points to reinvest elsewhere."]
 	quest.4F8E67CD8A60C47B.quest_subtitle: "Info for nerds"
 	quest.4F9AF422C4AA5B85.quest_desc: [
@@ -4955,6 +5541,15 @@
 		"The <magic>Bonechill Wand</magic> chills the soul of anything it strikes - the target is gripped by an <curse>icy hold</curse> that prevents all health regeneration, just like the claws of a wraith."
 		"{@pagebreak}"
 		"<magic>Ледяной посох</magic> замораживает душу того, по кому попадает - цель охватывает <curse>ледяная хватка</curse>, полностью блокирующая восстановление здоровья, точно так же, как когти скитальца."
+	]
+	quest.503CF652540E5819.quest_desc: [
+		"The <keyword>Copper Charger</keyword> fills portable Ember containers. Give it Ember, put the container inside with RMB, and take it out the same way once it is <flame>charged</flame>."
+		""
+		"Everything your Ember tools and weapons burn comes from containers charged here."
+		"{@pagebreak}"
+		"<keyword>Медный зарядник</keyword> заряжает переносные хранилища эмбера. Подайте в него эмбер, вставьте хранилище ПКМ и так же заберите, когда оно <flame>зарядится</flame>."
+		""
+		"Всё, что сжигают ваши эмберные инструменты и оружие, берётся из хранилищ, заряженных здесь."
 	]
 	quest.505BEF40815A169E.quest_desc: [
 		"Staves are <shake amplitude=0.3 frequency=1.0>bigger wands</shake>: a greatwood staff stores 125 vis of each type, silverwood even more. Too clumsy for the arcane workbench, but fine as a weapon."
@@ -5054,6 +5649,33 @@
 		"Before improving an <keyword>altar</keyword> make sure you have all the blocks to improve it, some blocks need to be created in the <warning>previous altar</warning>!"
 		"{@pagebreak}"
 		"Перед улучшением <keyword>алтаря</keyword> убедитесь что у вас есть все блоки для его улучшения, некоторые необходимо создать в <warning>предыдущем алтаре</warning>!"
+	]
+	quest.5180835318A224F5.quest_desc: [
+		"The <keyword>Catalysis Chamber</keyword> consumes <magic>catalysts</magic> for the Ignem Reactor."
+		""
+		"Catalyst levels: <keyword>Ember Grit</keyword> - <property>2</property>, <keyword>Gunpowder</keyword> - <property>3</property>, <keyword>Glowstone Dust</keyword> - <property>4</property>."
+		"{@pagebreak}"
+		"<keyword>Камера катализа</keyword> расходует <magic>катализаторы</magic> для Огненного реактора."
+		""
+		"Уровни катализаторов: <keyword>пыль кристаллизованного эмбера</keyword> - <property>2</property>, <keyword>порох</keyword> - <property>3</property>, <keyword>светокаменная пыль</keyword> - <property>4</property>."
+	]
+	quest.51A722F9AC5A4826.quest_desc: [
+		"The <keyword>Ingot Stamp</keyword> presses molten metal back into <keyword>ingots</keyword>."
+		""
+		"Like all stamps, it is shaped from <keyword>caminite blend</keyword> and fired in a <keyword>Bloomery</keyword>."
+		"{@pagebreak}"
+		"<keyword>Пресс-форма слитка</keyword> снова превращает расплавленный металл в <keyword>слитки</keyword>."
+		""
+		"Как и все пресс-формы, она лепится из <keyword>смеси каминита</keyword> и обжигается в <keyword>Bloomery</keyword>."
+	]
+	quest.51AA49F4C8957506.quest_desc: [
+		"The <keyword>Mantle Bulb</keyword> is worn in a <property>curio slot</property>, so it takes no inventory space and no hand."
+		""
+		"The price is a <warning>much smaller capacity</warning>."
+		"{@pagebreak}"
+		"<keyword>Лампочка огненного покрова</keyword> носится в <property>слоте аксессуаров</property>, так что не занимает ни инвентарь, ни руку."
+		""
+		"Плата за удобство - <warning>гораздо меньшая ёмкость</warning>."
 	]
 	quest.51BC2EDB324F7ECD.quest_desc: [
 		"The <keyword>Forge Hammer</keyword> is necessary for the early parts of tech. Place a material (usually ingots) in them to view available recipes, although most will also require a <keyword>Hammer</keyword> item in the second slot. Using the Forge Hammer is <warning>not as resource efficient</warning> as using machines:"
@@ -5162,7 +5784,20 @@
 		"{@pagebreak}"
 		"Арбалет со <glitch frequency=0.6 shiftChance=0.05>своим разумом</glitch>: стреляет по любым враждебным мобам в радиусе. Поставь его на <keyword>раздатчик</keyword>, смотрящий вверх, и он будет перезаряжаться сам."
 	]
-	quest.5380E40C4577CC4F.quest_desc: ["Удлиняет путь для эмбера"]
+	quest.53627A5E60893750.quest_desc: [
+		"The <keyword>Item Dropper</keyword> takes items piped into its top and quickly <wiggle amplitude=0.5 frequency=1.0 phase=1.0>spits them out</wiggle> straight down into the world."
+		"{@pagebreak}"
+		"<keyword>Выбрасыватель предметов</keyword> принимает предметы через верх и быстро <wiggle amplitude=0.5 frequency=1.0 phase=1.0>выплёвывает их</wiggle> вниз, прямо в мир."
+	]
+	quest.5380E40C4577CC4F.quest_desc: [
+		"A burst of Ember can only travel so far. The <keyword>Ember Relay</keyword> <positive>extends the route</positive>."
+		""
+		"Link it like any other pair: RMB the source, then RMB the relay, then RMB the relay and the destination. The burst will <wave>flow through it</wave> towards its target."
+		"{@pagebreak}"
+		"Пакет эмбера может пролететь лишь ограниченное расстояние. <keyword>Реле эмбера</keyword> <positive>удлиняет маршрут</positive>."
+		""
+		"Связывается как обычно: ПКМ по источнику, затем по реле, после этого ПКМ по реле и по цели. Пакет <wave>пройдёт сквозь него</wave> дальше к цели."
+	]
 	quest.5386ADA67BEB546A.quest_desc: [""]
 	quest.538E3976DDFD9FBF.quest_desc: [
 		"Displays the total number of <keyword>buffs</keyword> in the <keyword>Crucible</keyword>"
@@ -5174,6 +5809,15 @@
 		"Same as <keyword>copper</keyword>, but with a small chance to catch <keyword>gold</keyword> and <keyword>iron</keyword>."
 		"{@pagebreak}"
 		"То же самое, что и <keyword>медная</keyword>, но с небольшой вероятностью добычи <keyword>золота</keyword> и <keyword>железа</keyword>."
+	]
+	quest.53DEA0C84055FF47.quest_desc: [
+		"<keyword>Atmospheric Bellows</keyword> limit the coil to <property>blasting</property> recipes, but <positive>double its speed</positive>."
+		""
+		"Can not be used together with the <keyword>Char Instiller</keyword>."
+		"{@pagebreak}"
+		"<keyword>Атмосферные меха</keyword> ограничивают катушку рецептами <property>плавильной печи</property>, зато <positive>удваивают скорость</positive>."
+		""
+		"Нельзя ставить вместе с <keyword>Коптильней</keyword>."
 	]
 	quest.54092235BD6D4CEE.quest_desc: [
 		"A <keyword>Hungry Chest</keyword> <shake amplitude=0.3 frequency=1.0>gobbles up</shake> any items that touch it."
@@ -5189,6 +5833,11 @@
 		"The Heart of the Kitchen. A <keyword>cooking table</keyword> is the central block of the kitchen - it lets you access <property>ingredients</property> stored in nearby connected containers directly from the crafting grid, and shows you every recipe you can currently cook."
 		"{@pagebreak}"
 		"Сердце кухни. <keyword>Кухонный стол</keyword> - центральный блок кухни: он даёт доступ к <property>ингредиентам</property> из подключённых рядом хранилищ прямо из сетки крафта и показывает все рецепты, которые можно приготовить прямо сейчас."
+	]
+	quest.5496ECC1FAFA1D72.quest_desc: [
+		"Place the <keyword>Lead Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>lead nuggets</positive>. An <property>endless</property> source of lead, no mining needed."
+		"{@pagebreak}"
+		"Поставьте <keyword>Свинцовое кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>свинцовые самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
 	]
 	quest.54D4F87B38A76E38.quest_desc: [
 		"Without augments, the <keyword>Ritual of Wilden Summon</keyword> summons a random assortment of Wilden monsters for a short fight. Augment it with a <keyword>Wilden Spike</keyword>, <keyword>Wilden Horn</keyword> and <keyword>Wilden Wing</keyword> instead to summon the <warning><shake amplitude=0.4 frequency=1.2>Wilden Chimera</shake></warning> boss."
@@ -5226,6 +5875,11 @@
 		"<positive>ПКМ</positive> по <keyword>полностью созревшей культуре</keyword> - и она пересадится силой <wiggly>дружбы с червями</wiggly>!"
 	]
 	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can <positive>squeeze information</positive> out of <keyword>books</keyword> ´꒳`"]
+	quest.55778D32AB64F95E.quest_desc: [
+		"Place the <keyword>Iron Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>iron nuggets</positive>. An <property>endless</property> source of iron, no mining needed."
+		"{@pagebreak}"
+		"Поставьте <keyword>Железное кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>железные самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
+	]
 	quest.557EB4FDC17714AB.quest_desc: [
 		"<magic>Vis Crystals</magic> grow as colorful clusters in caves. Break a cluster and pick up a crystal - your fingers will <shake amplitude=0.3 frequency=1.0>tingle strangely</shake>."
 		""
@@ -5243,6 +5897,15 @@
 		"Вы можете <positive>собрать</positive> уже начерченный ритуал, <positive>выкинув</positive> <keyword>талисман и редстоун</keyword> в круг, активировав ритуал, впоследствии вы можете установить его где угодно."
 		""
 		"Стоимость: <keyword>2000 МЭ</keyword>"
+	]
+	quest.559862781DC90BD8.quest_desc: [
+		"The <keyword>Wildfire Stirling</keyword> is the counterpart of the Catalytic Plug: fed with <wind>steam</wind>, it <positive>halves the Ember cost</positive> of a machine."
+		""
+		"Two stirlings - a quarter of the cost. More than two, or more than one Mechanical Core in between, lowers efficiency."
+		"{@pagebreak}"
+		"<keyword>Огненный очиститель</keyword> - пара к Каталитическому штепселю: получая <wind>пар</wind>, он <positive>вдвое снижает расход эмбера</positive> машиной."
+		""
+		"Два очистителя - четверть расхода. Больше двух или больше одного механического ядра между ними снижают эффективность."
 	]
 	quest.55B031B4D7E5DEE3.quest_desc: ["<named>Wild chicken</named>"]
 	quest.55B1CC05E91199FF.quest_desc: [
@@ -5263,6 +5926,15 @@
 		"В слот улучшения холодильника можно поместить <property>предмет-улучшение</property>:"
 		"• <keyword>Ледогенератор</keyword> (Ice Unit) - предоставляет <named>снег и лёд</named> для рецептов, которым они нужны"
 		"• <keyword>Камера сохранения</keyword> (Preservation Chamber) - <positive>не даёт израсходовать последний предмет в ячейке</positive>, так что ключевой ингредиент никогда не закончится"
+	]
+	quest.55EB1A2A1AF1E3A8.quest_desc: [
+		"The <keyword>Ember Ejector</keyword> is a sturdier emitter that moves <property>ten times</property> more Ember at once."
+		""
+		"Careful: normal receptors are quickly <shake amplitude=0.3 frequency=1.0>overwhelmed</shake>, and the surplus is <warning>lost</warning>. Pair it with an <keyword>Ember Funnel</keyword>."
+		"{@pagebreak}"
+		"<keyword>Форсированный излучатель эмбера</keyword> - усиленный излучатель, передающий за раз в <property>десять раз</property> больше эмбера."
+		""
+		"Осторожно: обычные приёмники быстро <shake amplitude=0.3 frequency=1.0>захлёбываются</shake>, и излишек <warning>теряется</warning>. Используйте его вместе с <keyword>Жёлобом эмбера</keyword>."
 	]
 	quest.5613C04E72D2AC99.quest_desc: ["Unlike the <keyword>Timedoor Projector</keyword>, the <keyword>Tempad</keyword> automatically detects all <keyword>Timedoor Markers</keyword> and <keyword>Chronomarks</keyword> owned by the player, making <keyword>Location Cards</keyword> optional for personal travel."]
 	quest.5634B70F205A9FB4.quest_desc: ["Right click the raw hide on to the tanning rack, and then, with knife hand, right click on the rack a few times to turn raw hide into leather"]
@@ -5311,7 +5983,19 @@
 		""
 		"<named>Котелок</named> так же служит <property>рабочей станцией</property> - житель рядом может занять её и стать <keyword>Поваром</keyword>."
 	]
-	quest.572D8B61A151F4AB.quest_desc: ["Stamper должен быть на блок выше Stamper Base т.к. это что-то типа \"Пресса\""]
+	quest.572D8B61A151F4AB.quest_desc: [
+		"The <keyword>Stamper</keyword> shapes molten metal into useful forms."
+		""
+		"<named>Setup:</named> place the <keyword>Stamper</keyword> <property>two blocks above</property> the <keyword>Stamp Base</keyword>, with <warning>one empty block</warning> between them - the press needs room to <shake amplitude=0.3 frequency=1.0>slam down</shake>. Give the Stamper Ember and a <property>stamp</property>, then pipe molten metal into the Stamp Base."
+		""
+		"A <keyword>Bin</keyword> under the Stamp Base collects the products automatically."
+		"{@pagebreak}"
+		"<keyword>Штамповочный пресс</keyword> придаёт расплавленному металлу нужную форму."
+		""
+		"<named>Сборка:</named> поставьте <keyword>пресс</keyword> <property>на два блока выше</property> <keyword>Депо штамповочного пресса</keyword>, оставив между ними <warning>один пустой блок</warning> - прессу нужно место, чтобы <shake amplitude=0.3 frequency=1.0>опуститься</shake>. Подайте в пресс эмбер, вставьте в него <property>пресс-форму</property>, а металл заливайте в депо."
+		""
+		"<keyword>Свинцовый контейнер</keyword> под депо будет сам собирать продукцию."
+	]
 	quest.57C4CC73DC66630C.quest_desc: [
 		"<named>Compass</named> will help you find the right structure!"
 		"{@pagebreak}"
@@ -5339,6 +6023,11 @@
 		"Хранит до <property>8 эссенции</property> в любом сочетании типов. Собственное всасывание минимальное (1), поэтому он в основном тянет из источника, к которому прикреплён напрямую, - идеально, чтобы забирать эссенцию из устройств, где могут быть <wave>разные типы</wave>."
 		""
 		"Трубы подключаются со всех сторон. Каждые прикреплённые <keyword>магические мехи</keyword> дают <positive>+32 к всасыванию</positive>. <positive>Shift + клик</positive> по соединению снижает его всасывание до 1 (синяя полоса) или 0 (красная)."
+	]
+	quest.57E70F40C45A549F.quest_desc: [
+		"Any <keyword>ingot</keyword> counts here - for example, one fresh off the <keyword>Ingot Stamp</keyword>."
+		"{@pagebreak}"
+		"Подойдёт любой <keyword>слиток</keyword> - например, только что отлитый на <keyword>Пресс-форме слитка</keyword>."
 	]
 	quest.58111B4CAD89BCCE.quest_desc: [
 		"&#FEECD6Create&r your first &4c&r&6o&r&el&r&2o&r<property>r</property>&9e&r&5d&r sapling!"
@@ -5439,9 +6128,13 @@
 		"Это оружие выпускает огонь перед игроком (заправляется Dragon Breath) и накладывает на жертв Flame Frailty - усиленную уязвимость к огню."
 	]
 	quest.597888258BED9F62.quest_desc: [
-		"Позволяет выращивать семена ресурсов, нужно навести мордой в семечко и дать эмбера"
+		"The <keyword>Ember Injector</keyword> grows <keyword>Crystal Seeds</keyword>. Place a seed in the world, point injectors at it and give them Ember - the seed will slowly grow and <wiggle amplitude=0.5 frequency=1.0 phase=1.0>pop out metal nuggets</wiggle>."
 		""
-		"у семян есть уровень, разрушение семян приводит к потере уровня, чем больше уровень тем больше нагетов падает."
+		"Seeds also gain <property>purity</property> over time: the purer the seed, the more nuggets it drops. Check it with a Tinker's Lens. <warning>Breaking a seed resets its purity!</warning>"
+		"{@pagebreak}"
+		"<keyword>Эмберный инжектор</keyword> выращивает <keyword>Кристаллические семена</keyword>. Поставьте семя в мир, направьте на него инжекторы и подайте эмбер - семя будет медленно расти и <wiggle amplitude=0.5 frequency=1.0 phase=1.0>выбрасывать самородки</wiggle>."
+		""
+		"Со временем семя становится <property>чище</property>: чем выше чистота, тем больше самородков. Проверяйте это Инженерным окуляром. <warning>Если сломать семя, чистота сбросится!</warning>"
 	]
 	quest.5984DB66549B9040.quest_desc: ["<warning>Poison</warning>."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
@@ -5562,6 +6255,11 @@
 		""
 		"<named>Работа жезлом:</named> клик жезлом по участку трубы <property>подключает или отключает</property> его от соседних, клик по центру поворачивает трубы вроде клапана."
 	]
+	quest.5AA2EABADBC55D0B.quest_desc: [
+		"The <keyword>Diffraction Barrel</keyword> turns any Ember projectile weapon into a kind of <shake amplitude=0.4 frequency=1.5>shotgun</shake>: instead of a single shot it fires a <property>spread</property> of projectiles."
+		"{@pagebreak}"
+		"<keyword>Дифракционное дульное устройство</keyword> превращает любое эмберное оружие в подобие <shake amplitude=0.4 frequency=1.5>дробовика</shake>: вместо одного выстрела оно выпускает <property>веер</property> снарядов."
+	]
 	quest.5AB1A672225555B0.quest_desc: [
 		"By pressing \"<positive>Shift + X</positive>\" on an item in your inventory, you can <positive>link said item in chat</positive>"
 		"{@pagebreak}"
@@ -5650,6 +6348,20 @@
 		"По умолчанию магические устройства берут вис только из <property>своего чанка</property>. <named>Карта магической зарядки</named> расширяет это на соседние чанки - <property>область 3x3</property> - и делит каждый забор <positive>поровну</positive> между ними."
 		""
 		"Ставится в <keyword>терминал магического крафта</keyword>, его беспроводную версию и <keyword>магический сборщик</keyword>."
+	]
+	quest.5C3A92DE10CF488F.quest_desc: [
+		"The <keyword>Fluid Dial</keyword> shows <property>which fluid and how much</property> is in the tank it is attached to."
+		"{@pagebreak}"
+		"<keyword>Индикатор жидкости</keyword> показывает, <property>какая жидкость и сколько</property> находится в баке, к которому он прикреплён."
+	]
+	quest.5C6C75DC1E9C4EF8.quest_desc: [
+		"Hold RMB with the <keyword>Cinder Staff</keyword> to charge a <flame>sphere of pure Ember</flame> in front of you."
+		""
+		"The longer you charge, the stronger the hit - at full power it <shake amplitude=0.4 frequency=1.5>almost kills</shake> a typical monster in one shot."
+		"{@pagebreak}"
+		"Зажмите ПКМ с <keyword>Посохом пепла</keyword>, чтобы накопить перед собой <flame>сферу чистого эмбера</flame>."
+		""
+		"Чем дольше заряд, тем сильнее удар - на полной мощности она <shake amplitude=0.4 frequency=1.5>почти убивает</shake> обычного монстра с одного попадания."
 	]
 	quest.5C6F64DF2FA17AA2.quest_desc: [
 		"Can be used to <positive>summon a horse</positive> from any location in the world. "
@@ -5746,6 +6458,15 @@
 		"Upgrade with a Diamond Block and another Blood Feather into Diamond-Tipped Ophanim Wings - while crouching, they trigger a stabbing attack that hits nearby enemies based on your body's facing direction (not where you're looking), dealing damage and consuming durability."
 		"{@pagebreak}"
 		"Улучшаются Diamond Block и ещё одним Blood Feather до Diamond-Tipped Ophanim Wings - при приседании наносят колющую атаку по врагам рядом, основанную на направлении тела (не взгляда), расходуя прочность пропорционально урону."
+	]
+	quest.5D549043E8C4CEE9.quest_desc: [
+		"The <keyword>Beam Splitter</keyword> divides Ember bursts. It has two small copper ports for input and two large dawnstone ports."
+		""
+		"Each large port works as <property>its own Emitter</property> and gets half of the incoming Ember - link them to different targets with the hammer."
+		"{@pagebreak}"
+		"<keyword>Разделитель луча</keyword> делит пакеты эмбера. У него два маленьких медных порта для входа и два больших золотитовых."
+		""
+		"Каждый большой порт работает как <property>отдельный излучатель</property> и получает половину входящего эмбера - свяжите их молотом с разными целями."
 	]
 	quest.5DA979250B4A1A07.quest_desc: [
 		"This glove-shaped charm, the <named>Prestigious Palm</named>, lets you touch what once escaped your grasp - roughly <property>doubling</property> your interaction range."
@@ -5864,6 +6585,15 @@
 		"Consult with your Ars Ecclesia for effects."
 	]
 	quest.5F3B3C006860B496.quest_desc: ["<positive>Attracts items</positive> when <property>powered</property>"]
+	quest.5F47EEF5B5DC2ED2.quest_desc: [
+		"Searching for rich spots with a gauge is tedious. The <keyword>Field Chart</keyword> shows a <property>map of Ember concentration</property> over a large area."
+		""
+		"RMB it to display the base Ember level of the area."
+		"{@pagebreak}"
+		"Искать богатые места датчиком утомительно. <keyword>Голограф поверхностной диаграммы</keyword> показывает <property>карту концентрации эмбера</property> на большой площади."
+		""
+		"ПКМ по нему, чтобы увидеть базовый уровень эмбера в округе."
+	]
 	quest.5F750B9378BA292B.quest_desc: [""]
 	quest.5F97E71B27845702.quest_desc: [""]
 	quest.5F99F4F474FA0648.quest_desc: [
@@ -6014,6 +6744,15 @@
 		""
 		"&#4EC847<fade>🛈 Токсин используется в качестве топлива!"
 	]
+	quest.610DA4755015BD05.quest_desc: [
+		"Ember machines give off heat - don't waste it. The <keyword>Mini Boiler</keyword>, attached to the side of a machine that uses or produces Ember, boils <aqua>water</aqua> into <wind>steam</wind>."
+		""
+		"That steam feeds Catalytic Plugs, Wildfire Stirlings and even <keyword>Modern Industrialization</keyword> machines."
+		"{@pagebreak}"
+		"Эмберные машины выделяют тепло - не тратьте его зря. <keyword>Маленький паровой котёл</keyword>, прикреплённый сбоку к машине, которая тратит или производит эмбер, кипятит <aqua>воду</aqua> в <wind>пар</wind>."
+		""
+		"Этот пар питает Каталитические штепсели, Огненные очистители и даже машины <keyword>Modern Industrialization</keyword>."
+	]
 	quest.611070DB29152843.quest_desc: [
 		"The Crystallarium Maleficum seeds the first spire of a cluster: place it with open air above, and once the chunk's Aura holds at least 99 Spiritus of any single Aspect, it spends that Aura over roughly 1,000 ticks to form a single Spiritus Crystal of the chunk's dominant Aspect on its top face. After that first spire stands, the crystal grows under its own power; the Crystallarium has done its work."
 		""
@@ -6069,6 +6808,15 @@
 		""
 		"<positive>Shift + ПКМ</positive> по любому блоку посылает <wave>звуковой импульс</wave>, который подсвечивает спрятанную поблизости руду (<keyword>Зондирование II</keyword>), ценой небольшого износа. С зажатым <property>Shift</property> при добыче работает как обычная кирка."
 	]
+	quest.61B2758D2389D692.quest_desc: [
+		"Hammer <property>4</property> <keyword>Ember Shards</keyword> together on an <keyword>anvil</keyword> and they <shake amplitude=0.3 frequency=1.0>fuse</shake> into one <keyword>Ember Crystal</keyword>."
+		""
+		"Crystals are a richer fuel for the Activator and go into emitters, receptors and many other machines."
+		"{@pagebreak}"
+		"Скуйте <property>4</property> <keyword>осколка эмбера</keyword> на <keyword>наковальне</keyword>, и они <shake amplitude=0.3 frequency=1.0>сплавятся</shake> в один <keyword>Кристалл эмбера</keyword>."
+		""
+		"Кристалл - более ёмкое топливо для активатора, а ещё он идёт в излучатели, приёмники и многие другие машины."
+	]
 	quest.61BB4319A563D757.quest_desc: [
 		"The <keyword>Ring of the Howling Maelstrom</keyword> alters the <property>Rebound</property> enchantment - when you throw your scythe, <shake amplitude=0.3 frequency=1.0>cutting winds</shake> spin around it, damaging nearby foes, at the cost of a longer cooldown. Wear it together with the <keyword>Necklace of the Narrow Edge</keyword> to concentrate the winds into a small storm the moment your scythe lands a hit."
 		"{@pagebreak}"
@@ -6119,6 +6867,11 @@
 	]
 	quest.6245F17DF657C296.quest_subtitle: "Info for nerds"
 	quest.624A33C4995164C4.quest_desc: ["Hot enough furnace to produce <keyword>steel</keyword>, as well as some <keyword>other useful resources</keyword>"]
+	quest.624FF12A7532734A.quest_desc: [
+		"Any <keyword>plate</keyword> counts here - for example, one pressed on the <keyword>Plate Stamp</keyword>."
+		"{@pagebreak}"
+		"Подойдёт любая <keyword>пластина</keyword> - например, отштампованная на <keyword>Пресс-форме пластины</keyword>."
+	]
 	quest.625AEA43A983AD8E.quest_desc: [
 		"The <keyword>Shapers Focus</keyword> is required to cast spells that manipulate blocks - Conjuration Essence and other block-shaping glyphs like <property>Snare</property> or <property>Dispel</property> need it to place, remove or transform blocks."
 		"{@pagebreak}"
@@ -6355,6 +7108,24 @@
 		"{@pagebreak}"
 		"Нагрудник из рёбер мерзости. Защищает от <curse>иссушения</curse> и насылает его на всех, кто тебя ранит."
 	]
+	quest.665040DA87204BA8.quest_desc: [
+		"The <keyword>Ember-powered Macerator</keyword> runs the same recipes as the bronze one, but <positive>without steam</positive> - it burns <keyword>Ember Grit</keyword> from a separate slot instead."
+		""
+		"Recipes run <positive>1.5x faster</positive>, and grit is not spent on every operation - roughly <property>one per three</property> crafts."
+		"{@pagebreak}"
+		"<keyword>Эмберная версия измельчителя</keyword> выполняет те же рецепты, что и бронзовая, но <positive>без пара</positive> - вместо него она сжигает <keyword>пыль кристаллизованного эмбера</keyword> из отдельного слота."
+		""
+		"Рецепты идут <positive>в 1.5 раза быстрее</positive>, а пыль тратится не каждый раз - примерно <property>одна на три</property> операции."
+	]
+	quest.6662CD48761B7F10.quest_desc: [
+		"An <keyword>Archaic Circuit</keyword> - ancient circuitry that <flame>still answers to Ember</flame>."
+		""
+		"It is the base for more complex devices: the <keyword>Mechanical Core</keyword>, the <keyword>Intelligent Apparatus</keyword> and the <keyword>Explosion Charm</keyword>."
+		"{@pagebreak}"
+		"<keyword>Архаичный контур</keyword> - древняя схема, которая <flame>всё ещё откликается на эмбер</flame>."
+		""
+		"На нём строятся более сложные устройства: <keyword>Механическое ядро</keyword>, <keyword>Интеллектуальный аппарат</keyword> и <keyword>Взрывной амулет</keyword>."
+	]
 	quest.6698E9FBE3C24DE8.quest_desc: [
 		"<keyword>Bronze tanks</keyword> can store <keyword>4 buckets of fluid</keyword> each, you can use them to interact with machines, and you can place them in the world."
 		""
@@ -6401,6 +7172,15 @@
 		""
 		"Теперь ты сам <property>выбираешь</property>, какое существо в радиусе <property>6 блоков</property> переместить к себе."
 	]
+	quest.66CDB0B92616C357.quest_desc: [
+		"The <keyword>Flat Stamp</keyword> works without molten metal: put an <property>item</property> into the base and the press <shake amplitude=0.3 frequency=1.0>crushes</shake> it."
+		""
+		"Raw ore gives <positive>2 crushed ore</positive>, and each crushed ore gives <positive>2 dusts</positive> for the melter. An <keyword>Ember Crystal</keyword> gets crushed into <property>3</property> <keyword>Ember Grit</keyword>."
+		"{@pagebreak}"
+		"<keyword>Плоская пресс-форма</keyword> работает без расплава: положите в депо <property>предмет</property>, и пресс его <shake amplitude=0.3 frequency=1.0>раздавит</shake>."
+		""
+		"Сырая руда даёт <positive>2 дроблёные руды</positive>, а каждая дроблёная - <positive>2 пыли</positive> для плавильни. <keyword>Кристалл эмбера</keyword> раздавливается в <property>3</property> <keyword>пыли кристаллизованного эмбера</keyword>."
+	]
 	quest.670E10B8B275E45A.quest_desc: [
 		"Place it <property>directly under</property> an <magic>aura node</magic>. It does several things at once:"
 		""
@@ -6431,10 +7211,29 @@
 		"{@pagebreak}"
 		"Полноценный <fire>иммунитет от огня</fire> и немного больше"
 	]
+	quest.674AD0448E3F6C70.quest_desc: [
+		"Black gold. <keyword>Dwarven Oil</keyword> is made from raw fish and a cerebral plate in a <keyword>Clay Crucible</keyword> heated by a <keyword>Kiln</keyword>, working the bellows all the time."
+		""
+		"It expands less than water when boiled, which makes <positive>safer boilers</positive>. Mixed with Soul Crude, it gives <keyword>creosote</keyword>."
+		"{@pagebreak}"
+		"Чёрное золото. <keyword>Дворфийское масло</keyword> делают из сырой рыбы и церебральной плиты в <keyword>Clay Crucible</keyword>, поставленном на <keyword>Kiln</keyword>, постоянно раздувая мехи."
+		""
+		"При кипении оно расширяется меньше воды, поэтому котлы на нём <positive>безопаснее</positive>. Вместе со Шламом душ даёт <keyword>креозот</keyword>."
+	]
 	quest.674D31D3BAC0C66C.quest_desc: [
 		"Lifts any item or creature above it up to <wind>8 blocks</wind>; sneak to go down slowly. Placed sideways it pushes things along. Uses <property>1 vis per second</property> while working."
 		"{@pagebreak}"
 		"Поднимает любой предмет или существо над собой на высоту до <wind>8 блоков</wind>, присядь, чтобы медленно опуститься. Поставленный боком толкает вдоль. Пока работает, тратит <property>1 vis в секунду</property>."
+	]
+	quest.6763D78A24758023.quest_desc: [
+		"The <keyword>Copper Aspectus</keyword> - a lively <magic>alignment</magic> needed for things like <keyword>Adhesive</keyword>."
+		"{@pagebreak}"
+		"<keyword>Медный аспект</keyword> - живое <magic>русло</magic>, нужное, например, для <keyword>Сгустка клея</keyword>."
+	]
+	quest.6774388A78C34FAD.quest_desc: [
+		"The <keyword>Iron Aspectus</keyword> - a steady <magic>alignment</magic> that opens up new transmutations, including the <keyword>Ember Crystal Cluster</keyword>."
+		"{@pagebreak}"
+		"<keyword>Железный аспект</keyword> - надёжное <magic>русло</magic>, открывающее новые трансмутации, включая <keyword>Друзу кристаллизованного эмбера</keyword>."
 	]
 	quest.67BD80F96D184AA4.quest_desc: [
 		"You can find a small amount of Strong Tau in the dungeon, but if you're unlucky and only find weak tau, you can turn it into strong tau if a living creature - such as a pig - is standing on the plant while it grows. In this case, the plant will turn into strong tau the very first time it grows. Additionally, for a strong tau to grow, a living creature must be standing on the plant and transferring its life energy to it."
@@ -6442,9 +7241,17 @@
 		"В подземелье можно найти небольшое количество сильного тау, но если вам не повезло и вы нашли только слабое тау, вы можете превратить его в сильное, если на растении стоит живое существо во время роста — например, свинья. В этом случае растение превратится в сильное тау при первом же росте. Кроме того, для роста сильного тау необходимо, чтобы на растении стояло живое существо и передавало ему свою жизненную энергию."
 	]
 	quest.67C6130FA2F3DFE4.quest_desc: [
-		"каждый аспектус в разных мирах свой, чтобы понять какие именно - нужно либо эксперементы и рандом, либо же создать Codebreaking Slate, в нём будут подсказки какое количество аспектусов было выбрано верно"
+		"<magic>Ember alchemy</magic> - <property>most of your further Embers progress</property> goes through it."
 		""
-		"нужен редстоун на cannon чтобы запустить крафт"
+		"<named>How:</named> put the central item into the <keyword>Exchange Tablet</keyword> (RMB). Around it place an <keyword>Alchemy Pedestal</keyword> for each ingredient: the ingredient on top, an <magic>aspectus</magic> underneath. Then hit the tablet with a <keyword>Beam Cannon</keyword> - it needs Ember and a <pulse>redstone signal</pulse> to fire."
+		""
+		"Which aspectus goes where is <glitch frequency=0.6 shiftChance=0.05>different in every world</glitch>. Experiment, or make a <keyword>Codebreaking Slate</keyword> to see how many you guessed right."
+		"{@pagebreak}"
+		"<magic>Эмберная алхимия</magic> - через неё идёт <property>большая часть дальнейшего прогресса в Embers</property>."
+		""
+		"<named>Как:</named> положите центральный предмет на <keyword>Платформу обмена</keyword> (ПКМ). Вокруг поставьте по <keyword>Алхимическому пьедесталу</keyword> на каждый ингредиент: ингредиент сверху, <magic>аспект</magic> снизу. Затем ударьте по платформе <keyword>Лучевой пушкой</keyword> - для выстрела ей нужен эмбер и <pulse>редстоун-сигнал</pulse>."
+		""
+		"Какой аспект куда ставить, <glitch frequency=0.6 shiftChance=0.05>в каждом мире своё</glitch>. Экспериментируйте или сделайте <keyword>Планшет расшифровывания</keyword>, чтобы видеть, сколько вы угадали."
 	]
 	quest.67D160A1575175C3.quest_desc: [
 		"The <keyword>Whirlisprig Familiar</keyword> reduces the source cost of <property>Earth</property> glyphs by half and grants bonus saturation from food - a personal buff version, separate from the worker Whirlisprig that generates materials near its flower."
@@ -6570,6 +7377,15 @@
 		"• Нажмите <keyword>Shift и крутите колесико мыши</keyword> чтобы выбрать цвет. <keyword>Щелкните правой кнопкой мыши</keyword> по блокам, чтобы перекрасить их в выбранный цвет."
 		"• Нажмите <keyword>Shift, а затем щелкните правой кнопкой мыши</keyword>, чтобы перекрасить целую пачку блоков соединенных между собой одним типом и цветом."
 	]
+	quest.689FA448C5B82060.quest_desc: [
+		"An <keyword>Ember Shard</keyword> is a small piece of <flame>solid heat</flame> - clear proof that the power of the world's core exists and can be tapped."
+		""
+		"Shards are fuel for the <keyword>Ember Activator</keyword> and an ingredient in plenty of early Ember tech."
+		"{@pagebreak}"
+		"<keyword>Осколок кристалла эмбера</keyword> - маленький кусочек <flame>твёрдого жара</flame> и явное доказательство того, что сила ядра мира существует и её можно добыть."
+		""
+		"Осколки служат топливом для <keyword>Активатора эмбера</keyword> и входят в рецепты многих ранних эмберных механизмов."
+	]
 	quest.68A54FCE72FFFCC1.quest_desc: [
 		"The Incense Altar multiplies Essentia Vitae gained from a single self-sacrifice. Instead of clicking dozens of times - one powerful offering with a significant multiplier."
 		""
@@ -6600,6 +7416,11 @@
 		"A simple first infusion: the <wind>Cloudstepper Ring</wind> lets you jump higher and fall softer."
 		"{@pagebreak}"
 		"Простая первая инфузия: <wind>кольцо облачного шага</wind> позволяет прыгать выше и мягче приземляться."
+	]
+	quest.68D3B5C4838A11D2.quest_desc: [
+		"Place the <keyword>Copper Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>copper nuggets</positive>. An <property>endless</property> source of copper, no mining needed."
+		"{@pagebreak}"
+		"Поставьте <keyword>Медное кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>медные самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
 	]
 	quest.68E638B9068B5EB0.quest_desc: [
 		"<wiggle amplitude=0.5 frequency=1.0 phase=1.0>Laughing in the face of danger</wiggle> pays off: this mask does not reduce the number of <curse><glitch frequency=0.7 shiftChance=0.06>Warp</glitch></curse> events, but makes them <positive>less severe</positive>."
@@ -6696,6 +7517,15 @@
 		""
 		"[ \"Подробнее про More Mouse Tweaks: \", { \"text\": \"здесь\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/moremousetweaks\" } } ]"
 	]
+	quest.690EE58C49D40485.quest_desc: [
+		"Any charged container will do: a <keyword>Jar</keyword> in the inventory, a <keyword>Cartridge</keyword> in hand or a <keyword>Bulb</keyword> in a curio slot."
+		""
+		"Ember tools and weapons <flame>drain it</flame> on every use - keep it topped up at the Charger."
+		"{@pagebreak}"
+		"Подойдёт любое заряженное хранилище: <keyword>батарея</keyword> в инвентаре, <keyword>картридж</keyword> в руке или <keyword>лампочка</keyword> в слоте аксессуаров."
+		""
+		"Эмберные инструменты и оружие <flame>тратят его</flame> при каждом использовании - не забывайте подзаряжать в заряднике."
+	]
 	quest.691530AFEDB44A05.quest_desc: [
 		"Hold <property>RMB</property> to <shake amplitude=0.3 frequency=1.2>dash forward</shake>, cutting through everything in your way."
 		"{@pagebreak}"
@@ -6721,7 +7551,15 @@
 		""
 		"Сам он ничего не отправляет - забрать предметы/жидкости могут только <keyword>узлы сбора</keyword>."
 	]
-	quest.6972361CC8E0281E.quest_desc: ["большая хранилка Ambers, можно увеличить если дать эмбер вплоть до 1.440.000 вместимости."]
+	quest.6972361CC8E0281E.quest_desc: [
+		"The <keyword>Crystal Cell</keyword> is <positive>mass Ember storage</positive>. It starts small, but every Ember fuel item you feed it raises its capacity - and the crystal on top <wiggle amplitude=0.5 frequency=1.0 phase=1.0>physically grows</wiggle>."
+		""
+		"Its capacity can reach <property>1,440,000</property> Ember."
+		"{@pagebreak}"
+		"<keyword>Кристаллический аккумулятор</keyword> - <positive>огромное хранилище эмбера</positive>. Сначала он маленький, но каждый скормленный ему эмберный предмет увеличивает ёмкость, и кристалл сверху <wiggle amplitude=0.5 frequency=1.0 phase=1.0>растёт прямо на глазах</wiggle>."
+		""
+		"Вместимость можно поднять до <property>1 440 000</property> эмбера."
+	]
 	quest.698605B50DAAED6D.quest_desc: [
 		"Automates simple crafts (planks to sticks, ingots to nuggets, etc.): takes items from the inventory above and puts results into the one below."
 		"{@pagebreak}"
@@ -6759,8 +7597,26 @@
 		"Can be used together with a <keyword>Oil Pot Sash</keyword>. Pots will dig ore in an area like grenades. The ores will have <property>Fortune II</property> applied to them."
 	]
 	quest.6A003706B95C1CB8.quest_desc: ["The Screening Device is an advanced version of the Location Broadcaster that adds team-based filtering. When compatible mods are installed (FTB Teams, Cadmus, or similar), it can restrict which players are allowed to teleport to the holder, cycling through modes like “Just you,” “Everyone,” “Guildmates,” “Party members,” and “Team.”"]
+	quest.6A18D2A5BFD5831D.quest_desc: [
+		"Can't tell which side of a machine does what? Hold the <keyword>Tinker's Lens</keyword> in either hand."
+		""
+		"It shows the <property>purpose of every face</property>, what goes in and out, whether <pulse>redstone</pulse> is needed, the movement inside pipes and which receptor an emitter is linked to."
+		"{@pagebreak}"
+		"Не понятно, какая сторона машины за что отвечает? Возьмите <keyword>Инженерный окуляр</keyword> в любую руку."
+		""
+		"Он показывает <property>назначение каждой стороны</property>, что входит и выходит, нужен ли <pulse>редстоун</pulse>, движение содержимого в трубах и к какому приёмнику привязан излучатель."
+	]
 	quest.6A1DA8ABA8F13FC2.title: "World Tier: Frontier"
 	quest.6A2EFED5C079A7AA.quest_subtitle: "WIP"
+	quest.6A3970672CC60FF7.quest_desc: [
+		"The <keyword>Combustion Chamber</keyword> simply <fire>burns fuel</fire> for the Ignem Reactor."
+		""
+		"Fuel levels: <keyword>Coal</keyword> - <property>2</property>, <keyword>Nether Brick</keyword> - <property>3</property>, <keyword>Blaze Powder</keyword> - <property>4</property>."
+		"{@pagebreak}"
+		"<keyword>Камера сгорания</keyword> просто <fire>сжигает топливо</fire> для Огненного реактора."
+		""
+		"Уровни топлива: <keyword>уголь</keyword> - <property>2</property>, <keyword>адский кирпич</keyword> - <property>3</property>, <keyword>огненный порошок</keyword> - <property>4</property>."
+	]
 	quest.6A7D9640907654A2.quest_desc: ["Combines Spike's cruelty with a deeper purpose: when a non-player creature steps onto it, the array deals a heart of damage and releases 0.5 units of raw Spiritus into the surrounding chunk. Has a brief cooldown; players are immune. Requires an Tabula Animata."]
 	quest.6A7DAAE2E4F9A7A0.quest_desc: [
 		"Like the item <keyword>Level Emitter</keyword>, but watches <aqua>one aspect</aqua>. Emits a <warning><pulse>redstone signal</pulse></warning> when its stored amount goes <property>above</property> or <property>below</property> the threshold you set."
@@ -6770,6 +7626,15 @@
 		"Как обычный <keyword>датчик уровня</keyword>, но следит за <aqua>одним аспектом</aqua>. Подаёт <warning><pulse>сигнал редстоуна</pulse></warning>, когда его количество в сети становится <property>выше</property> или <property>ниже</property> заданного порога."
 		""
 		"Пригодится, чтобы запускать производство, когда аспект заканчивается, или останавливать его, пока сеть не переполнилась."
+	]
+	quest.6A8A745E9ADEB786.quest_desc: [
+		"The <keyword>Grandhammer</keyword> is a heavy melee weapon running on Ember."
+		""
+		"Blocks broken with it are <shake amplitude=0.4 frequency=1.5>obliterated</shake> - <warning>no drops at all</warning>. Because of that it can not take Fortune or Silk Touch."
+		"{@pagebreak}"
+		"<keyword>Великий молот</keyword> - тяжёлое оружие ближнего боя на эмбере."
+		""
+		"Блоки, сломанные им, <shake amplitude=0.4 frequency=1.5>уничтожаются</shake> - <warning>никакого дропа</warning>. Поэтому на него нельзя наложить Удачу или Шёлковое касание."
 	]
 	quest.6AADBAB610C068F2.quest_desc: [
 		"Having this on your broom will not only let another player ride it alongside you, but will also give the broom 9 inventory slots"
@@ -6786,6 +7651,15 @@
 		""
 		"The Gem Case fixes that by allowing you to stack these gems."
 	]
+	quest.6B73D83BC6EF63D0.quest_desc: [
+		"<keyword>Excavation Buckets</keyword> are a Bore upgrade: it can also dig up <keyword>gravel</keyword>, <keyword>flint</keyword> or <keyword>snow</keyword>."
+		""
+		"The gravel or snow must be placed <property>touching the bore blades</property>."
+		"{@pagebreak}"
+		"<keyword>Экскавационные ковши</keyword> - улучшение для буровой: она начнёт добывать ещё и <keyword>гравий</keyword>, <keyword>кремень</keyword> или <keyword>снег</keyword>."
+		""
+		"Гравий или снег должны <property>касаться лезвий бура</property>."
+	]
 	quest.6B8864636BB318EE.quest_desc: [
 		"Digitized essentia is invisible until you build this. The <named>ME Essentia Terminal</named> shows <positive>all essentia</positive> your network can access."
 		""
@@ -6796,10 +7670,24 @@
 		"Через него можно <aqua>класть</aqua> и <aqua>забирать</aqua> эссенцию <keyword>фиалами</keyword> и <keyword>банками</keyword>."
 	]
 	quest.6BE6570F75CC191A.quest_desc: [""]
+	quest.6C052D20373ABCEB.quest_desc: [
+		"The <keyword>Intelligent Apparatus</keyword> on your armor makes slain creatures drop <positive>more experience</positive>. Higher augment level - more XP."
+		"{@pagebreak}"
+		"<keyword>Интеллектуальный аппарат</keyword> на броне заставляет убитых существ ронять <positive>больше опыта</positive>. Чем выше уровень улучшения, тем больше опыта."
+	]
 	quest.6C7B55F12C222907.quest_desc: [
 		"It's a &#FEECD6shovel&r, a &#9BB8EDpickaxe&r, an &#C7E2E9axe&r, and a &#CAE4C8hoe&r &nall in one&r. It's like a Swiss tool!"
 		"{@pagebreak}"
 		"Это &#FEECD6лопата&r, &#9BB8EDкирка&r, &#C7E2E9топор&r, и &#CAE4C8мотыга&r &nв одном&r, буквально швейцарский нож!"
+	]
+	quest.6C7D0409785384AF.quest_desc: [
+		"The <keyword>Clockwork Axe</keyword> - a powerful <positive>unbreakable</positive> axe that runs on Ember."
+		""
+		"Like the other clockwork tools, it doubles as a weapon and <flame>sets enemies on fire</flame>."
+		"{@pagebreak}"
+		"<keyword>Заводной топор</keyword> - мощный <positive>неломающийся</positive> топор, работающий на эмбере."
+		""
+		"Как и другие заводные инструменты, годится как оружие и <flame>поджигает врагов</flame>."
 	]
 	quest.6C8985F958D5AD63.quest_desc: [
 		"The <named>All-Rounder</named> is a theurgical utility tool forged from the power of both deities - hold a goblet while killing a creature with it, and the goblet <blood>fills with that creature's blood</blood>."
@@ -6837,6 +7725,15 @@
 		"The strongest Chronon generator in the mod. Place it as a block and charge it once to start it, then it stores and produces Chronons on its own. Multiple Metronomes link together and work faster as a network."
 		"{@pagebreak}"
 		"Самый сильный генератор Chronon в моде. Его нужно поставить как блок и один раз зарядить для запуска, после чего он сам хранит и производит энергию. Несколько Метрономов связываются в сеть и работают быстрее вместе."
+	]
+	quest.6D8D3469119A1D79.quest_desc: [
+		"Too much information can be a curse. The <keyword>Smoky Tinker's Lens</keyword> on a helmet <property>turns off</property> the machine overlay that some helmets show."
+		""
+		"It takes no augment slot, but the helmet needs a Motive Core first."
+		"{@pagebreak}"
+		"Слишком много информации тоже бывает проклятием. <keyword>Мутный инженерный окуляр</keyword> на шлеме <property>отключает</property> подсказки о машинах, которые показывают некоторые шлемы."
+		""
+		"Слот улучшения он не занимает, но в шлем сначала нужно набить ядро пробуждения."
 	]
 	quest.6D99EAB635E2EF16.quest_desc: [
 		"Watches for a specific catalyst item dropped within the ritual area, consumes it, and crashes a corresponding meteor from above. The meteor's sphere comes to rest with its lowest block one block above the Master Ritual Stone, so the ritual circle is preserved. The exact landing altitude is calculated per-catalyst from the recipe's outermost sphere radius. Catalysts are defined by meteor recipes (consult JEI); each names the meteor that answers."
@@ -6936,6 +7833,15 @@
 		"Давайте просто сделаем вид, что на текстуре этой штуки нет пилы, и продолжим, пока вы не сможете сделать эту пилу, чтобы удовлетворить свои потребности в точности."
 	]
 	quest.6E680C846961BFE3.quest_subtitle: "Finally"
+	quest.6E6BE85FC3DE7DCC.quest_desc: [
+		"Forget stone furnaces. The <keyword>Hearth Coil</keyword> <flame>heats up</flame> on Ember, and the hotter it gets, the <positive>faster</positive> it smelts items placed on top."
+		""
+		"Results are kept inside the coil - pipe them out from the bottom or through a <keyword>Mechanical Core</keyword>."
+		"{@pagebreak}"
+		"Забудьте про каменные печи. <keyword>Нагревательная катушка</keyword> <flame>раскаляется</flame> на эмбере, и чем она горячее, тем <positive>быстрее</positive> плавит предметы, лежащие сверху."
+		""
+		"Результат остаётся внутри катушки - забирайте его трубами снизу или через <keyword>Механическое ядро</keyword>."
+	]
 	quest.6E8468CCB9AA7BC2.quest_desc: ["[ \"You can summon a mob using a \", { \"text\": \"brazier\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27D16535C7FE372B\" } } ]"]
 	quest.6E99902F01ED8483.quest_desc: [
 		"Blaze powder was already as <warning>VOLATILE</warning> as toxin. It burns just like toxin does. So a thought came to me. Was there a way to <warning>mix these substances together</warning> to create the <warning>ultimate purifying effect</warning>. That's when I created this miraculous fusion. &l<flame><shake amplitude=0.4 frequency=1.3>WITCHFIRE</shake></flame>."
@@ -6949,9 +7855,13 @@
 		"<keyword>Повышает шанс</keyword> получить <keyword>голову моба</keyword> если <positive>убить этим топором</positive>."
 	]
 	quest.6EF0B013A2B2DB1F.quest_desc: [
-		"Чтобы понять что было не так в крафте используй это"
+		"A failed transmutation leaves <keyword>Alchemical Waste</keyword>, and that waste is a <magic>hint</magic>. The <keyword>Codebreaking Slate</keyword> stores up to <property>7</property> pieces and shows your guesses side by side."
 		""
-		"Оранжевые точки у уже скрафченного предмета показывают на УСПЕШНЫЕ аспектусы"
+		"<flame>Glowing spot</flame> - a correct aspectus on the correct ingredient. <soul>Pale spot</soul> - a correct aspectus on the wrong ingredient. Spots come in no particular order, one aspectus can appear several times, and not every aspectus is always needed."
+		"{@pagebreak}"
+		"Неудачная трансмутация оставляет <keyword>Алхимические отходы</keyword>, и они - <magic>подсказка</magic>. <keyword>Планшет расшифровывания</keyword> хранит до <property>7</property> штук и показывает ваши попытки рядом друг с другом."
+		""
+		"<flame>Светящаяся точка</flame> - верный аспект на верном ингредиенте. <soul>Бледная точка</soul> - верный аспект, но не на том ингредиенте. Точки идут в случайном порядке, один аспект может встречаться несколько раз, и не все аспекты обязательно нужны."
 	]
 	quest.6EF30F56F492C947.quest_desc: [
 		"Made by altering a Goat Horn. Can still be tooted, but can also be filled with a potion - blowing it applies that effect to all nearby pets and players. Duration is half the original potion's. Effects linger after use, and a new potion overwrites the old one."
@@ -7038,6 +7948,15 @@
 		"А еще распишитесь *&#9BB8EDтут&r*, *&#9BB8EDздесь&r*, и предоставьте &#FEECD6фото паспорта&r!"
 	]
 	quest.6FCE521D7A64B367.quest_desc: ["Folds space between two aligned glyphs for a seamless vertical elevator. Place at least two arrays directly above one another on the same block column, at any distance up to 64 blocks. Jump while standing on an array to teleport upward to the next array above; Sneak to descend to the nearest below. Multiple arrays can be chained for multi-floor shafts. Each search is limited to the same X/Z column, so precise alignment matters."]
+	quest.6FD0F34DD5C70490.quest_desc: [
+		"The <keyword>Nugget Stamp</keyword> casts <keyword>nuggets</keyword>."
+		""
+		"Add an <keyword>Ember Crystal</keyword> into the base and <property>200 mB</property> of metal will wrap around it, giving an <magic>Aspectus</magic> of that metal."
+		"{@pagebreak}"
+		"<keyword>Пресс-форма металлического кусочка</keyword> отливает <keyword>самородки</keyword>."
+		""
+		"Если положить в депо <keyword>Кристалл эмбера</keyword>, <property>200 mB</property> металла обернутся вокруг него и получится <magic>аспект</magic> этого металла."
+	]
 	quest.6FDCFFC3BB5BE0EB.quest_desc: [
 		"The <keyword>Firenando Familiar</keyword> (Ars Elemental) is a combat companion with 80 health and armor - it automatically targets nearby hostile mobs with homing projectiles that <flame>ignite</flame> and knock them back, regenerates over time, and goes dormant instead of dying (revive it with Magma Cream or Blaze Powder)."
 		"{@pagebreak}"
@@ -7191,7 +8110,20 @@
 		"{@pagebreak}"
 		"Вы можете нажать «<positive>C</positive>», чтобы <positive>ползти</positive> и поздороваться со всеми своими <wiggle amplitude=0.5 frequency=1.5 phase=1.0>червеобразными друзьями</wiggle>!"
 	]
-	quest.71A28CD8A6826BD9.quest_desc: ["3x3x2 block"]
+	quest.71783B534E596CEB.quest_desc: [
+		"<keyword>Dawnstone Mail</keyword> makes the wearer <positive>immune to knockback</positive>. Just don't ask why mail is made of plates."
+		"{@pagebreak}"
+		"<keyword>Золотитовая кольчуга</keyword> делает носителя <positive>невосприимчивым к отбрасыванию</positive>. Только не спрашивайте, почему кольчуга сделана из пластин."
+	]
+	quest.71A28CD8A6826BD9.quest_desc: [
+		"Bedrock won't stop your machines. The <keyword>Ember Bore</keyword> is a <property>3x3x2</property> machine that digs <flame>Ember crystals</flame> from deep below."
+		""
+		"<named>Requirements:</named> <property>overworld</property>, below <property>Y -57</property>, and the blades must touch at least <property>3 bedrock</property> blocks. Fuel it with normal furnace fuel; insert fuel and extract crystals with hoppers or pipes."
+		"{@pagebreak}"
+		"Бедрок не остановит ваши машины. <keyword>Эмберная буровая установка</keyword> - машина <property>3x3x2</property>, которая добывает <flame>кристаллы эмбера</flame> из глубин."
+		""
+		"<named>Условия:</named> <property>верхний мир</property>, ниже <property>Y -57</property>, а лезвия должны касаться минимум <property>3 блоков бедрока</property>. Топливо - обычное печное; загружайте его и забирайте кристаллы воронками или трубами."
+	]
 	quest.71AF5D40C19C7E45.quest_desc: [
 		"A <named>Cow Jar</named> - supplies a connected cooking table with <keyword>milk</keyword>, letting you craft recipes that normally require a <property>milk bucket</property> without needing an actual bucket."
 		"{@pagebreak}"
@@ -7235,6 +8167,15 @@
 		"<curse>Семя пустоты</curse>, связанное с металлом, становится <keyword>металлом пустоты</keyword> - материалом сильнейшего снаряжения мода. Остерегайся <shake amplitude=0.4 frequency=1.5><warning>искажения</warning></shake>, которое он несёт."
 	]
 	quest.721EE6BCEA9B6F36.quest_desc: ["<positive>Access</positive> in-game <property>encyclopedia</property>"]
+	quest.723E11A38E5D0249.quest_desc: [
+		"<keyword>Shifting Scales</keyword> grow on armor while you <property>stand still</property> and haven't been hit for a while - a third of a scale at a time."
+		""
+		"Each hit breaks some scales off, and they <positive>block most damage</positive>, except hunger and drowning."
+		"{@pagebreak}"
+		"<keyword>Меняющиеся чешуйки</keyword> нарастают на броне, пока вы <property>стоите на месте</property> и вас давно не били, по трети чешуйки за раз."
+		""
+		"При каждом ударе часть чешуек отваливается и <positive>поглощает большую часть урона</positive>, кроме голода и утопления."
+	]
 	quest.72474FB178234D8E.quest_desc: ["Activate this sigil to temporarily banish all fluids around you. You can use this to run across the ocean bed, or to walk across the Nether's lava lakes."]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
@@ -7284,6 +8225,15 @@
 		""
 		"Каждый экземпляр увеличивает скорость крафта на алтаре на 25%."
 	]
+	quest.7380CE89DA3E5A1C.quest_desc: [
+		"With the <keyword>Eldritch Insignia</keyword> on your armor, some monsters become <curse>afraid of you</curse> and won't attack - unless you provoke them."
+		""
+		"The higher the augment level, the more creatures are <glitch frequency=0.6 shiftChance=0.05>intimidated</glitch>."
+		"{@pagebreak}"
+		"С <keyword>Эмблемой древних</keyword> на броне некоторые монстры начинают <curse>вас бояться</curse> и не нападают, пока вы их не тронете."
+		""
+		"Чем выше уровень улучшения, тем больше существ <glitch frequency=0.6 shiftChance=0.05>запуганы</glitch>."
+	]
 	quest.73873453FF4644FD.quest_desc: [
 		"To research it you must go <flame>somewhere really hot</flame>. The <fire>Infernal Furnace</fire> is a multiblock smelter that sometimes gives bonus output."
 		"{@pagebreak}"
@@ -7316,6 +8266,15 @@
 		"<keyword>Bird nests</keyword> can sometimes be obtained from foliage when you <positive>cut down trees</positive>. Birds are very useful because they <positive>collect</positive> all kinds of debris in their nests. Who knows what you might find there?"
 		"{@pagebreak}"
 		"Иногда выпадает из листвы когда вы <positive>срубаете деревья</positive>, птицы очень полезны т.к. <positive>собирают всякий мусор</positive> у себя в гнёздах, кто знает, что там можно найти?"
+	]
+	quest.73E45401CE651D42.quest_desc: [
+		"Once an item's <flame>Heat</flame> bar is full, it must be tempered in the <keyword>Inferno Forge</keyword>."
+		""
+		"<named>How:</named> power the forge with Ember, open the hatch on top and toss in the hot item plus some <keyword>Ember crystals</keyword>. <property>More crystals - better chances</property>. On success the item gains a level and an <magic>augment slot</magic>."
+		"{@pagebreak}"
+		"Когда шкала <flame>жара</flame> предмета заполнена, его нужно закалить в <keyword>Вулканической кузнице</keyword>."
+		""
+		"<named>Как:</named> подайте в кузницу эмбер, откройте люк сверху и бросьте туда раскалённый предмет и немного <keyword>кристаллов эмбера</keyword>. <property>Больше кристаллов - выше шанс</property>. При успехе предмет получает уровень и <magic>слот улучшения</magic>."
 	]
 	quest.745BE9DA293006D1.quest_desc: [
 		"<named>Bundle</named>'s lil bro, look at it, so <positive>cute</positive> ❤"
@@ -7386,6 +8345,11 @@
 	]
 	quest.759483B6196A8D38.quest_desc: ["Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by left clicking cobblestone on stone or by breaking your fingers by the process of obliterating cobblestone splinters barehanded, the choice is yours <3."]
 	quest.75DE98178AF407BD.quest_desc: ["The most basic element of <poison>Toxony</poison>."]
+	quest.75FF21A1B4FA8CB1.quest_desc: [
+		"While you wear the <keyword>Explosion Charm</keyword>, explosions near you are <shake amplitude=0.4 frequency=1.5>absorbed</shake> - their destructive force goes into the charm. No special bonus, just <positive>no crater</positive>."
+		"{@pagebreak}"
+		"Пока на вас <keyword>Взрывной амулет</keyword>, взрывы рядом <shake amplitude=0.4 frequency=1.5>поглощаются</shake> - вся разрушительная сила уходит в амулет. Никаких бонусов, просто <positive>никакой воронки</positive>."
+	]
 	quest.7635ED9379E95573.quest_desc: ["Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"]
 	quest.76A00C0FCE2D91E1.quest_desc: [
 		"The <keyword>distillery</keyword> allows witches to <positive>separate materials</positive> into their components by utilising differences in boiling and condensing points."
@@ -7412,6 +8376,24 @@
 		"{@pagebreak}"
 		"Броня <keyword>таумиевой крепости</keyword> - тяжёлая, прочная и усиленная инфузией для серьёзной защиты."
 	]
+	quest.780856FB09FB7C80.quest_desc: [
+		"The <keyword>Clockwork Pickaxe</keyword> is a pickaxe and a shovel in one. Like all clockwork tools it is <positive>unbreakable</positive>, but needs Ember from your containers to work."
+		""
+		"It hits hard, <flame>sets enemies on fire</flame>, and takes both tool and weapon enchantments."
+		"{@pagebreak}"
+		"<keyword>Заводной раскалыватель</keyword> - кирка и лопата в одном. Как и все заводные инструменты, он <positive>не ломается</positive>, но для работы берёт эмбер из ваших хранилищ."
+		""
+		"Бьёт сильно, <flame>поджигает врагов</flame> и принимает зачарования и для инструментов, и для оружия."
+	]
+	quest.780D8DB37BFF3E4A.quest_desc: [
+		"<keyword>Dawnstone</keyword> - a <flame>bright alloy</flame> of copper and gold, made in the <keyword>Mixer Centrifuge</keyword>. Ember is woven into its very nature."
+		""
+		"It is the base material for most advanced Ember machinery."
+		"{@pagebreak}"
+		"<keyword>Золотит</keyword> - <flame>яркий сплав</flame> меди и золота, который делают в <keyword>Смесительной центрифуге</keyword>. Эмбер вплетён в саму его природу."
+		""
+		"Это основной материал для большинства продвинутых эмберных механизмов."
+	]
 	quest.7854CBAEADA18B57.quest_desc: [
 		"The Orb Vitae Link doesn't craft - it charges. Seat a Blood Orb inside (use with orb in hand, empty-handed to take it back), and it pulls Essentia Vitae from its bound altar straight into the orb owner's Anima, at the altar's full tier and runes, until the network is full."
 		""
@@ -7431,6 +8413,15 @@
 		"{@pagebreak}"
 		"Расширяет возможности модернизации Sentient Armor's за пределы прежних ограничений."
 	]
+	quest.78D639C672615B4F.quest_desc: [
+		"The <keyword>Cinder Jet</keyword> is an armor augment for <shake amplitude=0.4 frequency=1.5>dashing</shake>: start sprinting and it will launch you forward, faster with each augment level."
+		""
+		"Each dash uses Ember from your inventory."
+		"{@pagebreak}"
+		"<keyword>Пепельный реактивный движок</keyword> - улучшение брони для <shake amplitude=0.4 frequency=1.5>рывков</shake>: начните бежать, и он швырнёт вас вперёд, тем быстрее, чем выше уровень."
+		""
+		"Каждый рывок тратит эмбер из инвентаря."
+	]
 	quest.78E0F36AAA8E6154.quest_desc: [
 		"Server-friendly endgame EV. Reads the configurations of nearby vanilla and Trial Spawners, simulates the kills they would produce, and feeds the resulting EV directly to your altar; no entities are spawned, no chunks load up with corpses."
 		"{@pagebreak}"
@@ -7446,6 +8437,15 @@
 		""
 		"Эссенцию из куба забирают <keyword>фиалами</keyword>, <keyword>банками</keyword> или трубами. Если плавильня работает на <fire>алюментуме</fire>, перегонка идёт <positive>гораздо быстрее</positive>."
 	]
+	quest.79096CDE43A8E16D.quest_desc: [
+		"The <keyword>Mantle Jar</keyword> is a small portable Ember container. Ember tools can draw from it <positive>anywhere in your inventory</positive>."
+		""
+		"Charge it at the <keyword>Copper Charger</keyword>."
+		"{@pagebreak}"
+		"<keyword>Батарея огненного покрова</keyword> - небольшое переносное хранилище эмбера. Эмберные инструменты берут из неё энергию, где бы она <positive>ни лежала в инвентаре</positive>."
+		""
+		"Заряжается в <keyword>Медном заряднике</keyword>."
+	]
 	quest.7930264A840C4BDB.quest_desc: [
 		"One of the most important blocks for further progression. Learn more about how to use it by reading the Spectrum book!"
 		"{@pagebreak}"
@@ -7460,6 +8460,15 @@
 		"Craft one for yourself today, and you'll get an <positive>unlimited supply of boxes</positive>, a Multiblock Packer 3000 (Safety regulations edition) PLACER, AND a little plushie of our demure, ditzy CEO for free!"
 		""
 		"<fade>ⓘ (We are not responsible for any injuries inflicted on the user by the machine. May contain traces of radioactive waste, horsehairs, and insulin. Not recommended for use for infants, piglins, and fairies) </fade>"
+	]
+	quest.79E1770EC76D3E9A.quest_desc: [
+		"The <keyword>Item Transfer</keyword> works like a pipe that connects only <property>front and back</property>, and items <positive>always prefer it</positive> over other routes."
+		""
+		"RMB it with an item to set a <property>filter</property>."
+		"{@pagebreak}"
+		"<keyword>Передатчик предметов</keyword> работает как труба, которая соединяется только <property>спереди и сзади</property>, причём предметы <positive>всегда выбирают его</positive> в первую очередь."
+		""
+		"ПКМ по нему предметом, чтобы задать <property>фильтр</property>."
 	]
 	quest.7A0448766FC35B70.quest_desc: [
 		"Upgrade for the <keyword>Wireless Essentia Terminal</keyword>. &7Shift+RMB&r switches between <property>Terminal</property> and <property>Alchemy</property> modes."
@@ -7497,7 +8506,15 @@
 		"- In Search Of Greatness, by the Fifth Herald of Color"
 	]
 	quest.7A5F66121C4BCC2B.quest_desc: ["<positive>Charges items</positive>. That's it"]
-	quest.7A829E765BC1B36A.quest_desc: ["генерация эмбера но быстрее?"]
+	quest.7A829E765BC1B36A.quest_desc: [
+		"The <keyword>Pressure Refinery</keyword> is a much stronger Activator: it needs crystals, Ember and <aqua>water</aqua> and gives <property>1.5x</property> the yield by default."
+		""
+		"Place it on a <keyword>metal block</keyword> surrounded by <flame>lava or fire</flame> and the yield goes up to <positive>3x</positive>, depending on how many hot blocks are around the base."
+		"{@pagebreak}"
+		"<keyword>Паровой активатор эмбера</keyword> - гораздо более мощный активатор: ему нужны кристаллы, эмбер и <aqua>вода</aqua>, а выход по умолчанию <property>в 1.5 раза</property> больше."
+		""
+		"Поставьте его на <keyword>металлический блок</keyword>, окружённый <flame>лавой или огнём</flame>, и выход вырастет до <positive>3x</positive> - в зависимости от количества горячих блоков вокруг основания."
+	]
 	quest.7AA3CDBC6B160F86.quest_desc: ["<property>Free furnaces</property>"]
 	quest.7AB88C2D779F62E2.quest_desc: [
 		"An upgraded coin pouch that automatically picks up coins from the floor"
@@ -7589,6 +8606,19 @@
 		"<positive>Заменяет</positive> большинство инструментов одним <keyword>заклинанием</keyword>"
 	]
 	quest.7CA4C6614455169B.title: "A pickaxe? No. An axe? No. A shovel?"
+	quest.7CAD19F299B6FED0.quest_desc: [
+		"The <keyword>Tinker's Hammer</keyword> is your main Ember tool."
+		""
+		"<named>Linking:</named> RMB an <keyword>Emitter</keyword>, then RMB a <keyword>Receptor</keyword> or <keyword>Relay</keyword>. There is no distance limit, but a burst that travels <warning>too long</warning> fades away along with its Ember."
+		""
+		"It also <shake amplitude=0.3 frequency=1.0>pounds</shake> items on the <keyword>Dawnstone Anvil</keyword> and disconnects pipes from each other."
+		"{@pagebreak}"
+		"<keyword>Инженерный молот</keyword> - главный инструмент для работы с эмбером."
+		""
+		"<named>Связывание:</named> ПКМ по <keyword>излучателю</keyword>, затем ПКМ по <keyword>приёмнику</keyword> или <keyword>реле</keyword>. Ограничения по расстоянию нет, но пакет, летящий <warning>слишком долго</warning>, рассеивается вместе со всем эмбером."
+		""
+		"Ещё им <shake amplitude=0.3 frequency=1.0>куют</shake> предметы на <keyword>Золотитовой наковальне</keyword> и разъединяют соседние трубы."
+	]
 	quest.7CC15CAF5CC569EE.quest_desc: ["Take the dried plant and place it on a Herbalist Bench. Then, use the boline on it a few times to create chopped plants."]
 	quest.7CC6B7D579B7C7B8.quest_desc: ["Once you have made the hanging variant, hold it and right click on the bottom of a block to hang it. After a while, it will turn into the useful dry variant."]
 	quest.7CC9F88727D23AF6.quest_desc: [
@@ -7607,6 +8637,11 @@
 		"{@pagebreak}"
 		"<keyword>SpellBinder</keyword> (Not Enough Glyphs) - альтернатива спелл-буке: хранит до 25 заклинаний из тома-кастера или пергаментов, удобен для заклинаний, которые вы больше не меняете, или чтобы поделиться магией, не отдавая всю книгу. У него также есть свои слоты для нитей с особыми бонусами (Focus, Randomize или превращение в оружие ближнего боя)."
 	]
+	quest.7CDEA2E9E75C4282.quest_desc: [
+		"Place the <keyword>Tin Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>tin nuggets</positive>. An <property>endless</property> source of tin, no mining needed."
+		"{@pagebreak}"
+		"Поставьте <keyword>Оловянное кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>оловянные самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
+	]
 	quest.7CFF72E3005032D8.quest_desc: [
 		"An augment for the <keyword>Spirit Crucible</keyword>, using the multiphasic property of Soulstained Steel: <property>+10% Damage Absorption Chance</property> and <positive>-5% Instability</positive> - gives a chance to <positive>completely absorb</positive> damage dealt to the <keyword>Impetus</keyword>, at the cost of <curse>-20% Focusing Speed</curse>."
 		"{@pagebreak}"
@@ -7622,10 +8657,24 @@
 		"{@pagebreak}"
 		"Заряжает жезлы и снаряжение на vis из окружающей <magic>ауры</magic>."
 	]
+	quest.7D7BB07EE30DA022.quest_desc: [
+		"<keyword>Isolated Materia</keyword> can <glitch frequency=0.6 shiftChance=0.05>become the material</glitch> of other items. On the anvil it <positive>replaces any repair material</positive>, so you can fix almost anything with it."
+		"{@pagebreak}"
+		"<keyword>Изолированный субстрат</keyword> умеет <glitch frequency=0.6 shiftChance=0.05>становиться материалом</glitch> других предметов. На наковальне он <positive>заменяет любой материал для починки</positive>, так что им можно чинить почти всё."
+	]
 	quest.7DB2152F92496396.quest_desc: [
 		"Compress <property>Raw Spiritus</property> in the Hellfire Forge to form a <keyword>Common Spiritus Gem</keyword>. This is the primary fuel for Sentient Equipment crafting and Hellfire Forge recipes."
 		""
 		"This petty gem holds up to 56 Spiritus."
+	]
+	quest.7E77C00BEDCD3453.quest_desc: [
+		"Put any item into the <keyword>Cinder Plinth</keyword>, give it Ember, and it will <fire>burn the item</fire> into <bone>Ash</bone>."
+		""
+		"A <keyword>Bin</keyword> underneath collects the ash automatically."
+		"{@pagebreak}"
+		"Положите любой предмет в <keyword>Пепельный мусоросжигатель</keyword>, подайте эмбер, и он <fire>сожжёт его</fire> в <bone>пепел</bone>."
+		""
+		"<keyword>Свинцовый контейнер</keyword> снизу будет собирать пепел сам."
 	]
 	quest.7E931DB1E3794703.quest_desc: [
 		"[ \"You can use the \", { \"text\": \"Pentacle\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5C95E8450BEAD473\" } }, \" to get the amount of Creeper Heart you need!\" ]"
@@ -7697,6 +8746,15 @@
 		"&lThere's only one way to make liquid source!&r"
 		""
 		"<keyword>1 Ethereal Source</keyword> -> <keyword>8 liquid source</keyword> "
+	]
+	quest.7F38DB556CF5CF6A.quest_desc: [
+		"The <keyword>Ember Emitter</keyword> is the sending end. Placed on a machine, it sucks Ember into its own buffer."
+		""
+		"While it gets a <pulse>redstone signal</pulse>, it periodically fires Ember bursts at the receptor it is linked to."
+		"{@pagebreak}"
+		"<keyword>Излучатель эмбера</keyword> - отправляющая сторона. Поставленный на машину, он вытягивает из неё эмбер в свой буфер."
+		""
+		"Пока на него подаётся <pulse>редстоун-сигнал</pulse>, он периодически выпускает пакеты эмбера в связанный приёмник."
 	]
 	quest.7F3F56C04BFCF7BD.quest_desc: ["Necessary for creating some <poison>Toxony</poison> materials."]
 	quest.7F7B0FF0BAC90638.quest_desc: [

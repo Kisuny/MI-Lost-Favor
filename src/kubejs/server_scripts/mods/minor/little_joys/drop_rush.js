@@ -9,6 +9,13 @@ const dropRushBushes = {
     "ars_nouveau:sourceberry_bush": "3",
     "toxony:false_berry_bush": "3",
     "spectrum:sawblade_holly_bush": "7",
+    "spectrum:blood_orchid": "5",
+    "spectrum:aloe": "4",
+    "spectrum:doombloom": "4",
+    "hexerei:belladonna_plant": "3",
+    "hexerei:mandrake_plant": "3",
+    "hexerei:mugwort_bush": "3",
+    "hexerei:yellow_dock_bush": "3",
 }
 
 BlockEvents.rightClicked(Object.keys(dropRushBushes), event => {

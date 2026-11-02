@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
             [{ item: "modern_industrialization:lignite_coal_dust" }, 1, 0.65],
             [{ item: "modern_industrialization:sulfur_dust" }, 1, 0.5]
         ],
-        removeRecipeType: "modern_industrialization:macerator"
+        removeRecipeType: "modern_industrialization:macerator",
+        ieCompat: true
     })
 })

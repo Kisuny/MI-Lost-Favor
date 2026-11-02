@@ -189,7 +189,11 @@ function miMachineRecipe(event, args){
     }
 
     if (args.machine == "modern_industrialization:macerator" && energy <= 4) {
-        milfMacToCrush(event, recipe.item_inputs[0], recipe.item_outputs, id)
+        //milfMacToCrush(event, recipe.item_inputs[0], recipe.item_outputs, id)
+        arsNouveauCrushRecipe(event, {
+            inputItems: args.inputItems,
+            outputItems: args.outputItems
+        })
     }
     if (id) {
         event.custom(recipe).id(id)
@@ -1320,6 +1324,7 @@ KubeJSTweaks.beforeRecipes(event => {
         "extended_industrialization:vanilla_recipes/macerator/netherite_ingot_to_dust",
         
         "modern_industrialization:materials/macerator/redstone_ore_to_crushed",
+        "modern_industrialization:materials/macerator/lignite_coal_crushed_to_dust",
 
         "extended_industrialization:machines/processing_array/assembler",
         "extended_industrialization:machines/processing_array/craft",

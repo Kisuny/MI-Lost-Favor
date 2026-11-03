@@ -32,13 +32,12 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "qqq",
-            "rep",
+            "r p",
             "www"
         ],
         key: {
             q: {item:"embers:fluid_pipe"},
             w: { item:"embers:item_pipe"},
-            e: {item:"moderndynamics:machine_extender"},
             r: { item:"milf:basic_motor"},
             p: { item: "milf:basic_pump" },
         },

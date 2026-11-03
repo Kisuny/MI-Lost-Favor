@@ -6,6 +6,11 @@
   "icon": "embers:caminite_lever",
   "x": 3,
   "y": 10,
+  "deps": {
+    "all": [
+      "rock_and_steam/archaic_brick"
+    ]
+  },
   "tasks": [
     {
       "item": "embers:caminite_lever",

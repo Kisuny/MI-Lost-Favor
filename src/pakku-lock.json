@@ -4877,6 +4877,42 @@
             ]
         },
         {
+            "pakku_id": "L2JySEEFCC2EMiU3",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "embers-questing"
+            },
+            "name": {
+                "curseforge": "Ember's Questing"
+            },
+            "id": {
+                "curseforge": "1752806"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "embersquesting-neoforge-1.21.1-1.4.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9413/381/embersquesting-neoforge-1.21.1-1.4.0.jar",
+                    "id": "9413381",
+                    "parent_id": "1752806",
+                    "hashes": {
+                        "sha1": "32576c1112251876c8c6f69fdb60147f1276dbaa",
+                        "md5": "97b149ac186040ef2e431acb3427839f"
+                    },
+                    "required_dependencies": [],
+                    "size": 12917397,
+                    "date_published": "2026-11-03T01:09:36.863Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "89pyrUZi2WWCW8uU",
             "type": "MOD",
             "slug": {
@@ -5853,124 +5889,6 @@
                     ],
                     "size": 1477833,
                     "date_published": "2026-10-28T09:03:54.897Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "NgorERjL6kk3RLlj",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-quests-forge"
-            },
-            "name": {
-                "curseforge": "FTB Quests (NeoForge)"
-            },
-            "id": {
-                "curseforge": "289412"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftb-quests-neoforge-2101.1.37.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9298/629/ftb-quests-neoforge-2101.1.37.jar",
-                    "id": "9298629",
-                    "parent_id": "289412",
-                    "hashes": {
-                        "sha1": "770938e5907cc91be2f89ac00aea2e87b51e1c87",
-                        "md5": "e421344bc7654f25138aed961b9dbead"
-                    },
-                    "required_dependencies": [
-                        "404465",
-                        "404468",
-                        "419699"
-                    ],
-                    "size": 1635351,
-                    "date_published": "2026-10-23T14:29:54.303Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "HSfLh9f6Q0anyXVN",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-quests-entity-visualization"
-            },
-            "name": {
-                "curseforge": "FTB Quests Entity Visualization"
-            },
-            "id": {
-                "curseforge": "1529246"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftbquestsentityvis-1.13.0-1.21.1-neoforge.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9280/292/ftbquestsentityvis-1.13.0-1.21.1-neoforge.jar",
-                    "id": "9280292",
-                    "parent_id": "1529246",
-                    "hashes": {
-                        "sha1": "2fa020458510a35f21546f840b9aef3d16a298a4",
-                        "md5": "359ff4c1bc56c6ca69b6badb00fb6267"
-                    },
-                    "required_dependencies": [
-                        "404465",
-                        "419699",
-                        "289412"
-                    ],
-                    "size": 149356,
-                    "date_published": "2026-10-21T18:50:35.873Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "3U49EPUX0whkvcBo",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-quests-optimizer"
-            },
-            "name": {
-                "curseforge": "FTB Quests Optimizer"
-            },
-            "id": {
-                "curseforge": "912469"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "FTBQuestsOptimizer-neoforge-3.2.0-1.21.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7576/461/FTBQuestsOptimizer-neoforge-3.2.0-1.21.1.jar",
-                    "id": "7576461",
-                    "parent_id": "912469",
-                    "hashes": {
-                        "sha1": "28e4926c62f9f010aea43a091f7fc113200175be",
-                        "md5": "c51035f206c3abf6ad5b17d5e844ca35"
-                    },
-                    "required_dependencies": [
-                        "289412"
-                    ],
-                    "size": 18059,
-                    "date_published": "2026-02-04T19:14:39.170Z"
                 }
             ]
         },
@@ -13695,44 +13613,6 @@
                     ],
                     "size": 25979434,
                     "date_published": "2026-07-05T08:36:53.253Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "o6oH9MjGkl3D93iD",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-quests-lang-splitter"
-            },
-            "name": {
-                "curseforge": "Quests Lang Splitter"
-            },
-            "id": {
-                "curseforge": "1326856"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftbquestslangsplitter-1.0.7.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8677/486/ftbquestslangsplitter-1.0.7.jar",
-                    "id": "8677486",
-                    "parent_id": "1326856",
-                    "hashes": {
-                        "sha1": "699598541f3aaa301060fe093fba2f0d69f95fe8",
-                        "md5": "24e56e33d1415cb56d866a54792c01db"
-                    },
-                    "required_dependencies": [
-                        "289412"
-                    ],
-                    "size": 201642,
-                    "date_published": "2026-08-18T13:54:03.593Z"
                 }
             ]
         },

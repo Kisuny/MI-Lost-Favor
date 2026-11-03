@@ -11,21 +11,21 @@ function sendXaeroRadial(player) {
     xaero_actions.forEach(a => sendEzAction(player, a))
 }
 
-FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
+EmbersQuestingEvents.customReward('milf:radial/xaeromap', event => {
     sendXaeroRadial(event.player)
 });
 
 
 const radial_menu_buttons = [
-    { quest_id: '7108991BE6DD4A51', stage: 'radial_money_pouch', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch', icon: "devices:devices_pouch" },
-    { quest_id: '472BCEE94E93C2FF', stage: 'radial_trinket_pouch', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch', icon: "ars_elemental:curio_bag" },
-    { quest_id: '0A58BA17068FCA2C', stage: 'radial_sail', action_name: 'Toggle Sail', key_name: 'key.smallships.ship_sail', icon: "smallships:sail" },
-    { quest_id: '631ABDA3AFF1EE5B', stage: 'radial_world_tier', action_name: 'World Tier Select', key_name: 'key.apotheosis.open_world_tier_select', icon: "apotheosis:boss_summoner" },
-    { quest_id: '386F1FCFA31E0945', stage: 'chunkloaders_open_screen', action_name: 'View Chunk Loaders', key_name: 'chunkloaders.keys.open_screen', icon: "chunkloaders:basic_chunk_loader" },
+    { id: 'milf:radial/money_pouch', stage: 'radial_money_pouch', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch', icon: "devices:devices_pouch" },
+    { id: 'milf:radial/trinket_pouch', stage: 'radial_trinket_pouch', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch', icon: "ars_elemental:curio_bag" },
+    { id: 'milf:radial/sail', stage: 'radial_sail', action_name: 'Toggle Sail', key_name: 'key.smallships.ship_sail', icon: "smallships:cotton_sails" },
+    { id: 'milf:radial/world_tier', stage: 'radial_world_tier', action_name: 'World Tier Select', key_name: 'key.apotheosis.open_world_tier_select', icon: "apotheosis:boss_summoner" },
+    { id: 'milf:radial/chunk_loaders', stage: 'chunkloaders_open_screen', action_name: 'View Chunk Loaders', key_name: 'chunkloaders.keys.open_screen', icon: "chunkloaders:basic_chunk_loader" },
 ]
 
 radial_menu_buttons.forEach(element => {
-    FTBQuestsEvents.customReward(element.quest_id, event => {
+    EmbersQuestingEvents.customReward(element.id, event => {
         AStages.addStageToPlayer(element.stage, event.player)
         sendEzAction(event.player, element)
     });

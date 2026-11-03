@@ -26,37 +26,49 @@ function PetRockScreen(){
 
         init() {
 
-            let tier0Ores = [
-                "modern_industrialization:raw_tin",
-                "minecraft:raw_copper",
-                "minecraft:raw_iron",
-                "minecraft:coal",
-                "modern_industrialization:raw_lead"
-            ]
+            function getDisplayItemsForTier(tier){
+                return global.oresWithSamples.filter(entry => entry.oreTier == tier).map(entry => entry.oreData.displayItem)
+            }
 
-            let tier1Ores = [
-                "minecraft:raw_gold",
-                "minecraft:emerald",
-                "minecraft:diamond",
-                "minecraft:lapis_lazuli",
-                "minecraft:quartz"
-            ]
+            // let tier0Ores = [
+            //     "modern_industrialization:raw_tin",
+            //     "minecraft:raw_copper",
+            //     "minecraft:raw_iron",
+            //     "minecraft:coal",
+            //     "modern_industrialization:raw_lead"
+            // ]
 
-            let tier2Ores = [
-                "minecraft:redstone",
-                "modern_industrialization:bauxite_dust",
-                "modern_industrialization:raw_nickel",
-                "modern_industrialization:salt_dust",
-                "modern_industrialization:raw_antimony"
-            ]
+            // let tier1Ores = [
+            //     "minecraft:raw_gold",
+            //     "minecraft:emerald",
+            //     "minecraft:diamond",
+            //     "minecraft:lapis_lazuli",
+            //     "minecraft:quartz"
+            // ]
 
-            let tier3Ores = [
-                "modern_industrialization:raw_uranium",
-                "modern_industrialization:raw_tungsten",
-                "minecraft:netherite_scrap",
-                "modern_industrialization:raw_platinum",
-                "modern_industrialization:monazite_dust"
-            ]
+            // let tier2Ores = [
+            //     "minecraft:redstone",
+            //     "modern_industrialization:bauxite_dust",
+            //     "modern_industrialization:raw_nickel",
+            //     "modern_industrialization:salt_dust",
+            //     "modern_industrialization:raw_antimony"
+            // ]
+
+            // let tier3Ores = [
+            //     "modern_industrialization:raw_uranium",
+            //     "modern_industrialization:raw_tungsten",
+            //     "minecraft:netherite_scrap",
+            //     "modern_industrialization:raw_platinum",
+            //     "modern_industrialization:monazite_dust"
+            // ]
+
+            let tier0Ores = getDisplayItemsForTier(0)
+
+            let tier1Ores = getDisplayItemsForTier(1)
+
+            let tier2Ores = getDisplayItemsForTier(2)
+
+            let tier3Ores = getDisplayItemsForTier(3)
 
             this.oreVialT0 = this.addRenderableWidget(
                 OresVialWidget(

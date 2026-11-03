@@ -47,6 +47,22 @@ ServerEvents.recipes(event => {
                 ],
                 custom_condition: `${oreEntry.bedrockSampleId}`
             })
+
+            Object.entries(oreEntry.oreData.boringOutputs).forEach(([outputId, weight]) => {
+                embersExcavationRecipe(event, {
+                    required_block: {
+                        "amount": 1,
+                        "block_tag": `milf:bedrock_samples/${oreEntry.itemName}`
+                    },
+                    outputItems: [
+                        [{ id: outputId }],
+                    ],
+                    max_height: -57,
+                    weight: weight,
+                })
+            })
+
+
         }
 
         if (oreEntry.oreTier == 1) {

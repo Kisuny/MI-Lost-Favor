@@ -118,6 +118,12 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.credit.block', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Block')}`)
     event.add('milf.credit.fluid', `${MilfEffects.GRAD.MILF('MI:LF™ Certified Fluid')}`)
 
+    event.add('milf.core_drill.y_pos', `Core Sample Drill must be placed at ${MilfEffects.GRAD.NEGATIVE('Y level -59')} to perform a perforation!`)
+    event.add('milf.core_drill.sample_in_chunk', `This chunk already contains a bedrock sample for each of the valid deposits nearby!`)
+    event.add('milf.core_drill.no_valid_deposits', `No ${MilfEffects.GRAD.NEGATIVE('valid deposits')} in a radius of 10 blocks!`)
+    event.add('milf.core_drill.not_enough_fluid', `Not enough ${MilfEffects.GRAD.NEGATIVE('fluid')} to perform a perforation!`)
+    event.add('milf.core_drill.wrong_fluid', `Wrong ${MilfEffects.GRAD.NEGATIVE('fluid')} for this type of perforation!`)
+
 
     event.add('milf.mi_tweaks.tooltip.solar_powered1', `Can run ${MilfEffects.GRAD.UPUPGRADE('%s')} recipes with ${MilfEffects.GRAD.MILF('2.5X')} efficiency`)
     event.add('milf.mi_tweaks.tooltip.solar_powered2', `Requires ${MilfEffects.GRAD.MILF('direct sunlight')} to run`)

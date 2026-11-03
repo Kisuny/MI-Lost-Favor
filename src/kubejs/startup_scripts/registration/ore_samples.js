@@ -12,7 +12,14 @@ const samplesData = [
         oreData: {
             deepslate: "minecraft:deepslate_iron_ore",
             normal: "minecraft:iron_ore",
-            raw: "minecraft:raw_iron"
+            raw: "minecraft:raw_iron",
+            displayItem: "minecraft:raw_iron",
+            boringOutputs: {
+                "minecraft:raw_iron" : 18,
+                "milf:crushed_iron": 54,
+                "modern_industrialization:iron_dust": 109 * 2,
+                "modern_industrialization:iron_tiny_dust": 109 * 3
+            }
         },
         oreTier: 0
     },
@@ -24,7 +31,14 @@ const samplesData = [
         oreData: {
             deepslate: "minecraft:deepslate_copper_ore",
             normal: "minecraft:copper_ore",
-            raw: "minecraft:raw_copper"
+            raw: "minecraft:raw_copper",
+            displayItem: "minecraft:raw_copper",
+            boringOutputs: {
+                "minecraft:raw_copper": 22,
+                "milf:crushed_copper": 71,
+                "modern_industrialization:copper_dust": 109,
+                "modern_industrialization:copper_tiny_dust": 109 * 2
+            }
         },
         oreTier: 0
     },
@@ -36,7 +50,19 @@ const samplesData = [
         oreData: {
             deepslate: "minecraft:deepslate_coal_ore",
             normal: "minecraft:coal_ore",
-            raw: "modern_industrialization:coal_crushed_dust"
+            raw: "modern_industrialization:coal_crushed_dust",
+            displayItem: "minecraft:coal",
+            boringOutputs: {
+                "minecraft:coal": 80,
+                "modern_industrialization:coal_crushed_dust": 71,
+                "modern_industrialization:coal_dust": 109,
+                "modern_industrialization:coal_tiny_dust": 109 * 2,
+
+                "modern_industrialization:lignite_coal": 100,
+                "modern_industrialization:lignite_coal_crushed_dust": 71,
+                "modern_industrialization:lignite_coal_dust": 109,
+                "modern_industrialization:lignite_coal_tiny_dust": 109 * 2
+            }
         },
         oreTier: 0
     },
@@ -48,7 +74,16 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_lead_ore",
             normal: "modern_industrialization:lead_ore",
-            raw: "modern_industrialization:raw_lead"
+            raw: "modern_industrialization:raw_lead",
+            displayItem: "modern_industrialization:raw_lead",
+            boringOutputs: {
+                "modern_industrialization:raw_lead": 22,
+                "milf:crushed_lead": 71,
+                "modern_industrialization:lead_dust": 109,
+                "modern_industrialization:lead_tiny_dust": 109 * 2,
+                "modern_industrialization:silver_dust": 4,
+                "modern_industrialization:silver_tiny_dust": 17
+            }
         },
         oreTier: 0
     },
@@ -60,45 +95,29 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_tin_ore",
             normal: "modern_industrialization:tin_ore",
-            raw: "modern_industrialization:raw_tin"
+            raw: "modern_industrialization:raw_tin",
+            displayItem: "modern_industrialization:raw_tin",
+            boringOutputs: {
+                "modern_industrialization:raw_tin": 22,
+                "milf:crushed_tin": 71,
+                "modern_industrialization:tin_dust": 109,
+                "modern_industrialization:tin_tiny_dust": 109 * 2
+            }
         },
         oreTier: 0
     },
     //#endregion
 
     //#region t1
-    { 
-        sampleLang: { "en_us": `Gold ${en_usOreSample}`, "ru_ru": `Золотой ${ru_ruOreSample}` }, 
-        bedrockSampleLang: { "en_us": `${en_usBedrock} Iron ${en_usOreSample}` },
-        itemName: "gold", directory: "minecraft", 
-        oreData: {
-            deepslate: "minecraft:deepslate_gold_ore",
-            normal: "minecraft:gold_ore",
-            raw: "minecraft:raw_gold"
-        },
-        oreTier: 1
-    },
-
     {
-        sampleLang: { "en_us": `Diamond ${en_usOreSample}`, "ru_ru": `Алмазный ${ru_ruOreSample}` },
-        bedrockSampleLang: { "en_us": `${en_usBedrock} Diamond ${en_usOreSample}` },
-        itemName: "diamond", directory: "minecraft", bedrockTexture: "spectrum:block/pure_diamond_block",
+        sampleLang: { "en_us": `Redstone ${en_usOreSample}`, "ru_ru": `Редстоуновый ${ru_ruOreSample}` },
+        bedrockSampleLang: { "en_us": `${en_usBedrock} Redstone ${en_usOreSample}` },
+        itemName: "redstone", directory: "minecraft", bedrockTexture: "minecraft:block/redstone_block",
         oreData: {
-            deepslate: "minecraft:deepslate_diamond_ore",
-            normal: "minecraft:diamond_ore",
-            raw: "modern_industrialization:diamond_crushed_dust"
-        },
-        oreTier: 1
-    },
-
-    {
-        sampleLang: { "en_us": `Emerald ${en_usOreSample}`, "ru_ru": `Изумрудный ${ru_ruOreSample}` },
-        bedrockSampleLang: { "en_us": `${en_usBedrock} Emerald ${en_usOreSample}` },
-        itemName: "emerald", directory: "minecraft", bedrockTexture: "spectrum:block/pure_emerald_block",
-        oreData: {
-            deepslate: "minecraft:deepslate_emerald_ore",
-            normal: "minecraft:emerald_ore",
-            raw: "modern_industrialization:emerald_crushed_dust"
+            deepslate: "minecraft:deepslate_redstone_ore",
+            normal: "minecraft:redstone_ore",
+            raw: "modern_industrialization:redstone_crushed_dust",
+            displayItem: "minecraft:redstone"
         },
         oreTier: 1
     },
@@ -110,31 +129,21 @@ const samplesData = [
         oreData: {
             deepslate: "minecraft:deepslate_lapis_ore",
             normal: "minecraft:lapis_ore",
-            raw: "modern_industrialization:lapis_crushed_dust"
+            raw: "modern_industrialization:lapis_crushed_dust",
+            displayItem: "minecraft:lapis_lazuli"
         },
         oreTier: 1
     },
 
-    {
-        sampleLang: { "en_us": `Redstone ${en_usOreSample}`, "ru_ru": `Редстоуновый ${ru_ruOreSample}` },
-        bedrockSampleLang: { "en_us": `${en_usBedrock} Redstone ${en_usOreSample}` },
-        itemName: "redstone", directory: "minecraft", bedrockTexture: "minecraft:block/redstone_block",
+    { 
+        sampleLang: { "en_us": `Gold ${en_usOreSample}`, "ru_ru": `Золотой ${ru_ruOreSample}` }, 
+        bedrockSampleLang: { "en_us": `${en_usBedrock} Iron ${en_usOreSample}` },
+        itemName: "gold", directory: "minecraft", 
         oreData: {
-            deepslate: "minecraft:deepslate_redstone_ore",
-            normal: "minecraft:redstone_ore",
-            raw: "modern_industrialization:redstone_crushed_dust"
-        },
-        oreTier: 1
-    },
-
-    {
-        sampleLang: { "en_us": `Nickel ${en_usOreSample}`, "ru_ru": `Никельевый ${ru_ruOreSample}` },
-        bedrockSampleLang: { "en_us": `${en_usBedrock} Nickel ${en_usOreSample}` },
-        itemName: "nickel", directory: "modern_industrialization",
-        oreData: {
-            deepslate: "modern_industrialization:deepslate_nickel_ore",
-            normal: "modern_industrialization:nickel_ore",
-            raw: "modern_industrialization:raw_nickel"
+            deepslate: "minecraft:deepslate_gold_ore",
+            normal: "minecraft:gold_ore",
+            raw: "minecraft:raw_gold",
+            displayItem: "minecraft:raw_gold"
         },
         oreTier: 1
     },
@@ -146,7 +155,8 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_salt_ore",
             normal: "modern_industrialization:salt_ore",
-            raw: "modern_industrialization:salt_crushed_dust"
+            raw: "modern_industrialization:salt_crushed_dust",
+            displayItem: "modern_industrialization:salt_dust"
         },
         oreTier: 1
     },
@@ -157,20 +167,62 @@ const samplesData = [
         itemName: "quartz", directory: "modern_industrialization", bedrockTexture: "spectrum:block/pure_quartz_block",
         oreData: {
             normal: "modern_industrialization:quartz_ore",
-            raw: "modern_industrialization:quartz_crushed_dust"
+            raw: "modern_industrialization:quartz_crushed_dust",
+            displayItem: "modern_industrialization:quartz_crushed_dust"
         },
         oreTier: 1
     },
+
     //#endregion
 
     //#region t2
+    {
+        sampleLang: { "en_us": `Diamond ${en_usOreSample}`, "ru_ru": `Алмазный ${ru_ruOreSample}` },
+        bedrockSampleLang: { "en_us": `${en_usBedrock} Diamond ${en_usOreSample}` },
+        itemName: "diamond", directory: "minecraft", bedrockTexture: "spectrum:block/pure_diamond_block",
+        oreData: {
+            deepslate: "minecraft:deepslate_diamond_ore",
+            normal: "minecraft:diamond_ore",
+            raw: "modern_industrialization:diamond_crushed_dust",
+            displayItem: "minecraft:diamond"
+        },
+        oreTier: 2
+    },
+
+    {
+        sampleLang: { "en_us": `Emerald ${en_usOreSample}`, "ru_ru": `Изумрудный ${ru_ruOreSample}` },
+        bedrockSampleLang: { "en_us": `${en_usBedrock} Emerald ${en_usOreSample}` },
+        itemName: "emerald", directory: "minecraft", bedrockTexture: "spectrum:block/pure_emerald_block",
+        oreData: {
+            deepslate: "minecraft:deepslate_emerald_ore",
+            normal: "minecraft:emerald_ore",
+            raw: "modern_industrialization:emerald_crushed_dust",
+            displayItem: "minecraft:emerald"
+        },
+        oreTier: 2
+    },
+
+    {
+        sampleLang: { "en_us": `Nickel ${en_usOreSample}`, "ru_ru": `Никельевый ${ru_ruOreSample}` },
+        bedrockSampleLang: { "en_us": `${en_usBedrock} Nickel ${en_usOreSample}` },
+        itemName: "nickel", directory: "modern_industrialization",
+        oreData: {
+            deepslate: "modern_industrialization:deepslate_nickel_ore",
+            normal: "modern_industrialization:nickel_ore",
+            raw: "modern_industrialization:raw_nickel",
+            displayItem: "modern_industrialization:raw_nickel"
+        },
+        oreTier: 2
+    },
+
     {
         sampleLang: { "en_us": `Nether Quartz ${en_usOreSample}`, "ru_ru": `Кварцевый ${ru_ruOreSample}` },
         bedrockSampleLang: { "en_us": `${en_usBedrock} Nether Quartz ${en_usOreSample}` },
         itemName: "nether_quartz", directory: "minecraft", uniqueBase: "minecraft:block/netherrack", bedrockTexture: "spectrum:block/pure_quartz_block",
         oreData: {
             normal: "minecraft:nether_quartz_ore",
-            raw: "modern_industrialization:quartz_crushed_dust"
+            raw: "modern_industrialization:quartz_crushed_dust",
+            displayItem: "minecraft:quartz"
         },
         oreTier: 2
     },
@@ -181,10 +233,15 @@ const samplesData = [
         itemName: "nether_gold", directory: "minecraft", uniqueBase: "minecraft:block/netherrack", bedrockTexture: "minecraft:block/raw_gold_block",
         oreData: {
             normal: "minecraft:nether_gold_ore",
-            raw: "milf:crushed_gold"
+            raw: "milf:crushed_gold",
+            displayItem: "minecraft:gold_nugget"
         },
         oreTier: 2
     },
+
+    //#endregion
+
+    //#region t3
 
     {
         sampleLang: { "en_us": `Antimony ${en_usOreSample}`, "ru_ru": `${ru_ruOreSample} Сурьмы` },
@@ -193,9 +250,10 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_antimony_ore",
             normal: "modern_industrialization:antimony_ore",
-            raw: "modern_industrialization:raw_antimony"
+            raw: "modern_industrialization:raw_antimony",
+            displayItem: "modern_industrialization:raw_antimony"
         },
-        oreTier: 2
+        oreTier: 3
     },
 
     {
@@ -205,9 +263,10 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_bauxite_ore",
             normal: "modern_industrialization:bauxite_ore",
-            raw: "modern_industrialization:bauxite_crushed_dust"
+            raw: "modern_industrialization:bauxite_crushed_dust",
+            displayItem: "modern_industrialization:bauxite_dust"
         },
-        oreTier: 2
+        oreTier: 3
     },
 
     {
@@ -217,13 +276,12 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_uranium_ore",
             normal: "modern_industrialization:uranium_ore",
-            raw: "modern_industrialization:raw_uranium"
+            raw: "modern_industrialization:raw_uranium",
+            displayItem: "modern_industrialization:raw_uranium"
         },
-        oreTier: 2
+        oreTier: 3
     },
-    //#endregion
 
-    //#region t3
     { 
         sampleLang: { "en_us": `Ancient Debris Sample`, "ru_ru": `${ru_ruOreSample} Древних Осколков` }, 
         bedrockSampleLang: { "en_us": `${en_usBedrock} Ancient Debris Sample`},
@@ -231,7 +289,21 @@ const samplesData = [
         uniqueOre: "minecraft:block/ancient_debris_top", bedrockTexture: "minecraft:block/ancient_debris_top",
         oreData: {
             normal: "minecraft:ancient_debris",
-            raw: "minecraft:netherite_scrap"
+            raw: "minecraft:netherite_scrap",
+            displayItem: "minecraft:netherite_scrap"
+        },
+        oreTier: 3
+    },
+
+    {
+        sampleLang: { "en_us": `Monazite ${en_usOreSample}`, "ru_ru": `Монацитовый ${ru_ruOreSample}` },
+        bedrockSampleLang: { "en_us": `${en_usBedrock} Monazite ${en_usOreSample}` },
+        itemName: "monazite", directory: "modern_industrialization", bedrockTexture: "modern_industrialization:block/monazite_block",
+        oreData: {
+            deepslate: "modern_industrialization:deepslate_monazite_ore",
+            normal: "modern_industrialization:monazite_ore",
+            raw: "modern_industrialization:monazite_crushed_dust",
+            displayItem: "modern_industrialization:monazite_dust"
         },
         oreTier: 3
     },
@@ -242,22 +314,13 @@ const samplesData = [
         itemName: "iridium", directory: "modern_industrialization",
         oreData: {
             normal: "modern_industrialization:iridium_ore",
-            raw: "modern_industrialization:raw_iridium"
+            raw: "modern_industrialization:raw_iridium",
+            displayItem: "modern_industrialization:raw_iridium"
         },
-        oreTier: 3
+        oreTier: 4
     },
 
-    { 
-        sampleLang: { "en_us": `Monazite ${en_usOreSample}`, "ru_ru": `Монацитовый ${ru_ruOreSample}` }, 
-        bedrockSampleLang: { "en_us": `${en_usBedrock} Monazite ${en_usOreSample}`},
-        itemName: "monazite", directory: "modern_industrialization", bedrockTexture: "modern_industrialization:block/monazite_block",
-        oreData: {
-            deepslate: "modern_industrialization:deepslate_monazite_ore",
-            normal: "modern_industrialization:monazite_ore",
-            raw: "modern_industrialization:monazite_crushed_dust"
-        },
-        oreTier: 3
-    },
+
 
     { 
         sampleLang: { "en_us": `Platinum ${en_usOreSample}`, "ru_ru": `Платиновый ${ru_ruOreSample}` }, 
@@ -265,9 +328,10 @@ const samplesData = [
         itemName: "platinum", directory: "modern_industrialization",
         oreData: {
             normal: "modern_industrialization:platinum_ore",
-            raw: "modern_industrialization:raw_platinum"
+            raw: "modern_industrialization:raw_platinum",
+            displayItem: "modern_industrialization:raw_platinum"
         },
-        oreTier: 3
+        oreTier: 4
     },
 
 
@@ -277,9 +341,10 @@ const samplesData = [
         itemName: "titanium", directory: "modern_industrialization",
         oreData: {
             normal: "modern_industrialization:titanium_ore",
-            raw: "modern_industrialization:raw_titanium"
+            raw: "modern_industrialization:raw_titanium",
+            displayItem: "modern_industrialization:raw_titanium"
         },
-        oreTier: 3
+        oreTier: 4
     },
 
     { 
@@ -289,9 +354,10 @@ const samplesData = [
         oreData: {
             deepslate: "modern_industrialization:deepslate_tungsten_ore",
             normal: "modern_industrialization:tungsten_ore",
-            raw: "modern_industrialization:raw_tungsten"
+            raw: "modern_industrialization:raw_tungsten",
+            displayItem: "modern_industrialization:raw_tungsten"
         },
-        oreTier: 3
+        oreTier: 4
     }
     //#endregion
 
@@ -320,9 +386,13 @@ samplesData.forEach(ore => {
         soundType: "amethyst",
         hardness: -1,
         tagBlock: [
-            'spectrum:unbreakable', "minecraft:wither_immune", "minecraft:dragon_immune",
+            'spectrum:unbreakable', 
+
+            "minecraft:wither_immune", "minecraft:dragon_immune",
             "minecraft:geode_invalid_blocks", "minecraft:blocks_wind_charge_explosions", "minecraft:features_cannot_replace",
+
             "milf:bedrock_samples",
+            `milf:bedrock_samples/${ore.itemName}`,
 
             "oritech:resource_nodes"
         ],

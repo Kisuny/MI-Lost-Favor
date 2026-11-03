@@ -95,6 +95,44 @@ function embersStampingRecipe(event, args) {
     event.custom(recipe)
 }
 
+function embersBoringRecipe(event, args) {
+    let recipe = {
+        type: "embers:boring",
+        output: Object.assign({}, args.outputItems[0][0]),
+        chance: args.outputItems[0][2] || 1,
+        max_height: args.max_height || 2147483647,
+        required_block: args.required_block,
+        weight: args.weight || 1,
+        dimensions: args.dimensions || ["minecraft:overworld"]
+
+    }
+
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
+function embersExcavationRecipe(event, args) {
+    let recipe = {
+        type: "embers:excavation",
+        output: Object.assign({}, args.outputItems[0][0]),
+        chance: args.outputItems[0][2] || 1,
+        max_height: args.max_height || 2147483647,
+        required_block: args.required_block,
+        weight: args.weight || 1,
+        dimensions: args.dimensions || ["minecraft:overworld"]
+
+    }
+
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
 
 ServerEvents.recipes(event => {
 
@@ -348,7 +386,19 @@ ServerEvents.recipes(event => {
         "minecraft:raw_iron": "milf:crushed_iron",
         "modern_industrialization:raw_tin": "milf:crushed_tin",
         "modern_industrialization:raw_lead": "milf:crushed_lead",
+    }).forEach(([rawOre, crushedOre]) => {
+        embersStampingRecipe(event, {
+            inputItems: [
+                [{ item: "embers:flat_stamp" }],
+                [{ item: rawOre }],
+            ],
+            outputItems: [
+                [{ id: crushedOre }, 2],
+            ]
+        })
+    })
 
+    Object.entries({
         "milf:crushed_copper": "modern_industrialization:copper_dust",
         "milf:crushed_gold": "modern_industrialization:gold_dust",
         "milf:crushed_iron": "modern_industrialization:iron_dust",
@@ -361,7 +411,7 @@ ServerEvents.recipes(event => {
                 [{ item: crushedOre }],
             ],
             outputItems: [
-                [{ id: dust }, 2],
+                [{ id: dust }, 1],
             ]
         })
     })
@@ -409,6 +459,85 @@ ServerEvents.recipes(event => {
         stirs: 4,
         removeRecipe:true
     })
+
+    //#region boring
+
+    embersBoringRecipe(event, {
+        required_block: {
+            "amount": 3,
+            "block_tag": "embers:world_bottom"
+        },
+        outputItems: [
+            [{ id: "milf:everburning_roots_heart" }],
+        ],
+        max_height: -57,
+        weight: 1,
+    })
+
+    embersBoringRecipe(event, {
+        required_block: {
+            "amount": 3,
+            "block_tag": "embers:world_bottom"
+        },
+        outputItems: [
+            [{ id: "milf:everburning_roots_veins" }],
+        ],
+        max_height: -57,
+        weight: 10,
+    })
+
+    embersBoringRecipe(event, {
+        required_block: {
+            "amount": 3,
+            "block_tag": "embers:world_bottom"
+        },
+        outputItems: [
+            [{ id: "milf:everburning_roots" }],
+        ],
+        max_height: -57,
+        weight: 33,
+    })
+
+    embersBoringRecipe(event, {
+        required_block: {
+            "amount": 3,
+            "block_tag": "embers:world_bottom"
+        },
+        outputItems: [
+            [{ id: "embers:ember_grit" }],
+        ],
+        max_height: -57,
+        weight: 30,
+        removeRecipe:true
+    })
+
+    embersBoringRecipe(event, {
+        required_block: {
+            "amount": 3,
+            "block_tag": "embers:world_bottom"
+        },
+        outputItems: [
+            [{ id: "embers:ember_shard" }],
+        ],
+        max_height: -57,
+        weight: 45,
+    })
+
+    embersBoringRecipe(event, {
+        required_block: {
+            "amount": 3,
+            "block_tag": "embers:world_bottom"
+        },
+        outputItems: [
+            [{ id: "embers:ember_crystal" }],
+        ],
+        max_height: -57,
+        weight: 13,
+    })
+
+    
+
+    //#endregion
 
     //#region bloomery
 
@@ -2833,6 +2962,22 @@ ServerEvents.recipes(event => {
 
         },
         outputItems: [[{ id: "embers:ember_cartridge" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PB ",
+            "CCB",
+            "PB ",
+        ],
+        key: {
+            "C": { "item": "modern_industrialization:conveyor" },
+            "B": { "item": "immersiveengineering:storage_steel" },
+            "P": { "item": "modern_industrialization:steel_large_plate" },
+
+        },
+        outputItems: [[{ id: "embers:excavation_buckets" }, 1]],
         removeRecipe: true
     })
 

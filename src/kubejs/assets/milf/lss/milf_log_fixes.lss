@@ -1,0 +1,11 @@
+.eq_list_row, .eq_shop_row {
+  background: sdf($(accent@00), $(radius), 1, $(accent@00));
+}
+
+.eq_list_row:hovered, .eq_list_row.eq_key_focus, .eq_shop_row:hovered {
+  background: sdf($(accent@40), $(radius), 1, $(accent@c0));
+}
+
+.eq_list_row.eq_selected {
+  background: sdf($(accent@58), $(radius), 1, $(accent));
+}

@@ -58,6 +58,7 @@ global.disabledItems = [
     new DisabledItemBuilder("oritech:nickel_dust"),
     new DisabledItemBuilder("oritech:nickel_ore"),
     new DisabledItemBuilder("oritech:deepslate_nickel_ore"),
+    new DisabledItemBuilder("oritech:nickel_block"),
 
     new DisabledItemBuilder("oritech:electrum_ingot"),
     new DisabledItemBuilder("oritech:electrum_dust"),
@@ -316,6 +317,8 @@ global.disabledItems = [
     new DisabledItemBuilder(/embers:mithril_(\w+)\b/),
 
     new DisabledItemBuilder("embers:entropic_enumerator"),
+
+    new DisabledItemBuilder("embers:nonbeliever_amulet"),
 
     new DisabledItemBuilder("embers:silver_crystal_seed"),
     new DisabledItemBuilder("embers:nickel_crystal_seed"),

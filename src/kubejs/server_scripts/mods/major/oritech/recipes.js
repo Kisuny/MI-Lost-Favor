@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
             [{ "item": "milf:tempered_glass" }, 12],
             [{ "item": "modern_industrialization:steel_large_plate" }, 6],
             [{ "item": "modern_industrialization:tumbaga_large_plate" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 12]
+            [{ "item": "embers:fluid_pipe" }, 12]
         ],
         outputItems: [[{ "item": "oritech:refinery_block" }, 1]],
         removeRecipe: "minecraft:crafting_shaped",
@@ -490,7 +490,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tumbaga_curved_plate" }, 6],
             [{ "item": "modern_industrialization:steel_rod" }, 4],
             [{ "item": "modern_industrialization:steel_large_plate" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 6]
+            [{ "item": "embers:fluid_pipe" }, 6]
         ],
         outputItems: [[{ "item": "oritech:steam_engine_block" }, 1]],
         removeRecipe: "minecraft:crafting_shaped",
@@ -519,7 +519,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tumbaga_rod" }, 4],
             [{ "item": "modern_industrialization:steel_large_plate" }, 6],
             [{ "item": "minecraft:magma_block" }, 6],
-            [{ "item": "moderndynamics:fluid_pipe" }, 6]
+            [{ "item": "embers:fluid_pipe" }, 6]
         ],
         outputItems: [[{ "item": "oritech:lava_generator_block" }, 1]],
         removeRecipe: "minecraft:crafting_shaped",
@@ -564,7 +564,7 @@ ServerEvents.recipes(event => {
             [{ "item": "milf:tempered_glass" }, 8],
             [{ "item": "modern_industrialization:rubber_sheet" }, 16],
             [{ "item": "oritech:metal_beam_block" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 6],
+            [{ "item": "modern_industrialization:fluid_pipe" }, 6],
             [{ "item": "oritech:enderic_compound" }, 4]
         ],
         outputItems: [[{ "item": "oritech:refinery_module_block" }, 1]],
@@ -583,7 +583,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:invar_rotary_blade" }, 4],
             [{ "item": "modern_industrialization:rubber_sheet" }, 16],
             [{ "item": "oritech:metal_beam_block" }, 2],
-            [{ "item": "moderndynamics:item_pipe" }, 6],
+            [{ "item": "modern_industrialization:item_pipe" }, 6],
         ],
         outputItems: [[{ "item": "oritech:pulverizer_block" }, 1]],
         removeRecipe: "minecraft:crafting_shaped",

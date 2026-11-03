@@ -495,7 +495,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             B: { item: "modern_industrialization:analog_circuit" },
-            Q: { item: "moderndynamics:item_pipe" },
+            Q: { item: "embers:item_pipe" },
             W: { item: "milf:steel_machine_bit" }
 
         },
@@ -530,21 +530,21 @@ ServerEvents.recipes(event => {
         })
     })
 
-    milfShaped(event, {
-        pattern: [
-            "WQW",
-            "QWQ",
-            "WQW"
-        ],
-        key: {
-            Q: { item: "modern_industrialization:fire_clay_brick" },
-            W: { item: "architects_palette:cerebral_plate" }
+    // milfShaped(event, {
+    //     pattern: [
+    //         "WQW",
+    //         "QWQ",
+    //         "WQW"
+    //     ],
+    //     key: {
+    //         Q: { item: "modern_industrialization:fire_clay_brick" },
+    //         W: { item: "architects_palette:cerebral_plate" }
 
-        },
-        outputItems: [[{ id: "modern_industrialization:fire_clay_bricks" }]],
-        removeRecipe: true,
-        compatOff: true
-    })
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:fire_clay_bricks" }]],
+    //     removeRecipe: true,
+    //     compatOff: true
+    // })
 
     milfShaped(event, {
         pattern: [
@@ -1061,6 +1061,185 @@ ServerEvents.recipes(event => {
 
     //#endregion
 
+    //#region steel machines
+
+    Object.entries({
+        "modern_industrialization:bronze_mi_furnace": "modern_industrialization:steel_mi_furnace",
+        "modern_industrialization:bronze_boiler": "modern_industrialization:steel_boiler",
+        "extended_industrialization:bronze_solar_boiler": "extended_industrialization:steel_solar_boiler",
+        "modern_industrialization:bronze_macerator": "modern_industrialization:steel_macerator",
+        "modern_industrialization:bronze_cutting_machine": "modern_industrialization:steel_cutting_machine",
+        "modern_industrialization:bronze_water_pump": "modern_industrialization:steel_water_pump",
+        "extended_industrialization:bronze_bending_machine": "extended_industrialization:steel_bending_machine",
+        "modern_industrialization:bronze_mixer": "modern_industrialization:steel_mixer",
+        "extended_industrialization:bronze_waste_collector": "extended_industrialization:steel_waste_collector",
+        "modern_industrialization:bronze_compressor": "modern_industrialization:steel_compressor",
+        "extended_industrialization:bronze_composter": "extended_industrialization:steel_composter",
+
+    }).forEach(([bronzeId, steelId]) => {
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "gMg",
+                "BPB"
+            ],
+            key: {
+                M: { item: bronzeId },
+                B: { item: "milf:steel_machine_bit" },
+                g: { item: "milf:steel_infused_glass" },
+                P: { item: "immersiveengineering:fluid_pipe" },
+            },
+            outputItems: [[{ id: steelId }, 1]],
+            removeRecipe: true
+        })
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "g g",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_upgrade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BrB",
+            "gMg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "milf:small_steel_fluid_container" },
+            r: { item: "modern_industrialization:steel_rotor" },
+            M: { item: "extended_industrialization:bronze_waste_collector" },
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_honey_extractor" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BrB",
+            "gMg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "milf:small_steel_fluid_container" },
+            r: { item: "immersiveengineering:component_steel" },
+            M: { item: "modern_industrialization:bronze_cutting_machine" },
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_wiremill" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BrB",
+            "gMg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "milf:small_steel_fluid_container" },
+            r: { item: "immersiveengineering:component_steel" },
+            M: { item: "minecraft:piston" },
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_packer" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BrB",
+            "gMg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "milf:small_steel_fluid_container" },
+            r: { item: "immersiveengineering:component_steel" },
+            M: { item: "minecraft:sticky_piston" },
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_unpacker" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BgB",
+            "gMg",
+            "BgB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            M: { item: "modern_industrialization:steel_tank" },
+        },
+        outputItems: [[{ id: "modern_industrialization:large_tank" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BgB",
+            "ggg",
+            "BgB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "immersiveengineering:fluid_pipe" },
+        },
+        outputItems: [[{ id: "modern_industrialization:large_tank_hatch" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BgB",
+            "gMg",
+            "BgB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "embers:item_pipe" },
+            M: { item: "modern_industrialization:configurable_chest" },
+        },
+        outputItems: [[{ id: "extended_industrialization:large_configurable_chest" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BCB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            P: { item: "milf:small_steel_fluid_container" },
+            I: { item: "modern_industrialization:invar_large_plate" },
+            M: { item: "minecraft:blast_furnace" },
+            C: { item: "immersiveengineering:component_steel" },
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_alloy_smelter" }, 1]],
+        removeRecipe: true
+    })
+
+    //#endregion
+
     //#endregion
 
     //#region yTechShaped
@@ -1166,34 +1345,6 @@ ServerEvents.recipes(event => {
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
-    // event.replaceOutput(
-    //     { output: 'modern_industrialization:steel_block' },
-    //     'modern_industrialization:steel_block',
-    //     'immersiveengineering:storage_steel'
-    // )
-
-    // event.replaceInput(
-    //     { input: 'modern_industrialization:steel_block' },
-    //     'modern_industrialization:steel_block',
-    //     'immersiveengineering:storage_steel'
-    // )
-
-    // let miEthanol = Fluid.of("modern_industrialization:ethanol")
-    // let ieEthanol = Fluid.of("immersiveengineering:ethanol")
-
-    // event.replaceInput(
-    //     { input: miEthanol },
-    //     miEthanol,
-    //     "immersiveengineering:ethanol"
-    // )
-
-    // event.replaceOutput(
-    //     { output: miEthanol },
-    //     miEthanol,
-    //     "immersiveengineering:ethanol"
-    // )
-    
-
     const craftWithFluidPipes = [
         'extended_industrialization:electric_canning_machine',
         'extended_industrialization:electric_composter',
@@ -1228,7 +1379,7 @@ ServerEvents.recipes(event => {
         event.replaceInput(
             { output: item },
             '#modern_industrialization:fluid_pipes',
-            'moderndynamics:fluid_pipe'
+            'embers:fluid_pipe'
         )
     })
 
@@ -1249,7 +1400,7 @@ ServerEvents.recipes(event => {
         event.replaceInput(
             { output: item },
             '#modern_industrialization:item_pipes',
-            'moderndynamics:item_pipe'
+            'embers:item_pipe'
         )
     })
 

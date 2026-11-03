@@ -41,4 +41,29 @@ ServerEvents.recipes(event => {
         removeRecipeType: "modern_industrialization:macerator",
         ieCompat: true
     })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [[{ item: "milf:everburning_roots_heart" }, 1]],
+        outputItems: [
+            [{ item: "embers:ember_crystal" }, 2],
+            [{ item: "embers:ember_crystal" }, 1, 0.49],
+            [{ item: "embers:ember_crystal_cluster" }, 1, 0.37],
+            
+        ],
+        removeRecipeType: "modern_industrialization:macerator",
+        ieCompat: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [[{ item: "milf:everburning_roots_veins" }, 1]],
+        outputItems: [
+            [{ item: "embers:ember_shard" }, 1],
+            [{ item: "embers:ember_shard" }, 1, 0.77],
+            [{ item: "embers:ember_shard" }, 1, 0.33],
+        ],
+        removeRecipeType: "modern_industrialization:macerator",
+        ieCompat: true
+    })
 })

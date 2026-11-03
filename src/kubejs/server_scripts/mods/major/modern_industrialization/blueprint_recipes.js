@@ -62,6 +62,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:fire_clay_bricks" }, 2]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff:true
     })
 
     //endregion
@@ -219,7 +220,7 @@ ServerEvents.recipes(event => {
             [{ "item": "milf:basic_motor" }, 1],
             [{ "item": "modern_industrialization:copper_rotor" }, 2],
             [{ "item": "modern_industrialization:copper_curved_plate" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 2],
+            [{ "item": "embers:fluid_pipe" }, 2],
         ],
         outputItems: [[{ "item": "milf:basic_pump" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,
@@ -265,7 +266,7 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 2],
-            [{ "item": "moderndynamics:fluid_pipe" }, 3],
+            [{ "item": "embers:fluid_pipe" }, 3],
             [{ "item": "modern_industrialization:motor" }, 1],
             [{ "item": "modern_industrialization:tin_rotor" }, 2],
         ],

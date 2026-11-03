@@ -3,6 +3,7 @@ ServerEvents.tags('item', event => {
     event.removeAllTagsFrom([
         'modern_industrialization:netherite_hammer', 
         'modern_industrialization:diamond_hammer', 
+        "modern_industrialization:steel_block"
     ])
 
     const modIngredient = Ingredient.of(`@modern_industrialization | @extended_industrialization`)

@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
         ],
 
         outputItems: [
-            [{ id: "milf:bronze_glass" }, 1],
+            [{ id: "milf:bronze_glass" }, 2],
         ],
         requires_bellows: true,
         time: 150
@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
         ],
 
         outputItems: [
-            [{ id: "milf:steel_infused_glass" }, 1],
+            [{ id: "milf:steel_infused_glass" }, 2],
         ],
         requires_bellows: true,
         time: 150
@@ -1106,6 +1106,15 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [
             [{ id: "ytech:pebble" }, 5]
+        ]
+    })
+
+    milfChiselHitRecipe(event, {
+        inputItems: [
+            [{ item: "milf:clay_mold_base" }]
+        ],
+        outputItems: [
+            [{ id: "minecraft:brick" }, 3]
         ]
     })
 

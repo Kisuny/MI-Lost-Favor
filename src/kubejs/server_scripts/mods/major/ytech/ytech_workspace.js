@@ -2,7 +2,9 @@
 
 ServerEvents.recipes(event => {
 
-    let changedItemIds = new $HashSet()
+    let changedItemIds = new $HashSet([
+        "ytech:tool_rack"
+    ])
 
     /**
      * @typedef {Object} WorkspaceRecipeArgs
@@ -355,203 +357,142 @@ ServerEvents.recipes(event => {
 
     //#region steel machines
 
-    function steelMachineUpgrade(bronzeMachineId, steelMachineId) {
-        new WorkspaceRecipeBuilder(steelMachineId)
-            .middle(plane => plane.fill("M").front("G").center("B").back("P"))
-            .bottom(plane => plane.plus("P").corners("M"))
-            .setKey({
-                B: { item: bronzeMachineId }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_UPGRADE,
-                tool: wrench,
-                removeRecipe: true,
-                miCompatMachine: "modern_industrialization:packer"
-            })
-            .build()
-    }
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:steel_honey_extractor")
+    //         .top(plane => plane.fill("M").sides("g").corners(" "))
+    //         .middle(plane => plane.fill("M").sides("G").front("R").center(" "))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             R: { item: "modern_industrialization:tin_rotor" },
+    //             g: { item: "modern_industrialization:bronze_gear" },
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             G: { item: "milf:steel_infused_glass" },
+    //             F: { item: "milf:small_steel_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_mi_furnace", 
-        "modern_industrialization:steel_mi_furnace"
-    )
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_boiler", 
-        "modern_industrialization:steel_boiler"
-    )
-    steelMachineUpgrade(
-        "extended_industrialization:bronze_solar_boiler", 
-        "extended_industrialization:steel_solar_boiler"
-    )
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_macerator", 
-        "modern_industrialization:steel_macerator"
-    )
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_cutting_machine", 
-        "modern_industrialization:steel_cutting_machine"
-    )
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_water_pump", 
-        "modern_industrialization:steel_water_pump"
-    )
-    steelMachineUpgrade(
-        "extended_industrialization:bronze_bending_machine", 
-        "extended_industrialization:steel_bending_machine"
-    )
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_mixer", 
-        "modern_industrialization:steel_mixer"
-    )
-    steelMachineUpgrade(
-        "extended_industrialization:bronze_waste_collector", 
-        "extended_industrialization:steel_waste_collector"
-    )
-    steelMachineUpgrade(
-        "modern_industrialization:bronze_compressor", 
-        "modern_industrialization:steel_compressor"
-    )
-    steelMachineUpgrade(
-        "extended_industrialization:bronze_composter", 
-        "extended_industrialization:steel_composter"
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:steel_wiremill")
+    //         .top(plane => plane.fill("M").corners("R").center(" "))
+    //         .middle(plane => plane.fill("M").corners("g").center(" ").front("G").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             R: { item: "modern_industrialization:bronze_rotor" },
+    //             g: { item: "modern_industrialization:bronze_gear" },
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             G: { item: "milf:steel_infused_glass" },
+    //             F: { item: "milf:small_steel_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:steel_honey_extractor")
-            .top(plane => plane.fill("M").sides("g").corners(" "))
-            .middle(plane => plane.fill("M").sides("G").front("R").center(" "))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                R: { item: "modern_industrialization:tin_rotor" },
-                g: { item: "modern_industrialization:bronze_gear" },
-                P: { item: "immersiveengineering:fluid_pipe" },
-                G: { item: "milf:steel_infused_glass" },
-                F: { item: "milf:small_steel_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:steel_alloy_smelter")
+    //         .top(plane => plane.fill("M").corners("w").center(" "))
+    //         .middle(plane => plane.fill("M").corners("w").center("A").front("G").back("I"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             w: { item: "modern_industrialization:copper_wire" },
+    //             A: { item: "ytech:primitive_alloy_smelter" },
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             G: { item: "milf:steel_infused_glass" },
+    //             F: { item: "milf:small_steel_fluid_container" },
+    //             I: { item: "moderndynamics:item_pipe" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:steel_wiremill")
-            .top(plane => plane.fill("M").corners("R").center(" "))
-            .middle(plane => plane.fill("M").corners("g").center(" ").front("G").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                R: { item: "modern_industrialization:bronze_rotor" },
-                g: { item: "modern_industrialization:bronze_gear" },
-                P: { item: "immersiveengineering:fluid_pipe" },
-                G: { item: "milf:steel_infused_glass" },
-                F: { item: "milf:small_steel_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:steel_packer")
+    //         .top(plane => plane.fill("M").corners("g").center("M"))
+    //         .middle(plane => plane.fill("M").corners("g").sides("p").center(" ").front("G").back("M"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             g: { item: "modern_industrialization:bronze_gear" },
+    //             p: { item: "minecraft:piston" },
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             G: { item: "milf:steel_infused_glass" },
+    //             F: { item: "milf:small_steel_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:steel_alloy_smelter")
-            .top(plane => plane.fill("M").corners("w").center(" "))
-            .middle(plane => plane.fill("M").corners("w").center("A").front("G").back("I"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                w: { item: "modern_industrialization:copper_wire" },
-                A: { item: "ytech:primitive_alloy_smelter" },
-                P: { item: "immersiveengineering:fluid_pipe" },
-                G: { item: "milf:steel_infused_glass" },
-                F: { item: "milf:small_steel_fluid_container" },
-                I: { item: "moderndynamics:item_pipe" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:steel_unpacker")
+    //         .top(plane => plane.fill("M").corners("g").center("M"))
+    //         .middle(plane => plane.fill("M").corners("g").sides("p").center(" ").front("G").back("M"))
+    //         .bottom(plane => plane.fill("M").plus("P").center("F"))
+    //         .setKey({
+    //             g: { item: "modern_industrialization:bronze_gear" },
+    //             p: { item: "minecraft:sticky_piston" },
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             G: { item: "milf:steel_infused_glass" },
+    //             F: { item: "milf:small_steel_fluid_container" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:steel_packer")
-            .top(plane => plane.fill("M").corners("g").center("M"))
-            .middle(plane => plane.fill("M").corners("g").sides("p").center(" ").front("G").back("M"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                g: { item: "modern_industrialization:bronze_gear" },
-                p: { item: "minecraft:piston" },
-                P: { item: "immersiveengineering:fluid_pipe" },
-                G: { item: "milf:steel_infused_glass" },
-                F: { item: "milf:small_steel_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:large_tank")
+    //         .top(plane => plane.fill("M").plus("P").center("M"))
+    //         .middle(plane => plane.fill("M").sides("T").center(" ").corners(" "))
+    //         .bottom(plane => plane.fill("M").plus("P").center("M"))
+    //         .setKey({
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             T: { item: "modern_industrialization:steel_tank" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:steel_unpacker")
-            .top(plane => plane.fill("M").corners("g").center("M"))
-            .middle(plane => plane.fill("M").corners("g").sides("p").center(" ").front("G").back("M"))
-            .bottom(plane => plane.fill("M").plus("P").center("F"))
-            .setKey({
-                g: { item: "modern_industrialization:bronze_gear" },
-                p: { item: "minecraft:sticky_piston" },
-                P: { item: "immersiveengineering:fluid_pipe" },
-                G: { item: "milf:steel_infused_glass" },
-                F: { item: "milf:small_steel_fluid_container" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:large_tank_hatch")
+    //         .top(plane => plane.fill("M").plus("P").center("M"))
+    //         .middle(plane => plane.fill("M").sides("P").center("T").corners(" "))
+    //         .bottom(plane => plane.fill("M").plus("P").center("M"))
+    //         .setKey({
+    //             P: { item: "immersiveengineering:fluid_pipe" },
+    //             T: { item: "modern_industrialization:steel_tank" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:large_tank")
-            .top(plane => plane.fill("M").plus("P").center("M"))
-            .middle(plane => plane.fill("M").sides("T").center(" ").corners(" "))
-            .bottom(plane => plane.fill("M").plus("P").center("M"))
-            .setKey({
-                P: { item: "immersiveengineering:fluid_pipe" },
-                T: { item: "modern_industrialization:steel_tank" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
-
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:large_tank_hatch")
-            .top(plane => plane.fill("M").plus("P").center("M"))
-            .middle(plane => plane.fill("M").sides("P").center("T").corners(" "))
-            .bottom(plane => plane.fill("M").plus("P").center("M"))
-            .setKey({
-                P: { item: "immersiveengineering:fluid_pipe" },
-                T: { item: "modern_industrialization:steel_tank" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
-
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:large_configurable_chest")
-            .top(plane => plane.plus("M"))
-            .middle(plane => plane.center("C").sides("H"))
-            .bottom(plane => plane.plus("M"))
-            .setKey({
-                H: { item: "moderndynamics:item_pipe" },
-                C: { item: "modern_industrialization:configurable_chest" }
-            })
-            .setArgs({
-                materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:large_configurable_chest")
+    //         .top(plane => plane.plus("M"))
+    //         .middle(plane => plane.center("C").sides("H"))
+    //         .bottom(plane => plane.plus("M"))
+    //         .setKey({
+    //             H: { item: "moderndynamics:item_pipe" },
+    //             C: { item: "modern_industrialization:configurable_chest" }
+    //         })
+    //         .setArgs({
+    //             materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+    //             tool: wrench,
+    //         })
+    // )
 
     //#endregion
 
@@ -681,6 +622,63 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region YTech
+
+    builders.push(
+        new WorkspaceRecipeBuilder("minecraft:composter")
+            .top(plane => plane.sides("S"))
+            .middle(plane => plane.sides("S"))
+            .bottom(plane => plane.plus("P"))
+            .setKey({
+                S: { item: "minecraft:stick" },
+                P: { tag: "minecraft:planks" },
+            })
+    )
+
+    builders.push(
+        new WorkspaceRecipeBuilder("ytech:strainer")
+            .top(plane => plane.sides("S"))
+            .middle(plane => plane.sides("L").center("B"))
+            .bottom(plane => plane.plus("L"))
+            .setKey({
+                S: { item: "minecraft:stick" },
+                B: { item: "ytech:wooden_box" },
+                L: { tag: "minecraft:logs" },
+            })
+    )
+
+    builders.push(
+        new WorkspaceRecipeBuilder("minecraft:stonecutter")
+            .top(plane => plane)
+            .middle(plane => plane.center("B"))
+            .bottom(plane => plane.plus("S").sides("L"))
+            .setKey({
+                S: { item: "minecraft:smooth_stone" },
+                B: { item: "ytech:iron_saw_blade" },
+                L: { tag: "minecraft:logs" },
+            })
+    )
+
+    builders.push(
+        new WorkspaceRecipeBuilder("minecraft:grindstone")
+            .top(plane => plane.set([' S ', ' S ', ' S ']))
+            .middle(plane => plane.left("s").right("s").center("S").back("S").front("S"))
+            .bottom(plane => plane.left("s").right("s"))
+            .setKey({
+                s: { item: "minecraft:stick" },
+                S: { item: "minecraft:stone" },
+            })
+    )
+
+    builders.push(
+        new WorkspaceRecipeBuilder("ytech:millstone")
+            .top(plane => plane.center("L"))
+            .middle(plane => plane.plus("S").center("L"))
+            .bottom(plane => plane.plus("S").center("L"))
+            .setKey({
+                S: { item: "minecraft:smooth_stone" },
+                L: { tag: "minecraft:logs" },
+            })
+    )
 
     builders.push(
         new WorkspaceRecipeBuilder("ytech:tree_stump")

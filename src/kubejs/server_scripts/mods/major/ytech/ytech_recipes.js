@@ -536,6 +536,20 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "B B",
+            " P ",
+            "B B"
+        ],
+        key: {
+            P: { item: "ytech:wooden_plate" },
+            B: { item: "ytech:wooden_bolt" },
+        },
+        outputItems: [[{ id: "ytech:tool_rack" }, 1]],
+        removeRecipe: true
+    })
+
     // milfShapeless(event, {
     //     inputItems: [
     //         [{ "tag": "minecraft:sand" }, 1],

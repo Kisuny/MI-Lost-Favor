@@ -237,15 +237,14 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "ISI",
-            "RRR",
+            "   ",
             "ISI"
         ],
         key: {
             S: { item: "modern_industrialization:steel_curved_plate" },
-            R: { item: "modern_industrialization:rubber_sheet" },
             I: { item: "modern_industrialization:iron_bolt" }
         },
-        outputItems: [[{ id: "immersiveengineering:fluid_pipe" }, 4]],
+        outputItems: [[{ id: "immersiveengineering:fluid_pipe" }, 8]],
         removeRecipe: true
     })
 

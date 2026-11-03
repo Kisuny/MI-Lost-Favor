@@ -1,0 +1,19 @@
+{
+  "title": "Bank 1",
+  "icon": "bankstorage:bank_1",
+  "x": 31.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_i/small_satchel",
+      "first_steps/bronze_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "bankstorage:bank_1",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

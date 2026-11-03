@@ -1,0 +1,26 @@
+{
+  "title": "Silver Pickaxe",
+  "description": [
+    "A <keyword>Silver Pickaxe</keyword> - bright and precise. Nothing magical, just a solid tool.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Серебряная кирка</keyword> - яркая и точная. Ничего волшебного, просто хороший инструмент."
+  ],
+  "icon": "embers:silver_pickaxe",
+  "x": 24,
+  "y": 31,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:silver_pickaxe",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

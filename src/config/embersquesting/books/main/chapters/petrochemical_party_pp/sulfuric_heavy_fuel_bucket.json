@@ -1,0 +1,23 @@
+{
+  "title": "Sulfuric Heavy Fuel Bucket",
+  "icon": "modern_industrialization:sulfuric_heavy_fuel_bucket",
+  "x": 16,
+  "y": 20.5,
+  "deps": {
+    "any": [
+      "petrochemical_party_pp/distillation_tower",
+      "petrochemical_party_pp/coker_unit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:sulfuric_heavy_fuel_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

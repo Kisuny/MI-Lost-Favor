@@ -1,0 +1,26 @@
+{
+  "title": "Potato",
+  "icon": "minecraft:potato",
+  "x": 18.5,
+  "y": 23,
+  "deps": {
+    "all": [
+      "simple_machinery/potato"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:potato",
+      "count": 64,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "immersiveengineering:cloche",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

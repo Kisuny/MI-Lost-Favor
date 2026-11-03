@@ -1,0 +1,30 @@
+{
+  "title": "Ingot Stamp",
+  "description": [
+    "The <keyword>Ingot Stamp</keyword> presses molten metal back into <keyword>ingots</keyword>.",
+    "",
+    "Like all stamps, it is shaped from <keyword>caminite blend</keyword> and fired in a <keyword>Bloomery</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Пресс-форма слитка</keyword> снова превращает расплавленный металл в <keyword>слитки</keyword>.",
+    "",
+    "Как и все пресс-формы, она лепится из <keyword>смеси каминита</keyword> и обжигается в <keyword>Bloomery</keyword>."
+  ],
+  "icon": "embers:ingot_stamp",
+  "x": 2.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "rock_and_steam/stamper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ingot_stamp",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

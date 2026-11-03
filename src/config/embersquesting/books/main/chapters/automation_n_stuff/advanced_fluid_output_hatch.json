@@ -1,0 +1,29 @@
+{
+  "title": "Advanced Fluid Output Hatch",
+  "icon": "modern_industrialization:advanced_fluid_output_hatch",
+  "x": 23,
+  "y": 11,
+  "deps": {
+    "all": [
+      "automation_n_stuff/export_bus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:advanced_fluid_output_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:advanced_item_output_hatch",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "yet_another_industrialization:advanced_mixed_output_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

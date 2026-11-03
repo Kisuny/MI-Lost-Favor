@@ -1,0 +1,32 @@
+{
+  "title": "Breaching the Edge of Demon Realm",
+  "description": [
+    "Perform the \"Breaching the Edge of the Demon Realm\" ritual to unlock your first starting dungeon!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Проведите ритуал \"Breaching the Edge of Demon Realm\" Чтобы открыть свой первый стартовый данж!"
+  ],
+  "icon": "neovitae:ritual_stone",
+  "x": 47.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/activation_crystal",
+      "magic_step_iii/ritual_diviner"
+    ]
+  },
+  "tasks": [
+    {
+      "dimension": "neovitae:dungeon",
+      "type": "location"
+    },
+    {
+      "item": "neovitae:ritual_stone",
+      "count": 36,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

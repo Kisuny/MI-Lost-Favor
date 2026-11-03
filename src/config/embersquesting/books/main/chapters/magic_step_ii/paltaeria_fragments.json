@@ -1,0 +1,27 @@
+{
+  "title": "Paltaeria Fragments",
+  "description": [
+    "Note that <property>paltaeria fragments</property> will float away once they're mined! Place something above to catch them, or come up with something more clever. ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Будьте осторожны, <property>платериевый самоцвет</property> почти сразу же улетает вверх при выпадение, когда копаете руду - ставьте над ней блок или придумайте что-то умнее! "
+  ],
+  "icon": "spectrum:paltaeria_fragments",
+  "x": 62,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_moonstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:paltaeria_fragments",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

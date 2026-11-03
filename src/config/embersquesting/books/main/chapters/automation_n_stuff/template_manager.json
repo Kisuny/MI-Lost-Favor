@@ -1,0 +1,26 @@
+{
+  "title": "Template Manager",
+  "description": [
+    "Save a copied build as a <property>template</property> and load it later. Put a Copy-Paste Gadget with copied data in the <property>left slot</property>, <keyword>paper</keyword> in the <property>right slot</property>, give the template a <property>name</property>, and save it. You can also share the <warning>template code</warning> with other players.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Сохраняет скопированную постройку как <property>шаблон</property> и позволяет загрузить ее позже. В <property>left slot</property> положи Copy-Paste Gadget с копией, в <property>right slot</property> - <keyword>бумагу</keyword>, задай <property>название</property> и сохрани. Код шаблона можно передать другим игрокам."
+  ],
+  "icon": "buildinggadgets2:template_manager",
+  "x": 12,
+  "y": 20,
+  "deps": {
+    "all": [
+      "automation_n_stuff/gadget_copy_paste"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "buildinggadgets2:template_manager",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

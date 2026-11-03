@@ -1,0 +1,20 @@
+{
+  "title": "Analog Circuit Board",
+  "icon": "modern_industrialization:analog_circuit_board",
+  "x": 29.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "bronze_age/copper_wire",
+      "bronze_age/blueprint",
+      "bronze_age/rubber_sheet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:analog_circuit_board",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

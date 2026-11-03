@@ -1,0 +1,19 @@
+{
+  "title": "Powerpack",
+  "icon": "immersiveengineering:powerpack",
+  "x": 13.5,
+  "y": 32,
+  "deps": {
+    "all": [
+      "simple_machinery/capacitor_lv",
+      "simple_machinery/capacitor_mv"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:powerpack",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

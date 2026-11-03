@@ -1,0 +1,28 @@
+{
+  "title": "Tier V Altar",
+  "description": [
+    ""
+  ],
+  "icon": "neovitae:crystal_cluster",
+  "x": 64.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/dominus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:crystal_cluster",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "tag": "neovitae:altar/runes_t4",
+      "count": 76,
+      "type": "item",
+      "title": "Any Tier 4 Runes"
+    }
+  ],
+  "shape": "gear"
+}

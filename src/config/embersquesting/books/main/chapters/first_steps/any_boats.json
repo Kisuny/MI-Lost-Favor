@@ -1,0 +1,20 @@
+{
+  "title": "Any Boats",
+  "icon": "minecraft:oak_boat",
+  "x": 18,
+  "y": 2,
+  "deps": {
+    "all": [
+      "first_steps/wooden_shovel"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "minecraft:boats",
+      "type": "item",
+      "title": "Any Boats",
+      "icon": "minecraft:oak_boat"
+    }
+  ],
+  "shape": "heart"
+}

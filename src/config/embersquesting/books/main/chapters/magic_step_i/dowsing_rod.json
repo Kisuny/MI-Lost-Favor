@@ -1,0 +1,21 @@
+{
+  "title": "Dowsing Rod",
+  "description": [
+    "This dowsing rod will direct you towards swamps and jungles. Crouch + right click to choose which it will point you to. Right click to find a new one."
+  ],
+  "icon": "hexerei:dowsing_rod",
+  "x": 6,
+  "y": 55,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:dowsing_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Attractor",
+  "description": [
+    "<positive>Place</positive> an <keyword>attractor</keyword> on an <keyword>item pipe</keyword> to allow it to pull from connected inventories. <positive>Place</positive> an <keyword>attractor</keyword> on a <keyword>fluid pipe</keyword> to increase the speed at which it pulls fluids from the network.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Установите</positive> <keyword>аттрактор</keyword> на <keyword>трубу для предметов</keyword>, чтобы он мог извлекать предметы из подключенных инвентарей. <positive>Установите</positive> <keyword>аттрактор</keyword> на <keyword>трубу для жидкостей</keyword>, чтобы увеличить скорость извлечения жидкостей из сети."
+  ],
+  "icon": "moderndynamics:attractor",
+  "x": 20,
+  "y": 1.5,
+  "deps": {
+    "all": [
+      "bronze_age/item_fluid_transfer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "moderndynamics:attractor",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

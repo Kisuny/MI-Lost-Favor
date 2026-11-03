@@ -1,0 +1,26 @@
+{
+  "title": "Tallow",
+  "description": [
+    "<named>Hedge Alchemy</named> - turning cheap things into useful ones. <bone>Rotten Flesh</bone> becomes <keyword>Magic Tallow</keyword> and <keyword>Leather</keyword>, and later the crucible can multiply <keyword>gunpowder</keyword>, <keyword>slime</keyword>, <keyword>string</keyword> and more by feeding them their own essentia.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Простая алхимия</named> - превращение дешёвого в полезное. <bone>Гнилая плоть</bone> становится <keyword>магическим жиром</keyword> и <keyword>кожей</keyword>, а позже тигель сможет размножать <keyword>порох</keyword>, <keyword>слизь</keyword>, <keyword>нитки</keyword> и многое другое, если добавить в них их же эссенцию."
+  ],
+  "icon": "thaumaturge:tallow",
+  "x": 47,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "magic_step_i/nitor_yellow"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tallow",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

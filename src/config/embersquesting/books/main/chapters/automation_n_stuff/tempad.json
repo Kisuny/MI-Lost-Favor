@@ -1,0 +1,21 @@
+{
+  "title": "Tempad",
+  "description": [
+    "Unlike the <keyword>Timedoor Projector</keyword>, the <keyword>Tempad</keyword> automatically detects all <keyword>Timedoor Markers</keyword> and <keyword>Chronomarks</keyword> owned by the player, making <keyword>Location Cards</keyword> optional for personal travel."
+  ],
+  "icon": "tempad:tempad",
+  "x": 1,
+  "y": 8,
+  "deps": {
+    "all": [
+      "automation_n_stuff/chronon_battery"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "tempad:tempad",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

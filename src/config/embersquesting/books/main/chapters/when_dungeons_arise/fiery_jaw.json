@@ -1,0 +1,26 @@
+{
+  "title": "Fiery Jaw",
+  "description": [
+    "<property>RMB</property> pushes away everything within <property>3 blocks</property>, and you start <flame>breathing fire</flame>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> отталкивает всех в радиусе <property>3 блоков</property>, а ты начинаешь <flame>дышать огнём</flame>."
+  ],
+  "icon": "legendary_monsters:fiery_jaw",
+  "x": 21,
+  "y": 27,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:fiery_jaw",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

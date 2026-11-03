@@ -1,0 +1,46 @@
+{
+  "title": "Vitae Link",
+  "description": [
+    "The Vitae Link is a bound relay that crafts on a linked altar's behalf, but only up to a tier you choose.",
+    "",
+    "Creation: place an Ara Vitae inside a larger altar holding at least 1,500 Essentia Vitae - the lesser altar folds inward to form the Link.",
+    "",
+    "Place the Link within 8 blocks of an altar. It draws Essentia Vitae straight from that altar's basin and borrows its rune bonuses. Sneak and use the Link to cycle its craft tier. Maximum is one tier below the altar it serves.",
+    "",
+    "Use the Link with an item to load it, empty-handed to take the result back. It crafts in place, climbing the chain only as far as your chosen tier.",
+    "",
+    "For automation: pipe into any side but the bottom to feed input, draw from the bottom to empty output. Only one Link crafts at a time.",
+    "",
+    "Orb Vitae Link variant: seat a Blood Orb inside it - it will pull Essentia Vitae from the bound altar straight into the orb owner's Anima.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Vitae Link - это реле, которое крафтит за тебя на связанном алтаре, но только до выбранного тобой тира.",
+    "",
+    "Создание: помести Ara Vitae внутрь более крупного алтаря с минимум 1,500 Essentia Vitae - малый алтарь схлопнется и превратится в Link.",
+    "",
+    "Размести Link в радиусе 8 блоков от алтаря. Он автоматически тянет Essentia Vitae из бассейна алтаря и использует его рунные бонусы. Зажми Shift и используй Link чтобы выбрать тир крафта. Максимум - один тир ниже алтаря, которому он служит.",
+    "",
+    "Используй Link с предметом в руке чтобы загрузить его, пустой рукой - чтобы забрать результат. Link крафтит на месте, поднимаясь по цепочке только до выбранного тира.",
+    "",
+    "Для автоматизации: подавай предметы в любую сторону кроме нижней, забирай результат снизу. Одновременно крафтит только один Link.",
+    "",
+    "Вариант Orb Vitae Link: вставь Blood Orb внутрь - он будет перекачивать Essentia Vitae из алтаря прямо в Anima владельца орба."
+  ],
+  "icon": "neovitae:vitae_link",
+  "x": 33,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/first_runes"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:vitae_link",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Unholy Symbol",
+  "description": [
+    "Use the <curse>Touch of Darkness</curse> spell on a <property>pewter inlay</property>.",
+    "",
+    "<warning>If not yet unlocked</warning>, try experimenting with the mod - it unlocks progressively.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используйте заклинание <curse>Прикосновение тьмы</curse> на <property>оловянной инкрустации</property>.",
+    "",
+    "<warning>Если заклинание ещё не открыто</warning>, попробуйте поэкспериментировать с модом - он открывается постепенно."
+  ],
+  "icon": "eidolon_repraised:unholy_symbol",
+  "x": 79,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/q0f0e646687215736",
+      "magic_step_ii/wooden_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:unholy_symbol",
+      "type": "item"
+    },
+    {
+      "item": "eidolon_repraised:pewter_inlay",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

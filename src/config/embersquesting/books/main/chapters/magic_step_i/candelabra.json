@@ -1,0 +1,22 @@
+{
+  "title": "Candelabra",
+  "description": [
+    "§lCandelabra§r: ",
+    "• +2x Recharge Rate"
+  ],
+  "icon": "enchanted:candelabra",
+  "x": 35.5,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "magic_step_i/any_candles"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:candelabra",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

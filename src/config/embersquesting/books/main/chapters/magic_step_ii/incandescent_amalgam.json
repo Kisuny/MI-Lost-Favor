@@ -1,0 +1,45 @@
+{
+  "title": "Incandescent Amalgam",
+  "description": [
+    "<keyword>Amalgam</keyword> spawns in <magic>Deeper Down dungeons</magic>.",
+    "",
+    "Can also be <positive>brewed</positive> in the <keyword>Titration Barrel</keyword>. Makes it possible to break §7Dragon bone!§r",
+    "",
+    "As an alternative, you can use a crystal on obsidian.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Амальгама</keyword> спавнится в <magic>данже Спектрума</magic>, в <magic>глубоких низинах</magic>!",
+    "",
+    "Так же можно сварить самому, позволяет взрывать драконью кость!",
+    "",
+    "Как альтренатива можно использовать кристалл на обсидиане."
+  ],
+  "icon": "spectrum:incandescent_amalgam{\"spectrum:beverage\":{alcohol_percent:15}}",
+  "x": 62,
+  "y": 32.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_moonstone"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:incandescent_amalgam",
+      "components": "{\"spectrum:beverage\":{alcohol_percent:15}}",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:end_crystal",
+      "type": "item"
+    },
+    {
+      "type": "checkmark",
+      "title": "*Click*"
+    }
+  ],
+  "complete": "any",
+  "shape": "square"
+}

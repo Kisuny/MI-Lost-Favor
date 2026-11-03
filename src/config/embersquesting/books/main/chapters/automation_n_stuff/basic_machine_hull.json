@@ -1,0 +1,21 @@
+{
+  "title": "Basic Machine Hull",
+  "icon": "modern_industrialization:basic_machine_hull",
+  "x": 21,
+  "y": 32,
+  "deps": {
+    "all": [
+      "petrochemical_party/electronic_circuit",
+      "petrochemical_party/basic_machine_bit",
+      "petrochemical_party/machine_assembler_shape_1_placer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:basic_machine_hull",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

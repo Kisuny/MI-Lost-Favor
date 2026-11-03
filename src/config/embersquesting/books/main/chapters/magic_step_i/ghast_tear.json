@@ -1,0 +1,19 @@
+{
+  "title": "Ghast Tear",
+  "icon": "minecraft:ghast_tear",
+  "x": 16.5,
+  "y": 57,
+  "deps": {
+    "all": [
+      "magic_step_i/vanilla_items_for_spectrum_progression"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:ghast_tear",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

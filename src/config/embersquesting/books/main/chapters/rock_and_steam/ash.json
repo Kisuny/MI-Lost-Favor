@@ -1,0 +1,27 @@
+{
+  "title": "Ash",
+  "description": [
+    "<bone>Ash</bone> is more useful than it looks: a poor fuel, a way to recolor stone, and an important <magic>alchemy</magic> ingredient - it is the base for soul sand and the Ashen Amulet.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<bone>Пепел</bone> полезнее, чем кажется: слабое топливо, способ перекрасить камень и важный ингредиент <magic>алхимии</magic> - из него получаются песок душ и Пепельный амулет."
+  ],
+  "icon": "embers:ash",
+  "x": 25.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/cinder_plinth"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ash",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

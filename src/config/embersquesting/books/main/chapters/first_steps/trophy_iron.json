@@ -1,0 +1,19 @@
+{
+  "title": "Trophy Iron",
+  "icon": "starcatcher:trophy_iron",
+  "x": 39,
+  "y": 33,
+  "deps": {
+    "all": [
+      "first_steps/trophy_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:trophy_iron",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "pentagon"
+}

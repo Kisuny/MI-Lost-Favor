@@ -1,0 +1,33 @@
+{
+  "title": "Focus Tiers and Topologies",
+  "description": [
+    "Three focus tiers determine swap volume: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5).",
+    "",
+    "Topologies: one-way, two-way, chained (A→B→C→A), vertical elevator. Mob spawners transfer with full NBT intact - spawn counts, cooldowns, and trial-spawner behavior preserved.",
+    "",
+    "Tips: test links with non-living blocks first, mark destinations clearly, carry spare Foci.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Три уровня фокусов определяют объём обмена: Teleposition Focus (1×1×1), Enhanced Focus (3×3×3), Reinforced Focus (5×5×5).",
+    "",
+    "Топологии: односторонняя, двусторонняя, цепочка (A→B→C→A), вертикальный лифт. Спаунеры переносятся с полным NBT - счётчики, кулдауны и поведение trial-спаунера сохраняются.",
+    "",
+    "Советы: сначала тестируй на неживых блоках, помечай точки назначения, держи запас фокусов."
+  ],
+  "x": 43,
+  "y": 19,
+  "deps": {
+    "all": [
+      "magic_step_iii/place_the_teleposer"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Focus Tiers and Topologies"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Entangled Wand Core",
+  "description": [
+    "Two <keyword>silverwood cores</keyword> infused around a <named>Singularity</named> come out as a <glitch frequency=0.7 shiftChance=0.06>bound pair</glitch>. Wands made from them share <positive>one vis reservoir</positive> - at any distance, <fade minAlpha=0.4 frequency=1.0>even between worlds</fade>.",
+    "",
+    "Leave one wand on a <keyword>Recharge Pedestal</keyword> and carry the other.",
+    "",
+    "<warning>Note:</warning> the Singularity goes on an <property>outer pedestal</property>, not the center. Cores from different infusions don't link.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Две <keyword>сердцевины из серебряного дерева</keyword>, пропитанные вокруг <named>сингулярности</named>, выходят <glitch frequency=0.7 shiftChance=0.06>связанной парой</glitch>. Жезлы из них делят <positive>один запас виса</positive> - на любом расстоянии, <fade minAlpha=0.4 frequency=1.0>даже между мирами</fade>.",
+    "",
+    "Оставь один жезл на <keyword>пьедестале подзарядки</keyword>, а второй носи с собой.",
+    "",
+    "<warning>Важно:</warning> сингулярность кладётся на <property>боковой пьедестал</property>, не в центр. Сердцевины из разных инфузий не связываются."
+  ],
+  "icon": "appliedthaumaturge:entangled_wand_core",
+  "x": 3,
+  "y": 7,
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:entangled_wand_core",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

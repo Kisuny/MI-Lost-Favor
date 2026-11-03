@@ -1,0 +1,24 @@
+{
+  "title": "Chest",
+  "icon": "minecraft:chest",
+  "x": 12,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "first_steps/wooden_box"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:chest",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:chest",
+      "type": "observe",
+      "icon": "minecraft:chest"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Steel Drill",
+  "icon": "modern_industrialization:steel_drill",
+  "x": 0.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "simple_machinery/bronze_drill"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_drill",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Lubricant Bucket",
+  "icon": "modern_industrialization:lubricant_bucket",
+  "x": 15.5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "bronze_age/bronze_mixer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:lubricant_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

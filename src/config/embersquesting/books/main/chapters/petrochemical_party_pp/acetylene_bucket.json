@@ -1,0 +1,22 @@
+{
+  "title": "Acetylene Bucket",
+  "icon": "modern_industrialization:acetylene_bucket",
+  "x": 19,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/methane_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:acetylene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

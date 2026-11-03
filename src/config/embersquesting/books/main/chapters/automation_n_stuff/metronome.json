@@ -1,0 +1,25 @@
+{
+  "title": "Metronome",
+  "description": [
+    "The strongest Chronon generator in the mod. Place it as a block and charge it once to start it, then it stores and produces Chronons on its own. Multiple Metronomes link together and work faster as a network.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Самый сильный генератор Chronon в моде. Его нужно поставить как блок и один раз зарядить для запуска, после чего он сам хранит и производит энергию. Несколько Метрономов связываются в сеть и работают быстрее вместе."
+  ],
+  "icon": "tempad:metronome",
+  "y": 8,
+  "deps": {
+    "all": [
+      "automation_n_stuff/chronon_battery"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "tempad:metronome",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

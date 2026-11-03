@@ -1,0 +1,18 @@
+{
+  "title": "Mono Loot Fabricator",
+  "icon": "hostile_neural_industrialization:mono_loot_fabricator",
+  "x": 8.5,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "aluminum/loot_fabricator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hostile_neural_industrialization:mono_loot_fabricator",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

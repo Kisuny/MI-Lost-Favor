@@ -1,0 +1,18 @@
+{
+  "title": "Boiler",
+  "icon": "immersive_aircraft:boiler",
+  "x": 30.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "bronze_age/blueprint_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_aircraft:boiler",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

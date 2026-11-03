@@ -1,0 +1,26 @@
+{
+  "title": "Wican Ward",
+  "description": [
+    "The <keyword>Wican Ward</keyword> will be granted to you if you complete the <keyword>Amethyst Ritual</keyword> and will <warning>stop mobs from spawning</warning> in your area",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<warning>Отключает спавн мобов</warning> в области"
+  ],
+  "icon": "paganbless:wican_ward",
+  "x": 5.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_amethyst"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:wican_ward",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

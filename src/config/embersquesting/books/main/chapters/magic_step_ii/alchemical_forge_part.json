@@ -1,0 +1,66 @@
+{
+  "title": "Alchemical Forge Part",
+  "description": [
+    "I <warning>found</warning> it...",
+    "",
+    "An §6ancient schematic§r to a <keyword>device long lost to time</keyword>.",
+    "",
+    "One that fully realizes the <warning>power of toxin</warning> I have sought for so long.",
+    "",
+    "How does it work??",
+    "The text roughly translates to \"In mendus we pour it the liquor of life, of two side-by-side.\"",
+    "<shake amplitude=0.35 frequency=1.2>BUT HOW AND WHY??</shake>",
+    "",
+    "…",
+    "Items must be arranged exactly like in the recipe or else the crafting will fail and the components will be lost.",
+    "<c value=#4EC847><fade>🛈 Toxin is used as fuel!</c>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Я <warning>нашёл</warning> его...",
+    "",
+    "§6Схема прибора§r, утерянного множество лет назад.",
+    "",
+    "Того, что полностью раскрывает <poison>силу токсина</poison>.",
+    "",
+    "Как он работает??",
+    "Грубо переводя \"В Мендус мы одновременно наливаем ликёр жизни.\"",
+    "<shake amplitude=0.35 frequency=1.2>НО КАК, ПОЧЕМУ И ЧТО ЭТО ЗНАЧИТ?</shake>",
+    "",
+    "…",
+    "",
+    "<c value=#4EC847><fade>🛈 Токсин используется в качестве топлива!</c>"
+  ],
+  "icon": "toxony:alchemical_forge_part",
+  "x": 34,
+  "y": 41.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/toxic_formula"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:alchemical_forge_part",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "toxony:toxin",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "New mobs",
+      "id": "milf:milestone/alchemical_forge_part",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon",
+  "size": 2.0
+}

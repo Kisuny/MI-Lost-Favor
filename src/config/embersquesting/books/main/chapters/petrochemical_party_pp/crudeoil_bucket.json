@@ -1,0 +1,22 @@
+{
+  "title": "Crudeoil Bucket",
+  "icon": "immersivepetroleum:crudeoil_bucket",
+  "x": 16,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/derrick"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:crudeoil_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

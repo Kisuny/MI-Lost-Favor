@@ -1,0 +1,21 @@
+{
+  "title": "Discipulus Orb of Vitae",
+  "description": [
+    "Forged in the <keyword>Tier I altar</keyword> for <keyword>5,000 EV</keyword>. Expands your <magic>Anima</magic> further and unlocks <property>off-hand EV harvesting</property> - hold the orb in your off hand to collect EV directly from kills."
+  ],
+  "icon": "neovitae:blood_orb_apprentice",
+  "x": 35,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/first_runes"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:blood_orb_apprentice",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

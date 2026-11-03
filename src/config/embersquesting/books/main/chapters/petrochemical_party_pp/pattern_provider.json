@@ -1,0 +1,19 @@
+{
+  "title": "Pattern Provider",
+  "icon": "ae2:pattern_provider",
+  "x": 17.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/annihilation_core",
+      "petrochemical_party_pp/crafting_unit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:pattern_provider",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

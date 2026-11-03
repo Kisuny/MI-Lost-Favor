@@ -1,0 +1,26 @@
+{
+  "title": "Regeneration Tox Pot",
+  "description": [
+    "If I feel particularly HORRIBLE, then I may want to produce this regeneration oil pot. Fragrant and REVOLTING to the touch, it does the opposite of what most of my oils do, and as such would be quite appealing to doctors in the field.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Если я почувствую себя ОСОБЕННО плохо, я могу изготовить это пахучее и НЕ приятное на ощупь масло. Им могут заинтересоваться местные врачи."
+  ],
+  "icon": "toxony:regeneration_tox_pot",
+  "x": 29,
+  "y": 33.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/empty_tox_pot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:regeneration_tox_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

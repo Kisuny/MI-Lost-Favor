@@ -1,0 +1,26 @@
+{
+  "title": "Thaumometer",
+  "description": [
+    "Needs one crystal of each of the <property>six primal aspects</property>. Hold <positive>right-click</positive> on blocks, items and creatures to scan them and collect research points - <pulse><keyword>scan everything</keyword></pulse>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нужен один кристалл каждого из <property>шести первичных аспектов</property>. Зажми <positive>ПКМ</positive> на блоках, предметах и существах, чтобы изучать их и собирать очки исследований - <pulse><keyword>изучай всё подряд</keyword></pulse>."
+  ],
+  "icon": "thaumaturge:thaumometer",
+  "x": 50,
+  "y": 37.5,
+  "deps": {
+    "all": [
+      "magic_step_i/arcane_workbench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:thaumometer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

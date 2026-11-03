@@ -1,0 +1,20 @@
+{
+  "title": "Gate Pearl",
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:basic/enderman\"}",
+  "x": 13.5,
+  "y": 33,
+  "deps": {
+    "all": [
+      "bronze_age/ender_eye"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"gateways:basic/enderman\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

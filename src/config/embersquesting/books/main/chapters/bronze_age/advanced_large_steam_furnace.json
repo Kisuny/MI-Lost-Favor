@@ -1,0 +1,38 @@
+{
+  "title": "Advanced Large Steam Furnace",
+  "description": [
+    "<positive>Better</positive> furnace, but <property>bigger</property>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Печь покруче</positive> - но ещё и <property>побольше</property>!"
+  ],
+  "icon": "mi_tweaks:advanced_large_steam_furnace",
+  "x": 7.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "bronze_age/bronze_mi_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "mi_tweaks:advanced_large_steam_furnace",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_plated_bricks",
+      "count": 12,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:advanced_large_steam_furnace_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Crafting Station",
+  "description": [
+    "The crafting station acts like the normal crafting table, except that it can access adjacent inventories, and items can be placed and kept on it"
+  ],
+  "icon": "craftingstation:crafting_station",
+  "x": 19.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "first_steps/q681ccf6687c70b0b"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "craftingstation:crafting_station",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

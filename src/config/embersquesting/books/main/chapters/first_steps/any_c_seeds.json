@@ -1,0 +1,19 @@
+{
+  "title": "Any #c:seeds",
+  "icon": "minecraft:wheat_seeds",
+  "x": 12,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "first_steps/birds_nest"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "c:seeds",
+      "type": "item",
+      "title": "Any #c:seeds"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Bellows",
+  "description": [
+    "Self-pumping <wind>bellows</wind>: attached to a furnace (or an Infernal Furnace) they speed up smelting. Also needed for the smeltery pumps.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Сами себя качающие <wind>мехи</wind>: прикреплённые к печи (или адской печи) ускоряют плавку. Также нужны для насосов плавильни."
+  ],
+  "icon": "thaumaturge:bellows",
+  "x": 43.5,
+  "y": 31,
+  "deps": {
+    "all": [
+      "magic_step_i/infernal_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:bellows",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

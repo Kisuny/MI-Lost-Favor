@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Ingot",
+  "icon": "aquaculture:neptunium_ingot",
+  "x": 39,
+  "y": 28,
+  "deps": {
+    "all": [
+      "first_steps/starcatcher_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_ingot",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

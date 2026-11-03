@@ -1,0 +1,27 @@
+{
+  "title": "Silicon",
+  "icon": "ae2:silicon",
+  "x": 14.5,
+  "y": 6.5,
+  "deps": {
+    "any": [
+      "simple_machinery/quartz_blend",
+      "simple_machinery/ferrosilicon_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:silicon",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "ae2:silicon",
+      "count": 16,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

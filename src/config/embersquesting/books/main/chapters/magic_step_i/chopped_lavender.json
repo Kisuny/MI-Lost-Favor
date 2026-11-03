@@ -1,0 +1,21 @@
+{
+  "title": "Chopped Lavender",
+  "description": [
+    "Take the dried plant and place it on a Herbalist Bench. Then, use the boline on it a few times to create chopped plants."
+  ],
+  "icon": "paganbless:chopped_lavender",
+  "x": 1,
+  "y": 50.5,
+  "deps": {
+    "all": [
+      "magic_step_i/dried_hanging_lavender"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:chopped_lavender",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

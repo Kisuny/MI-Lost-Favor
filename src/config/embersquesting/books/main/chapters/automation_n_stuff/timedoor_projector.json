@@ -1,0 +1,28 @@
+{
+  "title": "Timedoor Projector",
+  "description": [
+    "The simplest way to open <keyword>Timedoors</keyword>. Load a <property>Location Card</property> into it, then right-click to open a portal by hand or power it with <warning>Redstone</warning> when placed as a block. It is the <property>best early-game teleport tool</property> and <warning>does not need Time Steel</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Самый простой способ открывать <keyword>Timedoor</keyword>. Загрузи в него <property>Location Card</property> и нажми правой кнопкой, чтобы открыть портал вручную, или подай <warning>Redstone</warning>, если он стоит как блок. Это <property>лучший ранний инструмент</property> для телепорта и ему <warning>не нужен Time Steel</warning>."
+  ],
+  "icon": "tempad:timedoor_projector{\"tempad:chronon_content\":1}",
+  "x": 8,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/timedoor_marker"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "tempad:timedoor_projector",
+      "components": "{\"tempad:chronon_content\":1}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

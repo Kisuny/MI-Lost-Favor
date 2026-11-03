@@ -1,0 +1,37 @@
+{
+  "title": "Little Joys",
+  "description": [
+    "Adds small <property>rewarding events</property> such as <magic>Dig Spots</magic>, <magic>Fishing Spots</magic>, <magic>Drop Rushes</magic> and <magic>Gold Rushes</magic>.",
+    "",
+    "• <magic>Dig Spots</magic> holding <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>small treasures</bounce></positive>",
+    "",
+    "• <magic>Fishing Spots</magic> guaranteeing a <positive>catch with treasure</positive>",
+    "",
+    "• <magic>Drop Rushes</magic> for <keyword>bonus harvests</keyword> in a simple <property>timed challenge</property>",
+    "",
+    "• <magic>Gold Rushes</magic> for <keyword>extra ores</keyword> while <positive>mining</positive>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Добавляет небольшие <property>события с наградой</property>, такие как <magic>Dig Spots</magic>, <magic>Fishing Spots</magic>, <magic>Drop Rushes</magic> и <magic>Gold Rushes</magic>.",
+    "",
+    "• <magic>Dig Spots</magic> хранят <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>небольшие сокровища</bounce></positive>",
+    "",
+    "• <magic>Fishing Spots</magic> гарантируют <positive>улов с сокровищем</positive>",
+    "",
+    "• <magic>Drop Rushes</magic> дают <keyword>дополнительный урожай</keyword> в простом <property>испытании на время</property>",
+    "",
+    "• <magic>Gold Rushes</magic> дают <keyword>дополнительную руду</keyword> во время <positive>добычи</positive>"
+  ],
+  "icon": "gaze:textures/mob_effect/joyful.png",
+  "x": 1.35,
+  "y": 5.59,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Little Joys"
+    }
+  ],
+  "shape": "square"
+}

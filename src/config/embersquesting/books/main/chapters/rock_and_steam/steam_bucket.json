@@ -1,0 +1,22 @@
+{
+  "title": "Steam Bucket",
+  "icon": "modern_industrialization:steam_bucket",
+  "x": 32.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/mini_boiler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steam_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

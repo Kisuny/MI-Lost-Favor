@@ -1,0 +1,21 @@
+{
+  "title": "Spiritus Gem Lesser",
+  "description": [
+    "Like the petty version, but can hold up to 256 Spiritus."
+  ],
+  "icon": "neovitae:spiritus_gem_lesser",
+  "x": 39,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_petty"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spiritus_gem_lesser",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

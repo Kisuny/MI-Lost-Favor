@@ -1,0 +1,35 @@
+{
+  "title": "Shulker Tower",
+  "description": [
+    "Four <keyword>end stone</keyword> blocks make the <named>Eye of Shulker</named>. It finds the <named>Shulker Tower</named> in the <magic>End Highlands</magic> and <magic>Midlands</magic>.",
+    "",
+    "The boss sleeps disguised as a <wiggly>shulker box</wiggly> - be careful what you open.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Из четырёх блоков <keyword>эндерняка</keyword> получается <named>Око шалкера</named>. Оно находит <named>Башню шалкеров</named> в <magic>высокогорьях</magic> и <magic>средних землях</magic> Края.",
+    "",
+    "Босс спит, притворяясь <wiggly>шалкеровым ящиком</wiggly> - думай, что открываешь."
+  ],
+  "icon": "legendary_monsters:eye_of_shulker",
+  "x": 13,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_ascent"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:eye_of_shulker",
+      "type": "item"
+    },
+    {
+      "structure": "legendary_monsters:shulker_tower",
+      "type": "location"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

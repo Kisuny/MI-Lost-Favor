@@ -1,0 +1,20 @@
+{
+  "title": "Configurable Mixed Storage",
+  "icon": "yet_another_industrialization:configurable_mixed_storage",
+  "x": 24.5,
+  "y": 14,
+  "deps": {
+    "all": [
+      "simple_machinery/configurable_tank",
+      "bronze_age/configurable_chest",
+      "automation_n_stuff/ingredient_buffer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "yet_another_industrialization:configurable_mixed_storage",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

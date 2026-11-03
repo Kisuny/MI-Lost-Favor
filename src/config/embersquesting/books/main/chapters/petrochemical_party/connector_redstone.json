@@ -1,0 +1,18 @@
+{
+  "title": "Connector Redstone",
+  "icon": "immersiveengineering:connector_redstone",
+  "x": 13.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/wirecoil_redstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:connector_redstone",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

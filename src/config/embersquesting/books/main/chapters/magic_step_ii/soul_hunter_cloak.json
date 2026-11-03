@@ -1,0 +1,30 @@
+{
+  "title": "Soul Hunter Cloak",
+  "icon": "malum:soul_hunter_cloak",
+  "x": 79,
+  "y": 21,
+  "deps": {
+    "all": [
+      "magic_step_ii/soulwoven_silk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:soul_hunter_cloak",
+      "type": "item"
+    },
+    {
+      "item": "malum:soul_hunter_robe",
+      "type": "item"
+    },
+    {
+      "item": "malum:soul_hunter_leggings",
+      "type": "item"
+    },
+    {
+      "item": "malum:soul_hunter_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

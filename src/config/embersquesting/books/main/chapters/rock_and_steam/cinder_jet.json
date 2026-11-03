@@ -1,0 +1,34 @@
+{
+  "title": "Cinder Jet",
+  "description": [
+    "The <keyword>Cinder Jet</keyword> is an armor augment for <shake amplitude=0.4 frequency=1.5>dashing</shake>: start sprinting and it will launch you forward, faster with each augment level.",
+    "",
+    "Each dash uses Ember from your inventory.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Пепельный реактивный движок</keyword> - улучшение брони для <shake amplitude=0.4 frequency=1.5>рывков</shake>: начните бежать, и он швырнёт вас вперёд, тем быстрее, чем выше уровень.",
+    "",
+    "Каждый рывок тратит эмбер из инвентаря."
+  ],
+  "icon": "embers:cinder_jet",
+  "x": 16,
+  "y": 22,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "rock_and_steam/silver_aspectus",
+      "bronze_age/copper_charger",
+      "bronze_age/component_iron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:cinder_jet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

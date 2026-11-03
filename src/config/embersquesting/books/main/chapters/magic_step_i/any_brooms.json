@@ -1,0 +1,29 @@
+{
+  "title": "Any Brooms",
+  "description": [
+    "One of the earliest ways of <positive>flying</positive>",
+    "",
+    "After placing it down, crouch + right click to modify it",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Один из первых способов <positive>полёта</positive>"
+  ],
+  "x": 28,
+  "y": 35,
+  "deps": {
+    "all": [
+      "magic_step_i/flying_ointment",
+      "magic_step_i/blood_bottle"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "hexerei:brooms",
+      "type": "item",
+      "title": "Any Brooms"
+    }
+  ],
+  "shape": "heart"
+}

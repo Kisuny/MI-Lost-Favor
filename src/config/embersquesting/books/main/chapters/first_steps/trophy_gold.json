@@ -1,0 +1,19 @@
+{
+  "title": "Trophy Gold",
+  "icon": "starcatcher:trophy_gold",
+  "x": 39,
+  "y": 34,
+  "deps": {
+    "all": [
+      "first_steps/trophy_iron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:trophy_gold",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "pentagon"
+}

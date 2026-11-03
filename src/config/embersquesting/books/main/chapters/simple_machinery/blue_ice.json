@@ -1,0 +1,18 @@
+{
+  "title": "Blue Ice",
+  "icon": "minecraft:blue_ice",
+  "x": 16,
+  "y": 29,
+  "deps": {
+    "all": [
+      "simple_machinery/thermoelectric_generator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:blue_ice",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

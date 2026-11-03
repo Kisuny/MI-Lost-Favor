@@ -1,0 +1,30 @@
+{
+  "title": "Etherium Helmet",
+  "icon": "enigmaticlegacyplus:etherium_helmet",
+  "x": 38.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/etherium_ore"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:etherium_helmet",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:etherium_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:etherium_leggings",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:etherium_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

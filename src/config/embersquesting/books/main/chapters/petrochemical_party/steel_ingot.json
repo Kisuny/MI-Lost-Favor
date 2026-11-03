@@ -1,0 +1,18 @@
+{
+  "title": "Steel Ingot",
+  "icon": "modern_industrialization:steel_ingot",
+  "x": 17.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/electric_blast_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

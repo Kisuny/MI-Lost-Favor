@@ -1,0 +1,26 @@
+{
+  "title": "Chalice",
+  "description": [
+    "The <keyword>Chalice</keyword> works like a <property>bottomless milk bucket</property>, <positive>curing you</positive> whenever you require. The <keyword>Lapis Lazuli Ritual</keyword> will grant you this boon.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Чаша</keyword> работает как <property>бездонное ведро с молоком</property>, <positive>исцеляя вас</positive>, когда вы этого потребуете. <keyword>Ритуал Лазурита</keyword> дарует вам это чудо."
+  ],
+  "icon": "paganbless:chalice",
+  "x": 11.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_lapis"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:chalice",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

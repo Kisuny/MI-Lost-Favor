@@ -1,0 +1,26 @@
+{
+  "title": "The Great Frost",
+  "description": [
+    "<property>RMB</property> summons a row of <aqua>ice spikes</aqua> in front of you, and <property>Shift + RMB</property> on a block surrounds you with them.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> выпускает перед тобой ряд <aqua>ледяных шипов</aqua>, а <property>Shift + ПКМ</property> по блоку окружает ими тебя."
+  ],
+  "icon": "legendary_monsters:the_great_frost",
+  "x": 15.5,
+  "y": 26,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:the_great_frost",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

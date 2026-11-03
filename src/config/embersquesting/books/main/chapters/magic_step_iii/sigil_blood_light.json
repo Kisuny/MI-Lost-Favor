@@ -1,0 +1,23 @@
+{
+  "title": "Sigil Blood Light",
+  "description": [
+    "Conjures light sources wherever you are aiming for a mere 10 EV from your Anima reserves.",
+    "",
+    "The light's color can be changed, as well as its brightness."
+  ],
+  "icon": "neovitae:sigil_blood_light",
+  "x": 34,
+  "y": 1.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_blood_light",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Runic Brooch",
+  "icon": "malum:runic_brooch",
+  "x": 86.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/runic_workbench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:runic_brooch",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Brooch Trinket Slot",
+      "id": "milf:trinket/brooch_runic_brooch",
+      "type": "custom"
+    }
+  ],
+  "shape": "diamond"
+}

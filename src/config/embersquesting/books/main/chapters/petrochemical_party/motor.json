@@ -1,0 +1,18 @@
+{
+  "title": "Motor",
+  "icon": "modern_industrialization:motor",
+  "x": 21.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/silicon_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:motor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

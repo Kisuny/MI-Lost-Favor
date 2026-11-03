@@ -1,0 +1,29 @@
+{
+  "title": "Bronze Item Output Hatch",
+  "icon": "yet_another_industrialization:bronze_mixed_output_hatch",
+  "x": 13,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_item_output_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_fluid_output_hatch",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "yet_another_industrialization:bronze_mixed_input_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Enchanted Book",
+  "icon": "minecraft:enchanted_book{\"minecraft:stored_enchantments\":{levels:{\"spectrum:serendipity_reel\":1}}}",
+  "x": 15.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter",
+      "magic_step_ii/bismuth_crystal",
+      "magic_step_ii/mermaids_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:serendipity_reel\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

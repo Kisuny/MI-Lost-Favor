@@ -1,0 +1,26 @@
+{
+  "title": "Amulet Vis Crafted",
+  "description": [
+    "A portable recharge pedestal: while worn it recharges vis items in your hotbar, offhand, curios and armor.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Переносной зарядный пьедестал: пока надет, заряжает предметы на vis в хотбаре, второй руке, слотах аксессуаров и броне."
+  ],
+  "icon": "thaumaturge:amulet_vis_crafted",
+  "x": 64,
+  "y": 7,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:amulet_vis_crafted",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

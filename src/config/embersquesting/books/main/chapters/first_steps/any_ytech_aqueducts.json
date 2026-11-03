@@ -1,0 +1,21 @@
+{
+  "title": "Any #ytech:aqueducts",
+  "description": [
+    "You can connect several aqueducts to pipe water in a straight line from point A to point B. Each aqueduct block can hold two buckets of water, and they interact with the other components of the aqueduct system."
+  ],
+  "x": 18,
+  "y": 22,
+  "deps": {
+    "all": [
+      "first_steps/lead_hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "ytech:aqueducts",
+      "type": "item",
+      "title": "Any #ytech:aqueducts"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Demonite Ingot",
+  "description": [
+    "<blood>deep blood-red</blood> decorative trim material. Apply at a smithing table like any other trim.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<blood>декоративный материал</blood> для брони, глубокого кроваво-красного цвета. Применяется на кузнечном столе. "
+  ],
+  "icon": "neovitae:demonite_trim_ingot",
+  "x": 55.5,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/animus_mote"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:demonite_trim_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

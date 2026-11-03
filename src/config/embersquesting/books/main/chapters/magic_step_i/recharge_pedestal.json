@@ -1,0 +1,26 @@
+{
+  "title": "Recharge Pedestal",
+  "description": [
+    "Recharges wands and vis-powered gear from the surrounding <magic>aura</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Заряжает жезлы и снаряжение на vis из окружающей <magic>ауры</magic>."
+  ],
+  "icon": "thaumaturge:recharge_pedestal",
+  "x": 55,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_i/focus_1"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:recharge_pedestal",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

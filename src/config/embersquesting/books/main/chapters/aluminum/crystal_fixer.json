@@ -1,0 +1,18 @@
+{
+  "title": "Crystal Fixer",
+  "icon": "extendedae:crystal_fixer",
+  "x": 28,
+  "y": 19,
+  "deps": {
+    "all": [
+      "aluminum/concurrent_processor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extendedae:crystal_fixer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Stratine Fragments",
+  "description": [
+    "Quite <c value=#FEECD6>bad</c>§r for bridges and diving!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чудная руда, но не смей пытаться делать из неё блоки и прыгать с ними в воду! ",
+    "",
+    "А еще <c value=#FEECD6>не пытайся</c>§r делать из него мосты, ради бога, я предупредил"
+  ],
+  "icon": "spectrum:stratine_fragments",
+  "x": 8,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_onyx"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:stratine_fragments",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

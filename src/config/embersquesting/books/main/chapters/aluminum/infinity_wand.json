@@ -1,0 +1,20 @@
+{
+  "title": "Infinity Wand",
+  "icon": "constructionwand:infinity_wand{\"minecraft:custom_data\":{wand_options:{}}}",
+  "x": 17.5,
+  "y": 6,
+  "deps": {
+    "all": [
+      "aluminum/quantum_processor"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "constructionwand:infinity_wand",
+      "components": "{\"minecraft:custom_data\":{wand_options:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

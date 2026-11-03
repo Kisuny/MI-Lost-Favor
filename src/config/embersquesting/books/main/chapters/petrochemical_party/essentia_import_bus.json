@@ -1,0 +1,21 @@
+{
+  "title": "Essentia Import Bus",
+  "description": [
+    "Like the item <keyword>Import Bus</keyword>, but for essentia: <aqua><wave>pulls</wave></aqua> essentia from the container it faces into the network.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Как обычная <keyword>шина импорта</keyword>, только для эссенции: <aqua><wave>втягивает</wave></aqua> эссенцию из хранилища перед собой в сеть."
+  ],
+  "icon": "appliedthaumaturge:essentia_import_bus",
+  "x": 2,
+  "y": 5,
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:essentia_import_bus",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

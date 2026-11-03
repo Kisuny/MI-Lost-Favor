@@ -1,0 +1,30 @@
+{
+  "title": "Seal Lumber",
+  "description": [
+    "A refined Block Breaker that only targets <nature>logs</nature> - and instead of the log the golem hits, it breaks the <property>farthest connected log</property>. Trees get chopped from the top down, which makes it a proper <nature>tree farm</nature>.",
+    "",
+    "Golem: <warning>Breaker</warning> and <magic>Smart</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшенная печать разрушения, которая работает только с <nature>брёвнами</nature> - и ломает не то бревно, по которому бьёт голем, а <property>самое дальнее связанное</property>. Деревья рубятся сверху вниз, так что получается настоящая <nature>ферма деревьев</nature>.",
+    "",
+    "Голем: <warning>разрушитель</warning> (Breaker) и <magic>умный</magic> (Smart)."
+  ],
+  "icon": "thaumaturge:seal_lumber",
+  "x": 45.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_breaker"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_lumber",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

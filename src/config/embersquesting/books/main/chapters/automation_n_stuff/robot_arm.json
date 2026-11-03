@@ -1,0 +1,20 @@
+{
+  "title": "Robot Arm",
+  "icon": "modern_industrialization:robot_arm",
+  "x": 22,
+  "y": 27,
+  "deps": {
+    "all": [
+      "petrochemical_party/motor",
+      "automation_n_stuff/blueprint",
+      "automation_n_stuff/piston"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:robot_arm",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

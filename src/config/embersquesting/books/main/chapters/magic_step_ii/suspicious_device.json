@@ -1,0 +1,26 @@
+{
+  "title": "Suspicious Device",
+  "description": [
+    "A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>, made by opposing Arcane and Eldritch arcana. In theory it should create balance - in practice, the two forces <shake amplitude=0.4 frequency=1.5>violently reject each other</shake>, causing a <curse>corruptive explosion</curse> that spawns <curse>Blight</curse>. <warning>This entry is a warning, not a recommendation.</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>, созданное противопоставлением арканной и эльдритч арканы. В теории это должно давать баланс - на практике же силы <shake amplitude=0.4 frequency=1.5>яростно отталкиваются друг от друга</shake>, вызывая <curse>тлетворный взрыв</curse>, порождающий <curse>Скверну (Blight)</curse>. <warning>Эта запись - предупреждение, а не рекомендация.</warning>"
+  ],
+  "icon": "malum:suspicious_device",
+  "x": 95,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:suspicious_device",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

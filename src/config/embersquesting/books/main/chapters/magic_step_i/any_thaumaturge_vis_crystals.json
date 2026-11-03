@@ -1,0 +1,31 @@
+{
+  "title": "Any #thaumaturge:vis_crystals",
+  "description": [
+    "<magic>Vis Crystals</magic> grow as colorful clusters in caves. Break a cluster and pick up a crystal - your fingers will <shake amplitude=0.3 frequency=1.0>tingle strangely</shake>.",
+    "",
+    "Then <wave>go to sleep</wave>: you will wake up with a <keyword>Dream Journal</keyword>, and only after that dream can you create the <named>Thaumonomicon</named>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Кристаллы Vis</magic> растут в пещерах цветными кластерами. Разбей кластер и подбери кристалл - пальцы <shake amplitude=0.3 frequency=1.0>странно закалывает</shake>.",
+    "",
+    "После этого <wave>ложись спать</wave>: проснёшься с <keyword>дневником снов</keyword>, и только после этого сна можно создать <named>Таумономикон</named>."
+  ],
+  "x": 50,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_i/onyx_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "thaumaturge:vis_crystals",
+      "type": "item",
+      "title": "Any #thaumaturge:vis_crystals"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

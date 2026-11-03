@@ -1,0 +1,34 @@
+{
+  "title": "Bronze Mi Furnace",
+  "description": [
+    "Furnace, but <keyword>better</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Печь - только <keyword>покруче</keyword>!"
+  ],
+  "icon": "modern_industrialization:bronze_mi_furnace",
+  "x": 8,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_mi_furnace",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:lignite_coal",
+      "count": 22,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

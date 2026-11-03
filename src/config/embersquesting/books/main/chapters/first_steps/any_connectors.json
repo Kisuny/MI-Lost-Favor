@@ -1,0 +1,26 @@
+{
+  "title": "Any Connectors",
+  "description": [
+    "A <keyword>connector</keyword> links cooking tables, sinks, fridges, ovens and counters into one <property>continuous kitchen network</property>, letting ingredients and heat sources be shared across the whole setup.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Соединитель</keyword> связывает кухонные столы, раковины, холодильники, печи и столешницы в единую <property>кухонную сеть</property>, позволяя делиться ингредиентами и источниками тепла на всей кухне."
+  ],
+  "x": 31,
+  "y": 23,
+  "deps": {
+    "all": [
+      "first_steps/any_cooking_tables"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "cookingforblockheads:connectors",
+      "type": "item",
+      "title": "Any Connectors"
+    }
+  ],
+  "shape": "diamond"
+}

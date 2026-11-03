@@ -1,0 +1,26 @@
+{
+  "title": "Wixie Hat",
+  "description": [
+    "The <keyword>Wixie Hat</keyword> lets your familiar transport <property>potions</property> as well - once equipped, use the <keyword>Dominion Wand</keyword> to link it between <keyword>Potion Jars</keyword>, and it will move potions between them.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Wixie Hat</keyword> позволяет вашему фамильяру переносить ещё и <property>зелья</property> - после надевания используйте <keyword>Жезл владения</keyword>, чтобы связать его между <keyword>Potion Jar</keyword>, и он будет переносить зелья между ними."
+  ],
+  "icon": "ars_nouveau:wixie_hat",
+  "x": 105,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_ii/starbuncle_charm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:wixie_hat",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

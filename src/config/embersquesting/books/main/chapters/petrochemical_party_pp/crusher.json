@@ -1,0 +1,54 @@
+{
+  "title": "Crusher",
+  "icon": "immersiveengineering:crusher",
+  "x": 14.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/radiator"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "immersiveengineering:crusher",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:crusher",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 10,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_fence",
+      "count": 8,
+      "type": "item"
+    },
+    {
+      "item": "minecraft:hopper",
+      "count": 9,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 10,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:crusher_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Logic Processor",
+  "icon": "ae2:logic_processor",
+  "x": 21,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/printed_silicon",
+      "automation_n_stuff/printed_logic_processor",
+      "automation_n_stuff/mysterious_disk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:logic_processor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

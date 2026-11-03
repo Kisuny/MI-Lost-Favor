@@ -1,0 +1,21 @@
+{
+  "title": "Tabula Rasa",
+  "description": [
+    "The fundamental crafting substrate for all <magic>vitaemantic</magic> creations. Costs <keyword>1,000 EV</keyword> at the Tier 0 altar. Nearly every recipe will ask for a <named>Tabula</named> - keep a stack on hand."
+  ],
+  "icon": "neovitae:tabula_rasa",
+  "x": 30.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/novicius_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:tabula_rasa",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

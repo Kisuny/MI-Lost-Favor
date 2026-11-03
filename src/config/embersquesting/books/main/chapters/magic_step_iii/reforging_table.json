@@ -1,0 +1,56 @@
+{
+  "title": "Reforging Table",
+  "icon": "apotheosis:reforging_table",
+  "x": 7,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/bismuth_crystal",
+      "magic_step_iii/simple_reforging_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apotheosis:reforging_table",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:bismuth_crystal",
+      "count": 3,
+      "type": "item"
+    },
+    {
+      "item": "milf:electronic_ender_core",
+      "type": "item"
+    },
+    {
+      "item": "forbidden_arcanus:dark_nether_star",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "apotheosis:godforged_pearl",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "forbidden_arcanus:maledictus_pact",
+      "type": "item"
+    },
+    {
+      "item": "apotheosis:simple_reforging_table",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "id": "milf:stage/reforging_table",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "complete": {
+    "min": 6
+  },
+  "shape": "heart"
+}

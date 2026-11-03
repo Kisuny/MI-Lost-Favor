@@ -1,0 +1,34 @@
+{
+  "title": "Precision Dispeller",
+  "description": [
+    "The Precision Dispeller is a specialized piece of machinery that allows you to selectively remove enchantments you don't want from an item, and remove curses for an XP cost of 30 base levels. It also returns slightly more XP than a vanilla grindstone.",
+    "",
+    "The Precision Dispeller does not require binding to an Obelisk. When unbound, it will dispense any XP gained as XP orbs the same way as a vanilla grindstone, and draw XP from the player when removing curses.",
+    "",
+    "However, should you want to, the Precision Dispeller can be bound to an Obelisk the same way as the Fountain. When bound, experience gained will be added to the Obelisk internal reservoir instead of being released as XP orbs. Likewise, the XP cost from curse removal will first be deducted from the Obelisk, and only deducted from the player if the amount of XP in the Obelisk is insufficient.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "специализированное устройство, позволяющее выборочно снимать с предмета ненужные зачарования, а также снимать проклятия за 30 базовых уровней опыта. Кроме того, оно дает немного больше опыта, чем стандартный точильный камень.",
+    "",
+    "Precision Dispeller не требует привязки к обелиску. В непривязанном состоянии он выдаёт полученный опыт в виде шаров опыта так же, как и обычный точильный камень, а при снятии проклятий отнимает опыт у игрока.",
+    "",
+    "Однако, при желании, Precision Dispeller можно привязать к Обелиску так же, как и «Фонтан». В привязанном состоянии полученный опыт будет добавляться во внутренний резервуар Обелиска, а не выделяться в виде шаров опыта. Аналогично, стоимость в виде опыта при снятии проклятий сначала будет вычитаться из Обелиска, а из игрока — только в том случае, если количества опыта в Обелиске недостаточно."
+  ],
+  "icon": "cognition:precision_dispeller",
+  "x": 29,
+  "y": 54.5,
+  "deps": {
+    "all": [
+      "magic_step_i/cognitive_flux"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cognition:precision_dispeller",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

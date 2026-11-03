@@ -1,0 +1,19 @@
+{
+  "title": "Blank Pattern",
+  "icon": "ae2:blank_pattern",
+  "x": 16,
+  "y": 41,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/pattern_provider",
+      "petrochemical_party_pp/pattern_encoding_terminal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:blank_pattern",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

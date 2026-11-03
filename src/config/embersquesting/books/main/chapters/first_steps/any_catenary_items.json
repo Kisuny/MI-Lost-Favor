@@ -1,0 +1,34 @@
+{
+  "title": "Any Catenary Items",
+  "description": [
+    "Various <keyword>leads and chains</keyword> can be <positive>used on fences/walls</positive> by <positive>right clicking</positive> them and connecting two of them together so that you can <positive>quickly move along</positive> these connections using <keyword>any pickaxe</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Кроме того, разнообразные поводки и цепи можно использовать на заборах/каменных заборах в качестве декорации, а так же на этих \"декорациях\" Можно  быстро передвигаться используя любую кирку!"
+  ],
+  "x": 22,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "first_steps/lead"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "connectiblechains:catenary_items",
+      "type": "item",
+      "title": "Any Catenary Items"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "minecraft:chain",
+      "count": 20,
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

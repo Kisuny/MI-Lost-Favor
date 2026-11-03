@@ -1,0 +1,30 @@
+{
+  "title": "Starlight Bucket",
+  "description": [
+    "The <keyword>Starlight Bucket</keyword> is a universal bucket. <positive>Right-click</positive> it onto any other bucket in your inventory to copy that fluid into it, then use it exactly like the original bucket to place that content.",
+    "",
+    "<warning>Works only with buckets that have the #c:buckets tag</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ведро света звёзд</keyword> - универсальное ведро. Используйте <positive>ПКМ</positive> им по любому другому ведру в инвентаре, чтобы скопировать в него эту жидкость, а затем используйте его точно так же, как оригинальное ведро - чтобы вылить это содержимое.",
+    "",
+    "<warning>работает только с вёдрами у которых есть тег #c:buckets</warning>"
+  ],
+  "icon": "enigmaticlegacyplus:starlight_bucket",
+  "x": 38,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/starlight_ingot",
+      "when_dungeons_arise/astral_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:starlight_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

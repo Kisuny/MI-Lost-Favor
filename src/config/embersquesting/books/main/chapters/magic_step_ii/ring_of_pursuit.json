@@ -1,0 +1,22 @@
+{
+  "title": "Ring Of Pursuit",
+  "icon": "spectrum:ring_of_pursuit",
+  "x": 51,
+  "y": 48.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/blazing_crystal",
+      "magic_step_ii/pyrite_chunk",
+      "magic_step_ii/bismuth_crystal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:ring_of_pursuit",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "lines_in": "hover"
+}

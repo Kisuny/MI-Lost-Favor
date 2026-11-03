@@ -1,0 +1,29 @@
+{
+  "title": "horse power",
+  "description": [
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_summon_steed tooltip=true/>",
+    "",
+    "<positive>Calls</positive> to the <keyword>tamed horse</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_summon_steed tooltip=true/>",
+    "",
+    "<positive>Призывает</positive> <keyword>приручённую лошадь</keyword>"
+  ],
+  "icon": "ars_nouveau:glyph_summon_steed",
+  "x": 23,
+  "y": 55,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

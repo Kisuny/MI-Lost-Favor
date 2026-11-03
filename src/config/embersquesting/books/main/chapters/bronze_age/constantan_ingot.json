@@ -1,0 +1,19 @@
+{
+  "title": "Constantan Ingot",
+  "icon": "modern_industrialization:constantan_ingot",
+  "x": 20.5,
+  "y": 13,
+  "deps": {
+    "any": [
+      "bronze_age/steel_alloy_smelter",
+      "bronze_age/constantan_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:constantan_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

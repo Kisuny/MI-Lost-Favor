@@ -1,0 +1,21 @@
+{
+  "title": "Soul Harvest Incense",
+  "icon": "eidolon_repraised:soul_harvest_incense",
+  "x": 63,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/mirecap",
+      "magic_step_ii/lesser_soul_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:soul_harvest_incense",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Incense Altar",
+  "description": [
+    "The Incense Altar multiplies Essentia Vitae gained from a single self-sacrifice. Instead of clicking dozens of times - one powerful offering with a significant multiplier.",
+    "",
+    "Usage: stand within 5 blocks of the altar to receive Blessed Sacrifice for 30 seconds. Right-clicking your Blood Orb drains nearly all your blood into the orb at once, after which Soul Fray sets in until the next blessing.",
+    "",
+    "Building: place the altar on a 3x3 platform, extend 3-block-wide paths in all 4 cardinal directions using Path blocks. Place varied blocks around for Tranquility: dirt, water, lava, leaves, logs, crops, fire. The more expensive the path material - the higher the bonus: Wooden +60%, Stone +120%, Worn Stone +200%, Obsidian +300%. Check your current bonus with a Divination Sigil.",
+    "",
+    "§lVERY§r quick example:",
+    {
+      "width": 100,
+      "height": 100,
+      "texture": "milf:textures/quest_pic/incense_altar_example.png",
+      "type": "image"
+    },
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Incense Altar умножает количество Essentia Vitae с одного самопожертвования. Вместо многократных кликов - одна мощная жертва со значительным множителем.",
+    "",
+    "Использование: встань в 5 блоках от алтаря - получишь Blessed Sacrifice на 30 секунд. Правый клик Blood Orb сольёт почти всю кровь в орб за раз, после чего наступает Soul Fray до следующего благословения.",
+    "",
+    "Постройка: алтарь на платформе 3x3, от неё в 4 стороны тянутся дорожки шириной 3 блока из Path-блоков. Вокруг размещай разнообразные блоки для Tranquility: земля, вода, лава, листья, брёвна, грядки, огонь. Чем дороже материал дорожки - тем выше бонус: Wooden +60%, Stone +120%, Worn Stone +200%, Obsidian +300%. Текущий бонус можно проверить Divination Sigil.",
+    "",
+    "Вот небольшой пример:",
+    "",
+    {
+      "width": 100,
+      "height": 100,
+      "texture": "milf:textures/quest_pic/incense_altar_example.png",
+      "type": "image"
+    }
+  ],
+  "icon": "neovitae:incense_altar",
+  "x": 28.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/novicius_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:incense_altar",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

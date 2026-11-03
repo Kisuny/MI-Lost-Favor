@@ -1,0 +1,27 @@
+{
+  "title": "Radio Tower",
+  "icon": "milf:radio_tower_placer",
+  "x": 17.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/radio_tower_block"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:radio_tower",
+      "type": "item"
+    },
+    {
+      "block": "immersiveengineering:radio_tower",
+      "type": "observe"
+    },
+    {
+      "item": "milf:radio_tower_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

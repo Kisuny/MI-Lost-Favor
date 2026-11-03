@@ -1,0 +1,35 @@
+{
+  "title": "Collapsed Kingdom",
+  "description": [
+    "Four <soul>soul torches</soul> make the <named>Eye of Ghost</named>. It leads back to the Overworld - to the <soul>Collapsed Kingdom</soul>, a dungeon hidden under <nature>forests</nature> and <nature>plains</nature>.",
+    "",
+    "Its halls are still guarded by <fade minAlpha=0.4 frequency=1.0>the knights of a fallen king</fade>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Из четырёх <soul>факелов душ</soul> получается <named>Око призрака</named>. Оно ведёт обратно в Верхний мир - к <soul>Павшему королевству</soul>, подземелью под <nature>лесами</nature> и <nature>равнинами</nature>.",
+    "",
+    "Его залы до сих пор охраняют <fade minAlpha=0.4 frequency=1.0>рыцари павшего короля</fade>."
+  ],
+  "icon": "legendary_monsters:eye_of_ghost",
+  "x": 24,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_ascent"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:eye_of_ghost",
+      "type": "item"
+    },
+    {
+      "structure": "legendary_monsters:collapsed_kingdom",
+      "type": "location"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

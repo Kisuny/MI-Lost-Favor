@@ -1,0 +1,18 @@
+{
+  "title": "Cargo Airship",
+  "icon": "immersive_aircraft:cargo_airship",
+  "x": 31.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "bronze_age/airship"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_aircraft:cargo_airship",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

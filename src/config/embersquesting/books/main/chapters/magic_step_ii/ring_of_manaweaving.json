@@ -1,0 +1,28 @@
+{
+  "title": "Ring Of Manaweaving",
+  "description": [
+    "<property>Soul Ward</property> is a powerful barrier, but it's slow to recover on its own. The <keyword>Ring of Manaweaving</keyword> reacts to <warning>Spirit</warning> collection, <positive>accelerating the recovery</positive> of your Soul Ward and Spell Mana every time you pick one up.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>Soul Ward</property> - мощный барьер, но он медленно восстанавливается сам по себе. <keyword>Ring of Manaweaving</keyword> реагирует на сбор <warning>духов</warning>, <positive>ускоряя восстановление</positive> вашего Soul Ward и маны заклинаний каждый раз, когда вы подбираете дух."
+  ],
+  "icon": "malum:ring_of_manaweaving",
+  "x": 88.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ring_of_manaweaving",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

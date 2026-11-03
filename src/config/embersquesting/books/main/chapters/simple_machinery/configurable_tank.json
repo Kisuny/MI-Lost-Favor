@@ -1,0 +1,18 @@
+{
+  "title": "Configurable Tank",
+  "icon": "modern_industrialization:configurable_tank",
+  "x": 13.5,
+  "y": 1,
+  "deps": {
+    "all": [
+      "simple_machinery/aluminum_tank"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:configurable_tank",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

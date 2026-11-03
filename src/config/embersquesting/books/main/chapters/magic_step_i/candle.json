@@ -1,0 +1,32 @@
+{
+  "title": "Candle",
+  "description": [
+    "When a <fire>candle</fire> is lit, it <positive>accelerates plant growth</positive> ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "с смесью получается <fire>свеча</fire> который <positive>ускоряет рост растений</positive>"
+  ],
+  "icon": "hexerei:candle{\"minecraft:custom_data\":{effect:\"hexerei:growth_effect\",effectParticle:{particle0:\"hexerei:broom_particle_6\",particle1:\"hexerei:broom_particle_5\",particle2:\"hexerei:broom_particle_4\",particle3:\"minecraft:smoke\"},herb:{effectAmplifierMultiplier:1.0f,effectCooldownMultiplier:1.0f,effectDurationMultiplier:1.0f,layer:\"hexerei:textures/block/candle_herb_layer.png\",meltingSpeedMultiplier:1.0f,radiusMultiplier:1.0f}}}",
+  "x": 6,
+  "y": 52,
+  "deps": {
+    "all": [
+      "magic_step_i/mixing_cauldron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:candle",
+      "components": "{\"minecraft:custom_data\":{effect:\"hexerei:growth_effect\",effectParticle:{particle0:\"hexerei:broom_particle_6\",particle1:\"hexerei:broom_particle_5\",particle2:\"hexerei:broom_particle_4\",particle3:\"minecraft:smoke\"},herb:{effectAmplifierMultiplier:1.0f,effectCooldownMultiplier:1.0f,effectDurationMultiplier:1.0f,layer:\"hexerei:textures/block/candle_herb_layer.png\",meltingSpeedMultiplier:1.0f,radiusMultiplier:1.0f}}}",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:mindful_trance_blend",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

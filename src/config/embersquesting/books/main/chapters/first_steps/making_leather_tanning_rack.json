@@ -1,0 +1,28 @@
+{
+  "title": "Making Leather: Tanning Rack",
+  "description": [
+    "To make leather, first make a tanning rack and place it down."
+  ],
+  "icon": "ytech:oak_tanning_rack",
+  "x": 12,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/crafting_workspace"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "ytech:tanning_racks",
+      "type": "item",
+      "title": "Any Tanning Racks"
+    },
+    {
+      "block": "#ytech:tanning_racks",
+      "type": "observe",
+      "icon": "ytech:oak_tanning_rack"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Runic Workbench",
+  "description": [
+    "The <pulse><keyword>Runic Workbench</keyword></pulse> is used to craft <warning>Runes</warning> and <keyword>Brooches</keyword> - trinkets equipped in their own accessory slots that grant <positive>passive bonuses</positive> like extra damage, speed or healing. <keyword>Brooches</keyword> also let you trade other trinket slots for more <warning>Rune</warning> slots, so you can stack even more bonuses.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<pulse><keyword>Runic Workbench</keyword></pulse> используется для крафта <warning>Рун</warning> и <keyword>Брошей</keyword> - безделушек, которые надеваются в отдельные слоты аксессуаров и дают <positive>пассивные бонусы</positive>: урон, скорость, лечение и прочее. <keyword>Броши</keyword> также позволяют менять другие слоты безделушек на дополнительные слоты для <warning>Рун</warning>, чтобы накопить ещё больше бонусов."
+  ],
+  "icon": "malum:runic_workbench",
+  "x": 86.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/hallowed_gold_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:runic_workbench",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Rune Trinket Slot",
+      "id": "milf:trinket/rune_runic_workbench",
+      "type": "custom"
+    }
+  ],
+  "shape": "gear"
+}

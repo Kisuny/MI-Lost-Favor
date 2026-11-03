@@ -1,0 +1,27 @@
+{
+  "title": "Steel Machine Bit",
+  "icon": "milf:steel_machine_bit",
+  "x": 19.5,
+  "y": 18,
+  "deps": {
+    "any": [
+      "bronze_age/steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:steel_machine_bit",
+      "type": "item"
+    },
+    {
+      "item": "milf:small_steel_fluid_container",
+      "type": "item"
+    },
+    {
+      "item": "milf:steel_infused_glass",
+      "type": "item"
+    }
+  ],
+  "shape": "square",
+  "size": 2.0
+}

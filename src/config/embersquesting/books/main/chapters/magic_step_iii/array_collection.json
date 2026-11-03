@@ -1,0 +1,25 @@
+{
+  "title": "Array Collection",
+  "description": [
+    "<positive>Draws</positive> dropped items within <property>2 blocks</property> toward its centre. Place atop a chest and collected items deposit directly inside."
+  ],
+  "icon": "neovitae:array_collection",
+  "x": 41.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "magic_step_iii/utility_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_collection",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

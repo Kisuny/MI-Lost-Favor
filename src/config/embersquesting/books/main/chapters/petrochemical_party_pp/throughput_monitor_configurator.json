@@ -1,0 +1,18 @@
+{
+  "title": "Throughput Monitor Configurator",
+  "icon": "advanced_ae:throughput_monitor_configurator",
+  "x": 8.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/throughput_monitor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:throughput_monitor_configurator",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

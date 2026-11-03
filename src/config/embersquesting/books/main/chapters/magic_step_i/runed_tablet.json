@@ -1,0 +1,20 @@
+{
+  "title": "Runed Tablet",
+  "icon": "thaumaturge:runed_tablet{\"thaumaturge:labyrinth_key\":0}",
+  "x": 34.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_i/q0dd73167db76edf5"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "thaumaturge:runed_tablet",
+      "components": "{\"thaumaturge:labyrinth_key\":0}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

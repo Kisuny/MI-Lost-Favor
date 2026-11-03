@@ -1,0 +1,27 @@
+{
+  "title": "Steam Mining Drill",
+  "icon": "modern_industrialization:steam_mining_drill",
+  "x": 12,
+  "y": 13,
+  "deps": {
+    "all": [
+      "simple_machinery/blueprint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steam_mining_drill",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:lignite_coal",
+      "count": 16,
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

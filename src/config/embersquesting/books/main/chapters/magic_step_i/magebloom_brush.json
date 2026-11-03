@@ -1,0 +1,19 @@
+{
+  "title": "Magebloom Brush",
+  "icon": "ars_hex:magebloom_brush",
+  "x": 28.5,
+  "y": 33.5,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms",
+      "magic_step_ii/magebloom_crop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_hex:magebloom_brush",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "description": [
+    "Now you are §9worthy§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя азуритовую защиту зайдите в ранее найденный вам данж с странной защитой!"
+  ],
+  "x": 36.5,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/any_azure_dike_trinkets"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:enter_dike_gate_preservation_ruin",
+      "type": "advancement"
+    }
+  ],
+  "shape": "circle"
+}

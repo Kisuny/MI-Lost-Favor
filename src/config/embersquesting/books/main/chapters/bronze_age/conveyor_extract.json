@@ -1,0 +1,18 @@
+{
+  "title": "Conveyor Extract",
+  "icon": "immersiveengineering:conveyor_extract",
+  "x": 33,
+  "y": 19,
+  "deps": {
+    "all": [
+      "bronze_age/conveyor_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:conveyor_extract",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

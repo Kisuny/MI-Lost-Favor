@@ -1,0 +1,15 @@
+{
+  "title": "Withered Bracelet",
+  "icon": "artifacts:withered_bracelet{\"relics:data\":{abilities:{abilities:{withering:{lock:{breaks:5},points:0,stats:{chance:{},spread_duration:{initialQuality:4},spread_radius:{initialQuality:10},wither_duration:{initialQuality:9},wither_level:{initialQuality:8}}}},synergies:{}},leveling:{},statistic:{}}}",
+  "x": 5.5,
+  "y": 30,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "artifacts:withered_bracelet",
+      "components": "{\"relics:data\":{abilities:{abilities:{withering:{lock:{breaks:5},points:0,stats:{chance:{},spread_duration:{initialQuality:4},spread_radius:{initialQuality:10},wither_duration:{initialQuality:9},wither_level:{initialQuality:8}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

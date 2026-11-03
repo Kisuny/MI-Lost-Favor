@@ -1,0 +1,26 @@
+{
+  "title": "Accelerating Inlay",
+  "description": [
+    "An augment for the <keyword>Spirit Crucible</keyword>, using a superior conductor woven from Astral Weave: <property>+100% Focusing Speed</property>, with <positive>no drawbacks</positive> whatsoever - a straightforward speed boost.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшение для <keyword>Spirit Crucible</keyword>, использующее превосходный проводник из Astral Weave: <property>+100% скорости фокусировки</property>, причём <positive>без каких-либо недостатков</positive> - простое и честное ускорение."
+  ],
+  "icon": "malum:accelerating_inlay",
+  "x": 92.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:accelerating_inlay",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

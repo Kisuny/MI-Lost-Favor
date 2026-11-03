@@ -1,0 +1,18 @@
+{
+  "title": "Formation Plane",
+  "icon": "ae2:formation_plane",
+  "x": 13.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/formation_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:formation_plane",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

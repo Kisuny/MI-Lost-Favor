@@ -1,0 +1,26 @@
+{
+  "title": "Resolute Belt",
+  "description": [
+    "An exceedingly heavy belt - the <bone>Resolute Belt</bone> renders you almost <property>immovable</property>. Any knockback you receive is not only negated, but <curse>reflected</curse> back onto your attacker.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чрезвычайно тяжёлый пояс - <bone>Стойкий пояс</bone> делает вас почти <property>неподвижным</property>. Любая отдача, которую вы получаете, не просто гасится, а <curse>отражается</curse> обратно на атакующего."
+  ],
+  "icon": "eidolon_repraised:resolute_belt",
+  "x": 69,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:resolute_belt",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

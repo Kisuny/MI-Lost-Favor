@@ -1,0 +1,34 @@
+{
+  "title": "Belladonna Flowers",
+  "description": [
+    "The plant will slowly grow and is harvestable.",
+    "",
+    "Can be found in swamps or bought from the Merchant."
+  ],
+  "icon": "hexerei:belladonna_flowers",
+  "x": 3.5,
+  "y": 54.5,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:belladonna_flowers",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:belladonna_berries",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:belladonna_plant",
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 2
+  },
+  "shape": "diamond"
+}

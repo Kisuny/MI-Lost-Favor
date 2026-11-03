@@ -1,0 +1,19 @@
+{
+  "title": "Creosote Bucket",
+  "icon": "immersiveengineering:creosote_bucket",
+  "x": 40,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/dwarven_oil_bucket",
+      "rock_and_steam/soul_crude_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:creosote_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

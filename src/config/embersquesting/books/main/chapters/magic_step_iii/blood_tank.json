@@ -1,0 +1,34 @@
+{
+  "title": "Blood Tank",
+  "description": [
+    "The Blood Tank is a portable reservoir for Essentia Vitae and other fluids. Fill or drain it by right-clicking with a bucket. Retains its contents when broken, ideal for transporting large volumes. Glows faintly according to its contents.",
+    "",
+    "Each tier doubles capacity: from 16 buckets at tier 1 to 524,288 buckets at tier 16. Upgrade early and often.",
+    "",
+    "Upgrading: combine two Blood Tanks + Glass + Bloodstone in a crafting table. Result is one tier above the primary tank, fluids merge. Same fluids add together, different fluids - primary tank's contents take precedence.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Blood Tank - портативный резервуар для Essentia Vitae и других жидкостей. Заполняй и сливай правым кликом с ведром. При разрушении сохраняет содержимое. Слабо светится в зависимости от жидкости внутри.",
+    "",
+    "Каждый тир удваивает ёмкость: от 16 вёдер на 1 тире до 524,288 вёдер на 16-м. Улучшай как можно раньше.",
+    "",
+    "Улучшение: объедини два Blood Tank + Glass + Bloodstone на верстаке. Результат на один тир выше основного танка, жидкости сливаются. Одинаковые жидкости суммируются, разные - побеждает основной танк."
+  ],
+  "icon": "neovitae:blood_tank",
+  "x": 36,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_petty"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:blood_tank",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

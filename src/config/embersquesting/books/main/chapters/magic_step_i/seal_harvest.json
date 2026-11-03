@@ -1,0 +1,30 @@
+{
+  "title": "Seal Harvest",
+  "description": [
+    "Golems find fully-grown crops and other harvestable plants in the <property>area</property> and <nature>harvest</nature> them. They can also <nature>replant</nature> if seeds are available, and re-till farmland that turned back into dirt. Seeds can be requested through <property>provisioning</property>.",
+    "",
+    "Golem: <property>Deft</property> and <magic>Smart</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Големы находят в <property>зоне</property> созревшие посевы и другие растения и <nature>собирают</nature> их. Могут и <nature>пересаживать</nature>, если есть семена, и заново вспахивать грядки, превратившиеся в землю. Семена можно запрашивать через <property>снабжение</property>.",
+    "",
+    "Голем: <property>ловкий</property> (Deft) и <magic>умный</magic> (Smart)."
+  ],
+  "icon": "thaumaturge:seal_harvest",
+  "x": 55.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_use"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_harvest",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

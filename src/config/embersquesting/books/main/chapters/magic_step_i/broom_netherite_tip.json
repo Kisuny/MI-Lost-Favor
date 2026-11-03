@@ -1,0 +1,26 @@
+{
+  "title": "Broom Netherite Tip",
+  "description": [
+    "Having this attached to your broom will let you fly in lava for some time.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Позволяет <positive>не дамажить</positive> <keyword>метлу</keyword> в <warning>лаве</warning> "
+  ],
+  "icon": "hexerei:broom_netherite_tip",
+  "x": 26,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:broom_netherite_tip",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

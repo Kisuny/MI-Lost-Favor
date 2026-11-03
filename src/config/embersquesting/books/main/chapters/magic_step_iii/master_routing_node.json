@@ -1,0 +1,22 @@
+{
+  "title": "Master Routing Node",
+  "description": [
+    "The brain of the network - one per network. New nodes within 16 blocks auto-bind to the nearest master on placement. Use the <property>Node Router</property> tool to manually link nodes across longer chains."
+  ],
+  "icon": "neovitae:master_routing_node",
+  "x": 41,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/input_and_output_nodes",
+      "magic_step_iii/spiritus_gem_common"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:master_routing_node",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

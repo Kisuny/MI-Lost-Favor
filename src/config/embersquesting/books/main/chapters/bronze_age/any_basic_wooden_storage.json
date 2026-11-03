@@ -1,0 +1,30 @@
+{
+  "title": "Any Basic Wooden Storage",
+  "description": [
+    ""
+  ],
+  "x": 26.5,
+  "y": 11,
+  "deps": {
+    "all": [
+      "bronze_age/upgrade_base"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "sophisticatedstorage:base_tier_wooden_storage",
+      "type": "item",
+      "title": "Any Basic Wooden Storage"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "sophisticatedstorage:chest",
+      "count": 4,
+      "components": "{\"sophisticatedstorage:wood_type\":\"cherry\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

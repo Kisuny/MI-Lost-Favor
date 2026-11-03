@@ -1,0 +1,31 @@
+{
+  "title": "Alembic",
+  "description": [
+    "The smeltery only turns items into raw <poison>slurry</poison> - the <keyword>Arcane Alembic</keyword> placed on top distills it into individual aspects. Stack several alembics for more storage.",
+    "",
+    "Essentia is taken out of an alembic with <keyword>phials</keyword>, <keyword>jars</keyword> or tubes. Running the smeltery on <fire>Alumentum</fire> makes distillation <positive>much faster</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Плавильня лишь превращает предметы в сырую <poison>смесь</poison> - <keyword>магический перегонный куб</keyword>, поставленный сверху, разделяет её на отдельные аспекты. Несколько кубов друг на друге дают больше места.",
+    "",
+    "Эссенцию из куба забирают <keyword>фиалами</keyword>, <keyword>банками</keyword> или трубами. Если плавильня работает на <fire>алюментуме</fire>, перегонка идёт <positive>гораздо быстрее</positive>."
+  ],
+  "icon": "thaumaturge:alembic",
+  "x": 53,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "magic_step_i/tube",
+      "magic_step_i/smelter_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:alembic",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

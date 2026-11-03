@@ -1,0 +1,58 @@
+{
+  "title": "The End?!",
+  "description": [
+    "The End Access",
+    "Collect §l12 unique eyes§r to activate the portal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Соберите §l12 уникальных глаз§r для активации портала."
+  ],
+  "icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png",
+  "x": 31,
+  "y": 22.5,
+  "deps": {
+    "min": {
+      "count": 12,
+      "of": [
+        "when_dungeons_arise/undead_eye",
+        "when_dungeons_arise/sculk_eye",
+        "when_dungeons_arise/cursed_eye",
+        "when_dungeons_arise/old_eye",
+        "when_dungeons_arise/cold_eye",
+        "when_dungeons_arise/cryptic_eye",
+        "when_dungeons_arise/rogue_eye",
+        "when_dungeons_arise/witch_eye",
+        "when_dungeons_arise/lost_eye",
+        "when_dungeons_arise/nether_eye",
+        "when_dungeons_arise/wither_eye",
+        "when_dungeons_arise/potato_eye",
+        "when_dungeons_arise/trial_eye",
+        "when_dungeons_arise/black_eye",
+        "when_dungeons_arise/exotic_eye",
+        "when_dungeons_arise/fishing_eye",
+        "when_dungeons_arise/evil_eye",
+        "when_dungeons_arise/magical_eye",
+        "when_dungeons_arise/corrupted_eye",
+        "when_dungeons_arise/guardian_eye"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "The End?!"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "The End Access ",
+      "id": "milf:stage/the_end",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

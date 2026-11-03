@@ -1,0 +1,40 @@
+{
+  "title": "",
+  "description": [
+    "<magic>Augments</magic> - the way to give your gear new abilities.",
+    "",
+    "1. Hammer a <keyword>Motive Core</keyword> into an item on the anvil - it starts gaining <flame>Heat</flame> as you use it.",
+    "",
+    "2. When the Heat bar is full, temper it in the <keyword>Inferno Forge</keyword> for an <property>augment slot</property>.",
+    "",
+    "3. Hammer augments onto it at the <keyword>Dawnstone Anvil</keyword>: item first, then the augment. Augments have levels, the item's level limits how many you can fit. Placing the item alone and hammering <positive>removes all augments</positive> for free.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Улучшения</magic> - способ дать снаряжению новые способности.",
+    "",
+    "1. Набейте на наковальне <keyword>ядро пробуждения</keyword> на предмет - он начнёт копить <flame>жар</flame> при использовании.",
+    "",
+    "2. Когда шкала жара заполнится, закалите предмет в <keyword>Вулканической кузнице</keyword> и получите <property>слот улучшения</property>.",
+    "",
+    "3. Набивайте улучшения на <keyword>Золотитовой наковальне</keyword>: сначала предмет, потом улучшение. У улучшений есть уровни, а уровень предмета ограничивает, сколько их влезет. Если положить предмет один и ударить, <positive>все улучшения снимутся</positive> бесплатно."
+  ],
+  "icon": "embers:ancient_motive_core",
+  "x": 15.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/dawnstone_anvil",
+      "rock_and_steam/inferno_forge",
+      "rock_and_steam/ember_crystal_3"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

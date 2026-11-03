@@ -1,0 +1,19 @@
+{
+  "title": "Ender Rod",
+  "icon": "enigmaticlegacyplus:ender_rod",
+  "x": 38,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/astral_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:ender_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

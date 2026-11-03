@@ -1,0 +1,20 @@
+{
+  "title": "Gate Pearl",
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"apotheosis:tiered/ascent\"}",
+  "x": 20.5,
+  "y": 20,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_ascent"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"apotheosis:tiered/ascent\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

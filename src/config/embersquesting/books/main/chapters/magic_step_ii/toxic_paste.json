@@ -1,0 +1,21 @@
+{
+  "title": "Toxic Paste",
+  "description": [
+    "Used to make Toxic Formula, Canisters, as well as other items."
+  ],
+  "icon": "toxony:toxic_paste",
+  "x": 26.5,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/copper_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:toxic_paste",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

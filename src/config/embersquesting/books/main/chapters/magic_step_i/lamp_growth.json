@@ -1,0 +1,30 @@
+{
+  "title": "Lamp Growth",
+  "description": [
+    "Light is good for plants - add some magic and it gets <positive>much better</positive>. Crops and other plants where this lamp's light shines brightest <nature><wave>grow much faster</wave></nature> than normal.",
+    "",
+    "Unlike the <keyword>Arcane Lamp</keyword> it is made from, it gives <warning>barely any light</warning> on its own until it gets <nature>Herba</nature> essentia, fed straight from an <keyword>essentia tube</keyword>. A <property>redstone signal</property> turns it off.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Свет полезен растениям - а с магией он становится <positive>гораздо полезнее</positive>. Посевы и другие растения там, где свет этой лампы ярче всего, <nature><wave>растут намного быстрее</wave></nature> обычного.",
+    "",
+    "В отличие от <keyword>магической лампы</keyword>, из которой она сделана, сама по себе она <warning>почти не светит</warning>, пока не получит эссенцию <nature>Herba</nature> - её подают прямо по <keyword>трубе для эссенции</keyword>. <property>Сигнал редстоуна</property> её выключает."
+  ],
+  "icon": "thaumaturge:lamp_growth",
+  "x": 69.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:lamp_growth",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

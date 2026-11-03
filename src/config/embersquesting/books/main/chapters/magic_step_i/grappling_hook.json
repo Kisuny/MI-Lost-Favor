@@ -1,0 +1,26 @@
+{
+  "title": "Grappling Hook",
+  "description": [
+    "in skilled hands, a §lvery§r fast way to move around",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "в умелых руках - §lочень§r быстрый способ передвижения"
+  ],
+  "icon": "crittersandcompanions:grappling_hook",
+  "x": 13.5,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/runic_charge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "crittersandcompanions:grappling_hook",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

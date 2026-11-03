@@ -1,0 +1,23 @@
+{
+  "title": "Mending Oil Pot",
+  "description": [
+    "<positive>Mends</positive> the items at the cost of <property>oil</property>."
+  ],
+  "icon": "toxony:mending_oil_pot",
+  "x": 25,
+  "y": 41.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/ocelot_mint",
+      "magic_step_ii/toxic_paste",
+      "magic_step_ii/toxic_spit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:mending_oil_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Chaos Elytra",
+  "icon": "enigmaticlegacyplus:chaos_elytra{\"enigmaticlegacyplus:eldritch_timer\":0.0f}",
+  "x": 39,
+  "y": 41,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/abyssal_heart",
+      "when_dungeons_arise/evil_ingot",
+      "when_dungeons_arise/cosmic_heart"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enigmaticlegacyplus:chaos_elytra",
+      "components": "{\"enigmaticlegacyplus:eldritch_timer\":0.0f}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

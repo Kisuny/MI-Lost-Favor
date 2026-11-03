@@ -1,0 +1,30 @@
+{
+  "title": "Storm Stone",
+  "description": [
+    "When <warning><shake amplitude=0.4 frequency=1.6>lightning</shake></warning> hits the ground, it leaves <property>small shards</property> behind.",
+    "",
+    "Use <keyword>lightning rods</keyword> to have more consistent <named>Storm Stone</named> generation. You can use the <magic>Fusion Shrine</magic> to summon <warning><shake amplitude=0.4 frequency=1.6>thunderstorms</shake></warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Когда <warning><shake amplitude=0.4 frequency=1.6>молния</shake></warning> бьёт в землю, на земле остаются <property>маленькие осколки шторма</property>.",
+    "",
+    "Используйте <keyword>громоотвод</keyword> чтобы получить <named>штормовой осколок</named>, используй <magic>святыню слияния</magic> чтобы призвать <warning><shake amplitude=0.4 frequency=1.6>штормовую погоду</shake></warning>!"
+  ],
+  "icon": "spectrum:storm_stone",
+  "x": 7,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/neolith"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:storm_stone",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

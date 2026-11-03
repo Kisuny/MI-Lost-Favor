@@ -1,0 +1,21 @@
+{
+  "title": "Refinery Block",
+  "icon": "oritech:refinery_block",
+  "x": 11.5,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "simple_machinery/machine_extender",
+      "simple_machinery/carbon_fibre_strands",
+      "simple_machinery/tempered_glass",
+      "simple_machinery/machine_assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:refinery_block",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

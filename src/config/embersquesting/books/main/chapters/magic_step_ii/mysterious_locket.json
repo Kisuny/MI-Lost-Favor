@@ -1,0 +1,29 @@
+{
+  "title": "Mysterious Locket",
+  "description": [
+    "Steve and the Raiders of the Lost Ark",
+    "Create this <keyword>compass</keyword> and find a <magic>mysterious structure</magic>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Создайте <keyword>компас</keyword> и найдите <magic>таинственную структуру</magic>! "
+  ],
+  "icon": "spectrum:mysterious_locket{\"spectrum:socketed\":{}}",
+  "x": 63,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/moonstone_core"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:mysterious_locket",
+      "components": "{\"spectrum:socketed\":{}}",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Player Head",
+  "description": [
+    "§lPlayer Skull§r:",
+    "• +2.5x Power Capacity",
+    "• +3x Recharge Rate"
+  ],
+  "icon": "minecraft:player_head",
+  "x": 33.5,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "magic_step_i/wither_skeleton_skull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:player_head",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

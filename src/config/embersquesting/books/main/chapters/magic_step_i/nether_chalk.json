@@ -1,0 +1,21 @@
+{
+  "title": "Nether Chalk",
+  "description": [
+    "The Nether Chalk represents fire, the demonic, and The Nether."
+  ],
+  "icon": "enchanted:nether_chalk",
+  "x": 30,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_i/kettle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:nether_chalk",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

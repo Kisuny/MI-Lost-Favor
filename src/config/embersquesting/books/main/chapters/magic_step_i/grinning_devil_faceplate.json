@@ -1,0 +1,31 @@
+{
+  "title": "Grinning Devil Faceplate",
+  "description": [
+    "<wiggle amplitude=0.5 frequency=1.0 phase=1.0>Laughing in the face of danger</wiggle> pays off: this mask does not reduce the number of <curse><glitch frequency=0.7 shiftChance=0.06>Warp</glitch></curse> events, but makes them <positive>less severe</positive>.",
+    "",
+    "Masks are applied by <magic>infusing</magic> a <keyword>Thaumium Fortress Helm</keyword>, so you need one first.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<wiggle amplitude=0.5 frequency=1.0 phase=1.0>Смех в лицо опасности</wiggle> окупается: маска не уменьшает число событий <curse><glitch frequency=0.7 shiftChance=0.06>искажения</glitch></curse>, но делает их <positive>мягче</positive>.",
+    "",
+    "Маски наносятся <magic>инфузией</magic> на <keyword>таумиевый шлем крепости</keyword>, так что сначала нужен он."
+  ],
+  "icon": "thaumaturge:fortress_helm{\"thaumaturge:fortress_mask\":0}",
+  "x": 74,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_i/fortress_helm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:fortress_helm",
+      "components": "{\"thaumaturge:fortress_mask\":0}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

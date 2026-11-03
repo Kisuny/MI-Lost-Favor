@@ -1,0 +1,26 @@
+{
+  "title": "Broom Seat",
+  "description": [
+    "Having this on your broom will not only let another player ride it alongside you, but will also give the broom 9 inventory slots",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "на метле можно уместить  2 игрока, можно красить имеет 9 слотов"
+  ],
+  "icon": "hexerei:broom_seat",
+  "x": 24.5,
+  "y": 35,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:broom_seat",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

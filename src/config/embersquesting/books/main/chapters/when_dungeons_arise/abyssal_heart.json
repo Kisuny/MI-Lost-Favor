@@ -1,0 +1,23 @@
+{
+  "title": "Abyssal Heart",
+  "description": [
+    ""
+  ],
+  "icon": "enigmaticlegacyplus:abyssal_heart{\"enigmaticlegacyplus:eldritch_timer\":1.0f,\"enigmaticlegacyplus:taintable\":1b}",
+  "x": 38,
+  "y": 43,
+  "deps": {
+    "all": [
+      "first_steps/q67f8922e4579fa8c"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enigmaticlegacyplus:abyssal_heart",
+      "components": "{\"enigmaticlegacyplus:eldritch_timer\":1.0f,\"enigmaticlegacyplus:taintable\":1b}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

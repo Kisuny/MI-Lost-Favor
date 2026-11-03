@@ -1,0 +1,26 @@
+{
+  "title": "Filter",
+  "description": [
+    "Guess what a filter does! ;)",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Угадайте, для чего нужен фильтр! ;)"
+  ],
+  "icon": "moderndynamics:filter",
+  "x": 23,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "bronze_age/item_fluid_transfer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "moderndynamics:filter",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

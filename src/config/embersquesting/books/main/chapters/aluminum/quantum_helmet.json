@@ -1,0 +1,30 @@
+{
+  "title": "Quantum Helmet",
+  "icon": "advanced_ae:quantum_helmet",
+  "x": 31.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "aluminum/quantum_alloy_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:quantum_helmet",
+      "type": "item"
+    },
+    {
+      "item": "advanced_ae:quantum_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "advanced_ae:quantum_leggings",
+      "type": "item"
+    },
+    {
+      "item": "advanced_ae:quantum_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

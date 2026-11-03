@@ -1,0 +1,31 @@
+{
+  "title": "Yellow Dock Bush",
+  "description": [
+    "The bush will slowly grow and is harvestable.",
+    "",
+    "Can be found in swamps or bought from the Merchant."
+  ],
+  "icon": "hexerei:yellow_dock_leaves",
+  "x": 4,
+  "y": 54,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:yellow_dock_bush",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:yellow_dock_flowers",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:yellow_dock_leaves",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

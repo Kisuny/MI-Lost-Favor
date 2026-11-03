@@ -1,0 +1,26 @@
+{
+  "title": "Wand Cap Gold",
+  "description": [
+    "<keyword>Gold Caps</keyword> waste less vis than iron ones. Better caps mean <positive>cheaper spells</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Золотые наконечники</keyword> тратят меньше vis, чем железные. Лучше наконечники - <positive>дешевле заклинания</positive>."
+  ],
+  "icon": "thaumaturge:wand_cap_gold",
+  "x": 61.5,
+  "y": 32,
+  "deps": {
+    "all": [
+      "magic_step_i/wand_rod_greatwood"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_cap_gold",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

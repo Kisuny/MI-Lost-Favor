@@ -1,0 +1,31 @@
+{
+  "title": "Netherite Helmet",
+  "icon": "minecraft:netherite_helmet",
+  "x": 13,
+  "y": 28,
+  "deps": {
+    "all": [
+      "bronze_age/q4dd1404d1b9ca7f7",
+      "bronze_age/diamond_helmet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:netherite_helmet",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:netherite_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:netherite_leggings",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:netherite_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

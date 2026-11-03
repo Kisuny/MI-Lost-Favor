@@ -1,0 +1,30 @@
+{
+  "title": "Smelter Vent",
+  "description": [
+    "Every smeltery spits out some <poison>flux</poison>. <keyword>Auxiliary Venting Ports</keyword> attached to its sides filter the slurry and release the flux as <wind>harmless steam</wind>.",
+    "",
+    "One vent cuts flux by about <positive>a third</positive>, more vents help further, but with <property>diminishing returns</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Любая плавильня выбрасывает немного <poison>искажения</poison>. <keyword>Вспомогательные вентиляционные порты</keyword>, прикреплённые к её бокам, фильтруют смесь и выпускают искажение <wind>безвредным паром</wind>.",
+    "",
+    "Один порт снижает искажение примерно на <positive>треть</positive>, дополнительные помогают ещё, но с <property>убывающей отдачей</property>."
+  ],
+  "icon": "thaumaturge:smelter_vent",
+  "x": 52,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_i/smelter_thaumium"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:smelter_vent",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

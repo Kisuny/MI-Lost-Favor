@@ -1,0 +1,22 @@
+{
+  "title": "Kerosene Bucket",
+  "icon": "immersivepetroleum:kerosene_bucket",
+  "x": 17.5,
+  "y": 25,
+  "deps": {
+    "any": [
+      "petrochemical_party_pp/hydrotreater"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:kerosene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "hexagon"
+}

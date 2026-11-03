@@ -1,0 +1,19 @@
+{
+  "title": "Electric Bending Machine",
+  "icon": "extended_industrialization:electric_bending_machine",
+  "x": 22.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull",
+      "automation_n_stuff/piston"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:electric_bending_machine",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

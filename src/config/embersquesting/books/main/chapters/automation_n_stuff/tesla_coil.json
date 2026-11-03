@@ -1,0 +1,29 @@
+{
+  "title": "Tesla Coil",
+  "icon": "extended_industrialization:tesla_coil",
+  "x": 18.5,
+  "y": 14,
+  "deps": {
+    "all": [
+      "automation_n_stuff/advanced_machine_hull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:tesla_coil",
+      "type": "item"
+    },
+    {
+      "item": "extended_industrialization:tesla_receiver",
+      "type": "item"
+    },
+    {
+      "item": "extended_industrialization:tesla_calibrator",
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 2
+  },
+  "shape": "diamond"
+}

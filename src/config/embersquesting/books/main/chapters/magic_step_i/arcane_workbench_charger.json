@@ -1,0 +1,26 @@
+{
+  "title": "Arcane Workbench Charger",
+  "description": [
+    "Placed on top of the <keyword>Arcane Workbench</keyword> or <keyword>Focal Manipulator</keyword>, it lets them draw vis from the <property>neighbouring chunks</property> too.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ставится на <keyword>магический верстак</keyword> или <keyword>фокусный манипулятор</keyword> и позволяет им брать vis ещё и из <property>соседних чанков</property>."
+  ],
+  "icon": "thaumaturge:arcane_workbench_charger",
+  "x": 57,
+  "y": 40.5,
+  "deps": {
+    "all": [
+      "magic_step_i/recharge_pedestal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:arcane_workbench_charger",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

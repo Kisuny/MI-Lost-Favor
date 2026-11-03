@@ -1,0 +1,26 @@
+{
+  "title": "Bedrock Dust",
+  "description": [
+    "Nothing special, just some §l§6bedrock§r in your hand...",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ничего такого, да? Просто кусочек §l§6бедрока§r."
+  ],
+  "icon": "spectrum:bedrock_dust",
+  "x": 43.5,
+  "y": 39.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/bottle_of_ruin"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:bedrock_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

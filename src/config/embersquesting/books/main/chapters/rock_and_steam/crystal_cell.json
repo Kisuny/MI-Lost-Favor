@@ -1,0 +1,30 @@
+{
+  "title": "Crystal Cell",
+  "description": [
+    "The <keyword>Crystal Cell</keyword> is <positive>mass Ember storage</positive>. It starts small, but every Ember fuel item you feed it raises its capacity - and the crystal on top <wiggle amplitude=0.5 frequency=1.0 phase=1.0>physically grows</wiggle>.",
+    "",
+    "Its capacity can reach <property>1,440,000</property> Ember.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Кристаллический аккумулятор</keyword> - <positive>огромное хранилище эмбера</positive>. Сначала он маленький, но каждый скормленный ему эмберный предмет увеличивает ёмкость, и кристалл сверху <wiggle amplitude=0.5 frequency=1.0 phase=1.0>растёт прямо на глазах</wiggle>.",
+    "",
+    "Вместимость можно поднять до <property>1 440 000</property> эмбера."
+  ],
+  "icon": "embers:crystal_cell",
+  "x": 17,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/mechanical_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:crystal_cell",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

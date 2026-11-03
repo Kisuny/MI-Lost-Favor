@@ -1,0 +1,26 @@
+{
+  "title": "Blazing Hellshelf",
+  "description": [
+    "The <keyword>Blazing Hellshelf</keyword> is a stronger, more aggressive <keyword>Nether</keyword>-themed bookshelf than the Glowing Hellshelf, and it also reveals an extra hidden enchantment in the table's menu, same as the Shelf of Sight.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Blazing Hellshelf</keyword> - более сильная и агрессивная книжная полка в стиле <keyword>Нижнего мира</keyword>, чем Glowing Hellshelf, а также открывает дополнительное скрытое зачарование в меню стола, как и Shelf of Sight."
+  ],
+  "icon": "apothic_enchanting:blazing_hellshelf",
+  "x": 60,
+  "y": 56.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infused_hellshelf"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:blazing_hellshelf",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

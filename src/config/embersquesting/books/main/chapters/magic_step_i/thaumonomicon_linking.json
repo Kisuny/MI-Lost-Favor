@@ -1,0 +1,34 @@
+{
+  "title": "Thaumonomicon Linking",
+  "description": [
+    "The Thaumonomicon of Sharing only makes a one-time copy. This book forges a <curse><wave>lasting bond</wave></curse> between two minds.",
+    "",
+    "<named>How:</named> open it yourself to attune it, then hand it to your partner. When they open it, the book is spent - but from that moment <positive>every discovery either of you makes</positive> flows to the other, at any distance. The bond <property>never fades</property>.",
+    "",
+    "Infused from a <keyword>Thaumonomicon of Sharing</keyword> with two <curse>Void Seeds</curse>, a <keyword>Zombie Brain</keyword> and an <keyword>Eye of Ender</keyword> - so it needs the <curse>Eldritch</curse> branch. Sometimes you may wonder <glitch frequency=0.6 shiftChance=0.05>whose thoughts you are thinking</glitch>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Книга общего доступа делает лишь разовую копию. Эта книга создаёт <curse><wave>постоянную связь</wave></curse> между двумя разумами.",
+    "",
+    "<named>Как:</named> открой её сам, чтобы настроить, затем передай напарнику. Когда он её откроет, книга исчезнет - но с этого момента <positive>каждое открытие любого из вас</positive> передаётся другому на любом расстоянии. Связь <property>никогда не ослабевает</property>.",
+    "",
+    "Создаётся инфузией из <keyword>Таумономикона общего доступа</keyword> с двумя <curse>семенами пустоты</curse>, <keyword>мозгом зомби</keyword> и <keyword>оком Края</keyword> - так что нужна ветка <curse>Запредельного</curse>. Иногда ты будешь задумываться, <glitch frequency=0.6 shiftChance=0.05>чьи мысли сейчас думаешь</glitch>."
+  ],
+  "icon": "thaumaturge:thaumonomicon_linking",
+  "x": 41,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "magic_step_i/void_seed"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:thaumonomicon_linking",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Liquid Plastic Bucket",
+  "icon": "milf:liquid_plastic_bucket",
+  "x": 15,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/ethylene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:liquid_plastic_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

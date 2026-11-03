@@ -1,0 +1,39 @@
+{
+  "title": "Postbase",
+  "description": [
+    "Decoration stuff",
+    "mod allows you to have very tall posts with some different types to choose from, instead of just the Treated-Wood, Aluminum and Steel variants.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Этот мод позволяет устанавливать очень высокие столбы, предлагая на выбор несколько различных типов, а не только варианты из обработанной древесины, алюминия и стали."
+  ],
+  "icon": "immersiveposts:postbase",
+  "x": 13.5,
+  "y": 31,
+  "deps": {
+    "min": {
+      "count": 1,
+      "of": [
+        "simple_machinery/connector_mv",
+        "simple_machinery/connector_mv_relay",
+        "simple_machinery/connector_lv",
+        "simple_machinery/connector_lv_relay"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "immersiveposts:postbase",
+      "type": "item"
+    },
+    {
+      "tag": "milf:metal_fences",
+      "count": 3,
+      "type": "item",
+      "title": "Any Metal Fences"
+    }
+  ],
+  "shape": "rsquare"
+}

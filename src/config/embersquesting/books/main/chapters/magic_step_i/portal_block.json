@@ -1,0 +1,38 @@
+{
+  "title": "Portal Block",
+  "description": [
+    "An empty world with nothing in it, handy to build your base somewhere in <keyword>infinty</keyword>!",
+    "",
+    "P.S. To unlock the craft, improve your old pedestal!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Пустой мир в котором нет ничего, удобно чтобы построить свою базу где-то в <keyword>бесконечности</keyword>!",
+    "",
+    "P.S. Для открытия крафта улучшите свой старый пьедестал!"
+  ],
+  "icon": "map_atlases:textures/gui/sprites/dimensions/void.png",
+  "x": 50,
+  "y": 48.5,
+  "deps": {
+    "all": [
+      "magic_step_i/onyx_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "javd:portal_block",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Void Access ",
+      "id": "milf:stage/portal_block",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "heart"
+}

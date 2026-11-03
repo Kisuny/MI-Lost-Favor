@@ -1,0 +1,32 @@
+{
+  "title": "Crude Scythe",
+  "description": [
+    "<keyword>Scythe</keyword> has <property>unique enchantments</property> - try enchanting it!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Scythe</keyword> имеет <property>уникальные зачарования</property>, попробуйте её зачаровать!"
+  ],
+  "icon": "malum:crude_scythe",
+  "x": 82,
+  "y": 24,
+  "deps": {
+    "all": [
+      "magic_step_ii/reaper_scythe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:crude_scythe",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "malum:encyclopedia_arcana",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

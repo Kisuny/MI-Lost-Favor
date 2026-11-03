@@ -1,0 +1,22 @@
+{
+  "title": "Acrylic Acid Bucket",
+  "icon": "modern_industrialization:acrylic_acid_bucket",
+  "x": 13,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/propene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:acrylic_acid_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

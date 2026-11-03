@@ -1,0 +1,26 @@
+{
+  "title": "Sigil Of Supremacy",
+  "description": [
+    "<property>Overcharges</property> every <property>Affix</property> on an <keyword>Affix Item</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>Увеличивает силу</property> всех <property>аффиксов</property> на <keyword>предмете с аффиксами</keyword>."
+  ],
+  "icon": "apotheosis:sigil_of_supremacy",
+  "x": 8.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "bronze_age/gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apotheosis:sigil_of_supremacy",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

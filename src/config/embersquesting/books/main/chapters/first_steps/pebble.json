@@ -1,0 +1,23 @@
+{
+  "title": "Pebble",
+  "description": [
+    "Pebbles have a chance of dropping when breaking gravel, just like flint, but can also be obtained by left clicking cobblestone on stone or by breaking your fingers by the process of obliterating cobblestone splinters barehanded, the choice is yours \\<3."
+  ],
+  "icon": "ytech:pebble",
+  "x": 2.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "first_steps/gravel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:pebble",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

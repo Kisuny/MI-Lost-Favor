@@ -1,0 +1,23 @@
+{
+  "title": "Mech Trowel",
+  "description": [
+    "The Trowel will let you give more interesting textures to walls and floors. ",
+    "",
+    "When holding and using the trowel, it will place down random blocks from your hotbar."
+  ],
+  "icon": "mechtrowel:mech_trowel",
+  "x": 32,
+  "y": 21,
+  "deps": {
+    "all": [
+      "first_steps/tin_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "mechtrowel:mech_trowel",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

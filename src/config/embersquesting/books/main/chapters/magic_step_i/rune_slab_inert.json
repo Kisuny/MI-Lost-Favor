@@ -1,0 +1,21 @@
+{
+  "title": "Rune Slab Inert",
+  "description": [
+    "Rune Slabs allow for a few useful rituals, but in this form they still do nothing. You will need to smash them with an anvil together with some other ingredient to infuse them first."
+  ],
+  "icon": "paganbless:rune_slab_inert",
+  "x": 8.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mixing_cauldron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:rune_slab_inert",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

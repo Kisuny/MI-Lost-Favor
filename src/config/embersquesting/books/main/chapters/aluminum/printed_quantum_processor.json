@@ -1,0 +1,23 @@
+{
+  "title": "Printed Quantum Processor",
+  "icon": "advanced_ae:quantum_processor_press",
+  "x": 18,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "aluminum/blueprint",
+      "aluminum/reaction_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:printed_quantum_processor",
+      "type": "item"
+    },
+    {
+      "item": "advanced_ae:quantum_processor_press",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

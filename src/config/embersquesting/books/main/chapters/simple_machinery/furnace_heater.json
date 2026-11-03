@@ -1,0 +1,22 @@
+{
+  "title": "Furnace Heater",
+  "description": [
+    "<property>Free furnaces</property>"
+  ],
+  "icon": "immersiveengineering:furnace_heater",
+  "x": 14,
+  "y": 29,
+  "deps": {
+    "all": [
+      "simple_machinery/wirecoil_electrum",
+      "simple_machinery/wirecoil_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:furnace_heater",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

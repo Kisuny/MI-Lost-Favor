@@ -1,0 +1,26 @@
+{
+  "title": "Chorus Blade",
+  "description": [
+    "<property>RMB</property> <wiggly>teleports</wiggly> you to a random spot nearby - perfect for dodging a heavy blow.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> <wiggly>телепортирует</wiggly> тебя в случайную точку рядом - идеально, чтобы увернуться от тяжёлого удара."
+  ],
+  "icon": "legendary_monsters:chorus_blade",
+  "x": 25.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q3d7c097e1f8bbf2e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:chorus_blade",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

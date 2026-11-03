@@ -1,0 +1,27 @@
+{
+  "title": "Poison Blend",
+  "description": [
+    "After reviewing my old studies, I managed to obtain some recipe for making specialty blends for consumption. Maybe I'll try some a little each day. Although not a leaf more. This is a rather dangerous game.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Пересмотрев свои старые исследования, мне удалось раздобыть несколько рецептов приготовления специальных смесей для употребления. Возможно, я буду пробовать понемногу каждый день. Но не больше листика. Это довольно опасная игра."
+  ],
+  "icon": "toxony:poison_blend",
+  "x": 21.5,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_paste"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:poison_blend",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

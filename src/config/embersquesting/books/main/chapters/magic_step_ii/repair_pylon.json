@@ -1,0 +1,26 @@
+{
+  "title": "Repair Pylon",
+  "description": [
+    "Working with the <keyword>Spirit Crucible</keyword> tends to <curse>wear down and fracture</curse> your <keyword>Impetus</keyword>. Feed the <keyword>Repair Pylon</keyword> some <warning>Spirit Arcana</warning> plus a matching repair material, and it will <positive>automatically find and repair</positive> any damaged Impetus sitting on a nearby Item Pedestal, Item Stand or in the Crucible itself. It can also repair <keyword>ordinary and magical tools</keyword> the same way using <warning>Spirits</warning> instead of experience - restoring <property>half their durability</property>, or <property>three quarters</property> for gear made from materials that resonate with spirits.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Работа с <keyword>Spirit Crucible</keyword> постепенно <curse>изнашивает и раскалывает</curse> ваш <keyword>Impetus</keyword>. Снабдите <keyword>Repair Pylon</keyword> немного <warning>души арканы</warning> и подходящим материалом для ремонта, и он <positive>сам найдёт и починит</positive> любой повреждённый Impetus на соседнем постаменте, стенде или прямо в тигле. Точно так же он умеет чинить <keyword>обычные и магические инструменты</keyword>, используя <warning>духов</warning> вместо опыта - восстанавливая <property>половину прочности</property>, а для снаряжения из материалов, резонирующих с духами - <property>три четверти</property>."
+  ],
+  "icon": "malum:repair_pylon",
+  "x": 91.5,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:repair_pylon",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

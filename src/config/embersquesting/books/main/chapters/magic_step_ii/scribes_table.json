@@ -1,0 +1,34 @@
+{
+  "title": "Scribes Table",
+  "description": [
+    "In this pack glyphs aren't crafted directly at the <keyword>Scribe's Table</keyword> - instead, craft a <keyword>Codex Entry</keyword>, <keyword>Lost Codex Entry</keyword> or <keyword>Ancient Codex Entry</keyword> to get a <positive>random glyph</positive> of that tier.",
+    "",
+    "The table is still useful together with a <keyword>Blank Parchment</keyword> and your spell book: inscribe a spell recipe onto the parchment, then place it into a <keyword>Spell Turret</keyword> so it automatically casts your spell at the cost of <property>source</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В этом паке глифы не создаются напрямую на <keyword>Столе писца</keyword> - вместо этого крафтите <keyword>Codex Entry</keyword>, <keyword>Lost Codex Entry</keyword> или <keyword>Ancient Codex Entry</keyword>, чтобы получить <positive>случайный глиф</positive> соответствующего уровня.",
+    "",
+    "Стол при этом всё ещё пригодится вместе с <keyword>чистым пергаментом</keyword> и спелл-буком: запишите на пергамент рецепт заклинания и поместите его в <keyword>Spell Turret</keyword>, чтобы она автоматически исполняла ваше заклинание ценой <property>сурса</property>."
+  ],
+  "icon": "ars_nouveau:scribes_table",
+  "x": 112,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/basic_spell_turret"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:scribes_table",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:blank_parchment",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

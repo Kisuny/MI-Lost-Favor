@@ -1,0 +1,26 @@
+{
+  "title": "Spell Bow",
+  "description": [
+    "The <keyword>Spell Bow</keyword> is inscribed with a spell at the Scribe's Table - if you have enough source, your arrows become Spell Arrows that apply it on hit. Works even without arrows in your inventory (a harmless spell arrow is used), and Augment Arrows can empower the effect.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Лук заклинаний</keyword> получает заклинание на Столе писца - если хватает сурса, ваши стрелы становятся заклинательными и применяют эффект при попадании. Работает даже без стрел в инвентаре (используется безвредная заклинательная стрела), а стрелы-усилители могут усиливать эффект."
+  ],
+  "icon": "ars_nouveau:spell_bow",
+  "x": 108.5,
+  "y": 12,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:spell_bow",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

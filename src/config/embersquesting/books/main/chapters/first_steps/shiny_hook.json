@@ -1,0 +1,27 @@
+{
+  "title": "Shiny Hook",
+  "description": [
+    "A very <positive>effective</positive> hook for <named>treasure fishing</named>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Очень <positive>эффективный</positive> крючок для <named>ловли сокровищ</named>!"
+  ],
+  "icon": "starcatcher:shiny_hook",
+  "x": 37,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "first_steps/any_tackle_boxes"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:shiny_hook",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

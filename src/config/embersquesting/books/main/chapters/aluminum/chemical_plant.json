@@ -1,0 +1,18 @@
+{
+  "title": "Chemical Plant",
+  "icon": "modern_industrialization:chemical_plant",
+  "x": 1,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "aluminum/reinforced_steel_machine_casing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:chemical_plant",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

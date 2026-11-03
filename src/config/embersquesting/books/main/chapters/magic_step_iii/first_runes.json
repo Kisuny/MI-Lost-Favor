@@ -1,0 +1,22 @@
+{
+  "title": "First Runes",
+  "description": [
+    "Runes are inscribed plates placed around the <named>Ara Vitae</named> basin to enhance it. Craft <keyword>8 Rune Blanks</keyword> as the foundation - these will be upgraded into specialized runes."
+  ],
+  "icon": "neovitae:rune_blank",
+  "x": 32.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/tabula_rasa"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:rune_blank",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

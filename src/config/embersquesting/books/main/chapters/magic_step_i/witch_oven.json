@@ -1,0 +1,30 @@
+{
+  "title": "Witch Oven",
+  "description": [
+    "The <keyword>witch's oven</keyword> is a modified furnace used to collect <keyword>byproducts</keyword> and <keyword>fumes</keyword> made from burning materials.",
+    "",
+    "Unlike a furnace, this oven <warning>cannot process ores</warning>. <positive>Place</positive> a <keyword>clay jar</keyword> into the middle slot for a chance to collect fumes.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ведьмина печь</keyword> - это модифицированная печь, используемая для сбора <keyword>побочных продуктов</keyword> и <keyword>дыма</keyword>, образующихся при горении материалов.",
+    "",
+    "В отличие от печи, эта печь <warning>не может перерабатывать руды</warning>. <positive>Поместите</positive> <keyword>глиняный кувшин</keyword> в центральный слот, чтобы собирать дым."
+  ],
+  "icon": "enchanted:witch_oven",
+  "x": 34.5,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:witch_oven",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

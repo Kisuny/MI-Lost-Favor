@@ -1,0 +1,22 @@
+{
+  "title": "Bottle Of Ruin",
+  "description": [
+    "<warning><shake amplitude=0.4 frequency=1.4>⚠⚠⚠⚠WARNING!!!!⚠⚠⚠⚠</shake></warning>"
+  ],
+  "icon": "spectrum:bottle_of_ruin",
+  "x": 44.5,
+  "y": 41.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/raw_azurite"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:bottle_of_ruin",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

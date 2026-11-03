@@ -1,0 +1,26 @@
+{
+  "title": "Fluid Dial",
+  "description": [
+    "The <keyword>Fluid Dial</keyword> shows <property>which fluid and how much</property> is in the tank it is attached to.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Индикатор жидкости</keyword> показывает, <property>какая жидкость и сколько</property> находится в баке, к которому он прикреплён."
+  ],
+  "icon": "embers:fluid_dial",
+  "x": 13,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/lead_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:fluid_dial",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

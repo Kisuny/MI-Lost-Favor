@@ -1,0 +1,25 @@
+{
+  "title": "Bronze Tank",
+  "description": [
+    "<keyword>Bronze tanks</keyword> can store <keyword>4 buckets of fluid</keyword> each, you can use them to interact with machines, and you can place them in the world.",
+    "",
+    "When placed in the world, you can <positive>right-click</positive> them with <keyword>buckets or other tanks</keyword> to transfer fluids.",
+    "",
+    "Also, you can <positive>stack them</positive> in your inventory if they have the same contents. How nifty!"
+  ],
+  "icon": "modern_industrialization:bronze_tank",
+  "x": 10,
+  "y": 6,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_tank",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

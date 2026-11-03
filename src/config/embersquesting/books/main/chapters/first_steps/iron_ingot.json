@@ -1,0 +1,47 @@
+{
+  "title": "Iron Ingot",
+  "description": [
+    "New items interaction"
+  ],
+  "icon": "minecraft:iron_ingot",
+  "x": 37,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "first_steps/iron_bloom",
+      "first_steps/bronze_anvil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:iron_ingot",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "New items",
+      "id": "milf:stage/iron_ingot",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_iron",
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_overworld",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "title": "New loot in looting chests",
+      "id": "milf:stage/iron_ingot_loot",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Pewter Blend",
+  "icon": "eidolon_repraised:pewter_blend",
+  "x": 61,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_ii/codex"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:pewter_blend",
+      "type": "item"
+    },
+    {
+      "item": "eidolon_repraised:pewter_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

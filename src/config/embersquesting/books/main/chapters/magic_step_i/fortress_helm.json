@@ -1,0 +1,35 @@
+{
+  "title": "Fortress Helm",
+  "description": [
+    "<keyword>Thaumium Fortress</keyword> armor - heavy, sturdy and infused for serious protection.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Броня <keyword>таумиевой крепости</keyword> - тяжёлая, прочная и усиленная инфузией для серьёзной защиты."
+  ],
+  "icon": "thaumaturge:fortress_helm",
+  "x": 73,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_i/traveller_boots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:fortress_helm",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:fortress_chest",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:fortress_legs",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 1.5
+}

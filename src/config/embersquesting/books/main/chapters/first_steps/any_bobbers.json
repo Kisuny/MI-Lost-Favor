@@ -1,0 +1,27 @@
+{
+  "title": "Any Bobbers",
+  "description": [
+    "We recommend that you read about each <wind>type of bobber</wind>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Мы рекомендуем ознакомиться с каждым <wind>видом поплавков</wind>!"
+  ],
+  "x": 38,
+  "y": 27,
+  "deps": {
+    "all": [
+      "first_steps/any_tackle_boxes"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "starcatcher:bobbers",
+      "type": "item",
+      "title": "Any Bobbers"
+    }
+  ],
+  "optional": true,
+  "shape": "circle"
+}

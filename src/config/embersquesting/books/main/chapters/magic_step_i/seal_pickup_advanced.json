@@ -1,0 +1,30 @@
+{
+  "title": "Seal Pickup Advanced",
+  "description": [
+    "The advanced <keyword>Collect</keyword> seal: the same job of picking up dropped items in an area.",
+    "",
+    "The advanced version has a <positive>9-slot filter</positive> instead of 1 and works only with <magic>Smart</magic> golems (a head with a biothaumic brain).",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Продвинутая печать <keyword>сбора</keyword>: та же работа - подбирать выпавшие предметы в зоне.",
+    "",
+    "Продвинутая версия: фильтр на <positive>9 слотов</positive> вместо 1, но работает только с <magic>умными</magic> големами (Smart - голова с биотаумическим мозгом)."
+  ],
+  "icon": "thaumaturge:seal_pickup_advanced",
+  "x": 51.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_pickup"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_pickup_advanced",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

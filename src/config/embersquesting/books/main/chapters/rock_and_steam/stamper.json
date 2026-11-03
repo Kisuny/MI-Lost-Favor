@@ -1,0 +1,39 @@
+{
+  "title": "Stamper",
+  "description": [
+    "The <keyword>Stamper</keyword> shapes molten metal into useful forms.",
+    "",
+    "<named>Setup:</named> place the <keyword>Stamper</keyword> <property>two blocks above</property> the <keyword>Stamp Base</keyword>, with <warning>one empty block</warning> between them - the press needs room to <shake amplitude=0.3 frequency=1.0>slam down</shake>. Give the Stamper Ember and a <property>stamp</property>, then pipe molten metal into the Stamp Base.",
+    "",
+    "A <keyword>Bin</keyword> under the Stamp Base collects the products automatically.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Штамповочный пресс</keyword> придаёт расплавленному металлу нужную форму.",
+    "",
+    "<named>Сборка:</named> поставьте <keyword>пресс</keyword> <property>на два блока выше</property> <keyword>Депо штамповочного пресса</keyword>, оставив между ними <warning>один пустой блок</warning> - прессу нужно место, чтобы <shake amplitude=0.3 frequency=1.0>опуститься</shake>. Подайте в пресс эмбер, вставьте в него <property>пресс-форму</property>, а металл заливайте в депо.",
+    "",
+    "<keyword>Свинцовый контейнер</keyword> под депо будет сам собирать продукцию."
+  ],
+  "icon": "embers:stamper",
+  "x": 5,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q20cff974a8f0ecd2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:stamper",
+      "type": "item"
+    },
+    {
+      "item": "embers:stamp_base",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 2.0
+}

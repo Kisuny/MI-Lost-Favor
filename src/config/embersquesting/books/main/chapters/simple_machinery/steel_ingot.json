@@ -1,0 +1,26 @@
+{
+  "title": "Steel Ingot",
+  "icon": "modern_industrialization:steel_ingot",
+  "x": 13.5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "simple_machinery/arc_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_ingot",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "immersiveengineering:storage_steel",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

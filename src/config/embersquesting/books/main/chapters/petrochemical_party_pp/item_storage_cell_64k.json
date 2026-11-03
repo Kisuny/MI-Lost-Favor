@@ -1,0 +1,18 @@
+{
+  "title": "Item Storage Cell 64k",
+  "icon": "ae2:item_storage_cell_64k",
+  "x": 16.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/cell_component_64k"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:item_storage_cell_64k",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

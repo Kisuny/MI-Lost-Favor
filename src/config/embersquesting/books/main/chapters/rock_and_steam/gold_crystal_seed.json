@@ -1,0 +1,28 @@
+{
+  "title": "Gold Crystal Seed",
+  "description": [
+    "Place the <keyword>Gold Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>gold nuggets</positive>. An <property>endless</property> source of gold, no mining needed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Поставьте <keyword>Золотое кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>золотые самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
+  ],
+  "icon": "embers:gold_crystal_seed",
+  "x": 23,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_injector",
+      "rock_and_steam/silver_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:gold_crystal_seed",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

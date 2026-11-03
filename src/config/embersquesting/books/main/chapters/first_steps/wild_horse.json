@@ -1,0 +1,20 @@
+{
+  "title": "Wild Horse",
+  "icon": "ytech:wild_horse",
+  "x": 5.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "first_steps/mammoth_tusk",
+      "first_steps/rhino_horn"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:wild_horse",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "pentagon"
+}

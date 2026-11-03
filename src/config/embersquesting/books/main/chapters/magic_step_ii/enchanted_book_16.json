@@ -1,0 +1,23 @@
+{
+  "title": "Enchanted Book",
+  "icon": "minecraft:enchanted_book{\"minecraft:stored_enchantments\":{levels:{\"spectrum:disarming\":1}}}",
+  "x": 13,
+  "y": 32,
+  "deps": {
+    "all": [
+      "magic_step_ii/stratine_fragments",
+      "magic_step_ii/enchanter",
+      "magic_step_ii/storm_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:disarming\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

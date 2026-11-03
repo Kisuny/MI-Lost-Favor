@@ -1,0 +1,21 @@
+{
+  "title": "Bronze Macerator",
+  "description": [
+    "<positive>Crush ore</positive> and other things into <keyword>powder</keyword>, with <keyword>increased yield</keyword>!"
+  ],
+  "icon": "modern_industrialization:bronze_macerator",
+  "x": 14,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_macerator",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

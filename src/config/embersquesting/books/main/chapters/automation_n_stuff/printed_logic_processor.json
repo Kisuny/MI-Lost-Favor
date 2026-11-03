@@ -1,0 +1,22 @@
+{
+  "title": "Printed Logic Processor",
+  "icon": "ae2:printed_logic_processor",
+  "x": 21.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "automation_n_stuff/blueprint_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:printed_logic_processor",
+      "type": "item"
+    },
+    {
+      "item": "ae2:logic_processor_press",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

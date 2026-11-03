@@ -1,0 +1,20 @@
+{
+  "title": "Assembler",
+  "icon": "modern_industrialization:assembler",
+  "x": 21,
+  "y": 24,
+  "deps": {
+    "all": [
+      "automation_n_stuff/robot_arm",
+      "automation_n_stuff/silicon_battery",
+      "automation_n_stuff/large_pump"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:assembler",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Steel Packer",
+  "description": [
+    "No more anvils ^o^"
+  ],
+  "icon": "modern_industrialization:steel_packer",
+  "x": 21,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_machine_bit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_packer",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

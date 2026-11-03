@@ -1,0 +1,21 @@
+{
+  "title": "Magnet Card",
+  "description": [
+    "<keyword>Magnet</keyword>? And <positive>configurable</positive>??? I'll take 2 please"
+  ],
+  "icon": "ae2wtlib:magnet_card",
+  "x": 21.5,
+  "y": 6,
+  "deps": {
+    "all": [
+      "aluminum/wireless_access_point"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2wtlib:magnet_card",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

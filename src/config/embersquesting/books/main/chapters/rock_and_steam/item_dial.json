@@ -1,0 +1,26 @@
+{
+  "title": "Item Dial",
+  "description": [
+    "The <keyword>Item Dial</keyword> shows the <property>contents of an inventory</property> it is attached to, slot by slot.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Индикатор предметов</keyword> показывает <property>содержимое инвентаря</property>, к которому прикреплён, по слотам."
+  ],
+  "icon": "embers:item_dial",
+  "x": 13,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/lead_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:item_dial",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Blank Thread",
+  "description": [
+    "The <keyword>Blank Thread</keyword> is the base for crafting a <keyword>Thread</keyword> - imbue it in the <keyword>Enchanting Apparatus</keyword> with the right ingredients to turn it into a specific perk, then inscribe it onto armor at the <keyword>Alteration Table</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Чистая нить</keyword> - основа для создания <keyword>нити</keyword> с эффектом: обработайте её в <keyword>Зачаровывающем аппарате</keyword> с нужными ингредиентами, чтобы превратить в конкретный перк, а затем впишите в броню на <keyword>Столе изменений</keyword>."
+  ],
+  "icon": "ars_nouveau:blank_thread",
+  "x": 120.5,
+  "y": 16.5,
+  "deps": {
+    "min": {
+      "count": 2,
+      "of": [
+        "magic_step_ii/battlemage_hood",
+        "magic_step_ii/arcanist_hood",
+        "magic_step_ii/sorcerer_hood",
+        "magic_step_ii/alteration_table"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:blank_thread",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

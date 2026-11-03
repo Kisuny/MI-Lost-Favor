@@ -1,0 +1,19 @@
+{
+  "title": "Silicon Wafer",
+  "icon": "modern_industrialization:silicon_wafer",
+  "x": 10.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "aluminum/atomic_forge_block",
+      "aluminum/monocrystalline_silicon"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:silicon_wafer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

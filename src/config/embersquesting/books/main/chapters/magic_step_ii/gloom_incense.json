@@ -1,0 +1,19 @@
+{
+  "title": "Gloom Incense",
+  "icon": "eidolon_repraised:gloom_incense",
+  "x": 62.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_ii/mirecap"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:gloom_incense",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

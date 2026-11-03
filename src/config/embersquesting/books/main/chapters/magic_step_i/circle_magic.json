@@ -1,0 +1,52 @@
+{
+  "title": "Circle Magic",
+  "description": [
+    {
+      "width": 100,
+      "height": 100,
+      "texture": "enchanted:textures/gui/modopedia/circle_magic.png",
+      "type": "image"
+    },
+    "",
+    "<keyword>Circle Magic</keyword> are powerful rituals that allow one to perform many feats: <positive>teleportation</positive>, <positive>protection from monsters</positive>, <warning>entrapping monsters</warning> or even <positive>drawing out raw materials</positive> from their underground veins without a single strike of a pickaxe.",
+    "",
+    "To cast <keyword>Circle Magic</keyword>, draw the specific circle for the specific ritual you want to perform, as shown in the <named>Art of Witchcraft</named> book. Then, throw the spell materials into the circle, near the <property>golden glyph</property> at the center. Finally, right click the golden glyph to activate the ritual.",
+    "",
+    "Most rituals require <property>Altar Power</property>. They must be cast near an altar with enough power, but some rituals allow for that requirement to be replaced with a <keyword>Charged Attuned Crystal</keyword> thrown in with the materials.",
+    "",
+    "Consult the <named>Art of Witchcraft</named> book to see what rituals are available and how to perform them.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "width": 100,
+      "height": 100,
+      "texture": "enchanted:textures/gui/modopedia/circle_magic.png",
+      "type": "image"
+    },
+    "",
+    "<keyword>Круговая магия</keyword> - это мощные ритуалы, позволяющие творить множество вещей: <positive>телепортацию</positive>, <positive>защиту от монстров</positive>, <warning>заманивание монстров в ловушку</warning> или даже <positive>добычу сырья</positive> прямо из подземных жил без единого удара киркой.",
+    "",
+    "Чтобы сотворить <keyword>круговую магию</keyword>, нарисуйте нужный круг для выбранного ритуала, как показано в книге <named>Искусство колдовства</named>. Затем бросьте материалы ритуала в круг, рядом с <property>золотым глифом</property> в центре. Наконец, кликните ПКМ по золотому глифу, чтобы активировать ритуал.",
+    "",
+    "Большинству ритуалов требуется <property>сила алтаря</property>. Их нужно творить рядом с алтарём с достаточной силой, но для некоторых ритуалов это требование можно заменить, бросив вместе с материалами <keyword>заряженный настроенный кристалл</keyword>.",
+    "",
+    "Загляните в книгу <named>Искусство колдовства</named>, чтобы узнать, какие ритуалы доступны и как их творить."
+  ],
+  "icon": "enchanted:circle_talisman",
+  "x": 34.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_i/altar"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Checkmark"
+    }
+  ],
+  "shape": "heart"
+}

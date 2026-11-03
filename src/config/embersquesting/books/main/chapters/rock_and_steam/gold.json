@@ -1,0 +1,27 @@
+{
+  "title": "Gold",
+  "icon": "minecraft:raw_gold",
+  "x": 6,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Gold"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:raw_gold\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

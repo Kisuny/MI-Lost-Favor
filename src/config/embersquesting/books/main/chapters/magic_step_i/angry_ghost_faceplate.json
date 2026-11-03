@@ -1,0 +1,31 @@
+{
+  "title": "Angry Ghost Faceplate",
+  "description": [
+    "When something hits you while you wear this grim mask, the attacker has a chance to be struck by <curse><shake amplitude=0.35 frequency=1.2>Withering</shake></curse>. Serves them right.",
+    "",
+    "Masks are applied by <magic>infusing</magic> a <keyword>Thaumium Fortress Helm</keyword>, so you need one first.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Когда тебя бьют, пока на тебе эта мрачная маска, у нападающего есть шанс получить <curse><shake amplitude=0.35 frequency=1.2>иссушение</shake></curse>. Поделом.",
+    "",
+    "Маски наносятся <magic>инфузией</magic> на <keyword>таумиевый шлем крепости</keyword>, так что сначала нужен он."
+  ],
+  "icon": "thaumaturge:fortress_helm{\"thaumaturge:fortress_mask\":1}",
+  "x": 75,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_i/fortress_helm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:fortress_helm",
+      "components": "{\"thaumaturge:fortress_mask\":1}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

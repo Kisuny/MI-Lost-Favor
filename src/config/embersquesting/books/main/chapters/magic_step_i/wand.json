@@ -1,0 +1,26 @@
+{
+  "title": "Wand",
+  "description": [
+    "The <keyword>Coille Slat</keyword> grants <positive>growth to plants</positive> and can be obtained by using the <keyword>Emerald Ritual</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Coille Slat</keyword> - даёт <positive>рост растениям</positive>"
+  ],
+  "icon": "paganbless:wand",
+  "x": 10.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_emerald"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:wand",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

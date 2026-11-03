@@ -1,0 +1,34 @@
+{
+  "title": "Orb Filling Link",
+  "description": [
+    "The Orb Vitae Link doesn't craft - it charges. Seat a Blood Orb inside (use with orb in hand, empty-handed to take it back), and it pulls Essentia Vitae from its bound altar straight into the orb owner's Anima, at the altar's full tier and runes, until the network is full.",
+    "",
+    "The Link sits lowest in the chain: it draws only while the altar is idle and no Vitae Link is crafting, sipping leftover essence so it never starves a working altar.",
+    "",
+    "Apply a redstone signal to pause it - while powered, charging stops. Its comparator output rises with how full the owner's Anima is, ideal for switching off your blood engines once you are topped off.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Orb Vitae Link не крафтит - он заряжает. Вставь Blood Orb (используй с орбом в руке, пустой рукой - забрать), и Link будет тянуть Essentia Vitae из связанного алтаря прямо в Anima владельца орба, на полном тире алтаря со всеми рунными бонусами, пока сеть не заполнится.",
+    "",
+    "Link сидит в самом низу цепочки приоритетов: тянет Essentia Vitae только пока алтарь простаивает и ни один Vitae Link не крафтит. Так он никогда не перехватывает ресурс у работающего алтаря.",
+    "",
+    "Подай редстоун-сигнал чтобы поставить Link на паузу - пока сигнал есть, зарядка остановлена. Компаратор на выходе показывает насколько заполнена Anima владельца - идеально для автоматического отключения кровяных двигателей когда бар полон."
+  ],
+  "icon": "neovitae:orb_filling_link",
+  "x": 33,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/vitae_link"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:orb_filling_link",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

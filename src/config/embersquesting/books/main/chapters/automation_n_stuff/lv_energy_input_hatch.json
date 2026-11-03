@@ -1,0 +1,22 @@
+{
+  "title": "Lv Energy Input Hatch",
+  "icon": "modern_industrialization:lv_energy_input_hatch",
+  "x": 20.5,
+  "y": 34,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:lv_energy_input_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:lv_energy_output_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Advanced Large Steam Boiler",
+  "icon": "modern_industrialization:advanced_large_steam_boiler",
+  "x": 19.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "bronze_age/large_steam_boiler",
+      "automation_n_stuff/large_pump"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:advanced_large_steam_boiler",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Smelter Thaumium",
+  "description": [
+    "A <magic>Thaumium</magic> smeltery: about <positive>90% efficiency</positive> instead of 80%, and faster.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Плавильня из <magic>таумиума</magic>: около <positive>90% эффективности</positive> вместо 80%, и работает быстрее."
+  ],
+  "icon": "thaumaturge:smelter_thaumium",
+  "x": 50,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:smelter_thaumium",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 1.5
+}

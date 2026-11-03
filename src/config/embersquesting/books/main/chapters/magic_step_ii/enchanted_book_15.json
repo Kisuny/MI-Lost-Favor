@@ -1,0 +1,21 @@
+{
+  "title": "Enchanted Book",
+  "icon": "minecraft:enchanted_book{\"minecraft:stored_enchantments\":{levels:{\"spectrum:improved_critical\":1}}}",
+  "x": 15,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:improved_critical\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

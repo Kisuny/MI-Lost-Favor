@@ -1,0 +1,26 @@
+{
+  "title": "Sanguine Amulet",
+  "description": [
+    "The <blood>Sanguine Amulet</blood> quietly stores up the health you regenerate while at full hearts, then releases that <positive>stored healing</positive> the moment you're hurt.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<blood>Кровавый амулет</blood> незаметно копит здоровье, которое вы восстанавливаете на полном запасе сердец, а затем высвобождает этот <positive>запас исцеления</positive> в момент, когда вы получаете урон."
+  ],
+  "icon": "eidolon_repraised:sanguine_amulet",
+  "x": 67,
+  "y": 22,
+  "deps": {
+    "all": [
+      "magic_step_ii/shadow_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:sanguine_amulet",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

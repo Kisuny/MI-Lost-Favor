@@ -1,0 +1,21 @@
+{
+  "title": "Ender Splice",
+  "icon": "spectrum:ender_splice",
+  "x": 4.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q173490a557431c56",
+      "magic_step_ii/neolith"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:ender_splice",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

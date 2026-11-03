@@ -1,0 +1,19 @@
+{
+  "title": "Titanium Ingot",
+  "icon": "modern_industrialization:titanium_ingot",
+  "x": 5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "aluminum/titanium_ore",
+      "aluminum/kanthal_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:titanium_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Carving Knife",
+  "description": [
+    "The <keyword>Carving Knife</keyword> is a simple tool crafted from a <property>Stick</property>, an <property>Iron Ingot</property> and a <bone>Crystallized Bond</bone>. While it can be used as a Sword in combat - even supporting the same enchantments - it is <warning>ill-advised</warning> to do so. Instead, it is much more useful for <positive>carving off flesh</positive> from Tissue blocks, tearing scutes off of Turtles or harvesting the horns of a Goat.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Нож для разделки</keyword> — это простой инструмент, изготовленный из <property>палки</property>, <property>железного слитка</property> и <bone>кристаллизованной связки</bone>. Хотя его можно использовать в бою как меч — он даже поддерживает те же зачарования — делать это <warning>не рекомендуется</warning>. Вместо этого он гораздо полезнее для <positive>снятия мяса</positive> с блоков ткани, сдирания панциря с черепах или сбора рогов козлов."
+  ],
+  "icon": "risus:carving_knife",
+  "x": 17,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:carving_knife",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

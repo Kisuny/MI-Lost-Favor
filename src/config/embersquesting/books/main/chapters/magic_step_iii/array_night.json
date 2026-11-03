@@ -1,0 +1,25 @@
+{
+  "title": "Array Night",
+  "description": [
+    "<positive>Draws</positive> the world forward to the next <magic>sunset</magic>. <warning>Consumed on use</warning>."
+  ],
+  "icon": "neovitae:array_night",
+  "x": 37,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/time_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_night",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Hungry Chest",
+  "description": [
+    "A <keyword>Hungry Chest</keyword> <shake amplitude=0.3 frequency=1.0>gobbles up</shake> any items that touch it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Голодный сундук</keyword> <shake amplitude=0.3 frequency=1.0>заглатывает</shake> любые предметы, которые его касаются."
+  ],
+  "icon": "thaumaturge:hungry_chest",
+  "x": 43,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_i/goggles_revealing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:hungry_chest",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

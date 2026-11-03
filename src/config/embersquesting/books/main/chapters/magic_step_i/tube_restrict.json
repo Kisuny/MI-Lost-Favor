@@ -1,0 +1,26 @@
+{
+  "title": "Tube Restrict",
+  "description": [
+    "A normal tube that <property>halves</property> any suction passing through it. Useful for setting priorities: the branch behind a restricted tube pulls weaker than the others.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обычная труба, которая <property>вдвое ослабляет</property> проходящее через неё всасывание. Удобно для приоритетов: ветка за такой трубой тянет слабее остальных."
+  ],
+  "icon": "thaumaturge:tube_restrict",
+  "x": 46.5,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tube_restrict",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

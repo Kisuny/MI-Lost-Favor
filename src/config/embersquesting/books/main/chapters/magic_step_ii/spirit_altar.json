@@ -1,0 +1,31 @@
+{
+  "title": "Spirit Altar",
+  "description": [
+    "The <pulse><keyword>Spirit Altar</keyword></pulse> is the heart of Malum's infusion crafting. Kill mobs with a <keyword>Scythe</keyword> to reap their <warning>Spirits</warning> - place the <keyword>base item</keyword> together with the required <warning>Spirits</warning> on the altar itself, then arrange the other crafting ingredients on the surrounding <keyword>Runewood Item Pedestals</keyword>, and the altar will <wave><positive>weave</positive></wave> them together into the infused result.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<pulse><keyword>Алтарь духов</keyword></pulse> - сердце инфузионного крафта в Malum. Убивайте мобов <keyword>косой</keyword>, чтобы пожинать их <warning>духов</warning> - поместите <keyword>базовый предмет</keyword> вместе с нужными <warning>духами</warning> прямо на алтарь, а остальные ингредиенты для крафта разложите по <keyword>рунвуд-постаментам</keyword> вокруг, после чего алтарь <wave><positive>сплавит</positive></wave> их в итоговый результат."
+  ],
+  "icon": "malum:spirit_altar",
+  "x": 82,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/crude_scythe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:spirit_altar",
+      "type": "item"
+    },
+    {
+      "item": "malum:runewood_item_pedestal",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

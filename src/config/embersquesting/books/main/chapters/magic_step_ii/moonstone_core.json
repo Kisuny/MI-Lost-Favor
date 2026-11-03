@@ -1,0 +1,22 @@
+{
+  "title": "Moonstone Core",
+  "icon": "spectrum:moonstone_core",
+  "x": 61.5,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_moonstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:moonstone_core",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:mysterious_locket",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

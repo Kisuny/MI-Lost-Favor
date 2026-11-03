@@ -1,0 +1,32 @@
+{
+  "title": "",
+  "description": [
+    "Find your first §l§6affix item§r!",
+    "",
+    "Once you've completed this task, you'll be able to claim your reward: a <keyword>new button in the radial menu</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Найдите свой первый §l§6предмет с аффиксом§r!",
+    "",
+    "После выполнения данного задания вы сможете забрать награду в виде <keyword>новой кнопки в радиальном меню</keyword>!"
+  ],
+  "x": 18.5,
+  "y": 13.5,
+  "tasks": [
+    {
+      "advancement": "apotheosis:progression/haven",
+      "type": "advancement"
+    }
+  ],
+  "rewards": [
+    {
+      "id": "milf:radial/world_tier",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

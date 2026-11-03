@@ -1,0 +1,18 @@
+{
+  "title": "Wooden Shovel",
+  "icon": "minecraft:wooden_shovel",
+  "x": 18,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "first_steps/crafting_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:wooden_shovel",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

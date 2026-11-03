@@ -1,0 +1,28 @@
+{
+  "title": "Gem Dust",
+  "description": [
+    "Gem Dust is necessary to for making better use of Apotheosis gems. Drop an anvil on some gems to get Gem Dust."
+  ],
+  "icon": "apotheosis:gem_dust",
+  "x": 9,
+  "y": 25,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apotheosis:gem_dust",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "patchouli:guide_book",
+      "components": "{\"patchouli:book\":\"apotheosis:apoth_chronicle\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

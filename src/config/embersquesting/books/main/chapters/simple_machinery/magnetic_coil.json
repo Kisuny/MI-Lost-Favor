@@ -1,0 +1,19 @@
+{
+  "title": "Magnetic Coil",
+  "icon": "oritech:magnetic_coil",
+  "x": 7,
+  "y": 13,
+  "deps": {
+    "all": [
+      "simple_machinery/blueprint_2",
+      "simple_machinery/copper_fine_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:magnetic_coil",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

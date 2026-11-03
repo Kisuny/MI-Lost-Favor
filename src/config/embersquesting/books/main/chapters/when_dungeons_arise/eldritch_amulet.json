@@ -1,0 +1,22 @@
+{
+  "title": "Eldritch Amulet",
+  "icon": "enigmaticlegacyplus:eldritch_amulet{\"enigmaticlegacyplus:eldritch_timer\":1.0f}",
+  "x": 37,
+  "y": 41,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/ascension_amulet",
+      "when_dungeons_arise/abyssal_heart",
+      "when_dungeons_arise/evil_essence"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enigmaticlegacyplus:eldritch_amulet",
+      "components": "{\"enigmaticlegacyplus:eldritch_timer\":1.0f}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

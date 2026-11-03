@@ -1,0 +1,25 @@
+{
+  "title": "Enchanted Book",
+  "icon": "minecraft:enchanted_book{\"minecraft:stored_enchantments\":{levels:{\"spectrum:resonance\":1}}}",
+  "x": 13,
+  "y": 29,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter",
+      "magic_step_ii/resonant_pickaxe",
+      "magic_step_ii/resonance_shard",
+      "magic_step_ii/paltaeria_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:resonance\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

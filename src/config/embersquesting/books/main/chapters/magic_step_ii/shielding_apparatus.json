@@ -1,0 +1,26 @@
+{
+  "title": "Shielding Apparatus",
+  "description": [
+    "An augment for the <keyword>Spirit Crucible</keyword>, using the multiphasic property of Soulstained Steel: <property>+10% Damage Absorption Chance</property> and <positive>-5% Instability</positive> - gives a chance to <positive>completely absorb</positive> damage dealt to the <keyword>Impetus</keyword>, at the cost of <curse>-20% Focusing Speed</curse>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшение для <keyword>Spirit Crucible</keyword>, использующее многофазное свойство Soulstained Steel: <property>+10% Damage Absorption Chance</property> и <positive>-5% нестабильности</positive> - даёт шанс <positive>полностью поглотить</positive> урон по <keyword>Impetus</keyword> ценой <curse>-20% скорости фокусировки</curse>."
+  ],
+  "icon": "malum:shielding_apparatus",
+  "x": 94,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:shielding_apparatus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

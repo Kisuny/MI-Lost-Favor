@@ -1,0 +1,28 @@
+{
+  "title": "Diffraction Barrel",
+  "description": [
+    "The <keyword>Diffraction Barrel</keyword> turns any Ember projectile weapon into a kind of <shake amplitude=0.4 frequency=1.5>shotgun</shake>: instead of a single shot it fires a <property>spread</property> of projectiles.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Дифракционное дульное устройство</keyword> превращает любое эмберное оружие в подобие <shake amplitude=0.4 frequency=1.5>дробовика</shake>: вместо одного выстрела оно выпускает <property>веер</property> снарядов."
+  ],
+  "icon": "embers:diffraction_barrel",
+  "x": 13,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:diffraction_barrel",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

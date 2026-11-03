@@ -1,0 +1,18 @@
+{
+  "title": "Fishing Rod",
+  "icon": "minecraft:fishing_rod",
+  "x": 29.5,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "first_steps/copper_bolt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:fishing_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Lava Sponge",
+  "description": [
+    "Yeah, it's a <c value=#FEECD6>sponge</c>§r. A <c value=#ff6600>Lava Sponge</c>§r. Any more questions...?",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Да, это <c value=#FEECD6>губка</c>§r. <c value=#ff6600>Лавовая</c>§r, ещё вопросы?…"
+  ],
+  "icon": "spectrum:lava_sponge",
+  "x": 24,
+  "y": 50,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:lava_sponge",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

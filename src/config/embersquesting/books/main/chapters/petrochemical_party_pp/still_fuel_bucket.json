@@ -1,0 +1,18 @@
+{
+  "title": "Still Fuel Bucket",
+  "icon": "oritech:still_fuel_bucket",
+  "x": 14,
+  "y": 24,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/diesel_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:still_fuel_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

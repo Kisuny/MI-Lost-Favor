@@ -1,0 +1,30 @@
+{
+  "title": "Malignant Stronghold Helmet",
+  "icon": "malum:malignant_stronghold_helmet",
+  "x": 84.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/malignant_pewter_plating"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:malignant_stronghold_helmet",
+      "type": "item"
+    },
+    {
+      "item": "malum:malignant_stronghold_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "malum:malignant_stronghold_leggings",
+      "type": "item"
+    },
+    {
+      "item": "malum:malignant_stronghold_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

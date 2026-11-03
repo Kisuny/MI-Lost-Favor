@@ -1,0 +1,21 @@
+{
+  "title": "Soulwoven Banner",
+  "description": [
+    "Banners can be repainted using souls"
+  ],
+  "icon": "malum:soulwoven_banner",
+  "x": 79,
+  "y": 19,
+  "deps": {
+    "all": [
+      "magic_step_ii/soulwoven_silk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:soulwoven_banner",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

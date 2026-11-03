@@ -1,0 +1,26 @@
+{
+  "title": "Alumentum",
+  "description": [
+    "<keyword>Nitor</keyword> gives light, but barely any heat. <fire>Alumentum</fire> is its much more <shake amplitude=0.35 frequency=1.2>reactive</shake> cousin - the fuel your smeltery will burn.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Нитор</keyword> даёт свет, но почти не греет. <fire>Алюментум</fire> - его куда более <shake amplitude=0.35 frequency=1.2>взрывной</shake> родственник и топливо для твоей плавильни."
+  ],
+  "icon": "thaumaturge:alumentum",
+  "x": 52,
+  "y": 30,
+  "deps": {
+    "all": [
+      "magic_step_i/nitor_yellow"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:alumentum",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

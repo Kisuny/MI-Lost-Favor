@@ -1,0 +1,33 @@
+{
+  "title": "Ignem Reactor",
+  "description": [
+    "The <keyword>Ignem Reactor</keyword> refines Ember crystals with a <flame>huge multiplier</flame>. Place it next to the top parts of both a <keyword>Combustion Chamber</keyword> and a <keyword>Catalysis Chamber</keyword>.",
+    "",
+    "Multiplier = <property>fuel level + catalyst level + 1</property>. Keep both levels <warning>close to each other</warning>, or the reactor won't be happy.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Огненный реактор</keyword> перерабатывает кристаллы эмбера с <flame>огромным множителем</flame>. Поставьте его рядом с верхними частями <keyword>Камеры сгорания</keyword> и <keyword>Камеры катализа</keyword>.",
+    "",
+    "Множитель = <property>уровень топлива + уровень катализатора + 1</property>. Держите оба уровня <warning>близкими друг к другу</warning>, иначе реактору это не понравится."
+  ],
+  "icon": "embers:ignem_reactor",
+  "x": 21.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/wildfire_core",
+      "rock_and_steam/combustion_chamber",
+      "rock_and_steam/catalysis_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ignem_reactor",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 1.5
+}

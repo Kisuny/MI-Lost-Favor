@@ -1,0 +1,18 @@
+{
+  "title": "Aluminum Barrel",
+  "icon": "modern_industrialization:aluminum_barrel",
+  "x": 14,
+  "y": 2,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:aluminum_barrel",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

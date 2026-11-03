@@ -1,0 +1,32 @@
+{
+  "title": "Feel the first touch of Warp",
+  "description": [
+    "Forbidden knowledge leaves <curse><glitch frequency=0.7 shiftChance=0.06>Warp</glitch></curse> on your mind. Some fades, some is permanent. The <keyword>Sanity Checker</keyword> shows how deep you have sunk.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Запретные знания оставляют на разуме <curse><glitch frequency=0.7 shiftChance=0.06>искажение</glitch></curse>. Часть проходит, часть остаётся навсегда. <keyword>Проверка рассудка</keyword> показывает, насколько глубоко ты увяз."
+  ],
+  "icon": "thaumaturge:sanity_checker",
+  "x": 47.5,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_i/research_table"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "milf:thaumaturge/warp",
+      "type": "custom",
+      "title": "Feel the first touch of Warp"
+    },
+    {
+      "item": "thaumaturge:sanity_checker",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "invisible_until_tasks": 1
+}

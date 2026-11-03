@@ -1,0 +1,18 @@
+{
+  "title": "Nutrient Agar",
+  "icon": "cognition:nutrient_agar",
+  "x": 31.5,
+  "y": 67,
+  "deps": {
+    "all": [
+      "magic_step_i/fluorescent_agar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cognition:nutrient_agar",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

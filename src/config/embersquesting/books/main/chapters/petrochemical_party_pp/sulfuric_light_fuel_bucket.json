@@ -1,0 +1,22 @@
+{
+  "title": "Sulfuric Light Fuel Bucket",
+  "icon": "modern_industrialization:sulfuric_light_fuel_bucket",
+  "x": 16,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/sulfuric_heavy_fuel_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:sulfuric_light_fuel_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "pentagon"
+}

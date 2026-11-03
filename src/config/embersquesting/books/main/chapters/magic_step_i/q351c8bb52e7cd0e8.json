@@ -1,0 +1,63 @@
+{
+  "title": "",
+  "description": [
+    "Build a <c value=#FEECD6>fusion shrine</c>§r! Keep in mind, it must have <c value=#FEECD6>access</c>§r to the <c value=#9BB8ED>sky</c>§r in order for it to work.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Постройте <c value=#FEECD6>святыню слияния</c>§r, но имейте ввиду, для неё должен быть <c value=#FEECD6>доступ</c>§r к <c value=#9BB8ED>небу</c>§r."
+  ],
+  "icon": "spectrum:fusion_shrine_basalt",
+  "x": 46.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/q2cbd884256778d81"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:build_fusion_shrine",
+      "type": "advancement"
+    },
+    {
+      "tag": "milf:fusion_shrine",
+      "type": "item",
+      "title": "Any Fusion Shrine"
+    },
+    {
+      "tag": "milf:pillar_base_blocks",
+      "count": 8,
+      "type": "item",
+      "title": "Any Pillar Base Blocks"
+    },
+    {
+      "tag": "milf:polished_slabs",
+      "count": 12,
+      "type": "item",
+      "title": "Any Polished Slabs"
+    },
+    {
+      "tag": "milf:polished_gemstone",
+      "type": "item",
+      "title": "Any Polished Gemstone Block"
+    },
+    {
+      "tag": "milf:polished_base_blocks",
+      "count": 77,
+      "type": "item",
+      "title": "Any Polished Base Blocks"
+    },
+    {
+      "tag": "milf:chiseled_base_blocks",
+      "count": 4,
+      "type": "item",
+      "title": "Any Chiseled Base Blocks"
+    }
+  ],
+  "complete": {
+    "min": 2
+  },
+  "shape": "gear"
+}

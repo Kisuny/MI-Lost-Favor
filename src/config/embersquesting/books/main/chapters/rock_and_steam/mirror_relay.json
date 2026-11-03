@@ -1,0 +1,26 @@
+{
+  "title": "Mirror Relay",
+  "description": [
+    "The <keyword>Mirror Relay</keyword> works like a normal relay, but Ember <wave>bounces off it</wave> like light off a mirror instead of passing through. Handy for turning a beam around.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Зеркальное реле эмбера</keyword> работает как обычное реле, но эмбер <wave>отражается от него</wave>, как свет от зеркала, а не проходит насквозь. Удобно, чтобы развернуть луч."
+  ],
+  "icon": "embers:mirror_relay",
+  "x": 22.5,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:mirror_relay",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

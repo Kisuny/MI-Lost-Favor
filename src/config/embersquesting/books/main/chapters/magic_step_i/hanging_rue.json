@@ -1,0 +1,38 @@
+{
+  "title": "Hanging Rue",
+  "description": [
+    "It can be found in the nature generation, or you can buy it on the <click action=open_quest value='diverse_content/market'><u>market</u></click>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Встречается в натуральной генерации, так же можно купить на <click action=open_quest value='diverse_content/market'><u>маркете</u></click>!"
+  ],
+  "icon": "paganbless:hanging_rue",
+  "x": 3,
+  "y": 49,
+  "deps": {
+    "all": [
+      "magic_step_i/boline"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:hanging_rue",
+      "type": "item"
+    },
+    {
+      "item": "paganbless:rue",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "paganbless:rue",
+      "count": 12,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

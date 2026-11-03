@@ -1,0 +1,22 @@
+{
+  "title": "Radiator",
+  "icon": "immersiveengineering:radiator",
+  "x": 16,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/stainless_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:radiator",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:sheetmetal_aluminum",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

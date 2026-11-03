@@ -1,0 +1,26 @@
+{
+  "title": "Familiar Whirlisprig",
+  "description": [
+    "The <keyword>Whirlisprig Familiar</keyword> reduces the source cost of <property>Earth</property> glyphs by half and grants bonus saturation from food - a personal buff version, separate from the worker Whirlisprig that generates materials near its flower.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Фамильяр Виррисприга</keyword> снижает стоимость сурса для глифов <property>Земли</property> вдвое и даёт бонус к насыщению от еды - персональный баф, отдельный от рабочего Виррисприга, который производит материалы возле своего цветка."
+  ],
+  "icon": "ars_nouveau:familiar_whirlisprig",
+  "x": 108,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_binding"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:familiar_whirlisprig",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

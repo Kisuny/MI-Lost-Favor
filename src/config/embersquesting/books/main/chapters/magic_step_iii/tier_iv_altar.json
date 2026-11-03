@@ -1,0 +1,28 @@
+{
+  "title": "Tier IV Altar",
+  "description": [
+    ""
+  ],
+  "icon": "neovitae:hellforged_block",
+  "x": 61.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/raw_demonite"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:hellforged_block",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "tag": "neovitae:altar/runes_t3",
+      "count": 52,
+      "type": "item",
+      "title": "Any Tier 3 Runes"
+    }
+  ],
+  "shape": "gear"
+}

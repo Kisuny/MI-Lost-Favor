@@ -1,0 +1,65 @@
+{
+  "title": "Spirit Instiller",
+  "icon": "spectrum:spirit_instiller",
+  "x": 40.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_ii/raw_azurite"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:spirit_instiller",
+      "type": "item"
+    },
+    {
+      "tag": "milf:onyx_chiseled_block",
+      "count": 2,
+      "type": "item",
+      "title": "Any Onyx Chiseled Block"
+    },
+    {
+      "tag": "milf:pillar_base_blocks",
+      "count": 6,
+      "type": "item",
+      "title": "Any Pillar Base Blocks"
+    },
+    {
+      "tag": "milf:item_bowl",
+      "type": "item",
+      "title": "Any Item Bowl"
+    },
+    {
+      "tag": "milf:chiseled_base_blocks",
+      "count": 2,
+      "type": "item",
+      "title": "Any Chiseled Base Blocks"
+    },
+    {
+      "tag": "milf:polished_base_blocks",
+      "count": 41,
+      "type": "item",
+      "title": "Any Polished Base Blocks"
+    },
+    {
+      "tag": "milf:polished_slabs",
+      "count": 17,
+      "type": "item",
+      "title": "Any Polished Slabs"
+    },
+    {
+      "tag": "milf:notched_polished_block",
+      "count": 2,
+      "type": "item",
+      "title": "Any Notched Polished Block"
+    },
+    {
+      "item": "spectrum:topaz_chime",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

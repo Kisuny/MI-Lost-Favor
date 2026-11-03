@@ -1,0 +1,26 @@
+{
+  "title": "Warping Engine",
+  "description": [
+    "An augment for the <keyword>Spirit Crucible</keyword> that rejects cause and effect: <property>+10% Chain Focusing Chance</property> - whenever a cycle finishes, it can sometimes <positive>trigger an extra cycle</positive> almost instantly. Chained activations stack a bonus to <positive>all other attributes</positive>, but that comes with <warning>+15% Fuel Usage Rate</warning> and <curse>+5% Tuning Strain</curse>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшение для <keyword>Spirit Crucible</keyword>, отвергающее причинно-следственную связь: <property>+10% Chain Focusing Chance</property> - при завершении цикла может почти мгновенно <positive>запуститься ещё один цикл</positive>. Цепочки активаций накапливают бонус ко <positive>всем остальным характеристикам</positive>, но за это приходится платить <warning>+15% расхода топлива</warning> и <curse>+5% Tuning Strain</curse>."
+  ],
+  "icon": "malum:warping_engine",
+  "x": 93,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:warping_engine",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

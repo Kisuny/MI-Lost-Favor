@@ -1,0 +1,26 @@
+{
+  "title": "Mirror",
+  "description": [
+    "A linked pair of <magic>Magic Mirrors</magic> sends items through the <curse>void between worlds</curse> - even across dimensions. Throw or pipe items into one and they come out of the other.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Связанная пара <magic>волшебных зеркал</magic> отправляет предметы через <curse>пустоту между мирами</curse> - даже между измерениями. Брось или подай предмет в одно зеркало, и он выйдет из другого."
+  ],
+  "icon": "thaumaturge:mirror",
+  "x": 72,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:mirror",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

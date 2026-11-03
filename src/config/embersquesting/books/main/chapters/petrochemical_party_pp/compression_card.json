@@ -1,0 +1,19 @@
+{
+  "title": "Compression Card",
+  "icon": "megacells:compression_card",
+  "x": 14,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "aluminum/bulk_cell_component",
+      "petrochemical_party_pp/advanced_card"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "megacells:compression_card",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

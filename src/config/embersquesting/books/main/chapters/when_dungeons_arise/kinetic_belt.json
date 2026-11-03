@@ -1,0 +1,15 @@
+{
+  "title": "Kinetic Belt",
+  "icon": "relics:kinetic_belt{\"relics:data\":{abilities:{abilities:{gliding:{lock:{breaks:5},points:0,stats:{damage:{initialQuality:10},efficiency:{initialQuality:2},resistance:{initialQuality:4}}},slots:{lock:{breaks:5},points:0,stats:{amount:{initialQuality:10}}}},synergies:{}},leveling:{},statistic:{metrics:{retention_time:{value:80.0d}}}}}",
+  "x": 6,
+  "y": 22.5,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "relics:kinetic_belt",
+      "components": "{\"relics:data\":{abilities:{abilities:{gliding:{lock:{breaks:5},points:0,stats:{damage:{initialQuality:10},efficiency:{initialQuality:2},resistance:{initialQuality:4}}},slots:{lock:{breaks:5},points:0,stats:{amount:{initialQuality:10}}}},synergies:{}},leveling:{},statistic:{metrics:{retention_time:{value:80.0d}}}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

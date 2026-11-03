@@ -1,0 +1,24 @@
+{
+  "title": "Acid Oil Pot",
+  "description": [
+    "<warning>Lowers the effectiveness of armour</warning> by about <keyword>25%</keyword>.",
+    "",
+    "Can be used together with a <keyword>Oil Pot Sash</keyword>. Pots will dig ore in an area like grenades. The ores will have <property>Fortune II</property> applied to them."
+  ],
+  "icon": "toxony:acid_oil_pot",
+  "x": 25,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/toxic_paste",
+      "magic_step_ii/oil_pot_sash"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:acid_oil_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Phantom Membrane",
+  "icon": "minecraft:phantom_membrane",
+  "x": 17.5,
+  "y": 58,
+  "deps": {
+    "all": [
+      "magic_step_i/vanilla_items_for_spectrum_progression"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:phantom_membrane",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Derrick",
+  "icon": "immersivepetroleum:derrick",
+  "x": 16,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/bullet_buckshot",
+      "petrochemical_party_pp/radiator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:derrick",
+      "type": "item"
+    },
+    {
+      "block": "immersivepetroleum:derrick",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

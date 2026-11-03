@@ -1,0 +1,26 @@
+{
+  "title": "Oil Base",
+  "description": [
+    "Now, for those empty pots. They can be filled with replacement oil without recreating the composition in the pot. Just by making this base, we can refill all our oil containers and even sashes. BEAUTIFUL.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
+  ],
+  "icon": "toxony:oil_base",
+  "x": 29,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/more_plants"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:oil_base",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

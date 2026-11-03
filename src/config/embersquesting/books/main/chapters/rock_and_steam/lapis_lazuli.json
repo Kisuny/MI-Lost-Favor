@@ -1,0 +1,27 @@
+{
+  "title": "Lapis Lazuli",
+  "icon": "minecraft:lapis_lazuli",
+  "x": 4,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Lapis Lazuli"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:lapis_lazuli\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

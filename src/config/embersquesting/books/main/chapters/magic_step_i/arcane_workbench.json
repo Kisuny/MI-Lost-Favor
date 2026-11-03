@@ -1,0 +1,31 @@
+{
+  "title": "Arcane Workbench",
+  "description": [
+    "Made by sprinkling <keyword>Salis Mundus</keyword> on a block - check EMI for which one. Arcane recipes spend <property>vis</property> from the aura and <magic>Vis Crystals</magic> in addition to normal ingredients.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Создаётся, если посыпать блок <keyword>Salis Mundus</keyword> - какой именно, смотри в EMI. Магические рецепты помимо обычных ингредиентов тратят <property>vis</property> из ауры и <magic>кристаллы Vis</magic>."
+  ],
+  "icon": "thaumaturge:arcane_workbench",
+  "x": 50,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_i/thaumonomicon"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:arcane_workbench",
+      "type": "item"
+    },
+    {
+      "block": "thaumaturge:arcane_workbench",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

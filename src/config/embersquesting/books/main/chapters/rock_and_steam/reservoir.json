@@ -1,0 +1,35 @@
+{
+  "title": "Reservoir",
+  "description": [
+    "The <keyword>Reservoir</keyword> stores <aqua>huge amounts of fluid</aqua>. On its own it holds nothing - stack <keyword>Caminite Rings</keyword> on top, each adds <property>40 buckets</property>.",
+    "",
+    "It is filled and drained only through the port at the bottom. <keyword>Caminite Valves</keyword> hold as much as a ring, but give <positive>4 extra sides</positive> for pipes.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Резервуар</keyword> хранит <aqua>огромные объёмы жидкости</aqua>. Сам по себе он пустой - ставьте сверху <keyword>Каминитовые кольца</keyword>, каждое добавляет <property>40 вёдер</property>.",
+    "",
+    "Заполняется и опустошается он только через порт внизу. <keyword>Каминитовые кольца с клапанами</keyword> вмещают столько же, сколько обычное кольцо, но дают <positive>4 дополнительные стороны</positive> для труб."
+  ],
+  "icon": "embers:reservoir",
+  "x": 27,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/cerebral_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:reservoir",
+      "type": "item"
+    },
+    {
+      "tag": "embers:reservoir_expansion",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

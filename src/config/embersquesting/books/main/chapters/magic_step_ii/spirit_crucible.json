@@ -1,0 +1,88 @@
+{
+  "title": "Spirit Crucible",
+  "description": [
+    "The <pulse><keyword>Spirit Crucible</keyword></pulse> performs <keyword>Spirit Focusing</keyword> - socket an <keyword>Impetus</keyword> (a durable reagent, like the <keyword>Alchemical Impetus</keyword>) together with <warning>Spirit Arcana</warning>, and it will <positive>transmute</positive> new resources cycle after cycle, slowly <curse>damaging the Impetus</curse> each time until it fractures. Speed it up with a <keyword>Spirit Catalyzer</keyword>, tune its stats with a <keyword>Tuning Fork</keyword>, and keep a <keyword>Repair Pylon</keyword> nearby to mend the Impetus before it breaks for good.",
+    "",
+    "You can push its stats around with <keyword>Augments</keyword> (up to 4 in the Crucible itself, or one in each nearby <keyword>Spirit Catalyzer</keyword>). Here's what each attribute they touch actually does:",
+    "",
+    "<property>Focusing Speed</property> - how fast a cycle completes. ",
+    "",
+    "<property>Fuel Usage Rate</property> - how much fuel a cycle burns through. ",
+    "",
+    "<warning>Instability</warning> - the risk of the Impetus taking <curse>extra damage</curse> per cycle. ",
+    "",
+    "<positive>Fortune Chance</positive> - odds of a cycle producing double the items. ",
+    "",
+    "<positive>Chain Focusing Chance</positive> - odds of an extra cycle firing right after the current one. ",
+    "",
+    "<positive>Restoration Chance</positive> - odds of the Impetus <positive>healing slightly</positive> after a cycle. ",
+    "",
+    "<positive>Damage Absorption Chance</positive> - odds of fully blocking a hit of damage to the Impetus. ",
+    "",
+    "<keyword>Resonance Tuning</keyword> - slows the process but heavily cuts Instability. ",
+    "",
+    "<keyword>Weakness Tuning</keyword> - boosts whichever attribute is currently weakest. ",
+    "",
+    "<keyword>Misfortune Reversal</keyword> - turns Impetus damage into a bonus once it's healed. ",
+    "",
+    "<keyword>Caustic Synergy</keyword> - converts rising Instability into more <keyword>Tuning Potency</keyword>. ",
+    "",
+    "<curse>Tuning Strain</curse> - makes the <keyword>Tuning Fork</keyword>'s attribute-shifting cost more.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<pulse><keyword>Spirit Crucible</keyword></pulse> выполняет <keyword>Spirit Focusing</keyword> (фокусировку духов) - вставьте <keyword>Impetus</keyword> (прочный реагент, например <keyword>Alchemical Impetus</keyword>) вместе с <warning>душой арканы</warning>, и тигель будет <positive>трансмутировать</positive> новые ресурсы цикл за циклом, постепенно <curse>повреждая Impetus</curse>, пока тот не расколется. Ускоряйте процесс с помощью <keyword>Spirit Catalyzer</keyword>, настраивайте характеристики <keyword>Tuning Fork</keyword>'ом и держите рядом <keyword>Repair Pylon</keyword>, чтобы чинить Impetus до того, как он сломается окончательно.",
+    "",
+    "Характеристики тигля можно менять с помощью <keyword>улучшений (Augments)</keyword> (до 4 штук прямо в тигле, либо по одному в каждом соседнем <keyword>Spirit Catalyzer</keyword>). Вот что на самом деле означает каждая характеристика, на которую они влияют:",
+    "",
+    "<property>Focusing Speed</property> (скорость фокусировки) - насколько быстро завершается цикл. ",
+    "",
+    "<property>Fuel Usage Rate</property> (расход топлива) - сколько топлива тратится за цикл. ",
+    "",
+    "<warning>Instability</warning> (нестабильность) - риск того, что Impetus получит <curse>дополнительный урон</curse> за цикл.",
+    "",
+    "<positive>Fortune Chance</positive> - шанс получить вдвое больше предметов за цикл. ",
+    "",
+    "<positive>Chain Focusing Chance</positive> - шанс, что сразу после текущего цикла запустится ещё один. ",
+    "",
+    "<positive>Restoration Chance</positive> - шанс, что Impetus <positive>немного подлечится</positive> после цикла. ",
+    "",
+    "<positive>Damage Absorption Chance</positive> - шанс полностью заблокировать урон по Impetus. ",
+    "",
+    "<keyword>Resonance Tuning</keyword> - замедляет процесс, но сильно снижает нестабильность. ",
+    "",
+    "<keyword>Weakness Tuning</keyword> - усиливает ту характеристику, которая сейчас самая слабая. ",
+    "",
+    "<keyword>Misfortune Reversal</keyword> - превращает урон по Impetus в бонус после его исцеления. ",
+    "",
+    "<keyword>Caustic Synergy</keyword> - конвертирует растущую нестабильность в дополнительную <keyword>Tuning Potency</keyword>.",
+    "",
+    "<curse>Tuning Strain</curse> - делает перераспределение характеристик через <keyword>Tuning Fork</keyword> более затратным."
+  ],
+  "icon": "malum:spirit_crucible",
+  "x": 93,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_stained_steel_ingot",
+      "magic_step_ii/hallowed_gold_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:spirit_crucible",
+      "type": "item"
+    },
+    {
+      "item": "malum:alchemical_impetus",
+      "type": "item"
+    },
+    {
+      "item": "malum:arcane_spirit",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

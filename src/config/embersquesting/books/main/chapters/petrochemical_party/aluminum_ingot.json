@@ -1,0 +1,20 @@
+{
+  "title": "Aluminum Ingot",
+  "icon": "modern_industrialization:aluminum_ingot",
+  "x": 18.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "simple_machinery/arc_furnace",
+      "simple_machinery/carbon_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:aluminum_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

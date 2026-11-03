@@ -1,0 +1,18 @@
+{
+  "title": "Archmage Spell Book",
+  "icon": "ars_nouveau:archmage_spell_book",
+  "x": 120.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/wilden_tribute"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:archmage_spell_book",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

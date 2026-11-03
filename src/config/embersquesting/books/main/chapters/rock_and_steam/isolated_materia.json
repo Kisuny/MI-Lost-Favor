@@ -1,0 +1,26 @@
+{
+  "title": "Isolated Materia",
+  "description": [
+    "<keyword>Isolated Materia</keyword> can <glitch frequency=0.6 shiftChance=0.05>become the material</glitch> of other items. On the anvil it <positive>replaces any repair material</positive>, so you can fix almost anything with it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Изолированный субстрат</keyword> умеет <glitch frequency=0.6 shiftChance=0.05>становиться материалом</glitch> других предметов. На наковальне он <positive>заменяет любой материал для починки</positive>, так что им можно чинить почти всё."
+  ],
+  "icon": "embers:isolated_materia",
+  "x": 17,
+  "y": 29,
+  "deps": {
+    "all": [
+      "rock_and_steam/intelligent_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:isolated_materia",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Grass Twine",
+  "description": [
+    "Even <keyword>grass</keyword> could become quite strong when you <positive>weave it properly</positive>"
+  ],
+  "icon": "ytech:grass_twine",
+  "x": 5.5,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/grass_fibers"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:grass_twine",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

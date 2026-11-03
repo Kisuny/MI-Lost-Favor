@@ -1,0 +1,18 @@
+{
+  "title": "Steam Boiler Addon",
+  "icon": "oritech:steam_boiler_addon",
+  "x": 24.5,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/piston"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:steam_boiler_addon",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

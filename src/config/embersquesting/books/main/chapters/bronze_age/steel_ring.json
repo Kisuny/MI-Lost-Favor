@@ -1,0 +1,18 @@
+{
+  "title": "Steel Ring",
+  "icon": "modern_industrialization:steel_ring",
+  "x": 11,
+  "y": 25,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

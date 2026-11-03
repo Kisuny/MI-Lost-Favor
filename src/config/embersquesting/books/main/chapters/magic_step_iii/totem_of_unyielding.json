@@ -1,0 +1,30 @@
+{
+  "title": "Totem Of Unyielding",
+  "description": [
+    "A modified Totem of Undying. Instead of preventing death, it delays it by 10 seconds - a delay that can be extended through repeated uses.",
+    "",
+    "When triggered on death, it grants near invincibility plus boosted strength and speed for those 10 seconds, putting you in a berserk state. When the time runs out, <blood><glitch frequency=0.9 shiftChance=0.07>\"Destined Death\"</glitch></blood> hits - instant and absolute, with no chance to resist.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Изменённая версия Totem of Undying. Вместо того чтобы предотвратить смерть, откладывает её на 10 секунд - задержку можно продлевать повторным использованием.",
+    "",
+    "При срабатывании на смерти даёт почти полную неуязвимость, а также усиление силы и скорости на эти 10 секунд - состояние берсерка. По истечении времени наступает <blood><glitch frequency=0.9 shiftChance=0.07>\"Предначертанная смерть\"</glitch></blood> - мгновенная и неотвратимая, без шанса сопротивляться."
+  ],
+  "icon": "risus:totem_of_unyielding",
+  "x": 23.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q4215e53de9e8fa11"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:totem_of_unyielding",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

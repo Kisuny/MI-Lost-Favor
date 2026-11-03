@@ -1,0 +1,33 @@
+{
+  "title": "Inspector Gadget",
+  "description": [
+    "§oAll Building Gadgets items need <property>Forge Energy</property>§o. Use the <keyword>settings menu</keyword>(<warning>X</warning> key with gadget in hand) to change <positive>modes</positive>, set <keyword>range</keyword>, §7anchor§r the preview, and <warning>undo</warning> the last action where the tool allows it.§r",
+    "",
+    "You can also use the <warning>U</warning> key to <warning>undo</warning> your last action!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "§oВсе предметы Building Gadgets работают на <property>Forge Energy</property>§o. Через <keyword>меню настроек</keyword>(кнопка <warning>X</warning> с гаджетом в руках) можно менять <positive>режимы</positive>, ставить <keyword>диапазон</keyword>, закреплять §7предпросмотр§r и <warning>отменять</warning> последнее действие там, где это поддерживается.§r",
+    "",
+    "Вы так же можеет использовать кнопку<warning> U</warning> чтобы отменить последнее действией!"
+  ],
+  "x": 13,
+  "y": 20,
+  "deps": {
+    "all": [
+      "automation_n_stuff/gadget_copy_paste",
+      "automation_n_stuff/gadget_cut_paste",
+      "automation_n_stuff/gadget_destruction",
+      "automation_n_stuff/gadget_building",
+      "automation_n_stuff/gadget_exchanging"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Inspector Gadget"
+    }
+  ],
+  "shape": "heart"
+}

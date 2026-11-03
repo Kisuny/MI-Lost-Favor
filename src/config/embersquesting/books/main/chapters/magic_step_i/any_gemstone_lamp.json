@@ -1,0 +1,26 @@
+{
+  "title": "Any Gemstone Lamp",
+  "description": [
+    "These <c value=#FEECD6>Lamps</c>§r emit some <c value=#FEECD6>light</c>§r, and will also be needed in the future to improve your <c value=#9BB8ED>structures!</c>§r",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#FEECD6>Лампы</c>§r испускают немного <c value=#FEECD6>света</c>§r и понадобятся в будущем для улучшения ваших <c value=#9BB8ED>структур!</c>§r"
+  ],
+  "x": 31,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "milf:gemstone_lamp",
+      "type": "item",
+      "title": "Any Gemstone Lamp"
+    }
+  ],
+  "shape": "diamond"
+}

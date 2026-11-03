@@ -1,0 +1,70 @@
+{
+  "title": "Pedestal Onyx",
+  "description": [
+    "Before improving an <keyword>altar</keyword> make sure you have all the blocks to improve it, some blocks need to be created in the <warning>previous altar</warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Перед улучшением <keyword>алтаря</keyword> убедитесь что у вас есть все блоки для его улучшения, некоторые необходимо создать в <warning>предыдущем алтаре</warning>!"
+  ],
+  "icon": "spectrum:pedestal_onyx",
+  "x": 2.5,
+  "y": 41.5,
+  "deps": {
+    "all": [
+      "magic_step_i/onyx_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:midgame/spectrum_midgame",
+      "type": "advancement"
+    },
+    {
+      "item": "spectrum:pedestal_onyx",
+      "type": "item"
+    },
+    {
+      "tag": "milf:polished_gemstone",
+      "count": 4,
+      "type": "item",
+      "title": "Any Polished Gemstone Block"
+    },
+    {
+      "tag": "milf:gemstone_lamp",
+      "count": 8,
+      "type": "item",
+      "title": "Any Gemstone Lamp"
+    },
+    {
+      "tag": "milf:chiseled_gemstone_block",
+      "count": 16,
+      "type": "item",
+      "title": "Any Chiseled Gemstone Block"
+    },
+    {
+      "tag": "milf:pillar_base_blocks",
+      "count": 28,
+      "type": "item",
+      "title": "Any Pillar Base Blocks"
+    },
+    {
+      "tag": "milf:polished_base_blocks",
+      "count": 92,
+      "type": "item",
+      "title": "Any Polished Base Blocks"
+    },
+    {
+      "tag": "milf:crest_base_blocks",
+      "count": 16,
+      "type": "item",
+      "title": "Any Crest Base Blocks"
+    }
+  ],
+  "complete": {
+    "min": 2
+  },
+  "shape": "gear",
+  "size": 3.0
+}

@@ -1,0 +1,33 @@
+{
+  "title": "All Rounder",
+  "description": [
+    "The <named>All-Rounder</named> is a theurgical utility tool forged from the power of both deities - hold a goblet while killing a creature with it, and the goblet <blood>fills with that creature's blood</blood>.",
+    "",
+    "Pleasing a deity imbues the tool with their power, but favoring one side <curse>strips away the other's blessing</curse>. Only a truly <magic>balanced</magic> reputation lets you keep both powers at once.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Мастер на все руки</named> - универсальный теургический инструмент, выкованный силой обеих божеств - держите кубок и убейте этим инструментом существо, и кубок <blood>наполнится его кровью</blood>.",
+    "",
+    "Если вы угождаете божеству, инструмент пропитывается его силой, но перекос в сторону одного из них <curse>лишает вас благословения другого</curse>. Лишь по-настоящему <magic>сбалансированная</magic> репутация позволяет сохранить обе силы одновременно."
+  ],
+  "icon": "eidolon_edoni:all_rounder{\"eidolon_repraised:necrotic\":51}",
+  "x": 81,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_ii/holy_symbol",
+      "magic_step_ii/unholy_symbol"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "eidolon_edoni:all_rounder",
+      "components": "{\"eidolon_repraised:necrotic\":51}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

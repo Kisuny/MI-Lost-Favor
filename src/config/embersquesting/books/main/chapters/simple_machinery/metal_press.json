@@ -1,0 +1,52 @@
+{
+  "title": "Metal Press",
+  "icon": "immersiveengineering:metal_press",
+  "x": 8.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "immersiveengineering:metal_press",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:metal_press",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:piston",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:heavy_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:conveyor_basic",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:metal_press_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

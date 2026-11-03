@@ -1,0 +1,26 @@
+{
+  "title": "Wand Cap Void",
+  "description": [
+    "Void metal resists magic, yet <curse>channels it with surprising ease</curse>. The best wand caps.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Металл пустоты сопротивляется магии, но <curse>на удивление легко её проводит</curse>. Лучшие наконечники для жезлов."
+  ],
+  "icon": "thaumaturge:wand_cap_void",
+  "x": 37,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_void"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_cap_void",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

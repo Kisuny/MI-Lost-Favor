@@ -1,0 +1,42 @@
+{
+  "title": "Curio Bag",
+  "description": [
+    "A very handy <keyword>pouch</keyword> that can be opened via the <property>radial menu</property> and can be placed in the <keyword>trinket slot</keyword>!",
+    "",
+    "It is also used to make a backpack.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Очень удобный <keyword>мешок</keyword>, который можно открывать используя <property>радиальное меню</property>, можно надеть в <keyword>слот безделушек</keyword>!",
+    "",
+    "Так же используется для создания рюкзака."
+  ],
+  "icon": "ars_elemental:curio_bag",
+  "x": 7.5,
+  "y": 57,
+  "deps": {
+    "all": [
+      "magic_step_i/creeper_heart"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:curio_bag",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Trinket bundle slot",
+      "id": "milf:trinket/bundle_curio_bag",
+      "type": "custom"
+    },
+    {
+      "title": "Radial Menu Button",
+      "id": "milf:radial/trinket_pouch",
+      "type": "custom"
+    }
+  ],
+  "shape": "heart"
+}

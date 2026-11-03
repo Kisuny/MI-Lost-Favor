@@ -1,0 +1,26 @@
+{
+  "title": "Adv Pattern Encoder",
+  "icon": "advanced_ae:adv_pattern_encoder",
+  "x": 18,
+  "y": 42,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/blank_pattern",
+      "petrochemical_party_pp/small_adv_pattern_provider"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:adv_pattern_encoder",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "\"Adv Pattern Encoder\" Trinket Slot",
+      "id": "milf:trinket/adv_pattern_encoder",
+      "type": "custom"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Air",
+  "description": [
+    "Launches you in the direction you're looking for 50EV from your Anima reserves. Useful for improved flights, but good luck improvising a landing."
+  ],
+  "icon": "neovitae:sigil_air",
+  "x": 33.5,
+  "y": 1,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_air",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

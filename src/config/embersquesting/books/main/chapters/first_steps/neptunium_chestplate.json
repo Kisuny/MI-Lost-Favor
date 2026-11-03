@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Chestplate",
+  "icon": "aquaculture:neptunium_chestplate",
+  "x": 38,
+  "y": 29,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_chestplate",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

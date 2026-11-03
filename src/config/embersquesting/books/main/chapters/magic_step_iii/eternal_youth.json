@@ -1,0 +1,21 @@
+{
+  "title": "Eternal Youth",
+  "description": [
+    "The Eternal Youth is a consumable item that - quite simply put - imbues the animal it's used on with a never ending state of immortality as a youngling. If the animal in question is not currently young, it will be reverted to its youth. The immortality given is near absolute; the few ways of killing such an animal is either to lose it to the void or to use a second Eternal Youth on them."
+  ],
+  "icon": "risus:eternal_youth",
+  "x": 19.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:eternal_youth",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

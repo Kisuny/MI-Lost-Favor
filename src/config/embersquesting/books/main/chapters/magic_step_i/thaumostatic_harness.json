@@ -1,0 +1,26 @@
+{
+  "title": "Thaumostatic Harness",
+  "description": [
+    "<wind><wave>Flight!</wave></wind> The harness runs on <fire>Potentia</fire> essentia: right-click it with filled jars, then press <keyword>H</keyword> while wearing it to toggle.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<wind><wave>Полёт!</wave></wind> Упряжь работает на эссенции <fire>Potentia</fire>: нажми ПКМ с полными банками, а затем <keyword>H</keyword>, когда она надета, чтобы включить или выключить."
+  ],
+  "icon": "thaumaturge:thaumostatic_harness",
+  "x": 74,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_i/traveller_boots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:thaumostatic_harness",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

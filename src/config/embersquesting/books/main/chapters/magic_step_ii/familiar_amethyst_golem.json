@@ -1,0 +1,26 @@
+{
+  "title": "Familiar Amethyst Golem",
+  "description": [
+    "The <keyword>Amethyst Golem Familiar</keyword> is a defensive companion - it halves knockback taken and knocks back attackers. Give it an <keyword>Amethyst Shard</keyword> to grant yourself <property>Shielding</property> for 3 minutes.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Аметистовый голем</keyword> - фамильяр для защиты: он уменьшает получаемый отброс вдвое и отбрасывает атакующих. Дайте ему <keyword>осколок аметиста</keyword>, чтобы получить <property>щит</property> на 3 минуты."
+  ],
+  "icon": "ars_nouveau:familiar_amethyst_golem",
+  "x": 107,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_binding"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:familiar_amethyst_golem",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

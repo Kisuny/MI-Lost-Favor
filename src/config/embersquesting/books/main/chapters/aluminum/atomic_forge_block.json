@@ -1,0 +1,18 @@
+{
+  "title": "Atomic Forge Block",
+  "icon": "oritech:atomic_forge_block",
+  "x": 10.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "aluminum/digital_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:atomic_forge_block",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

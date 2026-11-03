@@ -1,0 +1,25 @@
+{
+  "title": "Array Freeze",
+  "description": [
+    "<positive>Converts</positive> nearby water sources to <property>ice</property> and covers exposed solid ground in a thin layer of <property>snow</property> within a <keyword>3-block radius</keyword>. Dissipates once everything in reach is frozen."
+  ],
+  "icon": "neovitae:array_freeze",
+  "x": 44.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "magic_step_iii/environmental_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_freeze",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

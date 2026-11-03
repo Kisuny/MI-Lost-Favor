@@ -1,0 +1,29 @@
+{
+  "title": "Animals breeding",
+  "description": [
+    "To get a <keyword>domesticated version of animals</keyword>, you have to <positive>breed wild animals</positive>!",
+    "",
+    "The farther back in the wild animal's lineage, the <keyword>greater the chance</keyword> that the animal will become <keyword>domesticated</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чтобы получить <keyword>одомашненную версию животных</keyword>, необходимо <positive>разводить диких животных</positive>!",
+    "",
+    "Чем дальше заходит род диких животных, тем <keyword>больше шанс</keyword> что животное станет <keyword>одомашненным</keyword> "
+  ],
+  "x": 10,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "first_steps/any_animal_foods"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Animals breeding"
+    }
+  ],
+  "shape": "pentagon"
+}

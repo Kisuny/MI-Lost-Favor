@@ -1,0 +1,19 @@
+{
+  "title": "Ender Eye",
+  "icon": "minecraft:ender_eye",
+  "x": 17,
+  "y": 56.5,
+  "deps": {
+    "all": [
+      "magic_step_i/vanilla_items_for_spectrum_progression"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:ender_eye",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

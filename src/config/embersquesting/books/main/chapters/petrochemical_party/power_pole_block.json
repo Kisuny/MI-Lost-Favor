@@ -1,0 +1,18 @@
+{
+  "title": "Power Pole Block",
+  "icon": "oritech:power_pole_block",
+  "x": 13,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "simple_machinery/component_electronic_adv"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:power_pole_block",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

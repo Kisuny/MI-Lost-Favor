@@ -1,0 +1,20 @@
+{
+  "title": "Ritual Diviner Tenebrae",
+  "icon": "neovitae:ritual_diviner_tenebrae{\"neovitae:current_ritual\":\"neovitae:standard_dungeon\"}",
+  "x": 56,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/blood_orb_master"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "neovitae:ritual_diviner_tenebrae",
+      "components": "{\"neovitae:current_ritual\":\"neovitae:standard_dungeon\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

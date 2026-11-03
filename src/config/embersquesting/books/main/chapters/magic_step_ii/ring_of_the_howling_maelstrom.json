@@ -1,0 +1,27 @@
+{
+  "title": "Ring Of The Howling Maelstrom",
+  "description": [
+    "The <keyword>Ring of the Howling Maelstrom</keyword> alters the <property>Rebound</property> enchantment - when you throw your scythe, <shake amplitude=0.3 frequency=1.0>cutting winds</shake> spin around it, damaging nearby foes, at the cost of a longer cooldown. Wear it together with the <keyword>Necklace of the Narrow Edge</keyword> to concentrate the winds into a small storm the moment your scythe lands a hit.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ring of the Howling Maelstrom</keyword> изменяет зачарование <property>Rebound</property> - когда вы бросаете косу, вокруг неё закручиваются <shake amplitude=0.3 frequency=1.0>режущие ветра</shake>, наносящие урон противникам рядом, но ценой увеличенной перезарядки. Наденьте его вместе с <keyword>Necklace of the Narrow Edge</keyword>, чтобы сконцентрировать ветра в небольшой шторм в момент удара косой."
+  ],
+  "icon": "malum:ring_of_the_howling_maelstrom",
+  "x": 85.5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/ornate_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ring_of_the_howling_maelstrom",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

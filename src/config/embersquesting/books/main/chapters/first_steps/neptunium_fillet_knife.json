@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Fillet Knife",
+  "icon": "aquaculture:neptunium_fillet_knife",
+  "x": 40,
+  "y": 29,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_fillet_knife",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

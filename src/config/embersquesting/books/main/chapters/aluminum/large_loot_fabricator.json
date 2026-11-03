@@ -1,0 +1,18 @@
+{
+  "title": "Large Loot Fabricator",
+  "icon": "hostile_neural_industrialization:large_loot_fabricator",
+  "x": 8,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "aluminum/mono_loot_fabricator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hostile_neural_industrialization:large_loot_fabricator",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

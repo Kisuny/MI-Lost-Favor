@@ -1,0 +1,38 @@
+{
+  "title": "Elemental Ritual Stones",
+  "description": [
+    "Many Tier II+ rituals require <property>elemental ritual stones</property> - Air, Water, Fire, Earth, or Dusk variants. Place them at their designated positions around the Master Ritual Stone."
+  ],
+  "icon": "neovitae:ritual_stone",
+  "x": 44.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/place_the_master_ritual_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:fire_scribe_tool",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:air_scribe_tool",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:water_scribe_tool",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:earth_scribe_tool",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:ritual_stone",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

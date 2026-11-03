@@ -1,0 +1,21 @@
+{
+  "title": "Willow Sapling",
+  "description": [
+    "minecraft:swamp"
+  ],
+  "icon": "hexerei:willow_sapling",
+  "x": 4,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:willow_sapling",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

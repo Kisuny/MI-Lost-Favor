@@ -1,0 +1,26 @@
+{
+  "title": "Any Sinks",
+  "description": [
+    "A <keyword>sink</keyword> supplies <named>water</named> to nearby cooking tables for recipes that need it. <warning>It does not generate water on its own</warning> - connect it to a water source or pipe.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Раковина</keyword> снабжает соседние кухонные столы <named>водой</named> для рецептов, которым она нужна. <warning>Она не генерирует воду сама</warning> - подключите её к источнику воды или трубе."
+  ],
+  "x": 31.5,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "first_steps/any_cooking_tables"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "cookingforblockheads:sinks",
+      "type": "item",
+      "title": "Any Sinks"
+    }
+  ],
+  "shape": "diamond"
+}

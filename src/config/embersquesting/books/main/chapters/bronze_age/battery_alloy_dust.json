@@ -1,0 +1,19 @@
+{
+  "title": "Battery Alloy Dust",
+  "icon": "modern_industrialization:battery_alloy_dust",
+  "x": 18.5,
+  "y": 12,
+  "deps": {
+    "any": [
+      "bronze_age/bronze_mixer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:battery_alloy_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

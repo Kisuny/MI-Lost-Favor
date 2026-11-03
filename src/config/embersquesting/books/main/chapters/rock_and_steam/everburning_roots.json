@@ -1,0 +1,30 @@
+{
+  "title": "Everburning Roots",
+  "description": [
+    "Plain <keyword>Everburning Roots</keyword> - what remains of the veins once the Ember has been chiseled out of them.",
+    "",
+    "Don't throw them away: fired in a <keyword>Bloomery</keyword> together with <keyword>unfired caminite bricks</keyword>, they turn into <keyword>Archaic Bricks</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обычные <keyword>Everburning Roots</keyword> - то, что остаётся от прожилок, когда из них выбили эмбер зубилом.",
+    "",
+    "Не выбрасывайте их: если обжечь их в <keyword>Bloomery</keyword> вместе с <keyword>Unfired Caminite Brick</keyword>, получатся <keyword>Архаичные кирпичи</keyword>."
+  ],
+  "icon": "milf:everburning_roots",
+  "x": 3,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0f5a8505e80666e1"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:everburning_roots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

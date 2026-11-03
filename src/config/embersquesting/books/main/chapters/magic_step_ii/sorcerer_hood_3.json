@@ -1,0 +1,38 @@
+{
+  "title": "Sorcerer Hood",
+  "icon": "ars_nouveau:sorcerer_hood{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+  "x": 124,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/sorcerer_hood_2"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:sorcerer_hood",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:sorcerer_robes",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:sorcerer_leggings",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:sorcerer_boots",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

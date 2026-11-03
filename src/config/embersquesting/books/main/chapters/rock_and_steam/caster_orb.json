@@ -1,0 +1,32 @@
+{
+  "title": "Caster Orb",
+  "description": [
+    "The <keyword>Caster Orb</keyword> makes every swing of a tool or weapon <flame>fire a small Ember projectile</flame>, as long as you carry Ember. Its size and damage grow with augment level.",
+    "",
+    "Since the item now shoots, it can also take projectile augments like the Focal Lens.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Сфера заклинателя</keyword> заставляет каждый взмах инструмента или оружия <flame>выпускать небольшой снаряд из эмбера</flame>, если у вас есть эмбер. Размер и урон растут с уровнем.",
+    "",
+    "Раз предмет теперь стреляет, на него можно ставить и улучшения для снарядов, например Фокусирующую линзу."
+  ],
+  "icon": "embers:caster_orb",
+  "x": 18,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:caster_orb",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

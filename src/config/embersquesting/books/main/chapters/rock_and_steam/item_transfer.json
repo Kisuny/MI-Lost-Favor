@@ -1,0 +1,30 @@
+{
+  "title": "Item Transfer",
+  "description": [
+    "The <keyword>Item Transfer</keyword> works like a pipe that connects only <property>front and back</property>, and items <positive>always prefer it</positive> over other routes.",
+    "",
+    "RMB it with an item to set a <property>filter</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Передатчик предметов</keyword> работает как труба, которая соединяется только <property>спереди и сзади</property>, причём предметы <positive>всегда выбирают его</positive> в первую очередь.",
+    "",
+    "ПКМ по нему предметом, чтобы задать <property>фильтр</property>."
+  ],
+  "icon": "embers:item_transfer",
+  "x": 1.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/lapis_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:item_transfer",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

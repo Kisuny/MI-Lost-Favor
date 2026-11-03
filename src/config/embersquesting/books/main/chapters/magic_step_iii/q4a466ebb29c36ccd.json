@@ -1,0 +1,27 @@
+{
+  "title": "",
+  "description": [
+    "Solve the <property>puzzle</property> to gain access to the <magic>maze</magic>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Решите <property>загадку</property> для доступа к <magic>лабиринту</magic>!"
+  ],
+  "icon": "netherman:z_puzzle",
+  "x": 6.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_iii/altar_compass_key_2"
+    ]
+  },
+  "tasks": [
+    {
+      "structure": "netherman:head_altar",
+      "type": "location",
+      "icon": "netherman:z_puzzle"
+    }
+  ],
+  "shape": "circle"
+}

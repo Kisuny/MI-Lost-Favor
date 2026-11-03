@@ -1,0 +1,20 @@
+{
+  "title": "Tender Pickaxe",
+  "icon": "spectrum:tender_pickaxe{\"minecraft:enchantments\":{levels:{\"minecraft:silk_touch\":1}}}",
+  "x": 0.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/mermaids_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:tender_pickaxe",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:silk_touch\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

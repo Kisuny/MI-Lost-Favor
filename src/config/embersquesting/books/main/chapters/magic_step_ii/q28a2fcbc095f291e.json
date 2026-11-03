@@ -1,0 +1,22 @@
+{
+  "title": "",
+  "description": [
+    "<positive>Use</positive> the <keyword>poison paste</keyword> on <keyword>farmland</keyword>. Can farm <keyword>plants</keyword> from this mod, but will destroy neighboring \"normal\" farmland."
+  ],
+  "icon": "toxony:poison_farmland",
+  "x": 19.5,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_paste"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "toxony:poison_farmland",
+      "type": "observe",
+      "icon": "toxony:poison_farmland"
+    }
+  ],
+  "shape": "circle"
+}

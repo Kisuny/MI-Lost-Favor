@@ -1,0 +1,27 @@
+{
+  "title": "Myceylon",
+  "description": [
+    "Those shrooms look grim, but their §lbark§r is so yummy",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Эти грибы выглядят мрачно, но их §lкора§r такая аппетитная"
+  ],
+  "icon": "spectrum:myceylon",
+  "x": 51,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q758bf8f1aa3dbae6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:myceylon",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

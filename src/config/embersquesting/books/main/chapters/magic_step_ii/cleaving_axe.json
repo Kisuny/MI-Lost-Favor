@@ -1,0 +1,30 @@
+{
+  "title": "Cleaving Axe",
+  "description": [
+    "<keyword>Increases the chance</keyword> of dropping a <keyword>mob's head</keyword> when you <positive>kill it</positive> with this axe.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Повышает шанс</keyword> получить <keyword>голову моба</keyword> если <positive>убить этим топором</positive>."
+  ],
+  "icon": "eidolon_repraised:cleaving_axe",
+  "x": 13,
+  "y": 33.5,
+  "deps": {
+    "min": {
+      "count": 1,
+      "of": [
+        "magic_step_ii/enchanter",
+        "magic_step_ii/neolith"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:cleaving_axe",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Flame Barrier",
+  "description": [
+    "The <keyword>Flame Barrier</keyword> surrounds you with a <fire>shield of fire</fire> when you are hit: the attacker is <flame>set on fire</flame> and takes damage.",
+    "",
+    "Each blast uses Ember; damage grows with augment level.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Огненный барьерный модуль</keyword> окружает вас <fire>огненным щитом</fire> при ударе: нападающий <flame>загорается</flame> и получает урон.",
+    "",
+    "Каждая вспышка тратит эмбер, урон растёт с уровнем улучшения."
+  ],
+  "icon": "embers:flame_barrier",
+  "x": 13.5,
+  "y": 23,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:flame_barrier",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

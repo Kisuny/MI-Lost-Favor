@@ -1,0 +1,26 @@
+{
+  "title": "Tuning Fork",
+  "description": [
+    "Displays the total number of <keyword>buffs</keyword> in the <keyword>Crucible</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Отображает суммарное количество <keyword>бафов</keyword> в <keyword>кузне</keyword>"
+  ],
+  "icon": "malum:tuning_fork",
+  "x": 93,
+  "y": 22,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:tuning_fork",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

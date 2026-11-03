@@ -1,0 +1,21 @@
+{
+  "title": "Making Leather: The last step",
+  "description": [
+    "Right click the raw hide on to the tanning rack, and then, with knife hand, right click on the rack a few times to turn raw hide into leather"
+  ],
+  "icon": "minecraft:leather",
+  "x": 14,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/making_leather_raw_hide"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:leather",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

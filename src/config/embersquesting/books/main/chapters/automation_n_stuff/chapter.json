@@ -1,0 +1,54 @@
+{
+  "title": "Automation 'n' Stuff",
+  "icon": "modern_industrialization:electronic_circuit",
+  "order": 8,
+  "scope": "team",
+  "links": [
+    {
+      "quest": "petrochemical_party/hydrochloric_acid_bucket",
+      "x": 23.0,
+      "y": 5.5
+    },
+    {
+      "quest": "petrochemical_party/sulfuric_acid_bucket",
+      "x": 19.0,
+      "y": 5.5
+    },
+    {
+      "quest": "petrochemical_party_pp/radiator",
+      "x": 21.0,
+      "y": 0.0
+    },
+    {
+      "quest": "magic_step_ii/me_source_jar",
+      "x": 20.0,
+      "y": 11.5
+    }
+  ],
+  "group": "shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_magic_midgame",
+  "defaults": {
+    "progression": "linear"
+  },
+  "decorations": [
+    {
+      "width": 1.2857143,
+      "height": 1.2857143,
+      "content": {
+        "texture": "milf:textures/quest_pic/saetummm.png",
+        "type": "image"
+      },
+      "x": 25.857143,
+      "y": 29.357143
+    },
+    {
+      "width": 5.142857,
+      "height": 2.5714285,
+      "content": {
+        "texture": "milf:textures/quest_pic/wip.png",
+        "type": "image"
+      },
+      "x": 2.9285715,
+      "y": 3.7142859
+    }
+  ]
+}

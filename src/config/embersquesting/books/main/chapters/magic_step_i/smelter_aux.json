@@ -1,0 +1,26 @@
+{
+  "title": "Smelter Aux",
+  "description": [
+    "Each <keyword>Auxiliary Slurry Pump</keyword> attached to the side of a smeltery works as an extra processor and outputs essentia into its own alembics.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Каждый <keyword>вспомогательный насос</keyword>, прикреплённый сбоку к плавильне, работает как дополнительный обработчик и выводит эссенцию в свои перегонные кубы."
+  ],
+  "icon": "thaumaturge:smelter_aux",
+  "x": 48.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_i/smelter_thaumium"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:smelter_aux",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

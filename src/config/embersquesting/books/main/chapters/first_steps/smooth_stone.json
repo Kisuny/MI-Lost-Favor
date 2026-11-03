@@ -1,0 +1,19 @@
+{
+  "title": "Smooth Stone",
+  "icon": "minecraft:smooth_stone",
+  "x": 36,
+  "y": 17,
+  "deps": {
+    "all": [
+      "first_steps/stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:smooth_stone",
+      "count": 16,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Tesla Coil",
+  "icon": "immersiveengineering:tesla_coil",
+  "x": 15.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/ie_energy_input_hatch",
+      "petrochemical_party/steel_rod_magnetic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:tesla_coil",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

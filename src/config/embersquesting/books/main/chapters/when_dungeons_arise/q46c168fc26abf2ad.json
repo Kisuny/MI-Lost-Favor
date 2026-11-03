@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "description": [
+    "Three <curse>Annihilation Pursuers</curse> guard the heart of the station. Each one drops an <keyword>Eye Crystal</keyword> - the key to the final boss.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Сердце станции охраняют три <curse>преследователя аннигиляции</curse>. С каждого падает <keyword>кристалл ока</keyword> - ключ к финальному боссу."
+  ],
+  "x": 18.5,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/space_station"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "legendary_monsters:annihilation_pursuer",
+      "type": "kill"
+    },
+    {
+      "advancement": "apotheosis:progression/summit",
+      "criterion": "kill_annihilation_pursuer",
+      "type": "advancement",
+      "title": "Slay an Annihilation Pursuer"
+    }
+  ],
+  "complete": "any",
+  "shape": "hexagon",
+  "size": 1.25
+}

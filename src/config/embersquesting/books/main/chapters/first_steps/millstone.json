@@ -1,0 +1,32 @@
+{
+  "title": "Millstone",
+  "description": [
+    "To power it, <positive>leash a mob</positive> to it.",
+    "",
+    "Some items can be processed more <keyword>efficiently</keyword> here, than by hand.",
+    "",
+    "Any leashable mob will work for this.",
+    "You can install a \"<keyword>SPEED UPGRADE</keyword>\" to accelerate the milling. The upgrade is a <keyword>speed potion</keyword>."
+  ],
+  "icon": "ytech:millstone",
+  "x": 35,
+  "y": 17,
+  "deps": {
+    "all": [
+      "first_steps/smooth_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:millstone",
+      "type": "item"
+    },
+    {
+      "block": "ytech:millstone",
+      "type": "observe",
+      "icon": "ytech:millstone"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

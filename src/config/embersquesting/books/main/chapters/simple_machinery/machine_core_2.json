@@ -1,0 +1,20 @@
+{
+  "title": "Machine Core 2",
+  "icon": "oritech:machine_core_2",
+  "x": 10.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "simple_machinery/soldering_alloy_bucket",
+      "simple_machinery/bottling_machine",
+      "simple_machinery/redstone_battery"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:machine_core_2",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

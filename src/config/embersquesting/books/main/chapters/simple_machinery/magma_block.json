@@ -1,0 +1,18 @@
+{
+  "title": "Magma Block",
+  "icon": "minecraft:magma_block",
+  "x": 16.5,
+  "y": 27,
+  "deps": {
+    "all": [
+      "simple_machinery/thermoelectric_generator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:magma_block",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

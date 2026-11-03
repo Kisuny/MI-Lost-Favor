@@ -1,0 +1,30 @@
+{
+  "title": "Upgrades",
+  "description": [
+    "Info for nerds",
+    "Most upgrades are trained by performing the matching activity while wearing the chestplate; every time you do, the armour banks experience toward the next level. How much it banks depends on the upgrade:",
+    "",
+    "• Proportional upgrades bank experience equal to the magnitude of the event: the damage taken or dealt, the health restored, the experience collected, or the distance moved. Bigger events teach the armour faster.",
+    "",
+    "• Per-event upgrades bank a flat point each time: one per block mined, or one per tick spent on fire or poisoned.",
+    "",
+    "A few upgrades (Brilliance, Curios Sockets, Elytra, Gilded) are not trained through activity at all and are simply applied from a tome. Each upgrade levels up at its own experience thresholds.",
+    "",
+    "You can read more about all the Upgrades in the guide book!"
+  ],
+  "x": 35.5,
+  "y": 6,
+  "deps": {
+    "all": [
+      "magic_step_iii/specialisation"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Upgrades"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

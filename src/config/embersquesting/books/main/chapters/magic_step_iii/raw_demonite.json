@@ -1,0 +1,24 @@
+{
+  "title": "Raw Demonite",
+  "icon": "neovitae:ingot_hellforged",
+  "x": 60,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/highway_to_hell_ritual"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:raw_demonite",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "neovitae:ingot_hellforged",
+      "count": 36,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

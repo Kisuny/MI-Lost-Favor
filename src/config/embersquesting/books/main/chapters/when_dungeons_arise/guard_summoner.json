@@ -1,0 +1,30 @@
+{
+  "title": "Guard Summoner",
+  "description": [
+    "A <soul>Corrupted Soul</soul> bound to a <keyword>Golden Halberd</keyword>. Summons a tamed <soul>Guard</soul> - slower than the knight, but <shake amplitude=0.3 frequency=1.0>hits harder</shake> and in a wider arc.",
+    "",
+    "If he falls, revive the summoner with an iron ingot.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<soul>Повреждённая душа</soul>, привязанная к <keyword>золотой алебарде</keyword>. Призывает приручённого <soul>стража</soul> - медленнее рыцаря, но <shake amplitude=0.3 frequency=1.0>бьёт сильнее</shake> и по более широкой дуге.",
+    "",
+    "Если он падёт, оживи призыватель железным слитком."
+  ],
+  "icon": "legendary_monsters:guard_summoner",
+  "x": 26,
+  "y": 23,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/somber_key"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:guard_summoner",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

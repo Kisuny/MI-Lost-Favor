@@ -1,0 +1,26 @@
+{
+  "title": "Ember Crystal",
+  "description": [
+    "<keyword>Ember Crystals</keyword> are what you feed the forge: the more you toss in with the item, the <positive>more likely</positive> the tempering succeeds.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Кристаллы эмбера</keyword> - корм для кузницы: чем больше вы бросите вместе с предметом, тем <positive>выше шанс</positive> удачной закалки."
+  ],
+  "icon": "embers:ember_crystal",
+  "x": 15.5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/inferno_forge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_crystal",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

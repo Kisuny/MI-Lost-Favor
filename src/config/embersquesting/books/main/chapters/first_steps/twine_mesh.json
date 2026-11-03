@@ -1,0 +1,26 @@
+{
+  "title": "Twine Mesh",
+  "description": [
+    "This <keyword>mesh</keyword> can catch basic resources, such as <keyword>sand</keyword>, <keyword>gravel</keyword>, <keyword>clay</keyword> and <keyword>fish</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Эта <keyword>сетка</keyword> может улавливать основные ресурсы, такие как <keyword>песок</keyword>, <keyword>гравий</keyword>, <keyword>глину</keyword> и <keyword>рыбу</keyword>."
+  ],
+  "icon": "ytech:twine_mesh",
+  "x": 16,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "first_steps/crafting_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:twine_mesh",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

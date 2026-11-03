@@ -1,0 +1,32 @@
+{
+  "title": "Superheater",
+  "description": [
+    "The <keyword>Superheater</keyword> <flame>cooks</flame> everything: mined blocks drop smelted, slain creatures drop cooked food, and targets take extra <fire>burn damage</fire>.",
+    "",
+    "Higher level - more damage. Uses Ember from your inventory.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Супернагреватель</keyword> всё <flame>прожаривает</flame>: добытые блоки выпадают переплавленными, убитые существа роняют готовую еду, а цели получают дополнительный <fire>урон огнём</fire>.",
+    "",
+    "Чем выше уровень, тем больше урон. Тратит эмбер из инвентаря."
+  ],
+  "icon": "embers:superheater",
+  "x": 17.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:superheater",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Lamp Arcane",
+  "description": [
+    "The <keyword>Arcane Lamp</keyword> places <pulse><magic>invisible light</magic></pulse> in dark spots around it. No more torch spam.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Магическая лампа</keyword> расставляет <pulse><magic>невидимый свет</magic></pulse> в тёмных местах вокруг себя. Больше не нужно утыкивать всё факелами."
+  ],
+  "icon": "thaumaturge:lamp_arcane",
+  "x": 43.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "magic_step_i/goggles_revealing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:lamp_arcane",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

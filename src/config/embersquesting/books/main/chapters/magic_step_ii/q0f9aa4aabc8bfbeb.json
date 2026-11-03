@@ -1,0 +1,26 @@
+{
+  "title": "",
+  "description": [
+    "<positive>Give</positive> your <keyword>Ars Ecclesia</keyword> to the <keyword>Witch</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Отдай</positive> свою книгу (<keyword>Ars Ecclesia</keyword>) <keyword>ведьме</keyword>!"
+  ],
+  "x": 76,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/codex"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "eidolon_repraised:wicked_path",
+      "type": "advancement"
+    }
+  ],
+  "shape": "gear",
+  "lines_in": "hover"
+}

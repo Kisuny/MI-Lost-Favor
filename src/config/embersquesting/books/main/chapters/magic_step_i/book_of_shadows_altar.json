@@ -1,0 +1,26 @@
+{
+  "title": "Book Of Shadows Altar",
+  "description": [
+    "It has been noted that the book on this table consumes quite a lot of <warning>FPS</warning>, so <warning>keep that in mind!</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду!</warning>"
+  ],
+  "icon": "hexerei:book_of_shadows_altar",
+  "x": 2.5,
+  "y": 52,
+  "deps": {
+    "all": [
+      "magic_step_i/mahogany_sapling"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:book_of_shadows_altar",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

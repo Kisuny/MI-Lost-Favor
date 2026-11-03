@@ -1,0 +1,26 @@
+{
+  "title": "Mossy Chestplate",
+  "description": [
+    "Press the ability key (<property>R</property> by default) to release <poison>poison clouds</poison> around you - they hurt mobs and <positive>heal you</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нажми клавишу способности (по умолчанию <property>R</property>), чтобы выпустить вокруг себя <poison>ядовитые облака</poison> - они ранят мобов и <positive>лечат тебя</positive>."
+  ],
+  "icon": "legendary_monsters:mossy_chestplate",
+  "x": 21,
+  "y": 22,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:mossy_chestplate",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

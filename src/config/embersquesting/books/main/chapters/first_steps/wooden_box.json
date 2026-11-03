@@ -1,0 +1,33 @@
+{
+  "title": "Wooden Box",
+  "description": [
+    "The chest predecessor and your first(<click action=open_quest value='basic_information/plonk'><u>or not first?</u></click>) reliable storage, can store up to 9 stacks of items",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Предшественник сундука и ваше первое(<click action=open_quest value='basic_information/plonk'><u>или не совсем первое?</u></click>) надежное хранилище, может хранить до 9 стаков предметов."
+  ],
+  "icon": "ytech:wooden_box",
+  "x": 11.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "first_steps/crafting_workspace",
+      "first_steps/any_logs"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:wooden_box",
+      "type": "item"
+    },
+    {
+      "block": "ytech:wooden_box",
+      "type": "observe",
+      "icon": "ytech:wooden_box"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

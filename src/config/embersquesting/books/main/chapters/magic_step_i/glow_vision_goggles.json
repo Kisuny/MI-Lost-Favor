@@ -1,0 +1,33 @@
+{
+  "title": "Glow Vision Goggles",
+  "description": [
+    "By using §3glow ink sacks§r (or §k<property>Light Blue Ink</property>§r), it grants the wearer <c value=#FEECD6>night vision</c>§r! ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя Светящийся чернильный мешок(или §k<property>Light Blue Ink</property>§r), награждает носителя <c value=#FEECD6>ночным зрением</c>§r! "
+  ],
+  "icon": "spectrum:glow_vision_goggles",
+  "x": 22.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:glow_vision_goggles",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Face Trinket Slot",
+      "id": "milf:trinket/face_glow_vision_goggles",
+      "type": "custom"
+    }
+  ],
+  "shape": "diamond"
+}

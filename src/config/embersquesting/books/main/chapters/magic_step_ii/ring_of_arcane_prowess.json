@@ -1,0 +1,27 @@
+{
+  "title": "Ring Of Arcane Prowess",
+  "description": [
+    "The <keyword>Ring of Arcane Prowess</keyword> feeds off excess magical energy - every time you collect a <warning>Spirit</warning>, you gain a small amount of <positive>experience</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ring of Arcane Prowess</keyword> питается избыточной магической энергией - каждый раз, когда вы собираете <warning>дух</warning>, вы получаете немного <positive>опыта</positive>."
+  ],
+  "icon": "malum:ring_of_arcane_prowess",
+  "x": 88.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ring_of_arcane_prowess",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

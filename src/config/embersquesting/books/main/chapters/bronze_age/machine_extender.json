@@ -1,0 +1,43 @@
+{
+  "title": "Machine Extender",
+  "description": [
+    "The <keyword>Machine Extender</keyword> can be <positive>placed on top of a machine</positive> to \"extend\" it, giving <keyword>more space</keyword> for pipes to connect. Machine Extenders can be <positive>stacked</positive>.",
+    "",
+    "Here is an example with a Modern Industrialization Chemical Reactor:",
+    "",
+    {
+      "width": 200,
+      "height": 130,
+      "texture": "milf:textures/quest_pic/machine_extender.png",
+      "type": "image"
+    },
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Удлинитель машины можно разместить сверху машины, чтобы «удлинить» ее, освободив больше места для подключения труб. Удлинители машины можно стакать.",
+    "",
+    "Вот пример с химическим реактором:",
+    "",
+    {
+      "width": 200,
+      "height": 130,
+      "texture": "milf:textures/quest_pic/machine_extender.png",
+      "type": "image"
+    }
+  ],
+  "icon": "moderndynamics:machine_extender",
+  "x": 21.5,
+  "deps": {
+    "all": [
+      "bronze_age/item_fluid_transfer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "moderndynamics:machine_extender",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

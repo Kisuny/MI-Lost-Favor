@@ -1,0 +1,19 @@
+{
+  "title": "Source Storage Cell 64k",
+  "icon": "arseng:source_storage_cell_64k",
+  "x": 16,
+  "y": 3,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/cell_component_64k",
+      "magic_step_ii/enchanting_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "arseng:source_storage_cell_64k",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Wand Cap Thaumium",
+  "description": [
+    "Thaumium caps focus vis of every type <positive>very efficiently</positive>. The inert cap from the workbench must be <magic>infused</magic> before it works.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Таумиевые наконечники <positive>очень эффективно</positive> фокусируют vis любого типа. Инертный наконечник с верстака нужно <magic>зарядить инфузией</magic>, прежде чем он заработает."
+  ],
+  "icon": "thaumaturge:wand_cap_thaumium",
+  "x": 62,
+  "y": 6,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_cap_thaumium",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

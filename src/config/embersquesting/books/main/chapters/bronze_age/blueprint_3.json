@@ -1,0 +1,22 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"Aircraft machines\"}",
+  "x": 28,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "bronze_age/hull",
+      "bronze_age/propeller",
+      "bronze_age/sail"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"Aircraft machines\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

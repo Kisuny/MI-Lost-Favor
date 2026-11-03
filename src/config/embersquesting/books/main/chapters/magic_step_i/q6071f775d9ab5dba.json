@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "description": [
+    "The <property>essence of nature</property> itself. Can create new life and revive life long dead.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Дайте им еду, откиньтесь назад и наблюдайте, как они... кушают, затем разбейте их еду, чтобы собрать остатки."
+  ],
+  "x": 35.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/bottle_of_fading"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:collect_vegetal",
+      "type": "advancement"
+    }
+  ],
+  "shape": "gear"
+}

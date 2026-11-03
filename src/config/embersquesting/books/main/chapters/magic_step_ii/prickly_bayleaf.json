@@ -1,0 +1,26 @@
+{
+  "title": "Prickly Bayleaf",
+  "description": [
+    "Those <keyword>prickly leaves</keyword> can only be acquired with <keyword>shears</keyword> - <warning>no other tool will work</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Эти <keyword>колючие листья</keyword> можно получить только с помощью <keyword>ножниц</keyword>"
+  ],
+  "icon": "spectrum:prickly_bayleaf",
+  "x": 51,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q758bf8f1aa3dbae6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:prickly_bayleaf",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

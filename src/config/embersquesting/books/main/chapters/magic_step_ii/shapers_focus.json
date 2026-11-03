@@ -1,0 +1,26 @@
+{
+  "title": "Shapers Focus",
+  "description": [
+    "The <keyword>Shapers Focus</keyword> is required to cast spells that manipulate blocks - Conjuration Essence and other block-shaping glyphs like <property>Snare</property> or <property>Dispel</property> need it to place, remove or transform blocks.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Shapers Focus</keyword> нужен для заклинаний, изменяющих блоки - глифы вроде <property>Snare</property> или <property>Dispel</property> используют его, чтобы ставить, убирать или превращать блоки."
+  ],
+  "icon": "ars_nouveau:shapers_focus",
+  "x": 108.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:shapers_focus",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Tome",
+  "description": [
+    "<keyword>Bottomless... book?</keyword> For all those pretty scribbled treatises «you» wrote about this beautiful world",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Бездонная... книга?</keyword> Для всех тех красивых набросков, которые «ты» написал об этом прекрасном мире."
+  ],
+  "icon": "eccentrictome:tome",
+  "x": 19.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "first_steps/q681ccf6687c70b0b"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eccentrictome:tome",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

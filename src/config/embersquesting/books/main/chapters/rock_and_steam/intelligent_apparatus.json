@@ -1,0 +1,26 @@
+{
+  "title": "Intelligent Apparatus",
+  "description": [
+    "The <keyword>Intelligent Apparatus</keyword> is an armor <magic>augment</magic>: creatures slain by the wearer drop <positive>more experience</positive>. Higher augment level - more XP.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Интеллектуальный аппарат</keyword> - <magic>улучшение</magic> для брони: существа, убитые носителем, роняют <positive>больше опыта</positive>. Чем выше уровень улучшения, тем больше опыта."
+  ],
+  "icon": "embers:intelligent_apparatus",
+  "x": 17.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/archaic_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:intelligent_apparatus",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Linear Ritual Block",
+  "description": [
+    "To build it, you need the following pattern, made with 16 Linear and 12 Curved Ritual Blocks, some Blood in the middle, and above that, a campfire. 12 Fires have to be created in total at the places where the Ritual Blocks point.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Для его создания вам понадобится следующая схема: 16 линейных и 12 изогнутых ритуальных блоков, немного крови посередине и костёр над ней. Всего необходимо разжечь 12 огня в тех местах, на которые указывают ритуальные блоки."
+  ],
+  "icon": "risus:joyflame_campfire",
+  "x": 19,
+  "y": 9,
+  "deps": {
+    "all": [
+      "magic_step_iii/scythe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:linear_ritual_block",
+      "count": 16,
+      "type": "item"
+    },
+    {
+      "item": "risus:curved_ritual_block",
+      "count": 12,
+      "type": "item"
+    },
+    {
+      "item": "risus:blood_bucket",
+      "type": "item"
+    },
+    {
+      "item": "risus:joyflame_campfire",
+      "type": "item"
+    },
+    {
+      "tag": "risus:joyflame_fire_base_blocks",
+      "count": 12,
+      "type": "item",
+      "title": "Any Joyflame Fire Base Blocks"
+    }
+  ],
+  "shape": "circle"
+}

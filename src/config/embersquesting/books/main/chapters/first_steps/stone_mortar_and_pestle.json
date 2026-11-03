@@ -1,0 +1,26 @@
+{
+  "title": "Stone Mortar And Pestle",
+  "description": [
+    "Used to <positive>crush items</positive> to make them less intact",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используется для <positive>измельчения предметов</positive>, чтобы сделать их менее целыми."
+  ],
+  "icon": "ytech:stone_mortar_and_pestle",
+  "x": 19,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "first_steps/stone_basin"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:stone_mortar_and_pestle",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

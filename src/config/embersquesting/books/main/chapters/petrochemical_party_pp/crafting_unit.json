@@ -1,0 +1,19 @@
+{
+  "title": "Crafting Unit",
+  "icon": "ae2:crafting_unit",
+  "x": 16,
+  "y": 39,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/formation_core",
+      "petrochemical_party_pp/annihilation_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:crafting_unit",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

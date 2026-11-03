@@ -1,0 +1,36 @@
+{
+  "title": "Wrench",
+  "description": [
+    "Using a <keyword>wrench</keyword>, you can <positive>rotate any machine</positive> by right-clicking. You can rotate the <keyword>output side</keyword> by sneaking while you <positive>shift-click</positive>.",
+    "",
+    "§lWith the wrench in your hand, you can also see how to build a particular multi-block! To do this, place the main block of the multi-block.§r",
+    "",
+    "<warning>Note that breaking a machine with the wrench will not drop it.</warning> Use a <keyword>pickaxe</keyword> for that!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "С помощью гаечного ключа можно поворачивать любую машину, щелкнув по ней ПКМ. Вы можете повернуть \"выход\" машины, используя шифт-клик.",
+    "",
+    "§lДержа ключ в руке вы так же можете посмотреть как строить тот или иной мультиблок! Для этого установите основной блок мультиблока.§r",
+    "",
+    "<warning>Обратите внимание, что разбивая машину гаечным ключом, вы не сможете ее получить.</warning> Для этого используйте <keyword>кирку</keyword>!"
+  ],
+  "icon": "modern_industrialization:wrench",
+  "x": 11,
+  "y": 9.5,
+  "deps": {
+    "any": [
+      "magic_step_i/winch",
+      "bronze_age/bronze_mechanical_component"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:wrench",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

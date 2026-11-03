@@ -1,0 +1,21 @@
+{
+  "title": "Stone Hammer",
+  "description": [
+    "Hammers are important. You'll be using them early on in place of machines with Forge Hammers, but they have limited durability and they are not as resource-efficient."
+  ],
+  "icon": "ytech:stone_hammer",
+  "x": 18,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "first_steps/crafting_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:stone_hammer",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

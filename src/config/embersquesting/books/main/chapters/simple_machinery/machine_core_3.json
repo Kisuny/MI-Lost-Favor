@@ -1,0 +1,26 @@
+{
+  "title": "Machine Core 3",
+  "icon": "oritech:machine_core_3",
+  "x": 18,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "simple_machinery/silicone_modified_phenolic_resin_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:machine_core_3",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "oritech:machine_core_2",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

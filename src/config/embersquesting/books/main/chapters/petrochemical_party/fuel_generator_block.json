@@ -1,0 +1,18 @@
+{
+  "title": "Fuel Generator Block",
+  "icon": "oritech:fuel_generator_block",
+  "x": 18.5,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/machine_core_4"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:fuel_generator_block",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

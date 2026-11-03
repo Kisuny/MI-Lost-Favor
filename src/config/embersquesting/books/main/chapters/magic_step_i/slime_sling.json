@@ -1,0 +1,23 @@
+{
+  "title": "Slime Sling",
+  "description": [
+    "Aim the Slime Sling at something solid and fire at it to launch *YOURSELF* in the opposite direction!",
+    "",
+    "Allows you to reach great heights. I just hope you know how to make great landings."
+  ],
+  "icon": "usefulslime:slime_sling",
+  "x": 26.5,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/imbuement_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "usefulslime:slime_sling",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

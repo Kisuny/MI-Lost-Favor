@@ -1,0 +1,30 @@
+{
+  "title": "Copper Chestplate",
+  "icon": "minecraft:copper_chestplate",
+  "x": 36,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "first_steps/copper_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:copper_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:copper_leggings",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:copper_helmet",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:copper_leggings",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

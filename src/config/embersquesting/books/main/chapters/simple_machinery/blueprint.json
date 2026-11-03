@@ -1,0 +1,23 @@
+{
+  "title": "Blueprint",
+  "description": [
+    "It totally makes sense that you can <positive>squeeze information</positive> out of <keyword>books</keyword> ´꒳\\`"
+  ],
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"Useful Tools\"}",
+  "x": 10.5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "simple_machinery/metal_press"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"Useful Tools\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

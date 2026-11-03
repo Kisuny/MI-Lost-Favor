@@ -1,0 +1,26 @@
+{
+  "title": "Bow Tome",
+  "icon": "apothic_enchanting:bow_tome",
+  "x": 54,
+  "y": 52,
+  "deps": {
+    "all": [
+      "magic_step_i/tomes"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:bow_tome",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "table": "t4d54c0af9946ade6",
+      "type": "table",
+      "claim_all": false
+    }
+  ],
+  "shape": "diamond"
+}

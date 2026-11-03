@@ -1,0 +1,30 @@
+{
+  "title": "Wildfire Stirling",
+  "description": [
+    "The <keyword>Wildfire Stirling</keyword> is the counterpart of the Catalytic Plug: fed with <wind>steam</wind>, it <positive>halves the Ember cost</positive> of a machine.",
+    "",
+    "Two stirlings - a quarter of the cost. More than two, or more than one Mechanical Core in between, lowers efficiency.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Огненный очиститель</keyword> - пара к Каталитическому штепселю: получая <wind>пар</wind>, он <positive>вдвое снижает расход эмбера</positive> машиной.",
+    "",
+    "Два очистителя - четверть расхода. Больше двух или больше одного механического ядра между ними снижают эффективность."
+  ],
+  "icon": "embers:wildfire_stirling",
+  "x": 32.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/bronze_machine_bit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:wildfire_stirling",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Earth Turret",
+  "description": [
+    "The <keyword>Earth Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Earth</keyword> school.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Earth Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам поблизости, используя силу школы <keyword>Земли</keyword>."
+  ],
+  "icon": "ars_elemental:earth_turret",
+  "x": 112.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spell_turret"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:earth_turret",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

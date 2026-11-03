@@ -1,0 +1,40 @@
+{
+  "title": "Storage Lectern",
+  "description": [
+    "You can <positive>combine</positive> multiple <keyword>chests</keyword> or any other <keyword>storage containers</keyword> into a single, very user-friendly <keyword>crafting interface</keyword> - it's literally <named>AE2</named> on a minimal setup.",
+    "",
+    "With a Dominion Wand in hand, shift + right click a storage container to designate it, and then right click the storage lectern to bind the two. ",
+    "",
+    "Will not function without a bookwyrm, but can have more than one. Each bookwyrm allows connecting 8 more containers.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вы можете <positive>объединить</positive> множество <keyword>сундуков</keyword> или любых других <keyword>хранилищ</keyword> в один очень удобный <keyword>интерфейс для крафта</keyword>, это буквально <named>AE2</named> на минималках."
+  ],
+  "icon": "ars_nouveau:storage_lectern",
+  "x": 24.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ingot",
+      "rock_and_steam/dawnstone_ingot",
+      "magic_step_i/dominion_wand"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:storage_lectern",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "ars_nouveau:bookwyrm_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

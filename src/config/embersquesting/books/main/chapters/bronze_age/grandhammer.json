@@ -1,0 +1,32 @@
+{
+  "title": "Grandhammer",
+  "description": [
+    "The <keyword>Grandhammer</keyword> is a heavy melee weapon running on Ember.",
+    "",
+    "Blocks broken with it are <shake amplitude=0.4 frequency=1.5>obliterated</shake> - <warning>no drops at all</warning>. Because of that it can not take Fortune or Silk Touch.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Великий молот</keyword> - тяжёлое оружие ближнего боя на эмбере.",
+    "",
+    "Блоки, сломанные им, <shake amplitude=0.4 frequency=1.5>уничтожаются</shake> - <warning>никакого дропа</warning>. Поэтому на него нельзя наложить Удачу или Шёлковое касание."
+  ],
+  "icon": "embers:grandhammer{\"minecraft:custom_data\":{didUse:0b,poweredOn:1b}}",
+  "x": 5.5,
+  "y": 20,
+  "deps": {
+    "all": [
+      "bronze_age/q690ee58c49d40485"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "embers:grandhammer",
+      "components": "{\"minecraft:custom_data\":{didUse:0b,poweredOn:1b}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

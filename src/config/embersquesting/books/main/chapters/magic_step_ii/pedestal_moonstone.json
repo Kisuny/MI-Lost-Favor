@@ -1,0 +1,33 @@
+{
+  "title": "Pedestal Moonstone",
+  "description": [
+    "<positive>Improve</positive> your <keyword>final pedestal</keyword>!",
+    "",
+    "Don’t forget to check out the <magic>church in the city bellow</magic> for all the <keyword>necessary blocks</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Улучшите</positive> свой <keyword>последний пьедестал</keyword>!",
+    "",
+    "Не забудьте заглянуть в <magic>церковь в подземном городе</magic> для всех необходимых блоков."
+  ],
+  "icon": "spectrum:pedestal_moonstone",
+  "x": 58,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q5ef6ea7ccbbc8a96",
+      "magic_step_ii/bismuth_flake",
+      "magic_step_ii/q27b5155ad94e6900"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:pedestal_moonstone",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

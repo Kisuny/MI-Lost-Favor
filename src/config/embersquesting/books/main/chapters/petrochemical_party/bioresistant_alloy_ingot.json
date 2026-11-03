@@ -1,0 +1,18 @@
+{
+  "title": "Bioresistant Alloy Ingot",
+  "icon": "modern_industrialization:bioresistant_alloy_ingot",
+  "x": 18,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/biosteel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bioresistant_alloy_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

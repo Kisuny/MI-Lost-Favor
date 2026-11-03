@@ -1,0 +1,30 @@
+{
+  "title": "Brain Box",
+  "description": [
+    "Normally a <magic>Thaumatorium</magic> remembers only <property>one formula</property> at a time. Attach a <keyword>Mnemonic Matrix</keyword> to its side and it can keep track of <positive>2 more formulas</positive> - each extra matrix adds another two.",
+    "",
+    "Crafted from a <keyword>Clockwork Mind</keyword>, so you will need some progress in <named>Golemancy</named>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обычно <magic>Тауматорий</magic> помнит только <property>одну формулу</property>. Прикрепи сбоку <keyword>мнемоническую матрицу</keyword>, и он сможет держать ещё <positive>2 формулы</positive> - каждая дополнительная матрица добавляет ещё по две.",
+    "",
+    "Делается из <keyword>заводного разума</keyword>, так что понадобится немного продвинуться в <named>Големостроении</named>."
+  ],
+  "icon": "thaumaturge:brain_box",
+  "x": 53,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_i/thaumatorium"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:brain_box",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Cotton Cloud Boots",
+  "description": [
+    "Almost <property>flight</property>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Почти что <property>полёт</property>"
+  ],
+  "icon": "spectrum:cotton_cloud_boots",
+  "x": 14.5,
+  "y": 45,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_i/phantom_membrane"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:cotton_cloud_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

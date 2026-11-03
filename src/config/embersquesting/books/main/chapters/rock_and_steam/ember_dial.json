@@ -1,0 +1,26 @@
+{
+  "title": "Ember Dial",
+  "description": [
+    "Attach the <keyword>Ember Dial</keyword> to anything that holds Ember and look at it to see <property>how much is stored</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Прикрепите <keyword>Индикатор эмбера</keyword> к чему угодно, что хранит эмбер, и посмотрите на него, чтобы узнать, <property>сколько внутри</property>."
+  ],
+  "icon": "embers:ember_dial",
+  "x": 13.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/lead_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_dial",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

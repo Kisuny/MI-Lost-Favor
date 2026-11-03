@@ -1,0 +1,18 @@
+{
+  "title": "Machine Assembler",
+  "icon": "mi_tweaks:machine_assembler",
+  "x": 9.5,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_energy_input_hatch"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "mi_tweaks:machine_assembler",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

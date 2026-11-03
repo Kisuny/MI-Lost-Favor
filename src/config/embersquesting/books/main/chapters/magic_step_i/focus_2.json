@@ -1,0 +1,26 @@
+{
+  "title": "Focus 2",
+  "description": [
+    "Infusion lets you craft an <keyword>Advanced Focus</keyword>, which can hold more complex spell patterns.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Инфузия позволяет создать <keyword>продвинутый фокус</keyword>, вмещающий более сложные схемы заклинаний."
+  ],
+  "icon": "thaumaturge:focus_2",
+  "x": 60,
+  "y": 5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:focus_2",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

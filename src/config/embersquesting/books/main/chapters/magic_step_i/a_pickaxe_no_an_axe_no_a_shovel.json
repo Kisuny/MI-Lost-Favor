@@ -1,0 +1,30 @@
+{
+  "title": "A pickaxe? No. An axe? No. A shovel?",
+  "description": [
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>",
+    "",
+    "<positive>Replaces</positive> most tools with a single <keyword>spell</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>",
+    "",
+    "<positive>Заменяет</positive> большинство инструментов одним <keyword>заклинанием</keyword>"
+  ],
+  "icon": "ars_nouveau:glyph_break",
+  "x": 23,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Useful Spells"
+    }
+  ],
+  "shape": "diamond"
+}

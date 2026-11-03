@@ -1,0 +1,26 @@
+{
+  "title": "Raven Cloak",
+  "description": [
+    "The <named>Raven Cloak</named> unfurls into a pair of wings. Tap or hold <keyword>jump</keyword> to flap and glide through the air, then hold <keyword>sneak</keyword> to land <wave>gently</wave>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Плащ ворона</named> разворачивается в пару крыльев. Нажимайте или удерживайте <keyword>прыжок</keyword>, чтобы махать ими и парить в воздухе, а затем удерживайте <keyword>присед</keyword> для <wave>мягкой</wave> посадки."
+  ],
+  "icon": "eidolon_repraised:raven_cloak",
+  "x": 72,
+  "y": 21,
+  "deps": {
+    "all": [
+      "magic_step_ii/gravity_belt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:raven_cloak",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

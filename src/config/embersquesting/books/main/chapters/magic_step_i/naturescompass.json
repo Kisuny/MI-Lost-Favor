@@ -1,0 +1,26 @@
+{
+  "title": "Naturescompass",
+  "description": [
+    "<positive>lets you find</positive> any <magic>biome</magic> you want!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Позволяет найти</positive> любой нужный вам <magic>биом</magic>!"
+  ],
+  "icon": "naturescompass:naturescompass",
+  "x": 7.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mixing_cauldron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "naturescompass:naturescompass",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

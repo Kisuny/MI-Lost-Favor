@@ -1,0 +1,27 @@
+{
+  "title": "Straw Effigy",
+  "description": [
+    "To speak with the powers that be, an <named>icon</named> is needed first. The <bone>Straw Effigy</bone> is crude, but once placed atop an <keyword>altar</keyword> it gives your prayers something to <magic>direct themselves at</magic> - maybe they'll be heard.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чтобы обратиться к высшим силам, сперва нужен <named>идол</named>. <bone>Соломенное чучело</bone> грубое, но, будучи установленным на <keyword>алтарь</keyword>, даёт вашим молитвам цель, к которой они <magic>устремятся</magic> - быть может, их услышат."
+  ],
+  "icon": "eidolon_repraised:straw_effigy",
+  "x": 76,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_ii/codex"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:straw_effigy",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "lines_in": "hover"
+}

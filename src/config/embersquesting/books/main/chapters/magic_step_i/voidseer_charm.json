@@ -1,0 +1,26 @@
+{
+  "title": "Voidseer Charm",
+  "description": [
+    "<curse><glitch frequency=0.7 shiftChance=0.06>In madness there is insight.</glitch></curse> Makes vis easier to manipulate - the more permanent warp you have, the bigger the bonus.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<curse><glitch frequency=0.7 shiftChance=0.06>В безумии есть прозрение.</glitch></curse> Облегчает работу с vis - чем больше у тебя постоянного искажения, тем сильнее бонус."
+  ],
+  "icon": "thaumaturge:voidseer_charm",
+  "x": 40.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_void"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:voidseer_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

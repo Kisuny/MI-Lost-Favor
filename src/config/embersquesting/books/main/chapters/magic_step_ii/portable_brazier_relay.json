@@ -1,0 +1,26 @@
+{
+  "title": "Portable Brazier Relay",
+  "description": [
+    "The <keyword>Portable Brazier Relay</keyword> (Ars Controle) lets you carry a ritual's effects with you, as long as the <keyword>Ritual Brazier</keyword> stays loaded and has a supply of <property>source</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Portable Brazier Relay</keyword> (Ars Controle) позволяет носить эффект ритуала с собой, пока <keyword>жаровня ритуала</keyword> остаётся загруженной и обеспечена <property>сурсом</property>."
+  ],
+  "icon": "ars_controle:portable_brazier_relay",
+  "x": 118.5,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/wilden_tribute"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_controle:portable_brazier_relay",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

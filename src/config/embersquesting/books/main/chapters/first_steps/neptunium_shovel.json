@@ -1,0 +1,21 @@
+{
+  "title": "Neptunium Shovel",
+  "icon": "aquaculture:neptunium_shovel{\"aquaculture:in_water\":0b}",
+  "x": 40,
+  "y": 30,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "aquaculture:neptunium_shovel",
+      "components": "{\"aquaculture:in_water\":0b}",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

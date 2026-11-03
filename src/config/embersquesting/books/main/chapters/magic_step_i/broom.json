@@ -1,0 +1,30 @@
+{
+  "title": "Broom",
+  "description": [
+    "A <keyword>broom</keyword> can be used to <positive>sweep chalk away</positive> quickly, without having to spend time erasing it.",
+    "",
+    "Conveniently, a <keyword>broom</keyword> can also make for an excellent <property>method of transportation</property> with some preparation.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "С помощью <keyword>метлы</keyword> можно быстро <positive>смести мел</positive>, не тратя время на его стирание.",
+    "",
+    "При определенной подготовке <keyword>метла</keyword> может стать отличным <property>средством передвижения</property>."
+  ],
+  "icon": "enchanted:broom",
+  "x": 32,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_i/ritual_chalk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:broom",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Any #c:plates",
+  "description": [
+    "Any <keyword>plate</keyword> counts here - for example, one pressed on the <keyword>Plate Stamp</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Подойдёт любая <keyword>пластина</keyword> - например, отштампованная на <keyword>Пресс-форме пластины</keyword>."
+  ],
+  "x": 8,
+  "y": 20,
+  "deps": {
+    "all": [
+      "rock_and_steam/plate_stamp"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "c:plates",
+      "type": "item",
+      "title": "Any #c:plates"
+    }
+  ],
+  "shape": "circle"
+}

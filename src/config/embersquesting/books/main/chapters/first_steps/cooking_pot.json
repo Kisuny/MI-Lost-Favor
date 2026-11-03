@@ -1,0 +1,34 @@
+{
+  "title": "Cooking Pot",
+  "description": [
+    "<keyword>Cooking for Blockheads</keyword> is compatible with <keyword>Farmer's Delight</keyword> - if a <named>cooking pot</named> and a <named>stove</named> are placed adjacent to each other, they form a multiblock, and connecting it to your kitchen network <positive>automatically pulls the right ingredients</positive> into the pot for any recipe it can cook.",
+    "",
+    "The <named>cooking pot</named> also acts as a <property>workstation</property> - a nearby villager can claim it and become a <keyword>Chef</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Cooking for Blockheads</keyword> совместим с <keyword>Farmer's Delight</keyword> - если <named>котелок</named> и <named>плита</named> стоят рядом, они образуют мультиблок, и при подключении его к кухонной сети нужные ингредиенты <positive>автоматически подаются</positive> в котелок для любого рецепта, который он может приготовить.",
+    "",
+    "<named>Котелок</named> так же служит <property>рабочей станцией</property> - житель рядом может занять её и стать <keyword>Поваром</keyword>."
+  ],
+  "icon": "farmersdelight:cooking_pot",
+  "x": 33,
+  "y": 22,
+  "deps": {
+    "all": [
+      "first_steps/tin_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "farmersdelight:cooking_pot",
+      "type": "item"
+    },
+    {
+      "item": "farmersdelight:stove",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,52 @@
+{
+  "title": "<pend>Hi wrld",
+  "description": [
+    "ADHD edition",
+    "\"R\" - <keyword>Radial menu</keyword>.",
+    "",
+    "Mobs - <positive>gone</positive>.",
+    "",
+    "Dungeons - <warning><shake amplitude=0.4 frequency=1.5>scary</shake></warning>.",
+    "",
+    "Maps - <property>later</property>.",
+    "",
+    "Chests - <warning>locked</warning>.",
+    "",
+    "Have fun, unlock stuff.",
+    "",
+    "Good luck, <positive><bounce amplitude=1.2 frequency=1.5 phase=1.0>sweetie pie</bounce></positive> \\<3",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "«R» - <keyword>радиальное меню</keyword>.",
+    "",
+    "Мобов - <positive>нету</positive>.",
+    "",
+    "Подземелья - <warning><shake amplitude=0.4 frequency=1.5>опасные</shake></warning>.",
+    "",
+    "Карта - <property>позже</property>.",
+    "",
+    "Сундуки - <warning>заперты</warning>.",
+    "",
+    "Веселись, разблокируй всякое.",
+    "",
+    "Удачи, <positive><bounce amplitude=1.2 frequency=1.5 phase=1.0>солнышко</bounce></positive> \\<3"
+  ],
+  "icon": "malum:textures/vfx/totem_poles/infernal_glow.png",
+  "x": -0.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "first_steps/glitch_hello_world"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Hi wrld"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

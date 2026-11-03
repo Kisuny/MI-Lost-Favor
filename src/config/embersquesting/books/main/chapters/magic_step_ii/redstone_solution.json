@@ -1,0 +1,26 @@
+{
+  "title": "Redstone Solution",
+  "description": [
+    "Next, I must heat it in a crucible to remove any impurities.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Затем выпарить все примеси в котелке."
+  ],
+  "icon": "toxony:redstone_solution",
+  "x": 31,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/redstone_mixture"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:redstone_solution",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

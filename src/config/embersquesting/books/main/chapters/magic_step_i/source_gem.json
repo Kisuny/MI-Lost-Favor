@@ -1,0 +1,24 @@
+{
+  "title": "Source Gem",
+  "icon": "ars_nouveau:source_gem",
+  "x": 28.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/imbuement_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:source_gem",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "ars_nouveau:worn_notebook",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

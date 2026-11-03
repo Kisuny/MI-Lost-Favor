@@ -1,0 +1,30 @@
+{
+  "title": "Creeper Heart",
+  "description": [
+    "You can use the <click action=open_quest value='magic_step_i/pentacle'><u>Pentacle</u></click> to get the amount of Creeper Heart you need!",
+    "",
+    "Mod creepers drop hearts too",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вы можете использовать <click action=open_quest value='magic_step_i/pentacle'><u>пентаграмму</u></click> чтобы получать необходимое количество Creeper Heart!",
+    "",
+    "Из модовых-криперов так же падает сердце"
+  ],
+  "icon": "enchanted:creeper_heart",
+  "x": 7.5,
+  "y": 56,
+  "deps": {
+    "all": [
+      "magic_step_i/arthana"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:creeper_heart",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

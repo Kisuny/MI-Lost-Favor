@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Suppression",
+  "description": [
+    "Activate this sigil to temporarily banish all fluids around you. You can use this to run across the ocean bed, or to walk across the Nether's lava lakes."
+  ],
+  "icon": "neovitae:sigil_suppression",
+  "x": 54.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/blood_orb_master"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_suppression",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

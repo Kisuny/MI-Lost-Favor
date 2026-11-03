@@ -1,0 +1,23 @@
+{
+  "title": "Burning Ashes",
+  "icon": "cataclysm:bulwark_of_the_flame",
+  "x": 15,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_summit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cataclysm:burning_ashes",
+      "type": "item"
+    },
+    {
+      "advancement": "cataclysm:kill_ignis",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

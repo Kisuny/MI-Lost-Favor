@@ -1,0 +1,26 @@
+{
+  "title": "Athame",
+  "description": [
+    "The <keyword>Athame</keyword> is a fast and deadly weapon and you will need to use the <magic>Diamond Ritual</magic> to obtain its power",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Атамэ</keyword> - быстрое и смертоносное оружие, и чтобы получить его силу, вам придется использовать <magic>Алмазный ритуал</magic>."
+  ],
+  "icon": "paganbless:athame",
+  "x": 7.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_diamond"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:athame",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

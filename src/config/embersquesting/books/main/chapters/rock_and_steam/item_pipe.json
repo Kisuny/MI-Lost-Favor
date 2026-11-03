@@ -1,0 +1,22 @@
+{
+  "title": "Item Pipe",
+  "icon": "embers:item_pipe",
+  "x": 2,
+  "y": 13,
+  "deps": {
+    "all": [
+      "rock_and_steam/caminite_lever"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:item_pipe",
+      "type": "item"
+    },
+    {
+      "item": "embers:item_extractor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

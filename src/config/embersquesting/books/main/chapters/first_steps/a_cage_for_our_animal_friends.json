@@ -1,0 +1,26 @@
+{
+  "title": "A cage for our animal friends",
+  "description": [
+    "You can use a <click action=open_quest value='first_steps/animal_cage'><u>cage</u></click> to catch mobs like sheep or cows and <positive>breed them</positive>. It's a very <property>lag-friendly block</property> - use it instead of having a large number of mobs in your area, as that can <warning>negatively impact server performance</warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя <click action=open_quest value='first_steps/animal_cage'><u>клетку</u></click> можно поймать таких мобов как овец или коров и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!"
+  ],
+  "x": 36,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "first_steps/animal_cage"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "animal_pen:animal_pens",
+      "type": "item",
+      "title": "Any Animal Pens"
+    }
+  ],
+  "shape": "heart"
+}

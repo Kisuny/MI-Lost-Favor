@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Void",
+  "description": [
+    "Deletes the block of liquid you are looking at for 50EV from your Anima reserves."
+  ],
+  "icon": "neovitae:sigil_void",
+  "x": 36,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_void",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

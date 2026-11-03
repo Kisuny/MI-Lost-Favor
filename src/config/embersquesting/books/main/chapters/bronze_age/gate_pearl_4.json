@@ -1,0 +1,23 @@
+{
+  "title": "Gate Pearl",
+  "description": [
+    "If you can finish this gateway, you might just get some useful items."
+  ],
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:overworldian_nights\"}",
+  "x": 15.5,
+  "y": 33,
+  "deps": {
+    "all": [
+      "bronze_age/ender_eye"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"gateways:overworldian_nights\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Bone Needle",
+  "description": [
+    "Sharp as a needle... literally (and performs as one too)",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Острый как игла... в буквальном смысле (и работает так же)"
+  ],
+  "icon": "ytech:bone_needle",
+  "x": 15,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "first_steps/tree_stump"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:bone_needle",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

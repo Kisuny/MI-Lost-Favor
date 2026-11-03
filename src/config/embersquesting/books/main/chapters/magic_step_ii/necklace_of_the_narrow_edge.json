@@ -1,0 +1,27 @@
+{
+  "title": "Necklace Of The Narrow Edge",
+  "description": [
+    "The <keyword>Necklace of the Narrow Edge</keyword> mystically focuses your scythe strikes - <positive>+40% Scythe Proficiency</positive> and the <property>Rebound</property> and <property>Ascension</property> augments, but it <curse>disables Scythe Sweeping</curse>, so only a single target takes the full brunt of the blow.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Necklace of the Narrow Edge</keyword> мистически фокусирует удары косой - <positive>+40% Scythe Proficiency</positive> и усиления <property>Rebound</property> и <property>Ascension</property>, но <curse>отключает подсекание косой (Scythe Sweeping)</curse>, так что весь удар достаётся только одной цели."
+  ],
+  "icon": "malum:necklace_of_the_narrow_edge",
+  "x": 88.5,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/ornate_necklace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:necklace_of_the_narrow_edge",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

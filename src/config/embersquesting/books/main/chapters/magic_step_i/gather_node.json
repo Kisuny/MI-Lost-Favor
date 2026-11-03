@@ -1,0 +1,21 @@
+{
+  "title": "Gather Node",
+  "description": [
+    ""
+  ],
+  "icon": "spectrum:gather_node",
+  "x": 48,
+  "y": 57.5,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_node_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:gather_node",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

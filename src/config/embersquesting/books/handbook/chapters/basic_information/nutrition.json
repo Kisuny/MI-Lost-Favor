@@ -1,0 +1,64 @@
+{
+  "title": "Nutrition",
+  "description": [
+    "Nutritional tracks <keyword>what kinds</keyword> of food you eat, not just how much.",
+    "",
+    "• Every food falls into categories: <property>fruit, grain, protein, vegetable, dairy, and source</property>.",
+    "",
+    "• Each category has its own level from 0 to 100. Eating that food type raises it, eating other things lets it slowly decay.",
+    "",
+    "• Your overall diet tier (<keyword>malnourished, starving, surviving, nourished, gourmand</keyword>) depends on these levels and gives you passive bonuses or penalties - health, decay rate, etc.",
+    "",
+    "• Eating <warning>too little or too much</warning> of one category triggers extra effects - both good (strength, mana regen) and bad (weakness).",
+    "",
+    "• Keep a high diet tier for several days in a row and you unlock a <property>bonus effect</property> - it isn't a one-time permanent buff, it's kept active for as long as you maintain the diet, and gets removed if your diet drops too low <warning><shake amplitude=0.8 frequency=1.2>or you die</shake></warning>.",
+    "",
+    "• The <warning>Nether and the End</warning> drain your nutrient levels faster than the Overworld - eating well matters more there.",
+    "",
+    "• Open the full nutrition screen through the radial menu(R button) to see all your levels and current tier.",
+    "",
+    "• The small icon next to your hotbar shows your current diet tier at a glance.",
+    "",
+    "In short: eat a <keyword>varied diet</keyword> to stay strong. Ignore one category for too long and you'll feel it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Nutritional следит за тем, <keyword>что именно</keyword> ты ешь, а не только сколько.",
+    "",
+    "• Вся еда делится на категории: <property>фрукты, зерно, белок, овощи, молочное и исток</property>.",
+    "",
+    "• У каждой категории свой уровень от 0 до 100. Еда этого типа поднимает уровень, без неё он медленно падает.",
+    "",
+    "• Общий тир питания (<keyword>истощён, голодает, выживает, сыт, гурман</keyword>) зависит от этих уровней и даёт пассивные бонусы или штрафы - здоровье, скорость истощения и прочее.",
+    "",
+    "• Если <warning>сильно перебрать или недобрать</warning> по одной категории - срабатывают дополнительные эффекты, как хорошие (сила, реген маны), так и плохие (слабость).",
+    "",
+    "• Продержи высокий тир питания несколько дней подряд - получишь <property>бонусный эффект</property> - это не разовый вечный бафф, он поддерживается активным пока ты держишь диету, и снимается, если тир упадёт слишком низко <warning><shake amplitude=0.8 frequency=1.2>или ты умрёшь</shake></warning>.",
+    "",
+    "• В <warning>Аду и Энде</warning> уровни нутриентов падают быстрее, чем в Оверворлде - там питаться разнообразно важнее.",
+    "",
+    "• Полный экран питания открывается через радиальное меню(кнопка R) - там видны все уровни и текущий тир.",
+    "",
+    "• Маленькая иконка рядом с хотбаром показывает твой текущий тир питания.",
+    "",
+    "Коротко: питайся <keyword>разнообразно</keyword>, чтобы быть сильным. Забьёшь на одну категорию надолго - почувствуешь это."
+  ],
+  "icon": "eatinganimation:textures/item/apple_eating_2.png",
+  "x": 0.29000000000000004,
+  "y": 10.67,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Nutrition"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "farmersdelight:hamburger",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Flint Axe",
+  "description": [
+    "You know what you will use this for, don't you?",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ты же знаешь, для чего это нужно, да?"
+  ],
+  "icon": "ytech:flint_axe",
+  "x": 6.5,
+  "y": 5,
+  "deps": {
+    "all": [
+      "first_steps/grass_twine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:flint_axe",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

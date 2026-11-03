@@ -1,0 +1,21 @@
+{
+  "title": "Fire Resistance Oil Pot",
+  "description": [
+    "<property>Fire Resistance</property> (duh)"
+  ],
+  "icon": "toxony:fire_resistance_oil_pot",
+  "x": 19,
+  "y": 37,
+  "deps": {
+    "all": [
+      "magic_step_ii/oil_pots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:fire_resistance_oil_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

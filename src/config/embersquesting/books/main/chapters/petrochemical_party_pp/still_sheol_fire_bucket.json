@@ -1,0 +1,22 @@
+{
+  "title": "Still Sheol Fire Bucket",
+  "icon": "oritech:still_sheol_fire_bucket",
+  "x": 19,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/acetylene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:still_sheol_fire_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

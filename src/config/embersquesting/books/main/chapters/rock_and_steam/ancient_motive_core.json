@@ -1,0 +1,32 @@
+{
+  "title": "Ancient Motive Core",
+  "description": [
+    "The <keyword>Ancient Motive Core</keyword> is the <flame>spark</flame> of ancient machinery, built around an <keyword>Everburning Roots Heart</keyword>.",
+    "",
+    "It is the heart of the <keyword>Ember Activator</keyword>, and later it becomes the key to <magic>augmenting</magic> your tools and armor.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Древнее ядро пробуждения</keyword> - <flame>искра</flame> древних механизмов, собранная вокруг <keyword>Everburning Roots Heart</keyword>.",
+    "",
+    "Это сердце <keyword>Активатора эмбера</keyword>, а позже оно станет ключом к <magic>улучшению</magic> инструментов и брони."
+  ],
+  "icon": "embers:ancient_motive_core",
+  "x": 5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "rock_and_steam/everburning_roots_heart",
+      "rock_and_steam/archaic_brick",
+      "rock_and_steam/ember_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ancient_motive_core",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

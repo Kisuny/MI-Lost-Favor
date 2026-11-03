@@ -1,0 +1,30 @@
+{
+  "title": "Hearth Coil",
+  "description": [
+    "Forget stone furnaces. The <keyword>Hearth Coil</keyword> <flame>heats up</flame> on Ember, and the hotter it gets, the <positive>faster</positive> it smelts items placed on top.",
+    "",
+    "Results are kept inside the coil - pipe them out from the bottom or through a <keyword>Mechanical Core</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Забудьте про каменные печи. <keyword>Нагревательная катушка</keyword> <flame>раскаляется</flame> на эмбере, и чем она горячее, тем <positive>быстрее</positive> плавит предметы, лежащие сверху.",
+    "",
+    "Результат остаётся внутри катушки - забирайте его трубами снизу или через <keyword>Механическое ядро</keyword>."
+  ],
+  "icon": "embers:hearth_coil",
+  "x": 31,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "bronze_age/copper_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:hearth_coil",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

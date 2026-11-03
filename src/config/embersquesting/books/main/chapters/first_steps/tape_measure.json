@@ -1,0 +1,26 @@
+{
+  "title": "Tape Measure",
+  "description": [
+    "Since the measuring unit is... literally all around you, it's much easier to produce an accurate <keyword>tape measure</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Поскольку единица измерения находится буквально вокруг вас, гораздо проще изготовить точную <keyword>рулетку</keyword>."
+  ],
+  "icon": "measurements:tape_measure",
+  "x": 26.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "first_steps/tin_bolt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "measurements:tape_measure",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

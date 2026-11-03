@@ -1,0 +1,26 @@
+{
+  "title": "Chorus Mask",
+  "description": [
+    "Protects you from <poison>Chorus Infection</poison>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Защищает от <poison>инфекции хоруса</poison>."
+  ],
+  "icon": "legendary_monsters:chorus_mask",
+  "x": 26,
+  "y": 27,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q3d7c097e1f8bbf2e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:chorus_mask",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

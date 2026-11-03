@@ -1,0 +1,31 @@
+{
+  "title": "Eldritch Insignia",
+  "description": [
+    "With the <keyword>Eldritch Insignia</keyword> on your armor, some monsters become <curse>afraid of you</curse> and won't attack - unless you provoke them.",
+    "",
+    "The higher the augment level, the more creatures are <glitch frequency=0.6 shiftChance=0.05>intimidated</glitch>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "С <keyword>Эмблемой древних</keyword> на броне некоторые монстры начинают <curse>вас бояться</curse> и не нападают, пока вы их не тронете.",
+    "",
+    "Чем выше уровень улучшения, тем больше существ <glitch frequency=0.6 shiftChance=0.05>запуганы</glitch>."
+  ],
+  "icon": "embers:eldritch_insignia",
+  "x": 18.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:eldritch_insignia",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

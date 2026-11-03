@@ -1,0 +1,20 @@
+{
+  "title": "Gate Pearl",
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:endless/blaze\"}",
+  "x": 17,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "bronze_age/gate_pearl"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"gateways:endless/blaze\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

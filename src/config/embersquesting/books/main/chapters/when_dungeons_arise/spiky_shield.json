@@ -1,0 +1,30 @@
+{
+  "title": "Spiky Shield",
+  "description": [
+    "A shield that bites back: while blocking it has a <property>50%</property> chance to <blood>reflect damage</blood> to the attacker.",
+    "",
+    "Needs an <keyword>Ancient Spike</keyword> from the <keyword>Spiky Worm</keyword>, a <keyword>Chiseled Ancient Dripstone Shard</keyword> from the <keyword>Ambusher</keyword> and a <keyword>Molten Metal Ingot</keyword> - smelt an <keyword>Anchor Handle</keyword> to get it. <warning>The anchor needs a handle too</warning>, so you will have to beat the guardian twice.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Щит, который кусается в ответ: при блоке с шансом <property>50%</property> <blood>отражает урон</blood> обратно в атакующего.",
+    "",
+    "Нужен <keyword>древний шип</keyword> с <keyword>шипастого червя</keyword>, <keyword>осколок древнего капельника</keyword> с <keyword>засадника</keyword> и <keyword>слиток расплавленного металла</keyword> - его получают переплавкой <keyword>рукоятки якоря</keyword>. <warning>Якорю тоже нужна рукоятка</warning>, так что стража придётся победить дважды."
+  ],
+  "icon": "legendary_monsters:spiky_shield",
+  "x": 16,
+  "y": 22,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:spiky_shield",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

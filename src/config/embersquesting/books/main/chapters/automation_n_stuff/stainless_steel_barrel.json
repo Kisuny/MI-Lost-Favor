@@ -1,0 +1,18 @@
+{
+  "title": "Stainless Steel Barrel",
+  "icon": "modern_industrialization:stainless_steel_barrel",
+  "x": 20,
+  "y": 0.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/stainless_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:stainless_steel_barrel",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

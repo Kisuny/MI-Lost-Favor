@@ -1,0 +1,32 @@
+{
+  "title": "Transmogrification Table",
+  "description": [
+    "Change the appearance of your items",
+    "Used to <positive>transmogrify items</positive>.",
+    "",
+    "Place the <keyword>fuel</keyword>, the <keyword>item whose appearance</keyword> you want to change, and the <keyword>item you want to change it into</keyword> on the table.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используется для трансформации предметов.",
+    "",
+    "Добавьте в стол топливо, предмет, внешний вид которого вы хотите изменить, и предмет, в который вы хотите его превратить."
+  ],
+  "icon": "transmog:transmogrification_table",
+  "x": 40.5,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_i/void_fragment",
+      "magic_step_i/amber_visage"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "transmog:transmogrification_table",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

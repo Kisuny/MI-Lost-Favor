@@ -1,0 +1,26 @@
+{
+  "title": "Spellweaving Pickaxe",
+  "description": [
+    "The <keyword>Spellweaving Pickaxe</keyword> is imbued with <keyword>earthen arcana</keyword> - once <pulse>primed</pulse>, every block you mine spawns up to <property>4 loci</property> that automatically seek out and break nearby matching blocks for you, mining <positive>whole veins</positive> in an instant.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Spellweaving Pickaxe</keyword> пропитана <keyword>земной арканой</keyword> - будучи <pulse>активированной</pulse>, при добыче каждого блока она порождает до <property>4 локусов</property>, которые сами находят и ломают похожие блоки поблизости, мгновенно добывая <positive>целые жилы руды</positive>."
+  ],
+  "icon": "malum:spellweaving_pickaxe",
+  "x": 84,
+  "y": 21,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_stained_steel_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:spellweaving_pickaxe",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

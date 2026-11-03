@@ -1,0 +1,18 @@
+{
+  "title": "Machine Yield Addon",
+  "icon": "oritech:machine_yield_addon",
+  "x": 23.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/machine_ultimate_addon"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:machine_yield_addon",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Place the Hellfire Forge",
+  "description": [
+    "The forge of demons. The <fire>Hellfire Forge</fire> crafts <property>Sentient Equipment</property>, <property>Explosive Charges</property>, and <property>Spiritus Gems</property> using Raw Spiritus as fuel. It is the core machine of the mid-game."
+  ],
+  "icon": "neovitae:hellfire_forge",
+  "x": 37.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/base_spiritus_soul_raw"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:hellfire_forge",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Chicken Nest",
+  "description": [
+    "The <keyword>chicken nest</keyword> <positive>collects eggs dropped by nearby chickens and stores them for later pickup</positive>.",
+    "",
+    "§lUsage§r",
+    "• <keyword>Right-click</keyword> a chicken nest to collect eggs.",
+    "• You can also use a <keyword>hopper</keyword> to pull eggs from the nest.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Куриное гнездо</keyword> <positive>собирает яйца, снесённые находящимися поблизости курицами, и хранит их для последующего сбора</positive>.",
+    "",
+    "§lИспользование§r",
+    "",
+    "• <keyword>Щелкните правой кнопкой мыши</keyword> по куриному гнезду, чтобы собрать яйца.",
+    "• Вы также можете использовать <keyword>воронку</keyword>, чтобы достать яйца из гнезда."
+  ],
+  "icon": "farmingforblockheads:chicken_nest",
+  "x": 5,
+  "y": 9,
+  "tasks": [
+    {
+      "item": "farmingforblockheads:chicken_nest",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

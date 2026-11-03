@@ -1,0 +1,18 @@
+{
+  "title": "Ring Of Greater Discount",
+  "icon": "ars_nouveau:ring_of_greater_discount",
+  "x": 102.5,
+  "y": 14,
+  "deps": {
+    "all": [
+      "magic_step_ii/ring_of_lesser_discount"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:ring_of_greater_discount",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

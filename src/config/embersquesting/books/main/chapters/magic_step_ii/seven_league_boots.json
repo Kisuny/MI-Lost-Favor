@@ -1,0 +1,28 @@
+{
+  "title": "Seven League Boots",
+  "description": [
+    "<keyword>Thaumic Footsteps</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Тауматургам</keyword> приготовиться"
+  ],
+  "icon": "spectrum:seven_league_boots",
+  "x": 11.5,
+  "y": 45,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_i/phantom_membrane"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:seven_league_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

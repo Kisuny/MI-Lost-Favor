@@ -1,0 +1,32 @@
+{
+  "title": "Clockwork Axe",
+  "description": [
+    "The <keyword>Clockwork Axe</keyword> - a powerful <positive>unbreakable</positive> axe that runs on Ember.",
+    "",
+    "Like the other clockwork tools, it doubles as a weapon and <flame>sets enemies on fire</flame>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Заводной топор</keyword> - мощный <positive>неломающийся</positive> топор, работающий на эмбере.",
+    "",
+    "Как и другие заводные инструменты, годится как оружие и <flame>поджигает врагов</flame>."
+  ],
+  "icon": "embers:clockwork_axe{\"minecraft:custom_data\":{didUse:0b,poweredOn:0b}}",
+  "x": 5,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "bronze_age/q690ee58c49d40485"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "embers:clockwork_axe",
+      "components": "{\"minecraft:custom_data\":{didUse:0b,poweredOn:0b}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

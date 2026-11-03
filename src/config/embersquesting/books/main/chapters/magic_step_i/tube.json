@@ -1,0 +1,44 @@
+{
+  "title": "Tube",
+  "description": [
+    "<keyword>Essentia Tubes</keyword> carry essentia between smelteries, jars and machines, so you no longer have to <wiggle amplitude=0.5 frequency=1.0 phase=1.0>run around with phials</wiggle>.",
+    "",
+    "<named>How it flows:</named> essentia moves only when something at the other end <wave>pulls</wave> it - this pull is called <property>suction</property>. <keyword>Warded Jars</keyword> and devices that need essentia create suction, alembics give essentia away. A jar that already holds some essentia only pulls <property>its own type</property>.",
+    "",
+    "<named>One type per tube:</named> a tube can carry only <warning>one kind</warning> of essentia at a time, and the <property>strongest suction</property> decides which. Without valves a network gets <shake amplitude=0.3 frequency=1.0>gummed up</shake> very easily.",
+    "",
+    "<named>Gas from tubes:</named> if a tube <poison>vents gas</poison>, different suctions are fighting each other inside it. The gas color hints at which essentia types are causing the conflict - split the branches with valves or filters.",
+    "",
+    "<named>Wand tricks:</named> click a section of tube with a wand to <property>connect or disconnect</property> it from its neighbours, click the center to rotate tubes like the valve.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Трубы для эссенции</keyword> переносят эссенцию между плавильнями, банками и машинами, и больше не нужно <wiggle amplitude=0.5 frequency=1.0 phase=1.0>бегать с фиалами</wiggle>.",
+    "",
+    "<named>Как течёт:</named> эссенция движется, только если что-то на другом конце её <wave>тянет</wave> - это называется <property>всасыванием</property>. <keyword>Защищённые банки</keyword> и устройства, которым нужна эссенция, создают всасывание, а перегонные кубы эссенцию отдают. Банка, в которой уже есть эссенция, тянет только <property>свой тип</property>.",
+    "",
+    "<named>Один тип на трубу:</named> по трубе за раз идёт только <warning>одна</warning> эссенция, и выбирает её <property>самое сильное всасывание</property>. Без клапанов сеть очень легко <shake amplitude=0.3 frequency=1.0>забивается</shake>.",
+    "",
+    "<named>Газ из труб:</named> если труба <poison>выпускает газ</poison>, внутри неё борются разные всасывания. Цвет газа подсказывает, какие типы эссенции конфликтуют, - раздели ветки клапанами или фильтрами.",
+    "",
+    "<named>Работа жезлом:</named> клик жезлом по участку трубы <property>подключает или отключает</property> его от соседних, клик по центру поворачивает трубы вроде клапана."
+  ],
+  "icon": "thaumaturge:tube",
+  "x": 50,
+  "y": 19,
+  "deps": {
+    "all": [
+      "magic_step_i/smelter_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tube",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 2.0
+}

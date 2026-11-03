@@ -1,0 +1,19 @@
+{
+  "title": "Electric Wiremill",
+  "icon": "modern_industrialization:electric_wiremill",
+  "x": 18,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull",
+      "automation_n_stuff/large_motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electric_wiremill",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

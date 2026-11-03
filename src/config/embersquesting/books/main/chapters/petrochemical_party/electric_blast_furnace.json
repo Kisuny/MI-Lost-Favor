@@ -1,0 +1,19 @@
+{
+  "title": "Electric Blast Furnace",
+  "icon": "modern_industrialization:electric_blast_furnace",
+  "x": 16.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/cupronickel_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electric_blast_furnace",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

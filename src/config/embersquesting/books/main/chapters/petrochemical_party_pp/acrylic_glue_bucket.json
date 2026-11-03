@@ -1,0 +1,22 @@
+{
+  "title": "Acrylic Glue Bucket",
+  "icon": "modern_industrialization:acrylic_glue_bucket",
+  "x": 13,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/acrylic_acid_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:acrylic_glue_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

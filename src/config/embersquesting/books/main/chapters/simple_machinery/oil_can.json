@@ -1,0 +1,18 @@
+{
+  "title": "Oil Can",
+  "icon": "immersivepetroleum:oil_can",
+  "x": 3.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "simple_machinery/sample_drill"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:oil_can",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Villager Hat",
+  "icon": "artifacts:villager_hat{\"relics:data\":{abilities:{abilities:{golem_guard:{lock:{breaks:0},points:0,stats:{damage_reduction_per_golem:{},max_damage_reduction:{initialQuality:7},radius:{initialQuality:3}}},trade_surge:{lock:{breaks:5},points:0,stats:{discount:{initialQuality:7},multicast:{initialQuality:3},preserve_chance:{initialQuality:8}}}},synergies:{}},leveling:{},statistic:{}}}",
+  "x": 0.5,
+  "y": 32,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "artifacts:villager_hat",
+      "components": "{\"relics:data\":{abilities:{abilities:{golem_guard:{lock:{breaks:0},points:0,stats:{damage_reduction_per_golem:{},max_damage_reduction:{initialQuality:7},radius:{initialQuality:3}}},trade_surge:{lock:{breaks:5},points:0,stats:{discount:{initialQuality:7},multicast:{initialQuality:3},preserve_chance:{initialQuality:8}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

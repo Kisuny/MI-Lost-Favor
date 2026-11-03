@@ -1,0 +1,22 @@
+{
+  "title": "Large Tank",
+  "icon": "modern_industrialization:large_tank",
+  "x": 16,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_machine_bit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:large_tank",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:large_tank_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

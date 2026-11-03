@@ -1,0 +1,18 @@
+{
+  "title": "Connector Hv Relay",
+  "icon": "immersiveengineering:connector_hv_relay",
+  "x": 19.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/wirecoil_steel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:connector_hv_relay",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Germinated Jade Vine Bulb",
+  "description": [
+    "In this §9structure§r, you have found a <keyword>Hibernating Bulb</keyword>, wonder if you can <positive>revive</positive> it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В данже была найдена <keyword>засохшая нефритовая луковица</keyword>, возможно у вас выйдет <positive>оживить</positive> её?"
+  ],
+  "icon": "spectrum:germinated_jade_vine_bulb",
+  "x": 37.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/q4103fc453fc2ccc0"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:germinated_jade_vine_bulb",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

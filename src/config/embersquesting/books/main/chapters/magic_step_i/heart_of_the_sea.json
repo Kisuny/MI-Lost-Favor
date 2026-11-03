@@ -1,0 +1,19 @@
+{
+  "title": "Heart Of The Sea",
+  "icon": "minecraft:heart_of_the_sea",
+  "x": 18,
+  "y": 56.5,
+  "deps": {
+    "all": [
+      "magic_step_i/vanilla_items_for_spectrum_progression"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:heart_of_the_sea",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Iron Aspectus",
+  "description": [
+    "The <keyword>Iron Aspectus</keyword> - a steady <magic>alignment</magic> that opens up new transmutations, including the <keyword>Ember Crystal Cluster</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Железный аспект</keyword> - надёжное <magic>русло</magic>, открывающее новые трансмутации, включая <keyword>Друзу кристаллизованного эмбера</keyword>."
+  ],
+  "icon": "embers:iron_aspectus",
+  "x": 19,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/intelligent_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:iron_aspectus",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 1.5
+}

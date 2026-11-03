@@ -1,0 +1,26 @@
+{
+  "title": "Portal Scroll",
+  "description": [
+    "The <keyword>Portal Scroll</keyword> opens a physical portal to a chosen destination that players, mobs and items can walk through - it disappears after <property>5 minutes</property>. Use a <keyword>Waystone</keyword> to \"Return to Portal\" and go back through it while it's still open.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Portal Scroll</keyword> открывает физический портал к выбранной точке, через который могут пройти игроки, мобы и предметы - он исчезает через <property>5 минут</property>. Используйте <keyword>вейстоун</keyword>, чтобы вернуться к порталу, пока он ещё открыт."
+  ],
+  "icon": "waystones:portal_scroll",
+  "x": 43.5,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_i/warp_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:portal_scroll",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

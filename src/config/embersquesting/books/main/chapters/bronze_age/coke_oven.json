@@ -1,0 +1,52 @@
+{
+  "title": "Coke Oven",
+  "description": [
+    "Used to make <keyword>coke coal</keyword> and <keyword>creosote</keyword>"
+  ],
+  "icon": "modern_industrialization:coke_oven",
+  "x": 12,
+  "y": 13,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:coke_oven",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:bricks",
+      "count": 24,
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_item_output_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_item_input_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_fluid_input_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_fluid_output_hatch",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:coke_oven_placer",
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 5
+  },
+  "shape": "rsquare"
+}

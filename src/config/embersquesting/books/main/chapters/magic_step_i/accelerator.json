@@ -1,0 +1,23 @@
+{
+  "title": "Accelerator",
+  "description": [
+    "Jump pad",
+    ""
+  ],
+  "icon": "cognition:accelerator",
+  "x": 30,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/cognitive_flux"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cognition:accelerator",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Scythe",
+  "description": [
+    "Compared to a sword, a scythe requires considerably more dexterity, making it a rather slow weapon to use. In return, it allows the user to attack at a a higher range, as well as a sweep a larger area.",
+    "",
+    "The Unlit Vessel, while strong, still has more potential that can be unleashed - with the use of a Scorching Ritual",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "По сравнению с мечом коса требует гораздо большей ловкости, из-за чего она является довольно медленным оружием. Зато она позволяет атаковать с большей дистанции, а также охватывать более обширную площадь.",
+    "",
+    "«Незажженный сосуд», несмотря на свою мощь, все еще таит в себе нераскрытый потенциал, который можно раскрыть с помощью «Жгучего ритуала»"
+  ],
+  "icon": "risus:scythe",
+  "x": 19,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/concentration_core_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:scythe",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

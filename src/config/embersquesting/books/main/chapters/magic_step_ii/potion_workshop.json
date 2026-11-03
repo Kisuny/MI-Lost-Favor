@@ -1,0 +1,26 @@
+{
+  "title": "Potion Workshop",
+  "description": [
+    "A more advanced <keyword>station</keyword> for creating <keyword>potions</keyword>. Can also create some other liquids.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Более продвинутая <keyword>станция</keyword> для создания <keyword>зелий</keyword>. Также может создавать некоторые другие жидкости."
+  ],
+  "icon": "spectrum:potion_workshop",
+  "x": 10.5,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/quitoxic_reeds"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:potion_workshop",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Electric Waste Collector",
+  "icon": "extended_industrialization:electric_waste_collector",
+  "x": 23,
+  "y": 32.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:electric_waste_collector",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

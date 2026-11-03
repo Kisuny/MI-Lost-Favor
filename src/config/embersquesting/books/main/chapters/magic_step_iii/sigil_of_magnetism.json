@@ -1,0 +1,21 @@
+{
+  "title": "Sigil of Magnetism",
+  "description": [
+    "Extends your item pickup radius to <keyword>7 blocks</keyword>. Drains <keyword>50 EV every 5 seconds</keyword> while active - remember to toggle it off between battles to conserve Anima."
+  ],
+  "icon": "neovitae:sigil_magnetism",
+  "x": 40.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/veneficus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_magnetism",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

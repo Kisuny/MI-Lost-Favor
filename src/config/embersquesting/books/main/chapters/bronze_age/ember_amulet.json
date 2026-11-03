@@ -1,0 +1,38 @@
+{
+  "title": "Ember Amulet",
+  "description": [
+    "The <keyword>Ember Ring</keyword>, <keyword>Amulet</keyword> and <keyword>Belt</keyword> <positive>reduce the Ember cost</positive> of clockwork tools and Ember weapons.",
+    "",
+    "Each piece gives a different reduction, and they <property>stack</property> - wear all three.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Кольцо</keyword>, <keyword>амулет</keyword> и <keyword>пояс</keyword> с эмберной инкрустацией <positive>снижают расход эмбера</positive> заводными инструментами и эмберным оружием.",
+    "",
+    "У каждого своя скидка, и они <property>складываются</property> - носите все три."
+  ],
+  "icon": "embers:ember_amulet",
+  "x": 5.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "bronze_age/q690ee58c49d40485"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_amulet",
+      "type": "item"
+    },
+    {
+      "item": "embers:ember_belt",
+      "type": "item"
+    },
+    {
+      "item": "embers:ember_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

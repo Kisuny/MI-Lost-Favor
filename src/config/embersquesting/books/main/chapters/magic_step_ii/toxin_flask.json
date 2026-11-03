@@ -1,0 +1,26 @@
+{
+  "title": "Toxin Flask",
+  "description": [
+    "With even greater potential in material, I can enhance both the <property>capacity</property> and the <property>duration</property> of the <keyword>flask</keyword> even further. Now I can keep the effect for <keyword>triple the normal length</keyword>. This power is <warning><shake amplitude=0.4 frequency=1.3>UNBELIEVABLE</shake></warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Благодаря этому металлу, я могу увеличить <property>ёмкость колбы</property> и <property>длительность эффектов</property> в <keyword>3 РАЗА</keyword>. ЭТО - <warning><shake amplitude=0.4 frequency=1.3>НЕВЕРОЯТНАЯ МОЩЬ</shake></warning>!"
+  ],
+  "icon": "toxony:toxin_flask",
+  "x": 31,
+  "y": 36,
+  "deps": {
+    "all": [
+      "magic_step_ii/oil_pot_bandolier"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:toxin_flask",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

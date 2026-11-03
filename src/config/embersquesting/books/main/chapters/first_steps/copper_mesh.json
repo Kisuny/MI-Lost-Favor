@@ -1,0 +1,26 @@
+{
+  "title": "Copper Mesh",
+  "description": [
+    "A <keyword>copper mesh</keyword> can catch <keyword>tin</keyword>, <keyword>lead</keyword> and <keyword>copper</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Медная сетка</keyword> может улавливать <keyword>олово</keyword>, <keyword>свинец</keyword> и <keyword>медь</keyword>."
+  ],
+  "icon": "ytech:copper_mesh",
+  "x": 28.5,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "first_steps/copper_bolt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:copper_mesh",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

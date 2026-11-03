@@ -1,0 +1,22 @@
+{
+  "title": "Resonance Shard",
+  "icon": "spectrum:resonance_shard",
+  "x": 51,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q758bf8f1aa3dbae6"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:lategame/strike_up_hummingstone_hymn",
+      "type": "advancement"
+    },
+    {
+      "item": "spectrum:resonance_shard",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

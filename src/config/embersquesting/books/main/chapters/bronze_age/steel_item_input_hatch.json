@@ -1,0 +1,22 @@
+{
+  "title": "Steel Item Input Hatch",
+  "icon": "modern_industrialization:steel_item_input_hatch",
+  "x": 16,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_machine_bit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_item_input_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:steel_item_output_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

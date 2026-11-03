@@ -1,0 +1,20 @@
+{
+  "title": "Malachite Ultra Greatsword",
+  "icon": "spectrum:malachite_ultra_greatsword{\"minecraft:enchantments\":{levels:{\"minecraft:sweeping_edge\":4}}}",
+  "x": 65.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_ii/pure_malachite"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:malachite_ultra_greatsword",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:sweeping_edge\":4}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

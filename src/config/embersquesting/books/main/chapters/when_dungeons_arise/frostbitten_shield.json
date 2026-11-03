@@ -1,0 +1,30 @@
+{
+  "title": "Frostbitten Shield",
+  "description": [
+    "Blocking with this shield <aqua>freezes</aqua> the attacker for <property>3 seconds</property>.",
+    "",
+    "<warning>The sword and the shield both need a Frozen Rune</warning> - one golem is not enough for both.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Блок этим щитом <aqua>замораживает</aqua> атакующего на <property>3 секунды</property>.",
+    "",
+    "<warning>И мечу, и щиту нужна замороженная руна</warning> - одного голема на оба не хватит."
+  ],
+  "icon": "legendary_monsters:frostbitten_shield",
+  "x": 15,
+  "y": 25,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:frostbitten_shield",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

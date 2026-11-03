@@ -1,0 +1,18 @@
+{
+  "title": "Steam Engine Block",
+  "icon": "oritech:steam_engine_block",
+  "x": 9.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "simple_machinery/machine_assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:steam_engine_block",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

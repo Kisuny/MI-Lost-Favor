@@ -1,0 +1,21 @@
+{
+  "title": "Bronze Compressor",
+  "description": [
+    "Tired of making <keyword>plates</keyword> and <keyword>rings</keyword> manually? This thing could <positive>lend a hand</positive>!"
+  ],
+  "icon": "modern_industrialization:bronze_compressor",
+  "x": 7.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_compressor",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

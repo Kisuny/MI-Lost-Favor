@@ -1,0 +1,32 @@
+{
+  "title": "Water Hemlock",
+  "description": [
+    "Grows in <nature>swamps</nature>.",
+    "",
+    "You can also buy from <keyword>Wandering Trader</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Растёт в <nature>болотах</nature>.",
+    "",
+    "Также можно купить у <keyword>странствующего торговца</keyword>."
+  ],
+  "icon": "toxony:water_hemlock",
+  "x": 24.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q28a2fcbc095f291e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:water_hemlock",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

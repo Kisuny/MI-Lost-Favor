@@ -1,0 +1,19 @@
+{
+  "title": "Bulk Cell Component",
+  "icon": "megacells:bulk_cell_component",
+  "x": 42,
+  "y": 12,
+  "deps": {
+    "all": [
+      "aluminum/digital_singularity_cell_component"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "megacells:bulk_cell_component",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "lines_out": "hover"
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Liquid Crystal Bucket",
+  "icon": "spectrum:liquid_crystal_bucket",
+  "x": 13,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/potion_workshop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:liquid_crystal_bucket",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Pin Trinket Slot",
+      "id": "milf:trinket/pin_liquid_crystal_bucket",
+      "type": "custom"
+    },
+    {
+      "title": "Ring Trinket Slot",
+      "id": "milf:trinket/ring_liquid_crystal_bucket",
+      "type": "custom"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

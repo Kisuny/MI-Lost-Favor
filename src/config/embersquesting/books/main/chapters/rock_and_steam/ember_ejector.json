@@ -1,0 +1,30 @@
+{
+  "title": "Ember Ejector",
+  "description": [
+    "The <keyword>Ember Ejector</keyword> is a sturdier emitter that moves <property>ten times</property> more Ember at once.",
+    "",
+    "Careful: normal receptors are quickly <shake amplitude=0.3 frequency=1.0>overwhelmed</shake>, and the surplus is <warning>lost</warning>. Pair it with an <keyword>Ember Funnel</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Форсированный излучатель эмбера</keyword> - усиленный излучатель, передающий за раз в <property>десять раз</property> больше эмбера.",
+    "",
+    "Осторожно: обычные приёмники быстро <shake amplitude=0.3 frequency=1.0>захлёбываются</shake>, и излишек <warning>теряется</warning>. Используйте его вместе с <keyword>Жёлобом эмбера</keyword>."
+  ],
+  "icon": "embers:ember_ejector",
+  "x": 8.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/gold_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_ejector",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

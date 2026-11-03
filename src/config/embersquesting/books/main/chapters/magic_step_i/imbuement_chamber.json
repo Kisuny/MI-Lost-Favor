@@ -1,0 +1,22 @@
+{
+  "title": "Imbuement Chamber",
+  "icon": "ars_nouveau:imbuement_chamber",
+  "x": 26,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mixed_gem_powder"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:imbuement_chamber",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:arcane_pedestal",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

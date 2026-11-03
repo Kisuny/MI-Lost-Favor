@@ -1,0 +1,35 @@
+{
+  "title": "Melter",
+  "description": [
+    "The <keyword>Melter</keyword> is two blocks tall. Give Ember to the <property>bottom</property> block and put meltable items into the <property>top</property> one - they will <flame>melt down</flame>, and the molten metal can be piped out.",
+    "",
+    "The melter works with <keyword>metal dusts</keyword>: one dust gives <property>60 mB</property> of metal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Эмберная плавильная печь</keyword> высотой в два блока. Подавайте эмбер в <property>нижний</property> блок, а переплавляемое - в <property>верхний</property>: всё <flame>расплавится</flame>, и металл можно будет откачать трубами.",
+    "",
+    "Печь работает с <keyword>металлической пылью</keyword>: одна пыль даёт <property>60 mB</property> металла."
+  ],
+  "icon": "embers:melter",
+  "x": 5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_receiver",
+      "rock_and_steam/ember_emitter",
+      "rock_and_steam/fluid_pipe",
+      "rock_and_steam/item_pipe",
+      "rock_and_steam/tinker_hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:melter",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 2.0
+}

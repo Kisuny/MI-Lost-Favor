@@ -1,0 +1,26 @@
+{
+  "title": "Primal Crusher",
+  "description": [
+    "A pickaxe and a shovel at once, <shake amplitude=0.35 frequency=1.2>constantly shifting</shake> between forms. Better than both and also good against Taint.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Кирка и лопата одновременно, <shake amplitude=0.35 frequency=1.2>постоянно меняющая</shake> форму. Лучше обеих и хороша против Порчи."
+  ],
+  "icon": "thaumaturge:primal_crusher",
+  "x": 37,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_void"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:primal_crusher",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

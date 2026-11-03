@@ -1,0 +1,26 @@
+{
+  "title": "Boots Tome",
+  "icon": "apothic_enchanting:boots_tome",
+  "x": 55.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/tomes"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:boots_tome",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "table": "t4d54c0af9946ade6",
+      "type": "table",
+      "claim_all": false
+    }
+  ],
+  "shape": "diamond"
+}

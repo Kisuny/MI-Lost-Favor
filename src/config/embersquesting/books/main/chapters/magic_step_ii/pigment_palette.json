@@ -1,0 +1,25 @@
+{
+  "title": "Pigment Palette",
+  "icon": "spectrum:pigment_palette",
+  "x": 38.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/raw_azurite"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:pigment_palette",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Palette Trinket Slot",
+      "id": "milf:trinket/palette_pigment_palette",
+      "type": "custom"
+    }
+  ],
+  "shape": "circle"
+}

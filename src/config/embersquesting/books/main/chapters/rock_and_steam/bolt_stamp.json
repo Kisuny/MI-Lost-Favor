@@ -1,0 +1,26 @@
+{
+  "title": "Bolt Stamp",
+  "description": [
+    "The <keyword>Bolt Stamp</keyword> casts <keyword>bolts</keyword> straight from molten metal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Bolt Stamp</keyword> отливает <keyword>болты</keyword> прямо из расплава."
+  ],
+  "icon": "milf:bolt_stamp",
+  "x": 4,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/stamper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:bolt_stamp",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "",
+  "description": [
+    "Destroy the <fire>Nether Locker</fire>, and you might just get a <named>compass</named>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Разрушь <fire>Nether Locker</fire> и с некоторым шансом получишь <named>компас</named>!"
+  ],
+  "icon": "netherman:locker_nether",
+  "x": 12.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "netherman:locker_nether",
+      "type": "observe",
+      "icon": "netherman:locker_nether"
+    }
+  ],
+  "shape": "circle"
+}

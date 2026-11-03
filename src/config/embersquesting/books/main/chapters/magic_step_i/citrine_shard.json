@@ -1,0 +1,30 @@
+{
+  "title": "Citrine Shard",
+  "icon": "spectrum:citrine_shard",
+  "x": 37,
+  "y": 52,
+  "deps": {
+    "all": [
+      "magic_step_i/q6071f775d9ab5dba"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:collect_all_basic_shards",
+      "type": "advancement"
+    },
+    {
+      "item": "spectrum:citrine_shard",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:topaz_shard",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:amethyst_shard",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

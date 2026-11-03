@@ -1,0 +1,21 @@
+{
+  "title": "Alder Sapling",
+  "description": [
+    "Only saplings can mutate. Fully-grown trees will not."
+  ],
+  "icon": "enchanted:alder_sapling",
+  "x": 24.5,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mutandis"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:alder_sapling",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

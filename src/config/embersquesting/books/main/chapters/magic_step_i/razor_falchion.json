@@ -1,0 +1,28 @@
+{
+  "title": "Razor Falchion",
+  "description": [
+    "§nFragile§r yet useful, has <c value=#FEECD6>Looting III</c>§r by default!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "§nХрупкий§r, но очень полезный, <c value=#FEECD6>добыча</c>§r сразу при тебе!"
+  ],
+  "icon": "spectrum:razor_falchion{\"minecraft:enchantments\":{levels:{\"minecraft:looting\":3}}}",
+  "x": 24,
+  "y": 49,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:razor_falchion",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:looting\":3}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

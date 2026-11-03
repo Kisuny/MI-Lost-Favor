@@ -1,0 +1,26 @@
+{
+  "title": "Dinosaur Bone Shield",
+  "description": [
+    "Nothing special - it is just <positive>extremely durable</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ничего особенного - он просто <positive>невероятно прочный</positive>."
+  ],
+  "icon": "legendary_monsters:dinosaur_bone_shield",
+  "x": 22,
+  "y": 25,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:dinosaur_bone_shield",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

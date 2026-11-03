@@ -1,0 +1,30 @@
+{
+  "title": "Soul Stained Steel Boots",
+  "icon": "malum:soul_stained_steel_boots",
+  "x": 87,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_stained_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:soul_stained_steel_boots",
+      "type": "item"
+    },
+    {
+      "item": "malum:soul_stained_steel_leggings",
+      "type": "item"
+    },
+    {
+      "item": "malum:soul_stained_steel_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "malum:soul_stained_steel_helmet",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

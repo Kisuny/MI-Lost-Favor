@@ -1,0 +1,30 @@
+{
+  "title": "Seal Guard Advanced",
+  "description": [
+    "The advanced <keyword>Guard</keyword> seal lets you choose what golems attack: <blood>monsters</blood>, <nature>animals</nature> and even <warning>players</warning>.",
+    "",
+    "Golem: <blood>Fighter</blood> and <magic>Smart</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Продвинутая печать <keyword>охраны</keyword> позволяет выбрать, кого атакуют големы: <blood>монстров</blood>, <nature>животных</nature> и даже <warning>игроков</warning>.",
+    "",
+    "Голем: <blood>боец</blood> (Fighter) и <magic>умный</magic> (Smart)."
+  ],
+  "icon": "thaumaturge:seal_guard_advanced",
+  "x": 53,
+  "y": 5,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_guard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_guard_advanced",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

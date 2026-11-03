@@ -1,0 +1,21 @@
+{
+  "title": "Totem Pendant",
+  "icon": "spectrum:totem_pendant",
+  "x": 13,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/neolith",
+      "magic_step_i/totem_of_undying"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:totem_pendant",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

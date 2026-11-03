@@ -1,0 +1,34 @@
+{
+  "title": "Elemental Pickaxe",
+  "description": [
+    "A thaumium pickaxe infused with <fire>fire</fire> - it <flame><pulse>glows with the heat of a forge</pulse></flame>.",
+    "",
+    "When you mine ore, there is a chance to get a <keyword>Native Cluster</keyword> instead (<keyword>Refining I</keyword>).",
+    "",
+    "<positive>Sneak + RMB</positive> on any block sends out a <wave>sounding pulse</wave> that reveals ores hidden nearby (<keyword>Sounding II</keyword>), at the cost of some durability. Hold <property>Shift</property> while mining to use it as a normal pickaxe.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Таумиевая кирка, наполненная силой <fire>огня</fire>, - она <flame><pulse>пышет жаром кузнечного горна</pulse></flame>.",
+    "",
+    "При добыче руды есть шанс получить <keyword>самородный кластер</keyword> вместо руды (<keyword>Очистка I</keyword>).",
+    "",
+    "<positive>Shift + ПКМ</positive> по любому блоку посылает <wave>звуковой импульс</wave>, который подсвечивает спрятанную поблизости руду (<keyword>Зондирование II</keyword>), ценой небольшого износа. С зажатым <property>Shift</property> при добыче работает как обычная кирка."
+  ],
+  "icon": "thaumaturge:elemental_pickaxe",
+  "x": 70.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_i/traveller_boots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:elemental_pickaxe",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

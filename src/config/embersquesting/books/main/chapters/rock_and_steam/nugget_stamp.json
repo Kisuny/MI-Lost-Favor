@@ -1,0 +1,30 @@
+{
+  "title": "Nugget Stamp",
+  "description": [
+    "The <keyword>Nugget Stamp</keyword> casts <keyword>nuggets</keyword>.",
+    "",
+    "Add an <keyword>Ember Crystal</keyword> into the base and <property>200 mB</property> of metal will wrap around it, giving an <magic>Aspectus</magic> of that metal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Пресс-форма металлического кусочка</keyword> отливает <keyword>самородки</keyword>.",
+    "",
+    "Если положить в депо <keyword>Кристалл эмбера</keyword>, <property>200 mB</property> металла обернутся вокруг него и получится <magic>аспект</magic> этого металла."
+  ],
+  "icon": "embers:nugget_stamp",
+  "x": 7,
+  "y": 20,
+  "deps": {
+    "all": [
+      "rock_and_steam/stamper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:nugget_stamp",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

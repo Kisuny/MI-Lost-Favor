@@ -1,0 +1,18 @@
+{
+  "title": "Redstone Sand",
+  "icon": "spectrum:redstone_sand",
+  "x": 39,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/pedestal_all_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:redstone_sand",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

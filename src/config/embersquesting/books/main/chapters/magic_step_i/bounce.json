@@ -1,0 +1,30 @@
+{
+  "title": "bounce",
+  "description": [
+    " <item id=ars_nouveau:glyph_self tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>",
+    "",
+    "",
+    "Grants the <named>\"Bounce Off the Ground\"</named> effect - which <positive>negates</positive> fall damage",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_self size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>",
+    "",
+    "Даёт эффект <named>«Отскакивание от земли»</named> - <positive>избавление</positive> от урона при падении"
+  ],
+  "icon": "ars_nouveau:glyph_bounce",
+  "x": 22.5,
+  "y": 53.5,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

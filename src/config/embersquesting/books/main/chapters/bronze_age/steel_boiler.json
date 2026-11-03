@@ -1,0 +1,18 @@
+{
+  "title": "Steel Boiler",
+  "icon": "modern_industrialization:steel_boiler",
+  "x": 22,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_machine_bit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_boiler",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Diamond Helmet",
+  "icon": "minecraft:diamond_helmet",
+  "x": 11,
+  "y": 28,
+  "deps": {
+    "all": [
+      "bronze_age/armor_steel_helmet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:diamond_helmet",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:diamond_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:diamond_leggings",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:diamond_boots",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_diamond",
+      "type": "item"
+    },
+    {
+      "title": "Diamond loot in looting chests",
+      "id": "milf:stage/diamond_helmet",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Conveyor",
+  "icon": "modern_industrialization:conveyor",
+  "x": 6,
+  "y": 12,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:conveyor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Fragment Forge Block",
+  "icon": "oritech:fragment_forge_block",
+  "x": 22.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:fragment_forge_block",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

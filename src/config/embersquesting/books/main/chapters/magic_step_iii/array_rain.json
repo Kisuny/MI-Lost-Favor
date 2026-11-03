@@ -1,0 +1,25 @@
+{
+  "title": "Array Rain",
+  "description": [
+    "<positive>Commands the weather</positive>, toggling rain on or off at a cost of <property>500 EV</property> from the owner's anima. <warning>Consumed on use</warning>."
+  ],
+  "icon": "neovitae:array_rain",
+  "x": 45.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/environmental_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_rain",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

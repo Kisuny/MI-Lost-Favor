@@ -1,0 +1,35 @@
+{
+  "title": "Earth Hat",
+  "icon": "ars_elemental:earth_hat",
+  "x": 124.5,
+  "y": 13,
+  "deps": {
+    "min": {
+      "count": 1,
+      "of": [
+        "magic_step_ii/sorcerer_hood_3",
+        "magic_step_ii/arcanist_hood_3",
+        "magic_step_ii/battlemage_hood_3"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:earth_hat",
+      "type": "item"
+    },
+    {
+      "item": "ars_elemental:earth_robes",
+      "type": "item"
+    },
+    {
+      "item": "ars_elemental:earth_leggings",
+      "type": "item"
+    },
+    {
+      "item": "ars_elemental:earth_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Resistor",
+  "icon": "modern_industrialization:resistor",
+  "x": 26,
+  "y": 15,
+  "deps": {
+    "all": [
+      "bronze_age/copper_wire",
+      "bronze_age/blueprint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:resistor",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

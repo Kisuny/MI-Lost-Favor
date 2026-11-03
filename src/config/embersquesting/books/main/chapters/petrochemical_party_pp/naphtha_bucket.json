@@ -1,0 +1,22 @@
+{
+  "title": "Naphtha Bucket",
+  "icon": "modern_industrialization:naphtha_bucket",
+  "x": 16,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/hydrotreater"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:naphtha_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Enchanter Scythe",
+  "description": [
+    "The <keyword>Enchanter's Scythe</keyword> (Ars Hex) works like the Enchanter's Sword - inscribe a spell without a form at the Scribe's Table and it triggers on hit. Rebound-thrown scythes will also trigger Reactive spells.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Коса зачарователя</keyword> (Ars Hex) работает как Меч зачарователя - впишите на Столе писца заклинание без формы, и оно сработает при ударе. Брошенная и вернувшаяся коса также запускает реактивные заклинания."
+  ],
+  "icon": "ars_hex:enchanter_scythe",
+  "x": 107,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_stained_steel_scythe",
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_hex:enchanter_scythe",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

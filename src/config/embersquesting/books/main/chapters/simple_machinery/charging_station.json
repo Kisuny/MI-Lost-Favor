@@ -1,0 +1,23 @@
+{
+  "title": "Charging Station",
+  "description": [
+    "<positive>Charges items</positive>. That's it"
+  ],
+  "icon": "immersiveengineering:charging_station",
+  "x": 13.5,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "simple_machinery/wirecoil_electrum",
+      "simple_machinery/wirecoil_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:charging_station",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

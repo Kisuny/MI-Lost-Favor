@@ -1,0 +1,23 @@
+{
+  "title": "Alien Goo Bucket",
+  "icon": "milf:alien_goo_bucket",
+  "x": 12.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/space_hive",
+      "petrochemical_party/microbial_fabricator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:alien_goo_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

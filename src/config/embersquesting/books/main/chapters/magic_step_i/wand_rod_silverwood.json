@@ -1,0 +1,26 @@
+{
+  "title": "Wand Rod Silverwood",
+  "description": [
+    "<soul>Silverwood</soul> is rarer and purer still. It also opens the path to <keyword>Staves</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<soul>Серебряное древо</soul> ещё реже и чище. Оно же открывает путь к <keyword>посохам</keyword>."
+  ],
+  "icon": "thaumaturge:wand_rod_silverwood",
+  "x": 65.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_rod_silverwood",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

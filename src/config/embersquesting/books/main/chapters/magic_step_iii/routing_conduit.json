@@ -1,0 +1,22 @@
+{
+  "title": "Routing Conduit",
+  "description": [
+    "The <keyword>Routing Network</keyword> transports items, fluids, and energy between machines without hoppers or pipes. <property>Conduits</property> are passive relays that extend the network reach between active nodes. Lay them between your Athanor, Hellfire Forge, and storage."
+  ],
+  "icon": "neovitae:routing_conduit",
+  "x": 39,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_lesser"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:routing_conduit",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Annihilation Core",
+  "icon": "ae2:annihilation_core",
+  "x": 17.5,
+  "y": 37,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/core_hull",
+      "petrochemical_party_pp/still_sheol_fire_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:annihilation_core",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

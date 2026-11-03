@@ -1,0 +1,26 @@
+{
+  "title": "Any #c:ingots",
+  "description": [
+    "Any <keyword>ingot</keyword> counts here - for example, one fresh off the <keyword>Ingot Stamp</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Подойдёт любой <keyword>слиток</keyword> - например, только что отлитый на <keyword>Пресс-форме слитка</keyword>."
+  ],
+  "x": 2,
+  "y": 20,
+  "deps": {
+    "all": [
+      "rock_and_steam/ingot_stamp"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "c:ingots",
+      "type": "item",
+      "title": "Any #c:ingots"
+    }
+  ],
+  "shape": "circle"
+}

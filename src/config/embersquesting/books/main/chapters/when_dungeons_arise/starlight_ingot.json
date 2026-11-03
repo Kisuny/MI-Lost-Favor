@@ -1,0 +1,19 @@
+{
+  "title": "Starlight Ingot",
+  "icon": "enigmaticlegacyplus:starlight_ingot",
+  "x": 38,
+  "y": 1.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/starlight_particle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:starlight_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

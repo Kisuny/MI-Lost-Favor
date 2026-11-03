@@ -1,0 +1,24 @@
+{
+  "title": "Clay Oil Pot",
+  "icon": "toxony:clay_oil_pot",
+  "x": 19,
+  "y": 40.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_paste"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:clay_oil_pot",
+      "count": 12,
+      "type": "item"
+    },
+    {
+      "item": "toxony:empty_oil_pot",
+      "count": 12,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

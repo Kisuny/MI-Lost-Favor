@@ -1,0 +1,18 @@
+{
+  "title": "Bone Meal",
+  "icon": "minecraft:bone_meal",
+  "x": 20,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "first_steps/stone_mortar_and_pestle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:bone_meal",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

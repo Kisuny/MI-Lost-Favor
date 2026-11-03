@@ -1,0 +1,27 @@
+{
+  "title": "Fish Radar",
+  "description": [
+    "A handy <keyword>radar</keyword> that shows which <named>fish</named> you can <positive>catch</positive> in the area where you are",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Удобный <keyword>радар</keyword> показывающий какую из <named>рыб</named> вы можете <positive>поймать</positive> в той области где находитесь"
+  ],
+  "icon": "starcatcher:fish_radar",
+  "x": 41,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "first_steps/any_tackle_boxes"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:fish_radar",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

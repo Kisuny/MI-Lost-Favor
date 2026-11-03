@@ -1,0 +1,26 @@
+{
+  "title": "Radiant Glass",
+  "description": [
+    "This <c value=#9BB8ED>glass</c>§r integrates well into the interior, and also <c value=#FEECD6>glows</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#9BB8ED>Стекло</c>§r хорошо вписывается в интерьер, а так же <c value=#FEECD6>светится</c>§r!"
+  ],
+  "icon": "spectrum:radiant_glass",
+  "x": 30.5,
+  "y": 47.5,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:radiant_glass",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

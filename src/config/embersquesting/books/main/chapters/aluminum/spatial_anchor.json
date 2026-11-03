@@ -1,0 +1,21 @@
+{
+  "title": "Spatial Anchor",
+  "description": [
+    "chunk loader"
+  ],
+  "icon": "ae2:spatial_anchor",
+  "x": 44,
+  "y": 14,
+  "deps": {
+    "all": [
+      "aluminum/spatial_cell_component_128"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:spatial_anchor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

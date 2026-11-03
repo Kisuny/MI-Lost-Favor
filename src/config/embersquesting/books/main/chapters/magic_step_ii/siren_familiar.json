@@ -1,0 +1,26 @@
+{
+  "title": "Siren Familiar",
+  "description": [
+    "The <keyword>Siren Familiar</keyword> (Ars Elemental) is a personal companion version of the Siren, separate from the tamed Siren used at a Siren Shrine to passively generate fishing loot.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Сирена</keyword> (Ars Elemental) в виде фамильяра - персональный компаньон, отдельный от прирученной Сирены у Святилища Сирены, которая пассивно генерирует рыболовный лут."
+  ],
+  "icon": "ars_elemental:siren_familiar",
+  "x": 109,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_binding"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:siren_familiar",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

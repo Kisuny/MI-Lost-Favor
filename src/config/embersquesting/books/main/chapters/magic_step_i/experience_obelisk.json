@@ -1,0 +1,26 @@
+{
+  "title": "Experience Obelisk",
+  "description": [
+    "Stores up to <keyword>~1000 levels</keyword>, <positive>attracts experience</positive> from nearby, with an adjustable <keyword>experience collection radius</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Хранит <keyword>~1000 уровней</keyword>, <positive>поднимает опыт</positive> вокруг себя, можно менять <keyword>радиус подъёма опыта</keyword>"
+  ],
+  "icon": "cognition:experience_obelisk",
+  "x": 30,
+  "y": 56,
+  "deps": {
+    "all": [
+      "magic_step_i/cognitive_flux"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cognition:experience_obelisk",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

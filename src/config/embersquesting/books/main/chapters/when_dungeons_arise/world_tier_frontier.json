@@ -1,0 +1,39 @@
+{
+  "title": "World Tier: Frontier",
+  "icon": "minecraft:iron_sword",
+  "x": 18.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Body Trinket slot",
+      "id": "milf:trinket/body_world_tier_frontier",
+      "type": "custom"
+    },
+    {
+      "title": "Charm Trinket slot",
+      "id": "milf:trinket/charm_world_tier_frontier",
+      "type": "custom"
+    },
+    {
+      "title": "Ring Trinket slot",
+      "id": "milf:trinket/ring_world_tier_frontier",
+      "type": "custom"
+    },
+    {
+      "advancement": "apotheosis:progression/frontier",
+      "type": "advancement"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

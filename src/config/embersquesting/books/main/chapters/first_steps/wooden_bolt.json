@@ -1,0 +1,19 @@
+{
+  "title": "Wooden Bolt",
+  "icon": "ytech:wooden_bolt",
+  "x": 16,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "first_steps/waterskin",
+      "first_steps/crafting_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:wooden_bolt",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Butadiene Bucket",
+  "icon": "modern_industrialization:butadiene_bucket",
+  "x": 19,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/petroleum_gas_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:butadiene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

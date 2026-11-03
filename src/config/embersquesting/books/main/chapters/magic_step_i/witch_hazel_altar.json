@@ -1,0 +1,26 @@
+{
+  "title": "Witch Hazel Altar",
+  "description": [
+    "It has been noted that the book on this table consumes quite a lot of <warning>FPS</warning>, so <warning>keep that in mind</warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Было замечено что книга на этом столе потребляет достаточно много <warning>FPS</warning>, <warning>имейте ввиду</warning>!"
+  ],
+  "icon": "hexerei:witch_hazel_altar",
+  "x": 2,
+  "y": 52.5,
+  "deps": {
+    "all": [
+      "magic_step_i/witch_hazel_sapling"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:witch_hazel_altar",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

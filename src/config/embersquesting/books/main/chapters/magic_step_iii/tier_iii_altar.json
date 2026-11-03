@@ -1,0 +1,25 @@
+{
+  "title": "Tier III Altar",
+  "icon": "neovitae:bloodstone",
+  "x": 42.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/veneficus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "neovitae:altar/runes_t2",
+      "count": 28,
+      "type": "item",
+      "title": "Any Tier 2 Runes"
+    },
+    {
+      "item": "neovitae:bloodstone",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Bottled Letter",
+  "description": [
+    "You can write your own <named>message in a bottle</named> and toss it into the sea—other players will have the chance to <positive>fish it out</positive> and read it!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Можно сделать своё <named>послание в бутылке</named> и бросить его в море, у других игроков появится возможность <positive>выловить</positive> ваше послание и прочитать его!"
+  ],
+  "icon": "starcatcher:bottled_letter",
+  "x": 40,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "first_steps/starcatcher_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:bottled_letter",
+      "type": "item"
+    },
+    {
+      "item": "starcatcher:letter",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

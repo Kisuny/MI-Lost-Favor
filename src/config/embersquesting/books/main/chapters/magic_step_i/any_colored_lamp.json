@@ -1,0 +1,26 @@
+{
+  "title": "Any Colored Lamp",
+  "description": [
+    "Just some <c value=#FEECD6>beautiful lamps</c>§r. Not all items have to have utility, right? ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Просто <c value=#FEECD6>красивые лампы</c>§r, не создавать же только утилит-предметы, верно? "
+  ],
+  "x": 43,
+  "y": 49,
+  "deps": {
+    "all": [
+      "magic_step_i/magenta_pigment"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "milf:colored_lamp",
+      "type": "item",
+      "title": "Any Colored Lamp"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Mixer Centrifuge",
+  "description": [
+    "The <keyword>Mixer Centrifuge</keyword> creates alloys. Each of the <property>4 sides</property> of the bottom block is its own tank - pump a different molten metal into each.",
+    "",
+    "Give the <property>top</property> block Ember, and once the right combination is inside, the alloy will <wave>mix</wave> and can be pumped out of the top.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Смесительная центрифуга</keyword> делает сплавы. Каждая из <property>4 сторон</property> нижнего блока - отдельный бак, в каждый закачивается свой металл.",
+    "",
+    "Подайте эмбер в <property>верхний</property> блок, и при правильном сочетании металлы <wave>смешаются</wave> в сплав, который откачивается сверху."
+  ],
+  "icon": "embers:mixer_centrifuge",
+  "x": 5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/lapis_lazuli",
+      "rock_and_steam/gold"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:mixer_centrifuge",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 1.5
+}

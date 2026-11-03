@@ -1,0 +1,23 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"MI Steam Components\",\"minecraft:item_name\":'{\"color\":\"#F3AC3A\",\"text\":\"MI Steam Components\"}'}",
+  "x": 35,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/workbench",
+      "rock_and_steam/bronze_machine_bit",
+      "rock_and_steam/steam_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"MI Steam Components\",\"minecraft:item_name\":'{\"color\":\"#F3AC3A\",\"text\":\"MI Steam Components\"}'}",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon",
+  "size": 3.0
+}

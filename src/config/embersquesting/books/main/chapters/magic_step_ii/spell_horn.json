@@ -1,0 +1,26 @@
+{
+  "title": "Spell Horn",
+  "description": [
+    "The <keyword>Spell Horn</keyword> (Ars Elemental) is a chargeable casting tool - hold the charge to cast your inscribed spell on yourself and nearby entities, the longer you charge it, the wider the area of effect.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Рог заклинаний</keyword> (Ars Elemental) - заряжаемый инструмент для каста: удерживайте зарядку, чтобы применить вписанное заклинание на себя и существ поблизости, чем дольше заряд - тем шире область действия."
+  ],
+  "icon": "ars_elemental:spell_horn",
+  "x": 108,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:spell_horn",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

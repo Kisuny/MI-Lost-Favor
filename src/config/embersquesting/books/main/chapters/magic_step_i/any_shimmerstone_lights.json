@@ -1,0 +1,26 @@
+{
+  "title": "Any Shimmerstone Lights",
+  "description": [
+    "A kind of <c value=#FEECD6>lamps</c>§r, good for <c value=#9BB8ED>decorating your base</c>§r. Also emits cute <c value=#FEECD6>particles</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Разновидность <c value=#FEECD6>факелов</c>§r, хорошо подходит для <c value=#9BB8ED>декора баз</c>§r, так же испускает милые <c value=#FEECD6>частицы</c>§r!"
+  ],
+  "x": 32.5,
+  "y": 47.5,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "spectrum:shimmerstone_lights",
+      "type": "item",
+      "title": "Any Shimmerstone Lights"
+    }
+  ],
+  "shape": "diamond"
+}

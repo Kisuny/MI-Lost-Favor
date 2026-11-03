@@ -1,0 +1,34 @@
+{
+  "title": "Node in a Jar",
+  "description": [
+    "A way to <magic>move aura nodes</magic>. Enclose the node in a shell of <keyword>glass</keyword>, cap it with a roof of <keyword>wooden slabs</keyword> and strike the glass with your wand - the node gets trapped in a jar you can pick up.",
+    "",
+    "The ritual costs a <warning>lot of vis</warning> from your wand and has a very good chance to <warning><shake amplitude=0.35 frequency=1.2>damage the node</shake></warning>.",
+    "",
+    "While trapped, the node is <soul>dormant</soul>: none of its stranger behaviours, and it refills from the aura at half speed. You can still draw vis from it with a wand. Click the jar with a wand to <positive>set the node free</positive> - the jar breaks in the process.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Способ <magic>переносить узлы ауры</magic>. Обложи узел <keyword>стеклом</keyword>, накрой крышей из <keyword>деревянных плит</keyword> и ударь по стеклу жезлом - узел окажется в банке, которую можно подобрать.",
+    "",
+    "Ритуал отнимает у жезла <warning>много vis</warning> и с большой вероятностью <warning><shake amplitude=0.35 frequency=1.2>повреждает узел</shake></warning>.",
+    "",
+    "В банке узел <soul>дремлет</soul>: никаких странных эффектов, а из ауры он восполняется вдвое медленнее. Тянуть из него vis жезлом при этом можно. Кликни по банке жезлом, чтобы <positive>освободить узел</positive> - банка при этом разобьётся."
+  ],
+  "icon": "thaumaturge:jar_node",
+  "x": 74,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_i/node_stabilizer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:jar_node",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

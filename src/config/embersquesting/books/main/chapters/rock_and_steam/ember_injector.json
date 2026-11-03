@@ -1,0 +1,31 @@
+{
+  "title": "Ember Injector",
+  "description": [
+    "The <keyword>Ember Injector</keyword> grows <keyword>Crystal Seeds</keyword>. Place a seed in the world, point injectors at it and give them Ember - the seed will slowly grow and <wiggle amplitude=0.5 frequency=1.0 phase=1.0>pop out metal nuggets</wiggle>.",
+    "",
+    "Seeds also gain <property>purity</property> over time: the purer the seed, the more nuggets it drops. Check it with a Tinker's Lens. <warning>Breaking a seed resets its purity!</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Эмберный инжектор</keyword> выращивает <keyword>Кристаллические семена</keyword>. Поставьте семя в мир, направьте на него инжекторы и подайте эмбер - семя будет медленно расти и <wiggle amplitude=0.5 frequency=1.0 phase=1.0>выбрасывать самородки</wiggle>.",
+    "",
+    "Со временем семя становится <property>чище</property>: чем выше чистота, тем больше самородков. Проверяйте это Инженерным окуляром. <warning>Если сломать семя, чистота сбросится!</warning>"
+  ],
+  "icon": "embers:ember_injector",
+  "x": 21.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/wildfire_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_injector",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

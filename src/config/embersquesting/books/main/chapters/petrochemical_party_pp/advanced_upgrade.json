@@ -1,0 +1,19 @@
+{
+  "title": "Advanced Upgrade",
+  "icon": "modern_industrialization:advanced_upgrade",
+  "x": 16,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/polyethylene_bucket",
+      "petrochemical_party_pp/methane_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:advanced_upgrade",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

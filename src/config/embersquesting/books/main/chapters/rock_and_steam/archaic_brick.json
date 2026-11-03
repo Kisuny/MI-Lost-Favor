@@ -1,0 +1,30 @@
+{
+  "title": "Archaic Brick",
+  "description": [
+    "Fire <property>4</property> <keyword>unfired caminite bricks</keyword> and <property>4</property> <keyword>Everburning Roots</keyword> together in a <keyword>Bloomery</keyword> to get <property>8</property> <keyword>Archaic Bricks</keyword>.",
+    "",
+    "They are the frame of your first Ember devices, and they look great next to caminite in buildings.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обожгите <property>4</property> <keyword>Unfired Caminite Brick</keyword> и <property>4</property> <keyword>Everburning Roots</keyword> вместе в <keyword>Bloomery</keyword> и получите <property>8</property> <keyword>Архаичных кирпичей</keyword>.",
+    "",
+    "Из них собирается каркас первых эмберных устройств, а ещё они отлично смотрятся рядом с каминитом в постройках."
+  ],
+  "icon": "embers:archaic_brick",
+  "x": 3.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/everburning_roots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:archaic_brick",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

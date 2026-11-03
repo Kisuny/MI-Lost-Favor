@@ -1,0 +1,20 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"Aircraft components\"}",
+  "x": 28,
+  "y": 27,
+  "deps": {
+    "all": [
+      "bronze_age/workbench"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"Aircraft components\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

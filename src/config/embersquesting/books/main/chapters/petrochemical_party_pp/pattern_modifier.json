@@ -1,0 +1,22 @@
+{
+  "title": "Pattern Modifier",
+  "icon": "extendedae:pattern_modifier",
+  "x": 14,
+  "y": 42,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/blank_pattern"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extendedae:pattern_modifier",
+      "type": "item"
+    },
+    {
+      "item": "extendedae:config_modifier",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

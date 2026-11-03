@@ -1,0 +1,18 @@
+{
+  "title": "Factory Vent Fan",
+  "icon": "xkdeco:factory_vent_fan",
+  "x": 6.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "xkdeco:factory_vent_fan",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

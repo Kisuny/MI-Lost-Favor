@@ -1,0 +1,59 @@
+{
+  "title": "Refinery",
+  "icon": "immersiveengineering:refinery",
+  "x": 18.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "immersiveengineering:refinery",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:refinery",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:fluid_pipe",
+      "count": 5,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:heavy_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:sheetmetal_iron",
+      "count": 16,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:refinery_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

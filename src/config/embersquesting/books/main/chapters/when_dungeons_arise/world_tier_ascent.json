@@ -1,0 +1,47 @@
+{
+  "title": "World Tier: Ascent",
+  "icon": "minecraft:blaze_powder",
+  "x": 18.5,
+  "y": 20,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q65c51597e8513213",
+      "when_dungeons_arise/q25a429f19249f4a4",
+      "when_dungeons_arise/q1974f3873c7dd0eb",
+      "when_dungeons_arise/q623f3162f415d0fc"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Bracelet Trinket slot",
+      "id": "milf:trinket/bracelet_world_tier_ascent",
+      "type": "custom"
+    },
+    {
+      "title": "Charm Trinket slot",
+      "id": "milf:trinket/charm_world_tier_ascent",
+      "type": "custom"
+    },
+    {
+      "title": "New mobs",
+      "id": "milf:milestone/world_tier_ascent",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "advancement": "apotheosis:progression/ascent",
+      "type": "advancement"
+    },
+    {
+      "item": "fdbosses:qliphothic_codex",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 1.5
+}

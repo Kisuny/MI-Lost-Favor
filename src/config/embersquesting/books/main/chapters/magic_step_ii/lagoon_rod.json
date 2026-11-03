@@ -1,0 +1,28 @@
+{
+  "title": "Lagoon Rod",
+  "description": [
+    "Can <positive>catch</positive> <keyword>living creatures</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Может <positive>ловить</positive> <keyword>живых существ</keyword>!"
+  ],
+  "icon": "spectrum:lagoon_rod{\"minecraft:enchantments\":{levels:{\"minecraft:lure\":3}}}",
+  "x": 1,
+  "y": 46,
+  "deps": {
+    "all": [
+      "magic_step_ii/mermaids_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:lagoon_rod",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:lure\":3}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

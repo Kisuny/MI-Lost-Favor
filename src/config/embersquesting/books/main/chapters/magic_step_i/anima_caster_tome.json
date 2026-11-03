@@ -1,0 +1,32 @@
+{
+  "title": "Anima Caster Tome",
+  "description": [
+    "This <keyword>tome</keyword> will allow you to <positive>crush</positive> <keyword>ore</keyword> and other items",
+    "",
+    "In the future, you'll be able to <positive>create</positive> your own <magic>spell</magic> similar to this one",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Данный <keyword>том</keyword> позволит вам <positive>дробить</positive> <keyword>руду</keyword> и другие вещи",
+    "",
+    "В будущем у вас появится возможность <positive>создавать</positive> собственное <magic>заклинание</magic> похожее на это"
+  ],
+  "icon": "ars_elemental:anima_caster_tome",
+  "x": 30.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/source_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "ars_elemental:anima_caster_tome",
+      "components": "{\"minecraft:custom_name\":'{\"color\":\"gray\",\"text\":\"Hephaestus Touch\"}',\"sauce:school_tome_caster\":{flavor_text:\"A gift from the <magic>ancient smith</magic>, reducing matter to its primordial form\",spells:{0:{color:{b:127,g:127,id:\"ars_nouveau:constant\",r:127},name:\"Leshy's Mercy\",particleTimeline:{\"ars_nouveau:touch\":{onResolvingEffect:{motion:{propMap:{},type:\"ars_nouveau:burst\"},particleOptions:{properties:{\"ars_nouveau:density\":{density:10,radius:0.1d,spawnType:\"SPHERE\"},\"ars_nouveau:emitter\":{age:0,rotation:{x:0.0f,y:0.0f}},\"ars_nouveau:particle_type\":{particleType:\"ars_nouveau:campfire_cosy_smoke\",subProperties:{\"ars_nouveau:color\":{particleColor:{b:40,g:110,id:\"ars_nouveau:constant\",r:34},tintDisabled:0b}}}},type:\"ars_nouveau:campfire_cosy_smoke\"}},resolveSound:{sound:{pitch:0.45f,sound:{id:\"ars_nouveau:mace_smash_air\"}}},type:\"ars_nouveau:touch\"}},recipe:[\"ars_nouveau:glyph_touch\",\"ars_nouveau:glyph_crush\",\"ars_nouveau:glyph_sensitive\"],sound:{}}}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Any #minecraft:wooden_slabs",
+  "x": 12,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "first_steps/tree_stump"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "minecraft:wooden_slabs",
+      "type": "item",
+      "title": "Any #minecraft:wooden_slabs"
+    }
+  ],
+  "shape": "heart"
+}

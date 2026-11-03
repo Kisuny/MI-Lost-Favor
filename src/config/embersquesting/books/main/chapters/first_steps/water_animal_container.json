@@ -1,0 +1,21 @@
+{
+  "title": "Water Animal Container",
+  "description": [
+    "Same as the Animal Cage but for aquatic creatures such as squids and salmon."
+  ],
+  "icon": "animal_pen:water_animal_container",
+  "x": 35,
+  "y": 23,
+  "deps": {
+    "all": [
+      "first_steps/copper_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "animal_pen:water_animal_container",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

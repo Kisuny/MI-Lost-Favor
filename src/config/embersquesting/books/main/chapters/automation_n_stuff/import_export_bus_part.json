@@ -1,0 +1,19 @@
+{
+  "title": "Import Export Bus Part",
+  "icon": "advanced_ae:import_export_bus_part",
+  "x": 21,
+  "y": 12,
+  "deps": {
+    "all": [
+      "automation_n_stuff/export_bus",
+      "automation_n_stuff/import_bus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:import_export_bus_part",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

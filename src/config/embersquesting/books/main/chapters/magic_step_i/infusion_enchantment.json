@@ -1,0 +1,30 @@
+{
+  "title": "Infusion Enchantment",
+  "description": [
+    "<named>Infusion Enchantment</named> lets you add special infusion enchantments to almost any tool or weapon, not only thaumium ones. Each rank costs more essentia.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Инфузионное зачарование</named> позволяет добавлять особые инфузионные чары почти к любому инструменту или оружию, а не только к таумиевым. Каждый следующий ранг стоит больше эссенции."
+  ],
+  "icon": "thaumaturge:arcane_grindstone",
+  "x": 73.5,
+  "y": 12,
+  "deps": {
+    "any": [
+      "magic_step_i/elemental_pickaxe",
+      "magic_step_i/elemental_axe",
+      "magic_step_i/elemental_hoe",
+      "magic_step_i/elemental_sword",
+      "magic_step_i/elemental_shovel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:arcane_grindstone",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

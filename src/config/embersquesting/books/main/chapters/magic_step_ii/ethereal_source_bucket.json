@@ -1,0 +1,23 @@
+{
+  "title": "Ethereal Source Bucket",
+  "description": [
+    "§lThere's only one way to make liquid source!§r",
+    "",
+    "<keyword>1 Ethereal Source</keyword> -> <keyword>8 liquid source</keyword> "
+  ],
+  "icon": "milf:ethereal_source_bucket",
+  "x": 97.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_ii/fluid_sourcelink"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:ethereal_source_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Machine Efficiency Addon",
+  "icon": "oritech:machine_efficiency_addon",
+  "x": 6.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "simple_machinery/addons"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:machine_efficiency_addon",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

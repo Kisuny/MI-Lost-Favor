@@ -1,0 +1,21 @@
+{
+  "title": "Bird Catcher",
+  "description": [
+    "Same as the Animal Cage but for flying creatures such as bats and bees."
+  ],
+  "icon": "animal_pen:bird_catcher",
+  "x": 35,
+  "y": 24,
+  "deps": {
+    "all": [
+      "first_steps/copper_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "animal_pen:bird_catcher",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

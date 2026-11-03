@@ -1,0 +1,18 @@
+{
+  "title": "Lead Ingot",
+  "icon": "modern_industrialization:lead_ingot",
+  "x": 25,
+  "y": 22,
+  "deps": {
+    "all": [
+      "first_steps/clay_mold_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:lead_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "White Kitchen Floor",
+  "description": [
+    "Purely <named>decorative flooring</named> for your kitchen - place it down to give the room a clean, tiled look. No functional effect on cooking.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чисто <named>декоративное напольное покрытие</named> для кухни - создаёт аккуратный вид с плиткой. На готовку никак не влияет."
+  ],
+  "icon": "cookingforblockheads:white_kitchen_floor",
+  "x": 32,
+  "y": 24,
+  "deps": {
+    "all": [
+      "first_steps/any_cooking_tables"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cookingforblockheads:white_kitchen_floor",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

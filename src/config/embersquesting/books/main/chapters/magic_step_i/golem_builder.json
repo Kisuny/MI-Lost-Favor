@@ -1,0 +1,31 @@
+{
+  "title": "Golem Builder",
+  "description": [
+    "Build the structure from the book and use <keyword>Salis Mundus</keyword> on it to get a <keyword>Golem Press</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Построй структуру из книги и примени к ней <keyword>Salis Mundus</keyword>, чтобы получить <keyword>пресс големов</keyword>."
+  ],
+  "icon": "thaumaturge:golem_builder",
+  "x": 50,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mind_clockwork"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:golem_builder",
+      "type": "item"
+    },
+    {
+      "block": "thaumaturge:golem_builder",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

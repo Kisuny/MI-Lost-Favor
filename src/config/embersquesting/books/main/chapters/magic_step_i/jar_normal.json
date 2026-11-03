@@ -1,0 +1,31 @@
+{
+  "title": "Jar Normal",
+  "description": [
+    "<keyword>Warded Jars</keyword> store essentia <property>indefinitely</property>. Attach a <keyword>Label</keyword> to lock a jar to a single aspect.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Защищённые банки</keyword> хранят эссенцию <property>бесконечно долго</property>. Прикрепи <keyword>этикетку</keyword>, чтобы закрепить банку за одним аспектом."
+  ],
+  "icon": "thaumaturge:jar_normal",
+  "x": 53.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:jar_normal",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:label",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

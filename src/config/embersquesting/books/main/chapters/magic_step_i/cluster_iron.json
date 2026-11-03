@@ -1,0 +1,26 @@
+{
+  "title": "Cluster Iron",
+  "description": [
+    "<named>Metal Purification</named>: drop a raw ore into the crucible with the right essentia to get a <keyword>Native Cluster</keyword>. Smelting a cluster gives <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>twice the ingots</bounce></positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Очистка металлов</named>: брось сырую руду в тигель с нужной эссенцией и получишь <keyword>самородный кластер</keyword>. Переплавка кластера даёт <positive><bounce amplitude=1.5 frequency=1.2 phase=1.0>вдвое больше слитков</bounce></positive>."
+  ],
+  "icon": "thaumaturge:cluster_iron",
+  "x": 52,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_thaumium"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:cluster_iron",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

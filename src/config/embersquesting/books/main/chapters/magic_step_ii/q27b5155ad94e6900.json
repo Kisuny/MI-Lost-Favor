@@ -1,0 +1,26 @@
+{
+  "title": "",
+  "description": [
+    "Find a <magic>lost city</magic> in the <magic>Deeper Down</magic>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Найдите <magic>заброшенный город</magic> в <magic>глубоких низинах</magic>"
+  ],
+  "x": 51,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q758bf8f1aa3dbae6"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:lategame/find_forgotten_city",
+      "type": "advancement"
+    }
+  ],
+  "shape": "circle",
+  "lines_out": "hover"
+}

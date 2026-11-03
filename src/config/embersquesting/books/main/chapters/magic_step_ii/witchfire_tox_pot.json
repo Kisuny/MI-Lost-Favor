@@ -1,0 +1,26 @@
+{
+  "title": "Witchfire Tox Pot",
+  "description": [
+    "Blaze powder was already as <warning>VOLATILE</warning> as toxin. It burns just like toxin does. So a thought came to me. Was there a way to <warning>mix these substances together</warning> to create the <warning>ultimate purifying effect</warning>. That's when I created this miraculous fusion. §l<flame><shake amplitude=0.4 frequency=1.3>WITCHFIRE</shake></flame>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Однажды мне пришла идея <warning>смешать</warning> <keyword>огненный порошок</keyword> с <warning>ядом</warning>, они и по отдельности сильны, но вместе... §l<flame><shake amplitude=0.4 frequency=1.3>ДА ЭТО ЧЁРТОВ ВЕДЬМИН ОГОНЬ!!!</shake></flame>"
+  ],
+  "icon": "toxony:witchfire_tox_pot",
+  "x": 31.5,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/empty_tox_pot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:witchfire_tox_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Char Instiller",
+  "description": [
+    "The <keyword>Char Instiller</keyword> limits the coil to <property>smoking</property> recipes, but <positive>doubles its speed</positive>.",
+    "",
+    "Can not be used together with <keyword>Atmospheric Bellows</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Коптильня</keyword> ограничивает катушку рецептами <property>копчения</property>, зато <positive>удваивает скорость</positive>.",
+    "",
+    "Нельзя ставить вместе с <keyword>Атмосферными мехами</keyword>."
+  ],
+  "icon": "embers:char_instiller",
+  "x": 32,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "bronze_age/hearth_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:char_instiller",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Familiar Wixie",
+  "description": [
+    "The <keyword>Wixie Familiar</keyword> is a personal buff companion, separate from the worker Wixie that autocrafts items and potions at the Wixie Cauldron.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Фамильяр Викси</keyword> - персональный компаньон-баф, отдельный от рабочей Викси, которая автоматически крафтит предметы и зелья у котла Викси."
+  ],
+  "icon": "ars_nouveau:familiar_wixie",
+  "x": 108.5,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_binding"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:familiar_wixie",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Ring Of The Rising Edge",
+  "description": [
+    "The <keyword>Ring of the Rising Edge</keyword> alters the <property>Ascension</property> enchantment - at the cost of reduced damage, foes cut by its wind blades are <wave>launched upwards</wave>, great for crowd control. Wear it together with the <keyword>Necklace of the Narrow Edge</keyword> to launch enemies with far greater force.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ring of the Rising Edge</keyword> изменяет зачарование <property>Ascension</property> - ценой сниженного урона враги, задетые лезвиями ветра, <wave>подбрасываются вверх</wave>, что отлично подходит для контроля толпы. Наденьте его вместе с <keyword>Necklace of the Narrow Edge</keyword>, чтобы подбрасывать врагов гораздо сильнее."
+  ],
+  "icon": "malum:ring_of_the_rising_edge",
+  "x": 86,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_ii/ornate_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ring_of_the_rising_edge",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

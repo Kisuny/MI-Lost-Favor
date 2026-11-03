@@ -1,0 +1,25 @@
+{
+  "title": "Gate Pearl",
+  "description": [
+    "If you don't like animal domestication, you don't have to do animal domestication.",
+    "",
+    "You can instead make a Gateway of the Emerald Grove. Right clicking with it will open a portal that summons waves of enemies, and if you can successfully beat all of them, you will receive a pack of domesticated animals"
+  ],
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:emerald_grove\"}",
+  "x": 14.5,
+  "y": 33.5,
+  "deps": {
+    "all": [
+      "bronze_age/ender_eye"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"gateways:emerald_grove\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

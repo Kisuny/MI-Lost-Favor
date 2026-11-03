@@ -1,0 +1,22 @@
+{
+  "title": "Propene Bucket",
+  "icon": "modern_industrialization:propene_bucket",
+  "x": 14.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/steam_cracker"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:propene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

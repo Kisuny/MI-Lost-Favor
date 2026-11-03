@@ -1,0 +1,19 @@
+{
+  "title": "Coal Crushed Dust",
+  "icon": "modern_industrialization:coal_crushed_dust",
+  "x": 34,
+  "y": 15,
+  "deps": {
+    "all": [
+      "first_steps/bronze_hammer",
+      "first_steps/coal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:coal_crushed_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

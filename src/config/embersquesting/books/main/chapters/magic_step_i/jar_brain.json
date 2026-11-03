@@ -1,0 +1,34 @@
+{
+  "title": "Jar Brain",
+  "description": [
+    "A reanimated <blood>zombie brain</blood> that keeps some of its old hunger: it <wiggle amplitude=0.5 frequency=1.0 phase=1.0>feeds on the thoughts</wiggle> of creatures slain nearby and stores their <positive>experience</positive>.",
+    "",
+    "Give the jar a good shake to take the experience out. Particles above it show when it is full. It also boosts <magic>enchanting</magic> far better than bookshelves.",
+    "",
+    "Infused from a <keyword>Warded Jar</keyword> with a <keyword>Zombie Brain</keyword>, spider eyes and a water bucket.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Оживлённый <blood>мозг зомби</blood>, сохранивший часть былого голода: он <wiggle amplitude=0.5 frequency=1.0 phase=1.0>питается мыслями</wiggle> существ, убитых поблизости, и копит их <positive>опыт</positive>.",
+    "",
+    "Как следует встряхни банку, чтобы забрать опыт. Частицы над ней показывают, что она полна. Ещё она усиливает <magic>зачарование</magic> гораздо лучше книжных полок.",
+    "",
+    "Создаётся инфузией из <keyword>защищённой банки</keyword> с <keyword>мозгом зомби</keyword>, глазами паука и ведром воды."
+  ],
+  "icon": "thaumaturge:jar_brain",
+  "x": 70.5,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:jar_brain",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

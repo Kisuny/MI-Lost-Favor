@@ -1,0 +1,26 @@
+{
+  "title": "Familiar Starbuncle",
+  "description": [
+    "The <keyword>Starbuncle Familiar</keyword> grants you <property>Speed II</property> while summoned. Give it a <keyword>Gold Nugget</keyword> to consume it and briefly reveal nearby gold ore.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Фамильяр Старбанкла</keyword> даёт вам <property>Скорость II</property>, пока призван. Дайте ему <keyword>золотой самородок</keyword>, чтобы он его съел и ненадолго подсветил вам золотую руду поблизости."
+  ],
+  "icon": "ars_nouveau:familiar_starbuncle",
+  "x": 107.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_binding"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:familiar_starbuncle",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Copper",
+  "icon": "minecraft:raw_copper",
+  "x": 21.5,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "first_steps/lead_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Copper"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:raw_copper\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

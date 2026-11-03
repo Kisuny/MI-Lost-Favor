@@ -1,0 +1,21 @@
+{
+  "title": "Night Salts",
+  "icon": "spectrum:night_salts{\"spectrum:is_preview_item\":{}}",
+  "x": 53.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/nightdew_sprout"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:night_salts",
+      "components": "{\"spectrum:is_preview_item\":{}}",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

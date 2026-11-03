@@ -1,0 +1,37 @@
+{
+  "title": "free cobble or not",
+  "description": [
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/>  -  <positive>free dirt</positive>",
+    "",
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>free cobblestone</positive>",
+    "",
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>free deepslate</positive>",
+    "",
+    "You can read about all the combinations right on the glyph itself in <keyword>EMI</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/>  -  <positive>установить землю</positive>",
+    "",
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>установить булыжник</positive>",
+    "",
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/> > <item id=ars_elemental:glyph_conjure_terrain tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/> > <item id=ars_nouveau:glyph_amplify tooltip=true/>  -  <positive>установить дипслейт</positive>",
+    "",
+    "Можно почитать о всех комбинациях на самом глифе в <keyword>EMI</keyword>"
+  ],
+  "icon": "ars_elemental:glyph_conjure_terrain",
+  "x": 23.5,
+  "y": 54.5,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Paintbrush",
+  "description": [
+    "Use the <keyword>brush</keyword> and the <keyword>pigment</keyword> you found to <positive>repaint</positive> the <keyword>sapling</keyword> you made earlier in a different color",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используйте <keyword>кисточку</keyword> и найденную <keyword>краску</keyword>, чтобы <positive>перекрасить</positive> ранее полученный <keyword>саженец</keyword> в другой цвет"
+  ],
+  "icon": "spectrum:paintbrush",
+  "x": 43.5,
+  "y": 53.5,
+  "deps": {
+    "all": [
+      "magic_step_i/magenta_pigment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:paintbrush",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Windmill Sail",
+  "icon": "immersiveengineering:windmill_sail",
+  "x": 10.5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "simple_machinery/windmill",
+      "simple_machinery/hemp_fabric"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:windmill_sail",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

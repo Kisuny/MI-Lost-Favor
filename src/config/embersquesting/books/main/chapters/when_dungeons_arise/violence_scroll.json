@@ -1,0 +1,23 @@
+{
+  "title": "Violence Scroll",
+  "icon": "enigmaticlegacyplus:violence_scroll{\"enigmaticlegacyplus:eldritch_timer\":1.0f}",
+  "x": 38,
+  "y": 41,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/abyssal_heart",
+      "when_dungeons_arise/cosmic_heart",
+      "when_dungeons_arise/twisted_heart",
+      "when_dungeons_arise/evil_essence"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enigmaticlegacyplus:violence_scroll",
+      "components": "{\"enigmaticlegacyplus:eldritch_timer\":1.0f}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

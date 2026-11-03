@@ -1,0 +1,20 @@
+{
+  "title": "",
+  "description": [
+    "<named>Wild sheep</named>"
+  ],
+  "x": 8,
+  "y": 20,
+  "deps": {
+    "all": [
+      "first_steps/animals_breeding"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "ytech:mouflon",
+      "type": "observe"
+    }
+  ],
+  "shape": "rsquare"
+}

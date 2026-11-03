@@ -1,0 +1,27 @@
+{
+  "title": "Bolt",
+  "description": [
+    "However, because of its size, its power has been <warning>scaled down</warning>. To compensate, I have created special <keyword>ammunition</keyword> - a <property>catalyst for oil</property>. By <positive>using the bolts on a placed oil pot</positive>, they can be <property>covered in oil</property>, applying its effect to hit targets. Do keep in mind <warning>some oils will not apply to the bolts</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Однако из-за его размеров мощность была <warning>снижена</warning>. Чтобы компенсировать это, я создал специальные <keyword>боеприпасы</keyword> - <property>катализатор для масла</property>. Если <positive>поместить болты в горшок с маслом</positive>, они покроются маслом, применяя его эффект к поражённым целям. Имейте в виду: <warning>некоторые масла не будут действовать на болты</warning>."
+  ],
+  "icon": "toxony:bolt",
+  "x": 18.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/cyclebow"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:bolt",
+      "count": 18,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

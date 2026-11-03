@@ -1,0 +1,23 @@
+{
+  "title": "Distillation Tower",
+  "icon": "immersivepetroleum:distillation_tower",
+  "x": 16,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/crudeoil_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:distillation_tower",
+      "type": "item"
+    },
+    {
+      "block": "immersivepetroleum:distillation_tower",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "pentagon"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Quantum Bridge Card",
+  "description": [
+    "Allows you to <positive>access your system</positive> from any point in the world when linked to <keyword>quantum ring</keyword>"
+  ],
+  "icon": "ae2wtlib:quantum_bridge_card",
+  "x": 20.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "aluminum/wireless_access_point"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2wtlib:quantum_bridge_card",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

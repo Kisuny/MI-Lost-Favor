@@ -1,0 +1,19 @@
+{
+  "title": "Electric Compressor",
+  "icon": "modern_industrialization:electric_compressor",
+  "x": 22.5,
+  "y": 29,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull",
+      "automation_n_stuff/piston"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electric_compressor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

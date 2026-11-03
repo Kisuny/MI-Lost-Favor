@@ -1,0 +1,22 @@
+{
+  "title": "Raw Synthetic Oil Bucket",
+  "icon": "modern_industrialization:raw_synthetic_oil_bucket",
+  "x": 24,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_mixer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:raw_synthetic_oil_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

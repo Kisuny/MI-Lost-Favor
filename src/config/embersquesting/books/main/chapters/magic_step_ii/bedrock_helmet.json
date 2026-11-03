@@ -1,0 +1,41 @@
+{
+  "title": "Bedrock Helmet",
+  "description": [
+    "That's tough"
+  ],
+  "icon": "spectrum:bedrock_helmet{\"minecraft:enchantments\":{levels:{\"minecraft:projectile_protection\":5}}}",
+  "x": 43.5,
+  "y": 37.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/bedrock_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:bedrock_helmet",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:projectile_protection\":5}}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "spectrum:bedrock_chestplate",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:protection\":5}}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "spectrum:bedrock_leggings",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:blast_protection\":5}}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "spectrum:bedrock_boots",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:fire_protection\":5}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

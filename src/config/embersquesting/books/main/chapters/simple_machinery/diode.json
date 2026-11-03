@@ -1,0 +1,26 @@
+{
+  "title": "Diode",
+  "icon": "modern_industrialization:diode",
+  "x": 17.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "simple_machinery/silicone_modified_phenolic_resin_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:diode",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:diode",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

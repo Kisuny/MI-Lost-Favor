@@ -1,0 +1,33 @@
+{
+  "title": "Mark Of Mastery",
+  "description": [
+    "The <keyword>Mark of Mastery</keyword> (Ars Elemental) is used at the <keyword>Enchanting Apparatus</keyword> to upgrade a <keyword>Lesser Focus</keyword> into a <keyword>Greater Focus</keyword>, removing its off-element penalty and adding powerful bonuses. It's also required for crafting Elemental armor.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Знак мастерства</keyword> (Ars Elemental) используется в <keyword>Зачаровывающем аппарате</keyword>, чтобы улучшить <keyword>Малый фокус</keyword> до <keyword>Большого фокуса</keyword>, убрав штраф за чужой элемент и добавив мощные бонусы. Также нужен для крафта элементальной брони."
+  ],
+  "icon": "ars_elemental:mark_of_mastery",
+  "x": 117.5,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/wilden_tribute"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:mark_of_mastery",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Focus Trinket Slot",
+      "id": "milf:trinket/focus_mark_of_mastery",
+      "type": "custom"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Quantum Core",
+  "icon": "advanced_ae:quantum_core",
+  "x": 35,
+  "y": 13,
+  "deps": {
+    "all": [
+      "aluminum/quantum_accelerator",
+      "aluminum/quantum_unit",
+      "aluminum/quantum_storage_128",
+      "aluminum/adv_pattern_provider"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:quantum_core",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "size": 2.0
+}

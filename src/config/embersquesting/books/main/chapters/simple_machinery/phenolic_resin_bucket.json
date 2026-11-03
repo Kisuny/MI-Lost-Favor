@@ -1,0 +1,23 @@
+{
+  "title": "Phenolic Resin Bucket",
+  "icon": "immersiveengineering:phenolic_resin_bucket",
+  "x": 18.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "simple_machinery/acetaldehyde_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:phenolic_resin_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond",
+  "size": 2.0
+}

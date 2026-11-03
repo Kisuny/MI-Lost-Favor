@@ -1,0 +1,21 @@
+{
+  "title": "Annihilation Plane",
+  "description": [
+    "<positive>Breaks and pickups blocks</positive>, can be enchanted with any <property>pickaxe enchantment</property>"
+  ],
+  "icon": "ae2:annihilation_plane",
+  "x": 18.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/annihilation_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:annihilation_plane",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

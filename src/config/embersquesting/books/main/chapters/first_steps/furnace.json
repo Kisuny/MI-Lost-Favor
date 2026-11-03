@@ -1,0 +1,29 @@
+{
+  "title": "Furnace",
+  "description": [
+    "It's the furnace. You know it, you love it.",
+    "",
+    "But they are a bit limited this early on. That's where the Primitive Alloy Smelter and Primitive Smelter come in."
+  ],
+  "icon": "minecraft:furnace",
+  "x": 17,
+  "y": 8,
+  "deps": {
+    "all": [
+      "first_steps/stone_hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:furnace",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:furnace",
+      "type": "observe",
+      "icon": "minecraft:furnace"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Copper Belt",
+  "icon": "travelertoolbelt:copper_belt",
+  "x": 30.5,
+  "y": 13,
+  "deps": {
+    "all": [
+      "first_steps/bronze_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "travelertoolbelt:copper_belt",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Necklace Of The Desert",
+  "icon": "cataclysm:remnant_skull",
+  "x": 16,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_summit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cataclysm:necklace_of_the_desert",
+      "type": "item"
+    },
+    {
+      "advancement": "cataclysm:kill_remnant",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

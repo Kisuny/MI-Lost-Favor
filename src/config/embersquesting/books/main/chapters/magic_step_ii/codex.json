@@ -1,0 +1,30 @@
+{
+  "title": "Codex",
+  "description": [
+    "The cornerstone of the Eidolon mod. A guidebook, spellbook and prayerbook all in one."
+  ],
+  "icon": "eidolon_repraised:codex",
+  "x": 58,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_moonstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:codex",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Eidolon Mobs",
+      "id": "milf:milestone/codex",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Toxic Leather",
+  "description": [
+    "My clothes are torn to bits. I feel my own academy attire does not reflect my truest desires. I must attain a new wardrobe. And I have the perfect material to make it out of.",
+    "",
+    "A perfect amalgamation of <poison>poison</poison> and purpose. The leather of animals felt missing something tactile and comfortable. By imbuing it with my <poison>toxin</poison>, I can create a hardened and more durable material. And it smells of progress all over!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Моя академическая роба изорвана в клочья. Мне стоит обновиться... И у меня есть просто замечательный материал для пошива!",
+    "",
+    "Идеальное сочетание <poison>яда</poison> и моей цели. Мне кажется, что обычной коже не хватает удобства и элегантности. Добавив в неё <poison>токсин</poison>, я могу сделать её прочнее. Попахивает прогрессом!"
+  ],
+  "icon": "toxony:toxic_leather",
+  "x": 31,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/more_plants"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:toxic_leather",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

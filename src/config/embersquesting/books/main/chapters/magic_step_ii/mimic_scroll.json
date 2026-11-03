@@ -1,0 +1,26 @@
+{
+  "title": "Mimic Scroll",
+  "description": [
+    "The <keyword>Mimic Scroll</keyword> is placed in an item frame on an inventory - a <keyword>Starbuncle</keyword> will then only deposit items that already exist in that inventory, matching its existing contents.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Mimic Scroll</keyword> вставляется в рамку на инвентаре - после этого <keyword>Старбанкл</keyword> будет складывать в него только те предметы, что там уже есть, повторяя содержимое инвентаря."
+  ],
+  "icon": "ars_nouveau:mimic_scroll",
+  "x": 104,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_ii/starbuncle_charm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:mimic_scroll",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

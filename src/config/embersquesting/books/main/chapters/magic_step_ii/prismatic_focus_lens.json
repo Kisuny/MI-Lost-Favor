@@ -1,0 +1,26 @@
+{
+  "title": "Prismatic Focus Lens",
+  "description": [
+    "An augment for the <keyword>Spirit Crucible</keyword> that bends the flow of arcana rather than light: <property>-15% Instability</property>. Keep in mind, stability can only prevent the <keyword>Impetus</keyword> from taking <warning>additional</warning> damage - it won't undo damage already dealt.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшение для <keyword>Spirit Crucible</keyword>, изгибающее не свет, а поток арканы: <property>-15% нестабильности</property>. Учтите, стабильность лишь предотвращает <warning>дополнительный</warning> урон по <keyword>Impetus</keyword> - уже нанесённый урон она не отменяет."
+  ],
+  "icon": "malum:prismatic_focus_lens",
+  "x": 93.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:prismatic_focus_lens",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

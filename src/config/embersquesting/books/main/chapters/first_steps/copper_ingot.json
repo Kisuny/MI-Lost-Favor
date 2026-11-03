@@ -1,0 +1,19 @@
+{
+  "title": "Copper Ingot",
+  "icon": "minecraft:copper_ingot",
+  "x": 23.5,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "first_steps/clay_mold_ingot",
+      "first_steps/crushed_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:copper_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

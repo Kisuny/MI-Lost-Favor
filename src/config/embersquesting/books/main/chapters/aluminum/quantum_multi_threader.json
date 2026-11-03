@@ -1,0 +1,20 @@
+{
+  "title": "Quantum Multi Threader",
+  "icon": "advanced_ae:quantum_multi_threader",
+  "x": 35,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "aluminum/quantum_accelerator",
+      "aluminum/quantum_core",
+      "aluminum/quantum_storage_256"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:quantum_multi_threader",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Atmospheric Boots",
+  "description": [
+    "Light as a cloud: <wind>Atmospheric Boots</wind> reduce fall damage by <property>50%</property>.",
+    "",
+    "They drop from the golem, and a spare pair can be crafted from an <keyword>Air Rune</keyword>, <keyword>Cloud Rods</keyword> and diamonds.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Лёгкие, как облако: <wind>атмосферные ботинки</wind> снижают урон от падения на <property>50%</property>.",
+    "",
+    "Они падают с голема, а запасную пару можно скрафтить из <keyword>воздушной руны</keyword>, <keyword>облачных палок</keyword> и алмазов."
+  ],
+  "icon": "legendary_monsters:atmospheric_boots",
+  "x": 11.5,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q1905ed452e089998"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:atmospheric_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

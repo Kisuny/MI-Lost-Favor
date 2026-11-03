@@ -1,0 +1,18 @@
+{
+  "title": "Bread",
+  "icon": "minecraft:bread",
+  "x": 14,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "first_steps/wheat_dough"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:bread",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

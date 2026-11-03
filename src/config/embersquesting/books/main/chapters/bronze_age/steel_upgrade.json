@@ -1,0 +1,18 @@
+{
+  "title": "Steel Upgrade",
+  "icon": "modern_industrialization:steel_upgrade",
+  "x": 19.5,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_packer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_upgrade",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Arc Furnace",
+  "icon": "immersiveengineering:arc_furnace",
+  "x": 13.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "simple_machinery/graphite_electrode"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:arc_furnace",
+      "type": "item"
+    },
+    {
+      "block": "immersiveengineering:arc_furnace",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:blastbrick_reinforced",
+      "count": 27,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:slab_sheetmetal_steel",
+      "count": 14,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 5,
+      "type": "item"
+    },
+    {
+      "item": "minecraft:cauldron",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:sheetmetal_steel",
+      "count": 8,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:storage_steel",
+      "count": 6,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:heavy_engineering",
+      "count": 5,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 10,
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon",
+  "size": 2.0
+}

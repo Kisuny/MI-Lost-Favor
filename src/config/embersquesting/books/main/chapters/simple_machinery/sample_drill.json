@@ -1,0 +1,18 @@
+{
+  "title": "Sample Drill",
+  "icon": "immersiveengineering:sample_drill",
+  "x": 4.5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:sample_drill",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

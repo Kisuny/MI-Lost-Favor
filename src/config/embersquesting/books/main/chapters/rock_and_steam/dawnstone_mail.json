@@ -1,0 +1,26 @@
+{
+  "title": "Dawnstone Mail",
+  "description": [
+    "<keyword>Dawnstone Mail</keyword> makes the wearer <positive>immune to knockback</positive>. Just don't ask why mail is made of plates.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Золотитовая кольчуга</keyword> делает носителя <positive>невосприимчивым к отбрасыванию</positive>. Только не спрашивайте, почему кольчуга сделана из пластин."
+  ],
+  "icon": "embers:dawnstone_mail",
+  "x": 5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/dawnstone_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:dawnstone_mail",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Assembler Matrix Wall",
+  "icon": "extendedae:assembler_matrix_wall",
+  "x": 35.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "aluminum/sky_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extendedae:assembler_matrix_wall",
+      "type": "item"
+    },
+    {
+      "item": "extendedae:assembler_matrix_glass",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

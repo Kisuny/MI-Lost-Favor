@@ -1,0 +1,34 @@
+{
+  "title": "Skeleton Skull",
+  "description": [
+    "Skulls can increase both the capacity and recharge rate of an altar, with varying effectiveness.",
+    "",
+    "Human skulls are particularly effective at channeling energy.",
+    "",
+    "§lSkeleton Skull§r: ",
+    "• 1x Power Capacity ",
+    "• +1x Recharge Rate",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Черепа могут увеличить как вместимость, так и скорость перезарядки алтаря, причем с разной эффективностью.",
+    "",
+    "Человеческие черепа особенно эффективно направляют энергию."
+  ],
+  "icon": "minecraft:skeleton_skull",
+  "x": 33.5,
+  "y": 36.5,
+  "deps": {
+    "all": [
+      "magic_step_i/altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:skeleton_skull",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Anvil",
+  "description": [
+    "Later on, you will need to craft many items using the anvil crafting. Pay attention to the <click action=open_quest value='magic_step_i/winch'><u>winch</u></click>! You can <positive>craft several items at once</positive> with it, and it <warning>won't break the anvil</warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В дальнейшем вам понадобится создавать множество вещей использую наковальню для крафта, обратите внимание на <click action=open_quest value='magic_step_i/winch'><u>лебедку</u></click>! В ней вы можете <positive>одновременно создавать несколько предметов</positive>, а так же в ней <warning>не ломается наковальня</warning>!"
+  ],
+  "icon": "minecraft:anvil",
+  "x": 5,
+  "y": 22,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_bolt",
+      "rock_and_steam/iron_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:anvil",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:anvil",
+      "type": "observe",
+      "icon": "minecraft:anvil"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_iron",
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_hat",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

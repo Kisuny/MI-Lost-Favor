@@ -1,0 +1,32 @@
+{
+  "title": "Coldsnap",
+  "description": [
+    "Grows in <nature>taiga biomes</nature> (the cold ones).",
+    "",
+    "You can also buy from <keyword>Wandering Trader</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Растёт в <nature>таёжных биомах</nature> (холодных).",
+    "",
+    "Также можно купить у <keyword>странствующего торговца</keyword>."
+  ],
+  "icon": "toxony:coldsnap",
+  "x": 23.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q28a2fcbc095f291e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:coldsnap",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Caustic Catalyst",
+  "description": [
+    "A <keyword>core augment</keyword> for the <keyword>Spirit Crucible</keyword>. The <keyword>Caustic Catalyst</keyword> harnesses the volatile reaction between Infernal and Aqueous arcana, granting <property>+100% Caustic Synergy</property> - the higher the Crucible's <warning>Instability</warning> climbs, the more it boosts <positive>Tuning Potency</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ключевое улучшение (core augment)</keyword> для <keyword>Spirit Crucible</keyword>. <keyword>Caustic Catalyst</keyword> использует нестабильную реакцию между инфернальной и водной арканой, давая <property>+100% Caustic Synergy</property> - чем выше <warning>нестабильность</warning> тигля, тем сильнее это усиливает <positive>Tuning Potency</positive>."
+  ],
+  "icon": "malum:caustic_catalyst",
+  "x": 91,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:caustic_catalyst",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

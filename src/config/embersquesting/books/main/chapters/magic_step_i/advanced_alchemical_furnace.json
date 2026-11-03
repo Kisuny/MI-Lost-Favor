@@ -1,0 +1,58 @@
+{
+  "title": "Advanced Alchemical Furnace",
+  "description": [
+    "Regular smelteries are slow, need fuel and cannot handle large amounts of slurry - it gets <warning>unstable</warning> when too much gathers in one place. The <magic><pulse>Advanced Alchemical Furnace</pulse></magic> solves all of that: it processes far more slurry at once and <positive>much faster</positive>.",
+    "",
+    "<named>Structure</named> (3x3, two layers), formed with <keyword>Salis Mundus</keyword>:",
+    "- one layer: a basic <keyword>Essentia Smeltery</keyword> in the center surrounded by <property>8 Advanced Alchemical Constructs</property>;",
+    "- the other: <keyword>Alembics</keyword> in the 4 corners, <keyword>Alchemical Constructs</keyword> on the 4 sides, the center left empty.",
+    "Check the exact layout in the book entry.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Power - vis instead of fuel:</named>",
+    "- <fire>Ignis</fire> makes the heat, and it needs a <warning>constant supply even when idle</warning>;",
+    "- <curse>Perditio</curse> breaks items down almost instantly;",
+    "- <aqua>Aqua</aqua> keeps the slurry from settling and causing trouble.",
+    "Perditio and Aqua are used only while smelting.",
+    "",
+    "Each Advanced Alchemical Construct needs a <magic>Primordial Pearl</magic> - the book says the pearl is not consumed in the crafting, so you do not need eight of them.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обычные плавильни медленные, требуют топлива и не справляются с большим объёмом смеси - она становится <warning>нестабильной</warning>, если её много в одном месте. <magic><pulse>Продвинутая алхимическая печь</pulse></magic> решает всё это: перерабатывает гораздо больше смеси за раз и <positive>намного быстрее</positive>.",
+    "",
+    "<named>Конструкция</named> (3x3, два слоя), собирается с помощью <keyword>Salis Mundus</keyword>:",
+    "- один слой: простая <keyword>плавильня эссенции</keyword> в центре, вокруг неё <property>8 продвинутых алхимических конструкций</property>;",
+    "- другой: <keyword>перегонные кубы</keyword> в 4 углах, <keyword>алхимические конструкции</keyword> по 4 сторонам, центр пустой.",
+    "Точную схему смотри в записи книги.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Питание - vis вместо топлива:</named>",
+    "- <fire>Ignis</fire> даёт жар, и он нужен <warning>постоянно, даже в простое</warning>;",
+    "- <curse>Perditio</curse> разбирает предметы почти мгновенно;",
+    "- <aqua>Aqua</aqua> не даёт смеси оседать и создавать проблемы.",
+    "Perditio и Aqua тратятся только во время плавки.",
+    "",
+    "Для каждой продвинутой алхимической конструкции нужна <magic>первородная жемчужина</magic> - по книге при крафте она не расходуется, так что восемь жемчужин не понадобится."
+  ],
+  "icon": "thaumaturge:advanced_alchemical_furnace",
+  "x": 31,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_i/smelter_void"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:advanced_alchemical_furnace",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

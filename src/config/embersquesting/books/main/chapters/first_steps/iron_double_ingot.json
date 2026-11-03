@@ -1,0 +1,18 @@
+{
+  "title": "Iron Double Ingot",
+  "icon": "modern_industrialization:iron_double_ingot",
+  "x": 39,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "first_steps/iron_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:iron_double_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

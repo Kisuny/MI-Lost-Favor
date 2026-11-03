@@ -1,0 +1,18 @@
+{
+  "title": "Conveyor Redstone",
+  "icon": "immersiveengineering:conveyor_redstone",
+  "x": 32,
+  "y": 21,
+  "deps": {
+    "all": [
+      "bronze_age/conveyor_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:conveyor_redstone",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

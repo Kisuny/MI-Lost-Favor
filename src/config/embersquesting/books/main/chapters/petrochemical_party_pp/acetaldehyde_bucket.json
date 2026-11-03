@@ -1,0 +1,22 @@
+{
+  "title": "Acetaldehyde Bucket",
+  "icon": "immersiveengineering:acetaldehyde_bucket",
+  "x": 17,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/ethylene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:acetaldehyde_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Focal Lens",
+  "description": [
+    "The <keyword>Focal Lens</keyword> sharpens Ember weapons: fireballs become <positive>homing</positive>, and rays become <positive>piercing</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Фокусирующая линза</keyword> делает эмберное оружие точнее: огненные шары становятся <positive>самонаводящимися</positive>, а лучи - <positive>пробивающими</positive>."
+  ],
+  "icon": "embers:focal_lens",
+  "x": 13.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:focal_lens",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

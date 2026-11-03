@@ -1,0 +1,23 @@
+{
+  "title": "Memory",
+  "description": [
+    "How To Tame a Kindling"
+  ],
+  "icon": "spectrum:memory{\"minecraft:entity_data\":{id:\"spectrum:kindling\"},\"spectrum:memory\":{ticks_to_manifest:8}}",
+  "x": 65.5,
+  "y": 33,
+  "deps": {
+    "all": [
+      "magic_step_ii/dragonbone_chunk"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "strict",
+      "item": "spectrum:memory",
+      "components": "{\"minecraft:entity_data\":{id:\"spectrum:kindling\"},\"spectrum:memory\":{ticks_to_manifest:8}}",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

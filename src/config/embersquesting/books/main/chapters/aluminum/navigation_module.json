@@ -1,0 +1,18 @@
+{
+  "title": "navigation_module",
+  "icon": "minecraft:coarse_dirt",
+  "x": 7.5,
+  "y": 14,
+  "deps": {
+    "all": [
+      "aluminum/digital_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:coarse_dirt",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

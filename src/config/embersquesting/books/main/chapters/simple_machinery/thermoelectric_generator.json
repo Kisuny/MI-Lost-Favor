@@ -1,0 +1,22 @@
+{
+  "title": "Thermoelectric Generator",
+  "description": [
+    "с топ блоками 42 (21 за блоктипы)"
+  ],
+  "icon": "immersiveengineering:thermoelectric_generator",
+  "x": 16.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "simple_machinery/wirecoil_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:thermoelectric_generator",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

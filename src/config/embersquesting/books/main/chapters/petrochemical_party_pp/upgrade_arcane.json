@@ -1,0 +1,30 @@
+{
+  "title": "Upgrade Arcane",
+  "description": [
+    "By default arcane devices drink vis only from <property>their own chunk</property>. The <named>Arcane Charging Card</named> extends that to nearby chunks - <property>3x3 area</property> - and splits each draw <positive>evenly</positive> across them.",
+    "",
+    "Goes into the <keyword>Arcane Crafting Terminal</keyword>, its wireless version and the <keyword>Arcane Assembler</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "По умолчанию магические устройства берут вис только из <property>своего чанка</property>. <named>Карта магической зарядки</named> расширяет это на соседние чанки - <property>область 3x3</property> - и делит каждый забор <positive>поровну</positive> между ними.",
+    "",
+    "Ставится в <keyword>терминал магического крафта</keyword>, его беспроводную версию и <keyword>магический сборщик</keyword>."
+  ],
+  "icon": "appliedthaumaturge:upgrade_arcane",
+  "x": 7.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/advanced_card"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:upgrade_arcane",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

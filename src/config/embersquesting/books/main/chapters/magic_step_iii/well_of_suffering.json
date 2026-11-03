@@ -1,0 +1,25 @@
+{
+  "title": "Well of Suffering",
+  "description": [
+    "<positive>Harvests</positive> <property>Essentia Vitae</property> from the suffering of nearby creatures.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>собирает</positive> <property>EV</property> от страданий существ рядом"
+  ],
+  "x": 56,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/ritual_diviner_tenebrae"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Well of Suffering"
+    }
+  ],
+  "shape": "circle"
+}

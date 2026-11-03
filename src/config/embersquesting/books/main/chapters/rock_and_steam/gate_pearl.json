@@ -1,0 +1,27 @@
+{
+  "title": "Gate Pearl",
+  "description": [
+    "An easy way to get <named>villagers</named>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Простой способ получить <named>жителей</named>!"
+  ],
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:basic/villager\"}",
+  "x": 2.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/bronze_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"gateways:basic/villager\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

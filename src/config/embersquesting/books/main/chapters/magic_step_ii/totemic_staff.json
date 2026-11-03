@@ -1,0 +1,26 @@
+{
+  "title": "Totemic Staff",
+  "description": [
+    "Shows the working radius of totems.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Показывает радиус работы тотемов"
+  ],
+  "icon": "malum:totemic_staff",
+  "x": 80,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/runewood_totem_base"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:totemic_staff",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

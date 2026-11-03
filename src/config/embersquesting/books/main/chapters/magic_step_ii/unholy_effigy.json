@@ -1,0 +1,30 @@
+{
+  "title": "Unholy Effigy",
+  "description": [
+    "The dark lord is pleased, and has revealed some knowledge of their otherworldly appearance - now represented in this <curse>Elder Statue</curse>. It allows far <magic>more powerful dark rites</magic> than your crude straw effigy ever could.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Тёмный владыка доволен и приоткрыл толику знаний о своём потустороннем облике - теперь воплощённом в этой <curse>Древней статуе</curse>. Она позволяет проводить куда <magic>более мощные тёмные ритуалы</magic>, чем грубое соломенное чучело."
+  ],
+  "icon": "eidolon_repraised:unholy_effigy",
+  "x": 83.5,
+  "y": 28,
+  "deps": {
+    "min": {
+      "count": 1,
+      "of": [
+        "magic_step_ii/holy_symbol",
+        "magic_step_ii/unholy_symbol"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:unholy_effigy",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

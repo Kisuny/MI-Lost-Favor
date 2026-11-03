@@ -1,0 +1,19 @@
+{
+  "title": "Large Pump",
+  "icon": "modern_industrialization:large_pump",
+  "x": 20,
+  "y": 27,
+  "deps": {
+    "all": [
+      "automation_n_stuff/blueprint",
+      "automation_n_stuff/large_motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:large_pump",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

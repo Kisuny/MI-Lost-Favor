@@ -1,0 +1,19 @@
+{
+  "title": "Radiance Pin",
+  "icon": "spectrum:radiance_pin",
+  "x": 13.5,
+  "y": 46,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:radiance_pin",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

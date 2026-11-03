@@ -1,0 +1,21 @@
+{
+  "title": "Otherwhere Chalk",
+  "description": [
+    "The Otherwhere Chalk is used for Rites having to do with teleportation and The End."
+  ],
+  "icon": "enchanted:otherwhere_chalk",
+  "x": 30.5,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_i/kettle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:otherwhere_chalk",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

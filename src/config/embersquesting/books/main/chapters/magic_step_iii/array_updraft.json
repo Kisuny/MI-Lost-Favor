@@ -1,0 +1,25 @@
+{
+  "title": "Array Updraft",
+  "description": [
+    "<positive>Hurls</positive> entities skyward with <warning>considerable force</warning>."
+  ],
+  "icon": "neovitae:array_updraft",
+  "x": 28.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "magic_step_iii/movement_and_transit_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_updraft",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

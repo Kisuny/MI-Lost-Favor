@@ -1,0 +1,28 @@
+{
+  "title": "Hexhorn",
+  "description": [
+    "Crafted from a Blood Feather, Echo Pearl, and War Horn at a Smithing Table. Applies its loaded potion effects to all nearby enemies instead of allies. Supports the Flame enchantment, igniting victims along with the potion effect.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Создаётся из Blood Feather, Echo Pearl и War Horn на кузнечном столе. Применяет загруженный эффект зелья на всех врагов рядом, а не на союзников. Поддерживает зачарование Flame, поджигающее жертв вместе с эффектом зелья."
+  ],
+  "icon": "risus:hexhorn{\"minecraft:instrument\":\"minecraft:ponder_goat_horn\"}",
+  "x": 22,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/warhorn"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "risus:hexhorn",
+      "components": "{\"minecraft:instrument\":\"minecraft:ponder_goat_horn\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

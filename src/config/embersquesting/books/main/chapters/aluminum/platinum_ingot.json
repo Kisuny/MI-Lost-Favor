@@ -1,0 +1,19 @@
+{
+  "title": "Platinum Ingot",
+  "icon": "modern_industrialization:platinum_ingot",
+  "x": 8,
+  "y": 10,
+  "deps": {
+    "all": [
+      "aluminum/platinum_ore",
+      "aluminum/kanthal_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:platinum_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

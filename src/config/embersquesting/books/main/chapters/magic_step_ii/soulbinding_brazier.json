@@ -1,0 +1,42 @@
+{
+  "title": "Soulbinding Brazier",
+  "description": [
+    "The <pulse><keyword>Soulbinding Brazier</keyword></pulse> is used to swear a <warning>Geas</warning> - a magical oath bound <curse>semi-permanently</curse> to your soul, granting a powerful effect at the cost of a fitting drawback. Socket the <keyword>prime item</keyword>, <warning>Spirit Arcana</warning> and other ingredients into the brazier - if the items <positive>rise up above it</positive>, your recipe is correct.",
+    "",
+    "Add <keyword>Ether</keyword> to start the craft. Once started - add your <curse>blood</curse> to the altar by pressing <property>RMB</property> (multiple players can contribute to a single ritual), then just wait.",
+    "",
+    "You can also add the blood of any other creature. To do so, apply a <warning>weakness</warning> effect to it before lighting the brazier.",
+    "",
+    "A player can have a maximum of <property>2 Geas</property> bound at once. They are also <curse>difficult to remove</curse>, so choose wisely.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<pulse><keyword>Soulbinding Brazier</keyword></pulse> используется для принесения <warning>Geas</warning> (клятвы) - магической присяги, <curse>полупостоянно</curse> привязанной к вашей душе, которая даёт мощный эффект ценой подходящего недостатка. Поместите в жаровню <keyword>основной предмет</keyword>, <warning>душу арканы</warning> и другие ингредиенты - если предметы <positive>поднялись над жаровней</positive>, рецепт верный.",
+    "",
+    "Добавьте <keyword>Ether</keyword>, чтобы запустить крафт. После запуска - добавьте свою <curse>кровь</curse> в алтарь нажатием <property>ПКМ</property> (в одном ритуале могут поучаствовать несколько игроков), затем просто ждите.",
+    "",
+    "Также можно добавить кровь любого другого существа. Для этого наложите на него эффект <warning>слабости</warning> до того, как зажечь жаровню.",
+    "",
+    "На игроке может быть привязано максимум <property>2 Geas</property> одновременно. Снять их также <curse>непросто</curse>, так что выбирайте осторожно."
+  ],
+  "icon": "malum:soulbinding_brazier",
+  "x": 93,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/blazing_quartz"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:soulbinding_brazier",
+      "type": "item"
+    },
+    {
+      "item": "malum:ether",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

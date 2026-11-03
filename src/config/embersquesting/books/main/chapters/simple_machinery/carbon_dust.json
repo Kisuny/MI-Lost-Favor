@@ -1,0 +1,26 @@
+{
+  "title": "Carbon Dust",
+  "icon": "modern_industrialization:carbon_dust",
+  "x": 10.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hop_graphite_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:carbon_dust",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:carbon_tiny_dust",
+      "count": 44,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

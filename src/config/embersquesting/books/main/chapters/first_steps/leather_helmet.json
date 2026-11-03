@@ -1,0 +1,38 @@
+{
+  "title": "Leather Helmet",
+  "description": [
+    "Better than nothing, and fancy furthermore, eh?",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Лучше, чем ничего, и к тому же роскошно, да?"
+  ],
+  "icon": "minecraft:leather_helmet",
+  "x": 18.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "first_steps/q681ccf6687c70b0b"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:leather_helmet",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:leather_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:leather_leggings",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:leather_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

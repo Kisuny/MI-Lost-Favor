@@ -1,0 +1,18 @@
+{
+  "title": "Silicon Steel Ingot",
+  "icon": "modern_industrialization:silicon_steel_ingot",
+  "x": 20.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/sulfuric_acid_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:silicon_steel_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

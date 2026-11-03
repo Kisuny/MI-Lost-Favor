@@ -1,0 +1,19 @@
+{
+  "title": "Source Acceptor",
+  "icon": "arseng:source_acceptor",
+  "x": 23,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/energy_acceptor",
+      "magic_step_ii/enchanting_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "arseng:source_acceptor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

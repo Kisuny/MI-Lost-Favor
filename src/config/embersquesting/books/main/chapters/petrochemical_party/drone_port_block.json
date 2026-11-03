@@ -1,0 +1,20 @@
+{
+  "title": "Drone Port Block",
+  "icon": "oritech:drone_port_block",
+  "x": 16.5,
+  "y": 0.5,
+  "deps": {
+    "all": [
+      "simple_machinery/component_electronic_adv",
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:drone_port_block",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

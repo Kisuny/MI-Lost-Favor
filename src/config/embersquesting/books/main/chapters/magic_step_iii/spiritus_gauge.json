@@ -1,0 +1,21 @@
+{
+  "title": "Spiritus Gauge",
+  "description": [
+    "While the Spiritus Aura Gauge rests in your inventory, it projects a spectral reading onto your vision. From top to bottom the bars measure Raw, Ruina, Invictus, Nihilum, and Vindicta. Hold sneak for a precise numerical reading (0 to 100 per Aspect)."
+  ],
+  "icon": "neovitae:spiritus_gauge",
+  "x": 45.5,
+  "y": 9,
+  "deps": {
+    "all": [
+      "magic_step_iii/crystallarium_maleficum"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spiritus_gauge",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

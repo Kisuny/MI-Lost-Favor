@@ -1,0 +1,25 @@
+{
+  "title": "Array Repulsion",
+  "description": [
+    "An invisible ward that pushes hostile creatures away in a 5-block radius. Crafted from iron and lapis, accessible to apprentices."
+  ],
+  "icon": "neovitae:array_repulsion",
+  "x": 26.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "magic_step_iii/defensive_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_repulsion",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

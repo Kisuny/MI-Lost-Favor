@@ -1,0 +1,18 @@
+{
+  "title": "Foundry Block",
+  "icon": "oritech:foundry_block",
+  "x": 13.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/plastic_sheet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:foundry_block",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

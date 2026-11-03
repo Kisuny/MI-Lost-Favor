@@ -1,0 +1,24 @@
+{
+  "title": "Aqueduct Fertilizer",
+  "icon": "ytech:aqueduct_fertilizer",
+  "x": 17,
+  "y": 23,
+  "deps": {
+    "all": [
+      "first_steps/aqueduct_hydrator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:aqueduct_fertilizer",
+      "type": "item"
+    },
+    {
+      "block": "ytech:aqueduct_fertilizer",
+      "type": "observe",
+      "icon": "ytech:aqueduct_fertilizer"
+    }
+  ],
+  "complete": "any",
+  "shape": "pentagon"
+}

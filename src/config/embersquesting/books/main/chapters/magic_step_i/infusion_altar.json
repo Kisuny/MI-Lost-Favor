@@ -1,0 +1,40 @@
+{
+  "title": "Infusion Altar",
+  "description": [
+    "The <keyword>Runic Matrix</keyword> is the core of the <magic>Infusion Altar</magic>. Build the structure from the <named>Infusion</named> entry and use <keyword>Salis Mundus</keyword> on it to form the pillars.",
+    "",
+    "The item to infuse goes on the central pedestal, the ingredients on <keyword>Arcane Pedestals</keyword> around it. Keep the altar <shake amplitude=0.4 frequency=1.3><warning>symmetrical</warning></shake> - instability can go very wrong.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Руническая матрица</keyword> - ядро <magic>алтаря инфузии</magic>. Построй структуру из записи <named>Инфузия</named> и примени к ней <keyword>Salis Mundus</keyword>, чтобы появились колонны.",
+    "",
+    "Предмет для инфузии кладётся на центральный пьедестал, ингредиенты - на <keyword>магические пьедесталы</keyword> вокруг. Держи алтарь <shake amplitude=0.4 frequency=1.3><warning>симметричным</warning></shake> - нестабильность может закончиться очень плохо."
+  ],
+  "icon": "thaumaturge:infusion_matrix",
+  "x": 56.5,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "magic_step_i/smelter_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:infusion_matrix",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:pedestal_arcane",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:stone_arcane",
+      "count": 8,
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 2.0
+}

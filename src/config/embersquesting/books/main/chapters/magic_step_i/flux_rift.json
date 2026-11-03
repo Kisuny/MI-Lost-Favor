@@ -1,0 +1,46 @@
+{
+  "title": "Flux Rift",
+  "description": [
+    "The next step into <curse>forbidden knowledge</curse> lies beyond a <curse><glitch frequency=0.7 shiftChance=0.06>tear in reality</glitch></curse>. When <poison>flux</poison> in a chunk climbs above roughly <property>three quarters</property> of its aura, a <keyword>Flux Rift</keyword> may open there.",
+    "",
+    "So you have to <warning>pollute an area on purpose</warning>: careless work with essentia does it fast - for example a basic <keyword>Essentia Smeltery</keyword> without venting ports turns part of the essentia into flux. Do it <warning>away from your base</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "A rift <wave>feeds on flux</wave> and grows, slowly loses stability and from time to time releases a burst of chaos - <poison>wisps, taint seeds</poison> and worse. Its edges <blood>hurt</blood> on touch.",
+    "",
+    "Find one and <positive><pulse>scan it with your Thaumometer</pulse></positive> - just looking is not enough: the scan is what moves your research forward (it unlocks the <named>Flux</named> and <named>Flux Rift</named> entries) and completes this quest. The real prize is inside: when a rift <shake amplitude=0.4 frequency=1.5>collapses</shake>, it leaves <curse>Void Seeds</curse> behind.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Следующий шаг к <curse>запретному знанию</curse> лежит за <curse><glitch frequency=0.7 shiftChance=0.06>прорехой в реальности</glitch></curse>. Когда <poison>искажение</poison> в чанке поднимается выше примерно <property>трёх четвертей</property> его ауры, там может открыться <keyword>разлом искажения</keyword>.",
+    "",
+    "Значит, нужно <warning>намеренно загрязнить местность</warning>: небрежная работа с эссенцией делает это быстро - например, простая <keyword>плавильня эссенции</keyword> без вентиляционных портов превращает часть эссенции в искажение. Делай это <warning>подальше от базы</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Разлом <wave>питается искажением</wave> и растёт, постепенно теряет стабильность и время от времени выплёскивает хаос - <poison>виспов, семена Порчи</poison> и кое-что похуже. Края разлома <blood>ранят</blood> при касании.",
+    "",
+    "Найди разлом и <positive><pulse>просканируй его Таумометром</pulse></positive> - просто посмотреть мало: именно скан продвигает исследования (открывает записи <named>Искажение</named> и <named>Разлом искажения</named>) и выполняет этот квест. Настоящая награда внутри: когда разлом <shake amplitude=0.4 frequency=1.5>схлопывается</shake>, он оставляет <curse>семена пустоты</curse>."
+  ],
+  "icon": "thaumaturge:textures/research/r_fluxrift.png",
+  "x": 43.5,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "magic_step_i/smelter_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "milf:thaumaturge/flux_rift",
+      "type": "custom",
+      "title": "Scan a Flux Rift with the Thaumometer",
+      "icon": "thaumaturge:textures/research/r_fluxrift.png"
+    }
+  ],
+  "shape": "circle"
+}

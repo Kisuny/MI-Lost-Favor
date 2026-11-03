@@ -1,0 +1,22 @@
+{
+  "title": "Dragonbone Chunk",
+  "description": [
+    "Crack the bone!"
+  ],
+  "icon": "spectrum:dragonbone_chunk",
+  "x": 63.5,
+  "y": 32.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/incandescent_amalgam"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:dragonbone_chunk",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

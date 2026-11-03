@@ -1,0 +1,26 @@
+{
+  "title": "Manipulation Turret",
+  "description": [
+    "The <keyword>Manipulation Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, <turbulence amplitude=0.4 frequency=1.5>confusing</turbulence> them so they may attack each other.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Manipulation Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам, <turbulence amplitude=0.4 frequency=1.5>сбивая их с толку</turbulence> так, что они начинают атаковать друг друга."
+  ],
+  "icon": "ars_elemental:manipulation_turret",
+  "x": 112.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spell_turret"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:manipulation_turret",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

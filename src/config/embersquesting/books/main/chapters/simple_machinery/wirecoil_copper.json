@@ -1,0 +1,19 @@
+{
+  "title": "Wirecoil Copper",
+  "icon": "immersiveengineering:wirecoil_copper",
+  "x": 15,
+  "y": 28,
+  "deps": {
+    "any": [
+      "bronze_age/copper_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:wirecoil_copper",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "lines_in": "hover"
+}

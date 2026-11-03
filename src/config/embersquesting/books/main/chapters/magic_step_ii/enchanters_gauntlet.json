@@ -1,0 +1,26 @@
+{
+  "title": "Enchanters Gauntlet",
+  "description": [
+    "The <keyword>Enchanter's Gauntlet</keyword> is a spellcasting multi-tool that can also mine at diamond-tool hardness. It always casts <property>Touch</property> and must be inscribed at the Scribe's Table with a formless spell - spells cast with it get a source discount.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Перчатка зачарователя</keyword> - универсальный инструмент для заклинаний, который также копает на уровне алмазного инструмента. Она всегда накладывает <property>Touch</property> и должна быть вписана на Столе писца заклинанием без формы - заклинания через неё кастуются со скидкой по сурсу."
+  ],
+  "icon": "ars_nouveau:enchanters_gauntlet",
+  "x": 108,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:enchanters_gauntlet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

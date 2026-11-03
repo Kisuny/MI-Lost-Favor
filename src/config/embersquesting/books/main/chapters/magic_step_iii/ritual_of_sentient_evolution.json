@@ -1,0 +1,26 @@
+{
+  "title": "Ritual of Sentient Evolution",
+  "description": [
+    "Expands a worn Sentient Armor's upgrade capacity beyond its former limits.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Расширяет возможности модернизации Sentient Armor's за пределы прежних ограничений."
+  ],
+  "x": 34.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "magic_step_iii/sentient_armour_set",
+      "magic_step_iii/awakened_activation_crystal"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Ritual of Sentient Evolution"
+    }
+  ],
+  "shape": "diamond"
+}

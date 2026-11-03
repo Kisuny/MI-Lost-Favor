@@ -1,0 +1,26 @@
+{
+  "title": "Basket",
+  "description": [
+    "<named>Bundle</named>'s lil bro, look at it, so <positive>cute</positive> ❤",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Младший брат <named>мешка</named>, посмотрите, какой он <positive>милый</positive> ❤"
+  ],
+  "icon": "ytech:basket",
+  "x": 20.5,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/q681ccf6687c70b0b"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:basket",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

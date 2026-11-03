@@ -1,0 +1,26 @@
+{
+  "title": "Blastproof Helmet",
+  "description": [
+    "Reduces explosion damage by <property>35%</property>. Creepers behind your back are <positive>not so scary anymore</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Снижает урон от взрывов на <property>35%</property>. Криперы за спиной теперь <positive>не так страшны</positive>."
+  ],
+  "icon": "legendary_monsters:blastproof_helmet",
+  "x": 15,
+  "y": 24,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:blastproof_helmet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

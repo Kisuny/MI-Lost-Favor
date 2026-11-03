@@ -1,0 +1,24 @@
+{
+  "title": "Sildrian Seed",
+  "icon": "eidolon_repraised:sildrian_seed",
+  "x": 64.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_ii/athame"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:sildrian_seed",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:jungle_leaves",
+      "type": "observe",
+      "icon": "minecraft:jungle_leaves"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

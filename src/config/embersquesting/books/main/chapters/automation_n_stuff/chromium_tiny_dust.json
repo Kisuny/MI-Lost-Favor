@@ -1,0 +1,19 @@
+{
+  "title": "Chromium Tiny Dust",
+  "icon": "modern_industrialization:chromium_tiny_dust",
+  "x": 22,
+  "y": 4,
+  "deps": {
+    "all": [
+      "automation_n_stuff/electrolyzer",
+      "automation_n_stuff/chromium_hydrochloric_solution_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:chromium_tiny_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

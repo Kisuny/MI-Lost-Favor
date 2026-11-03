@@ -1,0 +1,21 @@
+{
+  "title": "Glass Vial",
+  "description": [
+    ""
+  ],
+  "icon": "toxony:glass_vial",
+  "x": 28,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/toxic_paste"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:glass_vial",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

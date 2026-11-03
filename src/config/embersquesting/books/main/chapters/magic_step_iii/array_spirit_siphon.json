@@ -1,0 +1,25 @@
+{
+  "title": "Array Spirit Siphon",
+  "description": [
+    "Combines Spike's cruelty with a deeper purpose: when a non-player creature steps onto it, the array deals a heart of damage and releases 0.5 units of raw Spiritus into the surrounding chunk. Has a brief cooldown; players are immune. Requires an Tabula Animata."
+  ],
+  "icon": "neovitae:array_spirit_siphon",
+  "x": 24.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/defensive_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_spirit_siphon",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

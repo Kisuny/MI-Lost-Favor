@@ -1,0 +1,30 @@
+{
+  "title": "Bolt Cartridge",
+  "description": [
+    "The Cyclebow can store and fire a sequence of bolts. As such, the order they are fired is determined by when they are placed into the Cyclebow. This trait can make it devastating with different combinations of bolts. However, manually adding each bolt can be cumbersome. It also makes for a terribly unorganized inventory. As a result, I have designed an inexpensive and ingenious method for loading them.",
+    "",
+    "To load bolts into the cartridge, crouch and use it. The cartridge will grab different bolts from your inventory, in the same order arrows would've been when using a bow. It will try to grab bolts from different stacks, but if there aren't enough unique stacks, it will grab the same stacks multiple times. We can then load the Cyclebow like we do bolts. If I wish to get the bolts back, I only need to crouch and use the filled cartridge.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Cyclebow может хранить и выпускать последовательность болтов. Порядок выстрела определяется тем, когда болты помещаются в Cyclebow. Эта особенность позволяет использовать различные комбинации болтов. Однако вручную добавлять каждый болт может быть обременительно. Кроме того, это делает инвентарь ужасно неорганизованным. В результате я разработал недорогой и оригинальный способ их загрузки.",
+    "",
+    "Чтобы зарядить болты в картридж, присядьте и используйте его. картридж будет захватывать различные болты в инвентаре, который определяется так же, как и стрелы при использовании лука. Он будет пытаться захватить болты из разных стаков. Если уникальных стаков недостаточно, он будет хватать одинаковые стаки. Затем мы можем загрузить Cyclebow, как и болты. Если я захочу вернуть болты из картриджа, мне нужно будет лишь присесть и использовать заполненный картридж."
+  ],
+  "icon": "toxony:bolt_cartridge",
+  "x": 18.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/bolt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:bolt_cartridge",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

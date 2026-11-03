@@ -1,0 +1,25 @@
+{
+  "title": "Array Spike",
+  "description": [
+    "A cruel ward: any living creature that steps onto it suffers a full heart of damage. Nearly invisible once inscribed, ideal for defending passages or feeding automated arrangements."
+  ],
+  "icon": "neovitae:array_spike",
+  "x": 27.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/defensive_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_spike",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

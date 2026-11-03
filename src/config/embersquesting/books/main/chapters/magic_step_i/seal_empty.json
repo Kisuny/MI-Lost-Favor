@@ -1,0 +1,34 @@
+{
+  "title": "Seal Empty",
+  "description": [
+    "The opposite of <keyword>Store</keyword>: golems <wave>take items out</wave> of the container the seal is attached to and just hold them. Use other seals to tell them what to do with the items next.",
+    "",
+    "A filter decides which items are taken or left alone. Options: <property>cycle through the whitelist</property> and <property>always leave at least 1 item</property>.",
+    "",
+    "Golem: must <warning>not</warning> be <property>Clumsy</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Противоположность <keyword>хранению</keyword>: големы <wave>забирают предметы</wave> из контейнера, на котором стоит печать, и просто держат их. Другими печатями укажи, что делать с ними дальше.",
+    "",
+    "Фильтр решает, какие предметы забирать, а какие не трогать. Опции: <property>перебирать белый список по очереди</property> и <property>всегда оставлять хотя бы 1 предмет</property>.",
+    "",
+    "Голем: <warning>не</warning> должен быть <property>неуклюжим</property> (Clumsy)."
+  ],
+  "icon": "thaumaturge:seal_empty",
+  "x": 47,
+  "y": 3,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_fill"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_empty",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

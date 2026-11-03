@@ -1,0 +1,38 @@
+{
+  "title": "Brown Sapling",
+  "description": [
+    "<c value=#b0620e>Nothing</c>§r difficult, right? ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#b0620e>Ничего</c>§r сложного, верно? "
+  ],
+  "icon": "spectrum:brown_sapling",
+  "x": 3.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_onyx"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:brown_sapling",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:black_sapling",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:brown_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:black_pigment",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

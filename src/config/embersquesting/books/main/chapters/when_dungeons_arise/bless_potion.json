@@ -1,0 +1,18 @@
+{
+  "title": "Bless Potion",
+  "icon": "enigmaticlegacyplus:bless_potion",
+  "x": 39.5,
+  "y": 12,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/pure_heart"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:bless_potion",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

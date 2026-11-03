@@ -1,0 +1,20 @@
+{
+  "title": "Diamond Wand",
+  "icon": "constructionwand:diamond_wand{\"minecraft:custom_data\":{wand_options:{}}}",
+  "x": 16,
+  "y": 2,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "constructionwand:diamond_wand",
+      "components": "{\"minecraft:custom_data\":{wand_options:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

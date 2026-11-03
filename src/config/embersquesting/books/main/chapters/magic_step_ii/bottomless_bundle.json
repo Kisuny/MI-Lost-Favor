@@ -1,0 +1,26 @@
+{
+  "title": "Bottomless Bundle",
+  "description": [
+    "A <c value=#FEECD6>Bottomless Bundle</c>§r§r allows you to store a §l<c value=#FEECD6>huge</c>§r§r amount of items of a single type, very handy in mines!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#FEECD6>Мешок</c>§r позволяет хранить в себе §l<c value=#FEECD6>огромное</c>§r§r количество предметов одного типа, удобно в шахтах!"
+  ],
+  "icon": "spectrum:bottomless_bundle",
+  "x": 7.5,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_ii/quitoxic_reeds"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:bottomless_bundle",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

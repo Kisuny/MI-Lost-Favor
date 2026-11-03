@@ -1,0 +1,35 @@
+{
+  "title": "Circle Talisman",
+  "description": [
+    "You can <positive>collect</positive> an already drawn ritual by <positive>dropping</positive> the <keyword>talisman and redstone</keyword> into the circle, activating the ritual, and then <positive>placing it anywhere</positive> you want.",
+    "",
+    "Cost: <keyword>2000 ME</keyword> ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вы можете <positive>собрать</positive> уже начерченный ритуал, <positive>выкинув</positive> <keyword>талисман и редстоун</keyword> в круг, активировав ритуал, впоследствии вы можете установить его где угодно.",
+    "",
+    "Стоимость: <keyword>2000 МЭ</keyword>"
+  ],
+  "icon": "enchanted:circle_talisman",
+  "x": 44,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ritual_chalk",
+      "magic_step_i/attuned_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:circle_talisman",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:redstone",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

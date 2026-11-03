@@ -1,0 +1,21 @@
+{
+  "title": "Spinning Wheel",
+  "description": [
+    "The Spinning Wheel is what allows the infusion of mundane Poppets with other materials to create magical Poppets."
+  ],
+  "icon": "enchanted:spinning_wheel",
+  "x": 43,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_i/poppet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:spinning_wheel",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

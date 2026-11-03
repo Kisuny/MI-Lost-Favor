@@ -1,0 +1,18 @@
+{
+  "title": "Ersatz Leather",
+  "icon": "immersiveengineering:ersatz_leather",
+  "x": 14.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "simple_machinery/bottling_machine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:ersatz_leather",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Diffusion Core",
+  "description": [
+    "Modified <keyword>Formation</keyword> and <keyword>Annihilation Cores</keyword>, wrapped in <property>quicksilver</property> so <warning><shake amplitude=0.3 frequency=1.2>corrosive</shake></warning> essentia doesn't eat the circuitry.",
+    "",
+    "<named>Diffusion Core</named> - diffuses essentia and <glitch frequency=0.6 shiftChance=0.05>digitizes</glitch> it.",
+    "<named>Coalescence Core</named> - binds it back into <aqua>raw form</aqua>.",
+    "",
+    "Base components for every essentia bus and terminal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Доработанные <keyword>ядра формирования</keyword> и <keyword>аннигиляции</keyword>, покрытые <property>ртутью</property>, чтобы <warning><shake amplitude=0.3 frequency=1.2>едкая</shake></warning> эссенция не разъела схемы.",
+    "",
+    "<named>Ядро диффузии</named> - рассеивает эссенцию и <glitch frequency=0.6 shiftChance=0.05>оцифровывает</glitch> её.",
+    "<named>Ядро коалесценции</named> - собирает её обратно в <aqua>сырую форму</aqua>.",
+    "",
+    "Базовые компоненты для всех шин и терминалов эссенции."
+  ],
+  "icon": "appliedthaumaturge:diffusion_core",
+  "x": 1,
+  "y": 6,
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:diffusion_core",
+      "type": "item"
+    },
+    {
+      "item": "appliedthaumaturge:coalescence_core",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

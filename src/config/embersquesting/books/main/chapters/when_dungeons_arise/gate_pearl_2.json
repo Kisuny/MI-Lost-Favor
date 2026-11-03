@@ -1,0 +1,20 @@
+{
+  "title": "Gate Pearl",
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"apotheosis:tiered/frontier\"}",
+  "x": 20,
+  "y": 16,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_frontier"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"apotheosis:tiered/frontier\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Turret Basic",
+  "description": [
+    "A crossbow with a <glitch frequency=0.6 shiftChance=0.05>mind of its own</glitch>: it shoots any hostile mob in range. Place it over an upward-facing <keyword>dispenser</keyword> and it will reload itself.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Арбалет со <glitch frequency=0.6 shiftChance=0.05>своим разумом</glitch>: стреляет по любым враждебным мобам в радиусе. Поставь его на <keyword>раздатчик</keyword>, смотрящий вверх, и он будет перезаряжаться сам."
+  ],
+  "icon": "thaumaturge:turret_basic",
+  "x": 49,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_i/arcane_ear",
+      "magic_step_i/mind_clockwork"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:turret_basic",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Syngas Bucket",
+  "icon": "milf:syngas_bucket",
+  "x": 21.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/shale_oil_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:syngas_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Soul Crude Bucket",
+  "description": [
+    "<soul>Soul Crude</soul> is boiled out of <keyword>soul sand</keyword> and logs in a <keyword>Clay Crucible</keyword> heated by a <keyword>Kiln</keyword>, working the bellows all the time.",
+    "",
+    "Mixed with <keyword>Dwarven Oil</keyword> in the Mixer Centrifuge it becomes <keyword>creosote</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<soul>Шлам душ</soul> вываривают из <keyword>песка душ</keyword> и брёвен в <keyword>Clay Crucible</keyword>, поставленном на <keyword>Kiln</keyword>, постоянно раздувая мехи.",
+    "",
+    "Если смешать его с <keyword>Дворфийским маслом</keyword> в Смесительной центрифуге, получится <keyword>креозот</keyword>."
+  ],
+  "icon": "embers:soul_crude_bucket",
+  "x": 32.5,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/soul_sand"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:soul_crude_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

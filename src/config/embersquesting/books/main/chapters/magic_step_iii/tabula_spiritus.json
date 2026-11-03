@@ -1,0 +1,21 @@
+{
+  "title": "Tabula Spiritus",
+  "description": [
+    "Tier III crafting substrate. Costs <keyword>15,000 EV</keyword>. Required for the <property>Ritual Diviner \\[Dusk\\]</property> and high-tier <magic>vitaemantic</magic> instruments."
+  ],
+  "icon": "neovitae:tabula_spiritus",
+  "x": 42,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_iii/tier_iii_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:tabula_spiritus",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

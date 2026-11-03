@@ -1,0 +1,21 @@
+{
+  "title": "Stone Altar",
+  "description": [
+    "The improved Wooden Altar."
+  ],
+  "icon": "eidolon_repraised:stone_altar",
+  "x": 71,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:stone_altar",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

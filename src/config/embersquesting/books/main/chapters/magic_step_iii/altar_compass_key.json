@@ -1,0 +1,26 @@
+{
+  "title": "Altar Compass Key",
+  "description": [
+    "<named>Compass</named> will help you find the right structure!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Compass</named> поможет вам найти нужную структуру!"
+  ],
+  "icon": "netherman:altar_compass_key",
+  "x": 11,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_iii/q5fbe128c3228af27"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "netherman:altar_compass_key",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

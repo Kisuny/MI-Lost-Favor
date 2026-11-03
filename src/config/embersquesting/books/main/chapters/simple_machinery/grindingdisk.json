@@ -1,0 +1,28 @@
+{
+  "title": "Grindingdisk",
+  "description": [
+    "§lUse this to extract the meteorite and all its contents!§r",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "§lИспользуется для того, чтобы добыть метеорит и всё его содержимое!§r"
+  ],
+  "icon": "immersiveengineering:grindingdisk",
+  "x": 15.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "simple_machinery/buzzsaw",
+      "simple_machinery/bottling_machine",
+      "simple_machinery/phenolic_resin_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:grindingdisk",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Redstone Transceiver",
+  "description": [
+    "By harnessing the powers of <c value=#C7E2E9>onyx</c>§r, you have discovered a way to to create a <c value=#d33b2b>wireless redstone transmitter</c>§r! It has a range of <keyword>12 blocks</keyword> and can be set to <keyword>different frequencies</keyword> by applying <property>pigment</property>. <positive>RMB</positive> to swap between <positive>sending</positive> and <positive>recieving</positive> a signal.",
+    "",
+    "<keyword>P.S.</keyword> To unlock the craft, <positive>improve your old pedestal</positive>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Силами <c value=#C7E2E9>оникса</c>§r вы научились создавать передатчик <c value=#d33b2b>красного камня</c>§r через блоки!",
+    "",
+    "P.S. Для открытия крафта улучшите свой старый пьедестал!"
+  ],
+  "icon": "spectrum:redstone_transceiver",
+  "x": 52,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/onyx_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:redstone_transceiver",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

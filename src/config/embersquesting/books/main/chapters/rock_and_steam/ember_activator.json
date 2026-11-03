@@ -1,0 +1,30 @@
+{
+  "title": "Ember Activator",
+  "description": [
+    "The <keyword>Ember Activator</keyword> finally turns crystals into <flame>usable energy</flame>.",
+    "",
+    "<named>How:</named> feed <keyword>Ember Shards</keyword> or <keyword>Crystals</keyword> into the <property>bottom</property> with a hopper or pipes. With a <shake amplitude=0.3 frequency=1.0>fiery burst</shake>, activated Ember appears in the copper cage on top - pull it out with an <keyword>Ember Emitter</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Активатор эмбера</keyword> наконец превращает кристаллы в <flame>полезную энергию</flame>.",
+    "",
+    "<named>Как:</named> подавайте <keyword>осколки</keyword> или <keyword>кристаллы эмбера</keyword> в его <property>нижнюю часть</property> воронкой или трубами. С <shake amplitude=0.3 frequency=1.0>огненной вспышкой</shake> в медной клетке сверху появится активированный эмбер - забирайте его <keyword>Излучателем эмбера</keyword>."
+  ],
+  "icon": "embers:ember_activator",
+  "x": 5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/ancient_motive_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_activator",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Crafting Workspace",
+  "description": [
+    "One of the most important blocks in the modpack (until you find a way to perform such a human-dependent procedure via machinery *wink*) allows you to <positive>construct blocks</positive> from ingredients in a <keyword>3x3x3 grid</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Один из самых важных блоков в модпаке (пока вы не придумаете, как автоматизировать такую ручную операцию *подмигнул*) позволяет <positive>создавать блоки</positive> из ингредиентов в сетке <keyword>3x3x3</keyword>."
+  ],
+  "icon": "ytech:crafting_workspace",
+  "x": 10,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/grass_twine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:crafting_workspace",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "size": 2.0
+}

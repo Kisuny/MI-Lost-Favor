@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Phantom Bridge",
+  "description": [
+    "Creates floating platforms beneath your feet. Shift + right click to deactivate. Consumes 100EV/s from your Anima reserves."
+  ],
+  "icon": "neovitae:sigil_phantom_bridge",
+  "x": 35,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_phantom_bridge",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

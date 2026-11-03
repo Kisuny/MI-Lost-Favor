@@ -1,0 +1,27 @@
+{
+  "title": "Selling Bin",
+  "description": [
+    "In the <named>Selling Bin</named>, you can <positive>sell</positive> the fish you've caught; the <property>price</property> depends on the fish's size and other fish characteristics.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В <named>Selling Bin</named> можно <positive>продавать</positive> выловленную рыбу, <property>цена</property> зависит от размера рыбы и других характеристик рыбы."
+  ],
+  "icon": "selling_bin:selling_bin",
+  "x": 37.5,
+  "y": 22,
+  "deps": {
+    "all": [
+      "first_steps/starcatcher_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "selling_bin:selling_bin",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

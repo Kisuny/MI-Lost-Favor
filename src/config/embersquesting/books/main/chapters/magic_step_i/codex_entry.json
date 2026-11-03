@@ -1,0 +1,26 @@
+{
+  "title": "Codex Entry",
+  "description": [
+    "This allows you to obtain a random <keyword>Level 1 glyph</keyword>; glyphs cannot be duplicated. Once you have learned all <keyword>Level 1 glyphs</keyword>, you will receive a small amount of <property>experience</property> for each codex.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Позволяет получить случайный <keyword>глиф первого уровня</keyword>, глифы не могут повторяться, как только вы изучите все <keyword>глифы 1 уровня</keyword> вы будете получать немного <property>опыта</property> за кодекс."
+  ],
+  "icon": "ars_additions:codex_entry",
+  "x": 20,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/novice_spell_book"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_additions:codex_entry",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

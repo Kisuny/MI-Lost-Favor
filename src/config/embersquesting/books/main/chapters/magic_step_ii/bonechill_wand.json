@@ -1,0 +1,26 @@
+{
+  "title": "Bonechill Wand",
+  "description": [
+    "The <magic>Bonechill Wand</magic> chills the soul of anything it strikes - the target is gripped by an <curse>icy hold</curse> that prevents all health regeneration, just like the claws of a wraith.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Ледяной посох</magic> замораживает душу того, по кому попадает - цель охватывает <curse>ледяная хватка</curse>, полностью блокирующая восстановление здоровья, точно так же, как когти скитальца."
+  ],
+  "icon": "eidolon_repraised:bonechill_wand",
+  "x": 71,
+  "y": 22,
+  "deps": {
+    "all": [
+      "magic_step_ii/lesser_soul_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:bonechill_wand",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

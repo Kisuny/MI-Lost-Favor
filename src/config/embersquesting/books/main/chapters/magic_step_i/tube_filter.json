@@ -1,0 +1,30 @@
+{
+  "title": "Tube Filter",
+  "description": [
+    "Mark it with a <keyword>label</keyword>, a <keyword>phial</keyword> or another item that shows a single essentia type, and only that essentia will <wave>flow through</wave>.",
+    "",
+    "<positive>Shift + RMB</positive> with an empty hand removes the filter.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Пометь её <keyword>этикеткой</keyword>, <keyword>фиалом</keyword> или другим предметом с одним типом эссенции, и через неё <wave>потечёт</wave> только эта эссенция.",
+    "",
+    "<positive>Shift + ПКМ</positive> пустой рукой снимает фильтр."
+  ],
+  "icon": "thaumaturge:tube_filter",
+  "x": 47.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tube_filter",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

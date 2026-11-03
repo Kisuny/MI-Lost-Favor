@@ -1,0 +1,23 @@
+{
+  "title": "Sulfuric Naphtha Bucket",
+  "icon": "modern_industrialization:sulfuric_naphtha_bucket",
+  "x": 16,
+  "y": 22.5,
+  "deps": {
+    "any": [
+      "petrochemical_party_pp/distillation_tower",
+      "petrochemical_party_pp/sulfuric_light_fuel_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:sulfuric_naphtha_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

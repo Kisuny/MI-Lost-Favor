@@ -1,0 +1,25 @@
+{
+  "title": "Soaring Skies",
+  "description": [
+    "<positive>Bestows true flight</positive> upon all within the <magic>circle</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "даёт настоящий <positive>полёт</positive> всем в <magic>круге</magic>"
+  ],
+  "x": 61.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "magic_step_iii/awakened_activation_crystal"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Soaring Skies"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Pattern Encoding Terminal",
+  "icon": "ae2:pattern_encoding_terminal",
+  "x": 14.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/formation_core",
+      "petrochemical_party_pp/crafting_unit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:pattern_encoding_terminal",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

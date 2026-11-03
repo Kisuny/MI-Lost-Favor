@@ -1,0 +1,15 @@
+{
+  "title": "Antidote Vessel",
+  "icon": "artifacts:antidote_vessel{\"relics:data\":{abilities:{abilities:{antidote:{lock:{breaks:5},points:0,stats:{duration_reduction:{initialQuality:2},immunity_duration:{initialQuality:9},resistance_per_effect:{initialQuality:3}}}},synergies:{}},leveling:{},statistic:{}}}",
+  "x": 3,
+  "y": 30,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "artifacts:antidote_vessel",
+      "components": "{\"relics:data\":{abilities:{abilities:{antidote:{lock:{breaks:5},points:0,stats:{duration_reduction:{initialQuality:2},immunity_duration:{initialQuality:9},resistance_per_effect:{initialQuality:3}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

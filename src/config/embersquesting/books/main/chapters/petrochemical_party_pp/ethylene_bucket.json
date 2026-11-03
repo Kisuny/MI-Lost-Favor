@@ -1,0 +1,24 @@
+{
+  "title": "Ethylene Bucket",
+  "icon": "modern_industrialization:ethylene_bucket",
+  "x": 16,
+  "y": 28,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/steam_cracker",
+      "petrochemical_party_pp/steam_cracker_3",
+      "petrochemical_party_pp/steam_cracker_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:ethylene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "hexagon"
+}

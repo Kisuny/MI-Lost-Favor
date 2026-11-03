@@ -1,0 +1,33 @@
+{
+  "title": "Table Core",
+  "description": [
+    "Don't forget to read the <keyword>guidebook</keyword> and check out the <keyword>advancements</keyword> - all of <named>Spectrum's</named> progress is tied to these two sources of information!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Не забывайте читать <keyword>гайдбук</keyword> и <keyword>достижения</keyword>, весь прогресс <named>Spectrum</named> завязан на двух этих источниках информации!"
+  ],
+  "icon": "milf:table_core",
+  "x": 15.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/runic_charge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:table_core",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "spectrum:guidebook",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

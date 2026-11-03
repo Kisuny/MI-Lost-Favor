@@ -1,0 +1,31 @@
+{
+  "title": "Basic Chunk Loader",
+  "description": [
+    "A single player can have up to <keyword>9 active chunk loaders</keyword> ",
+    "",
+    "If you haven't logged into the server for <keyword>7 days</keyword>, the <keyword>chunk loader</keyword> will <warning>stop working</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Один игрок может иметь <keyword>9 активных загрузчиков чанков</keyword> ",
+    "",
+    "Если спустя <keyword>7 дней</keyword> вы не заходили на сервер - <keyword>чанк лоудер</keyword> <warning>перестанет работать</warning>."
+  ],
+  "icon": "chunkloaders:basic_chunk_loader",
+  "x": 22,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_i/attuned_stone_charged",
+      "automation_n_stuff/assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "chunkloaders:basic_chunk_loader",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

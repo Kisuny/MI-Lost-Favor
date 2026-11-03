@@ -1,0 +1,28 @@
+{
+  "title": "Annotated Codex",
+  "description": [
+    "Allows you to share <property>knowledge of glyphs</property> in exchange for <keyword>experience</keyword>",
+    "",
+    "The more <property>glyphs</property> there are, the more <keyword>experience</keyword> is required to share them.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Позволяет передавать <property>знания о глифах</property> за <keyword>опыт</keyword>, чем больше глифов - тем более опыта потребуется для передачи."
+  ],
+  "icon": "ars_nouveau:annotated_codex",
+  "x": 21.5,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/codex_entry"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:annotated_codex",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

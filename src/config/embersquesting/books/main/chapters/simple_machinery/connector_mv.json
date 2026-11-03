@@ -1,0 +1,18 @@
+{
+  "title": "Connector Mv",
+  "icon": "immersiveengineering:connector_mv",
+  "x": 12.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "simple_machinery/wirecoil_electrum"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:connector_mv",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

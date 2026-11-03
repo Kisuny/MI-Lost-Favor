@@ -1,0 +1,22 @@
+{
+  "title": "Hydrogen Bucket",
+  "icon": "modern_industrialization:hydrogen_bucket",
+  "x": 11.5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/steam_cracker_3"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:hydrogen_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

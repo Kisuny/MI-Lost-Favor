@@ -1,0 +1,29 @@
+{
+  "title": "treecapitator",
+  "description": [
+    " <item id=ars_nouveau:glyph_touch tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_fell tooltip=true/>",
+    "",
+    "<positive>Allows</positive> you to fell most of the <keyword>wood</keyword> or <keyword>leaves</keyword> from trees",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_fell tooltip=true/>",
+    "",
+    "<positive>Позволяет</positive> срубать большинство <keyword>древесины</keyword> или <keyword>листвы</keyword> с деревьев"
+  ],
+  "icon": "ars_nouveau:glyph_fell",
+  "x": 23.5,
+  "y": 53.5,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

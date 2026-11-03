@@ -1,0 +1,22 @@
+{
+  "title": "Compromise Ring",
+  "icon": "gaze:compromise_ring",
+  "x": 81,
+  "y": 8,
+  "deps": {
+    "all": [
+      "magic_step_ii/ornate_ring",
+      "magic_step_ii/fused_consciousness",
+      "magic_step_ii/umbral_spirit",
+      "magic_step_ii/malignant_lead"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "gaze:compromise_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

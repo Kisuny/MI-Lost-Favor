@@ -1,0 +1,26 @@
+{
+  "title": "Potato",
+  "icon": "minecraft:potato",
+  "x": 18,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "simple_machinery/potato_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:potato",
+      "count": 256,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:deco_garden_gnome",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

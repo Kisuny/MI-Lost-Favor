@@ -1,0 +1,35 @@
+{
+  "title": "",
+  "description": [
+    "Your first <flame>molten metal</flame>! It can be pumped out of the melter into a <keyword>Stamp Base</keyword>, a tank or a <keyword>Mixer Centrifuge</keyword>.",
+    "",
+    "Each dust gives <property>60 mB</property>. Want more? Later a <keyword>Geologic Separator</keyword> will add a <positive>bonus metal</positive> on top.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ваш первый <flame>расплавленный металл</flame>! Его можно откачать из печи в <keyword>Депо штамповочного пресса</keyword>, бак или <keyword>Смесительную центрифугу</keyword>.",
+    "",
+    "Каждая пыль даёт <property>60 mB</property>. Хотите больше? Позже <keyword>Геологический сепаратор</keyword> добавит сверху <positive>бонусный металл</positive>."
+  ],
+  "icon": "embers:textures/block/fluid/molten_iron_still.png",
+  "x": 5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/melter"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    },
+    {
+      "fluid": "embers:molten_iron",
+      "mode": "consume",
+      "type": "fluid"
+    }
+  ],
+  "complete": "any",
+  "shape": "square"
+}

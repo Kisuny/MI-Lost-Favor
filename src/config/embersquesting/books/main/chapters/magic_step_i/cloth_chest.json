@@ -1,0 +1,34 @@
+{
+  "title": "Cloth Chest",
+  "description": [
+    "Your first experiments produce <keyword>Enchanted Fabric</keyword> - the <keyword>Apprentice's Robes</keyword> made from it lower the vis cost of your work.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Первые опыты дают <keyword>зачарованную ткань</keyword> - <keyword>мантия ученика</keyword> из неё снижает затраты vis на твою работу."
+  ],
+  "icon": "thaumaturge:cloth_chest",
+  "x": 52.5,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_i/research_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:cloth_chest",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:cloth_legs",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:cloth_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Target Dummy",
+  "icon": "dummmmmmy:target_dummy",
+  "x": 33,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "first_steps/lead_saw"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "dummmmmmy:target_dummy",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:bag_book",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

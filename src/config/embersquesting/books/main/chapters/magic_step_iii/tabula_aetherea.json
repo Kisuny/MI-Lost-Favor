@@ -1,0 +1,21 @@
+{
+  "title": "Tabula Aetherea",
+  "description": [
+    "Tier IV crafting substrate. Costs <keyword>30,000 EV</keyword>. The highest crafting tablet, required for Tier V altar construction components."
+  ],
+  "icon": "neovitae:tabula_aetherea",
+  "x": 63,
+  "y": 14,
+  "deps": {
+    "all": [
+      "magic_step_iii/dominus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:tabula_aetherea",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

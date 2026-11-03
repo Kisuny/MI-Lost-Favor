@@ -1,0 +1,68 @@
+{
+  "title": "",
+  "description": [
+    "<warning><shake amplitude=0.35 frequency=1.2><b>If you put this ring on, you won't be able to take it off later!</b></shake></warning>",
+    "",
+    "Seven <blood><glitch frequency=0.7 shiftChance=0.06>curses</glitch></blood> will befall whoever bears it - double damage from any source, aggressive neutral creatures, weakened armor, reduced damage to monsters, eternal burning, torn soul on death and incurable insomnia. BE SURE to familiarize yourself with them before putting on the ring!",
+    "",
+    "Seven <positive><pulse base=0.6 amplitude=1.0>blessings</pulse></positive> will reward those who withstand - bonus Looting and Fortune levels, +300% experience, +10 Enchanting Power, unique creature drops, the functionality of the Ring of Ender, and the ability to craft and use <magic>unique relics</magic> unobtainable any other way!",
+    "",
+    "To unlock new crafts, a player must spend <magic>99.5%</magic> of their <warning><shake amplitude=0.3 frequency=1.0>TOTAL</shake></warning> time in the world under a <blood>curse</blood>. Keep in mind that the longer you go without wearing the ring, the longer you’ll have to spend in the world with it.",
+    "",
+    "You'll find a way to deal with most of the <curse>curses</curse> in the future!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<warning><shake amplitude=0.35 frequency=1.2><b>Если вы наденете это кольцо то вы не сможете снять его в будущем!</b></shake></warning>",
+    "",
+    "Семь <blood><glitch frequency=0.7 shiftChance=0.06>проклятий</glitch></blood> обрушатся на того, кто наденет его - двойной урон от любого источника, агрессия нейтральных существ, ослабленная броня, сниженный урон по монстрам, вечное горение в огне, разрыв души при смерти и неизлечимая бессонница. ОЗНАКОМЬТЕСЬ с ними до того, как НАДЕВАТЬ кольцо!",
+    "",
+    "Семь <positive><pulse base=0.6 amplitude=1.0>благословений</pulse></positive> наградят выстоявшего - бонусные уровни Добычи и Удачи, +300% опыта, +10 силы зачарования, уникальный дроп с некоторых существ, функционал Кольца Эндера, а так же возможность создавать и использовать <magic>уникальные реликвии</magic>, недоступные никаким иным способом!",
+    "",
+    "Чтобы открыть новые крафты игроку необходимо <magic>99.5%</magic> своего <warning><shake amplitude=0.3 frequency=1.0>ОБЩЕГО</shake></warning> времени в мире быть <blood>проклятым</blood>, имейте ввиду, чем дольше вы не надеваете кольцо, тем дольше вам придется существовать в мире с ним.",
+    "",
+    "На большинство <curse>проклятий</curse> в будущем вы найдете управу!"
+  ],
+  "icon": "enigmaticlegacyplus:cursed_ring",
+  "x": -3.5,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/glitch_hello_world"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "enigmaticlegacyplus:cursed_ring",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:unwitnessed_amulet",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:the_acknowledgment",
+      "type": "item"
+    },
+    {
+      "title": "Amulet Trinket Slot",
+      "id": "milf:trinket/amulet_first_steps",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "title": "Ring Trinket Slot",
+      "id": "milf:trinket/ring_first_steps",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

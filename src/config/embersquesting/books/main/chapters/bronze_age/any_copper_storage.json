@@ -1,0 +1,27 @@
+{
+  "title": "Any Copper Storage",
+  "x": 25.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "bronze_age/any_basic_wooden_storage"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "milf:copper_storage",
+      "type": "item",
+      "title": "Any Copper Storage"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "sophisticatedstorage:copper_chest",
+      "count": 3,
+      "components": "{\"sophisticatedstorage:wood_type\":\"mangrove\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Cloche",
+  "icon": "immersiveengineering:cloche",
+  "x": 18.5,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "simple_machinery/light_engineering"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:cloche",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "minecraft:potato",
+      "count": 7,
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "minecraft:sugar_cane",
+      "count": 13,
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

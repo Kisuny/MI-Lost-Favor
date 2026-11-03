@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Frost",
+  "description": [
+    "Freezes the water you walk over. Permanently. Drains 100EV every 5 seconds from your Anima reserves."
+  ],
+  "icon": "neovitae:sigil_frost",
+  "x": 35,
+  "y": 1.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_frost",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Iron Plate",
+  "icon": "modern_industrialization:iron_plate",
+  "x": 6.5,
+  "y": 1,
+  "deps": {
+    "all": [
+      "rock_and_steam/forge_hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:iron_plate",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

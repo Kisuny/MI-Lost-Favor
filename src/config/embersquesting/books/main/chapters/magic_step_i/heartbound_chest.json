@@ -1,0 +1,26 @@
+{
+  "title": "Heartbound Chest",
+  "description": [
+    "<c value=#9BB8ED>This chest</c>§r is literally a safe, only the person who placed it down can open it. Incredible <c value=#C6BCE9>magic</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#9BB8ED>Этот сундук</c>§r - буквально сейф, кто поставил, тот открыть его и сможет, невероятная <c value=#C6BCE9>магия</c>§r!"
+  ],
+  "icon": "spectrum:heartbound_chest",
+  "x": 23.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:heartbound_chest",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

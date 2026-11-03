@@ -1,0 +1,30 @@
+{
+  "title": "Seal Butcher",
+  "description": [
+    "A Guard seal tuned for <nature>animal farming</nature>: it targets only <property>adult animals</property> and always leaves at least <positive>one breeding pair</positive> alive.",
+    "",
+    "Golem: <blood>Fighter</blood> and <magic>Smart</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Печать охраны, настроенная для <nature>животноводства</nature>: атакует только <property>взрослых животных</property> и всегда оставляет в живых хотя бы <positive>одну пару для размножения</positive>.",
+    "",
+    "Голем: <blood>боец</blood> (Fighter) и <magic>умный</magic> (Smart)."
+  ],
+  "icon": "thaumaturge:seal_butcher",
+  "x": 54.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_guard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_butcher",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

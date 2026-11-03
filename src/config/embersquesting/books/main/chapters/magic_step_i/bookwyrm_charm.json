@@ -1,0 +1,27 @@
+{
+  "title": "Bookwyrm Charm",
+  "description": [
+    "Augment a Ritual of Awakening with a Book and Quill to create a Bookwyrm Charm. Use it on a Storage Lectern to give it a new home while it works as your own personal warehouse manager."
+  ],
+  "icon": "ars_nouveau:bookwyrm_charm",
+  "x": 21,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ritual_awakening",
+      "magic_step_i/dominion_wand"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:bookwyrm_charm",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:writable_book",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

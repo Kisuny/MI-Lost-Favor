@@ -1,0 +1,20 @@
+{
+  "title": "Calculation Processor",
+  "icon": "ae2:calculation_processor",
+  "x": 18.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/printed_calculation_processor",
+      "petrochemical_party_pp/op_amp",
+      "petrochemical_party_pp/storage_disk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:calculation_processor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Gadget Cut Paste",
+  "description": [
+    "Move a build to a new place instead of copying it. Select the area, use <keyword>Cut</keyword> to store it in the gadget, then <keyword>Paste</keyword> to place it later. It also keeps block entity data, including chest contents, but it has no undo",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Переносит постройку в новое место вместо обычного копирования. Выдели область, используй <keyword>Cut</keyword>, чтобы сохранить ее в гаджете, потом <keyword>Paste</keyword> для установки. Он сохраняет данные block entities, включая содержимое сундуков, но отмены нет"
+  ],
+  "icon": "buildinggadgets2:gadget_cut_paste{\"buildinggadgets2:copy_start_pos\":[I;107,88,27],\"buildinggadgets2:paste_replace_toggle\":1b}",
+  "x": 14.5,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/cutting_card"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "buildinggadgets2:gadget_cut_paste",
+      "components": "{\"buildinggadgets2:copy_start_pos\":[I;107,88,27],\"buildinggadgets2:paste_replace_toggle\":1b}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

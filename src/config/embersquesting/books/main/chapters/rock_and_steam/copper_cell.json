@@ -1,0 +1,32 @@
+{
+  "title": "Copper Cell",
+  "description": [
+    "The <keyword>Copper Cell</keyword> does one thing: <positive>stores Ember</positive>. Fill it through an <keyword>Ember Receptor</keyword> and drain it with an <keyword>Ember Emitter</keyword>.",
+    "",
+    "A broken cell <positive>keeps its stored Ember</positive>, so you can move it around freely.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Медный аккумулятор</keyword> делает одно: <positive>хранит эмбер</positive>. Заполняйте его через <keyword>Приёмник эмбера</keyword> и забирайте эмбер <keyword>Излучателем эмбера</keyword>.",
+    "",
+    "Сломанный аккумулятор <positive>сохраняет запасённый эмбер</positive>, так что его можно спокойно переносить."
+  ],
+  "icon": "embers:copper_cell{\"minecraft:custom_data\":{ForgeCaps:{\"embers:ember\":0.0d,\"embers:ember_capacity\":24000.0d}}}",
+  "x": 4,
+  "y": 11,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_activator"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "embers:copper_cell",
+      "components": "{\"minecraft:custom_data\":{ForgeCaps:{\"embers:ember\":0.0d,\"embers:ember_capacity\":24000.0d}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

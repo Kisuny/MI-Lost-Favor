@@ -1,0 +1,27 @@
+{
+  "title": "Belt Of The Starved",
+  "description": [
+    "Spirit Arcana can carry impurities of hunger and lust, catalyzed into <curse>Gluttony</curse> - a stacking amplifier for magic damage. The <keyword>Belt of the Starved</keyword> grants this effect whenever you eat <curse>rotten food</curse>, but be warned: it also <warning>drains your hunger faster</warning> in return.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<warning>Духи</warning> иногда несут в себе примеси голода и похоти, которые катализируются в <curse>Обжорство (Gluttony)</curse> - накапливаемый усилитель магического урона. <keyword>Belt of the Starved</keyword> даёт этот эффект каждый раз, когда вы едите <curse>гнилую еду</curse>, но учтите: он также <warning>быстрее осушает ваш голод</warning> взамен."
+  ],
+  "icon": "malum:belt_of_the_starved",
+  "x": 84.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_belt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:belt_of_the_starved",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

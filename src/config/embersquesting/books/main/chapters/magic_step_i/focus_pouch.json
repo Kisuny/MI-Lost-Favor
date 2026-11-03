@@ -1,0 +1,30 @@
+{
+  "title": "Focus Pouch",
+  "description": [
+    "Carrying a whole collection of foci gets annoying fast. The <keyword>Focus Pouch</keyword> keeps them all in one place.",
+    "",
+    "When you <property>swap the focus</property> on your wand, it looks in the pouch first, and the removed focus goes <bounce amplitude=1.5 frequency=1.2 phase=1.0>straight back in</bounce>. <positive>RMB</positive> the pouch to put foci in or take them out by hand. It also fits into the <keyword>belt</keyword> curio slot.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Таскать с собой целую коллекцию фокусов быстро надоедает. <keyword>Сумка для фокусов</keyword> держит их все в одном месте.",
+    "",
+    "Когда ты <property>меняешь фокус</property> на жезле, он сначала ищется в сумке, а снятый фокус <bounce amplitude=1.5 frequency=1.2 phase=1.0>сразу отправляется туда же</bounce>. <positive>ПКМ</positive> по сумке позволяет класть и доставать фокусы вручную. Её можно носить в слоте аксессуара <keyword>для пояса</keyword>."
+  ],
+  "icon": "thaumaturge:focus_pouch",
+  "x": 55.5,
+  "y": 32,
+  "deps": {
+    "all": [
+      "magic_step_i/focus_1"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:focus_pouch",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

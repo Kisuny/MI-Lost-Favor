@@ -1,0 +1,19 @@
+{
+  "title": "Processing Unit",
+  "icon": "modern_industrialization:processing_unit",
+  "x": 13.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "aluminum/random_access_memory",
+      "aluminum/memory_management_unit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:processing_unit",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

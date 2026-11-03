@@ -1,0 +1,22 @@
+{
+  "title": "Step 3",
+  "icon": "minecraft:oak_log",
+  "x": 3.5,
+  "y": -2,
+  "deps": {
+    "all": [
+      "linear_chain/step_2"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "rewards": [
+    {
+      "points": 5,
+      "type": "xp"
+    }
+  ]
+}

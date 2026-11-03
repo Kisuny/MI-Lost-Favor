@@ -1,0 +1,30 @@
+{
+  "title": "Distillery",
+  "description": [
+    "The <keyword>distillery</keyword> allows witches to <positive>separate materials</positive> into their components by utilising differences in boiling and condensing points.",
+    "",
+    "Processing <warning>consumes altar power</warning>, so the <keyword>distillery</keyword> must be placed accordingly.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Дистиллятор</keyword> позволяет ведьмам <positive>разделять материалы</positive> на составляющие, используя разницу в точках кипения и конденсации.",
+    "",
+    "Переработка <warning>потребляет энергию алтаря</warning>, поэтому <keyword>дистиллятор</keyword> должен быть расположен соответствующим образом."
+  ],
+  "icon": "enchanted:distillery",
+  "x": 40,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_i/attuned_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:distillery",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

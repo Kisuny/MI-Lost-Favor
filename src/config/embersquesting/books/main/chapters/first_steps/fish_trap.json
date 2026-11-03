@@ -1,0 +1,19 @@
+{
+  "title": "Fish Trap",
+  "icon": "mi_tweaks:fish_trap",
+  "x": 17,
+  "y": 1,
+  "deps": {
+    "all": [
+      "first_steps/fish_net"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "mi_tweaks:fish_trap",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 1.5
+}

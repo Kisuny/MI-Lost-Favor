@@ -1,0 +1,23 @@
+{
+  "title": "Energy Cell",
+  "icon": "ae2:energy_cell",
+  "x": 23.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "automation_n_stuff/mysterious_disk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:energy_cell",
+      "type": "item"
+    },
+    {
+      "item": "ae2:dense_energy_cell",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

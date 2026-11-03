@@ -1,0 +1,40 @@
+{
+  "title": "Devices Pouch",
+  "description": [
+    "A pouch for your coins",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Мешок для ваших монет"
+  ],
+  "icon": "devices:devices_pouch{\"devices:pouch_data\":{AutoExchange:1b,BonusSlots:0,Items:[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}}",
+  "x": 5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mixing_cauldron"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "devices:devices_pouch",
+      "components": "{\"devices:pouch_data\":{AutoExchange:1b,BonusSlots:0,Items:[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}}",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Pouch Trinket slot",
+      "id": "milf:trinket/pouch_devices_pouch",
+      "type": "custom"
+    },
+    {
+      "title": "Radial Menu Button",
+      "id": "milf:radial/money_pouch",
+      "type": "custom"
+    }
+  ],
+  "shape": "heart"
+}

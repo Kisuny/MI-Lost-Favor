@@ -1,0 +1,22 @@
+{
+  "title": "Wireless Terminal",
+  "description": [
+    "One of the most useful items in any situation. You can configure it via the button to the <keyword>top right</keyword> of your character so it will <positive>refill</positive> whatever block you're holding straight from your <keyword>system</keyword> as well as search through your system to pick blocks via the <keyword>middle mouse button</keyword>"
+  ],
+  "icon": "ae2:wireless_terminal",
+  "x": 20,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "aluminum/wireless_access_point",
+      "aluminum/wireless_tool"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:wireless_terminal",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

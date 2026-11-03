@@ -1,0 +1,23 @@
+{
+  "title": "Dominion Wand",
+  "description": [
+    "Linking tool",
+    "The Dominion Wand lets you say targets for the various Ars Nouveau blocks. It can designate homes for Amethyst Golems, storage chests for Storage Lecterns, and targets for Spell Turrets."
+  ],
+  "icon": "ars_nouveau:dominion_wand",
+  "x": 22.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/dawnstone_ingot",
+      "magic_step_i/ritual_awakening"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:dominion_wand",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

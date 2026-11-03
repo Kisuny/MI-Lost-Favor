@@ -1,0 +1,19 @@
+{
+  "title": "Centrifuge Block",
+  "icon": "oritech:centrifuge_block",
+  "x": 9.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "simple_machinery/machine_extender",
+      "simple_machinery/machine_assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:centrifuge_block",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

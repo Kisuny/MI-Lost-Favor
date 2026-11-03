@@ -1,0 +1,19 @@
+{
+  "title": "Overdrive Module",
+  "icon": "modern_industrialization:overdrive_module",
+  "x": 20,
+  "y": 25,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_ingot",
+      "automation_n_stuff/assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:overdrive_module",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

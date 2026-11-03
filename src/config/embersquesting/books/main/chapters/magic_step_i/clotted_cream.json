@@ -1,0 +1,26 @@
+{
+  "title": "Clotted Cream",
+  "description": [
+    "Clotted Cream removes all <c value=#C6BCE9>effects</c>§r from you, just like milk. Cream can be used as a replacement for milk in recipes, and has some of <c value=#FEECD6>its own</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Сливки позволяют снимать все <c value=#C6BCE9>эффекты</c>§r, как молоко, так же из сливок делается множество <c value=#FEECD6>других блюд</c>§r!"
+  ],
+  "icon": "spectrum:clotted_cream",
+  "x": 40.5,
+  "y": 54,
+  "deps": {
+    "all": [
+      "magic_step_i/titration_barrel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:clotted_cream",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

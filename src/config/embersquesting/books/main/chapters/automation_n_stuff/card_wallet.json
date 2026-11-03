@@ -1,0 +1,26 @@
+{
+  "title": "Card Wallet",
+  "description": [
+    "Holds several <property>Location Cards</property> in one item. The Tempad reads the wallet automatically, which makes it useful for carrying shared locations and grouped travel points.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Хранит несколько <property>Location Card</property> в одном предмете. Tempad читает его автоматически, поэтому в нем удобно носить общие точки и наборы мест для телепорта."
+  ],
+  "icon": "tempad:card_wallet",
+  "x": 6,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/location_card"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "tempad:card_wallet",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

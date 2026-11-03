@@ -1,0 +1,26 @@
+{
+  "title": "Explosion Pedestal",
+  "description": [
+    "Put an <keyword>Explosion Charm</keyword> on this pedestal and it will <positive>protect the area</positive> from explosions on its own, no need to wear it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Положите <keyword>Взрывной амулет</keyword> на этот пьедестал, и он сам будет <positive>защищать округу</positive> от взрывов, носить его не нужно."
+  ],
+  "icon": "embers:explosion_pedestal",
+  "x": 15.5,
+  "y": 33,
+  "deps": {
+    "all": [
+      "rock_and_steam/explosion_charm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:explosion_pedestal",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

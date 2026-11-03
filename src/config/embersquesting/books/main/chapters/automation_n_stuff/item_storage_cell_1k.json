@@ -1,0 +1,20 @@
+{
+  "title": "Item Storage Cell 1k",
+  "icon": "ae2:item_storage_cell_1k",
+  "x": 26.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "automation_n_stuff/item_cell_housing",
+      "automation_n_stuff/cell_component_1k",
+      "automation_n_stuff/drive"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:item_storage_cell_1k",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

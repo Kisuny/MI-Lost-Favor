@@ -1,0 +1,25 @@
+{
+  "title": "Array Growth",
+  "description": [
+    "Coaxes nearby crops and plants to grow faster in a 2-block radius, applying a gentle acceleration each second."
+  ],
+  "icon": "neovitae:array_growth",
+  "x": 42.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/environmental_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_growth",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

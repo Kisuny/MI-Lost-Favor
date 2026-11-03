@@ -1,0 +1,21 @@
+{
+  "title": "Blood Sigil",
+  "description": [
+    "When placed in a Mixing Cauldron, jumping inside of it three times will fill the cauldron with blood."
+  ],
+  "icon": "hexerei:blood_sigil",
+  "x": 31,
+  "y": 35,
+  "deps": {
+    "all": [
+      "magic_step_i/redstone_soup"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:blood_sigil",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

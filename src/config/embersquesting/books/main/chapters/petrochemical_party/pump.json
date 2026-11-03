@@ -1,0 +1,18 @@
+{
+  "title": "Pump",
+  "icon": "modern_industrialization:pump",
+  "x": 22.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:pump",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

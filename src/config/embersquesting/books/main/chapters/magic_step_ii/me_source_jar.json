@@ -1,0 +1,27 @@
+{
+  "title": "Me Source Jar",
+  "description": [
+    "The <keyword>ME Source Jar</keyword> plugs <property>source</property> into your <keyword>ME network</keyword> - it acts as a regular Source Jar that also stores and exposes source over AE2, so ME-side machines can push and pull source just like any other network resource.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>ME Source Jar</keyword> подключает <property>сурс</property> к вашей <keyword>ME сети</keyword> - работает как обычный сурс джар, но при этом хранит и предоставляет сурс через AE2, так что устройства сети могут забирать и отправлять сурс как любой другой ресурс."
+  ],
+  "icon": "arseng:me_source_jar",
+  "x": 103.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanting_apparatus",
+      "automation_n_stuff/interface"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "arseng:me_source_jar",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

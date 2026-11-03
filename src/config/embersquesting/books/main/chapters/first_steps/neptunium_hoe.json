@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Hoe",
+  "icon": "aquaculture:neptunium_hoe",
+  "x": 39.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_hoe",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

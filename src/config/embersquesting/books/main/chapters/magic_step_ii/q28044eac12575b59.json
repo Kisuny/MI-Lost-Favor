@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "description": [
+    "<positive>Grow</positive> the <keyword>Kindling</keyword> and take its feather by pressing <positive>Shift + RMB</positive> with <keyword>Shears</keyword> on the adult.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Вырастите</positive> <keyword>Киндлинга</keyword> и возьмите его перо нажав <positive>Shift + ПКМ</positive> с <keyword>ножницами</keyword> на взрослой особи."
+  ],
+  "x": 67,
+  "y": 33,
+  "deps": {
+    "all": [
+      "magic_step_ii/memory"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:remember_kindling",
+      "type": "advancement"
+    }
+  ],
+  "shape": "square"
+}

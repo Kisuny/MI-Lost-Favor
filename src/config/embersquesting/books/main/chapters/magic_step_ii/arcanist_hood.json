@@ -1,0 +1,30 @@
+{
+  "title": "Arcanist Hood",
+  "icon": "ars_nouveau:arcanist_hood",
+  "x": 123,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/magebloom_crop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:arcanist_hood",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:arcanist_robes",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:arcanist_leggings",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:arcanist_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

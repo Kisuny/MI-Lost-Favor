@@ -1,0 +1,18 @@
+{
+  "title": "Iron Rod",
+  "icon": "modern_industrialization:iron_rod",
+  "x": 6.5,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/rod_stamp"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:iron_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

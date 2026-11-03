@@ -1,0 +1,21 @@
+{
+  "title": "Copper Crucible",
+  "description": [
+    "Necessary for creating some <poison>Toxony</poison> materials."
+  ],
+  "icon": "toxony:copper_crucible",
+  "x": 24,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_blend"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:copper_crucible",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

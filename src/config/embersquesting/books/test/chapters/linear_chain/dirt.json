@@ -1,0 +1,19 @@
+{
+  "title": "<lang key=block.minecraft.dirt>",
+  "icon": "minecraft:dirt",
+  "x": 9.5,
+  "y": -1,
+  "deps": {
+    "all": [
+      "linear_chain/sand",
+      "linear_chain/fuels_bio"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:dirt",
+      "count": 3,
+      "type": "craft"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Oblivion Alloy Ingot",
+  "icon": "modern_industrialization:oblivion_alloy_ingot",
+  "x": 95.5,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/oblivion_alloy_impetus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:oblivion_alloy_ingot",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:oblivion_alloy_node",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:oblivion_alloy_nugget",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

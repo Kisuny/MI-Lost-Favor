@@ -1,0 +1,23 @@
+{
+  "title": "Runic Core",
+  "description": [
+    "The Runic Core is the centerpiece of all Pagan rituals. Place it down and surround it with six infused slabs of the same type. Light it with some flint and steel, and then slay a creature atop it. This will perform the ritual that corresponds to the type of slabs surrounding the Runic Core.",
+    "",
+    "View the Pagan Guide to see how to set up the slabs around the Runic Core."
+  ],
+  "icon": "paganbless:runic_core",
+  "x": 8.5,
+  "y": 48.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_inert"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:runic_core",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Sigil Of Malice",
+  "description": [
+    "True perfection will still require a little luck. In your travels you may encounter the §6Sigil of Malice§r, an esoteric artifact which <keyword>randomly changes</keyword> an affix item. What exactly it does is a mystery.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Для достижения истинного совершенства по-прежнему потребуется немного удачи. В своих путешествиях вы можете встретить §6Сигил злобы§r - эзотерический артефакт, который <keyword>случайным образом изменяет</keyword> аффикс предмета. Что именно он делает, остается загадкой."
+  ],
+  "icon": "apotheosis:sigil_of_malice",
+  "x": 8.5,
+  "y": 26,
+  "deps": {
+    "all": [
+      "bronze_age/gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apotheosis:sigil_of_malice",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

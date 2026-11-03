@@ -1,0 +1,49 @@
+{
+  "title": "World Tier: Pinnacle",
+  "icon": "minecraft:end_crystal",
+  "x": 18.5,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q05e3fdba060f1ca6",
+      "when_dungeons_arise/necklace_of_the_desert",
+      "when_dungeons_arise/burning_ashes",
+      "when_dungeons_arise/q3f8bf0be75dda98d",
+      "when_dungeons_arise/nether_star",
+      "when_dungeons_arise/abyssal_sacrifice",
+      "when_dungeons_arise/strange_key",
+      "when_dungeons_arise/q2a8c0d9b2c194ad2",
+      "when_dungeons_arise/geburah",
+      "when_dungeons_arise/malkuth",
+      "when_dungeons_arise/chesed"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Charm Trinket Slot",
+      "id": "milf:trinket/charm_world_tier_pinnacle",
+      "type": "custom"
+    },
+    {
+      "title": "Hands Trinket Slot",
+      "id": "milf:trinket/hands_world_tier_pinnacle",
+      "type": "custom"
+    },
+    {
+      "title": "Ring Trinket Slot",
+      "id": "milf:trinket/ring_world_tier_pinnacle",
+      "type": "custom"
+    },
+    {
+      "advancement": "apotheosis:progression/pinnacle",
+      "type": "advancement"
+    }
+  ],
+  "shape": "gear",
+  "size": 1.5
+}

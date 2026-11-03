@@ -1,0 +1,42 @@
+{
+  "title": "Spellcrafting",
+  "description": [
+    "Spellcasting revolves around the <keyword>Spell Book</keyword>: spells are assembled from <magic>Forms</magic>, <flame>Effects</flame>, and <positive>Augments</positive>.",
+    "",
+    "A <magic>Form</magic> decides how the spell is cast - projectile, touch, area, and so on. ",
+    "",
+    "An <flame>Effect</flame> decides what it does: <negative>damage</negative>, healing, breaking blocks, teleporting, and more. Multiple effects can chain in one spell.",
+    "",
+    "<positive>Augments</positive> then modify the result - more damage, range, duration, or lower cost - and can often be stacked.",
+    "",
+    "Combine them freely: an igniting projectile, a healing area spell, a touch spell that breaks and places blocks at once. <keyword>Experiment</keyword> to find what works.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Заклинания создаются в <keyword>Книге заклинаний</keyword> из <magic>Форм</magic>, <flame>Эффектов</flame> и <positive>Аугментаций</positive>.",
+    "",
+    "<magic>Форма</magic> определяет способ применения - снаряд, касание, область и т.д. ",
+    "",
+    "<flame>Эффект</flame> определяет результат: <negative>урон</negative>, лечение, разрушение блоков, телепортацию и прочее. В одном заклинании можно объединить несколько эффектов.",
+    "",
+    "<positive>Аугментации</positive> изменяют итог - усиливают урон, дальность, длительность или снижают расход маны, часто их можно складывать.",
+    "",
+    "Комбинируйте свободно: поджигающий снаряд, исцеляющая область, касание, разрушающее и ставящее блок одновременно. <keyword>Экспериментируйте</keyword>, чтобы найти лучшее решение."
+  ],
+  "x": 21,
+  "y": 54,
+  "deps": {
+    "all": [
+      "magic_step_i/novice_spell_book",
+      "magic_step_i/codex_entry"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Spellcrafting"
+    }
+  ],
+  "shape": "heart"
+}

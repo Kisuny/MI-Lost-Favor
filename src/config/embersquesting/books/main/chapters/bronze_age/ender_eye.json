@@ -1,0 +1,18 @@
+{
+  "title": "Ender Eye",
+  "icon": "minecraft:ender_eye",
+  "x": 14.5,
+  "y": 32,
+  "deps": {
+    "all": [
+      "bronze_age/blaze_powder"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:ender_eye",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

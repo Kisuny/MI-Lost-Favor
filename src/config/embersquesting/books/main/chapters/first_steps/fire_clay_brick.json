@@ -1,0 +1,18 @@
+{
+  "title": "Fire Clay Brick",
+  "icon": "modern_industrialization:fire_clay_brick",
+  "x": 30,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "first_steps/unfired_fire_clay_brick"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:fire_clay_brick",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

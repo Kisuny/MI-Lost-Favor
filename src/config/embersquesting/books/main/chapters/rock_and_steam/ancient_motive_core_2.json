@@ -1,0 +1,30 @@
+{
+  "title": "Ancient Motive Core",
+  "description": [
+    "Place a tool, weapon or armor piece on the <keyword>Dawnstone Anvil</keyword>, then an <keyword>Ancient Motive Core</keyword>, and <shake amplitude=0.3 frequency=1.0>hammer away</shake>.",
+    "",
+    "The item gains the ability to <flame>absorb Heat</flame>, which builds up through normal use.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Положите на <keyword>Золотитовую наковальню</keyword> инструмент, оружие или броню, затем <keyword>Древнее ядро пробуждения</keyword>, и <shake amplitude=0.3 frequency=1.0>куйте</shake>.",
+    "",
+    "Предмет научится <flame>накапливать жар</flame>, который растёт при обычном использовании."
+  ],
+  "icon": "embers:ancient_motive_core",
+  "x": 14,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/dawnstone_anvil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ancient_motive_core",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

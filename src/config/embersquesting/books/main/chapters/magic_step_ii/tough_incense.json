@@ -1,0 +1,20 @@
+{
+  "title": "Tough Incense",
+  "icon": "eidolon_repraised:tough_incense",
+  "x": 61,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/avennian_sprig",
+      "magic_step_ii/sildrian_seed"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:tough_incense",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

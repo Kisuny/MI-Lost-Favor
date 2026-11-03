@@ -1,0 +1,63 @@
+{
+  "title": "Squeezer",
+  "icon": "immersiveengineering:squeezer",
+  "x": 15.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "immersiveengineering:squeezer",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:squeezer",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:wooden_barrel",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:fluid_pipe",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:piston",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 6,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_fence",
+      "count": 3,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:squeezer_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

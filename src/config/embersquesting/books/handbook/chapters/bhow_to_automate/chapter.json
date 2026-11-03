@@ -1,0 +1,52 @@
+{
+  "title": "How to automate?",
+  "icon": "embers:textures/item/winding_gears.png",
+  "order": 3,
+  "scope": "team",
+  "defaults": {
+    "invisible_until_deps_visible": true,
+    "progression": "linear"
+  },
+  "decorations": [
+    {
+      "width": 12.857143,
+      "height": 6.857143,
+      "content": {
+        "texture": "milf:textures/quest_pic/player_automate_example_1.png",
+        "type": "image"
+      },
+      "x": 4.5714283,
+      "y": 2.5714285
+    },
+    {
+      "width": 12.857143,
+      "height": 6.857143,
+      "content": {
+        "texture": "milf:textures/quest_pic/drowers_example_1.png",
+        "type": "image"
+      },
+      "x": -10.928572,
+      "y": 2.5714285
+    },
+    {
+      "width": 4.285714,
+      "height": 4.285714,
+      "content": {
+        "texture": "milf:textures/quest_pic/ferret.png",
+        "type": "image"
+      },
+      "x": 14.857143,
+      "y": 0.35714293
+    },
+    {
+      "width": 6.0,
+      "height": 6.0,
+      "content": {
+        "texture": "milf:textures/quest_pic/leaf_insect.png",
+        "type": "image"
+      },
+      "x": -13.0,
+      "y": 0.0
+    }
+  ]
+}

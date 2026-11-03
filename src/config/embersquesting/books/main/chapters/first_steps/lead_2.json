@@ -1,0 +1,27 @@
+{
+  "title": "Lead",
+  "icon": "modern_industrialization:raw_lead",
+  "x": 17,
+  "y": 21,
+  "deps": {
+    "all": [
+      "first_steps/clay_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Lead"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:raw_lead\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "FindMe",
+  "description": [
+    "Press <keyword>\"Y\"</keyword> on an item in your inventory (or in EMI) to <positive>highlight similar items in nearby chests</positive>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нажмите <keyword>«Y»</keyword> на предмете в инвентаре (или в EMI), чтобы <positive>подсветить похожие предметы в соседних сундуках</positive>"
+  ],
+  "icon": "toxony:textures/item/magnifying_glass.png",
+  "x": 9.9,
+  "y": 7.98,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "FindMe"
+    }
+  ],
+  "shape": "square"
+}

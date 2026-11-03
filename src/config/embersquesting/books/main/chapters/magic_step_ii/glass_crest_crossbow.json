@@ -1,0 +1,20 @@
+{
+  "title": "Glass Crest Crossbow",
+  "icon": "spectrum:glass_crest_crossbow{\"minecraft:enchantments\":{levels:{\"minecraft:piercing\":5}}}",
+  "x": 66.5,
+  "y": 42,
+  "deps": {
+    "all": [
+      "magic_step_ii/malachite_crossbow"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:glass_crest_crossbow",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:piercing\":5}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

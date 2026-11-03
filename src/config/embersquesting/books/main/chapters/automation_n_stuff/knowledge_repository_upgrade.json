@@ -1,0 +1,21 @@
+{
+  "title": "Knowledge Repository Upgrade",
+  "description": [
+    "<positive>Access</positive> in-game <property>encyclopedia</property>"
+  ],
+  "icon": "tempad:knowledge_repository_upgrade",
+  "x": 2,
+  "y": 6,
+  "deps": {
+    "all": [
+      "automation_n_stuff/workstation"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "tempad:knowledge_repository_upgrade",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

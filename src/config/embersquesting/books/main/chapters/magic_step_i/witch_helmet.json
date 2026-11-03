@@ -1,0 +1,26 @@
+{
+  "title": "Witch Helmet",
+  "icon": "hexerei:witch_helmet",
+  "x": 11,
+  "y": 52,
+  "deps": {
+    "all": [
+      "magic_step_i/infused_fabric"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:witch_helmet",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:witch_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:witch_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

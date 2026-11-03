@@ -1,0 +1,18 @@
+{
+  "title": "Electrolyzer",
+  "icon": "modern_industrialization:electrolyzer",
+  "x": 21,
+  "y": 5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/plastic_large_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electrolyzer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

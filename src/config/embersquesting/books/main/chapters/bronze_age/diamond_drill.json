@@ -1,0 +1,18 @@
+{
+  "title": "Diamond Drill",
+  "icon": "immersive_machinery:diamond_drill",
+  "x": 27.5,
+  "y": 21,
+  "deps": {
+    "all": [
+      "bronze_age/iron_drill"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_machinery:diamond_drill",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

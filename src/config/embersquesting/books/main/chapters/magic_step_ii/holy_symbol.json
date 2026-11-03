@@ -1,0 +1,36 @@
+{
+  "title": "Holy Symbol",
+  "description": [
+    "Use the <positive>Touch of Light</positive> spell on a <property>gold inlay</property> to create this.",
+    "",
+    "<warning>If you don't have the Touch of Light spell yet</warning>, experiment with the mod to unlock it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используйте заклинание <positive>Прикосновение света</positive> на <property>золотой инкрустации</property>, чтобы создать этот предмет.",
+    "",
+    "<warning>Если у вас ещё нет заклинания Прикосновение света</warning>, поэкспериментируйте с модом, чтобы открыть его."
+  ],
+  "icon": "eidolon_repraised:holy_symbol",
+  "x": 79,
+  "y": 29,
+  "deps": {
+    "all": [
+      "magic_step_ii/q5c9d05ab0880a355",
+      "magic_step_ii/wooden_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:holy_symbol",
+      "type": "item"
+    },
+    {
+      "item": "eidolon_repraised:gold_inlay",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

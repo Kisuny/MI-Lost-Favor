@@ -1,0 +1,18 @@
+{
+  "title": "Mv Solar Panel",
+  "icon": "extended_industrialization:mv_solar_panel",
+  "x": 19,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/mv_photovoltaic_cell"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:mv_solar_panel",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

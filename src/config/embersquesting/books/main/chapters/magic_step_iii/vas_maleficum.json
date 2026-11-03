@@ -1,0 +1,27 @@
+{
+  "title": "Vas Maleficum",
+  "description": [
+    "Demonic <property>Spiritus</property> can also exist in a diffused state throughout the very air. By burning Spiritus in a <named>Vas Maleficum</named>, you release it into the <magic>Aura</magic>, an invisible miasma that permeates each chunk of the world.",
+    "",
+    "Feed the Vas Maleficum a charged Spiritus Gem, loose Spiritus, or Spiritus Crystals of any Aspect. Crystals are consumed once the chunk's Spiritus dips below 50; loose Spiritus and gem contents are consumed gradually as needed.",
+    "",
+    "Apply a redstone signal and the Vas reverses direction: a Spiritus Gem placed inside is filled from the chunk's Aura instead of drained. The same vessel serves as both deposit and withdrawal point.",
+    "",
+    "The Aura is chunk-based. Spiritus burned in one chunk fills only that chunk, up to a cap of 100 per aspect"
+  ],
+  "icon": "neovitae:vas_maleficum",
+  "x": 42.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_common"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:vas_maleficum",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

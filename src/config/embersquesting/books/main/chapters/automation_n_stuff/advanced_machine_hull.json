@@ -1,0 +1,19 @@
+{
+  "title": "Advanced Machine Hull",
+  "icon": "modern_industrialization:advanced_machine_hull",
+  "x": 19.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "automation_n_stuff/logic_processor",
+      "automation_n_stuff/hardened_machine_casing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:advanced_machine_hull",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

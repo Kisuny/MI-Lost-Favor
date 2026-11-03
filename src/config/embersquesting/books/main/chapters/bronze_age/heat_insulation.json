@@ -1,0 +1,30 @@
+{
+  "title": "Heat Insulation",
+  "description": [
+    "Keeping the coil hot eats a lot of Ember. Each <keyword>Heat Insulation</keyword> raises its maximum heat by <property>75</property> and makes it cool down <positive>30% slower</positive>.",
+    "",
+    "With a bit of redstone control the coil can become <positive>much more efficient</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Поддерживать катушку горячей - дорогое удовольствие. Каждая <keyword>Теплоизоляция</keyword> поднимает её максимальный жар на <property>75</property> и замедляет остывание на <positive>30%</positive>.",
+    "",
+    "Если добавить немного редстоун-управления, катушка станет <positive>гораздо экономнее</positive>."
+  ],
+  "icon": "embers:heat_insulation",
+  "x": 31.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "bronze_age/hearth_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:heat_insulation",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

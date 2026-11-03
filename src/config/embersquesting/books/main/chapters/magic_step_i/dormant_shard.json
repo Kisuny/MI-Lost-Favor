@@ -1,0 +1,26 @@
+{
+  "title": "Dormant Shard",
+  "description": [
+    "The <keyword>Dormant Shard</keyword> is used to craft an extra <keyword>Attuned Shard</keyword>, letting you link more <keyword>Warp Plates</keyword> together - place it inside an empty Warp Plate.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Dormant Shard</keyword> используется для крафта дополнительного <keyword>настроенного осколка</keyword>, чтобы связать больше <keyword>Warp Plate</keyword> между собой - поместите его в пустую плиту."
+  ],
+  "icon": "waystones:dormant_shard",
+  "x": 43,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_i/warp_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:dormant_shard",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

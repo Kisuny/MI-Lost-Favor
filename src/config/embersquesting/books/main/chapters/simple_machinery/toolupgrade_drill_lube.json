@@ -1,0 +1,19 @@
+{
+  "title": "Toolupgrade Drill Lube",
+  "icon": "immersiveengineering:toolupgrade_drill_lube",
+  "x": 16.5,
+  "y": 12,
+  "deps": {
+    "any": [
+      "simple_machinery/drill",
+      "simple_machinery/buzzsaw"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:toolupgrade_drill_lube",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

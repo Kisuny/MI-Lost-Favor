@@ -1,0 +1,20 @@
+{
+  "title": "Step 1",
+  "icon": "minecraft:oak_log",
+  "deps": {
+    "all": [
+      "linear_chain/dirt"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "rewards": [
+    {
+      "points": 5,
+      "type": "xp"
+    }
+  ]
+}

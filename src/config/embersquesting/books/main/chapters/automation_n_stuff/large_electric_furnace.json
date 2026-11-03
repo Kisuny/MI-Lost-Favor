@@ -1,0 +1,18 @@
+{
+  "title": "Large Electric Furnace",
+  "icon": "mi_tweaks:large_electric_furnace",
+  "x": 19,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "mi_tweaks:large_electric_furnace",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

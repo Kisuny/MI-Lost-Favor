@@ -1,0 +1,26 @@
+{
+  "title": "Suspicious Brew",
+  "description": [
+    "Anyone <c value=#FEECD6>interested</c>§r is invited to read the §l<c value=#e4affa>Spectrum</c>§r§r guidebook, no point in copying the information to here!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Всех <c value=#FEECD6>заинтересовавшихся</c>§r приглашаем в книжку <c value=#9BB8ED>Spectrum</c>§r'a, расписывать тут такую механику не видим смысла!"
+  ],
+  "icon": "spectrum:suspicious_brew",
+  "x": 41,
+  "y": 56.5,
+  "deps": {
+    "all": [
+      "magic_step_i/shake_amplitude_0_35_frequency_1_2_but_how_do_you_make_beer_shake"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:suspicious_brew",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

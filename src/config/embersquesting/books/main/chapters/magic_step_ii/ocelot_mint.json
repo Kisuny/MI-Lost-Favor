@@ -1,0 +1,27 @@
+{
+  "title": "Ocelot Mint",
+  "description": [
+    "Grows in <magic>jungles</magic>.",
+    "",
+    "Can be used to <positive>breed</positive> <keyword>ocelots</keyword>.",
+    "",
+    "You can also buy from <keyword>Wandering Trader</keyword>"
+  ],
+  "icon": "toxony:ocelot_mint",
+  "x": 24.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q28a2fcbc095f291e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:ocelot_mint",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

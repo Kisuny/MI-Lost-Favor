@@ -1,0 +1,26 @@
+{
+  "title": "Color Picker",
+  "description": [
+    "§4I§r§6n§r§ek§r extraction",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нужно же где-то брать §4э§r§6н§r§eе§r§2р§r<property>г</property>§9и§r§5ю§r, верно?"
+  ],
+  "icon": "spectrum:color_picker",
+  "x": 2.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_onyx"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:color_picker",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

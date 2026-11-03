@@ -1,0 +1,25 @@
+{
+  "title": "Array Furnace",
+  "description": [
+    "<positive>Transmutes</positive> raw materials dropped nearby into their smelted forms (<property>10 EV</property> per stack from the owner's network). Items within its radius will not despawn while awaiting processing; processes all valid stacks simultaneously, with cook times matching a standard furnace."
+  ],
+  "icon": "neovitae:array_furnace",
+  "x": 40.5,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/utility_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_furnace",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

@@ -1,0 +1,37 @@
+{
+  "title": "",
+  "description": [
+    "The <magic>Shulker Mimic</magic> loves to send its victims <wave>floating into the air</wave>.",
+    "",
+    "Drops a <keyword>Large Shulker Shell</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Подражатель шалкера</magic> обожает отправлять жертв <wave>парить в воздухе</wave>.",
+    "",
+    "Роняет <keyword>большой панцирь шалкера</keyword>."
+  ],
+  "x": 13,
+  "y": 27,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/shulker_tower"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "legendary_monsters:shulker_mimic",
+      "type": "kill"
+    },
+    {
+      "advancement": "apotheosis:progression/summit",
+      "criterion": "kill_shulker_mimic",
+      "type": "advancement",
+      "title": "Slay the Shulker Mimic"
+    }
+  ],
+  "complete": "any",
+  "shape": "hexagon",
+  "size": 1.5
+}

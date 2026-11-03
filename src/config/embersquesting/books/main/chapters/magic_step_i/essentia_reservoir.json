@@ -1,0 +1,26 @@
+{
+  "title": "Essentia Reservoir",
+  "description": [
+    "Stores up to <property>256 essentia</property> of any mix of types - void metal keeps them from blending.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Хранит до <property>256 эссенции</property> в любом сочетании типов - металл пустоты не даёт им смешаться."
+  ],
+  "icon": "thaumaturge:essentia_reservoir",
+  "x": 37,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_void"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:essentia_reservoir",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Tyrfing",
+  "description": [
+    "<keyword>Tyrfing</keyword> is a <curse>pulsating</curse> lead blade shaped through alchemy. Against most targets it is a bit duller than a normal sword...",
+    "",
+    "...but the <warning>more armor</warning> the enemy wears, the <shake amplitude=0.4 frequency=1.5>harder it hits</shake>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Тюрвинг</keyword> - <curse>пульсирующий</curse> свинцовый клинок, выкованный алхимией. Против большинства целей он чуть тупее обычного меча...",
+    "",
+    "...но чем <warning>больше брони</warning> на враге, тем <shake amplitude=0.4 frequency=1.5>сильнее он бьёт</shake>."
+  ],
+  "icon": "embers:tyrfing",
+  "x": 10,
+  "y": 3,
+  "deps": {
+    "all": [
+      "simple_machinery/carbon_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:tyrfing",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

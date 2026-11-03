@@ -1,0 +1,26 @@
+{
+  "title": "Starbuncle Shades",
+  "description": [
+    "<wiggle amplitude=0.5 frequency=1.0><keyword>Starbuncle Shades</keyword></wiggle> disable a Starbuncle's ability to pick up items or harvest Source Berries - use the Dominion Wand on it to remove the shades again.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<wiggle amplitude=0.5 frequency=1.0><keyword>Starbuncle Shades</keyword></wiggle> отключают у Старбанкла способность подбирать предметы и собирать Сурс ягоды - снять очки можно, использовав на нём Жезл владения."
+  ],
+  "icon": "ars_nouveau:starbuncle_shades",
+  "x": 105,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_ii/starbuncle_charm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:starbuncle_shades",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

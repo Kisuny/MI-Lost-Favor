@@ -1,0 +1,29 @@
+{
+  "title": "Poison Paste",
+  "description": [
+    "The most basic element of <poison>Toxony</poison>."
+  ],
+  "icon": "toxony:poison_paste",
+  "x": 19,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_i/foul_fume",
+      "magic_step_ii/midnight_chip"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:poison_paste",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "toxony:lost_journal",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

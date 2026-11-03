@@ -1,0 +1,26 @@
+{
+  "title": "Stratine Gem",
+  "description": [
+    "<keyword>Rare gemstones</keyword> that can be obtained while <positive>mining stratine ore</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Для открытия крафта необходимо <positive>выбить</positive> данный ресурс из руды."
+  ],
+  "icon": "spectrum:stratine_gem",
+  "x": 8.5,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/stratine_fragments"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:stratine_gem",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Nitrogen Bucket",
+  "icon": "modern_industrialization:nitrogen_bucket",
+  "x": 17,
+  "y": 12,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/liquid_air_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:nitrogen_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

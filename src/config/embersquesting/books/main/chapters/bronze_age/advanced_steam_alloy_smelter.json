@@ -1,0 +1,45 @@
+{
+  "title": "Advanced Steam Alloy Smelter",
+  "icon": "mi_tweaks:advanced_steam_alloy_smelter",
+  "x": 16.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "bronze_age/alloybrick"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "mi_tweaks:advanced_steam_alloy_smelter",
+      "type": "item"
+    },
+    {
+      "item": "extended_industrialization:steel_plated_bricks",
+      "count": 20,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:alloybrick",
+      "count": 44,
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:fire_clay_bricks",
+      "count": 5,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:slab_alloybrick",
+      "count": 12,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:advanced_steam_alloy_smelter_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

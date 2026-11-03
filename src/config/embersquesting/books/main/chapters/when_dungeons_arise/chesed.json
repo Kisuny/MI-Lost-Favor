@@ -1,0 +1,51 @@
+{
+  "title": "Chesed",
+  "description": [
+    "<magic>Chesed</magic> - a creature born from rocks corroded by <soul>sculk</soul>, wielding enormous magic power. <curse>No mercy for the merciless.</curse>",
+    "",
+    "Throw the <keyword>Eye of Chesed</keyword> to find its arena, then <property>RMB</property> the boss spawner to read its abilities and start the fight.",
+    "",
+    "You can use the structure-finding ritual from the <click action=open_quest value='magic_step_ii/brazier'><u>Eidolon</u></click> mod or <click action=open_quest value='magic_step_i/ritual_locate_structure'><u>Ars Additions</u></click>.",
+    "",
+    "Chesed <warning>cannot be hurt directly</warning>, and its attacks pierce armor and shields. Wait for the <magic><glitch frequency=0.7 shiftChance=0.06>Lightning Ray</glitch></magic>, break a <keyword>crystal</keyword> with an <property>axe</property> to become <positive>Energized</positive>, then run to a <keyword>Ray Reflector</keyword> and let the ray hit it.",
+    "",
+    "Destroy the <keyword>Monoliths</keyword> - while all of them are active, its final strike is <shake amplitude=0.4 frequency=1.3>impossible to survive</shake>. And <warning>never look away from it</warning>.",
+    "",
+    "Drops the <keyword>Lightning Core</keyword> and the <keyword>Phase Sphere</keyword>. Finish it with a <property>wrench</property> for a <property>50%</property> chance at an <named>Electronic Ender Core</named>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Хесед</magic> - существо, рождённое из камня, изъеденного <soul>скалком</soul>, и владеющее огромной магической силой. <curse>Нет пощады беспощадному.</curse>",
+    "",
+    "Брось <keyword>Глаз Хеседа</keyword>, чтобы найти его арену, затем нажми <property>ПКМ</property> по спавнеру босса - там можно прочитать о его умениях и начать бой.",
+    "",
+    "Можно использовать ритуал поиска структур из мода <click action=open_quest value='magic_step_ii/brazier'><u>Eidolon</u></click> или <click action=open_quest value='magic_step_i/ritual_locate_structure'><u>Ars Additions</u></click>",
+    "",
+    "Хеседа <warning>нельзя ранить напрямую</warning>, а его атаки пробивают броню и щиты. Дождись <magic><glitch frequency=0.7 shiftChance=0.06>Луча молний</glitch></magic>, разбей <keyword>кристалл</keyword> <property>топором</property>, чтобы стать <positive>Заряженным</positive>, добеги до <keyword>Отражателя лучей</keyword> и подставь его под луч.",
+    "",
+    "Уничтожай <keyword>Монолиты</keyword> - пока активны все, его финальный удар <shake amplitude=0.4 frequency=1.3>невозможно пережить</shake>. И <warning>никогда не отводи от него взгляд</warning>.",
+    "",
+    "Роняет <keyword>Электрическое ядро</keyword> и <keyword>Сферу фазы</keyword>. Добей его <property>гаечным ключом</property>, чтобы с шансом <property>50%</property> получить <named>Электронное ядро Эндера</named>."
+  ],
+  "icon": "fdbosses:chesed_trophy",
+  "x": 18,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_summit"
+    ]
+  },
+  "tasks": [
+    {
+      "structure": "fdbosses:chesed_arena",
+      "type": "location"
+    },
+    {
+      "advancement": "fdbosses:qliphoth_awakening/chesed",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

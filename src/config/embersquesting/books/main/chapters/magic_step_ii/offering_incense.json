@@ -1,0 +1,19 @@
+{
+  "title": "Offering Incense",
+  "icon": "eidolon_repraised:offering_incense",
+  "x": 74,
+  "y": 29,
+  "deps": {
+    "all": [
+      "magic_step_ii/censer",
+      "magic_step_ii/oanna_bloom"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:offering_incense",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Golden Chalk",
+  "description": [
+    "No ritual circle is complete without a golden sigil at it's center."
+  ],
+  "icon": "enchanted:golden_chalk",
+  "x": 30.5,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_i/kettle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:golden_chalk",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

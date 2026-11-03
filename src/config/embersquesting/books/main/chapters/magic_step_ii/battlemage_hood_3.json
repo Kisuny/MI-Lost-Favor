@@ -1,0 +1,38 @@
+{
+  "title": "Battlemage Hood",
+  "icon": "ars_nouveau:battlemage_hood{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+  "x": 125,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/battlemage_hood_2"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:battlemage_hood",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:battlemage_robes",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:battlemage_leggings",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:battlemage_boots",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

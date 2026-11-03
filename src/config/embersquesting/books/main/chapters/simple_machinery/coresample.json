@@ -1,0 +1,19 @@
+{
+  "title": "Coresample",
+  "icon": "immersiveengineering:coresample",
+  "x": 5.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "simple_machinery/sample_drill",
+      "simple_machinery/survey_tools"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:coresample",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

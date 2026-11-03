@@ -1,0 +1,22 @@
+{
+  "title": "Diesel Bucket",
+  "icon": "immersivepetroleum:diesel_bucket",
+  "x": 14.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/hydrotreater"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:diesel_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "pentagon"
+}

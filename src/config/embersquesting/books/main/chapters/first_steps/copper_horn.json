@@ -1,0 +1,39 @@
+{
+  "title": "Copper Horn",
+  "description": [
+    "Can be used to <positive>summon a horse</positive> from any location in the world. ",
+    "",
+    "It is crafted from <keyword>3 copper ingots</keyword> and <keyword>1 Goat Horn</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Можно использовать для <positive>вызова лошади</positive> из любой точки мира. ",
+    "",
+    "Создаётся из <keyword>3 медных слитков</keyword> и <keyword>1 рога</keyword>."
+  ],
+  "icon": "horseman:copper_horn{\"minecraft:instrument\":\"minecraft:ponder_goat_horn\"}",
+  "x": 24,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "first_steps/copper_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "horseman:copper_horn",
+      "components": "{\"minecraft:instrument\":\"minecraft:ponder_goat_horn\"}",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:bag_record",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

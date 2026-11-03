@@ -1,0 +1,19 @@
+{
+  "title": "Turntable",
+  "icon": "immersiveengineering:turntable",
+  "x": 13,
+  "y": 29,
+  "deps": {
+    "all": [
+      "simple_machinery/wirecoil_electrum",
+      "simple_machinery/wirecoil_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:turntable",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

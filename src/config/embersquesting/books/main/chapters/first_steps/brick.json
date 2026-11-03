@@ -1,0 +1,18 @@
+{
+  "title": "Brick",
+  "icon": "minecraft:brick",
+  "x": 26,
+  "y": 20,
+  "deps": {
+    "all": [
+      "first_steps/clay_mold_base"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:brick",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

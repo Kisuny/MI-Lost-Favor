@@ -1,0 +1,26 @@
+{
+  "title": "Ravenous Pouch",
+  "description": [
+    "By fusing a <keyword>Soulwoven Pouch</keyword> with rot, it sprouts teeth and becomes the <shake><warning>Ravenous Pouch</warning></shake> - it works like a magnet, <positive>automatically</positive> sucking up items lying on the ground, but only the kinds it already has some of stored inside.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Если сплавить <keyword>Soulwoven Pouch</keyword> с гнилью, у него прорастают зубы, и он превращается в <shake><warning>Ravenous Pouch</warning></shake> - он работает как магнит, <positive>автоматически</positive> подбирая предметы с земли, но только те виды, которых уже есть хоть немного внутри него."
+  ],
+  "icon": "malum:ravenous_pouch",
+  "x": 78,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/soulwoven_pouch"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ravenous_pouch",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

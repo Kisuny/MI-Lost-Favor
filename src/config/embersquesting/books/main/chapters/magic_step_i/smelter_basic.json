@@ -1,0 +1,26 @@
+{
+  "title": "Smelter Basic",
+  "description": [
+    "The <keyword>Essentia Smeltery</keyword> melts any item down into raw <magic>essentia</magic>. Put an <keyword>Alembic</keyword> on top to collect it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Плавильня эссенции</keyword> расплавляет любой предмет в чистую <magic>эссенцию</magic>. Чтобы её собрать, поставь сверху <keyword>перегонный куб</keyword>."
+  ],
+  "icon": "thaumaturge:smelter_basic",
+  "x": 50,
+  "y": 24,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_thaumium"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:smelter_basic",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

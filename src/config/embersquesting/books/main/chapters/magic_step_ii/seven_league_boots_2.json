@@ -1,0 +1,31 @@
+{
+  "title": "Seven League Boots",
+  "description": [
+    "<positive>Enchant</positive> your <keyword>boots</keyword> with power. More <keyword>power</keyword>, more <keyword>speed</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Зачаруй на силу</positive> свои <keyword>сапожки</keyword>, будешь ещё <keyword>быстрее</keyword>!"
+  ],
+  "icon": "spectrum:seven_league_boots{\"minecraft:enchantments\":{levels:{\"minecraft:power\":5}}}",
+  "x": 14,
+  "y": 35,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:seven_league_boots",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:power\":5}}}",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:phantom_membrane",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

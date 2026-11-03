@@ -1,0 +1,26 @@
+{
+  "title": "Dinosaur Bone Club",
+  "description": [
+    "<property>RMB</property> on a block sends <bone>shockwaves</bone> in a circle around you.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> по блоку пускает вокруг тебя кольцо <bone>ударных волн</bone>."
+  ],
+  "icon": "legendary_monsters:dinosaur_bone_club",
+  "x": 22,
+  "y": 24,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:dinosaur_bone_club",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

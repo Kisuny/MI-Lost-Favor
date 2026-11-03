@@ -1,0 +1,25 @@
+{
+  "title": "Mixing Cauldron",
+  "icon": "hexerei:mixing_cauldron",
+  "x": 8.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows",
+      "magic_step_i/black_thorn_log",
+      "rock_and_steam/iron_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:mixing_cauldron",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:lava_bucket",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

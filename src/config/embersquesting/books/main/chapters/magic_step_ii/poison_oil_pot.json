@@ -1,0 +1,21 @@
+{
+  "title": "Poison Oil Pot",
+  "description": [
+    "<warning>Poison</warning>."
+  ],
+  "icon": "toxony:poison_oil_pot",
+  "x": 19.5,
+  "y": 36.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/oil_pots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:poison_oil_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

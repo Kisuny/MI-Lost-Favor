@@ -1,0 +1,35 @@
+{
+  "title": "Cloudy Temple",
+  "description": [
+    "The <named>Eye of Air</named> is made of <wind>feathers</wind> and points to the <named>Cloudy Temple</named> on <wind>mountain peaks</wind> and <nature>meadows</nature>.",
+    "",
+    "Four <keyword>Hovering Hurricanes</keyword> circle around it - deal with them before climbing to the top.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Око воздуха</named> делается из <wind>перьев</wind> и указывает на <named>Облачный храм</named> на <wind>горных пиках</wind> и <nature>лугах</nature>.",
+    "",
+    "Вокруг него кружат четыре <keyword>парящих урагана</keyword> - разберись с ними, прежде чем подниматься на вершину."
+  ],
+  "icon": "legendary_monsters:eye_of_air",
+  "x": 13,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_ascent"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:eye_of_air",
+      "type": "item"
+    },
+    {
+      "structure": "legendary_monsters:cloudy_temple",
+      "type": "location"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

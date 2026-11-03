@@ -1,0 +1,38 @@
+{
+  "title": "Chainmail Helmet",
+  "icon": "minecraft:chainmail_helmet",
+  "x": 8,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:chainmail_helmet",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:chainmail_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:chainmail_leggings",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:chainmail_boots",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_overworld",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "pentagon"
+}

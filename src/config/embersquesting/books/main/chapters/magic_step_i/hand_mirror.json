@@ -1,0 +1,26 @@
+{
+  "title": "Hand Mirror",
+  "description": [
+    "A pocket version: open it anywhere and send items from your inventory to the linked mirror. It can only <warning>send</warning>, not receive.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Карманная версия: открой её где угодно и отправь предметы из инвентаря в связанное зеркало. Умеет только <warning>отправлять</warning>, но не принимать."
+  ],
+  "icon": "thaumaturge:hand_mirror",
+  "x": 73.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_i/mirror"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:hand_mirror",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

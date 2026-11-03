@@ -1,0 +1,30 @@
+{
+  "title": "Seal Guard",
+  "description": [
+    "Protects an <property>area</property>: any <blood>hostile creature</blood> it detects is attacked by nearby combat-capable golems. If the golem is <property>Deft</property>, slain creatures drop <positive>experience</positive> as if killed by a player.",
+    "",
+    "This research also unlocks combat golem parts. Golem: must be a <blood>Fighter</blood> (Claws, Dart Launchers or the Aggression Module).",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Охраняет <property>зону</property>: любое замеченное <blood>враждебное существо</blood> атакуют ближайшие боевые големы. Если голем <property>ловкий</property> (Deft), убитые существа роняют <positive>опыт</positive>, как будто их убил игрок.",
+    "",
+    "Это исследование также открывает боевые части големов. Голем: должен быть <blood>бойцом</blood> (Fighter - клешни, дротикомёты или модуль агрессии)."
+  ],
+  "icon": "thaumaturge:seal_guard",
+  "x": 53,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_blank"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_guard",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

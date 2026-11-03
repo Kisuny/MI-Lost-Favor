@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "icon": "thaumaturge:textures/research/r_outer.png",
+  "x": 36.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_i/eldritch_eye"
+    ]
+  },
+  "tasks": [
+    {
+      "structure": "thaumaturge:eldritch_obelisk",
+      "type": "location",
+      "icon": "thaumaturge:textures/research/r_outer.png"
+    }
+  ],
+  "shape": "circle"
+}

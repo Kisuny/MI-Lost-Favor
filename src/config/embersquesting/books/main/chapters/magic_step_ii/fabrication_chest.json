@@ -1,0 +1,30 @@
+{
+  "title": "Fabrication Chest",
+  "description": [
+    "A <c value=#DEB3E0>Fabrication Chest</c>§r has four special slots for <c value=#FEECD6>Crafting Tablets</c>§r.",
+    "",
+    "Automatically crafts items while resources are present.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#DEB3E0>Сундук Изготовления</c>§r имеет специальный слоты для <c value=#FEECD6>Планшетных Верстаков</c>§r.",
+    "",
+    "Рецепты, которые вы задали в них, всегда хранятся с запасом - до тех пор, пока хватает ингредиентов в сундуке."
+  ],
+  "icon": "spectrum:fabrication_chest",
+  "x": 8,
+  "y": 41.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/stratine_fragments"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:fabrication_chest",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Formation Core",
+  "icon": "ae2:formation_core",
+  "x": 14.5,
+  "y": 37,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/core_hull",
+      "petrochemical_party_pp/acrylic_glue_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:formation_core",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Crystallum Fractura",
+  "description": [
+    "Ritual §lCrystallum Fractura§r - Harvests mature crystal clusters and weaves a 2x growth aura + 1.25x spiritus injection across the chunks in range"
+  ],
+  "x": 46.5,
+  "y": 9,
+  "deps": {
+    "all": [
+      "magic_step_iii/crystallarium_maleficum",
+      "magic_step_iii/awakened_activation_crystal"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Crystallum Fractura"
+    }
+  ],
+  "shape": "circle"
+}

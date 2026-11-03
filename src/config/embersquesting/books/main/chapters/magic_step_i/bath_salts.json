@@ -1,0 +1,31 @@
+{
+  "title": "Bath Salts",
+  "description": [
+    "Toss <keyword>Bath Salts</keyword> into water and it turns into a <aqua><wave>silvery, purifying liquid</wave></aqua> that brings <positive>temporary relief</positive> from Warp. The more warp you have, the shorter the protection lasts. The salts dissolve quickly if tossed around carelessly.",
+    "",
+    "The research reveals itself once your Warp grows past <warning>10</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Брось <keyword>соль для ванн</keyword> в воду, и та превратится в <aqua><wave>серебристую очищающую жидкость</wave></aqua>, которая даёт <positive>временное облегчение</positive> от искажения. Чем больше искажения, тем короче защита. Соль быстро растворяется, если швырять её как попало.",
+    "",
+    "Исследование откроется, когда твоё искажение превысит <warning>10</warning>."
+  ],
+  "icon": "thaumaturge:bath_salts",
+  "x": 47.5,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_i/feel_the_first_touch_of_warp"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:bath_salts",
+      "type": "item"
+    }
+  ],
+  "visibility": "hidden",
+  "shape": "circle"
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Waystone",
+  "description": [
+    "Craft and place a <keyword>Waystone</keyword>, then right-click it once to <warning>activate</warning> and name it - only then does it get added to your teleport network. Right-click and hold any waystone to open the list of every waystone you've activated and teleport to any of them.",
+    "",
+    "Teleporting costs <property>XP levels</property> based on distance, and jumping between dimensions costs a flat amount extra - but teleporting <positive>to a global waystone is free</positive>, and using a <keyword>Warp Plate</keyword> as your starting point never costs anything.",
+    "",
+    "Your nearby <keyword>pets</keyword> and <keyword>leashed mobs</keyword> teleport with you automatically.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Скрафтите и поставьте <keyword>вейстоун</keyword>, затем кликните по нему ПКМ один раз, чтобы <warning>активировать</warning> и назвать его - только после этого он попадёт в вашу сеть телепортации. Зажмите ПКМ на любом вейстоуне, чтобы открыть список всех активированных вами вейстоунов и телепортироваться на любой из них.",
+    "",
+    "Телепортация стоит <property>уровни опыта</property> в зависимости от расстояния, а прыжок между измерениями стоит дополнительную фиксированную сумму - но телепортация <positive>на глобальный вейстоун бесплатна</positive>, а старт с <keyword>Warp Plate</keyword> не стоит ничего.",
+    "",
+    "Находящиеся рядом <keyword>питомцы</keyword> и <keyword>мобы на поводке</keyword> телепортируются вместе с вами автоматически."
+  ],
+  "icon": "waystones:waystone",
+  "x": 43,
+  "y": 45,
+  "deps": {
+    "all": [
+      "magic_step_i/warp_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:waystone",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

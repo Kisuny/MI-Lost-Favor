@@ -1,0 +1,18 @@
+{
+  "title": "Redstone Timer",
+  "icon": "immersiveengineering:redstone_timer",
+  "x": 13,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/wirecoil_redstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:redstone_timer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

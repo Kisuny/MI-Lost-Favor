@@ -1,0 +1,22 @@
+{
+  "title": "Enchanted Book",
+  "icon": "minecraft:enchanted_book{\"minecraft:stored_enchantments\":{levels:{\"spectrum:clovers_favor\":1}}}",
+  "x": 10.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter",
+      "magic_step_ii/four_leaf_clover"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:clovers_favor\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

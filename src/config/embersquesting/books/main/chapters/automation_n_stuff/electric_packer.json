@@ -1,0 +1,19 @@
+{
+  "title": "Electric Packer",
+  "icon": "modern_industrialization:electric_packer",
+  "x": 24,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull",
+      "automation_n_stuff/piston"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electric_packer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

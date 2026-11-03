@@ -1,0 +1,23 @@
+{
+  "title": "Sky Steel Ingot",
+  "icon": "megacells:sky_steel_ingot",
+  "x": 40,
+  "y": 7,
+  "deps": {
+    "all": [
+      "aluminum/reaction_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "megacells:sky_steel_ingot",
+      "type": "item"
+    },
+    {
+      "item": "megacells:sky_bronze_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

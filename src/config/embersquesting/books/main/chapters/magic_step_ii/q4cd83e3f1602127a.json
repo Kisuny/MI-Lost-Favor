@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "description": [
+    "Enter the <magic>preservation ruins</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Войдите в <magic>защитные руины</magic>"
+  ],
+  "x": 35.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_ii/any_azure_dike_trinkets"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:enter_color_mixing_preservation_ruin",
+      "type": "advancement"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Wand",
+  "description": [
+    "The <keyword>Wand</keyword> is the basic casting tool - inscribe any spell recipe on it at your spell book and right-click to cast, at the cost of <property>source</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Волшебная палочка</keyword> - базовый инструмент для каста: впишите в неё любое заклинание через спелл-бук и кликните ПКМ, чтобы сотворить его ценой <property>сурса</property>."
+  ],
+  "icon": "ars_nouveau:wand",
+  "x": 107.5,
+  "y": 11,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:wand",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

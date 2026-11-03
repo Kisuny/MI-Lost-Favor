@@ -1,0 +1,18 @@
+{
+  "title": "Jump Ring",
+  "icon": "ars_nouveau:jump_ring",
+  "x": 103,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/ring_of_potential"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:jump_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

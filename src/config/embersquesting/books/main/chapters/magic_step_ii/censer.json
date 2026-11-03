@@ -1,0 +1,25 @@
+{
+  "title": "Censer",
+  "description": [
+    "Place it atop an altar to increase its capacity by 2.",
+    "",
+    "Can also be used to burn plants, the incense from which will have effects based on what plant is burned.",
+    "",
+    "Consult with your Ars Ecclesia for effects."
+  ],
+  "icon": "eidolon_repraised:censer",
+  "x": 73,
+  "y": 29,
+  "deps": {
+    "all": [
+      "magic_step_ii/arcane_gold_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:censer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

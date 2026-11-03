@@ -1,0 +1,25 @@
+{
+  "title": "Hang Glider",
+  "description": [
+    "Allows for <positive>downward gliding</positive>, works well with the <keyword>Slime Sling</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Позволяет <positive>планировать вниз</positive>, хорошо сочетается с <keyword>Slime Sling</keyword>"
+  ],
+  "icon": "hangglider:hang_glider",
+  "x": 13.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hangglider:hang_glider",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

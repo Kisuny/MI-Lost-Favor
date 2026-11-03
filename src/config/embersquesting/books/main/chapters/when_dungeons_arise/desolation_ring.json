@@ -1,0 +1,22 @@
+{
+  "title": "Desolation Ring",
+  "icon": "enigmaticlegacyplus:desolation_ring{\"enigmaticlegacyplus:eldritch_timer\":1.0f}",
+  "x": 38,
+  "y": 42,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/evil_essence",
+      "when_dungeons_arise/cosmic_heart",
+      "when_dungeons_arise/abyssal_heart"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enigmaticlegacyplus:desolation_ring",
+      "components": "{\"enigmaticlegacyplus:eldritch_timer\":1.0f}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

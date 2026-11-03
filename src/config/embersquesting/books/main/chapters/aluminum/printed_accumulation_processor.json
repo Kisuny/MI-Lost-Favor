@@ -1,0 +1,22 @@
+{
+  "title": "Printed Accumulation Processor",
+  "icon": "megacells:printed_accumulation_processor",
+  "x": 40.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "aluminum/sky_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "megacells:printed_accumulation_processor",
+      "type": "item"
+    },
+    {
+      "item": "megacells:accumulation_processor_press",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Activation Crystal",
+  "description": [
+    "The <keyword>Activation Crystal (Weak)</keyword> starts any ritual. Right-click the Master Ritual Stone with it once all supporting stones are in place. Stronger crystals (<keyword>Awakened</keyword>) are required for Tier II rituals."
+  ],
+  "icon": "neovitae:activation_crystal_weak",
+  "x": 46,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/elemental_ritual_stones"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:activation_crystal_weak",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Item Dropper",
+  "description": [
+    "The <keyword>Item Dropper</keyword> takes items piped into its top and quickly <wiggle amplitude=0.5 frequency=1.0 phase=1.0>spits them out</wiggle> straight down into the world.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Выбрасыватель предметов</keyword> принимает предметы через верх и быстро <wiggle amplitude=0.5 frequency=1.0 phase=1.0>выплёвывает их</wiggle> вниз, прямо в мир."
+  ],
+  "icon": "embers:item_dropper",
+  "x": 3.5,
+  "y": 23,
+  "deps": {
+    "all": [
+      "rock_and_steam/lapis_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:item_dropper",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

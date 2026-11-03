@@ -1,0 +1,26 @@
+{
+  "title": "Smoke Tox Pot",
+  "description": [
+    "There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from <poison>TOXIN</poison>, I have managed to create this cloudy gas that weakens and blinds in a small area.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Я усовершенствовал состав масла усталости с помощью <poison>токсина</poison> и получил смесь способную, при резком изменении внутренней энергии, взрываться газом со свойствами предшественника."
+  ],
+  "icon": "toxony:smoke_tox_pot",
+  "x": 31,
+  "y": 33.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/empty_tox_pot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:smoke_tox_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

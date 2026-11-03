@@ -1,0 +1,49 @@
+{
+  "title": "Are you sure it's Small Ships?",
+  "description": [
+    "• <positive>Place</positive> the ship <magic>far away into water</magic> - they need space to spawn.",
+    "",
+    "• <positive>Right-click</positive> to <positive>sit in the ship</positive>.",
+    "",
+    "§lWhile sitting in the Ship§r:",
+    "• Press <keyword>Radial Menu Button</keyword> to <positive>open/close the sail</positive>.",
+    "• <keyword>\\[W\\] / \\[S\\]</keyword> to <positive>increase or decrease sail speed</positive>.",
+    "",
+    "• <keyword>Third Person View (F5) + Mousewheel</keyword> = <positive>Adjust camera distance</positive>.",
+    "",
+    "• <positive>Right-click</positive> an entity to <positive>dismount</positive> it from the ship.",
+    "",
+    "• To <positive>open inventory</positive> outside of the ship: <positive>crouch + right-click</positive>.",
+    "",
+    "You can read more about each ship, their speeds, and other details <click action=open_url value='https://github.com/talhanation/wiki/wiki/Small-Ships-Wiki'><u>here</u></click>!"
+  ],
+  "icon": "smallships:oak_cog",
+  "x": 35,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "first_steps/lead_saw"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "smallships:oak_cog",
+      "tag": "smallships:ships",
+      "type": "item",
+      "title": "Any Ships"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_overworld",
+      "type": "item"
+    },
+    {
+      "title": "New Radial Menu Button",
+      "id": "milf:radial/sail",
+      "type": "custom"
+    }
+  ],
+  "shape": "diamond"
+}

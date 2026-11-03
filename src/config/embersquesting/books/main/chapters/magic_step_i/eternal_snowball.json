@@ -1,0 +1,26 @@
+{
+  "title": "Eternal Snowball",
+  "description": [
+    "An inexhaustable barrage of <keyword>snowballs</keyword> can be obtained by performing the <keyword>Quartz Ritual</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Бесконечный дождь <keyword>снежков</keyword>"
+  ],
+  "icon": "paganbless:eternal_snowball",
+  "x": 6.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_quartz"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:eternal_snowball",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Oanna Bloom",
+  "description": [
+    "Hold down the <positive>right mouse button + Shift key</positive> on the <keyword>Lily Pad</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Зажми правую кнопку мыши и шифт</positive> на <keyword>кувшинке</keyword>!"
+  ],
+  "icon": "eidolon_repraised:oanna_bloom",
+  "x": 63.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_ii/athame"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:oanna_bloom",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:lily_pad",
+      "type": "observe",
+      "icon": "minecraft:lily_pad"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle",
+  "lines_out": "hover"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Edges of the World",
+  "description": [
+    "<named>Auromancy</named> is unlocked by <wave>exploring the edges of the world</wave>: descend to the <property>deepest depths</property> and climb the <property>highest peaks</property> you can find. The game will tell you in chat when each one counts.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Ауромантия</named> открывается, если <wave>исследовать края мира</wave>: спустись в <property>самые глубины</property> и поднимись на <property>самые высокие вершины</property>. Каждый засчитанный шаг игра отметит в чате."
+  ],
+  "x": 48,
+  "y": 32,
+  "deps": {
+    "all": [
+      "magic_step_i/crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "gear"
+}

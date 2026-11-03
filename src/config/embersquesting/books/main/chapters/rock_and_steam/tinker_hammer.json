@@ -1,0 +1,34 @@
+{
+  "title": "Tinker Hammer",
+  "description": [
+    "The <keyword>Tinker's Hammer</keyword> is your main Ember tool.",
+    "",
+    "<named>Linking:</named> RMB an <keyword>Emitter</keyword>, then RMB a <keyword>Receptor</keyword> or <keyword>Relay</keyword>. There is no distance limit, but a burst that travels <warning>too long</warning> fades away along with its Ember.",
+    "",
+    "It also <shake amplitude=0.3 frequency=1.0>pounds</shake> items on the <keyword>Dawnstone Anvil</keyword> and disconnects pipes from each other.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Инженерный молот</keyword> - главный инструмент для работы с эмбером.",
+    "",
+    "<named>Связывание:</named> ПКМ по <keyword>излучателю</keyword>, затем ПКМ по <keyword>приёмнику</keyword> или <keyword>реле</keyword>. Ограничения по расстоянию нет, но пакет, летящий <warning>слишком долго</warning>, рассеивается вместе со всем эмбером.",
+    "",
+    "Ещё им <shake amplitude=0.3 frequency=1.0>куют</shake> предметы на <keyword>Золотитовой наковальне</keyword> и разъединяют соседние трубы."
+  ],
+  "icon": "embers:tinker_hammer",
+  "x": 5,
+  "y": 13,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_activator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:tinker_hammer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

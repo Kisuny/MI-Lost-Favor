@@ -1,0 +1,24 @@
+{
+  "title": "Charge Necklace",
+  "icon": "gaze:charge_necklace",
+  "x": 80,
+  "y": 8,
+  "deps": {
+    "all": [
+      "magic_step_ii/ornate_necklace",
+      "magic_step_ii/void_salts",
+      "magic_step_ii/umbral_spirit",
+      "magic_step_ii/fused_consciousness",
+      "magic_step_ii/null_slate",
+      "magic_step_ii/mnemonic_fragment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "gaze:charge_necklace",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

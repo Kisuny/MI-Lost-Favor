@@ -1,0 +1,19 @@
+{
+  "title": "Curse Transposer",
+  "icon": "enigmaticlegacyplus:curse_transposer",
+  "x": 37,
+  "y": 20,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/enchantment_transposer",
+      "when_dungeons_arise/evil_essence"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:curse_transposer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

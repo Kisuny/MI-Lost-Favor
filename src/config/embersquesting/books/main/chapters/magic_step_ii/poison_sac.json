@@ -1,0 +1,27 @@
+{
+  "title": "Poison Sac",
+  "description": [
+    "Drops from a <poison>poisoned</poison> <keyword>squid</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Выпадает из <poison>отравленного</poison> <keyword>кальмара</keyword>."
+  ],
+  "icon": "toxony:poison_sac",
+  "x": 24.5,
+  "y": 38.5,
+  "deps": {
+    "any": [
+      "magic_step_ii/any_scalpels"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:poison_sac",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

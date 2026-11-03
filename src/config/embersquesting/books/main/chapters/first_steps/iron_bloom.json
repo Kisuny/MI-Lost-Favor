@@ -1,0 +1,35 @@
+{
+  "title": "Iron Bloom",
+  "description": [
+    "New mobs",
+    "Don't forget to decorate your base with <click action=open_quest value='first_steps/chunk_claiming'><u>flags!</u></click> ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "не забудьте украсить свою базу <click action=open_quest value='first_steps/chunk_claiming'><u>флажками!</u></click> "
+  ],
+  "icon": "milf:iron_bloom",
+  "x": 35.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "first_steps/crushed_iron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:iron_bloom",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "New mobs and tools/relics in chests",
+      "id": "milf:milestone/iron_bloom",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "rsquare"
+}

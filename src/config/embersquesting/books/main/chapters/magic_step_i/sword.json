@@ -1,0 +1,33 @@
+{
+  "title": "Sword",
+  "description": [
+    " <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>",
+    "",
+    "This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a <keyword>projectile</keyword>, <keyword>self-cast</keyword>, etc - so feel free to experiment.",
+    "",
+    "You can <positive>enhance</positive> this and other spells using the <keyword>Amplify</keyword> glyph!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>",
+    "",
+    "Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть <keyword>снаряд</keyword>, <keyword>самоналожение</keyword> и т.д. - эксперементируйте.",
+    "",
+    "Вы можете <positive>усилить</positive> это и другие заклинания используя глиф <keyword>Amplify</keyword>!"
+  ],
+  "icon": "ars_nouveau:glyph_harm",
+  "x": 22.5,
+  "y": 54.5,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

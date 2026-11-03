@@ -1,0 +1,22 @@
+{
+  "title": "Reaper Scythe",
+  "icon": "eidolon_repraised:reaper_scythe",
+  "x": 82,
+  "y": 28,
+  "deps": {
+    "min": {
+      "count": 1,
+      "of": [
+        "magic_step_ii/holy_symbol",
+        "magic_step_ii/unholy_symbol"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:reaper_scythe",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

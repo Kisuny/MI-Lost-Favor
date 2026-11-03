@@ -1,0 +1,22 @@
+{
+  "title": "Printed Calculation Processor",
+  "icon": "ae2:calculation_processor_press",
+  "x": 18,
+  "y": 14,
+  "deps": {
+    "all": [
+      "automation_n_stuff/stainless_steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:printed_calculation_processor",
+      "type": "item"
+    },
+    {
+      "item": "ae2:calculation_processor_press",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

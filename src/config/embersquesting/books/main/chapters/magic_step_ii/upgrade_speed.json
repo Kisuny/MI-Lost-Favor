@@ -1,0 +1,26 @@
+{
+  "title": "Upgrade Speed",
+  "description": [
+    "<c value=#DEB3E0>Pylons</c>§r allows to <c value=#FEECD6>speed up</c>§r crafts in §l<c value=#e4affa>Spectrum</c>§r§r multiblocks. Also, they can be used as upgrades for <c value=#9BB8ED>Modern Industrialization</c>§r machines.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#DEB3E0>Пилон</c>§r позволяет <c value=#FEECD6>ускорить</c>§r крафты в мультиблочных структурах мода Spectrum, так же данный пилон помогает ускорить машинки из мода <c value=#9BB8ED>Modern industrialization</c>§r."
+  ],
+  "icon": "spectrum:upgrade_speed",
+  "x": 2,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_onyx"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:upgrade_speed",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

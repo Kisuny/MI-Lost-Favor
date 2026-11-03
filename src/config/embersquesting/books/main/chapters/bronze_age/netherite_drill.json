@@ -1,0 +1,18 @@
+{
+  "title": "Netherite Drill",
+  "icon": "immersive_machinery:netherite_drill",
+  "x": 28.5,
+  "y": 21,
+  "deps": {
+    "all": [
+      "bronze_age/diamond_drill"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_machinery:netherite_drill",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

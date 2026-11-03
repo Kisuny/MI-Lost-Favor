@@ -1,0 +1,20 @@
+{
+  "title": "Glass Crest Workstaff",
+  "icon": "spectrum:glass_crest_workstaff{\"minecraft:enchantments\":{levels:{\"minecraft:fortune\":4}}}",
+  "x": 66.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/malachite_workstaff"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:glass_crest_workstaff",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:fortune\":4}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

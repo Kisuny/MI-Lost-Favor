@@ -1,0 +1,19 @@
+{
+  "title": "Cobblestone",
+  "icon": "minecraft:cobblestone",
+  "x": 8.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "first_steps/flint_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 9,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

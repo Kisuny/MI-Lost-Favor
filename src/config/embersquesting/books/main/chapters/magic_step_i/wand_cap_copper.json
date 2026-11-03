@@ -1,0 +1,26 @@
+{
+  "title": "Wand Cap Copper",
+  "description": [
+    "<keyword>Copper Caps</keyword> work like iron ones, but channel <property>Ordo</property> and <property>Perditio</property> vis as efficiently as <named>gold</named>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Медные наконечники</keyword> работают как железные, но проводят vis <property>Ordo</property> и <property>Perditio</property> так же эффективно, как <named>золотые</named>."
+  ],
+  "icon": "thaumaturge:wand_cap_copper",
+  "x": 61.5,
+  "y": 33,
+  "deps": {
+    "all": [
+      "magic_step_i/wand_rod_greatwood"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_cap_copper",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

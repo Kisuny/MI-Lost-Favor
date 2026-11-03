@@ -1,0 +1,24 @@
+{
+  "title": "Biodiesel Bucket",
+  "icon": "immersiveengineering:biodiesel_bucket",
+  "x": 17,
+  "y": 13,
+  "deps": {
+    "all": [
+      "simple_machinery/ethanol_bucket",
+      "simple_machinery/plantoil_bucket",
+      "bronze_age/saltpeter_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:biodiesel_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

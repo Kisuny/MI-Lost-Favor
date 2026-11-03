@@ -1,0 +1,22 @@
+{
+  "title": "Condenser",
+  "icon": "ae2:condenser",
+  "x": 17.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "aluminum/blueprint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:condenser",
+      "type": "item"
+    },
+    {
+      "item": "ae2:singularity",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

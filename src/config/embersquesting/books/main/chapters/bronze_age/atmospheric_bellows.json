@@ -1,0 +1,30 @@
+{
+  "title": "Atmospheric Bellows",
+  "description": [
+    "<keyword>Atmospheric Bellows</keyword> limit the coil to <property>blasting</property> recipes, but <positive>double its speed</positive>.",
+    "",
+    "Can not be used together with the <keyword>Char Instiller</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Атмосферные меха</keyword> ограничивают катушку рецептами <property>плавильной печи</property>, зато <positive>удваивают скорость</positive>.",
+    "",
+    "Нельзя ставить вместе с <keyword>Коптильней</keyword>."
+  ],
+  "icon": "embers:atmospheric_bellows",
+  "x": 31.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "bronze_age/hearth_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:atmospheric_bellows",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

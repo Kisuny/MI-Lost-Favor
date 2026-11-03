@@ -1,0 +1,27 @@
+{
+  "title": "Ring Of The Hoarder",
+  "description": [
+    "Explosions are chaotic - great for mining, terrible for looting. The <keyword>Ring of the Hoarder</keyword> entangles the blast with your soul, causing all the <positive>debris and loot</positive> to appear <shake amplitude=0.3 frequency=1.0>right at your feet</shake> instead of scattering everywhere.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Взрывы хаотичны - отлично подходят для добычи, но ужасны для сбора лута. <keyword>Ring of the Hoarder</keyword> связывает взрыв с вашей душой, из-за чего весь <positive>мусор и добыча</positive> появляются <shake amplitude=0.3 frequency=1.0>прямо у ваших ног</shake>, а не разлетаются по округе."
+  ],
+  "icon": "malum:ring_of_the_hoarder",
+  "x": 89.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ring_of_the_hoarder",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "lighting",
+  "description": [
+    " <item id=ars_nouveau:glyph_touch tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_light tooltip=true/>",
+    "",
+    "<positive>Free</positive> lighting for <keyword>rooms</keyword> or <keyword>mines</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_light tooltip=true/>",
+    "",
+    "<positive>Бесплатный</positive> свет в <keyword>помещениях</keyword> или <keyword>шахтах</keyword>"
+  ],
+  "icon": "ars_nouveau:glyph_light",
+  "x": 23,
+  "y": 54,
+  "deps": {
+    "all": [
+      "magic_step_i/spellcrafting"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

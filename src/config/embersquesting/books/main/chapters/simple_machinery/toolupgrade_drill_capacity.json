@@ -1,0 +1,19 @@
+{
+  "title": "Toolupgrade Drill Capacity",
+  "icon": "immersiveengineering:toolupgrade_drill_capacity",
+  "x": 16,
+  "y": 11.5,
+  "deps": {
+    "any": [
+      "simple_machinery/drill",
+      "simple_machinery/buzzsaw"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:toolupgrade_drill_capacity",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

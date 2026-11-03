@@ -1,0 +1,27 @@
+{
+  "title": "Bronze Barrel",
+  "icon": "modern_industrialization:bronze_barrel{\"modern_industrialization:item_storage\":{amount:2048L,resource:{id:\"minecraft:potato\"}}}",
+  "x": 19,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "simple_machinery/potato_3"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "modern_industrialization:bronze_barrel",
+      "components": "{\"modern_industrialization:item_storage\":{amount:2048L,resource:{id:\"minecraft:potato\"}}}",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:fermenter_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

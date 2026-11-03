@@ -1,0 +1,30 @@
+{
+  "title": "Caster Bag",
+  "description": [
+    "It has far more <property>storage space</property>!",
+    "",
+    "§lBefore upgrading, empty your <named>Trinkets Pouch</named>§r",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Имеет куда большую <property>вместительность</property>!",
+    "",
+    "§lПеред улучшением опустошите свой <named>Trinkets Pouch</named>§r"
+  ],
+  "icon": "ars_elemental:caster_bag",
+  "x": 52,
+  "y": 53.5,
+  "deps": {
+    "all": [
+      "magic_step_i/onyx_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:caster_bag",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Toolupgrade Drill Damage",
+  "icon": "immersiveengineering:toolupgrade_drill_damage",
+  "x": 17.5,
+  "y": 12,
+  "deps": {
+    "all": [
+      "simple_machinery/drill"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:toolupgrade_drill_damage",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

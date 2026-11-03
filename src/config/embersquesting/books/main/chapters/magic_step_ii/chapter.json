@@ -1,0 +1,56 @@
+{
+  "title": "Midgame Magic",
+  "icon": "eidolon_repraised:sanguine_amulet",
+  "order": 11,
+  "scope": "team",
+  "links": [
+    {
+      "quest": "magic_step_i/magebloom_brush",
+      "x": 124.0,
+      "y": 23.0
+    },
+    {
+      "quest": "when_dungeons_arise/gate_pearl_6",
+      "x": 38.5,
+      "y": 44.0
+    }
+  ],
+  "group": "shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_magic_midgame",
+  "defaults": {
+    "progression": "linear"
+  },
+  "decorations": [
+    {
+      "width": 2.5714285,
+      "height": 2.5714285,
+      "content": {
+        "color": "#37E745",
+        "texture": "toxony:textures/particle/aqua_splash_4.png",
+        "type": "image"
+      },
+      "x": 23.138784,
+      "y": 45.257
+    },
+    {
+      "width": 2.5714285,
+      "height": 2.5714285,
+      "content": {
+        "texture": "toxony:textures/item/flail_spin_1.png",
+        "type": "image"
+      },
+      "x": 33.65495,
+      "y": 45.75218
+    },
+    {
+      "width": 2.5714285,
+      "height": 2.5714285,
+      "content": {
+        "color": "#37E745",
+        "texture": "toxony:textures/particle/aqua_splash_4.png",
+        "type": "image"
+      },
+      "x": 33.190666,
+      "y": 45.216465
+    }
+  ]
+}

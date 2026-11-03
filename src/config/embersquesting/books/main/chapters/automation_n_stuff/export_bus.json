@@ -1,0 +1,21 @@
+{
+  "title": "Export Bus",
+  "description": [
+    "Takes items from system"
+  ],
+  "icon": "ae2:export_bus",
+  "x": 22,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/plastic_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:export_bus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

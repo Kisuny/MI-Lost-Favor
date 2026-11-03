@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Sword",
+  "icon": "aquaculture:neptunium_sword",
+  "x": 38.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_sword",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

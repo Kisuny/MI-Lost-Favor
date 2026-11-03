@@ -1,0 +1,63 @@
+{
+  "title": "Crucible",
+  "description": [
+    "The <keyword>Crucible</keyword> is the alchemy station of <curse>Eidolon</curse>: here you brew items whose recipes consist of <property>several steps</property> instead of a single craft.",
+    "",
+    "<property>Preparation:</property> place the Crucible above a <fire>heat source</fire> - a campfire or fire on netherrack - and fill it with <aqua>water</aqua>. Wait until the water <wave>boils</wave>.",
+    "",
+    "<property>Brewing:</property> every recipe consists of <property>steps</property>, done from top to bottom. Throw in all items of the current step - their order inside the step does not matter. When the liquid <pulse>changes color</pulse>, the step is done: <warning>hurry</warning> with the next one, the time is limited.",
+    "",
+    "Some steps require <keyword>stirring</keyword> - <property>RMB</property> the Crucible the indicated number of times.",
+    "",
+    "<warning>A mistake ruins the brew</warning> - wrong items or too long a pause and the reagents are lost.",
+    "",
+    "All recipes and their steps are in <keyword>EMI</keyword> - press <property>U</property> on the Crucible.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Котёл</keyword> - алхимическая станция <curse>Eidolon</curse>: в нём варят предметы, рецепт которых состоит из <property>нескольких этапов</property>, а не из одного крафта.",
+    "",
+    "<property>Подготовка:</property> поставь Котёл над <fire>источником жара</fire> - костром или огнём на незерраке - и налей в него <aqua>воду</aqua>. Дождись, пока вода <wave>закипит</wave>.",
+    "",
+    "<property>Варка:</property> каждый рецепт состоит из <property>этапов</property>, которые выполняются сверху вниз. Брось все предметы текущего этапа - порядок внутри этапа не важен. Когда жидкость <pulse>сменит цвет</pulse>, этап готов: <warning>поторопись</warning> со следующим, время ограничено.",
+    "",
+    "Некоторые этапы требуют <keyword>помешивания</keyword> - нажми <property>ПКМ</property> по Котлу столько раз, сколько указано.",
+    "",
+    "<warning>Ошибка портит варево</warning> - не те предметы или слишком долгая пауза, и реагенты пропадут.",
+    "",
+    "Все рецепты и их этапы есть в <keyword>EMI</keyword> - нажми <property>U</property> на Котле."
+  ],
+  "icon": "eidolon_repraised:crucible",
+  "x": 63,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_ii/pewter_blend"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:crucible",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:netherrack",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:campfire",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:flint_and_steel",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:water_bucket",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

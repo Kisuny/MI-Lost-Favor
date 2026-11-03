@@ -1,0 +1,18 @@
+{
+  "title": "Charger",
+  "icon": "ae2:charger",
+  "x": 10.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/flux_gate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:charger",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

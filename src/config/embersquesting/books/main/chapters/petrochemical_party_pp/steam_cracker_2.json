@@ -1,0 +1,19 @@
+{
+  "title": "Steam Cracker",
+  "icon": "modern_industrialization:steam_cracker",
+  "x": 19,
+  "y": 26,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/steam_cracker_placer",
+      "petrochemical_party_pp/kerosene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steam_cracker",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Wand Rod Greatwood",
+  "description": [
+    "A rod made from <nature>Greatwood</nature> holds far more vis than a stick. Greatwood trees grow in <nature>magical forests</nature>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Стержень из <nature>великого древа</nature> вмещает гораздо больше vis, чем палка. Великие деревья растут в <nature>магических лесах</nature>."
+  ],
+  "icon": "thaumaturge:wand_rod_greatwood",
+  "x": 56,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_i/focus_1"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_rod_greatwood",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 2.0
+}

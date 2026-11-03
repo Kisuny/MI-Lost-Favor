@@ -1,0 +1,20 @@
+{
+  "title": "Glass Crest Ultra Greatsword",
+  "icon": "spectrum:glass_crest_ultra_greatsword{\"minecraft:enchantments\":{levels:{\"minecraft:sweeping_edge\":4}}}",
+  "x": 66.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_ii/malachite_ultra_greatsword"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:glass_crest_ultra_greatsword",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:sweeping_edge\":4}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

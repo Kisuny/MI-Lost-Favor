@@ -1,0 +1,28 @@
+{
+  "title": "Infused Beverage",
+  "description": [
+    "Anyone <c value=#FEECD6>interested</c>§r is invited to read the §l<c value=#e4affa>Spectrum</c>§r§r guidebook, no point in copying the information to here!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Всех <c value=#FEECD6>заинтересовавшихся</c>§r приглашаем в книжку <c value=#9BB8ED>Spectrum</c>§r'a, расписывать тут такую механику не видим смысла!"
+  ],
+  "icon": "spectrum:infused_beverage{\"minecraft:potion_contents\":{custom_effects:[{duration:9600,id:\"minecraft:absorption\",\"neoforge:cures\":[\"milk\",\"protected_by_totem\"],show_icon:1b},{duration:9600,id:\"spectrum:nourishing\",\"neoforge:cures\":[\"milk\",\"protected_by_totem\"],show_icon:1b}]},\"spectrum:beverage\":{days_aged:12L,thickness:1.0f},\"spectrum:infused_beverage\":{color:12018987,variant:\"myceylon_apple_juice\"},\"spectrum:is_preview_item\":{}}",
+  "x": 42,
+  "y": 56.5,
+  "deps": {
+    "all": [
+      "magic_step_i/shake_amplitude_0_35_frequency_1_2_but_how_do_you_make_beer_shake"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:infused_beverage",
+      "components": "{\"minecraft:potion_contents\":{custom_effects:[{duration:9600,id:\"minecraft:absorption\",\"neoforge:cures\":[\"milk\",\"protected_by_totem\"],show_icon:1b},{duration:9600,id:\"spectrum:nourishing\",\"neoforge:cures\":[\"milk\",\"protected_by_totem\"],show_icon:1b}]},\"spectrum:beverage\":{days_aged:12L,thickness:1.0f},\"spectrum:infused_beverage\":{color:12018987,variant:\"myceylon_apple_juice\"},\"spectrum:is_preview_item\":{}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

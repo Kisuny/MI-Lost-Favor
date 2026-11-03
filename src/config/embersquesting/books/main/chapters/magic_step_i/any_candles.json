@@ -1,0 +1,22 @@
+{
+  "title": "Any Candles",
+  "description": [
+    "§lCandle§r",
+    "• +1x Recharge Rate"
+  ],
+  "x": 35.5,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_i/torch"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "minecraft:candles",
+      "type": "item",
+      "title": "Any Candles"
+    }
+  ],
+  "shape": "circle"
+}

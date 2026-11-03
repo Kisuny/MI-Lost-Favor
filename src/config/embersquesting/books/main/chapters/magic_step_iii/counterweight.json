@@ -1,0 +1,30 @@
+{
+  "title": "Counterweight",
+  "description": [
+    "By taking advantage of the remnant levitative energies left in a Shulker Shell and molding them through the use of a Blood Feather, a Counterweight can be made that will decrease the gravity experienced by the user. The effect is similar to that of a Potion of Slow Falling, while also being able to stack with it.",
+    "",
+    "It works exceptionally well when used alongside methods of increasing jump height.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя остаточную левитационную энергию, сохранившуюся в панцире шалкера, и придавая ей нужную форму с помощью кровавого пера, можно создать противовес, который уменьшит силу тяжести, действующую на юзера. Этот эффект схож с действием зелья медленного падения, при этом он может суммироваться с ним.",
+    "",
+    "Это дает отличный результат в сочетании с методами увеличения высоты прыжка."
+  ],
+  "icon": "risus:counterweight",
+  "x": 20,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:counterweight",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

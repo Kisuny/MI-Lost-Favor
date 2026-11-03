@@ -1,0 +1,22 @@
+{
+  "title": "Rubber Helmet",
+  "icon": "modern_industrialization:rubber_helmet",
+  "x": 9.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "simple_machinery/metal_press"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:rubber_helmet",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:rubber_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

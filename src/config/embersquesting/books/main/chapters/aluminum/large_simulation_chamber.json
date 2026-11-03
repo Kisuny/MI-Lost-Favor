@@ -1,0 +1,18 @@
+{
+  "title": "Large Simulation Chamber",
+  "icon": "hostile_neural_industrialization:large_simulation_chamber",
+  "x": 5,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "aluminum/electric_simulation_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hostile_neural_industrialization:large_simulation_chamber",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

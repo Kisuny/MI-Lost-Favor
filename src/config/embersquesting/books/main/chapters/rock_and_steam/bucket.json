@@ -1,0 +1,18 @@
+{
+  "title": "Bucket",
+  "icon": "minecraft:bucket",
+  "x": 7.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

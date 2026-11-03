@@ -1,0 +1,67 @@
+{
+  "title": "Capacity",
+  "description": [
+    "You can change the <keyword>Capacity mechanism</keyword> by <positive>scrolling the wheels</positive> at the bottom to decrease capacity, or up to increase capacity.",
+    "",
+    "Why is this necessary?",
+    "",
+    "Sometimes we need to have a small number of items, for example, when we first start automating the creation of <keyword>electrical circuits</keyword>, we do not need to have too many of them, <keyword>1 to 10 pieces</keyword> will be enough to start with, in order not to waste all our <keyword>aluminum reserves</keyword>, we limit their creation and keep a couple of them in the mechanism, take them as needed.",
+    "",
+    "The <keyword>Configurable Chest</keyword> works by the same logic, only it has many slots in it",
+    "",
+    "",
+    {
+      "width": 200,
+      "height": 60,
+      "texture": "milf:textures/quest_pic/capacity.png",
+      "type": "image"
+    },
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вы можете изменять <keyword>Вместимость механизма</keyword> <positive>прокручивая колёсики</positive> внизу, чтобы уменьшить вместимость, либо вверх, чтобы повысить вместимость. ",
+    "",
+    "Зачем это нужно? ",
+    "",
+    "Иногда нам необходимо, чтобы у нас было небольшое количество каких-то предметов, например, когда мы только начнём автоматизировать создание электрических микросхем, нам не нужно чтобы у нас было их слишком много, для начала нам хватит от 1 до 10 штук, чтобы не тратить все наши запасы алюминия мы ограничиваем их создание и держим парочку в механизме, берем по надобности. ",
+    "",
+    "По такой же логике работает <keyword>Конфигурационный сундук</keyword>, только в нём много слотов  ",
+    "",
+    "",
+    {
+      "width": 200,
+      "height": 60,
+      "texture": "milf:textures/quest_pic/capacity.png",
+      "type": "image"
+    }
+  ],
+  "icon": "modern_industrialization:configurable_chest",
+  "x": 3,
+  "y": 5,
+  "deps": {
+    "all": [
+      "bhow_to_automate/item_locking"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Capacity"
+    },
+    {
+      "item": "modern_industrialization:configurable_chest",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "chipped:spooky_jack_o_lantern",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle",
+  "invisible_until_deps_visible": true
+}

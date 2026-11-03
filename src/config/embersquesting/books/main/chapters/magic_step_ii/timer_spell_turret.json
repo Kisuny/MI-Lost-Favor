@@ -1,0 +1,26 @@
+{
+  "title": "Timer Spell Turret",
+  "description": [
+    "The <keyword>Timer Spell Turret</keyword> fires automatically on a timer (default 1 second) - right-click to increase the interval, punch to decrease it, or sneak for 10-second steps. Setting it to 0 or feeding it a Redstone signal disables it. Lock it with the <keyword>Dominion Wand</keyword> to prevent further changes.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Timer Spell Turret</keyword> стреляет автоматически по таймеру (по умолчанию раз в секунду) - ПКМ увеличивает интервал, удар уменьшает, а с шифтом изменение идёт шагом в 10 секунд. Установка на 0 или подача редстоуна отключает её. Заблокировать настройки можно <keyword>Жезлом владения</keyword>."
+  ],
+  "icon": "ars_nouveau:timer_spell_turret",
+  "x": 111,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/basic_spell_turret"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:timer_spell_turret",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

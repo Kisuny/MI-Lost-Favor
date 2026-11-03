@@ -1,0 +1,26 @@
+{
+  "title": "Tag Storage Bus",
+  "icon": "extendedae:tag_storage_bus",
+  "x": 10.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/semi_dark_monitor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extendedae:tag_storage_bus",
+      "type": "item"
+    },
+    {
+      "item": "extendedae:mod_storage_bus",
+      "type": "item"
+    },
+    {
+      "item": "extendedae:precise_storage_bus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

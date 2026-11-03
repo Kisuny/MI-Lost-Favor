@@ -1,0 +1,51 @@
+{
+  "title": "Augmenting Table",
+  "icon": "apotheosis:augmenting_table",
+  "x": 30,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/umbral_spirit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apotheosis:augmenting_table",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:aether_vestiges",
+      "type": "item"
+    },
+    {
+      "item": "forbidden_arcanus:stellarite_block",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "malum:block_of_malignant_pewter",
+      "count": 3,
+      "type": "item"
+    },
+    {
+      "item": "apotheosis:godforged_pearl",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "malum:umbral_spirit",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "id": "milf:stage/augmenting_table",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "complete": {
+    "min": 5
+  },
+  "shape": "heart"
+}

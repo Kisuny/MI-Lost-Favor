@@ -1,0 +1,28 @@
+{
+  "title": "Any Scalpels",
+  "description": [
+    "Many parts of a mob, including ourselves, react differently when <poison>toxins</poison> are introduced in their bodies. This makes §6unique ingredients§r when certain mobs are <poison>afflicted</poison>. As such, we should extract them. When a mob <poison>dies while being afflicted with poison</poison>, they can drop §6special ingredients§r. However, a sword is too crude to extract them. As such, they must die by a <keyword>scalpel</keyword> in order to carefully extract these §6valuable parts§r.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Многие части мобов, включая нас самих, по-разному реагируют на попадание <poison>токсинов</poison> в их организм. Таким образом, при поражении определенных мобов получаются §6уникальные ингредиенты§r. Поэтому мы должны добыть их. ",
+    "",
+    "Когда моб <poison>умирает, будучи пораженным ядом</poison>, с него могут выпасть §6особые предметы§r. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти §6ценные ингредиенты§r, их нужно умертвить <keyword>скальпелем</keyword>."
+  ],
+  "x": 24,
+  "y": 41,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_blend"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "toxony:scalpels",
+      "type": "item",
+      "title": "Any Scalpels"
+    }
+  ],
+  "shape": "circle"
+}

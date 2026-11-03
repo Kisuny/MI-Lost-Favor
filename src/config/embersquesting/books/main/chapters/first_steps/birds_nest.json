@@ -1,0 +1,27 @@
+{
+  "title": "Birds Nest",
+  "description": [
+    "<keyword>Bird nests</keyword> can sometimes be obtained from foliage when you <positive>cut down trees</positive>. Birds are very useful because they <positive>collect</positive> all kinds of debris in their nests. Who knows what you might find there?",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Иногда выпадает из листвы когда вы <positive>срубаете деревья</positive>, птицы очень полезны т.к. <positive>собирают всякий мусор</positive> у себя в гнёздах, кто знает, что там можно найти?"
+  ],
+  "icon": "birdnest:birds_nest",
+  "x": 13,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "first_steps/lead_hoe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "birdnest:birds_nest",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

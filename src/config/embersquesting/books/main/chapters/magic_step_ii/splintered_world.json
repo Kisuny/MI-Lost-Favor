@@ -1,0 +1,22 @@
+{
+  "title": "Splintered World",
+  "icon": "gaze:splintered_world",
+  "x": 80.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/umbral_spirit",
+      "magic_step_ii/malignant_pewter_ingot",
+      "magic_step_ii/auric_embers",
+      "magic_step_ii/complete_design"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "gaze:splintered_world",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

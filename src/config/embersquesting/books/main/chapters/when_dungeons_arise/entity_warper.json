@@ -1,0 +1,26 @@
+{
+  "title": "Entity Warper",
+  "description": [
+    "<property>RMB</property> <wiggle amplitude=0.5 frequency=1.0 phase=1.0>pulls</wiggle> every creature within <property>4 blocks</property> straight to you.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> <wiggle amplitude=0.5 frequency=1.0 phase=1.0>притягивает</wiggle> к тебе всех существ в радиусе <property>4 блоков</property>."
+  ],
+  "icon": "legendary_monsters:entity_warper",
+  "x": 18.5,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:entity_warper",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

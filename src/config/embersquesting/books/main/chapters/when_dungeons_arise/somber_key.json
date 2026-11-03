@@ -1,0 +1,52 @@
+{
+  "title": "Somber Key",
+  "description": [
+    "Combine the ring and the blade into the <keyword>Somber Key</keyword>.",
+    "",
+    "<property>RMB</property> in the middle of the <soul>Somber Trapdoor</soul> to break its lock. <warning>The Paladin waits below.</warning>",
+    "",
+    "The <blood>Possessed Paladin</blood> - the last defender of the fallen kingdom, <glitch frequency=0.6 shiftChance=0.05>no longer in control of himself</glitch>.",
+    "",
+    "Drops the <keyword>Soul Great Sword</keyword> and a <soul>Corrupted Soul</soul>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Соедини кольцо и лезвие в <keyword>мрачный ключ</keyword>.",
+    "",
+    "<property>ПКМ</property> по центру <soul>мрачного люка</soul> сломает его замок. <warning>Внизу ждёт Паладин.</warning>",
+    "",
+    "<blood>Одержимый паладин</blood> - последний защитник павшего королевства, <glitch frequency=0.6 shiftChance=0.05>уже не властный над собой</glitch>.",
+    "",
+    "Роняет <keyword>великий меч душ</keyword> и <soul>повреждённую душу</soul>."
+  ],
+  "icon": "legendary_monsters:somber_key",
+  "x": 24,
+  "y": 23,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/collapsed_kingdom"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "legendary_monsters:posessed_paladin",
+      "type": "kill"
+    },
+    {
+      "advancement": "apotheosis:progression/summit",
+      "criterion": "kill_possessed_paladin",
+      "type": "advancement",
+      "title": "Slay the Possessed Paladin"
+    },
+    {
+      "item": "legendary_monsters:somber_key",
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 2
+  },
+  "shape": "hexagon",
+  "size": 1.5
+}

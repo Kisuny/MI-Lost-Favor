@@ -1,0 +1,30 @@
+{
+  "title": "Totem Of Moss",
+  "description": [
+    "<property>RMB</property> on a block summons a tamed <nature>Mossy Golem</nature>. It fights by your side and <positive>speeds up crop growth</positive> nearby.",
+    "",
+    "If it dies, the totem can summon it again. <property>Shift + RMB</property> on the golem makes it stand still.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> по блоку призывает приручённого <nature>мхового голема</nature>. Он сражается рядом с тобой и <positive>ускоряет рост посевов</positive> поблизости.",
+    "",
+    "Если он погибнет, тотем призовёт его снова. <property>Shift + ПКМ</property> по голему заставит его стоять на месте."
+  ],
+  "icon": "legendary_monsters:totem_of_moss",
+  "x": 21.5,
+  "y": 23,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:totem_of_moss",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

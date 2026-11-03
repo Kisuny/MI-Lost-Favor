@@ -1,0 +1,20 @@
+{
+  "title": "Water Tank",
+  "icon": "sfm:water_tank",
+  "x": 7,
+  "y": 5,
+  "deps": {
+    "all": [
+      "simple_machinery/so_what_s_the_point_of_all_this",
+      "petrochemical_party/pump",
+      "magic_step_i/whiff_of_magic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "sfm:water_tank",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

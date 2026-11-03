@@ -1,0 +1,26 @@
+{
+  "title": "Familiar Drygmy",
+  "description": [
+    "The <keyword>Drygmy Familiar</keyword> increases the damage of <property>Earth</property> spells by 2 and gives a chance for extra loot when you kill mobs yourself, similar to Looting.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Фамильяр Драгми</keyword> увеличивает урон заклинаний <property>Земли</property> на 2 и даёт шанс на дополнительный лут, когда вы сами убиваете мобов - похоже на зачарование Looting."
+  ],
+  "icon": "ars_nouveau:familiar_drygmy",
+  "x": 108.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_binding"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:familiar_drygmy",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

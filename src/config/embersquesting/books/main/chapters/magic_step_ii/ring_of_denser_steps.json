@@ -1,0 +1,20 @@
+{
+  "title": "Ring Of Denser Steps",
+  "icon": "spectrum:ring_of_denser_steps",
+  "x": 13.5,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/stratine_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:ring_of_denser_steps",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

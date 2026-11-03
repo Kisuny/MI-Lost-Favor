@@ -1,0 +1,26 @@
+{
+  "title": "Withered Ribcage",
+  "description": [
+    "A chestplate made of the abomination's ribs. It protects you from <curse>Wither</curse> and inflicts it on anyone who hurts you.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нагрудник из рёбер мерзости. Защищает от <curse>иссушения</curse> и насылает его на всех, кто тебя ранит."
+  ],
+  "icon": "legendary_monsters:withered_ribcage",
+  "x": 17,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:withered_ribcage",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Aluminum Tank",
+  "icon": "modern_industrialization:aluminum_tank",
+  "x": 13,
+  "y": 2,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:aluminum_tank",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

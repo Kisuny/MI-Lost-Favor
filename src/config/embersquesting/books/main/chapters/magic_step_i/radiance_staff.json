@@ -1,0 +1,30 @@
+{
+  "title": "Radiance Staff",
+  "description": [
+    "<keyword>Invisible lighting</keyword>!",
+    "",
+    "An incredibly convenient way to <positive>light up your base</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Невидимый свет</keyword>!",
+    "",
+    "Невероятно удобный способ осветить своё Уб§m§0ожество§r§rежище"
+  ],
+  "icon": "spectrum:radiance_staff",
+  "x": 43,
+  "y": 50,
+  "deps": {
+    "all": [
+      "magic_step_i/magenta_pigment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:radiance_staff",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

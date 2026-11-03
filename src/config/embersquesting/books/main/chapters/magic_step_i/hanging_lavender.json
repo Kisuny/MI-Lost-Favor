@@ -1,0 +1,30 @@
+{
+  "title": "Hanging Lavender",
+  "icon": "paganbless:hanging_lavender",
+  "x": 3,
+  "y": 50,
+  "deps": {
+    "all": [
+      "magic_step_i/boline"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:hanging_lavender",
+      "type": "item"
+    },
+    {
+      "item": "paganbless:lavender",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "paganbless:lavender",
+      "count": 12,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

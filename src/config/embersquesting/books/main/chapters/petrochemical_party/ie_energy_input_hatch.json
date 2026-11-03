@@ -1,0 +1,18 @@
+{
+  "title": "Ie Energy Input Hatch",
+  "icon": "modern_industrialization:ie_energy_input_hatch",
+  "x": 15.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/wirecoil_redstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:ie_energy_input_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

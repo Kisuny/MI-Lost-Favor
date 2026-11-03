@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "description": [
+    "Collect all <c value=#FEECD6>available</c>§r pigments. Unfortunately, you <c value=#d33b2b>don't see a way</c>§r to get brown pigment with your CMY gemstone pallete. If only there was a way to get black...",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Соберите все <c value=#FEECD6>доступные</c>§r вам пигменты, к сожалению вы <c value=#d33b2b>не сможете</c>§r достать коричневый пигмент просто так, вам <c value=#FEECD6>придется</c>§r открыть <c value=#FEECD6>крафт</c>§r <c value=#CAE4C8>саженца</c>§r чтобы начать прогрессировать далее!"
+  ],
+  "x": 3.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/brown_sapling"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:collect_all_basic_pigments",
+      "type": "advancement"
+    }
+  ],
+  "shape": "square"
+}

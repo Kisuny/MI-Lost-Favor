@@ -1,0 +1,34 @@
+{
+  "title": "Wilden Wing",
+  "description": [
+    "You can summon a mob using a <click action=open_quest value='magic_step_ii/brazier'><u>brazier</u></click>"
+  ],
+  "icon": "ars_nouveau:wilden_wing",
+  "x": 113.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_wilden_summon"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:wilden_wing",
+      "type": "item"
+    },
+    {
+      "item": "enchanted:wool_of_bat",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:charcoal",
+      "type": "item"
+    },
+    {
+      "item": "eidolon_repraised:soul_shard",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

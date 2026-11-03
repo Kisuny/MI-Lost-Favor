@@ -1,0 +1,23 @@
+{
+  "title": "Acetaldehyde Bucket",
+  "icon": "immersiveengineering:acetaldehyde_bucket",
+  "x": 18.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "simple_machinery/ethanol_bucket",
+      "simple_machinery/refinery"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:acetaldehyde_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

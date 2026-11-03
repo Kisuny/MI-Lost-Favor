@@ -1,0 +1,30 @@
+{
+  "title": "Planter",
+  "description": [
+    "In <keyword>Planter</keyword>, you can grow specific plants such as the <keyword>Mirecap Mushroom</keyword> / the <keyword>Flowering Oanna</keyword> / <keyword>Sildrian Seed</keyword> / <keyword>Sprig Of Avennian</keyword>",
+    "",
+    "Use an <keyword>athame</keyword> to <positive>gather plants</positive>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В <keyword>Planter</keyword> можно выращивать специфические растения, такие как <keyword>Mirecap Mushroom</keyword> / <keyword>Flowering Oanna</keyword> / <keyword>Sildrian Seed</keyword> / <keyword>Sprig Of Avennian</keyword>",
+    "",
+    "Для сбора растений используйте <keyword>Athame</keyword>"
+  ],
+  "icon": "eidolon_repraised:planter",
+  "x": 61,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/athame"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:planter",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Spiritus Gem Common",
+  "description": [
+    "The Common gem holds up to 1,024 Spiritus."
+  ],
+  "icon": "neovitae:spiritus_gem_common",
+  "x": 41,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_lesser"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spiritus_gem_common",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

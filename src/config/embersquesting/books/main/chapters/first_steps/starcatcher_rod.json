@@ -1,0 +1,37 @@
+{
+  "title": "Starcatcher Rod",
+  "description": [
+    "The fishing system has been <property>significantly overhauled</property>, and <positive>many custom modpack items</positive> have been added to the loot, but you must use <keyword>this fishing rod</keyword> to catch fish.",
+    "",
+    "You can read more about fishing and other important information in the <named>guide</named> - it's as detailed as possible!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Система рыбалки <property>сильно переработана</property>, в сокровища добавлено <positive>множество кастомных предметов модпака</positive>, но рыбу необходимо ловить <keyword>этой удочкой</keyword>.",
+    "",
+    "Вы можете прочитать больше о том как ловить рыбу и другую важную информацию в <keyword>гайде</keyword>, он максимально подробный!"
+  ],
+  "icon": "starcatcher:starcatcher_rod",
+  "x": 39,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "first_steps/hook"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:starcatcher_rod",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "starcatcher:starcatcher_guide",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

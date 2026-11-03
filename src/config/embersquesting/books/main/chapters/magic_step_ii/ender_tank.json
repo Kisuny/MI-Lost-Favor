@@ -1,0 +1,21 @@
+{
+  "title": "Ender Tank",
+  "icon": "enderstorage:ender_tank{\"enderstorage:frequency\":{left:\"white\",middle:\"white\",right:\"white\"}}",
+  "x": 13.5,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter",
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enderstorage:ender_tank",
+      "components": "{\"enderstorage:frequency\":{left:\"white\",middle:\"white\",right:\"white\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

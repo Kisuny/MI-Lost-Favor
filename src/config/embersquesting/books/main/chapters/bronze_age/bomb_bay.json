@@ -1,0 +1,18 @@
+{
+  "title": "Bomb Bay",
+  "icon": "immersive_aircraft:bomb_bay",
+  "x": 30,
+  "y": 31,
+  "deps": {
+    "all": [
+      "bronze_age/weapons"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_aircraft:bomb_bay",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

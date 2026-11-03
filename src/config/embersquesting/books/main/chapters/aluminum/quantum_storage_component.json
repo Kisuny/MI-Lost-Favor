@@ -1,0 +1,19 @@
+{
+  "title": "Quantum Storage Component",
+  "icon": "advanced_ae:quantum_storage_component",
+  "x": 34.5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "aluminum/digital_singularity_cell_component"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:quantum_storage_component",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

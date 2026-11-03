@@ -1,0 +1,30 @@
+{
+  "title": "Everburning Roots Veins",
+  "description": [
+    "<keyword>Everburning Roots Veins</keyword> are roots with <flame>Ember crystals grown right inside</flame>.",
+    "",
+    "<named>How:</named> hit the block in the world with a <keyword>chisel</keyword>. It will <shake amplitude=0.3 frequency=1.0>crack open</shake>, drop an <keyword>Ember Shard</keyword> and turn into ordinary <keyword>Everburning Roots</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Everburning Roots Veins</keyword> - корни, внутри которых <flame>проросли кристаллы эмбера</flame>.",
+    "",
+    "<named>Как:</named> ударьте по блоку в мире <keyword>зубилом</keyword>. Он <shake amplitude=0.3 frequency=1.0>треснет</shake>, выронит <keyword>Осколок кристалла эмбера</keyword> и превратится в обычные <keyword>Everburning Roots</keyword>."
+  ],
+  "icon": "milf:everburning_roots_veins",
+  "x": 7,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0f5a8505e80666e1"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:everburning_roots_veins",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

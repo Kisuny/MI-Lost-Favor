@@ -1,0 +1,22 @@
+{
+  "title": "Transcendent Orb of Vitae",
+  "description": [
+    "The penultimate(!!) orb. Forged in the <keyword>Tier V altar</keyword> for <keyword>200,000 EV</keyword>. Grants absurd <magic>Anima</magic> reserves sufficient to sustain even the most demanding Tier IV rituals continuously."
+  ],
+  "icon": "neovitae:blood_orb_transcendent",
+  "x": 66.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/tier_v_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:blood_orb_transcendent",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

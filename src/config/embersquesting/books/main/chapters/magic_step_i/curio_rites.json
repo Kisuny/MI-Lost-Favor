@@ -1,0 +1,26 @@
+{
+  "title": "Curio Rites",
+  "description": [
+    "The <blood>Crimson Cult</blood> guards a book called the <curse>Crimson Rites</curse>. Scan a cultist, find the book and study it - together with <named>Auromancy</named> it opens the <curse><glitch frequency=0.7 shiftChance=0.06>Eldritch</glitch></curse> branch.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<blood>Багровый культ</blood> хранит книгу под названием <curse>Багровые обряды</curse>. Изучи культиста, найди книгу и прочти её - вместе с <named>Ауромантией</named> она открывает ветку <curse><glitch frequency=0.7 shiftChance=0.06>Запредельного</glitch></curse>."
+  ],
+  "icon": "thaumaturge:curio_rites",
+  "x": 42.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_i/void_seed"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:curio_rites",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

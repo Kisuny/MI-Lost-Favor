@@ -1,0 +1,31 @@
+{
+  "title": "Mugwort Bush",
+  "description": [
+    "The bush will slowly grow and is harvestable.",
+    "",
+    "Can be found in swamps or bought from the Merchant."
+  ],
+  "icon": "hexerei:mugwort_leaves",
+  "x": 4.5,
+  "y": 54.5,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:mugwort_bush",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:mugwort_leaves",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:mugwort_flowers",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

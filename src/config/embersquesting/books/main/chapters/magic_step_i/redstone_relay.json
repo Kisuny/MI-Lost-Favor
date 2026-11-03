@@ -1,0 +1,26 @@
+{
+  "title": "Redstone Relay",
+  "description": [
+    "Works like a repeater, but can <property>filter</property> the signal strength. A small but handy tool for magical redstone.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Работает как повторитель, но умеет <property>фильтровать</property> силу сигнала. Маленький, но удобный инструмент для магического редстоуна."
+  ],
+  "icon": "thaumaturge:redstone_relay",
+  "x": 42.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_i/goggles_revealing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:redstone_relay",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

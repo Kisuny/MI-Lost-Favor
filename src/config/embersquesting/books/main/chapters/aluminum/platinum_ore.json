@@ -1,0 +1,18 @@
+{
+  "title": "Platinum Ore",
+  "icon": "modern_industrialization:platinum_ore",
+  "x": 8,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "aluminum/electric_quarry"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:platinum_ore",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

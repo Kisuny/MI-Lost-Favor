@@ -1,0 +1,26 @@
+{
+  "title": "Enchanters Fishing Rod",
+  "description": [
+    "The <keyword>Enchanter's Fishing Rod</keyword> works as a normal rod, but hooking an entity lets you cast its inscribed <property>Touch</property> spell on it for as long as the line holds. Inscribe it at the Scribe's Table with a formless spell, same as the sword and gauntlet.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Удочка зачарователя</keyword> работает как обычная удочка, но, зацепив существо, вы можете применять на него вписанное заклинание <property>Touch</property>, пока держится леска. Впишите заклинание без формы на Столе писца, так же как для меча и перчатки."
+  ],
+  "icon": "ars_nouveau:enchanters_fishing_rod",
+  "x": 107.5,
+  "y": 12,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:enchanters_fishing_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

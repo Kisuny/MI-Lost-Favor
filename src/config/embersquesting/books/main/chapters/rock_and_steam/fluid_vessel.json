@@ -1,0 +1,18 @@
+{
+  "title": "Fluid Vessel",
+  "icon": "embers:fluid_vessel",
+  "x": 0.5,
+  "y": 13,
+  "deps": {
+    "all": [
+      "rock_and_steam/fluid_pipe"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:fluid_vessel",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

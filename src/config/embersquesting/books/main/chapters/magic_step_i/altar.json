@@ -1,0 +1,40 @@
+{
+  "title": "Altar",
+  "description": [
+    "To construct an <keyword>altar</keyword>, a §lwitch§r must place §lsix <keyword>altar blocks</keyword> to form a <magic>rectangular platform</magic>.",
+    "",
+    "<keyword>Altars</keyword> draw their power from nature, specifically from <property>plants</property> in the surrounding area. A <keyword>variety of plants</keyword> works better than having only a few.",
+    "",
+    "Certain blocks may be <positive>placed on top</positive> of the <keyword>altar</keyword> to <property>multiply its effects</property>.",
+    "",
+    "Upgrades have a §ltype§r, only the <keyword>best upgrade</keyword> within a type will be counted.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чтобы построить <keyword>алтарь</keyword>, ведьма должна разместить §lшесть§r <keyword>алтарных блоков</keyword>, чтобы получилась <magic>прямоугольная платформа</magic>.",
+    "",
+    "Алтари черпают свою силу из <property>природы</property>, в частности из <property>растений</property> в окрестностях. Разнообразие растений <keyword>лучше</keyword>, чем маленькое их количество.",
+    "",
+    "Некоторые блоки можно <positive>поместить на вершину алтаря</positive>, чтобы <property>усилить его эффект</property>.",
+    "",
+    "Модернизации имеют §lтип§r, только лучшая модернизация в рамках типа будет засчитана."
+  ],
+  "icon": "enchanted:altar",
+  "x": 34.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_i/exhale_of_the_horned_one",
+      "magic_step_i/breath_of_the_goddess"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:altar",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Wirecoil Electrum",
+  "icon": "immersiveengineering:wirecoil_electrum",
+  "x": 12,
+  "y": 28,
+  "deps": {
+    "all": [
+      "simple_machinery/wirecoil_copper",
+      "simple_machinery/electrum_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:wirecoil_electrum",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "lines_in": "hover"
+}

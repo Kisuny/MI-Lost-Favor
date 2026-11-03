@@ -1,0 +1,23 @@
+{
+  "title": "",
+  "description": [
+    "Place a Goblet on an altar to increase its capacity by 2. ",
+    "",
+    "It can also be filled with blood by killing something atop it, which is used for some magic."
+  ],
+  "x": 75,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/goblet_with_cow_blood",
+      "magic_step_ii/wooden_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "eidolon_repraised:sacrifice",
+      "type": "advancement"
+    }
+  ],
+  "shape": "circle"
+}

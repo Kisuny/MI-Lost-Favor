@@ -1,0 +1,30 @@
+{
+  "title": "Infusion Stones",
+  "description": [
+    "Placed under the altar pillars: the <keyword>Speed Stone</keyword> makes infusion faster but a bit pricier, the <keyword>Cost Stone</keyword> makes it cheaper but slower.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ставятся под колонны алтаря: <keyword>камень скорости</keyword> ускоряет инфузию, но немного удорожает её, а <keyword>камень экономии</keyword> удешевляет, но замедляет."
+  ],
+  "icon": "thaumaturge:matrix_speed",
+  "x": 61,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:matrix_speed",
+      "type": "item"
+    },
+    {
+      "item": "thaumaturge:matrix_cost",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

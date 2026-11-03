@@ -1,0 +1,27 @@
+{
+  "title": "Coal",
+  "icon": "minecraft:coal",
+  "x": 34,
+  "y": 17,
+  "deps": {
+    "all": [
+      "first_steps/bronze_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Coal"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:coal\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

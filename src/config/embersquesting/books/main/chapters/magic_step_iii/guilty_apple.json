@@ -1,0 +1,27 @@
+{
+  "title": "Guilty Apple",
+  "description": [
+    "To <positive>leave</positive> this <magic>dimension</magic>, take a bite of this <named>fragrant apple</named>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чтобы <positive>покинуть</positive> это <magic>измерение</magic>, откуси кусочек этого <named>ароматного яблока</named>!"
+  ],
+  "icon": "risus:guilty_apple",
+  "x": 14.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:guilty_apple",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

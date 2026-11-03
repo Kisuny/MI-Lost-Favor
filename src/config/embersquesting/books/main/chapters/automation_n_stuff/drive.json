@@ -1,0 +1,19 @@
+{
+  "title": "Drive",
+  "icon": "ae2:drive",
+  "x": 28,
+  "y": 19,
+  "deps": {
+    "all": [
+      "automation_n_stuff/mysterious_disk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:drive",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

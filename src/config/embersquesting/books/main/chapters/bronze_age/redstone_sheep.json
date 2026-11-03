@@ -1,0 +1,19 @@
+{
+  "title": "Redstone Sheep",
+  "icon": "immersive_machinery:redstone_sheep",
+  "x": 26,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "bronze_age/blueprint_3",
+      "bronze_age/redstone_mechanism"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_machinery:redstone_sheep",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

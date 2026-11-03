@@ -1,0 +1,21 @@
+{
+  "title": "Chopped Rue",
+  "description": [
+    "Take the dried plant and place it on a Herbalist Bench. Then, use the boline on it a few times to create chopped plants."
+  ],
+  "icon": "paganbless:chopped_rue",
+  "x": 1,
+  "y": 48.5,
+  "deps": {
+    "all": [
+      "magic_step_i/dried_hanging_rue"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:chopped_rue",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

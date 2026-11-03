@@ -1,0 +1,26 @@
+{
+  "title": "Enchanters Shield",
+  "description": [
+    "The <keyword>Enchanter's Shield</keyword> grants you a short burst of <property>Mana Regeneration</property> and <property>Spell Damage</property> whenever you block damage with it, and repairs itself over time using your source.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Щит зачарователя</keyword> даёт короткий всплеск <property>восстановления сурса</property> и <property>урона заклинаний</property> каждый раз, когда вы блокируете урон, а также сам чинится со временем за счёт вашего сурса."
+  ],
+  "icon": "ars_nouveau:enchanters_shield",
+  "x": 109,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:enchanters_shield",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

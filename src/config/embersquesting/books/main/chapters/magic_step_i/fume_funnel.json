@@ -1,0 +1,30 @@
+{
+  "title": "Fume Funnel",
+  "description": [
+    "Adding <keyword>fume funnels</keyword> to the left and right of your <keyword>witch's oven</keyword> can <positive>drastically improve</positive> it's <keyword>yield</keyword>.",
+    "",
+    "A third <keyword>fume funnel</keyword> can be placed on top of the <keyword>witch oven</keyword> as a <magic>decorativechimney</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Добавление <keyword>вытяжных воронок</keyword> слева и справа от вашей <keyword>ведьминой печи</keyword> может <positive>значительно повысить</positive> ее <keyword>производительность</keyword>.",
+    "",
+    "Третью <keyword>вытяжную воронку</keyword> можно разместить на вершине <keyword>ведьминой печи</keyword> в качестве <magic>декоративного дымохода</magic>."
+  ],
+  "icon": "enchanted:fume_funnel",
+  "x": 33.5,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_i/witch_oven"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:fume_funnel",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

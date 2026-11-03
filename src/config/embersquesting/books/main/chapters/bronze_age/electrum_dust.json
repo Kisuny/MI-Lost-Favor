@@ -1,0 +1,19 @@
+{
+  "title": "Electrum Dust",
+  "icon": "modern_industrialization:electrum_dust",
+  "x": 17.5,
+  "y": 11.5,
+  "deps": {
+    "any": [
+      "bronze_age/bronze_mixer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electrum_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

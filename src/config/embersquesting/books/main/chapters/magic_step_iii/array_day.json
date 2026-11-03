@@ -1,0 +1,25 @@
+{
+  "title": "Array Day",
+  "description": [
+    "<positive>Advances</positive> the world to the next <magic>sunrise</magic>. <warning>Consumed on use</warning>."
+  ],
+  "icon": "neovitae:array_day",
+  "x": 38,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/time_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_day",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

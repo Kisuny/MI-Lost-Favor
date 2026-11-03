@@ -1,0 +1,26 @@
+{
+  "title": "Twinbound Feather",
+  "description": [
+    "Wave the <keyword>Twinbound Feather</keyword> against another player's feather to link the two - as long as you both keep the feather in your inventory, you can use a <keyword>Waystone</keyword> to teleport directly to each other.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Взмахните <keyword>Twinbound Feather</keyword> рядом с пером другого игрока, чтобы связать их - пока перо у вас обоих в инвентаре, вы можете телепортироваться друг к другу через <keyword>вейстоун</keyword>."
+  ],
+  "icon": "waystones:twinbound_feather",
+  "x": 43.5,
+  "y": 46,
+  "deps": {
+    "all": [
+      "magic_step_i/warp_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:twinbound_feather",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

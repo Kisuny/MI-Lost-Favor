@@ -1,0 +1,26 @@
+{
+  "title": "Treasure Shelf",
+  "description": [
+    "The <keyword>Deepshelf of Arcane Treasures</keyword> unlocks <keyword>treasure enchantments</keyword> in the enchanting table that you can't normally get there, like <property>Mending</property>, <property>Frost Walker</property>, <property>Soul Speed</property> or <property>Swift Sneak</property>. Many treasure enchantments are <curse><shake amplitude=0.3 frequency=1.0>curses</shake></curse>, so pair it with a <keyword>Geode-Encased Bookshelf</keyword> for stability first.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Deepshelf of Arcane Treasures</keyword> открывает в столе <keyword>сокровищные зачарования</keyword>, которые иначе там не получить, например <property>Починку</property>, <property>Хождение по льду</property>, <property>Скорость души</property> или <property>Мягкую поступь</property>. Многие сокровищные зачарования - <curse><shake amplitude=0.3 frequency=1.0>проклятия</shake></curse>, поэтому сначала обзаведитесь <keyword>Geode-Encased Bookshelf</keyword> для стабильности."
+  ],
+  "icon": "apothic_enchanting:treasure_shelf",
+  "x": 117,
+  "y": 24,
+  "deps": {
+    "all": [
+      "magic_step_ii/deepshelf"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:treasure_shelf",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

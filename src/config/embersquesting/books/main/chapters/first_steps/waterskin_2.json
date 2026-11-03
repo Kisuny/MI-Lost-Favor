@@ -1,0 +1,20 @@
+{
+  "title": "Waterskin",
+  "icon": "milf:waterskin{\"milf:fluid\":{amount:500,id:\"minecraft:water\"}}",
+  "x": 16,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "first_steps/waterskin"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "milf:waterskin",
+      "components": "{\"milf:fluid\":{amount:500,id:\"minecraft:water\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

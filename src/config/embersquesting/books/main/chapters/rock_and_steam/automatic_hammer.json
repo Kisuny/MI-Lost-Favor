@@ -1,0 +1,30 @@
+{
+  "title": "Automatic Hammer",
+  "description": [
+    "Tired of swinging the hammer yourself? The <keyword>Automatic Hammer</keyword> works the <keyword>Dawnstone Anvil</keyword> in front of it - <shake amplitude=0.3 frequency=1.0>harder and faster</shake> than you.",
+    "",
+    "It needs a little Ember and a <pulse>redstone signal</pulse>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Надоело махать молотом самому? <keyword>Автоматический молот</keyword> работает на <keyword>Золотитовой наковальне</keyword> перед собой - <shake amplitude=0.3 frequency=1.0>сильнее и быстрее</shake> вас.",
+    "",
+    "Ему нужно немного эмбера и <pulse>редстоун-сигнал</pulse>."
+  ],
+  "icon": "embers:automatic_hammer",
+  "x": 18,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:automatic_hammer",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Ink Flask",
+  "description": [
+    "Used to store and transfer ink. The two ink containers equalize the amount of ink in them, so you can only really transfer half.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Буквально - <c value=#DEB3E0>Красочная ячейка</c>§r, храни краски в баночках!"
+  ],
+  "icon": "spectrum:ink_flask",
+  "x": 2.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/color_picker"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:ink_flask",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

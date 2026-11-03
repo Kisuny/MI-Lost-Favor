@@ -1,0 +1,23 @@
+{
+  "title": "Eco Engine",
+  "icon": "immersive_aircraft:eco_engine",
+  "x": 25,
+  "y": 27,
+  "deps": {
+    "all": [
+      "bronze_age/blueprint_4",
+      "bronze_age/engine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_aircraft:eco_engine",
+      "type": "item"
+    },
+    {
+      "item": "immersive_aircraft:nether_engine",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

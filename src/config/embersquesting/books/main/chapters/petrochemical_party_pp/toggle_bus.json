@@ -1,0 +1,23 @@
+{
+  "title": "Toggle Bus",
+  "icon": "ae2:inverted_toggle_bus",
+  "x": 21,
+  "y": 11,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quartz_fiber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:toggle_bus",
+      "type": "item"
+    },
+    {
+      "item": "ae2:inverted_toggle_bus",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Ingot Brass",
+  "description": [
+    "<named>Metallurgy</named> starts with <keyword>Alchemical Brass</keyword>, brewed right in the crucible. Mechanisms, plates and most devices are built from it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Металлургия</named> начинается с <keyword>алхимической латуни</keyword>, которую варят прямо в тигле. Из неё делают механизмы, пластины и большинство устройств."
+  ],
+  "icon": "thaumaturge:ingot_brass",
+  "x": 50,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_i/nitor_yellow"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:ingot_brass",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

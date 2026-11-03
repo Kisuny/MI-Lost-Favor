@@ -1,0 +1,21 @@
+{
+  "title": "Attunement Staff",
+  "description": [
+    "Binding tool"
+  ],
+  "icon": "cognition:attunement_staff",
+  "x": 30,
+  "y": 55,
+  "deps": {
+    "all": [
+      "magic_step_i/cognitive_flux"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cognition:attunement_staff",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

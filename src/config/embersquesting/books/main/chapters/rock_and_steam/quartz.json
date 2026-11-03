@@ -1,0 +1,27 @@
+{
+  "title": "Quartz",
+  "icon": "minecraft:quartz",
+  "x": 25.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Quartz"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:quartz\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

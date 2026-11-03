@@ -1,0 +1,31 @@
+{
+  "title": "",
+  "description": [
+    "Defeat <blood><glitch frequency=0.7 shiftChance=0.06>The True Azazel</glitch></blood>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Победи <blood><glitch frequency=0.7 shiftChance=0.06>Истинного Азазеля</glitch></blood>!"
+  ],
+  "x": 0.5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q078a77490809e4e3",
+      "magic_step_iii/azazel_trophy"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "netherman:azazel_human",
+      "type": "kill"
+    },
+    {
+      "advancement": "netherman:azazel",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "none"
+}

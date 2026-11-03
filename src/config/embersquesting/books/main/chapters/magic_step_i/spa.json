@@ -1,0 +1,31 @@
+{
+  "title": "Spa",
+  "description": [
+    "Mixing salts by hand is a chore. Fill the <keyword>Arcane Spa</keyword> with water and bath salts and it mixes them and pumps the liquid into a <property>5x5 area</property> above it.",
+    "",
+    "It can pump nearly any liquid, can be filled by automation or by clicking with a container, and a <property>redstone signal</property> turns it off.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Мешать соль вручную утомительно. Заполни <keyword>магическую купель</keyword> водой и солью для ванн, и она сама смешает их и закачает жидкость в <property>область 5x5</property> над собой.",
+    "",
+    "Она качает почти любую жидкость, заполняется автоматикой или кликом ёмкостью, а <property>сигнал редстоуна</property> её выключает."
+  ],
+  "icon": "thaumaturge:spa",
+  "x": 46.5,
+  "y": 36.5,
+  "deps": {
+    "all": [
+      "magic_step_i/bath_salts"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:spa",
+      "type": "item"
+    }
+  ],
+  "visibility": "hidden",
+  "shape": "circle"
+}

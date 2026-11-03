@@ -1,0 +1,31 @@
+{
+  "title": "Upgrade Tome",
+  "description": [
+    "Upgrade Tomes are crystallised records of a particular skill, each carrying the experience needed to inscribe one or more levels of its upgrade onto a chestplate. They come from three places:",
+    "",
+    "• Dungeon loot. Tomes are scattered through the loot tables of The Mines (ore chambers, the Smithy) and the Foreman's hoard.",
+    "",
+    "• Sentient Extraction. Throw an already-trained piece of Sentient Armor onto the small zone above this ritual's Master Ritual Stone and it will extract every upgrade currently inscribed on the armor as a separate Tome, preserving the accumulated experience. The armor itself is left stripped but intact. ",
+    "",
+    "• Combining duplicates. Two tomes of the same upgrade can be merged at a vanilla crafting table to consolidate their experience.",
+    "",
+    "Press \\[Use\\] while holding a tome to inscribe one level of that skill onto your worn chestplate, assuming sufficient Upgrade Points remain. Hold sneak and \\[Use\\] to inscribe as much as possible at once. The tome is consumed in the process, transferring its stored experience to the chestplate. If insufficient points remain, the tome applies what it can and retains the rest; unless less than one level's worth remains, in which case the tome crumbles to nothing.",
+    "",
+    "Tomes are the key to deliberate specialisation; focus your training on the abilities that serve you best and discard the rest. Maintain separate chestplates for different purposes, each with its own set of tomes."
+  ],
+  "icon": "neovitae:upgrade_tome",
+  "x": 34,
+  "y": 7,
+  "deps": {
+    "all": [
+      "magic_step_iii/sentient_armour_set"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:upgrade_tome",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

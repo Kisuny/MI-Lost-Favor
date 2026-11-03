@@ -1,0 +1,20 @@
+{
+  "title": "Gate Pearl",
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"apotheosis:tiered/summit\"}",
+  "x": 20,
+  "y": 32.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_summit"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"apotheosis:tiered/summit\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

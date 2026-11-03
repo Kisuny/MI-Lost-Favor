@@ -1,0 +1,25 @@
+{
+  "title": "Input and Output Nodes",
+  "description": [
+    "<keyword>Input Nodes</keyword> extract from adjacent inventories; <keyword>Output Nodes</keyword> deliver into them. Each of 6 faces carries independent filters - configure whitelist, blacklist, priority, and keep-amounts per face."
+  ],
+  "icon": "neovitae:input_routing_node",
+  "x": 40,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/routing_conduit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:input_routing_node",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:output_routing_node",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Monstrous Anchor",
+  "description": [
+    "Hold <property>RMB</property> for <property>1.5 seconds</property> to <bounce amplitude=1.5 frequency=1.2 phase=1.0>leap into the air</bounce> and <warning>stun</warning> everything within <property>4 blocks</property> for <property>3 seconds</property>.",
+    "",
+    "Every hit also deals <property>4 damage</property> to all enemies within <property>3 blocks</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Удерживай <property>ПКМ</property> <property>1.5 секунды</property>, чтобы <bounce amplitude=1.5 frequency=1.2 phase=1.0>взмыть в воздух</bounce> и <warning>оглушить</warning> всех в радиусе <property>4 блоков</property> на <property>3 секунды</property>.",
+    "",
+    "Каждый удар также наносит <property>4 урона</property> всем врагам в радиусе <property>3 блоков</property>."
+  ],
+  "icon": "legendary_monsters:monstrous_anchor",
+  "x": 17,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:monstrous_anchor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "High Power Biodiesel Bucket",
+  "icon": "immersiveengineering:high_power_biodiesel_bucket",
+  "x": 19.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/toluene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:high_power_biodiesel_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Excavator",
+  "icon": "immersiveengineering:excavator",
+  "x": 11.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "simple_machinery/coresample",
+      "simple_machinery/hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "immersiveengineering:excavator",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:excavator",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 26,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:storage_steel",
+      "count": 9,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:heavy_engineering",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 9,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:radiator",
+      "count": 3,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:sheetmetal_steel",
+      "count": 16,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:excavator_full_placer",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

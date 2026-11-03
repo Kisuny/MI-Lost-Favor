@@ -1,0 +1,26 @@
+{
+  "title": "Crown Of Bones",
+  "description": [
+    "Crafted from four Bones, four Horns, and a Skeleton Skull. Amplifies horn potion effects by one stage, but cuts duration from half to a third of the original. Offers very low defense, but accepts helmet enchantments and trims.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Создаётся из четырёх костей, четырёх рогов и черепа скелета. Усиливает эффект зелья из рогов на одну ступень, но сокращает длительность с половины до трети от оригинала. Защита очень низкая, но принимает зачарования для шлемов."
+  ],
+  "icon": "risus:crown_of_bones",
+  "x": 23,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/warhorn"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:crown_of_bones",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

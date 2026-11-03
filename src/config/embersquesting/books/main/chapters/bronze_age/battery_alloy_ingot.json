@@ -1,0 +1,19 @@
+{
+  "title": "Battery Alloy Ingot",
+  "icon": "modern_industrialization:battery_alloy_ingot",
+  "x": 18.5,
+  "y": 13,
+  "deps": {
+    "any": [
+      "bronze_age/steel_alloy_smelter",
+      "bronze_age/battery_alloy_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:battery_alloy_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

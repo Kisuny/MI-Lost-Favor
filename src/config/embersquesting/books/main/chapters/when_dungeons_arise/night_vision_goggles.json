@@ -1,0 +1,15 @@
+{
+  "title": "Night Vision Goggles",
+  "icon": "artifacts:night_vision_goggles{\"relics:data\":{abilities:{abilities:{vision:{lock:{breaks:5},points:0,stats:{amount:{initialQuality:1},damage_bonus:{initialQuality:1},miss_chance:{initialQuality:5}}}},synergies:{}},leveling:{},statistic:{}}}",
+  "x": 1,
+  "y": 32.5,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "artifacts:night_vision_goggles",
+      "components": "{\"relics:data\":{abilities:{abilities:{vision:{lock:{breaks:5},points:0,stats:{amount:{initialQuality:1},damage_bonus:{initialQuality:1},miss_chance:{initialQuality:5}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

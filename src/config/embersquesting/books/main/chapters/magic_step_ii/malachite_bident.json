@@ -1,0 +1,20 @@
+{
+  "title": "Malachite Bident",
+  "icon": "spectrum:malachite_bident{\"minecraft:enchantments\":{levels:{\"minecraft:impaling\":6}}}",
+  "x": 65.5,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/pure_malachite"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:malachite_bident",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:impaling\":6}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

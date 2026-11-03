@@ -1,0 +1,22 @@
+{
+  "title": "Ritual Chalk",
+  "description": [
+    "The most basic of chalks, used for standard circles."
+  ],
+  "icon": "enchanted:ritual_chalk",
+  "x": 31,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_i/kettle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:ritual_chalk",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

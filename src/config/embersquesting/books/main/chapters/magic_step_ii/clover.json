@@ -1,0 +1,26 @@
+{
+  "title": "Clover",
+  "description": [
+    "Can be found in §l<positive>Green</positive> biomes!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "§l<positive>Зелёные</positive>§r биомы помогут с поиском заветного удачливого растения!"
+  ],
+  "icon": "spectrum:clover",
+  "x": 1.5,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_onyx"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:clover",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

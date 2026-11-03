@@ -1,0 +1,19 @@
+{
+  "title": "Trophy Emerald",
+  "icon": "starcatcher:trophy_emerald",
+  "x": 39,
+  "y": 35,
+  "deps": {
+    "all": [
+      "first_steps/trophy_gold"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "starcatcher:trophy_emerald",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "hexagon"
+}

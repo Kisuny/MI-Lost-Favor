@@ -1,0 +1,34 @@
+{
+  "title": "Seal Breaker",
+  "description": [
+    "Golems <shake amplitude=0.3 frequency=1.0>break blocks</shake> in the <property>area</property>; harder blocks take longer. A filter chooses which blocks to break or ignore.",
+    "",
+    "Golem mobility, the limited area and speed make it a poor mining tool, but it works in a pinch.",
+    "",
+    "Golem: needs the <warning>Breaker</warning> trait (Breaker Arms).",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Големы <shake amplitude=0.3 frequency=1.0>ломают блоки</shake> в <property>зоне</property>; твёрдые блоки ломаются дольше. Фильтр выбирает, какие блоки ломать или пропускать.",
+    "",
+    "Из-за подвижности големов, ограниченной зоны и скорости это слабый инструмент для добычи, но в крайнем случае сойдёт.",
+    "",
+    "Голем: нужна черта <warning>разрушителя</warning> (Breaker - руки-разрушители)."
+  ],
+  "icon": "thaumaturge:seal_breaker",
+  "x": 46,
+  "y": 7,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_blank"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_breaker",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

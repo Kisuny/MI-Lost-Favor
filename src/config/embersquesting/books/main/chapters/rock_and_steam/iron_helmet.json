@@ -1,0 +1,38 @@
+{
+  "title": "Iron Helmet",
+  "icon": "minecraft:iron_helmet",
+  "x": 9,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/chainmail_helmet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:iron_helmet",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:iron_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:iron_leggings",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:iron_boots",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_iron",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

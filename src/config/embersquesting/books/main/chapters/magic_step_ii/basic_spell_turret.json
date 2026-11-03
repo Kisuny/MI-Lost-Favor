@@ -1,0 +1,26 @@
+{
+  "title": "Basic Spell Turret",
+  "description": [
+    "The <keyword>Basic Spell Turret</keyword> casts <property>Projectile</property>, <property>Touch</property>, <property>Sensitive</property> and <property>Redstone</property> glyphs for free - inscribe a spell onto it, then feed it a <keyword>Redstone</keyword> signal to make it cast.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Basic Spell Turret</keyword> бесплатно исполняет заклинания на глифах <property>Projectile</property>, <property>Touch</property>, <property>Sensitive</property> и <property>Redstone</property> - запишите на неё заклинание, а затем подайте <keyword>редстоун</keyword>, чтобы она его сотворила."
+  ],
+  "icon": "ars_nouveau:basic_spell_turret",
+  "x": 112,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanting_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:basic_spell_turret",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

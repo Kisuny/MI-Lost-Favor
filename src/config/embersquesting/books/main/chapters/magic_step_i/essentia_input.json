@@ -1,0 +1,30 @@
+{
+  "title": "Essentia Input",
+  "description": [
+    "The <keyword>Filling Essentia Transfuser</keyword> takes essentia from a <property>tube network</property> or another essentia source and sends it <wave>through the air</wave> into <keyword>Warded Jars</keyword> up to <property>16 blocks</property> away in the direction it faces.",
+    "",
+    "It uses the same trick that keeps essentia stable during infusion - now outside the altar. Great for filling a jar wall without running tubes to every jar.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Наполняющий переливатель эссенции</keyword> забирает эссенцию из <property>сети труб</property> или другого источника и отправляет её <wave>по воздуху</wave> в <keyword>защищённые банки</keyword> на расстоянии до <property>16 блоков</property> в ту сторону, куда он смотрит.",
+    "",
+    "Работает на том же приёме, что держит эссенцию стабильной при инфузии, но уже вне алтаря. Удобно заполнять стену из банок, не протягивая трубы к каждой."
+  ],
+  "icon": "thaumaturge:essentia_input",
+  "x": 54.5,
+  "y": 11,
+  "deps": {
+    "all": [
+      "magic_step_i/thaumatorium"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:essentia_input",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

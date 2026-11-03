@@ -1,0 +1,26 @@
+{
+  "title": "Wand Rod Bone",
+  "description": [
+    "Stores slightly more vis than a <nature>Greatwood</nature> core, and when its <bone>Perditio</bone> drops below <property>10%</property> it <pulse>slowly refills on its own</pulse> - no node needed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вмещает чуть больше vis, чем стержень из <nature>великого древа</nature>, а когда <bone>Perditio</bone> в нём падает ниже <property>10%</property>, <pulse>сам медленно восполняется</pulse> - без всяких узлов."
+  ],
+  "icon": "thaumaturge:wand_rod_bone",
+  "x": 61,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_i/wand_rod_greatwood"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_rod_bone",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

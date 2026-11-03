@@ -1,0 +1,26 @@
+{
+  "title": "Jar Of Light",
+  "description": [
+    "The <keyword>Jar of Light</keyword> summons a light that follows you around - use it again to dismiss it. A simple portable light source that doesn't need to be placed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Jar of Light</keyword> призывает источник света, который следует за вами - используйте её ещё раз, чтобы убрать свет. Простой переносной источник освещения, который не нужно ставить."
+  ],
+  "icon": "ars_nouveau:jar_of_light",
+  "x": 46.5,
+  "y": 50,
+  "deps": {
+    "all": [
+      "magic_step_i/q351c8bb52e7cd0e8"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:jar_of_light",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

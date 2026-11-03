@@ -1,0 +1,18 @@
+{
+  "title": "Item Cell Housing",
+  "icon": "ae2:item_cell_housing",
+  "x": 24.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "automation_n_stuff/cell_half"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:item_cell_housing",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

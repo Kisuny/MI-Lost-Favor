@@ -1,0 +1,28 @@
+{
+  "title": "Sigil Damned",
+  "description": [
+    "passive sigil held in hand: +50 Spiritus Collection, +25 Bonus Sacrifice, +10 Blood Siphon (heals on kill, capped at 4 hearts)",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "пассивный сигил в руке: +50 Spiritus Collection, +25 Bonus Sacrifice, +10 Blood Siphon (лечение от убийства, до 4 сердец)"
+  ],
+  "icon": "neovitae:sigil_damned",
+  "x": 54,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_greater",
+      "magic_step_iii/cinder_heart_fragment",
+      "magic_step_iii/permafrost_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_damned",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

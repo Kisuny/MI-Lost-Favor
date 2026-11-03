@@ -1,0 +1,30 @@
+{
+  "title": "Seal Empty Advanced",
+  "description": [
+    "The advanced <keyword>Empty</keyword> seal: golems take items out of the container it is attached to.",
+    "",
+    "The advanced version has a <positive>9-slot filter</positive> instead of 1 and works only with <magic>Smart</magic> golems (a head with a biothaumic brain).",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Продвинутая печать <keyword>опустошения</keyword>: големы забирают предметы из контейнера, на котором она стоит.",
+    "",
+    "Продвинутая версия: фильтр на <positive>9 слотов</positive> вместо 1, но работает только с <magic>умными</magic> големами (Smart - голова с биотаумическим мозгом)."
+  ],
+  "icon": "thaumaturge:seal_empty_advanced",
+  "x": 45.5,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_i/seal_empty"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:seal_empty_advanced",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

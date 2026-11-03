@@ -1,0 +1,27 @@
+{
+  "title": "Belt Of The Prospector",
+  "description": [
+    "The <keyword>Belt of the Prospector</keyword> blesses your explosions with <property>Fortune III</property>, and mining valuable resources has a chance to grant <curse>Avarice</curse> - stacking, temporary bonus that adds a <positive>1/10 chance per stack</positive> for an extra Fortune level when breaking blocks.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Belt of the Prospector</keyword> благословляет ваши взрывы <property>Fortune III</property>, а добыча ценных ресурсов даёт шанс получить <curse>Алчность (Avarice)</curse> - накапливаемый временный бонус, дающий <positive>10% шанс за стак</positive> на дополнительный уровень Fortune при добыче блоков."
+  ],
+  "icon": "malum:belt_of_the_prospector",
+  "x": 83.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_belt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:belt_of_the_prospector",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

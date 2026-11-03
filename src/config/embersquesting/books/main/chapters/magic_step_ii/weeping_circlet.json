@@ -1,0 +1,28 @@
+{
+  "title": "Weeping Circlet",
+  "description": [
+    "The §l§6Poseidon's gift§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Подарок <keyword>Посейдона</keyword>"
+  ],
+  "icon": "spectrum:weeping_circlet",
+  "x": 12,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_i/heart_of_the_sea"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:weeping_circlet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

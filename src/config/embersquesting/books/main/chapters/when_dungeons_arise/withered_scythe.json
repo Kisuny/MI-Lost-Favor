@@ -1,0 +1,26 @@
+{
+  "title": "Withered Scythe",
+  "description": [
+    "Hold <property>RMB</property> to <shake amplitude=0.3 frequency=1.2>dash forward</shake>, cutting through everything in your way.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Удерживай <property>ПКМ</property>, чтобы <shake amplitude=0.3 frequency=1.2>рвануть вперёд</shake>, разрубая всех на пути."
+  ],
+  "icon": "legendary_monsters:withered_scythe",
+  "x": 16,
+  "y": 27,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:withered_scythe",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

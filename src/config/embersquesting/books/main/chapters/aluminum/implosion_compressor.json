@@ -1,0 +1,19 @@
+{
+  "title": "Implosion Compressor",
+  "icon": "modern_industrialization:implosion_compressor",
+  "x": 5.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "aluminum/turbo_machine_hull",
+      "aluminum/blastproof_alloy_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:implosion_compressor",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

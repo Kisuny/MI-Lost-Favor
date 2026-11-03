@@ -1,0 +1,27 @@
+{
+  "title": "Sanity Soap",
+  "description": [
+    "<keyword>Sanity Soap</keyword> removes all temporary warp and has a small chance to reduce the normal kind. Starts from <named>Bath Salts</named>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Мыло рассудка</keyword> убирает всё временное искажение и с небольшим шансом снижает обычное. Путь к нему начинается с <named>соли для ванн</named>."
+  ],
+  "icon": "thaumaturge:sanity_soap",
+  "x": 46,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_i/feel_the_first_touch_of_warp"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:sanity_soap",
+      "type": "item"
+    }
+  ],
+  "visibility": "hidden",
+  "shape": "circle"
+}

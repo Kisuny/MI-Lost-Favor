@@ -1,0 +1,32 @@
+{
+  "title": "Blasting Core",
+  "description": [
+    "The <keyword>Blasting Core</keyword> makes things <shake amplitude=0.4 frequency=1.5>explode</shake>.",
+    "",
+    "On tools it breaks nearby blocks along with the mined one. On weapons it blasts nearby creatures. On armor it blows back attackers when you get hit. Everything grows stronger with augment level.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Разрывное ядро</keyword> заставляет всё <shake amplitude=0.4 frequency=1.5>взрываться</shake>.",
+    "",
+    "На инструментах оно ломает соседние блоки вместе с добываемым. На оружии - взрывом задевает существ вокруг. На броне - отбрасывает врагов, когда вас бьют. Всё усиливается с уровнем улучшения."
+  ],
+  "icon": "embers:blasting_core",
+  "x": 17.5,
+  "y": 23,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:blasting_core",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

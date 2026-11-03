@@ -1,0 +1,30 @@
+{
+  "title": "Void Entity Warper",
+  "description": [
+    "Surround the warper with eight <magic>Infected Chorus Fruits</magic> from the End's <keyword>Choruslings</keyword>.",
+    "",
+    "Now you <property>choose</property> which creature within <property>6 blocks</property> gets teleported to you.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обложи телепортатор восемью <magic>инфицированными плодами хоруса</magic> с <keyword>хоруслингов</keyword> из Края.",
+    "",
+    "Теперь ты сам <property>выбираешь</property>, какое существо в радиусе <property>6 блоков</property> переместить к себе."
+  ],
+  "icon": "legendary_monsters:void_entity_warper",
+  "x": 24,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q3d7c097e1f8bbf2e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:void_entity_warper",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

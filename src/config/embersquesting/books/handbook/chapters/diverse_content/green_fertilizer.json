@@ -1,0 +1,21 @@
+{
+  "title": "Green Fertilizer",
+  "description": [
+    "<keyword>Green Fertilizer</keyword> can be applied to farmland to <positive>increase crop output</positive>. It can be combined with <click action=open_quest value='diverse_content/yellow_fertilizer'><u>Yellow Fertilizer</u></click>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "«<keyword>Зеленое удобрение</keyword>» можно использовать на почве для <positive>увеличения урожайности</positive>. Его можно сочетать с «<click action=open_quest value='diverse_content/yellow_fertilizer'><u>Жёлтым удобрением</u></click>»."
+  ],
+  "icon": "farmingforblockheads:green_fertilizer",
+  "x": 3.5,
+  "y": 10,
+  "tasks": [
+    {
+      "item": "farmingforblockheads:green_fertilizer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Spiritus Gem Petty",
+  "description": [
+    "Compress <property>Raw Spiritus</property> in the Hellfire Forge to form a <keyword>Common Spiritus Gem</keyword>. This is the primary fuel for Sentient Equipment crafting and Hellfire Forge recipes.",
+    "",
+    "This petty gem holds up to 56 Spiritus."
+  ],
+  "icon": "neovitae:spiritus_gem_petty",
+  "x": 37.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/place_the_hellfire_forge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spiritus_gem_petty",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

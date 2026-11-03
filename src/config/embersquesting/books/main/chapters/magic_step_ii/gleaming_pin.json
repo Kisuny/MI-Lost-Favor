@@ -1,0 +1,19 @@
+{
+  "title": "Gleaming Pin",
+  "icon": "spectrum:gleaming_pin",
+  "x": 12.5,
+  "y": 46,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:gleaming_pin",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

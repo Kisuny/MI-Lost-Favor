@@ -1,0 +1,31 @@
+{
+  "title": "Taglock Kit",
+  "description": [
+    "Sometimes, you may need to represent another person to perform magic. This can be achieved using a <keyword>taglock kit</keyword>",
+    "",
+    "By <positive>using</positive> a <keyword>taglock kit</keyword> on a <keyword>Player</keyword> or their <keyword>bed</keyword>, you can collect a <property>sample</property> to use in magic.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Иногда вам может понадобиться изобразить другого человека, чтобы совершить волшебство. Этого можно добиться с помощью <keyword>тэглока</keyword>.",
+    "",
+    "<positive>Используя</positive> <keyword>тэглок</keyword> на <keyword>игроке</keyword> или его <keyword>кровати</keyword>, вы можете собрать <property>образец</property> для использования в магии."
+  ],
+  "icon": "enchanted:taglock_kit",
+  "x": 41,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_i/runic_charge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:taglock_kit",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

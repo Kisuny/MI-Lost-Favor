@@ -1,0 +1,19 @@
+{
+  "title": "Concurrent Processor Print",
+  "icon": "extendedae:concurrent_processor_print",
+  "x": 22,
+  "y": 18,
+  "deps": {
+    "all": [
+      "aluminum/circuit_cutter",
+      "aluminum/entro_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extendedae:concurrent_processor_print",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Chromium Hydrochloric Solution Bucket",
+  "icon": "modern_industrialization:chromium_hydrochloric_solution_bucket",
+  "x": 21.5,
+  "y": 5.5,
+  "deps": {
+    "min": {
+      "count": 2,
+      "of": [
+        "automation_n_stuff/chromium_crushed_dust",
+        "automation_n_stuff/chemical_reactor",
+        "petrochemical_party/hydrochloric_acid_bucket"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:chromium_hydrochloric_solution_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

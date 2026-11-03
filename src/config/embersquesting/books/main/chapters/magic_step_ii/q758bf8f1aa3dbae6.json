@@ -1,0 +1,32 @@
+{
+  "title": "",
+  "icon": "map_atlases:textures/gui/sprites/dimensions/deeper_down.png",
+  "x": 48,
+  "y": 41.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/bottle_of_ruin"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:midgame/open_deeper_down_portal",
+      "type": "advancement"
+    },
+    {
+      "advancement": "spectrum:midgame/enter_dimension",
+      "type": "advancement"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Deeper Down Access ",
+      "id": "milf:stage/deeper_down_access",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear",
+  "size": 2.0
+}

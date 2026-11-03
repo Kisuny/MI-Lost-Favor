@@ -1,0 +1,29 @@
+{
+  "title": "Grass Bed",
+  "description": [
+    "Fancy, <keyword>queen-sized</keyword> patch of fiber",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Необычный, <keyword>королевский размер</keyword>, с набивкой из волокна"
+  ],
+  "icon": "ytech:grass_bed",
+  "x": 3.5,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "first_steps/grass_fibers"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:grass_bed",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "notify": {
+    "complete": "none"
+  }
+}

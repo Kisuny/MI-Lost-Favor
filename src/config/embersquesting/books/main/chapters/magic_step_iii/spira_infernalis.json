@@ -1,0 +1,21 @@
+{
+  "title": "Spira Infernalis",
+  "description": [
+    "To move Spiritus across distances, place a Spira Infernalis: each tick it probes a position 16 blocks away in each of the four cardinal directions, and if the probed position holds more Spiritus than the pylon's own chunk, the pylon pulls a small fraction of the difference. The flow equilibrates rather than draining the source dry, so chain pylons from a saturated chunk toward your worksite to ferry Aura over long distances."
+  ],
+  "icon": "neovitae:spira_infernalis",
+  "x": 42.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/vas_maleficum"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spira_infernalis",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

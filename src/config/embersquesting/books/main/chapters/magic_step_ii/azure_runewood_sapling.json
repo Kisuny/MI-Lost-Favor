@@ -1,0 +1,26 @@
+{
+  "title": "Azure Runewood Sapling",
+  "description": [
+    "Use the guidebook from the Enchanted mod to view the recipe",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используйте гайд-бук из мода Enchanted чтобы увидеть рецепт"
+  ],
+  "icon": "malum:azure_runewood_sapling",
+  "x": 68,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:azure_runewood_sapling",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

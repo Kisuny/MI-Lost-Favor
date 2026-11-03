@@ -1,0 +1,29 @@
+{
+  "title": "Steam Cracker Placer",
+  "icon": "milf:steam_cracker_placer",
+  "x": 16,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/diesel_bucket",
+      "petrochemical_party_pp/naphtha_bucket",
+      "petrochemical_party_pp/kerosene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:steam_cracker_placer",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:steam_cracker",
+      "count": 3,
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "size": 2.0
+}

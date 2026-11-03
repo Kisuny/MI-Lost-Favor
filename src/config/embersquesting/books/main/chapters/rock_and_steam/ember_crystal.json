@@ -1,0 +1,30 @@
+{
+  "title": "Ember Crystal",
+  "description": [
+    "Hammer <property>4</property> <keyword>Ember Shards</keyword> together on an <keyword>anvil</keyword> and they <shake amplitude=0.3 frequency=1.0>fuse</shake> into one <keyword>Ember Crystal</keyword>.",
+    "",
+    "Crystals are a richer fuel for the Activator and go into emitters, receptors and many other machines.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Скуйте <property>4</property> <keyword>осколка эмбера</keyword> на <keyword>наковальне</keyword>, и они <shake amplitude=0.3 frequency=1.0>сплавятся</shake> в один <keyword>Кристалл эмбера</keyword>.",
+    "",
+    "Кристалл - более ёмкое топливо для активатора, а ещё он идёт в излучатели, приёмники и многие другие машины."
+  ],
+  "icon": "embers:ember_crystal",
+  "x": 7,
+  "y": 10,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_crystal",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Battlemage Hood",
+  "icon": "ars_nouveau:battlemage_hood",
+  "x": 125,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/magebloom_crop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:battlemage_hood",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:battlemage_robes",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:battlemage_leggings",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:battlemage_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

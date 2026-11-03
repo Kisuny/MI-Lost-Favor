@@ -1,0 +1,24 @@
+{
+  "title": "Barrel",
+  "icon": "minecraft:barrel",
+  "x": 11,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "first_steps/wooden_box"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:barrel",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:barrel",
+      "type": "observe",
+      "icon": "minecraft:barrel"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

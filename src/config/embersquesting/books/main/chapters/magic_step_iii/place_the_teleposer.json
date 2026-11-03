@@ -1,0 +1,38 @@
+{
+  "title": "Place the Teleposer",
+  "description": [
+    "The <named>Teleposer</named> doesn't teleport - it <positive>swaps</positive> everything above two linked blocks instantly: blocks, items, and entities together.",
+    "",
+    "Setup: place two Teleposers, bind a Focus to the target via right-click, place it in the source, apply strong redstone power.",
+    "",
+    "Cost: 1 EV per 2 blocks of distance, 1,000 EV cap per object, 10,000 EV cap per activation. Swaps involving blacklisted blocks (bedrock, portals, command blocks) abort without spending EV.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Телепозер не телепортирует - он обменивает местами всё над двумя связанными блоками мгновенно: блоки, предметы и сущности вместе.",
+    "",
+    "Настройка: размести два телепозера, привяжи Focus к цели правым кликом, помести его в источник, подай сильный редстоун-сигнал.",
+    "",
+    "Стоимость: 1 EV на 2 блока расстояния, 1,000 EV лимит на объект, 10,000 EV лимит на активацию. Если обмен блокирован (бедрок, порталы, командные блоки) - EV не тратится."
+  ],
+  "icon": "neovitae:teleposer",
+  "x": 43,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_iii/tier_iii_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:teleposer",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:teleposer_focus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

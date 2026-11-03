@@ -1,0 +1,18 @@
+{
+  "title": "Electric Composter",
+  "icon": "extended_industrialization:electric_composter",
+  "x": 19,
+  "y": 33.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:electric_composter",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

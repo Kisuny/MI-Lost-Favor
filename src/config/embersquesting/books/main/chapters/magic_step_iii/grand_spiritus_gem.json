@@ -1,0 +1,23 @@
+{
+  "title": "Grand Spiritus Gem",
+  "description": [
+    "The highest grade of Spiritus Gem. <keyword>Grand Spiritus Gems</keyword> fuel the most powerful Hellfire Forge recipes and are required for Tier V altar components."
+  ],
+  "icon": "neovitae:spiritus_gem_grand",
+  "x": 63,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/tabula_aetherea",
+      "magic_step_iii/permafrost_core",
+      "magic_step_iii/animus_mote"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spiritus_gem_grand",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

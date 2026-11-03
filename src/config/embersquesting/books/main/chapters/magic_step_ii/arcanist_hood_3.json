@@ -1,0 +1,38 @@
+{
+  "title": "Arcanist Hood",
+  "icon": "ars_nouveau:arcanist_hood{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+  "x": 123,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/arcanist_hood_2"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:arcanist_hood",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:arcanist_robes",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:arcanist_leggings",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    },
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:arcanist_boots",
+      "components": "{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

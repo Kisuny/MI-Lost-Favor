@@ -1,0 +1,23 @@
+{
+  "title": "Etherium Core",
+  "description": [
+    "WIP"
+  ],
+  "icon": "enigmaticlegacyplus:etherium_core{\"enigmaticlegacyplus:general_boolean\":1b}",
+  "x": 39.5,
+  "y": 0.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/starlight_pearl"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enigmaticlegacyplus:etherium_core",
+      "components": "{\"enigmaticlegacyplus:general_boolean\":1b}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

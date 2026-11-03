@@ -1,0 +1,19 @@
+{
+  "title": "Stick",
+  "icon": "minecraft:stick",
+  "x": 4.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "first_steps/twig",
+      "first_steps/flint_knife"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:stick",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

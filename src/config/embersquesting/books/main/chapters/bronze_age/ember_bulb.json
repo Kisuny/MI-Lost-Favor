@@ -1,0 +1,32 @@
+{
+  "title": "Ember Bulb",
+  "description": [
+    "The <keyword>Mantle Bulb</keyword> is worn in a <property>curio slot</property>, so it takes no inventory space and no hand.",
+    "",
+    "The price is a <warning>much smaller capacity</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Лампочка огненного покрова</keyword> носится в <property>слоте аксессуаров</property>, так что не занимает ни инвентарь, ни руку.",
+    "",
+    "Плата за удобство - <warning>гораздо меньшая ёмкость</warning>."
+  ],
+  "icon": "embers:ember_bulb{\"minecraft:custom_data\":{ForgeCaps:{\"embers:ember\":0.0d,\"embers:ember_capacity\":1000.0d}}}",
+  "x": 7.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "embers:ember_bulb",
+      "components": "{\"minecraft:custom_data\":{ForgeCaps:{\"embers:ember\":0.0d,\"embers:ember_capacity\":1000.0d}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

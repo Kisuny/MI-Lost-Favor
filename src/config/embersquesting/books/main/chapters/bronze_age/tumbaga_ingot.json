@@ -1,0 +1,19 @@
+{
+  "title": "Tumbaga Ingot",
+  "icon": "modern_industrialization:tumbaga_ingot",
+  "x": 21.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "bronze_age/tumbaga_dust",
+      "bronze_age/steel_alloy_smelter"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:tumbaga_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

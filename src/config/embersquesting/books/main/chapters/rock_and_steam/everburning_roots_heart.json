@@ -1,0 +1,31 @@
+{
+  "title": "Everburning Roots Heart",
+  "description": [
+    "The <keyword>Everburning Roots Heart</keyword> is the core of a <warning>rare</warning> underground growth in the overworld. Around it spread <keyword>Everburning Roots</keyword> and their <keyword>Veins</keyword>, all of them <flame>smoldering with Ember</flame>.",
+    "",
+    "The Heart is needed to build an <keyword>Ancient Motive Core</keyword>, so dig it out and take it home. Need more cores later? Go looking for another nest.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Everburning Roots Heart</keyword> - центр <warning>редкого</warning> подземного нароста в верхнем мире. Вокруг него расползаются <keyword>Everburning Roots</keyword> и их <keyword>Veins</keyword>, и всё это <flame>тлеет эмбером</flame>.",
+    "",
+    "Сердце нужно для создания <keyword>Древнего ядра пробуждения</keyword>, так что выкопайте его и заберите домой. Понадобятся ещё ядра - ищите следующее гнездо."
+  ],
+  "icon": "milf:everburning_roots_heart",
+  "x": 5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0f5a8505e80666e1"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:everburning_roots_heart",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon",
+  "size": 1.5
+}

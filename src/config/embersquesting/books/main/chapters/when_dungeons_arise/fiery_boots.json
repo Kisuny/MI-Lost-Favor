@@ -1,0 +1,26 @@
+{
+  "title": "Fiery Boots",
+  "description": [
+    "Press the ability key (<property>X</property> by default) to leave a <fire>trail of fire</fire> behind you as you walk.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нажми клавишу способности (по умолчанию <property>X</property>), чтобы оставлять за собой <fire>огненный след</fire>."
+  ],
+  "icon": "legendary_monsters:fiery_boots",
+  "x": 20,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:fiery_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Whispy Circlet",
+  "description": [
+    "No more <keyword>phantoms</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чудо голосование добавило чудо летающих червей, а теперь их нет..."
+  ],
+  "icon": "spectrum:whispy_circlet",
+  "x": 52.5,
+  "y": 40.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/nightdew_sprout"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:whispy_circlet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

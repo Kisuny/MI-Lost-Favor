@@ -1,0 +1,32 @@
+{
+  "title": "Rope And Nail",
+  "description": [
+    "A <keyword>bed for daytime</keyword>. The hammock can only be placed between two Nails and Rope.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Кровать для дневного сна</keyword>."
+  ],
+  "icon": "comforts:rope_and_nail",
+  "x": 25.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "first_steps/tin_bolt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "comforts:rope_and_nail",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "tag": "comforts:hammocks",
+      "type": "item",
+      "title": "Any Hammocks"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "White Portstone",
+  "description": [
+    "A <keyword>Portstone</keyword> is a one-way teleporter - right-click it to open the <keyword>Waystone</keyword> selection screen and teleport to any activated waystone. It can also be attuned to a precious material to teleport to matching <keyword>Sharestones</keyword> instead.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Portstone</keyword> - односторонний телепорт: кликните ПКМ, чтобы открыть меню выбора <keyword>вейстоуна</keyword> и телепортироваться на любой активированный вейстоун. Его также можно настроить на ценный материал, чтобы телепортироваться на подходящие <keyword>Sharestone</keyword>."
+  ],
+  "icon": "waystones:white_portstone",
+  "x": 41.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_i/warp_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:white_portstone",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

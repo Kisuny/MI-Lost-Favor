@@ -1,0 +1,30 @@
+{
+  "title": "Divining Rod",
+  "description": [
+    "Indicates the amount of water for a <keyword>Well Pulley</keyword>.",
+    "",
+    "Looking <positive>down</positive> gives <keyword>more water</keyword>, looking <positive>up</positive> gives <keyword>less</keyword>. ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Указывает на количество воды для ручного колодца.",
+    "",
+    "Смотрит <positive>вниз</positive> - даёт <keyword>больше воды</keyword>, <positive>вверх</positive> - <keyword>меньше</keyword>. "
+  ],
+  "icon": "ytech:divining_rod",
+  "x": 19,
+  "y": 23,
+  "deps": {
+    "all": [
+      "first_steps/well_pulley"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:divining_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

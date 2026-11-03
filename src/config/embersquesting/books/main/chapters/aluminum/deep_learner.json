@@ -1,0 +1,28 @@
+{
+  "title": "Deep Learner",
+  "description": [
+    "Training a <keyword>Data Model</keyword> can be done in one of <keyword>two ways</keyword>: with a <keyword>Deep Learner</keyword> or with a <keyword>Simulation Chamber</keyword>. The <keyword>Deep Learner</keyword> allows you to store a few <keyword>Data Models</keyword> within, and <positive>kills</positive> you receive will begin to <property>train the model</property>. All models start out in the <warning>Faulty</warning> state, and must be trained up to §l<positive>Basic</positive> in the <keyword>Deep Learner</keyword>."
+  ],
+  "icon": "hostilenetworks:deep_learner",
+  "x": 6.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "aluminum/blank_data_model"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hostilenetworks:deep_learner",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "\"Deep Learner\" Trinket Slot",
+      "id": "milf:trinket/deep_learner",
+      "type": "custom"
+    }
+  ],
+  "shape": "circle"
+}

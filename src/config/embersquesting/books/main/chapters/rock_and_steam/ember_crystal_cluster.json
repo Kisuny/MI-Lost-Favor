@@ -1,0 +1,31 @@
+{
+  "title": "Ember Crystal Cluster",
+  "description": [
+    "An <keyword>Ember Crystal Cluster</keyword> - several crystals and shards <magic>alchemically fused</magic> together into one big chunk of <flame>raw power</flame>.",
+    "",
+    "It feeds the hungrier machines and becomes the base for the <keyword>Wildfire Core</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Друза кристаллизованного эмбера</keyword> - несколько кристаллов и осколков, <magic>алхимически сплавленных</magic> в один большой кусок <flame>чистой силы</flame>.",
+    "",
+    "Она питает самые прожорливые машины и служит основой для <keyword>Ядра дикого огня</keyword>."
+  ],
+  "icon": "embers:ember_crystal_cluster",
+  "x": 19,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ember_crystal_cluster",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon",
+  "size": 2.0
+}

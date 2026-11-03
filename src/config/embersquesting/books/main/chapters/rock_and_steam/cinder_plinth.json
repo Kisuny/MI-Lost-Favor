@@ -1,0 +1,31 @@
+{
+  "title": "Cinder Plinth",
+  "description": [
+    "Put any item into the <keyword>Cinder Plinth</keyword>, give it Ember, and it will <fire>burn the item</fire> into <bone>Ash</bone>.",
+    "",
+    "A <keyword>Bin</keyword> underneath collects the ash automatically.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Положите любой предмет в <keyword>Пепельный мусоросжигатель</keyword>, подайте эмбер, и он <fire>сожжёт его</fire> в <bone>пепел</bone>.",
+    "",
+    "<keyword>Свинцовый контейнер</keyword> снизу будет собирать пепел сам."
+  ],
+  "icon": "embers:cinder_plinth",
+  "x": 24,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:cinder_plinth",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon",
+  "size": 2.0
+}

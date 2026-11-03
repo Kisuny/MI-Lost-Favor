@@ -1,0 +1,29 @@
+{
+  "title": "Decree",
+  "description": [
+    "There exists another item as well, called a <keyword>Decree</keyword>. A Decree determines what kind of bounties show up on a bounty board. For example, an <property>Armorsmithing Decree</property> makes it so that objectives and rewards related to armor show up on the board (leather, iron, chestplates, boots, etc). You can have up to three decrees on a bounty board at once, and it will mix and match objectives and rewards from all three when new bounties appear!",
+    "",
+    "You can find new Decrees as rewards for certain bounties, or they can be traded with villagers at higher villager levels.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Существует ещё один предмет, называемый «<keyword>Указом</keyword>». Указ определяет, какие баунти будут отображаться на доске заданий. Например, Указ «<property>Бронедело</property>» обеспечивает появление на доске заданий и наград, связанных с броней (кожа, железо, нагрудники, сапоги и т. д.). На доске заданий может быть одновременно до трех указов, и при появлении новых заданий система будет комбинировать цели и награды из всех трех!",
+    "",
+    "Новые указы можно получить в качестве награды за выполнение определенных заданий или обменять у жителей деревни, достигших более высоких уровней."
+  ],
+  "icon": "bountiful:decree",
+  "x": 4,
+  "deps": {
+    "all": [
+      "diverse_content/q4b3c2c61b4a1072a"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "bountiful:decree",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Vacuum Freezer",
+  "icon": "modern_industrialization:vacuum_freezer",
+  "x": 21,
+  "y": 14,
+  "deps": {
+    "all": [
+      "automation_n_stuff/advanced_machine_hull",
+      "automation_n_stuff/mysterious_disk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:vacuum_freezer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

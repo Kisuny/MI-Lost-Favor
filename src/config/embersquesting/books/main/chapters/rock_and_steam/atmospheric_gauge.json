@@ -1,0 +1,26 @@
+{
+  "title": "Atmospheric Gauge",
+  "description": [
+    "The <keyword>Atmospheric Gauge</keyword> measures the <flame>density of Ember</flame> - the energy of the world's core - at your position.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Атмосферный датчик</keyword> измеряет <flame>плотность эмбера</flame> - энергии ядра мира - в точке, где вы стоите."
+  ],
+  "icon": "embers:atmospheric_gauge",
+  "x": 30.5,
+  "y": 29,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_gear"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:atmospheric_gauge",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

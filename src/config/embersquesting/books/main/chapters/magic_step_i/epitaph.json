@@ -1,0 +1,26 @@
+{
+  "title": "Epitaph",
+  "description": [
+    "Carry the <keyword>Epitaph</keyword> in your inventory, and if you <blood><fade minAlpha=0.3 frequency=0.8>die</fade></blood>, it will be consumed to mark your place of death with a <keyword>Fleeting Memorial</keyword>. Any <keyword>Waystone</keyword> can then offer it as a teleport destination - once you teleport there, the memorial disappears.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Носите <keyword>Epitaph</keyword> в инвентаре - если вы <blood><fade minAlpha=0.3 frequency=0.8>погибнете</fade></blood>, он будет израсходован, чтобы отметить место смерти <keyword>временным мемориалом</keyword>. Любой <keyword>вейстоун</keyword> сможет предложить его как точку телепортации - как только вы телепортируетесь туда, мемориал исчезнет."
+  ],
+  "icon": "waystones:epitaph",
+  "x": 42.5,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_i/warp_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:epitaph",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

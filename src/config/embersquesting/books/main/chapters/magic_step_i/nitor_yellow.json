@@ -1,0 +1,26 @@
+{
+  "title": "Nitor Yellow",
+  "description": [
+    "Your first alchemical creation - a tiny <flame>ever-burning flame</flame>. Completing it finishes the <named>Alchemy</named> entry and opens the rest of the branch.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Твоё первое алхимическое творение - маленькое <flame>вечное пламя</flame>. Его создание завершает запись <named>Алхимия</named> и открывает остальную ветку."
+  ],
+  "icon": "thaumaturge:nitor_yellow",
+  "x": 50,
+  "y": 30,
+  "deps": {
+    "all": [
+      "magic_step_i/crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:nitor_yellow",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Saddle",
+  "description": [
+    "Keep in mind that the horses have been greatly <click action=open_quest value='basic_information/horseman'><u>improved</u></click>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Имейте ввиду что лошади сильно <click action=open_quest value='basic_information/horseman'><u>улучшены</u></click>!"
+  ],
+  "icon": "minecraft:saddle",
+  "x": 25.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "first_steps/tin_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:saddle",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_iron",
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_overworld",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

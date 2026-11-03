@@ -1,0 +1,30 @@
+{
+  "title": "Heart Transplant",
+  "description": [
+    "<named>Heart Transplant</named> is a <keyword>workstation</keyword> for villagers ",
+    "",
+    "<named>Ascetic</named> sells a variety of interesting <magic>Risus</magic>-related items, such as maps that help you locate various structures from the <magic>Risus</magic> mod!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Heart Transplant</named> является <keyword>рабочей станцией</keyword> для жителей",
+    "",
+    "<named>Ascetic</named> продает множество интересных вещей связанных с <magic>Risus</magic>, например карты которые помогают найти разные структуры из мода <magic>Risus</magic>!"
+  ],
+  "icon": "risus:heart_transplant",
+  "x": 17,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:heart_transplant",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Kanthal Dust",
+  "icon": "modern_industrialization:kanthal_dust",
+  "x": 6.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "automation_n_stuff/stainless_steel_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:kanthal_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

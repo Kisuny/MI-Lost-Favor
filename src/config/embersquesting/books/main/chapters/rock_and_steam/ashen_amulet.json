@@ -1,0 +1,30 @@
+{
+  "title": "Ashen Amulet",
+  "description": [
+    "While you wear the <keyword>Ashen Amulet</keyword>, every block you break and every creature you kill <shake amplitude=0.3 frequency=1.0>crumbles to ash</shake> - and drops <warning>nothing but ash</warning>.",
+    "",
+    "Power, yes. Well thought-out power - not so much.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Пока на вас <keyword>Пепельный амулет</keyword>, каждый сломанный блок и каждое убитое существо <shake amplitude=0.3 frequency=1.0>рассыпается пеплом</shake> - и не роняет <warning>ничего, кроме пепла</warning>.",
+    "",
+    "Сила? Да. Продуманная сила? Не очень."
+  ],
+  "icon": "embers:ashen_amulet",
+  "x": 24,
+  "y": 25,
+  "deps": {
+    "all": [
+      "rock_and_steam/copper_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ashen_amulet",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

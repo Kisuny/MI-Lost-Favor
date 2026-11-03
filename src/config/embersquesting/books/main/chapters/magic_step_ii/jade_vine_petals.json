@@ -1,0 +1,35 @@
+{
+  "title": "Jade Vine Petals",
+  "description": [
+    "After <positive>growing</positive> a <keyword>jade bulb</keyword>, <positive>collect</positive> some of its petals",
+    "",
+    "You can read more about growing in the <keyword>book</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вырастив <keyword>нефритовую луковицу</keyword> <positive>соберите</positive> немного её лепестков",
+    "",
+    "Более подробно о росте можно прочитать в <keyword>книге</keyword>!"
+  ],
+  "icon": "spectrum:germinated_jade_vine_bulb",
+  "x": 38.5,
+  "y": 37.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/germinated_jade_vine_bulb"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "spectrum:germinated_jade_vine_bulb",
+      "type": "observe",
+      "icon": "spectrum:germinated_jade_vine_bulb"
+    },
+    {
+      "item": "spectrum:jade_vine_petals",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

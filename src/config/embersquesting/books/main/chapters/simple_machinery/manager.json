@@ -1,0 +1,73 @@
+{
+  "title": "Manager",
+  "description": [
+    "The <warning>Factory Manager</warning> is the core component of SFM. We want you to ease into what the mod is capable of, so as a reward, you’ll receive some cables, a couple of storage blocks, and, most importantly, a program disk containing your first program—it will help you figure out what you can do with this mod.",
+    "",
+    "Place §lcable§r, §lstorage§r and §lFactory Manager§r as shown in the screenshot below.",
+    "",
+    "And put §lour program§r in the §lmanager§r.",
+    "",
+    "",
+    {
+      "width": 500,
+      "height": 210,
+      "texture": "milf:textures/quest_pic/sfm_example_01.png",
+      "type": "image"
+    },
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<warning>Factory Manager</warning> является основным блоком в SFM. Мы планируем чтобы вы плавно погрузилсь в то, на что способен мод, по этой причине в качестве награды вы получаете немного <property>кабелей</property>, пару <property>хранилищ</property>, и, что самое главное <named>Program disk</named> с вашей первой программой, она поможет вам разобраться то, что можно сделать с этим модом.",
+    "",
+    "Поставьте §lКабеля§r, §lМенеджер§r и §lХранилища§r так, как показано на скриншоте ниже.",
+    "",
+    "И поместите §lнашу программу§r в §lменеджер§r.",
+    "",
+    {
+      "width": 500,
+      "height": 210,
+      "texture": "milf:textures/quest_pic/sfm_example_01.png",
+      "type": "image"
+    }
+  ],
+  "icon": "sfm:manager",
+  "x": 6.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "simple_machinery/machine_extender"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "sfm:manager",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "sfm:cable",
+      "count": 7,
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "minecraft:barrel",
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "minecraft:chest",
+      "type": "item"
+    },
+    {
+      "team_reward": true,
+      "item": "sfm:disk",
+      "components": "{\"minecraft:item_name\":'\"MI:LF: moving items\"',\"sfm:errors\":[],\"sfm:program\":'NAME \"MI:LF: moving items\"\n\n-- use two dashes for a comment\n-- keywords are case insensitive\n\nEVERY 20 ticks do\n    input from Barrel\n    output to Chest\n    -- \"Barrel\" and \"Chest\" are inventory labels\n    -- use a label gun to identify them in world!\nEND',\"sfm:warnings\":[{translate:\"program.sfm.warnings.unused_label\",with:[\"Barrel\"]},{translate:\"program.sfm.warnings.unused_label\",with:[\"Chest\"]},{translate:\"program.sfm.reminders.push_labels\"}]}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

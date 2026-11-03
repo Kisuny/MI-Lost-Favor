@@ -1,0 +1,27 @@
+{
+  "title": "Lead Aspectus",
+  "description": [
+    "The <keyword>Lead Aspectus</keyword> - another <magic>alignment</magic> for your recipes. The more aspecti you own, the more transmutations you can attempt.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Свинцовый аспект</keyword> - ещё одно <magic>русло</magic> для рецептов. Чем больше у вас аспектов, тем больше трансмутаций можно попробовать."
+  ],
+  "icon": "embers:lead_aspectus",
+  "x": 12,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/codebreaking_slate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:lead_aspectus",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 1.5
+}

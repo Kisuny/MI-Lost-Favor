@@ -1,0 +1,29 @@
+{
+  "title": "Spectrum",
+  "description": [
+    "You may have already noticed this little icon next to pedestal output - you can place <magic>crafting tablets</magic> with desired crafts here! When the pedestal has a <magic>crafting tablet</magic> inside it, it changes behavior - now it only accepts items that could be used in a specified craft (that means that if your crafting table output is, for example, a piston, the pedestal will accept any type of planks, even if you used one specific type in the <magic>tablet</magic>) and nothing else (note: items could §o§lonly§r§r be inserted from the top of the pedestal). Then if the pedestal is powered by redstone, it will output the crafting result from the bottom and §o§lonly§r§r from the bottom",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Возможно, вы уже заметили эту маленькую иконку рядом с выходом пьедестала — здесь можно размещать планшеты с желаемыми изделиями! Когда в пьедестале находится планшет для крафта, он меняет свое поведение — теперь он принимает только предметы, которые могут быть использованы в указанном крафте (это означает, что если выход вашего крафт-стола — например, поршень, пьедестал будет принимать любой тип досок, даже если вы использовали один конкретный тип в планшете) и ничего больше (примечание: предметы можно вставлять только сверху пьедестала). Затем, если пьедестал питается от редстоуна, он будет выдавать результат крафта снизу и только снизу."
+  ],
+  "icon": "spectrum:crafting_tablet",
+  "deps": {
+    "all": [
+      "bhow_to_automate/basic_wip_chapter"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Spectrum"
+    },
+    {
+      "item": "spectrum:crafting_tablet",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "invisible_until_deps_visible": true
+}

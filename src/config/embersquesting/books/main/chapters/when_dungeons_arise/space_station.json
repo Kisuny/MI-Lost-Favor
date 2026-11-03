@@ -1,0 +1,35 @@
+{
+  "title": "Space Station",
+  "description": [
+    "An <keyword>Eye of Ender</keyword> surrounded by four <magic>Enderitium Gems</magic> makes the <named>Eye of Annihilation</named>. It leads to the <glitch frequency=0.7 shiftChance=0.06>Space Station</glitch> on the outer islands.",
+    "",
+    "<warning>This is the hardest place in the mod.</warning> Come prepared.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Око Края</keyword>, окружённое четырьмя <magic>самоцветами эндеритиума</magic>, превращается в <named>Око аннигиляции</named>. Оно ведёт к <glitch frequency=0.7 shiftChance=0.06>Космической станции</glitch> на внешних островах.",
+    "",
+    "<warning>Это самое опасное место мода.</warning> Приходи подготовленным."
+  ],
+  "icon": "legendary_monsters:eye_of_annihilation",
+  "x": 18.5,
+  "y": 26,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_ascent"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:eye_of_annihilation",
+      "type": "item"
+    },
+    {
+      "structure": "legendary_monsters:space_station",
+      "type": "location"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

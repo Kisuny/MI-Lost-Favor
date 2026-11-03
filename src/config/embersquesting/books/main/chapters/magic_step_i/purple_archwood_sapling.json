@@ -1,0 +1,31 @@
+{
+  "title": "Purple Archwood Sapling",
+  "description": [
+    "Use <keyword>Mutandis</keyword> to create an <keyword>Archwood sapling</keyword>!",
+    "",
+    "Use the <keyword>guidebook</keyword> to find the recipe.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя <keyword>мутандис</keyword>, создайте <keyword>саженец арчвуда</keyword>!",
+    "",
+    "Используйте <keyword>гайдбук</keyword>, чтобы узнать рецепт."
+  ],
+  "icon": "ars_nouveau:purple_archwood_sapling",
+  "x": 26.5,
+  "y": 42,
+  "deps": {
+    "all": [
+      "magic_step_i/mutandis"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:purple_archwood_sapling",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

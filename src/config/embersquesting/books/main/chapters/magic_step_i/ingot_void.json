@@ -1,0 +1,27 @@
+{
+  "title": "Ingot Void",
+  "description": [
+    "A <curse>Void Seed</curse> bound with metal becomes <keyword>Void Metal</keyword> - the material of the strongest gear in the mod. Beware the <shake amplitude=0.4 frequency=1.5><warning>warp</warning></shake> it brings.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<curse>Семя пустоты</curse>, связанное с металлом, становится <keyword>металлом пустоты</keyword> - материалом сильнейшего снаряжения мода. Остерегайся <shake amplitude=0.4 frequency=1.5><warning>искажения</warning></shake>, которое он несёт."
+  ],
+  "icon": "thaumaturge:ingot_void",
+  "x": 41,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_i/void_seed"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:ingot_void",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 1.5
+}

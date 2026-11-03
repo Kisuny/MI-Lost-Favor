@@ -1,0 +1,268 @@
+{
+  "title": "Stages",
+  "icon": "milf:textures/item/mi_upgrader.png",
+  "order": 2,
+  "scope": "team",
+  "links": [
+    {
+      "quest": "first_steps/iron_bloom",
+      "x": 0.0,
+      "y": -4.0
+    },
+    {
+      "quest": "first_steps/iron_ingot",
+      "x": 1.0,
+      "y": -4.0
+    },
+    {
+      "quest": "first_steps/forge_hammer",
+      "x": 2.0,
+      "y": -4.0
+    },
+    {
+      "quest": "rock_and_steam/bronze_plate",
+      "x": 3.0,
+      "y": -4.0
+    },
+    {
+      "quest": "bronze_age/flint_and_steel",
+      "x": -14.5,
+      "y": 0.5
+    },
+    {
+      "quest": "when_dungeons_arise/the_end",
+      "x": -13.5,
+      "y": 0.5
+    },
+    {
+      "quest": "bronze_age/steel_ingot",
+      "x": 4.0,
+      "y": -4.0
+    },
+    {
+      "quest": "simple_machinery/grindingdisk",
+      "x": 6.0,
+      "y": -4.0
+    },
+    {
+      "quest": "simple_machinery/buzzsaw",
+      "x": 5.0,
+      "y": -4.0
+    },
+    {
+      "quest": "magic_step_i/devices_pouch",
+      "x": -3.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_i/curio_bag",
+      "x": -2.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_ii/alchemical_forge_part",
+      "x": 18.5,
+      "y": 1.5
+    },
+    {
+      "quest": "when_dungeons_arise/world_tier_frontier",
+      "x": -1.0,
+      "y": 3.0
+    },
+    {
+      "quest": "when_dungeons_arise/world_tier_ascent",
+      "x": 20.5,
+      "y": 1.5
+    },
+    {
+      "quest": "when_dungeons_arise/world_tier_summit",
+      "x": 21.5,
+      "y": 1.5
+    },
+    {
+      "quest": "magic_step_i/portal_block",
+      "x": -12.5,
+      "y": 0.5
+    },
+    {
+      "quest": "magic_step_ii/q758bf8f1aa3dbae6",
+      "x": -11.5,
+      "y": 0.5
+    },
+    {
+      "quest": "magic_step_i/glow_vision_goggles",
+      "x": 3.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_iii/simple_reforging_table",
+      "x": 1.5,
+      "y": 11.0
+    },
+    {
+      "quest": "magic_step_ii/take_off_belt",
+      "x": 4.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_ii/pigment_palette",
+      "x": 5.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_ii/mark_of_mastery",
+      "x": 7.0,
+      "y": 3.0
+    },
+    {
+      "quest": "petrochemical_party_pp/adv_pattern_encoder",
+      "x": 11.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_ii/runic_brooch",
+      "x": 9.0,
+      "y": 3.0
+    },
+    {
+      "quest": "aluminum/deep_learner",
+      "x": 12.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_ii/liquid_crystal_bucket",
+      "x": 6.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_ii/runic_workbench",
+      "x": 8.0,
+      "y": 3.0
+    },
+    {
+      "quest": "automation_n_stuff/robot_auto_feeder",
+      "x": 10.0,
+      "y": 3.0
+    },
+    {
+      "quest": "when_dungeons_arise/world_tier_pinnacle",
+      "x": 2.0,
+      "y": 3.0
+    },
+    {
+      "quest": "magic_step_iii/reforging_table",
+      "x": 2.5,
+      "y": 11.0
+    },
+    {
+      "quest": "magic_step_iii/augmenting_table",
+      "x": 3.5,
+      "y": 11.0
+    },
+    {
+      "quest": "automation_n_stuff/xaeromap_wip",
+      "x": 4.5,
+      "y": 11.0
+    },
+    {
+      "quest": "first_steps/q00ff5f61cb6d32b8",
+      "x": -6.0,
+      "y": 3.0
+    },
+    {
+      "quest": "when_dungeons_arise/gate_pearl",
+      "x": 19.5,
+      "y": 1.5
+    },
+    {
+      "quest": "magic_step_ii/crimson_veil_elixir",
+      "x": -10.5,
+      "y": 0.5
+    },
+    {
+      "quest": "first_steps/q67f8922e4579fa8c",
+      "x": 13.0,
+      "y": 3.0
+    },
+    {
+      "quest": "bronze_age/diamond_helmet",
+      "x": -15.5,
+      "y": 10.5
+    },
+    {
+      "quest": "bronze_age/q4dd1404d1b9ca7f7",
+      "x": -14.5,
+      "y": 10.5
+    },
+    {
+      "quest": "magic_step_i/apothic_enchanting_table",
+      "x": -13.5,
+      "y": 10.5
+    }
+  ],
+  "defaults": {
+    "progression": "linear"
+  },
+  "decorations": [
+    {
+      "width": 12.857143,
+      "height": 4.285714,
+      "content": {
+        "texture": "milf:textures/quest_pic/main_progression.png",
+        "type": "image"
+      },
+      "x": -2.4285717,
+      "y": -8.642857
+    },
+    {
+      "width": 8.571428,
+      "height": 4.285714,
+      "content": {
+        "texture": "milf:textures/quest_pic/other.png",
+        "type": "image"
+      },
+      "x": -0.78571415,
+      "y": 6.357143
+    },
+    {
+      "width": 12.857143,
+      "height": 3.4285715,
+      "content": {
+        "texture": "milf:textures/quest_pic/dimensions.png",
+        "type": "image"
+      },
+      "x": -16.928572,
+      "y": -3.7142859
+    },
+    {
+      "width": 14.571428,
+      "height": 3.4285715,
+      "content": {
+        "texture": "milf:textures/quest_pic/trinket_slots.png",
+        "type": "image"
+      },
+      "x": -3.2857141,
+      "y": -1.2142857
+    },
+    {
+      "width": 13.714286,
+      "height": 3.4285715,
+      "content": {
+        "texture": "milf:textures/quest_pic/new_mobs.png",
+        "type": "image"
+      },
+      "x": 14.142857,
+      "y": -2.7142859
+    },
+    {
+      "width": 12.857143,
+      "height": 3.4285715,
+      "content": {
+        "texture": "milf:textures/quest_pic/chests_loot.png",
+        "type": "image"
+      },
+      "x": -20.547619,
+      "y": 5.7738094
+    }
+  ]
+}

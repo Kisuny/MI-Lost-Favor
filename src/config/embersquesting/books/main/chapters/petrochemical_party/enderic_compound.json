@@ -1,0 +1,19 @@
+{
+  "title": "Enderic Compound",
+  "icon": "oritech:enderic_compound",
+  "x": 18.5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/bioresistant_machine_casing",
+      "petrochemical_party/adamant_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:enderic_compound",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

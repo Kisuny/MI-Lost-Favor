@@ -1,0 +1,33 @@
+{
+  "title": "Resonant Pickaxe",
+  "description": [
+    "Could be used to <positive>mine pure resources</positive>, as well as some <warning>fragile blocks</warning>",
+    "",
+    "Like the <keyword>Resonance</keyword> enchantment, this pickaxe also allows you to mine <warning>spawners</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Может использоваться для <positive>добычи чистых ресурсов</positive>, а также некоторых <warning>хрупких блоков</warning>.",
+    "",
+    "Как и зачарование <keyword>Resonance</keyword>, эта кирка также позволяет добывать <warning>спавнеры</warning>."
+  ],
+  "icon": "spectrum:resonant_pickaxe{\"minecraft:enchantments\":{levels:{\"spectrum:resonance\":1}}}",
+  "x": 52.5,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/resonance_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:resonant_pickaxe",
+      "components": "{\"minecraft:enchantments\":{levels:{\"spectrum:resonance\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "lines_out": "hover"
+}

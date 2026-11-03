@@ -1,0 +1,18 @@
+{
+  "title": "Item Pipe",
+  "icon": "moderndynamics:item_pipe",
+  "x": 22.5,
+  "y": 0.5,
+  "deps": {
+    "all": [
+      "bronze_age/item_fluid_transfer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "moderndynamics:item_pipe",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

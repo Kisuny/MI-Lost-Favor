@@ -1,0 +1,30 @@
+{
+  "title": "Infusion Provider",
+  "description": [
+    "No more pouring jars around the altar. The <named>ME Infusion Provider</named> exposes <positive>all essentia of your ME network</positive> to the <magic><pulse>Runic Matrix</pulse></magic> during <keyword>infusion</keyword>.",
+    "",
+    "Works with <keyword>Essentia Storage Buses</keyword> too, so an infusion altar can run on its own <property>subnetwork</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Больше не нужно расставлять банки вокруг алтаря. <named>ME поставщик инфузии</named> открывает <magic><pulse>рунической матрице</pulse></magic> <positive>всю эссенцию ME сети</positive> во время <keyword>инфузии</keyword>.",
+    "",
+    "Работает и с <keyword>шинами хранения эссенции</keyword>, так что алтарь можно посадить на отдельную <property>подсеть</property>."
+  ],
+  "icon": "appliedthaumaturge:infusion_provider",
+  "x": 9,
+  "y": 5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/interface"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:infusion_provider",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Gate Pearl",
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"apotheosis:tiered/pinnacle\"}",
+  "x": 20,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_pinnacle"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"apotheosis:tiered/pinnacle\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

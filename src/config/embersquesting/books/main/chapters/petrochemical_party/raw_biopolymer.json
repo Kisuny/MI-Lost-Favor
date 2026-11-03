@@ -1,0 +1,19 @@
+{
+  "title": "Raw Biopolymer",
+  "icon": "oritech:raw_biopolymer",
+  "x": 11.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/biomass",
+      "petrochemical_party/alien_goo_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:raw_biopolymer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

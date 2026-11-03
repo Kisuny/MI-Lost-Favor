@@ -1,0 +1,21 @@
+{
+  "title": "Ender Chest",
+  "icon": "enderstorage:ender_chest{\"enderstorage:frequency\":{left:\"white\",middle:\"white\",right:\"white\"}}",
+  "x": 12.5,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter",
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "enderstorage:ender_chest",
+      "components": "{\"enderstorage:frequency\":{left:\"white\",middle:\"white\",right:\"white\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

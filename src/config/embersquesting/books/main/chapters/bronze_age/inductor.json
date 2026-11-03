@@ -1,0 +1,19 @@
+{
+  "title": "Inductor",
+  "icon": "modern_industrialization:inductor",
+  "x": 30,
+  "y": 15,
+  "deps": {
+    "all": [
+      "bronze_age/copper_wire",
+      "bronze_age/blueprint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:inductor",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Gold Rings",
+  "description": [
+    "Cosmetic"
+  ],
+  "icon": "hexerei:gold_rings",
+  "x": 25,
+  "y": 34.5,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:gold_rings",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

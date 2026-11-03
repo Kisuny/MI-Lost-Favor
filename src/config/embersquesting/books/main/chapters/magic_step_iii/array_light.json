@@ -1,0 +1,25 @@
+{
+  "title": "Array Light",
+  "description": [
+    "<positive>Radiates illumination</positive> from invisible sources above the <magic>array</magic>, lighting an area without cluttering it with torches."
+  ],
+  "icon": "neovitae:array_light",
+  "x": 38.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "magic_step_iii/utility_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_light",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

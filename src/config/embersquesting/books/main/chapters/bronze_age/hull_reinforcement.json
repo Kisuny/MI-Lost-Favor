@@ -1,0 +1,19 @@
+{
+  "title": "Hull Reinforcement",
+  "icon": "immersive_aircraft:hull_reinforcement",
+  "x": 27,
+  "y": 29,
+  "deps": {
+    "all": [
+      "bronze_age/blueprint_4",
+      "bronze_age/hull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_aircraft:hull_reinforcement",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Broom Whistle",
+  "description": [
+    "Combine this whistle with a broom in a crafting grid to bind the broom to it.",
+    "",
+    "Using the whistle will them call the bound broom over to you."
+  ],
+  "icon": "hexerei:broom_whistle",
+  "x": 25.5,
+  "y": 35,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:broom_whistle",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

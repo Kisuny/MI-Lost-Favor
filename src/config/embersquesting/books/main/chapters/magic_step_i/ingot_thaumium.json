@@ -1,0 +1,26 @@
+{
+  "title": "Ingot Thaumium",
+  "description": [
+    "<magic>Thaumium</magic> is iron soaked in pure magic. You will need it <shake amplitude=0.3 frequency=1.0><warning>everywhere</warning></shake>: it opens <named>Artifice</named>, the <keyword>Essentia Smeltery</keyword> and most of the infusion recipes.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Таумиум</magic> - железо, пропитанное чистой магией. Он понадобится <shake amplitude=0.3 frequency=1.0><warning>везде</warning></shake>: он открывает <named>Мастерство</named>, <keyword>плавильню эссенции</keyword> и большинство рецептов инфузии."
+  ],
+  "icon": "thaumaturge:ingot_thaumium",
+  "x": 50,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_brass"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:ingot_thaumium",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

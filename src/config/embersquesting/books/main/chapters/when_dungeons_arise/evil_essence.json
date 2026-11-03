@@ -1,0 +1,27 @@
+{
+  "title": "Evil Essence",
+  "description": [
+    "You can only obtain it by killing the <blood>Wither</blood> while under a <curse>curse</curse>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Можно получить только при убийстве <blood>Wither</blood> будучи <curse>проклятым</curse>!"
+  ],
+  "icon": "enigmaticlegacyplus:evil_essence",
+  "x": 37.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "first_steps/q67f8922e4579fa8c"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:evil_essence",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

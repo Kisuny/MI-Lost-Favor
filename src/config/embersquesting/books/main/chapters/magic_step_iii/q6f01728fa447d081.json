@@ -1,0 +1,27 @@
+{
+  "title": "",
+  "description": [
+    "Use the <named>compass</named> on the <property>monument</property> to find the <magic>head altar</magic>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используйте <named>компас</named> на <property>монументе</property> чтобы найти <magic>head altar</magic>"
+  ],
+  "icon": "netherman:samsonit_key",
+  "x": 9.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_iii/altar_compass_key"
+    ]
+  },
+  "tasks": [
+    {
+      "structure": "netherman:monument",
+      "type": "location",
+      "icon": "netherman:samsonit_key"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Ender Source Jar",
+  "description": [
+    "The <keyword>Ender Source Jar</keyword> allows you to store <property>source</property> in an ender-connected <keyword>Source Jar</keyword>. Each jar you <positive>place</positive> will link to the same <property>pool of source</property>, allowing you to use the <keyword>Source Jar</keyword> from <keyword>anywhere</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Эндер-джар сурса</keyword> позволяет хранить <property>сурс</property> в связанных через эндер <keyword>джарах</keyword>. Каждый <positive>размещённый</positive> джар будет подключен к одному и тому же <property>пулу сурса</property>, позволяя использовать <keyword>сурс</keyword> из <keyword>любой точки</keyword>."
+  ],
+  "icon": "ars_additions:ender_source_jar",
+  "x": 100,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/source_jar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_additions:ender_source_jar",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

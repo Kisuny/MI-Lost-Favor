@@ -1,0 +1,26 @@
+{
+  "title": "Silver Aspectus",
+  "description": [
+    "The <keyword>Silver Aspectus</keyword> - silver has always been a good channel for the <magic>arcane</magic>. Needed for finer transmutations.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Серебряный аспект</keyword> - серебро всегда хорошо проводило <magic>тайные силы</magic>. Нужен для более тонких трансмутаций."
+  ],
+  "icon": "embers:silver_aspectus",
+  "x": 21.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:silver_aspectus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

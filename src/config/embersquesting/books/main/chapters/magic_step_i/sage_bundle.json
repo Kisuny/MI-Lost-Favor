@@ -1,0 +1,23 @@
+{
+  "title": "Sage Bundle",
+  "icon": "hexerei:sage_bundle",
+  "x": 9.5,
+  "y": 55,
+  "deps": {
+    "all": [
+      "magic_step_i/sage",
+      "magic_step_i/herb_drying_rack"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:sage_bundle",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:dried_sage_bundle",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

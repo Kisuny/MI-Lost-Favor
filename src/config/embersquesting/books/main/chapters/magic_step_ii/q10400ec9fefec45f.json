@@ -1,0 +1,30 @@
+{
+  "title": "",
+  "description": [
+    "You can use the structure-finding ritual from the <click action=open_quest value='magic_step_ii/brazier'><u>Eidolon</u></click> mod or <click action=open_quest value='magic_step_i/ritual_locate_structure'><u>Ars Additions</u></click>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Можно использовать ритуал поиска структур из мода <click action=open_quest value='magic_step_ii/brazier'><u>Eidolon</u></click> или <click action=open_quest value='magic_step_i/ritual_locate_structure'><u>Ars Additions</u></click>"
+  ],
+  "icon": "malum:void_conduit",
+  "x": 84,
+  "y": 2,
+  "deps": {
+    "all": [
+      "magic_step_ii/crude_scythe",
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "structure": "malum:weeping_well",
+      "type": "location",
+      "icon": "malum:void_conduit"
+    }
+  ],
+  "shape": "octagon",
+  "lines_in": "hover",
+  "size": 2.0
+}

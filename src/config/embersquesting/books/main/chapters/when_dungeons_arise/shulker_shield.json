@@ -1,0 +1,26 @@
+{
+  "title": "Shulker Shield",
+  "description": [
+    "Blocking has a <property>60%</property> chance to give the attacker <magic>Levitation</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "При блоке с шансом <property>60%</property> накладывает на атакующего <magic>левитацию</magic>."
+  ],
+  "icon": "legendary_monsters:shulker_shield",
+  "x": 11.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q587fcbe4f5a0b73e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:shulker_shield",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Rowan Sapling",
+  "description": [
+    "Only saplings can mutate. Fully-grown trees will not."
+  ],
+  "icon": "enchanted:rowan_sapling",
+  "x": 24.5,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mutandis"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:rowan_sapling",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

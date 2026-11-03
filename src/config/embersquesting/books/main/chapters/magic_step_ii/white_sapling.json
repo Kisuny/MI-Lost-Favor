@@ -1,0 +1,39 @@
+{
+  "title": "White Sapling",
+  "icon": "spectrum:white_sapling",
+  "x": 62,
+  "y": 39.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_moonstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:white_sapling",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:light_gray_sapling",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:gray_sapling",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:light_gray_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:gray_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:white_pigment",
+      "type": "item"
+    }
+  ],
+  "shape": "square",
+  "lines_out": "hover"
+}

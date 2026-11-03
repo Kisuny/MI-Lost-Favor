@@ -1,0 +1,27 @@
+{
+  "title": "Tesseract",
+  "description": [
+    "<keyword>Tesseract</keyword> allows you to <positive>transport Items, Fluid and Energy</positive>. Tesseracts work at <property>any distance and even across dimensions</property>! Use <keyword>multiple channels</keyword> to have different groups of Tesseracts!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Тессеракт</keyword> позволяет <positive>транспортировать предметы, жидкости и энергию</positive>. Тессеракты работают <property>на любом расстоянии и даже между измерениями</property>! Используйте <keyword>несколько каналов</keyword>, чтобы создавать разные группы тессерактов!"
+  ],
+  "icon": "tesseract:tesseract",
+  "x": 5,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "endgame/singularity",
+      "aluminum/reaction_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "tesseract:tesseract",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

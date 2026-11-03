@@ -1,0 +1,25 @@
+{
+  "title": "Array Signal",
+  "description": [
+    "Outputs a redstone signal from 0 to 15 proportional to the EV stored in the owner's anima, scaling linearly up to 1,000,000 EV. Requires a bound Arcane Ash to function."
+  ],
+  "icon": "neovitae:array_signal",
+  "x": 33,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/redstone_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_signal",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

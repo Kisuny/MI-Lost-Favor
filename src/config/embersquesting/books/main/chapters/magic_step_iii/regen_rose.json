@@ -1,0 +1,26 @@
+{
+  "title": "Regen Rose",
+  "description": [
+    "If you stand on this <named>flower</named>, you can feel the <positive>regeneration effect</positive>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Если постоять на этом <named>цветке</named>, можно почувствовать <positive>эффект регенерации</positive>!"
+  ],
+  "icon": "risus:regen_rose",
+  "x": 18,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:regen_rose",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

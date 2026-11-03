@@ -1,0 +1,32 @@
+{
+  "title": "<shake amplitude=0.35 frequency=1.2>BUT HOW DO YOU MAKE BEER?!</shake>",
+  "description": [
+    "In §l<c value=#e4affa>Spectrum</c>§r§r, you can brew different <c value=#9BB8ED>AlCoHoL</c>§r beverages. <c value=#9BB8ED>Alcohol</c>§r has some §lvery§r <c value=#FEECD6>strong buffs</c>§r, but it needs to ferment in the barrels for <c value=#FEECD6>real-life days</c>§r. The <c value=#9BB8ED>longer</c>§r you keep the products in the barrel - the <c value=#9BB8ED>higher</c>§r % of alcohol you will get!",
+    "",
+    "P.S. To start brewing beer, you must press the button stating that you are 18 years or older in the Spectrum guidebook! <c value=#d33b2b>It's important</c>§r! Don't worry, the quests for alcohol are purely optional, and not required for 100%.",
+    "Also sign *<c value=#9BB8ED>there</c>§r*, *<c value=#9BB8ED>here</c>§r*, and provide a <c value=#FEECD6>passport photo</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В <c value=#9BB8ED>Spectrume</c>§r можно заниматься <c value=#FEECD6>брожением</c>§r, и варить разный <c value=#9BB8ED>АлКоГоЛь</c>§r, <c value=#9BB8ED>алкоголь</c>§r имеет §lочень§r <c value=#FEECD6>сильные баффы</c>§r, но <c value=#9BB8ED>алкоголь</c>§r в бочках делается в <c value=#FEECD6>реальных днях</c>§r, чем <c value=#9BB8ED>дольше</c>§r держишь продукты брожения в бочке - тем <c value=#9BB8ED>больше</c>§r % ты получишь!",
+    "",
+    "",
+    "P.S. Чтобы начать варить пиво подветрдите что вам исполнилось 18 лет в книжке спектрума! <c value=#d33b2b>Это важно!</c>§r",
+    "А еще распишитесь *<c value=#9BB8ED>тут</c>§r*, *<c value=#9BB8ED>здесь</c>§r*, и предоставьте <c value=#FEECD6>фото паспорта</c>§r!"
+  ],
+  "x": 41.5,
+  "y": 55,
+  "deps": {
+    "all": [
+      "magic_step_i/titration_barrel"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "<shake amplitude=0.35 frequency=1.2>BUT HOW DO YOU MAKE BEER?!</shake>"
+    }
+  ],
+  "shape": "rsquare"
+}

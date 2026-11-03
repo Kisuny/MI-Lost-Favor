@@ -1,0 +1,30 @@
+{
+  "title": "Axe Of Lightning",
+  "description": [
+    "<property>RMB</property> calls down a <magic><glitch frequency=0.7 shiftChance=0.06>lightning strike</glitch></magic> - <property>9 damage per tick</property>, <warning>ignoring armor</warning>.",
+    "",
+    "<property>RMB</property> on a block sends an <magic>electric shockwave</magic> in the direction you look.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>ПКМ</property> обрушивает <magic><glitch frequency=0.7 shiftChance=0.06>удар молнии</glitch></magic> - <property>9 урона за тик</property>, <warning>сквозь броню</warning>.",
+    "",
+    "<property>ПКМ</property> по блоку пускает <magic>электрическую волну</magic> туда, куда ты смотришь."
+  ],
+  "icon": "legendary_monsters:axe_of_lightning",
+  "x": 11,
+  "y": 23,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q1905ed452e089998"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:axe_of_lightning",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

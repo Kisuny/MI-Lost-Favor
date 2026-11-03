@@ -1,0 +1,34 @@
+{
+  "title": "Any Fridges",
+  "description": [
+    "A <keyword>fridge</keyword> keeps ingredients cool and lets a connected cooking table pull food out of it, just like any other kitchen storage - freeing up chest space near your stove.",
+    "",
+    "Fridges can hold <property>upgrade items</property> in their upgrade slot:",
+    "• <keyword>Ice Unit</keyword> - provides <named>snow and ice</named> for recipes that need them",
+    "• <keyword>Preservation Chamber</keyword> - <positive>prevents the last item of a slot from being used up</positive>, so you never run out of a key ingredient",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Холодильник</keyword> хранит ингредиенты в холоде и позволяет подключённому кухонному столу забирать из него еду, как из любого другого кухонного хранилища - освобождая место в сундуках рядом с плитой.",
+    "",
+    "В слот улучшения холодильника можно поместить <property>предмет-улучшение</property>:",
+    "• <keyword>Ледогенератор</keyword> (Ice Unit) - предоставляет <named>снег и лёд</named> для рецептов, которым они нужны",
+    "• <keyword>Камера сохранения</keyword> (Preservation Chamber) - <positive>не даёт израсходовать последний предмет в ячейке</positive>, так что ключевой ингредиент никогда не закончится"
+  ],
+  "x": 31,
+  "y": 24,
+  "deps": {
+    "all": [
+      "first_steps/any_cooking_tables"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "cookingforblockheads:fridges",
+      "type": "item",
+      "title": "Any Fridges"
+    }
+  ],
+  "shape": "diamond"
+}

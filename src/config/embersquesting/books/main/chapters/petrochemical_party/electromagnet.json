@@ -1,0 +1,22 @@
+{
+  "title": "Electromagnet",
+  "description": [
+    "<positive>Attracts items</positive> when <property>powered</property>"
+  ],
+  "icon": "immersiveengineering:electromagnet",
+  "x": 16.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "simple_machinery/component_electronic_adv",
+      "petrochemical_party/wirecoil_steel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:electromagnet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

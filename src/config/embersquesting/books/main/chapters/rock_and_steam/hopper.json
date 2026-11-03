@@ -1,0 +1,18 @@
+{
+  "title": "Hopper",
+  "icon": "minecraft:hopper",
+  "x": 8,
+  "y": 1,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:hopper",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

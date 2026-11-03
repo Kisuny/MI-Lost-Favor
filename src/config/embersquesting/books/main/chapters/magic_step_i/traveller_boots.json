@@ -1,0 +1,27 @@
+{
+  "title": "Traveller Boots",
+  "description": [
+    "<keyword>Boots of the Traveller</keyword> run on vis, so you will need a <keyword>Recharge Pedestal</keyword> from <named>Auromancy</named> to keep them going. Worth it for the <bounce amplitude=1.5 frequency=1.2 phase=1.0>speed</bounce>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Сапоги путешественника</keyword> работают на vis, так что для них понадобится <keyword>зарядный пьедестал</keyword> из <named>Ауромантии</named>. Это того стоит ради <bounce amplitude=1.5 frequency=1.2 phase=1.0>скорости</bounce>."
+  ],
+  "icon": "thaumaturge:traveller_boots",
+  "x": 71.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:traveller_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "size": 1.5
+}

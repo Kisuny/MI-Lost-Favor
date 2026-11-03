@@ -1,0 +1,27 @@
+{
+  "title": "Any Iron Storage",
+  "x": 26.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "bronze_age/any_copper_storage"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "milf:iron_storage",
+      "type": "item",
+      "title": "Any Iron Storage"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "sophisticatedstorage:iron_chest",
+      "count": 2,
+      "components": "{\"sophisticatedstorage:wood_type\":\"crimson\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

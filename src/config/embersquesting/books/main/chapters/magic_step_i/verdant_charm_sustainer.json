@@ -1,0 +1,31 @@
+{
+  "title": "Verdant Charm: Sustainer",
+  "description": [
+    "The <aqua>Sustainer</aqua> enchantment makes the charm slowly <positive>feed</positive> whoever wears it and even provides <aqua><wave>breathable air</wave></aqua> - no more hunger or drowning worries.",
+    "",
+    "Applied by <magic>infusing</magic> a <keyword>Verdant Heart Charm</keyword>. Like the base charm, it runs on vis - charge it on a <keyword>Recharge Pedestal</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чары <aqua>Питающий</aqua> заставляют амулет понемногу <positive>кормить</positive> того, кто его носит, и даже дают <aqua><wave>воздух для дыхания</wave></aqua> - можно забыть о голоде и утоплении.",
+    "",
+    "Наносится <magic>инфузией</magic> на <keyword>амулет зелёного сердца</keyword>. Как и обычный амулет, работает на vis - заряжай его на <keyword>зарядном пьедестале</keyword>."
+  ],
+  "icon": "thaumaturge:verdant_charm{\"thaumaturge:verdant_type\":2}",
+  "x": 69,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "magic_step_i/verdant_charm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:verdant_charm",
+      "components": "{\"thaumaturge:verdant_type\":2}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

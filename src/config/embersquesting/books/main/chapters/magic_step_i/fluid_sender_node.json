@@ -1,0 +1,18 @@
+{
+  "title": "Fluid Sender Node",
+  "icon": "spectrum:fluid_sender_node",
+  "x": 51,
+  "y": 58.5,
+  "deps": {
+    "all": [
+      "magic_step_i/sender_node_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:fluid_sender_node",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

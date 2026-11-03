@@ -1,0 +1,20 @@
+{
+  "title": "Backpack",
+  "icon": "sophisticatedbackpacks:backpack{\"sophisticatedcore:number_of_inventory_slots\":27,\"sophisticatedcore:number_of_upgrade_slots\":1,\"sophisticatedcore:render_info_tag\":{upgradeItems:[{}]},\"sophisticatedcore:storage_uuid\":[I;1916723092,-1992474304,-1306188761,-717481051]}",
+  "x": 30.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "bronze_age/upgrade_base_2"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "sophisticatedbackpacks:backpack",
+      "components": "{\"sophisticatedcore:number_of_inventory_slots\":27,\"sophisticatedcore:number_of_upgrade_slots\":1,\"sophisticatedcore:render_info_tag\":{upgradeItems:[{}]},\"sophisticatedcore:storage_uuid\":[I;1916723092,-1992474304,-1306188761,-717481051]}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

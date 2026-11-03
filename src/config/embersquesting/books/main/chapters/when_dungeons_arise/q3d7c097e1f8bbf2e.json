@@ -1,0 +1,37 @@
+{
+  "title": "",
+  "description": [
+    "The <magic>Chorusent</magic> - a giant of the End that <shake amplitude=0.4 frequency=1.2>smashes the ground</shake> beneath its feet.",
+    "",
+    "Drops a <keyword>Chorus Crystal</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Эндер-посланник</magic> - великан Края, который <shake amplitude=0.4 frequency=1.2>сотрясает землю</shake> под ногами.",
+    "",
+    "Роняет <keyword>кристалл хоруса</keyword>."
+  ],
+  "x": 24,
+  "y": 27,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/ancient_tower_remains"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "legendary_monsters:endersent",
+      "type": "kill"
+    },
+    {
+      "advancement": "apotheosis:progression/summit",
+      "criterion": "kill_chorusent",
+      "type": "advancement",
+      "title": "Slay the Chorusent"
+    }
+  ],
+  "complete": "any",
+  "shape": "hexagon",
+  "size": 1.5
+}

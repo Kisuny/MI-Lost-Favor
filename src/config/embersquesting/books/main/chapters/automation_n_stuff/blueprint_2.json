@@ -1,0 +1,22 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"Storage Blueprint\",\"minecraft:item_name\":'{\"color\":\"#FFF678\",\"text\":\"Storage Blueprint\"}'}",
+  "x": 21,
+  "y": 20,
+  "deps": {
+    "any": [
+      "automation_n_stuff/toluene_bucket",
+      "automation_n_stuff/benzene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"Storage Blueprint\",\"minecraft:item_name\":'{\"color\":\"#FFF678\",\"text\":\"Storage Blueprint\"}'}",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare",
+  "size": 2.0
+}

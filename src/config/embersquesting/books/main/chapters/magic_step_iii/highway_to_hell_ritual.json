@@ -1,0 +1,23 @@
+{
+  "title": "Highway to Hell ritual",
+  "icon": "neovitae:ritual_stone",
+  "x": 58.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/ritual_diviner_tenebrae"
+    ]
+  },
+  "tasks": [
+    {
+      "dimension": "neovitae:dungeon",
+      "type": "location"
+    },
+    {
+      "item": "neovitae:ritual_stone",
+      "count": 69,
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

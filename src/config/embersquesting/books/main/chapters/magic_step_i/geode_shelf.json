@@ -1,0 +1,26 @@
+{
+  "title": "Geode Shelf",
+  "description": [
+    "The <keyword>Geode-Encased Bookshelf</keyword> grants <positive>Quantic Stability</positive> - it reduces the chance of getting a curse from your enchants. Pair it with a <keyword>Deepshelf of Arcane Treasures</keyword> to safely fish for treasure enchantments.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Geode-Encased Bookshelf</keyword> даёт <positive>стабильность</positive> - снижает шанс получить проклятие при зачаровании. Используйте её вместе с <keyword>Deepshelf of Arcane Treasures</keyword>, чтобы безопаснее охотиться за сокровищными зачарованиями."
+  ],
+  "icon": "apothic_enchanting:geode_shelf",
+  "x": 61,
+  "y": 50,
+  "deps": {
+    "all": [
+      "magic_step_i/bookshelf"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:geode_shelf",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

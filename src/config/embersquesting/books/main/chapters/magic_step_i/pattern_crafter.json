@@ -1,0 +1,26 @@
+{
+  "title": "Pattern Crafter",
+  "description": [
+    "Automates simple crafts (planks to sticks, ingots to nuggets, etc.): takes items from the inventory above and puts results into the one below.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Автоматизирует простые крафты (доски в палки, слитки в самородки и т.д.): берёт предметы из инвентаря сверху и кладёт результат в инвентарь снизу."
+  ],
+  "icon": "thaumaturge:pattern_crafter",
+  "x": 41,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_i/dioptra"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:pattern_crafter",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

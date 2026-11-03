@@ -1,0 +1,20 @@
+{
+  "title": "Ring Of Aerial Grace",
+  "icon": "spectrum:ring_of_aerial_grace",
+  "x": 65.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "magic_step_ii/paltaeria_gem",
+      "magic_step_i/popped_chorus_fruit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:ring_of_aerial_grace",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

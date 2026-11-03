@@ -1,0 +1,30 @@
+{
+  "title": "Blazing Ray",
+  "description": [
+    "The <keyword>Blazing Ray</keyword> looks like a gun but works like artillery: each shot fires a <flame>straight beam of pure Ember</flame> until it hits a block or a creature.",
+    "",
+    "Fired in quick succession it gets <warning>inaccurate</warning> - augments like the Focal Lens or Diffraction Barrel deal with that, each in its own way.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Огненный обрез</keyword> похож на ружьё, но работает как артиллерия: каждый выстрел выпускает <flame>прямой луч чистого эмбера</flame>, пока тот не упрётся в блок или существо.",
+    "",
+    "При частой стрельбе он <warning>теряет точность</warning> - улучшения вроде Фокусирующей линзы или Дифракционного дульного устройства решают это, каждое по-своему."
+  ],
+  "icon": "embers:blazing_ray",
+  "x": 5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "bronze_age/q690ee58c49d40485"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:blazing_ray",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

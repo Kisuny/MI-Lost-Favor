@@ -1,0 +1,15 @@
+{
+  "title": "Snorkel",
+  "icon": "artifacts:snorkel{\"relics:data\":{abilities:{abilities:{snorkeling:{lock:{breaks:5},points:0,stats:{drowning_resistance:{initialQuality:7},reserve_duration:{initialQuality:8},water_depth:{initialQuality:4}}}},synergies:{}},leveling:{},statistic:{}}}",
+  "x": 5,
+  "y": 35,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "artifacts:snorkel",
+      "components": "{\"relics:data\":{abilities:{abilities:{snorkeling:{lock:{breaks:5},points:0,stats:{drowning_resistance:{initialQuality:7},reserve_duration:{initialQuality:8},water_depth:{initialQuality:4}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

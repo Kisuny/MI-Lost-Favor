@@ -1,0 +1,20 @@
+{
+  "title": "Greater Potion Pendant",
+  "icon": "spectrum:greater_potion_pendant",
+  "x": 63.5,
+  "y": 29,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/paltaeria_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:greater_potion_pendant",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "lines_in": "hover"
+}

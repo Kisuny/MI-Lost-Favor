@@ -1,0 +1,25 @@
+{
+  "title": "Array Undertow",
+  "description": [
+    "Scribed with Kelp and awakened by Redstone Dust. Opens a vitaemantic current through the open column of air directly above the glyph, lifting or drowning any entity that enters. Right-click with an empty hand to reverse the flow; the array remembers its direction across world reloads. Strength scales with additional Redstone in the redstone slot (acceleration) and Kelp in the kelp slot (terminal velocity); right-click the array with more ingredients to stack them."
+  ],
+  "icon": "neovitae:array_undertow",
+  "x": 43.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "magic_step_iii/environmental_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_undertow",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

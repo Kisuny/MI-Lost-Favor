@@ -1,0 +1,26 @@
+{
+  "title": "Vis Battery",
+  "description": [
+    "Absorbs vis when the aura is above <property>95%</property> and releases it when it falls below <property>75%</property>. Keeps your chunk's aura steady.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Поглощает vis, когда аура выше <property>95%</property>, и отдаёт, когда она падает ниже <property>75%</property>. Держит ауру чанка стабильной."
+  ],
+  "icon": "thaumaturge:vis_battery",
+  "x": 58,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_i/recharge_pedestal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:vis_battery",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Gasoline Bucket",
+  "icon": "immersivepetroleum:gasoline_bucket",
+  "x": 11.5,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/benzene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:gasoline_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

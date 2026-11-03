@@ -1,0 +1,23 @@
+{
+  "title": "Enchanted Book",
+  "icon": "minecraft:enchanted_book{\"minecraft:stored_enchantments\":{levels:{\"spectrum:inexorable\":1}}}",
+  "x": 14,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanter",
+      "magic_step_ii/pure_bloodstone",
+      "magic_step_ii/pure_copper"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:inexorable\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

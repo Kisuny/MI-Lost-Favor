@@ -1,0 +1,23 @@
+{
+  "title": "Quartz Fixture",
+  "icon": "ae2:quartz_fixture",
+  "x": 21,
+  "y": 14,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/cable_anchor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:quartz_fixture",
+      "type": "item"
+    },
+    {
+      "item": "ae2:light_detector",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

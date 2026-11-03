@@ -1,0 +1,24 @@
+{
+  "title": "Aqueduct Hydrator",
+  "icon": "ytech:aqueduct_hydrator",
+  "x": 17.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "first_steps/aqueduct_valve"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:aqueduct_hydrator",
+      "type": "item"
+    },
+    {
+      "block": "ytech:aqueduct_hydrator",
+      "type": "observe",
+      "icon": "ytech:aqueduct_hydrator"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

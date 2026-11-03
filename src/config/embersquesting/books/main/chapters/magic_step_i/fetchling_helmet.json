@@ -1,0 +1,42 @@
+{
+  "title": "Fetchling Helmet",
+  "description": [
+    "§oUnbelievably useful§r, but keep in mind, it's <c value=#FEECD6>§lvery</c>§r fragile§r! ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "§oНевероятно полезная броня§r, но имей ввиду, она <c value=#FEECD6>очень хрупкая</c>§r! "
+  ],
+  "icon": "spectrum:fetchling_helmet",
+  "x": 38,
+  "y": 50,
+  "deps": {
+    "all": [
+      "magic_step_i/pedestal_all_basic",
+      "magic_step_i/phantom_membrane",
+      "magic_step_i/ender_eye",
+      "magic_step_i/nautilus_shell",
+      "magic_step_i/ghast_tear"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:fetchling_helmet",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:ferocious_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:sylph_leggings",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:oread_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

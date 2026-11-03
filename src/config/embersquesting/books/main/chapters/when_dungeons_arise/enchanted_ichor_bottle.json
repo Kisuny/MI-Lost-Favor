@@ -1,0 +1,30 @@
+{
+  "title": "Enchanted Ichor Bottle",
+  "description": [
+    "<warning>Can be found only once per game by one player.</warning>",
+    "",
+    "<obfuscate mode=random interval=30>You can find it in the same place as a regular <keyword>Nectar of Ichora</keyword><obfuscate>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<warning>Можно найти только один раз за игру одним игроком.</warning>",
+    "",
+    "<obfuscate mode=random interval=30>Найти его можно там же, где и обычную <keyword>Банку Ихора</keyword> </obfuscate>"
+  ],
+  "icon": "enigmaticlegacyplus:enchanted_ichor_bottle",
+  "x": 38.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "first_steps/q67f8922e4579fa8c"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:enchanted_ichor_bottle",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

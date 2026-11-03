@@ -1,0 +1,23 @@
+{
+  "title": "Analog Circuit",
+  "icon": "modern_industrialization:analog_circuit",
+  "x": 28,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "bronze_age/resistor",
+      "bronze_age/capacitor",
+      "bronze_age/workbench",
+      "bronze_age/analog_circuit_board",
+      "bronze_age/inductor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:analog_circuit",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "size": 2.0
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Machine Extender",
+  "icon": "oritech:machine_extender",
+  "x": 8.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_upgrade",
+      "simple_machinery/machine_core_2",
+      "simple_machinery/phenolic_resin_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:machine_extender",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

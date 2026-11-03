@@ -1,0 +1,26 @@
+{
+  "title": "Adhesive",
+  "description": [
+    "<keyword>Adhesive</keyword> is a synthesized <positive>replacement for slime balls</positive> in recipes - no more hunting rare slimes.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Сгусток клея</keyword> - синтезированная <positive>замена слизи</positive> в рецептах, больше не нужно гоняться за редкими слизнями."
+  ],
+  "icon": "embers:adhesive",
+  "x": 25.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/copper_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:adhesive",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

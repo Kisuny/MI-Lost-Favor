@@ -1,0 +1,20 @@
+{
+  "title": "Basic Upgrade",
+  "icon": "modern_industrialization:basic_upgrade",
+  "x": 6.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_motor",
+      "simple_machinery/conveyor",
+      "simple_machinery/basic_pump"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:basic_upgrade",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

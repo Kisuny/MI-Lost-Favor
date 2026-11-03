@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Helmet",
+  "icon": "aquaculture:neptunium_helmet",
+  "x": 38.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_helmet",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

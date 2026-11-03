@@ -1,0 +1,22 @@
+{
+  "title": "Purified Syngas Bucket",
+  "icon": "milf:purified_syngas_bucket",
+  "x": 23.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/syngas_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:purified_syngas_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Chemical Reactor",
+  "icon": "modern_industrialization:chemical_reactor",
+  "x": 21,
+  "y": 6,
+  "deps": {
+    "all": [
+      "automation_n_stuff/plastic_large_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:chemical_reactor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

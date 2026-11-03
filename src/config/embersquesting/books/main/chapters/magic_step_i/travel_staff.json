@@ -1,0 +1,19 @@
+{
+  "title": "Travel Staff",
+  "icon": "travelanchors:travel_staff",
+  "x": 42,
+  "y": 43.5,
+  "deps": {
+    "all": [
+      "magic_step_i/attuned_stone",
+      "bronze_age/steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "travelanchors:travel_staff",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

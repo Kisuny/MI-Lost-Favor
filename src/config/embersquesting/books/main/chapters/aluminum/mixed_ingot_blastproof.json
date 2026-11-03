@@ -1,0 +1,20 @@
+{
+  "title": "Mixed Ingot Blastproof",
+  "icon": "modern_industrialization:mixed_ingot_blastproof",
+  "x": 3,
+  "y": 8,
+  "deps": {
+    "all": [
+      "automation_n_stuff/stainless_steel_ingot",
+      "aluminum/tungsten_ingot",
+      "aluminum/titanium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:mixed_ingot_blastproof",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

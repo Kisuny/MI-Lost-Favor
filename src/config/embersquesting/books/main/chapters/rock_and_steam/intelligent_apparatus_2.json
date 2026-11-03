@@ -1,0 +1,27 @@
+{
+  "title": "Intelligent Apparatus",
+  "description": [
+    "The <keyword>Intelligent Apparatus</keyword> on your armor makes slain creatures drop <positive>more experience</positive>. Higher augment level - more XP.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Интеллектуальный аппарат</keyword> на броне заставляет убитых существ ронять <positive>больше опыта</positive>. Чем выше уровень улучшения, тем больше опыта."
+  ],
+  "icon": "embers:intelligent_apparatus",
+  "x": 18,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:intelligent_apparatus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

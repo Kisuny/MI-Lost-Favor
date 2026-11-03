@@ -1,0 +1,22 @@
+{
+  "title": "Ethanol Bucket",
+  "icon": "immersiveengineering:ethanol_bucket",
+  "x": 16,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "simple_machinery/fermenter"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:ethanol_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

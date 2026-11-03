@@ -1,0 +1,26 @@
+{
+  "title": "Wirecutter",
+  "icon": "immersiveengineering:wirecutter",
+  "x": 10.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "simple_machinery/blueprint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:wirecutter",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:copper_wire",
+      "count": 13,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

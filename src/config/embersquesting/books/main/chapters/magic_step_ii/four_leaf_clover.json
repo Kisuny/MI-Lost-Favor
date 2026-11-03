@@ -1,0 +1,26 @@
+{
+  "title": "Four Leaf Clover",
+  "description": [
+    "Where is the <named>gold pot</named>??",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Только §lсамый§r удачливый сможет найти <named>символ лепреконов</named>!"
+  ],
+  "icon": "spectrum:four_leaf_clover",
+  "x": 1.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/clover"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:four_leaf_clover",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Rune Slab Cinnabar",
+  "icon": "paganbless:rune_slab_cinnabar",
+  "x": 9.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_i/runic_core",
+      "rock_and_steam/bronze_plate",
+      "when_dungeons_arise/soul_of_the_helpless"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:rune_slab_cinnabar",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

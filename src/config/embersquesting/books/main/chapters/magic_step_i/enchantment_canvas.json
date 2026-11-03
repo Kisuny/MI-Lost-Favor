@@ -1,0 +1,31 @@
+{
+  "title": "Enchantment Canvas",
+  "description": [
+    "<c value=#FEECD6>Enchantment Canvas</c>§r helps you remove <c value=#C6BCE9>enchantments</c>§r from an item and reapply them if needed. ",
+    "",
+    "The canvas is <c value=#d33b2b>§lbound</c>§r§r to the §nitem type§r, and can only be <c value=#FEECD6>used on</c>§r the item it was originally used on.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#FEECD6>Холст</c>§r помогает снять <c value=#C6BCE9>зачарования</c>§r с предмета, если это необходимо и потом снова навесить его, если это необходимо. ",
+    "",
+    "Данный свиток <c value=#d33b2b>§lпривязывается</c>§r§r к §nтипу предмета§r, <c value=#FEECD6>снимать</c>§r и <c value=#FEECD6>накладывать</c>§r можно только с того предмета, с которого оно было снято."
+  ],
+  "icon": "spectrum:enchantment_canvas",
+  "x": 42.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/magenta_pigment",
+      "magic_step_i/phantom_membrane"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:enchantment_canvas",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

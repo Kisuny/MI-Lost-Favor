@@ -1,0 +1,18 @@
+{
+  "title": "Large Configurable Chest",
+  "icon": "extended_industrialization:large_configurable_chest",
+  "x": 28,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "bronze_age/configurable_chest"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:large_configurable_chest",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

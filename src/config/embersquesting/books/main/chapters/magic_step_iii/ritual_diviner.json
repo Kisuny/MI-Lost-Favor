@@ -1,0 +1,23 @@
+{
+  "title": "Ritual Diviner",
+  "description": [
+    "Right-click to select a ritual.",
+    "",
+    "Right-click the Master Ritual Stone along with a Ritual Stone in your inventory to build the ritual-structure"
+  ],
+  "icon": "neovitae:ritual_diviner",
+  "x": 46,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/elemental_ritual_stones"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:ritual_diviner",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

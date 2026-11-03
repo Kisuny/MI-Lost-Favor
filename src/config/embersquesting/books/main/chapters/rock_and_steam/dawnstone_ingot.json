@@ -1,0 +1,31 @@
+{
+  "title": "Dawnstone Ingot",
+  "description": [
+    "<keyword>Dawnstone</keyword> - a <flame>bright alloy</flame> of copper and gold, made in the <keyword>Mixer Centrifuge</keyword>. Ember is woven into its very nature.",
+    "",
+    "It is the base material for most advanced Ember machinery.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Золотит</keyword> - <flame>яркий сплав</flame> меди и золота, который делают в <keyword>Смесительной центрифуге</keyword>. Эмбер вплетён в саму его природу.",
+    "",
+    "Это основной материал для большинства продвинутых эмберных механизмов."
+  ],
+  "icon": "embers:dawnstone_ingot",
+  "x": 5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "rock_and_steam/mixer_centrifuge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:dawnstone_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon",
+  "size": 2.0
+}

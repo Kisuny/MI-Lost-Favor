@@ -1,0 +1,21 @@
+{
+  "title": "Glowing Oil Pot",
+  "description": [
+    "<property>Glowing</property> for <keyword>30 seconds</keyword>."
+  ],
+  "icon": "toxony:glowing_oil_pot",
+  "x": 18.5,
+  "y": 36.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/oil_pots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:glowing_oil_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

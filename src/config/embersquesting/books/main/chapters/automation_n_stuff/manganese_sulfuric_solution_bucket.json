@@ -1,0 +1,23 @@
+{
+  "title": "Manganese Sulfuric Solution Bucket",
+  "icon": "modern_industrialization:manganese_sulfuric_solution_bucket",
+  "x": 20.5,
+  "y": 5.5,
+  "deps": {
+    "min": {
+      "count": 2,
+      "of": [
+        "automation_n_stuff/manganese_crushed_dust",
+        "automation_n_stuff/chemical_reactor",
+        "petrochemical_party/sulfuric_acid_bucket"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:manganese_sulfuric_solution_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Biosteel Ingot",
+  "icon": "oritech:biosteel_ingot",
+  "x": 18.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/electric_blast_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:biosteel_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

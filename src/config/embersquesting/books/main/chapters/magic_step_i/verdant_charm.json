@@ -1,0 +1,30 @@
+{
+  "title": "Verdant Charm",
+  "description": [
+    "A charm that <positive><pulse>pulses with healing energy</pulse></positive> and washes all <poison>poisons and similar afflictions</poison> from your body. It does <warning>not</warning> heal actual wounds.",
+    "",
+    "It has an internal store of vis and <warning>cannot</warning> draw it from the aura - charge it on a <keyword>Recharge Pedestal</keyword> (or with an <keyword>Amulet of Vis</keyword>). Two infusion enchantments can improve it: <nature>Lifegiver</nature> and <aqua>Sustainer</aqua>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Амулет, который <positive><pulse>пульсирует целебной энергией</pulse></positive> и смывает с тела все <poison>яды и похожие недуги</poison>. Настоящие раны он <warning>не</warning> лечит.",
+    "",
+    "Внутри у него запас vis, и брать его из ауры амулет <warning>не умеет</warning> - заряжай его на <keyword>зарядном пьедестале</keyword> (или амулетом vis). Улучшить его можно двумя инфузионными чарами: <nature>Животворящий</nature> и <aqua>Питающий</aqua>."
+  ],
+  "icon": "thaumaturge:verdant_charm",
+  "x": 68.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "magic_step_i/cloud_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:verdant_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

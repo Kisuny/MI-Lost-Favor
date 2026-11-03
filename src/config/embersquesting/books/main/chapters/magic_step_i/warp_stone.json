@@ -1,0 +1,18 @@
+{
+  "title": "Warp Stone",
+  "icon": "waystones:warp_stone",
+  "x": 43,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_i/attuned_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "waystones:warp_stone",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

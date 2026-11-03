@@ -1,0 +1,32 @@
+{
+  "title": "Elemental Sword",
+  "description": [
+    "A thaumium sword infused with <wind>air</wind>. Every hit <wave>sweeps in a wide arc</wave>, striking foes around your target.",
+    "",
+    "While blocking, it conjures a <wind>whirlwind</wind> that pushes enemies away, deflects projectiles and slowly lifts you up. <positive>Sneak + RMB</positive> toggles the whirlwind. It comes with <keyword>Arcing II</keyword>: a gust of wind hits extra targets for half the damage.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Таумиевый меч, наполненный силой <wind>воздуха</wind>. Каждый удар <wave>проходит широкой дугой</wave> и задевает врагов рядом с целью.",
+    "",
+    "При блоке вызывает <wind>вихрь</wind>: отталкивает врагов, отражает снаряды и медленно поднимает тебя вверх. <positive>Shift + ПКМ</positive> включает и выключает вихрь. Идёт с чарами <keyword>Дуга II</keyword>: порыв ветра бьёт дополнительные цели на половину урона."
+  ],
+  "icon": "thaumaturge:elemental_sword{\"thaumaturge:infusion_enchantments\":{arcing:2}}",
+  "x": 74,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "magic_step_i/traveller_boots"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "thaumaturge:elemental_sword",
+      "components": "{\"thaumaturge:infusion_enchantments\":{arcing:2}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

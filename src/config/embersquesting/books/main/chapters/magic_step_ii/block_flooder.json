@@ -1,0 +1,18 @@
+{
+  "title": "Block Flooder",
+  "icon": "spectrum:block_flooder",
+  "y": 46,
+  "deps": {
+    "all": [
+      "magic_step_ii/mermaids_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:block_flooder",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Ritual Brazier",
+  "description": [
+    "Right click one of the many types of Ritual Tablets on this Brazier to prepare the ritual. Right click it again to activate the ritual.",
+    "",
+    "Some rituals allow you to augment them before activating them by throwing items into the Brazier."
+  ],
+  "icon": "ars_nouveau:ritual_brazier",
+  "x": 19,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_i/any_basic_pedestal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:ritual_brazier",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

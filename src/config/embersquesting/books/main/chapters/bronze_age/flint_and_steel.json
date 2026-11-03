@@ -1,0 +1,29 @@
+{
+  "title": "Flint And Steel",
+  "description": [
+    "Nether Access"
+  ],
+  "icon": "map_atlases:textures/gui/sprites/dimensions/the_nether.png",
+  "x": 12.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:flint_and_steel",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "The Nether Access ",
+      "id": "milf:stage/flint_and_steel",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "heart"
+}

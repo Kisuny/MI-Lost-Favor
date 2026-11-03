@@ -1,0 +1,34 @@
+{
+  "title": "Wilden Horn",
+  "description": [
+    "You can summon a mob using a <click action=open_quest value='magic_step_ii/brazier'><u>brazier</u></click>"
+  ],
+  "icon": "ars_nouveau:wilden_horn",
+  "x": 115.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_ii/ritual_wilden_summon"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:wilden_horn",
+      "type": "item"
+    },
+    {
+      "item": "enchanted:tongue_of_dog",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:charcoal",
+      "type": "item"
+    },
+    {
+      "item": "eidolon_repraised:soul_shard",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

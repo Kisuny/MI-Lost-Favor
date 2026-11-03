@@ -1,0 +1,49 @@
+{
+  "title": "Less-simple Machinery",
+  "icon": "immersiveengineering:component_electronic_adv",
+  "order": 6,
+  "scope": "team",
+  "links": [
+    {
+      "quest": "simple_machinery/component_electronic_adv",
+      "x": 14.5,
+      "y": 2.5
+    },
+    {
+      "quest": "automation_n_stuff/basic_machine_hull",
+      "x": 27.5,
+      "y": 9.5
+    },
+    {
+      "quest": "simple_machinery/bedrock_sample",
+      "x": 6.5,
+      "y": 10.5
+    }
+  ],
+  "group": "shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_magic_early",
+  "defaults": {
+    "progression": "linear"
+  },
+  "decorations": [
+    {
+      "width": 1.7142857,
+      "height": 1.7142857,
+      "content": {
+        "texture": "ftbchunks:textures/minimap_info.png",
+        "type": "image"
+      },
+      "x": 16.142857,
+      "y": 7.642857
+    },
+    {
+      "width": 5.142857,
+      "height": 2.5714285,
+      "content": {
+        "texture": "milf:textures/quest_pic/wip.png",
+        "type": "image"
+      },
+      "x": 1.9285715,
+      "y": 1.7142857
+    }
+  ]
+}

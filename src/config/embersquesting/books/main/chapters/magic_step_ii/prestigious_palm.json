@@ -1,0 +1,26 @@
+{
+  "title": "Prestigious Palm",
+  "description": [
+    "This glove-shaped charm, the <named>Prestigious Palm</named>, lets you touch what once escaped your grasp - roughly <property>doubling</property> your interaction range.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Этот амулет в форме перчатки, <named>Изысканная длань</named>, позволяет дотянуться до того, что раньше было вне досягаемости - примерно <property>удваивая</property> вашу дальность взаимодействия."
+  ],
+  "icon": "eidolon_repraised:prestigious_palm",
+  "x": 67,
+  "y": 21,
+  "deps": {
+    "all": [
+      "magic_step_ii/shadow_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:prestigious_palm",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

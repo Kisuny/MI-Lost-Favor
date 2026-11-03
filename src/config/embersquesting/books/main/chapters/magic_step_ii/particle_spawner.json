@@ -1,0 +1,30 @@
+{
+  "title": "Particle Spawner",
+  "description": [
+    "It's practically <c value=#C6BCE9>/particle</c>§r!",
+    "",
+    "The particle generator <c value=#FEECD6>allows</c>§r you to create most of the <c value=#CAE4C8>Minecraft</c>§r particles. Incredible special effects for any <c value=#9BB8ED>build</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Это практически <c value=#C6BCE9>магия креатива</c>§r!",
+    "",
+    "Генератор частиц позволяет <c value=#FEECD6>создавать</c>§r большинство частиц из <c value=#CAE4C8>Minecraft</c>§r'a, невероятные спецэффекты для любой <c value=#9BB8ED>постройки</c>§r!"
+  ],
+  "icon": "spectrum:particle_spawner",
+  "x": 4,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q2d8c9df5e216e09c"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:particle_spawner",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

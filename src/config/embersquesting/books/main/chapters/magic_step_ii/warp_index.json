@@ -1,0 +1,26 @@
+{
+  "title": "Warp Index",
+  "description": [
+    "The <keyword>Warp Index</keyword> lets you access your <keyword>Storage Lecterns</keyword> remotely, without walking up to them, as long as you stay in the same dimension.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Warp Index</keyword> позволяет обращаться к вашим <keyword>Storage Lectern</keyword> удалённо, не подходя к ним, пока вы находитесь в том же измерении."
+  ],
+  "icon": "ars_additions:warp_index",
+  "x": 39,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/raw_azurite"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_additions:warp_index",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

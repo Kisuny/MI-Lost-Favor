@@ -1,0 +1,30 @@
+{
+  "title": "Crystal Apothecary",
+  "description": [
+    "<keyword>Crystal Apothecary</keyword> automatically <positive>collects gemstone clusters</positive>. Anything - §6Topaz§r, §5Amethyst§r, <property>Certus Quartz</property> etc. It doesn't even need to be loaded!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Лучший помощник, сборщика кристаллов!",
+    "",
+    "Данный блок автоматический собирает выращенные кристаллы, например выращенный кристалл §5аметиста§r в жеоде!",
+    "",
+    "Данный блок очень сильно поможет вам в будущем!"
+  ],
+  "icon": "spectrum:crystal_apothecary",
+  "x": 7,
+  "y": 33,
+  "deps": {
+    "all": [
+      "magic_step_ii/storm_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:crystal_apothecary",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

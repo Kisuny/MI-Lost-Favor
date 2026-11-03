@@ -1,0 +1,20 @@
+{
+  "title": "Storage Disk",
+  "icon": "milf:storage_disk",
+  "x": 16,
+  "y": 10,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/oxygen_bucket",
+      "petrochemical_party_pp/nitrogen_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:storage_disk",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 2.0
+}

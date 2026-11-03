@@ -1,0 +1,42 @@
+{
+  "title": "Ashen Goggles",
+  "description": [
+    "Cloth soaked in alchemical <bone>ash</bone> becomes flexible yet tough <keyword>Ashen Fabric</keyword>, and from it - the <keyword>Ashen Cloak</keyword> set. Solid armor that looks quite dashing.",
+    "",
+    "The <keyword>Ashen Goggles</keyword> also show machine info, like a <keyword>Tinker's Lens</keyword> that is always on. And every piece has slots for <magic>Inflictor Gems</magic>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ткань, пропитанная алхимическим <bone>пеплом</bone>, становится гибкой и прочной <keyword>Пепельной тканью</keyword>, а из неё шьётся комплект <keyword>Пепельной накидки</keyword>. Крепкая броня, и выглядит весьма эффектно.",
+    "",
+    "<keyword>Пепельные очки</keyword> к тому же показывают информацию о машинах, как постоянно включённый <keyword>Инженерный окуляр</keyword>. А в каждой части есть слоты для <magic>Самоцветов сосредоточения</magic>."
+  ],
+  "icon": "embers:ashen_goggles",
+  "x": 8.5,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "bronze_age/armor_steel_helmet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:ashen_goggles",
+      "type": "item"
+    },
+    {
+      "item": "embers:ashen_cloak",
+      "type": "item"
+    },
+    {
+      "item": "embers:ashen_leggings",
+      "type": "item"
+    },
+    {
+      "item": "embers:ashen_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

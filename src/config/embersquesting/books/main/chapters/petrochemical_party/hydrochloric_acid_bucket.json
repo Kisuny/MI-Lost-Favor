@@ -1,0 +1,22 @@
+{
+  "title": "Hydrochloric Acid Bucket",
+  "icon": "modern_industrialization:hydrochloric_acid_bucket",
+  "x": 18.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/refinery_module_block"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:hydrochloric_acid_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

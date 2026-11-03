@@ -1,0 +1,31 @@
+{
+  "title": "Smoky Tinker Lens",
+  "description": [
+    "Too much information can be a curse. The <keyword>Smoky Tinker's Lens</keyword> on a helmet <property>turns off</property> the machine overlay that some helmets show.",
+    "",
+    "It takes no augment slot, but the helmet needs a Motive Core first.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Слишком много информации тоже бывает проклятием. <keyword>Мутный инженерный окуляр</keyword> на шлеме <property>отключает</property> подсказки о машинах, которые показывают некоторые шлемы.",
+    "",
+    "Слот улучшения он не занимает, но в шлем сначала нужно набить ядро пробуждения."
+  ],
+  "icon": "embers:smoky_tinker_lens",
+  "x": 12.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:smoky_tinker_lens",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

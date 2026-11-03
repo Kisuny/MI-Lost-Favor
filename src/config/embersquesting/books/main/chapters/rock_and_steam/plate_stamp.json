@@ -1,0 +1,26 @@
+{
+  "title": "Plate Stamp",
+  "description": [
+    "The <keyword>Plate Stamp</keyword> turns molten metal into <keyword>plates</keyword> - <positive>no more hammering</positive> them by hand.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Пресс-форма пластины</keyword> превращает расплавленный металл в <keyword>пластины</keyword> - <positive>больше не нужно</positive> ковать их вручную."
+  ],
+  "icon": "embers:plate_stamp",
+  "x": 7.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "rock_and_steam/stamper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:plate_stamp",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Cosmic Scroll",
+  "icon": "enigmaticlegacyplus:cosmic_scroll",
+  "x": 38.5,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/etherium_ore",
+      "when_dungeons_arise/cosmic_heart",
+      "when_dungeons_arise/starlight_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:cosmic_scroll",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

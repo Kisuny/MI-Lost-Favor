@@ -1,0 +1,30 @@
+{
+  "title": "Fluid Transfer",
+  "description": [
+    "The <keyword>Fluid Transfer</keyword> is the fluid version of the Item Transfer.",
+    "",
+    "Set the filter with a <keyword>bucket</keyword> or another container holding the fluid - it <positive>isn't consumed</positive>. Without a filter it works as a <wave>one-way pipe</wave>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Передатчик жидкостей</keyword> - жидкостная версия передатчика предметов.",
+    "",
+    "Фильтр задаётся <keyword>ведром</keyword> или другой ёмкостью с жидкостью - она <positive>не тратится</positive>. Без фильтра работает как <wave>односторонняя труба</wave>."
+  ],
+  "icon": "embers:fluid_transfer",
+  "x": 3,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/lapis_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:fluid_transfer",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Skillet",
+  "description": [
+    "The <named>Skillet</named> is used for pan-frying recipes - simply <positive>right-click</positive> it with a valid ingredient. It also acts as a <property>workstation</property>, letting a nearby villager become a <keyword>Chef</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Сковорода</named> используется для рецептов жарки - просто <positive>кликните ПКМ</positive> по ней с подходящим ингредиентом. Так же служит <property>рабочей станцией</property>, позволяя жителю рядом стать <keyword>Поваром</keyword>."
+  ],
+  "icon": "farmersdelight:skillet",
+  "x": 32,
+  "y": 22,
+  "deps": {
+    "all": [
+      "first_steps/any_cooking_tables"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "farmersdelight:skillet",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "A cage for our flying little friends",
+  "description": [
+    "You can use a <click action=open_quest value='first_steps/bird_catcher'><u>bird catcher</u></click> to catch mobs like bees or bats and <positive>breed them</positive>. This is a very <property>lag-friendly block</property> - use it instead of having large numbers of mobs in your territory, as that can <warning>negatively impact server performance</warning>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя <click action=open_quest value='first_steps/bird_catcher'><u>птицелов</u></click> можно поймать таких мобов как пчёл или летучих мышей и <positive>разводить их</positive>, это очень <property>лаг-френдли блок</property>, используйте его вместо большого количества мобов на вашей территории, это <warning>плохо сказывается на производительности сервера</warning>!"
+  ],
+  "x": 36,
+  "y": 24.5,
+  "deps": {
+    "all": [
+      "first_steps/bird_catcher"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "animal_pen:aviaries",
+      "type": "item",
+      "title": "Any Aviaries"
+    }
+  ],
+  "shape": "heart"
+}

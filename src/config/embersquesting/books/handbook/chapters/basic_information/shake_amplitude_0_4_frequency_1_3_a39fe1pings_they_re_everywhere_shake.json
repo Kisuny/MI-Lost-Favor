@@ -1,0 +1,26 @@
+{
+  "title": "<shake amplitude=0.4 frequency=1.3><c value=#A39FE1>PINGS!!! THEY'RE EVERYWHERE</c></shake>",
+  "description": [
+    "In this modpack, there are <keyword><bounce amplitude=2.0 frequency=1.5 phase=1.0>pings</bounce></keyword> for players, set to <keyword>button 5</keyword> on the mouse by default. For convenience, we recommend setting pings to <keyword>ALT</keyword> or the middle mouse button (<keyword>wheel</keyword>).",
+    "",
+    "You can also <property>specify a channel for pings</property>, so you don't have to <shake amplitude=0.3 frequency=1.5>listen to the sounds of other people's pings</shake>. To do this, use the command <keyword>/pingwheel channel NameChannel</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В модпаке существуют <keyword><bounce amplitude=2.0 frequency=1.5 phase=1.0>метки</bounce></keyword> для игроков, по умолчанию эта кнопка «<keyword>button 5</keyword>» на мышке, рекомендуем поставить эту кнопку на <keyword>ALT</keyword> или же среднюю кнопку мышки (<keyword>колесико</keyword>), для удобства.",
+    "",
+    "Вы так же можете <property>указать свой канал для меток</property>, чтобы <warning><shake amplitude=0.3 frequency=1.5>не слушать звуки чужих меток</shake></warning> командой <keyword>/pingwheel channel НазваниеКанала</keyword>",
+    "Либо же <keyword>/pingwheel config</keyword> и написать в меню <keyword>channel</keyword> нужный вам канал, удаление канала из меню ввода канала позволит вернуться в <property>общий канал</property>. Так же командой <keyword>/pingwheel config</keyword> можно настроить другие функции мода, в случае надобности."
+  ],
+  "icon": "clavis:textures/minigame/gear/center_warning_off.png",
+  "x": 9.71,
+  "y": 10.67,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "<shake amplitude=0.4 frequency=1.3><c value=#A39FE1>PINGS!!! THEY'RE EVERYWHERE</c></shake>"
+    }
+  ],
+  "shape": "square"
+}

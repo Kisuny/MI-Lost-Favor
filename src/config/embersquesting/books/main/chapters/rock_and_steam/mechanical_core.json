@@ -1,0 +1,31 @@
+{
+  "title": "Mechanical Core",
+  "description": [
+    "Big machines like the <keyword>Ember Bore</keyword> have only one port. The <keyword>Mechanical Core</keyword> <positive>extends it</positive>: it works as a proxy to the items, fluids or Ember of the large machine it faces.",
+    "",
+    "Up to <property>3</property> cores can be chained. Upgrades like the Catalytic Plug can also be attached through a core.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "У больших машин вроде <keyword>Эмберной буровой установки</keyword> всего один порт. <keyword>Механическое ядро</keyword> <positive>расширяет его</positive>: оно даёт доступ к предметам, жидкостям или эмберу большой машины, на которую смотрит.",
+    "",
+    "Можно соединить в цепочку до <property>3</property> ядер. Через ядро можно подключать и улучшения вроде Каталитического штепселя."
+  ],
+  "icon": "embers:mechanical_core",
+  "x": 15.5,
+  "y": 28,
+  "deps": {
+    "any": [
+      "rock_and_steam/archaic_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:mechanical_core",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 1.5
+}

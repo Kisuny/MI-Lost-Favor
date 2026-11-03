@@ -1,0 +1,21 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"Aircraft upgrades\"}",
+  "x": 28,
+  "y": 30,
+  "deps": {
+    "all": [
+      "bronze_age/blueprint_3"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"Aircraft upgrades\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare",
+  "lines_in": "hover"
+}

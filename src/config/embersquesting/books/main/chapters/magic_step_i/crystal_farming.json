@@ -1,0 +1,26 @@
+{
+  "title": "Crystal Farming",
+  "description": [
+    "Harvested crystals lose their ability to grow. Infuse them back into <magic>placeable crystals</magic> and you can <nature>farm</nature> your own supply of primal vis crystals.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Собранные кристаллы теряют способность расти. Верни им её инфузией в <magic>размещаемые кристаллы</magic>, и сможешь <nature>выращивать</nature> собственный запас первичных кристаллов."
+  ],
+  "icon": "thaumaturge:crystal_aer",
+  "x": 68,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:crystal_aer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

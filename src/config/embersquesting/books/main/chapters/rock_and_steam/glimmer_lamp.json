@@ -1,0 +1,31 @@
+{
+  "title": "Glimmer Lamp",
+  "description": [
+    "The <keyword>Glimmer Lamp</keyword> is a crystal in a metal cage that <wave>launches</wave> light sources, so you can light up spots <positive>far away</positive>.",
+    "",
+    "It has fewer charges and recharges slower in sunlight than the plain crystal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Мерцающая лампа</keyword> - кристалл в металлической клетке, который <wave>запускает</wave> источники света, так что можно освещать места <positive>издалека</positive>.",
+    "",
+    "Зарядов у неё меньше, и на солнце она восстанавливается медленнее, чем обычный кристалл."
+  ],
+  "icon": "embers:glimmer_lamp",
+  "x": 18,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/glimmer_crystal",
+      "rock_and_steam/iron_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:glimmer_lamp",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

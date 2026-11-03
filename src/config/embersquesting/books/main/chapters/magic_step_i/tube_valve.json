@@ -1,0 +1,30 @@
+{
+  "title": "Tube Valve",
+  "description": [
+    "Works like a normal tube, but can be <warning>shut off</warning> by hand or with a <property>redstone signal</property>. Without valves a tube network gets gummed up very easily - the book calls them <pulse><keyword>essential</keyword></pulse>.",
+    "",
+    "Click the middle of the valve with a wand to rotate it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Работает как обычная труба, но её можно <warning>перекрыть</warning> вручную или <property>сигналом редстоуна</property>. Без клапанов сеть труб очень легко забивается - книга называет их <pulse><keyword>обязательными</keyword></pulse>.",
+    "",
+    "Кликни жезлом по середине клапана, чтобы повернуть его."
+  ],
+  "icon": "thaumaturge:tube_valve",
+  "x": 52.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tube_valve",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

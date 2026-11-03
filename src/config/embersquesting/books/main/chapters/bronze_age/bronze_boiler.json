@@ -1,0 +1,22 @@
+{
+  "title": "Bronze Boiler",
+  "description": [
+    "All the <keyword>bronze machines</keyword> use <property>steam</property> to operate",
+    "Automatically <positive>outputs steam</positive> from the top"
+  ],
+  "icon": "modern_industrialization:bronze_boiler",
+  "x": 13,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_boiler",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

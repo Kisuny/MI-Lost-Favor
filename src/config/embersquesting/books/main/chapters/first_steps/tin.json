@@ -1,0 +1,27 @@
+{
+  "title": "Tin",
+  "icon": "modern_industrialization:raw_tin",
+  "x": 21.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "first_steps/lead_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Tin"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:raw_tin\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

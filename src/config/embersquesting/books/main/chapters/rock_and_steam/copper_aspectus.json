@@ -1,0 +1,26 @@
+{
+  "title": "Copper Aspectus",
+  "description": [
+    "The <keyword>Copper Aspectus</keyword> - a lively <magic>alignment</magic> needed for things like <keyword>Adhesive</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Медный аспект</keyword> - живое <magic>русло</magic>, нужное, например, для <keyword>Сгустка клея</keyword>."
+  ],
+  "icon": "embers:copper_aspectus",
+  "x": 25.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "rock_and_steam/soul_sand"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:copper_aspectus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Wireless Booster",
+  "icon": "ae2:wireless_booster",
+  "x": 21,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "aluminum/wireless_access_point"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:wireless_booster",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

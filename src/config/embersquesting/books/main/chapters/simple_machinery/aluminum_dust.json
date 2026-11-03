@@ -1,0 +1,18 @@
+{
+  "title": "Aluminum Dust",
+  "icon": "modern_industrialization:aluminum_dust",
+  "x": 12.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:aluminum_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

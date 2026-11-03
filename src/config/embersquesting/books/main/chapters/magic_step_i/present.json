@@ -1,0 +1,40 @@
+{
+  "title": "Present",
+  "description": [
+    "You can make a <c value=#FEECD6>present</c>§r and give it to your <c value=#CAE4C8>friend</c>§r, or your <c value=#d33b2b>unfriend</c>§r!",
+    "",
+    "You can also <c value=#C6BCE9>color</c>§r it however you like. More details can be discovered in the <c value=#FEECD6>Spectrum Guidebook</c>§r!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вы можете создать <c value=#FEECD6>подарок</c>§r и подарить его своему <c value=#CAE4C8>другу</c>§r, или <c value=#d33b2b>недругу</c>§r!",
+    "",
+    "Вы так же можете <c value=#C6BCE9>украсить</c>§r его на любой вкус, более подробнее можно прочитать в <c value=#FEECD6>книжке</c>§r!",
+    "",
+    "§0Атмосферу нужно §lПОДНЯТЬ!"
+  ],
+  "icon": "spectrum:present",
+  "x": 31.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:present",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "artifacts:whoopee_cushion",
+      "components": "{\"relics:data\":{abilities:{abilities:{push:{lock:{breaks:5},points:0,stats:{chance:{initialQuality:8},cloud_spawn_chance:{initialQuality:5},cooldown:{initialQuality:9},distance:{initialQuality:8},paralysis_duration:{initialQuality:7},paralysis_radius:{initialQuality:8},retaliation_chance:{initialQuality:6}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

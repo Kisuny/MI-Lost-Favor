@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "description": [
+    "Some <c value=#C6BCE9>endermen</c>§r appearing in your world hold blocks that seem to emit an <c value=#ECB4B4>spooky aura</c>§r.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Некоторые <c value=#C6BCE9>эндермены</c>§r, которые появляются в вашем мире, держат блоки, которые, кажется, излучают <c value=#ECB4B4>жуткую ауру</c>§r."
+  ],
+  "x": 4.5,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_ii/pedestal_onyx"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:collect_radiating_ender",
+      "type": "advancement"
+    }
+  ],
+  "shape": "square"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Stainless Steel Dust",
+  "icon": "modern_industrialization:stainless_steel_dust",
+  "x": 21,
+  "y": 3,
+  "deps": {
+    "all": [
+      "automation_n_stuff/manganese_tiny_dust",
+      "automation_n_stuff/chromium_tiny_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:stainless_steel_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Assembler",
+  "icon": "immersiveengineering:assembler",
+  "x": 12,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:assembler",
+      "type": "item"
+    },
+    {
+      "block": "immersiveengineering:assembler",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:sheetmetal_iron",
+      "count": 9,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:slab_sheetmetal_iron",
+      "count": 6,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:conveyor_basic",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:assembler_placer",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 7
+  },
+  "shape": "octagon"
+}

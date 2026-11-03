@@ -1,0 +1,39 @@
+{
+  "title": "First steps",
+  "icon": "minecraft:flint",
+  "order": 1,
+  "scope": "team",
+  "links": [
+    {
+      "quest": "when_dungeons_arise/anglers_hat_2",
+      "x": 39.0,
+      "y": 23.0
+    }
+  ],
+  "group": "magic_shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_primitive",
+  "defaults": {
+    "progression": "linear"
+  },
+  "decorations": [
+    {
+      "width": 21.428572,
+      "height": 10.285714,
+      "content": {
+        "texture": "milf:textures/quest_pic/welcome_chapter.png",
+        "type": "image"
+      },
+      "x": -0.96428585,
+      "y": -11.142857
+    },
+    {
+      "width": 1.7142857,
+      "height": 3.4285715,
+      "content": {
+        "texture": "milf:textures/quest_pic/saeta_pointing.png",
+        "type": "image"
+      },
+      "x": -2.3571434,
+      "y": 2.2857141
+    }
+  ]
+}

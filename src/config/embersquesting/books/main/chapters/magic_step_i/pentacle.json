@@ -1,0 +1,32 @@
+{
+  "title": "Pentacle",
+  "description": [
+    "Using the <keyword>Cinnabar Ritual</keyword> you can obtain the incredibly powerful <keyword>Pentacle</keyword>. Whatever mob is <positive>sacrificed</positive> to obtain it will result in the Pentacle <positive>spawning that mob for eternity</positive>.",
+    "",
+    "For the <keyword>pentagram</keyword> to work, you must meet the <keyword>spawning conditions</keyword> for the mob you want to summon; for example, to summon a <keyword>bat</keyword>, you need a <keyword>stone block</keyword> beneath the pentagram and <keyword>dim lighting</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Какой бы моб ни был <positive>принесен в жертву</positive> для его получения, <keyword>Пентакль</keyword> будет вечно спавнить этого моба.",
+    "",
+    "Чтобы <keyword>пентаграмма</keyword> заработала, необходимо выполнить <keyword>условия появления</keyword> того моба, которого вы хотите вызвать; так, например, для летучей мыши требуется <keyword>каменный блок</keyword> под пентаграммой и <keyword>слабое освещение</keyword>"
+  ],
+  "icon": "paganbless:pentacle{\"minecraft:entity_data\":{id:\"minecraft:pig\"}}",
+  "x": 9.5,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_i/rune_slab_cinnabar"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "paganbless:pentacle",
+      "components": "{\"minecraft:entity_data\":{id:\"minecraft:pig\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

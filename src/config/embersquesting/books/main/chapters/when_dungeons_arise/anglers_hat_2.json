@@ -1,0 +1,23 @@
+{
+  "title": "Anglers Hat",
+  "description": [
+    "This <named>artifact</named> is compatible with fishing from the <magic>Starcatcher</magic> mod! ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Данный <named>артефакт</named> совместим вместе с рыбалкой из мода <magic>Starcatcher</magic>! "
+  ],
+  "icon": "artifacts:anglers_hat{\"relics:data\":{abilities:{abilities:{catch:{lock:{breaks:5},points:0,stats:{chance:{initialQuality:3},heal:{initialQuality:1},max_casts:{initialQuality:7},treasure_chance:{initialQuality:1}}}},synergies:{}},leveling:{},statistic:{}}}",
+  "x": 2,
+  "y": 30,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "artifacts:anglers_hat",
+      "components": "{\"relics:data\":{abilities:{abilities:{catch:{lock:{breaks:5},points:0,stats:{chance:{initialQuality:3},heal:{initialQuality:1},max_casts:{initialQuality:7},treasure_chance:{initialQuality:1}}}},synergies:{}},leveling:{},statistic:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Lava",
+  "description": [
+    "Allows you to conjure a liquid lava block for the cost of 1,000 EV out of your Anima reserves."
+  ],
+  "icon": "neovitae:sigil_lava",
+  "x": 34,
+  "y": 2.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_lava",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

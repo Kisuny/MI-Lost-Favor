@@ -1,0 +1,46 @@
+{
+  "title": "Blessing and Grace",
+  "description": [
+    "Life and death have always walked together. One tome grants growth, the other a worthy end",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Жизнь и смерть всегда идут рядом. Один том дарует рост, другой - достойное завершение"
+  ],
+  "icon": "ars_elemental:earth_caster_tome{\"minecraft:custom_name\":'{\"color\":\"dark_purple\",\"italic\":true,\"text\":\"Freyr\\'s Harvest\"}',\"sauce:school_tome_caster\":{flavor_text:\"An <magic>ancient gift</magic> of the <keyword>god of fertility</keyword>, filling the earth with <positive>vital energy</positive>\",spells:{0:{color:{b:60,g:200,id:\"ars_nouveau:constant\",r:70},name:\"Freyr's Harvest\",particleTimeline:{\"ars_nouveau:touch\":{onResolvingEffect:{motion:{propMap:{},type:\"ars_nouveau:burst\"},particleOptions:{properties:{\"ars_nouveau:density\":{density:20,radius:0.1d,spawnType:\"SPHERE\"},\"ars_nouveau:emitter\":{age:0,rotation:{x:0.0f,y:0.0f}},\"ars_nouveau:particle_type\":{particleType:\"ars_hex:broom_leaves_2\",subProperties:{\"ars_nouveau:color\":{particleColor:{b:60,g:200,id:\"ars_nouveau:constant\",r:70},tintDisabled:1b}}}},type:\"ars_hex:broom_leaves_2\"}},resolveSound:{sound:{pitch:2.0f,sound:{id:\"ars_nouveau:armadillo_hurt_reduced\"}}},type:\"ars_nouveau:touch\"}},recipe:[\"ars_nouveau:glyph_touch\",\"ars_nouveau:glyph_grow\"],sound:{}}}}}",
+  "x": 22,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "first_steps/orb_of_the_forest"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "minecraft:logs",
+      "count": 670,
+      "mode": "consume",
+      "type": "item",
+      "title": "Any Logs"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "ars_elemental:earth_caster_tome",
+      "components": "{\"minecraft:custom_name\":'{\"color\":\"green\",\"text\":\"Freyr\\'s Grow\"}',\"sauce:school_tome_caster\":{flavor_text:\"An <magic>ancient gift</magic> of the <keyword>god of fertility</keyword>, filling the earth with <positive>vital energy</positive>\",spells:{0:{color:{b:60,g:200,id:\"ars_nouveau:constant\",r:70},name:\"Freyr's Harvest\",particleTimeline:{\"ars_nouveau:touch\":{onResolvingEffect:{motion:{propMap:{},type:\"ars_nouveau:burst\"},particleOptions:{properties:{\"ars_nouveau:density\":{density:20,radius:0.1d,spawnType:\"SPHERE\"},\"ars_nouveau:emitter\":{age:0,rotation:{x:0.0f,y:0.0f}},\"ars_nouveau:particle_type\":{particleType:\"ars_hex:broom_leaves_2\",subProperties:{\"ars_nouveau:color\":{particleColor:{b:60,g:200,id:\"ars_nouveau:constant\",r:70},tintDisabled:1b}}}},type:\"ars_hex:broom_leaves_2\"}},resolveSound:{sound:{pitch:2.0f,sound:{id:\"ars_nouveau:armadillo_hurt_reduced\"}}},type:\"ars_nouveau:touch\"}},recipe:[\"ars_nouveau:glyph_touch\",\"ars_nouveau:glyph_grow\"],sound:{}}}}}",
+      "type": "item"
+    },
+    {
+      "item": "ars_elemental:earth_caster_tome",
+      "components": "{\"minecraft:custom_name\":'{\"color\":\"gold\",\"text\":\"Leshy\\'s Mercy\"}',\"sauce:school_tome_caster\":{flavor_text:\"Even <warning>ancient giants</warning> bow before the <positive>mercy</positive> of the <keyword>forest's guardian</keyword>\",spells:{0:{color:{b:40,g:110,id:\"ars_nouveau:constant\",r:34},name:\"Leshy's Mercy\",particleTimeline:{\"ars_nouveau:touch\":{onResolvingEffect:{motion:{propMap:{},type:\"ars_nouveau:burst\"},particleOptions:{properties:{\"ars_nouveau:density\":{density:10,radius:0.1d,spawnType:\"SPHERE\"},\"ars_nouveau:emitter\":{age:0,rotation:{x:0.0f,y:0.0f}},\"ars_nouveau:particle_type\":{particleType:\"ars_hex:broom_leaves\",subProperties:{\"ars_nouveau:color\":{particleColor:{b:40,g:110,id:\"ars_nouveau:constant\",r:34},tintDisabled:1b}}}},type:\"ars_hex:broom_leaves\"}},resolveSound:{sound:{pitch:0.45f,sound:{id:\"ars_nouveau:pumpkin_carve\"}}},type:\"ars_nouveau:touch\"}},recipe:[\"ars_nouveau:glyph_touch\",\"ars_nouveau:glyph_fell\",\"ars_nouveau:glyph_aoe\"],sound:{}}}}}",
+      "type": "item"
+    },
+    {
+      "item": "arsdelight:source_berry_tea",
+      "count": 12,
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

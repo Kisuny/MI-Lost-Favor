@@ -1,0 +1,28 @@
+{
+  "title": "Acid Slimeball",
+  "description": [
+    "Drops from a <poison>poisoned</poison> <keyword>slime</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Выпадает из <poison>отравленного</poison> <keyword>слайма</keyword>."
+  ],
+  "icon": "toxony:acid_slimeball",
+  "x": 24.5,
+  "y": 39.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/any_scalpels"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:acid_slimeball",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

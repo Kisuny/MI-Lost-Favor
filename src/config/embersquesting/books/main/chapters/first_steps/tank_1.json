@@ -1,0 +1,19 @@
+{
+  "title": "Tank 1",
+  "icon": "tankstorage:tank_1",
+  "x": 29.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/potion_flask",
+      "first_steps/bronze_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "tankstorage:tank_1",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

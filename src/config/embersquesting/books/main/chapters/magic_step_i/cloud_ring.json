@@ -1,0 +1,26 @@
+{
+  "title": "Cloud Ring",
+  "description": [
+    "A simple first infusion: the <wind>Cloudstepper Ring</wind> lets you jump higher and fall softer.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Простая первая инфузия: <wind>кольцо облачного шага</wind> позволяет прыгать выше и мягче приземляться."
+  ],
+  "icon": "thaumaturge:cloud_ring",
+  "x": 68,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:cloud_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

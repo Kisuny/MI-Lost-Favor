@@ -1,0 +1,30 @@
+{
+  "title": "Enchanters Sword",
+  "description": [
+    "The <keyword>Enchanter's Sword</keyword> applies a <property>Touch</property> spell before damaging an entity, and grants all your spells extra <property>Spell Damage</property>. Inscribe it at the Scribe's Table with a spell that has no form, e.g.:",
+    "",
+    " <item id=ars_nouveau:glyph_ignite size=0.1 tooltip=true/> > <item id=ars_nouveau:glyph_extend_time tooltip=true/>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Меч зачарователя</keyword> применяет заклинание <property>Touch</property> перед нанесением урона и даёт всем вашим заклинаниям бонус к <property>урону заклинаний</property>. Впишите на Столе писца заклинание без формы, например:",
+    "",
+    " <item id=ars_nouveau:glyph_ignite size=0.1 tooltip=true/> > <item id=ars_nouveau:glyph_extend_time tooltip=true/>"
+  ],
+  "icon": "ars_nouveau:enchanters_sword",
+  "x": 109,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:enchanters_sword",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

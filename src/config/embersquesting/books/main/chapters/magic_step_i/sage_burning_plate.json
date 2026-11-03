@@ -1,0 +1,21 @@
+{
+  "title": "Sage Burning Plate",
+  "description": [
+    "You can place dried sage in these and light them up with flint and steel to prevent mob spawns."
+  ],
+  "icon": "hexerei:sage_burning_plate",
+  "x": 9.5,
+  "y": 54,
+  "deps": {
+    "all": [
+      "magic_step_i/mixing_cauldron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:sage_burning_plate",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Loot Fabricator",
+  "description": [
+    "<keyword>Mob Predictions</keyword> will need to be processed in a <keyword>Loot Fabricator</keyword>, a device which uses <property>power</property> to convert predictions to <property>mob drops</property>. The drops which are available are based on a list of <keyword>pre-defined items</keyword>, and a <positive>target can be selected</positive> for each type of model. The <keyword>Loot Fabricator</keyword> will remember your choices for each type, so you can <positive>feed multiple types of predictions</positive> into a single fabricator."
+  ],
+  "icon": "hostilenetworks:loot_fabricator",
+  "x": 7.5,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "aluminum/deep_learner"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hostilenetworks:loot_fabricator",
+      "type": "item"
+    },
+    {
+      "item": "hostilenetworks:prediction",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

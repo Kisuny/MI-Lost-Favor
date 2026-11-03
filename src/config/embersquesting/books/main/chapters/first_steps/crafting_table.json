@@ -1,0 +1,34 @@
+{
+  "title": "Crafting Table",
+  "description": [
+    "Finally",
+    "Let's just pretend that there's no saw on this thing's texture and move on until you can make said saw to satisfy your meticulousness needs.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Давайте просто сделаем вид, что на текстуре этой штуки нет пилы, и продолжим, пока вы не сможете сделать эту пилу, чтобы удовлетворить свои потребности в точности."
+  ],
+  "icon": "minecraft:crafting_table",
+  "x": 17,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/leather_strips"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:crafting_table",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:crafting_table",
+      "type": "observe",
+      "icon": "minecraft:crafting_table"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon",
+  "size": 2.0
+}

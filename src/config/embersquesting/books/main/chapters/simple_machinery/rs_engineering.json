@@ -1,0 +1,20 @@
+{
+  "title": "Rs Engineering",
+  "icon": "immersiveengineering:rs_engineering",
+  "x": 13.5,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "simple_machinery/component_electronic",
+      "bronze_age/component_iron",
+      "bronze_age/component_steel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

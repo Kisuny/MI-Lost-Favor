@@ -1,0 +1,30 @@
+{
+  "title": "Place the Master Ritual Stone",
+  "description": [
+    "Place the <named>Master Ritual Stone</named> to begin conducting rituals. Use the <property>Ritual Diviner</property> to see the stone placement pattern, then activate with an <magic>Activation Crystal</magic>.",
+    "",
+    "You can read about existing rituals in the guidebook!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Разместите <keyword>Master Ritual Stone</keyword>, чтобы начать проведение ритуалов. Воспользуйтесь <property>Ritual Diviner</property>, чтобы увидеть схему расположения ритуальных камней, а затем активируйте их с помощью <keyword>Activation Crystal</keyword>.",
+    "",
+    "Прочитать о существующих ритуалах можно в гайд-книге!"
+  ],
+  "icon": "neovitae:master_ritual_stone",
+  "x": 43,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/veneficus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:master_ritual_stone",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

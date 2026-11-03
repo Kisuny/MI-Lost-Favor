@@ -1,0 +1,26 @@
+{
+  "title": "Sapping Sword",
+  "description": [
+    "The <blood>Sword of Sapping</blood> deals <curse>wither</curse> damage on top of its normal strike, and any damage dealt this way <positive>heals</positive> you back.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<blood>Меч истощения</blood> дополнительно наносит урон <curse>иссушения</curse> поверх обычного удара, и весь урон, нанесённый таким образом, <positive>исцеляет</positive> вас."
+  ],
+  "icon": "eidolon_repraised:sapping_sword",
+  "x": 68,
+  "y": 22,
+  "deps": {
+    "all": [
+      "magic_step_ii/shadow_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:sapping_sword",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

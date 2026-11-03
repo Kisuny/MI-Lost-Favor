@@ -1,0 +1,26 @@
+{
+  "title": "Experience Tome",
+  "description": [
+    "The <keyword>Tome of Peritia</keyword> is a vessel for <magic>captured experience</magic>, <positive>safe from the grasp of death</positive>. <keyword>Sneak and Use</keyword> to store a level, <keyword>Use</keyword> alone to retrieve it. Hold either action to transfer multiple levels rapidly.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Tome of Peritia</keyword> - хранилище опыта, <positive>защищённое от потери при смерти</positive>. Зажми <keyword>Shift + Use</keyword> чтобы сохранить уровень, <keyword>Use</keyword> без шифта - забрать. Удерживай для быстрой передачи нескольких уровней сразу."
+  ],
+  "icon": "neovitae:experience_tome",
+  "x": 41.5,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_iii/veneficus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:experience_tome",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

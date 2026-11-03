@@ -1,0 +1,23 @@
+{
+  "title": "Jeopardant",
+  "description": [
+    "Low HP build, pog!"
+  ],
+  "icon": "spectrum:jeopardant",
+  "x": 12.5,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/stratine_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:jeopardant",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Broom Waterproof Tip",
+  "description": [
+    "Allows you to fly in water",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "позволяет плавать и не спрыгивать с метлы под водой"
+  ],
+  "icon": "hexerei:broom_waterproof_tip",
+  "x": 25,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:broom_waterproof_tip",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

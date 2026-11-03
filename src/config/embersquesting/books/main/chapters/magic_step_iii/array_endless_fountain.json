@@ -1,0 +1,25 @@
+{
+  "title": "Array Endless Fountain",
+  "description": [
+    "Scribed with a <keyword>Block of Lapis</keyword> and awakened by a <soul>Sea Pickle</soul>. <positive>Pipes water</positive> into every fluid container touching its six faces; every 5 ticks it deposits up to <property>6 buckets</property>, spread evenly across neighbours. Only whole-bucket fills commit. The cache of adjacent tanks reacts instantly to neighbour changes, backs off progressively when every tank is full (with a slate-grey particle puff to signal the stall), and <warning>parks completely</warning> on a redstone signal."
+  ],
+  "icon": "neovitae:array_endless_fountain",
+  "x": 39.5,
+  "y": 3.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/utility_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_endless_fountain",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

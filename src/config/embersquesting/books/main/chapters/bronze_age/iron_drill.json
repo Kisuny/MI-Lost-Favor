@@ -1,0 +1,18 @@
+{
+  "title": "Iron Drill",
+  "icon": "immersive_machinery:iron_drill",
+  "x": 28,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "bronze_age/tunnel_digger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_machinery:iron_drill",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

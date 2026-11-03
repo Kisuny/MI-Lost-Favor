@@ -1,0 +1,26 @@
+{
+  "title": "Omni Sender Node",
+  "description": [
+    "It works with both fluids and items at the same time!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Работает как с жидкостями так и предметами одновременно!"
+  ],
+  "icon": "spectrum:omni_sender_node",
+  "x": 51,
+  "y": 60,
+  "deps": {
+    "all": [
+      "magic_step_i/sender_node_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:omni_sender_node",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

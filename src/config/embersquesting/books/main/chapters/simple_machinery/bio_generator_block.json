@@ -1,0 +1,18 @@
+{
+  "title": "Bio Generator Block",
+  "icon": "oritech:bio_generator_block",
+  "x": 8.5,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "simple_machinery/machine_assembler"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:bio_generator_block",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

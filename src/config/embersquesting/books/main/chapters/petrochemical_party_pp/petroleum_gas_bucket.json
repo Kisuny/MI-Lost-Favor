@@ -1,0 +1,18 @@
+{
+  "title": "Petroleum Gas Bucket",
+  "icon": "immersivepetroleum:petroleum_gas_bucket",
+  "x": 18,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/distillation_tower"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:petroleum_gas_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

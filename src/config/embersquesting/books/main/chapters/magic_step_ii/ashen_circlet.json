@@ -1,0 +1,28 @@
+{
+  "title": "Ashen Circlet",
+  "description": [
+    "Complete <fire>fire immunity</fire> and more!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Полноценный <fire>иммунитет от огня</fire> и немного больше"
+  ],
+  "icon": "spectrum:ashen_circlet",
+  "x": 14,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket",
+      "magic_step_ii/stratine_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:ashen_circlet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

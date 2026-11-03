@@ -1,0 +1,18 @@
+{
+  "title": "Redstone Battery",
+  "icon": "modern_industrialization:redstone_battery",
+  "x": 10.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "simple_machinery/blueprint_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:redstone_battery",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

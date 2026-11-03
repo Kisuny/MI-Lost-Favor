@@ -1,0 +1,23 @@
+{
+  "title": "Base Spiritus Soul Raw",
+  "description": [
+    "Spiritus is creature essence, the lifeblood of Hellfire Forge crafting. Mark creatures with Throwing Daggers, slay them, and collect the <property>Raw Spiritus</property> that falls."
+  ],
+  "icon": "neovitae:base_spiritus_soul_raw{\"neovitae:spiritus_amount\":1.0d}",
+  "x": 37.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/throwing_dagger"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "neovitae:base_spiritus_soul_raw",
+      "components": "{\"neovitae:spiritus_amount\":1.0d}",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Why do some quests come in different forms?",
+  "description": [
+    "A <property>square</property>, a <property>diamond</property>, a <property>circle</property> - they don’t mean anything; they’re just decorations.",
+    "",
+    "The <keyword>heart icon</keyword> indicates that this quest is <positive><bounce amplitude=1.2 frequency=1.0 phase=1.0><b>very useful</b></bounce></positive>, and we highly recommend completing it!",
+    "",
+    "The <keyword>gear</keyword> icon usually means that the quest is a <warning><shake amplitude=0.3 frequency=1.0>main quest</shake></warning> and you need to complete it! ",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>Квадрат</property>, <property>ромб</property>, <property>круг</property> - ни на что не показывают, просто декорации.",
+    "",
+    "<keyword>Сердечко</keyword> - показывает на то, что квест <positive><bounce amplitude=1.2 frequency=1.0 phase=1.0><b>очень полезен</b></bounce></positive> и мы настоятельно рекомендуем выполнить его!",
+    "",
+    "<keyword>Шестеренка</keyword> - означает что квест является <warning><shake amplitude=0.3 frequency=1.0>основным</shake></warning> и вам необходимо его пройти!"
+  ],
+  "icon": "ftbquests:textures/shapes/heart/outline.png",
+  "x": 5,
+  "y": 15.5,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Why do some quests come in different forms?"
+    }
+  ],
+  "shape": "square"
+}

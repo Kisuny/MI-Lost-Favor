@@ -1,0 +1,58 @@
+{
+  "title": "Kettle",
+  "description": [
+    "Creating a <keyword>brew, infusion or potion</keyword> is a simple process, requiring either a <keyword>witch's cauldron</keyword> or <keyword>kettle</keyword>.",
+    "",
+    "First, you must <positive>fill</positive> your <keyword>cauldron or kettle</keyword> with water from a <keyword>bucket</keyword>. You will know it is full if no more water can fit.",
+    "",
+    "Next, <positive>place</positive> a <property>heat source</property> underneath your vessel such as <warning>fire</warning>, <warning>lava</warning> or a <keyword>campfire</keyword>. After a few seconds, the water should begin to <keyword>boil</keyword>.",
+    "",
+    "The final step, after filling the vessel and waiting for it to boil, is to <positive>drop your ingredients</positive> into the vessel, in order, one by one",
+    "",
+    "The water should start to <property>change colour</property>. Once added, the brew needs to <keyword>boil for a few seconds</keyword> to finish.",
+    "",
+    "If you make a mistake during brewing, such as adding the <warning>wrong ingredient</warning> or removing the heat source, your brew will <warning>spoil</warning>.",
+    "",
+    "When spoiled, the brew will <warning>turn brown</warning> and need to be <positive>removed using an empty bucket</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Приготовление <keyword>варева, настоя или зелья</keyword> - процесс несложный, для него требуется <keyword>ведьмин котел</keyword> или <keyword>котелок</keyword>.",
+    "",
+    "Сначала нужно <positive>наполнить</positive> <keyword>котел или котелок</keyword> водой из <keyword>ведра</keyword>. Вы поймете, что он полон, если в него больше не помещается вода.",
+    "",
+    "Затем <positive>поместите под сосуд</positive> <property>источник тепла</property>, например <warning>огонь</warning>, <warning>лаву</warning> или <keyword>костер</keyword>. Через несколько секунд вода должна <keyword>закипеть</keyword>.",
+    "",
+    "После того как вы наполните ёмкость и подождете, пока она закипит, <positive>опустите в нее</positive> <keyword>один предмет за другим</keyword>.",
+    "",
+    "Вода должна начать <property>менять цвет</property>. После добавления ингредиентов варево должно <keyword>кипеть несколько секунд</keyword>.",
+    "",
+    "Если вы допустите ошибку во время варки, например, добавите <warning>не тот ингредиент</warning> или <warning>уберете источник тепла</warning>, ваш напиток <warning>испортится</warning>.",
+    "",
+    "Когда варево <warning>испортится</warning>, оно <warning>станет коричневым</warning>, и его нужно будет <positive>удалить с помощью пустого ведра</positive>."
+  ],
+  "icon": "enchanted:kettle",
+  "x": 28,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:kettle",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "modopedia:book",
+      "components": "{\"modopedia:book\":\"enchanted:art_of_witchcraft\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

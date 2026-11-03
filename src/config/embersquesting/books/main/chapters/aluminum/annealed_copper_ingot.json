@@ -1,0 +1,18 @@
+{
+  "title": "Annealed Copper Ingot",
+  "icon": "modern_industrialization:annealed_copper_ingot",
+  "x": 8,
+  "y": 13,
+  "deps": {
+    "all": [
+      "aluminum/kanthal_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:annealed_copper_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

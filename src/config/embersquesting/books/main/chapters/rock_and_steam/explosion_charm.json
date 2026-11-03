@@ -1,0 +1,26 @@
+{
+  "title": "Explosion Charm",
+  "description": [
+    "While you wear the <keyword>Explosion Charm</keyword>, explosions near you are <shake amplitude=0.4 frequency=1.5>absorbed</shake> - their destructive force goes into the charm. No special bonus, just <positive>no crater</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Пока на вас <keyword>Взрывной амулет</keyword>, взрывы рядом <shake amplitude=0.4 frequency=1.5>поглощаются</shake> - вся разрушительная сила уходит в амулет. Никаких бонусов, просто <positive>никакой воронки</positive>."
+  ],
+  "icon": "embers:explosion_charm",
+  "x": 15.5,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/archaic_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:explosion_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

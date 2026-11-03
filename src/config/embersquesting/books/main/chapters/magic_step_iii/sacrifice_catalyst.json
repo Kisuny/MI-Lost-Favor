@@ -1,0 +1,21 @@
+{
+  "title": "Sacrifice Catalyst",
+  "icon": "risus:sacrifice_catalyst{\"minecraft:damage\":1000}",
+  "x": 17,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/concentration_core_2",
+      "magic_step_iii/beating_heart"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "risus:sacrifice_catalyst",
+      "components": "{\"minecraft:damage\":1000}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

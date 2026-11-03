@@ -1,0 +1,19 @@
+{
+  "title": "Ultimate Chunk Loader",
+  "icon": "chunkloaders:ultimate_chunk_loader",
+  "x": 6,
+  "y": 2,
+  "deps": {
+    "all": [
+      "endgame/quantum_machine_hull",
+      "endgame/quantum_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "chunkloaders:ultimate_chunk_loader",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Spellstone Table",
+  "icon": "enigmaticlegacyplus:spellstone_table",
+  "x": 38,
+  "y": 35,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/ichor_droplet",
+      "when_dungeons_arise/spellcore"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:spellstone_table",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

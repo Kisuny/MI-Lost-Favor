@@ -1,0 +1,26 @@
+{
+  "title": "Steam Chainsaw",
+  "icon": "extended_industrialization:steam_chainsaw",
+  "x": 11,
+  "y": 14,
+  "deps": {
+    "all": [
+      "simple_machinery/blueprint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:steam_chainsaw",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:lignite_coal",
+      "count": 7,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

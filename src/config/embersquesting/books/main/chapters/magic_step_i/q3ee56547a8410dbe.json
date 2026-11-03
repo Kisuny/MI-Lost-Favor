@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "icon": "cognition:infected_enchanted_bookshelf",
+  "x": 33.5,
+  "y": 63,
+  "deps": {
+    "all": [
+      "magic_step_i/enchanted_bookshelf"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "cognition:infected_enchanted_bookshelf",
+      "type": "observe",
+      "icon": "cognition:infected_enchanted_bookshelf"
+    }
+  ],
+  "shape": "circle"
+}

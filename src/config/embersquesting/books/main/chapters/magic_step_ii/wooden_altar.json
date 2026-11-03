@@ -1,0 +1,23 @@
+{
+  "title": "Wooden Altar",
+  "icon": "eidolon_repraised:wooden_altar",
+  "x": 77.5,
+  "y": 28,
+  "deps": {
+    "min": {
+      "count": 2,
+      "of": [
+        "magic_step_ii/q21ec4b09de3636b8",
+        "magic_step_ii/q0f9aa4aabc8bfbeb",
+        "magic_step_ii/straw_effigy"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:wooden_altar",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

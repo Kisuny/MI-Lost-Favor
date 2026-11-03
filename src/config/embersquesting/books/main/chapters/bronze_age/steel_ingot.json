@@ -1,0 +1,39 @@
+{
+  "title": "Steel Ingot",
+  "icon": "modern_industrialization:steel_ingot",
+  "x": 11,
+  "y": 18,
+  "deps": {
+    "all": [
+      "bronze_age/uncooked_steel_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_ingot",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "New interactions: villagers, spawners, wandering trader and new mobs",
+      "id": "milf:milestone/steel_ingot",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "title": "Feet Trinket Slot",
+      "id": "milf:trinket/feet_steel_ingot",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "title": "Back Trinket slot",
+      "id": "milf:trinket/back_steel_ingot",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Fire Scythe",
+  "description": [
+    "The <flame>Flame Fiend</flame> is imbued with pure fire. When using it, not only is the victim set on fire, but they will also experience <warning><shake amplitude=0.3 frequency=1.2>Flame Frailty</shake></warning>, a state during which being on fire will be more painful. Additionally, even enemies who are immune to fire won't be spared, as they get weakened and devoured by the pure flames from within.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "«<flame>Пламенный демон</flame>» пронизан чистым огнем. При его применении жертва не только загорается, но и попадает в состояние «<warning><shake amplitude=0.3 frequency=1.2>Пламенной уязвимости</shake></warning>», в котором ожоги становятся еще более болезненными. Кроме того, даже враги, обладающие иммунитетом к огню, не останутся в стороне: они ослабевают и поглощаются чистым пламенем изнутри."
+  ],
+  "icon": "risus:fire_scythe",
+  "x": 18,
+  "y": 8,
+  "deps": {
+    "all": [
+      "magic_step_iii/linear_ritual_block"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:fire_scythe",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

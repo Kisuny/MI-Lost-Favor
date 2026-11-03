@@ -1,0 +1,19 @@
+{
+  "title": "Book Canvas",
+  "icon": "hexerei:book_canvas",
+  "x": 1.5,
+  "y": 54.5,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_colors"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:book_canvas",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "circle"
+}

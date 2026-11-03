@@ -1,0 +1,26 @@
+{
+  "title": "Warded Mail",
+  "description": [
+    "Inscribed with runes and sanctifying salts, the <magic>Warded Mail</magic> bolsters any armor worn over it, letting it <positive>defend against magical attacks</positive> that would normally pierce straight through.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Расписанная рунами и освящёнными солями, <magic>Заговорённая кольчуга</magic> усиливает любую броню, надетую поверх неё, позволяя ей <positive>защищаться от магических атак</positive>, которые обычно проходят насквозь."
+  ],
+  "icon": "eidolon_repraised:warded_mail",
+  "x": 62.5,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/worktable"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:warded_mail",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

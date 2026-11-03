@@ -1,0 +1,22 @@
+{
+  "title": "Benzene Bucket",
+  "icon": "modern_industrialization:benzene_bucket",
+  "x": 12.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/benzol_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:benzene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

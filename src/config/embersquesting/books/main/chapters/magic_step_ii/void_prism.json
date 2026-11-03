@@ -1,0 +1,26 @@
+{
+  "title": "Void Prism",
+  "description": [
+    "The <keyword>Void Prism</keyword> simply <fade minAlpha=0.2 frequency=0.8>destroys</fade> any spell projectile that passes through it - useful for safely disposing of stray projectile spells in automated setups.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Void Prism</keyword> просто <fade minAlpha=0.2 frequency=0.8>уничтожает</fade> любое заклинание-снаряд, пролетающее через него - удобно, чтобы безопасно избавляться от лишних заклинаний в автоматизированных схемах."
+  ],
+  "icon": "ars_nouveau:void_prism",
+  "x": 116.5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spell_prism"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:void_prism",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Bedrock Anvil",
+  "description": [
+    "§8Unbreakable§r anvil! §oBut that's not all...§r",
+    "",
+    "• No repair XP limit",
+    "• Rename items for free",
+    "• Add descriptions",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Позволяет переименовывать предметы бесплатно и не имеет максимального лимита на ремонт.",
+    "",
+    "Также вы можете добавлять описания к своим предметам и использовать эту наковальню для дробления предметов бесконечно."
+  ],
+  "icon": "spectrum:bedrock_anvil",
+  "x": 44,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/bedrock_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:bedrock_anvil",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

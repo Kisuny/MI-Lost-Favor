@@ -1,0 +1,25 @@
+{
+  "title": "TrashSlot",
+  "description": [
+    "Press <keyword>T</keyword> to reveal the <keyword>trash slot</keyword> in your inventory, so you no longer have to litter around whenever you fill your pockets with \"useful\" items and suddenly there's no space left. Of course, later down the line you'll unlock <property>plastic, paper, metal</property>, and all the other types of trash that you'll <warning>HAVE to filter</warning> into corresponding, progressively expanding trash slots, because <wiggle amplitude=0.5 frequency=1.0 phase=1.0>of course we need to complicate things</wiggle>. How could we possibly be modpack devs otherwise, eh?",
+    "",
+    "You can read more details <click action=open_url value='https://www.curseforge.com/minecraft/mc-mods/trashslot'><u>here</u></click>, but be aware and don't believe a single word, because we know better.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Нажмите <keyword>T</keyword>, чтобы открыть <keyword>слот мусора</keyword> в инвентаре, чтобы больше не приходилось мусорить каждый раз, когда карманы забиты «полезными» вещами и вдруг не остаётся места. Конечно же, позже вы разблокируете <property>пластик, бумагу, металл</property> и все остальные виды мусора, которые вам <warning>ПРИДЁТСЯ сортировать</warning> по соответствующим, постепенно расширяющимся слотам мусора, потому что <wiggle amplitude=0.5 frequency=1.0 phase=1.0>как же без усложнений</wiggle>. Как иначе мы могли бы быть разработчиками модпака, а?",
+    "",
+    "Подробнее можно почитать <click action=open_url value='https://www.curseforge.com/minecraft/mc-mods/trashslot'><u>здесь</u></click>, но не верьте ни единому слову, мы знаем лучше."
+  ],
+  "icon": "yigd:textures/gui/sprites/trashcan_icon.png",
+  "x": 7.6,
+  "y": 4.73,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "TrashSlot"
+    }
+  ],
+  "shape": "square"
+}

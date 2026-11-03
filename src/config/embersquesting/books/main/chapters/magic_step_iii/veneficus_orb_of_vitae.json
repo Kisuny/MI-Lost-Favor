@@ -1,0 +1,21 @@
+{
+  "title": "Veneficus Orb of Vitae",
+  "description": [
+    "Forged in the <keyword>Tier II altar</keyword> for <keyword>25,000 EV</keyword>. The <named>Veneficus Orb</named> significantly expands your <magic>Anima</magic> pool and is required to conduct advanced rituals."
+  ],
+  "icon": "neovitae:blood_orb_magician",
+  "x": 41.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/tier_ii_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:blood_orb_magician",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

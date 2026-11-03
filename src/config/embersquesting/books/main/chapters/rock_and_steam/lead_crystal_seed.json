@@ -1,0 +1,27 @@
+{
+  "title": "Lead Crystal Seed",
+  "description": [
+    "Place the <keyword>Lead Crystal Seed</keyword> in the world and feed it with <keyword>Ember Injectors</keyword> - it will grow and drop <positive>lead nuggets</positive>. An <property>endless</property> source of lead, no mining needed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Поставьте <keyword>Свинцовое кристаллическое семя</keyword> в мир и питайте его <keyword>Эмберными инжекторами</keyword> - оно будет расти и ронять <positive>свинцовые самородки</positive>. <property>Бесконечный</property> источник металла без всякой добычи."
+  ],
+  "icon": "embers:lead_crystal_seed",
+  "x": 20.5,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_injector"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:lead_crystal_seed",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_in": "hover"
+}

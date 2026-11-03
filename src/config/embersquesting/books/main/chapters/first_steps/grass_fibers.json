@@ -1,0 +1,27 @@
+{
+  "title": "Grass Fibers",
+  "description": [
+    "Use your newly acquired <keyword>sharp flint</keyword> to <positive>harvest</positive> some <keyword>grass</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используйте ваш новый <keyword>острый кремневый камень</keyword>, чтобы <positive>собрать</positive> немного <keyword>травы</keyword>."
+  ],
+  "icon": "ytech:grass_fibers",
+  "x": 4,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/sharp_flint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:grass_fibers",
+      "count": 7,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

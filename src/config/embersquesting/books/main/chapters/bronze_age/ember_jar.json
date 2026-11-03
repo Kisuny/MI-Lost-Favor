@@ -1,0 +1,32 @@
+{
+  "title": "Ember Jar",
+  "description": [
+    "The <keyword>Mantle Jar</keyword> is a small portable Ember container. Ember tools can draw from it <positive>anywhere in your inventory</positive>.",
+    "",
+    "Charge it at the <keyword>Copper Charger</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Батарея огненного покрова</keyword> - небольшое переносное хранилище эмбера. Эмберные инструменты берут из неё энергию, где бы она <positive>ни лежала в инвентаре</positive>.",
+    "",
+    "Заряжается в <keyword>Медном заряднике</keyword>."
+  ],
+  "icon": "embers:ember_jar{\"minecraft:custom_data\":{ForgeCaps:{\"embers:ember\":0.0d,\"embers:ember_capacity\":2000.0d}}}",
+  "x": 7,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "bronze_age/copper_charger"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "embers:ember_jar",
+      "components": "{\"minecraft:custom_data\":{ForgeCaps:{\"embers:ember\":0.0d,\"embers:ember_capacity\":2000.0d}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

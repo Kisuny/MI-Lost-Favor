@@ -1,0 +1,19 @@
+{
+  "title": "Cursed Scroll",
+  "icon": "enigmaticlegacyplus:cursed_scroll",
+  "x": 39,
+  "y": 30,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/twisted_heart",
+      "when_dungeons_arise/infernal_cinder"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:cursed_scroll",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

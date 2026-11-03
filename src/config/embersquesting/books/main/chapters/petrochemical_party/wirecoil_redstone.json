@@ -1,0 +1,21 @@
+{
+  "title": "Wirecoil Redstone",
+  "description": [
+    "Redstone works quite differently when you use aluminum to transfer its signals, looks like the strength of the signal remains the same no matter the distance traveled, and you could do little adjustments inside relays to send different signal types, which opens great possibilities..."
+  ],
+  "icon": "immersiveengineering:wirecoil_redstone",
+  "x": 14.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/aluminum_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:wirecoil_redstone",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

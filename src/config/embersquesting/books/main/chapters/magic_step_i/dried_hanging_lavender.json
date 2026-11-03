@@ -1,0 +1,21 @@
+{
+  "title": "Dried Hanging Lavender",
+  "description": [
+    "Once you have made the hanging variant, hold it and right click on the bottom of a block to hang it. After a while, it will turn into the useful dry variant."
+  ],
+  "icon": "paganbless:dried_hanging_lavender",
+  "x": 2,
+  "y": 50.5,
+  "deps": {
+    "all": [
+      "magic_step_i/hanging_lavender"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:dried_hanging_lavender",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

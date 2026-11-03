@@ -1,0 +1,31 @@
+{
+  "title": "Attuned Stone",
+  "description": [
+    "An attuned stone is a diamond which has been infused with magical energy.",
+    "",
+    "It can be charged to be used as a portable container for altar power, allowing the user to cast circle magic without an altar being present, and is also used in the creation of a variety of magical tools.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Настроенный камень - это алмаз, напитанный магической энергией.",
+    "",
+    "Его можно зарядить, чтобы использовать в качестве портативного контейнера для алтарной энергии, позволяющего создавать магию кругов без присутствия алтаря, а также использовать при создании различных магических инструментов."
+  ],
+  "icon": "enchanted:attuned_stone",
+  "x": 42,
+  "y": 41,
+  "deps": {
+    "all": [
+      "magic_step_i/whiff_of_magic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:attuned_stone",
+      "type": "item"
+    }
+  ],
+  "shape": "gear",
+  "size": 2.0
+}

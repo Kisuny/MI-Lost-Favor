@@ -1,0 +1,30 @@
+{
+  "title": "Combustion Chamber",
+  "description": [
+    "The <keyword>Combustion Chamber</keyword> simply <fire>burns fuel</fire> for the Ignem Reactor.",
+    "",
+    "Fuel levels: <keyword>Coal</keyword> - <property>2</property>, <keyword>Nether Brick</keyword> - <property>3</property>, <keyword>Blaze Powder</keyword> - <property>4</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Камера сгорания</keyword> просто <fire>сжигает топливо</fire> для Огненного реактора.",
+    "",
+    "Уровни топлива: <keyword>уголь</keyword> - <property>2</property>, <keyword>адский кирпич</keyword> - <property>3</property>, <keyword>огненный порошок</keyword> - <property>4</property>."
+  ],
+  "icon": "embers:combustion_chamber",
+  "x": 20.5,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/geologic_separator"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:combustion_chamber",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Take Off Belt",
+  "icon": "spectrum:take_off_belt",
+  "x": 7,
+  "y": 34,
+  "deps": {
+    "all": [
+      "magic_step_ii/storm_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:take_off_belt",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Belt Trinket Slot",
+      "id": "milf:trinket/belt_take_off_belt",
+      "type": "custom"
+    }
+  ],
+  "shape": "diamond"
+}

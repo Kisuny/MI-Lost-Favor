@@ -1,0 +1,19 @@
+{
+  "title": "Manganese Tiny Dust",
+  "icon": "modern_industrialization:manganese_tiny_dust",
+  "x": 20,
+  "y": 4,
+  "deps": {
+    "all": [
+      "automation_n_stuff/manganese_sulfuric_solution_bucket",
+      "automation_n_stuff/electrolyzer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:manganese_tiny_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

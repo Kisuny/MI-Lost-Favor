@@ -1,0 +1,20 @@
+{
+  "title": "Malachite Crossbow",
+  "icon": "spectrum:malachite_crossbow{\"minecraft:enchantments\":{levels:{\"minecraft:piercing\":5}}}",
+  "x": 65.5,
+  "y": 42,
+  "deps": {
+    "all": [
+      "magic_step_ii/pure_malachite"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:malachite_crossbow",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:piercing\":5}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

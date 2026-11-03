@@ -1,0 +1,20 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"MI Basic Components\"}",
+  "x": 8.5,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "simple_machinery/metal_press"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"MI Basic Components\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

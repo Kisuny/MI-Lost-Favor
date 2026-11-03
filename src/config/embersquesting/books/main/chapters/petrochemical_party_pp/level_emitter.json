@@ -1,0 +1,27 @@
+{
+  "title": "Level Emitter",
+  "icon": "ae2:level_emitter",
+  "x": 21.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/certus_quartz_cutting_knife"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:level_emitter",
+      "type": "item"
+    },
+    {
+      "item": "ae2:energy_level_emitter",
+      "type": "item"
+    },
+    {
+      "item": "extendedae:threshold_level_emitter",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

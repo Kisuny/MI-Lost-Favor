@@ -1,0 +1,26 @@
+{
+  "title": "Toxin Canister",
+  "description": [
+    "Using <keyword>glass vials</keyword>, I can create a container that's reinforced with <keyword>Copper</keyword>. This larger much heavier container is a valuable part. A presage to the grand creation of...",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Используя <keyword>стеклянные флаконы</keyword>, я могу создать контейнер, усиленный <keyword>медью</keyword>. Этот более крупный и тяжелый контейнер - ценная деталь. Предвестие грандиозного творения..."
+  ],
+  "icon": "toxony:toxin_canister",
+  "x": 28,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_ii/glass_vial"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:toxin_canister",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

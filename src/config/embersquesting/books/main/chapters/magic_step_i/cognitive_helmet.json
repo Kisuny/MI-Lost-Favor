@@ -1,0 +1,30 @@
+{
+  "title": "Cognitive Helmet",
+  "icon": "cognition:cognitive_helmet",
+  "x": 33.5,
+  "y": 54,
+  "deps": {
+    "all": [
+      "magic_step_i/cognitive_flux"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "cognition:cognitive_helmet",
+      "type": "item"
+    },
+    {
+      "item": "cognition:cognitive_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "cognition:cognitive_leggings",
+      "type": "item"
+    },
+    {
+      "item": "cognition:cognitive_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

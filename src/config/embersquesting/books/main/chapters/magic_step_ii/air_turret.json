@@ -1,0 +1,26 @@
+{
+  "title": "Air Turret",
+  "description": [
+    "The <keyword>Air Turret</keyword> is an <keyword>Ars Elemental</keyword> defense turret that automatically fires at nearby hostile mobs, using the power of the <keyword>Air</keyword> school.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Air Turret</keyword> - оборонная турель из <keyword>Ars Elemental</keyword>, которая автоматически стреляет по враждебным мобам поблизости, используя силу школы <keyword>Воздуха</keyword>."
+  ],
+  "icon": "ars_elemental:air_turret",
+  "x": 111.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spell_turret"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:air_turret",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

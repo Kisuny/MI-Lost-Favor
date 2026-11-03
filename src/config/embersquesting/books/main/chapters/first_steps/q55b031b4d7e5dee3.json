@@ -1,0 +1,20 @@
+{
+  "title": "",
+  "description": [
+    "<named>Wild chicken</named>"
+  ],
+  "x": 8.5,
+  "y": 21,
+  "deps": {
+    "all": [
+      "first_steps/animals_breeding"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "ytech:fowl",
+      "type": "observe"
+    }
+  ],
+  "shape": "rsquare"
+}

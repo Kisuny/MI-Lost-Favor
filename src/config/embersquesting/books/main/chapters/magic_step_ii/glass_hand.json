@@ -1,0 +1,26 @@
+{
+  "title": "Glass Hand",
+  "description": [
+    "<shake><warning>Handle with care!</warning></shake> The <curse>Glass Hand</curse> doubles the damage dealt by all your attacks - but any damage you take is <shake>quintupled</shake> in return.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<shake><warning>Обращайтесь с осторожностью!</warning></shake> <curse>Стеклянная рука</curse> удваивает урон от всех ваших атак - но получаемый вами урон увеличивается в <shake>пять раз</shake>."
+  ],
+  "icon": "eidolon_repraised:glass_hand",
+  "x": 71,
+  "y": 21,
+  "deps": {
+    "all": [
+      "magic_step_ii/lesser_soul_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:glass_hand",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

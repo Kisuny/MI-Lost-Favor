@@ -1,0 +1,30 @@
+{
+  "title": "Armor Steel Helmet",
+  "icon": "immersiveengineering:armor_steel_helmet",
+  "x": 9.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:armor_steel_helmet",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:armor_steel_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:armor_steel_leggings",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:armor_steel_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

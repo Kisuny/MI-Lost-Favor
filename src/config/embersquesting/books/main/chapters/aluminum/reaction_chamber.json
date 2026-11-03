@@ -1,0 +1,23 @@
+{
+  "title": "Reaction Chamber",
+  "icon": "advanced_ae:reaction_chamber",
+  "x": 18.5,
+  "y": 3,
+  "deps": {
+    "all": [
+      "aluminum/blueprint",
+      "aluminum/condenser"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:reaction_chamber",
+      "type": "item"
+    },
+    {
+      "item": "advanced_ae:quantum_alloy",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

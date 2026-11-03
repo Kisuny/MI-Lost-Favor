@@ -1,0 +1,26 @@
+{
+  "title": "Echoing Sculkshelf",
+  "description": [
+    "The <keyword>Echoing Sculkshelf</keyword> is an advanced bookshelf crafted from <warning>Warden</warning> drops - one of the strongest for your enchanting table, and it also reveals an extra hidden enchantment in the table's menu, same as the Shelf of Sight.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Echoing Sculkshelf</keyword> - продвинутая книжная полка, создаётся из дропа <warning>Стража</warning> - одна из самых сильных для стола зачарований, а также открывает дополнительное скрытое зачарование в меню стола, как и Shelf of Sight."
+  ],
+  "icon": "apothic_enchanting:echoing_sculkshelf",
+  "x": 118,
+  "y": 23,
+  "deps": {
+    "all": [
+      "magic_step_ii/echoing_deepshelf"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:echoing_sculkshelf",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

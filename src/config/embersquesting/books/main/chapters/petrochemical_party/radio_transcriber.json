@@ -1,0 +1,23 @@
+{
+  "title": "Radio Transcriber",
+  "icon": "milf:radio_transcriber_placer",
+  "x": 16.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/tesla_coil",
+      "petrochemical_party/radio_tower"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:radio_transcriber",
+      "type": "item"
+    },
+    {
+      "item": "milf:radio_transcriber_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

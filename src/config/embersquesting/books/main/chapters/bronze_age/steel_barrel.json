@@ -1,0 +1,18 @@
+{
+  "title": "Steel Barrel",
+  "icon": "modern_industrialization:steel_barrel",
+  "x": 12,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steel_barrel",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Essence Of The Forest",
+  "description": [
+    "When they grow from saplings, Black Thorn trees have a chance to create Essence of the Forest in their trunk. These will be easily visible on their black bark. Right click these while holding a Boline to harvest them. After harvesting, the logs will slowly regrow new Essences in place of the harvested ones.",
+    "",
+    "They're useful for magic, and they are also yummy."
+  ],
+  "icon": "paganbless:essence_of_the_forest",
+  "x": 2,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/boline"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "paganbless:essence_of_the_forest",
+      "type": "item"
+    }
+  ],
+  "shape": "none",
+  "lines_in": "hover",
+  "size": 0.5
+}

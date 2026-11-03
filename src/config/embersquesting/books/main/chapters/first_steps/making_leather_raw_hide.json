@@ -1,0 +1,21 @@
+{
+  "title": "Making Leather: Raw Hide",
+  "description": [
+    "Next, get some raw hide. These drops from animals, so get to hunting."
+  ],
+  "icon": "ytech:raw_hide",
+  "x": 13,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/making_leather_tanning_rack"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:raw_hide",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

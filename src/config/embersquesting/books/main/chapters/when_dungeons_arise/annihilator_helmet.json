@@ -1,0 +1,42 @@
+{
+  "title": "Annihilator Helmet",
+  "description": [
+    "<keyword>Annihilator</keyword> armor is made on the smithing table: netherite armor + <keyword>Annihilator template</keyword> + a <keyword>Portal Shard</keyword> for each piece.",
+    "",
+    "The template is crafted from enderitium ingots, end stone and a <keyword>Bottle of Annihilation</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Броня <keyword>аннигилятора</keyword> делается на кузнечном столе: незеритовая броня + <keyword>шаблон аннигилятора</keyword> + <keyword>осколок портала</keyword> на каждую часть.",
+    "",
+    "Шаблон крафтится из слитков эндеритиума, эндерняка и <keyword>бутылки аннигиляции</keyword>."
+  ],
+  "icon": "legendary_monsters:annihilator_chestplate",
+  "x": 19,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/eye_crystal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:annihilator_helmet",
+      "type": "item"
+    },
+    {
+      "item": "legendary_monsters:annihilator_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "legendary_monsters:annihilator_leggings",
+      "type": "item"
+    },
+    {
+      "item": "legendary_monsters:annihilator_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

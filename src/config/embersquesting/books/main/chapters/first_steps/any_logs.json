@@ -1,0 +1,27 @@
+{
+  "title": "Any Logs",
+  "description": [
+    "Can only be acquired via <keyword>axe</keyword> (because we care about the well-being of your fists, you masochist (•ᴗ•) )",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Можно получить только с помощью <keyword>топора</keyword> (потому что мы заботимся о благополучии ваших кулаков, вы мазохист (•ᴗ•) )"
+  ],
+  "x": 8.5,
+  "y": 5,
+  "deps": {
+    "all": [
+      "first_steps/flint_axe"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "minecraft:logs",
+      "count": 16,
+      "type": "item",
+      "title": "Any Logs"
+    }
+  ],
+  "shape": "rsquare"
+}

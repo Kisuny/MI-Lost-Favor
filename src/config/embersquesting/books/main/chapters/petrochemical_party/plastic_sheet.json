@@ -1,0 +1,18 @@
+{
+  "title": "Plastic Sheet",
+  "icon": "oritech:plastic_sheet",
+  "x": 13.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/raw_biopolymer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:plastic_sheet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Strainer",
+  "description": [
+    "<property>Passively produces</property> various <keyword>resources</keyword> depending on <keyword>mesh</keyword> in it. Has to be placed in §9river§r or §9ocean§r <magic>biome</magic>.",
+    "",
+    "<c value=#4EC847><fade>🛈 Strainer must be under falling water</c>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<property>Пассивно производит</property> различные <keyword>ресурсы</keyword> в зависимости от <keyword>сетки</keyword> внутри него. Должен быть размещен в §9речном§r или §9океанским§r <magic>биоме</magic>.",
+    "",
+    "<c value=#4EC847><fade>🛈 Сито должно находится под текущей водой</c>"
+  ],
+  "icon": "ytech:strainer",
+  "x": 15,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "first_steps/wooden_box",
+      "first_steps/twine_mesh"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:strainer",
+      "type": "item"
+    },
+    {
+      "block": "ytech:strainer",
+      "type": "observe",
+      "icon": "ytech:strainer"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

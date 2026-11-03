@@ -1,0 +1,31 @@
+{
+  "title": "",
+  "description": [
+    "Defeat <blood><glitch frequency=0.7 shiftChance=0.06>The Divine Chariot Azazel</glitch></blood> and get the <named>mask</named> - it'll come in handy later!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Победи <blood><glitch frequency=0.7 shiftChance=0.06>Великую Божественную Колесницу Азазель</glitch></blood> и добудь <named>маску</named>, которая пригодится в будущем!"
+  ],
+  "x": 8,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/q1ab60a75d53edee0"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "netherman:azazel",
+      "type": "kill"
+    },
+    {
+      "advancement": "netherman:kill_azazel",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear",
+  "size": 2.0
+}

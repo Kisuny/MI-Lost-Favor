@@ -1,0 +1,25 @@
+{
+  "title": "Array Movement",
+  "description": [
+    "<positive>Launches</positive> entities horizontally in the direction they face."
+  ],
+  "icon": "neovitae:array_movement",
+  "x": 31.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "magic_step_iii/movement_and_transit_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_movement",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

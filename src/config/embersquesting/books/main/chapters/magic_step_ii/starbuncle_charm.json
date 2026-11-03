@@ -1,0 +1,35 @@
+{
+  "title": "Starbuncle Charm",
+  "description": [
+    "The <keyword>Starbuncle</keyword> is a little familiar that carries items between inventories for you - it collects nearby drops and hauls goods from one container to another, and will also harvest fully grown <keyword>Source Berry</keyword> bushes on its own.",
+    "",
+    "Bind it to inventories with the <keyword>Dominion Wand</keyword>, and use <keyword>Allow</keyword>/<keyword>Deny</keyword> scrolls to filter which items it's allowed to move.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Старбанкл</keyword> - маленький фамильяр, который переносит предметы между инвентарями: подбирает выпавшие поблизости вещи и таскает грузы из одного контейнера в другой, а также сам собирает урожай с созревших кустов <keyword>Сурс ягод</keyword>.",
+    "",
+    "Привязывайте его к инвентарям <keyword>Жезлом владения</keyword>, а свитками <keyword>Allow</keyword>/<keyword>Deny</keyword> задавайте, какие предметы ему разрешено переносить."
+  ],
+  "icon": "ars_nouveau:starbuncle_charm",
+  "x": 106,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanting_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "entity": "ars_nouveau:starbuncle",
+      "type": "observe"
+    },
+    {
+      "item": "ars_nouveau:starbuncle_charm",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

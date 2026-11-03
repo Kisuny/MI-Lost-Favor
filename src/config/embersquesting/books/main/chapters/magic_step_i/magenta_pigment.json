@@ -1,0 +1,72 @@
+{
+  "title": "Magenta Pigment",
+  "description": [
+    "The <c value=#C6BCE9>Pigment</c>§r is a purer form of dye, obtained from the colored <c value=#CAE4C8>trees</c>§r you have created. ",
+    "Simply break the leaves of the tree.",
+    "",
+    "§n§l<c value=#FEECD6>Tip:</c>§r§r§r§r Use a <c value=#FEECD6>hoe</c>§r to destroy the <c value=#CAE4C8>leaves</c>§r, it's much faster than with a fist!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#C6BCE9>Пигмент</c>§r выпадает из цветочных <c value=#CAE4C8>деревьев</c>§r которые вы скрафтили до этого. ",
+    "Просто ломайте листву дерева.",
+    "",
+    "§n§l<c value=#FEECD6>Совет:</c>§r§r§r Используйте <c value=#FEECD6>мотыгу</c>§r для разрушения <c value=#CAE4C8>листвы</c>§r, это гораздо быстрее чем ручками!"
+  ],
+  "icon": "spectrum:magenta_pigment",
+  "x": 42.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/pedestal_all_basic"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:magenta_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:green_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:lime_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:orange_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:light_blue_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:yellow_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:pink_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:blue_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:red_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:purple_pigment",
+      "type": "item"
+    },
+    {
+      "item": "spectrum:cyan_pigment",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

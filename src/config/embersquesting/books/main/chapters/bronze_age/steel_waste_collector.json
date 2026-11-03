@@ -1,0 +1,18 @@
+{
+  "title": "Steel Waste Collector",
+  "icon": "extended_industrialization:steel_waste_collector",
+  "x": 16,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_machine_bit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:steel_waste_collector",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

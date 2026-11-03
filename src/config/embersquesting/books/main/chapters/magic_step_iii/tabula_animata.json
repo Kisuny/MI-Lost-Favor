@@ -1,0 +1,21 @@
+{
+  "title": "Tabula Animata",
+  "description": [
+    "Tier II crafting substrate. Costs <keyword>5,000 EV</keyword>. Required for the <property>Sigil of Bound Treasures</property> and other advanced <magic>vitaemantic</magic> items."
+  ],
+  "icon": "neovitae:tabula_animata",
+  "x": 41.5,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/veneficus_orb_of_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:tabula_animata",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

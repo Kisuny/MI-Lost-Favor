@@ -1,0 +1,78 @@
+{
+  "title": "Chunk Loader",
+  "description": [
+    "Please note that the complete structure requires a <keyword>steel window block</keyword> at the top center.",
+    "",
+    "It work for a <property>paper</property>, has a <property>radius of 32 blocks</property>, and displays the block it is loading inside itself; you can click on it to see the path to the loaded block.",
+    "",
+    "To open the entry for this block in the book, you need to pick up an <keyword>Echo Shard</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "необходимо обратить внимание на то, что для полной стркутуры необходимо <keyword>стальное стекло</keyword> сверху в центре",
+    "",
+    "работает за <property>бумагу</property>, <property>радиус 32 блока</property>, показывает внутри себя то, что он загружает, можно кликнуть и увидеть путь до прогружаемого блока",
+    "",
+    "Чтобы открыть запись об этом блоке в книге нужно взять в руку <keyword>эхо шард</keyword>"
+  ],
+  "icon": "immersiveengineering:chunk_loader",
+  "x": 4.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "simple_machinery/basic_upgrade"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "immersiveengineering:chunk_loader",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:chunk_loader",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:calibrated_sculk_sensor",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_window",
+      "count": 5,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 20,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:concrete",
+      "count": 9,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 3,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:resonanz_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_fence",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart",
+  "size": 2.0
+}

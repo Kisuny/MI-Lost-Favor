@@ -1,0 +1,26 @@
+{
+  "title": "The Tesseract",
+  "description": [
+    "Hold <property>RMB</property> for <property>1.5 seconds</property> to open <magic>annihilation portals</magic> in a star pattern. While they open, their <wave>gravity pulls</wave> in nearby creatures.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Удерживай <property>ПКМ</property> <property>1.5 секунды</property>, чтобы открыть <magic>порталы аннигиляции</magic> в форме звезды. Пока они открываются, их <wave>гравитация затягивает</wave> ближайших существ."
+  ],
+  "icon": "legendary_monsters:the_tesseract",
+  "x": 18,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/eye_crystal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:the_tesseract",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

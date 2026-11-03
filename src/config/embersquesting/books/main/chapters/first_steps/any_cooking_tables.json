@@ -1,0 +1,26 @@
+{
+  "title": "Any Cooking Tables",
+  "description": [
+    "The Heart of the Kitchen. A <keyword>cooking table</keyword> is the central block of the kitchen - it lets you access <property>ingredients</property> stored in nearby connected containers directly from the crafting grid, and shows you every recipe you can currently cook.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Сердце кухни. <keyword>Кухонный стол</keyword> - центральный блок кухни: он даёт доступ к <property>ингредиентам</property> из подключённых рядом хранилищ прямо из сетки крафта и показывает все рецепты, которые можно приготовить прямо сейчас."
+  ],
+  "x": 32,
+  "y": 23,
+  "deps": {
+    "all": [
+      "first_steps/cooking_pot"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "cookingforblockheads:cooking_tables",
+      "type": "item",
+      "title": "Any Cooking Tables"
+    }
+  ],
+  "shape": "diamond"
+}

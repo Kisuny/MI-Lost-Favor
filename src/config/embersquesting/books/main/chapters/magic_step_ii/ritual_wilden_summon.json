@@ -1,0 +1,26 @@
+{
+  "title": "Ritual Wilden Summon",
+  "description": [
+    "Without augments, the <keyword>Ritual of Wilden Summon</keyword> summons a random assortment of Wilden monsters for a short fight. Augment it with a <keyword>Wilden Spike</keyword>, <keyword>Wilden Horn</keyword> and <keyword>Wilden Wing</keyword> instead to summon the <warning><shake amplitude=0.4 frequency=1.2>Wilden Chimera</shake></warning> boss.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Без усилителей <keyword>Ритуал призыва Вилденов</keyword> призывает случайный набор монстров Вилден для короткого боя. Добавьте <keyword>шип</keyword>, <keyword>рог</keyword> и <keyword>крыло Вилдена</keyword>, чтобы вместо этого призвать босса <warning><shake amplitude=0.4 frequency=1.2>Вилден Химеру</shake></warning>."
+  ],
+  "icon": "ars_nouveau:ritual_wilden_summon",
+  "x": 114.5,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/cthonic_gold"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:ritual_wilden_summon",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

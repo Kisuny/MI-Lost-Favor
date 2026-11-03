@@ -1,0 +1,21 @@
+{
+  "title": "Construct the Ara Vitae",
+  "description": [
+    "Place the <named>Ara Vitae</named> - the sacred basin at the heart of <magic>vitaemancy</magic>. Right-click it to deposit items for altar crafting. <property>EV</property> drains steadily during workings; <blood>crimson motes</blood> rising from the surface confirm it is underway."
+  ],
+  "icon": "neovitae:ara_vitae",
+  "x": 27,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/q4215e53de9e8fa11"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:ara_vitae",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

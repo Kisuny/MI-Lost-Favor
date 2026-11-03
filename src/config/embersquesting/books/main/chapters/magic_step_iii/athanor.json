@@ -1,0 +1,21 @@
+{
+  "title": "Athanor",
+  "description": [
+    "The <keyword>Athanor</keyword> is an advanced ore processor with <property>doubled yields</property>. Feed it <property>Fuel Cells</property> and <property>Cutting Fluid</property> - three grades of fluid (Basic, Intermediate, Advanced) each improve efficiency."
+  ],
+  "icon": "neovitae:athanor",
+  "x": 51,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_iii/tabula_animata"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:athanor",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

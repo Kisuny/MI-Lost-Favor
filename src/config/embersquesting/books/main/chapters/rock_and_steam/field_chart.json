@@ -1,0 +1,31 @@
+{
+  "title": "Field Chart",
+  "description": [
+    "Searching for rich spots with a gauge is tedious. The <keyword>Field Chart</keyword> shows a <property>map of Ember concentration</property> over a large area.",
+    "",
+    "RMB it to display the base Ember level of the area.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Искать богатые места датчиком утомительно. <keyword>Голограф поверхностной диаграммы</keyword> показывает <property>карту концентрации эмбера</property> на большой площади.",
+    "",
+    "ПКМ по нему, чтобы увидеть базовый уровень эмбера в округе."
+  ],
+  "icon": "embers:field_chart",
+  "x": 31.5,
+  "y": 29,
+  "deps": {
+    "all": [
+      "rock_and_steam/ember_bore",
+      "rock_and_steam/atmospheric_gauge"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:field_chart",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

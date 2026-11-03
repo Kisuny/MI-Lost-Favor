@@ -1,0 +1,18 @@
+{
+  "title": "Clay Jar",
+  "icon": "enchanted:clay_jar",
+  "x": 34.5,
+  "y": 42,
+  "deps": {
+    "all": [
+      "magic_step_i/witch_oven"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:clay_jar",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

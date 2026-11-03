@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Bow",
+  "icon": "aquaculture:neptunium_bow",
+  "x": 38,
+  "y": 30,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_bow",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

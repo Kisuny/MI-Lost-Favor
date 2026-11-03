@@ -1,0 +1,27 @@
+{
+  "title": "Salt",
+  "icon": "modern_industrialization:salt_dust",
+  "x": 25.5,
+  "y": 31,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_pickaxe"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Salt"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:salt_dust\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

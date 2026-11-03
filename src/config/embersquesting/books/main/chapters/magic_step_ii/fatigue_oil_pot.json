@@ -1,0 +1,21 @@
+{
+  "title": "Fatigue Oil Pot",
+  "description": [
+    "<warning>Slowness</warning> and <warning>weakness</warning>."
+  ],
+  "icon": "toxony:fatigue_oil_pot",
+  "x": 19,
+  "y": 36,
+  "deps": {
+    "all": [
+      "magic_step_ii/oil_pots"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:fatigue_oil_pot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

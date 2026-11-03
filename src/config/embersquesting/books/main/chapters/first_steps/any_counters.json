@@ -1,0 +1,26 @@
+{
+  "title": "Any Counters",
+  "description": [
+    "A <keyword>counter</keyword> is a basic connector block that also works as storage and worktop - place several around your cooking table to extend the kitchen and store extra ingredients.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Столешница</keyword> - базовый соединительный блок, который одновременно служит хранилищем и рабочей поверхностью. Ставьте несколько штук вокруг кухонного стола, чтобы расширить кухню и хранить дополнительные ингредиенты."
+  ],
+  "x": 32.5,
+  "y": 23.5,
+  "deps": {
+    "all": [
+      "first_steps/any_cooking_tables"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "cookingforblockheads:counters",
+      "type": "item",
+      "title": "Any Counters"
+    }
+  ],
+  "shape": "diamond"
+}

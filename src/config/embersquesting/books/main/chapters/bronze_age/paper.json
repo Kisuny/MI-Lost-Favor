@@ -1,0 +1,18 @@
+{
+  "title": "Paper",
+  "icon": "minecraft:paper",
+  "x": 6.5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "bronze_age/bronze_compressor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:paper",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Essentia Terminal",
+  "description": [
+    "Digitized essentia is invisible until you build this. The <named>ME Essentia Terminal</named> shows <positive>all essentia</positive> your network can access.",
+    "",
+    "You can <aqua>insert</aqua> and <aqua>extract</aqua> essentia through it with <keyword>phials</keyword> and <keyword>jars</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Оцифрованную эссенцию не видно, пока не построишь это. <named>ME терминал эссенции</named> показывает <positive>всю эссенцию</positive>, доступную сети.",
+    "",
+    "Через него можно <aqua>класть</aqua> и <aqua>забирать</aqua> эссенцию <keyword>фиалами</keyword> и <keyword>банками</keyword>."
+  ],
+  "icon": "appliedthaumaturge:essentia_terminal",
+  "x": 4.5,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/terminal"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:essentia_terminal",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

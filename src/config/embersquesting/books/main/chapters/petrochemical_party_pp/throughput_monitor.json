@@ -1,0 +1,22 @@
+{
+  "title": "Throughput Monitor",
+  "icon": "advanced_ae:throughput_monitor",
+  "x": 10,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/semi_dark_monitor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "advanced_ae:throughput_monitor",
+      "type": "item"
+    },
+    {
+      "item": "ae2:storage_monitor",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

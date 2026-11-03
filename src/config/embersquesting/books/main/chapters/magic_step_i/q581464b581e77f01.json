@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "icon": "cognition:infected_bookshelf",
+  "x": 31.5,
+  "y": 63,
+  "deps": {
+    "all": [
+      "magic_step_i/bibliophage"
+    ]
+  },
+  "tasks": [
+    {
+      "block": "cognition:infected_bookshelf",
+      "type": "observe",
+      "icon": "cognition:infected_bookshelf"
+    }
+  ],
+  "shape": "circle"
+}

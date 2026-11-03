@@ -1,0 +1,26 @@
+{
+  "title": "Any Azure Dike Trinkets",
+  "description": [
+    "<keyword>Azure dike</keyword> allows you to <positive>pass through</positive> some §1blue§r barriers, and also <property>increases your survivability</property>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Голубой азурит</keyword> позволяет вам <positive>открыть путь</positive> к <magic>закрытым загадкам</magic>, а так же <property>увеличивает вашу выживаемость</property>!"
+  ],
+  "x": 36.5,
+  "y": 40,
+  "deps": {
+    "all": [
+      "magic_step_ii/raw_azurite"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "milf:azure_dike_trinkets",
+      "type": "item",
+      "title": "Any Azure Dike Trinkets"
+    }
+  ],
+  "shape": "circle"
+}

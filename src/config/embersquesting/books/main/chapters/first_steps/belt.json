@@ -1,0 +1,26 @@
+{
+  "title": "Belt",
+  "description": [
+    "Provides <keyword>storage</keyword> and easy access to any type of tool you put inside it",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обеспечивает <keyword>хранение</keyword> и легкий доступ к любому типу инструментов, которые вы помещаете внутрь"
+  ],
+  "icon": "travelertoolbelt:belt",
+  "x": 20.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "first_steps/q681ccf6687c70b0b"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "travelertoolbelt:belt",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

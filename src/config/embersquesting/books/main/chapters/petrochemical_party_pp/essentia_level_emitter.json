@@ -1,0 +1,25 @@
+{
+  "title": "Essentia Level Emitter",
+  "description": [
+    "Like the item <keyword>Level Emitter</keyword>, but watches <aqua>one aspect</aqua>. Emits a <warning><pulse>redstone signal</pulse></warning> when its stored amount goes <property>above</property> or <property>below</property> the threshold you set.",
+    "",
+    "Use it to start production when an aspect runs low, or stop it before it floods the network.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Как обычный <keyword>датчик уровня</keyword>, но следит за <aqua>одним аспектом</aqua>. Подаёт <warning><pulse>сигнал редстоуна</pulse></warning>, когда его количество в сети становится <property>выше</property> или <property>ниже</property> заданного порога.",
+    "",
+    "Пригодится, чтобы запускать производство, когда аспект заканчивается, или останавливать его, пока сеть не переполнилась."
+  ],
+  "icon": "appliedthaumaturge:essentia_level_emitter",
+  "x": 2,
+  "y": 6,
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:essentia_level_emitter",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

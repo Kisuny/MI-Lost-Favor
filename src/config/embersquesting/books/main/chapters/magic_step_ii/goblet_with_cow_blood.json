@@ -1,0 +1,25 @@
+{
+  "title": "Goblet with cow blood",
+  "description": [
+    "<positive>Kill</positive> the cow near the <blood>Goblet</blood>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Убей</positive> корову возле <blood>Чаши</blood>!"
+  ],
+  "x": 74,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/goblet"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "eidolon_repraised:sacrifice",
+      "type": "advancement"
+    }
+  ],
+  "shape": "gear"
+}

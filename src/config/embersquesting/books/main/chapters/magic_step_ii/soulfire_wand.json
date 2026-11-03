@@ -1,0 +1,27 @@
+{
+  "title": "Soulfire Wand",
+  "description": [
+    "A showcase of the power hidden within a shadow gem - the <magic>Soulfire Wand</magic> unleashes <fire>brilliant bolts of energy</fire> on every swing, dealing hefty damage to almost any target.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Демонстрация силы, скрытой в теневом самоцвете - <magic>Посох душепламени</magic> выпускает <fire>яркие сгустки энергии</fire> при каждом взмахе, нанося солидный урон почти любой цели."
+  ],
+  "icon": "eidolon_repraised:soulfire_wand",
+  "x": 69.5,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/shadow_gem",
+      "magic_step_ii/lesser_soul_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:soulfire_wand",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

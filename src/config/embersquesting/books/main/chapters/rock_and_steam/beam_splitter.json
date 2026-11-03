@@ -1,0 +1,30 @@
+{
+  "title": "Beam Splitter",
+  "description": [
+    "The <keyword>Beam Splitter</keyword> divides Ember bursts. It has two small copper ports for input and two large dawnstone ports.",
+    "",
+    "Each large port works as <property>its own Emitter</property> and gets half of the incoming Ember - link them to different targets with the hammer.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Разделитель луча</keyword> делит пакеты эмбера. У него два маленьких медных порта для входа и два больших золотитовых.",
+    "",
+    "Каждый большой порт работает как <property>отдельный излучатель</property> и получает половину входящего эмбера - свяжите их молотом с разными целями."
+  ],
+  "icon": "embers:beam_splitter",
+  "x": 6.5,
+  "y": 23,
+  "deps": {
+    "all": [
+      "rock_and_steam/gold_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:beam_splitter",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

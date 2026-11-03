@@ -1,0 +1,26 @@
+{
+  "title": "Skeletosaurus Egg",
+  "description": [
+    "Place the egg and wait - a <bone>Skeloraptor</bone> will hatch from it. It is a <positive>mount</positive>: press <property>R</property> to <shake amplitude=0.4 frequency=1.6>roar</shake> and scare away mobs.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Поставь яйцо и подожди - из него вылупится <bone>скелетораптор</bone>. Это <positive>ездовое животное</positive>: нажми <property>R</property>, чтобы <shake amplitude=0.4 frequency=1.6>зарычать</shake> и распугать мобов."
+  ],
+  "icon": "legendary_monsters:skeletosaurus_egg",
+  "x": 21.5,
+  "y": 26,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/gate_pearl_6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:skeletosaurus_egg",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

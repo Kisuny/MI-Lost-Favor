@@ -1,0 +1,27 @@
+{
+  "title": "Enchanting Apparatus",
+  "icon": "ars_nouveau:enchanting_apparatus",
+  "x": 108,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/source_manipulation"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:enchanting_apparatus",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:arcane_pedestal",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:arcane_core",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Ring Of Curative Talent",
+  "description": [
+    "The <keyword>Ring of Curative Talent</keyword> reacts to <warning>Spirit</warning> collection - every time you pick one up, it <positive>restores a small amount of health</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Ring of Curative Talent</keyword> реагирует на сбор <warning>духов</warning> - каждый раз, когда вы подбираете дух, он <positive>восстанавливает немного здоровья</positive>."
+  ],
+  "icon": "malum:ring_of_curative_talent",
+  "x": 89.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_ring"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:ring_of_curative_talent",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

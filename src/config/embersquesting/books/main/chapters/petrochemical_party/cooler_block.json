@@ -1,0 +1,18 @@
+{
+  "title": "Cooler Block",
+  "icon": "oritech:cooler_block",
+  "x": 24.5,
+  "y": 10.5,
+  "deps": {
+    "any": [
+      "petrochemical_party/pump"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:cooler_block",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

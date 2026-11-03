@@ -1,0 +1,19 @@
+{
+  "title": "Electric Cutting Machine",
+  "icon": "modern_industrialization:electric_cutting_machine",
+  "x": 19.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "automation_n_stuff/basic_machine_hull",
+      "automation_n_stuff/large_motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:electric_cutting_machine",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

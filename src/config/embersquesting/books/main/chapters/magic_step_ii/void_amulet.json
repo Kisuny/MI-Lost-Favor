@@ -1,0 +1,26 @@
+{
+  "title": "Void Amulet",
+  "description": [
+    "The <named>Void Amulet</named> is imbued with supernatural defense - when worn, incoming projectiles are <positive>absorbed and nullified</positive> instead of striking you, though it needs about ten seconds to recharge afterwards.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Амулет пустоты</named> пропитан сверхъестественной защитой - надев его, вы <positive>поглощаете и обнуляете</positive> летящие в вас снаряды, но после срабатывания ему нужно около десяти секунд на перезарядку."
+  ],
+  "icon": "eidolon_repraised:void_amulet",
+  "x": 70,
+  "y": 30.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soul_shard"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:void_amulet",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

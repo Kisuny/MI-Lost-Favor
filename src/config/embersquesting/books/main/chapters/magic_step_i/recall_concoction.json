@@ -1,0 +1,38 @@
+{
+  "title": "Recall Concoction",
+  "description": [
+    "The first proper brew of the \"Superstitiously Enormous Gnomes Summit\" (SEGS) department of P.L.A.C.E.R.S., which was \"founded\" in <obfuscate mode=constant interval=30 alphabet=numeric>19■■</obfuscate>. The concoction was allowed for public usage outside of the Whimsy Induced Polygon (WIP) range and approved by John the Redhatted themself after numerous proper trials on \"volunteers.\" <warning><fade minAlpha=0.3 frequency=1.0>Brings the one consuming it unconscious</fade></warning> while the field agents in their pointy red hats <positive>transport the applicant</positive> to the <magic>location of one's choosing</magic>. The process is accomplished with the extremely high (but not unhealthy, we assure you) dosage of amnestics so that, in the eyes of the user, the whole operation happens instantaneously. The whole procedure is handled by professionals of their trade, and we guarantee the safety of both the customer and their belongings.",
+    "",
+    "&z🛈 The company policy only allows for ONE desired destination to be saved in the records, and only in the \"looking directly at them\" proximity of beds or campfires (don't ask us about reasons, that's a corporate secret).§r",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Первый настоящий напиток отдела «Суеверного Съезда Огромных Гномов» (ССОГ) при P.L.A.C.E.R.S., который был «основан» в <obfuscate mode=constant interval=30 alphabet=numeric>19■■</obfuscate>. Зелье было разрешено к массовому употреблению за пределами Полигона Наведённых Причуд (ПНП) и одобрено лично Джоном Красношляпым после многочисленных надлежащих испытаний на «добровольцах». <warning><fade minAlpha=0.3 frequency=1.0>Погружает употребившего в бессознательное состояние</fade></warning>, пока полевые агенты в остроконечных красных шляпах <positive>переносят клиента</positive> в <magic>выбранное им место</magic>. Процесс достигается крайне высокой (но, уверяем вас, безвредной) дозой амнестиков, так что в глазах пользователя вся операция происходит мгновенно. Всей процедурой занимаются профессионалы своего дела, и мы гарантируем безопасность как клиента, так и его имущества.",
+    "",
+    "&z🛈 Политика компании позволяет сохранить в записях только ОДНУ желаемую точку назначения, причём исключительно в радиусе \"прямой видимости\" от кроватей или костров (не спрашивайте нас о причинах, это коммерческая тайна).§r"
+  ],
+  "icon": "milf:recall_concoction",
+  "x": 6,
+  "y": 51,
+  "deps": {
+    "all": [
+      "magic_step_i/mixing_cauldron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:recall_concoction",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:recall_concoction",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Coke Dust",
+  "icon": "modern_industrialization:coke_dust",
+  "x": 12,
+  "y": 17,
+  "deps": {
+    "all": [
+      "bronze_age/coke_oven"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:coke_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

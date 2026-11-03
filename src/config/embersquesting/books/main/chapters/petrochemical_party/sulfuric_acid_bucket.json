@@ -1,0 +1,18 @@
+{
+  "title": "Sulfuric Acid Bucket",
+  "icon": "modern_industrialization:sulfuric_acid_bucket",
+  "x": 20.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/syngas_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:sulfuric_acid_bucket",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

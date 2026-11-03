@@ -1,0 +1,18 @@
+{
+  "title": "Mv Tesla Receiver Hatch",
+  "icon": "extended_industrialization:mv_tesla_receiver_hatch",
+  "x": 17.5,
+  "y": 14,
+  "deps": {
+    "all": [
+      "automation_n_stuff/tesla_coil"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:mv_tesla_receiver_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

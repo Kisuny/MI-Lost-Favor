@@ -1,0 +1,27 @@
+{
+  "title": "Bismuth Flake",
+  "description": [
+    "Small chunks can be found on <magic>walls</magic> in the §2Crystal Gardens§r <magic>biome</magic> in <magic>Deeper Down</magic>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Маленькие кусочки можно найти на <magic>стенах</magic> в <magic>глубоких низинах</magic> в <magic>биоме Кристальные сады</magic>"
+  ],
+  "icon": "spectrum:bismuth_flake",
+  "x": 51,
+  "y": 45.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q758bf8f1aa3dbae6"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:bismuth_flake",
+      "type": "item"
+    }
+  ],
+  "shape": "square",
+  "lines_out": "hover"
+}

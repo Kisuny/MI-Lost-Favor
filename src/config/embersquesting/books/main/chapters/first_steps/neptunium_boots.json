@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Boots",
+  "icon": "aquaculture:neptunium_boots",
+  "x": 39.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_boots",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Assembler Block",
+  "icon": "oritech:assembler_block",
+  "x": 23.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/motor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:assembler_block",
+      "type": "item"
+    },
+    {
+      "item": "oritech:machine_core_5",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

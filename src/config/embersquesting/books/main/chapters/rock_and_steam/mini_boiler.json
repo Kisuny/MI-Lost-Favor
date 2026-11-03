@@ -1,0 +1,32 @@
+{
+  "title": "Mini Boiler",
+  "description": [
+    "Ember machines give off heat - don't waste it. The <keyword>Mini Boiler</keyword>, attached to the side of a machine that uses or produces Ember, boils <aqua>water</aqua> into <wind>steam</wind>.",
+    "",
+    "That steam feeds Catalytic Plugs, Wildfire Stirlings and even <keyword>Modern Industrialization</keyword> machines.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Эмберные машины выделяют тепло - не тратьте его зря. <keyword>Маленький паровой котёл</keyword>, прикреплённый сбоку к машине, которая тратит или производит эмбер, кипятит <aqua>воду</aqua> в <wind>пар</wind>.",
+    "",
+    "Этот пар питает Каталитические штепсели, Огненные очистители и даже машины <keyword>Modern Industrialization</keyword>."
+  ],
+  "icon": "embers:mini_boiler{\"minecraft:block_entity_data\":{boilTime:0,clogged:0b,connection0:0,connection1:0,connection2:0,connection3:2,connection4:0,connection5:0,fluidTank:{Fluid:{amount:15700,id:\"minecraft:water\"}},from0:0b,from1:0b,from2:0b,from3:0b,from4:0b,from5:0b,gasTank:{Fluid:{amount:12000,id:\"embers:steam\"}},id:\"embers:mini_boiler\",lastBoil:300,lastRobin:0,lastTransfer:-1,\"neoforge:attachments\":{\"astages:block_stage\":{owner:[I;-59202318,133646977,-1471610684,-363498604]}}}}",
+  "x": 30.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_gear"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "embers:mini_boiler",
+      "components": "{\"minecraft:block_entity_data\":{boilTime:0,clogged:0b,connection0:0,connection1:0,connection2:0,connection3:2,connection4:0,connection5:0,fluidTank:{Fluid:{amount:15700,id:\"minecraft:water\"}},from0:0b,from1:0b,from2:0b,from3:0b,from4:0b,from5:0b,gasTank:{Fluid:{amount:12000,id:\"embers:steam\"}},id:\"embers:mini_boiler\",lastBoil:300,lastRobin:0,lastTransfer:-1,\"neoforge:attachments\":{\"astages:block_stage\":{owner:[I;-59202318,133646977,-1471610684,-363498604]}}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

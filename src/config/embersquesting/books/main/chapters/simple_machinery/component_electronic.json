@@ -1,0 +1,22 @@
+{
+  "title": "Component Electronic",
+  "icon": "immersiveengineering:component_electronic",
+  "x": 13.5,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "bronze_age/analog_circuit",
+      "simple_machinery/electrum_wire",
+      "bronze_age/copper_wire",
+      "bronze_age/rubber_sheet"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:component_electronic",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

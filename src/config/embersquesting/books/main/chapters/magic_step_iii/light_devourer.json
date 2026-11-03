@@ -1,0 +1,30 @@
+{
+  "title": "Light Devourer",
+  "description": [
+    "A device consisting of a case with a <curse><pulse base=0.5 amplitude=1.0>dark mass</pulse></curse> at its center that swirls and consumes nearby light - essentially a contained miniature <magic>black hole</magic>.",
+    "",
+    "Function: lets you place \"false\" darkness in an area. This artificial darkness prevents monsters from spawning in the affected zone.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Устройство представляет собой корпус с тёмной массой внутри, которая закручивается и поглощает свет вокруг себя - по сути, миниатюрная контролируемая чёрная дыра.",
+    "",
+    "Функция: позволяет создавать \"ложную\" темноту в области. Эта искусственная тьма не даёт мобам спавниться в зоне действия."
+  ],
+  "icon": "risus:light_devourer",
+  "x": 16,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/q7f4dd202f7059ef5"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:light_devourer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Flint Knife",
+  "description": [
+    "§mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that§r",
+    "",
+    "Can also collect <keyword>Grass Fibers</keyword> from grass",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "§mВместо этого используйте топор, он более мощный. Но тише, я вам этого не говорил§r",
+    "",
+    "Так же может собирать <keyword>волокна из травы</keyword>"
+  ],
+  "icon": "ytech:flint_knife",
+  "x": 5.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "first_steps/grass_twine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:flint_knife",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

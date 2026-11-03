@@ -1,0 +1,18 @@
+{
+  "title": "Configurable Chest",
+  "icon": "modern_industrialization:configurable_chest",
+  "x": 29.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "bronze_age/analog_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:configurable_chest",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

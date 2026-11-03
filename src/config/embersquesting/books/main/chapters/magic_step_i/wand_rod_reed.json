@@ -1,0 +1,26 @@
+{
+  "title": "Wand Rod Reed",
+  "description": [
+    "Stores slightly more vis than a <nature>Greatwood</nature> core, and when its <wind>Aer</wind> drops below <property>10%</property> it <pulse>slowly refills on its own</pulse> - no node needed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вмещает чуть больше vis, чем стержень из <nature>великого древа</nature>, а когда <wind>Aer</wind> в нём падает ниже <property>10%</property>, <pulse>сам медленно восполняется</pulse> - без всяких узлов."
+  ],
+  "icon": "thaumaturge:wand_rod_reed",
+  "x": 60.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "magic_step_i/wand_rod_greatwood"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:wand_rod_reed",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

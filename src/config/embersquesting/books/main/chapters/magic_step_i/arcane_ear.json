@@ -1,0 +1,27 @@
+{
+  "title": "Arcane Ear",
+  "description": [
+    "The <keyword>Arcane Ear</keyword> <wiggle amplitude=0.5 frequency=1.0 phase=1.0>listens</wiggle> for a note block playing its note and sends a redstone pulse. There is also a toggle version.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Магическое ухо</keyword> <wiggle amplitude=0.5 frequency=1.0 phase=1.0>слушает</wiggle> нотный блок и при своей ноте подаёт импульс редстоуна. Есть и версия-переключатель."
+  ],
+  "icon": "thaumaturge:arcane_ear",
+  "x": 41.5,
+  "y": 29,
+  "deps": {
+    "all": [
+      "magic_step_i/redstone_relay"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:arcane_ear",
+      "type": "item"
+    }
+  ],
+  "shape": "circle",
+  "lines_out": "hover"
+}

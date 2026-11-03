@@ -1,0 +1,29 @@
+{
+  "title": "Ritual Reader",
+  "description": [
+    "The <named>Ritual Tinkerer</named> (also known as the Ritual Reader) is essential for mastery over your circles. Cycle between three modes with Sneak + Use:",
+    "",
+    "• Information - reveals the purpose of the selected ritual.",
+    "",
+    "• Set Spiritus Consumed - attunes the ritual to consume specific aspects of <click action=open_quest value='magic_step_iii/vas_maleficum'><u>Spiritus</u></click> from the Aura. Carry the desired Spiritus Crystals in your hotbar, one per aspect.",
+    "",
+    "• Define Area - specifies the zone in which the ritual operates and displays the current boundaries. If multiple zones exist, Sneak + Use on the Master Ritual Stone cycles between them.",
+    "",
+    "Some rituals can be expanded far beyond their default range, but EV cost scales to match. Tread carefully with your reserves."
+  ],
+  "icon": "neovitae:ritual_reader",
+  "x": 53.5,
+  "y": 14,
+  "deps": {
+    "all": [
+      "magic_step_iii/blood_orb_master"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:ritual_reader",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

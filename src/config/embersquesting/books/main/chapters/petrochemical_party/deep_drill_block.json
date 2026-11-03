@@ -1,0 +1,20 @@
+{
+  "title": "Deep Drill Block",
+  "icon": "oritech:deep_drill_block",
+  "x": 5.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "simple_machinery/bedrock_sample",
+      "petrochemical_party/laser_arm_block"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:deep_drill_block",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Plantoil Bucket",
+  "icon": "immersiveengineering:plantoil_bucket",
+  "x": 18,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "simple_machinery/squeezer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:plantoil_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

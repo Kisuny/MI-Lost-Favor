@@ -1,0 +1,25 @@
+{
+  "title": "Hydrotreater",
+  "icon": "immersivepetroleum:hydrotreater",
+  "x": 16,
+  "y": 23.5,
+  "deps": {
+    "any": [
+      "petrochemical_party_pp/sulfuric_naphtha_bucket",
+      "petrochemical_party_pp/diesel_sulfur_bucket",
+      "petrochemical_party_pp/high_sulfur_kerosene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:hydrotreater",
+      "type": "item"
+    },
+    {
+      "block": "immersivepetroleum:hydrotreater",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

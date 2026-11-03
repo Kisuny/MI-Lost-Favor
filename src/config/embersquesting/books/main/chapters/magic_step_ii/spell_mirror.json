@@ -1,0 +1,26 @@
+{
+  "title": "Spell Mirror",
+  "description": [
+    "The <keyword>Spell Mirror</keyword> reflects any spell projectile that hits it at a mirrored angle - it can be placed on walls, floors or ceilings, and needs a supporting block behind it to stay placed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Spell Mirror</keyword> отражает попавшее в него заклинание-снаряд под зеркальным углом - его можно ставить на стены, пол или потолок, но ему нужен опорный блок сзади, иначе он сломается."
+  ],
+  "icon": "ars_elemental:spell_mirror",
+  "x": 116.5,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/spell_prism"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:spell_mirror",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

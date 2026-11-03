@@ -1,0 +1,19 @@
+{
+  "title": "Quartz Glass",
+  "icon": "ae2:quartz_glass",
+  "x": 15,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "simple_machinery/arc_furnace",
+      "simple_machinery/certus_quartz_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:quartz_glass",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

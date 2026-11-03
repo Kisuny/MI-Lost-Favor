@@ -1,0 +1,29 @@
+{
+  "title": "Wireless Arcane Terminal",
+  "description": [
+    "The <keyword>Arcane Crafting Terminal</keyword> in your hand. Link it in a <keyword>Wireless Access Point</keyword> and charge it in a <keyword>Charger</keyword>.",
+    "",
+    "The <property>grid, crystals and wand</property> stay inside when you close it. Vis is drawn from the aura of the <magic>chunk you stand in</magic> - an <named>Arcane Charging Card</named> expands the area.",
+    "",
+    "With a <named>Drain Upgrade</named> it can <soul>drain aura nodes</soul> into the wand inside.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Терминал магического крафта</keyword> в руке. Привяжи его в <keyword>точке беспроводного доступа</keyword> и заряди в <keyword>зарядном устройстве</keyword>.",
+    "",
+    "<property>Сетка, кристаллы и жезл</property> остаются внутри после закрытия. Вис берётся из ауры <magic>чанка, где ты стоишь</magic> - <named>карта магической зарядки</named> расширяет область.",
+    "",
+    "С <named>улучшением Истощения</named> может <soul>вытягивать вис из узлов ауры</soul> в жезл внутри."
+  ],
+  "icon": "appliedthaumaturge:wireless_arcane_terminal",
+  "x": 1,
+  "y": 7,
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:wireless_arcane_terminal",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

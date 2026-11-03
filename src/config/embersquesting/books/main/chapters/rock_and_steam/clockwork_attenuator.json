@@ -1,0 +1,30 @@
+{
+  "title": "Clockwork Attenuator",
+  "description": [
+    "The <keyword>Clockwork Attenuator</keyword> controls <property>machine speed</property>. It has two settings toggled by a <pulse>redstone signal</pulse>: active and inactive.",
+    "",
+    "Change the current setting with RMB and Shift + RMB.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Заводной аттенюатор</keyword> управляет <property>скоростью машины</property>. У него два режима, которые переключаются <pulse>редстоун-сигналом</pulse>: активный и неактивный.",
+    "",
+    "Текущий режим настраивается ПКМ и Shift + ПКМ."
+  ],
+  "icon": "embers:clockwork_attenuator",
+  "x": 20.5,
+  "y": 31.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/silver_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:clockwork_attenuator",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

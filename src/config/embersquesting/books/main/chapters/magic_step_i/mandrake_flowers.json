@@ -1,0 +1,34 @@
+{
+  "title": "Mandrake Flowers",
+  "description": [
+    "The plant will slowly grow and is harvestable.",
+    "",
+    "Can be found in swamps or bought from the Merchant."
+  ],
+  "icon": "hexerei:mandrake_flowers",
+  "x": 4,
+  "y": 55,
+  "deps": {
+    "all": [
+      "magic_step_i/book_of_shadows"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:mandrake_flowers",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:mandrake_root",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:mandrake_plant",
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 2
+  },
+  "shape": "diamond"
+}

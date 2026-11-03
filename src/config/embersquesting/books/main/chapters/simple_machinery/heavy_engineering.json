@@ -1,0 +1,23 @@
+{
+  "title": "Heavy Engineering",
+  "icon": "immersiveengineering:heavy_engineering",
+  "x": 11.5,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "bronze_age/component_steel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:heavy_engineering",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "optional": true,
+  "complete": "any",
+  "shape": "pentagon"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Concrete",
+  "icon": "immersiveengineering:concrete",
+  "x": 4.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "simple_machinery/concrete_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:concrete",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

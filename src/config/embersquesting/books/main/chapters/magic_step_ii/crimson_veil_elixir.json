@@ -1,0 +1,32 @@
+{
+  "title": "Crimson Veil Elixir",
+  "description": [
+    "§lThe final quest for the middle phase of the game in magic. ",
+    "",
+    "§lEndgame still in WIP!§r"
+  ],
+  "icon": "milf:crimson_veil_elixir",
+  "x": 133,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/miasma_orb"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:crimson_veil_elixir",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Crimson Veil Access",
+      "id": "milf:stage/crimson_veil_elixir",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "shape": "octagon",
+  "size": 3.0
+}

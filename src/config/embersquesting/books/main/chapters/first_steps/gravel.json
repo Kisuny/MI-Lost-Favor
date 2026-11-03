@@ -1,0 +1,27 @@
+{
+  "title": "Gravel",
+  "description": [
+    "First things first, get some <keyword>gravel</keyword> to begin your journey, it'll surely be handy.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Прежде всего, запаситесь <keyword>гравием</keyword>, чтобы начать свое путешествие, он вам обязательно пригодится."
+  ],
+  "icon": "minecraft:gravel",
+  "x": 2,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/glitch_hello_world"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:gravel",
+      "count": 3,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Sentient Axe",
+  "icon": "neovitae:sentient_axe",
+  "x": 37.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/spiritus_gem_petty"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sentient_axe",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:sentient_scythe",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:sentient_shovel",
+      "type": "item"
+    },
+    {
+      "item": "neovitae:sentient_pickaxe",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

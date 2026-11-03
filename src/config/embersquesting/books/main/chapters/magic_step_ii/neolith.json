@@ -1,0 +1,27 @@
+{
+  "title": "Neolith",
+  "description": [
+    "<positive>Obtain</positive> §l§5Neolith§r§r from the failing-engulfed <keyword>obsidian</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Заставь</positive> баночку с <warning>гибелью</warning> съесть <keyword>обсидиан</keyword>, получишь §l§5неолит§r§r"
+  ],
+  "icon": "spectrum:neolith",
+  "x": 7.5,
+  "y": 37,
+  "deps": {
+    "all": [
+      "magic_step_ii/bottle_of_failing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:neolith",
+      "type": "item"
+    }
+  ],
+  "shape": "square",
+  "lines_out": "hover"
+}

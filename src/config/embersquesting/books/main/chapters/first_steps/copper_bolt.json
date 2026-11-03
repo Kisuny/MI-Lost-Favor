@@ -1,0 +1,19 @@
+{
+  "title": "Copper Bolt",
+  "icon": "modern_industrialization:copper_bolt",
+  "x": 29,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "first_steps/copper_rod",
+      "first_steps/lead_file"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:copper_bolt",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

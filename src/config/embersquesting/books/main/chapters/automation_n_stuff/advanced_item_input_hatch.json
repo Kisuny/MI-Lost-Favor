@@ -1,0 +1,29 @@
+{
+  "title": "Advanced Item Input Hatch",
+  "icon": "modern_industrialization:advanced_item_input_hatch",
+  "x": 19,
+  "y": 11,
+  "deps": {
+    "all": [
+      "automation_n_stuff/import_bus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:advanced_item_input_hatch",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:advanced_fluid_input_hatch",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "yet_another_industrialization:advanced_mixed_input_hatch",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

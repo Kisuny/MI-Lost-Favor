@@ -1,0 +1,28 @@
+{
+  "title": "Tier II Altar",
+  "description": [
+    ""
+  ],
+  "icon": "neovitae:blood_stained_glass",
+  "x": 39.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_iii/tabula_robur"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:blood_stained_glass",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "tag": "neovitae:altar/runes_t1",
+      "count": 20,
+      "type": "item",
+      "title": "Any Tier 1 Runes"
+    }
+  ],
+  "shape": "gear"
+}

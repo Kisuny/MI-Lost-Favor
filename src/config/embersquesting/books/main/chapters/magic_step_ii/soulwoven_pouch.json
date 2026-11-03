@@ -1,0 +1,27 @@
+{
+  "title": "Soulwoven Pouch",
+  "description": [
+    "Holds 512 items",
+    "The <pulse><keyword>Soulwoven Pouch</keyword></pulse> acts like a bundle, but also <positive>automatically</positive> snaps up any <warning>Spirits</warning> you collect, keeping your inventory clear of clutter. Stored magical items are <wave>rotated slightly out of reality</wave>, taking up less space than they normally would.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<pulse><keyword>Soulwoven Pouch</keyword></pulse> работает как обычный <keyword>Мешок</keyword>, но ещё и <positive>автоматически</positive> подбирает любые собранные <warning>души</warning>, не давая им засорять инвентарь. Хранимые магические предметы слегка <wave>вывёрнуты из реальности</wave>, занимая меньше места, чем обычно."
+  ],
+  "icon": "malum:soulwoven_pouch",
+  "x": 79,
+  "y": 20,
+  "deps": {
+    "all": [
+      "magic_step_ii/soulwoven_silk"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:soulwoven_pouch",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

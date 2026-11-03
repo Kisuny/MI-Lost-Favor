@@ -1,0 +1,18 @@
+{
+  "title": "Controller",
+  "icon": "ae2:controller",
+  "x": 26,
+  "y": 19,
+  "deps": {
+    "all": [
+      "aluminum/concurrent_processor"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:controller",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

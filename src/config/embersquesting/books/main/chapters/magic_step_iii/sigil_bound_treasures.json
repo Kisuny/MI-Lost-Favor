@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Bound Treasures",
+  "description": [
+    "This sigil can be linked to a storage container, and for the cost of 200EV from your Anima reserves, open that container remotely, and cross-dimensionally, for as long as that container is within a loaded chunk."
+  ],
+  "icon": "neovitae:sigil_bound_treasures",
+  "x": 36.5,
+  "y": 1,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_bound_treasures",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

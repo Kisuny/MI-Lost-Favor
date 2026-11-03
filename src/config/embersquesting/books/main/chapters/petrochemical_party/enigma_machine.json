@@ -1,0 +1,20 @@
+{
+  "title": "Enigma Machine",
+  "icon": "modern_industrialization:enigma_machine",
+  "x": 16.5,
+  "y": 9.5,
+  "deps": {
+    "any": [
+      "petrochemical_party/logic_unit",
+      "petrochemical_party/5d_memory_crystal",
+      "petrochemical_party/disk_from_space"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:enigma_machine",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

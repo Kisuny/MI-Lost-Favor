@@ -1,0 +1,25 @@
+{
+  "title": "Electric Simulation Chamber",
+  "icon": "hostile_neural_industrialization:electric_simulation_chamber",
+  "x": 4.5,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "aluminum/sim_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hostile_neural_industrialization:electric_simulation_chamber",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "hostile_neural_industrialization:guidebook",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

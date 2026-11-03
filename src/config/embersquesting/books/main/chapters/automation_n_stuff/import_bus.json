@@ -1,0 +1,21 @@
+{
+  "title": "Import Bus",
+  "description": [
+    "<positive>Adds items</positive> into <keyword>system</keyword>"
+  ],
+  "icon": "ae2:import_bus",
+  "x": 20,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/plastic_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:import_bus",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

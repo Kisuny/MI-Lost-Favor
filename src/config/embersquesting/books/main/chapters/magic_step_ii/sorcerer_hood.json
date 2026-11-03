@@ -1,0 +1,30 @@
+{
+  "title": "Sorcerer Hood",
+  "icon": "ars_nouveau:sorcerer_hood",
+  "x": 124,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/magebloom_crop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:sorcerer_hood",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:sorcerer_robes",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:sorcerer_leggings",
+      "type": "item"
+    },
+    {
+      "item": "ars_nouveau:sorcerer_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

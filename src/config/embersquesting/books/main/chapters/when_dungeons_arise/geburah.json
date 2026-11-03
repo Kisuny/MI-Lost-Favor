@@ -1,0 +1,47 @@
+{
+  "title": "Geburah",
+  "description": [
+    "<curse>Geburah</curse> - a divine construct and eternal judge who has become a <blood>malicious tyrant</blood>.",
+    "",
+    "Throw the <keyword>Eye of Geburah</keyword> to find its arena, then <property>RMB</property> the boss spawner to start the trial. <warning>A ranged weapon is strongly recommended.</warning>",
+    "",
+    "You can use the structure-finding ritual from the <click action=open_quest value='magic_step_ii/brazier'><u>Eidolon</u></click> mod or <click action=open_quest value='magic_step_i/ritual_locate_structure'><u>Ars Additions</u></click>.",
+    "",
+    "Everyone on the arena becomes a <curse>Sinner</curse>. With every attack pattern Geburah declares new actions <shake amplitude=0.3 frequency=1.0>sinful</shake> - jumping, standing still, killing, walking the wrong way around it. Watch the rules: <warning>too many sins mean instant death</warning>.",
+    "",
+    "Drops the <keyword>Justice Core</keyword>, the <keyword>Divine Gear</keyword> - a turret that attacks <property>any</property> mob nearby - and a pile of <keyword>Polished Justicestone</keyword>. Finish it with a <property>wrench</property> for a <property>50%</property> chance at an <named>Electronic Ender Core</named>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<curse>Гебура</curse> - божественная конструкция и вечный судья, ставший <blood>злобным тираном</blood>.",
+    "",
+    "Брось <keyword>Глаз Гебуры</keyword>, чтобы найти её арену, затем нажми <property>ПКМ</property> по спавнеру босса, чтобы начать суд. <warning>Очень советуем взять оружие дальнего боя.</warning>",
+    "",
+    "Можно использовать ритуал поиска структур из мода <click action=open_quest value='magic_step_ii/brazier'><u>Eidolon</u></click> или <click action=open_quest value='magic_step_i/ritual_locate_structure'><u>Ars Additions</u></click>",
+    "",
+    "Все на арене становятся <curse>Грешниками</curse>. С каждой сменой атак Гебура объявляет новые действия <shake amplitude=0.3 frequency=1.0>грешными</shake> - прыжки, стояние на месте, убийства, движение вокруг неё не в ту сторону. Следи за правилами: <warning>слишком много грехов - мгновенная смерть</warning>.",
+    "",
+    "Роняет <keyword>Ядро правосудия</keyword>, <keyword>Божественную шестерню</keyword> - турель, атакующую <property>любых</property> мобов рядом, - и груду <keyword>гладкого камня правосудия</keyword>. Добей её <property>гаечным ключом</property>, чтобы с шансом <property>50%</property> получить <named>Электронное ядро Эндера</named>."
+  ],
+  "icon": "fdbosses:geburah_trophy",
+  "x": 18.5,
+  "y": 36,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_summit"
+    ]
+  },
+  "tasks": [
+    {
+      "structure": "fdbosses:geburah_arena",
+      "type": "location"
+    },
+    {
+      "advancement": "fdbosses:qliphoth_awakening/geburah",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

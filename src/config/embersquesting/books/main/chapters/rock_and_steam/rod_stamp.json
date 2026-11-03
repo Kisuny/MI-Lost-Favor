@@ -1,0 +1,26 @@
+{
+  "title": "Rod Stamp",
+  "description": [
+    "The <keyword>Rod Stamp</keyword> casts <keyword>rods</keyword> straight from molten metal.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Rod Stamp</keyword> отливает <keyword>стержни</keyword> прямо из расплава."
+  ],
+  "icon": "milf:rod_stamp",
+  "x": 6,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/stamper"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:rod_stamp",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

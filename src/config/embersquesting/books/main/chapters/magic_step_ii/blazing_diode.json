@@ -1,0 +1,26 @@
+{
+  "title": "Blazing Diode",
+  "description": [
+    "An augment for the <keyword>Spirit Crucible</keyword>, extracting the full force of a soul on fire: <property>-25% Fuel Usage Rate</property> and <positive>+25% Focusing Speed</positive> - lessens the fuel needed from a <keyword>Spirit Catalyzer</keyword> while also hastening the whole process.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшение для <keyword>Spirit Crucible</keyword>, извлекающее полную силу пылающей души: <property>-25% расхода топлива</property> и <positive>+25% скорости фокусировки</positive> - снижает требования к топливу от <keyword>Spirit Catalyzer</keyword> и одновременно ускоряет весь процесс."
+  ],
+  "icon": "malum:blazing_diode",
+  "x": 93,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_ii/spirit_crucible"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:blazing_diode",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

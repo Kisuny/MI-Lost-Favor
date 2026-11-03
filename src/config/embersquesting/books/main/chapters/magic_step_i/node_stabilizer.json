@@ -1,0 +1,33 @@
+{
+  "title": "Node Stabilizer",
+  "description": [
+    "Place it <property>directly under</property> an <magic>aura node</magic>. It does several things at once:",
+    "",
+    "- the node stops <wave>draining vis</wave> from other nodes and cannot be drained by them;",
+    "- an <warning><shake amplitude=0.3 frequency=1.0>unstable</shake></warning> node no longer loses its vis, and there is a tiny chance the instability goes away for good;",
+    "- a <soul>fading</soul> node has a very, very small chance to become a pale one.",
+    "",
+    "The power comes from the node itself: its vis does not drop, but it refills from the aura at <warning>half speed</warning>. A <property>redstone signal</property> turns the stabilizer off.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Ставится <property>прямо под</property> <magic>узел ауры</magic>. Делает сразу несколько вещей:",
+    "",
+    "- узел перестаёт <wave>высасывать vis</wave> из других узлов, и они не могут высасывать его;",
+    "- <warning><shake amplitude=0.3 frequency=1.0>нестабильный</shake></warning> узел больше не теряет vis, и есть крошечный шанс, что нестабильность пройдёт навсегда;",
+    "- у <soul>угасающего</soul> узла очень-очень маленький шанс стать бледным.",
+    "",
+    "Энергию стабилизатор берёт из самого узла: vis не убывает, но восполняется из ауры <warning>вдвое медленнее</warning>. <property>Сигнал редстоуна</property> выключает стабилизатор."
+  ],
+  "icon": "thaumaturge:node_stabilizer",
+  "x": 72.5,
+  "y": 27.5,
+  "tasks": [
+    {
+      "item": "thaumaturge:node_stabilizer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

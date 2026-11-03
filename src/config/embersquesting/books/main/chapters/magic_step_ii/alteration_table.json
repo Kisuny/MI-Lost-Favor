@@ -1,0 +1,26 @@
+{
+  "title": "Alteration Table",
+  "description": [
+    "The <keyword>Alteration Table</keyword> is used to inscribe <keyword>Threads</keyword> onto magic armor - place the armor on the stand to see its available <property>Thread Slots</property>, then use a Thread on the display to add it. Take the armor back off to apply the changes, or interact with an empty hand to remove a Thread.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Стол изменений</keyword> используется, чтобы вписывать <keyword>нити</keyword> в магическую броню - положите броню на стойку, чтобы увидеть доступные <property>слоты для нитей</property>, а затем используйте нить на экране, чтобы добавить её. Заберите броню обратно, чтобы применить изменения, или взаимодействуйте пустой рукой, чтобы снять нить."
+  ],
+  "icon": "ars_nouveau:alteration_table",
+  "x": 120.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_ii/magebloom_crop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:alteration_table",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

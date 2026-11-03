@@ -1,0 +1,23 @@
+{
+  "title": "Wither Skeleton Skull",
+  "description": [
+    "§lWither Skeleton Skull§r:",
+    "• +2x Power Capacity",
+    "• +2x Recharge Rate"
+  ],
+  "icon": "minecraft:wither_skeleton_skull",
+  "x": 33.5,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "magic_step_i/skeleton_skull"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:wither_skeleton_skull",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

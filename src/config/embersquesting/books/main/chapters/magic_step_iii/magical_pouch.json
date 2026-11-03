@@ -1,0 +1,23 @@
+{
+  "title": "Magical Pouch",
+  "description": [
+    "An upgraded coin pouch that automatically picks up coins from the floor",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Улучшенный мешок для монет, автоматически поднимает монеты с пола"
+  ],
+  "icon": "devices:magical_pouch{\"devices:pouch_data\":{AutoExchange:1b,BonusSlots:0,Items:[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}}",
+  "x": 29.5,
+  "y": 39.5,
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "devices:magical_pouch",
+      "components": "{\"devices:pouch_data\":{AutoExchange:1b,BonusSlots:0,Items:[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

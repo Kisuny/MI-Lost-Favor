@@ -1,0 +1,19 @@
+{
+  "title": "Tin Ingot",
+  "icon": "modern_industrialization:tin_ingot",
+  "x": 23.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "first_steps/clay_mold_ingot",
+      "first_steps/crushed_tin"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:tin_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "hexagon"
+}

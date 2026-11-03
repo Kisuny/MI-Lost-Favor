@@ -1,0 +1,20 @@
+{
+  "title": "",
+  "description": [
+    "Perform the ritual!"
+  ],
+  "x": 15.5,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/liquid_crystal_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "advancement": "spectrum:midgame/create_midnight_aberration",
+      "type": "advancement"
+    }
+  ],
+  "shape": "square"
+}

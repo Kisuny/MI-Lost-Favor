@@ -1,0 +1,21 @@
+{
+  "title": "Blueprint",
+  "icon": "immersiveengineering:blueprint{\"immersiveengineering:blueprint\":\"MI Components\"}",
+  "x": 21,
+  "y": 28,
+  "deps": {
+    "all": [
+      "petrochemical_party/electronic_circuit"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "immersiveengineering:blueprint",
+      "components": "{\"immersiveengineering:blueprint\":\"MI Components\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "size": 2.0
+}

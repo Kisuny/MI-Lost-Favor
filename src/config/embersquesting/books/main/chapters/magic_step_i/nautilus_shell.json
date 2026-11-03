@@ -1,0 +1,19 @@
+{
+  "title": "Nautilus Shell",
+  "icon": "minecraft:nautilus_shell",
+  "x": 18,
+  "y": 57.5,
+  "deps": {
+    "all": [
+      "magic_step_i/vanilla_items_for_spectrum_progression"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:nautilus_shell",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

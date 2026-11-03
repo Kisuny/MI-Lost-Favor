@@ -1,0 +1,21 @@
+{
+  "title": "Arcane Scribe Tool",
+  "description": [
+    "Draw magical circles on any solid surface. Hold the tool and press <positive>Use</positive> to inscribe. Each inscription consumes one charge (<keyword>20 uses total</keyword>). Place a <keyword>base item</keyword> on the array, then a <keyword>catalyst item</keyword> to activate it."
+  ],
+  "icon": "neovitae:arcane_scribe_tool",
+  "x": 35,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/place_the_tabula_vitae"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:arcane_scribe_tool",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

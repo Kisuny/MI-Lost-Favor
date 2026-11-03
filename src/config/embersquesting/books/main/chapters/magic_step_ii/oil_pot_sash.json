@@ -1,0 +1,21 @@
+{
+  "title": "Oil Pot Sash",
+  "description": [
+    "Allows you to <positive>throw oils</positive>. Can become <property>handy</property> in the future."
+  ],
+  "icon": "toxony:oil_pot_sash",
+  "x": 24,
+  "y": 44,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_blend"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:oil_pot_sash",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

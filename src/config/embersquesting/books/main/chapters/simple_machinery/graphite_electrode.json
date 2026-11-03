@@ -1,0 +1,19 @@
+{
+  "title": "Graphite Electrode",
+  "icon": "immersiveengineering:graphite_electrode",
+  "x": 12,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hop_graphite_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:graphite_electrode",
+      "count": 3,
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Array Deflection",
+  "description": [
+    "Projects a column of protective force (roughly 6 blocks tall, 3 wide) above it, reflecting any projectile that passes through back the way it came. Requires an Tabula Animata and a diamond."
+  ],
+  "icon": "neovitae:array_deflection",
+  "x": 25.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "magic_step_iii/defensive_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_deflection",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Golem Fetter",
+  "description": [
+    "A simple way to put your golems on <warning>pause</warning>. While the <keyword>Golem Fetter</keyword> gets a <property>redstone signal</property>, any golem that walks over it <shake amplitude=0.3 frequency=1.0>freezes in place</shake> and drops its current task.",
+    "",
+    "Turn the signal off and the golem goes back to work. Handy for doors, checkpoints or holding golems back until a job is ready.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Простой способ поставить големов на <warning>паузу</warning>. Пока на <keyword>оковы голема</keyword> подан <property>сигнал редстоуна</property>, любой голем, прошедший по ним, <shake amplitude=0.3 frequency=1.0>замирает на месте</shake> и бросает текущее задание.",
+    "",
+    "Убери сигнал, и голем вернётся к работе. Удобно для дверей, контрольных точек или чтобы придержать големов, пока работа не готова."
+  ],
+  "icon": "thaumaturge:golem_fetter",
+  "x": 51.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "magic_step_i/mind_clockwork"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:golem_fetter",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

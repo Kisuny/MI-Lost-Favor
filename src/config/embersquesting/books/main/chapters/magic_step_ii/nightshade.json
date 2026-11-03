@@ -1,0 +1,32 @@
+{
+  "title": "Nightshade",
+  "description": [
+    "Grows in <nature>dark forests</nature>.",
+    "",
+    "You can also buy from <keyword>Wandering Trader</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Растёт в <nature>тёмных лесах</nature>.",
+    "",
+    "Также можно купить у <keyword>странствующего торговца</keyword>."
+  ],
+  "icon": "toxony:nightshade",
+  "x": 23.5,
+  "y": 46.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/q28a2fcbc095f291e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:nightshade",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

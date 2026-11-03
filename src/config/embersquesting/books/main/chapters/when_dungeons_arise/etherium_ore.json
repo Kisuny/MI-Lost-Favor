@@ -1,0 +1,27 @@
+{
+  "title": "Etherium Ore",
+  "icon": "enigmaticlegacyplus:etherium_ingot",
+  "x": 37.5,
+  "y": 8,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/the_end"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:etherium_ore",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:raw_etherium",
+      "type": "item"
+    },
+    {
+      "item": "enigmaticlegacyplus:etherium_ingot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

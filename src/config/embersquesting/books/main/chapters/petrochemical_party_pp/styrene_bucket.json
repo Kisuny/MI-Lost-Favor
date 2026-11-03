@@ -1,0 +1,23 @@
+{
+  "title": "Styrene Bucket",
+  "icon": "modern_industrialization:styrene_bucket",
+  "x": 20,
+  "y": 24,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/ethylbenzene_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:styrene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare",
+  "lines_out": "hover"
+}

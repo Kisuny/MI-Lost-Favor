@@ -1,0 +1,27 @@
+{
+  "title": "Bog Bone",
+  "description": [
+    "Drops from <keyword>bogged</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Выпадает из <keyword>богера</keyword>."
+  ],
+  "icon": "toxony:bog_bone",
+  "x": 24,
+  "y": 39,
+  "deps": {
+    "all": [
+      "magic_step_ii/any_scalpels"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:bog_bone",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

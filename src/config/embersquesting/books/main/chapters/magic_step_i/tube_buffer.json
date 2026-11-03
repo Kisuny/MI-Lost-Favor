@@ -1,0 +1,30 @@
+{
+  "title": "Tube Buffer",
+  "description": [
+    "Stores up to <property>8 essentia</property> of any mix of types. Its own suction is the minimum (1), so it mostly pulls from a source it touches directly - perfect for getting essentia out of devices that can hold <wave>different types</wave>.",
+    "",
+    "Tubes connect on all sides. Each <keyword>Arcane Bellows</keyword> attached adds <positive>+32 suction</positive>. <positive>Shift + click</positive> a connection to choke its suction down to 1 (blue band) or 0 (red band).",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Хранит до <property>8 эссенции</property> в любом сочетании типов. Собственное всасывание минимальное (1), поэтому он в основном тянет из источника, к которому прикреплён напрямую, - идеально, чтобы забирать эссенцию из устройств, где могут быть <wave>разные типы</wave>.",
+    "",
+    "Трубы подключаются со всех сторон. Каждые прикреплённые <keyword>магические мехи</keyword> дают <positive>+32 к всасыванию</positive>. <positive>Shift + клик</positive> по соединению снижает его всасывание до 1 (синяя полоса) или 0 (красная)."
+  ],
+  "icon": "thaumaturge:tube_buffer",
+  "x": 53.5,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tube_buffer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Bloodroot",
+  "description": [
+    "Grows in <nature>crimson forests</nature>.",
+    "",
+    "You can also buy from <keyword>Wandering Trader</keyword>.",
+    "",
+    "You can also get it from <keyword>Piglin Barter</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Растёт в <nature>багровых лесах</nature>.",
+    "",
+    "Также можно купить у <keyword>странствующего торговца</keyword>.",
+    "",
+    "Также можно получить через <keyword>обмен с пиглинами</keyword>."
+  ],
+  "icon": "toxony:bloodroot",
+  "x": 24,
+  "y": 46,
+  "deps": {
+    "all": [
+      "magic_step_ii/q28a2fcbc095f291e"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:bloodroot",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

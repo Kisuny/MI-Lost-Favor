@@ -1,0 +1,23 @@
+{
+  "title": "Sage",
+  "icon": "hexerei:sage",
+  "x": 10,
+  "y": 55.5,
+  "deps": {
+    "all": [
+      "magic_step_i/sage_burning_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:sage",
+      "type": "item"
+    },
+    {
+      "item": "hexerei:sage_seed",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Cinderhearth",
+  "description": [
+    "Every <magic>magician</magic> should have a <magic>magic furnace</magic>.",
+    "",
+    "By spending <c value=#ff8547>orange ink</c>§r, Cinderhearth smelts items, sometimes with interesting outcomes.",
+    "",
+    "Other types of ink will enhance the smelting properties, be it speed, yield or xp produced, but it needs upgrades for that to work.",
+    "",
+    "More in-depth information can be found in the guidebook.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "У каждого <magic>мага</magic> должна быть под рукой… Печка, да не простая, а <magic>магическая</magic>, вот и вы не исключение, верно?",
+    "",
+    "Чудо печка ценой <c value=#ff8547>оранжевой краски</c>§r - будет плавить, всякое.",
+    "",
+    "За другие цвета улучшает печку, например умножает количество конечной продукции, больше опыта и т.д.",
+    "",
+    "Прочтите более подробную информацию в книге!"
+  ],
+  "icon": "spectrum:cinderhearth",
+  "x": 9.5,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/stratine_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:cinderhearth",
+      "type": "item"
+    },
+    {
+      "tag": "milf:polished_base_blocks",
+      "count": 23,
+      "type": "item",
+      "title": "Any Polished Base Blocks"
+    },
+    {
+      "tag": "milf:crest_base_blocks",
+      "count": 6,
+      "type": "item",
+      "title": "Any Crest Base Blocks"
+    },
+    {
+      "item": "minecraft:lava_bucket",
+      "count": 6,
+      "type": "item"
+    },
+    {
+      "item": "spectrum:chiseled_polished_basalt",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "tag": "c:glass_blocks",
+      "count": 5,
+      "type": "item",
+      "title": "Any Glass Blocks"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

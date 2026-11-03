@@ -1,0 +1,30 @@
+{
+  "title": "Essentia Cell 1k",
+  "description": [
+    "Your first <named>essentia storage cell</named>. Put it in an <keyword>ME Drive</keyword> and the network can store essentia like items.",
+    "",
+    "<property>4k</property>, <property>16k</property> and <property>64k</property> tiers come later - each needs better <keyword>processors</keyword> to link more components together.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Первая <named>ячейка хранения эссенции</named>. Вставь в <keyword>ME привод</keyword>, и сеть будет хранить эссенцию как предметы.",
+    "",
+    "Уровни <property>4k</property>, <property>16k</property> и <property>64k</property> будут позже - каждому нужны <keyword>процессоры</keyword> получше, чтобы связать больше компонентов."
+  ],
+  "icon": "appliedthaumaturge:essentia_cell_1k",
+  "x": 11.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/essentia_cell_housing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "appliedthaumaturge:essentia_cell_1k",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

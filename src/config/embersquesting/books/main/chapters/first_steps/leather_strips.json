@@ -1,0 +1,19 @@
+{
+  "title": "Leather Strips",
+  "icon": "ytech:leather_strips",
+  "x": 15,
+  "y": 6,
+  "deps": {
+    "all": [
+      "first_steps/making_leather_the_last_step",
+      "first_steps/bone_needle"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:leather_strips",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

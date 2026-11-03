@@ -1,0 +1,23 @@
+{
+  "title": "Pumpjack",
+  "icon": "immersivepetroleum:pumpjack",
+  "x": 15,
+  "y": 18,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/derrick"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:pumpjack",
+      "type": "item"
+    },
+    {
+      "block": "immersivepetroleum:pumpjack",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

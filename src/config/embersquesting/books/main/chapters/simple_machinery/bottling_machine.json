@@ -1,0 +1,58 @@
+{
+  "title": "Bottling Machine",
+  "icon": "immersiveengineering:bottling_machine",
+  "x": 13.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "simple_machinery/hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:bottling_machine",
+      "type": "item"
+    },
+    {
+      "block": "immersiveengineering:bottling_machine",
+      "type": "observe"
+    },
+    {
+      "item": "immersiveengineering:fluid_pump",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:sheetmetal_iron",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:rs_engineering",
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:light_engineering",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:steel_scaffolding_standard",
+      "count": 3,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:conveyor_basic",
+      "count": 3,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:bottling_machine_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "octagon"
+}

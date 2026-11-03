@@ -1,0 +1,25 @@
+{
+  "title": "Array Trigger",
+  "description": [
+    "Emits a brief (half-second) redstone pulse whenever a mob or player steps on it. Like a pressure plate, but nearly invisible."
+  ],
+  "icon": "neovitae:array_trigger",
+  "x": 32,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/redstone_arrays"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:array_trigger",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Slime Helmet",
+  "description": [
+    "<keyword>Slime Boots</keyword> let you <positive>bounce off the ground instead of taking damage</positive>, and they work well with the <keyword>Slime Sling</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Slime Boots</keyword> позволяют <positive>отпригывать от земли вместо получения урона</positive>, хорошо сочетаются вместе с <keyword>Slime Sling</keyword>"
+  ],
+  "icon": "usefulslime:slime_boots",
+  "x": 25.5,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/imbuement_chamber"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "usefulslime:slime_helmet",
+      "type": "item"
+    },
+    {
+      "item": "usefulslime:slime_chestplate",
+      "type": "item"
+    },
+    {
+      "item": "usefulslime:slime_leggings",
+      "type": "item"
+    },
+    {
+      "item": "usefulslime:slime_boots",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

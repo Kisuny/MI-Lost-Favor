@@ -1,0 +1,30 @@
+{
+  "title": "Lamp Fertility",
+  "description": [
+    "Animals bathed in the gentle <magic>pink glow</magic> of this lamp fall into a <wiggle amplitude=0.5 frequency=1.0 phase=1.0>very romantic mood</wiggle> and look for a partner of their kind to breed - an <positive>automatic animal farm</positive> without feeding by hand.",
+    "",
+    "It does nothing if there are already <property>8 or more</property> animals of a species nearby. It runs on <magic>Desiderium</magic> essentia, fed straight from an <keyword>essentia tube</keyword>. A <property>redstone signal</property> turns it off.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Животные в мягком <magic>розовом свете</magic> этой лампы приходят в <wiggle amplitude=0.5 frequency=1.0 phase=1.0>очень романтичное настроение</wiggle> и ищут пару своего вида, чтобы размножиться, - <positive>автоматическая ферма</positive> без кормления вручную.",
+    "",
+    "Лампа не работает, если рядом уже <property>8 или больше</property> животных одного вида. Питается эссенцией <magic>Desiderium</magic>, которую подают прямо по <keyword>трубе для эссенции</keyword>. <property>Сигнал редстоуна</property> её выключает."
+  ],
+  "icon": "thaumaturge:lamp_fertility",
+  "x": 67,
+  "y": 32,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:lamp_fertility",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

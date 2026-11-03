@@ -1,0 +1,27 @@
+{
+  "title": "Gyroscope",
+  "icon": "immersive_aircraft:gyroscope",
+  "x": 28,
+  "y": 31,
+  "deps": {
+    "all": [
+      "bronze_age/blueprint_4"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersive_aircraft:gyroscope",
+      "type": "item"
+    },
+    {
+      "item": "immersive_aircraft:gyroscope_hud",
+      "type": "item"
+    },
+    {
+      "item": "immersive_aircraft:gyroscope_dials",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

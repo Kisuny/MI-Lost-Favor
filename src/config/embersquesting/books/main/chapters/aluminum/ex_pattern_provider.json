@@ -1,0 +1,19 @@
+{
+  "title": "Ex Pattern Provider",
+  "icon": "extendedae:ex_pattern_provider",
+  "x": 35.5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "aluminum/mega_pattern_provider",
+      "aluminum/quantum_storage_component"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extendedae:ex_pattern_provider",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Ascension Amulet",
+  "icon": "enigmaticlegacyplus:ascension_amulet",
+  "x": 38,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/starlight_ingot",
+      "when_dungeons_arise/cosmic_heart",
+      "when_dungeons_arise/astral_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:ascension_amulet",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

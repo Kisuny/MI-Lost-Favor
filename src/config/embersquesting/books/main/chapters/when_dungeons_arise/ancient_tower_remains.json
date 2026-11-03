@@ -1,0 +1,31 @@
+{
+  "title": "Ancient Tower Remains",
+  "description": [
+    "The <named>Eye of Chorus</named> is made of <magic>chorus fruit</magic> and leads to the <named>Ancient Tower Remains</named>. Three <keyword>Chorusling</keyword> spawners guard the ruins.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Око хоруса</named> делается из <magic>плодов хоруса</magic> и ведёт к <named>Руинам древней башни</named>. Руины охраняют три спаунера <keyword>хоруслингов</keyword>."
+  ],
+  "icon": "legendary_monsters:eye_of_chorus",
+  "x": 24,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_ascent"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "legendary_monsters:eye_of_chorus",
+      "type": "item"
+    },
+    {
+      "structure": "legendary_monsters:ancient_tower_remains",
+      "type": "location"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

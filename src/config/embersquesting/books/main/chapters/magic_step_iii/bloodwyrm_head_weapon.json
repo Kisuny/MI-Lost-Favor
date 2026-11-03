@@ -1,0 +1,30 @@
+{
+  "title": "Bloodwyrm Head Weapon",
+  "description": [
+    "A modified Ender Dragon Head from End Cities. Purely cosmetic on its own, no effects.",
+    "",
+    "Note: hints at a shared origin between the Ender Dragon and Bloodwyrms, but creating a true Bloodwyrm requires some additional element - the mechanism remains undiscovered.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Получается объединением False Bloodwyrm Head с Blood Feather и Born To Burn на кузнечном столе.",
+    "",
+    "Это оружие выпускает огонь перед игроком (заправляется Dragon Breath) и накладывает на жертв Flame Frailty - усиленную уязвимость к огню."
+  ],
+  "icon": "risus:bloodwyrm_head_weapon",
+  "x": 24.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/bloodwyrm_head"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "risus:bloodwyrm_head_weapon",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

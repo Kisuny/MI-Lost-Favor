@@ -1,0 +1,37 @@
+{
+  "title": "Item Locks",
+  "description": [
+    "<keyword>ItemLocks</keyword> allows you to <positive><pulse base=0.6 amplitude=1.0>lock</pulse></positive> item slots in your inventory, preventing you from moving items unwillingly.",
+    "",
+    "• Toggle lock on individual slots by holding <positive>LOCK</positive> (Default: C) and left clicking a slot.",
+    "",
+    "• Bypass a lock by holding <warning><shake amplitude=0.3 frequency=1.2>BYPASS</shake></warning> (Default: B) and interacting with a slot.",
+    "",
+    "• Making a slot empty while bypassing a lock does not remove the lock.",
+    "",
+    "• Empty slots with a lock are unlocked until it's occupied.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>ItemLocks</keyword> позволяет <positive><pulse base=0.6 amplitude=1.0>заблокировать</pulse></positive> слоты в инвентаре, чтобы случайно не сдвинуть предметы.",
+    "",
+    "• Переключить блокировку слота: зажать <positive>LOCK</positive> (по умолчанию: C) и кликнуть ЛКМ по слоту.",
+    "",
+    "• Обойти блокировку: зажать <warning><shake amplitude=0.3 frequency=1.2>BYPASS</shake></warning> (по умолчанию: B) и взаимодействовать со слотом.",
+    "",
+    "• Если опустошить слот в обход блокировки, сама блокировка не снимается.",
+    "",
+    "• Пустые слоты с блокировкой остаются разблокированными, пока в них что-то не положат."
+  ],
+  "icon": "ktnilcks:textures/gui/lock20.png",
+  "x": 8.65,
+  "y": 5.59,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Item Locks"
+    }
+  ],
+  "shape": "square"
+}

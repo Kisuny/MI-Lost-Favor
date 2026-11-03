@@ -1,0 +1,27 @@
+{
+  "title": "Belt Of The Magebane",
+  "description": [
+    "Normally, <property>Soul Ward</property> stops recovering for a while after you're hit. The <keyword>Belt of the Magebane</keyword> ends that downtime - it boosts <positive>Soul Ward recovery rate and capacity</positive>, and even absorbs the <warning>arcane essence</warning> of any magic damage you take, instantly converting it into Soul Ward recovery.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Обычно <property>Soul Ward</property> перестаёт восстанавливаться на время после получения удара. <keyword>Belt of the Magebane</keyword> убирает эту задержку - он увеличивает <positive>скорость восстановления и ёмкость Soul Ward</positive>, а также поглощает <warning>арканную сущность</warning> любого магического урона, мгновенно превращая её в восстановление Soul Ward."
+  ],
+  "icon": "malum:belt_of_the_magebane",
+  "x": 84,
+  "y": 15,
+  "deps": {
+    "all": [
+      "magic_step_ii/gilded_belt"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:belt_of_the_magebane",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

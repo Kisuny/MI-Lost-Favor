@@ -1,0 +1,32 @@
+{
+  "title": "Resonating Bell",
+  "description": [
+    "The <keyword>Resonating Bell</keyword> lets a tool <wave>ring through blocks</wave>: RMB a block and nearby blocks of the same type will <flame>light up</flame> - unless there are tons of them around.",
+    "",
+    "The search area grows with augment level. Perfect for finding ores.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Резонансный колокол</keyword> позволяет инструменту <wave>звенеть сквозь блоки</wave>: ПКМ по блоку, и такие же блоки поблизости <flame>подсветятся</flame> - если их вокруг не слишком много.",
+    "",
+    "Радиус поиска растёт с уровнем улучшения. Отлично подходит для поиска руд."
+  ],
+  "icon": "embers:resonating_bell",
+  "x": 15.5,
+  "y": 21.5,
+  "deps": {
+    "all": [
+      "rock_and_steam/q0083a8fb4eca2086",
+      "rock_and_steam/silver_aspectus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "embers:resonating_bell",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Basic Energy Input Hatch",
+  "icon": "modern_industrialization:basic_energy_input_hatch",
+  "x": 8.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "simple_machinery/machine_extender"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:basic_energy_input_hatch",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:machine_assembler_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

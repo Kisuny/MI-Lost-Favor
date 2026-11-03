@@ -1,0 +1,20 @@
+{
+  "title": "Ethereal Forging Charm",
+  "icon": "enigmaticlegacyplus:ethereal_forging_charm",
+  "x": 40,
+  "y": 18,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/earth_heart",
+      "when_dungeons_arise/etherium_ore",
+      "when_dungeons_arise/ender_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:ethereal_forging_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

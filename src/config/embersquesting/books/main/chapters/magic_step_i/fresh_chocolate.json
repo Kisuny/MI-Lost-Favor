@@ -1,0 +1,26 @@
+{
+  "title": "Fresh Chocolate",
+  "description": [
+    "What could be <c value=#FEECD6>better</c>§r than fresh chocolate? I don't know, do you? <glitch frequency=1.2 shiftChance=0.1>§0Damn it, the 4th wall is crumbling... You didn't see anything!§r</glitch>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Что может быть <c value=#FEECD6>лучше</c>§r шоколада? Я вот не знаю, а вы? <glitch frequency=1.2 shiftChance=0.1>§0Чёрт, 4я стена рушится… Вы ничего не видели!§r</glitch>"
+  ],
+  "icon": "spectrum:fresh_chocolate",
+  "x": 40.5,
+  "y": 53,
+  "deps": {
+    "all": [
+      "magic_step_i/titration_barrel"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:fresh_chocolate",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

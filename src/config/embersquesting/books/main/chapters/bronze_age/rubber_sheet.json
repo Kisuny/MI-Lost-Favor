@@ -1,0 +1,19 @@
+{
+  "title": "Rubber Sheet",
+  "icon": "modern_industrialization:rubber_sheet",
+  "x": 28,
+  "y": 19.5,
+  "deps": {
+    "any": [
+      "bronze_age/synthetic_oil_bucket",
+      "bronze_age/synthetic_rubber_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:rubber_sheet",
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

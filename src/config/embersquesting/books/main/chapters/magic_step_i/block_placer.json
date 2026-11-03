@@ -1,0 +1,26 @@
+{
+  "title": "Block Placer",
+  "description": [
+    "The title speaks for itself. This machine <positive>places blocks</positive> upon receiving a <warning>redstone pulse</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Название говорит само за себя - <positive>устанавливает блоки</positive> по <warning>импульсу редстоуна</warning>."
+  ],
+  "icon": "spectrum:block_placer",
+  "x": 24.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:block_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

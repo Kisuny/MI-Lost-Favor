@@ -1,0 +1,56 @@
+{
+  "title": "Bronze Plate",
+  "description": [
+    "New ore"
+  ],
+  "icon": "modern_industrialization:bronze_plate",
+  "x": 3.5,
+  "y": 1,
+  "deps": {
+    "all": [
+      "rock_and_steam/forge_hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:bronze_plate",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:bronze_ingot",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "New ore in world",
+      "id": "milf:milestone/bronze_plate",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_overworld",
+      "type": "item"
+    },
+    {
+      "title": "Hands Trinket slot",
+      "id": "milf:trinket/hands_bronze_plate",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "title": "Belt Trinket slot",
+      "id": "milf:trinket/belt_bronze_plate",
+      "type": "custom"
+    },
+    {
+      "title": "New gems in chests",
+      "id": "milf:stage/bronze_plate",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

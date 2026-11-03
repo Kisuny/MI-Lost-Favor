@@ -1,0 +1,28 @@
+{
+  "title": "Spell Crossbow",
+  "description": [
+    "The <keyword>Spell Crossbow</keyword> works like the Spell Bow, but the source cost is deducted when you load it rather than when you fire - if you have enough source, the loaded bolt applies your inscribed spell on hit. Augment Arrows can empower it too.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Арбалет заклинаний</keyword> работает как Лук заклинаний, но сурс списывается при заряжании, а не при выстреле - если сурса хватило, заряженный болт применяет вписанное заклинание при попадании. Стрелы-усилители тоже подходят."
+  ],
+  "icon": "ars_nouveau:spell_crossbow{\"minecraft:charged_projectiles\":[],\"minecraft:custom_data\":{isSpell:1b}}",
+  "x": 107,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/tools_and_equipment"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "ars_nouveau:spell_crossbow",
+      "components": "{\"minecraft:charged_projectiles\":[],\"minecraft:custom_data\":{isSpell:1b}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

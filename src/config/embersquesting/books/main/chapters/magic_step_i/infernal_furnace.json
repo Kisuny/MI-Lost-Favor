@@ -1,0 +1,47 @@
+{
+  "title": "Infernal Furnace",
+  "description": [
+    "To research it you must go <flame>somewhere really hot</flame>. The <fire>Infernal Furnace</fire> is a multiblock smelter that sometimes gives bonus output.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Для этого исследования нужно побывать <flame>там, где по-настоящему жарко</flame>. <fire>Адская печь</fire> - мультиблочная плавильня, которая иногда даёт дополнительный выход."
+  ],
+  "icon": "thaumaturge:infernal_furnace",
+  "x": 44.5,
+  "y": 30,
+  "deps": {
+    "all": [
+      "magic_step_i/goggles_revealing"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:infernal_furnace",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:obsidian",
+      "count": 12,
+      "type": "item"
+    },
+    {
+      "item": "minecraft:nether_bricks",
+      "count": 12,
+      "type": "item"
+    },
+    {
+      "item": "minecraft:iron_bars",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:lava_bucket",
+      "type": "item"
+    }
+  ],
+  "complete": {
+    "min": 4
+  },
+  "shape": "circle"
+}

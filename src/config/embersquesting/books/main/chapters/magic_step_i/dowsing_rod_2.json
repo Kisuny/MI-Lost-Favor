@@ -1,0 +1,21 @@
+{
+  "title": "Dowsing Rod",
+  "description": [
+    "Highlights geodes with bright lights, even through blocks. Most easy to see when looking down. The color of the light changes as you grow closer to the geode."
+  ],
+  "icon": "ars_nouveau:dowsing_rod",
+  "x": 17.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "magic_step_i/table_core"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:dowsing_rod",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

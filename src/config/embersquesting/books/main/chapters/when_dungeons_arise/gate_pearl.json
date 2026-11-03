@@ -1,0 +1,54 @@
+{
+  "title": "Gate Pearl",
+  "description": [
+    "Before you attempt to conquer this <magic>Gateway</magic>, we strongly recommend that you prepare yourself, put on your <keyword>best armor</keyword>, equip your <keyword>best weapons</keyword>, upgrade them, and stock up on some <keyword>potions</keyword> - the battle will be <warning><shake amplitude=0.35 frequency=1.2>truly challenging</shake></warning>!",
+    "",
+    "You’ll only get <warning><shake amplitude=0.35 frequency=1.2>three lives</shake></warning>, and you’ll have a <warning>limited amount of time</warning> to complete the level before the <magic>portal closes</magic> and you have to start over.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Перед тем как пытаться покорить этот <magic>Портал</magic> настоятельно рекомендуем подготовиться, надеть <keyword>самую лучшую броню</keyword> и взять <keyword>самое лучшее оружие</keyword>, перековать и сделать себе немного <keyword>зелий</keyword>, бой будет по истине <warning><shake amplitude=0.35 frequency=1.2>сложный</shake></warning>!",
+    "",
+    "Вы сможете умереть всего <warning><shake amplitude=0.35 frequency=1.2>3 раза</shake></warning>, а также у вас будет <warning>ограниченное время</warning> на прохождение, прежде чем <magic>портал закроется</magic> и вам придется начать всё сначала."
+  ],
+  "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:tiered/haven\"}",
+  "x": 18.5,
+  "y": 15,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/q0cc9329a82a7454a",
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "gateways:gate_pearl",
+      "components": "{\"gateways:gateway\":\"gateways:tiered/haven\"}",
+      "type": "item"
+    },
+    {
+      "advancement": "apotheosis:progression/frontier",
+      "criterion": "complete_haven_gate",
+      "type": "advancement",
+      "title": "Complete the Haven Gateway"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "New mobs",
+      "id": "milf:milestone/gate_pearl",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "title": "Simply Swords and Simply Bows in looting chests",
+      "id": "milf:stage/gate_pearl",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

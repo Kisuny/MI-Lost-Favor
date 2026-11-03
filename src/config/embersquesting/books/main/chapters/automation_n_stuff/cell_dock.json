@@ -1,0 +1,24 @@
+{
+  "title": "Cell Dock",
+  "icon": "megacells:cell_dock",
+  "x": 28,
+  "y": 21,
+  "deps": {
+    "all": [
+      "automation_n_stuff/fluid_storage_cell_1k",
+      "automation_n_stuff/item_storage_cell_1k"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "megacells:cell_dock",
+      "type": "item"
+    },
+    {
+      "item": "ae2:chest",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

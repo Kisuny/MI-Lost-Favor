@@ -1,0 +1,29 @@
+{
+  "title": "Bronze Bending Machine",
+  "description": [
+    "Bends things with <keyword>double the speed</keyword> of compressor!"
+  ],
+  "icon": "extended_industrialization:bronze_bending_machine",
+  "x": 11,
+  "y": 13,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:bronze_bending_machine",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:copper_ring",
+      "count": 13,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

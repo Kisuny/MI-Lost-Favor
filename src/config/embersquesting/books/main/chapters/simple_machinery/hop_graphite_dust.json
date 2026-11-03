@@ -1,0 +1,26 @@
+{
+  "title": "Hop Graphite Dust",
+  "icon": "modern_industrialization:hop_graphite_dust",
+  "x": 10.5,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "simple_machinery/centrifuge_block"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:hop_graphite_dust",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:coke_block",
+      "count": 7,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

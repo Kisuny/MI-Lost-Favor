@@ -1,0 +1,26 @@
+{
+  "title": "Sightshelf",
+  "description": [
+    "The <keyword>Shelf of Sight</keyword> doesn't boost level or power - instead it reveals extra enchantments that would otherwise stay hidden in the enchanting table's menu.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Shelf of Sight</keyword> не повышает уровень или силу - вместо этого открывает дополнительные зачарования, которые иначе останутся скрытыми в меню стола зачарований."
+  ],
+  "icon": "apothic_enchanting:sightshelf",
+  "x": 62,
+  "y": 56.5,
+  "deps": {
+    "all": [
+      "magic_step_i/infused_hellshelf"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apothic_enchanting:sightshelf",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

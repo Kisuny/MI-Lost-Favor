@@ -1,0 +1,26 @@
+{
+  "title": "Void Jar",
+  "description": [
+    "The <keyword>Void Jar</keyword> destroys items on pickup and grants a small amount of <property>source</property> in return. Sneak-use it to turn it on/off, and use an item in your off hand (or on the Scribe's Table with the jar on it) to set which item it consumes. It must be in your hotbar to work.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Void Jar</keyword> уничтожает подбираемые предметы и взамен даёт немного <property>сурса</property>. Используйте её с шифтом, чтобы включить/выключить, а предметом во второй руке (или на Столе писца с банкой на нём) задайте, какой предмет она поглощает. Банка должна лежать в хотбаре, чтобы работать."
+  ],
+  "icon": "ars_nouveau:void_jar",
+  "x": 125,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/magebloom_crop"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:void_jar",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

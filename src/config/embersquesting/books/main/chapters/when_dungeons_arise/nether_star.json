@@ -1,0 +1,23 @@
+{
+  "title": "Nether Star",
+  "icon": "cataclysm:witherite_ingot",
+  "x": 17,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/world_tier_summit"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "minecraft:nether_star",
+      "type": "item"
+    },
+    {
+      "advancement": "cataclysm:kill_harbinger",
+      "type": "advancement"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

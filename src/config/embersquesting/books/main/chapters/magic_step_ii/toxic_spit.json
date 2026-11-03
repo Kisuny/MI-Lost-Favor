@@ -1,0 +1,29 @@
+{
+  "title": "Toxic Spit",
+  "description": [
+    "Drops from a <poison>poisoned</poison> <keyword>llama</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Выпадает из <poison>отравленной</poison> <keyword>ламы</keyword>."
+  ],
+  "icon": "toxony:toxic_spit",
+  "x": 23.5,
+  "y": 39.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/any_scalpels"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:toxic_spit",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover",
+  "lines_out": "hover"
+}

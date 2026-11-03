@@ -1,0 +1,46 @@
+{
+  "title": "Tox Gauge",
+  "description": [
+    "To use the §5device§r, I simply hold it in my §ohand§r (or as a §lcharm§r on my person) and what will appear is a gauge that displays <keyword>useful information</keyword> about my bodies chemical composition. The <poison>toxicity</poison> gauge examines 3 important parts of my body. The <poison>toxins</poison>, my <property>tolerance</property>, and the §9thresholds§r I can reach!",
+    "",
+    "The §2green bar§r displays how much toxins are <poison>already in my system</poison>. Of course §oeating§r or §odrinking§r <poison>poisonous</poison> substances will increase this amount. And if my diet is poison-less, the toxins will very <poison>slowly dissipate</poison> from my body till none remains. But that isn't the goal is it?",
+    "",
+    "And as much as I want to §5experiment§r with my own chemical makeup, the <warning>flesh</warning> is weak and the body needs to adapt. The §5purple§r bar displays my bodily tolerance of toxin I can hold. Exceed this amount and there are §4dangerous§r consequences. I must make sure the §2green§r bar §4never reaches the apex of the purple§r.",
+    "",
+    "The <property>tolerance</property> is quite important. In order to be able to hold onto more <poison>toxins</poison>, this §5purple bar§r must increase. And to do that, the body must adapt to the <poison>poisonous substances</poison>. This means I must consume more to slowly build up that bar.",
+    "",
+    "If however, I were to intake a large amount of <poison>toxins</poison> that exceed my tolerance, then the skull indicator will turn <warning>red</warning>. This tells me <warning><shake amplitude=0.35 frequency=1.2>I must detox myself</shake></warning> as soon as possible as any §4extra bit of toxin will consume me§r, making any bit of my autonomy permanently removed. I can detox with §2regeneration potions§r or a §2golden apple§r!",
+    "",
+    "This §5device§r will help me greatly in my research to come. Especially when I review my research on §5ancient poison rituals§r and §2blends§r. I need to ensure I don't get too excited and keep this device on me at all times so I don't go over my limits. I have a feeling this device will evolve from being less of a precaution to a wonderful future prospect.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чтобы воспользоваться §5устройством§r, достаточно просто подержать его в §oруке§r (или в качестве §lбезделушке§r на себе), и на экране появится индикатор, отображающий <keyword>полезную информацию</keyword> о химическом составе моего тела. Прибор для определения <poison>токсичности</poison> исследует три важные части моего тела. <poison>Токсины</poison>, моя <property>переносимость</property> и §9порог§r, которого я могу достичь!",
+    "",
+    "§2Зеленая полоска§r показывает, сколько токсинов <poison>уже находится в моем организме</poison>. Конечно, употребление в §oпищу§r или §oпитье§r <poison>ядовитых веществ</poison> увеличит это количество. А если в моем рационе нет ядов, то токсины будут очень медленно выводиться из организма, пока их не останется совсем. Но ведь цель не в этом, не так ли?",
+    "",
+    "И как бы мне ни хотелось §5поэкспериментировать§r с собственным химическим составом, <warning>плоть</warning> слаба, а тело должно адаптироваться. §5Фиолетовая полоса§r показывает допустимое количество <poison>токсина</poison>, которое я могу выдержать в организме. Превышение этого количества §4чревато опасными последствиями§r. Я должен следить за тем, чтобы зеленая полоска §4никогда не достигала вершины фиолетовой§r.",
+    "",
+    "<property>Толерантность</property> очень важна. Для того чтобы организм мог удерживать больше <poison>токсинов</poison>, эта §5фиолетовая полоска§r должна увеличиваться. А для этого организм должен адаптироваться к <poison>ядовитым веществам</poison>. Это значит, что я должен потреблять больше, чтобы медленно наращивать эту планку.",
+    "",
+    "Если же я потребляю большое количество <poison>токсинов</poison>, превышающее мою толерантность, то индикатор черепа становится <warning>красным</warning>. Это говорит о том, что <warning><shake amplitude=0.35 frequency=1.2>я должен как можно скорее избавиться от токсинов</shake></warning>, так как любая лишняя капля токсина поглотит меня, навсегда лишив самостоятельности. Вывести токсины из организма можно с помощью §2зелий регенерации§r или §2золотого яблока§r!",
+    "",
+    "Этот §5прибор§r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать §5древние ритуалы§r и <poison>смеси ядов</poison>. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
+  ],
+  "icon": "toxony:tox_gauge",
+  "x": 24,
+  "y": 42,
+  "deps": {
+    "all": [
+      "magic_step_ii/poison_blend"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:tox_gauge",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

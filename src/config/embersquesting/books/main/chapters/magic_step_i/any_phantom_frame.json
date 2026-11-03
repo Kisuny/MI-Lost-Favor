@@ -1,0 +1,29 @@
+{
+  "title": "Any Phantom Frame",
+  "description": [
+    "Phantoms? Hate those guys",
+    "A <c value=#FEECD6>Phantom Frame</c>§r will become invisible once you insert an item into it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<c value=#FEECD6>Прозрачная рамка</c>§r позволяет класть в неё предметы, после того как предмет окажется в рамке - саму рамку видно не будет.",
+    "",
+    "§0Цыганские фокусы!§r"
+  ],
+  "x": 32,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_i/shimmerstone_gem"
+    ]
+  },
+  "tasks": [
+    {
+      "tag": "milf:phantom_frame",
+      "type": "item",
+      "title": "Any Phantom Frame"
+    }
+  ],
+  "shape": "diamond"
+}

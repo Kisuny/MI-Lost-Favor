@@ -1,0 +1,20 @@
+{
+  "title": "Altar Compass Key",
+  "icon": "netherman:altar_compass_key{\"minecraft:custom_data\":{HeadAltarMode:1b}}",
+  "x": 8,
+  "y": 17,
+  "deps": {
+    "all": [
+      "magic_step_iii/q6f01728fa447d081"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "netherman:altar_compass_key",
+      "components": "{\"minecraft:custom_data\":{HeadAltarMode:1b}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

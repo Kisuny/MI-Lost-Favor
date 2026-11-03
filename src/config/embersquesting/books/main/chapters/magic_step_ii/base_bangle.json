@@ -1,0 +1,26 @@
+{
+  "title": "Base Bangle",
+  "description": [
+    "This ring can be upgraded to other rings",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Данное кольцо можно улучшать в другие кольца"
+  ],
+  "icon": "ars_elemental:base_bangle",
+  "x": 103,
+  "y": 13,
+  "deps": {
+    "all": [
+      "magic_step_ii/ring_of_potential"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemental:base_bangle",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

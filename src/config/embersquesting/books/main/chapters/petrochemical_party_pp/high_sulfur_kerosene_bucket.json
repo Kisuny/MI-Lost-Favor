@@ -1,0 +1,24 @@
+{
+  "title": "High Sulfur Kerosene Bucket",
+  "icon": "milf:high_sulfur_kerosene_bucket",
+  "x": 17.5,
+  "y": 22,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/distillation_tower",
+      "petrochemical_party_pp/sulfuric_light_fuel_bucket",
+      "petrochemical_party_pp/sulfuric_heavy_fuel_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:high_sulfur_kerosene_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "diamond"
+}

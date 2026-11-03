@@ -1,0 +1,19 @@
+{
+  "title": "Mysterious Cube",
+  "icon": "ae2:mysterious_cube",
+  "x": 16.5,
+  "y": 10.5,
+  "deps": {
+    "all": [
+      "simple_machinery/grindingdisk",
+      "simple_machinery/arc_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ae2:mysterious_cube",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

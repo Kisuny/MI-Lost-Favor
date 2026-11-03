@@ -1,0 +1,40 @@
+{
+  "title": "Amethyst Golem Charm",
+  "description": [
+    "free gem farm",
+    "The golem can collect gems from <keyword>amethyst</keyword>, <keyword>topaz</keyword>, and <keyword>citrine</keyword> geodes! Even better, it can turn blocks of these gems and turn them into their budding variants!",
+    "",
+    "To make an Amethyst Golem, activate a Ritual of Awakening next to a Budding Amethyst Block.",
+    "",
+    "You can kill the <keyword>golem</keyword> to get back the <keyword>charm</keyword>, which will easily resummon it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Убей <keyword>голема</keyword>, чтобы получить <keyword>амулет</keyword>",
+    "",
+    "Голем может собирать гемы из <keyword>аметистовых</keyword>, <keyword>топазовых</keyword> и <keyword>цитриновых</keyword> жеод!"
+  ],
+  "icon": "ars_nouveau:amethyst_golem_charm",
+  "x": 21,
+  "y": 47.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ritual_awakening",
+      "magic_step_i/dominion_wand"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:amethyst_golem_charm",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:budding_amethyst",
+      "type": "observe",
+      "icon": "minecraft:budding_amethyst"
+    }
+  ],
+  "complete": "any",
+  "shape": "heart"
+}

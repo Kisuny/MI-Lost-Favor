@@ -1,0 +1,27 @@
+{
+  "title": "Lead Hoe",
+  "description": [
+    "Most crops need water to grow, as water is <warning>consumed and disappears</warning>, you'll need an <property>aqueduct</property> and <property>hydration system</property> to prevent the crops from using up the water.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Для роста большинства культур необходима вода, вода будет <warning>потребляться и исчезать</warning>, вам понадобится <property>система акведуков</property> и <property>гидрации</property>, чтобы культуры не потребляли воду."
+  ],
+  "icon": "ytech:lead_hoe",
+  "x": 14.5,
+  "y": 19.5,
+  "deps": {
+    "all": [
+      "first_steps/lead_hoe_head"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:lead_hoe",
+      "type": "item"
+    }
+  ],
+  "shape": "pentagon",
+  "size": 1.5
+}

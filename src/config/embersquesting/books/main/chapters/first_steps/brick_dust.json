@@ -1,0 +1,21 @@
+{
+  "title": "Brick Dust",
+  "description": [
+    "Combine the Stone Mortar and Pestle with a Brick in a crafting grid to make Brick Dust"
+  ],
+  "icon": "modern_industrialization:brick_dust",
+  "x": 19,
+  "y": 21,
+  "deps": {
+    "all": [
+      "first_steps/lead_hammer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:brick_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Alembic",
+  "description": [
+    "The Alembic. An old device in the academy that will help purify liquids similar to how the crucible purifies solids. However, they are fragile. In order for this to work, I need a stronger glassy material. I know one located in the Nether. I must find it!",
+    "",
+    "The alembic can refine weaker potions into their stronger variants without the need of additional material, purifying the liquid to a more concentrated form. Although this is not enough! The alembic has gotten them closer to binding with my paste, but its not pure enough.",
+    "",
+    "I think I can devise a solution that uses only the most concentrated form of Netherwart! To unlock what <poison>poison</poison> has to offer us! I've collected all my notes, stood through consecutive nights. My mind has been awake past dusk more times than I can count. With the glass vials and my <poison>toxic paste</poison>...",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Алембик. Старый прибор в академии, который помогает очищать жидкости подобно тому, как тигель очищает твердые тела. Однако они хрупкие. Чтобы он работал, мне нужен более прочный стеклообразный материал. Я знаю, что он находится в Аду. Я должен найти его!",
+    "",
+    "Алембик может перерабатывать слабые зелья в их более сильные варианты без использования дополнительных материалов. Очищая жидкость до более концентрированной формы. Хотя зелья недостаточно! Алембик приблизил их к связыванию с моей пастой, но оно недостаточно чистое.",
+    "",
+    "Думаю, я смогу придумать решение, в котором будет использована только самая концентрированная форма Бородавок! Чтобы открыть то, что может предложить нам <poison>яд</poison>! Я собрал все свои записи, простоял несколько ночей подряд. Мой разум бодрствовал до наступления сумерек больше раз, чем я могу сосчитать. Со стеклянными флаконами и <poison>ядовитой пастой</poison>..."
+  ],
+  "icon": "toxony:alembic",
+  "x": 28,
+  "y": 45,
+  "deps": {
+    "all": [
+      "magic_step_ii/toxin_canister"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:alembic",
+      "type": "item"
+    },
+    {
+      "item": "minecraft:blaze_powder",
+      "count": 4,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

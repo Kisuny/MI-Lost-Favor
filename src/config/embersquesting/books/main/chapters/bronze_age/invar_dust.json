@@ -1,0 +1,19 @@
+{
+  "title": "Invar Dust",
+  "icon": "modern_industrialization:invar_dust",
+  "x": 19.5,
+  "y": 11.5,
+  "deps": {
+    "any": [
+      "bronze_age/bronze_mixer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:invar_dust",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

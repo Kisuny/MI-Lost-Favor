@@ -1,0 +1,26 @@
+{
+  "title": "Transistor",
+  "icon": "modern_industrialization:transistor",
+  "x": 18.5,
+  "y": 6.5,
+  "deps": {
+    "all": [
+      "simple_machinery/silicone_modified_phenolic_resin_bucket"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:transistor",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "modern_industrialization:transistor",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "shape": "rsquare"
+}

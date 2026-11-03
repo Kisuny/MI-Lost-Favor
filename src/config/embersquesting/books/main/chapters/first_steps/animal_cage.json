@@ -1,0 +1,30 @@
+{
+  "title": "Animal Cage",
+  "description": [
+    "With an Animal Cage in hand, right click an animal to capture it. You can capture multiple of the same animal in a single cage. Right click with the cage on an Animal Pen to store and interact with them, or crouch + Right Click to let them go.",
+    "",
+    "Works for most land animals such as cows, pigs, sheep."
+  ],
+  "icon": "animal_pen:animal_cage",
+  "x": 35,
+  "y": 22,
+  "deps": {
+    "all": [
+      "first_steps/copper_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "animal_pen:animal_cage",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "patchouli:guide_book",
+      "components": "{\"patchouli:book\":\"animal_pen:guide_book\"}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

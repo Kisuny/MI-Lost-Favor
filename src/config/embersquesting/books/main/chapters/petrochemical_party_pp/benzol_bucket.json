@@ -1,0 +1,23 @@
+{
+  "title": "Benzol Bucket",
+  "icon": "immersivepetroleum:benzol_bucket",
+  "x": 13.5,
+  "y": 28.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/steam_cracker_3",
+      "petrochemical_party_pp/steam_cracker"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersivepetroleum:benzol_bucket",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

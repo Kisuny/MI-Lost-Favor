@@ -1,0 +1,25 @@
+{
+  "title": "Robot Auto Feeder",
+  "icon": "extended_industrialization:robot_auto_feeder",
+  "x": 21,
+  "y": 35.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/electric_canning_machine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "extended_industrialization:robot_auto_feeder",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Shoulders Trinket Slot",
+      "id": "milf:trinket/shoulders_robot_auto_feeder",
+      "type": "custom"
+    }
+  ],
+  "shape": "heart"
+}

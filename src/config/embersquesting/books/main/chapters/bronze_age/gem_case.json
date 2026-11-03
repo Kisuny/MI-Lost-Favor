@@ -1,0 +1,24 @@
+{
+  "title": "Gem Case",
+  "description": [
+    "Apotheosis Gems will very quickly take up a lot of your storage space. ",
+    "",
+    "The Gem Case fixes that by allowing you to stack these gems."
+  ],
+  "icon": "apotheosis:gem_case",
+  "x": 4,
+  "y": 25,
+  "deps": {
+    "all": [
+      "bronze_age/gem_cutting_table",
+      "bronze_age/salvaging_table"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "apotheosis:gem_case",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

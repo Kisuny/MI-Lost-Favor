@@ -1,0 +1,54 @@
+{
+  "title": "Plague Doctor Hood",
+  "description": [
+    "An outfit from a bygone age. Their style was very fitting in their time. With some minor improvements, I've made it coat me perfectly. Now, for the remaining parts.",
+    "",
+    "I must admit, my pants were the most tattered of all my attire. So having fresh leggings is a euphoric feeling. Otherwise, the breeze would have made my skin crawl and my nights freezing.",
+    "",
+    "To avoid having fungus feet, some nice pair of boots will be invaluable. Always a fresh pair, except these ones are already infused with my <poison>toxin</poison>. Almost feel like my feet are being cleansed by the fumes. Plus the pain.",
+    "",
+    "Finally, the centerpiece of the suit. The mask that personified the period. The Plague Mask. Although I've placed a convenient hood over it for days of rain. This mask will greatly benefit the sometimes overpowering <poison>toxins</poison>.",
+    "",
+    "The plague doctor outfit has a rather potent effect. When afflicted by a hazardous ailment such as slowness or blindness, the effect won't last as long. The amount of time the effect is reduced by depends on how many parts of the outfit I am wearing. It can even nullify the effect completely, if it's already applied for a very short span of time.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Наряд давно минувших времён. В своё время он был очень уместен. Несколько стяжков, и он сидит на мне идеально. Теперь к остальному.",
+    "",
+    "Должен признать, что брюки были самыми потрепанными из всего моего наряда. Поэтому обновка вызывает у меня приятное чувство. Иначе от дуновения ветерка у меня по коже бегали мурашки, а по ночам я мёрз как собака.",
+    "",
+    "Чтобы избежать появления грибка на ногах, пара хороших ботинок будет незаменима. Всегда свежая пара, за исключением того, что она пропитана <poison>токсином</poison>. Такое ощущение, будто мои ноги очищаются от испарений. Плюс боль.",
+    "",
+    "И наконец главная деталь костюма! Маска, олицетворявшая тот период, чумная маска. Я даже накинул на нее удобный капюшон на случай дождя. Но это не главное. Она поможет мне справиться, если я переборщу с <poison>токсинами</poison>.",
+    "",
+    "Костюм чумного доктора обладает довольно приятным дополнением. Время действия негативных эффектов снижается в зависимости от количества частей одежды на вас. Это может даже полностью свести эффект на нет."
+  ],
+  "icon": "toxony:plague_doctor_hood",
+  "x": 31,
+  "y": 38,
+  "deps": {
+    "all": [
+      "magic_step_ii/toxic_leather"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:plague_doctor_hood",
+      "type": "item"
+    },
+    {
+      "item": "toxony:plague_doctor_coat",
+      "type": "item"
+    },
+    {
+      "item": "toxony:plague_doctor_leggings",
+      "type": "item"
+    },
+    {
+      "item": "toxony:plague_doctor_boots",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

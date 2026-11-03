@@ -1,0 +1,33 @@
+{
+  "title": "So what's the point of all this?",
+  "description": [
+    "This is a simple example to help you understand how to <positive>assign labels</positive> and what the <keyword>mod syntax</keyword> is.",
+    "",
+    "This program will <positive>move items</positive> from the <keyword>barrel</keyword> to the <keyword>chest</keyword> every <keyword>20 ticks</keyword>(<keyword>1 second = 20 ticks</keyword>) if you've done everything correctly!",
+    "",
+    "We §l§2highly recommend§r§r that you check out this mod and start using it to automate tasks - it’s really convenient!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Это простой пример, чтобы вы поняли, как <positive>назначать метки</positive> и каков <keyword>синтаксис мода</keyword>.",
+    "",
+    "Эта программа будет <positive>перемещать предметы</positive> из <keyword>бочки</keyword> в <keyword>сундук</keyword> каждые <keyword>20 тиков</keyword> (<keyword>1 секунда = 20 тикам</keyword>), если вы все сделали правильно!",
+    "",
+    "Мы §l§2настоятельно рекомендуем§r§r вам познакомится с этим модом и начинать автоматизировать вещи с его помощью, это правда очень удобно!"
+  ],
+  "x": 6.5,
+  "y": 5.5,
+  "deps": {
+    "all": [
+      "simple_machinery/labelgun"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "So what's the point of all this?"
+    }
+  ],
+  "shape": "diamond"
+}

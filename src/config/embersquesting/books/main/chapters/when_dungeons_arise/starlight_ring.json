@@ -1,0 +1,19 @@
+{
+  "title": "Starlight Ring",
+  "icon": "enigmaticlegacyplus:starlight_ring",
+  "x": 37.5,
+  "y": 0.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/starlight_ingot",
+      "when_dungeons_arise/astral_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:starlight_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

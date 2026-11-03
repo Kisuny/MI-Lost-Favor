@@ -1,0 +1,27 @@
+{
+  "title": "Crystallarieum",
+  "description": [
+    "One of the most important blocks for further progression. Learn more about how to use it by reading the Spectrum book!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Один из важнейших блоков для дальнейшей прогрессии. Более подробные инструкции, как с ним взаимодействовать, можно прочитать в книге!"
+  ],
+  "icon": "spectrum:crystallarieum",
+  "x": 58,
+  "y": 41,
+  "deps": {
+    "all": [
+      "magic_step_ii/bismuth_crystal",
+      "magic_step_ii/pedestal_moonstone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:crystallarieum",
+      "type": "item"
+    }
+  ],
+  "shape": "gear"
+}

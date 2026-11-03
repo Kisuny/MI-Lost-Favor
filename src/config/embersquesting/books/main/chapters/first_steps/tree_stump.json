@@ -1,0 +1,33 @@
+{
+  "title": "Tree Stump",
+  "description": [
+    "Gives a <keyword>1 to 2 ratio</keyword> when chopping <keyword>logs into planks</keyword>, as opposed to the <keyword>1 to 1</keyword> in a crafting grid.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "При распиловке <keyword>брёвен на доски</keyword> дает соотношение <keyword>1 к 2</keyword>, в отличие от соотношения <keyword>1 к 1</keyword> в верстаке."
+  ],
+  "icon": "ytech:tree_stump",
+  "x": 11.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "first_steps/crafting_workspace",
+      "first_steps/cobblestone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:tree_stump",
+      "type": "item"
+    },
+    {
+      "block": "ytech:tree_stump",
+      "type": "observe",
+      "icon": "ytech:tree_stump"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

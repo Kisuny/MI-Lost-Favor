@@ -1,0 +1,22 @@
+{
+  "title": "Awakened Activation Crystal",
+  "description": [
+    "Required for all <property>Tier III rituals</property>, including <keyword>Breaching the Edge of Demon Realm</keyword>."
+  ],
+  "icon": "neovitae:activation_crystal_awakened",
+  "x": 61.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/tier_iv_altar"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:activation_crystal_awakened",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon",
+  "lines_out": "hover"
+}

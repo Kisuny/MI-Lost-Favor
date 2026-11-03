@@ -1,0 +1,19 @@
+{
+  "title": "Neptunium Axe",
+  "icon": "aquaculture:neptunium_axe",
+  "x": 39,
+  "y": 29,
+  "deps": {
+    "all": [
+      "first_steps/neptunium_ingot"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "aquaculture:neptunium_axe",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "diamond"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Void Fragment",
+  "description": [
+    "Required to craft the <keyword>Transmogrification Table</keyword>. Also allows you to make your items <keyword>invisible</keyword>!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Необходим для создания <keyword>стола трансформации</keyword>. Также позволяет сделать ваши предметы <keyword>невидимыми</keyword>!"
+  ],
+  "icon": "transmog:void_fragment",
+  "x": 41,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_i/attuned_stone"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "transmog:void_fragment",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

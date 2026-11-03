@@ -1,0 +1,38 @@
+{
+  "title": "Affinity Fusion Mix",
+  "description": [
+    "Alternatively, if I am struggling to find a certain affinity within an ingredient, I can instead FUSE other ones for a variable outcome. I can make a substance that will allow me to gain another affinity from three other poisonous materials. To do this I first must create the mix.",
+    "",
+    "Next, in order to purify the mix for total reconstruct, I must heat it up in a small contained source.",
+    "",
+    "Finally, with amalgamation of poisonous material, all I need to do is hold a magnifying glass and interact with the substance. With enough searching I can pinpoint an entirely new affinity associated with this ingredient. Because of the nature of the material, this inefficient method is the best I can manage if I am to remold an entirely new affinity.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "В качестве альтернативы, если я не могу найти определенную совместимость между ингредиентами, я могу вместо этого СОЕДИНИТЬ другие ингредиенты для получения переменного результата. Я могу создать вещество, которое позволит мне получить другую совместимость из трех других ядовитых материалов. Для этого я сначала должен создать смесь.",
+    "",
+    "Далее, чтобы очистить смесь для полной реконструкции, я должен нагреть ее в небольшом закрытом источнике.",
+    "",
+    "Наконец, после смешивания ядовитых веществ мне остается только взять лупу и поработать с веществом. При достаточном количестве поисков я могу обнаружить совершенно новую аффинность, связанную с этим ингредиентом. Из-за природы материала этот неэффективный метод - лучшее, что я могу сделать, если хочу создать совершенно новую аффинность."
+  ],
+  "icon": "toxony:affinity_fusion_mix",
+  "x": 30,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/more_plants"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:affinity_fusion_mix",
+      "type": "item"
+    },
+    {
+      "item": "toxony:affinity_unknown_substance",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Escape Rope",
+  "description": [
+    "A way to easily teleport your way out of caves"
+  ],
+  "icon": "gag:escape_rope",
+  "x": 26.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "first_steps/tin_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "gag:escape_rope",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "grimoireofgaia:box_overworld",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "heart"
+}

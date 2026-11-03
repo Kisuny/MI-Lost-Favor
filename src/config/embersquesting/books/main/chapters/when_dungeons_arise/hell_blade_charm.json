@@ -1,0 +1,28 @@
+{
+  "title": "Hell Blade Charm",
+  "description": [
+    "Can be found once per game by one player",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Можно найти 1 раз за игру 1 игроком",
+    "",
+    "Любой сундук в незере"
+  ],
+  "icon": "enigmaticlegacyplus:hell_blade_charm",
+  "x": 37.5,
+  "y": 17.5,
+  "deps": {
+    "all": [
+      "bronze_age/q4dd1404d1b9ca7f7"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enigmaticlegacyplus:hell_blade_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

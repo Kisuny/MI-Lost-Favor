@@ -1,0 +1,22 @@
+{
+  "title": "Cell Half",
+  "icon": "milf:cell_press",
+  "x": 23.5,
+  "y": 20,
+  "deps": {
+    "all": [
+      "automation_n_stuff/blueprint_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "milf:cell_half",
+      "type": "item"
+    },
+    {
+      "item": "milf:cell_press",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

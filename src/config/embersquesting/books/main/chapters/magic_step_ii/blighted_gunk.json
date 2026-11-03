@@ -1,0 +1,19 @@
+{
+  "title": "Blighted Gunk",
+  "icon": "malum:blighted_gunk",
+  "x": 83,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/soulwood_sapling"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:blighted_gunk",
+      "count": 6,
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

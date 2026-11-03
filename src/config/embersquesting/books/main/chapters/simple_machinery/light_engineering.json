@@ -1,0 +1,23 @@
+{
+  "title": "Light Engineering",
+  "icon": "immersiveengineering:light_engineering",
+  "x": 15.5,
+  "y": 18.5,
+  "deps": {
+    "all": [
+      "bronze_age/component_iron"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:light_engineering",
+      "type": "item"
+    },
+    {
+      "type": "checkmark"
+    }
+  ],
+  "optional": true,
+  "complete": "any",
+  "shape": "pentagon"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Target Designator",
+  "icon": "oritech:target_designator",
+  "x": 7.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/rangefinder",
+      "petrochemical_party/enderic_lens"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "oritech:target_designator",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

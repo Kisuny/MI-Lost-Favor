@@ -1,0 +1,19 @@
+{
+  "title": "Advanced Motor",
+  "icon": "modern_industrialization:advanced_motor",
+  "x": 9.5,
+  "y": 10,
+  "deps": {
+    "all": [
+      "aluminum/platinum_ingot",
+      "aluminum/annealed_copper_wire"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:advanced_motor",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

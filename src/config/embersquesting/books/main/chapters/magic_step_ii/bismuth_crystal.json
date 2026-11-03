@@ -1,0 +1,19 @@
+{
+  "title": "Bismuth Crystal",
+  "icon": "spectrum:bismuth_crystal",
+  "x": 51,
+  "y": 47,
+  "deps": {
+    "all": [
+      "magic_step_ii/bismuth_flake"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:bismuth_crystal",
+      "type": "item"
+    }
+  ],
+  "shape": "square",
+  "lines_out": "hover"
+}

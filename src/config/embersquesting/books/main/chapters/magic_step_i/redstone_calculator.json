@@ -1,0 +1,26 @@
+{
+  "title": "Redstone Calculator",
+  "description": [
+    "Performs simple <property>arithmetic operations</property> on input signals. <positive>Use RMB</positive> to change the operation.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Выполняет простые <property>арифметические операции</property> над входными сигналами. <positive>Используйте ПКМ</positive> для изменения операции."
+  ],
+  "icon": "spectrum:redstone_calculator",
+  "x": 21.5,
+  "y": 49.5,
+  "deps": {
+    "all": [
+      "magic_step_i/gather_some_gem_dust"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "spectrum:redstone_calculator",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

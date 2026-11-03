@@ -1,0 +1,28 @@
+{
+  "title": "Armor Quick Swap",
+  "description": [
+    "Now you can <positive>hot-swap armor</positive> by simply <positive>right-clicking</positive> it, or if you, <wiggle amplitude=0.5 frequency=1.0 phase=1.0>fancy pants</wiggle>, want to have the whole hat-check room of armor, you can <positive>sneak right-click</positive> an <keyword>armor stand</keyword> to hot-swap the whole set!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Теперь вы можете <positive>быстро сменить броню</positive>, просто <positive>кликнув ПКМ</positive> по ней, а если вы, <wiggle amplitude=0.5 frequency=1.0 phase=1.0>пижон эдакий</wiggle>, хотите устроить целую гардеробную из брони, можно <positive>зажать Shift и кликнуть ПКМ</positive> по <keyword>стойке для брони</keyword>, чтобы сменить весь комплект разом!"
+  ],
+  "icon": "minecraft:textures/item/armor_stand.png",
+  "x": 4.32,
+  "y": 13.95,
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Armor Quick Swap"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "minecraft:armor_stand",
+      "type": "item"
+    }
+  ],
+  "shape": "square"
+}

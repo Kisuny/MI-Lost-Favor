@@ -1,0 +1,26 @@
+{
+  "title": "Umbral Spirit",
+  "description": [
+    "<positive>Killing</positive> <keyword>villagers</keyword> or <keyword>players</keyword> there is a chance to drop this §l<property>spirit</property>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<positive>Убивая</positive> <keyword>жителей</keyword> или <keyword>игроков</keyword> есть шанс выбить эту §l<property>душу</property>"
+  ],
+  "icon": "malum:umbral_spirit",
+  "x": 82,
+  "y": 12,
+  "deps": {
+    "all": [
+      "magic_step_ii/veil_dagger"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "malum:umbral_spirit",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

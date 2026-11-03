@@ -1,0 +1,26 @@
+{
+  "title": "Deny Scroll",
+  "description": [
+    "The <keyword>Deny Scroll</keyword> works as a blacklist for your <keyword>Starbuncle</keyword> - opposite of the Allow Scroll, it will pick up and move any item that is NOT on the scroll's list.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Deny Scroll</keyword> работает как чёрный список для вашего <keyword>Старбанкла</keyword> - в отличие от Allow Scroll, он будет забирать и переносить любой предмет, которого НЕТ в списке свитка."
+  ],
+  "icon": "ars_nouveau:deny_scroll",
+  "x": 104.5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/starbuncle_charm"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_nouveau:deny_scroll",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

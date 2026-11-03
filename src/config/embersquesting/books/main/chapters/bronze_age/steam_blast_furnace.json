@@ -1,0 +1,34 @@
+{
+  "title": "Steam Blast Furnace",
+  "description": [
+    "Hot enough furnace to produce <keyword>steel</keyword>, as well as some <keyword>other useful resources</keyword>"
+  ],
+  "icon": "modern_industrialization:steam_blast_furnace",
+  "x": 10,
+  "y": 13,
+  "deps": {
+    "all": [
+      "bronze_age/wrench"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:steam_blast_furnace",
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:fire_clay_bricks",
+      "count": 32,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:steam_blast_furnace_placer",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "rsquare"
+}

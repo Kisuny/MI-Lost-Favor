@@ -1,0 +1,21 @@
+{
+  "title": "Elemancer Focus",
+  "icon": "ars_elemancy:elemancer_focus",
+  "x": 117.5,
+  "y": 32.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/earth_focus",
+      "magic_step_ii/air_focus",
+      "magic_step_ii/water_focus",
+      "magic_step_ii/fire_focus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ars_elemancy:elemancer_focus",
+      "type": "item"
+    }
+  ],
+  "shape": "octagon"
+}

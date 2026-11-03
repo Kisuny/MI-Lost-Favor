@@ -1,0 +1,20 @@
+{
+  "title": "Ferocious Glass Crest Bident",
+  "icon": "spectrum:ferocious_glass_crest_bident{\"minecraft:enchantments\":{levels:{\"minecraft:impaling\":6}}}",
+  "x": 66.5,
+  "y": 43,
+  "deps": {
+    "all": [
+      "magic_step_ii/malachite_bident"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "spectrum:ferocious_glass_crest_bident",
+      "components": "{\"minecraft:enchantments\":{levels:{\"minecraft:impaling\":6}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

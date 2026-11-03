@@ -1,0 +1,37 @@
+{
+  "title": "Mirecap",
+  "description": [
+    "Hold down the right mouse button + Shift key on the \"warped fungus\" or \"crimson fungus\"!",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Зажми правую кнопку мыши и шифт на warped fungus или Crimson fungus!"
+  ],
+  "icon": "eidolon_repraised:mirecap",
+  "x": 62.5,
+  "y": 18,
+  "deps": {
+    "all": [
+      "magic_step_ii/athame"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:mirecap",
+      "type": "item"
+    },
+    {
+      "block": "minecraft:crimson_fungus",
+      "type": "observe",
+      "icon": "minecraft:crimson_fungus"
+    },
+    {
+      "block": "minecraft:warped_fungus",
+      "type": "observe",
+      "icon": "minecraft:warped_fungus"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

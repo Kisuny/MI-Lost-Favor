@@ -1,0 +1,27 @@
+{
+  "title": "Chalice Filled",
+  "description": [
+    "§lChalice (Filled)§r:",
+    "• +2x Power Capacity"
+  ],
+  "icon": "enchanted:chalice_filled",
+  "x": 34.5,
+  "y": 35,
+  "deps": {
+    "all": [
+      "magic_step_i/chalice_2"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "enchanted:chalice_filled",
+      "type": "item"
+    },
+    {
+      "item": "enchanted:redstone_soup",
+      "type": "item"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Stone Wand",
+  "icon": "constructionwand:stone_wand{\"minecraft:custom_data\":{wand_options:{}}}",
+  "x": 19.5,
+  "y": 9.5,
+  "deps": {
+    "all": [
+      "first_steps/pet_rock"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "constructionwand:stone_wand",
+      "components": "{\"minecraft:custom_data\":{wand_options:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Deathbane Incense",
+  "icon": "eidolon_repraised:deathbane_incense",
+  "x": 80,
+  "y": 30,
+  "deps": {
+    "all": [
+      "magic_step_ii/oanna_bloom",
+      "magic_step_ii/holy_symbol"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:deathbane_incense",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Tube Oneway",
+  "description": [
+    "Accepts suction from <property>one direction only</property>, so essentia cannot flow back. The <aqua>blue markings</aqua> show the side suction is accepted from.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Принимает всасывание <property>только с одной стороны</property>, так что эссенция не потечёт обратно. <aqua>Синие метки</aqua> показывают сторону, с которой принимается всасывание."
+  ],
+  "icon": "thaumaturge:tube_oneway",
+  "x": 47,
+  "y": 20.5,
+  "deps": {
+    "all": [
+      "magic_step_i/tube"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "thaumaturge:tube_oneway",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

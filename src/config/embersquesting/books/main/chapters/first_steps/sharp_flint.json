@@ -1,0 +1,21 @@
+{
+  "title": "Sharp Flint",
+  "description": [
+    "Simply <positive>smash</positive> a piece of <keyword>flint</keyword> against a <keyword>stone</keyword> to sharpen it"
+  ],
+  "icon": "ytech:sharp_flint",
+  "x": 3,
+  "y": 7,
+  "deps": {
+    "all": [
+      "first_steps/flint"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:sharp_flint",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

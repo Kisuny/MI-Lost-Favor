@@ -1,0 +1,21 @@
+{
+  "title": "Sigil Water",
+  "description": [
+    "Allows you to conjure a water block for the cost of 100 EV out of your Anima reserves."
+  ],
+  "icon": "neovitae:sigil_water",
+  "x": 33.5,
+  "y": 3,
+  "deps": {
+    "all": [
+      "magic_step_iii/sigil_of_divination"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sigil_water",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

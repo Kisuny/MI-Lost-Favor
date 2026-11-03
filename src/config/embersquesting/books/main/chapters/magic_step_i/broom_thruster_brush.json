@@ -1,0 +1,24 @@
+{
+  "title": "Broom Thruster Brush",
+  "description": [
+    "Unreasonably fast? Maybe.",
+    "",
+    "TOO fast? Never."
+  ],
+  "icon": "hexerei:broom_thruster_brush",
+  "x": 28,
+  "y": 33,
+  "deps": {
+    "all": [
+      "magic_step_i/any_brooms",
+      "bronze_age/eco_engine"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "hexerei:broom_thruster_brush",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

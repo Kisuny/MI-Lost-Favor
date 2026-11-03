@@ -1,0 +1,28 @@
+{
+  "title": "Venom Tooth",
+  "description": [
+    "Drops from a <poison>poisoned</poison> <keyword>wolf</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Выпадает из <poison>отравленного</poison> <keyword>волка</keyword>."
+  ],
+  "icon": "toxony:venom_tooth",
+  "x": 23.5,
+  "y": 38.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/any_scalpels"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "toxony:venom_tooth",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

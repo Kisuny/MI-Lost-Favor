@@ -1,0 +1,26 @@
+{
+  "title": "Mind Shielding Plate",
+  "description": [
+    "Worn on the head, the <magic>Mind-Shielding Plate</magic> resists unwanted intrusions into your mind, grants <positive>immunity to nausea</positive>, and lets you retain three quarters of your levels on death.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Надетая на голову, <magic>Пластина защиты разума</magic> сопротивляется нежелательным вторжениям в ваш разум, даёт <positive>иммунитет к тошноте</positive> и позволяет сохранить три четверти уровней опыта при смерти."
+  ],
+  "icon": "eidolon_repraised:mind_shielding_plate",
+  "x": 63.5,
+  "y": 22.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/worktable"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "eidolon_repraised:mind_shielding_plate",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

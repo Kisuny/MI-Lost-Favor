@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 12,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "bronze_age/bronze_macerator"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "modern_industrialization:raw_nickel",
+      "type": "checkmark",
+      "title": "Nickel Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/nickel_ore",
+      "label": "Nickel Ore",
+      "icon": "modern_industrialization:nickel_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:raw_nickel\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 11.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "bronze_age/clunky_drill"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "minecraft:diamond",
+      "type": "checkmark",
+      "title": "Diamond Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/diamond_ore",
+      "label": "Diamond Ore",
+      "icon": "minecraft:diamond_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:diamond\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

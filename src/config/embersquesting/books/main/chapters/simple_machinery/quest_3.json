@@ -1,0 +1,34 @@
+{
+  "title": "",
+  "x": 17.5,
+  "y": 7.5,
+  "deps": {
+    "all": [
+      "petrochemical_party/mysterious_cube"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "modern_industrialization:raw_uranium",
+      "type": "checkmark",
+      "title": "Uranium Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/uranium_ore",
+      "label": "Uranium Ore",
+      "icon": "modern_industrialization:uranium_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:raw_uranium\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_out": "hover"
+}

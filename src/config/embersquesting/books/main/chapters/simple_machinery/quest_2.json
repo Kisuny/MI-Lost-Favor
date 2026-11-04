@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 13.5,
+  "y": 7,
+  "deps": {
+    "all": [
+      "simple_machinery/arc_furnace"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "modern_industrialization:bauxite_dust",
+      "type": "checkmark",
+      "title": "Bauxite Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/bauxite_ore",
+      "label": "Bauxite Ore",
+      "icon": "modern_industrialization:bauxite_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:bauxite_dust\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

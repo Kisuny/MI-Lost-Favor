@@ -9,8 +9,16 @@
     "Как обычная <keyword>шина экспорта</keyword>, только для эссенции: <aqua><wave>выталкивает</wave></aqua> эссенцию из сети в хранилище перед собой."
   ],
   "icon": "appliedthaumaturge:essentia_export_bus",
-  "x": 3,
-  "y": 5,
+  "x": 23.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/export_bus"
+    ]
+  },
+  "aliases": [
+    "petrochemical_party/essentia_export_bus"
+  ],
   "tasks": [
     {
       "item": "appliedthaumaturge:essentia_export_bus",

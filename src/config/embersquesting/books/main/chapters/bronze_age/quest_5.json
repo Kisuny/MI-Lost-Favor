@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 11,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "bronze_age/flint_and_steel"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "minecraft:quartz",
+      "type": "checkmark",
+      "title": "Nether Quartz Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/nether_quartz_ore",
+      "label": "Nether Quartz Ore",
+      "icon": "minecraft:nether_quartz_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:quartz\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -4,11 +4,12 @@
     ""
   ],
   "icon": "milf:grecall_concoction_t1",
-  "x": 11,
-  "y": 15.5,
+  "x": 23,
+  "y": 18.5,
   "deps": {
     "all": [
-      "bronze_age/steel_ingot"
+      "bronze_age/saltpeter_dust",
+      "bronze_age/steel_mixer"
     ]
   },
   "tasks": [
@@ -17,6 +18,5 @@
       "type": "item"
     }
   ],
-  "shape": "heart",
-  "size": 2.0
+  "shape": "heart"
 }

@@ -13,13 +13,11 @@
     "Работает и с <keyword>шинами хранения эссенции</keyword>, так что алтарь можно посадить на отдельную <property>подсеть</property>."
   ],
   "icon": "appliedthaumaturge:infusion_provider",
-  "x": 9,
-  "y": 5,
-  "deps": {
-    "all": [
-      "automation_n_stuff/interface"
-    ]
-  },
+  "x": 10.5,
+  "y": 3,
+  "aliases": [
+    "automation_n_stuff/infusion_provider"
+  ],
   "tasks": [
     {
       "item": "appliedthaumaturge:infusion_provider",

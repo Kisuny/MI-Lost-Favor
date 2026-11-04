@@ -1,11 +1,12 @@
 {
   "title": "Invar Dust",
   "icon": "modern_industrialization:invar_dust",
-  "x": 19.5,
-  "y": 11.5,
+  "x": 11,
+  "y": 14,
   "deps": {
-    "any": [
-      "bronze_age/bronze_mixer"
+    "all": [
+      "bronze_age/bronze_mixer",
+      "bronze_age/quest"
     ]
   },
   "tasks": [
@@ -14,6 +15,5 @@
       "type": "item"
     }
   ],
-  "shape": "diamond",
-  "lines_in": "hover"
+  "shape": "diamond"
 }

@@ -9,8 +9,16 @@
     "Как обычная <keyword>шина импорта</keyword>, только для эссенции: <aqua><wave>втягивает</wave></aqua> эссенцию из хранилища перед собой в сеть."
   ],
   "icon": "appliedthaumaturge:essentia_import_bus",
-  "x": 2,
-  "y": 5,
+  "x": 18.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/import_bus"
+    ]
+  },
+  "aliases": [
+    "petrochemical_party/essentia_import_bus"
+  ],
   "tasks": [
     {
       "item": "appliedthaumaturge:essentia_import_bus",

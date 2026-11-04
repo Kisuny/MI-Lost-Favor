@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 10.5,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "bronze_age/clunky_drill"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "minecraft:emerald",
+      "type": "checkmark",
+      "title": "Emerald Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/emerald_ore",
+      "label": "Emerald Ore",
+      "icon": "minecraft:emerald_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:emerald\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

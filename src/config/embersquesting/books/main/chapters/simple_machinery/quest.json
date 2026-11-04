@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 9.5,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "simple_machinery/blueprint_2"
+    ]
+  },
+  "tasks": [
+    {
+      "icon": "modern_industrialization:raw_antimony",
+      "type": "checkmark",
+      "title": "Antimony"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/antimony_ore",
+      "label": "Antibody Ore",
+      "icon": "modern_industrialization:antimony_ore",
+      "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:raw_antimony\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

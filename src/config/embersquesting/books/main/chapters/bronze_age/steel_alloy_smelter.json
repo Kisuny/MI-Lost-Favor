@@ -1,11 +1,11 @@
 {
   "title": "Steel Alloy Smelter",
   "icon": "extended_industrialization:steel_alloy_smelter",
-  "x": 21,
-  "y": 14.5,
+  "x": 28,
+  "y": 16,
   "deps": {
     "all": [
-      "bronze_age/steel_machine_bit"
+      "bronze_age/component_steel"
     ]
   },
   "tasks": [
@@ -14,6 +14,6 @@
       "type": "item"
     }
   ],
-  "shape": "square",
+  "shape": "heart",
   "lines_out": "hover"
 }

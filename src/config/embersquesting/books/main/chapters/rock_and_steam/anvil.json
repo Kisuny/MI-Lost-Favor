@@ -23,21 +23,23 @@
       "type": "item"
     },
     {
+      "icon": "minecraft:anvil",
       "block": "minecraft:anvil",
-      "type": "observe",
-      "icon": "minecraft:anvil"
+      "type": "observe"
     }
   ],
   "rewards": [
     {
       "team_reward": true,
-      "item": "grimoireofgaia:box_iron",
+      "item": "grimoireofgaia:box_hat",
       "type": "item"
     },
     {
       "team_reward": true,
-      "item": "grimoireofgaia:box_hat",
-      "type": "item"
+      "id": "milf:stage/iron_anvil",
+      "label": "New Stuff (‾◡◝)",
+      "icon": "minecraft:iron_pickaxe",
+      "type": "custom"
     }
   ],
   "complete": "any",

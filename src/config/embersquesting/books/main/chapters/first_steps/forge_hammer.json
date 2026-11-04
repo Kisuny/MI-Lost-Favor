@@ -28,18 +28,12 @@
       "type": "item"
     },
     {
+      "icon": "modern_industrialization:forge_hammer",
       "block": "modern_industrialization:forge_hammer",
-      "type": "observe",
-      "icon": "modern_industrialization:forge_hammer"
+      "type": "observe"
     }
   ],
   "rewards": [
-    {
-      "title": "Bronze Age",
-      "id": "milf:milestone/forge_hammer",
-      "type": "custom",
-      "auto": "claim"
-    },
     {
       "team_reward": true,
       "item": "grimoireofgaia:box_overworld",
@@ -53,10 +47,19 @@
     },
     {
       "id": "milf:radial/chunk_loaders",
+      "label": "Chunk Loaders Button",
       "type": "custom"
+    },
+    {
+      "team_reward": true,
+      "id": "milf:milestone/forge_hamme",
+      "label": "M-M-M-Monsters!?!?",
+      "icon": "spectrum:skeleton_horse_head",
+      "type": "custom",
+      "auto": "claim"
     }
   ],
-  "effect": "shader(embersquesting:ender, U_Color=#4a17da)",
+  "effect": "shader(embersquesting:smoke, U_Node=0.55, U_Speed=0.8, U_Density=0.7, U_Rise=0.4)",
   "complete": "any",
   "shape": "octagon",
   "size": 3.0

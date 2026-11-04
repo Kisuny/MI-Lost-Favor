@@ -20,27 +20,17 @@
   ],
   "rewards": [
     {
-      "title": "New items",
-      "id": "milf:stage/iron_ingot",
-      "type": "custom",
-      "auto": "claim"
-    },
-    {
-      "team_reward": true,
-      "item": "grimoireofgaia:box_iron",
-      "type": "item"
-    },
-    {
       "team_reward": true,
       "item": "grimoireofgaia:box_overworld",
       "count": 2,
       "type": "item"
     },
     {
-      "title": "New loot in looting chests",
+      "team_reward": true,
       "id": "milf:stage/iron_ingot_loot",
-      "type": "custom",
-      "auto": "claim"
+      "label": "Gnome OPS special delivery to chests around the world",
+      "icon": "relics:roller_skate",
+      "type": "custom"
     }
   ],
   "shape": "hexagon"

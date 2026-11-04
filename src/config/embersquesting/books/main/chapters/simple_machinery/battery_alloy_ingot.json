@@ -1,14 +1,16 @@
 {
   "title": "Battery Alloy Ingot",
   "icon": "modern_industrialization:battery_alloy_ingot",
-  "x": 18.5,
+  "x": 10,
   "y": 13,
   "deps": {
-    "any": [
-      "bronze_age/steel_alloy_smelter",
-      "bronze_age/battery_alloy_dust"
+    "all": [
+      "simple_machinery/quest"
     ]
   },
+  "aliases": [
+    "bronze_age/battery_alloy_ingot"
+  ],
   "tasks": [
     {
       "item": "modern_industrialization:battery_alloy_ingot",

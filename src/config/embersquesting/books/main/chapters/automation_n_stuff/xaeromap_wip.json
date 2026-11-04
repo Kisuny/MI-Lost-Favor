@@ -1,8 +1,13 @@
 {
   "title": "Xaeromap [WIP]",
   "icon": "xaerominimap:textures/mob_effect/no_cave_maps.png",
-  "x": 24.5,
-  "y": 26,
+  "x": 24,
+  "y": 26.5,
+  "deps": {
+    "all": [
+      "automation_n_stuff/augment_application_block"
+    ]
+  },
   "tasks": [
     {
       "type": "checkmark",
@@ -17,5 +22,6 @@
       "auto": "claim"
     }
   ],
-  "shape": "heart"
+  "shape": "heart",
+  "size": 1.5
 }

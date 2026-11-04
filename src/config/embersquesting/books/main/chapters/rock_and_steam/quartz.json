@@ -17,17 +17,16 @@
   "rewards": [
     {
       "team_reward": true,
-      "item": "milf:stone_nose",
-      "count": 3,
-      "components": "{\"minecraft:custom_data\":{oreId:\"minecraft:quartz\"}}",
-      "type": "item"
-    },
-    {
-      "team_reward": true,
       "id": "milf:stage/quartz_ore",
       "label": "Quartz Ore",
       "icon": "modern_industrialization:quartz_ore",
       "type": "custom"
+    },
+    {
+      "item": "milf:stone_nose",
+      "count": 3,
+      "components": "{\"minecraft:custom_data\":{oreId:\"modern_industrialization:quartz_crushed_dust\"}}",
+      "type": "item"
     }
   ],
   "shape": "rsquare"

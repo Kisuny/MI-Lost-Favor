@@ -17,13 +17,11 @@
     "Поиск по аспекту: <property>%ignis</property> покажет только предметы с <aqua>Ignis</aqua>. Работает только с <warning>открытыми</warning> аспектами."
   ],
   "icon": "appliedthaumaturge:arcane_terminal",
-  "x": 5.5,
-  "y": 4.5,
-  "deps": {
-    "all": [
-      "petrochemical_party/terminal"
-    ]
-  },
+  "x": 11,
+  "y": 5,
+  "aliases": [
+    "petrochemical_party/arcane_terminal"
+  ],
   "tasks": [
     {
       "item": "appliedthaumaturge:arcane_terminal",

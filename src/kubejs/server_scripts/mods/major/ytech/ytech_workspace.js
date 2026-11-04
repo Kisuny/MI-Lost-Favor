@@ -288,38 +288,6 @@ ServerEvents.recipes(event => {
     let builders = [ ]
 
     builders.push(
-        new WorkspaceRecipeBuilder("mi_tweaks:advanced_large_steam_furnace")
-            .top(plane => plane.corners("c").plus("C"))
-            .middle(plane => plane.corners("c").sides("C").center("f"))
-            .bottom(plane => plane.corners("c").plus("P"))
-            .setKey({
-                c: { item: "modern_industrialization:bronze_curved_plate" },
-                P: { item: "modern_industrialization:fire_clay_bricks" },
-                f: { item: "modern_industrialization:bronze_mi_furnace" },
-                C: { item: "modern_industrialization:bronze_machine_casing_pipe" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
-
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:large_steam_macerator")
-            .top(plane => plane.corners("c").plus("C"))
-            .middle(plane => plane.corners("c").sides("C").center("f"))
-            .bottom(plane => plane.corners("c").plus("P"))
-            .setKey({
-                c: { item: "modern_industrialization:bronze_curved_plate" },
-                P: { item: "modern_industrialization:bronze_plated_bricks" },
-                f: { item: "modern_industrialization:bronze_macerator" },
-                C: { item: "modern_industrialization:bronze_machine_casing_pipe" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
-
-    builders.push(
         new WorkspaceRecipeBuilder("modern_industrialization:large_steam_boiler")
             .top(plane => plane.corners("c").plus("C").center("a"))
             .middle(plane => plane.corners("c").sides("C").center("f"))
@@ -371,38 +339,6 @@ ServerEvents.recipes(event => {
             })
             .setArgs({
                 tool: { item: "immersiveengineering:hammer" },
-            })
-    )
-
-    builders.push(
-        new WorkspaceRecipeBuilder("mi_tweaks:advanced_steam_alloy_smelter")
-            .top(plane => plane.center("S").corners("R").sides("P"))
-            .middle(plane => plane.sides("S").corners("R").center("C"))
-            .bottom(plane => plane.center("S").corners("R").sides("P"))
-            .setKey({
-                S: { item: "modern_industrialization:fire_clay_bricks" },
-                R: { item: "modern_industrialization:steel_rod" },
-                P: { item: "modern_industrialization:steel_plate" },
-                C: { item: "extended_industrialization:steel_alloy_smelter" }
-            })
-            .setArgs({
-                tool: wrench
-            })
-    )
-
-    builders.push(
-        new WorkspaceRecipeBuilder("mi_tweaks:advanced_steam_blast_furnace")
-            .top(plane => plane.center("S").corners("R").sides("P"))
-            .middle(plane => plane.sides("S").corners("R").center("C"))
-            .bottom(plane => plane.center("S").corners("R").sides("P"))
-            .setKey({
-                S: { item: "modern_industrialization:fire_clay_bricks" },
-                R: { item: "modern_industrialization:steel_rod" },
-                P: { item: "modern_industrialization:steel_plate" },
-                C: { item: "modern_industrialization:steam_blast_furnace" }
-            })
-            .setArgs({
-                tool: wrench
             })
     )
 

@@ -15,6 +15,8 @@ global.disabledItems = [
     new DisabledItemBuilder("modern_industrialization:diamond_hammer"),
     new DisabledItemBuilder("modern_industrialization:iron_barrel"),
     new DisabledItemBuilder("modern_industrialization:iron_tank"),
+    new DisabledItemBuilder("extended_industrialization:large_steam_macerator"),
+
     //#endregion
 
     //#region Oritech
@@ -105,6 +107,8 @@ global.disabledItems = [
     new DisabledItemBuilder("oritech:framed_item_pipe"),
     new DisabledItemBuilder("oritech:item_pipe_duct_block"),
     new DisabledItemBuilder("oritech:pipe_booster_block"),
+    new DisabledItemBuilder("oritech:basic_generator_block"),
+    new DisabledItemBuilder("oritech:powered_furnace_block"),
 
     new DisabledItemBuilder(/oritech:raw_(?!biopolymer\b)(\w+)\b/),
     new DisabledItemBuilder(/oritech:\w+_clump/),

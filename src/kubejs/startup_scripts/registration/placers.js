@@ -324,13 +324,13 @@ registerPlacer("chemical_plant", "modern_industrialization", {
 //#endregion
 
 //#region mi_tweaks
-registerPlacer("advanced_steam_blast_furnace", "mi_tweaks", {
-    langSuffix: { ru_ru: "улучшенной паровой доменной печи" }
-})
+// registerPlacer("advanced_steam_blast_furnace", "mi_tweaks", {
+//     langSuffix: { ru_ru: "улучшенной паровой доменной печи" }
+// })
 
-registerPlacer("advanced_steam_alloy_smelter", "mi_tweaks", {
-    langSuffix: { ru_ru: "улучшенной паровой плавильни сплавов" }
-})
+// registerPlacer("advanced_steam_alloy_smelter", "mi_tweaks", {
+//     langSuffix: { ru_ru: "улучшенной паровой плавильни сплавов" }
+// })
 
 registerPlacer("machine_assembler", "mi_tweaks", {
     activeMachineShape: 0,
@@ -343,9 +343,9 @@ registerPlacer("machine_assembler_shape_1", "mi_tweaks", {
     langPrefix: { en_us: "Advanced Machine Assembler" }
 })
 
-registerPlacer("advanced_large_steam_furnace", "mi_tweaks", {
-    langSuffix: { ru_ru: "улучшенной большой паровой печи" }
-})
+// registerPlacer("advanced_large_steam_furnace", "mi_tweaks", {
+//     langSuffix: { ru_ru: "улучшенной большой паровой печи" }
+// })
 
 registerPlacer("multiblock_packer_3000_safety_regulations_edition", "mi_tweaks", {
     langPrefix: { en_us: "Multiblock Packer 3000" },

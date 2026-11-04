@@ -250,7 +250,7 @@ let machinesForMITweaksTierCompat = new $HashSet(
 )
 
 let miMachinesCompat = {
-    "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
+    //"extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
 }
 
 ServerEvents.recipes(event => {
@@ -973,6 +973,40 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "BLB",
+            "RpR",
+            "BCB"
+        ],
+        key: {
+            C: { item: "milf:bronze_mechanical_component" },
+            B: { item: "minecraft:bricks" },
+            R: { item: "modern_industrialization:invar_plate" },
+            L: { item: "modern_industrialization:invar_large_plate" },
+            p: { item: "minecraft:furnace" },
+        },
+        outputItems: [[{ id: "modern_industrialization:coke_oven" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BLB",
+            "RpR",
+            "BCB"
+        ],
+        key: {
+            C: { item: "milf:bronze_mechanical_component" },
+            B: { item: "modern_industrialization:fire_clay_bricks" },
+            R: { item: "modern_industrialization:invar_plate" },
+            L: { item: "modern_industrialization:invar_large_plate" },
+            p: { item: "minecraft:furnace" },
+        },
+        outputItems: [[{ id: "modern_industrialization:steam_blast_furnace" }, 1]],
+        removeRecipe: true
+    })
+
     //#endregion
 
     //#region ember powered
@@ -1261,28 +1295,6 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region chisel
-
-    milfChiselHitRecipe(event, {
-        inputItems: [
-            [{ item: "minecraft:bricks" }]
-        ],
-        outputItems: [
-            [{ id: "minecraft:brick" }, 1],
-            [{ id: "modern_industrialization:coke_oven" }],
-        ],
-        removeRecipe: true
-    })
-
-    milfChiselHitRecipe(event, {
-        inputItems: [
-            [{ item: "modern_industrialization:fire_clay_bricks" }]
-        ],
-        outputItems: [
-            [{ id: "modern_industrialization:fire_clay_brick" }, 1],
-            [{ id: "modern_industrialization:steam_blast_furnace" }],
-        ],
-        removeRecipe: true
-    })
 
     //#endregion
 

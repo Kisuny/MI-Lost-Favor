@@ -14,11 +14,6 @@ const lootRestrictions = [
         ]
     },
     {
-        stage: 'iron_tools_and_armors_everywhere',
-        everywhere: true,
-        items: ['minecraft:iron_shovel', 'minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_hoe', 'minecraft:iron_sword', 'minecraft:iron_helmet', 'minecraft:iron_chestplate', 'minecraft:iron_leggings', 'minecraft:iron_boots']
-    },
-    {
         stage: 'diamond_tools_and_armors_everywhere',
         everywhere: true,
         items: ['minecraft:diamond_shovel', 'minecraft:diamond_pickaxe', 'minecraft:diamond_axe', 'minecraft:diamond_hoe', 'minecraft:diamond_sword', 'minecraft:diamond_helmet', 'minecraft:diamond_chestplate', 'minecraft:diamond_leggings', 'minecraft:diamond_boots']
@@ -48,16 +43,6 @@ const lootRestrictions = [
         stage: 'netherite_scrap_everywhere',
         everywhere: true,
         items: ['minecraft:netherite_scrap', 'minecraft:ancient_debris', 'minecraft:netherite_ingot'],
-    },
-    {
-        stage: 'bucket_everywhere',
-        everywhere: true,
-        tags: 'c:buckets',
-    },
-    {
-        stage: 'anvils_everywhere',
-        everywhere: true,
-        items: ["minecraft:anvil", "minecraft:damaged_anvil", "minecraft:chipped_anvil"]
     },
     // diamonds/emeralds/lapis etc
     {

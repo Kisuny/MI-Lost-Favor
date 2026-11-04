@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "x": 5,
+  "y": -1,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_plate"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "ytech:iron_saw_blade",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/stonecutter",
+      "label": "Stonecutter",
+      "icon": "minecraft:stonecutter",
+      "type": "custom"
+    }
+  ]
+}

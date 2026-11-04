@@ -470,6 +470,19 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "P P",
+            "p p",
+            "IpI"
+        ],
+        key: {
+            P: { item: "modern_industrialization:iron_plate" }
+        },
+        outputItems: [[{ id: "minecraft:cauldron" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "P P",
             " P ",
             "   "
         ],

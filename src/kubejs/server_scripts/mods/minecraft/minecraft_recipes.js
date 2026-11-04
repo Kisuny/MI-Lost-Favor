@@ -470,8 +470,8 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             "P P",
-            "p p",
-            "IpI"
+            "P P",
+            "PPP"
         ],
         key: {
             P: { item: "modern_industrialization:iron_plate" }

@@ -46,6 +46,14 @@ ServerEvents.tags('item', event => {
     event.add("c:crushed_ores/tin", "milf:crushed_tin")
     event.add("c:crushed_ores/gold", "milf:crushed_gold")
 
+    event.add("c:crushed_ores", [
+        "milf:crushed_copper", 
+        "milf:crushed_iron", 
+        "milf:crushed_lead", 
+        "milf:crushed_tin", 
+        "milf:crushed_gold"
+    ])
+
 
     event.add("milf:chisels", "#c:files")
 

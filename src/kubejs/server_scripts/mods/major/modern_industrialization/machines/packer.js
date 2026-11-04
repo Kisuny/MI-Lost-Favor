@@ -138,13 +138,4 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "minecraft:leather" }]]
     })
 
-    // miMachineRecipe(event, {
-    //     energy: 2, time: 100, machine: "modern_industrialization:packer",
-    //     inputItems: [
-    //         [{ item: "modern_industrialization:coal_dust" }, 1],
-    //         [{ item: "modern_industrialization:bronze_machine_casing" }, 1]
-    //     ],
-    //     outputItems: [[{ item: "moderndynamics:machine_extender" }, 1]]
-    // })
-
 })

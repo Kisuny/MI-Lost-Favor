@@ -15,6 +15,11 @@
   "icon": "embers:item_vacuum",
   "x": 7,
   "y": 10,
+  "deps": {
+    "all": [
+      "simple_machinery/factory_vent_fan"
+    ]
+  },
   "tasks": [
     {
       "item": "embers:item_vacuum",

@@ -34,23 +34,5 @@ function ytechBlockHitCraft(event, args){
 
 ServerEvents.recipes(event => {
 
-    // ytechBlockHitCraft(event,{
-    //     inputItems:[[{tag:"c:cobblestones"}]],
-    //     outputItems:[[{id:"ytech:pebble"}, 2]],
-    //     block:{tag : "c:stones"}
-    // })
 
-    // ytechBlockHitCraft(event,{
-    //     inputItems:[[{item:"minecraft:nether_bricks"}]],
-    //     outputItems:[[{id:"minecraft:nether_brick"}, 4]],
-    //     block:{tag : "c:stones"}
-    // })
-
-    // ytechBlockHitCraft(event, {
-    //         inputItems:[[{item:"modern_industrialization:bronze_machine_casing"}]],
-    //         outputItems:[[{id:"moderndynamics:machine_extender"}, 1]],
-    //         block:{tag : "c:storage_blocks/coal"},
-    //         removeRecipe:true,
-    //         compatOff:true
-    // })
 })

@@ -1,7 +1,7 @@
 {
   "title": "Forge Hammer",
   "x": 5,
-  "y": 1.5,
+  "y": 0.5,
   "deps": {
     "all": [
       "first_steps/forge_hammer"
@@ -11,6 +11,15 @@
     {
       "type": "checkmark",
       "title": "Forge Hammer"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/metal_blocks",
+      "label": "Metal Blocks",
+      "icon": "minecraft:iron_block",
+      "type": "custom"
     }
   ],
   "shape": "circle"

@@ -2,7 +2,6 @@
   "title": "Iron Plate",
   "icon": "modern_industrialization:iron_plate",
   "x": 6.5,
-  "y": 1,
   "deps": {
     "all": [
       "rock_and_steam/forge_hammer"
@@ -12,6 +11,15 @@
     {
       "item": "modern_industrialization:iron_plate",
       "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/mixing_cauldron",
+      "label": "Mixing Cauldron",
+      "icon": "hexerei:mixing_cauldron",
+      "type": "custom"
     }
   ],
   "shape": "circle"

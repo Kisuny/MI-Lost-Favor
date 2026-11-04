@@ -2837,8 +2837,8 @@ ServerEvents.recipes(event => {
             "PPP",
         ],
         key: {
-            "W": { "item": "modern_industrialization:copper_wire" },
-            "C": { "item": "embers:ember_crystal_cluster" },
+            "W": { "item": "modern_industrialization:dawnstone_rod" },
+            "C": { "item": "mi_tweaks:ember_powered_mi_furnace" },
             "D": { "item": "modern_industrialization:iron_double_ingot" },
             "P": { "item": "embers:caminite_bricks" },
 

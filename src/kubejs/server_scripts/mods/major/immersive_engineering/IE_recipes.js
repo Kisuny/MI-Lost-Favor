@@ -131,6 +131,24 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    ieShapedFluid(event, {
+        pattern: [
+            "RRR",
+            "RCR",
+            "RRR"
+        ],
+        key: {
+            R: { tag: "modern_industrialization:steel_rod" },
+            C: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 1000,
+                fluid: "immersiveengineering:concrete"
+            }
+        },
+        outputItems: [[{ id: "immersiveengineering:concrete_reinforced" }, 2]],
+        removeRecipe: true
+    })
+
 
     //#endregion
 
@@ -313,20 +331,20 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    milfShaped(event, {
-        pattern: [
-            "NFN",
-            "FMF",
-            "NFN"
-        ],
-        key: {
-            M: { item: "minecraft:magma_block" },
-            N: { item: "minecraft:nether_brick" },
-            F: { item: "modern_industrialization:fire_clay_brick" },
-        },
-        outputItems: [[{ id: "immersiveengineering:blastbrick" }, 3]],
-        removeRecipe: true
-    })
+    // milfShaped(event, {
+    //     pattern: [
+    //         "NFN",
+    //         "FMF",
+    //         "NFN"
+    //     ],
+    //     key: {
+    //         M: { item: "minecraft:magma_block" },
+    //         N: { item: "minecraft:nether_brick" },
+    //         F: { item: "modern_industrialization:fire_clay_brick" },
+    //     },
+    //     outputItems: [[{ id: "immersiveengineering:blastbrick" }, 3]],
+    //     removeRecipe: true
+    // })
 
     milfShaped(event, {
         pattern: [
@@ -596,18 +614,18 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    milfShaped(event, {
-        pattern: [
-            "NF",
-            "FN",
-        ],
-        key: {
-            N: { item: "minecraft:nether_brick" },
-            F: { item: "modern_industrialization:fire_clay_brick" }
-        },
-        outputItems: [[{ id: "immersiveengineering:alloybrick" }, 2]],
-        removeRecipe: true
-    })
+    // milfShaped(event, {
+    //     pattern: [
+    //         "NF",
+    //         "FN",
+    //     ],
+    //     key: {
+    //         N: { item: "minecraft:nether_brick" },
+    //         F: { item: "modern_industrialization:fire_clay_brick" }
+    //     },
+    //     outputItems: [[{ id: "immersiveengineering:alloybrick" }, 2]],
+    //     removeRecipe: true
+    // })
 
     milfShaped(event, {
         pattern: [

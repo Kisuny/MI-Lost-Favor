@@ -27,6 +27,10 @@ ServerEvents.tags('item', event => {
 
     event.add("c:hammers", ['milf:stone_hammer',])
 
+    global.oresWithSamples.forEach(entry => {
+        event.add(`milf:t${entry.oreTier}_raw_materaials`, entry.oreData.raw)
+    })
+
     const hammers = [
         'grimoireofgaia:minotaur_hammer',  
         'immersiveengineering:hammer', 

@@ -150,9 +150,9 @@ LootJS.modifiers(event => {
             })
     })
 
-    event.addTableModifier("spectrum:chests/ruined_pedestal_stone").addLoot("milf:old_tablet")
-    event.addTableModifier("spectrum:chests/ruined_pedestal_deepslate").addLoot("milf:old_tablet")
-    event.addTableModifier("spectrum:chests/ancient_ruins_main").addLoot("milf:old_diary").setCount([1, 1])
-    event.addTableModifier("spectrum:chests/city_below/moonstone_temple_roof_ridge").addLoot("milf:holy_book_of_color").setCount([1, 1])
+    // event.addTableModifier("spectrum:chests/ruined_pedestal_stone").addLoot("milf:old_tablet")
+    // event.addTableModifier("spectrum:chests/ruined_pedestal_deepslate").addLoot("milf:old_tablet")
+    // event.addTableModifier("spectrum:chests/ancient_ruins_main").addLoot("milf:old_diary").setCount([1, 1])
+    // event.addTableModifier("spectrum:chests/city_below/moonstone_temple_roof_ridge").addLoot("milf:holy_book_of_color").setCount([1, 1])
 
 })

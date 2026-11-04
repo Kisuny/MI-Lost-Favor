@@ -955,6 +955,38 @@ ServerEvents.recipes(event => {
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
+            [{ item: "ae2:import_bus" }, 1],
+            [{ item: "thaumaturge:tube" }, 1],
+            [{ item: "thaumaturge:salis_mundus" }, 2]
+        ],
+        outputItems: [
+            [{ item: "appliedthaumaturge:essentia_import_bus" }, 1]
+        ],
+        requiredDisk: { item: MILF_BLUEPRINTS.getDisk.tier2AE },
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "ae2:export_bus" }, 1],
+            [{ item: "thaumaturge:tube" }, 1],
+            [{ item: "thaumaturge:salis_mundus" }, 2]
+        ],
+        outputItems: [
+            [{ item: "appliedthaumaturge:essentia_export_bus" }, 1]
+        ],
+        requiredDisk: { item: MILF_BLUEPRINTS.getDisk.tier2AE },
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
             [{ item: "modern_industrialization:plastic_plate"}, 2],
             [{item: "ae2:fluix_glass_cable"}, 1],
             [{item: "milf:basic_motor"}, 1]

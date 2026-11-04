@@ -114,3 +114,9 @@ ServerEvents.recipes(event => {
     });
 
 })
+
+milfDisableRecipesById([
+    "gateways:basic/slime",
+    "gateways:basic/enderman",
+    "gateways:basic/blaze"
+])

@@ -9,3 +9,37 @@
 .eq_list_row.eq_selected {
   background: sdf($(accent@58), $(radius), 1, $(accent));
 }
+
+.eq_list_divider, #eq_root.eq_layout_log .eq_list_divider {
+  background: rect($(divider));
+}
+
+#eq_progress {
+  background: rect($(border));
+}
+
+.eq_list_row.eq_locked .eq_list_title, .eq_list_row.eq_unknown .eq_list_title, .eq_list_row.eq_locked .eq_list_status, .eq_list_row.eq_unknown .eq_list_status, .eq_list_empty {
+  text-color: $(text_dim);
+}
+
+.eq_list_row.eq_in_progress .eq_list_status {
+  text-color: $(node_started_outline);
+}
+
+.eq_list_row.eq_completed .eq_list_status, .eq_list_row.eq_claimed .eq_list_status {
+  text-color: $(success);
+}
+
+.eq_list_row.eq_failed .eq_list_title, .eq_list_row.eq_failed .eq_list_status {
+  text-color: $(danger);
+}
+
+.__scroller_scroll_container__ {
+  background: sdf($(field), 2);
+}
+
+scroller-horizontal .__scroller_scroll_bar__, scroller-vertical .__scroller_scroll_bar__ {
+  base-background: sdf($(raised), 2, 1, $(border));
+  hover-background: sdf($(raised_hover), 2, 1, $(accent));
+  pressed-background: sdf($(raised_pressed), 2, 1, $(accent_pressed));
+}

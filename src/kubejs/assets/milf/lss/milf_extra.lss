@@ -1,8 +1,18 @@
 #eq_header {
-  background: sdf(#211e2b, 0);
+  background: sdf(#1c1926, 0);
 }
 
 #eq_title {
+  text-color: #ffffff;
+}
+
+#eq_chapters .eq_chapter.eq_selected {
+  base-background: sdf($(row_selected), 2, 1, $(accent));
+  hover-background: sdf($(row_selected), 2, 1, $(accent_hover));
+  pressed-background: sdf($(row_selected), 2, 1, $(accent_pressed));
+}
+
+#eq_chapters .eq_chapter.eq_selected .__button_text__ {
   text-color: #ffffff;
 }
 

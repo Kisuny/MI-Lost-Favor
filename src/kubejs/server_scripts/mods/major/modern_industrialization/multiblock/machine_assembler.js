@@ -518,6 +518,33 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
         inputItems: [
+            [{ "item": "modern_industrialization:mv_storage_unit" }, 2],
+            [{ "item": "modern_industrialization:cupronickel_wire_magnetic" }, 16],
+            [{ "item": "modern_industrialization:electrum_cable" }, 4],
+            [{ "item": "oritech:flux_gate" }, 2],
+            [{ "item": "minecraft:elytra" }, 1],
+            [{ "item": "modern_industrialization:steel_machine_casing" }, 1],
+        ],
+        outputItems: [[{ "item": "yet_another_industrialization:flight_pylon" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:hv_storage_unit" }, 2],
+            [{ "item": "devices:orichalcum_coin" }, 2],
+            [{ "item": "modern_industrialization:aluminum_cable" }, 4],
+            [{ "item": "ae2:engineering_processor" }, 2],
+            [{ "item": "modern_industrialization:steel_machine_casing" }, 1],
+        ],
+        outputItems: [[{ "item": "yet_another_industrialization:numismatic_generator" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 54, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
             [{ "item": "modern_industrialization:large_pump" }, 1],
             [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 6],
             [{ "item": "modern_industrialization:silicon_steel_bolt" }, 12],

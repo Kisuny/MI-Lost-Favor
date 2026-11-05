@@ -17,8 +17,13 @@
     "С <named>улучшением Истощения</named> может <soul>вытягивать вис из узлов ауры</soul> в жезл внутри."
   ],
   "icon": "appliedthaumaturge:wireless_arcane_terminal",
-  "x": 1,
-  "y": 7,
+  "x": 14.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:wireless_arcane_terminal",

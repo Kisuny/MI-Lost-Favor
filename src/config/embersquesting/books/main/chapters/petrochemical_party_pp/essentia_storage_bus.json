@@ -13,8 +13,13 @@
     "Направь её на <named>ME интерфейс эссенции</named> другой сети, чтобы <property>связать их</property>."
   ],
   "icon": "appliedthaumaturge:essentia_storage_bus",
-  "x": 10,
-  "y": 5,
+  "x": 18.5,
+  "y": 51,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "aliases": [
     "automation_n_stuff/essentia_storage_bus"
   ],

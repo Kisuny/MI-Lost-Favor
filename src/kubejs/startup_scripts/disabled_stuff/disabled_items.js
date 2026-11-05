@@ -153,6 +153,7 @@ global.disabledItems = [
     new DisabledItemBuilder("sophisticatedbackpacks:survival_infinity_upgrade"),
 
     new DisabledItemBuilder("sophisticatedbackpacks:inception_upgrade"),
+    new DisabledItemBuilder("sophisticatedcore:ender_linker"),
 
     //#endregion
 
@@ -364,6 +365,20 @@ global.disabledItems = [
     new DisabledItemBuilder("abyssal_decor:seabrass_ore"),
     new DisabledItemBuilder("abyssal_decor:raw_seabrass"),
     new DisabledItemBuilder("abyssal_decor:raw_seabrass_block"),
+
+    //#endregion
+
+    //#region functionalstorage
+
+    new DisabledItemBuilder("functionalstorage:dripping_upgrade"),
+    new DisabledItemBuilder("functionalstorage:water_generator_upgrade"),
+    new DisabledItemBuilder("functionalstorage:obsidian_upgrade"),
+    new DisabledItemBuilder("functionalstorage:puller_upgrade"),
+    new DisabledItemBuilder("functionalstorage:pusher_upgrade"),
+    new DisabledItemBuilder("functionalstorage:collector_upgrade"),
+    new DisabledItemBuilder("functionalstorage:max_storage_upgrade"),
+    new DisabledItemBuilder("functionalstorage:ender_drawer"),
+    new DisabledItemBuilder("functionalstorage:armory_cabinet"),
 
     //#endregion
 

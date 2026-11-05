@@ -13,7 +13,13 @@
     "Вставь <named>улучшение Алхимии</named>, чтобы наполнять и сливать банки прямо из сети."
   ],
   "icon": "appliedthaumaturge:wireless_essentia_terminal",
-  "y": 7,
+  "x": 13,
+  "y": 50,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:wireless_essentia_terminal",

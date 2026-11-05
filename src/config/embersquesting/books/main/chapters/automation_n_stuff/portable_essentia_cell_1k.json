@@ -17,13 +17,22 @@
     "§7Shift+ПКМ§r по <warning>пустой</warning> ячейке разбирает её. Работает и в <keyword>ME приводе</keyword>."
   ],
   "icon": "appliedthaumaturge:portable_essentia_cell_1k",
-  "x": 3,
-  "y": 6,
+  "x": 25.5,
+  "y": 16,
+  "deps": {
+    "all": [
+      "automation_n_stuff/energy_cell",
+      "automation_n_stuff/essentia_cell_1k"
+    ]
+  },
+  "aliases": [
+    "petrochemical_party_pp/portable_essentia_cell_1k"
+  ],
   "tasks": [
     {
       "item": "appliedthaumaturge:portable_essentia_cell_1k",
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "heart"
 }

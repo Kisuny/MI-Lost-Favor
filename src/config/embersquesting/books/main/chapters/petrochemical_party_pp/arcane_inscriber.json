@@ -17,8 +17,13 @@
     "Одно ядро хранит <property>9 рецептов</property>. §7Shift+ПКМ§r с ядром в руке полностью его очищает."
   ],
   "icon": "appliedthaumaturge:arcane_inscriber",
-  "x": 10,
-  "y": 5.5,
+  "x": 13.5,
+  "y": 51,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "aliases": [
     "petrochemical_party/arcane_inscriber"
   ],

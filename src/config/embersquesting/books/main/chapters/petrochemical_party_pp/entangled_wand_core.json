@@ -17,8 +17,13 @@
     "<warning>Важно:</warning> сингулярность кладётся на <property>боковой пьедестал</property>, не в центр. Сердцевины из разных инфузий не связываются."
   ],
   "icon": "appliedthaumaturge:entangled_wand_core",
-  "x": 3,
-  "y": 7,
+  "x": 19,
+  "y": 50,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:entangled_wand_core",

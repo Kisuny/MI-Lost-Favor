@@ -17,8 +17,13 @@
     "Нужен <warning>канал</warning>, <warning>4 AE</warning> за забор, оба чанка прогружены и <warning>одна и та же ME сеть</warning>."
   ],
   "icon": "appliedthaumaturge:vis_relay_interface",
-  "x": 2,
-  "y": 7,
+  "x": 18,
+  "y": 48.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:vis_relay_interface",

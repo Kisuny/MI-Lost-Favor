@@ -13,8 +13,13 @@
     "Ещё он <aqua><wave>затягивает эссенцию</wave></aqua> из подключённых <property>трубок</property> и отдаёт её всему, что тянет сильнее банки."
   ],
   "icon": "appliedthaumaturge:essentia_interface",
-  "x": 8,
-  "y": 5,
+  "x": 19,
+  "y": 49,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "aliases": [
     "automation_n_stuff/essentia_interface"
   ],

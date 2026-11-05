@@ -13,8 +13,13 @@
     "Работает и с <keyword>шинами хранения эссенции</keyword>, так что алтарь можно посадить на отдельную <property>подсеть</property>."
   ],
   "icon": "appliedthaumaturge:infusion_provider",
-  "x": 10.5,
-  "y": 3,
+  "x": 13,
+  "y": 49,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "aliases": [
     "automation_n_stuff/infusion_provider"
   ],

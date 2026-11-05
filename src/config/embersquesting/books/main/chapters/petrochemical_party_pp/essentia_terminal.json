@@ -13,8 +13,13 @@
     "Через него можно <aqua>класть</aqua> и <aqua>забирать</aqua> эссенцию <keyword>фиалами</keyword> и <keyword>банками</keyword>."
   ],
   "icon": "appliedthaumaturge:essentia_terminal",
-  "x": 12,
-  "y": 5,
+  "x": 17.5,
+  "y": 51.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "aliases": [
     "petrochemical_party/essentia_terminal"
   ],

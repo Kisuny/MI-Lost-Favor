@@ -364,4 +364,16 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 18, time: 300, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ "item": "modern_industrialization:digital_circuit" }, 1],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 1],
+            [{ "item": "milf:rangefinder" }, 1],
+            [{ "item": "milf:tempered_glass" }, 1],
+        ],
+        outputItems: [[{ "item": "milf:navigation_module" }, 4]],
+        removeRecipe: true
+    })
+
 })

@@ -17,7 +17,13 @@
     "§7Shift+ПКМ§r с ядром в руке <warning>стирает</warning> его память."
   ],
   "icon": "appliedthaumaturge:blank_knowledge_core",
-  "y": 6,
+  "x": 15,
+  "y": 49,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:blank_knowledge_core",

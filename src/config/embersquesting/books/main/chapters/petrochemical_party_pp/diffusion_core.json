@@ -19,15 +19,16 @@
     "Базовые компоненты для всех шин и терминалов эссенции."
   ],
   "icon": "appliedthaumaturge:diffusion_core",
-  "x": 1,
-  "y": 6,
+  "x": 20,
+  "y": 42.5,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/annihilation_core"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:diffusion_core",
-      "type": "item"
-    },
-    {
-      "item": "appliedthaumaturge:coalescence_core",
       "type": "item"
     }
   ],

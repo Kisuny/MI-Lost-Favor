@@ -13,8 +13,13 @@
     "Пригодится, чтобы запускать производство, когда аспект заканчивается, или останавливать его, пока сеть не переполнилась."
   ],
   "icon": "appliedthaumaturge:essentia_level_emitter",
-  "x": 2,
-  "y": 6,
+  "x": 16,
+  "y": 53,
+  "deps": {
+    "all": [
+      "petrochemical_party_pp/quest_2"
+    ]
+  },
   "tasks": [
     {
       "item": "appliedthaumaturge:essentia_level_emitter",

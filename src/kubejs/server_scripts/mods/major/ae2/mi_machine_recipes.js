@@ -173,6 +173,46 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "ae2:formation_core" }, 1],
+            [{ item: "thaumaturge:nugget_quicksilver" }, 3],
+            [{ item: "oritech:flux_gate" }, 1],
+            [{ item: "modern_industrialization:biosteel_dust" }, 4],
+        ],
+        inputFluids: [
+            [{ fluid: "supplementaries:lumisene" }, 1000]
+        ],
+        outputItems: [
+            [{ item: "appliedthaumaturge:coalescence_core" }, 1]
+        ],
+        requiredDisk: { item: MILF_BLUEPRINTS.getDisk.tier4AE },
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "ae2:annihilation_core" }, 1],
+            [{ item: "thaumaturge:nugget_quicksilver" }, 3],
+            [{ item: "oritech:flux_gate" }, 1],
+            [{ item: "modern_industrialization:bioresistant_alloy_dust" }, 4],
+        ],
+        inputFluids: [
+            [{ fluid: "supplementaries:lumisene" }, 1000]
+        ],
+        outputItems: [
+            [{ item: "appliedthaumaturge:diffusion_core" }, 1]
+        ],
+        requiredDisk: { item: MILF_BLUEPRINTS.getDisk.tier4AE },
+        removeRecipe: true
+    })
+
     //#endregion
 
     //#region processors(printed)
@@ -1209,19 +1249,6 @@ ServerEvents.recipes(event => {
     })
 
     // #endregion
-
-    // #region t3 recipes
-    // ae_processor("ae2:printed_engineering_processor", "ae2:engineering_processor", {item: MILF_BLUEPRINTS.getDisk.tier4AE})
-    // ae_processor("ae2:printed_calculation_processor", "ae2:calculation_processor", {item: MILF_BLUEPRINTS.getDisk.tier4AE})
-
-    // ae_core ("ae2:calculation_processor", "ae2:annihilation_core", {item: MILF_BLUEPRINTS.getDisk.tier4AE})
-    // ae_core ("ae2:engineering_processor", "ae2:formation_core", {item: MILF_BLUEPRINTS.getDisk.tier4AE})
-
-    // ae_card("ae2:advanced_card", "modern_industrialization:lead_dust", "ae2:fuzzy_card", {item: MILF_BLUEPRINTS.getDisk.tier3AE})
-    // ae_card("ae2:advanced_card", "minecraft:glowstone_dust", 'ae2:speed_card', {item: MILF_BLUEPRINTS.getDisk.tier3AE})
-    // ae_card("ae2:advanced_card", "minecraft:redstone_torch", "ae2:inverter_card", {item: MILF_BLUEPRINTS.getDisk.tier3AE})
-    // ae_card("ae2:advanced_card", "ae2:fluix_crystal", 'ae2:equal_distribution_card', {item: MILF_BLUEPRINTS.getDisk.tier3AE})
-    // ae_card("ae2:advanced_card", "ae2:charged_certus_quartz_crystal", 'ae2:energy_card', {item: MILF_BLUEPRINTS.getDisk.tier3AE})
 
     miMachineRecipe(event, {
         energy: T3_ENERGY,

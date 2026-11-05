@@ -1,0 +1,209 @@
+{
+  "title": "Unnoticed Escape",
+  "description": [
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_summon_decoy"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_blink"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_invisibility"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    "",
+    "<wind>Teleports</wind> you forward, makes you <magic><fade minAlpha=0.4 frequency=1.0>invisible</fade></magic> and leaves a <keyword>decoy</keyword> behind to take the hits",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_summon_decoy"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_blink"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_invisibility"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    "",
+    "<wind>Переносит</wind> тебя вперёд, делает <magic><fade minAlpha=0.4 frequency=1.0>невидимым</fade></magic> и оставляет на месте <keyword>приманку</keyword>, которая примет удары на себя"
+  ],
+  "icon": "ars_nouveau:glyph_summon_decoy",
+  "x": 123.5,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/t3_glyphs"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

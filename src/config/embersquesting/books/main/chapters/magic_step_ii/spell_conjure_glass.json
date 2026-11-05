@@ -16,6 +16,18 @@
     {
       "inline": true,
       "items": [
+        "ars_elemental:glyph_conjure_terrain"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
         "ars_nouveau:glyph_aoe"
       ],
       "type": "item"
@@ -81,7 +93,7 @@
       "type": "item"
     },
     "",
-    "Turns a <keyword>3x3</keyword> area into <flame>smelted</flame> <positive>glass</positive> and picks it up. Best used in a <keyword>spell turret</keyword> with a chest next to it to collect the glass",
+    "Conjures a <keyword>3x3</keyword> patch of <nature>sand</nature>, <flame>smelts</flame> it into <positive>glass</positive> and picks it up. Best used in a <keyword>spell turret</keyword> with a chest next to it to collect the glass",
     {
       "style": "page",
       "type": "divider"
@@ -101,6 +113,18 @@
     {
       "inline": true,
       "items": [
+        "ars_elemental:glyph_conjure_terrain"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
         "ars_nouveau:glyph_aoe"
       ],
       "type": "item"
@@ -166,7 +190,7 @@
       "type": "item"
     },
     "",
-    "Превращает область <keyword>3x3</keyword> в <flame>переплавленное</flame> <positive>стекло</positive> и подбирает его. Лучше всего ставить в <keyword>турель заклинаний</keyword> с сундуком рядом, чтобы собирать стекло"
+    "Создаёт участок <nature>песка</nature> <keyword>3x3</keyword>, <flame>переплавляет</flame> его в <positive>стекло</positive> и подбирает. Лучше всего ставить в <keyword>турель заклинаний</keyword> с сундуком рядом, чтобы собирать стекло"
   ],
   "icon": "ars_nouveau:glyph_smelt",
   "x": 96.5,

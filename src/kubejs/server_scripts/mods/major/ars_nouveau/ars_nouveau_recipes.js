@@ -636,6 +636,39 @@ ServerEvents.recipes(event => {
         result: "ars_additions:lost_codex_entry",
         count: 2
     });
+    
+    customCrucible(event, {
+        steps: [
+            {
+                items: [
+                    { "item": "eidolon_repraised:parchment" },
+                    { "item": "eidolon_repraised:parchment" },
+                ]
+            },
+            {
+                items: [
+                    { "item": "eidolon_repraised:soul_harvest_incense" },
+                    { "item": "toxony:toxic_paste" },
+                ],
+                stirs: 1
+            },
+            {
+                items: [
+                    { "item": "malum:cthonic_gold_fragment" },
+                    { "item": "malum:refined_brilliance" },
+                ],
+                stirs: 1
+            },
+            {
+                items: [
+                    { "item": "ars_nouveau:source_gem" },
+                ],
+                stirs: 2
+            }
+        ],
+        result: "ars_additions:ancient_codex_entry",
+        count: 2
+    });
 
     customPedestalCraft(event, {
         time: 1200,

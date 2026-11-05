@@ -1,0 +1,141 @@
+{
+  "title": "Fire Rune",
+  "description": [
+    {
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_rune"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_hex"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_ignite"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_flare"
+      ],
+      "type": "item"
+    },
+    "",
+    "Places a <flame>fire rune</flame> on a wall or floor that triggers when an enemy touches it",
+    "",
+    "Make it permanent with <named>Runic Chalk</named> and put a <named>source jar</named> nearby for a simple <positive>base defense</positive>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_rune"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_hex"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_ignite"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_flare"
+      ],
+      "type": "item"
+    },
+    "",
+    "Ставит на стену или пол <flame>огненную руну</flame>, которая срабатывает, когда её касается враг",
+    "",
+    "Сделай её постоянной с помощью <named>Runic Chalk</named> и поставь рядом <named>source jar</named> - получится простая <positive>защита базы</positive>"
+  ],
+  "icon": "ars_nouveau:glyph_rune",
+  "x": 123,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/t3_glyphs"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

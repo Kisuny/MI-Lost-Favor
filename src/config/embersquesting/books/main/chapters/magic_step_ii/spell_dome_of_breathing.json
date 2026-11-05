@@ -1,0 +1,209 @@
+{
+  "title": "Dome of Breathing",
+  "description": [
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_burst"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_sensitive"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_evaporate"
+      ],
+      "type": "item"
+    },
+    "",
+    "<aqua>Evaporates</aqua> all liquid around you, giving you room to <positive>breathe and move</positive> underwater",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_burst"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_sensitive"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_evaporate"
+      ],
+      "type": "item"
+    },
+    "",
+    "<aqua>Испаряет</aqua> всю жидкость вокруг тебя, давая место, чтобы <positive>дышать и двигаться</positive> под водой"
+  ],
+  "icon": "ars_nouveau:glyph_evaporate",
+  "x": 123,
+  "y": 27.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/t3_glyphs"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

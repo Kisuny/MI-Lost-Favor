@@ -2,59 +2,6 @@
 // Without the tag /eq validate reports "No recipe, loot table, reward or shop gives ..." for each of them.
 // Quests work either way: item tasks check the inventory, not how the item was obtained.
 const eqObtainable = [
-    // fluid buckets
-    'immersiveengineering:acetaldehyde_bucket',
-    'immersiveengineering:biodiesel_bucket',
-    'immersiveengineering:creosote_bucket',
-    'immersiveengineering:ethanol_bucket',
-    'immersiveengineering:phenolic_resin_bucket',
-    'immersiveengineering:plantoil_bucket',
-    'immersivepetroleum:benzol_bucket',
-    'immersivepetroleum:crudeoil_bucket',
-    'immersivepetroleum:diesel_bucket',
-    'immersivepetroleum:diesel_sulfur_bucket',
-    'immersivepetroleum:gasoline_bucket',
-    'immersivepetroleum:kerosene_bucket',
-    'immersivepetroleum:petroleum_gas_bucket',
-    'modern_industrialization:acetylene_bucket',
-    'modern_industrialization:acrylic_acid_bucket',
-    'modern_industrialization:acrylic_glue_bucket',
-    'modern_industrialization:benzene_bucket',
-    'modern_industrialization:boosted_diesel_bucket',
-    'modern_industrialization:butadiene_bucket',
-    'modern_industrialization:chromium_hydrochloric_solution_bucket',
-    'modern_industrialization:diethyl_ether_bucket',
-    'modern_industrialization:ethylbenzene_bucket',
-    'modern_industrialization:ethylene_bucket',
-    'modern_industrialization:hydrochloric_acid_bucket',
-    'modern_industrialization:hydrogen_bucket',
-    'modern_industrialization:liquid_air_bucket',
-    'modern_industrialization:lubricant_bucket',
-    'modern_industrialization:manganese_sulfuric_solution_bucket',
-    'modern_industrialization:methane_bucket',
-    'modern_industrialization:naphtha_bucket',
-    'modern_industrialization:nitrogen_bucket',
-    'modern_industrialization:oxygen_bucket',
-    'modern_industrialization:polyethylene_bucket',
-    'modern_industrialization:propene_bucket',
-    'modern_industrialization:raw_synthetic_oil_bucket',
-    'modern_industrialization:shale_oil_bucket',
-    'modern_industrialization:soldering_alloy_bucket',
-    'modern_industrialization:steam_bucket',
-    'modern_industrialization:styrene_bucket',
-    'modern_industrialization:styrene_butadiene_rubber_bucket',
-    'modern_industrialization:sulfuric_acid_bucket',
-    'modern_industrialization:sulfuric_heavy_fuel_bucket',
-    'modern_industrialization:sulfuric_light_fuel_bucket',
-    'modern_industrialization:sulfuric_naphtha_bucket',
-    'modern_industrialization:synthetic_oil_bucket',
-    'modern_industrialization:synthetic_rubber_bucket',
-    'modern_industrialization:toluene_bucket',
-    'modern_industrialization:vinyl_chloride_bucket',
-    'risus:blood_bucket',
-    'spectrum:liquid_crystal_bucket',
-    'spectrum:midnight_solution_bucket',
-    'thaumaturge:liquid_death_bucket',
 
     // thaumaturge
     'thaumaturge:advanced_alchemical_furnace',
@@ -401,4 +348,6 @@ const eqObtainable = [
 
 ServerEvents.tags('item', event => {
     event.add('embersquesting:obtainable', eqObtainable)
+    event.add('embersquesting:obtainable', /_bucket$/)
+    event.remove('embersquesting:obtainable', 'starbunclemania:star_bucket')
 })

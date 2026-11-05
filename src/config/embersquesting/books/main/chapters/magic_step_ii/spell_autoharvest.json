@@ -1,0 +1,257 @@
+{
+  "title": "Autoharvest",
+  "description": [
+    {
+      "items": [
+        "ars_nouveau:glyph_projectile"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_linger"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_sensitive"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_grow"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_grow"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_harvest"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_pickup"
+      ],
+      "type": "item"
+    },
+    "",
+    "Aim at a <keyword>slab or fence post</keyword> in the middle of a field: for a while the spell keeps <nature>growing</nature> and <positive>harvesting</positive> the crops around it. Works great in a <keyword>spell turret</keyword>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "items": [
+        "ars_nouveau:glyph_projectile"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_linger"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_sensitive"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_aoe"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_grow"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_grow"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_harvest"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_pickup"
+      ],
+      "type": "item"
+    },
+    "",
+    "Целься в <keyword>плиту или столб забора</keyword> посреди поля: какое-то время заклинание будет <nature>выращивать</nature> и <positive>собирать</positive> урожай вокруг. Отлично работает в <keyword>турели заклинаний</keyword>"
+  ],
+  "icon": "ars_nouveau:glyph_harvest",
+  "x": 122.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_ii/t3_glyphs"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

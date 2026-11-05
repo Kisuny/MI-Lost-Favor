@@ -1,0 +1,209 @@
+{
+  "title": "Flight",
+  "description": [
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_launch"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_glide"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    "",
+    "Launches you up and lets you <wind>glide</wind> through the air like with an elytra for a <positive>long time</positive>. Swap <property>Self</property> for <property>Touch</property> to give it to another player",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_launch"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_glide"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_extend_time"
+      ],
+      "type": "item"
+    },
+    "",
+    "Подбрасывает тебя вверх и позволяет <wind>парить</wind> в воздухе, как на элитрах, <positive>долгое время</positive>. Замени <property>Self</property> на <property>Touch</property>, чтобы наложить его на другого игрока"
+  ],
+  "icon": "ars_nouveau:glyph_glide",
+  "x": 121.5,
+  "y": 27,
+  "deps": {
+    "all": [
+      "magic_step_ii/t3_glyphs"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

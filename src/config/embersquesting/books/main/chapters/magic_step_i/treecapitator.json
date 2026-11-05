@@ -1,14 +1,54 @@
 {
   "title": "treecapitator",
   "description": [
-    " <item id=ars_nouveau:glyph_touch tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_fell tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_fell"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Allows</positive> you to fell most of the <keyword>wood</keyword> or <keyword>leaves</keyword> from trees",
     {
       "style": "page",
       "type": "divider"
     },
-    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_fell tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_fell"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Позволяет</positive> срубать большинство <keyword>древесины</keyword> или <keyword>листвы</keyword> с деревьев"
   ],

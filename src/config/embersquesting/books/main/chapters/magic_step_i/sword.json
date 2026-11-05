@@ -1,7 +1,27 @@
 {
   "title": "Sword",
   "description": [
-    " <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_projectile"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_harm"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a <keyword>projectile</keyword>, <keyword>self-cast</keyword>, etc - so feel free to experiment.",
     "",
@@ -10,7 +30,27 @@
       "style": "page",
       "type": "divider"
     },
-    " <item id=ars_nouveau:glyph_projectile size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_harm tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_projectile"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_harm"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть <keyword>снаряд</keyword>, <keyword>самоналожение</keyword> и т.д. - эксперементируйте.",
     "",

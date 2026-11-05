@@ -1,14 +1,54 @@
 {
   "title": "horse power",
   "description": [
-    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_summon_steed tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_summon_steed"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Calls</positive> to the <keyword>tamed horse</keyword>",
     {
       "style": "page",
       "type": "divider"
     },
-    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_summon_steed tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_summon_steed"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Призывает</positive> <keyword>приручённую лошадь</keyword>"
   ],

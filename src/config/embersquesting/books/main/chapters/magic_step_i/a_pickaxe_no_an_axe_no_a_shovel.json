@@ -1,14 +1,54 @@
 {
   "title": "A pickaxe? No. An axe? No. A shovel?",
   "description": [
-    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_break"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Replaces</positive> most tools with a single <keyword>spell</keyword>",
     {
       "style": "page",
       "type": "divider"
     },
-    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_break tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_break"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Заменяет</positive> большинство инструментов одним <keyword>заклинанием</keyword>"
   ],

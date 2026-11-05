@@ -1,14 +1,54 @@
 {
   "title": "lighting",
   "description": [
-    " <item id=ars_nouveau:glyph_touch tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_light tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_light"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Free</positive> lighting for <keyword>rooms</keyword> or <keyword>mines</keyword>",
     {
       "style": "page",
       "type": "divider"
     },
-    " <item id=ars_nouveau:glyph_touch size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_light tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_touch"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_light"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "<positive>Бесплатный</positive> свет в <keyword>помещениях</keyword> или <keyword>шахтах</keyword>"
   ],

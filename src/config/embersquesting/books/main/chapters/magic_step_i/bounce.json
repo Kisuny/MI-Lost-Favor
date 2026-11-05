@@ -1,7 +1,27 @@
 {
   "title": "bounce",
   "description": [
-    " <item id=ars_nouveau:glyph_self tooltip=true size=0.1/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_bounce"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "",
     "Grants the <named>\"Bounce Off the Ground\"</named> effect - which <positive>negates</positive> fall damage",
@@ -9,7 +29,27 @@
       "style": "page",
       "type": "divider"
     },
-    " <item id=ars_nouveau:glyph_self size=0.1 tooltip=true/>  >   <item id=ars_nouveau:glyph_bounce tooltip=true/>",
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "size": 24,
+      "align": "left"
+    },
+    {
+      "type": "label",
+      "text": "→",
+      "inline": true
+    },
+    {
+      "type": "item",
+      "items": [
+        "ars_nouveau:glyph_bounce"
+      ],
+      "size": 24,
+      "inline": true
+    },
     "",
     "Даёт эффект <named>«Отскакивание от земли»</named> - <positive>избавление</positive> от урона при падении"
   ],

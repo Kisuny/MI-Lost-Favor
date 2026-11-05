@@ -1,5 +1,25 @@
 {
   "title": "Bloomery Base",
+  "description": [
+    "The <named>bloomery base</named> is <keyword>set into the ground</keyword> - <keyword>RMB</keyword> on a <nature>dirt</nature> block to replace it",
+    "",
+    "It can only be lit with exactly <property>4 coal</property> in the fuel slot - <warning>charcoal doesn't count as fuel</warning>, though it can still be an ingredient. Add the ingredients with <keyword>RMB</keyword>, then light it: <keyword>hold RMB</keyword> on it with a <named>Firestarter</named>",
+    "",
+    "Coal <flame>burns down</flame> as the recipe goes and <warning>can't be taken out while lit</warning>. Take the result out with <keyword>Shift + RMB</keyword> with an empty hand",
+    "",
+    "Some recipes need <wind>extra air</wind>: put a <named>kiln</named> on top of the base and pump <named>bellows</named> next to it",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Основание кричного горна</named> <keyword>встраивается в землю</keyword> - <keyword>ПКМ</keyword> по блоку <nature>земли</nature>, чтобы заменить его",
+    "",
+    "Разжечь его можно, только когда в слоте топлива ровно <property>4 угля</property> - <warning>древесный уголь топливом не считается</warning>, хотя ингредиентом быть может. Добавь ингредиенты через <keyword>ПКМ</keyword> и подожги: <keyword>зажми ПКМ</keyword> по нему с огнивом (<named>Firestarter</named>)",
+    "",
+    "Уголь <flame>прогорает</flame> по ходу рецепта, и <warning>пока горн горит, его не достать</warning>. Результат забирается через <keyword>Shift + ПКМ</keyword> пустой рукой",
+    "",
+    "Некоторым рецептам нужен <wind>дополнительный воздух</wind>: поставь сверху на основание <named>печь</named> и качай <named>мехи</named> рядом с ней"
+  ],
   "icon": "milf:bloomery_base",
   "x": 34.5,
   "y": 16,

@@ -1,5 +1,29 @@
 {
   "title": "Flint Chisel",
+  "description": [
+    "With a <named>chisel</named> you can <keyword>carve blocks right in the world</keyword>",
+    "",
+    "Take the chisel in your <keyword>main hand</keyword> and a <named>hammer</named> in your <keyword>off hand</keyword>. <keyword>Hold RMB</keyword> and strike a placed block with <keyword>LMB</keyword>, about once per second",
+    "",
+    "Hits on the <keyword>top face</keyword> chip away the top layers, hits on the <keyword>sides</keyword> chip away the side layers. Once the number of chipped layers matches a recipe, the next hit turns the block into the result",
+    "",
+    "Hold <keyword>Shift</keyword> to keep chipping past a finished shape - this way one block of <named>stone</named> can become different things. <warning><shake amplitude=0.35 frequency=1.2>Chip too much and the block crumbles</shake></warning>",
+    "",
+    "Some carved pieces split into parts with a single strike. Every hit costs durability of <warning>both the chisel and the hammer</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Долотом</named> можно <keyword>вытёсывать блоки прямо в мире</keyword>",
+    "",
+    "Возьми долото в <keyword>основную руку</keyword>, а <named>молот</named> во <keyword>вторую</keyword>. <keyword>Зажми ПКМ</keyword> и бей по поставленному блоку <keyword>ЛКМ</keyword>, примерно раз в секунду",
+    "",
+    "Удары по <keyword>верхней грани</keyword> снимают верхние слои, удары по <keyword>боковым</keyword> - боковые. Когда число снятых слоёв совпадёт с рецептом, следующий удар превратит блок в результат",
+    "",
+    "Держи <keyword>Shift</keyword>, чтобы продолжить тесать после готовой формы - так из одного блока <named>камня</named> можно получить разные вещи. <warning><shake amplitude=0.35 frequency=1.2>Если стесать слишком много, блок рассыплется</shake></warning>",
+    "",
+    "Некоторые вытесанные заготовки раскалываются на части одним ударом. Каждый удар тратит прочность <warning>и долота, и молота</warning>"
+  ],
   "icon": "milf:flint_chisel",
   "x": 18,
   "y": 9.5,

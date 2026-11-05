@@ -1,5 +1,17 @@
 {
   "title": "Waterskin",
+  "description": [
+    "<keyword>RMB</keyword> on a <aqua>water source</aqua> to fill the waterskin. The source <positive>is not used up</positive>, so even a single puddle is enough",
+    "",
+    "<keyword>RMB</keyword> on a <named>stone basin</named> to pour the water in - one full waterskin fills it completely. Crafting recipes that need water take <property>100 mB</property> straight from it",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>ПКМ</keyword> по <aqua>источнику воды</aqua>, чтобы наполнить бурдюк. Источник <positive>не расходуется</positive>, так что хватит даже одной лужи",
+    "",
+    "<keyword>ПКМ</keyword> по <named>каменной чаше</named>, чтобы вылить в неё воду - один полный бурдюк заполняет её целиком. Рецепты крафта, которым нужна вода, берут из него <property>100 mB</property>"
+  ],
   "icon": "milf:waterskin{\"milf:fluid\":{amount:500,id:\"minecraft:water\"}}",
   "x": 16,
   "y": 10.5,

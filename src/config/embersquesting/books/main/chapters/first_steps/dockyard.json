@@ -1,0 +1,40 @@
+{
+  "title": "dockyard",
+  "description": [
+    "The <named>dockyard</named> is where ships are <keyword>built, upgraded and repaired</keyword>. Place it <aqua>near water</aqua> and open it with <keyword>RMB</keyword>",
+    "",
+    "In the <keyword>Build</keyword> tab pick a ship type and a <nature>wood type</nature> - the menu shows the ship's stats and the materials it needs. They are taken <warning>straight from your inventory</warning>. Building takes a while, then the ship appears on the nearest free water spot, which has to be <warning>big and deep enough</warning> for it",
+    "",
+    "The <keyword>Modify</keyword> tab works with a ship within <property>16 blocks</property>: install <positive>upgrades</positive>, mount <named>cannons</named>, hang <named>shields</named>, dye the sails, put up banners, rename the ship and <positive>repair</positive> its hull and sails",
+    "",
+    "Every ship type has its own quirks with <wind>wind</wind>, biomes and cargo - <wiggle amplitude=0.5 frequency=1.0 phase=1.0>read its description</wiggle> in the menu before choosing",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Верфь</named> - место, где корабли <keyword>строят, улучшают и чинят</keyword>. Поставь её <aqua>у воды</aqua> и открой через <keyword>ПКМ</keyword>",
+    "",
+    "Во вкладке <keyword>Build</keyword> выбери тип корабля и <nature>породу дерева</nature> - меню покажет характеристики корабля и нужные материалы. Они берутся <warning>прямо из твоего инвентаря</warning>. Постройка занимает время, после чего корабль появляется на ближайшем свободном участке воды, и он должен быть <warning>достаточно большим и глубоким</warning>",
+    "",
+    "Вкладка <keyword>Modify</keyword> работает с кораблём в радиусе <property>16 блоков</property>: ставь <positive>улучшения</positive>, устанавливай <named>пушки</named>, вешай <named>щиты</named>, крась паруса, поднимай флаги, переименовывай корабль и <positive>чини</positive> корпус и паруса",
+    "",
+    "У каждого типа корабля свои особенности: <wind>ветер</wind>, биомы, груз - <wiggle amplitude=0.5 frequency=1.0 phase=1.0>прочитай его описание</wiggle> в меню, прежде чем выбирать"
+  ],
+  "x": 38.5,
+  "y": 19,
+  "deps": {
+    "all": [
+      "first_steps/iron_ingot"
+    ]
+  },
+  "aliases": [
+    "first_steps/quest"
+  ],
+  "tasks": [
+    {
+      "item": "smallships:dockyard",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

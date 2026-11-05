@@ -16,5 +16,19 @@
       "type": "observe"
     }
   ],
-  "shape": "rsquare"
+  "shape": "rsquare",
+  "icons": {
+    "completed": {
+      "layers": []
+    },
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 2.0,
+          "entity": "ytech:mouflon"
+        }
+      ]
+    }
+  }
 }

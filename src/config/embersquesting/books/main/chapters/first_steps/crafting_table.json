@@ -23,12 +23,15 @@
       "type": "item"
     },
     {
+      "icon": "minecraft:crafting_table",
       "block": "minecraft:crafting_table",
-      "type": "observe",
-      "icon": "minecraft:crafting_table"
+      "type": "observe"
     }
   ],
   "complete": "any",
   "shape": "octagon",
-  "size": 2.0
+  "size": 2.0,
+  "icons": {
+    "locked": "milf:question_mark"
+  }
 }

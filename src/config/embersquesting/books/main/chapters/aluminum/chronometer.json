@@ -1,0 +1,29 @@
+{
+  "title": "Chronometer",
+  "description": [
+    "A <keyword>faster portable generator</keyword> than the basic <keyword>Chronon Generator</keyword>. It creates <keyword>Chronons</keyword> more quickly, but still stays in your inventory instead of being placed as a block.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Более <keyword>быстрый переносной генератор</keyword>, чем обычный <keyword>Chronon Generator</keyword>. Он производит <keyword>Chronon</keyword> быстрее, но по-прежнему работает как предмет в инвентаре, а не как блок."
+  ],
+  "icon": "tempad:chronometer",
+  "x": -4,
+  "y": 10,
+  "deps": {
+    "all": [
+      "aluminum/chronon_battery"
+    ]
+  },
+  "aliases": [
+    "automation_n_stuff/chronometer"
+  ],
+  "tasks": [
+    {
+      "item": "tempad:chronometer",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

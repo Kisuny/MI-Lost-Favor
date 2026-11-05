@@ -95,6 +95,17 @@ Object.entries({
         }
     ],
 
+    "everburning_roots": [
+        {
+            blockId: "milf:everburning_roots_heart",
+            replaceWith: "milf:everburning_roots"
+        },
+        {
+            blockId: "milf:everburning_roots_veins",
+            replaceWith: "milf:everburning_roots"
+        }
+    ],
+
     "always_hidden" : [
         {
             blockId: "minecraft:enchanting_table",

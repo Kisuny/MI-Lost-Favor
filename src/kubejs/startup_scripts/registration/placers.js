@@ -343,6 +343,21 @@ registerPlacer("machine_assembler_shape_1", "mi_tweaks", {
     langPrefix: { en_us: "Advanced Machine Assembler" }
 })
 
+registerPlacer("deepbronze_fish_farm", "mi_tweaks", {
+    langPrefix: { en_us: "Deepbronze Fish Farm" }
+})
+
+registerPlacer("microbial_fabricator", "mi_tweaks", {
+    activeMachineShape: 0,
+    langPrefix: { en_us: "Microbial Fabricator" }
+})
+
+registerPlacer("microbial_fabricator_shape_1", "mi_tweaks", {
+    nbtFIleName: "microbial_fabricator",
+    activeMachineShape: 1,
+    langPrefix: { en_us: "Bioresistant Microbial Fabricator" }
+})
+
 // registerPlacer("advanced_large_steam_furnace", "mi_tweaks", {
 //     langSuffix: { ru_ru: "улучшенной большой паровой печи" }
 // })

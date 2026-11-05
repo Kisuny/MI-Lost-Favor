@@ -40,5 +40,21 @@ ServerEvents.recipes(event => {
         }
     })
 
+    miMachineRecipe(event, {
+        energy: 1, time: 666, machine: "modern_industrialization:fish_trap",
+        inputItems: [
+            [{ tag: "c:sands" }, 1],
+            [{ item: "milf:fish_net" }, 1]
+        ],
+        outputItems: [
+            [{ item: "abyssal_decor:baby_clam" }, 1, 0.109],
+            [{ item: "milf:fish_net" }, 1, 0.72]
+        ],
+        open_water_condition: {
+            range: 3,
+            fill: 0.4
+        }
+    })
+
 
 })

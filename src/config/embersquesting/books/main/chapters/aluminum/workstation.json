@@ -1,0 +1,28 @@
+{
+  "title": "Workstation",
+  "description": [
+    "The <keyword>Workstation</keyword> is a two-part block that serves as a docking station for the <keyword>Tempad</keyword> and a stationary <keyword>Timedoor terminal</keyword>. <positive>Right-click</positive> the docking pad with a <keyword>Tempad</keyword> to dock it, which unlocks the <keyword>cassette slot</keyword> for upgrade tapes and enables the <property>Portal Setup app</property> on the terminal screen.",
+    "",
+    "Upgrade tapes are installed by right-clicking them into the cassette slot on the back of the Workstation while a Tempad is docked. Each upgrade permanently adds new functionality to that specific Tempad. ",
+    "",
+    "When a Tempad is docked and the terminal receives a Redstone signal, it opens a Timedoor to the selected destination. The Portal Setup app allows fine-tuning the Timedoor’s position and rotation up to 5 blocks in any direction, as well as toggling whether the portal is upright or flat on the ground. A constant Redstone signal keeps the Timedoor open indefinitely at a cost of 10 Chronons per second."
+  ],
+  "icon": "tempad:workstation",
+  "x": -2,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "aluminum/tempad"
+    ]
+  },
+  "aliases": [
+    "automation_n_stuff/workstation"
+  ],
+  "tasks": [
+    {
+      "item": "tempad:workstation",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

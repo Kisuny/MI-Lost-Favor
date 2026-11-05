@@ -109,6 +109,7 @@ createNewItem('automation_disk', { stackSize: 1, lang: {  "ru_ru": "Диск а�
 createNewItem('quantum_disk', { stackSize: 1, lang: { "ru_ru": "Квантовый диск" } })
 
 createNewItem('hemispherical_press_mold', { stackSize: 1 })
+createNewItem('navigation_module', { stackSize: 1 })
 
 createNewItem("meze_109", { itemType: "helmet", material: 'milf:egg', stackSize: 1, rarity: 'epic' })
 createNewItem("fishnets", { itemType: "leggings", material: 'milf:egg', stackSize: 1, rarity: 'epic' })
@@ -234,3 +235,4 @@ createNewItem('artifact_dust', { lang: { "ru_ru": "Артефактная пыл
 createNewItem('mixed_gem_powder', { lang: { "ru_ru": "Порошок драгоценных камней" } })
 createNewItem('soul_of_the_helpless', { lang: { "ru_ru": "Душа беспомощного" }, stackSize: 16, rarity: 'epic'  })
 
+createNewItem('question_mark', { stackSize: 109 })

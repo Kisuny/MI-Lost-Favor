@@ -1,0 +1,25 @@
+{
+  "title": "Screening Device",
+  "description": [
+    "The Screening Device is an advanced version of the Location Broadcaster that adds team-based filtering. When compatible mods are installed (FTB Teams, Cadmus, or similar), it can restrict which players are allowed to teleport to the holder, cycling through modes like “Just you,” “Everyone,” “Guildmates,” “Party members,” and “Team.”"
+  ],
+  "icon": "tempad:screening_device",
+  "x": -4.5,
+  "y": 4,
+  "deps": {
+    "all": [
+      "aluminum/location_broadcaster",
+      "aluminum/time_steel"
+    ]
+  },
+  "aliases": [
+    "automation_n_stuff/screening_device"
+  ],
+  "tasks": [
+    {
+      "item": "tempad:screening_device",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

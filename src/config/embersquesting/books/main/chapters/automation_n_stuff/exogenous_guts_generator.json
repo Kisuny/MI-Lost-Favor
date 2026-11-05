@@ -1,0 +1,20 @@
+{
+  "title": "Exogenous Guts Generator",
+  "icon": "minecraft:dirt",
+  "x": 6,
+  "y": 3.5,
+  "aliases": [
+    "petrochemical_party/exogenous_guts_generator"
+  ],
+  "tasks": [
+    {
+      "item": "minecraft:dirt",
+      "type": "item"
+    },
+    {
+      "item": "architects_palette:entrails",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

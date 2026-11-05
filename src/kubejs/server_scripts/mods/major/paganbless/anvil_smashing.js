@@ -58,9 +58,9 @@ ServerEvents.recipes(event => {
 
     anvulRecipe(
         [
-            [{ "item": "immersiveengineering:fluid_pipe" }, 6],
-            [{ "item": "milf:steel_infused_glass" }, 1],
-            [{ "item": "milf:steel_machine_bit" }, 10],
+            [{ "item": "immersiveengineering:fluid_pipe" }, 2],
+            [{ "item": "milf:steel_infused_glass" }, 2],
+            [{ "item": "milf:steel_machine_bit" }, 4],
         ],
         [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
     )

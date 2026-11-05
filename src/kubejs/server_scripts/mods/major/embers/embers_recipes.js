@@ -652,6 +652,8 @@ ServerEvents.recipes(event => {
         time: 400
     })
 
+    //#region mixing
+
     embersMixingRecipe(event, {
         inputFluids: [
             [{ fluid: "embers:soul_crude" }, 1],
@@ -661,6 +663,18 @@ ServerEvents.recipes(event => {
             [{ fluid: "immersiveengineering:creosote" }, 5]
         ]
     })
+
+    embersMixingRecipe(event, {
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 8],
+            [{ fluid: "embers:dwarven_oil" }, 1]
+        ],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:lubricant" }, 3]
+        ]
+    })
+
+    //#endregion
 
     embersBoilingRecipe(event, {
         inputFluids: [
@@ -2534,10 +2548,10 @@ ServerEvents.recipes(event => {
         pattern: [
             "DDD",
             "FPF",
-            "BbB",
+            "bBb",
         ],
         key: {
-            "B": { "item": "embers:archaic_brick" },
+            "B": { "item": "minecraft:hopper" },
             "F": { "item": "embers:fluid_pipe" },
             "P": { "item": "modern_industrialization:gold_double_ingot" },
             "D": { "item": "modern_industrialization:iron_plate" },

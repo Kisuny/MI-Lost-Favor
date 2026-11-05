@@ -1128,20 +1128,91 @@ ServerEvents.recipes(event => {
         })
     })
 
-    milfShaped(event, {
+    // milfShaped(event, {
+    //     pattern: [
+    //         "BPB",
+    //         "gUg",
+    //         "BPB"
+    //     ],
+    //     key: {
+    //         B: { item: "milf:steel_machine_bit" },
+    //         g: { item: "milf:steel_infused_glass" },
+    //         P: { item: "immersiveengineering:fluid_pipe" },
+    //         U: { item: "milf:mi_upgrader" },
+    //     },
+    //     replace: {
+    //         U: { item: "milf:mi_upgrader" },
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:steel_upgrade" }, 1]],
+    //     removeRecipe: true
+    // })
+
+    milfShapedCustom(event, {
         pattern: [
             "BPB",
-            "g g",
+            "gUg",
             "BPB"
         ],
         key: {
             B: { item: "milf:steel_machine_bit" },
             g: { item: "milf:steel_infused_glass" },
             P: { item: "immersiveengineering:fluid_pipe" },
+            U: { item: "milf:mi_upgrader" },
         },
+        keepIngredient: "milf:mi_upgrader",
         outputItems: [[{ id: "modern_industrialization:steel_upgrade" }, 1]],
         removeRecipe: true
     })
+
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "gUg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "modern_industrialization:steel_rod" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+            U: { item: "minecraft:magma_block" },
+        },
+        outputItems: [[{ id: "modern_industrialization:trash_can" }, 2]],
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "rEr",
+            "RPR",
+            "R R"
+        ],
+        key: {
+            E: { item: "minecraft:emerald" },
+            R: { item: "modern_industrialization:steel_rod" },
+            r: { item: "modern_industrialization:steel_ring" },
+            P: { item: "embers:sealed_planks" },
+
+        },
+        outputItems: [[{ id: "tradingpost:trading_post" }, 2]],
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    // milfShaped(event, {
+    //     pattern: [
+    //         " B ",
+    //         "gMg",
+    //         " B "
+    //     ],
+    //     key: {
+    //         B: { item: "milf:steel_machine_bit" },
+    //         g: { item: "modern_industrialization:steel_rod" },
+    //         M: { item: "minecraft:magma_block" },
+    //     },
+    //     outputItems: [[{ id: "modern_industrialization:trash_can" }, 1]],
+    //     removeRecipe: true
+    // })
 
     milfShaped(event, {
         pattern: [
@@ -1176,6 +1247,41 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:steel_wiremill" }, 1]],
         removeRecipe: true
     })
+
+    milfShaped(event, {
+        pattern: [
+            "BrB",
+            "gMg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "milf:small_steel_fluid_container" },
+            r: { item: "modern_industrialization:bronze_rotor" },
+            M: { item: "minecraft:blaze_rod" },
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_brewery" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BrB",
+            "gMg",
+            "BPB"
+        ],
+        key: {
+            B: { item: "milf:steel_machine_bit" },
+            g: { item: "milf:steel_infused_glass" },
+            P: { item: "milf:small_steel_fluid_container" },
+            r: { item: "modern_industrialization:bronze_rotor" },
+            M: { item: "minecraft:blaze_powder" },
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_canning_machine" }, 1]],
+        removeRecipe: true
+    })
+
 
     milfShaped(event, {
         pattern: [
@@ -1476,6 +1582,7 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/brick/smelting/dust_to_ingot_smelting",
         "modern_industrialization:materials/brick/smelting/dust_to_ingot_blasting",
         "modern_industrialization:vanilla_recipes/steam_bucket",
+        "modern_industrialization:materials/invar/smelting/dust_to_ingot_smelting",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
         "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",

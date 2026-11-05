@@ -1,0 +1,38 @@
+{
+  "title": "",
+  "x": 5,
+  "y": 22,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_bolt",
+      "rock_and_steam/iron_rod"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "modern_industrialization:iron_bolt",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:iron_rod",
+      "count": 4,
+      "type": "item"
+    },
+    {
+      "item": "modern_industrialization:iron_double_ingot",
+      "count": 3,
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "id": "milf:stage/iron_blocks",
+      "label": "Anvilville",
+      "icon": "minecraft:anvil",
+      "type": "custom",
+      "auto": "claim"
+    }
+  ]
+}

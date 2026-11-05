@@ -58,17 +58,18 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 32, time: 200, machine: "modern_industrialization:basic_machine_assembler",
         inputItems: [
-            [{ item: "modern_industrialization:large_motor" }, 4],
-            [{ item: "modern_industrialization:electronic_circuit" }, 2],
-            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 6],
-            [{ item: "immersiveengineering:wirecoil_steel" }, 4],
-            [{ item: "modern_industrialization:aluminum_drill" }, 4],
+            [{ item: "immersiveengineering:component_electronic_adv" }, 1],
+            [{ item: "abyssal_decor:deepbronze_trim" }, 5],
+            [{ item: "embers:wildfire_core" }, 1],
+            [{ item: "abyssal_decor:coil_lantern" }, 4],
+            [{ item: "oritech:raw_biopolymer" }, 2],
         ],
         outputItems: [
-            [{ item: "modern_industrialization:electric_quarry" }]
+            [{ item: "mi_tweaks:deepbronze_fish_farm" }]
         ],
         removeRecipe: true
     })
+
 
     //#endregion
 
@@ -84,6 +85,21 @@ ServerEvents.recipes(event => {
             [{ "item": "milf:basic_machine_bit" }, 4],
         ],
         outputItems: [[{ "item": "modern_industrialization:basic_machine_hull" }]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 47, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:large_motor" }, 4],
+            [{ item: "modern_industrialization:electronic_circuit" }, 2],
+            [{ item: "modern_industrialization:silicon_steel_large_plate" }, 6],
+            [{ item: "immersiveengineering:wirecoil_steel" }, 4],
+            [{ item: "modern_industrialization:aluminum_drill" }, 4],
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:electric_quarry" }]
+        ],
         removeRecipe: true
     })
 

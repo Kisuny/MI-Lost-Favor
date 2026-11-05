@@ -1,0 +1,29 @@
+{
+  "title": "Timedoor Marker",
+  "description": [
+    "Sets the <keyword>target point</keyword> for teleportation. <positive>Place it</positive> where you want the <magic>portal to lead</magic>, then <positive>write its coordinates</positive> onto a blank <property>Location Card</property> by <positive>right-clicking it</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Задает <keyword>точку назначения</keyword> для телепортации. <positive>Поставь её</positive> в месте, куда должен вести <magic>портал</magic>, а затем <positive>запиши координаты</positive> на пустую <property>Location Card</property> через <positive>правую кнопку мыши</positive>."
+  ],
+  "icon": "tempad:timedoor_marker",
+  "x": -0.5,
+  "y": 2,
+  "deps": {
+    "all": [
+      "aluminum/location_card"
+    ]
+  },
+  "aliases": [
+    "automation_n_stuff/timedoor_marker"
+  ],
+  "tasks": [
+    {
+      "item": "tempad:timedoor_marker",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

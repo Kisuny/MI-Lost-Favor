@@ -19,11 +19,14 @@
       "type": "item"
     },
     {
+      "icon": "minecraft:furnace",
       "block": "minecraft:furnace",
-      "type": "observe",
-      "icon": "minecraft:furnace"
+      "type": "observe"
     }
   ],
   "complete": "any",
-  "shape": "rsquare"
+  "shape": "rsquare",
+  "icons": {
+    "locked": "milf:question_mark"
+  }
 }

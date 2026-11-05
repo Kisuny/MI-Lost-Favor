@@ -1,0 +1,22 @@
+{
+  "title": "Iron Wand",
+  "icon": "constructionwand:iron_wand{\"minecraft:custom_data\":{wand_options:{}}}",
+  "x": 8,
+  "deps": {
+    "all": [
+      "rock_and_steam/iron_plate"
+    ]
+  },
+  "aliases": [
+    "bronze_age/iron_wand"
+  ],
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "constructionwand:iron_wand",
+      "components": "{\"minecraft:custom_data\":{wand_options:{}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

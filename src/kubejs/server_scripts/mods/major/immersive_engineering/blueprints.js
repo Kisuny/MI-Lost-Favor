@@ -67,17 +67,7 @@ const MILF_BLUEPRINTS = {
     }
 }
 
-/**
- * IE blueprint recipe
- *  - `args`:
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
- *      - `outputItems` : an array of arrays of the following structure : [{ item : name }, amount], items defaults to 1 item
- *      - `category` : blueprint category
- *      - --------
- *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
- *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
-*/
-const ieBlueprintRecipe = (event, args) => {
+function ieBlueprintRecipe (event, args)  {
     let result = JSON.parse(JSON.stringify(args.outputItems[0][0]))
     //console.log(result);
     if (result.hasOwnProperty("item")){
@@ -121,24 +111,25 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "modern_industrialization:iron_large_plate" }, 1],
-            [{ "item": "modern_industrialization:steel_gear" }, 1],
-            [{ "item": "modern_industrialization:copper_nugget" }, 15],
-            [{ "item": "modern_industrialization:rubber_sheet" }, 2]
+            [{ "item": "modern_industrialization:iron_gear" }, 1],
+            [{ "item": "modern_industrialization:steel_curved_plate" }, 1],
+            [{ "item": "milf:steel_machine_bit" }, 1],
+            [{ "item": "milf:steel_infused_glass" }, 1],
+            [{ "item": "modern_industrialization:copper_rod" }, 2]
         ],
         outputItems: [[{ "item": "immersiveengineering:component_iron" }, 2]],
-        category: MILF_BLUEPRINTS.craftingComponents,
+        category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
     })
 
     ieBlueprintRecipe(event, {
         inputItems: [
+            [{ "item": "immersiveengineering:component_iron" }, 1],
+            [{ "item": "modern_industrialization:steel_gear" }, 1],
             [{ "item": "modern_industrialization:steel_large_plate" }, 1],
-            [{ "item": "modern_industrialization:iron_gear" }, 1],
-            [{ "item": "modern_industrialization:bronze_nugget" }, 15],
-            [{ "item": "modern_industrialization:rubber_sheet" }, 2]
+            [{ "item": "modern_industrialization:rubber_sheet" }, 4]
         ],
-        outputItems: [[{ "item": "immersiveengineering:component_steel" }, 2]],
+        outputItems: [[{ "item": "immersiveengineering:component_steel" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipe: true,
     })

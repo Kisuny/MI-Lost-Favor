@@ -349,7 +349,21 @@ global.disabledItems = [
     new DisabledItemBuilder("minecraft:wooden_hoe"),
     new DisabledItemBuilder("minecraft:wooden_sword"),
 
+    new DisabledItemBuilder("minecraft:stone_shovel"),
+    new DisabledItemBuilder("minecraft:stone_pickaxe"),
+    new DisabledItemBuilder("minecraft:stone_axe"),
+    new DisabledItemBuilder("minecraft:stone_hoe"),
+    new DisabledItemBuilder("minecraft:stone_sword"),
+
     new DisabledItemBuilder("minecraft:copper_nugget").replaceWith("modern_industrialization:copper_nugget"),
+
+    //#endregion
+
+    //#region Abyssal Decor
+
+    new DisabledItemBuilder("abyssal_decor:seabrass_ore"),
+    new DisabledItemBuilder("abyssal_decor:raw_seabrass"),
+    new DisabledItemBuilder("abyssal_decor:raw_seabrass_block"),
 
     //#endregion
 

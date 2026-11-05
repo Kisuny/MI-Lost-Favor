@@ -23,9 +23,15 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 34, time: 600, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
-            [{ tag: "minecraft:meat" }, 1, 0.79],
+            [neoCompound([
+                { tag: "minecraft:meat" },
+                { tag: "c:foods/raw_fish" }
+            ]), 1, 0.79],
             [{ item: "milf:space_hive" }, 1, 0],
-            [{ tag: "minecraft:meat" }, 1, 0.74],
+            [neoCompound([
+                { tag: "minecraft:meat" },
+                { tag: "c:foods/raw_fish" }
+            ]), 1, 0.74],
         ],
         inputFluids: [
             [{ fluid: "oritech:still_biofuel" }, 125],
@@ -79,6 +85,21 @@ ServerEvents.recipes(event => {
             [{ fluid: "modern_industrialization:sugar_solution" }, 250, 0.81],
         ],
         outputItems: [[{ item: "oritech:fluxite" }, 1, 0.66]],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 16, time: 100, machine: "modern_industrialization:microbial_fabricator_basic",
+        inputItems: [
+            [{ item: "ae2:ender_dust" }, 1, 0.18],
+            [{ item: "abyssal_decor:block_of_pearl" }, 1],
+            [{ item: "ae2:ender_dust" }, 1, 0.13],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 250, 0.94],
+            [{ fluid: "milf:alien_goo" }, 250, 0.83],
+        ],
+        outputItems: [[{ item: "minecraft:ender_pearl" }, 1, 0.86]],
         removeRecipe: true
     })
 

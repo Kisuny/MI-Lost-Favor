@@ -95,6 +95,14 @@ Object.entries({
         stages: ["metal_blocks"]
     },
 
+    "milf:stage/iron_blocks": {
+        stages: ["iron_blocks"]
+    },
+
+    "milf:stage/everburning_roots": {
+        stages: ["everburning_roots"]
+    },
+
     //#endregion
 
     //#region ore restrictions
@@ -204,7 +212,7 @@ Object.entries({
     //#region what?
 
     "milf:stage/iron_anvil": {
-        stages: ["iron_items_2", "iron_blocks", "goblin_traders_mobs"]
+        stages: ["iron_items_2","goblin_traders_mobs"]
     },
 
     "milf:stage/iron_ingot_loot": {

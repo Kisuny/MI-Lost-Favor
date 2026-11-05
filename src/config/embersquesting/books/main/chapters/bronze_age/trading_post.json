@@ -1,0 +1,29 @@
+{
+  "title": "Trading Post",
+  "description": [
+    "<keyword>Trading Post</keyword> allows you to <positive>trade with all villagers in a area at once</positive> in a single interface",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "«<keyword>Торговый пост</keyword>» позволяет вам <positive>торговать со всеми жителями деревни в области одновременно</positive> в одном интерфейсе"
+  ],
+  "icon": "tradingpost:trading_post",
+  "x": 10,
+  "y": 24,
+  "deps": {
+    "all": [
+      "bronze_age/steel_ring"
+    ]
+  },
+  "aliases": [
+    "rock_and_steam/trading_post"
+  ],
+  "tasks": [
+    {
+      "item": "tradingpost:trading_post",
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

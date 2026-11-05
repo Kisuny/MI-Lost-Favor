@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         key: {
             P: { item: "modern_industrialization:iron_large_plate" },
             S: { tag: "milf:sticks" },
-            B: { item: "modern_industrialization:iron_ring" },
+            B: { item: "modern_industrialization:iron_plate" },
         },
         outputItems: [[{ id: "constructionwand:iron_wand" }, 1]],
         removeRecipe: true

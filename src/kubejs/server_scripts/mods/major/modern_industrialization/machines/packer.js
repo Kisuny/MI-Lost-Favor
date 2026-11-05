@@ -38,40 +38,16 @@ ServerEvents.recipes(event => {
     //ae_press_recipes ("extendedae:concurrent_processor_press", "extendedae:entro_crystal", "extendedae:concurrent_processor_print", tier4token)
 
 
-    // miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
-    //     outputItems:[
-    //         [{item:"sophisticatedstorage:compacting_upgrade"}]
-    //     ],
-    //     inputItems:[
-    //         [{tag:"sophisticatedstorage:all_storage"}],
-    //         [{item:"minecraft:piston"}, 4],
-    //         [{item:"sophisticatedstorage:upgrade_base"}],
-    //     ],
-    //     removeRecipe:true
-    // })
-
     miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
-            [{item:"modern_industrialization:trash_can"}]
+            [{item:"modern_industrialization:trash_can"}, 3]
         ],
         inputItems:[
             [{item:"modern_industrialization:steel_upgrade"}, 1],
-            [{item:"minecraft:magma_block"}, 4],
+            [{item:"minecraft:magma_block"}, 3],
         ],
         removeRecipe:true
     })
-
-    // miMachineRecipe(event, {energy:8, time:300, machine:"modern_industrialization:packer",
-    //     outputItems:[
-    //         [{item:"sophisticatedstorage:advanced_compacting_upgrade"}]
-    //     ],
-    //     inputItems:[
-    //         [{tag:"sophisticatedstorage:all_storage"}],
-    //         [{item:"modern_industrialization:piston"}, 4],
-    //         [{item:"sophisticatedstorage:compacting_upgrade"}],
-    //     ],
-    //     removeRecipe:true
-    // })
 
     miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[

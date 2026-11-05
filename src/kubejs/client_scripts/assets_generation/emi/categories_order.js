@@ -82,6 +82,9 @@ ClientEvents.generateAssets("before_mods", event => {
         "minecraft:the_nether",
         "minecraft:the_end",
         "spectrum:deeper_down",
+
+        "emi:anvil_repairing",
+        "emi:grinding",
     ]
 
     let modifiedCategories = []

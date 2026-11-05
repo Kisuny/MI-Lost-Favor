@@ -1,0 +1,34 @@
+{
+  "title": "Excavation Buckets",
+  "description": [
+    "<keyword>Excavation Buckets</keyword> are a Bore upgrade: it can also dig up <keyword>gravel</keyword>, <keyword>flint</keyword> or <keyword>snow</keyword>.",
+    "",
+    "The gravel or snow must be placed <property>touching the bore blades</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Экскавационные ковши</keyword> - улучшение для буровой: она начнёт добывать ещё и <keyword>гравий</keyword>, <keyword>кремень</keyword> или <keyword>снег</keyword>.",
+    "",
+    "Гравий или снег должны <property>касаться лезвий бура</property>."
+  ],
+  "icon": "embers:excavation_buckets",
+  "x": 4.5,
+  "y": 11,
+  "deps": {
+    "all": [
+      "simple_machinery/bedrock_sample"
+    ]
+  },
+  "aliases": [
+    "rock_and_steam/excavation_buckets"
+  ],
+  "tasks": [
+    {
+      "item": "embers:excavation_buckets",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 1.5
+}

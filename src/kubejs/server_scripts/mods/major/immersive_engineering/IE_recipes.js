@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
             "RRR"
         ],
         key: {
-            R: { tag: "modern_industrialization:steel_rod" },
+            R: { item: "modern_industrialization:steel_rod" },
             C: {
                 type: "immersiveengineering:fluid_stack",
                 amount: 1000,
@@ -146,6 +146,24 @@ ServerEvents.recipes(event => {
             }
         },
         outputItems: [[{ id: "immersiveengineering:concrete_reinforced" }, 2]],
+        removeRecipe: true
+    })
+
+    ieShapedFluid(event, {
+        pattern: [
+            " S ",
+            " C ",
+            "   "
+        ],
+        key: {
+            S: { item: "modern_industrialization:steel_rod" },
+            C: {
+                type: "immersiveengineering:fluid_stack",
+                amount: 500,
+                fluid: "immersiveengineering:concrete"
+            }
+        },
+        outputItems: [[{ id: "milf:concrete_popsicle" }, 1]],
         removeRecipe: true
     })
 
@@ -877,23 +895,6 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "immersiveengineering:cloche" }, 1]],
         removeRecipe: true
-    })
-
-    milfShaped(event, {
-        pattern: [
-            " S ",
-            " C "
-        ],
-        key: {
-            S: { item: "modern_industrialization:steel_rod" },
-            C: { item: "immersiveengineering:concrete_bucket" },
-        },
-        replace: {
-            C: { item: "minecraft:bucket" },
-        },
-        outputItems: [[{ id: "milf:concrete_popsicle" }, 1]],
-        removeRecipe: true,
-        compatOff: true
     })
 
     const sheetmetalMaterials = ["copper", "lead", "silver", "nickel", "uranium", "constantan", "electrum", "steel", "iron", "gold"]

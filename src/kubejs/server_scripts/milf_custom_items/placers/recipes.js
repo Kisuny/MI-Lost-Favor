@@ -25,10 +25,23 @@ ServerEvents.recipes(event => {
         }
         let inputItems = []
         Object.entries(blocksCount).forEach(([blockID, count]) => {
+
+            //TODO something
+
             if(blockID == "immersiveengineering:fluid_pump" || blockID == "immersiveengineering:tesla_coil") {
                 inputItems.push([{item:blockID}, count / 2])
                 return
             }
+
+            if (blockID == "abyssal_decor:tall_deepbronze_spire") {
+                inputItems.push([{ item: "abyssal_decor:deepbronze_spire" }, count * 2])
+                return
+            }
+
+            if (blockID == "minecraft:water") {
+                return
+            }
+            
             inputItems.push([{item:blockID}, count])
         })
 

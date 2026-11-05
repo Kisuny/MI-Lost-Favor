@@ -781,6 +781,24 @@ ServerEvents.recipes(event => {
         outputItems: [[{ item: "oritech:adamant_ingot" }, 1]]
     })
 
+    oritechFoundryRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "modern_industrialization:bronze_ingot" }, 1],
+            [{ item: "embers:archaic_brick" }, 2]
+        ],
+        outputItems: [[{ item: "abyssal_decor:deepbronze_ingot" }, 2]]
+    })
+
+    oritechFoundryRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "thaumaturge:ingot_brass" }, 1],
+            [{ item: "abyssal_decor:white_pearl" }, 2]
+        ],
+        outputItems: [[{ item: "abyssal_decor:seabrass_ingot" }, 1]]
+    })
+
     //#endregion
 
     //#region assembler

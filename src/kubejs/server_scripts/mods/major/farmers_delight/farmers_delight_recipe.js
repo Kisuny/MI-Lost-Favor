@@ -193,5 +193,7 @@ ServerEvents.recipes(event => {
 
 milfDisableRecipesById([
     "farmersdelight:salvaging/saddle",
-    "farmersdelight:/crafting/wheat_dough_from_water"
+    "farmersdelight:/crafting/wheat_dough_from_water",
+    "farmersdelight:salvaging/hopper_minecart",
+    "netherexp:nether_quartz_from_quartz_block"
 ])

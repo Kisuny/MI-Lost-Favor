@@ -12,6 +12,8 @@ MIMachineEvents.registerCasings(event => {
     event.registerBlockImitation("carbon_plating_block", "oritech:carbon_plating_block")
     event.registerBlockImitation("machine_core_3", "oritech:machine_core_3")
     
+    event.registerBlockImitation("deepbronze_trim", "abyssal_decor:deepbronze_trim")
+    event.registerBlockImitation("riveted_deepbronze", "abyssal_decor:riveted_deepbronze")
 
     event.registerBlockImitation("chart_crate", "milf:embers_dummy_chart_block_crate")
 

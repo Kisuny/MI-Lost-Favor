@@ -1,0 +1,24 @@
+{
+  "title": "Player Teleport Upgrade",
+  "description": [
+    "<positive>Teleport</positive> to other players"
+  ],
+  "icon": "tempad:player_teleport_upgrade",
+  "x": -1,
+  "y": 8,
+  "deps": {
+    "all": [
+      "aluminum/workstation"
+    ]
+  },
+  "aliases": [
+    "automation_n_stuff/player_teleport_upgrade"
+  ],
+  "tasks": [
+    {
+      "item": "tempad:player_teleport_upgrade",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

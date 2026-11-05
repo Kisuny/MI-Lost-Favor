@@ -1,0 +1,25 @@
+{
+  "title": "Tempad",
+  "description": [
+    "Mod adds a complete <property>fast travel system</property> built around glowing portal doorways called <keyword>Timedoors</keyword>, powered by a unique <keyword>Chronon energy system</keyword> with <keyword>generators</keyword>, <keyword>cells</keyword>, and <keyword>batteries</keyword>"
+  ],
+  "x": -1.5,
+  "y": 6,
+  "aliases": [
+    "automation_n_stuff/tempad_2"
+  ],
+  "tasks": [
+    {
+      "type": "checkmark",
+      "title": "Tempad"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "tempad:knowledge_projector",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

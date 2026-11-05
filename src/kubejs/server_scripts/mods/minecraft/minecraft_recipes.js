@@ -493,6 +493,23 @@ ServerEvents.recipes(event => {
         removeRecipeType: "minecraft:crafting_shaped"
     })
 
+    milfShaped(event, {
+        pattern: [
+            "RPR",
+            "RfR",
+            "SFS"
+        ],
+        key: {
+            S: { item: "minecraft:smooth_stone" },
+            F: { item: "milf:small_steel_fluid_container" },
+            f: { item: "minecraft:furnace" },
+            P: { item: "modern_industrialization:steel_large_plate" },
+            R: { item: "modern_industrialization:steel_rod" }
+        },
+        outputItems: [[{ id: "minecraft:blast_furnace" }, 1]],
+        removeRecipe: true
+    })
+
     customMixingCauldron(event, {
         fluid: "minecraft:lava",
         fluidAmount: 1000,

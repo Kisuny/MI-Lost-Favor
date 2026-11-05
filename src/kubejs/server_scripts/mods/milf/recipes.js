@@ -1009,7 +1009,7 @@ ServerEvents.recipes(event => {
         key: {
             R: { item: "modern_industrialization:steel_rod" },
             r: { item: "modern_industrialization:steel_ring" },
-            C: { item: "immersiveengineering:component_steel" }
+            C: { item: "milf:steel_machine_bit" }
         },
         outputItems: [[{ id: "milf:mi_upgrader" }, 1]],
     })
@@ -1148,11 +1148,11 @@ ServerEvents.recipes(event => {
         ingredients: [
             { "item": "minecraft:glass_bottle" },
             { "tag": "hexerei:flower_biproduct" },
-            { "item": "minecraft:poisonous_potato" },
+            { "item": "minecraft:potato" },
             { "tag": "spectrum:gemstone_shards" },
             { "tag": "spectrum:gemstone_shards" },
             { "tag": "spectrum:gemstone_shards" },
-            { "item": "minecraft:poisonous_potato" },
+            { "item": "minecraft:potato" },
             { "tag": "hexerei:flower_biproduct" }
         ],
         output: "milf:recall_concoction",
@@ -1160,22 +1160,21 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    customMixingCauldron(event, {
-        fluid: "immersiveengineering:creosote",
-        fluidAmount: 1000,
-        ingredients: [
-            { "item": "minecraft:glass_bottle" },
-            { "item": "modern_industrialization:steel_dust" },
-            { "item": "milf:larva" },
-            { "item": "milf:recall_concoction" },
-            { "item": "modern_industrialization:steel_dust" },
-            { "item": "milf:recall_concoction" },
-            { "item": "milf:larva" },
-            { "item": "modern_industrialization:steel_dust" }
+    miMachineRecipe(event, {
+        energy: 4, time: 665, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "modern_industrialization:coke_dust" }, 3],
+            [{ item: "milf:larva" }, 3],
+            [{ item: "modern_industrialization:steel_dust" }, 1],
+            [{ item: "modern_industrialization:saltpeter_dust" }, 4],
         ],
-        output: "milf:grecall_concoction_t1",
-        amount: 1,
-        removeRecipe: true
+        inputFluids: [
+            [{ fluid: "immersiveengineering:creosote" }, 1000]
+        ],
+        outputItems: [
+            [{ item: "milf:grecall_concoction_t1" }, 1]
+        ],
+        removeThisRecipeType: true
     })
 
     customAlchemicalForgeCraft(event, {

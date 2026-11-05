@@ -10,11 +10,10 @@
   ],
   "icon": "minecraft:anvil",
   "x": 5,
-  "y": 22,
+  "y": 23,
   "deps": {
     "all": [
-      "rock_and_steam/iron_bolt",
-      "rock_and_steam/iron_rod"
+      "rock_and_steam/quest_3"
     ]
   },
   "tasks": [
@@ -43,5 +42,8 @@
     }
   ],
   "complete": "any",
-  "shape": "octagon"
+  "shape": "octagon",
+  "icons": {
+    "locked": "milf:question_mark"
+  }
 }

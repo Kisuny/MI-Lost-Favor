@@ -1,0 +1,24 @@
+{
+  "title": "Location Broadcaster",
+  "description": [
+    "when toggled on and carried in the inventory, makes the holder visible in the Teleport app of any Tempad with the Player Teleport upgrade installed. Right-clicking it toggles between active (green screen) and inactive (red screen)."
+  ],
+  "icon": "tempad:location_broadcaster",
+  "x": -3,
+  "y": 4.5,
+  "deps": {
+    "all": [
+      "aluminum/tempad_2"
+    ]
+  },
+  "aliases": [
+    "automation_n_stuff/location_broadcaster"
+  ],
+  "tasks": [
+    {
+      "item": "tempad:location_broadcaster",
+      "type": "item"
+    }
+  ],
+  "shape": "circle"
+}

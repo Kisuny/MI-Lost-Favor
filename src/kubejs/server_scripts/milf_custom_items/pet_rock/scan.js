@@ -2,33 +2,6 @@ function getAllPossibleDeposits(name){
     return new $HashSet([name, name + "_vertical"])
 }
 
-// const ORE_ID_TO_DEPOSIT_NAMES = {
-//     "modern_industrialization:raw_tin": getAllPossibleDeposits("tin"),
-//     "minecraft:raw_copper": getAllPossibleDeposits("copper"),
-//     "minecraft:raw_iron": getAllPossibleDeposits("iron"),
-//     "minecraft:raw_gold": getAllPossibleDeposits("gold"),
-//     "minecraft:coal": getAllPossibleDeposits("coal"),
-//     "modern_industrialization:raw_lead":getAllPossibleDeposits("lead"),
-
-//     "minecraft:emerald": getAllPossibleDeposits("emerald"),
-//     "minecraft:redstone": getAllPossibleDeposits("redstone"),
-//     "minecraft:diamond": getAllPossibleDeposits("diamond"),
-//     "minecraft:lapis_lazuli": getAllPossibleDeposits("lapis"),
-//     "minecraft:quartz": getAllPossibleDeposits("quartz"),
-
-//     "modern_industrialization:bauxite_dust": getAllPossibleDeposits("aluminum"),
-//     "modern_industrialization:raw_nickel": getAllPossibleDeposits("nickel"),
-//     "minecraft:netherite_scrap":getAllPossibleDeposits("nether_gold"),
-//     "modern_industrialization:salt_dust":getAllPossibleDeposits("salt"),
-//     "modern_industrialization:raw_antimony":getAllPossibleDeposits("antimony"),
-
-//     "modern_industrialization:raw_uranium":getAllPossibleDeposits("uranium"),
-//     "modern_industrialization:raw_tungsten":getAllPossibleDeposits("tungsten"),
-//     "modern_industrialization:raw_titanium":getAllPossibleDeposits("titanium"),
-//     "modern_industrialization:raw_platinum":getAllPossibleDeposits("platinum"),
-//     "modern_industrialization:monazite_dust":getAllPossibleDeposits("monazite")
-// }
-
 const ORE_NAME_TO_DEPOSIT_NAME_MAP = {
     bauxite: "aluminum",
     ancient_debris: "nether_gold"
@@ -43,9 +16,6 @@ const ORE_ID_TO_DEPOSIT_NAMES = Object.fromEntries(
         oreData.displayItem, getAllPossibleDeposits(getDepositNameFor(itemName))
     ])
 )
-
-console.log(ORE_ID_TO_DEPOSIT_NAMES);
-
 
 function collectDepositNames(oreId, collector){
     collector.addAll(ORE_ID_TO_DEPOSIT_NAMES[oreId])

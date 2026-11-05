@@ -15,8 +15,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:manganese_sulfuric_solution_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "modern_industrialization:manganese_sulfuric_solution",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "shape": "diamond"

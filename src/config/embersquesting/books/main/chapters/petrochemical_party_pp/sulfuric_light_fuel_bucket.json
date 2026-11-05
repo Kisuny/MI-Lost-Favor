@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:sulfuric_light_fuel_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:sulfuric_light_fuel",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

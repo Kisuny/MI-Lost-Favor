@@ -12,11 +12,13 @@
   },
   "tasks": [
     {
-      "item": "immersiveengineering:biodiesel_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersiveengineering:biodiesel",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

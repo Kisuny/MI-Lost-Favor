@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "milf:liquid_plastic_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "milf:liquid_plastic",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

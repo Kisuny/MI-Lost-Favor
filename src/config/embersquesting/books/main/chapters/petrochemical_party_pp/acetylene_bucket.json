@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:acetylene_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:acetylene",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

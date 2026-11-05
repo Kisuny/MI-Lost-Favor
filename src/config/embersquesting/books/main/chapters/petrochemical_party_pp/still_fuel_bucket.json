@@ -10,8 +10,13 @@
   },
   "tasks": [
     {
-      "item": "oritech:still_fuel_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "oritech:still_fuel",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "shape": "heart"

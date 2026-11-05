@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:styrene_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:styrene",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

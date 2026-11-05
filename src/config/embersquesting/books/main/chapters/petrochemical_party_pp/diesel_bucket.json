@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersivepetroleum:diesel_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersivepetroleum:diesel",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

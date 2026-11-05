@@ -11,8 +11,12 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:synthetic_rubber_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "modern_industrialization:synthetic_rubber",
+      "type": "fluid"
     }
   ],
   "shape": "heart"

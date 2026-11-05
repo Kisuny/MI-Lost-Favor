@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:acrylic_glue_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:acrylic_glue",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

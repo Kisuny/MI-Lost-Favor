@@ -10,8 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:liquid_air_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "modern_industrialization:liquid_air",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "shape": "diamond"

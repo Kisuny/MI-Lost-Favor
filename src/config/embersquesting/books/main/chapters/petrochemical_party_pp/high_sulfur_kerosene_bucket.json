@@ -12,11 +12,13 @@
   },
   "tasks": [
     {
-      "item": "milf:high_sulfur_kerosene_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "milf:high_sulfur_kerosene",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

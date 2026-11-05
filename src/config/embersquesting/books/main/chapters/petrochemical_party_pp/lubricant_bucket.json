@@ -10,8 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:lubricant_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "modern_industrialization:lubricant",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "shape": "heart"

@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersiveengineering:ethanol_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersiveengineering:ethanol",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersiveengineering:plantoil_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersiveengineering:plantoil",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

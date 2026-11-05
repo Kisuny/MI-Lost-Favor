@@ -12,11 +12,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:ethylene_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:ethylene",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

@@ -10,11 +10,19 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:lubricant_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "fluid": "modern_industrialization:lubricant",
+      "amount": 701,
+      "type": "fluid"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "modern_industrialization:bronze_tank",
+      "components": "{\"modern_industrialization:fluid_storage\":{amount:1009L,resource:{id:\"modern_industrialization:lubricant\"}}}",
+      "type": "item"
     }
   ],
   "complete": "any",

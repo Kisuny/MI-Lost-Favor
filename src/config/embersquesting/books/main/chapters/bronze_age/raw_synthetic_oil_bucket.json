@@ -10,8 +10,9 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:raw_synthetic_oil_bucket",
-      "type": "item"
+      "optional": true,
+      "fluid": "modern_industrialization:raw_synthetic_oil",
+      "type": "fluid"
     },
     {
       "type": "checkmark"

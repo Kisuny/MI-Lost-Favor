@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:propene_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:propene",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

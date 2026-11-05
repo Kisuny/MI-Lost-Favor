@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersiveengineering:phenolic_resin_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersiveengineering:phenolic_resin",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

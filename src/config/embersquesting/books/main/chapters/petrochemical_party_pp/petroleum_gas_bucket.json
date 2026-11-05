@@ -10,8 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersivepetroleum:petroleum_gas_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "immersivepetroleum:petroleum_gas",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "shape": "diamond"

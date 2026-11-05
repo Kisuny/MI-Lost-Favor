@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersivepetroleum:gasoline_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersivepetroleum:gasoline",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

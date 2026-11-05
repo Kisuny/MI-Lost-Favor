@@ -590,6 +590,8 @@ milfDisableRecipesById([
     "ytech:bronze_anvil",
     "ytech:primitive_alloy_smelter",
     "ytech:primitive_smelter",
-    "ytech:unlit_torch"
+    "ytech:unlit_torch",
+    "ytech:unfired_brick",
+    "ytech:torch"
     
 ])

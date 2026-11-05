@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersiveengineering:acetaldehyde_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersiveengineering:acetaldehyde",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

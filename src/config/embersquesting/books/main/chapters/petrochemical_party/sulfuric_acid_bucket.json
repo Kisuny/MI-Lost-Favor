@@ -10,8 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:sulfuric_acid_bucket",
-      "type": "item"
+      "type": "checkmark"
+    },
+    {
+      "optional": true,
+      "fluid": "modern_industrialization:sulfuric_acid",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "shape": "diamond"

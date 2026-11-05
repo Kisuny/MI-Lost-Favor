@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "milf:syngas_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "milf:syngas",
+      "amount": 109,
+      "type": "fluid"
     }
   ],
   "complete": "any",

@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "milf:purified_syngas_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "milf:purified_syngas",
+      "amount": 109,
+      "type": "fluid"
     }
   ],
   "complete": "any",

@@ -11,11 +11,13 @@
   },
   "tasks": [
     {
-      "item": "immersivepetroleum:benzol_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersivepetroleum:benzol",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

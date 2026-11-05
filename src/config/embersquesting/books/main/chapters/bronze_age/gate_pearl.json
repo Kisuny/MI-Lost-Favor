@@ -9,13 +9,16 @@
     "Простой способ получить <named>жителей</named>!"
   ],
   "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:basic/villager\"}",
-  "x": 2.5,
-  "y": -1,
+  "x": 10,
+  "y": 22.5,
   "deps": {
     "all": [
-      "rock_and_steam/bronze_plate"
+      "bronze_age/trading_post"
     ]
   },
+  "aliases": [
+    "rock_and_steam/gate_pearl"
+  ],
   "tasks": [
     {
       "match_components": "none",

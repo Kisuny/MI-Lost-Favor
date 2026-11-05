@@ -22,12 +22,6 @@
   ],
   "rewards": [
     {
-      "title": "New ore in world",
-      "id": "milf:milestone/bronze_plate",
-      "type": "custom",
-      "auto": "claim"
-    },
-    {
       "team_reward": true,
       "item": "grimoireofgaia:box_overworld",
       "type": "item"
@@ -46,6 +40,7 @@
     {
       "title": "New gems in chests",
       "id": "milf:stage/bronze_plate",
+      "icon": "minecraft:amethyst_shard",
       "type": "custom",
       "auto": "claim"
     }

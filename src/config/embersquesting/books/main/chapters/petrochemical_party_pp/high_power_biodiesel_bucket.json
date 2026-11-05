@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersiveengineering:high_power_biodiesel_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersiveengineering:high_power_biodiesel",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

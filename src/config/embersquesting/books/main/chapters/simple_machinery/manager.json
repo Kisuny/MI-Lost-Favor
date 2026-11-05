@@ -67,6 +67,10 @@
       "item": "sfm:disk",
       "components": "{\"minecraft:item_name\":'\"MI:LF: moving items\"',\"sfm:errors\":[],\"sfm:program\":'NAME \"MI:LF: moving items\"\n\n-- use two dashes for a comment\n-- keywords are case insensitive\n\nEVERY 20 ticks do\n    input from Barrel\n    output to Chest\n    -- \"Barrel\" and \"Chest\" are inventory labels\n    -- use a label gun to identify them in world!\nEND',\"sfm:warnings\":[{translate:\"program.sfm.warnings.unused_label\",with:[\"Barrel\"]},{translate:\"program.sfm.warnings.unused_label\",with:[\"Chest\"]},{translate:\"program.sfm.reminders.push_labels\"}]}",
       "type": "item"
+    },
+    {
+      "item": "modern_industrialization:basic_upgrade",
+      "type": "item"
     }
   ],
   "shape": "heart"

@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "immersivepetroleum:crudeoil_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "immersivepetroleum:crudeoil",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

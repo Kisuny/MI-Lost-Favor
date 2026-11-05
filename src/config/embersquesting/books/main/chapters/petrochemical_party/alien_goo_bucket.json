@@ -11,11 +11,13 @@
   },
   "tasks": [
     {
-      "item": "milf:alien_goo_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "milf:alien_goo",
+      "amount": 391,
+      "type": "fluid"
     }
   ],
   "complete": "any",

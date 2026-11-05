@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:ethylbenzene_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:ethylbenzene",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

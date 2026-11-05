@@ -11,11 +11,13 @@
   },
   "tasks": [
     {
-      "item": "modern_industrialization:styrene_butadiene_rubber_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "modern_industrialization:styrene_butadiene_rubber",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

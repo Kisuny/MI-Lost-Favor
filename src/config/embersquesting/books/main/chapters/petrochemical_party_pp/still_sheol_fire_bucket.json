@@ -10,11 +10,13 @@
   },
   "tasks": [
     {
-      "item": "oritech:still_sheol_fire_bucket",
-      "type": "item"
+      "type": "checkmark"
     },
     {
-      "type": "checkmark"
+      "optional": true,
+      "fluid": "oritech:still_sheol_fire",
+      "amount": 701,
+      "type": "fluid"
     }
   ],
   "complete": "any",

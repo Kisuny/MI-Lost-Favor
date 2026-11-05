@@ -5,9 +5,15 @@ ServerEvents.recipes(event => {
         "farmersdelight:cod_slice"
     ])
 
+    let starcatcherCommon = new $HashSet(
+        Ingredient.of("#starcatcher:common_fishes").getItemIds()
+    )
+
     Ingredient.of("#c:foods/raw_fish").getItemIds().forEach(fih => {
 
         if (theHelly.contains(fih)) return
+
+        if(fih.split(":")[0] == "starcatcher" && !starcatcherCommon.contains(fih)) return
 
         miMachineRecipe(event, {
             energy: 1, time: 481, machine: "modern_industrialization:deepbronze_fish_farm",

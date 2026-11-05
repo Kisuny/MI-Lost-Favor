@@ -1,5 +1,25 @@
 {
   "title": "Steam Quarry",
+  "description": [
+    "The <named>Steam Quarry</named> digs ore <keyword>out of a bedrock sample</keyword>. Build it at the very bottom of the world, so that the sample lies <keyword>under the block right behind the controller</keyword> - the quarry mines only the ore of that sample",
+    "",
+    "Put <named>drills</named> into its input hatch - they <warning>wear out</warning> from time to time. Better drills dig faster and give more ore, and <keyword>harder ores need better drills</keyword>",
+    "",
+    "On steam it can run recipes of at most <property>2 EU/t</property> with bronze hatches and <property>4 EU/t</property> if at least one hatch is steel. <warning>Sample recipes need 3-4 EU/t</warning>, so don't forget a <named>steel hatch</named>",
+    "",
+    "Not every ore can be quarried - check <keyword>EMI</keyword> to see which drills work with your sample",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Steam Quarry</named> добывает руду <keyword>из бедрок-сэмпла</keyword>. Строй его на самом дне мира так, чтобы сэмпл лежал <keyword>под блоком сразу за контроллером</keyword> - карьер добывает только руду этого сэмпла",
+    "",
+    "Клади во входной хетч <named>буры</named> - время от времени они <warning>изнашиваются</warning>. Буры получше копают быстрее и дают больше руды, а <keyword>для твёрдых руд нужны буры получше</keyword>",
+    "",
+    "На паре он тянет рецепты не больше <property>2 EU/t</property> с бронзовыми хетчами и <property>4 EU/t</property>, если хотя бы один хетч стальной. <warning>Рецептам сэмплов нужно 3-4 EU/t</warning>, так что не забудь про <named>стальной хетч</named>",
+    "",
+    "Не каждую руду можно добывать карьером - смотри в <keyword>EMI</keyword>, какие буры подходят к твоему сэмплу"
+  ],
   "icon": "modern_industrialization:steam_quarry",
   "x": 2.5,
   "y": 12.5,

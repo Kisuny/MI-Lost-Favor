@@ -1,15 +1,17 @@
 {
   "title": "Ring Of Echoing Arcana",
   "icon": "malum:ring_of_echoing_arcana",
-  "x": 83.5,
-  "y": 5.5,
+  "x": 17,
   "deps": {
     "all": [
-      "magic_step_ii/null_slate",
-      "magic_step_ii/mnemonic_fragment",
+      "magic_step_iii/null_slate",
+      "magic_step_iii/mnemonic_fragment",
       "magic_step_ii/ring_of_manaweaving"
     ]
   },
+  "aliases": [
+    "magic_step_ii/ring_of_echoing_arcana"
+  ],
   "tasks": [
     {
       "item": "malum:ring_of_echoing_arcana",

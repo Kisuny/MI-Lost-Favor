@@ -1,8 +1,13 @@
 {
   "title": "Hellforged Bow",
   "icon": "animusnv:hellforged_bow",
-  "x": 77.5,
-  "y": 17,
+  "x": 20.5,
+  "y": 29.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/wip"
+    ]
+  },
   "tasks": [
     {
       "item": "animusnv:hellforged_bow",

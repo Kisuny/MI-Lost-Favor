@@ -1,0 +1,35 @@
+{
+  "title": "Wildlife",
+  "icon": "minecraft:allay_spawn_egg",
+  "x": 4,
+  "y": 0,
+  "deps": {
+    "all": [
+      "field_guide/smelting"
+    ]
+  },
+  "description": [
+    "Allays collect items for you. This one is spinning.",
+    {
+      "type": "entity",
+      "entity": "minecraft:allay",
+      "height": 64,
+      "spin": true
+    },
+    "Villages are good places to trade. Press the button to find the nearest one.",
+    {
+      "type": "locate",
+      "kind": "structure",
+      "ref": "#minecraft:village",
+      "radius": 10,
+      "label": "Nearest village",
+      "coords": true,
+      "compass": true
+    }
+  ],
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ]
+}

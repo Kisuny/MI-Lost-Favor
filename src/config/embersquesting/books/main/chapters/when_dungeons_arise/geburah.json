@@ -26,7 +26,7 @@
   ],
   "icon": "fdbosses:geburah_trophy",
   "x": 18.5,
-  "y": 36,
+  "y": 36.5,
   "deps": {
     "all": [
       "when_dungeons_arise/world_tier_summit"
@@ -43,5 +43,17 @@
     }
   ],
   "complete": "any",
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "pose": "still",
+          "scale": 0.4,
+          "entity": "fdbosses:geburah"
+        }
+      ]
+    }
+  }
 }

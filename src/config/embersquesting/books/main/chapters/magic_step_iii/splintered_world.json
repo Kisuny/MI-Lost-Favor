@@ -1,16 +1,19 @@
 {
   "title": "Splintered World",
   "icon": "gaze:splintered_world",
-  "x": 80.5,
-  "y": 7.5,
+  "x": 14,
+  "y": 2,
   "deps": {
     "all": [
       "magic_step_ii/umbral_spirit",
-      "magic_step_ii/malignant_pewter_ingot",
-      "magic_step_ii/auric_embers",
-      "magic_step_ii/complete_design"
+      "magic_step_iii/malignant_pewter_ingot",
+      "magic_step_iii/auric_embers",
+      "magic_step_iii/complete_design"
     ]
   },
+  "aliases": [
+    "magic_step_ii/splintered_world"
+  ],
   "tasks": [
     {
       "item": "gaze:splintered_world",

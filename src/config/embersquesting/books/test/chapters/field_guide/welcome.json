@@ -1,0 +1,17 @@
+{
+  "title": "How to Read This",
+  "icon": "minecraft:book",
+  "x": 0,
+  "y": 0,
+  "description": [
+    "Quest text can be <b>bold</b>, <i>italic</i> or <c value=#ff5555>colored</c>.",
+    "You can also use <item value=minecraft:apple/> inline icons and old style codes like &2green&r.",
+    "Hold the mouse over <hover item=minecraft:diamond_sword>this sword</hover> to see its tooltip, or over <hover text=\"Plain text works too\">this phrase</hover>.",
+    "Next page: <click action=open_quest value=field_guide/smelting>Smelting</click>."
+  ],
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ]
+}

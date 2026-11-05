@@ -9,8 +9,13 @@
     "Полет в <magic>финальной стадии</magic>"
   ],
   "icon": "angelring:angel_ring",
-  "x": 40,
-  "y": 26.5,
+  "x": 20.5,
+  "y": 25,
+  "deps": {
+    "all": [
+      "magic_step_iii/wip"
+    ]
+  },
   "tasks": [
     {
       "item": "angelring:angel_ring",

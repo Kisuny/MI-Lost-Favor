@@ -1,7 +1,7 @@
 {
   "title": "Nether Star",
   "icon": "cataclysm:witherite_ingot",
-  "x": 17,
+  "x": 16,
   "y": 35.5,
   "deps": {
     "all": [
@@ -19,5 +19,16 @@
     }
   ],
   "complete": "any",
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 2.0,
+          "entity": "cataclysm:the_harbinger"
+        }
+      ]
+    }
+  }
 }

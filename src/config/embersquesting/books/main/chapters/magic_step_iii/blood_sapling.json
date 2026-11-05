@@ -1,8 +1,13 @@
 {
   "title": "Blood Sapling",
   "icon": "animusnv:blood_sapling",
-  "x": 75.5,
-  "y": 15.5,
+  "x": 18.5,
+  "y": 28,
+  "deps": {
+    "all": [
+      "magic_step_iii/wip"
+    ]
+  },
   "tasks": [
     {
       "item": "animusnv:blood_sapling",

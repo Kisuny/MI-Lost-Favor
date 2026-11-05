@@ -1,0 +1,25 @@
+{
+  "title": "Meditation Ring",
+  "icon": "gaze:meditation_ring",
+  "x": 15,
+  "y": 2,
+  "deps": {
+    "all": [
+      "magic_step_iii/fused_consciousness",
+      "magic_step_iii/malignant_pewter_ingot",
+      "magic_step_iii/null_slate",
+      "magic_step_iii/mnemonic_fragment"
+    ]
+  },
+  "aliases": [
+    "magic_step_ii/meditation_ring"
+  ],
+  "tasks": [
+    {
+      "item": "gaze:meditation_ring",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond",
+  "lines_in": "hover"
+}

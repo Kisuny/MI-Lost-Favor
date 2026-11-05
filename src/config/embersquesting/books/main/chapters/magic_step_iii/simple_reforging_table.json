@@ -1,8 +1,13 @@
 {
   "title": "Simple Reforging Table",
   "icon": "apotheosis:simple_reforging_table",
-  "x": 25.5,
-  "y": 39,
+  "x": 16,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_iii/wip"
+    ]
+  },
   "tasks": [
     {
       "item": "apotheosis:simple_reforging_table",

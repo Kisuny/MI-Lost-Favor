@@ -1,14 +1,16 @@
 {
   "title": "Malignant Pewter Ingot",
   "icon": "malum:malignant_pewter_ingot",
-  "x": 84.5,
-  "y": 5.5,
+  "x": 18,
   "deps": {
     "all": [
-      "magic_step_ii/malignant_lead",
-      "magic_step_ii/null_slate"
+      "magic_step_iii/malignant_lead",
+      "magic_step_iii/null_slate"
     ]
   },
+  "aliases": [
+    "magic_step_ii/malignant_pewter_ingot"
+  ],
   "tasks": [
     {
       "item": "malum:malignant_pewter_ingot",

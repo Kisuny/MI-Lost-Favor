@@ -29,7 +29,7 @@
     "Роняет <keyword>Электрическое ядро</keyword> и <keyword>Сферу фазы</keyword>. Добей его <property>гаечным ключом</property>, чтобы с шансом <property>50%</property> получить <named>Электронное ядро Эндера</named>."
   ],
   "icon": "fdbosses:chesed_trophy",
-  "x": 18,
+  "x": 17.5,
   "y": 35.5,
   "deps": {
     "all": [
@@ -47,5 +47,16 @@
     }
   ],
   "complete": "any",
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 4.0,
+          "entity": "fdbosses:chesed"
+        }
+      ]
+    }
+  }
 }

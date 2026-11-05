@@ -1,6 +1,6 @@
 {
   "title": "",
-  "x": 18,
+  "x": 17.5,
   "y": 18,
   "deps": {
     "all": [
@@ -13,5 +13,16 @@
       "type": "kill"
     }
   ],
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 3.0,
+          "entity": "minecraft:elder_guardian"
+        }
+      ]
+    }
+  }
 }

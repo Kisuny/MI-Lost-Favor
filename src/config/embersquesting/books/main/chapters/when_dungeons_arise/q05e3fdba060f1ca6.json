@@ -1,6 +1,6 @@
 {
   "title": "",
-  "x": 14,
+  "x": 11.5,
   "y": 35.5,
   "deps": {
     "all": [
@@ -13,5 +13,16 @@
       "type": "advancement"
     }
   ],
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 2.0,
+          "entity": "cataclysm:netherite_monstrosity"
+        }
+      ]
+    }
+  }
 }

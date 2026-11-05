@@ -1,18 +1,21 @@
 {
   "title": "Charge Necklace",
   "icon": "gaze:charge_necklace",
-  "x": 80,
-  "y": 8,
+  "x": 13.5,
+  "y": 2.5,
   "deps": {
     "all": [
       "magic_step_ii/ornate_necklace",
-      "magic_step_ii/void_salts",
+      "magic_step_iii/void_salts",
       "magic_step_ii/umbral_spirit",
-      "magic_step_ii/fused_consciousness",
-      "magic_step_ii/null_slate",
-      "magic_step_ii/mnemonic_fragment"
+      "magic_step_iii/fused_consciousness",
+      "magic_step_iii/null_slate",
+      "magic_step_iii/mnemonic_fragment"
     ]
   },
+  "aliases": [
+    "magic_step_ii/charge_necklace"
+  ],
   "tasks": [
     {
       "item": "gaze:charge_necklace",

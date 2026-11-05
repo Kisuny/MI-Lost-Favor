@@ -1,13 +1,16 @@
 {
   "title": "Malignant Pewter Plating",
   "icon": "malum:malignant_pewter_plating",
-  "x": 84.5,
-  "y": 7,
+  "x": 18,
+  "y": 1.5,
   "deps": {
     "all": [
-      "magic_step_ii/malignant_pewter_ingot"
+      "magic_step_iii/malignant_pewter_ingot"
     ]
   },
+  "aliases": [
+    "magic_step_ii/malignant_pewter_plating"
+  ],
   "tasks": [
     {
       "item": "malum:malignant_pewter_plating",

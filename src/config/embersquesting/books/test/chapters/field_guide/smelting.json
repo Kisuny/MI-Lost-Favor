@@ -1,0 +1,42 @@
+{
+  "title": "Smelting",
+  "icon": "minecraft:furnace",
+  "x": 2,
+  "y": 0,
+  "deps": {
+    "all": [
+      "field_guide/welcome"
+    ]
+  },
+  "description": [
+    "A furnace turns raw materials into something useful.",
+    {
+      "type": "image",
+      "texture": "minecraft:textures/block/furnace_front_on.png",
+      "width": 48,
+      "align": "center"
+    },
+    "You will need these:",
+    {
+      "type": "item",
+      "items": [
+        "minecraft:furnace",
+        "minecraft:coal",
+        {
+          "item": "minecraft:raw_iron",
+          "count": 4
+        }
+      ],
+      "size": 24
+    },
+    "Hover an item for its name and click it to see recipes if a recipe viewer is installed."
+  ],
+  "tasks": [
+    {
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "count": 4,
+      "mode": "detect"
+    }
+  ]
+}

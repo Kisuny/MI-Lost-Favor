@@ -1,17 +1,20 @@
 {
   "title": "Adaptive Wheel",
   "icon": "gaze:adaptive_wheel",
-  "x": 79.5,
-  "y": 7.5,
+  "x": 13,
+  "y": 2,
   "deps": {
     "all": [
       "magic_step_ii/umbral_spirit",
-      "magic_step_ii/fused_consciousness",
-      "magic_step_ii/malignant_pewter_plating",
-      "magic_step_ii/auric_embers",
+      "magic_step_iii/fused_consciousness",
+      "magic_step_iii/malignant_pewter_plating",
+      "magic_step_iii/auric_embers",
       "magic_step_ii/large_strange_crystal"
     ]
   },
+  "aliases": [
+    "magic_step_ii/adaptive_wheel"
+  ],
   "tasks": [
     {
       "item": "gaze:adaptive_wheel",

@@ -25,7 +25,7 @@
     "Роняет <keyword>Ядро огня и льда</keyword> и <keyword>Перчатку жара и стужи</keyword> - крюк-кошку, которая обрушивается ударом Малхута. Добей его <property>гаечным ключом</property>, чтобы с шансом <property>50%</property> получить <named>Электронное ядро Эндера</named>."
   ],
   "icon": "fdbosses:malkuth_trophy",
-  "x": 19,
+  "x": 19.5,
   "y": 35.5,
   "deps": {
     "all": [
@@ -43,5 +43,16 @@
     }
   ],
   "complete": "any",
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 2.0,
+          "entity": "fdbosses:malkuth"
+        }
+      ]
+    }
+  }
 }

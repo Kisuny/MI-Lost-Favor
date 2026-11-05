@@ -1,13 +1,16 @@
 {
   "title": "Malignant Stronghold Helmet",
   "icon": "malum:malignant_stronghold_helmet",
-  "x": 84.5,
-  "y": 8.5,
+  "x": 18,
+  "y": 3,
   "deps": {
     "all": [
-      "magic_step_ii/malignant_pewter_plating"
+      "magic_step_iii/malignant_pewter_plating"
     ]
   },
+  "aliases": [
+    "magic_step_ii/malignant_stronghold_helmet"
+  ],
   "tasks": [
     {
       "item": "malum:malignant_stronghold_helmet",

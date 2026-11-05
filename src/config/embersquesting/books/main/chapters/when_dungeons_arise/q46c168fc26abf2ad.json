@@ -9,7 +9,7 @@
     "Сердце станции охраняют три <curse>преследователя аннигиляции</curse>. С каждого падает <keyword>кристалл ока</keyword> - ключ к финальному боссу."
   ],
   "x": 18.5,
-  "y": 27.5,
+  "y": 27.15625,
   "deps": {
     "all": [
       "when_dungeons_arise/space_station"
@@ -29,5 +29,16 @@
   ],
   "complete": "any",
   "shape": "hexagon",
-  "size": 1.25
+  "size": 1.25,
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 2.0,
+          "entity": "legendary_monsters:annihilation_pursuer"
+        }
+      ]
+    }
+  }
 }

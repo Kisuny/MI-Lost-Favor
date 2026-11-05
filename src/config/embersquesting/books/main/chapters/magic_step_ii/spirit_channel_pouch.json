@@ -2,7 +2,12 @@
   "title": "Spirit Channel Pouch",
   "icon": "gaze:spirit_channel_pouch",
   "x": 80.5,
-  "y": 9.5,
+  "y": 12,
+  "deps": {
+    "all": [
+      "magic_step_ii/umbral_spirit"
+    ]
+  },
   "tasks": [
     {
       "item": "gaze:spirit_channel_pouch",

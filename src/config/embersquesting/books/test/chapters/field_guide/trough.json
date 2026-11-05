@@ -1,0 +1,63 @@
+{
+  "title": "Water Trough",
+  "icon": "minecraft:water_bucket",
+  "x": 6,
+  "y": 2,
+  "deps": {
+    "all": [
+      "field_guide/wildlife"
+    ]
+  },
+  "description": [
+    "Build a small stone trough and fill it with water. Drag the view to rotate it and use the layer bar to step through it.",
+    {
+      "type": "scene",
+      "height": 170,
+      "slice": "upto",
+      "key": {
+        "#": "minecraft:stone_bricks",
+        "W": "minecraft:water"
+      },
+      "layers": [
+        [
+          "###",
+          "###",
+          "###"
+        ],
+        [
+          "###",
+          "#W#",
+          "###"
+        ]
+      ],
+      "steps": [
+        {
+          "ticks": 30,
+          "caption": "Ring the middle with stone."
+        },
+        {
+          "ticks": 40,
+          "caption": "Then pour in the water.",
+          "place": [
+            {
+              "pos": [
+                1,
+                1,
+                1
+              ],
+              "block": "minecraft:water"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "type": "item",
+      "item": "minecraft:water_bucket",
+      "count": 1,
+      "mode": "detect"
+    }
+  ]
+}

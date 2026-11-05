@@ -1,8 +1,13 @@
 {
   "title": "Endshelf",
   "icon": "apothic_enchanting:endshelf",
-  "x": 33.5,
-  "y": 26.5,
+  "x": 18,
+  "y": 26,
+  "deps": {
+    "all": [
+      "magic_step_iii/wip"
+    ]
+  },
   "tasks": [
     {
       "item": "apothic_enchanting:endshelf",

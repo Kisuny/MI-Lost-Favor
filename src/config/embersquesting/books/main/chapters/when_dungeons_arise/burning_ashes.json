@@ -1,7 +1,7 @@
 {
   "title": "Burning Ashes",
   "icon": "cataclysm:bulwark_of_the_flame",
-  "x": 15,
+  "x": 13,
   "y": 35.5,
   "deps": {
     "all": [
@@ -19,5 +19,16 @@
     }
   ],
   "complete": "any",
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "scale": 2.0,
+          "entity": "cataclysm:ignis"
+        }
+      ]
+    }
+  }
 }

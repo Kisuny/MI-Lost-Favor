@@ -1,7 +1,7 @@
 {
   "title": "Necklace Of The Desert",
   "icon": "cataclysm:remnant_skull",
-  "x": 16,
+  "x": 14.5,
   "y": 35.5,
   "deps": {
     "all": [
@@ -19,5 +19,17 @@
     }
   ],
   "complete": "any",
-  "shape": "diamond"
+  "shape": "diamond",
+  "icons": {
+    "all": {
+      "layers": [
+        {
+          "spin": true,
+          "pose": "still",
+          "scale": 2.0,
+          "entity": "cataclysm:ancient_remnant"
+        }
+      ]
+    }
+  }
 }

@@ -1,8 +1,24 @@
 {
   "title": "Earth Promise",
+  "description": [
+    "<nature>The earth keeps its promise.</nature>",
+    "",
+    "When a single hit would take a <warning>large share of your health</warning>, the charm <positive>blocks it completely</positive> and goes on cooldown.",
+    "",
+    "<curse>Relic:</curse> only bearers of the <blood>Seven Curses</blood> or the <named>Ring of Redemption</named> can use it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<nature>Земля держит своё слово.</nature>",
+    "",
+    "Когда один удар отнял бы <warning>большую долю здоровья</warning>, талисман <positive>полностью блокирует его</positive> и уходит на перезарядку.",
+    "",
+    "<curse>Реликвия:</curse> пользоваться ей могут только носители <blood>Семи Проклятий</blood> или <named>Кольца Искупления</named>."
+  ],
   "icon": "enigmaticlegacyplus:earth_promise",
   "x": 39,
-  "y": 45.5,
+  "y": 46.5,
   "deps": {
     "all": [
       "when_dungeons_arise/sacred_crystal",

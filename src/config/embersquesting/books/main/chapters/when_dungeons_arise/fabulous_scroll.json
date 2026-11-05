@@ -1,8 +1,20 @@
 {
   "title": "Fabulous Scroll",
+  "description": [
+    "<wind><wave>Free flight anywhere.</wave></wind>",
+    "",
+    "The price is your experience, and it drains <warning>fast</warning>. Within range of an active <keyword>Beacon</keyword> the flight is <positive>completely free</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<wind><wave>Свободный полёт где угодно.</wave></wind>",
+    "",
+    "Цена - твой опыт, и он тает <warning>быстро</warning>. В радиусе активного <keyword>маяка</keyword> полёт <positive>полностью бесплатный</positive>."
+  ],
   "icon": "enigmaticlegacyplus:fabulous_scroll",
   "x": 38,
-  "y": 29.5,
+  "y": 29,
   "deps": {
     "all": [
       "when_dungeons_arise/etherium_ore",

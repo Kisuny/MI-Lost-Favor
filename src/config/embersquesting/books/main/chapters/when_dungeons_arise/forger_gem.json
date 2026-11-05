@@ -1,8 +1,28 @@
 {
   "title": "Forger Gem",
+  "description": [
+    "Keep it in your inventory while working at an <property>anvil</property>:",
+    "",
+    "- forging costs <positive>half the experience</positive>;",
+    "- the anvil wears out more slowly;",
+    "- the result can come out <keyword>more durable</keyword>.",
+    "",
+    "Also found in <property>dungeon, mineshaft and stronghold chests</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Держи его в инвентаре, работая за <property>наковальней</property>:",
+    "",
+    "- ковка стоит <positive>вдвое меньше опыта</positive>;",
+    "- наковальня изнашивается медленнее;",
+    "- результат может получиться <keyword>прочнее</keyword>.",
+    "",
+    "Также встречается в <property>сундуках данжей, шахт и крепостей</property>."
+  ],
   "icon": "enigmaticlegacyplus:forger_gem",
   "x": 38,
-  "y": 48.5,
+  "y": 49.5,
   "deps": {
     "all": [
       "when_dungeons_arise/quartz_ring"

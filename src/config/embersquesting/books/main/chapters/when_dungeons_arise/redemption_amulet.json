@@ -1,13 +1,42 @@
 {
   "title": "Redemption Amulet",
+  "description": [
+    "An <keyword>Enigmatic Amulet</keyword> reforged with <magic>sacred light</magic>. It still summons an <soul>Extradimensional Vessel</soul> with your items and experience when you die.",
+    "",
+    "On top of that:",
+    "- the stronger your <property>attack charge</property>, the less damage you take;",
+    "- you take <positive><pulse>no damage</pulse></positive> from creatures you have <property>not attacked</property> yet;",
+    "- bonus <nature>Luck</nature>, damage reduction and armor toughness.",
+    "",
+    "<curse>Relic:</curse> only bearers of the <blood>Seven Curses</blood> or the <named>Ring of Redemption</named> can use it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Загадочный амулет</keyword>, перекованный <magic>священным светом</magic>. При смерти он по-прежнему призывает <soul>Межпространственный сосуд</soul> с твоими вещами и опытом.",
+    "",
+    "Сверх того:",
+    "- чем сильнее <property>заряд атаки</property>, тем меньше получаемый урон;",
+    "- существа, которых ты <property>ещё не атаковал</property>, <positive><pulse>не наносят урона</pulse></positive>;",
+    "- бонус к <nature>удаче</nature>, снижению урона и прочности брони.",
+    "",
+    "<curse>Реликвия:</curse> пользоваться им могут только носители <blood>Семи Проклятий</blood> или <named>Кольца Искупления</named>."
+  ],
   "icon": "enigmaticlegacyplus:redemption_amulet",
-  "x": 43,
-  "y": 48,
+  "x": 38.5,
+  "y": 25.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/pure_heart",
+      "when_dungeons_arise/sacred_crystal"
+    ]
+  },
   "tasks": [
     {
       "item": "enigmaticlegacyplus:redemption_amulet",
       "type": "item"
     }
   ],
-  "shape": "diamond"
+  "shape": "heart",
+  "size": 1.25
 }

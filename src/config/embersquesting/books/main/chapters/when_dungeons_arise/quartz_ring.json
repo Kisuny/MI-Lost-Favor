@@ -1,8 +1,20 @@
 {
   "title": "Quartz Ring",
+  "description": [
+    "Reduces <magic>magic damage</magic> you receive.",
+    "",
+    "The base for the <keyword>Forger's Gem</keyword>, the <keyword>Ring of Starlight</keyword> and the <keyword>Angel's Blessing</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Снижает получаемый <magic>магический урон</magic>.",
+    "",
+    "Основа для <keyword>Самоцвета кузнеца</keyword>, <keyword>Кольца света звёзд</keyword> и <keyword>Благословения ангела</keyword>."
+  ],
   "icon": "enigmaticlegacyplus:quartz_ring",
   "x": 38,
-  "y": 47.5,
+  "y": 48.5,
   "deps": {
     "all": [
       "when_dungeons_arise/golden_ring"

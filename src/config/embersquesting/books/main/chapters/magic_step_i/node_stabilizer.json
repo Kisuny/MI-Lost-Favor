@@ -23,6 +23,13 @@
   "icon": "thaumaturge:node_stabilizer",
   "x": 72.5,
   "y": 27.5,
+  "deps": {
+    "all": [
+      "magic_step_i/recharge_pedestal",
+      "magic_step_i/nitor_yellow"
+    ]
+  },
+  "lines_in": "never",
   "tasks": [
     {
       "item": "thaumaturge:node_stabilizer",

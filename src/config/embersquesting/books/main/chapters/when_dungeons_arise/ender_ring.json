@@ -1,8 +1,20 @@
 {
   "title": "Ender Ring",
+  "description": [
+    "Open your <magic>Ender Chest</magic> from anywhere - through the inventory or with a key.",
+    "",
+    "Bearers of the <blood>Seven Curses</blood> get this ability from the cursed ring itself.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Открывает <magic>сундук Эндера</magic> откуда угодно - через инвентарь или по клавише.",
+    "",
+    "Носители <blood>Семи Проклятий</blood> получают эту способность от самого проклятого кольца."
+  ],
   "icon": "enigmaticlegacyplus:ender_ring",
   "x": 38.5,
-  "y": 44.5,
+  "y": 45.5,
   "deps": {
     "all": [
       "when_dungeons_arise/iron_ring"

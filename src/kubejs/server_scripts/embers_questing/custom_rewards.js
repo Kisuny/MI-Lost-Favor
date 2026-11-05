@@ -183,21 +183,25 @@ Object.entries({
         stages: ["monazite_ore"]
     },
 
-    "milf:stage/titanium_ore": {
-        stages: ["titanium_ore"]
+    "milf:stage/wip_ores": {
+        stages: ["monazite_ore", "titanium_ore", "platinum_ore", "tungsten_ore", "iridium_ore"]
     },
 
-    "milf:stage/platinum_ore": {
-        stages: ["platinum_ore"]
-    },
+    // "milf:stage/titanium_ore": {
+    //     stages: ["titanium_ore"]
+    // },
 
-    "milf:stage/tungsten_ore": {
-        stages: ["tungsten_ore"]
-    },
+    // "milf:stage/platinum_ore": {
+    //     stages: ["platinum_ore"]
+    // },
 
-    "milf:stage/iridium_ore": {
-        stages: ["iridium_ore"]
-    },
+    // "milf:stage/tungsten_ore": {
+    //     stages: ["tungsten_ore"]
+    // },
+
+    // "milf:stage/iridium_ore": {
+    //     stages: ["iridium_ore"]
+    // },
 
     //#endregion
 

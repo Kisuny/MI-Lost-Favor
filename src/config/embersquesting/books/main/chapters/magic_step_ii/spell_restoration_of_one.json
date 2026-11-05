@@ -1,0 +1,117 @@
+{
+  "title": "Restoration of One",
+  "description": [
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_dispel"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_heal"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    "",
+    "<positive>Heals</positive> you and <positive>purges</positive> active effects. Works great inscribed into armor with the <magic>Reactive</magic> enchantment",
+    "",
+    "<warning>Dispel removes positive effects too!</warning>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    {
+      "items": [
+        "ars_nouveau:glyph_self"
+      ],
+      "align": "left",
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_dispel"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_heal"
+      ],
+      "type": "item"
+    },
+    {
+      "inline": true,
+      "text": "→",
+      "type": "label"
+    },
+    {
+      "inline": true,
+      "items": [
+        "ars_nouveau:glyph_amplify"
+      ],
+      "type": "item"
+    },
+    "",
+    "<positive>Лечит</positive> тебя и <positive>снимает</positive> наложенные эффекты. Отлично работает, если записать его в броню с зачарованием <magic>Reactive</magic>",
+    "",
+    "<warning>Dispel снимает и полезные эффекты тоже!</warning>"
+  ],
+  "icon": "ars_nouveau:glyph_heal",
+  "x": 96,
+  "y": 14.5,
+  "deps": {
+    "all": [
+      "magic_step_ii/lost_codex_entry"
+    ]
+  },
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "shape": "diamond"
+}

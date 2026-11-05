@@ -1,18 +1,22 @@
 {
   "title": "Lost Favor",
-  "item": {
-    "color": "#4A467A",
-    "emblem": { "shape": "star" }
-  },
   "icon": "milf:textures/item/sniffer.png",
   "style": "milf:milf",
-  "inventory": { "mode": "icon", "anchor": "top_left", "offset": [0, 0], "badge": true },
+  "item": {
+    "color": "#4A467A",
+    "emblem": {
+      "shape": "star"
+    }
+  },
+  "inventory": {
+    "mode": "icon"
+  },
   "groups": {
     "shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_magic_midgame": {
       "title": "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Midgame"
     },
     "shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_magic_endgame": {
-      "title": "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Endgame"
+      "title": "<shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5><magic>Endgame [WIP]"
     },
     "magic_shadow_dx_0_5_dy_0_5_color_color_400000_alpha_0_5_primitive": {
       "title": "<magic><shadow dx=0.5 dy=0.5 color=color=400000 alpha=0.5>Primitive"

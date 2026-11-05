@@ -1071,6 +1071,9 @@
         },
         {
             "pakku_id": "N72gtbnE38RMm5bl",
+            "pakku_links": [
+                "P0UrHIaWQVjQvmY0"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "applied-thaumaturge"
@@ -3455,6 +3458,50 @@
             ]
         },
         {
+            "pakku_id": "R84avWC2IZ4dunBu",
+            "type": "SHADER",
+            "slug": {
+                "curseforge": "complementary-reimagined"
+            },
+            "name": {
+                "curseforge": "Complementary Shaders - Reimagined"
+            },
+            "id": {
+                "curseforge": "627557"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ComplementaryReimagined_r5.9.3.zip",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.8",
+                        "1.21.5",
+                        "1.21.4",
+                        "1.21.1",
+                        "1.21.6",
+                        "1.21.3",
+                        "1.21.7",
+                        "1.21.2",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8884/654/ComplementaryReimagined_r5.9.3.zip",
+                    "id": "8884654",
+                    "parent_id": "627557",
+                    "hashes": {
+                        "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6",
+                        "md5": "54cd249cd1e95a4e19f0ea2cb4369e71"
+                    },
+                    "required_dependencies": [],
+                    "size": 553397,
+                    "date_published": "2026-09-15T06:41:18.150Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cikP0MhatMVfOEts",
             "type": "MOD",
             "slug": {
@@ -4870,7 +4917,7 @@
             ]
         },
         {
-            "pakku_id": "87R9lfyeItkIDIFz",
+            "pakku_id": "DU5oLkXbE3LajWw4",
             "type": "MOD",
             "slug": {
                 "curseforge": "embers-questing"
@@ -4884,7 +4931,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "embersquesting-neoforge-1.21.1-1.5.0.jar",
+                    "file_name": "embersquesting-neoforge-1.21.1-1.6.0.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -4892,16 +4939,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9430/276/embersquesting-neoforge-1.21.1-1.5.0.jar",
-                    "id": "9430276",
+                    "url": "https://edge.forgecdn.net/files/9446/64/embersquesting-neoforge-1.21.1-1.6.0.jar",
+                    "id": "9446064",
                     "parent_id": "1752806",
                     "hashes": {
-                        "sha1": "e1a5f7238a3d67039008fceb23627262e7a73ef0",
-                        "md5": "b007eddd57909b0e9445e4b107c83ca2"
+                        "sha1": "4dacc021702a663e488fd5353cd0762e893f169e",
+                        "md5": "c927fa77e2ad590c497e899271ae7d12"
                     },
                     "required_dependencies": [],
-                    "size": 12959066,
-                    "date_published": "2026-11-04T03:38:44.143Z"
+                    "size": 12969025,
+                    "date_published": "2026-11-04T23:37:02.273Z"
                 }
             ]
         },
@@ -16449,6 +16496,45 @@
                     "required_dependencies": [],
                     "size": 764237,
                     "date_published": "2026-10-23T00:00:00Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "P0UrHIaWQVjQvmY0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "thaumaturge"
+            },
+            "name": {
+                "curseforge": "Thaumaturge"
+            },
+            "id": {
+                "curseforge": "1628024"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "thaumaturge-1.21.1-NeoForge-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9452/543/thaumaturge-1.21.1-NeoForge-1.1.0.jar",
+                    "id": "9452543",
+                    "parent_id": "1628024",
+                    "hashes": {
+                        "sha1": "89c6320f8dc0b50b72ee1e6d38314e7573beb316",
+                        "md5": "7736a9822143a73b2354121dd145f27f"
+                    },
+                    "required_dependencies": [
+                        "940057",
+                        "309927"
+                    ],
+                    "size": 33840402,
+                    "date_published": "2026-11-05T10:52:51.840Z"
                 }
             ]
         },

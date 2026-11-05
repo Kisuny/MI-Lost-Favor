@@ -1,8 +1,26 @@
 {
   "title": "Night Scroll",
+  "description": [
+    "<soul>The night belongs to you.</soul>",
+    "",
+    "- <keyword>Phantoms</keyword> no longer spawn near you - even though you never sleep.",
+    "- Bonus attack damage, damage resistance and lifesteal that depend on the <property>light level</property> around you.",
+    "",
+    "<curse>For the cursed:</curse> only bearers of the <blood>Seven Curses</blood> can use it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<soul>Ночь принадлежит тебе.</soul>",
+    "",
+    "- Рядом с тобой больше не появляются <keyword>фантомы</keyword> - хоть ты и не спишь.",
+    "- Бонус к урону, стойкости к урону и вампиризму, зависящий от <property>уровня освещения</property> вокруг.",
+    "",
+    "<curse>Для проклятых:</curse> пользоваться им могут только носители <blood>Семи Проклятий</blood>."
+  ],
   "icon": "enigmaticlegacyplus:night_scroll",
   "x": 39,
-  "y": 29,
+  "y": 28.5,
   "deps": {
     "all": [
       "when_dungeons_arise/twisted_heart"

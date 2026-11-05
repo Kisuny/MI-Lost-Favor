@@ -1,8 +1,20 @@
 {
   "title": "Iron Ring",
+  "description": [
+    "A plain ring. On its own it is just decoration, but it is the <keyword>base</keyword> for every ring in this branch: <keyword>Exquisite</keyword>, <keyword>Ender</keyword>, <keyword>Miner's</keyword> and <keyword>Quenching</keyword> rings, plus the <keyword>Heart of the Golem</keyword>.",
+    "",
+    "Also found in <property>dungeons, mineshafts and strongholds</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Простое кольцо. Само по себе лишь украшение, но служит <keyword>основой</keyword> для всех колец этой ветки: <keyword>Изысканного</keyword>, <keyword>Эндера</keyword>, <keyword>Шахтёрского</keyword> и <keyword>Закалки</keyword>, а также для <keyword>Сердца голема</keyword>.",
+    "",
+    "Также встречается в <property>данжах, шахтах и крепостях</property>."
+  ],
   "icon": "enigmaticlegacyplus:iron_ring",
   "x": 38,
-  "y": 45.5,
+  "y": 46.5,
   "deps": {
     "all": [
       "first_steps/iron_ingot"

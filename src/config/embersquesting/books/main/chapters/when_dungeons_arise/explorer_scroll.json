@@ -1,8 +1,16 @@
 {
   "title": "Explorer Scroll",
+  "description": [
+    "Briefly <magic><pulse>highlights treasures</pulse></magic> around you - chests and other valuables become easy to spot.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "На время <magic><pulse>подсвечивает сокровища</pulse></magic> вокруг - сундуки и прочие ценности легко заметить."
+  ],
   "icon": "enigmaticlegacyplus:explorer_scroll",
   "x": 37,
-  "y": 30,
+  "y": 29.5,
   "deps": {
     "all": [
       "when_dungeons_arise/blank_scroll"

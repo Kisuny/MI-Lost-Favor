@@ -1,8 +1,16 @@
 {
   "title": "Hunter Scroll",
+  "description": [
+    "The more monsters you have slain - and the <property>more kinds</property> of them - the more <positive>damage resistance</positive> the scroll gives.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Чем больше монстров ты убил - и чем <property>больше их видов</property> - тем больше <positive>стойкости к урону</positive> даёт свиток."
+  ],
   "icon": "enigmaticlegacyplus:hunter_scroll",
   "x": 36.5,
-  "y": 29.5,
+  "y": 29,
   "deps": {
     "all": [
       "when_dungeons_arise/blank_scroll"

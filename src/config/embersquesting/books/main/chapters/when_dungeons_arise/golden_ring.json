@@ -1,8 +1,20 @@
 {
   "title": "Golden Ring",
+  "description": [
+    "Makes <fire>Piglins</fire> <positive>neutral</positive> towards you - no need to wear gold armor.",
+    "",
+    "Also the base for the <keyword>Magic Quartz Ring</keyword> and several cursed relics.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Делает <fire>пиглинов</fire> <positive>нейтральными</positive> к тебе - золотая броня больше не нужна.",
+    "",
+    "Также основа для <keyword>Кольца магического кварца</keyword> и нескольких проклятых реликвий."
+  ],
   "icon": "enigmaticlegacyplus:golden_ring",
   "x": 38,
-  "y": 46.5,
+  "y": 47.5,
   "deps": {
     "all": [
       "when_dungeons_arise/iron_ring"

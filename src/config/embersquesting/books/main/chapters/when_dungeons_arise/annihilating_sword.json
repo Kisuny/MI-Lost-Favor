@@ -1,8 +1,43 @@
 {
   "title": "Annihilating Sword",
+  "description": [
+    "<blood>Eldritch weapon.</blood> Only the <curse>Worthy</curse> - those who have carried the Seven Curses long enough - can craft and wield it.",
+    "",
+    "<named>Recipe:</named> a <keyword>tainted Heart of the Abyss</keyword> in the center, a <keyword>Nefarious Ingot</keyword> above it, a <keyword>Twisted Heart</keyword> below it, abyssal relics in all four corners, the side slots empty. The more <soul>Hearts of the Abyss</soul> you have obtained, the more corner relics <positive>come back</positive> after crafting.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>In battle:</named> every hit builds up <glitch>Annihilation Points</glitch> - the more damage and the tougher the target, the faster. Past a threshold, a hit may deal <blood>massive</blood> damage.",
+    "",
+    "With the other hand empty:",
+    "- in the <property>main hand</property>, hold <property>RMB</property> to spend charge on a stronger strike;",
+    "- in the <property>off hand</property>, it can <wind>block</wind>, and a well-timed block grants charge.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<blood>Потустороннее оружие.</blood> Создать его и сражаться им могут только <curse>Достойные</curse> - те, кто достаточно долго носил Семь Проклятий.",
+    "",
+    "<named>Рецепт:</named> <keyword>осквернённое Сердце Бездны</keyword> в центре, <keyword>Гнусный слиток</keyword> над ним, <keyword>Искажённое сердце</keyword> под ним, реликвии бездны во всех четырёх углах, боковые слоты пустые. Чем больше <soul>Сердец Бездны</soul> ты добыл, тем больше угловых реликвий <positive>вернётся</positive> после крафта.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>В бою:</named> каждый удар копит <glitch>очки аннигиляции</glitch> - тем быстрее, чем выше урон и крепче цель. После порога удар может нанести <blood>колоссальный</blood> урон.",
+    "",
+    "Если вторая рука пуста:",
+    "- в <property>основной руке</property> зажми <property>ПКМ</property>, чтобы потратить заряд на усиленный удар;",
+    "- во <property>второй руке</property> им можно <wind>блокировать</wind>, а блок в нужный момент даёт заряд."
+  ],
   "icon": "enigmaticlegacyplus:annihilating_sword{\"enigmaticlegacyplus:eldritch_timer\":0.0f}",
-  "x": 41,
-  "y": 48,
+  "x": 38,
+  "y": 44.5,
+  "deps": {
+    "all": [
+      "when_dungeons_arise/abyssal_heart"
+    ]
+  },
   "tasks": [
     {
       "match_components": "none",

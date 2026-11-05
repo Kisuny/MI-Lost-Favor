@@ -1,8 +1,26 @@
 {
   "title": "Miner Ring",
+  "description": [
+    "A <flame>pocket blast furnace</flame> on your finger.",
+    "",
+    "- Blocks you mine drop <property>already smelted</property>.",
+    "- Hold <property>Shift</property> to smelt dropped items lying nearby.",
+    "",
+    "Smelting uses the ring's <keyword>fuel bar</keyword>. It refills slowly on its own, or <property>RMB</property> on the ring with fuel to top it up.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<flame>Карманная доменная печь</flame> на пальце.",
+    "",
+    "- Добытые блоки выпадают <property>уже переплавленными</property>.",
+    "- Зажми <property>Shift</property>, чтобы переплавить лежащие рядом предметы.",
+    "",
+    "Плавка тратит <keyword>шкалу топлива</keyword> кольца. Она медленно восполняется сама, или нажми <property>ПКМ</property> топливом по кольцу, чтобы дозаправить."
+  ],
   "icon": "enigmaticlegacyplus:miner_ring",
   "x": 37.5,
-  "y": 44.5,
+  "y": 45.5,
   "deps": {
     "all": [
       "when_dungeons_arise/iron_ring"

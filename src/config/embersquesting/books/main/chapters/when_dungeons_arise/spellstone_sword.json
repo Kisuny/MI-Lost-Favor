@@ -1,8 +1,20 @@
 {
   "title": "Spellstone Sword",
+  "description": [
+    "A blade made from a <keyword>Spellcore</keyword> and <keyword>Spellstone Debris</keyword> that can borrow the power of any <magic>spellstone</magic>.",
+    "",
+    "Hold a spellstone in your <property>off hand</property> and press <property>RMB</property> with the sword to make it <wave>resonate</wave> with that stone. Each stone gives the blade its own three effects.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Клинок из <keyword>ядра заклинаний</keyword> и <keyword>обломков камней заклинаний</keyword>, способный заимствовать силу любого <magic>камня заклинаний</magic>.",
+    "",
+    "Возьми камень во <property>вторую руку</property> и нажми <property>ПКМ</property> мечом, чтобы он начал <wave>резонировать</wave> с этим камнем. Каждый камень даёт клинку свои три эффекта."
+  ],
   "icon": "enigmaticlegacyplus:spellstone_sword",
   "x": 38,
-  "y": 31,
+  "y": 30.5,
   "deps": {
     "all": [
       "when_dungeons_arise/spellcore"

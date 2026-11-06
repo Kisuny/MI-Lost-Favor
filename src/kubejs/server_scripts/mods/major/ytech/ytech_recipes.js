@@ -117,17 +117,12 @@ ServerEvents.recipes(event => {
         removeRecipeType: "ytech:remaining_shaped_crafting" 
     })
 
-    yTechShaped(event, {
-        pattern: [
-            ' N ',
-            ' WB',
-            '   '
+    yTechShapeless(event, {
+        inputItems: [
+            [{ tag: "c:leathers" }],
+            [{ tag: "milf:knives" }],
+            [{ tag: "ytech:bone_needles" }]
         ],
-        key: {
-            W: { "tag": "c:leathers" },
-            B: { "tag": "milf:knives" },
-            N: { "tag": "ytech:bone_needles" }
-        },
         outputItems: [[{ id: "ytech:leather_strips" }, 2]],
         removeRecipe: true
     })

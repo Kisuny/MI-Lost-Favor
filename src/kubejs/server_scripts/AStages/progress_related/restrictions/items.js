@@ -18,7 +18,6 @@ Object.entries({
                 "minecraft:axolotl_bucket",
                 "minecraft:tadpole_bucket",
                 "minecraft:lava_bucket",
-                "minecraft:powder_snow_bucket",
                 "minecraft:milk_bucket"
 
             ],

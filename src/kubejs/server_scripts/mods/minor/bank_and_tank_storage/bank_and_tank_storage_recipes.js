@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         key: {
             A: { item: "modern_industrialization:bronze_rod" },
             I: { item: "modern_industrialization:bronze_ingot" },
-            B: {item: "toxony:potion_flask"}
+            B: {item: "minecraft:glass_bottle"}
         },
         outputItems: [[{id: "tankstorage:tank_1"}, 1]],
         compatOff: true

@@ -1,0 +1,42 @@
+{
+  "title": "Spawner Runes",
+  "description": [
+    "<keyword>Mob Spawners</keyword> can be reshaped with <magic>runes</magic>: faster spawns, more mobs, babies, burning, silence, no AI and much more.",
+    "",
+    "Hold a rune and press <property>RMB</property> on a spawner to apply it. Most runes can be <magic>reversed</magic> by holding <keyword>Nether Quartz</keyword> in the other hand.",
+    "",
+    "<warning>For now spawners cannot be picked up</warning> - work with them where they stand. Later in your progression you will learn to <positive>take them with you</positive>.",
+    "",
+    "Look at a spawner with <keyword>Jade</keyword> to see its current stats, and check <keyword>JEI</keyword> for the exact effect and limits of every rune.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<keyword>Спавнеры мобов</keyword> можно перестраивать <magic>рунами</magic>: быстрее спавн, больше мобов, детёныши, горение, тишина, отсутствие ИИ и многое другое.",
+    "",
+    "Возьми руну и нажми <property>ПКМ</property> по спавнеру, чтобы применить её. Действие большинства рун можно <magic>обратить</magic>, держа <keyword>кварц Незера</keyword> во второй руке.",
+    "",
+    "<warning>Пока что спавнеры нельзя забрать</warning> - работай с ними там, где они стоят. Дальше по прогрессии ты научишься <positive>забирать их с собой</positive>.",
+    "",
+    "Посмотри на спавнер с <keyword>Jade</keyword>, чтобы увидеть его текущие параметры, а точный эффект и пределы каждой руны смотри в <keyword>JEI</keyword>."
+  ],
+  "icon": "minecraft:spawner",
+  "x": 42.0,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_i/ingot_void"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/apotheosis_runes"
+  ],
+  "tasks": [
+    {
+      "type": "checkmark"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "gear",
+  "size": 1.25
+}

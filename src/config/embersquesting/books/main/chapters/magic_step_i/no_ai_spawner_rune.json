@@ -1,0 +1,40 @@
+{
+  "title": "Rune of Stupor",
+  "description": [
+    "Spawned mobs have <soul>no AI</soul>: they just float in place and do nothing - but unlike true no-AI mobs they can still be <property>pushed</property>.",
+    "",
+    "<positive>The best rune for big farms</positive>: much lower server load and easy-to-control mobs.",
+    "",
+    "Hold the rune and press <property>RMB</property> on a <keyword>Mob Spawner</keyword> - the rune is consumed.",
+    "With <keyword>Nether Quartz</keyword> in the other hand the effect is <magic>reversed</magic> - the quartz is not consumed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Созданные мобы <soul>лишены ИИ</soul>: просто висят на месте и ничего не делают - но, в отличие от настоящих мобов без ИИ, их всё ещё можно <property>толкать</property>.",
+    "",
+    "<positive>Лучшая руна для больших ферм</positive>: намного меньше нагрузка на сервер и мобами легко управлять.",
+    "",
+    "Возьми руну и нажми <property>ПКМ</property> по <keyword>спавнеру мобов</keyword> - руна расходуется.",
+    "С <keyword>кварцем Незера</keyword> во второй руке эффект <magic>обращается</magic> - кварц не тратится."
+  ],
+  "icon": "apotheosis:no_ai_spawner_rune",
+  "x": 40.64,
+  "y": 9.1,
+  "deps": {
+    "all": [
+      "magic_step_i/infused_spawner_rune"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/no_ai_spawner_rune"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:no_ai_spawner_rune",
+      "type": "item"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "diamond"
+}

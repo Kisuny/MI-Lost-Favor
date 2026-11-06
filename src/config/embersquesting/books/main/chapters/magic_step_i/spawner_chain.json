@@ -1,0 +1,34 @@
+{
+  "title": "Spawner Chain",
+  "description": [
+    "Blow up a <keyword>Mob Spawner</keyword> with an <warning>explosion</warning>. The blast starts a cascade: a few seconds later the spawner <warning><shake amplitude=0.4 frequency=1.6>detonates</shake></warning> on its own, scattering <keyword>Spawner Chains</keyword> - and releasing the mob that was stored inside.",
+    "",
+    "<warning>Be ready for a fight</warning> and do not stand too close.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Взорви <keyword>спавнер мобов</keyword> <warning>взрывом</warning>. Взрыв запускает цепную реакцию: через несколько секунд спавнер сам <warning><shake amplitude=0.4 frequency=1.6>детонирует</shake></warning>, разбрасывая <keyword>цепи спавнера</keyword> - и выпуская моба, который в нём хранился.",
+    "",
+    "<warning>Будь готов к бою</warning> и не стой слишком близко."
+  ],
+  "icon": "apotheosis:spawner_chain",
+  "x": 42.0,
+  "y": 14.75,
+  "deps": {
+    "all": [
+      "magic_step_i/apotheosis_runes"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/spawner_chain"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:spawner_chain",
+      "type": "item"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "diamond"
+}

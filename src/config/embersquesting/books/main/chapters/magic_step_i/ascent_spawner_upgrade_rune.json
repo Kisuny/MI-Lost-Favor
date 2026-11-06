@@ -1,0 +1,47 @@
+{
+  "title": "Wayfarer's Spawner Upgrade Rune",
+  "description": [
+    "The second <keyword>tier rune</keyword> - a <property>solid</property> improvement.",
+    "",
+    "Sets the spawner's core stats <property>directly</property>:",
+    "- spawn delay: <positive>100-400</positive> ticks;",
+    "- mobs per spawn: <positive>10</positive>;",
+    "- max nearby mobs: <positive>18</positive>;",
+    "- activation range: <positive>32</positive> blocks.",
+    "",
+    "Hold the rune and press <property>RMB</property> on a <keyword>Mob Spawner</keyword> - the rune is consumed. Tier runes <warning>cannot be reversed</warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Вторая <keyword>руна уровня</keyword> - <property>заметное</property> улучшение.",
+    "",
+    "Задаёт основные параметры спавнера <property>напрямую</property>:",
+    "- задержка спавна: <positive>100-400</positive> тиков;",
+    "- мобов за раз: <positive>10</positive>;",
+    "- максимум мобов рядом: <positive>18</positive>;",
+    "- радиус активации: <positive>32</positive> блоков.",
+    "",
+    "Возьми руну и нажми <property>ПКМ</property> по <keyword>спавнеру мобов</keyword> - руна расходуется. Руны уровня <warning>нельзя обратить</warning>."
+  ],
+  "icon": "apotheosis:ascent_spawner_upgrade_rune",
+  "x": 42.0,
+  "y": 8.5,
+  "deps": {
+    "all": [
+      "magic_step_i/frontier_spawner_upgrade_rune"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/ascent_spawner_upgrade_rune"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:ascent_spawner_upgrade_rune",
+      "type": "item"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "hexagon",
+  "size": 1.25
+}

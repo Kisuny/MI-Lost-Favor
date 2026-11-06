@@ -1,0 +1,40 @@
+{
+  "title": "Rune of Echoes",
+  "description": [
+    "Spawned mobs drop an <positive>additional copy of their loot</positive>.",
+    "",
+    "Can be applied <property>several times</property> - up to <property>3</property> echoes per spawner.",
+    "",
+    "Hold the rune and press <property>RMB</property> on a <keyword>Mob Spawner</keyword> - the rune is consumed.",
+    "With <keyword>Nether Quartz</keyword> in the other hand one echo is <magic>removed</magic> - the quartz is not consumed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Созданные мобы роняют <positive>дополнительную копию добычи</positive>.",
+    "",
+    "Можно наложить <property>несколько раз</property> - до <property>3</property> эхо на один спавнер.",
+    "",
+    "Возьми руну и нажми <property>ПКМ</property> по <keyword>спавнеру мобов</keyword> - руна расходуется.",
+    "С <keyword>кварцем Незера</keyword> во второй руке одно эхо <magic>снимается</magic> - кварц не тратится."
+  ],
+  "icon": "apotheosis:echoing_spawner_rune",
+  "x": 37.17,
+  "y": 10.86,
+  "deps": {
+    "all": [
+      "magic_step_i/infused_spawner_rune"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/echoing_spawner_rune"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:echoing_spawner_rune",
+      "type": "item"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "diamond"
+}

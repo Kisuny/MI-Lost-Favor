@@ -1,0 +1,35 @@
+{
+  "title": "Spawner Rune",
+  "description": [
+    "A <magic>blank rune</magic>. It does nothing on its own.",
+    "",
+    "All runes and their exact effects are visible in <keyword>JEI</keyword> under the uses of the <keyword>Mob Spawner</keyword>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<magic>Чистая руна</magic>. Сама по себе ничего не делает.",
+    "",
+    "Все руны и их точные эффекты видны в <keyword>JEI</keyword> в применениях <keyword>спавнера мобов</keyword>."
+  ],
+  "icon": "apotheosis:spawner_rune",
+  "x": 42.0,
+  "y": 12.75,
+  "deps": {
+    "all": [
+      "magic_step_i/spawner_chain"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/spawner_rune"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:spawner_rune",
+      "type": "item"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "octagon",
+  "size": 1.5
+}

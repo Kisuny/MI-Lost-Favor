@@ -1,0 +1,40 @@
+{
+  "title": "Rune of Defiance",
+  "description": [
+    "The spawner <magic>ignores all spawn rules</magic> - light, grass for animals and everything else. Only free space and the mob limit still matter.",
+    "",
+    "A direct upgrade of the <keyword>Rune of Perpetual Twilight</keyword>.",
+    "",
+    "Hold the rune and press <property>RMB</property> on a <keyword>Mob Spawner</keyword> - the rune is consumed.",
+    "With <keyword>Nether Quartz</keyword> in the other hand the effect is <magic>reversed</magic> - the quartz is not consumed.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Спавнер <magic>игнорирует все правила спавна</magic> - освещение, траву для животных и всё остальное. Важны только свободное место и лимит мобов.",
+    "",
+    "Прямое улучшение <keyword>Руны вечных сумерек</keyword>.",
+    "",
+    "Возьми руну и нажми <property>ПКМ</property> по <keyword>спавнеру мобов</keyword> - руна расходуется.",
+    "С <keyword>кварцем Незера</keyword> во второй руке эффект <magic>обращается</magic> - кварц не тратится."
+  ],
+  "icon": "apotheosis:ignore_conditions_spawner_rune",
+  "x": 39.19,
+  "y": 8.92,
+  "deps": {
+    "all": [
+      "magic_step_i/infused_spawner_rune"
+    ]
+  },
+  "aliases": [
+    "when_dungeons_arise/ignore_conditions_spawner_rune"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:ignore_conditions_spawner_rune",
+      "type": "item"
+    }
+  ],
+  "progression": "flexible",
+  "shape": "diamond"
+}

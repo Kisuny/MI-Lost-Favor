@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     })
 
     ytechChoppingCraft(event, {
-        inputItems: [[{ item: "minecraft:terracotta" }]],
+        inputItems: [[{ tag: "minecraft:terracotta" }]],
         outputItems: [[{ id: "modern_industrialization:brick_dust" }, 2]],
         tool: neoCompound([
             { item: "ytech:lead_hammer" },

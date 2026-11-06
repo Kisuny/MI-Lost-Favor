@@ -428,8 +428,9 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "FF",
-            "FF"
+            "FFF",
+            "FFF",
+            "FFF"
         ],
         key: {
             F: { item: "ytech:grass_fibers" },

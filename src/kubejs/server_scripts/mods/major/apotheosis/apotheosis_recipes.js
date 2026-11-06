@@ -231,6 +231,52 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     });
 
+    customThaumArcaneCraft(event, {
+        pattern: [
+            "GNG",
+            "SES",
+            "SSS"
+        ],
+        key: {
+            G: 'apotheosis:gem_dust',
+            N: 'thaumaturge:nugget_void',
+            E: 'apotheosis:gem_fused_slate',
+            S: 'apotheosis:spawner_chain'
+        },
+        crystals: { ordo: 1, perditio: 1 },
+        vis: 20,
+        research: 'thaumaturge:base_eldritch',
+        result: { id: 'apotheosis:spawner_rune', count: 1 },
+        id: 'thaumaturge:arcane_workbench/spawner_rune',
+        removeOutput: true
+    })
+
+    const spawnerRunes = [
+        { rune: 'frontier_spawner_upgrade_rune', vis: 25, crystals: { terra: 1, ordo: 1 } },
+        { rune: 'ascent_spawner_upgrade_rune', vis: 40, crystals: { terra: 2, ordo: 2 } },
+        { rune: 'summit_spawner_upgrade_rune', vis: 60, crystals: { terra: 2, ordo: 3, ignis: 2 } },
+        { rune: 'pinnacle_spawner_upgrade_rune', vis: 100, crystals: { terra: 3, ordo: 4, ignis: 3, aer: 3 } },
+        { rune: 'spawn_range_spawner_rune', vis: 15, crystals: { aer: 2 } },
+        { rune: 'redstone_control_spawner_rune', vis: 15, crystals: { ordo: 2 } },
+        { rune: 'ignore_light_spawner_rune', vis: 15, crystals: { perditio: 2 } },
+        { rune: 'silent_spawner_rune', vis: 15, crystals: { aer: 1, perditio: 1 } },
+        { rune: 'youthful_spawner_rune', vis: 15, crystals: { aqua: 2 } },
+        { rune: 'burning_spawner_rune', vis: 15, crystals: { ignis: 2 } },
+        { rune: 'initial_health_spawner_rune', vis: 15, crystals: { perditio: 1, aqua: 1 } },
+        { rune: 'no_ai_spawner_rune', vis: 40, crystals: { ordo: 2, perditio: 2 } },
+        { rune: 'ignore_conditions_spawner_rune', vis: 40, crystals: { perditio: 3, ordo: 1 } },
+        { rune: 'ignore_players_spawner_rune', vis: 40, crystals: { aer: 3, ordo: 1 } },
+        { rune: 'echoing_spawner_rune', vis: 50, crystals: { aqua: 2, ordo: 2 } },
+    ]
+    spawnerRunes.forEach(r => {
+        arcaneFromRecipe(event, {
+            id: `apotheosis:${r.rune}`,
+            vis: r.vis,
+            crystals: r.crystals,
+            research: 'thaumaturge:base_eldritch'
+        })
+    })
+
 })
 
 

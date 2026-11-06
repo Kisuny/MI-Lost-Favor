@@ -225,6 +225,19 @@
 		],
 		"description": "Convert an existing shaped/shapeless recipe into a pedestal craft (pedestalFromRecipe helper), removes the original recipe"
 	},
+	"Thaumaturge: arcane workbench from existing recipe": {
+		"scope": "javascript",
+		"prefix": "thaum-arcane-from-recipe",
+		"body": [
+			"arcaneFromRecipe(event, {",
+			"    id: \"${1:modid_item}\",",
+			"    vis: ${2:10},",
+			"    crystals: { ${3|aer,terra,ignis,aqua,ordo,perditio|}: ${4:1} },",
+			"    research: \"${5:thaumaturge:first_steps}\",",
+			"});"
+		],
+		"description": "Convert an existing shaped/shapeless recipe into an arcane workbench craft (arcaneFromRecipe helper), keeps ingredients/result, removes the original recipe. Optional: stage, replace: [{ from, to }]"
+	},
 	"Spectrum: fusion shrine craft": {
 		"scope": "javascript",
 		"prefix": "spectrum-fusion-shrine",

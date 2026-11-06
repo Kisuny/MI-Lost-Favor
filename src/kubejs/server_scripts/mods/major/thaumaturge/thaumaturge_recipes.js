@@ -45,6 +45,37 @@ const customThaumArcaneCraft = (event, args) => {
     thaumAddRecipe(event, recipe, args, ['thaumaturge:arcane_workbench_shaped', 'thaumaturge:arcane_workbench_shapeless'])
 }
 
+const arcaneFromRecipe = (event, args) => {
+    let ids = Array.isArray(args.id) ? args.id : [args.id]
+    let replacements = (args.replace || []).map(r => ({ from: parsePedestalSpec(r.from), to: parsePedestalSpec(r.to) }))
+    ids.forEach(id => {
+        event.forEachRecipe({ output: id }, recipe => {
+            let rJSON = JSON.parse(recipe.json)
+            if (rJSON.type !== 'minecraft:crafting_shaped' && rJSON.type !== 'minecraft:crafting_shapeless') return
+            let recipeId = String(recipe.getId())
+            let shaped = rJSON.type === 'minecraft:crafting_shaped'
+            let key = rJSON.key
+            let ingredients = rJSON.ingredients
+            replacements.forEach(r => {
+                if (shaped) key = replacePedestalIngredient(key, r.from, r.to)
+                else ingredients = replacePedestalIngredient(ingredients, r.from, r.to)
+            })
+            customThaumArcaneCraft(event, {
+                pattern: shaped ? rJSON.pattern : undefined,
+                key: key,
+                ingredients: ingredients,
+                crystals: args.crystals,
+                vis: args.vis,
+                research: args.research,
+                stage: args.stage,
+                result: rJSON.result,
+                id: `thaumaturge:arcane_workbench/${recipeId.replace(':', '/')}`
+            })
+            event.remove({ id: recipeId })
+        })
+    })
+}
+
 const customThaumCrucible = (event, args) => {
     const recipe = {
         type: 'thaumaturge:crucible',

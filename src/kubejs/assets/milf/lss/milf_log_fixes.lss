@@ -43,3 +43,20 @@ scroller-horizontal .__scroller_scroll_bar__, scroller-vertical .__scroller_scro
   hover-background: sdf($(raised_hover), 2, 1, $(accent));
   pressed-background: sdf($(raised_pressed), 2, 1, $(accent_pressed));
 }
+
+.__confirm-button__ {
+  base-background: sdf($(row_selected), 2, 1, $(accent));
+  hover-background: sdf($(raised_hover), 2, 1, $(accent_hover));
+  pressed-background: sdf($(raised_pressed), 2, 1, $(accent_pressed));
+}
+
+.__reject-button__ {
+  base-background: sdf(#5a2a36, 2, 1, $(danger));
+  hover-background: sdf(#6e3442, 2, 1, $(danger_hover));
+  pressed-background: sdf(#46202a, 2, 1, $(danger_pressed));
+}
+
+.__confirm-button__ .__button_text__, .__reject-button__ .__button_text__ {
+  text-color: #ffffff;
+  text-shadow: true;
+}

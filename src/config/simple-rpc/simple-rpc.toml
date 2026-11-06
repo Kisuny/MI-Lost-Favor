@@ -67,12 +67,12 @@
 		streamingActivityUrl = "https://twitch.tv/twitch"
 		#List of buttons (max 2) to show on the RPC
 		[[main_menu.presence.buttons]]
-                    label = "CurseForge Page"
-                    url = "https://www.curseforge.com/minecraft/modpacks/milf"
+			label = "CurseForge Page"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
 
-        [[main_menu.presence.buttons]]
-                    label = "Discord"
-                    url = "https://discord.com/invite/xAaFCCqKAn"
+		[[main_menu.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"
 
 #The Server List event
 [server_list]
@@ -150,13 +150,13 @@
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
 		#List of buttons (max 2) to show on the RPC
-		[[main_menu.presence.buttons]]
-                    label = "CurseForge Page"
-                    url = "https://www.curseforge.com/minecraft/modpacks/milf"
+		[[join_game.presence.buttons]]
+			label = "CurseForge Page"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
 
-        [[main_menu.presence.buttons]]
-                    label = "Discord"
-                    url = "https://discord.com/invite/xAaFCCqKAn"
+		[[join_game.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"
 
 #The Single Player Event
 [single_player]
@@ -182,13 +182,13 @@
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
 		#List of buttons (max 2) to show on the RPC
-		[[main_menu.presence.buttons]]
-                    label = "CurseForge Page"
-                    url = "https://www.curseforge.com/minecraft/modpacks/milf"
+		[[single_player.presence.buttons]]
+			label = "CurseForge Page"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
 
-        [[main_menu.presence.buttons]]
-                    label = "Discord"
-                    url = "https://discord.com/invite/xAaFCCqKAn"
+		[[single_player.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"
 
 #The Multi Player Event
 [multi_player]
@@ -200,7 +200,7 @@
 		#The Activity type to use for this RPC. Valid types are: PLAYING, STREAMING, LISTENING, WATCHING, CUSTOM, COMPETING
 		type = "PLAYING"
 		#The first line of text under the app name
-		description = "Playing on {{server.motd}} with {{server.players.count}} players"
+		description = "Playing multiplayer with {{server.players.count}} players"
 		#The second line of text under the app name
 		state = "Playing online"
 		#The Asset ID or URLs of images to randomly use for the large image
@@ -266,13 +266,13 @@
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
 		#List of buttons (max 2) to show on the RPC
-		[[main_menu.presence.buttons]]
-                    label = "CurseForge Page"
-                    url = "https://www.curseforge.com/minecraft/modpacks/milf"
+		[[paused.presence.buttons]]
+			label = "CurseForge Page"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
 
-        [[main_menu.presence.buttons]]
-                    label = "Discord"
-                    url = "https://discord.com/invite/xAaFCCqKAn"
+		[[paused.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"
 
 #Fallback event for disabled events
 [generic]
@@ -296,13 +296,13 @@
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
 		#List of buttons (max 2) to show on the RPC
-		[[main_menu.presence.buttons]]
-                    label = "CurseForge Page"
-                    url = "https://www.curseforge.com/minecraft/modpacks/milf"
+		[[generic.presence.buttons]]
+			label = "CurseForge Page"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
 
-        [[main_menu.presence.buttons]]
-                    label = "Discord"
-                    url = "https://discord.com/invite/xAaFCCqKAn"
+		[[generic.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"
 
 #Custom Config Variables that you can use
 [custom]

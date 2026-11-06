@@ -1,7 +1,48 @@
 #Enable/Disable Server Entries overrides
-enabled = false
+enabled = true
 #Internal Version Number. NO TOUCHY!
 version = 3
-#Server override entries
-entry = []
 
+#Server override entries
+#The IP is compared with the address from the server list as is (ignoring case), so the variant with the port is listed separately
+[[entry]]
+	ip = "milf.modpack.gg"
+
+	[[entry.presence]]
+		type = "PLAYING"
+		description = "Official Community Server"
+		state = "{{server.players.count}}/{{server.players.max}} players online"
+		largeImageKey = ["milf_logo_no_bg"]
+		largeImageText = "MI:Lost Favor 1.21.1 {{custom.modpackversion}}"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+
+		[[entry.presence.buttons]]
+			label = "Get the Modpack"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
+
+		[[entry.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"
+
+[[entry]]
+	ip = "milf.modpack.gg:25565"
+
+	[[entry.presence]]
+		type = "PLAYING"
+		description = "Official Community Server"
+		state = "{{server.players.count}}/{{server.players.max}} players online"
+		largeImageKey = ["milf_logo_no_bg"]
+		largeImageText = "MI:Lost Favor 1.21.1 {{custom.modpackversion}}"
+		smallImageKey = ["{{images.player}}"]
+		smallImageText = "{{player.name}}"
+		streamingActivityUrl = "https://twitch.tv/twitch"
+
+		[[entry.presence.buttons]]
+			label = "Get the Modpack"
+			url = "https://www.curseforge.com/minecraft/modpacks/milf"
+
+		[[entry.presence.buttons]]
+			label = "Discord"
+			url = "https://discord.com/invite/xAaFCCqKAn"

@@ -1,0 +1,59 @@
+{
+  "title": "Simple Reforging Table",
+  "description": [
+    "Gives any weapon, tool or armor piece <magic><wave>brand new affixes</wave></magic> - even an item that had none before.",
+    "",
+    "<named>Slots:</named>",
+    "- <property>center</property> - the item to reforge;",
+    "- <property>top-left</property> - the <keyword>rarity material</keyword> of the rarity you want;",
+    "- <property>bottom-right</property> - <keyword>Sigils of Rebirth</keyword>, the fuel of reforging.",
+    "",
+    "Like an Enchanting Table, it offers <positive>three choices</positive>. None is stronger by default - pick the one you like. The second and third need two and three times the levels and materials, but take only <property>2 and 3 levels</property> of experience.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "The simple table works up to <positive>Rare</positive> rarity. For <magic>Epic</magic> and higher you will need the full <keyword>Reforging Table</keyword>.",
+    "",
+    "An item can be reforged <property>as many times as you like</property>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Даёт любому оружию, инструменту или броне <magic><wave>совершенно новые аффиксы</wave></magic> - даже предмету, у которого их не было.",
+    "",
+    "<named>Слоты:</named>",
+    "- <property>центр</property> - предмет для перековки;",
+    "- <property>сверху слева</property> - <keyword>материал редкости</keyword> той редкости, которую хочешь;",
+    "- <property>снизу справа</property> - <keyword>Печати перерождения</keyword>, топливо перековки.",
+    "",
+    "Как и стол зачарования, он предлагает <positive>три варианта</positive>. Ни один не сильнее заранее - выбирай тот, что нравится. Второй и третий требуют в два и в три раза больше уровней и материалов, но забирают лишь <property>2 и 3 уровня</property> опыта.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Простой стол работает до редкости <positive>Rare</positive>. Для <magic>Epic</magic> и выше понадобится полноценный <keyword>Стол перековки</keyword>.",
+    "",
+    "Перековывать предмет можно <property>сколько угодно раз</property>."
+  ],
+  "icon": "apotheosis:simple_reforging_table",
+  "x": 56.5,
+  "y": 24,
+  "deps": {
+    "all": [
+      "magic_step_i/infusion_altar"
+    ]
+  },
+  "aliases": [
+    "magic_step_iii/simple_reforging_table"
+  ],
+  "tasks": [
+    {
+      "item": "apotheosis:simple_reforging_table",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "lines_out": "hover",
+  "size": 2.0
+}

@@ -277,6 +277,26 @@ ServerEvents.recipes(event => {
         })
     })
 
+    customThaumInfusion(event, {
+        catalyst: 'apothic_enchanting:apothic_enchanting_table',
+        components:
+        [
+            'minecraft:anvil',
+            'thaumaturge:plate_thaumium',
+            'thaumaturge:plate_thaumium',
+            'apotheosis:gem_dust',
+            'apotheosis:gem_dust',
+            'apotheosis:mysterious_scrap_metal',
+            'thaumaturge:stone_arcane_brick',
+            'thaumaturge:stone_arcane_brick',
+        ],
+        aspects: { permutatio: 50, fabrico: 50, metallum: 25, praecantatio: 25 },
+        instability: 10, 
+        research: 'thaumaturge:infusion',
+        result: 'apotheosis:simple_reforging_table',
+        removeOutput: true,
+    })
+
 })
 
 

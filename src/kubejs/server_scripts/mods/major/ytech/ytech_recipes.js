@@ -359,7 +359,7 @@ ServerEvents.recipes(event => {
 
 
 
-    event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#milf:knives')
+
     event.replaceInput({ input: '#c:knives' }, '#c:knives', '#milf:knives')
 
     let replaceStick = [
@@ -582,9 +582,9 @@ milfDisableRecipesById([
     /ytech:(\w+)_hammer/,
     /ytech:(\w+)_ingot/,
     /ytech:(\w+)_bolt/,
-    /ytech:(\w+)_rod/,
+    /ytech:(?!divining)(\w+)_rod/, // divining_rod stays craftable
     /ytech:crushed_(\w+)\b/,
-    /ytech:raw_(\w+)\b/,
+    /ytech:raw_(?!hide\b)(\w+)\b/, // raw_hide = leather on tanning rack, keep it
     /ytech:tin_(\w+)\b/,
     /ytech:copper_(\w+)\b/,
     /ytech:gold_(\w+)\b/,

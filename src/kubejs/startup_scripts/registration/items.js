@@ -236,3 +236,4 @@ createNewItem('mixed_gem_powder', { lang: { "ru_ru": "Порошок драго�
 createNewItem('soul_of_the_helpless', { lang: { "ru_ru": "Душа беспомощного" }, stackSize: 16, rarity: 'epic'  })
 
 createNewItem('question_mark', { stackSize: 109 })
+createNewItem('milf_item', { stackSize: 109 })

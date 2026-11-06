@@ -428,14 +428,27 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "FFF",
-            "FFF",
-            "FFF"
+            "FF ",
+            "FF ",
+            "   "
         ],
         key: {
             F: { item: "ytech:grass_fibers" },
         },
         outputItems: [[{ id: "ytech:thatch" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "FF ",
+            "F  ",
+            "   "
+        ],
+        key: {
+            F: { item: "ytech:grass_fibers" },
+        },
+        outputItems: [[{ id: "ytech:grass_twine" }, 1]],
         removeRecipe: true
     })
 
@@ -582,9 +595,9 @@ milfDisableRecipesById([
     /ytech:(\w+)_hammer/,
     /ytech:(\w+)_ingot/,
     /ytech:(\w+)_bolt/,
-    /ytech:(?!divining)(\w+)_rod/, // divining_rod stays craftable
+    /ytech:(?!divining)(\w+)_rod/,
     /ytech:crushed_(\w+)\b/,
-    /ytech:raw_(?!hide\b)(\w+)\b/, // raw_hide = leather on tanning rack, keep it
+    /ytech:raw_(?!hide\b)(\w+)\b/,
     /ytech:tin_(\w+)\b/,
     /ytech:copper_(\w+)\b/,
     /ytech:gold_(\w+)\b/,

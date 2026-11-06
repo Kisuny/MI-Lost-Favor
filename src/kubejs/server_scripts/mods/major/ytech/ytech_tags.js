@@ -71,7 +71,7 @@ ServerEvents.tags("item", event => {
         "grimoireofgaia:stone_coal"
     ])
 
-    event.add("ytech:sharp_flints", ["ytech:flint_knife", ""])
+    event.add("ytech:sharp_flints", ["ytech:flint_knife"])
 
     const tags_for_meat = [
         "c:foods",

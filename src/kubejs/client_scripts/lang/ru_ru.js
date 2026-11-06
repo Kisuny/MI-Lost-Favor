@@ -206,6 +206,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Поглощает до 4 зачарований с предмета, ${MilfEffects.GLITCH("уничтожая")} его в процессе. Использование зачарованной сферы на другом предмете ${textAnimatorString("заменяет", "fade")} все его зачарования поглощёнными.`)
     event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Наполняет топор ${MilfEffects.GRAD.custom("Сущностью Леса", "#1DEB6C", "#6AFFC3")}, позволяя срубать ${MilfEffects.GRAD.POSITIVE("целое дерево")} за один удар в обмен на снижение эффективности до ${MilfEffects.GRAD.NEGATIVE("одной десятой")}. Можно применить только один раз без возможности отмены.`)
 
+    event.add('milf.cursed_ring_tooltip.remaining', `${MilfEffects.GRAD.UPUPGRADE("%1$s ч.")} и ${MilfEffects.GRAD.UPUPGRADE("%2$s мин.")} осталось, пока проклятие не ${MilfEffects.GRAD.custom("пропитает ваши кости", "#712F6C", "#D93667")}`)
+    event.add('milf.cursed_one', `Жертва принесена - вы ${MilfEffects.GRAD.custom("достойны", "#712F6C", "#D93667")}`)
+
     event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Какая-то магия останавливает вас")}`)
 
     event.add("jade.theme.jade.dark_original", "Тёмный (оригинальный)")

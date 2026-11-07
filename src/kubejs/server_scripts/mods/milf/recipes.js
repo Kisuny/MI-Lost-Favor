@@ -769,6 +769,17 @@ ServerEvents.recipes(event => {
         tier: "bronze"
     })
 
+    milfAnvilRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:quartz" }, 1],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:quartz_dust" }],
+        ],
+        maxHit: 0.72,
+        tier: "bronze"
+    })
+
     //#endregion
 
     //region kiln

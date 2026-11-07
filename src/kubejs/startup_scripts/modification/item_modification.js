@@ -18,23 +18,23 @@ ItemEvents.modification(event => {
     })
 
     const ytech_tool_modification = [
-        { itemName: 'ytech:copper_pickaxe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'pickaxe' },
-        { itemName: 'ytech:copper_shovel', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'shovel' },
-        { itemName: 'ytech:copper_axe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'axe' },
-        { itemName: 'ytech:copper_hoe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'hoe' },
-        { itemName: 'ytech:lead_pickaxe', maxDamage: 32, multiplier: 3, speed: 3, type: 'pickaxe' },
-        { itemName: 'ytech:lead_shovel', maxDamage: 32, multiplier: 3, speed: 3, type: 'shovel' },
-        { itemName: 'ytech:lead_axe', maxDamage: 32, multiplier: 3, speed: 3, type: 'axe' },
-        { itemName: 'ytech:lead_hoe', maxDamage: 32, multiplier: 3, speed: 3, type: 'hoe' },
-        { itemName: 'ytech:tin_pickaxe', maxDamage: 28, multiplier: 3, speed: 16, type: 'pickaxe' },
-        { itemName: 'ytech:tin_shovel', maxDamage: 28, multiplier: 3, speed: 16, type: 'shovel' },
-        { itemName: 'ytech:tin_axe', maxDamage: 28, multiplier: 3, speed: 16, type: 'axe' },
-        { itemName: 'ytech:tin_hoe', maxDamage: 28, multiplier: 3, speed: 16, type: 'hoe' },
-        { itemName: 'ytech:bronze_pickaxe', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'pickaxe' },
-        { itemName: 'ytech:bronze_shovel', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'shovel' },
-        { itemName: 'ytech:bronze_axe', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'axe' },
-        { itemName: 'ytech:bronze_hoe', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'hoe' },
-        { itemName: 'minecraft:iron_pickaxe', maxDamage: 384, multiplier: 1, speed: 6, type: 'pickaxe' },
+        { itemName: 'ytech:copper_pickaxe', speed: 5.5, type: 'pickaxe' },
+        { itemName: 'ytech:copper_shovel', speed: 5.5, type: 'shovel' },
+        { itemName: 'ytech:copper_axe', speed: 5.5, type: 'axe' },
+        { itemName: 'ytech:copper_hoe', speed: 5.5, type: 'hoe' },
+        { itemName: 'ytech:lead_pickaxe', speed: 3, type: 'pickaxe' },
+        { itemName: 'ytech:lead_shovel', speed: 3, type: 'shovel' },
+        { itemName: 'ytech:lead_axe', speed: 3, type: 'axe' },
+        { itemName: 'ytech:lead_hoe', speed: 3, type: 'hoe' },
+        { itemName: 'ytech:tin_pickaxe', speed: 16, type: 'pickaxe' },
+        { itemName: 'ytech:tin_shovel', speed: 16, type: 'shovel' },
+        { itemName: 'ytech:tin_axe', speed: 16, type: 'axe' },
+        { itemName: 'ytech:tin_hoe', speed: 16, type: 'hoe' },
+        { itemName: 'ytech:bronze_pickaxe', speed: 5.5, type: 'pickaxe' },
+        { itemName: 'ytech:bronze_shovel', speed: 5.5, type: 'shovel' },
+        { itemName: 'ytech:bronze_axe', speed: 5.5, type: 'axe' },
+        { itemName: 'ytech:bronze_hoe', speed: 5.5, type: 'hoe' },
+        { itemName: 'minecraft:iron_pickaxe', speed: 6, type: 'pickaxe' },
     ];
 
     const blockTagByType = {
@@ -61,26 +61,45 @@ ItemEvents.modification(event => {
                     { correctForDrops: false, blocks: "#minecraft:incorrect_for_iron_tool" }
                 ]
             });
-
-            item.maxDamage = tool.maxDamage * tool.multiplier;
         });
     });
 
-    const hammer_modification = [
-        { itemName: 'ytech:stone_hammer', maxDamage: 70 },
-        { itemName: 'ytech:bronze_hammer', maxDamage: 300 },
-        { itemName: 'ytech:tin_hammer', maxDamage: 125 },
-        { itemName: 'ytech:lead_hammer', maxDamage: 200 },
-        { itemName: 'ytech:iron_hammer', maxDamage: 250 },
-        { itemName: 'ytech:golden_hammer', maxDamage: 64 },
-        { itemName: 'ytech:copper_hammer', maxDamage: 150 },
-    ]
+    const toolDurabilityByMaterial = {
+        stone_age: {
+            durability: 250,
+            items: [
+                "milf:flint_pickaxe", "milf:flint_chisel", "milf:stone_hammer",
+                "ytech:flint_axe", "ytech:flint_knife", "ytech:flint_spear", "ytech:antler_pickaxe"
+            ]
+        },
+        lead: {
+            durability: 500,
+            items: [
+                "ytech:lead_pickaxe", "ytech:lead_axe", "ytech:lead_shovel", "ytech:lead_hoe", "ytech:lead_sword",
+                "ytech:lead_knife", "ytech:lead_saw", "ytech:lead_file", "ytech:lead_hammer"
+            ]
+        },
+        bronze: {
+            durability: 1000,
+            items: [
+                "ytech:bronze_pickaxe", "ytech:bronze_axe", "ytech:bronze_shovel", "ytech:bronze_hoe", "ytech:bronze_sword",
+                "ytech:bronze_knife", "ytech:bronze_saw", "ytech:bronze_file", "ytech:bronze_hammer"
+            ]
+        },
+        iron: {
+            durability: 1400,
+            items: [
+                "minecraft:iron_pickaxe", "minecraft:iron_axe", "minecraft:iron_shovel", "minecraft:iron_hoe", "minecraft:iron_sword"
+            ]
+        }
+    }
 
-    hammer_modification.forEach(hammer => {
-        event.modify(hammer.itemName, item => {
-            item.maxDamage = hammer.maxDamage * 3
+    Object.keys(toolDurabilityByMaterial).forEach(material => {
+        const entry = toolDurabilityByMaterial[material]
+        entry.items.forEach(id => {
+            event.modify(id, item => { item.maxDamage = entry.durability })
         })
-    });
+    })
 
     event.modify("ytech:stone_mortar_and_pestle", item => { item.maxDamage = 365 })
 

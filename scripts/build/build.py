@@ -84,6 +84,16 @@ pakku_lock = read_json(SRC / "pakku-lock.json")
 modpack_version = pakku_config["version"]
 print(f"Building {pakku_config['name']} {modpack_version}")
 
+MENU_VERSION_RE = re.compile(r'("milf\.menu\.version"\s*:\s*"(?:[^"\\]|\\.)*</magic> )[^"]*(")')
+for lang_file in (SRC / "kubejs" / "assets" / "milf" / "lang").glob("*.json"):
+    text = lang_file.read_bytes().decode("utf-8")
+    new_text, count = MENU_VERSION_RE.subn(lambda m: m.group(1) + modpack_version + m.group(2), text)
+    if count == 0:
+        continue
+    if new_text != text:
+        lang_file.write_bytes(new_text.encode("utf-8"))
+        print(f"Set menu version {modpack_version} in {lang_file.name}")
+
 neoforge_version = pakku_lock.get("loaders", {}).get("neoforge")
 if not neoforge_version:
     fail("no NeoForge version in pakku-lock.json")

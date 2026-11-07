@@ -558,21 +558,6 @@ ServerEvents.recipes(event => {
 
     milfBloomeryRecipe(event, {
         inputItems: [
-            [{ item: "embers:raw_caminite_plate" }, 1],
-            [{ item: "embers:raw_caminite_plate" }, 1],
-        ],
-
-        outputItems: [
-            [{ id: "embers:caminite_plate" }, 2],
-        ],
-
-        coal_count: 1,
-        time: 150,
-        removeRecipe: true
-    })
-
-    milfBloomeryRecipe(event, {
-        inputItems: [
             [{ item: "milf:unfired_caminite_brick" }, 4],
             [{ item: "milf:everburning_roots" }, 4],
         ],

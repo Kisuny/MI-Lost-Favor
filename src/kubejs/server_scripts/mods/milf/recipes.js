@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ item: "embers:ash" }],
             [{ item: "modern_industrialization:salt_dust" }],
-            [{ item: "modern_industrialization:quartz_dust" }],
+            [{ item: "modern_industrialization:quartz_crushed_dust" }],
             [{ item: "minecraft:charcoal" }]
         ],
         inputFluids: [
@@ -766,17 +766,6 @@ ServerEvents.recipes(event => {
             [{ id: "modern_industrialization:iron_double_ingot" }],
         ],
         maxHit: 0.22,
-        tier: "bronze"
-    })
-
-    milfAnvilRecipe(event, {
-        inputItems: [
-            [{ item: "minecraft:quartz" }, 1],
-        ],
-        outputItems: [
-            [{ id: "modern_industrialization:quartz_dust" }],
-        ],
-        maxHit: 0.72,
         tier: "bronze"
     })
 

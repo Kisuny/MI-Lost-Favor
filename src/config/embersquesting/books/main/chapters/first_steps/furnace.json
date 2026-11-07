@@ -3,14 +3,14 @@
   "description": [
     "It's the <flame>furnace</flame>. You know it, you love it.",
     "",
-    "But it's a bit <warning>limited</warning> this early on. That's where the <named>Primitive Alloy Smelter</named> and <named>Primitive Smelter</named> come in.",
+    "But here it <warning>won't smelt metals</warning>: ores, raw metal and dust of <keyword>copper, iron, gold, tin, lead, nickel and antimony</keyword> have to go through the <click action=open_quest value='first_steps/clay_crucible'><u>clay crucible</u></click> or the <click action=open_quest value='first_steps/bloomery_base'><u>bloomery</u></click> instead",
     {
       "style": "page",
       "type": "divider"
     },
     "Это <flame>печь</flame>. Ты её знаешь, ты её любишь.",
     "",
-    "Но на раннем этапе её возможности <warning>ограничены</warning>. Тут на помощь придут <named>примитивная плавильня сплавов</named> и <named>примитивная плавильня</named>."
+    "Но здесь она <warning>не плавит металлы</warning>: руду, сырой металл и порошки <keyword>меди, железа, золота, олова, свинца, никеля и сурьмы</keyword> придётся плавить в <click action=open_quest value='first_steps/clay_crucible'><u>глиняном тигле</u></click> или <click action=open_quest value='first_steps/bloomery_base'><u>кричном горне</u></click>"
   ],
   "icon": "minecraft:furnace",
   "x": 17,

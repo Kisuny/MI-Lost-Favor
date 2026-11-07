@@ -1,12 +1,12 @@
 {
   "title": "Brick Dust",
   "description": [
-    "Combine the <click action=open_quest value='first_steps/stone_mortar_and_pestle'><u>Stone Mortar and Pestle</u></click> with a <keyword>Brick</keyword> in a crafting grid to make <bone>Brick Dust</bone>.",
+    "Put <keyword>terracotta</keyword> on a <click action=open_quest value='first_steps/tree_stump'><u>Tree Stump</u></click> with <keyword>RMB</keyword>, then hit it with a <click action=open_quest value='first_steps/lead_hammer'><u>Lead Hammer</u></click> <property>a few times</property> to <shake amplitude=0.3 frequency=1.0>crush</shake> it into <property>2</property> <bone>Brick Dust</bone>",
     {
       "style": "page",
       "type": "divider"
     },
-    "Соедини <click action=open_quest value='first_steps/stone_mortar_and_pestle'><u>каменную ступку с пестиком</u></click> с <keyword>кирпичом</keyword> в сетке крафта, чтобы получить <bone>кирпичную пыль</bone>."
+    "Положи <keyword>терракоту</keyword> на <click action=open_quest value='first_steps/tree_stump'><u>пень</u></click> через <keyword>ПКМ</keyword> и ударь по ней <click action=open_quest value='first_steps/lead_hammer'><u>свинцовым молотом</u></click> <property>несколько раз</property> - она <shake amplitude=0.3 frequency=1.0>раскрошится</shake> в <property>2</property> <bone>кирпичной пыли</bone>"
   ],
   "icon": "modern_industrialization:brick_dust",
   "x": 19,

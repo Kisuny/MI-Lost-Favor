@@ -44,11 +44,11 @@ Object.entries({
     },
     "coal_ore": {
         oreId: "minecraft:coal_ore",
-        additionalIds: ["modern_industrialization:lignite_coal_ore"],
+        additionalIds: ["modern_industrialization:lignite_coal_ore", "thaumaturge:ore_amber"],
         replace: [{
             "minecraft:coal_block": "architects_palette:charcoal_block"
         }],
-        hide: ["modern_industrialization:lignite_coal", "minecraft:coal"],
+        hide: ["modern_industrialization:lignite_coal", "minecraft:coal", "thaumaturge:amber"],
         lootReplace: {
             "minecraft:coal": "supplementaries:ash",
             "modern_industrialization:lignite_coal": "supplementaries:ash"
@@ -62,13 +62,14 @@ Object.entries({
 
     "redstone_ore": {
         oreId: "minecraft:redstone_ore",
+        additionalIds: ["thaumaturge:ore_cinnabar"],
         replace: [{
             "minecraft:redstone_block": "spectrum:redstone_sand"
         }],
         lootReplace: {
             "minecraft:redstone": "modern_industrialization:wood_pulp",
         },
-        hide: ["minecraft:redstone"],
+        hide: ["minecraft:redstone", "thaumaturge:raw_cinnabar"],
         withDeepslate: true
     },
 

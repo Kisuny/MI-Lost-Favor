@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -43,26 +45,45 @@ jobs:
         id: version
         run: echo "version=$(jq -r .version src/pakku.json)" >> "$GITHUB_OUTPUT"
 
-      - name: Generate mod changes
+      - name: Generate changelog
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p ../dist
-          TAGS=$(gh api "repos/${GITHUB_REPOSITORY}/git/matching-refs/tags/v" --paginate --jq '.[].ref' | sed 's|refs/tags/||' | sort -V || true)
+          OUT=../dist/changes.md
+          MODS="$RUNNER_TEMP/mods.md"
+          # only release tags like v1.2.3, junk tags (v.0.5.1, v0.5.0-test) are ignored
+          TAGS=$(git tag -l 'v*' | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V || true)
           if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
-            PREV=$(printf '%s\n%s\n' "$TAGS" "$GITHUB_REF_NAME" | sort -Vu | grep -B1 -x "$GITHUB_REF_NAME" | head -n 1)
+            PREV=$(printf '%s\n%s\n' "$TAGS" "$GITHUB_REF_NAME" | sed '/^$/d' | sort -Vu | grep -B1 -x "$GITHUB_REF_NAME" | head -n 1)
             [[ "$PREV" == "$GITHUB_REF_NAME" ]] && PREV=""
           else
             PREV=$(echo "$TAGS" | tail -n 1)
           fi
-          if [[ -n "$PREV" ]] && gh api -H "Accept: application/vnd.github.raw" "repos/${GITHUB_REPOSITORY}/contents/src/pakku-lock.json?ref=${PREV}" > old-lock.json; then
+          : > "$OUT"
+          if [[ -n "$PREV" ]]; then
             echo "Comparing with ${PREV}"
-            java -jar ../pakku.jar diff -v --markdown ../dist/changes.md old-lock.json pakku-lock.json || true
+            if git show "${PREV}:src/pakku-lock.json" > old-lock.json 2>/dev/null; then
+              java -jar ../pakku.jar diff -v --markdown "$MODS" old-lock.json pakku-lock.json || true
+            fi
+            rm -f old-lock.json
+            CURRENT=$([[ "${GITHUB_REF_TYPE}" == "tag" ]] && echo "$GITHUB_REF_NAME" || echo "$GITHUB_SHA")
+            COMMITS=$(git log --no-merges --reverse --format='- %s (%h)' "${PREV}..HEAD")
+            {
+              echo "## Mods"
+              echo
+              if [[ -s "$MODS" ]]; then cat "$MODS"; else echo "No mod changes."; fi
+              echo
+              echo "## Changes"
+              echo
+              if [[ -n "$COMMITS" ]]; then echo "$COMMITS"; else echo "No commits."; fi
+              echo
+              echo "**Full Changelog**: https://github.com/${GITHUB_REPOSITORY}/compare/${PREV}...${CURRENT}"
+            } > "$OUT"
+          else
+            echo "No previous release to compare with." > "$OUT"
           fi
-          if [[ ! -s ../dist/changes.md ]]; then
-            echo "No mod changes detected (or no previous release to compare with)." > ../dist/changes.md
-          fi
-          cat ../dist/changes.md
+          cat "$OUT"
         working-directory: src
 
       - name: Upload artifacts
@@ -79,4 +100,3 @@ jobs:
           name: ${{ steps.version.outputs.version }}
           files: dist/*.zip
           body_path: dist/changes.md
-          generate_release_notes: true

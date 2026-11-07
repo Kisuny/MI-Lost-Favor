@@ -20,6 +20,7 @@ Object.entries({
     },
     "milf:milestone/forge_hammer": {
         stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs", "darkerdepths_mobs"],
+        defaultNotificationDelay: 10.5,
         callback: (event) => {
             let player = event.player
             milfPlaySound(event, "immersiveengineering:birthday_party")
@@ -47,12 +48,17 @@ Object.entries({
 
 }).forEach(([questId, data]) => {
 
-    let { stages, callback } = data
+    let { stages, callback, defaultNotificationDelay } = data
 
     EmbersQuestingEvents.customReward(questId, event => {
         if (stages) {
-            addStagesToTeamMembers(event.player, stages)
-            defaultMilestoneNotification(event.player, stages[0])
+            let player = event.player
+            addStagesToTeamMembers(player, stages)
+            if (defaultNotificationDelay) {
+                player.server.scheduleInTicks(defaultNotificationDelay * 20 | 0, _ => defaultMilestoneNotification(player, stages[0]))
+            } else {
+                defaultMilestoneNotification(player, stages[0])
+            }
         }
 
         if(callback) callback(event)

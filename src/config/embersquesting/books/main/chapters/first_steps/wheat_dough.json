@@ -1,5 +1,17 @@
 {
   "title": "Wheat Dough",
+  "description": [
+    "Put <nature>wheat</nature> in the crafting grid and a <aqua>water</aqua> container <keyword>right next to it on the right</keyword> - the recipe takes <property>100 mB</property> of water and gives back the container",
+    "",
+    "You <positive>don't need an iron bucket</positive> for this - a <click action=open_quest value='first_steps/waterskin'><u>waterskin</u></click> works <wave>just as well</wave>",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Положи <nature>пшеницу</nature> в сетку крафта, а <keyword>справа от неё</keyword> - ёмкость с <aqua>водой</aqua>. Рецепт забирает <property>100 mB</property> воды, а ёмкость остаётся у тебя",
+    "",
+    "<positive>Железное ведро не обязательно</positive> - <wave>отлично подойдёт</wave> и <click action=open_quest value='first_steps/waterskin'><u>бурдюк</u></click>"
+  ],
   "icon": "farmersdelight:wheat_dough",
   "x": 15,
   "y": 11.5,

@@ -1,7 +1,12 @@
 {
   "title": "Making Leather: The last step",
   "description": [
-    "Right click the raw hide on to the tanning rack, and then, with knife hand, right click on the rack a few times to turn raw hide into leather"
+    "<keyword>RMB</keyword> the <named>raw hide</named> onto the <click action=open_quest value='first_steps/making_leather_tanning_rack'><u>Tanning Rack</u></click>, then, with a <click action=open_quest value='first_steps/flint_knife'><u>knife</u></click> in hand, <keyword>RMB</keyword> the rack <property>a few times</property> to turn it into <positive>leather</positive>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Положи <named>сырую шкуру</named> на <click action=open_quest value='first_steps/making_leather_tanning_rack'><u>дубильную стойку</u></click> через <keyword>ПКМ</keyword>, затем возьми <click action=open_quest value='first_steps/flint_knife'><u>нож</u></click> и <keyword>ПКМ</keyword> по стойке <property>несколько раз</property>, чтобы превратить шкуру в <positive>кожу</positive>."
   ],
   "icon": "minecraft:leather",
   "x": 14,

@@ -1,9 +1,9 @@
 createNewItem("steaming_iron_ingot", { food: { nutrition: 4, saturation: 0, alwaysEdible: true, eaten: "setOnFire", effects: [['minecraft:nausea', 200, 0, 1], ['minecraft:darkness', 100, 0, 1]] }, lang: { "en_us": "Steaming iron ingot", "ru_ru": "Жареный железный слиток" }})
 createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle", "ru_ru": "Бетонное мороженое" }})
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
-createNewItem('larva', { food: { nutrition: 4, saturation: 0.5, alwaysEdible: true, effects: [['minecraft:hunger', 80, 0, 1]] }})
-createNewItem('fih_cube', { food: { nutrition: 4, saturation: 1.5 } })
-createNewItem('eggnog', { stackSize: 16, useAnimation: "drink", food: { nutrition: 5, saturation: 2.5 } })
+createNewItem('larva', { lang: { "ru_ru": "Личинка" }, food: { nutrition: 4, saturation: 0.5, alwaysEdible: true, effects: [['minecraft:hunger', 80, 0, 1]] }})
+createNewItem('fih_cube', { lang: { "ru_ru": "Рыбный кубик" }, food: { nutrition: 4, saturation: 1.5 } })
+createNewItem('eggnog', { lang: { "ru_ru": "Эгног" }, stackSize: 16, useAnimation: "drink", food: { nutrition: 5, saturation: 2.5 } })
 
 global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
     if (ctx.player.level.clientSide) return
@@ -37,8 +37,8 @@ createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксо
 createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
 createNewItem('copper_sulfate', {lang: { "ru_ru": "Медный купорос" } })
 
-createNewItem('dev_pen')
-createNewItem('nbt_pen')
+createNewItem('dev_pen', { lang: { "ru_ru": "Ручка разработчика" } })
+createNewItem('nbt_pen', { lang: { "ru_ru": "NBT-ручка" } })
 
 createNewItem('transmutation_orb', {use:{animation:"block"}, lang: { "en_us": "Transmutation Orb", "ru_ru": "Сфера Трансмутации" }})
 createNewItem('regal_orb', {use:{animation:"block"}, lang: { "en_us": "Regal Orb", "ru_ru": "Королевская Сфера" }})
@@ -59,22 +59,22 @@ createNewItem('rune_of_mining', {stackSize: 16, rarity: 'rare', lang : { "en_us"
 createNewItem('blaze_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Blaze Core", "ru_ru": "Ядро Пламени" }})
 createNewItem('electronic_ender_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Electronic Ender Core", "ru_ru": "Электронное Ядро Энда" }})
 createNewItem('magnet_part', {stackSize: 16, lang : { "en_us": "Magnet Part", "ru_ru": "Магнитная часть" }})
-createNewItem('polarized_magnet_part', { stackSize: 16, lang: { "en_us": "Polarized Magnet Part" } })
+createNewItem('polarized_magnet_part', { stackSize: 16, lang: { "en_us": "Polarized Magnet Part", "ru_ru": "Поляризованная магнитная часть" } })
 
 
 createNewItem('needle', { maxDamage: 500, tag: "ytech:bone_needles", lang: { "en_us": "Needle", "ru_ru": "Игла" }})
 
-createNewItem('twig')
-createNewItem('unfired_caminite_brick')
-createNewItem('rod_stamp_raw')
-createNewItem('rod_stamp')
-createNewItem('bolt_stamp_raw')
-createNewItem('bolt_stamp')
+createNewItem('twig', { lang: { "ru_ru": "Веточка" } })
+createNewItem('unfired_caminite_brick', { lang: { "ru_ru": "Необожжённый каминитовый кирпич" } })
+createNewItem('rod_stamp_raw', { lang: { "ru_ru": "Необработанная пресс-форма стержня" } })
+createNewItem('rod_stamp', { lang: { "ru_ru": "Пресс-форма стержня" } })
+createNewItem('bolt_stamp_raw', { lang: { "ru_ru": "Необработанная пресс-форма болта" } })
+createNewItem('bolt_stamp', { lang: { "ru_ru": "Пресс-форма болта" } })
 
 
-createNewItem('fish_net', { stackSize: 15 })
+createNewItem('fish_net', { stackSize: 15, lang: { "ru_ru": "Рыболовная сеть" } })
 
-createNewItem('ferrosilicon_dust')
+createNewItem('ferrosilicon_dust', { lang: { "ru_ru": "Ферросилициевый порошок" } })
 
 
 createNewItem('bronze_glass', { stackSize: 8, lang: { "en_us": "Bronze glass", "ru_ru": "Бронзовое стекло" } })
@@ -87,13 +87,13 @@ createNewItem('basic_machine_bit', {  stackSize: 32, lang: { "en_us": "Basic mac
 createNewItem('small_copper_fluid_container', { texturePath: 'milf:item/copper_fluid_container', lang: { "en_us": "Small copper fluid container", "ru_ru": "Небольшой медный контейнер для жидкости" } })
 createNewItem('small_steel_fluid_container', { texturePath: 'milf:item/steel_fluid_container', lang: { "en_us": "Small steel fluid container", "ru_ru": "Небольшой стальной контейнер для жидкости" } })
 
-createNewItem('bronze_mechanical_component')
+createNewItem('bronze_mechanical_component', { lang: { "ru_ru": "Бронзовая механическая деталь" } })
 
-createNewItem('basic_motor')
-createNewItem('basic_pump')
+createNewItem('basic_motor', { lang: { "ru_ru": "Простой мотор" } })
+createNewItem('basic_pump', { lang: { "ru_ru": "Простой насос" } })
 
-createNewItem('space_hive')
-createNewItem('kerogen')
+createNewItem('space_hive', { lang: { "ru_ru": "Космический улей" } })
+createNewItem('kerogen', { lang: { "ru_ru": "Кероген" } })
 
 
 createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дальномер" } })
@@ -101,23 +101,23 @@ createNewItem('cd_reader', { stackSize: 12, lang: { "en_us": "CD Reader", "ru_ru
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
-createNewItem('5d_memory_crystal', { stackSize: 1, lang: { "en_us": "5D Memory Crystal" } })
+createNewItem('5d_memory_crystal', { stackSize: 1, lang: { "en_us": "5D Memory Crystal", "ru_ru": "5D-кристалл памяти" } })
 
 createNewItem('mysterious_disk', { stackSize: 1, lang: { "ru_ru": "Таинственный диск" } })
 createNewItem('storage_disk', { stackSize: 1, lang: { "ru_ru": "Диск Хранения данных" } })
 createNewItem('automation_disk', { stackSize: 1, lang: {  "ru_ru": "Диск автоматизации" } })
 createNewItem('quantum_disk', { stackSize: 1, lang: { "ru_ru": "Квантовый диск" } })
 
-createNewItem('hemispherical_press_mold', { stackSize: 1 })
-createNewItem('navigation_module', { stackSize: 1 })
+createNewItem('hemispherical_press_mold', { stackSize: 1, lang: { "ru_ru": "Полусферическая пресс-форма" } })
+createNewItem('navigation_module', { stackSize: 1, lang: { "ru_ru": "Навигационный модуль" } })
 
-createNewItem("meze_109", { itemType: "helmet", material: 'milf:egg', stackSize: 1, rarity: 'epic' })
-createNewItem("fishnets", { itemType: "leggings", material: 'milf:egg', stackSize: 1, rarity: 'epic' })
+createNewItem("meze_109", { itemType: "helmet", material: 'milf:egg', stackSize: 1, rarity: 'epic', lang: { "ru_ru": "Meze 109" } })
+createNewItem("fishnets", { itemType: "leggings", material: 'milf:egg', stackSize: 1, rarity: 'epic', lang: { "ru_ru": "Колготки в сетку" } })
 
-createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: { tier: "flint" } })
+createNewItem('flint_pickaxe', { stackSize: 1, itemType: "pickaxe", tool: { tier: "flint" }, lang: { "ru_ru": "Кремнёвая кирка" } })
 
 createNewItem('ms_s_second_order', {
-    stackSize: 1, itemType: "sword", lang: { "en_us": "Ms S's Second Order" },
+    stackSize: 1, itemType: "sword", lang: { "en_us": "Ms S's Second Order", "ru_ru": "Второй приказ мисс S" },
     use: {
         animation: "spear",
         duration: 100000,
@@ -130,23 +130,23 @@ createNewItem('ms_s_second_order', {
 })
 
 createNewItem('grappling_gun', {
-    stackSize: 1, use: {
+    stackSize: 1, lang: { "ru_ru": "Крюкомёт" }, use: {
         animation: "bow",
         duration: 100000,
     }, 
 })
 
-createNewItem('zipped_zipline', { stackSize: 19})
+createNewItem('zipped_zipline', { stackSize: 19, lang: { "ru_ru": "Свёрнутый зиплайн" } })
 
 createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
-createNewItem('mi_replacer', { stackSize: 1, lang: { "en_us": "MI Replacer En Masse" } })
+createNewItem('mi_replacer', { stackSize: 1, lang: { "en_us": "MI Replacer En Masse", "ru_ru": "Массовый заменитель MI" } })
 
 createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:25, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
 createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
-createNewItem('sniffer', { stackSize: 1, lang: { "en_us": "Sniffer" } })
+createNewItem('sniffer', { stackSize: 1, lang: { "en_us": "Sniffer", "ru_ru": "Нюхач" } })
 
 createNewItem('stone_nose', {
-    stackSize: 1,
+    stackSize: 1, lang: { "ru_ru": "Каменный нос" },
     use: {
         animation: "bow",
         duration: 35,
@@ -202,11 +202,11 @@ createNewItem('stone_nose', {
     }
 })
 
-createNewItem('divine_mint', { stackSize: 1})
-createNewItem('divine_coin', { stackSize: 1 })
+createNewItem('divine_mint', { stackSize: 1, lang: { "ru_ru": "Божественный монетный двор" } })
+createNewItem('divine_coin', { stackSize: 1, lang: { "ru_ru": "Божественная монета" } })
 
-createNewItem('bound_spirit', { stackSize: 1, food: { nutrition: 4, saturation: 1, alwaysEdible: true } })
-createNewItem('nutmeg', { stackSize: 62 })
+createNewItem('bound_spirit', { stackSize: 1, lang: { "ru_ru": "Связанный дух" }, food: { nutrition: 4, saturation: 1, alwaysEdible: true } })
+createNewItem('nutmeg', { stackSize: 62, lang: { "ru_ru": "Мускатный орех" } })
 
 createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })
 createNewItem("cement", { lang: { "en_us": "Cement", "ru_ru": "Цемент" } })
@@ -229,11 +229,11 @@ createNewItem('destruction_card', { lang: {  "ru_ru": "Карта разруше
 createNewItem('exchanging_card', { lang: {  "ru_ru": "Карта обмена" } })
 createNewItem('copying_card', { lang: {  "ru_ru": "Карта копирования" } })
 createNewItem('cutting_card', { lang: {  "ru_ru": "Карта резки" } })
-createNewItem('blank_card', { lang: { "en_us": "Blank Card" } })
+createNewItem('blank_card', { lang: { "en_us": "Blank Card", "ru_ru": "Пустая карта" } })
 createNewItem('miasma_orb', { lang: { "ru_ru": "Сфера скверны" }, stackSize: 1, rarity: 'epic'  })
 createNewItem('artifact_dust', { lang: { "ru_ru": "Артефактная пыль" }, stackSize: 15, rarity: 'epic'  })
 createNewItem('mixed_gem_powder', { lang: { "ru_ru": "Порошок драгоценных камней" } })
 createNewItem('soul_of_the_helpless', { lang: { "ru_ru": "Душа беспомощного" }, stackSize: 16, rarity: 'epic'  })
 
-createNewItem('question_mark', { stackSize: 109 })
-createNewItem('milf_item', { stackSize: 109 })
+createNewItem('question_mark', { stackSize: 109, lang: { "ru_ru": "Знак вопроса" } })
+createNewItem('milf_item', { stackSize: 109, lang: { "ru_ru": "Предмет MI:LF" } })

@@ -313,7 +313,7 @@ registerPlacer("steam_cracker", "modern_industrialization", {
 })
 
 registerPlacer("chemical_plant", "modern_industrialization", {
-    langSuffix: { }
+    langSuffix: { ru_ru: "химического завода" }
 })
 
 // registerPlacer("desalter", "modern_industrialization", {
@@ -334,28 +334,33 @@ registerPlacer("chemical_plant", "modern_industrialization", {
 
 registerPlacer("machine_assembler", "mi_tweaks", {
     activeMachineShape: 0,
-    langPrefix: { en_us: "Basic Machine Assembler" }
+    langPrefix: { en_us: "Basic Machine Assembler" },
+    langSuffix: { ru_ru: "простого сборщика машин" }
 })
 
 registerPlacer("machine_assembler_shape_1", "mi_tweaks", {
     nbtFIleName: "machine_assembler",
     activeMachineShape: 1,
-    langPrefix: { en_us: "Advanced Machine Assembler" }
+    langPrefix: { en_us: "Advanced Machine Assembler" },
+    langSuffix: { ru_ru: "продвинутого сборщика машин" }
 })
 
 registerPlacer("deepbronze_fish_farm", "mi_tweaks", {
-    langPrefix: { en_us: "Deepbronze Fish Farm" }
+    langPrefix: { en_us: "Deepbronze Fish Farm" },
+    langSuffix: { ru_ru: "глубинобронзовой рыбной фермы" }
 })
 
 registerPlacer("microbial_fabricator", "mi_tweaks", {
     activeMachineShape: 0,
-    langPrefix: { en_us: "Microbial Fabricator" }
+    langPrefix: { en_us: "Microbial Fabricator" },
+    langSuffix: { ru_ru: "микробного фабрикатора" }
 })
 
 registerPlacer("microbial_fabricator_shape_1", "mi_tweaks", {
     nbtFIleName: "microbial_fabricator",
     activeMachineShape: 1,
-    langPrefix: { en_us: "Bioresistant Microbial Fabricator" }
+    langPrefix: { en_us: "Bioresistant Microbial Fabricator" },
+    langSuffix: { ru_ru: "биостойкого микробного фабрикатора" }
 })
 
 // registerPlacer("advanced_large_steam_furnace", "mi_tweaks", {

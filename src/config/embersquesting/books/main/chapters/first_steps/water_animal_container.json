@@ -1,7 +1,12 @@
 {
   "title": "Water Animal Container",
   "description": [
-    "Same as the Animal Cage but for aquatic creatures such as squids and salmon."
+    "Same as the <click action=open_quest value='first_steps/animal_cage'><u>Animal Cage</u></click>, but for <aqua>aquatic creatures</aqua> such as squids and salmon.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "То же самое, что и <click action=open_quest value='first_steps/animal_cage'><u>клетка для животных</u></click>, но для <aqua>водных существ</aqua>: кальмаров и лосося."
   ],
   "icon": "animal_pen:water_animal_container",
   "x": 35,

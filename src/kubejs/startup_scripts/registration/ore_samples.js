@@ -397,7 +397,7 @@ samplesData.forEach(ore => {
             "oritech:resource_nodes"
         ],
         tag: "milf:bedrock_ore_samples",
-        lang: ore.bedrockSampleLang
+        lang: Object.assign({ "ru_ru": `${ore.sampleLang.ru_ru} из бедрока` }, ore.bedrockSampleLang)
     })
 
     ore.bedrockSampleId = `milf:bedrock_${sampleId}`

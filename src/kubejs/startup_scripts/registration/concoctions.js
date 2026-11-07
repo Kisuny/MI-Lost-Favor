@@ -67,7 +67,7 @@ let $GraveStatus = Java.loadClass("com.b1n_ry.yigd.data.GraveStatus")
 
 createNewItem('grecall_concoction_t1', {
     stackSize: 1,
-    lang: { "en_us": "Grecall Concoction" },
+    lang: { "en_us": "Grecall Concoction", "ru_ru": "Зелье Могильного Возвращения" },
     use: {
         animation: "drink",
         duration: 80,
@@ -104,7 +104,7 @@ createNewItem('grecall_concoction_t1', {
 
 createNewItem('grecall_concoction_t2', {
     stackSize: 1,
-    lang: { "en_us": "The Intercontinental Ballistic Missile Grecall Concoction" },
+    lang: { "en_us": "The Intercontinental Ballistic Missile Grecall Concoction", "ru_ru": "Межконтинентальное Баллистическое Зелье Могильного Возвращения" },
     use: {
         animation: "drink",
         duration: 80,

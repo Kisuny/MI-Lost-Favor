@@ -9,8 +9,9 @@ createNewBlock("gem_composite", { blockType: "falling", hardness: 0.5, soundType
 createNewBlock("chunk_flag", { property: enabledProperty, soundType: "wood", box: [5, 0, 5, 11, 1, 11, true], defaultCutout: true, tagBlock: 'minecraft:mineable/axe', lang: { "en_us": "Chunk flag", "ru_ru": "Флаг чанка" } })
 createNewBlock("embers_dummy_chart_block_crate", { texturePath: "embers:block/crate_chart" })
 
-createNewBlock("abstraction_portal", { hardness: 20, soundType: "amethyst", requiresTool: true, tagBlock: ['minecraft:mineable/pickaxe', "minecraft:needs_diamond_tool"] })
+createNewBlock("abstraction_portal", { lang: { "ru_ru": "Портал Абстракции" }, hardness: 20, soundType: "amethyst", requiresTool: true, tagBlock: ['minecraft:mineable/pickaxe', "minecraft:needs_diamond_tool"] })
 createNewBlock("concreteness_portal", {
+    lang: { "ru_ru": "Портал Конкретности" },
     hardness: -1, soundType: "amethyst", requiresTool: true, lightLevel: 15, tagBlock: 
     [
     'spectrum:unbreakable', "minecraft:wither_immune", "minecraft:dragon_immune", 

@@ -1,7 +1,12 @@
 {
   "title": "Bird Catcher",
   "description": [
-    "Same as the Animal Cage but for flying creatures such as bats and bees."
+    "Same as the <click action=open_quest value='first_steps/animal_cage'><u>Animal Cage</u></click>, but for <wind>flying creatures</wind> such as bats and bees.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "То же самое, что и <click action=open_quest value='first_steps/animal_cage'><u>клетка для животных</u></click>, но для <wind>летающих существ</wind>: летучих мышей и пчёл."
   ],
   "icon": "animal_pen:bird_catcher",
   "x": 35,

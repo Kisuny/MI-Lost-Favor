@@ -28,12 +28,12 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${MilfEffects.GRAD.custom("тёмных глубинах", "#1A4FFF", "#0A1A7A")}...`)
     event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${MilfEffects.GRAD.custom("существами, которым нет числа", "#9B59B6", "#E8D5FF")}`)
     event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${MilfEffects.GRAD.UPGRADE("новыми рудами")}...`)
-    event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
+    event.add('milf.stage.tier_2_access_ore', 'Разблокировано: иридиевая / платиновая / титановая / вольфрамовая / урановая руда')
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
     event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${MilfEffects.GRAD.custom("странные звуки", "#ED1A1A", "#B62651")} ночью...`)
     event.add('milf.stage.early_items', `Этот мир больше не ${MilfEffects.GLITCH("отвергает")} вас...`)
 
-    event.add('gateways.tiered/haven', 'Haven Gateway')
+    event.add('gateways.tiered/haven', 'Врата Haven')
     event.add("apotheosis", 'wave_entity.apotheosis.amethyst_crab', 'Усиленный Amethest Crab')
     event.add("apotheosis", 'wave_entity.apotheosis.ferrous_wroughtnaut', 'Усиленный Ferrous Wroughtnaut')
     event.add("apotheosis", 'wave_entity.apotheosis.black_charro', 'Усиленный Black Charro')
@@ -405,4 +405,52 @@ ClientEvents.lang('ru_ru', event => {
     // руды thaumaturge генерируются внутри жил ADLODS
     event.add('research.thaumaturge.ore.addendum_0', '§oЯнтарная руда§r<IMG>thaumaturge:textures/research/research3.png:0:128:128:128:.6</IMG>Эта руда не лежит сама по себе - она вкраплена в угольные жилы вместе с лигнитом. При добыче из неё выпадают куски янтаря.')
     event.add('research.thaumaturge.ore.addendum_1', '§oКиноварь§r<IMG>thaumaturge:textures/research/research3.png:128:128:128:128:.6</IMG>Эта красноватая руда сопутствует редстоуну - ищи её внутри редстоуновых жил. При плавке даёт ртуть.')
+
+    event.add('block.paganbless.chalice', 'Чаша')
+    event.add('block.immersivepetroleum.crudeoil_fluid_block', 'Сырая нефть')
+
+    event.add('milf.credit.mi_part', `${MilfEffects.GRAD.MILF('Сертифицированная MI:LF™ деталь MI')}`)
+    event.add('milf.credit.mi_machine', `${MilfEffects.GRAD.MILF('Сертифицированная MI:LF™ машина MI')}`)
+    event.add('milf.credit.item', `${MilfEffects.GRAD.MILF('Сертифицированный MI:LF™ предмет')}`)
+    event.add('milf.credit.block', `${MilfEffects.GRAD.MILF('Сертифицированный MI:LF™ блок')}`)
+    event.add('milf.credit.fluid', `${MilfEffects.GRAD.MILF('Сертифицированная MI:LF™ жидкость')}`)
+
+    event.add('milf.core_drill.y_pos', `Керновый бур нужно поставить на ${MilfEffects.GRAD.NEGATIVE('уровне Y -59')}, чтобы начать бурение!`)
+    event.add('milf.core_drill.sample_in_chunk', `В этом чанке уже есть образец из бедрока для каждого подходящего месторождения поблизости!`)
+    event.add('milf.core_drill.no_valid_deposits', `В радиусе 10 блоков нет ${MilfEffects.GRAD.NEGATIVE('подходящих месторождений')}!`)
+    event.add('milf.core_drill.not_enough_fluid', `Недостаточно ${MilfEffects.GRAD.NEGATIVE('жидкости')} для бурения!`)
+    event.add('milf.core_drill.wrong_fluid', `${MilfEffects.GRAD.NEGATIVE('Неподходящая жидкость')} для этого типа бурения!`)
+
+    event.add('milf.mi_tweaks.tooltip.solar_powered1', `Выполняет рецепты ${MilfEffects.GRAD.UPUPGRADE('%s')} с эффективностью ${MilfEffects.GRAD.MILF('2.5X')}`)
+    event.add('milf.mi_tweaks.tooltip.solar_powered2', `Для работы нужен ${MilfEffects.GRAD.MILF('прямой солнечный свет')}`)
+    event.add('milf.mi_tweaks.tooltip.basic_electric1', `Выполняет рецепты ${MilfEffects.GRAD.UPUPGRADE('%s')} с эффективностью ${MilfEffects.GRAD.MILF('4X')}`)
+    event.add('milf.mi_tweaks.tooltip.basic_electric2', `Для работы нужны  <item id=modern_industrialization:redstone_battery size=0.08/> и редстоуновая кислота`)
+    event.add('milf.mi_tweaks.tooltip.ember_powered1', `Выполняет рецепты ${MilfEffects.GRAD.UPUPGRADE('%s')} с эффективностью ${MilfEffects.GRAD.MILF('1.5X')}`)
+    event.add('milf.mi_tweaks.tooltip.ember_powered2', `Для работы нужен  <item id=embers:ember_grit size=0.08/>`)
+    event.add('milf.mi_tweaks.tooltip.batch', `Выполняет рецепты ${MilfEffects.GRAD.UPUPGRADE('%s')} ${MilfEffects.GRAD.MILF('партиями')}:`)
+    event.add('milf.mi_tweaks.tooltip.tier_batch', `    ${MilfEffects.GRAD.MILF('%1$s')} ▶ партии до ${MilfEffects.GRAD.MILF('%2$s')} за ${MilfEffects.GRAD.MILF('%3$s')} стоимости EU`)
+    event.add('milf.mi_tweaks.tooltip.own_recipe', `Собственные`)
+
+    event.add('milf.mi_condition.cd_reader', `Требуется  <item id=milf:cd_reader size=0.08/> как ${MilfEffects.GRAD.MILF("улучшение машины")}`)
+    event.add('milf.mi_condition.quarry', `Под карьером требуется %s!`)
+
+    event.add('rei_categories.modern_industrialization.mi_furnace', 'Печь')
+
+    event.add('tag.item.milf.knives', 'Ножи')
+    event.add('tag.item.milf.sticks', 'Палки')
+
+    event.add('milf.notification.missing_energy.fe', `Требуется %s FE!`)
+    event.add('milf.notification.missing_items.to_upgrade', `Для улучшения требуется %s!`)
+    event.add('milf.notification.missing_items.to_use', `Для использования требуется %s!`)
+
+    event.add('milf.stone_nose.ore_type', `(чует: %s)`)
+
+    event.add('milf.ms_s_second_order.tooltip', `Когда не действуют слова и враг стоит упрямо,
+Остаётся лишь одно: убавить в нём здоровья прямо.`)
+
+    event.add('milf.clunky_drill.horizontal', `(горизонтально)`)
+    event.add('milf.clunky_drill.vertical', `(вертикально)`)
+    event.add('milf.clunky_drill.mode', `Режим бура изменён!`)
+
+    event.add('milf.big_bulky_drill.tooltip', `Работает как обычный бур, но ${MilfEffects.GRAD.NEGATIVE("не")} считается лопатой. Область добычи увеличивается, только если ВСЕ блоки в ней похожи на камень.`)
 })

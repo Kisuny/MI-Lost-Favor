@@ -1,7 +1,12 @@
 {
   "title": "Sharp Flint",
   "description": [
-    "Simply <positive>smash</positive> a piece of <keyword>flint</keyword> against a <keyword>stone</keyword> to sharpen it"
+    "Simply <positive>smash</positive> a piece of <keyword>flint</keyword> against <bone>stone</bone> to <warning><shake amplitude=0.3 frequency=1.0>sharpen it</shake></warning>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Просто <positive>ударь</positive> куском <keyword>кремня</keyword> о <bone>камень</bone>, чтобы <warning><shake amplitude=0.3 frequency=1.0>заточить его</shake></warning>."
   ],
   "icon": "ytech:sharp_flint",
   "x": 3,

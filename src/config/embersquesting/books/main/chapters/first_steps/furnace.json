@@ -1,9 +1,16 @@
 {
   "title": "Furnace",
   "description": [
-    "It's the furnace. You know it, you love it.",
+    "It's the <flame>furnace</flame>. You know it, you love it.",
     "",
-    "But they are a bit limited this early on. That's where the Primitive Alloy Smelter and Primitive Smelter come in."
+    "But it's a bit <warning>limited</warning> this early on. That's where the <named>Primitive Alloy Smelter</named> and <named>Primitive Smelter</named> come in.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Это <flame>печь</flame>. Ты её знаешь, ты её любишь.",
+    "",
+    "Но на раннем этапе её возможности <warning>ограничены</warning>. Тут на помощь придут <named>примитивная плавильня сплавов</named> и <named>примитивная плавильня</named>."
   ],
   "icon": "minecraft:furnace",
   "x": 17,

@@ -1,7 +1,12 @@
 {
   "title": "Brick Dust",
   "description": [
-    "Combine the Stone Mortar and Pestle with a Brick in a crafting grid to make Brick Dust"
+    "Combine the <click action=open_quest value='first_steps/stone_mortar_and_pestle'><u>Stone Mortar and Pestle</u></click> with a <keyword>Brick</keyword> in a crafting grid to make <bone>Brick Dust</bone>.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "Соедини <click action=open_quest value='first_steps/stone_mortar_and_pestle'><u>каменную ступку с пестиком</u></click> с <keyword>кирпичом</keyword> в сетке крафта, чтобы получить <bone>кирпичную пыль</bone>."
   ],
   "icon": "modern_industrialization:brick_dust",
   "x": 19,

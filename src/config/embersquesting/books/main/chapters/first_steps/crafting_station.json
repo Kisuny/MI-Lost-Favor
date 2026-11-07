@@ -1,7 +1,12 @@
 {
   "title": "Crafting Station",
   "description": [
-    "The crafting station acts like the normal crafting table, except that it can access adjacent inventories, and items can be placed and kept on it"
+    "The <named>Crafting Station</named> works like a normal crafting table, except that it can <magic>access adjacent inventories</magic>, and items <positive>stay on it</positive> after you close it.",
+    {
+      "style": "page",
+      "type": "divider"
+    },
+    "<named>Станция крафта</named> работает как обычный верстак, но умеет <magic>брать предметы из соседних хранилищ</magic>, а положенные на неё предметы <positive>остаются на месте</positive> после закрытия."
   ],
   "icon": "craftingstation:crafting_station",
   "x": 19.5,

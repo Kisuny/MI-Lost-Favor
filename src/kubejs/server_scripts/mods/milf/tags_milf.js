@@ -132,3 +132,65 @@ ServerEvents.tags('item', event => {
     //#endregion
 
 })
+
+ServerEvents.tags('block', event => {
+
+    event.add("minecraft:mineable/hoe", [
+        "milf:everburning_roots",
+        "milf:everburning_roots_vine_block",
+        "milf:everburning_roots_heart",
+        "milf:everburning_roots_veins",
+        "milf:everburning_roots_vine",
+    ])
+
+    event.add("minecraft:mineable/pickaxe", [
+        "milf:clay_crucible",
+
+        "milf:clay_mold_axe",
+        "milf:clay_mold_hammer",
+        "milf:clay_mold_hoe",
+        "milf:clay_mold_pickaxe",
+        "milf:clay_mold_sword",
+        "milf:clay_mold_shovel",
+        "milf:clay_plate",
+
+        "milf:clay_mold_base",
+        "milf:clay_mold_ingot",
+        "milf:clay_mold_rod",
+        "milf:clay_mold_anvil_full",
+
+        "milf:stone_anvil",
+        "milf:bronze_anvil",
+        "milf:stone_basin",
+        "milf:stone_pole",
+        "milf:pot_bellows",
+
+        "milf:kiln",
+
+    ])
+
+    event.add("minecraft:mineable/shovel", [
+        "milf:unfired_clay_crucible",
+
+        "milf:unfired_clay_mold_axe",
+        "milf:unfired_clay_mold_hammer",
+        "milf:unfired_clay_mold_hoe",
+        "milf:unfired_clay_mold_pickaxe",
+        "milf:unfired_clay_mold_sword",
+        "milf:unfired_clay_mold_shovel",
+        "milf:unfired_clay_plate",
+
+        "milf:unfired_clay_mold_base",
+        "milf:unfired_clay_mold_ingot",
+        "milf:unfired_clay_mold_rod",
+        "milf:unfired_clay_mold_anvil_full",
+        "milf:unfired_clay_mold_anvil_half",
+
+        "milf:unfired_bloomery_base",
+        "milf:unfired_kiln",
+        "milf:pottery_clay",
+        "milf:fire_clay",
+    ])
+
+
+})

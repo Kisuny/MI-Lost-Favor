@@ -52,7 +52,8 @@ ServerEvents.recipes(event => {
             
         ],
         removeRecipeType: "modern_industrialization:macerator",
-        ieCompat: true
+        ieCompat: true,
+        compatOff:true
     })
 
     miMachineRecipe(event, {

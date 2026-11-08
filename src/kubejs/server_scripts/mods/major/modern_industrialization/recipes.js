@@ -188,7 +188,7 @@ function miMachineRecipe(event, args){
         }
     }
 
-    if (args.machine == "modern_industrialization:macerator" && energy <= 4) {
+    if (args.machine == "modern_industrialization:macerator" && energy <= 4 && !args.compatOff) {
         //milfMacToCrush(event, recipe.item_inputs[0], recipe.item_outputs, id)
         arsNouveauCrushRecipe(event, {
             inputItems: args.inputItems,

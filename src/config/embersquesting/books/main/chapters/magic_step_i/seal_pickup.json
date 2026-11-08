@@ -1,20 +1,7 @@
 {
-  "title": "Seal Pickup",
+  "title": "",
   "description": [
-    "Constantly checks a marked <property>area</property> for dropped items and sends golems to <wiggle amplitude=0.5 frequency=1.0 phase=1.0>pick them up</wiggle>. You can set the exact size of the area and filter items with a whitelist or blacklist.",
-    "",
-    "Golems only carry the items - combine it with a <keyword>Store</keyword> seal to tell them where to put them.",
-    "",
-    "Golem: must <warning>not</warning> be <property>Clumsy</property>.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Постоянно проверяет отмеченную <property>зону</property> на выпавшие предметы и отправляет големов их <wiggle amplitude=0.5 frequency=1.0 phase=1.0>подбирать</wiggle>. Размер зоны настраивается точно, а предметы можно фильтровать белым или чёрным списком.",
-    "",
-    "Големы только несут предметы - совмещай с печатью <keyword>хранения</keyword>, чтобы указать, куда их класть.",
-    "",
-    "Голем: <warning>не</warning> должен быть <property>неуклюжим</property> (Clumsy)."
+    "<lang key=milf.quest.magic_step_i.seal_pickup.desc>"
   ],
   "icon": "thaumaturge:seal_pickup",
   "x": 49.5,

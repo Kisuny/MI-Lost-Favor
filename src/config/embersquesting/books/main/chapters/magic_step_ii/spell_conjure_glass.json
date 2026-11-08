@@ -1,5 +1,5 @@
 {
-  "title": "Conjure Glass",
+  "title": "<lang key=milf.quest.magic_step_ii.spell_conjure_glass.title>",
   "description": [
     {
       "items": [
@@ -92,105 +92,7 @@
       ],
       "type": "item"
     },
-    "",
-    "Conjures a <keyword>3x3</keyword> patch of <nature>sand</nature>, <flame>smelts</flame> it into <positive>glass</positive> and picks it up. Best used in a <keyword>spell turret</keyword> with a chest next to it to collect the glass",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    {
-      "items": [
-        "ars_nouveau:glyph_touch"
-      ],
-      "align": "left",
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_elemental:glyph_conjure_terrain"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_aoe"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_aoe"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_crush"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_break"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_smelt"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_pickup"
-      ],
-      "type": "item"
-    },
-    "",
-    "Создаёт участок <nature>песка</nature> <keyword>3x3</keyword>, <flame>переплавляет</flame> его в <positive>стекло</positive> и подбирает. Лучше всего ставить в <keyword>турель заклинаний</keyword> с сундуком рядом, чтобы собирать стекло"
+    "<lang key=milf.quest.magic_step_ii.spell_conjure_glass.desc>"
   ],
   "icon": "ars_nouveau:glyph_smelt",
   "x": 96.5,

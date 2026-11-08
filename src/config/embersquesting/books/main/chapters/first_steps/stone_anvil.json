@@ -1,24 +1,7 @@
 {
-  "title": "Stone Anvil",
+  "title": "<lang key=block.milf.stone_anvil>",
   "description": [
-    "The <named>stone anvil</named> is the first place to <keyword>crush</keyword> and <keyword>shape</keyword> things with a <named>hammer</named>",
-    "",
-    "Put the item on it with <keyword>RMB</keyword>",
-    "",
-    "Look at the anvil with a hammer in your <keyword>main hand</keyword> and markers will start running along an arc. Press <keyword>RMB</keyword> when a marker reaches <positive>the bottom of the turn</positive> - the more precise the hit, the more progress it gives",
-    "",
-    "<warning>Every hit costs hammer durability</warning>, and <warning><glitch frequency=0.7 shiftChance=0.06>looking away resets the progress</glitch></warning>. <keyword>Shift + RMB</keyword> with an empty hand takes the item back",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "<named>Каменная наковальня</named> - первое место, где можно <keyword>дробить</keyword> и <keyword>ковать</keyword> <named>молотом</named>",
-    "",
-    "Положи на неё предмет через <keyword>ПКМ</keyword>",
-    "",
-    "Посмотри на наковальню с молотом в <keyword>основной руке</keyword>, и по дуге побегут метки. Жми <keyword>ПКМ</keyword>, когда метка дойдёт до <positive>нижней точки разворота</positive> - чем точнее удар, тем больше прогресса",
-    "",
-    "<warning>Каждый удар тратит прочность молота</warning>, а если <warning><glitch frequency=0.7 shiftChance=0.06>отвести взгляд, прогресс сбросится</glitch></warning>. <keyword>Shift + ПКМ</keyword> пустой рукой забирает предмет обратно"
+    "<lang key=milf.quest.first_steps.stone_anvil.desc>"
   ],
   "icon": "milf:stone_anvil",
   "x": 17,

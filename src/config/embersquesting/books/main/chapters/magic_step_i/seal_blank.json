@@ -1,38 +1,12 @@
 {
-  "title": "Seal Blank",
+  "title": "",
   "description": [
-    "Golems do nothing until they are told to - that is what <keyword>Control Seals</keyword> are for. Place a seal on almost any surface: it turns <soul>ethereal</soul>, so you can put a block in the same spot, and several seals can share a block on different faces.",
-    "",
-    "Seals are visible only while you hold a golem, a seal or the <keyword>Golemancer's Bell</keyword>. <positive>RMB</positive> a seal with the bell to configure it, <positive>Shift + RMB</positive> to pick it up.",
+    "<lang key=milf.quest.magic_step_i.seal_blank.desc>",
     {
       "style": "page",
       "type": "divider"
     },
-    "<named>Common settings:</named>",
-    "- <property>priority</property> from -5 to +5 - tasks of higher priority seals are done first;",
-    "- <property>required and forbidden traits</property> - which golems may take the task;",
-    "- <property>redstone</property> - a seal can switch off on a signal, cancelling its tasks;",
-    "- <aqua>color</aqua> - a colored seal gives tasks only to uncolored golems or golems of the same color (dye the golem).",
-    "",
-    "Craft the bell as soon as you can - you will use it constantly.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Големы ничего не делают, пока им не прикажут, - для этого и нужны <keyword>управляющие печати</keyword>. Печать ставится почти на любую поверхность и становится <soul>бесплотной</soul>: на её место можно поставить блок, а на разных гранях одного блока может быть несколько печатей.",
-    "",
-    "Печати видны, только пока держишь голема, печать или <keyword>колокольчик големостроителя</keyword>. <positive>ПКМ</positive> колокольчиком по печати открывает настройки, <positive>Shift + ПКМ</positive> забирает её.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "<named>Общие настройки:</named>",
-    "- <property>приоритет</property> от -5 до +5 - задачи печатей с большим приоритетом выполняются первыми;",
-    "- <property>нужные и запрещённые черты</property> - какие големы могут взять задачу;",
-    "- <property>редстоун</property> - печать может отключаться по сигналу, отменяя свои задачи;",
-    "- <aqua>цвет</aqua> - цветная печать даёт задачи только бесцветным големам или големам того же цвета (голема красят красителем).",
-    "",
-    "Сделай колокольчик как можно раньше - пользоваться им придётся постоянно."
+    "<lang key=milf.quest.magic_step_i.seal_blank.desc.1>"
   ],
   "icon": "thaumaturge:seal_blank",
   "x": 50,

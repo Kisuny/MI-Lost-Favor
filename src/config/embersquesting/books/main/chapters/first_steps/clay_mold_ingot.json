@@ -1,24 +1,7 @@
 {
-  "title": "Clay Mold Ingot",
+  "title": "<lang key=block.milf.clay_mold_ingot>",
   "description": [
-    "An <named>ingot mold</named> has <property>3 slots</property> of <property>250 mB</property> each - one ingot per slot",
-    "",
-    "<keyword>RMB</keyword> with a filled <named>crucible</named> pours metal into the next free slot. The slots are independent, so <positive>different metals</positive> can share one mold",
-    "",
-    "When the metal has <aqua>cooled down</aqua> (about <property>20 seconds</property>), hit the mold with a <named>hammer</named> using <keyword>RMB</keyword>: it <warning><shake amplitude=0.4 frequency=1.5>shatters</shake></warning>, dropping the ingots and some <named>potsherds</named>",
-    "",
-    "<warning>The mold is single-use</warning> - wait until every filled slot has hardened, otherwise the metal that is still liquid will be lost",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "В <named>форме для слитков</named> <property>3 ячейки</property> по <property>250 mB</property> - по слитку на ячейку",
-    "",
-    "<keyword>ПКМ</keyword> с полным <named>тиглем</named> заливает металл в следующую свободную ячейку. Ячейки независимы, так что в одной форме можно отлить <positive>разные металлы</positive>",
-    "",
-    "Когда металл <aqua>остынет</aqua> (примерно <property>20 секунд</property>), ударь по форме <named>молотом</named> через <keyword>ПКМ</keyword>: она <warning><shake amplitude=0.4 frequency=1.5>разобьётся</shake></warning>, и выпадут слитки и немного <named>черепков</named>",
-    "",
-    "<warning>Форма одноразовая</warning> - дождись, пока застынут все заполненные ячейки, иначе ещё жидкий металл пропадёт"
+    "<lang key=milf.quest.first_steps.clay_mold_ingot.desc>"
   ],
   "icon": "milf:clay_mold_ingot",
   "x": 23.5,

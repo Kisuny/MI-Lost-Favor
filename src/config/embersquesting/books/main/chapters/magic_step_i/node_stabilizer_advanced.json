@@ -1,22 +1,7 @@
 {
-  "title": "Node Stabilizer Advanced",
+  "title": "",
   "description": [
-    "Does everything the normal <keyword>Node Stabilizer</keyword> does, with two big differences:",
-    "",
-    "- weaker nodes still cannot drain the stabilized one, but now <property>it can drain them</property> - a way to grow your main node at the expense of its neighbours;",
-    "- much better chances to cure <warning>unstable</warning> and <curse>fading</curse> nodes.",
-    "",
-    "The price: it takes far more power from the node. Its vis still does not drop, but even a <positive>bright</positive> node will barely <warning>refill at all</warning>.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Делает всё то же, что обычный <keyword>стабилизатор узла</keyword>, но с двумя важными отличиями:",
-    "",
-    "- более слабые узлы по-прежнему не могут высасывать стабилизированный, зато теперь <property>он может высасывать их</property> - так можно растить главный узел за счёт соседей;",
-    "- гораздо выше шанс вылечить <warning>нестабильный</warning> и <curse>угасающий</curse> узел.",
-    "",
-    "Цена: он забирает у узла намного больше энергии. Запас vis не падает, но даже <positive>яркий</positive> узел почти <warning>перестаёт восполняться</warning>."
+    "<lang key=milf.quest.magic_step_i.node_stabilizer_advanced.desc>"
   ],
   "icon": "thaumaturge:node_stabilizer_advanced",
   "x": 71.5,

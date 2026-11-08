@@ -1,20 +1,7 @@
 {
-  "title": "Seal Provider",
+  "title": "",
   "description": [
-    "Like <keyword>Empty</keyword>, but takes an item out only when another seal <property>requests</property> it. Seals like Use or Stock can ask for <property>provisioning</property>: a golem then fetches the needed items from containers marked with a Provide seal.",
-    "",
-    "The task uses the requesting seal's priority, and the golem must fit both seals' requirements. The Provide filter only limits what may be taken - the exact item is chosen by the requesting seal. Options: <property>single item only</property>, <property>always leave at least 1</property>. Filter: 9 slots.",
-    "",
-    "Golem: must <warning>not</warning> be <property>Clumsy</property>.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Как <keyword>опустошение</keyword>, но забирает предмет, только когда его <property>запрашивает</property> другая печать. Печати вроде использования или запаса могут просить <property>снабжение</property>: голем приносит нужное из контейнеров с печатью выдачи.",
-    "",
-    "Задача берёт приоритет запросившей печати, и голем должен подходить под требования обеих печатей. Фильтр выдачи лишь ограничивает, что можно брать, - конкретный предмет выбирает запросившая печать. Опции: <property>только по одному предмету</property>, <property>всегда оставлять хотя бы 1</property>. Фильтр: 9 слотов.",
-    "",
-    "Голем: <warning>не</warning> должен быть <property>неуклюжим</property> (Clumsy)."
+    "<lang key=milf.quest.magic_step_i.seal_provider.desc>"
   ],
   "icon": "thaumaturge:seal_provider",
   "x": 48,

@@ -1,20 +1,7 @@
 {
-  "title": "Seal Fill",
+  "title": "",
   "description": [
-    "Placed on the side of a container, it marks it as a <property>destination</property> for anything nearby golems are holding. Filter with a white- or blacklist; for whitelisted items you can set how many must end up inside (a gold star means unlimited). There is also an option to only accept items the container <property>already holds</property>.",
-    "",
-    "Placed on a non-container block, golems simply drop items there - items within 1 block of the seal count towards the limit.",
-    "",
-    "Golem: must <warning>not</warning> be <property>Clumsy</property>.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Ставится на бок контейнера и делает его <property>местом доставки</property> для всего, что несут ближайшие големы. Есть белый и чёрный списки; для предметов из белого списка можно задать, сколько их должно оказаться внутри (золотая звезда - без ограничения). Ещё есть опция принимать только то, что в контейнере <property>уже есть</property>.",
-    "",
-    "Если поставить на обычный блок, големы просто выбрасывают предметы там - предметы в радиусе 1 блока от печати засчитываются в лимит.",
-    "",
-    "Голем: <warning>не</warning> должен быть <property>неуклюжим</property> (Clumsy)."
+    "<lang key=milf.quest.magic_step_i.seal_fill.desc>"
   ],
   "icon": "thaumaturge:seal_fill",
   "x": 48.5,

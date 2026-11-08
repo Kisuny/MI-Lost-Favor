@@ -1,20 +1,7 @@
 {
-  "title": "Potsherd",
+  "title": "",
   "description": [
-    "<named>Potsherds</named> are what's left of <bone>broken ceramics</bone>: they drop when you <warning><shake amplitude=0.4 frequency=1.5>shatter</shake></warning> a <named>clay mold</named> after casting",
-    "",
-    "Any ceramic item - a <click action=open_quest value='first_steps/clay_crucible'><u>clay crucible</u></click>, a clay plate or a mold - can also be smashed into <property>5 potsherds</property> on a <click action=open_quest value='first_steps/stone_anvil'><u>stone anvil</u></click>",
-    "",
-    "And they make a decent <blood>throwing weapon</blood>: hold <keyword>RMB</keyword> to wind up and release to <wind><bounce amplitude=1.5 frequency=1.2 phase=1.0>throw</bounce></wind>. A shard that hits the ground <positive>can be picked back up</positive>",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "<named>Черепки</named> - это всё, что остаётся от <bone>разбитой керамики</bone>: они выпадают, когда ты <warning><shake amplitude=0.4 frequency=1.5>разбиваешь</shake></warning> <named>глиняную форму</named> после отливки",
-    "",
-    "Любую керамику - <click action=open_quest value='first_steps/clay_crucible'><u>глиняный тигель</u></click>, глиняную пластину или форму - можно и разбить на <property>5 черепков</property> на <click action=open_quest value='first_steps/stone_anvil'><u>каменной наковальне</u></click>",
-    "",
-    "А ещё ими неплохо <blood>кидаться</blood>: зажми <keyword>ПКМ</keyword>, чтобы замахнуться, и отпусти, чтобы <wind><bounce amplitude=1.5 frequency=1.2 phase=1.0>бросить</bounce></wind>. Упавший на землю черепок <positive>можно подобрать обратно</positive>"
+    "<lang key=milf.quest.first_steps.potsherd.desc>"
   ],
   "icon": "milf:potsherd",
   "x": 17,

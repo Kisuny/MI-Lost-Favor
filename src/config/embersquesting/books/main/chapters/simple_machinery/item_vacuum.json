@@ -1,16 +1,7 @@
 {
-  "title": "Item Vacuum",
+  "title": "",
   "description": [
-    "Give the <keyword>Item Vacuum</keyword> a <pulse>redstone signal</pulse> and it will <wave>suck in</wave> all loose items in a large area in front of it.",
-    "",
-    "It has no inventory of its own and pushes items straight into a pipe or container at its back. Put an <keyword>Item Transfer</keyword> there to <property>filter</property> what gets picked up.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Подайте на <keyword>Вакуумный сборщик</keyword> <pulse>редстоун-сигнал</pulse>, и он <wave>втянет</wave> все лежащие предметы на большой площади перед собой.",
-    "",
-    "Своего инвентаря у него нет - предметы сразу уходят в трубу или контейнер сзади. Поставьте туда <keyword>Передатчик предметов</keyword>, чтобы <property>фильтровать</property>, что собирать."
+    "<lang key=milf.quest.simple_machinery.item_vacuum.desc>"
   ],
   "icon": "embers:item_vacuum",
   "x": 7,

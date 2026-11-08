@@ -1,24 +1,7 @@
 {
-  "title": "Iron Bloom",
+  "title": "",
   "description": [
-    "An <named>iron bloom</named> is a <flame>spongy lump</flame> of iron and slag. It's made in the <click action=open_quest value='first_steps/bloomery_base'><u>bloomery</u></click> from <property>2</property> <click action=open_quest value='first_steps/crushed_iron'><u>crushed iron</u></click> and <property>2</property> <named>charcoal</named>",
-    "",
-    "This recipe <wind><wave>needs extra air</wave></wind>: put a <click action=open_quest value='first_steps/kiln'><u>kiln</u></click> on top of the bloomery and pump <click action=open_quest value='first_steps/pot_bellows'><u>bellows</u></click> next to it",
-    "",
-    "The bloom isn't an ingot yet - <shake amplitude=0.3 frequency=1.0>forge</shake> it into an <named>iron ingot</named> on a <click action=open_quest value='first_steps/bronze_anvil'><u>bronze anvil</u></click>",
-    "",
-    "Don't forget to decorate your base with <click action=open_quest value='first_steps/chunk_claiming'><u>flags!</u></click>",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "<named>Железная крица</named> - это <flame>пористый ком</flame> железа со шлаком. Её делают в <click action=open_quest value='first_steps/bloomery_base'><u>кричном горне</u></click> из <property>2</property> <click action=open_quest value='first_steps/crushed_iron'><u>дроблёного железа</u></click> и <property>2</property> <named>древесного угля</named>",
-    "",
-    "Этому рецепту <wind><wave>нужен дополнительный воздух</wave></wind>: поставь на горн <click action=open_quest value='first_steps/kiln'><u>печь</u></click> и качай <click action=open_quest value='first_steps/pot_bellows'><u>мехи</u></click> рядом с ним",
-    "",
-    "Крица - ещё не слиток: её нужно <shake amplitude=0.3 frequency=1.0>проковать</shake> в <named>железный слиток</named> на <click action=open_quest value='first_steps/bronze_anvil'><u>бронзовой наковальне</u></click>",
-    "",
-    "Не забудь украсить свою базу <click action=open_quest value='first_steps/chunk_claiming'><u>флажками!</u></click>"
+    "<lang key=milf.quest.first_steps.iron_bloom.desc>"
   ],
   "icon": "milf:iron_bloom",
   "x": 35.5,

@@ -1,5 +1,5 @@
 {
-  "title": "Sword",
+  "title": "<lang key=milf.quest.magic_step_i.sword.title>",
   "description": [
     {
       "type": "item",
@@ -22,39 +22,7 @@
       "size": 24,
       "inline": true
     },
-    "",
-    "This allows you to deal harm to a creature; you can change the first glyph responsible for casting it - that is, it can be a <keyword>projectile</keyword>, <keyword>self-cast</keyword>, etc - so feel free to experiment.",
-    "",
-    "You can <positive>enhance</positive> this and other spells using the <keyword>Amplify</keyword> glyph!",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    {
-      "type": "item",
-      "items": [
-        "ars_nouveau:glyph_projectile"
-      ],
-      "size": 24,
-      "align": "left"
-    },
-    {
-      "type": "label",
-      "text": "→",
-      "inline": true
-    },
-    {
-      "type": "item",
-      "items": [
-        "ars_nouveau:glyph_harm"
-      ],
-      "size": 24,
-      "inline": true
-    },
-    "",
-    "Нанести урон существу, вы можете менять первый глиф отвечающий за накладывание, т.е. это может быть <keyword>снаряд</keyword>, <keyword>самоналожение</keyword> и т.д. - эксперементируйте.",
-    "",
-    "Вы можете <positive>усилить</positive> это и другие заклинания используя глиф <keyword>Amplify</keyword>!"
+    "<lang key=milf.quest.magic_step_i.sword.desc>"
   ],
   "icon": "ars_nouveau:glyph_harm",
   "x": 22.5,

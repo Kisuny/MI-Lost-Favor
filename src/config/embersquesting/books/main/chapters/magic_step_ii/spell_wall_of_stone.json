@@ -1,5 +1,5 @@
 {
-  "title": "Wall of Stone",
+  "title": "<lang key=milf.quest.magic_step_ii.spell_wall_of_stone.title>",
   "description": [
     {
       "items": [
@@ -68,81 +68,7 @@
       ],
       "type": "item"
     },
-    "",
-    "Raises a <positive>permanent</positive> wall of <keyword>stone</keyword> - seal off a passage in a pinch or put up a wall in seconds",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    {
-      "items": [
-        "ars_nouveau:glyph_touch"
-      ],
-      "align": "left",
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_sensitive"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_wall"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_sensitive"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_elemental:glyph_conjure_terrain"
-      ],
-      "type": "item"
-    },
-    {
-      "inline": true,
-      "text": "→",
-      "type": "label"
-    },
-    {
-      "inline": true,
-      "items": [
-        "ars_nouveau:glyph_amplify"
-      ],
-      "type": "item"
-    },
-    "",
-    "Возводит <positive>постоянную</positive> стену из <keyword>камня</keyword> - перекрыть проход в трудную минуту или построить стену за секунды"
+    "<lang key=milf.quest.magic_step_ii.spell_wall_of_stone.desc>"
   ],
   "icon": "ars_nouveau:glyph_wall",
   "x": 124,

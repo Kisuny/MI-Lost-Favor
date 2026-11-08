@@ -1,24 +1,7 @@
 {
-  "title": "bedrock_sample",
+  "title": "<lang key=milf.quest.simple_machinery.bedrock_sample.title>",
   "description": [
-    "After a few seconds of <shake amplitude=0.4 frequency=1.5>drilling</shake> the bedrock under the drill turns into a <positive>sample</positive> of one of the nearby ores",
-    "",
-    "<warning><shake amplitude=0.35 frequency=1.2>The drill is destroyed in the process</shake></warning> - you'll need a new one for every sample",
-    "",
-    "A chunk can hold <property>one sample of each ore</property>. If there are several deposits nearby, each new perforation in the same chunk gives the next ore, until all of them have a sample",
-    "",
-    "Samples are used by ore-mining machines - for example, a <named>Quarry</named> needs a sample <keyword>below it</keyword> to dig up that ore",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Через несколько секунд <shake amplitude=0.4 frequency=1.5>бурения</shake> бедрок под буром превратится в <positive>сэмпл</positive> одной из руд поблизости",
-    "",
-    "<warning><shake amplitude=0.35 frequency=1.2>Бур при этом уничтожается</shake></warning> - на каждый сэмпл нужен новый",
-    "",
-    "В одном чанке может быть <property>по одному сэмплу каждой руды</property>. Если рядом несколько залежей, каждое новое бурение в этом чанке даёт следующую руду, пока сэмплы не появятся у всех",
-    "",
-    "Сэмплы нужны машинам для добычи руды - например, <named>Quarry</named> нужен сэмпл <keyword>под ним</keyword>, чтобы добывать эту руду"
+    "<lang key=milf.quest.simple_machinery.bedrock_sample.desc>"
   ],
   "icon": "milf:bedrock_iron_ore_sample",
   "x": 4.5,

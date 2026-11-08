@@ -1,5 +1,5 @@
 {
-  "title": "lighting",
+  "title": "<lang key=milf.quest.magic_step_i.lighting.title>",
   "description": [
     {
       "type": "item",
@@ -22,35 +22,7 @@
       "size": 24,
       "inline": true
     },
-    "",
-    "<positive>Free</positive> lighting for <keyword>rooms</keyword> or <keyword>mines</keyword>",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    {
-      "type": "item",
-      "items": [
-        "ars_nouveau:glyph_touch"
-      ],
-      "size": 24,
-      "align": "left"
-    },
-    {
-      "type": "label",
-      "text": "→",
-      "inline": true
-    },
-    {
-      "type": "item",
-      "items": [
-        "ars_nouveau:glyph_light"
-      ],
-      "size": 24,
-      "inline": true
-    },
-    "",
-    "<positive>Бесплатный</positive> свет в <keyword>помещениях</keyword> или <keyword>шахтах</keyword>"
+    "<lang key=milf.quest.magic_step_i.lighting.desc>"
   ],
   "icon": "ars_nouveau:glyph_light",
   "x": 23,

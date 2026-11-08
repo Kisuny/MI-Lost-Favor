@@ -1,68 +1,17 @@
 {
-  "title": "Golem",
+  "title": "<lang key=item.thaumaturge.golem>",
   "description": [
-    "Your first <magic>Golem</magic>! Unlike wild iron and snow golems, it has a <keyword>clockwork mind</keyword> that actually <property>takes orders</property>.",
-    "",
-    "<named>Assembly:</named> open the <keyword>Golem Press</keyword> and pick up to 5 components - <property>material</property>, <property>head</property>, <property>arms</property>, <property>legs</property> and an optional <property>addon</property>. The press lists the items you need in your inventory and shows the resulting traits, health, armor and damage. It also needs <magic>Machina</magic> essentia through the ports under the press.",
-    "",
-    "<named>Handling:</named> a golem does nothing without <keyword>Control Seals</keyword>. With no tasks it returns to where it was placed. <positive>Sneak + RMB</positive> picks it up. Click it with <aqua>dye</aqua> to color it and limit it to seals of that color.",
+    "<lang key=milf.quest.magic_step_i.golem.desc>",
     {
       "style": "page",
       "type": "divider"
     },
-    "<named>Materials:</named>",
-    "- <nature>Greatwood</nature> - light and agile, but weak;",
-    "- <property>Clay</property> - cheap, fireproof and fairly light, not sturdy;",
-    "- <keyword>Iron</keyword> - sturdy and fireproof, but heavy;",
-    "- <named>Brass</named> - lighter frame thanks to fine construction, less sturdy than iron;",
-    "- <magic>Thaumium</magic> - like iron, but tougher;",
-    "- <curse>Void Metal</curse> - lighter than iron and <positive>repairs itself</positive>.",
-    "",
-    "Better materials unlock as you progress in <named>Metallurgy</named> and the <curse>Eldritch</curse> branch.",
+    "<lang key=milf.quest.magic_step_i.golem.desc.1>",
     {
       "style": "page",
       "type": "divider"
     },
-    "<named>Parts:</named>",
-    "- <property>Heads</property>: Clockwork, Perceptive (sees farther), Smart (biothaumic brain) and their combinations;",
-    "- <property>Arms</property>: Basic, <positive>Fine Manipulators</positive> (dexterous), <warning>Breakers</warning> (break blocks), <blood>Claws</blood> and <blood>Dart Launchers</blood> (combat);",
-    "- <property>Legs</property>: Basic, <wind>Uni-wheel</wind> (fast, can't jump), <bone>Climbing</bone> (scales walls), <wind>Levitation</wind> (flies, but slower);",
-    "- <property>Addons</property>: Armor Plating, Aggression Module, Carry Frame (two stacks of items).",
-    "",
-    "Many parts are unlocked by their own research in the <named>Golemancy</named> tab.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "Твой первый <magic>голем</magic>! В отличие от диких железных и снежных големов, у него <keyword>заводной разум</keyword>, который действительно <property>слушается приказов</property>.",
-    "",
-    "<named>Сборка:</named> открой <keyword>пресс големов</keyword> и выбери до 5 частей - <property>материал</property>, <property>голову</property>, <property>руки</property>, <property>ноги</property> и необязательный <property>модуль</property>. Пресс покажет, какие предметы нужны в инвентаре, и какие у голема будут свойства, здоровье, броня и урон. Ещё ему нужна эссенция <magic>Machina</magic> через порты под прессом.",
-    "",
-    "<named>Управление:</named> без <keyword>управляющих печатей</keyword> голем ничего не делает. Когда задач нет, он возвращается туда, где его поставили. <positive>Shift + ПКМ</positive> забирает его. Кликни по нему <aqua>красителем</aqua>, чтобы покрасить и ограничить печатями того же цвета.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "<named>Материалы:</named>",
-    "- <nature>великое древо</nature> - лёгкий и проворный, но хрупкий;",
-    "- <property>глина</property> - дешёвая, огнестойкая и довольно лёгкая, но непрочная;",
-    "- <keyword>железо</keyword> - прочное и огнестойкое, но тяжёлое;",
-    "- <named>латунь</named> - лёгкий каркас благодаря тонкой работе, но слабее железа;",
-    "- <magic>таумиум</magic> - как железо, но крепче;",
-    "- <curse>металл пустоты</curse> - легче железа и <positive>сам себя чинит</positive>.",
-    "",
-    "Материалы получше открываются по мере продвижения в <named>Металлургии</named> и ветке <curse>Запредельного</curse>.",
-    {
-      "style": "page",
-      "type": "divider"
-    },
-    "<named>Части:</named>",
-    "- <property>головы</property>: заводная, зоркая (видит дальше), умная (биотаумический мозг) и их сочетания;",
-    "- <property>руки</property>: обычные, <positive>тонкие манипуляторы</positive> (ловкие), <warning>разрушители</warning> (ломают блоки), <blood>клешни</blood> и <blood>дротикомёты</blood> (для боя);",
-    "- <property>ноги</property>: обычные, <wind>моноколесо</wind> (быстро, но не прыгает), <bone>для лазания</bone> (лезет по стенам), <wind>левитация</wind> (летает, но медленнее);",
-    "- <property>модули</property>: бронепластины, модуль агрессии, грузовая рама (две стопки предметов).",
-    "",
-    "Многие части открываются отдельными исследованиями во вкладке <named>Големостроения</named>."
+    "<lang key=milf.quest.magic_step_i.golem.desc.2>"
   ],
   "icon": "thaumaturge:golem",
   "x": 50,

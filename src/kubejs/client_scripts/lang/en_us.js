@@ -272,6 +272,7 @@ The only solution is to make them less sound.`)
     event.add('desc.immersiveengineering.info.mineral.hematite', "Hematite")
     event.add('milf.emi_info.concrete', "Wait for the <keyword>Liquid Concrete</keyword> to set - it will harden into this block on its own over time.")
     event.add('milf.emi_info.gem_dust', "<keyword>The Anvil Method</keyword>: Drop a gem on the ground and let an <property>anvil</property> fall straight down onto it to crush it into dust. <warning>Note that this early-game method only yields one dust per gem</warning>")
+    event.add('milf.emi_info.everburning_roots', "<fire>Roots</fire> give way to a <property>hoe</property> - it digs them out much faster than any other tool.")
 
 
     event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Some kind of magic is stopping you")}`)

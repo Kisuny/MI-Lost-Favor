@@ -228,6 +228,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('desc.immersiveengineering.info.mineral.hematite', "Гематит")
     event.add('milf.emi_info.concrete', "Дождитесь, пока <keyword>Жидкий цемент</keyword> застынет - со временем он сам затвердеет в этот блок.")
     event.add('milf.emi_info.gem_dust', "<keyword>Метод наковальни</keyword>: бросьте самоцвет на землю и уроните <property>наковальню</property> прямо на него, чтобы раздробить его в пыль. <warning>Учтите, что этот ранний способ даёт только одну пыль с одного самоцвета</warning>")
+    event.add('milf.emi_info.everburning_roots', "<fire>Корни</fire> легко поддаются <property>мотыге</property> - она выкапывает их гораздо быстрее любого другого инструмента.")
 
     event.add("curios.identifier.tool_belt", "Пояс")
     event.add("curios.identifier.pocket_lamp", "Карманный фонарь")

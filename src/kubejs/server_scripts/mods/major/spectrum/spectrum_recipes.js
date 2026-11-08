@@ -304,15 +304,13 @@ ServerEvents.recipes(event => {
     });
 
     arsNouveauCrushRecipe(event, {
-        inputItems: [[{ item: "milf:everburning_roots_heart" }, 1]],
+        inputItems: [[{ item: "milf:everburning_roots_veins" }, 1]],
         outputItems: [
-            [{ item: "embers:ember_crystal" }, 2, 1, 1],
-            [{ item: "embers:ember_crystal" }, 2, 1, 1],
-            [{ item: "embers:ember_crystal_cluster" }, 2, 1, 1],
             [{ item: "spectrum:shimmerstone_gem" }, 1, 1, 1],
             [{ item: "spectrum:shimmerstone_gem" }, 1, 0.5, 3],
-        ],
-        removeThisRecipeType: true
+            [{ item: "embers:ember_shard" }, 1, 1, 1],
+            [{ item: "embers:ember_shard" }, 1, 0.33, 2],
+        ]
     })
 
 })

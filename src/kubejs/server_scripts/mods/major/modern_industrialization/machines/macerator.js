@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
             [{ item: "embers:ember_shard" }, 1, 0.33],
         ],
         removeRecipeType: "modern_industrialization:macerator",
-        ieCompat: true
+        ieCompat: true,
+        compatOff: true
     })
 })

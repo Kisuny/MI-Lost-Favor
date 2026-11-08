@@ -158,19 +158,11 @@ function arsNouveauCrushRecipe(event, args) {
 
 ServerEvents.recipes(event => {
 
-    arsNouveauCrushRecipe(event, {
-        inputItems: [[{ item: "minecraft:glowstone" }, 1]],
-        outputItems: [
-            [{ item: "minecraft:glowstone_dust" }, 2, 1, 1],
-            [{ item: "spectrum:shimmerstone_gem" }, 1, 1, 1],
-            [{ item: "spectrum:shimmerstone_gem" }, 1, 0.5, 3],
-        ],
-        removeThisRecipeType: true
-    })
 
     let alreadyHandledInputs = new $HashSet([
         "minecraft:gravel",
         "minecraft:cobblestone",
+        "milf:everburning_roots_veins",
     ])
 
     event.forEachRecipe({type:"ars_nouveau:crush"}, recipe => {

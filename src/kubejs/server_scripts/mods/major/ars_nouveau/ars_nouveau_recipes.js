@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
             components: {
                 custom_name: '{"color":"gray","text":"Hephaestus Touch"}',
                 "sauce:school_tome_caster": {
-                    flavor_text: "A gift from the <magic>ancient smith</magic>, reducing matter to its primordial form",
+                    flavor_text: "A gift from the ancient <magic>smith</magic>, reducing matter to its primordial form",
                     spells: {
                         0: {
                             color: { b: 127, g: 127, id: "ars_nouveau:constant", r: 127 },

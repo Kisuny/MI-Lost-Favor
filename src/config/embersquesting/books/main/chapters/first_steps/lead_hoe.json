@@ -1,12 +1,16 @@
 {
   "title": "Lead Hoe",
   "description": [
-    "Most crops need water to grow, as water is <warning>consumed and disappears</warning>, you'll need an <property>aqueduct</property> and <property>hydration system</property> to prevent the crops from using up the water.",
+    "Most crops need <aqua>water</aqua> to grow, and they <warning>drink it</warning>. Water next to a field can slowly <shake amplitude=1.0 frequency=1.0>dry up</shake>, so keep an eye on it and top it up when it runs low.",
+    "",
+    "If the field is far from water, <keyword>aqueducts</keyword> can carry it there.",
     {
       "style": "page",
       "type": "divider"
     },
-    "Для роста большинства культур необходима вода, вода будет <warning>потребляться и исчезать</warning>, вам понадобится <property>система акведуков</property> и <property>гидрации</property>, чтобы культуры не потребляли воду."
+    "Большинству культур для роста нужна <aqua>вода</aqua>, и они её <warning>выпивают</warning>. Вода рядом с полем может постепенно <shake amplitude=1.0 frequency=1.0>пересохнуть</shake>, так что следите за ней и подливайте, когда её становится мало.",
+    "",
+    "Если поле далеко от воды, её можно провести туда <keyword>акведуками</keyword>."
   ],
   "icon": "ytech:lead_hoe",
   "x": 14.5,

@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
             w: { item: "spectrum:citrine_shard" },
             e: { item: "minecraft:amethyst_shard" },
             r: { item: "spectrum:topaz_shard" },
-            t: { item: "enchanted:whiff_of_magic" },
+            t: { item: "paganbless:runic_charge" },
 
         },
         outputItems: [[{ "components": { "immersiveengineering:blueprint": `${dyesOfTheOccult}` }, "id": "immersiveengineering:blueprint" }, 1]]
@@ -302,6 +302,18 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:unlocks/items/bottle_of_ruin",
         removeRecipe: true
     });
+
+    arsNouveauCrushRecipe(event, {
+        inputItems: [[{ item: "milf:everburning_roots_heart" }, 1]],
+        outputItems: [
+            [{ item: "embers:ember_crystal" }, 2, 1, 1],
+            [{ item: "embers:ember_crystal" }, 2, 1, 1],
+            [{ item: "embers:ember_crystal_cluster" }, 2, 1, 1],
+            [{ item: "spectrum:shimmerstone_gem" }, 1, 1, 1],
+            [{ item: "spectrum:shimmerstone_gem" }, 1, 0.5, 3],
+        ],
+        removeThisRecipeType: true
+    })
 
 })
 

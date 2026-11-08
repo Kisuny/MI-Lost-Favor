@@ -1,6 +1,9 @@
 [ui]
+	#Allow the nutrition screen to open. When false, the hotkey, the inventory button and the Mod Tabs tab are all turned off.
 	gui_enabled = true
-	gui_button_enabled = true
+	#Show the nutrition button next to the recipe book in the inventory.
+	gui_button_enabled = false
+	#Show the food groups a food belongs to in its tooltip.
 	tooltip_enabled = true
 	#Render the diet-tier HUD widget.
 	hud_enabled = true
@@ -15,3 +18,17 @@
 	# Default: 6
 	# Range: -4096 ~ 4096
 	hud_offset_y = -2
+	#Keep the diet-tier HUD widget on screen. When false it shows for 10 seconds after the tier changes, then fades out.
+	hud_always_show = false
+	#Horizontal position of the inventory button, in pixels from the left edge of the inventory.
+	# Default: 126
+	# Range: -4096 ~ 4096
+	gui_button_x = 126
+	#Vertical position of the inventory button, in pixels from the middle of the screen. The recipe book button sits at -22.
+	# Default: -22
+	# Range: -4096 ~ 4096
+	gui_button_y = -22
+	#Add a nutrition tab to the tab bar when Mod Tabs is installed.
+	mod_tabs_enabled = true
+	#Also show each food group's multiplier in the tooltip, such as Grain (1.00x).
+	tooltip_show_multipliers = false

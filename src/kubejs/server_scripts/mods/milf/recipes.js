@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
     milfStoneBasinRecipe(event, {
         inputItems: [
             [{ item: "modern_industrialization:brick_dust" }],
-            [{ item: "modern_industrialization:brick_dust" }],
+            [{ item: "architects_palette:algal_blend" }],
             [{ item: "architects_palette:algal_blend" }],
             [{ item: "architects_palette:algal_blend" }]
         ],
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
             [{ fluid: "minecraft:water" }, 500]
         ],
         outputItems: [
-            [{ id: "milf:fire_clay_ball" }, 2],
+            [{ id: "milf:fire_clay_ball" }, 3],
         ],
         stirs: 4,
         compatOff: true
@@ -230,24 +230,6 @@ ServerEvents.recipes(event => {
             [{ id: "immersiveengineering:treated_wood_horizontal" }, 4],
         ],
         stirs: 6,
-        compatOff: true
-    })
-
-    milfStoneBasinRecipe(event, {
-        inputItems: [
-            [{ item: "craftingstation:crafting_station" }],
-            [{ item: "immersiveengineering:wooden_barrel" }],
-            [{ item: "modern_industrialization:iron_double_ingot" }],
-            [{ item: "modern_industrialization:iron_double_ingot" }],
-        ],
-        inputFluids: [
-            [{ fluid: "immersiveengineering:creosote" }, 500]
-        ],
-        outputItems: [
-            [{ id: "immersiveengineering:craftingtable" }, 1],
-        ],
-        stirs: 12,
-        removeRecipe: true,
         compatOff: true
     })
 
@@ -316,19 +298,6 @@ ServerEvents.recipes(event => {
         time: 150
     })
 
-    milfBloomeryRecipe(event, {
-        inputItems: [
-            [{ item: "minecraft:glass_pane" }, 4],
-            [{ item: "modern_industrialization:steel_dust" }, 2],
-        ],
-
-        outputItems: [
-            [{ id: "milf:steel_infused_glass" }, 2],
-        ],
-        requires_bellows: true,
-        time: 150
-    })
-
     //#endregion
 
     //#region ytech shaped
@@ -358,7 +327,7 @@ ServerEvents.recipes(event => {
             B: { item: "embers:caminite_blend" },
             "#": { tag: "ytech:brick_molds" }
         },
-        outputItems: [[{ id: "milf:unfired_caminite_brick" }, 12]],
+        outputItems: [[{ id: "milf:unfired_caminite_brick" }, 20]],
         compatOff: true,
         removeRecipe: true
     })

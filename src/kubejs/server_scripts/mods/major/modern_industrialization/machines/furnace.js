@@ -48,6 +48,12 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"minecraft:gold_ingot"}, 1]]
     })
 
+    miMachineRecipe(event, {
+        energy: 2, time: 200, machine: "modern_industrialization:mi_furnace",
+        inputItems: [[{ item: "modern_industrialization:invar_dust" }, 1]],
+        outputItems: [[{ item: "modern_industrialization:invar_ingot" }, 1]]
+    })
+
     miMachineRecipe(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
         inputItems:[[{tag:"c:sands"}, 1]],
         outputItems:[[{item:"minecraft:glass"}, 1]]

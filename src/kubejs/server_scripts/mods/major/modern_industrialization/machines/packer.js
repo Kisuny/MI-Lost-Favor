@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
 
     miMachineRecipe(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
-            [{item:"modern_industrialization:fire_clay_bricks"}, 2]
+            [{item:"modern_industrialization:fire_clay_bricks"}, 3]
         ],
         inputItems:[
             [{item:"modern_industrialization:fire_clay_brick"}, 4],
@@ -105,7 +105,36 @@ ServerEvents.recipes(event => {
             [{ item: "embers:caminite_blend" }, 2],
             [{ item: "ytech:brick_mold" }, 1, 0]
         ],
-        outputItems: [[{ item: "milf:unfired_caminite_brick" }, 3]]
+        outputItems: [[{ item: "milf:unfired_caminite_brick" }, 5]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "embers:caminite_blend" }, 2],
+            [{ item: "embers:plate_stamp" }, 1, 0]
+        ],
+        outputItems: [[{ item: "embers:raw_caminite_plate" }, 1]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "minecraft:redstone" }, 2],
+            [{ item: "embers:item_pipe" }, 1],
+            [{ item: "embers:caminite_plate" }, 1]
+        ],
+        outputItems: [[{ item: "embers:item_extractor" }, 1]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "minecraft:redstone" }, 2],
+            [{ item: "embers:fluid_pipe" }, 1],
+            [{ item: "embers:caminite_plate" }, 1]
+        ],
+        outputItems: [[{ item: "embers:fluid_extractor" }, 1]]
     })
 
     miMachineRecipe(event, {

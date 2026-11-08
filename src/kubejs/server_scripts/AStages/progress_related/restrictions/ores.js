@@ -50,8 +50,8 @@ Object.entries({
         }],
         hide: ["modern_industrialization:lignite_coal", "minecraft:coal", "thaumaturge:amber"],
         lootReplace: {
-            "minecraft:coal": "supplementaries:ash",
-            "modern_industrialization:lignite_coal": "supplementaries:ash"
+            "minecraft:coal": "ytech:grass_twine",
+            "modern_industrialization:lignite_coal": "ytech:grass_twine"
         },
         withDeepslate: true
     },

@@ -559,6 +559,68 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "P P",
+            "PbP"
+        ],
+        key: {
+            P: { item: "ytech:wooden_plate" },
+            b: { tag: "minecraft:wooden_slabs" },
+        },
+        outputItems: [[{ id: "ytech:wooden_box" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "bBb",
+            "SSS"
+        ],
+        key: {
+            P: { item: "ytech:wooden_plate" },
+            B: { item: "ytech:wooden_box" },
+            b: { item: "ytech:wooden_bolt" },
+            S: { item: "minecraft:stick" },
+
+        },
+        outputItems: [[{ id: "minecraft:chest" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "SBS",
+            " P "
+        ],
+        key: {
+            P: { item: "ytech:wooden_plate" },
+            B: { item: "ytech:wooden_box" },
+            S: { item: "minecraft:stick" },
+
+        },
+        outputItems: [[{ id: "minecraft:barrel" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "SSS",
+            "B B"
+        ],
+        key: {
+            B: { item: "ytech:wooden_bolt" },
+            S: { item: "minecraft:stick" },
+
+        },
+        outputItems: [[{ id: "ytech:crafting_workspace" }, 1]],
+        removeRecipe: true
+    })
+
     // milfShapeless(event, {
     //     inputItems: [
     //         [{ "tag": "minecraft:sand" }, 1],

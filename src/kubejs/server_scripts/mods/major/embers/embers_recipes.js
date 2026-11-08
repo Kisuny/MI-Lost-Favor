@@ -299,7 +299,7 @@ ServerEvents.recipes(event => {
                 [{ item: "milf:rod_stamp" }],
             ],
             inputFluids: [
-                [{ fluid: fluid }, 70]
+                [{ fluid: fluid }, 60]
             ],
             outputItems: [
                 [{ id: rod }],
@@ -323,7 +323,7 @@ ServerEvents.recipes(event => {
                 [{ item: "milf:bolt_stamp" }],
             ],
             inputFluids: [
-                [{ fluid: fluid }, 40]
+                [{ fluid: fluid }, 35]
             ],
             outputItems: [
                 [{ id: bolt }],
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
                 [{ item: "embers:plate_stamp" }],
             ],
             inputFluids: [
-                [{ fluid: fluid }, 80]
+                [{ fluid: fluid }, 70]
             ],
             outputItems: [
                 [{ id: plate }],
@@ -347,7 +347,7 @@ ServerEvents.recipes(event => {
                 [{ item: "embers:gear_stamp" }],
             ],
             inputFluids: [
-                [{ fluid: fluid }, 700]
+                [{ fluid: fluid }, 600]
             ],
             outputItems: [
                 [{ id: gear }],
@@ -368,6 +368,62 @@ ServerEvents.recipes(event => {
         })
 
 
+    })
+
+    embersStampingRecipe(event, {
+        inputItems: [
+            [{ item: "embers:flat_stamp" }],
+            [{ item: "minecraft:clay" }],
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 1000]
+        ],
+        outputItems: [
+            [{ id: "embers:raw_caminite_block" }, 1],
+        ]
+    })
+
+    embersStampingRecipe(event, {
+        inputItems: [
+            [{ item: "embers:flat_stamp" }],
+            [{ item: "minecraft:coal_block" }],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:coal_crushed_dust" }, 3],
+        ]
+    })
+
+    embersStampingRecipe(event, {
+        inputItems: [
+            [{ item: "embers:flat_stamp" }],
+            [{ item: "minecraft:lapis_block" }],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:lapis_crushed_dust" }, 5],
+        ]
+    })
+
+    embersStampingRecipe(event, {
+        inputItems: [
+            [{ item: "embers:flat_stamp" }],
+            [{ item: "milf:everburning_roots_vine_block" }],
+        ],
+        outputItems: [
+            [{ id: "embers:ember_grit" }, 1],
+        ]
+    })
+
+    embersStampingRecipe(event, {
+        inputItems: [
+            [{ item: "embers:flat_stamp" }],
+            [{ item: "minecraft:glass_pane" }],
+        ],
+        inputFluids: [
+            [{ fluid: "embers:molten_bronze" }, 60]
+        ],
+        outputItems: [
+            [{ id: "milf:bronze_glass" }, 1],
+        ]
     })
 
     embersStampingRecipe(event, {
@@ -2012,6 +2068,34 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region shaped
+
+    milfShaped(event, {
+        pattern: [
+            "B  ",
+            "   ",
+            "   ",
+        ],
+        key: {
+            "B": { "item": "embers:raw_caminite_block" }
+
+        },
+        outputItems: [[{ id: "embers:caminite_blend" }, 9]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BBB",
+            "BBB",
+            "BBB",
+        ],
+        key: {
+            "B": { "item": "embers:caminite_blend" }
+
+        },
+        outputItems: [[{ id: "embers:raw_caminite_block" }, 1]],
+        removeRecipe: true
+    })
 
     milfShaped(event, {
         pattern: [

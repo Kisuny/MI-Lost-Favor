@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "milf:bronze_machine_bit" }, 1],
-            [{ "item": "milf:bronze_glass" }, 2],
+            [{ "item": "milf:bronze_glass" }, 1],
             [{ "item": "milf:small_copper_fluid_container" }, 1],
             [{ "item": "embers:item_extractor" }, 1],
             [{ "item": "embers:fluid_extractor" }, 1]
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:copper_bolt" }, 2],
-            [{ "item": "modern_industrialization:copper_plate" }, 4]
+            [{ "item": "modern_industrialization:copper_plate" }, 2]
 
 
         ],
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:steel_bolt" }, 2],
-            [{ "item": "modern_industrialization:steel_plate" }, 4]
+            [{ "item": "modern_industrialization:steel_plate" }, 2]
 
 
         ],
@@ -44,8 +44,8 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:bronze_rod" }, 1],
-            [{ "item": "modern_industrialization:bronze_bolt" }, 4],
-            [{ "item": "modern_industrialization:bronze_plate" }, 2],
+            [{ "item": "modern_industrialization:bronze_bolt" }, 2],
+            [{ "item": "modern_industrialization:bronze_plate" }, 1],
 
         ],
         outputItems: [[{ "item": "modern_industrialization:wrench" }, 1]],
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:fire_clay_brick" }, 4],
-            [{ "item": "architects_palette:cerebral_plate" }, 8]
+            [{ "item": "architects_palette:cerebral_plate" }, 6]
 
         ],
         outputItems: [[{ "item": "modern_industrialization:fire_clay_bricks" }, 2]],

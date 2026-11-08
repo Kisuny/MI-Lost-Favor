@@ -13,6 +13,18 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 180, machine: "modern_industrialization:blast_furnace",
+        inputItems: [
+            [{ item: "minecraft:glass_pane" }, 2],
+            [{ item: "modern_industrialization:steel_dust" }, 1],
+        ],
+
+        outputItems: [
+            [{ id: "milf:steel_infused_glass" }, 1],
+        ],
+    })
+
 
     miMachineRecipe(event, {
         energy: 4, time: 656, machine: "modern_industrialization:blast_furnace",

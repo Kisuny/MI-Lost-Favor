@@ -81,6 +81,8 @@ function milfShapedCustom(event, args) {
             outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
         })
     }
+
+    return builder
 }
 
 function milfShapeless(event, args){

@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
 
     })
 
-    // yTechShaped(event, {
+    // milfShapedCustom(event, {
     //     pattern: [
     //         "RBR",
     //         "BsB",
@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
     //     },
     //     outputItems: [[{ id: `minecraft:iron_pickaxe` }, 1]],
     //     removeRecipe: true
-    // })
+    // }).id("milf:iron_pickaxe")
 
     milfShaped(event, {
         pattern: [
@@ -465,6 +465,62 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "minecraft:iron_boots" }, 1]],
         removeRecipeType: "ytech:remaining_shaped_crafting"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "PCP",
+            "   "
+        ],
+        key: {
+            C: { item: "minecraft:leather_helmet" },
+            P: { item: "modern_industrialization:copper_plate" }
+        },
+        outputItems: [[{ id: "minecraft:copper_helmet" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "PCP",
+            "P P"
+        ],
+        key: {
+            C: { item: "minecraft:leather_chestplate" },
+            P: { item: "modern_industrialization:copper_plate" }
+        },
+        outputItems: [[{ id: "minecraft:copper_chestplate" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "PCP",
+            "P P"
+        ],
+        key: {
+            C: { item: "minecraft:leather_leggings" },
+            P: { item: "modern_industrialization:copper_plate" }
+        },
+        outputItems: [[{ id: "minecraft:copper_leggings" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "   ",
+            "PCP",
+            "   "
+        ],
+        key: {
+            C: { item: "minecraft:leather_boots" },
+            P: { item: "modern_industrialization:copper_plate" }
+        },
+        outputItems: [[{ id: "minecraft:copper_boots" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
     })
 
     milfShaped(event, {

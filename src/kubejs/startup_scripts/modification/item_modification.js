@@ -17,87 +17,173 @@ ItemEvents.modification(event => {
         })
     })
 
-    const ytech_tool_modification = [
-        { itemName: 'ytech:copper_pickaxe', speed: 5.5, type: 'pickaxe' },
-        { itemName: 'ytech:copper_shovel', speed: 5.5, type: 'shovel' },
-        { itemName: 'ytech:copper_axe', speed: 5.5, type: 'axe' },
-        { itemName: 'ytech:copper_hoe', speed: 5.5, type: 'hoe' },
-        { itemName: 'ytech:lead_pickaxe', speed: 3, type: 'pickaxe' },
-        { itemName: 'ytech:lead_shovel', speed: 3, type: 'shovel' },
-        { itemName: 'ytech:lead_axe', speed: 3, type: 'axe' },
-        { itemName: 'ytech:lead_hoe', speed: 3, type: 'hoe' },
-        { itemName: 'ytech:tin_pickaxe', speed: 16, type: 'pickaxe' },
-        { itemName: 'ytech:tin_shovel', speed: 16, type: 'shovel' },
-        { itemName: 'ytech:tin_axe', speed: 16, type: 'axe' },
-        { itemName: 'ytech:tin_hoe', speed: 16, type: 'hoe' },
-        { itemName: 'ytech:bronze_pickaxe', speed: 5.5, type: 'pickaxe' },
-        { itemName: 'ytech:bronze_shovel', speed: 5.5, type: 'shovel' },
-        { itemName: 'ytech:bronze_axe', speed: 5.5, type: 'axe' },
-        { itemName: 'ytech:bronze_hoe', speed: 5.5, type: 'hoe' },
-        { itemName: 'minecraft:iron_pickaxe', speed: 6, type: 'pickaxe' },
-    ];
+    Object.entries({
 
-    const blockTagByType = {
-        pickaxe: "#minecraft:mineable/pickaxe",
-        shovel: "#minecraft:mineable/shovel",
-        axe: "#minecraft:mineable/axe",
-        hoe: "#minecraft:mineable/hoe"
-    };
+        "ytech:lead_pickaxe": { 
+            speed: 5.5, 
+            correctForTag: "#minecraft:mineable/pickaxe"
+        },
+        "ytech:lead_shovel": { 
+            speed: 5.5, 
+            correctForTag: "#minecraft:mineable/shovel"
+        },
+        "ytech:lead_axe": { 
+            speed: 5.5, 
+            correctForTag: "#minecraft:mineable/axe"
+        },
+        "ytech:lead_hoe": { 
+            speed: 5.5, 
+            correctForTag: "#minecraft:mineable/hoe"
+        },
 
-    ytech_tool_modification.forEach(tool => {
-        event.modify(tool.itemName, item => {
-            const tag = blockTagByType[tool.type] || "#minecraft:incorrect_for_iron_tool";
 
-            const correctRule = {
-                correctForDrops: true,
-                blocks: tag
-            };
-            if (tool.speed !== undefined) correctRule.speed = tool.speed;
+
+        "ytech:bronze_pickaxe": { 
+            speed: 6, 
+            correctForTag: "#minecraft:mineable/pickaxe"
+        },
+        "ytech:bronze_shovel": { 
+            speed: 6, 
+            correctForTag: "#minecraft:mineable/shovel"
+        },
+        "ytech:bronze_axe": { 
+            speed: 6, 
+            correctForTag: "#minecraft:mineable/axe"
+        },
+        "ytech:bronze_hoe": { 
+            speed: 6, 
+            correctForTag: "#minecraft:mineable/hoe"
+        },
+
+
+
+        "minecraft:iron_pickaxe": { 
+            speed: 7, 
+            correctForTag: "#minecraft:mineable/pickaxe"
+        },
+        "minecraft:iron_axe": { 
+            speed: 7, 
+            correctForTag: "#minecraft:mineable/axe"
+        },
+        "minecraft:iron_hoe": { 
+            speed: 7, 
+            correctForTag: "#minecraft:mineable/hoe"
+        },
+        "minecraft:iron_shovel": { 
+            speed: 7, 
+            correctForTag: "#minecraft:mineable/shovel"
+        },
+
+
+
+        "embers:silver_pickaxe": { 
+            speed: 7.5, 
+            correctForTag: "#minecraft:mineable/pickaxe"
+        },
+        "embers:silver_axe": { 
+            speed: 7.5, 
+            correctForTag: "#minecraft:mineable/axe"
+        },
+        "embers:silver_hoe": { 
+            speed: 7.5, 
+            correctForTag: "#minecraft:mineable/hoe"
+        },
+        "embers:silver_shovel": { 
+            speed: 7.5,
+            correctForTag: "#minecraft:mineable/shovel"
+        },
+
+
+
+    }).forEach(([itemId, data]) => {
+
+        let {correctForTag, incorrectForTag, speed} = data
+
+        event.modify(itemId, item => {
 
             item.setTool({
+                defaultMiningSpeed: 1,
                 damagePerBlock: item.tool?.damagePerBlock || 1,
                 rules: [
-                    correctRule,
-                    { correctForDrops: false, blocks: "#minecraft:incorrect_for_iron_tool" }
+                    { correctForDrops: true, blocks: correctForTag, speed: speed },
+                    { correctForDrops: false, blocks: incorrectForTag || "#minecraft:incorrect_for_iron_tool" }
                 ]
-            });
-        });
-    });
+            })
 
-    const toolDurabilityByMaterial = {
-        stone_age: {
-            durability: 250,
+        })
+
+    })
+
+    Object.entries({
+        ytechDepreciationCorner: {
+            durability: (7 + 1) * 7,
             items: [
-                "milf:flint_pickaxe", "milf:flint_chisel", "milf:stone_hammer",
-                "ytech:flint_axe", "ytech:flint_knife", "ytech:flint_spear", "ytech:antler_pickaxe"
+                "ytech:antler_pickaxe"
+            ]
+        },
+        stoneAge: {
+            durability: 109,
+            items: [
+                "milf:flint_pickaxe", 
+                "milf:flint_chisel", 
+                "milf:stone_hammer",
+                "ytech:flint_axe", 
+                "ytech:flint_knife", 
+                "ytech:flint_spear"
             ]
         },
         lead: {
-            durability: 500,
+            durability: 331,
             items: [
-                "ytech:lead_pickaxe", "ytech:lead_axe", "ytech:lead_shovel", "ytech:lead_hoe", "ytech:lead_sword",
-                "ytech:lead_knife", "ytech:lead_saw", "ytech:lead_file", "ytech:lead_hammer"
+                "ytech:lead_pickaxe", 
+                "ytech:lead_axe", 
+                "ytech:lead_shovel", 
+                "ytech:lead_hoe", 
+                "ytech:lead_sword",
+                "ytech:lead_knife", 
+                "ytech:lead_saw", 
+                "ytech:lead_file", 
+                "ytech:lead_hammer"
             ]
         },
         bronze: {
-            durability: 1000,
+            durability: 109*5,
             items: [
-                "ytech:bronze_pickaxe", "ytech:bronze_axe", "ytech:bronze_shovel", "ytech:bronze_hoe", "ytech:bronze_sword",
-                "ytech:bronze_knife", "ytech:bronze_saw", "ytech:bronze_file", "ytech:bronze_hammer"
+                "ytech:bronze_pickaxe", 
+                "ytech:bronze_axe", 
+                "ytech:bronze_shovel", 
+                "ytech:bronze_hoe", 
+                "ytech:bronze_sword",
+                "ytech:bronze_knife", 
+                "ytech:bronze_saw", 
+                "ytech:bronze_file", 
+                "ytech:bronze_hammer"
             ]
         },
         iron: {
-            durability: 1400,
+            durability: 701,
             items: [
-                "minecraft:iron_pickaxe", "minecraft:iron_axe", "minecraft:iron_shovel", "minecraft:iron_hoe", "minecraft:iron_sword"
+                "minecraft:iron_pickaxe", 
+                "minecraft:iron_axe", 
+                "minecraft:iron_shovel", 
+                "minecraft:iron_hoe", 
+                "minecraft:iron_sword"
+            ]
+        },
+        silver: {
+            durability: 561,
+            items: [
+                "embers:silver_sword",
+                "embers:silver_pickaxe",
+                "embers:silver_axe",
+                "embers:silver_shovel",
+                "embers:silver_hoe"
             ]
         }
-    }
-
-    Object.keys(toolDurabilityByMaterial).forEach(material => {
-        const entry = toolDurabilityByMaterial[material]
-        entry.items.forEach(id => {
-            event.modify(id, item => { item.maxDamage = entry.durability })
+    }).forEach(([material, data]) => {
+        let { durability, items } = data
+        items.forEach(id => {
+            event.modify(id, item => { item.maxDamage = durability })
         })
     })
 
@@ -121,6 +207,14 @@ ItemEvents.modification(event => {
             food.nutrition(2)
             food.saturation(2)
             food.effect('minecraft:nausea', 200, 0, 1)
+        })
+    })
+
+    event.modify('milf:pet_rock', item => {
+        item.modifyFood(food => {
+            food.nutrition(4)
+            food.saturation(0.25)
+            food.effect('minecraft:nausea', 200, 0, 0.38)
         })
     })
 

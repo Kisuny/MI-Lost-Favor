@@ -44,13 +44,16 @@ ServerEvents.recipes(event => {
     })
 
     ytechChoppingCraft(event, {
-        inputItems: [[{ item: "minecraft:iron_nugget" }]],
+        inputItems: [[{ item: "minecraft:iron_ingot" }]],
         outputItems: [[{ id: "starcatcher:hook" }]],
-        tool: { tag: "milf:knives" },
+        tool: neoCompound([
+            { item: "ytech:lead_file" },
+            { item: "ytech:bronze_file" }
+        ]),
     })
 
     ytechChoppingCraft(event, {
-        inputItems: [[{ item: "minecraft:iron_ingot" }]],
+        inputItems: [[{ item: "minecraft:iron_nugget" }]],
         outputItems: [[{ id: "milf:fire_striker" }]],
         tool: neoCompound([
             { item: "ytech:lead_file" },
@@ -137,6 +140,12 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "id": "minecraft:stick" }, 2]],
         inputItems: [[{ "item": "milf:twig" }],],
         tool: { tag: "milf:knives" }  
+    })
+
+    ytechChoppingCraft(event, {
+        outputItems: [[{ "id": "ytech:bone_needle" }, 1]],
+        inputItems: [[{ "tag": "c:foods/raw_fish" }],],
+        tool: { tag: "milf:knives" }
     })
 
 })

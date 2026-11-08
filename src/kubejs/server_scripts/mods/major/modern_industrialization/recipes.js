@@ -238,7 +238,7 @@ function miMachineRecipe(event, args){
 
     }
     
-} 
+}
 
 let miMachinesVariations = global.VANILLA_MI_MACHINES_VARIATIONS
 
@@ -251,6 +251,34 @@ let machinesForMITweaksTierCompat = new $HashSet(
 
 let miMachinesCompat = {
     //"extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
+}
+
+function miForgeHammerRecipe(event, args){
+    let recipe = {
+        type: "modern_industrialization:forge_hammer",
+        ingredient: Object.assign({}, args.inputItems[0][0], { count: 1 }),
+        result: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+        damage: args.damage || 20
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
+}
+
+function miForgeNoHammerRecipe(event, args) {
+    let recipe = {
+        type: "modern_industrialization:forge_hammer",
+        ingredient: Object.assign({}, args.inputItems[0][0], { count: 1 }),
+        result: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+        count: args.count || 1
+    }
+    if (!args.compatOff) {
+
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    event.custom(recipe)
 }
 
 ServerEvents.recipes(event => {
@@ -267,6 +295,49 @@ ServerEvents.recipes(event => {
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:packer' })
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
     //event.remove({ type: 'modern_industrialization:quarry' })
+
+    //#region forge hammer
+
+    Object.entries({
+        "modern_industrialization:lead_ingot":{
+            outputs: [
+                "modern_industrialization:lead_plate",
+                "modern_industrialization:lead_dust"
+            ]
+        },
+        "embers:dawnstone_ingot": {
+            outputs: [
+                "modern_industrialization:dawnstone_plate",
+                "modern_industrialization:dawnstone_dust"
+            ]
+        }
+    }).forEach(([input, data]) => {
+        let {outputs} = data
+
+        outputs.forEach(output=>{
+            miForgeHammerRecipe(event, {
+                inputItems: [
+                    [{ item: input }],
+                ],
+                outputItems: [
+                    [{ id: output }],
+                ]
+            })
+        })
+
+    })
+
+    miForgeNoHammerRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_ingot" }],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:lead_double_ingot" }],
+        ],
+        count:2
+    })
+
+    //#endregion
 
     //#region milfShaped
 
@@ -1397,6 +1468,33 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "milf:unfired_fire_clay_brick" }, 8]],
         compatOff: true
     })
+
+    Object.entries({
+
+        "modern_industrialization:coal_crushed_dust": "modern_industrialization:coal_dust",
+        "modern_industrialization:lignite_coal_crushed_dust": "modern_industrialization:lignite_coal_dust",
+        "modern_industrialization:redstone_crushed_dust": "minecraft:redstone",
+        "modern_industrialization:salt_crushed_dust": "modern_industrialization:salt_dust",
+        "modern_industrialization:lapis_crushed_dust":"modern_industrialization:lapis_dust",
+        "modern_industrialization:quartz_crushed_dust":"modern_industrialization:quartz_dust"
+
+    }).forEach(([crushedDustId, dustId])=>{
+        yTechShaped(event, {
+            pattern: [
+                "   ",
+                " c ",
+                " # ",
+            ],
+            key: {
+                "#": { "item": "ytech:stone_mortar_and_pestle" },
+                "c": { "item": crushedDustId },
+            },
+            outputItems: [[{ id: dustId }, 1]],
+            compatOff: true
+        })
+    })
+
+
 
     //#endregion
 

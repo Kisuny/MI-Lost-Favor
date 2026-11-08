@@ -366,8 +366,8 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "G B",
-            "DSS",
+            "G  ",
+            "DSB",
             "T F"
         ],
         key: {
@@ -379,6 +379,22 @@ ServerEvents.recipes(event => {
             F: { item: "immersiveengineering:treated_fence" }
         },
         outputItems: [[{ id: "immersiveengineering:workbench" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SsS",
+            "rBr",
+            "r r"
+        ],
+        key: {
+            s: { item: "craftingstation:crafting_station" },
+            r: { item: "modern_industrialization:iron_rod" },
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            B: { item: "immersiveengineering:wooden_barrel" },
+        },
+        outputItems: [[{ id: "immersiveengineering:craftingtable" }, 1]],
         removeRecipe: true
     })
 

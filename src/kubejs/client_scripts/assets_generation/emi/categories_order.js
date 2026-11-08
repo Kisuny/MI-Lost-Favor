@@ -78,6 +78,8 @@ ClientEvents.generateAssets("before_mods", event => {
         "ali:archaeology_loot",
         "ali:block_loot",
 
+        "embersquesting:quests",
+
         "minecraft:overworld",
         "minecraft:the_nether",
         "minecraft:the_end",

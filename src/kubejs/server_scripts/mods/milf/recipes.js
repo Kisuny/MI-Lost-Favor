@@ -160,7 +160,12 @@ function milfStoneBasinRecipe(event, args) {
         stirs: args.stirs,
     }
     if (!args.compatOff) {
-
+        miMachineRecipe(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:mixer",
+            inputItems: args.inputItems,
+            inputFluids: args.inputFluids,
+            outputItems: args.outputItems
+        })
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     event.custom(recipe)
@@ -189,7 +194,8 @@ ServerEvents.recipes(event => {
         outputItems: [
             [{ id: "milf:fire_clay_ball" }, 2],
         ],
-        stirs: 4
+        stirs: 4,
+        compatOff: true
     })
 
     milfStoneBasinRecipe(event, {
@@ -206,7 +212,8 @@ ServerEvents.recipes(event => {
             [{ id: "architects_palette:cerebral_plate" }, 8],
         ],
         stirs: 4,
-        removeRecipe: true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfStoneBasinRecipe(event, {
@@ -222,7 +229,8 @@ ServerEvents.recipes(event => {
         outputItems: [
             [{ id: "immersiveengineering:treated_wood_horizontal" }, 4],
         ],
-        stirs: 6
+        stirs: 6,
+        compatOff: true
     })
 
     milfStoneBasinRecipe(event, {
@@ -239,7 +247,8 @@ ServerEvents.recipes(event => {
             [{ id: "immersiveengineering:craftingtable" }, 1],
         ],
         stirs: 12,
-        removeRecipe:true
+        removeRecipe: true,
+        compatOff: true
     })
 
     milfStoneBasinRecipe(event, {
@@ -256,7 +265,8 @@ ServerEvents.recipes(event => {
             [MILF_BLUEPRINTS.getAsItem.miSteamComponents, 1],
         ],
         stirs: 12,
-        removeRecipe: true
+        removeRecipe: true,
+        compatOff: true
     })
 
     //endregion

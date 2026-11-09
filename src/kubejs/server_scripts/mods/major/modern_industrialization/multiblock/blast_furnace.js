@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 4, time: 180, machine: "modern_industrialization:blast_furnace",
+        energy: 2, time: 180, machine: "modern_industrialization:blast_furnace",
         inputItems: [
             [{ item: "minecraft:glass_pane" }, 2],
             [{ item: "modern_industrialization:steel_dust" }, 1],

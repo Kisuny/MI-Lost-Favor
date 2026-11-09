@@ -310,7 +310,13 @@ ServerEvents.recipes(event => {
                 "modern_industrialization:dawnstone_plate",
                 "modern_industrialization:dawnstone_dust"
             ]
-        }
+        },
+        "modern_industrialization:silver_ingot": {
+            outputs: [
+                "modern_industrialization:silver_plate",
+                "modern_industrialization:silver_dust"
+            ]
+        },
     }).forEach(([input, data]) => {
         let {outputs} = data
 

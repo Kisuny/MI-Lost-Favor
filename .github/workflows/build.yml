@@ -69,14 +69,19 @@ jobs:
             rm -f old-lock.json
             CURRENT=$([[ "${GITHUB_REF_TYPE}" == "tag" ]] && echo "$GITHUB_REF_NAME" || echo "$GITHUB_SHA")
             COMMITS=$(git log --no-merges --reverse --format='- %s (%h)' "${PREV}..HEAD")
+            # drop pakku's own "## Projects" header, wrap file names of updated mods in backticks
+            MODS_BODY=""
+            if [[ -s "$MODS" ]]; then
+              MODS_BODY=$(sed -E -e '/^## Projects$/{N;d}' -e 's/^- (.*[^ ]) +-> +(.+)$/- `\1` -> `\2`/' "$MODS")
+            fi
             {
-              echo "## Mods"
-              echo
-              if [[ -s "$MODS" ]]; then cat "$MODS"; else echo "No mod changes."; fi
-              echo
               echo "## Changes"
               echo
               if [[ -n "$COMMITS" ]]; then echo "$COMMITS"; else echo "No commits."; fi
+              echo
+              echo "## Mods"
+              echo
+              if [[ -n "${MODS_BODY//[[:space:]]/}" ]]; then echo "$MODS_BODY"; else echo "No mod changes."; fi
               echo
               echo "**Full Changelog**: https://github.com/${GITHUB_REPOSITORY}/compare/${PREV}...${CURRENT}"
             } > "$OUT"

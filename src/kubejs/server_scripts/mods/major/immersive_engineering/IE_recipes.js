@@ -272,6 +272,21 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "SbS",
+            "bBb",
+            "SbS"
+        ],
+        key: {
+            B: { item: "milf:blank_blueprint" },
+            S: { item: "modern_industrialization:copper_fine_wire" },
+            b: { item: "milf:steel_machine_bit" }
+        },
+        outputItems: [[MILF_BLUEPRINTS.getAsItem.molds, 1]],
+        compatOff: true
+    })
+
+    milfShaped(event, {
+        pattern: [
             "ISI",
             "   ",
             "ISI"

@@ -281,7 +281,10 @@ ServerEvents.recipes(event => {
             S: { item: "modern_industrialization:copper_fine_wire" },
             b: { item: "milf:steel_machine_bit" }
         },
-        outputItems: [[MILF_BLUEPRINTS.getAsItem.molds, 1]],
+        outputItems: [[{
+            id: "immersiveengineering:blueprint",
+            components: { "immersiveengineering:blueprint": MILF_BLUEPRINTS.molds, "minecraft:item_name": "{'text':'" + "Molds" + "','color':'" + '#A9B4BF' + "'}" }
+        }, 1]],
         compatOff: true
     })
 

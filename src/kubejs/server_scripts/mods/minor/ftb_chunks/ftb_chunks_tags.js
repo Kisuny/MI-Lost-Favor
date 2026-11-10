@@ -21,7 +21,16 @@ ServerEvents.tags('entity_type', event => {
             'smallships:brigg',
             'smallships:galley',
             'smallships:cog',
-            'smallships:cog',
+            'smallships:caravel',
+            'smallships:dhow',
+            'smallships:galleon',
+            'smallships:rowboat',
+            'smallships:war_galley',
+            'minecraft:horse',
+            'minecraft:donkey',
+            'minecraft:mule',
+            'minecraft:pig',
+            'minecraft:strider',
         ]
     )
 })

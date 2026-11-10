@@ -19,7 +19,7 @@ Object.entries({
         stages: ["early_items", "blast_furnace", "mythsandlegends_mobs"]
     },
     "milf:milestone/forge_hammer": {
-        stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs", "darkerdepths_mobs"],
+        stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs", "darkerdepths_mobs", "friendsandfoes_mobs"],
         defaultNotificationDelay: 10.5,
         callback: (event) => {
             let player = event.player

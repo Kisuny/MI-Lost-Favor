@@ -14,12 +14,12 @@
   "tasks": [
     {
       "item": "neovitae:array_freeze",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "type": "checkmark"
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

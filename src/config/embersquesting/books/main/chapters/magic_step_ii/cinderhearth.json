@@ -20,31 +20,35 @@
       "tag": "milf:polished_base_blocks",
       "count": 23,
       "type": "item",
-      "title": "Any Polished Base Blocks"
+      "title": "Any Polished Base Blocks",
+      "optional": true
     },
     {
       "tag": "milf:crest_base_blocks",
       "count": 6,
       "type": "item",
-      "title": "Any Crest Base Blocks"
+      "title": "Any Crest Base Blocks",
+      "optional": true
     },
     {
       "item": "minecraft:lava_bucket",
       "count": 6,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "spectrum:chiseled_polished_basalt",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "tag": "c:glass_blocks",
       "count": 5,
       "type": "item",
-      "title": "Any Glass Blocks"
+      "title": "Any Glass Blocks",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

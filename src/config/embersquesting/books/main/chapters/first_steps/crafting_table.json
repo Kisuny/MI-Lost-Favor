@@ -14,7 +14,8 @@
   "tasks": [
     {
       "item": "minecraft:crafting_table",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "icon": "minecraft:crafting_table",
@@ -29,7 +30,6 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "octagon",
   "size": 2.0,
   "icons": {

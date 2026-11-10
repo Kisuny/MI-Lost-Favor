@@ -18,18 +18,20 @@
     },
     {
       "item": "minecraft:flint_and_steel",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "eidolon_repraised:stone_hand",
       "count": 6,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "eidolon_repraised:necrotic_focus",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "gear"
 }

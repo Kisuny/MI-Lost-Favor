@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "legendary_monsters:eye_of_shulker",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "structure": "legendary_monsters:shulker_tower",
       "type": "location"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

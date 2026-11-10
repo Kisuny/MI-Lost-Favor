@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "thaumaturge:golem_builder",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "thaumaturge:golem_builder",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

@@ -14,7 +14,8 @@
   "tasks": [
     {
       "entity": "legendary_monsters:posessed_paladin",
-      "type": "kill"
+      "type": "kill",
+      "optional": true
     },
     {
       "advancement": "apotheosis:progression/summit",

@@ -14,19 +14,20 @@
   "tasks": [
     {
       "item": "thaumaturge:scribing_tools",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "thaumaturge:table_wood",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "thaumaturge:research_table",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "hexagon",
   "size": 2.5
 }

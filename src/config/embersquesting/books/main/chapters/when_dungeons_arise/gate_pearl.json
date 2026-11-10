@@ -17,7 +17,8 @@
       "match_components": "fuzzy",
       "item": "gateways:gate_pearl",
       "components": "{\"gateways:gateway\":\"gateways:tiered/haven\"}",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "advancement": "apotheosis:progression/frontier",
@@ -40,6 +41,5 @@
       "auto": "claim"
     }
   ],
-  "complete": "any",
   "shape": "gear"
 }

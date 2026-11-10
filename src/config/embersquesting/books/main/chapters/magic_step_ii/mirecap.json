@@ -19,14 +19,15 @@
     {
       "block": "minecraft:crimson_fungus",
       "type": "observe",
-      "icon": "minecraft:crimson_fungus"
+      "icon": "minecraft:crimson_fungus",
+      "optional": true
     },
     {
       "block": "minecraft:warped_fungus",
       "type": "observe",
-      "icon": "minecraft:warped_fungus"
+      "icon": "minecraft:warped_fungus",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

@@ -13,7 +13,8 @@
   "tasks": [
     {
       "entity": "legendary_monsters:endersent",
-      "type": "kill"
+      "type": "kill",
+      "optional": true
     },
     {
       "advancement": "apotheosis:progression/summit",
@@ -22,7 +23,6 @@
       "title": "Slay the Chorusent"
     }
   ],
-  "complete": "any",
   "shape": "hexagon",
   "size": 1.5,
   "icons": {

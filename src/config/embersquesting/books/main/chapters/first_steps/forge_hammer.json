@@ -15,7 +15,8 @@
   "tasks": [
     {
       "item": "modern_industrialization:forge_hammer",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "icon": "modern_industrialization:forge_hammer",
@@ -50,7 +51,6 @@
     }
   ],
   "effect": "shader(embersquesting:smoke, U_Node=0.55, U_Speed=0.8, U_Density=0.7, U_Rise=0.4)",
-  "complete": "any",
   "shape": "octagon",
   "size": 3.0
 }

@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "legendary_monsters:eye_of_ghost",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "structure": "legendary_monsters:collapsed_kingdom",
       "type": "location"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

@@ -11,14 +11,14 @@
   "tasks": [
     {
       "item": "cataclysm:burning_ashes",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "advancement": "cataclysm:kill_ignis",
       "type": "advancement"
     }
   ],
-  "complete": "any",
   "shape": "diamond",
   "icons": {
     "all": {

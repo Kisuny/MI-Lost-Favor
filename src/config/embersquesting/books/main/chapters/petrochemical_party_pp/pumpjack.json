@@ -11,13 +11,13 @@
   "tasks": [
     {
       "item": "immersivepetroleum:pumpjack",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersivepetroleum:pumpjack",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

@@ -13,13 +13,13 @@
   "tasks": [
     {
       "item": "immersivepetroleum:hydrotreater",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersivepetroleum:hydrotreater",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "rsquare"
 }

@@ -15,13 +15,14 @@
     },
     {
       "item": "ae2:energy_level_emitter",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "extendedae:threshold_level_emitter",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

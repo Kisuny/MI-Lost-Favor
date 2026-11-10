@@ -11,13 +11,13 @@
   "tasks": [
     {
       "item": "immersivepetroleum:coker_unit",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersivepetroleum:coker_unit",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

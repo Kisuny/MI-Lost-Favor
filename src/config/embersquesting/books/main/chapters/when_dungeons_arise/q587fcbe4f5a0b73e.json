@@ -13,7 +13,8 @@
   "tasks": [
     {
       "entity": "legendary_monsters:shulker_mimic",
-      "type": "kill"
+      "type": "kill",
+      "optional": true
     },
     {
       "advancement": "apotheosis:progression/summit",
@@ -22,7 +23,6 @@
       "title": "Slay the Shulker Mimic"
     }
   ],
-  "complete": "any",
   "shape": "hexagon",
   "size": 1.5,
   "icons": {

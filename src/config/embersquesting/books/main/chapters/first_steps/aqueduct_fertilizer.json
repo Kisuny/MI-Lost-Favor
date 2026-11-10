@@ -11,7 +11,8 @@
   "tasks": [
     {
       "item": "ytech:aqueduct_fertilizer",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "ytech:aqueduct_fertilizer",
@@ -19,6 +20,5 @@
       "icon": "ytech:aqueduct_fertilizer"
     }
   ],
-  "complete": "any",
   "shape": "pentagon"
 }

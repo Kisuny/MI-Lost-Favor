@@ -14,13 +14,13 @@
   "tasks": [
     {
       "entity": "ars_nouveau:starbuncle",
-      "type": "observe"
+      "type": "observe",
+      "optional": true
     },
     {
       "item": "ars_nouveau:starbuncle_charm",
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

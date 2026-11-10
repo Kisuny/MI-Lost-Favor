@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "legendary_monsters:eye_of_annihilation",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "structure": "legendary_monsters:space_station",
       "type": "location"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

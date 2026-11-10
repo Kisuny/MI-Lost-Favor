@@ -15,7 +15,8 @@
     },
     {
       "advancement": "spectrum:midgame/enter_dimension",
-      "type": "advancement"
+      "type": "advancement",
+      "optional": true
     }
   ],
   "rewards": [
@@ -26,7 +27,6 @@
       "auto": "claim"
     }
   ],
-  "complete": "any",
   "shape": "gear",
   "size": 2.0
 }

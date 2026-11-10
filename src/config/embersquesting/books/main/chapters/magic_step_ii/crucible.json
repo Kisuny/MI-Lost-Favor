@@ -18,21 +18,24 @@
     },
     {
       "item": "minecraft:netherrack",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:campfire",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:flint_and_steel",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:water_bucket",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "gear"
 }

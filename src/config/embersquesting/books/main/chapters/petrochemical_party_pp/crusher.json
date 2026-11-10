@@ -15,31 +15,37 @@
     },
     {
       "item": "immersiveengineering:crusher",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:rs_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_scaffolding_standard",
       "count": 10,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_fence",
       "count": 8,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:hopper",
       "count": 9,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:light_engineering",
       "count": 10,
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -49,6 +55,5 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "heart"
 }

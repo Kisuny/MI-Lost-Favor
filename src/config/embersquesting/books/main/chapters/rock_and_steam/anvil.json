@@ -14,7 +14,8 @@
   "tasks": [
     {
       "item": "minecraft:anvil",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "icon": "minecraft:anvil",
@@ -37,7 +38,6 @@
       "auto": "claim"
     }
   ],
-  "complete": "any",
   "shape": "octagon",
   "icons": {
     "locked": "milf:question_mark"

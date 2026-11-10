@@ -20,7 +20,8 @@
     {
       "item": "toxony:toxin",
       "count": 8,
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -31,7 +32,6 @@
       "auto": "claim"
     }
   ],
-  "complete": "any",
   "shape": "octagon",
   "size": 2.0
 }

@@ -14,7 +14,8 @@
   "tasks": [
     {
       "item": "minecraft:furnace",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "icon": "minecraft:furnace",
@@ -22,7 +23,6 @@
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "rsquare",
   "icons": {
     "locked": "milf:question_mark"

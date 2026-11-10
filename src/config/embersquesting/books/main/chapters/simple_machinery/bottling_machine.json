@@ -11,7 +11,8 @@
   "tasks": [
     {
       "item": "immersiveengineering:bottling_machine",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersiveengineering:bottling_machine",
@@ -19,31 +20,37 @@
     },
     {
       "item": "immersiveengineering:fluid_pump",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:sheetmetal_iron",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:rs_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:light_engineering",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_scaffolding_standard",
       "count": 3,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:conveyor_basic",
       "count": 3,
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -53,6 +60,5 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "octagon"
 }

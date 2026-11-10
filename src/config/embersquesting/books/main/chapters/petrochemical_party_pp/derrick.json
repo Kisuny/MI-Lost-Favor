@@ -12,13 +12,13 @@
   "tasks": [
     {
       "item": "immersivepetroleum:derrick",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersivepetroleum:derrick",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "octagon"
 }

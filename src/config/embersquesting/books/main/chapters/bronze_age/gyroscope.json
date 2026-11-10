@@ -15,13 +15,14 @@
     },
     {
       "item": "immersive_aircraft:gyroscope_hud",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersive_aircraft:gyroscope_dials",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "rsquare"
 }

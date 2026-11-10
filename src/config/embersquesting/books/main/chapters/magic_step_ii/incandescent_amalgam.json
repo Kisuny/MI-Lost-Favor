@@ -16,17 +16,18 @@
       "match_components": "none",
       "item": "spectrum:incandescent_amalgam",
       "components": "{\"spectrum:beverage\":{alcohol_percent:15}}",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:end_crystal",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "type": "checkmark",
       "title": "*Click*"
     }
   ],
-  "complete": "any",
   "shape": "square"
 }

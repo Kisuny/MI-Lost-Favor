@@ -11,13 +11,13 @@
   "tasks": [
     {
       "item": "immersiveengineering:heavy_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "type": "checkmark"
     }
   ],
   "optional": true,
-  "complete": "any",
   "shape": "pentagon"
 }

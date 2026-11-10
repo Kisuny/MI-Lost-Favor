@@ -18,45 +18,54 @@
     },
     {
       "item": "immersiveengineering:chunk_loader",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:calibrated_sculk_sensor",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_window",
       "count": 5,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_scaffolding_standard",
       "count": 20,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:concrete",
       "count": 9,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:light_engineering",
       "count": 3,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:resonanz_engineering",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:rs_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_fence",
       "count": 4,
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -66,7 +75,6 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "heart",
   "size": 2.0
 }

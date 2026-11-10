@@ -14,21 +14,23 @@
   "tasks": [
     {
       "item": "usefulslime:slime_helmet",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "usefulslime:slime_chestplate",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "usefulslime:slime_leggings",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "usefulslime:slime_boots",
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "heart"
 }

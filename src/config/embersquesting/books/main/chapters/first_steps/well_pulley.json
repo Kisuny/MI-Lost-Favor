@@ -14,7 +14,8 @@
   "tasks": [
     {
       "item": "ytech:well_pulley",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "ytech:well_pulley",
@@ -22,6 +23,5 @@
       "icon": "ytech:well_pulley"
     }
   ],
-  "complete": "any",
   "shape": "rsquare"
 }

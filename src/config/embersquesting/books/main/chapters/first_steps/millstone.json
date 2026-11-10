@@ -14,7 +14,8 @@
   "tasks": [
     {
       "item": "ytech:millstone",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "icon": "ytech:millstone",
@@ -28,6 +29,5 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

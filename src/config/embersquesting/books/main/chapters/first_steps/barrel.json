@@ -11,7 +11,8 @@
   "tasks": [
     {
       "item": "minecraft:barrel",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "minecraft:barrel",
@@ -19,6 +20,5 @@
       "icon": "minecraft:barrel"
     }
   ],
-  "complete": "any",
   "shape": "heart"
 }

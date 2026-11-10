@@ -11,7 +11,8 @@
   "tasks": [
     {
       "item": "immersiveengineering:arc_furnace",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersiveengineering:arc_furnace",
@@ -20,45 +21,54 @@
     {
       "item": "immersiveengineering:blastbrick_reinforced",
       "count": 27,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:slab_sheetmetal_steel",
       "count": 14,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_scaffolding_standard",
       "count": 5,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:cauldron",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:sheetmetal_steel",
       "count": 8,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:storage_steel",
       "count": 6,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:heavy_engineering",
       "count": 5,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:rs_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:light_engineering",
       "count": 10,
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -68,7 +78,6 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "octagon",
   "size": 2.0
 }

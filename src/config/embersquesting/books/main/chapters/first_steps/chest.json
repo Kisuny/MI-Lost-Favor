@@ -11,7 +11,8 @@
   "tasks": [
     {
       "item": "minecraft:chest",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "minecraft:chest",
@@ -19,6 +20,5 @@
       "icon": "minecraft:chest"
     }
   ],
-  "complete": "any",
   "shape": "heart"
 }

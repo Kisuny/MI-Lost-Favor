@@ -14,14 +14,14 @@
   "tasks": [
     {
       "structure": "fdbosses:chesed_arena",
-      "type": "location"
+      "type": "location",
+      "optional": true
     },
     {
       "advancement": "fdbosses:qliphoth_awakening/chesed",
       "type": "advancement"
     }
   ],
-  "complete": "any",
   "shape": "diamond",
   "icons": {
     "all": {

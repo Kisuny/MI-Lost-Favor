@@ -11,17 +11,18 @@
   "tasks": [
     {
       "item": "immersiveengineering:radio_tower",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersiveengineering:radio_tower",
-      "type": "observe"
+      "type": "observe",
+      "optional": true
     },
     {
       "item": "milf:radio_tower_placer",
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

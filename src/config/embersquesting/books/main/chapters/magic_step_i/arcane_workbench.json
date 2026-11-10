@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "thaumaturge:arcane_workbench",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "thaumaturge:arcane_workbench",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

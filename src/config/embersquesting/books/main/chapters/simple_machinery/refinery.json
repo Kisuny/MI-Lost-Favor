@@ -15,36 +15,43 @@
     },
     {
       "item": "immersiveengineering:refinery",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:fluid_pipe",
       "count": 5,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:light_engineering",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:heavy_engineering",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:sheetmetal_iron",
       "count": 16,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:rs_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_scaffolding_standard",
       "count": 8,
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -54,6 +61,5 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "octagon"
 }

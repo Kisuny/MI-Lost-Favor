@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "legendary_monsters:eye_of_chorus",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "structure": "legendary_monsters:ancient_tower_remains",
       "type": "location"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

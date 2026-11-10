@@ -14,7 +14,8 @@
   "tasks": [
     {
       "item": "ytech:aqueduct_valve",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "ytech:aqueduct_valve",
@@ -22,6 +23,5 @@
       "icon": "ytech:aqueduct_valve"
     }
   ],
-  "complete": "any",
   "shape": "heart"
 }

@@ -13,14 +13,14 @@
   "tasks": [
     {
       "entity": "netherman:azazel",
-      "type": "kill"
+      "type": "kill",
+      "optional": true
     },
     {
       "advancement": "netherman:kill_azazel",
       "type": "advancement"
     }
   ],
-  "complete": "any",
   "shape": "gear",
   "size": 2.0,
   "icons": {

@@ -15,7 +15,8 @@
   "tasks": [
     {
       "item": "ytech:tree_stump",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "ytech:tree_stump",
@@ -23,6 +24,5 @@
       "icon": "ytech:tree_stump"
     }
   ],
-  "complete": "any",
   "shape": "rsquare"
 }

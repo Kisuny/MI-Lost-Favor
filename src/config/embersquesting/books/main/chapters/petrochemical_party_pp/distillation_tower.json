@@ -11,13 +11,13 @@
   "tasks": [
     {
       "item": "immersivepetroleum:distillation_tower",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "immersivepetroleum:distillation_tower",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "pentagon"
 }

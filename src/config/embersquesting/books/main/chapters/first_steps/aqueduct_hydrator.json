@@ -11,7 +11,8 @@
   "tasks": [
     {
       "item": "ytech:aqueduct_hydrator",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "ytech:aqueduct_hydrator",
@@ -19,6 +20,5 @@
       "icon": "ytech:aqueduct_hydrator"
     }
   ],
-  "complete": "any",
   "shape": "rsquare"
 }

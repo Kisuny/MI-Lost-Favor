@@ -14,13 +14,13 @@
   "tasks": [
     {
       "entity": "ars_nouveau:alakarkinos",
-      "type": "observe"
+      "type": "observe",
+      "optional": true
     },
     {
       "item": "ars_nouveau:alakarkinos_charm",
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

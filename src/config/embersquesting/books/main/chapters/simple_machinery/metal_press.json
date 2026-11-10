@@ -15,29 +15,35 @@
     },
     {
       "item": "immersiveengineering:metal_press",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "minecraft:piston",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:heavy_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:steel_scaffolding_standard",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:conveyor_basic",
       "count": 2,
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "immersiveengineering:rs_engineering",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -47,6 +53,5 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "octagon"
 }

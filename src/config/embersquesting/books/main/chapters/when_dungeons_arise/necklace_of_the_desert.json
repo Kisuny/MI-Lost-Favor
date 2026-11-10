@@ -11,14 +11,14 @@
   "tasks": [
     {
       "item": "cataclysm:necklace_of_the_desert",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "advancement": "cataclysm:kill_remnant",
       "type": "advancement"
     }
   ],
-  "complete": "any",
   "shape": "diamond",
   "icons": {
     "all": {

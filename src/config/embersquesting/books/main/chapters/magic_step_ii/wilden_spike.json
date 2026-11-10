@@ -19,17 +19,19 @@
     {
       "tag": "c:foods/raw_fish",
       "type": "item",
-      "title": "Any Raw Fish"
+      "title": "Any Raw Fish",
+      "optional": true
     },
     {
       "item": "minecraft:charcoal",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "item": "eidolon_repraised:soul_shard",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

@@ -14,13 +14,13 @@
   "tasks": [
     {
       "item": "thaumaturge:crucible",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "thaumaturge:crucible",
       "type": "observe"
     }
   ],
-  "complete": "any",
   "shape": "gear"
 }

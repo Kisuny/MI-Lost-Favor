@@ -17,7 +17,8 @@
       "match_components": "fuzzy",
       "item": "gateways:gate_pearl",
       "components": "{\"gateways:gateway\":\"gateways:tiered/legends\"}",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "advancement": "apotheosis:progression/summit",
@@ -26,7 +27,6 @@
       "title": "Complete the Gateway of Legends"
     }
   ],
-  "complete": "any",
   "shape": "gear",
   "size": 1.75
 }

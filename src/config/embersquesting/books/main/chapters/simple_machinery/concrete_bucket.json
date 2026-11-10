@@ -11,12 +11,12 @@
   "tasks": [
     {
       "item": "immersiveengineering:concrete_bucket",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "type": "checkmark"
     }
   ],
-  "complete": "any",
   "shape": "diamond"
 }

@@ -11,14 +11,14 @@
   "tasks": [
     {
       "item": "minecraft:nether_star",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "advancement": "cataclysm:kill_harbinger",
       "type": "advancement"
     }
   ],
-  "complete": "any",
   "shape": "diamond",
   "icons": {
     "all": {

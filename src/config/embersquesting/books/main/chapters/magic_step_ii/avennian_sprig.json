@@ -16,14 +16,15 @@
     {
       "block": "minecraft:large_fern",
       "type": "observe",
-      "icon": "minecraft:large_fern"
+      "icon": "minecraft:large_fern",
+      "optional": true
     },
     {
       "block": "minecraft:fern",
       "type": "observe",
-      "icon": "minecraft:fern"
+      "icon": "minecraft:fern",
+      "optional": true
     }
   ],
-  "complete": "any",
   "shape": "circle"
 }

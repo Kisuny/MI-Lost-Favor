@@ -15,7 +15,8 @@
   "tasks": [
     {
       "item": "ytech:wooden_box",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "block": "ytech:wooden_box",
@@ -23,6 +24,5 @@
       "icon": "ytech:wooden_box"
     }
   ],
-  "complete": "any",
   "shape": "rsquare"
 }

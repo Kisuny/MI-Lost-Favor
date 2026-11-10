@@ -24,7 +24,8 @@
     },
     {
       "item": "modern_industrialization:configurable_chest",
-      "type": "item"
+      "type": "item",
+      "optional": true
     }
   ],
   "rewards": [
@@ -34,7 +35,6 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "circle",
   "invisible_until_deps_visible": true
 }

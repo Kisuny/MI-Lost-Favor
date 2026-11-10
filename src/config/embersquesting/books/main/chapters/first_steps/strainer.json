@@ -15,7 +15,8 @@
   "tasks": [
     {
       "item": "ytech:strainer",
-      "type": "item"
+      "type": "item",
+      "optional": true
     },
     {
       "icon": "ytech:strainer",
@@ -30,6 +31,5 @@
       "type": "item"
     }
   ],
-  "complete": "any",
   "shape": "heart"
 }

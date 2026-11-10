@@ -16,10 +16,15 @@
   ],
   "rewards": [
     {
-      "team_reward": true,
       "id": "milf:stage/ancient_debris_ore",
       "label": "Ancient Debris",
       "icon": "minecraft:ancient_debris",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "title": "Netherite stuff in looting chests",
+      "id": "milf:stage/netherite_loot",
       "type": "custom",
       "auto": "claim"
     },

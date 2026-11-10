@@ -114,22 +114,7 @@ ServerEvents.recipes(event => {
             S: { item: "apotheosis:gem_dust" },
             W: { item: "embers:sealed_planks" }
         },
-        outputItems: [[{ id: "apotheosis:salvaging_table" }, 1]],
-        removeRecipe: true
-    })
-
-    milfShaped(event, {
-        pattern: [
-            "GGG",
-            "WSW",
-            "WWW"
-        ],
-        key: {
-            G: { item: "milf:steel_infused_glass" },
-            S: { item: "apotheosis:gem_dust" },
-            W: { item: "embers:sealed_planks" }
-        },
-        outputItems: [[{ id: "apotheosis:salvaging_table" }, 1]],
+        outputItems: [[{ id: "apotheosis:gem_cutting_table" }, 1]],
         removeRecipe: true
     })
 

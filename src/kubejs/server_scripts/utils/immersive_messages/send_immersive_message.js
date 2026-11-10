@@ -27,6 +27,17 @@ const DEFAULT_CENTER_MESSAGE_STYLE = (duration) => {
     return style
 }
 
+const DEFAULT_FLAG_NOTIFICATION_STYLE = {
+    anchor:"MIDDLE_RIGHT",
+    slideIn:"right",
+    slideInEasing:"ease_out_cubic",
+    duration: 3,
+    fadeIn:1,
+    fadeOut:0.3,
+    background:true,
+    y:140,
+    offsetGroup: "milfNotifications"
+}
 
 const DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE = {
     anchor:"MIDDLE",

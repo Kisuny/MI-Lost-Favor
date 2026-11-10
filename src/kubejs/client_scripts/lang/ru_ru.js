@@ -217,6 +217,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.flags.unclaimed', "Чанк распривачен")
     event.add('milf.flags.occupied', "Чанк уже запривачен: ")
     event.add('milf.flags.use_flag', "Приватить чанки можно только флагом")
+    event.add('milf.flags.preview.free', "Свободная земля")
+    event.add('milf.flags.preview.own', "Ваша земля")
+    event.add('milf.flags.preview.foreign', "Земля занята: ")
 
     event.add('gateways.basic/deer', "Врата Оленя")
     event.add('gateways.basic/villager', "Врата Жителей")

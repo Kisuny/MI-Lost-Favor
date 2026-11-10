@@ -109,6 +109,8 @@ function sendImmersiveMessage(tagLikeText, player, args){
 
     if(!textComponent) return
 
+    textComponent = Text.of(textComponent.getString())
+
     let argsJS = I_HATE_COMPOUND_TAGS(args)
     let duration = ((argsJS.duration || 2.2)) * 20 | 0
     

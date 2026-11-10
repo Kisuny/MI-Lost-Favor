@@ -31,6 +31,8 @@ let $ResolvableProfile = Java.loadClass("net.minecraft.world.item.component.Reso
 let $GraveStatus = Java.loadClass("com.b1n_ry.yigd.data.GraveStatus")
 
 let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
+let $DustParticleOptions = Java.loadClass("net.minecraft.core.particles.DustParticleOptions")
+let $Vector3f = Java.loadClass("org.joml.Vector3f")
 
 let $Component$Serializer = Java.loadClass("net.minecraft.network.chat.Component$Serializer")
 let $HashSet = Java.loadClass("java.util.HashSet")

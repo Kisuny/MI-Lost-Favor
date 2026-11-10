@@ -280,6 +280,7 @@ The only solution is to make them less sound.`)
     event.add('milf.flags.claimed', "Chunk claimed")
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
     event.add('milf.flags.occupied', "Chunk already claimed by: ")
+    event.add('milf.flags.use_flag', "Chunks can only be claimed with a Chunk Flag")
 
     event.add("jade.theme.jade.dark_original", "Dark (original)")
 

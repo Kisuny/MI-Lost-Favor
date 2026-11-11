@@ -138,6 +138,46 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:tin_bolt" }, 1],
+            [{ item: "milf:bronze_glass" }, 1],
+            [{ item: "modern_industrialization:iron_plate" }, 1]
+        ],
+        outputItems: [[{ item: "embers:fluid_dial" }, 2]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:tin_bolt" }, 1],
+            [{ item: "milf:bronze_glass" }, 1],
+            [{ item: "modern_industrialization:lead_plate" }, 1]
+        ],
+        outputItems: [[{ item: "embers:item_dial" }, 2]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:tin_bolt" }, 1],
+            [{ item: "milf:bronze_glass" }, 1],
+            [{ item: "modern_industrialization:copper_plate" }, 1]
+        ],
+        outputItems: [[{ item: "embers:ember_dial" }, 2]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:tin_bolt" }, 1],
+            [{ item: "milf:bronze_glass" }, 1],
+            [{ item: "modern_industrialization:silver_plate" }, 1]
+        ],
+        outputItems: [[{ item: "embers:clockwork_attenuator" }, 2]]
+    })
+
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [[{ item: "immersiveengineering:ersatz_leather" }, 2]],
         outputItems: [[{ item: "minecraft:leather" }]]

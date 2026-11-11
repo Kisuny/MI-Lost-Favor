@@ -18,4 +18,14 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:wiremill",
+        inputItems: [
+            [{ tag: "minecraft:leaves" }]
+        ],
+        outputItems: [
+            [{ item: "ytech:grass_twine" }, 1]
+        ]
+    })
+
 })

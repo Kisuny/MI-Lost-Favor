@@ -107,6 +107,21 @@ ServerEvents.recipes(event => {
         pattern: [
             "PPP",
             "WSW",
+            "WWW"
+        ],
+        key: {
+            P: { item: "milf:steel_infused_glass" },
+            S: { item: "apotheosis:gem_dust" },
+            W: { item: "embers:sealed_planks" }
+        },
+        outputItems: [[{ id: "apotheosis:gem_case" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PPP",
+            "WSW",
             "W W"
         ],
         key: {

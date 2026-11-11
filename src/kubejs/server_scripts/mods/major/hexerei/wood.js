@@ -17,7 +17,13 @@ ServerEvents.recipes(event => {
             })
 
         })
-        
+
+        const chest = `hexerei:${type}_chest`
+
+        event.remove({ output: chest })
+        event.stonecutting(chest, "minecraft:chest")
+        event.stonecutting("minecraft:chest", chest)
+
     })
 
 

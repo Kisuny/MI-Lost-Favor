@@ -580,6 +580,18 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:furnace" }, 1]]
     })
 
+    milfShaped(event, {
+        pattern: [
+            "RRR",
+            "RRR",
+            "   "
+        ],
+        key: {
+            R: { item: "modern_industrialization:iron_rod" },
+        },
+        outputItems: [[{ id: "minecraft:iron_bars" }, 12]]
+    })
+
     customMixingCauldron(event, {
         fluid: "minecraft:lava",
         fluidAmount: 1000,

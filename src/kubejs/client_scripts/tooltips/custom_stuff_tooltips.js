@@ -8,6 +8,10 @@ ItemEvents.modifyTooltips(event => {
     event.add("milf:grecall_concoction_t2", Text.translatable(`milf.grecall_concoction.t2.tooltip`))
 
     event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
+    event.add("milf:big_bulky_drill", Text.translatable(`milf.big_bulky_drill.tooltip`))
+    event.add("milf:clunky_drill", Text.translatable(`milf.clunky_drill.tooltip`))
+
+    
 
     global.soulHarvestWeapons.forEach(weapon => {
         event.modify(weapon, tooltip => {

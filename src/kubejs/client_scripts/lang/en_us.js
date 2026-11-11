@@ -210,6 +210,7 @@ The only solution is to make them less sound.`)
     event.add('milf.clunky_drill.mode', `Drill mode changed!`)
 
     event.add('milf.big_bulky_drill.tooltip', `Works similarly to the normal drill, but ${MilfEffects.GRAD.NEGATIVE("doesn't") } count as a shovel. The mining area is only increased if ALL of the blocks in said area are stone-like.`)
+    event.add('milf.clunky_drill.tooltip', `Counts as both a ${MilfEffects.GRAD.MILF("shovel")} and a ${MilfEffects.GRAD.MILF("pickaxe")}. Hold Shift to increase ${MilfEffects.GRAD.POSITIVE("mining speed")} in exchange for the ${MilfEffects.GRAD.NEGATIVE("mining area")}. The mining area can be switched between ${MilfEffects.GRAD.MILF("horizontal")} and ${MilfEffects.GRAD.MILF("vertical")} by using Shift + mouse scroll.`)
 
     event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${MilfEffects.GRAD.UPGRADE("upgrade")} it. Preserves ${MilfEffects.WAVE_C("all")} the content. Not consumed on use, even when used as a crafting ingredient.`)
 

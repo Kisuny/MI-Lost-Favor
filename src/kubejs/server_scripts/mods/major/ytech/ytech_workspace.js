@@ -3,8 +3,7 @@
 ServerEvents.recipes(event => {
 
     let changedItemIds = new $HashSet([
-        "ytech:tool_rack",
-        "minecraft:furnace"
+        "ytech:tool_rack"
     ])
 
     /**
@@ -485,6 +484,22 @@ ServerEvents.recipes(event => {
                 P: { item: "minecraft:cobblestone" },
                 L: { tag: "minecraft:logs" },
                 T: { item: "ytech:grass_twine" }
+            })
+    )
+
+    builders.push(
+        new WorkspaceRecipeBuilder("minecraft:furnace")
+            .top(plane => plane.corners("T").sides("P"))
+            .middle(plane => plane.corners("T").sides("P").front(" "))
+            .bottom(plane => plane.fill("C").center("F"))
+            .setKey({
+                P: { item: "ytech:pebble" },
+                T: { item: "ytech:grass_twine" },
+                F: { item: "milf:fire_pit" },
+                C: { tag: "c:cobblestones" }
+            })
+            .setArgs({
+                tool: { tag: "c:hammers" }
             })
     )
 

@@ -4,18 +4,18 @@
     "<lang key=milf.quest.first_steps.furnace.desc>"
   ],
   "icon": "minecraft:furnace",
-  "x": 17,
-  "y": 8,
+  "x": 37,
+  "y": 17,
   "deps": {
     "all": [
-      "first_steps/stone_hammer"
+      "first_steps/smooth_stone"
     ]
   },
   "tasks": [
     {
+      "optional": true,
       "item": "minecraft:furnace",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
       "icon": "minecraft:furnace",

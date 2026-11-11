@@ -581,6 +581,23 @@ ServerEvents.recipes(event => {
         ],
         output: "minecraft:flint_and_steel"
     });
+
+    milfShaped(event, {
+        pattern: [
+            "CpC",
+            "p p",
+            "CSC"
+        ],
+        key: {
+            S: { item: "minecraft:smooth_stone" },
+            C: { item: "minecraft:cobblestone" },
+            p: { item: "ytech:pebble" }
+        },
+        outputItems: [[{ id: "minecraft:furnace" }, 1]],
+        removeRecipe: true,
+        compatOff:true,
+    })
+
 })
 
 milfDisableRecipesById([

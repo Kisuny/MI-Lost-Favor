@@ -1,55 +1,39 @@
 ServerEvents.recipes(event => {
 
-    // const NOSE_ORES = [
-    //     "modern_industrialization:raw_tin",
-    //     "minecraft:raw_copper",
-    //     "minecraft:raw_iron",
-    //     "minecraft:raw_gold",
-    //     "minecraft:coal",
-    //     "modern_industrialization:raw_lead",
-    //     "minecraft:emerald",
-    //     "minecraft:redstone",
-    //     "minecraft:diamond",
-    //     "minecraft:lapis_lazuli",
-    //     "minecraft:quartz",
-    //     "modern_industrialization:bauxite_dust",
-    //     "modern_industrialization:raw_nickel",
-    //     "minecraft:netherite_scrap",
-    //     "modern_industrialization:salt_dust",
-    //     "modern_industrialization:raw_antimony",
-    //     "modern_industrialization:raw_uranium",
-    //     "modern_industrialization:raw_tungsten",
-    //     "modern_industrialization:raw_titanium",
-    //     "modern_industrialization:raw_platinum",
-    //     "modern_industrialization:monazite_dust"
-    // ]
-
-    // NOSE_ORES.forEach(oreId => {
-    //     noseRecipe(oreId)
-    // })
 
     global.oresWithSamples.filter(entry => entry.oreTier <= 3).forEach(entry  => {
 
-        let rawOre = entry.oreData.raw
+        let rawOre = entry.oreData.displayItem
 
-        customShrineRecipe(event, {
-            time: 60,
-            experience: 8,
-            fluid: "spectrum:liquid_crystal",
-            ingredients: [
-                { "item": "milf:pet_rock", count: 1 },
-                { "item": rawOre, count: 1 },
-                { "item": rawOre, count: 1 },
-                { "item": rawOre, count: 2 },
-                { "item": rawOre, count: 3 },
-                { "item": rawOre, count: 5 },
-                { "item": rawOre, count: 8 },
+        embersAlchemyRecipe(event, {
+            inputItems: [
+                [{ item: rawOre }],
+                [{ item: rawOre }],
+                [{ item: rawOre }],
+                [{ item: rawOre }],
+                [{ item: rawOre }],
+                [{ item: rawOre }],
             ],
-            result: {
-                id: "milf:stone_nose",
-                count: 1,
-                components: { "minecraft:custom_data": { "oreId": entry.oreData.displayItem } }
-            }
+
+            aspects: [
+                [{ item: "embers:copper_aspectus" }],
+                [{ item: "embers:lead_aspectus" }],
+                [{ item: "embers:dawnstone_aspectus" }],
+                [{ item: "embers:iron_aspectus" }],
+                [{ item: "embers:silver_aspectus" }],
+                [{ item: "embers:intelligent_apparatus" }],
+            ],
+
+            outputItems: [
+                [{
+                    id: "milf:stone_nose",
+                    count: 1,
+                    components: { "minecraft:custom_data": { "oreId": entry.oreData.displayItem } }
+                }],
+            ],
+
+            tablet: { item: "milf:stone_nose" },
+
         })
 
         // customShrineRecipe(event, {
@@ -58,12 +42,12 @@ ServerEvents.recipes(event => {
         //     fluid: "spectrum:liquid_crystal",
         //     ingredients: [
         //         { "item": "milf:pet_rock", count: 1 },
-        //         { "tag": `milf:t${entry.oreTier + 1}_raw_materaials`, count: 1 },
-        //         { "tag": `milf:t${entry.oreTier + 1}_raw_materaials`, count: 1 },
-        //         { "tag": `milf:t${entry.oreTier + 1}_raw_materaials`, count: 2 },
-        //         { "tag": `milf:t${entry.oreTier + 1}_raw_materaials`, count: 3 },
-        //         { "tag": `milf:t${entry.oreTier + 1}_raw_materaials`, count: 5 },
-        //         { "tag": `milf:t${entry.oreTier + 1}_raw_materaials`, count: 8 },
+        //         { "item": rawOre, count: 1 },
+        //         { "item": rawOre, count: 1 },
+        //         { "item": rawOre, count: 2 },
+        //         { "item": rawOre, count: 3 },
+        //         { "item": rawOre, count: 5 },
+        //         { "item": rawOre, count: 8 },
         //     ],
         //     result: {
         //         id: "milf:stone_nose",
@@ -72,6 +56,39 @@ ServerEvents.recipes(event => {
         //     }
         // })
 
+
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "@ S",
+            " P ",
+            "K #"
+        ],
+        key: {
+            S: { tag: "c:saws" },
+            K: { tag: "milf:knives" },
+            P: { item: "milf:pet_rock" },
+            "#": { tag: "c:files" },
+            "@": { tag: "milf:hammers" }
+        },
+        outputItems: [[{ id: "milf:stone_nose" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "pNp",
+            "NPN",
+            "pNp"
+        ],
+        key: {
+            P: { item: "milf:pet_rock" },
+            N: { item: "milf:stone_nose" },
+            p: { item: "ytech:pebble" },
+
+        },
+        outputItems: [[{ id: "milf:noseamination" }, 1]]
     })
 
 })

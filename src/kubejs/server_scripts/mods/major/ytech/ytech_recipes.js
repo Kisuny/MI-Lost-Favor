@@ -26,7 +26,7 @@ function getItemInputsFromYTechShaped(args) {
     Object.entries(args.key).forEach(m => {
         //let regex = new RegExp(m[0],"g")
         if (m[0] == "#" || m[0] == "@") {
-            if (m[1].tag == "c:hammers" || m[1].tag == "c:saws" || m[1].tag == "c:files") return
+            if (m[1].tag == "c:hammers" || m[1].tag == "milf:hammers" || m[1].tag == "c:saws" || m[1].tag == "c:files") return
             itemInputs.push([m[1], (patternString.split(m[0])).length - 1, 0])
             return
         } 

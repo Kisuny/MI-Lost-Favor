@@ -202,6 +202,84 @@ createNewItem('stone_nose', {
     }
 })
 
+createNewItem('noseamination', {
+    stackSize: 7+1,
+    use: {
+        animation: "bow",
+        duration: 35,
+        conditions(level, player, hand) {
+            if (!level.isClientSide()) {
+                player.sendData("milf_stone_nose_start_sound")
+            }
+            return true
+        },
+        releaseUsing(itemStack, level, entity, tick) {
+            if (!level.isClientSide()) entity.sendData("milf_stone_nose_sound_interrupted")
+        },
+        finishUsing(itemStack, level, entity) {
+
+            if (level.isClientSide()) return itemStack
+
+            let $MiscStorage = Java.loadClass("com.alessandro.astages.engine.server.MiscStorage")
+
+
+            let stageToOreMap = {
+
+                lead_ore: "modern_industrialization:raw_lead",
+                tin_ore: "modern_industrialization:raw_tin",
+                copper_ore: "minecraft:raw_copper",
+                iron_ore: "minecraft:raw_iron",
+                coal_ore: "minecraft:coal",
+
+                redstone_ore: "minecraft:redstone",
+                lapis_ore: "minecraft:lapis_lazuli",
+                gold_ore: "minecraft:raw_gold",
+                quartz_ore: "modern_industrialization:quartz_crushed_dust",
+                salt_ore: "modern_industrialization:salt_dust",
+
+                emerald_ore: "minecraft:emerald",
+                diamond_ore: "minecraft:diamond",
+                nickel_ore: "modern_industrialization:raw_nickel",
+                nether_quartz_ore: "minecraft:quartz",
+
+                antimony_ore: "modern_industrialization:raw_antimony",
+                ancient_debris_ore: "minecraft:netherite_scrap",
+                bauxite_ore: "modern_industrialization:bauxite_dust",
+                uranium_ore: "modern_industrialization:raw_uranium",
+                monazite_ore: "modern_industrialization:monazite_dust",
+
+            }
+
+            let player = entity
+
+            let oresToScan = new $ListTag()
+
+            let stages = $MiscStorage.ALL_STAGES
+
+            stages.forEach(stage => {
+                if (AStages.playerHasStage(stage, player) && stageToOreMap[stage]) {
+                    oresToScan.add($StringTag.valueOf(stageToOreMap[stage]))
+                }
+            })
+
+
+            
+
+            let dataToSend = new $CompoundTag()
+
+            dataToSend.put("oresToScan", oresToScan)
+            dataToSend.putInt("scan_radius", 249)
+
+            player.sendData("milf_stone_nose_used", dataToSend)
+
+            player.cooldowns.addCooldown(itemStack, 200)
+            itemStack.shrink(1)
+            return itemStack
+
+        }
+    }
+})
+
 createNewItem('divine_mint', { stackSize: 1, lang: { "ru_ru": "Божественный монетный двор" } })
 createNewItem('divine_coin', { stackSize: 1, lang: { "ru_ru": "Божественная монета" } })
 

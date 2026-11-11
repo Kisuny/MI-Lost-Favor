@@ -124,7 +124,7 @@ function checkAndRemoveItems(player, itemEntries){
                 let item = Item.of(id)
 
                 let playerCount = player.getInventory().clearOrCountMatchingItems(
-                    stack => stack.is(item),
+                    stack => stack["is(net.minecraft.world.item.Item)"](item.getItem()),
                     count,
                     player.inventoryMenu.getCraftSlots()
                 )

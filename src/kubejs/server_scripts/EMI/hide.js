@@ -305,6 +305,8 @@ RecipeViewerEvents.removeCategories(event => {
         'javd:void',
         'neovitae:dungeon',
         //#region
+        'minecraft:tag_recipes/item',
+        'minecraft:tag_recipes/block',
     ]);
 });
 

@@ -566,6 +566,20 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "CpC",
+            "p p",
+            "CSC"
+        ],
+        key: {
+            S: { item: "minecraft:smooth_stone" },
+            C: { item: "minecraft:cobblestone" },
+            p: { item: "ytech:pebble" }
+        },
+        outputItems: [[{ id: "minecraft:furnace" }, 1]]
+    })
+
     customMixingCauldron(event, {
         fluid: "minecraft:lava",
         fluidAmount: 1000,

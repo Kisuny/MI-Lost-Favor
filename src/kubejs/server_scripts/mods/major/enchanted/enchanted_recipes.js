@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         fluidAmount: 1000,
         ingredients: [
             { "item": "farmersdelight:golden_knife" },
-            { "item": "minecraft:emerald" },
+            { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:chopped_rue" },
             { "item": "paganbless:chopped_lavender" },
             { "item": "hexerei:belladonna_flowers" },

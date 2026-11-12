@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
 
     customPedestalCraft(event, {
         time: 400,
-        tier: "simple",
+        tier: "basic",
         experience: 1.0,
         citrine: 2,
         topaz: 5,
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
             q: 'ytech:millstone',
             w: 'ars_nouveau:source_gem',
             r: "minecraft:writable_book",
-            t: "ytech:bronze_anvil",
+            t: "milf:bronze_anvil",
         },
         result: {
             id: "ars_elemental:anima_caster_tome",

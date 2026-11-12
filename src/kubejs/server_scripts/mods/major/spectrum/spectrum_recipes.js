@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         "QWQ",
         "EQE"
     ], {
-        Q: "modern_industrialization:bronze_block",
+        Q: "modern_industrialization:bronze_double_ingot",
         W: "enchanted:creeper_heart",
         E: "paganbless:runic_charge",
     });

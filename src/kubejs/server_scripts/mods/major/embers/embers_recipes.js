@@ -2143,12 +2143,11 @@ ServerEvents.recipes(event => {
         pattern: [
             "   ",
             " R ",
-            "PBP",
+            " B ",
         ],
         key: {
             "B": { "item": "embers:archaic_brick" },
             "R": { "item": "milf:stone_rod" },
-            "P": { "item": "embers:caminite_plate" }
 
         },
         outputItems: [[{ id: "embers:caminite_lever" }, 3]],

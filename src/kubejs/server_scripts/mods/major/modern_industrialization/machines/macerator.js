@@ -21,16 +21,6 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 2, time: 100, machine: "modern_industrialization:macerator",
-        inputItems: [[{ item: "modern_industrialization:lignite_coal_crushed_dust" }, 1]],
-        outputItems: [
-            [{ item: "modern_industrialization:lignite_coal_dust" }, 1],
-            [{ item: "modern_industrialization:lignite_coal_dust" }, 1, 0.5],
-        ],
-        removeRecipeType: "modern_industrialization:macerator"
-    })
-
-    miMachineRecipe(event, {
         energy: 4, time: 100, machine: "modern_industrialization:macerator",
         inputItems: [[{ item: "modern_industrialization:lignite_coal_crushed_dust" }, 1]],
         outputItems: [
@@ -39,6 +29,25 @@ ServerEvents.recipes(event => {
             [{ item: "modern_industrialization:sulfur_dust" }, 1, 0.5]
         ],
         removeRecipeType: "modern_industrialization:macerator",
+        ieCompat: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [[{ item: "embers:ember_crystal" }, 1]],
+        outputItems: [
+            [{ item: "embers:ember_grit" }, 5]
+        ],
+        ieCompat: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [[{ item: "embers:ember_shard" }, 1]],
+        outputItems: [
+            [{ item: "embers:ember_grit" }, 1],
+            [{ item: "embers:ember_grit" }, 1, 0.58]
+        ],
         ieCompat: true
     })
 

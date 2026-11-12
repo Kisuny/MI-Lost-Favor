@@ -493,7 +493,7 @@ ServerEvents.recipes(event => {
             'TET'
         ],
         key: {
-            T: { "item": "ytech:grass_twine" },
+            T: { "tag": "milf:ropes" },
             E: { item: "ytech:leather_strips" },
             P: { item: "modern_industrialization:tin_bolt" },
         },
@@ -1003,7 +1003,7 @@ ServerEvents.recipes(event => {
             r: { item: "modern_industrialization:iron_rod" },
             N: { item: "modern_industrialization:steel_nugget" },
             R: { item: "modern_industrialization:steel_rod" },
-            T: { item: "ytech:grass_twine" },
+            T: { tag: "milf:ropes" },
             B: { item: "milf:steel_machine_bit" },
             G: { item: "immersiveengineering:wooden_grip" }
         },

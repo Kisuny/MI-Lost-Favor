@@ -24,7 +24,7 @@ function collectDepositNames(oreId, collector){
 NetworkEvents.dataReceived("milf_pet_rock_deposits_to_scan", event => {
     if (event.level.isClientSide()) return false
     let item = event.player.getMainHandItem()
-    if (event.player.cooldowns.isOnCooldown(item)) return
+    //if (event.player.cooldowns.isOnCooldown(item)) return
 
     let { player, data } = event
 

@@ -64,4 +64,20 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    ieBottlingMachineRecipe(event, {
+        outputItems: [
+            [{ item: "immersiveengineering:grindingdisk" }, 1],
+            [{ item: "immersiveengineering:mold_gear" }, 1],
+        ],
+        inputFluids: [
+            [{ fluid: "immersiveengineering:phenolic_resin" }, 500]
+        ],
+        inputItems: [
+            [{ item: "immersiveengineering:mold_gear" }, 1],
+            [{ item: "modern_industrialization:diamond_dust" }, 12],
+            [{ item: "immersiveengineering:ersatz_leather" }, 16]
+        ],
+        removeRecipe: true
+    })
+
 })

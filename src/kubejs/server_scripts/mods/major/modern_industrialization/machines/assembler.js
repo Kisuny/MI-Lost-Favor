@@ -31,16 +31,6 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    miMachineRecipe(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
-        inputItems:[
-            [{tag:"c:cobblestones"}, 8],
-        ],
-        outputItems:[
-            [{item:"minecraft:furnace"}]
-        ],
-        removeRecipe:true
-    })
-
     miMachineRecipe(event, {
         energy: 8, time: 200, machine: "modern_industrialization:assembler",
         inputItems: [

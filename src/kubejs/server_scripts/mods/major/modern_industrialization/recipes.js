@@ -63,7 +63,7 @@ function miMachineRecipe(event, args){
     }
 
     inputs.forEach((input) => {        
-        let inp = Object.assign({}, input[0], { amount: input[1] ?? input[0]?.amount ?? 1 }, { probability: input[2] })
+        let inp = Object.assign({}, input[0], { amount: input[1] ?? input[0]?.amount ?? 1 }, { probability: input[2] ?? input[0]?.probability ?? 1 })
         if (inp.count) {
             inp.amount = inp.count
             delete inp.count
@@ -72,7 +72,7 @@ function miMachineRecipe(event, args){
     })
     outputs.forEach((out) => {
         if (out[1] === 0) return
-        let output = Object.assign({}, out[0], { amount: out[1] ?? out[0]?.amount ?? 1 }, { probability: out[2] })
+        let output = Object.assign({}, out[0], { amount: out[1] ?? out[0]?.amount ?? 1 }, { probability: out[2] ?? out[0]?.probability ?? 1 })
         if (output.id) {
             output.item = output.id
             delete output.id
@@ -83,9 +83,9 @@ function miMachineRecipe(event, args){
         }
         recipe.item_outputs.push(output)
     })
-    fluidInputs.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] || 1000 }, { probability: input[2] })) })
+    fluidInputs.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] ?? input[0].amount || 1000 }, { probability: input[2] ?? input[0]?.probability ?? 1 })) })
     fluidOutputs.forEach((out) => { 
-        let output = Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })
+        let output = Object.assign({}, out[0], { amount: out[1] ?? out[0].amount || 1000 }, { probability: out[2] ?? out[0]?.probability ?? 1 })
 
         if (output.id) {
             output.fluid = output.id

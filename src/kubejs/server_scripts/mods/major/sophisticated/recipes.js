@@ -25,9 +25,9 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "ytech:wooden_plate" }, 8],
-            [{ "item": "immersiveengineering:stick_treated" }, 4],
-            [{ "item": "modern_industrialization:steel_large_plate" }, 2],
+            [{ "item": "ytech:wooden_plate" }, 2],
+            [{ "item": "immersiveengineering:stick_treated" }, 2],
+            [{ "item": "modern_industrialization:steel_large_plate" }, 1],
         ],
         outputItems: [[{ "item": "sophisticatedstorage:upgrade_base" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,

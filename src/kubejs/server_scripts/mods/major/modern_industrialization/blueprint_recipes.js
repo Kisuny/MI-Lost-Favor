@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:gold_plate" }, 2],
             [{ "item": "modern_industrialization:copper_wire" }, 2]
         ],
-        outputItems: [[{ "item": "modern_industrialization:capacitor" }]],
+        outputItems: [[{ "item": "modern_industrialization:capacitor" }, 2]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipeType: "minecraft:crafting_shaped",
         compatOff:true

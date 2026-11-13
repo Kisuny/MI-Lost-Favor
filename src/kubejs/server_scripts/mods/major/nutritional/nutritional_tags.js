@@ -1,6 +1,6 @@
 ServerEvents.tags('item', event => {
 
-    event.add('nutritional:nutrient/source', ['#ars_nouveau:magic_food'])
+    event.add('nutritional:nutrient/source', ['#ars_nouveau:magic_food', 'ars_nouveau:sourceberry_bush'])
 
     event.add('nutritional:nutrient/fruit', [
         // Arsdelight

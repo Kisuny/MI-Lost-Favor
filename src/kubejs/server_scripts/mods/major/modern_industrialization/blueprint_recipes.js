@@ -192,10 +192,10 @@ ServerEvents.recipes(event => {
 
     ieBlueprintRecipe(event, {
         inputItems: [
-            [{ "item": "oritech:magnetic_coil" }, 2],
+            [{ "item": "oritech:magnetic_coil" }, 1],
             [{ "item": "modern_industrialization:copper_plate" }, 4],
             [{ "item": "modern_industrialization:iron_rod" }, 2],
-            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 2],
+            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 1],
         ],
         outputItems: [[{ "item": "milf:basic_motor" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,

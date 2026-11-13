@@ -686,8 +686,8 @@ ServerEvents.recipes(event => {
             "IDI"
         ],
         key: {
-            I: { item: "modern_industrialization:uranium_ingot" },
-            M: { item: "modern_industrialization:uranium_block" },
+            I: { item: "modern_industrialization:raw_uranium" },
+            M: { item: "modern_industrialization:raw_uranium_block" },
             D: { item: "minecraft:magma_block" }
         },
         outputItems: [[{ id: "immersiveengineering:storage_uranium" }, 1]],

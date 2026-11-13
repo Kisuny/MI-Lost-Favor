@@ -28,6 +28,15 @@ const customPestleAndMortarCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
 
-    //For future
+    customPestleAndMortarCraft(event, {
+        ingredients: [
+            { item: 'spectrum:citrine_powder' },
+            { item: 'spectrum:amethyst_powder' },
+            { item: 'spectrum:topaz_powder' },
+        ],
+        output: 'milf:mixed_gem_powder',
+        amount: 2,
+        grindingTime: 200
+    })
 
 })

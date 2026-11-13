@@ -1,39 +1,49 @@
 const CHUNK_FLAG = "milf:chunk_flag"
 
-let flagClaimInProgress = false
+const flagState = global.chunkFlags
+flagState.claimInProgress = false
 
 function flagClaim(player, dimension, chunkPos) {
-    flagClaimInProgress = true
+    flagState.claimInProgress = true
     $FTBChunksAPI.claimAsPlayer(player, dimension, chunkPos, false)
-    flagClaimInProgress = false
+    flagState.claimInProgress = false
 }
 
 function flagUnclaim(chunk, player) {
-    flagClaimInProgress = true
+    flagState.claimInProgress = true
     chunk.unclaim(player.createCommandSourceStack(), true)
-    flagClaimInProgress = false
+    flagState.claimInProgress = false
 }
 
-const blockManualClaim = event => {
-    if (flagClaimInProgress) return
-    event.setCustomResult("milf.flags.use_flag")
-    event.cancel()
+flagState.blockManualClaim = () => {
+    if (flagState.claimInProgress) return $CompoundEventResult.pass()
+    return $CompoundEventResult.interruptFalse($ClaimResult.customProblem("milf.flags.use_flag"))
 }
 
-FTBChunksEvents.before("claim", blockManualClaim)
-FTBChunksEvents.before("unclaim", blockManualClaim)
+function registerClaimListener() {
+    const listener = new $ClaimedChunkEventBefore({
+        before: (source, chunk) => flagState.blockManualClaim()
+    })
+    $ClaimedChunkEvent.BEFORE_CLAIM.register(listener)
+    $ClaimedChunkEvent.BEFORE_UNCLAIM.register(listener)
+    flagState.listenerRegistered = true
+}
+
+if (!flagState.listenerRegistered) registerClaimListener()
 
 BlockEvents.rightClicked(CHUNK_FLAG, event =>{
-    if(event.getHand()=="OFF_HAND") event.cancel()
+    if(event.getHand()=="OFF_HAND") {
+        event.cancel()
+        return
+    }
     const chunkManager = $FTBChunksAPI.getManager()
     if (event.player.getMainHandItem().id == CHUNK_FLAG && chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos))){
         sendImmersiveMessage(Text.translatable("milf.flags.occupied").append(Component.of(chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos)).teamData.team.getName())), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         let playerInventory = event.player.inventoryMenu
         event.server.scheduleInTicks(1, _ =>  playerInventory.broadcastFullState())
         event.cancel()
-        
-    }  
-    const currentChunk = chunkManager.getChunk($ChunkDimPos(event.player))
+        return
+    }
     const blockChunkPos = new $ChunkPos(event.block.getPos())
     if(event.block.getProperties().enabled == "false"){
         event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:true}))
@@ -63,8 +73,8 @@ BlockEvents.placed(CHUNK_FLAG, event =>{
         let playerInventory = event.player.inventoryMenu
         event.server.scheduleInTicks(1, _ =>  playerInventory.broadcastFullState())
         event.cancel()
-        
-    }   
+        return
+    }
 
     flagClaim(event.player, event.level.dimension, blockChunkPos)
     let flagLevel = event.level
@@ -89,7 +99,3 @@ BlockEvents.broken(CHUNK_FLAG, event =>{
     }     
     
 })
-
-function gradientToMutableComponent(component, from, to){
-    return Component.ofString(`<grad from=${from} to=${to} hue uni>`).append(component).append(Text.ofString(`</grad>`))
-}

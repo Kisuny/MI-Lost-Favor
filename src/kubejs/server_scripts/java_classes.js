@@ -115,3 +115,8 @@ let $AvoidEntityGoal = Java.loadClass("net.minecraft.world.entity.ai.goal.AvoidE
 
 let $ReiMachineRecipes = Java.loadClass("aztech.modern_industrialization.compat.rei.machines.ReiMachineRecipes")
 let $FluidType = Java.loadClass("net.neoforged.neoforge.fluids.FluidType")
+
+let $ClaimedChunkEvent = Java.loadClass("dev.ftb.mods.ftbchunks.api.event.ClaimedChunkEvent")
+let $ClaimedChunkEventBefore = Java.loadClass("dev.ftb.mods.ftbchunks.api.event.ClaimedChunkEvent$Before")
+let $ClaimResult = Java.loadClass("dev.ftb.mods.ftbchunks.api.ClaimResult")
+let $CompoundEventResult = Java.loadClass("dev.architectury.event.CompoundEventResult")

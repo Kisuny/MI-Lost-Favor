@@ -6,6 +6,16 @@ global.miImpetusMaterials = [
 
 ItemEvents.modification(event => {
 
+    event.modify([
+        'usefulslime:slime_sling',
+        'usefulslime:slime_helmet',
+        'usefulslime:slime_chestplate',
+        'usefulslime:slime_leggings',
+        'usefulslime:slime_boots',
+    ], item => {
+        item.setUnbreakable()
+    })
+
     global.miImpetusMaterials.forEach(material => {
         event.modify(`modern_industrialization:${material}_impetus`, item => {
             item.setMaxStackSize(1)

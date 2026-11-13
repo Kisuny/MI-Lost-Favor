@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },
-            { "item": "hexerei:dowsing_rod" },
+            { "item": "spectrum:vegetal_block" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },

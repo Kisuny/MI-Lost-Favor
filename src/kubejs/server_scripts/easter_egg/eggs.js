@@ -30,7 +30,7 @@ BlockEvents.rightClicked(['milf:kisuny_plush', 'milf:saeta_plush'], event => {
 
 BlockEvents.rightClicked("immersiveengineering:concrete", event => {
     if (event.getHand() == "OFF_HAND") return
-    if (!event.player.mainHandItem.is(Item.of("modern_industrialization:steel_rod"))) return
+    if (event.player.mainHandItem.id !== "modern_industrialization:steel_rod") return
     let {level, block} = event
     let item = event.player.mainHandItem
     item.count--

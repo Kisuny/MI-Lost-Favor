@@ -4,7 +4,7 @@ Object.entries(global.electromagnetRecipes).forEach(([inputId, recipeData]) => {
 
     BlockEvents.rightClicked("immersiveengineering:electromagnet", event => {
         if (event.getHand() == "OFF_HAND") return
-        if (!event.player.mainHandItem.is(Item.of(inputId))) return
+        if (event.player.mainHandItem.id !== inputId) return
         let { level, block, player } = event
 
         let blockEntity = block.entity

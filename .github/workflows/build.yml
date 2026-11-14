@@ -107,11 +107,25 @@ jobs:
           body_path: dist/changes.md
 
       - name: Upload to CurseForge
+        id: curseforge
         if: github.ref_type == 'tag'
         env:
           CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          VERSION: ${{ steps.version.outputs.version }}
         run: |
+          RELEASE_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"
           python3 scripts/build/upload_curseforge.py \
-            --version "${{ steps.version.outputs.version }}" \
-            --changelog-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/${GITHUB_REF_NAME}" \
-            --server-pack-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/download/${GITHUB_REF_NAME}/MI-Lost-Favor-${{ steps.version.outputs.version }}-serverpack.zip"
+            --version "$VERSION" \
+            --changelog-url "${RELEASE_URL}/tag/${GITHUB_REF_NAME}" \
+            --server-pack-url "${RELEASE_URL}/download/${GITHUB_REF_NAME}/MI-Lost-Favor-${VERSION}-serverpack.zip"
+
+      - name: Mark release for Discord announcement
+        if: github.ref_type == 'tag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FILE_ID: ${{ steps.curseforge.outputs.file_id }}
+        run: |
+          BODY="$RUNNER_TEMP/release-body.md"
+          gh release view "$GITHUB_REF_NAME" --json body -q .body > "$BODY"
+          printf '\n\n<!-- curseforge-file: %s, discord: pending -->\n' "$FILE_ID" >> "$BODY"
+          gh release edit "$GITHUB_REF_NAME" --notes-file "$BODY"

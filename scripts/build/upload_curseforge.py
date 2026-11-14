@@ -105,11 +105,15 @@ def upload(path, metadata):
     return file_id
 
 
-upload(client_zip, {
+file_id = upload(client_zip, {
     "displayName": f"{pakku_config['name']} {args.version}",
     "changelog": changelog,
     "changelogType": "markdown",
     "gameVersions": game_version_ids(),
     "releaseType": args.release_type,
 })
+github_output = os.environ.get("GITHUB_OUTPUT")
+if github_output:
+    with open(github_output, "a", encoding="utf-8") as output:
+        output.write(f"file_id={file_id}\n")
 print("\nDone")

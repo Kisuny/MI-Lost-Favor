@@ -1,0 +1,65 @@
+name: Announce release
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: announce-release
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Find pending release
+        id: release
+        run: |
+          gh release view --json tagName,name,body > "$RUNNER_TEMP/release.json"
+          TAG=$(jq -r .tagName "$RUNNER_TEMP/release.json")
+          FILE_ID=$(jq -r .body "$RUNNER_TEMP/release.json" | grep -oP '<!-- curseforge-file: \K[0-9]+(?=, discord: pending -->)' || true)
+          echo "Latest release: $TAG, pending CurseForge file: ${FILE_ID:-none}"
+          {
+            echo "tag=$TAG"
+            echo "version=$(jq -r .name "$RUNNER_TEMP/release.json")"
+            echo "file_id=$FILE_ID"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Checkout
+        if: steps.release.outputs.file_id != ''
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/build
+
+      - name: Announce if approved
+        id: announce
+        if: steps.release.outputs.file_id != ''
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TAG: ${{ steps.release.outputs.tag }}
+          VERSION: ${{ steps.release.outputs.version }}
+          FILE_ID: ${{ steps.release.outputs.file_id }}
+        run: |
+          RELEASE_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"
+          python3 scripts/build/notify_discord.py --require-approved \
+            --version "$VERSION" \
+            --file-id "$FILE_ID" \
+            --changelog-url "${RELEASE_URL}/tag/${TAG}" \
+            --server-pack-url "${RELEASE_URL}/download/${TAG}/MI-Lost-Favor-${VERSION}-serverpack.zip"
+
+      - name: Mark release as announced
+        if: steps.announce.outputs.sent == 'true'
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          BODY="$RUNNER_TEMP/release-body.md"
+          gh release view "$TAG" --json body -q .body | sed 's/, discord: pending -->/, discord: sent -->/' > "$BODY"
+          gh release edit "$TAG" --notes-file "$BODY"

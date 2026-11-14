@@ -172,7 +172,7 @@ subprocess.run(
 )
 
 DIST.mkdir(exist_ok=True)
-outputs = [(client_zip, f"MI-Lost-Favor-{modpack_version}-curseforge.zip")]
+outputs = [(client_zip, f"MI-Lost-Favor-{modpack_version}.zip")]
 if server_zip:
     outputs.append((server_zip, f"MI-Lost-Favor-{modpack_version}-serverpack.zip"))
 print()

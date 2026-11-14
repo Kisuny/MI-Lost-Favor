@@ -105,3 +105,12 @@ jobs:
           name: ${{ steps.version.outputs.version }}
           files: dist/*.zip
           body_path: dist/changes.md
+
+      - name: Upload to CurseForge
+        if: github.ref_type == 'tag'
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+        run: |
+          python3 scripts/build/upload_curseforge.py \
+            --version "${{ steps.version.outputs.version }}" \
+            --changelog-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/${GITHUB_REF_NAME}"

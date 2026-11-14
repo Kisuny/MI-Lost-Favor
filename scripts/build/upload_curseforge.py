@@ -30,6 +30,7 @@ parser.add_argument("--version", default=pakku_config["version"], help="pack ver
 parser.add_argument("--release-type", default=SETTINGS.get("curseforge_release_type", "release"), choices=["release", "beta", "alpha"])
 parser.add_argument("--changelog", default=str(DIST / "changes.md"), help="markdown changelog file")
 parser.add_argument("--changelog-url", help="link to the release page, used as the changelog instead of the file")
+parser.add_argument("--server-pack-url", help="link to the server pack download, added to the description")
 parser.add_argument("--dry-run", action="store_true", help="print what would be uploaded without uploading")
 args = parser.parse_args()
 
@@ -41,10 +42,8 @@ if not token and not args.dry_run:
     fail("the CURSEFORGE_TOKEN environment variable is not set")
 
 client_zip = DIST / f"MI-Lost-Favor-{args.version}.zip"
-server_zip = DIST / f"MI-Lost-Favor-{args.version}-serverpack.zip"
-for path in (client_zip, server_zip):
-    if not path.exists():
-        fail(f"{path} not found, build the pack first")
+if not client_zip.exists():
+    fail(f"{client_zip} not found, build the pack first")
 
 changelog_path = Path(args.changelog)
 if args.changelog_url:
@@ -53,6 +52,8 @@ elif changelog_path.exists():
     changelog = changelog_path.read_text(encoding="utf-8")
 else:
     changelog = f"{pakku_config['name']} {args.version}"
+if args.server_pack_url:
+    changelog += f"\n\nServer pack: [{args.server_pack_url}]({args.server_pack_url})"
 
 
 def api_get(path):
@@ -85,8 +86,9 @@ def upload(path, metadata):
         return 0
     result = subprocess.run(
         [
-            "curl", "--silent", "--show-error", "--fail-with-body",
-            "--retry", "3", "--retry-all-errors", "--max-time", "3600",
+            "curl", "--silent", "--show-error",
+            "--retry", "3", "--max-time", "3600",
+            "--write-out", "\n%{http_code}",
             "-H", f"X-Api-Token: {token}",
             "-F", f"metadata={json.dumps(metadata, ensure_ascii=False)};type=application/json",
             "-F", f"file=@{path}",
@@ -95,26 +97,19 @@ def upload(path, metadata):
         capture_output=True,
         text=True,
     )
-    if result.returncode != 0:
-        fail(f"upload of {path.name} failed: {result.stdout.strip()} {result.stderr.strip()}")
-    file_id = json.loads(result.stdout)["id"]
+    body, _, status = result.stdout.rpartition("\n")
+    if result.returncode != 0 or not status.startswith("2"):
+        fail(f"upload of {path.name} failed (HTTP {status or '-'}): {body.strip()} {result.stderr.strip()}")
+    file_id = json.loads(body)["id"]
     print(f"Uploaded, file id {file_id}")
     return file_id
 
 
-name = pakku_config["name"]
-client_id = upload(client_zip, {
-    "displayName": f"{name} {args.version}",
+upload(client_zip, {
+    "displayName": f"{pakku_config['name']} {args.version}",
     "changelog": changelog,
     "changelogType": "markdown",
     "gameVersions": game_version_ids(),
-    "releaseType": args.release_type,
-})
-upload(server_zip, {
-    "displayName": f"{name} {args.version} Server Pack",
-    "changelog": changelog,
-    "changelogType": "markdown",
-    "parentFileID": client_id,
     "releaseType": args.release_type,
 })
 print("\nDone")

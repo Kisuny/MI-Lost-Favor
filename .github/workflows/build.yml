@@ -113,4 +113,5 @@ jobs:
         run: |
           python3 scripts/build/upload_curseforge.py \
             --version "${{ steps.version.outputs.version }}" \
-            --changelog-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/${GITHUB_REF_NAME}"
+            --changelog-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/${GITHUB_REF_NAME}" \
+            --server-pack-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/download/${GITHUB_REF_NAME}/MI-Lost-Favor-${{ steps.version.outputs.version }}-serverpack.zip"

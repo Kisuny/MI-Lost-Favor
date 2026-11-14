@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             { "item": "hexerei:belladonna_flowers" },
             { "item": "hexerei:yellow_dock_flowers" },
             { "item": "hexerei:mugwort_flowers" },
-            { "item": "minecraft:emerald" },
+            { "item": "paganbless:essence_of_the_forest" },
         ],
         heatRequirement: "heated",
         output: "enchanted:arthana",

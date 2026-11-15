@@ -328,6 +328,23 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            ' NF',
+            ' S ',
+            ' P '
+        ],
+        key: {
+            F: { tag: "c:files" },
+            N: { item: "minecraft:iron_nugget" },
+            S: { item: "minecraft:stick" },
+            P: { item: "ytech:wooden_plate" }
+
+        },
+        outputItems: [[{ id: "minecraft:tripwire_hook" }, 1]],
+        removeRecipe: true
+    })
+
     yTechShapeless(event, {
         outputItems: [[{ "id": "ytech:bronze_shovel" }, 1]],
         inputItems: [

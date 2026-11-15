@@ -120,6 +120,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "immersiveengineering:component_iron" }, 2]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff:true
     })
 
     ieBlueprintRecipe(event, {

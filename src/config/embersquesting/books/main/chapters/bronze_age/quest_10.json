@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "x": 30,
+  "y": 15.5,
+  "deps": {
+    "all": [
+      "bronze_age/steel_packer"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "immersiveengineering:component_iron",
+      "type": "item"
+    },
+    {
+      "item": "milf:bronze_mechanical_component",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "item": "milf:bronze_mechanical_component",
+      "count": 2,
+      "type": "item"
+    },
+    {
+      "item": "immersiveengineering:component_iron",
+      "count": 2,
+      "type": "item"
+    }
+  ],
+  "shape": "heart"
+}

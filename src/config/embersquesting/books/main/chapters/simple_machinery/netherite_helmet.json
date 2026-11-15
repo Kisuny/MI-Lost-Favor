@@ -1,14 +1,17 @@
 {
   "title": "<lang key=item.minecraft.netherite_helmet>",
   "icon": "minecraft:netherite_helmet",
-  "x": 13,
-  "y": 28,
+  "x": 8,
+  "y": 2,
   "deps": {
     "all": [
       "simple_machinery/quest_3_2",
       "bronze_age/diamond_helmet"
     ]
   },
+  "aliases": [
+    "bronze_age/netherite_helmet"
+  ],
   "tasks": [
     {
       "item": "minecraft:netherite_helmet",

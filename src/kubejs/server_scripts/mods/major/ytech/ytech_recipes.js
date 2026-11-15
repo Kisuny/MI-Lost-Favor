@@ -680,6 +680,7 @@ milfDisableRecipesById([
     "ytech:primitive_smelter",
     "ytech:unlit_torch",
     "ytech:unfired_brick",
-    "ytech:torch"
+    "ytech:torch",
+    "ytech:soul_torch"
     
 ])

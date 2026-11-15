@@ -468,7 +468,7 @@ ServerEvents.recipes(event => {
             'bSb'
         ],
         key: {
-            B: { item: "sophisticatedstorage:upgrade_base" },
+            B: { item: "ytech:wooden_plate" },
             b: { item: "ytech:wooden_bolt" },
             S: { item: "minecraft:stick" },
         },
@@ -483,7 +483,7 @@ ServerEvents.recipes(event => {
             'bSb'
         ],
         key: {
-            B: { item: "sophisticatedstorage:upgrade_base" },
+            B: { item: "ytech:wooden_plate" },
             b: { item: "ytech:wooden_bolt" },
             S: { item: "minecraft:stick" },
         },
@@ -498,7 +498,7 @@ ServerEvents.recipes(event => {
             'bSb'
         ],
         key: {
-            B: { item: "sophisticatedstorage:upgrade_base" },
+            B: { item: "ytech:wooden_plate" },
             b: { item: "ytech:wooden_bolt" },
             S: { item: "minecraft:stick" },
         },

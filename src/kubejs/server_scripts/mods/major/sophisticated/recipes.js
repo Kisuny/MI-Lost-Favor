@@ -21,6 +21,9 @@ ServerEvents.recipes(event => {
 
     event.remove({id:/sophisticatedstorage:generic*/})
 
+    event.remove({ type: "sophisticatedstorage:shulker_box_from_vanilla_shapeless" })
+
+
     //#region storage
 
     ieBlueprintRecipe(event, {

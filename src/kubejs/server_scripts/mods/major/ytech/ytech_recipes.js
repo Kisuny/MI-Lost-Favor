@@ -520,6 +520,88 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            "S#",
+            "  "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { tag: "minecraft:axes" }
+        },
+        outputItems: [[{ id: "ytech:wooden_plate" }, 1]],
+        removeRecipe: true,
+        compatOff:true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S#",
+            "  "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:lead_saw" }
+        },
+        outputItems: [[{ id: "ytech:wooden_plate" }, 2]],
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S#",
+            "  "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:bronze_saw" }
+        },
+        outputItems: [[{ id: "ytech:wooden_plate" }, 3]],
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { tag: "minecraft:axes" }
+        },
+        outputItems: [[{ id: "minecraft:stick" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:lead_saw" }
+        },
+        outputItems: [[{ id: "minecraft:stick" }, 2]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:bronze_saw" }
+        },
+        outputItems: [[{ id: "minecraft:stick" }, 3]],
+        compatOff: true
+    })
+
+
     milfShaped(event, {
         pattern: [
             "F ",

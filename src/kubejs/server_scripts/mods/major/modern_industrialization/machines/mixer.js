@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"minecraft:clay_ball"}, 3],
             [{item:"modern_industrialization:fire_clay_dust"}, 3],
-            [{item:"modern_industrialization:bauxite_dust"}, 1],
+            [{ item:"embers:caminite_blend"}, 1],
             [{item:"modern_industrialization:iron_dust"}, 1]
         ],
         outputItems:[

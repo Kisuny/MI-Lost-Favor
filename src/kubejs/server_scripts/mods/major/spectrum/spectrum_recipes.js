@@ -133,28 +133,53 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "components": { "immersiveengineering:blueprint": `${dyesOfTheOccult}` }, "id": "immersiveengineering:blueprint" }, 1]]
     })
 
-    function blueprint_recipe(inputs, output, blueprint) {
-        ieBlueprintRecipe(event, {
-            inputItems: inputs,
-            outputItems: [[output]],
-            category: blueprint
-        })
-    }
-
-    const pedestalBasicCraft = (output, gem) => {
-        blueprint_recipe(
-            [
-                [{ "tag": "immersiveengineering:treated_wood" }, 8],
-                [{ "item": "minecraft:polished_diorite" }, 4],
-                [{ "item": "milf:table_core" }, 1],
-                [{ "item": gem }, 12]
+    Object.entries({
+        "spectrum:topaz_shard":"spectrum:pedestal_basic_topaz",
+        "minecraft:amethyst_shard": "spectrum:pedestal_basic_amethyst",
+        "spectrum:citrine_shard": "spectrum:pedestal_basic_citrine"
+    }).forEach(([gemId, pedestalId])=> {
+        milfShaped(event, {
+            pattern: [
+                "DGD",
+                "GCG",
+                "SPS"
             ],
-            { "item": output }, dyesOfTheOccult
-        );
-    }
-    pedestalBasicCraft('spectrum:pedestal_basic_topaz', 'spectrum:topaz_shard')
-    pedestalBasicCraft('spectrum:pedestal_basic_amethyst', 'minecraft:amethyst_shard')
-    pedestalBasicCraft('spectrum:pedestal_basic_citrine', 'spectrum:citrine_shard')
+            key: {
+                P: { item: "hexerei:witch_hazel_planks" },
+                S: { item: "hexerei:witch_hazel_slab" },
+                C: { item: "milf:table_core" },
+                G: { item: gemId },
+                D: { item: "minecraft:polished_diorite" },
+
+            },
+            outputItems: [[{ id: pedestalId }, 1]]
+        })
+    })
+
+
+
+    // function blueprint_recipe(inputs, output, blueprint) {
+    //     ieBlueprintRecipe(event, {
+    //         inputItems: inputs,
+    //         outputItems: [[output]],
+    //         category: blueprint
+    //     })
+    // }
+
+    // const pedestalBasicCraft = (output, gem) => {
+    //     blueprint_recipe(
+    //         [
+    //             [{ "tag": "immersiveengineering:treated_wood" }, 8],
+    //             [{ "item": "minecraft:polished_diorite" }, 4],
+    //             [{ "item": "milf:table_core" }, 1],
+    //             [{ "item": gem }, 12]
+    //         ],
+    //         { "item": output }, dyesOfTheOccult
+    //     );
+    // }
+    // pedestalBasicCraft('spectrum:pedestal_basic_topaz', 'spectrum:topaz_shard')
+    // pedestalBasicCraft('spectrum:pedestal_basic_amethyst', 'minecraft:amethyst_shard')
+    // pedestalBasicCraft('spectrum:pedestal_basic_citrine', 'spectrum:citrine_shard')
 
     // https://github.com/DaFuqs/Spectrum/blob/656a75a5a2a76fa259c1e2596901f06c27717b44/src/main/java/de/dafuqs/spectrum/registries/SpectrumPastelUpgradeSignatures.java
     // spectrum:raw_malachite -> malum:earthen_spirit

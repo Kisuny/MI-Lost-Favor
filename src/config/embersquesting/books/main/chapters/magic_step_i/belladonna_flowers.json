@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_i.belladonna_flowers.desc>"
   ],
   "icon": "hexerei:belladonna_flowers",
-  "x": 3.5,
-  "y": 54.5,
+  "x": 10.5,
+  "y": 48,
   "deps": {
     "all": [
       "magic_step_i/book_of_shadows"
@@ -21,9 +21,9 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "hexerei:belladonna_plant",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "complete": {

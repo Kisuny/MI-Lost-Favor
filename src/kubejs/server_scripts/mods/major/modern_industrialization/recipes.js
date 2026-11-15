@@ -1515,6 +1515,22 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "modern_industrialization:steel_rod" },
+            P: { item: "modern_industrialization:steel_plate" },
+            I: { item: "immersiveengineering:basic_engineering" },
+            M: { item: "milf:basic_motor" }
+        },
+        outputItems: [[{ id: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" }, 1]],
+        removeRecipe: true
+    })
+
     //#endregion
 
     //#endregion

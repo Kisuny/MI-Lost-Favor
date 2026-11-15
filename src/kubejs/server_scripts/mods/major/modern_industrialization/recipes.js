@@ -257,7 +257,7 @@ function miForgeHammerRecipe(event, args){
     let recipe = {
         type: "modern_industrialization:forge_hammer",
         ingredient: Object.assign({}, args.inputItems[0][0], { count: 1 }),
-        result: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
         damage: args.damage || 20
     }
     if (!args.compatOff) {
@@ -334,6 +334,8 @@ ServerEvents.recipes(event => {
                 "extended_industrialization:silver_curved_plate",
             ]
         },
+
+
     }).forEach(([input, data]) => {
         let {outputs} = data
 
@@ -358,6 +360,15 @@ ServerEvents.recipes(event => {
             [{ id: "modern_industrialization:lead_double_ingot" }],
         ],
         count:2
+    })
+
+    miForgeHammerRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_double_ingot" }],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:lead_plate" }, 2],
+        ]
     })
 
     //#endregion

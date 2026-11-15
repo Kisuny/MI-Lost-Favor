@@ -13,9 +13,9 @@
   },
   "tasks": [
     {
+      "optional": true,
       "item": "minecraft:anvil",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
       "icon": "minecraft:anvil",
@@ -34,6 +34,14 @@
       "id": "milf:stage/iron_anvil",
       "label": "New Stuff (‾◡◝)",
       "icon": "minecraft:iron_pickaxe",
+      "type": "custom",
+      "auto": "claim"
+    },
+    {
+      "team_reward": true,
+      "title": "New gems in chests",
+      "id": "milf:stage/bronze_plate",
+      "icon": "minecraft:amethyst_shard",
       "type": "custom",
       "auto": "claim"
     }

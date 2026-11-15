@@ -16,9 +16,9 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "modern_industrialization:bronze_ingot",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "rewards": [
@@ -37,13 +37,6 @@
       "title": "Belt Trinket slot",
       "id": "milf:trinket/belt_bronze_plate",
       "type": "custom"
-    },
-    {
-      "title": "New gems in chests",
-      "id": "milf:stage/bronze_plate",
-      "icon": "minecraft:amethyst_shard",
-      "type": "custom",
-      "auto": "claim"
     }
   ],
   "shape": "circle"

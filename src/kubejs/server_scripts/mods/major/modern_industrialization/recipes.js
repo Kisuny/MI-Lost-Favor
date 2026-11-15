@@ -317,6 +317,23 @@ ServerEvents.recipes(event => {
                 "modern_industrialization:silver_dust"
             ]
         },
+
+        "modern_industrialization:dawnstone_rod": {
+            outputs: [
+                "modern_industrialization:dawnstone_ring"
+            ]
+        },
+
+        "modern_industrialization:dawnstone_plate": {
+            outputs: [
+                "modern_industrialization:dawnstone_curved_plate",
+            ]
+        },
+        "modern_industrialization:silver_plate": {
+            outputs: [
+                "extended_industrialization:silver_curved_plate",
+            ]
+        },
     }).forEach(([input, data]) => {
         let {outputs} = data
 

@@ -494,7 +494,7 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    milfShaped(event, {
+    yTechShaped(event, {
         pattern: [
             "F ",
             "S "
@@ -507,7 +507,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    milfShaped(event, {
+    yTechShaped(event, {
         pattern: [
             "F ",
             "S "
@@ -533,7 +533,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    milfShaped(event, {
+    yTechShaped(event, {
         pattern: [
             "F ",
             "SR"

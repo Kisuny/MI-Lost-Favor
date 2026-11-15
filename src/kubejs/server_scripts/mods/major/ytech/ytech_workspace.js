@@ -287,39 +287,39 @@ ServerEvents.recipes(event => {
 
     let builders = [ ]
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:large_steam_boiler")
-            .top(plane => plane.corners("c").plus("C").center("a"))
-            .middle(plane => plane.corners("c").sides("C").center("f"))
-            .bottom(plane => plane.corners("c").plus("P"))
-            .setKey({
-                c: { item: "modern_industrialization:bronze_curved_plate" },
-                P: { item: "modern_industrialization:fire_clay_bricks" },
-                f: { item: "modern_industrialization:bronze_boiler" },
-                C: { item: "modern_industrialization:bronze_plated_bricks" },
-                a: { item: "modern_industrialization:analog_circuit" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("modern_industrialization:large_steam_boiler")
+    //         .top(plane => plane.corners("c").plus("C").center("a"))
+    //         .middle(plane => plane.corners("c").sides("C").center("f"))
+    //         .bottom(plane => plane.corners("c").plus("P"))
+    //         .setKey({
+    //             c: { item: "modern_industrialization:bronze_curved_plate" },
+    //             P: { item: "modern_industrialization:fire_clay_bricks" },
+    //             f: { item: "modern_industrialization:bronze_boiler" },
+    //             C: { item: "modern_industrialization:bronze_plated_bricks" },
+    //             a: { item: "modern_industrialization:analog_circuit" }
+    //         })
+    //         .setArgs({
+    //             tool: wrench,
+    //         })
+    // )
 
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:steam_farmer")
-            .top(plane => plane.corners("c").plus("C").center("a"))
-            .middle(plane => plane.corners("c").sides("C").center("f"))
-            .bottom(plane => plane.corners("c").plus("P"))
-            .setKey({
-                c: { item: "modern_industrialization:bronze_curved_plate" },
-                P: { item: "modern_industrialization:bronze_plated_bricks" },
-                f: { item: "extended_industrialization:steel_combine" },
-                C: { item: "modern_industrialization:bronze_machine_casing_pipe" },
-                a: { item: "modern_industrialization:analog_circuit" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
+    // builders.push(
+    //     new WorkspaceRecipeBuilder("extended_industrialization:steam_farmer")
+    //         .top(plane => plane.corners("c").plus("C").center("a"))
+    //         .middle(plane => plane.corners("c").sides("C").center("f"))
+    //         .bottom(plane => plane.corners("c").plus("P"))
+    //         .setKey({
+    //             c: { item: "modern_industrialization:bronze_curved_plate" },
+    //             P: { item: "modern_industrialization:bronze_plated_bricks" },
+    //             f: { item: "extended_industrialization:steel_combine" },
+    //             C: { item: "modern_industrialization:bronze_machine_casing_pipe" },
+    //             a: { item: "modern_industrialization:analog_circuit" }
+    //         })
+    //         .setArgs({
+    //             tool: wrench,
+    //         })
+    // )
 
     //#endregion
 

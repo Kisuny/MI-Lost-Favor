@@ -1483,6 +1483,38 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "BMB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "modern_industrialization:bronze_machine_casing_pipe" },
+            P: { item: "modern_industrialization:analog_circuit" },
+            I: { item: "modern_industrialization:steel_boiler" },
+            M: { item: "modern_industrialization:fire_clay_bricks" }
+        },
+        outputItems: [[{ id: "modern_industrialization:large_steam_boiler" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BMB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "modern_industrialization:bronze_machine_casing_pipe" },
+            P: { item: "modern_industrialization:analog_circuit" },
+            I: { item: "extended_industrialization:steel_combine" },
+            M: { item: "modern_industrialization:fire_clay_bricks" }
+        },
+        outputItems: [[{ id: "extended_industrialization:steam_farmer" }, 1]],
+        removeRecipe: true
+    })
+
     //#endregion
 
     //#endregion

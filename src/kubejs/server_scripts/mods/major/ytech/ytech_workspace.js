@@ -509,8 +509,8 @@ ServerEvents.recipes(event => {
             .middle(plane => plane.corners("I").plus("P"))
             .bottom(plane => plane.corners("I").plus("P"))
             .setKey({
-                D: { item: "modern_industrialization:iron_double_ingot" },
-                I: { item: "minecraft:iron_block" },
+                D: { item: "minecraft:iron_nugget" },
+                I: { item: "minecraft:deepslate" },
                 P: { tag: "minecraft:planks" }
             })
             .setArgs({

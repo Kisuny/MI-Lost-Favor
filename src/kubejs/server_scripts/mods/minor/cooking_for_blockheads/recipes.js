@@ -44,5 +44,24 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            "SL ",
+            "NBE",
+            "SL "
+        ],
+        key: {
+            B: { item: "cookingforblockheads:recipe_book" },
+            L: { item: "minecraft:leather" },
+            S: { item: "ytech:leather_strips" },
+            E: { item: "paganbless:essence_of_the_forest" },
+            N: { tag: "ytech:bone_needles" },
+        },
+        outputItems: [[{ id: "cookingforblockheads:crafting_book" }, 1]],
+        removeRecipe: true,
+        compatOff:true
+    })
+
+
 
 })

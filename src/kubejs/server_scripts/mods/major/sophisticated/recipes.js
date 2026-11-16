@@ -21,6 +21,9 @@ ServerEvents.recipes(event => {
 
     event.remove({id:/sophisticatedstorage:generic*/})
 
+    event.remove({ type: "sophisticatedstorage:shulker_box_from_vanilla_shapeless" })
+
+
     //#region storage
 
     ieBlueprintRecipe(event, {
@@ -465,7 +468,7 @@ ServerEvents.recipes(event => {
             'bSb'
         ],
         key: {
-            B: { item: "sophisticatedstorage:upgrade_base" },
+            B: { item: "ytech:wooden_plate" },
             b: { item: "ytech:wooden_bolt" },
             S: { item: "minecraft:stick" },
         },
@@ -480,7 +483,7 @@ ServerEvents.recipes(event => {
             'bSb'
         ],
         key: {
-            B: { item: "sophisticatedstorage:upgrade_base" },
+            B: { item: "ytech:wooden_plate" },
             b: { item: "ytech:wooden_bolt" },
             S: { item: "minecraft:stick" },
         },
@@ -495,7 +498,7 @@ ServerEvents.recipes(event => {
             'bSb'
         ],
         key: {
-            B: { item: "sophisticatedstorage:upgrade_base" },
+            B: { item: "ytech:wooden_plate" },
             b: { item: "ytech:wooden_bolt" },
             S: { item: "minecraft:stick" },
         },

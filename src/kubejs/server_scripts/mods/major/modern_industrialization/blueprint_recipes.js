@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "milf:bronze_mechanical_component" }, 1]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff:true
     })
 
     ieBlueprintRecipe(event, {

@@ -49,28 +49,6 @@ ServerEvents.recipes(event => {
 
     ieShapedFluid(event, {
         pattern: [
-            "WQW",
-            "rCr",
-            "SRS"
-        ],
-        key: {
-            C: { item: "modern_industrialization:analog_circuit" },
-            Q: { tag: "c:gems/quartz" },
-            W: { item: "modern_industrialization:electrum_wire" },
-            r: { item: "modern_industrialization:rubber_sheet" },
-            S: { tag: "immersiveengineering:treated_wood_slab" },
-            R: {
-                type: "immersiveengineering:fluid_stack",
-                amount: 1000,
-                fluid: "modern_industrialization:molten_redstone"
-            }
-        },
-        outputItems: [[{ id: "immersiveengineering:component_electronic" }, 1]],
-        removeRecipe: true
-    })
-
-    ieShapedFluid(event, {
-        pattern: [
             "W W",
             "nri",
             "WBW"
@@ -171,6 +149,24 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region milfShaped
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "rCr",
+            "SRS"
+        ],
+        key: {
+            C: { item: "modern_industrialization:analog_circuit" },
+            Q: { tag: "c:gems/quartz" },
+            W: { item: "modern_industrialization:electrum_wire" },
+            r: { item: "modern_industrialization:rubber_sheet" },
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            R: {item: "modern_industrialization:redstone_crushed_dust"}
+        },
+        outputItems: [[{ id: "immersiveengineering:component_electronic" }, 1]],
+        removeRecipe: true
+    })
 
     milfShaped(event, {
         pattern: [

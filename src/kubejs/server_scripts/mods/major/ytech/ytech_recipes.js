@@ -328,6 +328,23 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            ' NF',
+            ' S ',
+            ' P '
+        ],
+        key: {
+            F: { tag: "c:files" },
+            N: { item: "minecraft:iron_nugget" },
+            S: { item: "minecraft:stick" },
+            P: { item: "ytech:wooden_plate" }
+
+        },
+        outputItems: [[{ id: "minecraft:tripwire_hook" }, 1]],
+        removeRecipe: true
+    })
+
     yTechShapeless(event, {
         outputItems: [[{ "id": "ytech:bronze_shovel" }, 1]],
         inputItems: [
@@ -477,7 +494,7 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
-    milfShaped(event, {
+    yTechShaped(event, {
         pattern: [
             "F ",
             "S "
@@ -490,7 +507,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    milfShaped(event, {
+    yTechShaped(event, {
         pattern: [
             "F ",
             "S "
@@ -502,6 +519,88 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:lion_man" }, 1]],
         removeRecipe:true
     })
+
+    yTechShaped(event, {
+        pattern: [
+            "S#",
+            "  "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { tag: "minecraft:axes" }
+        },
+        outputItems: [[{ id: "ytech:wooden_plate" }, 1]],
+        removeRecipe: true,
+        compatOff:true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S#",
+            "  "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:lead_saw" }
+        },
+        outputItems: [[{ id: "ytech:wooden_plate" }, 2]],
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S#",
+            "  "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:bronze_saw" }
+        },
+        outputItems: [[{ id: "ytech:wooden_plate" }, 3]],
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { tag: "minecraft:axes" }
+        },
+        outputItems: [[{ id: "minecraft:stick" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:lead_saw" }
+        },
+        outputItems: [[{ id: "minecraft:stick" }, 2]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "minecraft:wooden_slabs" },
+            "#": { item: "ytech:bronze_saw" }
+        },
+        outputItems: [[{ id: "minecraft:stick" }, 3]],
+        compatOff: true
+    })
+
 
     milfShaped(event, {
         pattern: [
@@ -516,7 +615,7 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
-    milfShaped(event, {
+    yTechShaped(event, {
         pattern: [
             "F ",
             "SR"
@@ -663,6 +762,7 @@ milfDisableRecipesById([
     "ytech:primitive_smelter",
     "ytech:unlit_torch",
     "ytech:unfired_brick",
-    "ytech:torch"
+    "ytech:torch",
+    "ytech:soul_torch"
     
 ])

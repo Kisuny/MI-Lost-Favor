@@ -65,7 +65,8 @@ ServerEvents.recipes(event => {
         inputItems: [[{ tag: "minecraft:wooden_slabs" }]],
         outputItems: [[{ id: "minecraft:stick" }, 2]],
         tool: { tag: "minecraft:axes" },
-        removeRecipe: true
+        removeRecipe: true,
+        compatOff:true
     })
 
     ytechChoppingCraft(event,{

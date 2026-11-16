@@ -287,60 +287,9 @@ ServerEvents.recipes(event => {
 
     let builders = [ ]
 
-    builders.push(
-        new WorkspaceRecipeBuilder("modern_industrialization:large_steam_boiler")
-            .top(plane => plane.corners("c").plus("C").center("a"))
-            .middle(plane => plane.corners("c").sides("C").center("f"))
-            .bottom(plane => plane.corners("c").plus("P"))
-            .setKey({
-                c: { item: "modern_industrialization:bronze_curved_plate" },
-                P: { item: "modern_industrialization:fire_clay_bricks" },
-                f: { item: "modern_industrialization:bronze_boiler" },
-                C: { item: "modern_industrialization:bronze_plated_bricks" },
-                a: { item: "modern_industrialization:analog_circuit" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
-
-    builders.push(
-        new WorkspaceRecipeBuilder("extended_industrialization:steam_farmer")
-            .top(plane => plane.corners("c").plus("C").center("a"))
-            .middle(plane => plane.corners("c").sides("C").center("f"))
-            .bottom(plane => plane.corners("c").plus("P"))
-            .setKey({
-                c: { item: "modern_industrialization:bronze_curved_plate" },
-                P: { item: "modern_industrialization:bronze_plated_bricks" },
-                f: { item: "extended_industrialization:steel_combine" },
-                C: { item: "modern_industrialization:bronze_machine_casing_pipe" },
-                a: { item: "modern_industrialization:analog_circuit" }
-            })
-            .setArgs({
-                tool: wrench,
-            })
-    )
-
     //#endregion
 
     //#region misc
-
-    builders.push(
-        new WorkspaceRecipeBuilder("mi_tweaks:multiblock_packer_3000_safety_regulations_edition")
-            .top(plane => plane.center("S").corners("R").sides("P"))
-            .middle(plane => plane.sides("S").corners("R").center(" ").sides("M").front(" ").back("C"))
-            .bottom(plane => plane.center("S").corners("R").sides("P"))
-            .setKey({
-                S: { tag: "immersiveengineering:treated_wood" },
-                R: { item: "modern_industrialization:steel_rod" },
-                P: { item: "modern_industrialization:steel_plate" },
-                C: { item: "immersiveengineering:component_electronic" },
-                M: { item: "milf:basic_motor" },
-            })
-            .setArgs({
-                tool: { item: "immersiveengineering:hammer" },
-            })
-    )
 
     builders.push(
         new WorkspaceRecipeBuilder("minecraft:anvil")
@@ -509,8 +458,8 @@ ServerEvents.recipes(event => {
             .middle(plane => plane.corners("I").plus("P"))
             .bottom(plane => plane.corners("I").plus("P"))
             .setKey({
-                D: { item: "modern_industrialization:iron_double_ingot" },
-                I: { item: "minecraft:iron_block" },
+                D: { item: "minecraft:iron_nugget" },
+                I: { item: "minecraft:deepslate" },
                 P: { tag: "minecraft:planks" }
             })
             .setArgs({

@@ -155,6 +155,14 @@ global.disabledItems = [
     new DisabledItemBuilder("sophisticatedbackpacks:inception_upgrade"),
     new DisabledItemBuilder("sophisticatedcore:ender_linker"),
 
+    new DisabledItemBuilder("sophisticatedstorage:tank"),
+    new DisabledItemBuilder("sophisticatedstorage:copper_tank"),
+    new DisabledItemBuilder("sophisticatedstorage:iron_tank"),
+    new DisabledItemBuilder("sophisticatedstorage:gold_tank"),
+    new DisabledItemBuilder("sophisticatedstorage:diamond_tank"),
+    new DisabledItemBuilder("sophisticatedstorage:netherite_tank"),
+
+
     //#endregion
 
     //#region Neo Vitae

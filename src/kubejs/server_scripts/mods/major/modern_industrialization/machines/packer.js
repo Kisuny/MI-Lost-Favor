@@ -178,6 +178,26 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 4, time: 400, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:iron_gear" }, 1],
+            [{ item: "milf:steel_infused_glass" }, 1],
+            [{ item: "milf:small_steel_fluid_container" }, 1]
+        ],
+        outputItems: [[{ item: "immersiveengineering:component_iron" }, 1]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 400, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:bronze_gear" }, 1],
+            [{ item: "milf:bronze_glass" }, 1],
+            [{ item: "milf:small_copper_fluid_container" }, 1]
+        ],
+        outputItems: [[{ item: "milf:bronze_mechanical_component" }, 1]]
+    })
+
+    miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [[{ item: "immersiveengineering:ersatz_leather" }, 2]],
         outputItems: [[{ item: "minecraft:leather" }]]

@@ -257,7 +257,7 @@ function miForgeHammerRecipe(event, args){
     let recipe = {
         type: "modern_industrialization:forge_hammer",
         ingredient: Object.assign({}, args.inputItems[0][0], { count: 1 }),
-        result: Object.assign({}, args.outputItems[0][0], { count: 1 }),
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
         damage: args.damage || 20
     }
     if (!args.compatOff) {
@@ -317,6 +317,25 @@ ServerEvents.recipes(event => {
                 "modern_industrialization:silver_dust"
             ]
         },
+
+        "modern_industrialization:dawnstone_rod": {
+            outputs: [
+                "modern_industrialization:dawnstone_ring"
+            ]
+        },
+
+        "modern_industrialization:dawnstone_plate": {
+            outputs: [
+                "modern_industrialization:dawnstone_curved_plate",
+            ]
+        },
+        "modern_industrialization:silver_plate": {
+            outputs: [
+                "extended_industrialization:silver_curved_plate",
+            ]
+        },
+
+
     }).forEach(([input, data]) => {
         let {outputs} = data
 
@@ -341,6 +360,15 @@ ServerEvents.recipes(event => {
             [{ id: "modern_industrialization:lead_double_ingot" }],
         ],
         count:2
+    })
+
+    miForgeHammerRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:lead_double_ingot" }],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:lead_plate" }, 2],
+        ]
     })
 
     //#endregion
@@ -1452,6 +1480,54 @@ ServerEvents.recipes(event => {
             C: { item: "immersiveengineering:component_steel" },
         },
         outputItems: [[{ id: "extended_industrialization:steel_alloy_smelter" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BMB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "modern_industrialization:bronze_machine_casing_pipe" },
+            P: { item: "modern_industrialization:analog_circuit" },
+            I: { item: "modern_industrialization:steel_boiler" },
+            M: { item: "modern_industrialization:fire_clay_bricks" }
+        },
+        outputItems: [[{ id: "modern_industrialization:large_steam_boiler" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BMB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "modern_industrialization:bronze_machine_casing_pipe" },
+            P: { item: "modern_industrialization:analog_circuit" },
+            I: { item: "extended_industrialization:steel_combine" },
+            M: { item: "modern_industrialization:fire_clay_bricks" }
+        },
+        outputItems: [[{ id: "extended_industrialization:steam_farmer" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "BPB",
+            "MIM",
+            "BPB"
+        ],
+        key: {
+            B: { item: "modern_industrialization:steel_rod" },
+            P: { item: "modern_industrialization:steel_plate" },
+            I: { item: "immersiveengineering:basic_engineering" },
+            M: { item: "milf:basic_motor" }
+        },
+        outputItems: [[{ id: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" }, 1]],
         removeRecipe: true
     })
 

@@ -47,6 +47,39 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 8, time: 200, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:aluminum_drill" }, 1],
+            [{ item: "modern_industrialization:stainless_steel_drill_head" }, 1],
+            [{ item: "modern_industrialization:electronic_circuit" }, 1],
+            [{ item: "modern_industrialization:motor" }, 1],
+            [{ item: "modern_industrialization:pump" }, 1],
+            [{ item: "milf:basic_machine_bit" }, 1],
+            [{ item: "modern_industrialization:silicon_steel_gear" }, 1],
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:stainless_steel_drill" }, 2]
+        ],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
+        energy: 8, time: 200, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:stainless_steel_drill" }, 1],
+            [{ item: "modern_industrialization:titanium_drill_head" }, 1],
+            [{ item: "modern_industrialization:digital_circuit" }, 1],
+            [{ item: "modern_industrialization:large_advanced_motor" }, 1],
+            [{ item: "modern_industrialization:large_advanced_pump" }, 1],
+            [{ item: "modern_industrialization:duratium_gear" }, 1],
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:titanium_drill" }, 1]
+        ],
+        removeRecipe: true
+    })
+
+    miMachineRecipe(event, {
         energy: 12, time: 200, machine: "modern_industrialization:assembler",
         inputItems: [
             [{ item: "modern_industrialization:aluminum_large_plate" }, 1],
@@ -358,11 +391,13 @@ ServerEvents.recipes(event => {
         energy: 18, time: 300, machine: "modern_industrialization:assembler",
         inputItems: [
             [{ "item": "modern_industrialization:digital_circuit" }, 1],
-            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 1],
+            [{ "item": "milf:basic_navigation_module" }, 8],
+            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 2],
             [{ "item": "milf:rangefinder" }, 1],
-            [{ "item": "milf:tempered_glass" }, 1],
+            [{ "item": "milf:tempered_glass" }, 8],
         ],
-        outputItems: [[{ "item": "milf:navigation_module" }, 4]],
+        outputItems: [[{ "item": "milf:navigation_module" }, 16]],
+        requiredDisk: { item: MILF_BLUEPRINTS.getDisk.tier3AE },
         removeRecipe: true
     })
 

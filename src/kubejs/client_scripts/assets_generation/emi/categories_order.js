@@ -64,6 +64,10 @@ ClientEvents.generateAssets("before_mods", event => {
         "modern_industrialization:steel_wiremill",
         "modern_industrialization:electric_wiremill",
 
+        "modern_industrialization:steam_quarry",
+        "modern_industrialization:electric_quarry",
+        "modern_industrialization:oil_drilling_rig",
+
         
         "immersiveengineering:metal_press",
 

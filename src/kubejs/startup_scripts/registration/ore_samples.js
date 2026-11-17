@@ -19,7 +19,12 @@ const samplesData = [
                 "milf:crushed_iron": 54,
                 "modern_industrialization:iron_dust": 109 * 2,
                 "modern_industrialization:iron_tiny_dust": 109 * 3
-            }
+            },
+            auxiliaryOutputs : [
+                ["minecraft:redstone_ore", 0.08],
+                ["minecraft:copper_ore", 0.2],
+                ["modern_industrialization:quartz_ore", 0.12]
+            ]
         },
         oreTier: 0
     },
@@ -38,7 +43,12 @@ const samplesData = [
                 "milf:crushed_copper": 71,
                 "modern_industrialization:copper_dust": 109,
                 "modern_industrialization:copper_tiny_dust": 109 * 2
-            }
+            },
+            auxiliaryOutputs: [
+                ["modern_industrialization:tin_ore", 0.11],
+                ["minecraft:gold_ore", 0.19],
+                ["modern_industrialization:lead_ore", 0.17]
+            ]
         },
         oreTier: 0
     },
@@ -62,7 +72,12 @@ const samplesData = [
                 "modern_industrialization:lignite_coal_crushed_dust": 71,
                 "modern_industrialization:lignite_coal_dust": 109,
                 "modern_industrialization:lignite_coal_tiny_dust": 109 * 2
-            }
+            },
+            auxiliaryOutputs: [
+                ["modern_industrialization:lignite_coal_ore", 0.19],
+                ["minecraft:iron_ore", 0.14],
+                ["minecraft:diamond_ore", 0.04]
+            ]
         },
         oreTier: 0
     },
@@ -83,7 +98,12 @@ const samplesData = [
                 "modern_industrialization:lead_tiny_dust": 109 * 2,
                 "modern_industrialization:silver_dust": 4,
                 "modern_industrialization:silver_tiny_dust": 17
-            }
+            },
+            auxiliaryOutputs: [
+                ["modern_industrialization:nickel_ore", 0.16],
+                ["minecraft:copper_ore", 0.17],
+                ["minecraft:lapis_ore", 0.07]
+            ]
         },
         oreTier: 0
     },
@@ -102,7 +122,12 @@ const samplesData = [
                 "milf:crushed_tin": 71,
                 "modern_industrialization:tin_dust": 109,
                 "modern_industrialization:tin_tiny_dust": 109 * 2
-            }
+            },
+            auxiliaryOutputs: [
+                ["modern_industrialization:lead_ore", 0.13],
+                ["minecraft:copper_ore", 0.17],
+                ["minecraft:emerald_ore", 0.04]
+            ]
         },
         oreTier: 0
     },
@@ -117,7 +142,12 @@ const samplesData = [
             deepslate: "minecraft:deepslate_redstone_ore",
             normal: "minecraft:redstone_ore",
             raw: "modern_industrialization:redstone_crushed_dust",
-            displayItem: "minecraft:redstone"
+            displayItem: "minecraft:redstone",
+            auxiliaryOutputs: [
+                ["modern_industrialization:nickel_ore", 0.15],
+                ["modern_industrialization:antimony_ore", 0.11],
+                ["modern_industrialization:bauxite_ore", 0.07]
+            ]
         },
         oreTier: 1
     },
@@ -130,8 +160,14 @@ const samplesData = [
             deepslate: "minecraft:deepslate_lapis_ore",
             normal: "minecraft:lapis_ore",
             raw: "modern_industrialization:lapis_crushed_dust",
-            displayItem: "minecraft:lapis_lazuli"
+            displayItem: "minecraft:lapis_lazuli",
+            auxiliaryOutputs: [
+                ["modern_industrialization:tin_ore", 0.17],
+                ["minecraft:diamond_ore", 0.14],
+                ["modern_industrialization:lead_ore", 0.03]
+            ],
         },
+
         oreTier: 1
     },
 
@@ -143,8 +179,14 @@ const samplesData = [
             deepslate: "minecraft:deepslate_gold_ore",
             normal: "minecraft:gold_ore",
             raw: "minecraft:raw_gold",
-            displayItem: "minecraft:raw_gold"
+            displayItem: "minecraft:raw_gold",
+            auxiliaryOutputs: [
+                ["minecraft:redstone_ore", 0.07],
+                ["minecraft:iron_ore", 0.11],
+                ["modern_industrialization:quartz_ore", 0.13]
+            ],
         },
+
         oreTier: 1
     },
 
@@ -156,8 +198,14 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_salt_ore",
             normal: "modern_industrialization:salt_ore",
             raw: "modern_industrialization:salt_crushed_dust",
-            displayItem: "modern_industrialization:salt_dust"
+            displayItem: "modern_industrialization:salt_dust",
+            auxiliaryOutputs: [
+                ["milf:reservoir_rock", 0.06],
+                ["modern_industrialization:quartz_ore", 0.16],
+                ["minecraft:iron_ore", 0.13]
+            ],
         },
+
         oreTier: 1
     },
 
@@ -168,8 +216,14 @@ const samplesData = [
         oreData: {
             normal: "modern_industrialization:quartz_ore",
             raw: "modern_industrialization:quartz_crushed_dust",
-            displayItem: "modern_industrialization:quartz_crushed_dust"
+            displayItem: "modern_industrialization:quartz_crushed_dust",
+            auxiliaryOutputs: [
+                ["minecraft:gold_ore", 0.16],
+                ["embers:raw_caminite_block", 0.03],
+                ["minecraft:copper_ore", 0.07]
+            ],
         },
+
         oreTier: 1
     },
 
@@ -184,8 +238,14 @@ const samplesData = [
             deepslate: "minecraft:deepslate_diamond_ore",
             normal: "minecraft:diamond_ore",
             raw: "modern_industrialization:diamond_crushed_dust",
-            displayItem: "minecraft:diamond"
+            displayItem: "minecraft:diamond",
+            auxiliaryOutputs: [
+                ["minecraft:coal_ore", 0.19],
+                ["modern_industrialization:lead_ore", 0.08],
+                ["modern_industrialization:bauxite_ore", 0.17]
+            ],
         },
+
         oreTier: 2
     },
 
@@ -197,8 +257,14 @@ const samplesData = [
             deepslate: "minecraft:deepslate_emerald_ore",
             normal: "minecraft:emerald_ore",
             raw: "modern_industrialization:emerald_crushed_dust",
-            displayItem: "minecraft:emerald"
+            displayItem: "minecraft:emerald",
+            auxiliaryOutputs: [
+                ["modern_industrialization:quartz_ore", 0.13],
+                ["modern_industrialization:tin_ore", 0.11],
+                ["modern_industrialization:bauxite_ore", 0.07]
+            ],
         },
+
         oreTier: 2
     },
 
@@ -210,8 +276,14 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_nickel_ore",
             normal: "modern_industrialization:nickel_ore",
             raw: "modern_industrialization:raw_nickel",
-            displayItem: "modern_industrialization:raw_nickel"
+            displayItem: "modern_industrialization:raw_nickel",
+            auxiliaryOutputs: [
+                ["modern_industrialization:antimony_ore", 0.05],
+                ["modern_industrialization:bauxite_ore", 0.13],
+                ["modern_industrialization:uranium_ore", 0.04]
+            ],
         },
+
         oreTier: 2
     },
 
@@ -222,8 +294,14 @@ const samplesData = [
         oreData: {
             normal: "minecraft:nether_quartz_ore",
             raw: "modern_industrialization:quartz_crushed_dust",
-            displayItem: "minecraft:quartz"
+            displayItem: "minecraft:quartz",
+            auxiliaryOutputs: [
+                ["minecraft:ancient_debris", 0.003],
+                ["minecraft:nether_gold_ore", 0.19],
+                ["minecraft:soul_sand", 0.04]
+            ],
         },
+
         oreTier: 2
     },
 
@@ -234,8 +312,14 @@ const samplesData = [
         oreData: {
             normal: "minecraft:nether_gold_ore",
             raw: "milf:crushed_gold",
-            displayItem: "minecraft:gold_nugget"
+            displayItem: "minecraft:gold_nugget",
+            auxiliaryOutputs: [
+                ["minecraft:ancient_debris", 0.002],
+                ["minecraft:nether_quartz_ore", 0.13],
+                ["minecraft:soul_sand", 0.18]
+            ],
         },
+
         oreTier: 2
     },
 
@@ -251,8 +335,14 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_antimony_ore",
             normal: "modern_industrialization:antimony_ore",
             raw: "modern_industrialization:raw_antimony",
-            displayItem: "modern_industrialization:raw_antimony"
+            displayItem: "modern_industrialization:raw_antimony",
+            auxiliaryOutputs: [
+                ["minecraft:gold_ore", 0.13],
+                ["modern_industrialization:bauxite_ore", 0.15],
+                ["modern_industrialization:lead_ore", 0.04]
+            ],
         },
+
         oreTier: 3
     },
 
@@ -264,8 +354,14 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_bauxite_ore",
             normal: "modern_industrialization:bauxite_ore",
             raw: "modern_industrialization:bauxite_crushed_dust",
-            displayItem: "modern_industrialization:bauxite_dust"
+            displayItem: "modern_industrialization:bauxite_dust",
+            auxiliaryOutputs: [
+                ["minecraft:iron_ore", 0.19],
+                ["modern_industrialization:quartz_ore", 0.11],
+                ["modern_industrialization:tin_ore", 0.14]
+            ],
         },
+
         oreTier: 3
     },
 
@@ -277,8 +373,14 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_uranium_ore",
             normal: "modern_industrialization:uranium_ore",
             raw: "modern_industrialization:raw_uranium",
-            displayItem: "modern_industrialization:raw_uranium"
+            displayItem: "modern_industrialization:raw_uranium",
+            auxiliaryOutputs: [
+                ["modern_industrialization:nickel_ore", 0.19],
+                ["minecraft:copper_ore", 0.2],
+                ["minecraft:iron_ore", 0.14]
+            ],
         },
+
         oreTier: 3
     },
 
@@ -290,7 +392,12 @@ const samplesData = [
         oreData: {
             normal: "minecraft:ancient_debris",
             raw: "minecraft:netherite_scrap",
-            displayItem: "minecraft:netherite_scrap"
+            displayItem: "minecraft:netherite_scrap",
+            auxiliaryOutputs: [
+                ["minecraft:nether_quartz_ore", 0.19],
+                ["minecraft:nether_quartz_ore", 0.2],
+                ["minecraft:nether_quartz_ore", 0.14]
+            ]
         },
         oreTier: 3
     },
@@ -303,8 +410,14 @@ const samplesData = [
             deepslate: "modern_industrialization:deepslate_monazite_ore",
             normal: "modern_industrialization:monazite_ore",
             raw: "modern_industrialization:monazite_crushed_dust",
-            displayItem: "modern_industrialization:monazite_dust"
+            displayItem: "modern_industrialization:monazite_dust",
+            auxiliaryOutputs: [
+                ["modern_industrialization:bauxite_ore", 0.14],
+                ["minecraft:iron_ore", 0.11],
+                ["minecraft:redstone_ore", 0.07]
+            ],
         },
+
         oreTier: 3
     },
 

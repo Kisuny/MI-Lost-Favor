@@ -1,25 +1,42 @@
+const MILESTONE_QUEST_STAGES = []
+
 Object.entries({
 
     "milf:milestone/alchemical_forge_part": {
+        quest: "magic_step_ii/alchemical_forge_part",
         stages: ["monsterplus_mobs"]
     },
     "milf:milestone/codex": {
+        quest: "magic_step_ii/codex",
         stages: ["eidolon_mobs"]
     },
     "milf:milestone/gate_pearl": {
+        quest: "when_dungeons_arise/gate_pearl",
         stages: ["mowziesmobs_mobs", "mythsandlegends_mobs"]
     },
+    "milf:milestone/world_tier_frontier": {
+        quest: "when_dungeons_arise/world_tier_frontier",
+        stages: ["cataclysm_mobs", "mob_gear_gold", "enderzoology_mobs", "rottencreatures_mobs",]
+    },
     "milf:milestone/world_tier_ascent": {
-        stages: ["cataclysm_mobs", "rottencreatures_mobs", "enderzoology_mobs"]
+        quest: "when_dungeons_arise/world_tier_ascent",
+        stages: ["grimoireofgaia_mobs", "mob_gear_iron"]
     },
     "milf:milestone/world_tier_summit": {
-        stages: ["grimoireofgaia_mobs"]
+        quest: "when_dungeons_arise/world_tier_summit",
+        stages: [ "mob_gear_diamond"]
+    },
+    "milf:milestone/world_tier_pinnacle": {
+        quest: "when_dungeons_arise/world_tier_pinnacle",
+        stages: ["mob_gear_netherite"]
     },
     "milf:milestone/steel_ingot": {
+        quest: "bronze_age/steel_ingot",
         stages: ["early_items", "blast_furnace", "mythsandlegends_mobs"]
     },
     "milf:milestone/forge_hammer": {
-        stages: ["minecraft_mobs", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs", "darkerdepths_mobs", "friendsandfoes_mobs"],
+        quest: "first_steps/forge_hammer",
+        stages: ["minecraft_mobs", "mob_gear_leather", "variants_and_ventures_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs", "legendary_monsters_mobs", "darkerdepths_mobs", "friendsandfoes_mobs"],
         defaultNotificationDelay: 10.5,
         callback: (event) => {
             let player = event.player
@@ -49,6 +66,8 @@ Object.entries({
 }).forEach(([questId, data]) => {
 
     let { stages, callback, defaultNotificationDelay } = data
+
+    if (data.quest && stages) MILESTONE_QUEST_STAGES.push({ quest: data.quest, stages: stages })
 
     EmbersQuestingEvents.customReward(questId, event => {
         if (stages) {
@@ -305,6 +324,24 @@ Object.entries({
 //         addStagesToTeamMembers(event.player, entry.stage)
 //     })
 // })
+
+PlayerEvents.loggedIn(event => {
+    let player = event.player
+    player.server.scheduleInTicks(40, _ => restoreMilestoneStages(player))
+})
+
+function restoreMilestoneStages(player) {
+    let missing = []
+    MILESTONE_QUEST_STAGES
+        .filter(entry => EmbersQuesting.isCompleted(player, entry.quest))
+        .forEach(entry => entry.stages
+            .filter(stage => !AStages.playerHasStage(player, stage) && missing.indexOf(stage) == -1)
+            .forEach(stage => missing.push(stage)))
+    if (missing.length == 0) return
+    missing.forEach(stage => AStages.addStageToPlayer(player, stage, false, false, false))
+    syncTeamStages(player)
+    console.info(`Restored milestone stages for ${player.username}: ${missing.join(", ")}`)
+}
 
 function defaultMilestoneNotification(player, stage) {
     let server = player.server

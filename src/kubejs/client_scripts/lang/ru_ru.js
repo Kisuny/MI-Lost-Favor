@@ -30,6 +30,9 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${MilfEffects.GRAD.UPGRADE("новыми рудами")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Разблокировано: иридиевая / платиновая / титановая / вольфрамовая / урановая руда')
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
+    event.add('milf.stage.mob_gear_gold', `Монстры начали ${MilfEffects.GRAD.custom("вооружаться", "#E4C549", "#FDE49A")}...`)
+    event.add('milf.stage.mob_gear_diamond', `Монстры облачились в ${MilfEffects.GRAD.custom("сверкающие доспехи", "#2FD6D0", "#B9F8F5")} - ${MilfEffects.WIGGLE("будьте готовы")}`)
+    event.add('milf.stage.mob_gear_netherite', `${MilfEffects.GLITCH("Ничто")} больше не сдерживает ${MilfEffects.GRAD.custom("чудовищ этого мира", "#5A1E1E", "#D4372A")}`)
     event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${MilfEffects.GRAD.custom("странные звуки", "#ED1A1A", "#B62651")} ночью...`)
     event.add('milf.stage.early_items', `Этот мир больше не ${MilfEffects.GLITCH("отвергает")} вас...`)
 

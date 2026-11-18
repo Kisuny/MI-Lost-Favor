@@ -36,6 +36,9 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.how_to_get_blaze_core.tooltip', 'You have a 50% chance of obtaining if you kill with the any wrench: The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'You have a 50% chance of obtaining if you kill with the wrench: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
     event.add('milf.buy_from_goblin_and_wanderer.tooltip', 'You can buy it from a <keyword>wandering trader</keyword> or a <keyword>goblin trader</keyword>')
+    event.add('milf.stage.mob_gear_gold', `Monsters have started ${MilfEffects.GRAD.custom("arming themselves", "#E4C549", "#FDE49A")}...`)
+    event.add('milf.stage.mob_gear_diamond', `Monsters now wear ${MilfEffects.GRAD.custom("gleaming armor", "#2FD6D0", "#B9F8F5")} - ${MilfEffects.WIGGLE("be ready")}`)
+    event.add('milf.stage.mob_gear_netherite', `${MilfEffects.GLITCH("Nothing")} holds back the ${MilfEffects.GRAD.custom("monsters of this world", "#5A1E1E", "#D4372A")} anymore`)
     event.add('milf.stage.minecraft_mobs', `You started hearing ${MilfEffects.GRAD.custom("strange noises", "#ED1A1A", "#B62651")} at night...`)
     event.add('milf.stage.early_items', `This world no longer ${MilfEffects.GLITCH("rejects")} you...`)
 

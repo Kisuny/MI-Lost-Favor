@@ -25,7 +25,11 @@ function ieArcFurnaceCraft (event, args) {
     if (args.slag){recipe.slag = args.slag == true ? {basePredicate: {"item": "immersiveengineering:slag"}, count: 1} : {basePredicate: args.slag[0][0], count: args.slag[0][1] || 1}}
     if(!args.compatOff){
 
-        let miOutputItems = args.outputItems.concat(args.slag == true ? [[{ "item": "immersiveengineering:slag" }]] : args.slag || [[]])
+        let miOutputItems = args.outputItems
+        if (args.slag) {
+            miOutputItems = args.outputItems.concat(args.slag == true ? [[{ "item": "immersiveengineering:slag" }]] : args.slag || [[]])
+
+        }
         let miInputItems = args.inputItems
 
         if (miOutputItems.length <= 3 && miInputItems.length <= 3){
@@ -65,11 +69,8 @@ ServerEvents.recipes(event => {
             [{"item": "ae2:terminal"}, 1],
             [{ "item": "milf:5d_memory_crystal"}, 1],
             [{ "item": "milf:disk_from_space" }, 1],
-
+            [{ "item": "milf:space_hive" }, 1]
         ],
-        slag:[
-            [{"item": "spectrum:vegetal"}, 4]
-        ]
     })
 
     ieArcFurnaceCraft(event,{

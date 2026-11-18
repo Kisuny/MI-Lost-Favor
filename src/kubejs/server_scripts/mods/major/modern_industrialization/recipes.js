@@ -864,6 +864,117 @@ ServerEvents.recipes(event => {
         })
     })
 
+    milfShaped(event, {
+        pattern: [
+            "WBH",
+            "WSG",
+            "MWW"
+        ],
+        key: {
+            H: { item: "modern_industrialization:steel_drill_head" },
+            B: { item: "modern_industrialization:bronze_drill" },
+            G: { item: "modern_industrialization:gold_drill" },
+            S: { item: "immersiveengineering:component_steel" },
+            M: { item: "milf:basic_motor" },
+            W: { item: "modern_industrialization:steel_wire" },
+
+        },
+        outputItems: [[{ id: `modern_industrialization:steel_drill` }, 4]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WDH",
+            "CSD",
+            "MCW"
+        ],
+        key: {
+            H: { item: "modern_industrialization:aluminum_drill_head" },
+            D: { item: "modern_industrialization:steel_drill" },
+            S: { item: "immersiveengineering:component_electronic_adv" },
+            M: { item: "milf:basic_pump" },
+            W: { item: "modern_industrialization:aluminum_wire" },
+            C: { item: "oritech:magnetic_coil" },
+
+        },
+        outputItems: [[{ id: `modern_industrialization:aluminum_drill` }, 2]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "PGP",
+            "PCP",
+            "WMW"
+        ],
+        key: {
+            C: { item: "immersiveengineering:component_electronic" },
+            G: { item: "milf:steel_infused_glass" },
+            P: { item: "modern_industrialization:tumbaga_plate" },
+            W: { item: "modern_industrialization:cupronickel_wire_magnetic" },
+            M: { item: "oritech:magnetic_coil" },
+
+        },
+        outputItems: [[{ id: `milf:basic_navigation_module` }, 3]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RBD",
+            "bCB",
+            "MbR"
+        ],
+        key: {
+            D: { item: "modern_industrialization:aluminum_drill_head" },
+            B: { item: "extended_industrialization:netherite_rotary_blade" },
+            b: { item: "milf:basic_motor" },
+            C: { item: "immersiveengineering:component_steel" },
+            R: { item: "modern_industrialization:silver_rod" },
+            M: { item: "oritech:magnetic_coil" },
+
+
+        },
+        outputItems: [[{ id: `extended_industrialization:electric_mining_drill` }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RrB",
+            "bCr",
+            "MbR"
+        ],
+        key: {
+            B: { item: "extended_industrialization:netherite_rotary_blade" },
+            r: { item: "modern_industrialization:rubber_sheet" },
+            b: { item: "milf:basic_motor" },
+            C: { item: "immersiveengineering:component_steel" },
+            R: { item: "modern_industrialization:silver_rod" },
+            M: { item: "oritech:magnetic_coil" },
+
+
+        },
+        outputItems: [[{ id: `extended_industrialization:electric_chainsaw` }, 1]],
+        removeRecipe: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            " D ",
+            "DBD",
+            " # "
+        ],
+        key: {
+            D: { item: "extended_industrialization:netherite_dust" },
+            B: { item: "modern_industrialization:silicon_steel_large_plate" },
+            "#": { item: "immersiveengineering:wirecutter" },
+        },
+        outputItems: [[{ id: `extended_industrialization:netherite_rotary_blade` }, 1]],
+        removeRecipe: true
+    })
+
     function casingMIRecipe(material, outputID) {
 
         milfShaped(event, {

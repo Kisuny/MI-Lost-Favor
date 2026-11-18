@@ -6,14 +6,16 @@ ServerEvents.recipes(event => {
             outputItems: [[{ item: oreEntry.oreData.raw}, 1]]
         })
 
-        if (oreEntry.oreTier == 0){
+        if (oreEntry.oreTier == 0){            
+
             miMachineRecipe(event, {
                 energy: 4, time: 300, machine: "modern_industrialization:quarry",
                 inputItems: [
-                    [{ item: "modern_industrialization:copper_drill" }, 1, 0.40]
+                    [{ item: "modern_industrialization:copper_drill" }, 1, 0.26]
                 ],
                 outputItems: [
-                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.45],
+                    [{ item: "modern_industrialization:copper_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.45],
                     [{ item: "minecraft:gravel"}, 1, 0.75],
                     [{ item: "minecraft:dirt" }, 1, 0.45]
                 ],
@@ -21,12 +23,27 @@ ServerEvents.recipes(event => {
             })
 
             miMachineRecipe(event, {
-                energy: 3, time: 240, machine: "modern_industrialization:quarry",
+                energy: 4, time: 260, machine: "modern_industrialization:quarry",
                 inputItems: [
-                    [{ item: "modern_industrialization:bronze_drill" }, 1, 0.30]
+                    [{ item: "modern_industrialization:copper_drill" }, 1, 0.2],
+                    [{ item: "milf:basic_navigation_module" }, 2]
                 ],
                 outputItems: [
-                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.65],
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.5],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1]])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 3, time: 240, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:bronze_drill" }, 1, 0.22]
+                ],
+                outputItems: [
+                    [{ item: "modern_industrialization:bronze_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.6],
                     [{ item: "minecraft:cobblestone" }, 1, 0.55],
                     [{ item: "minecraft:gravel" }, 1, 0.55]
                 ],
@@ -34,17 +51,47 @@ ServerEvents.recipes(event => {
             })
 
             miMachineRecipe(event, {
-                energy: 4, time: 120, machine: "modern_industrialization:quarry",
+                energy: 3, time: 200, machine: "modern_industrialization:quarry",
                 inputItems: [
-                    [{ item: "modern_industrialization:gold_drill" }, 1, 0.65]
+                    [{ item: "modern_industrialization:bronze_drill" }, 1, 0.18],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+
                 ],
                 outputItems: [
-                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.9],
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.65],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 1.8])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 120, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:gold_drill" }, 1, 0.32],
+                ],
+                outputItems: [
+                    [{ item: "modern_industrialization:gold_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.9],
                     [{ item: "minecraft:sandstone" }, 1, 0.65],
                     [{ item: "minecraft:andesite" }, 1, 0.25],
                     [{ item: "minecraft:diorite" }, 1, 0.25],
                     [{ item: "minecraft:granite" }, 1, 0.25]
                 ],
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 100, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:gold_drill" }, 1, 0.24],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+                ],
+                outputItems: [
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.94],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 2.8])),
                 custom_condition: `${oreEntry.bedrockSampleId}`
             })
 
@@ -69,43 +116,180 @@ ServerEvents.recipes(event => {
             miMachineRecipe(event, {
                 energy: 4, time: 360, machine: "modern_industrialization:quarry",
                 inputItems: [
-                    [{ item: "modern_industrialization:bronze_drill" }, 1, 0.45]
+                    [{ item: "modern_industrialization:bronze_drill" }, 1, 0.28]
                 ],
                 outputItems: [
-                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.5],
+                    [{ item: "modern_industrialization:bronze_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.5],
                     [{ item: "minecraft:gravel" }, 1, 0.75]
                 ],
                 custom_condition: `${oreEntry.bedrockSampleId}`
             })
 
             miMachineRecipe(event, {
-                energy: 4, time: 260, machine: "modern_industrialization:quarry",
+                energy: 4, time: 300, machine: "modern_industrialization:quarry",
                 inputItems: [
-                    [{ item: "modern_industrialization:steel_drill" }, 1, 0.3]
+                    [{ item: "modern_industrialization:bronze_drill" }, 1, 0.18],
+                    [{ item: "milf:basic_navigation_module" }, 2]
                 ],
                 outputItems: [
-                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.7],
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.6],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 1.4])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 260, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:steel_drill" }, 1, 0.15]
+                ],
+                outputItems: [
+                    [{ item: "modern_industrialization:steel_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.7],
                     [{ item: "minecraft:cobblestone" }, 1, 0.55],
                     [{ item: "minecraft:cobbled_deepslate" }, 1, 0.85],
                     [{ item: "minecraft:gravel" }, 1, 0.55]
                 ],
                 custom_condition: `${oreEntry.bedrockSampleId}`
             })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 200, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:steel_drill" }, 1, 0.1],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+                ],
+                outputItems: [
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.7],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 3])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
         }
 
         if (oreEntry.oreTier == 2) {
+
             miMachineRecipe(event, {
-                energy: 4, time: 600, machine: "modern_industrialization:quarry",
+                energy: 4, time: 800, machine: "modern_industrialization:quarry",
                 inputItems: [
-                    [{ item: "modern_industrialization:aluminum_drill" }, 1, 0.6]
+                    [{ item: "modern_industrialization:steel_drill" }, 1, 0.35]
                 ],
                 outputItems: [
-                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.9],
+                    [{ item: "modern_industrialization:steel_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.34],
+                    [{ item: "minecraft:cobblestone" }, 1, 0.55],
+                    [{ item: "minecraft:cobbled_deepslate" }, 1, 0.85],
+                    [{ item: "minecraft:gravel" }, 1, 0.55]
+                ],
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 650, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:steel_drill" }, 1, 0.23],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+                ],
+                outputItems: [
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.46],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1]])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+
+            miMachineRecipe(event, {
+                energy: 4, time: 500, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:aluminum_drill" }, 1, 0.25]
+                ],
+                outputItems: [
+                    [{ item: "modern_industrialization:aluminum_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.6],
                     [{ item: "minecraft:cobbled_deepslate" }, 1, 0.75],
                     [{ item: "minecraft:tuff" }, 1, 0.3]
                 ],
                 custom_condition: `${oreEntry.bedrockSampleId}`
             })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 400, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:aluminum_drill" }, 1, 0.14],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+
+                ],
+                outputItems: [
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.9],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 3.2])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+        }
+
+        if (oreEntry.oreTier == 3) {
+
+            miMachineRecipe(event, {
+                energy: 4, time: 1000, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:aluminum_drill" }, 1, 0.45]
+                ],
+                outputItems: [
+                    [{ item: "modern_industrialization:aluminum_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.55],
+                    [{ item: "minecraft:cobbled_deepslate" }, 1, 0.75],
+                    [{ item: "minecraft:tuff" }, 1, 0.3]
+                ],
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 800, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:aluminum_drill" }, 1, 0.31],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+                ],
+                outputItems: [
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.85],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 2])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 500, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:stainless_steel_drill" }, 1, 0.2]
+                ],
+                outputItems: [
+                    [{ item: "modern_industrialization:stainless_steel_tiny_dust" }, 1],
+                    [{ item: oreEntry.oreData?.normal || oreEntry.oreData.deepslate }, 1, 0.8],
+                    [{ item: "milf:reservoir_rock" }, 1, 0.75],
+                    [{ item: "minecraft:magma_block" }, 1, 0.13]
+                ],
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
+            miMachineRecipe(event, {
+                energy: 4, time: 300, machine: "modern_industrialization:quarry",
+                inputItems: [
+                    [{ item: "modern_industrialization:stainless_steel_drill" }, 1, 0.11],
+                    [{ item: "milf:basic_navigation_module" }, 2]
+                ],
+                outputItems: [
+                    [{ item: "milf:basic_navigation_module" }, 1],
+                    [{ item: "milf:basic_navigation_module" }, 1, 0.95],
+                    [{ item: oreEntry.oreData?.deepslate || oreEntry.oreData.normal }, 1, 0.94],
+                ].concat(oreEntry.oreData.auxiliaryOutputs.map(entry => [{ item: entry[0] }, 1, entry[1] * 3.6])),
+                custom_condition: `${oreEntry.bedrockSampleId}`
+            })
+
         }
 
 

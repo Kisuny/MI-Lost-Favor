@@ -109,7 +109,8 @@ createNewItem('automation_disk', { stackSize: 1, lang: {  "ru_ru": "Диск а�
 createNewItem('quantum_disk', { stackSize: 1, lang: { "ru_ru": "Квантовый диск" } })
 
 createNewItem('hemispherical_press_mold', { stackSize: 1, lang: { "ru_ru": "Полусферическая пресс-форма" } })
-createNewItem('navigation_module', { stackSize: 1, lang: { "ru_ru": "Навигационный модуль" } })
+createNewItem('basic_navigation_module', { stackSize: 62 })
+createNewItem('navigation_module', { stackSize: 62, lang: { "ru_ru": "Навигационный модуль" } })
 
 createNewItem("meze_109", { itemType: "helmet", material: 'milf:egg', stackSize: 1, rarity: 'epic', lang: { "ru_ru": "Meze 109" } })
 createNewItem("fishnets", { itemType: "leggings", material: 'milf:egg', stackSize: 1, rarity: 'epic', lang: { "ru_ru": "Колготки в сетку" } })

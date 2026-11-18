@@ -13,6 +13,8 @@ concurrency:
 
 jobs:
   announce:
+    # releases are published from the upstream repo only; forks run this on schedule too
+    if: github.repository == 'Kisuny/MI-Lost-Favor'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:

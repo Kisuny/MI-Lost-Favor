@@ -21,6 +21,20 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 10, time: 100, machine: "modern_industrialization:microbial_fabricator_basic",
+        inputItems: [
+            [{ item: "modern_industrialization:quartz_dust" }, 1, 0.51],
+            [{ item: "minecraft:quartz" }, 1],
+            [{ item: "modern_industrialization:quartz_dust" }, 1, 0.27],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 125, 0.54],
+            [{ fluid: "milf:alien_goo" }, 125, 0.34],
+        ],
+        outputItems: [[{ item: "ae2:certus_quartz_crystal" }, 1, 0.64]]
+    })
+
+    miMachineRecipe(event, {
         energy: 34, time: 600, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
             [neoCompound([

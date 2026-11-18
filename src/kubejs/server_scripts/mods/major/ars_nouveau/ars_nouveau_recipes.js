@@ -416,6 +416,20 @@ ServerEvents.recipes(event => {
         output: "ars_additions:codex_entry"
     })
 
+    miMachineRecipe(event, {energy:4, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"eidolon_repraised:parchment"}],
+            [{item:"paganbless:runic_charge"}],
+            [{tag:"hexerei:flower_biproduct"}, 6],
+        ],
+        inputFluids:[
+            [{fluid:"minecraft:water"}, 1000]
+        ],
+        outputItems:[
+            [{item:"ars_additions:codex_entry"}]
+        ]
+    })
+
     customPedestalCraft(event, {
         time: 1000,
         tier: "basic",

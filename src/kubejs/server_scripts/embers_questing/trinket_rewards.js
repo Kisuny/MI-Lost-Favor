@@ -10,7 +10,7 @@ const trinkets_slot_list_reward = [
     { id: 'milf:trinket/belt_take_off_belt', trinket_slot: 'belt' },
     { id: 'milf:trinket/face_glow_vision_goggles', trinket_slot: 'face' },
     { id: 'milf:trinket/palette_pigment_palette', trinket_slot: 'palette' },
-    { id: 'milf:trinket/focus_mark_of_mastery', trinket_slot: 'focus' },
+    { id: 'milf:trinket/focus_mark_of_mastery', trinket_slot: 'an_focus' },
     { id: 'milf:trinket/adv_pattern_encoder', trinket_slot: 'adv_pattern_encoder' },
     { id: 'milf:trinket/body_world_tier_frontier', trinket_slot: 'body' },
     { id: 'milf:trinket/brooch_runic_brooch', trinket_slot: 'brooch' },
@@ -34,6 +34,7 @@ const trinkets_slot_list_reward = [
     { id: 'milf:trinket/crafting_on_a_stick', trinket_slot: 'crafting_on_a_stick' },
     { id: 'milf:trinket/time_sand_pouch', trinket_slot: 'time_sand_pouch' },
     { id: 'milf:trinket/amulet_first_steps', trinket_slot: 'amulet' },
+    { id: 'milf:trinket/head_starcatcher_rod', trinket_slot: 'head' },
 ]
 
 trinkets_slot_list_reward.forEach(reward => {

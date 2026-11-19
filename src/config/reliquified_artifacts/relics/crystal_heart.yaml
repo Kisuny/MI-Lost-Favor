@@ -23,11 +23,11 @@ abilitiesData:
                     targetValue: 20.007
                 cooldown:
                     # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
-                    maxInitialValue: 60.0
+                    maxInitialValue: 50.0
                     # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
                     maxThresholdValue: 1.7976931348623157E308
                     # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
-                    minInitialValue: 50.0
+                    minInitialValue: 60.0
                     # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
                     minThresholdValue: 4.9E-324
                     # Type of mathematical operation used to calculate the stat's value based on the ability level.

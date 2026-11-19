@@ -3,30 +3,30 @@
   "description": [
     "<lang key=milf.quest.magic_step_ii.enchanters_sword.desc>",
     {
-      "type": "item",
       "items": [
         "ars_nouveau:glyph_ignite"
       ],
       "size": 24,
-      "align": "left"
+      "align": "left",
+      "type": "item"
     },
     {
-      "type": "label",
+      "inline": true,
       "text": "→",
-      "inline": true
+      "type": "label"
     },
     {
-      "type": "item",
+      "inline": true,
       "items": [
         "ars_nouveau:glyph_extend_time"
       ],
       "size": 24,
-      "inline": true
+      "type": "item"
     }
   ],
   "icon": "ars_nouveau:enchanters_sword",
-  "x": 109,
-  "y": 12.5,
+  "x": 92,
+  "y": 14,
   "deps": {
     "all": [
       "magic_step_ii/tools_and_equipment"

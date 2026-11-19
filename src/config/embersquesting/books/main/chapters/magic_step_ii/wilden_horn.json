@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.wilden_horn.desc>"
   ],
   "icon": "ars_nouveau:wilden_horn",
-  "x": 115.5,
-  "y": 28,
+  "x": 98.5,
+  "y": 29.5,
   "deps": {
     "all": [
       "magic_step_ii/ritual_wilden_summon"
@@ -17,19 +17,19 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "enchanted:tongue_of_dog",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:charcoal",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "eidolon_repraised:soul_shard",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "shape": "circle"

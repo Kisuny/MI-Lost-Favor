@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.oanna_bloom.desc>"
   ],
   "icon": "eidolon_repraised:oanna_bloom",
-  "x": 63.5,
-  "y": 18,
+  "x": 46.5,
+  "y": 19.5,
   "deps": {
     "all": [
       "magic_step_ii/athame"
@@ -17,10 +17,10 @@
       "type": "item"
     },
     {
-      "block": "minecraft:lily_pad",
-      "type": "observe",
       "icon": "minecraft:lily_pad",
-      "optional": true
+      "optional": true,
+      "block": "minecraft:lily_pad",
+      "type": "observe"
     }
   ],
   "shape": "circle",

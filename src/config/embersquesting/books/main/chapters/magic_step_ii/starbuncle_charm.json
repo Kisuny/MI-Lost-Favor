@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.starbuncle_charm.desc>"
   ],
   "icon": "ars_nouveau:starbuncle_charm",
-  "x": 106,
-  "y": 25.5,
+  "x": 89,
+  "y": 27,
   "deps": {
     "all": [
       "magic_step_ii/enchanting_apparatus"
@@ -13,9 +13,9 @@
   },
   "tasks": [
     {
+      "optional": true,
       "entity": "ars_nouveau:starbuncle",
-      "type": "observe",
-      "optional": true
+      "type": "observe"
     },
     {
       "item": "ars_nouveau:starbuncle_charm",

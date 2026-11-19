@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.wilden_spike.desc>"
   ],
   "icon": "ars_nouveau:wilden_spike",
-  "x": 114.5,
-  "y": 28.5,
+  "x": 97.5,
+  "y": 30,
   "deps": {
     "all": [
       "magic_step_ii/ritual_wilden_summon"
@@ -17,20 +17,20 @@
       "type": "item"
     },
     {
+      "optional": true,
       "tag": "c:foods/raw_fish",
       "type": "item",
-      "title": "Any Raw Fish",
-      "optional": true
+      "title": "Any Raw Fish"
     },
     {
+      "optional": true,
       "item": "minecraft:charcoal",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "eidolon_repraised:soul_shard",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "shape": "circle"

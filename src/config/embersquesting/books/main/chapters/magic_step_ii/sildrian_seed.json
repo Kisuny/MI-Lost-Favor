@@ -1,8 +1,8 @@
 {
   "title": "<lang key=block.eidolon_repraised.sildrian_seed>",
   "icon": "eidolon_repraised:sildrian_seed",
-  "x": 64.5,
-  "y": 18,
+  "x": 47.5,
+  "y": 19.5,
   "deps": {
     "all": [
       "magic_step_ii/athame"
@@ -14,10 +14,10 @@
       "type": "item"
     },
     {
-      "block": "minecraft:jungle_leaves",
-      "type": "observe",
       "icon": "minecraft:jungle_leaves",
-      "optional": true
+      "optional": true,
+      "block": "minecraft:jungle_leaves",
+      "type": "observe"
     }
   ],
   "shape": "circle"

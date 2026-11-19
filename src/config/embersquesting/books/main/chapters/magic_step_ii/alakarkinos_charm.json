@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.alakarkinos_charm.desc>"
   ],
   "icon": "ars_nouveau:alakarkinos_charm",
-  "x": 110.5,
-  "y": 25.5,
+  "x": 93.5,
+  "y": 27,
   "deps": {
     "all": [
       "magic_step_ii/enchanting_apparatus"
@@ -13,9 +13,9 @@
   },
   "tasks": [
     {
+      "optional": true,
       "entity": "ars_nouveau:alakarkinos",
-      "type": "observe",
-      "optional": true
+      "type": "observe"
     },
     {
       "item": "ars_nouveau:alakarkinos_charm",

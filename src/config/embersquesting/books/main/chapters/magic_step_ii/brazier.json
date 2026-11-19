@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.brazier.desc>"
   ],
   "icon": "eidolon_repraised:brazier",
-  "x": 63,
-  "y": 28,
+  "x": 46,
+  "y": 29.5,
   "deps": {
     "all": [
       "magic_step_ii/pewter_blend"
@@ -17,20 +17,20 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:flint_and_steel",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "eidolon_repraised:stone_hand",
       "count": 6,
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "eidolon_repraised:necrotic_focus",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "shape": "gear"

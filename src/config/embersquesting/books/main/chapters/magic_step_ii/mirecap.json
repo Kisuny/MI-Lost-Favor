@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.mirecap.desc>"
   ],
   "icon": "eidolon_repraised:mirecap",
-  "x": 62.5,
-  "y": 18,
+  "x": 45.5,
+  "y": 19.5,
   "deps": {
     "all": [
       "magic_step_ii/athame"
@@ -17,16 +17,16 @@
       "type": "item"
     },
     {
-      "block": "minecraft:crimson_fungus",
-      "type": "observe",
       "icon": "minecraft:crimson_fungus",
-      "optional": true
+      "optional": true,
+      "block": "minecraft:crimson_fungus",
+      "type": "observe"
     },
     {
-      "block": "minecraft:warped_fungus",
-      "type": "observe",
       "icon": "minecraft:warped_fungus",
-      "optional": true
+      "optional": true,
+      "block": "minecraft:warped_fungus",
+      "type": "observe"
     }
   ],
   "shape": "circle"

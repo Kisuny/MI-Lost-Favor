@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.incandescent_amalgam.desc>"
   ],
   "icon": "spectrum:incandescent_amalgam{\"spectrum:beverage\":{alcohol_percent:15}}",
-  "x": 62,
-  "y": 32.5,
+  "x": 45,
+  "y": 34,
   "deps": {
     "all": [
       "magic_step_ii/pedestal_moonstone"
@@ -13,16 +13,16 @@
   },
   "tasks": [
     {
+      "optional": true,
       "match_components": "none",
       "item": "spectrum:incandescent_amalgam",
       "components": "{\"spectrum:beverage\":{alcohol_percent:15}}",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:end_crystal",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
       "type": "checkmark",

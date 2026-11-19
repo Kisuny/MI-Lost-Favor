@@ -1,8 +1,8 @@
 {
   "title": "<lang key=block.eidolon_repraised.avennian_sprig>",
   "icon": "eidolon_repraised:avennian_sprig",
-  "x": 61.5,
-  "y": 18,
+  "x": 44.5,
+  "y": 19.5,
   "deps": {
     "all": [
       "magic_step_ii/athame"
@@ -14,16 +14,16 @@
       "type": "item"
     },
     {
-      "block": "minecraft:large_fern",
-      "type": "observe",
       "icon": "minecraft:large_fern",
-      "optional": true
+      "optional": true,
+      "block": "minecraft:large_fern",
+      "type": "observe"
     },
     {
-      "block": "minecraft:fern",
-      "type": "observe",
       "icon": "minecraft:fern",
-      "optional": true
+      "optional": true,
+      "block": "minecraft:fern",
+      "type": "observe"
     }
   ],
   "shape": "circle"

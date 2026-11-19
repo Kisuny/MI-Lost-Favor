@@ -1,8 +1,8 @@
 {
   "title": "",
   "icon": "map_atlases:textures/gui/sprites/dimensions/deeper_down.png",
-  "x": 48,
-  "y": 41.5,
+  "x": 31,
+  "y": 43,
   "deps": {
     "all": [
       "magic_step_ii/bottle_of_ruin"
@@ -14,9 +14,9 @@
       "type": "advancement"
     },
     {
+      "optional": true,
       "advancement": "spectrum:midgame/enter_dimension",
-      "type": "advancement",
-      "optional": true
+      "type": "advancement"
     }
   ],
   "rewards": [

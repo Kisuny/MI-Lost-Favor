@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.crucible.desc>"
   ],
   "icon": "eidolon_repraised:crucible",
-  "x": 63,
-  "y": 26,
+  "x": 46,
+  "y": 27.5,
   "deps": {
     "all": [
       "magic_step_ii/pewter_blend"
@@ -17,24 +17,24 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:netherrack",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:campfire",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:flint_and_steel",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:water_bucket",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "shape": "gear"

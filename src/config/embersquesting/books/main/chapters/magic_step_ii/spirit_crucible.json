@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.spirit_crucible.desc>"
   ],
   "icon": "malum:spirit_crucible",
-  "x": 93,
-  "y": 20,
+  "x": 76,
+  "y": 21.5,
   "deps": {
     "all": [
       "magic_step_ii/soul_stained_steel_ingot",
@@ -18,14 +18,14 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "malum:alchemical_impetus",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "malum:arcane_spirit",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "shape": "gear"

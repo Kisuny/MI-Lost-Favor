@@ -4,8 +4,8 @@
     "<lang key=milf.quest.magic_step_ii.wilden_wing.desc>"
   ],
   "icon": "ars_nouveau:wilden_wing",
-  "x": 113.5,
-  "y": 28,
+  "x": 96.5,
+  "y": 29.5,
   "deps": {
     "all": [
       "magic_step_ii/ritual_wilden_summon"
@@ -17,19 +17,19 @@
       "type": "item"
     },
     {
+      "optional": true,
       "item": "enchanted:wool_of_bat",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "minecraft:charcoal",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "optional": true,
       "item": "eidolon_repraised:soul_shard",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
   "shape": "circle"

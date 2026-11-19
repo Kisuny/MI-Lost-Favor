@@ -21,7 +21,6 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("Вы чувствуете, что что-то изменилось...")}`)
 
     event.add('milf.stage.bronze_age', `Вы перешли в ${MilfEffects.GRAD.custom("Бронзовую Эпоху", "#CD7F32", "#F6BA7D")}`)
-    event.add('milf.stage.monsterplus_mobs', `Вы начали слышать ${MilfEffects.GRAD.custom("крики мертвых", "#F00B0B", "#7A0F0B")} ночью`)
     event.add('milf.stage.mowziesmobs_mobs', `новые ${MilfEffects.GRAD.custom("опасности", "#F00B0B", "#7A0F0B")} появились на вашем пути`)
     event.add('milf.stage.eidolon_mobs', `Вы чувствуете как по вашему телу пробежал ${MilfEffects.GRAD.custom("холодок", "#353DCA", "#52B5C4")}!`)
     event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${MilfEffects.GRAD.custom("могут вас услышать", "#F00B0B", "#7A0F0B")} ночью, будьте осторожны!`)

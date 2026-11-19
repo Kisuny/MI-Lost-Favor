@@ -23,7 +23,6 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)
     event.add('milf.stage.bronze_age', `You have passed into the ${MilfEffects.GRAD.custom("Bronze Age", "#CD7F32", "#F6BA7D")}`)
-    event.add('milf.stage.monsterplus_mobs', `You began to hear the ${MilfEffects.GRAD.custom("cries of the dead", "#D12F0E", "#841B4C")} at night`)
     event.add('milf.stage.eidolon_mobs', `You can feel a ${MilfEffects.GRAD.custom("chill run down your spine", "#2E57BE", "#2EBFD8")}`)
     event.add('milf.stage.mythsandlegends_mobs', `Mythical creatures ${MilfEffects.GRAD.custom("can hear you", "#F00B0B", "#DA502D")} at night, be careful`)
     event.add('milf.stage.mowziesmobs_mobs', `New ${MilfEffects.GRAD.custom("dangers", "#F00B0B", "#CF0F4C")} have appeared on your path`)

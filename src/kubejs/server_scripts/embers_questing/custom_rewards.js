@@ -2,10 +2,6 @@ const MILESTONE_QUEST_STAGES = []
 
 Object.entries({
 
-    "milf:milestone/alchemical_forge_part": {
-        quest: "magic_step_ii/alchemical_forge_part",
-        stages: ["monsterplus_mobs"]
-    },
     "milf:milestone/codex": {
         quest: "magic_step_ii/codex",
         stages: ["eidolon_mobs"]
@@ -16,7 +12,7 @@ Object.entries({
     },
     "milf:milestone/world_tier_frontier": {
         quest: "when_dungeons_arise/world_tier_frontier",
-        stages: ["cataclysm_mobs", "mob_gear_gold", "enderzoology_mobs", "rottencreatures_mobs",]
+        stages: ["cataclysm_mobs", "mob_gear_gold", "enderzoology_mobs", "rottencreatures_mobs", "monsterplus_mobs"]
     },
     "milf:milestone/world_tier_ascent": {
         quest: "when_dungeons_arise/world_tier_ascent",

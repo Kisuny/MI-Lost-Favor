@@ -1200,24 +1200,18 @@ ServerEvents.recipes(event => {
     })
 
 
-    customAlchemicalForgeCraft(event, {
-        affinities: [
-            "toxony:moon",
-            "toxony:ocean",
-            "toxony:sun"
+    customThaumArcaneCraft(event, {
+        ingredients: [
+            "minecraft:raw_copper",
+            "minecraft:lapis_lazuli",
+            "spectrum:midnight_chip",
+            "minecraft:amethyst_shard"
         ],
-        auxiliary: [
-            {
-                "item": "minecraft:lapis_lazuli"
-            },
-            {
-                "item": "minecraft:amethyst_shard"
-            }
-        ],
-        main: {
-            "item": "minecraft:raw_copper"
-        },
-        result: "milf:copper_sulfate"
+        crystals: { aqua: 2, ignis: 1 },
+        vis: 10,
+        research: 'thaumaturge:first_steps',
+        result: "milf:copper_sulfate",
+        id: 'thaumaturge:arcane_workbench/copper_sulfate'
     })
 
     //endregion

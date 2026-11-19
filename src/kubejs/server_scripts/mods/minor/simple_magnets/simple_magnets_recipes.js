@@ -34,4 +34,22 @@ ServerEvents.recipes(event => {
             [{ fluid: "modern_industrialization:soldering_alloy"}, 1132]
         ]
     })
+
+    customEnchanterCraft(event, {
+        time: 600,
+        experience: 500,
+        ingredients: [
+            { "item": "simplemagnets:basicmagnet" },
+            { "item": "milf:polarized_magnet_part" },
+            { "item": "minecraft:redstone_block" },
+            { "item": "minecraft:ender_eye" },
+            { "item": "spectrum:blue_pigment" },
+            { "item": "milf:polarized_magnet_part" },
+            { "item": "minecraft:redstone_block" },
+            { "item": "minecraft:ender_eye" },
+            { "item": "spectrum:blue_pigment" }
+        ],
+        result: "simplemagnets:advancedmagnet",
+        advancement: "spectrum:midgame/build_enchanting_structure"
+    })
 });

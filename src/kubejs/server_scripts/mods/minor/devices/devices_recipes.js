@@ -19,4 +19,21 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    customThaumInfusion(event, {
+        catalyst: '#minecraft:bundles',
+        components: [
+            'minecraft:nether_star',
+            'hexerei:infused_fabric',
+            'devices:gold_coin',
+            'minecraft:ender_pearl',
+            'hexerei:infused_fabric',
+            'devices:gold_coin'
+        ],
+        aspects: { desiderium: 32, vacuos: 24, permutatio: 16, praecantatio: 16 },
+        instability: 5,
+        research: 'thaumaturge:infusion',
+        result: 'devices:magical_pouch',
+        id: 'thaumaturge:infusion/magical_pouch'
+    })
+
 })

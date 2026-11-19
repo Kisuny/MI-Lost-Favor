@@ -1,13 +1,13 @@
 ServerEvents.recipes(event => {
     customMixingCauldron(event, {
-        fluid: "minecraft:lava",
+        fluid: "minecraft:water",
         fluidAmount: 1000,
         ingredients: [
             { "item": "minecraft:compass" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },
-            { "item": "spectrum:vegetal_block" },
+            { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },
             { "item": "paganbless:black_thorn_log" },

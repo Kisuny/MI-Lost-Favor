@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
 
     customPedestalCraft(event, {
         time: 400,
-        tier: "advanced",
+        tier: "complex",
         experience: 4.0,
         citrine: 16,
         topaz: 16,

@@ -21,7 +21,6 @@ global.drinkCrimsonVeilElixir = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
     if (ctx.player.level.clientSide) return
     let player = ctx.entity;
     player.getPersistentData().putBoolean("crimson_veil_potion_drinked", true)
-    player.tell("<magic>Magic endgame still in WIP</magic>")
 }
 createNewItem("crimson_veil_elixir", {
     useAnimation: "drink",

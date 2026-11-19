@@ -57,15 +57,7 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    event.shaped("milf:table_core", [
-        "EQE",
-        "QWQ",
-        "EQE"
-    ], {
-        Q: "modern_industrialization:bronze_double_ingot",
-        W: "enchanted:creeper_heart",
-        E: "paganbless:runic_charge",
-    });
+    
 
     customPedestalCraft(event, {
         time: 200,
@@ -336,6 +328,49 @@ ServerEvents.recipes(event => {
             [{ item: "embers:ember_shard" }, 1, 1, 1],
             [{ item: "embers:ember_shard" }, 1, 0.33, 2],
         ]
+    })
+
+    customShrineRecipe(event, {
+        time: 60,
+        experience: 4.0,
+        fluid: "milf:shimmersteel_essence",
+        ingredients: [
+            { "item": "spectrum:onyx_shard", count: 12 },
+            { "item": "enchanted:foul_fume", count: 4 },
+            { "item": "embers:winding_gears", count: 1 },
+        ],
+        result: {
+            "id": "milf:onyx_table_core",
+            "count": 1
+        },
+        advancement: "spectrum:unlocks/blocks/fusion_shrine"
+    })
+
+    event.shaped("milf:table_core", [
+        "EQE",
+        "QWQ",
+        "EQE"
+    ], {
+        Q: "modern_industrialization:bronze_double_ingot",
+        W: "enchanted:creeper_heart",
+        E: "paganbless:runic_charge",
+    });
+
+    customThaumInfusion(event, {
+        catalyst: 'spectrum:moonstone_core',
+        components: 
+        [
+            "spectrum:budding_moonstone",
+            "spectrum:budding_moonstone",
+            "modern_industrialization:analog_circuit",
+            "apotheosis:gem_dust",
+            "apotheosis:gem_dust",
+            "spectrum:raw_azurite_block",
+        ],
+        aspects: { vitreus: 50, instrumentum: 25, fabrico: 25, machina: 25, desiderium: 25 },
+        instability: 7, 
+        research: 'thaumaturge:infusion',
+        result: 'milf:moonstone_table_core'
     })
 
 })

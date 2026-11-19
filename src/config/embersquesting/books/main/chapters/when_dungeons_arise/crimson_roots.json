@@ -4,24 +4,23 @@
     "<lang key=milf.quest.magic_step_iii.crimson_roots.desc>"
   ],
   "icon": "netherman:textures/item/ghastly_spawn_egg.png",
-  "x": 12.5,
-  "y": 13,
-  "deps": {
-    "all": [
-      "magic_step_iii/q7f4dd202f7059ef5"
-    ]
-  },
+  "x": 13,
+  "y": 33,
+  "aliases": [
+    "magic_step_iii/crimson_roots"
+  ],
   "tasks": [
     {
+      "icon": "netherman:textures/item/ghastly_spawn_egg.png",
       "structure": "netherman:gast_chamber",
-      "type": "location",
-      "icon": "netherman:textures/item/ghastly_spawn_egg.png"
+      "type": "location"
     },
     {
+      "optional": true,
       "item": "minecraft:crimson_roots",
-      "type": "item",
-      "optional": true
+      "type": "item"
     }
   ],
+  "progression": "linear",
   "shape": "circle"
 }

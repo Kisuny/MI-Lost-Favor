@@ -4,19 +4,23 @@
     "<lang key=milf.quest.magic_step_iii.q4a466ebb29c36ccd.desc>"
   ],
   "icon": "netherman:z_puzzle",
-  "x": 6.5,
-  "y": 17,
+  "x": 26.5,
+  "y": 29.5,
   "deps": {
     "all": [
-      "magic_step_iii/altar_compass_key_2"
+      "when_dungeons_arise/altar_compass_key_2"
     ]
   },
+  "aliases": [
+    "magic_step_iii/q4a466ebb29c36ccd"
+  ],
   "tasks": [
     {
+      "icon": "netherman:z_puzzle",
       "structure": "netherman:head_altar",
-      "type": "location",
-      "icon": "netherman:z_puzzle"
+      "type": "location"
     }
   ],
+  "progression": "linear",
   "shape": "circle"
 }

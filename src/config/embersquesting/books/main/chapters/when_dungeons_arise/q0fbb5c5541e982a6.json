@@ -3,25 +3,29 @@
   "description": [
     "<lang key=milf.quest.magic_step_iii.q0fbb5c5541e982a6.desc>"
   ],
-  "x": 0.5,
-  "y": 14.5,
+  "x": 24,
+  "y": 30.5,
   "deps": {
     "all": [
-      "magic_step_iii/q078a77490809e4e3",
-      "magic_step_iii/azazel_trophy"
+      "when_dungeons_arise/q078a77490809e4e3",
+      "when_dungeons_arise/azazel_trophy"
     ]
   },
+  "aliases": [
+    "magic_step_iii/q0fbb5c5541e982a6"
+  ],
   "tasks": [
     {
+      "optional": true,
       "entity": "netherman:azazel_human",
-      "type": "kill",
-      "optional": true
+      "type": "kill"
     },
     {
       "advancement": "netherman:azazel",
       "type": "advancement"
     }
   ],
+  "progression": "linear",
   "shape": "none",
   "icons": {
     "all": {

@@ -4,19 +4,23 @@
     "<lang key=milf.quest.magic_step_iii.q078a77490809e4e3.desc>"
   ],
   "icon": "netherman:samsonite_bell",
-  "x": 5,
-  "y": 17,
+  "x": 26,
+  "y": 30.5,
   "deps": {
     "all": [
-      "magic_step_iii/q4a466ebb29c36ccd"
+      "when_dungeons_arise/q4a466ebb29c36ccd"
     ]
   },
+  "aliases": [
+    "magic_step_iii/q078a77490809e4e3"
+  ],
   "tasks": [
     {
+      "icon": "netherman:samsonite_bell",
       "structure": "netherman:maze",
-      "type": "location",
-      "icon": "netherman:samsonite_bell"
+      "type": "location"
     }
   ],
+  "progression": "linear",
   "shape": "circle"
 }

@@ -4,19 +4,23 @@
     "<lang key=milf.quest.magic_step_iii.q6f01728fa447d081.desc>"
   ],
   "icon": "netherman:samsonit_key",
-  "x": 9.5,
-  "y": 17,
+  "x": 27,
+  "y": 30.5,
   "deps": {
     "all": [
-      "magic_step_iii/altar_compass_key"
+      "when_dungeons_arise/altar_compass_key"
     ]
   },
+  "aliases": [
+    "magic_step_iii/q6f01728fa447d081"
+  ],
   "tasks": [
     {
+      "icon": "netherman:samsonit_key",
       "structure": "netherman:monument",
-      "type": "location",
-      "icon": "netherman:samsonit_key"
+      "type": "location"
     }
   ],
+  "progression": "linear",
   "shape": "circle"
 }

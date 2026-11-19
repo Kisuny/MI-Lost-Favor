@@ -5,7 +5,7 @@
   ],
   "icon": "fdbosses:malkuth_trophy",
   "x": 19.5,
-  "y": 35.5,
+  "y": 36.5,
   "deps": {
     "all": [
       "when_dungeons_arise/world_tier_summit"
@@ -13,9 +13,9 @@
   },
   "tasks": [
     {
+      "optional": true,
       "structure": "fdbosses:malkuth_arena",
-      "type": "location",
-      "optional": true
+      "type": "location"
     },
     {
       "advancement": "fdbosses:qliphoth_awakening/malkuth",

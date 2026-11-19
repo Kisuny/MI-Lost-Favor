@@ -2,7 +2,7 @@
   "title": "",
   "icon": "gateways:gate_pearl{\"gateways:gateway\":\"apotheosis:tiered/summit\"}",
   "x": 20,
-  "y": 32.5,
+  "y": 33.5,
   "deps": {
     "all": [
       "when_dungeons_arise/world_tier_summit"
@@ -10,7 +10,6 @@
   },
   "tasks": [
     {
-      "match_components": "fuzzy",
       "item": "gateways:gate_pearl",
       "components": "{\"gateways:gateway\":\"apotheosis:tiered/summit\"}",
       "type": "item"

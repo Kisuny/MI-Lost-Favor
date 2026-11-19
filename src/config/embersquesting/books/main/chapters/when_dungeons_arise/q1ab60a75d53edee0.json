@@ -4,19 +4,23 @@
     "<lang key=milf.quest.magic_step_iii.q1ab60a75d53edee0.desc>"
   ],
   "icon": "netherman:azazel_trophy",
-  "x": 10.5,
-  "y": 13,
+  "x": 13,
+  "y": 32,
   "deps": {
     "all": [
-      "magic_step_iii/crimson_roots"
+      "when_dungeons_arise/crimson_roots"
     ]
   },
+  "aliases": [
+    "magic_step_iii/q1ab60a75d53edee0"
+  ],
   "tasks": [
     {
+      "icon": "netherman:azazel_trophy",
       "structure": "netherman:mansion_nether",
-      "type": "location",
-      "icon": "netherman:azazel_trophy"
+      "type": "location"
     }
   ],
+  "progression": "linear",
   "shape": "circle"
 }

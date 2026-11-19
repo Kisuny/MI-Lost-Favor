@@ -4,18 +4,22 @@
     "<lang key=milf.quest.magic_step_iii.azazel_trophy.desc>"
   ],
   "icon": "netherman:azazel_trophy",
-  "x": 5,
-  "y": 13,
+  "x": 18.5,
+  "y": 31.5,
   "deps": {
     "all": [
-      "magic_step_iii/q146e3bd6bc57d833"
+      "when_dungeons_arise/q146e3bd6bc57d833"
     ]
   },
+  "aliases": [
+    "magic_step_iii/azazel_trophy"
+  ],
   "tasks": [
     {
       "item": "netherman:azazel_trophy",
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "progression": "linear",
+  "shape": "diamond"
 }

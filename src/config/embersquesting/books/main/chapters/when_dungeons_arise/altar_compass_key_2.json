@@ -4,13 +4,16 @@
     "<lang key=milf.quest.magic_step_iii.altar_compass_key_2.desc>"
   ],
   "icon": "netherman:altar_compass_key{\"minecraft:custom_data\":{HeadAltarMode:1b}}",
-  "x": 8,
-  "y": 17,
+  "x": 26.5,
+  "y": 31.5,
   "deps": {
     "all": [
-      "magic_step_iii/q6f01728fa447d081"
+      "when_dungeons_arise/q6f01728fa447d081"
     ]
   },
+  "aliases": [
+    "magic_step_iii/altar_compass_key_2"
+  ],
   "tasks": [
     {
       "match_components": "none",
@@ -19,5 +22,6 @@
       "type": "item"
     }
   ],
+  "progression": "linear",
   "shape": "circle"
 }

@@ -8,6 +8,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.recommendation_1', `<warning>Важно:</warning> CurseForge и Prism Launcher могут автоматически создавать собственный файл <keyword>options.txt</keyword>, который перезаписывает настройки модпака. К сожалению, мы не можем предотвратить это. Если файл уже существует, <keyword>удалите</keyword> его из папки <keyword>.minecraft</keyword>. При следующем запуске он будет создан заново с правильными настройками, и все настройки модпака будут работать корректно`)
     event.add('milf.text.curios.already_equipped', 'У вас уже надето: ')
     event.add('milf.tooltip.enchanted_book.max_level', '<magic>Макс. уровень</magic>:')
+    event.add('milf.atlas.tooltip', '<warning>В слоте безделушки карта пока не работает</warning> - носите Атлас в инвентаре. <wiggle>Скоро исправим!</wiggle>')
 
     const foodCategoryNamesRu = { fruit: 'фрукты', cooked_meats: 'мясные блюда', bread: 'хлеб' }
     Object.keys(foodCategoryNamesRu).forEach(priority => {
@@ -28,7 +29,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${MilfEffects.GRAD.custom("существами, которым нет числа", "#9B59B6", "#E8D5FF")}`)
     event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${MilfEffects.GRAD.UPGRADE("новыми рудами")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Разблокировано: иридиевая / платиновая / титановая / вольфрамовая / урановая руда')
-    event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
+    event.add('milf.stage.xaeromap', 'Разблокированы: карта без Атласа, радар, карта пещер')
     event.add('milf.stage.mob_gear_gold', `Монстры начали ${MilfEffects.GRAD.custom("вооружаться", "#E4C549", "#FDE49A")}...`)
     event.add('milf.stage.mob_gear_diamond', `Монстры облачились в ${MilfEffects.GRAD.custom("сверкающие доспехи", "#2FD6D0", "#B9F8F5")} - ${MilfEffects.WIGGLE("будьте готовы")}`)
     event.add('milf.stage.mob_gear_netherite', `${MilfEffects.GLITCH("Ничто")} больше не сдерживает ${MilfEffects.GRAD.custom("чудовищ этого мира", "#5A1E1E", "#D4372A")}`)

@@ -397,7 +397,6 @@ ServerEvents.recipes(event => {
     //     "result": { "id": "modern_industrialization:brick_dust", "count": 1 }
     // })
 
-    event.remove({ type: "map_atlases:crafting_atlas" })
 
     milfShaped(event, {
         pattern: [

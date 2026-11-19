@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    event.remove({ id: "embersatlas:atlas" })
+
     yTechShaped(event, {
         pattern: [
             "SP ",
@@ -11,7 +13,6 @@ ServerEvents.recipes(event => {
             "S": { "tag": "ytech:leather_strips" },
             "B": { "item": "minecraft:writable_book" }
         },
-        outputItems: [[{ id: "map_atlases:atlas" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
+        outputItems: [[{ id: "milf:atlas" }, 1]]
     })
 })

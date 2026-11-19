@@ -1,18 +1,19 @@
-const xaero_bundle = { id: "Xaeromap", title: "Xaeromap", icon: "minecraft:map" }
+const atlas_bundle = { id: "Atlas", title: "Atlas", icon: "minecraft:filled_map" }
 
-const xaero_actions = [
-    { parentId: "Xaeromap", key_name: "gui.xaero_new_waypoint", action_name: "New Waypoint", icon: "minecraft:map" },
-    { parentId: "Xaeromap", key_name: "gui.xaero_waypoints_key", action_name: "Open Waypoint Screen", icon: "minecraft:map" },
-    { parentId: "Xaeromap", key_name: "gui.xaero_minimap_settings", action_name: "Minimap Settings", icon: "minecraft:map" },
+const atlas_actions = [
+    { parentId: "Atlas", key_name: "key.embersatlas.new_marker", action_name: "New Marker", icon: "minecraft:filled_map" },
+    { parentId: "Atlas", key_name: "key.embersatlas.marker_list", action_name: "Marker List", icon: "minecraft:filled_map" },
+    { parentId: "Atlas", key_name: "key.embersatlas.toggle_minimap", action_name: "Toggle Minimap", icon: "minecraft:filled_map" },
+    { parentId: "Atlas", key_name: "key.embersatlas.open_settings", action_name: "Atlas Settings", icon: "minecraft:filled_map" },
 ]
 
-function sendXaeroRadial(player) {
-    sendEzBundle(player, xaero_bundle)
-    xaero_actions.forEach(a => sendEzAction(player, a))
+function sendAtlasRadial(player) {
+    sendEzBundle(player, atlas_bundle)
+    atlas_actions.forEach(a => sendEzAction(player, a))
 }
 
 EmbersQuestingEvents.customReward('milf:radial/xaeromap', event => {
-    sendXaeroRadial(event.player)
+    sendAtlasRadial(event.player)
 });
 
 
@@ -44,8 +45,7 @@ PlayerEvents.loggedIn(event => {
         // console.log(`[EzRadial] sending radial data to ${player.name}`)
 
         if (playerStages.has('xaeromap')) {
-            // console.log(`[EzRadial] sending xaeromap bundle`)
-            sendXaeroRadial(player)
+            sendAtlasRadial(player)
         }
 
 

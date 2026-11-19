@@ -10,6 +10,7 @@ ItemEvents.modifyTooltips(event => {
     event.add("milf:divine_mint", Text.translatable(`milf.divine_mint.tooltip`))
     event.add("milf:big_bulky_drill", Text.translatable(`milf.big_bulky_drill.tooltip`))
     event.add("milf:clunky_drill", Text.translatable(`milf.clunky_drill.tooltip`))
+    event.add("milf:atlas", Text.translatable(`milf.atlas.tooltip`))
 
     
 

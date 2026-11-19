@@ -288,6 +288,7 @@ createNewItem('nutmeg', { stackSize: 62, lang: { "ru_ru": "Мускатный о
 createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })
 createNewItem("cement", { lang: { "en_us": "Cement", "ru_ru": "Цемент" } })
 
+createNewItem('atlas', { stackSize: 1, tag: "milf:atlases", lang: { "en_us": "Atlas", "ru_ru": "Атлас" } })
 createNewItem('old_diary', { stackSize: 1, lang: { "en_us": "Old diary", "ru_ru": "Старый дневник" } })
 createNewItem('old_tablet', { stackSize: 1, lang: { "en_us": "Old tablet", "ru_ru": "Старая табличка" } })
 createNewItem('disk_from_space', { stackSize: 1, lang: { "en_us": "Disk from space", "ru_ru": "Внеземной диск" } })

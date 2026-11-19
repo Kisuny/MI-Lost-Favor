@@ -8,6 +8,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.recommendation_1', `<warning>Important:</warning> CurseForge and Prism Launcher may automatically create their own <keyword>options.txt</keyword> file, which overrides the modpack settings. Unfortunately, we cannot prevent this. If the file already exists, <keyword>delete</keyword> it from your <keyword>.minecraft</keyword> folder. The next time you launch the game, it will be recreated with the correct settings, and all modpack settings will work properly.`)
     event.add('milf.text.curios.already_equipped', 'You already have equipped: ')
     event.add('milf.tooltip.enchanted_book.max_level', '<magic>Max lvl</magic>:')
+    event.add('milf.atlas.tooltip', '<warning>The map does not work from the curio slot yet</warning> - keep the Atlas in your inventory. <wiggle>Fix coming soon!</wiggle>')
 
     const foodCategoryNamesEn = { fruit: 'fruit', cooked_meats: 'cooked meats', bread: 'bread' }
     Object.keys(foodCategoryNamesEn).forEach(priority => {
@@ -30,7 +31,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${MilfEffects.GRAD.custom("creatures beyond count", "#8A5CCF", "#CEBCFF")}`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${MilfEffects.GRAD.custom("new ores", "#55A2FA", "#8DDBFF")}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
-    event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
+    event.add('milf.stage.xaeromap', 'Unlocked: map without Atlas, radar, cave map')
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')
     event.add('milf.how_to_get_blaze_core.tooltip', 'You have a 50% chance of obtaining if you kill with the any wrench: The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'You have a 50% chance of obtaining if you kill with the wrench: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')

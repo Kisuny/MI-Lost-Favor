@@ -3,7 +3,7 @@
   "description": [
     "<lang key=milf.quest.first_steps.atlas.desc>"
   ],
-  "icon": "map_atlases:atlas{\"map_atlases:empty_maps\":{vanilla:9},\"map_atlases:map_collection\":{vanilla:[I;8,16,23,29,34,38,41,43,44]}}",
+  "icon": "milf:atlas",
   "x": 20.5,
   "y": 5,
   "deps": {
@@ -14,8 +14,7 @@
   "tasks": [
     {
       "match_components": "none",
-      "item": "map_atlases:atlas",
-      "components": "{\"map_atlases:empty_maps\":{vanilla:9},\"map_atlases:map_collection\":{vanilla:[I;8,16,23,29,34,38,41,43,44]}}",
+      "item": "milf:atlas",
       "type": "item"
     }
   ],

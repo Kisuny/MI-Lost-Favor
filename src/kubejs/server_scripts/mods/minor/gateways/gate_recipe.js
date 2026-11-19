@@ -54,6 +54,32 @@ ServerEvents.recipes(event => {
         }
     })
 
+    customGateRecipe(event, {
+        gateway: "gateways:overworldian_nights",
+        pattern: [
+            "DFD",
+            "GAG",
+            "BFB"
+        ],
+        keys: {
+            "D": {
+                "item": "minecraft:glowstone"
+            },
+            "G": {
+                "item": "minecraft:tnt"
+            },
+            "A": {
+                "item": "minecraft:ender_eye"
+            },
+            "B": {
+                "item": "minecraft:bone_block"
+            },
+            "F": {
+                "item": "devices:orichalcum_coin"
+            }
+        }
+    })
+
     customPedestalCraft(event, {
         time: 800,
         tier: "basic",
@@ -118,5 +144,6 @@ ServerEvents.recipes(event => {
 milfDisableRecipesById([
     "gateways:basic/slime",
     "gateways:basic/enderman",
-    "gateways:basic/blaze"
+    "gateways:basic/blaze",
+    "gateways:overworldian_nights"
 ])

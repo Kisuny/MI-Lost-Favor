@@ -1,0 +1,621 @@
+{
+    "type": "gateways:normal",
+    "size": "medium",
+    "color": "#5C54A4",
+    "waves": [
+        {
+            "max_wave_time": 1200,
+            "setup_time": 100,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombie",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:husk",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:skeleton",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:spider",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "creeperoverhaul:dark_oak_creeper",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 1.0
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombie",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:husk",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:skeleton",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:spider",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "creeperoverhaul:dark_oak_creeper",
+                    "rolls": 2
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 60,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1400,
+            "setup_time": 300,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombie_villager",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:drowned",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "variantsandventures:murk",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:bogged",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:cave_spider",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "creeperoverhaul:swamp_creeper",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:witch",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 1.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombie_villager",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:drowned",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "variantsandventures:murk",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:bogged",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:cave_spider",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "creeperoverhaul:swamp_creeper",
+                    "rolls": 2
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:witch",
+                    "rolls": 2
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 100,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1600,
+            "setup_time": 400,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "variantsandventures:gelid",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:stray",
+                    "count": 3,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "gateways:chain_with_bow"
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:spider",
+                    "count": 3,
+                    "modifiers": [
+                        {
+                            "type": "gateways:mob_effect",
+                            "effect": {
+                                "effect": "minecraft:speed",
+                                "amplifier": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "creeperoverhaul:snowy_creeper",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:witch",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "friendsandfoes:iceologer",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.35
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 2.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "variantsandventures:gelid",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:stray",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:spider",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "creeperoverhaul:snowy_creeper",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:witch",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "friendsandfoes:iceologer",
+                    "rolls": 2
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 150,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1800,
+            "setup_time": 400,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "variantsandventures:thicket",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "variantsandventures:verdant",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:cave_spider",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "creeperoverhaul:jungle_creeper",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:witch",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "friendsandfoes:illusioner",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:life_steal",
+                    "operation": "add_value",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "amplifier": 0
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "variantsandventures:thicket",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "variantsandventures:verdant",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:cave_spider",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "creeperoverhaul:jungle_creeper",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:witch",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "friendsandfoes:illusioner",
+                    "rolls": 2
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 220,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 2400,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombie",
+                    "count": 5,
+                    "desc": "name.gateways.undead_legionnaire",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.undead_legionnaire\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "gateways:iron_with_diamond"
+                        }
+                    ],
+                    "finalize_spawn": false
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:skeleton",
+                    "count": 4,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "gateways:chain_with_bow"
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:vindicator",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "creeperoverhaul:cave_creeper",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:witch",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "friendsandfoes:illusioner",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.75
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 4.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 4.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.3
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:life_steal",
+                    "operation": "add_value",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "amplifier": 0
+                    }
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:resistance",
+                        "amplifier": 0
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombie",
+                    "rolls": 15
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:skeleton",
+                    "rolls": 12
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:vindicator",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "creeperoverhaul:cave_creeper",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:witch",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "friendsandfoes:illusioner",
+                    "rolls": 3
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 350,
+                    "orb_size": 10
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "minecraft:chests/simple_dungeon",
+            "rolls": 10,
+            "desc": "rewards.gateways.loot_table.simple_dungeon"
+        },
+        {
+            "type": "gateways:experience",
+            "experience": 500,
+            "orb_size": 10
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:mob_effect",
+            "effect": "minecraft:blindness",
+            "duration": 600
+        },
+        {
+            "type": "gateways:mob_effect",
+            "effect": "minecraft:weakness",
+            "duration": 1200
+        },
+        {
+            "type": "gateways:summon",
+            "entity": {
+                "entity": "minecraft:witch",
+                "count": 3
+            }
+        }
+    ],
+    "rules": {
+        "allow_discarding": true
+    }
+}

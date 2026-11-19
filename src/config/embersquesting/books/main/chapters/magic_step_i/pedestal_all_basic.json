@@ -1,12 +1,11 @@
 {
   "title": "<lang key=block.spectrum.pedestal_all_basic>",
   "icon": "spectrum:pedestal_all_basic",
-  "x": 39,
+  "x": 40,
   "y": 51.5,
   "deps": {
     "all": [
-      "magic_step_i/citrine_shard",
-      "magic_step_i/any_colored_saplings"
+      "magic_step_i/citrine_shard"
     ]
   },
   "tasks": [
@@ -19,39 +18,39 @@
       "type": "item"
     },
     {
+      "optional": true,
       "tag": "milf:notched_polished_block",
       "count": 4,
       "type": "item",
-      "title": "Any Notched Polished Block",
-      "optional": true
+      "title": "Any Notched Polished Block"
     },
     {
+      "optional": true,
       "tag": "milf:chiseled_base_blocks",
       "count": 4,
       "type": "item",
-      "title": "Any Chiseled Base Blocks",
-      "optional": true
+      "title": "Any Chiseled Base Blocks"
     },
     {
+      "optional": true,
       "tag": "milf:pillar_base_blocks",
       "count": 8,
       "type": "item",
-      "title": "Any Pillar Base Blocks",
-      "optional": true
+      "title": "Any Pillar Base Blocks"
     },
     {
+      "optional": true,
       "tag": "milf:polished_gemstone",
       "count": 4,
       "type": "item",
-      "title": "Any Polished Gemstone Block",
-      "optional": true
+      "title": "Any Polished Gemstone Block"
     },
     {
+      "optional": true,
       "tag": "milf:polished_base_blocks",
       "count": 68,
       "type": "item",
-      "title": "Any Polished Base Blocks",
-      "optional": true
+      "title": "Any Polished Base Blocks"
     }
   ],
   "complete": {

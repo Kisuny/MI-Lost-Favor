@@ -360,8 +360,8 @@ ServerEvents.recipes(event => {
         catalyst: 'spectrum:moonstone_core',
         components: 
         [
-            "spectrum:budding_moonstone",
-            "spectrum:budding_moonstone",
+            "spectrum:moonstone_powder_block",
+            "spectrum:moonstone_powder_block",
             "modern_industrialization:analog_circuit",
             "apotheosis:gem_dust",
             "apotheosis:gem_dust",

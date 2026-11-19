@@ -16,6 +16,12 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    event.replaceInput(
+        { id: /^apothic_enchanting:(endshelf|draconic_endshelf|pearl_endshelf)$/ },
+        '#c:ender_pearls',
+        'neovitae:tabula_rasa'
+    )
+
 
     const tomeRecipes = [
         {
@@ -296,6 +302,33 @@ ServerEvents.recipes(event => {
         result: 'apotheosis:simple_reforging_table',
         removeOutput: true,
     })
+
+    miMachineRecipe(event, {energy:10, time:400, machine:"modern_industrialization:source_alembic",
+        inputItems:[
+            [{item:"apotheosis:simple_reforging_table"}],
+            [{item:"apotheosis:arcane_sands"}, 8],
+            [{tag:"c:ingots/netherite"}, 2],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:ethereal_source" }, 8000]
+        ],
+        outputItems: [[{item: "apotheosis:reforging_table"}, 1]]
+    })
+
+    alchemyTableCraft(event, {
+        input: [
+            { item: 'apothic_enchanting:apothic_enchanting_table' },
+            { item: 'apotheosis:godforged_pearl' },
+            { item: 'minecraft:nether_star' },
+            { item: 'apotheosis:godforged_pearl' },
+            { item: 'neovitae:crystal_cluster' },
+            { item: 'apotheosis:gem_dust' },
+        ],
+        output: 'apotheosis:augmenting_table',
+        syphon: 100000,
+        ticks: 400,
+        upgradeLevel: 6
+    });
 
 })
 

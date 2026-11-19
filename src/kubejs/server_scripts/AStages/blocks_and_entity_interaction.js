@@ -1,8 +1,8 @@
 const item_interact_block = [
 
-    { id: "augmenting_table", item: "apotheosis:augmenting_table", stage: "apotheosis_augmenting_table" },
-    { id: "reforging_table", item: "apotheosis:reforging_table", stage: "apotheosis_reforging_table" },
-    { id: "simple_reforging_table", item: "apotheosis:simple_reforging_table", stage: "apotheosis_simple_reforging_table" },
+    { id: "augmenting_table", item: "apotheosis:augmenting_table", stage: "apotheosis_augmenting_table", allowHold: true },
+    { id: "reforging_table", item: "apotheosis:reforging_table", stage: "apotheosis_reforging_table", allowHold: true },
+    { id: "simple_reforging_table", item: "apotheosis:simple_reforging_table", stage: "apotheosis_simple_reforging_table", allowHold: true },
     { id: "trading_post", item: "tradingpost:trading_post", stage: "early_items" },
 ]
 
@@ -15,7 +15,9 @@ const entity_interact_block = [
 item_interact_block.forEach(element => {
     let itemName = Item.of(element.item).hoverName
 
-    AStages.addRestrictionForItem(`astages/${element.id}`, element.stage, element.item)
+    let restriction = AStages.addRestrictionForItem(`astages/${element.id}`, element.stage, element.item)
+    if (element.allowHold) restriction.allowPickup().allowInventoryStorage()
+    restriction
         .pickupDelay(60)
         .disableBlockInteraction()
         .useMessage(() => Text.of(

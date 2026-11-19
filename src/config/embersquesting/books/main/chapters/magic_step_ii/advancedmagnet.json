@@ -4,13 +4,17 @@
     "<lang key=milf.quest.magic_step_iii.advancedmagnet.desc>"
   ],
   "icon": "simplemagnets:advancedmagnet{\"simplemagnets:magnet_active\":0b}",
-  "x": 28.5,
-  "y": 39.5,
+  "x": 15.5,
+  "y": 37,
   "deps": {
     "all": [
-      "automation_n_stuff/basicmagnet"
+      "automation_n_stuff/basicmagnet",
+      "magic_step_ii/enchanter"
     ]
   },
+  "aliases": [
+    "magic_step_iii/advancedmagnet"
+  ],
   "tasks": [
     {
       "match_components": "none",

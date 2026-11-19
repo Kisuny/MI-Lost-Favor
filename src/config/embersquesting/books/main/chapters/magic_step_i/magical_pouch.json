@@ -4,13 +4,16 @@
     "<lang key=milf.quest.magic_step_iii.magical_pouch.desc>"
   ],
   "icon": "devices:magical_pouch{\"devices:pouch_data\":{AutoExchange:1b,BonusSlots:0,Items:[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]}}",
-  "x": 20,
-  "y": 22,
+  "x": 56.5,
+  "y": 18.5,
   "deps": {
     "all": [
-      "magic_step_iii/wip"
+      "magic_step_i/infusion_altar"
     ]
   },
+  "aliases": [
+    "magic_step_iii/magical_pouch"
+  ],
   "tasks": [
     {
       "match_components": "none",
@@ -19,5 +22,6 @@
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "circle",
+  "size": 0.5
 }

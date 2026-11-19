@@ -1,0 +1,28 @@
+{
+  "title": "",
+  "description": [
+    "<lang key=milf.quest.magic_step_iii.key_binding.desc>"
+  ],
+  "icon": "animusnv:key_binding",
+  "x": 52,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/simple_key"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "animusnv:key_binding",
+      "type": "item"
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Key of Binding Trinket Slot",
+      "id": "milf:trinket/bindingkey_key_binding",
+      "type": "custom"
+    }
+  ],
+  "shape": "circle"
+}

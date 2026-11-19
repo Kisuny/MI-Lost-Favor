@@ -1,0 +1,26 @@
+{
+  "title": "<lang key=block.animusnv.blood_core>",
+  "description": [
+    "<lang key=milf.quest.magic_step_iii.blood_core.desc>"
+  ],
+  "icon": "animusnv:blood_core",
+  "x": 26.5,
+  "y": 12,
+  "deps": {
+    "all": [
+      "magic_step_iii/blood_sapling"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "animusnv:blood_core",
+      "type": "item"
+    },
+    {
+      "block": "animusnv:blood_core",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "circle"
+}

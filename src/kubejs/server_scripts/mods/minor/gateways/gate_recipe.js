@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         key: {
             q: 'spectrum:raw_azurite',
             w: 'thaumaturge:primordial_pearl',
-            e: 'toxony:warproot',
+            e: 'minecraft:warped_fungus',
             r: 'apotheosis:gem_dust',
             t: 'cognition:cognitive_crystal',
         },

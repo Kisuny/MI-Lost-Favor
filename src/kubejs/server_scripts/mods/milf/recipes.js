@@ -1156,24 +1156,18 @@ ServerEvents.recipes(event => {
         removeThisRecipeType: true
     })
 
-    customAlchemicalForgeCraft(event, {
-        affinities: [
-            "toxony:heat",
-            "toxony:nether",
-            "toxony:decay"
+    spiritInfusion(event, {
+        input: { item: "eidolon_repraised:shadow_gem", count: 1 },
+        result: { id: "milf:miasma_orb", count: 1 },
+        extraInputs: [
+            { item: "eidolon_edoni:stimulating_incense", count: 1 },
+            { item: "eidolon_repraised:soul_harvest_incense", count: 1 }
         ],
-        auxiliary: [
-            {
-                "item": "eidolon_edoni:stimulating_incense"
-            },
-            {
-                "item": "eidolon_repraised:soul_harvest_incense"
-            }
-        ],
-        main: {
-            "item": "eidolon_repraised:shadow_gem"
-        },
-        result: "milf:miasma_orb"
+        spirits: [
+            { type: "malum:wicked", count: 4 },
+            { type: "malum:infernal", count: 4 },
+            { type: "malum:earthen", count: 2 }
+        ]
     })
 
     miMachineRecipe(event, {

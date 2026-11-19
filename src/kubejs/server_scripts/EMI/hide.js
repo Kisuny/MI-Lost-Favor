@@ -208,7 +208,6 @@ RecipeViewerEvents.removeEntries('item', event => {
         'spectrum:pedestal_tier_1_structure_placer',
         'ars_nouveau:volcanic_sourcelink',
         "enchanted:enchanted_broomstick",
-        "toxony:redstone_mortar",
         "apotheosis:potion_charm",
         'apothic_enchanting:flimsy_ender_lead',
         'apothic_enchanting:ender_lead',

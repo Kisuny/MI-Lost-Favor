@@ -1,7 +1,7 @@
 ServerEvents.tags('item', event => {
     event.add("milf:runes", global.milfRunes)
 
-    event.add("milf:sweet_berries", ["minecraft:sweet_berries", "toxony:false_berries"])
+    event.add("milf:sweet_berries", ["minecraft:sweet_berries"])
     event.add("milf:claws", ["friendsandfoes:crab_claw", "starcatcher:lava_crab_claw", "cataclysm:chitin_claw"])
 
     event.add("milf:knives", [

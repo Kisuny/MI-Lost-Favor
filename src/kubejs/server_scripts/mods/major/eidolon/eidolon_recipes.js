@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
             'eqe'
         ],
         key: {
-            q: 'toxony:poison_paste',
+            q: 'minecraft:fermented_spider_eye',
             w: 'minecraft:book',
             e: 'minecraft:rotten_flesh',
         },

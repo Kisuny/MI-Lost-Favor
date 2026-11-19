@@ -258,19 +258,6 @@
 		],
 		"description": "Spectrum fusion shrine craft (customShrineRecipe helper)"
 	},
-	"Toxony: alchemical forge craft": {
-		"scope": "javascript",
-		"prefix": "toxony-alchemical-forge",
-		"body": [
-			"customAlchemicalForgeCraft(event, {",
-			"    affinities: [\"toxony:${1|cold,soul,wind,heat,decay,moon,sun,forest,nether,ocean|}\"],",
-			"    auxiliary: [{ \"item\": \"${2:modid_item}\" }],",
-			"    main: { \"item\": \"${3:modid_item}\" },",
-			"    result: \"${4:modid_item}\"",
-			"});"
-		],
-		"description": "Toxony alchemical forge craft (customAlchemicalForgeCraft helper)"
-	},
 	"Ars Nouveau: enchanting apparatus craft": {
 		"scope": "javascript",
 		"prefix": "ars-enchanting-apparatus",

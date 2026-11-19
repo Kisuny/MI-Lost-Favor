@@ -70,8 +70,6 @@ const MOB_GEAR_TIERS = [
         dropChance: 0.085,
         armor: mobGearArmorSet("leather").concat(
             ["milf:fishnets"],
-            mobGearArmorSet("toxony:hunter", {helmet: "hat", chestplate: "coat"}),
-            mobGearArmorSet("toxony:plague_doctor", {helmet: "hood", chestplate: "coat"}),
             ["mowziesmobs:umvuthana_mask_fury", "mowziesmobs:umvuthana_mask_fear", "mowziesmobs:umvuthana_mask_rage", "mowziesmobs:umvuthana_mask_bliss", "mowziesmobs:umvuthana_mask_misery", "mowziesmobs:umvuthana_mask_faith", "mowziesmobs:sol_visage"]
         ),
         weapons: ["ytech:flint_axe", "ytech:flint_knife", "ytech:flint_spear", "milf:flint_pickaxe", "dungeonsdelight:flint_cleaver"],
@@ -85,7 +83,6 @@ const MOB_GEAR_TIERS = [
         armor: mobGearArmorSet("golden").concat(
             mobGearArmorSet("chainmail"), 
             mobGearArmorSet("copper"),
-            mobGearArmorSet("toxony:plaguebringer", {helmet: "mask", chestplate: "coat"}),
             ["embers:ashen_goggles", "embers:ashen_cloak", "embers:ashen_leggings", "embers:ashen_boots"]
         ),
         weapons: mobGearTools("golden").concat(
@@ -106,7 +103,6 @@ const MOB_GEAR_TIERS = [
             mobGearArmorSet("mythsandlegends:winter_stalker"),
             mobGearArmorSet("immersiveengineering:armor_steel"),
             mobGearArmorSet("eidolon_repraised:silver"),
-            mobGearArmorSet("toxony:professional_hunter", {helmet: "hat", chestplate: "coat"}),
             mobGearArmorSet("thaumaturge:thaumium", { helmet: "helm", chestplate: "chest", leggings: "legs" })
 
         ),

@@ -7,7 +7,6 @@ NativeEvents.onEvent("it.crystalnest.harvest_with_ease.api.event.HarvestEvents$B
 const dropRushBushes = {
     "paganbless:winter_berry_bush": "3",
     "ars_nouveau:sourceberry_bush": "3",
-    "toxony:false_berry_bush": "3",
     "spectrum:sawblade_holly_bush": "7",
     "spectrum:blood_orchid": "5",
     "spectrum:aloe": "4",

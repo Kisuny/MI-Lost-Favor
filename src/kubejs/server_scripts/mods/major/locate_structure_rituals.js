@@ -89,7 +89,7 @@ const locate_structure_rituals = [
     {
         name: "frostmaw_spawn", structure: "mowziesmobs:frostmaw_spawn", items: [
             "minecraft:powder_snow_bucket",
-            "toxony:snow_mint",
+            "minecraft:blue_ice",
         ]
     },
     {

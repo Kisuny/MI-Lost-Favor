@@ -35,11 +35,8 @@ ServerEvents.generateData("before_mods", event => {
             "risus:killjoy"
         ],
         sword: [
-            "toxony:bone_saw"
         ],
         mace: [
-            "toxony:venom_club",
-            
             "grimoireofgaia:weapon_book",
             "grimoireofgaia:metal_club"
         ],

@@ -71,7 +71,6 @@ LootJS.modifiers(event => {
         { item_name: 'enigmaticlegacyplus:recall_potion' },
         { item_name: 'minecraft:enchanting_table' },
         { item_name: 'ars_nouveau:ritual_containment' },
-        { item_name: 'toxony:poison_paste' },
         { item_name: 'farmersdelight:skillet' },
         { item_name: 'farmersdelight:cooking_pot' },
         // { item_name: /thaumaturge:.*/ },

@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"ars_nouveau:novice_spell_book"}],
             [{item:"eidolon_repraised:shadow_gem"}],
-            [{item:"toxony:toxic_leather"}, 8],
+            [{item:"malum:soulwoven_silk"}, 8],
         ],
         inputFluids: [
             [{ fluid: "milf:shimmersteel_essence" }, 5000]
@@ -636,7 +636,7 @@ ServerEvents.recipes(event => {
             {
                 items: [
                     { "item": "eidolon_repraised:soul_harvest_incense" },
-                    { "item": "toxony:toxic_paste" },
+                    { "item": "minecraft:fermented_spider_eye" },
                 ],
                 stirs: 1
             },
@@ -662,7 +662,7 @@ ServerEvents.recipes(event => {
             {
                 items: [
                     { "item": "eidolon_repraised:soul_harvest_incense" },
-                    { "item": "toxony:toxic_paste" },
+                    { "item": "minecraft:fermented_spider_eye" },
                 ],
                 stirs: 1
             },

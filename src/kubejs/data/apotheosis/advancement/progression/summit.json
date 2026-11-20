@@ -82,32 +82,24 @@
             "trigger": "apotheosis:equipped_item"
         },
         "kill_azazel_human": {
+            "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "entity": [
+                "items": [
                     {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "netherman:azazel_human"
-                        }
+                        "items": "netherman:azazel_chestplate"
                     }
                 ]
-            },
-            "trigger": "minecraft:player_killed_entity"
+            }
         },
         "kill_azazel": {
+            "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "entity": [
+                "items": [
                     {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "netherman:azazel"
-                        }
+                        "items": "netherman:manipulator_stick"
                     }
                 ]
-            },
-            "trigger": "minecraft:player_killed_entity"
+            }
         },
         "complete_legends_gate": {
             "conditions": {

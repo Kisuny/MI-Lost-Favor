@@ -53,17 +53,24 @@ NetworkEvents.dataReceived("milf_pet_rock_deposits_to_scan", event => {
     let playerBlockPos = player.blockPosition()
     let genResultMap = worldTargets.generated()
     let blockPosTag = new $ListTag()
+    let foundDeposits = []
     
     let filteredMap = genResultMap.entrySet().stream().filter(entry => {
         return oresSet.contains(entry.getValue().name) && entry.getKey().closerThan(playerBlockPos, scanRadius)
     }).forEach(entry => {
-        scanndedOresMap.get(depositToOreMap.get(entry.getValue().name)).add($NbtUtils.writeBlockPos(entry.getKey()))
+        let foundOreId = depositToOreMap.get(entry.getValue().name)
+        scanndedOresMap.get(foundOreId).add($NbtUtils.writeBlockPos(entry.getKey()))
+        foundDeposits.push({ oreId: foundOreId, pos: entry.getKey() })
     })
 
     let posData = new $CompoundTag()
     scanndedOresMap.forEach((oreId, listTag) => {
         posData.put(oreId, listTag)
     })
+
+    if (data.contains("map_marker_names")) {
+        addDepositMapMarkers(player, event.level.dimension, foundDeposits, data.getCompound("map_marker_names"))
+    }
 
     let dataToSend = new $CompoundTag()
     dataToSend.put("depositPositions", posData)
@@ -72,3 +79,13 @@ NetworkEvents.dataReceived("milf_pet_rock_deposits_to_scan", event => {
 
     event.player.sendData("milf_pet_rock_deposits_scan", dataToSend)
 })
+
+const DEPOSIT_MARKER_ICON = "embersatlas:pickaxe"
+const DEPOSIT_MARKER_COLOR = 0xFFC83D
+
+function addDepositMapMarkers(player, dimension, deposits, markerNames) {
+    deposits.forEach(deposit => {
+        let markerName = markerNames.getString(deposit.oreId) || deposit.oreId
+        EmbersAtlas.giveMarker(player, markerName, dimension, deposit.pos, DEPOSIT_MARKER_ICON, DEPOSIT_MARKER_COLOR, false, false)
+    })
+}

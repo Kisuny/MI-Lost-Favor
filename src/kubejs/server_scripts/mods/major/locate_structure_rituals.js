@@ -206,6 +206,20 @@ const locate_structure_rituals = [
             "minecraft:crimson_fungus",
         ]
     },
+    {
+        name: "nether_geyser", structure: "netherman:nether_geyser", items: [
+            "minecraft:magma_block",
+            "minecraft:nether_wart_block",
+            "minecraft:lava_bucket",
+        ]
+    },
+    {
+        name: "gast_chamber", structure: "netherman:gast_chamber", items: [
+            "minecraft:crimson_roots",
+            "minecraft:shroomlight",
+            "minecraft:red_nether_bricks",
+        ]
+    },
 ]
 
 ServerEvents.generateData("before_mods", event => {

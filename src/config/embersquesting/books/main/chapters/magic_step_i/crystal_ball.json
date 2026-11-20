@@ -1,11 +1,12 @@
 {
   "title": "",
   "icon": "hexerei:crystal_ball",
-  "x": 9.5,
-  "y": 49.5,
+  "x": 21.78,
+  "y": 18.39,
   "deps": {
     "all": [
-      "magic_step_i/mixing_cauldron"
+      "magic_step_i/mixing_cauldron",
+      "bronze_age/quest_4"
     ]
   },
   "tasks": [
@@ -14,5 +15,5 @@
       "type": "item"
     }
   ],
-  "shape": "heart"
+  "shape": "circle"
 }

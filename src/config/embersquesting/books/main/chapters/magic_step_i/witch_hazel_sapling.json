@@ -4,18 +4,14 @@
     "<lang key=milf.quest.magic_step_i.witch_hazel_sapling.desc>"
   ],
   "icon": "hexerei:witch_hazel_sapling",
-  "x": 14,
-  "y": 50,
-  "deps": {
-    "all": [
-      "magic_step_i/book_of_shadows"
-    ]
-  },
+  "x": 9.74,
+  "y": 18.1,
   "tasks": [
     {
       "item": "hexerei:witch_hazel_sapling",
       "type": "item"
     }
   ],
-  "shape": "diamond"
+  "shape": "diamond",
+  "lines_out": "hover"
 }

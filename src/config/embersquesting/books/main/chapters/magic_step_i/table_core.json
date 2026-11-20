@@ -4,13 +4,12 @@
     "<lang key=milf.quest.magic_step_i.table_core.desc>"
   ],
   "icon": "milf:table_core",
-  "x": 15.5,
-  "y": 51.5,
+  "x": 32.7,
+  "y": 21.54,
   "deps": {
     "all": [
       "magic_step_i/runic_charge",
-      "magic_step_i/creeper_heart",
-      "magic_step_i/witch_hazel_sapling"
+      "magic_step_i/creeper_heart"
     ]
   },
   "tasks": [
@@ -25,6 +24,6 @@
       "type": "item"
     }
   ],
-  "shape": "gear",
-  "size": 2.0
+  "shape": "diamond",
+  "size": 1.25
 }

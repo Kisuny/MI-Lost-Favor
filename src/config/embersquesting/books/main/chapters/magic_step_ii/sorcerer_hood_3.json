@@ -1,8 +1,8 @@
 {
   "title": "<lang key=item.ars_nouveau.sorcerer_hood>",
   "icon": "ars_nouveau:sorcerer_hood{\"ars_nouveau:armor_perks\":{color:\"\",perkTags:{},perks:[],tier:2}}",
-  "x": 107,
-  "y": 16,
+  "x": 134.81,
+  "y": 38.4,
   "deps": {
     "all": [
       "magic_step_ii/sorcerer_hood_2"
@@ -34,5 +34,6 @@
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "star",
+  "size": 1.25
 }

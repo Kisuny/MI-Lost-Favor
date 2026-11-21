@@ -7,10 +7,10 @@
     "mapping": "deny",
     "cave_map": "deny",
     "map_modes": "deny",
-    "radar_players": "deny",
-    "radar_hostile": "deny",
-    "radar_passive": "deny",
-    "radar_items": "deny",
+    "radar_players": "allow",
+    "radar_hostile": "allow",
+    "radar_passive": "allow",
+    "radar_items": "allow",
     "slime_chunks": "deny",
     "lod_map": "deny",
     "server_map": "deny"
@@ -23,11 +23,7 @@
         "world_map": "allow",
         "mapping": "allow",
         "cave_map": "allow",
-        "map_modes": "allow",
-        "radar_players": "allow",
-        "radar_hostile": "allow",
-        "radar_passive": "allow",
-        "radar_items": "allow"
+        "map_modes": "allow"
       }
     }
   ],

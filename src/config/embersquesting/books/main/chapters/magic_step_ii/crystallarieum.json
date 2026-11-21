@@ -1,7 +1,340 @@
 {
   "title": "",
   "description": [
-    "<lang key=milf.quest.magic_step_ii.crystallarieum.desc>"
+    "<lang key=milf.quest.magic_step_ii.crystallarieum.desc>",
+    {
+      "materials": false,
+      "timeline": {
+        "puppet": {
+          "keys": [
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 0,
+              "pos": [
+                1.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 30.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 330,
+              "pos": [
+                1.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 30.0
+            },
+            {
+              "walk": true,
+              "ease": "ease_in_out_sine",
+              "t": 370,
+              "pos": [
+                3.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 30.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 420,
+              "pos": [
+                3.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 30.0
+            },
+            {
+              "walk": true,
+              "ease": "ease_in_out_sine",
+              "t": 460,
+              "pos": [
+                1.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 30.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 590,
+              "pos": [
+                1.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 30.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 600,
+              "pos": [
+                1.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 12.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 760,
+              "pos": [
+                1.5,
+                1.0,
+                2.55
+              ],
+              "yaw": 180.0,
+              "pitch": 12.0
+            }
+          ],
+          "actions": [
+            {
+              "t": 0,
+              "action": "appear"
+            },
+            {
+              "t": 20,
+              "action": "hold",
+              "item": "minecraft:raw_iron"
+            },
+            {
+              "t": 40,
+              "action": "swing",
+              "prompt": "right"
+            },
+            {
+              "t": 48,
+              "action": "hold",
+              "item": "minecraft:air"
+            },
+            {
+              "t": 130,
+              "action": "hold",
+              "item": "spectrum:liquid_crystal_bucket"
+            },
+            {
+              "t": 150,
+              "action": "swing",
+              "prompt": "right"
+            },
+            {
+              "t": 156,
+              "action": "hold",
+              "item": "minecraft:bucket"
+            },
+            {
+              "t": 200,
+              "action": "hold",
+              "item": "minecraft:air"
+            },
+            {
+              "t": 230,
+              "action": "hold",
+              "item": "minecraft:iron_nugget"
+            },
+            {
+              "t": 250,
+              "action": "swing",
+              "prompt": "right"
+            },
+            {
+              "t": 258,
+              "action": "hold",
+              "item": "minecraft:air"
+            },
+            {
+              "t": 610,
+              "action": "swing",
+              "prompt": "left"
+            }
+          ]
+        },
+        "captions": [
+          {
+            "t": 0,
+            "until": 120,
+            "text": "<lang key=milf.quest.magic_step_ii.crystallarieum.scene.1>"
+          },
+          {
+            "t": 120,
+            "until": 220,
+            "text": "<lang key=milf.quest.magic_step_ii.crystallarieum.scene.2>"
+          },
+          {
+            "t": 220,
+            "until": 320,
+            "text": "<lang key=milf.quest.magic_step_ii.crystallarieum.scene.3>"
+          },
+          {
+            "t": 320,
+            "until": 460,
+            "text": "<lang key=milf.quest.magic_step_ii.crystallarieum.scene.4>",
+            "at": [
+              3.5,
+              2.6,
+              1.5
+            ]
+          },
+          {
+            "t": 460,
+            "until": 600,
+            "text": "<lang key=milf.quest.magic_step_ii.crystallarieum.scene.5>",
+            "at": [
+              1.5,
+              3.2,
+              1.5
+            ]
+          },
+          {
+            "t": 600,
+            "until": 760,
+            "text": "<lang key=milf.quest.magic_step_ii.crystallarieum.scene.6>"
+          }
+        ],
+        "duration": 760,
+        "mode": "loop"
+      },
+      "pitch": 35.0,
+      "ortho": true,
+      "interactive": true,
+      "steps": [
+        {
+          "ticks": 50
+        },
+        {
+          "ticks": 430,
+          "place": [
+            {
+              "pos": [
+                1,
+                2,
+                1
+              ],
+              "block": "spectrum:small_iron_bud[facing=up]"
+            }
+          ]
+        },
+        {
+          "ticks": 60,
+          "place": [
+            {
+              "pos": [
+                1,
+                2,
+                1
+              ],
+              "block": "spectrum:large_iron_bud[facing=up]"
+            }
+          ]
+        },
+        {
+          "ticks": 76,
+          "place": [
+            {
+              "pos": [
+                1,
+                2,
+                1
+              ],
+              "block": "spectrum:iron_cluster[facing=up]"
+            }
+          ]
+        },
+        {
+          "ticks": 144,
+          "remove": [
+            [
+              1,
+              2,
+              1
+            ]
+          ],
+          "spawn": [
+            {
+              "nbt": "{Item:{id:\"spectrum:pure_iron\",count:1},PickupDelay:32767}",
+              "entity": "minecraft:item",
+              "pos": [
+                1.4,
+                2.2,
+                1.5
+              ]
+            },
+            {
+              "nbt": "{Item:{id:\"spectrum:pure_iron\",count:1},PickupDelay:32767}",
+              "entity": "minecraft:item",
+              "pos": [
+                1.6,
+                2.3,
+                1.4
+              ]
+            },
+            {
+              "nbt": "{Item:{id:\"spectrum:pure_iron\",count:1},PickupDelay:32767}",
+              "entity": "minecraft:item",
+              "pos": [
+                1.5,
+                2.4,
+                1.6
+              ]
+            },
+            {
+              "nbt": "{Item:{id:\"spectrum:pure_iron\",count:1},PickupDelay:32767}",
+              "entity": "minecraft:item",
+              "pos": [
+                1.5,
+                2.2,
+                1.5
+              ]
+            }
+          ]
+        }
+      ],
+      "loop": false,
+      "yaw": -125.0,
+      "layers": [
+        [
+          "XXXXX",
+          "XXXXX",
+          "XXXXX",
+          "XXXXX"
+        ],
+        [
+          "     ",
+          " C P ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          "     ",
+          "     ",
+          "     "
+        ]
+      ],
+      "key": {
+        "P": "spectrum:color_picker",
+        "X": "spectrum:polished_basalt",
+        "C": "spectrum:crystallarieum"
+      },
+      "type": "scene"
+    }
   ],
   "icon": "spectrum:crystallarieum",
   "x": 56.66,

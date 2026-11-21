@@ -1,5 +1,79 @@
 {
   "title": "<lang key=block.spectrum.spirit_instiller>",
+  "description": [
+    {
+      "world_preview": true,
+      "layers": [
+        [
+          "      P ",
+          "PXXXX   ",
+          "XXXXXX  ",
+          "XXXXXXXL",
+          "XXXXXXXL",
+          "XXXXXXXL",
+          "XXXXXX  ",
+          "PXXXX   ",
+          "      P "
+        ],
+        [
+          "      G ",
+          "P       ",
+          "  C     ",
+          " LLLLL  ",
+          " LSLLL  ",
+          " LLLLL  ",
+          "  C     ",
+          "P       ",
+          "      G "
+        ],
+        [
+          "        ",
+          "K       ",
+          "  I     ",
+          "        ",
+          "        ",
+          "        ",
+          "  I     ",
+          "K       ",
+          "        "
+        ],
+        [
+          "        ",
+          "        ",
+          "        ",
+          "        ",
+          "        ",
+          "        ",
+          "        ",
+          "        ",
+          "        "
+        ],
+        [
+          "        ",
+          "        ",
+          "  M     ",
+          "        ",
+          "        ",
+          "        ",
+          "  M     ",
+          "        ",
+          "        "
+        ]
+      ],
+      "key": {
+        "P": "#spectrum:structure/pillars[axis=y]",
+        "S": "spectrum:spirit_instiller",
+        "X": "#spectrum:structure/bases",
+        "M": "#spectrum:gemstone_chimes",
+        "G": "#spectrum:structure/midgame_runes",
+        "C": "#spectrum:structure/chiseled",
+        "I": "#spectrum:item_bowls",
+        "K": "#spectrum:structure/notched",
+        "L": "#spectrum:structure/base_slabs"
+      },
+      "type": "scene"
+    }
+  ],
   "icon": "spectrum:spirit_instiller",
   "x": 32.13,
   "y": 19.01,
@@ -11,60 +85,6 @@
   "tasks": [
     {
       "item": "spectrum:spirit_instiller",
-      "type": "item"
-    },
-    {
-      "optional": true,
-      "tag": "milf:onyx_chiseled_block",
-      "count": 2,
-      "type": "item",
-      "title": "Any Onyx Chiseled Block"
-    },
-    {
-      "optional": true,
-      "tag": "milf:pillar_base_blocks",
-      "count": 6,
-      "type": "item",
-      "title": "Any Pillar Base Blocks"
-    },
-    {
-      "optional": true,
-      "tag": "milf:item_bowl",
-      "type": "item",
-      "title": "Any Item Bowl"
-    },
-    {
-      "optional": true,
-      "tag": "milf:chiseled_base_blocks",
-      "count": 2,
-      "type": "item",
-      "title": "Any Chiseled Base Blocks"
-    },
-    {
-      "optional": true,
-      "tag": "milf:polished_base_blocks",
-      "count": 41,
-      "type": "item",
-      "title": "Any Polished Base Blocks"
-    },
-    {
-      "optional": true,
-      "tag": "milf:polished_slabs",
-      "count": 17,
-      "type": "item",
-      "title": "Any Polished Slabs"
-    },
-    {
-      "optional": true,
-      "tag": "milf:notched_polished_block",
-      "count": 2,
-      "type": "item",
-      "title": "Any Notched Polished Block"
-    },
-    {
-      "optional": true,
-      "item": "spectrum:topaz_chime",
-      "count": 2,
       "type": "item"
     }
   ],

@@ -1,7 +1,568 @@
 {
   "title": "<lang key=block.paganbless.winch>",
   "description": [
-    "<lang key=milf.quest.magic_step_i.winch.desc>"
+    "<lang key=milf.quest.magic_step_i.winch.desc>",
+    {
+      "materials": false,
+      "timeline": {
+        "puppet": {
+          "keys": [
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 0,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 180.0,
+              "pitch": -46.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 200,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 180.0,
+              "pitch": -46.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 212,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 320,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 335,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 180.0,
+              "pitch": 41.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 480,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 180.0,
+              "pitch": 41.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 500,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 544,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "crouch": true,
+              "t": 546,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "crouch": true,
+              "t": 564,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 566,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 209.0,
+              "pitch": -42.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 575,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 180.0,
+              "pitch": 41.0
+            },
+            {
+              "walk": false,
+              "ease": "ease_in_out_sine",
+              "t": 720,
+              "pos": [
+                2.5,
+                1.0,
+                3.3
+              ],
+              "yaw": 180.0,
+              "pitch": 41.0
+            }
+          ],
+          "actions": [
+            {
+              "t": 0,
+              "action": "appear"
+            },
+            {
+              "t": 60,
+              "action": "hold",
+              "item": "paganbless:rope"
+            },
+            {
+              "t": 100,
+              "action": "swing",
+              "prompt": "right"
+            },
+            {
+              "t": 106,
+              "action": "hold",
+              "item": "minecraft:air"
+            },
+            {
+              "t": 215,
+              "action": "swing",
+              "prompt": "right"
+            },
+            {
+              "t": 238,
+              "action": "swing",
+              "prompt": "right"
+            },
+            {
+              "t": 340,
+              "action": "drop",
+              "item": "minecraft:amethyst_shard"
+            },
+            {
+              "t": 360,
+              "action": "swing"
+            },
+            {
+              "t": 385,
+              "action": "swing"
+            },
+            {
+              "t": 554,
+              "action": "swing",
+              "prompt": "sneak"
+            }
+          ]
+        },
+        "captions": [
+          {
+            "t": 0,
+            "until": 100,
+            "text": "<lang key=milf.quest.magic_step_i.winch.scene.1>",
+            "at": [
+              2.5,
+              5.4,
+              1.5
+            ]
+          },
+          {
+            "t": 100,
+            "until": 200,
+            "text": "<lang key=milf.quest.magic_step_i.winch.scene.2>"
+          },
+          {
+            "t": 200,
+            "until": 320,
+            "text": "<lang key=milf.quest.magic_step_i.winch.scene.3>",
+            "at": [
+              3.5,
+              5.4,
+              1.5
+            ]
+          },
+          {
+            "t": 320,
+            "until": 480,
+            "text": "<lang key=milf.quest.magic_step_i.winch.scene.4>"
+          },
+          {
+            "t": 480,
+            "until": 560,
+            "text": "<lang key=milf.quest.magic_step_i.winch.scene.5>",
+            "at": [
+              3.5,
+              5.4,
+              1.5
+            ]
+          },
+          {
+            "t": 560,
+            "until": 720,
+            "text": "<lang key=milf.quest.magic_step_i.winch.scene.6>"
+          }
+        ],
+        "duration": 720,
+        "mode": "loop",
+        "camera": [
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 0,
+            "yaw": -125.0,
+            "pitch": 35.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 190,
+            "yaw": -125.0,
+            "pitch": 35.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 215,
+            "yaw": -125.0,
+            "pitch": 15.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 300,
+            "yaw": -125.0,
+            "pitch": 15.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 330,
+            "yaw": -125.0,
+            "pitch": 35.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 480,
+            "yaw": -125.0,
+            "pitch": 35.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 510,
+            "yaw": -125.0,
+            "pitch": 20.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 556,
+            "yaw": -125.0,
+            "pitch": 20.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 570,
+            "yaw": -125.0,
+            "pitch": 35.0
+          },
+          {
+            "ease": "ease_in_out_sine",
+            "path": "linear",
+            "t": 720,
+            "yaw": -125.0,
+            "pitch": 35.0
+          }
+        ]
+      },
+      "pitch": 35.0,
+      "ortho": true,
+      "interactive": true,
+      "steps": [
+        {
+          "ticks": 110
+        },
+        {
+          "ticks": 113,
+          "place": [
+            {
+              "pos": [
+                2,
+                3,
+                1
+              ],
+              "block": "paganbless:rope[facing=up]"
+            },
+            {
+              "pos": [
+                2,
+                2,
+                1
+              ],
+              "block": "paganbless:rope[facing=up]"
+            },
+            {
+              "pos": [
+                2,
+                1,
+                1
+              ],
+              "block": "minecraft:anvil[facing=north]"
+            }
+          ]
+        },
+        {
+          "ticks": 23,
+          "place": [
+            {
+              "pos": [
+                2,
+                1,
+                1
+              ],
+              "block": "minecraft:barrier"
+            },
+            {
+              "pos": [
+                2,
+                2,
+                1
+              ],
+              "block": "minecraft:anvil[facing=north]"
+            }
+          ]
+        },
+        {
+          "ticks": 114,
+          "place": [
+            {
+              "pos": [
+                2,
+                1,
+                1
+              ],
+              "block": "minecraft:air"
+            },
+            {
+              "pos": [
+                2,
+                2,
+                1
+              ],
+              "block": "minecraft:barrier"
+            },
+            {
+              "pos": [
+                2,
+                3,
+                1
+              ],
+              "block": "minecraft:anvil[facing=north]"
+            }
+          ]
+        },
+        {
+          "transform": [
+            {
+              "to": "enchanted:attuned_stone_charged",
+              "particles": "minecraft:poof",
+              "at": [
+                2.7,
+                1.05,
+                1.6
+              ],
+              "from": "minecraft:barrier"
+            }
+          ],
+          "ticks": 25
+        },
+        {
+          "transform": [
+            {
+              "to": "enchanted:whiff_of_magic",
+              "particles": "minecraft:poof",
+              "at": [
+                2.3,
+                1.05,
+                1.65
+              ],
+              "from": "minecraft:barrier"
+            }
+          ],
+          "ticks": 175
+        },
+        {
+          "transform": [
+            {
+              "to": "waystones:warp_stone",
+              "particles": "minecraft:crit",
+              "sound": "minecraft:block.anvil.land",
+              "at": [
+                2.5,
+                1.05,
+                1.5
+              ],
+              "from": "minecraft:amethyst_shard"
+            },
+            {
+              "to": "",
+              "particles": "minecraft:crit",
+              "at": [
+                2.5,
+                1.05,
+                1.5
+              ],
+              "from": "enchanted:attuned_stone_charged"
+            },
+            {
+              "to": "",
+              "particles": "minecraft:crit",
+              "at": [
+                2.5,
+                1.05,
+                1.5
+              ],
+              "from": "enchanted:whiff_of_magic"
+            }
+          ],
+          "ticks": 160,
+          "place": [
+            {
+              "pos": [
+                2,
+                3,
+                1
+              ],
+              "block": "paganbless:rope[facing=up]"
+            },
+            {
+              "pos": [
+                2,
+                2,
+                1
+              ],
+              "block": "paganbless:rope[facing=up]"
+            },
+            {
+              "pos": [
+                2,
+                1,
+                1
+              ],
+              "block": "minecraft:anvil[facing=north]"
+            }
+          ]
+        }
+      ],
+      "loop": false,
+      "yaw": -125.0,
+      "layers": [
+        [
+          "SSSSS",
+          "SSSSS",
+          "SSSSS",
+          "SSSSS",
+          "SSSSS"
+        ],
+        [
+          "     ",
+          "     ",
+          "     ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          "     ",
+          "     ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          "     ",
+          "     ",
+          "     ",
+          "     "
+        ],
+        [
+          "     ",
+          "  WC ",
+          "     ",
+          "     ",
+          "     "
+        ]
+      ],
+      "key": {
+        "W": "paganbless:winch[facing=east]",
+        "S": "minecraft:stone",
+        "C": "paganbless:crank[facing=west]"
+      },
+      "type": "scene"
+    }
   ],
   "icon": "paganbless:winch",
   "x": 27.5,

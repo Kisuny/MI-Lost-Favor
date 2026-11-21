@@ -1,7 +1,88 @@
 {
   "title": "",
   "description": [
-    "<lang key=milf.quest.magic_step_ii.enchanter.desc>"
+    "<lang key=milf.quest.magic_step_ii.enchanter.desc>",
+    {
+      "type": "scene",
+      "layers": [
+        [
+          "           ",
+          " XXX   XXX ",
+          " X X   X X ",
+          " XXX   XXX ",
+          "           ",
+          "           ",
+          "           ",
+          " XXX   XXX ",
+          " X X   X X ",
+          " XXX   XXX ",
+          "           "
+        ],
+        [
+          " XXXXXXXXX ",
+          "XCCCXXXCCCX",
+          "XCXCXXXCXCX",
+          "XCCCXXXCCCX",
+          "XXXXXXXXXXX",
+          "XXXXXXXXXXX",
+          "XXXXXXXXXXX",
+          "XCCCXXXCCCX",
+          "XCXCXXXCXCX",
+          "XCCCXXXCCCX",
+          " XXXXXXXXX "
+        ],
+        [
+          "  P     P  ",
+          "    BBB    ",
+          "P P XXX P P",
+          "    XXX    ",
+          " BXXXXXXXB ",
+          " BXXXXXXXB ",
+          " BXXXXXXXB ",
+          "    XXX    ",
+          "P P XXX P P",
+          "    BBB    ",
+          "  P     P  "
+        ],
+        [
+          "  L     L  ",
+          "           ",
+          "L G     G L",
+          "    BBB    ",
+          "   BXXXB   ",
+          "   BXXXB   ",
+          "   BXXXB   ",
+          "    BBB    ",
+          "L G     G L",
+          "           ",
+          "  L     L  "
+        ],
+        [
+          "  I     I  ",
+          "           ",
+          "I         I",
+          "           ",
+          "           ",
+          "     F     ",
+          "           ",
+          "           ",
+          "I         I",
+          "           ",
+          "  I     I  "
+        ]
+      ],
+      "key": {
+        "B": "#spectrum:structure/base_slabs",
+        "C": "spectrum:liquid_crystal",
+        "F": "spectrum:enchanter",
+        "G": "#spectrum:structure/gemstones",
+        "I": "#spectrum:item_bowls",
+        "L": "#spectrum:structure/lights",
+        "P": "#spectrum:structure/pillars[axis=y]",
+        "X": "#spectrum:structure/bases"
+      },
+      "world_preview": true
+    }
   ],
   "icon": "spectrum:enchanter",
   "x": 21.77,

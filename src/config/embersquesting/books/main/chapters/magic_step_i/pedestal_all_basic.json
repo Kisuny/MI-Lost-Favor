@@ -1,5 +1,78 @@
 {
   "title": "<lang key=block.spectrum.pedestal_all_basic>",
+  "description": [
+    {
+      "world_preview": true,
+      "pitch": 35.0,
+      "ortho": true,
+      "interactive": true,
+      "loop": false,
+      "yaw": -125.0,
+      "layers": [
+        [
+          "           ",
+          "   XXXXX   ",
+          "  XXXXXXX  ",
+          " XXXXXXXXX ",
+          " XXXXXXXXX ",
+          " XXXX XXXX ",
+          " XXXXXXXXX ",
+          " XXXXXXXXX ",
+          "  XXXXXXX  ",
+          "   XXXXX   ",
+          "           "
+        ],
+        [
+          "K         K",
+          "           ",
+          "  Q     Q  ",
+          "           ",
+          "           ",
+          "     P     ",
+          "           ",
+          "           ",
+          "  Q     Q  ",
+          "           ",
+          "K         K"
+        ],
+        [
+          "Q         Q",
+          "           ",
+          "  S     S  ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "  S     S  ",
+          "           ",
+          "Q         Q"
+        ],
+        [
+          "C         C",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "           ",
+          "C         C"
+        ]
+      ],
+      "key": {
+        "Q": "#spectrum:structure/pillars[axis=y]",
+        "P": "spectrum:pedestal_all_basic",
+        "S": "#spectrum:structure/gemstones",
+        "X": "#spectrum:structure/bases",
+        "C": "#spectrum:structure/chiseled",
+        "K": "#spectrum:structure/notched"
+      },
+      "type": "scene"
+    }
+  ],
   "icon": "spectrum:pedestal_all_basic",
   "x": 69.16,
   "y": 21.54,
@@ -16,41 +89,6 @@
     {
       "item": "spectrum:pedestal_all_basic",
       "type": "item"
-    },
-    {
-      "optional": true,
-      "tag": "milf:notched_polished_block",
-      "count": 4,
-      "type": "item",
-      "title": "Any Notched Polished Block"
-    },
-    {
-      "optional": true,
-      "tag": "milf:chiseled_base_blocks",
-      "count": 4,
-      "type": "item",
-      "title": "Any Chiseled Base Blocks"
-    },
-    {
-      "optional": true,
-      "tag": "milf:pillar_base_blocks",
-      "count": 8,
-      "type": "item",
-      "title": "Any Pillar Base Blocks"
-    },
-    {
-      "optional": true,
-      "tag": "milf:polished_gemstone",
-      "count": 4,
-      "type": "item",
-      "title": "Any Polished Gemstone Block"
-    },
-    {
-      "optional": true,
-      "tag": "milf:polished_base_blocks",
-      "count": 68,
-      "type": "item",
-      "title": "Any Polished Base Blocks"
     }
   ],
   "complete": {

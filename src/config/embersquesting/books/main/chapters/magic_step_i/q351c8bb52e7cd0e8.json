@@ -1,7 +1,76 @@
 {
   "title": "",
   "description": [
-    "<lang key=milf.quest.magic_step_i.q351c8bb52e7cd0e8.desc>"
+    "<lang key=milf.quest.magic_step_i.q351c8bb52e7cd0e8.desc>",
+    {
+      "type": "scene",
+      "layers": [
+        [
+          "  XXXXX  ",
+          " XXXXXXX ",
+          "XXCXXXCXX",
+          "XXXLLLXXX",
+          "XXXL LXXX",
+          "XXXLLLXXX",
+          "XXCXXXCXX",
+          " XXXXXXX ",
+          "  XXXXX  "
+        ],
+        [
+          "  XXXXX  ",
+          " P     P ",
+          "X       X",
+          "X       X",
+          "X   F   X",
+          "X       X",
+          "X       X",
+          " P     P ",
+          "  XXXXX  "
+        ],
+        [
+          "         ",
+          " P     P ",
+          "         ",
+          "         ",
+          "         ",
+          "         ",
+          "         ",
+          " P     P ",
+          "         "
+        ],
+        [
+          "         ",
+          " S     S ",
+          "         ",
+          "         ",
+          "         ",
+          "         ",
+          "         ",
+          " S     S ",
+          "         "
+        ],
+        [
+          "         ",
+          " L     L ",
+          "         ",
+          "         ",
+          "         ",
+          "         ",
+          "         ",
+          " L     L ",
+          "         "
+        ]
+      ],
+      "key": {
+        "X": "#spectrum:structure/bases",
+        "P": "#spectrum:structure/pillars[axis=y]",
+        "L": "#spectrum:structure/base_slabs",
+        "S": "#spectrum:structure/gemstones",
+        "C": "#spectrum:structure/chiseled",
+        "F": "#spectrum:fusion_shrines"
+      },
+      "world_preview": true
+    }
   ],
   "icon": "spectrum:fusion_shrine_basalt",
   "x": 79.22,
@@ -20,40 +89,6 @@
       "tag": "milf:fusion_shrine",
       "type": "item",
       "title": "Any Fusion Shrine"
-    },
-    {
-      "tag": "milf:pillar_base_blocks",
-      "count": 8,
-      "type": "item",
-      "title": "Any Pillar Base Blocks",
-      "optional": true
-    },
-    {
-      "tag": "milf:polished_slabs",
-      "count": 12,
-      "type": "item",
-      "title": "Any Polished Slabs",
-      "optional": true
-    },
-    {
-      "tag": "milf:polished_gemstone",
-      "type": "item",
-      "title": "Any Polished Gemstone Block",
-      "optional": true
-    },
-    {
-      "tag": "milf:polished_base_blocks",
-      "count": 77,
-      "type": "item",
-      "title": "Any Polished Base Blocks",
-      "optional": true
-    },
-    {
-      "tag": "milf:chiseled_base_blocks",
-      "count": 4,
-      "type": "item",
-      "title": "Any Chiseled Base Blocks",
-      "optional": true
     }
   ],
   "complete": {

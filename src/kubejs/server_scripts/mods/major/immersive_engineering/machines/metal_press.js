@@ -164,6 +164,14 @@ ServerEvents.recipes(event => {
 
     iePressRecipe(event, {
         inputItems: [
+            [{ item: "minecraft:rotten_flesh" }, 4]
+        ],
+        mold: { item: "immersiveengineering:mold_packing_4" },
+        outputItems: [[{ id: "thaumaturge:flesh_block" }]]
+    })
+
+    iePressRecipe(event, {
+        inputItems: [
             [{ item: "modern_industrialization:steel_ingot" }, 9]
         ],
         mold: { item: "immersiveengineering:mold_packing_9" },

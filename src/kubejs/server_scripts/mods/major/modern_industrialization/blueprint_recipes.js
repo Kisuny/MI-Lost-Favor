@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "milf:small_copper_fluid_container" }, 1]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff: true
     })
 
     ieBlueprintRecipe(event, {
@@ -40,6 +41,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "milf:small_steel_fluid_container" }, 1]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff:true
     })
 
     ieBlueprintRecipe(event, {

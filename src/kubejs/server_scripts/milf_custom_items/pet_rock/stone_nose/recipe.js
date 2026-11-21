@@ -78,12 +78,12 @@ ServerEvents.recipes(event => {
 
     yTechShaped(event, {
         pattern: [
-            "pNp",
-            "NPN",
-            "pNp"
+            "pCp",
+            "CNC",
+            "pCp"
         ],
         key: {
-            P: { item: "milf:pet_rock" },
+            C: { item: "minecraft:cobbled_deepslate" },
             N: { item: "milf:stone_nose" },
             p: { item: "ytech:pebble" },
 

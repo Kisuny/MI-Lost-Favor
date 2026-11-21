@@ -1029,7 +1029,30 @@ ServerEvents.recipes(event => {
                 B: { "tag": `c:bolts/${material}` }
             },
             outputItems: [[{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]],
-            removeRecipe: true
+            removeRecipe: true,
+            compatOff: true
+        })
+
+        miMachineRecipe(event, {
+            energy: 4, time: 400, machine: "modern_industrialization:packer",
+            inputItems: [
+                [{ "tag": `c:gears/${material}` }, 1],
+                [{ "tag": `c:large_plates/${material}` }, 4],
+                [{ "tag": `c:bolts/${material}` }, 4]
+            ],
+            outputItems: [[{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]],
+        })
+
+        miMachineRecipe(event, {
+            energy: 8, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{ "tag": `c:gears/${material}` }, 1],
+                [{ "tag": `c:large_plates/${material}` }, 2],
+            ],
+            inputFluids:[
+                [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+            ],
+            outputItems: [[{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]],
         })
     }
 

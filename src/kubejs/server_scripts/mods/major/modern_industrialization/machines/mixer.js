@@ -77,6 +77,18 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
+        energy: 4, time: 109, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "architects_palette:cerebral_plate" }, 1],
+            [{ item: "milf:fire_clay_ball" }, 1],
+            [{ item: "embers:caminite_blend" }, 1],
+            [{ item: "milf:pottery_clay_ball" }, 1]
+
+        ],
+        outputItems: [[{ item: "embers:adhesive" }, 5]]
+    })
+
+    miMachineRecipe(event, {
         energy: 4, time: 200, machine: "modern_industrialization:mixer",
         inputItems: [
             [{ item: "modern_industrialization:coke_dust" }, 1],

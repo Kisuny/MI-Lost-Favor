@@ -26,6 +26,7 @@ const samplesData = [
                 ["modern_industrialization:quartz_ore", 0.12]
             ]
         },
+        color: 0Xe6c6af,
         oreTier: 0
     },
 
@@ -50,6 +51,7 @@ const samplesData = [
                 ["modern_industrialization:lead_ore", 0.17]
             ]
         },
+        color: 0Xc75d34,
         oreTier: 0
     },
 
@@ -79,6 +81,7 @@ const samplesData = [
                 ["minecraft:diamond_ore", 0.04]
             ]
         },
+        color: 0X313131,
         oreTier: 0
     },
 
@@ -105,6 +108,8 @@ const samplesData = [
                 ["minecraft:lapis_ore", 0.07]
             ]
         },
+        color: 0X6878af,
+
         oreTier: 0
     },
 
@@ -129,6 +134,8 @@ const samplesData = [
                 ["minecraft:emerald_ore", 0.04]
             ]
         },
+        color: 0Xbcb8dc,
+
         oreTier: 0
     },
     //#endregion
@@ -149,6 +156,8 @@ const samplesData = [
                 ["modern_industrialization:bauxite_ore", 0.07]
             ]
         },
+        color: 0Xfa0000,
+
         oreTier: 1
     },
 
@@ -167,6 +176,8 @@ const samplesData = [
                 ["modern_industrialization:lead_ore", 0.03]
             ],
         },
+        color: 0X1c52a6,
+
 
         oreTier: 1
     },
@@ -186,6 +197,7 @@ const samplesData = [
                 ["modern_industrialization:quartz_ore", 0.13]
             ],
         },
+        color: 0Xf4c230,
 
         oreTier: 1
     },
@@ -205,6 +217,7 @@ const samplesData = [
                 ["minecraft:iron_ore", 0.13]
             ],
         },
+        color: 0Xb6c4b4,
 
         oreTier: 1
     },
@@ -223,6 +236,7 @@ const samplesData = [
                 ["minecraft:copper_ore", 0.07]
             ],
         },
+        color: 0Xe7e2db,
 
         oreTier: 1
     },
@@ -245,6 +259,7 @@ const samplesData = [
                 ["modern_industrialization:bauxite_ore", 0.17]
             ],
         },
+        color: 0X49ead6,
 
         oreTier: 2
     },
@@ -264,6 +279,7 @@ const samplesData = [
                 ["modern_industrialization:bauxite_ore", 0.07]
             ],
         },
+        color: 0X00a82b,
 
         oreTier: 2
     },
@@ -283,6 +299,7 @@ const samplesData = [
                 ["modern_industrialization:uranium_ore", 0.04]
             ],
         },
+        color: 0Xe7eccf,
 
         oreTier: 2
     },
@@ -301,6 +318,7 @@ const samplesData = [
                 ["minecraft:soul_sand", 0.04]
             ],
         },
+        color: 0Xd8d3cc,
 
         oreTier: 2
     },
@@ -319,6 +337,7 @@ const samplesData = [
                 ["minecraft:soul_sand", 0.18]
             ],
         },
+        color: 0Xf6f668,
 
         oreTier: 2
     },
@@ -342,6 +361,7 @@ const samplesData = [
                 ["modern_industrialization:lead_ore", 0.04]
             ],
         },
+        color: 0Xdddddd,
 
         oreTier: 3
     },
@@ -361,6 +381,7 @@ const samplesData = [
                 ["modern_industrialization:tin_ore", 0.14]
             ],
         },
+        color: 0Xb05900,
 
         oreTier: 3
     },
@@ -380,6 +401,7 @@ const samplesData = [
                 ["minecraft:iron_ore", 0.14]
             ],
         },
+        color: 0X359c0a,
 
         oreTier: 3
     },
@@ -399,6 +421,8 @@ const samplesData = [
                 ["minecraft:nether_quartz_ore", 0.14]
             ]
         },
+        color: 0X64463f,
+
         oreTier: 3
     },
 
@@ -417,6 +441,7 @@ const samplesData = [
                 ["minecraft:redstone_ore", 0.07]
             ],
         },
+        color: 0X671561,
 
         oreTier: 3
     },
@@ -430,6 +455,8 @@ const samplesData = [
             raw: "modern_industrialization:raw_iridium",
             displayItem: "modern_industrialization:raw_iridium"
         },
+        color: 0Xebeae7,
+
         oreTier: 4
     },
 
@@ -444,6 +471,8 @@ const samplesData = [
             raw: "modern_industrialization:raw_platinum",
             displayItem: "modern_industrialization:raw_platinum"
         },
+        color: 0Xe8cfa6,
+
         oreTier: 4
     },
 
@@ -457,6 +486,8 @@ const samplesData = [
             raw: "modern_industrialization:raw_titanium",
             displayItem: "modern_industrialization:raw_titanium"
         },
+        color: 0Xf69fe8,
+
         oreTier: 4
     },
 
@@ -470,6 +501,8 @@ const samplesData = [
             raw: "modern_industrialization:raw_tungsten",
             displayItem: "modern_industrialization:raw_tungsten"
         },
+        color: 0X9b7cbd,
+
         oreTier: 4
     }
     //#endregion
@@ -486,7 +519,10 @@ samplesData.forEach(ore => {
         box: [2, 0, 2, 14, 5, 14, true],
         soundType: "stone",
         property: BlockProperties.WATERLOGGED,
-        tagBlock: 'minecraft:mineable/pickaxe',
+        tagBlock: [
+            'minecraft:mineable/pickaxe',
+            "milf:ore_samples"
+        ],
         lang: ore.sampleLang
     })
 

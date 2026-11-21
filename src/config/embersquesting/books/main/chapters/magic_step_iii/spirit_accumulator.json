@@ -1,0 +1,26 @@
+{
+  "title": "",
+  "description": [
+    "<lang key=milf.quest.magic_step_iii.spirit_accumulator.desc>"
+  ],
+  "icon": "neovitae:spirit_accumulator",
+  "x": 58.5,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/animus_mote"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:spirit_accumulator",
+      "type": "item"
+    },
+    {
+      "block": "neovitae:spirit_accumulator",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

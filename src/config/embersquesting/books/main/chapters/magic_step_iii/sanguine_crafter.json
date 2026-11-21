@@ -1,0 +1,53 @@
+{
+  "title": "",
+  "description": [
+    "<lang key=milf.quest.magic_step_iii.sanguine_crafter.desc>",
+    "<lang key=milf.quest.magic_step_iii.sanguine_crafter.structure>",
+    {
+      "world_preview": true,
+      "pitch": 35.0,
+      "ortho": true,
+      "interactive": true,
+      "loop": false,
+      "yaw": -125.0,
+      "layers": [
+        [
+          "CCC",
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "C C",
+          "CSC"
+        ]
+      ],
+      "key": {
+        "S": "neovitae:sanguine_crafter[facing=south]",
+        "C": "neovitae:sanguine_casing"
+      },
+      "type": "scene"
+    },
+    "<lang key=milf.quest.magic_step_iii.sanguine_crafter.desc2>"
+  ],
+  "icon": "neovitae:sanguine_crafter",
+  "x": 45,
+  "y": 19,
+  "deps": {
+    "all": [
+      "magic_step_iii/tabula_spiritus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:sanguine_crafter",
+      "type": "item"
+    },
+    {
+      "block": "neovitae:sanguine_crafter",
+      "type": "observe"
+    }
+  ],
+  "complete": "any",
+  "shape": "gear"
+}

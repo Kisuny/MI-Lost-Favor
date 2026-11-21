@@ -1,0 +1,22 @@
+{
+  "title": "<lang key=item.neovitae.upgrade_tome.deus_sanguinis>",
+  "description": [
+    "<lang key=milf.quest.magic_step_iii.deus_sanguinis_tome.desc>"
+  ],
+  "icon": "neovitae:upgrade_tome{\"neovitae:upgrade_tome_data\":{exp:1.0f,upgrade:\"neovitae:deus_sanguinis\"}}",
+  "x": 76,
+  "y": 13.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/ritual_diviner_deus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:upgrade_tome",
+      "components": "{\"neovitae:upgrade_tome_data\":{exp:1.0f,upgrade:\"neovitae:deus_sanguinis\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "<lang key=item.neovitae.upgrade_tome.unbounded_flight>",
+  "description": [
+    "<lang key=milf.quest.magic_step_iii.unbounded_flight_tome.desc>"
+  ],
+  "icon": "neovitae:upgrade_tome{\"neovitae:upgrade_tome_data\":{exp:1.0f,upgrade:\"neovitae:unbounded_flight\"}}",
+  "x": 76,
+  "y": 16.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/deus_shard",
+      "magic_step_iii/prismatic_spiritus_gem",
+      "magic_step_iii/ritual_diviner_deus"
+    ]
+  },
+  "tasks": [
+    {
+      "item": "neovitae:upgrade_tome",
+      "components": "{\"neovitae:upgrade_tome_data\":{exp:1.0f,upgrade:\"neovitae:unbounded_flight\"}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

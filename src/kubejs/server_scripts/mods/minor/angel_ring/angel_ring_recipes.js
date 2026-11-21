@@ -10,6 +10,8 @@ ServerEvents.recipes(event => {
             "modern_industrialization:diesel_jetpack",
             "embers:cinder_jet",
             "neovitae:tabula_aetherea",
+            "neovitae:prismatic_spiritus_gem",
+            "neovitae:deus_shard",
             "modern_industrialization:quantum_circuit",
             "enigmaticlegacyplus:majestic_elytra",
         ],

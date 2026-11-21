@@ -20,5 +20,12 @@
       "icon": "minecraft:chest"
     }
   ],
-  "shape": "heart"
+  "shape": "heart",
+  "rewards": [
+    {
+      "table": "first_steps_loot",
+      "mode": "random",
+      "type": "table"
+    }
+  ]
 }

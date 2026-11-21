@@ -19,5 +19,12 @@
       "type": "item"
     }
   ],
-  "shape": "rsquare"
+  "shape": "rsquare",
+  "rewards": [
+    {
+      "table": "first_steps_loot",
+      "mode": "random",
+      "type": "table"
+    }
+  ]
 }

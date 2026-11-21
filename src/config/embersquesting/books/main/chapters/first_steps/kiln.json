@@ -21,14 +21,22 @@
       "type": "observe"
     }
   ],
-  "complete": "any",
   "rewards": [
     {
       "item": "milf:pottery_clay_ball",
       "count": 5,
       "type": "item"
+    },
+    {
+      "table": "first_steps_loot",
+      "type": "table"
+    },
+    {
+      "table": "food_loot",
+      "type": "table"
     }
   ],
+  "complete": "any",
   "shape": "hexagon",
   "size": 2.0
 }

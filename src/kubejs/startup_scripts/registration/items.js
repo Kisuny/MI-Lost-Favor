@@ -87,6 +87,9 @@ createNewItem('small_steel_fluid_container', { texturePath: 'milf:item/steel_flu
 
 createNewItem('bronze_mechanical_component', { lang: { "ru_ru": "Бронзовая механическая деталь" } })
 
+createNewItem('invar_large_plate')
+
+
 createNewItem('basic_motor', { lang: { "ru_ru": "Простой мотор" } })
 createNewItem('basic_pump', { lang: { "ru_ru": "Простой насос" } })
 

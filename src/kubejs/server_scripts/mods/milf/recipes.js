@@ -955,7 +955,7 @@ ServerEvents.recipes(event => {
             "H": { "item": "modern_industrialization:bronze_drill_head" },
             "F": { "item": "modern_industrialization:bronze_tank" },
             "R": { "item": "modern_industrialization:invar_curved_plate" },
-            "L": { "item": "modern_industrialization:invar_large_plate" },
+            "L": { "item": "milf:invar_large_plate" },
             "P": { "item": "modern_industrialization:bronze_gear" },
 
         },

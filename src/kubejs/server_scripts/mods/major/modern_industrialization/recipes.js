@@ -922,6 +922,46 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "PP ",
+            "PP ",
+            "   "
+        ],
+        key: {
+            P: { item: "modern_industrialization:invar_plate" },
+
+        },
+        outputItems: [[{ id: `milf:invar_large_plate` }, 1]],
+        compatOff: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "P  ",
+            "   ",
+            "   "
+        ],
+        key: {
+            P: { item: "modern_industrialization:invar_large_plate" },
+
+        },
+        outputItems: [[{ id: `milf:invar_large_plate` }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "P  ",
+            "   ",
+            "   "
+        ],
+        key: {
+            P: { item: "milf:invar_large_plate" },
+
+        },
+        outputItems: [[{ id: `modern_industrialization:invar_large_plate` }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
             "RBD",
             "bCB",
             "MbR"
@@ -1199,7 +1239,7 @@ ServerEvents.recipes(event => {
             C: { item: "milf:bronze_mechanical_component" },
             B: { item: "minecraft:bricks" },
             R: { item: "modern_industrialization:invar_plate" },
-            L: { item: "modern_industrialization:invar_large_plate" },
+            L: { item: "milf:invar_large_plate" },
             p: { item: "minecraft:furnace" },
         },
         outputItems: [[{ id: "modern_industrialization:coke_oven" }, 1]],
@@ -1216,7 +1256,7 @@ ServerEvents.recipes(event => {
             C: { item: "milf:bronze_mechanical_component" },
             B: { item: "modern_industrialization:fire_clay_bricks" },
             R: { item: "modern_industrialization:invar_plate" },
-            L: { item: "modern_industrialization:invar_large_plate" },
+            L: { item: "milf:invar_large_plate" },
             p: { item: "minecraft:furnace" },
         },
         outputItems: [[{ id: "modern_industrialization:steam_blast_furnace" }, 1]],
@@ -1586,7 +1626,7 @@ ServerEvents.recipes(event => {
         key: {
             B: { item: "milf:steel_machine_bit" },
             P: { item: "milf:small_steel_fluid_container" },
-            I: { item: "modern_industrialization:invar_large_plate" },
+            I: { item: "milf:invar_large_plate" },
             M: { item: "minecraft:blast_furnace" },
             C: { item: "immersiveengineering:component_steel" },
         },
@@ -1874,6 +1914,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/brick/smelting/dust_to_ingot_blasting",
         "modern_industrialization:vanilla_recipes/steam_bucket",
         "modern_industrialization:materials/invar/smelting/dust_to_ingot_smelting",
+        "modern_industrialization:materials/invar/craft/large_plate",
+        "modern_industrialization:materials/invar/packer/large_plate",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
         "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",

@@ -156,6 +156,14 @@ ServerEvents.recipes(event => {
 
     iePressRecipe(event, {
         inputItems: [
+            [{ item: "modern_industrialization:invar_plate" }, 4]
+        ],
+        mold: { item: "immersiveengineering:mold_packing_4" },
+        outputItems: [[{ id: "milf:invar_large_plate" }]]
+    })
+
+    iePressRecipe(event, {
+        inputItems: [
             [{ item: "modern_industrialization:steel_ingot" }, 9]
         ],
         mold: { item: "immersiveengineering:mold_packing_9" },

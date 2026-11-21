@@ -21,7 +21,20 @@ ServerEvents.recipes(event => {
         ],
         removeRecipe: true
     })
-    
+
+    miMachineRecipe(event, {
+        energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"minecraft:clay_ball"}, 4],
+        ],
+        inputFluids:[
+            [{fluid:"minecraft:water"}, 250]
+        ],
+        outputItems:[
+            [{item:"milf:pottery_clay_ball"}, 4]
+        ]
+    })
+
     miMachineRecipe(event, {
         energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[

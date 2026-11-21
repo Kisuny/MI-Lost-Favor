@@ -13,9 +13,9 @@
   },
   "tasks": [
     {
+      "optional": true,
       "item": "ytech:millstone",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
       "icon": "ytech:millstone",
@@ -27,11 +27,6 @@
     {
       "item": "minecraft:lead",
       "type": "item"
-    },
-    {
-      "table": "first_steps_metal_loot",
-      "mode": "random",
-      "type": "table"
     }
   ],
   "shape": "circle"

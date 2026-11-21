@@ -10,17 +10,17 @@
   },
   "tasks": [
     {
+      "icon": "spectrum:sheep_head",
       "entity": "minecraft:sheep",
-      "type": "observe",
-      "icon": "spectrum:sheep_head"
+      "type": "observe"
     }
   ],
-  "shape": "octagon",
   "rewards": [
     {
-      "table": "first_steps_loot",
-      "mode": "random",
-      "type": "table"
+      "item": "milf:eggnog",
+      "count": 2,
+      "type": "item"
     }
-  ]
+  ],
+  "shape": "octagon"
 }

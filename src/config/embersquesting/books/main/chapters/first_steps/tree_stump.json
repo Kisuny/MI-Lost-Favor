@@ -14,22 +14,22 @@
   },
   "tasks": [
     {
+      "optional": true,
       "item": "ytech:tree_stump",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "icon": "ytech:tree_stump",
       "block": "ytech:tree_stump",
-      "type": "observe",
-      "icon": "ytech:tree_stump"
+      "type": "observe"
     }
   ],
-  "shape": "rsquare",
   "rewards": [
     {
-      "table": "first_steps_loot",
-      "mode": "random",
-      "type": "table"
+      "item": "minecraft:spruce_log",
+      "count": 4,
+      "type": "item"
     }
-  ]
+  ],
+  "shape": "rsquare"
 }

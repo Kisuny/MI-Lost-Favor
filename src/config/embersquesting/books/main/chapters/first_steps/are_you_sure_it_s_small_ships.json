@@ -8,15 +8,15 @@
   "y": 19,
   "deps": {
     "all": [
-      "first_steps/quest"
+      "first_steps/dockyard"
     ]
   },
   "tasks": [
     {
+      "icon": "smallships:oak_cog",
       "entity": "#milf:small_ships",
       "type": "observe",
-      "title": "Any Ship",
-      "icon": "smallships:oak_cog"
+      "title": "Any Ship"
     }
   ],
   "rewards": [
@@ -29,11 +29,6 @@
       "title": "New Radial Menu Button",
       "id": "milf:radial/sail",
       "type": "custom"
-    },
-    {
-      "table": "first_steps_metal_loot",
-      "mode": "random",
-      "type": "table"
     }
   ],
   "shape": "diamond"

@@ -18,12 +18,17 @@
       "type": "item"
     }
   ],
-  "shape": "heart",
   "rewards": [
     {
-      "table": "first_steps_loot",
-      "mode": "random",
-      "type": "table"
+      "item": "minecraft:acacia_log",
+      "count": 6,
+      "type": "item"
+    },
+    {
+      "item": "minecraft:rabbit",
+      "count": 4,
+      "type": "item"
     }
-  ]
+  ],
+  "shape": "heart"
 }

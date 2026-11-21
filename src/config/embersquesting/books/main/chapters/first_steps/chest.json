@@ -10,22 +10,22 @@
   },
   "tasks": [
     {
+      "optional": true,
       "item": "minecraft:chest",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "icon": "minecraft:chest",
       "block": "minecraft:chest",
-      "type": "observe",
-      "icon": "minecraft:chest"
+      "type": "observe"
     }
   ],
-  "shape": "heart",
   "rewards": [
     {
-      "table": "first_steps_loot",
-      "mode": "random",
-      "type": "table"
+      "item": "minecraft:chest",
+      "count": 3,
+      "type": "item"
     }
-  ]
+  ],
+  "shape": "heart"
 }

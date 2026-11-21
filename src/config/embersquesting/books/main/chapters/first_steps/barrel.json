@@ -10,22 +10,22 @@
   },
   "tasks": [
     {
+      "optional": true,
       "item": "minecraft:barrel",
-      "type": "item",
-      "optional": true
+      "type": "item"
     },
     {
+      "icon": "minecraft:barrel",
       "block": "minecraft:barrel",
-      "type": "observe",
-      "icon": "minecraft:barrel"
+      "type": "observe"
     }
   ],
-  "shape": "heart",
   "rewards": [
     {
-      "table": "first_steps_loot",
-      "mode": "random",
-      "type": "table"
+      "item": "minecraft:barrel",
+      "count": 3,
+      "type": "item"
     }
-  ]
+  ],
+  "shape": "heart"
 }

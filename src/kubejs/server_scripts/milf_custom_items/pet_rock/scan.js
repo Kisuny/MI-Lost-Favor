@@ -84,8 +84,8 @@ const DEPOSIT_MARKER_ICON = "embersatlas:pickaxe"
 const DEPOSIT_MARKER_COLOR = 0xFFC83D
 
 function addDepositMapMarkers(player, dimension, deposits, markerNames) {
-    deposits.forEach(deposit => {
-        let markerName = markerNames.getString(deposit.oreId) || deposit.oreId
-        EmbersAtlas.giveMarker(player, markerName, dimension, deposit.pos, DEPOSIT_MARKER_ICON, DEPOSIT_MARKER_COLOR, false, false)
-    })
+    // deposits.forEach(deposit => {
+    //     let markerName = markerNames.getString(deposit.oreId) || deposit.oreId
+    //     EmbersAtlas.giveMarker(player, markerName, dimension, deposit.pos, DEPOSIT_MARKER_ICON, DEPOSIT_MARKER_COLOR, false, false)
+    // })
 }

@@ -17,15 +17,15 @@
       "type": "item"
     }
   ],
+  "rewards": [
+    {
+      "item": "ytech:grass_fibers",
+      "count": 11,
+      "type": "item"
+    }
+  ],
   "shape": "diamond",
   "notify": {
     "complete": "none"
-  },
-  "rewards": [
-    {
-      "table": "first_steps_loot",
-      "mode": "random",
-      "type": "table"
-    }
-  ]
+  }
 }

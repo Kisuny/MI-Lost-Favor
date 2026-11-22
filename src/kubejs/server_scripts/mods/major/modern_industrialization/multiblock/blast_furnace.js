@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         miMachineRecipe(event, {
             energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
             inputItems: [
-                [{ item: oreId }, 6],
+                [{ item: oreId }, 4],
                 [{ tag: "c:coal" }, 2]
             ],
             outputFluids: [

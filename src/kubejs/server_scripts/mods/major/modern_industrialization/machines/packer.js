@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
             [{item: "minecraft:clay_ball"}, 2],
             [{item: "ytech:brick_mold" }, 1, 0]
         ],
-        outputItems:[[{item:"ytech:unfired_brick"}, 3]]
+        outputItems:[[{item:"milf:unfired_brick"}, 3]]
     })
 
     miMachineRecipe(event, {

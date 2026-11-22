@@ -54,6 +54,13 @@ ServerEvents.recipes(event => {
         inputItems: [[{ item: "minecraft:stone" }, 1]],
         outputItems: [[{ item: "milf:stone_pole" }, 4]]
     })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 200, machine: "modern_industrialization:cutting_machine",
+        inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+        inputItems: [[{ item: "modern_industrialization:iron_plate" }, 4]],
+        outputItems: [[{ item: "ytech:iron_saw_blade" }, 1]]
+    })
    
 })
 

@@ -120,7 +120,6 @@ ServerEvents.recipes(event => {
         energy: 48, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
-            [{ "item": "modern_industrialization:inductor" }, 2],
             [{ "item": "extended_industrialization:steel_alloy_smelter" }, 1],
             [{ "item": "modern_industrialization:cupronickel_wire_magnetic" }, 4],
             [{ "item": "modern_industrialization:silicon_steel_curved_plate" }, 4],
@@ -148,9 +147,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "modern_industrialization:steel_water_pump" }, 1],
-            [{ "item": "modern_industrialization:pump" }, 4],
-            [{ "item": "immersiveengineering:wirecoil_electrum_ins" }, 8],
-            [{ "item": "modern_industrialization:rubber_sheet" }, 12],
+            [{ "item": "modern_industrialization:pump" }, 2],
             [{ "item": "modern_industrialization:aluminum_rotor" }, 3],
             [{ "tag": "modern_industrialization:fluid_pipes" }, 6],
         ],
@@ -163,11 +160,8 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "extended_industrialization:steel_brewery" }, 1],
-            [{ "item": "modern_industrialization:pump" }, 1],
             [{ "item": "milf:tempered_glass" }, 2],
-            [{ "item": "minecraft:glass_bottle" }, 3],
             [{ "item": "modern_industrialization:aluminum_rotor" }, 1],
-            [{ "item": "minecraft:blaze_rod" }, 2],
             [{ "tag": "modern_industrialization:fluid_pipes" }, 3],
         ],
         outputItems: [[{ "item": "extended_industrialization:electric_brewery" }]],
@@ -179,7 +173,6 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "extended_industrialization:steel_waste_collector" }, 1],
-            [{ "item": "modern_industrialization:pump" }, 1],
             [{ "item": "modern_industrialization:aluminum_rotor" }, 1],
             [{ "item": "modern_industrialization:silicon_steel_rod" }, 4],
             [{ "tag": "modern_industrialization:fluid_pipes" }, 3],
@@ -193,9 +186,8 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "extended_industrialization:steel_honey_extractor" }, 1],
-            [{ "item": "modern_industrialization:pump" }, 1],
+            [{ "item": "modern_industrialization:motor" }, 1],
             [{ "item": "milf:tempered_glass" }, 2],
-            [{ "item": "modern_industrialization:aluminum_rotor" }, 1],
             [{ "item": "modern_industrialization:silicon_steel_plate" }, 2]
         ],
         outputItems: [[{ "item": "extended_industrialization:electric_honey_extractor" }]],
@@ -209,7 +201,6 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:steel_mi_furnace" }, 1],
             [{ "item": "modern_industrialization:cupronickel_wire_magnetic" }, 6],
             [{ "item": "modern_industrialization:inductor" }, 2],
-            [{ "item": "modern_industrialization:silicon_steel_rod" }, 5],
             [{ "item": "modern_industrialization:adamant_large_plate" }, 1],
         ],
         outputItems: [[{ "item": "modern_industrialization:electric_mi_furnace" }]],
@@ -248,9 +239,8 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "modern_industrialization:steel_cutting_machine" }, 1],
             [{ "item": "modern_industrialization:large_motor" }, 1],
-            [{ "item": "modern_industrialization:invar_rotary_blade" }, 1],
-            [{ "item": "modern_industrialization:conveyor" }, 1],
-            [{ "item": "modern_industrialization:silicon_steel_large_plate" }, 2]
+            [{ "item": "modern_industrialization:invar_rotary_blade" }, 2],
+            [{ "item": "modern_industrialization:conveyor" }, 2],
         ],
         outputItems: [[{ "item": "modern_industrialization:electric_cutting_machine" }]],
         removeRecipe: true
@@ -264,7 +254,6 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:large_motor" }, 1],
             [{ "item": "modern_industrialization:steel_rod_magnetic" }, 3],
             [{ "item": "modern_industrialization:adamant_curved_plate" }, 5],
-            [{ "item": "modern_industrialization:adamant_rod" }, 2]
         ],
         outputItems: [[{ "item": "modern_industrialization:electric_wiremill" }]],
         removeRecipe: true
@@ -274,7 +263,7 @@ ServerEvents.recipes(event => {
         energy: 48, time: 200, machine: "modern_industrialization:advanced_machine_assembler",
         inputItems: [
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
-            [{ "item": "modern_industrialization:steel_wiremill" }, 1],
+            [{ "item": "modern_industrialization:steel_macerator" }, 1],
             [{ "item": "modern_industrialization:large_motor" }, 2],
             [{ "item": "modern_industrialization:invar_rotary_blade" }, 2],
             [{ "item": "modern_industrialization:adamant_bolt" }, 12]
@@ -315,6 +304,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "modern_industrialization:steel_unpacker" }, 1],
             [{ "item": "modern_industrialization:piston" }, 1],
+            [{ "item": "modern_industrialization:motor" }, 1],
             [{ "item": "modern_industrialization:adamant_ring" }, 6]
         ],
         outputItems: [[{ "item": "modern_industrialization:electric_unpacker" }]],
@@ -327,6 +317,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
             [{ "item": "modern_industrialization:steel_packer" }, 1],
             [{ "item": "modern_industrialization:piston" }, 1],
+            [{ "item": "modern_industrialization:motor" }, 1],
             [{ "item": "modern_industrialization:adamant_ring" }, 6]
         ],
         outputItems: [[{ "item": "modern_industrialization:electric_packer" }]],

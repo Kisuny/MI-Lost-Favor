@@ -1899,6 +1899,49 @@ ServerEvents.recipes(event => {
             inputItems:[[{item:hatch.replace("input", "output")}]],
             category:"misc"
         })
+
+        if (hatch.split(":")[0] == "yet_another_industrialization"){
+
+            miMachineRecipe(event, {
+                energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+                inputItems: [
+                    [{ item: hatch }]
+                ],
+                outputItems: [
+                    [{ 
+                        item: hatch
+                            .replace("yet_another_industrialization", "modern_industrialization") 
+                            .replace("mixed", "item") 
+                    }, 1],
+                    [{
+                        item: hatch
+                            .replace("yet_another_industrialization", "modern_industrialization")
+                            .replace("mixed", "fluid")
+                    }, 1],
+                ]
+            })
+
+            let outputHatch = hatch.replace("input", "output")
+
+            miMachineRecipe(event, {
+                energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+                inputItems: [
+                    [{ item: outputHatch }]
+                ],
+                outputItems: [
+                    [{
+                        item: outputHatch
+                            .replace("yet_another_industrialization", "modern_industrialization")
+                            .replace("mixed", "item")
+                    }, 1],
+                    [{
+                        item: outputHatch
+                            .replace("yet_another_industrialization", "modern_industrialization")
+                            .replace("mixed", "fluid")
+                    }, 1],
+                ]
+            })
+        }
     })
 
 

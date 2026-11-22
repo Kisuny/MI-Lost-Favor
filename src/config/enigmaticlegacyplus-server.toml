@@ -1,15 +1,15 @@
 	[cursedItems.totemOfMalice]
 		# Default: 80
 		# Range: 0 ~ 200
-		specialDamageBoost = 80
+		specialDamageBoost = 32
 		# Default: 50
 		# Range: 0 ~ 100
-		specialDamageResistance = 50
+		specialDamageResistance = 20
 
 	[cursedItems.enderSlayer]
 		# Default: 150
 		# Range: 0 ~ 1000
-		specialDamageBoost = 150
+		specialDamageBoost = 60
 
 	[cursedItems.nightScroll]
 		# Default: 16
@@ -17,13 +17,13 @@
 		effectiveRange = 16
 		# Default: 20
 		# Range: 0 ~ 100
-		attackDamage = 20
+		attackDamage = 8
 		# Default: 16
 		# Range: 0 ~ 100
-		damageResistance = 16
+		damageResistance = 6
 		# Default: 8
 		# Range: 0 ~ 100
-		lifeSteal = 8
+		lifeSteal = 3
 
 	[cursedItems.cursedXpScroll]
 		# Default: 24.0
@@ -34,10 +34,10 @@
 		xpLevelUpperLimit = 1000
 		# Default: 128.0
 		# Range: 0.0 ~ 256.0
-		damageBoostLimit = 128.0
+		damageBoostLimit = 51.2
 		# Default: 64.0
 		# Range: 0.0 ~ 256.0
-		healBoostLimit = 64.0
+		healBoostLimit = 25.6
 		# Default: 160.0
 		# Range: 0.0 ~ 256.0
 		knockbackResistanceBoostLimit = 160.0
@@ -45,13 +45,16 @@
 	[cursedItems.cursedScroll]
 		# Default: 4
 		# Range: 1 ~ 20
-		attackDamage = 4
+		attackDamage = 2
 		# Default: 4
 		# Range: 0 ~ 20
 		miningSpeed = 4
 		# Default: 4
 		# Range: 1 ~ 20
-		regeneration = 4
+		regeneration = 2
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		decayFactor = 0.1
 
 	[cursedItems.avariceScroll]
 		# Default: 15
@@ -69,21 +72,21 @@
 	[cursedItems.berserkEmblem]
 		# Default: 1.0
 		# Range: 0.0 ~ 10.0
-		attackDamage = 1.0
+		attackDamage = 0.4
 		# Default: 1.0
 		# Range: 0.0 ~ 10.0
-		attackSpeed = 1.0
+		attackSpeed = 0.4
 		# Default: 0.5
 		# Range: 0.0 ~ 10.0
 		movementSpeed = 0.5
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
-		damageResistance = 0.5
+		damageResistance = 0.2
 
 	[cursedItems.theTwist]
 		# Default: 300
 		# Range: 0 ~ 1000
-		specialDamageBoost = 300
+		specialDamageBoost = 120
 		# Default: 300
 		# Range: 0 ~ 1000
 		knockbackModifier = 300
@@ -91,7 +94,7 @@
 	[cursedItems.sanguinaryHandbook]
 		# Default: 0.25
 		# Range: 0.0 ~ 1.0
-		specialDamageBoost = 0.25
+		specialDamageBoost = 0.1
 
 [else]
 	freezingBoost = true
@@ -99,7 +102,7 @@
 	[else.majesticElytra]
 		# Default: 75
 		# Range: 0 ~ 95
-		resistanceModifier = 75
+		resistanceModifier = 30
 
 	[else.ichorSpear]
 		# Default: 4
@@ -125,11 +128,6 @@
 		# Range: 1.0 ~ 256.0
 		magneticRange = 16.0
 
-	[else.survivalScroll]
-		# Default: 40
-		# Range: 0 ~ 100
-		healthThreshold = 40
-
 	[else.explorerScroll]
 		# Default: 5
 		# Range: 1 ~ 10
@@ -146,7 +144,7 @@
 	[else.infernalRing]
 		# Default: 60
 		# Range: 0 ~ 100
-		specialDamageResistance = 60
+		specialDamageResistance = 24
 
 	[else.dislocation]
 		# Default: 16.0
@@ -162,7 +160,7 @@
 	[else.hellBladeCharm]
 		# Default: 100
 		# Range: 0 ~ 200
-		attackDamage = 100
+		attackDamage = 40
 		# Default: 100
 		# Range: 0 ~ 100
 		armorDebuff1 = 100
@@ -184,10 +182,10 @@
 		effectiveRange = 24.0
 		# Default: 50
 		# Range: 0 ~ 100
-		specialDamageResistance = 50
+		specialDamageResistance = 20
 		# Default: 1200
 		# Range: 200 ~ 2000
-		cooldown = 1200
+		cooldown = 2000
 
 	[else.hunterGuidebook]
 		# Default: 16.0
@@ -217,6 +215,35 @@
 		# Range: 0 ~ 100
 		amuletBlue = 25
 
+	[else.starlightBucket]
+		checkExtraContent = false
+
+	[else.survivorScroll]
+		# Default: 40
+		# Range: 0 ~ 100
+		healthThreshold = 40
+
+	[else.cosmicScroll]
+		# Default: 12000
+		# Range: 6000 ~ 24000
+		cooldown = 12000
+		# Default: 32
+		# Range: 0 ~ 100
+		spellstoneCooldown = 32
+
+	[else.starlightRing]
+		# Default: 30
+		# Range: 0 ~ 100
+		specialDamageResistance = 12
+
+	[else.quartzRing]
+		# Default: 25
+		# Range: 0 ~ 100
+		specialDamageResistance = 10
+
+	[else.void_stone]
+		devourBlacklist = ["enigmaticlegacyplus:void_stone", "sophisticatedbackpacks:backpack", "sophisticatedbackpacks:copper_backpack", "sophisticatedbackpacks:iron_backpack", "sophisticatedbackpacks:gold_backpack", "sophisticatedbackpacks:diamond_backpack", "sophisticatedbackpacks:netherite_backpack"]
+
 [abyssItems]
 	# Default: 5
 	# Range: 1 ~ 10
@@ -228,9 +255,9 @@
 	[abyssItems.chaosElytra]
 		# Default: 80
 		# Range: 0 ~ 100
-		specialDamageResistance = 80
-		# Default: 1.2
-		# Range: 0.0 ~ 10.0
+		specialDamageResistance = 32
+		# Default: 0.8
+		# Range: 0.5 ~ 5.0
 		flyingSpeedModifier = 1.2
 		# Default: 1.6
 		# Range: 1.0 ~ 10.0
@@ -242,7 +269,7 @@
 	[abyssItems.violenceScroll]
 		# Default: 4
 		# Range: 0 ~ 10
-		attackSpeed = 4
+		attackSpeed = 2
 		# Default: 3
 		# Range: 0 ~ 20
 		entityReach = 3
@@ -254,28 +281,31 @@
 		# Default: 64
 		# Range: 1 ~ 128
 		effectiveRange = 64
+		# Default: 240
+		# Range: 20 ~ 1200
+		cooldown = 240
 
 	[abyssItems.theInfinitum]
 		# Default: 200
 		# Range: 0 ~ 1000
-		specialDamageBoost = 200
+		specialDamageBoost = 80
 		# Default: 200
 		# Range: 0 ~ 1000
 		knockbackModifier = 200
 		# Default: 10
 		# Range: 0 ~ 100
-		lifeSteal = 10
+		lifeSteal = 4
 		# Default: 80
 		# Range: 0 ~ 100
-		undeadProbability = 80
+		undeadProbability = 32
 
 	[abyssItems.eldritchAmulet]
 		# Default: 20
 		# Range: 0 ~ 100
-		attackDamage = 20
+		attackDamage = 8
 		# Default: 15
 		# Range: 0 ~ 100
-		lifeSteal = 15
+		lifeSteal = 6
 		keepInventory = true
 
 	[spellstone.voidPearl]
@@ -293,7 +323,7 @@
 		witheringTime = 5.0
 		# Default: 30
 		# Range: 0 ~ 80
-		undeadProbability = 30
+		undeadProbability = 12
 
 	[spellstone.revivalLeaf]
 		# Default: 5
@@ -309,7 +339,7 @@
 	[spellstone.oceanStone]
 		# Default: 40
 		# Range: 0 ~ 100
-		underwaterCreaturesResistance = 40
+		underwaterCreaturesResistance = 16
 		# Default: 1.0
 		# Range: 0.0 ~ 10.0
 		xpCostModifier = 1.0
@@ -324,7 +354,7 @@
 	[spellstone.lostEngine]
 		# Default: 50
 		# Range: 0 ~ 200
-		bonusCritMultiplier = 50
+		bonusCritMultiplier = 20
 		# Default: 2.5
 		# Range: 1.0 ~ 20.0
 		vulnerabilityModifier = 2.5
@@ -335,30 +365,30 @@
 		vulnerabilityModifier = 1.25
 		# Default: 50
 		# Range: 0 ~ 80
-		resistanceModifier = 50
+		resistanceModifier = 20
 		# Default: 60
 		# Range: 20 ~ 200
-		cooldown = 60
+		cooldown = 150
 
 	[spellstone.golemHeart]
 		# Default: 4.0
 		# Range: 0.0 ~ 20.0
-		defaultArmorBonus = 4.0
+		defaultArmorBonus = 1.6
 		# Default: 16.0
 		# Range: 0.0 ~ 100.0
-		superArmorBonus = 16.0
+		superArmorBonus = 6.4
 		# Default: 4.0
 		# Range: 0.0 ~ 20.0
-		superArmorToughnessBonus = 4.0
+		superArmorToughnessBonus = 1.6
 		# Default: 0.9
 		# Range: 0.0 ~ 1.0
 		knockbackResistance = 0.9
 		# Default: 25
 		# Range: 0 ~ 100
-		meleeResistance = 25
+		meleeResistance = 10
 		# Default: 40
 		# Range: 0 ~ 100
-		explosionResistance = 40
+		explosionResistance = 16
 		# Default: 2.0
 		# Range: 1.0 ~ 20.0
 		vulnerabilityModifier = 2.0
@@ -366,7 +396,7 @@
 	[spellstone.forgottenIce]
 		# Default: 30
 		# Range: 0 ~ 100
-		resistanceModifier = 30
+		resistanceModifier = 12
 		# Default: 4.0
 		# Range: 0.0 ~ 64.0
 		damageFeedback = 4.0
@@ -375,27 +405,27 @@
 		vulnerabilityModifier = 2.5
 		# Default: 240
 		# Range: 100 ~ 400
-		cooldown = 240
+		cooldown = 400
 
 	[spellstone.eyeOfNebula]
 		# Default: 40
 		# Range: 0 ~ 100
-		magicBoost = 40
+		magicBoost = 16
 		# Default: 65
 		# Range: 0 ~ 100
-		magicResistance = 65
+		magicResistance = 26
 		# Default: 15
 		# Range: 0 ~ 100
-		dodgeProbability = 15
+		dodgeProbability = 6
 		# Default: 150
 		# Range: 0 ~ 1000
-		attackEmpower = 150
+		attackEmpower = 60
 		# Default: 2.0
 		# Range: 1.0 ~ 20.0
 		vulnerabilityModifier = 2.0
 		# Default: 60
 		# Range: 20 ~ 200
-		cooldown = 60
+		cooldown = 150
 
 	[spellstone.etheriumCore]
 		# Default: 32
@@ -403,7 +433,7 @@
 		etheriumThresholdModifier = 32
 		# Default: 40
 		# Range: 0 ~ 100
-		damageConversion = 40
+		damageConversion = 16
 		# Default: 25
 		# Range: 0 ~ 100
 		damageConversionLimit = 25
@@ -416,7 +446,7 @@
 	[spellstone.blazingCore]
 		# Default: 4.0
 		# Range: 0.0 ~ 64.0
-		damageFeedback = 4.0
+		damageFeedback = 1.6
 		# Default: 4
 		# Range: 0 ~ 32
 		ignitionFeedback = 4
@@ -433,21 +463,27 @@
 		accelerationModifierElytra = 0.6
 		# Default: 40
 		# Range: 0 ~ 100
-		deflectChance = 40
+		deflectChance = 16
 		# Default: 2.0
 		# Range: 1.0 ~ 20.0
 		vulnerabilityModifier = 2.0
 		# Default: 30
 		# Range: 10 ~ 100
-		cooldown = 30
+		cooldown = 75
+
+	[spellstone.theCube]
+		# Default: 100.0
+		# Range: 0.0 ~ 1000.0
+		damageLimit = 1000.0
+		autoTrigger = true
 
 	[blessItems.redemptionRing]
 		# Default: 25
 		# Range: 0 ~ 100
-		damageMultiplier = 25
+		damageMultiplier = 10
 		# Default: 20
 		# Range: 0 ~ 100
-		attackMultiplier = 20
+		attackMultiplier = 8
 		# Default: 20
 		# Range: 5 ~ 100
 		regenerationSpeed = 20
@@ -477,15 +513,18 @@
 		lavaHealAmount = 2
 		# Default: 20
 		# Range: 0 ~ 100
-		lifestealModifier = 20
+		lifestealModifier = 8
 		# Default: 10
 		# Range: 0 ~ 50
-		resistanceProbability = 10
+		resistanceProbability = 4
 
 	[blessItems.theBless]
 		# Default: 0.15
 		# Range: 0.0 ~ 1.0
-		specialDamageBoost = 0.15
+		specialDamageBoost = 0.06
+
+	[blessItems.forgerCrystal]
+		unbreakableRestriction = true
 
 [sevenCurses]
 	# Default: 200
@@ -527,3 +566,4 @@
 	forTheWorthy = true
 	giveStarterGear = false
 	neutralWhiteList = ["minecraft:bee", "the_bumblezone:bee_queen"]
+	immediatelyCurseBoost = false

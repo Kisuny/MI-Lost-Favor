@@ -92,6 +92,9 @@ Object.entries({
     },
     "immersiveengineering:chute_aluminum": {
         langs: { "en_us": "Corrosion-Resistant Sheetmetal Chute" },
+    },
+    "modern_industrialization:invar_large_plate": {
+        langs: { "en_us": "Invar Control Plate" },
     }
 }).forEach(([toRenameId, langData]) => {
 

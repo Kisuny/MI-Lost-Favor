@@ -1,5 +1,26 @@
 ServerEvents.recipes(event => {
 
+    Object.entries({
+
+        "milf:crushed_gold": "embers:molten_gold",
+        "milf:crushed_tin": "embers:molten_tin",
+        "milf:crushed_copper": "embers:molten_copper",
+        "milf:crushed_lead": "embers:molten_lead",
+        "milf:crushed_iron": "embers:molten_iron"
+
+    }).forEach(([oreId, fluidId]) => {
+        miMachineRecipe(event, {
+            energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
+            inputItems: [
+                [{ item: oreId }, 4],
+                [{ tag: "c:coal" }, 2]
+            ],
+            outputFluids: [
+                [{ id: fluidId }, 1000]
+            ],
+        })
+    })
+
     miMachineRecipe(event, {
         energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
         inputItems: [

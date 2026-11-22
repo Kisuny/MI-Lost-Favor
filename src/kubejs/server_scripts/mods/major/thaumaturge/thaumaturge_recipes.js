@@ -270,4 +270,38 @@ ServerEvents.recipes(event => {
     //     research: 'thaumaturge:cloud_ring',
     //     result: 'minecraft:grass_block'
     // })
+
+    // ↑ EW disgusting, Kisu ￣へ￣
+
+    milfShaped(event, {
+        pattern: [
+            "FF ",
+            "FF ",
+            "   "
+        ],
+        key: {
+            F: { item: "minecraft:rotten_flesh" },
+        },
+        outputItems: [[{ id: `thaumaturge:flesh_block` }, 1]],
+        compatOff: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "F  ",
+            "   ",
+            "   "
+        ],
+        key: {
+            F: { item: "thaumaturge:flesh_block" },
+        },
+        outputItems: [[{ id: `minecraft:rotten_flesh` }, 4]],
+        compatOff: true
+    })
+
 })
+
+milfDisableRecipesById([
+    "thaumaturge:flesh_block",
+    "thaumaturge:rotten_flesh_from_flesh_block"
+])

@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "milf:small_copper_fluid_container" }, 1]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff: true
     })
 
     ieBlueprintRecipe(event, {
@@ -40,6 +41,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "milf:small_steel_fluid_container" }, 1]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compatOff:true
     })
 
     ieBlueprintRecipe(event, {
@@ -294,7 +296,7 @@ ServerEvents.recipes(event => {
     ieBlueprintRecipe(event, {
         inputItems: [
             [{ "item": "modern_industrialization:diamond_tiny_dust" }, 55],
-            [{ "item": "modern_industrialization:invar_large_plate" }, 1],
+            [{ "item": "milf:invar_large_plate" }, 1],
             [{ "item": "immersiveengineering:sawblade" }, 1],
             [{ "item": "immersiveengineering:wirecutter" }, 1],
         ],

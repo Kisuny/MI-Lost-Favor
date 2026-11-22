@@ -1,10 +1,5 @@
 
 ServerEvents.tags('item', event => {
-    event.removeAllTagsFrom([
-        'modern_industrialization:netherite_hammer', 
-        'modern_industrialization:diamond_hammer', 
-        "modern_industrialization:steel_block"
-    ])
 
     const modIngredient = Ingredient.of(`@modern_industrialization | @extended_industrialization`)
     const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot", "crushed_dust", "cable"].join("|")
@@ -18,6 +13,13 @@ ServerEvents.tags('item', event => {
             event.add(`c:${matcher.group("partName")}s/${matcher.group("material")}`, matcher.group())
         }
     })
+
+    event.removeAllTagsFrom([
+        'modern_industrialization:netherite_hammer',
+        'modern_industrialization:diamond_hammer',
+        "modern_industrialization:steel_block",
+        "modern_industrialization:invar_large_plate"
+    ])
 
     event.add('milf:coke_coal', [
         'modern_industrialization:coke', 
@@ -34,6 +36,14 @@ ServerEvents.tags('item', event => {
     event.add('c:hammers', [
         'modern_industrialization:iron_hammer',
         'modern_industrialization:steel_hammer'
+    ])
+
+    event.add('c:large_plates', [
+        'milf:invar_large_plate'
+    ])
+
+    event.add('c:large_plates/invar', [
+        'milf:invar_large_plate'
     ])
 
     event.add('c:storage_blocks/coal_coke', 'modern_industrialization:coke_block')

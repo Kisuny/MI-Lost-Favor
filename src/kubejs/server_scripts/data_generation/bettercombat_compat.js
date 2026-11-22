@@ -40,11 +40,15 @@ ServerEvents.generateData("before_mods", event => {
             "grimoireofgaia:weapon_book",
             "grimoireofgaia:metal_club"
         ],
+        claymore: [
+            "legendary_monsters:shattered_greatsword"
+        ],
         spear: [
             "animusnv:spear_iron",
             "animusnv:spear_diamond",
             "animusnv:spear_bound",
-            "animusnv:spear_sentient"
+            "animusnv:spear_sentient",
+            "legendary_monsters:resurrected_javelin"
         ],
         claw:[
             "modern_industrialization:robot_arm"

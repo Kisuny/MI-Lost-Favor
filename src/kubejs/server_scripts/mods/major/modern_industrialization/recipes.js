@@ -922,6 +922,46 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "PP ",
+            "PP ",
+            "   "
+        ],
+        key: {
+            P: { item: "modern_industrialization:invar_plate" },
+
+        },
+        outputItems: [[{ id: `milf:invar_large_plate` }, 1]],
+        compatOff: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "P  ",
+            "   ",
+            "   "
+        ],
+        key: {
+            P: { item: "modern_industrialization:invar_large_plate" },
+
+        },
+        outputItems: [[{ id: `milf:invar_large_plate` }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "P  ",
+            "   ",
+            "   "
+        ],
+        key: {
+            P: { item: "milf:invar_large_plate" },
+
+        },
+        outputItems: [[{ id: `modern_industrialization:invar_large_plate` }, 1]]
+    })
+
+    milfShaped(event, {
+        pattern: [
             "RBD",
             "bCB",
             "MbR"
@@ -989,7 +1029,30 @@ ServerEvents.recipes(event => {
                 B: { "tag": `c:bolts/${material}` }
             },
             outputItems: [[{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]],
-            removeRecipe: true
+            removeRecipe: true,
+            compatOff: true
+        })
+
+        miMachineRecipe(event, {
+            energy: 4, time: 400, machine: "modern_industrialization:packer",
+            inputItems: [
+                [{ "tag": `c:gears/${material}` }, 1],
+                [{ "tag": `c:large_plates/${material}` }, 4],
+                [{ "tag": `c:bolts/${material}` }, 4]
+            ],
+            outputItems: [[{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]],
+        })
+
+        miMachineRecipe(event, {
+            energy: 8, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{ "tag": `c:gears/${material}` }, 1],
+                [{ "tag": `c:large_plates/${material}` }, 2],
+            ],
+            inputFluids:[
+                [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+            ],
+            outputItems: [[{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]],
         })
     }
 
@@ -1199,7 +1262,7 @@ ServerEvents.recipes(event => {
             C: { item: "milf:bronze_mechanical_component" },
             B: { item: "minecraft:bricks" },
             R: { item: "modern_industrialization:invar_plate" },
-            L: { item: "modern_industrialization:invar_large_plate" },
+            L: { item: "milf:invar_large_plate" },
             p: { item: "minecraft:furnace" },
         },
         outputItems: [[{ id: "modern_industrialization:coke_oven" }, 1]],
@@ -1216,7 +1279,7 @@ ServerEvents.recipes(event => {
             C: { item: "milf:bronze_mechanical_component" },
             B: { item: "modern_industrialization:fire_clay_bricks" },
             R: { item: "modern_industrialization:invar_plate" },
-            L: { item: "modern_industrialization:invar_large_plate" },
+            L: { item: "milf:invar_large_plate" },
             p: { item: "minecraft:furnace" },
         },
         outputItems: [[{ id: "modern_industrialization:steam_blast_furnace" }, 1]],
@@ -1586,7 +1649,7 @@ ServerEvents.recipes(event => {
         key: {
             B: { item: "milf:steel_machine_bit" },
             P: { item: "milf:small_steel_fluid_container" },
-            I: { item: "modern_industrialization:invar_large_plate" },
+            I: { item: "milf:invar_large_plate" },
             M: { item: "minecraft:blast_furnace" },
             C: { item: "immersiveengineering:component_steel" },
         },
@@ -1836,6 +1899,49 @@ ServerEvents.recipes(event => {
             inputItems:[[{item:hatch.replace("input", "output")}]],
             category:"misc"
         })
+
+        if (hatch.split(":")[0] == "yet_another_industrialization"){
+
+            miMachineRecipe(event, {
+                energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+                inputItems: [
+                    [{ item: hatch }]
+                ],
+                outputItems: [
+                    [{ 
+                        item: hatch
+                            .replace("yet_another_industrialization", "modern_industrialization") 
+                            .replace("mixed", "item") 
+                    }, 1],
+                    [{
+                        item: hatch
+                            .replace("yet_another_industrialization", "modern_industrialization")
+                            .replace("mixed", "fluid")
+                    }, 1],
+                ]
+            })
+
+            let outputHatch = hatch.replace("input", "output")
+
+            miMachineRecipe(event, {
+                energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+                inputItems: [
+                    [{ item: outputHatch }]
+                ],
+                outputItems: [
+                    [{
+                        item: outputHatch
+                            .replace("yet_another_industrialization", "modern_industrialization")
+                            .replace("mixed", "item")
+                    }, 1],
+                    [{
+                        item: outputHatch
+                            .replace("yet_another_industrialization", "modern_industrialization")
+                            .replace("mixed", "fluid")
+                    }, 1],
+                ]
+            })
+        }
     })
 
 
@@ -1874,6 +1980,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/brick/smelting/dust_to_ingot_blasting",
         "modern_industrialization:vanilla_recipes/steam_bucket",
         "modern_industrialization:materials/invar/smelting/dust_to_ingot_smelting",
+        "modern_industrialization:materials/invar/craft/large_plate",
+        "modern_industrialization:materials/invar/packer/large_plate",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
         "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",

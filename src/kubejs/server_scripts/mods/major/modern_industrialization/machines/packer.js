@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
             [{item: "minecraft:clay_ball"}, 2],
             [{item: "ytech:brick_mold" }, 1, 0]
         ],
-        outputItems:[[{item:"ytech:unfired_brick"}, 3]]
+        outputItems:[[{item:"milf:unfired_brick"}, 3]]
     })
 
     miMachineRecipe(event, {
@@ -157,6 +157,24 @@ ServerEvents.recipes(event => {
             [{ item: "milf:small_copper_fluid_container" }, 1]
         ],
         outputItems: [[{ item: "milf:bronze_mechanical_component" }, 1]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 109*2, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:steel_plate" }, 2],
+            [{ item: "modern_industrialization:steel_bolt" }, 2],
+        ],
+        outputItems: [[{ item: "milf:small_steel_fluid_container" }, 1]]
+    })
+
+    miMachineRecipe(event, {
+        energy: 4, time: 109*2, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "modern_industrialization:copper_plate" }, 2],
+            [{ item: "modern_industrialization:copper_bolt" }, 2],
+        ],
+        outputItems: [[{ item: "milf:small_copper_fluid_container" }, 1]]
     })
 
     miMachineRecipe(event, {

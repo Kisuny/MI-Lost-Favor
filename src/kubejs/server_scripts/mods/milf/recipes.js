@@ -6,7 +6,7 @@ function milfClayCrucibleRecipe(event, args){
         fuel: Object.assign({}, args.inputItems[1][0], { count: args.inputItems[1][1] || 4 }),
         output: Object.assign({}, args.outputFluids[0][0], { amount: args.outputFluids[0][1] || 1000 }),
     }
-    if (!args.compatOff) {
+    if (!args.compatOff) {        
         miMachineRecipe(event, {
             energy: 4, time: 333, machine: "modern_industrialization:blast_furnace",
             inputItems: args.inputItems,
@@ -578,13 +578,14 @@ ServerEvents.recipes(event => {
     }).forEach(([oreId, fluidId]) => {
         milfClayCrucibleRecipe(event, {
             inputItems: [
-                [{ item: oreId }],
-                [{ tag: "c:coal" }]
+                [{ item: oreId }, 8],
+                [{ tag: "c:coal" }, 4]
             ],
             outputFluids: [
-                [{ id: fluidId }]
+                [{ id: fluidId }, 1000]
             ],
-            time: 200
+            time: 200,
+            compatOff:true
         })
     })
 
@@ -955,7 +956,7 @@ ServerEvents.recipes(event => {
             "H": { "item": "modern_industrialization:bronze_drill_head" },
             "F": { "item": "modern_industrialization:bronze_tank" },
             "R": { "item": "modern_industrialization:invar_curved_plate" },
-            "L": { "item": "modern_industrialization:invar_large_plate" },
+            "L": { "item": "milf:invar_large_plate" },
             "P": { "item": "modern_industrialization:bronze_gear" },
 
         },

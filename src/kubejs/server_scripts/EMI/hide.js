@@ -306,6 +306,7 @@ RecipeViewerEvents.removeCategories(event => {
         //#region
         'minecraft:tag_recipes/item',
         'minecraft:tag_recipes/block',
+        'minecraft:tag_recipes/fluid',
     ]);
 });
 

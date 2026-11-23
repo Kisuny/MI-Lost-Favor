@@ -71,6 +71,7 @@ Object.entries({
                     DEFAULT_NEW_AGE_SUBTEXT_STYLE,
                     server
                 )
+                server.scheduleInTicks(DEFAULT_NEW_AGE_SUBTEXT_STYLE.delay * 40, _ => member.tell(Text.translate('milf.stage.magic_chapter')))
             })
         }
     }

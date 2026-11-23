@@ -3,7 +3,7 @@
   "description": [
     "<lang key=milf.quest.magic_step_i.runic_core.desc>",
     {
-      "type": "scene",
+      "world_preview": true,
       "layers": [
         [
           "  V  ",
@@ -14,20 +14,20 @@
         ]
       ],
       "key": {
-        "S": "#milf:rune_slabs[rune_state=variant0]",
-        "T": "#milf:rune_slabs[rune_state=variant1]",
-        "U": "#milf:rune_slabs[rune_state=variant2]",
         "V": "#milf:rune_slabs[rune_state=variant3]",
         "W": "#milf:rune_slabs[rune_state=variant4]",
+        "U": "#milf:rune_slabs[rune_state=variant2]",
+        "S": "#milf:rune_slabs[rune_state=variant0]",
+        "T": "#milf:rune_slabs[rune_state=variant1]",
         "X": "#milf:rune_slabs[rune_state=variant5]",
         "0": "paganbless:runic_core[active=true]"
       },
-      "world_preview": true
+      "type": "scene"
     }
   ],
   "icon": "paganbless:runic_core",
-  "x": 17.02,
-  "y": 27.53,
+  "x": 19.62,
+  "y": 12.96,
   "deps": {
     "all": [
       "magic_step_i/rune_slab_inert"

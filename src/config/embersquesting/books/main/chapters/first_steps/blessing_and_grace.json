@@ -4,8 +4,8 @@
     "<lang key=milf.quest.first_steps.blessing_and_grace.desc>"
   ],
   "icon": "ars_elemental:earth_caster_tome{\"minecraft:custom_name\":'{\"color\":\"dark_purple\",\"italic\":true,\"text\":\"Freyr\\'s Harvest\"}',\"sauce:school_tome_caster\":{flavor_text:\"An <magic>ancient gift</magic> of the <keyword>god of fertility</keyword>, filling the earth with <positive>vital energy</positive>\",spells:{0:{color:{b:60,g:200,id:\"ars_nouveau:constant\",r:70},name:\"Freyr's Harvest\",particleTimeline:{\"ars_nouveau:touch\":{onResolvingEffect:{motion:{propMap:{},type:\"ars_nouveau:burst\"},particleOptions:{properties:{\"ars_nouveau:density\":{density:20,radius:0.1d,spawnType:\"SPHERE\"},\"ars_nouveau:emitter\":{age:0,rotation:{x:0.0f,y:0.0f}},\"ars_nouveau:particle_type\":{particleType:\"ars_hex:broom_leaves_2\",subProperties:{\"ars_nouveau:color\":{particleColor:{b:60,g:200,id:\"ars_nouveau:constant\",r:70},tintDisabled:1b}}}},type:\"ars_hex:broom_leaves_2\"}},resolveSound:{sound:{pitch:2.0f,sound:{id:\"ars_nouveau:armadillo_hurt_reduced\"}}},type:\"ars_nouveau:touch\"}},recipe:[\"ars_nouveau:glyph_touch\",\"ars_nouveau:glyph_grow\"],sound:{}}}}}",
-  "x": 22,
-  "y": 16.5,
+  "x": 23,
+  "y": 15,
   "deps": {
     "all": [
       "first_steps/orb_of_the_forest"
@@ -37,5 +37,6 @@
       "type": "item"
     }
   ],
-  "shape": "heart"
+  "shape": "heart",
+  "size": 1.75
 }

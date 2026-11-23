@@ -3,17 +3,23 @@
   "description": [
     "<lang key=milf.quest.magic_step_i.black_thorn_log.desc>"
   ],
-  "icon": "paganbless:black_thorn_log",
+  "icon": "paganbless:black_thorn_sapling",
   "x": 24.53,
   "y": 16.36,
   "deps": {
     "all": [
-      "first_steps/iron_ingot"
+      "first_steps/iron_ingot",
+      "magic_step_i/mixing_cauldron"
     ]
   },
   "tasks": [
     {
       "item": "paganbless:black_thorn_log",
+      "type": "item"
+    },
+    {
+      "optional": true,
+      "item": "paganbless:black_thorn_sapling",
       "type": "item"
     }
   ],

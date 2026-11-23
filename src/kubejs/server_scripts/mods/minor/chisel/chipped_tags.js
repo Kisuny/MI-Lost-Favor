@@ -24,7 +24,7 @@ ServerEvents.tags('item', event => {
         ['hay_block',              null],
         ['iron_bars',              null],
         ['ladder',                 null],
-        ['lantern',                '(?!.*sea_lantern)'],
+        ['lantern',                '(?!.*(?:sea|soul|jack_o|glowstone|shroomlight)_lantern)'],
         ['lily_pad',               null],
         ['lodestone',              null],
         ['magma_block',            null],

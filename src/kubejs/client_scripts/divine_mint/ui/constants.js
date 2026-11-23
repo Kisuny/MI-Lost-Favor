@@ -3,7 +3,6 @@
 let $Screen = Java.loadClass("net.minecraft.client.gui.screens.Screen")
 let $RenderGuiLayerEvent$Pre = Java.loadClass("net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Pre")
 let $VanillaGuiLayers = Java.loadClass("net.neoforged.neoforge.client.gui.VanillaGuiLayers")
-let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
 let $HashMap = Java.loadClass("java.util.HashMap")
 let $Button = Java.loadClass("net.minecraft.client.gui.components.Button")

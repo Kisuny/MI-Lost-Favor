@@ -38,6 +38,8 @@ let $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
 let $Component = Java.loadClass("net.minecraft.network.chat.Component")
 let $ParticleTypes = Java.loadClass("net.minecraft.core.particles.ParticleTypes")
 let $Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3")
+let $Axis = Java.loadClass("com.mojang.math.Axis")
+let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 let $TagParser = Java.loadClass("net.minecraft.nbt.TagParser")
 
 

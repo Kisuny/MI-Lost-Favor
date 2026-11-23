@@ -1,7 +1,6 @@
 let $Toast = Java.loadClass("net.minecraft.client.gui.components.toasts.Toast")
 let $TooltipRenderUtil = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil") : null
 let $ClientTooltipComponent = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent") : null
-let $Axis = Java.loadClass("com.mojang.math.Axis")
 
 const PET_ROCK_NOTIF_LANG = [
     "milf.pet_rock.notification1",

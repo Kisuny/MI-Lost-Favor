@@ -57,3 +57,7 @@ let $ApothicEnchanting = Java.loadClass('dev.shadowsoffire.apothic_enchanting.Ap
 let $Collectors = Java.loadClass('java.util.stream.Collectors')
 
 let $EmiReloadManager = Java.loadClass('dev.emi.emi.runtime.EmiReloadManager')
+
+let $AtlasClient = Java.loadClass("dev.tysontheember.embersatlas.client.AtlasClient")
+let $AtlasMarker = Java.loadClass("dev.tysontheember.embersatlas.marker.Marker")
+let $AtlasMarker$Source = Java.loadClass("dev.tysontheember.embersatlas.marker.Marker$Source")

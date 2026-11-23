@@ -47,23 +47,25 @@ global.oresWithSamples.forEach(oreEntry => {
                         y: blockPos.getY(),
                         z: blockPos.getZ()
                     },
-                    markerName: oreName,
-                    dimension: String(event.level.dimension)
+                    dimension: String(event.level.dimension),
+                    icon: "embersatlas:pickaxe"
                 })
             } else {
 
                 milfPlaySound(event, "enchanted:chalk_write")
 
-                EmbersAtlas.giveMarker(
-                    event.player,
-                    oreName,
-                    event.level.dimension,
-                    blockPos,
-                    "embersatlas:pickaxe",
-                    oreEntry.color,
-                    false,
-                    false
-                )
+                event.player.sendData("milf_add_marker", {
+                    pos: {
+                        x: blockPos.getX(),
+                        y: blockPos.getY(),
+                        z: blockPos.getZ()
+                    },
+                    name: oreName,
+                    dimension: String(event.level.dimension),
+                    icon: "embersatlas:pickaxe",
+                    color: oreEntry.color,
+                    group: "Ores"
+                })
             }
 
         }

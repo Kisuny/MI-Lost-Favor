@@ -9,6 +9,17 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.curios.already_equipped', 'У вас уже надето: ')
     event.add('milf.tooltip.enchanted_book.max_level', '<magic>Макс. уровень</magic>:')
     event.add('milf.atlas.tooltip', '<warning>В слоте безделушки карта пока не работает</warning> - носите Атлас в инвентаре. <wiggle>Скоро исправим!</wiggle>')
+    event.add('milf.atlas.node.type.normal', 'Узел ауры')
+    event.add('milf.atlas.node.type.unstable', 'Нестабильный узел')
+    event.add('milf.atlas.node.type.dark', 'Зловещий узел')
+    event.add('milf.atlas.node.type.tainted', 'Осквернённый узел')
+    event.add('milf.atlas.node.type.hungry', 'Голодный узел')
+    event.add('milf.atlas.node.type.pure', 'Чистый узел')
+    event.add('milf.atlas.node.modified', '%s (%s)')
+    event.add('milf.atlas.node.modifier.bright', 'яркий')
+    event.add('milf.atlas.node.modifier.pale', 'бледный')
+    event.add('milf.atlas.node.modifier.fading', 'угасающий')
+    event.add('milf.atlas.node.unknown', 'Сначала изучите этот узел <keyword>таумометром</keyword>')
 
     const foodCategoryNamesRu = { fruit: 'фрукты', cooked_meats: 'мясные блюда', bread: 'хлеб' }
     Object.keys(foodCategoryNamesRu).forEach(priority => {
@@ -44,6 +55,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add("apotheosis", 'wave_entity.apotheosis.black_charro', 'Усиленный Black Charro')
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_umvuthi', 'Усиленный Umvuthi')
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_frostmaw', 'Усиленный Frostmaw')
+
+    event.add('rewards.gateways.loot_table.bastion_treasure', 'сокровищниц бастиона')
 
     event.add('gateways.tiered/legends', 'Врата Легенд')
     event.add("legendary_monsters", 'wave_entity.legendary_monsters.ancient_guardian', 'Усиленный Древний страж')
@@ -246,6 +259,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.emi_info.hexerei_willow_sapling', "Выпадает из <nature>листьев ивы</nature>. Ивы растут в <nature>болотах</nature>, часто прямо у воды.")
     event.add('milf.emi_info.hexerei_witch_hazel_sapling', "Выпадает из <nature>листьев гамамелиса</nature>. Гамамелис растёт только в <keyword>березняках</keyword> - <warning>в старых березняках его нет</warning>.")
     event.add('milf.emi_info.hexerei_mahogany_sapling', "Выпадает из <nature>листьев красного дерева</nature>. Красное дерево растёт в <flame>джунглях</flame> и <flame>бамбуковых джунглях</flame>.")
+    event.add('milf.emi_info.paganbless_black_thorn_sapling', "Выпадает из <nature>листьев чёрного терновника</nature>. Эти деревья встречаются нечасто: ищи низкие деревца с <magic>серебристой листвой</magic> в <nature>лесах</nature> и <aqua>болотах</aqua>.")
 
     event.add("curios.identifier.tool_belt", "Пояс")
     event.add("curios.identifier.pocket_lamp", "Карманный фонарь")

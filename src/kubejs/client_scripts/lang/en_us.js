@@ -9,6 +9,17 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.curios.already_equipped', 'You already have equipped: ')
     event.add('milf.tooltip.enchanted_book.max_level', '<magic>Max lvl</magic>:')
     event.add('milf.atlas.tooltip', '<warning>The map does not work from the curio slot yet</warning> - keep the Atlas in your inventory. <wiggle>Fix coming soon!</wiggle>')
+    event.add('milf.atlas.node.type.normal', 'Aura Node')
+    event.add('milf.atlas.node.type.unstable', 'Unstable Node')
+    event.add('milf.atlas.node.type.dark', 'Sinister Node')
+    event.add('milf.atlas.node.type.tainted', 'Tainted Node')
+    event.add('milf.atlas.node.type.hungry', 'Hungry Node')
+    event.add('milf.atlas.node.type.pure', 'Pure Node')
+    event.add('milf.atlas.node.modified', '%s (%s)')
+    event.add('milf.atlas.node.modifier.bright', 'bright')
+    event.add('milf.atlas.node.modifier.pale', 'pale')
+    event.add('milf.atlas.node.modifier.fading', 'fading')
+    event.add('milf.atlas.node.unknown', 'Study this node with a <keyword>Thaumometer</keyword> first')
 
     const foodCategoryNamesEn = { fruit: 'fruit', cooked_meats: 'cooked meats', bread: 'bread' }
     Object.keys(foodCategoryNamesEn).forEach(priority => {
@@ -54,6 +65,8 @@ ClientEvents.lang('en_us', event => {
     event.add("apotheosis", 'wave_entity.apotheosis.black_charro', 'Reinforced Black Charro')
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_umvuthi', 'Reinforced Umvuthi')
     event.add("apotheosis", 'wave_entity.apotheosis.mowziesmobs_frostmaw', 'Reinforced Frostmaw')
+
+    event.add('rewards.gateways.loot_table.bastion_treasure', 'Bastion Treasure')
 
     event.add('gateways.tiered/legends', 'Gateway of Legends')
     event.add("legendary_monsters", 'wave_entity.legendary_monsters.ancient_guardian', 'Reinforced Ancient Guardian')
@@ -287,6 +300,7 @@ The only solution is to make them less sound.`)
     event.add('milf.emi_info.hexerei_willow_sapling', "Drops from <nature>Willow Leaves</nature>. Willows grow in <nature>swamps</nature>, often right by the water.")
     event.add('milf.emi_info.hexerei_witch_hazel_sapling', "Drops from <nature>Witch Hazel Leaves</nature>. Witch Hazel grows only in <keyword>Birch Forests</keyword> - <warning>not in Old Growth Birch Forests</warning>.")
     event.add('milf.emi_info.hexerei_mahogany_sapling', "Drops from <nature>Mahogany Leaves</nature>. Mahogany grows in <flame>Jungles</flame> and <flame>Bamboo Jungles</flame>.")
+    event.add('milf.emi_info.paganbless_black_thorn_sapling', "Drops from <nature>Black Thorn Leaves</nature>. Black thorn trees are rare: look for low trees with <magic>silvery leaves</magic> in <nature>forests</nature> and <aqua>swamps</aqua>.")
 
 
     event.add('milf.text.dim.cant_visit', `${MilfEffects.GLITCH("Some kind of magic is stopping you")}`)

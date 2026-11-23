@@ -120,3 +120,9 @@ let $ClaimedChunkEvent = Java.loadClass("dev.ftb.mods.ftbchunks.api.event.Claime
 let $ClaimedChunkEventBefore = Java.loadClass("dev.ftb.mods.ftbchunks.api.event.ClaimedChunkEvent$Before")
 let $ClaimResult = Java.loadClass("dev.ftb.mods.ftbchunks.api.ClaimResult")
 let $CompoundEventResult = Java.loadClass("dev.architectury.event.CompoundEventResult")
+
+let $GogglesAccess = Java.loadClass("com.leclowndu93150.thaumaturge.api.items.GogglesAccess")
+let $PlayerResearchAccess = Java.loadClass("com.leclowndu93150.thaumaturge.api.capability.PlayerResearchAccess")
+let $ScanNode = Java.loadClass("com.leclowndu93150.thaumaturge.content.research.scan.ScanNode")
+let $ScannedBlock = Java.loadClass("com.leclowndu93150.thaumaturge.api.research.scan.ScannedBlock")
+let $ThaumometerItem = Java.loadClass("com.leclowndu93150.thaumaturge.content.item.ThaumometerItem")

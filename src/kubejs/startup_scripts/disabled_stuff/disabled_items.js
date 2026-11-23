@@ -438,6 +438,7 @@ global.disabledItems = [
     new DisabledItemBuilder("spectrum:bottle_of_forfeiture"),
     new DisabledItemBuilder("hexerei:creative_waxing_kit"),
     new DisabledItemBuilder("hexerei:dowsing_rod"),
+    new DisabledItemBuilder("ars_nouveau:ritual_burrowing"),
     new DisabledItemBuilder("functionalstorage:creative_vending_upgrade"),
     new DisabledItemBuilder("neovitae:activation_crystal_creative"),
     new DisabledItemBuilder("oritech:creative_storage_block"),

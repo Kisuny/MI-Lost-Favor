@@ -52,6 +52,9 @@ RecipeViewerEvents.addInformation('item', event => {
 	event.add('hexerei:mahogany_sapling', [
 		Text.translate('milf.emi_info.hexerei_mahogany_sapling')
 	])
+	event.add('paganbless:black_thorn_sapling', [
+		Text.translate('milf.emi_info.paganbless_black_thorn_sapling')
+	])
 	event.add(['enigmaticlegacyplus:evil_essence', 'enigmaticlegacyplus:abyssal_heart', 'milf:soul_of_the_helpless'], [
 		Text.translate('milf.cursed_drops')
 	])

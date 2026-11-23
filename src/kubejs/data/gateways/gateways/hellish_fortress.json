@@ -1,0 +1,723 @@
+{
+    "type": "apotheosis:tiered",
+    "settings": {
+        "tier": "ascent",
+        "size": "large",
+        "color": "#CF352E"
+    },
+    "waves": [
+        {
+            "max_wave_time": 1200,
+            "setup_time": 100,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombified_piglin",
+                    "count": 6
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:piglin",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:magma_cube",
+                    "count": 3
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 2.0
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zombified_piglin",
+                    "rolls": 12
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:piglin",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:wither_skeleton",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:magma_cube",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 150,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1400,
+            "setup_time": 300,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 5
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:blaze",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:hoglin",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "enderzoology:wither_cat",
+                    "count": 3
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "enderzoology:wither_witch",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.75
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 4.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:wither_skeleton",
+                    "rolls": 10
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:blaze",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:hoglin",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "enderzoology:wither_cat",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "enderzoology:wither_witch",
+                    "rolls": 2
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 220,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1600,
+            "setup_time": 400,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 3,
+                    "desc": "name.gateways.withered_ranger",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.withered_ranger\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:ascent/ranged/iron"
+                        }
+                    ],
+                    "finalize_spawn": false
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:blaze",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:ghast",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "enderzoology:wither_witch",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 5.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 4.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 4.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.3
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "amplifier": 0
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:wither_skeleton",
+                    "rolls": 14
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:blaze",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:ghast",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "enderzoology:wither_witch",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 300,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 1800,
+            "setup_time": 400,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:piglin_brute",
+                    "count": 3,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:ascent/enchanted_gold"
+                        }
+                    ],
+                    "nbt": {
+                        "IsImmuneToZombification": true
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:hoglin",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zoglin",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 3,
+                    "desc": "name.gateways.withered_ranger",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.withered_ranger\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:ascent/ranged/iron"
+                        }
+                    ],
+                    "finalize_spawn": false
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:blaze",
+                    "count": 4
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 6.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 5.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.35
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 5.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.35
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:life_steal",
+                    "operation": "add_value",
+                    "value": 0.1
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "amplifier": 0
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:piglin_brute",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:hoglin",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:zoglin",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:wither_skeleton",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:blaze",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 400,
+                    "orb_size": 10
+                }
+            ]
+        },
+        {
+            "max_wave_time": 2400,
+            "setup_time": 500,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:piglin_brute",
+                    "count": 1,
+                    "desc": "name.gateways.butcher",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.butcher\",\"color\":\"red\"}",
+                        "IsImmuneToZombification": true
+                    },
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:ascent/enchanted_gold"
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_value",
+                            "value": 40.0
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:armor_shred",
+                            "operation": "add_value",
+                            "value": 0.5
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:prot_shred",
+                            "operation": "add_value",
+                            "value": 0.25
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.attack_knockback",
+                            "operation": "add_value",
+                            "value": 2.5
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "apothic_attributes:life_steal",
+                            "operation": "add_value",
+                            "value": 0.15
+                        }
+                    ],
+                    "finalize_spawn": false
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "friendsandfoes:wildfire",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "cataclysm:ignited_revenant",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 5,
+                    "desc": "name.gateways.withered_ranger",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{\"translate\":\"name.gateways.withered_ranger\",\"color\":\"red\"}"
+                    },
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:ascent/ranged/iron"
+                        }
+                    ],
+                    "finalize_spawn": false
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:blaze",
+                    "count": 4
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "enderzoology:wither_witch",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 7.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 6.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 6.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:projectile_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.4
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 4.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:life_steal",
+                    "operation": "add_value",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "amplifier": 0
+                    }
+                },
+                {
+                    "type": "gateways:mob_effect",
+                    "effect": {
+                        "effect": "minecraft:resistance",
+                        "amplifier": 0
+                    }
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:piglin_brute",
+                    "rolls": 4
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "friendsandfoes:wildfire",
+                    "rolls": 3
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "cataclysm:ignited_revenant",
+                    "rolls": 3
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:wither_skeleton",
+                    "rolls": 15
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:blaze",
+                    "rolls": 12
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "enderzoology:wither_witch",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 600,
+                    "orb_size": 10
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "minecraft:chests/nether_bridge",
+            "rolls": 10,
+            "desc": "rewards.gateways.loot_table.nether_bridge"
+        },
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "minecraft:chests/bastion_treasure",
+            "rolls": 3,
+            "desc": "rewards.gateways.loot_table.bastion_treasure"
+        },
+        {
+            "type": "gateways:counted",
+            "count": 2,
+            "reward": {
+                "type": "apotheosis:affix_item",
+                "rarities": [
+                    "apotheosis:uncommon",
+                    "apotheosis:rare",
+                    "apotheosis:epic"
+                ]
+            }
+        },
+        {
+            "type": "gateways:counted",
+            "count": 3,
+            "reward": {
+                "type": "apotheosis:gem",
+                "purities": [
+                    "chipped",
+                    "flawed",
+                    "normal"
+                ]
+            }
+        },
+        {
+            "type": "gateways:experience",
+            "experience": 1000,
+            "orb_size": 10
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:explosion",
+            "strength": 4,
+            "fire": true,
+            "block_damage": false
+        },
+        {
+            "type": "gateways:mob_effect",
+            "effect": "minecraft:wither",
+            "duration": 300
+        },
+        {
+            "type": "gateways:mob_effect",
+            "effect": "minecraft:weakness",
+            "duration": 1200
+        },
+        {
+            "type": "gateways:summon",
+            "entity": {
+                "entity": "minecraft:blaze",
+                "count": 3
+            }
+        }
+    ],
+    "rules": {
+        "lives": 2,
+        "requires_nearby_player": true,
+        "allow_discarding": true
+    }
+}

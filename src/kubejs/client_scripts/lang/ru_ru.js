@@ -22,6 +22,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("Вы чувствуете, что что-то изменилось...")}`)
 
     event.add('milf.stage.bronze_age', `Вы перешли в ${MilfEffects.GRAD.custom("Бронзовую Эпоху", "#CD7F32", "#F6BA7D")}`)
+    event.add('milf.stage.magic_awakens', `${MilfEffects.WIGGLE(MilfEffects.GRAD.custom("Магия пробуждается...", "#8E44AD", "#D7A8F0"))}`)
+    event.add('milf.stage.magic_chapter', `Котёл забурлил, и перед вами раскрылись страницы ${MilfEffects.GRAD.custom(MilfEffects.WAVE_C("Ранней магии"), "#8E44AD", "#D7A8F0")}`)
     event.add('milf.stage.mowziesmobs_mobs', `новые ${MilfEffects.GRAD.custom("опасности", "#F00B0B", "#7A0F0B")} появились на вашем пути`)
     event.add('milf.stage.eidolon_mobs', `Вы чувствуете как по вашему телу пробежал ${MilfEffects.GRAD.custom("холодок", "#353DCA", "#52B5C4")}!`)
     event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${MilfEffects.GRAD.custom("могут вас услышать", "#F00B0B", "#7A0F0B")} ночью, будьте осторожны!`)

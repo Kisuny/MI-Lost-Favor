@@ -29,16 +29,17 @@
     },
     {
       "title": "Hands Trinket slot",
-      "icon": "curios:textures/slot/empty_hands_slot.png",
       "id": "milf:trinket/hands_bronze_plate",
+      "icon": "curios:textures/slot/empty_hands_slot.png",
       "type": "custom",
       "auto": "claim"
     },
     {
       "title": "Belt Trinket slot",
-      "icon": "curios:textures/slot/empty_belt_slot.png",
       "id": "milf:trinket/belt_bronze_plate",
-      "type": "custom"
+      "icon": "curios:textures/slot/empty_belt_slot.png",
+      "type": "custom",
+      "auto": "claim"
     }
   ],
   "shape": "circle"

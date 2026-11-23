@@ -57,6 +57,22 @@ Object.entries({
                 player.server
             )
         }
+    },
+    "milf:milestone/mixing_cauldron": {
+        callback: (event) => {
+            let player = event.player
+            let server = player.server
+            $FTBTeamsAPI.getManager().getTeamForPlayer(player).get().getOnlineMembers().forEach(member => {
+                sendImmersiveMessageWithSubtext(
+                    Text.translate('milf.stage.magic_awakens'),
+                    Text.translate('milf.stage.magic_chapter'),
+                    member,
+                    DEFAULT_NEW_AGE_NOTIFICATION_STYLE,
+                    DEFAULT_NEW_AGE_SUBTEXT_STYLE,
+                    server
+                )
+            })
+        }
     }
 
 }).forEach(([questId, data]) => {

@@ -24,6 +24,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.congratulations', `${MilfEffects.WAVE_C("Congratulations!!!")}`)
     event.add('milf.stage.something_changed', `${MilfEffects.WIGGLE("You feel like something has changed...")}`)
     event.add('milf.stage.bronze_age', `You have passed into the ${MilfEffects.GRAD.custom("Bronze Age", "#CD7F32", "#F6BA7D")}`)
+    event.add('milf.stage.magic_awakens', `${MilfEffects.WIGGLE(MilfEffects.GRAD.custom("Magic awakens...", "#8E44AD", "#D7A8F0"))}`)
+    event.add('milf.stage.magic_chapter', `The cauldron bubbles, and the pages of ${MilfEffects.GRAD.custom(MilfEffects.WAVE_C("Early Magic"), "#8E44AD", "#D7A8F0")} open before you`)
     event.add('milf.stage.eidolon_mobs', `You can feel a ${MilfEffects.GRAD.custom("chill run down your spine", "#2E57BE", "#2EBFD8")}`)
     event.add('milf.stage.mythsandlegends_mobs', `Mythical creatures ${MilfEffects.GRAD.custom("can hear you", "#F00B0B", "#DA502D")} at night, be careful`)
     event.add('milf.stage.mowziesmobs_mobs', `New ${MilfEffects.GRAD.custom("dangers", "#F00B0B", "#CF0F4C")} have appeared on your path`)

@@ -152,7 +152,7 @@
 		magneticRange = 16.0
 
 	[else.storageCrystal]
-		enable = true
+		enable = false
 
 	[else.antiqueBag]
 		extraBookList = []
@@ -306,7 +306,7 @@
 		# Default: 15
 		# Range: 0 ~ 100
 		lifeSteal = 6
-		keepInventory = true
+		keepInventory = false
 
 	[spellstone.voidPearl]
 		# Default: 16.0

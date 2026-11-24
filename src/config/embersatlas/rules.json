@@ -39,6 +39,18 @@
         "world_map": "allow",
         "mapping": "allow"
       }
+    },
+    {
+      "when": {
+        "effect": [
+          "milf:atlas_bearer"
+        ]
+      },
+      "set": {
+        "minimap": "allow",
+        "world_map": "allow",
+        "mapping": "allow"
+      }
     }
   ],
   "structures": {

@@ -1,7 +1,7 @@
 {
   "title": "",
   "icon": "cognition:infected_bookshelf",
-  "x": 58.11,
+  "x": 54.8,
   "y": 10.63,
   "deps": {
     "all": [
@@ -10,10 +10,15 @@
   },
   "tasks": [
     {
+      "item": "cognition:infected_bookshelf",
+      "type": "item"
+    },
+    {
       "block": "cognition:infected_bookshelf",
       "type": "observe",
       "icon": "cognition:infected_bookshelf"
     }
   ],
+  "complete": "any",
   "shape": "circle"
 }

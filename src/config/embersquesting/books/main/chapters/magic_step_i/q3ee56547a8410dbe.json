@@ -1,7 +1,7 @@
 {
   "title": "",
   "icon": "cognition:infected_enchanted_bookshelf",
-  "x": 56.34,
+  "x": 53.03,
   "y": 9.01,
   "deps": {
     "all": [
@@ -10,10 +10,15 @@
   },
   "tasks": [
     {
+      "item": "cognition:infected_enchanted_bookshelf",
+      "type": "item"
+    },
+    {
       "block": "cognition:infected_enchanted_bookshelf",
       "type": "observe",
       "icon": "cognition:infected_enchanted_bookshelf"
     }
   ],
+  "complete": "any",
   "shape": "diamond"
 }

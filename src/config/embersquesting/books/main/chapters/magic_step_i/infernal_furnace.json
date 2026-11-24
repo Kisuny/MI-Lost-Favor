@@ -1,11 +1,46 @@
 {
   "title": "<lang key=block.thaumaturge.infernal_furnace>",
   "description": [
-    "<lang key=milf.quest.magic_step_i.infernal_furnace.desc>"
+    "<lang key=milf.quest.magic_step_i.infernal_furnace.desc>",
+    {
+      "world_preview": true,
+      "layers": [
+        [
+          "     ",
+          " BOB ",
+          " OOO ",
+          " BOB ",
+          "     "
+        ],
+        [
+          "     ",
+          " BOB ",
+          "EOLOW",
+          " BIB ",
+          "     "
+        ],
+        [
+          "     ",
+          " BOB ",
+          " O O ",
+          " BOB ",
+          "     "
+        ]
+      ],
+      "key": {
+        "B": "minecraft:nether_bricks",
+        "O": "minecraft:obsidian",
+        "I": "minecraft:iron_bars",
+        "L": "minecraft:lava",
+        "E": "thaumaturge:bellows[facing=east]",
+        "W": "thaumaturge:bellows[facing=west]"
+      },
+      "type": "scene"
+    }
   ],
   "icon": "thaumaturge:infernal_furnace",
-  "x": 108.16,
-  "y": 26.1,
+  "x": 106.18,
+  "y": 26.29,
   "deps": {
     "all": [
       "magic_step_i/goggles_revealing"

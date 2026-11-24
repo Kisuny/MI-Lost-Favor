@@ -40,6 +40,20 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "PRP",
+            " P "
+        ],
+        key: {
+            "P": { "item": "modern_industrialization:bronze_plate" },
+            "R": { "item": "minecraft:redstone" }
+        },
+        outputItems: [[{ id: "minecraft:clock" }, 1]],
+        removeRecipe: true
+    })
+
     yTechShaped(event, {
         pattern: [
             "#S ",

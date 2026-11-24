@@ -212,9 +212,26 @@ ServerEvents.recipes(event => {
             [{ fluid: "minecraft:water" }, 100]
         ],
         outputItems: [
-            [{ item: "eidolon_repraised:parchment" }, 4]
+            [{ item: "eidolon_repraised:parchment" }, 5]
         ],
         removeRecipe: true
+    })
+
+    milfStoneBasinRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:paper" }],
+            [{ item: "minecraft:paper" }],
+            [{ item: "minecraft:paper" }],
+            [{ item: "eidolon_repraised:enchanted_ash" }]
+        ],
+        inputFluids: [
+            [{ fluid: "minecraft:water" }, 100]
+        ],
+        outputItems: [
+            [{ id: "eidolon_repraised:parchment" }, 4]
+        ],
+        stirs: 4,
+        compatOff: true
     })
 
     customCrucible(event, {

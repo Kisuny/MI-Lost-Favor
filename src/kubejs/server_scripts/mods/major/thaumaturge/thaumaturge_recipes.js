@@ -140,8 +140,58 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    customThaumArcaneCraft(event, {
+        pattern: [
+            ' G ',
+            'GPG',
+            ' G '
+        ],
+        key: {
+            G: 'embers:dawnstone_ingot',
+            P: 'milf:bronze_glass'
+        },
+        crystals: ['aer', 'ignis', 'terra', 'aqua', 'ordo', 'perditio'],
+        vis: 20,
+        research: 'thaumaturge:first_steps',
+        stage: 1,
+        result: 'thaumaturge:thaumometer',
+        id: 'thaumaturge:arcane_workbench/thaumometer',
+        removeRecipe: true
+    })
+
+    customThaumArcaneCraft(event, {
+        pattern: [
+            ' S ',
+            'ATP'
+        ],
+        key: {
+            A: 'ytech:bronze_axe',
+            P: 'ytech:bronze_pickaxe',
+            S: 'thaumaturge:thaumometer',
+            T: 'thaumaturge:table_wood'
+        },
+        crystals: ['perditio'],
+        vis: 20,
+        research: 'thaumaturge:deconstructor',
+        result: 'thaumaturge:deconstruction_table',
+        id: 'thaumaturge:arcane_workbench/deconstruction_table',
+        removeRecipe: true
+    })
+
+    pedestalFromRecipe(event, {
+        id: "thaumaturge:wand",
+        tier: "advanced",
+        time: 400,
+        topaz: 2,
+        citrine: 2,
+        amethyst: 2,
+        onyx: 2,
+        experience: 2.0,
+        advancement: "spectrum:create_onyx_shard"
+    })
+
     customThaumCrucible(event, {
-        catalyst: '#c:ingots/steel',
+        catalyst: 'modern_industrialization:silver_ingot',
         aspects: { praecantatio: 5, terra: 5 },
         research: 'thaumaturge:metallurgy',
         stage: 1,
@@ -185,7 +235,7 @@ ServerEvents.recipes(event => {
     event.shapeless('thaumaturge:scribing_tools', ['minecraft:glass_bottle', 'supplementaries:antique_ink', '#c:feathers']).id('thaumaturge:scribing_tools_alt')
 
     const thaumReplacements = {
-        'c:plates/iron': 'modern_industrialization:steel_plate',
+        'c:plates/iron': 'modern_industrialization:silver_plate',
         'c:gems/diamond': 'enchanted:attuned_stone_charged',
         'c:gems/quartz': 'spectrum:onyx_shard',
     }

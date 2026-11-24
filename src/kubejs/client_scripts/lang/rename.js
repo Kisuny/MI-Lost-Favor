@@ -1,38 +1,3 @@
-//Your AI slop bores me, Kisu ￣へ￣
-
-
-// const renameItems = global.langRenames;
-// // console.log("langlangRenames:", renameItems);
-
-// Object.entries(renameItems).forEach(([itemName, translations]) => {
-//     const langs = translations.langs || translations;
-//     const types = translations.types || [];
-
-
-//     const hasItemType = types.some(t =>
-//         (t.toLowerCase() === "item") 
-//     );
-//     const hasBlockType = types.some(t =>
-//         ( t.toLowerCase() === "block")
-//     );
-//     const hasEntityType = types.some(t =>
-//         ( t.toLowerCase() === "entity")
-//     );
-
-//     Object.entries(langs).forEach(([lang, renameText]) => {
-//         ClientEvents.lang(lang, event => {
-//             if (!types || types.length === 0) {
-//                 event.renameItem(itemName, renameText);
-//                 return;
-//             }
-
-//             if (hasItemType) event.renameItem(itemName, renameText);
-//             if (hasBlockType) event.renameBlock(itemName, renameText);
-//             if (hasEntityType) event.renameEntity(itemName, renameText);
-//         });
-//     });
-// });
-
 Object.entries({
     "sophisticatedbackpacks:copper_backpack": {
         langs: { "en_us": "Bronze Backpack", "ru_ru": "Бронзовый рюкзак" },
@@ -95,6 +60,10 @@ Object.entries({
     },
     "modern_industrialization:invar_large_plate": {
         langs: { "en_us": "Invar Control Plate" },
+    },
+    "enchanted:diamond_vapour": {
+        langs: { "en_us": "Gem Vapour", "ru_ru": "Гемный пар" },
+        types: ["Item"]
     }
 }).forEach(([toRenameId, langData]) => {
 

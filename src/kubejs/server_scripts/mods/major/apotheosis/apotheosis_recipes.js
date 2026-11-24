@@ -288,8 +288,8 @@ ServerEvents.recipes(event => {
         components:
         [
             'minecraft:anvil',
-            'thaumaturge:plate_thaumium',
-            'thaumaturge:plate_thaumium',
+            'modern_industrialization:thaumium_plate',
+            'modern_industrialization:thaumium_plate',
             'apotheosis:gem_dust',
             'apotheosis:gem_dust',
             'apotheosis:mysterious_scrap_metal',

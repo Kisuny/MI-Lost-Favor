@@ -50,10 +50,42 @@ ServerEvents.recipes(event => {
         energy: 4, time: 80, machine: "modern_industrialization:blast_furnace",
         inputItems: [
             [{ item: "spectrum:shimmerstone_gem" }, 2],
-            [{ item: "modern_industrialization:steel_ingot" }, 1],
+            [{ tag: "c:ingots/iron" }, 1],
         ],
         outputFluids: [
             [{ fluid: "milf:shimmersteel_essence" }, 300],
+        ]
+    })
+
+    milfClayCrucibleKilnRecipe(event, {
+        inputItems: [
+            [{ item: "spectrum:shimmerstone_gem" }, 2],
+            [{ tag: "c:ingots/iron" }, 1]
+        ],
+        outputFluids: [
+            [{ id: "milf:shimmersteel_essence" }, 300]
+        ],
+        requires_bellows: true,
+        time: 200,
+        compatOff: true
+    })
+
+    embersMeltingRecipe(event, {
+        inputItems: [
+            [{ item: "spectrum:shimmerstone_gem" }, 1]
+        ],
+        outputFluids: [
+            [{ fluid: "milf:molten_shimmerstone" }, 90]
+        ]
+    })
+
+    embersMixingRecipe(event, {
+        inputFluids: [
+            [{ fluid: "milf:molten_shimmerstone" }, 6],
+            [{ fluid: "embers:molten_iron" }, 3]
+        ],
+        outputFluids: [
+            [{ fluid: "milf:shimmersteel_essence" }, 10]
         ]
     })
 
@@ -319,6 +351,30 @@ ServerEvents.recipes(event => {
         advancement: "spectrum:unlocks/items/bottle_of_ruin",
         removeRecipe: true
     });
+
+    customPedestalCraft(event, {
+        time: 400,
+        tier: "basic",
+        experience: 2.0,
+        pattern: [
+            "FSF",
+            "CBC",
+            "FSF"
+        ],
+        key: {
+            S: "spectrum:shimmerstone_gem",
+            F: "minecraft:fermented_spider_eye",
+            C: "embers:ember_crystal_cluster",
+            B: "minecraft:honey_bottle"
+        },
+        result: {
+            id: "spectrum:bottle_of_fading",
+            count: 1
+        },
+        advancement: "spectrum:unlocks/items/bottle_of_fading",
+        skipRemainders: true,
+        removeRecipeId: "spectrum:pedestal/tier1/bottle_of_fading"
+    })
 
     arsNouveauCrushRecipe(event, {
         inputItems: [[{ item: "milf:everburning_roots_veins" }, 1]],

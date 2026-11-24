@@ -2,11 +2,27 @@ ServerEvents.recipes(event => {
 
     event.remove({id: "enchanted:distilling/demon_heart_diamond_vapour"})
 
+    customDistillingCraft(event, {
+        removeById: "enchanted:distilling/diamond_oil_of_vitriol",
+        id: "enchanted:distilling/diamond_oil_of_vitriol",
+        ingredients: [
+            { id: "enchanted:clay_jar", count: 3 },
+            { id: "apotheosis:gem", count: 1 },
+            { id: "enchanted:oil_of_vitriol", count: 1 }
+        ],
+        results: [
+            { id: "enchanted:diamond_vapour", count: 2 },
+            { id: "enchanted:odour_of_purity", count: 1 }
+        ]
+    })
+
+    event.replaceInput({ id: "enchanted:attuned_stone" }, "minecraft:diamond", "embers:ember_crystal")
+
     customMixingCauldron(event, {
         fluid: "minecraft:water",
         fluidAmount: 1000,
         ingredients: [
-            { "item": "farmersdelight:golden_knife" },
+            { "tag": "milf:knives" },
             { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:chopped_rue" },
             { "item": "paganbless:chopped_lavender" },
@@ -107,6 +123,10 @@ ServerEvents.recipes(event => {
     });
     pedestalFromRecipe(event, {
         id: "enchanted:chalice",
+        replace: [
+            { from: "minecraft:gold_ingot", to: "modern_industrialization:bronze_ingot" },
+            { from: "minecraft:gold_nugget", to: "modern_industrialization:bronze_nugget" }
+        ],
         tier: "basic",
         time: 400,
         experience: 4.0,
@@ -139,6 +159,10 @@ ServerEvents.recipes(event => {
     });
     pedestalFromRecipe(event, {
         id: "enchanted:circle_talisman",
+        replace: [
+            { from: "minecraft:gold_ingot", to: "modern_industrialization:bronze_ingot" },
+            { from: "minecraft:gold_nugget", to: "modern_industrialization:bronze_nugget" }
+        ],
         tier: "basic",
         time: 800,
         citrine: 4,
@@ -231,7 +255,7 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 2, time: 40, machine: "modern_industrialization:mixer",
         inputItems: [
-            [{ item: "minecraft:diamond" }, 2],
+            [{ item: "embers:ember_crystal" }, 2],
             [{ item: "enchanted:whiff_of_magic" }, 1],
         ],
         inputFluids: [

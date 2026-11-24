@@ -11,34 +11,23 @@ ServerEvents.recipes(event => {
             ' e '
         ],
         key: {
-            q: 'enchanted:attuned_stone_charged',
+            q: 'paganbless:mechanical_component',
             w: 'supplementaries:pedestal',
-            e: "modern_industrialization:gold_rod",
-            r: "modern_industrialization:gold_bolt",
-            t: "enchanted:soul_of_the_world",
+            e: "modern_industrialization:bronze_rod",
+            r: "modern_industrialization:bronze_bolt",
+            t: "hexerei:sage_bundle",
         },
         result: {
             "id": "ars_nouveau:ritual_brazier",
             "count": 1
         },
         advancement: "spectrum:place_pedestal",
+        removeRecipe: true,
         yield_upgrades: true
     })
-    event.remove({ output: "ars_nouveau:ritual_brazier" })
-    event.replaceInput({ output: "ars_additions:wayfinder" }, "minecraft:amethyst_shard", "enchanted:attuned_stone")
 
     const rituals = [
-        { id: "ars_nouveau:ritual_burrowing", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
-        { id: "ars_nouveau:ritual_challenge", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
-        { id: "ars_nouveau:ritual_sunrise", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
         { id: "ars_nouveau:ritual_animal_summon", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
-        { id: "ars_nouveau:ritual_forestation", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
-        { id: "ars_nouveau:ritual_moonfall", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
-        { id: "ars_nouveau:ritual_flowering", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
-        {
-            id: "ars_additions:ritual_locate_structure", pedestal_tier: "basic", topaz: 10, amethyst: 10, citrine: 10, onyx: 0, moonstone: 0,
-            addition_ingredients: [{ "item": "enchanted:ender_dew" }]
-        },
         { id: "ars_nouveau:ritual_cloudshaping", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
         { id: "ars_elemental:ritual_repulsion", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
         { id: "ars_nouveau:ritual_animal_summon", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
@@ -67,23 +56,6 @@ ServerEvents.recipes(event => {
             addition_ingredients: [{ "item": "malum:block_of_cthonic_gold" }, { "item": "malum:refined_soulstone" }]
         },
     ]
-
-    customMixingCauldron(event, {
-        fluid: "minecraft:lava",
-        fluidAmount: 1000,
-        ingredients: [
-            { "item": "minecraft:stone" },
-            { "item": "paganbless:chopped_lavender" },
-            { "item": "enchanted:wool_of_bat" },
-            { "item": "enchanted:tongue_of_dog" },
-            { "item": "enchanted:creeper_heart" },
-            { "item": "enchanted:attuned_stone" },
-            { "item": "enchanted:water_artichoke" },
-            { "item": "paganbless:chopped_lavender" },
-        ],
-        output: "ars_nouveau:ritual_awakening",
-        removeRecipe: true
-    })
 
     // item -> item
     var replacementsItemToItem = {

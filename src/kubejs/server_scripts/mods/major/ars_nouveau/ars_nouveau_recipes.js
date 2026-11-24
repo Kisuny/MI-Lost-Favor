@@ -100,10 +100,16 @@ ServerEvents.recipes(event => {
         "WRW",
         "   "
     ], {
-        Q: "minecraft:gold_ingot",
+        Q: "modern_industrialization:bronze_ingot",
         W: "#minecraft:planks",
-        R: "enchanted:whiff_of_magic",
+        R: "paganbless:runic_charge",
     });
+
+    event.replaceInput(
+        { id: "ars_nouveau:arcane_pedestal" },
+        "#c:nuggets/gold",
+        "modern_industrialization:bronze_nugget"
+    )
 
     event.remove({ output: "ars_elemental:curio_bag" })
     event.shaped("ars_elemental:curio_bag", [
@@ -235,8 +241,8 @@ ServerEvents.recipes(event => {
             'wqw'
         ],
         key: {
-            q: 'minecraft:blaze_powder',
-            w: 'minecraft:gold_block',
+            q: 'embers:ember_crystal_cluster',
+            w: 'embers:dawnstone_block',
             e: "spectrum:vegetal",
             r: "ars_elemental:curio_bag",
         },
@@ -262,7 +268,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             q: 'paganbless:black_thorn_staff',
-            w: "enchanted:attuned_stone",
+            w: "minecraft:amethyst_shard",
             e: "#c:plates/dawnstone",
             r: "embers:dawnstone_ingot",
         },
@@ -288,11 +294,11 @@ ServerEvents.recipes(event => {
         ],
         key: {
             q: 'minecraft:lectern',
-            w: "embers:dawnstone_ingot",
-            e: "#c:plates/dawnstone",
-            r: "immersiveengineering:steel_fence",
-            t: "enchanted:foul_fume",
-            y: "enchanted:attuned_stone",
+            w: "modern_industrialization:bronze_ingot",
+            e: "modern_industrialization:iron_plate",
+            r: "embers:dawnstone_block",
+            t: "paganbless:runic_charge",
+            y: "embers:ember_crystal_cluster",
         },
         result: {
             "id": "ars_nouveau:storage_lectern",
@@ -325,7 +331,7 @@ ServerEvents.recipes(event => {
             components: {
                 custom_name: '{"color":"gray","text":"Hephaestus Touch"}',
                 "sauce:school_tome_caster": {
-                    flavor_text: "A gift from the ancient <magic>smith</magic>, reducing matter to its primordial form",
+                    flavor_text: "A gift from the ancient smith, reducing matter to its primordial form",
                     spells: {
                         0: {
                             color: { b: 127, g: 127, id: "ars_nouveau:constant", r: 127 },
@@ -745,6 +751,138 @@ ServerEvents.recipes(event => {
         research: 'thaumaturge:infusion',
         result: 'ars_additions:warp_index',
         removeOutput: true,
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "enchanted:wool_of_bat" },
+            { "item": "enchanted:tongue_of_dog" },
+            { "item": "enchanted:creeper_heart" },
+            { "item": "embers:ember_crystal_cluster" },
+            { "item": "enchanted:water_artichoke" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_nouveau:ritual_awakening",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "minecraft:ink_sac" },
+            { "tag": "c:storage_blocks/coal" },
+            { "item": "minecraft:clock" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_nouveau:ritual_moonfall",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "ars_nouveau:red_archwood_log" },
+            { "item": "minecraft:sunflower" },
+            { "item": "minecraft:sunflower" },
+            { "item": "minecraft:sunflower" },
+            { "item": "minecraft:clock" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_nouveau:ritual_sunrise",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "tag": "minecraft:logs" },
+            { "item": "minecraft:emerald_block" },
+            { "item": "minecraft:ink_sac" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_nouveau:ritual_challenge",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "tag": "minecraft:logs" },
+            { "item": "minecraft:poppy" },
+            { "item": "minecraft:poppy" },
+            { "item": "minecraft:poppy" },
+            { "item": "minecraft:dandelion" },
+            { "item": "minecraft:dandelion" },
+            { "item": "minecraft:dandelion" },
+            { "item": "minecraft:bone_meal" },
+        ],
+        output: "ars_nouveau:ritual_flowering",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "ars_nouveau:green_archwood_log" },
+            { "item": "ars_nouveau:mendosteen_pod" },
+            { "item": "enchanted:breath_of_the_goddess" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_nouveau:ritual_forestation",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "minecraft:ender_pearl" },
+            { "tag": "minecraft:logs" },
+            { "item": "minecraft:compass" },
+            { "item": "embers:ember_crystal_cluster" },
+            { "item": "ars_additions:wayfinder" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_additions:ritual_locate_structure",
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "PCP",
+            " P "
+        ],
+        key: {
+            "P": { "item": "modern_industrialization:bronze_plate" },
+            "C": { "item": "embers:ember_crystal_cluster" }
+        },
+        outputItems: [[{ id: "ars_additions:wayfinder" }, 1]]
     })
 
 })

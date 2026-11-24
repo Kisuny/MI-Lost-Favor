@@ -3,7 +3,7 @@
 // advanced: Onyx pedestal variant with matching structure
 // complex: Moonstone pedestal variant with matching structure
 const customPedestalCraft = (event, args) => {
-  event.custom({
+  let recipe = {
     "type": "spectrum:pedestal",
     "time": args.time,
     "tier": args.tier || "basic",
@@ -20,9 +20,12 @@ const customPedestalCraft = (event, args) => {
     "result": args.result,
     "required_advancement": args.advancement,
     "disable_yield_upgrades": args.yield_upgrades || false,
-  });
+  };
+  if(args.skipRemainders){recipe.skip_recipe_remainders = true}
   if(args.removeRecipe){event.remove({output: args.result.id})}
   if(args.removeRecipeType){event.remove({output: args.result.id, type: args.removeRecipeType})}
+  if(args.removeRecipeId){event.remove({id: args.removeRecipeId})}
+  event.custom(recipe);
 };
 
 const customPedestalCraftShapeless = (event, args) => {

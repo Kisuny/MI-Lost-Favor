@@ -38,6 +38,41 @@ const customMixingCauldron = (event, args) => {
 
 ServerEvents.recipes(event => {
 
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 250,
+        ingredients: [
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" },
+            { "item": "modern_industrialization:bronze_plate" }
+        ],
+        output: "hexerei:sage_burning_plate",
+        heat: "heated",
+        removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 250,
+        ingredients: [
+            { "item": "embers:ember_crystal" },
+            { "item": "minecraft:glass" },
+            { "item": "minecraft:glass" },
+            { "item": "minecraft:glass" },
+            { "item": "minecraft:stone" },
+            { "item": "minecraft:glass" },
+            { "item": "minecraft:glass" },
+            { "item": "minecraft:glass" }
+        ],
+        output: "hexerei:crystal_ball",
+        heat: "heated",
+        removeRecipe: true
+    })
 
     customMixingCauldron(event, {
         fluid: "minecraft:lava",
@@ -104,6 +139,23 @@ ServerEvents.recipes(event => {
         ],
         output: "hexerei:blood_sigil",
         removeRecipe: true
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "enchanted:wool_of_bat" },
+            { "item": "minecraft:leather" },
+            { "item": "minecraft:feather" },
+            { "item": "minecraft:leather" },
+            { "item": "enchanted:whiff_of_magic" },
+            { "item": "minecraft:leather" },
+            { "item": "minecraft:feather" },
+            { "item": "minecraft:leather" },
+        ],
+        output: "minecraft:phantom_membrane",
+        amount: 4
     })
     
     

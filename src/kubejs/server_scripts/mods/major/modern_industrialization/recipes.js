@@ -317,6 +317,16 @@ ServerEvents.recipes(event => {
                 "modern_industrialization:silver_dust"
             ]
         },
+        "thaumaturge:ingot_brass": {
+            outputs: [
+                "modern_industrialization:brass_plate"
+            ]
+        },
+        "thaumaturge:ingot_thaumium": {
+            outputs: [
+                "modern_industrialization:thaumium_plate"
+            ]
+        },
 
         "modern_industrialization:dawnstone_rod": {
             outputs: [

@@ -1,5 +1,10 @@
 ServerEvents.tags('item', event => {
 
+    event.add("waystones:portstones", [
+        'white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray',
+        'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'
+    ].map(color => `waystones:${color}_portstone`))
+
     //TODO: immersive_aircraft But is that really necessary? Any aircraft can be stolen
     event.add("waystones:is_teleport_target",[
         'waystones:black_sharestone', 

@@ -1,13 +1,10 @@
 ServerEvents.recipes(event => {
-    // event.remove({id: "cognition:cognitive_flux"})
     event.replaceInput({ mod: 'cognition' }, 'minecraft:emerald', 'enchanted:attuned_stone')
     event.replaceInput({ mod: 'cognition' }, 'minecraft:copper_ingot', 'embers:dawnstone_ingot')
 
     miMachineRecipe(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
             [{tag:'milf:basic_gemstone_powders'}, 4],
-            [{item:"minecraft:soul_sand"}, 1, 0.5],
-            [{item:"minecraft:lapis_lazuli"}],
         ],
         inputFluids: [
             [{ fluid: "milf:shimmersteel_essence" }, 20],
@@ -15,10 +12,20 @@ ServerEvents.recipes(event => {
         outputItems:[[{item:"cognition:cognitive_flux"}, 6]],
         removeRecipe: true
     })
-    // foreach for tags example
-    // Ingredient.of('#milf:glyphs').itemIds.forEach(glyph => {
-    //     event.remove({output: glyph})
-    // })
+
+    embersStampingRecipe(event, {
+        inputItems: [
+            [{ item: "embers:flat_stamp" }],
+            [{ tag: "milf:basic_gemstone_powders" }],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:shimmersteel_essence" }, 10]
+        ],
+        outputItems: [
+            [{ id: "cognition:cognitive_flux" }, 1],
+        ]
+    })
+
 
 
 

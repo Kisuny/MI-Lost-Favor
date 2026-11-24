@@ -19,7 +19,8 @@ createNewFluid("alien_goo", {
     flowingTexture: "milf:fluid/alien_goo",
 })
 
-createNewFluid("shimmersteel_essence", {textureType:"thick", color: Number("0xC18A36"), lang: { "ru_ru": "Эссенция сверкостали" }})
+createNewFluid("shimmersteel_essence", {textureType:"thick", color: Number("0xC18A36"), lang: { "ru_ru": "Эссенция сверкостали" }})
+createNewFluid("molten_shimmerstone", {textureType:"thick", color: Number("0xFEECD6"), lang: { "ru_ru": "Расплавленный сверкающий камень" }})
 createNewFluid("syngas", {
     lang: { "ru_ru": "Синтез-газ" },
     stillTexture: "milf:fluid/syngas",

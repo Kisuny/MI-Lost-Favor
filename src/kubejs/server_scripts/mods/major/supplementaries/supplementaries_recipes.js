@@ -10,5 +10,13 @@ ServerEvents.recipes(event => {
         ],
     })
 
+    embersMeltingRecipe(event, {
+        inputItems: [
+            [{ item: "minecraft:glow_berries" }, 1],
+        ],
+        outputFluids: [
+            [{ fluid: "supplementaries:lumisene" }, 125]
+        ]
+    })
 
 })

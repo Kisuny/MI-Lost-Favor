@@ -5,8 +5,7 @@
   "y": 11.5,
   "deps": {
     "all": [
-      "petrochemical_party/rangefinder",
-      "petrochemical_party/enderic_lens"
+      "petrochemical_party/rangefinder"
     ]
   },
   "tasks": [
@@ -15,5 +14,6 @@
       "type": "item"
     }
   ],
-  "shape": "heart"
+  "shape": "heart",
+  "lines_out": "hover"
 }

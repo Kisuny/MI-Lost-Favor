@@ -806,6 +806,66 @@ ServerEvents.recipes(event => {
     oritechAssemblerRecipe(event, {
         time: 200,
         inputItems: [
+            [{ item: "immersiveengineering:wirecoil_electrum_ins" }, 1],
+            [{ item: "milf:basic_motor" }, 1],
+            [{ item: "modern_industrialization:rubber_sheet" }, 1],
+            [{ item: "modern_industrialization:rubber_sheet" }, 1]
+        ],
+        outputItems: [[{ item: "modern_industrialization:conveyor" }, 1]],
+        compatEnergy: 52
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "oritech:magnetic_coil" }, 1],
+            [{ item: "modern_industrialization:copper_large_plate" }, 1],
+            [{ item: "immersiveengineering:wirecoil_electrum_ins" }, 1],
+            [{ item: "modern_industrialization:iron_rod" }, 1]
+        ],
+        outputItems: [[{ item: "milf:basic_motor" }, 2]],
+        compatEnergy: 109
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "milf:basic_motor" }, 1],
+            [{ item: "modern_industrialization:copper_rotor" }, 1],
+            [{ item: "modern_industrialization:copper_curved_plate" }, 1],
+            [{ item: "modern_industrialization:copper_curved_plate" }, 1]
+        ],
+        outputItems: [[{ item: "milf:basic_pump" }, 1]],
+        compatEnergy: 109
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "milf:basic_motor" }, 1],
+            [{ item: "milf:basic_pump" }, 1],
+            [{ item: "modern_industrialization:analog_circuit" }, 1],
+            [{ item: "modern_industrialization:conveyor" }, 1]
+        ],
+        outputItems: [[{ item: "modern_industrialization:basic_upgrade" }, 2]],
+        compatEnergy: 48
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
+            [{ item: "ytech:wooden_plate" }, 1],
+            [{ item: "ytech:wooden_plate" }, 1],
+            [{ item: "modern_industrialization:steel_plate" }, 1],
+            [{ item: "modern_industrialization:steel_plate" }, 1]
+        ],
+        outputItems: [[{ item: "sophisticatedstorage:upgrade_base" }, 2]],
+        compatEnergy: 48
+    })
+
+    oritechAssemblerRecipe(event, {
+        time: 200,
+        inputItems: [
             [{ item: "modern_industrialization:analog_circuit_board" }, 1],
             [{ item: "modern_industrialization:aluminum_large_plate" }, 1],
             [{ item: "immersiveengineering:wirecoil_steel" }, 1],
@@ -884,6 +944,13 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region refinery
+
+    oritechRefineryRecipe(event, {
+        time: 142,
+        inputItems: [[{ item: "modern_industrialization:lignite_coal_dust" }, 1]],
+        outputItems: [[{ item: "immersivepetroleum:paraffin_wax" }, 1]],
+        inputFluids: [[{ fluid: "minecraft:water" }, 200]],
+    })
 
     oritechRefineryRecipe(event, {
         time: 111,
@@ -1078,7 +1145,9 @@ KubeJSTweaks.beforeRecipes(event => {
         "oritech:particle/fluxite",
         "oritech:assembler/fluxgate",
         "oritech:assembler/magnet",
-        "oritech:plastic_blockblockinv"
+        "oritech:plastic_blockblockinv",
+        "oritech:biomass_blockblockinv",
+        "oritech:particle/enderic_compound"
     ]
 
     disableByRecipeID.forEach(id => {

@@ -34,7 +34,7 @@ function ieArcFurnaceCraft (event, args) {
 
         if (miOutputItems.length <= 3 && miInputItems.length <= 3){
             miMachineRecipe(event, {
-                energy: 31, time: 222, machine: "modern_industrialization:blast_furnace",
+                energy: 22, time: 222, machine: "modern_industrialization:blast_furnace",
                 inputItems: args.inputItems,
                 outputItems: miOutputItems
             })

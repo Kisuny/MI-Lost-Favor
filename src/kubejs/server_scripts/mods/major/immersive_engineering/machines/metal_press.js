@@ -179,6 +179,24 @@ ServerEvents.recipes(event => {
     })
 
     iePressRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:copper_wire" }, 1]
+        ],
+        mold: { item: "immersivepetroleum:paraffin_wax" },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_copper" }]],
+        compatOff: true
+    })
+
+    iePressRecipe(event, {
+        inputItems: [
+            [{ item: "modern_industrialization:electrum_wire" }, 1]
+        ],
+        mold: { item: "immersivepetroleum:paraffin_wax" },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_electrum" }]],
+        compatOff: true
+    })
+
+    iePressRecipe(event, {
         inputItems: [[{ "item": "modern_industrialization:rubber_sheet" }, 8]],
         outputItems: [[{ id: "modern_industrialization:rubber_boots" }, 1]],
         mold: { item: "minecraft:iron_boots" },

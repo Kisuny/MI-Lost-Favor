@@ -72,6 +72,11 @@ ClientEvents.generateAssets("before_mods", event => {
         "immersiveengineering:metal_press",
 
         "mi_tweaks:not_so_multi_and_not_really_a_block_packer_1009_workbench_edition",
+
+
+        "oritech:assembler",
+
+
         "modern_industrialization:assembler",
 
         

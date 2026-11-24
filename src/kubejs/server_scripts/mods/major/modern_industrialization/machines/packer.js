@@ -186,6 +186,26 @@ ServerEvents.recipes(event => {
     miMachineRecipe(event, {
         energy: 2, time: 100, machine: "modern_industrialization:packer",
         inputItems: [
+            [{ item: "immersiveengineering:wirecoil_electrum" }, 1],
+            [{ item: "immersiveengineering:hemp_fabric" }, 1],
+
+        ],
+        outputItems: [[{ item: "immersiveengineering:wirecoil_electrum_ins" }, 1]],
+    })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "immersiveengineering:wirecoil_copper" }, 1],
+            [{ item: "immersiveengineering:hemp_fabric" }, 1],
+
+        ],
+        outputItems: [[{ item: "immersiveengineering:wirecoil_copper_ins" }, 1]],
+    })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
             [{ item: "modern_industrialization:copper_drill_head" }, 1],
             [{ item: "modern_industrialization:tin_gear" }, 1],
             [{ item: "milf:steel_machine_bit" }, 1]

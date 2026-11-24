@@ -309,7 +309,9 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:packer' })
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
-    //event.remove({ type: 'modern_industrialization:quarry' })
+    event.remove({ type: 'modern_industrialization:distillation_tower' })
+    event.remove({ type: 'modern_industrialization:distillery' })
+    event.remove({ type: 'modern_industrialization:oil_drilling_rig' })
 
     //#region forge hammer
 
@@ -934,14 +936,14 @@ ServerEvents.recipes(event => {
             "WMW"
         ],
         key: {
-            C: { item: "immersiveengineering:component_electronic" },
+            C: { item: "modern_industrialization:analog_circuit" },
             G: { item: "milf:steel_infused_glass" },
             P: { item: "modern_industrialization:tumbaga_plate" },
-            W: { item: "modern_industrialization:cupronickel_wire_magnetic" },
+            W: { item: "modern_industrialization:cupronickel_wire" },
             M: { item: "oritech:magnetic_coil" },
 
         },
-        outputItems: [[{ id: `milf:basic_navigation_module` }, 3]],
+        outputItems: [[{ id: `milf:basic_navigation_module` }, 5]],
         removeRecipe: true
     })
 
@@ -1730,6 +1732,22 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    milfShaped(event, {
+        pattern: [
+            "sBs",
+            "sPs",
+            "RBR"
+        ],
+        key: {
+            P: { item: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" },
+            R: { item: "immersiveengineering:rs_engineering" },
+            B: { item: "milf:blank_blueprint" },
+            s: { item: "modern_industrialization:steel_curved_plate" }
+        },
+        outputItems: [[{ id: "mi_tweaks:not_so_multi_and_not_really_a_block_packer_1009_workbench_edition" }, 1]],
+        removeRecipe: true
+    })
+
     //#endregion
 
     //#endregion
@@ -2007,6 +2025,10 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/invar/smelting/dust_to_ingot_smelting",
         "modern_industrialization:materials/invar/craft/large_plate",
         "modern_industrialization:materials/invar/packer/large_plate",
+        "modern_industrialization:electric_age/machine/distillery_asbl",
+        "modern_industrialization:assembler_generated/electric_age/machine/distillery",
+        "modern_industrialization:electric_age/machine/distillation_tower_asbl",
+        "modern_industrialization:assembler_generated/electric_age/machine/distillation_tower",
 
         "modern_industrialization:compat/ae2/macerator/minecraft_ender_pearl_to_ae2_ender_dust",
         "modern_industrialization:compat/ae2/macerator/_c_gems_certus_quartz_to_ae2_certus_quartz_dust",

@@ -39,5 +39,15 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+        inputItems: [
+            [{ item: "oritech:biomass_block" }]
+        ],
+        outputItems: [
+            [{ item: "oritech:biomass" }, 4],
+        ]
+    })
+
 
 })

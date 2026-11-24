@@ -17,7 +17,6 @@ ServerEvents.recipes(event => {
         outputFluids: [
             [{ fluid: "oritech:still_biofuel" }, 125, 0.64],
         ],
-        custom_condition: "microbial_fabricator"
     })
 
     miMachineRecipe(event, {
@@ -35,7 +34,7 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 34, time: 600, machine: "modern_industrialization:microbial_fabricator_basic",
+        energy: 34, time: 231, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
             [neoCompound([
                 { tag: "minecraft:meat" },
@@ -51,11 +50,9 @@ ServerEvents.recipes(event => {
             [{ fluid: "oritech:still_biofuel" }, 125],
             [{ fluid: "oritech:still_biofuel" }, 125],
         ],
-        //outputItems: [[{ item: "oritech:biomass" }, 1]],
         outputFluids: [
             [{ fluid: "milf:alien_goo" }, 500],
         ],
-        custom_condition: "microbial_fabricator"
     })
 
     miMachineRecipe(event, {
@@ -70,19 +67,18 @@ ServerEvents.recipes(event => {
             [{ fluid: "milf:alien_goo" }, 125, 0.84],
         ],
         outputItems: [[{ item: "oritech:raw_biopolymer" }, 1]],
-        custom_condition: "microbial_fabricator"
     })
 
     miMachineRecipe(event, {
-        energy: 16, time: 100, machine: "modern_industrialization:microbial_fabricator_basic",
+        energy: 12, time: 100, machine: "modern_industrialization:microbial_fabricator_basic",
         inputItems: [
             [{ item: "oritech:biomass" }, 1, 0.88],
             [{ item: "oritech:biosteel_ingot" }, 1],
             [{ item: "oritech:biomass" }, 1, 0.33],
         ],
         inputFluids: [
-            [{ fluid: "milf:alien_goo" }, 125, 0.44],
-            [{ fluid: "milf:alien_goo" }, 125, 0.21],
+            [{ fluid: "milf:alien_goo" }, 125, 0.24],
+            [{ fluid: "milf:alien_goo" }, 125, 0.11],
         ],
         outputItems: [[{ item: "modern_industrialization:bioresistant_alloy_ingot" }, 1, 0.82]]
     })
@@ -117,6 +113,20 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    miMachineRecipe(event, {
+        energy: 32, time: 400, machine: "modern_industrialization:microbial_fabricator_basic",
+        inputItems: [
+            [{ item: "ae2:ender_dust" }, 8, 0.71],
+            [{ item: "minecraft:amethyst_shard" }, 2],
+            [{ item: "ae2:ender_dust" }, 8, 0.84],
+        ],
+        inputFluids: [
+            [{ fluid: "milf:alien_goo" }, 500, 0.83],
+            [{ fluid: "milf:alien_goo" }, 500, 0.75],
+        ],
+        outputItems: [[{ item: "minecraft:echo_shard" }, 1, 0.74]],
+    })
+
     //#endregion
 
     //#region bioresistant tier
@@ -135,7 +145,6 @@ ServerEvents.recipes(event => {
         outputItems: [
             [{ item: "milf:space_hive" }, 1, 0.1],
         ],
-        custom_condition: "microbial_fabricator"
     })
 
     miMachineRecipe(event, {
@@ -152,37 +161,20 @@ ServerEvents.recipes(event => {
         outputFluids: [
             [{ fluid: "milf:alien_goo" }, 200],
         ],
-        custom_condition: "microbial_fabricator"
     })
 
     miMachineRecipe(event, {
         energy: 61, time: 200, machine: "modern_industrialization:microbial_fabricator_bioresistant",
         inputItems: [
-            [{ item: "modern_industrialization:adamant_dust" }, 2],
-            [{ item: "ae2:ender_dust" }, 2],
-            [{ item: "oritech:fluxite" }, 4],
+            [{ item: "modern_industrialization:adamant_dust" }, 1],
+            [{ item: "ae2:ender_dust" }, 3],
+            [{ item: "oritech:fluxite" }, 2],
         ],
         inputFluids: [
             [{ fluid: "milf:alien_goo" }, 125, 0.95],
             [{ fluid: "milf:alien_goo" }, 125, 0.65],
         ],
         outputItems: [[{ item: "oritech:enderic_compound" }, 1]],
-        //custom_condition: "tier_gated"
-    })
-
-    miMachineRecipe(event, {
-        energy: 66, time: 400, machine: "modern_industrialization:microbial_fabricator_bioresistant",
-        inputItems: [
-            [{ item: "oritech:enderic_compound" }, 1, 0.71],
-            [{ item: "minecraft:amethyst_shard" }, 2],
-            [{ item: "oritech:enderic_compound" }, 1, 0.84],
-        ],
-        inputFluids: [
-            [{ fluid: "milf:alien_goo" }, 500, 0.83],
-            [{ fluid: "milf:alien_goo" }, 500, 0.75],
-        ],
-        outputItems: [[{ item: "minecraft:echo_shard" }, 1, 0.74]],
-        //custom_condition: "tier_gated"
     })
 
     miMachineRecipe(event, {
@@ -197,32 +189,8 @@ ServerEvents.recipes(event => {
             [{ fluid: "milf:alien_goo" }, 100, 0.45],
         ],
         outputItems: [[{ item: "ae2:sky_stone_block" }, 2, 0.72]],
-        //custom_condition: "tier_gated"
     })
 
     //#endregion
-
-})
-
-MIRecipeEvents.customCondition(event => {
-
-    event.registerWithIcon(`microbial_fabricator`,
-        (context, recipe) => {
-            let block = context.level.getBlock(context.blockEntity.blockPos)
-            let data = block.getEntityData()
-            let maxEu = data.getLong("recipeMaxEu")
-
-            if (maxEu >= 20) {
-                
-                block.setEntityData(Object.assign({}, data, { recipeMaxEu: 12, efficiencyTicks: 1}))
-                context.blockEntity.setChanged()
-                context.blockEntity.sync()
-            }
-            
-            return true
-        },
-        Item.of("mi_tweaks:microbial_fabricator"),
-        Text.translatable(`milf.mi_condition.microbial_fabricator`)
-    )
 
 })

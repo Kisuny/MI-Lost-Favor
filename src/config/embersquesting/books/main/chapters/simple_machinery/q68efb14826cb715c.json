@@ -4,11 +4,12 @@
     "<lang key=milf.quest.simple_machinery.q68efb14826cb715c.desc>"
   ],
   "icon": "milf:saeta_plush",
-  "x": 8.5,
-  "y": 11,
+  "x": 8.46875,
+  "y": 11.78125,
   "deps": {
     "all": [
-      "simple_machinery/not_so_multi_but_still_block_packer_2099_3x3x3_edition"
+      "simple_machinery/not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+      "simple_machinery/quest_4"
     ]
   },
   "tasks": [
@@ -28,6 +29,8 @@
       "type": "item"
     }
   ],
-  "shape": "heart",
+  "visibility": "hidden",
+  "shape": "none",
+  "lines_in": "never",
   "size": 0.5
 }

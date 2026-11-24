@@ -782,7 +782,10 @@ ServerEvents.recipes(event => {
         ],
         key: {
             W: { item: "modern_industrialization:copper_wire" },
-            B: { item: "ytech:beeswax" }
+            B: neoCompound([
+                { item: "ytech:beeswax" },
+                { item: "immersivepetroleum:paraffin_wax" }
+            ])        
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_copper" }, 8]],
         removeRecipe: true
@@ -796,7 +799,10 @@ ServerEvents.recipes(event => {
         ],
         key: {
             W: { item: "modern_industrialization:electrum_wire" },
-            B: { item: "ytech:beeswax" }
+            B: neoCompound([
+                { item: "ytech:beeswax" },
+                { item: "immersivepetroleum:paraffin_wax" }
+            ])        
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_electrum" }, 8]],
         removeRecipe: true
@@ -811,7 +817,10 @@ ServerEvents.recipes(event => {
         key: {
             W: { item: "modern_industrialization:aluminum_wire" },
             S: { item: "modern_industrialization:steel_wire" },
-            B: { item: "ytech:beeswax" }
+            B: neoCompound([
+                {item: "ytech:beeswax"}, 
+                {item:"immersivepetroleum:paraffin_wax"}
+            ])
         },
         outputItems: [[{ id: "immersiveengineering:wirecoil_steel" }, 4]],
         removeRecipe: true
@@ -1090,6 +1099,15 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region MI machines
+
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [
+            [{ item: "minecraft:stick" }, 1],
+            [{ item: "immersiveengineering:hemp_fiber" }, 6]
+        ],
+        outputItems: [[{ item: "immersiveengineering:hemp_fabric" }, 2]]
+    })
 
     miMachineRecipe(event, {
         energy: 4, time: 600, machine: "modern_industrialization:mixer",

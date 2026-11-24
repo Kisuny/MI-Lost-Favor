@@ -1,5 +1,136 @@
 {
   "title": "",
+  "description": [
+    "Spawns similarly to all the other geodes, but surrounded by blackstone and blackslag. The only thingie that contains blackslag in the overworld, so it \"should\" be relatively easy to locate by exploring caves",
+    {
+      "frame": false,
+      "materials": false,
+      "ortho": true,
+      "interactive": true,
+      "loop": false,
+      "yaw": 135.0,
+      "layers": [
+        [
+          "dbBBBBBB",
+          "dbBBBbBB",
+          "dBbBBBBB",
+          "bBBBBBBB",
+          "bBBBBBBB",
+          "BB  BBbB",
+          "BB  BBBB",
+          "BBbBBBBB",
+          "BBBBBBBb"
+        ],
+        [
+          "dbBBBBBB",
+          "dBBBBBbB",
+          "bbBBBBBB",
+          "bbBBBbBb",
+          "B   BBBB",
+          "B    BBB",
+          "     BBB",
+          "B   BBBb",
+          "BBBBBBBB"
+        ],
+        [
+          "dBBBBBBB",
+          "bBBbBBBB",
+          "bBBBBBBB",
+          "BB  BBBb",
+          "B    BBB",
+          "      bB",
+          "      BB",
+          "     BBB",
+          "B   BBBB"
+        ],
+        [
+          "bBBBBBrB",
+          "BBBBBBrB",
+          "BBBB BBB",
+          "B     Bb",
+          "      BB",
+          "      Bb",
+          "      BB",
+          "     BBB",
+          "     BBB"
+        ],
+        [
+          "BBBBrrrr",
+          "BBBBrrrr",
+          "BBb  rrr",
+          "B     BB",
+          "       B",
+          "      BB",
+          "      BB",
+          "      BB",
+          "     BBB"
+        ],
+        [
+          "BBBBrrrr",
+          "BBBBrrrr",
+          "BB  rrrr",
+          "     rrr",
+          "       B",
+          "       B",
+          "       B",
+          "      Bb",
+          "     BBB"
+        ],
+        [
+          "BBBBrrrr",
+          "BBbBrrrr",
+          "B   rrrr",
+          "     rrr",
+          "       B",
+          "       B",
+          "       B",
+          "      BB",
+          "      BB"
+        ],
+        [
+          "BBBBrrrr",
+          "BBBBrrrr",
+          "BB  rrrr",
+          "     rrr",
+          "       b",
+          "       B",
+          "       B",
+          "      Bb",
+          "     Bbb"
+        ],
+        [
+          "BBBBBrrr",
+          "BBBBBrrr",
+          "BBB  rrr",
+          "B     BB",
+          "       B",
+          "      BB",
+          "      Bb",
+          "      Bb",
+          "     BBB"
+        ],
+        [
+          "bBBBBBBB",
+          "BBBBBBBB",
+          "BB BBBBB",
+          "BB  BBBB",
+          "     BBB",
+          "      bB",
+          "     tbB",
+          "     BBB",
+          "    BBBB"
+        ]
+      ],
+      "key": {
+        "b": "spectrum:blackslag",
+        "d": "minecraft:deepslate",
+        "r": "milf:reservoir_rock",
+        "t": "minecraft:tuff",
+        "B": "minecraft:blackstone"
+      },
+      "type": "scene"
+    }
+  ],
   "icon": "milf:reservoir_rock",
   "x": 20.5,
   "y": 14.5,

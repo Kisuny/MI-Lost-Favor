@@ -55,6 +55,24 @@ RecipeViewerEvents.addInformation('item', event => {
 	event.add('paganbless:black_thorn_sapling', [
 		Text.translate('milf.emi_info.paganbless_black_thorn_sapling')
 	])
+	event.add([
+		'enchanted:rowan_sapling',
+		'enchanted:hawthorn_sapling',
+		'enchanted:alder_sapling'
+	], [
+		Text.translate('milf.emi_info.enchanted_sapling')
+	])
+	event.add([
+		'enchanted:rowan_log',
+		'enchanted:rowan_leaves',
+		'enchanted:rowan_berries',
+		'enchanted:hawthorn_log',
+		'enchanted:hawthorn_leaves',
+		'enchanted:alder_log',
+		'enchanted:alder_leaves'
+	], [
+		Text.translate('milf.emi_info.enchanted_tree')
+	])
 	event.add(['enigmaticlegacyplus:evil_essence', 'enigmaticlegacyplus:abyssal_heart', 'milf:soul_of_the_helpless'], [
 		Text.translate('milf.cursed_drops')
 	])

@@ -1,11 +1,15 @@
 {
   "title": "",
   "icon": "spectrum:glass_crest_ultra_greatsword{\"minecraft:enchantments\":{levels:{\"minecraft:sweeping_edge\":4}}}",
-  "x": 52.51,
-  "y": 30.68,
+  "x": 51.91,
+  "y": 29.1,
   "deps": {
     "all": [
-      "magic_step_ii/malachite_ultra_greatsword"
+      "magic_step_ii/malachite_ultra_greatsword",
+      "magic_step_ii/moonstone_core",
+      "magic_step_ii/white_sapling",
+      "magic_step_i/nether_star",
+      "magic_step_ii/bismuth_crystal"
     ]
   },
   "tasks": [
@@ -16,5 +20,6 @@
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "circle",
+  "lines_in": "hover"
 }

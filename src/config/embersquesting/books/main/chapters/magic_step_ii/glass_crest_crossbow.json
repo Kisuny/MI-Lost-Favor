@@ -1,11 +1,14 @@
 {
   "title": "",
   "icon": "spectrum:glass_crest_crossbow{\"minecraft:enchantments\":{levels:{\"minecraft:piercing\":5}}}",
-  "x": 55.95,
-  "y": 30.68,
+  "x": 55.51,
+  "y": 29.1,
   "deps": {
     "all": [
-      "magic_step_ii/malachite_crossbow"
+      "magic_step_ii/malachite_crossbow",
+      "magic_step_ii/moonstone_core",
+      "magic_step_ii/white_sapling",
+      "magic_step_ii/q2d8c9df5e216e09c"
     ]
   },
   "tasks": [
@@ -16,5 +19,6 @@
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "circle",
+  "lines_in": "hover"
 }

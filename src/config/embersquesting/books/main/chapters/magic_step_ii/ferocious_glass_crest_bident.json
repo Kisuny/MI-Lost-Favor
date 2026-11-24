@@ -1,11 +1,15 @@
 {
   "title": "",
   "icon": "spectrum:ferocious_glass_crest_bident{\"minecraft:enchantments\":{levels:{\"minecraft:impaling\":6}}}",
-  "x": 51.31,
-  "y": 30.68,
+  "x": 50.11,
+  "y": 29.1,
   "deps": {
     "all": [
-      "magic_step_ii/malachite_bident"
+      "magic_step_ii/malachite_bident",
+      "magic_step_ii/moonstone_core",
+      "magic_step_ii/white_sapling",
+      "magic_step_ii/mermaids_gem",
+      "magic_step_ii/storm_stone"
     ]
   },
   "tasks": [
@@ -16,5 +20,6 @@
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "circle",
+  "lines_in": "hover"
 }

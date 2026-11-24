@@ -2,10 +2,14 @@
   "title": "",
   "icon": "spectrum:glass_crest_workstaff{\"minecraft:enchantments\":{levels:{\"minecraft:fortune\":4}}}",
   "x": 53.71,
-  "y": 30.68,
+  "y": 29.1,
   "deps": {
     "all": [
-      "magic_step_ii/malachite_workstaff"
+      "magic_step_ii/malachite_workstaff",
+      "magic_step_ii/moonstone_core",
+      "magic_step_ii/white_sapling",
+      "magic_step_ii/resonance_shard",
+      "magic_step_ii/paltaeria_gem"
     ]
   },
   "tasks": [
@@ -16,5 +20,6 @@
       "type": "item"
     }
   ],
-  "shape": "circle"
+  "shape": "circle",
+  "lines_in": "hover"
 }

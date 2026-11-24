@@ -2074,6 +2074,22 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "NPN",
+            " F ",
+            "NPN",
+        ],
+        key: {
+            "F": { "item": "embers:ashen_fabric" },
+            "P": { "item": "modern_industrialization:dawnstone_plate" },
+            "N": { "item": "modern_industrialization:dawnstone_nugget" }
+
+        },
+        outputItems: [[{ id: "embers:inflictor_gem" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
             "B  ",
             "   ",
             "   ",

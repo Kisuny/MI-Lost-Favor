@@ -64,6 +64,14 @@ Object.entries({
     "enchanted:diamond_vapour": {
         langs: { "en_us": "Gem Vapour", "ru_ru": "Гемный пар" },
         types: ["Item"]
+    },
+    "magnumtorch:emerald_magnum_torch": {
+        langs: { "en_us": "Lead Magnum Torch", "ru_ru": "Большой свинцовый факел" },
+        types: ["Block", "Item"]
+    },
+    "magnumtorch:diamond_magnum_torch": {
+        langs: { "en_us": "Copper Magnum Torch", "ru_ru": "Большой медный факел" },
+        types: ["Block", "Item"]
     }
 }).forEach(([toRenameId, langData]) => {
 

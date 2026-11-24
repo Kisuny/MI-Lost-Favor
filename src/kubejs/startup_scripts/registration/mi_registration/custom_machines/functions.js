@@ -250,6 +250,7 @@ function TieredBatchMachineTooltipBuilder(machineId){
 
 global.miTweaksTieredBatchMachineTooltips = global.miTweaksTieredBatchMachineTooltips || {}
 global.miProxyableMachineRecipeTypes = global.miProxyableMachineRecipeTypes || {}
+global.miTweaksPrevTierRecipesCompat = global.miTweaksPrevTierRecipesCompat || {}
 function registerTieredMIMachine(id, args){
     registerMIRecipeType(id, args)
 
@@ -283,6 +284,15 @@ function registerTieredMIMachine(id, args){
                 if (batchMachineId) {
                     tierBuilder.asBatchOf(tierArgs.reiCategory || batchMachineId)
                 }
+            }
+
+            if (tierArgs.prevTierCompat){
+
+                tierArgs.prevTierCompat.forEach(prevTierId => {
+                    global.miTweaksPrevTierRecipesCompat[`modern_industrialization:${prevTierId}`] = global.miTweaksPrevTierRecipesCompat[`modern_industrialization:${prevTierId}`] || []
+                    global.miTweaksPrevTierRecipesCompat[`modern_industrialization:${prevTierId}`].push(`modern_industrialization:${tierArgs.id}`)
+                })
+
             }
 
             let shape = buildMachineShape(event, tierArgs)

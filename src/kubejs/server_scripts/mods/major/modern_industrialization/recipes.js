@@ -217,6 +217,17 @@ function miMachineRecipe(event, args){
             })
     }
 
+    if (machinesForMITweaksPrevTierCompat.contains(args.machine)) {
+
+        global.miTweaksPrevTierRecipesCompat[args.machine].forEach(tierMachineId => {
+            miMachineRecipe(
+                event,
+                Object.assign({}, args, { machine: tierMachineId })
+            )
+        })
+
+    }
+
     if (miMachinesVariations[args.machine]){
         Object.entries(miMachinesVariations[args.machine]).forEach(([machineId, recipeData]) => {
             //let newArgs = Object.assign({}, args, { machine: machineId })
@@ -247,6 +258,10 @@ let miRemovedRecipesMap = new $HashMap()
 
 let machinesForMITweaksTierCompat = new $HashSet(
     Object.values(global.miProxyableMachineRecipeTypes)
+)
+
+let machinesForMITweaksPrevTierCompat = new $HashSet(
+    Object.keys(global.miTweaksPrevTierRecipesCompat)
 )
 
 let miMachinesCompat = {

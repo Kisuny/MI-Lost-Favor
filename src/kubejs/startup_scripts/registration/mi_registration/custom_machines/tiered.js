@@ -28,7 +28,8 @@ registerTieredMIMachine('microbial_fabricator', {
             },
             workstationID: "modern_industrialization:bioresistant_machine_casing",
             maxBaseEU: 66,
-            recipe: { itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true }
+            recipe: { itemsIn: true, itemsOut: true, fluidsIn: true, fluidsOut: true },
+            prevTierCompat: ["microbial_fabricator_basic"]
         }
     ],
     pBar: { x: 58, y: 33, name: 'enigma_arrow' },
@@ -123,7 +124,8 @@ registerTieredMIMachine('machine_assembler', {
             },
             workstationID: "oritech:machine_ultimate_addon",
             maxBaseEU: 71,
-            recipe: { itemsIn: true, itemsOut: true}
+            recipe: { itemsIn: true, itemsOut: true},
+            prevTierCompat: ["basic_machine_assembler"]
         }
     ],
 

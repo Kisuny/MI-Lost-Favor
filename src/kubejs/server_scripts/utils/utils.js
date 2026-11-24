@@ -163,6 +163,15 @@ function neoCompound(children, amount){
     }
 }
 
+function neoComponents(items, components, strict) {
+    return {
+        type: "neoforge:components",
+        strict: strict ?? false,
+        items: items,
+        components: components
+    }
+}
+
 const MissingItemsNotificationType = {
     UPGRADE(itemName) { return Component.translatable("milf.notification.missing_items.to_upgrade", itemName)},
     USE(itemName) { return Component.translatable("milf.notification.missing_items.to_use", itemName) }

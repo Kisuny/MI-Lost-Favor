@@ -171,6 +171,9 @@ ServerEvents.recipes(event => {
         "minecraft:redstone": {
             fluid: "modern_industrialization:molten_redstone",
             bonus: "embers:molten_copper",
+        },
+        "modern_industrialization:dawnstone_dust": {
+            fluid: "embers:molten_dawnstone",
         }
 
     },([dust, data]) => {

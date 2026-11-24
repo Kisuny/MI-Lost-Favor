@@ -259,10 +259,7 @@ ServerEvents.recipes(event => {
             S: { item: "modern_industrialization:rubber_sheet" },
             b: { item: "milf:steel_machine_bit" }
         },
-        outputItems: [[{ 
-            id: "immersiveengineering:blueprint",
-            components: { "immersiveengineering:blueprint": MILF_BLUEPRINTS.craftingComponents, "minecraft:item_name": "{'text':'" + "Components" + "','color':'" + '#765A53' + "'}" }
-        }, 1]],
+        outputItems: [[MILF_BLUEPRINTS.getAsItem.craftingComponents, 1]],
         removeRecipe: true
     })
 
@@ -277,10 +274,7 @@ ServerEvents.recipes(event => {
             S: { item: "modern_industrialization:copper_fine_wire" },
             b: { item: "milf:steel_machine_bit" }
         },
-        outputItems: [[{
-            id: "immersiveengineering:blueprint",
-            components: { "immersiveengineering:blueprint": MILF_BLUEPRINTS.molds, "minecraft:item_name": "{'text':'" + "Molds" + "','color':'" + '#A9B4BF' + "'}" }
-        }, 1]],
+        outputItems: [[MILF_BLUEPRINTS.getAsItem.molds, 1]],
         compatOff: true
     })
 

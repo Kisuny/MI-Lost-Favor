@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:wrench" }, 1]],
         category: MILF_BLUEPRINTS.miSteamComponents,
         removeRecipe: true,
+        compat1009: true,
     })
 
     ieBlueprintRecipe(event, {
@@ -81,7 +82,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:capacitor" }, 2]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipeType: "minecraft:crafting_shaped",
-        compatOff:true
+        compat1009: true
     })
 
     ieBlueprintRecipe(event, {
@@ -93,7 +94,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:analog_circuit_board" }]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipeType: "minecraft:crafting_shaped",
-        compatOff: true
+        compat1009: true
     })
 
     ieBlueprintRecipe(event, {
@@ -105,7 +106,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:resistor" }, 5]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipeType: "minecraft:crafting_shaped",
-        compatOff: true
+        compat1009: true
     })
 
     ieBlueprintRecipe(event, {
@@ -116,7 +117,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:inductor" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipeType: "minecraft:crafting_shaped",
-        compatOff: true
+        compat1009: true
     })
 
     ieBlueprintRecipe(event, {
@@ -130,7 +131,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:analog_circuit" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
         removeRecipeType: "minecraft:crafting_shaped",
-        compatOff: true
+        compat1009: true,    
     })
 
     //#endregion
@@ -146,6 +147,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "immersiveengineering:wirecutter" }]],
         category: MILF_BLUEPRINTS.usefulTools,
+        compat1009: true,
         removeRecipe: true
     })
 
@@ -202,6 +204,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "milf:basic_motor" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,
+        compat1009: true,
         removeRecipe: true
     })
 
@@ -215,7 +218,7 @@ ServerEvents.recipes(event => {
         outputItems: [[{ "item": "modern_industrialization:redstone_battery" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,
         removeRecipeType: "minecraft:crafting_shaped",
-        compatOff: true
+        compat1009: true,
     })
 
     ieBlueprintRecipe(event, {
@@ -227,7 +230,8 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "milf:basic_pump" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,
-        removeRecipe: true
+        removeRecipe: true,
+        compat1009: true,
     })
 
     ieBlueprintRecipe(event, {
@@ -238,6 +242,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "modern_industrialization:conveyor" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,
+        compat1009: true,
         removeRecipe: true
     })
 
@@ -250,6 +255,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "modern_industrialization:basic_upgrade" }]],
         category: MILF_BLUEPRINTS.miBasicComponents,
+        compat1009: true,
         removeRecipe: true
     })
 

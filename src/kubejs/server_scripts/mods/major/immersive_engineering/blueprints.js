@@ -22,6 +22,10 @@ const MILF_BLUEPRINTS = {
         let result = {}
 
         let blueprintToColorMap = {
+
+            craftingComponents: "#765A53",
+            molds: "#A9B4BF",
+
             tier1AE: "#84b9ff",
             tier2AE: "#fff678",
             tier3AE: "#8de8ff",
@@ -34,6 +38,11 @@ const MILF_BLUEPRINTS = {
             usefulTools: "#ccac7c",
         }
 
+        let ieNames = {
+            craftingComponents: "Crafting Components",
+            molds: "Metal Press Molds"
+        }
+
         for (const key of Object.keys(this)) {
             if (key != "getAsItem" && key != "getDisk") {
                 result[key] = {
@@ -41,7 +50,7 @@ const MILF_BLUEPRINTS = {
                     count: 1,
                     components: {
                         "immersiveengineering:blueprint": this[key],
-                        "minecraft:item_name": "{'text':'" + this[key] + "','color':'" + (blueprintToColorMap[key] || "#FCFCFD") + "'}"
+                        "minecraft:item_name": "{'text':'" + (ieNames[key] ?? this[key]) + "','color':'" + (blueprintToColorMap[key] || "#FCFCFD") + "'}"
                     }
                 }
             }
@@ -90,13 +99,25 @@ function ieBlueprintRecipe (event, args)  {
             outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
         }
 
-        let disk = MILF_BLUEPRINTS.getDisk[MILF_BLUEPRINTS.getKeyFromValue(args.category)]
+        if(args.compat1009){
 
-        //console.log(disk);
-        
 
-        if (disk){
-            miArgs.requiredDisk = { item: disk }
+            //miMachineRecipe(event, miArgs)
+
+
+            let blueprintIteem = MILF_BLUEPRINTS.getAsItem[MILF_BLUEPRINTS.getKeyFromValue(args.category)]
+
+            miArgs.inputItems.unshift([neoComponents(blueprintIteem.id, blueprintIteem.components), 1, 0])
+
+            miArgs.machine = "modern_industrialization:not_so_multi_and_not_really_a_block_packer_1009_workbench_edition"
+            miArgs.energy = 1
+            miArgs.time = 800
+        } else {
+            let disk = MILF_BLUEPRINTS.getDisk[MILF_BLUEPRINTS.getKeyFromValue(args.category)]
+
+            if (disk) {
+                miArgs.requiredDisk = { item: disk }
+            }
         }
 
         miMachineRecipe(event, miArgs)
@@ -132,6 +153,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "immersiveengineering:component_steel" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
+        compat1009: true,
         removeRecipe: true,
     })
 
@@ -145,6 +167,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "immersiveengineering:component_electronic_adv" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
+        compat1009: true,
         removeRecipe: true,
     })
 
@@ -157,6 +180,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "immersiveengineering:light_bulb" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
+        compat1009: true,
         removeRecipe: true,
     })
 
@@ -169,6 +193,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "immersiveengineering:electron_tube" }, 2]],
         category: MILF_BLUEPRINTS.craftingComponents,
+        compat1009: true,
         removeRecipe: true,
     })
 

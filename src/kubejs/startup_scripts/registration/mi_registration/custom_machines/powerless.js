@@ -129,6 +129,14 @@ registerSinglePowerlessMIMachine('not_so_multi_but_still_block_packer_2099_3x3x3
     mainCasing: 'treated_wood_casing', mainOverlays: 'multiblock_packer', frontOverlay: true
 })
 
+registerSinglePowerlessMIMachine('not_so_multi_and_not_really_a_block_packer_1009_workbench_edition', {
+    itemsIn: true, itemsOut: true,
+    pBar: { x: 78 + 9, y: 69, name: 'arrow' }, guiheight: 240,
+    slots: { iIn: 7, iOut: 1 },
+    itemSlots: [[80-18-9, 35, 1, 1], [44, 53, 2, 3], [116, 71, 1, 1] ],
+    mainCasing: 'treated_wood_casing', mainOverlays: 'multiblock_packer', frontOverlay: true
+})
+
 registerSinglePowerlessMIMachine('fish_trap', {
     itemsIn: true, itemsOut: true,
     pBar: { x: 77, y: 33, name: "fish" },

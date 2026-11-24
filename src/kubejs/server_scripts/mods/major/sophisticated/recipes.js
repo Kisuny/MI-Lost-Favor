@@ -34,6 +34,7 @@ ServerEvents.recipes(event => {
         ],
         outputItems: [[{ "item": "sophisticatedstorage:upgrade_base" }, 1]],
         category: MILF_BLUEPRINTS.craftingComponents,
+        compat1009: true,
         removeRecipeType: "minecraft:crafting_shaped",
     })
 

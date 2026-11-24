@@ -23,7 +23,6 @@ global.pocketLamps = [
     'chipped:iron_bowl_lantern',
     'chipped:purple_paper_lantern',
     'chipped:red_paper_lantern',
-    'chipped:small_green_lantern',
     'chipped:white_paper_lantern',
     'chipped:wooden_cage_lantern',
     'chipped:wrought_iron_lantern',

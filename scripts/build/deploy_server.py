@@ -120,6 +120,26 @@ def stop_server(version):
             fail("the server did not stop")
 
 
+def backup_slots():
+    backups = sorted((item["attributes"] for item in api("GET", "/backups")["data"]), key=lambda item: item.get("created_at") or "")
+    limit = api("GET", "")["attributes"].get("feature_limits", {}).get("backups")
+    unlocked = [item for item in backups if not item.get("is_locked")]
+    doomed = unlocked[0] if limit is not None and len(backups) >= limit and unlocked else None
+    return backups, limit, doomed
+
+
+def free_backup_slot():
+    backups, limit, doomed = backup_slots()
+    if limit is None or len(backups) < limit:
+        return
+    if limit == 0:
+        fail("the panel does not allow backups on this server, use --skip-backup")
+    if not doomed:
+        fail(f"all {len(backups)} backups are locked and the limit is {limit}, unlock or delete one")
+    print(f"Backup limit reached ({len(backups)}/{limit}), deleting the oldest one: {doomed.get('name')} ({doomed.get('created_at')})")
+    api("DELETE", f"/backups/{doomed['uuid']}", timeout=300)
+
+
 def backup(version):
     print("Creating a backup")
     created = api("POST", "/backups", body={"name": f"before {version}"}, timeout=120)["attributes"]
@@ -176,7 +196,13 @@ def install():
 
 
 def check():
-    print(f"Server state: {state()}")
+    current = state()
+    print(f"Server state: {current}")
+    if current == "running":
+        api("POST", "/command", body={"command": "say [GitHub Actions] deploy check, no changes"})
+        print("Sent a test message to the server chat")
+    else:
+        print("Server is not running, skipped the test message")
     root = list_dir("/")
     print(f"Root: {', '.join(sorted(root))}")
     for directory in ("mods", "config"):
@@ -186,12 +212,17 @@ def check():
             print(f"{directory}: {len(entries)} entries, kept on update: {', '.join(survivors) or 'none'}")
     for path in PRESERVED_FILES:
         print(f"{path}: {'will be restored after unpacking' if exists(path) else 'missing, the pack version will be used'}")
-    backups = api("GET", "/backups")
-    print(f"Backups: {len(backups['data'])}, limit: {backups.get('meta', {}).get('backup_count', '?')}")
+    backups, limit, doomed = backup_slots()
+    print(f"Backups: {len(backups)}, limit: {limit if limit is not None else '?'}")
+    for item in backups:
+        marks = ("  [locked]" if item.get("is_locked") else "") + ("  [deleted on update]" if item is doomed else "")
+        print(f"  {item.get('created_at')}  {item.get('name')}{marks}")
+    if limit is not None and len(backups) >= limit and not doomed:
+        print("WARNING: no backup can be deleted to make room, the update will fail")
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--check", action="store_true", help="only read the server state, change nothing")
+parser.add_argument("--check", action="store_true", help="only read the server state and send a test chat message")
 parser.add_argument("--version")
 parser.add_argument("--url", help="server pack download URL")
 parser.add_argument("--size", type=int, help="server pack size in bytes")
@@ -204,6 +235,8 @@ if args.check:
 if not (args.version and args.url and args.size):
     fail("--version, --url and --size are required")
 
+if not args.skip_backup:
+    free_backup_slot()
 download_archive(args.url, args.size)
 stop_server(args.version)
 if not args.skip_backup:

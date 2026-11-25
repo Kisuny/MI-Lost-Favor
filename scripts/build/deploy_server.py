@@ -10,7 +10,7 @@ import urllib.request
 USER_AGENT = "MI-Lost-Favor-CI (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"
 ARCHIVE = "serverpack.zip"
 REPLACED_DIRS = ["kubejs"]
-PRESERVED_FILES = ["user_jvm_args.txt", "config/ftbbackups3-server.snbt"]
+PRESERVED_FILES = ["config/ftbbackups3-server.snbt"]
 KEEP_MODS = ["SimpleDiscordLink"]
 KEEP_CONFIGS = ["simple-discord-link", "ftbbackups3-server.snbt"]
 WARNINGS = [(60, "1 minute"), (30, "30 seconds"), (10, "10 seconds")]
@@ -109,9 +109,11 @@ def stop_server(version):
         say(f"Server restarts in {label} to update to MI:Lost Favor {version}")
         following = WARNINGS[index + 1][0] if index + 1 < len(WARNINGS) else 0
         time.sleep(seconds - following)
+    print("Saving the world")
+    api("POST", "/command", body={"command": "save-all flush"})
     print("Stopping the server")
     api("POST", "/power", body={"signal": "stop"})
-    if not wait_for("the server to stop", lambda: state() == "offline", timeout=300):
+    if not wait_for("the server to stop", lambda: state() == "offline", timeout=1200):
         print("Killing the server")
         api("POST", "/power", body={"signal": "kill"})
         if not wait_for("the server to die", lambda: state() == "offline", timeout=60):

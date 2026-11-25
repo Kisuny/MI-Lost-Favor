@@ -1,0 +1,79 @@
+name: Deploy server
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to deploy (leave empty for the latest release)
+        required: false
+      check_only:
+        description: Only read the server state, change nothing
+        type: boolean
+        default: false
+      skip_backup:
+        description: Skip the backup before updating
+        type: boolean
+        default: false
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-server
+
+jobs:
+  deploy:
+    if: github.repository == 'Kisuny/MI-Lost-Favor'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      PANEL_URL: ${{ vars.PANEL_URL }}
+      PANEL_API_KEY: ${{ secrets.PANEL_API_KEY }}
+      PANEL_SERVER_ID: ${{ vars.PANEL_SERVER_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/build
+
+      - name: Check server
+        if: inputs.check_only
+        run: python3 scripts/build/deploy_server.py --check
+
+      - name: Find server pack
+        id: release
+        if: ${{ !inputs.check_only }}
+        env:
+          TAG: ${{ inputs.tag }}
+        run: |
+          gh release view $TAG --json tagName,name,assets > "$RUNNER_TEMP/release.json"
+          VERSION=$(jq -r .name "$RUNNER_TEMP/release.json")
+          ASSET=$(jq -c --arg n "MI-Lost-Favor-${VERSION}-serverpack.zip" '.assets[] | select(.name == $n)' "$RUNNER_TEMP/release.json")
+          if [[ -z "$ASSET" ]]; then
+            echo "No server pack in release $(jq -r .tagName "$RUNNER_TEMP/release.json")"
+            exit 1
+          fi
+          {
+            echo "version=$VERSION"
+            echo "url=$(jq -r .url <<< "$ASSET")"
+            echo "size=$(jq -r .size <<< "$ASSET")"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Deploy
+        if: ${{ !inputs.check_only }}
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+          URL: ${{ steps.release.outputs.url }}
+          SIZE: ${{ steps.release.outputs.size }}
+          SKIP_BACKUP: ${{ inputs.skip_backup }}
+        run: |
+          EXTRA=()
+          [[ "$SKIP_BACKUP" == "true" ]] && EXTRA=(--skip-backup)
+          python3 scripts/build/deploy_server.py --version "$VERSION" --url "$URL" --size "$SIZE" "${EXTRA[@]}"

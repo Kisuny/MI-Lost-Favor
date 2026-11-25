@@ -1,0 +1,29 @@
+{
+  "title": "<lang key=block.immersiveengineering.crusher>",
+  "icon": "immersiveengineering:crusher",
+  "x": 20,
+  "y": 12.5,
+  "deps": {
+    "all": [
+      "simple_machinery/quest_5"
+    ]
+  },
+  "aliases": [
+    "petrochemical_party_pp/crusher"
+  ],
+  "tasks": [
+    {
+      "block": "immersiveengineering:crusher",
+      "type": "observe"
+    }
+  ],
+  "rewards": [
+    {
+      "team_reward": true,
+      "item": "milf:crusher_placer",
+      "type": "item"
+    }
+  ],
+  "shape": "heart",
+  "size": 2.0
+}

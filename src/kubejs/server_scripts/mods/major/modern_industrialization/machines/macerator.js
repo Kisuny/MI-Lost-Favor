@@ -77,4 +77,11 @@ ServerEvents.recipes(event => {
         ieCompat: true,
         compatOff: true
     })
+
+    miMachineRecipe(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [[{ item: "milf:potsherd" }, 1]],
+        outputItems: [[{ item: "modern_industrialization:brick_tiny_dust" }, 1]],
+        ieCompat: true
+    })
 })

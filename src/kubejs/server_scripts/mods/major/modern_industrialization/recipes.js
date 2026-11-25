@@ -398,6 +398,16 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miForgeHammerRecipe(event, {
+        inputItems: [
+            [{ item: "milf:potsherd" }],
+        ],
+        outputItems: [
+            [{ id: "modern_industrialization:brick_tiny_dust" }],
+        ],
+        damage: 2
+    })
+
     //#endregion
 
     //#region milfShaped

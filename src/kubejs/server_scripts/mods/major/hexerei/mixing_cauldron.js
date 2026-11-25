@@ -157,7 +157,92 @@ ServerEvents.recipes(event => {
         output: "minecraft:phantom_membrane",
         amount: 4
     })
-    
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+        ],
+        output: "milf:pottery_clay_ball",
+        amount: 8
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "modern_industrialization:brick_dust" },
+            { "item": "architects_palette:algal_blend" },
+            { "item": "architects_palette:algal_blend" },
+            { "item": "architects_palette:algal_blend" },
+            { "item": "modern_industrialization:brick_dust" },
+            { "item": "architects_palette:algal_blend" },
+            { "item": "architects_palette:algal_blend" },
+            { "item": "architects_palette:algal_blend" },
+        ],
+        output: "milf:fire_clay_ball",
+        amount: 6
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "milf:fire_clay_ball" },
+            { "item": "modern_industrialization:coal_crushed_dust" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "milf:fire_clay_ball" },
+            { "item": "modern_industrialization:coal_crushed_dust" },
+        ],
+        output: "embers:caminite_blend",
+        amount: 12
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "embers:ash" },
+            { "item": "modern_industrialization:salt_dust" },
+            { "item": "modern_industrialization:quartz_crushed_dust" },
+            { "item": "minecraft:charcoal" },
+            { "item": "embers:ash" },
+            { "item": "modern_industrialization:salt_dust" },
+            { "item": "modern_industrialization:quartz_crushed_dust" },
+            { "item": "minecraft:charcoal" },
+        ],
+        output: "architects_palette:cerebral_plate",
+        amount: 16
+    })
+
+    customMixingCauldron(event, {
+        fluid: "minecraft:water",
+        fluidAmount: 200,
+        ingredients: [
+            { "item": "minecraft:paper" },
+            { "item": "minecraft:paper" },
+            { "item": "minecraft:paper" },
+            { "item": "eidolon_repraised:enchanted_ash" },
+            { "item": "minecraft:paper" },
+            { "item": "minecraft:paper" },
+            { "item": "minecraft:paper" },
+            { "item": "eidolon_repraised:enchanted_ash" },
+        ],
+        output: "eidolon_repraised:parchment",
+        amount: 8
+    })
+
     
 
 

@@ -110,6 +110,16 @@ ServerEvents.recipes(event => {
     })
 
     ytechChoppingCraft(event, {
+        inputItems: [[{ item: "milf:potsherd" }]],
+        outputItems: [[{ id: "modern_industrialization:brick_tiny_dust" }]],
+        tool: neoCompound([
+            { item: "ytech:lead_hammer" },
+            { tag: "modern_industrialization:forge_hammer_tools" }
+        ]),
+        compatOff: true
+    })
+
+    ytechChoppingCraft(event, {
         inputItems: [[{ item: "minecraft:coal_block" }]],
         outputItems: [[{ id: "modern_industrialization:coal_crushed_dust" }, 2]],
         tool: neoCompound([

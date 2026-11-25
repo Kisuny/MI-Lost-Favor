@@ -565,13 +565,17 @@
     }
   ],
   "icon": "paganbless:winch",
-  "x": 23.43,
-  "y": 18.97,
+  "x": 6,
+  "y": 23,
   "deps": {
     "all": [
+      "rock_and_steam/anvil",
       "magic_step_i/essence_of_the_forest"
     ]
   },
+  "aliases": [
+    "magic_step_i/winch"
+  ],
   "tasks": [
     {
       "item": "paganbless:winch",

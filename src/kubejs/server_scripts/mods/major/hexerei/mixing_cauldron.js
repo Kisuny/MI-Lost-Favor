@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
         fluid: "minecraft:lava",
         fluidAmount: 1000,
         ingredients: [
-            { "tag": "hexerei:flower_biproduct" },
+            { "item": "paganbless:essence_of_the_forest" },
             { "tag": "hexerei:flower_biproduct" },
             { "tag": "c:cobblestones/deepslate" },
             { "tag": "c:cobblestones/deepslate" },

@@ -1,0 +1,1737 @@
+{
+  "frames": [
+    {
+      "id": "milf_cataclysm_signature",
+      "texture": "tooltipoverhaul:textures/overlay/cataclysm_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#6E66B8",
+        "#3D3A5E",
+        "#16152A"
+      ],
+      "dividerLineColor": "#6E66B8",
+      "specialEffect": "steel_shining",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "steel_shining": {
+          "colors": [
+            "#FFFFFF",
+            "#C8C0FF",
+            "#6E66B8"
+          ],
+          "bandWidth": 0.75,
+          "dutyCycle": 0.4
+        }
+      },
+      "vignettes": [
+        "(ellipse, bottom_middle, #80383A47, 0.59, 0, -39)"
+      ],
+      "tags": [
+        "milf:tooltip/cataclysm_signature"
+      ],
+      "priority": 30,
+      "tooltipAppearAnimation": "zoom",
+      "backgroundColor": -233828320
+    },
+    {
+      "id": "milf_enigmatic_seven_curses",
+      "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FF2A2A",
+        "#7A0000",
+        "#1A0000"
+      ],
+      "dividerLineColor": "#FF2A2A",
+      "specialEffect": "opal,echo,cinder",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "opal": {
+          "colors": [
+            "#6B0000",
+            "#FF1A1A",
+            "#000000"
+          ],
+          "speed": 6.0
+        },
+        "echo": {
+          "colors": [
+            "#FF3A3A",
+            "#8A0000",
+            "#2A0000"
+          ]
+        },
+        "cinder": {
+          "colors": [
+            "#FF4A2A",
+            "#B00000",
+            "#FFB0A0"
+          ]
+        }
+      },
+      "vignettes": [
+        "(ellipse, bottom_middle, #A0500000, 0.7, 0, -30)"
+      ],
+      "tags": [
+        "milf:tooltip/enigmatic_seven_curses"
+      ],
+      "priority": 35,
+      "tooltipAppearAnimation": "shake",
+      "backgroundColor": -232782840,
+      "dividerLineType": "ornament"
+    },
+    {
+      "id": "milf_enigmatic_chaos_elytra",
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#D0A0FF",
+        "#5A22A8",
+        "#0C0418"
+      ],
+      "dividerLineColor": "#D0A0FF",
+      "specialEffect": "nebula,wisps",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "nebula": {
+          "colors": [
+            "#3A0E66",
+            "#B060FF",
+            "#000000"
+          ],
+          "intensity": 1.0
+        },
+        "wisps": {
+          "colors": [
+            "#D8A8FF",
+            "#8A3AE0",
+            "#FF6AE8"
+          ],
+          "density": 1.4
+        }
+      },
+      "vignettes": [
+        "(ellipse, bottom_middle, #A0300A60, 0.7, 0, -30)"
+      ],
+      "tags": [
+        "milf:tooltip/enigmatic_chaos_elytra"
+      ],
+      "priority": 35,
+      "tooltipAppearAnimation": "emerge",
+      "backgroundColor": -233961448
+    },
+    {
+      "id": "milf_enigmatic_abyssal",
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#D0A0FF",
+        "#5A22A8",
+        "#0C0418"
+      ],
+      "dividerLineColor": "#D0A0FF",
+      "specialEffect": "nebula,wisps",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "nebula": {
+          "colors": [
+            "#3A0E66",
+            "#B060FF",
+            "#000000"
+          ],
+          "intensity": 1.0
+        },
+        "wisps": {
+          "colors": [
+            "#D8A8FF",
+            "#8A3AE0",
+            "#FF6AE8"
+          ],
+          "density": 1.4
+        }
+      },
+      "vignettes": [
+        "(ellipse, bottom_middle, #A0300A60, 0.7, 0, -30)"
+      ],
+      "tags": [
+        "enigmaticlegacyplus:abyssal_items"
+      ],
+      "priority": 34,
+      "tooltipAppearAnimation": "emerge",
+      "backgroundColor": -233961448
+    },
+    {
+      "id": "milf_enigmatic_cursed",
+      "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#E0283A",
+        "#5A0A12",
+        "#120204"
+      ],
+      "dividerLineColor": "#E0283A",
+      "specialEffect": "opal,cinder",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "opal": {
+          "colors": [
+            "#4A0008",
+            "#E0283A",
+            "#000000"
+          ]
+        },
+        "cinder": {
+          "colors": [
+            "#FF5A3A",
+            "#A0101A",
+            "#FFC0A0"
+          ]
+        }
+      },
+      "vignettes": [
+        "(ellipse, bottom_middle, #70300004, 0.55, 0, -40)"
+      ],
+      "tags": [
+        "milf:tooltip/enigmatic_cursed"
+      ],
+      "priority": 33,
+      "tooltipAppearAnimation": "shake",
+      "backgroundColor": -233175543
+    },
+    {
+      "id": "milf_enigmatic_blessed",
+      "texture": "tooltipoverhaul:textures/overlay/angelical_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FFF6D6",
+        "#E0B85A",
+        "#4A3A1A"
+      ],
+      "dividerLineColor": "#FFF6D6",
+      "specialEffect": "sunbeams,floating_stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "sunbeams": {
+          "colors": [
+            "#FFF6D6",
+            "#FFE08A",
+            "#FFFFFF"
+          ]
+        },
+        "floating_stars": {
+          "colors": [
+            "#FFFFFF",
+            "#FFE6A0",
+            "#FFF4D6"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/enigmatic_blessed"
+      ],
+      "priority": 32,
+      "tooltipAppearAnimation": "rise",
+      "backgroundColor": -233039600
+    },
+    {
+      "id": "milf_enigmatic_spellstone",
+      "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9AF0E0",
+        "#4A7AB8",
+        "#141A33"
+      ],
+      "dividerLineColor": "#9AF0E0",
+      "specialEffect": "magic_orbs",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "magic_orbs": {
+          "colors": [
+            "#B8F0FF",
+            "#C8A0FF",
+            "#FFFFFF"
+          ],
+          "intensity": 0.7
+        }
+      },
+      "tags": [
+        "enigmaticlegacyplus:materials_of_the_cube",
+        "milf:tooltip/enigmatic_spellstone"
+      ],
+      "priority": 31
+    },
+    {
+      "id": "milf_enigmatic_etherium",
+      "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#8AFFF0",
+        "#2A9AA8",
+        "#0A2A30"
+      ],
+      "dividerLineColor": "#8AFFF0",
+      "specialEffect": "fluorite",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "fluorite": {
+          "colors": [
+            "#0A3A40",
+            "#8AFFF0",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/enigmatic_etherium"
+      ],
+      "priority": 31
+    },
+    {
+      "id": "milf_enigmatic_amulet",
+      "texture": "tooltipoverhaul:textures/overlay/amber_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FFD88A",
+        "#B8862A",
+        "#3A2A0A"
+      ],
+      "dividerLineColor": "#FFD88A",
+      "specialEffect": "astral",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "astral": {
+          "colors": [
+            "#FFE6A0",
+            "#7A5AFF",
+            "#000000"
+          ]
+        }
+      },
+      "tags": [
+        "enigmaticlegacyplus:enigmatic_amulets",
+        "milf:tooltip/enigmatic_amulet"
+      ],
+      "priority": 31
+    },
+    {
+      "id": "milf_dragon_signature",
+      "texture": "tooltipoverhaul:textures/overlay/draconic_fire_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FF8A2A",
+        "#8A2A0E",
+        "#2E0A04"
+      ],
+      "dividerLineColor": "#FF8A2A",
+      "specialEffect": "firebreath",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "firebreath": {
+          "colors": [
+            "#FFB347",
+            "#FF4A1F",
+            "#FFE68A"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/dragon_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_nuclear_signature",
+      "texture": "tooltipoverhaul:textures/overlay/nuclear_alarm_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9CFF5A",
+        "#3E7A1E",
+        "#14260A"
+      ],
+      "dividerLineColor": "#9CFF5A",
+      "specialEffect": "sonar",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "sonar": {
+          "colors": [
+            "#B8FF6A",
+            "#5AE03A",
+            "#E8FFB0"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/nuclear_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_holy_signature",
+      "texture": "tooltipoverhaul:textures/overlay/angelical_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FFF2C8",
+        "#C8A85A",
+        "#4A3A1A"
+      ],
+      "dividerLineColor": "#FFF2C8",
+      "specialEffect": "sunbeams",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "sunbeams": {
+          "colors": [
+            "#FFF6D6",
+            "#FFE08A",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/holy_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_blood_signature",
+      "texture": "tooltipoverhaul:textures/overlay/demonic_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#E0283A",
+        "#7A0E18",
+        "#2A0408"
+      ],
+      "dividerLineColor": "#E0283A",
+      "specialEffect": "ripples",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "ripples": {
+          "colors": [
+            "#E0283A",
+            "#8A0F1C",
+            "#3D0509"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/blood_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_dark_signature",
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#B04AE0",
+        "#4A1A6E",
+        "#16081F"
+      ],
+      "dividerLineColor": "#B04AE0",
+      "specialEffect": "opal",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "opal": {
+          "colors": [
+            "#7A2AE0",
+            "#E02A6A",
+            "#000000"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/dark_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_soul_signature",
+      "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#6FE3E8",
+        "#2A6E7A",
+        "#0C2226"
+      ],
+      "dividerLineColor": "#6FE3E8",
+      "specialEffect": "wisps",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "wisps": {
+          "colors": [
+            "#7FF0F0",
+            "#9C7CFF",
+            "#E0FFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/soul_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_undead_signature",
+      "texture": "tooltipoverhaul:textures/overlay/zombie_brain_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#B8C8A0",
+        "#5A6E48",
+        "#1E2618"
+      ],
+      "dividerLineColor": "#B8C8A0",
+      "specialEffect": "white_dust",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "white_dust": {
+          "colors": [
+            "#D8E0C8",
+            "#A8B890",
+            "#F0F0E0"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/undead_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_ice_signature",
+      "texture": "tooltipoverhaul:textures/overlay/frost_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#C8F0FF",
+        "#5A9ACB",
+        "#14283A"
+      ],
+      "dividerLineColor": "#C8F0FF",
+      "specialEffect": "snowfall",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "snowfall": {
+          "colors": [
+            "#FFFFFF",
+            "#D6F0FF",
+            "#A8D8FF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/ice_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_fire_signature",
+      "texture": "tooltipoverhaul:textures/overlay/fire_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FF9A3A",
+        "#9A2A0E",
+        "#2E0A04"
+      ],
+      "dividerLineColor": "#FF9A3A",
+      "specialEffect": "cinder",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "cinder": {
+          "colors": [
+            "#FFB347",
+            "#FF6A1F",
+            "#FFE0A0"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/fire_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_lightning_signature",
+      "texture": "tooltipoverhaul:textures/overlay/plasma_lamp_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9AD8FF",
+        "#3A6EB8",
+        "#0E1A33"
+      ],
+      "dividerLineColor": "#9AD8FF",
+      "specialEffect": "storm",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "storm": {
+          "colors": [
+            "#BFE6FF",
+            "#8A9CFF",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/lightning_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_water_signature",
+      "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#7FD0E8",
+        "#2E6E8A",
+        "#0E2633"
+      ],
+      "dividerLineColor": "#7FD0E8",
+      "specialEffect": "bubbles",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "bubbles": {
+          "colors": [
+            "#BFF0FF",
+            "#7FD0E8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/water_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_sweets_signature",
+      "texture": "tooltipoverhaul:textures/overlay/gummy_bear_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FFB0D8",
+        "#C85A9A",
+        "#3A1A2E"
+      ],
+      "dividerLineColor": "#FFB0D8",
+      "specialEffect": "hearts",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "hearts": {
+          "colors": [
+            "#FF8AC8",
+            "#FFC8E0",
+            "#FF5A9A"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/sweets_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_cosmic_signature",
+      "texture": "tooltipoverhaul:textures/overlay/skyland_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#C8B8FF",
+        "#5A4AB8",
+        "#120E33"
+      ],
+      "dividerLineColor": "#C8B8FF",
+      "specialEffect": "galaxy",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "galaxy": {
+          "colors": [
+            "#B8A8FF",
+            "#FF9AD8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/cosmic_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_sky_signature",
+      "texture": "tooltipoverhaul:textures/overlay/skyland_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#BFE6FF",
+        "#5E9ACB",
+        "#1E3550"
+      ],
+      "dividerLineColor": "#BFE6FF",
+      "specialEffect": "speed_lines",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "speed_lines": {
+          "colors": [
+            "#FFFFFF",
+            "#D6EEFF",
+            "#A8D4FF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/sky_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_alchemy_signature",
+      "texture": "tooltipoverhaul:textures/overlay/pure_alchemy_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#D9B65A",
+        "#3E8C82",
+        "#1C3533"
+      ],
+      "dividerLineColor": "#D9B65A",
+      "specialEffect": "bubbles",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "bubbles": {
+          "colors": [
+            "#C8A0FF",
+            "#7AE0C8",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/alchemy_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_arcane_signature",
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9C8CFF",
+        "#4B3C9E",
+        "#16123A"
+      ],
+      "dividerLineColor": "#9C8CFF",
+      "specialEffect": "magic_orbs",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "magic_orbs": {
+          "colors": [
+            "#7FB2FF",
+            "#A47CFF",
+            "#E1D4FF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/arcane_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_lore_signature",
+      "texture": "tooltipoverhaul:textures/overlay/greek_temple_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#E8D8A8",
+        "#8E7A4C",
+        "#3A3020"
+      ],
+      "dividerLineColor": "#E8D8A8",
+      "specialEffect": "floating_stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "floating_stars": {
+          "colors": [
+            "#FFF4D6",
+            "#FFE6A0",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/lore_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_royal_signature",
+      "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#F2D16B",
+        "#9C7A2A",
+        "#3B2C0C"
+      ],
+      "dividerLineColor": "#F2D16B",
+      "specialEffect": "metal_shining",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "metal_shining": {
+          "colors": [
+            "#FFF2B0",
+            "#F2D16B",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/royal_signature"
+      ],
+      "priority": 30
+    },
+    {
+      "id": "milf_legendary_signature",
+      "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#F2D16B",
+        "#9C7A2A",
+        "#3B2C0C"
+      ],
+      "dividerLineColor": "#F2D16B",
+      "specialEffect": "stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "stars": {
+          "colors": [
+            "#FFE08A",
+            "#FFFFFF",
+            "#FFB85C"
+          ]
+        }
+      },
+      "tags": [
+        "milf:tooltip/legendary_signature"
+      ],
+      "priority": 30,
+      "tooltipAppearAnimation": "card"
+    },
+    {
+      "id": "milf_apotheosis_mythic",
+      "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FF9A4A",
+        "#ED7014",
+        "#5A2806"
+      ],
+      "dividerLineColor": "#FF9A4A",
+      "specialEffect": "sunbeams",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "sunbeams": {
+          "colors": [
+            "#FFC48A",
+            "#ED7014",
+            "#FFF0D6"
+          ]
+        }
+      },
+      "namespace": "*",
+      "nbt": [
+        "apotheosis:rarity=apotheosis:mythic"
+      ],
+      "priority": 24
+    },
+    {
+      "id": "milf_apotheosis_epic",
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#E05AE0",
+        "#BB00BB",
+        "#4A004A"
+      ],
+      "dividerLineColor": "#E05AE0",
+      "specialEffect": "floating_stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "floating_stars": {
+          "colors": [
+            "#F0A0F0",
+            "#BB00BB",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "namespace": "*",
+      "nbt": [
+        "apotheosis:rarity=apotheosis:epic"
+      ],
+      "priority": 23
+    },
+    {
+      "id": "milf_apotheosis_rare",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#8A8AFF",
+        "#5555FF",
+        "#1E1E66"
+      ],
+      "dividerLineColor": "#8A8AFF",
+      "specialEffect": "white_dust",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "white_dust": {
+          "colors": [
+            "#B8B8FF",
+            "#8A8AFF",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "namespace": "*",
+      "nbt": [
+        "apotheosis:rarity=apotheosis:rare"
+      ],
+      "priority": 22
+    },
+    {
+      "id": "milf_apotheosis_uncommon",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#7AFF7A",
+        "#33FF33",
+        "#0E5A0E"
+      ],
+      "dividerLineColor": "#7AFF7A",
+      "namespace": "*",
+      "nbt": [
+        "apotheosis:rarity=apotheosis:uncommon"
+      ],
+      "priority": 21
+    },
+    {
+      "id": "milf_apotheosis_common",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#B0B0B0",
+        "#808080",
+        "#2E2E2E"
+      ],
+      "dividerLineColor": "#B0B0B0",
+      "namespace": "*",
+      "nbt": [
+        "apotheosis:rarity=apotheosis:common"
+      ],
+      "priority": 21
+    },
+    {
+      "id": "milf_dragon",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FF8A2A",
+        "#8A2A0E",
+        "#2E0A04"
+      ],
+      "dividerLineColor": "#FF8A2A",
+      "specialEffect": "firebreath",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "firebreath": {
+          "colors": [
+            "#FFB347",
+            "#FF4A1F",
+            "#FFE68A"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/dragon"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_nuclear",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9CFF5A",
+        "#3E7A1E",
+        "#14260A"
+      ],
+      "dividerLineColor": "#9CFF5A",
+      "specialEffect": "sonar",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "sonar": {
+          "colors": [
+            "#B8FF6A",
+            "#5AE03A",
+            "#E8FFB0"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/nuclear"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_holy",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FFF2C8",
+        "#C8A85A",
+        "#4A3A1A"
+      ],
+      "dividerLineColor": "#FFF2C8",
+      "specialEffect": "sunbeams",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "sunbeams": {
+          "colors": [
+            "#FFF6D6",
+            "#FFE08A",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/holy"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_blood",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#E0283A",
+        "#7A0E18",
+        "#2A0408"
+      ],
+      "dividerLineColor": "#E0283A",
+      "specialEffect": "ripples",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "ripples": {
+          "colors": [
+            "#E0283A",
+            "#8A0F1C",
+            "#3D0509"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/blood"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_dark",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#B04AE0",
+        "#4A1A6E",
+        "#16081F"
+      ],
+      "dividerLineColor": "#B04AE0",
+      "specialEffect": "opal",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "opal": {
+          "colors": [
+            "#7A2AE0",
+            "#E02A6A",
+            "#000000"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/dark"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_soul",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#6FE3E8",
+        "#2A6E7A",
+        "#0C2226"
+      ],
+      "dividerLineColor": "#6FE3E8",
+      "specialEffect": "wisps",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "wisps": {
+          "colors": [
+            "#7FF0F0",
+            "#9C7CFF",
+            "#E0FFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/soul"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_undead",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#B8C8A0",
+        "#5A6E48",
+        "#1E2618"
+      ],
+      "dividerLineColor": "#B8C8A0",
+      "specialEffect": "white_dust",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "white_dust": {
+          "colors": [
+            "#D8E0C8",
+            "#A8B890",
+            "#F0F0E0"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/undead"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_ice",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#C8F0FF",
+        "#5A9ACB",
+        "#14283A"
+      ],
+      "dividerLineColor": "#C8F0FF",
+      "specialEffect": "snowfall",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "snowfall": {
+          "colors": [
+            "#FFFFFF",
+            "#D6F0FF",
+            "#A8D8FF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/ice"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_fire",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FF9A3A",
+        "#9A2A0E",
+        "#2E0A04"
+      ],
+      "dividerLineColor": "#FF9A3A",
+      "specialEffect": "cinder",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "cinder": {
+          "colors": [
+            "#FFB347",
+            "#FF6A1F",
+            "#FFE0A0"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/fire"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_lightning",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9AD8FF",
+        "#3A6EB8",
+        "#0E1A33"
+      ],
+      "dividerLineColor": "#9AD8FF",
+      "specialEffect": "storm",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "storm": {
+          "colors": [
+            "#BFE6FF",
+            "#8A9CFF",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/lightning"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_water",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#7FD0E8",
+        "#2E6E8A",
+        "#0E2633"
+      ],
+      "dividerLineColor": "#7FD0E8",
+      "specialEffect": "bubbles",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "bubbles": {
+          "colors": [
+            "#BFF0FF",
+            "#7FD0E8",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/water"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_sweets",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#FFB0D8",
+        "#C85A9A",
+        "#3A1A2E"
+      ],
+      "dividerLineColor": "#FFB0D8",
+      "specialEffect": "hearts",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "hearts": {
+          "colors": [
+            "#FF8AC8",
+            "#FFC8E0",
+            "#FF5A9A"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/sweets"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_cosmic",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#C8B8FF",
+        "#5A4AB8",
+        "#120E33"
+      ],
+      "dividerLineColor": "#C8B8FF",
+      "specialEffect": "galaxy",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "galaxy": {
+          "colors": [
+            "#B8A8FF",
+            "#FF9AD8",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/cosmic"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_sky",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#BFE6FF",
+        "#5E9ACB",
+        "#1E3550"
+      ],
+      "dividerLineColor": "#BFE6FF",
+      "specialEffect": "speed_lines",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "speed_lines": {
+          "colors": [
+            "#FFFFFF",
+            "#D6EEFF",
+            "#A8D4FF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/sky"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_alchemy",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#D9B65A",
+        "#3E8C82",
+        "#1C3533"
+      ],
+      "dividerLineColor": "#D9B65A",
+      "specialEffect": "bubbles",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "bubbles": {
+          "colors": [
+            "#C8A0FF",
+            "#7AE0C8",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/alchemy"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_arcane",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#9C8CFF",
+        "#4B3C9E",
+        "#16123A"
+      ],
+      "dividerLineColor": "#9C8CFF",
+      "specialEffect": "magic_orbs",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "magic_orbs": {
+          "colors": [
+            "#7FB2FF",
+            "#A47CFF",
+            "#E1D4FF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/arcane"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_lore",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#E8D8A8",
+        "#8E7A4C",
+        "#3A3020"
+      ],
+      "dividerLineColor": "#E8D8A8",
+      "specialEffect": "floating_stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "floating_stars": {
+          "colors": [
+            "#FFF4D6",
+            "#FFE6A0",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/lore"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_royal",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#F2D16B",
+        "#9C7A2A",
+        "#3B2C0C"
+      ],
+      "dividerLineColor": "#F2D16B",
+      "specialEffect": "metal_shining",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "metal_shining": {
+          "colors": [
+            "#FFF2B0",
+            "#F2D16B",
+            "#FFFFFF"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "tags": [
+        "milf:tooltip/royal"
+      ],
+      "priority": 10
+    },
+    {
+      "id": "milf_enigmatic",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "moondust",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "moondust": {
+          "colors": [
+            "#B7BDE6",
+            "#9EA5D6",
+            "#E6E7F7"
+          ],
+          "intensity": 0.8
+        }
+      },
+      "namespace": "enigmaticlegacyplus",
+      "priority": 11
+    },
+    {
+      "id": "milf_relic",
+      "texture": "tooltipoverhaul:textures/overlay/king_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": [
+        "#F2D16B",
+        "#9C7A2A",
+        "#3B2C0C"
+      ],
+      "dividerLineColor": "#F2D16B",
+      "specialEffect": "stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "stars": {
+          "colors": [
+            "#FFE08A",
+            "#FFFFFF",
+            "#FFB85C"
+          ]
+        }
+      },
+      "tags": [
+        "relics:relics",
+        "artifacts:artifacts"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "milf_rarity_epic",
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "floating_stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "floating_stars": {
+          "colors": [
+            "#F0A0F0",
+            "#B14BE0",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "rarities": [
+        "epic"
+      ],
+      "priority": 9
+    },
+    {
+      "id": "milf_rarity_rare",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "stars_2",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "stars_2": {
+          "colors": [
+            "#B8E0FF",
+            "#4D9BE8",
+            "#FFFFFF"
+          ],
+          "intensity": 0.7
+        }
+      },
+      "rarities": [
+        "rare"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "milf_weapon",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "metal_shining_2",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "metal_shining_2": {
+          "colors": [
+            "#E6E7F7",
+            "#B7BDE6",
+            "#9EA5D6"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "minecraft:swords",
+        "c:tools/melee_weapon",
+        "c:tools/ranged_weapon",
+        "c:tools/bow",
+        "c:tools/crossbow",
+        "c:tools/spear",
+        "c:tools/trident",
+        "c:tools/shield",
+        "minecraft:arrows"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "milf_armor",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "steel_shining",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "steel_shining": {
+          "colors": [
+            "#E6E7F7",
+            "#B7BDE6",
+            "#9EA5D6"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "minecraft:head_armor",
+        "minecraft:chest_armor",
+        "minecraft:leg_armor",
+        "minecraft:foot_armor",
+        "c:armors"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "milf_trinket",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "stars",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "stars": {
+          "colors": [
+            "#E6E7F7",
+            "#B7BDE6",
+            "#9EA5D6"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "curios:ring",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:bracelet",
+        "curios:hands",
+        "curios:head",
+        "curios:back"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "milf_fishing",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "bubbles",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "bubbles": {
+          "colors": [
+            "#BFF0FF",
+            "#7FD0E8",
+            "#FFFFFF"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "minecraft:fishes",
+        "c:foods/raw_fish",
+        "c:foods/cooked_fish",
+        "c:tools/fishing_rod"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "milf_gem",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "crystals",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "crystals": {
+          "colors": [
+            "#B8F0FF",
+            "#6AC8FF",
+            "#FFFFFF"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "c:gems"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "milf_flower",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "white_dust",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "white_dust": {
+          "colors": [
+            "#FFD8EC",
+            "#FFF0A0",
+            "#FFFFFF"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "minecraft:small_flowers",
+        "minecraft:flowers",
+        "c:flowers"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "milf_plant",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "fireflies",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "fireflies": {
+          "colors": [
+            "#B9F27A",
+            "#7AE07F",
+            "#FFF0A0"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "minecraft:saplings",
+        "minecraft:leaves",
+        "c:seeds",
+        "c:crops",
+        "c:mushrooms",
+        "hexerei:herbs",
+        "paganbless:herbs"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "milf_metal",
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "specialEffect": "steel_shining",
+      "effectsBehindText": true,
+      "effectSettings": {
+        "steel_shining": {
+          "colors": [
+            "#E6E7F7",
+            "#B7BDE6",
+            "#848DCB"
+          ],
+          "intensity": 0.6
+        }
+      },
+      "tags": [
+        "c:ingots",
+        "c:nuggets",
+        "c:plates",
+        "c:gears",
+        "c:rods",
+        "c:dusts",
+        "c:tiny_dusts",
+        "c:wires"
+      ],
+      "priority": 3
+    }
+  ]
+}

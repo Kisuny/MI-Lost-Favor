@@ -1,0 +1,399 @@
+# effects §§
+[effects]
+	# Effect animation speed multiplier. Zero freezes effects.
+	# 
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	EFFECT_SPEED = 1.0
+	# Effect opacity multiplier. Zero hides effects.
+	# 
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	EFFECT_INTENSITY = 1.0
+	# Particle density multiplier.
+	# 
+	# Default: 1.0
+	# Range: 0.0 ~ 5.0
+	EFFECT_DENSITY = 1.0
+	# Freezes decorative effects and disable tooltip/icon movement, including custom frame overrides.
+	# 
+	# Default: false
+	REDUCED_MOTION = false
+	# Render effects right over the background, behind the text, icon and frame, instead of on top of everything.
+	# 
+	# Default: false
+	EFFECTS_BEHIND_TEXT = false
+	# Effects. Options: bubbles, cinder, crystals, echo, fireflies, galaxy, magic_orbs, speed_lines, nebula, spiral, white_dust,
+	# metal_shining, rim_light, ripples, sonar, stars, fireflies_2, steel_shining, floating_stars, prism, snowfall, opal, aurora,
+	# fluorite, astral, comets, storm, sunbeams, fireworks, eruption, searchlights, blasts, firebreath, shield, lasers, missiles, wisps,
+	# matrix, hearts. You can chain effects together, for example: 'white_dust, nebula'
+	# 
+	# Default:
+	EFFECTS = ""
+	# Vignette entries for gradient overlays around the tooltip background. Each vignette must be written in parentheses in this exact
+	# order: (type, position, color, radius, extraPositionX, extraPositionY). Example: (circular, top_left, #FF567823, 0.4, 0, 0). You
+	# can define multiple vignettes by separating them with commas: (...), (...), (...). type = vignette shape (options: circular, hole,
+	# ellipse, diamond, ring, linear). position = anchor on the tooltip (e.g. top_left, top_right, middle, right, bottom_left); for
+	# linear it is the edge the fade starts from (top_*, bottom_*, left, right; middle fades top and bottom). color = ARGB hex in
+	# #AARRGGBB. radius = relative size factor (e.g. radius 0.4); for linear, the fade depth as a fraction of the panel. extraPositionX /
+	# extraPositionY = additional offset as a percentage of the tooltip height / width, respectively.
+	# 
+	# Default:
+	VIGNETTES = "(linear, top_middle, #1C9EA5D6, 0.45, 0, 0)"
+
+# layout §§
+[layout]
+	# Tooltip layout. Options: classic (icon inside), badge (icon halfway across the left frame), floating (compact header, external icon
+	# above the 3D preview), compact (small icon beside the title and rating specified in a subtle footer).
+	# 
+	# Default: classic
+	TOOLTIP_LAYOUT = "classic"
+	# Show the item's mod name on the left of Compact's footer, with the rating on the right. Long names are shortened to fit. The mod
+	# name is moved from the body when already present.
+	# 
+	# Default: true
+	COMPACT_SHOW_MOD_NAME = true
+	# Color of the mod name in Compact's footer, in ARGB format (#AARRGGBB). Defaults to dark gray.
+	# 
+	# Default: #FF555555
+	COMPACT_MOD_NAME_COLOR = "#FF8C88A8"
+	# Bedrock-like centering. When the tooltip fits neither to the right nor to the left of the cursor, centers it horizontally on the
+	# screen and places it above the cursor (or below if there is no room above), so it doesn't cover the hovered item.
+	# 
+	# Default: false
+	BEDROCK_CENTERING = false
+	# Horizontal offset (in pixels) for the tooltip. Negative = left, positive = right.
+	# 
+	# Default: 0
+	# Range: -Infinity ~ Infinity
+	TOOLTIP_POSITION_X = 0
+	# Vertical offset (in pixels) for the tooltip. Negative = up, positive = down.
+	# 
+	# Default: 0
+	# Range: -Infinity ~ Infinity
+	TOOLTIP_POSITION_Y = 0
+	# Depth (Z) offset of the whole hovered tooltip. Vanilla draws toasts (advancements, recipes) at 800, so the default keeps the
+	# tooltip over them.
+	# 
+	# Default: 400
+	# Range: 0 ~ 700
+	TOOLTIP_Z_OFFSET = 400
+	# Maximum tooltip height as a percentage of the screen height.
+	# 
+	# Default: 100
+	# Range: 10 ~ 100
+	MAX_TOOLTIP_HEIGHT = 100
+	# Maximum tooltip width as a percentage of the screen width.
+	# 
+	# Default: 100
+	# Range: 20 ~ 100
+	MAX_TOOLTIP_WIDTH = 100
+	# Horizontal padding for the main panel.
+	# 
+	# Default: 2
+	# Range: -Infinity ~ Infinity
+	MAIN_PANEL_PADDING_X = 3
+	# Vertical padding for the main panel.
+	# 
+	# Default: 2
+	# Range: -Infinity ~ Infinity
+	MAIN_PANEL_PADDING_Y = 3
+	# Horizontal padding for the main panel when there isn't a stack present.
+	# 
+	# Default: 1
+	# Range: -Infinity ~ Infinity
+	NO_STACK_TOOLTIP_PADDING_X = 1
+	# Vertical padding for the main panel when there isn't a stack present.
+	# 
+	# Default: 1
+	# Range: -Infinity ~ Infinity
+	NO_STACK_TOOLTIP_PADDING_Y = 1
+
+# preview §§
+[preview]
+	# Render a 3D preview of tiered items (swords, axes, etc.) on the left side of the tooltip.
+	# 
+	# Default: true
+	TIERED_ITEMS_RENDERER = true
+	# Render a 3D preview of armor pieces on the left side of the tooltip.
+	# 
+	# Default: true
+	ARMOR_ITEMS_RENDERER = true
+	# Horizontal offset (in pixels) for the second panel when a 3D preview is shown. Negative = left, positive = right.
+	# 
+	# Default: 0
+	# Range: -Infinity ~ Infinity
+	SECOND_PANEL_X = 0
+	# Vertical offset (in pixels) for the second panel when a 3D preview is shown. Negative = up, positive = down.
+	# 
+	# Default: 0
+	# Range: -Infinity ~ Infinity
+	SECOND_PANEL_Y = 0
+	# Size (in pixels) of the second panel in the X axis when a 3D preview is shown.
+	# 
+	# Default: 30
+	# Range: -Infinity ~ Infinity
+	SECOND_PANEL_SIZE_X = 30
+	# Size (in pixels) of the second panel in the Y axis when a 3D preview is shown.
+	# 
+	# Default: 60
+	# Range: -Infinity ~ Infinity
+	SECOND_PANEL_SIZE_Y = 60
+	# Automatically reposition the preview panel (second panel) to the right side when there is insufficient space on the left. If set to
+	# false, the panel will always remain on the left.
+	# 
+	# Default: true
+	AUTO_REPOSITION_PREVIEW_PANEL = true
+	# Rotation speed multiplier for the tiered item preview in the second panel.
+	# 
+	# Default: 1.0
+	# Range: -Infinity ~ Infinity
+	SECOND_PANEL_RENDERER_SPEED = 1.0
+	# Preview model to render in the second panel. Options: armor_stand, player_skin.
+	# 
+	# Default: armor_stand
+	PREVIEW_PANEL_MODEL = "armor_stand"
+	# Side triangles. Options: none, style_1 (filled vertical strips), style_2 (outline only).
+	# 
+	# Default: style_1
+	PREVIEW_PANEL_SIDE_TRIANGLES = "style_1"
+	# Preview corner type, independent of the main tooltip. Options: default, rounded, bevel, inner, cut, thick, full_thick, bracket,
+	# block, notch, weld, gem.
+	# 
+	# Default: default
+	PREVIEW_PANEL_CORNER_TYPE = "gem"
+	# Preview background corners, independent of the border and main tooltip. Options: default (vanilla notch), square, rounded, notch.
+	# Pair notch with the preview border's notch corners.
+	# 
+	# Default: default
+	PREVIEW_PANEL_BACKGROUND_CORNER_TYPE = "rounded"
+	# If PREVIEW_PANEL_MODEL is set to player_skin, renders the current player skin (true) or a placeholder skin (false).
+	# 
+	# Default: true
+	USE_PLAYER_SKIN_IN_PREVIEW = true
+
+# general §§
+[general]
+	# Apply a custom frame overlay texture to every item. This option is overrided if the hovered itemstack has a custom frame. Write
+	# down the texture location (such as tooltipoverhaul:textures/overlay/silver_frame.png) or leave it empty. No frame overlays are
+	# applied globally by default.
+	# 
+	# Default:
+	GLOBAL_FRAME_OVERLAY_LOCATION = ""
+	# Disable tooltip scrolling
+	# 
+	# Default: false
+	DISABLE_TOOLTIP_SCROLLING = false
+	# Automatically scroll overflowed tooltips after three seconds. Manual scrolling disables it until the tooltip changes.
+	# 
+	# Default: true
+	AUTO_SCROLL_TOOLTIPS = true
+	# Reopen the config screen and the frame editor where you left them (category, entry and section) instead of starting from the top
+	# every time. Remembered until the game closes.
+	# 
+	# Default: true
+	REMEMBER_LAST_PAGE = true
+	# Always show the equipment comparison tooltip when hovering a comparable item, without needing to hold the compare key (Left Shift
+	# by default).
+	# 
+	# Default: false
+	ALWAYS_SHOW_COMPARISON = false
+	# Maximum number of tooltips that can be pinned at the same time. Pinning past the limit replaces the oldest one.
+	# 
+	# Default: 3
+	# Range: 1 ~ 6
+	MAX_PINNED_TOOLTIPS = 3
+	# Override vanilla tooltips even when no ItemStack is present (e.g., JEI category buttons or unsupported stacks). To disable custom
+	# tooltips for specific items, edit your custom_frames.json and set disableTooltip=true for those items (or tags).
+	# 
+	# Default: true
+	SHOW_TOOLTIP_WITHOUT_STACK = true
+	# Treat the items shown in FTB Quests tasks and rewards as regular items, so they get their custom frames, icon and the rest of the
+	# item styling. Off by default, as modpacks usually replace their descriptions.
+	# 
+	# Default: false
+	FTB_QUESTS_ITEM_TOOLTIPS = false
+
+# divider §§
+[divider]
+	# Disable the divider line
+	# 
+	# Default: false
+	DISABLE_DIVIDER_LINE = false
+	# Extra padding above the divider line
+	# 
+	# Default: 0
+	# Range: -Infinity ~ Infinity
+	DIVIDER_LINE_TOP_PADDING = 1
+	# Extra padding below the divider line
+	# 
+	# Default: 0
+	# Range: -Infinity ~ Infinity
+	DIVIDER_LINE_BOTTOM_PADDING = 1
+	# Divider line color. Options: 'match_inner_frame_color', 'match_item_name_color' or a hex ARGB color (e.g., 0xA0EFEFEF).
+	# 
+	# Default: match_inner_frame_color
+	DIVIDER_LINE_COLOR = "match_inner_frame_color"
+	# Divider line type. Options: 'gradient', 'static', 'linear', 'dashed', 'dotted', 'ornament', 'gradient_ornament'
+	# 
+	# Default: gradient
+	DIVIDER_LINE_TYPE = "gradient_ornament"
+
+# style §§
+[style]
+	# Default inner overlay style for tooltips. Options: glint, static (monochrome), gradient.
+	# 
+	# Default: gradient
+	DEFAULT_INNER_OVERLAY_TYPE = "gradient"
+	# Corner style for the inner frame of the tooltip. Options: default (square), rounded (corner pixel removed), bevel (45 degree
+	# diagonal cut), inner (extra pixel in the inner corner), cut (2px chamfer), thick (solid triangular corner, top-right only),
+	# full_thick (thick on all four corners), bracket (inner corner bracket), block (2x2 solid block corner), notch (rectangular inner
+	# offset), weld (reinforced inner corner), gem (hollow triangle). The notch style pairs with the matching notch background corner
+	# style.
+	# 
+	# Default: default
+	INNER_FRAME_CORNER_TYPE = "gem"
+	# Corner style for the outer background border of the tooltip. Options: default (vanilla notch), square (sharp 90 degree), rounded,
+	# notch (rectangular inner offset, matches the inner frame notch style).
+	# 
+	# Default: default
+	BACKGROUND_CORNER_TYPE = "rounded"
+	# Default tooltip background color in ARGB format (#AARRGGBB). Example: #F0010110.
+	# 
+	# Default: #F0000000
+	DEFAULT_BACKGROUND_COLOR = "#F2141219"
+	# Enable the tooltip shadow.
+	# 
+	# Default: false
+	SHOW_TOOLTIP_SHADOW = true
+
+# text §§
+[text]
+	# Title alignment. Options: left, middle, right.
+	# 
+	# Default: left
+	TITLE_X_ALIGNMENT = "left"
+	# Rating alignment. Options: left, middle, right.
+	# 
+	# Default: left
+	RATING_X_ALIGNMENT = "left"
+	# Center the title and rating over the whole tooltip width instead of the space left next to the icon.
+	# 
+	# Default: false
+	ALIGNMENT_IGNORES_ICON = false
+	# Show rating text.
+	# 
+	# Default: false
+	SHOW_RATING = false
+	# Appends the display name of the mod that adds the hovered item as the last tooltip line (blue italic), always visible in both
+	# survival and creative (previously visible only in creative mode).
+	# 
+	# Default: false
+	SHOW_MOD_NAME = false
+	# Show the remaining and maximum durability of damaged items without enabling advanced tooltips (F3+H).
+	# 
+	# Default: false
+	SHOW_ITEM_DURABILITY = false
+	# Show the item's registry name (e.g. minecraft:diamond_sword) as a dark gray line without enabling advanced tooltips (F3+H).
+	# 
+	# Default: false
+	SHOW_REGISTRY_NAME = false
+
+# icon §§
+[icon]
+	# Icon background type. Options: focus, void, slot, slot_border and glow
+	# 
+	# Default: slot_border
+	ICON_BACKGROUND_TYPE = "glow"
+	# Icon background border shape. Style 1 leaves out the corner pixels, style 2 fills them for square corners.
+	# 
+	# Default: style_1
+	ICON_BORDER_STYLE = "style_1"
+	# Icon background color in #AARRGGBB. Use 'default' for the original color of each background type.
+	# 
+	# Default: default
+	ICON_BACKGROUND_COLOR = "default"
+	# Icon border color in #AARRGGBB, used by the slot_border, focus and glow backgrounds. Use 'default' for the original color of each
+	# background type.
+	# 
+	# Default: default
+	ICON_BORDER_COLOR = "default"
+	# Disable the item icon.
+	# 
+	# Default: false
+	DISABLE_ICON = false
+	# Animation style for the icon appearance.
+	# 
+	# Default: skew
+	ICON_APPEAR_ANIMATION = "skew"
+	# Rotation speed of the icon.
+	# 
+	# Default: 0.0
+	# Range: -Infinity ~ Infinity
+	ICON_ROTATING_SPEED = 0.0
+
+# animations §§
+[animations]
+	# Animation played when a tooltip appears (on hover). Options: none, fade, pop, rise, unfold, zoom, slide, swing, emerge, squash,
+	# card, shake.
+	# 
+	# Default: none
+	#pop 
+	TOOLTIP_APPEAR_ANIMATION = "none"
+	# Animation played when a tooltip disappears. Options: match_appear (same as the appear animation), none, fade, pop, rise, unfold,
+	# zoom, slide, swing, emerge, squash, card, shake.
+	# 
+	# Default: match_appear
+	TOOLTIP_DISAPPEAR_ANIMATION = "match_appear"
+	# Seconds the cursor must rest on an item before its tooltip (and its appear animation) shows up, so sweeping across an inventory
+	# doesn't flash tooltips. 0 shows them immediately.
+	# 
+	# Default: 0.0
+	# Range: 0.0 ~ 5.0
+	TOOLTIP_APPEAR_DELAY = 0.0
+	# Replay the appear animation when moving straight from one item to another. Disable it to keep the tooltip settled while sweeping
+	# across slots, only animating when it appears from nothing.
+	# 
+	# Default: false
+	TOOLTIP_ANIMATE_ON_SWITCH = false
+	# Duration (in seconds) of the tooltip appear/disappear animation. Lower values are snappier.
+	# 
+	# Default: 0.15000000596046448
+	# Range: -Infinity ~ Infinity
+	TOOLTIP_ANIMATION_DURATION = 0.18
+
+# palettes §§
+[palettes]
+	# Color palette for tooltips without a stack. Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFF8C909A, 0xFF4E515A, 0xFF282A30
+	NO_STACK_PALETTE_COLORS = "0xFF8C88A8, 0xFF423D5C, 0xFF24212F"
+	# Color palette for COMMON rarity (bright to dark). Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFF8C909A, 0xFF4E515A, 0xFF282A30
+	COMMON_PALETTE_COLORS = "0xFF9EA5D6, 0xFF423D5C, 0xFF24212F"
+	# Color palette for UNCOMMON rarity (bright to dark). Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFFC8CE3A, 0xFF8E931F, 0xFF53560E
+	UNCOMMON_PALETTE_COLORS = "0xFFE6DC8A, 0xFF8E8A4A, 0xFF34321E"
+	# Color palette for RARE rarity (bright to dark). Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFF4D9BE8, 0xFF2B66B5, 0xFF123A6B
+	RARE_PALETTE_COLORS = "0xFF7FB2EE, 0xFF3E5E9A, 0xFF1A2440"
+	# Color palette for EPIC rarity (bright to dark). Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFFB14BE0, 0xFF7A28A8, 0xFF431463
+	EPIC_PALETTE_COLORS = "0xFFC79AF0, 0xFF6E48A8, 0xFF2A1A44"
+	# Color palette for LEGENDARY rarity (bright to dark). Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFFE8B84A, 0xFFB5832A, 0xFF6B4A12
+	LEGENDARY_PALETTE_COLORS = "0xFFE8B84A, 0xFFB5832A, 0xFF6B4A12"
+	# Color palette for CHAOS rarity (bright to dark). Must specify exactly 3 ARGB colors.
+	# 
+	# Default: 0xFFE8483F, 0xFFB5251F, 0xFF5E0F0C
+	CHAOS_PALETTE_COLORS = "0xFFE8483F, 0xFFB5251F, 0xFF5E0F0C"
+	# Default color palette for items whose rarity is not a vanilla one (COMMON/UNCOMMON/RARE/EPIC), such as custom rarities added by
+	# other mods. Must specify exactly 3 ARGB colors. Defaults to the same colors as the legendary palette.
+	# 
+	# Default: 0xFFE8B84A, 0xFFB5832A, 0xFF6B4A12
+	CUSTOM_RARITY_PALETTE_COLORS = "0xFFE8B84A, 0xFFB5832A, 0xFF6B4A12"

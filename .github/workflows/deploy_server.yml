@@ -34,9 +34,9 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
-      PANEL_URL: ${{ vars.PANEL_URL }}
+      PANEL_URL: ${{ secrets.PANEL_URL }}
       PANEL_API_KEY: ${{ secrets.PANEL_API_KEY }}
-      PANEL_SERVER_ID: ${{ vars.PANEL_SERVER_ID }}
+      PANEL_SERVER_ID: ${{ secrets.PANEL_SERVER_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

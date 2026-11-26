@@ -45,13 +45,13 @@ const lootRestrictions = [
         items: ['minecraft:netherite_scrap', 'minecraft:ancient_debris', 'minecraft:netherite_ingot'],
     },
     // diamonds/emeralds/lapis etc
-    {
-        stage: 'gems_everywhere',
-        everywhere: true,
-        tags: 'c:gems',
-        items: ["minecraft:emerald_block", "minecraft:diamond_block", "minecraft:lapis_block"],
-        ignoredItems: ["thaumaturge:amber", "thaumaturge:quicksilver"]
-    },
+    // {
+    //     stage: 'gems_everywhere',
+    //     everywhere: true,
+    //     tags: 'c:gems',
+    //     items: ["minecraft:emerald_block", "minecraft:diamond_block", "minecraft:lapis_block"],
+    //     ignoredItems: ["thaumaturge:amber", "thaumaturge:quicksilver", "minecraft:amethyst_shard", "spectrum:citrine_shard", "spectrum:topaz_shard"]
+    // },
     
 
     // List of ideas that won't work because of GLM https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/glm/

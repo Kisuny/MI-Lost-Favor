@@ -581,7 +581,7 @@ ServerEvents.tags('item', event => {
             'thaumaturge:wand_cap_thaumium_inert', 'thaumaturge:wand_rod_greatwood', 'thaumaturge:wand_rod_obsidian',
             'thaumaturge:wand_rod_quartz', 'thaumaturge:wand_rod_reed', 'thaumaturge:wand_rod_silverwood',
             'travelanchors:travel_staff', 'waystones:blank_scroll', 'waystones:bound_scroll', 'waystones:portal_scroll',
-            'waystones:return_scroll', 'yigd:death_scroll'
+            'waystones:return_scroll', 'yigd:death_scroll', 'milf:recall_concoction'
         ],
         lore: [
             'ae2:guide', 'animusnv:guide_book', 'apothic_enchanting:boots_tome', 'apothic_enchanting:bow_tome',

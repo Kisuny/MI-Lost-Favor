@@ -10,7 +10,7 @@ import urllib.request
 USER_AGENT = "MI-Lost-Favor-CI (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"
 ARCHIVE = "serverpack.zip"
 REPLACED_DIRS = ["kubejs"]
-PRESERVED_FILES = ["config/ftbbackups3-server.snbt"]
+PRESERVED_FILES = ["config/ftbbackups3-server.snbt", "server.properties"]
 KEEP_MODS = ["SimpleDiscordLink"]
 KEEP_CONFIGS = ["simple-discord-link", "ftbbackups3-server.snbt"]
 WARNINGS = [(60, "1 minute"), (30, "30 seconds"), (10, "10 seconds")]

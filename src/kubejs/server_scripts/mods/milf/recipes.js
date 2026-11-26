@@ -171,7 +171,25 @@ function milfStoneBasinRecipe(event, args) {
     event.custom(recipe)
 }
 
+function milfInWOrldPlacementRecipe(event, args){
+    let recipe = {
+        type: "milf:world_placement",
+        inputs: args.inputItems.map(entry => entry[0]),
+        output: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+    }
+
+    event.custom(recipe)
+}
+
 ServerEvents.recipes(event => {
+
+    milfInWOrldPlacementRecipe(event, {
+        inputItems: [
+            [{ item: "abyssal_decor:deepbronze_spire" }],
+            [{ item: "abyssal_decor:deepbronze_spire" }]
+        ],
+        outputItems: [[{ id: "abyssal_decor:tall_deepbronze_spire" }]],
+    })
 
     milfSmelting(event, {
         inputItems: [[{ item: "milf:unfired_brick" }]],

@@ -3,16 +3,12 @@
   "description": [
     "<lang key=milf.quest.magic_step_i.any_basic_gemstone_shards.desc>"
   ],
-  "x": 32.95,
-  "y": 19.3,
+  "x": 32,
+  "y": 19.5,
   "deps": {
-    "min": {
-      "count": 1,
-      "of": [
-        "magic_step_i/table_core",
-        "magic_step_i/dowsing_rod_2"
-      ]
-    }
+    "all": [
+      "magic_step_i/table_core"
+    ]
   },
   "tasks": [
     {

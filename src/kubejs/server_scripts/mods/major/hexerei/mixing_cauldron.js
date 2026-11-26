@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
             { "tag": "hexerei:flower_biproduct" },
             { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:cinnabar" },
-            { "item": "minecraft:amethyst_shard" },
+            { "tag": "milf:basic_gemstone_shards" },
             { "item": "paganbless:cinnabar" },
             { "item": "paganbless:essence_of_the_forest" },
             { "tag": "hexerei:flower_biproduct" }

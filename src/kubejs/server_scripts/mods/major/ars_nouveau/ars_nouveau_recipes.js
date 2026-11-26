@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
     ], {
         Q: "modern_industrialization:bronze_ingot",
         W: "#minecraft:planks",
-        R: "paganbless:runic_charge",
+        R: "paganbless:essence_of_the_forest",
     });
 
     event.replaceInput(

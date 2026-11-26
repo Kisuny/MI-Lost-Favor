@@ -28,6 +28,13 @@ ServerEvents.tags('item', event => {
         
     })
 
+    event.remove("minecraft:wooden_slabs", [
+        "immersiveengineering:slab_treated_wood_horizontal",
+        "immersiveengineering:slab_treated_wood_vertical"
+        , "immersiveengineering:slab_treated_wood_packaged"
+    ])
+
+
     //event.get("mowziesmobs:wrought_axe").remove("minecraft:axes")
     //event.get("minecraft:axes").remove("mowziesmobs:wrought_axe")
 

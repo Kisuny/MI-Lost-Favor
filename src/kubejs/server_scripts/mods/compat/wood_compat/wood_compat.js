@@ -137,18 +137,56 @@ ServerEvents.recipes(event => {
         plankToSlab[input.item] = result.id
     })
 
+    Object.entries({
+        "immersiveengineering:treated_wood_horizontal": "immersiveengineering:slab_treated_wood_horizontal",
+        "immersiveengineering:treated_wood_vertical": "immersiveengineering:slab_treated_wood_vertical",
+        "immersiveengineering:treated_wood_packaged": "immersiveengineering:slab_treated_wood_packaged",
+
+    }).forEach(([planksId, slabId]) => {
+
+
+        yTechShapeless(event, {
+            outputItems: [[{ id: slabId }, 1]],
+            inputItems: [[{item: planksId}, 1], [{ tag: "minecraft:axes" }]],
+            category: "building",
+            removeRecipeType: "crafting_shaped",
+            compatOff: true
+        })
+
+        ytechChoppingCraft(event, {
+            inputItems: [[{ item: planksId }, 1]],
+            outputItems: [[{ id: slabId }, 2]],
+            tool: { tag: "minecraft:axes" },
+            compatOff: true
+        })
+
+        yTechShapeless(event, {
+            outputItems: [[{ id: slabId }, 2]],
+            inputItems: [[{ item: planksId }, 1], [{ tag: "c:saws" }]],
+            category: "building",
+            removeRecipeType: "crafting_shaped",
+            compatOff: true
+        })
+
+        miMachineRecipe(event, {
+            energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
+            inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+            inputItems: [[{ item: planksId }, 1]],
+            outputItems: [[{ item: slabId }, 2]],
+            removeRecipeType: "modern_industrialization:cutting_machine",
+        })
+
+
+    })
+
     let addedVanillaWoodTypes = new $HashSet()
 
     event.forEachRecipe({ type: 'ytech:remaining_shapeless_crafting', input: '#minecraft:planks', output: '#minecraft:slabs' }, recipe => {
-        //console.log(recipe.getOriginalRecipe().getIngredients().getFirst().getTagKey());
         let rJSON = JSON.parse(recipe.json)
         let result = rJSON.result
         let input = rJSON.ingredients.filter(entry => {
             return !["minecraft:axes", "c:saws"].includes(Object.values(entry)[0])
         })[0]
-        //if (Array.isArray(input)) input = input[0]
-
-        //console.log(input);
 
         
         if (!addedVanillaWoodTypes.contains(input.item)){

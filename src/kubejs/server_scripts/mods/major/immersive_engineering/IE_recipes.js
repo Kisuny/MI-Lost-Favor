@@ -1225,5 +1225,6 @@ milfDisableRecipesById([
     "immersiveengineering:mixer/concrete",
 
     "immersiveengineering:refinery/high_power_biodiesel",
-    "immersiveengineering:crafting/treated_wood_horizontal"
+    "immersiveengineering:crafting/treated_wood_horizontal",
+    "immersiveengineering:crafting/stick_treated"
 ])

@@ -11,3 +11,12 @@ ServerEvents.tags('entity_type', event => {
 ServerEvents.tags('item', event => {
     event.add('curios:face', 'thaumaturge:goggles_revealing')
 })
+
+ServerEvents.tags('block', event => {
+    event.add("minecraft:mineable/shovel", [
+
+        "thaumaturge:grass_ambient",
+        
+    ])
+})
+

@@ -413,7 +413,7 @@ ServerEvents.recipes(event => {
     });
 
     customThaumInfusion(event, {
-        catalyst: 'spectrum:moonstone_core',
+        catalyst: 'enigmaticlegacyplus:spellcore',
         components: 
         [
             "spectrum:moonstone_powder_block",

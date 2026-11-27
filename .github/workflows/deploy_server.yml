@@ -73,6 +73,7 @@ jobs:
           URL: ${{ steps.release.outputs.url }}
           SIZE: ${{ steps.release.outputs.size }}
           SKIP_BACKUP: ${{ inputs.skip_backup }}
+          SERVER_NEWS_WEBHOOK_URL: ${{ secrets.SERVER_NEWS_WEBHOOK_URL }}
         run: |
           EXTRA=()
           [[ "$SKIP_BACKUP" == "true" ]] && EXTRA=(--skip-backup)

@@ -17,6 +17,9 @@ jobs:
     if: github.repository == 'Kisuny/MI-Lost-Favor'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      tag: ${{ steps.release.outputs.tag }}
+      sent: ${{ steps.announce.outputs.sent }}
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
@@ -65,3 +68,11 @@ jobs:
           BODY="$RUNNER_TEMP/release-body.md"
           gh release view "$TAG" --json body -q .body | sed 's/, discord: pending -->/, discord: sent -->/' > "$BODY"
           gh release edit "$TAG" --notes-file "$BODY"
+
+  deploy:
+    needs: announce
+    if: needs.announce.outputs.sent == 'true'
+    uses: ./.github/workflows/deploy_server.yml
+    with:
+      tag: ${{ needs.announce.outputs.tag }}
+    secrets: inherit

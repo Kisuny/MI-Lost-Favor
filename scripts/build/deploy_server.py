@@ -200,6 +200,25 @@ def install():
         api("POST", "/files/write", {"file": f"/{path}"}, raw=content.encode("utf-8"))
 
 
+def announce_update(version):
+    webhook = os.environ.get("SERVER_NEWS_WEBHOOK_URL", "").strip()
+    if not webhook:
+        print("SERVER_NEWS_WEBHOOK_URL is not set, skipped the Discord notification")
+        return
+    payload = {"content": f"The server has been updated to version {version}", "allowed_mentions": {"parse": []}}
+    request = urllib.request.Request(
+        f"{webhook}?wait=true",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json", "User-Agent": "DiscordBot (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            print(f"Sent the Discord notification, HTTP {response.status}")
+    except (urllib.error.HTTPError, urllib.error.URLError) as error:
+        print(f"WARNING: the Discord notification failed: {error}")
+
+
 def check():
     current = state()
     print(f"Server state: {current}")
@@ -252,3 +271,4 @@ api("POST", "/power", body={"signal": "start"})
 if not wait_for("the server to start", lambda: state() == "running", timeout=900, interval=15):
     fail("the server did not reach the running state, check the console")
 print("Server is running")
+announce_update(args.version)

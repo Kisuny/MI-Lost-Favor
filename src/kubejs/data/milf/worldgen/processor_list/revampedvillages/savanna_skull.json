@@ -1,0 +1,113 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "waystones:waystone",
+              "Properties": {
+                "half": "lower",
+                "waterlogged": "false",
+                "origin": "unknown",
+                "facing": "east"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "abyssal_decor:lion_statue_bottom",
+            "Properties": {
+              "facing": "east"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:clear"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "waystones:waystone",
+              "Properties": {
+                "half": "upper",
+                "waterlogged": "false",
+                "origin": "player",
+                "facing": "east"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "abyssal_decor:lion_statue_top",
+            "Properties": {
+              "facing": "east"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:clear"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "waystones:deepslate_waystone",
+              "Properties": {
+                "half": "lower",
+                "waterlogged": "false",
+                "origin": "unknown",
+                "facing": "west"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "abyssal_decor:nithing_bottom",
+            "Properties": {
+              "facing": "west"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:clear"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "waystones:deepslate_waystone",
+              "Properties": {
+                "half": "upper",
+                "waterlogged": "false",
+                "origin": "player",
+                "facing": "west"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "abyssal_decor:nithing_top",
+            "Properties": {
+              "facing": "west"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:clear"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "revampedvillages:snowy/pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 150,
+      "element": {
+        "location": "revampedvillages:snowy/center/shrine",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 150,
+      "element": {
+        "location": "revampedvillages:snowy/center/tree",
+        "processors": "milf:revampedvillages/snowy_tree",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "location": "revampedvillages:snowy/center/spikes",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

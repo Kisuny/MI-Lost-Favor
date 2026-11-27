@@ -1,0 +1,33 @@
+{
+  "name": "revampedvillages:desert/pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 75,
+      "element": {
+        "location": "revampedvillages:desert/center/well",
+        "processors": "milf:revampedvillages/desert_well",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 150,
+      "element": {
+        "location": "revampedvillages:desert/center/fountain",
+        "processors": "milf:revampedvillages/desert_fountain",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 150,
+      "element": {
+        "location": "revampedvillages:desert/center/market",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

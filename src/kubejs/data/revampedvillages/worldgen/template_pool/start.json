@@ -1,0 +1,51 @@
+{
+  "name": "revampedvillages:pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 33,
+      "element": {
+        "location": "revampedvillages:plains/center/well",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 33,
+      "element": {
+        "location": "revampedvillages:plains/center/fountain",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 33,
+      "element": {
+        "location": "revampedvillages:plains/center/small_market",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 22,
+      "element": {
+        "location": "revampedvillages:plains/center/medium_market",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 22,
+      "element": {
+        "location": "revampedvillages:plains/center/big_market",
+        "processors": "milf:revampedvillages/plains_big_market",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

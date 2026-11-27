@@ -224,7 +224,8 @@ ServerEvents.tags('item', event => {
             'neovitae:reagent_lava', 'neovitae:sigil_lava', 'not_enough_glyphs:thread_fire_focus',
             'reliquified_ars_nouveau:flaming_bracer', 'risus:fire_scythe', 'simplyswords:brimstone_claymore',
             'simplyswords:molten_edge', 'spectrum:incandescent_essence', 'spectrum:molten_rod',
-            'thaumaturge:staff_rod_blaze', 'thaumaturge:wand_rod_blaze'
+            'thaumaturge:staff_rod_blaze', 'thaumaturge:wand_rod_blaze', 'milf:iron_bloom', 'milf:everburning_roots_heart',
+            'milf:everburning_roots_veins', 'milf:fire_pit', 'embers:ancient_motive_core'
         ],
         lightning: [
             'ae2:charged_certus_quartz_crystal', 'ae2:charged_staff', 'animusnv:sigil_storm',
@@ -554,7 +555,7 @@ ServerEvents.tags('item', event => {
             'netherman:chance_totem', 'not_enough_glyphs:spell_binder', 'not_enough_glyphs:thread_earth_focus',
             'not_enough_glyphs:thread_shaper_focus', 'not_enough_glyphs:thread_summon_focus',
             'not_enough_glyphs:thread_wild_magic', 'paganbless:athame', 'paganbless:black_thorn_staff',
-            'paganbless:pentacle', 'paganbless:runic_charge', 'paganbless:wand',
+            'paganbless:pentacle', 'paganbless:wand',
             'reliquified_ars_nouveau:architects_staff', 'reliquified_ars_nouveau:mana_ring',
             'reliquified_ars_nouveau:whirlisprig_petals', 'risus:lucky_charm', 'risus:totem_of_unyielding',
             'risus:wretched_charm', 'royalvariations:royal_staff', 'simplyswords:arcanethyst',
@@ -739,7 +740,8 @@ ServerEvents.tags('item', event => {
             'malum:ring_of_echoing_arcana', 'mowziesmobs:sculptor_staff', 'reliquified_ars_nouveau:architects_staff',
             'reliquified_ars_nouveau:mana_ring', 'risus:totem_of_unyielding', 'royalvariations:royal_staff',
             'simplyswords:arcanethyst', 'simplyswords:enigma', 'simplyswords:magiblade', 'simplyswords:magiscythe',
-            'simplyswords:magispear', 'spectrum:radiance_staff', 'spectrum:staff_of_remembrance'
+            'simplyswords:magispear', 'spectrum:radiance_staff', 'spectrum:staff_of_remembrance', 'milf:table_core', 
+            'milf:onyx_table_core', 'milf:moonstone_table_core', 'paganbless:runic_charge'
         ],
         lore: [
             'fdbosses:qliphothic_codex'

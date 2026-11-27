@@ -704,26 +704,38 @@
     },
     {
       "id": "milf_alchemy_signature",
-      "texture": "tooltipoverhaul:textures/overlay/pure_alchemy_frame.png",
+      "texture": "tooltipoverhaul:textures/overlay/emerald_frame.png",
       "gradientType": "custom",
       "borderType": "gradient",
       "gradientColors": [
-        "#D9B65A",
-        "#3E8C82",
-        "#1C3533"
+        "#B8FF5A",
+        "#3E9A4A",
+        "#2A0E3A"
       ],
-      "dividerLineColor": "#D9B65A",
-      "specialEffect": "bubbles",
+      "dividerLineColor": "#B8FF5A",
+      "specialEffect": "bubbles,wisps",
       "effectsBehindText": true,
       "effectSettings": {
         "bubbles": {
           "colors": [
-            "#C8A0FF",
-            "#7AE0C8",
-            "#FFFFFF"
-          ]
+            "#A8FF5A",
+            "#C060FF",
+            "#E8FFD0"
+          ],
+          "intensity": 1.0
+        },
+        "wisps": {
+          "colors": [
+            "#9AE870",
+            "#B080E0",
+            "#D8FFC0"
+          ],
+          "density": 0.8
         }
       },
+      "vignettes": [
+        "(ellipse, bottom_middle, #7048C040, 0.7, 0, -30)"
+      ],
       "tags": [
         "milf:tooltip/alchemy_signature"
       ],
@@ -1336,19 +1348,19 @@
       "gradientType": "custom",
       "borderType": "gradient",
       "gradientColors": [
-        "#D9B65A",
-        "#3E8C82",
-        "#1C3533"
+        "#B8FF5A",
+        "#3E9A4A",
+        "#2A0E3A"
       ],
-      "dividerLineColor": "#D9B65A",
+      "dividerLineColor": "#B8FF5A",
       "specialEffect": "bubbles",
       "effectsBehindText": true,
       "effectSettings": {
         "bubbles": {
           "colors": [
-            "#C8A0FF",
-            "#7AE0C8",
-            "#FFFFFF"
+            "#A8FF5A",
+            "#C060FF",
+            "#E8FFD0"
           ],
           "intensity": 0.8
         }

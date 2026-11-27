@@ -78,13 +78,11 @@ registerPowerlessMIMachine('deepbronze_fish_farm', {
         },
         "F": {
             "id": "minecraft:water",
-            "hatches": null,
-            "stateProperties": "{level:\"8\"}"
+            "hatches": null
         },
         "f": {
             "id": "minecraft:water",
-            "hatches": null,
-            "stateProperties": "{level:\"0\"}"
+            "hatches": null
         },
         "G": {
             "id": "xkdeco:factory_vent_fan",

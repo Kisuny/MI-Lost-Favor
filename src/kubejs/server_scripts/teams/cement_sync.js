@@ -96,8 +96,7 @@ function syncTeamAdvancements(/**@type {import("net.minecraft.server.level.Serve
         }
     }
 
-    team.getExtraData().putString(TEAM_ADVANCEMENTS_KEY, $String["join(java.lang.CharSequence,java.lang.Iterable)"](",", teamAdvancementsSet))
-    team.markDirty()
+    putTeamStoredSet(player.server, TEAM_ADVANCEMENTS_KEY, team, teamAdvancementsSet)
 }
 
 
@@ -108,7 +107,7 @@ function getTeamAdvancements(/**@type {import("net.minecraft.server.level.Server
     let { team, teamMembers } = getTeamData(player)
 
     /** @type {import("java.util.HashSet").$HashSet$$Original<StringJS>} */
-    let teamAdvancementsSet = new $HashSet()
+    let teamAdvancementsSet = getTeamStoredSet(player.server, TEAM_ADVANCEMENTS_KEY, team)
     for (const advancementHolder of manager.getAllAdvancements()) {
         teamMembers.forEach(member => {
             let progress = member.getAdvancements().getOrStartProgress(advancementHolder)
@@ -121,18 +120,6 @@ function getTeamAdvancements(/**@type {import("net.minecraft.server.level.Server
                 }
             }
         })
-    }
-
-    let data = team.getExtraData().getString(TEAM_ADVANCEMENTS_KEY)
-    let storedTeamAdvancements = data.split(",")    
-
-    if (storedTeamAdvancements.length != 0) {
-
-        for (const advancementId of storedTeamAdvancements) {
-            if (advancementId.length() == 0) continue
-            teamAdvancementsSet.add(advancementId)
-        }
-
     }
 
     return teamAdvancementsSet

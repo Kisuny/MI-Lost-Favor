@@ -19,7 +19,10 @@ let $StructureBlockInfo = Java.loadClass("net.minecraft.world.level.levelgen.str
 let $Mirror = Java.loadClass("net.minecraft.world.level.block.Mirror")
 let $NbtOps = Java.loadClass("net.minecraft.nbt.NbtOps")
 
-let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
+let $EmbersServerTeams = Java.loadClass("dev.tysontheember.embersclaims.server.ServerTeams")
+let $EmbersServerClaims = Java.loadClass("dev.tysontheember.embersclaims.server.ServerClaims")
+let $EmbersTeamStore = Java.loadClass("dev.tysontheember.embersclaims.team.TeamStore")
+let $EmbersClaimAction = Java.loadClass("dev.tysontheember.embersclaims.net.C2SClaimActionPayload$Action")
 
 let $AdvancementProgressEvent = Java.loadClass("net.neoforged.neoforge.event.entity.player.AdvancementEvent$AdvancementProgressEvent")
 let $AdvancementEarnEvent = Java.loadClass("net.neoforged.neoforge.event.entity.player.AdvancementEvent$AdvancementEarnEvent")
@@ -83,8 +86,6 @@ let $AdLods = Java.loadClass("com.endertech.minecraft.mods.adlods.AdLods")
 let $NbtUtils = Java.loadClass("net.minecraft.nbt.NbtUtils")
 let $Tag = Java.loadClass("net.minecraft.nbt.Tag")
 
-let $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI").api()
-let $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
 let $NbtIo = Java.loadClass("net.minecraft.nbt.NbtIo")
 let $NbtAccounter = Java.loadClass("net.minecraft.nbt.NbtAccounter")
 let $Rotation = Java.loadClass("net.minecraft.world.level.block.Rotation")
@@ -116,13 +117,10 @@ let $AvoidEntityGoal = Java.loadClass("net.minecraft.world.entity.ai.goal.AvoidE
 let $ReiMachineRecipes = Java.loadClass("aztech.modern_industrialization.compat.rei.machines.ReiMachineRecipes")
 let $FluidType = Java.loadClass("net.neoforged.neoforge.fluids.FluidType")
 
-let $ClaimedChunkEvent = Java.loadClass("dev.ftb.mods.ftbchunks.api.event.ClaimedChunkEvent")
-let $ClaimedChunkEventBefore = Java.loadClass("dev.ftb.mods.ftbchunks.api.event.ClaimedChunkEvent$Before")
-let $ClaimResult = Java.loadClass("dev.ftb.mods.ftbchunks.api.ClaimResult")
-let $CompoundEventResult = Java.loadClass("dev.architectury.event.CompoundEventResult")
 
 let $GogglesAccess = Java.loadClass("com.leclowndu93150.thaumaturge.api.items.GogglesAccess")
 let $PlayerResearchAccess = Java.loadClass("com.leclowndu93150.thaumaturge.api.capability.PlayerResearchAccess")
 let $ScanNode = Java.loadClass("com.leclowndu93150.thaumaturge.content.research.scan.ScanNode")
 let $ScannedBlock = Java.loadClass("com.leclowndu93150.thaumaturge.api.research.scan.ScannedBlock")
 let $ThaumometerItem = Java.loadClass("com.leclowndu93150.thaumaturge.content.item.ThaumometerItem")
+let $IGPortalDataManager = Java.loadClass("net.conczin.immersive_gateways.data.PortalDataManager")

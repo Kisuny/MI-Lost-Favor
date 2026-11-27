@@ -6,19 +6,17 @@ PlayerEvents.tick(event => {
     if (player.tickCount % 10 != 0) return
     if (player.mainHandItem.id != CHUNK_FLAG && player.offhandItem.id != CHUNK_FLAG) return
 
-    let chunk = $FTBChunksAPI.getManager().getChunk($ChunkDimPos(player))
+    let claim = getClaimAt(player.level, player.blockPosition())
     let color = FLAG_PREVIEW_FREE_COLOR
     let message = Text.translatable("milf.flags.preview.free")
 
-    if (chunk) {
-        let team = chunk.teamData.team
-        if (team.getRankForPlayer(player.uuid).isAllyOrBetter()) {
-            let teamColor = team.coloredName.getStyle().getColor()
-            color = teamColor ? teamColor.getValue() : FLAG_PREVIEW_FREE_COLOR
+    if (claim) {
+        if (isFriendlyClaim(player, claim)) {
+            color = getClaimTeamColor(player.server, claim)
             message = Text.translatable("milf.flags.preview.own")
         } else {
             color = FLAG_PREVIEW_FOREIGN_COLOR
-            message = Text.translatable("milf.flags.preview.foreign").append(team.getName())
+            message = Text.translatable("milf.flags.preview.foreign").append(Component.of(getClaimTeamName(player.server, claim)))
         }
     }
 

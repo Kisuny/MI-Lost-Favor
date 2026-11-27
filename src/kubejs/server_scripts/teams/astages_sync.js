@@ -12,9 +12,7 @@ PlayerEvents.loggedOut(event =>{
 })
 
 function syncTeamStages(player){
-    let teamManager = $FTBTeamsAPI.getManager()
-    let team = teamManager.getTeamForPlayer(player).get()
-    //if (team.isPlayerTeam()) return
+    let { team } = getTeamData(player)
     let teamStagesSet = getAllTeamStages(player)
 
     let playerStagesSet = new $HashSet()
@@ -39,16 +37,13 @@ function syncTeamStages(player){
     //console.log("PLAYER STAGES AFTER SYNC: " + teamStagesSet);
     
 
-    team.getExtraData().putString(TEAM_STAGES_KEY, $String["join(java.lang.CharSequence,java.lang.Iterable)"](",", teamStagesSet))
-    team.markDirty()
+    putTeamStoredSet(player.server, TEAM_STAGES_KEY, team, teamStagesSet)
 }
 
 function getAllTeamStages(player){
-    let teamManager = $FTBTeamsAPI.getManager()
-    let team = teamManager.getTeamForPlayer(player).get()
-    let teamMembers = team.getOnlineMembers()
+    let { team, teamMembers } = getTeamData(player)
 
-    let teamStagesSet = new $HashSet()
+    let teamStagesSet = getTeamStoredSet(player.server, TEAM_STAGES_KEY, team)
     teamMembers.forEach(member => {
         let playerStages = AStages.getStagesFromPlayer(member)
         for (const stage of playerStages) {
@@ -56,19 +51,6 @@ function getAllTeamStages(player){
         }
     })
 
-
-    let data = team.getExtraData().getString(TEAM_STAGES_KEY)
-    let storedTeamStages = data.split(",")
-    if (storedTeamStages.length != 0) {
-
-        for (const stage of storedTeamStages) {
-            if (stage.length() == 0) continue
-            teamStagesSet.add(stage)
-            //console.log("STORED STAGE:" + stage)
-            
-        }
-
-    }
 
     //console.log("BEFORE SYNC: " + teamStagesSet);
     

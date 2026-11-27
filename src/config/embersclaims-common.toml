@@ -1,0 +1,437 @@
+[claims]
+	#Chunks each player contributes to their team's claim limit
+	# Default: 16
+	# Range: 0 ~ 100000
+	base_per_player = 500
+	#Multiply the claim and force load bases by the member count. When false every team gets each base once, plus bonuses
+	scale_with_members = false
+	#Hard cap per team after bonuses, 0 for none
+	# Default: 0
+	# Range: 0 ~ 1000000
+	max_per_team = 0
+	#Players without a team may claim for themselves
+	allow_personal = true
+	#New claims must touch an existing claim of the same team in that dimension
+	require_adjacent = false
+	#Farthest chunk distance from the player a claim may be made at, 0 for unlimited
+	# Default: 0
+	# Range: 0 ~ 10000
+	max_distance = 0
+	#Chunks around the overworld spawn that cannot be claimed
+	# Default: 4
+	# Range: 0 ~ 1000
+	spawn_protection = 0
+	#ALLOW only the listed dimensions, or DENY the listed dimensions
+	#Allowed Values: ALLOW, DENY
+	dimension_mode = "DENY"
+	#Dimension ids for dimension_mode. A value that is not a list refuses new claims in every dimension until it is fixed. The Reset button on the Config screen empties this list
+	dimensions = []
+	#Release every claim of a team whose members were all offline this many days of server uptime, 0 to never expire
+	# Default: 0
+	# Range: 0 ~ 3650
+	expire_days = 0
+	#Largest radius for /claims claim <radius> and the map screen drag box
+	# Default: 8
+	# Range: 0 ~ 64
+	max_radius = 8
+	#Claim changes and party events kept for /claims admin history and /party log, 0 turns the log off
+	# Default: 10000
+	# Range: 0 ~ 1000000
+	history_size = 10000
+	#Most chunks one party can claim in a dimension, as dimension=count, like minecraft:the_nether=4
+	dimension_limits = []
+	#OFF turns claim blocks off, OPTIONAL lets players claim with or without one, REQUIRED makes a claim block the only way for players to claim. Admin claims and existing claims are not affected. On a version without the claim block REQUIRED works like OPTIONAL
+	#Allowed Values: OFF, OPTIONAL, REQUIRED
+	claim_blocks = "OFF"
+
+[forceload]
+	#Force loaded chunks each player contributes to their team's limit
+	# Default: 4
+	# Range: 0 ~ 100000
+	base_per_player = 0
+	#Hard cap per team after bonuses, 0 for none
+	# Default: 0
+	# Range: 0 ~ 1000000
+	max_per_team = 0
+	#Keep chunks loaded while every member of the team is offline
+	offline = false
+	#How much a force loaded chunk runs: FULL ticks everything, BLOCKS runs machines, furnaces, crops and redstone but freezes mobs and items, LOAD only keeps the chunk in memory
+	#Allowed Values: FULL, BLOCKS, LOAD
+	level = "FULL"
+	#Level while every member of the team is offline, used when offline is true
+	#Allowed Values: FULL, BLOCKS, LOAD
+	offline_level = "FULL"
+	#Let a claim block keep a Create Aeronautics sub-level loaded and flying while nobody is near it. Each kept sub-level costs server time like a player standing on it
+	sub_levels = false
+
+[teams]
+	#Member cap per team, 0 for none
+	# Default: 0
+	# Range: 0 ~ 10000
+	max_members = 0
+	#Ally cap per team, 0 for none
+	# Default: 0
+	# Range: 0 ~ 10000
+	max_allies = 0
+	#Shortest team name allowed
+	# Default: 2
+	# Range: 1 ~ 64
+	name_min = 2
+	#Longest team name allowed
+	# Default: 24
+	# Range: 1 ~ 64
+	name_max = 24
+	#Regular expression a whole team name must match
+	name_pattern = "[A-Za-z0-9 _'-]+"
+	#Minutes an invite stays valid
+	# Default: 10
+	# Range: 1 ~ 100000
+	invite_minutes = 10
+	#What happens to a player's personal claims when they create or join a team: TRANSFER them to the team or RELEASE them
+	#Allowed Values: TRANSFER, RELEASE
+	join_claims = "TRANSFER"
+	#Allies only get ally access once both parties have allied each other
+	mutual_allies = false
+	#Party members can hurt each other
+	friendly_fire = true
+	#Members of allied parties can hurt each other
+	ally_fire = true
+	#Named flag profiles a party can create and assign to chunks, 0 turns profiles off
+	# Default: 8
+	# Range: 0 ~ 64
+	max_profiles = 8
+	#Custom roles a party owner can create with /party role, 0 stops new roles
+	# Default: 8
+	# Range: 0 ~ 64
+	max_roles = 8
+	#Let players see their party members glow through walls, each player can still turn it off in the client config
+	teammate_glow = false
+	#Show the party's name in brackets, in the party color, before the names of party members in chat, death messages and the tab list
+	chat_tag = false
+	#Waypoints a party can share with /party waypoint, 0 turns waypoints off
+	# Default: 20
+	# Range: 0 ~ 1000
+	max_waypoints = 20
+	#Rows in the shared party stash, 0 turns the stash off. Lowering it hides the extra slots but keeps their items
+	# Default: 3
+	# Range: 0 ~ 6
+	stash_rows = 3
+	#Send each player where their online party members are, for the teammate icons and map mods. A party or a player can still turn it off for themselves
+	share_locations = true
+	#Ticks between location updates, lower moves the icons more smoothly but sends more
+	# Default: 10
+	# Range: 1 ~ 200
+	location_interval = 10
+	#Farthest a party member's location is sent within the same dimension, in blocks, 0 for unlimited. Above 0, members in other dimensions are listed with their dimension but no position
+	# Default: 0
+	# Range: 0 ~ 1000000
+	location_range = 0
+	#Also send where members of allied parties are, once both parties allied each other
+	ally_locations = false
+
+[protection]
+	#Master switch for claim protection
+	enabled = true
+	#Permission level for admin commands and /claims bypass
+	# Default: 2
+	# Range: 1 ~ 4
+	op_level = 2
+	#Operators at op_level ignore protection without toggling /claims bypass
+	ops_always_bypass = false
+	#Protect claims of players who are not in a team
+	protect_personal = true
+	#Hostile mobs can always be attacked inside claims
+	hostiles_always_attackable = true
+	#Machines that act as players (quarries, deployers, block breakers): ALLOW them everywhere, DENY them in claims, or ORIGIN: allow them only when they stand in a chunk of the same party, the party turned on outside machines, or the mod gives them their owner's id and that owner has access
+	#Allowed Values: ALLOW, ORIGIN, DENY
+	fake_players = "ORIGIN"
+	#Real time windows when claims stop protecting the raid_flags, as DAY HH:MM-HH:MM in server time. DAY is MON to SUN, DAILY, WEEKDAYS or WEEKEND. 24:00 ends at midnight, and equal times mean a full 24 hours
+	raid_windows = []
+	#Flags that stop protecting claims during a raid window. The Reset button on the Config screen puts back the default list: break, place, containers, use_blocks, explosions, pvp
+	raid_flags = ["break", "place", "containers", "use_blocks", "explosions", "pvp"]
+	#Tell online officers and the owner when someone outside the party is blocked in their claims
+	alert_officers = true
+	#Blocks anyone may use in a claim, ids or #tags. End an entry with =break, =place or =use,break to pick what anyone may do with it. The Reset button on the Config screen puts back the default list
+	exempt_blocks = ["#minecraft:buttons", "#minecraft:pressure_plates", "minecraft:ender_chest", "minecraft:crafting_table", "#milf:claim_interact_whitelist"]
+	#Items anyone may use on blocks in a claim, ids or #tags
+	exempt_items = []
+	#Entities anyone may attack or interact with in a claim, ids or #tags. End an entry with =use or =attack to allow only that
+	exempt_entities = ["#milf:claim_entity_interact_whitelist=use"]
+	#Parties can keep their own lists like the three above, for their whole party or one profile, from the Exceptions button on the Flags tab or /party exempt. Off ignores the lists of player parties, server claims keep theirs
+	party_exemptions = true
+
+		[protection.flags.break]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.place]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.use_blocks]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.containers]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.use_items]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.attack_animals]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.interact_entities]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.pickup_items]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "everyone"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.trample]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.enter]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "everyone"
+			#Parties cannot change this flag
+			locked = true
+
+		[protection.flags.pvp]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "true"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.explosions]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "false"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.fire_spread]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "false"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.mob_griefing]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "false"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.pistons]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "false"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.fluids]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "false"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.hostile_spawns]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "true"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.projectiles]
+			#Enforce this flag at all
+			enabled = true
+			#Lowest access that may do this: owner, officer, member, ally or everyone
+			default = "ally"
+			#Parties cannot change this flag
+			locked = false
+
+		[protection.flags.machines]
+			#Enforce this flag at all
+			enabled = true
+			#Allowed by default: true or false
+			default = "false"
+			#Parties cannot change this flag
+			locked = false
+
+[homes]
+	#Parties can set a home with /party sethome and return with /party home
+	enabled = true
+	#Seconds between /party home uses per player
+	# Default: 60
+	# Range: 0 ~ 86400
+	cooldown_seconds = 60
+	#The home must stay inside one of the party's claims
+	require_claim = true
+	#Allow /party home from another dimension
+	cross_dimension = true
+
+[costs]
+	#Price of each claimed chunk: empty for free, money:<amount> (Ember's Questing money), item:<id>:<count> or item:#<tag>:<count>
+	claim = ""
+	#Price of force loading a chunk, same format as claim
+	forceload = ""
+	#Claims each party gets before the claim price applies
+	# Default: 0
+	# Range: 0 ~ 100000
+	free_claims = 0
+	#Share of the price paid back when a paid chunk is unclaimed or stops force loading
+	# Default: 100
+	# Range: 0 ~ 100
+	refund_percent = 100
+	#Players in creative mode claim for free
+	creative_free = true
+	#How the claim price rises with each paid claim a party owns: NONE, LINEAR (adds growth_percent of the base each claim) or EXPONENTIAL (multiplies by 1 + growth_percent each claim)
+	#Allowed Values: NONE, LINEAR, EXPONENTIAL
+	growth = "NONE"
+	#Percent the claim price rises per claim under growth
+	# Default: 0.0
+	# Range: 0.0 ~ 10000.0
+	growth_percent = 0.0
+	#Currency for selling chunks with /claims sell: money:1 or item:<id> or item:#<tag>. Empty turns chunk sales off
+	market = ""
+	#Percent of every chunk sale or lease that goes to nobody, rounded up
+	# Default: 0
+	# Range: 0 ~ 100
+	market_tax = 0
+	#Price of one extra claim slot bought with /party buyslot: money:<amount>, item:<id>:<count> or item:#<tag>:<count>. Empty turns buying off
+	claim_slot = ""
+	#Most extra claim slots one party can buy
+	# Default: 32
+	# Range: 0 ~ 100000
+	max_bought_slots = 32
+	#Officers can auction chunks with /claims auction. Needs a market currency
+	auctions = false
+	#Longest auction in hours
+	# Default: 168
+	# Range: 1 ~ 8760
+	auction_max_hours = 168
+	#Percent a bid must beat the current bid by, at least 1
+	# Default: 5
+	# Range: 0 ~ 1000
+	auction_step_percent = 5
+	#A bid this many minutes before the end moves the end to this many minutes after the bid. 0 turns it off
+	# Default: 5
+	# Range: 0 ~ 1440
+	auction_extend_minutes = 5
+	#Officers can sell access passes to a profile's chunks with /party pass sell. Needs a market currency
+	passes = false
+	#Longest pass in hours
+	# Default: 720
+	# Range: 1 ~ 87600
+	pass_max_hours = 720
+
+[pricing]
+	#Price multipliers per dimension as id=multiplier, used for claim prices and upkeep
+	dimensions = []
+	#Price multipliers per biome as id=multiplier or #tag=multiplier. The first matching entry wins
+	biomes = []
+	#Price multipliers for chunks touching a structure, as id=multiplier or #tag=multiplier. The highest matching structure wins
+	structures = []
+
+[upkeep]
+	#Parties pay rent for their claims from a party balance filled with /party upkeep deposit
+	enabled = false
+	#Rent per chunk per period, and the currency of the balance: money:<amount> or item:<id>:<count> or item:#<tag>:<count>
+	cost = ""
+	#Real minutes between rent payments
+	# Default: 1440
+	# Range: 1 ~ 525600
+	interval_minutes = 1440
+	#Oldest chunks of each party that pay no rent
+	# Default: 0
+	# Range: 0 ~ 100000
+	free_chunks = 0
+	#How rent per chunk rises with the number of chunks: NONE, LINEAR or EXPONENTIAL
+	#Allowed Values: NONE, LINEAR, EXPONENTIAL
+	growth = "NONE"
+	#Percent rent per chunk rises per chunk under growth
+	# Default: 0.0
+	# Range: 0.0 ~ 10000.0
+	growth_percent = 0.0
+	#Rent multiplier for force loaded chunks
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	forceload_multiplier = 2.0
+	#Unpaid periods in a row before the penalty starts
+	# Default: 3
+	# Range: 0 ~ 1000
+	grace_periods = 3
+	#Penalty after the grace periods: RELEASE newest claims, or UNPROTECT every claim of the party until the debt is paid
+	#Allowed Values: RELEASE, UNPROTECT
+	unpaid = "RELEASE"
+	#Newest chunks released each unpaid period with RELEASE, 0 releases all of them at once
+	# Default: 0
+	# Range: 0 ~ 100000
+	release_chunks = 0
+	#Parties in debt cannot claim new chunks
+	block_claims = true
+	#Force loaded chunks stop loading while the party is in debt
+	stop_forceloads = true
+	#Players without a party also pay rent for their own claims
+	charge_personal = true
+	#When the balance cannot cover rent, take the rest from online members: OFF, OWNER only, or MEMBERS (owner first, then officers, then members)
+	#Allowed Values: OFF, OWNER, MEMBERS
+	auto_pay = "OFF"
+
+[questing]
+	#Ember's Questing stage bonuses as stage:claims:forceloads, counted for every member holding the stage
+	stage_bonuses = []

@@ -5019,6 +5019,42 @@
             ]
         },
         {
+            "pakku_id": "SXrdt9ZklArl8D6l",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "embers-teams-and-claims"
+            },
+            "name": {
+                "curseforge": "Ember's Teams and Claims"
+            },
+            "id": {
+                "curseforge": "1816311"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "embersclaims-neoforge-1.21.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9698/489/embersclaims-neoforge-1.21.1-1.0.0.jar",
+                    "id": "9698489",
+                    "parent_id": "1816311",
+                    "hashes": {
+                        "sha1": "cab42c2c878c74170fdca9746d58dc4ca8fe4b9d",
+                        "md5": "76c1ae446ebd1a218f21ca30be4d74b4"
+                    },
+                    "required_dependencies": [],
+                    "size": 1148741,
+                    "date_published": "2026-11-19T10:46:47.980Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Au1uHsDxvbRQZH5C",
             "type": "MOD",
             "slug": {
@@ -5847,46 +5883,6 @@
             ]
         },
         {
-            "pakku_id": "Hc16RqlZjYB6FHJx",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-chunks-forge"
-            },
-            "name": {
-                "curseforge": "FTB Chunks (NeoForge)"
-            },
-            "id": {
-                "curseforge": "314906"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftb-chunks-neoforge-2101.1.24.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9594/476/ftb-chunks-neoforge-2101.1.24.jar",
-                    "id": "9594476",
-                    "parent_id": "314906",
-                    "hashes": {
-                        "sha1": "f0d48143cc80918cf632a4c14c3ca3e974ed0457",
-                        "md5": "1a5bd9443eeb8fc536ead0710427107c"
-                    },
-                    "required_dependencies": [
-                        "404465",
-                        "419699",
-                        "404468"
-                    ],
-                    "size": 671431,
-                    "date_published": "2026-11-13T16:36:20.460Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Z4sjBNmMD744ZaKH",
             "type": "MOD",
             "slug": {
@@ -5921,45 +5917,6 @@
                     ],
                     "size": 1643436,
                     "date_published": "2026-11-16T16:06:18.857Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "jkm2lBNcSEiEsuP5",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-teams-forge"
-            },
-            "name": {
-                "curseforge": "FTB Teams (NeoForge)"
-            },
-            "id": {
-                "curseforge": "404468"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftb-teams-neoforge-2101.1.12.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9434/81/ftb-teams-neoforge-2101.1.12.jar",
-                    "id": "9434081",
-                    "parent_id": "404468",
-                    "hashes": {
-                        "sha1": "9c831fbbbccf2178827c3ccf278b2f2a0ce57306",
-                        "md5": "9f1d725ce83ce54dc04ca49c1c3efbbf"
-                    },
-                    "required_dependencies": [
-                        "419699",
-                        "404465"
-                    ],
-                    "size": 308430,
-                    "date_published": "2026-11-04T14:09:06.373Z"
                 }
             ]
         },
@@ -15131,6 +15088,7 @@
         {
             "pakku_id": "TdWVdB9CSwYY42nU",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "sodium"
             },

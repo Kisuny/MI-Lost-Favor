@@ -1,7 +1,6 @@
 ServerEvents.tags('block', event => {
 
-    //TODO: immersive_aircraft But is that really necessary? Any aircraft can be stolen
-    event.add("ftbchunks:interact_whitelist",
+    event.add("milf:claim_interact_whitelist",
         [
             '#waystones:is_teleport_target',
             'javd:portal_block',
@@ -13,7 +12,7 @@ ServerEvents.tags('block', event => {
 
 ServerEvents.tags('entity_type', event => {
 
-    event.add("ftbchunks:entity_interact_whitelist",
+    event.add("milf:claim_entity_interact_whitelist",
         [
             'hexerei:broom',  
             '#c:boats',

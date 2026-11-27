@@ -62,7 +62,7 @@ Object.entries({
         callback: (event) => {
             let player = event.player
             let server = player.server
-            $FTBTeamsAPI.getManager().getTeamForPlayer(player).get().getOnlineMembers().forEach(member => {
+            getTeamData(player).teamMembers.forEach(member => {
                 sendImmersiveMessageWithSubtext(
                     Text.translate('milf.stage.magic_awakens'),
                     Text.translate('milf.stage.magic_chapter'),
@@ -358,9 +358,7 @@ function restoreMilestoneStages(player) {
 
 function defaultMilestoneNotification(player, stage) {
     let server = player.server
-    let teamManager = $FTBTeamsAPI.getManager()
-    let team = teamManager.getTeamForPlayer(player).get()
-    let teamMembers = team.getOnlineMembers()
+    let { teamMembers } = getTeamData(player)
     teamMembers.forEach(member => {
         sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate(`milf.stage.${stage}`), member, DEFAULT_MILESTONE_NOTIFICATION_STYLE, DEFAULT_MILESTONE_SUBTEXT_STYLE, server)
         server.scheduleInTicks(DEFAULT_MILESTONE_SUBTEXT_STYLE.delay * 20, _ => {
@@ -372,10 +370,7 @@ function defaultMilestoneNotification(player, stage) {
 
 function addStagesToTeamMembers(player, stages) {
 
-    let teamManager = $FTBTeamsAPI.getManager()
-
-    let team = teamManager.getTeamForPlayer(player).get()
-    let teamMembers = team.getOnlineMembers()
+    let { teamMembers } = getTeamData(player)
     stages = Array.isArray(stages) ? stages : [stages]
 
     teamMembers.forEach(member => {

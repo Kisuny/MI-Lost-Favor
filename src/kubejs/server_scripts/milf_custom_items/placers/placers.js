@@ -159,14 +159,13 @@ function LRUCache(limit){
 BlockEvents.rightClicked(PLACER_BLOCKS, event => {
 
     if(event.getHand()=="OFF_HAND") event.cancel()
-    //#region FTB chunks stuff
-    let chunkManager = $FTBChunksAPI.getManager()
-    let currentChunk = chunkManager.getChunk($ChunkDimPos(event.player))
+    //#region claims
+    let playerChunk = new $ChunkPos(event.player.blockPosition())
     for(let i = -1;i <= 1; i++){
         for(let k = -1;k <= 1; k++){
-            if (chunkManager.getChunk($ChunkDimPos(event.player).offset(i,k))){
-                //if (chunkManager.getChunk($ChunkDimPos(event.player).offset(i,k)).teamData.team.getRankForPlayer(event.player.uuid).isAllyOrBetter()) console.log("ally");
-                if (!chunkManager.getChunk($ChunkDimPos(event.player).offset(i,k)).teamData.team.getRankForPlayer(event.player.uuid).isAllyOrBetter()) {
+            let nearbyClaim = $EmbersServerClaims.at(event.level, new $ChunkPos(playerChunk.x + i, playerChunk.z + k))
+            if (nearbyClaim){
+                if (!isFriendlyClaim(event.player, nearbyClaim)) {
                     sendImmersiveMessage(Component.translatable("milf.placers.claimed_chunk_nearby"),
                         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
                     event.cancel()

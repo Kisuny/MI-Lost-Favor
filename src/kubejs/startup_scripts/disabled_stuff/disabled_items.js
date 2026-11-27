@@ -457,6 +457,7 @@ global.disabledItems = [
     new DisabledItemBuilder("appliedthaumaturge:essentia_cell_creative"),
     new DisabledItemBuilder("farmersdelight:flint_knife")
         .replaceWith("ytech:flint_knife").replaceIn(["LOOT_TABLES"]),
+    new DisabledItemBuilder("embersclaims:claim_block"),
 
 ].map(builder => builder.build())
 

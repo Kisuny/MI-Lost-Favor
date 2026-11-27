@@ -4,11 +4,11 @@ const FLAG_BLOCKED_HINT_COOLDOWN = 20
 let flagClaimInProgress = false
 let flagBlockedHintTicks = {}
 
-function flagApply(player, level, blockPos, action, team) {
+function flagApply(player, level, blockPos, action) {
     let chunks = new $ArrayList()
     chunks.add(new $ChunkPos(blockPos))
     flagClaimInProgress = true
-    let outcome = $EmbersServerClaims.apply(player, level, chunks, action, team)
+    let outcome = $EmbersServerClaims.apply(player, level, chunks, action, null)
     flagClaimInProgress = false
     if (outcome.ok() > 0) return null
     let failures = outcome.failures()
@@ -17,11 +17,11 @@ function flagApply(player, level, blockPos, action, team) {
 }
 
 function flagClaim(player, level, blockPos) {
-    return flagApply(player, level, blockPos, $EmbersClaimAction.CLAIM, $EmbersServerTeams.teamOf(player))
+    return flagApply(player, level, blockPos, $EmbersClaimAction.CLAIM)
 }
 
-function flagUnclaim(player, level, blockPos, claim) {
-    return flagApply(player, level, blockPos, $EmbersClaimAction.UNCLAIM, getClaimTeam(player.server, claim))
+function flagUnclaim(player, level, blockPos) {
+    return flagApply(player, level, blockPos, $EmbersClaimAction.UNCLAIM)
 }
 
 function flagClaimedStyle(server, claim) {
@@ -75,7 +75,7 @@ BlockEvents.rightClicked(CHUNK_FLAG, event => {
         sendImmersiveMessage(Text.translatable("milf.flags.claimed"), player, flagClaimedStyle(event.server, getClaimAt(event.level, pos)), event.server)
     } else if (event.block.getProperties().enabled == "true") {
         if (!claim || !isOwnClaim(player, claim)) return
-        let error = flagUnclaim(player, event.level, pos, claim)
+        let error = flagUnclaim(player, event.level, pos)
         if (error) {
             sendImmersiveMessage(error, player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
             return
@@ -114,7 +114,7 @@ BlockEvents.broken(CHUNK_FLAG, event => {
     let pos = event.block.pos
     let claim = getClaimAt(event.level, pos)
     if (!claim || event.block.getProperties().enabled != "true" || !isOwnClaim(player, claim)) return
-    let error = flagUnclaim(player, event.level, pos, claim)
+    let error = flagUnclaim(player, event.level, pos)
     if (error) {
         sendImmersiveMessage(error, player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         event.cancel()

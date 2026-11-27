@@ -107,10 +107,6 @@ LootJS.modifiers(event => {
                 addItems(pool, ["milf:amber_visage"], null, 1)
             })
             .pool(pool => {
-                pool.when(c => c.randomChance(0.1))
-                addItems(pool, ["enchanted:creeper_heart"], null, 1)
-            })
-            .pool(pool => {
                 pool.when(c => c.randomChance(0.05))
                 addItems(pool, global.milfOrbs, [1, 3], 8)
             })
@@ -128,7 +124,7 @@ LootJS.modifiers(event => {
                 addItems(pool, ["milf:amber_visage"], null, 0)
             })
             .pool(pool => {
-                pool.when(c => c.randomChance(0.2))
+                pool.when(c => c.randomChance(0.06))
                 addItems(pool, ["enchanted:creeper_heart"], null, 0)
             })
             .pool(pool => {
@@ -149,7 +145,7 @@ LootJS.modifiers(event => {
                 addItems(pool, ["milf:amber_visage"], null, 0)
             })
             .pool(pool => {
-                pool.when(c => c.randomChance(0.4))
+                pool.when(c => c.randomChance(0.12))
                 addItems(pool, ["enchanted:creeper_heart"], null, 0)
             })
             .pool(pool => {

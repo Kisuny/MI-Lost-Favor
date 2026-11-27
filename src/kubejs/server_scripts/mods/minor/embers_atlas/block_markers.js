@@ -56,7 +56,7 @@ Object.keys(atlasBlocks).forEach(blockId => {
             return
         }
 
-        data.name = String(block.blockState.block.descriptionId)
+        data.name = String(block.blockState.block.getDescriptionId())
         data.color = blockMarker.color
         data.group = ""
 

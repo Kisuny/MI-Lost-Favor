@@ -29,17 +29,49 @@ ServerEvents.recipes(event => {
     })
 
     miMachineRecipe(event, {
-        energy: 1, time: 481, machine: "modern_industrialization:deepbronze_fish_farm",
+        energy: 1, time: 109, machine: "modern_industrialization:deepbronze_fish_farm",
         inputItems: [
             [{ item: "abyssal_decor:giant_clam_empty_closed" }, 1, 0.00109],
             [{ item: "minecraft:sand" }, 1]
         ],
         outputItems: [
-            [{ item: "abyssal_decor:white_pearl" }, 1, 0.64]
+            [{ item: "abyssal_decor:block_of_pearl" }, 1, 0.79]
         ]
     })
 
+    miMachineRecipe(event, {
+        energy: 1, time: 73, machine: "modern_industrialization:deepbronze_fish_farm",
+        inputItems: [
+            [{ item: "abyssal_decor:clam_empty_closed" }, 1, 0.00109],
+            [{ item: "minecraft:sand" }, 1]
+        ],
+        outputItems: [
+            [{ item: "abyssal_decor:white_pearl" }, 1, 0.87]
+        ]
+    })
 
+    miMachineRecipe(event, {
+        energy: 1, time: 400, machine: "modern_industrialization:deepbronze_fish_farm",
+        inputItems: [
+            [{ item: "abyssal_decor:clam_empty_closed" }, 1],
+            [{ item: "minecraft:bone_meal" }, 4]
+        ],
+        outputItems: [
+            [{ item: "abyssal_decor:clam_empty_closed" }, 1],
+            [{ item: "abyssal_decor:clam_empty_closed" }, 1, 0.5]
+        ]
+    })
+
+    miMachineRecipe(event, {
+        energy: 1, time: 666, machine: "modern_industrialization:deepbronze_fish_farm",
+        inputItems: [
+            [{ item: "abyssal_decor:clam_empty_closed" }, 1],
+            [{ item: "minecraft:sand" }, 109 * 2]
+        ],
+        outputItems: [
+            [{ item: "abyssal_decor:giant_clam_empty_closed" }, 1]
+        ]
+    })
 
 
 })

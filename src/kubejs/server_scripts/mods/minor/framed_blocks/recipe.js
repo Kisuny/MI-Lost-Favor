@@ -28,4 +28,18 @@ ServerEvents.recipes(event => {
         removeRecipe: true
     })
 
+    const framingSaw = (id, material, additives) => {
+        event.remove({ id: `framedblocks:framing_saw/${id}` })
+        event.custom({
+            type: "framedblocks:frame",
+            additives: additives.map(([ingredient, count]) => ({ count: count, ingredient: ingredient })),
+            material: material,
+            result: { count: 1, id: `framedblocks:${id}` }
+        }).id(`milf:framing_saw/${id}`)
+    }
+
+    framingSaw("framed_hopper", 6144, [[{ item: "minecraft:hopper" }, 1]])
+    framingSaw("framed_chest", 49152, [[{ item: "minecraft:chest" }, 1]])
+    framingSaw("framed_tank", 49152, [[{ item: "modern_industrialization:steel_tank" }, 1]])
+
 })

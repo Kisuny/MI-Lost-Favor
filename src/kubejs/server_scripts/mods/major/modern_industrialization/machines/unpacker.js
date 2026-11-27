@@ -49,5 +49,15 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineRecipe(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:deepbronze_fish_farm",
+        inputItems: [
+            [{ item: "abyssal_decor:giant_clam_empty_closed" }, 1]
+        ],
+        outputItems: [
+            [{ item: "abyssal_decor:clam_empty_closed" }, 2]
+        ]
+    })
+
 
 })

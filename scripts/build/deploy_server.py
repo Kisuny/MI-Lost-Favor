@@ -10,9 +10,10 @@ import urllib.request
 USER_AGENT = "MI-Lost-Favor-CI (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"
 ARCHIVE = "serverpack.zip"
 REPLACED_DIRS = ["kubejs"]
-PRESERVED_FILES = ["config/ftbbackups3-server.snbt", "server.properties"]
+PRESERVED_FILES = ["server.properties"]
 KEEP_MODS = ["SimpleDiscordLink"]
-KEEP_CONFIGS = ["simple-discord-link", "ftbbackups3-server.snbt"]
+DROPPED_MODS = ["SimpleBackups"]
+KEEP_CONFIGS = ["simple-discord-link"]
 WARNINGS = [(60, "1 minute"), (30, "30 seconds"), (10, "10 seconds")]
 
 
@@ -190,6 +191,10 @@ def install():
     print("Unpacking the server pack")
     api("POST", "/files/decompress", body={"root": "/", "file": ARCHIVE}, timeout=1800)
     api("POST", "/files/delete", body={"root": "/", "files": [ARCHIVE]})
+    dropped = [name for name in list_dir("/mods") if any(name.startswith(prefix) for prefix in DROPPED_MODS)]
+    if dropped:
+        print(f"Removing mods not used on this server: {', '.join(dropped)}")
+        api("POST", "/files/delete", body={"root": "/mods", "files": dropped})
     for path, content in saved.items():
         print(f"Restoring {path}")
         api("POST", "/files/write", {"file": f"/{path}"}, raw=content.encode("utf-8"))

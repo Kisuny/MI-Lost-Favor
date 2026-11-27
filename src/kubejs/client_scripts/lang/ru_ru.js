@@ -21,6 +21,11 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.atlas.node.modifier.pale', 'бледный')
     event.add('milf.atlas.node.modifier.fading', 'угасающий')
     event.add('milf.atlas.node.unknown', 'Сначала изучите этот узел <keyword>таумометром</keyword>')
+    event.add('milf.atlas.spawner.mob', 'Моб: %s')
+    event.add('milf.emi_info.atlas_marker', "Нашли такой блок в мире? Нажмите по нему <keyword>ПКМ</keyword>, чтобы <magic>отметить</magic> его на карте <property>Атласа</property>. <keyword>Shift + ПКМ</keyword> <warning>убирает</warning> метку.")
+    event.add('milf.emi_info.atlas_marker.spawner', "В описании метки будет указано, какого <blood>моба</blood> призывает этот спавнер.")
+    event.add('milf.atlas.gateway', 'Врата')
+    event.add('milf.atlas.gateway.exit', 'Выход: %s')
 
     const foodCategoryNamesRu = { fruit: 'фрукты', cooked_meats: 'мясные блюда', bread: 'хлеб' }
     Object.keys(foodCategoryNamesRu).forEach(priority => {

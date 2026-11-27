@@ -23,6 +23,11 @@ NetworkEvents.dataReceived("milf_add_marker", event => {
     let name = Text.translate(data.getString("name"), nameArgs).getString()
 
     let note = data.getString("note")
+    if (data.getBoolean("translateNote")) {
+        let noteArgs = []
+        data.getList("noteArgs", 8).forEach(arg => noteArgs.push(Text.translate(arg.getAsString())))
+        note = Text.translate(note, noteArgs).getString()
+    }
     let color = 0xFF000000 | data.getInt("color")
     let group = data.getString("group")
 

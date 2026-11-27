@@ -21,6 +21,11 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.atlas.node.modifier.pale', 'pale')
     event.add('milf.atlas.node.modifier.fading', 'fading')
     event.add('milf.atlas.node.unknown', 'Study this node with a <keyword>Thaumometer</keyword> first')
+    event.add('milf.atlas.spawner.mob', 'Mob: %s')
+    event.add('milf.emi_info.atlas_marker', "Found one in the world? <keyword>RMB</keyword> on it to <magic>mark it</magic> on your <property>Atlas</property> map. <keyword>Shift + RMB</keyword> <warning>removes</warning> the mark.")
+    event.add('milf.emi_info.atlas_marker.spawner', "The mark's description shows which <blood>mob</blood> this spawner summons.")
+    event.add('milf.atlas.gateway', 'Gateway')
+    event.add('milf.atlas.gateway.exit', 'Exit: %s')
 
     const foodCategoryNamesEn = { fruit: 'fruit', cooked_meats: 'cooked meats', bread: 'bread' }
     Object.keys(foodCategoryNamesEn).forEach(priority => {

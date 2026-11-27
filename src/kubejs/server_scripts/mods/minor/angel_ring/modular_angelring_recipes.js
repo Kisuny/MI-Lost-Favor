@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     
     
     customThaumInfusion(event, {
-        catalyst: 'angelring:diamond_ring',
+        catalyst: 'modular_angelring:gold_ring',
         components: 
         [
             "ars_hex:archwood_broom",
@@ -18,8 +18,8 @@ ServerEvents.recipes(event => {
         aspects: { volatus: 64, aer: 40, motus: 32, praecantatio: 24, potentia: 24, desiderium: 16 },
         instability: 25, 
         research: 'thaumaturge:infusion',
-        result: 'angelring:angel_ring',
-        removeOutput: true
+        result: 'modular_angelring:angel_ring',
+        removeRecipeId: 'modular_angelring:angel_ring'
 
     })
     

@@ -46,7 +46,7 @@ ServerEvents.tags('item', event => {
             'oritech:uranium_dust', 'oritech:uranium_gem', 'oritech:uranium_pellet'
         ],
         holy: [
-            'angelring:angel_ring', 'animusnv:sigil_heavenly_wrath', 'eidolon_repraised:angels_sight',
+            'modular_angelring:angel_ring', 'animusnv:sigil_heavenly_wrath', 'eidolon_repraised:angels_sight',
             'eidolon_repraised:holy_symbol', 'enigmaticlegacyplus:angel_blessing', 'enigmaticlegacyplus:heaven_scroll',
             'enigmaticlegacyplus:sacred_chalice', 'enigmaticlegacyplus:sacred_crystal', 'fdbosses:divine_gear',
             'gag:sacred_balm', 'gag:sacred_salt', 'gag:sacred_salve', 'legendary_monsters:purified_soul',
@@ -640,7 +640,7 @@ ServerEvents.tags('item', event => {
             'spectrum:dragon_talon'
         ],
         holy: [
-            'angelring:angel_ring', 'eidolon_repraised:angels_sight', 'enigmaticlegacyplus:angel_blessing',
+            'modular_angelring:angel_ring', 'eidolon_repraised:angels_sight', 'enigmaticlegacyplus:angel_blessing',
             'enigmaticlegacyplus:ascension_amulet', 'enigmaticlegacyplus:pure_heart',
             'enigmaticlegacyplus:redemption_amulet', 'enigmaticlegacyplus:redemption_ring',
             'enigmaticlegacyplus:sacred_chalice', 'fdbosses:divine_gear', 'fdbosses:justice_core', 'minecraft:beacon',

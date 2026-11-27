@@ -1,5 +1,8 @@
 ServerEvents.recipes(event => {
 
+    event.remove({ id: "framedblocks:framed_tank" })
+    event.remove({ id: "framedblocks:framed_chest" })
+
     milfShaped(event, {
         pattern: [
             "FFF",
@@ -10,8 +13,7 @@ ServerEvents.recipes(event => {
             F: { item: "framedblocks:framed_cube" },
             T: { item: "modern_industrialization:steel_tank" }
         },
-        outputItems: [[{ id: "framedblocks:framed_tank" }, 1]],
-        removeRecipe: true
+        outputItems: [[{ id: "framedblocks:framed_tank" }, 1]]
     })
 
     milfShaped(event, {
@@ -24,8 +26,7 @@ ServerEvents.recipes(event => {
             F: { item: "framedblocks:framed_cube" },
             C: { item: "minecraft:chest" }
         },
-        outputItems: [[{ id: "framedblocks:framed_chest" }, 1]],
-        removeRecipe: true
+        outputItems: [[{ id: "framedblocks:framed_chest" }, 1]]
     })
 
     const framingSaw = (id, material, additives) => {

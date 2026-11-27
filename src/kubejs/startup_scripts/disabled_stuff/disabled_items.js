@@ -454,6 +454,9 @@ global.disabledItems = [
     new DisabledItemBuilder("thaumaturge:deepslate_ore_quartz"),
     new DisabledItemBuilder("thaumaturge:ore_quartz"),
     new DisabledItemBuilder("thaumaturge:jar_creative"),
+    new DisabledItemBuilder("modular_angelring:phantom_ward_module"),
+    new DisabledItemBuilder("modular_angelring:magnet_module"),
+    new DisabledItemBuilder("modular_angelring:night_vision_module"),
     new DisabledItemBuilder("appliedthaumaturge:essentia_cell_creative"),
     new DisabledItemBuilder("farmersdelight:flint_knife")
         .replaceWith("ytech:flint_knife").replaceIn(["LOOT_TABLES"]),

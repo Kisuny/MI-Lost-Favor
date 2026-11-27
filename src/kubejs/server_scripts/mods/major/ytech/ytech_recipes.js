@@ -600,6 +600,45 @@ ServerEvents.recipes(event => {
         compatOff: true
     })
 
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            "#": { tag: "minecraft:axes" }
+        },
+        outputItems: [[{ id: "immersiveengineering:stick_treated" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            "#": { item: "ytech:lead_saw" }
+        },
+        outputItems: [[{ id: "immersiveengineering:stick_treated" }, 2]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "S ",
+            "# "
+        ],
+        key: {
+            S: { tag: "immersiveengineering:treated_wood_slab" },
+            "#": { item: "ytech:bronze_saw" }
+        },
+        outputItems: [[{ id: "immersiveengineering:stick_treated" }, 3]],
+        compatOff: true
+    })
+
 
     milfShaped(event, {
         pattern: [

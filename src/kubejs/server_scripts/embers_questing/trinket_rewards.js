@@ -36,6 +36,7 @@ const trinkets_slot_list_reward = [
     { id: 'milf:trinket/amulet_first_steps', trinket_slot: 'amulet' },
     { id: 'milf:trinket/head_starcatcher_rod', trinket_slot: 'head' },
     { id: 'milf:trinket/bindingkey_key_binding', trinket_slot: 'bindingkey' },
+    { id: 'milf:trinket/angel_ring', trinket_slot: 'angel_ring' },
 ]
 
 trinkets_slot_list_reward.forEach(reward => {

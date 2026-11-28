@@ -181,12 +181,11 @@ ServerEvents.recipes(event => {
 
     pedestalFromRecipe(event, {
         id: "thaumaturge:wand",
-        tier: "advanced",
+        tier: "simple",
         time: 400,
         topaz: 2,
         citrine: 2,
         amethyst: 2,
-        onyx: 2,
         experience: 2.0,
         advancement: "spectrum:create_onyx_shard"
     })

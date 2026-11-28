@@ -13,11 +13,11 @@
 	#Horizontal pixel offset from the anchor. Set in-game with the Move HUD button on the nutrition screen.
 	# Default: -6
 	# Range: -4096 ~ 4096
-	hud_offset_x = 127
+	hud_offset_x = -191
 	#Vertical pixel offset from the anchor.
 	# Default: 6
 	# Range: -4096 ~ 4096
-	hud_offset_y = -2
+	hud_offset_y = 0
 	#Keep the diet-tier HUD widget on screen. When false it shows for 10 seconds after the tier changes, then fades out.
 	hud_always_show = false
 	#Horizontal position of the inventory button, in pixels from the left edge of the inventory.

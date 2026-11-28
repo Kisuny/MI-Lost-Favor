@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "x": 61.5,
+  "y": 11.5,
+  "deps": {
+    "all": [
+      "magic_step_iii/hellforged_parts"
+    ]
+  },
+  "tasks": [
+    {
+      "match_components": "strict",
+      "item": "minecraft:enchanted_book",
+      "components": "{\"minecraft:stored_enchantments\":{levels:{\"spectrum:indestructible\":1}}}",
+      "type": "item"
+    }
+  ],
+  "shape": "diamond"
+}

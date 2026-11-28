@@ -110,4 +110,25 @@ ServerEvents.recipes(event => {
         });
     });
 
+    customEnchanterCraft(event, {
+        time: 1000, experience: 1000, advancement: "spectrum:unlocks/enchantments/indestructible",
+        ingredients: [
+            { "item": "minecraft:book" },
+            { "item": "spectrum:blue_pigment" },
+            { "item": "spectrum:blue_pigment" },
+            { "item": "spectrum:downstone_fragments" },
+            { "item": "neovitae:hellforged_parts" },
+            { "item": "spectrum:blue_pigment" },
+            { "item": "spectrum:blue_pigment" },
+            { "item": "spectrum:downstone_fragments" },
+            { "item": "neovitae:hellforged_parts" }
+        ],
+        result: {
+            id: "minecraft:enchanted_book",
+            components: {
+                stored_enchantments: { "spectrum:indestructible": 1 }
+            }
+        },
+    });
+
 })

@@ -546,6 +546,28 @@ ServerEvents.recipes(event => {
             { item: "malum:refined_soulstone", count: 2 },
         ],
         spirits: [
+            { type: "malum:eldritch", count: 4 },
+        ],
+        result: { id: "ars_nouveau:wixie_shards", count: 1 },
+    });
+    
+    spiritInfusion(event, {
+        input: { item: "eidolon_repraised:soul_shard", count: 1 },
+        extraInputs: [
+            { item: "malum:refined_soulstone", count: 2 },
+        ],
+        spirits: [
+            { type: "malum:sacred", count: 4 },
+        ],
+        result: { id: "ars_nouveau:wixie_shards", count: 1 },
+    });
+
+    spiritInfusion(event, {
+        input: { item: "eidolon_repraised:soul_shard", count: 1 },
+        extraInputs: [
+            { item: "malum:refined_soulstone", count: 2 },
+        ],
+        spirits: [
             { type: "malum:earthen", count: 4 },
         ],
         result: { id: "ars_nouveau:starbuncle_shards", count: 1 },

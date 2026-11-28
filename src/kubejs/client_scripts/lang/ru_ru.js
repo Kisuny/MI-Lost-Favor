@@ -43,6 +43,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.magic_chapter', `Котёл забурлил, и перед вами раскрылись страницы ${MilfEffects.GRAD.custom(MilfEffects.WAVE_C("Ранней магии"), "#8E44AD", "#D7A8F0")}`)
     event.add('milf.stage.mowziesmobs_mobs', `новые ${MilfEffects.GRAD.custom("опасности", "#F00B0B", "#7A0F0B")} появились на вашем пути`)
     event.add('milf.stage.eidolon_mobs', `Вы чувствуете как по вашему телу пробежал ${MilfEffects.GRAD.custom("холодок", "#353DCA", "#52B5C4")}!`)
+    event.add('milf.stage.ars_nouveau_mobs', `Из лесной чащи начали ${MilfEffects.WIGGLE("выглядывать")} ${MilfEffects.GRAD.custom("маленькие духи", "#7FD8A6", "#C9F2D9")}`)
     event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${MilfEffects.GRAD.custom("могут вас услышать", "#F00B0B", "#7A0F0B")} ночью, будьте осторожны!`)
     event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${MilfEffects.GRAD.custom("тёмных глубинах", "#1A4FFF", "#0A1A7A")}...`)
     event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${MilfEffects.GRAD.custom("существами, которым нет числа", "#9B59B6", "#E8D5FF")}`)

@@ -1,0 +1,27 @@
+{
+  "title": "<lang key=item.ars_nouveau.whirlisprig_charm>",
+  "description": [
+    "<lang key=milf.quest.magic_step_ii.whirlisprig_charm.desc>"
+  ],
+  "icon": "ars_nouveau:whirlisprig_charm",
+  "x": 138.7,
+  "y": 9.57,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanting_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "optional": true,
+      "entity": "ars_nouveau:whirlisprig",
+      "type": "observe"
+    },
+    {
+      "item": "ars_nouveau:whirlisprig_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "star",
+  "size": 1.25
+}

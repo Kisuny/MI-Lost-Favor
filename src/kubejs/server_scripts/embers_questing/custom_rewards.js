@@ -6,6 +6,10 @@ Object.entries({
         quest: "magic_step_ii/codex",
         stages: ["eidolon_mobs"]
     },
+    "milf:milestone/source_alembic": {
+        quest: "magic_step_ii/source_alembic",
+        stages: ["ars_nouveau_mobs"]
+    },
     "milf:milestone/gate_pearl": {
         quest: "when_dungeons_arise/gate_pearl",
         stages: ["mowziesmobs_mobs", "mythsandlegends_mobs"]

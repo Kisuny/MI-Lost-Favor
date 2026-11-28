@@ -1,0 +1,27 @@
+{
+  "title": "<lang key=item.ars_nouveau.wixie_charm>",
+  "description": [
+    "<lang key=milf.quest.magic_step_ii.wixie_charm.desc>"
+  ],
+  "icon": "ars_nouveau:wixie_charm",
+  "x": 130.92,
+  "y": 9.57,
+  "deps": {
+    "all": [
+      "magic_step_ii/enchanting_apparatus"
+    ]
+  },
+  "tasks": [
+    {
+      "optional": true,
+      "entity": "ars_nouveau:wixie",
+      "type": "observe"
+    },
+    {
+      "item": "ars_nouveau:wixie_charm",
+      "type": "item"
+    }
+  ],
+  "shape": "star",
+  "size": 1.25
+}

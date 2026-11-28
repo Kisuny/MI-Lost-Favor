@@ -7,7 +7,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-USER_AGENT = "MI-Lost-Favor-CI (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"
+USER_AGENT = "MI-Lost-Favor-CI (https://github.com/MI-Lost-Favor-Team/MI-Lost-Favor, 1.0)"
 ARCHIVE = "serverpack.zip"
 REPLACED_DIRS = ["kubejs"]
 PRESERVED_FILES = ["server.properties"]
@@ -209,7 +209,7 @@ def announce_update(version):
     request = urllib.request.Request(
         f"{webhook}?wait=true",
         data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", "User-Agent": "DiscordBot (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"},
+        headers={"Content-Type": "application/json", "User-Agent": "DiscordBot (https://github.com/MI-Lost-Favor-Team/MI-Lost-Favor, 1.0)"},
         method="POST",
     )
     try:

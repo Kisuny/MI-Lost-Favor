@@ -9,7 +9,7 @@ from pathlib import Path
 
 SETTINGS = json.loads((Path(__file__).resolve().parent / "build_settings.json").read_text(encoding="utf-8"))
 SUPPRESS_EMBEDS = 1 << 2
-USER_AGENT = "MI-Lost-Favor-CI (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"
+USER_AGENT = "MI-Lost-Favor-CI (https://github.com/MI-Lost-Favor-Team/MI-Lost-Favor, 1.0)"
 APPROVED = {4: "Approved", 10: "Released"}
 REJECTED = {2: "ChangesRequired", 5: "Rejected", 6: "MalwareDetected", 7: "Deleted", 15: "FailedPublishing"}
 
@@ -94,7 +94,7 @@ if not webhook:
 request = urllib.request.Request(
     f"{webhook}?wait=true",
     data=json.dumps(payload).encode("utf-8"),
-    headers={"Content-Type": "application/json", "User-Agent": "DiscordBot (https://github.com/Kisuny/MI-Lost-Favor, 1.0)"},
+    headers={"Content-Type": "application/json", "User-Agent": "DiscordBot (https://github.com/MI-Lost-Favor-Team/MI-Lost-Favor, 1.0)"},
     method="POST",
 )
 try:

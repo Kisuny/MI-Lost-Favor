@@ -28,7 +28,7 @@ concurrency:
 
 jobs:
   deploy:
-    if: github.repository == 'Kisuny/MI-Lost-Favor'
+    if: github.repository == 'MI-Lost-Favor-Team/MI-Lost-Favor'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:

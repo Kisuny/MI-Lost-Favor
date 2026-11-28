@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"paganbless:essence_of_the_forest"}, 2],
             [{item:"paganbless:cinnabar"}, 2],
-            [{item:"minecraft:amethyst_shard"}],
+            [{tag:"milf:basic_gemstone_shards"}],
             [{tag:"hexerei:flower_biproduct"}, 2],
         ],
         inputFluids:[

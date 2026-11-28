@@ -316,6 +316,10 @@ registerPlacer("chemical_plant", "modern_industrialization", {
     langSuffix: { ru_ru: "химического завода" }
 })
 
+registerPlacer("source_alembic", "modern_industrialization", {
+    langSuffix: { ru_ru: "алембика истока" }
+})
+
 // registerPlacer("desalter", "modern_industrialization", {
 //     langSuffix: { ru_ru: "опреснителя" }
 // })

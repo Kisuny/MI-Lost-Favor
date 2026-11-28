@@ -641,7 +641,7 @@ ServerEvents.recipes(event => {
             },
             {
                 items: [
-                    { "item": "eidolon_repraised:soul_harvest_incense" },
+                    { "item": "modern_industrialization:oblivion_alloy_ingot" },
                     { "item": "minecraft:fermented_spider_eye" },
                 ],
                 stirs: 1

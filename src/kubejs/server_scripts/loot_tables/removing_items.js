@@ -64,8 +64,6 @@ LootJS.modifiers(event => {
         { item_name: 'grimoireofgaia:bag_record' },
         { item_name: 'grimoireofgaia:box_hat' },
         { item_name: 'grimoireofgaia:bag_book' },
-        { item_name: 'yo_hooks:gold_hook_head' },
-        { item_name: 'yo_hooks:diamond_hook_head' },
         { item_name: '#minecraft:saplings' },
         { item_name: 'eidolon_repraised:lead_ingot' },
         { item_name: 'enigmaticlegacyplus:recall_potion' },

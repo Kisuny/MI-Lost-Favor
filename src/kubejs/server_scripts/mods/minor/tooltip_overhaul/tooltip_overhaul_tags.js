@@ -322,9 +322,7 @@ ServerEvents.tags('item', event => {
             'starcatcher:targeted_bait', 'starcatcher:thunder_bass', 'starcatcher:twilight_koi',
             'starcatcher:unknown_fish', 'starcatcher:vanilla_hook', 'starcatcher:weathered_copper_hook',
             'starcatcher:wintery_pike', 'starcatcher:yellowstone_fish', 'supplementaries:bubble_blower',
-            'thaumaturge:chunk_fish', 'yo_hooks:copper_grappling_hook', 'yo_hooks:copper_hook_head',
-            'yo_hooks:diamond_grappling_hook', 'yo_hooks:diamond_hook_head', 'yo_hooks:gold_grappling_hook',
-            'yo_hooks:gold_hook_head', 'yo_hooks:iron_grappling_hook', 'yo_hooks:iron_hook_head', 'ytech:dried_cod',
+            'thaumaturge:chunk_fish', 'ytech:dried_cod',
             'ytech:dried_salmon', 'ytech:shell_beads'
         ],
         sweets: [

@@ -4,7 +4,7 @@
     "<lang key=milf.quest.bronze_age.gate_pearl.desc>"
   ],
   "icon": "gateways:gate_pearl{\"gateways:gateway\":\"gateways:basic/villager\"}",
-  "x": 10,
+  "x": 12,
   "y": 22.5,
   "deps": {
     "all": [
@@ -16,7 +16,6 @@
   ],
   "tasks": [
     {
-      "match_components": "fuzzy",
       "item": "gateways:gate_pearl",
       "components": "{\"gateways:gateway\":\"gateways:basic/villager\"}",
       "type": "item"

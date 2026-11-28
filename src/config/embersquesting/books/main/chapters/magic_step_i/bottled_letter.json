@@ -1,0 +1,29 @@
+{
+  "title": "<lang key=item.starcatcher.bottled_letter>",
+  "description": [
+    "<lang key=milf.quest.first_steps.bottled_letter.desc>"
+  ],
+  "icon": "starcatcher:bottled_letter",
+  "x": 27.25,
+  "y": 32.25,
+  "deps": {
+    "all": [
+      "magic_step_i/starcatcher_rod"
+    ]
+  },
+  "aliases": [
+    "first_steps/bottled_letter"
+  ],
+  "tasks": [
+    {
+      "item": "starcatcher:bottled_letter",
+      "type": "item"
+    },
+    {
+      "item": "starcatcher:letter",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "circle"
+}

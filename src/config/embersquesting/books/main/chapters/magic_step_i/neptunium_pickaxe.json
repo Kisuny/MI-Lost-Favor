@@ -1,0 +1,24 @@
+{
+  "title": "",
+  "icon": "aquaculture:neptunium_pickaxe{\"aquaculture:in_water\":0b}",
+  "x": 17.15,
+  "y": 35.85,
+  "deps": {
+    "all": [
+      "magic_step_i/neptunium_ingot"
+    ]
+  },
+  "aliases": [
+    "first_steps/neptunium_pickaxe"
+  ],
+  "tasks": [
+    {
+      "match_components": "none",
+      "item": "aquaculture:neptunium_pickaxe",
+      "components": "{\"aquaculture:in_water\":0b}",
+      "type": "item"
+    }
+  ],
+  "optional": true,
+  "shape": "circle"
+}
